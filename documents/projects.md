@@ -94,7 +94,7 @@ All projects I have worked on:
 ## Personal projects
 
 -   [🎨 AIdeas](https://github.com/hejny/AIdeas)
--   `personal` [🧙‍♂️ Rapid prototyping wizard](https://github.com/hejny/hejny)
+-   `personal` [🧙‍♂️ Rapid prototyping wizard](https://github.com/hejny/aiai)
 -   `draft` [🗺 Geo Game](https://github.com/hejny/geogame)
 -   [📐 Polygonal drawing for Collboard](https://github.com/hejny/polygon-drawing)
 -   [📦 Collboard cubes drawing](https://github.com/hejny/cube-drawing)
@@ -106,11 +106,11 @@ All projects I have worked on:
 -   [🖼️ HEIC images for Collboard](https://collboard.com/) _[🔗](https://collboard.com/)[👨‍💻](https://github.com/hejny/heic-support)_
 -   `library` [🟦 Stop war on Ukraine 🟨](https://github.com/hejny/Ukraine)
 -   [🐇🥀💚 Random emojis for Collboard](https://github.com/hejny/random-arts)
--   `personal` [👨‍💼 Pavol Hejný](https://github.com/hejny/hejny)
+-   `personal` [👨‍💼 Pavol Hejný](https://github.com/hejny/aiai)
 -   `library` [✂️ Space trim](https://github.com/hejny/spacetrim)
--   `personal` [hejny-old](https://github.com/hejny/hejny-old)
+-   `personal` [hejny-old](https://github.com/hejny/aiai-old)
 -   `library` & `utility` [🔼 Batch project editor](https://github.com/hejny/batch-project-editor)
--   `personal` [👨🏽‍🤝‍👨🏽 Hejny.org](https://github.com/hejny/hejny.org)
+-   `personal` [👨🏽‍🤝‍👨🏽 Hejny.org](https://github.com/hejny/aiai.org)
 -   `library` [🕵️ Locate ANY APP](https://github.com/hejny/locate-app)
 -   `library` [🌾🎲 Seed](https://github.com/hejny/seed)
 -   `library` [🧹 String normalization library](https://github.com/hejny/n12)

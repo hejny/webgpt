@@ -12,7 +12,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <Link href="https://pavolhejny.com">Pavol Hejný</Link>
+                    <Link href="https://ai.ai.hejny.org">Pavol Hejný</Link>
                 </li>
                 */}
 
@@ -22,7 +22,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <Link href="https://blog.pavolhejny.com">Blog</Link>
+                    <Link href="https://blog.ai.ai.hejny.org">Blog</Link>
                 </li>
                 */}
 
@@ -40,7 +40,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <a href="https://github.com/hejny/hejny/">v{VERSION}</a>
+                    <a href="https://github.com/hejny/aiai/">v{VERSION}</a>
                 </li>
                 */}
             </ul>

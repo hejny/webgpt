@@ -2,11 +2,11 @@
     "name": "hejny",
     "version": "1.0.0",
     "description": "-->",
-    "homepage": "https://pavolhejny.com",
+    "homepage": "https://ai.ai.hejny.org",
     "license": "SEE LICENSE IN LICENSE",
     "repository": {
         "type": "git",
-        "url": "https://github.com/hejny/hejny"
+        "url": "https://github.com/hejny/aiai"
     },
     "scripts": {
         "test": "jest --config jestconfig.json",

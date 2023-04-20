@@ -23,7 +23,7 @@ import pavolHejnColoringBookBlackAndWhiteIllustrationOutlineO850cbc2d90884113Bdb
 export function VrArProject() {
     return (
         <a
-            href="https://github.com/hejny/hejny/blob/main/documents/projects.md#-vr-paint"
+            href="https://github.com/hejny/aiai/blob/main/documents/projects.md#-vr-paint"
             target="_blank"
             rel="noreferrer"
         >

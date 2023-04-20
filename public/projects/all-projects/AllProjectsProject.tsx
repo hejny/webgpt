@@ -22,7 +22,7 @@ import pavolHejnModularGadgetAsAColoringBookBlackAndWhiteIl05f61e28A9e641e591050
  */
 export function AllProjectsProject() {
     return (
-        <a href="https://github.com/hejny/hejny/blob/main/documents/projects.md" target="_blank" rel="noreferrer">
+        <a href="https://github.com/hejny/aiai/blob/main/documents/projects.md" target="_blank" rel="noreferrer">
             <Item>
                 <Item.Title>
                     <Translate locale="en">All my projects</Translate>

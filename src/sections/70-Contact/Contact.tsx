@@ -64,7 +64,7 @@ export function ContactSection(props: ContactProps) {
                                 <a href="https://twitter.com/pavolhejny">Twitter</a>
                             </li>
                             <li>
-                                <a href="https://blog.pavolhejny.com">Blog</a>
+                                <a href="https://blog.ai.ai.hejny.org">Blog</a>
                             </li>
                             <li>
                                 <a href="https://www.blockchain.com/btc/address/bc1qyuy7j80lxepv2wjdvflgajyatpmyqkmc75spvq">
@@ -82,7 +82,7 @@ export function ContactSection(props: ContactProps) {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/hejny/hejny/blob/main/documents/crypto.md">More crypto</a>
+                                <a href="https://github.com/hejny/aiai/blob/main/documents/crypto.md">More crypto</a>
                             </li>
                         </>
                     )}
@@ -101,7 +101,7 @@ export function ContactSection(props: ContactProps) {
 /**
  * TODO: !! Better footer with - links, form, contact, subscribe, legal (address, Datovka 3te6yxg), copyright, technical
  * TODO: !! Contact form
- * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/hejny/main/documents/contact.md
+ * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/aiai/main/documents/contact.md
  *       1) Download from external repo script (and add copy warning)
  *       2) Convert from local markdown to conponent
  *       3) Add also VCard
