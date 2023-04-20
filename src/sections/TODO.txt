@@ -1,0 +1,8 @@
+TODO: !! Make TalkSection @see https://github.com/hejny/hejny-old/blob/master/data/articles.neon
+TODO: !! Make CalendarSection
+TODO: !! Make ContactForm
+TODO: !! Make Awards
+TODO: !! Make Subscribe (or put in contact OR contact form)
+TODO: !! Make LegalSection (or put in contact)
+TODO: [🧠] What is the best place to put components in?
+TODO: [🧠] What is the best way how to make looooookg single page with hash-routed sections?

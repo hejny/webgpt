@@ -1,0 +1,33 @@
+.LanguagePicker {
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    right: 10px;
+    top: 10px;
+}
+
+.language img {
+    display: block;
+    width: 30px;
+    height: 20px;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center center;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .LanguagePicker {
+        right: -5px;
+        top: 20px;
+
+        background-color: rgba(13, 28, 49, 0.61);
+        border-radius: 5px;
+        box-shadow: #cccccc5b 0 0 40px;
+    }
+
+    .language.current {
+        display: none;
+    }
+}

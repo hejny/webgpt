@@ -1,0 +1,10 @@
+.tag {
+    display: inline-block;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: burlywood /* <- [🎨] */;
+    color: black /* <- [🎨] */;
+    border-radius: 3px;
+}

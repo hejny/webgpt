@@ -1,0 +1,81 @@
+title: >
+    Tvořím
+
+    **něco z ničeho** nic
+
+description: >
+    Specializuji se na tvorbu **plně funkčních prototypů** od nuly až po
+    ověření konceptu.
+
+Welcome:
+    content: >
+        VR/AR/XR, GraphQL, Progressive Web Apps, AI, ML, Blockchain, Web3,... 🤯
+
+
+        Využíváte **plný potenciál technologií ve Vašem podnikání?**
+
+
+        Technologie se neustále vyvíjejí a může být náročné udržet krok s dobou a
+        plně využívat jejich potenciál. S tím Vám rád pomohu.
+    back-home: Zpět na hlavní stránku
+
+PavolHejny:
+    title: Kdo jsem?
+    content: >
+        Jsem Pavol, vývojář, který s nadšením využívá nové nástroje a technologie.
+        Spoluzaložil jsem virtuální tabuli Collboard  a elektronické učebnice H-edu.
+        Pracoval jsem na mnoha projektech České společnosti ornitologické. Přednášel
+        jsem na mnoha technologických a startupových konferencích + byl v porotě a
+        mentorem mnoha soutěží - například Startup Weekendu. Také pracuji na
+        Czech.events, newsletteru s nejzajímavějšími technologickými a startup
+        událostmi v Čechách.
+
+Services:
+    title: Jak Vám pomohu?
+    content: ''
+    consult:
+        title: Konzultace
+        content: >
+            Nabízím odborné poradenství v oblasti různých technologií a poskytuji
+            analýzu jejich výhod a omezení, která vám pomůže při rozhodování.
+    talk:
+        title: Přednáška
+        content: >
+            Poskytnu přehled různých technologií a přístupů s přihlédnutím na jejich
+            <span style="color: #11ff11">výhody</span> a <span style="color:
+            #ff0000">nevýhody</span>.
+    prototype:
+        title: Prototypování
+        content: >
+            Specializuji se na tvorbu **plně funkčních prototypů** od nuly až po
+            ověření konceptu.
+    action: Spojme se 🚀
+
+References:
+    title: Reference
+    more-references: Zobrazit další reference
+
+    # TODO: Maybe bring here actual references
+
+Projects:
+    title: Mé projekty
+    content: |
+        Některé z větších projektů, na kterých jsem se podílel:
+    all-projects: Všechny mé projekty
+
+Contact:
+    title: Kontakt
+    content: null
+    more: Více
+
+Footer:
+    home: Domů
+    gallery: Galerie
+    contact: Kontakt
+    technical-details: Technické
+
+# Note: TechnicalInfo is not translated in cs
+
+Sample:
+    title: Sample section
+    content: Sample text with [sample link](/sample)

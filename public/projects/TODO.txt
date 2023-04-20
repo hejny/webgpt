@@ -1,0 +1,9 @@
+TODO: Remove double-lined style from some projects like czech.events, collboard or towns
+TODO: Rename all outline.svg to original names
+TODO: [😴] Is it a good practise to place components in the public folder?
+TODO: [👣] Why is here broken hot-reload and you need to restart next dev to reload
+TODO: MJ images should be as original name <- [🛹] Maybe some BPE script for this
+TODO: Get images of original quality (as png) <- [🛹] Maybe some BPE script for this
+TODO: collboard-geography-2.jpeg has ugly horizonal line <- [🛹] Maybe some BPE script for this
+TODO: Make cleanup of all unused assets in one commit
+TODO: Maybe add SigmaStamp project/hacking

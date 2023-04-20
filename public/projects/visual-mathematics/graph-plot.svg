@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    version="1.1"
+    id="Layer_1"
+    x="0px"
+    y="0px"
+    width="3000"
+    viewBox="0 0 3000 2000"
+    enable-background="new 0 0 1024 672"
+    xml:space="preserve"
+    sodipodi:docname="graph-plot.svg"
+    height="2000"
+    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <filter id="glow">
+            <feGaussianBlur in="SourceGraphic" result="Blured" stdDeviation="7"></feGaussianBlur>
+            <feMerge>
+                <feMergeNode in="Blured"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <sodipodi:namedview
+        id="namedview39"
+        pagecolor="#ffffff"
+        bordercolor="#666666"
+        borderopacity="1.0"
+        inkscape:showpageshadow="2"
+        inkscape:pageopacity="0.0"
+        inkscape:pagecheckerboard="0"
+        inkscape:deskcolor="#d1d1d1"
+        showgrid="false"
+        inkscape:zoom="0.17559524"
+        inkscape:cx="2639.5932"
+        inkscape:cy="296.13559"
+        inkscape:window-width="1920"
+        inkscape:window-height="1017"
+        inkscape:window-x="3"
+        inkscape:window-y="-8"
+        inkscape:window-maximized="1"
+        inkscape:current-layer="Layer_1"
+    ></sodipodi:namedview>
+
+    <path
+        id="path2"
+        vector-effect="non-scaling-stroke"
+        style="
+            fill: none;
+            stroke: #dec36f;
+            stroke-width: 1;
+            filter: url(#glow);
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-dasharray: none;
+        "
+        sodipodi:nodetypes="cccc"
+        d="M 1107.579,633.78804 V 1237.5442 M 641.63671,935.66614 h 931.88449"
+        transform="matrix(3.0475878,0,0,3.0475878,-1875.4442,-1851.5247)"
+    ></path>
+</svg>

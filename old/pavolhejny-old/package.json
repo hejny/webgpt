@@ -1,0 +1,17 @@
+{
+  "version": "1.3.3",
+  "private": false,
+  "homepage": "https://www.pavolhejny.com/",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "devDependencies": {
+    "onchange": "^4.0.0",
+    "prettier": "^1.13.5"
+  },
+  "scripts": {
+    "start": "npm run prettier-watch",
+    "prettier": "prettier --config .prettierrc --write \"**/*.{html,js,css}\" ",
+    "prettier-watch": "onchange \"**/*\" -- npm run prettier"
+  }
+}

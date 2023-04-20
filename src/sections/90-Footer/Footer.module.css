@@ -1,0 +1,50 @@
+.FooterSection {
+    /*/
+    outline: 1px dotted red; /**/
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    background: var(--footer-background);
+    color: var(--normal-text-color);
+
+    padding: 20px;
+}
+
+.FooterSection ul li:not(:first-child):before {
+    content: '|';
+    color: rgb(17, 96, 117) /* <- [🎨] */;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.FooterSection ul {
+    /*/
+    outline: 1px dotted red; /**/
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.FooterSection ul li {
+    /*/
+    outline: 1px dotted red; /**/
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+}

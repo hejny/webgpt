@@ -1,0 +1,41 @@
+
+
+
+.vcard {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+.vcard img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50px;
+
+    box-shadow: #00000077 -25px 25px 0px; /* <- TODO: Paralax effect on shadow */
+
+    /*border: 5px solid #dec36f;*/
+    /*box-shadow: #ff981231 0px 0px 15px;*/
+}
+
+.vcard ul {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+
+    margin-left: 15px;
+}
+
+.vcard li {
+    padding: 2px;
+}

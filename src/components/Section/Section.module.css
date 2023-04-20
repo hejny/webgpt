@@ -1,0 +1,48 @@
+.section {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    margin-top: 80px;
+}
+
+/*
+.section:nth-child(2) {
+    margin-top: 100px;
+}
+*/
+
+.section:last-child {
+    margin-bottom: 50px;
+}
+
+.section > div /* <- Article */ > p {
+    /*/
+    outline: 1px dotted yellow;
+    /**/
+
+    display: block;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.section > a {
+    /*/
+    outline: 1px dotted magenta;
+    /**/
+
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.section h2 {
+    /*/
+    outline: 1px dotted red;
+    /**/
+
+    display: inline-block;
+    /* border-top: 5px solid #dec36f; */
+}

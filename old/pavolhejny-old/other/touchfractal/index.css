@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#drawing-color-fill {
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#drawing-color-stroke {
+    z-index: 30;
+    position: fixed;
+    top: 20px;
+    left: 0;
+}
+
+#fractal-scene,
+#drawing-scene {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#fractal-scene {
+    z-index: 20;
+}
+
+#drawing-scene {
+    z-index: 10;
+}

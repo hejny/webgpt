@@ -1,0 +1,78 @@
+html {
+    color-scheme: dark;
+    image-rendering: smooth;
+
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+
+body {
+    background-color: #121121 /* <- TODO: Color to config */;
+}
+
+/* TODO: [🎨] ACRY all colors in one place HERE */
+/* TODO: Make isolated components from <Button/>, <Button isFeatured/> and <Emoji/>*/
+
+.button /* <- Note: Not using <button> but <Link className="button"*/ {
+    border: solid 1px var(--normal-text-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--normal-text-color);
+    border-radius: 6px;
+    padding: 7px 18px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+    transition: all 0.05s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgba(44, 44, 44, 0.705);
+    color: var(--highlighted-text-color);
+    box-shadow: var(--highlighted-text-color) 0 0 5px;
+}
+
+.button.button-featured {
+    box-shadow: rgba(92, 176, 209, 0.699) 0 0 50px;
+    background-color: rgba(14, 120, 134, 0.884);
+    padding: 14px 36px;
+    font-size: 1.5em;
+    transition: 0.2s box-shadow ease-in-out;
+}
+
+.button.button-featured:hover {
+    box-shadow: rgba(92, 176, 209, 0.9) 0 0 70px;
+}
+
+.emoji {
+    display: inline;
+    width: 1.8em;
+    height: 1.8em;
+    vertical-align: bottom;
+    /* filter: invert(100%); */
+    padding: 0;
+    margin: -3px;
+}
+
+.button.button-featured:hover .emoji {
+    animation: hue-rotate 2s infinite, wobble 0.3s infinite alternate;
+}
+
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}

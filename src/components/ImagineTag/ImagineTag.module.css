@@ -1,0 +1,9 @@
+.imagineTag::before {
+    content: '/imagine';
+    color: rgb(69, 214, 250) /* <- [🎨] */;
+    margin-right: 0.3em;
+}
+
+.imagineTag {
+    /* TODO: Use or remove empty css */
+}

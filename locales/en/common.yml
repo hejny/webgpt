@@ -1,0 +1,99 @@
+title: >
+    **From 0 to 1**
+
+description: >
+    I specialise in building **fully functional prototypes** from scratch to
+    proof of concept, staying ahead of the latest technologies.
+
+Welcome:
+    content: >
+        VR/AR/XR, GraphQL, Progressive Web Apps, AI, ML, Blockchain, Web3,... 🤯
+
+
+        Are you realising the **full potential of technology in your business?**
+
+
+        With the ever-evolving landscape of **exponential technologies**, it can be
+        challenging to keep up to date and use it to its potential in your business.
+        However, by incorporating cutting-edge tools such as advanced browser APIs,
+        Web Assembly *(WASM)*, using TypeScript, and benefiting from GPT when
+        writing code, you can code, you can differentiate your business and achieve
+        new levels of efficiency, innovation and customer engagement. 🚀
+    back-home: Back home
+
+PavolHejny:
+    title: Who I am?
+    content: >
+        I'm Pavol, a developer and tech enthusiast who is passionate about exploring
+        cutting-edge tools and technologies. As a co-founder of H-edu and Collboard,
+        I'm invested in using digital innovation to transform education. I've
+        developed several citizen science projects, including the first mobile app
+        for birdwatchers in the Czech Republic, and spoken at tech and startup
+        conferences on topics such as VR, AR and AI. I also run Czech.events, a
+        platform that helps people find and attend technology and innovation events.
+        My talent for identifying growth opportunities and mentoring startups has
+        led me to win several innovation competitions. I'm committed to inspiring
+        others and believe that technology can help solve the world's problems.
+
+Services:
+    title: How can I help you?
+    content: >
+        I specialise in building **fully functional prototypes** from scratch to
+        proof of concept, staying ahead of the latest technologies. Let me guide you
+        through the ever-changing landscape of new, emerging and disruptive
+        technologies.
+    consult:
+        title: Consult
+        content: >
+            I offer expert advice on various technologies, providing <!-- insightful
+            --> analysis of their benefits and limitations to help you make decisions.
+    talk:
+        title: Talk
+        content: >
+            I provide overviews of various technologies, highlighting their <span
+            style="color: #11ff11">pros</span> and <span style="color:
+            #ff0000">cons</span> to ensure a well-rounded understanding.
+    prototype:
+        title: Prototype
+        content: >
+            I will bring your new project into the reality through effective
+            prototyping and seamless transition from concept to implementation.
+    action: Get in touch 🚀
+
+References:
+    title: References
+    more-references: See more references
+    # TODO: Maybe bring here actual references
+
+Projects:
+    title: What have I worked on?
+    content: |
+        Here are some of the larger projects that I have been involved in:
+    all-projects: See all my projects
+
+Hacking:
+    title: Hacking!
+    content: >
+        These are some hackathon undertakings and proof of concept initiatives I
+        have been involved in.
+
+        Case studies what could be **done in 24/48 hours**
+
+Contact:
+    title: Get in touch!
+    content: null
+    more: More
+
+Footer:
+    home: Home
+    gallery: Gallery
+    contact: Contact
+    technical-details: Technical details
+
+TechnicalInfo:
+    title: About
+    content: Technical info about the page
+
+Sample:
+    title: Sample section
+    content: Sample text with [sample link](/sample)

@@ -1,0 +1,4 @@
+node_modules
+.env
+.tmp/COMMIT_MESSAGE
+coverage
