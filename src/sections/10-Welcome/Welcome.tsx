@@ -36,9 +36,4 @@ export function WelcomeSection(props: WelcomeProps) {
     );
 }
 
-/**
- * TODO: !!! Better utilize PAVOLHEJNY
- * TODO: Use somewhere <Acronym>Minimum viable product</Acronym>
- *     > Je lepší mít funkční MVP než mnoho měsíců-let pracovat kompletním vyladěném řešení https://youtu.be/4Z4EW9kSAX8
- * TODO: Maybe use <Shuffle> for technologies
- */
+
