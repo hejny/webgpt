@@ -1,0 +1,34 @@
+.tiledBackground /* <- TODO: Probbably name ACRY main container classes of the component as the component name - TiledBackground */ {
+    /*/
+    outline: 1px dotted yellow;
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    mask-image: linear-gradient(to bottom, transparent 0%, #fff 55px, #fff 100%)
+        /* <- TODO: [🛹] Make some more interesting mask-gradient */;
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    /* TODO: 100px should be configurable OR same as the coresponding cell in the main grid */
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+.layer {
+    /**/
+    outline: 1px dotted yellow;
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+
+    pointer-events: none;
+}
+
+/* TODO: TiledBackground and TiledBackgroundPlayground can share a css module*/

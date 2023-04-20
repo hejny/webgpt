@@ -1,0 +1,10 @@
+:root {
+    --normal-text-color: rgb(245, 224, 185);
+    --highlighted-text-color: rgb(255, 255, 255);
+
+    --main-background: linear-gradient(to bottom, hsla(222.2, 60%, 8.8%, 0.5), hsla(223, 43%, 19%, 0.5)),
+        url(../../public/patterns/simple/grey.png);
+
+    --footer-background: linear-gradient(to bottom, hsla(222.2, 60%, 8.8%, 0.5), hsla(0, 0%, 0%, 0.5)),
+        url(../../public/patterns/simple/grey.png);
+}

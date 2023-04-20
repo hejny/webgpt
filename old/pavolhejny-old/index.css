@@ -1,0 +1,154 @@
+body {
+    font-family: roboto condensed, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background: url(./assets/background/free-spirit-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+* {
+    transition: all 0.2s ease-out;
+}
+
+a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.397);
+    outline: 0;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.fas {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+form {
+    display: block;
+    -webkit-text-fill-color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+form input {
+    padding: 10px;
+    margin: 0;
+    font-size: 1.1rem;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    background-color: rgba(37, 8, 8, 0.322);
+    color: #fff;
+    width: calc(100% - 180px);
+}
+
+form input:hover,
+form input:focus {
+    background-color: rgba(37, 8, 8, 0.651);
+}
+
+form input[type='submit'] {
+    float: right;
+    cursor: pointer;
+    width: 150px;
+}
+
+.vcard {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    right: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, transparent, black);
+}
+
+.vcard .inner {
+    display: inline-block;
+    width: 400px;
+    max-width: 100%;
+    padding: 15px;
+    margin: 15px;
+    background: linear-gradient(90deg, white, #ffe0a5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vcard .inner .avatar {
+    display: none;
+}
+
+.vcard .inner .avatar img {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    max-width: 80%;
+    border-radius: 1000px;
+    box-shadow: rgba(255, 255, 255, 0.363) 0 0 3px;
+    padding: 3px;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+.vcard .inner h1.name {
+    display: block;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.vcard .inner .contacts {
+    text-align: center;
+}
+
+.vcard .inner .contacts a {
+    display: inline-block;
+    font-size: 27px;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.vcard .inner .about {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .vcard {
+        display: block;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.548), black);
+        left: 0;
+        padding: 10vw;
+    }
+    .vcard .inner {
+        margin: 0;
+        margin-top: 30px;
+        width: calc(100% - 25px);
+    }
+    .vcard .inner .avatar {
+        display: block;
+    }
+    .vcard .inner .about {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    h1.name {
+        font-size: 3.9rem !important;
+    }
+    .about {
+        font-size: 1.4rem !important;
+    }
+}

@@ -1,0 +1,30 @@
+.items {
+    display: flex;
+    flex-flow: row wrap;
+
+    row-gap: 40px;
+    margin-bottom: 30px;
+}
+
+.items.row-with-2-items > * {
+    width: 50%;
+}
+
+.items.row-with-3-items > * {
+    width: 33.333%;
+}
+
+.items > a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media only screen and (max-width: 650px) {
+    .items.row-with-2-items > * {
+        width: 100%;
+    }
+
+    .items.row-with-3-items > * {
+        width: 100%;
+    }
+}

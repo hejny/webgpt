@@ -1,0 +1,28 @@
+div.field {
+    /*/
+    outline: 1px dotted red; /**/
+
+    display: block;
+    text-align: left;
+
+    margin: 5px;
+}
+
+div.field span:nth-child(1) {
+    /*/
+    outline: 1px dotted green; /**/
+
+    display: inline-block;
+    width: calc(50% - 0.5rem);
+    font-weight: bold;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+div.field span:nth-child(2) {
+    /*/
+    outline: 1px dotted yellow; /**/
+
+    display: inline-block;
+    text-align: left;
+}

@@ -1,0 +1,13 @@
+.outline {
+    z-index: 10;
+    outline: 1px solid white;
+    color: white;
+    opacity: 0.3;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    pointer-events: none;
+}
