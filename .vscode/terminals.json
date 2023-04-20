@@ -8,7 +8,7 @@
         },
         {
             "name": "🌎 Expose",
-            "command": "npx lt --port 4455 --subdomain wizard",
+            "command": "npx lt --port 4444 --subdomain wizard",
             "onlySingle": true,
             "focus": true
         },
