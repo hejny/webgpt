@@ -28,7 +28,7 @@ async function integrationTestWithServer() {
     console.info(`🧪  Integration tests + server`);
 
     const isServerRunning = async () =>
-        await fetch('http://localhost:4455/' /* <- TODO: DRY */)
+        await fetch('http://localhost:4444/' /* <- TODO: DRY */)
             .then((response) => response.statusText === 'OK')
             .catch(() => false);
 
