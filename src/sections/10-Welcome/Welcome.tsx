@@ -1,12 +1,8 @@
 import { Passions_Conflict } from '@next/font/google';
 import { useTranslation } from 'next-i18next';
-import Image from 'next/image';
 import Link from 'next/link';
-import logoHandrittenEn from '../../../public/handwritten/all-en/from-0-to-1 (6).svg';
 import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
-import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
-import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import styles from './Welcome.module.css';
 
 interface WelcomeProps {
@@ -24,20 +20,7 @@ export function WelcomeSection(props: WelcomeProps) {
         <Section id="Welcome" className={styles.WelcomeSection}>
             <Link href="/">
                 <h1 className={passionsConflictFont.className}>
-                    {i18n.language === 'en' && (
-                        <Image
-                            className={styles.logoHandritten}
-                            alt={removeMarkdownFormatting(removeMarkdownLinks(t('title') || ''))}
-                            src={logoHandrittenEn}
-                        />
-                        // TODO: !!! Pick the best one handwritten logo
-                        // TODO: !!! All handwritten logos more thick
-                        // TODO: !!! Glow around the handwritten logo
-                        // TODO: !!! Handwritten logo mobile wrap / size
-                        // TODO: !!! Logo CS should be also handwritten
-                    )}
-
-                    {i18n.language === 'cs' && <Article content={t('title')} isEnhanced />}
+                    <Article content={t('title')} isEnhanced />
                 </h1>
                 {/* <- TODO: !!! This should be handwritten */}
             </Link>
