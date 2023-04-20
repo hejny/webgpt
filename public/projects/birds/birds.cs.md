@@ -1,3 +1,0 @@
-# ČSO
-
-Mnoho projektů pro Českou společnost ornitologickou, např. mobilní aplikace, mezinárodní sčítání ptáků na krmítkách,...
