@@ -17,7 +17,7 @@ export function AppHead(props: AppHeadProps) {
     const title = removeMarkdownFormatting(removeMarkdownLinks(t('title') || ''));
     const description = removeMarkdownFormatting(removeMarkdownLinks(t('description') || ''));
 
-    const homeUrl = 'https://www.pavolhejny.com'; /* <- TODO: Self URL into some configuration */
+    const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
     return (
         <>

@@ -6,7 +6,7 @@ Hi I am Pavol.
 
 I am co-founder of a platform for teachers, [H-Edu](https://www.h-edu.cz/); when the quarantine on March 2020 began, he founded an **online virtual board** [**CollBoard.com**](https://collboard.com/). He worked on several projects of the Czech Ornithological Society([Česká společnost ornitologická](https://www.birdlife.cz/)) and in the past, he also developed his [**online game Towns**](https://github.com/townsgame).
 
-In terms of community, he has organized several conferences. For example, [in autumn 2019, he organized the CzechFuture.tech](https://blog.pavolhejny.com/nulty-rocnik-czech-future-tech/). He co-organized some hackathons like Educational hackathon or Startup Weekends in Prague.
+In terms of community, he has organized several conferences. For example, [in autumn 2019, he organized the CzechFuture.tech](https://blog.ai.ai.hejny.org/nulty-rocnik-czech-future-tech/). He co-organized some hackathons like Educational hackathon or Startup Weekends in Prague.
 
 At the same time, he participated in many events and startup competitions as a **mentor** and a **jury**.
 

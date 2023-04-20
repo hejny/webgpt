@@ -36,7 +36,7 @@ export function PavolHejnySection(props: PavolHejnyProps) {
                         alt="Portrait photo of Pavol Hejný"
                         priority
                         src={pavolHejny}
-                        // TODO: [🧑] Make some <ImageGravatar component; This is me@pavolhejny.com
+                        // TODO: [🧑] Make some <ImageGravatar component; This is me@ai.ai.hejny.org
                         //src="https://www.gravatar.com/avatar/10bceb8965947164502b4e7b3314733d?s=1024"
                         // width={1024}
                         // height={1024}
@@ -63,7 +63,7 @@ export function PavolHejnySection(props: PavolHejnyProps) {
 
 /**
  * TODO: Should we translate alt of the images like "Portrait photo of Pavol Hejný"
- * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/hejny/main/documents/contact.md
+ * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/aiai/main/documents/contact.md
  *       1) Download from external repo script (and add copy warning)
  *       2) Convert from local markdown to conponent
  *       3) Add also VCard

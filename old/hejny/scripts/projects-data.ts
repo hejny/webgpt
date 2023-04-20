@@ -15,7 +15,7 @@ export const PROJECTS: IProjectInfo[] = [
     },
 
     // TODO: !! Add remaining projects
-    // @see https://github.com/hejny/hejny-old/blob/master/data/projects.neon
+    // @see https://github.com/hejny/aiai-old/blob/master/data/projects.neon
     // {  organizationName: 'birdlife-cz',name: `web`,title: 'Xxxxxx',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'birdlife-cz',name: `lsd`,title: '🐦 Liniové sčítání druhů',priority: 0,projectUrl: new URL(``), }
     // {  organizationName: 'birdlife-cz',name: `kam-na-ptaky`,title: '🐦Xxxxxx',priority: 0,projectUrl: new URL(``), }
