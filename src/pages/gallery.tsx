@@ -1,4 +1,3 @@
-import { Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
 import { CaveOfIdeasInLightbulbWithTransparentLookThr_d3273ad0_Image } from '../../public/wallpapers/Pavol_Hejn_cave_of_ideas_in_lightbulb_with_transparent_look_thr_d3273ad0-097f-4011-b799-1c379bb05ee3_Image';
@@ -16,16 +15,13 @@ import { CaveSection } from '../sections/01-Cave/Cave';
 import { WelcomeSection } from '../sections/10-Welcome/Welcome';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
-import { classNames } from '../utils/classNames';
-
-const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export default function GalleryPage() {
     return (
         <>
-            <AppHead subtitle="Gallery"  /* <- TODO: !! Translate *//>
+            <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
 
-            <div className={classNames(styles.page, oswaltFont.className)}>
+            <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
                     {/* TODO: Do some system for multiple pages */}
@@ -37,7 +33,8 @@ export default function GalleryPage() {
                 </div>
                 <main>
                     <WelcomeSection variant="SIDEPAGE" />
-                    <Section>{/* <- TODO: !! Make propper secrion from this */}
+                    <Section>
+                        {/* <- TODO: !! Make propper secrion from this */}
                         {/* TODO: !! Translate */}
                         <h2>Gallery</h2>
                         <p>Images used on this page are generated using MidJourney:</p>
@@ -122,7 +119,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
 /**
  * TODO: !! i18n + make section
  * TODO: [🪒] Can be getStaticProps shared between all pages?
- * TODO: [🪒] Can be fonts shared between all pages?
  * TODO: Write better about how are images created
  *       TODO: Connect with section/article about AI generative technology
  * TODO: Some image frames
