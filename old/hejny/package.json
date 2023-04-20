@@ -10,7 +10,7 @@
     },
     "scripts": {
         "test": "jest --config jestconfig.json",
-        "prettier": "prettier --config .prettierrc --write \"{scripts,_includes,.vscode,.github,documents}/**/*.{ts,json}\"",
+        "prettier": "prettier --config .prettierrc --write \"{scripts,_includes,.vscode,.github}/**/*.{ts,json}\"",
         "prettier-commit": "git diff --exit-code && npm run pretty-imports && npm run prettier && git add src && git commit --allow-empty -m \"Prettier\"",
         "lint": "tslint -p tsconfig.json",
         "preversion": "npm run lint && npm test && npm run prettier-commit",

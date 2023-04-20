@@ -29,9 +29,6 @@ export function MyProjectsSection() {
                 <YourProjectProject />
             </Items>
 
-            <a className="button" href="https://github.com/hejny/aiai/blob/main/documents/projects.md">
-                {t('Projects.all-projects')}
-            </a>
         </Section>
     );
 }

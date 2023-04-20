@@ -81,9 +81,7 @@ export function ContactSection(props: ContactProps) {
                                     Cardano
                                 </a>
                             </li>
-                            <li>
-                                <a href="https://github.com/hejny/aiai/blob/main/documents/crypto.md">More crypto</a>
-                            </li>
+              
                         </>
                     )}
 
@@ -100,11 +98,6 @@ export function ContactSection(props: ContactProps) {
 
 /**
  * TODO: !! Better footer with - links, form, contact, subscribe, legal (address, Datovka 3te6yxg), copyright, technical
- * TODO: !! Contact form
- * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/aiai/main/documents/contact.md
- *       1) Download from external repo script (and add copy warning)
- *       2) Convert from local markdown to conponent
- *       3) Add also VCard
- *       4) Add also crypto
+ * TODO: Contact form
  * TODO: [🔗] ACRY should we use <a ...>...</a> OR <Link ...>...</Link> for external links in Next App
  */

@@ -63,10 +63,5 @@ export function PavolHejnySection(props: PavolHejnyProps) {
 
 /**
  * TODO: Should we translate alt of the images like "Portrait photo of Pavol Hejný"
- * TODO: Add dynamically from https://raw.githubusercontent.com/hejny/aiai/main/documents/contact.md
- *       1) Download from external repo script (and add copy warning)
- *       2) Convert from local markdown to conponent
- *       3) Add also VCard
- *       4) Add also crypto
  * TODO: [🔗] ACRY should we use <a ...>...</a> OR <Link ...>...</Link> for external links in Next App
  */
