@@ -12,9 +12,13 @@
     flex-wrap: wrap;
 
     background: var(--footer-background);
-    color: var(--normal-text-color);
+    color: var(--footer-text-color);
 
     padding: 20px;
+}
+
+.FooterSection a {
+    color: var(--footer-text-color) !important;
 }
 
 .FooterSection ul li:not(:first-child):before {
