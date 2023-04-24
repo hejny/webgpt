@@ -6,7 +6,7 @@
     width: 100%;
     height: 100%;
 
-    mask-image: linear-gradient(to bottom, transparent 0%, #fff 55px, #fff 100%)
+    mask-image: linear-gradient(to bottom, transparent 0%, #fff 10vh, #fff 100%)
         /* <- TODO: [🛹] Make some more interesting mask-gradient */;
     mask-size: 100% 100%;
     mask-repeat: no-repeat;
