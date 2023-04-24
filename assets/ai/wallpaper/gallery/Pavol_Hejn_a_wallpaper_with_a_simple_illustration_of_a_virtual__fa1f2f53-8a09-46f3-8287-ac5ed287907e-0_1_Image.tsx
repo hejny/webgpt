@@ -23,6 +23,7 @@ export function AWallpaperWithASimpleIllustrationOfAVirtualFa1f2f538a0946f38287A
             src={a_wallpaper_with_a_simple_illustration_of_a_virtual_fa1f2f53_8a09_46f3_8287_ac5ed287907e_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

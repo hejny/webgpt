@@ -23,6 +23,7 @@ export function ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c
             src={a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45_70e4_41aa_be2c_290f518aa5f7_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

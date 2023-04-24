@@ -23,6 +23,7 @@ export function AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de699754
             src={a_wallpaper_featuring_a_repeating_pattern_of_simple_156c696_5ef2_4de6_9975_40d4f96ceb95_0_1_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

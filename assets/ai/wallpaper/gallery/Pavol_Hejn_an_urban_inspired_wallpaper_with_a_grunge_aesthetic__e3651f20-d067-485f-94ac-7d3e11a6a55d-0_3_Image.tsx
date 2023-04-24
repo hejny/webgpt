@@ -23,6 +23,7 @@ export function AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac
             src={an_urban_inspired_wallpaper_with_a_grunge_aesthetic_e3651f20_d067_485f_94ac_7d3e11a6a55d_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

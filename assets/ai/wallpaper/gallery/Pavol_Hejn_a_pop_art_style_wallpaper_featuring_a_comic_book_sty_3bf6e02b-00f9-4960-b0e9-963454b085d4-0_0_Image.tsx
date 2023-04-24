@@ -23,6 +23,7 @@ export function APopArtStyleWallpaperFeaturingAComicBookSty3bf6e02b00f94960B0e99
             src={a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b_00f9_4960_b0e9_963454b085d4_0_0}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

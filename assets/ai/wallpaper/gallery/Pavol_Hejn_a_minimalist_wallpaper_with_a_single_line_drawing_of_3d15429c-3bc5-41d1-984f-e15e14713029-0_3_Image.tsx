@@ -23,6 +23,7 @@ export function AMinimalistWallpaperWithASingleLineDrawingOfd15429c3bc541d1984fE
             src={a_minimalist_wallpaper_with_a_single_line_drawing_ofd15429c_3bc5_41d1_984f_e15e14713029_0_3_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

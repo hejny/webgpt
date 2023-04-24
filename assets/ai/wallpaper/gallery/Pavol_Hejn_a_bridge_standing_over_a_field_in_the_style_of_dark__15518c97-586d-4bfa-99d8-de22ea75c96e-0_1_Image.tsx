@@ -23,6 +23,7 @@ export function ABridgeStandingOverAFieldInTheStyleOfDark5518c97586d4bfa99d8De22
             src={a_bridge_standing_over_a_field_in_the_style_of_dark_5518c97_586d_4bfa_99d8_de22ea75c96e_0_1_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

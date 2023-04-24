@@ -23,6 +23,7 @@ export function AWallpaperWithARepeatingPatternOfAiRelatedBAd365f339815487586a62
             src={a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33_9815_4875_86a6_207d09015ecb_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

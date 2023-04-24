@@ -23,6 +23,7 @@ export function AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE3
             src={a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_95660e98_b69e_4c6b_816b_e38b37c78808_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

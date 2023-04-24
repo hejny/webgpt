@@ -23,6 +23,7 @@ export function AWallpaperWithARepeatingPatternOfSimpleGeome5f7f5ae33eec4f7599ec
             src={a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3_3eec_4f75_99ec_8a9d2a02261e_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

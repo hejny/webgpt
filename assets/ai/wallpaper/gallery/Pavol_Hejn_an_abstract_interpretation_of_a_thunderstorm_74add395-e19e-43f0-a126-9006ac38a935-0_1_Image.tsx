@@ -23,6 +23,7 @@ export function AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006a
             src={an_abstract_interpretation_of_a_thunderstorm_74add395_e19e_43f0_a126_9006ac38a935_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

@@ -23,6 +23,7 @@ export function AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E
             src={a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b_5783_4171_8653_e62c10ec7b55_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

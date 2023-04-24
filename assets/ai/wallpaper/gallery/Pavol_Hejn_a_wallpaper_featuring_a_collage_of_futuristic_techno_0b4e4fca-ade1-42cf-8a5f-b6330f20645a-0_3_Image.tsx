@@ -23,6 +23,7 @@ export function AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5
             src={a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca_ade1_42cf_8a5f_b6330f20645a_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

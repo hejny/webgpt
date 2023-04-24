@@ -23,6 +23,7 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b
             src={a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3_99cc_43fd_8d1b_3bbf1084be6c_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

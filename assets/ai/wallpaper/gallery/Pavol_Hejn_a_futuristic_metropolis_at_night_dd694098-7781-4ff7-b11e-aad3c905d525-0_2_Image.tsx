@@ -23,6 +23,7 @@ export function AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_
             src={a_futuristic_metropolis_at_night_dd694098_7781_4ff7_b11e_aad3c905d525_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

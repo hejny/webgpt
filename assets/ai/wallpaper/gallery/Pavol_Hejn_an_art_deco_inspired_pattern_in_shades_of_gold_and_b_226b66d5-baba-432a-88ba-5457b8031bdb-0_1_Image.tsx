@@ -23,6 +23,7 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba54
             src={an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5_baba_432a_88ba_5457b8031bdb_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

@@ -23,6 +23,7 @@ export function AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d
             src={a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51_97f4_4582_950d_5e56f61a020f_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

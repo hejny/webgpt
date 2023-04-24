@@ -23,6 +23,7 @@ export function AnAbstractWallpaperInspiredByTheShapesAndCol832d43ef848248ca80fc
             src={an_abstract_wallpaper_inspired_by_the_shapes_and_col_832d43ef_8482_48ca_80fc_d747fbd4dba9_0_0}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

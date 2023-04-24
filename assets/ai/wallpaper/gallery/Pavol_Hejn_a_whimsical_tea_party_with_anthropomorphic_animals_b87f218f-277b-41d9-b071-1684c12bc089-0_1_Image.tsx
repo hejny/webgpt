@@ -23,6 +23,7 @@ export function AWhimsicalTeaPartyWithAnthropomorphicAnimalsB87f218f277b41d9B071
             src={a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f_277b_41d9_b071_1684c12bc089_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

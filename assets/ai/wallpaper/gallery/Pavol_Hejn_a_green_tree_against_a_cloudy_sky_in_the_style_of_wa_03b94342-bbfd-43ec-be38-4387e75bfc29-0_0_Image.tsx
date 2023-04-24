@@ -23,6 +23,7 @@ export function AGreenTreeAgainstACloudySkyInTheStyleOfWa3b94342Bbfd43ecBe384387
             src={a_green_tree_against_a_cloudy_sky_in_the_style_of_wa3b94342_bbfd_43ec_be38_4387e75bfc29_0_0_0}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

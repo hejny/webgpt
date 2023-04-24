@@ -23,6 +23,7 @@ export function AWallpaperWithASimpleGraphicOfANeuralNetworF36fd6639128413387039
             src={a_wallpaper_with_a_simple_graphic_of_a_neural_networ_f36fd663_9128_4133_8703_91d8d1737baf_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

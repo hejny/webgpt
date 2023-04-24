@@ -23,6 +23,7 @@ export function AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B3585
             src={an_abstract_circuit_board_pattern_in_shades_of_blue_65aa5857_9bfb_4227_b358_54ae102a5c99_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

@@ -23,6 +23,7 @@ export function ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deae
             src={a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee_0c4c_42b3_8c35_deaea2466770_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

@@ -23,6 +23,7 @@ export function ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_1
             src={a_dreamy_forest_scene_with_fairies_b61e92db_6e51_44fb_a677_12d97eb38527_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

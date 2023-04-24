@@ -23,6 +23,7 @@ export function AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166
             src={a_wallpaper_with_a_graph_of_data_visualization_in_a_650472f6_6660_4a4e_80a1_66b7436f729d_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

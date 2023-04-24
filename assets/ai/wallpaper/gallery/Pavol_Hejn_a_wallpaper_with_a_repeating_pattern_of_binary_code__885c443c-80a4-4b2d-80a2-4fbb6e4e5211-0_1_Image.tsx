@@ -23,6 +23,7 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24
             src={a_wallpaper_with_a_repeating_pattern_of_binary_code_885c443c_80a4_4b2d_80a2_4fbb6e4e5211_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

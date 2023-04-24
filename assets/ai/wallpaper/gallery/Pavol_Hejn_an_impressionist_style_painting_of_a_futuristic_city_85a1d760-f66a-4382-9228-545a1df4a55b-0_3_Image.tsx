@@ -23,6 +23,7 @@ export function AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a4382922
             src={an_impressionist_style_painting_of_a_futuristic_city_85a1d760_f66a_4382_9228_545a1df4a55b_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

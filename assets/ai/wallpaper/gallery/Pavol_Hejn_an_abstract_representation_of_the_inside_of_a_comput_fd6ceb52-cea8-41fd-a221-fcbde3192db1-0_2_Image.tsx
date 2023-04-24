@@ -23,6 +23,7 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221
             src={an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52_cea8_41fd_a221_fcbde3192db1_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

@@ -23,6 +23,7 @@ export function AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image
             src={a_magical_underwater_world_7e8551e6_84c4_4af2_b647_5d7f0e8f0fdd_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

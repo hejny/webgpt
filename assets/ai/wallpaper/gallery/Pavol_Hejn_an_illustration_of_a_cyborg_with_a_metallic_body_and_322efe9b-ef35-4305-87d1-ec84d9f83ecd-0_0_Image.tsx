@@ -23,6 +23,7 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1E
             src={an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b_ef35_4305_87d1_ec84d9f83ecd_0_0}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

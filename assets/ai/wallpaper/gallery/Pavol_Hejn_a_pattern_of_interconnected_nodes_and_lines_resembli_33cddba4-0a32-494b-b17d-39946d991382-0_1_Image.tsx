@@ -23,6 +23,7 @@ export function APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17
             src={a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4_0a32_494b_b17d_39946d991382_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

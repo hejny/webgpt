@@ -23,6 +23,7 @@ export function ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa1
             src={a_surrealist_inspired_wallpaper_with_floating_objectde16b73_6889_4692_aa11_0fce4396fc3a_0_2_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

@@ -23,6 +23,7 @@ export function SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image
             src={sunrise_on_a_distant_planetdbf75d0_2408_4d4c_818a_14c1fca69136_0_1_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

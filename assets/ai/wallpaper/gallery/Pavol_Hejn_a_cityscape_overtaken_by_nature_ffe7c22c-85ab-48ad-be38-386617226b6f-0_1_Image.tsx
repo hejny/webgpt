@@ -23,6 +23,7 @@ export function ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_I
             src={a_cityscape_overtaken_by_nature_ffe7c22c_85ab_48ad_be38_386617226b6f_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

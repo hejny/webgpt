@@ -23,6 +23,7 @@ export function AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82
             src={a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331_0be5_4d38_a82f_ce99b7e1f535_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

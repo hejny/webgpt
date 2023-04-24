@@ -23,6 +23,7 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932
             src={a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e_dd21_4f2a_9932_eaeef36b3869_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

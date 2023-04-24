@@ -23,6 +23,7 @@ export function AWallpaperWithASimpleIllustrationOfAnAbstrac9a74580076344edc86b3
             src={a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800_7634_4edc_86b3_e459d6114a86_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

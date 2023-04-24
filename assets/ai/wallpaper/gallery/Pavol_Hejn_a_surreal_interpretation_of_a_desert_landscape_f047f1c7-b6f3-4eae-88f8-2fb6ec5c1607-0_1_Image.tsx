@@ -23,6 +23,7 @@ export function ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6
             src={a_surreal_interpretation_of_a_desert_landscape_f047f1c7_b6f3_4eae_88f8_2fb6ec5c1607_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

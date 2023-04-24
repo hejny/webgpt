@@ -23,6 +23,7 @@ export function AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6
             src={a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5_613f_49de_b6fa_6553b2394494_0_1}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

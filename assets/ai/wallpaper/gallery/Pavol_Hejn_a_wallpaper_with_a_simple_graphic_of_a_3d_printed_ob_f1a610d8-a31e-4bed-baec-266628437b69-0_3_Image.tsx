@@ -23,6 +23,7 @@ export function AWallpaperWithASimpleGraphicOfAdPrintedObF1a610d8A31e4bedBaec266
             src={a_wallpaper_with_a_simple_graphic_of_ad_printed_ob_f1a610d8_a31e_4bed_baec_266628437b69_0_3_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

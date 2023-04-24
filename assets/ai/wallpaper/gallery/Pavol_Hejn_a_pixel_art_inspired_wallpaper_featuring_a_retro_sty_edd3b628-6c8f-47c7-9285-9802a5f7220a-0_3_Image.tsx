@@ -23,6 +23,7 @@ export function APixelArtInspiredWallpaperFeaturingARetroStyEdd3b6286c8f47c79285
             src={a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_edd3b628_6c8f_47c7_9285_9802a5f7220a_0_3}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

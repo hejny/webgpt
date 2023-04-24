@@ -23,6 +23,7 @@ export function ARetroFuturisticWallpaperFeaturingAVintageIllC755111613064d89B90
             src={a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116_1306_4d89_b90c_465a2d6bc13d_0_2}
             draggable="false"
             placeholder="blur"
+            style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
 }

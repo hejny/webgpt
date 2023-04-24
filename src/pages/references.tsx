@@ -3,7 +3,6 @@ import { Vector } from 'xyzt';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
-import { CaveSection } from '../sections/01-Cave/Cave';
 import { WelcomeSection } from '../sections/10-Welcome/Welcome';
 import { ReferencesSection } from '../sections/40-References/References';
 import { FooterSection } from '../sections/90-Footer/Footer';
@@ -18,7 +17,7 @@ export default function ReferencesPage() {
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
                     {/* TODO: Do some system for multiple pages */}
-                    <CaveSection />
+                    {/* <CaveSection /> */}
                 </header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
