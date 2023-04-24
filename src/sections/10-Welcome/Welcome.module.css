@@ -2,6 +2,12 @@
     margin-top: 0px;
 }
 
-.logoHandritten {
-    height: 68px;
+.handritten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.handritten img {
+    height: 120px;
 }
