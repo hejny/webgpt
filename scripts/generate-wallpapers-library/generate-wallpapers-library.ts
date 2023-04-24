@@ -9,6 +9,7 @@ import { capitalize } from 'n12/dist/capitalize';
 import { basename, dirname, join, relative } from 'path';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
+import { generateImport } from '../utils/generateImport';
 import { prettify } from '../utils/prettify';
 
 if (process.cwd() !== join(__dirname, '../..')) {
@@ -38,10 +39,13 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         throw new Error(`Working tree is not clean`);
     }
 
-    const wallpapersDir = join(process.cwd(), 'public/wallpapers');
+    const wallpapersDir = join(process.cwd(), 'assets/ai/wallpaper/gallery');
     const wallpapersPaths = await glob(
         join(wallpapersDir, '*.png' /* <- TODO: Maybe do not hardcode PNGs */).split('\\').join('/'),
     );
+    const indexFilePath = join(wallpapersDir, '..', 'index.tsx');
+
+    const wallpapers: Array<{ entityName: string; entityPath: string }> = [];
 
     for (const wallpaperPath of wallpapersPaths) {
         const name = basename(wallpaperPath);
@@ -78,6 +82,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         );
         const title = nameWithoutBoilerplate.split('_').join(' ');
 
+        wallpapers.push({ entityName: componentName, entityPath: wallpaperFilePath });
+
         const wallpaperFileContent = await prettify(`
 
             /**
@@ -106,6 +112,23 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf-8');
         console.info(`💾 ${relative(process.cwd(), wallpaperFilePath).split('\\').join('/')}`);
     }
+
+    const indexFileContent = await prettify(`
+
+            /**
+             * 🏭 GENERATED WITH 🖼️ Generate patterns library
+             * ⚠️ Warning: Do not edit by hand, all changes will be lost on next execution!
+             */
+        
+            ${wallpapers
+                .map((options) => generateImport({ ...options, itselfPath: indexFilePath, isNamedImport: true }))
+                .join('\n')}
+
+            
+            export const generated_wallpapers = [${wallpapers.map(({ entityName }) => entityName).join(',')}];
+        `);
+
+    await writeFile(indexFilePath, indexFileContent, 'utf-8');
 
     if (isCommited) {
         await commit(dirname(wallpapersDir), `🖼️  Generate wallpapers library`);

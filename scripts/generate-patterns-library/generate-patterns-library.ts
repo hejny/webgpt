@@ -58,7 +58,7 @@ async function generatePatternsLibrary({ isCommited }: { isCommited: boolean }) 
              * ⚠️ Warning: Do not edit by hand, all changes will be lost on next execution!
              */
         
-            ${patterns.map((options) => generateImport({ ...options, itselfPath: indexFilePath })).join('\n')}
+            ${patterns.map((options) => generateImport({ ...options, itselfPath: indexFilePath, isNamedImport: false })).join('\n')}
 
             
             export const generated_patterns = [${patterns.map(({ entityName }) => entityName).join(',')}];
