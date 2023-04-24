@@ -1,10 +1,13 @@
 :root {
-    --normal-text-color: rgb(245, 235, 216);
-    --highlighted-text-color: rgb(255, 255, 255);
+    --normal-text-color: #600200;
+    --highlighted-text-color: #604600;
+    --footer-text-color: #c3d2cd;
 
-    --main-background: linear-gradient(to bottom, hsl(0, 100%, 50%), hsla(0, 42%, 19%, 0.5)),
+    --main-background: linear-gradient(to bottom, #c3d2cd, rgba(195, 210, 205, 0.705)),
         url(../../public/patterns/simple/grey.png);
 
     --footer-background: linear-gradient(to bottom, hsla(0, 60%, 9%, 0.5), hsla(0, 0%, 0%, 0.5)),
         url(../../public/patterns/simple/grey.png);
+
+    /* TODO: !!!! Also add button bg+color */
 }

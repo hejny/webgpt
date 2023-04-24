@@ -84,7 +84,7 @@
 
 .page h2 {
     font-size: 30px;
-    background-image: linear-gradient(to right, var(--normal-text-color), rgb(236, 206, 150) /* <- [🎨] */);
+    background-image: linear-gradient(to right, var(--normal-text-color), var(--highlighted-text-color));
     background-clip: text;
     color: transparent;
 }
