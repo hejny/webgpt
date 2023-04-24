@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
-import pavolHejny from '../../../public/services/prototyping-1.jpg';
+import pavolHejny from '../../../public/people/pavol-hejny.transparent.png';
 import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
 import styles from './Contact.module.css';
@@ -13,7 +13,7 @@ interface ContactProps {
 export function ContactSection(props: ContactProps) {
     const { variant } = props;
 
-    const { t } =useTranslation();
+    const { t } = useTranslation();
 
     return (
         <Section id="Contact">
@@ -81,7 +81,6 @@ export function ContactSection(props: ContactProps) {
                                     Cardano
                                 </a>
                             </li>
-              
                         </>
                     )}
 
