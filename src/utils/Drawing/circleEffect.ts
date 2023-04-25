@@ -1,5 +1,8 @@
 import { createGraphEffect } from './createGraphEffect';
 
+/**
+ * @@@
+ */
 export const circleEffect = createGraphEffect({
     range: {
         min: -Math.PI,

@@ -6,6 +6,9 @@ import enFlag from '../../../public/locale-flags/en.svg';
 import { classNames } from '../../utils/classNames';
 import styles from './LanguagePicker.module.css';
 
+/**
+ * @@@
+ */
 export function LanguagePicker() {
     const router = useRouter();
 

@@ -13,6 +13,9 @@ interface SectionProps {
     className?: string;
 }
 
+/**
+ * @@@
+ */
 export function Section({ id, children, className }: SectionProps) {
     // TODO: [0] Do or comment> const [headChild, ...restChildren] = children;
 

@@ -10,6 +10,9 @@ interface ContactProps {
     variant: 'SHORT' | 'FULL';
 }
 
+/**
+ * @@@
+ */
 export function ContactSection(props: ContactProps) {
     const { variant } = props;
 

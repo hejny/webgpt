@@ -4,6 +4,9 @@ interface MidjourneyLinkProps {
     children: string;
 }
 
+/**
+ * @@@
+ */
 export function MidjourneyLink(props: MidjourneyLinkProps) {
     const { children } = props;
 

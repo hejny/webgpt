@@ -11,6 +11,9 @@ interface ParalaxEffectOptions {
     };
 }
 
+/**
+ * @@@
+ */
 export function createParalaxEffect<TElement extends HTMLElement>(options: ParalaxEffectOptions): Effect<TElement> {
     const { distance, reactOn, debug } = options;
 

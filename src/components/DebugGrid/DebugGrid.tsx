@@ -7,6 +7,9 @@ interface DebugGridProps {
     size: Vector;
 }
 
+/**
+ * @@@
+ */
 export function DebugGrid(props: DebugGridProps) {
     const { size } = props;
 

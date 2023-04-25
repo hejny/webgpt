@@ -9,6 +9,9 @@ interface GraphEffectOptions {
     plot(input: { t: number; seed: Vector }): IVector;
 }
 
+/**
+ * @@@
+ */
 export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEffectOptions): Effect<TElement> {
     return (element: TElement) => {
         return Registration.create(

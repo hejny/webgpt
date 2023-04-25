@@ -7,6 +7,9 @@ interface ItemsProps {
     children: ReactNode;
 }
 
+/**
+ * @@@
+ */
 export function Items(props: ItemsProps) {
     const { itemsOnRow = 3, children } = props;
     return <div className={classNames(styles.items, styles[`row-with-${itemsOnRow}-items`])}>{children}</div>;

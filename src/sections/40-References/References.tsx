@@ -17,6 +17,9 @@ interface ReferencesProps {
     variant: 'SHORT' | 'FULL';
 }
 
+/**
+ * @@@
+ */
 export function ReferencesSection(props: ReferencesProps) {
     const { variant } = props;
 

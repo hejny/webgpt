@@ -24,6 +24,10 @@ interface IArticleProps {
     isEnhanced?: boolean;
 }
 
+
+/**
+ * @@@
+ */
 export function Article(props: IArticleProps) {
     const { content /* [0], isHashUsed */, isEnhanced } = props;
 
