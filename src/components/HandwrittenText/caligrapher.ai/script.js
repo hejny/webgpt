@@ -290,8 +290,8 @@ const E = () => {
         const a = K($.g) / 64;
         var l = W(a * R());
     } else l = parseInt(or.value);
-    const o = ar('text-input').value;
-    (ar('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
+    const o = getElement('text-input').value;
+    (getElement('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
     const n = K(c);
     let v = Math.min(105 / n, 11);
     v *= lr.width.baseVal.value / 1240;
@@ -572,12 +572,12 @@ var $ = $;
 var rr = null;
 var er = null;
 var tr = [];
-var ar = document.getElementById.bind(document);
-var lr = ar('canvas');
-var or = ar('select-style');
-var nr = ar('bias-slider');
-var vr = ar('speed-slider');
-var ir = ar('width-slider');
+var getElement = document.getElementById.bind(document);
+var lr = getElement('canvas');
+var or = getElement('select-style');
+var nr = getElement('bias-slider');
+var vr = getElement('speed-slider');
+var ir = getElement('width-slider');
 ir.oninput = () =>
     ((r) => {
         for (; lr.lastChild; ) lr.removeChild(lr.lastChild);
@@ -596,7 +596,7 @@ const hr = (r) => r.toFixed(3);
     (fr = (() => {
         let r = 0;
         const e = [' ', '.', '..', '..', '...'];
-        const t = ar('loading-indicator');
+        const t = getElement('loading-indicator');
         return setInterval(() => {
             (t.innerHTML = `Loading ${e[r % K(e)]}`), (r += 1);
         }, 200);
@@ -633,18 +633,18 @@ const hr = (r) => r.toFixed(3);
                     } while (performance.now() - r < 16 && e < a.byteLength);
                     e < a.byteLength
                         ? window.requestAnimationFrame(l)
-                        : (ar('draw-button').addEventListener('mousedown', E),
-                          ar('text-input').addEventListener('keydown', (r) => (r.keyCode === 13 ? E() : 1)),
-                          ar('loading-indicator').remove());
+                        : (getElement('draw-button').addEventListener('mousedown', E),
+                          getElement('text-input').addEventListener('keydown', (r) => (r.keyCode === 13 ? E() : 1)),
+                          getElement('loading-indicator').remove());
                 };
                 return l(), t;
             })(r)),
                 clearTimeout(fr);
         }),
-    ar('save-button').addEventListener('click', () => {
-        const r = ar('canvas').getBBox();
+    getElement('save-button').addEventListener('click', () => {
+        const r = getElement('canvas').getBBox();
         const e = [hr(r.x - 3), hr(r.y - 3), hr(r.width + 6), hr(r.height + 6)].join(' ');
-        const t = ar('canvas');
+        const t = getElement('canvas');
         t.setAttribute('viewBox', e);
         const a = new XMLSerializer().serializeToString(t);
         t.removeAttribute('viewBox');
