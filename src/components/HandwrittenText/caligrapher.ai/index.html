@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Calligrapher.ai: Realistic computer-generated handwriting</title>
+        <meta
+            name="Description"
+            content="Realistic handwriting generator. Convert text to handwriting using an in-browser recurrent neural network. Choose from various print and cursive styles. Customize the outputs and download as SVG."
+        />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157545049-3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-157545049-3');
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
+        <link href="/src/components/HandwrittenText/caligrapher.ai/style.css" rel="stylesheet" />
+
+        <meta property="og:title" content="Calligrapher.ai: Realistic computer-generated handwriting" />
+        <meta
+            property="og:description"
+            content="Convert text to handwriting using an in-browser recurrent neural network. Choose from various print and cursive styles. Customize the outputs and download as SVG."
+        />
+        <meta property="og:url" content="https://www.calligrapher.ai/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.calligrapher.ai/og_image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="627" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Calligrapher.ai: Realistic computer-generated handwriting" />
+        <meta
+            name="twitter:description"
+            content="Convert text to handwriting using an in-browser recurrent neural network. Choose from various print and cursive styles. Customize the outputs and download as SVG."
+        />
+        <meta name="twitter:image" content="https://www.calligrapher.ai/og_image.png" />
+    </head>
+    <body>
+        <div id="loading-indicator"></div>
+        <div id="save-button">
+            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                <title>Download</title>
+                <path
+                    d="m409.8 278.5-153.8 153.8-153.8-153.8 28.3-28.3 105.5 105.5v-355.7h40v355.7l105.5-105.5zm102.2 193.5h-512v40h512zm0 0"
+                />
+            </svg>
+        </div>
+        <div id="control-panel">
+            <div class="control-container">
+                <div class="label">Speed:</div>
+                <div class="range-container">
+                    <input id="speed-slider" type="range" min="0.6" max="9.51" value="7" step="0.1" />
+                </div>
+            </div>
+            <div class="control-container">
+                <div class="label">Legibility:</div>
+                <div class="range-container">
+                    <input id="bias-slider" type="range" min="0.15" max="2.5" value="0.75" step="0.02" />
+                </div>
+            </div>
+            <div class="control-container">
+                <div class="label">Stroke Width:</div>
+                <div class="range-container">
+                    <input id="width-slider" type="range" min="0.1" max="1.5" value="1.5" step="0.02" />
+                </div>
+            </div>
+            <div class="control-container">
+                <div class="label">Style:</div>
+                <select id="select-style">
+                    <option value="-">&ndash;</option>
+                    <option value="44">1</option>
+                    <option value="54">2</option>
+                    <option value="23">3</option>
+                    <option value="1">4</option>
+                    <option value="19">5</option>
+                    <option value="6">6</option>
+                    <option value="30" selected>7</option>
+                    <option value="11">8</option>
+                    <option value="21">9</option>
+                    <option value="70">experiment</option>
+                </select>
+            </div>
+        </div>
+        <svg id="canvas"><path id="path" d=""></path></svg>
+        <div id="bottom-bar">
+            <input
+                id="text-input"
+                type="text"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                spellcheck="false"
+                placeholder="Enter text here"
+                maxlength="50"
+                value="AiAi"
+                autofocus
+            />
+            <button id="draw-button">Write!</button>
+        </div>
+        <script src="/src/components/HandwrittenText/caligrapher.ai/script.js"></script>
+    </body>
+</html>
