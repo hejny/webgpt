@@ -10,7 +10,7 @@
         "url": "https://github.com/hejny/aiai"
     },
     "scripts": {
-        "dev": "next dev -p 4444",
+        "dev": "npx chokidar \"locales/**/*.yml\" -c \"npx kill-port 4444 && next dev -p 4444\" --initial --debounce 500",
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
@@ -63,6 +63,7 @@
         "@types/showdown": "2.0.0",
         "@types/styled-components": "5.1.26",
         "chalk": "4.1.2",
+        "chokidar-cli": "^3.0.0",
         "commander": "9.4.1",
         "cypress": "12.3.0",
         "eslint": "8.31.0",
