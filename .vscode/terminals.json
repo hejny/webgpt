@@ -54,6 +54,12 @@
             "focus": true
         },
         {
+            "name": "👊 Kill all 4444",
+            "commands": ["npx kill-port 3000 "],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🔼👑 Release major version",
             "command": "npm version major",
             "onlySingle": true,
