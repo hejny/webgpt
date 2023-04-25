@@ -3,11 +3,5 @@
 }
 
 .handritten {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.handritten img {
-    height: 120px;
+    font-size: 20px;
 }
