@@ -1,5 +1,8 @@
 import styles from './TiledBackground.module.css';
 
+/**
+ * @@@
+ */
 export function TiledBackground() {
     return (
         <div className={styles.tiledBackground}>

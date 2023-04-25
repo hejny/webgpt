@@ -3,8 +3,8 @@ import { forAnimationFrame, forTime } from 'waitasecond';
 import { Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import { Drawing } from './Drawing';
-import { Effect } from './effect';
 import { Particle } from './Particle';
+import { Effect } from './effect';
 
 interface ParticlesDrawingEffectOptions {
     /**
@@ -34,6 +34,9 @@ interface ParticlesDrawingEffectOptions {
     generateDistance(): number;
 }
 
+/**
+ * @@@
+ */
 export function createParticlesDrawingEffect<TElement extends HTMLElement>(
     options: ParticlesDrawingEffectOptions,
 ): Effect<TElement> {

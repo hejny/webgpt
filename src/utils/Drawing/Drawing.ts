@@ -7,6 +7,10 @@ import { stringifySvgPath } from '../svgPath/stringifySvgPath';
 
 // TODO: Use Collboard appereance
 const FADE_OUT_DURATION_MS = 1200;
+
+/**
+ * @@@
+ */
 export class Drawing extends Destroyable implements IDestroyable {
     private readonly svgElement: SVGSVGElement;
     private readonly pathElement: SVGPathElement;

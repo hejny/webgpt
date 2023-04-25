@@ -1,6 +1,9 @@
 import { Vector } from 'xyzt';
 import { ISvgPath } from './ISvgPath';
 
+/**
+ * @@@
+ */
 export function parseSvgPath(pathDefinition: string): ISvgPath {
   
     return [

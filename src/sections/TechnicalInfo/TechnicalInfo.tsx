@@ -4,6 +4,9 @@ import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
 import styles from './TechnicalInfo.module.css';
 
+/**
+ * @@@
+ */
 export function TechnicalInfo() {
     const { t } = useTranslation();
 

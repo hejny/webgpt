@@ -6,6 +6,9 @@ interface TranslateProps {
     children: ReactNode;
 }
 
+/**
+ * @@@
+ */
 export function Translate(props: TranslateProps) {
     const { locale, children } = props;
 

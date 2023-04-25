@@ -6,6 +6,9 @@ interface IStringifySvgPathOptions {
     topLeft: IVector;
 }
 
+/**
+ * @@@
+ */
 export function stringifySvgPath({ path, topLeft }: IStringifySvgPathOptions): string {
     return (
         '\n' +

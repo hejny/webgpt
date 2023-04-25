@@ -9,6 +9,9 @@ interface AppHeadProps {
     subtitle?: string;
 }
 
+/**
+ * @@@
+ */
 export function AppHead(props: AppHeadProps) {
     const { subtitle } = props;
 

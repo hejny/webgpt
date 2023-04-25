@@ -11,6 +11,9 @@ interface WelcomeProps {
     variant: 'HOMEPAGE' | 'SIDEPAGE' | 'PAVOLHEJNY';
 }
 
+/**
+ * @@@
+ */
 export function WelcomeSection(props: WelcomeProps) {
     const { variant } = props;
 

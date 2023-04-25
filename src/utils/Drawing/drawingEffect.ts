@@ -3,6 +3,10 @@ import { forTime } from 'waitasecond';
 import { Vector } from 'xyzt';
 import { Drawing } from './Drawing';
 
+
+/**
+ * @@@
+ */
 export function drawingEffect<TElement extends HTMLElement>(element: TElement): IDestroyable {
     let drawing: Drawing | null = null;
 

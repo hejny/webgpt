@@ -1,15 +1,24 @@
 import { ReactNode } from 'react';
 import styles from './Item.module.css';
 
+/**
+ * @@@
+ */
 export function Item({ children }: { children: ReactNode }) {
     return <div className={styles.item}>{children}</div>;
 }
 
+/**
+ * @@@
+ */
 Item.Title = function Title({ children }: { children: ReactNode }) {
     // TODO: Probbably place here semantic <h3> tag
     return <div className={styles.title}>{children}</div>;
 };
 
+/**
+ * @@@
+ */
 Item.FloatingTitle = function FloatingTitle({ children }: { children: ReactNode }) {
     // TODO: Probbably place here semantic <h3> tag
     return (
@@ -19,10 +28,16 @@ Item.FloatingTitle = function FloatingTitle({ children }: { children: ReactNode 
     );
 };
 
+/**
+ * @@@
+ */
 Item.Description = function Description({ children }: { children: ReactNode }) {
     return <div className={styles.description}>{children}</div>;
 };
 
+/**
+ * @@@
+ */
 Item.Image = function Image({ children }: { children: ReactNode }) {
     return (
         <>
@@ -32,6 +47,9 @@ Item.Image = function Image({ children }: { children: ReactNode }) {
     );
 };
 
+/**
+ * @@@
+ */
 Item.PersonImage = function PersonImage({ children }: { children: ReactNode }) {
     return (
         <>

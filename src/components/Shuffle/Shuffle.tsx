@@ -28,6 +28,9 @@ interface ShuffleProps {
     children: ReactNode;
 }
 
+/**
+ * @@@
+ */
 export function Shuffle(props: ShuffleProps) {
     const { seed, isDisabled, limit, children } = props;
 
