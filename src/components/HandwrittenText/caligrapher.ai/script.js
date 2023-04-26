@@ -644,24 +644,27 @@ const hr = (r) => r.toFixed(3);
                 return l(), t;
             })(r)),
                 clearTimeout(fr);
-        }),
-    getElement('save-button').addEventListener('click', () => {
-        const r = getElement('canvas').getBBox();
-        const e = [hr(r.x - 3), hr(r.y - 3), hr(r.width + 6), hr(r.height + 6)].join(' ');
-        const t = getElement('canvas');
-        t.setAttribute('viewBox', e);
-        const a = new XMLSerializer().serializeToString(t);
-        t.removeAttribute('viewBox');
-        const l = document.createElement('a');
-        l.setAttribute('href', `data:image/svg+xml;base64,${window.btoa(a)}`),
-            l.setAttribute(
-                'download',
-                `${Z.toString()
-                    .toLowerCase()
-                    .replace(/\s+/g, '-')
-                    .replace(/[^\w\-]+/g, '')
-                    .replace(/\-\-+/g, '-')
-                    .trim()}.svg`,
-            ),
-            l.click();
-    });
+        });
+
+// --------------------------------------- Saving ---------------------------------------
+
+getElement('save-button').addEventListener('click', () => {
+    const r = getElement('canvas').getBBox();
+    const e = [hr(r.x - 3), hr(r.y - 3), hr(r.width + 6), hr(r.height + 6)].join(' ');
+    const t = getElement('canvas');
+    t.setAttribute('viewBox', e);
+    const a = new XMLSerializer().serializeToString(t);
+    t.removeAttribute('viewBox');
+    const l = document.createElement('a');
+    l.setAttribute('href', `data:image/svg+xml;base64,${window.btoa(a)}`),
+        l.setAttribute(
+            'download',
+            `${Z.toString()
+                .toLowerCase()
+                .replace(/\s+/g, '-')
+                .replace(/[^\w\-]+/g, '')
+                .replace(/\-\-+/g, '-')
+                .trim()}.svg`,
+        ),
+        l.click();
+});
