@@ -593,58 +593,59 @@ let ur;
 let fr;
 var sr = (r) => r.toFixed(2);
 const hr = (r) => r.toFixed(3);
-(ur = '/src/components/HandwrittenText/caligrapher.ai/d.bin'),
-    // (ur = 'https://d33au9p5d8tjhf.cloudfront.net/d.bin'),
-    (fr = (() => {
-        let r = 0;
-        const e = [' ', '.', '..', '..', '...'];
-        const t = getElement('loading-indicator');
-        return setInterval(() => {
-            (t.innerHTML = `Loading ${e[r % K(e)]}`), (r += 1);
-        }, 200);
-    })()),
-    fetch(ur)
-        .then((r) => r.arrayBuffer())
-        .then((r) => {
-            ($ = ((r) => {
-                let e = 0;
-                const t = {};
-                const a = new DataView(r);
-                var l = (r) => {
-                    do {
-                        const o = a.getUint8(e);
-                        e += 1;
-                        let n = new Uint8Array(o);
-                        for (let r = 0; r < o; r++) (n[r] = a.getUint8(e)), (e += 1);
-                        n = D(n);
-                        const v = a.getUint8(e);
-                        e += 1;
-                        const i = a.getUint32(e, !0);
-                        e += 4;
-                        let u = new Float32Array(i);
-                        for (let r = 0; r < i; r++) (u[r] = a.getFloat32(e, !0)), (e += 4);
-                        if (v) {
-                            var f = new Uint8Array(i);
-                            for (let r = 0; r < i; r++) (f[r] = a.getUint16(e, !0)), (e += 1);
-                        }
-                        const s = a.getUint8(e);
-                        e += 1;
-                        const h = new Uint16Array(s);
-                        for (let r = 0; r < s; r++) (h[r] = a.getUint16(e, !0)), (e += 2);
-                        ['y', 'w', 'r', 'l'].includes(n) ? (u = V(u, f, h)) : v && (u = _(u, f, h)), (t[n] = u);
-                    } while (performance.now() - r < 16 && e < a.byteLength);
-                    e < a.byteLength
-                        ? window.requestAnimationFrame(l)
-                        : (getElement('draw-button').addEventListener('mousedown', handleWriteClick),
-                          getElement('text-input').addEventListener('keydown', (r) =>
-                              r.keyCode === 13 ? handleWriteClick() : 1,
-                          ),
-                          getElement('loading-indicator').remove());
-                };
-                return l(), t;
-            })(r)),
-                clearTimeout(fr);
-        });
+ur = '/src/components/HandwrittenText/caligrapher.ai/d.bin';
+
+fr = (() => {
+    let r = 0;
+    const e = [' ', '.', '..', '..', '...'];
+    const t = getElement('loading-indicator');
+    return setInterval(() => {
+        (t.innerHTML = `Loading ${e[r % K(e)]}`), (r += 1);
+    }, 200);
+})();
+
+fetch(ur)
+    .then((r) => r.arrayBuffer())
+    .then((r) => {
+        ($ = ((r) => {
+            let e = 0;
+            const t = {};
+            const a = new DataView(r);
+            var l = (r) => {
+                do {
+                    const o = a.getUint8(e);
+                    e += 1;
+                    let n = new Uint8Array(o);
+                    for (let r = 0; r < o; r++) (n[r] = a.getUint8(e)), (e += 1);
+                    n = D(n);
+                    const v = a.getUint8(e);
+                    e += 1;
+                    const i = a.getUint32(e, !0);
+                    e += 4;
+                    let u = new Float32Array(i);
+                    for (let r = 0; r < i; r++) (u[r] = a.getFloat32(e, !0)), (e += 4);
+                    if (v) {
+                        var f = new Uint8Array(i);
+                        for (let r = 0; r < i; r++) (f[r] = a.getUint16(e, !0)), (e += 1);
+                    }
+                    const s = a.getUint8(e);
+                    e += 1;
+                    const h = new Uint16Array(s);
+                    for (let r = 0; r < s; r++) (h[r] = a.getUint16(e, !0)), (e += 2);
+                    ['y', 'w', 'r', 'l'].includes(n) ? (u = V(u, f, h)) : v && (u = _(u, f, h)), (t[n] = u);
+                } while (performance.now() - r < 16 && e < a.byteLength);
+                e < a.byteLength
+                    ? window.requestAnimationFrame(l)
+                    : (getElement('draw-button').addEventListener('mousedown', handleWriteClick),
+                      getElement('text-input').addEventListener('keydown', (r) =>
+                          r.keyCode === 13 ? handleWriteClick() : 1,
+                      ),
+                      getElement('loading-indicator').remove());
+            };
+            return l(), t;
+        })(r)),
+            clearTimeout(fr);
+    });
 
 // --------------------------------------- Saving ---------------------------------------
 
