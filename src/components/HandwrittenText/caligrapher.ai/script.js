@@ -244,7 +244,7 @@ const U = (r) => {
         return t;
     })(e, [1, 2, 1, 2]);
     p = v(p);
-    const g = parseFloat(nr.value);
+    const g = parseFloat(biasSliderElement.value);
     var c = h(n(c), N(g));
     var f = ((f = l(d(f))), s(f, 1 + g));
     for (let r = 0; r < K(f); r++) f[r] < Q(0.02) && (f[r] = f[r] - 100);
@@ -284,20 +284,21 @@ const L = (r, e) => {
     const [t, a] = F(r, e);
     return [U(t), a, e];
 };
-const E = () => {
-    for (rr != null && window.cancelAnimationFrame(rr); lr.lastChild; ) lr.removeChild(lr.lastChild);
-    if (((r = 0), (e = !1), or.value == '-')) {
+const handleWriteClick = () => {
+    for (rr != null && window.cancelAnimationFrame(rr); canvasElement.lastChild; )
+        canvasElement.removeChild(canvasElement.lastChild);
+    if (((r = 0), (e = !1), styleSelectElement.value == '-')) {
         const a = K($.g) / 64;
         var l = W(a * R());
-    } else l = parseInt(or.value);
+    } else l = parseInt(styleSelectElement.value);
     const o = getElement('text-input').value;
     (getElement('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
     const n = K(c);
     let v = Math.min(105 / n, 11);
-    v *= lr.width.baseVal.value / 1240;
+    v *= canvasElement.width.baseVal.value / 1240;
     const i = 8.2 * n * v;
-    const f = Math.max((lr.width.baseVal.value - i) / 2, 10);
-    const s = lr.height.baseVal.value / 2 + 20;
+    const f = Math.max((canvasElement.width.baseVal.value - i) / 2, 10);
+    const s = canvasElement.height.baseVal.value / 2 + 20;
     (t = v),
         (c = ((r) => {
             let e = r.split('').map((r) => (r in H ? H[r] : 1));
@@ -330,7 +331,7 @@ const E = () => {
     const p = [Y([0, 0, 1])];
     const w = [Y([f, s, 1])];
     var g = (r, e) => {
-        const t = Math.round(parseFloat(vr.value));
+        const t = Math.round(parseFloat(speedSliderElement.value));
         for (let i = 0; i < t; i++) {
             const a = e[K(e) - 1];
             var [l, o, r] = L(a, r);
@@ -385,7 +386,7 @@ const q = (r, e, t) => {
     }
     const k = c.join(' ');
     const F = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-    F.setAttribute('d', k), (F.style.stroke = 'black'), (F.style.fill = 'black'), lr.appendChild(F);
+    F.setAttribute('d', k), (F.style.stroke = 'black'), (F.style.fill = 'black'), canvasElement.appendChild(F);
 };
 var B = (r) => {
     const e = [];
@@ -417,13 +418,13 @@ const z = (r) => {
 };
 var S = (a) => {
     if (K(a) != 0) {
-        const l = parseFloat(ir.value);
+        const l = parseFloat(widthSliderElement.value);
         const o = z(a);
         for (let n = r; n < K(o); n++) {
             a = o[n];
             K(a) < 2
                 ? (K(a) != 0 && a[0][2] != 1) || (r += 1)
-                : (e && lr.removeChild(lr.lastChild),
+                : (e && canvasElement.removeChild(canvasElement.lastChild),
                   q(a, t, l),
                   a[K(a) - 1][2] == 1 ? ((e = !1), (r += 1)) : (e = !0));
         }
@@ -573,16 +574,17 @@ var rr = null;
 var er = null;
 var tr = [];
 var getElement = document.getElementById.bind(document);
-var lr = getElement('canvas');
-var or = getElement('select-style');
-var nr = getElement('bias-slider');
-var vr = getElement('speed-slider');
-var ir = getElement('width-slider');
-ir.oninput = () =>
+var canvasElement = getElement('canvas');
+var styleSelectElement = getElement('select-style');
+var biasSliderElement = getElement('bias-slider');
+var speedSliderElement = getElement('speed-slider');
+var widthSliderElement = getElement('width-slider');
+
+widthSliderElement.oninput = () =>
     ((r) => {
-        for (; lr.lastChild; ) lr.removeChild(lr.lastChild);
+        for (; canvasElement.lastChild; ) canvasElement.removeChild(canvasElement.lastChild);
         if (K(r) != 0) {
-            const e = parseFloat(ir.value);
+            const e = parseFloat(widthSliderElement.value);
             const a = z(r);
             for (let l = 0; l < K(a); l++) (r = a[l]), K(r) < 2 || q(r, t, e);
         }
@@ -633,8 +635,10 @@ const hr = (r) => r.toFixed(3);
                     } while (performance.now() - r < 16 && e < a.byteLength);
                     e < a.byteLength
                         ? window.requestAnimationFrame(l)
-                        : (getElement('draw-button').addEventListener('mousedown', E),
-                          getElement('text-input').addEventListener('keydown', (r) => (r.keyCode === 13 ? E() : 1)),
+                        : (getElement('draw-button').addEventListener('mousedown', handleWriteClick),
+                          getElement('text-input').addEventListener('keydown', (r) =>
+                              r.keyCode === 13 ? handleWriteClick() : 1,
+                          ),
                           getElement('loading-indicator').remove());
                 };
                 return l(), t;
