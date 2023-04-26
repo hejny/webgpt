@@ -3,8 +3,8 @@ import { forAnimationFrame, forTime } from 'waitasecond';
 import { Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import { Drawing } from './Drawing';
-import { Particle } from './Particle';
 import { Effect } from './effect';
+import { Particle } from './Particle';
 
 interface ParticlesDrawingEffectOptions {
     /**
