@@ -677,6 +677,12 @@ fetch(ur)
         clearTimeout(fr);
     });
 
+// --------------------------------------- Run automatically ---------------------------------------
+
+setTimeout(() => {
+    handleWriteClick();
+}, 1000);
+
 // --------------------------------------- Saving ---------------------------------------
 
 getElement('save-button').addEventListener('click', () => {
