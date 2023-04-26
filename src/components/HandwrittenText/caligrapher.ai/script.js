@@ -604,47 +604,77 @@ fr = (() => {
     }, 200);
 })();
 
+// --------------------------------------- Press [Write!] button ---------------------------------------
+
 fetch(ur)
-    .then((r) => r.arrayBuffer())
-    .then((r) => {
-        ($ = ((r) => {
-            let e = 0;
-            const t = {};
-            const a = new DataView(r);
-            var l = (r) => {
+    .then((res) => {
+        return res.arrayBuffer();
+    })
+    .then((data) => {
+        $ = ((data) => {
+            let index = 0;
+            const at = {};
+            const reader = new DataView(data);
+            /**
+             * @param {number} flightPhase
+             * @return {undefined}
+             */
+            var init = (flightPhase) => {
                 do {
-                    const o = a.getUint8(e);
-                    e += 1;
-                    let n = new Uint8Array(o);
-                    for (let r = 0; r < o; r++) (n[r] = a.getUint8(e)), (e += 1);
-                    n = D(n);
-                    const v = a.getUint8(e);
-                    e += 1;
-                    const i = a.getUint32(e, !0);
-                    e += 4;
-                    let u = new Float32Array(i);
-                    for (let r = 0; r < i; r++) (u[r] = a.getFloat32(e, !0)), (e += 4);
-                    if (v) {
-                        var f = new Uint8Array(i);
-                        for (let r = 0; r < i; r++) (f[r] = a.getUint16(e, !0)), (e += 1);
+                    const randomBytesLength = reader.getUint8(index);
+                    index = index + 1;
+                    let n = new Uint8Array(randomBytesLength);
+                    for (let i = 0; i < randomBytesLength; i++) {
+                        n[i] = reader.getUint8(index);
+                        index = index + 1;
                     }
-                    const s = a.getUint8(e);
-                    e += 1;
-                    const h = new Uint16Array(s);
-                    for (let r = 0; r < s; r++) (h[r] = a.getUint16(e, !0)), (e += 2);
-                    ['y', 'w', 'r', 'l'].includes(n) ? (u = V(u, f, h)) : v && (u = _(u, f, h)), (t[n] = u);
-                } while (performance.now() - r < 16 && e < a.byteLength);
-                e < a.byteLength
-                    ? window.requestAnimationFrame(l)
-                    : (getElement('draw-button').addEventListener('mousedown', handleWriteClick),
-                      getElement('text-input').addEventListener('keydown', (r) =>
-                          r.keyCode === 13 ? handleWriteClick() : 1,
-                      ),
-                      getElement('loading-indicator').remove());
+                    n = D(n);
+                    const v = reader.getUint8(index);
+                    index = index + 1;
+                    const length = reader.getUint32(index, true);
+                    index = index + 4;
+                    let content = new Float32Array(length);
+                    for (let i = 0; i < length; i++) {
+                        content[i] = reader.getFloat32(index, true);
+                        index = index + 4;
+                    }
+                    if (v) {
+                        /** @type {!Uint8Array} */
+                        var value = new Uint8Array(length);
+                        for (let i = 0; i < length; i++) {
+                            value[i] = reader.getUint16(index, true);
+                            index = index + 1;
+                        }
+                    }
+                    const indexCount = reader.getUint8(index);
+                    index = index + 1;
+                    const url = new Uint16Array(indexCount);
+                    for (let i = 0; i < indexCount; i++) {
+                        url[i] = reader.getUint16(index, true);
+                        index = index + 2;
+                    }
+                    if (['y', 'w', 'r', 'l'].includes(n)) {
+                        content = V(content, value, url);
+                    } else {
+                        if (v) {
+                            content = _(content, value, url);
+                        }
+                    }
+                    at[n] = content;
+                } while (performance.now() - flightPhase < 16 && index < reader.byteLength);
+                if (index < reader.byteLength) {
+                    window.requestAnimationFrame(init);
+                } else {
+                    getElement('draw-button').addEventListener('mousedown', handleWriteClick);
+                    getElement('text-input').addEventListener('keydown', (event) => {
+                        return event.keyCode === 13 ? handleWriteClick() : 1;
+                    });
+                    getElement('loading-indicator').remove();
+                }
             };
-            return l(), t;
-        })(r)),
-            clearTimeout(fr);
+            return init(), at;
+        })(data);
+        clearTimeout(fr);
     });
 
 // --------------------------------------- Saving ---------------------------------------
