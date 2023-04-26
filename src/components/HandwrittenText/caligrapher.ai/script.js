@@ -665,6 +665,9 @@ fetch(ur)
                 if (index < reader.byteLength) {
                     window.requestAnimationFrame(init);
                 } else {
+                    // Note: HERE is the model loaded
+                    handleWriteClick();
+
                     getElement('draw-button').addEventListener('mousedown', handleWriteClick);
                     getElement('text-input').addEventListener('keydown', (event) => {
                         return event.keyCode === 13 ? handleWriteClick() : 1;
@@ -676,12 +679,6 @@ fetch(ur)
         })(data);
         clearTimeout(fr);
     });
-
-// --------------------------------------- Run automatically ---------------------------------------
-
-setTimeout(() => {
-    handleWriteClick();
-}, 1000);
 
 // --------------------------------------- Saving ---------------------------------------
 
