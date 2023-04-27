@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Calligrapher.ai: Realistic computer-generated handwriting</title>
+        <meta
+            name="Description"
+            content="Realistic handwriting generator. Convert text to handwriting using an in-browser recurrent neural network. Choose from various print and cursive styles. Customize the outputs and download as SVG."
+        />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet" />
+        <link href="/public/handwritten/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <svg id="canvas"></svg>
+        <script src="/public/handwritten/script.js"></script>
+        <script>
+            handwriteText({
+                text: 'AiAix',
+                speed: 7,
+                bias: 0.75,
+                width: 1.5,
+                style: 30,
+                canvasElement: document.getElementById('canvas'),
+            });
+        </script>
+    </body>
+</html>

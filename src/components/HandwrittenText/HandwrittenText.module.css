@@ -11,7 +11,7 @@
     grid-template: '🟦';
 }
 
-.HandwrittenText img.primaryImage {
+.HandwrittenText svgx/*!!!*/.primaryImage {
     /*/
     outline: 1px dotted green;
     /**/

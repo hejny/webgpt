@@ -1,4 +1,4 @@
-// TODO: !!! Rename from caligrapher to handwritten
+// ⚠ Warning: This is just a javascript copy of /src/components/HandwrittenText/utils/handwriteText.ts
 
 function handwriteText(options) {
     function getElement(elementId) {
@@ -304,6 +304,8 @@ function handwriteText(options) {
             var l = W(a * R());
         } else l = options.style /*parseInt( styleSelectElement.value )*/;
         const o = options.text;
+
+        //console.log('!!!', c);
         (getElement('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
         const n = K(c);
         let v = Math.min(105 / n, 11);
@@ -609,7 +611,7 @@ function handwriteText(options) {
     let fr;
     var sr = (r) => r.toFixed(2);
     const hr = (r) => r.toFixed(3);
-    ur = '/src/components/HandwrittenText/caligrapher.ai/d.bin';
+    ur = '/public/handwritten/d.bin';
 
     fr = (() => {
         let r = 0;

@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    color: #50555a;
+    overscroll-behavior: none;
+}
+#canvas {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    display: block;
+}

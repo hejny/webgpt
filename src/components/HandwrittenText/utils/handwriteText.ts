@@ -6,7 +6,7 @@ interface IHandwriteTextOptions {
     bias: number;
     width: number;
     style: number;
-    canvasElement: HTMLCanvasElement;
+    svgElement: HTMLSvgElement;
 }
 
 // TODO: !!! Return promise
@@ -14,7 +14,7 @@ interface IHandwriteTextOptions {
 export function handwriteText(options: IHandwriteTextOptions) {
     function getElement(elementId: string): HTMLElement {
         if (elementId === 'canvas') {
-            return options.canvasElement;
+            return options.svgElement;
         } else {
             return document.createElement('div');
         }
@@ -620,7 +620,7 @@ export function handwriteText(options: IHandwriteTextOptions) {
     let fr;
     var sr = (r) => r.toFixed(2);
     const hr = (r) => r.toFixed(3);
-    ur = '/caligrapher.ai/d.bin';
+    ur = '/handwritten/d.bin';
 
     fr = (() => {
         let r = 0;
@@ -693,7 +693,10 @@ export function handwriteText(options: IHandwriteTextOptions) {
                         window.requestAnimationFrame(init);
                     } else {
                         // Note: HERE is the model loaded
-                        handleWriteClick();
+
+                        setTimeout(() => {
+                            handleWriteClick();
+                        }, 1000 /* !!! Remove delayes after fix */);
 
                         /*
                         getElement('draw-button').addEventListener('mousedown', handleWriteClick);
