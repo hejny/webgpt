@@ -11,16 +11,16 @@
     grid-template: '🟦';
 }
 
-.HandwrittenText svgx/*!!!*/.primaryImage {
+.HandwrittenText svg.primaryImage {
     /*/
     outline: 1px dotted green;
     /**/
 
     grid-area: 🟦;
 
-    object-fit: 'cover';
-    width: 100%;
-    height: 1em;
+    /*object-fit: 'cover';*/
+    width: 100vw;
+    height: 2em;
 }
 
 .HandwrittenText span.textFallback {

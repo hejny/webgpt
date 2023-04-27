@@ -28,9 +28,6 @@ export function HandwrittenText(props: HandwrittenTextProps) {
             */}
             <svg
                 className={styles.primaryImage}
-                width={1000}
-                height={1000}
-                style={{ border: '1px solid red' }}
                 ref={async (svgElement) => {
                     if (!svgElement) {
                         return;
@@ -40,7 +37,9 @@ export function HandwrittenText(props: HandwrittenTextProps) {
 
                     console.log(svgElement);
                     await handwriteText({
-                        text: 'AiAix',
+                        // TODO: !!! Pass color here
+                        // TODO: !!! Work with aspect ratio
+                        text: children,
                         speed: 7,
                         bias: 0.75,
                         width: 1.5,
