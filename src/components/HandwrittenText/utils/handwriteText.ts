@@ -1,5 +1,18 @@
-function handwriteText(options) {
-    function getElement(elementId) {
+// @ts-nocheck
+
+interface IHandwriteTextOptions {
+    text: string;
+    speed: number;
+    bias: number;
+    width: number;
+    style: number;
+    canvasElement: HTMLCanvasElement;
+}
+
+// TODO: !!! Return promise
+
+export function handwriteText(options: IHandwriteTextOptions) {
+    function getElement(elementId: string): HTMLElement {
         if (elementId === 'canvas') {
             return options.canvasElement;
         } else {
@@ -607,7 +620,7 @@ function handwriteText(options) {
     let fr;
     var sr = (r) => r.toFixed(2);
     const hr = (r) => r.toFixed(3);
-    ur = '/src/components/HandwrittenText/caligrapher.ai/d.bin';
+    ur = '/caligrapher.ai/d.bin';
 
     fr = (() => {
         let r = 0;
