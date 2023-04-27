@@ -1,6 +1,5 @@
 import { Passions_Conflict } from '@next/font/google';
-import Image from 'next/image';
-import aiai from '../../../public/handwritten/aiai/aiai.svg';
+import { forTime } from 'waitasecond';
 import { classNames } from '../../utils/classNames';
 import styles from './HandwrittenText.module.css';
 import { handwriteText } from './utils/handwriteText';
@@ -18,31 +17,40 @@ export function HandwrittenText(props: HandwrittenTextProps) {
     const { children } = props;
     return (
         <div className={styles.HandwrittenText}>
+            {/* 
             <Image
                 className={styles.primaryImage}
                 alt={children}
                 src={aiai}
                 draggable="false"
-                placeholder="empty" /* <- TODO: Blur */
+                placeholder="empty" /* <- TODO: Blur * /
             />
-            <canvas
+            */}
+            <svg
+                className={styles.primaryImage}
                 width={1000}
                 height={1000}
                 style={{ border: '1px solid red' }}
-                ref={(canvasElement) => {
-                    if (!canvasElement) {
+                ref={async (svgElement) => {
+                    if (!svgElement) {
                         return;
                     }
+
+                    await forTime(1000 /* !!! Remove delayes after fix */);
+
+                    console.log(svgElement);
                     handwriteText({
                         text: 'AiAix',
                         speed: 7,
                         bias: 0.75,
                         width: 1.5,
                         style: 30,
-                        canvasElement,
+                        svgElement,
                     });
                 }}
-            />
+            >
+                {/* <path id="path" d=""></path> */}
+            </svg>
 
             <span className={classNames(passionsConflictFont.className, styles.textFallback)}>{children}</span>
         </div>
