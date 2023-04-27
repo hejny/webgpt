@@ -1,4 +1,13 @@
 function handwriteText(options) {
+    function getElement(elementId) {
+        if (elementId === 'canvas') {
+            return options.canvasElement;
+        } else {
+            return document.createElement('div');
+        }
+        // return document.getElementById(elementId);
+    }
+
     let r;
     let e;
     let t;
@@ -573,9 +582,11 @@ function handwriteText(options) {
     var $ = $;
     var rr = null;
     var er = null;
-    var tr = [];
-    var getElement = document.getElementById.bind(document);
+    // var tr = [];
+
     var canvasElement = getElement('canvas');
+
+    /*
     var styleSelectElement = getElement('select-style');
     var biasSliderElement = getElement('bias-slider');
     var speedSliderElement = getElement('speed-slider');
@@ -585,11 +596,13 @@ function handwriteText(options) {
         ((r) => {
             for (; canvasElement.lastChild; ) canvasElement.removeChild(canvasElement.lastChild);
             if (K(r) != 0) {
-                const e = options.width; /*parseFloat(widthSliderElement.value)*/
+                const e = options.width; /*parseFloat(widthSliderElement.value)* /
                 const a = z(r);
                 for (let l = 0; l < K(a); l++) (r = a[l]), K(r) < 2 || q(r, t, e);
             }
         })(tr);
+    */
+
     let ur;
     let fr;
     var sr = (r) => r.toFixed(2);
