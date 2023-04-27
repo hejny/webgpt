@@ -245,7 +245,7 @@ function handwriteText(options) {
             return t;
         })(e, [1, 2, 1, 2]);
         p = v(p);
-        const g = parseFloat(biasSliderElement.value);
+        const g = options.bias; /*parseFloat(biasSliderElement.value)*/
         var c = h(n(c), N(g));
         var f = ((f = l(d(f))), s(f, 1 + g));
         for (let r = 0; r < K(f); r++) f[r] < Q(0.02) && (f[r] = f[r] - 100);
@@ -288,10 +288,10 @@ function handwriteText(options) {
     const handleWriteClick = () => {
         for (rr != null && window.cancelAnimationFrame(rr); canvasElement.lastChild; )
             canvasElement.removeChild(canvasElement.lastChild);
-        if (((r = 0), (e = !1), styleSelectElement.value == '-')) {
+        if (((r = 0), (e = !1), options.style /* styleSelectElement.value */ == '-')) {
             const a = K($.g) / 64;
             var l = W(a * R());
-        } else l = parseInt(styleSelectElement.value);
+        } else l = options.style /*parseInt( styleSelectElement.value )*/;
         const o = options.text;
         (getElement('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
         const n = K(c);
@@ -332,7 +332,7 @@ function handwriteText(options) {
         const p = [Y([0, 0, 1])];
         const w = [Y([f, s, 1])];
         var g = (r, e) => {
-            const t = Math.round(parseFloat(speedSliderElement.value));
+            const t = Math.round(options.speed /* parseFloat(speedSliderElement.value) */);
             for (let i = 0; i < t; i++) {
                 const a = e[K(e) - 1];
                 var [l, o, r] = L(a, r);
@@ -419,7 +419,7 @@ function handwriteText(options) {
     };
     var S = (a) => {
         if (K(a) != 0) {
-            const l = parseFloat(widthSliderElement.value);
+            const l = options.width; /* parseFloat(widthSliderElement.value) */
             const o = z(a);
             for (let n = r; n < K(o); n++) {
                 a = o[n];
@@ -585,7 +585,7 @@ function handwriteText(options) {
         ((r) => {
             for (; canvasElement.lastChild; ) canvasElement.removeChild(canvasElement.lastChild);
             if (K(r) != 0) {
-                const e = parseFloat(widthSliderElement.value);
+                const e = options.width; /*parseFloat(widthSliderElement.value)*/
                 const a = z(r);
                 for (let l = 0; l < K(a); l++) (r = a[l]), K(r) < 2 || q(r, t, e);
             }
