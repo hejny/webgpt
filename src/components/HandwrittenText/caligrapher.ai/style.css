@@ -76,7 +76,6 @@ input[type='range'] {
     left: 20px;
 }
 #save-button {
-    display: none;
     height: 25px;
     width: 25px;
 }

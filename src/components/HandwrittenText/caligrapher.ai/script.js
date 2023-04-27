@@ -1,4 +1,4 @@
-function handwriteText(text) {
+function handwriteText(options) {
     let r;
     let e;
     let t;
@@ -292,7 +292,7 @@ function handwriteText(text) {
             const a = K($.g) / 64;
             var l = W(a * R());
         } else l = parseInt(styleSelectElement.value);
-        const o = getElement('text-input').value;
+        const o = options.text;
         (getElement('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
         const n = K(c);
         let v = Math.min(105 / n, 11);
@@ -669,11 +669,13 @@ function handwriteText(text) {
                         // Note: HERE is the model loaded
                         handleWriteClick();
 
+                        /*
                         getElement('draw-button').addEventListener('mousedown', handleWriteClick);
                         getElement('text-input').addEventListener('keydown', (event) => {
                             return event.keyCode === 13 ? handleWriteClick() : 1;
                         });
                         getElement('loading-indicator').remove();
+                        */
                     }
                 };
                 return init(), at;
@@ -681,6 +683,7 @@ function handwriteText(text) {
             clearTimeout(fr);
         });
 
+    /*
     // --------------------------------------- Saving ---------------------------------------
 
     getElement('save-button').addEventListener('click', () => {
@@ -703,4 +706,5 @@ function handwriteText(text) {
         );
         popOutActionElement.click();
     });
+    */
 }
