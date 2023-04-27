@@ -3,7 +3,7 @@
 function handwriteText(options) {
     function getElement(elementId) {
         if (elementId === 'canvas') {
-            return options.canvasElement;
+            return options.svgElement;
         } else {
             return document.createElement('div');
         }
@@ -611,7 +611,7 @@ function handwriteText(options) {
     let fr;
     var sr = (r) => r.toFixed(2);
     const hr = (r) => r.toFixed(3);
-    ur = '/public/handwritten/d.bin';
+    ur = options.modelSrc;
 
     fr = (() => {
         let r = 0;

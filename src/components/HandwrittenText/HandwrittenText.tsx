@@ -39,7 +39,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                     await forTime(1000 /* !!! Remove delayes after fix */);
 
                     console.log(svgElement);
-                    handwriteText({
+                    await handwriteText({
                         text: 'AiAix',
                         speed: 7,
                         bias: 0.75,
