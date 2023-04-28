@@ -1,6 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
-import { generated_wallpapers } from '../../assets/ai/wallpaper';
+import { generated_wallpapers } from '../../assets/ai/wallpaper/0-2.index';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
