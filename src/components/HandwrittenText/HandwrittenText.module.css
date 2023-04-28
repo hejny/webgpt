@@ -20,7 +20,9 @@
 
     /*object-fit: 'cover';*/
     width: 100vw;
-    height: 2em;
+    height: 3em;
+
+    transform: translate(0, calc(-50% + 0.5em));
 }
 
 .HandwrittenText span.textFallback {
