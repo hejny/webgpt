@@ -51,8 +51,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
     for (const wallpaperPath of wallpapersPaths) {
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
 
-
-        if(!(await isFileExisting(metadataPath)){
+        if (!(await isFileExisting(metadataPath))) {
             throw new Error(`Metadata file does not exist "${metadataPath}"`);
         }
 
