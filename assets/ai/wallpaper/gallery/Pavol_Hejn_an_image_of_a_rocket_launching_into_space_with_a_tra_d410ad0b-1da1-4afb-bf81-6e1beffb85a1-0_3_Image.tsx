@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b_1da1_4afb_bf81_6e1beffb85a1_0_3 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.png';
+import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.json';
 
 /**
  * Image of an image of a rocket launching into space with a tra d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0
@@ -27,3 +28,5 @@ export function AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e
         />
     );
 }
+
+AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_3_Image.metadata = metadata;

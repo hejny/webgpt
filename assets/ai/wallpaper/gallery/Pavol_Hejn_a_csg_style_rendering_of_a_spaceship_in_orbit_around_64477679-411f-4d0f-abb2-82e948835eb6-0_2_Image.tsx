@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_csg_style_rendering_of_a_spaceship_in_orbit_around_64477679_411f_4d0f_abb2_82e948835eb6_0_2 from './Pavol_Hejn_a_csg_style_rendering_of_a_spaceship_in_orbit_around_64477679-411f-4d0f-abb2-82e948835eb6-0_2.png';
+import metadata from './Pavol_Hejn_a_csg_style_rendering_of_a_spaceship_in_orbit_around_64477679-411f-4d0f-abb2-82e948835eb6-0_2.json';
 
 /**
  * Image of a csg style rendering of a spaceship in orbit around 64477679-411f-4d0f-abb2-82e948835eb6-0
@@ -27,3 +28,5 @@ export function ACsgStyleRenderingOfASpaceshipInOrbitAround64477679411f4d0fAbb28
         />
     );
 }
+
+ACsgStyleRenderingOfASpaceshipInOrbitAround64477679411f4d0fAbb282e948835eb60_2_Image.metadata = metadata;

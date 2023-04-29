@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_photograph_of_an_astronaut_standing_on_the_surface_68938bae_be07_4109_aa15_80a8f6bf1505_0_3 from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_68938bae-be07-4109-aa15-80a8f6bf1505-0_3.png';
+import metadata from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_68938bae-be07-4109-aa15-80a8f6bf1505-0_3.json';
 
 /**
  * Image of a photograph of an astronaut standing on the surface 68938bae-be07-4109-aa15-80a8f6bf1505-0
@@ -27,3 +28,5 @@ export function APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa15
         />
     );
 }
+
+APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa1580a8f6bf15050_3_Image.metadata = metadata;

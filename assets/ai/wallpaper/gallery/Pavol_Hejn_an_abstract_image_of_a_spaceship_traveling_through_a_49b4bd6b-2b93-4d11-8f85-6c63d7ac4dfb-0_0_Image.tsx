@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_abstract_image_of_a_spaceship_traveling_through_a_49b4bd6b_2b93_4d11_8f85_6c63d7ac4dfb_0_0 from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_49b4bd6b-2b93-4d11-8f85-6c63d7ac4dfb-0_0.png';
+import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_49b4bd6b-2b93-4d11-8f85-6c63d7ac4dfb-0_0.json';
 
 /**
  * Image of an abstract image of a spaceship traveling through a 49b4bd6b-2b93-4d11-8f85-6c63d7ac4dfb-0
@@ -27,3 +28,5 @@ export function AnAbstractImageOfASpaceshipTravelingThroughA49b4bd6b2b934d118f85
         />
     );
 }
+
+AnAbstractImageOfASpaceshipTravelingThroughA49b4bd6b2b934d118f856c63d7ac4dfb0_0_Image.metadata = metadata;

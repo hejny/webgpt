@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2_4379_4d40_9c2c_e202df99d809_0_2 from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_2.png';
+import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_2.json';
 
 /**
  * Image of a realistic photograph of a nebula with bright color cd56b4f2-4379-4d40-9c2c-e202df99d809-0
@@ -27,3 +28,5 @@ export function ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2c
         />
     );
 }
+
+ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_2_Image.metadata = metadata;

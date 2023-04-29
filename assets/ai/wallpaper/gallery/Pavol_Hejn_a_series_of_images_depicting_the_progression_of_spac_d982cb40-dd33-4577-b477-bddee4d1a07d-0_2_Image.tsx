@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_series_of_images_depicting_the_progression_of_spac_d982cb40_dd33_4577_b477_bddee4d1a07d_0_2 from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d982cb40-dd33-4577-b477-bddee4d1a07d-0_2.png';
+import metadata from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d982cb40-dd33-4577-b477-bddee4d1a07d-0_2.json';
 
 /**
  * Image of a series of images depicting the progression of spac d982cb40-dd33-4577-b477-bddee4d1a07d-0
@@ -27,3 +28,5 @@ export function ASeriesOfImagesDepictingTheProgressionOfSpacD982cb40Dd334577B477
         />
     );
 }
+
+ASeriesOfImagesDepictingTheProgressionOfSpacD982cb40Dd334577B477Bddee4d1a07d0_2_Image.metadata = metadata;

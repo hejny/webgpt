@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_abstract_image_of_a_star_field_with_bright_colors_650a0f95_7462_4734_b12b_2250b6978b3e_0_2 from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_2.png';
+import metadata from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_2.json';
 
 /**
  * Image of an abstract image of a star field with bright colors 650a0f95-7462-4734-b12b-2250b6978b3e-0
@@ -27,3 +28,5 @@ export function AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2
         />
     );
 }
+
+AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_2_Image.metadata = metadata;

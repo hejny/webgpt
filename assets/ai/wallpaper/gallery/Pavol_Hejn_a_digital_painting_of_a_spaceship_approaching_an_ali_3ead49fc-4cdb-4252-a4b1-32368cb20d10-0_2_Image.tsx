@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc_4cdb_4252_a4b1_32368cb20d10_0_2 from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_2.png';
+import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_2.json';
 
 /**
  * Image of a digital painting of a spaceship approaching an ali 3ead49fc-4cdb-4252-a4b1-32368cb20d10-0
@@ -27,3 +28,5 @@ export function ADigitalPaintingOfASpaceshipApproachingAnAli3ead49fc4cdb4252A4b1
         />
     );
 }
+
+ADigitalPaintingOfASpaceshipApproachingAnAli3ead49fc4cdb4252A4b132368cb20d100_2_Image.metadata = metadata;

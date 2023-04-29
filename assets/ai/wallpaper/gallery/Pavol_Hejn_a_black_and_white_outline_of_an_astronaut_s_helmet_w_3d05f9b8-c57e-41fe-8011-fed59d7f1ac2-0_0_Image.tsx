@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8_c57e_41fe_8011_fed59d7f1ac2_0_0 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.png';
+import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.json';
 
 /**
  * Image of a black and white outline of an astronaut s helmet w 3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0
@@ -27,3 +28,5 @@ export function ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fe
         />
     );
 }
+
+ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Image.metadata = metadata;

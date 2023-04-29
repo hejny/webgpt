@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b_054d_4c2a_a84f_29e37be59e99_0_2 from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b-054d-4c2a-a84f-29e37be59e99-0_2.png';
+import metadata from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b-054d-4c2a-a84f-29e37be59e99-0_2.json';
 
 /**
  * Image of a photograph of a lava flow on a volcanic planet wit 6fe56b8b-054d-4c2a-a84f-29e37be59e99-0
@@ -27,3 +28,5 @@ export function APhotographOfALavaFlowOnAVolcanicPlanetWit6fe56b8b054d4c2aA84f29
         />
     );
 }
+
+APhotographOfALavaFlowOnAVolcanicPlanetWit6fe56b8b054d4c2aA84f29e37be59e990_2_Image.metadata = metadata;

@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499_fcb4_456a_a22b_c71137352387_0_3 from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_3.png';
+import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_3.json';
 
 /**
  * Image of a stylized depiction of a spacecraft in orbit around 2bf21499-fcb4-456a-a22b-c71137352387-0
@@ -27,3 +28,5 @@ export function AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22b
         />
     );
 }
+
+AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_3_Image.metadata = metadata;
