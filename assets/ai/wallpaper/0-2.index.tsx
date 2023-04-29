@@ -1,6 +1,5 @@
 /**
  * 🏭 GENERATED WITH 🖼️ Generate patterns library
- * ⚠️ Warning: Do not edit by hand, all changes will be lost on next execution!
  */
 
 import { ABridgeStandingOverAFieldInTheStyleOfDark5518c97586d4bfa99d8De22ea75c96e01_1_Image } from './0-2.gallery/Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__15518c97-586d-4bfa-99d8-de22ea75c96e-0_1_Image';
@@ -241,7 +240,7 @@ import { SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image } from
 import { SunriseOnADistantPlanet1dbf75d024084d4c818a14c1fca691360_2_Image } from './0-2.gallery/Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_2_Image';
 import { SunriseOnADistantPlanet1dbf75d024084d4c818a14c1fca691360_3_Image } from './0-2.gallery/Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_3_Image';
 
-export const generated_wallpapers = [
+export const generated_wallpapers_old = [
     ABridgeStandingOverAFieldInTheStyleOfDark5518c97586d4bfa99d8De22ea75c96e01_1_Image,
     ABridgeStandingOverAFieldInTheStyleOfDarkDab1f838C9214f8799a7Efe9ed40307b0_1_Image,
     ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image,

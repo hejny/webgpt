@@ -10,6 +10,7 @@ import { basename, dirname, join, relative } from 'path';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { generateImport } from '../utils/generateImport';
+import { isFileExisting } from '../utils/isFileExisting';
 import { prettify } from '../utils/prettify';
 
 if (process.cwd() !== join(__dirname, '../..')) {
@@ -48,6 +49,13 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
     const wallpapers: Array<{ entityName: string; entityPath: string }> = [];
 
     for (const wallpaperPath of wallpapersPaths) {
+        const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
+
+
+        if(!(await isFileExisting(metadataPath)){
+            throw new Error(`Metadata file does not exist "${metadataPath}"`);
+        }
+
         const name = basename(wallpaperPath);
 
         const jobUuidMatch = name.match(/_(?<jobUuid>[^_]*?)(\.png)?$/);
@@ -76,10 +84,12 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         const componentName = capitalize(normalizeTo_camelCase(nameWithoutBoilerplate)) + `_${componentId}_` + type;
 
         const entityName = normalizeTo_snake_case(nameWithoutBoilerplate) + '_' + componentId;
-        const importPath = ('./' + relative(dirname(wallpaperFilePath), wallpaperPath).split('\\').join('/')).replace(
-            /^\.\/\.\.\//,
-            '../',
-        );
+        const wallpaperImportPath = (
+            './' + relative(dirname(wallpaperFilePath), wallpaperPath).split('\\').join('/')
+        ).replace(/^\.\/\.\.\//, '../');
+
+        const metadataImportPath = wallpaperImportPath.replace(/\.png$/, '.json');
+
         const title = nameWithoutBoilerplate.split('_').join(' ');
 
         wallpapers.push({ entityName: componentName, entityPath: wallpaperFilePath });
@@ -96,7 +106,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
              */
         
             import Image from 'next/image';
-            import ${entityName} from '${importPath}';
+            import ${entityName} from '${wallpaperImportPath}';
+            import metadata from '${metadataImportPath}';
 
             /**
              * Image of ${title}
@@ -115,6 +126,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
                     />
                 );
             }
+
+            ${componentName}.metadata = metadata;
         `);
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf-8');
