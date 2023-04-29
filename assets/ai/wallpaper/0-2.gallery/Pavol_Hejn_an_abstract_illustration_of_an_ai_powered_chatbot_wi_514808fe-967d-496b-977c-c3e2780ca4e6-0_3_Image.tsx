@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe_967d_496b_977c_c3e2780ca4e6_0_3 from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_3.png';
+import metadata from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_3.json';
 
 /**
  * Image of an abstract illustration of an ai powered chatbot wi 514808fe-967d-496b-977c-c3e2780ca4e6-0
@@ -27,3 +28,5 @@ export function AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977c
         />
     );
 }
+
+AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_3_Image.metadata = metadata;

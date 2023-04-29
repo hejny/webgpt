@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca_ade1_42cf_8a5f_b6330f20645a_0_1 from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_1.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_1.json';
 
 /**
  * Image of a wallpaper featuring a collage of futuristic techno 0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0
@@ -27,3 +28,5 @@ export function AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5
         />
     );
 }
+
+AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_1_Image.metadata = metadata;

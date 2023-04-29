@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_urban_inspired_wallpaper_with_a_grunge_aesthetic_e3651f20_d067_485f_94ac_7d3e11a6a55d_0_0 from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__e3651f20-d067-485f-94ac-7d3e11a6a55d-0_0.png';
+import metadata from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__e3651f20-d067-485f-94ac-7d3e11a6a55d-0_0.json';
 
 /**
  * Image of an urban inspired wallpaper with a grunge aesthetic  e3651f20-d067-485f-94ac-7d3e11a6a55d-0
@@ -27,3 +28,5 @@ export function AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac
         />
     );
 }
+
+AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac7d3e11a6a55d0_0_Image.metadata = metadata;

@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986_f1b4_4da4_8506_705bbd724c4d_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_0.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_0.json';
 
 /**
  * Image of a wallpaper with a repeating pattern of abstract geo 4f913986-f1b4-4da4-8506-705bbd724c4d-0
@@ -27,3 +28,5 @@ export function AWallpaperWithARepeatingPatternOfAbstractGeo4f913986F1b44da48506
         />
     );
 }
+
+AWallpaperWithARepeatingPatternOfAbstractGeo4f913986F1b44da48506705bbd724c4d0_0_Image.metadata = metadata;

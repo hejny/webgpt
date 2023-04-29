@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_featuring_an_abstract_illustration_of_an_717174f5_dc73_4323_9e56_7d185e88586c_0_2 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_717174f5-dc73-4323-9e56-7d185e88586c-0_2.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_717174f5-dc73-4323-9e56-7d185e88586c-0_2.json';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of an 717174f5-dc73-4323-9e56-7d185e88586c-0
@@ -27,3 +28,5 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfAn717174f5Dc7343239e5
         />
     );
 }
+
+AWallpaperFeaturingAnAbstractIllustrationOfAn717174f5Dc7343239e567d185e88586c0_2_Image.metadata = metadata;

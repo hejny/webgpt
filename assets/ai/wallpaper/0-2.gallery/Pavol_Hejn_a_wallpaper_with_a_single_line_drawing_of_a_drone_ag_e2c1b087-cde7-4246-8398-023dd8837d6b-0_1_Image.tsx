@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087_cde7_4246_8398_023dd8837d6b_0_1 from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087-cde7-4246-8398-023dd8837d6b-0_1.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087-cde7-4246-8398-023dd8837d6b-0_1.json';
 
 /**
  * Image of a wallpaper with a single line drawing of a drone ag e2c1b087-cde7-4246-8398-023dd8837d6b-0
@@ -27,3 +28,5 @@ export function AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde74246839802
         />
     );
 }
+
+AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde742468398023dd8837d6b0_1_Image.metadata = metadata;

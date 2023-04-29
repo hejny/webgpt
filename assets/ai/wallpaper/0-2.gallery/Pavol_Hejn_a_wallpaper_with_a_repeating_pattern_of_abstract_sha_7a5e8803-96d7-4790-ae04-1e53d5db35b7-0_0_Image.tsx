@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803_96d7_4790_ae04_1e53d5db35b7_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.json';
 
 /**
  * Image of a wallpaper with a repeating pattern of abstract sha 7a5e8803-96d7-4790-ae04-1e53d5db35b7-0
@@ -27,3 +28,5 @@ export function AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae04
         />
     );
 }
+
+AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_0_Image.metadata = metadata;
