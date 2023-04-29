@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52_cea8_41fd_a221_fcbde3192db1_0_3 from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_3.png';
+import metadata from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_3.json';
 
 /**
  * Image of an abstract representation of the inside of a comput fd6ceb52-cea8-41fd-a221-fcbde3192db1-0
@@ -27,3 +28,5 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221
         />
     );
 }
+
+AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_3_Image.metadata = metadata;

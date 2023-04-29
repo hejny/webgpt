@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_featuring_a_stylized_illustration_of_a_ff51309c_b1e0_4c52_9b2b_fb3e2eaf87ce_0_3_3 from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_f_3f51309c-b1e0-4c52-9b2b-fb3e2eaf87ce-0_3.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_f_3f51309c-b1e0-4c52-9b2b-fb3e2eaf87ce-0_3.json';
 
 /**
  * Image of a wallpaper featuring a stylized illustration of a ff51309c-b1e0-4c52-9b2b-fb3e2eaf87ce-0 3
@@ -27,3 +28,5 @@ export function AWallpaperFeaturingAStylizedIllustrationOfAFf51309cB1e04c529b2bF
         />
     );
 }
+
+AWallpaperFeaturingAStylizedIllustrationOfAFf51309cB1e04c529b2bFb3e2eaf87ce03_3_Image.metadata = metadata;

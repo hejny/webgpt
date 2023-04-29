@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45_70e4_41aa_be2c_290f518aa5f7_0_1 from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_1.png';
+import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_1.json';
 
 /**
  * Image of a digital landscape with geometric shapes and neon c e41c5a45-70e4-41aa-be2c-290f518aa5f7-0
@@ -27,3 +28,5 @@ export function ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c
         />
     );
 }
+
+ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_1_Image.metadata = metadata;

@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_featuring_an_abstract_illustration_of_a_d27e0ff0_82d5_4e93_8546_170034318d62_0_0 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__d27e0ff0-82d5-4e93-8546-170034318d62-0_0.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__d27e0ff0-82d5-4e93-8546-170034318d62-0_0.json';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of a  d27e0ff0-82d5-4e93-8546-170034318d62-0
@@ -27,3 +28,5 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfAD27e0ff082d54e938546
         />
     );
 }
+
+AWallpaperFeaturingAnAbstractIllustrationOfAD27e0ff082d54e938546170034318d620_0_Image.metadata = metadata;

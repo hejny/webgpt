@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_futuristic_metropolis_at_night_dd694098_7781_4ff7_b11e_aad3c905d525_0_2 from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_2.png';
+import metadata from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_2.json';
 
 /**
  * Image of a futuristic metropolis at night dd694098-7781-4ff7-b11e-aad3c905d525-0
@@ -27,3 +28,5 @@ export function AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_
         />
     );
 }
+
+AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_Image.metadata = metadata;

@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_magical_underwater_world_7e8551e6_84c4_4af2_b647_5d7f0e8f0fdd_0_2 from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_2.png';
+import metadata from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_2.json';
 
 /**
  * Image of a magical underwater world 7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0
@@ -27,3 +28,5 @@ export function AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_2_Image
         />
     );
 }
+
+AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_2_Image.metadata = metadata;

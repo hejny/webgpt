@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_a_digital_dashbe3e028c_ef5f_4a5c_a2bb_a3059b50d0f0_0_3_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0_3.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0_3.json';
 
 /**
  * Image of a wallpaper with a simple graphic of a digital dashbe3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0 3
@@ -27,3 +28,5 @@ export function AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3
         />
     );
 }
+
+AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3059b50d0f003_3_Image.metadata = metadata;

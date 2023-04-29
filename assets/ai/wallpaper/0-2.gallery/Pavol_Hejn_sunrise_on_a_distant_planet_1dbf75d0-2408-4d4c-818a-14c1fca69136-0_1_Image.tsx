@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import sunrise_on_a_distant_planetdbf75d0_2408_4d4c_818a_14c1fca69136_0_1_1 from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_1.png';
+import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_1.json';
 
 /**
  * Image of sunrise on a distant planetdbf75d0-2408-4d4c-818a-14c1fca69136-0 1
@@ -27,3 +28,5 @@ export function SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image
         />
     );
 }
+
+SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.metadata = metadata;

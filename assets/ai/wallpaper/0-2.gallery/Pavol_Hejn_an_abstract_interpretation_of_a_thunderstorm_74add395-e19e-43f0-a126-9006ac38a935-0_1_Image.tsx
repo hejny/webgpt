@@ -9,6 +9,7 @@
 
 import Image from 'next/image';
 import an_abstract_interpretation_of_a_thunderstorm_74add395_e19e_43f0_a126_9006ac38a935_0_1 from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_1.png';
+import metadata from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_1.json';
 
 /**
  * Image of an abstract interpretation of a thunderstorm 74add395-e19e-43f0-a126-9006ac38a935-0
@@ -27,3 +28,5 @@ export function AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006a
         />
     );
 }
+
+AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006ac38a9350_1_Image.metadata = metadata;
