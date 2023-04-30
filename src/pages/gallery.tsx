@@ -2,8 +2,6 @@ import { Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
 import { generated_wallpapers } from '../../assets/ai/wallpaper';
-import { AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a43829228545a1df4a55b0_1_Image } from '../../assets/ai/wallpaper/0-2.gallery/Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1_Image';
-import { generated_wallpapers_old } from '../../assets/ai/wallpaper/0-2.index';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { ImagineTag } from '../components/ImagineTag/ImagineTag';
 import { Item } from '../components/Items/Item';
@@ -42,24 +40,7 @@ export default function GalleryPage() {
                         <p>Images used on this page are generated using MidJourney:</p>
 
                         <Items itemsOnRow={2}>
-                            <Item>
-                                <Item.Image>
-                                    <AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a43829228545a1df4a55b0_1_Image />
-                                </Item.Image>
-                                <Item.Description>
-                                    <ImagineTag>
-                                        {
-                                            AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a43829228545a1df4a55b0_1_Image
-                                                .metadata.full_command
-                                        }
-                                    </ImagineTag>
-                                </Item.Description>
-                            </Item>
-
-                            {[
-                                ...generated_wallpapers,
-                                ...generated_wallpapers_old /* <- TODO: !!! Make generated_wallpapers_common */,
-                            ].map((Wallpaper, i) => (
+                            {generated_wallpapers.map((Wallpaper, i) => (
                                 // TODO: <MidjourneyImage/>
                                 // TODO: Show diffusion as animation
                                 <a
@@ -73,9 +54,7 @@ export default function GalleryPage() {
                                             <Wallpaper />
                                         </Item.Image>
                                         <Item.Description>
-                                            <ImagineTag>
-                                                {/* !!! From metadata */}Cave of ideas with transparent look through
-                                            </ImagineTag>
+                                            <ImagineTag>{Wallpaper.metadata.full_command}</ImagineTag>
                                         </Item.Description>
                                     </Item>
                                 </a>
