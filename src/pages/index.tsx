@@ -1,6 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
-import { generated_wallpapers_old } from '../../assets/ai/wallpaper/0-2.index';
+import { generated_wallpapers } from '../../assets/ai/wallpaper/index';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
@@ -9,9 +9,7 @@ import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 
 export default function IndexPage({ lang }: any) {
-
-    // TODO: !!! Make generated_wallpapers_common
-    const Wallpaper = generated_wallpapers_old[29];
+    const Wallpaper = generated_wallpapers[29];
 
     return (
         <>
