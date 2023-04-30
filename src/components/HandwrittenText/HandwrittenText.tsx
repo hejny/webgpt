@@ -43,7 +43,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         speed: 7,
                         bias: 0.75,
                         width: 1.5,
-                        style: 30,
+                        style: 'FancyTall',
                         svgElement,
                     });
                 }}
