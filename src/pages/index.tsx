@@ -1,6 +1,8 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 import { Vector } from 'xyzt';
 import { generated_wallpapers } from '../../assets/ai/wallpaper/index';
+import { IWallpaperComponent } from '../../assets/ai/wallpaper/IWallpaperComponent';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
@@ -9,9 +11,20 @@ import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 
 export default function IndexPage({ lang }: any) {
-    //const Wallpaper = randomItem(...generated_wallpapers);
-    const Wallpaper = generated_wallpapers[29];
+    let Wallpaper: IWallpaperComponent | undefined;
 
+    const router = useRouter();
+    const { wallpaper: wallpaperId } = router.query;
+
+    Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId);
+
+    if (!Wallpaper) {
+   
+
+        Wallpaper = generated_wallpapers.find(
+            (wallpaper) => wallpaper.metadata.id === '56f04b34-9209-4d6f-b465-a0682df3286e',
+        );
+    }
     return (
         <>
             <AppHead />
