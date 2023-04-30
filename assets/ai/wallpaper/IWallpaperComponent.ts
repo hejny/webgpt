@@ -3,7 +3,8 @@ export interface IWallpaperComponent {
     (): JSX.Element;
 }
 
-export interface IWallpaperMetadata {
+export type IWallpaperMetadata = any /* <- TODO: !!! Use propper metadata bellow */;
+export interface IWallpaperMetadataX {
     _job_type: string;
     _parsed_params: {
         aspect: string;
