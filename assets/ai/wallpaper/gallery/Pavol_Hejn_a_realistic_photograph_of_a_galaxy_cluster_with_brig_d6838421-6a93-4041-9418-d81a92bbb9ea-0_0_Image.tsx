@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421_6a93_4041_9418_d81a92bbb9ea_0_0 from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.png';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a realistic photograph of a galaxy cluster with brig d6838421-6a93-4041-9418-d81a92bbb9ea-0
@@ -29,4 +30,5 @@ export function ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418
     );
 }
 
-ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_Image.metadata = metadata;
+ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_Image.metadata =
+    metadata satisfies IWallpaperComponent;

@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e_c008_4dae_a024_43af98452d3a_0_2 from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_2.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_2.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a photograph of a full moon rising over a mountain r 38bb8e7e-c008-4dae-a024-43af98452d3a-0
@@ -29,4 +30,5 @@ export function APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443
     );
 }
 
-APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443af98452d3a0_2_Image.metadata = metadata;
+APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443af98452d3a0_2_Image.metadata =
+    metadata satisfies IWallpaperComponent;

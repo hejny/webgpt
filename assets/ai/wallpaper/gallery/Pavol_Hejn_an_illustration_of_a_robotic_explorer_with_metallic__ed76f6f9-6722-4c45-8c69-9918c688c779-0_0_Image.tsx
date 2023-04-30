@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import an_illustration_of_a_robotic_explorer_with_metallic_ed76f6f9_6722_4c45_8c69_9918c688c779_0_0 from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_0.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_0.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of an illustration of a robotic explorer with metallic  ed76f6f9-6722-4c45-8c69-9918c688c779-0
@@ -29,4 +30,5 @@ export function AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c69
     );
 }
 
-AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c699918c688c7790_0_Image.metadata = metadata;
+AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c699918c688c7790_0_Image.metadata =
+    metadata satisfies IWallpaperComponent;

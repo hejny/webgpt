@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773_864c_445f_a336_f22707e90136_0_0 from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_0.png';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_0.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a digital painting of a lone astronaut standing on t 52813773-864c-445f-a336-f22707e90136-0
@@ -29,4 +30,5 @@ export function ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F
     );
 }
 
-ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_0_Image.metadata = metadata;
+ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_0_Image.metadata =
+    metadata satisfies IWallpaperComponent;

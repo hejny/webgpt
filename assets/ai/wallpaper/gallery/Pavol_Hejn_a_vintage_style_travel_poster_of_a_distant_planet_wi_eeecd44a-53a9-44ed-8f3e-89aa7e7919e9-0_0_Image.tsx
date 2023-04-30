@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a_53a9_44ed_8f3e_89aa7e7919e9_0_0 from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_0.png';
 import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_0.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a vintage style travel poster of a distant planet wi eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0
@@ -29,4 +30,5 @@ export function AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e8
     );
 }
 
-AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e89aa7e7919e90_0_Image.metadata = metadata;
+AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e89aa7e7919e90_0_Image.metadata =
+    metadata satisfies IWallpaperComponent;

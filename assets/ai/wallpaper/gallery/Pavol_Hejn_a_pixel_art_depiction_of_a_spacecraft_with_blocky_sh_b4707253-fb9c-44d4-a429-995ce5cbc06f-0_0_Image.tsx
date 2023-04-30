@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_b4707253_fb9c_44d4_a429_995ce5cbc06f_0_0 from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_b4707253-fb9c-44d4-a429-995ce5cbc06f-0_0.png';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_b4707253-fb9c-44d4-a429-995ce5cbc06f-0_0.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a pixel art depiction of a spacecraft with blocky sh b4707253-fb9c-44d4-a429-995ce5cbc06f-0
@@ -29,4 +30,5 @@ export function APixelArtDepictionOfASpacecraftWithBlockyShB4707253Fb9c44d4A4299
     );
 }
 
-APixelArtDepictionOfASpacecraftWithBlockyShB4707253Fb9c44d4A429995ce5cbc06f0_0_Image.metadata = metadata;
+APixelArtDepictionOfASpacecraftWithBlockyShB4707253Fb9c44d4A429995ce5cbc06f0_0_Image.metadata =
+    metadata satisfies IWallpaperComponent;

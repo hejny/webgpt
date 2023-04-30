@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_poster_style_image_of_a_mission_to_mars_with_bold_6e6533f5_7774_4664_a6c1_8ebb09cefb82_0_0 from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_0.png';
 import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_0.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a poster style image of a mission to mars with bold  6e6533f5-7774-4664-a6c1-8ebb09cefb82-0
@@ -29,4 +30,5 @@ export function APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18eb
     );
 }
 
-APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_0_Image.metadata = metadata;
+APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_0_Image.metadata =
+    metadata satisfies IWallpaperComponent;

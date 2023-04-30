@@ -10,6 +10,7 @@
 import Image from 'next/image';
 import a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7_64f7_49af_a540_b60ce02d8a21_0_3 from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_3.png';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_3.json';
+import { IWallpaperComponent } from '../IWallpaperComponent';
 
 /**
  * Image of a digital painting of a spaceship exploring an aster 8950dbf7-64f7-49af-a540-b60ce02d8a21-0
@@ -29,4 +30,5 @@ export function ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540
     );
 }
 
-ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_3_Image.metadata = metadata;
+ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_3_Image.metadata =
+    metadata satisfies IWallpaperComponent;
