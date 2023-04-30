@@ -4,6 +4,7 @@
     "private": false,
     "license": "SEE LICENSE IN LICENSE",
     "description": "-->",
+    "nonce": 0,
     "homepage": "https://ai.ai.hejny.org/",
     "repository": {
         "type": "git",
