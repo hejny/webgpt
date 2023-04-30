@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec_4a6d_4f75_8ec1_2cca08a287c8_0_3 from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_3.png';
 import metadata from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a surreal landscape of alien planets and strange oth b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0
@@ -31,4 +31,4 @@ export function ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec1
 }
 
 ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec12cca08a287c80_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

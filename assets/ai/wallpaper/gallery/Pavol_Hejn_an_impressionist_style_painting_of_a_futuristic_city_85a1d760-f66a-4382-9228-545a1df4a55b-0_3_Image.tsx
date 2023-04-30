@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import an_impressionist_style_painting_of_a_futuristic_city_85a1d760_f66a_4382_9228_545a1df4a55b_0_3 from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_3.png';
 import metadata from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of an impressionist style painting of a futuristic city 85a1d760-f66a-4382-9228-545a1df4a55b-0
@@ -31,4 +31,4 @@ export function AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a4382922
 }
 
 AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a43829228545a1df4a55b0_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

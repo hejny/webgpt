@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615_e745_40d1_afef_62086ed8ea7c_0_3 from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615-e745-40d1-afef-62086ed8ea7c-0_3.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615-e745-40d1-afef-62086ed8ea7c-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of an abstract image of a deep space object such as a b 62b90615-e745-40d1-afef-62086ed8ea7c-0
@@ -31,4 +31,4 @@ export function AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef620
 }
 
 AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef62086ed8ea7c0_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

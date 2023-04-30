@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_black_and_white_outline_of_a_telescope_with_clean_f57d73a7_6aa0_4bec_a432_8a787d0b7755_0_0 from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_0.png';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a black and white outline of a telescope with clean  f57d73a7-6aa0-4bec-a432-8a787d0b7755-0
@@ -31,4 +31,4 @@ export function ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a
 }
 
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

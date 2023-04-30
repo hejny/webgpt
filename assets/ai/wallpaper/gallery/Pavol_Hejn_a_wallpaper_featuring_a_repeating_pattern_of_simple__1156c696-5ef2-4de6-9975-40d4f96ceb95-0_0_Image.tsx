@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_featuring_a_repeating_pattern_of_simple_1156c696_5ef2_4de6_9975_40d4f96ceb95_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper featuring a repeating pattern of simple  1156c696-5ef2-4de6-9975-40d4f96ceb95-0
@@ -31,4 +31,4 @@ export function AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de69975
 }
 
 AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

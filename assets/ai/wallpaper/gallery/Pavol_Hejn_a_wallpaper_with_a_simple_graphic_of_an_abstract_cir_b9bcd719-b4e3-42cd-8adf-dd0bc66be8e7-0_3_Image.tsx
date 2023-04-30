@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719_b4e3_42cd_8adf_dd0bc66be8e7_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a simple graphic of an abstract cir b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0
@@ -31,4 +31,4 @@ export function AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfD
 }
 
 AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

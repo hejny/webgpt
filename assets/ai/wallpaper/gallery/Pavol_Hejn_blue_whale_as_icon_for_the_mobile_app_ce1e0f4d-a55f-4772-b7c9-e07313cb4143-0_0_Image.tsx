@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import blue_whale_as_icon_for_the_mobile_app_ce1e0f4d_a55f_4772_b7c9_e07313cb4143_0_0 from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_0.png';
 import metadata from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of blue whale as icon for the mobile app ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0
@@ -31,4 +31,4 @@ export function BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_
 }
 
 BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

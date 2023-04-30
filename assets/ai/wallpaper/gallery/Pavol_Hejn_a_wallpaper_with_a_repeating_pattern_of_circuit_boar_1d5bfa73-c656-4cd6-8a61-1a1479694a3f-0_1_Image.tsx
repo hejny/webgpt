@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_circuit_board5bfa73_c656_4cd6_8a61_1a1479694a3f_0_1_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a repeating pattern of circuit board5bfa73-c656-4cd6-8a61-1a1479694a3f-0 1
@@ -31,4 +31,4 @@ export function AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611
 }
 
 AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611a1479694a3f01_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa_b449_4617_b8dc_c354ad881a09_0_0 from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a photograph of a starry night sky with the milky wa ace658aa-b449-4617-b8dc-c354ad881a09-0
@@ -31,4 +31,4 @@ export function APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC3
 }
 
 APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import an_abstract_interpretation_of_a_thunderstorm_74add395_e19e_43f0_a126_9006ac38a935_0_0 from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_0.png';
 import metadata from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of an abstract interpretation of a thunderstorm 74add395-e19e-43f0-a126-9006ac38a935-0
@@ -31,4 +31,4 @@ export function AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006a
 }
 
 AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006ac38a9350_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

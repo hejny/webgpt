@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154_4bed_47d9_8a6b_fce5b93944e1_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154-4bed-47d9-8a6b-fce5b93944e1-0_2.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154-4bed-47d9-8a6b-fce5b93944e1-0_2.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a simple illustration of a futurist 60e6b154-4bed-47d9-8a6b-fce5b93944e1-0
@@ -31,4 +31,4 @@ export function AWallpaperWithASimpleIllustrationOfAFuturist60e6b1544bed47d98a6b
 }
 
 AWallpaperWithASimpleIllustrationOfAFuturist60e6b1544bed47d98a6bFce5b93944e10_2_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

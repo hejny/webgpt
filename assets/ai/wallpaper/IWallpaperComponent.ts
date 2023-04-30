@@ -1,5 +1,5 @@
 export interface IWallpaperComponent {
-    metadata: any; // TODO: !!! IWallpaperMetadata;
+    metadata: IWallpaperMetadata;
     (): JSX.Element;
 }
 

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b_509d_4ea1_954e_4ecbed7099d8_0_1 from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_1.png';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a realistic photograph of a rocket launch with fiery 024b902b-509d-4ea1-954e-4ecbed7099d8-0
@@ -31,4 +31,4 @@ export function ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e
 }
 
 ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e4ecbed7099d80_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

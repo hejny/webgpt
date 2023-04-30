@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_graph_of_data_visualization_in_a_650472f6_6660_4a4e_80a1_66b7436f729d_0_1 from './Pavol_Hejn_a_wallpaper_with_a_graph_of_data_visualization_in_a__650472f6-6660-4a4e-80a1-66b7436f729d-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_data_visualization_in_a__650472f6-6660-4a4e-80a1-66b7436f729d-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a graph of data visualization in a  650472f6-6660-4a4e-80a1-66b7436f729d-0
@@ -31,4 +31,4 @@ export function AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166
 }
 
 AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166b7436f729d0_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

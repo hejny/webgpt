@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import an_abstract_image_of_a_spiral_galaxy_with_bright_col_f501e2cc_35ef_41cb_8afc_431349e275b4_0_3 from './Pavol_Hejn_an_abstract_image_of_a_spiral_galaxy_with_bright_col_f501e2cc-35ef-41cb-8afc-431349e275b4-0_3.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_spiral_galaxy_with_bright_col_f501e2cc-35ef-41cb-8afc-431349e275b4-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of an abstract image of a spiral galaxy with bright col f501e2cc-35ef-41cb-8afc-431349e275b4-0
@@ -31,4 +31,4 @@ export function AnAbstractImageOfASpiralGalaxyWithBrightColF501e2cc35ef41cb8afc4
 }
 
 AnAbstractImageOfASpiralGalaxyWithBrightColF501e2cc35ef41cb8afc431349e275b40_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

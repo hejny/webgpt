@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_a_neural_networ_f36fd663_9128_4133_8703_91d8d1737baf_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_f36fd663-9128-4133-8703-91d8d1737baf-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_f36fd663-9128-4133-8703-91d8d1737baf-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a simple graphic of a neural networ f36fd663-9128-4133-8703-91d8d1737baf-0
@@ -31,4 +31,4 @@ export function AWallpaperWithASimpleGraphicOfANeuralNetworF36fd6639128413387039
 }
 
 AWallpaperWithASimpleGraphicOfANeuralNetworF36fd66391284133870391d8d1737baf0_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

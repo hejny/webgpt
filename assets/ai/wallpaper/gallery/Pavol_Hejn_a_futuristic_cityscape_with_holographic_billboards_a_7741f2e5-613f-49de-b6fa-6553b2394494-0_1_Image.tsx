@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5_613f_49de_b6fa_6553b2394494_0_1 from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.png';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a futuristic cityscape with holographic billboards a 7741f2e5-613f-49de-b6fa-6553b2394494-0
@@ -31,4 +31,4 @@ export function AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6
 }
 
 AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

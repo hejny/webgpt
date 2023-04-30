@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a_e0fc_4ebc_b8f0_13fbc5ce69b5_0_0 from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_0.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of an abstract image of a spaceship approaching a wormh fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0
@@ -31,4 +31,4 @@ export function AnAbstractImageOfASpaceshipApproachingAWormhFe4d0d0aE0fc4ebcB8f0
 }
 
 AnAbstractImageOfASpaceshipApproachingAWormhFe4d0d0aE0fc4ebcB8f013fbc5ce69b50_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

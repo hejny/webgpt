@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b_00f9_4960_b0e9_963454b085d4_0_0 from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_0.png';
 import metadata from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a pop art style wallpaper featuring a comic book sty 3bf6e02b-00f9-4960-b0e9-963454b085d4-0
@@ -31,4 +31,4 @@ export function APopArtStyleWallpaperFeaturingAComicBookSty3bf6e02b00f94960B0e99
 }
 
 APopArtStyleWallpaperFeaturingAComicBookSty3bf6e02b00f94960B0e9963454b085d40_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

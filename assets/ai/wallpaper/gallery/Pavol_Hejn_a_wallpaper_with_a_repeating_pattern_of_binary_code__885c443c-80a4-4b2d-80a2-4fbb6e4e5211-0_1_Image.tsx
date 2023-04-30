@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_binary_code_885c443c_80a4_4b2d_80a2_4fbb6e4e5211_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a repeating pattern of binary code  885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0
@@ -31,4 +31,4 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24
 }
 
 AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

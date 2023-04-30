@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_surrealist_inspired_wallpaper_with_floating_object_2de16b73_6889_4692_aa11_0fce4396fc3a_0_0 from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_0.png';
 import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a surrealist inspired wallpaper with floating object 2de16b73-6889-4692-aa11-0fce4396fc3a-0
@@ -31,4 +31,4 @@ export function ASurrealistInspiredWallpaperWithFloatingObject2de16b7368894692Aa
 }
 
 ASurrealistInspiredWallpaperWithFloatingObject2de16b7368894692Aa110fce4396fc3a0_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072_5b63_4c33_af2f_1fa085a80415_0_3 from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_3.png';
 import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a photograph of an iceberg in the arctic with the bl 8e369072-5b63-4c33-af2f-1fa085a80415-0
@@ -31,4 +31,4 @@ export function APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1f
 }
 
 APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e_dd21_4f2a_9932_eaeef36b3869_0_1 from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a graph of complex mathematical equ 6f77f48e-dd21-4f2a-9932-eaeef36b3869-0
@@ -31,4 +31,4 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932
 }
 
 AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_bridge_standing_over_a_field_in_the_style_of_dark_5518c97_586d_4bfa_99d8_de22ea75c96e_0_1_1 from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__15518c97-586d-4bfa-99d8-de22ea75c96e-0_1.png';
 import metadata from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__15518c97-586d-4bfa-99d8-de22ea75c96e-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a bridge standing over a field in the style of dark 5518c97-586d-4bfa-99d8-de22ea75c96e-0 1
@@ -31,4 +31,4 @@ export function ABridgeStandingOverAFieldInTheStyleOfDark5518c97586d4bfa99d8De22
 }
 
 ABridgeStandingOverAFieldInTheStyleOfDark5518c97586d4bfa99d8De22ea75c96e01_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

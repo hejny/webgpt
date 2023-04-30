@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_minimalist_illustration_of_a_robo_ea378cf7_c932_4ca2_bd66_843d43438333_0_1 from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_ea378cf7-c932-4ca2-bd66-843d43438333-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_ea378cf7-c932-4ca2-bd66-843d43438333-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a minimalist illustration of a robo ea378cf7-c932-4ca2-bd66-843d43438333-0
@@ -31,4 +31,4 @@ export function AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66
 }
 
 AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66843d434383330_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

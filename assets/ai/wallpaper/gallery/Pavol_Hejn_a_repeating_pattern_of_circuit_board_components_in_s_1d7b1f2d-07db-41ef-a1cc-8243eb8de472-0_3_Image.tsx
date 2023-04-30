@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_repeating_pattern_of_circuit_board_components_in_s_1d7b1f2d_07db_41ef_a1cc_8243eb8de472_0_3 from './Pavol_Hejn_a_repeating_pattern_of_circuit_board_components_in_s_1d7b1f2d-07db-41ef-a1cc-8243eb8de472-0_3.png';
 import metadata from './Pavol_Hejn_a_repeating_pattern_of_circuit_board_components_in_s_1d7b1f2d-07db-41ef-a1cc-8243eb8de472-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a repeating pattern of circuit board components in s 1d7b1f2d-07db-41ef-a1cc-8243eb8de472-0
@@ -31,4 +31,4 @@ export function ARepeatingPatternOfCircuitBoardComponentsInS1d7b1f2d07db41efA1cc
 }
 
 ARepeatingPatternOfCircuitBoardComponentsInS1d7b1f2d07db41efA1cc8243eb8de4720_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_minimalist_graphic_of_a_futuristic_cityscape_with_bd678223_081b_4255_924f_d7778020ce13_0_0 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__bd678223-081b-4255-924f-d7778020ce13-0_0.png';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__bd678223-081b-4255-924f-d7778020ce13-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a minimalist graphic of a futuristic cityscape with  bd678223-081b-4255-924f-d7778020ce13-0
@@ -31,4 +31,4 @@ export function AMinimalistGraphicOfAFuturisticCityscapeWithBd678223081b4255924f
 }
 
 AMinimalistGraphicOfAFuturisticCityscapeWithBd678223081b4255924fD7778020ce130_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

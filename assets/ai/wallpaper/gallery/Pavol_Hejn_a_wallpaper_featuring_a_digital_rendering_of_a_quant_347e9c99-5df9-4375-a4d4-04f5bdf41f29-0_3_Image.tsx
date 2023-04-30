@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_featuring_a_digital_rendering_of_a_quant47e9c99_5df9_4375_a4d4_04f5bdf41f29_0_3_3 from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99-5df9-4375-a4d4-04f5bdf41f29-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99-5df9-4375-a4d4-04f5bdf41f29-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper featuring a digital rendering of a quant47e9c99-5df9-4375-a4d4-04f5bdf41f29-0 3
@@ -31,4 +31,4 @@ export function AWallpaperFeaturingADigitalRenderingOfAQuant47e9c995df94375A4d40
 }
 
 AWallpaperFeaturingADigitalRenderingOfAQuant47e9c995df94375A4d404f5bdf41f2903_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

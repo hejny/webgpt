@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_photograph_of_the_northern_lights_with_the_green_a_a8339eff_839e_4ed8_818b_ab5ea74ca596_0_2 from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_a8339eff-839e-4ed8-818b-ab5ea74ca596-0_2.png';
 import metadata from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_a8339eff-839e-4ed8-818b-ab5ea74ca596-0_2.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a photograph of the northern lights with the green a a8339eff-839e-4ed8-818b-ab5ea74ca596-0
@@ -31,4 +31,4 @@ export function APhotographOfTheNorthernLightsWithTheGreenAA8339eff839e4ed8818bA
 }
 
 APhotographOfTheNorthernLightsWithTheGreenAA8339eff839e4ed8818bAb5ea74ca5960_2_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

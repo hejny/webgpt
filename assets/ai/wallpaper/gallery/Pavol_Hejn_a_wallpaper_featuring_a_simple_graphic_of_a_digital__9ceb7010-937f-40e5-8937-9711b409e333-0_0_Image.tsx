@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_featuring_a_simple_graphic_of_a_digital_9ceb7010_937f_40e5_8937_9711b409e333_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper featuring a simple graphic of a digital  9ceb7010-937f-40e5-8937-9711b409e333-0
@@ -31,4 +31,4 @@ export function AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379
 }
 
 AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33_9815_4875_86a6_207d09015ecb_0_2 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33-9815-4875-86a6-207d09015ecb-0_2.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33-9815-4875-86a6-207d09015ecb-0_2.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a repeating pattern of ai related b ad365f33-9815-4875-86a6-207d09015ecb-0
@@ -31,4 +31,4 @@ export function AWallpaperWithARepeatingPatternOfAiRelatedBAd365f339815487586a62
 }
 
 AWallpaperWithARepeatingPatternOfAiRelatedBAd365f339815487586a6207d09015ecb0_2_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

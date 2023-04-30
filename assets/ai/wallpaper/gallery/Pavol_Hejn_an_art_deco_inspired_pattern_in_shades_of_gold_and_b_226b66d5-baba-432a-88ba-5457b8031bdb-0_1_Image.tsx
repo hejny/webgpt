@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5_baba_432a_88ba_5457b8031bdb_0_1 from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.png';
 import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of an art deco inspired pattern in shades of gold and b 226b66d5-baba-432a-88ba-5457b8031bdb-0
@@ -31,4 +31,4 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba54
 }
 
 AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

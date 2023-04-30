@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import blue_whale_as_favicon_41f877b6_57e1_4958_a536_5b78de6b22fb_0_1 from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_1.png';
 import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of blue whale as favicon 41f877b6-57e1-4958-a536-5b78de6b22fb-0
@@ -30,4 +30,4 @@ export function BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_1_Image() {
     );
 }
 
-BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_1_Image.metadata = metadata satisfies IWallpaperComponent;
+BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_1_Image.metadata = metadata satisfies IWallpaperMetadata;

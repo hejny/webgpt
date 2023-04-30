@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_cityscape_overtaken_by_nature_ffe7c22c_85ab_48ad_be38_386617226b6f_0_1 from './Pavol_Hejn_a_cityscape_overtaken_by_nature_ffe7c22c-85ab-48ad-be38-386617226b6f-0_1.png';
 import metadata from './Pavol_Hejn_a_cityscape_overtaken_by_nature_ffe7c22c-85ab-48ad-be38-386617226b6f-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a cityscape overtaken by nature ffe7c22c-85ab-48ad-be38-386617226b6f-0
@@ -30,4 +30,4 @@ export function ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_I
     );
 }
 
-ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image.metadata = metadata satisfies IWallpaperComponent;
+ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image.metadata = metadata satisfies IWallpaperMetadata;

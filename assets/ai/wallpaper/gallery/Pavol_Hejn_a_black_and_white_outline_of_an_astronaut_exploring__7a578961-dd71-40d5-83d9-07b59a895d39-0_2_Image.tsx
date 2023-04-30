@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_black_and_white_outline_of_an_astronaut_exploring_7a578961_dd71_40d5_83d9_07b59a895d39_0_2 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__7a578961-dd71-40d5-83d9-07b59a895d39-0_2.png';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__7a578961-dd71-40d5-83d9-07b59a895d39-0_2.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a black and white outline of an astronaut exploring  7a578961-dd71-40d5-83d9-07b59a895d39-0
@@ -31,4 +31,4 @@ export function ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d90
 }
 
 ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d907b59a895d390_2_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

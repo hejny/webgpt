@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3_99cc_43fd_8d1b_3bbf1084be6c_0_2 from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.png';
 import metadata from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a collage of vintage postcards from around the world 8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0
@@ -31,4 +31,4 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b
 }
 
 ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

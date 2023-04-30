@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_c5c5f8df_6b84_4c2d_a94d_71c70b1a0fac_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_c5c5f8df-6b84-4c2d-a94d-71c70b1a0fac-0_2.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_c5c5f8df-6b84-4c2d-a94d-71c70b1a0fac-0_2.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper with a simple graphic of a robot arm aga c5c5f8df-6b84-4c2d-a94d-71c70b1a0fac-0
@@ -31,4 +31,4 @@ export function AWallpaperWithASimpleGraphicOfARobotArmAgaC5c5f8df6b844c2dA94d71
 }
 
 AWallpaperWithASimpleGraphicOfARobotArmAgaC5c5f8df6b844c2dA94d71c70b1a0fac0_2_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

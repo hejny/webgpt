@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_white_flower_is_on_a_green_branch_in_the_style_of_631ae97f_04b1_414b_a2d7_2400417deef1_0_1 from './Pavol_Hejn_a_white_flower_is_on_a_green_branch_in_the_style_of__631ae97f-04b1-414b-a2d7-2400417deef1-0_1.png';
 import metadata from './Pavol_Hejn_a_white_flower_is_on_a_green_branch_in_the_style_of__631ae97f-04b1-414b-a2d7-2400417deef1-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a white flower is on a green branch in the style of  631ae97f-04b1-414b-a2d7-2400417deef1-0
@@ -31,4 +31,4 @@ export function AWhiteFlowerIsOnAGreenBranchInTheStyleOf631ae97f04b1414bA2d72400
 }
 
 AWhiteFlowerIsOnAGreenBranchInTheStyleOf631ae97f04b1414bA2d72400417deef10_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_dreamy_forest_scene_with_fairies_380486d5_af02_4d6b_ae31_e4f04a6c3580_0_1 from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_380486d5-af02-4d6b-ae31-e4f04a6c3580-0_1.png';
 import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_380486d5-af02-4d6b-ae31-e4f04a6c3580-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a dreamy forest scene with fairies 380486d5-af02-4d6b-ae31-e4f04a6c3580-0
@@ -30,5 +30,4 @@ export function ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1
     );
 }
 
-ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1_Image.metadata = metadata satisfies IWallpaperMetadata;

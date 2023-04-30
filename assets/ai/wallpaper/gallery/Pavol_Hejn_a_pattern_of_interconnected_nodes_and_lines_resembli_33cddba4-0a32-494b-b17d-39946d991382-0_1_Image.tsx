@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4_0a32_494b_b17d_39946d991382_0_1 from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.png';
 import metadata from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a pattern of interconnected nodes and lines resembli 33cddba4-0a32-494b-b17d-39946d991382-0
@@ -31,4 +31,4 @@ export function APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17
 }
 
 APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

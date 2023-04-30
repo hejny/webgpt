@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_photograph_of_a_meteor_shower_with_bright_streaks_524be76c_e273_4cd5_80e2_20b9e59d174f_0_1 from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__524be76c-e273-4cd5-80e2-20b9e59d174f-0_1.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__524be76c-e273-4cd5-80e2-20b9e59d174f-0_1.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a photograph of a meteor shower with bright streaks  524be76c-e273-4cd5-80e2-20b9e59d174f-0
@@ -31,4 +31,4 @@ export function APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e22
 }
 
 APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e220b9e59d174f0_1_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

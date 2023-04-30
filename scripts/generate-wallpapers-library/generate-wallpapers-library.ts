@@ -107,7 +107,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             import Image from 'next/image';
             import ${entityName} from '${wallpaperImportPath}';
             import metadata from '${metadataImportPath}';
-            import { IWallpaperComponent } from '../IWallpaperComponent';
+            import { IWallpaperMetadata } from '../IWallpaperComponent';
 
             /**
              * Image of ${title}
@@ -127,7 +127,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
                 );
             }
 
-            ${componentName}.metadata = metadata satisfies IWallpaperComponent;
+            ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
         `);
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf-8');

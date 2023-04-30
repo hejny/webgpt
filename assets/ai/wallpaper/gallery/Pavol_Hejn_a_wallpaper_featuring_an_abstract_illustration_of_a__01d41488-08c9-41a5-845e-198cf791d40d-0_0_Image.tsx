@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_featuring_an_abstract_illustration_of_a_1d41488_08c9_41a5_845e_198cf791d40d_0_0_0 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__01d41488-08c9-41a5-845e-198cf791d40d-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__01d41488-08c9-41a5-845e-198cf791d40d-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of a 1d41488-08c9-41a5-845e-198cf791d40d-0 0
@@ -31,4 +31,4 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfA1d4148808c941a5845e1
 }
 
 AWallpaperFeaturingAnAbstractIllustrationOfA1d4148808c941a5845e198cf791d40d00_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_photorealistic_image_of_the_earth_from_space_with_75fce806_594b_474b_9f2e_a908c90002e7_0_3 from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.png';
 import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a photorealistic image of the earth from space with  75fce806-594b-474b-9f2e-a908c90002e7-0
@@ -31,4 +31,4 @@ export function APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA
 }
 
 APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_3_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;

@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import sunrise_on_a_distant_planet_1dbf75d0_2408_4d4c_818a_14c1fca69136_0_3 from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_3.png';
 import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_3.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of sunrise on a distant planet 1dbf75d0-2408-4d4c-818a-14c1fca69136-0
@@ -30,4 +30,4 @@ export function SunriseOnADistantPlanet1dbf75d024084d4c818a14c1fca691360_3_Image
     );
 }
 
-SunriseOnADistantPlanet1dbf75d024084d4c818a14c1fca691360_3_Image.metadata = metadata satisfies IWallpaperComponent;
+SunriseOnADistantPlanet1dbf75d024084d4c818a14c1fca691360_3_Image.metadata = metadata satisfies IWallpaperMetadata;

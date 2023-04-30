@@ -10,7 +10,7 @@
 import Image from 'next/image';
 import a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51_97f4_4582_950d_5e56f61a020f_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51-97f4-4582-950d-5e56f61a020f-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51-97f4-4582-950d-5e56f61a020f-0_0.json';
-import { IWallpaperComponent } from '../IWallpaperComponent';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
 
 /**
  * Image of a wallpaper featuring a matrix of futuristic data vi a93a6c51-97f4-4582-950d-5e56f61a020f-0
@@ -31,4 +31,4 @@ export function AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d
 }
 
 AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d5e56f61a020f0_0_Image.metadata =
-    metadata satisfies IWallpaperComponent;
+    metadata satisfies IWallpaperMetadata;
