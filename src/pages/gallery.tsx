@@ -1,5 +1,6 @@
 import { Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Link from 'next/link';
 import { Vector } from 'xyzt';
 import { generated_wallpapers } from '../../assets/ai/wallpaper';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
@@ -13,10 +14,13 @@ import { WelcomeSection } from '../sections/10-Welcome/Welcome';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
+import { randomItem } from '../utils/color/randomItem';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export default function GalleryPage() {
+    const Wallpaper = randomItem(...generated_wallpapers); // generated_wallpapers[29];
+
     return (
         <>
             <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
@@ -25,7 +29,7 @@ export default function GalleryPage() {
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
                     {/* TODO: Do some system for multiple pages */}
-                    {/* <CaveSection /> */}
+                    <Wallpaper />
                 </header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
@@ -43,11 +47,10 @@ export default function GalleryPage() {
                             {generated_wallpapers.map((Wallpaper, i) => (
                                 // TODO: <MidjourneyImage/>
                                 // TODO: Show diffusion as animation
-                                <a
+                                <Link
+                                    href={`/?wallpaper=${Wallpaper.metadata.id}`}
                                     key={i /* <- TODO: Better */}
-                                    href="https://www.midjourney.com/app/jobs/fe3480c5-76af-45da-ac4e-5177062bcb6b" /* <- !!! From metadata */
                                     target="_blank"
-                                    rel="noreferrer"
                                 >
                                     <Item>
                                         <Item.Image>
@@ -55,9 +58,21 @@ export default function GalleryPage() {
                                         </Item.Image>
                                         <Item.Description>
                                             <ImagineTag>{Wallpaper.metadata.full_command}</ImagineTag>
+
+                                            {/*
+                                            TODO: Put here link to MidJourney>
+
+                                            <a
+                                                href="https://www.midjourney.com/app/jobs/fe3480c5-76af-45da-ac4e-5177062bcb6b" /* <- !!! From metadata * /
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                            
+                                            
+                                            */}
                                         </Item.Description>
                                     </Item>
-                                </a>
+                                </Link>
                             ))}
                         </Items>
                     </Section>
