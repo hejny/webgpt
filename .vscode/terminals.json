@@ -48,12 +48,6 @@
             "focus": true
         },
         {
-            "name": "🏭🖼️ Generate patterns library",
-            "commands": ["ts-node ./scripts/generate-patterns-library/generate-patterns-library.ts"],
-            "onlySingle": true,
-            "focus": true
-        },
-        {
             "name": "👊 Kill all 4444",
             "commands": ["npx kill-port 3000 "],
             "onlySingle": true,

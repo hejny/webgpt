@@ -9,6 +9,7 @@ import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 
 export default function IndexPage({ lang }: any) {
+    //const Wallpaper = randomItem(...generated_wallpapers);
     const Wallpaper = generated_wallpapers[29];
 
     return (
