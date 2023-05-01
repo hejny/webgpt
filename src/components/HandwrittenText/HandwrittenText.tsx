@@ -48,7 +48,10 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         return;
                     }
 
-                    await forTime(500);
+                    // TODO: Preload the script and model d.bin HERE
+                    // > await loadAndRunExternalScript('/handwritten/script.js')
+
+                    await forTime(1000 /* <- !!! How much is the true delay, can it work without delay? */);
 
                     console.log('!!!!', 'HandwrittenText', color.toHex());
 
