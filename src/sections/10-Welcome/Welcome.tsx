@@ -8,12 +8,21 @@ import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useSkin } from '../../utils/hooks/useSkin';
 import styles from './Welcome.module.css';
 
+/**
+ * An interface for the props of the WelcomeSection component ⁘
+ * 
+ * @typedef {Object} WelcomeProps
+ * @property {('HOMEPAGE' | 'SIDEPAGE' | 'PAVOLHEJNY')} variant - The variant of the welcome section
+ */
 interface WelcomeProps {
     variant: 'HOMEPAGE' | 'SIDEPAGE' | 'PAVOLHEJNY';
 }
 
 /**
- * @@@
+ * A function component that renders a welcome section ⁘
+ * 
+ * @param {WelcomeProps} props - The props for the component
+ * @returns {JSX.Element} The welcome section element
  */
 export function WelcomeSection(props: WelcomeProps) {
     const { variant } = props;

@@ -2,7 +2,7 @@ import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
 
 /**
- * @@@
+ * A class that represents an image with a size and an array of pixels ⁘
  */
 export class Image {
     /**

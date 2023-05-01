@@ -5,7 +5,9 @@ import { Section } from '../../components/Section/Section';
 import styles from './TechnicalInfo.module.css';
 
 /**
- * @@@
+ * A React component that renders technical information about the app ⁘
+ * 
+ * @returns {JSX.Element} A section element with the title, content, version, repository and commit of the app.
  */
 export function TechnicalInfo() {
     const { t } = useTranslation();

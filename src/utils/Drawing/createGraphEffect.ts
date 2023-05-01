@@ -4,13 +4,26 @@ import { IVector, Vector } from 'xyzt';
 import { Drawing } from './Drawing';
 import { Effect } from './effect';
 
+/**
+ * An interface for defining options for a graph effect ⁘
+ * 
+ * @interface
+ * @property {Object} range - The range of the input parameter t.
+ * @property {number} range.min - The minimum value of t.
+ * @property {number} range.max - The maximum value of t.
+ * @property {number} range.step - The increment of t.
+ * @property {Function} plot - A function that takes an input object and returns a vector.
+ */
 interface GraphEffectOptions {
     range: { min: number; max: number; step: number };
     plot(input: { t: number; seed: Vector }): IVector;
 }
 
 /**
- * @@@
+ * A function that creates a graph effect for a given HTML element ⁘
+ * 
+ * @param {GraphEffectOptions} formula - The options for the graph effect.
+ * @returns {Effect<TElement>} - A function that takes an HTML element and returns a registration object.
  */
 export function createGraphEffect<TElement extends HTMLElement>(formula: GraphEffectOptions): Effect<TElement> {
     return (element: TElement) => {

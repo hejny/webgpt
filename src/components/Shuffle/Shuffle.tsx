@@ -2,7 +2,10 @@ import { createContext, ReactNode, useContext } from 'react';
 import seedrandom from 'seedrandom';
 
 /**
- * This will be a seed prefix for the random number generator used in the shuffling
+ * A function component that shuffles its children based on a seed and a limit ⁘
+ * 
+ * @param {ShuffleProps} props - The props for the component
+ * @returns {ReactElement} - The shuffled children as a React element
  */
 export const ShuffleSeedContext = createContext<string | number>('');
 
