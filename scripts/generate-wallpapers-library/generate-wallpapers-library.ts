@@ -7,10 +7,12 @@ import glob from 'glob-promise';
 import { normalizeTo_camelCase, normalizeTo_snake_case } from 'n12';
 import { capitalize } from 'n12/dist/capitalize';
 import { basename, dirname, join, relative } from 'path';
+import { Color } from '../../src/utils/color/Color';
 import { computeImageColorStats } from '../../src/utils/image/computeImageColorStats';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
+import { forPlay } from '../utils/forPlay';
 import { generateImport } from '../utils/generateImport';
 import { isFileExisting } from '../utils/isFileExisting';
 import { prettify } from '../utils/prettify';
@@ -51,6 +53,9 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
     const wallpapers: Array<{ entityName: string; entityPath: string }> = [];
 
     for (const wallpaperPath of wallpapersPaths) {
+        await forPlay();
+        console.info(`🖼️🖼️  ${wallpaperPath.split('\\').join('/')}`);
+
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
 
         if (!(await isFileExisting(metadataPath))) {
@@ -112,7 +117,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             import ${entityName} from '${wallpaperImportPath}';
             import metadata from '${metadataImportPath}';
             import { IWallpaperMetadata } from '../IWallpaperComponent';
-            import { IImageColorStats } from '../../src/utils/image/computeImageColorStats';
+            import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+            import { Color } from '../../../../src/utils/color/Color';
 
             /**
              * Image of ${title}
@@ -133,7 +139,21 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             }
 
             ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
-            ${componentName}.colorStats = ${JSON.stringify(wallpaperColorStats, null, 4)} satisfies IImageColorStats;
+            ${componentName}.colorStats = ${JSON.stringify(
+            wallpaperColorStats,
+            (key, value) => {
+                if (value instanceof Color) {
+                    return `>>>Color.fromHex('${value.toHex()}')<<<`;
+                }
+
+                return value;
+            },
+            4,
+        )
+            .split('">>>')
+            .join('')
+            .split('<<<"')
+            .join('')} satisfies IImageColorStats;
         `);
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf-8');
