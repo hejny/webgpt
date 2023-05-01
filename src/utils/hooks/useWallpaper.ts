@@ -3,7 +3,9 @@ import { generated_wallpapers } from '../../../assets/ai/wallpaper';
 import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComponent';
 
 /**
- * @@@
+ * A function that returns a wallpaper component based on the router query ⁘
+ * 
+ * @returns {IWallpaperComponent} A wallpaper component.
  */
 export function useWallpaper(): IWallpaperComponent {
     const router = useRouter();

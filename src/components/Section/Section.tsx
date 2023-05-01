@@ -2,6 +2,12 @@ import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
 import styles from './Section.module.css';
 
+/**
+ * A function component that renders a section element ⁘
+ * 
+ * @param props - The props for the section component
+ * @returns A JSX element representing the section
+ */
 interface SectionProps {
     children: ReactNode;
 

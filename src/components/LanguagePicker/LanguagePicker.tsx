@@ -7,7 +7,9 @@ import { classNames } from '../../utils/classNames';
 import styles from './LanguagePicker.module.css';
 
 /**
- * @@@
+ * A component that allows the user to switch between English and Czech languages ⁘
+ * 
+ * @returns {JSX.Element} A div element with two links to change the locale.
  */
 export function LanguagePicker() {
     const router = useRouter();

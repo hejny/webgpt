@@ -5,6 +5,12 @@ import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 
+/**
+ * A functional component that renders the head element and the language picker ⁘
+ * 
+ * @param {AppHeadProps} props - The props for the component
+ * @returns {JSX.Element} - The JSX element for the component
+ */
 interface AppHeadProps {
     subtitle?: string;
 }

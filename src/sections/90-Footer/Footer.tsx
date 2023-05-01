@@ -3,7 +3,9 @@ import Link from 'next/link';
 import styles from './Footer.module.css';
 
 /**
- * @@@
+ * A functional component that renders a footer section with some links ⁘
+ * 
+ * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
     const { t } = useTranslation();
