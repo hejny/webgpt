@@ -2,7 +2,9 @@
 import { Color } from '../color/Color';
 import { Image } from './Image';
 
-// Define an interface for the image color statistics
+/**
+ * Define an interface for the image color statistics
+ */
 export interface IImageColorStats {
     // The average color of the image as a Color object
     averageColor: Color;
@@ -20,7 +22,9 @@ export interface IImageColorStats {
     leastFrequentColor: Color;
 }
 
-// Define a function to compute the image color statistics
+/**
+ * Define a function to compute the image color statistics
+ */
 export function computeImageColorStats(image: Image): IImageColorStats {
     // Declare variables to store the statistics
     let averageColor: Color;

@@ -1,6 +1,9 @@
 import { Color } from '../color/Color';
 import { useWallpaper } from './useWallpaper';
 
+/**
+ * @@@
+ */
 export interface ISkin {
     normalTextColor: Color;
     highlightedTextColor: Color;
@@ -9,6 +12,9 @@ export interface ISkin {
     footerBackground: string;
 }
 
+/**
+ * @@@
+ */
 export function useSkin(): ISkin {
     const { colorStats } = useWallpaper();
 

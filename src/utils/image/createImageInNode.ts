@@ -2,7 +2,9 @@ import jimp from 'jimp';
 import { Color } from '../color/Color';
 import { Image } from './Image';
 
-// Define an async function to create an image in Node.js
+/**
+ * Define an async function to create an image in Node.js
+ */
 export async function createImageInNode(path: string): Promise<Image> {
     // Read the image from the given path using jimp
     const jimpImage = await jimp.read(path);
