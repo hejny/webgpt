@@ -1,10 +1,14 @@
 import { Passions_Conflict } from '@next/font/google';
+import { useEffect } from 'react';
 import { forTime } from 'waitasecond';
 import { classNames } from '../../utils/classNames';
+import { Color } from '../../utils/color/Color';
+import { randomItem } from '../../utils/color/randomItem';
 import styles from './HandwrittenText.module.css';
 import { handwriteText } from './utils/handwriteText';
 
 interface HandwrittenTextProps {
+    color: Color;
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
 }
 
@@ -14,7 +18,17 @@ const passionsConflictFont = Passions_Conflict({ weight: '400', style: 'normal',
  * @@@
  */
 export function HandwrittenText(props: HandwrittenTextProps) {
-    const { children } = props;
+    const { children, color } = props;
+
+    // TODO: Can be isMounted done better
+    let isMounted: boolean;
+    useEffect(() => {
+        isMounted = true;
+        return () => {
+            isMounted = false;
+        };
+    }, [children, color]);
+
     return (
         <div className={styles.HandwrittenText}>
             {/* 
@@ -26,6 +40,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                 placeholder="empty" /* <- TODO: Blur * /
             />
             */}
+
             <svg
                 className={styles.primaryImage}
                 ref={async (svgElement) => {
@@ -33,17 +48,26 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         return;
                     }
 
-                    await forTime(1000 /* !!! Remove delayes after fix */);
+                    await forTime(500);
 
-                    console.log(svgElement);
+                    console.log('!!!!', 'HandwrittenText', color.toHex());
+
+                    if (!isMounted) {
+                        console.log('!!!!', 'Not mounted');
+                        return;
+                    }
+
+                    console.log('!!!!', 'Mounted');
+
                     await handwriteText({
-                        // TODO: !!! Pass color here
+                        // TODO: !!! Center
                         // TODO: !!! Work with aspect ratio
                         text: children,
-                        speed: 7,
+                        color,
+                        speed: 3 /* 7 */,
                         bias: 0.75,
                         width: 1.5,
-                        style: 'FancyTall',
+                        style: randomItem('Fancy', 'FancyTall'),
                         svgElement,
                     });
                 }}

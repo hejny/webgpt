@@ -5,6 +5,7 @@ import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenTex
 import { Section } from '../../components/Section/Section';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
+import { useSkin } from '../../utils/hooks/useSkin';
 import styles from './Welcome.module.css';
 
 interface WelcomeProps {
@@ -18,10 +19,11 @@ export function WelcomeSection(props: WelcomeProps) {
     const { variant } = props;
 
     const { t, i18n } = useTranslation();
+    const skin = useSkin();
 
     const header = (
         <h1 className={styles.handritten}>
-            <HandwrittenText>
+            <HandwrittenText color={skin.highlightedTextColor}>
                 {removeMarkdownFormatting(removeMarkdownLinks(t('title')))}
                 {/* <- TODO: [🎎] Allow to have there full JSX with formatting like <Article content={t('title')} isEnhanced /> OR pass as markdown*/}
             </HandwrittenText>

@@ -1,3 +1,4 @@
+import { Color } from '../../../utils/color/Color';
 import { loadAndRunExternalScript } from './loadAndRunExternalScript';
 
 const HandwrittenStyle = {
@@ -16,6 +17,7 @@ const HandwrittenStyle = {
 
 interface IHandwriteTextOptions {
     text: string;
+    color: Color;
     speed: number;
     bias: number;
     width: number;
@@ -27,6 +29,7 @@ export async function handwriteText(options: IHandwriteTextOptions) {
     await loadAndRunExternalScript('/handwritten/script.js');
     await (window as any).handwriteText({
         ...options,
+        color: options.color.toRgb(),
         style: HandwrittenStyle[options.style],
         modelSrc: '/handwritten/d.bin',
     }) /* <- !!! Return promise */;

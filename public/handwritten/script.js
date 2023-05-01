@@ -400,7 +400,10 @@ function handwriteText(options) {
         }
         const k = c.join(' ');
         const F = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-        F.setAttribute('d', k), (F.style.stroke = 'black'), (F.style.fill = 'black'), canvasElement.appendChild(F);
+        F.setAttribute('d', k),
+            (F.style.stroke = options.color || 'black'),
+            (F.style.fill = options.color || 'black'),
+            canvasElement.appendChild(F);
     };
     var B = (r) => {
         const e = [];
