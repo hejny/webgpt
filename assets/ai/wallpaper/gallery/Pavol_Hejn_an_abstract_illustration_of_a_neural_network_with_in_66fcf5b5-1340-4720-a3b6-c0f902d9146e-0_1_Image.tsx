@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_illustration_of_a_neural_network_with_in_66fcf5b5_1340_4720_a3b6_c0f902d9146e_0_1 from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_66fcf5b5-1340-4720-a3b6-c0f902d9146e-0_1.png';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_66fcf5b5-1340-4720-a3b6-c0f902d9146e-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract illustration of a neural network with in 66fcf5b5-1340-4720-a3b6-c0f902d9146e-0
@@ -32,3 +34,10 @@ export function AnAbstractIllustrationOfANeuralNetworkWithIn66fcf5b513404720A3b6
 
 AnAbstractIllustrationOfANeuralNetworkWithIn66fcf5b513404720A3b6C0f902d9146e0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractIllustrationOfANeuralNetworkWithIn66fcf5b513404720A3b6C0f902d9146e0_1_Image.colorStats = {
+    averageColor: Color.fromHex('#1a2a2e'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#02040a'),
+    leastFrequentColor: Color.fromHex('#497c7c'),
+} satisfies IImageColorStats;

@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_close_up_image_of_a_telescope_lens_with_the_stars_fb29aa91_002e_4e94_8eba_5d829883c703_0_2 from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_2.png';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a close up image of a telescope lens with the stars  fb29aa91-002e-4e94-8eba-5d829883c703-0
@@ -32,3 +34,10 @@ export function ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d8
 
 ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_2_Image.colorStats = {
+    averageColor: Color.fromHex('#1e262b'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#08100f'),
+} satisfies IImageColorStats;

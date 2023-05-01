@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_interpretation_of_a_thunderstorm_74add395_e19e_43f0_a126_9006ac38a935_0_1 from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_1.png';
 import metadata from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract interpretation of a thunderstorm 74add395-e19e-43f0-a126-9006ac38a935-0
@@ -32,3 +34,10 @@ export function AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006a
 
 AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006ac38a9350_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractInterpretationOfAThunderstorm74add395E19e43f0A1269006ac38a9350_1_Image.colorStats = {
+    averageColor: Color.fromHex('#282f31'),
+    lightestColor: Color.fromHex('#e4ffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#020406'),
+    leastFrequentColor: Color.fromHex('#374a58'),
+} satisfies IImageColorStats;

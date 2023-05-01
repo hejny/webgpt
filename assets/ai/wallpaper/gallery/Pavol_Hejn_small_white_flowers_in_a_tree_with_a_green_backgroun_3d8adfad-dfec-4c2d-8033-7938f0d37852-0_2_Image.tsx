@@ -11,6 +11,8 @@ import Image from 'next/image';
 import small_white_flowers_in_a_tree_with_a_green_backgroun_3d8adfad_dfec_4c2d_8033_7938f0d37852_0_2 from './Pavol_Hejn_small_white_flowers_in_a_tree_with_a_green_backgroun_3d8adfad-dfec-4c2d-8033-7938f0d37852-0_2.png';
 import metadata from './Pavol_Hejn_small_white_flowers_in_a_tree_with_a_green_backgroun_3d8adfad-dfec-4c2d-8033-7938f0d37852-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of small white flowers in a tree with a green backgroun 3d8adfad-dfec-4c2d-8033-7938f0d37852-0
@@ -32,3 +34,10 @@ export function SmallWhiteFlowersInATreeWithAGreenBackgroun3d8adfadDfec4c2d80337
 
 SmallWhiteFlowersInATreeWithAGreenBackgroun3d8adfadDfec4c2d80337938f0d378520_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+SmallWhiteFlowersInATreeWithAGreenBackgroun3d8adfadDfec4c2d80337938f0d378520_2_Image.colorStats = {
+    averageColor: Color.fromHex('#2f4037'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#070f13'),
+    leastFrequentColor: Color.fromHex('#899a96'),
+} satisfies IImageColorStats;

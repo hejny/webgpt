@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b_5783_4171_8653_e62c10ec7b55_0_1 from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_1.png';
 import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a geometric design in shades of purple and pink insp fd96e87b-5783-4171-8653-e62c10ec7b55-0
@@ -32,3 +34,10 @@ export function AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E
 
 AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_1_Image.colorStats = {
+    averageColor: Color.fromHex('#3f093e'),
+    lightestColor: Color.fromHex('#ffe3ff'),
+    darkestColor: Color.fromHex('#020011'),
+    mostFrequentColor: Color.fromHex('#16021e'),
+    leastFrequentColor: Color.fromHex('#38064d'),
+} satisfies IImageColorStats;

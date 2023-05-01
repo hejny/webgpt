@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f_277b_41d9_b071_1684c12bc089_0_1 from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f-277b-41d9-b071-1684c12bc089-0_1.png';
 import metadata from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f-277b-41d9-b071-1684c12bc089-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a whimsical tea party with anthropomorphic animals b87f218f-277b-41d9-b071-1684c12bc089-0
@@ -32,3 +34,10 @@ export function AWhimsicalTeaPartyWithAnthropomorphicAnimalsB87f218f277b41d9B071
 
 AWhimsicalTeaPartyWithAnthropomorphicAnimalsB87f218f277b41d9B0711684c12bc0890_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWhimsicalTeaPartyWithAnthropomorphicAnimalsB87f218f277b41d9B0711684c12bc0890_1_Image.colorStats = {
+    averageColor: Color.fromHex('#463a33'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#03040a'),
+    leastFrequentColor: Color.fromHex('#748594'),
+} satisfies IImageColorStats;

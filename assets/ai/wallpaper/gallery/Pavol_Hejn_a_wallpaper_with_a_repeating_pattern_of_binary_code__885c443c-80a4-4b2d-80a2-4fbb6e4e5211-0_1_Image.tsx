@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_binary_code_885c443c_80a4_4b2d_80a2_4fbb6e4e5211_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of binary code  885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0
@@ -32,3 +34,10 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24
 
 AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_Image.colorStats = {
+    averageColor: Color.fromHex('#191819'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#282730'),
+} satisfies IImageColorStats;

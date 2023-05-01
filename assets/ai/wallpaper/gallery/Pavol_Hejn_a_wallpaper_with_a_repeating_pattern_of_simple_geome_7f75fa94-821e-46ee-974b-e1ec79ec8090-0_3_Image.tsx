@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94_821e_46ee_974b_e1ec79ec8090_0_3 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94-821e-46ee-974b-e1ec79ec8090-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94-821e-46ee-974b-e1ec79ec8090-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of simple geome 7f75fa94-821e-46ee-974b-e1ec79ec8090-0
@@ -32,3 +34,10 @@ export function AWallpaperWithARepeatingPatternOfSimpleGeome7f75fa94821e46ee974b
 
 AWallpaperWithARepeatingPatternOfSimpleGeome7f75fa94821e46ee974bE1ec79ec80900_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithARepeatingPatternOfSimpleGeome7f75fa94821e46ee974bE1ec79ec80900_3_Image.colorStats = {
+    averageColor: Color.fromHex('#7d7257'),
+    lightestColor: Color.fromHex('#f6ecbb'),
+    darkestColor: Color.fromHex('#230f03'),
+    mostFrequentColor: Color.fromHex('#efba7e'),
+    leastFrequentColor: Color.fromHex('#242422'),
+} satisfies IImageColorStats;

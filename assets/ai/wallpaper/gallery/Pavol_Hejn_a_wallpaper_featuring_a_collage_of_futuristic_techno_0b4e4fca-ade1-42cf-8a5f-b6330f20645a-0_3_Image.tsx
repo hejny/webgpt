@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca_ade1_42cf_8a5f_b6330f20645a_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a collage of futuristic techno 0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5
 
 AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_3_Image.colorStats = {
+    averageColor: Color.fromHex('#161f22'),
+    lightestColor: Color.fromHex('#fcffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#010101'),
+    leastFrequentColor: Color.fromHex('#021a24'),
+} satisfies IImageColorStats;

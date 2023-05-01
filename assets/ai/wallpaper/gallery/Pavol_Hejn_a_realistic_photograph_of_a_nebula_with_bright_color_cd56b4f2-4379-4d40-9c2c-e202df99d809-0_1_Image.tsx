@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2_4379_4d40_9c2c_e202df99d809_0_1 from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_1.png';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a realistic photograph of a nebula with bright color cd56b4f2-4379-4d40-9c2c-e202df99d809-0
@@ -32,3 +34,10 @@ export function ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2c
 
 ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_1_Image.colorStats = {
+    averageColor: Color.fromHex('#333938'),
+    lightestColor: Color.fromHex('#effbd7'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#070706'),
+    leastFrequentColor: Color.fromHex('#262238'),
+} satisfies IImageColorStats;

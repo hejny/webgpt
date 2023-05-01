@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe_967d_496b_977c_c3e2780ca4e6_0_2 from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_2.png';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract illustration of an ai powered chatbot wi 514808fe-967d-496b-977c-c3e2780ca4e6-0
@@ -32,3 +34,10 @@ export function AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977c
 
 AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_2_Image.colorStats = {
+    averageColor: Color.fromHex('#62627e'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#00002c'),
+    mostFrequentColor: Color.fromHex('#083a6c'),
+    leastFrequentColor: Color.fromHex('#0e396e'),
+} satisfies IImageColorStats;

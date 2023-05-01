@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_photograph_of_a_glacier_on_a_distant_planet_with_tb6b0ba1_ed1d_43d8_b47c_c28171b07aa3_0_0_0 from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3-0_0.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a photograph of a glacier on a distant planet with tb6b0ba1-ed1d-43d8-b47c-c28171b07aa3-0 0
@@ -32,3 +34,10 @@ export function APhotographOfAGlacierOnADistantPlanetWithTb6b0ba1Ed1d43d8B47cC28
 
 APhotographOfAGlacierOnADistantPlanetWithTb6b0ba1Ed1d43d8B47cC28171b07aa300_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APhotographOfAGlacierOnADistantPlanetWithTb6b0ba1Ed1d43d8B47cC28171b07aa300_0_Image.colorStats = {
+    averageColor: Color.fromHex('#2a414a'),
+    lightestColor: Color.fromHex('#c8d9da'),
+    darkestColor: Color.fromHex('#000004'),
+    mostFrequentColor: Color.fromHex('#030b14'),
+    leastFrequentColor: Color.fromHex('#1c3338'),
+} satisfies IImageColorStats;

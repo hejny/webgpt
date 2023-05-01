@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3_ba9a_4276_bc44_42e503d0d5dc_0_3 from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0_3.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a photograph of a desert landscape at sunset with wa c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0
@@ -32,3 +34,10 @@ export function APhotographOfADesertLandscapeAtSunsetWithWaC4ebe2a3Ba9a4276Bc444
 
 APhotographOfADesertLandscapeAtSunsetWithWaC4ebe2a3Ba9a4276Bc4442e503d0d5dc0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APhotographOfADesertLandscapeAtSunsetWithWaC4ebe2a3Ba9a4276Bc4442e503d0d5dc0_3_Image.colorStats = {
+    averageColor: Color.fromHex('#8f6954'),
+    lightestColor: Color.fromHex('#fef9f6'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#687078'),
+    leastFrequentColor: Color.fromHex('#93958e'),
+} satisfies IImageColorStats;

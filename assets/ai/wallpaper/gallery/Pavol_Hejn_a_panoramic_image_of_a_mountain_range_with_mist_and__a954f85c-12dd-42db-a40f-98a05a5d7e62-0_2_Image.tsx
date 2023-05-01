@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_panoramic_image_of_a_mountain_range_with_mist_and_a954f85c_12dd_42db_a40f_98a05a5d7e62_0_2 from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__a954f85c-12dd-42db-a40f-98a05a5d7e62-0_2.png';
 import metadata from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__a954f85c-12dd-42db-a40f-98a05a5d7e62-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a panoramic image of a mountain range with mist and  a954f85c-12dd-42db-a40f-98a05a5d7e62-0
@@ -32,3 +34,10 @@ export function APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98
 
 APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_2_Image.colorStats = {
+    averageColor: Color.fromHex('#7b7873'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#09080c'),
+    leastFrequentColor: Color.fromHex('#697b82'),
+} satisfies IImageColorStats;

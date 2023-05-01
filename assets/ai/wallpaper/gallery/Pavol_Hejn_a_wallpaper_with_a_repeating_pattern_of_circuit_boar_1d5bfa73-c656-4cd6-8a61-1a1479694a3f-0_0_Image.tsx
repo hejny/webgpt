@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73_c656_4cd6_8a61_1a1479694a3f_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of circuit boar 1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0
@@ -32,3 +34,10 @@ export function AWallpaperWithARepeatingPatternOfCircuitBoar1d5bfa73C6564cd68a61
 
 AWallpaperWithARepeatingPatternOfCircuitBoar1d5bfa73C6564cd68a611a1479694a3f0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithARepeatingPatternOfCircuitBoar1d5bfa73C6564cd68a611a1479694a3f0_0_Image.colorStats = {
+    averageColor: Color.fromHex('#1b231b'),
+    lightestColor: Color.fromHex('#aed694'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0c0d10'),
+    leastFrequentColor: Color.fromHex('#4e5045'),
+} satisfies IImageColorStats;

@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_380486d5-af02-4d6b-ae31-e4f04a6c3580-0_1.json';
 import a_dreamy_forest_scene_with_fairies_380486d5_af02_4d6b_ae31_e4f04a6c3580_0_1 from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_380486d5-af02-4d6b-ae31-e4f04a6c3580-0_1.png';
+import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_380486d5-af02-4d6b-ae31-e4f04a6c3580-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a dreamy forest scene with fairies 380486d5-af02-4d6b-ae31-e4f04a6c3580-0
@@ -31,3 +33,10 @@ export function ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1
 }
 
 ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1_Image.metadata = metadata satisfies IWallpaperMetadata;
+ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1_Image.colorStats = {
+    averageColor: Color.fromHex('#525144'),
+    lightestColor: Color.fromHex('#fffff0'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0f0b08'),
+    leastFrequentColor: Color.fromHex('#26372d'),
+} satisfies IImageColorStats;

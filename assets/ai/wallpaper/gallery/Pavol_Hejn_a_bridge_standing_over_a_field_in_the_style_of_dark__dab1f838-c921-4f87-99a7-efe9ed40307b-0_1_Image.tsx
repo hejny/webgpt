@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_bridge_standing_over_a_field_in_the_style_of_dark_dab1f838_c921_4f87_99a7_efe9ed40307b_0_1 from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__dab1f838-c921-4f87-99a7-efe9ed40307b-0_1.png';
 import metadata from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__dab1f838-c921-4f87-99a7-efe9ed40307b-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a bridge standing over a field in the style of dark  dab1f838-c921-4f87-99a7-efe9ed40307b-0
@@ -32,3 +34,10 @@ export function ABridgeStandingOverAFieldInTheStyleOfDarkDab1f838C9214f8799a7Efe
 
 ABridgeStandingOverAFieldInTheStyleOfDarkDab1f838C9214f8799a7Efe9ed40307b0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ABridgeStandingOverAFieldInTheStyleOfDarkDab1f838C9214f8799a7Efe9ed40307b0_1_Image.colorStats = {
+    averageColor: Color.fromHex('#5a756f'),
+    lightestColor: Color.fromHex('#f6ffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#bee3eb'),
+    leastFrequentColor: Color.fromHex('#acd8df'),
+} satisfies IImageColorStats;

@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_surreal_interpretation_of_a_desert_landscape_f047f1c7_b6f3_4eae_88f8_2fb6ec5c1607_0_2 from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0_2.png';
 import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a surreal interpretation of a desert landscape f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0
@@ -32,3 +34,10 @@ export function ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6
 
 ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6ec5c16070_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6ec5c16070_2_Image.colorStats = {
+    averageColor: Color.fromHex('#a3704a'),
+    lightestColor: Color.fromHex('#fae8cc'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#e3c8aa'),
+    leastFrequentColor: Color.fromHex('#aa957d'),
+} satisfies IImageColorStats;

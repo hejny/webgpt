@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_cityscape_overtaken_by_nature_ffe7c22c_85ab_48ad_be38_386617226b6f_0_2 from './Pavol_Hejn_a_cityscape_overtaken_by_nature_ffe7c22c-85ab-48ad-be38-386617226b6f-0_2.png';
 import metadata from './Pavol_Hejn_a_cityscape_overtaken_by_nature_ffe7c22c-85ab-48ad-be38-386617226b6f-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a cityscape overtaken by nature ffe7c22c-85ab-48ad-be38-386617226b6f-0
@@ -31,3 +33,10 @@ export function ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_2_I
 }
 
 ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_2_Image.metadata = metadata satisfies IWallpaperMetadata;
+ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_2_Image.colorStats = {
+    averageColor: Color.fromHex('#4c4c3b'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#f7e7d4'),
+    leastFrequentColor: Color.fromHex('#617276'),
+} satisfies IImageColorStats;

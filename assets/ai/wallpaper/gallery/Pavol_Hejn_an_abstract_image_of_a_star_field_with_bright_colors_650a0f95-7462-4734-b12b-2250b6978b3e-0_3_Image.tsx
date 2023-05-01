@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_image_of_a_star_field_with_bright_colors_650a0f95_7462_4734_b12b_2250b6978b3e_0_3 from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_3.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract image of a star field with bright colors 650a0f95-7462-4734-b12b-2250b6978b3e-0
@@ -32,3 +34,10 @@ export function AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2
 
 AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_3_Image.colorStats = {
+    averageColor: Color.fromHex('#4a3f38'),
+    lightestColor: Color.fromHex('#fcfdf6'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#081826'),
+    leastFrequentColor: Color.fromHex('#031c34'),
+} satisfies IImageColorStats;

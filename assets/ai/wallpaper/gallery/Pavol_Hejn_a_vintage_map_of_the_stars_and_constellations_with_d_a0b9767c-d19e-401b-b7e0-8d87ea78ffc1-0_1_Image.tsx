@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c_d19e_401b_b7e0_8d87ea78ffc1_0_1 from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0_1.png';
 import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a vintage map of the stars and constellations with d a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0
@@ -32,3 +34,10 @@ export function AVintageMapOfTheStarsAndConstellationsWithDA0b9767cD19e401bB7e08
 
 AVintageMapOfTheStarsAndConstellationsWithDA0b9767cD19e401bB7e08d87ea78ffc10_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AVintageMapOfTheStarsAndConstellationsWithDA0b9767cD19e401bB7e08d87ea78ffc10_1_Image.colorStats = {
+    averageColor: Color.fromHex('#b49871'),
+    lightestColor: Color.fromHex('#ffffe8'),
+    darkestColor: Color.fromHex('#110100'),
+    mostFrequentColor: Color.fromHex('#f4d29f'),
+    leastFrequentColor: Color.fromHex('#786541'),
+} satisfies IImageColorStats;

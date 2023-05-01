@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_stylized_illustration_of_an_ai_powered_robot_with_44a12836_879e_4dde_90da_a8ebf9c6ab0b_0_3 from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_3.png';
 import metadata from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a stylized illustration of an ai powered robot with  44a12836-879e-4dde-90da-a8ebf9c6ab0b-0
@@ -32,3 +34,10 @@ export function AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA
 
 AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_3_Image.colorStats = {
+    averageColor: Color.fromHex('#364b61'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000006'),
+    mostFrequentColor: Color.fromHex('#1b2139'),
+    leastFrequentColor: Color.fromHex('#204d68'),
+} satisfies IImageColorStats;

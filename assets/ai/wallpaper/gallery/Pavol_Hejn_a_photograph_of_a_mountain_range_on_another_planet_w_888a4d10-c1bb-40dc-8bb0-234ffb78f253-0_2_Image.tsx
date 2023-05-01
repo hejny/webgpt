@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10_c1bb_40dc_8bb0_234ffb78f253_0_2 from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10-c1bb-40dc-8bb0-234ffb78f253-0_2.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10-c1bb-40dc-8bb0-234ffb78f253-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a photograph of a mountain range on another planet w 888a4d10-c1bb-40dc-8bb0-234ffb78f253-0
@@ -32,3 +34,10 @@ export function APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb02
 
 APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb0234ffb78f2530_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb0234ffb78f2530_2_Image.colorStats = {
+    averageColor: Color.fromHex('#7b5d4f'),
+    lightestColor: Color.fromHex('#fdfff7'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#fdfdf8'),
+    leastFrequentColor: Color.fromHex('#293043'),
+} satisfies IImageColorStats;

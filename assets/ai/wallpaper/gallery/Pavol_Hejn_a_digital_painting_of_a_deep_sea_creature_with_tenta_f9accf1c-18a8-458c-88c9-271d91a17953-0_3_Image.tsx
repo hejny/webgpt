@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c_18a8_458c_88c9_271d91a17953_0_3 from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_3.png';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital painting of a deep sea creature with tenta f9accf1c-18a8-458c-88c9-271d91a17953-0
@@ -32,3 +34,10 @@ export function ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c92
 
 ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c9271d91a179530_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c9271d91a179530_3_Image.colorStats = {
+    averageColor: Color.fromHex('#14262b'),
+    lightestColor: Color.fromHex('#fdffff'),
+    darkestColor: Color.fromHex('#000001'),
+    mostFrequentColor: Color.fromHex('#04080e'),
+    leastFrequentColor: Color.fromHex('#10343c'),
+} satisfies IImageColorStats;

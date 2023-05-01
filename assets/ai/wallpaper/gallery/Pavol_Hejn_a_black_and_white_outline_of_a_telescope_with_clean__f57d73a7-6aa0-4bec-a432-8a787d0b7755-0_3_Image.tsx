@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_black_and_white_outline_of_a_telescope_with_clean_f57d73a7_6aa0_4bec_a432_8a787d0b7755_0_3 from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_3.png';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a black and white outline of a telescope with clean  f57d73a7-6aa0-4bec-a432-8a787d0b7755-0
@@ -32,3 +34,10 @@ export function ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a
 
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_3_Image.colorStats = {
+    averageColor: Color.fromHex('#d9d8d8'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#fefefe'),
+    leastFrequentColor: Color.fromHex('#767a72'),
+} satisfies IImageColorStats;

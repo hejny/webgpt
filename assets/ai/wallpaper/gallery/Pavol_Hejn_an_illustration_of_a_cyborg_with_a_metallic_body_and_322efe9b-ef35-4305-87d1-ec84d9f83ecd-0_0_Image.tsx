@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b_ef35_4305_87d1_ec84d9f83ecd_0_0 from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_0.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a cyborg with a metallic body and 322efe9b-ef35-4305-87d1-ec84d9f83ecd-0
@@ -32,3 +34,10 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1E
 
 AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_0_Image.colorStats = {
+    averageColor: Color.fromHex('#1f2629'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#050404'),
+    leastFrequentColor: Color.fromHex('#093c65'),
+} satisfies IImageColorStats;

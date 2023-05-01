@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_minimalist_illustration_of_a_robo_ea378cf7_c932_4ca2_bd66_843d43438333_0_0 from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_ea378cf7-c932-4ca2-bd66-843d43438333-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_ea378cf7-c932-4ca2-bd66-843d43438333-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a minimalist illustration of a robo ea378cf7-c932-4ca2-bd66-843d43438333-0
@@ -32,3 +34,10 @@ export function AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66
 
 AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66843d434383330_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66843d434383330_0_Image.colorStats = {
+    averageColor: Color.fromHex('#111d25'),
+    lightestColor: Color.fromHex('#fffffa'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#05040b'),
+    leastFrequentColor: Color.fromHex('#164a57'),
+} satisfies IImageColorStats;

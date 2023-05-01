@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986_f1b4_4da4_8506_705bbd724c4d_0_2 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_2.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of abstract geo 4f913986-f1b4-4da4-8506-705bbd724c4d-0
@@ -32,3 +34,10 @@ export function AWallpaperWithARepeatingPatternOfAbstractGeo4f913986F1b44da48506
 
 AWallpaperWithARepeatingPatternOfAbstractGeo4f913986F1b44da48506705bbd724c4d0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithARepeatingPatternOfAbstractGeo4f913986F1b44da48506705bbd724c4d0_2_Image.colorStats = {
+    averageColor: Color.fromHex('#989284'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#01000b'),
+    mostFrequentColor: Color.fromHex('#21292c'),
+    leastFrequentColor: Color.fromHex('#d5634f'),
+} satisfies IImageColorStats;

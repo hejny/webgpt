@@ -11,6 +11,8 @@ import Image from 'next/image';
 import blue_whale_as_icon_for_the_mobile_app_ce1e0f4d_a55f_4772_b7c9_e07313cb4143_0_2 from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_2.png';
 import metadata from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of blue whale as icon for the mobile app ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0
@@ -32,3 +34,10 @@ export function BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_
 
 BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_2_Image.colorStats = {
+    averageColor: Color.fromHex('#accedc'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#00032e'),
+    mostFrequentColor: Color.fromHex('#ffffff'),
+    leastFrequentColor: Color.fromHex('#dbf6fc'),
+} satisfies IImageColorStats;

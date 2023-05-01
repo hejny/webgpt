@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499_fcb4_456a_a22b_c71137352387_0_0 from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_0.png';
 import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a stylized depiction of a spacecraft in orbit around 2bf21499-fcb4-456a-a22b-c71137352387-0
@@ -32,3 +34,10 @@ export function AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22b
 
 AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_0_Image.colorStats = {
+    averageColor: Color.fromHex('#191c25'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#19191c'),
+} satisfies IImageColorStats;

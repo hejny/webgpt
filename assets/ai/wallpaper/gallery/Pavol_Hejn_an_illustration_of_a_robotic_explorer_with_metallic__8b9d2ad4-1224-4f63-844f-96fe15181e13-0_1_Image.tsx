@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_illustration_of_a_robotic_explorer_with_metallic_8b9d2ad4_1224_4f63_844f_96fe15181e13_0_1 from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__8b9d2ad4-1224-4f63-844f-96fe15181e13-0_1.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__8b9d2ad4-1224-4f63-844f-96fe15181e13-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a robotic explorer with metallic  8b9d2ad4-1224-4f63-844f-96fe15181e13-0
@@ -32,3 +34,10 @@ export function AnIllustrationOfARoboticExplorerWithMetallic8b9d2ad412244f63844f
 
 AnIllustrationOfARoboticExplorerWithMetallic8b9d2ad412244f63844f96fe15181e130_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnIllustrationOfARoboticExplorerWithMetallic8b9d2ad412244f63844f96fe15181e130_1_Image.colorStats = {
+    averageColor: Color.fromHex('#705440'),
+    lightestColor: Color.fromHex('#fffff8'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#fbbf80'),
+    leastFrequentColor: Color.fromHex('#200d11'),
+} satisfies IImageColorStats;

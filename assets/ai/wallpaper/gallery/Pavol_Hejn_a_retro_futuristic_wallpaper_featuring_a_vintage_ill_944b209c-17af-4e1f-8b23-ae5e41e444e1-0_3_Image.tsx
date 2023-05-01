@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c_17af_4e1f_8b23_ae5e41e444e1_0_3 from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c-17af-4e1f-8b23-ae5e41e444e1-0_3.png';
 import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c-17af-4e1f-8b23-ae5e41e444e1-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a retro futuristic wallpaper featuring a vintage ill 944b209c-17af-4e1f-8b23-ae5e41e444e1-0
@@ -32,3 +34,10 @@ export function ARetroFuturisticWallpaperFeaturingAVintageIll944b209c17af4e1f8b2
 
 ARetroFuturisticWallpaperFeaturingAVintageIll944b209c17af4e1f8b23Ae5e41e444e10_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ARetroFuturisticWallpaperFeaturingAVintageIll944b209c17af4e1f8b23Ae5e41e444e10_3_Image.colorStats = {
+    averageColor: Color.fromHex('#413154'),
+    lightestColor: Color.fromHex('#f2f7c5'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0b0b3f'),
+    leastFrequentColor: Color.fromHex('#f15f4a'),
+} satisfies IImageColorStats;

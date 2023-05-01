@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_painting_of_a_spaceship_approaching_an_aliead49fc_4cdb_4252_a4b1_32368cb20d10_0_3_3 from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_3.png';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital painting of a spaceship approaching an aliead49fc-4cdb-4252-a4b1-32368cb20d10-0 3
@@ -32,3 +34,10 @@ export function ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b13
 
 ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b132368cb20d1003_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b132368cb20d1003_3_Image.colorStats = {
+    averageColor: Color.fromHex('#354c53'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#150b14'),
+    leastFrequentColor: Color.fromHex('#07111a'),
+} satisfies IImageColorStats;

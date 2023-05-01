@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38_efa4_4631_a761_588842e6f805_0_1 from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_1.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a space station in orbit around a bcf08c38-efa4-4631-a761-588842e6f805-0
@@ -32,3 +34,10 @@ export function AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A7615
 
 AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_1_Image.colorStats = {
+    averageColor: Color.fromHex('#2c3238'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#010309'),
+    leastFrequentColor: Color.fromHex('#121b1e'),
+} satisfies IImageColorStats;

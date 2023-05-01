@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_illustration_of_a_futuristic_space_elevator_with_e684cfa_2ecc_4a82_8854_f3a0136b3f78_0_3_3 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_3.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a futuristic space elevator with e684cfa-2ecc-4a82-8854-f3a0136b3f78-0 3
@@ -32,3 +34,10 @@ export function AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F
 
 AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_Image.colorStats = {
+    averageColor: Color.fromHex('#6f7d88'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#fafbf8'),
+    leastFrequentColor: Color.fromHex('#0a0912'),
+} satisfies IImageColorStats;

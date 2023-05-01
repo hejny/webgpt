@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f_2c3f_4f59_9ca5_49d1e144c1ba_0_2 from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0_2.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract image of a planet s surface with distort a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0
@@ -32,3 +34,10 @@ export function AnAbstractImageOfAPlanetSSurfaceWithDistortA30b097f2c3f4f599ca54
 
 AnAbstractImageOfAPlanetSSurfaceWithDistortA30b097f2c3f4f599ca549d1e144c1ba0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractImageOfAPlanetSSurfaceWithDistortA30b097f2c3f4f599ca549d1e144c1ba0_2_Image.colorStats = {
+    averageColor: Color.fromHex('#533627'),
+    lightestColor: Color.fromHex('#fdebd3'),
+    darkestColor: Color.fromHex('#06000a'),
+    mostFrequentColor: Color.fromHex('#132b31'),
+    leastFrequentColor: Color.fromHex('#572e1c'),
+} satisfies IImageColorStats;

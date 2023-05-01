@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_95660e98_b69e_4c6b_816b_e38b37c78808_0_1 from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_95660e98-b69e-4c6b-816b-e38b37c78808-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_95660e98-b69e-4c6b-816b-e38b37c78808-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a single line drawing of a drone ag 95660e98-b69e-4c6b-816b-e38b37c78808-0
@@ -32,3 +34,10 @@ export function AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE3
 
 AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE38b37c788080_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE38b37c788080_1_Image.colorStats = {
+    averageColor: Color.fromHex('#41463e'),
+    lightestColor: Color.fromHex('#e0d5a0'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#1a3a3f'),
+    leastFrequentColor: Color.fromHex('#342a18'),
+} satisfies IImageColorStats;

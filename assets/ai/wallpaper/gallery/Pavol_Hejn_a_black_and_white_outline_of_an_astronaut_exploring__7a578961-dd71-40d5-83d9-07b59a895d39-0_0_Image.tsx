@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_black_and_white_outline_of_an_astronaut_exploring_7a578961_dd71_40d5_83d9_07b59a895d39_0_0 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__7a578961-dd71-40d5-83d9-07b59a895d39-0_0.png';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__7a578961-dd71-40d5-83d9-07b59a895d39-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a black and white outline of an astronaut exploring  7a578961-dd71-40d5-83d9-07b59a895d39-0
@@ -32,3 +34,10 @@ export function ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d90
 
 ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d907b59a895d390_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d907b59a895d390_0_Image.colorStats = {
+    averageColor: Color.fromHex('#989797'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#fdfdfd'),
+    leastFrequentColor: Color.fromHex('#151914'),
+} satisfies IImageColorStats;

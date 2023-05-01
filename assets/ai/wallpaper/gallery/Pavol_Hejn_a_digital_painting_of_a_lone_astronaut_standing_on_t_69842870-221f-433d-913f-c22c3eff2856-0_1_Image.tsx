@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_painting_of_a_lone_astronaut_standing_on_t_69842870_221f_433d_913f_c22c3eff2856_0_1 from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_69842870-221f-433d-913f-c22c3eff2856-0_1.png';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_69842870-221f-433d-913f-c22c3eff2856-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital painting of a lone astronaut standing on t 69842870-221f-433d-913f-c22c3eff2856-0
@@ -32,3 +34,10 @@ export function ADigitalPaintingOfALoneAstronautStandingOnT69842870221f433d913fC
 
 ADigitalPaintingOfALoneAstronautStandingOnT69842870221f433d913fC22c3eff28560_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalPaintingOfALoneAstronautStandingOnT69842870221f433d913fC22c3eff28560_1_Image.colorStats = {
+    averageColor: Color.fromHex('#595657'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#030308'),
+    leastFrequentColor: Color.fromHex('#1e2438'),
+} satisfies IImageColorStats;

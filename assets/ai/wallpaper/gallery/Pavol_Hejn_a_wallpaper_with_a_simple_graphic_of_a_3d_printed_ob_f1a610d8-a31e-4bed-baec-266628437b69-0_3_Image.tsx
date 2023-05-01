@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_ad_printed_ob_f1a610d8_a31e_4bed_baec_266628437b69_0_3_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_3d_printed_ob_f1a610d8-a31e-4bed-baec-266628437b69-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_3d_printed_ob_f1a610d8-a31e-4bed-baec-266628437b69-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a simple graphic of ad printed ob f1a610d8-a31e-4bed-baec-266628437b69-0 3
@@ -32,3 +34,10 @@ export function AWallpaperWithASimpleGraphicOfAdPrintedObF1a610d8A31e4bedBaec266
 
 AWallpaperWithASimpleGraphicOfAdPrintedObF1a610d8A31e4bedBaec266628437b6903_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithASimpleGraphicOfAdPrintedObF1a610d8A31e4bedBaec266628437b6903_3_Image.colorStats = {
+    averageColor: Color.fromHex('#504237'),
+    lightestColor: Color.fromHex('#c5ffff'),
+    darkestColor: Color.fromHex('#000001'),
+    mostFrequentColor: Color.fromHex('#e7852d'),
+    leastFrequentColor: Color.fromHex('#2c150f'),
+} satisfies IImageColorStats;

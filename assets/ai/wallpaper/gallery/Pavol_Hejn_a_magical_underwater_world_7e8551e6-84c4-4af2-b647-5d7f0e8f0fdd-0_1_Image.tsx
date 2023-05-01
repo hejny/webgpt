@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_magical_underwater_world_7e8551e6_84c4_4af2_b647_5d7f0e8f0fdd_0_1 from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_1.png';
 import metadata from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a magical underwater world 7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0
@@ -31,3 +33,10 @@ export function AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image
 }
 
 AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
+AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.colorStats = {
+    averageColor: Color.fromHex('#273a3c'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#07090b'),
+    leastFrequentColor: Color.fromHex('#172b27'),
+} satisfies IImageColorStats;

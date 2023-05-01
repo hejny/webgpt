@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40_ae4c_4050_a7db_05a76ecf08b0_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a simple graphic of a robot ar 9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db0
 
 AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db05a76ecf08b00_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db05a76ecf08b00_3_Image.colorStats = {
+    averageColor: Color.fromHex('#14171a'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#29292f'),
+} satisfies IImageColorStats;

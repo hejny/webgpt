@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072_5b63_4c33_af2f_1fa085a80415_0_1 from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_1.png';
 import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a photograph of an iceberg in the arctic with the bl 8e369072-5b63-4c33-af2f-1fa085a80415-0
@@ -32,3 +34,10 @@ export function APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1f
 
 APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_1_Image.colorStats = {
+    averageColor: Color.fromHex('#1b252d'),
+    lightestColor: Color.fromHex('#cce3ef'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#3c3d46'),
+} satisfies IImageColorStats;

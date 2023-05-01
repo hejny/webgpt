@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_simple_graphic_of_a_digital_9ceb7010_937f_40e5_8937_9711b409e333_0_1 from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a simple graphic of a digital  9ceb7010-937f-40e5-8937-9711b409e333-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379
 
 AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_1_Image.colorStats = {
+    averageColor: Color.fromHex('#344f4f'),
+    lightestColor: Color.fromHex('#e5faf0'),
+    darkestColor: Color.fromHex('#00010d'),
+    mostFrequentColor: Color.fromHex('#1c2e35'),
+    leastFrequentColor: Color.fromHex('#17353e'),
+} satisfies IImageColorStats;

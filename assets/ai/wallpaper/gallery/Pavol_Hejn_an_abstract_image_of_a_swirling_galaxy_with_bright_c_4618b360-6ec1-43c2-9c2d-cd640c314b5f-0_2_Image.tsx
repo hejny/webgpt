@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360_6ec1_43c2_9c2d_cd640c314b5f_0_2 from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360-6ec1-43c2-9c2d-cd640c314b5f-0_2.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360-6ec1-43c2-9c2d-cd640c314b5f-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract image of a swirling galaxy with bright c 4618b360-6ec1-43c2-9c2d-cd640c314b5f-0
@@ -32,3 +34,10 @@ export function AnAbstractImageOfASwirlingGalaxyWithBrightC4618b3606ec143c29c2dC
 
 AnAbstractImageOfASwirlingGalaxyWithBrightC4618b3606ec143c29c2dCd640c314b5f0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractImageOfASwirlingGalaxyWithBrightC4618b3606ec143c29c2dCd640c314b5f0_2_Image.colorStats = {
+    averageColor: Color.fromHex('#312b33'),
+    lightestColor: Color.fromHex('#faf8e9'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#09090d'),
+    leastFrequentColor: Color.fromHex('#240f21'),
+} satisfies IImageColorStats;

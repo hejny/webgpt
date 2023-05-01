@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45_70e4_41aa_be2c_290f518aa5f7_0_2 from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.png';
 import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital landscape with geometric shapes and neon c e41c5a45-70e4-41aa-be2c-290f518aa5f7-0
@@ -32,3 +34,10 @@ export function ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c
 
 ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.colorStats = {
+    averageColor: Color.fromHex('#5f2457'),
+    lightestColor: Color.fromHex('#f0d698'),
+    darkestColor: Color.fromHex('#0a042f'),
+    mostFrequentColor: Color.fromHex('#031d37'),
+    leastFrequentColor: Color.fromHex('#053e66'),
+} satisfies IImageColorStats;

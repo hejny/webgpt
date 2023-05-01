@@ -11,6 +11,8 @@ import Image from 'next/image';
 import blue_whale_as_favicon_41f877b6_57e1_4958_a536_5b78de6b22fb_0_3 from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_3.png';
 import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of blue whale as favicon 41f877b6-57e1-4958-a536-5b78de6b22fb-0
@@ -31,3 +33,10 @@ export function BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_3_Image() {
 }
 
 BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_3_Image.metadata = metadata satisfies IWallpaperMetadata;
+BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_3_Image.colorStats = {
+    averageColor: Color.fromHex('#a9cad5'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#001941'),
+    mostFrequentColor: Color.fromHex('#ffffff'),
+    leastFrequentColor: Color.fromHex('#d0d6df'),
+} satisfies IImageColorStats;

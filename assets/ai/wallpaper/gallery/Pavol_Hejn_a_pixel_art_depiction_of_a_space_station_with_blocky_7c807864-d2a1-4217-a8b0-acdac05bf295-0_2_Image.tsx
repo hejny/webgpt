@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864_d2a1_4217_a8b0_acdac05bf295_0_2 from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_2.png';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a pixel art depiction of a space station with blocky 7c807864-d2a1-4217-a8b0-acdac05bf295-0
@@ -32,3 +34,10 @@ export function APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0A
 
 APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_2_Image.colorStats = {
+    averageColor: Color.fromHex('#2b3741'),
+    lightestColor: Color.fromHex('#f7ffff'),
+    darkestColor: Color.fromHex('#030000'),
+    mostFrequentColor: Color.fromHex('#0a121f'),
+    leastFrequentColor: Color.fromHex('#152128'),
+} satisfies IImageColorStats;

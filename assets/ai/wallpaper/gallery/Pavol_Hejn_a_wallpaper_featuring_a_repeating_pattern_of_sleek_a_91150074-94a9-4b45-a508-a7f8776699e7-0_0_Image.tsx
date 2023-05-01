@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074_94a9_4b45_a508_a7f8776699e7_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a repeating pattern of sleek a 91150074-94a9-4b45-a508-a7f8776699e7-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508
 
 AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.colorStats = {
+    averageColor: Color.fromHex('#825d76'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#2e2f43'),
+    leastFrequentColor: Color.fromHex('#5a5e95'),
+} satisfies IImageColorStats;

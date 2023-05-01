@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_stylized_illustration_of_a_d_6f5c971b_6b00_4986_b9c7_21175b40e847_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_d_6f5c971b-6b00-4986-b9c7-21175b40e847-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_d_6f5c971b-6b00-4986-b9c7-21175b40e847-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a stylized illustration of a d 6f5c971b-6b00-4986-b9c7-21175b40e847-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingAStylizedIllustrationOfAD6f5c971b6b004986B9c7
 
 AWallpaperFeaturingAStylizedIllustrationOfAD6f5c971b6b004986B9c721175b40e8470_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingAStylizedIllustrationOfAD6f5c971b6b004986B9c721175b40e8470_0_Image.colorStats = {
+    averageColor: Color.fromHex('#394342'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#020509'),
+    leastFrequentColor: Color.fromHex('#323238'),
+} satisfies IImageColorStats;

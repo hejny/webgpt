@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_retro_poster_style_image_of_a_spaceship_in_orbit_a_e6fcc2a4_c663_4772_b9af_c99ce82f6c9d_0_2 from './Pavol_Hejn_a_retro_poster_style_image_of_a_spaceship_in_orbit_a_e6fcc2a4-c663-4772-b9af-c99ce82f6c9d-0_2.png';
 import metadata from './Pavol_Hejn_a_retro_poster_style_image_of_a_spaceship_in_orbit_a_e6fcc2a4-c663-4772-b9af-c99ce82f6c9d-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a retro poster style image of a spaceship in orbit a e6fcc2a4-c663-4772-b9af-c99ce82f6c9d-0
@@ -32,3 +34,10 @@ export function ARetroPosterStyleImageOfASpaceshipInOrbitAE6fcc2a4C6634772B9afC9
 
 ARetroPosterStyleImageOfASpaceshipInOrbitAE6fcc2a4C6634772B9afC99ce82f6c9d0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ARetroPosterStyleImageOfASpaceshipInOrbitAE6fcc2a4C6634772B9afC99ce82f6c9d0_2_Image.colorStats = {
+    averageColor: Color.fromHex('#a1562a'),
+    lightestColor: Color.fromHex('#ffffe8'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#181418'),
+    leastFrequentColor: Color.fromHex('#ead7a4'),
+} satisfies IImageColorStats;

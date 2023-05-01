@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_wallpaper_inspired_by_the_shapes_and_col_832d43ef_8482_48ca_80fc_d747fbd4dba9_0_3 from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_832d43ef-8482-48ca-80fc-d747fbd4dba9-0_3.png';
 import metadata from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_832d43ef-8482-48ca-80fc-d747fbd4dba9-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract wallpaper inspired by the shapes and col 832d43ef-8482-48ca-80fc-d747fbd4dba9-0
@@ -32,3 +34,10 @@ export function AnAbstractWallpaperInspiredByTheShapesAndCol832d43ef848248ca80fc
 
 AnAbstractWallpaperInspiredByTheShapesAndCol832d43ef848248ca80fcD747fbd4dba90_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractWallpaperInspiredByTheShapesAndCol832d43ef848248ca80fcD747fbd4dba90_3_Image.colorStats = {
+    averageColor: Color.fromHex('#4a464d'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0b1827'),
+    leastFrequentColor: Color.fromHex('#3f5c5f'),
+} satisfies IImageColorStats;

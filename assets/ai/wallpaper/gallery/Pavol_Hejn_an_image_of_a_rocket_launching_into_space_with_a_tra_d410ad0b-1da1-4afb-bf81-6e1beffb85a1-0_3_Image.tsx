@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b_1da1_4afb_bf81_6e1beffb85a1_0_3 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.png';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an image of a rocket launching into space with a tra d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0
@@ -32,3 +34,10 @@ export function AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e
 
 AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_3_Image.colorStats = {
+    averageColor: Color.fromHex('#493635'),
+    lightestColor: Color.fromHex('#fffff6'),
+    darkestColor: Color.fromHex('#030000'),
+    mostFrequentColor: Color.fromHex('#080a1f'),
+    leastFrequentColor: Color.fromHex('#050520'),
+} satisfies IImageColorStats;

@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_illustration_of_a_city_on_a_distant_planet_719bc302_0491_47aa_8bd4_986ff45dec13_0_1 from './Pavol_Hejn_a_digital_illustration_of_a_city_on_a_distant_planet_719bc302-0491-47aa-8bd4-986ff45dec13-0_1.png';
 import metadata from './Pavol_Hejn_a_digital_illustration_of_a_city_on_a_distant_planet_719bc302-0491-47aa-8bd4-986ff45dec13-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital illustration of a city on a distant planet 719bc302-0491-47aa-8bd4-986ff45dec13-0
@@ -32,3 +34,10 @@ export function ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd49
 
 ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd4986ff45dec130_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd4986ff45dec130_1_Image.colorStats = {
+    averageColor: Color.fromHex('#756963'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0e0c10'),
+    leastFrequentColor: Color.fromHex('#aa9e9d'),
+} satisfies IImageColorStats;

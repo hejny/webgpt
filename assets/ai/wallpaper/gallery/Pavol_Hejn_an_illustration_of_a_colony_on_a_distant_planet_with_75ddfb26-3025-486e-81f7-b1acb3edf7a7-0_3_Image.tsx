@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26_3025_486e_81f7_b1acb3edf7a7_0_3 from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_3.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a colony on a distant planet with 75ddfb26-3025-486e-81f7-b1acb3edf7a7-0
@@ -32,3 +34,10 @@ export function AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B
 
 AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B1acb3edf7a70_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B1acb3edf7a70_3_Image.colorStats = {
+    averageColor: Color.fromHex('#775f59'),
+    lightestColor: Color.fromHex('#fffff9'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#668687'),
+    leastFrequentColor: Color.fromHex('#533135'),
+} satisfies IImageColorStats;

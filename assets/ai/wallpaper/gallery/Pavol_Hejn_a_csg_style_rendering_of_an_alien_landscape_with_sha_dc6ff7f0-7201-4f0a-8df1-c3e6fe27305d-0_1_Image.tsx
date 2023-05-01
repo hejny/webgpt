@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0_7201_4f0a_8df1_c3e6fe27305d_0_1 from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0_1.png';
 import metadata from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a csg style rendering of an alien landscape with sha dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0
@@ -32,3 +34,10 @@ export function ACsgStyleRenderingOfAnAlienLandscapeWithShaDc6ff7f072014f0a8df1C
 
 ACsgStyleRenderingOfAnAlienLandscapeWithShaDc6ff7f072014f0a8df1C3e6fe27305d0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ACsgStyleRenderingOfAnAlienLandscapeWithShaDc6ff7f072014f0a8df1C3e6fe27305d0_1_Image.colorStats = {
+    averageColor: Color.fromHex('#8d4f5b'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#140007'),
+    mostFrequentColor: Color.fromHex('#2a0912'),
+    leastFrequentColor: Color.fromHex('#2d0615'),
+} satisfies IImageColorStats;

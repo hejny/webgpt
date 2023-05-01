@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_surrealist_inspired_wallpaper_with_floating_objectde16b73_6889_4692_aa11_0fce4396fc3a_0_2_2 from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_2.png';
 import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a surrealist inspired wallpaper with floating objectde16b73-6889-4692-aa11-0fce4396fc3a-0 2
@@ -32,3 +34,10 @@ export function ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa1
 
 ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa110fce4396fc3a02_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa110fce4396fc3a02_2_Image.colorStats = {
+    averageColor: Color.fromHex('#746a57'),
+    lightestColor: Color.fromHex('#fff1da'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#4f564f'),
+    leastFrequentColor: Color.fromHex('#3b3a35'),
+} satisfies IImageColorStats;

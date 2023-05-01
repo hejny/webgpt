@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_circuit_board_pattern_in_shades_of_blue_65aa5857_9bfb_4227_b358_54ae102a5c99_0_0 from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_0.png';
 import metadata from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract circuit board pattern in shades of blue  65aa5857-9bfb-4227-b358-54ae102a5c99-0
@@ -32,3 +34,10 @@ export function AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B3585
 
 AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_Image.colorStats = {
+    averageColor: Color.fromHex('#263e4f'),
+    lightestColor: Color.fromHex('#fbffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#080f18'),
+    leastFrequentColor: Color.fromHex('#071f3a'),
+} satisfies IImageColorStats;

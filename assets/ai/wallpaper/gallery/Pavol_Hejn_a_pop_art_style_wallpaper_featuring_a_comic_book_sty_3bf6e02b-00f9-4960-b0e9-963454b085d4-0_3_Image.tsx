@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_pop_art_style_wallpaper_featuring_a_comic_book_stybf6e02b_00f9_4960_b0e9_963454b085d4_0_3_3 from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_3.png';
 import metadata from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a pop art style wallpaper featuring a comic book stybf6e02b-00f9-4960-b0e9-963454b085d4-0 3
@@ -32,3 +34,10 @@ export function APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e996
 
 APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.colorStats = {
+    averageColor: Color.fromHex('#775b44'),
+    lightestColor: Color.fromHex('#fffffa'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#010101'),
+    leastFrequentColor: Color.fromHex('#d74d3e'),
+} satisfies IImageColorStats;

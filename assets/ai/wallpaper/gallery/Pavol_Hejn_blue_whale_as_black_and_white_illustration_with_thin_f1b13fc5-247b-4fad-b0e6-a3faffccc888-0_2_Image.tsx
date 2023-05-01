@@ -11,6 +11,8 @@ import Image from 'next/image';
 import blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5_247b_4fad_b0e6_a3faffccc888_0_2 from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_2.png';
 import metadata from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of blue whale as black and white illustration with thin f1b13fc5-247b-4fad-b0e6-a3faffccc888-0
@@ -32,3 +34,10 @@ export function BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6
 
 BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6A3faffccc8880_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6A3faffccc8880_2_Image.colorStats = {
+    averageColor: Color.fromHex('#e0e1e0'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#fdfefd'),
+    leastFrequentColor: Color.fromHex('#090908'),
+} satisfies IImageColorStats;

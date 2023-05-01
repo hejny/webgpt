@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a_53a9_44ed_8f3e_89aa7e7919e9_0_2 from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_2.png';
 import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a vintage style travel poster of a distant planet wi eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0
@@ -32,3 +34,10 @@ export function AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e8
 
 AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e89aa7e7919e90_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e89aa7e7919e90_2_Image.colorStats = {
+    averageColor: Color.fromHex('#b0815d'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#2c333b'),
+    leastFrequentColor: Color.fromHex('#e5d29d'),
+} satisfies IImageColorStats;

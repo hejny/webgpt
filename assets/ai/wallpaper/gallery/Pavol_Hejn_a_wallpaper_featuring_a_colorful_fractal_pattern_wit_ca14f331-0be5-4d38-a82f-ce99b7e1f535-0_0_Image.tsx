@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331_0be5_4d38_a82f_ce99b7e1f535_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a colorful fractal pattern wit ca14f331-0be5-4d38-a82f-ce99b7e1f535-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82
 
 AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82fCe99b7e1f5350_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82fCe99b7e1f5350_0_Image.colorStats = {
+    averageColor: Color.fromHex('#423228'),
+    lightestColor: Color.fromHex('#fffa51'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0e1e26'),
+    leastFrequentColor: Color.fromHex('#231f0b'),
+} satisfies IImageColorStats;

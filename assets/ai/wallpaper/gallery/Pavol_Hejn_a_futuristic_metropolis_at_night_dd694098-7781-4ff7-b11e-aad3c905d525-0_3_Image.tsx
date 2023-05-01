@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_futuristic_metropolis_at_night_dd694098_7781_4ff7_b11e_aad3c905d525_0_3 from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_3.png';
 import metadata from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a futuristic metropolis at night dd694098-7781-4ff7-b11e-aad3c905d525-0
@@ -31,3 +33,10 @@ export function AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_
 }
 
 AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.metadata = metadata satisfies IWallpaperMetadata;
+AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.colorStats = {
+    averageColor: Color.fromHex('#273348'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#0e192f'),
+    leastFrequentColor: Color.fromHex('#52778e'),
+} satisfies IImageColorStats;

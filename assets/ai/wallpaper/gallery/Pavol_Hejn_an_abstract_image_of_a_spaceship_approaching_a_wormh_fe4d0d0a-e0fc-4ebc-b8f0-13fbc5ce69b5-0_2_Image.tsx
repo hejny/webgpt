@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a_e0fc_4ebc_b8f0_13fbc5ce69b5_0_2 from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_2.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract image of a spaceship approaching a wormh fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0
@@ -32,3 +34,10 @@ export function AnAbstractImageOfASpaceshipApproachingAWormhFe4d0d0aE0fc4ebcB8f0
 
 AnAbstractImageOfASpaceshipApproachingAWormhFe4d0d0aE0fc4ebcB8f013fbc5ce69b50_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractImageOfASpaceshipApproachingAWormhFe4d0d0aE0fc4ebcB8f013fbc5ce69b50_2_Image.colorStats = {
+    averageColor: Color.fromHex('#70453b'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#032837'),
+    leastFrequentColor: Color.fromHex('#1a2d28'),
+} satisfies IImageColorStats;

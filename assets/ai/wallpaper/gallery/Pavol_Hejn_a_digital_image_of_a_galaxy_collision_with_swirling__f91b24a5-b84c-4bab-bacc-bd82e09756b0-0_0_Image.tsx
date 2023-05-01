@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_image_of_a_galaxy_collision_with_swirling_f91b24a5_b84c_4bab_bacc_bd82e09756b0_0_0 from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_0.png';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital image of a galaxy collision with swirling  f91b24a5-b84c-4bab-bacc-bd82e09756b0-0
@@ -32,3 +34,10 @@ export function ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccB
 
 ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_0_Image.colorStats = {
+    averageColor: Color.fromHex('#473c37'),
+    lightestColor: Color.fromHex('#fffcff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#040e17'),
+    leastFrequentColor: Color.fromHex('#010509'),
+} satisfies IImageColorStats;

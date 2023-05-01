@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa_b449_4617_b8dc_c354ad881a09_0_2 from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_2.png';
 import metadata from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a photograph of a starry night sky with the milky wa ace658aa-b449-4617-b8dc-c354ad881a09-0
@@ -32,3 +34,10 @@ export function APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC3
 
 APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_2_Image.colorStats = {
+    averageColor: Color.fromHex('#2f2b29'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#040404'),
+    leastFrequentColor: Color.fromHex('#4e5963'),
+} satisfies IImageColorStats;

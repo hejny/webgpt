@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c_3bc5_41d1_984f_e15e14713029_0_0 from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c-3bc5-41d1-984f-e15e14713029-0_0.png';
 import metadata from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c-3bc5-41d1-984f-e15e14713029-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a minimalist wallpaper with a single line drawing of 3d15429c-3bc5-41d1-984f-e15e14713029-0
@@ -32,3 +34,10 @@ export function AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984f
 
 AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984fE15e147130290_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984fE15e147130290_0_Image.colorStats = {
+    averageColor: Color.fromHex('#b35d55'),
+    lightestColor: Color.fromHex('#fffde3'),
+    darkestColor: Color.fromHex('#2b0000'),
+    mostFrequentColor: Color.fromHex('#e94630'),
+    leastFrequentColor: Color.fromHex('#c6433c'),
+} satisfies IImageColorStats;

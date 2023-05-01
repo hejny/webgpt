@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_image_of_a_rocket_taking_off_from_earth_with_a_fi_66231969_2f32_46cd_bcc0_14ae53a16cb9_0_1 from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_66231969-2f32-46cd-bcc0-14ae53a16cb9-0_1.png';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_66231969-2f32-46cd-bcc0-14ae53a16cb9-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an image of a rocket taking off from earth with a fi 66231969-2f32-46cd-bcc0-14ae53a16cb9-0
@@ -32,3 +34,10 @@ export function AnImageOfARocketTakingOffFromEarthWithAFi662319692f3246cdBcc014a
 
 AnImageOfARocketTakingOffFromEarthWithAFi662319692f3246cdBcc014ae53a16cb90_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnImageOfARocketTakingOffFromEarthWithAFi662319692f3246cdBcc014ae53a16cb90_1_Image.colorStats = {
+    averageColor: Color.fromHex('#7f7c7b'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#04050e'),
+    mostFrequentColor: Color.fromHex('#ffffff'),
+    leastFrequentColor: Color.fromHex('#dddeda'),
+} satisfies IImageColorStats;

@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_illustration_of_a_futuristic_space_station_orbiti2472cd4_870b_4636_8bb9_16f340674736_0_1_1 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_12472cd4-870b-4636-8bb9-16f340674736-0_1.png';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_12472cd4-870b-4636-8bb9-16f340674736-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a futuristic space station orbiti2472cd4-870b-4636-8bb9-16f340674736-0 1
@@ -32,3 +34,10 @@ export function AnIllustrationOfAFuturisticSpaceStationOrbiti2472cd4870b46368bb9
 
 AnIllustrationOfAFuturisticSpaceStationOrbiti2472cd4870b46368bb916f34067473601_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnIllustrationOfAFuturisticSpaceStationOrbiti2472cd4870b46368bb916f34067473601_1_Image.colorStats = {
+    averageColor: Color.fromHex('#3d3c40'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#1b191f'),
+    leastFrequentColor: Color.fromHex('#22282c'),
+} satisfies IImageColorStats;

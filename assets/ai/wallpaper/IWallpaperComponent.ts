@@ -1,5 +1,8 @@
+import { IImageColorStats } from '../../../src/utils/image/computeImageColorStats';
+
 export interface IWallpaperComponent {
     metadata: IWallpaperMetadata;
+    colorStats: IImageColorStats;
     (): JSX.Element;
 }
 

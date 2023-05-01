@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_featuring_a_repeating_pattern_of_simple_1156c696_5ef2_4de6_9975_40d4f96ceb95_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a repeating pattern of simple  1156c696-5ef2-4de6-9975-40d4f96ceb95-0
@@ -32,3 +34,10 @@ export function AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de69975
 
 AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_3_Image.colorStats = {
+    averageColor: Color.fromHex('#aeaaa3'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#e1dcd5'),
+    leastFrequentColor: Color.fromHex('#e2d9cf'),
+} satisfies IImageColorStats;

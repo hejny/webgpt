@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_black_and_white_outline_of_an_astronaut_s_helmet_wd05f9b8_c57e_41fe_8011_fed59d7f1ac2_0_3_3 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_3.png';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a black and white outline of an astronaut s helmet wd05f9b8-c57e-41fe-8011-fed59d7f1ac2-0 3
@@ -32,3 +34,10 @@ export function ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed
 
 ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed59d7f1ac203_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed59d7f1ac203_3_Image.colorStats = {
+    averageColor: Color.fromHex('#2c2b2a'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#010000'),
+    leastFrequentColor: Color.fromHex('#000203'),
+} satisfies IImageColorStats;

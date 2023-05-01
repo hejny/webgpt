@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_image_of_a_comet_passing_through_the_sol742fafc_af96_4f65_a0bc_7090ed84bc40_0_2_2 from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_2.png';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_2.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract image of a comet passing through the sol742fafc-af96-4f65-a0bc-7090ed84bc40-0 2
@@ -32,3 +34,10 @@ export function AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc70
 
 AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_Image.colorStats = {
+    averageColor: Color.fromHex('#121515'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#010611'),
+} satisfies IImageColorStats;

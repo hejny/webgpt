@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb_ab5a_4610_b64f_1f62dda9dcb5_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_3.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a simple graphic of a cyborg s face 5455febb-ab5a-4610-b64f-1f62dda9dcb5-0
@@ -32,3 +34,10 @@ export function AWallpaperWithASimpleGraphicOfACyborgSFace5455febbAb5a4610B64f1f
 
 AWallpaperWithASimpleGraphicOfACyborgSFace5455febbAb5a4610B64f1f62dda9dcb50_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithASimpleGraphicOfACyborgSFace5455febbAb5a4610B64f1f62dda9dcb50_3_Image.colorStats = {
+    averageColor: Color.fromHex('#151515'),
+    lightestColor: Color.fromHex('#faffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#010101'),
+    leastFrequentColor: Color.fromHex('#393134'),
+} satisfies IImageColorStats;

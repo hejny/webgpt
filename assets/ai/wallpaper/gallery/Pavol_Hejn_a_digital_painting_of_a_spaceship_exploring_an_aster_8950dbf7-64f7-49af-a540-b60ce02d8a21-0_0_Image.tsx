@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7_64f7_49af_a540_b60ce02d8a21_0_0 from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_0.png';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital painting of a spaceship exploring an aster 8950dbf7-64f7-49af-a540-b60ce02d8a21-0
@@ -32,3 +34,10 @@ export function ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540
 
 ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.colorStats = {
+    averageColor: Color.fromHex('#2a2f3c'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000005'),
+    mostFrequentColor: Color.fromHex('#162130'),
+    leastFrequentColor: Color.fromHex('#212f3b'),
+} satisfies IImageColorStats;

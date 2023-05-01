@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a_a091_4d76_9e42_d16de5b0c620_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of neon colored 391ec65a-a091-4d76-9e42-d16de5b0c620-0
@@ -32,3 +34,10 @@ export function AWallpaperWithARepeatingPatternOfNeonColored391ec65aA0914d769e42
 
 AWallpaperWithARepeatingPatternOfNeonColored391ec65aA0914d769e42D16de5b0c6200_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithARepeatingPatternOfNeonColored391ec65aA0914d769e42D16de5b0c6200_1_Image.colorStats = {
+    averageColor: Color.fromHex('#100c0c'),
+    lightestColor: Color.fromHex('#bbffe9'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#481207'),
+} satisfies IImageColorStats;

@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80_6b71_483f_b147_5ec001f713f5_0_1 from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80-6b71-483f-b147-5ec001f713f5-0_1.png';
 import metadata from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80-6b71-483f-b147-5ec001f713f5-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a photograph of an astronaut standing on the surface 31d00e80-6b71-483f-b147-5ec001f713f5-0
@@ -32,3 +34,10 @@ export function APhotographOfAnAstronautStandingOnTheSurface31d00e806b71483fB147
 
 APhotographOfAnAstronautStandingOnTheSurface31d00e806b71483fB1475ec001f713f50_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APhotographOfAnAstronautStandingOnTheSurface31d00e806b71483fB1475ec001f713f50_1_Image.colorStats = {
+    averageColor: Color.fromHex('#323232'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#000000'),
+    leastFrequentColor: Color.fromHex('#021520'),
+} satisfies IImageColorStats;

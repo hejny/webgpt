@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_digital_illustration_of_a_spaceship_traveling_thro_a6425337_7d46_4a4f_ae01_a169331d952d_0_0 from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_0.png';
 import metadata from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a digital illustration of a spaceship traveling thro a6425337-7d46-4a4f-ae01-a169331d952d-0
@@ -32,3 +34,10 @@ export function ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe0
 
 ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_0_Image.colorStats = {
+    averageColor: Color.fromHex('#242935'),
+    lightestColor: Color.fromHex('#ffffff'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#020a19'),
+    leastFrequentColor: Color.fromHex('#38464c'),
+} satisfies IImageColorStats;

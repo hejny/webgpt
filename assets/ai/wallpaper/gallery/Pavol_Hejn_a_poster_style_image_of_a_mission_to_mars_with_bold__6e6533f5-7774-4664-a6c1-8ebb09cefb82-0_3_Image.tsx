@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_poster_style_image_of_a_mission_to_mars_with_bold_6e6533f5_7774_4664_a6c1_8ebb09cefb82_0_3 from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_3.png';
 import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a poster style image of a mission to mars with bold  6e6533f5-7774-4664-a6c1-8ebb09cefb82-0
@@ -32,3 +34,10 @@ export function APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18eb
 
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Image.colorStats = {
+    averageColor: Color.fromHex('#773e37'),
+    lightestColor: Color.fromHex('#fffff6'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#01111f'),
+    leastFrequentColor: Color.fromHex('#e34b38'),
+} satisfies IImageColorStats;

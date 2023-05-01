@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_minimalist_graphic_of_a_futuristic_workspace_with_e06eece0_8eb1_4104_a195_a3f2518607d1_0_0 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_0.png';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_0.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a minimalist graphic of a futuristic workspace with  e06eece0-8eb1-4104-a195-a3f2518607d1-0
@@ -32,3 +34,10 @@ export function AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195
 
 AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_0_Image.colorStats = {
+    averageColor: Color.fromHex('#285783'),
+    lightestColor: Color.fromHex('#d4faff'),
+    darkestColor: Color.fromHex('#0a0339'),
+    mostFrequentColor: Color.fromHex('#010f38'),
+    leastFrequentColor: Color.fromHex('#021246'),
+} satisfies IImageColorStats;

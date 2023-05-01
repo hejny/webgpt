@@ -11,6 +11,8 @@ import Image from 'next/image';
 import a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719_b4e3_42cd_8adf_dd0bc66be8e7_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_1.png';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_1.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a simple graphic of an abstract cir b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0
@@ -32,3 +34,10 @@ export function AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfD
 
 AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_1_Image.colorStats = {
+    averageColor: Color.fromHex('#053039'),
+    lightestColor: Color.fromHex('#a5ffee'),
+    darkestColor: Color.fromHex('#000307'),
+    mostFrequentColor: Color.fromHex('#02151c'),
+    leastFrequentColor: Color.fromHex('#0f1c20'),
+} satisfies IImageColorStats;

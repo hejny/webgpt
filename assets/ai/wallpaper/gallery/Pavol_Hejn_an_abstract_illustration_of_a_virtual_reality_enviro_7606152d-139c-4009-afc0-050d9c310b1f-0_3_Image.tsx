@@ -11,6 +11,8 @@ import Image from 'next/image';
 import an_abstract_illustration_of_a_virtual_reality_enviro_7606152d_139c_4009_afc0_050d9c310b1f_0_3 from './Pavol_Hejn_an_abstract_illustration_of_a_virtual_reality_enviro_7606152d-139c-4009-afc0-050d9c310b1f-0_3.png';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_virtual_reality_enviro_7606152d-139c-4009-afc0-050d9c310b1f-0_3.json';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an abstract illustration of a virtual reality enviro 7606152d-139c-4009-afc0-050d9c310b1f-0
@@ -32,3 +34,10 @@ export function AnAbstractIllustrationOfAVirtualRealityEnviro7606152d139c4009Afc
 
 AnAbstractIllustrationOfAVirtualRealityEnviro7606152d139c4009Afc0050d9c310b1f0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
+AnAbstractIllustrationOfAVirtualRealityEnviro7606152d139c4009Afc0050d9c310b1f0_3_Image.colorStats = {
+    averageColor: Color.fromHex('#152a4f'),
+    lightestColor: Color.fromHex('#fffffd'),
+    darkestColor: Color.fromHex('#000000'),
+    mostFrequentColor: Color.fromHex('#020718'),
+    leastFrequentColor: Color.fromHex('#010118'),
+} satisfies IImageColorStats;
