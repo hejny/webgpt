@@ -169,7 +169,7 @@ export class Color {
         throw new Error(`Can not create a new Color instance from supposed rgba formatted string "${rgba}".`);
     }
 
-    private constructor(
+    public constructor(
         readonly red: number,
         readonly green: number,
         readonly blue: number,

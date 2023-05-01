@@ -7,6 +7,8 @@ import glob from 'glob-promise';
 import { normalizeTo_camelCase, normalizeTo_snake_case } from 'n12';
 import { capitalize } from 'n12/dist/capitalize';
 import { basename, dirname, join, relative } from 'path';
+import { computeImageColorStats } from '../../src/utils/image/computeImageColorStats';
+import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { generateImport } from '../utils/generateImport';
@@ -93,6 +95,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         wallpapers.push({ entityName: componentName, entityPath: wallpaperFilePath });
 
+        const wallpaperColorStats = computeImageColorStats(await createImageInNode(wallpaperPath));
+
         const wallpaperFileContent = await prettify(`
 
             /**
@@ -108,6 +112,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             import ${entityName} from '${wallpaperImportPath}';
             import metadata from '${metadataImportPath}';
             import { IWallpaperMetadata } from '../IWallpaperComponent';
+            import { IImageColorStats } from '../../src/utils/image/computeImageColorStats';
 
             /**
              * Image of ${title}
@@ -128,6 +133,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             }
 
             ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
+            ${componentName}.colorStats = ${JSON.stringify(wallpaperColorStats, null, 4)} satisfies IImageColorStats;
         `);
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf-8');
