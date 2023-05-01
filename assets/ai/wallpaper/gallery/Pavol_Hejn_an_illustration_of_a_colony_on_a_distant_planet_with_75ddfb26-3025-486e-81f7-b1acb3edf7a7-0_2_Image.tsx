@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26_3025_486e_81f7_b1acb3edf7a7_0_2 from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_2.png';
-import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_2.json';
+import an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26_3025_486e_81f7_b1acb3edf7a7_0_2 from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_2.png';
 
 /**
  * Image of an illustration of a colony on a distant planet with 75ddfb26-3025-486e-81f7-b1acb3edf7a7-0

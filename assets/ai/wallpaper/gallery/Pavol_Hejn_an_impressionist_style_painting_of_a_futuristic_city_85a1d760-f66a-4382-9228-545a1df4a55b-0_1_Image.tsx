@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_impressionist_style_painting_of_a_futuristic_city_85a1d760_f66a_4382_9228_545a1df4a55b_0_1 from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.png';
-import metadata from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.json';
+import an_impressionist_style_painting_of_a_futuristic_city_85a1d760_f66a_4382_9228_545a1df4a55b_0_1 from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.png';
 
 /**
  * Image of an impressionist style painting of a futuristic city 85a1d760-f66a-4382-9228-545a1df4a55b-0

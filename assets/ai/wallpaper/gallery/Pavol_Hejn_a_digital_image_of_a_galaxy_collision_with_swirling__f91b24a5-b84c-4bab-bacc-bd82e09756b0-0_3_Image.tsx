@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_digital_image_of_a_galaxy_collision_with_swirling_f91b24a5_b84c_4bab_bacc_bd82e09756b0_0_3 from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.png';
-import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.json';
+import a_digital_image_of_a_galaxy_collision_with_swirling_f91b24a5_b84c_4bab_bacc_bd82e09756b0_0_3 from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.png';
 
 /**
  * Image of a digital image of a galaxy collision with swirling  f91b24a5-b84c-4bab-bacc-bd82e09756b0-0

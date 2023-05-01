@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa_c043_4909_8d9a_bd9b4f7f0e4b_0_0 from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_0.png';
-import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_0.json';
+import a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa_c043_4909_8d9a_bd9b4f7f0e4b_0_0 from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_0.png';
 
 /**
  * Image of a digital image of a black hole with the distorted s c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0

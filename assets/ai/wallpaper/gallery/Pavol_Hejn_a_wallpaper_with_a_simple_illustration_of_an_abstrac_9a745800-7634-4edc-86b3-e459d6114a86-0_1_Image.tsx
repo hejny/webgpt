@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800_7634_4edc_86b3_e459d6114a86_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800-7634-4edc-86b3-e459d6114a86-0_1.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800-7634-4edc-86b3-e459d6114a86-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800-7634-4edc-86b3-e459d6114a86-0_1.json';
+import a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800_7634_4edc_86b3_e459d6114a86_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_9a745800-7634-4edc-86b3-e459d6114a86-0_1.png';
 
 /**
  * Image of a wallpaper with a simple illustration of an abstrac 9a745800-7634-4edc-86b3-e459d6114a86-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_interpretation_of_a_thunderstorm_74add395_e19e_43f0_a126_9006ac38a935_0_0 from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_0.png';
-import metadata from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_0.json';
+import an_abstract_interpretation_of_a_thunderstorm_74add395_e19e_43f0_a126_9006ac38a935_0_0 from './Pavol_Hejn_an_abstract_interpretation_of_a_thunderstorm_74add395-e19e-43f0-a126-9006ac38a935-0_0.png';
 
 /**
  * Image of an abstract interpretation of a thunderstorm 74add395-e19e-43f0-a126-9006ac38a935-0

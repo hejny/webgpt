@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99_5df9_4375_a4d4_04f5bdf41f29_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99-5df9-4375-a4d4-04f5bdf41f29-0_0.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99-5df9-4375-a4d4-04f5bdf41f29-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99-5df9-4375-a4d4-04f5bdf41f29-0_0.json';
+import a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99_5df9_4375_a4d4_04f5bdf41f29_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_347e9c99-5df9-4375-a4d4-04f5bdf41f29-0_0.png';
 
 /**
  * Image of a wallpaper featuring a digital rendering of a quant 347e9c99-5df9-4375-a4d4-04f5bdf41f29-0
