@@ -95,21 +95,29 @@ export class Color {
      * @returns Color object
      */
     public static fromHex(hex: string_color): Color {
+        const hexOriginal = hex;
+
         if (hex.startsWith('#')) {
             hex = hex.substring(1);
         }
 
-        if (hex.length === 6) {
-            return Color.fromHex6(hex);
-        } else if (hex.length === 3) {
+        if (hex.length === 3) {
             return Color.fromHex3(hex);
         }
 
-        throw new Error(`Can not parse color from hex string "${hex}"`);
+        if (hex.length === 6) {
+            return Color.fromHex6(hex);
+        }
+
+        if (hex.length === 8) {
+            return Color.fromHex8(hex);
+        }
+
+        throw new Error(`Can not parse color from hex string "${hexOriginal}"`);
     }
 
     /**
-     * Creates a new Color instance from color in hex format with 3 color digits
+     * Creates a new Color instance from color in hex format with 3 color digits (without alpha chanell)
      *
      * @param color in hex for example 09d
      * @returns Color object
@@ -122,7 +130,7 @@ export class Color {
     }
 
     /**
-     * Creates a new Color instance from color in hex format with 6 color digits
+     * Creates a new Color instance from color in hex format with 6 color digits (without alpha chanell)
      *
      * @param color in hex for example 009edd
      * @returns Color object
@@ -132,6 +140,20 @@ export class Color {
         const g = parseInt(hex.substr(2, 2), 16);
         const b = parseInt(hex.substr(4, 2), 16);
         return new Color(r, g, b);
+    }
+
+    /**
+     * Creates a new Color instance from color in hex format with 8 color digits (with alpha chanell)
+     *
+     * @param color in hex for example 009edd
+     * @returns Color object
+     */
+    private static fromHex8(hex: string_color): Color {
+        const r = parseInt(hex.substr(0, 2), 16);
+        const g = parseInt(hex.substr(2, 2), 16);
+        const b = parseInt(hex.substr(4, 2), 16);
+        const a = parseInt(hex.substr(6, 2), 16);
+        return new Color(r, g, b, a);
     }
 
     /**
@@ -169,21 +191,52 @@ export class Color {
         throw new Error(`Can not create a new Color instance from supposed rgba formatted string "${rgba}".`);
     }
 
+    private static checkChanellValue(chanellName: string, value: number) {
+        if (typeof value !== 'number') {
+            throw new Error(`${chanellName} chanell value is not number but ${typeof value}`);
+        }
+        if (isNaN(value)) {
+            throw new Error(`${chanellName} chanell value is NaN`);
+        }
+
+        if (Math.round(value) !== value) {
+            throw new Error(`${chanellName} chanell is not whole number, it is ${value}`);
+        }
+
+        if (value < 0) {
+            throw new Error(`${chanellName} chanell is lower than 0, it is ${value}`);
+        }
+
+        if (value > 255) {
+            throw new Error(`${chanellName} chanell is grater than 255, it is ${value}`);
+        }
+    }
+
+    /**
+     * Creates new Color object
+     *
+     * Note: Consider using one of static methods like `from` or `fromString`
+     *
+     * @param red number from 0 to 255
+     * @param green number from 0 to 255
+     * @param blue number from 0 to 255
+     * @param alpha number from 0 (transparent) to 255 (opaque)
+     */
     public constructor(
         readonly red: number,
         readonly green: number,
         readonly blue: number,
-        readonly alpha: number = 1,
+        readonly alpha: number = 255,
     ) {
-        // TODO: Check range of the values and NaN - ALL values should be from 0 to 1
-        //       And also check type as Range<0.0,1.0>
-        // TODO: Probably public constructor
-        // TODO: SHould there be opacity or transparency or alpha?
+        Color.checkChanellValue('Red', red);
+        Color.checkChanellValue('Green', green);
+        Color.checkChanellValue('Blue', blue);
+        Color.checkChanellValue('Alpha', alpha);
     }
 
     public withAlpha(alpha: number): Color {
         return this.withMutation((r, g, b, a) => {
-            return [r, g, b, alpha];
+            return [r, g, b, (((a / 255) * alpha) / 255) * 255];
         });
     }
 
@@ -247,7 +300,19 @@ export class Color {
     }
 
     public toHex(): string_color {
-        if (this.alpha === 1) {
+        if (this.alpha === 255) {
+            return `#${this.red.toString(16).padStart(2, '0')}${this.green.toString(16).padStart(2, '0')}${this.blue
+                .toString(16)
+                .padStart(2, '0')}`;
+        } else {
+            return `#${this.red.toString(16).padStart(2, '0')}${this.green.toString(16).padStart(2, '0')}${this.blue
+                .toString(16)
+                .padStart(2, '0')}${this.alpha.toString(16).padStart(2, '0')}`;
+        }
+    }
+
+    public toRgb(): string_color {
+        if (this.alpha === 255) {
             return `rgb(${this.red}, ${this.green}, ${this.blue})`;
         } else {
             return `rgba(${this.red}, ${this.green}, ${this.blue}, ${this.alpha})`;
@@ -260,6 +325,7 @@ export class Color {
 }
 
 /**
+ * TODO: !!!!! Transfer back to Collboard
  * TODO: Maybe [🏌️‍♂️] change ACRY toString => (toHex) toRbg when there will be toRgb and toRgba united
  * TODO: Convert getters to methods - getters only for values
  * TODO: Write tests
