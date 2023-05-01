@@ -99,7 +99,9 @@
     font-size: 85px;
     white-space: nowrap;
 
-    text-shadow: #dec36f 0px 0px 25px /* <- [🎨] */;
+    /*
+    TODO: Implement in handwriteText
+    text-shadow: #dec36f 0px 0px 25px /* <- [🎨] */
 
     /* TODO: DRY */
     margin: 0;

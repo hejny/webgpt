@@ -36,6 +36,12 @@
             "focus": true
         },
         {
+            "name": "🧪 Test build",
+            "command": "npm run build",
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🧪🔥 Integration tests (interactive)",
             "command": "npm run test-integration-interactive",
             "onlySingle": true,

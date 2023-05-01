@@ -280,7 +280,14 @@ export class Color {
     public withMutation(
         modifier: (red: number, green: number, blue: number, opacity: number) => [number, number, number, number],
     ): Color {
-        return new Color(...modifier(this.red, this.green, this.blue, this.alpha));
+        return new Color(
+            ...(modifier(this.red, this.green, this.blue, this.alpha).map((value) => Math.round(value)) as [
+                number,
+                number,
+                number,
+                number,
+            ]),
+        );
     }
 
     public clone(): Color {

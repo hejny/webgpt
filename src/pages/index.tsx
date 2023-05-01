@@ -1,31 +1,33 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
 import { Vector } from 'xyzt';
-import { generated_wallpapers } from '../../assets/ai/wallpaper/index';
-import { IWallpaperComponent } from '../../assets/ai/wallpaper/IWallpaperComponent';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
 import { WelcomeSection } from '../sections/10-Welcome/Welcome';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
+import { useSkin } from '../utils/hooks/useSkin';
+import { useWallpaper } from '../utils/hooks/useWallpaper';
 
 export default function IndexPage({ lang }: any) {
-    let Wallpaper: IWallpaperComponent;
+    const Wallpaper = useWallpaper();
+    const skin = useSkin();
 
-    const router = useRouter();
-    const { wallpaper: wallpaperId } = router.query;
-
-    Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;
-
-    if (!Wallpaper) {
-        Wallpaper = generated_wallpapers.find(
-            (wallpaper) => wallpaper.metadata.id === '56f04b34-9209-4d6f-b465-a0682df3286e',
-        )!;
-    }
     return (
         <>
             <AppHead />
+            <>
+                {/* TODO: Util <SkinStyle/> + TODO: Allow partial ISkin*/}
+                <style>{`
+                    :root {
+                        --normal-text-color: ${skin.normalTextColor.toString()};
+                        --highlighted-text-color: ${skin.highlightedTextColor.toString()};
+                        --footer-text-color: ${skin.footerTextColor.toString()};
+                        --main-background: ${skin.mainBackground};
+                        --footer-background: ${skin.footerBackground}
+                    }
+                `}</style>
+            </>
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
