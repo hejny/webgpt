@@ -1,6 +1,9 @@
 import { Color } from '../../../utils/color/Color';
 import { loadAndRunExternalScript } from './loadAndRunExternalScript';
 
+/**
+ * @@@
+ */
 const HandwrittenStyle = {
     // TODO: !!! Name the styles
     Random: '-', // –
@@ -15,6 +18,9 @@ const HandwrittenStyle = {
     Xxxxx9: 21, // 9
 } as const;
 
+/**
+ * @@@
+ */
 interface IHandwriteTextOptions {
     text: string;
     color: Color;
@@ -25,6 +31,9 @@ interface IHandwriteTextOptions {
     svgElement: SVGElement;
 }
 
+/**
+ * @@@
+ */
 export async function handwriteText(options: IHandwriteTextOptions) {
     await loadAndRunExternalScript('/handwritten/script.js');
     await (window as any).handwriteText({

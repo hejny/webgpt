@@ -1,7 +1,13 @@
 import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
 
+/**
+ * @@@
+ */
 export class Image {
+    /**
+     * @@@
+     */
     public readonly size: Vector;
 
     /**
