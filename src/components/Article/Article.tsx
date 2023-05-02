@@ -7,6 +7,14 @@ import { normalizeDashes } from '../../utils/content/normalizeDashes';
 import { Html } from '../Html/Html';
 import styles from './Article.module.css';
 
+/**
+ * Interface for article props ⁘
+ * 
+ * @interface
+ * @property {string} content - The content of the article in markdown format
+ * @property {boolean} [isHashUsed] - Whether the article uses hash for navigation
+ * @property {boolean} [isEnhanced] - Whether the article applies additional enhancements to the markdown
+ */
 interface IArticleProps {
     /**
      * Source markdown
@@ -26,7 +34,10 @@ interface IArticleProps {
 
 
 /**
- * @@@
+ * Function component that renders an article from markdown content ⁘
+ * 
+ * @param {IArticleProps} props - The props for the component
+ * @returns {JSX.Element} - The JSX element for the article
  */
 export function Article(props: IArticleProps) {
     const { content /* [0], isHashUsed */, isEnhanced } = props;
@@ -104,6 +115,11 @@ export function Article(props: IArticleProps) {
     );
 }
 
+/**
+ * A converter instance that uses showdown and highlight extensions ⁘
+ * 
+ * @type {Converter}
+ */
 const converter = new Converter({
     extensions: [
         showdownHighlight({

@@ -5,7 +5,11 @@ import { Drawing } from './Drawing';
 
 
 /**
- * @@@
+ * Creates a drawing effect on an HTML element when the pointer enters and leaves it ⁘
+ * 
+ * @template TElement - The type of the HTML element that supports the drawing effect.
+ * @param {TElement} element - The HTML element to apply the drawing effect on.
+ * @returns {IDestroyable} - An object that can destroy the drawing effect when needed.
  */
 export function drawingEffect<TElement extends HTMLElement>(element: TElement): IDestroyable {
     let drawing: Drawing | null = null;

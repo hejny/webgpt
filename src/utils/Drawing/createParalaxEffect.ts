@@ -2,6 +2,14 @@ import { Registration } from 'destroyable';
 import { Vector } from 'xyzt';
 import { Effect } from './effect';
 
+/**
+ * An interface for defining the options of a parallax effect ⁘
+ * 
+ * @property {number} distance - The distance factor that determines how much the element moves relative to the cursor or scroll position.
+ * @property {Array<'SCROLL' | 'POINTER'>} reactOn - The events that trigger the parallax effect. Can be either 'SCROLL', 'POINTER', or both.
+ * @property {Object} [debug] - An optional object for logging debug information.
+ * @property {string} debug.tag - A tag to identify the debug messages in the console.
+ */
 interface ParalaxEffectOptions {
     distance: number;
     reactOn: Array<'SCROLL' | 'POINTER'>;
@@ -12,7 +20,11 @@ interface ParalaxEffectOptions {
 }
 
 /**
- * @@@
+ * A function that creates a parallax effect for a given HTML element ⁘
+ * 
+ * @param {ParalaxEffectOptions} options - The options for the parallax effect.
+ * @returns {Effect<TElement>} A function that applies the parallax effect to the element and returns a registration object.
+ * @template TElement
  */
 export function createParalaxEffect<TElement extends HTMLElement>(options: ParalaxEffectOptions): Effect<TElement> {
     const { distance, reactOn, debug } = options;
@@ -24,6 +36,9 @@ export function createParalaxEffect<TElement extends HTMLElement>(options: Paral
         let scrollPosition: Vector = Vector.zero();
         let pointerPosition: Vector | null = null;
 
+/**
+ * A function that updates the window and element sizes ⁘
+ */
         function resize() {
             windowSize = Vector.fromObject(window, ['innerWidth', 'innerHeight']);
             elementSize = Vector.fromObject(element.getBoundingClientRect(), ['width', 'height']);
@@ -50,6 +65,9 @@ export function createParalaxEffect<TElement extends HTMLElement>(options: Paral
 
         let cursorRelativePosition: Vector = Vector.zero();
 
+/**
+ * A function that applies the parallax effect to the element by changing its transform property ⁘
+ */
         function applyParalax() {
             // console.log(new Vector(0, window.scrollY), windowSize, new Vector(0, window.scrollY).divide(windowSize));
 

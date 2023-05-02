@@ -4,7 +4,7 @@ import { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
 
 /**
- * @@@
+ * A class that represents an image with a size and an array of pixels ⁘
  */
 export class Image {
     /**
