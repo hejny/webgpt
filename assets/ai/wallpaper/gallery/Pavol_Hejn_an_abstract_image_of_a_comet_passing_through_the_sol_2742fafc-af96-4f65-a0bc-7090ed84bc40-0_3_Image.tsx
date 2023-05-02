@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc_af96_4f65_a0bc_7090ed84bc40_0_3 from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.png';
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.json';
+import an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc_af96_4f65_a0bc_7090ed84bc40_0_3 from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.png';
 
 /**
  * Image of an abstract image of a comet passing through the sol 2742fafc-af96-4f65-a0bc-7090ed84bc40-0

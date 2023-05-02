@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c_18a8_458c_88c9_271d91a17953_0_1 from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.png';
-import metadata from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.json';
+import a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c_18a8_458c_88c9_271d91a17953_0_1 from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.png';
 
 /**
  * Image of a digital painting of a deep sea creature with tenta f9accf1c-18a8-458c-88c9-271d91a17953-0

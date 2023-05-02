@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_a_simple_graphic_of_a_digital_f3f60ff5_6f94_4407_869c_33043eb8c140_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.json';
+import a_wallpaper_featuring_a_simple_graphic_of_a_digital_f3f60ff5_6f94_4407_869c_33043eb8c140_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.png';
 
 /**
  * Image of a wallpaper featuring a simple graphic of a digital  f3f60ff5-6f94-4407-869c-33043eb8c140-0

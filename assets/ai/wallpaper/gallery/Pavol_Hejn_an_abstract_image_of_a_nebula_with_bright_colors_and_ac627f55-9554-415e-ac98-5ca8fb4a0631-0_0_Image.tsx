@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55_9554_415e_ac98_5ca8fb4a0631_0_0 from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_0.png';
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_0.json';
+import an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55_9554_415e_ac98_5ca8fb4a0631_0_0 from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_0.png';
 
 /**
  * Image of an abstract image of a nebula with bright colors and ac627f55-9554-415e-ac98-5ca8fb4a0631-0

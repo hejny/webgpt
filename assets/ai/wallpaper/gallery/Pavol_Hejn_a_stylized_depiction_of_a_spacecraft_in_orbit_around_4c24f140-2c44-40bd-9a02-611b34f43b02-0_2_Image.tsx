@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_stylized_depiction_of_a_spacecraft_in_orbit_around_4c24f140_2c44_40bd_9a02_611b34f43b02_0_2 from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_4c24f140-2c44-40bd-9a02-611b34f43b02-0_2.png';
-import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_4c24f140-2c44-40bd-9a02-611b34f43b02-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_4c24f140-2c44-40bd-9a02-611b34f43b02-0_2.json';
+import a_stylized_depiction_of_a_spacecraft_in_orbit_around_4c24f140_2c44_40bd_9a02_611b34f43b02_0_2 from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_4c24f140-2c44-40bd-9a02-611b34f43b02-0_2.png';
 
 /**
  * Image of a stylized depiction of a spacecraft in orbit around 4c24f140-2c44-40bd-9a02-611b34f43b02-0

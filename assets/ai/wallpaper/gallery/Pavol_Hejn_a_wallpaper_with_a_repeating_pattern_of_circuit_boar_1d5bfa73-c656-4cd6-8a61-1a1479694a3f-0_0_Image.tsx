@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73_c656_4cd6_8a61_1a1479694a3f_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_0.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_0.json';
+import a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73_c656_4cd6_8a61_1a1479694a3f_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_0.png';
 
 /**
  * Image of a wallpaper with a repeating pattern of circuit boar 1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0

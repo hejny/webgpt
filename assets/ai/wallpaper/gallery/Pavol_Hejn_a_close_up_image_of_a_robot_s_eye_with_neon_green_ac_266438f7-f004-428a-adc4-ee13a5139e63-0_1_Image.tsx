@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_266438f7_f004_428a_adc4_ee13a5139e63_0_1 from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_266438f7-f004-428a-adc4-ee13a5139e63-0_1.png';
-import metadata from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_266438f7-f004-428a-adc4-ee13a5139e63-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_266438f7-f004-428a-adc4-ee13a5139e63-0_1.json';
+import a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_266438f7_f004_428a_adc4_ee13a5139e63_0_1 from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_266438f7-f004-428a-adc4-ee13a5139e63-0_1.png';
 
 /**
  * Image of a close up image of a robot s eye with neon green ac 266438f7-f004-428a-adc4-ee13a5139e63-0

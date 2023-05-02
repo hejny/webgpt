@@ -1,4 +1,3 @@
-import { string_color } from './Color';
 
 /**
  * 🎨 List of all 140 color names which are supported by CSS

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_illustration_of_a_futuristic_space_station_orbiti_fe74d6bc_123c_493f_9125_979cfab77501_0_1 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_fe74d6bc-123c-493f-9125-979cfab77501-0_1.png';
-import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_fe74d6bc-123c-493f-9125-979cfab77501-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_fe74d6bc-123c-493f-9125-979cfab77501-0_1.json';
+import an_illustration_of_a_futuristic_space_station_orbiti_fe74d6bc_123c_493f_9125_979cfab77501_0_1 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_fe74d6bc-123c-493f-9125-979cfab77501-0_1.png';
 
 /**
  * Image of an illustration of a futuristic space station orbiti fe74d6bc-123c-493f-9125-979cfab77501-0

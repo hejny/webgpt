@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_circuit_board_pattern_in_shades_of_blue_65aa5857_9bfb_4227_b358_54ae102a5c99_0_1 from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_1.png';
-import metadata from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_1.json';
+import an_abstract_circuit_board_pattern_in_shades_of_blue_65aa5857_9bfb_4227_b358_54ae102a5c99_0_1 from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_1.png';
 
 /**
  * Image of an abstract circuit board pattern in shades of blue  65aa5857-9bfb-4227-b358-54ae102a5c99-0

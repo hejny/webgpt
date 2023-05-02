@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_image_of_a_spaceship_traveling_through_a_221581f1_6815_4937_ab9f_c37d5e2536ac_0_3 from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_221581f1-6815-4937-ab9f-c37d5e2536ac-0_3.png';
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_221581f1-6815-4937-ab9f-c37d5e2536ac-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_221581f1-6815-4937-ab9f-c37d5e2536ac-0_3.json';
+import an_abstract_image_of_a_spaceship_traveling_through_a_221581f1_6815_4937_ab9f_c37d5e2536ac_0_3 from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_221581f1-6815-4937-ab9f-c37d5e2536ac-0_3.png';
 
 /**
  * Image of an abstract image of a spaceship traveling through a 221581f1-6815-4937-ab9f-c37d5e2536ac-0

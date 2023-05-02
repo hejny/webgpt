@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_surreal_interpretation_of_a_desert_landscape_df2bc40a_b36b_4e8b_bd85_08b645af1218_0_0 from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_0.png';
-import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_0.json';
+import a_surreal_interpretation_of_a_desert_landscape_df2bc40a_b36b_4e8b_bd85_08b645af1218_0_0 from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_0.png';
 
 /**
  * Image of a surreal interpretation of a desert landscape df2bc40a-b36b-4e8b-bd85-08b645af1218-0

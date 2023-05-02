@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd_1e7f_49e0_b1bc_5f274c109e4a_0_2 from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_2.png';
-import metadata from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_2.json';
+import a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd_1e7f_49e0_b1bc_5f274c109e4a_0_2 from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_2.png';
 
 /**
  * Image of a stylized illustration of a cybernetic organism wit 1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0

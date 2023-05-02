@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import blue_f99604d7_eb42_4e58_abef_6d150967e8f4_0_3 from './Pavol_Hejn_blue_f99604d7-eb42-4e58-abef-6d150967e8f4-0_3.png';
-import metadata from './Pavol_Hejn_blue_f99604d7-eb42-4e58-abef-6d150967e8f4-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_blue_f99604d7-eb42-4e58-abef-6d150967e8f4-0_3.json';
+import blue_f99604d7_eb42_4e58_abef_6d150967e8f4_0_3 from './Pavol_Hejn_blue_f99604d7-eb42-4e58-abef-6d150967e8f4-0_3.png';
 
 /**
  * Image of blue f99604d7-eb42-4e58-abef-6d150967e8f4-0
