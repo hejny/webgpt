@@ -2,7 +2,14 @@ import { TakeChain } from './classes/TakeChain';
 import { WithTake } from './interfaces/ITakeChain';
 import { Takeable } from './interfaces/Takeable';
 
+/**
+ * @@@
+ */
 export function take<TValue extends Takeable>(initialValue: TValue): WithTake<TValue> {
+    if (initialValue instanceof TakeChain) {
+        return initialValue;
+    }
+
     return new Proxy(new TakeChain(initialValue), {
         get(target, property, receiver) {
             if (Reflect.has(target, property)) {

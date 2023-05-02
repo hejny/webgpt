@@ -1,5 +1,6 @@
 // Import the Image and Color classes
 import { Color } from '../color/Color';
+import { WithTake } from '../take/interfaces/ITakeChain';
 import { Image } from './Image';
 
 /**
@@ -7,19 +8,19 @@ import { Image } from './Image';
  */
 export interface IImageColorStats {
     // The average color of the image as a Color object
-    averageColor: Color;
+    averageColor: WithTake<Color>;
 
     // The lightest color of the image as a Color object
-    lightestColor: Color;
+    lightestColor: WithTake<Color>;
 
     // The darkest color of the image as a Color object
-    darkestColor: Color;
+    darkestColor: WithTake<Color>;
 
     // The most frequent color of the image as a Color object
-    mostFrequentColor: Color;
+    mostFrequentColor: WithTake<Color>;
 
     // The least frequent color of the image as a Color object
-    leastFrequentColor: Color;
+    leastFrequentColor: WithTake<Color>;
 }
 
 /**
@@ -27,11 +28,11 @@ export interface IImageColorStats {
  */
 export function computeImageColorStats(image: Image): IImageColorStats {
     // Declare variables to store the statistics
-    let averageColor: Color;
-    let lightestColor: Color;
-    let darkestColor: Color;
-    let mostFrequentColor: Color;
-    let leastFrequentColor: Color;
+    let averageColor: WithTake<Color>;
+    let lightestColor: WithTake<Color>;
+    let darkestColor: WithTake<Color>;
+    let mostFrequentColor: WithTake<Color>;
+    let leastFrequentColor: WithTake<Color>;
 
     // Declare variables to store the intermediate values
     let totalRed = 0;

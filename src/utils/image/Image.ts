@@ -1,5 +1,7 @@
 import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
+import { WithTake } from '../take/interfaces/ITakeChain';
+import { take } from '../take/take';
 
 /**
  * @@@
@@ -13,14 +15,14 @@ export class Image {
     /**
      * A private property to store the pixels as a 2D array of Color objects
      */
-    private pixels: Color[][];
+    private pixels: WithTake<Color>[][];
 
     /**
      * A constructor that takes the size of the image and optionally an initial color
      * @param size The size of the image as an IVector object
      * @param color The initial color of the image (default: transparent black)
      */
-    constructor(size: IVector, defaultColor: Color = Color.fromHex('#00000000')) {
+    constructor(size: IVector, defaultColor: WithTake<Color> = Color.fromHex('#00000000')) {
         this.size = Vector.fromObject(size);
 
         // Initialize the pixels array with the given color or transparent black
@@ -38,7 +40,7 @@ export class Image {
      * @param position The position of the pixel as an IVector object
      * @returns The color of the pixel as a Color object
      */
-    public getPixel(position: IVector): Color {
+    public getPixel(position: IVector): WithTake<Color> {
         // Check if the position is valid
         if (
             (position.x || 0) >= 0 &&
@@ -68,7 +70,7 @@ export class Image {
             (position.y || 0) < this.size.y
         ) {
             // Set the color of the pixel
-            this.pixels[position.y || 0][position.x || 0] = color;
+            this.pixels[position.y || 0][position.x || 0] = take(color);
         } else {
             // Throw an error if the position is out of bounds
             throw new Error(`Invalid pixel position (${position.x || 0}, ${position.y || 0})`);

@@ -7,9 +7,9 @@ import glob from 'glob-promise';
 import { normalizeTo_camelCase, normalizeTo_snake_case } from 'n12';
 import { capitalize } from 'n12/dist/capitalize';
 import { basename, dirname, join, relative } from 'path';
-import { Color } from '../../src/utils/color/Color';
 import { computeImageColorStats } from '../../src/utils/image/computeImageColorStats';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
+import { TakeChain } from '../../src/utils/take/classes/TakeChain';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
@@ -142,8 +142,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             ${componentName}.colorStats = ${JSON.stringify(
             wallpaperColorStats,
             (key, value) => {
-                if (value instanceof Color) {
-                    return `>>>Color.fromHex('${value.toHex()}')<<<`;
+                if (value instanceof TakeChain) {
+                    return `>>>Color.fromHex('${value.value.toHex()}')<<<`;
                 }
 
                 return value;
@@ -163,7 +163,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
     const indexFileContent = await prettify(`
 
             /**
-             * 🏭 GENERATED WITH 🖼️ Generate patterns library
+             * 🏭 GENERATED WITH 🖼️ Generate wallpapers library
              * ⚠️ Warning: Do not edit by hand, all changes will be lost on next execution!
              */
         
