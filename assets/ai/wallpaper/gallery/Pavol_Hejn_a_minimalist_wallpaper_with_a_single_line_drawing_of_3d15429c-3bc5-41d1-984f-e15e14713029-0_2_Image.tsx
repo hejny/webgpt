@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c_3bc5_41d1_984f_e15e14713029_0_2 from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c-3bc5-41d1-984f-e15e14713029-0_2.png';
-import metadata from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c-3bc5-41d1-984f-e15e14713029-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c-3bc5-41d1-984f-e15e14713029-0_2.json';
+import a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c_3bc5_41d1_984f_e15e14713029_0_2 from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_3d15429c-3bc5-41d1-984f-e15e14713029-0_2.png';
 
 /**
  * Image of a minimalist wallpaper with a single line drawing of 3d15429c-3bc5-41d1-984f-e15e14713029-0

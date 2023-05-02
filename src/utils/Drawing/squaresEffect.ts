@@ -4,7 +4,11 @@ import { Vector } from 'xyzt';
 import { Drawing } from './Drawing';
 
 /**
- * @@@
+ * Creates a squares effect on an HTML element ⁘
+ * 
+ * @template TElement - The type of the HTML element.
+ * @param {TElement} element - The HTML element to apply the effect on.
+ * @returns {IDestroyable} An object that can destroy the effect.
  */
 export function squaresEffect<TElement extends HTMLElement>(element: TElement): IDestroyable {
     let drawing: Drawing | null = null;
@@ -12,6 +16,9 @@ export function squaresEffect<TElement extends HTMLElement>(element: TElement): 
     const field = 15;
     let lastPoint: Vector | null = null;
 
+/**
+ * Restarts the drawing on the element ⁘
+ */
     async function restart() {
         if (drawing) {
             await end();
@@ -20,6 +27,11 @@ export function squaresEffect<TElement extends HTMLElement>(element: TElement): 
         drawing = new Drawing(element);
     }
 
+/**
+ * Moves the drawing to a new point ⁘
+ * 
+ * @param {Vector} point - The new point to move to.
+ */
     async function move(point: Vector) {
         if (!drawing) {
             return;
@@ -40,6 +52,9 @@ export function squaresEffect<TElement extends HTMLElement>(element: TElement): 
         }
     }
 
+/**
+ * Ends the drawing on the element ⁘
+ */
     async function end() {
         if (!drawing) {
             return;

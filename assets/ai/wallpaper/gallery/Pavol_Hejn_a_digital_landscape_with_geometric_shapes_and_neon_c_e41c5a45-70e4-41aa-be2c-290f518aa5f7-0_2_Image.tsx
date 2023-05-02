@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45_70e4_41aa_be2c_290f518aa5f7_0_2 from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.png';
-import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.json';
+import a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45_70e4_41aa_be2c_290f518aa5f7_0_2 from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.png';
 
 /**
  * Image of a digital landscape with geometric shapes and neon c e41c5a45-70e4-41aa-be2c-290f518aa5f7-0

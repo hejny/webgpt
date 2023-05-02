@@ -6,12 +6,21 @@ import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
 import styles from './Contact.module.css';
 
+/**
+ * Interface for contact section props ⁘
+ * 
+ * @interface
+ * @property {('SHORT' | 'FULL')} variant - The variant of the contact section
+ */
 interface ContactProps {
     variant: 'SHORT' | 'FULL';
 }
 
 /**
- * @@@
+ * A function component that renders a contact section ⁘
+ * 
+ * @param {ContactProps} props - The props for the component
+ * @returns {JSX.Element} The contact section element
  */
 export function ContactSection(props: ContactProps) {
     const { variant } = props;

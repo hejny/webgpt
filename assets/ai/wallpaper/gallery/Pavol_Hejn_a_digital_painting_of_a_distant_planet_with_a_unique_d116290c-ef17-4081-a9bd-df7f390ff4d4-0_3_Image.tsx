@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_digital_painting_of_a_distant_planet_with_a_unique_d116290c_ef17_4081_a9bd_df7f390ff4d4_0_3 from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.png';
-import metadata from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.json';
+import a_digital_painting_of_a_distant_planet_with_a_unique_d116290c_ef17_4081_a9bd_df7f390ff4d4_0_3 from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.png';
 
 /**
  * Image of a digital painting of a distant planet with a unique d116290c-ef17-4081-a9bd-df7f390ff4d4-0

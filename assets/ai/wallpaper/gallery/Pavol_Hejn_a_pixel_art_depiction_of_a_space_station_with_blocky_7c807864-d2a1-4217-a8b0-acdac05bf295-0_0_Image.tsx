@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864_d2a1_4217_a8b0_acdac05bf295_0_0 from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.png';
-import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.json';
+import a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864_d2a1_4217_a8b0_acdac05bf295_0_0 from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.png';
 
 /**
  * Image of a pixel art depiction of a space station with blocky 7c807864-d2a1-4217-a8b0-acdac05bf295-0

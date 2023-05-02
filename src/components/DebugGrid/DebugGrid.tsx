@@ -3,6 +3,12 @@ import { Vector } from 'xyzt';
 import { DebugContext } from '../../pages/_app';
 import styles from './DebugGrid.module.css';
 
+/**
+ * A component that renders a grid of cells with numbers for debugging purposes ⁘
+ * 
+ * @param {DebugGridProps} props - The props for the component
+ * @returns {JSX.Element} The rendered grid or an empty fragment if showGrid is false
+ */
 interface DebugGridProps {
     size: Vector;
 }

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95_d8f5_4556_9324_b10f8d61dee5_0_0 from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_0.png';
-import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_0.json';
+import a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95_d8f5_4556_9324_b10f8d61dee5_0_0 from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_0.png';
 
 /**
  * Image of a photograph of a desert landscape at night with the 93e80a95-d8f5-4556-9324-b10f8d61dee5-0

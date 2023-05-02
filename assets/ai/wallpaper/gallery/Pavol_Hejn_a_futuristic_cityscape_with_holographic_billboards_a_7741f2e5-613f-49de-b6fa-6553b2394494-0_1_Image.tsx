@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5_613f_49de_b6fa_6553b2394494_0_1 from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.png';
-import metadata from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.json';
+import a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5_613f_49de_b6fa_6553b2394494_0_1 from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.png';
 
 /**
  * Image of a futuristic cityscape with holographic billboards a 7741f2e5-613f-49de-b6fa-6553b2394494-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_minimalist_graphic_of_a_futuristic_workspace_with_e06eece0_8eb1_4104_a195_a3f2518607d1_0_0 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_0.png';
-import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_0.json';
+import a_minimalist_graphic_of_a_futuristic_workspace_with_e06eece0_8eb1_4104_a195_a3f2518607d1_0_0 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_0.png';
 
 /**
  * Image of a minimalist graphic of a futuristic workspace with  e06eece0-8eb1-4104-a195-a3f2518607d1-0

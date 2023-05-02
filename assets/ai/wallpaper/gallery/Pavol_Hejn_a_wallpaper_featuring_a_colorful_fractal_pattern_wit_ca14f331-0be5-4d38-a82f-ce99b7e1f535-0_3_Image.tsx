@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331_0be5_4d38_a82f_ce99b7e1f535_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_3.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_3.json';
+import a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331_0be5_4d38_a82f_ce99b7e1f535_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_3.png';
 
 /**
  * Image of a wallpaper featuring a colorful fractal pattern wit ca14f331-0be5-4d38-a82f-ce99b7e1f535-0

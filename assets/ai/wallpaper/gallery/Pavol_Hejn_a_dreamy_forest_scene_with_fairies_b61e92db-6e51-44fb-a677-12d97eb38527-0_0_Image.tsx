@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_dreamy_forest_scene_with_fairies_b61e92db_6e51_44fb_a677_12d97eb38527_0_0 from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_0.png';
-import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_0.json';
+import a_dreamy_forest_scene_with_fairies_b61e92db_6e51_44fb_a677_12d97eb38527_0_0 from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_0.png';
 
 /**
  * Image of a dreamy forest scene with fairies b61e92db-6e51-44fb-a677-12d97eb38527-0

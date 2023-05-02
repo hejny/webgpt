@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3_ba9a_4276_bc44_42e503d0d5dc_0_2 from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0_2.png';
-import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0_2.json';
+import a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3_ba9a_4276_bc44_42e503d0d5dc_0_2 from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0_2.png';
 
 /**
  * Image of a photograph of a desert landscape at sunset with wa c4ebe2a3-ba9a-4276-bc44-42e503d0d5dc-0

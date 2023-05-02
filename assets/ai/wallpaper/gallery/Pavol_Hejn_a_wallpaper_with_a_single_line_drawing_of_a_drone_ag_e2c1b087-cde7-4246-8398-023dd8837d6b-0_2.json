@@ -21,7 +21,9 @@
     },
     "_service": "main",
     "avatar_job_id": null,
+    "avatar_job_index": null,
     "cover_job_id": null,
+    "cover_job_index": null,
     "current_status": "completed",
     "enqueue_time": "2023-04-24 11:07:06.123442",
     "event": {
