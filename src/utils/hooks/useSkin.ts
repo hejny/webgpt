@@ -23,10 +23,16 @@ export interface ISkin {
  *
  * @returns {ISkin} The skin object.
  */
-export function useSkin(): ISkin {
+export function useSkin(): ISkin | null {
+    const Wallpaper = useWallpaper();
+
+    if (Wallpaper === null) {
+        return null;
+    }
+
     const {
         colorStats: { mostFrequentColor },
-    } = useWallpaper();
+    } = Wallpaper;
 
     const highlightedTextColor = mostFrequentColor.then(furthest(Color.get('black'), Color.get('white')));
     const normalTextColor = highlightedTextColor.then(mix(0.2, mostFrequentColor));

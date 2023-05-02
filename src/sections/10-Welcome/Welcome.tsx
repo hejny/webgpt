@@ -10,7 +10,7 @@ import styles from './Welcome.module.css';
 
 /**
  * An interface for the props of the WelcomeSection component ⁘
- * 
+ *
  * @typedef {Object} WelcomeProps
  * @property {('HOMEPAGE' | 'SIDEPAGE' | 'PAVOLHEJNY')} variant - The variant of the welcome section
  */
@@ -20,7 +20,7 @@ interface WelcomeProps {
 
 /**
  * A function component that renders a welcome section ⁘
- * 
+ *
  * @param {WelcomeProps} props - The props for the component
  * @returns {JSX.Element} The welcome section element
  */
@@ -30,14 +30,17 @@ export function WelcomeSection(props: WelcomeProps) {
     const { t, i18n } = useTranslation();
     const skin = useSkin();
 
-    const header = (
-        <h1 className={styles.handritten}>
-            <HandwrittenText color={skin.highlightedTextColor}>
-                {removeMarkdownFormatting(removeMarkdownLinks(t('title')))}
-                {/* <- TODO: [🎎] Allow to have there full JSX with formatting like <Article content={t('title')} isEnhanced /> OR pass as markdown*/}
-            </HandwrittenText>
-        </h1>
-    );
+    const header =
+        skin === null ? (
+            <></>
+        ) : (
+            <h1 className={styles.handritten}>
+                <HandwrittenText color={skin.highlightedTextColor}>
+                    {removeMarkdownFormatting(removeMarkdownLinks(t('title')))}
+                    {/* <- TODO: [🎎] Allow to have there full JSX with formatting like <Article content={t('title')} isEnhanced /> OR pass as markdown*/}
+                </HandwrittenText>
+            </h1>
+        );
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>

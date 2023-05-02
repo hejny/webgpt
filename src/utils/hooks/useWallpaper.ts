@@ -7,11 +7,13 @@ import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComp
  *
  * @returns {IWallpaperComponent} A wallpaper component.
  */
-export function useWallpaper(): IWallpaperComponent {
+export function useWallpaper(): IWallpaperComponent | null {
     const router = useRouter();
     const { wallpaper: wallpaperId } = router.query;
 
-    console.log('!!!', 'useWallpaper', wallpaperId);
+    if (!router.isReady) {
+        return null;
+    }
 
     const Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;
 
