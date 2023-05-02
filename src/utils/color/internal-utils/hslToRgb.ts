@@ -12,6 +12,7 @@ import { number_integer, number_percent, number_positive } from "../Color";
  * @param lightness [0-1]
  * @returns [red, green, blue] [0-255]
  *
+ * @private
  * @not-collboard-modules-sdk Use Color object for conversion instead
  */
 export function hslToRgb(
