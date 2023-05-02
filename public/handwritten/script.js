@@ -241,7 +241,7 @@ function handwriteText(options) {
             return t;
         })(r, [120, 1]);
         const a = o(t)[0];
-        const i = R() < a ? 1 : 0;
+        const i = Random() < a ? 1 : 0;
         var [f, c, p, w] = ((r, e) => {
             const t = [];
             let a = 0;
@@ -264,7 +264,7 @@ function handwriteText(options) {
             let e = -1e6;
             let t = 0;
             for (let o = 0; o < K(r); o++) {
-                const a = -Q(-Q(R()));
+                const a = -Q(-Q(Random()));
                 const l = r[o] + a;
                 l > e && ((t = o), (e = l));
             }
@@ -280,8 +280,8 @@ function handwriteText(options) {
         const U = ((r) => {
             const e = Y(r);
             for (let n = 0; n < r; n++) {
-                const t = 1 - R();
-                const a = 1 - R();
+                const t = 1 - Random();
+                const a = 1 - Random();
                 const l = P(-2 * Q(t));
                 const o = Math.cos(2 * Math.PI * a);
                 e[n] = l * o;
@@ -301,7 +301,7 @@ function handwriteText(options) {
             canvasElement.removeChild(canvasElement.lastChild);
         if (((r = 0), (e = !1), options.style /* styleSelectElement.value */ == '-')) {
             const a = K($.g) / 64;
-            var l = W(a * R());
+            var l = W(a * Random());
         } else l = options.style /*parseInt( styleSelectElement.value )*/;
         const o = options.text;
 
@@ -575,7 +575,7 @@ function handwriteText(options) {
     var N = Math.exp;
     var P = Math.sqrt;
     var Q = Math.log;
-    var R = Math.random;
+    var Random = /* Math.random */ () => 0.2; /* <- !!! Seed random */
     var W = (Math.abs, Math.max, Math.min, Math.floor);
     var X = P(0.5);
     var G = 256;

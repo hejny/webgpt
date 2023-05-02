@@ -1,4 +1,3 @@
-import { Passions_Conflict } from '@next/font/google';
 import { useEffect } from 'react';
 import { forTime } from 'waitasecond';
 import { classNames } from '../../utils/classNames';
@@ -9,7 +8,7 @@ import { handwriteText } from './utils/handwriteText';
 
 /**
  * A component that renders handwritten text using SVG and handwriteText function ⁘
- * 
+ *
  * @param props - The properties of the component.
  * @param props.color - The color of the text.
  * @param props.children - The text to be rendered.
@@ -20,7 +19,7 @@ interface HandwrittenTextProps {
     children: string /* <- TODO: [🎎] Allow to have there full JSX children */;
 }
 
-const passionsConflictFont = Passions_Conflict({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
+// const passionsConflictFont = Passions_Conflict({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 /**
  * @@@
@@ -78,7 +77,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         speed: 3 /* 7 */,
                         bias: 0.75,
                         width: 1.5,
-                        style: randomItem('Fancy', 'FancyTall'),
+                        style: randomItem('Fancy' /* , 'FancyTall' */),
                         svgElement,
                     });
                 }}
@@ -86,7 +85,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                 {/* <path id="path" d=""></path> */}
             </svg>
 
-            <span className={classNames(passionsConflictFont.className, styles.textFallback)}>{children}</span>
+            <span className={classNames(/*passionsConflictFont.className,*/ styles.textFallback)}>{children}</span>
         </div>
     );
 }

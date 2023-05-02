@@ -22,7 +22,7 @@
     width: 100vw;
     height: 3em;
 
-    transform: translate(0, -50%);
+    transform: translate(0, calc(-50% + 0.3em));
 }
 
 .HandwrittenText span.textFallback {
@@ -33,7 +33,8 @@
     grid-area: 🟦;
     color: rgba(0, 0, 0, 0%);
 
-    height: 1em;
+    font-family: monospace;
+    height: 3em;
     transform: translate(0, 0.2em);
     white-space: nowrap;
 }
