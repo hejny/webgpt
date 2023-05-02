@@ -13,12 +13,6 @@ export function furthest(...colors: Color[]): IColorTransformer {
     return (color) => {
         const furthestColor = negative(nearest(...colors.map(negative))(color));
 
-        console.log(
-            `!!! Furthest color from ${color.toHex()} to [${colors
-                .map((color) => color.toHex())
-                .join(', ')}] is ${furthestColor.toHex()}`,
-        );
-
         return furthestColor;
     };
 }

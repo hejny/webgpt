@@ -16,6 +16,5 @@ export function colorDistance(color1: Color, color2: Color): number {
     const weightB = 2 + (255 - rmean) / 256;
     const distance = Math.sqrt(weightR * r * r + weightG * g * g + weightB * b * b);
 
-    console.log(`!!! Distance between ${color1.toHex()} and ${color2.toHex()} is ${distance}`);
     return distance;
 }

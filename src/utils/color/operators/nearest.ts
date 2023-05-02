@@ -14,12 +14,6 @@ export function nearest(...colors: Color[]): IColorTransformer {
         const minIndex = distances.indexOf(minDistance);
         const nearestColor = colors[minIndex];
 
-        console.log(
-            `!!! Nearest color from ${color.toHex()} to [${colors
-                .map((color) => color.toHex())
-                .join(', ')}] is ${nearestColor.toHex()}`,
-        );
-
         return nearestColor;
     };
 }
