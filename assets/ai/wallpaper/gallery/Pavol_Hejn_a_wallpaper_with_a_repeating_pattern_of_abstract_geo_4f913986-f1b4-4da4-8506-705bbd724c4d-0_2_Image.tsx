@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_2.json';
 import a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986_f1b4_4da4_8506_705bbd724c4d_0_2 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_2.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_geo_4f913986-f1b4-4da4-8506-705bbd724c4d-0_2.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of abstract geo 4f913986-f1b4-4da4-8506-705bbd724c4d-0

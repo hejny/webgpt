@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.json';
 import an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38_efa4_4631_a761_588842e6f805_0_2 from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.png';
+import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an illustration of a space station in orbit around a bcf08c38-efa4-4631-a761-588842e6f805-0

@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_1.json';
 import a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a_a091_4d76_9e42_d16de5b0c620_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_1.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of neon colored 391ec65a-a091-4d76-9e42-d16de5b0c620-0

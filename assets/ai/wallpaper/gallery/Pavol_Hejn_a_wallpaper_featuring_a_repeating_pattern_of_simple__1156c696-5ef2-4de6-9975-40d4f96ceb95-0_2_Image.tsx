@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_2.json';
 import a_wallpaper_featuring_a_repeating_pattern_of_simple_1156c696_5ef2_4de6_9975_40d4f96ceb95_0_2 from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_2.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_2.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a repeating pattern of simple  1156c696-5ef2-4de6-9975-40d4f96ceb95-0

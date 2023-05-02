@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.json';
 import an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5_baba_432a_88ba_5457b8031bdb_0_1 from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.png';
+import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an art deco inspired pattern in shades of gold and b 226b66d5-baba-432a-88ba-5457b8031bdb-0

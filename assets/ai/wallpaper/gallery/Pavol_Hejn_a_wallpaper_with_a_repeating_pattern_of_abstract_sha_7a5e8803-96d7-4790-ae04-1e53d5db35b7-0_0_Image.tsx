@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.json';
 import a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803_96d7_4790_ae04_1e53d5db35b7_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of abstract sha 7a5e8803-96d7-4790-ae04-1e53d5db35b7-0

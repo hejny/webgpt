@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_256b7aff-f011-43c7-9b8c-598ba444997b-0_1.json';
 import a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_256b7aff_f011_43c7_9b8c_598ba444997b_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_256b7aff-f011-43c7-9b8c-598ba444997b-0_1.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_robot_arm_aga_256b7aff-f011-43c7-9b8c-598ba444997b-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a simple graphic of a robot arm aga 256b7aff-f011-43c7-9b8c-598ba444997b-0

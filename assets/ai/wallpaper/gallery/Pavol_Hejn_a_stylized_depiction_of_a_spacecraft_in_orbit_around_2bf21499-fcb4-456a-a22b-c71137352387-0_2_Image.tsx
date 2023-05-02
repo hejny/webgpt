@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_2.json';
 import a_stylized_depiction_of_a_spacecraft_in_orbit_aroundbf21499_fcb4_456a_a22b_c71137352387_0_2_2 from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_2.png';
+import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_2.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a stylized depiction of a spacecraft in orbit aroundbf21499-fcb4-456a-a22b-c71137352387-0 2

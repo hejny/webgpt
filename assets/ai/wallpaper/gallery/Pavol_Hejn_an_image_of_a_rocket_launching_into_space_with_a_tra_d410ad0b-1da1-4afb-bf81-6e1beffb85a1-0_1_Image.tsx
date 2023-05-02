@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_1.json';
 import an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b_1da1_4afb_bf81_6e1beffb85a1_0_1 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_1.png';
+import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of an image of a rocket launching into space with a tra d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0

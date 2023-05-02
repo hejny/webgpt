@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_fe768cf1-4321-4f04-8ccc-edcfac56f2ac-0_1.json';
 import a_wallpaper_featuring_an_abstract_illustration_of_an_fe768cf1_4321_4f04_8ccc_edcfac56f2ac_0_1 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_fe768cf1-4321-4f04-8ccc-edcfac56f2ac-0_1.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_fe768cf1-4321-4f04-8ccc-edcfac56f2ac-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of an fe768cf1-4321-4f04-8ccc-edcfac56f2ac-0

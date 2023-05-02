@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.json';
 import a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b_509d_4ea1_954e_4ecbed7099d8_0_2 from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.png';
+import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a realistic photograph of a rocket launch with fiery 024b902b-509d-4ea1-954e-4ecbed7099d8-0

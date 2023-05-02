@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94-821e-46ee-974b-e1ec79ec8090-0_0.json';
 import a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94_821e_46ee_974b_e1ec79ec8090_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94-821e-46ee-974b-e1ec79ec8090-0_0.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_7f75fa94-821e-46ee-974b-e1ec79ec8090-0_0.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a repeating pattern of simple geome 7f75fa94-821e-46ee-974b-e1ec79ec8090-0
