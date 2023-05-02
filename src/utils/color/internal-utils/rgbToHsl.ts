@@ -8,6 +8,7 @@ import { number_integer, number_percent, number_positive } from '../Color';
  * @param blue [0-255]
  * @returns [hue, saturation, lightness] [0-1]
  *
+ * @private
  * @not-collboard-modules-sdk Use Color object for conversion instead
  */
 export function rgbToHsl(

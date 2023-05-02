@@ -1,7 +1,7 @@
-import clamp from 'lodash/clamp';
+import { WithTake } from '../take/interfaces/ITakeChain';
+import { take } from '../take/take';
 import { CSS_COLORS } from './css-colors';
-import { hslToRgb } from './utils/hslToRgb';
-import { rgbToHsl } from './utils/rgbToHsl';
+import { checkChanellValue } from './internal-utils/checkChanellValue';
 
 export type number_integer = number;
 export type number_positive = number;
@@ -33,9 +33,9 @@ export class Color {
      * @param color
      * @returns Color object
      */
-    public static from(color: string_color | Color): Color {
+    public static from(color: string_color | Color): WithTake<Color> {
         if (color instanceof Color) {
-            return color;
+            return take(color);
         } else if (typeof color === 'string') {
             return Color.fromString(color);
         } else {
@@ -50,7 +50,7 @@ export class Color {
      * @param color as a string for example #009edd, rgb(0,158,221), rgb(0%,62%,86.7%), hsl(197.1,100%,43.3%), red, darkgrey,...
      * @returns Color object
      */
-    public static fromString(color: string_color): Color {
+    public static fromString(color: string_color): WithTake<Color> {
         if (CSS_COLORS[color]) {
             return Color.fromString(CSS_COLORS[color]);
 
@@ -94,7 +94,7 @@ export class Color {
      * @param color in hex for example #009edd, 009edd, #555,...
      * @returns Color object
      */
-    public static fromHex(hex: string_color): Color {
+    public static fromHex(hex: string_color): WithTake<Color> {
         const hexOriginal = hex;
 
         if (hex.startsWith('#')) {
@@ -122,11 +122,11 @@ export class Color {
      * @param color in hex for example 09d
      * @returns Color object
      */
-    private static fromHex3(hex: string_color): Color {
+    private static fromHex3(hex: string_color): WithTake<Color> {
         const r = parseInt(hex.substr(0, 1), 16) * 16;
         const g = parseInt(hex.substr(1, 1), 16) * 16;
         const b = parseInt(hex.substr(2, 1), 16) * 16;
-        return new Color(r, g, b);
+        return take(new Color(r, g, b));
     }
 
     /**
@@ -135,11 +135,11 @@ export class Color {
      * @param color in hex for example 009edd
      * @returns Color object
      */
-    private static fromHex6(hex: string_color): Color {
+    private static fromHex6(hex: string_color): WithTake<Color> {
         const r = parseInt(hex.substr(0, 2), 16);
         const g = parseInt(hex.substr(2, 2), 16);
         const b = parseInt(hex.substr(4, 2), 16);
-        return new Color(r, g, b);
+        return take(new Color(r, g, b));
     }
 
     /**
@@ -148,12 +148,12 @@ export class Color {
      * @param color in hex for example 009edd
      * @returns Color object
      */
-    private static fromHex8(hex: string_color): Color {
+    private static fromHex8(hex: string_color): WithTake<Color> {
         const r = parseInt(hex.substr(0, 2), 16);
         const g = parseInt(hex.substr(2, 2), 16);
         const b = parseInt(hex.substr(4, 2), 16);
         const a = parseInt(hex.substr(6, 2), 16);
-        return new Color(r, g, b, a);
+        return take(new Color(r, g, b, a));
     }
 
     /**
@@ -162,7 +162,7 @@ export class Color {
      * @param color as a hsl for example  hsl(197.1,100%,43.3%)
      * @returns Color object
      */
-    public static fromHsl(hsl: string_color): Color {
+    public static fromHsl(hsl: string_color): WithTake<Color> {
         // TODO: Implement + Add samples here [👠]
         throw new Error(`Can not create a new Color instance from supposed hsl formatted string "${hsl}".`);
     }
@@ -173,7 +173,7 @@ export class Color {
      * @param color as a rgb for example rgb(0,158,221), rgb(0%,62%,86.7%)
      * @returns Color object
      */
-    public static fromRgbString(rgb: string_color): Color {
+    public static fromRgbString(rgb: string_color): WithTake<Color> {
         // TODO: [0] Should be fromRgbString and fromRgbaString one or two functions
         // TODO: Implement + Add samples here [👠]
         throw new Error(`Can not create a new Color instance from supposed rgb formatted string "${rgb}".`);
@@ -185,31 +185,23 @@ export class Color {
      * @param color as a rgba for example rgba(0,158,221,0.5), rgb(0%,62%,86.7%,50%)
      * @returns Color object
      */
-    public static fromRgbaString(rgba: string_color): Color {
+    public static fromRgbaString(rgba: string_color): WithTake<Color> {
         // TODO: [0] Should be fromRgbString and fromRgbaString one or two functions
         // TODO: Implement + Add samples here [👠]
         throw new Error(`Can not create a new Color instance from supposed rgba formatted string "${rgba}".`);
     }
 
-    private static checkChanellValue(chanellName: string, value: number) {
-        if (typeof value !== 'number') {
-            throw new Error(`${chanellName} chanell value is not number but ${typeof value}`);
-        }
-        if (isNaN(value)) {
-            throw new Error(`${chanellName} chanell value is NaN`);
-        }
-
-        if (Math.round(value) !== value) {
-            throw new Error(`${chanellName} chanell is not whole number, it is ${value}`);
-        }
-
-        if (value < 0) {
-            throw new Error(`${chanellName} chanell is lower than 0, it is ${value}`);
-        }
-
-        if (value > 255) {
-            throw new Error(`${chanellName} chanell is grater than 255, it is ${value}`);
-        }
+    /**
+     * Creates a new Color for color chanells values
+     *
+     * @param red number from 0 to 255
+     * @param green number from 0 to 255
+     * @param blue number from 0 to 255
+     * @param alpha number from 0 (transparent) to 255 (opaque = default)
+     * @returns Color object
+     */
+    public static fromValues(red: number, green: number, blue: number, alpha: number = 255): WithTake<Color> {
+        return take(new Color(red, green, blue, alpha));
     }
 
     /**
@@ -222,42 +214,32 @@ export class Color {
      * @param blue number from 0 to 255
      * @param alpha number from 0 (transparent) to 255 (opaque)
      */
-    public constructor(
+    private constructor(
         readonly red: number,
         readonly green: number,
         readonly blue: number,
         readonly alpha: number = 255,
     ) {
-        Color.checkChanellValue('Red', red);
-        Color.checkChanellValue('Green', green);
-        Color.checkChanellValue('Blue', blue);
-        Color.checkChanellValue('Alpha', alpha);
+        checkChanellValue('Red', red);
+        checkChanellValue('Green', green);
+        checkChanellValue('Blue', blue);
+        checkChanellValue('Alpha', alpha);
     }
 
-    public withAlpha(alpha: number): Color {
+    public withAlpha(alpha: number): WithTake<Color> {
         return this.withMutation((r, g, b, a) => {
             return [r, g, b, (((a / 255) * alpha) / 255) * 255];
         });
     }
 
-    public addLightness(delta: number): Color {
-        // TODO: Implement by mix+hsl
-
-        // tslint:disable-next-line:prefer-const
-        let [h, s, l] = rgbToHsl(this.red, this.green, this.blue);
-        l += delta;
-        l = clamp(l, 0, 1);
-        const [r, g, b] = hslToRgb(h, s, l);
-
-        return new Color(r, g, b);
-    }
-
-    public get negative(): Color {
+    public get negative(): WithTake<Color> {
+        // TODO: !!! negative should be operator
         return this.withMutation((r, g, b, a) => {
             return [255 - r, 255 - g, 255 - b, a];
         });
     }
-    public get grayscale(): Color {
+    public get grayscale(): WithTake<Color> {
+        // TODO: !!! grayscale should be operator
         return this.withMutation((r, g, b, a) => {
             const v = (r + b + g) / 3;
             return [v, v, v, a];
@@ -269,7 +251,8 @@ export class Color {
      *
      * @returns white or black color
      */
-    public textColor(): Color {
+    public textColor(): WithTake<Color> {
+        // TODO: !!! grayscale should be operator nearest
         if ((this.red + this.green + this.blue) / 3 / 255 > 0.5) {
             return Color.fromString('black');
         } else {
@@ -279,26 +262,31 @@ export class Color {
 
     public withMutation(
         modifier: (red: number, green: number, blue: number, opacity: number) => [number, number, number, number],
-    ): Color {
-        return new Color(
-            ...(modifier(this.red, this.green, this.blue, this.alpha).map((value) => Math.round(value)) as [
-                number,
-                number,
-                number,
-                number,
-            ]),
+    ): WithTake<Color> {
+        // TODO: !!! Deprecate and remove
+        return take(
+            new Color(
+                ...(modifier(this.red, this.green, this.blue, this.alpha).map((value) => Math.round(value)) as [
+                    number,
+                    number,
+                    number,
+                    number,
+                ]),
+            ),
         );
     }
 
-    public clone(): Color {
-        return new Color(this.red, this.green, this.blue, this.alpha);
+    public clone(): WithTake<Color> {
+        return take(new Color(this.red, this.green, this.blue, this.alpha));
     }
 
-    public get opaque(): Color {
+    public get opaque(): WithTake<Color> {
+        // TODO: !!! opaque should be operator nearest
         return this.withAlpha(1);
     }
 
-    public get transparent(): Color {
+    public get transparent(): WithTake<Color> {
+        // TODO: !!! transparent should be operator nearest
         return this.withAlpha(0);
     }
 
@@ -332,7 +320,7 @@ export class Color {
 }
 
 /**
- * TODO: !!!!! Transfer back to Collboard
+ * TODO: !!! Transfer back to Collboard (whole directory)
  * TODO: Maybe [🏌️‍♂️] change ACRY toString => (toHex) toRbg when there will be toRgb and toRgba united
  * TODO: Convert getters to methods - getters only for values
  * TODO: Write tests
@@ -340,9 +328,6 @@ export class Color {
  * TODO: [0] Should be fromRgbString and fromRgbaString one or two functions + one or two regex
  * TODO: Use rgb, rgba, hsl for testing and parsing and use SAME regex
  * TODO: Regex for rgb, rgba, hsl does not support all options like deg, rad, turn,...
- * TODO: Getters (like negative and grayscale) should be a static method - same as vector.half()
- * TODO: Random color
  * TODO: Convolution matrix
  * TODO: Maybe connect with textures
- * TODO: Check fromHex3 and fromHex6 with RegExp and then it can be public
  */

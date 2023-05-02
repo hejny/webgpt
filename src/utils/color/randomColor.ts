@@ -12,3 +12,8 @@ export function randomColor(): Color {
             .padStart(6, '0'),
     );
 }
+
+/**
+ * TODO: !!! Use Internally Color.fromValues
+ * TODO: !!! randomColorWithAlpha
+ */
