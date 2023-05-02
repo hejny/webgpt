@@ -45,7 +45,7 @@ export async function createImageInNode(src: string): Promise<Image> {
       const alpha = buffer[index + 3] / 255;
 
       // Create a color object from the pixel values
-      const color = new Color(red, green, blue, alpha);
+      const color = Color.fromValues(red, green, blue, alpha);
 
       // Set the color of the pixel in the image object
       image.setPixel({ x: j, y: i }, color);
