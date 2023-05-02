@@ -21,6 +21,20 @@ export interface IImageColorStats {
 
     // The least frequent color of the image as a Color object
     leastFrequentColor: WithTake<Color>;
+
+    /*
+    TODO:
+
+    // The most saturated color of the image as a Color object
+    mostSaturatedColor: WithTake<Color>;
+
+    // The most isolated color of the image as a Color object
+    mostIsolatedColor: WithTake<Color>;
+
+    // The most grouped color of the image as a Color object
+    mostGroupedColor: WithTake<Color>;
+
+    */
 }
 
 /**
@@ -116,3 +130,7 @@ export function computeImageColorStats(image: Image): IImageColorStats {
         leastFrequentColor: leastFrequentColor!,
     };
 }
+
+/**
+ * TODO: Maybe pause inside with some util like forImmediate, forAnimationFrame
+ */
