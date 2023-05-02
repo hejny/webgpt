@@ -4,12 +4,14 @@ import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComp
 
 /**
  * A function that returns a wallpaper component based on the router query ⁘
- * 
+ *
  * @returns {IWallpaperComponent} A wallpaper component.
  */
 export function useWallpaper(): IWallpaperComponent {
     const router = useRouter();
     const { wallpaper: wallpaperId } = router.query;
+
+    console.log('!!!', 'useWallpaper', wallpaperId);
 
     const Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;
 
