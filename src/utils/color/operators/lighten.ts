@@ -9,11 +9,11 @@ import { IColorTransformer } from './IColorTransformer';
  *
  * @param amount from 0 to 1
  */
-export function lighten(delta: number): IColorTransformer {
+export function lighten(amount: number): IColorTransformer {
     return ({ red, green, blue, alpha }: Color) => {
         // tslint:disable-next-line:prefer-const
         let [h, s, l] = rgbToHsl(red, green, blue);
-        l += delta;
+        l += amount;
         l = clamp(l, 0, 1);
         const [r, g, b] = hslToRgb(h, s, l);
 
