@@ -20,9 +20,9 @@ export default function IndexPage({ lang }: any) {
                 {/* TODO: Util <SkinStyle/> + TODO: Allow partial ISkin*/}
                 <style>{`
                     :root {
-                        --normal-text-color: ${skin.normalTextColor.toString()};
-                        --highlighted-text-color: ${skin.highlightedTextColor.toString()};
-                        --footer-text-color: ${skin.footerTextColor.toString()};
+                        --normal-text-color: ${skin.normalTextColor.toHex()};
+                        --highlighted-text-color: ${skin.highlightedTextColor.toHex()};
+                        --footer-text-color: ${skin.footerTextColor.toHex()};
                         --main-background: ${skin.mainBackground};
                         --footer-background: ${skin.footerBackground}
                     }

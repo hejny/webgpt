@@ -1,6 +1,7 @@
 import { Color } from '../color/Color';
 import { darken } from '../color/operators/darken';
 import { furthest } from '../color/operators/furthest';
+import { grayscale } from '../color/operators/grayscale';
 import { mix } from '../color/operators/mix';
 import { useWallpaper } from './useWallpaper';
 
@@ -29,20 +30,31 @@ export function useSkin(): ISkin {
 
     const highlightedTextColor = mostFrequentColor.then(furthest(Color.get('black'), Color.get('white')));
     const normalTextColor = highlightedTextColor.then(mix(0.2, mostFrequentColor));
+
+    const mainBackground = `linear-gradient(to bottom, ${mostFrequentColor.toHex()}, ${mostFrequentColor
+        .then(grayscale)
+        .toHex()}),
+        url(../../public/patterns/simple/grey.png)`;
+
     const footerTextColor = Color.fromHex('#ccc');
+    const footerBackground = `linear-gradient(to bottom, ${footerTextColor.negative
+        .then(darken(0.2))
+        .toHex()}, ${footerTextColor.negative.then(darken(0.3)).toHex()}),
+                url(../../public/patterns/simple/grey.png)`;
+
+    console.log({
+        mostFrequentColor: mostFrequentColor.toHex(),
+        highlightedTextColor: highlightedTextColor.toHex(),
+        normalTextColor: normalTextColor.toHex(),
+        mainBackground,
+    });
 
     return {
         normalTextColor,
         highlightedTextColor,
         footerTextColor,
-
-        mainBackground: `linear-gradient(to bottom, ${mostFrequentColor.toString()}, ${mostFrequentColor.grayscale //.addLightness(-0.1)
-            .toString()}),
-            url(../../public/patterns/simple/grey.png)`,
-        footerBackground: `linear-gradient(to bottom, ${footerTextColor.negative
-            .then(darken(0.2))
-            .toString()}, ${footerTextColor.negative.then(darken(-0.3)).toString()}),
-                url(../../public/patterns/simple/grey.png)`,
+        mainBackground,
+        footerBackground,
     };
 }
 
