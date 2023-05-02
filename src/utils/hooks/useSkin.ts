@@ -47,5 +47,5 @@ export function useSkin(): ISkin {
 }
 
 /**
- * TODO: !!!! Footer always dark BUT dynamic from Wallpaper
+ * TODO: Make footer dynamic from Wallpaper
  */
