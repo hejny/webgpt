@@ -86,7 +86,7 @@ export function computeImageColorStats(image: Image): IImageColorStats {
 
     // Calculate the average color by dividing the total values by the number of pixels
     const pixelCount = image.size.x * image.size.y;
-    averageColor = new Color(
+    averageColor = Color.fromValues(
         Math.round(totalRed / pixelCount),
         Math.round(totalGreen / pixelCount),
         Math.round(totalBlue / pixelCount),
