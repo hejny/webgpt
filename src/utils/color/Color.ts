@@ -26,7 +26,7 @@ export class Color {
     /**
      * Creates a new Color instance from miscellaneous formats
      * - It can receive Color instance and just return the same instance
-     * - It can receive color in string format for example #009edd, `rgb(0,158,221)`, rgb(0%,62%,86.7%), hsl(197.1,100%,43.3%)
+     * - It can receive color in string format for example `#009edd`, `rgb(0,158,221)`, `rgb(0%,62%,86.7%)`, `hsl(197.1,100%,43.3%)`
      *
      * Note: This is not including fromImage because detecting color from an image is heavy task which requires async stuff and we cannot safely determine with overloading if return value will be a promise
      *
@@ -47,7 +47,7 @@ export class Color {
     /**
      * Creates a new Color instance from miscellaneous string formats
      *
-     * @param color as a string for example #009edd, rgb(0,158,221), rgb(0%,62%,86.7%), hsl(197.1,100%,43.3%), red, darkgrey,...
+     * @param color as a string for example `#009edd`, `rgb(0,158,221)`, `rgb(0%,62%,86.7%)`, `hsl(197.1,100%,43.3%)`, `red`, `darkgrey`,...
      * @returns Color object
      */
     public static fromString(color: string_color): WithTake<Color> {
@@ -78,9 +78,23 @@ export class Color {
     }
 
     /**
+     * Gets common color frol library
+     *
+     * @param key as a css string like `midnightblue`
+     * @returns Color object
+     */
+    public static get(key: keyof typeof CSS_COLORS): WithTake<Color> {
+        if (!CSS_COLORS[key]) {
+            throw new Error(`"${key}" is not a common css color.`);
+        }
+
+        return Color.fromString(CSS_COLORS[key]);
+    }
+
+    /**
      * Creates a new Color instance from average color of given image
      *
-     * @param image as a source for example data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjYJh39z8ABJgCe/ZvAS4AAAAASUVORK5CYII=
+     * @param image as a source for example `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAA1JREFUGFdjYJh39z8ABJgCe/ZvAS4AAAAASUVORK5CYII=`
      * @returns Color object
      */
     public static async fromImage(image: string_url_image): Promise<Color> {
@@ -91,7 +105,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in hex format
      *
-     * @param color in hex for example #009edd, 009edd, #555,...
+     * @param color in hex for example `#009edd`, `009edd`, `#555`,...
      * @returns Color object
      */
     public static fromHex(hex: string_color): WithTake<Color> {
@@ -119,7 +133,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in hex format with 3 color digits (without alpha chanell)
      *
-     * @param color in hex for example 09d
+     * @param color in hex for example `09d`
      * @returns Color object
      */
     private static fromHex3(hex: string_color): WithTake<Color> {
@@ -132,7 +146,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in hex format with 6 color digits (without alpha chanell)
      *
-     * @param color in hex for example 009edd
+     * @param color in hex for example `009edd`
      * @returns Color object
      */
     private static fromHex6(hex: string_color): WithTake<Color> {
@@ -145,7 +159,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in hex format with 8 color digits (with alpha chanell)
      *
-     * @param color in hex for example 009edd
+     * @param color in hex for example `009edd`
      * @returns Color object
      */
     private static fromHex8(hex: string_color): WithTake<Color> {
@@ -159,7 +173,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in hsl format
      *
-     * @param color as a hsl for example  hsl(197.1,100%,43.3%)
+     * @param color as a hsl for example `hsl(197.1,100%,43.3%)`
      * @returns Color object
      */
     public static fromHsl(hsl: string_color): WithTake<Color> {
@@ -170,7 +184,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in rgb format
      *
-     * @param color as a rgb for example rgb(0,158,221), rgb(0%,62%,86.7%)
+     * @param color as a rgb for example `rgb(0,158,221)`, `rgb(0%,62%,86.7%)`
      * @returns Color object
      */
     public static fromRgbString(rgb: string_color): WithTake<Color> {
@@ -182,7 +196,7 @@ export class Color {
     /**
      * Creates a new Color instance from color in rbga format
      *
-     * @param color as a rgba for example rgba(0,158,221,0.5), rgb(0%,62%,86.7%,50%)
+     * @param color as a rgba for example `rgba(0,158,221,0.5)`, `rgb(0%,62%,86.7%,50%)`
      * @returns Color object
      */
     public static fromRgbaString(rgba: string_color): WithTake<Color> {

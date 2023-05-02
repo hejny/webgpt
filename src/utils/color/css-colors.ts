@@ -5,7 +5,7 @@ import { string_color } from './Color';
  *
  * @not-collboard-modules-sdk Use Color object for getting common colors instead
  */
-export const CSS_COLORS: Record<string_color, string_color> = {
+export const CSS_COLORS = {
     transparent: 'rgba(0,0,0,0)',
     aliceblue: '#f0f8ff',
     antiquewhite: '#faebd7',
@@ -155,4 +155,4 @@ export const CSS_COLORS: Record<string_color, string_color> = {
     whitesmoke: '#f5f5f5',
     yellow: '#ffff00',
     yellowgreen: '#9acd32',
-};
+} as const;
