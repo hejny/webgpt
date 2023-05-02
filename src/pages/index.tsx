@@ -1,6 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
+import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
@@ -8,6 +9,7 @@ import { WelcomeSection } from '../sections/10-Welcome/Welcome';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { useWallpaper } from '../utils/hooks/useWallpaper';
+import { skinFromWallpaper } from '../utils/skinFromWallpaper';
 
 export default function IndexPage({ lang }: any) {
     const Wallpaper = useWallpaper();
@@ -15,13 +17,16 @@ export default function IndexPage({ lang }: any) {
     return (
         <>
             <AppHead />
-            <SkinStyle />
+            {Wallpaper && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
-                    {/* TODO: Do some system for multiple pages */}
-                    {Wallpaper && <Wallpaper />}
+                    {Wallpaper && (
+                        <HeaderWallpaper>
+                            <Wallpaper />
+                        </HeaderWallpaper>
+                    )}
                 </header>
                 <div className={styles.background}>
                     <TiledBackground />

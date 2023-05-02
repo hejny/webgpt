@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { Vector } from 'xyzt';
 import { generated_wallpapers } from '../../assets/ai/wallpaper';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
+import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../components/ImagineTag/ImagineTag';
 import { Item } from '../components/Items/Item';
 import { Items } from '../components/Items/Items';
 import { Section } from '../components/Section/Section';
+import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
 import { WelcomeSection } from '../sections/10-Welcome/Welcome';
@@ -15,6 +17,7 @@ import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
 import { randomItem } from '../utils/color/randomItem';
+import { skinFromWallpaper } from '../utils/skinFromWallpaper';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
@@ -24,12 +27,16 @@ export default function GalleryPage() {
     return (
         <>
             <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
+            {Wallpaper && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
-                    {/* TODO: Do some system for multiple pages */}
-                    <Wallpaper />
+                    {Wallpaper && (
+                        <HeaderWallpaper>
+                            <Wallpaper />
+                        </HeaderWallpaper>
+                    )}
                 </header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
