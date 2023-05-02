@@ -51,8 +51,8 @@ export class Color {
      * @returns Color object
      */
     public static fromString(color: string_color): WithTake<Color> {
-        if (CSS_COLORS[color]) {
-            return Color.fromString(CSS_COLORS[color]);
+        if (CSS_COLORS[color as keyof typeof CSS_COLORS]) {
+            return Color.fromString(CSS_COLORS[color as keyof typeof CSS_COLORS]);
 
             // -----
         } else if (/^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color)) {
