@@ -77,7 +77,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                         speed: 3 /* 7 */,
                         bias: 0.75,
                         width: 1.5,
-                        style: randomItem('Fancy' /* , 'FancyTall' */),
+                        style: randomItem('CursiveSeparated' /* , 'FancyTall' */),
                         svgElement,
                     });
                 }}
