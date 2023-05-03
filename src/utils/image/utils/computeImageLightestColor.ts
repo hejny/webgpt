@@ -1,6 +1,8 @@
 import { Color } from '../../color/Color';
+import { colorLuminance } from '../../color/utils/colorLuminance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { Image } from '../Image';
+import { getImageUniqueColors } from './getImageUniqueColors';
 
 /**
  * @@@
