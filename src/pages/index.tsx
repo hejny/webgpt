@@ -21,13 +21,7 @@ export default function IndexPage({ lang }: any) {
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>
-                    {Wallpaper && (
-                        <HeaderWallpaper>
-                            <Wallpaper />
-                        </HeaderWallpaper>
-                    )}
-                </header>
+                <header>{Wallpaper && <HeaderWallpaper {...{ Wallpaper }} />}</header>
                 <div className={styles.background}>
                     <TiledBackground />
                 </div>
