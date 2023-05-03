@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import { removeMarkdownFormatting } from './removeMarkdownFormatting';
 
 describe('removeMarkdownFormatting', () => {
