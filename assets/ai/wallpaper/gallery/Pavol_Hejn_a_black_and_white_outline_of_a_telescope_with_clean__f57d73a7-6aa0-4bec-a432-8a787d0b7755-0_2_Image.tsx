@@ -27,6 +27,8 @@ export function ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a
             src={source}
             draggable="false"
             placeholder="blur"
+            width={1920}
+            height={1080}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );

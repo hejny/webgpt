@@ -30,6 +30,7 @@ export function HandwrittenText(props: HandwrittenTextProps) {
     // TODO: Can be isMounted done better
     let isMounted: boolean;
     useEffect(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         isMounted = true;
         return () => {
             isMounted = false;
@@ -60,14 +61,9 @@ export function HandwrittenText(props: HandwrittenTextProps) {
 
                     await forTime(1000 /* <- !!! How much is the true delay, can it work without delay? */);
 
-                    console.log('!!!!', 'HandwrittenText', color.toHex());
-
                     if (!isMounted) {
-                        console.log('!!!!', 'Not mounted');
                         return;
                     }
-
-                    console.log('!!!!', 'Mounted');
 
                     await handwriteText({
                         // TODO: !!! Center

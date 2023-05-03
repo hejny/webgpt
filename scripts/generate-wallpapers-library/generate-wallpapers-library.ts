@@ -136,6 +136,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
                         src={source}
                         draggable="false"
                         placeholder="blur"
+                        width={1920}
+                        height={1080}
                         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                     />
                 );
