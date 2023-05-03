@@ -31,13 +31,7 @@ export default function GalleryPage() {
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>
-                    {Wallpaper && (
-                        <HeaderWallpaper>
-                            <Wallpaper />
-                        </HeaderWallpaper>
-                    )}
-                </header>
+                <header>{Wallpaper && <HeaderWallpaper {...{ Wallpaper }} />}</header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
                     <TiledBackground />
