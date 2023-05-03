@@ -7,17 +7,17 @@ import { loadAndRunExternalScript } from './loadAndRunExternalScript';
  * @type {Object}
  */
 const HandwrittenStyle = {
-    // TODO: !!! Name the styles
+    // TODO: !!! extract to properties or flags - italic, Fancy, joined + italic vs cursive 
     Random: '-', // –
     FancyTall: 44,
-    Fancy: 54, // 2
-    Xxxxx3: 23, // 3
-    Xxxxx4: 1, // 4
-    Xxxxx5: 19, // 5
-    Xxxxx6: 6, // 6
-    Xxxxx7: 30, // 7
-    Xxxxx8: 11, // 8
-    Xxxxx9: 21, // 9
+    FancyJoined: 54, // 2
+    BigSeparated: 23, // 3
+    FullJoined: 1, // 4
+    PartiallyJoinedShort: 19, // 5
+    CursiveFancyJoined: 6, // 6
+    CursiveSeparated: 30, // 7
+    BigPartiallyPartiallyJoined: 11, // 8
+    SeparatedMono: 21, // 9
 } as const;
 
 /**
