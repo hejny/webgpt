@@ -1,4 +1,4 @@
-import { IImageColorStats } from '../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../src/utils/image/utils/0-computeImageColorStats';
 
 export interface IWallpaperComponent {
     metadata: IWallpaperMetadata;

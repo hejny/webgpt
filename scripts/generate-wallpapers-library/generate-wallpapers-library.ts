@@ -117,7 +117,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             
             import Image from 'next/image';
             import { Color } from '../../../../src/utils/color/Color';
-            import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+            import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
             import { IWallpaperMetadata } from '../IWallpaperComponent';
             import metadata from '${metadataImportPath}';
             import source from '${wallpaperImportPath}';
