@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.json';
 import a_sign_on_a_wooden_pole_next_to_bushes_in_the_style_28f0f9b8_25a3_4bc0_9253_f02f7ecc243a_0_3 from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.png';
+import metadata from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a sign on a wooden pole next to bushes in the style  28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0

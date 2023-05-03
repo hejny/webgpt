@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51-97f4-4582-950d-5e56f61a020f-0_2.json';
 import a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51_97f4_4582_950d_5e56f61a020f_0_2 from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51-97f4-4582-950d-5e56f61a020f-0_2.png';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_a93a6c51-97f4-4582-950d-5e56f61a020f-0_2.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper featuring a matrix of futuristic data vi a93a6c51-97f4-4582-950d-5e56f61a020f-0

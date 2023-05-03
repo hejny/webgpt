@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__15518c97-586d-4bfa-99d8-de22ea75c96e-0_1.json';
 import a_bridge_standing_over_a_field_in_the_style_of_dark_5518c97_586d_4bfa_99d8_de22ea75c96e_0_1_1 from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__15518c97-586d-4bfa-99d8-de22ea75c96e-0_1.png';
+import metadata from './Pavol_Hejn_a_bridge_standing_over_a_field_in_the_style_of_dark__15518c97-586d-4bfa-99d8-de22ea75c96e-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a bridge standing over a field in the style of dark 5518c97-586d-4bfa-99d8-de22ea75c96e-0 1

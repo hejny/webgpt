@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.json';
 import a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b_5783_4171_8653_e62c10ec7b55_0_3 from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.png';
+import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a geometric design in shades of purple and pink insp fd96e87b-5783-4171-8653-e62c10ec7b55-0

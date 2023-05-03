@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_3.json';
 import blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5_247b_4fad_b0e6_a3faffccc888_0_3 from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_3.png';
+import metadata from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_3.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of blue whale as black and white illustration with thin f1b13fc5-247b-4fad-b0e6-a3faffccc888-0

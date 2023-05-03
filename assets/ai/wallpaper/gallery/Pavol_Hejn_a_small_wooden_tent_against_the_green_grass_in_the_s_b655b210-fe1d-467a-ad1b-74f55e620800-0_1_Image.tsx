@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_1.json';
 import a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210_fe1d_467a_ad1b_74f55e620800_0_1 from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_1.png';
+import metadata from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a small wooden tent against the green grass in the s b655b210-fe1d-467a-ad1b-74f55e620800-0

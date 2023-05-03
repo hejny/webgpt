@@ -8,9 +8,11 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__fa1f2f53-8a09-46f3-8287-ac5ed287907e-0_1.json';
 import a_wallpaper_with_a_simple_illustration_of_a_virtual_fa1f2f53_8a09_46f3_8287_ac5ed287907e_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__fa1f2f53-8a09-46f3-8287-ac5ed287907e-0_1.png';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__fa1f2f53-8a09-46f3-8287-ac5ed287907e-0_1.json';
+import { IWallpaperMetadata } from '../IWallpaperComponent';
+import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { Color } from '../../../../src/utils/color/Color';
 
 /**
  * Image of a wallpaper with a simple illustration of a virtual  fa1f2f53-8a09-46f3-8287-ac5ed287907e-0
