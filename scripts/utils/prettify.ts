@@ -8,7 +8,7 @@ export async function prettify(fileContents: string, parser = 'typescript'): Pro
     try {
         return prettier.format(fileContents, {
             parser,
-            ...JSON.parse(await promisify(readFile)(join(process.cwd(), '.prettierrc'), 'utf8')),
+            ...(JSON.parse(await promisify(readFile)(join(process.cwd(), '.prettierrc'), 'utf8')) as any),
         });
     } catch (error) {
         if (!(error instanceof Error)) {
