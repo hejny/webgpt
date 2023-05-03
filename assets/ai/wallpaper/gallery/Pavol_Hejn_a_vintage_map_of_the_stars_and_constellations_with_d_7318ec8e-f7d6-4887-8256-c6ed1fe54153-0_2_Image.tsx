@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_vintage_map_of_the_stars_and_constellations_with_d_7318ec8e_f7d6_4887_8256_c6ed1fe54153_0_2 from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_7318ec8e-f7d6-4887-8256-c6ed1fe54153-0_2.png';
-import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_7318ec8e-f7d6-4887-8256-c6ed1fe54153-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_7318ec8e-f7d6-4887-8256-c6ed1fe54153-0_2.json';
+import a_vintage_map_of_the_stars_and_constellations_with_d_7318ec8e_f7d6_4887_8256_c6ed1fe54153_0_2 from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_7318ec8e-f7d6-4887-8256-c6ed1fe54153-0_2.png';
 
 /**
  * Image of a vintage map of the stars and constellations with d 7318ec8e-f7d6-4887-8256-c6ed1fe54153-0

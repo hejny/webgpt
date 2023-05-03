@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photorealistic_image_of_the_earth_from_space_with_75fce806_594b_474b_9f2e_a908c90002e7_0_3 from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.png';
-import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.json';
+import a_photorealistic_image_of_the_earth_from_space_with_75fce806_594b_474b_9f2e_a908c90002e7_0_3 from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.png';
 
 /**
  * Image of a photorealistic image of the earth from space with  75fce806-594b-474b-9f2e-a908c90002e7-0

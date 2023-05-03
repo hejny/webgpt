@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_retro_futuristic_wallpaper_featuring_a_vintage_ill_a959e3e2_aef8_47c0_84cd_c6fd3b181915_0_2 from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_a959e3e2-aef8-47c0-84cd-c6fd3b181915-0_2.png';
-import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_a959e3e2-aef8-47c0-84cd-c6fd3b181915-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_a959e3e2-aef8-47c0-84cd-c6fd3b181915-0_2.json';
+import a_retro_futuristic_wallpaper_featuring_a_vintage_ill_a959e3e2_aef8_47c0_84cd_c6fd3b181915_0_2 from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_a959e3e2-aef8-47c0-84cd-c6fd3b181915-0_2.png';
 
 /**
  * Image of a retro futuristic wallpaper featuring a vintage ill a959e3e2-aef8-47c0-84cd-c6fd3b181915-0

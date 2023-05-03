@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_simple_illustration_of_a_virtual_2ba7c406_5a5f_4a5d_ad46_c8945d2c3c98_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_3.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_3.json';
+import a_wallpaper_with_a_simple_illustration_of_a_virtual_2ba7c406_5a5f_4a5d_ad46_c8945d2c3c98_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_3.png';
 
 /**
  * Image of a wallpaper with a simple illustration of a virtual  2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0

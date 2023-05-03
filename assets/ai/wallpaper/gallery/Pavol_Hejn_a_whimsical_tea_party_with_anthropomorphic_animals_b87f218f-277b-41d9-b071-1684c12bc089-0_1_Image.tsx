@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f_277b_41d9_b071_1684c12bc089_0_1 from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f-277b-41d9-b071-1684c12bc089-0_1.png';
-import metadata from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f-277b-41d9-b071-1684c12bc089-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f-277b-41d9-b071-1684c12bc089-0_1.json';
+import a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f_277b_41d9_b071_1684c12bc089_0_1 from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_b87f218f-277b-41d9-b071-1684c12bc089-0_1.png';
 
 /**
  * Image of a whimsical tea party with anthropomorphic animals b87f218f-277b-41d9-b071-1684c12bc089-0

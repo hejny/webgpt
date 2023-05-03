@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b_4619_4470_93e1_c64b833094b3_0_0 from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_0.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_0.json';
+import a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b_4619_4470_93e1_c64b833094b3_0_0 from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_0.png';
 
 /**
  * Image of a group of ainauts exploring an underground cavern o 4f79da1b-4619-4470-93e1-c64b833094b3-0

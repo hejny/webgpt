@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import this_is_a_large_field_in_the_style_of_richly_colored_fd48da16_a3c2_4262_bf66_e0ded7fc9f6b_0_2 from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_2.png';
-import metadata from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_2.json';
+import this_is_a_large_field_in_the_style_of_richly_colored_fd48da16_a3c2_4262_bf66_e0ded7fc9f6b_0_2 from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_2.png';
 
 /**
  * Image of this is a large field in the style of richly colored fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0

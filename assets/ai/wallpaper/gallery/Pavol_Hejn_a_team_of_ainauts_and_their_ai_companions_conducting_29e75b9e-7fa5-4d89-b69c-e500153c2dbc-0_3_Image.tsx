@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_and_their_ai_companions_conducting_29e75b9e_7fa5_4d89_b69c_e500153c2dbc_0_3 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_conducting_29e75b9e-7fa5-4d89-b69c-e500153c2dbc-0_3.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_conducting_29e75b9e-7fa5-4d89-b69c-e500153c2dbc-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_conducting_29e75b9e-7fa5-4d89-b69c-e500153c2dbc-0_3.json';
+import a_team_of_ainauts_and_their_ai_companions_conducting_29e75b9e_7fa5_4d89_b69c_e500153c2dbc_0_3 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_conducting_29e75b9e-7fa5-4d89-b69c-e500153c2dbc-0_3.png';
 
 /**
  * Image of a team of ainauts and their ai companions conducting 29e75b9e-7fa5-4d89-b69c-e500153c2dbc-0

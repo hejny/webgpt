@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_standing_on_the_surface_of_a_red_e04ecc24_3900_4694_b550_f31df323741e_0_0 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_0.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_0.json';
+import a_group_of_ainauts_standing_on_the_surface_of_a_red_e04ecc24_3900_4694_b550_f31df323741e_0_0 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_0.png';
 
 /**
  * Image of a group of ainauts standing on the surface of a red  e04ecc24-3900-4694-b550-f31df323741e-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_image_of_a_rocket_launching_into_space_with_a_tra_cf5af743_d673_41dc_b7b1_ab3d1ee1a0a4_0_0 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_cf5af743-d673-41dc-b7b1-ab3d1ee1a0a4-0_0.png';
-import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_cf5af743-d673-41dc-b7b1-ab3d1ee1a0a4-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_cf5af743-d673-41dc-b7b1-ab3d1ee1a0a4-0_0.json';
+import an_image_of_a_rocket_launching_into_space_with_a_tra_cf5af743_d673_41dc_b7b1_ab3d1ee1a0a4_0_0 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_cf5af743-d673-41dc-b7b1-ab3d1ee1a0a4-0_0.png';
 
 /**
  * Image of an image of a rocket launching into space with a tra cf5af743-d673-41dc-b7b1-ab3d1ee1a0a4-0

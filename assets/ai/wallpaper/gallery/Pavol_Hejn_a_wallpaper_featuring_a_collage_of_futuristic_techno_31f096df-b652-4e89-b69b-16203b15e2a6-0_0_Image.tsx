@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df_b652_4e89_b69b_16203b15e2a6_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_0.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_0.json';
+import a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df_b652_4e89_b69b_16203b15e2a6_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_0.png';
 
 /**
  * Image of a wallpaper featuring a collage of futuristic techno 31f096df-b652-4e89-b69b-16203b15e2a6-0

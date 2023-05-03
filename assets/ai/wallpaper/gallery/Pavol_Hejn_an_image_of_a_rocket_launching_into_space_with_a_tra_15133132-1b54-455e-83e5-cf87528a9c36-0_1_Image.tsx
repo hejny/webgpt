@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_image_of_a_rocket_launching_into_space_with_a_tra5133132_1b54_455e_83e5_cf87528a9c36_0_1_1 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.png';
-import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.json';
+import an_image_of_a_rocket_launching_into_space_with_a_tra5133132_1b54_455e_83e5_cf87528a9c36_0_1_1 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.png';
 
 /**
  * Image of an image of a rocket launching into space with a tra5133132-1b54-455e-83e5-cf87528a9c36-0 1

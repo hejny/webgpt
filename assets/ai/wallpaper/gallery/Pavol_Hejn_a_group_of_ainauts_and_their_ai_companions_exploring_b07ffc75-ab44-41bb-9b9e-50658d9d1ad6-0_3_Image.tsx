@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_and_their_ai_companions_exploring_b07ffc75_ab44_41bb_9b9e_50658d9d1ad6_0_3 from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_b07ffc75-ab44-41bb-9b9e-50658d9d1ad6-0_3.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_b07ffc75-ab44-41bb-9b9e-50658d9d1ad6-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_b07ffc75-ab44-41bb-9b9e-50658d9d1ad6-0_3.json';
+import a_group_of_ainauts_and_their_ai_companions_exploring_b07ffc75_ab44_41bb_9b9e_50658d9d1ad6_0_3 from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_b07ffc75-ab44-41bb-9b9e-50658d9d1ad6-0_3.png';
 
 /**
  * Image of a group of ainauts and their ai companions exploring b07ffc75-ab44-41bb-9b9e-50658d9d1ad6-0

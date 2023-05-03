@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719_b4e3_42cd_8adf_dd0bc66be8e7_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_2.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_2.json';
+import a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719_b4e3_42cd_8adf_dd0bc66be8e7_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_2.png';
 
 /**
  * Image of a wallpaper with a simple graphic of an abstract cir b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0

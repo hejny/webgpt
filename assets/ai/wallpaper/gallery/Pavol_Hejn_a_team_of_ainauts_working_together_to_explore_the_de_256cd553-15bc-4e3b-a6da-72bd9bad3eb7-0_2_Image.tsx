@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_working_together_to_explore_the_de56cd553_15bc_4e3b_a6da_72bd9bad3eb7_0_2_2 from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_2.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_2.json';
+import a_team_of_ainauts_working_together_to_explore_the_de56cd553_15bc_4e3b_a6da_72bd9bad3eb7_0_2_2 from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_2.png';
 
 /**
  * Image of a team of ainauts working together to explore the de56cd553-15bc-4e3b-a6da-72bd9bad3eb7-0 2

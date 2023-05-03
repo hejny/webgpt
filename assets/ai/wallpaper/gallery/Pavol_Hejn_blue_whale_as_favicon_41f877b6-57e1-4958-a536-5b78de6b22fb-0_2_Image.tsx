@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import blue_whale_as_favicon_41f877b6_57e1_4958_a536_5b78de6b22fb_0_2 from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.png';
-import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.json';
+import blue_whale_as_favicon_41f877b6_57e1_4958_a536_5b78de6b22fb_0_2 from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.png';
 
 /**
  * Image of blue whale as favicon 41f877b6-57e1-4958-a536-5b78de6b22fb-0

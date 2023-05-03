@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1_a0f5_40af_8cb2_2ad681c6f23f_0_3 from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_3.png';
-import metadata from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_3.json';
+import a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1_a0f5_40af_8cb2_2ad681c6f23f_0_3 from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_3.png';
 
 /**
  * Image of a futuristic laboratory where ainauts use ai and adv d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0

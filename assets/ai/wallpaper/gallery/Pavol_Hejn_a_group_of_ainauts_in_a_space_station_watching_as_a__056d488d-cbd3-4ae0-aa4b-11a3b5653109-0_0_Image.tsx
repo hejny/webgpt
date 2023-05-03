@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_in_a_space_station_watching_as_a_56d488d_cbd3_4ae0_aa4b_11a3b5653109_0_0_0 from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_0.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_0.json';
+import a_group_of_ainauts_in_a_space_station_watching_as_a_56d488d_cbd3_4ae0_aa4b_11a3b5653109_0_0_0 from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_0.png';
 
 /**
  * Image of a group of ainauts in a space station watching as a 56d488d-cbd3-4ae0-aa4b-11a3b5653109-0 0

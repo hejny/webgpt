@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb_590b_4885_9010_fa8fac87b19b_0_0 from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_0.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_0.json';
+import a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb_590b_4885_9010_fa8fac87b19b_0_0 from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_0.png';
 
 /**
  * Image of a team of ainauts in a zero gravity chamber conducti c98916eb-590b-4885-9010-fa8fac87b19b-0

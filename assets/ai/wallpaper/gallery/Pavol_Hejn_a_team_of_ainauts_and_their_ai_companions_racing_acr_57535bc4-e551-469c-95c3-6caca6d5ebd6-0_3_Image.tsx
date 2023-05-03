@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_and_their_ai_companions_racing_acr_57535bc4_e551_469c_95c3_6caca6d5ebd6_0_3 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_57535bc4-e551-469c-95c3-6caca6d5ebd6-0_3.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_57535bc4-e551-469c-95c3-6caca6d5ebd6-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_57535bc4-e551-469c-95c3-6caca6d5ebd6-0_3.json';
+import a_team_of_ainauts_and_their_ai_companions_racing_acr_57535bc4_e551_469c_95c3_6caca6d5ebd6_0_3 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_57535bc4-e551-469c-95c3-6caca6d5ebd6-0_3.png';
 
 /**
  * Image of a team of ainauts and their ai companions racing acr 57535bc4-e551-469c-95c3-6caca6d5ebd6-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_minimalist_graphic_of_a_futuristic_cityscape_with_8e3174ec_9d68_44a6_b5a0_11c81e35e2ce_0_2 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__8e3174ec-9d68-44a6-b5a0-11c81e35e2ce-0_2.png';
-import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__8e3174ec-9d68-44a6-b5a0-11c81e35e2ce-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__8e3174ec-9d68-44a6-b5a0-11c81e35e2ce-0_2.json';
+import a_minimalist_graphic_of_a_futuristic_cityscape_with_8e3174ec_9d68_44a6_b5a0_11c81e35e2ce_0_2 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__8e3174ec-9d68-44a6-b5a0-11c81e35e2ce-0_2.png';
 
 /**
  * Image of a minimalist graphic of a futuristic cityscape with  8e3174ec-9d68-44a6-b5a0-11c81e35e2ce-0

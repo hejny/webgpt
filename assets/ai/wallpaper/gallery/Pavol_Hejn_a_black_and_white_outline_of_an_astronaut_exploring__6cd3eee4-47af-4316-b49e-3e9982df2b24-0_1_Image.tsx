@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_black_and_white_outline_of_an_astronaut_exploring_6cd3eee4_47af_4316_b49e_3e9982df2b24_0_1 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.png';
-import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.json';
+import a_black_and_white_outline_of_an_astronaut_exploring_6cd3eee4_47af_4316_b49e_3e9982df2b24_0_1 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.png';
 
 /**
  * Image of a black and white outline of an astronaut exploring  6cd3eee4-47af-4316-b49e-3e9982df2b24-0

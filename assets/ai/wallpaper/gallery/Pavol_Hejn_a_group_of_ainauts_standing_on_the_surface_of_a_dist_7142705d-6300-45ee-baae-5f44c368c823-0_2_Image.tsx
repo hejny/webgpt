@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_standing_on_the_surface_of_a_dist_7142705d_6300_45ee_baae_5f44c368c823_0_2 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_7142705d-6300-45ee-baae-5f44c368c823-0_2.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_7142705d-6300-45ee-baae-5f44c368c823-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_7142705d-6300-45ee-baae-5f44c368c823-0_2.json';
+import a_group_of_ainauts_standing_on_the_surface_of_a_dist_7142705d_6300_45ee_baae_5f44c368c823_0_2 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_7142705d-6300-45ee-baae-5f44c368c823-0_2.png';
 
 /**
  * Image of a group of ainauts standing on the surface of a dist 7142705d-6300-45ee-baae-5f44c368c823-0

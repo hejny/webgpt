@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_futuristic_cityscape_where_ainauts_and_ai_work_tog_f564cd44_bd07_4532_9e69_f62048d5b8e4_0_2 from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_f564cd44-bd07-4532-9e69-f62048d5b8e4-0_2.png';
-import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_f564cd44-bd07-4532-9e69-f62048d5b8e4-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_f564cd44-bd07-4532-9e69-f62048d5b8e4-0_2.json';
+import a_futuristic_cityscape_where_ainauts_and_ai_work_tog_f564cd44_bd07_4532_9e69_f62048d5b8e4_0_2 from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_f564cd44-bd07-4532-9e69-f62048d5b8e4-0_2.png';
 
 /**
  * Image of a futuristic cityscape where ainauts and ai work tog f564cd44-bd07-4532-9e69-f62048d5b8e4-0

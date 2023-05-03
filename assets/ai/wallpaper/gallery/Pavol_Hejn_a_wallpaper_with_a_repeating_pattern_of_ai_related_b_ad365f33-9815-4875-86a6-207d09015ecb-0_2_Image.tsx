@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33_9815_4875_86a6_207d09015ecb_0_2 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33-9815-4875-86a6-207d09015ecb-0_2.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33-9815-4875-86a6-207d09015ecb-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33-9815-4875-86a6-207d09015ecb-0_2.json';
+import a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33_9815_4875_86a6_207d09015ecb_0_2 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_ad365f33-9815-4875-86a6-207d09015ecb-0_2.png';
 
 /**
  * Image of a wallpaper with a repeating pattern of ai related b ad365f33-9815-4875-86a6-207d09015ecb-0

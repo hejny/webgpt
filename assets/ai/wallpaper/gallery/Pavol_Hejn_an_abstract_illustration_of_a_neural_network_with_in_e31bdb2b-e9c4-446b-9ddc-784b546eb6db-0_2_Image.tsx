@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b_e9c4_446b_9ddc_784b546eb6db_0_2 from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_2.png';
-import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_2.json';
+import an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b_e9c4_446b_9ddc_784b546eb6db_0_2 from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_2.png';
 
 /**
  * Image of an abstract illustration of a neural network with in e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0

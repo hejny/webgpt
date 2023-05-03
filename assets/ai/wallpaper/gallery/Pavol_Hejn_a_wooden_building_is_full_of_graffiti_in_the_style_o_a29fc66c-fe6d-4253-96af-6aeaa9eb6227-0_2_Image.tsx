@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c_fe6d_4253_96af_6aeaa9eb6227_0_2 from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.png';
-import metadata from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.json';
+import a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c_fe6d_4253_96af_6aeaa9eb6227_0_2 from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.png';
 
 /**
  * Image of a wooden building is full of graffiti in the style o a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0

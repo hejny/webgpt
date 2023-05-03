@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0_9687_43a2_aeb7_17a3b30b0362_0_3 from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.png';
-import metadata from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.json';
+import an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0_9687_43a2_aeb7_17a3b30b0362_0_3 from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.png';
 
 /**
  * Image of an abstract wallpaper inspired by the shapes and col 028d25e0-9687-43a2-aeb7-17a3b30b0362-0

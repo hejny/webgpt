@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab_66db_466e_90c1_d4baa1159494_0_3 from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_3.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_3.json';
+import a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab_66db_466e_90c1_d4baa1159494_0_3 from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_3.png';
 
 /**
  * Image of a team of ainauts piloting a spacecraft through an a fdda81ab-66db-466e-90c1-d4baa1159494-0

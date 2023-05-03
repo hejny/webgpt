@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_exploring_the_ruins_of_an_ancient5d8dbb7_169e_4f40_ae4b_5da139b56fba_0_0_0 from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.json';
+import a_group_of_ainauts_exploring_the_ruins_of_an_ancient5d8dbb7_169e_4f40_ae4b_5da139b56fba_0_0_0 from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.png';
 
 /**
  * Image of a group of ainauts exploring the ruins of an ancient5d8dbb7-169e-4f40-ae4b-5da139b56fba-0 0

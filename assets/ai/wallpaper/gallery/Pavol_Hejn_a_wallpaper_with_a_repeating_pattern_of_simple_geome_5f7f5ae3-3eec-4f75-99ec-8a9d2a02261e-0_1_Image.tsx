@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3_3eec_4f75_99ec_8a9d2a02261e_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3-3eec-4f75-99ec-8a9d2a02261e-0_1.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3-3eec-4f75-99ec-8a9d2a02261e-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3-3eec-4f75-99ec-8a9d2a02261e-0_1.json';
+import a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3_3eec_4f75_99ec_8a9d2a02261e_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_5f7f5ae3-3eec-4f75-99ec-8a9d2a02261e-0_1.png';
 
 /**
  * Image of a wallpaper with a repeating pattern of simple geome 5f7f5ae3-3eec-4f75-99ec-8a9d2a02261e-0

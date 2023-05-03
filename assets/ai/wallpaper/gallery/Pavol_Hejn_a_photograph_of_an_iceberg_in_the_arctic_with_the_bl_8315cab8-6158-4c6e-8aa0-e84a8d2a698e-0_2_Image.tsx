@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8315cab8_6158_4c6e_8aa0_e84a8d2a698e_0_2 from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8315cab8-6158-4c6e-8aa0-e84a8d2a698e-0_2.png';
-import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8315cab8-6158-4c6e-8aa0-e84a8d2a698e-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8315cab8-6158-4c6e-8aa0-e84a8d2a698e-0_2.json';
+import a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8315cab8_6158_4c6e_8aa0_e84a8d2a698e_0_2 from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8315cab8-6158-4c6e-8aa0-e84a8d2a698e-0_2.png';
 
 /**
  * Image of a photograph of an iceberg in the arctic with the bl 8315cab8-6158-4c6e-8aa0-e84a8d2a698e-0

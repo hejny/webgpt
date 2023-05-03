@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a_e7c0_4c6b_a000_6424894ddfd7_0_3 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a-e7c0-4c6b-a000-6424894ddfd7-0_3.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a-e7c0-4c6b-a000-6424894ddfd7-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a-e7c0-4c6b-a000-6424894ddfd7-0_3.json';
+import a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a_e7c0_4c6b_a000_6424894ddfd7_0_3 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a-e7c0-4c6b-a000-6424894ddfd7-0_3.png';
 
 /**
  * Image of a group of ainauts standing on the surface of a dist 18cbb55a-e7c0-4c6b-a000-6424894ddfd7-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142_36bb_455b_aeac_e31744cd233b_0_1 from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_1.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_1.json';
+import a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142_36bb_455b_aeac_e31744cd233b_0_1 from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_1.png';
 
 /**
  * Image of a team of ainauts piloting a small spacecraft throug bdbfc142-36bb-455b-aeac-e31744cd233b-0

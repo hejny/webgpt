@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_in_high_tech_suits_exploring_a_fr_4cc439d6_6f39_4454_b22d_d848c1001ecf_0_2 from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_a_fr_4cc439d6-6f39-4454-b22d-d848c1001ecf-0_2.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_a_fr_4cc439d6-6f39-4454-b22d-d848c1001ecf-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_a_fr_4cc439d6-6f39-4454-b22d-d848c1001ecf-0_2.json';
+import a_group_of_ainauts_in_high_tech_suits_exploring_a_fr_4cc439d6_6f39_4454_b22d_d848c1001ecf_0_2 from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_a_fr_4cc439d6-6f39-4454-b22d-d848c1001ecf-0_2.png';
 
 /**
  * Image of a group of ainauts in high tech suits exploring a fr 4cc439d6-6f39-4454-b22d-d848c1001ecf-0

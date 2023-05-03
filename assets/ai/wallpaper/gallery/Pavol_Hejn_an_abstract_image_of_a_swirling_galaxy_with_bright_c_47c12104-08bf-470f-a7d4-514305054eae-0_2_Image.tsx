@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104_08bf_470f_a7d4_514305054eae_0_2 from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_2.png';
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_2.json';
+import an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104_08bf_470f_a7d4_514305054eae_0_2 from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_2.png';
 
 /**
  * Image of an abstract image of a swirling galaxy with bright c 47c12104-08bf-470f-a7d4-514305054eae-0

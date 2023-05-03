@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9_ea68_4da7_9535_4964869aeeda_0_1 from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_1.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_1.json';
+import a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9_ea68_4da7_9535_4964869aeeda_0_1 from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_1.png';
 
 /**
  * Image of a group of ainauts conducting experiments on a dista 6c1f7bd9-ea68-4da7-9535-4964869aeeda-0

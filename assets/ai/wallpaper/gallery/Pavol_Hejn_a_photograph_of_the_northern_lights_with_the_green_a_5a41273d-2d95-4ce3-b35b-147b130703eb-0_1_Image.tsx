@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_the_northern_lights_with_the_green_a_5a41273d_2d95_4ce3_b35b_147b130703eb_0_1 from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_5a41273d-2d95-4ce3-b35b-147b130703eb-0_1.png';
-import metadata from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_5a41273d-2d95-4ce3-b35b-147b130703eb-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_5a41273d-2d95-4ce3-b35b-147b130703eb-0_1.json';
+import a_photograph_of_the_northern_lights_with_the_green_a_5a41273d_2d95_4ce3_b35b_147b130703eb_0_1 from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_5a41273d-2d95-4ce3-b35b-147b130703eb-0_1.png';
 
 /**
  * Image of a photograph of the northern lights with the green a 5a41273d-2d95-4ce3-b35b-147b130703eb-0

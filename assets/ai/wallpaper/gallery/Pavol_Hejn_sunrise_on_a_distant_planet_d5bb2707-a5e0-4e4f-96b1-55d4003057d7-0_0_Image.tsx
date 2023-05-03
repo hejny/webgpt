@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import sunrise_on_a_distant_planet_d5bb2707_a5e0_4e4f_96b1_55d4003057d7_0_0 from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_0.png';
-import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_0.json';
+import sunrise_on_a_distant_planet_d5bb2707_a5e0_4e4f_96b1_55d4003057d7_0_0 from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_0.png';
 
 /**
  * Image of sunrise on a distant planet d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0

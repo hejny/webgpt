@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_sign_on_a_wooden_pole_next_to_bushes_in_the_style_8f0f9b8_25a3_4bc0_9253_f02f7ecc243a_0_2_2 from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_2.png';
-import metadata from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_2.json';
+import a_sign_on_a_wooden_pole_next_to_bushes_in_the_style_8f0f9b8_25a3_4bc0_9253_f02f7ecc243a_0_2_2 from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_2.png';
 
 /**
  * Image of a sign on a wooden pole next to bushes in the style 8f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0 2

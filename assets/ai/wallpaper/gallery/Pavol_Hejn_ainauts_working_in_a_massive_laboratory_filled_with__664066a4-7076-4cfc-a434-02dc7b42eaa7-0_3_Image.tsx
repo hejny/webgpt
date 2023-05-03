@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import ainauts_working_in_a_massive_laboratory_filled_with_664066a4_7076_4cfc_a434_02dc7b42eaa7_0_3 from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_3.png';
-import metadata from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_3.json';
+import ainauts_working_in_a_massive_laboratory_filled_with_664066a4_7076_4cfc_a434_02dc7b42eaa7_0_3 from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_3.png';
 
 /**
  * Image of ainauts working in a massive laboratory filled with  664066a4-7076-4cfc-a434-02dc7b42eaa7-0

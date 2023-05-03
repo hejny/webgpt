@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c_17af_4e1f_8b23_ae5e41e444e1_0_0 from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c-17af-4e1f-8b23-ae5e41e444e1-0_0.png';
-import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c-17af-4e1f-8b23-ae5e41e444e1-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c-17af-4e1f-8b23-ae5e41e444e1-0_0.json';
+import a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c_17af_4e1f_8b23_ae5e41e444e1_0_0 from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_944b209c-17af-4e1f-8b23-ae5e41e444e1-0_0.png';
 
 /**
  * Image of a retro futuristic wallpaper featuring a vintage ill 944b209c-17af-4e1f-8b23-ae5e41e444e1-0

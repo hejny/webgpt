@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_an_abstract_illustration_of_a_822a103a_e6c1_428e_a728_a811abe2077b_0_0 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_0.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_0.json';
+import a_wallpaper_featuring_an_abstract_illustration_of_a_822a103a_e6c1_428e_a728_a811abe2077b_0_0 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_0.png';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of a  822a103a-e6c1-428e-a728-a811abe2077b-0

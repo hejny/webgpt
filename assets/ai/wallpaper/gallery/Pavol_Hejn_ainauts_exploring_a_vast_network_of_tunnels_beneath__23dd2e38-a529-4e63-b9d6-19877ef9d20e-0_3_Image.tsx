@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import ainauts_exploring_a_vast_network_of_tunnels_beneath_23dd2e38_a529_4e63_b9d6_19877ef9d20e_0_3 from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_3.png';
-import metadata from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_3.json';
+import ainauts_exploring_a_vast_network_of_tunnels_beneath_23dd2e38_a529_4e63_b9d6_19877ef9d20e_0_3 from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_3.png';
 
 /**
  * Image of ainauts exploring a vast network of tunnels beneath  23dd2e38-a529-4e63-b9d6-19877ef9d20e-0

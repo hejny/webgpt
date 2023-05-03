@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_an_abstract_illustration_of_a_506d18e2_5600_454a_9179_789ad6f40c99_0_0 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_0.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_0.json';
+import a_wallpaper_featuring_an_abstract_illustration_of_a_506d18e2_5600_454a_9179_789ad6f40c99_0_0 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_0.png';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of a  506d18e2-5600-454a-9179-789ad6f40c99-0

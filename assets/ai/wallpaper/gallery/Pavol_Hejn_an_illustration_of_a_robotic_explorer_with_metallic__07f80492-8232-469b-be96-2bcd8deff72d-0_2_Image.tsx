@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_illustration_of_a_robotic_explorer_with_metallic_07f80492_8232_469b_be96_2bcd8deff72d_0_2 from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_2.png';
-import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_2.json';
+import an_illustration_of_a_robotic_explorer_with_metallic_07f80492_8232_469b_be96_2bcd8deff72d_0_2 from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_2.png';
 
 /**
  * Image of an illustration of a robotic explorer with metallic  07f80492-8232-469b-be96-2bcd8deff72d-0

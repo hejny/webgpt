@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_surrealist_inspired_wallpaper_with_floating_objectde16b73_6889_4692_aa11_0fce4396fc3a_0_2_2 from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_2.png';
-import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_2.json';
+import a_surrealist_inspired_wallpaper_with_floating_objectde16b73_6889_4692_aa11_0fce4396fc3a_0_2_2 from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_2.png';
 
 /**
  * Image of a surrealist inspired wallpaper with floating objectde16b73-6889-4692-aa11-0fce4396fc3a-0 2

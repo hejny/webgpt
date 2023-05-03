@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_illustration_of_a_futuristic_space_elevator_with_148a2aa3_fc1a_4eaa_9083_a6250d5fab36_0_2 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.png';
-import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.json';
+import an_illustration_of_a_futuristic_space_elevator_with_148a2aa3_fc1a_4eaa_9083_a6250d5fab36_0_2 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.png';
 
 /**
  * Image of an illustration of a futuristic space elevator with  148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0

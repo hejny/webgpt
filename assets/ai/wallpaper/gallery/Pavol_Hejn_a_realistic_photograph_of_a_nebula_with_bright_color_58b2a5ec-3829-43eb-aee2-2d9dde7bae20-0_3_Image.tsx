@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec_3829_43eb_aee2_2d9dde7bae20_0_3 from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.png';
-import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.json';
+import a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec_3829_43eb_aee2_2d9dde7bae20_0_3 from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.png';
 
 /**
  * Image of a realistic photograph of a nebula with bright color 58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0

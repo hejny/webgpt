@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b_1a6a_403b_b7f6_e874e5adc0cb_0_1 from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_1.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_1.json';
+import a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b_1a6a_403b_b7f6_e874e5adc0cb_0_1 from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_1.png';
 
 /**
  * Image of a team of ainauts conducting experiments on a massiv f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0

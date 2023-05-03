@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_launching_a_rocket_into_space_with_a2a9c459_3f6a_4d2a_9547_1a24a11a0378_0_3 from './Pavol_Hejn_a_team_of_ainauts_launching_a_rocket_into_space_with_a2a9c459-3f6a-4d2a-9547-1a24a11a0378-0_3.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_launching_a_rocket_into_space_with_a2a9c459-3f6a-4d2a-9547-1a24a11a0378-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_launching_a_rocket_into_space_with_a2a9c459-3f6a-4d2a-9547-1a24a11a0378-0_3.json';
+import a_team_of_ainauts_launching_a_rocket_into_space_with_a2a9c459_3f6a_4d2a_9547_1a24a11a0378_0_3 from './Pavol_Hejn_a_team_of_ainauts_launching_a_rocket_into_space_with_a2a9c459-3f6a-4d2a-9547-1a24a11a0378-0_3.png';
 
 /**
  * Image of a team of ainauts launching a rocket into space with a2a9c459-3f6a-4d2a-9547-1a24a11a0378-0

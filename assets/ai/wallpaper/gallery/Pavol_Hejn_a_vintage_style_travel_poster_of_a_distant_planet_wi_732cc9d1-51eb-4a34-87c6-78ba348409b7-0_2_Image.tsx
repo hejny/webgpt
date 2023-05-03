@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_vintage_style_travel_poster_of_a_distant_planet_wi_732cc9d1_51eb_4a34_87c6_78ba348409b7_0_2 from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_732cc9d1-51eb-4a34-87c6-78ba348409b7-0_2.png';
-import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_732cc9d1-51eb-4a34-87c6-78ba348409b7-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_732cc9d1-51eb-4a34-87c6-78ba348409b7-0_2.json';
+import a_vintage_style_travel_poster_of_a_distant_planet_wi_732cc9d1_51eb_4a34_87c6_78ba348409b7_0_2 from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_732cc9d1-51eb-4a34-87c6-78ba348409b7-0_2.png';
 
 /**
  * Image of a vintage style travel poster of a distant planet wi 732cc9d1-51eb-4a34-87c6-78ba348409b7-0

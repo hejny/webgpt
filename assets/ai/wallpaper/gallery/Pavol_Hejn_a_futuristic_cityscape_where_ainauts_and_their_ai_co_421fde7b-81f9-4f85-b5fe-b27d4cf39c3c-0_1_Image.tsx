@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_futuristic_cityscape_where_ainauts_and_their_ai_co_421fde7b_81f9_4f85_b5fe_b27d4cf39c3c_0_1 from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_421fde7b-81f9-4f85-b5fe-b27d4cf39c3c-0_1.png';
-import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_421fde7b-81f9-4f85-b5fe-b27d4cf39c3c-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_421fde7b-81f9-4f85-b5fe-b27d4cf39c3c-0_1.json';
+import a_futuristic_cityscape_where_ainauts_and_their_ai_co_421fde7b_81f9_4f85_b5fe_b27d4cf39c3c_0_1 from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_421fde7b-81f9-4f85-b5fe-b27d4cf39c3c-0_1.png';
 
 /**
  * Image of a futuristic cityscape where ainauts and their ai co 421fde7b-81f9-4f85-b5fe-b27d4cf39c3c-0

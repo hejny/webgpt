@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_a_full_moon_rising_over_a_mountain_r_7ecbb309_6391_47dc_b20a_73e54835f9d4_0_2 from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_7ecbb309-6391-47dc-b20a-73e54835f9d4-0_2.png';
-import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_7ecbb309-6391-47dc-b20a-73e54835f9d4-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_7ecbb309-6391-47dc-b20a-73e54835f9d4-0_2.json';
+import a_photograph_of_a_full_moon_rising_over_a_mountain_r_7ecbb309_6391_47dc_b20a_73e54835f9d4_0_2 from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_7ecbb309-6391-47dc-b20a-73e54835f9d4-0_2.png';
 
 /**
  * Image of a photograph of a full moon rising over a mountain r 7ecbb309-6391-47dc-b20a-73e54835f9d4-0

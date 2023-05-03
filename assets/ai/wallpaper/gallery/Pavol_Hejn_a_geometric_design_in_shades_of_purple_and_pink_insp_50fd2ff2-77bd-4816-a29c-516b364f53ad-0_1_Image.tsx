@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2_77bd_4816_a29c_516b364f53ad_0_1 from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_1.png';
-import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_1.json';
+import a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2_77bd_4816_a29c_516b364f53ad_0_1 from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_1.png';
 
 /**
  * Image of a geometric design in shades of purple and pink insp 50fd2ff2-77bd-4816-a29c-516b364f53ad-0

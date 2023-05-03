@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc_fa23_4e0e_a4da_289234f2ee58_0_3 from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_3.png';
-import metadata from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_3.json';
+import a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc_fa23_4e0e_a4da_289234f2ee58_0_3 from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_3.png';
 
 /**
  * Image of a wooden wooden beam in the shape of an arm in the s 72f413fc-fa23-4e0e-a4da-289234f2ee58-0

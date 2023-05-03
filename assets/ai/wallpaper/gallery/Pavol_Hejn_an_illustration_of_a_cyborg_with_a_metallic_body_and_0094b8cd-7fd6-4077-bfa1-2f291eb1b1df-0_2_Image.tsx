@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd_7fd6_4077_bfa1_2f291eb1b1df_0_2 from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_2.png';
-import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_2.json';
+import an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd_7fd6_4077_bfa1_2f291eb1b1df_0_2 from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_2.png';
 
 /**
  * Image of an illustration of a cyborg with a metallic body and 0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0

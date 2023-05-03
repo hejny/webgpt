@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71_a22f_4da7_aa90_51ef766cf24b_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71-a22f-4da7-aa90-51ef766cf24b-0_3.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71-a22f-4da7-aa90-51ef766cf24b-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71-a22f-4da7-aa90-51ef766cf24b-0_3.json';
+import a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71_a22f_4da7_aa90_51ef766cf24b_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71-a22f-4da7-aa90-51ef766cf24b-0_3.png';
 
 /**
  * Image of a wallpaper featuring a matrix of futuristic data vi cf1bdc71-a22f-4da7-aa90-51ef766cf24b-0

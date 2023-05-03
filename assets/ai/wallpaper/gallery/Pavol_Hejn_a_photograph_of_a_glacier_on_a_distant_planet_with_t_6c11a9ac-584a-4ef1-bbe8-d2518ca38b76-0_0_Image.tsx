@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac_584a_4ef1_bbe8_d2518ca38b76_0_0 from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.png';
-import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.json';
+import a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac_584a_4ef1_bbe8_d2518ca38b76_0_0 from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.png';
 
 /**
  * Image of a photograph of a glacier on a distant planet with t 6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_a_meteor_shower_with_bright_streaks_a687fcef_5657_4e8b_8a37_e7839d797d0e_0_1 from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_1.png';
-import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_1.json';
+import a_photograph_of_a_meteor_shower_with_bright_streaks_a687fcef_5657_4e8b_8a37_e7839d797d0e_0_1 from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_1.png';
 
 /**
  * Image of a photograph of a meteor shower with bright streaks  a687fcef-5657-4e8b-8a37-e7839d797d0e-0

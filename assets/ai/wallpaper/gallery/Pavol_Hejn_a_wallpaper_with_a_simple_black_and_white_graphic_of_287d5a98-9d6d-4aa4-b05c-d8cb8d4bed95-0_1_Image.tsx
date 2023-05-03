@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98_9d6d_4aa4_b05c_d8cb8d4bed95_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_1.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_1.json';
+import a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98_9d6d_4aa4_b05c_d8cb8d4bed95_0_1 from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_1.png';
 
 /**
  * Image of a wallpaper with a simple black and white graphic of 287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0

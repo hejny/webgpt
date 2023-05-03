@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372_76be_4878_b6c6_8bece6fc0d72_0_1 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.json';
+import a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372_76be_4878_b6c6_8bece6fc0d72_0_1 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.png';
 
 /**
  * Image of a team of ainauts and their ai companions piloting a 5960d372-76be-4878-b6c6-8bece6fc0d72-0

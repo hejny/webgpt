@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import ainauts_and_their_ai_companions_working_together_in_d895631_d6ae_4a9e_8642_24d4c1ef2bc9_0_2_2 from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.png';
-import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.json';
+import ainauts_and_their_ai_companions_working_together_in_d895631_d6ae_4a9e_8642_24d4c1ef2bc9_0_2_2 from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.png';
 
 /**
  * Image of ainauts and their ai companions working together in d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0 2

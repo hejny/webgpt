@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_vintage_map_of_the_stars_and_constellations_with_d_a8587861_961f_4ac0_b6c1_4b84cb239531_0_0 from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_0.png';
-import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_0.json';
+import a_vintage_map_of_the_stars_and_constellations_with_d_a8587861_961f_4ac0_b6c1_4b84cb239531_0_0 from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_0.png';
 
 /**
  * Image of a vintage map of the stars and constellations with d a8587861-961f-4ac0-b6c1-4b84cb239531-0

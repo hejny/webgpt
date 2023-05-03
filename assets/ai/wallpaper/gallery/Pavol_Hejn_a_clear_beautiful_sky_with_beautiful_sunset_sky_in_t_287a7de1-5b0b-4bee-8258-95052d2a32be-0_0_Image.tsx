@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_clear_beautiful_sky_with_beautiful_sunset_sky_in_t_287a7de1_5b0b_4bee_8258_95052d2a32be_0_0 from './Pavol_Hejn_a_clear_beautiful_sky_with_beautiful_sunset_sky_in_t_287a7de1-5b0b-4bee-8258-95052d2a32be-0_0.png';
-import metadata from './Pavol_Hejn_a_clear_beautiful_sky_with_beautiful_sunset_sky_in_t_287a7de1-5b0b-4bee-8258-95052d2a32be-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_clear_beautiful_sky_with_beautiful_sunset_sky_in_t_287a7de1-5b0b-4bee-8258-95052d2a32be-0_0.json';
+import a_clear_beautiful_sky_with_beautiful_sunset_sky_in_t_287a7de1_5b0b_4bee_8258_95052d2a32be_0_0 from './Pavol_Hejn_a_clear_beautiful_sky_with_beautiful_sunset_sky_in_t_287a7de1-5b0b-4bee-8258-95052d2a32be-0_0.png';
 
 /**
  * Image of a clear beautiful sky with beautiful sunset sky in t 287a7de1-5b0b-4bee-8258-95052d2a32be-0

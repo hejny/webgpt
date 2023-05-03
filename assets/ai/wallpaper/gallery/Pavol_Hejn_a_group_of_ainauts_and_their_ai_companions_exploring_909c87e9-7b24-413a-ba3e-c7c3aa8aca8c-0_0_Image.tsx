@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9_7b24_413a_ba3e_c7c3aa8aca8c_0_0 from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.json';
+import a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9_7b24_413a_ba3e_c7c3aa8aca8c_0_0 from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.png';
 
 /**
  * Image of a group of ainauts and their ai companions exploring 909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0

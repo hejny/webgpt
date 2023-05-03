@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_repeating_pattern_of_binary_code_885c443c_80a4_4b2d_80a2_4fbb6e4e5211_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.json';
+import a_wallpaper_with_a_repeating_pattern_of_binary_code_885c443c_80a4_4b2d_80a2_4fbb6e4e5211_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.png';
 
 /**
  * Image of a wallpaper with a repeating pattern of binary code  885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0

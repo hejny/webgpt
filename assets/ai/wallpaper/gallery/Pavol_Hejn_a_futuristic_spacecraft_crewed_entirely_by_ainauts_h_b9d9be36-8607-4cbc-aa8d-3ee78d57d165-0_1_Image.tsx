@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_b9d9be36_8607_4cbc_aa8d_3ee78d57d165_0_1 from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_b9d9be36-8607-4cbc-aa8d-3ee78d57d165-0_1.png';
-import metadata from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_b9d9be36-8607-4cbc-aa8d-3ee78d57d165-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_b9d9be36-8607-4cbc-aa8d-3ee78d57d165-0_1.json';
+import a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_b9d9be36_8607_4cbc_aa8d_3ee78d57d165_0_1 from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_b9d9be36-8607-4cbc-aa8d-3ee78d57d165-0_1.png';
 
 /**
  * Image of a futuristic spacecraft crewed entirely by ainauts h b9d9be36-8607-4cbc-aa8d-3ee78d57d165-0

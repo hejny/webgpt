@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082_0fae_42be_bd9d_639ddbc532f9_0_0 from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_0.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_0.json';
+import a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082_0fae_42be_bd9d_639ddbc532f9_0_0 from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_0.png';
 
 /**
  * Image of a group of ainauts observing the rings of saturn fro fdae2082-0fae-42be-bd9d-639ddbc532f9-0

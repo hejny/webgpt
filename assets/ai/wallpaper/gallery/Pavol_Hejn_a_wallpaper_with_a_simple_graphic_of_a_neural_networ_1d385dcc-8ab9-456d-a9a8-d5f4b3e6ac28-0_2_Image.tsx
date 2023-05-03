@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_simple_graphic_of_a_neural_networ_1d385dcc_8ab9_456d_a9a8_d5f4b3e6ac28_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_1d385dcc-8ab9-456d-a9a8-d5f4b3e6ac28-0_2.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_1d385dcc-8ab9-456d-a9a8-d5f4b3e6ac28-0_2.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_1d385dcc-8ab9-456d-a9a8-d5f4b3e6ac28-0_2.json';
+import a_wallpaper_with_a_simple_graphic_of_a_neural_networ_1d385dcc_8ab9_456d_a9a8_d5f4b3e6ac28_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_1d385dcc-8ab9-456d-a9a8-d5f4b3e6ac28-0_2.png';
 
 /**
  * Image of a wallpaper with a simple graphic of a neural networ 1d385dcc-8ab9-456d-a9a8-d5f4b3e6ac28-0

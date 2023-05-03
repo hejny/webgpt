@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_team_of_ainauts_working_tirelessly_in_a_massive_ai_b6626e77_f89b_41e3_abd3_e5404577eb1a_0_3 from './Pavol_Hejn_a_team_of_ainauts_working_tirelessly_in_a_massive_ai_b6626e77-f89b-41e3-abd3-e5404577eb1a-0_3.png';
-import metadata from './Pavol_Hejn_a_team_of_ainauts_working_tirelessly_in_a_massive_ai_b6626e77-f89b-41e3-abd3-e5404577eb1a-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_team_of_ainauts_working_tirelessly_in_a_massive_ai_b6626e77-f89b-41e3-abd3-e5404577eb1a-0_3.json';
+import a_team_of_ainauts_working_tirelessly_in_a_massive_ai_b6626e77_f89b_41e3_abd3_e5404577eb1a_0_3 from './Pavol_Hejn_a_team_of_ainauts_working_tirelessly_in_a_massive_ai_b6626e77-f89b-41e3-abd3-e5404577eb1a-0_3.png';
 
 /**
  * Image of a team of ainauts working tirelessly in a massive ai b6626e77-f89b-41e3-abd3-e5404577eb1a-0

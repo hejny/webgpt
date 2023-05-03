@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b_c582_43fa_908c_c2b67d4a0e55_0_0 from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_0.png';
-import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_0.json';
+import a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b_c582_43fa_908c_c2b67d4a0e55_0_0 from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_0.png';
 
 /**
  * Image of a pixel art depiction of a spacecraft with blocky sh 914c341b-c582-43fa-908c-c2b67d4a0e55-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb_ab5a_4610_b64f_1f62dda9dcb5_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_3.png';
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_3.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_3.json';
+import a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb_ab5a_4610_b64f_1f62dda9dcb5_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_3.png';
 
 /**
  * Image of a wallpaper with a simple graphic of a cyborg s face 5455febb-ab5a-4610-b64f-1f62dda9dcb5-0

@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234_dabd_4b9b_a830_0286ab824204_0_0 from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_0.png';
-import metadata from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_0.json';
+import a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234_dabd_4b9b_a830_0286ab824204_0_0 from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_0.png';
 
 /**
  * Image of a photograph of a lava flow on a volcanic planet wit b3da2234-dabd-4b9b-a830-0286ab824204-0

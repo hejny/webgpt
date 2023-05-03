@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import ainauts_and_their_ai_companions_working_together_to_a17b49f8_f171_47b4_a987_aab24214b106_0_0 from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_0.png';
-import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_0.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_0.json';
+import ainauts_and_their_ai_companions_working_together_to_a17b49f8_f171_47b4_a987_aab24214b106_0_0 from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_0.png';
 
 /**
  * Image of ainauts and their ai companions working together to  a17b49f8-f171-47b4-a987-aab24214b106-0

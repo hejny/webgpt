@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_wallpaper_featuring_an_abstract_illustration_of_an_8c6be2ea_c68f_4d2b_b80c_84f624039d7e_0_1 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_8c6be2ea-c68f-4d2b-b80c-84f624039d7e-0_1.png';
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_8c6be2ea-c68f-4d2b-b80c-84f624039d7e-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_8c6be2ea-c68f-4d2b-b80c-84f624039d7e-0_1.json';
+import a_wallpaper_featuring_an_abstract_illustration_of_an_8c6be2ea_c68f_4d2b_b80c_84f624039d7e_0_1 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_8c6be2ea-c68f-4d2b-b80c-84f624039d7e-0_1.png';
 
 /**
  * Image of a wallpaper featuring an abstract illustration of an 8c6be2ea-c68f-4d2b-b80c-84f624039d7e-0

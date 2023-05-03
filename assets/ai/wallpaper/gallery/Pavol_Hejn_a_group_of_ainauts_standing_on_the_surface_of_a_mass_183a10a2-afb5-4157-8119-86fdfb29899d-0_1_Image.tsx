@@ -8,11 +8,9 @@
  */
 
 import Image from 'next/image';
-import a_group_of_ainauts_standing_on_the_surface_of_a_mass83a10a2_afb5_4157_8119_86fdfb29899d_0_1_1 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_183a10a2-afb5-4157-8119-86fdfb29899d-0_1.png';
-import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_183a10a2-afb5-4157-8119-86fdfb29899d-0_1.json';
-import { IWallpaperMetadata } from '../IWallpaperComponent';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
 import { Color } from '../../../../src/utils/color/Color';
+import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_183a10a2-afb5-4157-8119-86fdfb29899d-0_1.json';
+import a_group_of_ainauts_standing_on_the_surface_of_a_mass83a10a2_afb5_4157_8119_86fdfb29899d_0_1_1 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_183a10a2-afb5-4157-8119-86fdfb29899d-0_1.png';
 
 /**
  * Image of a group of ainauts standing on the surface of a mass83a10a2-afb5-4157-8119-86fdfb29899d-0 1
