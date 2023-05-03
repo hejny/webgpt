@@ -27,11 +27,13 @@ export default function GalleryPage() {
     return (
         <>
             <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
-            {Wallpaper && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
+            <SkinStyle skin={skinFromWallpaper(Wallpaper)} />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>{Wallpaper && <HeaderWallpaper {...{ Wallpaper }} />}</header>
+                <header>
+                    <HeaderWallpaper {...{ Wallpaper }} />
+                </header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
                     <TiledBackground />
