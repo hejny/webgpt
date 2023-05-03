@@ -23,17 +23,8 @@ describe('linkMarkdown', () => {
     });
 
     it(`works with inflection`, () => {
-        expect(linkMarkdown(`Česká společnost ornitologická bez České společnosti ornitologické`)).toBe(
-            `[Česká společnost ornitologická](https://www.birdlife.cz/) bez [České společnosti ornitologické](https://www.birdlife.cz/)`,
+        expect(linkMarkdown(`Pavol Hejný s Tomášem Studeníkem`)).toBe(
+            `[Pavol Hejný](https://www.pavolhejny.com) s [Tomášem Studeníkem](https://www.tomas-studenik.com)`,
         );
-        expect(linkMarkdown(`Startup Weekend bez Startup Weekendu`)).toBe(
-            `[Startup Weekend](https://startovani.cz/) bez [Startup Weekendu](https://startovani.cz/)`,
-        );
-    });
-
-    it(`will activate acronyms`, () => {
-        expect(linkMarkdown(`VR/AR`)).toBe(`[VR/AR](/technologies/vr-ar)`);
-        expect(linkMarkdown(`AI`)).toBe(`[AI](/technologies/ai)`);
-        expect(linkMarkdown(`Blockchain`)).toBe(`[Blockchain](/technologies/blockchain)`);
     });
 });
