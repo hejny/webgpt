@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_3.json';
 import source from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_3.png';
@@ -40,6 +40,23 @@ AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_3_
     averageColor: Color.fromHex('#3b4441'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010101'),
-    leastFrequentColor: Color.fromHex('#215465'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a73605'), Color.fromHex('#0bd7ea')],
+    minmaxGreen: [Color.fromHex('#28894e'), Color.fromHex('#f970d6')],
+    minmaxBlue: [Color.fromHex('#08659f'), Color.fromHex('#ffff87')],
+    mostFrequentColor: Color.fromHex('#060506'),
+    mostSaturatedColor: Color.fromHex('#000404'),
+    mostGroupedColor: Color.fromHex('#04151e'),
+    bottom: {
+        averageColor: Color.fromHex('#222e30'),
+        lightestColor: Color.fromHex('#eff9eb'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f6fee7'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#9d3c13'), Color.fromHex('#f6fee7')],
+        minmaxGreen: [Color.fromHex('#628562'), Color.fromHex('#74004e')],
+        minmaxBlue: [Color.fromHex('#205484'), Color.fromHex('#fbffcb')],
+        mostFrequentColor: Color.fromHex('#060506'),
+        mostSaturatedColor: Color.fromHex('#001419'),
+        mostGroupedColor: Color.fromHex('#04151e'),
+    },
 } satisfies IImageColorStats;

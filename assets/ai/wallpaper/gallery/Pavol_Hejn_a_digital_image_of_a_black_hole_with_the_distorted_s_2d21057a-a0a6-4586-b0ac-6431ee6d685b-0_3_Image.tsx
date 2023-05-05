@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_2d21057a-a0a6-4586-b0ac-6431ee6d685b-0_3.json';
 import source from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_2d21057a-a0a6-4586-b0ac-6431ee6d685b-0_3.png';
@@ -40,6 +40,23 @@ ADigitalImageOfABlackHoleWithTheDistortedS2d21057aA0a64586B0ac6431ee6d685b0_3_Im
     averageColor: Color.fromHex('#140f0f'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#f82500'), Color.fromHex('#04efff')],
+    minmaxGreen: [Color.fromHex('#3d906b'), Color.fromHex('#c523e5')],
+    minmaxBlue: [Color.fromHex('#680cac'), Color.fromHex('#fff645')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#1f3547'),
+    mostSaturatedColor: Color.fromHex('#010001'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#190c0c'),
+        lightestColor: Color.fromHex('#ff91f9'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fffcf6'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#f82500'), Color.fromHex('#fffcf6')],
+        minmaxGreen: [Color.fromHex('#746b53'), Color.fromHex('#c523e5')],
+        minmaxBlue: [Color.fromHex('#680cac'), Color.fromHex('#fffa7d')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

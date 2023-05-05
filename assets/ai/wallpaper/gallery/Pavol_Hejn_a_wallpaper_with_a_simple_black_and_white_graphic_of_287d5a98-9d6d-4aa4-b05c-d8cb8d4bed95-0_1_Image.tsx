@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_1.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_1.png';
@@ -38,8 +38,25 @@ AWallpaperWithASimpleBlackAndWhiteGraphicOf287d5a989d6d4aa4B05cD8cb8d4bed950_1_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleBlackAndWhiteGraphicOf287d5a989d6d4aa4B05cD8cb8d4bed950_1_Image.colorStats = {
     averageColor: Color.fromHex('#0e0e0d'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020201'),
-    leastFrequentColor: Color.fromHex('#c4c1c4'),
+    lightestColor: Color.fromHex('#fffeff'),
+    darkestColor: Color.fromHex('#000100'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#4d4945'), Color.fromHex('#feffff')],
+    minmaxGreen: [Color.fromHex('#70736c'), Color.fromHex('#fffdff')],
+    minmaxBlue: [Color.fromHex('#4f4d54'), Color.fromHex('#fffffb')],
+    mostFrequentColor: Color.fromHex('#000100'),
+    mostSaturatedColor: Color.fromHex('#000001'),
+    mostGroupedColor: Color.fromHex('#020201'),
+    bottom: {
+        averageColor: Color.fromHex('#0a0a09'),
+        lightestColor: Color.fromHex('#fdfdfc'),
+        darkestColor: Color.fromHex('#000100'),
+        minmaxWhite: [Color.fromHex('#fdfdfc'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#494643'), Color.fromHex('#fdfdfc')],
+        minmaxGreen: [Color.fromHex('#737571'), Color.fromHex('#fdfdfc')],
+        minmaxBlue: [Color.fromHex('#525254'), Color.fromHex('#fdfdfc')],
+        mostFrequentColor: Color.fromHex('#000100'),
+        mostSaturatedColor: Color.fromHex('#000101'),
+        mostGroupedColor: Color.fromHex('#020201'),
+    },
 } satisfies IImageColorStats;

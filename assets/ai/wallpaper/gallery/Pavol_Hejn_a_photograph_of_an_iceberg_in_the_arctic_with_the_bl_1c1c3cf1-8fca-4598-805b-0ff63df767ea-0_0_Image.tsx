@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_0.json';
 import source from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_0.png';
@@ -40,6 +40,23 @@ APhotographOfAnIcebergInTheArcticWithTheBl1c1c3cf18fca4598805b0ff63df767ea0_0_Im
     averageColor: Color.fromHex('#0f1b22'),
     lightestColor: Color.fromHex('#d2fcff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#daefeb'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#413630'), Color.fromHex('#d2fcff')],
+    minmaxGreen: [Color.fromHex('#1b9295'), Color.fromHex('#d2fcff')],
+    minmaxBlue: [Color.fromHex('#0a3a6e'), Color.fromHex('#d2fcff')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#0a0f18'),
+    mostSaturatedColor: Color.fromHex('#000105'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#0d171c'),
+        lightestColor: Color.fromHex('#a6e3f4'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#bfd9e4'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#413630'), Color.fromHex('#a6e3f4')],
+        minmaxGreen: [Color.fromHex('#1b9295'), Color.fromHex('#000013')],
+        minmaxBlue: [Color.fromHex('#0a3a6e'), Color.fromHex('#ace3de')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000105'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

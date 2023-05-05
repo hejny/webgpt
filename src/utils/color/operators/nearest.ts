@@ -1,5 +1,4 @@
 import { Color } from '../Color';
-import { colorDistance } from '../utils/colorDistance';
 import { IColorTransformer } from './IColorTransformer';
 
 /**
@@ -9,7 +8,7 @@ import { IColorTransformer } from './IColorTransformer';
  */
 export function nearest(...colors: Color[]): IColorTransformer {
     return (color: Color) => {
-        const distances = colors.map((c) => colorDistance(c, color));
+        const distances = colors.map((c) => colorDistanceSquared(c, color));
         const minDistance = Math.min(...distances);
         const minIndex = distances.indexOf(minDistance);
         const nearestColor = colors[minIndex];

@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_2.json';
 import source from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_2.png';
@@ -39,6 +39,23 @@ AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_2_Image.colorStats = {
     averageColor: Color.fromHex('#3b5552'),
     lightestColor: Color.fromHex('#fbffff'),
     darkestColor: Color.fromHex('#000104'),
-    mostFrequentColor: Color.fromHex('#2d5a67'),
-    leastFrequentColor: Color.fromHex('#001d2c'),
+    minmaxWhite: [Color.fromHex('#fbffff'), Color.fromHex('#000104')],
+    minmaxRed: [Color.fromHex('#cf4132'), Color.fromHex('#7efaff')],
+    minmaxGreen: [Color.fromHex('#569d5c'), Color.fromHex('#fbffff')],
+    minmaxBlue: [Color.fromHex('#184582'), Color.fromHex('#ffe251')],
+    mostFrequentColor: Color.fromHex('#27262c'),
+    mostSaturatedColor: Color.fromHex('#00060f'),
+    mostGroupedColor: Color.fromHex('#2d5a67'),
+    bottom: {
+        averageColor: Color.fromHex('#313835'),
+        lightestColor: Color.fromHex('#ebecdf'),
+        darkestColor: Color.fromHex('#000104'),
+        minmaxWhite: [Color.fromHex('#f4ecdb'), Color.fromHex('#000104')],
+        minmaxRed: [Color.fromHex('#cf4132'), Color.fromHex('#47dbeb')],
+        minmaxGreen: [Color.fromHex('#6e9558'), Color.fromHex('#f4ecdb')],
+        minmaxBlue: [Color.fromHex('#184582'), Color.fromHex('#f8f5b2')],
+        mostFrequentColor: Color.fromHex('#27262c'),
+        mostSaturatedColor: Color.fromHex('#00060f'),
+        mostGroupedColor: Color.fromHex('#011017'),
+    },
 } satisfies IImageColorStats;

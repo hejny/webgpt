@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_da226583-b030-4b92-9043-066a50a20c0a-0_0.json';
 import source from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_da226583-b030-4b92-9043-066a50a20c0a-0_0.png';
@@ -40,6 +40,23 @@ AStylizedDepictionOfASpacecraftInOrbitAroundDa226583B0304b929043066a50a20c0a0_0_
     averageColor: Color.fromHex('#2e2b2b'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#893a26'), Color.fromHex('#fcffff')],
+    minmaxGreen: [Color.fromHex('#79816e'), Color.fromHex('#fff8ff')],
+    minmaxBlue: [Color.fromHex('#434f6f'), Color.fromHex('#ffffe6')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#33342e'),
+    mostSaturatedColor: Color.fromHex('#020002'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#121011'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#893a26'), Color.fromHex('#fcffff')],
+        minmaxGreen: [Color.fromHex('#79816e'), Color.fromHex('#fff8ff')],
+        minmaxBlue: [Color.fromHex('#434f6f'), Color.fromHex('#ffffed')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000003'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

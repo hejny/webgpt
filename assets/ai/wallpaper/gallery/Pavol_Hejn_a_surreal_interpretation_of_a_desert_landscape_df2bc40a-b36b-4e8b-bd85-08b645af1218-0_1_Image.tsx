@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_1.json';
 import source from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_1.png';
@@ -40,6 +40,23 @@ ASurrealInterpretationOfADesertLandscapeDf2bc40aB36b4e8bBd8508b645af12180_1_Imag
     averageColor: Color.fromHex('#9b8a79'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#100000'),
-    mostFrequentColor: Color.fromHex('#fff7ea'),
-    leastFrequentColor: Color.fromHex('#456169'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#100000')],
+    minmaxRed: [Color.fromHex('#7b3715'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#767f69'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2c384c'), Color.fromHex('#ffffd8')],
+    mostFrequentColor: Color.fromHex('#272525'),
+    mostSaturatedColor: Color.fromHex('#6f2e00'),
+    mostGroupedColor: Color.fromHex('#fff7ea'),
+    bottom: {
+        averageColor: Color.fromHex('#755b48'),
+        lightestColor: Color.fromHex('#fcd7b8'),
+        darkestColor: Color.fromHex('#000607'),
+        minmaxWhite: [Color.fromHex('#fcd7b8'), Color.fromHex('#000508')],
+        minmaxRed: [Color.fromHex('#904e23'), Color.fromHex('#fcd7b8')],
+        minmaxGreen: [Color.fromHex('#7d6b49'), Color.fromHex('#210300')],
+        minmaxBlue: [Color.fromHex('#2c384c'), Color.fromHex('#fed8b2')],
+        mostFrequentColor: Color.fromHex('#272525'),
+        mostSaturatedColor: Color.fromHex('#6f2e00'),
+        mostGroupedColor: Color.fromHex('#312a29'),
+    },
 } satisfies IImageColorStats;

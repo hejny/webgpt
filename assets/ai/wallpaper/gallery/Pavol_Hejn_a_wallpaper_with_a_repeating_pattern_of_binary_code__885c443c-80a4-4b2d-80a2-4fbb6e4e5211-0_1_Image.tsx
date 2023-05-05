@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.png';
@@ -40,6 +40,23 @@ AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_I
     averageColor: Color.fromHex('#191819'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#4c4345'), Color.fromHex('#fcffff')],
+    minmaxGreen: [Color.fromHex('#777f73'), Color.fromHex('#fffbff')],
+    minmaxBlue: [Color.fromHex('#50505f'), Color.fromHex('#fffffc')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#282730'),
+    mostSaturatedColor: Color.fromHex('#010000'),
+    mostGroupedColor: Color.fromHex('#010101'),
+    bottom: {
+        averageColor: Color.fromHex('#141414'),
+        lightestColor: Color.fromHex('#fffeff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#423b3b'), Color.fromHex('#fcffff')],
+        minmaxGreen: [Color.fromHex('#666e66'), Color.fromHex('#fffbff')],
+        minmaxBlue: [Color.fromHex('#53505e'), Color.fromHex('#fffffc')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000103'),
+        mostGroupedColor: Color.fromHex('#010101'),
+    },
 } satisfies IImageColorStats;

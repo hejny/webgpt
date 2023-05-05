@@ -36,14 +36,29 @@ export interface IImageColorStatsRegion {
     darkestColor: WithTake<Color>;
 
     /**
+     * Colors that are nearest and furthest from white
+     */
+    minmaxWhite: [WithTake<Color>, WithTake<Color>];
+
+    /**
+     * Colors that are nearest and furthest from red
+     */
+    minmaxRed: [WithTake<Color>, WithTake<Color>];
+
+    /**
+     * Colors that are nearest and furthest from green
+     */
+    minmaxGreen: [WithTake<Color>, WithTake<Color>];
+
+    /**
+     * Colors that are nearest and furthest from blue
+     */
+    minmaxBlue: [WithTake<Color>, WithTake<Color>];
+
+    /**
      * The most frequent color of the image as a Color object
      */
     mostFrequentColor: WithTake<Color>;
-
-    /**
-     * The least frequent color of the image as a Color object
-     */
-    leastFrequentColor: WithTake<Color>;
 
     /**
      * The most saturated color of the image as a Color object
@@ -53,7 +68,7 @@ export interface IImageColorStatsRegion {
     /**
      * The most isolated color of the image as a Color object
      */
-    mostIsolatedColor: WithTake<Color>;
+    // NOT used - too slow> mostIsolatedColor: WithTake<Color>;
 
     /**
      * The most grouped color of the image as a Color object

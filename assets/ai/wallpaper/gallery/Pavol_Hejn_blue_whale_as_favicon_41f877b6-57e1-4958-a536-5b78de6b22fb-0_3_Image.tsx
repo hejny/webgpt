@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_3.json';
 import source from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_3.png';
@@ -38,7 +38,24 @@ BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_3_Image.metadata = metadata 
 BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_3_Image.colorStats = {
     averageColor: Color.fromHex('#a9cad5'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001941'),
-    mostFrequentColor: Color.fromHex('#ffffff'),
-    leastFrequentColor: Color.fromHex('#d0d6df'),
+    darkestColor: Color.fromHex('#021a33'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#021a33')],
+    minmaxRed: [Color.fromHex('#505366'), Color.fromHex('#3cfbdf')],
+    minmaxGreen: [Color.fromHex('#1caf86'), Color.fromHex('#fffdff')],
+    minmaxBlue: [Color.fromHex('#115592'), Color.fromHex('#fffff7')],
+    mostFrequentColor: Color.fromHex('#fffffd'),
+    mostSaturatedColor: Color.fromHex('#005878'),
+    mostGroupedColor: Color.fromHex('#ffffff'),
+    bottom: {
+        averageColor: Color.fromHex('#a6dcde'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#006c58'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#164f5d')],
+        minmaxRed: [Color.fromHex('#365f71'), Color.fromHex('#3cfbdf')],
+        minmaxGreen: [Color.fromHex('#22ad8a'), Color.fromHex('#fffdff')],
+        minmaxBlue: [Color.fromHex('#115592'), Color.fromHex('#fffffa')],
+        mostFrequentColor: Color.fromHex('#fffffd'),
+        mostSaturatedColor: Color.fromHex('#005878'),
+        mostGroupedColor: Color.fromHex('#ffffff'),
+    },
 } satisfies IImageColorStats;

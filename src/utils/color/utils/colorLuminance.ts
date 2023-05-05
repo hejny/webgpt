@@ -1,7 +1,7 @@
-import { Color } from "../Color";
+import { Color } from '../Color';
 
 /**
- * @@@
+ * Calculates luminance of the color
  *
  * @see https://en.wikipedia.org/wiki/Relative_luminance
  */

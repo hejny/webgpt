@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_0.json';
 import source from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_0.png';
@@ -39,7 +39,24 @@ BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_0_Image.metadata
 BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_0_Image.colorStats = {
     averageColor: Color.fromHex('#c6d8e5'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000019'),
-    mostFrequentColor: Color.fromHex('#ffffff'),
-    leastFrequentColor: Color.fromHex('#f5fdfa'),
+    darkestColor: Color.fromHex('#000515'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000019')],
+    minmaxRed: [Color.fromHex('#323843'), Color.fromHex('#74fbfe')],
+    minmaxGreen: [Color.fromHex('#3da2b3'), Color.fromHex('#fffdff')],
+    minmaxBlue: [Color.fromHex('#2251bb'), Color.fromHex('#fffff8')],
+    mostFrequentColor: Color.fromHex('#fefffd'),
+    mostSaturatedColor: Color.fromHex('#00163d'),
+    mostGroupedColor: Color.fromHex('#ffffff'),
+    bottom: {
+        averageColor: Color.fromHex('#d4dee7'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000623'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000623')],
+        minmaxRed: [Color.fromHex('#3e4557'), Color.fromHex('#78f9ff')],
+        minmaxGreen: [Color.fromHex('#4e7c8e'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#2251bb'), Color.fromHex('#fffffc')],
+        mostFrequentColor: Color.fromHex('#fefffd'),
+        mostSaturatedColor: Color.fromHex('#00163d'),
+        mostGroupedColor: Color.fromHex('#ffffff'),
+    },
 } satisfies IImageColorStats;

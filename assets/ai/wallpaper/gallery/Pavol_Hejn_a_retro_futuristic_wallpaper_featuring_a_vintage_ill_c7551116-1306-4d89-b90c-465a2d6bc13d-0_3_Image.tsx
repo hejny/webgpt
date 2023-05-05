@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116-1306-4d89-b90c-465a2d6bc13d-0_3.json';
 import source from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116-1306-4d89-b90c-465a2d6bc13d-0_3.png';
@@ -38,8 +38,25 @@ ARetroFuturisticWallpaperFeaturingAVintageIllC755111613064d89B90c465a2d6bc13d0_3
     metadata satisfies IWallpaperMetadata;
 ARetroFuturisticWallpaperFeaturingAVintageIllC755111613064d89B90c465a2d6bc13d0_3_Image.colorStats = {
     averageColor: Color.fromHex('#413556'),
-    lightestColor: Color.fromHex('#ffffd4'),
-    darkestColor: Color.fromHex('#00000c'),
-    mostFrequentColor: Color.fromHex('#161445'),
-    leastFrequentColor: Color.fromHex('#da663f'),
+    lightestColor: Color.fromHex('#e8f0e1'),
+    darkestColor: Color.fromHex('#090000'),
+    minmaxWhite: [Color.fromHex('#fdffd9'), Color.fromHex('#090000')],
+    minmaxRed: [Color.fromHex('#fc1318'), Color.fromHex('#08d5cd')],
+    minmaxGreen: [Color.fromHex('#59c649'), Color.fromHex('#f9093e')],
+    minmaxBlue: [Color.fromHex('#1830a3'), Color.fromHex('#ffe00c')],
+    mostFrequentColor: Color.fromHex('#1a2855'),
+    mostSaturatedColor: Color.fromHex('#005c76'),
+    mostGroupedColor: Color.fromHex('#2f1b51'),
+    bottom: {
+        averageColor: Color.fromHex('#27395c'),
+        lightestColor: Color.fromHex('#e8f0e1'),
+        darkestColor: Color.fromHex('#320b00'),
+        minmaxWhite: [Color.fromHex('#fdffd9'), Color.fromHex('#00001a')],
+        minmaxRed: [Color.fromHex('#fc1318'), Color.fromHex('#08d5cd')],
+        minmaxGreen: [Color.fromHex('#59c649'), Color.fromHex('#f9093e')],
+        minmaxBlue: [Color.fromHex('#00269a'), Color.fromHex('#f1ec11')],
+        mostFrequentColor: Color.fromHex('#1a2855'),
+        mostSaturatedColor: Color.fromHex('#005c76'),
+        mostGroupedColor: Color.fromHex('#2f1b51'),
+    },
 } satisfies IImageColorStats;

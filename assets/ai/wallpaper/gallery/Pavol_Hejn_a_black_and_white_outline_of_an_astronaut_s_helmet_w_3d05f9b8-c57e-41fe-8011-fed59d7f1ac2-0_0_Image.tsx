@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.json';
 import source from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.png';
@@ -40,6 +40,23 @@ ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Im
     averageColor: Color.fromHex('#434241'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#42323d'), Color.fromHex('#faffff')],
+    minmaxGreen: [Color.fromHex('#697363'), Color.fromHex('#fffcff')],
+    minmaxBlue: [Color.fromHex('#4e4859'), Color.fromHex('#fffff8')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#000903'),
+    mostSaturatedColor: Color.fromHex('#000101'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#3f3e3d'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#4c453e'), Color.fromHex('#faffff')],
+        minmaxGreen: [Color.fromHex('#697363'), Color.fromHex('#fffdff')],
+        minmaxBlue: [Color.fromHex('#545058'), Color.fromHex('#fffff9')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000101'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

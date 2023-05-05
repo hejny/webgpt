@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_2.json';
 import source from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_2.png';
@@ -39,6 +39,23 @@ ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_2_Image.colorStat
     averageColor: Color.fromHex('#423723'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#080807'),
-    leastFrequentColor: Color.fromHex('#1a0f01'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#b74600'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#8b8529'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#5b324a'), Color.fromHex('#fff864')],
+    mostFrequentColor: Color.fromHex('#030303'),
+    mostSaturatedColor: Color.fromHex('#0a0a00'),
+    mostGroupedColor: Color.fromHex('#070708'),
+    bottom: {
+        averageColor: Color.fromHex('#2b2415'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#983a19'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#8b8529'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#5b324a'), Color.fromHex('#ffe950')],
+        mostFrequentColor: Color.fromHex('#030303'),
+        mostSaturatedColor: Color.fromHex('#0b0500'),
+        mostGroupedColor: Color.fromHex('#070708'),
+    },
 } satisfies IImageColorStats;

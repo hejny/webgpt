@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_1.json';
 import source from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_1.png';
@@ -40,6 +40,23 @@ ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_1_Ima
     averageColor: Color.fromHex('#12161a'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#67432c'), Color.fromHex('#66f5ff')],
+    minmaxGreen: [Color.fromHex('#7d8a43'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#004cbb'), Color.fromHex('#fcffb6')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#02101e'),
+    mostSaturatedColor: Color.fromHex('#010000'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#111317'),
+        lightestColor: Color.fromHex('#fcfcff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fefefe'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#67432c'), Color.fromHex('#66f5ff')],
+        minmaxGreen: [Color.fromHex('#748c59'), Color.fromHex('#fefefe')],
+        minmaxBlue: [Color.fromHex('#0063c0'), Color.fromHex('#fdffc9')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

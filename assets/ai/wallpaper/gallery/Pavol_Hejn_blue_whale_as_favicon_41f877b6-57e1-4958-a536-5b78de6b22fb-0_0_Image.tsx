@@ -9,7 +9,7 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_0.json';
 import source from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_0.png';
@@ -38,7 +38,24 @@ BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_0_Image.metadata = metadata 
 BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_0_Image.colorStats = {
     averageColor: Color.fromHex('#b5d4e3'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000720'),
+    darkestColor: Color.fromHex('#000d19'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000720')],
+    minmaxRed: [Color.fromHex('#5e5757'), Color.fromHex('#18edfe')],
+    minmaxGreen: [Color.fromHex('#2babb6'), Color.fromHex('#fffcff')],
+    minmaxBlue: [Color.fromHex('#084fad'), Color.fromHex('#fffff8')],
     mostFrequentColor: Color.fromHex('#fffffe'),
-    leastFrequentColor: Color.fromHex('#fefcfe'),
+    mostSaturatedColor: Color.fromHex('#008aaa'),
+    mostGroupedColor: Color.fromHex('#fffffe'),
+    bottom: {
+        averageColor: Color.fromHex('#ccdae7'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000720'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000720')],
+        minmaxRed: [Color.fromHex('#5e5757'), Color.fromHex('#0de1ff')],
+        minmaxGreen: [Color.fromHex('#717b79'), Color.fromHex('#fffcff')],
+        minmaxBlue: [Color.fromHex('#084fad'), Color.fromHex('#fffffa')],
+        mostFrequentColor: Color.fromHex('#fffffe'),
+        mostSaturatedColor: Color.fromHex('#004f86'),
+        mostGroupedColor: Color.fromHex('#fffffe'),
+    },
 } satisfies IImageColorStats;
