@@ -1,12 +1,12 @@
 import { Color, string_color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
-import { Image } from '../Image';
+import { IImage } from '../IImage';
 
 /**
  * @@@
  */
 
-export function getImageUniqueColors(image: Image): Set<WithTake<Color>> {
+export function getImageUniqueColors(image: IImage): Set<WithTake<Color>> {
     const colors = new Set<string_color>();
 
     for (let x = 0; x < image.width; x++) {

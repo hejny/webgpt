@@ -1,11 +1,11 @@
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
-import { Image } from '../Image';
+import { IImage } from '../IImage';
 
 /**
  * @@@
  */
-export function computeImageAverageColor(image: Image): WithTake<Color> {
+export function computeImageAverageColor(image: IImage): WithTake<Color> {
     let red = 0;
     let green = 0;
     let blue = 0;

@@ -2,11 +2,12 @@ import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
+import { IImage } from './IImage';
 
 /**
  * A class that represents an image with a size and an array of pixels ⁘
  */
-export class Image {
+export class Image implements IImage {
     /**
      * @@@
      */
@@ -98,8 +99,8 @@ export class Image {
      * @param point2 bottom right corner
      */
     public crop(point1: IVector, point2: IVector): Image {
-        const topLeft = Vector.fromObject(point1);
-        const bottomRight = Vector.fromObject(point2);
+        const topLeft = Vector.fromObject(point1).map((value) => Math.round(value));
+        const bottomRight = Vector.fromObject(point2).map((value) => Math.round(value));
 
         const newImage = new Image(bottomRight.subtract(topLeft));
 
