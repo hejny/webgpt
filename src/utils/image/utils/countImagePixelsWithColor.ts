@@ -13,7 +13,7 @@ export function countImagePixelsWithColor(image: IImage, color: Color, tolerance
         for (let y = 0; y < image.height; y++) {
             const pixelColor = image.getPixel({ x, y });
 
-            if (colorDistanceSquared(count, pixelColor) <= toleranceSquared) {
+            if (colorDistanceSquared(color, pixelColor) <= toleranceSquared) {
                 count++;
             }
         }

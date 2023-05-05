@@ -1,4 +1,5 @@
 import { Color } from '../Color';
+import { colorDistanceSquared } from '../utils/colorDistance';
 import { IColorTransformer } from './IColorTransformer';
 
 /**

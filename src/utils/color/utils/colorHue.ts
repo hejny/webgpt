@@ -1,3 +1,5 @@
+import { Color } from '../Color';
+
 /**
  * Calculates hue of the color
  *
