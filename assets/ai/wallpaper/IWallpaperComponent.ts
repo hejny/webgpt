@@ -1,9 +1,14 @@
-import { IImageColorStats } from '../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../src/utils/image/utils/IImageColorStats';
+
+export interface IWallpaperComponentProps {
+    width: number;
+    quality: number;
+}
 
 export interface IWallpaperComponent {
     metadata: IWallpaperMetadata;
     colorStats: IImageColorStats;
-    (): JSX.Element;
+    (props: IWallpaperComponentProps): JSX.Element;
 }
 
 export type IWallpaperMetadata = any /* <- TODO: !!! Use propper metadata bellow */;
