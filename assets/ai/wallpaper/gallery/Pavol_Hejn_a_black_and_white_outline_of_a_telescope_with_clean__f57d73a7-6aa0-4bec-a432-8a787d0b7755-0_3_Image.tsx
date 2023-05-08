@@ -41,26 +41,26 @@ export function ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_3_Image.colorStats = {
-    averageColor: Color.fromHex('#d8d8d8'),
+    averageColor: Color.fromHex('#dad9d9'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
     minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
     minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
     minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffffee')],
+    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
     mostFrequentColor: Color.fromHex('#ffffff'),
-    mostSaturatedColor: Color.fromHex('#111100'),
+    mostSaturatedColor: Color.fromHex('#110000'),
     mostGroupedColor: Color.fromHex('#ffffff'),
     bottom: {
-        averageColor: Color.fromHex('#d4d4d4'),
+        averageColor: Color.fromHex('#d8d7d7'),
         lightestColor: Color.fromHex('#ffffff'),
         darkestColor: Color.fromHex('#000000'),
         minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
         minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
         minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffffee')],
+        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
         mostFrequentColor: Color.fromHex('#ffffff'),
-        mostSaturatedColor: Color.fromHex('#110011'),
+        mostSaturatedColor: Color.fromHex('#110000'),
         mostGroupedColor: Color.fromHex('#ffffff'),
     },
 } satisfies IImageColorStats;

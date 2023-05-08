@@ -41,14 +41,14 @@ export function AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfD
 AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#123331'),
-    lightestColor: Color.fromHex('#779999'),
+    averageColor: Color.fromHex('#123231'),
+    lightestColor: Color.fromHex('#99bbaa'),
     darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#77aa99'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#444444'), Color.fromHex('#66aa88')],
-    minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#000011')],
-    minmaxBlue: [Color.fromHex('#115566'), Color.fromHex('#001100')],
-    mostFrequentColor: Color.fromHex('#225533'),
+    minmaxWhite: [Color.fromHex('#99bbaa'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#444422'), Color.fromHex('#66bb99')],
+    minmaxGreen: [Color.fromHex('#559966'), Color.fromHex('#000022')],
+    minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#99bbaa')],
+    mostFrequentColor: Color.fromHex('#113333'),
     mostSaturatedColor: Color.fromHex('#001122'),
     mostGroupedColor: Color.fromHex('#001111'),
     bottom: {
@@ -56,11 +56,11 @@ AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_2_I
         lightestColor: Color.fromHex('#88aaaa'),
         darkestColor: Color.fromHex('#000000'),
         minmaxWhite: [Color.fromHex('#88aaaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#444444'), Color.fromHex('#88aaaa')],
-        minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#000011')],
-        minmaxBlue: [Color.fromHex('#335566'), Color.fromHex('#001100')],
-        mostFrequentColor: Color.fromHex('#225533'),
-        mostSaturatedColor: Color.fromHex('#002222'),
+        minmaxRed: [Color.fromHex('#444444'), Color.fromHex('#117777')],
+        minmaxGreen: [Color.fromHex('#448855'), Color.fromHex('#000022')],
+        minmaxBlue: [Color.fromHex('#116677'), Color.fromHex('#002200')],
+        mostFrequentColor: Color.fromHex('#113333'),
+        mostSaturatedColor: Color.fromHex('#003333'),
         mostGroupedColor: Color.fromHex('#001111'),
     },
 } satisfies IImageColorStats;

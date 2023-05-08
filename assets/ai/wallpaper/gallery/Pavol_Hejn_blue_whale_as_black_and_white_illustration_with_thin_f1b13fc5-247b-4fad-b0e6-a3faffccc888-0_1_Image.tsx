@@ -41,26 +41,26 @@ export function BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6
 BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6A3faffccc8880_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6A3faffccc8880_1_Image.colorStats = {
-    averageColor: Color.fromHex('#d0d0d0'),
+    averageColor: Color.fromHex('#cfcece'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
     minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
     minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
     minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
     minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#cccccc'),
-    mostSaturatedColor: Color.fromHex('#111100'),
+    mostFrequentColor: Color.fromHex('#888877'),
+    mostSaturatedColor: Color.fromHex('#000011'),
     mostGroupedColor: Color.fromHex('#ffffff'),
     bottom: {
-        averageColor: Color.fromHex('#c4c3c3'),
+        averageColor: Color.fromHex('#c2c1c1'),
         lightestColor: Color.fromHex('#ffffff'),
         darkestColor: Color.fromHex('#000000'),
         minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
         minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
         minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
         minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#cccccc'),
-        mostSaturatedColor: Color.fromHex('#001100'),
+        mostFrequentColor: Color.fromHex('#888877'),
+        mostSaturatedColor: Color.fromHex('#110011'),
         mostGroupedColor: Color.fromHex('#ffffff'),
     },
 } satisfies IImageColorStats;

@@ -41,14 +41,14 @@ export function ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d90
 ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d907b59a895d390_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d907b59a895d390_0_Image.colorStats = {
-    averageColor: Color.fromHex('#989897'),
+    averageColor: Color.fromHex('#999898'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
     minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
     minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
     minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#111111'),
+    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
+    mostFrequentColor: Color.fromHex('#ffffff'),
     mostSaturatedColor: Color.fromHex('#110000'),
     mostGroupedColor: Color.fromHex('#111111'),
     bottom: {
@@ -58,8 +58,8 @@ ABlackAndWhiteOutlineOfAnAstronautExploring7a578961Dd7140d583d907b59a895d390_0_I
         minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
         minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
         minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#554455'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#111111'),
+        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
+        mostFrequentColor: Color.fromHex('#ffffff'),
         mostSaturatedColor: Color.fromHex('#110000'),
         mostGroupedColor: Color.fromHex('#ffffff'),
     },
