@@ -240,6 +240,53 @@ export class Color {
         checkChanellValue('Alpha', alpha);
     }
 
+    /**
+     * Shortcut for `red` property
+     * @alias red
+     */
+    public get r(): number {
+        return this.red;
+    }
+
+    /**
+     * Shortcut for `green` property
+     * @alias green
+     */
+    public get g(): number {
+        return this.green;
+    }
+
+    /**
+     * Shortcut for `blue` property
+     * @alias blue
+     */
+    public get b(): number {
+        return this.blue;
+    }
+
+    /**
+     * Shortcut for `alpha` property
+     * @alias alpha
+     */
+    public get a(): number {
+        return this.alpha;
+    }
+
+    /**
+     * Shortcut for `alpha` property
+     * @alias alpha
+     */
+    public get opacity(): number {
+        return this.alpha;
+    }
+
+    /**
+     * Shortcut for 1-`alpha` property
+     */
+    public get transparency(): number {
+        return 255 - this.alpha;
+    }
+
     public withAlpha(alpha: number): WithTake<Color> {
         return this.withMutation((r, g, b, a) => {
             return [r, g, b, (((a / 255) * alpha) / 255) * 255];
