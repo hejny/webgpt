@@ -28,7 +28,7 @@ export function AinautsAndTheirAiCompanionsWorkingTogetherToA17b49f8F17147b4A987
             draggable="false"
             placeholder="blur"
             width={1920}
-            height={1080}
+            height={1080} quality={97}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
     );
