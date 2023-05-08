@@ -1,6 +1,7 @@
 import { Vector } from 'xyzt';
 import { Color } from '../../color/Color';
 import { IImage } from '../IImage';
+import { colorDownscaleImage } from './colorDownscaleImage';
 import { computeImageAverageColor } from './computeImageAverageColor';
 import { computeImageDarkestColor } from './computeImageDarkestColor';
 import { computeImageLightestColor } from './computeImageLightestColor';
@@ -18,8 +19,8 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
     const bottomImage = image.crop(new Vector(0, image.height * 0.62), new Vector(image.width, image.height));
 
     return {
-        ...computeWholeImageColorStats(scaleImage(image, 0.1)),
-        bottom: computeWholeImageColorStats(scaleImage(bottomImage, 0.1)),
+        ...computeWholeImageColorStats(image),
+        bottom: computeWholeImageColorStats(bottomImage),
     };
 }
 
@@ -27,6 +28,9 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
  * Compute the image color statistics for whole image
  */
 function computeWholeImageColorStats(image: IImage): IImageColorStatsRegion {
+    image = scaleImage(image, 0.1);
+    image = colorDownscaleImage(image, 16);
+
     return {
         averageColor: computeImageAverageColor(image),
         lightestColor: computeImageLightestColor(image),
