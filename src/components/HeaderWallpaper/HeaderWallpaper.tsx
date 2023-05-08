@@ -19,7 +19,7 @@ export function HeaderWallpaper(props: IHeaderWallpaperProps) {
             style={{ backgroundColor: Wallpaper.colorStats.mostFrequentColor.toHex() }}
         >
             <div className={styles.inner}>
-                <Wallpaper />
+                <Wallpaper quality={97} width={1920 * 2} />
             </div>
         </div>
     );
