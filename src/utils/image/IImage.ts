@@ -41,4 +41,9 @@ export interface IImage {
      * @param point2 bottom right corner
      */
     crop(point1: IVector, point2: IVector): IImage;
+
+    /**
+     * @@@
+     */
+    map(callback: (color: Color) => Color): IImage;
 }
