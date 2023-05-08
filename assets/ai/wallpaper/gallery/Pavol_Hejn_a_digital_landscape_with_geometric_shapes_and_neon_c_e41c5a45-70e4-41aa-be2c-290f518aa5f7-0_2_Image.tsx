@@ -12,7 +12,7 @@ import { Color } from '../../../../src/utils/color/Color';
 import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.json';
-import source from '../gallery-upscaled/Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.png';
+import source from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_2.png';
 
 /**
  * Image of A digital landscape with geometric shapes and neon colors
@@ -37,26 +37,26 @@ export function ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c
 ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#5f2457'),
-    lightestColor: Color.fromHex('#fe1dd5'),
-    darkestColor: Color.fromHex('#0e1418'),
-    minmaxWhite: [Color.fromHex('#f3d2aa'), Color.fromHex('#010e1d')],
-    minmaxRed: [Color.fromHex('#e11817'), Color.fromHex('#00ffff')],
-    minmaxGreen: [Color.fromHex('#02a399'), Color.fromHex('#fe1dd5')],
-    minmaxBlue: [Color.fromHex('#3720cb'), Color.fromHex('#ffce9c')],
-    mostFrequentColor: Color.fromHex('#03162d'),
-    mostSaturatedColor: Color.fromHex('#001c4b'),
-    mostGroupedColor: Color.fromHex('#031d37'),
+    averageColor: Color.fromHex('#5e2557'),
+    lightestColor: Color.fromHex('#ff22cc'),
+    darkestColor: Color.fromHex('#001122'),
+    minmaxWhite: [Color.fromHex('#eecc99'), Color.fromHex('#001122')],
+    minmaxRed: [Color.fromHex('#dd2233'), Color.fromHex('#00ffff')],
+    minmaxGreen: [Color.fromHex('#00bbbb'), Color.fromHex('#ee11cc')],
+    minmaxBlue: [Color.fromHex('#3322bb'), Color.fromHex('#ffbb88')],
+    mostFrequentColor: Color.fromHex('#001133'),
+    mostSaturatedColor: Color.fromHex('#002244'),
+    mostGroupedColor: Color.fromHex('#002233'),
     bottom: {
-        averageColor: Color.fromHex('#2d1e61'),
-        lightestColor: Color.fromHex('#fe1dd5'),
-        darkestColor: Color.fromHex('#0e1418'),
-        minmaxWhite: [Color.fromHex('#7ab3e8'), Color.fromHex('#010e1d')],
-        minmaxRed: [Color.fromHex('#d70130'), Color.fromHex('#00ffff')],
-        minmaxGreen: [Color.fromHex('#02a399'), Color.fromHex('#fe1dd5')],
-        minmaxBlue: [Color.fromHex('#3720cb'), Color.fromHex('#22fffb')],
-        mostFrequentColor: Color.fromHex('#03162d'),
-        mostSaturatedColor: Color.fromHex('#001c4b'),
-        mostGroupedColor: Color.fromHex('#02152f'),
+        averageColor: Color.fromHex('#2c1d61'),
+        lightestColor: Color.fromHex('#ff22cc'),
+        darkestColor: Color.fromHex('#001122'),
+        minmaxWhite: [Color.fromHex('#66aaee'), Color.fromHex('#001122')],
+        minmaxRed: [Color.fromHex('#ee0066'), Color.fromHex('#00ffff')],
+        minmaxGreen: [Color.fromHex('#00bbbb'), Color.fromHex('#ee11cc')],
+        minmaxBlue: [Color.fromHex('#3322cc'), Color.fromHex('#11ffee')],
+        mostFrequentColor: Color.fromHex('#001133'),
+        mostSaturatedColor: Color.fromHex('#001133'),
+        mostGroupedColor: Color.fromHex('#001133'),
     },
 } satisfies IImageColorStats;
