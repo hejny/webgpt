@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_6ecd30dc-f398-4f6d-b263-6cee40761435-0_2.json';
-import a_wallpaper_with_a_repeating_pattern_of_abstract_ico_6ecd30dc_f398_4f6d_b263_6cee40761435_0_2 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_6ecd30dc-f398-4f6d-b263-6cee40761435-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_6ecd30dc-f398-4f6d-b263-6cee40761435-0_2.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_6ecd30dc-f398-4f6d-b263-6cee40761435-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons.
@@ -43,8 +38,25 @@ AWallpaperWithARepeatingPatternOfAbstractIco6ecd30dcF3984f6dB2636cee407614350_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractIco6ecd30dcF3984f6dB2636cee407614350_2_Image.colorStats = {
     averageColor: Color.fromHex('#33252e'),
-    lightestColor: Color.fromHex('#f8d197'),
+    lightestColor: Color.fromHex('#e1d0c5'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0b0b1d'),
-    leastFrequentColor: Color.fromHex('#0c0018'),
+    minmaxWhite: [Color.fromHex('#e1d0c5'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d33300'), Color.fromHex('#c5d5c9')],
+    minmaxGreen: [Color.fromHex('#559482'), Color.fromHex('#7a0010')],
+    minmaxBlue: [Color.fromHex('#273670'), Color.fromHex('#ffa425')],
+    mostFrequentColor: Color.fromHex('#1d1f2e'),
+    mostSaturatedColor: Color.fromHex('#07000d'),
+    mostGroupedColor: Color.fromHex('#0b0b1d'),
+    bottom: {
+        averageColor: Color.fromHex('#34282f'),
+        lightestColor: Color.fromHex('#b0c7b5'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffcd95'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d63e12'), Color.fromHex('#b8d7b2')],
+        minmaxGreen: [Color.fromHex('#607d68'), Color.fromHex('#ef4b18')],
+        minmaxBlue: [Color.fromHex('#243569'), Color.fromHex('#ffa425')],
+        mostFrequentColor: Color.fromHex('#1d1f2e'),
+        mostSaturatedColor: Color.fromHex('#000010'),
+        mostGroupedColor: Color.fromHex('#0a0a1c'),
+    },
 } satisfies IImageColorStats;

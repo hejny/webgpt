@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__8b9d2ad4-1224-4f63-844f-96fe15181e13-0_3.json';
-import an_illustration_of_a_robotic_explorer_with_metallic_8b9d2ad4_1224_4f63_844f_96fe15181e13_0_3 from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__8b9d2ad4-1224-4f63-844f-96fe15181e13-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__8b9d2ad4-1224-4f63-844f-96fe15181e13-0_3.json';
 import source from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__8b9d2ad4-1224-4f63-844f-96fe15181e13-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a robotic explorer, with metallic textures and intricate details.
@@ -45,6 +40,23 @@ AnIllustrationOfARoboticExplorerWithMetallic8b9d2ad412244f63844f96fe15181e130_3_
     averageColor: Color.fromHex('#a2947a'),
     lightestColor: Color.fromHex('#ffffee'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#e4d7b5'),
-    leastFrequentColor: Color.fromHex('#e2d5ab'),
+    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#9f652e'), Color.fromHex('#ffffee')],
+    minmaxGreen: [Color.fromHex('#6b7858'), Color.fromHex('#ffffee')],
+    minmaxBlue: [Color.fromHex('#2c4067'), Color.fromHex('#ffffc9')],
+    mostFrequentColor: Color.fromHex('#9fa38c'),
+    mostSaturatedColor: Color.fromHex('#0d0800'),
+    mostGroupedColor: Color.fromHex('#9da28a'),
+    bottom: {
+        averageColor: Color.fromHex('#9a9279'),
+        lightestColor: Color.fromHex('#f5ebd2'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f5ebd2'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#9f652e'), Color.fromHex('#f3f0ca')],
+        minmaxGreen: [Color.fromHex('#798265'), Color.fromHex('#f5ebd2')],
+        minmaxBlue: [Color.fromHex('#3a4b5f'), Color.fromHex('#f3f0ca')],
+        mostFrequentColor: Color.fromHex('#9fa38c'),
+        mostSaturatedColor: Color.fromHex('#1c0f00'),
+        mostGroupedColor: Color.fromHex('#9da28a'),
+    },
 } satisfies IImageColorStats;

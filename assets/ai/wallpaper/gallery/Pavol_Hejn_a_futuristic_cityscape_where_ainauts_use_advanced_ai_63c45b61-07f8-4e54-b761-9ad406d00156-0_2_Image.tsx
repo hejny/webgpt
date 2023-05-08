@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_2.json';
-import a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61_07f8_4e54_b761_9ad406d00156_0_2 from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_2.json';
 import source from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems.
@@ -43,8 +38,25 @@ AFuturisticCityscapeWhereAinautsUseAdvancedAi63c45b6107f84e54B7619ad406d001560_2
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWhereAinautsUseAdvancedAi63c45b6107f84e54B7619ad406d001560_2_Image.colorStats = {
     averageColor: Color.fromHex('#233e4e'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#030614'),
-    mostFrequentColor: Color.fromHex('#0d1a25'),
-    leastFrequentColor: Color.fromHex('#0a151b'),
+    lightestColor: Color.fromHex('#fffeff'),
+    darkestColor: Color.fromHex('#201205'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#030614')],
+    minmaxRed: [Color.fromHex('#c33a25'), Color.fromHex('#50f7ff')],
+    minmaxGreen: [Color.fromHex('#09956e'), Color.fromHex('#fffeff')],
+    minmaxBlue: [Color.fromHex('#034885'), Color.fromHex('#ffffdf')],
+    mostFrequentColor: Color.fromHex('#08131b'),
+    mostSaturatedColor: Color.fromHex('#001424'),
+    mostGroupedColor: Color.fromHex('#0d1a25'),
+    bottom: {
+        averageColor: Color.fromHex('#1f313d'),
+        lightestColor: Color.fromHex('#fffeff'),
+        darkestColor: Color.fromHex('#001118'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000d1b')],
+        minmaxRed: [Color.fromHex('#a5353d'), Color.fromHex('#50f7ff')],
+        minmaxGreen: [Color.fromHex('#09956e'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#034885'), Color.fromHex('#ffffdf')],
+        mostFrequentColor: Color.fromHex('#08131b'),
+        mostSaturatedColor: Color.fromHex('#002234'),
+        mostGroupedColor: Color.fromHex('#0d1a25'),
+    },
 } satisfies IImageColorStats;

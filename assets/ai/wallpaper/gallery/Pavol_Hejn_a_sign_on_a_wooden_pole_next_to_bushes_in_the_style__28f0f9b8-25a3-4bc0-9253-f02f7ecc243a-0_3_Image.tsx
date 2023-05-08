@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.json';
-import a_sign_on_a_wooden_pole_next_to_bushes_in_the_style_28f0f9b8_25a3_4bc0_9253_f02f7ecc243a_0_3 from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.json';
 import source from './Pavol_Hejn_a_sign_on_a_wooden_pole_next_to_bushes_in_the_style__28f0f9b8-25a3-4bc0-9253-f02f7ecc243a-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of a sign on a wooden pole next to bushes, in the style of bibliographic anomalies, terragen, johannes jan schoonhoven, tyko sallinen, soggy, light green and dark gray, tatsuyuki tanaka
@@ -44,7 +39,24 @@ ASignOnAWoodenPoleNextToBushesInTheStyle28f0f9b825a34bc09253F02f7ecc243a0_3_Imag
 ASignOnAWoodenPoleNextToBushesInTheStyle28f0f9b825a34bc09253F02f7ecc243a0_3_Image.colorStats = {
     averageColor: Color.fromHex('#586039'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#010200'),
-    mostFrequentColor: Color.fromHex('#e3e3e2'),
-    leastFrequentColor: Color.fromHex('#4f4d22'),
+    darkestColor: Color.fromHex('#000700'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#010200')],
+    minmaxRed: [Color.fromHex('#77212c'), Color.fromHex('#f4ffff')],
+    minmaxGreen: [Color.fromHex('#85ab02'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#4d5663'), Color.fromHex('#ffff9c')],
+    mostFrequentColor: Color.fromHex('#1c2018'),
+    mostSaturatedColor: Color.fromHex('#000700'),
+    mostGroupedColor: Color.fromHex('#e3e3e2'),
+    bottom: {
+        averageColor: Color.fromHex('#434b2c'),
+        lightestColor: Color.fromHex('#e0f2e7'),
+        darkestColor: Color.fromHex('#000700'),
+        minmaxWhite: [Color.fromHex('#f0f6de'), Color.fromHex('#010200')],
+        minmaxRed: [Color.fromHex('#786112'), Color.fromHex('#e7fadf')],
+        minmaxGreen: [Color.fromHex('#85ab02'), Color.fromHex('#f0f6de')],
+        minmaxBlue: [Color.fromHex('#635e62'), Color.fromHex('#e8e03c')],
+        mostFrequentColor: Color.fromHex('#1c2018'),
+        mostSaturatedColor: Color.fromHex('#000700'),
+        mostGroupedColor: Color.fromHex('#0e1606'),
+    },
 } satisfies IImageColorStats;

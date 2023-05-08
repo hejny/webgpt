@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.json';
-import an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5_baba_432a_88ba_5457b8031bdb_0_1 from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.json';
 import source from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An Art Deco-inspired pattern in shades of gold and black, with futuristic elements such as robot arms and AI nodes.
@@ -45,6 +40,23 @@ AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Im
     averageColor: Color.fromHex('#785d37'),
     lightestColor: Color.fromHex('#ffffd1'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0b0a0e'),
-    leastFrequentColor: Color.fromHex('#f2bf6b'),
+    minmaxWhite: [Color.fromHex('#ffffd1'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#8a460a'), Color.fromHex('#ffffd1')],
+    minmaxGreen: [Color.fromHex('#9b8f48'), Color.fromHex('#ffffd1')],
+    minmaxBlue: [Color.fromHex('#262945'), Color.fromHex('#ffff9d')],
+    mostFrequentColor: Color.fromHex('#907247'),
+    mostSaturatedColor: Color.fromHex('#351d00'),
+    mostGroupedColor: Color.fromHex('#0b0a0f'),
+    bottom: {
+        averageColor: Color.fromHex('#493924'),
+        lightestColor: Color.fromHex('#ffffd1'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffd1'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#8a460a'), Color.fromHex('#ffffd1')],
+        minmaxGreen: [Color.fromHex('#9b8f48'), Color.fromHex('#ffffd1')],
+        minmaxBlue: [Color.fromHex('#262945'), Color.fromHex('#ffff9d')],
+        mostFrequentColor: Color.fromHex('#907247'),
+        mostSaturatedColor: Color.fromHex('#080600'),
+        mostGroupedColor: Color.fromHex('#0b0a0e'),
+    },
 } satisfies IImageColorStats;

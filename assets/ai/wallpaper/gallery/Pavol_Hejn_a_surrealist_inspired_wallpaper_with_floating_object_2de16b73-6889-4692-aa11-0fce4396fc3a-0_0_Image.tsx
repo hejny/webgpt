@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_0.json';
-import a_surrealist_inspired_wallpaper_with_floating_object_2de16b73_6889_4692_aa11_0fce4396fc3a_0_0 from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_0.json';
 import source from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_2de16b73-6889-4692-aa11-0fce4396fc3a-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors.
@@ -45,6 +40,23 @@ ASurrealistInspiredWallpaperWithFloatingObject2de16b7368894692Aa110fce4396fc3a0_
     averageColor: Color.fromHex('#575747'),
     lightestColor: Color.fromHex('#fefff4'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#25342d'),
-    leastFrequentColor: Color.fromHex('#121a11'),
+    minmaxWhite: [Color.fromHex('#fefff4'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a04319'), Color.fromHex('#fefff4')],
+    minmaxGreen: [Color.fromHex('#3d7b64'), Color.fromHex('#fefff4')],
+    minmaxBlue: [Color.fromHex('#354854'), Color.fromHex('#ffffd9')],
+    mostFrequentColor: Color.fromHex('#141b18'),
+    mostSaturatedColor: Color.fromHex('#090000'),
+    mostGroupedColor: Color.fromHex('#1a221f'),
+    bottom: {
+        averageColor: Color.fromHex('#494c40'),
+        lightestColor: Color.fromHex('#f9f4e9'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f9f4e9'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#a94d25'), Color.fromHex('#fffce3')],
+        minmaxGreen: [Color.fromHex('#3d7b64'), Color.fromHex('#fffce3')],
+        minmaxBlue: [Color.fromHex('#4b6168'), Color.fromHex('#fffce3')],
+        mostFrequentColor: Color.fromHex('#141b18'),
+        mostSaturatedColor: Color.fromHex('#000704'),
+        mostGroupedColor: Color.fromHex('#1a221f'),
+    },
 } satisfies IImageColorStats;

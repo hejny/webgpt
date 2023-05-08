@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_0.json';
-import an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa_ffaf_4ccd_be18_9242b7336618_0_0 from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_0.json';
 import source from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An image of a rocket taking off from Earth, with a fiery trail leading into the clouds.
@@ -44,7 +39,24 @@ AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_0_Ima
 AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_0_Image.colorStats = {
     averageColor: Color.fromHex('#6c6864'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#08070d'),
-    mostFrequentColor: Color.fromHex('#0e151f'),
-    leastFrequentColor: Color.fromHex('#1f3650'),
+    darkestColor: Color.fromHex('#08090a'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#08070d')],
+    minmaxRed: [Color.fromHex('#bb512b'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#817a62'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2e4e69'), Color.fromHex('#ffffd2')],
+    mostFrequentColor: Color.fromHex('#0a1118'),
+    mostSaturatedColor: Color.fromHex('#bb512b'),
+    mostGroupedColor: Color.fromHex('#0e151f'),
+    bottom: {
+        averageColor: Color.fromHex('#463a3a'),
+        lightestColor: Color.fromHex('#efd19f'),
+        darkestColor: Color.fromHex('#08090a'),
+        minmaxWhite: [Color.fromHex('#f2d29e'), Color.fromHex('#08070d')],
+        minmaxRed: [Color.fromHex('#97513d'), Color.fromHex('#f2d29e')],
+        minmaxGreen: [Color.fromHex('#7f6a4e'), Color.fromHex('#08070d')],
+        minmaxBlue: [Color.fromHex('#343e4e'), Color.fromHex('#f3d296')],
+        mostFrequentColor: Color.fromHex('#0a1118'),
+        mostSaturatedColor: Color.fromHex('#0d1828'),
+        mostGroupedColor: Color.fromHex('#0e151f'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.json';
-import a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421_6a93_4041_9418_d81a92bbb9ea_0_0 from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.json';
 import source from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe.
@@ -45,6 +40,23 @@ ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_
     averageColor: Color.fromHex('#3f2634'),
     lightestColor: Color.fromHex('#fffcff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#060207'),
-    leastFrequentColor: Color.fromHex('#020311'),
+    minmaxWhite: [Color.fromHex('#fffcff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#dd1d21'), Color.fromHex('#d0ffff')],
+    minmaxGreen: [Color.fromHex('#b28d29'), Color.fromHex('#dd1d21')],
+    minmaxBlue: [Color.fromHex('#0631db'), Color.fromHex('#eede43')],
+    mostFrequentColor: Color.fromHex('#000003'),
+    mostSaturatedColor: Color.fromHex('#00010e'),
+    mostGroupedColor: Color.fromHex('#060207'),
+    bottom: {
+        averageColor: Color.fromHex('#4a2729'),
+        lightestColor: Color.fromHex('#fffcff'),
+        darkestColor: Color.fromHex('#0a0000'),
+        minmaxWhite: [Color.fromHex('#fffcff'), Color.fromHex('#000003')],
+        minmaxRed: [Color.fromHex('#d62608'), Color.fromHex('#aef5f5')],
+        minmaxGreen: [Color.fromHex('#7a7258'), Color.fromHex('#fffcff')],
+        minmaxBlue: [Color.fromHex('#0631db'), Color.fromHex('#eede43')],
+        mostFrequentColor: Color.fromHex('#000003'),
+        mostSaturatedColor: Color.fromHex('#040005'),
+        mostGroupedColor: Color.fromHex('#060207'),
+    },
 } satisfies IImageColorStats;

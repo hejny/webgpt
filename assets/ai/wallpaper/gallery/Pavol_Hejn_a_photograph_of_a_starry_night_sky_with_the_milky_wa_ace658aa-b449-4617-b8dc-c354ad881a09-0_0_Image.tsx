@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.json';
-import a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa_b449_4617_b8dc_c354ad881a09_0_0 from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.json';
 import source from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of a starry night sky, with the Milky Way galaxy visible overhead.
@@ -45,6 +40,23 @@ APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Im
     averageColor: Color.fromHex('#202326'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#343c4e'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#96110d'), Color.fromHex('#62fcff')],
+    minmaxGreen: [Color.fromHex('#677960'), Color.fromHex('#0b0eda')],
+    minmaxBlue: [Color.fromHex('#0b0eda'), Color.fromHex('#ffffe7')],
+    mostFrequentColor: Color.fromHex('#0b090a'),
+    mostSaturatedColor: Color.fromHex('#040300'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#15100b'),
+        lightestColor: Color.fromHex('#f4c484'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f4c484'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b45c25'), Color.fromHex('#f4c484')],
+        minmaxGreen: [Color.fromHex('#736544'), Color.fromHex('#350000')],
+        minmaxBlue: [Color.fromHex('#695c55'), Color.fromHex('#ffc45e')],
+        mostFrequentColor: Color.fromHex('#0b090a'),
+        mostSaturatedColor: Color.fromHex('#040300'),
+        mostGroupedColor: Color.fromHex('#040304'),
+    },
 } satisfies IImageColorStats;

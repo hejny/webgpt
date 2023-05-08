@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_3.json';
-import a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45_70e4_41aa_be2c_290f518aa5f7_0_3 from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_3.json';
 import source from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_e41c5a45-70e4-41aa-be2c-290f518aa5f7-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital landscape with geometric shapes and neon colors
@@ -43,8 +38,25 @@ ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_3_
     metadata satisfies IWallpaperMetadata;
 ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_3_Image.colorStats = {
     averageColor: Color.fromHex('#3e2945'),
-    lightestColor: Color.fromHex('#f8f175'),
-    darkestColor: Color.fromHex('#00000e'),
-    mostFrequentColor: Color.fromHex('#041b2a'),
-    leastFrequentColor: Color.fromHex('#03172d'),
+    lightestColor: Color.fromHex('#ea8afd'),
+    darkestColor: Color.fromHex('#120d02'),
+    minmaxWhite: [Color.fromHex('#f2d0d2'), Color.fromHex('#00000e')],
+    minmaxRed: [Color.fromHex('#cf1a6b'), Color.fromHex('#42e2e5')],
+    minmaxGreen: [Color.fromHex('#009892'), Color.fromHex('#f819dd')],
+    minmaxBlue: [Color.fromHex('#5021a4'), Color.fromHex('#fcef57')],
+    mostFrequentColor: Color.fromHex('#000713'),
+    mostSaturatedColor: Color.fromHex('#00192c'),
+    mostGroupedColor: Color.fromHex('#041e2d'),
+    bottom: {
+        averageColor: Color.fromHex('#2d1b33'),
+        lightestColor: Color.fromHex('#73def5'),
+        darkestColor: Color.fromHex('#120d02'),
+        minmaxWhite: [Color.fromHex('#9ac2de'), Color.fromHex('#00000e')],
+        minmaxRed: [Color.fromHex('#c94931'), Color.fromHex('#34d2e1')],
+        minmaxGreen: [Color.fromHex('#35958f'), Color.fromHex('#ef2a91')],
+        minmaxBlue: [Color.fromHex('#2b298b'), Color.fromHex('#ffbc48')],
+        mostFrequentColor: Color.fromHex('#000713'),
+        mostSaturatedColor: Color.fromHex('#250025'),
+        mostGroupedColor: Color.fromHex('#040714'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_12472cd4-870b-4636-8bb9-16f340674736-0_3.json';
-import an_illustration_of_a_futuristic_space_station_orbiti_12472cd4_870b_4636_8bb9_16f340674736_0_3 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_12472cd4-870b-4636-8bb9-16f340674736-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_12472cd4-870b-4636-8bb9-16f340674736-0_3.json';
 import source from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_12472cd4-870b-4636-8bb9-16f340674736-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.
@@ -45,6 +40,23 @@ AnIllustrationOfAFuturisticSpaceStationOrbiti12472cd4870b46368bb916f3406747360_3
     averageColor: Color.fromHex('#343a44'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000208'),
-    leastFrequentColor: Color.fromHex('#ecf8f4'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#7c4929'), Color.fromHex('#e0ffff')],
+    minmaxGreen: [Color.fromHex('#787763'), Color.fromHex('#fffeff')],
+    minmaxBlue: [Color.fromHex('#224b83'), Color.fromHex('#ffffed')],
+    mostFrequentColor: Color.fromHex('#000001'),
+    mostSaturatedColor: Color.fromHex('#422200'),
+    mostGroupedColor: Color.fromHex('#000006'),
+    bottom: {
+        averageColor: Color.fromHex('#161c2a'),
+        lightestColor: Color.fromHex('#c6effe'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#e7ecf4'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#6e4838'), Color.fromHex('#c6f0fd')],
+        minmaxGreen: [Color.fromHex('#6a736f'), Color.fromHex('#e7ecf4')],
+        minmaxBlue: [Color.fromHex('#224b83'), Color.fromHex('#ecede6')],
+        mostFrequentColor: Color.fromHex('#000001'),
+        mostSaturatedColor: Color.fromHex('#140010'),
+        mostGroupedColor: Color.fromHex('#000006'),
+    },
 } satisfies IImageColorStats;

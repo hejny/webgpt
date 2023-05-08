@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_3.json';
-import a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b_c582_43fa_908c_c2b67d4a0e55_0_3 from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_3.json';
 import source from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.
@@ -45,6 +40,23 @@ APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC2b67d4a0e550_3_I
     averageColor: Color.fromHex('#212733'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020418'),
-    leastFrequentColor: Color.fromHex('#020018'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#cb3816'), Color.fromHex('#b3ffff')],
+    minmaxGreen: [Color.fromHex('#62a020'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#563bb0'), Color.fromHex('#f0ff4a')],
+    mostFrequentColor: Color.fromHex('#10222b'),
+    mostSaturatedColor: Color.fromHex('#020018'),
+    mostGroupedColor: Color.fromHex('#020418'),
+    bottom: {
+        averageColor: Color.fromHex('#181b27'),
+        lightestColor: Color.fromHex('#d0f4cc'),
+        darkestColor: Color.fromHex('#050000'),
+        minmaxWhite: [Color.fromHex('#d0f4cc'), Color.fromHex('#000003')],
+        minmaxRed: [Color.fromHex('#cb3816'), Color.fromHex('#d0f4cc')],
+        minmaxGreen: [Color.fromHex('#82ba3f'), Color.fromHex('#4c0000')],
+        minmaxBlue: [Color.fromHex('#3f3e67'), Color.fromHex('#d7dc23')],
+        mostFrequentColor: Color.fromHex('#10222b'),
+        mostSaturatedColor: Color.fromHex('#000218'),
+        mostGroupedColor: Color.fromHex('#020418'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_d506efd8-129e-47c4-b966-756e98e346fc-0_0.json';
-import a_stylized_depiction_of_a_spacecraft_in_orbit_around_d506efd8_129e_47c4_b966_756e98e346fc_0_0 from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_d506efd8-129e-47c4-b966-756e98e346fc-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_d506efd8-129e-47c4-b966-756e98e346fc-0_0.json';
 import source from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_d506efd8-129e-47c4-b966-756e98e346fc-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows.
@@ -45,6 +40,23 @@ AStylizedDepictionOfASpacecraftInOrbitAroundD506efd8129e47c4B966756e98e346fc0_0_
     averageColor: Color.fromHex('#212427'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#0d171d'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#8d5240'), Color.fromHex('#fbffff')],
+    minmaxGreen: [Color.fromHex('#6e766f'), Color.fromHex('#fffcff')],
+    minmaxBlue: [Color.fromHex('#2c5c8f'), Color.fromHex('#fffffc')],
+    mostFrequentColor: Color.fromHex('#111519'),
+    mostSaturatedColor: Color.fromHex('#010001'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#363c43'),
+        lightestColor: Color.fromHex('#f7f9ff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fbfbfc'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#524338'), Color.fromHex('#f7fdfd')],
+        minmaxGreen: [Color.fromHex('#6e766f'), Color.fromHex('#faf9fe')],
+        minmaxBlue: [Color.fromHex('#2c5c8f'), Color.fromHex('#fbfbfb')],
+        mostFrequentColor: Color.fromHex('#111519'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#010205'),
+    },
 } satisfies IImageColorStats;

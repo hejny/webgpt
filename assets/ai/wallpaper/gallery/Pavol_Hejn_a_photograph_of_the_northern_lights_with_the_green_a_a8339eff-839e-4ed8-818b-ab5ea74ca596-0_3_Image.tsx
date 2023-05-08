@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_a8339eff-839e-4ed8-818b-ab5ea74ca596-0_3.json';
-import a_photograph_of_the_northern_lights_with_the_green_a_a8339eff_839e_4ed8_818b_ab5ea74ca596_0_3 from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_a8339eff-839e-4ed8-818b-ab5ea74ca596-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_a8339eff-839e-4ed8-818b-ab5ea74ca596-0_3.json';
 import source from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_a8339eff-839e-4ed8-818b-ab5ea74ca596-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.
@@ -43,8 +38,25 @@ APhotographOfTheNorthernLightsWithTheGreenAA8339eff839e4ed8818bAb5ea74ca5960_3_I
     metadata satisfies IWallpaperMetadata;
 APhotographOfTheNorthernLightsWithTheGreenAA8339eff839e4ed8818bAb5ea74ca5960_3_Image.colorStats = {
     averageColor: Color.fromHex('#242d33'),
-    lightestColor: Color.fromHex('#fcffff'),
+    lightestColor: Color.fromHex('#ffefff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020406'),
-    leastFrequentColor: Color.fromHex('#05171d'),
+    minmaxWhite: [Color.fromHex('#fcffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#68452d'), Color.fromHex('#d3ffff')],
+    minmaxGreen: [Color.fromHex('#489b69'), Color.fromHex('#ffefff')],
+    minmaxBlue: [Color.fromHex('#1f5386'), Color.fromHex('#fcffff')],
+    mostFrequentColor: Color.fromHex('#000305'),
+    mostSaturatedColor: Color.fromHex('#00060a'),
+    mostGroupedColor: Color.fromHex('#020406'),
+    bottom: {
+        averageColor: Color.fromHex('#22222a'),
+        lightestColor: Color.fromHex('#ffefff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffefff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#68452d'), Color.fromHex('#ffefff')],
+        minmaxGreen: [Color.fromHex('#768178'), Color.fromHex('#ffefff')],
+        minmaxBlue: [Color.fromHex('#5e4475'), Color.fromHex('#ffefff')],
+        mostFrequentColor: Color.fromHex('#000305'),
+        mostSaturatedColor: Color.fromHex('#000205'),
+        mostGroupedColor: Color.fromHex('#020406'),
+    },
 } satisfies IImageColorStats;

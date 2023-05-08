@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_1.json';
-import a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b_00f9_4960_b0e9_963454b085d4_0_1 from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_1.json';
 import source from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.
@@ -44,7 +39,24 @@ APopArtStyleWallpaperFeaturingAComicBookSty3bf6e02b00f94960B0e9963454b085d40_1_I
 APopArtStyleWallpaperFeaturingAComicBookSty3bf6e02b00f94960B0e9963454b085d40_1_Image.colorStats = {
     averageColor: Color.fromHex('#6c6b53'),
     lightestColor: Color.fromHex('#fffff5'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#4a8478'),
-    leastFrequentColor: Color.fromHex('#e12d3e'),
+    darkestColor: Color.fromHex('#000100'),
+    minmaxWhite: [Color.fromHex('#fffff5'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#e01520'), Color.fromHex('#fffff5')],
+    minmaxGreen: [Color.fromHex('#4f9663'), Color.fromHex('#e5113d')],
+    minmaxBlue: [Color.fromHex('#205964'), Color.fromHex('#ffffd0')],
+    mostFrequentColor: Color.fromHex('#4c8177'),
+    mostSaturatedColor: Color.fromHex('#000100'),
+    mostGroupedColor: Color.fromHex('#4a8478'),
+    bottom: {
+        averageColor: Color.fromHex('#556959'),
+        lightestColor: Color.fromHex('#fffff5'),
+        darkestColor: Color.fromHex('#000100'),
+        minmaxWhite: [Color.fromHex('#fffff5'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#e92224'), Color.fromHex('#fffff5')],
+        minmaxGreen: [Color.fromHex('#53a07a'), Color.fromHex('#f3223e')],
+        minmaxBlue: [Color.fromHex('#387482'), Color.fromHex('#ffffe0')],
+        mostFrequentColor: Color.fromHex('#4c8177'),
+        mostSaturatedColor: Color.fromHex('#000100'),
+        mostGroupedColor: Color.fromHex('#4a8478'),
+    },
 } satisfies IImageColorStats;

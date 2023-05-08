@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_2.json';
-import a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1_a0f5_40af_8cb2_2ad681c6f23f_0_2 from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_2.json';
 import source from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_d3b703f1-a0f5-40af-8cb2-2ad681c6f23f-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.
@@ -45,6 +40,23 @@ AFuturisticLaboratoryWhereAinautsUseAiAndAdvD3b703f1A0f540af8cb22ad681c6f23f0_2_
     averageColor: Color.fromHex('#293843'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000001'),
-    mostFrequentColor: Color.fromHex('#050609'),
-    leastFrequentColor: Color.fromHex('#091a1f'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000001')],
+    minmaxRed: [Color.fromHex('#684c33'), Color.fromHex('#daffff')],
+    minmaxGreen: [Color.fromHex('#557c82'), Color.fromHex('#fffeff')],
+    minmaxBlue: [Color.fromHex('#295f82'), Color.fromHex('#fffffd')],
+    mostFrequentColor: Color.fromHex('#000102'),
+    mostSaturatedColor: Color.fromHex('#000205'),
+    mostGroupedColor: Color.fromHex('#0b0e12'),
+    bottom: {
+        averageColor: Color.fromHex('#19262f'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000001'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000001')],
+        minmaxRed: [Color.fromHex('#684c33'), Color.fromHex('#e7ffff')],
+        minmaxGreen: [Color.fromHex('#4b7780'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#2b5477'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#000102'),
+        mostSaturatedColor: Color.fromHex('#000205'),
+        mostGroupedColor: Color.fromHex('#0b0e12'),
+    },
 } satisfies IImageColorStats;

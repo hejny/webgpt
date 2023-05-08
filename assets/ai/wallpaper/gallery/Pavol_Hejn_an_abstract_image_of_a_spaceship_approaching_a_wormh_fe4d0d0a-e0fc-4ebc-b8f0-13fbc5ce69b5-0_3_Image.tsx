@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_3.json';
-import an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a_e0fc_4ebc_b8f0_13fbc5ce69b5_0_3 from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_3.json';
 import source from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_fe4d0d0a-e0fc-4ebc-b8f0-13fbc5ce69b5-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract image of a spaceship approaching a wormhole, with bright colors and distorted shapes.
@@ -45,6 +40,23 @@ AnAbstractImageOfASpaceshipApproachingAWormhFe4d0d0aE0fc4ebcB8f013fbc5ce69b50_3_
     averageColor: Color.fromHex('#272025'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010102'),
-    leastFrequentColor: Color.fromHex('#031445'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d31006'), Color.fromHex('#27f1ff')],
+    minmaxGreen: [Color.fromHex('#3b9f7d'), Color.fromHex('#c30000')],
+    minmaxBlue: [Color.fromHex('#0d03ab'), Color.fromHex('#ffff5a')],
+    mostFrequentColor: Color.fromHex('#000002'),
+    mostSaturatedColor: Color.fromHex('#0a0300'),
+    mostGroupedColor: Color.fromHex('#010204'),
+    bottom: {
+        averageColor: Color.fromHex('#1b171e'),
+        lightestColor: Color.fromHex('#fbffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fbffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d11e1b'), Color.fromHex('#dcffff')],
+        minmaxGreen: [Color.fromHex('#71a072'), Color.fromHex('#ca1558')],
+        minmaxBlue: [Color.fromHex('#0042bb'), Color.fromHex('#ffc40d')],
+        mostFrequentColor: Color.fromHex('#000002'),
+        mostSaturatedColor: Color.fromHex('#00040d'),
+        mostGroupedColor: Color.fromHex('#010204'),
+    },
 } satisfies IImageColorStats;

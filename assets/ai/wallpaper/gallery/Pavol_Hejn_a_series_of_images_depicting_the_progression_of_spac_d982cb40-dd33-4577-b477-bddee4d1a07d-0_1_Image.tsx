@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d982cb40-dd33-4577-b477-bddee4d1a07d-0_1.json';
-import a_series_of_images_depicting_the_progression_of_spac_d982cb40_dd33_4577_b477_bddee4d1a07d_0_1 from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d982cb40-dd33-4577-b477-bddee4d1a07d-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d982cb40-dd33-4577-b477-bddee4d1a07d-0_1.json';
 import source from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d982cb40-dd33-4577-b477-bddee4d1a07d-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A series of images depicting the progression of space exploration, from early rockets to modern spacecraft.
@@ -45,6 +40,23 @@ ASeriesOfImagesDepictingTheProgressionOfSpacD982cb40Dd334577B477Bddee4d1a07d0_1_
     averageColor: Color.fromHex('#313232'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0e1112'),
-    leastFrequentColor: Color.fromHex('#aeb2b1'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ae3e10'), Color.fromHex('#f2ffff')],
+    minmaxGreen: [Color.fromHex('#697151'), Color.fromHex('#fffeff')],
+    minmaxBlue: [Color.fromHex('#526a98'), Color.fromHex('#ffffda')],
+    mostFrequentColor: Color.fromHex('#0a1010'),
+    mostSaturatedColor: Color.fromHex('#050500'),
+    mostGroupedColor: Color.fromHex('#0e1112'),
+    bottom: {
+        averageColor: Color.fromHex('#3b3c3c'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#ae3e10'), Color.fromHex('#f2ffff')],
+        minmaxGreen: [Color.fromHex('#767b61'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#4f5b7e'), Color.fromHex('#ffffda')],
+        mostFrequentColor: Color.fromHex('#0a1010'),
+        mostSaturatedColor: Color.fromHex('#000202'),
+        mostGroupedColor: Color.fromHex('#0e1112'),
+    },
 } satisfies IImageColorStats;

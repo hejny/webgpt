@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.json';
-import a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864_d2a1_4217_a8b0_acdac05bf295_0_0 from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.json';
 import source from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_7c807864-d2a1-4217-a8b0-acdac05bf295-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel.
@@ -44,7 +39,24 @@ APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_0_I
 APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_0_Image.colorStats = {
     averageColor: Color.fromHex('#33485c'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000620'),
-    mostFrequentColor: Color.fromHex('#164454'),
-    leastFrequentColor: Color.fromHex('#071b31'),
+    darkestColor: Color.fromHex('#2a0400'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000620')],
+    minmaxRed: [Color.fromHex('#a83419'), Color.fromHex('#76fff7')],
+    minmaxGreen: [Color.fromHex('#409d7e'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#314e98'), Color.fromHex('#fce930')],
+    mostFrequentColor: Color.fromHex('#011e2e'),
+    mostSaturatedColor: Color.fromHex('#001a2f'),
+    mostGroupedColor: Color.fromHex('#154254'),
+    bottom: {
+        averageColor: Color.fromHex('#2f3f55'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#2a0400'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000620')],
+        minmaxRed: [Color.fromHex('#a83419'), Color.fromHex('#76fff7')],
+        minmaxGreen: [Color.fromHex('#809263'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#314e98'), Color.fromHex('#fce930')],
+        mostFrequentColor: Color.fromHex('#011e2e'),
+        mostSaturatedColor: Color.fromHex('#001a2f'),
+        mostGroupedColor: Color.fromHex('#06243a'),
+    },
 } satisfies IImageColorStats;

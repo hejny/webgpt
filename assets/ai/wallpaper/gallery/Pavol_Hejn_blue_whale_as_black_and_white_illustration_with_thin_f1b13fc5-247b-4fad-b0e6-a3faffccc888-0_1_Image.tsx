@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_1.json';
-import blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5_247b_4fad_b0e6_a3faffccc888_0_1 from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_1.json';
 import source from './Pavol_Hejn_blue_whale_as_black_and_white_illustration_with_thin_f1b13fc5-247b-4fad-b0e6-a3faffccc888-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of Blue whale as black and white illustration with thin outlines for coloring book
@@ -45,6 +40,23 @@ BlueWhaleAsBlackAndWhiteIllustrationWithThinF1b13fc5247b4fadB0e6A3faffccc8880_1_
     averageColor: Color.fromHex('#cecdcd'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#fcfdfd'),
-    leastFrequentColor: Color.fromHex('#5d625e'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#4d433f'), Color.fromHex('#f9ffff')],
+    minmaxGreen: [Color.fromHex('#7b8474'), Color.fromHex('#fffaff')],
+    minmaxBlue: [Color.fromHex('#4e4859'), Color.fromHex('#fffff5')],
+    mostFrequentColor: Color.fromHex('#81817d'),
+    mostSaturatedColor: Color.fromHex('#010100'),
+    mostGroupedColor: Color.fromHex('#fcfdfd'),
+    bottom: {
+        averageColor: Color.fromHex('#c1c0c0'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#4d433f'), Color.fromHex('#fcffff')],
+        minmaxGreen: [Color.fromHex('#7b8474'), Color.fromHex('#fffbff')],
+        minmaxBlue: [Color.fromHex('#474854'), Color.fromHex('#fffff7')],
+        mostFrequentColor: Color.fromHex('#81817d'),
+        mostSaturatedColor: Color.fromHex('#010100'),
+        mostGroupedColor: Color.fromHex('#fdfdfd'),
+    },
 } satisfies IImageColorStats;

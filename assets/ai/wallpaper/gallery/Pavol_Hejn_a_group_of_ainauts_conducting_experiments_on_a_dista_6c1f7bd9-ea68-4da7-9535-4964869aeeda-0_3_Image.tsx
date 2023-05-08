@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.json';
-import a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9_ea68_4da7_9535_4964869aeeda_0_3 from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.json';
 import source from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
@@ -45,6 +40,23 @@ AGroupOfAinautsConductingExperimentsOnADista6c1f7bd9Ea684da795354964869aeeda0_3_
     averageColor: Color.fromHex('#48515a'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000003'),
-    mostFrequentColor: Color.fromHex('#1b2b3b'),
-    leastFrequentColor: Color.fromHex('#182b40'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000003')],
+    minmaxRed: [Color.fromHex('#b54b20'), Color.fromHex('#e9ffff')],
+    minmaxGreen: [Color.fromHex('#5d807e'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2d5175'), Color.fromHex('#fffff9')],
+    mostFrequentColor: Color.fromHex('#0b0e14'),
+    mostSaturatedColor: Color.fromHex('#000010'),
+    mostGroupedColor: Color.fromHex('#1b2d3d'),
+    bottom: {
+        averageColor: Color.fromHex('#46515b'),
+        lightestColor: Color.fromHex('#f6ffff'),
+        darkestColor: Color.fromHex('#000003'),
+        minmaxWhite: [Color.fromHex('#f6ffff'), Color.fromHex('#000003')],
+        minmaxRed: [Color.fromHex('#b54b20'), Color.fromHex('#e9ffff')],
+        minmaxGreen: [Color.fromHex('#5d807e'), Color.fromHex('#f6ffff')],
+        minmaxBlue: [Color.fromHex('#2d5175'), Color.fromHex('#f6ffff')],
+        mostFrequentColor: Color.fromHex('#0b0e14'),
+        mostSaturatedColor: Color.fromHex('#000010'),
+        mostGroupedColor: Color.fromHex('#0d0e12'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_2.json';
-import a_surreal_interpretation_of_a_desert_landscape_df2bc40a_b36b_4e8b_bd85_08b645af1218_0_2 from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_2.json';
 import source from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_df2bc40a-b36b-4e8b-bd85-08b645af1218-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A surreal interpretation of a desert landscape
@@ -45,6 +40,23 @@ ASurrealInterpretationOfADesertLandscapeDf2bc40aB36b4e8bBd8508b645af12180_2_Imag
     averageColor: Color.fromHex('#a2978c'),
     lightestColor: Color.fromHex('#fdfefa'),
     darkestColor: Color.fromHex('#0c0000'),
-    mostFrequentColor: Color.fromHex('#b7d1cf'),
-    leastFrequentColor: Color.fromHex('#bbd6d3'),
+    minmaxWhite: [Color.fromHex('#fdfefa'), Color.fromHex('#0c0000')],
+    minmaxRed: [Color.fromHex('#8f4425'), Color.fromHex('#fdfefa')],
+    minmaxGreen: [Color.fromHex('#62807c'), Color.fromHex('#fdfefa')],
+    minmaxBlue: [Color.fromHex('#4a525a'), Color.fromHex('#fdfefa')],
+    mostFrequentColor: Color.fromHex('#e8caad'),
+    mostSaturatedColor: Color.fromHex('#120000'),
+    mostGroupedColor: Color.fromHex('#b6d0ce'),
+    bottom: {
+        averageColor: Color.fromHex('#a2816e'),
+        lightestColor: Color.fromHex('#fcecdc'),
+        darkestColor: Color.fromHex('#120000'),
+        minmaxWhite: [Color.fromHex('#fff1db'), Color.fromHex('#120000')],
+        minmaxRed: [Color.fromHex('#8f4425'), Color.fromHex('#fff1db')],
+        minmaxGreen: [Color.fromHex('#5f6f66'), Color.fromHex('#ffeadb')],
+        minmaxBlue: [Color.fromHex('#4a525a'), Color.fromHex('#fff1db')],
+        mostFrequentColor: Color.fromHex('#e8caad'),
+        mostSaturatedColor: Color.fromHex('#120000'),
+        mostGroupedColor: Color.fromHex('#a29b8f'),
+    },
 } satisfies IImageColorStats;

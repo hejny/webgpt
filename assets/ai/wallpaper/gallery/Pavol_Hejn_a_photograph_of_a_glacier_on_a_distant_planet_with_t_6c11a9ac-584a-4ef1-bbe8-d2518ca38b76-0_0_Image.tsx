@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.json';
-import a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac_584a_4ef1_bbe8_d2518ca38b76_0_0 from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.json';
 import source from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.
@@ -45,6 +40,23 @@ APhotographOfAGlacierOnADistantPlanetWithT6c11a9ac584a4ef1Bbe8D2518ca38b760_0_Im
     averageColor: Color.fromHex('#2f4956'),
     lightestColor: Color.fromHex('#f7ffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020f18'),
-    leastFrequentColor: Color.fromHex('#020a15'),
+    minmaxWhite: [Color.fromHex('#f7ffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#3e444c'), Color.fromHex('#e4feff')],
+    minmaxGreen: [Color.fromHex('#418684'), Color.fromHex('#f7ffff')],
+    minmaxBlue: [Color.fromHex('#195e7f'), Color.fromHex('#f7ffff')],
+    mostFrequentColor: Color.fromHex('#020a0e'),
+    mostSaturatedColor: Color.fromHex('#00050d'),
+    mostGroupedColor: Color.fromHex('#020b12'),
+    bottom: {
+        averageColor: Color.fromHex('#344751'),
+        lightestColor: Color.fromHex('#e4feff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#e4feff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#3e444c'), Color.fromHex('#e4feff')],
+        minmaxGreen: [Color.fromHex('#418684'), Color.fromHex('#e4feff')],
+        minmaxBlue: [Color.fromHex('#2f6a8c'), Color.fromHex('#e4feff')],
+        mostFrequentColor: Color.fromHex('#020a0e'),
+        mostSaturatedColor: Color.fromHex('#00050d'),
+        mostGroupedColor: Color.fromHex('#070c11'),
+    },
 } satisfies IImageColorStats;

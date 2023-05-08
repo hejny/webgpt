@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_1.json';
-import a_stylized_illustration_of_an_ai_powered_robot_with_44a12836_879e_4dde_90da_a8ebf9c6ab0b_0_1 from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_1.json';
 import source from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A stylized illustration of an AI-powered robot, with sleek and modern graphics and a minimalist color scheme.
@@ -43,8 +38,25 @@ AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_1_I
     metadata satisfies IWallpaperMetadata;
 AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_1_Image.colorStats = {
     averageColor: Color.fromHex('#a06259'),
-    lightestColor: Color.fromHex('#fffff5'),
-    darkestColor: Color.fromHex('#210116'),
-    mostFrequentColor: Color.fromHex('#192431'),
-    leastFrequentColor: Color.fromHex('#f45f58'),
+    lightestColor: Color.fromHex('#fffdfb'),
+    darkestColor: Color.fromHex('#1f1c0f'),
+    minmaxWhite: [Color.fromHex('#fffefb'), Color.fromHex('#210116')],
+    minmaxRed: [Color.fromHex('#bc3a32'), Color.fromHex('#fffefb')],
+    minmaxGreen: [Color.fromHex('#757d6c'), Color.fromHex('#fffdfb')],
+    minmaxBlue: [Color.fromHex('#364d61'), Color.fromHex('#ffffe5')],
+    mostFrequentColor: Color.fromHex('#141f2d'),
+    mostSaturatedColor: Color.fromHex('#210116'),
+    mostGroupedColor: Color.fromHex('#192431'),
+    bottom: {
+        averageColor: Color.fromHex('#614144'),
+        lightestColor: Color.fromHex('#e4d5c6'),
+        darkestColor: Color.fromHex('#211117'),
+        minmaxWhite: [Color.fromHex('#e4d5c6'), Color.fromHex('#191020')],
+        minmaxRed: [Color.fromHex('#da4e40'), Color.fromHex('#e4d5c6')],
+        minmaxGreen: [Color.fromHex('#706d53'), Color.fromHex('#f85c54')],
+        minmaxBlue: [Color.fromHex('#404556'), Color.fromHex('#e4d5c6')],
+        mostFrequentColor: Color.fromHex('#141f2d'),
+        mostSaturatedColor: Color.fromHex('#591512'),
+        mostGroupedColor: Color.fromHex('#192431'),
+    },
 } satisfies IImageColorStats;

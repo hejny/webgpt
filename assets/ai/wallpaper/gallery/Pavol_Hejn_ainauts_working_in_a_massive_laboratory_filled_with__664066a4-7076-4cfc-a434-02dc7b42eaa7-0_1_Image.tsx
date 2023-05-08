@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_1.json';
-import ainauts_working_in_a_massive_laboratory_filled_with_664066a4_7076_4cfc_a434_02dc7b42eaa7_0_1 from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_1.json';
 import source from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.
@@ -43,8 +38,25 @@ AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA43402dc7b42eaa70_1_
     metadata satisfies IWallpaperMetadata;
 AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA43402dc7b42eaa70_1_Image.colorStats = {
     averageColor: Color.fromHex('#123c46'),
-    lightestColor: Color.fromHex('#fcffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010101'),
-    leastFrequentColor: Color.fromHex('#051311'),
+    lightestColor: Color.fromHex('#fdfbff'),
+    darkestColor: Color.fromHex('#000100'),
+    minmaxWhite: [Color.fromHex('#fdfefe'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a51c12'), Color.fromHex('#2afafc')],
+    minmaxGreen: [Color.fromHex('#0d9f86'), Color.fromHex('#fdfaff')],
+    minmaxBlue: [Color.fromHex('#044790'), Color.fromHex('#fcffff')],
+    mostFrequentColor: Color.fromHex('#000001'),
+    mostSaturatedColor: Color.fromHex('#000003'),
+    mostGroupedColor: Color.fromHex('#010100'),
+    bottom: {
+        averageColor: Color.fromHex('#0d2631'),
+        lightestColor: Color.fromHex('#fdfbff'),
+        darkestColor: Color.fromHex('#000100'),
+        minmaxWhite: [Color.fromHex('#fdfbff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#410718'), Color.fromHex('#30eff2')],
+        minmaxGreen: [Color.fromHex('#05a298'), Color.fromHex('#fdfaff')],
+        minmaxBlue: [Color.fromHex('#025c9e'), Color.fromHex('#fdfbff')],
+        mostFrequentColor: Color.fromHex('#000001'),
+        mostSaturatedColor: Color.fromHex('#000203'),
+        mostGroupedColor: Color.fromHex('#010100'),
+    },
 } satisfies IImageColorStats;

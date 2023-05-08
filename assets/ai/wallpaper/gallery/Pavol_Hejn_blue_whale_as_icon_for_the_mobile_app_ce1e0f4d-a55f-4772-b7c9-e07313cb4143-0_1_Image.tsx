@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_1.json';
-import blue_whale_as_icon_for_the_mobile_app_ce1e0f4d_a55f_4772_b7c9_e07313cb4143_0_1 from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_1.json';
 import source from './Pavol_Hejn_blue_whale_as_icon_for_the_mobile_app_ce1e0f4d-a55f-4772-b7c9-e07313cb4143-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of Blue whale as icon for the mobile app
@@ -44,7 +39,24 @@ BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_1_Image.metadata
 BlueWhaleAsIconForTheMobileAppCe1e0f4dA55f4772B7c9E07313cb41430_1_Image.colorStats = {
     averageColor: Color.fromHex('#1c5894'),
     lightestColor: Color.fromHex('#f3ffff'),
-    darkestColor: Color.fromHex('#000031'),
-    mostFrequentColor: Color.fromHex('#112968'),
-    leastFrequentColor: Color.fromHex('#0b276c'),
+    darkestColor: Color.fromHex('#00032c'),
+    minmaxWhite: [Color.fromHex('#f3ffff'), Color.fromHex('#00012d')],
+    minmaxRed: [Color.fromHex('#2d3561'), Color.fromHex('#25f6fb')],
+    minmaxGreen: [Color.fromHex('#2e97ac'), Color.fromHex('#f3ffff')],
+    minmaxBlue: [Color.fromHex('#2a49ac'), Color.fromHex('#f3ffff')],
+    mostFrequentColor: Color.fromHex('#0e2666'),
+    mostSaturatedColor: Color.fromHex('#004e80'),
+    mostGroupedColor: Color.fromHex('#112968'),
+    bottom: {
+        averageColor: Color.fromHex('#164a85'),
+        lightestColor: Color.fromHex('#e6ffff'),
+        darkestColor: Color.fromHex('#000734'),
+        minmaxWhite: [Color.fromHex('#ebfefd'), Color.fromHex('#000734')],
+        minmaxRed: [Color.fromHex('#0b0d40'), Color.fromHex('#24ebfb')],
+        minmaxGreen: [Color.fromHex('#2e97ac'), Color.fromHex('#ebfefd')],
+        minmaxBlue: [Color.fromHex('#1d41a0'), Color.fromHex('#ebfefd')],
+        mostFrequentColor: Color.fromHex('#0e2666'),
+        mostSaturatedColor: Color.fromHex('#00356c'),
+        mostGroupedColor: Color.fromHex('#112968'),
+    },
 } satisfies IImageColorStats;

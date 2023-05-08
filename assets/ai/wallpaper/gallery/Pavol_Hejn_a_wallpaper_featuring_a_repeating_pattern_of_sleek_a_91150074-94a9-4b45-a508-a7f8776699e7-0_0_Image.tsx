@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.json';
-import a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074_94a9_4b45_a508_a7f8776699e7_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops, set against a gradient background.
@@ -43,8 +38,25 @@ AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.colorStats = {
     averageColor: Color.fromHex('#825d76'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#ffdeff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#2e2f43'),
-    leastFrequentColor: Color.fromHex('#5a5e95'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#c93a3c'), Color.fromHex('#84ecf0')],
+    minmaxGreen: [Color.fromHex('#35856c'), Color.fromHex('#f94adf')],
+    minmaxBlue: [Color.fromHex('#584091'), Color.fromHex('#ffffff')],
+    mostFrequentColor: Color.fromHex('#d9555b'),
+    mostSaturatedColor: Color.fromHex('#1b0002'),
+    mostGroupedColor: Color.fromHex('#2e2f43'),
+    bottom: {
+        averageColor: Color.fromHex('#645769'),
+        lightestColor: Color.fromHex('#ffdeff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#e44554'), Color.fromHex('#84ecf0')],
+        minmaxGreen: [Color.fromHex('#477d60'), Color.fromHex('#ffb1f5')],
+        minmaxBlue: [Color.fromHex('#584091'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#d9555b'),
+        mostSaturatedColor: Color.fromHex('#210000'),
+        mostGroupedColor: Color.fromHex('#2e2f43'),
+    },
 } satisfies IImageColorStats;

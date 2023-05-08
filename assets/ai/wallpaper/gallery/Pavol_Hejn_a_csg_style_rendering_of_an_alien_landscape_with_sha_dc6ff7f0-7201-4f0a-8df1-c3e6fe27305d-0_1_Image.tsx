@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0_1.json';
-import a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0_7201_4f0a_8df1_c3e6fe27305d_0_1 from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0_1.json';
 import source from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_dc6ff7f0-7201-4f0a-8df1-c3e6fe27305d-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe.
@@ -44,7 +39,24 @@ ACsgStyleRenderingOfAnAlienLandscapeWithShaDc6ff7f072014f0a8df1C3e6fe27305d0_1_I
 ACsgStyleRenderingOfAnAlienLandscapeWithShaDc6ff7f072014f0a8df1C3e6fe27305d0_1_Image.colorStats = {
     averageColor: Color.fromHex('#8d4f5b'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#140007'),
-    mostFrequentColor: Color.fromHex('#2a0912'),
-    leastFrequentColor: Color.fromHex('#2d0615'),
+    darkestColor: Color.fromHex('#160002'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#160002')],
+    minmaxRed: [Color.fromHex('#d1261b'), Color.fromHex('#fbffff')],
+    minmaxGreen: [Color.fromHex('#8a7372'), Color.fromHex('#ffedff')],
+    minmaxBlue: [Color.fromHex('#59457f'), Color.fromHex('#fffffd')],
+    mostFrequentColor: Color.fromHex('#160208'),
+    mostSaturatedColor: Color.fromHex('#3c000d'),
+    mostGroupedColor: Color.fromHex('#280a14'),
+    bottom: {
+        averageColor: Color.fromHex('#5f2630'),
+        lightestColor: Color.fromHex('#f7e1f6'),
+        darkestColor: Color.fromHex('#160002'),
+        minmaxWhite: [Color.fromHex('#f8e2f3'), Color.fromHex('#160002')],
+        minmaxRed: [Color.fromHex('#d1261b'), Color.fromHex('#f7e1f6')],
+        minmaxGreen: [Color.fromHex('#786973'), Color.fromHex('#fbd5f4')],
+        minmaxBlue: [Color.fromHex('#653c6d'), Color.fromHex('#f8e2f3')],
+        mostFrequentColor: Color.fromHex('#160208'),
+        mostSaturatedColor: Color.fromHex('#3c000d'),
+        mostGroupedColor: Color.fromHex('#280a14'),
+    },
 } satisfies IImageColorStats;

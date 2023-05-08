@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.json';
-import a_digital_image_of_a_galaxy_collision_with_swirling_f91b24a5_b84c_4bab_bacc_bd82e09756b0_0_3 from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.json';
 import source from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.
@@ -43,8 +38,25 @@ ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_3_I
     metadata satisfies IWallpaperMetadata;
 ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_3_Image.colorStats = {
     averageColor: Color.fromHex('#522c2b'),
-    lightestColor: Color.fromHex('#fffded'),
+    lightestColor: Color.fromHex('#e3efff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#070b10'),
-    leastFrequentColor: Color.fromHex('#0b1124'),
+    minmaxWhite: [Color.fromHex('#fffded'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#cf1f13'), Color.fromHex('#cbffff')],
+    minmaxGreen: [Color.fromHex('#728c51'), Color.fromHex('#c01242')],
+    minmaxBlue: [Color.fromHex('#4a3f82'), Color.fromHex('#fffded')],
+    mostFrequentColor: Color.fromHex('#00060c'),
+    mostSaturatedColor: Color.fromHex('#000114'),
+    mostGroupedColor: Color.fromHex('#060b0f'),
+    bottom: {
+        averageColor: Color.fromHex('#322026'),
+        lightestColor: Color.fromHex('#f7e8cd'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f7e8cd'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#c51918'), Color.fromHex('#f7e8cd')],
+        minmaxGreen: [Color.fromHex('#3f8687'), Color.fromHex('#c01242')],
+        minmaxBlue: [Color.fromHex('#3a588e'), Color.fromHex('#fedb9f')],
+        mostFrequentColor: Color.fromHex('#00060c'),
+        mostSaturatedColor: Color.fromHex('#19000d'),
+        mostGroupedColor: Color.fromHex('#060b0f'),
+    },
 } satisfies IImageColorStats;

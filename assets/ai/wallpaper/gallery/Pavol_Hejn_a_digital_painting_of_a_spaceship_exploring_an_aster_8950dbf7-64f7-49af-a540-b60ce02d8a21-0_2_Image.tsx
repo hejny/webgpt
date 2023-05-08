@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_2.json';
-import a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7_64f7_49af_a540_b60ce02d8a21_0_2 from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_2.json';
 import source from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge.
@@ -43,8 +38,25 @@ ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_2_
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_2_Image.colorStats = {
     averageColor: Color.fromHex('#313c3e'),
-    lightestColor: Color.fromHex('#fffffd'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0c181e'),
-    leastFrequentColor: Color.fromHex('#09141c'),
+    lightestColor: Color.fromHex('#fcffff'),
+    darkestColor: Color.fromHex('#000100'),
+    minmaxWhite: [Color.fromHex('#fffffd'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#b44121'), Color.fromHex('#d4ffff')],
+    minmaxGreen: [Color.fromHex('#427b67'), Color.fromHex('#fffffd')],
+    minmaxBlue: [Color.fromHex('#36556c'), Color.fromHex('#fffdc3')],
+    mostFrequentColor: Color.fromHex('#030405'),
+    mostSaturatedColor: Color.fromHex('#001117'),
+    mostGroupedColor: Color.fromHex('#d8f3f3'),
+    bottom: {
+        averageColor: Color.fromHex('#262828'),
+        lightestColor: Color.fromHex('#ddd6c9'),
+        darkestColor: Color.fromHex('#000100'),
+        minmaxWhite: [Color.fromHex('#ddd6c9'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b44121'), Color.fromHex('#ddd6c9')],
+        minmaxGreen: [Color.fromHex('#74795b'), Color.fromHex('#360000')],
+        minmaxBlue: [Color.fromHex('#446376'), Color.fromHex('#fec795')],
+        mostFrequentColor: Color.fromHex('#030405'),
+        mostSaturatedColor: Color.fromHex('#001117'),
+        mostGroupedColor: Color.fromHex('#132127'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.json';
-import a_black_and_white_outline_of_an_astronaut_exploring_6cd3eee4_47af_4316_b49e_3e9982df2b24_0_1 from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.json';
 import source from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A black and white outline of an astronaut exploring a distant planet, with intricate details and shading.
@@ -45,6 +40,23 @@ ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_1_I
     averageColor: Color.fromHex('#807c7b'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#171316'),
-    leastFrequentColor: Color.fromHex('#f2f4ea'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#5b4b49'), Color.fromHex('#fcffff')],
+    minmaxGreen: [Color.fromHex('#717667'), Color.fromHex('#fffbff')],
+    minmaxBlue: [Color.fromHex('#524e5b'), Color.fromHex('#fffff4')],
+    mostFrequentColor: Color.fromHex('#bebdbb'),
+    mostSaturatedColor: Color.fromHex('#080700'),
+    mostGroupedColor: Color.fromHex('#171316'),
+    bottom: {
+        averageColor: Color.fromHex('#9c9997'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#5b4b49'), Color.fromHex('#fcffff')],
+        minmaxGreen: [Color.fromHex('#73786c'), Color.fromHex('#fffcff')],
+        minmaxBlue: [Color.fromHex('#524e5b'), Color.fromHex('#fffff4')],
+        mostFrequentColor: Color.fromHex('#bebdbb'),
+        mostSaturatedColor: Color.fromHex('#050200'),
+        mostGroupedColor: Color.fromHex('#f2f1ed'),
+    },
 } satisfies IImageColorStats;

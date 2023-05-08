@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_0.json';
-import a_digital_illustration_of_a_spaceship_traveling_thro_a6425337_7d46_4a4f_ae01_a169331d952d_0_0 from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_0.json';
 import source from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital illustration of a spaceship traveling through a colorful nebula.
@@ -45,6 +40,23 @@ ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_0
     averageColor: Color.fromHex('#242935'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020a19'),
-    leastFrequentColor: Color.fromHex('#38464c'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ce2a0b'), Color.fromHex('#38fdf8')],
+    minmaxGreen: [Color.fromHex('#53895a'), Color.fromHex('#9f1593')],
+    minmaxBlue: [Color.fromHex('#112996'), Color.fromHex('#f7dc08')],
+    mostFrequentColor: Color.fromHex('#000006'),
+    mostSaturatedColor: Color.fromHex('#080003'),
+    mostGroupedColor: Color.fromHex('#020a1a'),
+    bottom: {
+        averageColor: Color.fromHex('#142536'),
+        lightestColor: Color.fromHex('#ebf1fd'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ebf1fd'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#ce2f03'), Color.fromHex('#38fdf8')],
+        minmaxGreen: [Color.fromHex('#148c88'), Color.fromHex('#9f1593')],
+        minmaxBlue: [Color.fromHex('#054da5'), Color.fromHex('#fffeb7')],
+        mostFrequentColor: Color.fromHex('#000006'),
+        mostSaturatedColor: Color.fromHex('#00112f'),
+        mostGroupedColor: Color.fromHex('#020a1a'),
+    },
 } satisfies IImageColorStats;

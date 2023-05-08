@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.json';
-import an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38_efa4_4631_a761_588842e6f805_0_2 from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.json';
 import source from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
@@ -45,6 +40,23 @@ AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_2_I
     averageColor: Color.fromHex('#3b4049'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020307'),
-    leastFrequentColor: Color.fromHex('#020811'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a85032'), Color.fromHex('#f4ffff')],
+    minmaxGreen: [Color.fromHex('#8b885b'), Color.fromHex('#fff9ff')],
+    minmaxBlue: [Color.fromHex('#18549c'), Color.fromHex('#fffa97')],
+    mostFrequentColor: Color.fromHex('#d4d8e0'),
+    mostSaturatedColor: Color.fromHex('#00020a'),
+    mostGroupedColor: Color.fromHex('#06070b'),
+    bottom: {
+        averageColor: Color.fromHex('#57616f'),
+        lightestColor: Color.fromHex('#fcfcfd'),
+        darkestColor: Color.fromHex('#0b0a09'),
+        minmaxWhite: [Color.fromHex('#fcfcfd'), Color.fromHex('#000111')],
+        minmaxRed: [Color.fromHex('#6d2f30'), Color.fromHex('#f4ffff')],
+        minmaxGreen: [Color.fromHex('#90886e'), Color.fromHex('#fcfcfd')],
+        minmaxBlue: [Color.fromHex('#303f69'), Color.fromHex('#fdfcfb')],
+        mostFrequentColor: Color.fromHex('#d4d8e0'),
+        mostSaturatedColor: Color.fromHex('#000111'),
+        mostGroupedColor: Color.fromHex('#171c28'),
+    },
 } satisfies IImageColorStats;

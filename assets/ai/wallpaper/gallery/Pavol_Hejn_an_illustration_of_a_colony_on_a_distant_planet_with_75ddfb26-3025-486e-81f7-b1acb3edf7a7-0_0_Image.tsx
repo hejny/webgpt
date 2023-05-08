@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_0.json';
-import an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26_3025_486e_81f7_b1acb3edf7a7_0_0 from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_0.json';
 import source from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.
@@ -43,8 +38,25 @@ AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B1acb3edf7a70_0_I
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B1acb3edf7a70_0_Image.colorStats = {
     averageColor: Color.fromHex('#9b928c'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#fffbff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#f1efe9'),
-    leastFrequentColor: Color.fromHex('#1d2333'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#b93d03'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#8f8b58'), Color.fromHex('#fff0ff')],
+    minmaxBlue: [Color.fromHex('#26568d'), Color.fromHex('#ffffcc')],
+    mostFrequentColor: Color.fromHex('#0f0c1e'),
+    mostSaturatedColor: Color.fromHex('#360e00'),
+    mostGroupedColor: Color.fromHex('#f2f0ea'),
+    bottom: {
+        averageColor: Color.fromHex('#876550'),
+        lightestColor: Color.fromHex('#fffbff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b93d03'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#8f8b58'), Color.fromHex('#fff0ff')],
+        minmaxBlue: [Color.fromHex('#162068'), Color.fromHex('#ffffcc')],
+        mostFrequentColor: Color.fromHex('#0f0c1e'),
+        mostSaturatedColor: Color.fromHex('#360e00'),
+        mostGroupedColor: Color.fromHex('#eeebe5'),
+    },
 } satisfies IImageColorStats;

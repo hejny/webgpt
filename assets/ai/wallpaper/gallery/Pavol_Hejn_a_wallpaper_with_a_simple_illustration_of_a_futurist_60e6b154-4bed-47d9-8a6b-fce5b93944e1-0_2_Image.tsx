@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154-4bed-47d9-8a6b-fce5b93944e1-0_2.json';
-import a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154_4bed_47d9_8a6b_fce5b93944e1_0_2 from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154-4bed-47d9-8a6b-fce5b93944e1-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154-4bed-47d9-8a6b-fce5b93944e1-0_2.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_60e6b154-4bed-47d9-8a6b-fce5b93944e1-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme.
@@ -45,6 +40,23 @@ AWallpaperWithASimpleIllustrationOfAFuturist60e6b1544bed47d98a6bFce5b93944e10_2_
     averageColor: Color.fromHex('#15161d'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#040a14'),
-    leastFrequentColor: Color.fromHex('#466577'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#b8490e'), Color.fromHex('#e2ffff')],
+    minmaxGreen: [Color.fromHex('#558a6f'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#3b677d'), Color.fromHex('#ffff96')],
+    mostFrequentColor: Color.fromHex('#030813'),
+    mostSaturatedColor: Color.fromHex('#000d16'),
+    mostGroupedColor: Color.fromHex('#040a14'),
+    bottom: {
+        averageColor: Color.fromHex('#13141b'),
+        lightestColor: Color.fromHex('#dcf4ed'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#dcf4ed'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b8490e'), Color.fromHex('#d6f5ec')],
+        minmaxGreen: [Color.fromHex('#4e7669'), Color.fromHex('#350000')],
+        minmaxBlue: [Color.fromHex('#334f5c'), Color.fromHex('#ffcd83')],
+        mostFrequentColor: Color.fromHex('#030813'),
+        mostSaturatedColor: Color.fromHex('#000c1a'),
+        mostGroupedColor: Color.fromHex('#040712'),
+    },
 } satisfies IImageColorStats;

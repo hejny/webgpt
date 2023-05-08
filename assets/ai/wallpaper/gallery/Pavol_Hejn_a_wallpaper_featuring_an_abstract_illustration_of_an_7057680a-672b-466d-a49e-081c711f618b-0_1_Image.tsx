@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_7057680a-672b-466d-a49e-081c711f618b-0_1.json';
-import a_wallpaper_featuring_an_abstract_illustration_of_an_7057680a_672b_466d_a49e_081c711f618b_0_1 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_7057680a-672b-466d-a49e-081c711f618b-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_7057680a-672b-466d-a49e-081c711f618b-0_1.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_7057680a-672b-466d-a49e-081c711f618b-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring an abstract illustration of an AI neural network, with intricate lines and a dark and technological color palette.
@@ -44,7 +39,24 @@ AWallpaperFeaturingAnAbstractIllustrationOfAn7057680a672b466dA49e081c711f618b0_1
 AWallpaperFeaturingAnAbstractIllustrationOfAn7057680a672b466dA49e081c711f618b0_1_Image.colorStats = {
     averageColor: Color.fromHex('#282420'),
     lightestColor: Color.fromHex('#ddfaf5'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0a0d0e'),
-    leastFrequentColor: Color.fromHex('#020306'),
+    darkestColor: Color.fromHex('#000200'),
+    minmaxWhite: [Color.fromHex('#ddfaf5'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#dc392d'), Color.fromHex('#60f3f9')],
+    minmaxGreen: [Color.fromHex('#0b9066'), Color.fromHex('#7b0012')],
+    minmaxBlue: [Color.fromHex('#375177'), Color.fromHex('#fad34c')],
+    mostFrequentColor: Color.fromHex('#010305'),
+    mostSaturatedColor: Color.fromHex('#000206'),
+    mostGroupedColor: Color.fromHex('#0c0f10'),
+    bottom: {
+        averageColor: Color.fromHex('#1c1816'),
+        lightestColor: Color.fromHex('#4dd1da'),
+        darkestColor: Color.fromHex('#000200'),
+        minmaxWhite: [Color.fromHex('#e4c689'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b63919'), Color.fromHex('#4dd1da')],
+        minmaxGreen: [Color.fromHex('#538c69'), Color.fromHex('#660300')],
+        minmaxBlue: [Color.fromHex('#286c84'), Color.fromHex('#ffa535')],
+        mostFrequentColor: Color.fromHex('#010305'),
+        mostSaturatedColor: Color.fromHex('#040002'),
+        mostGroupedColor: Color.fromHex('#0c0f10'),
+    },
 } satisfies IImageColorStats;

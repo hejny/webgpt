@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_1.json';
-import a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec_4a6d_4f75_8ec1_2cca08a287c8_0_1 from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_1.json';
 import source from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A surreal landscape of alien planets and strange, otherworldly creatures.
@@ -45,6 +40,23 @@ ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec12cca08a287c80_1_
     averageColor: Color.fromHex('#63534f'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#090000'),
-    mostFrequentColor: Color.fromHex('#44868d'),
-    leastFrequentColor: Color.fromHex('#111f2f'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#090000')],
+    minmaxRed: [Color.fromHex('#d22e0e'), Color.fromHex('#8cf6eb')],
+    minmaxGreen: [Color.fromHex('#629b76'), Color.fromHex('#ee86e5')],
+    minmaxBlue: [Color.fromHex('#055290'), Color.fromHex('#fffeb1')],
+    mostFrequentColor: Color.fromHex('#10040b'),
+    mostSaturatedColor: Color.fromHex('#440700'),
+    mostGroupedColor: Color.fromHex('#458a90'),
+    bottom: {
+        averageColor: Color.fromHex('#61312c'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#090000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#090000')],
+        minmaxRed: [Color.fromHex('#d22e0e'), Color.fromHex('#c4f9fc')],
+        minmaxGreen: [Color.fromHex('#58b19f'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#055290'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#10040b'),
+        mostSaturatedColor: Color.fromHex('#000620'),
+        mostGroupedColor: Color.fromHex('#160a13'),
+    },
 } satisfies IImageColorStats;

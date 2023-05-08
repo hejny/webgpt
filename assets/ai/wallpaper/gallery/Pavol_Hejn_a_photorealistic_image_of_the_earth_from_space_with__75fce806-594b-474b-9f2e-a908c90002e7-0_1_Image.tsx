@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_1.json';
-import a_photorealistic_image_of_the_earth_from_space_with_75fce806_594b_474b_9f2e_a908c90002e7_0_1 from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_1.json';
 import source from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photorealistic image of the Earth from space, with vibrant colors and intricate details.
@@ -45,6 +40,23 @@ APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_1_I
     averageColor: Color.fromHex('#1f262d'),
     lightestColor: Color.fromHex('#faffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000004'),
-    leastFrequentColor: Color.fromHex('#001021'),
+    minmaxWhite: [Color.fromHex('#faffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ae4120'), Color.fromHex('#abfbff')],
+    minmaxGreen: [Color.fromHex('#81963a'), Color.fromHex('#faffff')],
+    minmaxBlue: [Color.fromHex('#034486'), Color.fromHex('#ffffa1')],
+    mostFrequentColor: Color.fromHex('#000002'),
+    mostSaturatedColor: Color.fromHex('#010005'),
+    mostGroupedColor: Color.fromHex('#000004'),
+    bottom: {
+        averageColor: Color.fromHex('#181c22'),
+        lightestColor: Color.fromHex('#fafdf4'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fafdf4'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#ae4120'), Color.fromHex('#88e4fa')],
+        minmaxGreen: [Color.fromHex('#857d3b'), Color.fromHex('#fafdf4')],
+        minmaxBlue: [Color.fromHex('#055792'), Color.fromHex('#ffffa1')],
+        mostFrequentColor: Color.fromHex('#000002'),
+        mostSaturatedColor: Color.fromHex('#000004'),
+        mostGroupedColor: Color.fromHex('#000004'),
+    },
 } satisfies IImageColorStats;

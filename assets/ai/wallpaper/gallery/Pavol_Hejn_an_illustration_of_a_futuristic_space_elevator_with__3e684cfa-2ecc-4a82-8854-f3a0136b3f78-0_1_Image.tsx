@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_1.json';
-import an_illustration_of_a_futuristic_space_elevator_with_3e684cfa_2ecc_4a82_8854_f3a0136b3f78_0_1 from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_1.json';
 import source from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
@@ -45,6 +40,23 @@ AnIllustrationOfAFuturisticSpaceElevatorWith3e684cfa2ecc4a828854F3a0136b3f780_1_
     averageColor: Color.fromHex('#3f5869'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#011726'),
-    leastFrequentColor: Color.fromHex('#1d1d22'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#9d401e'), Color.fromHex('#e1ffff')],
+    minmaxGreen: [Color.fromHex('#7d805d'), Color.fromHex('#fffdff')],
+    minmaxBlue: [Color.fromHex('#1b628e'), Color.fromHex('#fffff4')],
+    mostFrequentColor: Color.fromHex('#2c485e'),
+    mostSaturatedColor: Color.fromHex('#000105'),
+    mostGroupedColor: Color.fromHex('#011a29'),
+    bottom: {
+        averageColor: Color.fromHex('#608196'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#1a1007'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#010c15')],
+        minmaxRed: [Color.fromHex('#9d401e'), Color.fromHex('#edffff')],
+        minmaxGreen: [Color.fromHex('#7d805d'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#1b628e'), Color.fromHex('#fffff4')],
+        mostFrequentColor: Color.fromHex('#2c485e'),
+        mostSaturatedColor: Color.fromHex('#00202f'),
+        mostGroupedColor: Color.fromHex('#011d2c'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_3.json';
-import a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca_ade1_42cf_8a5f_b6330f20645a_0_3 from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_3.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring a collage of futuristic technology such as drones, robots, and smart devices, set against a black background.
@@ -45,6 +40,23 @@ AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_3
     averageColor: Color.fromHex('#161f22'),
     lightestColor: Color.fromHex('#fcffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010101'),
-    leastFrequentColor: Color.fromHex('#021a24'),
+    minmaxWhite: [Color.fromHex('#fcffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#c43c22'), Color.fromHex('#a8fffb')],
+    minmaxGreen: [Color.fromHex('#209218'), Color.fromHex('#fcffff')],
+    minmaxBlue: [Color.fromHex('#126989'), Color.fromHex('#fcffff')],
+    mostFrequentColor: Color.fromHex('#000000'),
+    mostSaturatedColor: Color.fromHex('#010001'),
+    mostGroupedColor: Color.fromHex('#010101'),
+    bottom: {
+        averageColor: Color.fromHex('#12191a'),
+        lightestColor: Color.fromHex('#e2f5fa'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#eaeff2'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#cd4227'), Color.fromHex('#92feec')],
+        minmaxGreen: [Color.fromHex('#209218'), Color.fromHex('#e2f5fa')],
+        minmaxBlue: [Color.fromHex('#1c5b74'), Color.fromHex('#e2f5fa')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#010101'),
+    },
 } satisfies IImageColorStats;

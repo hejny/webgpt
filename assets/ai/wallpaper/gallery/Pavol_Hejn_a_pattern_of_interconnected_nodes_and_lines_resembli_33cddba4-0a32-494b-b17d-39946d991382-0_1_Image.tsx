@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.json';
-import a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4_0a32_494b_b17d_39946d991382_0_1 from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.json';
 import source from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A pattern of interconnected nodes and lines resembling a neural network
@@ -44,7 +39,24 @@ APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1
 APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1_Image.colorStats = {
     averageColor: Color.fromHex('#0c1112'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020202'),
-    leastFrequentColor: Color.fromHex('#3b5661'),
+    darkestColor: Color.fromHex('#000100'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#494645'), Color.fromHex('#a3fafe')],
+    minmaxGreen: [Color.fromHex('#47987f'), Color.fromHex('#fff3ff')],
+    minmaxBlue: [Color.fromHex('#24647d'), Color.fromHex('#fffffb')],
+    mostFrequentColor: Color.fromHex('#000102'),
+    mostSaturatedColor: Color.fromHex('#001415'),
+    mostGroupedColor: Color.fromHex('#020202'),
+    bottom: {
+        averageColor: Color.fromHex('#0c1011'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#3e3b3a'), Color.fromHex('#c3ffff')],
+        minmaxGreen: [Color.fromHex('#42a999'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#2c4262'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#000102'),
+        mostSaturatedColor: Color.fromHex('#000402'),
+        mostGroupedColor: Color.fromHex('#020202'),
+    },
 } satisfies IImageColorStats;

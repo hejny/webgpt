@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_47ddf7d7-ccd2-4cb5-95d4-c46ff2b7f218-0_2.json';
-import a_wallpaper_featuring_a_colorful_fractal_pattern_wit_47ddf7d7_ccd2_4cb5_95d4_c46ff2b7f218_0_2 from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_47ddf7d7-ccd2-4cb5-95d4-c46ff2b7f218-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_47ddf7d7-ccd2-4cb5-95d4-c46ff2b7f218-0_2.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_47ddf7d7-ccd2-4cb5-95d4-c46ff2b7f218-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors.
@@ -43,8 +38,25 @@ AWallpaperFeaturingAColorfulFractalPatternWit47ddf7d7Ccd24cb595d4C46ff2b7f2180_2
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAColorfulFractalPatternWit47ddf7d7Ccd24cb595d4C46ff2b7f2180_2_Image.colorStats = {
     averageColor: Color.fromHex('#3d2b20'),
-    lightestColor: Color.fromHex('#ffffe9'),
-    darkestColor: Color.fromHex('#000002'),
-    mostFrequentColor: Color.fromHex('#020406'),
-    leastFrequentColor: Color.fromHex('#3b211a'),
+    lightestColor: Color.fromHex('#fcfbf7'),
+    darkestColor: Color.fromHex('#000300'),
+    minmaxWhite: [Color.fromHex('#fcfbf7'), Color.fromHex('#000002')],
+    minmaxRed: [Color.fromHex('#bc1f10'), Color.fromHex('#4bfaf9')],
+    minmaxGreen: [Color.fromHex('#549d5d'), Color.fromHex('#990100')],
+    minmaxBlue: [Color.fromHex('#325891'), Color.fromHex('#fffc62')],
+    mostFrequentColor: Color.fromHex('#050001'),
+    mostSaturatedColor: Color.fromHex('#000c0c'),
+    mostGroupedColor: Color.fromHex('#030102'),
+    bottom: {
+        averageColor: Color.fromHex('#272320'),
+        lightestColor: Color.fromHex('#aafffd'),
+        darkestColor: Color.fromHex('#000300'),
+        minmaxWhite: [Color.fromHex('#ffffbc'), Color.fromHex('#000002')],
+        minmaxRed: [Color.fromHex('#b23935'), Color.fromHex('#4bfaf9')],
+        minmaxGreen: [Color.fromHex('#13a185'), Color.fromHex('#ffc4cc')],
+        minmaxBlue: [Color.fromHex('#145c6d'), Color.fromHex('#fff472')],
+        mostFrequentColor: Color.fromHex('#050001'),
+        mostSaturatedColor: Color.fromHex('#000203'),
+        mostGroupedColor: Color.fromHex('#030102'),
+    },
 } satisfies IImageColorStats;

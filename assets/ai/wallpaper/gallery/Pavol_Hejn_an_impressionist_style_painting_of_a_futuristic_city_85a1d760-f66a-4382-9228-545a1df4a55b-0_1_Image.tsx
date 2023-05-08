@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.json';
-import an_impressionist_style_painting_of_a_futuristic_city_85a1d760_f66a_4382_9228_545a1df4a55b_0_1 from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.json';
 import source from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_85a1d760-f66a-4382-9228-545a1df4a55b-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect.
@@ -43,8 +38,25 @@ AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a43829228545a1df4a55b0_1
     metadata satisfies IWallpaperMetadata;
 AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a43829228545a1df4a55b0_1_Image.colorStats = {
     averageColor: Color.fromHex('#554b43'),
-    lightestColor: Color.fromHex('#e3ffec'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#047480'),
-    leastFrequentColor: Color.fromHex('#212a2e'),
+    lightestColor: Color.fromHex('#fff6e6'),
+    darkestColor: Color.fromHex('#000500'),
+    minmaxWhite: [Color.fromHex('#fff6e6'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#f20d19'), Color.fromHex('#e3ffec')],
+    minmaxGreen: [Color.fromHex('#209c26'), Color.fromHex('#f80926')],
+    minmaxBlue: [Color.fromHex('#005adb'), Color.fromHex('#f8c300')],
+    mostFrequentColor: Color.fromHex('#1c1826'),
+    mostSaturatedColor: Color.fromHex('#002d3c'),
+    mostGroupedColor: Color.fromHex('#06747f'),
+    bottom: {
+        averageColor: Color.fromHex('#3f2c2a'),
+        lightestColor: Color.fromHex('#e3ffec'),
+        darkestColor: Color.fromHex('#000500'),
+        minmaxWhite: [Color.fromHex('#e3ffec'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#f1170e'), Color.fromHex('#e3ffec')],
+        minmaxGreen: [Color.fromHex('#209c26'), Color.fromHex('#f80926')],
+        minmaxBlue: [Color.fromHex('#005adb'), Color.fromHex('#fffbc0')],
+        mostFrequentColor: Color.fromHex('#1c1826'),
+        mostSaturatedColor: Color.fromHex('#002d3c'),
+        mostGroupedColor: Color.fromHex('#57261e'),
+    },
 } satisfies IImageColorStats;

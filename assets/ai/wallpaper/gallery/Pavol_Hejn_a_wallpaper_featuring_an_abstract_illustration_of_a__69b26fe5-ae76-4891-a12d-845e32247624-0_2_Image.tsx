@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__69b26fe5-ae76-4891-a12d-845e32247624-0_2.json';
-import a_wallpaper_featuring_an_abstract_illustration_of_a_69b26fe5_ae76_4891_a12d_845e32247624_0_2 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__69b26fe5-ae76-4891-a12d-845e32247624-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__69b26fe5-ae76-4891-a12d-845e32247624-0_2.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__69b26fe5-ae76-4891-a12d-845e32247624-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts.
@@ -43,8 +38,25 @@ AWallpaperFeaturingAnAbstractIllustrationOfA69b26fe5Ae764891A12d845e322476240_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAnAbstractIllustrationOfA69b26fe5Ae764891A12d845e322476240_2_Image.colorStats = {
     averageColor: Color.fromHex('#19080b'),
-    lightestColor: Color.fromHex('#ffffe5'),
+    lightestColor: Color.fromHex('#fff9f5'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010104'),
-    leastFrequentColor: Color.fromHex('#05080c'),
+    minmaxWhite: [Color.fromHex('#fff9f5'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#f61a0b'), Color.fromHex('#fff9f5')],
+    minmaxGreen: [Color.fromHex('#767264'), Color.fromHex('#f61a0b')],
+    minmaxBlue: [Color.fromHex('#49566f'), Color.fromHex('#ffffe5')],
+    mostFrequentColor: Color.fromHex('#000000'),
+    mostSaturatedColor: Color.fromHex('#000003'),
+    mostGroupedColor: Color.fromHex('#010104'),
+    bottom: {
+        averageColor: Color.fromHex('#130508'),
+        lightestColor: Color.fromHex('#f6c5a7'),
+        darkestColor: Color.fromHex('#000200'),
+        minmaxWhite: [Color.fromHex('#f6c5a7'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#e31208'), Color.fromHex('#f6c5a7')],
+        minmaxGreen: [Color.fromHex('#564c48'), Color.fromHex('#d1060b')],
+        minmaxBlue: [Color.fromHex('#4a3640'), Color.fromHex('#ffc26a')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000104'),
+        mostGroupedColor: Color.fromHex('#010104'),
+    },
 } satisfies IImageColorStats;

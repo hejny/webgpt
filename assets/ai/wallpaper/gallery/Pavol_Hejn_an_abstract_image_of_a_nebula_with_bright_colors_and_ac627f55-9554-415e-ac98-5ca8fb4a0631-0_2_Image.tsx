@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_2.json';
-import an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55_9554_415e_ac98_5ca8fb4a0631_0_2 from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_2.json';
 import source from './Pavol_Hejn_an_abstract_image_of_a_nebula_with_bright_colors_and_ac627f55-9554-415e-ac98-5ca8fb4a0631-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract image of a nebula, with bright colors and intricate patterns representing the birth of stars.
@@ -43,8 +38,25 @@ AnAbstractImageOfANebulaWithBrightColorsAndAc627f559554415eAc985ca8fb4a06310_2_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfANebulaWithBrightColorsAndAc627f559554415eAc985ca8fb4a06310_2_Image.colorStats = {
     averageColor: Color.fromHex('#473536'),
-    lightestColor: Color.fromHex('#f2ffe7'),
+    lightestColor: Color.fromHex('#c3eff5'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#02060a'),
-    leastFrequentColor: Color.fromHex('#0a0312'),
+    minmaxWhite: [Color.fromHex('#f2ffe7'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ca271e'), Color.fromHex('#f2ffe7')],
+    minmaxGreen: [Color.fromHex('#658e74'), Color.fromHex('#a30a27')],
+    minmaxBlue: [Color.fromHex('#2e4b82'), Color.fromHex('#f2ffe7')],
+    mostFrequentColor: Color.fromHex('#1b010d'),
+    mostSaturatedColor: Color.fromHex('#00040a'),
+    mostGroupedColor: Color.fromHex('#02080d'),
+    bottom: {
+        averageColor: Color.fromHex('#34262f'),
+        lightestColor: Color.fromHex('#cceaed'),
+        darkestColor: Color.fromHex('#0a0200'),
+        minmaxWhite: [Color.fromHex('#cceaed'), Color.fromHex('#030304')],
+        minmaxRed: [Color.fromHex('#b42b0f'), Color.fromHex('#cceaed')],
+        minmaxGreen: [Color.fromHex('#528479'), Color.fromHex('#79010d')],
+        minmaxBlue: [Color.fromHex('#2e4b82'), Color.fromHex('#fcc872')],
+        mostFrequentColor: Color.fromHex('#1b010d'),
+        mostSaturatedColor: Color.fromHex('#000b10'),
+        mostGroupedColor: Color.fromHex('#030508'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.json';
-import a_wallpaper_featuring_a_repeating_pattern_of_simple_1156c696_5ef2_4de6_9975_40d4f96ceb95_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design.
@@ -44,7 +39,24 @@ AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_
 AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_Image.colorStats = {
     averageColor: Color.fromHex('#817a76'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#dddee1'),
-    leastFrequentColor: Color.fromHex('#887d73'),
+    darkestColor: Color.fromHex('#000200'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#7d4e2c'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#767a67'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#47505c'), Color.fromHex('#ffffff')],
+    mostFrequentColor: Color.fromHex('#8f775d'),
+    mostSaturatedColor: Color.fromHex('#020300'),
+    mostGroupedColor: Color.fromHex('#dddcdf'),
+    bottom: {
+        averageColor: Color.fromHex('#605751'),
+        lightestColor: Color.fromHex('#eceef0'),
+        darkestColor: Color.fromHex('#000200'),
+        minmaxWhite: [Color.fromHex('#eceef0'), Color.fromHex('#020000')],
+        minmaxRed: [Color.fromHex('#7d4e2c'), Color.fromHex('#ebeef0')],
+        minmaxGreen: [Color.fromHex('#808172'), Color.fromHex('#eceef0')],
+        minmaxBlue: [Color.fromHex('#4e4f5a'), Color.fromHex('#efeee8')],
+        mostFrequentColor: Color.fromHex('#8f775d'),
+        mostSaturatedColor: Color.fromHex('#030400'),
+        mostGroupedColor: Color.fromHex('#dedede'),
+    },
 } satisfies IImageColorStats;

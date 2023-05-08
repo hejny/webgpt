@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.json';
-import an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0_9687_43a2_aeb7_17a3b30b0362_0_3 from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.json';
 import source from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_028d25e0-9687-43a2-aeb7-17a3b30b0362-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines.
@@ -45,6 +40,23 @@ AnAbstractWallpaperInspiredByTheShapesAndCol028d25e0968743a2Aeb717a3b30b03620_3_
     averageColor: Color.fromHex('#322a2b'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010209'),
-    leastFrequentColor: Color.fromHex('#491718'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#f12600'), Color.fromHex('#c1fdff')],
+    minmaxGreen: [Color.fromHex('#1ca173'), Color.fromHex('#ec0056')],
+    minmaxBlue: [Color.fromHex('#46297e'), Color.fromHex('#ffffda')],
+    mostFrequentColor: Color.fromHex('#00060f'),
+    mostSaturatedColor: Color.fromHex('#000611'),
+    mostGroupedColor: Color.fromHex('#010209'),
+    bottom: {
+        averageColor: Color.fromHex('#241e23'),
+        lightestColor: Color.fromHex('#fffdfb'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fffdfb'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#f12600'), Color.fromHex('#fffdfb')],
+        minmaxGreen: [Color.fromHex('#007f5f'), Color.fromHex('#f12600')],
+        minmaxBlue: [Color.fromHex('#025978'), Color.fromHex('#ffffed')],
+        mostFrequentColor: Color.fromHex('#00060f'),
+        mostSaturatedColor: Color.fromHex('#00262d'),
+        mostGroupedColor: Color.fromHex('#010209'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_2.json';
-import a_wallpaper_featuring_an_abstract_illustration_of_a_822a103a_e6c1_428e_a728_a811abe2077b_0_2 from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_2.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__822a103a-e6c1-428e-a728-a811abe2077b-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.
@@ -45,6 +40,23 @@ AWallpaperFeaturingAnAbstractIllustrationOfA822a103aE6c1428eA728A811abe2077b0_2_
     averageColor: Color.fromHex('#29343f'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#040e19'),
-    leastFrequentColor: Color.fromHex('#030c13'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#c51209'), Color.fromHex('#07fff0')],
+    minmaxGreen: [Color.fromHex('#12a280'), Color.fromHex('#fffcff')],
+    minmaxBlue: [Color.fromHex('#233a8e'), Color.fromHex('#ffffd2')],
+    mostFrequentColor: Color.fromHex('#020c17'),
+    mostSaturatedColor: Color.fromHex('#170008'),
+    mostGroupedColor: Color.fromHex('#040e19'),
+    bottom: {
+        averageColor: Color.fromHex('#302e37'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b40f25'), Color.fromHex('#36faff')],
+        minmaxGreen: [Color.fromHex('#7a9b49'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#0561a1'), Color.fromHex('#ffffe3')],
+        mostFrequentColor: Color.fromHex('#020c17'),
+        mostSaturatedColor: Color.fromHex('#000b1c'),
+        mostGroupedColor: Color.fromHex('#040d19'),
+    },
 } satisfies IImageColorStats;

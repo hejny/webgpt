@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_3.json';
-import a_photograph_of_a_full_moon_rising_over_a_mountain_r8bb8e7e_c008_4dae_a024_43af98452d3a_0_3_3 from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_3.json';
 import source from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.
@@ -45,6 +40,23 @@ APhotographOfAFullMoonRisingOverAMountainR8bb8e7eC0084daeA02443af98452d3a03_3_Im
     averageColor: Color.fromHex('#444c50'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#633b26'), Color.fromHex('#e4ffff')],
+    minmaxGreen: [Color.fromHex('#568a87'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#476982'), Color.fromHex('#fffffc')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#2b454f'),
+    mostSaturatedColor: Color.fromHex('#000001'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#202428'),
+        lightestColor: Color.fromHex('#cbc9ca'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#cbc9ca'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#633b26'), Color.fromHex('#cbc9ca')],
+        minmaxGreen: [Color.fromHex('#5e7778'), Color.fromHex('#0d0000')],
+        minmaxBlue: [Color.fromHex('#314054'), Color.fromHex('#cbc9ca')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

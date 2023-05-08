@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_3.json';
-import a_black_and_white_outline_of_a_telescope_with_clean_f57d73a7_6aa0_4bec_a432_8a787d0b7755_0_3 from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_3.json';
 import source from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__f57d73a7-6aa0-4bec-a432-8a787d0b7755-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A black and white outline of a telescope, with clean lines and simple shapes that highlight the intricate mechanics of the instrument.
@@ -43,8 +38,25 @@ ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_3_Im
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_3_Image.colorStats = {
     averageColor: Color.fromHex('#d9d8d8'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#fffeff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#fefefe'),
-    leastFrequentColor: Color.fromHex('#767a72'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#584c4e'), Color.fromHex('#faffff')],
+    minmaxGreen: [Color.fromHex('#778070'), Color.fromHex('#fffaff')],
+    minmaxBlue: [Color.fromHex('#544b5c'), Color.fromHex('#fffff9')],
+    mostFrequentColor: Color.fromHex('#fdfdfd'),
+    mostSaturatedColor: Color.fromHex('#030002'),
+    mostGroupedColor: Color.fromHex('#fefefe'),
+    bottom: {
+        averageColor: Color.fromHex('#d7d6d7'),
+        lightestColor: Color.fromHex('#fffeff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#453d3f'), Color.fromHex('#fcffff')],
+        minmaxGreen: [Color.fromHex('#778070'), Color.fromHex('#fffaff')],
+        minmaxBlue: [Color.fromHex('#544b5c'), Color.fromHex('#fffffb')],
+        mostFrequentColor: Color.fromHex('#fdfdfd'),
+        mostSaturatedColor: Color.fromHex('#030002'),
+        mostGroupedColor: Color.fromHex('#fefefe'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_3.json';
-import a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa_c043_4909_8d9a_bd9b4f7f0e4b_0_3 from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_3.json';
 import source from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity.
@@ -43,8 +38,25 @@ ADigitalImageOfABlackHoleWithTheDistortedSC6ec64aaC04349098d9aBd9b4f7f0e4b0_3_Im
     metadata satisfies IWallpaperMetadata;
 ADigitalImageOfABlackHoleWithTheDistortedSC6ec64aaC04349098d9aBd9b4f7f0e4b0_3_Image.colorStats = {
     averageColor: Color.fromHex('#191616'),
-    lightestColor: Color.fromHex('#fdffe8'),
+    lightestColor: Color.fromHex('#fdfeed'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010000'),
-    leastFrequentColor: Color.fromHex('#141819'),
+    minmaxWhite: [Color.fromHex('#fdfeed'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ce1801'), Color.fromHex('#fdfeed')],
+    minmaxGreen: [Color.fromHex('#318a4b'), Color.fromHex('#ce1801')],
+    minmaxBlue: [Color.fromHex('#215c91'), Color.fromHex('#fff60a')],
+    mostFrequentColor: Color.fromHex('#000000'),
+    mostSaturatedColor: Color.fromHex('#010000'),
+    mostGroupedColor: Color.fromHex('#010000'),
+    bottom: {
+        averageColor: Color.fromHex('#25211e'),
+        lightestColor: Color.fromHex('#fdfeed'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fdfeed'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#bb170c'), Color.fromHex('#fdfeed')],
+        minmaxGreen: [Color.fromHex('#318a4b'), Color.fromHex('#900215')],
+        minmaxBlue: [Color.fromHex('#215c91'), Color.fromHex('#fff60a')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000103'),
+        mostGroupedColor: Color.fromHex('#010000'),
+    },
 } satisfies IImageColorStats;

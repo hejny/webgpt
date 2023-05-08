@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_3.json';
-import a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98_9d6d_4aa4_b05c_d8cb8d4bed95_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_3.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_287d5a98-9d6d-4aa4-b05c-d8cb8d4bed95-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a simple black and white graphic of a robot's head, against a solid colored background.
@@ -43,8 +38,25 @@ AWallpaperWithASimpleBlackAndWhiteGraphicOf287d5a989d6d4aa4B05cD8cb8d4bed950_3_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleBlackAndWhiteGraphicOf287d5a989d6d4aa4B05cD8cb8d4bed950_3_Image.colorStats = {
     averageColor: Color.fromHex('#161616'),
-    lightestColor: Color.fromHex('#fbfcf9'),
+    lightestColor: Color.fromHex('#f8fcfb'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#fbfcf9'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a8731f'), Color.fromHex('#f8fcfb')],
+    minmaxGreen: [Color.fromHex('#a08538'), Color.fromHex('#fbfcf9')],
+    minmaxBlue: [Color.fromHex('#514f56'), Color.fromHex('#fbfcf9')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#4a484a'),
+    mostSaturatedColor: Color.fromHex('#000001'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#191819'),
+        lightestColor: Color.fromHex('#f8fcfb'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f8fcfb'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#a8731f'), Color.fromHex('#f8fcfb')],
+        minmaxGreen: [Color.fromHex('#a08538'), Color.fromHex('#f8fcfb')],
+        minmaxBlue: [Color.fromHex('#57555c'), Color.fromHex('#f8fcfb')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

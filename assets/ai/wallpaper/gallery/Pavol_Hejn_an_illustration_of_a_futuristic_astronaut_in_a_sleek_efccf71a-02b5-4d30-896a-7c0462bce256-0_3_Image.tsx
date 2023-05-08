@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_efccf71a-02b5-4d30-896a-7c0462bce256-0_3.json';
-import an_illustration_of_a_futuristic_astronaut_in_a_sleek_efccf71a_02b5_4d30_896a_7c0462bce256_0_3 from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_efccf71a-02b5-4d30-896a-7c0462bce256-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_efccf71a-02b5-4d30-896a-7c0462bce256-0_3.json';
 import source from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_efccf71a-02b5-4d30-896a-7c0462bce256-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet.
@@ -44,7 +39,24 @@ AnIllustrationOfAFuturisticAstronautInASleekEfccf71a02b54d30896a7c0462bce2560_3_
 AnIllustrationOfAFuturisticAstronautInASleekEfccf71a02b54d30896a7c0462bce2560_3_Image.colorStats = {
     averageColor: Color.fromHex('#52595f'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#1c303e'),
-    leastFrequentColor: Color.fromHex('#494348'),
+    darkestColor: Color.fromHex('#000400'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#cd3820'), Color.fromHex('#a3fbf9')],
+    minmaxGreen: [Color.fromHex('#3b9d84'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2a5a97'), Color.fromHex('#ffffd7')],
+    mostFrequentColor: Color.fromHex('#0f0c15'),
+    mostSaturatedColor: Color.fromHex('#00000c'),
+    mostGroupedColor: Color.fromHex('#1c2e3d'),
+    bottom: {
+        averageColor: Color.fromHex('#394852'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#030000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#030000')],
+        minmaxRed: [Color.fromHex('#c7412f'), Color.fromHex('#d1fefe')],
+        minmaxGreen: [Color.fromHex('#4f918c'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#2a5a97'), Color.fromHex('#ffffd7')],
+        mostFrequentColor: Color.fromHex('#0f0c15'),
+        mostSaturatedColor: Color.fromHex('#00000c'),
+        mostGroupedColor: Color.fromHex('#130506'),
+    },
 } satisfies IImageColorStats;

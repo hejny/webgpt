@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_3.json';
-import a_poster_style_image_of_a_mission_to_mars_with_bold_6e6533f5_7774_4664_a6c1_8ebb09cefb82_0_3 from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_3.json';
 import source from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A poster-style image of a mission to Mars, with bold typography and a futuristic color scheme that represents the ambition of space exploration.
@@ -43,8 +38,25 @@ APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Ima
     metadata satisfies IWallpaperMetadata;
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Image.colorStats = {
     averageColor: Color.fromHex('#773e37'),
-    lightestColor: Color.fromHex('#fffff6'),
+    lightestColor: Color.fromHex('#f3ffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#01111f'),
-    leastFrequentColor: Color.fromHex('#e34b38'),
+    minmaxWhite: [Color.fromHex('#fdfffb'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#e90f00'), Color.fromHex('#32c9ff')],
+    minmaxGreen: [Color.fromHex('#29926e'), Color.fromHex('#e90f00')],
+    minmaxBlue: [Color.fromHex('#003c85'), Color.fromHex('#fffcae')],
+    mostFrequentColor: Color.fromHex('#000f1d'),
+    mostSaturatedColor: Color.fromHex('#130006'),
+    mostGroupedColor: Color.fromHex('#01111f'),
+    bottom: {
+        averageColor: Color.fromHex('#2d1a23'),
+        lightestColor: Color.fromHex('#a7f0e7'),
+        darkestColor: Color.fromHex('#000005'),
+        minmaxWhite: [Color.fromHex('#e8efcc'), Color.fromHex('#000005')],
+        minmaxRed: [Color.fromHex('#e31a07'), Color.fromHex('#a7f0e7')],
+        minmaxGreen: [Color.fromHex('#57a78e'), Color.fromHex('#e31a07')],
+        minmaxBlue: [Color.fromHex('#103c6c'), Color.fromHex('#ffeaa6')],
+        mostFrequentColor: Color.fromHex('#000f1d'),
+        mostSaturatedColor: Color.fromHex('#001020'),
+        mostGroupedColor: Color.fromHex('#01111f'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_0.json';
-import an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52_cea8_41fd_a221_fcbde3192db1_0_0 from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_0.json';
 import source from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fd6ceb52-cea8-41fd-a221-fcbde3192db1-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract representation of the inside of a computer chip with a metallic color palette
@@ -43,8 +38,25 @@ AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_0_
     metadata satisfies IWallpaperMetadata;
 AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_0_Image.colorStats = {
     averageColor: Color.fromHex('#403c2c'),
-    lightestColor: Color.fromHex('#ffffd4'),
+    lightestColor: Color.fromHex('#eafffe'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010000'),
-    leastFrequentColor: Color.fromHex('#040205'),
+    minmaxWhite: [Color.fromHex('#f1f9f8'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a83900'), Color.fromHex('#45fdef')],
+    minmaxGreen: [Color.fromHex('#64bb57'), Color.fromHex('#f1f9f8')],
+    minmaxBlue: [Color.fromHex('#00698f'), Color.fromHex('#feff9d')],
+    mostFrequentColor: Color.fromHex('#000000'),
+    mostSaturatedColor: Color.fromHex('#010000'),
+    mostGroupedColor: Color.fromHex('#010000'),
+    bottom: {
+        averageColor: Color.fromHex('#2f271b'),
+        lightestColor: Color.fromHex('#eafffe'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f1f9f8'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#a83900'), Color.fromHex('#65f4e3')],
+        minmaxGreen: [Color.fromHex('#64bb57'), Color.fromHex('#f1f9f8')],
+        minmaxBlue: [Color.fromHex('#086680'), Color.fromHex('#f4f9d7')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#010000'),
+    },
 } satisfies IImageColorStats;

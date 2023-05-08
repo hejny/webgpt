@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.json';
-import a_neon_colored_interpretation_of_a_starry_sky25cd770_66f9_438b_b69e_3bde773b338a_0_1_1 from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.json';
 import source from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A neon-colored interpretation of a starry sky
@@ -43,8 +38,25 @@ ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.
     metadata satisfies IWallpaperMetadata;
 ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.colorStats = {
     averageColor: Color.fromHex('#332731'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#ffc1ff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020102'),
-    leastFrequentColor: Color.fromHex('#42190b'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#e1101c'), Color.fromHex('#01dbff')],
+    minmaxGreen: [Color.fromHex('#21ae63'), Color.fromHex('#ef13d2')],
+    minmaxBlue: [Color.fromHex('#0d2ac0'), Color.fromHex('#f9f42a')],
+    mostFrequentColor: Color.fromHex('#060606'),
+    mostSaturatedColor: Color.fromHex('#020002'),
+    mostGroupedColor: Color.fromHex('#020103'),
+    bottom: {
+        averageColor: Color.fromHex('#32282e'),
+        lightestColor: Color.fromHex('#ffb1ff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#e5fff2'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d91917'), Color.fromHex('#32f9f8')],
+        minmaxGreen: [Color.fromHex('#21ae63'), Color.fromHex('#ef13d2')],
+        minmaxBlue: [Color.fromHex('#5324cc'), Color.fromHex('#fbff7c')],
+        mostFrequentColor: Color.fromHex('#060606'),
+        mostSaturatedColor: Color.fromHex('#020000'),
+        mostGroupedColor: Color.fromHex('#020103'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_1.json';
-import ainauts_exploring_a_vast_network_of_tunnels_beneath_23dd2e38_a529_4e63_b9d6_19877ef9d20e_0_1 from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_1.json';
 import source from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.
@@ -43,8 +38,25 @@ AinautsExploringAVastNetworkOfTunnelsBeneath23dd2e38A5294e63B9d619877ef9d20e0_1_
     metadata satisfies IWallpaperMetadata;
 AinautsExploringAVastNetworkOfTunnelsBeneath23dd2e38A5294e63B9d619877ef9d20e0_1_Image.colorStats = {
     averageColor: Color.fromHex('#2f464d'),
-    lightestColor: Color.fromHex('#ffffc9'),
+    lightestColor: Color.fromHex('#f4f5fd'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#01010e'),
-    leastFrequentColor: Color.fromHex('#04031a'),
+    minmaxWhite: [Color.fromHex('#f4f5fd'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d5351b'), Color.fromHex('#8efffd')],
+    minmaxGreen: [Color.fromHex('#75ac56'), Color.fromHex('#f4f5fd')],
+    minmaxBlue: [Color.fromHex('#325585'), Color.fromHex('#ffffbc')],
+    mostFrequentColor: Color.fromHex('#000b24'),
+    mostSaturatedColor: Color.fromHex('#000622'),
+    mostGroupedColor: Color.fromHex('#01010e'),
+    bottom: {
+        averageColor: Color.fromHex('#424f50'),
+        lightestColor: Color.fromHex('#d3fffd'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#e4fceb'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d44014'), Color.fromHex('#b2fffe')],
+        minmaxGreen: [Color.fromHex('#75ac56'), Color.fromHex('#ffcbe5')],
+        minmaxBlue: [Color.fromHex('#325585'), Color.fromHex('#ffffbc')],
+        mostFrequentColor: Color.fromHex('#000b24'),
+        mostSaturatedColor: Color.fromHex('#000926'),
+        mostGroupedColor: Color.fromHex('#010000'),
+    },
 } satisfies IImageColorStats;

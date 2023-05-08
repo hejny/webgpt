@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80-6b71-483f-b147-5ec001f713f5-0_3.json';
-import a_photograph_of_an_astronaut_standing_on_the_surface1d00e80_6b71_483f_b147_5ec001f713f5_0_3_3 from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80-6b71-483f-b147-5ec001f713f5-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80-6b71-483f-b147-5ec001f713f5-0_3.json';
 import source from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_31d00e80-6b71-483f-b147-5ec001f713f5-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of an astronaut standing on the surface of the moon with Earth in the background.
@@ -45,6 +40,23 @@ APhotographOfAnAstronautStandingOnTheSurface1d00e806b71483fB1475ec001f713f503_3_
     averageColor: Color.fromHex('#404345'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#12293b'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ff0026'), Color.fromHex('#d1ffff')],
+    minmaxGreen: [Color.fromHex('#74a26b'), Color.fromHex('#ff0026')],
+    minmaxBlue: [Color.fromHex('#000f97'), Color.fromHex('#ffff8a')],
+    mostFrequentColor: Color.fromHex('#000503'),
+    mostSaturatedColor: Color.fromHex('#000104'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#4f5051'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#cb240e'), Color.fromHex('#edffff')],
+        minmaxGreen: [Color.fromHex('#829866'), Color.fromHex('#ffe7ff')],
+        minmaxBlue: [Color.fromHex('#2a1a6b'), Color.fromHex('#ffff8a')],
+        mostFrequentColor: Color.fromHex('#000503'),
+        mostSaturatedColor: Color.fromHex('#000710'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_3.json';
-import a_futuristic_metropolis_at_night_dd694098_7781_4ff7_b11e_aad3c905d525_0_3 from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_3.json';
 import source from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A futuristic metropolis at night
@@ -44,6 +39,23 @@ AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.colorStats
     averageColor: Color.fromHex('#273348'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0e192f'),
-    leastFrequentColor: Color.fromHex('#52778e'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a32f16'), Color.fromHex('#dcffff')],
+    minmaxGreen: [Color.fromHex('#469493'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#29517d'), Color.fromHex('#ffffb3')],
+    mostFrequentColor: Color.fromHex('#0d1e37'),
+    mostSaturatedColor: Color.fromHex('#070005'),
+    mostGroupedColor: Color.fromHex('#0d182f'),
+    bottom: {
+        averageColor: Color.fromHex('#383546'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#be471e'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#6d796e'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#29517d'), Color.fromHex('#ffffb3')],
+        mostFrequentColor: Color.fromHex('#0d1e37'),
+        mostSaturatedColor: Color.fromHex('#070005'),
+        mostGroupedColor: Color.fromHex('#0e172f'),
+    },
 } satisfies IImageColorStats;

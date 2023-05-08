@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__a954f85c-12dd-42db-a40f-98a05a5d7e62-0_0.json';
-import a_panoramic_image_of_a_mountain_range_with_mist_and_a954f85c_12dd_42db_a40f_98a05a5d7e62_0_0 from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__a954f85c-12dd-42db-a40f-98a05a5d7e62-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__a954f85c-12dd-42db-a40f-98a05a5d7e62-0_0.json';
 import source from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__a954f85c-12dd-42db-a40f-98a05a5d7e62-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A panoramic image of a mountain range, with mist and clouds drifting through the peaks.
@@ -43,8 +38,25 @@ APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_0_Im
     metadata satisfies IWallpaperMetadata;
 APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_0_Image.colorStats = {
     averageColor: Color.fromHex('#707477'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#fffdff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0b0f15'),
-    leastFrequentColor: Color.fromHex('#e0e9ee'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#725336'), Color.fromHex('#fcffff')],
+    minmaxGreen: [Color.fromHex('#7f7b5a'), Color.fromHex('#fffdff')],
+    minmaxBlue: [Color.fromHex('#2e4863'), Color.fromHex('#fffffa')],
+    mostFrequentColor: Color.fromHex('#000509'),
+    mostSaturatedColor: Color.fromHex('#000a18'),
+    mostGroupedColor: Color.fromHex('#ebeced'),
+    bottom: {
+        averageColor: Color.fromHex('#383838'),
+        lightestColor: Color.fromHex('#d9d9e0'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#e0d9d8'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#725336'), Color.fromHex('#d9d9e0')],
+        minmaxGreen: [Color.fromHex('#7f7b5a'), Color.fromHex('#00000c')],
+        minmaxBlue: [Color.fromHex('#3a5168'), Color.fromHex('#e0d9d7')],
+        mostFrequentColor: Color.fromHex('#000509'),
+        mostSaturatedColor: Color.fromHex('#000a18'),
+        mostGroupedColor: Color.fromHex('#090c13'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_2.json';
-import a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e_dd21_4f2a_9932_eaeef36b3869_0_2 from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_2.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a graph of complex mathematical equations, arranged in a minimalist and modern design.
@@ -44,7 +39,24 @@ AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_2_
 AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_2_Image.colorStats = {
     averageColor: Color.fromHex('#d2af8e'),
     lightestColor: Color.fromHex('#ffffdd'),
-    darkestColor: Color.fromHex('#120406'),
-    mostFrequentColor: Color.fromHex('#e6cdac'),
-    leastFrequentColor: Color.fromHex('#734732'),
+    darkestColor: Color.fromHex('#171100'),
+    minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#120406')],
+    minmaxRed: [Color.fromHex('#844228'), Color.fromHex('#ffffdd')],
+    minmaxGreen: [Color.fromHex('#54835b'), Color.fromHex('#ffffdd')],
+    minmaxBlue: [Color.fromHex('#404858'), Color.fromHex('#ffffdd')],
+    mostFrequentColor: Color.fromHex('#ccd4b3'),
+    mostSaturatedColor: Color.fromHex('#2d1600'),
+    mostGroupedColor: Color.fromHex('#e3c6a3'),
+    bottom: {
+        averageColor: Color.fromHex('#ceb090'),
+        lightestColor: Color.fromHex('#eff7d9'),
+        darkestColor: Color.fromHex('#171100'),
+        minmaxWhite: [Color.fromHex('#eff7d9'), Color.fromHex('#170b07')],
+        minmaxRed: [Color.fromHex('#9a503f'), Color.fromHex('#eff7d9')],
+        minmaxGreen: [Color.fromHex('#54835b'), Color.fromHex('#fff5d0')],
+        minmaxBlue: [Color.fromHex('#405151'), Color.fromHex('#fff5d0')],
+        mostFrequentColor: Color.fromHex('#ccd4b3'),
+        mostSaturatedColor: Color.fromHex('#2d1600'),
+        mostGroupedColor: Color.fromHex('#e3c6a3'),
+    },
 } satisfies IImageColorStats;

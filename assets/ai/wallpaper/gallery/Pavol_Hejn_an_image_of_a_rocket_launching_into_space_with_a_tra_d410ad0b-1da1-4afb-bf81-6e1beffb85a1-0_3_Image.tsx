@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.json';
-import an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b_1da1_4afb_bf81_6e1beffb85a1_0_3 from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.json';
 import source from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An image of a rocket launching into space with a trail of fire behind it, set against a starry sky.
@@ -43,8 +38,25 @@ AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_3_Im
     metadata satisfies IWallpaperMetadata;
 AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_3_Image.colorStats = {
     averageColor: Color.fromHex('#493635'),
-    lightestColor: Color.fromHex('#fffff6'),
+    lightestColor: Color.fromHex('#fdfff8'),
     darkestColor: Color.fromHex('#030000'),
-    mostFrequentColor: Color.fromHex('#080a1f'),
-    leastFrequentColor: Color.fromHex('#050520'),
+    minmaxWhite: [Color.fromHex('#fdfff8'), Color.fromHex('#030000')],
+    minmaxRed: [Color.fromHex('#da270a'), Color.fromHex('#fdfff8')],
+    minmaxGreen: [Color.fromHex('#557a6d'), Color.fromHex('#fffff6')],
+    minmaxBlue: [Color.fromHex('#3a4064'), Color.fromHex('#ffc720')],
+    mostFrequentColor: Color.fromHex('#050510'),
+    mostSaturatedColor: Color.fromHex('#00041d'),
+    mostGroupedColor: Color.fromHex('#07091e'),
+    bottom: {
+        averageColor: Color.fromHex('#64372d'),
+        lightestColor: Color.fromHex('#fffdd0'),
+        darkestColor: Color.fromHex('#00010b'),
+        minmaxWhite: [Color.fromHex('#fffed0'), Color.fromHex('#00010b')],
+        minmaxRed: [Color.fromHex('#ce451d'), Color.fromHex('#feffcf')],
+        minmaxGreen: [Color.fromHex('#6e6c5c'), Color.fromHex('#fffdd0')],
+        minmaxBlue: [Color.fromHex('#514b60'), Color.fromHex('#ffffb3')],
+        mostFrequentColor: Color.fromHex('#050510'),
+        mostSaturatedColor: Color.fromHex('#01000d'),
+        mostGroupedColor: Color.fromHex('#07091e'),
+    },
 } satisfies IImageColorStats;

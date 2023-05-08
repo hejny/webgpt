@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_251c3adf-24ef-482d-bbc1-9f9dad7f232b-0_2.json';
-import a_minimalist_design_featuring_ai_related_buzzwords_i51c3adf_24ef_482d_bbc1_9f9dad7f232b_0_2_2 from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_251c3adf-24ef-482d-bbc1-9f9dad7f232b-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_251c3adf-24ef-482d-bbc1-9f9dad7f232b-0_2.json';
 import source from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_251c3adf-24ef-482d-bbc1-9f9dad7f232b-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A minimalist design featuring AI-related buzzwords in different fonts and colors
@@ -45,6 +40,23 @@ AMinimalistDesignFeaturingAiRelatedBuzzwordsI51c3adf24ef482dBbc19f9dad7f232b02_2
     averageColor: Color.fromHex('#2a3037'),
     lightestColor: Color.fromHex('#fcffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000206'),
-    leastFrequentColor: Color.fromHex('#4c5154'),
+    minmaxWhite: [Color.fromHex('#fcffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#b80534'), Color.fromHex('#fcffff')],
+    minmaxGreen: [Color.fromHex('#76975d'), Color.fromHex('#b50333')],
+    minmaxBlue: [Color.fromHex('#4b2d67'), Color.fromHex('#fcffff')],
+    mostFrequentColor: Color.fromHex('#000001'),
+    mostSaturatedColor: Color.fromHex('#000004'),
+    mostGroupedColor: Color.fromHex('#000206'),
+    bottom: {
+        averageColor: Color.fromHex('#162427'),
+        lightestColor: Color.fromHex('#b8c8c8'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#c3c6c1'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b80534'), Color.fromHex('#b8c8c8')],
+        minmaxGreen: [Color.fromHex('#76975d'), Color.fromHex('#b50333')],
+        minmaxBlue: [Color.fromHex('#0a6075'), Color.fromHex('#b0bc78')],
+        mostFrequentColor: Color.fromHex('#000001'),
+        mostSaturatedColor: Color.fromHex('#000008'),
+        mostGroupedColor: Color.fromHex('#000206'),
+    },
 } satisfies IImageColorStats;

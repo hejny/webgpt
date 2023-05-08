@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_1.json';
-import a_dreamy_forest_scene_with_fairies_b61e92db_6e51_44fb_a677_12d97eb38527_0_1 from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_1.json';
 import source from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A dreamy forest scene with fairies
@@ -42,8 +37,25 @@ export function ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_1
 ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_1_Image.colorStats = {
     averageColor: Color.fromHex('#394039'),
-    lightestColor: Color.fromHex('#ffffe1'),
+    lightestColor: Color.fromHex('#f8f8f8'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#18181b'),
-    leastFrequentColor: Color.fromHex('#232429'),
+    minmaxWhite: [Color.fromHex('#fefdf5'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#6f2342'), Color.fromHex('#fefdf5')],
+    minmaxGreen: [Color.fromHex('#6a874e'), Color.fromHex('#fefdf5')],
+    minmaxBlue: [Color.fromHex('#2d3b88'), Color.fromHex('#ffffe1')],
+    mostFrequentColor: Color.fromHex('#090a0b'),
+    mostSaturatedColor: Color.fromHex('#001539'),
+    mostGroupedColor: Color.fromHex('#0b0606'),
+    bottom: {
+        averageColor: Color.fromHex('#282e28'),
+        lightestColor: Color.fromHex('#fefdf5'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fefdf5'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#6f2342'), Color.fromHex('#fefdf5')],
+        minmaxGreen: [Color.fromHex('#6a874e'), Color.fromHex('#fefdf5')],
+        minmaxBlue: [Color.fromHex('#2d3b88'), Color.fromHex('#fffbcc')],
+        mostFrequentColor: Color.fromHex('#090a0b'),
+        mostSaturatedColor: Color.fromHex('#001539'),
+        mostGroupedColor: Color.fromHex('#0b0606'),
+    },
 } satisfies IImageColorStats;

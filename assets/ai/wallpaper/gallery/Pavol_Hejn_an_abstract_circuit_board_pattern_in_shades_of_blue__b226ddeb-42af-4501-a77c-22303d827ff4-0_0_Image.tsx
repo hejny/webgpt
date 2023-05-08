@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__b226ddeb-42af-4501-a77c-22303d827ff4-0_0.json';
-import an_abstract_circuit_board_pattern_in_shades_of_blue_b226ddeb_42af_4501_a77c_22303d827ff4_0_0 from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__b226ddeb-42af-4501-a77c-22303d827ff4-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__b226ddeb-42af-4501-a77c-22303d827ff4-0_0.json';
 import source from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__b226ddeb-42af-4501-a77c-22303d827ff4-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract circuit board pattern in shades of blue and silver
@@ -45,6 +40,23 @@ AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c22303d827ff40_0_I
     averageColor: Color.fromHex('#213f56'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#090707'),
-    leastFrequentColor: Color.fromHex('#09427a'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#494343'), Color.fromHex('#cbffff')],
+    minmaxGreen: [Color.fromHex('#468376'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#323f8f'), Color.fromHex('#ffffff')],
+    mostFrequentColor: Color.fromHex('#04080d'),
+    mostSaturatedColor: Color.fromHex('#003055'),
+    mostGroupedColor: Color.fromHex('#090707'),
+    bottom: {
+        averageColor: Color.fromHex('#182f41'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000500'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#494343'), Color.fromHex('#d8ffff')],
+        minmaxGreen: [Color.fromHex('#5f795a'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#323f8f'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#04080d'),
+        mostSaturatedColor: Color.fromHex('#00294a'),
+        mostGroupedColor: Color.fromHex('#090707'),
+    },
 } satisfies IImageColorStats;

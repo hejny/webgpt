@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__bd678223-081b-4255-924f-d7778020ce13-0_0.json';
-import a_minimalist_graphic_of_a_futuristic_cityscape_with_bd678223_081b_4255_924f_d7778020ce13_0_0 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__bd678223-081b-4255-924f-d7778020ce13-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__bd678223-081b-4255-924f-d7778020ce13-0_0.json';
 import source from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__bd678223-081b-4255-924f-d7778020ce13-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.
@@ -43,8 +38,25 @@ AMinimalistGraphicOfAFuturisticCityscapeWithBd678223081b4255924fD7778020ce130_0_
     metadata satisfies IWallpaperMetadata;
 AMinimalistGraphicOfAFuturisticCityscapeWithBd678223081b4255924fD7778020ce130_0_Image.colorStats = {
     averageColor: Color.fromHex('#361c34'),
-    lightestColor: Color.fromHex('#f7ffff'),
+    lightestColor: Color.fromHex('#fffaff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020612'),
-    leastFrequentColor: Color.fromHex('#000518'),
+    minmaxWhite: [Color.fromHex('#fffaff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#e80028'), Color.fromHex('#3bffff')],
+    minmaxGreen: [Color.fromHex('#2edea8'), Color.fromHex('#f7035c')],
+    minmaxBlue: [Color.fromHex('#2850b8'), Color.fromHex('#fffaff')],
+    mostFrequentColor: Color.fromHex('#00020a'),
+    mostSaturatedColor: Color.fromHex('#380007'),
+    mostGroupedColor: Color.fromHex('#020612'),
+    bottom: {
+        averageColor: Color.fromHex('#1a0e21'),
+        lightestColor: Color.fromHex('#baf9ff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#baf9ff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#e80028'), Color.fromHex('#53fdfb')],
+        minmaxGreen: [Color.fromHex('#399580'), Color.fromHex('#ef0330')],
+        minmaxBlue: [Color.fromHex('#2850b8'), Color.fromHex('#b1fffa')],
+        mostFrequentColor: Color.fromHex('#00020a'),
+        mostSaturatedColor: Color.fromHex('#380007'),
+        mostGroupedColor: Color.fromHex('#01030b'),
+    },
 } satisfies IImageColorStats;

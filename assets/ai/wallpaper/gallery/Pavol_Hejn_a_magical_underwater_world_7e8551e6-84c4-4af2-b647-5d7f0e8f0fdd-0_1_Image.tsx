@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_1.json';
-import a_magical_underwater_world_7e8551e6_84c4_4af2_b647_5d7f0e8f0fdd_0_1 from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_1.json';
 import source from './Pavol_Hejn_a_magical_underwater_world_7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A magical underwater world
@@ -44,6 +39,23 @@ AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.colorStats = {
     averageColor: Color.fromHex('#273a3c'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#07090b'),
-    leastFrequentColor: Color.fromHex('#172b27'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#c72c18'), Color.fromHex('#65fbfc')],
+    minmaxGreen: [Color.fromHex('#6f953f'), Color.fromHex('#fffbff')],
+    minmaxBlue: [Color.fromHex('#365a93'), Color.fromHex('#fffebc')],
+    mostFrequentColor: Color.fromHex('#010000'),
+    mostSaturatedColor: Color.fromHex('#000204'),
+    mostGroupedColor: Color.fromHex('#011624'),
+    bottom: {
+        averageColor: Color.fromHex('#332723'),
+        lightestColor: Color.fromHex('#bedbfc'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#f8ffe9'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#ad3112'), Color.fromHex('#f8ffe9')],
+        minmaxGreen: [Color.fromHex('#7c884b'), Color.fromHex('#ffffe4')],
+        minmaxBlue: [Color.fromHex('#365a93'), Color.fromHex('#ffffda')],
+        mostFrequentColor: Color.fromHex('#010000'),
+        mostSaturatedColor: Color.fromHex('#060400'),
+        mostGroupedColor: Color.fromHex('#050304'),
+    },
 } satisfies IImageColorStats;

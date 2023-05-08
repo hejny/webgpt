@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_0.json';
-import an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b_ef35_4305_87d1_ec84d9f83ecd_0_0 from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_0.json';
 import source from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a cyborg with a metallic body and glowing eyes
@@ -45,6 +40,23 @@ AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_0_I
     averageColor: Color.fromHex('#1f2629'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#050404'),
-    leastFrequentColor: Color.fromHex('#093c65'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#8a431e'), Color.fromHex('#55f0ff')],
+    minmaxGreen: [Color.fromHex('#c4c73d'), Color.fromHex('#fffaff')],
+    minmaxBlue: [Color.fromHex('#1b62ab'), Color.fromHex('#fff30d')],
+    mostFrequentColor: Color.fromHex('#000404'),
+    mostSaturatedColor: Color.fromHex('#010001'),
+    mostGroupedColor: Color.fromHex('#050404'),
+    bottom: {
+        averageColor: Color.fromHex('#2b353b'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#8a431e'), Color.fromHex('#86fefe')],
+        minmaxGreen: [Color.fromHex('#46928d'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#1b62ab'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#000404'),
+        mostSaturatedColor: Color.fromHex('#010001'),
+        mostGroupedColor: Color.fromHex('#050404'),
+    },
 } satisfies IImageColorStats;

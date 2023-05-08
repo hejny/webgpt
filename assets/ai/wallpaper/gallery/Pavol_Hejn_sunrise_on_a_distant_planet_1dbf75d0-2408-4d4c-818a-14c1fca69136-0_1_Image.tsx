@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_1.json';
-import sunrise_on_a_distant_planetdbf75d0_2408_4d4c_818a_14c1fca69136_0_1_1 from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_1.json';
 import source from './Pavol_Hejn_sunrise_on_a_distant_planet_1dbf75d0-2408-4d4c-818a-14c1fca69136-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of Sunrise on a distant planet
@@ -43,7 +38,24 @@ SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.metadata = meta
 SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.colorStats = {
     averageColor: Color.fromHex('#554045'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#05000a'),
-    mostFrequentColor: Color.fromHex('#0a0513'),
-    leastFrequentColor: Color.fromHex('#1c2e51'),
+    darkestColor: Color.fromHex('#160000'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#080005')],
+    minmaxRed: [Color.fromHex('#aa421a'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#617781'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2b4c71'), Color.fromHex('#ffffca')],
+    mostFrequentColor: Color.fromHex('#351819'),
+    mostSaturatedColor: Color.fromHex('#08000c'),
+    mostGroupedColor: Color.fromHex('#1e121c'),
+    bottom: {
+        averageColor: Color.fromHex('#2d161e'),
+        lightestColor: Color.fromHex('#fff1e9'),
+        darkestColor: Color.fromHex('#160000'),
+        minmaxWhite: [Color.fromHex('#fff1e9'), Color.fromHex('#080005')],
+        minmaxRed: [Color.fromHex('#aa421a'), Color.fromHex('#fff1e9')],
+        minmaxGreen: [Color.fromHex('#816c64'), Color.fromHex('#fff1e9')],
+        minmaxBlue: [Color.fromHex('#4c475c'), Color.fromHex('#fff1e9')],
+        mostFrequentColor: Color.fromHex('#351819'),
+        mostSaturatedColor: Color.fromHex('#08000c'),
+        mostGroupedColor: Color.fromHex('#19111e'),
+    },
 } satisfies IImageColorStats;

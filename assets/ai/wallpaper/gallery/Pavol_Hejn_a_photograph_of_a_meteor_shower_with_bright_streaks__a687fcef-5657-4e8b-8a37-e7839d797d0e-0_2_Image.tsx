@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_2.json';
-import a_photograph_of_a_meteor_shower_with_bright_streaks_a687fcef_5657_4e8b_8a37_e7839d797d0e_0_2 from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_2.json';
 import source from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__a687fcef-5657-4e8b-8a37-e7839d797d0e-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of a meteor shower, with bright streaks of light crossing the night sky.
@@ -45,6 +40,23 @@ APhotographOfAMeteorShowerWithBrightStreaksA687fcef56574e8b8a37E7839d797d0e0_2_I
     averageColor: Color.fromHex('#31313c'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000001'),
-    leastFrequentColor: Color.fromHex('#12111c'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#744831'), Color.fromHex('#e0ffff')],
+    minmaxGreen: [Color.fromHex('#7f7663'), Color.fromHex('#fff5ff')],
+    minmaxBlue: [Color.fromHex('#324ba5'), Color.fromHex('#ffffee')],
+    mostFrequentColor: Color.fromHex('#000003'),
+    mostSaturatedColor: Color.fromHex('#040002'),
+    mostGroupedColor: Color.fromHex('#000001'),
+    bottom: {
+        averageColor: Color.fromHex('#2b2728'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#744831'), Color.fromHex('#f6ffff')],
+        minmaxGreen: [Color.fromHex('#7f7663'), Color.fromHex('#fffaff')],
+        minmaxBlue: [Color.fromHex('#3c2f81'), Color.fromHex('#ffffee')],
+        mostFrequentColor: Color.fromHex('#000003'),
+        mostSaturatedColor: Color.fromHex('#040002'),
+        mostGroupedColor: Color.fromHex('#000001'),
+    },
 } satisfies IImageColorStats;

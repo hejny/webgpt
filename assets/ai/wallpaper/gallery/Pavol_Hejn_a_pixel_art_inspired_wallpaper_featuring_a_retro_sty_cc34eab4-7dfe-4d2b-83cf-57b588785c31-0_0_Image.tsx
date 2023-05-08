@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_cc34eab4-7dfe-4d2b-83cf-57b588785c31-0_0.json';
-import a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_cc34eab4_7dfe_4d2b_83cf_57b588785c31_0_0 from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_cc34eab4-7dfe-4d2b-83cf-57b588785c31-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_cc34eab4-7dfe-4d2b-83cf-57b588785c31-0_0.json';
 import source from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_cc34eab4-7dfe-4d2b-83cf-57b588785c31-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A pixel art-inspired wallpaper featuring a retro-style robot, with a limited color palette and pixelated lines.
@@ -43,8 +38,25 @@ APixelArtInspiredWallpaperFeaturingARetroStyCc34eab47dfe4d2b83cf57b588785c310_0_
     metadata satisfies IWallpaperMetadata;
 APixelArtInspiredWallpaperFeaturingARetroStyCc34eab47dfe4d2b83cf57b588785c310_0_Image.colorStats = {
     averageColor: Color.fromHex('#3d364f'),
-    lightestColor: Color.fromHex('#f6f6b4'),
-    darkestColor: Color.fromHex('#190417'),
-    mostFrequentColor: Color.fromHex('#1f1a36'),
-    leastFrequentColor: Color.fromHex('#17475f'),
+    lightestColor: Color.fromHex('#cbfcee'),
+    darkestColor: Color.fromHex('#101216'),
+    minmaxWhite: [Color.fromHex('#cbfcee'), Color.fromHex('#190417')],
+    minmaxRed: [Color.fromHex('#d1314f'), Color.fromHex('#cbfcee')],
+    minmaxGreen: [Color.fromHex('#72a85b'), Color.fromHex('#d1314f')],
+    minmaxBlue: [Color.fromHex('#37457d'), Color.fromHex('#f6f6b4')],
+    mostFrequentColor: Color.fromHex('#171430'),
+    mostSaturatedColor: Color.fromHex('#02142b'),
+    mostGroupedColor: Color.fromHex('#1f1a36'),
+    bottom: {
+        averageColor: Color.fromHex('#312d48'),
+        lightestColor: Color.fromHex('#f6f6b4'),
+        darkestColor: Color.fromHex('#101216'),
+        minmaxWhite: [Color.fromHex('#f6f6b4'), Color.fromHex('#190417')],
+        minmaxRed: [Color.fromHex('#d1314f'), Color.fromHex('#f6f6b4')],
+        minmaxGreen: [Color.fromHex('#4e8d7e'), Color.fromHex('#d1314f')],
+        minmaxBlue: [Color.fromHex('#26517f'), Color.fromHex('#f6f6b4')],
+        mostFrequentColor: Color.fromHex('#171430'),
+        mostSaturatedColor: Color.fromHex('#02142b'),
+        mostGroupedColor: Color.fromHex('#1f1a36'),
+    },
 } satisfies IImageColorStats;

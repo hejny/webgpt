@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.json';
-import a_close_up_image_of_a_telescope_lens_with_the_stars_fb29aa91_002e_4e94_8eba_5d829883c703_0_0 from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.json';
 import source from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A close-up image of a telescope lens, with the stars and planets visible in the reflection.
@@ -45,6 +40,23 @@ ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_0_Ima
     averageColor: Color.fromHex('#191a22'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#00010b'),
-    leastFrequentColor: Color.fromHex('#112027'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#bf3c22'), Color.fromHex('#e3ffff')],
+    minmaxGreen: [Color.fromHex('#539c5f'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2f5984'), Color.fromHex('#ffffcb')],
+    mostFrequentColor: Color.fromHex('#000d19'),
+    mostSaturatedColor: Color.fromHex('#000009'),
+    mostGroupedColor: Color.fromHex('#00010b'),
+    bottom: {
+        averageColor: Color.fromHex('#12202d'),
+        lightestColor: Color.fromHex('#fcecd3'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fcecd3'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#9b4629'), Color.fromHex('#70c5d8')],
+        minmaxGreen: [Color.fromHex('#696841'), Color.fromHex('#fcecd3')],
+        minmaxBlue: [Color.fromHex('#2f5984'), Color.fromHex('#fcecca')],
+        mostFrequentColor: Color.fromHex('#000d19'),
+        mostSaturatedColor: Color.fromHex('#00020e'),
+        mostGroupedColor: Color.fromHex('#000009'),
+    },
 } satisfies IImageColorStats;

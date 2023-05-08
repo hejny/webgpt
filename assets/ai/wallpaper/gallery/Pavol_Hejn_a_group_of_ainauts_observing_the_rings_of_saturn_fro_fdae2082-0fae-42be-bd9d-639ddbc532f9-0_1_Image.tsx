@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_1.json';
-import a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082_0fae_42be_bd9d_639ddbc532f9_0_1 from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_1.json';
 import source from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
@@ -45,6 +40,23 @@ AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_1_I
     averageColor: Color.fromHex('#222c3a'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0c0001'),
-    leastFrequentColor: Color.fromHex('#11050a'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#754d32'), Color.fromHex('#c3ffff')],
+    minmaxGreen: [Color.fromHex('#4f8284'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#1f4c92'), Color.fromHex('#ffffee')],
+    mostFrequentColor: Color.fromHex('#080002'),
+    mostSaturatedColor: Color.fromHex('#0d0006'),
+    mostGroupedColor: Color.fromHex('#0c0000'),
+    bottom: {
+        averageColor: Color.fromHex('#2d3139'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#624940'), Color.fromHex('#cdfffc')],
+        minmaxGreen: [Color.fromHex('#4f8284'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#1f4c92'), Color.fromHex('#ffffee')],
+        mostFrequentColor: Color.fromHex('#080002'),
+        mostSaturatedColor: Color.fromHex('#00082d'),
+        mostGroupedColor: Color.fromHex('#0c0000'),
+    },
 } satisfies IImageColorStats;

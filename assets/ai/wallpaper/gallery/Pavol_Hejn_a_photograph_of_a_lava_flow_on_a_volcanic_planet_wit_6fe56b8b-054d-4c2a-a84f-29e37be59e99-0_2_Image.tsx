@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b-054d-4c2a-a84f-29e37be59e99-0_2.json';
-import a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b_054d_4c2a_a84f_29e37be59e99_0_2 from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b-054d-4c2a-a84f-29e37be59e99-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b-054d-4c2a-a84f-29e37be59e99-0_2.json';
 import source from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_6fe56b8b-054d-4c2a-a84f-29e37be59e99-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.
@@ -45,6 +40,23 @@ APhotographOfALavaFlowOnAVolcanicPlanetWit6fe56b8b054d4c2aA84f29e37be59e990_2_Im
     averageColor: Color.fromHex('#2f1c21'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#040406'),
-    leastFrequentColor: Color.fromHex('#2a2e3b'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#e30900'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#7f6f4e'), Color.fromHex('#e30900')],
+    minmaxBlue: [Color.fromHex('#534a6f'), Color.fromHex('#ffffff')],
+    mostFrequentColor: Color.fromHex('#000001'),
+    mostSaturatedColor: Color.fromHex('#010004'),
+    mostGroupedColor: Color.fromHex('#040305'),
+    bottom: {
+        averageColor: Color.fromHex('#201317'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#ed1f0f'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#7f6f4e'), Color.fromHex('#d10800')],
+        minmaxBlue: [Color.fromHex('#564466'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#000001'),
+        mostSaturatedColor: Color.fromHex('#020006'),
+        mostGroupedColor: Color.fromHex('#040305'),
+    },
 } satisfies IImageColorStats;

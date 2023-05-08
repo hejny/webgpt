@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_1.json';
-import a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc_4cdb_4252_a4b1_32368cb20d10_0_1 from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_1.json';
 import source from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3ead49fc-4cdb-4252-a4b1-32368cb20d10-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface.
@@ -45,6 +40,23 @@ ADigitalPaintingOfASpaceshipApproachingAnAli3ead49fc4cdb4252A4b132368cb20d100_1_
     averageColor: Color.fromHex('#5f615f'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#020100'),
-    mostFrequentColor: Color.fromHex('#cbdbda'),
-    leastFrequentColor: Color.fromHex('#9e9086'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#020100')],
+    minmaxRed: [Color.fromHex('#a62c40'), Color.fromHex('#f2ffff')],
+    minmaxGreen: [Color.fromHex('#728530'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#355582'), Color.fromHex('#ffffef')],
+    mostFrequentColor: Color.fromHex('#150a0f'),
+    mostSaturatedColor: Color.fromHex('#050500'),
+    mostGroupedColor: Color.fromHex('#9ac0c8'),
+    bottom: {
+        averageColor: Color.fromHex('#45382e'),
+        lightestColor: Color.fromHex('#f2f2f3'),
+        darkestColor: Color.fromHex('#020100'),
+        minmaxWhite: [Color.fromHex('#f2f2f3'), Color.fromHex('#020100')],
+        minmaxRed: [Color.fromHex('#ac4124'), Color.fromHex('#f2f2f3')],
+        minmaxGreen: [Color.fromHex('#7e7c3c'), Color.fromHex('#f2f2f3')],
+        minmaxBlue: [Color.fromHex('#3c4269'), Color.fromHex('#f2f2f3')],
+        mostFrequentColor: Color.fromHex('#150a0f'),
+        mostSaturatedColor: Color.fromHex('#050500'),
+        mostGroupedColor: Color.fromHex('#321b25'),
+    },
 } satisfies IImageColorStats;

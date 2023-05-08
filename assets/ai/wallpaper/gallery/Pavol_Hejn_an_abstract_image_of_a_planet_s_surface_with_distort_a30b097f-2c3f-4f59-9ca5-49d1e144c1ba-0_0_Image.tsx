@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0_0.json';
-import an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f_2c3f_4f59_9ca5_49d1e144c1ba_0_0 from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0_0.json';
 import source from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_a30b097f-2c3f-4f59-9ca5-49d1e144c1ba-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract image of a planet's surface, with distorted shapes and vivid colors that create a surreal and otherworldly feel.
@@ -45,6 +40,23 @@ AnAbstractImageOfAPlanetSSurfaceWithDistortA30b097f2c3f4f599ca549d1e144c1ba0_0_I
     averageColor: Color.fromHex('#51312c'),
     lightestColor: Color.fromHex('#fafffd'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0f1012'),
-    leastFrequentColor: Color.fromHex('#215061'),
+    minmaxWhite: [Color.fromHex('#fafffd'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#c92f23'), Color.fromHex('#18cadc')],
+    minmaxGreen: [Color.fromHex('#3e9883'), Color.fromHex('#fafffd')],
+    minmaxBlue: [Color.fromHex('#334f9c'), Color.fromHex('#fdd745')],
+    mostFrequentColor: Color.fromHex('#06090d'),
+    mostSaturatedColor: Color.fromHex('#030000'),
+    mostGroupedColor: Color.fromHex('#180305'),
+    bottom: {
+        averageColor: Color.fromHex('#4c3027'),
+        lightestColor: Color.fromHex('#fafffd'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fafffd'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#be352b'), Color.fromHex('#fafffd')],
+        minmaxGreen: [Color.fromHex('#4e8780'), Color.fromHex('#fafffd')],
+        minmaxBlue: [Color.fromHex('#275a68'), Color.fromHex('#ffffdc')],
+        mostFrequentColor: Color.fromHex('#06090d'),
+        mostSaturatedColor: Color.fromHex('#030000'),
+        mostGroupedColor: Color.fromHex('#180305'),
+    },
 } satisfies IImageColorStats;

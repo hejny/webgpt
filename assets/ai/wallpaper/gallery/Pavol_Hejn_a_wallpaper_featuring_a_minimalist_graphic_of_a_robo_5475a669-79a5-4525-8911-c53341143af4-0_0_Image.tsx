@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_5475a669-79a5-4525-8911-c53341143af4-0_0.json';
-import a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_5475a669_79a5_4525_8911_c53341143af4_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_5475a669-79a5-4525-8911-c53341143af4-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_5475a669-79a5-4525-8911-c53341143af4-0_0.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_5475a669-79a5-4525-8911-c53341143af4-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring a minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas.
@@ -45,6 +40,23 @@ AWallpaperFeaturingAMinimalistGraphicOfARobo5475a66979a545258911C53341143af40_0_
     averageColor: Color.fromHex('#0c1621'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#00020e'),
-    leastFrequentColor: Color.fromHex('#060001'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#7d4f44'), Color.fromHex('#f7ffff')],
+    minmaxGreen: [Color.fromHex('#3a998f'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#12548d'), Color.fromHex('#fffffe')],
+    mostFrequentColor: Color.fromHex('#00010c'),
+    mostSaturatedColor: Color.fromHex('#00000e'),
+    mostGroupedColor: Color.fromHex('#00020e'),
+    bottom: {
+        averageColor: Color.fromHex('#0a1621'),
+        lightestColor: Color.fromHex('#d6ebd8'),
+        darkestColor: Color.fromHex('#050302'),
+        minmaxWhite: [Color.fromHex('#efefcf'), Color.fromHex('#000006')],
+        minmaxRed: [Color.fromHex('#74504b'), Color.fromHex('#d6ebd8')],
+        minmaxGreen: [Color.fromHex('#527a62'), Color.fromHex('#00001b')],
+        minmaxBlue: [Color.fromHex('#267b9f'), Color.fromHex('#f6f5bc')],
+        mostFrequentColor: Color.fromHex('#00010c'),
+        mostSaturatedColor: Color.fromHex('#00010e'),
+        mostGroupedColor: Color.fromHex('#00020d'),
+    },
 } satisfies IImageColorStats;

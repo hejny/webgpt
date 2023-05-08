@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.json';
-import a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec_3829_43eb_aee2_2d9dde7bae20_0_3 from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.json';
 import source from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.
@@ -45,6 +40,23 @@ ARealisticPhotographOfANebulaWithBrightColor58b2a5ec382943ebAee22d9dde7bae200_3_
     averageColor: Color.fromHex('#4d4544'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#030508'),
-    leastFrequentColor: Color.fromHex('#0a0206'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#9e1f0d'), Color.fromHex('#e1ffff')],
+    minmaxGreen: [Color.fromHex('#57826c'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#165781'), Color.fromHex('#ffffef')],
+    mostFrequentColor: Color.fromHex('#040b13'),
+    mostSaturatedColor: Color.fromHex('#000205'),
+    mostGroupedColor: Color.fromHex('#020407'),
+    bottom: {
+        averageColor: Color.fromHex('#55332d'),
+        lightestColor: Color.fromHex('#fffffd'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fffffd'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#9e1f0d'), Color.fromHex('#fffffd')],
+        minmaxGreen: [Color.fromHex('#778770'), Color.fromHex('#fffffd')],
+        minmaxBlue: [Color.fromHex('#3c2c5a'), Color.fromHex('#ffffef')],
+        mostFrequentColor: Color.fromHex('#040b13'),
+        mostSaturatedColor: Color.fromHex('#030006'),
+        mostGroupedColor: Color.fromHex('#120d0a'),
+    },
 } satisfies IImageColorStats;

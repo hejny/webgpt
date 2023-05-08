@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_2.json';
-import a_digital_image_of_a_galaxy_collision_with_swirling_f91b24a5_b84c_4bab_bacc_bd82e09756b0_0_2 from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_2.json';
 import source from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.
@@ -45,6 +40,23 @@ ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_2_I
     averageColor: Color.fromHex('#3f362a'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0a0a0b'),
-    leastFrequentColor: Color.fromHex('#300f10'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#c33d11'), Color.fromHex('#fdffff')],
+    minmaxGreen: [Color.fromHex('#618a67'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#1c648a'), Color.fromHex('#f9d126')],
+    mostFrequentColor: Color.fromHex('#010405'),
+    mostSaturatedColor: Color.fromHex('#030000'),
+    mostGroupedColor: Color.fromHex('#0c0a0c'),
+    bottom: {
+        averageColor: Color.fromHex('#3e3123'),
+        lightestColor: Color.fromHex('#c8f4fe'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffed'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#c33d11'), Color.fromHex('#c8f4fe')],
+        minmaxGreen: [Color.fromHex('#618a67'), Color.fromHex('#ffffed')],
+        minmaxBlue: [Color.fromHex('#1c648a'), Color.fromHex('#f9d126')],
+        mostFrequentColor: Color.fromHex('#010405'),
+        mostSaturatedColor: Color.fromHex('#070000'),
+        mostGroupedColor: Color.fromHex('#0c0a0c'),
+    },
 } satisfies IImageColorStats;

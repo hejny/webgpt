@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.json';
-import a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803_96d7_4790_ae04_1e53d5db35b7_0_0 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract shapes inspired by the Mandelbrot set, in a monochromatic color scheme.
@@ -45,6 +40,23 @@ AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_0_
     averageColor: Color.fromHex('#807b76'),
     lightestColor: Color.fromHex('#f8ffff'),
     darkestColor: Color.fromHex('#020203'),
-    mostFrequentColor: Color.fromHex('#242428'),
-    leastFrequentColor: Color.fromHex('#191821'),
+    minmaxWhite: [Color.fromHex('#f8ffff'), Color.fromHex('#020203')],
+    minmaxRed: [Color.fromHex('#7f5637'), Color.fromHex('#eaffff')],
+    minmaxGreen: [Color.fromHex('#717865'), Color.fromHex('#f8ffff')],
+    minmaxBlue: [Color.fromHex('#54575f'), Color.fromHex('#f8ffff')],
+    mostFrequentColor: Color.fromHex('#cdcbcd'),
+    mostSaturatedColor: Color.fromHex('#0e0500'),
+    mostGroupedColor: Color.fromHex('#232228'),
+    bottom: {
+        averageColor: Color.fromHex('#86807b'),
+        lightestColor: Color.fromHex('#f8ffff'),
+        darkestColor: Color.fromHex('#020203'),
+        minmaxWhite: [Color.fromHex('#f8ffff'), Color.fromHex('#020203')],
+        minmaxRed: [Color.fromHex('#7f5637'), Color.fromHex('#eaffff')],
+        minmaxGreen: [Color.fromHex('#717865'), Color.fromHex('#f8ffff')],
+        minmaxBlue: [Color.fromHex('#54575f'), Color.fromHex('#f8ffff')],
+        mostFrequentColor: Color.fromHex('#cdcbcd'),
+        mostSaturatedColor: Color.fromHex('#0e0500'),
+        mostGroupedColor: Color.fromHex('#232228'),
+    },
 } satisfies IImageColorStats;

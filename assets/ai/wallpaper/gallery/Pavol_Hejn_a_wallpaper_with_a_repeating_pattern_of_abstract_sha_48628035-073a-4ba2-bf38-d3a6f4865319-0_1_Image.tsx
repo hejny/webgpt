@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.json';
-import a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035_073a_4ba2_bf38_d3a6f4865319_0_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background.
@@ -43,8 +38,25 @@ AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38D3a6f48653190_1_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38D3a6f48653190_1_Image.colorStats = {
     averageColor: Color.fromHex('#151a17'),
-    lightestColor: Color.fromHex('#ffff99'),
+    lightestColor: Color.fromHex('#c0ffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020608'),
-    leastFrequentColor: Color.fromHex('#260d04'),
+    minmaxWhite: [Color.fromHex('#daffee'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#b94800'), Color.fromHex('#afffff')],
+    minmaxGreen: [Color.fromHex('#509273'), Color.fromHex('#5d0000')],
+    minmaxBlue: [Color.fromHex('#23537c'), Color.fromHex('#ffff99')],
+    mostFrequentColor: Color.fromHex('#000608'),
+    mostSaturatedColor: Color.fromHex('#000506'),
+    mostGroupedColor: Color.fromHex('#020608'),
+    bottom: {
+        averageColor: Color.fromHex('#141916'),
+        lightestColor: Color.fromHex('#c0ffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fff0bc'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#a03400'), Color.fromHex('#c0ffff')],
+        minmaxGreen: [Color.fromHex('#3a8e80'), Color.fromHex('#5d0000')],
+        minmaxBlue: [Color.fromHex('#23537c'), Color.fromHex('#ffff99')],
+        mostFrequentColor: Color.fromHex('#000608'),
+        mostSaturatedColor: Color.fromHex('#150700'),
+        mostGroupedColor: Color.fromHex('#020608'),
+    },
 } satisfies IImageColorStats;

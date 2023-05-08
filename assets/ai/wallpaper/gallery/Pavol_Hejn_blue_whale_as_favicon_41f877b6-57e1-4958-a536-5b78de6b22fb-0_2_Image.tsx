@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.json';
-import blue_whale_as_favicon_41f877b6_57e1_4958_a536_5b78de6b22fb_0_2 from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.json';
 import source from './Pavol_Hejn_blue_whale_as_favicon_41f877b6-57e1-4958-a536-5b78de6b22fb-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of Blue whale as favicon
@@ -43,7 +38,24 @@ BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_2_Image.metadata = metadata 
 BlueWhaleAsFavicon41f877b657e14958A5365b78de6b22fb0_2_Image.colorStats = {
     averageColor: Color.fromHex('#c1dcee'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#3c2b8d'),
-    mostFrequentColor: Color.fromHex('#fffefe'),
-    leastFrequentColor: Color.fromHex('#eafffb'),
+    darkestColor: Color.fromHex('#403683'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#3c2b8d')],
+    minmaxRed: [Color.fromHex('#4c3381'), Color.fromHex('#57fdef')],
+    minmaxGreen: [Color.fromHex('#30aabf'), Color.fromHex('#fff4ff')],
+    minmaxBlue: [Color.fromHex('#4a2ca9'), Color.fromHex('#fffff6')],
+    mostFrequentColor: Color.fromHex('#fefffc'),
+    mostSaturatedColor: Color.fromHex('#248dd0'),
+    mostGroupedColor: Color.fromHex('#fffefe'),
+    bottom: {
+        averageColor: Color.fromHex('#bfe7f2'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#27588b'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#27588b')],
+        minmaxRed: [Color.fromHex('#4d6a96'), Color.fromHex('#47f1f1')],
+        minmaxGreen: [Color.fromHex('#30aabf'), Color.fromHex('#fffcff')],
+        minmaxBlue: [Color.fromHex('#2a60b3'), Color.fromHex('#fffff6')],
+        mostFrequentColor: Color.fromHex('#fefffc'),
+        mostSaturatedColor: Color.fromHex('#248dd0'),
+        mostGroupedColor: Color.fromHex('#fffefe'),
+    },
 } satisfies IImageColorStats;

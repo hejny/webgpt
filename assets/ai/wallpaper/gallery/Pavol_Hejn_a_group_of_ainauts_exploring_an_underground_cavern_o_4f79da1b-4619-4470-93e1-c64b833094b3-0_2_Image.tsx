@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_2.json';
-import a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b_4619_4470_93e1_c64b833094b3_0_2 from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_2.json';
 import source from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_4f79da1b-4619-4470-93e1-c64b833094b3-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them.
@@ -43,8 +38,25 @@ AGroupOfAinautsExploringAnUndergroundCavernO4f79da1b4619447093e1C64b833094b30_2_
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsExploringAnUndergroundCavernO4f79da1b4619447093e1C64b833094b30_2_Image.colorStats = {
     averageColor: Color.fromHex('#365754'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#fffcff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#130a08'),
-    leastFrequentColor: Color.fromHex('#29293e'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#973d33'), Color.fromHex('#29edd9')],
+    minmaxGreen: [Color.fromHex('#54ac76'), Color.fromHex('#fff8ff')],
+    minmaxBlue: [Color.fromHex('#245677'), Color.fromHex('#fffcaa')],
+    mostFrequentColor: Color.fromHex('#100606'),
+    mostSaturatedColor: Color.fromHex('#00010c'),
+    mostGroupedColor: Color.fromHex('#a4f3c7'),
+    bottom: {
+        averageColor: Color.fromHex('#36403f'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#973d33'), Color.fromHex('#80fff0')],
+        minmaxGreen: [Color.fromHex('#54ac76'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#133059'), Color.fromHex('#ffffe7')],
+        mostFrequentColor: Color.fromHex('#100606'),
+        mostSaturatedColor: Color.fromHex('#060007'),
+        mostGroupedColor: Color.fromHex('#130a08'),
+    },
 } satisfies IImageColorStats;

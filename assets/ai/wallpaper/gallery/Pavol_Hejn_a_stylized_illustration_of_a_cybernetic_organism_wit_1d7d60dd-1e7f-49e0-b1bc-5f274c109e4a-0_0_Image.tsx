@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_0.json';
-import a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd_1e7f_49e0_b1bc_5f274c109e4a_0_0 from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_0.json';
 import source from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.
@@ -43,8 +38,25 @@ AStylizedIllustrationOfACyberneticOrganismWit1d7d60dd1e7f49e0B1bc5f274c109e4a0_0
     metadata satisfies IWallpaperMetadata;
 AStylizedIllustrationOfACyberneticOrganismWit1d7d60dd1e7f49e0B1bc5f274c109e4a0_0_Image.colorStats = {
     averageColor: Color.fromHex('#29272c'),
-    lightestColor: Color.fromHex('#ffffff'),
+    lightestColor: Color.fromHex('#fffdff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#06070b'),
-    leastFrequentColor: Color.fromHex('#49515f'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d24813'), Color.fromHex('#15f7ff')],
+    minmaxGreen: [Color.fromHex('#598f39'), Color.fromHex('#f86ff9')],
+    minmaxBlue: [Color.fromHex('#2c1888'), Color.fromHex('#ffc109')],
+    mostFrequentColor: Color.fromHex('#2d211f'),
+    mostSaturatedColor: Color.fromHex('#000a17'),
+    mostGroupedColor: Color.fromHex('#08090d'),
+    bottom: {
+        averageColor: Color.fromHex('#1b1b1f'),
+        lightestColor: Color.fromHex('#fffff6'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fffff6'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d23e3b'), Color.fromHex('#15f7ff')],
+        minmaxGreen: [Color.fromHex('#598f39'), Color.fromHex('#fffff6')],
+        minmaxBlue: [Color.fromHex('#145b98'), Color.fromHex('#ffffb0')],
+        mostFrequentColor: Color.fromHex('#2d211f'),
+        mostSaturatedColor: Color.fromHex('#00070f'),
+        mostGroupedColor: Color.fromHex('#07090f'),
+    },
 } satisfies IImageColorStats;

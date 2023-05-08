@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_ab294257-1d24-4a28-ae28-c215a17e7cdb-0_3.json';
-import a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_ab294257_1d24_4a28_ae28_c215a17e7cdb_0_3 from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_ab294257-1d24-4a28-ae28-c215a17e7cdb-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_ab294257-1d24-4a28-ae28-c215a17e7cdb-0_3.json';
 import source from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_ab294257-1d24-4a28-ae28-c215a17e7cdb-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A close-up image of a robot's eye with neon green accents
@@ -43,8 +38,25 @@ ACloseUpImageOfARobotSEyeWithNeonGreenAcAb2942571d244a28Ae28C215a17e7cdb0_3_Imag
     metadata satisfies IWallpaperMetadata;
 ACloseUpImageOfARobotSEyeWithNeonGreenAcAb2942571d244a28Ae28C215a17e7cdb0_3_Image.colorStats = {
     averageColor: Color.fromHex('#0d221d'),
-    lightestColor: Color.fromHex('#fcfff0'),
+    lightestColor: Color.fromHex('#f4ffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#13364b'),
+    minmaxWhite: [Color.fromHex('#f6fffe'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#944827'), Color.fromHex('#08e4f1')],
+    minmaxGreen: [Color.fromHex('#11d73d'), Color.fromHex('#f6fffe')],
+    minmaxBlue: [Color.fromHex('#14569d'), Color.fromHex('#fefeea')],
+    mostFrequentColor: Color.fromHex('#000302'),
+    mostSaturatedColor: Color.fromHex('#010002'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#0b2216'),
+        lightestColor: Color.fromHex('#e5f9f5'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#e5f9f5'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#944827'), Color.fromHex('#72ffcd')],
+        minmaxGreen: [Color.fromHex('#0bcf43'), Color.fromHex('#e5f9f5')],
+        minmaxBlue: [Color.fromHex('#286086'), Color.fromHex('#f6e8ba')],
+        mostFrequentColor: Color.fromHex('#000302'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

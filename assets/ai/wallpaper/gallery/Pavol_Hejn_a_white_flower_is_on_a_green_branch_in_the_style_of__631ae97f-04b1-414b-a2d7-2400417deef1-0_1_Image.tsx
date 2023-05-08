@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_white_flower_is_on_a_green_branch_in_the_style_of__631ae97f-04b1-414b-a2d7-2400417deef1-0_1.json';
-import a_white_flower_is_on_a_green_branch_in_the_style_of_631ae97f_04b1_414b_a2d7_2400417deef1_0_1 from './Pavol_Hejn_a_white_flower_is_on_a_green_branch_in_the_style_of__631ae97f-04b1-414b-a2d7-2400417deef1-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_white_flower_is_on_a_green_branch_in_the_style_of__631ae97f-04b1-414b-a2d7-2400417deef1-0_1.json';
 import source from './Pavol_Hejn_a_white_flower_is_on_a_green_branch_in_the_style_of__631ae97f-04b1-414b-a2d7-2400417deef1-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of a white flower is on a green branch, in the style of berrypunk, cranberrycore, he jiaying, soggy, cottagecore, basil gogos, water drops
@@ -43,8 +38,25 @@ AWhiteFlowerIsOnAGreenBranchInTheStyleOf631ae97f04b1414bA2d72400417deef10_1_Imag
     metadata satisfies IWallpaperMetadata;
 AWhiteFlowerIsOnAGreenBranchInTheStyleOf631ae97f04b1414bA2d72400417deef10_1_Image.colorStats = {
     averageColor: Color.fromHex('#495541'),
-    lightestColor: Color.fromHex('#fbfffd'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#010204'),
-    leastFrequentColor: Color.fromHex('#43613f'),
+    lightestColor: Color.fromHex('#fdfcff'),
+    darkestColor: Color.fromHex('#000200'),
+    minmaxWhite: [Color.fromHex('#fdfefd'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#96561b'), Color.fromHex('#f8ffff')],
+    minmaxGreen: [Color.fromHex('#619940'), Color.fromHex('#fdfcff')],
+    minmaxBlue: [Color.fromHex('#445b88'), Color.fromHex('#fdfefd')],
+    mostFrequentColor: Color.fromHex('#000303'),
+    mostSaturatedColor: Color.fromHex('#000507'),
+    mostGroupedColor: Color.fromHex('#3f5744'),
+    bottom: {
+        averageColor: Color.fromHex('#2a3521'),
+        lightestColor: Color.fromHex('#f6f9fa'),
+        darkestColor: Color.fromHex('#001000'),
+        minmaxWhite: [Color.fromHex('#f6f9fa'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#794a35'), Color.fromHex('#f6f9fa')],
+        minmaxGreen: [Color.fromHex('#619940'), Color.fromHex('#f6f9fa')],
+        minmaxBlue: [Color.fromHex('#445b88'), Color.fromHex('#f6f9fa')],
+        mostFrequentColor: Color.fromHex('#000303'),
+        mostSaturatedColor: Color.fromHex('#000508'),
+        mostGroupedColor: Color.fromHex('#171010'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_1.json';
-import a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773_864c_445f_a336_f22707e90136_0_1 from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_1.json';
 import source from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space.
@@ -44,7 +39,24 @@ ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_1_I
 ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_1_Image.colorStats = {
     averageColor: Color.fromHex('#7d6961'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#10000a'),
-    mostFrequentColor: Color.fromHex('#100f11'),
-    leastFrequentColor: Color.fromHex('#292f35'),
+    darkestColor: Color.fromHex('#1c0200'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#090406')],
+    minmaxRed: [Color.fromHex('#9b4a27'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#57643d'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2a5679'), Color.fromHex('#ffffea')],
+    mostFrequentColor: Color.fromHex('#1a1311'),
+    mostSaturatedColor: Color.fromHex('#2e0900'),
+    mostGroupedColor: Color.fromHex('#100f11'),
+    bottom: {
+        averageColor: Color.fromHex('#533a36'),
+        lightestColor: Color.fromHex('#dcc8c2'),
+        darkestColor: Color.fromHex('#1c0200'),
+        minmaxWhite: [Color.fromHex('#e4d2bf'), Color.fromHex('#090406')],
+        minmaxRed: [Color.fromHex('#9b4a27'), Color.fromHex('#dfd2c1')],
+        minmaxGreen: [Color.fromHex('#4d7682'), Color.fromHex('#10000a')],
+        minmaxBlue: [Color.fromHex('#1c3a62'), Color.fromHex('#fccfaa')],
+        mostFrequentColor: Color.fromHex('#1a1311'),
+        mostSaturatedColor: Color.fromHex('#2e0900'),
+        mostGroupedColor: Color.fromHex('#100f11'),
+    },
 } satisfies IImageColorStats;

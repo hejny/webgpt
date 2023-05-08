@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.json';
-import a_wallpaper_featuring_a_simple_graphic_of_a_digital_f3f60ff5_6f94_4407_869c_33043eb8c140_0_0 from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.json';
 import source from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__f3f60ff5-6f94-4407-869c-33043eb8c140-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns, set against a gradient background.
@@ -43,8 +38,25 @@ AWallpaperFeaturingASimpleGraphicOfADigitalF3f60ff56f944407869c33043eb8c1400_0_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingASimpleGraphicOfADigitalF3f60ff56f944407869c33043eb8c1400_0_Image.colorStats = {
     averageColor: Color.fromHex('#72245d'),
-    lightestColor: Color.fromHex('#a6dbeb'),
-    darkestColor: Color.fromHex('#00000c'),
-    mostFrequentColor: Color.fromHex('#040316'),
-    leastFrequentColor: Color.fromHex('#520435'),
+    lightestColor: Color.fromHex('#ff3aff'),
+    darkestColor: Color.fromHex('#02000a'),
+    minmaxWhite: [Color.fromHex('#f1bef7'), Color.fromHex('#00000c')],
+    minmaxRed: [Color.fromHex('#e1303d'), Color.fromHex('#a6dbeb')],
+    minmaxGreen: [Color.fromHex('#4b8c81'), Color.fromHex('#ff2fff')],
+    minmaxBlue: [Color.fromHex('#3e4fe8'), Color.fromHex('#ff7652')],
+    mostFrequentColor: Color.fromHex('#6e1863'),
+    mostSaturatedColor: Color.fromHex('#55003a'),
+    mostGroupedColor: Color.fromHex('#040316'),
+    bottom: {
+        averageColor: Color.fromHex('#55103d'),
+        lightestColor: Color.fromHex('#d173e3'),
+        darkestColor: Color.fromHex('#02000a'),
+        minmaxWhite: [Color.fromHex('#d08bd7'), Color.fromHex('#00000c')],
+        minmaxRed: [Color.fromHex('#c4253c'), Color.fromHex('#c88ad8')],
+        minmaxGreen: [Color.fromHex('#67687d'), Color.fromHex('#d658da')],
+        minmaxBlue: [Color.fromHex('#60408d'), Color.fromHex('#ff6349')],
+        mostFrequentColor: Color.fromHex('#6e1863'),
+        mostSaturatedColor: Color.fromHex('#42003c'),
+        mostGroupedColor: Color.fromHex('#110119'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_1.json';
-import a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95_d8f5_4556_9324_b10f8d61dee5_0_1 from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_1.json';
 import source from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_night_with_the_93e80a95-d8f5-4556-9324-b10f8d61dee5-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A photograph of a desert landscape at night, with the stars visible in the sky above.
@@ -45,6 +40,23 @@ APhotographOfADesertLandscapeAtNightWithThe93e80a95D8f545569324B10f8d61dee50_1_I
     averageColor: Color.fromHex('#24292b'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#ffffff'),
-    leastFrequentColor: Color.fromHex('#1b3f4b'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#964f1b'), Color.fromHex('#65ffff')],
+    minmaxGreen: [Color.fromHex('#347164'), Color.fromHex('#ffefff')],
+    minmaxBlue: [Color.fromHex('#0043ca'), Color.fromHex('#ffffe5')],
+    mostFrequentColor: Color.fromHex('#000102'),
+    mostSaturatedColor: Color.fromHex('#00060f'),
+    mostGroupedColor: Color.fromHex('#010102'),
+    bottom: {
+        averageColor: Color.fromHex('#251b13'),
+        lightestColor: Color.fromHex('#946f52'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ad723f'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#964f1b'), Color.fromHex('#00060c')],
+        minmaxGreen: [Color.fromHex('#91724f'), Color.fromHex('#110000')],
+        minmaxBlue: [Color.fromHex('#383432'), Color.fromHex('#ad6b32')],
+        mostFrequentColor: Color.fromHex('#000102'),
+        mostSaturatedColor: Color.fromHex('#000207'),
+        mostGroupedColor: Color.fromHex('#010102'),
+    },
 } satisfies IImageColorStats;

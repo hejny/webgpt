@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.json';
-import a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e_a553_4c56_b7b8_c3321364d87b_0_3 from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.json';
 import source from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue.
@@ -43,8 +38,25 @@ AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_
     metadata satisfies IWallpaperMetadata;
 AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_Image.colorStats = {
     averageColor: Color.fromHex('#de7369'),
-    lightestColor: Color.fromHex('#f7f0e7'),
-    darkestColor: Color.fromHex('#360721'),
-    mostFrequentColor: Color.fromHex('#fe331f'),
-    leastFrequentColor: Color.fromHex('#ca211e'),
+    lightestColor: Color.fromHex('#d3d8ff'),
+    darkestColor: Color.fromHex('#2b0e16'),
+    minmaxWhite: [Color.fromHex('#f7f0e7'), Color.fromHex('#2b0e16')],
+    minmaxRed: [Color.fromHex('#f81213'), Color.fromHex('#cdebec')],
+    minmaxGreen: [Color.fromHex('#536167'), Color.fromHex('#ff1333')],
+    minmaxBlue: [Color.fromHex('#132b91'), Color.fromHex('#ffecce')],
+    mostFrequentColor: Color.fromHex('#ea4224'),
+    mostSaturatedColor: Color.fromHex('#a50006'),
+    mostGroupedColor: Color.fromHex('#fe331f'),
+    bottom: {
+        averageColor: Color.fromHex('#da887e'),
+        lightestColor: Color.fromHex('#d3d8ff'),
+        darkestColor: Color.fromHex('#7c0909'),
+        minmaxWhite: [Color.fromHex('#f7f0e7'), Color.fromHex('#510818')],
+        minmaxRed: [Color.fromHex('#fb170b'), Color.fromHex('#eae9f6')],
+        minmaxGreen: [Color.fromHex('#6c7886'), Color.fromHex('#ff1333')],
+        minmaxBlue: [Color.fromHex('#372e89'), Color.fromHex('#ffecce')],
+        mostFrequentColor: Color.fromHex('#ea4224'),
+        mostSaturatedColor: Color.fromHex('#d11700'),
+        mostGroupedColor: Color.fromHex('#bfcfca'),
+    },
 } satisfies IImageColorStats;

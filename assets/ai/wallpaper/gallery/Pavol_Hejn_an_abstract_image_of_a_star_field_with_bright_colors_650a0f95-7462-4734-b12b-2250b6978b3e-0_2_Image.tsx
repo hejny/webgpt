@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_2.json';
-import an_abstract_image_of_a_star_field_with_bright_colors_650a0f95_7462_4734_b12b_2250b6978b3e_0_2 from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_2.json';
 import source from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos.
@@ -45,6 +40,23 @@ AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_2_I
     averageColor: Color.fromHex('#5e473d'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#1d1a1f'),
-    leastFrequentColor: Color.fromHex('#252925'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d8100f'), Color.fromHex('#eefffd')],
+    minmaxGreen: [Color.fromHex('#249269'), Color.fromHex('#cb0319')],
+    minmaxBlue: [Color.fromHex('#1c4074'), Color.fromHex('#ffdd40')],
+    mostFrequentColor: Color.fromHex('#402831'),
+    mostSaturatedColor: Color.fromHex('#001632'),
+    mostGroupedColor: Color.fromHex('#1c191d'),
+    bottom: {
+        averageColor: Color.fromHex('#4c393a'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d8100f'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#368c6f'), Color.fromHex('#cb0319')],
+        minmaxBlue: [Color.fromHex('#18557c'), Color.fromHex('#fffff2')],
+        mostFrequentColor: Color.fromHex('#402831'),
+        mostSaturatedColor: Color.fromHex('#00213d'),
+        mostGroupedColor: Color.fromHex('#141116'),
+    },
 } satisfies IImageColorStats;

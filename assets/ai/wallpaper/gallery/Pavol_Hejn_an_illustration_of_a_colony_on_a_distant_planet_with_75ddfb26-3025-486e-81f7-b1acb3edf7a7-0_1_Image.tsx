@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_1.json';
-import an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26_3025_486e_81f7_b1acb3edf7a7_0_1 from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_1.json';
 import source from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.
@@ -45,6 +40,23 @@ AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B1acb3edf7a70_1_I
     averageColor: Color.fromHex('#686d62'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#020000'),
-    leastFrequentColor: Color.fromHex('#a0b2a4'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#cd3302'), Color.fromHex('#39dfe6')],
+    minmaxGreen: [Color.fromHex('#7a8e47'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#07648d'), Color.fromHex('#ffdf3a')],
+    mostFrequentColor: Color.fromHex('#050000'),
+    mostSaturatedColor: Color.fromHex('#1d1f00'),
+    mostGroupedColor: Color.fromHex('#010000'),
+    bottom: {
+        averageColor: Color.fromHex('#3e3b2d'),
+        lightestColor: Color.fromHex('#eff3e6'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#faffe1'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#b61c00'), Color.fromHex('#faffe1')],
+        minmaxGreen: [Color.fromHex('#7a8e47'), Color.fromHex('#b61c00')],
+        minmaxBlue: [Color.fromHex('#1a2556'), Color.fromHex('#fffc88')],
+        mostFrequentColor: Color.fromHex('#050000'),
+        mostSaturatedColor: Color.fromHex('#1d1f00'),
+        mostGroupedColor: Color.fromHex('#010000'),
+    },
 } satisfies IImageColorStats;

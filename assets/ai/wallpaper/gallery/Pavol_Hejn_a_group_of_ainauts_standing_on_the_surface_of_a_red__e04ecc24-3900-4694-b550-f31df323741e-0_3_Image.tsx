@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_3.json';
-import a_group_of_ainauts_standing_on_the_surface_of_a_red_e04ecc24_3900_4694_b550_f31df323741e_0_3 from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_3.json';
 import source from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_red__e04ecc24-3900-4694-b550-f31df323741e-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance.
@@ -43,8 +38,25 @@ AGroupOfAinautsStandingOnTheSurfaceOfARedE04ecc2439004694B550F31df323741e0_3_Ima
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsStandingOnTheSurfaceOfARedE04ecc2439004694B550F31df323741e0_3_Image.colorStats = {
     averageColor: Color.fromHex('#a27152'),
-    lightestColor: Color.fromHex('#fcfdfb'),
-    darkestColor: Color.fromHex('#2f0500'),
-    mostFrequentColor: Color.fromHex('#dcb88c'),
-    leastFrequentColor: Color.fromHex('#88523b'),
+    lightestColor: Color.fromHex('#fcfcfc'),
+    darkestColor: Color.fromHex('#240901'),
+    minmaxWhite: [Color.fromHex('#fcfdfb'), Color.fromHex('#240901')],
+    minmaxRed: [Color.fromHex('#a44628'), Color.fromHex('#fcfdfb')],
+    minmaxGreen: [Color.fromHex('#947d55'), Color.fromHex('#fefcfa')],
+    minmaxBlue: [Color.fromHex('#685050'), Color.fromHex('#fffbdc')],
+    mostFrequentColor: Color.fromHex('#5f3321'),
+    mostSaturatedColor: Color.fromHex('#401d00'),
+    mostGroupedColor: Color.fromHex('#ddb98d'),
+    bottom: {
+        averageColor: Color.fromHex('#894c32'),
+        lightestColor: Color.fromHex('#f5cd9c'),
+        darkestColor: Color.fromHex('#240901'),
+        minmaxWhite: [Color.fromHex('#f5cd9c'), Color.fromHex('#240901')],
+        minmaxRed: [Color.fromHex('#ac522e'), Color.fromHex('#f5cd9c')],
+        minmaxGreen: [Color.fromHex('#90775b'), Color.fromHex('#280706')],
+        minmaxBlue: [Color.fromHex('#503b3c'), Color.fromHex('#f5cd9c')],
+        mostFrequentColor: Color.fromHex('#5f3321'),
+        mostSaturatedColor: Color.fromHex('#401d00'),
+        mostGroupedColor: Color.fromHex('#4d2c21'),
+    },
 } satisfies IImageColorStats;

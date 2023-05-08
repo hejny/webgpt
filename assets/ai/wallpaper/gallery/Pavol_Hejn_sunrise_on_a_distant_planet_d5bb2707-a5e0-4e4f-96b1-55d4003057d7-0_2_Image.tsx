@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.json';
-import sunrise_on_a_distant_planet_d5bb2707_a5e0_4e4f_96b1_55d4003057d7_0_2 from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.json';
 import source from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of Sunrise on a distant planet
@@ -42,8 +37,25 @@ export function SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image
 SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image.colorStats = {
     averageColor: Color.fromHex('#866159'),
-    lightestColor: Color.fromHex('#ffffe1'),
-    darkestColor: Color.fromHex('#00000d'),
-    mostFrequentColor: Color.fromHex('#080818'),
-    leastFrequentColor: Color.fromHex('#394e6b'),
+    lightestColor: Color.fromHex('#fff4e6'),
+    darkestColor: Color.fromHex('#060002'),
+    minmaxWhite: [Color.fromHex('#fff4e6'), Color.fromHex('#060002')],
+    minmaxRed: [Color.fromHex('#bd3d2f'), Color.fromHex('#ffffe1')],
+    minmaxGreen: [Color.fromHex('#5e6d70'), Color.fromHex('#fff4e6')],
+    minmaxBlue: [Color.fromHex('#394e6b'), Color.fromHex('#ffffa9')],
+    mostFrequentColor: Color.fromHex('#0e1321'),
+    mostSaturatedColor: Color.fromHex('#0f0004'),
+    mostGroupedColor: Color.fromHex('#545667'),
+    bottom: {
+        averageColor: Color.fromHex('#3d353f'),
+        lightestColor: Color.fromHex('#fff4e6'),
+        darkestColor: Color.fromHex('#060002'),
+        minmaxWhite: [Color.fromHex('#fff4e6'), Color.fromHex('#060002')],
+        minmaxRed: [Color.fromHex('#863629'), Color.fromHex('#ffffe1')],
+        minmaxGreen: [Color.fromHex('#5e6d70'), Color.fromHex('#fff4e6')],
+        minmaxBlue: [Color.fromHex('#38445b'), Color.fromHex('#ffffe1')],
+        mostFrequentColor: Color.fromHex('#0e1321'),
+        mostSaturatedColor: Color.fromHex('#0f0004'),
+        mostGroupedColor: Color.fromHex('#070717'),
+    },
 } satisfies IImageColorStats;

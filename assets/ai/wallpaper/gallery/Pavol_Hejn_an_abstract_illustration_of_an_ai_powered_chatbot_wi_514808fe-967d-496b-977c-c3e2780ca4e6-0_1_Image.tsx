@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_1.json';
-import an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe_967d_496b_977c_c3e2780ca4e6_0_1 from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_1.json';
 import source from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract illustration of an AI-powered chatbot, with sleek and modern graphics and a minimalist color scheme.
@@ -44,7 +39,24 @@ AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_1_
 AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_1_Image.colorStats = {
     averageColor: Color.fromHex('#39526d'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#00002e'),
-    mostFrequentColor: Color.fromHex('#0d2645'),
-    leastFrequentColor: Color.fromHex('#1b3553'),
+    darkestColor: Color.fromHex('#171623'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#00002e')],
+    minmaxRed: [Color.fromHex('#c2193b'), Color.fromHex('#6dfff8')],
+    minmaxGreen: [Color.fromHex('#309998'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2d5ca4'), Color.fromHex('#ffffff')],
+    mostFrequentColor: Color.fromHex('#0a2142'),
+    mostSaturatedColor: Color.fromHex('#001f47'),
+    mostGroupedColor: Color.fromHex('#0d2645'),
+    bottom: {
+        averageColor: Color.fromHex('#36536e'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#00122b'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#00002e')],
+        minmaxRed: [Color.fromHex('#c0193d'), Color.fromHex('#6dfff8')],
+        minmaxGreen: [Color.fromHex('#368b8c'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#195f9b'), Color.fromHex('#ffffff')],
+        mostFrequentColor: Color.fromHex('#0a2142'),
+        mostSaturatedColor: Color.fromHex('#001f47'),
+        mostGroupedColor: Color.fromHex('#0d2645'),
+    },
 } satisfies IImageColorStats;

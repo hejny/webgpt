@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_3.json';
-import a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478_ae1c_4e83_a78c_08b3a7c90255_0_3 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_3.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders.
@@ -44,7 +39,24 @@ AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_3_I
 AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_3_Image.colorStats = {
     averageColor: Color.fromHex('#539087'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#105c55'),
-    leastFrequentColor: Color.fromHex('#175b59'),
+    darkestColor: Color.fromHex('#000400'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a24421'), Color.fromHex('#caffff')],
+    minmaxGreen: [Color.fromHex('#139e86'), Color.fromHex('#fffcff')],
+    minmaxBlue: [Color.fromHex('#465163'), Color.fromHex('#ffffe0')],
+    mostFrequentColor: Color.fromHex('#4e9a94'),
+    mostSaturatedColor: Color.fromHex('#6d2500'),
+    mostGroupedColor: Color.fromHex('#105c55'),
+    bottom: {
+        averageColor: Color.fromHex('#40847d'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#073a33'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#1b232f')],
+        minmaxRed: [Color.fromHex('#7f6e65'), Color.fromHex('#f7ffff')],
+        minmaxGreen: [Color.fromHex('#27aa8f'), Color.fromHex('#fffeff')],
+        minmaxBlue: [Color.fromHex('#454f60'), Color.fromHex('#ffffec')],
+        mostFrequentColor: Color.fromHex('#4e9a94'),
+        mostSaturatedColor: Color.fromHex('#099a8b'),
+        mostGroupedColor: Color.fromHex('#105c55'),
+    },
 } satisfies IImageColorStats;

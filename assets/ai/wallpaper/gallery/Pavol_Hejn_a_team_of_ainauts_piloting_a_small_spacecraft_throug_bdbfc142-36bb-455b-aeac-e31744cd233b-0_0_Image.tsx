@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_0.json';
-import a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142_36bb_455b_aeac_e31744cd233b_0_0 from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_0.json';
 import source from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them.
@@ -45,6 +40,23 @@ ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeacE31744cd233b0_0_
     averageColor: Color.fromHex('#2c3c47'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0d141c'),
-    leastFrequentColor: Color.fromHex('#396c80'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#a3441f'), Color.fromHex('#e1ffff')],
+    minmaxGreen: [Color.fromHex('#657466'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#113e6b'), Color.fromHex('#fffcb3')],
+    mostFrequentColor: Color.fromHex('#000105'),
+    mostSaturatedColor: Color.fromHex('#000811'),
+    mostGroupedColor: Color.fromHex('#0d141c'),
+    bottom: {
+        averageColor: Color.fromHex('#232e38'),
+        lightestColor: Color.fromHex('#fbfdff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fefffd'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#872512'), Color.fromHex('#e4ffff')],
+        minmaxGreen: [Color.fromHex('#3f6969'), Color.fromHex('#fffcfd')],
+        minmaxBlue: [Color.fromHex('#374e70'), Color.fromHex('#fffec4')],
+        mostFrequentColor: Color.fromHex('#000105'),
+        mostSaturatedColor: Color.fromHex('#000a21'),
+        mostGroupedColor: Color.fromHex('#224155'),
+    },
 } satisfies IImageColorStats;

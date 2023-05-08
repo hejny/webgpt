@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0_2.json';
-import a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c_d19e_401b_b7e0_8d87ea78ffc1_0_2 from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0_2.json';
 import source from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a0b9767c-d19e-401b-b7e0-8d87ea78ffc1-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.
@@ -44,7 +39,24 @@ AVintageMapOfTheStarsAndConstellationsWithDA0b9767cD19e401bB7e08d87ea78ffc10_2_I
 AVintageMapOfTheStarsAndConstellationsWithDA0b9767cD19e401bB7e08d87ea78ffc10_2_Image.colorStats = {
     averageColor: Color.fromHex('#c6a87a'),
     lightestColor: Color.fromHex('#ffffdc'),
-    darkestColor: Color.fromHex('#070000'),
-    mostFrequentColor: Color.fromHex('#ebcc97'),
-    leastFrequentColor: Color.fromHex('#efe2c0'),
+    darkestColor: Color.fromHex('#050400'),
+    minmaxWhite: [Color.fromHex('#ffffdc'), Color.fromHex('#070000')],
+    minmaxRed: [Color.fromHex('#a3391f'), Color.fromHex('#ffffdc')],
+    minmaxGreen: [Color.fromHex('#998224'), Color.fromHex('#ffffdc')],
+    minmaxBlue: [Color.fromHex('#584f46'), Color.fromHex('#fffece')],
+    mostFrequentColor: Color.fromHex('#c3a978'),
+    mostSaturatedColor: Color.fromHex('#591e00'),
+    mostGroupedColor: Color.fromHex('#edd5a0'),
+    bottom: {
+        averageColor: Color.fromHex('#c9ac7d'),
+        lightestColor: Color.fromHex('#fffdcc'),
+        darkestColor: Color.fromHex('#140700'),
+        minmaxWhite: [Color.fromHex('#fffdcc'), Color.fromHex('#1a0000')],
+        minmaxRed: [Color.fromHex('#a3391f'), Color.fromHex('#fffdcc')],
+        minmaxGreen: [Color.fromHex('#787852'), Color.fromHex('#610000')],
+        minmaxBlue: [Color.fromHex('#584f46'), Color.fromHex('#fffdcc')],
+        mostFrequentColor: Color.fromHex('#c3a978'),
+        mostSaturatedColor: Color.fromHex('#591e00'),
+        mostGroupedColor: Color.fromHex('#edd5a0'),
+    },
 } satisfies IImageColorStats;

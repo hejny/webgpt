@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_0.json';
-import a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210_fe1d_467a_ad1b_74f55e620800_0_0 from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_0.json';
 import source from './Pavol_Hejn_a_small_wooden_tent_against_the_green_grass_in_the_s_b655b210-fe1d-467a-ad1b-74f55e620800-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of a small wooden tent against the green grass, in the style of glass fragments art, constantin brancusi, symmetrical balance, contemporary canadian art, security camera, elfriede lohse-wächtler, stone
@@ -43,8 +38,25 @@ ASmallWoodenTentAgainstTheGreenGrassInTheSB655b210Fe1d467aAd1b74f55e6208000_0_Im
     metadata satisfies IWallpaperMetadata;
 ASmallWoodenTentAgainstTheGreenGrassInTheSB655b210Fe1d467aAd1b74f55e6208000_0_Image.colorStats = {
     averageColor: Color.fromHex('#646f49'),
-    lightestColor: Color.fromHex('#faffec'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#e7e8e1'),
-    leastFrequentColor: Color.fromHex('#bfc2c6'),
+    lightestColor: Color.fromHex('#f4fff6'),
+    darkestColor: Color.fromHex('#001200'),
+    minmaxWhite: [Color.fromHex('#f4fff6'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#e25251'), Color.fromHex('#f4fff6')],
+    minmaxGreen: [Color.fromHex('#7da32e'), Color.fromHex('#f4fff6')],
+    minmaxBlue: [Color.fromHex('#416592'), Color.fromHex('#faffec')],
+    mostFrequentColor: Color.fromHex('#4e4c1e'),
+    mostSaturatedColor: Color.fromHex('#2d3a00'),
+    mostGroupedColor: Color.fromHex('#e8e9e2'),
+    bottom: {
+        averageColor: Color.fromHex('#515f1d'),
+        lightestColor: Color.fromHex('#e7f3cc'),
+        darkestColor: Color.fromHex('#000a00'),
+        minmaxWhite: [Color.fromHex('#e7f3cc'), Color.fromHex('#000700')],
+        minmaxRed: [Color.fromHex('#b47136'), Color.fromHex('#e7f3cc')],
+        minmaxGreen: [Color.fromHex('#7da32e'), Color.fromHex('#0f0300')],
+        minmaxBlue: [Color.fromHex('#515556'), Color.fromHex('#e7f3cc')],
+        mostFrequentColor: Color.fromHex('#4e4c1e'),
+        mostSaturatedColor: Color.fromHex('#2d3a00'),
+        mostGroupedColor: Color.fromHex('#11140c'),
+    },
 } satisfies IImageColorStats;

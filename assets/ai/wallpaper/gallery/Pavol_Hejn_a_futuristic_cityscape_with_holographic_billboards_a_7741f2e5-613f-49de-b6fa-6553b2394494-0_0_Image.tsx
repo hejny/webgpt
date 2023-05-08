@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_0.json';
-import a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5_613f_49de_b6fa_6553b2394494_0_0 from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_0.json';
 import source from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A futuristic cityscape with holographic billboards and flying cars
@@ -43,8 +38,25 @@ AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_0_Image.colorStats = {
     averageColor: Color.fromHex('#465772'),
-    lightestColor: Color.fromHex('#e7ffff'),
-    darkestColor: Color.fromHex('#030009'),
-    mostFrequentColor: Color.fromHex('#071932'),
-    leastFrequentColor: Color.fromHex('#b7d8e8'),
+    lightestColor: Color.fromHex('#ffcfff'),
+    darkestColor: Color.fromHex('#0a0000'),
+    minmaxWhite: [Color.fromHex('#fbf6ff'), Color.fromHex('#050004')],
+    minmaxRed: [Color.fromHex('#bb2e39'), Color.fromHex('#10fff5')],
+    minmaxGreen: [Color.fromHex('#5e8e77'), Color.fromHex('#ffa1f6')],
+    minmaxBlue: [Color.fromHex('#0760a5'), Color.fromHex('#fbf6fd')],
+    mostFrequentColor: Color.fromHex('#05101d'),
+    mostSaturatedColor: Color.fromHex('#00081f'),
+    mostGroupedColor: Color.fromHex('#122a48'),
+    bottom: {
+        averageColor: Color.fromHex('#292e45'),
+        lightestColor: Color.fromHex('#fff1fa'),
+        darkestColor: Color.fromHex('#0a0000'),
+        minmaxWhite: [Color.fromHex('#fff1fa'), Color.fromHex('#050004')],
+        minmaxRed: [Color.fromHex('#bb2e39'), Color.fromHex('#23d7c9')],
+        minmaxGreen: [Color.fromHex('#5e8e77'), Color.fromHex('#fff1fa')],
+        minmaxBlue: [Color.fromHex('#24548d'), Color.fromHex('#fff0d3')],
+        mostFrequentColor: Color.fromHex('#05101d'),
+        mostSaturatedColor: Color.fromHex('#00081f'),
+        mostGroupedColor: Color.fromHex('#071a33'),
+    },
 } satisfies IImageColorStats;

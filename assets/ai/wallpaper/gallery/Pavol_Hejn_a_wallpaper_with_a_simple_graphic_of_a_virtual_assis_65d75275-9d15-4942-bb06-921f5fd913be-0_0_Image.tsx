@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_65d75275-9d15-4942-bb06-921f5fd913be-0_0.json';
-import a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_65d75275_9d15_4942_bb06_921f5fd913be_0_0 from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_65d75275-9d15-4942-bb06-921f5fd913be-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_65d75275-9d15-4942-bb06-921f5fd913be-0_0.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_65d75275-9d15-4942-bb06-921f5fd913be-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a simple graphic of a virtual assistant or chatbot, with space for messages and alerts.
@@ -43,8 +38,25 @@ AWallpaperWithASimpleGraphicOfAVirtualAssis65d752759d154942Bb06921f5fd913be0_0_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfAVirtualAssis65d752759d154942Bb06921f5fd913be0_0_Image.colorStats = {
     averageColor: Color.fromHex('#0c181c'),
-    lightestColor: Color.fromHex('#f8ffff'),
+    lightestColor: Color.fromHex('#f9feff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#000102'),
-    leastFrequentColor: Color.fromHex('#0f1113'),
+    minmaxWhite: [Color.fromHex('#f9feff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#393f40'), Color.fromHex('#1dfcff')],
+    minmaxGreen: [Color.fromHex('#00a37b'), Color.fromHex('#f9feff')],
+    minmaxBlue: [Color.fromHex('#134871'), Color.fromHex('#f8ffff')],
+    mostFrequentColor: Color.fromHex('#000001'),
+    mostSaturatedColor: Color.fromHex('#000001'),
+    mostGroupedColor: Color.fromHex('#010306'),
+    bottom: {
+        averageColor: Color.fromHex('#121f24'),
+        lightestColor: Color.fromHex('#deffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#deffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#393f40'), Color.fromHex('#18fbf5')],
+        minmaxGreen: [Color.fromHex('#00a37b'), Color.fromHex('#deffff')],
+        minmaxBlue: [Color.fromHex('#134871'), Color.fromHex('#deffff')],
+        mostFrequentColor: Color.fromHex('#000001'),
+        mostSaturatedColor: Color.fromHex('#010000'),
+        mostGroupedColor: Color.fromHex('#000102'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360-6ec1-43c2-9c2d-cd640c314b5f-0_0.json';
-import an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360_6ec1_43c2_9c2d_cd640c314b5f_0_0 from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360-6ec1-43c2-9c2d-cd640c314b5f-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360-6ec1-43c2-9c2d-cd640c314b5f-0_0.json';
 import source from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_4618b360-6ec1-43c2-9c2d-cd640c314b5f-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract image of a swirling galaxy, with bright colors and intricate patterns.
@@ -44,7 +39,24 @@ AnAbstractImageOfASwirlingGalaxyWithBrightC4618b3606ec143c29c2dCd640c314b5f0_0_I
 AnAbstractImageOfASwirlingGalaxyWithBrightC4618b3606ec143c29c2dCd640c314b5f0_0_Image.colorStats = {
     averageColor: Color.fromHex('#6d463d'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#070a10'),
-    leastFrequentColor: Color.fromHex('#0d060a'),
+    darkestColor: Color.fromHex('#000100'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d72512'), Color.fromHex('#faffff')],
+    minmaxGreen: [Color.fromHex('#5a9465'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#184989'), Color.fromHex('#fffff5')],
+    mostFrequentColor: Color.fromHex('#76353a'),
+    mostSaturatedColor: Color.fromHex('#000108'),
+    mostGroupedColor: Color.fromHex('#070a12'),
+    bottom: {
+        averageColor: Color.fromHex('#5c3a35'),
+        lightestColor: Color.fromHex('#f9f5ff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#fdfff7'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d22d1f'), Color.fromHex('#fdfff7')],
+        minmaxGreen: [Color.fromHex('#4c8b72'), Color.fromHex('#f9f5ff')],
+        minmaxBlue: [Color.fromHex('#23457b'), Color.fromHex('#fdfff7')],
+        mostFrequentColor: Color.fromHex('#76353a'),
+        mostSaturatedColor: Color.fromHex('#140009'),
+        mostGroupedColor: Color.fromHex('#0b0f16'),
+    },
 } satisfies IImageColorStats;

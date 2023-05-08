@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.json';
-import an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc_af96_4f65_a0bc_7090ed84bc40_0_3 from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.json';
 import source from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of An abstract image of a comet passing through the solar system, with bright colors and swirling patterns that represent its trajectory.
@@ -45,6 +40,23 @@ AnAbstractImageOfACometPassingThroughTheSol2742fafcAf964f65A0bc7090ed84bc400_3_I
     averageColor: Color.fromHex('#180f0f'),
     lightestColor: Color.fromHex('#f8ffff'),
     darkestColor: Color.fromHex('#000000'),
+    minmaxWhite: [Color.fromHex('#f8ffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#bf130f'), Color.fromHex('#14e6ff')],
+    minmaxGreen: [Color.fromHex('#529a44'), Color.fromHex('#b6060a')],
+    minmaxBlue: [Color.fromHex('#0055a0'), Color.fromHex('#fff432')],
     mostFrequentColor: Color.fromHex('#000000'),
-    leastFrequentColor: Color.fromHex('#01163d'),
+    mostSaturatedColor: Color.fromHex('#010001'),
+    mostGroupedColor: Color.fromHex('#000000'),
+    bottom: {
+        averageColor: Color.fromHex('#191110'),
+        lightestColor: Color.fromHex('#ffebcb'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffc5'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#bc2402'), Color.fromHex('#2faff0')],
+        minmaxGreen: [Color.fromHex('#95aa4c'), Color.fromHex('#590000')],
+        minmaxBlue: [Color.fromHex('#05509a'), Color.fromHex('#ffe81d')],
+        mostFrequentColor: Color.fromHex('#000000'),
+        mostSaturatedColor: Color.fromHex('#000001'),
+        mostGroupedColor: Color.fromHex('#000000'),
+    },
 } satisfies IImageColorStats;

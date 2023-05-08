@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_83d94335-7745-4612-8800-f9bdd08d72b5-0_0.json';
-import a_whimsical_tea_party_with_anthropomorphic_animals_83d94335_7745_4612_8800_f9bdd08d72b5_0_0 from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_83d94335-7745-4612-8800-f9bdd08d72b5-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_83d94335-7745-4612-8800-f9bdd08d72b5-0_0.json';
 import source from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_83d94335-7745-4612-8800-f9bdd08d72b5-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A whimsical tea party with anthropomorphic animals
@@ -43,8 +38,25 @@ AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800F9bdd08d72b50_0_
     metadata satisfies IWallpaperMetadata;
 AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800F9bdd08d72b50_0_Image.colorStats = {
     averageColor: Color.fromHex('#494438'),
-    lightestColor: Color.fromHex('#ffffdf'),
+    lightestColor: Color.fromHex('#eefeff'),
     darkestColor: Color.fromHex('#040000'),
-    mostFrequentColor: Color.fromHex('#0f1014'),
-    leastFrequentColor: Color.fromHex('#9fa892'),
+    minmaxWhite: [Color.fromHex('#f4f7f9'), Color.fromHex('#040000')],
+    minmaxRed: [Color.fromHex('#a43605'), Color.fromHex('#d0faff')],
+    minmaxGreen: [Color.fromHex('#617e3e'), Color.fromHex('#eefeff')],
+    minmaxBlue: [Color.fromHex('#3c5172'), Color.fromHex('#ffffdf')],
+    mostFrequentColor: Color.fromHex('#081011'),
+    mostSaturatedColor: Color.fromHex('#0f0900'),
+    mostGroupedColor: Color.fromHex('#101014'),
+    bottom: {
+        averageColor: Color.fromHex('#53493d'),
+        lightestColor: Color.fromHex('#eaecf0'),
+        darkestColor: Color.fromHex('#0a0300'),
+        minmaxWhite: [Color.fromHex('#ffffdf'), Color.fromHex('#0a0000')],
+        minmaxRed: [Color.fromHex('#a43605'), Color.fromHex('#ffffdf')],
+        minmaxGreen: [Color.fromHex('#908b4f'), Color.fromHex('#ffffdf')],
+        minmaxBlue: [Color.fromHex('#525464'), Color.fromHex('#ffffdf')],
+        mostFrequentColor: Color.fromHex('#081011'),
+        mostSaturatedColor: Color.fromHex('#0f0900'),
+        mostGroupedColor: Color.fromHex('#101014'),
+    },
 } satisfies IImageColorStats;

@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.json';
-import a_minimalist_graphic_of_a_futuristic_workspace_with_e06eece0_8eb1_4104_a195_a3f2518607d1_0_3 from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.json';
 import source from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme.
@@ -44,7 +39,24 @@ AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_
 AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.colorStats = {
     averageColor: Color.fromHex('#7b86aa'),
     lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000012'),
-    mostFrequentColor: Color.fromHex('#213055'),
-    leastFrequentColor: Color.fromHex('#325282'),
+    darkestColor: Color.fromHex('#000311'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000012')],
+    minmaxRed: [Color.fromHex('#824a88'), Color.fromHex('#55daed')],
+    minmaxGreen: [Color.fromHex('#39bebb'), Color.fromHex('#fec1fd')],
+    minmaxBlue: [Color.fromHex('#22338c'), Color.fromHex('#fffff5')],
+    mostFrequentColor: Color.fromHex('#7891b7'),
+    mostSaturatedColor: Color.fromHex('#00709b'),
+    mostGroupedColor: Color.fromHex('#213055'),
+    bottom: {
+        averageColor: Color.fromHex('#596a92'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#121f40'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#0c1b44')],
+        minmaxRed: [Color.fromHex('#824a88'), Color.fromHex('#dfffff')],
+        minmaxGreen: [Color.fromHex('#426b84'), Color.fromHex('#fffdff')],
+        minmaxBlue: [Color.fromHex('#3d4296'), Color.fromHex('#fffff5')],
+        mostFrequentColor: Color.fromHex('#7891b7'),
+        mostSaturatedColor: Color.fromHex('#09254d'),
+        mostGroupedColor: Color.fromHex('#213055'),
+    },
 } satisfies IImageColorStats;

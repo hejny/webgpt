@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_2.json';
-import a_stylized_illustration_of_an_ai_powered_robot_with_44a12836_879e_4dde_90da_a8ebf9c6ab0b_0_2 from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_2.json';
 import source from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__44a12836-879e-4dde-90da-a8ebf9c6ab0b-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A stylized illustration of an AI-powered robot, with sleek and modern graphics and a minimalist color scheme.
@@ -44,7 +39,24 @@ AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_2_I
 AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_2_Image.colorStats = {
     averageColor: Color.fromHex('#1d676e'),
     lightestColor: Color.fromHex('#fdffff'),
-    darkestColor: Color.fromHex('#000007'),
-    mostFrequentColor: Color.fromHex('#0e545b'),
-    leastFrequentColor: Color.fromHex('#094f5d'),
+    darkestColor: Color.fromHex('#0a1600'),
+    minmaxWhite: [Color.fromHex('#fdffff'), Color.fromHex('#000007')],
+    minmaxRed: [Color.fromHex('#db4c43'), Color.fromHex('#35f8f6')],
+    minmaxGreen: [Color.fromHex('#78a318'), Color.fromHex('#fdffff')],
+    minmaxBlue: [Color.fromHex('#5e50ab'), Color.fromHex('#fffa5e')],
+    mostFrequentColor: Color.fromHex('#145962'),
+    mostSaturatedColor: Color.fromHex('#001c31'),
+    mostGroupedColor: Color.fromHex('#0e545b'),
+    bottom: {
+        averageColor: Color.fromHex('#1b515f'),
+        lightestColor: Color.fromHex('#fdffff'),
+        darkestColor: Color.fromHex('#0b0f00'),
+        minmaxWhite: [Color.fromHex('#fdffff'), Color.fromHex('#000007')],
+        minmaxRed: [Color.fromHex('#9f4033'), Color.fromHex('#77fff8')],
+        minmaxGreen: [Color.fromHex('#78a318'), Color.fromHex('#fdffff')],
+        minmaxBlue: [Color.fromHex('#11457b'), Color.fromHex('#fbeb4d')],
+        mostFrequentColor: Color.fromHex('#145962'),
+        mostSaturatedColor: Color.fromHex('#001c31'),
+        mostGroupedColor: Color.fromHex('#116369'),
+    },
 } satisfies IImageColorStats;

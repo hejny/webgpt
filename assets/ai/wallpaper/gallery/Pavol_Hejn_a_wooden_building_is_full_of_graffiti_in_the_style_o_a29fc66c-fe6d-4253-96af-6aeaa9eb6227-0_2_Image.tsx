@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.json';
-import a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c_fe6d_4253_96af_6aeaa9eb6227_0_2 from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.json';
 import source from './Pavol_Hejn_a_wooden_building_is_full_of_graffiti_in_the_style_o_a29fc66c-fe6d-4253-96af-6aeaa9eb6227-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of a wooden building is full of graffiti, in the style of earthworks, light green and dark gray, zeiss ikon zm, rusty debris, elfriede lohse-wächtler, emphasis on nature, urban interventions
@@ -45,6 +40,23 @@ AWoodenBuildingIsFullOfGraffitiInTheStyleOA29fc66cFe6d425396af6aeaa9eb62270_2_Im
     averageColor: Color.fromHex('#675f51'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#0d0600'),
-    mostFrequentColor: Color.fromHex('#282322'),
-    leastFrequentColor: Color.fromHex('#848172'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#0d0600')],
+    minmaxRed: [Color.fromHex('#91453f'), Color.fromHex('#fdffff')],
+    minmaxGreen: [Color.fromHex('#56a471'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2e6584'), Color.fromHex('#fffff6')],
+    mostFrequentColor: Color.fromHex('#272422'),
+    mostSaturatedColor: Color.fromHex('#3d2200'),
+    mostGroupedColor: Color.fromHex('#282322'),
+    bottom: {
+        averageColor: Color.fromHex('#5b5345'),
+        lightestColor: Color.fromHex('#fdfcf2'),
+        darkestColor: Color.fromHex('#24180b'),
+        minmaxWhite: [Color.fromHex('#fdfcf2'), Color.fromHex('#1d120e')],
+        minmaxRed: [Color.fromHex('#7e3633'), Color.fromHex('#f9fff2')],
+        minmaxGreen: [Color.fromHex('#569f72'), Color.fromHex('#fffbf0')],
+        minmaxBlue: [Color.fromHex('#38496a'), Color.fromHex('#fffbf0')],
+        mostFrequentColor: Color.fromHex('#272422'),
+        mostSaturatedColor: Color.fromHex('#341a07'),
+        mostGroupedColor: Color.fromHex('#221f1c'),
+    },
 } satisfies IImageColorStats;

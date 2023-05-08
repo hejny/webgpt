@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116-1306-4d89-b90c-465a2d6bc13d-0_0.json';
-import a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116_1306_4d89_b90c_465a2d6bc13d_0_0 from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116-1306-4d89-b90c-465a2d6bc13d-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116-1306-4d89-b90c-465a2d6bc13d-0_0.json';
 import source from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_c7551116-1306-4d89-b90c-465a2d6bc13d-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background.
@@ -43,8 +38,25 @@ ARetroFuturisticWallpaperFeaturingAVintageIllC755111613064d89B90c465a2d6bc13d0_0
     metadata satisfies IWallpaperMetadata;
 ARetroFuturisticWallpaperFeaturingAVintageIllC755111613064d89B90c465a2d6bc13d0_0_Image.colorStats = {
     averageColor: Color.fromHex('#243143'),
-    lightestColor: Color.fromHex('#ffffd1'),
+    lightestColor: Color.fromHex('#dff8ea'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#0f1f39'),
-    leastFrequentColor: Color.fromHex('#0c1a3b'),
+    minmaxWhite: [Color.fromHex('#f6ffdd'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d81808'), Color.fromHex('#b7ffde')],
+    minmaxGreen: [Color.fromHex('#1aa94c'), Color.fromHex('#d10044')],
+    minmaxBlue: [Color.fromHex('#002b87'), Color.fromHex('#ffffa6')],
+    mostFrequentColor: Color.fromHex('#0e1d36'),
+    mostSaturatedColor: Color.fromHex('#001a27'),
+    mostGroupedColor: Color.fromHex('#0f1f39'),
+    bottom: {
+        averageColor: Color.fromHex('#232c40'),
+        lightestColor: Color.fromHex('#f6ffdd'),
+        darkestColor: Color.fromHex('#000a04'),
+        minmaxWhite: [Color.fromHex('#f6ffdd'), Color.fromHex('#000006')],
+        minmaxRed: [Color.fromHex('#d81808'), Color.fromHex('#f6ffdd')],
+        minmaxGreen: [Color.fromHex('#66aa44'), Color.fromHex('#fe2b3d')],
+        minmaxBlue: [Color.fromHex('#002b87'), Color.fromHex('#ffffd1')],
+        mostFrequentColor: Color.fromHex('#0e1d36'),
+        mostSaturatedColor: Color.fromHex('#002243'),
+        mostGroupedColor: Color.fromHex('#0f1f39'),
+    },
 } satisfies IImageColorStats;

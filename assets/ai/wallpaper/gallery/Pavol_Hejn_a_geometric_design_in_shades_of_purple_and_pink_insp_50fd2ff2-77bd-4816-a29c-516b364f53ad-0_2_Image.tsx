@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_2.json';
-import a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2_77bd_4816_a29c_516b364f53ad_0_2 from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_2.json';
 import source from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A geometric design in shades of purple and pink, inspired by the shape of a quantum computer
@@ -43,8 +38,25 @@ AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c516b364f53ad0_2_I
     metadata satisfies IWallpaperMetadata;
 AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c516b364f53ad0_2_Image.colorStats = {
     averageColor: Color.fromHex('#803d74'),
-    lightestColor: Color.fromHex('#f3dfe1'),
-    darkestColor: Color.fromHex('#430a3d'),
-    mostFrequentColor: Color.fromHex('#452662'),
-    leastFrequentColor: Color.fromHex('#442556'),
+    lightestColor: Color.fromHex('#fdcaf1'),
+    darkestColor: Color.fromHex('#3e0f3b'),
+    minmaxWhite: [Color.fromHex('#f3dfe1'), Color.fromHex('#430a3d')],
+    minmaxRed: [Color.fromHex('#bc3768'), Color.fromHex('#f3dfe1')],
+    minmaxGreen: [Color.fromHex('#926a82'), Color.fromHex('#fdcaf1')],
+    minmaxBlue: [Color.fromHex('#492373'), Color.fromHex('#f9dde2')],
+    mostFrequentColor: Color.fromHex('#3e265a'),
+    mostSaturatedColor: Color.fromHex('#58093f'),
+    mostGroupedColor: Color.fromHex('#452662'),
+    bottom: {
+        averageColor: Color.fromHex('#7e3c73'),
+        lightestColor: Color.fromHex('#fbd7ec'),
+        darkestColor: Color.fromHex('#540e39'),
+        minmaxWhite: [Color.fromHex('#fbd7ec'), Color.fromHex('#490d41')],
+        minmaxRed: [Color.fromHex('#bf376e'), Color.fromHex('#fbd7ec')],
+        minmaxGreen: [Color.fromHex('#845d7b'), Color.fromHex('#fea5dc')],
+        minmaxBlue: [Color.fromHex('#44246f'), Color.fromHex('#f4dcdb')],
+        mostFrequentColor: Color.fromHex('#3e265a'),
+        mostSaturatedColor: Color.fromHex('#580d3b'),
+        mostGroupedColor: Color.fromHex('#452662'),
+    },
 } satisfies IImageColorStats;

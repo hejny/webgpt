@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_0.json';
-import a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc_fa23_4e0e_a4da_289234f2ee58_0_0 from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_0.json';
 import source from './Pavol_Hejn_a_wooden_wooden_beam_in_the_shape_of_an_arm_in_the_s_72f413fc-fa23-4e0e-a4da-289234f2ee58-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of a wooden wooden beam in the shape of an arm, in the style of outdoor art, light green and amber, 20th century scandinavian style, contemporary diy, wide angle lens, recycled, stone
@@ -45,6 +40,23 @@ AWoodenWoodenBeamInTheShapeOfAnArmInTheS72f413fcFa234e0eA4da289234f2ee580_0_Imag
     averageColor: Color.fromHex('#6e6543'),
     lightestColor: Color.fromHex('#faf5ec'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#d5d2d5'),
-    leastFrequentColor: Color.fromHex('#787a81'),
+    minmaxWhite: [Color.fromHex('#faf5ec'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ad4a00'), Color.fromHex('#faf5ec')],
+    minmaxGreen: [Color.fromHex('#929d0e'), Color.fromHex('#faf4ec')],
+    minmaxBlue: [Color.fromHex('#1c4d6d'), Color.fromHex('#e8ce0d')],
+    mostFrequentColor: Color.fromHex('#070702'),
+    mostSaturatedColor: Color.fromHex('#2c1f00'),
+    mostGroupedColor: Color.fromHex('#bfbcc0'),
+    bottom: {
+        averageColor: Color.fromHex('#5a4f35'),
+        lightestColor: Color.fromHex('#faf5ec'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#faf5ec'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#7f452b'), Color.fromHex('#faf5ec')],
+        minmaxGreen: [Color.fromHex('#929d0e'), Color.fromHex('#faf4ec')],
+        minmaxBlue: [Color.fromHex('#534e4c'), Color.fromHex('#fef3d9')],
+        mostFrequentColor: Color.fromHex('#070702'),
+        mostSaturatedColor: Color.fromHex('#272c00'),
+        mostGroupedColor: Color.fromHex('#0a0705'),
+    },
 } satisfies IImageColorStats;

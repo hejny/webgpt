@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_1.json';
-import a_wallpaper_with_a_repeating_pattern_of_circuit_board5bfa73_c656_4cd6_8a61_1a1479694a3f_0_1_1 from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_1.json';
 import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_circuit_boar_1d5bfa73-c656-4cd6-8a61-1a1479694a3f-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green.
@@ -44,7 +39,24 @@ AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611a1479694a3f01_1_
 AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611a1479694a3f01_1_Image.colorStats = {
     averageColor: Color.fromHex('#101811'),
     lightestColor: Color.fromHex('#c7ffd8'),
-    darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#040504'),
-    leastFrequentColor: Color.fromHex('#060201'),
+    darkestColor: Color.fromHex('#000200'),
+    minmaxWhite: [Color.fromHex('#c7ffd8'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#695549'), Color.fromHex('#4fffbb')],
+    minmaxGreen: [Color.fromHex('#03c832'), Color.fromHex('#090011')],
+    minmaxBlue: [Color.fromHex('#35585e'), Color.fromHex('#d0ffaf')],
+    mostFrequentColor: Color.fromHex('#121916'),
+    mostSaturatedColor: Color.fromHex('#000200'),
+    mostGroupedColor: Color.fromHex('#040504'),
+    bottom: {
+        averageColor: Color.fromHex('#0f1610'),
+        lightestColor: Color.fromHex('#acffcc'),
+        darkestColor: Color.fromHex('#000600'),
+        minmaxWhite: [Color.fromHex('#acffcc'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#443423'), Color.fromHex('#7effbe')],
+        minmaxGreen: [Color.fromHex('#31db48'), Color.fromHex('#05000b')],
+        minmaxBlue: [Color.fromHex('#3a3e47'), Color.fromHex('#84ff7e')],
+        mostFrequentColor: Color.fromHex('#121916'),
+        mostSaturatedColor: Color.fromHex('#000600'),
+        mostGroupedColor: Color.fromHex('#040504'),
+    },
 } satisfies IImageColorStats;

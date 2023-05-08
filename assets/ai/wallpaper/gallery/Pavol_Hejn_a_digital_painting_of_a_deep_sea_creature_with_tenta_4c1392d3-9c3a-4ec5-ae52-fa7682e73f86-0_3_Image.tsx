@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_4c1392d3-9c3a-4ec5-ae52-fa7682e73f86-0_3.json';
-import a_digital_painting_of_a_deep_sea_creature_with_tenta_4c1392d3_9c3a_4ec5_ae52_fa7682e73f86_0_3 from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_4c1392d3-9c3a-4ec5-ae52-fa7682e73f86-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_4c1392d3-9c3a-4ec5-ae52-fa7682e73f86-0_3.json';
 import source from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_4c1392d3-9c3a-4ec5-ae52-fa7682e73f86-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration.
@@ -43,8 +38,25 @@ ADigitalPaintingOfADeepSeaCreatureWithTenta4c1392d39c3a4ec5Ae52Fa7682e73f860_3_I
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfADeepSeaCreatureWithTenta4c1392d39c3a4ec5Ae52Fa7682e73f860_3_Image.colorStats = {
     averageColor: Color.fromHex('#17272c'),
-    lightestColor: Color.fromHex('#fefeec'),
-    darkestColor: Color.fromHex('#040204'),
-    mostFrequentColor: Color.fromHex('#08080f'),
-    leastFrequentColor: Color.fromHex('#092930'),
+    lightestColor: Color.fromHex('#f9f5fd'),
+    darkestColor: Color.fromHex('#0a0200'),
+    minmaxWhite: [Color.fromHex('#fbf5fc'), Color.fromHex('#070201')],
+    minmaxRed: [Color.fromHex('#a53e0d'), Color.fromHex('#76fbff')],
+    minmaxGreen: [Color.fromHex('#8bb33e'), Color.fromHex('#fbf5fc')],
+    minmaxBlue: [Color.fromHex('#125190'), Color.fromHex('#ffcc28')],
+    mostFrequentColor: Color.fromHex('#1c1412'),
+    mostSaturatedColor: Color.fromHex('#00121f'),
+    mostGroupedColor: Color.fromHex('#07070d'),
+    bottom: {
+        averageColor: Color.fromHex('#12151c'),
+        lightestColor: Color.fromHex('#d8d6c8'),
+        darkestColor: Color.fromHex('#0a0200'),
+        minmaxWhite: [Color.fromHex('#d8d6c8'), Color.fromHex('#0a0200')],
+        minmaxRed: [Color.fromHex('#a53e0d'), Color.fromHex('#d8d6c8')],
+        minmaxGreen: [Color.fromHex('#849334'), Color.fromHex('#08010a')],
+        minmaxBlue: [Color.fromHex('#26516b'), Color.fromHex('#ccce5f')],
+        mostFrequentColor: Color.fromHex('#1c1412'),
+        mostSaturatedColor: Color.fromHex('#240800'),
+        mostGroupedColor: Color.fromHex('#07070d'),
+    },
 } satisfies IImageColorStats;

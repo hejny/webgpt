@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_2.json';
-import a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b_1a6a_403b_b7f6_e874e5adc0cb_0_2 from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_2.json';
 import source from './Pavol_Hejn_a_team_of_ainauts_conducting_experiments_on_a_massiv_f23acb1b-1a6a-403b-b7f6-e874e5adc0cb-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.
@@ -45,6 +40,23 @@ ATeamOfAinautsConductingExperimentsOnAMassivF23acb1b1a6a403bB7f6E874e5adc0cb0_2_
     averageColor: Color.fromHex('#5c6f82'),
     lightestColor: Color.fromHex('#fbffff'),
     darkestColor: Color.fromHex('#000714'),
-    mostFrequentColor: Color.fromHex('#374e64'),
-    leastFrequentColor: Color.fromHex('#192a3c'),
+    minmaxWhite: [Color.fromHex('#fbffff'), Color.fromHex('#000714')],
+    minmaxRed: [Color.fromHex('#9e5545'), Color.fromHex('#eeffff')],
+    minmaxGreen: [Color.fromHex('#5c8b95'), Color.fromHex('#fbffff')],
+    minmaxBlue: [Color.fromHex('#1c5586'), Color.fromHex('#fffde3')],
+    mostFrequentColor: Color.fromHex('#2e3547'),
+    mostSaturatedColor: Color.fromHex('#000c1a'),
+    mostGroupedColor: Color.fromHex('#6588a3'),
+    bottom: {
+        averageColor: Color.fromHex('#718193'),
+        lightestColor: Color.fromHex('#f9ffff'),
+        darkestColor: Color.fromHex('#000714'),
+        minmaxWhite: [Color.fromHex('#f9ffff'), Color.fromHex('#000714')],
+        minmaxRed: [Color.fromHex('#9e5545'), Color.fromHex('#f1ffff')],
+        minmaxGreen: [Color.fromHex('#5f7e87'), Color.fromHex('#f9ffff')],
+        minmaxBlue: [Color.fromHex('#274770'), Color.fromHex('#fffde3')],
+        mostFrequentColor: Color.fromHex('#2e3547'),
+        mostSaturatedColor: Color.fromHex('#000c1a'),
+        mostGroupedColor: Color.fromHex('#c6d8e5'),
+    },
 } satisfies IImageColorStats;

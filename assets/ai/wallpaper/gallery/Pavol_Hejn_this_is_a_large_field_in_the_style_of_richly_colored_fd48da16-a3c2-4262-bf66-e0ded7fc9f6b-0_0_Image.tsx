@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_0.json';
-import this_is_a_large_field_in_the_style_of_richly_colored_fd48da16_a3c2_4262_bf66_e0ded7fc9f6b_0_0 from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_0.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_0.json';
 import source from './Pavol_Hejn_this_is_a_large_field_in_the_style_of_richly_colored_fd48da16-a3c2-4262-bf66-e0ded7fc9f6b-0_0.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of this is a large field, in the style of richly colored skies, light pink and dark green, 32k uhd, kurzgesagt, františek dvořák, romanticized views, hikecore
@@ -43,8 +38,25 @@ ThisIsALargeFieldInTheStyleOfRichlyColoredFd48da16A3c24262Bf66E0ded7fc9f6b0_0_Im
     metadata satisfies IWallpaperMetadata;
 ThisIsALargeFieldInTheStyleOfRichlyColoredFd48da16A3c24262Bf66E0ded7fc9f6b0_0_Image.colorStats = {
     averageColor: Color.fromHex('#435345'),
-    lightestColor: Color.fromHex('#a7b099'),
-    darkestColor: Color.fromHex('#120000'),
-    mostFrequentColor: Color.fromHex('#2b8778'),
-    leastFrequentColor: Color.fromHex('#70a898'),
+    lightestColor: Color.fromHex('#a5ae9a'),
+    darkestColor: Color.fromHex('#000600'),
+    minmaxWhite: [Color.fromHex('#a7b099'), Color.fromHex('#000600')],
+    minmaxRed: [Color.fromHex('#7f423a'), Color.fromHex('#22897f')],
+    minmaxGreen: [Color.fromHex('#248977'), Color.fromHex('#1a0000')],
+    minmaxBlue: [Color.fromHex('#23585f'), Color.fromHex('#a6b096')],
+    mostFrequentColor: Color.fromHex('#44291f'),
+    mostSaturatedColor: Color.fromHex('#160c00'),
+    mostGroupedColor: Color.fromHex('#2b8677'),
+    bottom: {
+        averageColor: Color.fromHex('#432b1c'),
+        lightestColor: Color.fromHex('#966e63'),
+        darkestColor: Color.fromHex('#030500'),
+        minmaxWhite: [Color.fromHex('#966e63'), Color.fromHex('#030500')],
+        minmaxRed: [Color.fromHex('#7f423a'), Color.fromHex('#030500')],
+        minmaxGreen: [Color.fromHex('#4b5346'), Color.fromHex('#120000')],
+        minmaxBlue: [Color.fromHex('#303c3a'), Color.fromHex('#321900')],
+        mostFrequentColor: Color.fromHex('#44291f'),
+        mostSaturatedColor: Color.fromHex('#160c00'),
+        mostGroupedColor: Color.fromHex('#79473d'),
+    },
 } satisfies IImageColorStats;

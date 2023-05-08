@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_3.json';
-import a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61_07f8_4e54_b761_9ad406d00156_0_3 from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_3.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_3.json';
 import source from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_63c45b61-07f8-4e54-b761-9ad406d00156-0_3.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems.
@@ -45,6 +40,23 @@ AFuturisticCityscapeWhereAinautsUseAdvancedAi63c45b6107f84e54B7619ad406d001560_3
     averageColor: Color.fromHex('#6d6661'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#fdf5db'),
-    leastFrequentColor: Color.fromHex('#13273c'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#cb412a'), Color.fromHex('#fcffff')],
+    minmaxGreen: [Color.fromHex('#5e9682'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2e5d7c'), Color.fromHex('#fffeba')],
+    mostFrequentColor: Color.fromHex('#00000a'),
+    mostSaturatedColor: Color.fromHex('#000d1f'),
+    mostGroupedColor: Color.fromHex('#fdf5db'),
+    bottom: {
+        averageColor: Color.fromHex('#37353a'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#cb412a'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#618079'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#2e5d7c'), Color.fromHex('#fffeba')],
+        mostFrequentColor: Color.fromHex('#00000a'),
+        mostSaturatedColor: Color.fromHex('#000d1f'),
+        mostGroupedColor: Color.fromHex('#071121'),
+    },
 } satisfies IImageColorStats;

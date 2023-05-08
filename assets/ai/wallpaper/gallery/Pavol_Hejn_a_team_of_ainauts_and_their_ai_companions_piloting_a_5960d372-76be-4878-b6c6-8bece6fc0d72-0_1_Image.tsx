@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.json';
-import a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372_76be_4878_b6c6_8bece6fc0d72_0_1 from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.json';
 import source from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_5960d372-76be-4878-b6c6-8bece6fc0d72-0_1.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them.
@@ -45,6 +40,23 @@ ATeamOfAinautsAndTheirAiCompanionsPilotingA5960d37276be4878B6c68bece6fc0d720_1_I
     averageColor: Color.fromHex('#2b283a'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#04040f'),
-    leastFrequentColor: Color.fromHex('#030815'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#d02800'), Color.fromHex('#eaffff')],
+    minmaxGreen: [Color.fromHex('#4c8d7f'), Color.fromHex('#fff8ff')],
+    minmaxBlue: [Color.fromHex('#0738a1'), Color.fromHex('#fff48d')],
+    mostFrequentColor: Color.fromHex('#06091e'),
+    mostSaturatedColor: Color.fromHex('#02000d'),
+    mostGroupedColor: Color.fromHex('#04050c'),
+    bottom: {
+        averageColor: Color.fromHex('#1e1927'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#d02800'), Color.fromHex('#f8ffff')],
+        minmaxGreen: [Color.fromHex('#4c8d7f'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#0738a1'), Color.fromHex('#ffffcc')],
+        mostFrequentColor: Color.fromHex('#06091e'),
+        mostSaturatedColor: Color.fromHex('#01000a'),
+        mostGroupedColor: Color.fromHex('#04040c'),
+    },
 } satisfies IImageColorStats;

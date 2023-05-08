@@ -9,15 +9,10 @@
 
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
-<<<<<<< HEAD
-import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_2.json';
-import a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a_53a9_44ed_8f3e_89aa7e7919e9_0_2 from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_2.png';
-=======
-import { IImageColorStats } from '../../../../src/utils/image/computeImageColorStats';
+import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_2.json';
 import source from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_eeecd44a-53a9-44ed-8f3e-89aa7e7919e9-0_2.png';
->>>>>>> 64e54cefb08238cf116a29d1b1a13a8a44f215de
 
 /**
  * Image of A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.
@@ -45,6 +40,23 @@ AVintageStyleTravelPosterOfADistantPlanetWiEeecd44a53a944ed8f3e89aa7e7919e90_2_I
     averageColor: Color.fromHex('#b0815d'),
     lightestColor: Color.fromHex('#ffffff'),
     darkestColor: Color.fromHex('#000000'),
-    mostFrequentColor: Color.fromHex('#2c333b'),
-    leastFrequentColor: Color.fromHex('#e5d29d'),
+    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+    minmaxRed: [Color.fromHex('#ca4922'), Color.fromHex('#ffffff')],
+    minmaxGreen: [Color.fromHex('#66a68a'), Color.fromHex('#ffffff')],
+    minmaxBlue: [Color.fromHex('#2c3c58'), Color.fromHex('#ffffc9')],
+    mostFrequentColor: Color.fromHex('#eadaa8'),
+    mostSaturatedColor: Color.fromHex('#391f00'),
+    mostGroupedColor: Color.fromHex('#2c333b'),
+    bottom: {
+        averageColor: Color.fromHex('#796251'),
+        lightestColor: Color.fromHex('#ffffff'),
+        darkestColor: Color.fromHex('#000000'),
+        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
+        minmaxRed: [Color.fromHex('#ca4922'), Color.fromHex('#ffffff')],
+        minmaxGreen: [Color.fromHex('#888451'), Color.fromHex('#ffffff')],
+        minmaxBlue: [Color.fromHex('#2c3c58'), Color.fromHex('#ffffc9')],
+        mostFrequentColor: Color.fromHex('#eadaa8'),
+        mostSaturatedColor: Color.fromHex('#391f00'),
+        mostGroupedColor: Color.fromHex('#2c333b'),
+    },
 } satisfies IImageColorStats;
