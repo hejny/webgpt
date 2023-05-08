@@ -103,6 +103,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         const wallpaperColorStats = computeImageColorStats(await createImageInNode(wallpaperPath));
 
+        // TODO: !!! Allow quality and width to be passed as arguments into the component
         const wallpaperFileContent = await Promise.resolve(
             `
 

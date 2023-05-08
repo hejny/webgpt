@@ -8,6 +8,7 @@ import { computeImageMinmaxColors } from './computeImageMinmaxColors';
 import { computeImageMostFrequentColor } from './computeImageMostFrequentColor';
 import { computeImageMostGroupedColor } from './computeImageMostGroupedColor';
 import { computeImageMostSaturatedColor } from './computeImageMostSaturatedColor';
+import { scaleImage } from './downscaleImage';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
 
 /**
@@ -17,8 +18,8 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
     const bottomImage = image.crop(new Vector(0, image.height * 0.62), new Vector(image.width, image.height));
 
     return {
-        ...computeWholeImageColorStats(image),
-        bottom: computeWholeImageColorStats(bottomImage),
+        ...computeWholeImageColorStats(scaleImage(image, 0.1)),
+        bottom: computeWholeImageColorStats(scaleImage(bottomImage, 0.1)),
     };
 }
 
