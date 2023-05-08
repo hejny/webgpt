@@ -3,6 +3,7 @@ import { Color } from '../color/Color';
 import { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
 import { IImage } from './IImage';
+import { checkSizeValue } from './internal-utils/checkSizeValue';
 
 /**
  * A class that represents an image with a size and an array of pixels ⁘
@@ -25,6 +26,9 @@ export class Image implements IImage {
      */
     constructor(size: IVector, defaultColor: WithTake<Color> = Color.fromHex('#00000000')) {
         this.size = Vector.fromObject(size);
+
+        checkSizeValue('width', this.size.x);
+        checkSizeValue('height', this.size.y);
 
         // Initialize the pixels array with the given color or transparent black
         this.pixels = [];
