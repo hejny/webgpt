@@ -10,9 +10,9 @@
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
+import source from '../gallery-upscaled/Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_3.png';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_3.json';
-import source from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_to__a17b49f8-f171-47b4-a987-aab24214b106-0_3.png';
 
 /**
  * Image of AInauts and their AI companions working together to construct a massive, orbiting space elevator.

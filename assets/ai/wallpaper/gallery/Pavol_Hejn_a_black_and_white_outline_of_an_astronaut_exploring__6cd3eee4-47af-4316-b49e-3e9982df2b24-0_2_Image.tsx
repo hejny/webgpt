@@ -10,9 +10,9 @@
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
+import source from '../gallery-upscaled/Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_2.png';
 import { IWallpaperMetadata } from '../IWallpaperComponent';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_2.json';
-import source from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_2.png';
 
 /**
  * Image of A black and white outline of an astronaut exploring a distant planet, with intricate details and shading.
