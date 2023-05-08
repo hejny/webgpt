@@ -2,11 +2,12 @@ import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import { WithTake } from '../take/interfaces/ITakeChain';
 import { take } from '../take/take';
+import { IImage } from './IImage';
 
 /**
  * A class that represents an image with a size and an array of pixels ⁘
  */
-export class Image {
+export class Image implements IImage {
     /**
      * @@@
      */
@@ -33,6 +34,20 @@ export class Image {
                 this.pixels[i][j] = defaultColor;
             }
         }
+    }
+
+    /**
+     * A getter for the width of the image
+     */
+    public get width(): number {
+        return this.size.x;
+    }
+
+    /**
+     * A getter for the height of the image
+     */
+    public get height(): number {
+        return this.size.y;
     }
 
     /**
@@ -75,5 +90,26 @@ export class Image {
             // Throw an error if the position is out of bounds
             throw new Error(`Invalid pixel position (${position.x || 0}, ${position.y || 0})`);
         }
+    }
+
+    /**
+     * A method to crop the image
+     *
+     * @param point1 top left corner
+     * @param point2 bottom right corner
+     */
+    public crop(point1: IVector, point2: IVector): Image {
+        const topLeft = Vector.fromObject(point1).map((value) => Math.round(value));
+        const bottomRight = Vector.fromObject(point2).map((value) => Math.round(value));
+
+        const newImage = new Image(bottomRight.subtract(topLeft));
+
+        for (let x = topLeft.x; x < bottomRight.x; x++) {
+            for (let y = topLeft.y; y < bottomRight.y; y++) {
+                newImage.setPixel({ x: x - topLeft.x, y: y - topLeft.y }, this.getPixel({ x, y }));
+            }
+        }
+
+        return newImage;
     }
 }
