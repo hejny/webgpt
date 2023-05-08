@@ -57,7 +57,7 @@ export default function GalleryPage() {
                                 >
                                     <Item>
                                         <Item.Image>
-                                            <Wallpaper />
+                                            <Wallpaper quality={55} width={1920 / 2} />
                                         </Item.Image>
                                         <Item.Description>
                                             <ImagineTag>{Wallpaper.metadata.full_command}</ImagineTag>
