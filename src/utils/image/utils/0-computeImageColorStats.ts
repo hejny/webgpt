@@ -8,8 +8,8 @@ import { computeImageMinmaxColors } from './computeImageMinmaxColors';
 import { computeImageMostFrequentColor } from './computeImageMostFrequentColor';
 import { computeImageMostGroupedColor } from './computeImageMostGroupedColor';
 import { computeImageMostSaturatedColor } from './computeImageMostSaturatedColor';
-import { scaleImage } from './downscaleImage';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
+import { scaleImage } from './scaleImage';
 
 /**
  * Compute the image color statistics
