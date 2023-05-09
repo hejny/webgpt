@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 
 /**
  * A functional component that renders a footer section with some links ⁘
- * 
+ *
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
@@ -15,11 +15,9 @@ export function FooterSection() {
             <ul>
                 <li>© {new Date().getFullYear()}</li>
 
-                {/*
                 <li>
-                    <Link href="https://ai.ai.hejny.org">Pavol Hejný</Link>
+                    <Link href="https://pavolhejny.com">Pavol Hejný</Link>
                 </li>
-                */}
 
                 <li>
                     <Link href="/">{t('Footer.home')}</Link>
@@ -30,10 +28,6 @@ export function FooterSection() {
                     <Link href="https://blog.ai.ai.hejny.org">Blog</Link>
                 </li>
                 */}
-
-                <li>
-                    <Link href="/gallery">{t('Footer.gallery')}</Link>
-                </li>
 
                 <li>
                     <Link href="/contact">{t('Footer.contact')}</Link>
