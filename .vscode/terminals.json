@@ -48,8 +48,23 @@
             "focus": true
         },
         {
+            "name": "🏭🖼️ Generate wallpapers",
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-texts/generate-wallpapers-texts.ts",
+                "ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts"
+            ],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "🏭🖼️ Generate wallpapers library",
             "commands": ["ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🧾 Generate wallpapers texts",
+            "commands": ["ts-node ./scripts/generate-wallpapers-texts/generate-wallpapers-texts.ts"],
             "onlySingle": true,
             "focus": true
         },
