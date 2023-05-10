@@ -99,6 +99,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
+ * TODO: !!! Filters
+ * TODO: !! Preview page on hover on each item
  * TODO: !! i18n + make section
  * TODO: [🪒] Can be getStaticProps shared between all pages?
  * TODO: [🪒] Can be fonts shared between all pages?

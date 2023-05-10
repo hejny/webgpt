@@ -48,6 +48,7 @@ export function FooterSection() {
 }
 
 /**
+ * TODO: !!! Fix footer section
  * TODO: !! No cookie's sentence 
  * TODO: !! Email & follow subscription
  * TODO: !! Email & follow subscription + Popup as nice alert after 10s
