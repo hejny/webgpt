@@ -14,5 +14,5 @@ export function computeImageMinmaxColors(
 ): [WithTake<Color>, WithTake<Color>] /* <- TODO: Return some meaningfull range */ {
     const colors = Array.from(getImageUniqueColors(image));
     colors.sort((a, b) => colorDistanceSquared(color, a) - colorDistanceSquared(color, b));
-    return [colors[0], colors[colors.length - 1] /* <- TODO: !!! Use .at(0) .at(-1) */];
+    return [colors.at(0)!, colors.at(-1)!];
 }
