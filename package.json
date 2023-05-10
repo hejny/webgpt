@@ -79,6 +79,7 @@
         "jimp": "0.22.7",
         "js-yaml": "4.1.0",
         "jsdom": "21.1.1",
+        "moment": "^2.29.4",
         "organize-imports-cli": "0.10.0",
         "prettier": "2.8.1",
         "ts-jest": "29.0.5",

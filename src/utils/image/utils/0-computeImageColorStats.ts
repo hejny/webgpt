@@ -26,7 +26,7 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
 /**
  * Compute the image color statistics for whole image
  */
-function comuteWholeImageColorStats(image: IImage): IImageColorStatsRegion {
+function computeWholeImageColorStats(image: IImage): IImageColorStatsRegion {
     // image = scaleImage(image, 0.1);
     image = colorDownscaleImage(image, 16);
 

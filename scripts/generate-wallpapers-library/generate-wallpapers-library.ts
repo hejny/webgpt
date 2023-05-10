@@ -4,6 +4,7 @@ import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import glob from 'glob-promise';
+import moment from 'moment';
 import { normalizeTo_camelCase } from 'n12';
 import { capitalize } from 'n12/dist/capitalize';
 import { basename, dirname, join, relative } from 'path';
@@ -54,13 +55,24 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
     const wallpapers: Array<{ entityName: string; entityPath: string }> = [];
 
-    let i = 0;
+    const stats = {
+        total: wallpapersPaths.length,
+        done: -1,
+        startTime: moment(),
+    };
     for (const wallpaperPath of wallpapersPaths) {
-        i++;
         await forPlay();
-        console.info(
-            `🖼️🖼️ (${Math.round((i / wallpapersPaths.length) * 100)}%)  ${wallpaperPath.split('\\').join('/')}`,
-        );
+
+        stats.done++;
+        const statsTotalString = `${stats.done}/${stats.total}`;
+        const statsPercentString = `${Math.round((stats.done / wallpapersPaths.length) * 100)}%`;
+        const elapsedTime = moment().diff(stats.startTime);
+        const estimatedTime = (elapsedTime / stats.done) * (stats.total - stats.done);
+        const statsTimeEstimateString =
+            estimatedTime === Infinity ? '' : `${moment.duration(estimatedTime).humanize()} left`;
+        const statsString = `${statsPercentString} ${statsTotalString} ${statsTimeEstimateString}`;
+
+        console.info(chalk.bgGray(statsString) + ' ' + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
 
