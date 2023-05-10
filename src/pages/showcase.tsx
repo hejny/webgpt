@@ -11,7 +11,7 @@ import styles from '../styles/common.module.css';
 import { useWallpaper } from '../utils/hooks/useWallpaper';
 import { skinFromWallpaper } from '../utils/skinFromWallpaper';
 
-export default function IndexPage({ lang }: any) {
+export default function ShowcasePage({ lang }: any) {
     const Wallpaper = useWallpaper();
 
     return (

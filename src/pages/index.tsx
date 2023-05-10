@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { Vector } from 'xyzt';
 import { generated_wallpapers } from '../../assets/ai/wallpaper';
+import { ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image } from '../../assets/ai/wallpaper/gallery/Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_2_Image';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../components/ImagineTag/ImagineTag';
@@ -15,28 +16,23 @@ import { AppHead } from '../sections/00-AppHead/AppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
-import { useWallpaper } from '../utils/hooks/useWallpaper';
 import { skinFromWallpaper } from '../utils/skinFromWallpaper';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export default function GalleryPage() {
-    // const Wallpaper = randomItem(...generated_wallpapers); // generated_wallpapers[29];
-
-    const Wallpaper = useWallpaper(); /*generated_wallpapers.find(
-        (wallpaper) => wallpaper.metadata.id === '7e9b434d-59bc-4d69-a486-d7401d94f5e0',
-    )!;*/
-
-    console.log(Wallpaper);
+    const Wallpaper = ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image;
 
     return (
         <>
             <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
-            {Wallpaper && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
+            <SkinStyle skin={skinFromWallpaper(Wallpaper)} />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>{Wallpaper && <HeaderWallpaper {...{ Wallpaper }} />}</header>
+                <header>
+                    <HeaderWallpaper {...{ Wallpaper }} />
+                </header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
                     <TiledBackground />
@@ -50,7 +46,9 @@ export default function GalleryPage() {
                         <p>Images used on this page are generated using MidJourney:</p>
 
                         <Items itemsOnRow={2}>
-                            {generated_wallpapers /*.slice(0, 100)*/
+                            {generated_wallpapers
+
+                                .slice(0, 5) /* <- TODO: !!! Some inteligent pagination */
                                 .map((Wallpaper, i) => (
                                     // TODO: <MidjourneyImage/>
                                     // TODO: Show diffusion as animation
