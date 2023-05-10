@@ -47,8 +47,9 @@ export default function GalleryPage() {
 
                         <Items itemsOnRow={2}>
                             {generated_wallpapers
-
-                                .slice(0, 5) /* <- TODO: !!! Some inteligent pagination */
+                                // Random sort
+                                .sort(() => Math.random() - 0.5)
+                                .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
                                 .map((Wallpaper, i) => (
                                     // TODO: <MidjourneyImage/>
                                     // TODO: Show diffusion as animation
