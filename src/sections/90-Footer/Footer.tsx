@@ -51,14 +51,14 @@ export function FooterSection() {
  * TODO: !! No cookie's sentence 
  * TODO: !! Email & follow subscription
  * TODO: !! Email & follow subscription + Popup as nice alert after 10s
- * TODO: !!! Add all legal stuff
+ * TODO: !! Add all legal stuff
  *       @see https://www.inizio.cz/blog/povinne-udaje-webu/
  *       @see https://techheaven.org/org
  *       Also in Collboard AND other projects
  *       Ask if sídlo firmy is nessesary?
  * TODO: !!! Google analytics
  * TODO: !!! Smartlook
- * TODO: !!! Cookies bar
+ * TODO: !! Cookies bar
  * TODO: Use meaningfully OR remove </DisplayOn> OR 👀 remake to classes .desktop .mobile .tablet ...
 
  * TODO: Link to MidJourney + * generated with MidJourney

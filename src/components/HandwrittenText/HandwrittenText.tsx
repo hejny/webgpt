@@ -59,15 +59,15 @@ export function HandwrittenText(props: HandwrittenTextProps) {
                     // TODO: Preload the script and model d.bin HERE
                     // > await loadAndRunExternalScript('/handwritten/script.js')
 
-                    await forTime(1000 /* <- !!! How much is the true delay, can it work without delay? */);
+                    await forTime(100 /* <- !! How much is the true delay, can it work without delay? */);
 
                     if (!isMounted) {
                         return;
                     }
 
                     await handwriteText({
-                        // TODO: !!! Center
-                        // TODO: !!! Work with aspect ratio
+                        // TODO: !! Center
+                        // TODO: !! Work with aspect ratio
                         text: children,
                         color,
                         speed: 3 /* 7 */,
@@ -86,5 +86,4 @@ export function HandwrittenText(props: HandwrittenTextProps) {
     );
 }
 
-// TODO: !!! Integrate https://www.calligrapher.ai/ on frontend (or at least at backend)
 // TODO: [🎎] alt={removeMarkdownFormatting(removeMarkdownLinks(

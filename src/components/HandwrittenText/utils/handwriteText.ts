@@ -3,11 +3,11 @@ import { loadAndRunExternalScript } from './loadAndRunExternalScript';
 
 /**
  * An object that maps different styles of handwriting to their corresponding codes ⁘
- * 
+ *
  * @type {Object}
  */
 const HandwrittenStyle = {
-    // TODO: !!! extract to properties or flags - italic, Fancy, joined + italic vs cursive 
+    // TODO: !! extract to properties or flags - italic, Fancy, joined + italic vs cursive
     Random: '-', // –
     FancyTall: 44,
     FancyJoined: 54, // 2
@@ -22,7 +22,7 @@ const HandwrittenStyle = {
 
 /**
  * An interface that defines the options for the handwriteText function ⁘
- * 
+ *
  * @interface
  */
 interface IHandwriteTextOptions {
@@ -37,7 +37,7 @@ interface IHandwriteTextOptions {
 
 /**
  * A function that writes a given text in a given style and color on a given SVG element ⁘
- * 
+ *
  * @param {IHandwriteTextOptions} options - The options for the function.
  * @returns {Promise<void>} - A promise that resolves when the handwriting is done.
  */
@@ -48,5 +48,5 @@ export async function handwriteText(options: IHandwriteTextOptions) {
         color: options.color.toRgb(),
         style: HandwrittenStyle[options.style],
         modelSrc: '/handwritten/d.bin',
-    }) /* <- !!! Return promise */;
+    }) /* <- !! Return promise */;
 }

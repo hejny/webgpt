@@ -12,7 +12,3 @@ export function computeImageDarkestColor(image: IImage): WithTake<Color> {
     colors.sort((a, b) => colorLuminance(a) - colorLuminance(b));
     return colors[0];
 }
-
-/**
- * !!! Use only computeImageLightestColor OR just computeImageLightestNearestColor with white
- */

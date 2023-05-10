@@ -17,7 +17,6 @@ function App({ Component, pageProps }: AppProps) {
             <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                 <style jsx global>{`
                     html {
-                        /* TODO: !!!! Google fonts optimization in Next is just not wotking reliably - use it basic css import */
                         font-family: ${oswaltFont.style.fontFamily}, sans-serif;
                     }
                 `}</style>

@@ -65,16 +65,16 @@ export default function GalleryPage() {
                                                 <ImagineTag>{Wallpaper.metadata.full_command}</ImagineTag>
 
                                                 {/*
-                                            TODO: Put here link to MidJourney>
+                                                    TODO: !! Put in downloads link to MidJourney>
 
-                                            <a
-                                                href="https://www.midjourney.com/app/jobs/fe3480c5-76af-45da-ac4e-5177062bcb6b" /* <- !!! From metadata * /
-                                                target="_blank"
-                                                rel="noreferrer"
-                                            >
-                                            
-                                            
-                                            */}
+                                                    <a
+                                                        href="https://www.midjourney.com/app/jobs/..." /* <- From metadata * /
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                    
+                                                    
+                                                */}
                                             </Item.Description>
                                         </Item>
                                     </Link>

@@ -83,5 +83,5 @@ export function computeImageMostIsolatedColor(image: IImage): WithTake<Color> {
     }
     */
 
-    return mostIsolatedColor! /* <- !!! */;
+    return mostIsolatedColor! /* <- TODO: Remove "!" */;
 }

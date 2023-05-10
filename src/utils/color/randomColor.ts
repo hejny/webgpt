@@ -14,6 +14,6 @@ export function randomColor(): Color {
 }
 
 /**
- * TODO: !!! Use Internally Color.fromValues
- * TODO: !!! randomColorWithAlpha
+ * TODO: !! Use Internally Color.fromValues
+ * TODO: !! randomColorWithAlpha
  */

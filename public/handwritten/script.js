@@ -305,7 +305,6 @@ function handwriteText(options) {
         } else l = options.style /*parseInt( styleSelectElement.value )*/;
         const o = options.text;
 
-        //console.log('!!!', c);
         (getElement('save-button').style.display = 'block'), (Z = o), (c = Z.trim().replace(/\s+/g, ' '));
         const n = K(c);
         let v = Math.min(105 / n, 11);
@@ -575,7 +574,7 @@ function handwriteText(options) {
     var N = Math.exp;
     var P = Math.sqrt;
     var Q = Math.log;
-    var Random = /* Math.random */ () => 0.2; /* <- !!! Seed random */
+    var Random = /* Math.random */ () => 0.2; /* <- !! Seed random */
     var W = (Math.abs, Math.max, Math.min, Math.floor);
     var X = P(0.5);
     var G = 256;

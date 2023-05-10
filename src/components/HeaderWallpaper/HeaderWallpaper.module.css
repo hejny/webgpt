@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
 
-    /* <- TODO: !!!!! Use here real image MASS*/
+    /* <- TODO: !!! Use here real image MASS*/
 }
 
 .inner {
@@ -23,18 +23,10 @@
 
     /*
     max-width: 1200px;
-    /* <- TODO: !!!!! Use here real image shape:
+    /* <- TODO: !!! Use here real image shape:
     
         - http://localhost:4444/?wallpaper=0be0c3f8-8939-479c-a3c1-1e18dc7af80b Should be limited
         - http://localhost:4444/?wallpaper=56a6c41c-c24d-4c48-8018-287c506da553 should be unlimited
-
-        + !!! Better upscale all images
     
     */
 }
-
-/*
-
-TODO: !!!! Make here better mobile view
-
-*/

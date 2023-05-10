@@ -8,5 +8,5 @@ export function areColorsEqual(color1: Color, color2: Color): boolean {
 }
 
 /**
- * TODO: !!! For more than 2 colors
+ * TODO: Implement for N colors
  */
