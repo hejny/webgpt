@@ -24,7 +24,7 @@ export function take<TValue extends Takeable>(initialValue: TValue): WithTake<TV
 }
 
 /**
- * TODO: !!! Transfer back to Collboard (whole directory)
+ * TODO: !! Transfer back to Collboard (whole directory)
  * TODO: Optimize
  * TODO: Collision with lodash take utility
  * TODO: Better work with primitives
