@@ -47,7 +47,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         throw new Error(`Working tree is not clean`);
     }
 
-    const wallpapersDir = join(process.cwd(), 'assets/ai/wallpaper/gallery');
+    const wallpapersDir = join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
     const wallpapersPaths = await glob(
         join(wallpapersDir, '*.png' /* <- TODO: Maybe do not hardcode PNGs */).split('\\').join('/'),
     );

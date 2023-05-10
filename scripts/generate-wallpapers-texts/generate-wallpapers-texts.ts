@@ -1,12 +1,17 @@
 #!/usr/bin/env ts-node
 
+import * as dotenv from 'dotenv';
+dotenv.config({ path: '.env.local' });
+
 import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import glob from 'glob-promise';
 import moment from 'moment';
 import { dirname, join, relative } from 'path';
+import spaceTrim from 'spacetrim';
 import { IWallpaperMetadata, IWallpaperTexts } from '../../assets/ai/wallpaper/IWallpaperComponent';
+import { OPENAI_API_KEY } from '../../config';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
@@ -39,7 +44,19 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         throw new Error(`Working tree is not clean`);
     }
 
-    const wallpapersDir = join(process.cwd(), 'assets/ai/wallpaper/gallery');
+    /**/
+    const importDynamic = new Function('modulePath', 'return import(modulePath)');
+    const { ChatGPTAPI } = await importDynamic('chatgpt');
+    const chatGptApi = new ChatGPTAPI({
+        apiKey: OPENAI_API_KEY!,
+        completionParams: {
+            temperature: 0.5,
+            top_p: 0.8,
+        },
+    });
+    /**/
+
+    const wallpapersDir = join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
     const wallpapersPaths = await glob(
         join(wallpapersDir, '*.png' /* <- TODO: Maybe do not hardcode PNGs */).split('\\').join('/'),
     );
@@ -77,7 +94,36 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
 
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
 
-        const texts = { title: 'hoo', content: 'wololo' } satisfies IWallpaperTexts;
+        const texts = { title: '', content: '' } satisfies IWallpaperTexts;
+
+        /**/
+        const gptResponseForTitle = await chatGptApi.sendMessage(
+            spaceTrim(
+                (block) => `
+
+                    Write me short (max 3 words) title for website with main wallpaper that is:
+
+                    "${block(metadata.prompt)}"
+                
+                `,
+            ),
+        );
+        texts.title = gptResponseForTitle.text;
+        /**/
+
+        /**/
+        const gptResponseForContent = await chatGptApi.sendMessage(
+            spaceTrim(
+                (block) => `
+
+                    Write me some content for this website in markdown format.
+                
+                `,
+            ),
+            { parentMessageId: gptResponseForTitle.id },
+        );
+        texts.content = gptResponseForContent.text;
+        /**/
 
         await writeFile(textsPath, JSON.stringify(texts, null, 4) + '\n', 'utf8');
         console.info(`💾 ${relative(process.cwd(), textsPath).split('\\').join('/')}`);
