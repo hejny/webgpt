@@ -1,0 +1,1 @@
+TODO: `opaque` operator for creating same color but opaque

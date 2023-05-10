@@ -287,68 +287,8 @@ export class Color {
         return 255 - this.alpha;
     }
 
-    public withAlpha(alpha: number): WithTake<Color> {
-        return this.withMutation((r, g, b, a) => {
-            return [r, g, b, (((a / 255) * alpha) / 255) * 255];
-        });
-    }
-
-    public get negative(): WithTake<Color> {
-        // TODO: !!! negative should be operator
-        return this.withMutation((r, g, b, a) => {
-            return [255 - r, 255 - g, 255 - b, a];
-        });
-    }
-    public get grayscale(): WithTake<Color> {
-        // TODO: !!! grayscale should be operator
-        return this.withMutation((r, g, b, a) => {
-            const v = (r + b + g) / 3;
-            return [v, v, v, a];
-        });
-    }
-
-    /**
-     * Creates best text color for this background color
-     *
-     * @returns white or black color
-     */
-    public textColor(): WithTake<Color> {
-        // TODO: !!! grayscale should be operator nearest
-        if ((this.red + this.green + this.blue) / 3 / 255 > 0.5) {
-            return Color.fromString('black');
-        } else {
-            return Color.fromString('white');
-        }
-    }
-
-    public withMutation(
-        modifier: (red: number, green: number, blue: number, opacity: number) => [number, number, number, number],
-    ): WithTake<Color> {
-        // TODO: !!! Deprecate and remove
-        return take(
-            new Color(
-                ...(modifier(this.red, this.green, this.blue, this.alpha).map((value) => Math.round(value)) as [
-                    number,
-                    number,
-                    number,
-                    number,
-                ]),
-            ),
-        );
-    }
-
     public clone(): WithTake<Color> {
         return take(new Color(this.red, this.green, this.blue, this.alpha));
-    }
-
-    public get opaque(): WithTake<Color> {
-        // TODO: !!! opaque should be operator nearest
-        return this.withAlpha(1);
-    }
-
-    public get transparent(): WithTake<Color> {
-        // TODO: !!! transparent should be operator nearest
-        return this.withAlpha(0);
     }
 
     public toString(): string_color {
@@ -381,7 +321,7 @@ export class Color {
 }
 
 /**
- * TODO: !!! Transfer back to Collboard (whole directory)
+ * TODO: !! Transfer back to Collboard (whole directory)
  * TODO: Maybe [🏌️‍♂️] change ACRY toString => (toHex) toRbg when there will be toRgb and toRgba united
  * TODO: Convert getters to methods - getters only for values
  * TODO: Write tests
