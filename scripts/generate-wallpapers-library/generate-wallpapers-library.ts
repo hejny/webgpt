@@ -54,9 +54,13 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
     const wallpapers: Array<{ entityName: string; entityPath: string }> = [];
 
+    let i = 0;
     for (const wallpaperPath of wallpapersPaths) {
+        i++;
         await forPlay();
-        console.info(`🖼️🖼️  ${wallpaperPath.split('\\').join('/')}`);
+        console.info(
+            `🖼️🖼️ (${Math.round((i / wallpapersPaths.length) * 100)}%)  ${wallpaperPath.split('\\').join('/')}`,
+        );
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
 
