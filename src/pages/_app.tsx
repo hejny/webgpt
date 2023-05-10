@@ -4,7 +4,6 @@ import type { AppProps } from 'next/app';
 import { createContext } from 'react';
 import { DEBUG } from '../../config';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
-import '../styles/config.css';
 import '../styles/globals.css';
 import '../styles/reset.css';
 
