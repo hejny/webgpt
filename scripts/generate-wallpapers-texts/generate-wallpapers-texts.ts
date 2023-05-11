@@ -137,6 +137,8 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
             Write me short (max 3 words) title for website with main wallpaper that is:
 
             "${metadata.prompt}"
+
+            The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.
         
         `,
             false,
@@ -148,6 +150,9 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
             `
 
             Write me some content for this website in markdown format.
+            The content should be a short description of the website which is using this wallpaper.
+
+            Do not describe the wallpaper itself, but rather the website which is using it.
         
         `,
             true,
