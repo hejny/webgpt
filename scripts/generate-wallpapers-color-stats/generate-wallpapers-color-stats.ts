@@ -14,6 +14,7 @@ import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
 import { isFileExisting } from '../utils/isFileExisting';
+import { prettify } from '../utils/prettify';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -93,18 +94,16 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
 
         await writeFile(
             colorStatsPath,
-            // TODO: !!! Prettify
-            JSON.stringify(
-                colorStats,
-                (key, value) => {
+            await prettify(
+                JSON.stringify(colorStats, (key, value) => {
                     if (value instanceof TakeChain) {
                         return value.value.toHex();
                     } else {
                         return value;
                     }
-                },
-                4,
-            ) + '\n',
+                }),
+                'json',
+            ),
             'utf8',
         );
         console.info(`💾 ${relative(process.cwd(), colorStatsPath).split('\\').join('/')}`);
