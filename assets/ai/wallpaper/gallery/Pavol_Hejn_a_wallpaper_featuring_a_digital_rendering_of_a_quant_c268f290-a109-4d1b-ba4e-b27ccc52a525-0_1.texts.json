@@ -1,0 +1,8 @@
+{
+    "title": "\"Quantum Geometry Wallpaper\"",
+    "content": "# Quantum Geometry Wallpaper\n\nWelcome to our website, where you can download a stunning wallpaper featuring a digital rendering of a quantum computer. Our wallpaper is designed with a minimalist color scheme and geometric lines, making it a perfect addition to any tech enthusiast's desktop.\n\nAt Quantum Geometry Wallpaper, we believe that technology and art can be seamlessly integrated to create beautiful and inspiring designs. Our wallpaper is not only aesthetically pleasing but also represents the cutting-edge field of quantum computing.\n\nWe offer our wallpaper in various resolutions to ensure compatibility with your device. Whether you're using a desktop computer, laptop, or mobile device, you can enjoy our high-quality wallpaper without any distortion or blurring.\n\nThank you for visiting Quantum Geometry Wallpaper, and we hope you enjoy our unique design as much as we do!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a digital rendering of a quantum computer, with a minimalist color scheme and geometric lines.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

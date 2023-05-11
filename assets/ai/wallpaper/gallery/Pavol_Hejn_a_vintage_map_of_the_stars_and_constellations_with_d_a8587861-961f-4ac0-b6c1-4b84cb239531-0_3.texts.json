@@ -1,0 +1,8 @@
+{
+    "title": "\"Stellar Explorer Hub\"",
+    "content": "# Stellar Explorer Hub\n\nWelcome to the Stellar Explorer Hub, your go-to destination for all things space exploration! Our website is dedicated to providing you with up-to-date information on the latest space missions, discoveries, and technologies. \n\nAt Stellar Explorer Hub, we believe that space exploration is crucial for advancing our understanding of the universe and improving life on Earth. That's why we provide a platform for space enthusiasts to connect, share ideas, and stay informed about the latest developments in the field.\n\nOur website features a variety of resources, including articles, videos, and podcasts, all focused on space exploration. Whether you're a seasoned astronomer or just starting to explore the wonders of the cosmos, you'll find something of interest on our site.\n\nSo come join us on our mission to discover the mysteries of the universe and unlock the secrets of space exploration. With the Stellar Explorer Hub as your guide, the possibilities are endless!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

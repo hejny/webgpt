@@ -1,0 +1,8 @@
+{
+    "title": "\"AIGravity Lab\"",
+    "content": "# AIGravity Lab\n\nWelcome to AIGravity Lab, where we explore the fascinating intersection of artificial intelligence and human physiology. Our team of AInauts conduct experiments in a zero-gravity chamber to understand the effects of AI on the human body.\n\nThrough our research, we aim to uncover new insights into how AI can enhance human performance and well-being. From optimizing sleep patterns to improving cognitive function, we believe that AI has the potential to revolutionize the way we live and work.\n\nJoin us on this exciting journey as we push the boundaries of science and technology. Follow our blog for the latest updates on our research findings and stay tuned for upcoming events and opportunities to get involved.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

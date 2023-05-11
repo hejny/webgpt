@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbiting Experiments\"",
+    "content": "# Orbiting Experiments\n\nWelcome to Orbiting Experiments, the website dedicated to sharing the latest discoveries and research from a team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.\n\nOur team of scientists and engineers are pushing the boundaries of what we know about the universe and the potential for life beyond our own planet. Through cutting-edge technology and innovative thinking, we are exploring the mysteries of this distant moon and uncovering new insights into the origins of our solar system and the possibilities for extraterrestrial life.\n\nJoin us on this incredible journey as we share our findings and insights with the world. From stunning images of the moon's surface to detailed reports on our latest experiments, Orbiting Experiments is your go-to source for the latest news and developments in space exploration.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

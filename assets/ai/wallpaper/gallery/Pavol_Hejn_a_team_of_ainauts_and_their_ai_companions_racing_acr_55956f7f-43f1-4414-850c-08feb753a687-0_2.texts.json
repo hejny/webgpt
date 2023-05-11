@@ -1,0 +1,8 @@
+{
+    "title": "\"Desert AI Racing\"",
+    "content": "# Desert AI Racing\n\nWelcome to Desert AI Racing, the ultimate destination for high-speed racing on a desert planet with AI companions. Our website is dedicated to bringing you the latest news, updates, and insights into the world of AI-powered buggy racing.\n\nJoin our community of AInauts and experience the thrill of racing across the rugged terrain of a distant planet. With cutting-edge technology and advanced AI companions, you'll be able to push your skills to the limit and compete against some of the best racers in the galaxy.\n\nWhether you're a seasoned pro or just starting out, Desert AI Racing has something for everyone. From tips and tricks to in-depth analysis of the latest races, we've got you covered. So come join us and let's race to victory!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

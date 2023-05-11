@@ -1,0 +1,8 @@
+{
+    "title": "\"Beyond the Void\"",
+    "content": "# Beyond the Void\n\nWelcome to Beyond the Void, a website dedicated to exploring the mysteries of the universe. Our team of AInauts is on a mission to uncover the secrets of black holes and other celestial phenomena using cutting-edge technology.\n\nJoin us on our journey as we delve deeper into the unknown, pushing the boundaries of what we thought was possible. With stunning visuals and expert analysis, we aim to bring you closer to the wonders of the cosmos.\n\nWhether you're a seasoned astronomer or simply curious about the universe, Beyond the Void has something for everyone. So come along with us and discover the mysteries that lie beyond the void.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

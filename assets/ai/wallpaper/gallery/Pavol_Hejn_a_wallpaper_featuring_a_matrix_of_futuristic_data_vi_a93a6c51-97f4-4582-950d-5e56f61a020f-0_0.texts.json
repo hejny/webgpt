@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Matrix Wallpapers\"",
+    "content": "# Data Matrix Wallpapers\n\nWelcome to Data Matrix Wallpapers, your go-to source for futuristic data visualizations and graphs wallpapers. Our website offers a wide range of high-quality wallpapers featuring mesmerizing matrix-style designs that are sure to enhance the look of your desktop or mobile device.\n\nOur collection includes various themes such as technology, finance, science, and more, all designed to showcase the beauty of data visualization in an artistic way. Whether you're a data enthusiast or simply appreciate the aesthetic appeal of these designs, we have something for everyone.\n\nAll of our wallpapers are carefully curated and optimized for different screen sizes, ensuring that they look great on any device. Plus, we regularly update our collection with new designs, so be sure to check back often for fresh inspiration.\n\nAt Data Matrix Wallpapers, we believe that data can be beautiful, and we strive to bring that beauty to your screens. Browse our collection today and find the perfect wallpaper to elevate your digital experience.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a matrix of futuristic data visualizations and graphs\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

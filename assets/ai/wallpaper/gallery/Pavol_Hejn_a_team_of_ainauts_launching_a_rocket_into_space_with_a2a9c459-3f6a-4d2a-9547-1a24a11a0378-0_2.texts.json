@@ -1,0 +1,8 @@
+{
+    "title": "\"Spacebound AI\"",
+    "content": "# Spacebound AI\n\nWelcome to Spacebound AI, a website dedicated to exploring the intersection of artificial intelligence and space exploration. Our team of AInauts is passionate about using cutting-edge technology to push the boundaries of what's possible in space.\n\nHere at Spacebound AI, you'll find the latest news and updates on our efforts to launch rockets into space and explore the cosmos with the help of AI. We believe that AI has the potential to revolutionize space exploration by making it faster, safer, and more efficient than ever before.\n\nWhether you're a space enthusiast, an AI researcher, or just curious about the future of technology, we invite you to join us on this exciting journey. Follow our progress as we work to unlock the secrets of the universe and pave the way for humanity's next great adventure.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts launching a rocket into space, with the Earth visible in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

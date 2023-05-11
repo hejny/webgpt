@@ -1,0 +1,8 @@
+{
+    "title": "FractalFusion Gallery",
+    "content": "# FractalFusion Gallery\n\nWelcome to FractalFusion Gallery, the ultimate destination for fractal art enthusiasts! Our website showcases a stunning collection of digital artwork featuring intricate fractal patterns and bold colors.\n\nExplore our gallery to discover mesmerizing artworks created by talented artists from around the world. From abstract designs to geometric shapes, our collection offers a diverse range of fractal art that will leave you in awe.\n\nAt FractalFusion Gallery, we are passionate about promoting the beauty and complexity of fractal art. We believe that this unique form of digital art deserves recognition and appreciation, and we strive to provide a platform for artists to showcase their work and connect with like-minded individuals.\n\nWhether you're an artist looking to share your creations or a fan of fractal art, we invite you to join our community and immerse yourself in the fascinating world of fractals. Browse our collection, leave a comment, and connect with fellow fractal art enthusiasts today!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

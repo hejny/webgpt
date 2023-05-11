@@ -1,0 +1,8 @@
+{
+    "title": "\"Asteroid Odyssey\"",
+    "content": "# Asteroid Odyssey\n\nWelcome to Asteroid Odyssey, the ultimate destination for space enthusiasts! Our website is dedicated to bringing you the latest news and updates on space exploration, technology, and science. \n\nOur team of experts is passionate about space and is committed to providing you with accurate and up-to-date information. Whether you are interested in the latest developments in space travel or want to learn more about the mysteries of the universe, we have got you covered.\n\nAt Asteroid Odyssey, we believe that space exploration is crucial to our understanding of the world around us. Our goal is to inspire and educate people about the wonders of space and encourage them to get involved in the exploration and discovery of the final frontier.\n\nJoin us on this exciting journey as we explore the depths of space and uncover the secrets of the universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

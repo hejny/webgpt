@@ -1,0 +1,8 @@
+{
+    "title": "\"Astro AI Adventure\"",
+    "content": "# Astro AI Adventure\n\nWelcome to Astro AI Adventure, the ultimate destination for space enthusiasts and adventure seekers! Our website is dedicated to providing you with the latest news, insights, and resources on all things related to space exploration and artificial intelligence.\n\nAt Astro AI Adventure, we believe that the future of space travel lies in the hands of AI-powered spacecraft and their skilled human pilots. That's why we're passionate about bringing you stories of daring missions, cutting-edge technology, and the incredible people who are making it all happen.\n\nWhether you're a seasoned astronaut or simply curious about what lies beyond our planet, our website has something for everyone. From stunning visuals and immersive videos to expert analysis and insider interviews, we've got it all.\n\nSo come join us on this thrilling journey through the cosmos, as we explore new frontiers and push the boundaries of what's possible with AI and space travel. Let's blast off together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

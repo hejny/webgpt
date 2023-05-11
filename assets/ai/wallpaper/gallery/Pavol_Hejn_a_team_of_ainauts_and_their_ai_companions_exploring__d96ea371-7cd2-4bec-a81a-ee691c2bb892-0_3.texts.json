@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Cave Explorers\"",
+    "content": "# AI Cave Explorers\n\nWelcome to AI Cave Explorers, the ultimate destination for all space and technology enthusiasts! Our website features a team of AInauts and their AI companions as they embark on an exciting journey to explore a massive underground cave system on a distant planet.\n\nOur mission is to bring you the latest news and updates on the latest advancements in artificial intelligence and space exploration. We strive to educate and inspire our readers with fascinating stories and insights into the world of science and technology.\n\nJoin us on this thrilling adventure as we delve deeper into the mysteries of the universe and uncover the secrets hidden within the depths of the cave system. With stunning visuals and engaging content, AI Cave Explorers is the perfect platform for anyone interested in the wonders of space and AI.\n\nStay tuned for regular updates and new discoveries, and don't forget to subscribe to our newsletter to stay up-to-date with all the latest news and developments in the world of science and technology.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

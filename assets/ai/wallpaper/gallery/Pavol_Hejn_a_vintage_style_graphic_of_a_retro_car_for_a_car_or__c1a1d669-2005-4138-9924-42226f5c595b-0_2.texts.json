@@ -1,0 +1,8 @@
+{
+    "title": "\"Road Trip Adventures\"",
+    "content": "# Road Trip Adventures\n\nWelcome to Road Trip Adventures, your ultimate guide to exploring the world on four wheels! Our website is dedicated to providing you with all the information and inspiration you need to plan your next great adventure.\n\nWhether you're a seasoned road tripper or a first-time traveler, we've got you covered. Our team of experienced writers and travel experts have scoured the globe to bring you the best routes, destinations, and hidden gems that the world has to offer.\n\nFrom the stunning coastlines of California to the rugged mountains of New Zealand, we've got everything you need to plan your perfect road trip. We also provide practical advice on everything from packing essentials to vehicle maintenance, so you can hit the road with confidence.\n\nSo what are you waiting for? Start exploring our site today and get ready to embark on the road trip of a lifetime!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style graphic of a retro car for a car or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

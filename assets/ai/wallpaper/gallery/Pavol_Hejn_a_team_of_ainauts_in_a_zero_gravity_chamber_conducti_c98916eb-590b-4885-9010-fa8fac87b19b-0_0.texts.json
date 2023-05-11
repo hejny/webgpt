@@ -1,0 +1,8 @@
+{
+    "title": "AI Space Lab.",
+    "content": "# AI Space Lab\n\nWelcome to AI Space Lab, where we explore the intersection of artificial intelligence and space exploration. Our team of AInauts conduct experiments in zero-gravity chambers to better understand the effects of AI on the human body in space.\n\nWe believe that AI has the potential to revolutionize space exploration and improve the lives of astronauts during long-duration missions. By studying the impact of AI on the human body in a simulated space environment, we hope to unlock new insights and technologies that will enable us to push the boundaries of space exploration even further.\n\nJoin us on our journey as we explore the final frontier with the help of AI.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

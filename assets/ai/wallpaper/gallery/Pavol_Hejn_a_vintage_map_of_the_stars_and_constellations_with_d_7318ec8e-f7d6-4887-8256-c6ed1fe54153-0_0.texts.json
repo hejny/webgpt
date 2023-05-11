@@ -1,0 +1,8 @@
+{
+    "title": "\"Starry Space Art\"",
+    "content": "# Welcome to Starry Space Art\n\nStarry Space Art is a website dedicated to showcasing stunning space-themed artwork. Our main feature is a vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies.\n\nOur collection of artwork includes a variety of styles and mediums, from digital art to traditional paintings. We strive to curate a diverse selection of pieces that capture the awe-inspiring beauty of the cosmos.\n\nWhether you're a space enthusiast, an art lover, or simply looking for a unique piece to decorate your home or office, we hope you'll find something that inspires you on our website. So come explore the wonders of the universe through the eyes of talented artists from around the world at Starry Space Art.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

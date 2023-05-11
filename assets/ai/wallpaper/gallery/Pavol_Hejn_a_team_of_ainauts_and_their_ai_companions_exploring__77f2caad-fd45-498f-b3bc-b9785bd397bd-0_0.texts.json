@@ -1,0 +1,8 @@
+{
+    "title": "\"Cave Expedition AI\"",
+    "content": "# Cave Expedition AI\n\nWelcome to Cave Expedition AI, a website dedicated to sharing the adventures of a team of AInauts and their AI companions as they explore a massive, underground cave system on a distant planet. \n\nOur team is made up of expert scientists, engineers, and explorers who are utilizing cutting-edge AI technology to navigate and map this uncharted territory. Through our website, you can follow along with their progress, learn about the latest advancements in AI technology, and discover the wonders of this alien world.\n\nJoin us on this exciting journey as we push the boundaries of exploration and uncover the mysteries of the deep caves.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

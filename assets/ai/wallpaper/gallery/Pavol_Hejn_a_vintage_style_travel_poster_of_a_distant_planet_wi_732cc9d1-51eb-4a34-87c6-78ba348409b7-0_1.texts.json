@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Wanderlust\"",
+    "content": "# Galactic Wanderlust\n\nWelcome to Galactic Wanderlust, a website dedicated to inspiring your wanderlust for the unknown corners of the universe. Our site is designed to transport you to distant planets and galaxies through stunning vintage-style travel posters.\n\nOur collection of posters features artistic renderings of otherworldly landscapes and bold typography that captures the essence of each destination. Whether you're dreaming of exploring the icy terrain of Europa or the fiery volcanoes of Io, our posters will ignite your imagination and fuel your desire to explore the cosmos.\n\nWe believe that the universe is full of wonders waiting to be discovered, and we hope that our posters will inspire you to embark on your own interstellar adventures. So come along with us on a journey to the stars, and let your wanderlust take flight.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

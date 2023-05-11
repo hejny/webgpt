@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Matrix Wallpaper\"",
+    "content": "# Data Matrix Wallpaper\n\nWelcome to our website featuring a stunning wallpaper of futuristic data visualizations and graphs. Our website is dedicated to providing you with the latest and most cutting-edge data analysis tools and resources.\n\nWhether you're a data scientist, analyst, or just someone who loves exploring data, our website has everything you need to stay up-to-date with the latest trends and techniques in data analysis. From machine learning algorithms to data visualization tools, we've got it all.\n\nOur team of experts is constantly updating the website with new content, so be sure to check back often for the latest insights and resources. And don't forget to download our amazing data matrix wallpaper to add some style and inspiration to your desktop or mobile device.\n\nThank you for visiting our website, and we hope you enjoy exploring the world of data analysis with us!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a matrix of futuristic data visualizations and graphs\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Getaways\"",
+    "content": "# Galactic Getaways\n\nWelcome to Galactic Getaways, your one-stop-shop for interplanetary travel! Our website offers a wide variety of vacation packages to some of the most exotic and exciting planets in the galaxy. \n\nOur team of experienced travel agents has scoured the universe to bring you the best deals on transportation, accommodations, and activities. Whether you're looking to relax on a beach made of pure diamond sand, explore ancient ruins on a desolate moon, or sample the cuisine of an alien civilization, we've got you covered.\n\nAt Galactic Getaways, we pride ourselves on providing our customers with a seamless and stress-free booking experience. Our user-friendly website allows you to easily browse our selection of destinations and customize your trip to fit your unique preferences. And if you ever need assistance, our customer support team is available 24/7 to answer any questions you may have.\n\nSo what are you waiting for? Book your next adventure with Galactic Getaways and discover the wonders of the cosmos!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

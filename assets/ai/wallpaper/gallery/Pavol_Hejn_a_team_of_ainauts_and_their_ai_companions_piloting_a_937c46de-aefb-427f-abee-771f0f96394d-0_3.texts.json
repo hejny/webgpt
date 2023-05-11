@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Odyssey.",
+    "content": "# Galactic Odyssey\n\nGalactic Odyssey is a website dedicated to exploring the wonders of space and the possibilities of artificial intelligence. Our team of AInauts, along with their AI companions, pilot a massive spacecraft through the heart of the galaxy, encountering stars, nebulae, and other celestial phenomena along the way.\n\nOur mission is to inspire curiosity and wonder about the universe and the technology that allows us to explore it. Through articles, videos, and interactive experiences, we aim to share our love of space and AI with people from all walks of life.\n\nJoin us on our journey through the cosmos and discover the endless possibilities of the final frontier.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Retro Road Trips\"",
+    "content": "# Retro Road Trips\n\nWelcome to Retro Road Trips, your ultimate guide to exploring the world in style. Our website is dedicated to all things vintage and nostalgic, perfect for those who love to travel back in time and experience the beauty of a bygone era.\n\nOur team of experienced travelers has scoured the globe to bring you the best retro-inspired destinations, from classic car shows to charming roadside diners and motels. Whether you're planning a cross-country road trip or just looking for some inspiration for your next adventure, Retro Road Trips has got you covered.\n\nWith our helpful guides and insider tips, you'll be able to plan the perfect retro-themed itinerary, complete with all the best sights, sounds, and experiences. So why wait? Start planning your next journey today and join us on a trip down memory lane!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style graphic of a retro car for a car or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Galactic AI Journey.",
+    "content": "# Galactic AI Journey\n\nWelcome to Galactic AI Journey, where we take you on an interstellar adventure through the wonders of artificial intelligence. Our team of AInauts and their AI companions pilot a massive spacecraft through the heart of the galaxy, exploring new worlds and encountering strange phenomena.\n\nJoin us as we delve into the mysteries of the universe, using cutting-edge AI technology to unlock its secrets. From analyzing the composition of distant planets to predicting the behavior of black holes, our journey is one of discovery and wonder.\n\nWith stunning visuals and immersive storytelling, Galactic AI Journey offers a unique perspective on the cosmos and the role that AI plays in understanding it. So come aboard our ship and let us take you on a journey you'll never forget.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

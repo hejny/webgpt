@@ -1,0 +1,8 @@
+{
+    "title": "\"Frozen Moon Experiments\"",
+    "content": "# Frozen Moon Experiments\n\nWelcome to Frozen Moon Experiments, a website dedicated to showcasing the latest experiments and research being conducted by our team of AInauts on a massive frozen moon orbiting a gas giant planet. \n\nOur team is made up of some of the brightest minds in the field of artificial intelligence and space exploration. We are constantly pushing the boundaries of what is possible and exploring new frontiers in space.\n\nThrough this website, we aim to share our findings and discoveries with the world. From the latest data on the moon's composition to our groundbreaking experiments in terraforming, you'll find it all here.\n\nJoin us on this exciting journey as we explore the mysteries of the universe and unlock the secrets of this frozen moon.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

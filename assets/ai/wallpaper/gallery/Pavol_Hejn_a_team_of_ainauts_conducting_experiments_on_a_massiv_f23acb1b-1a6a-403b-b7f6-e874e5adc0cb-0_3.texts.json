@@ -1,0 +1,8 @@
+{
+    "title": "\"ExoLab Adventures\"",
+    "content": "# ExoLab Adventures\n\nWelcome to ExoLab Adventures, the ultimate destination for space enthusiasts! Our website is dedicated to providing you with the latest news and updates on space exploration, as well as showcasing our team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.\n\nJoin us on an exciting journey through the cosmos as we explore new worlds and push the boundaries of scientific discovery. From the latest breakthroughs in artificial intelligence to cutting-edge technologies used in space exploration, we've got it all covered.\n\nOur team of experts is constantly working on new projects and experiments, and we invite you to be a part of this incredible journey. Follow our progress as we conduct groundbreaking research and uncover the mysteries of the universe.\n\nWhether you're a seasoned space enthusiast or just starting out, ExoLab Adventures has something for everyone. So come join us on this epic adventure and discover the wonders of the cosmos like never before!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

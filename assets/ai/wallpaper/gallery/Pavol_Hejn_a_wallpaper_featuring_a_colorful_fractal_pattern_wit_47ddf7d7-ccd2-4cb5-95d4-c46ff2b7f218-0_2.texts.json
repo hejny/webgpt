@@ -1,0 +1,8 @@
+{
+    "title": "Fractal Fusion.",
+    "content": "# Fractal Fusion\n\nFractal Fusion is a website that brings together the beauty and complexity of fractal patterns with the simplicity of wallpaper design. Our curated collection of wallpapers featuring colorful and intricate fractal designs will add a unique touch to any desktop or mobile device.\n\nOur wallpapers are carefully selected to provide a visually stunning experience while remaining functional and easy to use. Whether you're looking for a bold statement piece or a subtle accent, our collection has something for everyone.\n\nAt Fractal Fusion, we believe that art should be accessible to all, which is why we offer our wallpapers free of charge. Simply browse our collection, choose your favorite design, and download it in the appropriate size for your device.\n\nJoin us on a journey through the mesmerizing world of fractals and elevate your digital space with our stunning wallpapers.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

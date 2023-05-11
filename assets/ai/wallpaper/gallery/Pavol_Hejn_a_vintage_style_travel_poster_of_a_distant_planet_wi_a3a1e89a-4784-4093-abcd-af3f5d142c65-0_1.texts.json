@@ -1,0 +1,8 @@
+{
+    "title": "\"Planet Explorer Hub\"",
+    "content": "# Planet Explorer Hub\n\nWelcome to the Planet Explorer Hub, your one-stop-shop for all things related to interstellar travel and exploration! Our website is dedicated to providing you with the latest news, resources, and information about the most exciting destinations in the galaxy.\n\nWhether you're a seasoned space traveler or just starting out on your journey, our team of experts has curated a selection of the best travel guides, tips, and recommendations to help you make the most of your adventures. From exotic alien landscapes to bustling space stations, we've got you covered.\n\nOur community of like-minded explorers is always growing, so be sure to join us on our forums and social media channels to connect with fellow travelers and share your own experiences. And don't forget to check out our online store for all the gear and gadgets you'll need for your next mission.\n\nSo what are you waiting for? Start exploring the universe today with Planet Explorer Hub!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}
