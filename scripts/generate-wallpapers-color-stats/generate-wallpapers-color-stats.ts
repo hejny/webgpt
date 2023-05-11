@@ -9,6 +9,7 @@ import { dirname, join, relative } from 'path';
 import { IWallpaperMetadata } from '../../assets/ai/wallpaper/IWallpaperComponent';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { computeImageColorStats } from '../../src/utils/image/utils/0-computeImageColorStats';
+import { TakeChain } from '../../src/utils/take/classes/TakeChain';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
@@ -86,9 +87,26 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
         }
 
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
-        const colorStats = computeImageColorStats(await createImageInNode(wallpaperPath) /* <- TODO: Create from url */);
+        const colorStats = computeImageColorStats(
+            await createImageInNode(wallpaperPath) /* <- TODO: Create from url */,
+        );
 
-        await writeFile(colorStatsPath, JSON.stringify(colorStats, null, 4) + '\n', 'utf8');
+        await writeFile(
+            colorStatsPath,
+            // TODO: !!! Prettify
+            JSON.stringify(
+                colorStats,
+                (key, value) => {
+                    if (value instanceof TakeChain) {
+                        return value.value.toHex();
+                    } else {
+                        return value;
+                    }
+                },
+                4,
+            ) + '\n',
+            'utf8',
+        );
         console.info(`💾 ${relative(process.cwd(), colorStatsPath).split('\\').join('/')}`);
     }
 
