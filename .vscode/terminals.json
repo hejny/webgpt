@@ -69,6 +69,12 @@
             "focus": true
         },
         {
+            "name": "🏭🎨 Generate wallpapers color stats",
+            "commands": ["ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "👊 Kill all 4444",
             "commands": ["npx kill-port 3000 "],
             "onlySingle": true,

@@ -49,7 +49,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
     const wallpapersDir = join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
     const wallpapersPaths = await glob(
-        join(wallpapersDir, '*.png' /* <- TODO: Maybe do not hardcode PNGs */).split('\\').join('/'),
+        join(wallpapersDir, '*.png' /* <- TODO: !!! Use here metadata files */).split('\\').join('/'),
     );
     const indexFilePath = join(wallpapersDir, '..', 'index.tsx');
 
