@@ -10,6 +10,7 @@ import glob from 'glob-promise';
 import moment from 'moment';
 import { dirname, join, relative } from 'path';
 import spaceTrim from 'spacetrim';
+import { forTime } from 'waitasecond';
 import { IWallpaperMetadata, IWallpaperTexts } from '../../assets/ai/wallpaper/IWallpaperComponent';
 import { OPENAI_API_KEY } from '../../config';
 import { commit } from '../utils/autocommit/commit';
@@ -46,7 +47,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
 
     /**/
     const importDynamic = new Function('modulePath', 'return import(modulePath)');
-    const { ChatGPTAPI } = await importDynamic('chatgpt');
+    const { ChatGPTAPI, ChatGPTError } = await importDynamic('chatgpt');
     const chatGptApi = new ChatGPTAPI({
         apiKey: OPENAI_API_KEY!,
         completionParams: {
@@ -54,6 +55,31 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
             top_p: 0.8,
         },
     });
+
+    let lastMessageId: string | undefined = undefined;
+    async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
+        try {
+            const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
+                parentMessageId: isContinuingConversation
+                    ? lastMessageId
+                    : undefined /* <- Note: [5] This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
+            });
+
+            lastMessageId = gptResponseForContent.id;
+            return gptResponseForContent.text;
+        } catch (error) {
+            if (!(error instanceof ChatGPTError)) {
+                throw error;
+            }
+
+            console.warn(`⚠️  ${error.message}`);
+            console.warn(`💤  Retrying in 1 minute`);
+
+            await forTime(1000 * 60);
+
+            return askGpt(message, isContinuingConversation);
+        }
+    }
     /**/
 
     const wallpapersDir = join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
@@ -67,6 +93,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         startTime: moment(),
     };
     for (const wallpaperPath of wallpapersPaths) {
+        // Note: We can not make this parallel because of [5]
         await forPlay();
 
         stats.done++;
@@ -97,32 +124,27 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         const texts = { title: '', content: '' } satisfies IWallpaperTexts;
 
         /**/
-        const gptResponseForTitle = await chatGptApi.sendMessage(
-            spaceTrim(
-                (block) => `
+        texts.title = await askGpt(
+            `
 
-                    Write me short (max 3 words) title for website with main wallpaper that is:
+            Write me short (max 3 words) title for website with main wallpaper that is:
 
-                    "${block(metadata.prompt)}"
-                
-                `,
-            ),
+            "${metadata.prompt}"
+        
+        `,
+            false,
         );
-        texts.title = gptResponseForTitle.text;
         /**/
 
         /**/
-        const gptResponseForContent = await chatGptApi.sendMessage(
-            spaceTrim(
-                (block) => `
+        texts.content = await askGpt(
+            `
 
-                    Write me some content for this website in markdown format.
-                
-                `,
-            ),
-            { parentMessageId: gptResponseForTitle.id },
+            Write me some content for this website in markdown format.
+        
+        `,
+            true,
         );
-        texts.content = gptResponseForContent.text;
         /**/
 
         await writeFile(textsPath, JSON.stringify(texts, null, 4) + '\n', 'utf8');
