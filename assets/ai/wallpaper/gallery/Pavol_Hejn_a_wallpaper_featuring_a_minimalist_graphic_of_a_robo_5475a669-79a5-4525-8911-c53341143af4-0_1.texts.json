@@ -1,0 +1,8 @@
+{
+    "title": "\"RoboNote Space\"",
+    "content": "# Welcome to RoboNote Space!\n\nOur website is the perfect place for all your note-taking and sketching needs. With our minimalist robot hand graphic, you'll be inspired to jot down all your ideas and thoughts in a futuristic and creative way.\n\nWhether you're a student, an artist, or just someone who loves to doodle, our space-themed wallpaper will transport you to a world of endless possibilities. Take notes, sketch out your next masterpiece, or simply use our space for brainstorming - the choice is yours!\n\nWith a clean and simple design, our website is easy to navigate and use. We believe that creativity should be accessible to everyone, which is why we offer our services for free. So come on in, take a seat, and let your imagination run wild in RoboNote Space!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
+    }
+}

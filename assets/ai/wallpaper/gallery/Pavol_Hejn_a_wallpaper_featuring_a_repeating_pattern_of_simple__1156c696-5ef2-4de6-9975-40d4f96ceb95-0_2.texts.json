@@ -1,0 +1,8 @@
+{
+    "title": "\"Equation Wallpapers\"",
+    "content": "👋 Welcome to our website! Here you can find a collection of sleek and modern wallpapers featuring simple equations and formulas. Our minimalist designs are perfect for anyone who loves math or wants to add a touch of sophistication to their device's background. \n\nOur wallpapers are carefully crafted to be both aesthetically pleasing and functional. The repeating patterns of equations and formulas create a unique texture that is sure to catch the eye, while the simplicity of the design ensures that it won't distract from your icons or widgets.\n\nWhether you're a student, a teacher, or just someone who appreciates the beauty of mathematics, we have a wallpaper that's perfect for you. Browse our collection today and find the perfect equation wallpaper to elevate your device's style!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
+    }
+}

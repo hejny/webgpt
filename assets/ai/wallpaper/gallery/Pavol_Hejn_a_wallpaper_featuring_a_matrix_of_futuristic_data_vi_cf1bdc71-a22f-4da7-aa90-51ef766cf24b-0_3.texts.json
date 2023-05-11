@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Matrix Wallpaper\"",
+    "content": "# Welcome to our website!\n\nWe offer a unique and futuristic experience with our data-driven approach to wallpaper design. Our wallpaper features a mesmerizing matrix of visualizations and graphs that are sure to impress anyone who sees it.\n\nOur website is dedicated to providing high-quality wallpapers that are both visually stunning and informative. We believe that data can be beautiful, and our wallpaper is a testament to that belief.\n\nWhether you're looking to spruce up your desktop or add some flair to your phone's home screen, our wallpaper is the perfect choice. With its intricate details and bold colors, it's sure to make a statement wherever it's displayed.\n\nSo why settle for a boring, static wallpaper when you can have one that's both beautiful and informative? Check out our selection today and see for yourself why our data matrix wallpaper is the talk of the town!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a matrix of futuristic data visualizations and graphs\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Equation Wall Art\"",
+    "content": "👋 Welcome to our website! \n\nWe are a platform that celebrates the beauty of mathematics in a unique and modern way. Our wallpaper features a stunning pattern of equations and formulas, arranged in a minimalist design that's sure to impress. \n\nWhether you're a mathematician, scientist, or simply appreciate the elegance of numbers, our wallpaper is perfect for adding a touch of sophistication to any space. \n\nBrowse our collection today and discover how our equation wall art can transform your home or office into a stylish and inspiring environment.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
+    }
+}
