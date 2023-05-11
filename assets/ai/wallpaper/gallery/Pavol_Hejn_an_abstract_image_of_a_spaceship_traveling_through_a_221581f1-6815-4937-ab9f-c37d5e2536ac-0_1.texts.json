@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Dreamscape\"",
+    "content": "Welcome to our website, where we invite you to explore the depths of your imagination. Our abstract image of a spaceship traveling through a wormhole is just a glimpse of what awaits you here. \n\nOur website is a portal to a world of vibrant colors and surreal patterns that will take you on a journey beyond your wildest dreams. Whether you're looking for inspiration or simply want to escape reality for a moment, our website has something for everyone.\n\nWith a user-friendly interface and easy navigation, you can browse through our collection of wallpapers and find the perfect one to suit your mood. From futuristic cityscapes to cosmic landscapes, our selection of high-quality images will transport you to another dimension.\n\nSo come and join us on this adventure, and let your imagination run wild. With our abstract wallpaper as your guide, anything is possible.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Swirls.",
+    "content": "Galactic Swirls is a website that offers a visually stunning experience for those who appreciate abstract art and the wonders of the universe. Our main feature is an eye-catching spiral galaxy wallpaper that serves as the backdrop for our content. Whether you're looking for inspiration, relaxation, or just something beautiful to gaze upon, Galactic Swirls has got you covered. Our site is easy to navigate, with a simple design that allows the artwork to take center stage. Join us on a journey through the cosmos and immerse yourself in the swirling colors and patterns of our galaxy.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spiral galaxy, with bright colors and swirling patterns that evoke a sense of movement and depth.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

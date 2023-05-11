@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Chatbot Hub\"",
+    "content": "Welcome to AI Chatbot Hub! Our website is dedicated to providing the latest news, insights, and resources on artificial intelligence-powered chatbots. We believe that chatbots are revolutionizing the way we interact with technology, and we want to help you stay ahead of the curve.\n\nOur team of experts curates the best content from around the web, including articles, videos, and podcasts, so you can stay informed about the latest trends and developments in the world of chatbots. Whether you're a business owner looking to implement a chatbot on your website or a developer interested in building your own chatbot, we've got you covered.\n\nJoin our community of chatbot enthusiasts and stay up-to-date with the latest news and insights. Thanks for visiting AI Chatbot Hub!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of an AI-powered chatbot, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

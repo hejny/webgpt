@@ -1,0 +1,8 @@
+{
+    "title": "\"Oceanic Ambiance\"",
+    "content": "Welcome to our website, where you can immerse yourself in the tranquil beauty of the ocean. Our underwater scene with coral and fish wallpaper sets the tone for a calming and peaceful browsing experience. \n\nExplore our site and discover a collection of content that is as diverse and vibrant as the marine life depicted in our wallpaper. From informative articles on marine biology to stunning photography of the world's oceans, we offer something for everyone who shares our love and appreciation for the sea.\n\nSo take a deep breath, relax, and let us transport you to an underwater world of wonder and awe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An underwater scene with coral and fish\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

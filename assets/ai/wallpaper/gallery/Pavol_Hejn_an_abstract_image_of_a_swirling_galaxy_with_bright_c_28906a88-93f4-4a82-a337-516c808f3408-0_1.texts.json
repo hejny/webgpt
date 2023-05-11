@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Dreams.",
+    "content": "Welcome to Galactic Dreams ✨\n\nOur website is a hub for dreamers and stargazers alike. We provide a space for those who seek inspiration, imagination, and wonder. Our collection of articles, stories, and art pieces will take you on a journey through the cosmos.\n\nExplore our galaxy through the eyes of artists and writers from all over the world. From science fiction to poetry, we have something for everyone. Join our community and share your own creative works with fellow space enthusiasts.\n\nLet your mind wander and get lost in the beauty of the universe. At Galactic Dreams, the possibilities are endless.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a swirling galaxy, with bright colors and intricate patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

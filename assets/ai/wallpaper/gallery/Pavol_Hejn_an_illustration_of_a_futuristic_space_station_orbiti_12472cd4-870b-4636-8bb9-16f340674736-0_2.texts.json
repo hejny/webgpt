@@ -1,0 +1,8 @@
+{
+    "title": "Orbiting Worlds.",
+    "content": "Welcome to Orbiting Worlds! \n\nOur website is dedicated to all things space, featuring the latest news and updates on space exploration, technology, and science. We strive to provide our readers with informative and engaging content that sparks their curiosity about the universe beyond our planet.\n\nFrom the latest discoveries in exoplanet research to the cutting-edge technologies being developed for space travel, we cover it all. Our team of expert writers and researchers are passionate about space and are committed to bringing you the most accurate and up-to-date information available.\n\nWhether you're a seasoned space enthusiast or just getting started in your journey of discovery, Orbiting Worlds has something for everyone. Join us as we explore the final frontier and uncover the mysteries of the universe! 🚀🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

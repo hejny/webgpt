@@ -1,0 +1,8 @@
+{
+    "title": "\"VR Gradient Wallpapers\"",
+    "content": "Welcome to our website featuring a collection of stunning wallpapers that showcase the beauty of virtual reality technology. Our wallpapers feature simple yet captivating illustrations of VR headsets against gradient backgrounds of contrasting colors, creating a visually striking effect on your desktop or mobile device. \n\nWhether you're a fan of VR gaming or simply love the futuristic look of VR technology, our collection has something for everyone. With a variety of color schemes and designs to choose from, you're sure to find the perfect wallpaper to suit your style.\n\nAll of our wallpapers are available in high-resolution and are free to download, making it easy to add a touch of tech-inspired flair to your device. So why wait? Browse our collection today and give your screen a fresh new look with our VR Gradient Wallpapers!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

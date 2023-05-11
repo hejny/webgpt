@@ -1,0 +1,8 @@
+{
+    "title": "\"Abstract Web Patterns\"",
+    "content": "Welcome to our website, where we showcase the latest web design trends and patterns through a vibrant and dynamic wallpaper. Our abstract shapes and colors are inspired by the ever-changing landscape of the internet, representing the fluidity and creativity that defines modern web design. Whether you're a designer looking for inspiration or simply appreciate the beauty of abstract art, our wallpaper is sure to add a touch of style to your desktop or mobile device. Join us on this journey of exploration and discovery as we celebrate the power of design to transform our world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Cosmic Portal\"",
+    "content": "Welcome to Cosmic Portal 🚀\n\nOur website is a gateway to the unknown depths of the universe. Here, you will find a collection of the most fascinating and mind-bending articles about space exploration, extraterrestrial life, and the mysteries of the cosmos.\n\nOur team of experts scours the latest scientific research and news to bring you the most up-to-date information on the universe we inhabit. From the latest discoveries by NASA and other space agencies, to cutting-edge theories about the nature of reality itself, we cover it all.\n\nWhether you're a seasoned astronomer or just someone who's curious about the wonders of the universe, Cosmic Portal is the perfect place for you. So come join us on this journey through the stars, and let's explore the infinite possibilities of the cosmos together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spaceship approaching a wormhole, with bright colors and distorted shapes.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

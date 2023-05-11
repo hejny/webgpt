@@ -1,0 +1,8 @@
+{
+    "title": "\"Golden Futuristic Decor\"",
+    "content": "Welcome to our website! We are a platform that celebrates the fusion of Art Deco-inspired design with futuristic elements. Our unique blend of classic and modern styles is reflected in our stunning wallpaper, featuring shades of gold and black, along with robot arms and AI nodes.\n\nOur website offers a variety of resources for those who appreciate this aesthetic, including articles on the history and evolution of Art Deco and its influence on contemporary design. We also feature interviews with designers and artists who incorporate these styles into their work.\n\nWhether you're an interior designer looking for inspiration, or simply someone who appreciates beautiful and unique design, we hope you'll find something to love on our website. So come explore with us and discover the beauty of Golden Futuristic Decor!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An Art Deco-inspired pattern in shades of gold and black, with futuristic elements such as robot arms and AI nodes.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

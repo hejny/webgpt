@@ -1,0 +1,8 @@
+{
+    "title": "\"Binary Backdrop Hub\"",
+    "content": "Welcome to Binary Backdrop Hub, your go-to destination for sleek and modern wallpapers featuring repeating patterns of binary code. Our black and white color scheme and simple font make our wallpapers perfect for any tech enthusiast or minimalist. Whether you're looking to spruce up your desktop background or add some personality to your phone screen, we've got you covered with a wide variety of designs to choose from. With our easy-to-use website, you can browse and download high-quality wallpapers in just a few clicks. Join our community today and elevate your digital aesthetic with Binary Backdrop Hub.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of binary code, in a simple font and black and white color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Robot Head Wallpaper\"",
+    "content": "This website features a sleek and minimalist black and white graphic of a robot's head against a solid colored background. The wallpaper is perfect for anyone who wants to add a touch of futuristic style to their desktop or mobile device. With its simple yet eye-catching design, this wallpaper is sure to make a statement on any screen. Whether you're a fan of science fiction or just appreciate clean, modern design, this wallpaper is the perfect choice for you. So why wait? Download it today and give your device a fresh new look!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple black and white graphic of a robot's head, against a solid colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

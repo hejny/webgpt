@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Decor Hub.",
+    "content": "Welcome to Galactic Decor Hub! Our website is dedicated to bringing the beauty and wonder of the cosmos into your home. We offer a wide variety of products that feature stunning images of galaxies, nebulae, and other celestial bodies.\n\nWhether you're looking for a new piece of wall art, a unique phone case, or even a cozy blanket, we have something for everyone. Our products are made with high-quality materials and feature vibrant colors and intricate patterns that are sure to impress.\n\nAt Galactic Decor Hub, we believe that everyone should be able to enjoy the beauty of the universe, no matter where they live or what their budget is. That's why we offer affordable prices and fast shipping on all of our products.\n\nSo why wait? Browse our selection today and bring a little piece of the cosmos into your life! 🚀✨🪐",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a swirling galaxy, with bright colors and intricate patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Tech Hub\"",
+    "content": "Welcome to our website, where we explore the cutting-edge world of neural technology. Our team of experts is dedicated to bringing you the latest news and insights on everything from artificial intelligence to machine learning. \n\nThrough our articles and resources, we aim to provide a comprehensive understanding of how neural networks are changing the way we live and work. Whether you're a seasoned professional or just starting out in the field, we have something for everyone.\n\nJoin us as we delve into the intricate lines of neural networks and uncover the possibilities they hold. With our dark and technological color palette, you'll feel right at home in this futuristic world. \n\nStay up-to-date with the latest developments in neural tech by subscribing to our newsletter and following us on social media. We can't wait to share this exciting journey with you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a neural network, with intricate lines and a dark and technological color palette.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

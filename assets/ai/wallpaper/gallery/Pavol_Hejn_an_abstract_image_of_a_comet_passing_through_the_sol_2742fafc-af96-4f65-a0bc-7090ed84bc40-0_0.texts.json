@@ -1,0 +1,8 @@
+{
+    "title": "Comet's Voyage.",
+    "content": "Welcome to Comet's Voyage! 🚀\n\nOur website is dedicated to bringing you the latest news and information about space exploration, astronomy, and the mysteries of the universe. We strive to provide our readers with engaging content that will inspire curiosity and wonder about the cosmos.\n\nWhether you're a seasoned astronomer or just starting your journey of discovery, we have something for everyone. From stunning images captured by telescopes and spacecraft to in-depth articles on the latest scientific discoveries, we aim to educate and entertain.\n\nJoin us on this journey through the vast expanse of space as we explore the wonders of the universe. Let's discover together what lies beyond our planet and unlock the secrets of the cosmos. 🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a comet passing through the solar system, with bright colors and swirling patterns that represent its trajectory.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

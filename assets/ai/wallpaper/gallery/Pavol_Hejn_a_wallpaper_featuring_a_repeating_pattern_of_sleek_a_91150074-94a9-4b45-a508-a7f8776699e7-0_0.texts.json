@@ -1,0 +1,8 @@
+{
+    "title": "\"Digital Device Patterns\"",
+    "content": "Welcome to our website! Here you can find a collection of sleek and modern digital device patterns that will add a touch of sophistication to your desktop or mobile device. Our wallpapers feature repeating patterns of smartphones, tablets, and laptops set against a gradient background. With a wide range of colors and designs to choose from, you're sure to find the perfect wallpaper to suit your style. Whether you're looking for a minimalist design or something more vibrant, our collection has got you covered. Download your favorite pattern today and give your device a fresh new look!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

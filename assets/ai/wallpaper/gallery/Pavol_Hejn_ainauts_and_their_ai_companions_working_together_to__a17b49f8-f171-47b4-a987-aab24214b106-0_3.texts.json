@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Space Build\"",
+    "content": "🚀 Welcome to AI Space Build! 🌌\n\nOur website is dedicated to showcasing the incredible potential of artificial intelligence and its role in building a better future for humanity. Our main focus is on the construction of a massive, orbiting space elevator, which will revolutionize space travel and make it accessible to people all around the world.\n\nThrough our website, you can learn about the latest developments in AI technology and how it is being used to construct this incredible feat of engineering. You can also follow the progress of our team of AInauts and their AI companions as they work together to make this dream a reality.\n\nWhether you are an AI enthusiast, a space exploration buff, or simply someone who is excited about the possibilities of the future, we invite you to join us on this journey. Together, we can build a brighter tomorrow!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts and their AI companions working together to construct a massive, orbiting space elevator.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

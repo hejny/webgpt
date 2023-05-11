@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic City Walls\"",
+    "content": "Welcome to our website, where you can find a stunning wallpaper featuring a futuristic cityscape in solid colors such as orange or green. Our website is dedicated to providing you with the perfect background for your desktop or mobile device, whether you're looking for something bold and eye-catching or sleek and modern.\n\nOur collection of wallpapers is carefully curated to ensure that every image we offer is of the highest quality and perfectly suited to the needs of our users. Whether you're a fan of minimalist designs or more intricate graphics, you're sure to find something that catches your eye on our site.\n\nSo why wait? Browse our collection today and discover the perfect wallpaper to transform your device into a work of art. With our easy-to-use interface and wide selection of images, finding the perfect wallpaper has never been easier.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a single graphic of a futuristic cityscape, in a solid color such as orange or green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

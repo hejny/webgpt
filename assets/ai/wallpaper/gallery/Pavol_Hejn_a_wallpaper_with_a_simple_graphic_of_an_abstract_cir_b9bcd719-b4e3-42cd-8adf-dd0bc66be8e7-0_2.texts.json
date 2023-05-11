@@ -1,0 +1,8 @@
+{
+    "title": "\"Circuit Board HQ\"",
+    "content": "Welcome to Circuit Board HQ! Our website is dedicated to providing you with the latest news and information about circuit boards and electronics. Whether you're a hobbyist or a professional, we've got you covered with articles, tutorials, and reviews of the latest products and technologies. Our team of experts is passionate about all things electronics, and we're here to help you stay up-to-date and informed. So come on in and explore our site - we're sure you'll find something that sparks your interest! 💻🔌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

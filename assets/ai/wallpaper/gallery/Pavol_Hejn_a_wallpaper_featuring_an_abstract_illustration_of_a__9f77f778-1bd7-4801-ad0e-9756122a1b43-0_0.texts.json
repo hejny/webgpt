@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Cityscape Wallpaper\"",
+    "content": "This website is dedicated to providing high-quality and visually stunning wallpapers featuring futuristic cityscapes. Our collection of wallpapers showcases the beauty and grandeur of urban landscapes, with a focus on abstract illustrations that capture the essence of modern metropolises. With a dark and moody color scheme, glowing lights, and a gradient background, our wallpapers are perfect for anyone who wants to add a touch of sophistication and style to their desktop or mobile device. Whether you're a fan of science fiction, architecture, or simply appreciate beautiful design, you'll find something to love in our collection of futuristic cityscape wallpapers.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Virtual Reality Hub\"",
+    "content": "Welcome to our virtual reality hub! 🚀\n\nOur website is dedicated to providing the latest news, reviews, and insights into the world of virtual reality. We cover a wide range of topics, from gaming and entertainment to education and healthcare.\n\nWhether you're a VR enthusiast or just curious about this exciting technology, you'll find something of interest on our site. Our team of experts is passionate about all things VR, and we're committed to sharing our knowledge with our readers.\n\nIn addition to our informative articles, we also offer a curated selection of VR products in our online store. From headsets and controllers to games and apps, we've got everything you need to get started with VR.\n\nSo why wait? Join us on our journey into the immersive world of virtual reality today! 💻👓🎮",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

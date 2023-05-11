@@ -1,0 +1,8 @@
+{
+    "title": "\"NeuroTech Art\"",
+    "content": "Welcome to NeuroTech Art, a website that explores the intersection of art and technology through the lens of neural networks. Our collection features a wide range of visually stunning and thought-provoking pieces created using the latest advancements in machine learning and artificial intelligence. From abstract compositions to photorealistic renderings, our artworks push the boundaries of what is possible with modern computing power. Join us on a journey through the cutting-edge world of neurotech art and discover the beauty and complexity of the human mind as captured by machines.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a neural network, with intricate lines and a dark and technological color palette.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

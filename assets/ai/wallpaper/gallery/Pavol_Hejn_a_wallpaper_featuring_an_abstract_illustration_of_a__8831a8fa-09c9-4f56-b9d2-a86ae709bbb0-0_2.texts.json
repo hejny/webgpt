@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Wallpapers\"",
+    "content": "Welcome to our website, where you can find a collection of sleek and modern wallpapers that will give your devices a futuristic edge. Our abstract illustrations are inspired by data visualizations and feature minimalist color schemes that will make your screens pop. Whether you're looking for a wallpaper for your phone, tablet, or computer, we've got you covered with our selection of high-quality images. Upgrade your device's look today with our futuristic wallpapers!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a futuristic data visualization, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

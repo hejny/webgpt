@@ -1,0 +1,8 @@
+{
+    "title": "\"Viral Wallpapers\"",
+    "content": "👋 Welcome to our website, where we showcase a unique collection of abstract wallpapers inspired by computer viruses and malware. Our wallpapers feature repeating patterns of intricate shapes set against a black background, creating a mesmerizing visual effect.\n\nOur website is the perfect destination for those who appreciate the beauty in unconventional art. Whether you're looking to add some personality to your desktop or simply want to admire stunning digital designs, our wallpaper collection has something for everyone.\n\nWe update our collection regularly, so be sure to check back often for new additions. All of our wallpapers are available for free download in high-quality resolution, making it easy to add a touch of creativity to your digital devices.\n\nExplore our collection today and discover the intriguing world of viral-inspired abstract art!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

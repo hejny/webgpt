@@ -1,0 +1,8 @@
+{
+    "title": "\"Bot Message Board\"",
+    "content": "Welcome to Bot Message Board, the ultimate virtual assistant and chatbot platform! Our website is designed to provide you with a simple and user-friendly interface for communicating with your virtual assistant or chatbot. With our minimalist wallpaper featuring a graphic of a virtual assistant or chatbot, you can easily keep track of your messages and alerts.\n\nWhether you're looking to schedule appointments, set reminders, or simply chat with your virtual assistant, our platform makes it easy to stay organized and connected. With a sleek and modern design, our wallpaper provides the perfect backdrop for all your virtual assistant needs.\n\nSo why wait? Sign up for Bot Message Board today and start communicating with your virtual assistant in style!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a virtual assistant or chatbot, with space for messages and alerts.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Tech Wallpaper\"",
+    "content": "👋 Welcome to our website! \n\nWe are a platform dedicated to providing high-quality tech wallpapers for your devices. Our collection features a wide range of abstract illustrations, including this stunning wallpaper showcasing an AI neural network.\n\nOur wallpapers are designed with the latest trends in mind, and we strive to provide a unique and modern look for your screens. Whether you're looking for a wallpaper that reflects your love for technology or simply want to add a touch of sophistication to your device, we've got you covered.\n\nAll of our wallpapers are available for free download in various resolutions, making it easy to find the perfect fit for your screen. So why wait? Browse our collection today and give your device a fresh new look!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of an AI neural network, with intricate lines and a dark and technological color palette.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

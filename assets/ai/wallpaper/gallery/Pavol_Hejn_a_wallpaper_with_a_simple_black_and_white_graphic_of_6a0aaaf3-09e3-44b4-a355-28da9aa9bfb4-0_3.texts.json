@@ -1,0 +1,8 @@
+{
+    "title": "\"Robo-Backdrop\"",
+    "content": "🤖 Welcome to our website, where we showcase a sleek and modern wallpaper featuring a black and white graphic of a robot's head against a solid colored background. Our website is dedicated to providing high-quality wallpapers that are perfect for adding a touch of personality to your devices. \n\nWith our minimalist design, this wallpaper will add a futuristic vibe to your desktop or phone screen without being too distracting. Whether you're a tech enthusiast or just looking for a unique and stylish backdrop, our robot wallpaper is sure to impress. \n\nWe update our collection regularly with new and exciting designs, so be sure to check back often. Thank you for choosing our website as your go-to source for beautiful and functional wallpapers. 🚀",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple black and white graphic of a robot's head, against a solid colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

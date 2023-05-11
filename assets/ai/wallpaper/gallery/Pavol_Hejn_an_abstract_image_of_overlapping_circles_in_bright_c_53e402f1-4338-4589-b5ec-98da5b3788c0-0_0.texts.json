@@ -1,0 +1,8 @@
+{
+    "title": "\"Colorful Business Circles\"",
+    "content": "Welcome to our website, where we bring a fresh and vibrant approach to business and marketing. Our use of bright colors and overlapping circles represents the dynamic and interconnected nature of modern commerce. \n\nWe offer innovative solutions and cutting-edge strategies to help your business thrive in today's fast-paced environment. Our team of experts is dedicated to providing personalized support and guidance every step of the way. \n\nWith our unique blend of creativity and professionalism, we are committed to helping you achieve your goals and stand out from the competition. Join us on this exciting journey and let's make your business shine!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping circles in bright colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

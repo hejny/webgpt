@@ -1,0 +1,8 @@
+{
+    "title": "\"Alien Sunrise Hub\"",
+    "content": "👋 Welcome to Alien Sunrise Hub! \n\nOur website is dedicated to exploring the wonders of distant planets and their unique sunrises. \n\nHere, you'll find stunning wallpapers featuring breathtaking views of sunrises from various alien worlds. Our collection is carefully curated to showcase the beauty and diversity of the universe beyond our own planet.\n\nWhether you're a space enthusiast or just looking for a new desktop background, we've got you covered. Our wallpapers are available for free download in high resolution, so you can enjoy the beauty of these otherworldly sunrises right on your own screen.\n\nJoin us on a journey through the cosmos and discover the magic of sunrise on a distant planet.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"Sunrise on a distant planet\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

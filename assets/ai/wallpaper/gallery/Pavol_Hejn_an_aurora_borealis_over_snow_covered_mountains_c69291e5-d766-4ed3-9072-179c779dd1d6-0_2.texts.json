@@ -1,0 +1,8 @@
+{
+    "title": "\"Aurora Alpine Adventure\"",
+    "content": "Welcome to Aurora Alpine Adventure! Our website is your ultimate guide to exploring the breathtaking beauty of snow-covered mountains and the magical aurora borealis. \n\nWe offer a wide range of resources and information to help you plan your next adventure, whether you're an experienced hiker or a beginner looking for a new challenge. From trail maps and gear recommendations to tips on where to find the best views of the northern lights, we've got everything you need to make your trip unforgettable.\n\nOur community of outdoor enthusiasts is passionate about sharing their knowledge and experiences, so be sure to check out our forums and social media pages to connect with like-minded adventurers from around the world. \n\nJoin us on Aurora Alpine Adventure and discover the wonder and excitement of exploring the great outdoors! 🏔️🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An aurora borealis over snow-covered mountains\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

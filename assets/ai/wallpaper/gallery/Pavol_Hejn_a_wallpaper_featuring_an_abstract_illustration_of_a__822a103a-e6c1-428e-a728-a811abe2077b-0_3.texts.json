@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Cityscape Wallpaper\"",
+    "content": "Welcome to our website! Here you will find a collection of stunning wallpapers featuring futuristic cityscapes. Our wallpapers are perfect for those who love the sleek and modern look of skyscrapers and neon lights. Whether you're looking for a background for your desktop, phone, or tablet, we've got you covered. Our wallpapers are designed to fit any screen size and resolution, so you can enjoy them no matter what device you're using. So why wait? Browse our collection today and take your screens to the next level with our futuristic cityscape wallpapers! 🌃🚀🌆",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

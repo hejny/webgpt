@@ -1,0 +1,8 @@
+{
+    "title": "\"Printed Geometry\"",
+    "content": "Printed Geometry is a website that celebrates the beauty of simple geometric shapes and 3D-printed objects. Our main wallpaper features a stunning graphic of a 3D-printed object set against a backdrop of complementary colors and geometric patterns. \n\nOur site is dedicated to showcasing the latest in 3D printing technology, as well as highlighting the work of talented designers who are pushing the boundaries of what's possible with this exciting new medium. Whether you're a seasoned pro or just getting started with 3D printing, Printed Geometry has something for everyone.\n\nJoin our community today and discover the fascinating world of 3D printing and geometric design!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a 3D-printed object, against a background of geometric shapes in complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

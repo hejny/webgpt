@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Rides\"",
+    "content": "Welcome to Futuristic Rides! \n\nWe are a website dedicated to showcasing the most cutting-edge and advanced vehicles from around the world. Our focus is on futuristic designs that push the boundaries of what we thought was possible in terms of technology and style. \n\nOur collection of wallpapers features some of the most striking and awe-inspiring vehicles you'll ever see, all rendered in high-quality detail with metallic textures and dark, moody color schemes. Whether you're a fan of sleek sports cars or massive space-faring vessels, we've got something for everyone here at Futuristic Rides. \n\nSo why not spruce up your desktop or mobile device with one of our stunning wallpapers today? You'll be the envy of all your friends and colleagues with these eye-catching designs that are sure to turn heads wherever you go.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

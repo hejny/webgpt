@@ -1,0 +1,8 @@
+{
+    "title": "\"Metallic Chip Abstracts\"",
+    "content": "Welcome to Metallic Chip Abstracts! Our website is a hub for all things tech and design. Our sleek metallic color palette and abstract representation of a computer chip are the perfect backdrop for exploring the latest in technology, from cutting-edge hardware to innovative software. Whether you're a tech enthusiast or a designer looking for inspiration, our site offers a visually stunning and informative experience. Join us on this journey into the exciting world of technology and design! 💻🎨",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract representation of the inside of a computer chip with a metallic color palette\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

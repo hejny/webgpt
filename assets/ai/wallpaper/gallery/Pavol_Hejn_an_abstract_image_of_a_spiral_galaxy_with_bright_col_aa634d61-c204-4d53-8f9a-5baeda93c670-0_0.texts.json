@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Vibes.",
+    "content": "Galactic Vibes is a website that brings you the latest and greatest in space news, science, and culture. Our team of passionate writers and researchers are dedicated to exploring the mysteries of the universe and sharing them with you. Whether you're a seasoned astronomer or just starting out, we've got something for everyone. From stunning images of distant galaxies to in-depth articles on the latest discoveries, Galactic Vibes has it all. Join us on our journey through the cosmos and discover the wonders of the universe like never before! 🚀🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spiral galaxy, with bright colors and swirling patterns that evoke a sense of movement and depth.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

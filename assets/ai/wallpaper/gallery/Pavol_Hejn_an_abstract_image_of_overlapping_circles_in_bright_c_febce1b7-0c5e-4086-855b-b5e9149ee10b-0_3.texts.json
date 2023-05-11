@@ -1,0 +1,8 @@
+{
+    "title": "\"Vibrant Business Hub\"",
+    "content": "Welcome to our vibrant business hub! 🌟\n\nOur website is designed to be a one-stop-shop for all your business and marketing needs. Whether you're an entrepreneur looking to start your own business, or a seasoned marketer looking to take your campaigns to the next level, we've got you covered.\n\nWith our expert advice and resources, you'll learn everything you need to know about branding, social media, SEO, and more. Plus, our community of like-minded professionals is here to support you every step of the way.\n\nSo why wait? Join our vibrant business hub today and start achieving your goals! 💼",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping circles in bright colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

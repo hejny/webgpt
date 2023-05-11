@@ -1,0 +1,8 @@
+{
+    "title": "AI Space Team.",
+    "content": "Welcome to AI Space Team! \n\nOur website is dedicated to showcasing the incredible work of AInauts and their AI companions as they collaborate in a massive, zero-gravity space station. Our mission is to share the latest news, insights, and stories from the forefront of artificial intelligence research and development.\n\nJoin us as we explore the cutting-edge technologies and groundbreaking innovations that are shaping the future of space exploration and beyond. From autonomous spacecraft to intelligent robots, our team of experts is at the forefront of this exciting field, pushing the boundaries of what's possible with AI.\n\nWhether you're an industry professional, a student, or simply a curious enthusiast, AI Space Team has something for everyone. So come aboard and join us on this incredible journey into the final frontier!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts and their AI companions working together in a massive, zero-gravity space station.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"RoboWall HQ\"",
+    "content": "RoboWall HQ is your ultimate destination for high-quality wallpapers featuring robots. Our collection of wallpapers includes various robot designs, ranging from classic to futuristic, that will add a touch of technology to your device's screen. Our wallpapers are designed with simplicity in mind, so you can enjoy a clean and uncluttered look on your desktop or mobile device. With RoboWall HQ, you can easily download and use our wallpapers to give your device a robotic makeover. Upgrade your wallpaper game today with RoboWall HQ! 🤖🚀",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple black and white graphic of a robot's head, against a solid colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

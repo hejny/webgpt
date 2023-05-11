@@ -1,0 +1,8 @@
+{
+    "title": "Cosmic Art Gallery.",
+    "content": "Welcome to our Cosmic Art Gallery! Our website showcases a stunning collection of abstract art inspired by the mysteries and wonders of the universe. Each piece is carefully selected to transport you to another dimension, where vibrant colors and dynamic patterns collide to create a breathtaking visual experience.\n\nOur gallery features works from a diverse group of artists, each with their unique style and interpretation of the cosmos. From swirling galaxies to explosive supernovas, our collection offers a glimpse into the infinite possibilities of space.\n\nWhether you're an avid collector or simply looking for a beautiful piece to adorn your home or office, our Cosmic Art Gallery has something for everyone. So come explore the depths of the universe with us and discover the beauty that lies beyond our world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a comet passing through the solar system, with bright colors and swirling patterns that represent its trajectory.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Machine Menace Wallpaper\"",
+    "content": "Welcome to our website featuring a dark and ominous machine wallpaper. Our collection of wallpapers is carefully curated to bring you the most captivating and unique designs. \n\nWith our abstract illustration of a menacing machine, you can add a touch of intrigue and mystery to your desktop or mobile device. The glowing red lights and mechanical parts are sure to catch your eye and make your screen stand out from the rest.\n\nOur website offers a wide range of wallpapers to suit any taste and style. Whether you're looking for something abstract, minimalistic, or nature-inspired, we have it all. All of our wallpapers are high-quality and available for free download.\n\nSo why settle for a boring default wallpaper when you can have a stunning and captivating design? Browse our collection today and find the perfect wallpaper to elevate your digital space.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Cosmic Odyssey Hub\"",
+    "content": "Welcome to Cosmic Odyssey Hub! \n\nOur website is your ultimate destination for all things related to space exploration, science fiction, and the wonders of the universe. Our mission is to inspire and educate visitors about the mysteries of the cosmos through captivating articles, stunning visuals, and engaging discussions.\n\nHere at Cosmic Odyssey Hub, we believe that the universe is full of infinite possibilities waiting to be discovered. From the latest breakthroughs in astrophysics to the most imaginative works of science fiction, we aim to showcase the best and brightest ideas from around the world.\n\nJoin us on a journey through the stars as we explore the frontiers of science and imagination. Whether you're a seasoned space enthusiast or a curious newcomer, there's something here for everyone. So buckle up, engage your warp drive, and let's blast off into the unknown! 🚀🪐✨",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spaceship approaching a wormhole, with bright colors and distorted shapes.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

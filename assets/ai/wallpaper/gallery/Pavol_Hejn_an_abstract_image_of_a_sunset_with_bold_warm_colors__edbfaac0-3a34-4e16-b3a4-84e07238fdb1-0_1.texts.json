@@ -1,0 +1,8 @@
+{
+    "title": "\"Vivid Journeys\"",
+    "content": "Welcome to Vivid Journeys! 🌅\n\nOur website is dedicated to capturing the beauty and wonder of travel through stunning photography. Our team of talented photographers has traveled the world to bring you breathtaking images of landscapes, cityscapes, and everything in between.\n\nWhether you're planning your next adventure or simply looking for inspiration, our collection of photographs will transport you to far-off destinations and spark your sense of wanderlust.\n\nAt Vivid Journeys, we believe that travel is not just about the destination, but also about the journey. That's why we strive to capture the essence of each location, from the vibrant colors of a sunset to the bustling energy of a crowded street.\n\nJoin us on a visual journey around the world, and let our photographs inspire your next adventure.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a sunset with bold, warm colors for a photography or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

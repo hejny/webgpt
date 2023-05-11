@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Buzz Wall\"",
+    "content": "AI Buzz Wall is a website that showcases a repeating pattern of AI-related buzzwords in a minimalist font and color scheme. This wallpaper is perfect for anyone who wants to stay up-to-date with the latest developments in artificial intelligence. With its clean design, the AI Buzz Wall wallpaper can be used as a background on your computer or mobile device, or even printed out and hung on your wall. Whether you're a tech enthusiast, a data scientist, or just someone who loves cool wallpapers, AI Buzz Wall has got you covered.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of AI-related buzzwords, in a minimalist font and color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

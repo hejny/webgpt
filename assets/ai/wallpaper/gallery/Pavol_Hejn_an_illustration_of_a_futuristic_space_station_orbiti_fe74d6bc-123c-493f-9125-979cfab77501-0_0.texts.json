@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbital Odyssey\"",
+    "content": "Welcome to our website, where we take you on a journey through the cosmos. Our site is dedicated to exploring the mysteries of space and the wonders of the universe. With stunning visuals and captivating stories, we aim to inspire and educate those who share our passion for all things extraterrestrial. Join us as we embark on an Orbital Odyssey, visiting distant planets, exploring new galaxies, and discovering the secrets of the universe. Let your imagination soar as you delve into the unknown depths of space with us.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

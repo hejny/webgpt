@@ -1,0 +1,8 @@
+{
+    "title": "Cosmic Dreamscape.",
+    "content": "Welcome to our website, where the beauty and mystery of the cosmos come alive in vivid colors and swirling patterns. Our abstract star field wallpaper sets the tone for a journey into the unknown depths of the universe.\n\nExplore our site and discover articles, images, and videos that delve into the wonders of space and the latest scientific discoveries. From black holes to supernovas, from the birth of stars to the search for extraterrestrial life, we cover it all.\n\nJoin our community of space enthusiasts and share your own thoughts and experiences with like-minded individuals. Whether you're a seasoned astronomer or simply fascinated by the night sky, there's something here for everyone.\n\nSo come along on a cosmic journey and let our wallpaper be your guide to the wonders of the universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

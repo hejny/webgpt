@@ -1,0 +1,8 @@
+{
+    "title": "\"RoboNotify Wallpapers\"",
+    "content": "RoboNotify Wallpapers is a website that provides a collection of high-quality wallpapers featuring a simple graphic of a robot arm holding a smartphone. These wallpapers are designed to help you stay organized by providing a space for placing important notifications or messages. With RoboNotify Wallpapers, you can choose from a variety of different designs and color schemes to find the perfect wallpaper for your device. Whether you're looking for a minimalist design or something more eye-catching, we have a wallpaper that will suit your style. Download our wallpapers today and stay on top of your notifications in style!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

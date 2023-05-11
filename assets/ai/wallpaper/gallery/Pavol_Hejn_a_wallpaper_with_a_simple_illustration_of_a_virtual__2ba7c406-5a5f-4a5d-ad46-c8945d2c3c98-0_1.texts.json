@@ -1,0 +1,8 @@
+{
+    "title": "\"Virtual Headset Wallpapers\"",
+    "content": "👋 Welcome to Virtual Headset Wallpapers!\n\nOur website is dedicated to providing you with high-quality wallpapers featuring virtual reality headsets. Whether you're a VR enthusiast or just love the futuristic look of these devices, we've got you covered.\n\nOur collection includes a variety of simple and stylish designs, all featuring a virtual reality headset against a gradient background of two contrasting colors. These wallpapers are perfect for adding a touch of tech-inspired style to your desktop or mobile device.\n\nWe update our collection regularly, so be sure to check back often for new designs. And if you have any suggestions or requests for specific designs, feel free to reach out to us - we'd love to hear from you!\n\nThanks for visiting Virtual Headset Wallpapers - we hope you find the perfect wallpaper to suit your style!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

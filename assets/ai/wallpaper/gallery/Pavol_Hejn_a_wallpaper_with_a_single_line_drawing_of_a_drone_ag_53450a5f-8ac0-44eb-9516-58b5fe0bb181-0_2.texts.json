@@ -1,0 +1,8 @@
+{
+    "title": "\"Drone Geometry Wallpaper\"",
+    "content": "Welcome to our website, where you can find a unique and stylish wallpaper featuring a minimalist single line drawing of a drone. The drone is set against a background of geometric shapes in complementary colors, creating a modern and eye-catching design. Our website offers this wallpaper as a free download for personal use, allowing you to add a touch of contemporary flair to your desktop or mobile device. With its sleek and simple design, this wallpaper is perfect for anyone who appreciates the beauty of minimalism and modern art. Download it today and enjoy the sophisticated style it brings to your digital space!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

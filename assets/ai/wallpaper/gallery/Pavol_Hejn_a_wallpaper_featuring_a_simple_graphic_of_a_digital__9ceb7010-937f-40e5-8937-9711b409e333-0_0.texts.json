@@ -1,0 +1,8 @@
+{
+    "title": "\"Clock Wallpaper Hub\"",
+    "content": "Clock Wallpaper Hub is your go-to destination for all things clock-related. Our website features a sleek and stylish wallpaper that showcases a simple graphic of a digital clock or timer. With space for setting alarms and countdowns, this wallpaper is not only visually appealing but also highly functional.\n\nWhether you're looking to spruce up your desktop background or keep track of important dates and deadlines, our clock wallpaper has got you covered. With its minimalist design and customizable settings, it's the perfect addition to any workspace or home screen.\n\nSo why wait? Download our clock wallpaper today and start counting down the minutes in style!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

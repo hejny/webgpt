@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Control Hub\"",
+    "content": "Welcome to our website, where data management is made simple! Our digital dashboard provides you with a user-friendly interface to monitor and manage your data effectively. With our easy-to-use control panel, you can keep track of all your important information in one place. Whether you need to analyze sales figures, track customer behavior, or monitor website traffic, our dashboard has got you covered. Say goodbye to the hassle of navigating complex data systems and hello to streamlined data management with our Data Control Hub.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

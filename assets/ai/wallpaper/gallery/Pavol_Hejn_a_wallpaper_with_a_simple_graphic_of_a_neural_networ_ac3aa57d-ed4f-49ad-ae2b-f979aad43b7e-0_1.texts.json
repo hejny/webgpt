@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Net Decor\"",
+    "content": "Welcome to our website, where we offer a unique collection of wallpapers featuring simple graphics of neural networks against complementary colored backgrounds. Our wallpapers are perfect for those who want to add a touch of sophistication and modernity to their desktop or mobile device. \n\nOur collection includes a variety of colors and styles, so you can find the perfect wallpaper to suit your taste. Whether you prefer bold and vibrant colors or subtle and muted tones, we have something for everyone.\n\nWith our easy-to-use website, it's never been easier to find and download the perfect wallpaper for your device. Simply browse our collection, choose your favorite design, and download it in seconds. \n\nSo why wait? Give your device a fresh new look today with one of our stunning neural network wallpapers!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a neural network, against a background of complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Geometric Wallpapers\"",
+    "content": "Welcome to our website, where you can find a collection of stunning wallpapers featuring simple geometric shapes in monochromatic color palettes. Our wallpapers are perfect for adding a touch of sophistication and elegance to any space, whether it be your home or office. With a wide range of designs to choose from, you're sure to find the perfect wallpaper to suit your style and taste. So why wait? Browse our collection today and transform your space into a work of art!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of simple geometric shapes, in a monochromatic color palette such as grey or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

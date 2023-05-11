@@ -1,0 +1,8 @@
+{
+    "title": "Grunge City Lights.",
+    "content": "Welcome to Grunge City Lights, where we showcase an urban-inspired wallpaper with a futuristic twist. Our website features a mesmerizing neon-lit cityscape with holographic billboards that will transport you to a world of endless possibilities. Whether you're looking for inspiration for your next project or simply want to add some edge to your desktop background, our wallpaper is sure to impress. With its grunge aesthetic and sleek design, it's the perfect way to elevate your digital space. Explore our website today and discover the power of Grunge City Lights.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An urban-inspired wallpaper with a grunge aesthetic, featuring a neon-lit cityscape with futuristic elements such as holographic billboards.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

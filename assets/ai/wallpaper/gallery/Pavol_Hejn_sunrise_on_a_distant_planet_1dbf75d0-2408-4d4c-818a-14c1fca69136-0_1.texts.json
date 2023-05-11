@@ -1,0 +1,8 @@
+{
+    "title": "\"Alien Sunrise Hub\"",
+    "content": "Welcome to Alien Sunrise Hub! 🚀\n\nOur website is dedicated to bringing you the latest news and updates on space exploration, with a focus on the search for extraterrestrial life. Our team of expert writers and researchers are passionate about all things space-related, and we strive to provide our readers with the most accurate and up-to-date information.\n\nWhether you're an amateur astronomer or a seasoned space enthusiast, you'll find something of interest on our site. From breaking news about new discoveries to in-depth articles about the history of space exploration, we've got it all.\n\nSo come explore the final frontier with us, and join the search for life beyond our planet. Who knows what wonders await us in the vast expanse of the universe? 🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"Sunrise on a distant planet\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

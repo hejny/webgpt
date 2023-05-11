@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Art Gallery\"",
+    "content": "Welcome to our website, where we showcase a collection of abstract illustrations inspired by data visualizations. Our sleek and modern graphics, combined with a minimalist color scheme, create a stunning visual experience that is both captivating and informative.\n\nOur aim is to bring together the worlds of art and technology, showcasing the beauty that can be found in data. Each illustration is carefully crafted to highlight the patterns and insights hidden within complex datasets, transforming them into works of art that are both visually striking and intellectually stimulating.\n\nWhether you're an artist, a data scientist, or simply someone who appreciates beautiful design, we invite you to explore our gallery and discover the fascinating world of data art. From mesmerizing patterns to thought-provoking insights, our illustrations are sure to inspire and delight.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a data visualization, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

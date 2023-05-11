@@ -1,0 +1,8 @@
+{
+    "title": "\"Clock Wallpapers\"",
+    "content": "Clock Wallpapers is your go-to website for finding the perfect wallpaper for your digital clock or timer. Our collection features a simple graphic of a digital clock or timer, with ample space for setting alarms and countdowns. With a variety of designs to choose from, you can easily customize your device's home screen to match your style and personality. Whether you're looking for a sleek and modern design or something more playful and whimsical, Clock Wallpapers has got you covered. Browse our collection today and elevate your device's home screen to the next level!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

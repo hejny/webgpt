@@ -1,0 +1,8 @@
+{
+    "title": "\"Surreal Space Odyssey\"",
+    "content": "Welcome to our website, where we take you on a journey through the surreal depths of space. Our abstract image of a spaceship traveling through a wormhole is just the beginning of the adventure that awaits you here. \n\nExplore our collection of otherworldly content, from mind-bending art to thought-provoking articles about the mysteries of the universe. Immerse yourself in the vibrant colors and patterns that make up our unique aesthetic, and let your imagination run wild.\n\nWhether you're a seasoned space enthusiast or simply looking for a new perspective on the cosmos, our website has something for everyone. Join us on this surreal space odyssey and discover what lies beyond the boundaries of our known universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Arctic Scenery Hub\"",
+    "content": "Arctic Scenery Hub is a website dedicated to showcasing the breathtaking beauty of the Arctic region. Our main wallpaper features an aurora borealis over snow-covered mountains, which perfectly captures the essence of this stunning landscape. We curate a collection of high-quality photographs and videos that showcase the unique flora, fauna, and natural wonders of the Arctic. Whether you're an adventurer, nature lover, or simply appreciate beautiful scenery, Arctic Scenery Hub is the perfect destination for inspiration and exploration.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An aurora borealis over snow-covered mountains\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

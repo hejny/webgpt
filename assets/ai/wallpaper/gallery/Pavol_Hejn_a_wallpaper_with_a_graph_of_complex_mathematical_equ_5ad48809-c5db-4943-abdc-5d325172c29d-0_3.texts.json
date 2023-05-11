@@ -1,0 +1,8 @@
+{
+    "title": "\"Equation Art\"",
+    "content": "**Equation Art**\n\nWelcome to Equation Art, a website dedicated to showcasing the beauty of complex mathematical equations through minimalist and modern design. Our wallpaper features a stunning graph of equations that will inspire and captivate anyone who appreciates the elegance of mathematics.\n\nAt Equation Art, we believe that math is not only useful but also incredibly beautiful. Our wallpaper is a testament to this belief, as it showcases the intricate patterns and shapes that can emerge from even the most complex equations. Whether you're a mathematician, an artist, or just someone who loves cool wallpapers, our site has something for you.\n\nSo why wait? Download our wallpaper today and experience the beauty of mathematics in a whole new way!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a graph of complex mathematical equations, arranged in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

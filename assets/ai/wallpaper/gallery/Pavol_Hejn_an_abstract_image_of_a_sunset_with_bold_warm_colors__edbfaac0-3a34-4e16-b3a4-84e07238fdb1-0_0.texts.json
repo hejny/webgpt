@@ -1,0 +1,8 @@
+{
+    "title": "\"Vibrant Sunset Adventures\"",
+    "content": "Welcome to our website, where adventure and beauty collide! Our site is dedicated to sharing the most breathtaking travel destinations around the world. From tropical beaches to snow-capped mountains, we showcase the wonders of nature in all their glory.\n\nOur team of passionate photographers captures stunning images that transport you to these exotic locations. We believe that travel is not just about visiting a place, but about experiencing it with all your senses. That's why we provide detailed guides on each destination, including recommendations for local cuisine, culture, and activities.\n\nWhether you're an experienced traveler or just starting out, we've got something for everyone. Join us on this journey and let us inspire you to explore the world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a sunset with bold, warm colors for a photography or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

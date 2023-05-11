@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Cityscape Wallpaper\"",
+    "content": "Welcome to our website, where you can find the perfect wallpaper for your desktop or mobile device. Our collection features stunning illustrations of various themes and styles, including this mesmerizing abstract illustration of a dark and futuristic cityscape. \n\nImmerse yourself in the neon-lit streets and towering skyscrapers of this digital metropolis, and feel inspired every time you turn on your device. With our easy-to-use interface, you can quickly browse through our extensive selection and find the perfect wallpaper to match your style and personality.\n\nWhether you're looking for something bold and eye-catching or subtle and understated, we've got you covered. So why settle for a boring default wallpaper when you can elevate your screen with our stunning collection? Browse now and discover your new favorite wallpaper!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

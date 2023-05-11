@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Net Art\"",
+    "content": "Welcome to our website! 🎉\n\nWe are a platform dedicated to showcasing beautiful and captivating digital art inspired by neural networks. Our collection features a variety of unique pieces that explore the intersection of technology and creativity.\n\nOur simple graphic of a neural network against a background of complementary colors serves as a representation of the intricate and complex nature of these fascinating systems. We hope that it inspires you to explore the world of neural networks and the incredible art they can produce.\n\nTake some time to browse our collection and discover the amazing works created by talented artists from around the world. Whether you're an art enthusiast or simply curious about the possibilities of AI-generated art, we have something for everyone.\n\nThank you for visiting our site and we hope you enjoy your stay! 😊",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a neural network, against a background of complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

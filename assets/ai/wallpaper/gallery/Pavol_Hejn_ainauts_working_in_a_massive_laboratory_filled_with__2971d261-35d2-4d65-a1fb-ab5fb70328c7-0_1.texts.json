@@ -1,0 +1,8 @@
+{
+    "title": "\"Lab AI Research\"",
+    "content": "Welcome to Lab AI Research! Our website is dedicated to providing the latest news and insights into cutting-edge research being conducted by AInauts in a massive laboratory filled with glowing equipment and holographic displays. \n\nOur team of experts is passionate about exploring the frontiers of AI, and we are committed to sharing our findings with the wider community. From breakthroughs in machine learning to advancements in natural language processing, we cover it all.\n\nWhether you're a researcher looking to stay up-to-date on the latest developments in the field or simply someone who's interested in learning more about the exciting world of AI, Lab AI Research has something for everyone. So why not join us today and discover the future of artificial intelligence?",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

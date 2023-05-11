@@ -1,0 +1,8 @@
+{
+    "title": "\"Bot Alert Wallpapers\"",
+    "content": "Bot Alert Wallpapers is your go-to destination for wallpapers that feature a simple graphic of a virtual assistant or chatbot, set against a gradient background. These wallpapers are perfect for those who want to add a touch of personality and functionality to their desktop or mobile device. With space for messages and alerts, you can customize these wallpapers to suit your needs and keep you informed throughout the day. Whether you're looking for a fun way to stay organized or simply want to spice up your screen, Bot Alert Wallpapers has got you covered.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a virtual assistant or chatbot, with space for messages and alerts, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

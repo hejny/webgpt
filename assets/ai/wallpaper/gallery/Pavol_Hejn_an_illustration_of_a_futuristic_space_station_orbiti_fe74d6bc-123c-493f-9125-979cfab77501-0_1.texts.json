@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbiting Tomorrow's Frontier\"",
+    "content": "Welcome to our website, where we explore the frontiers of tomorrow. Our mission is to inspire and inform about the latest advancements in space exploration and technology. Join us on a journey to discover new worlds, marvel at breathtaking views of distant galaxies, and learn about the cutting-edge innovations that will shape our future.\n\nOur team of experts curates the latest news and insights from the world of space exploration and technology, bringing you the most exciting developments in the field. From breakthrough discoveries to new spacecraft designs, we cover it all.\n\nWhether you're a seasoned space enthusiast or just starting to explore the cosmos, our website has something for everyone. So come aboard and join us as we venture into the unknown reaches of space, and discover what lies beyond the horizon.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

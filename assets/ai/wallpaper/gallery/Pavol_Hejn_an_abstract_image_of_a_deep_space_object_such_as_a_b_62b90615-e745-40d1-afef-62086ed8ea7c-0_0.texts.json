@@ -1,0 +1,8 @@
+{
+    "title": "Cosmic Swirls.",
+    "content": "Welcome to Cosmic Swirls, the ultimate destination for space enthusiasts! Our website is dedicated to bringing you the latest news and updates on everything related to space exploration, astronomy, and astrophysics.\n\nWith our stunning abstract image of a deep space object as the main wallpaper, you'll feel like you're exploring the cosmos from the comfort of your own home. Our content is carefully curated by experts in the field, ensuring that you receive only the most accurate and up-to-date information.\n\nWhether you're interested in learning about the latest discoveries in exoplanet research or want to delve into the mysteries of dark matter and energy, Cosmic Swirls has got you covered. So sit back, relax, and let us take you on a journey through the wonders of the universe. 🚀🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a deep space object, such as a black hole or pulsar, with swirling colors and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

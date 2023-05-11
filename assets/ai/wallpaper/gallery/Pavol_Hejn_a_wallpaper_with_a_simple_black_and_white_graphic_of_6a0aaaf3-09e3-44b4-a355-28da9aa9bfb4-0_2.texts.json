@@ -1,0 +1,8 @@
+{
+    "title": "\"Robo Backdrops\"",
+    "content": "Robo Backdrops is your go-to destination for sleek and stylish wallpapers featuring robot-themed graphics. Our collection features a variety of designs that are perfect for adding a touch of futuristic flair to your desktop, phone, or tablet. From minimalist robot heads to detailed mechanical illustrations, our wallpapers are sure to impress. With solid colored backgrounds, our wallpapers provide the perfect canvas for showcasing your favorite robotic designs. Whether you're a sci-fi fan or just looking for a cool new wallpaper, Robo Backdrops has something for everyone.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple black and white graphic of a robot's head, against a solid colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

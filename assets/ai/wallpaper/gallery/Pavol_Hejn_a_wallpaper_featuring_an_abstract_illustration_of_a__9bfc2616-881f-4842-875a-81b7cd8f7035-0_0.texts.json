@@ -1,0 +1,8 @@
+{
+    "title": "\"Future Metropolis Wallpaper\"",
+    "content": "Welcome to our website, where you can find the perfect wallpaper for your desktop or mobile device. Our website features a stunning abstract illustration of a futuristic cityscape with glowing lights and a dark, moody color scheme set against a gradient background. This wallpaper is perfect for those who love all things futuristic and sci-fi. Our website offers a wide range of high-quality wallpapers, so you're sure to find something that suits your style. Browse through our collection today and give your device a fresh new look!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

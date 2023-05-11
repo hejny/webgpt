@@ -1,0 +1,8 @@
+{
+    "title": "\"Abstract Web Patterns\"",
+    "content": "🎨 Welcome to our website, where we showcase the latest abstract web design patterns in the form of beautiful wallpapers. Our wallpapers are inspired by the latest web design trends and are perfect for adding a touch of modernity to your desktop or mobile device.\n\n💻 Whether you're a designer, developer, or simply someone who appreciates good design, our collection of abstract web patterns is sure to impress. From bold geometric shapes to subtle gradients, we have something for everyone.\n\n🌈 Our wallpapers are available in a range of colors, so you can choose the perfect one to match your style. Plus, with our easy-to-use download feature, you can have your new wallpaper set up in no time.\n\n🔍 Browse our collection today and discover the perfect abstract web pattern for your device!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Fantasy Unicorn Haven\"",
+    "content": "Welcome to our fantastical world of whimsy and wonder! Our website, Fantasy Unicorn Haven, is a place where you can escape reality and immerse yourself in the enchanting realm of unicorns and magic. \n\nHere, you'll find a treasure trove of stories, artwork, and other creative works that celebrate all things unicorn. Whether you're a fan of fantasy fiction, fairy tales, or simply love these mythical creatures, we've got something for everyone.\n\nOur community of unicorn enthusiasts is warm, welcoming, and always eager to share their passion for these majestic beasts. So come on in, explore our pages, and let your imagination run wild!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical image of a unicorn in a field of flowers for a fantasy or fiction website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

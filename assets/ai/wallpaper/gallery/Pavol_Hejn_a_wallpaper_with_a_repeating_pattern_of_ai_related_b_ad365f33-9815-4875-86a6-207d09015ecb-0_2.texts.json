@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Buzz Repeat\"",
+    "content": "**Welcome to AI Buzz Repeat!**\n\nOur website is the go-to destination for anyone interested in the latest buzzwords and trends in artificial intelligence. Our minimalist design features a repeating pattern of AI-related buzzwords, which are sure to catch your eye and keep you up to date on all things AI.\n\nWhether you're a seasoned AI professional or just starting out, our website has something for everyone. From in-depth articles and tutorials to the latest news and industry updates, we've got you covered.\n\nSo why wait? Join our community today and stay ahead of the curve with AI Buzz Repeat!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of AI-related buzzwords, in a minimalist font and color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

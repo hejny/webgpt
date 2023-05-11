@@ -1,0 +1,8 @@
+{
+    "title": "\"Space Launch Central\"",
+    "content": "Welcome to Space Launch Central! 🚀\n\nOur website is dedicated to bringing you the latest news and updates on space launches from around the world. From SpaceX to NASA, we cover it all.\n\nStay up-to-date with launch schedules, mission details, and live streams of rocket launches as they happen. We also provide in-depth analysis and commentary on the latest developments in space exploration.\n\nJoin our community of space enthusiasts and engage in discussions about the future of space travel, colonization of other planets, and more. \n\nWith our stunning wallpaper of a rocket launching into space, set against a starry sky, you'll feel like you're part of the action. So come along for the ride and explore the final frontier with us at Space Launch Central!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An image of a rocket launching into space with a trail of fire behind it, set against a starry sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"City Balloon Adventures\"",
+    "content": "City Balloon Adventures is a website dedicated to exploring the world from a unique perspective. Our focus is on hot air balloon rides over some of the most beautiful cities in the world. We believe that there's no better way to experience the thrill of adventure and the joy of discovery than by soaring high above the rooftops in a whimsical hot air balloon.\n\nWhether you're looking for a romantic getaway, a family vacation, or just a fun day out with friends, City Balloon Adventures has something for everyone. Our experienced pilots will guide you on a journey through the clouds, pointing out all the sights and landmarks along the way.\n\nSo why wait? Book your hot air balloon ride today and experience the magic of City Balloon Adventures! 🎈✨",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical scene of a hot air balloon flying over a city for a lifestyle or adventure website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

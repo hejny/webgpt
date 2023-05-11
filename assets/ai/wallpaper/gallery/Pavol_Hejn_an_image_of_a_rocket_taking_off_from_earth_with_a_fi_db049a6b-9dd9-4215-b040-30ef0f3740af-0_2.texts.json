@@ -1,0 +1,8 @@
+{
+    "title": "\"Launchpad HQ\"",
+    "content": "Welcome to Launchpad HQ! 🚀\n\nOur website is dedicated to providing the latest news, updates, and information about space exploration. From rocket launches to planetary discoveries, we've got you covered.\n\nStay up-to-date with the latest space news and developments, and join our community of space enthusiasts from around the world. Whether you're a seasoned astronomer or just starting to explore the cosmos, Launchpad HQ is the perfect place to learn, share, and discover the wonders of the universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An image of a rocket taking off from Earth, with a fiery trail leading into the clouds.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Geometric Wallpapers\"",
+    "content": "Welcome to our website, where we offer a stunning collection of geometric wallpapers in monochromatic colors such as grey or blue. Our wallpapers are perfect for adding a touch of modern elegance to any room in your home or office. With their simple yet striking designs, these wallpapers create a subtle visual interest that is both calming and inspiring.\n\nOur collection includes a variety of repeating patterns featuring different geometric shapes, from circles and squares to triangles and hexagons. Each design has been carefully crafted to ensure a seamless repeat, so you can be sure that your wallpaper will look flawless on any wall.\n\nWhether you're looking to create a feature wall or cover an entire room, our geometric wallpapers are the perfect choice. So why wait? Browse our collection today and find the perfect wallpaper to transform your space!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of simple geometric shapes, in a monochromatic color palette such as grey or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

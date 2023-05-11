@@ -1,0 +1,8 @@
+{
+    "title": "Storm Watch News.",
+    "content": "**Welcome to Storm Watch News!**\n\nStay up-to-date with the latest weather news and alerts on our website. Our team of expert meteorologists provides you with accurate and reliable information about storms, hurricanes, tornadoes, and other severe weather events.\n\nGet real-time updates on weather conditions in your area, including temperature, wind speed, and precipitation. We also provide detailed forecasts for the upcoming days, so you can plan your activities accordingly.\n\nIn addition to weather news, we cover stories related to climate change, environmental issues, and natural disasters. Our goal is to keep you informed and prepared for any potential weather-related threats.\n\nFollow us on social media and subscribe to our newsletter to receive the latest updates directly in your inbox. Stay safe and stay informed with Storm Watch News! ⛈️🌪️🌩️",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a stormy sky with lightning bolts for a weather or news website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

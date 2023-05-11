@@ -1,0 +1,8 @@
+{
+    "title": "RoboArt Wallpapers.",
+    "content": "Welcome to RoboArt Wallpapers! Our website offers a collection of minimalist wallpapers featuring robotic illustrations against dark and moody backgrounds. \n\nOur curated selection of wallpapers is perfect for those who appreciate the beauty of simplicity and enjoy having a unique desktop or mobile background. Each wallpaper is designed with care and attention to detail, making them not only visually appealing but also functional and practical.\n\nWhether you're looking for a new wallpaper to spice up your device or just want to browse through some beautiful art, we've got you covered. Check out our collection today and discover the perfect wallpaper for you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a minimalist illustration of a robotic arm, against a background of dark and moody colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

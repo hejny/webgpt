@@ -1,0 +1,8 @@
+{
+    "title": "\"Skybound Adventures\"",
+    "content": "Welcome to Skybound Adventures! \n\nOur website is all about exploring the world from above. We believe that life is an adventure, and what better way to experience it than by soaring through the sky in a hot air balloon? Our whimsical wallpaper sets the tone for the exciting content you'll find here.\n\nWhether you're a seasoned traveler or just starting out, we've got something for everyone. From breathtaking photos of hot air balloons floating over cities, to tips on how to plan your own balloon adventure, we're here to inspire and inform.\n\nJoin us as we explore the world one balloon ride at a time. Let's take to the skies and see where the wind takes us! 🎈✨",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical scene of a hot air balloon flying over a city for a lifestyle or adventure website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Metal Chip Art\"",
+    "content": "Welcome to our website, where we celebrate the beauty of technology through art. Our website features a stunning metallic wallpaper that represents the intricate and fascinating world inside a computer chip.\n\nWe are passionate about showcasing the intersection between technology and art, and this wallpaper is just one example of how these two worlds can come together to create something truly unique and beautiful.\n\nOur website is a hub for artists, designers, and technophiles alike, who appreciate the beauty and complexity of technology. We feature a variety of art forms, including digital art, photography, and sculpture, all inspired by the world of technology.\n\nWhether you're an artist looking for inspiration, a designer seeking new ideas, or simply someone who appreciates the beauty of technology, we invite you to explore our website and discover the wonders of Metal Chip Art.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract representation of the inside of a computer chip with a metallic color palette\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

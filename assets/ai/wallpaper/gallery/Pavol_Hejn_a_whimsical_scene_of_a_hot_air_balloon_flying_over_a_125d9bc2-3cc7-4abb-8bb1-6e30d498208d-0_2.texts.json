@@ -1,0 +1,8 @@
+{
+    "title": "\"Skyward Adventures\"",
+    "content": "Welcome to Skyward Adventures! 🎈🌃\n\nOur website is dedicated to all the adventurous souls out there who love to explore new horizons and experience life to the fullest. We provide a platform where you can find inspiration for your next adventure, whether it's a hot air balloon ride over a city or a hike through the mountains.\n\nOur team of passionate travelers curates the best travel experiences from around the world and shares them with you through our blog. From hidden gems to popular tourist destinations, we cover it all.\n\nWe believe that life is too short to stay in one place, so we encourage you to step out of your comfort zone and explore the world around you. Join us on this journey and let's discover the beauty of our planet together! 🌍",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical scene of a hot air balloon flying over a city for a lifestyle or adventure website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Art Gallery\"",
+    "content": "Welcome to our website, where we showcase stunning digital art pieces that capture the essence of modern technology and data visualization. Our collection features a wide range of abstract illustrations, each with its unique style and color scheme.\n\nFrom sleek and minimalistic designs to bold and vibrant graphics, our wallpapers are perfect for adding a touch of sophistication to your desktop or mobile device. Whether you're a tech enthusiast, a designer, or simply someone who appreciates beautiful art, you'll find something to love in our gallery.\n\nBrowse our collection today and discover the perfect wallpaper to suit your style and personality. With new additions added regularly, there's always something fresh and exciting to explore. So why wait? Start exploring now and bring a touch of futuristic flair to your screen! 🚀",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a futuristic data visualization, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"DystoWall\"",
+    "content": "Welcome to DystoWall, your source for high-quality dystopian wallpapers! Our website features a collection of stylized illustrations depicting dark and gritty visions of the future. With metallic textures and digital glitch effects, our wallpapers are sure to add a touch of edge to your desktop or mobile device.\n\nWhether you're a fan of cyberpunk, post-apocalyptic worlds, or just love the aesthetic of a bleak future, we have something for everyone. Browse our selection of wallpapers and find the perfect image to match your mood.\n\nAll of our wallpapers are available for free download in a variety of resolutions, making it easy to find the perfect fit for your screen. So why wait? Give your device a makeover and embrace the darkness with DystoWall.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a stylized illustration of a dystopian future, with metallic textures and digital glitch effects.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

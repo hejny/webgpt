@@ -1,0 +1,8 @@
+{
+    "title": "\"Tech Pattern Wall\"",
+    "content": "Tech Pattern Wall is a website that features a unique wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry. The wallpaper is perfect for tech enthusiasts who want to showcase their passion for technology in a stylish and modern way. Whether you're a programmer, a gamer, or just someone who loves all things tech-related, Tech Pattern Wall has got you covered. With its sleek design and eye-catching graphics, this wallpaper is sure to impress anyone who sees it. So why wait? Download Tech Pattern Wall today and give your desktop or mobile device a fresh new look!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Art Hub.",
+    "content": "Galactic Art Hub is a platform that brings together artists and enthusiasts who are passionate about the beauty of space. Our community is dedicated to sharing and showcasing art inspired by the cosmos, from breathtaking photographs of galaxies and nebulas to abstract interpretations of the mysteries of the universe.\n\nWith our stunning spiral galaxy wallpaper as the backdrop, visitors can explore a vast collection of artwork, connect with fellow space lovers, and discover new ways to express their own creativity. Whether you're an established artist or just starting out, Galactic Art Hub provides a welcoming space to share your work, learn from others, and celebrate the wonders of the cosmos. Join us today and let your imagination take flight! 🚀🌌",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spiral galaxy, with bright colors and swirling patterns that evoke a sense of movement and depth.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

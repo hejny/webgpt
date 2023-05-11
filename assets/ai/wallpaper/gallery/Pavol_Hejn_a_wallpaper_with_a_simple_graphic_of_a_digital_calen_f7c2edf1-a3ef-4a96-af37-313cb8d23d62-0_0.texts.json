@@ -1,0 +1,8 @@
+{
+    "title": "\"Task Wallpapers\"",
+    "content": "Task Wallpapers is a website that provides simple and functional wallpapers to help you stay organized and on top of your tasks. Our digital calendar and to-do list wallpaper designs are perfect for those who want to keep their schedule and priorities in sight at all times.\n\nOur wallpapers feature ample space for notes and reminders, so you can easily jot down important information or upcoming events without cluttering your workspace. With our minimalist and stylish designs, you can keep your desktop looking clean and professional while also staying productive.\n\nWhether you're a busy professional, a student with a packed schedule, or just someone who likes to stay organized, Task Wallpapers has something for you. Check out our collection of wallpapers today and start taking control of your time and tasks!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

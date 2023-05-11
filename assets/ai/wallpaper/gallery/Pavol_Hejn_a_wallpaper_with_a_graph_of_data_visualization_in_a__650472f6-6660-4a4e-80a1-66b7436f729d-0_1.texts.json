@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Wall Art\"",
+    "content": "Welcome to our website, where we bring together the worlds of data and design. Our minimalist and modern wallpapers feature stunning data visualizations that are both informative and beautiful. \n\nWhether you're a data enthusiast or simply appreciate good design, our wallpapers are sure to impress. Each wallpaper is carefully crafted to showcase a unique graph of data, presented in a way that is both visually striking and easy to understand.\n\nOur collection includes a variety of data visualizations, from line graphs to bar charts to scatter plots. No matter what your preference, we have a wallpaper that will suit your style.\n\nSo why settle for a boring, plain wallpaper when you can have one that's both functional and stylish? Upgrade your desktop today with one of our data-inspired designs.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a graph of data visualization, in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

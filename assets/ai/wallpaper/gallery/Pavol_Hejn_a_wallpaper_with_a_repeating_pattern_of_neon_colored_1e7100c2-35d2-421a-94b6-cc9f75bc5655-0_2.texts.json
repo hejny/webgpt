@@ -1,0 +1,8 @@
+{
+    "title": "\"Circuit Glow\"",
+    "content": "Welcome to Circuit Glow, your go-to destination for electrifying wallpapers! Our website features a stunning neon-colored circuitry pattern set against a sleek black background. \n\nWhether you're looking to add a futuristic touch to your desktop or just want to spice up your phone's lock screen, our collection of circuitry wallpapers is sure to impress. With a variety of resolutions available, you can easily find the perfect fit for your device.\n\nAt Circuit Glow, we pride ourselves on providing high-quality wallpapers that are both visually striking and easy to use. Simply download your favorite wallpaper and set it as your background - it's that simple!\n\nSo why settle for a boring, plain background when you can have a dynamic circuitry pattern that truly stands out? Check out our collection today and give your device the glow-up it deserves.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of neon-colored circuitry, set against a black background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

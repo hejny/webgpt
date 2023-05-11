@@ -1,0 +1,8 @@
+{
+    "title": "\"Circuit Wallpapers\"",
+    "content": "Circuit Wallpapers is your go-to destination for high-quality wallpapers with a tech-inspired twist. Our collection features a wide range of circuit board patterns in various colors and styles, perfect for adding an edgy and futuristic vibe to your desktop or mobile device.\n\nWhether you're a tech enthusiast or just love the look of circuitry, our wallpapers are sure to impress. With our easy-to-use interface, you can browse and download wallpapers in just a few clicks. Plus, all of our wallpapers are available in multiple resolutions, so you can find the perfect fit for your screen.\n\nSo why settle for a boring, generic wallpaper when you can have something truly unique? Check out Circuit Wallpapers today and give your devices the upgrade they deserve! ⚡🖥️",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

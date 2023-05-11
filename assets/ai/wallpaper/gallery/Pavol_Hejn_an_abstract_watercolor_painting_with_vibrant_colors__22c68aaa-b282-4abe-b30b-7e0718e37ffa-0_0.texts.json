@@ -1,0 +1,8 @@
+{
+    "title": "\"Colorful Creatives Corner\"",
+    "content": "Welcome to Colorful Creatives Corner! 🎨\n\nOur website is a vibrant and inspiring space for artists, designers, and creatives of all kinds. Here, you'll find a community of like-minded individuals who share your passion for creativity and self-expression.\n\nWhether you're looking for inspiration, tips and tricks, or just a place to connect with others who love what you do, you've come to the right place. Our blog features articles on everything from watercolor painting techniques to graphic design trends, and our forums are a great place to ask questions, share your work, and get feedback from other members.\n\nSo why not join us today? We can't wait to see what you create! 🌈",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract watercolor painting with vibrant colors for an art or design blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

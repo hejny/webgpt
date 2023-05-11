@@ -1,0 +1,8 @@
+{
+    "title": "\"Colorful Business Splash\"",
+    "content": "Welcome to our vibrant and dynamic business website! Our abstract image of overlapping squares in bright, bold colors perfectly represents the innovative and creative spirit that drives our company. \n\nWe are dedicated to providing exceptional marketing services that help businesses grow and succeed. Our team of experts is passionate about developing unique strategies tailored to each client's needs and goals. \n\nWith our cutting-edge approach and commitment to excellence, we strive to make a lasting impact on the industry and set new standards for success. Join us on this exciting journey and let's achieve greatness together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping squares in bright, vibrant colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

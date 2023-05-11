@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Artistry.",
+    "content": "Galactic Artistry is a website dedicated to showcasing stunning abstract art inspired by the beauty of the cosmos. Our collection features intricate patterns and bright colors that evoke the majesty of swirling galaxies and nebulae. Whether you're an art enthusiast or simply looking for a beautiful wallpaper, our selection of high-quality images is sure to impress. Browse through our gallery and discover the perfect piece to add a touch of cosmic wonder to your life.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a swirling galaxy, with bright colors and intricate patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

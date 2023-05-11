@@ -1,0 +1,8 @@
+{
+    "title": "\"Geometric Wallpapers\"",
+    "content": "Welcome to our website featuring a collection of abstract geometric wallpapers inspired by the latest web design trends and color schemes. Our wallpapers are perfect for adding a modern touch to your desktop or mobile device. With a variety of shapes, patterns, and colors to choose from, you're sure to find a wallpaper that suits your style. All of our wallpapers are available for free download in high resolution. Upgrade your digital space with our trendy geometric wallpapers!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract geometric shapes and patterns, inspired by web design trends and color schemes.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

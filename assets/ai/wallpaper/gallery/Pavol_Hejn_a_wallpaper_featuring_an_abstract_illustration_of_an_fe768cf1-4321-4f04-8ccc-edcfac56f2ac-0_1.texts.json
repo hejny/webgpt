@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Search Art\"",
+    "content": "👋 Welcome to AI Search Art!\n\nOur website is dedicated to providing you with a unique and modern browsing experience. Our abstract illustration of an AI-powered search engine wallpaper sets the tone for our minimalist design philosophy.\n\nWe believe that simplicity is key, and that's why we've created a clean and easy-to-use interface that allows you to focus on what really matters: finding what you're looking for. With our powerful search engine, you can quickly and easily find the information you need, without any distractions.\n\nWhether you're searching for the latest news, researching a topic for school, or just browsing the web, AI Search Art has got you covered. So why wait? Start exploring today!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

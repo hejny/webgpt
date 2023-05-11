@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Dreamscape\"",
+    "content": "Welcome to our website, where you can immerse yourself in a futuristic dreamscape. Our website is designed to transport you to a world of endless possibilities and inspire your imagination. With our stunning impressionist-style painting of a futuristic cityscape as the main wallpaper, you'll feel like you're walking through the streets of a dreamy, otherworldly metropolis. \n\nWhether you're looking for inspiration for your next creative project or simply want to escape into a world of beauty and wonder, our website is the perfect destination. Explore our pages and discover a world of art, design, and creativity that will leave you feeling inspired and uplifted. So why wait? Come and join us on a journey to a world beyond your wildest dreams!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Data Control Hub\"",
+    "content": "**Data Control Hub**\n\nWelcome to Data Control Hub - the ultimate platform for monitoring and managing your data. Our simple yet powerful digital dashboard provides you with all the tools you need to stay on top of your data, no matter how complex it may be.\n\nWith our intuitive interface, you can easily track key metrics, identify trends, and make informed decisions based on real-time data. Whether you're a small business owner or a large enterprise, our platform is designed to meet your needs and help you achieve your goals.\n\nAt Data Control Hub, we understand that your data is your most valuable asset. That's why we take security seriously and use the latest encryption technologies to keep your data safe and secure.\n\nSo why wait? Sign up for Data Control Hub today and take control of your data like never before!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

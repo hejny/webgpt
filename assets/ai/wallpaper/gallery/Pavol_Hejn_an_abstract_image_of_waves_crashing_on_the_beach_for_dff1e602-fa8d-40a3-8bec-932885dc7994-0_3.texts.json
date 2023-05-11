@@ -1,0 +1,8 @@
+{
+    "title": "\"Beach Escape\"",
+    "content": "Escape to the Beach 🌴🌊\n\nWelcome to Beach Escape, your ultimate vacation and travel guide. Our website is designed to help you plan your dream beach getaway with ease. Whether you're looking for a relaxing solo trip or an adventurous family vacation, we've got you covered.\n\nOur site features a variety of resources to help you plan your perfect beach escape. From destination guides to hotel recommendations, we provide all the information you need to make the most of your time in the sun. You can also browse through our collection of travel tips and tricks to ensure a stress-free and enjoyable vacation.\n\nAt Beach Escape, we believe that everyone deserves a break from the hustle and bustle of everyday life. So why not pack your bags and head to the beach? Let us help you plan the ultimate escape.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of waves crashing on the beach for a vacation or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

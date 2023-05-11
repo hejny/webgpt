@@ -1,0 +1,8 @@
+{
+    "title": "\"Exotic Colony Art\"",
+    "content": "Welcome to our website! 🚀\n\nWe are a community of art enthusiasts who share a passion for all things sci-fi and fantasy. Our website is dedicated to showcasing the most stunning artwork from talented artists around the world.\n\nOur main wallpaper is an incredible illustration of a colony on a distant planet, featuring a unique blend of futuristic and traditional architecture. This captivating image sets the tone for the rest of our website, which is filled with equally breathtaking pieces.\n\nWhether you're looking for inspiration for your next creative project or simply want to immerse yourself in stunning visuals, we invite you to explore our collection of otherworldly art. From epic space battles to mystical creatures, there's something here for everyone.\n\nJoin our community today and discover a universe of endless imagination! 👽",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Techy Blue Background\"",
+    "content": "Welcome to our website, where we showcase the perfect blend of technology and style with our abstract circuit board pattern in shades of blue and silver. Our website is dedicated to providing you with a visually stunning experience that will inspire and captivate your imagination.\n\nWe understand that first impressions are everything, which is why we have carefully selected this wallpaper to represent our brand. The intricate details and vibrant colors of this design perfectly capture the essence of our website and what we stand for.\n\nWhether you're a tech enthusiast or simply appreciate beautiful design, our website has something for everyone. So sit back, relax, and enjoy exploring our content as you immerse yourself in the mesmerizing world of our abstract circuit board pattern.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract circuit board pattern in shades of blue and silver\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

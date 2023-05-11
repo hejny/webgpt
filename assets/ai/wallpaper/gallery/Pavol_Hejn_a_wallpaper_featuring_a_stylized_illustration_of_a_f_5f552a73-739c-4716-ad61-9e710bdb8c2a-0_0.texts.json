@@ -1,0 +1,8 @@
+{
+    "title": "\"Future Workspace Art\"",
+    "content": "Welcome to our website! Here you will find a stunning wallpaper featuring a stylized illustration of a futuristic workspace, set against a gradient background. Our minimalist and modern design is perfect for those who appreciate clean aesthetics and a sleek look. Whether you're looking to spruce up your desktop or add some flair to your mobile device, our wallpaper is the perfect choice. With its bold lines and striking colors, it's sure to make a statement wherever you use it. So why wait? Download our wallpaper today and elevate your digital space to new heights!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a stylized illustration of a futuristic workspace, with a minimalist and modern design, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

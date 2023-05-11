@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbital Ascent\"",
+    "content": "**Welcome to Orbital Ascent!**\n\nOur website is dedicated to exploring the fascinating world of space travel and technology. We cover everything from the latest developments in rocket science to the most exciting missions planned by NASA and other space agencies around the world.\n\nWith our stunning wallpaper featuring a futuristic space elevator stretching into orbit, you'll feel like you're already on your way to the stars. Whether you're a seasoned space enthusiast or just starting to learn about the wonders of the universe, we have something for everyone.\n\nJoin us as we embark on an incredible journey through the cosmos, discovering new frontiers and pushing the boundaries of human knowledge and exploration. Let's reach for the stars together! 🚀🌟",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

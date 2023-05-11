@@ -1,0 +1,8 @@
+{
+    "title": "\"Starry Births\"",
+    "content": "Welcome to our website, where you'll find a stunning abstract image of a nebula as the main wallpaper. Our website is dedicated to exploring the mysteries of the universe and the birth of stars. We offer a variety of articles and resources that cover everything from the latest discoveries in astrophysics to the history of space exploration. With our bright colors and intricate patterns, we hope to inspire your curiosity about the cosmos. Join us on this journey of discovery and let's explore the wonders of the universe together! 🚀🌌✨",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a nebula, with bright colors and intricate patterns representing the birth of stars.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

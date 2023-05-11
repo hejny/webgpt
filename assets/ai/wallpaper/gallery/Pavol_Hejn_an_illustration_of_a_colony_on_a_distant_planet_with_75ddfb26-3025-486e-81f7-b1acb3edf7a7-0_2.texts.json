@@ -1,0 +1,8 @@
+{
+    "title": "\"Exotic Colony Design\"",
+    "content": "Welcome to our website, where we showcase the most innovative and captivating designs for modern living. Our featured wallpaper depicts a colony on a distant planet, blending futuristic and traditional architecture in a stunning display of creativity and imagination.\n\nWe strive to bring you the best in design, from cutting-edge technology to timeless classics, all with a focus on functionality and beauty. Whether you're looking for inspiration for your own home or simply appreciate great design, you'll find something to love here.\n\nJoin us on a journey through the world of design, where every corner holds a new surprise and every detail is carefully crafted. From sleek and minimalist to ornate and opulent, we've got it all. Come explore with us and discover the endless possibilities of design.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

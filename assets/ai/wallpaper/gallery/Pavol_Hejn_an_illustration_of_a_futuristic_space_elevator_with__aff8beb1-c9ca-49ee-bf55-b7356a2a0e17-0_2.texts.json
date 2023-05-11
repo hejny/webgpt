@@ -1,0 +1,8 @@
+{
+    "title": "\"ElevateSpace\"",
+    "content": "🚀 Welcome to ElevateSpace! 🛰️\n\nOur website is dedicated to exploring the possibilities of space travel and technology. We believe that a space elevator, like the one depicted in our wallpaper, could revolutionize the way we access space.\n\nThrough articles, videos, and interactive content, we aim to educate and inspire people about the potential of this futuristic technology. Join us on our journey as we explore the final frontier and push the boundaries of what's possible.\n\nWhether you're a space enthusiast or just curious about the latest advancements in science and technology, there's something for everyone at ElevateSpace. So come aboard and let's reach for the stars together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

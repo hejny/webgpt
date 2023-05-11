@@ -1,0 +1,8 @@
+{
+    "title": "\"Circular Business Splash\"",
+    "content": "This website is a vibrant and dynamic platform for businesses and marketers alike. Our mission is to provide you with the latest insights and strategies to help your business thrive in today's ever-changing landscape. With expert analysis and practical advice, we'll help you stay ahead of the curve and achieve your goals. Whether you're looking to increase your online presence, optimize your marketing campaigns, or expand your customer base, our team of experienced professionals has got you covered. Join us today and take your business to the next level! 🚀",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping circles in bright colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

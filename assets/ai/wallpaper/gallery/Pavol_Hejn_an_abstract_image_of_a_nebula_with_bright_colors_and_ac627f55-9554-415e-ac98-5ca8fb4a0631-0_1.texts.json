@@ -1,0 +1,8 @@
+{
+    "title": "\"Stellar Origins\"",
+    "content": "Welcome to Stellar Origins, a website dedicated to exploring the mysteries of the universe and the birth of stars. Our mission is to provide you with the latest news and discoveries in astrophysics, as well as insights into the fascinating world of space exploration.\n\nJoin us on a journey through the cosmos as we explore the wonders of the universe, from the formation of galaxies to the birth of new stars. Discover the secrets of black holes, learn about the latest discoveries in exoplanet research, and marvel at the beauty of our own solar system.\n\nWhether you're an amateur astronomer or a seasoned space enthusiast, Stellar Origins has something for everyone. So come along and explore the final frontier with us! 🚀🌟🪐",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a nebula, with bright colors and intricate patterns representing the birth of stars.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

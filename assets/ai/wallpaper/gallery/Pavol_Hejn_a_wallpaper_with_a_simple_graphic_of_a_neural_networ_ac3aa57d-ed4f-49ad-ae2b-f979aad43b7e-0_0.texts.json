@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Net Art\"",
+    "content": "Welcome to our website! 🎉\n\nWe are a platform that showcases beautiful and creative wallpapers featuring simple graphics of neural networks. Our collection of wallpapers is designed to complement your devices with a touch of modern art.\n\nOur wallpapers feature a range of complementary colors that are sure to make your screens pop. Whether you're looking for a wallpaper for your phone, tablet, or desktop, we have something for everyone.\n\nAt our website, you can browse through our collection of neural network wallpapers and download them for free. We update our collection regularly, so be sure to check back often for new additions.\n\nThank you for visiting our website, and we hope you enjoy our collection of neural network wallpapers! 😊",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a neural network, against a background of complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

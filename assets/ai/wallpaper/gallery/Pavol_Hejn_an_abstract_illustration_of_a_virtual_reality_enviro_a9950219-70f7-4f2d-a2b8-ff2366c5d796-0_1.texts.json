@@ -1,0 +1,8 @@
+{
+    "title": "\"Virtual Futuristic Art\"",
+    "content": "Welcome to our website, where we showcase the latest in virtual futuristic art. Our minimalist color scheme and futuristic graphics create a stunning abstract illustration of a virtual reality environment that will transport you to another world. \n\nExplore our collection of digital art pieces that push the boundaries of creativity and imagination. From sleek and modern designs to bold and vibrant displays, our artwork is sure to captivate your senses and inspire your own creative endeavors. \n\nJoin us on this journey through the virtual world, where anything is possible. Let our art take you on a visual adventure that will leave you feeling energized and inspired. Thank you for visiting our site, and we hope you enjoy the experience!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a virtual reality environment, with futuristic graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

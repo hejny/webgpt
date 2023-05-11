@@ -1,0 +1,8 @@
+{
+    "title": "Cosmic Canvas.",
+    "content": "Welcome to Cosmic Canvas, a website that brings the beauty of deep space objects right to your screen. Our abstract wallpapers feature stunning images of black holes, pulsars, and other celestial phenomena, with swirling colors and patterns that will leave you mesmerized.\n\nWhether you're looking for a new desktop background or just want to add some cosmic flair to your smartphone, we've got you covered. Our collection of high-quality wallpapers is constantly growing, so be sure to check back often for new additions.\n\nAt Cosmic Canvas, we believe that everyone should have access to the wonders of the universe. That's why all of our wallpapers are free to download and use however you like. So go ahead, spruce up your screen with a touch of cosmic magic – you won't be disappointed!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a deep space object, such as a black hole or pulsar, with swirling colors and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

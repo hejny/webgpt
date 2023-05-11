@@ -1,0 +1,8 @@
+{
+    "title": "\"Vibrant Abstracts\"",
+    "content": "Welcome to Vibrant Abstracts, where we showcase a stunning collection of abstract patterns with bright and bold colors. Our website is dedicated to bringing you the latest and greatest in abstract art, featuring works from talented artists around the world. \n\nWhether you're looking for inspiration for your next creative project or simply want to admire the beauty of abstract art, our website has something for everyone. From geometric shapes to fluid lines, our collection of wallpapers will leave you mesmerized.\n\nWe believe that art should be accessible to everyone, which is why we offer our wallpapers for free download. You can use them as your desktop background, phone wallpaper, or even print them out to decorate your home or office.\n\nSo come and explore our vibrant world of abstract art. We guarantee that you'll find something that speaks to your unique style and personality.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract pattern with bright colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

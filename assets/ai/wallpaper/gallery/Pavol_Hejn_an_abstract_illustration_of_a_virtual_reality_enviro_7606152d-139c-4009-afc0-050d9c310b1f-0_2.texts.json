@@ -1,0 +1,8 @@
+{
+    "title": "\"Future VR World\"",
+    "content": "Welcome to Future VR World! \n\nOur website is a hub for all things related to virtual reality and the future of technology. We provide up-to-date news, reviews, and insights on the latest VR hardware and software, as well as thought-provoking articles on the impact of VR on society and culture.\n\nOur team of expert writers and contributors are passionate about exploring the possibilities of VR and its potential to transform the way we live, work, and play. From gaming and entertainment to education and healthcare, we believe that VR has the power to revolutionize many aspects of our lives.\n\nWhether you're a seasoned VR enthusiast or just getting started with this exciting technology, Future VR World is the perfect destination for you. Join our community today and discover the endless possibilities of the virtual world!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a virtual reality environment, with futuristic graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

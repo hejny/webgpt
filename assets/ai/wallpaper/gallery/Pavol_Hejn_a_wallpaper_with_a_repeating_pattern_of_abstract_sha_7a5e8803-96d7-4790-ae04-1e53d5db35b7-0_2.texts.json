@@ -1,0 +1,8 @@
+{
+    "title": "\"Fractal Wallpapers\"",
+    "content": "Welcome to our website, where you can find a stunning collection of wallpapers featuring abstract shapes inspired by the Mandelbrot set. Our monochromatic color scheme creates a sleek and modern look that will elevate any device's display. Whether you're looking for a new background for your desktop, phone, or tablet, we have a variety of options to choose from. With our easy-to-navigate website, finding the perfect wallpaper has never been easier. So why settle for a boring default wallpaper when you can have a unique and eye-catching design? Explore our collection today and give your device the upgrade it deserves!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes inspired by the Mandelbrot set, in a monochromatic color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

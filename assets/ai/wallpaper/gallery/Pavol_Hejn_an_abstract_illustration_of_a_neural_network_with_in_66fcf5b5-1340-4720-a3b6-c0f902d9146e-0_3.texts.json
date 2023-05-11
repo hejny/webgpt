@@ -1,0 +1,8 @@
+{
+    "title": "\"NeuroTech Wallpapers\"",
+    "content": "NeuroTech Wallpapers is a website dedicated to providing the latest and greatest in abstract and technological wallpapers. Our collection features a wide variety of designs, all inspired by the intricate workings of neural networks and other cutting-edge technologies. Whether you're looking for a sleek and modern look or something more abstract and artistic, our selection has something for everyone. With new designs added regularly, you'll never run out of options to keep your desktop looking fresh and inspiring. So why settle for a boring wallpaper when you can have something truly unique and eye-catching? Browse our collection today and discover the perfect wallpaper for your tech setup!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a neural network, with intricate lines and a dark and technological color palette.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

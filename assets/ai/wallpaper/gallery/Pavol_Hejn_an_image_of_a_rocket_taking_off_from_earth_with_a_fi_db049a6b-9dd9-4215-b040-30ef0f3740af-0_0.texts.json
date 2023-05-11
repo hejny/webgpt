@@ -1,0 +1,8 @@
+{
+    "title": "\"Launchpad Wallpapers\"",
+    "content": "**Launchpad Wallpapers** is a website dedicated to providing high-quality wallpapers featuring rockets, spacecraft, and other space-related imagery. Our wallpaper collection includes stunning visuals of rocket launches, futuristic spacecraft, and breathtaking views of the cosmos. Whether you're a space enthusiast or just looking for a cool new wallpaper for your desktop or mobile device, Launchpad Wallpapers has something for everyone. All of our wallpapers are carefully curated and optimized for various screen sizes and resolutions, so you can be sure that your device will look out-of-this-world with one of our wallpapers as your background.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An image of a rocket taking off from Earth, with a fiery trail leading into the clouds.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

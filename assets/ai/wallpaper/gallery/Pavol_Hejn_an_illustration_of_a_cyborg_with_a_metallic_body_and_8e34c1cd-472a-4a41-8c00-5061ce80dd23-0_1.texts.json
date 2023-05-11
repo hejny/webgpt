@@ -1,0 +1,8 @@
+{
+    "title": "\"Metallic Future Vision\"",
+    "content": "**Metallic Future Vision** is a website that explores the intersection of technology and humanity. Our mission is to provide insights into how advancements in science and engineering are transforming our world, and what it means for our future. We cover topics ranging from artificial intelligence and robotics to biotechnology and space exploration. Join us on this journey towards a more technologically advanced society, where cyborgs with metallic bodies and glowing eyes may no longer be just a work of fiction.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a cyborg with a metallic body and glowing eyes\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

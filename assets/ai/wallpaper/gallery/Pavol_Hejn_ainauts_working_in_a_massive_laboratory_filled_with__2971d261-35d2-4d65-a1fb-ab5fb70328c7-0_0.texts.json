@@ -1,0 +1,8 @@
+{
+    "title": "\"Lab of AInauts\"",
+    "content": "Welcome to Lab of AInauts! 🧪👨‍🔬👩‍🔬\n\nOur website is dedicated to showcasing the cutting-edge research being conducted by our team of AInauts in a massive laboratory filled with glowing equipment and holographic displays. \n\nWe are passionate about pushing the boundaries of artificial intelligence and exploring the potential of this exciting field. Our team is made up of some of the brightest minds in the industry, who work tirelessly to develop new technologies and advance our understanding of AI.\n\nWhether you're an AI enthusiast or just curious about the latest developments in the field, we invite you to explore our website and learn more about our work. From in-depth articles on our research to behind-the-scenes glimpses into our lab, there's something for everyone here at Lab of AInauts.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}

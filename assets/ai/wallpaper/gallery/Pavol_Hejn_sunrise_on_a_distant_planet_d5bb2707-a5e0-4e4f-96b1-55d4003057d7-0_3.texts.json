@@ -1,0 +1,8 @@
+{
+    "title": "\"Alien Dawn\"",
+    "content": "Welcome to our website, where you can experience the beauty of a distant planet's sunrise every time you visit. Our website is designed to provide a serene and captivating atmosphere for your browsing pleasure. With this stunning wallpaper as our centerpiece, we aim to transport you to another world and inspire your imagination. Whether you're looking for a moment of relaxation or a burst of creativity, our website is the perfect destination. So sit back, relax, and let the sunrise on a distant planet take you away. 🚀🌅✨",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"Sunrise on a distant planet\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
+    }
+}
