@@ -54,13 +54,13 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
         lastTime: moment(),
         startTime: moment(),
     };
-    for (const wallpaperPath of wallpapersPaths) {
+    for (const wallpaperPath of wallpapersPaths.reverse(/* <- TODO: !!! Make popper paralelization from this */)) {
         // Note: We can not make this parallel because of [5]
         await forPlay();
 
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
-        const statsPercentString = `${Math.round((stats.done / wallpapersPaths.length) * 100)}%`;
+        const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
         const now = moment();
         const durationOfOne = now.diff(stats.lastTime);
         stats.lastTime = now;

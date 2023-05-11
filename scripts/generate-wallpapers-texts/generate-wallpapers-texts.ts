@@ -99,7 +99,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
 
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
-        const statsPercentString = `${Math.round((stats.done / wallpapersPaths.length) * 100)}%`;
+        const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
         const now = moment();
         const durationOfOne = now.diff(stats.lastTime);
         stats.lastTime = now;

@@ -65,7 +65,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
-        const statsPercentString = `${Math.round((stats.done / wallpapersPaths.length) * 100)}%`;
+        const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
         const elapsedTime = moment().diff(stats.startTime);
         const estimatedTime = (elapsedTime / stats.done) * (stats.total - stats.done);
         const statsTimeEstimateString =
