@@ -131,35 +131,33 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         const texts = { title: '', content: '' } satisfies IWallpaperTexts;
 
         /**/
-        texts.title = await askGpt(
-            `
+        const title = spaceTrim(
+            (block) => `
 
             Write me short (max 3 words) title for website with main wallpaper that is:
 
-            "${metadata.prompt}"
+            "${block(metadata.prompt)}"
 
             The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.
         
         `,
-            false,
         );
+        texts.title = await askGpt(title, false);
         /**/
 
         /**/
-        texts.content = await askGpt(
-            `
+        const content = spaceTrim(`
 
             Write me some content for this website in markdown format.
             The content should be a short description of the website which is using this wallpaper.
 
             Do not describe the wallpaper itself, but rather the website which is using it.
         
-        `,
-            true,
-        );
+        `);
+        texts.content = await askGpt(content, true);
         /**/
 
-        await writeFile(textsPath, JSON.stringify(texts, null, 4) + '\n', 'utf8');
+        await writeFile(textsPath, JSON.stringify({ ...texts, prompts: { title, content } }, null, 4) + '\n', 'utf8');
         console.info(`💾 ${relative(process.cwd(), textsPath).split('\\').join('/')}`);
     }
 
