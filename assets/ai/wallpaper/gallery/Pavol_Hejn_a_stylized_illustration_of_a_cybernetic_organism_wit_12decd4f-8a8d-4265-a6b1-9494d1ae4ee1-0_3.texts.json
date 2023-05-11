@@ -1,0 +1,8 @@
+{
+    "title": "\"Cyber Glitch Art\"",
+    "content": "# Cyber Glitch Art\n\nWelcome to Cyber Glitch Art, a website dedicated to showcasing stunning digital art that combines cybernetic and glitch aesthetics. Our collection features unique illustrations created by talented artists from around the world.\n\nOur mission is to bring together the best examples of this emerging genre, which blends the sleek, metallic textures of cyborgs and robots with the distorted, fragmented imagery of digital glitches. Whether you're a fan of sci-fi, technology, or just love bold, eye-catching visuals, you'll find plenty to admire on our site.\n\nBrowse our gallery to discover new works, or search by artist or keyword to find something specific. We also feature interviews with some of the most exciting creators in the field, as well as news and updates about upcoming events and exhibitions.\n\nJoin our community of like-minded enthusiasts and share your own favorite pieces, or connect with other fans to discuss the latest trends and techniques. Thanks for visiting Cyber Glitch Art – we hope you enjoy exploring this fascinating intersection of art and technology!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Island Escapes\"",
+    "content": "# Island Escapes\n\nWelcome to Island Escapes, your go-to source for all things related to island travel! Our website is dedicated to helping you plan the perfect island getaway, whether you're looking for a romantic retreat or an adventure-filled vacation.\n\nOur team of experienced travel experts has scoured the globe to bring you the best island destinations, from tropical paradises with white sand beaches to rugged wilderness areas with breathtaking natural beauty. We offer a wide range of travel packages and itineraries to suit any budget and travel style, so you can find the perfect escape that fits your needs.\n\nAt Island Escapes, we believe that travel should be an enriching and transformative experience, and we strive to provide our customers with unforgettable memories that will last a lifetime. So why wait? Start planning your dream island vacation today and let us help you make it a reality!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a floating island with a waterfall for a travel blog or agency\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

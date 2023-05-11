@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbit Earth\"",
+    "content": "# Orbit Earth\n\nWelcome to Orbit Earth, your destination for stunning images of our planet from space. Our website features a collection of photorealistic wallpapers that showcase the beauty and intricacy of Earth's natural landscapes and vibrant colors.\n\nWhether you're looking to add some visual flair to your desktop or mobile device, or simply appreciate the awe-inspiring views of our planet from above, Orbit Earth has something for everyone. Our wallpapers are carefully curated to provide a range of perspectives, from sweeping vistas of continents and oceans to detailed close-ups of geological formations and weather patterns.\n\nAt Orbit Earth, we believe that the more we appreciate and understand our planet, the better equipped we are to protect it for future generations. That's why we're committed to sharing these breathtaking images with as many people as possible, and inspiring a sense of wonder and stewardship for our home in the cosmos.\n\nSo why wait? Explore our collection today and discover the beauty of Earth from a whole new perspective.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photorealistic image of the Earth from space, with vibrant colors and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

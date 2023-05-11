@@ -1,0 +1,8 @@
+{
+    "title": "Stormy Cityscape.",
+    "content": "# Stormy Cityscape\n\nWelcome to Stormy Cityscape, your go-to source for the latest weather and news updates! Our website features a dramatic image of a thunderstorm over a city skyline that perfectly captures the intensity and power of Mother Nature.\n\nStay up-to-date with the latest weather forecasts and alerts for your area, so you can plan your day accordingly. Our team of experienced meteorologists provides accurate and reliable information to help you stay safe and prepared in any weather conditions.\n\nIn addition to weather updates, we also bring you the latest news from around the world. From breaking news to in-depth analysis, our team of journalists covers all the top stories of the day.\n\nAt Stormy Cityscape, we believe that knowledge is power. That's why we are committed to providing our readers with the most up-to-date and comprehensive information available. So whether you're looking for the latest weather forecast or the top news stories of the day, you can count on us to keep you informed and engaged.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a thunderstorm over a city skyline for a weather or news website.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

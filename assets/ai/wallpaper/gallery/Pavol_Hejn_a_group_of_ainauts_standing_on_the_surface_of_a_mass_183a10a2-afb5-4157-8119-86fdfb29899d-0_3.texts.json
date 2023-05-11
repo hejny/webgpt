@@ -1,0 +1,8 @@
+{
+    "title": "\"Planetary Exploration Hub\"",
+    "content": "# Planetary Exploration Hub\n\nWelcome to the Planetary Exploration Hub, your one-stop-shop for all things related to space exploration! Our website is dedicated to providing you with the latest news and information about the exciting world of space exploration.\n\nAt the Planetary Exploration Hub, we believe that space exploration is not just a scientific endeavor, but also a human one. We are passionate about exploring new worlds, discovering new technologies, and pushing the boundaries of what is possible.\n\nOur team of experts is constantly working to bring you the most up-to-date information on space missions, rocket launches, and the latest developments in space technology. Whether you're a space enthusiast or just curious about the cosmos, our website has something for everyone.\n\nSo come join us on this incredible journey as we explore the mysteries of the universe and push the limits of human knowledge. The Planetary Exploration Hub is your gateway to the final frontier!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

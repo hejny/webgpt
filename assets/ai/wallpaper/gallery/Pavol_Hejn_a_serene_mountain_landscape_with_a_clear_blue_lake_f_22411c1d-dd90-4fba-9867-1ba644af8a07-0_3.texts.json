@@ -1,0 +1,8 @@
+{
+    "title": "\"Tranquil Zen Escape\"",
+    "content": "# Tranquil Zen Escape\n\nWelcome to Tranquil Zen Escape, a website dedicated to helping you find inner peace and tranquility. Our serene mountain landscape with a clear blue lake is the perfect backdrop for your meditation or wellness practice.\n\nAt Tranquil Zen Escape, we believe that taking time for yourself is essential for your overall well-being. That's why we offer a variety of resources to help you on your journey towards mindfulness and relaxation.\n\nExplore our guided meditations, yoga videos, and mindfulness exercises to help you reduce stress and anxiety. Connect with our community of like-minded individuals who are also on their own path towards inner peace.\n\nWhether you're just starting out on your wellness journey or are a seasoned practitioner, Tranquil Zen Escape is here to support you every step of the way. So take a deep breath, let go of your worries, and immerse yourself in the beauty of our tranquil mountain landscape.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene mountain landscape with a clear blue lake for a meditation or wellness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

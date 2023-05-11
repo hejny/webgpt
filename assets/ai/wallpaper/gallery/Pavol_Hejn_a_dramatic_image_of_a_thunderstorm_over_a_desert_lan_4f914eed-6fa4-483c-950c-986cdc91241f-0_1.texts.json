@@ -1,0 +1,8 @@
+{
+    "title": "\"Stormy Desert News\"",
+    "content": "# Stormy Desert News\n\nWelcome to Stormy Desert News, your go-to source for the latest weather and news updates. Our website features up-to-date information on local and national weather forecasts, as well as breaking news stories from around the world.\n\nOur team of experienced journalists and meteorologists work tirelessly to bring you accurate and timely news and weather reports. From severe thunderstorms to heatwaves, we've got you covered with detailed forecasts and alerts.\n\nIn addition to weather and news, our website also features articles on science, technology, and lifestyle topics. Whether you're looking for the latest gadgets or tips on how to stay healthy, you'll find it all here at Stormy Desert News.\n\nSo bookmark our website and check back often for the latest updates. And don't forget to follow us on social media for even more news and weather content. Thank you for choosing Stormy Desert News as your trusted source for information!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a thunderstorm over a desert landscape for a weather or news website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

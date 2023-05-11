@@ -1,0 +1,8 @@
+{
+    "title": "\"FutureTech Hub\"",
+    "content": "# FutureTech Hub\n\nWelcome to FutureTech Hub, a website dedicated to exploring the cutting-edge advancements in science and technology. Our platform is designed to showcase the latest breakthroughs in artificial intelligence, robotics, biotechnology, and more.\n\nAt FutureTech Hub, we believe that the future is shaped by those who are willing to push the boundaries of what's possible. That's why we feature articles, videos, and interviews with leading experts in their respective fields, providing our readers with an in-depth look at the latest trends and innovations.\n\nWhether you're a student, researcher, or simply curious about the world around you, FutureTech Hub is your go-to source for all things tech-related. Join us on this journey as we explore the frontiers of science and technology, and discover the amazing possibilities that lie ahead.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

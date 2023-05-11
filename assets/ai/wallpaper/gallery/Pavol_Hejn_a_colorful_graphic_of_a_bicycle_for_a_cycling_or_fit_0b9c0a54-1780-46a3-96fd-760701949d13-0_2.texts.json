@@ -1,0 +1,8 @@
+{
+    "title": "\"Bike Bliss Blog\"",
+    "content": "# Bike Bliss Blog\n\nWelcome to Bike Bliss Blog, your ultimate source for all things cycling and fitness. Our website is dedicated to providing you with the latest news, tips, and tricks to help you achieve your cycling and fitness goals.\n\nWhether you're a seasoned cyclist or just starting out, we have something for everyone. Our team of experienced writers and cycling enthusiasts are passionate about sharing their knowledge and expertise with our readers.\n\nFrom training and nutrition advice to product reviews and event coverage, we cover it all. We believe that cycling is not just a sport, but a way of life, and we aim to inspire and motivate our readers to get on their bikes and experience the joy of cycling.\n\nSo join us on this journey and let's discover the world of cycling together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a bicycle for a cycling or fitness blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

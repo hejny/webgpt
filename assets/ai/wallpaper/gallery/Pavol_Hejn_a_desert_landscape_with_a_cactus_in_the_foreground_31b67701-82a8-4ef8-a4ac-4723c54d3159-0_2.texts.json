@@ -1,0 +1,8 @@
+{
+    "title": "\"Cactus Desert View\"",
+    "content": "# Cactus Desert View\n\nWelcome to Cactus Desert View, your go-to destination for all things related to the beauty and wonder of desert landscapes. Our website features stunning photography and artwork showcasing the unique flora and fauna that thrive in these arid regions.\n\nFrom towering cacti to elusive desert wildlife, we aim to provide a comprehensive look at the natural wonders of the desert. Whether you're an avid hiker, a nature enthusiast, or simply appreciate the raw beauty of the outdoors, our website has something for everyone.\n\nExplore our collection of breathtaking photos, learn about the ecology of desert ecosystems, and discover tips and tricks for exploring these rugged landscapes safely and responsibly. With Cactus Desert View, you'll gain a newfound appreciation for the beauty and resilience of the desert.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A desert landscape with a cactus in the foreground\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

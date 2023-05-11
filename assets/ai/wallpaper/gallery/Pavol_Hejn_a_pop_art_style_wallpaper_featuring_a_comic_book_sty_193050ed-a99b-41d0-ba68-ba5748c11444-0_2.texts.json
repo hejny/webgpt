@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Robot Wallpapers\"",
+    "content": "# Futuristic Robot Wallpapers\n\nWelcome to our website dedicated to showcasing a collection of high-quality wallpapers featuring futuristic robots and cyborgs. Our selection includes a variety of pop art-style illustrations, each with its unique take on the theme.\n\nWhether you're a fan of science fiction or simply appreciate the aesthetics of futuristic design, our wallpapers are sure to add a touch of personality to your desktop or mobile device. With their bold colors and dynamic compositions, they're perfect for anyone looking to make a statement with their wallpaper choice.\n\nWe update our collection regularly, so be sure to check back often for new additions. All of our wallpapers are available for free download in a range of resolutions, making it easy to find the perfect fit for your device.\n\nThank you for visiting Futuristic Robot Wallpapers! We hope you enjoy our selection as much as we do.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

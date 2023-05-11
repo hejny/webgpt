@@ -1,0 +1,8 @@
+{
+    "title": "\"Space Station Gaze\"",
+    "content": "# Space Station Gaze\n\nWelcome to Space Station Gaze, a website dedicated to bringing you the latest news and updates on space exploration. Our team of experts is passionate about all things related to space and is constantly monitoring the latest developments in the industry.\n\nAt Space Station Gaze, we believe that space exploration is not just about discovering new planets and galaxies, but also about pushing the boundaries of technology and innovation. We are committed to sharing this excitement with our readers and providing them with a unique perspective on the universe.\n\nWhether you're an avid space enthusiast or simply curious about what's out there, Space Station Gaze has something for everyone. From in-depth articles on the latest space missions to stunning images of the cosmos, our website is your one-stop-shop for all things space-related.\n\nSo why wait? Join us on our journey through the stars and discover the wonders of the universe today!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

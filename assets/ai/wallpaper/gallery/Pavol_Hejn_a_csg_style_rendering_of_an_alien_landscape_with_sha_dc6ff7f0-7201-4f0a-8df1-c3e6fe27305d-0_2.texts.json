@@ -1,0 +1,8 @@
+{
+    "title": "\"Alien Industrial Hub\"",
+    "content": "# Welcome to Alien Industrial Hub\n\nOur website is dedicated to providing a platform for futuristic and industrial-themed content. We aim to be the go-to destination for those who are passionate about science fiction, technology, and innovation.\n\nAt Alien Industrial Hub, you'll find a variety of resources including articles, videos, and forums where you can connect with like-minded individuals. Our focus is on exploring the intersection between technology and creativity, and we believe that our unique blend of sci-fi and industrial aesthetics will inspire and engage our audience.\n\nWhether you're a fan of classic science fiction or cutting-edge technology, Alien Industrial Hub has something for everyone. Join us today and discover a world of imagination and innovation!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

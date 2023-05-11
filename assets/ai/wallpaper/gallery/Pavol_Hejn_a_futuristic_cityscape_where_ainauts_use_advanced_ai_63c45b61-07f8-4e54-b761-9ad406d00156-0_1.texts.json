@@ -1,0 +1,8 @@
+{
+    "title": "\"AInaut City\"",
+    "content": "# AInaut City\n\nWelcome to AInaut City, a futuristic metropolis where advanced AI technology is used to monitor and maintain the city's infrastructure and systems. Our website showcases the cutting-edge technology and innovative solutions that make AInaut City one of the most efficient and sustainable cities in the world.\n\nExplore our site to learn more about the role of AInauts in the city's operations, from managing traffic flow to optimizing energy usage. Discover how our AI-powered systems ensure the safety and well-being of our citizens, from early warning systems for natural disasters to real-time crime prevention.\n\nAt AInaut City, we believe in using technology to create a better future for all. Join us on this journey as we continue to push the boundaries of what's possible in urban living.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

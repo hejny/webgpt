@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Explorers HQ\"",
+    "content": "# Galactic Explorers HQ\n\nWelcome to Galactic Explorers HQ, your one-stop-shop for all things space exploration! Our website is dedicated to providing the latest news, updates, and resources for those who are passionate about exploring the final frontier.\n\nWhether you're an amateur astronomer, a professional astronaut, or simply someone who loves to gaze up at the stars, we have something for you. From in-depth articles on the latest discoveries in astrophysics to stunning images of distant galaxies, our website is designed to inspire and inform.\n\nBut that's not all - Galactic Explorers HQ is also a community hub where like-minded individuals can come together to share their love of space. Join our forums to connect with other enthusiasts, ask questions, and share your own experiences.\n\nSo what are you waiting for? Strap on your space suit and join us as we journey into the unknown depths of the cosmos. The universe is waiting!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

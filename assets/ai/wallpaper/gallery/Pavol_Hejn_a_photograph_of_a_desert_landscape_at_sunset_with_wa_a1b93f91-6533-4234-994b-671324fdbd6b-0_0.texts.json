@@ -1,0 +1,8 @@
+{
+    "title": "\"Sandscape Sunset\"",
+    "content": "# Sandscape Sunset\n\nWelcome to Sandscape Sunset, your go-to destination for stunning desert landscapes at sunset. Our website features a carefully curated collection of high-quality wallpapers that capture the beauty and tranquility of the desert during the golden hour.\n\nWhether you're looking to spruce up your desktop background or add some flair to your phone screen, we've got you covered with a variety of resolutions and aspect ratios to choose from. Our wallpapers are perfect for nature lovers, photographers, and anyone who appreciates the majesty of the great outdoors.\n\nAt Sandscape Sunset, we believe that everyone deserves a little bit of natural beauty in their lives. That's why we offer all of our wallpapers completely free of charge, with no hidden fees or subscriptions required. Simply browse our selection, find the perfect wallpaper for you, and download it with just a few clicks.\n\nThank you for visiting Sandscape Sunset, and we hope our wallpapers bring a little bit of warmth and serenity to your day.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a desert landscape at sunset, with warm colors and long shadows.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

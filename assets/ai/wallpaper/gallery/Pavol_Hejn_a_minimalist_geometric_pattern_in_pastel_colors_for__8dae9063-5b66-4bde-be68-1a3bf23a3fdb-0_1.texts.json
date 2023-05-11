@@ -1,0 +1,8 @@
+{
+    "title": "\"Chic Geometry\"",
+    "content": "# Chic Geometry\n\nWelcome to Chic Geometry, a fashion and beauty website that embraces the simplicity of minimalist design. Our geometric pattern in pastel colors sets the tone for our curated collection of stylish clothing, accessories, and beauty products.\n\nWe believe that less is more, and our carefully selected pieces reflect this philosophy. From timeless basics to unique statement pieces, we offer a range of options that are both chic and functional. Our beauty section features natural and cruelty-free products that enhance your natural beauty without compromising on quality.\n\nAt Chic Geometry, we strive to create a shopping experience that is both enjoyable and effortless. Our user-friendly interface and easy checkout process make it simple to find what you're looking for and complete your purchase with ease.\n\nJoin us in embracing the beauty of simplicity and shop our collection today.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist geometric pattern in pastel colors for a fashion or beauty website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

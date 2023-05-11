@@ -1,0 +1,8 @@
+{
+    "title": "\"Mystic Forest\"",
+    "content": "# Mystic Forest\n\nWelcome to Mystic Forest, a website dedicated to exploring the beauty and mystery of forests around the world. Our mission is to share stunning imagery and stories that capture the essence of these awe-inspiring natural wonders.\n\nThrough our carefully curated collection of photographs, videos, and articles, we hope to inspire a deeper appreciation for the importance of forests in our lives. From the lush rainforests of South America to the misty woodlands of Europe, each forest has its own unique character and secrets waiting to be discovered.\n\nJoin us on a journey through the heart of nature and discover the magic of Mystic Forest.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

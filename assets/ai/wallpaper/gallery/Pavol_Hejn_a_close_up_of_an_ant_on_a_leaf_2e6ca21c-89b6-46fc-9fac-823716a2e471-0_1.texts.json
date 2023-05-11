@@ -1,0 +1,8 @@
+{
+    "title": "\"Nature's Tiny Wonders\"",
+    "content": "# Nature's Tiny Wonders\n\nWelcome to Nature's Tiny Wonders, a website dedicated to showcasing the beauty and complexity of the natural world in its smallest forms. Our site features stunning close-up photography of insects, plants, and other tiny creatures that often go unnoticed in our daily lives.\n\nWe believe that by taking a closer look at these small wonders, we can gain a deeper appreciation for the intricate web of life that surrounds us. Our goal is to inspire curiosity and wonder in our visitors, and to encourage them to explore and learn more about the natural world.\n\nWhether you're a nature lover, a photographer, or simply someone who enjoys discovering new things, we invite you to browse our collection of images and discover the magic of Nature's Tiny Wonders.",
+    "prompts": {
+        "title": "\n\n            Write me short (max 3 words) title for website with main wallpaper that is:\n\n            \"A close-up of an ant on a leaf\"\n\n            The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.\n        \n        ",
+        "content": "\n\n            Write me some content for this website in markdown format.\n            The content should be a short description of the website which is using this wallpaper.\n\n            Do not describe the wallpaper itself, but rather the website which is using it.\n        \n        "
+    }
+}

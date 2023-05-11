@@ -1,0 +1,8 @@
+{
+    "title": "Quantum Wallpapers.",
+    "content": "# Quantum Wallpapers\n\nWelcome to Quantum Wallpapers, your go-to source for high-quality wallpapers inspired by the fascinating world of quantum computing. Our website features a wide selection of geometric designs and abstract patterns that capture the essence of this cutting-edge technology.\n\nWhether you're a scientist, a tech enthusiast, or simply someone who appreciates beautiful art, our collection of quantum-inspired wallpapers is sure to impress. From bold and vibrant colors to intricate shapes and patterns, each wallpaper is carefully crafted to bring a touch of sophistication and elegance to your desktop or mobile device.\n\nAt Quantum Wallpapers, we believe that science and art can coexist in perfect harmony, and we strive to showcase the beauty of quantum computing through our stunning designs. So why settle for a boring, generic wallpaper when you can have a piece of art that reflects your love for science and technology?\n\nBrowse our collection today and find the perfect wallpaper to elevate your digital space to the next level!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A geometric design in shades of purple and pink, inspired by the shape of a quantum computer\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

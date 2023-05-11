@@ -1,0 +1,8 @@
+{
+    "title": "\"Circuit Wallpapers\"",
+    "content": "# Circuit Wallpapers\n\nWelcome to Circuit Wallpapers, your go-to source for high-quality circuit board wallpapers. Our website offers a wide selection of wallpapers featuring repeating patterns of circuit board components in shades of black, grey, and neon green. \n\nWhether you're a tech enthusiast or just looking for a unique and modern wallpaper for your desktop or mobile device, we have something for everyone. Our wallpapers are carefully curated and designed to add a touch of sophistication to any device.\n\nAt Circuit Wallpapers, we understand the importance of personalization and self-expression. That's why we offer a variety of resolutions and aspect ratios to ensure a perfect fit for any screen size. Plus, all of our wallpapers are free to download and use for personal use.\n\nSo why settle for a boring, generic wallpaper when you can have a sleek and stylish circuit board design? Browse our collection today and find the perfect wallpaper to showcase your individuality.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A repeating pattern of circuit board components, in shades of black, grey, and neon green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

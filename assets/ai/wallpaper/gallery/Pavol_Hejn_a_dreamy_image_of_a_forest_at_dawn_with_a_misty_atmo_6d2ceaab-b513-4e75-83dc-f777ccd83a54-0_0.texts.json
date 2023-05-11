@@ -1,0 +1,8 @@
+{
+    "title": "\"Dawn Forest Blog\"",
+    "content": "# Welcome to Dawn Forest Blog\n\nDawn Forest Blog is your go-to destination for all things nature and wildlife. Our website is dedicated to bringing you the latest news, stories, and insights about the natural world around us.\n\nOur team of passionate writers and photographers are committed to capturing the beauty and wonder of nature through their words and images. From breathtaking landscapes to fascinating animal behavior, we strive to showcase the diversity and richness of our planet's ecosystems.\n\nWhether you're an avid nature enthusiast or simply curious about the world around you, Dawn Forest Blog has something for everyone. Join us on a journey of discovery as we explore the wonders of the natural world together.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy image of a forest at dawn with a misty atmosphere for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

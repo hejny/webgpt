@@ -1,0 +1,8 @@
+{
+    "title": "\"Mystic Mountain Wallpaper\"",
+    "content": "# Mystic Mountain Wallpaper\n\nWelcome to our website, where you can find a collection of stunning wallpapers featuring breathtaking mountain landscapes. Our wallpapers are carefully curated to showcase the beauty and grandeur of nature's most awe-inspiring creations.\n\nAt Mystic Mountain Wallpaper, we believe that a great wallpaper can transform your desktop or mobile device into a work of art. Whether you're looking for a serene alpine lake, a rugged snow-capped peak, or a misty mountain range shrouded in mystery, we have the perfect wallpaper for you.\n\nAll of our wallpapers are high-resolution and optimized for various screen sizes, so you can enjoy them on any device. We update our collection regularly, so be sure to check back often for new additions.\n\nThank you for visiting Mystic Mountain Wallpaper. We hope our wallpapers bring a sense of peace and wonder to your digital world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

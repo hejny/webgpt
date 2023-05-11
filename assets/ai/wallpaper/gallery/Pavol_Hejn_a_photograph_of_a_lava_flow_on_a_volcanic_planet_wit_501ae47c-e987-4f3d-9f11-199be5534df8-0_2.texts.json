@@ -1,0 +1,8 @@
+{
+    "title": "Volcanic Thrills.",
+    "content": "# Volcanic Thrills\n\nWelcome to Volcanic Thrills, your ultimate source for adventure and excitement! Our website is dedicated to providing you with the most thrilling experiences on volcanic planets.\n\nExplore our wide selection of tours and activities, including lava surfing, volcano trekking, and crater diving. Our expert guides will take you on an unforgettable journey through some of the most breathtaking landscapes in the galaxy.\n\nWhether you're a seasoned adventurer or a first-time explorer, we have something for everyone. Our packages are designed to cater to all levels of experience and include all necessary equipment and safety gear.\n\nJoin us today and experience the thrill of a lifetime on a volcanic planet. Book now and let the adventure begin!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

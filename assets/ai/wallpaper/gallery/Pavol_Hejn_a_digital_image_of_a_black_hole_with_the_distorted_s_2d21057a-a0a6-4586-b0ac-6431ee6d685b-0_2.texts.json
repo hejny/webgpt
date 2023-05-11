@@ -1,0 +1,8 @@
+{
+    "title": "\"Gravity's Artistry\"",
+    "content": "# Gravity's Artistry\n\nWelcome to Gravity's Artistry, a website dedicated to showcasing the beauty and power of gravity through stunning digital art. Our main wallpaper features a black hole, one of the most fascinating objects in the universe, with its extreme gravity distorting the shapes and colors around it.\n\nBut that's just the beginning. Our collection of artwork includes images of galaxies, nebulae, and other celestial bodies, all transformed by the forces of gravity into breathtaking works of art. Each piece is carefully crafted to capture the awe-inspiring majesty of the cosmos.\n\nWhether you're a space enthusiast, an artist, or simply someone who appreciates beauty, we invite you to explore our gallery and discover the wonders of gravity's artistry.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

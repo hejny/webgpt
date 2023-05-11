@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Tech Hub\"",
+    "content": "# Futuristic Tech Hub\n\nWelcome to Futuristic Tech Hub, your go-to source for the latest news and insights on technology and innovation. Our website is designed to provide you with a comprehensive view of the tech world, from cutting-edge gadgets and software to emerging trends and breakthroughs.\n\nAt Futuristic Tech Hub, we strive to bring you the most relevant and up-to-date information on all things tech. Whether you're a tech enthusiast, a professional in the industry, or just curious about the latest developments, our team of experts is here to keep you informed.\n\nOur articles cover a wide range of topics, including artificial intelligence, virtual reality, cybersecurity, blockchain, and more. We also feature interviews with industry leaders, reviews of the latest products, and analysis of market trends and forecasts.\n\nWith our sleek and modern design, you'll feel like you've stepped into a neon cityscape of the future. So come explore the world of technology with us at Futuristic Tech Hub.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A neon cityscape with futuristic skyscrapers for a tech blog homepage\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

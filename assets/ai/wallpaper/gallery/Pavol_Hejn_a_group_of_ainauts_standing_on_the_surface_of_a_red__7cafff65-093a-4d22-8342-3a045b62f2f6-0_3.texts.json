@@ -1,0 +1,8 @@
+{
+    "title": "\"Red Planet Explorers\"",
+    "content": "# Red Planet Explorers\n\nWelcome to Red Planet Explorers, your ultimate destination for all things related to Mars exploration! Our website is dedicated to providing you with the latest news, updates, and insights on the ongoing missions to the red planet.\n\nOur team of experts brings you exclusive content on the latest discoveries, technological advancements, and scientific breakthroughs in the field of Mars exploration. We also feature interviews with leading scientists and engineers who are working tirelessly to unravel the mysteries of our neighboring planet.\n\nWhether you're a space enthusiast, a science buff, or just curious about the universe around us, Red Planet Explorers has something for everyone. Join us on this exciting journey of discovery and exploration as we uncover the secrets of Mars, one mission at a time.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

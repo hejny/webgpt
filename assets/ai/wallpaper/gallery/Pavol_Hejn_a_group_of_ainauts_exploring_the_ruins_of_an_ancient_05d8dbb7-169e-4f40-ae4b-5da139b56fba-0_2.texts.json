@@ -1,0 +1,8 @@
+{
+    "title": "\"Ruins Expedition HQ\"",
+    "content": "# Ruins Expedition HQ\n\nWelcome to Ruins Expedition HQ, your ultimate destination for all things related to exploring ancient civilizations on distant planets. Our website is dedicated to providing you with the latest news, updates, and resources on archaeological expeditions to long-lost worlds.\n\nJoin our community of AInauts and discover the mysteries of the past as we journey through the ruins of forgotten civilizations. From towering statues and temples to intricate mosaics and artifacts, our expeditions uncover the secrets of these ancient cultures and bring them to life for a new generation.\n\nWhether you're an experienced explorer or just starting out, Ruins Expedition HQ has everything you need to plan your next adventure. Browse our database of past expeditions, connect with fellow AInauts, and stay up-to-date on the latest discoveries in the field.\n\nSo what are you waiting for? Join us on our quest to uncover the secrets of the past and explore the ruins of ancient civilizations on distant planets.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

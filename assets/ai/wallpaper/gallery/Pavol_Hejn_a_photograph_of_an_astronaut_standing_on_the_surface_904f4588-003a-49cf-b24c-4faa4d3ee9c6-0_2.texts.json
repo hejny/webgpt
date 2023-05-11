@@ -1,0 +1,8 @@
+{
+    "title": "\"Lunar Explorer Hub\"",
+    "content": "# Lunar Explorer Hub\n\nWelcome to the Lunar Explorer Hub, your one-stop-shop for all things related to lunar exploration! Our website is dedicated to providing up-to-date information on past, present, and future missions to the moon.\n\nWhether you're a space enthusiast or a professional in the field, our website offers a wealth of resources to help you stay informed. From news articles and scientific research papers to mission updates and historical archives, we've got it all.\n\nOur team of experts is passionate about lunar exploration and is committed to sharing their knowledge with the world. We believe that by promoting education and awareness about the moon, we can inspire the next generation of explorers to push the boundaries of space exploration.\n\nSo come explore with us and discover the wonders of the moon!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an astronaut standing on the surface of the moon with Earth in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

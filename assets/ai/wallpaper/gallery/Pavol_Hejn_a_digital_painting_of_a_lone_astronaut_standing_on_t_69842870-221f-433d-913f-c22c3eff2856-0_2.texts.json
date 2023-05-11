@@ -1,0 +1,8 @@
+{
+    "title": "\"Space Explorer's Haven\"",
+    "content": "# Welcome to Space Explorer's Haven\n\nOur website is dedicated to all space enthusiasts who love to explore the mysteries of the universe. We provide a platform where you can find the latest news, updates, and stories related to space exploration. \n\nWhether you are an amateur astronomer or a professional astronaut, our website has something for everyone. From the latest discoveries in astrophysics to the most stunning images captured by NASA, we have it all.\n\nJoin our community of space lovers and share your passion for the final frontier. Explore the depths of space with us and discover the wonders of the cosmos.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

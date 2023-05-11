@@ -1,0 +1,8 @@
+{
+    "title": "\"Shadowy Trail\"",
+    "content": "# Shadowy Trail\n\nWelcome to Shadowy Trail, a website dedicated to all things horror and mystery. Our site is designed to take you on a journey through the darkest corners of your imagination.\n\nExplore our collection of spine-tingling stories, bone-chilling videos, and eerie podcasts. Our content is carefully curated to ensure that every visit to our site leaves you feeling unsettled and wanting more.\n\nJoin our community of horror enthusiasts and share your own tales of terror. Connect with like-minded individuals who share your love for the macabre and the unknown.\n\nAt Shadowy Trail, we believe that fear is a powerful emotion that can both thrill and terrify us. We invite you to join us on our journey into the shadows and discover the secrets that lie hidden within.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody forest with a hidden path for a horror or mystery website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

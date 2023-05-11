@@ -1,0 +1,8 @@
+{
+    "title": "\"Glacial Worlds\"",
+    "content": "# Glacial Worlds\n\nWelcome to Glacial Worlds, a website dedicated to exploring the beauty and wonder of frozen landscapes on distant planets. Our mission is to showcase the incredible diversity of glacial formations throughout the universe, from towering ice mountains to vast polar ice caps.\n\nThrough stunning photography and informative articles, we aim to transport you to these otherworldly environments and inspire a sense of awe and appreciation for the natural wonders of the cosmos. Join us on a journey through the icy depths of space and discover the breathtaking beauty of Glacial Worlds.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

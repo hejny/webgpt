@@ -1,0 +1,8 @@
+{
+    "title": "\"Arctic Dreamscape\"",
+    "content": "# Arctic Dreamscape\n\nWelcome to Arctic Dreamscape, a website dedicated to showcasing the stunning beauty of the Arctic region. Our site features breathtaking photographs and videos of the Arctic landscape, wildlife, and culture.\n\nImmerse yourself in the majesty of this remote and pristine environment through our curated collection of images and videos. From the shimmering icebergs to the dancing Northern Lights, Arctic Dreamscape captures the essence of this unique corner of the world.\n\nWhether you're an adventurer seeking inspiration for your next trip or simply looking to appreciate the natural wonders of our planet, Arctic Dreamscape is the perfect destination. Join us on a journey to discover the magic of the Arctic.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

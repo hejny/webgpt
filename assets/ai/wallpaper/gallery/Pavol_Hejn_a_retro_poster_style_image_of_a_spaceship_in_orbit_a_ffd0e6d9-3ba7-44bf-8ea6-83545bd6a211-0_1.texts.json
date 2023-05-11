@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Hub\"",
+    "content": "# Galactic Hub\n\nWelcome to Galactic Hub, your one-stop-shop for all things related to space exploration and technology. Our website is dedicated to providing the latest news, updates, and insights on the advancements made in the field of space science.\n\nAt Galactic Hub, we believe that space exploration holds the key to unlocking new frontiers of knowledge and understanding about our universe. Our team of experts works tirelessly to bring you the most up-to-date information on space missions, rocket launches, and technological innovations that are shaping the future of space travel.\n\nWhether you're a space enthusiast, a student of science, or simply curious about the mysteries of the cosmos, Galactic Hub has something for everyone. Join us as we explore the final frontier and discover the wonders of the universe!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A retro poster-style image of a spaceship in orbit around Earth, with bold colors and typography.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

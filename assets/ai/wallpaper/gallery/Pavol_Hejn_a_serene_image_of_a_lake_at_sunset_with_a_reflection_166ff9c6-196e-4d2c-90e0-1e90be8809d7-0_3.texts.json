@@ -1,0 +1,8 @@
+{
+    "title": "\"Serenity Escapes\"",
+    "content": "# Serenity Escapes\n\nWelcome to Serenity Escapes, your ultimate destination for peaceful and rejuvenating vacations. Our website is designed to help you plan your next getaway to some of the most serene locations around the world.\n\nWe believe that everyone deserves a break from their busy lives and should have the opportunity to unwind in tranquil surroundings. That's why we have carefully curated a collection of destinations that offer breathtaking natural beauty, stunning sunsets, and crystal-clear lakes.\n\nOur team of travel experts has scoured the globe to bring you the best options for your next vacation. Whether you're looking for a romantic escape or a family-friendly adventure, we have something for everyone.\n\nAt Serenity Escapes, we understand that planning a trip can be stressful, which is why we've made it easy for you. With our user-friendly website, you can browse through our selection of destinations, compare prices, and book your trip all in one place.\n\nSo why wait? Start planning your next peaceful escape today with Serenity Escapes.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene image of a lake at sunset with a reflection of the sky for a travel or vacation website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

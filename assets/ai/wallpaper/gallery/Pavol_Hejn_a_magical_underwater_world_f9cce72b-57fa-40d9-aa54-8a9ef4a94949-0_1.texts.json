@@ -1,0 +1,8 @@
+{
+    "title": "\"Enchanted Ocean Depths\"",
+    "content": "# Welcome to Enchanted Ocean Depths\n\nOur website is dedicated to exploring the mysterious and enchanting world that lies beneath the surface of the ocean. With stunning imagery and informative articles, we aim to transport our visitors to a magical underwater realm filled with vibrant colors, fascinating creatures, and breathtaking landscapes.\n\nWhether you're an avid scuba diver or simply have a love for all things aquatic, our site offers something for everyone. From tips on how to capture the perfect underwater photograph to in-depth profiles of some of the ocean's most intriguing inhabitants, we strive to provide a comprehensive and engaging resource for anyone interested in the beauty and wonder of the sea.\n\nSo come dive into the depths with us and discover a world unlike any other!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A magical underwater world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

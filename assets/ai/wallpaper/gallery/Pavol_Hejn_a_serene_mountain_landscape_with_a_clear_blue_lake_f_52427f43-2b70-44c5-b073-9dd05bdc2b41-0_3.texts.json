@@ -1,0 +1,8 @@
+{
+    "title": "\"Mountain Zen\"",
+    "content": "# Mountain Zen\n\nWelcome to Mountain Zen, your ultimate destination for meditation and wellness. Our serene mountain landscape with a clear blue lake provides the perfect backdrop for relaxation and mindfulness. \n\nAt Mountain Zen, we believe that finding inner peace is essential for a healthy mind and body. That's why we offer a variety of resources to help you achieve a state of calm and tranquility. From guided meditations to yoga classes, our platform has everything you need to start your journey towards a more peaceful life.\n\nOur team of experienced instructors and wellness experts are here to guide you every step of the way. Whether you're a beginner or an advanced practitioner, we have something for everyone. \n\nJoin us today and discover the power of Mountain Zen.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene mountain landscape with a clear blue lake for a meditation or wellness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Space Exploration Team\"",
+    "content": "# Space Exploration Team\n\nWelcome to Space Exploration Team, a website dedicated to the adventures of a group of AInauts and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space. \n\nJoin us on our journey as we uncover the mysteries of this ancient vessel, discover new technologies and encounter strange alien life forms. Our team is made up of some of the brightest minds in the galaxy, and with the help of our advanced artificial intelligence systems, we are equipped to handle whatever challenges come our way.\n\nStay up to date with our latest discoveries and follow along as we push the boundaries of space exploration. We invite you to join our community and share your thoughts and ideas with us as we embark on this exciting adventure together.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

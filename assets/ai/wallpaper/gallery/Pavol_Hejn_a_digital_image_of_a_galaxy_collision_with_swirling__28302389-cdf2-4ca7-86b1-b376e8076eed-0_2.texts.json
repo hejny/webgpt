@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Collision Hub.",
+    "content": "# Galactic Collision Hub\n\nWelcome to the Galactic Collision Hub, your go-to source for all things related to galactic collisions. Our website is dedicated to providing you with the latest news, research, and insights into the fascinating world of galaxy mergers.\n\nAt Galactic Collision Hub, we strive to make complex scientific concepts accessible to everyone. Whether you're a seasoned astronomer or simply curious about the universe, our content is designed to inform and inspire.\n\nExplore our articles, videos, and interactive features to learn more about the chaotic and beautiful events that shape our cosmos. From the formation of new stars to the evolution of entire galaxies, there's always something new to discover at Galactic Collision Hub.\n\nJoin our community of space enthusiasts and stay up-to-date on the latest discoveries in astrophysics. Follow us on social media and sign up for our newsletter to never miss a beat.\n\nThank you for visiting Galactic Collision Hub, where science meets beauty in the collision of galaxies.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

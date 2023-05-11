@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Night Sky\"",
+    "content": "# Neon Night Sky\n\nWelcome to Neon Night Sky, your ultimate destination for all things vibrant and cosmic! Our website is designed to take you on a journey through the stars with our neon-colored interpretation of a starry sky wallpaper. \n\nAt Neon Night Sky, we believe that everyone deserves a little bit of magic in their lives. That's why we've created a platform where you can immerse yourself in the beauty of the universe from the comfort of your own home. Whether you're looking for inspiration, relaxation, or just a little bit of fun, our website has something for everyone.\n\nExplore our collection of articles, videos, and images that capture the essence of the cosmos in all its glory. From stunning photographs of distant galaxies to thought-provoking essays on the nature of space and time, our content is sure to leave you feeling inspired and awestruck.\n\nSo what are you waiting for? Come join us on a journey through the neon night sky and discover the wonders of the universe like never before!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A neon-colored interpretation of a starry sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

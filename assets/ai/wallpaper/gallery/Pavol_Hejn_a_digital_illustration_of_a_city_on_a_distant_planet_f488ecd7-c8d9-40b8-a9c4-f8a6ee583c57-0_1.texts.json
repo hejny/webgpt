@@ -1,0 +1,8 @@
+{
+    "title": "\"Otherworldly Metropolis\"",
+    "content": "# Otherworldly Metropolis\n\nWelcome to Otherworldly Metropolis, a website dedicated to exploring the futuristic cities of distant planets. Our team of artists and writers are passionate about creating immersive digital illustrations that transport you to other worlds.\n\nJoin us on a journey through sprawling metropolises filled with towering skyscrapers, advanced technology, and bustling streets. Discover new cultures and societies, and learn about the challenges and triumphs of life in these alien cities.\n\nWhether you're a science fiction enthusiast, an artist looking for inspiration, or simply curious about what life might be like on other planets, Otherworldly Metropolis has something for you. Browse our collection of stunning digital illustrations, read our thought-provoking articles, and join our community of fellow travelers. Welcome to the future!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a city on a distant planet, with towering buildings and advanced technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

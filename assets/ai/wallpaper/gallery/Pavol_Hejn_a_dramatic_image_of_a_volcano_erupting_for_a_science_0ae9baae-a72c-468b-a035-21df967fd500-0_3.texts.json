@@ -1,0 +1,8 @@
+{
+    "title": "Volcano Vista.",
+    "content": "# Volcano Vista\n\nWelcome to Volcano Vista, your go-to source for all things related to volcanoes and geology. Our website is dedicated to providing you with the latest news, research, and information about volcanoes from around the world.\n\nOur team of expert writers and researchers are passionate about all aspects of volcanology, from the science behind volcanic eruptions to the impact they have on our planet and society. We strive to bring you accurate and up-to-date information in an accessible and engaging way.\n\nWhether you're a student studying geology or simply fascinated by the power and beauty of volcanoes, Volcano Vista has something for everyone. So come explore with us and discover the wonder of these incredible natural phenomena.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a volcano erupting for a science or geology blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

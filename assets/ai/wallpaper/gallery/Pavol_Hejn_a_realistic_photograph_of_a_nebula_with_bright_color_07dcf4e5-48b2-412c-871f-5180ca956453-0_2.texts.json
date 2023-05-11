@@ -1,0 +1,8 @@
+{
+    "title": "Nebula Bliss.",
+    "content": "# Nebula Bliss\n\nWelcome to Nebula Bliss, your ultimate destination for stunning wallpapers that showcase the beauty of the universe. Our website features a collection of breathtaking nebula photographs that will transport you to the depths of space.\n\nWhether you're looking to spruce up your desktop background or add some cosmic flair to your phone's lock screen, we've got you covered. Our wallpapers are carefully curated to provide the perfect balance of color, detail, and realism, making them the ideal choice for anyone who loves astronomy and astrophotography.\n\nAt Nebula Bliss, we believe that everyone should have access to high-quality wallpapers that inspire and delight. That's why all of our images are available for free download, so you can enjoy the wonders of the cosmos without breaking the bank.\n\nSo why wait? Browse our collection today and discover the magic of the universe in all its glory.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

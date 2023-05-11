@@ -1,0 +1,8 @@
+{
+    "title": "\"Flame Home Vibes\"",
+    "content": "# Flame Home Vibes\n\nWelcome to Flame Home Vibes, your go-to source for all things cozy and homey. Our website is dedicated to providing you with inspiration and ideas for creating a warm and inviting atmosphere in your home.\n\nWhether you're looking for tips on how to decorate your living room, cozy up your bedroom, or create a welcoming entryway, we've got you covered. Our team of experts has curated a collection of articles, guides, and resources that will help you transform your space into a haven of comfort and relaxation.\n\nAt Flame Home Vibes, we believe that the key to a happy home is a warm and inviting atmosphere. That's why we focus on all aspects of home decor, from furniture and lighting to textiles and accessories. We also provide lifestyle tips and advice on how to create a more mindful and balanced life at home.\n\nSo whether you're a seasoned home decor enthusiast or just starting out, we invite you to explore our website and discover the joys of creating a cozy and welcoming home.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A cozy image of a fireplace with logs and flames for a home decor or lifestyle blog.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

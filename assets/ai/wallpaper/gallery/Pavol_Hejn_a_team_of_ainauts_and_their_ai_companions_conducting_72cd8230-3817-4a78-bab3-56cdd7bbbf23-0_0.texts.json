@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Planet Exploration\"",
+    "content": "# AI Planet Exploration\n\nWelcome to AI Planet Exploration, a website dedicated to the exploration and study of distant gas giant planets with the help of advanced artificial intelligence technology.\n\nOur team of AInauts and their AI companions are conducting groundbreaking experiments on the surface of these massive planets, gathering data and insights that could revolutionize our understanding of the universe.\n\nJoin us on this exciting journey as we push the boundaries of what is possible with AI and explore the mysteries of the cosmos. From the latest updates on our missions to in-depth articles on the science behind our work, AI Planet Exploration is your go-to source for all things related to planetary exploration and AI technology.\n\nSo come along and discover the wonders of the universe with us!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

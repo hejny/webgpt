@@ -1,0 +1,8 @@
+{
+    "title": "\"Space Odyssey Hub\"",
+    "content": "# Space Odyssey Hub\n\nWelcome to Space Odyssey Hub, your one-stop destination for all things related to space exploration and science! Our website is dedicated to providing you with the latest news, updates, and insights from the world of astronomy, astrophysics, and space technology.\n\nAt Space Odyssey Hub, we believe that space exploration is not just about discovering new planets or galaxies but also about understanding our own planet better. Our team of experts brings you the most exciting developments in space research and helps you understand their impact on our daily lives.\n\nWhether you are a space enthusiast, a student, or a professional working in the field of science, our website has something for everyone. From informative articles and videos to interactive quizzes and games, we aim to make learning about space fun and engaging.\n\nSo come join us on this exciting journey of discovery and exploration. Follow us on social media and sign up for our newsletter to stay updated on the latest happenings in the world of space science. Let's explore the final frontier together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a retro rocket ship for a science or space exploration website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

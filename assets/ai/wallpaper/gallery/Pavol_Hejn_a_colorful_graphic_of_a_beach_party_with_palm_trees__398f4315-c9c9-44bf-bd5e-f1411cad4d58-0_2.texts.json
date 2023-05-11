@@ -1,0 +1,8 @@
+{
+    "title": "\"Island Getaways\"",
+    "content": "# Island Getaways\n\nWelcome to Island Getaways, your one-stop-shop for all things tropical vacation! Our website is dedicated to helping you plan the ultimate island getaway experience. \n\nWhether you're looking for a relaxing beach vacation or an adventure-packed trip, we've got you covered. Our expert team has curated a selection of the best island destinations around the world, complete with insider tips and recommendations.\n\nBrowse our collection of stunning resorts, villas, and hotels, all located in breathtaking locations with picturesque views. From the Caribbean to the South Pacific, we have handpicked the most beautiful spots to help you escape from reality and immerse yourself in paradise.\n\nOur website also features a variety of travel guides and articles, providing you with valuable information on everything from local cuisine to popular activities. We want to ensure that your island getaway is not only beautiful but also culturally enriching.\n\nSo what are you waiting for? Start planning your dream island vacation today with Island Getaways!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a beach party with palm trees and cocktails for a vacation or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

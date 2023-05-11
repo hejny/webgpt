@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Buzzwords Wall\"",
+    "content": "# AI Buzzwords Wall\n\nWelcome to AI Buzzwords Wall, your go-to source for the latest buzz in the world of artificial intelligence. Our minimalist website features a sleek design with a background that showcases a variety of AI-related buzzwords in different fonts and colors.\n\nWe strive to keep you up-to-date with the latest news, trends, and developments in the exciting field of AI. From machine learning to natural language processing, we cover it all. Our team of experts scours the internet to bring you the most relevant and interesting stories from around the globe.\n\nWhether you're an AI enthusiast, researcher, or just curious about the future of technology, our website has something for everyone. So sit back, relax, and explore the world of AI with us.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist design featuring AI-related buzzwords in different fonts and colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Future Metropolis Hub\"",
+    "content": "# Welcome to Future Metropolis Hub\n\nOur website is dedicated to all things futuristic and innovative. We believe that the future is full of endless possibilities, and we want to showcase the latest advancements in technology, architecture, and design.\n\nAt Future Metropolis Hub, you'll find a curated selection of articles, images, and videos that explore the cutting-edge developments in cities around the world. From sustainable skyscrapers to self-driving cars, we cover it all.\n\nOur team of writers and contributors are passionate about the future and are always on the lookout for the next big thing. We aim to inspire our readers to think beyond the present and imagine what's possible in the years to come.\n\nJoin us on our journey into the future and discover the incredible innovations that are shaping the world we live in.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a city on a distant planet, with towering buildings and advanced technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

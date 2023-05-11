@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Circuitry Hub\"",
+    "content": "# Neon Circuitry Hub\n\nWelcome to the Neon Circuitry Hub, your go-to destination for all things related to technology and electronics! Our website is designed to provide you with the latest news, reviews, and insights on everything from smartphones and laptops to gaming consoles and smart home devices.\n\nOur team of tech enthusiasts is constantly scouring the web for the most interesting and innovative products and trends in the industry. Whether you're a seasoned tech pro or just starting out, we've got something for everyone.\n\nIn addition to our informative articles and reviews, we also offer a vibrant community forum where you can connect with like-minded individuals and share your own experiences and opinions. So what are you waiting for? Join the Neon Circuitry Hub today and stay ahead of the curve in the exciting world of technology!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A repeating pattern of circuit board components, in shades of black, grey, and neon green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

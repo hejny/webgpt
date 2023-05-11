@@ -1,0 +1,8 @@
+{
+    "title": "\"Exoplanet Explorers\"",
+    "content": "# Exoplanet Explorers\n\nWelcome to Exoplanet Explorers, your go-to website for all things extraterrestrial! Our team of expert AInauts has scoured the galaxy to bring you the latest news, discoveries, and insights into the fascinating world of exoplanets.\n\nJoin us on a journey to distant worlds as we explore the mysteries of the universe. From the smallest rocky planets to the largest gas giants, we've got it all covered. Our articles are written by leading experts in the field, so you can trust that you're getting the most accurate and up-to-date information available.\n\nBut we're not just about reading and learning - we also offer a range of interactive features to engage and entertain our visitors. Take a virtual tour of some of the most intriguing exoplanets discovered so far, or try your hand at designing your own alien species.\n\nSo come on board and join the Exoplanet Explorers community today. Who knows what wonders we'll discover next?",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

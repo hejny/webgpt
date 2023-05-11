@@ -1,0 +1,8 @@
+{
+    "title": "AI Space Odyssey.",
+    "content": "# AI Space Odyssey\n\nWelcome to AI Space Odyssey, the ultimate destination for all space enthusiasts! Our website is dedicated to bringing you the latest news and updates on space exploration, particularly the fascinating world of artificial intelligence in space.\n\nJoin us on a journey through the vast expanse of space as we explore the possibilities of AI technology in space travel. Our team of expert writers and researchers will keep you up-to-date on the latest developments in space exploration, from groundbreaking discoveries to new missions and technologies.\n\nWhether you're a seasoned space enthusiast or just starting out, AI Space Odyssey has something for everyone. From informative articles and in-depth analysis to stunning visuals and interactive features, our website is designed to inspire and educate.\n\nSo come aboard our futuristic spaceship crewed entirely by AInauts, and let's embark on an exciting mission of discovery together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

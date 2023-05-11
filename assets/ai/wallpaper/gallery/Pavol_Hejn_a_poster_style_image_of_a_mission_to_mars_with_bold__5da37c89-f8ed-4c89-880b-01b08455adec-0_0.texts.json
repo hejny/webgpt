@@ -1,0 +1,8 @@
+{
+    "title": "\"Future Mars Missions\"",
+    "content": "# Future Mars Missions\n\nWelcome to Future Mars Missions, your go-to source for the latest news and updates on upcoming missions to the red planet. Our website is dedicated to providing you with the most accurate and up-to-date information on all things related to Mars exploration.\n\nFrom the latest rocket launches and spacecraft designs to updates on ongoing research and discoveries, we have everything you need to stay informed about the future of space exploration. Our team of experts works tirelessly to bring you the most comprehensive coverage of all Mars-related developments.\n\nWhether you're a space enthusiast, a scientist, or just someone who's curious about what lies beyond our planet, Future Mars Missions has something for everyone. So come along on this exciting journey with us as we explore the mysteries of the universe and work towards making humanity a multi-planetary species.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A poster-style image of a mission to Mars, with bold typography and a futuristic color scheme that represents the ambition of space exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

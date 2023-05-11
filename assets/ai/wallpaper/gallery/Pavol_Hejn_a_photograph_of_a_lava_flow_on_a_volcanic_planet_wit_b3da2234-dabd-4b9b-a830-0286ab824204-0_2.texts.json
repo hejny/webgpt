@@ -1,0 +1,8 @@
+{
+    "title": "Volcano Vista.",
+    "content": "# Volcano Vista\n\nWelcome to Volcano Vista, your ultimate destination for all things adventurous! Our website is dedicated to providing you with the latest news, tips, and guides on exploring the most exciting volcanic destinations in the world.\n\nWhether you're an experienced adventurer or a beginner looking to try something new, our team of experts has got you covered. From hiking through lava fields to witnessing stunning volcanic eruptions, we offer a wide range of thrilling experiences that will leave you breathless.\n\nAt Volcano Vista, we believe that travel should be more than just a way to escape the daily grind. It should be an opportunity to discover new cultures, challenge yourself, and create unforgettable memories. That's why we're committed to bringing you the best and most authentic volcano-related experiences out there.\n\nSo what are you waiting for? Join us on this epic journey and let's explore the wonders of the volcanic world together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Home Hearth Vibes\"",
+    "content": "# Home Hearth Vibes\n\nWelcome to Home Hearth Vibes, your go-to source for cozy home decor and lifestyle inspiration. Our website features a warm and inviting image of a fireplace with logs and flames, setting the tone for the comfortable and welcoming atmosphere we aim to create.\n\nWhether you're looking to spruce up your living space with some rustic charm or simply seeking ideas for creating a relaxing and inviting home environment, our site has got you covered. From DIY tutorials and decorating tips to product recommendations and lifestyle advice, we offer a variety of resources to help you achieve the perfect balance of comfort and style in your home.\n\nSo sit back, relax, and browse our collection of articles and inspiration. We hope our cozy hearth vibes inspire you to create a home that feels like a warm embrace.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A cozy image of a fireplace with logs and flames for a home decor or lifestyle blog.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

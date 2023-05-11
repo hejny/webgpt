@@ -1,0 +1,8 @@
+{
+    "title": "\"Sunset Lake Getaway\"",
+    "content": "# Sunset Lake Getaway\n\nWelcome to Sunset Lake Getaway, your ultimate destination for a serene and peaceful vacation. Our website is designed to help you plan the perfect trip to a picturesque lake at sunset with stunning reflections of the sky.\n\nWe offer a wide range of travel resources including accommodation options, activities, and local attractions to help you make the most out of your trip. Whether you're looking for a romantic getaway or a family vacation, our website has everything you need to plan an unforgettable experience.\n\nOur team of travel experts has curated a selection of the best destinations for you to choose from, all featuring breathtaking views of lakes at sunset. We provide detailed information about each location, including photos, reviews, and insider tips to help you make informed decisions.\n\nSo why wait? Start planning your dream vacation today with Sunset Lake Getaway.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene image of a lake at sunset with a reflection of the sky for a travel or vacation website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

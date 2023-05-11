@@ -1,0 +1,8 @@
+{
+    "title": "\"Balance Seeker\"",
+    "content": "# Balance Seeker\n\nBalance Seeker is a motivational and personal development website that aims to help individuals achieve balance in their lives. Our mission is to inspire people to find their inner strength, overcome obstacles, and reach their full potential.\n\nThrough our articles, videos, and resources, we provide guidance on topics such as mindfulness, self-care, goal-setting, and productivity. Our content is designed to be practical, actionable, and easy to implement in daily life.\n\nAt Balance Seeker, we believe that everyone has the power to create a fulfilling and balanced life. Whether you're struggling with stress, burnout, or lack of direction, our community is here to support and encourage you every step of the way.\n\nJoin us on this journey towards balance and self-discovery. Let's walk the tightrope of life together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person walking on a tightrope for a motivational or personal development website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

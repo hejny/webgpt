@@ -1,0 +1,8 @@
+{
+    "title": "\"Mossy Nature\"",
+    "content": "# Mossy Nature\n\nWelcome to Mossy Nature, a website dedicated to celebrating the beauty and wonder of nature. Our site features stunning photographs and artwork showcasing the natural world in all its glory.\n\nFrom towering trees to delicate wildflowers, we aim to capture the essence of nature through our carefully curated collection of images. Our close-up shots of tree trunks with moss are just one example of the breathtaking sights you'll find on our site.\n\nWhether you're an avid nature enthusiast or simply appreciate the beauty of the great outdoors, Mossy Nature is the perfect place to explore and discover new wonders. So come on in, take a look around, and let us inspire you with the majesty of nature.",
+    "prompts": {
+        "title": "\n\n            Write me short (max 3 words) title for website with main wallpaper that is:\n\n            \"A close-up of a tree trunk with moss\"\n\n            The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.\n        \n        ",
+        "content": "\n\n            Write me some content for this website in markdown format.\n            The content should be a short description of the website which is using this wallpaper.\n\n            Do not describe the wallpaper itself, but rather the website which is using it.\n        \n        "
+    }
+}

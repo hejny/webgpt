@@ -1,0 +1,8 @@
+{
+    "title": "\"Dawn Cityscape\"",
+    "content": "# Welcome to Dawn Cityscape\n\nOur website is designed with a minimalist approach, using a graphic of a city skyline at dawn as our main wallpaper. We believe that simplicity is key when it comes to effective business and marketing websites, which is why we've chosen this sleek and modern design.\n\nAt Dawn Cityscape, we offer a range of services to help businesses grow and thrive. Whether you're looking for digital marketing solutions, website design and development, or branding and identity services, our team of experts has the skills and experience to deliver results.\n\nWe understand that your time is valuable, which is why we've made it our mission to provide efficient and effective solutions that meet your unique needs. With our streamlined processes and personalized approach, we're confident that we can help you achieve your goals and take your business to the next level.\n\nThank you for visiting Dawn Cityscape. We look forward to working with you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a city skyline at dawn for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

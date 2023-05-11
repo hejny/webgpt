@@ -1,0 +1,8 @@
+{
+    "title": "\"Lost Civilization Adventures\"",
+    "content": "# Lost Civilization Adventures\n\nWelcome to Lost Civilization Adventures, the ultimate destination for adventure seekers and history buffs alike! Our website is dedicated to exploring the mysteries of ancient civilizations on distant planets.\n\nJoin our team of AInauts as they embark on thrilling expeditions to uncover the secrets of long-forgotten cultures. With towering statues and temples all around them, our explorers will take you on a journey through time and space, revealing the hidden wonders of the universe.\n\nWhether you're an avid fan of science fiction or just looking for a new and exciting way to explore the past, Lost Civilization Adventures has something for everyone. So come along with us and discover the secrets of the universe!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Island Getaway Vibes\"",
+    "content": "# Island Getaway Vibes\n\nWelcome to Island Getaway Vibes, your ultimate destination for planning your dream tropical vacation. Our website is designed to transport you to a world of sun, sand, and relaxation.\n\nWith our easy-to-use search function, you can browse through a wide selection of beachfront resorts, luxury villas, and cozy bungalows. Whether you're looking for a romantic getaway or a family-friendly vacation, we have something for everyone.\n\nOur team of travel experts has curated a list of the best activities and attractions on each island, so you can make the most of your trip. From snorkeling with colorful fish to sipping cocktails under swaying palm trees, we've got you covered.\n\nSo why wait? Start planning your island getaway today and let us take care of the details. With Island Getaway Vibes, your dream vacation is just a click away.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a beach party with palm trees and cocktails for a vacation or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

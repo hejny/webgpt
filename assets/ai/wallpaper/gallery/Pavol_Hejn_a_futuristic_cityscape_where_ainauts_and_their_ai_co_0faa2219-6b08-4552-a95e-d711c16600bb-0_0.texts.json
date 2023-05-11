@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic AI Metropolis\"",
+    "content": "# Welcome to Futuristic AI Metropolis\n\nOur website is dedicated to showcasing the latest advancements in artificial intelligence and their integration into modern cityscapes. Our featured wallpaper depicts a bustling metropolis where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.\n\nAt Futuristic AI Metropolis, we believe that the future of urban development lies in the seamless collaboration between humans and machines. Through our articles and resources, we aim to explore the ways in which AI can be used to enhance and streamline various aspects of city life, from transportation and energy management to healthcare and public safety.\n\nJoin us on our journey towards a smarter, more connected world, where technology and humanity coexist in harmony.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Cavern Expedition Hub\"",
+    "content": "# Cavern Expedition Hub\n\nWelcome to the Cavern Expedition Hub, your one-stop destination for all things related to underground exploration on distant planets. Our website is dedicated to providing you with the latest news, updates, and resources on cave exploration.\n\nWhether you're an experienced AInaut or just starting out, our community of explorers is here to share their knowledge and experiences with you. From tips on navigating treacherous caverns to recommendations for the best equipment and gear, we've got you covered.\n\nExplore our forums to connect with other explorers, share your own stories and discoveries, and ask questions about anything related to cave exploration. You can also browse our extensive library of articles, videos, and images to learn more about the fascinating world of underground exploration.\n\nJoin us on our mission to uncover the mysteries of the universe's hidden depths. Sign up today and become a part of the Cavern Expedition Hub community!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

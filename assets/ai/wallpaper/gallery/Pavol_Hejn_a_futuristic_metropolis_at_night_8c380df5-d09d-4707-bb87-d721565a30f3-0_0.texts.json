@@ -1,0 +1,8 @@
+{
+    "title": "\"Nighttime Cityscape\"",
+    "content": "# Nighttime Cityscape\n\nWelcome to Nighttime Cityscape, a website dedicated to showcasing the beauty and wonder of futuristic metropolises at night. Our collection of stunning wallpapers features some of the most breathtaking cityscapes from around the world, each one captured in all its illuminated glory.\n\nWhether you're looking for inspiration for your next digital project or simply want to add a touch of urban sophistication to your desktop background, our selection of high-quality images is sure to impress. From towering skyscrapers and neon-lit streets to bustling crowds and glowing landmarks, our wallpapers capture the energy and excitement of modern cities after dark.\n\nSo why settle for a boring, generic wallpaper when you can have a Nighttime Cityscape? Browse our collection today and discover the perfect backdrop for your digital world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic metropolis at night\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

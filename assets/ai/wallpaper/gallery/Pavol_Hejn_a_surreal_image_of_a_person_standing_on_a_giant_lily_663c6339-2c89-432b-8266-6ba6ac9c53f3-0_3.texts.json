@@ -1,0 +1,8 @@
+{
+    "title": "\"Lily Pad Dreams\"",
+    "content": "# Lily Pad Dreams\n\nWelcome to Lily Pad Dreams, a website dedicated to nurturing your creativity and imagination. Our mission is to inspire you to dream big and explore the endless possibilities of your mind.\n\nThrough our articles, videos, and resources, we aim to provide you with the tools and inspiration you need to unlock your full creative potential. Whether you're an artist, writer, musician, or simply someone who wants to tap into their inner creativity, we have something for you.\n\nJoin our community of like-minded individuals who share a passion for creativity and imagination. Connect with others, share your work, and receive feedback and support from our team of experts.\n\nLet Lily Pad Dreams be your guide on your journey to discovering the magic of your own imagination.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person standing on a giant lily pad in a pond for a creativity or imagination website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

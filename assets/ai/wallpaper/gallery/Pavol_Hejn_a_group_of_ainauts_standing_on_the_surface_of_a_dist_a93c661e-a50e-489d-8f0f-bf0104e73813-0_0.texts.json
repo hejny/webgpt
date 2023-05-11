@@ -1,0 +1,8 @@
+{
+    "title": "\"Beyond the Horizon\"",
+    "content": "# Beyond the Horizon\n\nWelcome to Beyond the Horizon, a website dedicated to exploring the mysteries of the universe. Our team of expert AInauts has traveled to the farthest reaches of space to uncover the secrets of distant planets and alien structures.\n\nThrough stunning imagery and in-depth analysis, we aim to bring you closer to the wonders of the cosmos. Join us on our journey as we push the boundaries of exploration and discovery.\n\nStay up-to-date with the latest news and discoveries from our expeditions, and interact with fellow space enthusiasts in our community forums. Whether you're an avid stargazer or simply curious about the universe, Beyond the Horizon has something for everyone.\n\nSo come, take a step into the unknown, and explore the vast expanse of space with us. The adventure awaits!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

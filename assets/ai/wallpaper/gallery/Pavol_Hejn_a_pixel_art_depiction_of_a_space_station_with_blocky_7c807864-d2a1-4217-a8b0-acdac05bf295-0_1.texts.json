@@ -1,0 +1,8 @@
+{
+    "title": "\"Retro Space Station\"",
+    "content": "# Retro Space Station\n\nWelcome to Retro Space Station, your one-stop-shop for all things retro-futuristic! Our website is dedicated to celebrating the nostalgia and creativity of past visions of the future.\n\nExplore our collection of articles, images, and videos that showcase the retro-futuristic aesthetic in all its glory. From classic sci-fi movies and TV shows to vintage video games and comic books, we've got it all covered.\n\nJoin our community of like-minded enthusiasts and share your own love for the retro-futuristic genre. Connect with fellow fans, discover new content, and stay up-to-date on the latest trends and developments in the world of retro-futurism.\n\nSo come aboard our virtual space station and let's journey back in time to a future that never was!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

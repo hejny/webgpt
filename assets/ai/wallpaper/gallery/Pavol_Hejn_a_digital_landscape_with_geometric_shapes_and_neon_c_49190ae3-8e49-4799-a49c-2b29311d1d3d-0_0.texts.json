@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Geometric Landscapes\"",
+    "content": "# Welcome to Neon Geometric Landscapes!\n\nOur website is a digital wonderland of vibrant colors and sharp angles. We showcase stunning landscapes created with geometric shapes and illuminated with neon hues. Our collection of wallpapers is perfect for those who love bold, eye-catching designs that make a statement.\n\nWhether you're looking to spice up your desktop background or add some flair to your mobile device, we have the perfect wallpaper for you. Our selection includes a variety of themes and styles, so you're sure to find something that suits your taste.\n\nAll of our wallpapers are available for free download, so feel free to browse our collection and choose your favorites. And don't forget to check back often, as we're always adding new designs to keep things fresh and exciting.\n\nThank you for visiting Neon Geometric Landscapes, and we hope you enjoy our stunning collection of digital art!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital landscape with geometric shapes and neon colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Desert Sunset View\"",
+    "content": "# Desert Sunset View\n\nWelcome to Desert Sunset View, a website dedicated to showcasing the beauty of desert landscapes at sunset. Our collection of stunning photographs will transport you to some of the most breathtaking locations in the world.\n\nWhether you're an avid photographer or simply appreciate the natural beauty of the world around us, you'll find something to love on our site. From the warm colors and long shadows of the desert at sunset to the rugged terrain and unique flora and fauna that call these places home, our images capture the essence of these incredible landscapes.\n\nSo take a moment to explore our collection and immerse yourself in the awe-inspiring beauty of the desert at sunset. And if you find a photograph that speaks to you, don't hesitate to reach out – we'd love to hear from you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a desert landscape at sunset, with warm colors and long shadows.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

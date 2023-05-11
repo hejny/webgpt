@@ -1,0 +1,8 @@
+{
+    "title": "AlienTech Hub.",
+    "content": "# AlienTech Hub\n\nWelcome to AlienTech Hub, your one-stop destination for all things futuristic and industrial. Our website is designed to cater to the needs of tech enthusiasts who are always on the lookout for the latest in cutting-edge technology.\n\nAt AlienTech Hub, we bring you the most advanced gadgets and gizmos from around the world. Our team of experts scours the market to find the most innovative products that are sure to blow your mind. From drones and robots to virtual reality headsets and smart home devices, we have it all.\n\nOur website is easy to navigate, with a user-friendly interface that allows you to browse through our extensive collection of products. We also offer detailed product descriptions and specifications, so you can make an informed decision before making a purchase.\n\nSo why wait? Visit AlienTech Hub today and experience the future of technology!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

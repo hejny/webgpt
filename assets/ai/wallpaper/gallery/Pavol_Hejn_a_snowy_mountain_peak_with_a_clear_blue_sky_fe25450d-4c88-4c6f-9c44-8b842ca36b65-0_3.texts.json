@@ -1,0 +1,8 @@
+{
+    "title": "\"Peak Vista\"",
+    "content": "# Peak Vista\n\nWelcome to Peak Vista, a website dedicated to showcasing the beauty and majesty of mountain peaks around the world. Our collection of stunning wallpapers features breathtaking vistas that will transport you to some of the most awe-inspiring locations on earth.\n\nWhether you're an avid mountaineer or simply appreciate the natural wonders of our planet, our wallpapers are sure to inspire and delight. From snow-capped summits to lush alpine forests, each image captures the unique character and charm of these magnificent landscapes.\n\nWe update our collection regularly, so be sure to check back often for new additions. And if you have a favorite mountain peak you'd like to see featured on our site, don't hesitate to get in touch - we're always on the lookout for new and exciting destinations to share with our visitors.\n\nThank you for visiting Peak Vista, and we hope you enjoy exploring the world's most beautiful mountains with us.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A snowy mountain peak with a clear blue sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

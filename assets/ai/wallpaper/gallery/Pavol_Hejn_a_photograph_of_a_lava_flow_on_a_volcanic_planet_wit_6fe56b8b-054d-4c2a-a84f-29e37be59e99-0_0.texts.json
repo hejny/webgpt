@@ -1,0 +1,8 @@
+{
+    "title": "Volcanic Visions.",
+    "content": "# Volcanic Visions\n\nWelcome to Volcanic Visions, your ultimate destination for all things related to volcanoes and volcanic activity. Our website is dedicated to providing you with the latest news, updates, and insights on volcanic eruptions, lava flows, and other natural phenomena.\n\nOur team of experts works tirelessly to bring you accurate and up-to-date information on volcanic activity around the world. Whether you're a professional geologist or simply a curious enthusiast, we have something for everyone.\n\nExplore our website to learn about the science behind volcanoes, their impact on the environment, and the ways in which they shape our planet. We also offer stunning photography and videos of volcanic eruptions and lava flows, including the breathtaking image featured as our main wallpaper.\n\nStay informed and inspired with Volcanic Visions.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

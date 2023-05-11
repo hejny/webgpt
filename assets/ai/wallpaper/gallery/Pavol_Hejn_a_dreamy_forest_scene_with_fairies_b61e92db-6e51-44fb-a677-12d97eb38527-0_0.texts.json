@@ -1,0 +1,8 @@
+{
+    "title": "\"Fairy Forest Dreams\"",
+    "content": "# Fairy Forest Dreams\n\nWelcome to Fairy Forest Dreams, a website dedicated to bringing you into a world of enchantment and wonder. Our website features a dreamy forest scene complete with fairies that will transport you to a magical realm.\n\nExplore our website and discover all the mystical creatures that inhabit this forest. From unicorns to dragons, each page is filled with fantastical beings that will spark your imagination and ignite your sense of adventure.\n\nWhether you're looking for inspiration for your next fantasy novel or simply want to escape reality for a while, Fairy Forest Dreams is the perfect place to let your mind wander. So come join us on this journey through a world of magic and mystery.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy forest scene with fairies\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

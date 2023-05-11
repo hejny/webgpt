@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Research Hub\"",
+    "content": "# Galactic Research Hub\n\nWelcome to the Galactic Research Hub, your one-stop destination for all things related to space exploration and research. Our team of expert AInauts is dedicated to conducting groundbreaking experiments and studies on distant moons, planets, and beyond.\n\nAt Galactic Research Hub, we believe that the future of humanity lies in our ability to explore and understand the vast expanse of the universe. That's why we are committed to pushing the boundaries of science and technology to unlock the secrets of the cosmos.\n\nWhether you're a seasoned space enthusiast or just starting to discover the wonders of the universe, Galactic Research Hub has something for everyone. Explore our collection of articles, videos, and interactive resources to learn more about the latest discoveries and breakthroughs in space research.\n\nJoin us on this exciting journey of discovery and exploration, as we strive to uncover the mysteries of the universe and pave the way for a brighter future for all of humanity.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

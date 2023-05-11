@@ -1,0 +1,8 @@
+{
+    "title": "\"Green Leaf Living\"",
+    "content": "# Green Leaf Living\n\nWelcome to Green Leaf Living, your go-to destination for all things sustainable and environmentally friendly. Our website is dedicated to providing you with the latest news, tips, and resources on how to live a more eco-conscious lifestyle.\n\nWe believe that small changes can make a big impact, and we're here to help you make those changes. Whether you're looking to reduce your carbon footprint, learn about sustainable fashion, or discover ways to reduce waste in your home, we've got you covered.\n\nOur team of experts is passionate about sustainability and is constantly researching and sharing new ideas to help you live a greener life. We also feature interviews with eco-friendly businesses and individuals who are making a difference in their communities.\n\nJoin our community of like-minded individuals who are committed to protecting our planet for future generations. Let's work together to create a more sustainable world, one green leaf at a time.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a leaf for an environmental or sustainable living website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

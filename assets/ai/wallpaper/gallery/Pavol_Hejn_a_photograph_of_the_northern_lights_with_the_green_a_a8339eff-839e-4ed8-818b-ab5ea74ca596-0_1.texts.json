@@ -1,0 +1,8 @@
+{
+    "title": "AuroraWallpapers.com",
+    "content": "# AuroraWallpapers.com\n\nWelcome to AuroraWallpapers.com, your go-to destination for stunning wallpapers featuring the mesmerizing Northern Lights. Our website is dedicated to providing you with a wide variety of high-quality wallpapers that showcase the natural beauty of the aurora borealis.\n\nWhether you're looking for a wallpaper to spruce up your desktop or mobile device, or simply want to admire the breathtaking beauty of the Northern Lights, we've got you covered. Our collection features a range of different images, from close-up shots of the swirling green and purple hues to panoramic views of the aurora dancing across the night sky.\n\nAll of our wallpapers are available for free download and use, so you can enjoy the magic of the Northern Lights wherever you go. So why wait? Browse our collection today and find the perfect wallpaper to brighten up your day!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

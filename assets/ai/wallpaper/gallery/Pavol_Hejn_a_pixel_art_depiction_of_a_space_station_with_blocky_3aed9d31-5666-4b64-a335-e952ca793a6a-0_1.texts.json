@@ -1,0 +1,8 @@
+{
+    "title": "\"Pixel Space Station\"",
+    "content": "# Pixel Space Station\n\nWelcome to Pixel Space Station, your go-to destination for all things retro-futuristic. Our website is dedicated to celebrating the nostalgia and charm of pixel art, while also embracing the possibilities of the future.\n\nHere at Pixel Space Station, we believe that the past and the future are not mutually exclusive. By combining the aesthetics of classic video games with modern technology, we aim to create a unique and exciting experience for our visitors.\n\nOur website features a variety of content, including articles on the history of pixel art, interviews with artists and designers, and showcases of the latest and greatest in pixelated creations. Whether you're a longtime fan of the genre or just discovering it for the first time, there's something here for everyone.\n\nSo come aboard and join us on our journey through space and time. We can't wait to share our love of pixel art with you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

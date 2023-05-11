@@ -1,0 +1,8 @@
+{
+    "title": "\"Enchanted Woodscape\"",
+    "content": "# Enchanted Woodscape\n\nWelcome to Enchanted Woodscape, a website dedicated to bringing you a magical experience through stunning visual art. Our dreamy forest scene with fairies wallpaper is just the beginning of what we offer.\n\nExplore our collection of high-quality wallpapers featuring mystical creatures, enchanting landscapes, and otherworldly scenes. Each wallpaper is carefully curated to transport you to a world of wonder and imagination.\n\nIn addition to our wallpapers, we also offer a selection of prints and merchandise featuring our captivating artwork. From canvas prints to phone cases, you can bring a touch of magic into your everyday life.\n\nJoin us on a journey through the realms of fantasy and let your imagination run wild. With Enchanted Woodscape, you can escape to a world of enchantment anytime, anywhere.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy forest scene with fairies\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

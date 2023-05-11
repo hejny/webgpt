@@ -1,0 +1,8 @@
+{
+    "title": "Skyline Homes.",
+    "content": "# Skyline Homes\n\nWelcome to Skyline Homes, your ultimate destination for finding the perfect home in the city. Our website is designed to provide you with an easy and intuitive experience to search for properties that match your preferences.\n\nWhether you're looking for a spacious apartment in the heart of downtown or a cozy house in a quiet neighborhood, we've got you covered. Our extensive database of listings includes properties from top real estate agents and developers, ensuring that you have access to the latest and most exclusive homes on the market.\n\nWith our minimalist design and user-friendly interface, you can easily browse through photos, floor plans, and property details to find the home of your dreams. Plus, our team of experienced agents is always available to answer any questions you may have and guide you through the buying process.\n\nSo why wait? Start your search today and discover the perfect home in the city with Skyline Homes.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a city skyline at dusk for a real estate or architecture website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

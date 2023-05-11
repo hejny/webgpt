@@ -1,0 +1,8 @@
+{
+    "title": "\"Volcanic Adventure Hub\"",
+    "content": "# Volcanic Adventure Hub\n\nWelcome to the Volcanic Adventure Hub, your one-stop-shop for all things volcanic! Our website is dedicated to providing you with the latest news and information about volcanoes from around the world. \n\nWhether you're an avid volcano enthusiast or just looking for a thrilling adventure, our site has everything you need to plan your next trip. From detailed guides on the best places to visit, to expert advice on how to stay safe while exploring active volcanoes, we've got you covered.\n\nOur community of passionate volcano lovers is always eager to share their knowledge and experiences, so don't hesitate to join in on the conversation. And be sure to check out our online store for all your volcano-themed gear and souvenirs.\n\nSo what are you waiting for? Join us at the Volcanic Adventure Hub and start planning your next fiery adventure today!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

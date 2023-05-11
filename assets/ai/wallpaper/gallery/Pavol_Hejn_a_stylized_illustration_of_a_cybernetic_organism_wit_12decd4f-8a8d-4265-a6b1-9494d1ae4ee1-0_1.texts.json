@@ -1,0 +1,8 @@
+{
+    "title": "\"Cyber Art Hub\"",
+    "content": "# Cyber Art Hub\n\nWelcome to Cyber Art Hub, your go-to destination for all things cyber art! Our website is dedicated to showcasing the best and most innovative artwork in the realm of cybernetics, technology, and futurism.\n\nOur curated collection features a wide range of digital art pieces from talented artists around the world. From stunning illustrations to mind-bending animations, our selection is sure to inspire and captivate anyone with an interest in the intersection of art and technology.\n\nAt Cyber Art Hub, we believe that art has the power to shape our understanding of the world around us. That's why we are committed to promoting and supporting emerging artists who are pushing the boundaries of what is possible with technology and creativity.\n\nSo whether you're a seasoned collector or simply a fan of cutting-edge art, we invite you to explore our collection and discover the incredible works of art that await you at Cyber Art Hub.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

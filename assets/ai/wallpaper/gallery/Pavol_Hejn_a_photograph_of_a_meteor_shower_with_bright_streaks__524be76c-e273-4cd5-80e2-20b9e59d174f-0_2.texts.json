@@ -1,0 +1,8 @@
+{
+    "title": "\"Starry Night Sky\"",
+    "content": "# Welcome to Starry Night Sky\n\nOur website is dedicated to bringing you the beauty and wonder of the night sky. We believe that there is nothing quite as mesmerizing as looking up at the stars on a clear night and feeling small in the vastness of the universe.\n\nHere at Starry Night Sky, we aim to capture that feeling through stunning photography, informative articles, and engaging videos. Our team of experienced photographers and writers work tirelessly to bring you the latest news and insights from the world of astronomy.\n\nWhether you're an amateur stargazer or a seasoned astronomer, we have something for everyone. From tips on how to get started with stargazing to in-depth analysis of the latest space missions, our content is designed to inform and inspire.\n\nSo come join us on this journey through the cosmos. Let's explore the mysteries of the universe together and marvel at the beauty of the night sky.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a meteor shower, with bright streaks of light crossing the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

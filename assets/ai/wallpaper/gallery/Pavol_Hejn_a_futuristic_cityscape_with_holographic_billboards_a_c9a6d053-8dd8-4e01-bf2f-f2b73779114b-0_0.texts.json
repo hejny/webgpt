@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Metropolis Hub\"",
+    "content": "# Futuristic Metropolis Hub\n\nWelcome to the Futuristic Metropolis Hub, your go-to destination for all things related to futuristic cities and technology. Our website is dedicated to exploring the possibilities of what our cities could look like in the future.\n\nWe cover a wide range of topics, from the latest advancements in transportation technology to cutting-edge architecture and design. Our team of experts is constantly researching and analyzing trends to bring you the most up-to-date information on the future of our cities.\n\nWhether you're a tech enthusiast, urban planner, or simply curious about what the future holds, you'll find something of interest on our website. Join our community today and be a part of shaping the cities of tomorrow!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape with holographic billboards and flying cars\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Peak Bliss Wallpapers\"",
+    "content": "# Peak Bliss Wallpapers\n\nWelcome to Peak Bliss Wallpapers, your go-to source for stunning high-quality wallpapers featuring breathtaking mountain landscapes. Our collection includes a variety of snowy mountain peaks with clear blue skies, as well as other awe-inspiring natural scenes that will transport you to another world.\n\nOur wallpapers are carefully curated to provide the perfect backdrop for your desktop, phone, or tablet. Whether you're looking to add some serenity to your workspace or simply admire the beauty of nature, our selection has something for everyone.\n\nAll of our wallpapers are available for free download in a range of resolutions, so you can find the perfect fit for your device. We update our collection regularly, so be sure to check back often for new additions.\n\nThank you for choosing Peak Bliss Wallpapers as your source for stunning nature-inspired wallpapers.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A snowy mountain peak with a clear blue sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

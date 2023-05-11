@@ -1,0 +1,8 @@
+{
+    "title": "\"Fairy Forest Dreams\"",
+    "content": "# Fairy Forest Dreams\n\nWelcome to Fairy Forest Dreams, a website dedicated to bringing you the most magical and enchanting content on the web. Our dreamy forest scene with fairies wallpaper sets the tone for the mystical journey that awaits you here.\n\nExplore our collection of fairy tales, myths, and legends from around the world. Immerse yourself in the world of fantasy and let your imagination run wild. Discover new stories and characters that will transport you to a world beyond your wildest dreams.\n\nJoin our community of like-minded individuals who share a love for all things magical. Connect with others who believe in the power of imagination and the wonder of the unknown. Share your own stories and experiences and be inspired by others.\n\nAt Fairy Forest Dreams, we believe that there is magic all around us, waiting to be discovered. Come and join us on this journey of discovery and let your inner child roam free.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy forest scene with fairies\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

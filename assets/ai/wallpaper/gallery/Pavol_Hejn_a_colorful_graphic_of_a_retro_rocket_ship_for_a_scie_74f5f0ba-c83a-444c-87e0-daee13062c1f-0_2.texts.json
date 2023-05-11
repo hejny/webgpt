@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Adventures Hub\"",
+    "content": "# Galactic Adventures Hub\n\nWelcome to Galactic Adventures Hub, your one-stop-shop for all things related to space exploration and science! Our website is dedicated to providing you with the latest news, updates, and insights on space travel, astronomy, and technology.\n\nWhether you're a seasoned astronaut or a curious stargazer, our platform has something for everyone. From in-depth articles on the latest space missions to stunning visuals of distant galaxies, we strive to bring you the most engaging and informative content possible.\n\nOur team of expert writers and scientists are passionate about sharing their knowledge and love of space with the world. We believe that by exploring the mysteries of the universe, we can better understand our place within it and inspire future generations to continue pushing the boundaries of human exploration.\n\nSo come join us on this exciting journey through the cosmos! Follow us on social media, sign up for our newsletter, and stay tuned for more amazing content from Galactic Adventures Hub.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a retro rocket ship for a science or space exploration website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

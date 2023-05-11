@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Web Design\"",
+    "content": "# Neural Web Design\n\nWelcome to Neural Web Design, the ultimate destination for all things related to web design and development. Our website is designed to provide you with the latest trends, tips, and techniques in the world of web design.\n\nAt Neural Web Design, we understand that the web design industry is constantly evolving, and it can be challenging to keep up with the latest developments. That's why we are committed to providing you with the most up-to-date information and resources to help you stay ahead of the curve.\n\nWhether you're a seasoned web designer or just starting out, our website has something for everyone. From tutorials on the latest design software to articles on user experience and accessibility, we cover it all.\n\nSo why wait? Join our community of designers and developers today and take your web design skills to the next level with Neural Web Design.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pattern of interconnected nodes and lines resembling a neural network\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

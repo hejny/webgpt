@@ -1,0 +1,8 @@
+{
+    "title": "\"Desert Dreamscape\"",
+    "content": "# Desert Dreamscape\n\nWelcome to Desert Dreamscape, a website that offers a surreal interpretation of a desert landscape. Our website is designed to take you on a journey through an otherworldly desert landscape that will leave you in awe.\n\nWe offer a unique experience that combines stunning visuals with an immersive atmosphere. Our website is perfect for those who want to escape the monotony of everyday life and explore something new and exciting.\n\nWhether you are looking for inspiration for your next art project or simply want to relax and enjoy some beautiful scenery, Desert Dreamscape has something for everyone. So sit back, relax, and let us take you on a journey through a world unlike any other.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal interpretation of a desert landscape\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

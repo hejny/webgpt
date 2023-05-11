@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Fun Zone\"",
+    "content": "# Futuristic Fun Zone\n\nWelcome to the Futuristic Fun Zone, a website dedicated to all things futuristic and fun! Our site is filled with exciting content that will transport you to a world of robots, cyborgs, and cutting-edge technology.\n\nExplore our collection of articles, videos, and images that showcase the latest advancements in science and technology. From space travel to artificial intelligence, we've got it all covered. Our team of experts curates the best content from around the web to ensure that you're always up-to-date on the latest trends and innovations.\n\nBut that's not all - we also offer a range of interactive features that allow you to immerse yourself in the futuristic world. Try out our virtual reality experiences, play our online games, or join our community of like-minded individuals who share your passion for all things futuristic.\n\nSo what are you waiting for? Join us at the Futuristic Fun Zone and discover a world of endless possibilities!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

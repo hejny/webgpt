@@ -1,0 +1,8 @@
+{
+    "title": "\"Digital Evolution Hub\"",
+    "content": "# Digital Evolution Hub\n\nWelcome to the Digital Evolution Hub, your one-stop destination for all things related to technology and its impact on our lives. Our website is dedicated to exploring the latest trends and innovations in the world of tech, from artificial intelligence and robotics to virtual reality and beyond.\n\nAt the Digital Evolution Hub, we believe that technology has the power to transform the way we live, work, and interact with each other. That's why we're committed to providing our readers with insightful articles, expert opinions, and in-depth analysis of the most important issues facing the tech industry today.\n\nWhether you're a seasoned tech professional or just starting to explore the world of digital innovation, the Digital Evolution Hub has something for you. So why not join us on this exciting journey of discovery and transformation?",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Misty Forest Wallpapers\"",
+    "content": "# Misty Forest Wallpapers\n\nWelcome to Misty Forest Wallpapers, your go-to source for stunning forest wallpapers with a misty background. Our website features a carefully curated collection of high-quality images that capture the serene and mystical atmosphere of misty forests.\n\nWhether you're looking to spruce up your desktop background, phone lock screen, or social media profile, our wallpapers are sure to add a touch of natural beauty to your digital space. With a variety of resolutions and aspect ratios available, you can easily find the perfect wallpaper for your device.\n\nWe update our collection regularly, so be sure to check back often for new additions. And if you have any suggestions or requests for specific types of misty forest wallpapers, feel free to reach out to us via our contact page.\n\nThank you for visiting Misty Forest Wallpapers. We hope our collection brings a sense of peace and tranquility to your digital life.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

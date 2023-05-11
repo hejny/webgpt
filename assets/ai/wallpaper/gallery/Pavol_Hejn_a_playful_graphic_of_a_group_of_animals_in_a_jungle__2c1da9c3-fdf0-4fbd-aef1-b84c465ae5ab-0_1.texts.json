@@ -1,0 +1,8 @@
+{
+    "title": "\"Jungle Friends Fun\"",
+    "content": "# Jungle Friends Fun\n\nWelcome to Jungle Friends Fun, a website dedicated to providing children with a fun and educational experience. Our playful graphic of a group of animals in a jungle sets the tone for our website, where kids can learn about different animals and their habitats.\n\nOur website features interactive games and activities that teach children about the importance of conservation and protecting our planet's wildlife. We also have a section where kids can learn interesting facts about various animals and watch videos of them in their natural habitats.\n\nAt Jungle Friends Fun, we believe that learning should be fun and engaging. That's why we've designed our website to be colorful and interactive, with plenty of opportunities for kids to explore and discover new things. Join us on this exciting adventure through the jungle!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A playful graphic of a group of animals in a jungle for a children's or education website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Night Sky Oasis\"",
+    "content": "# Night Sky Oasis\n\nWelcome to Night Sky Oasis, a website dedicated to exploring the mysteries of the universe. Our mission is to bring the beauty and wonder of the night sky to your screen, and inspire you to learn more about the cosmos.\n\nThrough our collection of articles, videos, and resources, we aim to educate and entertain visitors of all ages and backgrounds. Whether you're an amateur astronomer or simply curious about the stars, there's something for everyone at Night Sky Oasis.\n\nJoin us on a journey through the galaxy as we explore topics such as astrophotography, space exploration, and the latest discoveries in astronomy. With our stunning desert landscape wallpaper as your backdrop, you'll feel like you're gazing up at the stars from the comfort of your own home.\n\nSo sit back, relax, and let Night Sky Oasis be your guide to the wonders of the universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a desert landscape at night, with the stars visible in the sky above.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

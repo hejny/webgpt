@@ -1,0 +1,8 @@
+{
+    "title": "\"Pixel Space Adventure\"",
+    "content": "# Pixel Space Adventure\n\nWelcome to Pixel Space Adventure, a website dedicated to all things retro and sci-fi! Our pixel art depiction of a spacecraft sets the tone for our playful and nostalgic approach to exploring the final frontier.\n\nJoin us on a journey through time and space as we explore classic science fiction tropes, from alien invasions to intergalactic travel. Our articles and reviews cover everything from vintage movies and TV shows to modern indie games with a retro flair.\n\nWhether you're a lifelong fan of classic sci-fi or just discovering the genre, Pixel Space Adventure has something for everyone. So buckle up and get ready for a wild ride through the cosmos!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

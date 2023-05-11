@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Frontier Explorers\"",
+    "content": "# Galactic Frontier Explorers\n\nWelcome to Galactic Frontier Explorers, your hub for all things space exploration! Our website is dedicated to bringing you the latest news and updates on missions to explore the far reaches of our galaxy.\n\nJoin us as we follow the adventures of brave AInauts who venture out into the unknown, discovering new planets, encountering strange creatures, and pushing the limits of what we know about the universe.\n\nOur team of expert writers and scientists bring you in-depth coverage of the latest discoveries, as well as interviews with the people behind the missions. Whether you're a seasoned space enthusiast or just starting to explore the cosmos, Galactic Frontier Explorers has something for everyone.\n\nSo come join us on this exciting journey into the final frontier!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

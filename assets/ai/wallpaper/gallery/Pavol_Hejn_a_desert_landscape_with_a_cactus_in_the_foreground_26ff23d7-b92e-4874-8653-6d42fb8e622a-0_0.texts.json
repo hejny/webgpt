@@ -1,0 +1,8 @@
+{
+    "title": "\"Cactus Oasis\"",
+    "content": "# Cactus Oasis\n\nWelcome to Cactus Oasis, your ultimate destination for all things related to cacti and desert landscapes. Our website is designed to bring the beauty of the desert into your home or office through stunning high-quality wallpapers.\n\nOur collection features a variety of breathtaking desert landscapes, each with its unique charm and character. From towering saguaros to sprawling Joshua trees, our wallpapers capture the essence of the desert in all its glory.\n\nWhether you're looking to add a touch of nature to your desktop or create an immersive desert-themed environment, Cactus Oasis has got you covered. Browse our collection today and discover the perfect wallpaper to transform your space.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A desert landscape with a cactus in the foreground\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

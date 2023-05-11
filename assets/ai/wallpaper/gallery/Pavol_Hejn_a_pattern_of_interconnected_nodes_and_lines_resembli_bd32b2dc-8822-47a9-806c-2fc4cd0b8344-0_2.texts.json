@@ -1,0 +1,8 @@
+{
+    "title": "\"Neural Web Art\"",
+    "content": "# Neural Web Art\n\nWelcome to Neural Web Art, a website dedicated to showcasing digital art inspired by neural networks and artificial intelligence. Our collection features works from talented artists around the world who use these cutting-edge technologies to create stunning and thought-provoking pieces.\n\nExplore our gallery to discover a diverse range of styles and mediums, from abstract paintings to intricate sculptures. Each work is unique, but all share a common thread: they are created using algorithms that mimic the human brain's neural networks.\n\nOur mission is to promote the intersection of art and technology and to provide a platform for artists who are pushing the boundaries of what is possible with AI. Whether you are an art lover or a tech enthusiast, we invite you to join us on this journey into the future of creativity.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pattern of interconnected nodes and lines resembling a neural network\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

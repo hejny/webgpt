@@ -1,0 +1,8 @@
+{
+    "title": "\"Tech Pattern Hub\"",
+    "content": "# Tech Pattern Hub\n\nWelcome to Tech Pattern Hub, your go-to destination for all things tech and design. Our website features a sleek and modern aesthetic, with a repeating pattern of circuit board components in shades of black, grey, and neon green.\n\nHere at Tech Pattern Hub, we strive to provide our visitors with the latest news and trends in technology, as well as inspiration and resources for designers. From hardware reviews to software tutorials, we cover a wide range of topics to keep you informed and engaged.\n\nOur community is made up of tech enthusiasts, designers, and professionals from all over the world. Join us today to connect with like-minded individuals, share your work, and stay up-to-date on the latest developments in the tech industry.\n\nThank you for visiting Tech Pattern Hub. We hope you enjoy exploring our site and discovering all that it has to offer.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A repeating pattern of circuit board components, in shades of black, grey, and neon green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

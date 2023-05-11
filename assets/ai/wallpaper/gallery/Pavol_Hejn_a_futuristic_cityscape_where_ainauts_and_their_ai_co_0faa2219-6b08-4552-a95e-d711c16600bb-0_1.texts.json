@@ -1,0 +1,8 @@
+{
+    "title": "\"Future AI Builders\"",
+    "content": "# Future AI Builders\n\nWelcome to Future AI Builders, a website dedicated to exploring the exciting world of artificial intelligence and its impact on the future of construction and infrastructure development. Our mission is to showcase the latest advances in AI technology and how they are being integrated into the construction industry.\n\nOur team of experts provides informative articles, news updates, and in-depth analysis of the ways that AI is transforming the way we build our cities and communities. From autonomous construction vehicles to predictive maintenance systems, we cover all aspects of this rapidly evolving field.\n\nWhether you are a professional in the construction industry or simply interested in the future of technology, Future AI Builders has something for everyone. Join us as we explore the cutting edge of AI and its role in shaping the world we live in.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

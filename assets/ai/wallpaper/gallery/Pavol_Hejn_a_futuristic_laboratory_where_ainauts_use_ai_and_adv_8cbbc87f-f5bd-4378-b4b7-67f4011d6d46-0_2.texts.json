@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Life Lab\"",
+    "content": "# AI Life Lab\n\nWelcome to AI Life Lab, a futuristic laboratory where AInauts use advanced technology and artificial intelligence to create new forms of life. Our team of experts is dedicated to pushing the boundaries of science and exploring the possibilities of what can be achieved through AI.\n\nAt AI Life Lab, we believe that the future of life on Earth lies in our ability to harness the power of AI and use it to create new and innovative solutions to some of the world's biggest challenges. From developing new medicines to creating sustainable food sources, our work is driven by a passion for using technology to make a positive impact on the world around us.\n\nJoin us on this exciting journey as we explore the frontiers of science and push the limits of what is possible with AI. Whether you're a scientist, engineer, or simply curious about the future of technology, there's something for everyone at AI Life Lab.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

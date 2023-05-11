@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbit Earthscape\"",
+    "content": "# Orbit Earthscape\n\nWelcome to Orbit Earthscape, your go-to destination for stunning space-themed wallpapers! Our website features a collection of high-quality images that capture the beauty and wonder of our universe. \n\nOur main attraction is a photorealistic image of the Earth from space, which serves as the centerpiece of our site. This breathtaking wallpaper showcases the intricate details of our planet, from the swirling clouds to the vibrant oceans. \n\nIn addition to our Earthscape wallpaper, we offer a variety of other space-themed backgrounds to suit any taste. Whether you're looking for awe-inspiring nebulae or close-up views of distant planets, we've got you covered. \n\nAll of our wallpapers are available for free download in a range of resolutions, so you can easily find the perfect fit for your device. So why wait? Start exploring the wonders of the cosmos with Orbit Earthscape today!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photorealistic image of the Earth from space, with vibrant colors and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

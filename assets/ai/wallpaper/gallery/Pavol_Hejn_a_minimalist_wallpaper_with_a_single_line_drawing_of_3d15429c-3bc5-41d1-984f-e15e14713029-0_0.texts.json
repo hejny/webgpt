@@ -1,0 +1,8 @@
+{
+    "title": "\"Cyborg Lines\"",
+    "content": "# Cyborg Lines\n\nWelcome to Cyborg Lines, a website dedicated to showcasing minimalist design with a touch of futurism. Our main feature is a striking wallpaper that features a single line drawing of a cyborg in a bold and eye-catching color. \n\nBut our website is more than just a wallpaper showcase. We believe that simplicity and functionality are key elements of good design, and we strive to embody those principles in everything we do. From our clean and easy-to-navigate layout to our carefully curated collection of resources and inspiration, we aim to provide a space where designers and creatives can come together to explore the cutting edge of minimalism and futurism.\n\nSo whether you're looking for inspiration for your next project or simply appreciate the beauty of clean, streamlined design, we invite you to explore the world of Cyborg Lines.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Sleek Spacecraft Site\"",
+    "content": "# Sleek Spacecraft Site\n\nWelcome to our website dedicated to showcasing the most modern and sleek spacecraft designs in the galaxy. Our team of experts scours the universe to bring you the latest and greatest in spacecraft technology.\n\nHere, you will find a collection of high-quality images and renderings of spacecraft that feature sharp angles and clean lines, highlighting their futuristic and innovative design. Our goal is to inspire and excite those who are passionate about space exploration and the possibilities it holds.\n\nWhether you're an engineer, a designer, or simply a fan of science fiction, our website is the perfect place to explore the cutting-edge world of spacecraft design. So sit back, relax, and enjoy the view as we take you on a journey through the stars.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A csg-style rendering of a spaceship in orbit around a planet, with sharp angles and clean lines that highlight its modern and sleek design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

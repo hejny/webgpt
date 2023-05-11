@@ -1,0 +1,8 @@
+{
+    "title": "\"Postcard Collage Co.\"",
+    "content": "# Postcard Collage Co.\n\nWelcome to Postcard Collage Co., where we bring the world to you through a unique collection of vintage postcards. Our website is a curated selection of postcards from different countries and eras, all carefully arranged in a beautiful collage that will transport you to another time and place.\n\nAt Postcard Collage Co., we believe that every postcard tells a story. That's why we've sourced our collection from around the world, selecting only the most interesting and visually stunning cards to feature on our website. Whether you're a collector, a traveler, or just someone who loves art and design, our postcard collage is sure to inspire and delight.\n\nBrowse our collection today and discover the beauty and diversity of the world through the lens of vintage postcards.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A collage of vintage postcards from around the world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

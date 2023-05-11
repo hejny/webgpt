@@ -1,0 +1,8 @@
+{
+    "title": "Night Cityscape Site.",
+    "content": "# Night Cityscape Site\n\nWelcome to our real estate and architecture website featuring a stunning minimalist image of a city skyline at night. Our website is designed to showcase the beauty of urban landscapes and the architectural wonders that make them unique.\n\nWe specialize in providing high-quality real estate listings and insightful articles on the latest trends in architecture and design. Whether you're looking for your dream home or seeking inspiration for your next project, our website has everything you need to stay informed and inspired.\n\nOur team of experts is dedicated to providing you with the most up-to-date information on the real estate market and the latest developments in architecture and design. We pride ourselves on our attention to detail and our commitment to delivering exceptional service to our clients.\n\nSo come explore our website and discover the magic of urban living. With our stunning cityscape wallpaper as your backdrop, you'll be transported to a world of endless possibilities and breathtaking beauty.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist image of a city skyline at night for a real estate or architecture website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

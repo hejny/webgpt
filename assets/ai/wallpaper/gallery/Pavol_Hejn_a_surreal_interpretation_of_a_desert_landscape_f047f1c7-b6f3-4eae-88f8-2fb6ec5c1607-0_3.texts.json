@@ -1,0 +1,8 @@
+{
+    "title": "Desert Dreamscape.",
+    "content": "# Welcome to Desert Dreamscape\n\nDesert Dreamscape is a website dedicated to showcasing the beauty and mystery of surreal desert landscapes. Our collection of stunning wallpapers will transport you to another world, where sand dunes twist and turn like waves, and rock formations take on fantastical shapes.\n\nWe believe that the desert is a place of endless possibility, where the imagination can run wild. That's why we've curated a selection of images that capture the magic of this unique environment. From deep canyons to expansive vistas, our wallpapers will inspire you to dream big and explore new horizons.\n\nWhether you're looking for a striking background for your desktop or mobile device, or simply want to immerse yourself in the otherworldly beauty of the desert, Desert Dreamscape has something for you. Browse our collection today and discover the power of surreal landscapes to captivate the mind and soul.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal interpretation of a desert landscape\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

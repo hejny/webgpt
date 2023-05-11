@@ -1,0 +1,8 @@
+{
+    "title": "\"Winter Cabin Bliss\"",
+    "content": "# Winter Cabin Bliss\n\nWelcome to Winter Cabin Bliss, your ultimate destination for all things cozy and wintery! Our website is designed to transport you to a world of comfort and relaxation, where you can escape the hustle and bustle of everyday life and immerse yourself in the serenity of a winter wonderland.\n\nOur main wallpaper, featuring a charming cabin nestled in the woods with snow falling gently around it, sets the tone for our website. We offer a variety of content that celebrates the joys of winter, from heartwarming stories and recipes to tips for staying warm and cozy during the colder months.\n\nWhether you're looking to plan the perfect winter getaway, or simply want to curl up by the fire with a good book, Winter Cabin Bliss has everything you need to make the most of the season. So grab a cup of hot cocoa, put on your favorite sweater, and join us as we celebrate the magic of winter!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A cozy image of a cabin in the woods with snow falling for a winter or holiday website.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

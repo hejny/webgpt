@@ -1,0 +1,8 @@
+{
+    "title": "\"Enigmatic Forest Path\"",
+    "content": "# Enigmatic Forest Path\n\nWelcome to Enigmatic Forest Path, a website dedicated to exploring the mysteries and horrors that lie within the depths of the forest. Our team of writers and researchers are passionate about uncovering the secrets that this dark and moody landscape holds.\n\nJoin us on a journey through the twisted paths and hidden trails of the forest, as we delve into the unknown and encounter all manner of strange and terrifying creatures. From ghostly apparitions to ancient legends, our articles and stories will keep you on the edge of your seat.\n\nWhether you're a horror enthusiast or simply curious about the mysteries of the natural world, Enigmatic Forest Path is the perfect destination for those seeking an immersive and spine-chilling experience. So grab a flashlight and venture forth into the darkness - who knows what you might discover?",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody forest with a hidden path for a horror or mystery website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

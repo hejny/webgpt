@@ -1,0 +1,8 @@
+{
+    "title": "\"Quantum Geometrics\"",
+    "content": "# Quantum Geometrics\n\nWelcome to Quantum Geometrics, a website dedicated to exploring the intersection of quantum computing and geometric design. Our website features a stunning wallpaper inspired by the shape of a quantum computer, in shades of purple and pink.\n\nAt Quantum Geometrics, we believe that the beauty of mathematics and science can be expressed through art and design. Our website showcases a collection of geometric designs that draw inspiration from the principles of quantum computing, such as superposition and entanglement.\n\nWhether you're a quantum computing enthusiast or simply appreciate beautiful design, we invite you to explore our collection of wallpapers and discover the fascinating world of quantum geometrics.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A geometric design in shades of purple and pink, inspired by the shape of a quantum computer\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

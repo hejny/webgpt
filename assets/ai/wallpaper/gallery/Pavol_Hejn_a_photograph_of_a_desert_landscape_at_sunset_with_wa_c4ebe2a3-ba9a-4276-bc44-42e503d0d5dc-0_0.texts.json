@@ -1,0 +1,8 @@
+{
+    "title": "\"Sunset Desert Vibes\"",
+    "content": "# Sunset Desert Vibes\n\nWelcome to Sunset Desert Vibes, your source for stunning desert landscape photography. Our website is dedicated to capturing the beauty of the desert at sunset, with warm colors and long shadows that create a mesmerizing atmosphere.\n\nExplore our collection of high-quality wallpapers and find the perfect image to transform your desktop or mobile device. From sweeping vistas to intimate details, our photographs showcase the unique character of the desert landscape.\n\nIn addition to our wallpaper collection, we also offer prints and canvases of our images so you can bring the beauty of the desert into your home or office. Our products are made with the highest quality materials and are sure to add a touch of natural elegance to any space.\n\nThank you for visiting Sunset Desert Vibes. We hope our photographs inspire you to appreciate the beauty of the desert as much as we do.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a desert landscape at sunset, with warm colors and long shadows.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

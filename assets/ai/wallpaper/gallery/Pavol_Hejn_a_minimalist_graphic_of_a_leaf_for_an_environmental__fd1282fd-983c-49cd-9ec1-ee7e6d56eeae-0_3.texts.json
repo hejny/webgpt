@@ -1,0 +1,8 @@
+{
+    "title": "\"SustainLeaf\"",
+    "content": "# SustainLeaf\n\nSustainLeaf is a website dedicated to promoting sustainable living and environmental awareness. Our mission is to inspire people to make small changes in their daily lives that can have a big impact on the planet.\n\nWe believe that everyone can make a difference, no matter how small, and that together we can create a more sustainable future for ourselves and for generations to come.\n\nOn our website, you'll find a wealth of resources and information on topics such as reducing waste, conserving energy, and choosing eco-friendly products. We also feature stories of individuals and organizations who are making a positive impact on the environment.\n\nJoin us in our mission to protect the planet and live sustainably. Together, we can make a difference.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a leaf for an environmental or sustainable living website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

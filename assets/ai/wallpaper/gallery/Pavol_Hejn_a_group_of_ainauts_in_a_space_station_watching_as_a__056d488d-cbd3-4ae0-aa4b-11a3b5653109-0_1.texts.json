@@ -1,0 +1,8 @@
+{
+    "title": "\"TechSavesEarth\"",
+    "content": "# TechSavesEarth\n\nWelcome to TechSavesEarth, the ultimate source for news and updates on cutting-edge technology being used to protect our planet from natural disasters and other threats.\n\nOur team of experts brings you the latest developments in artificial intelligence, space exploration, and advanced engineering, all with the goal of ensuring the safety and well-being of humanity.\n\nFrom tracking asteroids and predicting earthquakes to developing new energy sources and designing resilient infrastructure, we cover it all. Our mission is to educate and inform the public about the crucial role that technology plays in safeguarding our planet.\n\nJoin us as we explore the frontiers of innovation and discover how we can use technology to build a better future for ourselves and generations to come.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

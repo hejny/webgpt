@@ -1,0 +1,8 @@
+{
+    "title": "\"Mechanical Dreamscape\"",
+    "content": "# Mechanical Dreamscape\n\nWelcome to Mechanical Dreamscape, a website dedicated to showcasing surrealism-inspired art and design. Our main feature is a stunning wallpaper that will transport you to a world of floating gears, cogs, and computer parts against a backdrop of muted colors.\n\nOur website is the perfect destination for those seeking inspiration and creativity. We curate and share the best surrealist-inspired designs from around the world, featuring everything from illustrations and paintings to sculptures and installations. \n\nIn addition to our featured wallpaper, we offer a wide range of other wallpapers and backgrounds that are sure to inspire. Whether you're looking for something abstract, futuristic, or simply beautiful, we have something for everyone.\n\nWe believe that art should be accessible to all, which is why we offer our wallpapers for free download. So go ahead, browse our collection, and find the perfect wallpaper to elevate your desktop or mobile device.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

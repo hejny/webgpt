@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Robot Art\"",
+    "content": "# Futuristic Robot Art\n\nWelcome to Futuristic Robot Art, a website dedicated to showcasing pop art-style illustrations of futuristic robots and cyborgs. Our collection features a range of dynamic and colorful designs that are sure to catch your eye.\n\nOur goal is to provide a platform for talented artists to showcase their work and for robot enthusiasts to find unique and captivating artwork to decorate their homes or personal devices. We believe that the fusion of pop art and futuristic technology creates an exciting and visually stunning aesthetic that is perfect for anyone looking to add some edge to their space.\n\nWhether you're a fan of classic sci-fi movies, video games, or simply appreciate the beauty of mechanical design, we have something for you. Browse our collection and discover the perfect piece of art to express your love for all things robotic.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

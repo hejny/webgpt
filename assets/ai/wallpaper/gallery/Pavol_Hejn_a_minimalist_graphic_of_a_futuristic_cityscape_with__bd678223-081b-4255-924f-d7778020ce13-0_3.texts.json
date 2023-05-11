@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Cityscape Hub\"",
+    "content": "# Welcome to Neon Cityscape Hub\n\nNeon Cityscape Hub is your go-to destination for all things futuristic and cutting-edge. Our website features a sleek and modern design, with a minimalist approach that allows our content to take center stage.\n\nOur team of writers and experts curate the latest news, trends, and insights from the world of technology, design, and urban development. From smart cities and sustainable architecture to virtual reality and artificial intelligence, we cover it all.\n\nBut we're more than just a source of information. Neon Cityscape Hub is also a community of like-minded individuals who are passionate about shaping the future. Join our forums, connect with other members, and share your own ideas and visions for what's to come.\n\nSo whether you're a tech enthusiast, an urban planner, or simply someone who loves the look and feel of a neon-lit cityscape, you've come to the right place. Welcome to Neon Cityscape Hub – the ultimate destination for the future-minded.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

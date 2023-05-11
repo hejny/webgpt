@@ -1,0 +1,8 @@
+{
+    "title": "\"Retro Space Fun\"",
+    "content": "# Retro Space Fun\n\nWelcome to Retro Space Fun, your go-to destination for all things nostalgic and playful! Our website is dedicated to bringing you the best in retro gaming, pixel art, and all things space-themed.\n\nExplore our collection of classic games, featuring beloved titles from the golden age of gaming. From arcade classics like Space Invaders and Galaga to console favorites like Super Mario Bros. and Sonic the Hedgehog, we've got it all.\n\nBut Retro Space Fun isn't just about gaming - we're also passionate about all things pixel art. Our curated collection features stunning examples of the art form, including our signature spacecraft wallpaper.\n\nSo whether you're a lifelong fan of retro gaming or simply appreciate the aesthetics of a bygone era, Retro Space Fun has something for everyone. Come explore our site and relive the glory days of gaming and beyond!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

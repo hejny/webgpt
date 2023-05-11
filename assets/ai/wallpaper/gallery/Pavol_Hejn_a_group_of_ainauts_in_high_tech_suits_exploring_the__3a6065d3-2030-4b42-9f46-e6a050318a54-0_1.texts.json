@@ -1,0 +1,8 @@
+{
+    "title": "\"Desert Expeditioners\"",
+    "content": "# Desert Expeditioners\n\nWelcome to Desert Expeditioners, a website dedicated to exploring the mysteries of the desert planet. Our team of AInauts in high-tech suits are on a mission to uncover the secrets hidden beneath the sand.\n\nJoin us as we journey through the harsh terrain and brave the elements to discover ancient ruins, strange creatures, and perhaps even evidence of extraterrestrial life. With our advanced technology and fearless spirit, we are determined to push the boundaries of what is known about this enigmatic world.\n\nStay tuned for updates on our latest expeditions, breathtaking photos and videos, and insights into the cutting-edge science behind our exploration. Whether you're a seasoned adventurer or simply curious about the wonders of the universe, Desert Expeditioners has something for everyone.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

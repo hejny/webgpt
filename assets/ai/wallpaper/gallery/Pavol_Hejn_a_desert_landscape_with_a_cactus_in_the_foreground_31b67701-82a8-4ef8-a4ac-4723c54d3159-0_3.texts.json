@@ -1,0 +1,8 @@
+{
+    "title": "\"Cactus Desert Scene\"",
+    "content": "# Welcome to Cactus Desert Scene!\n\nOur website is dedicated to showcasing the beauty of desert landscapes, with a focus on the iconic cactus plant. Our main wallpaper features a stunning desert vista, complete with towering rock formations and a lone cactus in the foreground.\n\nBut that's just the beginning. We have an extensive collection of high-quality images featuring deserts from all around the world, each one capturing the unique character and charm of these arid environments.\n\nWhether you're a nature lover, a photographer, or simply someone who appreciates the stark beauty of the desert, Cactus Desert Scene is the perfect destination for you. So come explore our collection and discover the magic of these incredible landscapes for yourself!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A desert landscape with a cactus in the foreground\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

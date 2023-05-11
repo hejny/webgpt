@@ -1,0 +1,8 @@
+{
+    "title": "Gravity Portal.",
+    "content": "# Gravity Portal\n\nWelcome to Gravity Portal, your gateway to the mysteries of the universe. Our website is dedicated to exploring the fascinating world of astrophysics and cosmology.\n\nThrough our articles, videos, and interactive features, we aim to bring the wonders of space to life. From black holes to galaxies, from dark matter to the Big Bang, we delve into the most intriguing questions about the cosmos and seek to uncover the secrets that lie hidden in the depths of space.\n\nOur team of expert writers and scientists are passionate about sharing their knowledge and insights with you. Whether you're a seasoned astronomer or simply curious about the universe, we invite you to join us on this journey of discovery.\n\nSo come explore with us and unlock the mysteries of the cosmos. The universe awaits!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

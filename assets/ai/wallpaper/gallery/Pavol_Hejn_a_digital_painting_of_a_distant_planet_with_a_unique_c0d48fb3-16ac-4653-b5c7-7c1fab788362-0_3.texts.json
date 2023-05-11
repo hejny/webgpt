@@ -1,0 +1,8 @@
+{
+    "title": "\"Exotic World Explorer\"",
+    "content": "# Exotic World Explorer\n\nWelcome to Exotic World Explorer, your go-to destination for discovering unique and fascinating planets in the galaxy. Our website features stunning digital paintings of distant worlds, each with their own distinct atmosphere and terrain.\n\nWith our collection of wallpapers, you can immerse yourself in the beauty of these exotic planets and transport yourself to another world. Whether you're a space enthusiast or just looking for some stunning new desktop backgrounds, Exotic World Explorer has something for everyone.\n\nExplore our gallery of otherworldly landscapes and discover the wonders of the universe. Join us on a journey through the cosmos and experience the awe-inspiring beauty of these distant planets.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a distant planet, with a unique atmosphere and unusual terrain.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

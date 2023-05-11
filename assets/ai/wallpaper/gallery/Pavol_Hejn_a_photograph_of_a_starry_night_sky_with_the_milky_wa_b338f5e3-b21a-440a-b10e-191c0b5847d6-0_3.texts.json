@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Night Sky\"",
+    "content": "# Galactic Night Sky\n\nWelcome to Galactic Night Sky, your source for stunning images of the night sky. Our website features a collection of high-quality wallpapers showcasing the beauty and wonder of the universe.\n\nWhether you're an astronomy enthusiast or simply appreciate the majesty of the cosmos, our selection of starry night skies, galaxies, and celestial bodies will transport you to another world.\n\nOur wallpapers are perfect for desktop backgrounds, phone screensavers, or even printed artwork to decorate your home. We update our collection regularly, so be sure to check back often for new additions.\n\nJoin us on a journey through the stars and immerse yourself in the breathtaking beauty of the universe with Galactic Night Sky.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a starry night sky, with the Milky Way galaxy visible overhead.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

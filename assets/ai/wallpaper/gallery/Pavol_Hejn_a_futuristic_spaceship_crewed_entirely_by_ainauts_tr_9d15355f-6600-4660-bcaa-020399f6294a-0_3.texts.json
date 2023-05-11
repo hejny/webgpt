@@ -1,0 +1,8 @@
+{
+    "title": "\"AInauts Explore Space\"",
+    "content": "# AInauts Explore Space\n\nWelcome to AInauts Explore Space, a website dedicated to showcasing the exciting adventures of a futuristic spaceship crewed entirely by artificial intelligence. Our mission is to bring you the latest updates and discoveries from the vast expanse of space as our AInauts travel further and further into the unknown.\n\nJoin us on a journey of discovery as we explore new planets, encounter strange alien life forms, and uncover the mysteries of the universe. Our team of expert writers and scientists will provide you with in-depth analysis and commentary on the latest developments in space exploration, as well as exclusive interviews with the AInauts themselves.\n\nWhether you're a seasoned space enthusiast or just starting to explore the wonders of the cosmos, AInauts Explore Space has something for everyone. So come along for the ride and discover the future of space exploration with us!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Night Sky Desert\"",
+    "content": "# Night Sky Desert\n\nWelcome to Night Sky Desert, a website dedicated to exploring the beauty of the desert at night. Our site features stunning photography of desert landscapes illuminated by the stars above.\n\nWe believe that the desert at night is one of the most awe-inspiring sights in the natural world. The vast expanse of sand and rock, coupled with the brilliant display of stars overhead, creates a sense of wonder and amazement that is difficult to describe in words.\n\nOur mission is to share this beauty with the world through our carefully curated collection of photographs. Whether you're an avid photographer or simply someone who appreciates the majesty of nature, we hope you'll find something to inspire you on our site.\n\nSo take a moment to explore our gallery and discover the magic of the Night Sky Desert.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a desert landscape at night, with the stars visible in the sky above.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

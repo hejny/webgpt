@@ -1,0 +1,8 @@
+{
+    "title": "\"Night Cityscape\"",
+    "content": "# Night Cityscape\n\nWelcome to Night Cityscape, a website dedicated to showcasing the beauty and wonder of city skylines at night. Our minimalist image of a city skyline serves as the perfect backdrop for real estate and architecture enthusiasts alike.\n\nExplore our site to discover stunning photographs and information on some of the world's most iconic cityscapes, from New York to Tokyo. Whether you're looking for inspiration for your next architectural project or simply appreciate the beauty of urban landscapes, Night Cityscape has something for everyone.\n\nJoin our community of like-minded individuals and stay up-to-date with the latest news and trends in the world of real estate and architecture. Don't forget to follow us on social media for even more breathtaking photos and insights into the world of cityscapes at night.\n\nExperience the magic of Night Cityscape today.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist image of a city skyline at night for a real estate or architecture website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

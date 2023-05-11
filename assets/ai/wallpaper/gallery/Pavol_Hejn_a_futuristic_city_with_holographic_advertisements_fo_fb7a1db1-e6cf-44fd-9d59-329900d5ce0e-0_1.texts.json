@@ -1,0 +1,8 @@
+{
+    "title": "\"Innovative Metropolis\"",
+    "content": "# Innovative Metropolis\n\nWelcome to Innovative Metropolis, a website dedicated to exploring the latest advancements in technology and innovation. Our mission is to provide our readers with up-to-date information on the most exciting developments in fields such as artificial intelligence, robotics, biotechnology, and more.\n\nOur team of expert writers and researchers scours the web to bring you the most relevant news and analysis, along with in-depth features and interviews with leading figures in the tech world. Whether you're a seasoned industry professional or simply interested in staying informed about the latest trends, Innovative Metropolis has something for you.\n\nSo come join us in this futuristic city, where holographic advertisements light up the sky and the possibilities of tomorrow are just a click away.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic city with holographic advertisements for a tech or innovation website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

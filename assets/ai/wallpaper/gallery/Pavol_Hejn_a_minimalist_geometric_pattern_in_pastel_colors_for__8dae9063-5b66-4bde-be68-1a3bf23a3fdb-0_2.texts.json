@@ -1,0 +1,8 @@
+{
+    "title": "\"Chic Geometric Beauty\"",
+    "content": "# Chic Geometric Beauty\n\nWelcome to Chic Geometric Beauty, your go-to destination for all things fashion and beauty. Our website features the latest trends in clothing, accessories, makeup, and skincare, all curated with a minimalist and modern aesthetic.\n\nOur team of experts scours the fashion and beauty world to bring you the most stylish and innovative products. We believe that less is more, which is why we focus on quality over quantity. Our selection is carefully chosen to ensure that every item we offer is not only fashionable but also functional.\n\nWhether you're looking for the perfect outfit for a night out or the latest skincare routine to achieve glowing skin, Chic Geometric Beauty has got you covered. Explore our website and discover the effortless elegance of our pastel-colored geometric pattern. Shop now and elevate your style game!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist geometric pattern in pastel colors for a fashion or beauty website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

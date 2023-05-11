@@ -1,0 +1,8 @@
+{
+    "title": "Aurora View.",
+    "content": "# Aurora View\n\nWelcome to Aurora View, a website dedicated to bringing the beauty of the Northern Lights to your screen. Our site features a stunning photograph of the aurora borealis, showcasing the mesmerizing green and purple hues that dance across the night sky.\n\nAt Aurora View, we believe that everyone should have access to the breathtaking wonder of the Northern Lights, no matter where they are in the world. That's why we've created this website as a way to bring this natural phenomenon into your home or office.\n\nWhether you're looking for a new desktop background or simply want to admire the beauty of the aurora borealis, Aurora View is the perfect destination. So sit back, relax, and enjoy the view!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

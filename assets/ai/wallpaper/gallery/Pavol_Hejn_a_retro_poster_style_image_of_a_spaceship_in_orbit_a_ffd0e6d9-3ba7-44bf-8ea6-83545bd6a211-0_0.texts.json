@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Odyssey Hub\"",
+    "content": "# Galactic Odyssey Hub\n\nWelcome to the Galactic Odyssey Hub, your one-stop-shop for all things related to space travel and exploration. Our website is dedicated to providing you with the latest news, updates, and resources on everything from rocket launches to extraterrestrial discoveries.\n\nWhether you're a seasoned astronaut or just a casual space enthusiast, our site has something for everyone. Browse our collection of articles, videos, and podcasts to stay up-to-date on the latest developments in space exploration. Connect with other like-minded individuals in our community forums and share your thoughts and ideas on the future of space travel.\n\nAt the Galactic Odyssey Hub, we believe that the exploration of space is one of the most important endeavors humanity can undertake. Join us as we embark on a journey to discover new worlds and push the boundaries of what we thought was possible.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A retro poster-style image of a spaceship in orbit around Earth, with bold colors and typography.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

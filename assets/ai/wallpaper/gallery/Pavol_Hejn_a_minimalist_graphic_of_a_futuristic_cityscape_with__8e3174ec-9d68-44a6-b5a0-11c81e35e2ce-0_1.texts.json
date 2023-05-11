@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Metropolis\"",
+    "content": "# Neon Metropolis\n\nWelcome to Neon Metropolis, a website that showcases the best of futuristic cityscapes. Our minimalist graphics and dark color scheme create a moody atmosphere that captures the essence of urban life in the future.\n\nExplore our curated collection of stunning cityscapes, featuring neon lights and sleek architecture. From bustling metropolises to quiet cyberpunk alleys, our wallpapers will transport you to a world of endless possibilities.\n\nAll of our wallpapers are carefully selected and optimized for high-resolution displays, so you can enjoy them on your desktop or mobile device. Whether you're a fan of science fiction, cyberpunk, or just love the aesthetic of neon lights and cityscapes, Neon Metropolis has something for you.\n\nJoin our community of like-minded individuals who share a passion for all things futuristic and urban. Follow us on social media to stay up-to-date with the latest additions to our collection and connect with other fans.\n\nExperience the beauty and excitement of the future with Neon Metropolis.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

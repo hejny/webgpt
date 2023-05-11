@@ -1,0 +1,8 @@
+{
+    "title": "\"Mars Expedition Hub\"",
+    "content": "# Mars Expedition Hub\n\nWelcome to the Mars Expedition Hub, your go-to destination for all things related to space exploration and the mission to Mars. Our website is dedicated to providing you with up-to-date information on the latest developments in space technology, as well as news and updates on the progress of the Mars mission.\n\nOur team of experts is passionate about space exploration and is committed to sharing their knowledge and expertise with our readers. Whether you're a space enthusiast or just curious about what's happening in the world of space exploration, you'll find something of interest here.\n\nIn addition to news and updates, we also offer a range of resources for those who want to learn more about space exploration. From educational articles and videos to interactive simulations and games, we've got everything you need to satisfy your curiosity and deepen your understanding of the universe.\n\nSo why wait? Join us on our journey to Mars and beyond, and discover the wonders of space exploration for yourself!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A poster-style image of a mission to Mars, with bold typography and a futuristic color scheme that represents the ambition of space exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

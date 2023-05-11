@@ -1,0 +1,8 @@
+{
+    "title": "\"Rocket Launch HQ\"",
+    "content": "# Rocket Launch HQ\n\nRocket Launch HQ is your go-to source for the latest news and updates on rocket launches from around the world. Our team of experts provides in-depth coverage of all major launches, including SpaceX, NASA, and Blue Origin.\n\nStay up-to-date with our comprehensive launch schedule, which includes details on launch times, locations, and live stream links. We also provide exclusive interviews with industry leaders and astronauts, as well as behind-the-scenes access to rocket facilities.\n\nJoin our community of space enthusiasts and share your passion for rocket launches. Follow us on social media for real-time updates and engage with other fans in our forums.\n\nExperience the thrill of a rocket launch from the comfort of your own home with our stunning wallpaper featuring a realistic photograph of a rocket launch. Download it now and make it your desktop background or phone wallpaper.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a rocket launch, with fiery trails and smoke visible in the sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

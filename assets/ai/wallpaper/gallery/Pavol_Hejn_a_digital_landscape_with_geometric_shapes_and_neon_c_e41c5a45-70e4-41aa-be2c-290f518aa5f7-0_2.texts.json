@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Geometry Land\"",
+    "content": "# Welcome to Neon Geometry Land\n\nNeon Geometry Land is a digital world where art and technology collide. Our website features a stunning landscape of geometric shapes and vibrant neon colors that will transport you to a futuristic realm.\n\nExplore our site and discover a variety of digital art, including illustrations, animations, and designs that showcase the beauty of geometry and neon. Our content is created by talented artists from around the world who share a passion for blending creativity with technology.\n\nWhether you're an art enthusiast or simply looking for inspiration, Neon Geometry Land has something for everyone. Join us on this journey through a digital wonderland and experience the magic of neon geometry.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital landscape with geometric shapes and neon colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

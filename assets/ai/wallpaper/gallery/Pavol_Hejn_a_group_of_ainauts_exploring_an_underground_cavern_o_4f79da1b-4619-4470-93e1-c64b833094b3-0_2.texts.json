@@ -1,0 +1,8 @@
+{
+    "title": "\"Alien Underground Adventures\"",
+    "content": "# Alien Underground Adventures\n\nWelcome to Alien Underground Adventures, the ultimate destination for sci-fi enthusiasts and adventure seekers! \n\nOur website is dedicated to bringing you thrilling stories of exploration and discovery on distant planets. Join our team of AInauts as they venture into uncharted territories, encountering strange creatures and uncovering ancient mysteries.\n\nWith stunning visuals and immersive storytelling, our website will transport you to worlds beyond your imagination. Follow our crew as they navigate treacherous caverns, brave harsh environments, and make groundbreaking discoveries that will change the course of history.\n\nWhether you're a fan of science fiction or simply looking for an exciting escape from reality, Alien Underground Adventures has something for everyone. So come along for the ride and experience the thrill of exploration like never before!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

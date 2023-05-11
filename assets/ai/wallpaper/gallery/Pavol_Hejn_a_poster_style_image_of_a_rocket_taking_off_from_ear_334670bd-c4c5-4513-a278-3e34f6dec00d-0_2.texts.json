@@ -1,0 +1,8 @@
+{
+    "title": "\"Retro Rocket Launch\"",
+    "content": "# Retro Rocket Launch\n\nWelcome to Retro Rocket Launch, your go-to destination for all things space-related! Our website is dedicated to providing you with the latest news and updates on space exploration, as well as a variety of resources to help you learn more about this fascinating subject.\n\nOur team of experts is constantly scouring the web for the most interesting and informative articles, videos, and images related to space travel, astronomy, and more. Whether you're a seasoned space enthusiast or just getting started, we've got something for everyone.\n\nIn addition to our extensive collection of space-related content, we also offer a range of interactive features, including quizzes, polls, and forums, where you can connect with other like-minded individuals and share your passion for space.\n\nSo why wait? Come explore the final frontier with us at Retro Rocket Launch!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A poster-style image of a rocket taking off from Earth, with bold typography and a vintage color scheme that adds a touch of nostalgia.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

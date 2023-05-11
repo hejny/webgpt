@@ -1,0 +1,8 @@
+{
+    "title": "\"Exotic Worldscape\"",
+    "content": "# Exotic Worldscape\n\nWelcome to Exotic Worldscape, a website dedicated to exploring the surreal and otherworldly. Our collection of alien planets and strange creatures will transport you to new dimensions and challenge your imagination.\n\nDiscover a world beyond your wildest dreams as you explore our gallery of stunning wallpapers. From the glowing forests of distant moons to the towering spires of alien cities, each image is a window into a fantastic realm waiting to be explored.\n\nOur wallpapers are perfect for adding a touch of the extraordinary to your desktop or mobile device. Whether you're a science fiction fan or just looking for something unique, Exotic Worldscape has something for everyone.\n\nJoin us on a journey through the cosmos and experience the wonder of worlds beyond our own.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal landscape of alien planets and strange, otherworldly creatures.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

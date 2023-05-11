@@ -1,0 +1,8 @@
+{
+    "title": "\"Nightmare Woods\"",
+    "content": "# Nightmare Woods\n\nWelcome to Nightmare Woods, a horror and supernatural website that will take you on a thrilling journey through the dark and mysterious world of the unknown. Our site is dedicated to providing our readers with spine-tingling stories, chilling artwork, and bone-chilling videos that will keep you up at night.\n\nOur team of writers and artists are experts in the horror and supernatural genre, and they work tirelessly to bring you the most terrifying content possible. From ghost stories to urban legends, from demonic possessions to haunted forests, we have it all.\n\nSo if you're a fan of horror and the supernatural, come join us in Nightmare Woods. But be warned, once you enter, there's no turning back.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody image of a moonlit forest for a horror or supernatural website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

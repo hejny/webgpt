@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Night Sky.",
+    "content": "# Galactic Night Sky\n\nWelcome to Galactic Night Sky, a website dedicated to exploring the beauty and wonder of our universe. Our site features stunning images of the night sky, including the Milky Way galaxy visible overhead.\n\nJoin us on a journey through space and time as we showcase the most awe-inspiring sights in the cosmos. From distant galaxies to colorful nebulae, our collection of images will leave you mesmerized.\n\nWhether you're an amateur astronomer or simply a lover of all things celestial, Galactic Night Sky is the perfect destination for exploring the wonders of the universe. So sit back, relax, and let us take you on a journey through the stars.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a starry night sky, with the Milky Way galaxy visible overhead.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

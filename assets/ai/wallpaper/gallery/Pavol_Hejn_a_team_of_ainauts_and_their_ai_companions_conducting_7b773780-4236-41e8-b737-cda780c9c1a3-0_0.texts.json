@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Planet Lab\"",
+    "content": "# AI Planet Lab\n\nWelcome to AI Planet Lab, where a team of AInauts and their AI companions conduct groundbreaking experiments on the surface of massive gas giant planets. Our mission is to explore and understand these mysterious worlds, unlocking their secrets and advancing our knowledge of the universe.\n\nThrough our website, you can follow along with our latest discoveries, view stunning images and videos of these alien landscapes, and learn about the cutting-edge technology that enables us to study them. Join us on this exciting journey of discovery and exploration as we push the boundaries of what we know about the cosmos.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

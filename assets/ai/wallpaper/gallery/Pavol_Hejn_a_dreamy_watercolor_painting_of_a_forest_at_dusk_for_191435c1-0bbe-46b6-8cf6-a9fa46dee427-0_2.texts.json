@@ -1,0 +1,8 @@
+{
+    "title": "\"Wilderness Haven\"",
+    "content": "# Wilderness Haven\n\nWelcome to Wilderness Haven, a nature and wildlife blog dedicated to exploring the beauty of the great outdoors. Our website is a sanctuary for those who seek to escape the hustle and bustle of city life and immerse themselves in the tranquility of nature.\n\nHere at Wilderness Haven, we share stories, photos, and insights about our adventures in the wilderness. From hiking through majestic forests to observing elusive wildlife, we aim to inspire and educate others about the wonders of the natural world.\n\nOur community of nature enthusiasts is passionate about preserving and protecting the environment. We believe that by sharing our experiences and knowledge, we can raise awareness and promote sustainable practices that benefit both humans and wildlife.\n\nJoin us on our journey as we explore the breathtaking landscapes and fascinating creatures that make our planet so unique. Together, let's celebrate the beauty of nature and work towards a more harmonious relationship with the natural world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

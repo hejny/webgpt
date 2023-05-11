@@ -1,0 +1,8 @@
+{
+    "title": "\"Station Skyline\"",
+    "content": "# Station Skyline\n\nWelcome to Station Skyline, your go-to destination for all things space-related! Our website is dedicated to providing you with the latest news and updates on space exploration, as well as a community for like-minded individuals to connect and share their passion for the final frontier.\n\nExplore our blog section for in-depth articles on topics such as the latest rocket launches, space missions, and discoveries. Join our forums to discuss your favorite space-themed movies, books, and games with other enthusiasts. And don't forget to check out our events page for upcoming space-related events and conferences.\n\nAt Station Skyline, we strive to create a retro-futuristic atmosphere that will transport you to a world of endless possibilities. Our pixel art depiction of a space station serves as a reminder of the beauty and wonder of space, and we hope it inspires you to continue exploring and learning about this vast universe.\n\nJoin us today and become a part of our growing community of space enthusiasts!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

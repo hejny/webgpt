@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Journey Hub\"",
+    "content": "# Galactic Journey Hub\n\nWelcome to the Galactic Journey Hub, your one-stop destination for all things space-related. Our website is dedicated to providing you with the latest news, updates, and insights into the world of space exploration.\n\nWhether you're an avid fan of sci-fi or a space enthusiast, our website has something for everyone. We cover a wide range of topics, including new discoveries, upcoming missions, and the latest technologies being used in space exploration.\n\nOur team of expert writers and contributors are passionate about space and are committed to bringing you the most accurate and up-to-date information available. We also feature exclusive interviews with leading experts in the field, as well as stunning visuals that will transport you to the far reaches of the universe.\n\nSo come aboard and join us on this exciting journey through the cosmos. With the Galactic Journey Hub, the sky's no longer the limit!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a spaceship traveling through a colorful nebula.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

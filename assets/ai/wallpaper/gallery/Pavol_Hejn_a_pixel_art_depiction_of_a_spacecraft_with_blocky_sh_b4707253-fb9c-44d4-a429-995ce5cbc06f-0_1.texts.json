@@ -1,0 +1,8 @@
+{
+    "title": "\"Retro Space Fun\"",
+    "content": "# Retro Space Fun\n\nWelcome to Retro Space Fun, your one-stop destination for all things nostalgic and playful in the realm of space exploration! Our website is dedicated to bringing you the best of pixel art depictions of spacecraft, featuring blocky shapes and limited colors that will transport you back to a simpler time.\n\nWhether you're a fan of classic arcade games or simply appreciate the charm of retro design, you'll find plenty to love on our site. From vintage-inspired desktop backgrounds to fun and quirky mobile wallpapers, we've got it all.\n\nSo why wait? Browse our collection today and discover the joy of retro space fun!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

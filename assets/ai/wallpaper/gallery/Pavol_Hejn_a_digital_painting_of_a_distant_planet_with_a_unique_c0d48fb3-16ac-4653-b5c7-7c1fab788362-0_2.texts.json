@@ -1,0 +1,8 @@
+{
+    "title": "\"Exotic World Art\"",
+    "content": "# Exotic World Art\n\nWelcome to Exotic World Art, your destination for stunning digital paintings of unique and otherworldly landscapes. Our collection features breathtaking artwork of distant planets, alien worlds, and fantastical environments that will transport you to another realm.\n\nOur talented artists use their creativity and imagination to bring these exotic worlds to life, with intricate details and vibrant colors that will captivate your senses. Each piece is a one-of-a-kind masterpiece, created with passion and dedication to the art form.\n\nWhether you're a collector, an art enthusiast, or simply looking to add some beauty to your living space, our selection of prints and canvases are sure to impress. Browse our gallery and discover the wonders of the universe through the eyes of our artists.\n\nThank you for visiting Exotic World Art, where imagination meets reality.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a distant planet, with a unique atmosphere and unusual terrain.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

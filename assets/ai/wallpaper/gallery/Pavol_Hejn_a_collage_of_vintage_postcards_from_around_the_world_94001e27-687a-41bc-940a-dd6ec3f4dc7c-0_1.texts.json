@@ -1,0 +1,8 @@
+{
+    "title": "\"Global Postcard Collage\"",
+    "content": "# Global Postcard Collage\n\nWelcome to our website, where we showcase a unique collection of vintage postcards from around the world. Our collage features postcards from various countries and cultures, each with its own story to tell.\n\nOur goal is to provide a glimpse into the past and allow you to travel back in time through these beautiful and historical postcards. Whether you're a history buff or simply appreciate the beauty of vintage art, our collection has something for everyone.\n\nWe update our collage regularly, so be sure to check back often to see what new postcards we've added. You can also follow us on social media to stay up-to-date on our latest additions and news.\n\nThank you for visiting our website and we hope you enjoy exploring our global postcard collage!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A collage of vintage postcards from around the world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

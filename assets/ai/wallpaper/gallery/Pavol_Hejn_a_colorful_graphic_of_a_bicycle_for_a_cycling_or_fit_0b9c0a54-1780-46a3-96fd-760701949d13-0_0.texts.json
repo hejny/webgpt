@@ -1,0 +1,8 @@
+{
+    "title": "\"Cycle Splash\"",
+    "content": "# Cycle Splash\n\nWelcome to Cycle Splash, your go-to destination for all things cycling and fitness related! Our website is designed to provide you with the latest news, tips, and insights on everything from road cycling to mountain biking, indoor training to outdoor adventures.\n\nWhether you're a seasoned pro or just starting out, our team of experienced writers and cyclists are here to help you get the most out of your ride. From gear reviews to training plans, nutrition advice to destination recommendations, we've got you covered.\n\nSo why wait? Dive in and explore all that Cycle Splash has to offer. Whether you're looking to improve your performance, find new routes to explore, or simply connect with other like-minded cyclists, we've got everything you need to take your cycling journey to the next level.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a bicycle for a cycling or fitness blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

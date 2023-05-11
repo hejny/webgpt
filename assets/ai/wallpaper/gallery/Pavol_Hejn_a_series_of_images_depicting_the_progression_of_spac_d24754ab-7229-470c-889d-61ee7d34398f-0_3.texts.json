@@ -1,0 +1,8 @@
+{
+    "title": "\"Space Exploration Timeline\"",
+    "content": "# Space Exploration Timeline\n\nWelcome to our website showcasing the fascinating history of space exploration. Our site features a carefully curated collection of images that depict the evolution of space technology, from the earliest rockets and satellites to the latest spacecraft and missions.\n\nOur timeline takes you on a journey through the major milestones in space exploration, including the first human spaceflight by Yuri Gagarin, the Apollo moon landings, and the launch of the Hubble Space Telescope. Each image is accompanied by a brief description of its significance and context within the broader story of space exploration.\n\nWhether you're a space enthusiast, a student studying science or history, or simply curious about humanity's quest to explore the cosmos, our website has something for you. We hope you enjoy exploring the history of space exploration with us!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A series of images depicting the progression of space exploration, from early rockets to modern spacecraft.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

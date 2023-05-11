@@ -1,0 +1,8 @@
+{
+    "title": "Nebula Gallery.",
+    "content": "# Welcome to Nebula Gallery!\n\nOur website is dedicated to showcasing the beauty and wonder of the universe through stunning imagery of nebulas, galaxies, and other celestial objects. Our main feature is a realistic photograph of a nebula, which serves as our website's wallpaper and sets the tone for the rest of the content.\n\nWe believe that exploring the mysteries of space can be both educational and awe-inspiring, and we strive to share this passion with our visitors. Whether you're an amateur astronomer or simply someone who appreciates the beauty of the cosmos, we hope you'll find something to enjoy on our site.\n\nIn addition to our featured wallpaper, we also offer a variety of other images and resources related to astronomy and space exploration. From informative articles to breathtaking photographs, we aim to provide a comprehensive and engaging experience for all of our visitors.\n\nThank you for visiting Nebula Gallery, and we hope you enjoy your journey through the cosmos with us!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Cyborg Artistry\"",
+    "content": "# Cyborg Artistry\n\nWelcome to Cyborg Artistry, a website dedicated to showcasing the beauty and creativity of cyborg-inspired art. Our minimalist wallpaper features a single line drawing of a cyborg, in a striking color that captures the essence of this futuristic being.\n\nAt Cyborg Artistry, we believe that art is a powerful medium for exploring the intersection between humanity and technology. Our collection includes a variety of styles and mediums, from traditional paintings to digital illustrations, all featuring cyborgs as the central theme.\n\nWhether you're an artist looking for inspiration or simply appreciate the aesthetic of cyborgs, we invite you to explore our gallery and discover the many ways in which these beings have captured the imagination of artists around the world.\n\nJoin us on our mission to celebrate the artistry of cyborgs and their place in our collective consciousness.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

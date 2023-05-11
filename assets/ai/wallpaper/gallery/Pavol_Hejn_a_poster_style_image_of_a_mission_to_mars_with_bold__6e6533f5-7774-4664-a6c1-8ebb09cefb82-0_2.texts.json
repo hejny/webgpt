@@ -1,0 +1,8 @@
+{
+    "title": "\"Mars Mission Hub\"",
+    "content": "# Mars Mission Hub\n\nWelcome to the Mars Mission Hub, your one-stop destination for all things related to space exploration and the mission to Mars. Our website is dedicated to providing you with the latest news, updates, and insights into the ongoing efforts to send humans to the Red Planet.\n\nFrom breakthrough technologies and scientific discoveries to the people behind the mission, we cover it all. Our team of experts brings you exclusive interviews, in-depth analysis, and stunning visuals that showcase the ambition and excitement of space exploration.\n\nWhether you're a space enthusiast, a student, or a professional in the field, the Mars Mission Hub has something for everyone. Join our community today and be a part of the journey to Mars!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A poster-style image of a mission to Mars, with bold typography and a futuristic color scheme that represents the ambition of space exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Orbit Odyssey\"",
+    "content": "# Welcome to Orbit Odyssey\n\nOrbit Odyssey is your ultimate destination for space exploration and adventure. Our website features the latest news, updates, and insights on all things related to space travel, astronomy, and beyond.\n\nJoin us on a journey through the cosmos as we explore the mysteries of our universe and discover new worlds and civilizations. From stunning images of distant galaxies to in-depth articles on the latest scientific breakthroughs, Orbit Odyssey has everything you need to satisfy your curiosity about the final frontier.\n\nWhether you're a seasoned astronomer or just starting out, our website is designed to be accessible and informative for everyone. So come along with us as we embark on an epic journey through the stars and unlock the secrets of the universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

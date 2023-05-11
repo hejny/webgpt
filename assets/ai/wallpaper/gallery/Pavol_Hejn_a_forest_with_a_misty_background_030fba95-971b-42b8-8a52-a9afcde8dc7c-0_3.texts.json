@@ -1,0 +1,8 @@
+{
+    "title": "\"Misty Forest View\"",
+    "content": "# Misty Forest View\n\nWelcome to Misty Forest View, your go-to destination for stunning nature wallpapers! Our website is dedicated to bringing you high-quality images of the world's most beautiful forests, including the misty forest with a dreamy background that you see as our main wallpaper.\n\nOur collection includes a wide variety of forest landscapes from around the globe, each one carefully selected and curated to showcase the beauty and diversity of nature. Whether you're looking for a peaceful scene to use as your desktop background or an inspiring image to use in your next design project, we've got you covered.\n\nWe update our collection regularly, so be sure to check back often for new additions. And if you have any questions or suggestions, don't hesitate to get in touch with us. We love hearing from our visitors and are always looking for ways to improve our site and make it the best resource possible for nature lovers everywhere.\n\nThank you for visiting Misty Forest View, and we hope you enjoy browsing our collection as much as we enjoyed curating it for you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

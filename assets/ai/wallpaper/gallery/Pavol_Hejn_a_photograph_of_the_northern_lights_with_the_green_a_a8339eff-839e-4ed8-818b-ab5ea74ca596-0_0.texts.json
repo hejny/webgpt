@@ -1,0 +1,8 @@
+{
+    "title": "\"Aurora Wallpaper Hub\"",
+    "content": "# Aurora Wallpaper Hub\n\nWelcome to Aurora Wallpaper Hub, your ultimate destination for stunning wallpapers featuring the mesmerizing Northern Lights. Our website offers a vast collection of high-quality wallpapers that showcase the beauty and wonder of this natural phenomenon.\n\nOur team of talented photographers has captured the magic of the Aurora Borealis in all its glory, bringing you breathtaking images that will transform your desktop, phone or tablet screen into a work of art. Whether you're looking for a peaceful and serene landscape or an intense and vibrant display of colors, we have something for everyone.\n\nAt Aurora Wallpaper Hub, we strive to provide our users with the best possible experience. All our wallpapers are carefully curated and optimized for various devices, ensuring that they look stunning on any screen size. We also offer a range of customization options, allowing you to personalize your wallpaper to suit your preferences.\n\nSo why wait? Browse our collection today and discover the beauty of the Northern Lights right at your fingertips!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

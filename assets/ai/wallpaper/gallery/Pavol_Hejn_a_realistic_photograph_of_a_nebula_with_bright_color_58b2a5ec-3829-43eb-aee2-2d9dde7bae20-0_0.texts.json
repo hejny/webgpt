@@ -1,0 +1,8 @@
+{
+    "title": "Nebula Universe Wallpapers.",
+    "content": "# Nebula Universe Wallpapers\n\nWelcome to Nebula Universe Wallpapers, your go-to source for stunning wallpapers featuring breathtaking images of the universe. Our website showcases a carefully curated selection of high-quality wallpapers that capture the beauty and mystery of space.\n\nFrom vibrant nebulas to distant galaxies, our collection of wallpapers features some of the most awe-inspiring images captured by astronomers and astrophotographers from around the world. Whether you're looking to add a touch of cosmic wonder to your desktop, phone, or tablet, we've got you covered.\n\nAll of our wallpapers are available in a range of resolutions to ensure that you can find the perfect fit for your device. Plus, our easy-to-use interface makes it simple to browse and download your favorite images.\n\nSo why wait? Explore our collection today and bring a piece of the universe to your screen!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

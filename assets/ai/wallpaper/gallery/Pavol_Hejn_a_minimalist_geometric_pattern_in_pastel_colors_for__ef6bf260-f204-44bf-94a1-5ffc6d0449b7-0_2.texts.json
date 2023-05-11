@@ -1,0 +1,8 @@
+{
+    "title": "\"Chic Palette\"",
+    "content": "# Chic Palette\n\nChic Palette is a fashion and beauty website that offers a curated selection of products for the modern, minimalist woman. Our focus is on clean lines, simple shapes, and muted colors that complement any style.\n\nOur collection includes clothing, accessories, and beauty products that are carefully selected to reflect our aesthetic. We believe that less is more, and that quality should always come before quantity.\n\nAt Chic Palette, we strive to create a shopping experience that is both effortless and enjoyable. Whether you're looking for a new outfit or simply browsing for inspiration, we hope that our website will inspire you to embrace your own unique sense of style.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist geometric pattern in pastel colors for a fashion or beauty website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Arctic Chill.",
+    "content": "# Arctic Chill\n\nArctic Chill is a website dedicated to providing a serene and calming online experience. Our minimalist design and soothing color palette are intended to help visitors unwind and relax. \n\nOur content includes articles on mindfulness, meditation, and self-care, as well as resources for mental health support. We believe that taking care of your mental health is just as important as taking care of your physical health, and we strive to provide a safe and welcoming space for all visitors.\n\nWe hope that our website can be a small but meaningful part of your daily routine, helping you find moments of peace and tranquility in the midst of a busy world.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

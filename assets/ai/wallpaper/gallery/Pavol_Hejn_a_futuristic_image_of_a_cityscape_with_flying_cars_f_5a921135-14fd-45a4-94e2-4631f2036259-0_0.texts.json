@@ -1,0 +1,8 @@
+{
+    "title": "\"Future Metropolis\"",
+    "content": "# Future Metropolis\n\nWelcome to Future Metropolis, your go-to destination for all things sci-fi and technology! Our website is dedicated to exploring the latest advancements in science and technology, as well as the futuristic worlds imagined by some of the greatest minds in science fiction.\n\nAt Future Metropolis, we believe that the future is now. From flying cars and space travel to artificial intelligence and virtual reality, we strive to bring you the most exciting and innovative news and ideas from the world of science and technology.\n\nWhether you're a die-hard sci-fi fan or simply interested in the latest technological breakthroughs, Future Metropolis has something for everyone. So join us on this journey into the future, and let's explore the endless possibilities together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic image of a cityscape with flying cars for a sci-fi or technology website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

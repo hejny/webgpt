@@ -1,0 +1,8 @@
+{
+    "title": "\"Aurora Borealis Hub\"",
+    "content": "# Aurora Borealis Hub\n\nWelcome to Aurora Borealis Hub, your go-to destination for all things related to the Northern Lights. Our website is dedicated to bringing you the latest news, updates, and information about this stunning natural phenomenon.\n\nWhether you're an avid aurora chaser or simply appreciate the beauty of the night sky, our website has something for everyone. From tips on how to capture the perfect photograph of the Northern Lights to in-depth articles about the science behind this incredible display, we've got you covered.\n\nExplore our galleries of breathtaking Northern Lights photos from around the world, or connect with other aurora enthusiasts in our community forums. You can also stay up-to-date on the latest aurora forecasts and predictions, so you never miss a chance to witness this awe-inspiring spectacle for yourself.\n\nSo come join us at Aurora Borealis Hub and discover the magic of the Northern Lights.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

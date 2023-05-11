@@ -1,0 +1,8 @@
+{
+    "title": "\"Moonscape Explorer\"",
+    "content": "# Moonscape Explorer\n\nWelcome to Moonscape Explorer, your ultimate destination for all things related to space exploration! Our website is dedicated to providing you with the latest news, updates, and insights on space missions, astronomy, and everything in between.\n\nAt Moonscape Explorer, we believe that space exploration is one of the most exciting and important fields of study in human history. From the first steps on the moon to the latest discoveries on Mars, we are constantly pushing the boundaries of what we know about our universe.\n\nOur team of expert writers and researchers is committed to bringing you the most accurate and up-to-date information on space exploration. Whether you're a seasoned astronomer or just starting out, our articles and resources are designed to help you explore the wonders of the cosmos.\n\nSo come join us on this incredible journey through space and time. With Moonscape Explorer, the universe is yours to discover!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an astronaut standing on the surface of the moon with Earth in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

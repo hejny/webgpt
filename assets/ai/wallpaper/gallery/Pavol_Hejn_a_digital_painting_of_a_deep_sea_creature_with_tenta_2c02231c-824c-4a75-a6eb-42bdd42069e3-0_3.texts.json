@@ -1,0 +1,8 @@
+{
+    "title": "\"Oceanic Enigma\"",
+    "content": "# Oceanic Enigma\n\nWelcome to Oceanic Enigma, a website dedicated to exploring the mysteries of the deep sea. Our goal is to bring you closer to the fascinating and often bizarre creatures that inhabit the ocean's depths.\n\nThrough stunning digital paintings and captivating articles, we aim to showcase the beauty and wonder of these creatures while also shedding light on their unique adaptations and behaviors.\n\nJoin us on this journey of discovery as we delve into the unknown and uncover the secrets of the deep.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

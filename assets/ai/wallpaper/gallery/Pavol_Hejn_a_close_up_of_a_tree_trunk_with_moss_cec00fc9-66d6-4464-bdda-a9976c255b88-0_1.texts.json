@@ -1,0 +1,8 @@
+{
+    "title": "\"Mossy Nature Vibes\"",
+    "content": "# Mossy Nature Vibes\n\nWelcome to Mossy Nature Vibes, a website dedicated to bringing you closer to nature through stunning photography and artwork. Our website features a collection of high-quality wallpapers that showcase the beauty and serenity of the natural world.\n\nAt Mossy Nature Vibes, we believe that spending time in nature is essential for our well-being and happiness. That's why we've curated a selection of images that capture the essence of the outdoors, from lush forests and tranquil lakes to rugged mountains and wildflowers.\n\nWhether you're looking for a calming background for your desktop or mobile device, or simply want to surround yourself with the beauty of nature, Mossy Nature Vibes has something for everyone. Browse our collection today and bring the peace and tranquility of the natural world into your daily life.",
+    "prompts": {
+        "title": "\n\n            Write me short (max 3 words) title for website with main wallpaper that is:\n\n            \"A close-up of a tree trunk with moss\"\n\n            The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.\n        \n        ",
+        "content": "\n\n            Write me some content for this website in markdown format.\n            The content should be a short description of the website which is using this wallpaper.\n\n            Do not describe the wallpaper itself, but rather the website which is using it.\n        \n        "
+    }
+}

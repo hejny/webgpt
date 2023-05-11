@@ -1,0 +1,8 @@
+{
+    "title": "\"Neon Geometric Landscapes\"",
+    "content": "# Neon Geometric Landscapes\n\nWelcome to Neon Geometric Landscapes, a website dedicated to showcasing digital landscapes with geometric shapes and vibrant neon colors. Our collection features a variety of visually stunning images that are perfect for use as desktop wallpapers, phone backgrounds, or even as inspiration for your own digital creations.\n\nOur team of talented artists and designers carefully curates each image to ensure that it meets our high standards for quality and creativity. Whether you're looking for a bold and striking centerpiece for your home screen or a subtle and sophisticated background for your work computer, we have something for everyone.\n\nBrowse our collection today and discover the beauty and excitement of neon geometric landscapes.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital landscape with geometric shapes and neon colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

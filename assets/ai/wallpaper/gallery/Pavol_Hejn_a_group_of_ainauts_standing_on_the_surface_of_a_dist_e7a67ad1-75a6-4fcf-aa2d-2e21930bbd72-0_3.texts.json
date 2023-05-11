@@ -1,0 +1,8 @@
+{
+    "title": "\"Exoplanet Expedition\"",
+    "content": "# Exoplanet Expedition\n\nWelcome to Exoplanet Expedition, your ultimate destination for exploring the unknown corners of the universe. Our website is dedicated to providing you with the latest news, updates, and discoveries from the world of space exploration.\n\nJoin us on a journey to distant planets, where we will uncover the mysteries of alien worlds and the secrets they hold. Our team of experts, including AInauts and astrophysicists, will guide you through the vast expanse of space and help you understand the wonders of the cosmos.\n\nWhether you're a seasoned space enthusiast or just starting your journey into the final frontier, Exoplanet Expedition has something for everyone. Explore our collection of articles, videos, and images that showcase the beauty and complexity of the universe.\n\nSo come aboard and embark on an adventure of a lifetime with Exoplanet Expedition. The universe is waiting for you!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Sea Depths Explorer\"",
+    "content": "# Sea Depths Explorer\n\nSea Depths Explorer is a website dedicated to showcasing the wonders of the deep sea. Our mission is to inspire curiosity and a sense of adventure in our visitors, by providing stunning visuals and informative content about the creatures that inhabit the darkest depths of the ocean.\n\nThrough our articles, photo galleries, and videos, we aim to educate and entertain, shedding light on the mysteries of the deep and encouraging a deeper appreciation for the fragile ecosystem that exists beneath the waves.\n\nJoin us on a journey into the unknown, as we explore the fascinating world of deep-sea creatures and their incredible adaptations to life in one of the harshest environments on Earth.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

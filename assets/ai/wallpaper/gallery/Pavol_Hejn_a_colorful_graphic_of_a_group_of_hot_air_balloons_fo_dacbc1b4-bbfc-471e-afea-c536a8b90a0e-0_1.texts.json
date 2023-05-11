@@ -1,0 +1,8 @@
+{
+    "title": "\"Balloon Adventures\"",
+    "content": "# Balloon Adventures\n\nWelcome to Balloon Adventures, your go-to website for all things hot air ballooning! \n\nOur website is dedicated to providing you with the best information on hot air ballooning adventures around the world. Whether you're an experienced balloonist or a first-time flyer, we've got you covered.\n\nBrowse our site to find detailed information on hot air balloon festivals, tours, and rides in various locations across the globe. We also offer tips and tricks for getting the most out of your hot air balloon experience, as well as safety guidelines to ensure a smooth and enjoyable ride.\n\nJoin our community of hot air balloon enthusiasts and share your own experiences and photos with us. Don't forget to follow us on social media for the latest news and updates on hot air ballooning events.\n\nSo what are you waiting for? Let's take to the skies with Balloon Adventures!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a group of hot air balloons for a travel or adventure website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

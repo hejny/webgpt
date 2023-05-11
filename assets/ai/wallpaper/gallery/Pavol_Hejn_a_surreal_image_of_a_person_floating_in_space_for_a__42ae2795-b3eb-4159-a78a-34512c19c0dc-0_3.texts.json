@@ -1,0 +1,8 @@
+{
+    "title": "\"Spiritual Odyssey\"",
+    "content": "# Spiritual Odyssey\n\nWelcome to Spiritual Odyssey, a website dedicated to personal growth and spiritual exploration. Our mission is to provide a safe and supportive space for individuals to connect with their inner selves and discover their true potential.\n\nThrough our articles, resources, and community forums, we aim to help people on their journey towards self-discovery and enlightenment. Whether you're just starting out on your spiritual path or are looking for guidance and inspiration along the way, we're here to support you every step of the way.\n\nAt Spiritual Odyssey, we believe that everyone has the power to create positive change in their lives and in the world around them. By tapping into your inner wisdom and connecting with your higher self, you can unlock your full potential and live a life of purpose and meaning.\n\nJoin us on this journey of self-discovery and let's explore the mysteries of the universe together.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating in space for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

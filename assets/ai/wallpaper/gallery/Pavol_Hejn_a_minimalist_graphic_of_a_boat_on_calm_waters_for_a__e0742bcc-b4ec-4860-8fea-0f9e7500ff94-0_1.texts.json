@@ -1,0 +1,8 @@
+{
+    "title": "\"Serene Boating Hub\"",
+    "content": "# Serene Boating Hub\n\nWelcome to Serene Boating Hub, your go-to destination for all things boating and water sports. Our website is designed to provide you with the latest news, tips, and information on everything related to boating, from choosing the right boat to navigating the waters safely.\n\nWhether you're a seasoned boater or just starting out, our team of experts is here to help you make the most of your time on the water. We offer a wide range of resources, including articles, guides, and videos, to help you learn more about boating and improve your skills.\n\nIn addition to our educational resources, we also offer a community where you can connect with other boaters and share your experiences. Our forum is a great place to ask questions, get advice, and meet other people who share your passion for boating.\n\nSo if you're looking for a one-stop-shop for all your boating needs, look no further than Serene Boating Hub. We're here to help you make the most of your time on the water and enjoy all that boating has to offer.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a boat on calm waters for a boating or water sports website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

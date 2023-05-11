@@ -1,0 +1,8 @@
+{
+    "title": "\"Tranquil Wellness Retreat\"",
+    "content": "# Tranquil Wellness Retreat\n\nWelcome to Tranquil Wellness Retreat, your ultimate destination for relaxation and rejuvenation. Our serene mountain landscape with a clear blue lake provides the perfect backdrop for your meditation or wellness journey.\n\nAt Tranquil Wellness Retreat, we offer a variety of services to help you achieve inner peace and balance. Whether you're looking for guided meditation sessions, yoga classes, or spa treatments, our experienced staff is here to help you every step of the way.\n\nOur goal is to provide you with a peaceful and nurturing environment where you can disconnect from the stresses of everyday life and focus on your well-being. Come visit us today and start your journey towards a happier and healthier you.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene mountain landscape with a clear blue lake for a meditation or wellness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"RoboTech Hub\"",
+    "content": "# RoboTech Hub\n\nWelcome to RoboTech Hub, your go-to destination for all things related to AI-powered robots. Our website is dedicated to providing you with the latest news, updates, and insights into the world of robotics.\n\nAt RoboTech Hub, we believe that robots are the future of technology and have the potential to revolutionize industries across the board. Our team of experts is passionate about exploring the possibilities of AI and robotics and sharing their knowledge with our audience.\n\nWhether you're a robotics enthusiast, a tech professional, or simply curious about the latest advancements in the field, RoboTech Hub has something for you. From in-depth articles and analysis to product reviews and tutorials, our website is designed to keep you informed and engaged.\n\nJoin us on this exciting journey as we explore the cutting-edge world of AI-powered robots.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized illustration of an AI-powered robot, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

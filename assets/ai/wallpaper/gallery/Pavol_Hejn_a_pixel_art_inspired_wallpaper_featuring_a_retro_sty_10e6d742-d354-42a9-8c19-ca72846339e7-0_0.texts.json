@@ -1,0 +1,8 @@
+{
+    "title": "Pixel Robot Wallpaper.",
+    "content": "# Pixel Robot Wallpaper\n\nWelcome to Pixel Robot Wallpaper, your go-to destination for high-quality pixel art-inspired wallpapers. Our website features a collection of unique and creative wallpapers that are sure to add a touch of retro charm to your desktop or mobile device.\n\nOur wallpapers are designed by talented artists who specialize in pixel art, ensuring that each one is a true work of art. We offer a variety of themes and styles, from cute and whimsical to bold and edgy, so you're sure to find something that suits your taste.\n\nAt Pixel Robot Wallpaper, we believe that your wallpaper should be more than just a background image – it should be a reflection of your personality and style. That's why we're committed to providing you with the best selection of pixel art-inspired wallpapers on the web.\n\nSo why wait? Browse our collection today and find the perfect wallpaper to showcase your love of all things retro and pixelated!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art-inspired wallpaper featuring a retro-style robot, with a limited color palette and pixelated lines.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Balance Quest\"",
+    "content": "# Balance Quest\n\nBalance Quest is a website dedicated to providing motivational and personal development resources to help individuals achieve balance in their lives. Our mission is to inspire and empower people to find harmony between their personal and professional lives, and to pursue their goals with confidence and determination.\n\nThrough our articles, podcasts, and online courses, we offer practical advice and tools for improving mental and physical well-being, managing stress and anxiety, building resilience, and enhancing productivity. We believe that by cultivating a sense of balance in all areas of life, individuals can unlock their full potential and live a more fulfilling and meaningful existence.\n\nJoin us on our journey towards balance and self-discovery. Let's walk the tightrope of life together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person walking on a tightrope for a motivational or personal development website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

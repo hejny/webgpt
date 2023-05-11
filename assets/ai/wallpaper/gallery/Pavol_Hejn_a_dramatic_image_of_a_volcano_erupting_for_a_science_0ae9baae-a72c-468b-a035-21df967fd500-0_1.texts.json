@@ -1,0 +1,8 @@
+{
+    "title": "Volcano Viewpoint.",
+    "content": "# Volcano Viewpoint\n\nWelcome to Volcano Viewpoint, your go-to source for all things related to volcanoes and geology. Our website is dedicated to providing you with the latest news, research, and insights into the fascinating world of volcanoes.\n\nOur team of experts includes scientists, researchers, and enthusiasts who are passionate about sharing their knowledge and expertise with others. Whether you're a student, a professional in the field, or simply someone who is curious about volcanoes, our website has something for everyone.\n\nFrom in-depth articles on the science behind volcanic eruptions to stunning photos and videos of these natural wonders, we strive to provide you with a comprehensive and engaging experience. We also feature interviews with leading experts in the field, as well as updates on the latest research and discoveries.\n\nSo whether you're looking to learn more about the history and formation of volcanoes, or simply want to stay up-to-date on the latest developments in the field, be sure to bookmark Volcano Viewpoint and join us on this exciting journey of discovery.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a volcano erupting for a science or geology blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

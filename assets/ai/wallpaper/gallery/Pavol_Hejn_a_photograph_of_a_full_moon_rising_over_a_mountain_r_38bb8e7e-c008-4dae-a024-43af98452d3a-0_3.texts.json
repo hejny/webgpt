@@ -1,0 +1,8 @@
+{
+    "title": "\"Moonlit Mountains\"",
+    "content": "# Moonlit Mountains\n\nWelcome to Moonlit Mountains, a website dedicated to exploring the beauty and mystery of mountain landscapes. Our site features stunning photography, informative articles, and helpful resources for anyone interested in hiking, camping, or simply admiring the majesty of these natural wonders.\n\nWhether you're an experienced mountaineer or just starting out, we have something for everyone. Our articles cover a range of topics, from tips for planning your next adventure to stories of epic climbs and breathtaking vistas. We also offer guides to some of the most popular trails and destinations around the world, as well as reviews of gear and equipment to help you make informed choices.\n\nBut at the heart of it all is our love for the mountains themselves. We believe that there's something truly special about these rugged landscapes, with their towering peaks, deep valleys, and ever-changing weather patterns. And we hope that by sharing our passion with you, we can inspire you to explore the mountains for yourself and discover the magic that lies within.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

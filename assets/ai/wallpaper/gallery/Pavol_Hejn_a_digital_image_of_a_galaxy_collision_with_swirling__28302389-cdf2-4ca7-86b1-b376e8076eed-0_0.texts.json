@@ -1,0 +1,8 @@
+{
+    "title": "Galactic Chaos.",
+    "content": "# Galactic Chaos\n\nGalactic Chaos is a website dedicated to exploring the beauty and complexity of the universe. Our mission is to share stunning images and fascinating information about space, astronomy, and astrophysics with anyone who is curious about the cosmos.\n\nOur homepage features a digital image of a galaxy collision, which represents the chaotic and dynamic nature of the universe. This image serves as a gateway to our collection of articles, videos, and resources that cover a wide range of topics related to space science.\n\nWhether you're an amateur astronomer or simply fascinated by the mysteries of the universe, Galactic Chaos has something for you. Join us on a journey through the cosmos and discover the wonders of the universe.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Cyborg Art Wallpapers\"",
+    "content": "# Cyborg Art Wallpapers\n\nWelcome to Cyborg Art Wallpapers, your go-to source for unique and striking wallpapers featuring cyborg-inspired art. Our website is dedicated to providing you with high-quality wallpapers that showcase the perfect blend of technology and art.\n\nOur collection features minimalist designs with a single line drawing of a cyborg in bold and vibrant colors such as bright red and blue. We believe that our wallpapers will add a touch of futuristic and artistic flair to any device, whether it's your phone, tablet, or computer.\n\nAt Cyborg Art Wallpapers, we are passionate about providing our customers with a seamless experience. All of our wallpapers are available for download in various resolutions, ensuring that you can find the perfect fit for your device. Plus, our website is easy to navigate, so you can quickly find the wallpaper that speaks to you.\n\nThank you for choosing Cyborg Art Wallpapers. We hope you enjoy our collection and find the perfect wallpaper to showcase your love for all things cyborg!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "\"Frosty Worlds\"",
+    "content": "# Frosty Worlds\n\nWelcome to Frosty Worlds, your ultimate destination for exploring the most breathtaking and awe-inspiring landscapes from across the universe. Our website features a stunning collection of high-quality wallpapers that showcase the beauty of distant planets, moons, and galaxies.\n\nFrom icy glaciers to fiery volcanoes, our wallpapers capture the essence of otherworldly environments that are both fascinating and mysterious. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates the wonders of the cosmos, our website has something for everyone.\n\nBrowse through our extensive collection of wallpapers and discover new worlds that you never knew existed. All our images are carefully curated and optimized for different screen sizes, so you can enjoy them on your desktop, laptop, tablet, or smartphone.\n\nJoin us on a journey to the outer reaches of the universe and experience the magic of Frosty Worlds!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

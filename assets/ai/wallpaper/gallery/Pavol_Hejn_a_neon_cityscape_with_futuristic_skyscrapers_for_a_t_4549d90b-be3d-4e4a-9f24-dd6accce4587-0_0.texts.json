@@ -1,0 +1,8 @@
+{
+    "title": "\"Futuristic Techscape\"",
+    "content": "# Futuristic Techscape\n\nWelcome to Futuristic Techscape, your go-to destination for all things technology and innovation. Our website is designed to provide you with the latest news, trends, and insights on the ever-evolving world of tech.\n\nAt Futuristic Techscape, we believe that technology has the power to transform the way we live, work, and interact with each other. That's why we are dedicated to bringing you the most up-to-date information on emerging technologies such as artificial intelligence, blockchain, and virtual reality.\n\nOur team of expert writers and contributors are passionate about exploring the frontiers of technology and sharing their knowledge with our readers. Whether you're a tech enthusiast or simply curious about the latest advancements in the field, you'll find something of interest on our site.\n\nSo why wait? Join us on a journey into the future of technology and discover the endless possibilities that await us in the years ahead.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A neon cityscape with futuristic skyscrapers for a tech blog homepage\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

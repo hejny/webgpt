@@ -1,0 +1,8 @@
+{
+    "title": "Nebula Odyssey.",
+    "content": "# Welcome to Nebula Odyssey!\n\nNebula Odyssey is your destination for all things space exploration. Our website is dedicated to bringing you the latest news, updates, and information about the cosmos.\n\nOur team of experts works tirelessly to provide you with accurate and up-to-date information on everything from the latest space missions to the newest discoveries in astrophysics. Whether you're a seasoned astronomer or just starting to explore the wonders of the universe, Nebula Odyssey has something for you.\n\nExplore our website to discover fascinating articles, stunning images, and engaging videos that will take you on a journey through the depths of space. Join our community of space enthusiasts and share your passion for the cosmos with like-minded individuals from around the world.\n\nSo come aboard and join us on our mission to explore the final frontier. Let's embark on a Nebula Odyssey together!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a spaceship traveling through a colorful nebula.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

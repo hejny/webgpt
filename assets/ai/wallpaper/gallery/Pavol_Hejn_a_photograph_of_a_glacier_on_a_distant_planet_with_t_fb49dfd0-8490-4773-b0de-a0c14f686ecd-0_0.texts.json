@@ -1,0 +1,8 @@
+{
+    "title": "\"Exoplanet Iceberg\"",
+    "content": "# Exoplanet Iceberg\n\nWelcome to Exoplanet Iceberg, your source for stunning extraterrestrial imagery. Our website showcases breathtaking photographs of distant planets and their natural wonders.\n\nOur mission is to inspire wonder and curiosity about the universe beyond our own planet. Through our collection of high-quality images, we hope to transport you to other worlds and ignite your imagination.\n\nWhether you're an astronomy enthusiast or simply appreciate the beauty of nature, Exoplanet Iceberg has something for everyone. Explore our galleries and discover the incredible landscapes and phenomena that exist in the far reaches of space.\n\nJoin us on a journey through the cosmos and experience the awe-inspiring beauty of the universe with Exoplanet Iceberg.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

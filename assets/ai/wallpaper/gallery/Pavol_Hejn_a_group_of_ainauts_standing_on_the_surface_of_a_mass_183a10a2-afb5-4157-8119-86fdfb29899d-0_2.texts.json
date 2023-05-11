@@ -1,0 +1,8 @@
+{
+    "title": "\"Planet Expedition Hub\"",
+    "content": "# Planet Expedition Hub\n\nWelcome to Planet Expedition Hub, your go-to destination for all things related to space exploration and adventure! Our website is dedicated to providing you with the latest news, updates, and resources on space travel, from the latest advancements in rocket technology to the most exciting destinations in our galaxy.\n\nWhether you're a seasoned astronaut or just starting out on your journey to the stars, our community of space enthusiasts is here to help you every step of the way. With expert advice, insider tips, and a wealth of information at your fingertips, Planet Expedition Hub is your ultimate guide to the cosmos.\n\nJoin us today and embark on an epic journey through the universe!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

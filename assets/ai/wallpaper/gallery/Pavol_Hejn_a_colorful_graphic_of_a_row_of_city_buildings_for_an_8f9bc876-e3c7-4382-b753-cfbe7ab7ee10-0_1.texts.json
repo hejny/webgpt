@@ -1,0 +1,8 @@
+{
+    "title": "\"Cityscape Living\"",
+    "content": "# Cityscape Living\n\nWelcome to Cityscape Living, the ultimate destination for urban dwellers. Our website is dedicated to providing you with all the information and resources you need to make the most of city living.\n\nWhether you're a long-time resident or new to the city, we've got you covered. Our team of experts has curated a collection of articles, guides, and tips on everything from finding the best restaurants and nightlife spots to navigating public transportation and exploring local parks.\n\nWe also feature a vibrant community of city enthusiasts who share their experiences and insights on our platform. Connect with like-minded individuals, share your own stories, and discover new perspectives on what it means to live in the city.\n\nSo come join us at Cityscape Living and embrace the energy and excitement of urban life!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a row of city buildings for an urban or city living website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

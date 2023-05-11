@@ -1,0 +1,8 @@
+{
+    "title": "\"Enchanted Forest Dreams\"",
+    "content": "# Enchanted Forest Dreams\n\nWelcome to Enchanted Forest Dreams, a website dedicated to exploring the magical world of fairies and enchanted forests. Our site features stunning imagery of dreamy forest scenes with fairies that will transport you to a world of wonder and imagination.\n\nWhether you're a fan of fantasy and fairy tales or simply love beautiful nature photography, our collection of wallpapers is sure to inspire and delight you. Each image captures the mystical essence of the forest, with vibrant colors and intricate details that bring the fairies to life.\n\nAt Enchanted Forest Dreams, we believe in the power of imagination and the magic of nature. We hope that our wallpapers will spark your creativity and help you find inspiration in the beauty of the world around us. So come explore our collection and discover the enchantment of the forest for yourself!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy forest scene with fairies\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

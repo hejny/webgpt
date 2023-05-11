@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Space Explorers\"",
+    "content": "# AI Space Explorers\n\nWelcome to AI Space Explorers, the ultimate destination for all space enthusiasts! Our website is dedicated to providing you with the latest news and updates on space exploration, as well as fascinating insights into the world of artificial intelligence.\n\nJoin us on a thrilling journey through the depths of space as we explore abandoned research facilities, encounter new life forms, and uncover the secrets of the universe. Our team of AInauts and their AI companions are always on the lookout for exciting discoveries, and we'll be sharing our findings with you every step of the way.\n\nWhether you're a seasoned space explorer or just starting out on your journey, AI Space Explorers has something for everyone. So buckle up and get ready for an adventure like no other!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

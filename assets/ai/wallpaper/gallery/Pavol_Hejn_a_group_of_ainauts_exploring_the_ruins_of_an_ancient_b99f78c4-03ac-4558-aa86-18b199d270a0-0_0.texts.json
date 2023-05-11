@@ -1,0 +1,8 @@
+{
+    "title": "\"Galactic Archaeology Expedition\"",
+    "content": "# Galactic Archaeology Expedition\n\nWelcome to Galactic Archaeology Expedition, a website dedicated to exploring the mysteries of ancient civilizations on distant planets. Our team of AInauts is constantly searching for new ruins to explore and uncover the secrets of the past.\n\nOur mission is to document and share our findings with the world, providing insights into the history and culture of civilizations long gone. Through our articles, photos, and videos, we hope to inspire others to join us in this exciting journey of discovery.\n\nJoin us as we venture into the unknown, exploring towering statues and temples, deciphering ancient scripts, and piecing together the puzzle of the past. Together, we can unlock the secrets of the universe and shed light on the mysteries that have eluded us for centuries.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

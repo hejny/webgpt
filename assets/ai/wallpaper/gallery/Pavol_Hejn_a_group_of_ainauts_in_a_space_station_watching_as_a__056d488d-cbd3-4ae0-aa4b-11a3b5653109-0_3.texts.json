@@ -1,0 +1,8 @@
+{
+    "title": "\"AI Saves Earth\"",
+    "content": "# AI Saves Earth\n\nWelcome to AI Saves Earth, the website dedicated to exploring the role of artificial intelligence in saving our planet from disaster. Our mission is to showcase the latest advancements in AI technology and how it can be used to prevent catastrophic events like the one depicted in our main wallpaper.\n\nThrough informative articles, expert interviews, and thought-provoking discussions, we aim to educate and inspire our readers about the power of AI in protecting our world. From predicting natural disasters to developing innovative solutions for climate change, AI has the potential to revolutionize the way we approach global challenges.\n\nJoin us on this exciting journey as we explore the cutting-edge developments in AI and its impact on the future of our planet.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

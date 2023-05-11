@@ -1,0 +1,8 @@
+{
+    "title": "\"Red Planet Research\"",
+    "content": "# Red Planet Research\n\nWelcome to Red Planet Research, a website dedicated to exploring the mysteries of distant planets. Our team of AInauts is conducting groundbreaking experiments on a remote planet with a red sun setting behind them.\n\nAt Red Planet Research, we are passionate about pushing the boundaries of scientific discovery. Our mission is to uncover new knowledge about the universe and share it with the world.\n\nJoin us on our journey as we explore the wonders of the cosmos. From analyzing data collected by our AInauts to sharing insights from leading experts in the field, we strive to bring you the latest developments in space exploration.\n\nThank you for visiting Red Planet Research. We hope that our website inspires you to learn more about the universe and the incredible discoveries waiting to be made.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

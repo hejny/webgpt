@@ -1,0 +1,8 @@
+{
+    "title": "\"AInauts Explore Gas Giant\"",
+    "content": "# AInauts Explore Gas Giant\n\nWelcome to our website dedicated to the exploration of a massive, gas giant planet! Our team of AInauts and their AI companions are conducting groundbreaking experiments on the surface of this mysterious world.\n\nHere, you'll find updates on our latest discoveries, as well as detailed information about the equipment and technology we use to explore this inhospitable environment. From atmospheric analysis to geological surveys, our team is pushing the boundaries of what's possible with artificial intelligence and robotics.\n\nJoin us on this incredible journey as we delve deeper into the secrets of this gas giant planet. With each new discovery, we're getting closer to unlocking the mysteries of our universe and advancing our understanding of how planets form and evolve.\n\nThank you for visiting our website, and we hope you'll continue to follow our progress as we explore the final frontier!",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}

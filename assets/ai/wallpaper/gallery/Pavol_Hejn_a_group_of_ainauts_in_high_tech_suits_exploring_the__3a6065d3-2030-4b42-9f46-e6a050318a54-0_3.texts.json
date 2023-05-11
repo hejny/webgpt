@@ -1,0 +1,8 @@
+{
+    "title": "\"Desert Expedition HQ\"",
+    "content": "# Desert Expedition HQ\n\nWelcome to Desert Expedition HQ, your go-to resource for all things related to exploring the vast and treacherous deserts of the galaxy. Our team of experienced AInauts is dedicated to providing you with the latest information, tips, and tools to help you navigate these harsh environments safely and efficiently.\n\nWhether you're a seasoned explorer or just starting out, our website has everything you need to plan your next desert expedition. From high-tech suits and equipment to advanced navigation systems and survival techniques, we've got you covered.\n\nJoin our community of like-minded adventurers and share your own experiences and insights with others. Together, we can unlock the secrets of these mysterious and awe-inspiring landscapes and push the boundaries of what's possible in the world of exploration.\n\nSo what are you waiting for? Put on your suit, grab your gear, and join us on the journey of a lifetime. The desert is calling, and we're ready to answer.",
+    "prompts": {
+        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
+        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
+    }
+}
