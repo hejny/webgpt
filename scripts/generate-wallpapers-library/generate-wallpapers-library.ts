@@ -216,7 +216,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
     await writeFile(indexFilePath, indexFileContent, 'utf8');
 
     if (isCommited) {
-        await commit(dirname(wallpapersDir), `🖼️  Generate wallpapers library`);
+        await commit(dirname(wallpapersDir), `🖼️ Generate wallpapers library`);
     }
 
     console.info(`[ Done 🖼️  Generating wallpapers library ]`);

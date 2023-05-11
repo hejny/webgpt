@@ -151,7 +151,13 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
             Write me some content for this website in markdown format.
             The content should be a short description of the website which is using this wallpaper.
 
-            Do not describe the wallpaper itself, but rather the website which is using it.
+            - Do not describe the wallpaper itself, but rather the website which is using it.
+            - Do not repeat the title of the website.
+            - You can include UTF-8 emojis
+            - You can use formatting like **bold** or _italic_
+            - Do not include links
+            - Do not include images
+
         
         `);
         texts.content = await askGpt(content, true);
@@ -162,7 +168,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
     }
 
     if (isCommited) {
-        await commit(dirname(wallpapersDir), `🧾  Generate wallpapers texts`);
+        await commit(dirname(wallpapersDir), `🧾 Generate wallpapers texts`);
     }
 
     console.info(`[ Done 🧾  Generating wallpapers texts ]`);
