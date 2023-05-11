@@ -90,6 +90,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
     const stats = {
         total: wallpapersPaths.length,
         done: -1,
+        lastTime: moment(),
         startTime: moment(),
     };
     for (const wallpaperPath of wallpapersPaths) {
@@ -99,11 +100,17 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
         const statsPercentString = `${Math.round((stats.done / wallpapersPaths.length) * 100)}%`;
-        const elapsedTime = moment().diff(stats.startTime);
-        const estimatedTime = (elapsedTime / stats.done) * (stats.total - stats.done);
+        const now = moment();
+        const durationOfOne = now.diff(stats.lastTime);
+        stats.lastTime = now;
+        const statsSpeedString = `${Math.round(((60 * 1000) / durationOfOne) * 10) / 10} img/m`;
+        // const elapsedTime = moment().diff(stats.startTime);
+        // const estimatedTime = (elapsedTime / stats.done) * (stats.total - stats.done);
+        const estimatedTime = durationOfOne * (stats.total - stats.done);
         const statsTimeEstimateString =
             estimatedTime === Infinity ? '' : `${moment.duration(estimatedTime).humanize()} left`;
-        const statsString = `${statsPercentString} ${statsTotalString} ${statsTimeEstimateString}`;
+
+        const statsString = `${statsPercentString} ${statsTotalString} ${statsSpeedString} ${statsTimeEstimateString}`;
 
         console.info(chalk.bgGray(statsString) + ' ' + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
