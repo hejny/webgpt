@@ -112,6 +112,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         const componentName = capitalize(normalizeTo_camelCase(nameWithoutBoilerplate)) + `_${componentId}_` + type;
 
+        const wallpaperUrl = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
         const wallpaperImportPath = (
             './' + relative(dirname(wallpaperFilePath), wallpaperPath).split('\\').join('/')
         ).replace(/^\.\/\.\.\//, '../');
@@ -134,8 +135,10 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
              *    Then the file will not be re-generated automatically
              */
 
-            import source from '${metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]}';
+            // import source from '${wallpaperUrl}';
             import Image from 'next/image';
+            import { Color } from '../../../../src/utils/color/Color';
+            import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
             import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
             // import { Color } from '../../../../src/utils/color/Color';
             // import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
@@ -158,9 +161,10 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
                 return (
                     <Image
                         alt="${metadata.prompt}"
-                        src={source}
+                        src="${wallpaperUrl}"
                         draggable="false"
                         placeholder="blur"
+                        blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
                         height={Math.round(width/1920*1080)}
                         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                         {...{ width, quality }}
