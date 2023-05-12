@@ -134,16 +134,14 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
              *    Then the file will not be re-generated automatically
              */
 
-            // TODO: !!! Newly sort imports
-
+            import source from '${metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]}';
             import Image from 'next/image';
             import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
             // import { Color } from '../../../../src/utils/color/Color';
             // import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-            import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+            import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
             import colorStats from '${colorStatsImportPath}'
             import metadata from '${metadataImportPath}';
-            import source from '${metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]}';
             import texts from '${textsImportPath}';
 
 
