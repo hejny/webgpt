@@ -7,9 +7,9 @@ import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComp
  *
  * @returns {IWallpaperComponent} A wallpaper component.
  */
-export function useWallpaper(): IWallpaperComponent | null {
+export function useWallpaper(): IWallpaperComponent | null /* <- TODO: !!! [🕰] do not allow null */ {
     const router = useRouter();
-    const { wallpaper: wallpaperId } = router.query;
+    const { wallpaper: wallpaperId } = router.query; /* <- TODO: !!! [🕰]  Use here path AND do not allow null */
 
     if (!router.isReady) {
         return null;

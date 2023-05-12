@@ -3,7 +3,7 @@ import { Vector } from 'xyzt';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
-import { WelcomeSection } from '../sections/10-Welcome/Welcome';
+import { WelcomeSection } from '../sections/10-Welcome/ShowcaseWelcome';
 import { ReferencesSection } from '../sections/40-References/References';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
@@ -24,7 +24,7 @@ export default function ReferencesPage() {
                     <TiledBackground />
                 </div>
                 <main>
-                    <WelcomeSection variant="SIDEPAGE" />
+                    {/* <WelcomeSection variant="SIDEPAGE" /> */}
                     <ReferencesSection variant="FULL" />
                 </main>
                 <footer>

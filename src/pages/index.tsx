@@ -38,7 +38,7 @@ export default function GalleryPage() {
                     <TiledBackground />
                 </div>
                 <main>
-                    {/*<WelcomeSection variant="SIDEPAGE" />*/}
+                    {/* !!! <HomepageWelcomeSection variant="SIDEPAGE" />*/}
                     <Section>
                         {/* <- TODO: !! Make propper secrion from this */}
                         {/* TODO: !! Translate */}
@@ -56,7 +56,7 @@ export default function GalleryPage() {
                                     <Link
                                         href={`/showcase?wallpaper=${Wallpaper.metadata.id}`}
                                         key={i /* <- TODO: Better */}
-                                        target="_blank"
+                                        // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
                                     >
                                         <Item>
                                             <Item.Image>

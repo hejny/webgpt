@@ -5,7 +5,7 @@ import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { AppHead } from '../sections/00-AppHead/AppHead';
-import { WelcomeSection } from '../sections/10-Welcome/Welcome';
+import { ShowcaseWelcomeSection } from '../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { useWallpaper } from '../utils/hooks/useWallpaper';
@@ -17,16 +17,18 @@ export default function ShowcasePage({ lang }: any) {
     return (
         <>
             <AppHead />
-            {Wallpaper && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
+            {Wallpaper /* <- TODO: !!! [🕰] do not allow null */ && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>{Wallpaper && <HeaderWallpaper {...{ Wallpaper }} />}</header>
+                <header>
+                    {Wallpaper /* <- TODO: !!! [🕰] do not allow null */ && <HeaderWallpaper {...{ Wallpaper }} />}
+                </header>
                 <div className={styles.background}>
                     <TiledBackground />
                 </div>
                 <main>
-                    <WelcomeSection variant="HOMEPAGE" />
+                    <ShowcaseWelcomeSection Wallpaper={Wallpaper!} />
                     {/*<ReferencesSection variant="SHORT" />*/}
                 </main>
                 <footer>
@@ -46,6 +48,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
+ * TODO: !!! Showcase should contain link back to mainpage <Link className="button" href="/">{t('Welcome.back-home')}</Link>
  * TODO: !!! Special text for each wallpaper
  * TODO: !!! Special effect for each wallpaper
  * TODO: !!! When sharing link to showcase, preview to socials should work
