@@ -30,6 +30,8 @@
     outline: 1px dotted green;
     /**/
 
+    display: none /* <- TODO: Do better and then unblock */;
+
     grid-area: 🟦;
     color: rgba(0, 0, 0, 0%);
 
