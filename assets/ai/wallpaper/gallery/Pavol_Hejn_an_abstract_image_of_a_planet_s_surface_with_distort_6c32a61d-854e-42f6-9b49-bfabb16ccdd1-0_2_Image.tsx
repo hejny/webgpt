@@ -32,7 +32,7 @@ export function AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49B
             src="https://cdn.midjourney.com/6c32a61d-854e-42f6-9b49-bfabb16ccdd1/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

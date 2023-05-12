@@ -32,7 +32,7 @@ export function ASurrealImageOfAPersonWalkingOnATightropeF9d743a4dFe934bedB9cbDb
             src="https://cdn.midjourney.com/9d743a4d-fe93-4bed-b9cb-db37f0a345dd/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

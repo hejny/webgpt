@@ -32,7 +32,7 @@ export function AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c
             src="https://cdn.midjourney.com/c69291e5-d766-4ed3-9072-179c779dd1d6/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A
             src="https://cdn.midjourney.com/191435c1-0bbe-46b6-8cf6-a9fa46dee427/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

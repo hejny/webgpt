@@ -32,7 +32,7 @@ export function AGroupOfAinautsInHighTechSuitsExploringThe3a6065d320304b429f46E6
             src="https://cdn.midjourney.com/3a6065d3-2030-4b42-9f46-e6a050318a54/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

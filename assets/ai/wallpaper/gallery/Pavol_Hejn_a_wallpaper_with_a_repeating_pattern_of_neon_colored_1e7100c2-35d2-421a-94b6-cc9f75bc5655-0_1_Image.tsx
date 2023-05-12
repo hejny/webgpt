@@ -32,7 +32,7 @@ export function AWallpaperWithARepeatingPatternOfNeonColorede7100c235d2421a94b6C
             src="https://cdn.midjourney.com/1e7100c2-35d2-421a-94b6-cc9f75bc5655/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

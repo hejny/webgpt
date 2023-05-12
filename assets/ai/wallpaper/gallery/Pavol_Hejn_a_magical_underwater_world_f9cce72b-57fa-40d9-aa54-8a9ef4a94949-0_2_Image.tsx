@@ -30,7 +30,7 @@ export function AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_2_Image
             src="https://cdn.midjourney.com/f9cce72b-57fa-40d9-aa54-8a9ef4a94949/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

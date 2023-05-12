@@ -32,7 +32,7 @@ export function AStylizedDepictionOfASpacecraftInOrbitAround4c24f1402c4440bd9a02
             src="https://cdn.midjourney.com/4c24f140-2c44-40bd-9a02-611b34f43b02/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

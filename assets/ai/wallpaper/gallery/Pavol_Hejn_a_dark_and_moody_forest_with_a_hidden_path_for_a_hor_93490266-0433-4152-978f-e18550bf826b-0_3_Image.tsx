@@ -32,7 +32,7 @@ export function ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18
             src="https://cdn.midjourney.com/93490266-0433-4152-978f-e18550bf826b/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

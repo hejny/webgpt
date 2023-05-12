@@ -32,7 +32,7 @@ export function AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800
             src="https://cdn.midjourney.com/83d94335-7745-4612-8800-f9bdd08d72b5/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

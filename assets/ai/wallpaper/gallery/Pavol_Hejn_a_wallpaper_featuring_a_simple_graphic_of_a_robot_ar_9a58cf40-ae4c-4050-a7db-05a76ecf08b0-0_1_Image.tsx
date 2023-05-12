@@ -32,7 +32,7 @@ export function AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db0
             src="https://cdn.midjourney.com/9a58cf40-ae4c-4050-a7db-05a76ecf08b0/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

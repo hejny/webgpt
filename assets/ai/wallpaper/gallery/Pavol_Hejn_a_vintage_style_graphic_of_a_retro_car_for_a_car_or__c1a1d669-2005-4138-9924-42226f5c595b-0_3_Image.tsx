@@ -32,7 +32,7 @@ export function AVintageStyleGraphicOfARetroCarForACarOrC1a1d6692005413899244222
             src="https://cdn.midjourney.com/c1a1d669-2005-4138-9924-42226f5c595b/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AinautsExploringAVastNetworkOfTunnelsBeneath3dd2e38A5294e63B9d61
             src="https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

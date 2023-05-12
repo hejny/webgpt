@@ -32,7 +32,7 @@ export function APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE
             src="https://cdn.midjourney.com/85014640-2d2f-4978-bd3e-e678a1f60ce6/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

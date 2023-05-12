@@ -30,7 +30,7 @@ export function ABeautifulSunsetOverTheOceanA23d64f62b554149B8f408afd831c2e30_2_
             src="https://cdn.midjourney.com/a23d64f6-2b55-4149-b8f4-08afd831c2e3/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -30,7 +30,7 @@ export function ACloseUpOfABirdInFlight0f42051f65e946e689dfFe5276eb146a0_2_Image
             src="https://cdn.midjourney.com/0f42051f-65e9-46e6-89df-fe5276eb146a/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

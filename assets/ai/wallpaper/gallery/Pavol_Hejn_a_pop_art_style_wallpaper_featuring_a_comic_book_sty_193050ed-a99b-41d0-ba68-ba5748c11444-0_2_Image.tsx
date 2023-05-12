@@ -32,7 +32,7 @@ export function APopArtStyleWallpaperFeaturingAComicBookSty193050edA99b41d0Ba68B
             src="https://cdn.midjourney.com/193050ed-a99b-41d0-ba68-ba5748c11444/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

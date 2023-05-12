@@ -32,7 +32,7 @@ export function AnAbstractIllustrationOfAVirtualRealityEnviro49700d664db04264Bad
             src="https://cdn.midjourney.com/49700d66-4db0-4264-bade-036f4d9849d9/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

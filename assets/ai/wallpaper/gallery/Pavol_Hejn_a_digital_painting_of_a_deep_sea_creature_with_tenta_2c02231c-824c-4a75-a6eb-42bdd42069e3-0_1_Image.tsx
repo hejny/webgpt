@@ -32,7 +32,7 @@ export function ADigitalPaintingOfADeepSeaCreatureWithTenta2c02231c824c4a75A6eb4
             src="https://cdn.midjourney.com/2c02231c-824c-4a75-a6eb-42bdd42069e3/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

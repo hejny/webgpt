@@ -32,7 +32,7 @@ export function AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7e
             src="https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

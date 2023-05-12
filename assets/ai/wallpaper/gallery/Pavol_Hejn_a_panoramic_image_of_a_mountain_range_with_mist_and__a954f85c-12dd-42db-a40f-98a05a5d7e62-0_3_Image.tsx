@@ -32,7 +32,7 @@ export function APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98
             src="https://cdn.midjourney.com/a954f85c-12dd-42db-a40f-98a05a5d7e62/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

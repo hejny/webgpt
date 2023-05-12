@@ -32,7 +32,7 @@ export function ARepeatingPatternOfAbstractShapesAndColorsIn2884858e359141a49618
             src="https://cdn.midjourney.com/2884858e-3591-41a4-9618-0f9621aa6801/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

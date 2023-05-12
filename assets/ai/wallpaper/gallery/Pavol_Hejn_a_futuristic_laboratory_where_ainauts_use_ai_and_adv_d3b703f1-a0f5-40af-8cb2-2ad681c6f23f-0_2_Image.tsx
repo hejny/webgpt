@@ -32,7 +32,7 @@ export function AFuturisticLaboratoryWhereAinautsUseAiAndAdvD3b703f1A0f540af8cb2
             src="https://cdn.midjourney.com/d3b703f1-a0f5-40af-8cb2-2ad681c6f23f/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87c
             src="https://cdn.midjourney.com/dac49f09-5d46-473d-b87c-a5b1bec692fe/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

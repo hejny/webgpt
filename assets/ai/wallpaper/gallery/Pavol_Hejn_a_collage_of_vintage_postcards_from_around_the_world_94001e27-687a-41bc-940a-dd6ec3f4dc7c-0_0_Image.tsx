@@ -32,7 +32,7 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld94001e27687a41bc940a
             src="https://cdn.midjourney.com/94001e27-687a-41bc-940a-dd6ec3f4dc7c/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

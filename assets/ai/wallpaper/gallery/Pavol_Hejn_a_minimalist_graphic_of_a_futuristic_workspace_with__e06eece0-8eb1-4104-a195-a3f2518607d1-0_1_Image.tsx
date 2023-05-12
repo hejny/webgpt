@@ -32,7 +32,7 @@ export function AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195
             src="https://cdn.midjourney.com/e06eece0-8eb1-4104-a195-a3f2518607d1/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

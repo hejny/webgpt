@@ -32,7 +32,7 @@ export function AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790
             src="https://cdn.midjourney.com/49c9efff-cce8-4fbe-92f7-90e931b5530c/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

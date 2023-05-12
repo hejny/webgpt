@@ -32,7 +32,7 @@ export function AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2
             src="https://cdn.midjourney.com/650a0f95-7462-4734-b12b-2250b6978b3e/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

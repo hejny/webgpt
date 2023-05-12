@@ -32,7 +32,7 @@ export function AWallpaperWithASimpleGraphicOfAVirtualAssis65d752759d154942Bb069
             src="https://cdn.midjourney.com/65d75275-9d15-4942-bb06-921f5fd913be/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

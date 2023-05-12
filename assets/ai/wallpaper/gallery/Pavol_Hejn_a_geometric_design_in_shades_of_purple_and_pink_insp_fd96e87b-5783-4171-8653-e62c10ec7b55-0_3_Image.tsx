@@ -32,7 +32,7 @@ export function AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E
             src="https://cdn.midjourney.com/fd96e87b-5783-4171-8653-e62c10ec7b55/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

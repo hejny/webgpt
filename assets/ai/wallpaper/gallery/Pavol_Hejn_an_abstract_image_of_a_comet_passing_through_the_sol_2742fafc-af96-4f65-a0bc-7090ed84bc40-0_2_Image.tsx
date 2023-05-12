@@ -32,7 +32,7 @@ export function AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc70
             src="https://cdn.midjourney.com/2742fafc-af96-4f65-a0bc-7090ed84bc40/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

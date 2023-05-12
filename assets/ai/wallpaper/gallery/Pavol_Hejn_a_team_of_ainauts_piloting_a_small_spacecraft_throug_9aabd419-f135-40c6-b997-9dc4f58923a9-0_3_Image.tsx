@@ -32,7 +32,7 @@ export function ATeamOfAinautsPilotingASmallSpacecraftThroug9aabd419F13540c6B997
             src="https://cdn.midjourney.com/9aabd419-f135-40c6-b997-9dc4f58923a9/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

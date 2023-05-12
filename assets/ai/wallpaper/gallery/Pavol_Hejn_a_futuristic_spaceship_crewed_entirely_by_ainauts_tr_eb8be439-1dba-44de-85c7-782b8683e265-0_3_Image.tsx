@@ -32,7 +32,7 @@ export function AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c
             src="https://cdn.midjourney.com/eb8be439-1dba-44de-85c7-782b8683e265/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

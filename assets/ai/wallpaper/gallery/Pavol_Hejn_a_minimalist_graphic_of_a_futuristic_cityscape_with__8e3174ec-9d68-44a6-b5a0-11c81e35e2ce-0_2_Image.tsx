@@ -32,7 +32,7 @@ export function AMinimalistGraphicOfAFuturisticCityscapeWith8e3174ec9d6844a6B5a0
             src="https://cdn.midjourney.com/8e3174ec-9d68-44a6-b5a0-11c81e35e2ce/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

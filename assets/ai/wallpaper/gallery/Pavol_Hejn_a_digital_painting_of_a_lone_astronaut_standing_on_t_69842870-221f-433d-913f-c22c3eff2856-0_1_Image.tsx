@@ -32,7 +32,7 @@ export function ADigitalPaintingOfALoneAstronautStandingOnT69842870221f433d913fC
             src="https://cdn.midjourney.com/69842870-221f-433d-913f-c22c3eff2856/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

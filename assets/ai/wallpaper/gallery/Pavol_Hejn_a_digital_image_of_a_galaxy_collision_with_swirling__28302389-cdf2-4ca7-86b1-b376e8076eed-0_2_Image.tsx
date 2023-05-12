@@ -32,7 +32,7 @@ export function ADigitalImageOfAGalaxyCollisionWithSwirling8302389Cdf24ca786b1B3
             src="https://cdn.midjourney.com/28302389-cdf2-4ca7-86b1-b376e8076eed/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

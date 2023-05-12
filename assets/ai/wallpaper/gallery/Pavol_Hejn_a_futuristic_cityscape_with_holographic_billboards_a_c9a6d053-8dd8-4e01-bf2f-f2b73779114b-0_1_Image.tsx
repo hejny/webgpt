@@ -32,7 +32,7 @@ export function AFuturisticCityscapeWithHolographicBillboardsAC9a6d0538dd84e01Bf
             src="https://cdn.midjourney.com/c9a6d053-8dd8-4e01-bf2f-f2b73779114b/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95f
             src="https://cdn.midjourney.com/d1f72b89-0604-443b-95fe-822318ac0437/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

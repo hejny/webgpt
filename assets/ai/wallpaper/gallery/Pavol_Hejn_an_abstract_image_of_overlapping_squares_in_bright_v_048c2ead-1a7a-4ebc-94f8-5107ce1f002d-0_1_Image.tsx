@@ -32,7 +32,7 @@ export function AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f8
             src="https://cdn.midjourney.com/048c2ead-1a7a-4ebc-94f8-5107ce1f002d/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

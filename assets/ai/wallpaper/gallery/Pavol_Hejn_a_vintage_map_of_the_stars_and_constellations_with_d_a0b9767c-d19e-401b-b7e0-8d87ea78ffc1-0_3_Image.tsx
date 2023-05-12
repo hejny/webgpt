@@ -32,7 +32,7 @@ export function AVintageMapOfTheStarsAndConstellationsWithDA0b9767cD19e401bB7e08
             src="https://cdn.midjourney.com/a0b9767c-d19e-401b-b7e0-8d87ea78ffc1/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

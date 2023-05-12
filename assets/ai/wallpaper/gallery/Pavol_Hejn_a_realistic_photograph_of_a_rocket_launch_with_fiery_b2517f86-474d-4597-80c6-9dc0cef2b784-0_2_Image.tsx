@@ -32,7 +32,7 @@ export function ARealisticPhotographOfARocketLaunchWithFieryB2517f86474d459780c6
             src="https://cdn.midjourney.com/b2517f86-474d-4597-80c6-9dc0cef2b784/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

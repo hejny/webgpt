@@ -32,7 +32,7 @@ export function AinautsWorkingInAMassiveLaboratoryFilledWith2971d26135d24d65A1fb
             src="https://cdn.midjourney.com/2971d261-35d2-4d65-a1fb-ab5fb70328c7/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

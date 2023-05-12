@@ -32,7 +32,7 @@ export function APixelArtInspiredWallpaperFeaturingARetroStyCc34eab47dfe4d2b83cf
             src="https://cdn.midjourney.com/cc34eab4-7dfe-4d2b-83cf-57b588785c31/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

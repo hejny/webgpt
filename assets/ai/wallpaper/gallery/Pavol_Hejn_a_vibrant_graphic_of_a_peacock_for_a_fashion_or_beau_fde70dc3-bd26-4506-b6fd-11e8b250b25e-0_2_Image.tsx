@@ -32,7 +32,7 @@ export function AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11
             src="https://cdn.midjourney.com/fde70dc3-bd26-4506-b6fd-11e8b250b25e/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

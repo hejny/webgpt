@@ -30,7 +30,7 @@ export function ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_0_Image
             src="https://cdn.midjourney.com/8390aaa9-34c4-4170-af28-4cb4b21ea18f/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

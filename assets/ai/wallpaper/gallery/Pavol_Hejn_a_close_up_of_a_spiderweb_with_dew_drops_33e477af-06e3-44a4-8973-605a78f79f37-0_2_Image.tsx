@@ -32,7 +32,7 @@ export function ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f37
             src="https://cdn.midjourney.com/33e477af-06e3-44a4-8973-605a78f79f37/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

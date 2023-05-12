@@ -32,7 +32,7 @@ export function ANeonCityscapeWithFuturisticSkyscrapersForATD44782825bdc43b68164
             src="https://cdn.midjourney.com/d4478282-5bdc-43b6-8164-585a94e21a16/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AnImageOfARocketTakingOffFromEarthWithAFiDb049a6b9dd94215B04030e
             src="https://cdn.midjourney.com/db049a6b-9dd9-4215-b040-30ef0f3740af/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

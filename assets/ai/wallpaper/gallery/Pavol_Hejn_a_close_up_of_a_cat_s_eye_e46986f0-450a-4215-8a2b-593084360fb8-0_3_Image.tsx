@@ -30,7 +30,7 @@ export function ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_3_Image(prop
             src="https://cdn.midjourney.com/e46986f0-450a-4215-8a2b-593084360fb8/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function ADreamyImageOfAForestAtDawnWithAMistyAtmo73a75f2f98224666Afc5A13
             src="https://cdn.midjourney.com/73a75f2f-9822-4666-afc5-a1332b3222b6/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

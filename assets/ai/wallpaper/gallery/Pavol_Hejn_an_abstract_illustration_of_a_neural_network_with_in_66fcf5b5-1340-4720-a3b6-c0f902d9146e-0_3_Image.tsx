@@ -32,7 +32,7 @@ export function AnAbstractIllustrationOfANeuralNetworkWithIn66fcf5b513404720A3b6
             src="https://cdn.midjourney.com/66fcf5b5-1340-4720-a3b6-c0f902d9146e/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

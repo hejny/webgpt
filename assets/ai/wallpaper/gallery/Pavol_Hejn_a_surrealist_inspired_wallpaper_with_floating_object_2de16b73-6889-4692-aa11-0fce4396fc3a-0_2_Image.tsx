@@ -32,7 +32,7 @@ export function ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa1
             src="https://cdn.midjourney.com/2de16b73-6889-4692-aa11-0fce4396fc3a/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

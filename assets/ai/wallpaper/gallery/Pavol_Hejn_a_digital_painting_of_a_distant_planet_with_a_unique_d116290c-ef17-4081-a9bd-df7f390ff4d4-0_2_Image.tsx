@@ -32,7 +32,7 @@ export function ADigitalPaintingOfADistantPlanetWithAUniqueD116290cEf174081A9bdD
             src="https://cdn.midjourney.com/d116290c-ef17-4081-a9bd-df7f390ff4d4/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

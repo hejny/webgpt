@@ -32,7 +32,7 @@ export function APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1
             src="https://cdn.midjourney.com/5a0e1d68-48f6-429a-8ede-1ec13d97221c/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

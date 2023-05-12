@@ -32,7 +32,7 @@ export function AnAbstractImageOfASunsetWithBoldWarmColorsEdbfaac03a344e16B3a484
             src="https://cdn.midjourney.com/edbfaac0-3a34-4e16-b3a4-84e07238fdb1/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AWallpaperFeaturingACollageOfFuturisticTechno31f096dfB6524e89B69
             src="https://cdn.midjourney.com/31f096df-b652-4e89-b69b-16203b15e2a6/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

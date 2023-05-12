@@ -32,7 +32,7 @@ export function AMinimalistGraphicOfACitySkylineAtDuskForA3317450F903452eA4b64cd
             src="https://cdn.midjourney.com/13317450-f903-452e-a4b6-4cd18db68227/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AWallpaperWithARepeatingPatternOfAiRelatedBAd365f339815487586a62
             src="https://cdn.midjourney.com/ad365f33-9815-4875-86a6-207d09015ecb/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

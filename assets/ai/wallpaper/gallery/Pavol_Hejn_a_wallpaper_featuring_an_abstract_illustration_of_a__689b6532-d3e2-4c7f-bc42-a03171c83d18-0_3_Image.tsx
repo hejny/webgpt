@@ -32,7 +32,7 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfA689b6532D3e24c7fBc42
             src="https://cdn.midjourney.com/689b6532-d3e2-4c7f-bc42-a03171c83d18/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

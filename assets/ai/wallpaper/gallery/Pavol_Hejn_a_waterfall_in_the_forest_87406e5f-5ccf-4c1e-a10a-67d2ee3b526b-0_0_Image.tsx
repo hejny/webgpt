@@ -30,7 +30,7 @@ export function AWaterfallInTheForest87406e5f5ccf4c1eA10a67d2ee3b526b0_0_Image(p
             src="https://cdn.midjourney.com/87406e5f-5ccf-4c1e-a10a-67d2ee3b526b/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F
             src="https://cdn.midjourney.com/f488ecd7-c8d9-40b8-a9c4-f8a6ee583c57/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

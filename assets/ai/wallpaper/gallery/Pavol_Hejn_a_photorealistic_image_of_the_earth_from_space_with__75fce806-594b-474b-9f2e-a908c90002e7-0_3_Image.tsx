@@ -32,7 +32,7 @@ export function APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA
             src="https://cdn.midjourney.com/75fce806-594b-474b-9f2e-a908c90002e7/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

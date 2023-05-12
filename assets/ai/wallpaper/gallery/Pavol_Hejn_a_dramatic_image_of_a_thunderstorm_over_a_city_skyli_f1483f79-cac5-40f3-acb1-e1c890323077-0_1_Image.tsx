@@ -32,7 +32,7 @@ export function ADramaticImageOfAThunderstormOverACitySkyliF1483f79Cac540f3Acb1E
             src="https://cdn.midjourney.com/f1483f79-cac5-40f3-acb1-e1c890323077/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

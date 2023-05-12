@@ -32,7 +32,7 @@ export function AColorfulGraphicOfABicycleForACyclingOrFit9ee902b40222417bBf9eC2
             src="https://cdn.midjourney.com/9ee902b4-0222-417b-bf9e-c2f318e9cbba/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

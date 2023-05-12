@@ -32,7 +32,7 @@ export function ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd
             src="https://cdn.midjourney.com/6d063f5c-1618-43fe-b3ca-3cd61ff4322f/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

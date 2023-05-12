@@ -32,7 +32,7 @@ export function APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b6
             src="https://cdn.midjourney.com/a1b93f91-6533-4234-994b-671324fdbd6b/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e7
             src="https://cdn.midjourney.com/42a4535f-1f50-467e-b63e-74a50c027181/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

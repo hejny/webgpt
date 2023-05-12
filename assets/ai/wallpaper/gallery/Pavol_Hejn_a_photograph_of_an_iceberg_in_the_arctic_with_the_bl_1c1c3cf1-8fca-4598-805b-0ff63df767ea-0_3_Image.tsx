@@ -32,7 +32,7 @@ export function APhotographOfAnIcebergInTheArcticWithTheBl1c1c3cf18fca4598805b0f
             src="https://cdn.midjourney.com/1c1c3cf1-8fca-4598-805b-0ff63df767ea/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

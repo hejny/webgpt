@@ -32,7 +32,7 @@ export function ARetroFuturisticWallpaperFeaturingAVintageIllC755111613064d89B90
             src="https://cdn.midjourney.com/c7551116-1306-4d89-b90c-465a2d6bc13d/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

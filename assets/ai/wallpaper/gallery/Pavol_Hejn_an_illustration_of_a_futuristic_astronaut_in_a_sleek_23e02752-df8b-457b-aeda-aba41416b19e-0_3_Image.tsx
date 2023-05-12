@@ -32,7 +32,7 @@ export function AnIllustrationOfAFuturisticAstronautInASleek23e02752Df8b457bAeda
             src="https://cdn.midjourney.com/23e02752-df8b-457b-aeda-aba41416b19e/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

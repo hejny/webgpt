@@ -32,7 +32,7 @@ export function ASereneMountainLandscapeWithAClearBlueLakeF3cbf787322084a52902c8
             src="https://cdn.midjourney.com/3cbf7873-2208-4a52-902c-807ec6d2c22f/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

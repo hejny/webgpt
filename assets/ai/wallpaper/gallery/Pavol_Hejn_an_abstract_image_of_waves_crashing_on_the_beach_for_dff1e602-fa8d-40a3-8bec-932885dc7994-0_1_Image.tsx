@@ -32,7 +32,7 @@ export function AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec9
             src="https://cdn.midjourney.com/dff1e602-fa8d-40a3-8bec-932885dc7994/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

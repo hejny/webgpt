@@ -30,7 +30,7 @@ export function ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_3_I
             src="https://cdn.midjourney.com/54786a0e-22dd-49cc-9e74-8736592d3bc8/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

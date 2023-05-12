@@ -32,7 +32,7 @@ export function AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBaf
             src="https://cdn.midjourney.com/155be187-5d04-4e1c-bafe-0131044a59db/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

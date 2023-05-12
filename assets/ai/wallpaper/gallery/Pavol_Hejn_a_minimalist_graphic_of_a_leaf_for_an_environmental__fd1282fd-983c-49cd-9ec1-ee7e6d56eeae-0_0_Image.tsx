@@ -32,7 +32,7 @@ export function AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1E
             src="https://cdn.midjourney.com/fd1282fd-983c-49cd-9ec1-ee7e6d56eeae/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

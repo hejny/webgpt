@@ -32,7 +32,7 @@ export function ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc9
             src="https://cdn.midjourney.com/3bdbef82-2e14-4555-8cc9-71adbdb25974/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

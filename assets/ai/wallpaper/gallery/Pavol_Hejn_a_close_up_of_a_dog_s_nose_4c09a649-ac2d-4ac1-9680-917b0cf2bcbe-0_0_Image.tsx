@@ -30,7 +30,7 @@ export function ACloseUpOfADogSNose4c09a649Ac2d4ac19680917b0cf2bcbe0_0_Image(pro
             src="https://cdn.midjourney.com/4c09a649-ac2d-4ac1-9680-917b0cf2bcbe/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

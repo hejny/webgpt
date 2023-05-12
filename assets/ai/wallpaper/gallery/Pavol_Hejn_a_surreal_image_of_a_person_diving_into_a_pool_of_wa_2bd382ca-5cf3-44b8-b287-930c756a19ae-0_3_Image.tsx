@@ -32,7 +32,7 @@ export function ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930
             src="https://cdn.midjourney.com/2bd382ca-5cf3-44b8-b287-930c756a19ae/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

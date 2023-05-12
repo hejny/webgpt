@@ -32,7 +32,7 @@ export function AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de699754
             src="https://cdn.midjourney.com/1156c696-5ef2-4de6-9975-40d4f96ceb95/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

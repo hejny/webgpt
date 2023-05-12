@@ -30,7 +30,7 @@ export function ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image
             src="https://cdn.midjourney.com/55d48163-0987-48b0-b045-37f2b79f1923/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

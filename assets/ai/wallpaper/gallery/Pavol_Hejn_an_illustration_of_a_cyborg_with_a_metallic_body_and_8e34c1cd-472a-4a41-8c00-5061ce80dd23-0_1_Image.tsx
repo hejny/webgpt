@@ -32,7 +32,7 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005
             src="https://cdn.midjourney.com/8e34c1cd-472a-4a41-8c00-5061ce80dd23/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

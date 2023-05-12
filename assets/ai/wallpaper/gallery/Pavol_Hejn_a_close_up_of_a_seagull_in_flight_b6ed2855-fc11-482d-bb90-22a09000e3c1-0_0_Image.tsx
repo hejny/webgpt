@@ -30,7 +30,7 @@ export function ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_0_Im
             src="https://cdn.midjourney.com/b6ed2855-fc11-482d-bb90-22a09000e3c1/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

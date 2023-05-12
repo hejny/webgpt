@@ -30,7 +30,7 @@ export function SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_3_Image
             src="https://cdn.midjourney.com/520efdfb-3aee-4c0a-b2df-fa3995231f5c/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

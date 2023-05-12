@@ -32,7 +32,7 @@ export function AWallpaperFeaturingARepeatingPatternOfSleekA6146ee3414ff47af971e
             src="https://cdn.midjourney.com/6146ee34-14ff-47af-971e-e0b0d94f6f45/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

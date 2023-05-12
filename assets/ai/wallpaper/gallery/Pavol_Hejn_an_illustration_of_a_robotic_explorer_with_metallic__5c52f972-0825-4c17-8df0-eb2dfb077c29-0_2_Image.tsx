@@ -32,7 +32,7 @@ export function AnIllustrationOfARoboticExplorerWithMetallic5c52f97208254c178df0
             src="https://cdn.midjourney.com/5c52f972-0825-4c17-8df0-eb2dfb077c29/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

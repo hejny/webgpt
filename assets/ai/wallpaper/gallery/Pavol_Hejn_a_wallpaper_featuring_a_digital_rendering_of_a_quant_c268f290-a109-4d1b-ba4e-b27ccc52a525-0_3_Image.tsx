@@ -32,7 +32,7 @@ export function AWallpaperFeaturingADigitalRenderingOfAQuantC268f290A1094d1bBa4e
             src="https://cdn.midjourney.com/c268f290-a109-4d1b-ba4e-b27ccc52a525/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

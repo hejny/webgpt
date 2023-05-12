@@ -32,7 +32,7 @@ export function AGroupOfAinautsStandingOnTheSurfaceOfADist7142705d630045eeBaae5f
             src="https://cdn.midjourney.com/7142705d-6300-45ee-baae-5f44c368c823/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

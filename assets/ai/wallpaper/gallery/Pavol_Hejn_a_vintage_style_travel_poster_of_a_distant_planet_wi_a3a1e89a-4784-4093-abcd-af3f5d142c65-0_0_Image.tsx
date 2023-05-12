@@ -32,7 +32,7 @@ export function AVintageStyleTravelPosterOfADistantPlanetWiA3a1e89a47844093AbcdA
             src="https://cdn.midjourney.com/a3a1e89a-4784-4093-abcd-af3f5d142c65/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

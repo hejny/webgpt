@@ -32,7 +32,7 @@ export function ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d35
             src="https://cdn.midjourney.com/d73bd8aa-f693-43d1-8d35-8c77c7154777/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

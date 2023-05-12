@@ -32,7 +32,7 @@ export function ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fe
             src="https://cdn.midjourney.com/3d05f9b8-c57e-41fe-8011-fed59d7f1ac2/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

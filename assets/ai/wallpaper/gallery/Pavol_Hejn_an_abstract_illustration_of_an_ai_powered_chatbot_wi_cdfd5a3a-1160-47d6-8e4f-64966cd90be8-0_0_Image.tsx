@@ -32,7 +32,7 @@ export function AnAbstractIllustrationOfAnAiPoweredChatbotWiCdfd5a3a116047d68e4f
             src="https://cdn.midjourney.com/cdfd5a3a-1160-47d6-8e4f-64966cd90be8/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

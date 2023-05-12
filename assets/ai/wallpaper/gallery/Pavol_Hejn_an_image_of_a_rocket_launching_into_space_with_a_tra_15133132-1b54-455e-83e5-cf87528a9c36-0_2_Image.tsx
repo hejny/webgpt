@@ -32,7 +32,7 @@ export function AnImageOfARocketLaunchingIntoSpaceWithATra151331321b54455e83e5Cf
             src="https://cdn.midjourney.com/15133132-1b54-455e-83e5-cf87528a9c36/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

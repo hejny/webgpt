@@ -32,7 +32,7 @@ export function ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_
             src="https://cdn.midjourney.com/ce763b89-9739-4a55-8b93-59d8619178a0/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

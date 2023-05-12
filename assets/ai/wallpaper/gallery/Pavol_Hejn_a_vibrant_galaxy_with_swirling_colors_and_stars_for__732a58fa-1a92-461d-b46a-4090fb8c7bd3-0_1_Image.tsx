@@ -32,7 +32,7 @@ export function AVibrantGalaxyWithSwirlingColorsAndStarsFor732a58fa1a92461dB46a4
             src="https://cdn.midjourney.com/732a58fa-1a92-461d-b46a-4090fb8c7bd3/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

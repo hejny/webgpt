@@ -32,7 +32,7 @@ export function ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c9
             src="https://cdn.midjourney.com/4f914eed-6fa4-483c-950c-986cdc91241f/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

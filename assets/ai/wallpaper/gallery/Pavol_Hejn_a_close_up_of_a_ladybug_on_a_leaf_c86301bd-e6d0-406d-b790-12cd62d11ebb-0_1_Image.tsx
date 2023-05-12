@@ -30,7 +30,7 @@ export function ACloseUpOfALadybugOnALeafC86301bdE6d0406dB79012cd62d11ebb0_1_Ima
             src="https://cdn.midjourney.com/c86301bd-e6d0-406d-b790-12cd62d11ebb/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

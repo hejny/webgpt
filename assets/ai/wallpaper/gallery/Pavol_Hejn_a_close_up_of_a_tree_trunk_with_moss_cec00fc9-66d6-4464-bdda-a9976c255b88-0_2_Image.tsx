@@ -30,7 +30,7 @@ export function ACloseUpOfATreeTrunkWithMossCec00fc966d64464BddaA9976c255b880_2_
             src="https://cdn.midjourney.com/cec00fc9-66d6-4464-bdda-a9976c255b88/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C
             src="https://cdn.midjourney.com/fd6eb902-59b7-476a-a867-c7ea98e0226e/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

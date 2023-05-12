@@ -32,7 +32,7 @@ export function ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a345
             src="https://cdn.midjourney.com/42ae2795-b3eb-4159-a78a-34512c19c0dc/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

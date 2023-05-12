@@ -32,7 +32,7 @@ export function ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91
             src="https://cdn.midjourney.com/7d9d4cf0-138e-44fd-bcd4-7c91ee111a52/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

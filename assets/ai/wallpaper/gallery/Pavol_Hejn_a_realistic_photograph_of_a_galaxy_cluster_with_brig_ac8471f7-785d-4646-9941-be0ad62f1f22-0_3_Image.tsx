@@ -32,7 +32,7 @@ export function ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941
             src="https://cdn.midjourney.com/ac8471f7-785d-4646-9941-be0ad62f1f22/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

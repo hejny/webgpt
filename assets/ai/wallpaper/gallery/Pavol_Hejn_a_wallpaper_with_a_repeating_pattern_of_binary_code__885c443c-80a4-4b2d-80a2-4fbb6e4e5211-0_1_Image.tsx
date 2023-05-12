@@ -32,7 +32,7 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24
             src="https://cdn.midjourney.com/885c443c-80a4-4b2d-80a2-4fbb6e4e5211/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

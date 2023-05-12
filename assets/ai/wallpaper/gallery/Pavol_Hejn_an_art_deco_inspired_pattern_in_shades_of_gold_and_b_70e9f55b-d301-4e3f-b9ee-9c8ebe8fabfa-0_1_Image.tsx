@@ -32,7 +32,7 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c
             src="https://cdn.midjourney.com/70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

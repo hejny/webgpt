@@ -30,7 +30,7 @@ export function AFuturisticMetropolisAtNight8c380df5D09d4707Bb87D721565a30f30_2_
             src="https://cdn.midjourney.com/8c380df5-d09d-4707-bb87-d721565a30f3/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

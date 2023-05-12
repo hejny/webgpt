@@ -32,7 +32,7 @@ export function AWhimsicalSceneOfAHotAirBalloonFlyingOverA19357d9896d4226AdaeFc4
             src="https://cdn.midjourney.com/219357d9-896d-4226-adae-fc48233fb771/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

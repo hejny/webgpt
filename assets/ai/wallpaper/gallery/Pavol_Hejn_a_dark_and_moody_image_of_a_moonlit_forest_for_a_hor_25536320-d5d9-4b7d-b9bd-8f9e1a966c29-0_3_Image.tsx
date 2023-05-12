@@ -32,7 +32,7 @@ export function ADarkAndMoodyImageOfAMoonlitForestForAHor25536320D5d94b7dB9bd8f9
             src="https://cdn.midjourney.com/25536320-d5d9-4b7d-b9bd-8f9e1a966c29/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

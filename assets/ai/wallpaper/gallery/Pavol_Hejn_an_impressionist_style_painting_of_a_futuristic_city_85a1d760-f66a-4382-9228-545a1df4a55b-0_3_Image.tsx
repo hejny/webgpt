@@ -32,7 +32,7 @@ export function AnImpressionistStylePaintingOfAFuturisticCity85a1d760F66a4382922
             src="https://cdn.midjourney.com/85a1d760-f66a-4382-9228-545a1df4a55b/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

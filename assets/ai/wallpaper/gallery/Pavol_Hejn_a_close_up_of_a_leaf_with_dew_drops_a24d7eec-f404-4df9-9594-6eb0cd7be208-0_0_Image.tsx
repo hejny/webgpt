@@ -30,7 +30,7 @@ export function ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_0_I
             src="https://cdn.midjourney.com/a24d7eec-f404-4df9-9594-6eb0cd7be208/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

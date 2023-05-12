@@ -32,7 +32,7 @@ export function AnAbstractWallpaperInspiredByTheShapesAndCol028d25e0968743a2Aeb7
             src="https://cdn.midjourney.com/028d25e0-9687-43a2-aeb7-17a3b30b0362/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

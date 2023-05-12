@@ -30,7 +30,7 @@ export function ACitySkylineAtNight99a0ea6a14ed44fb8c18C0879b0ed3120_0_Image(pro
             src="https://cdn.midjourney.com/99a0ea6a-14ed-44fb-8c18-c0879b0ed312/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

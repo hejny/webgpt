@@ -32,7 +32,7 @@ export function APhotographOfALavaFlowOnAVolcanicPlanetWit501ae47cE9874f3d9f1119
             src="https://cdn.midjourney.com/501ae47c-e987-4f3d-9f11-199be5534df8/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

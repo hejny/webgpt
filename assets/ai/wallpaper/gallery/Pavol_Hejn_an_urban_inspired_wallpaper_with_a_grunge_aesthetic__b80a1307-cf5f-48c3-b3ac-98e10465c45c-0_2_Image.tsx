@@ -32,7 +32,7 @@ export function AnUrbanInspiredWallpaperWithAGrungeAestheticB80a1307Cf5f48c3B3ac
             src="https://cdn.midjourney.com/b80a1307-cf5f-48c3-b3ac-98e10465c45c/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

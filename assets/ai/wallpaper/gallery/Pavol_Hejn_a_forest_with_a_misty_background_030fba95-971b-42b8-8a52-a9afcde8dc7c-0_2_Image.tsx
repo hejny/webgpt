@@ -30,7 +30,7 @@ export function AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_I
             src="https://cdn.midjourney.com/030fba95-971b-42b8-8a52-a9afcde8dc7c/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

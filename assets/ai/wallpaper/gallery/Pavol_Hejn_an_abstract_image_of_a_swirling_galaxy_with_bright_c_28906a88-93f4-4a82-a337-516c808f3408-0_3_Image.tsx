@@ -32,7 +32,7 @@ export function AnAbstractImageOfASwirlingGalaxyWithBrightC28906a8893f44a82A3375
             src="https://cdn.midjourney.com/28906a88-93f4-4a82-a337-516c808f3408/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

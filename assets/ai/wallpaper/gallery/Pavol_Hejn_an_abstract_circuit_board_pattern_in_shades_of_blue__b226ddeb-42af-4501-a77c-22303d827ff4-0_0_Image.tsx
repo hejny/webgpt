@@ -32,7 +32,7 @@ export function AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c2
             src="https://cdn.midjourney.com/b226ddeb-42af-4501-a77c-22303d827ff4/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

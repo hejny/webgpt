@@ -32,7 +32,7 @@ export function ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_3
             src="https://cdn.midjourney.com/7b154014-86f3-4776-b308-fbd4055fdedb/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

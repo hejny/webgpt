@@ -32,7 +32,7 @@ export function ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d8
             src="https://cdn.midjourney.com/fb29aa91-002e-4e94-8eba-5d829883c703/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AStylizedIllustrationOfACyberneticOrganismWit12decd4f8a8d4265A6b
             src="https://cdn.midjourney.com/12decd4f-8a8d-4265-a6b1-9494d1ae4ee1/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

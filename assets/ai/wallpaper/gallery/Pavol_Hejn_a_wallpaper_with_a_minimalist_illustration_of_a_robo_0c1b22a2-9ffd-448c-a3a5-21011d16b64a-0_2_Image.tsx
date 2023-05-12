@@ -32,7 +32,7 @@ export function AWallpaperWithAMinimalistIllustrationOfARobo0c1b22a29ffd448cA3a5
             src="https://cdn.midjourney.com/0c1b22a2-9ffd-448c-a3a5-21011d16b64a/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

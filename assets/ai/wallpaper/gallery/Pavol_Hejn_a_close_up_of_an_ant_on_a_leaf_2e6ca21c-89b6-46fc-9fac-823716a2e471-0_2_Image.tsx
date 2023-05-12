@@ -30,7 +30,7 @@ export function ACloseUpOfAnAntOnALeafe6ca21c89b646fc9fac823716a2e47102_2_Image(
             src="https://cdn.midjourney.com/2e6ca21c-89b6-46fc-9fac-823716a2e471/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

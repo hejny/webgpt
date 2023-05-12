@@ -32,7 +32,7 @@ export function AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a
             src="https://cdn.midjourney.com/056d488d-cbd3-4ae0-aa4b-11a3b5653109/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

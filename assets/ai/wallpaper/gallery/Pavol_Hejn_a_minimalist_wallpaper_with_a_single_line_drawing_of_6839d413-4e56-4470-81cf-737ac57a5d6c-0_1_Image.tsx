@@ -32,7 +32,7 @@ export function AMinimalistWallpaperWithASingleLineDrawingOf6839d4134e56447081cf
             src="https://cdn.midjourney.com/6839d413-4e56-4470-81cf-737ac57a5d6c/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

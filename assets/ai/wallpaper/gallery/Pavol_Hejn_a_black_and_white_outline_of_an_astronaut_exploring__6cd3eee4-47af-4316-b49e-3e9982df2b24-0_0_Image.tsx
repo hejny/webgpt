@@ -32,7 +32,7 @@ export function ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3
             src="https://cdn.midjourney.com/6cd3eee4-47af-4316-b49e-3e9982df2b24/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

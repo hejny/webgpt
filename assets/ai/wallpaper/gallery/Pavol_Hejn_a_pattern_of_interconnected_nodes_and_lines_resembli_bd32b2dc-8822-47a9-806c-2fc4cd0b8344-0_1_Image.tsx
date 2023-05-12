@@ -32,7 +32,7 @@ export function APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806
             src="https://cdn.midjourney.com/bd32b2dc-8822-47a9-806c-2fc4cd0b8344/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

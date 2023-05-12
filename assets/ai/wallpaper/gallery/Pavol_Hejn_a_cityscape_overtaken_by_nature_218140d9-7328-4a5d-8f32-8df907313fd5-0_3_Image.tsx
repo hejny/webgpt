@@ -30,7 +30,7 @@ export function ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_3_I
             src="https://cdn.midjourney.com/218140d9-7328-4a5d-8f32-8df907313fd5/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

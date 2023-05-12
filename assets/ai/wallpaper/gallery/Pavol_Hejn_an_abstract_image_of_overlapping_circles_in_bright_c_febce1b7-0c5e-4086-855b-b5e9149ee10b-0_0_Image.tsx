@@ -32,7 +32,7 @@ export function AnAbstractImageOfOverlappingCirclesInBrightCFebce1b70c5e4086855b
             src="https://cdn.midjourney.com/febce1b7-0c5e-4086-855b-b5e9149ee10b/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

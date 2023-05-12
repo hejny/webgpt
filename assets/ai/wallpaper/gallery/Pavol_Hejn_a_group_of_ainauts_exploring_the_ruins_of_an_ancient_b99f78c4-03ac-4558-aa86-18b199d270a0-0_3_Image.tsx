@@ -32,7 +32,7 @@ export function AGroupOfAinautsExploringTheRuinsOfAnAncientB99f78c403ac4558Aa861
             src="https://cdn.midjourney.com/b99f78c4-03ac-4558-aa86-18b199d270a0/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

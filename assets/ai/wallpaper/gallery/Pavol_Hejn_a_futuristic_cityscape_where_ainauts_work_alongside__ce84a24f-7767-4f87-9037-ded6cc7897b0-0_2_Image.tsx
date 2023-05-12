@@ -32,7 +32,7 @@ export function AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f87903
             src="https://cdn.midjourney.com/ce84a24f-7767-4f87-9037-ded6cc7897b0/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

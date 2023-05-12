@@ -32,7 +32,7 @@ export function ACloseUpImageOfARobotSEyeWithNeonGreenAc66438f7F004428aAdc4Ee13a
             src="https://cdn.midjourney.com/266438f7-f004-428a-adc4-ee13a5139e63/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

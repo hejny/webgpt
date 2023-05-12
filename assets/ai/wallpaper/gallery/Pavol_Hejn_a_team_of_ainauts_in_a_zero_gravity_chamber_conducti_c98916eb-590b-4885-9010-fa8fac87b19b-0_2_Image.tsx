@@ -32,7 +32,7 @@ export function ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010F
             src="https://cdn.midjourney.com/c98916eb-590b-4885-9010-fa8fac87b19b/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

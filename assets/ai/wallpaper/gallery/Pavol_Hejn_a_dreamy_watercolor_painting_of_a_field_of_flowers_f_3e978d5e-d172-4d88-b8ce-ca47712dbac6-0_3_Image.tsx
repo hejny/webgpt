@@ -32,7 +32,7 @@ export function ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa
             src="https://cdn.midjourney.com/3e978d5e-d172-4d88-b8ce-ca47712dbac6/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

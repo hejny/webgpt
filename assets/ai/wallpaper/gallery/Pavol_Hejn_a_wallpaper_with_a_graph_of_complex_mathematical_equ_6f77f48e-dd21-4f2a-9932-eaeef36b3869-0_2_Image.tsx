@@ -32,7 +32,7 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932
             src="https://cdn.midjourney.com/6f77f48e-dd21-4f2a-9932-eaeef36b3869/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

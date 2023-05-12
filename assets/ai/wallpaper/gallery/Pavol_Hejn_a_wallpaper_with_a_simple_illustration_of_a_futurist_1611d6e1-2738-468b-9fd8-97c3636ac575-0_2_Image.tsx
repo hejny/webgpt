@@ -32,7 +32,7 @@ export function AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd8
             src="https://cdn.midjourney.com/1611d6e1-2738-468b-9fd8-97c3636ac575/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

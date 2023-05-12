@@ -32,7 +32,7 @@ export function AFuturisticImageOfACityscapeWithFlyingCarsF416ab3d3A18a442d99b95
             src="https://cdn.midjourney.com/416ab3d3-a18a-442d-99b9-5dd21fbe13d0/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AFuturisticCityscapeWhereAinautsUseAdvancedAi2f91884347cf41c9B51
             src="https://cdn.midjourney.com/2f918843-47cf-41c9-b513-78e3d39ff3a1/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC
             src="https://cdn.midjourney.com/914c341b-c582-43fa-908c-c2b67d4a0e55/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

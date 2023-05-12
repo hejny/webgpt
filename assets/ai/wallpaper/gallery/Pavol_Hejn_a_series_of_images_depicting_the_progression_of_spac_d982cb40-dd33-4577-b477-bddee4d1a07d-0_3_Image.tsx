@@ -32,7 +32,7 @@ export function ASeriesOfImagesDepictingTheProgressionOfSpacD982cb40Dd334577B477
             src="https://cdn.midjourney.com/d982cb40-dd33-4577-b477-bddee4d1a07d/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

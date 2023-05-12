@@ -32,7 +32,7 @@ export function AnAbstractImageOfANebulaWithBrightColorsAnd9dbb691a808141f7Ae829
             src="https://cdn.midjourney.com/9dbb691a-8081-41f7-ae82-9e65ec3ccc00/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

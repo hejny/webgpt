@@ -32,7 +32,7 @@ export function AnIllustrationOfAFuturisticSpaceElevatorWithAff8beb1C9ca49eeBf55
             src="https://cdn.midjourney.com/aff8beb1-c9ca-49ee-bf55-b7356a2a0e17/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

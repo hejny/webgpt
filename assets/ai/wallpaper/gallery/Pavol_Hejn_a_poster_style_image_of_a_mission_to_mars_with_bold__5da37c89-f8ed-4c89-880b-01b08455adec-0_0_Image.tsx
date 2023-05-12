@@ -32,7 +32,7 @@ export function APosterStyleImageOfAMissionToMarsWithBold5da37c89F8ed4c89880b01b
             src="https://cdn.midjourney.com/5da37c89-f8ed-4c89-880b-01b08455adec/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

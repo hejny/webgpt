@@ -32,7 +32,7 @@ export function ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c
             src="https://cdn.midjourney.com/8c2f07b8-b1e9-4033-967e-48c4c31bdcf1/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AGroupOfAinautsAndTheirAiCompanionsExploring2a0d4ab476c64df8B155
             src="https://cdn.midjourney.com/2a0d4ab4-76c6-4df8-b155-0ba96a8832f4/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

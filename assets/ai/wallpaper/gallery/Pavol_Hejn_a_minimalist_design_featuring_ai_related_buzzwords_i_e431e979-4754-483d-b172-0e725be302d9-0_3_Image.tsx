@@ -32,7 +32,7 @@ export function AMinimalistDesignFeaturingAiRelatedBuzzwordsIE431e9794754483dB17
             src="https://cdn.midjourney.com/e431e979-4754-483d-b172-0e725be302d9/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

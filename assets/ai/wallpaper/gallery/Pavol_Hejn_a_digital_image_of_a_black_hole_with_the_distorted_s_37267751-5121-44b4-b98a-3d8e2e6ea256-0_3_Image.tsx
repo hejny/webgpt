@@ -32,7 +32,7 @@ export function ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8
             src="https://cdn.midjourney.com/37267751-5121-44b4-b98a-3d8e2e6ea256/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

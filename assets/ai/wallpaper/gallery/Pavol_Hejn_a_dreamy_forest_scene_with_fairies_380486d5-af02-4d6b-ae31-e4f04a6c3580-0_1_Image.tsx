@@ -32,7 +32,7 @@ export function ADreamyForestSceneWithFairies380486d5Af024d6bAe31E4f04a6c35800_1
             src="https://cdn.midjourney.com/380486d5-af02-4d6b-ae31-e4f04a6c3580/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

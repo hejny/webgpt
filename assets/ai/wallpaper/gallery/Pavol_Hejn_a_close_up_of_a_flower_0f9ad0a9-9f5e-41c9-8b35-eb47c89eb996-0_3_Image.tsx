@@ -30,7 +30,7 @@ export function ACloseUpOfAFlower0f9ad0a99f5e41c98b35Eb47c89eb9960_3_Image(props
             src="https://cdn.midjourney.com/0f9ad0a9-9f5e-41c9-8b35-eb47c89eb996/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

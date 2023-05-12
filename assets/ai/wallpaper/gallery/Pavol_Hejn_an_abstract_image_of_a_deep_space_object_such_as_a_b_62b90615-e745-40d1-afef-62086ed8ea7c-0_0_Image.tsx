@@ -32,7 +32,7 @@ export function AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef620
             src="https://cdn.midjourney.com/62b90615-e745-40d1-afef-62086ed8ea7c/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

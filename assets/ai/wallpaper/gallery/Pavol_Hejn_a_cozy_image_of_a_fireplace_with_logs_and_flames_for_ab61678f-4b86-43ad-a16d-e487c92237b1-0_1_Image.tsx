@@ -32,7 +32,7 @@ export function ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE4
             src="https://cdn.midjourney.com/ab61678f-4b86-43ad-a16d-e487c92237b1/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

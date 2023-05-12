@@ -32,7 +32,7 @@ export function ATeamOfAinautsWorkingTogetherToExploreTheDe56cd55315bc4e3bA6da72
             src="https://cdn.midjourney.com/256cd553-15bc-4e3b-a6da-72bd9bad3eb7/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

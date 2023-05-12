@@ -32,7 +32,7 @@ export function AnAbstractImageOfASpaceshipTravelingThroughA221581f168154937Ab9f
             src="https://cdn.midjourney.com/221581f1-6815-4937-ab9f-c37d5e2536ac/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

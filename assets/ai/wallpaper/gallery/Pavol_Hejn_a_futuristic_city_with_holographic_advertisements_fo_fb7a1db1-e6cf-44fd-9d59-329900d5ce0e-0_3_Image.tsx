@@ -32,7 +32,7 @@ export function AFuturisticCityWithHolographicAdvertisementsFoFb7a1db1E6cf44fd9d
             src="https://cdn.midjourney.com/fb7a1db1-e6cf-44fd-9d59-329900d5ce0e/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0A
             src="https://cdn.midjourney.com/7c807864-d2a1-4217-a8b0-acdac05bf295/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

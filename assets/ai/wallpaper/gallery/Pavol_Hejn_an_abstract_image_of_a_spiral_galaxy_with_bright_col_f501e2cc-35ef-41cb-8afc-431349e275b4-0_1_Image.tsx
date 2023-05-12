@@ -32,7 +32,7 @@ export function AnAbstractImageOfASpiralGalaxyWithBrightColF501e2cc35ef41cb8afc4
             src="https://cdn.midjourney.com/f501e2cc-35ef-41cb-8afc-431349e275b4/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

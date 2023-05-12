@@ -32,7 +32,7 @@ export function ACalmingBeachSunsetWithPalmTreesForAVacatioF1da0e987a3c440a8d88A
             src="https://cdn.midjourney.com/f1da0e98-7a3c-440a-8d88-a20fc99b3893/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

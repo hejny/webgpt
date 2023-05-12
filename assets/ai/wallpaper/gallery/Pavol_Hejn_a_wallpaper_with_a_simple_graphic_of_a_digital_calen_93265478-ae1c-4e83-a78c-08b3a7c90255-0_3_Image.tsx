@@ -32,7 +32,7 @@ export function AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c0
             src="https://cdn.midjourney.com/93265478-ae1c-4e83-a78c-08b3a7c90255/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

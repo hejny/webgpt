@@ -32,7 +32,7 @@ export function AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8
             src="https://cdn.midjourney.com/5709f541-7759-4663-9206-e8f11ffb514d/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

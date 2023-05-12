@@ -32,7 +32,7 @@ export function ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e312
             src="https://cdn.midjourney.com/68bdb7af-adc9-47c9-8893-67e31299e98b/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

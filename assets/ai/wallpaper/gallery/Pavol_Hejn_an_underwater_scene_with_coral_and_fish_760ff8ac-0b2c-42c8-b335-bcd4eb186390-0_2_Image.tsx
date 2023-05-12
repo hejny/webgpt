@@ -32,7 +32,7 @@ export function AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb18639
             src="https://cdn.midjourney.com/760ff8ac-0b2c-42c8-b335-bcd4eb186390/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

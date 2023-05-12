@@ -32,7 +32,7 @@ export function AWallpaperFeaturingAMatrixOfFuturisticDataVi062effdf834c4294978d
             src="https://cdn.midjourney.com/062effdf-834c-4294-978d-52fdf51572fd/0_1.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

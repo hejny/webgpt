@@ -32,7 +32,7 @@ export function ADesertLandscapeWithACactusInTheForeground31b6770182a84ef8A4ac47
             src="https://cdn.midjourney.com/31b67701-82a8-4ef8-a4ac-4723c54d3159/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

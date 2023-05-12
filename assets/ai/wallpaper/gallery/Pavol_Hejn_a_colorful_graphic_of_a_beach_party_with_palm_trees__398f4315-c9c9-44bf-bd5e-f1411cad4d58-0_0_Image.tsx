@@ -32,7 +32,7 @@ export function AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1
             src="https://cdn.midjourney.com/398f4315-c9c9-44bf-bd5e-f1411cad4d58/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

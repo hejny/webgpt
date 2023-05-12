@@ -32,7 +32,7 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36e
             src="https://cdn.midjourney.com/fb454755-ed56-4069-b36e-ad85a6001658/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

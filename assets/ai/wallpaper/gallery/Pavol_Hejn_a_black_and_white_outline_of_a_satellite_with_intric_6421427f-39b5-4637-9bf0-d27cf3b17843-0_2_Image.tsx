@@ -32,7 +32,7 @@ export function ABlackAndWhiteOutlineOfASatelliteWithIntric6421427f39b546379bf0D
             src="https://cdn.midjourney.com/6421427f-39b5-4637-9bf0-d27cf3b17843/0_2.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

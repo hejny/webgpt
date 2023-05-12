@@ -32,7 +32,7 @@ export function APhotographOfADesertLandscapeAtNightWithThe93e80a95D8f545569324B
             src="https://cdn.midjourney.com/93e80a95-d8f5-4556-9324-b10f8d61dee5/0_3.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -32,7 +32,7 @@ export function AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0
             src="https://cdn.midjourney.com/f92031db-c1a8-4751-be36-11640cca5b5f/0_0.png"
             draggable="false"
             placeholder="blur"
-            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+            blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}
