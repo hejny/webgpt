@@ -34,9 +34,10 @@ export function skinFromWallpaper(Wallpaper: IWallpaperComponent): ISkin {
         url(../../public/patterns/simple/grey.png)`;
 
     const footerTextColor = colorStats.darkestColor.then(negative);
-    const footerBackground = `linear-gradient(to bottom, ${footerTextColor.negative
+    const footerBackground = `linear-gradient(to bottom, ${footerTextColor
+        .then(negative)
         .then(darken(0.2))
-        .toHex()}, ${footerTextColor.negative.then(darken(0.3)).toHex()}),
+        .toHex()}, ${footerTextColor.then(negative).then(darken(0.3)).toHex()}),
                 url(../../public/patterns/simple/grey.png)`;
 
     const skin: ISkin = {
