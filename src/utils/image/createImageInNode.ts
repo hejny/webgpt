@@ -4,6 +4,8 @@ import { Image } from './Image';
 
 /**
  * Define an async function to create an image in Node.js
+ *
+ * @param path The path to the image file or the URL of the image
  */
 export async function createImageInNode(path: string): Promise<Image> {
     // Read the image from the given path using jimp

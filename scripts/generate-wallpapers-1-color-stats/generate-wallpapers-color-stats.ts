@@ -92,7 +92,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
         const colorStats = computeImageColorStats(
             await createImageInNode(
                 metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */],
-            ) /* <- TODO: Create from url */,
+            ),
         );
 
         await writeFile(

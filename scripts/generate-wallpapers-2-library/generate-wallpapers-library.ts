@@ -44,9 +44,10 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         throw new Error(`Working tree is not clean`);
     }
 
+    // TODO: [2] Make utility listWallpapers OR forEachWallpaper [🥼]
     const wallpapersDir = join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
     const wallpapersPaths = await glob(
-        join(wallpapersDir, '*.png' /* <- TODO: !!! Use here metadata files */).split('\\').join('/'),
+        join(wallpapersDir, '*.png' /* <- TODO: !!! [2] Use here metadata files */).split('\\').join('/'),
     );
     const indexFilePath = join(wallpapersDir, '..', 'index.tsx');
 
@@ -142,7 +143,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
             import colorStats from '${colorStatsImportPath}'
             import metadata from '${metadataImportPath}';
-            import source from '${wallpaperImportPath}';
+            import source from '${metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]}';
             import texts from '${textsImportPath}';
 
 
