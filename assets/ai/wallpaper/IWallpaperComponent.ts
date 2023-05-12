@@ -9,9 +9,12 @@ export interface IWallpaperComponentProps {
 export interface IWallpaperComponent {
     (props: IWallpaperComponentProps): JSX.Element;
     src: URL;
-    metadata: IWallpaperMetadata;
+    metadata: IWallpaperMetadata /* <- TODO: This should be renamed to IWallpaperPrompt */;
     colorStats: IWallpaperColorStats;
+    // TODO: shapeStats> IWallpaperShapeStats;
     texts: IWallpaperTexts;
+
+    // TODO: isTile + some mechanism to add additional metadata
 }
 
 export type IWallpaperMetadata = IMidjourneyJob;

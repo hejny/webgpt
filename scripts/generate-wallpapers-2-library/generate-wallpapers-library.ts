@@ -173,6 +173,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
                 );
             }
 
+            // !!! ${componentName}.isTile = false;
             ${componentName}.src = new URL('${wallpaperUrl}');
             ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
             ${componentName}.colorStats = hydrateColorStats(colorStats);
