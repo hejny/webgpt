@@ -58,6 +58,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
         // Note: We can not make this parallel because of [5]
         await forPlay();
 
+        // TODO: [🥼] Make just one util for stats
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
         const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
@@ -80,7 +81,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
 
         if (await isFileExisting(colorStatsPath)) {
             console.info(`⏩ Color stats file does already exists`);
-            continue;
+            // !!! continue;
         }
 
         if (!(await isFileExisting(metadataPath))) {
@@ -89,7 +90,9 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
 
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
         const colorStats = computeImageColorStats(
-            await createImageInNode(wallpaperPath) /* <- TODO: Create from url */,
+            await createImageInNode(
+                metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */],
+            ) /* <- TODO: Create from url */,
         );
 
         await writeFile(

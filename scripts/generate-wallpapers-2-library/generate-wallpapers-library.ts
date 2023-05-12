@@ -9,9 +9,6 @@ import { normalizeTo_camelCase } from 'n12';
 import { capitalize } from 'n12/dist/capitalize';
 import { basename, dirname, join, relative } from 'path';
 import { IWallpaperMetadata } from '../../assets/ai/wallpaper/IWallpaperComponent';
-import { createImageInNode } from '../../src/utils/image/createImageInNode';
-import { computeImageColorStats } from '../../src/utils/image/utils/0-computeImageColorStats';
-import { TakeChain } from '../../src/utils/take/classes/TakeChain';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
@@ -63,6 +60,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
     for (const wallpaperPath of wallpapersPaths) {
         await forPlay();
 
+        // TODO: [🥼] Make just one util for stats
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
         const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
@@ -118,10 +116,10 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         ).replace(/^\.\/\.\.\//, '../');
 
         const metadataImportPath = wallpaperImportPath.replace(/\.png$/, '.json');
+        const textsImportPath = wallpaperImportPath.replace(/\.png$/, '.texts.json');
+        const colorStatsImportPath = wallpaperImportPath.replace(/\.png$/, '.colors.json');
 
         wallpapers.push({ entityName: componentName, entityPath: wallpaperFilePath });
-
-        const wallpaperColorStats = computeImageColorStats(await createImageInNode(wallpaperPath));
 
         const wallpaperFileContent = await Promise.resolve(
             `
@@ -135,12 +133,17 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
              *    Then the file will not be re-generated automatically
              */
 
+            // TODO: !!! Newly sort imports
+
             import Image from 'next/image';
             import { Color } from '../../../../src/utils/color/Color';
             import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-            import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+            import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
             import metadata from '${metadataImportPath}';
+            import colorStats from '${colorStatsImportPath}'
+            import texts from '${textsImportPath}';
             import source from '${wallpaperImportPath}';
+            
 
 
             /**
@@ -167,21 +170,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             }
 
             ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
-            ${componentName}.colorStats = ${JSON.stringify(
-                wallpaperColorStats,
-                (key, value) => {
-                    if (value instanceof TakeChain) {
-                        return `>>>Color.fromHex('${value.value.toHex()}')<<<`;
-                    }
-
-                    return value;
-                },
-                4,
-            )
-                .split('">>>')
-                .join('')
-                .split('<<<"')
-                .join('')} satisfies IImageColorStats;
+            ${componentName}.colorStats = colorStats satisfies IWallpaperColorStats;
+            ${componentName}.texts = texts satisfies IWallpaperTexts;
         `,
         ).then(
             prettify,
@@ -189,6 +179,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf8');
         console.info(`💾 ${relative(process.cwd(), wallpaperFilePath).split('\\').join('/')}`);
+
+        break;
     }
 
     const indexFileContent = await Promise.resolve(

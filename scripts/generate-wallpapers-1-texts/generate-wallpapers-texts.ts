@@ -97,6 +97,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         // Note: We can not make this parallel because of [5]
         await forPlay();
 
+        // TODO: [🥼] Make just one util for stats
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
         const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
