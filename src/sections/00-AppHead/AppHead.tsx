@@ -1,9 +1,9 @@
-import { useTranslation } from 'next-i18next';
 import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
 import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
+import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
@@ -13,7 +13,7 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
  * @returns {JSX.Element} - The JSX element for the component
  */
 interface AppHeadProps {
-    subtitle?: string;
+    subtitle?: string /* <- !!! Remove */;
 }
 
 /**
@@ -22,12 +22,14 @@ interface AppHeadProps {
 export function AppHead(props: AppHeadProps) {
     const { subtitle } = props;
 
-    const { t } = useTranslation();
-    const title = removeMarkdownFormatting(removeMarkdownLinks(t('title') || ''));
-    const description = removeMarkdownFormatting(removeMarkdownLinks(t('description') || ''));
+    // TODO: !!! Populate ONLY from Wallpaper
 
     const Wallpaper =
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
+    const skin = useSkin();
+
+    const title = Wallpaper.texts.title;
+    const description = removeMarkdownFormatting(removeMarkdownLinks(Wallpaper.texts.content));
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
@@ -39,10 +41,16 @@ export function AppHead(props: AppHeadProps) {
                 <meta name="viewport" content="width=device-width" />
 
                 {/* Primary meta tags */}
-                <title>{`${!subtitle ? `` : `${subtitle} ✨ `}${title}`}</title>
-                <meta name="description" content={description} />
-                <link rel="icon" href={favicon.src} />
-                <meta name="theme-color" content="#000000" />
+                <title>{Wallpaper.texts.title}</title>
+                <meta
+                    name="description"
+                    content={removeMarkdownFormatting(removeMarkdownLinks(Wallpaper.texts.content))}
+                />
+                <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
+                <meta
+                    name="theme-color"
+                    content={skin.mainBackground /* <- TODO: Is it a good idea to pick theme-color this way */}
+                />
 
                 {/* Open Graph (Facebook) */}
                 <meta property="og:title" content={title} />
