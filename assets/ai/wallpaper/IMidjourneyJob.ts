@@ -22,9 +22,9 @@ export interface IMidjourneyJob {
     mod_hidden: boolean;
     platform: string;
     platform_channel: string;
-    platform_channel_id: string;
-    platform_message_id: string;
-    platform_thread_id?: null;
+    platform_channel_id: string | null;
+    platform_message_id: string | null;
+    platform_thread_id: string | null;
     prompt: string;
     ranked_by_user: boolean;
     ranking_by_user?: number | null;
