@@ -99,10 +99,6 @@ export function ReferencesSection(props: ReferencesProps) {
                             <Image
                                 alt="Portrait photo of Jan Šedo"
                                 src={janSedo}
-                                // TODO: [🧑] Make some <ImageGravatar component; This is jan.sedo@h-mat.cz
-                                //src="https://www.gravatar.com/avatar/0879e2d2136c90854d7c52adc712e915?s=1024"
-                                // width={1024}
-                                // height={1024}
                                 draggable="false"
                                 placeholder="blur"
                                 style={{

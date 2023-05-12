@@ -8,17 +8,14 @@ const nextConfig = {
         appDir: true,
     },
     images: {
-        /*
         remotePatterns: [
             {
-                // [🧑]
                 protocol: 'https',
-                hostname: 'www.gravatar.com',
+                hostname: 'cdn.midjourney.com',
                 port: '',
-                pathname: '/avatar/**',
+                pathname: '/**',
             },
         ],
-        */
     },
 };
 
