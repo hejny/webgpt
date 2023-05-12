@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/689b6532-d3e2-4c7f-bc42-a03171c83d18/0_1.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__689b6532-d3e2-4c7f-bc42-a03171c83d18-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__689b6532-d3e2-4c7f-bc42-a03171c83d18-0_1.json';
-import source from 'https://cdn.midjourney.com/689b6532-d3e2-4c7f-bc42-a03171c83d18/0_1.png';
 import texts from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__689b6532-d3e2-4c7f-bc42-a03171c83d18-0_1.texts.json';
 
 /**

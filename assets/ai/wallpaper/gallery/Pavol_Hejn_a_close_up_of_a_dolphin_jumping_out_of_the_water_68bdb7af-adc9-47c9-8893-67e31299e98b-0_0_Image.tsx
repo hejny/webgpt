@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/68bdb7af-adc9-47c9-8893-67e31299e98b/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_0.json';
-import source from 'https://cdn.midjourney.com/68bdb7af-adc9-47c9-8893-67e31299e98b/0_0.png';
 import texts from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_0.texts.json';
 
 /**

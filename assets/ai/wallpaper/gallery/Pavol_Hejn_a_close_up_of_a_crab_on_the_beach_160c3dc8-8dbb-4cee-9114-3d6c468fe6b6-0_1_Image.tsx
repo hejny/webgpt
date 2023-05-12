@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/160c3dc8-8dbb-4cee-9114-3d6c468fe6b6/0_1.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_1.json';
-import source from 'https://cdn.midjourney.com/160c3dc8-8dbb-4cee-9114-3d6c468fe6b6/0_1.png';
 import texts from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_1.texts.json';
 
 /**

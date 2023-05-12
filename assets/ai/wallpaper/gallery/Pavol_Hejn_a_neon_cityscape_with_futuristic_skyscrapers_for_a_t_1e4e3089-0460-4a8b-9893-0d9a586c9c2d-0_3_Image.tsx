@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/1e4e3089-0460-4a8b-9893-0d9a586c9c2d/0_3.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.json';
-import source from 'https://cdn.midjourney.com/1e4e3089-0460-4a8b-9893-0d9a586c9c2d/0_3.png';
 import texts from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.texts.json';
 
 /**

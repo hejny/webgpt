@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/f1da0e98-7a3c-440a-8d88-a20fc99b3893/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_f1da0e98-7a3c-440a-8d88-a20fc99b3893-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_f1da0e98-7a3c-440a-8d88-a20fc99b3893-0_0.json';
-import source from 'https://cdn.midjourney.com/f1da0e98-7a3c-440a-8d88-a20fc99b3893/0_0.png';
 import texts from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_f1da0e98-7a3c-440a-8d88-a20fc99b3893-0_0.texts.json';
 
 /**

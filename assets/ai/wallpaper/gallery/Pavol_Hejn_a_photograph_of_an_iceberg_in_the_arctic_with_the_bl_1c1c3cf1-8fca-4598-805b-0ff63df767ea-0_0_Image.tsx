@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/1c1c3cf1-8fca-4598-805b-0ff63df767ea/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_0.json';
-import source from 'https://cdn.midjourney.com/1c1c3cf1-8fca-4598-805b-0ff63df767ea/0_0.png';
 import texts from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_0.texts.json';
 
 /**

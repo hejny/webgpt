@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/6e6533f5-7774-4664-a6c1-8ebb09cefb82/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_0.json';
-import source from 'https://cdn.midjourney.com/6e6533f5-7774-4664-a6c1-8ebb09cefb82/0_0.png';
 import texts from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_0.texts.json';
 
 /**

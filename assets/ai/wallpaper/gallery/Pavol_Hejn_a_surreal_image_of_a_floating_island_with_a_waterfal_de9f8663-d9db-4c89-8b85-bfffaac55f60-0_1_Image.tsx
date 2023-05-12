@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/de9f8663-d9db-4c89-8b85-bfffaac55f60/0_1.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_de9f8663-d9db-4c89-8b85-bfffaac55f60-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_de9f8663-d9db-4c89-8b85-bfffaac55f60-0_1.json';
-import source from 'https://cdn.midjourney.com/de9f8663-d9db-4c89-8b85-bfffaac55f60/0_1.png';
 import texts from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_de9f8663-d9db-4c89-8b85-bfffaac55f60-0_1.texts.json';
 
 /**

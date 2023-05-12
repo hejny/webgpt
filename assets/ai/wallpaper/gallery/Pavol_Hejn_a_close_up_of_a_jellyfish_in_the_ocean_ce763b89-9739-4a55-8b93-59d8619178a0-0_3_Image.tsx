@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/ce763b89-9739-4a55-8b93-59d8619178a0/0_3.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.json';
-import source from 'https://cdn.midjourney.com/ce763b89-9739-4a55-8b93-59d8619178a0/0_3.png';
 import texts from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.texts.json';
 
 /**

@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/de398798-a2f7-4e9a-ab64-922888c7af65/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_0.json';
-import source from 'https://cdn.midjourney.com/de398798-a2f7-4e9a-ab64-922888c7af65/0_0.png';
 import texts from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_0.texts.json';
 
 /**

@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/0094b8cd-7fd6-4077-bfa1-2f291eb1b1df/0_1.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_1.json';
-import source from 'https://cdn.midjourney.com/0094b8cd-7fd6-4077-bfa1-2f291eb1b1df/0_1.png';
 import texts from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_1.texts.json';
 
 /**

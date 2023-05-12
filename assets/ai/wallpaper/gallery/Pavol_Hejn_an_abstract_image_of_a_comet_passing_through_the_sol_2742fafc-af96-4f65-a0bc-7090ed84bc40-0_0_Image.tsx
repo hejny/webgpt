@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/2742fafc-af96-4f65-a0bc-7090ed84bc40/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_0.json';
-import source from 'https://cdn.midjourney.com/2742fafc-af96-4f65-a0bc-7090ed84bc40/0_0.png';
 import texts from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_0.texts.json';
 
 /**

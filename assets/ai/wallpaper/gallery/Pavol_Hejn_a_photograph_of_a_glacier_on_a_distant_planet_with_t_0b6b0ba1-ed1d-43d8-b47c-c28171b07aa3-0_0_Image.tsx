@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3/0_0.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3-0_0.json';
-import source from 'https://cdn.midjourney.com/0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3/0_0.png';
 import texts from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_0b6b0ba1-ed1d-43d8-b47c-c28171b07aa3-0_0.texts.json';
 
 /**

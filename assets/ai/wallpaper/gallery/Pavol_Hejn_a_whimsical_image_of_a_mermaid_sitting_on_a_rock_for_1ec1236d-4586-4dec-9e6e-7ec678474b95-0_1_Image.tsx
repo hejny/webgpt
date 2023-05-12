@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_1.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_1.json';
-import source from 'https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_1.png';
 import texts from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_1.texts.json';
 
 /**

@@ -7,12 +7,12 @@
  *    Then the file will not be re-generated automatically
  */
 
+import source from 'https://cdn.midjourney.com/d6838421-6a93-4041-9418-d81a92bbb9ea/0_1.png';
 import Image from 'next/image';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_1.json';
-import source from 'https://cdn.midjourney.com/d6838421-6a93-4041-9418-d81a92bbb9ea/0_1.png';
 import texts from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_1.texts.json';
 
 /**
