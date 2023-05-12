@@ -1,7 +1,9 @@
+import { Color } from '../Color';
+
 /**
  * Makes data url from color
  */
-export function colorToDataUrl(color: Color): string_ /*dataurl*/ {
+export function colorToDataUrl(color: Color): string /*_dataurl*/ {
     return rgbDataURL(color.red, color.green, color.blue);
 }
 
