@@ -164,7 +164,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
                         src="${wallpaperUrl}"
                         draggable="false"
                         placeholder="blur"
-                        blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
+                        // TODO: Can we use line below .then(colorToDataUrl) instead
+                        blurDataURL={colorToDataUrl(Color.fromHex(colorStats.averageColor))}
                         height={Math.round(width/1920*1080)}
                         style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                         {...{ width, quality }}
