@@ -8,6 +8,7 @@ export interface IWallpaperComponentProps {
 
 export interface IWallpaperComponent {
     (props: IWallpaperComponentProps): JSX.Element;
+    src: URL;
     metadata: IWallpaperMetadata;
     colorStats: IWallpaperColorStats;
     texts: IWallpaperTexts;

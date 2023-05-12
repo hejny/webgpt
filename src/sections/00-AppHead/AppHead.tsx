@@ -4,10 +4,11 @@ import favicon from '../../../public/favicon.ico';
 import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
  * A functional component that renders the head element and the language picker ⁘
- * 
+ *
  * @param {AppHeadProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the component
  */
@@ -24,6 +25,9 @@ export function AppHead(props: AppHeadProps) {
     const { t } = useTranslation();
     const title = removeMarkdownFormatting(removeMarkdownLinks(t('title') || ''));
     const description = removeMarkdownFormatting(removeMarkdownLinks(t('description') || ''));
+
+    const Wallpaper =
+        useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
@@ -44,7 +48,10 @@ export function AppHead(props: AppHeadProps) {
                 <meta property="og:title" content={title} />
                 <meta property="og:site_name" content={title} />
                 <meta property="og:description" content={description} />
-                {/* TODO: !!! <meta property="og:image" content={homeUrl + cave_of_ideas_with_transparent_look_through.src} /> */}
+                <meta
+                    property="og:image"
+                    content={Wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                />
                 <meta property="og:url" content={homeUrl} />
                 <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
 
@@ -57,7 +64,10 @@ export function AppHead(props: AppHeadProps) {
                 <meta property="twitter:url" content={homeUrl} />
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
-                {/* TODO: !!! <meta property="twitter:image" content={homeUrl + cave_of_ideas_with_transparent_look_through.src} /> */}
+                <meta
+                    property="twitter:image"
+                    content={Wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                />
             </Head>
             <LanguagePicker />
         </>
