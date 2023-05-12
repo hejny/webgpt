@@ -72,7 +72,7 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
                 throw error;
             }
 
-            console.warn(`⚠️  ${error.message}`);
+            console.warn(`⚠️  ${(error as Error).message}`);
             console.warn(`💤  Retrying in 1 minute`);
 
             await forTime(1000 * 60);
