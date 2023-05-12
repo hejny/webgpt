@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { generated_wallpapers } from '../../../assets/ai/wallpaper';
+import { ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image } from '../../../assets/ai/wallpaper/gallery/Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_2_Image';
 import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComponent';
 
 /**
@@ -7,12 +8,12 @@ import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComp
  *
  * @returns {IWallpaperComponent} A wallpaper component.
  */
-export function useWallpaper(): IWallpaperComponent | null /* <- TODO: !!! [🕰] do not allow null */ {
+export function useWallpaper(): IWallpaperComponent {
     const router = useRouter();
     const { wallpaper: wallpaperId } = router.query; /* <- TODO: !!! [🕰]  Use here path AND do not allow null */
 
     if (!router.isReady) {
-        return null;
+        return ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image;
     }
 
     const Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;

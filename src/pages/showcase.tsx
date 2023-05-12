@@ -17,12 +17,12 @@ export default function ShowcasePage({ lang }: any) {
     return (
         <>
             <AppHead />
-            {Wallpaper /* <- TODO: !!! [🕰] do not allow null */ && <SkinStyle skin={skinFromWallpaper(Wallpaper)} />}
+            <SkinStyle skin={skinFromWallpaper(Wallpaper)} />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
-                    {Wallpaper /* <- TODO: !!! [🕰] do not allow null */ && <HeaderWallpaper {...{ Wallpaper }} />}
+                    <HeaderWallpaper {...{ Wallpaper }} />
                 </header>
                 <div className={styles.background}>
                     <TiledBackground />

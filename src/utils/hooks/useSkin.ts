@@ -6,12 +6,6 @@ import { useWallpaper } from './useWallpaper';
  *
  * @returns {ISkin} The skin object.
  */
-export function useSkin(): ISkin | null /* <- TODO: !!! [🕰] do not allow null */ {
-    const Wallpaper = useWallpaper();
-
-    if (Wallpaper === null) {
-        return null;
-    }
-
-    return skinFromWallpaper(Wallpaper);
+export function useSkin(): ISkin {
+    return skinFromWallpaper(useWallpaper());
 }

@@ -1,23 +1,16 @@
-import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComponent';
 import { Article } from '../../components/Article/Article';
 import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenText';
 import { Section } from '../../components/Section/Section';
-import { skinFromWallpaper } from '../../utils/skinFromWallpaper';
+import { useSkin } from '../../utils/hooks/useSkin';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './Welcome.module.css';
 
 /**
  * @@@
  */
-interface WelcomeProps {
-    Wallpaper: IWallpaperComponent /* <- !!! DO not pass, just use */;
-}
-
-/**
- * @@@
- */
 export function ShowcaseWelcomeSection(props: WelcomeProps) {
-    const { Wallpaper } = props;
-    const skin = skinFromWallpaper(Wallpaper); /* <- !!! DO not convert, just use */
+    const Wallpaper = useWallpaper();
+    const skin = useSkin();
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>

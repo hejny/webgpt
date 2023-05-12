@@ -16,14 +16,12 @@ export function HomepageWelcomeSection() {
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
-            {skin /* <- TODO: !!! [🕰] do not allow null */ && (
-                <h1 className={styles.handritten}>
-                    <HandwrittenText color={skin.highlightedTextColor}>
-                        {removeMarkdownFormatting(removeMarkdownLinks(t('title')))}
-                        {/* <- TODO: [🎎] Allow to have there full JSX with formatting like <Article content={t('title')} isEnhanced /> OR pass as markdown*/}
-                    </HandwrittenText>
-                </h1>
-            )}
+            <h1 className={styles.handritten}>
+                <HandwrittenText color={skin.highlightedTextColor}>
+                    {removeMarkdownFormatting(removeMarkdownLinks(t('title')))}
+                    {/* <- TODO: [🎎] Allow to have there full JSX with formatting like <Article content={t('title')} isEnhanced /> OR pass as markdown*/}
+                </HandwrittenText>
+            </h1>
 
             <Article content={t('Welcome.content')} isEnhanced />
         </Section>
