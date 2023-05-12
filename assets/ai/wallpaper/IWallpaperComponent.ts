@@ -10,7 +10,7 @@ export interface IWallpaperComponent {
     (props: IWallpaperComponentProps): JSX.Element;
     metadata: IWallpaperMetadata;
     colorStats: IWallpaperColorStats;
-    texts?: IWallpaperTexts /* <- !!! Make texts mandatory */;
+    texts: IWallpaperTexts;
 }
 
 export type IWallpaperMetadata = IMidjourneyJob;
