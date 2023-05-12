@@ -50,7 +50,7 @@ export interface ParsedParams {
     upanime: boolean;
     upbeta: boolean;
     uplight: boolean;
-    version: number | string;
+    version?: number | string;
     vibe: boolean;
     video: boolean;
 }

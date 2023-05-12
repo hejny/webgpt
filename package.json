@@ -53,7 +53,7 @@
         "xyzt": "5.4.0"
     },
     "devDependencies": {
-        "chatgpt": "5.2.4",
+        "type-fest": "^3.10.0",
         "@total-typescript/ts-reset": "0.4.2",
         "@types/isomorphic-fetch": "0.0.36",
         "@types/jest": "29.2.6",
@@ -68,6 +68,7 @@
         "@types/showdown": "2.0.0",
         "@types/styled-components": "5.1.26",
         "chalk": "4.1.2",
+        "chatgpt": "5.2.4",
         "chokidar-cli": "3.0.0",
         "commander": "9.4.1",
         "cypress": "12.3.0",

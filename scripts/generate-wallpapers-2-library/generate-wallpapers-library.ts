@@ -136,14 +136,14 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             // TODO: !!! Newly sort imports
 
             import Image from 'next/image';
-            import { Color } from '../../../../src/utils/color/Color';
-            import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
+            import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+            // import { Color } from '../../../../src/utils/color/Color';
+            // import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
             import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
-            import metadata from '${metadataImportPath}';
             import colorStats from '${colorStatsImportPath}'
-            import texts from '${textsImportPath}';
+            import metadata from '${metadataImportPath}';
             import source from '${wallpaperImportPath}';
-            
+            import texts from '${textsImportPath}';
 
 
             /**
@@ -170,12 +170,17 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             }
 
             ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
-            ${componentName}.colorStats = colorStats satisfies IWallpaperColorStats;
+            ${componentName}.colorStats = hydrateColorStats(colorStats);
             ${componentName}.texts = texts satisfies IWallpaperTexts;
         `,
-        ).then(
-            prettify,
-        ); /* .then(organizeImports) <- Note: Imports are organized here AND its pretty performance heavy to do it each time */
+        )
+            .then((content) => {
+                // Remove comment lines
+                return content.split(/^(?:\s*\/\/.*\n)+/gm).join('');
+            })
+            .then(
+                prettify,
+            ); /* .then(organizeImports) <- Note: Imports are organized here AND its pretty performance heavy to do it each time */
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf8');
         console.info(`💾 ${relative(process.cwd(), wallpaperFilePath).split('\\').join('/')}`);
