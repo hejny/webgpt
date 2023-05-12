@@ -54,7 +54,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
         lastTime: moment(),
         startTime: moment(),
     };
-    for (const wallpaperPath of wallpapersPaths.reverse(/* <- TODO: !!! Make popper paralelization from this */)) {
+    for (const wallpaperPath of wallpapersPaths /*.reverse(<- TODO:  Make popper paralelization from this)*/) {
         // Note: We can not make this parallel because of [5]
         await forPlay();
 
