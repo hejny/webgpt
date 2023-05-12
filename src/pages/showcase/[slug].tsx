@@ -1,15 +1,16 @@
+import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
-import { DebugGrid } from '../components/DebugGrid/DebugGrid';
-import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
-import { SkinStyle } from '../components/SkinStyle/SkinStyle';
-import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { AppHead } from '../sections/00-AppHead/AppHead';
-import { ShowcaseWelcomeSection } from '../sections/10-Welcome/ShowcaseWelcome';
-import { FooterSection } from '../sections/90-Footer/Footer';
-import styles from '../styles/common.module.css';
-import { useWallpaper } from '../utils/hooks/useWallpaper';
-import { skinFromWallpaper } from '../utils/skinFromWallpaper';
+import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
+import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
+import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
+import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
+import { AppHead } from '../../sections/00-AppHead/AppHead';
+import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
+import { FooterSection } from '../../sections/90-Footer/Footer';
+import styles from '../../styles/common.module.css';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { skinFromWallpaper } from '../../utils/skinFromWallpaper';
 
 export default function ShowcasePage({ lang }: any) {
     const Wallpaper = useWallpaper();
@@ -28,7 +29,7 @@ export default function ShowcasePage({ lang }: any) {
                     <TiledBackground />
                 </div>
                 <main>
-                    <ShowcaseWelcomeSection Wallpaper={Wallpaper!} />
+                    <ShowcaseWelcomeSection />
                     {/*<ReferencesSection variant="SHORT" />*/}
                 </main>
                 <footer>
@@ -38,6 +39,13 @@ export default function ShowcasePage({ lang }: any) {
         </>
     );
 }
+
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+    return {
+        paths: [], // <- Note: indicates that no page needs be created at build time
+        fallback: 'blocking', // <- Note: indicates the type of fallback
+    };
+};
 
 export async function getStaticProps({ locale }: { locale: string }) {
     return {

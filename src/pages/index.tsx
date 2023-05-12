@@ -54,8 +54,8 @@ export default function GalleryPage() {
                                     // TODO: <MidjourneyImage/>
                                     // TODO: Show diffusion as animation
                                     <Link
-                                        href={`/showcase?wallpaper=${Wallpaper.metadata.id}`}
-                                        key={i /* <- TODO: Better */}
+                                        href={`/showcase/${Wallpaper.metadata.id}`}
+                                        key={i /* <- TODO: Better, can we use just id */}
                                         // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
                                     >
                                         <Item>

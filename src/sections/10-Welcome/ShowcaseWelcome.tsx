@@ -8,7 +8,7 @@ import styles from './Welcome.module.css';
 /**
  * @@@
  */
-export function ShowcaseWelcomeSection(props: WelcomeProps) {
+export function ShowcaseWelcomeSection() {
     const Wallpaper = useWallpaper();
     const skin = useSkin();
 

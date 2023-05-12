@@ -48,12 +48,14 @@ export function skinFromWallpaper(Wallpaper: IWallpaperComponent): ISkin {
         footerBackground,
     };
 
+    /*/
     console.info(
         'skin',
         Object.fromEntries(
             Object.entries(skin).map(([key, value]) => [key, value instanceof Color ? value.toHex() : value]),
         ),
     );
+    /**/
 
     return skin;
 }

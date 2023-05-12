@@ -10,24 +10,33 @@ import { IWallpaperComponent } from '../../../assets/ai/wallpaper/IWallpaperComp
  */
 export function useWallpaper(): IWallpaperComponent {
     const router = useRouter();
-    const { wallpaper: wallpaperId } = router.query; /* <- TODO: !!! [🕰]  Use here path AND do not allow null */
 
-    if (!router.isReady) {
+    if (router.pathname === '/') {
         return ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image;
+    } else if (router.pathname === '/showcase/[slug]') {
+        const wallpaperId = router.query.slug as string;
+
+        const Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;
+
+        if (Wallpaper) {
+            return Wallpaper;
+        }
+
+        throw new Error('Wallpaper not found' /* <- TODO: Make here propper 404 */);
+
+        /* 
+        const fallbackWallpaper = generated_wallpapers.find(
+            (wallpaper) => wallpaper.metadata.id === '7e9b434d-59bc-4d69-a486-d7401d94f5e0',
+        );
+
+        if (!fallbackWallpaper) {
+            throw new Error('Fallback wallpaper not found');
+        }
+
+
+        return fallbackWallpaper;
+        */
+    } else {
+        throw new Error(`Hook useWallpaper can not be used on "${router.pathname}"`);
     }
-
-    const Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;
-
-    if (Wallpaper) {
-        return Wallpaper;
-    }
-    const fallbackWallpaper = generated_wallpapers.find(
-        (wallpaper) => wallpaper.metadata.id === '7e9b434d-59bc-4d69-a486-d7401d94f5e0',
-    );
-
-    if (!fallbackWallpaper) {
-        throw new Error('Fallback wallpaper not found');
-    }
-
-    return fallbackWallpaper;
 }
