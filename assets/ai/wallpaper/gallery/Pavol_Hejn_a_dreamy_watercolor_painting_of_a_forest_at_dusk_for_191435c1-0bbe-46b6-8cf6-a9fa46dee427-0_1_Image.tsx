@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_1.json';
-import source from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_1.png';
+import source from 'https://cdn.midjourney.com/191435c1-0bbe-46b6-8cf6-a9fa46dee427/0_1.png';
+import texts from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_1.texts.json';
 
 /**
  * Image of A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog
@@ -40,27 +41,7 @@ export function ADreamyWatercolorPaintingOfAForestAtDuskFor91435c10bbe46b68cf6A9
 
 ADreamyWatercolorPaintingOfAForestAtDuskFor91435c10bbe46b68cf6A9fa46dee42701_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADreamyWatercolorPaintingOfAForestAtDuskFor91435c10bbe46b68cf6A9fa46dee42701_1_Image.colorStats = {
-    averageColor: Color.fromHex('#8c7f7c'),
-    lightestColor: Color.fromHex('#ddeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4422'), Color.fromHex('#cceeff')],
-    minmaxGreen: [Color.fromHex('#888844'), Color.fromHex('#ffddee')],
-    minmaxBlue: [Color.fromHex('#554488'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#334455'),
-    mostSaturatedColor: Color.fromHex('#220011'),
-    mostGroupedColor: Color.fromHex('#ffcc99'),
-    bottom: {
-        averageColor: Color.fromHex('#647d87'),
-        lightestColor: Color.fromHex('#ddeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#997755'), Color.fromHex('#cceeff')],
-        minmaxGreen: [Color.fromHex('#888844'), Color.fromHex('#ddeeff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#334455'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#223344'),
-    },
-} satisfies IImageColorStats;
+ADreamyWatercolorPaintingOfAForestAtDuskFor91435c10bbe46b68cf6A9fa46dee42701_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADreamyWatercolorPaintingOfAForestAtDuskFor91435c10bbe46b68cf6A9fa46dee42701_1_Image.texts =
+    texts satisfies IWallpaperTexts;

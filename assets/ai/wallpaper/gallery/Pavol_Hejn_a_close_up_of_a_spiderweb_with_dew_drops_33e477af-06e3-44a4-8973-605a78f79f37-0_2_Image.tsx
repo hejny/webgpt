@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_2.json';
-import source from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_2.png';
+import source from 'https://cdn.midjourney.com/33e477af-06e3-44a4-8973-605a78f79f37/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_2.texts.json';
 
 /**
  * Image of A close-up of a spiderweb with dew drops
@@ -40,27 +41,5 @@ export function ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f37
 
 ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_2_Image.colorStats = {
-    averageColor: Color.fromHex('#433f1a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#994411'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#668800'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#445555'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#001100'),
-    mostSaturatedColor: Color.fromHex('#223300'),
-    mostGroupedColor: Color.fromHex('#111100'),
-    bottom: {
-        averageColor: Color.fromHex('#2a270f'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa5511'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#778800'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#665555'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#001100'),
-        mostSaturatedColor: Color.fromHex('#222200'),
-        mostGroupedColor: Color.fromHex('#111100'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_2_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_2_Image.texts = texts satisfies IWallpaperTexts;

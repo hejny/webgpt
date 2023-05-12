@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_vibrant_graphic_of_a_peacock_for_a_fashion_or_beau_fde70dc3-bd26-4506-b6fd-11e8b250b25e-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_vibrant_graphic_of_a_peacock_for_a_fashion_or_beau_fde70dc3-bd26-4506-b6fd-11e8b250b25e-0_3.json';
-import source from './Pavol_Hejn_a_vibrant_graphic_of_a_peacock_for_a_fashion_or_beau_fde70dc3-bd26-4506-b6fd-11e8b250b25e-0_3.png';
+import source from 'https://cdn.midjourney.com/fde70dc3-bd26-4506-b6fd-11e8b250b25e/0_3.png';
+import texts from './Pavol_Hejn_a_vibrant_graphic_of_a_peacock_for_a_fashion_or_beau_fde70dc3-bd26-4506-b6fd-11e8b250b25e-0_3.texts.json';
 
 /**
  * Image of A vibrant graphic of a peacock for a fashion or beauty blog
@@ -40,27 +41,7 @@ export function AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11
 
 AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#264847'),
-    lightestColor: Color.fromHex('#eeeeff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#eeffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#993333'), Color.fromHex('#00eeff')],
-    minmaxGreen: [Color.fromHex('#33cc44'), Color.fromHex('#0000aa')],
-    minmaxBlue: [Color.fromHex('#0033cc'), Color.fromHex('#eeffee')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#004466'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#1f332f'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993333'), Color.fromHex('#22eeee')],
-        minmaxGreen: [Color.fromHex('#22bb44'), Color.fromHex('#000088')],
-        minmaxBlue: [Color.fromHex('#0033cc'), Color.fromHex('#ffeedd')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

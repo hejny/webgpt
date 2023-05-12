@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.colors.json';
 import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.json';
-import source from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.png';
+import source from 'https://cdn.midjourney.com/d5bb2707-a5e0-4e4f-96b1-55d4003057d7/0_2.png';
+import texts from './Pavol_Hejn_sunrise_on_a_distant_planet_d5bb2707-a5e0-4e4f-96b1-55d4003057d7-0_2.texts.json';
 
 /**
  * Image of Sunrise on a distant planet
@@ -37,27 +38,5 @@ export function SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image
 }
 
 SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#866159'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4433'), Color.fromHex('#ffffdd')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#3e343f'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#883322'), Color.fromHex('#ffffdd')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#111122'),
-    },
-} satisfies IImageColorStats;
+SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image.colorStats = hydrateColorStats(colorStats);
+SunriseOnADistantPlanetD5bb2707A5e04e4f96b155d4003057d70_2_Image.texts = texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.png';
+import source from 'https://cdn.midjourney.com/55d48163-0987-48b0-b045-37f2b79f1923/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.texts.json';
 
 /**
  * Image of A close-up of a spider on a web
@@ -37,27 +38,5 @@ export function ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image
 }
 
 ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.colorStats = {
-    averageColor: Color.fromHex('#604428'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ff0000'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#888844'), Color.fromHex('#ff0022')],
-    minmaxBlue: [Color.fromHex('#553366'), Color.fromHex('#ffee11')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#23201e'),
-        lightestColor: Color.fromHex('#ffffee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee1111'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#888844'), Color.fromHex('#ee1111')],
-        minmaxBlue: [Color.fromHex('#664477'), Color.fromHex('#ffcc00')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.texts = texts satisfies IWallpaperTexts;

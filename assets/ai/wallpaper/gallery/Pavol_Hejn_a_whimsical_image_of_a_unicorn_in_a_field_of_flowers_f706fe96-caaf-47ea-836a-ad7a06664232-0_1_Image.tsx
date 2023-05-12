@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.json';
-import source from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.png';
+import source from 'https://cdn.midjourney.com/f706fe96-caaf-47ea-836a-ad7a06664232/0_1.png';
+import texts from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.texts.json';
 
 /**
  * Image of A whimsical image of a unicorn in a field of flowers for a fantasy or fiction website
@@ -40,27 +41,7 @@ export function AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd
 
 AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_1_Image.colorStats = {
-    averageColor: Color.fromHex('#958674'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#cc2233'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#779944'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#334499'), Color.fromHex('#ffdd55')],
-    mostFrequentColor: Color.fromHex('#444422'),
-    mostSaturatedColor: Color.fromHex('#773300'),
-    mostGroupedColor: Color.fromHex('#77bbcc'),
-    bottom: {
-        averageColor: Color.fromHex('#8d644a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#cc2233'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#aa9933'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#224488'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#444422'),
-        mostSaturatedColor: Color.fromHex('#773300'),
-        mostGroupedColor: Color.fromHex('#332211'),
-    },
-} satisfies IImageColorStats;
+AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_1_Image.texts =
+    texts satisfies IWallpaperTexts;

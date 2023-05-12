@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_0.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_0.png';
+import source from 'https://cdn.midjourney.com/6c32a61d-854e-42f6-9b49-bfabb16ccdd1/0_0.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_0.texts.json';
 
 /**
  * Image of An abstract image of a planet's surface, with distorted shapes and vivid colors that create a surreal and otherworldly feel.
@@ -40,27 +41,7 @@ export function AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49B
 
 AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_0_Image.colorStats = {
-    averageColor: Color.fromHex('#484745'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#22ffee')],
-    minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#115588'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#112222'),
-    mostSaturatedColor: Color.fromHex('#220011'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#2a3d41'),
-        lightestColor: Color.fromHex('#ccffff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#88ffff')],
-        minmaxGreen: [Color.fromHex('#559977'), Color.fromHex('#eeeeee')],
-        minmaxBlue: [Color.fromHex('#115588'), Color.fromHex('#ffeebb')],
-        mostFrequentColor: Color.fromHex('#112222'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#112222'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_0_Image.texts =
+    texts satisfies IWallpaperTexts;

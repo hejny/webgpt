@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_0.json';
-import source from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_0.png';
+import source from 'https://cdn.midjourney.com/fdda81ab-66db-466e-90c1-d4baa1159494/0_0.png';
+import texts from './Pavol_Hejn_a_team_of_ainauts_piloting_a_spacecraft_through_an_a_fdda81ab-66db-466e-90c1-d4baa1159494-0_0.texts.json';
 
 /**
  * Image of A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them.
@@ -40,27 +41,7 @@ export function ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D
 
 ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_0_Image.colorStats = {
-    averageColor: Color.fromHex('#393a42'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#882211'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#449988'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#004499'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#334455'),
-    bottom: {
-        averageColor: Color.fromHex('#35373e'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#882211'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_0_Image.texts =
+    texts satisfies IWallpaperTexts;

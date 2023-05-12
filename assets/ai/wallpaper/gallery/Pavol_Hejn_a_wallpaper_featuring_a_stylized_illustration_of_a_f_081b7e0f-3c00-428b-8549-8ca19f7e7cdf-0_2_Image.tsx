@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_f_081b7e0f-3c00-428b-8549-8ca19f7e7cdf-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_f_081b7e0f-3c00-428b-8549-8ca19f7e7cdf-0_2.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_f_081b7e0f-3c00-428b-8549-8ca19f7e7cdf-0_2.png';
+import source from 'https://cdn.midjourney.com/081b7e0f-3c00-428b-8549-8ca19f7e7cdf/0_2.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_stylized_illustration_of_a_f_081b7e0f-3c00-428b-8549-8ca19f7e7cdf-0_2.texts.json';
 
 /**
  * Image of A wallpaper featuring a stylized illustration of a futuristic workspace, with a minimalist and modern design.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingAStylizedIllustrationOfAF081b7e0f3c00428b8549
 
 AWallpaperFeaturingAStylizedIllustrationOfAF081b7e0f3c00428b85498ca19f7e7cdf0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingAStylizedIllustrationOfAF081b7e0f3c00428b85498ca19f7e7cdf0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#0b253e'),
-    lightestColor: Color.fromHex('#eeffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb6677'), Color.fromHex('#99ffff')],
-    minmaxGreen: [Color.fromHex('#11bb99'), Color.fromHex('#ee66bb')],
-    minmaxBlue: [Color.fromHex('#224488'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#000022'),
-    mostSaturatedColor: Color.fromHex('#000022'),
-    mostGroupedColor: Color.fromHex('#000022'),
-    bottom: {
-        averageColor: Color.fromHex('#081f37'),
-        lightestColor: Color.fromHex('#ccffff'),
-        darkestColor: Color.fromHex('#001111'),
-        minmaxWhite: [Color.fromHex('#eeffee'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#333355'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#11bb99'), Color.fromHex('#eeeeee')],
-        minmaxBlue: [Color.fromHex('#115588'), Color.fromHex('#eeffee')],
-        mostFrequentColor: Color.fromHex('#000022'),
-        mostSaturatedColor: Color.fromHex('#000022'),
-        mostGroupedColor: Color.fromHex('#000022'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingAStylizedIllustrationOfAF081b7e0f3c00428b85498ca19f7e7cdf0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingAStylizedIllustrationOfAF081b7e0f3c00428b85498ca19f7e7cdf0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

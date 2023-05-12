@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.json';
-import source from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.png';
+import source from 'https://cdn.midjourney.com/b08189dd-e46b-48a8-89e6-110b45d1788d/0_1.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.texts.json';
 
 /**
  * Image of A close-up of a ladybug on a leaf
@@ -37,27 +38,5 @@ export function ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Ima
 }
 
 ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#37582b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb2211'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#55aa33'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#446688'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#112211'),
-    mostSaturatedColor: Color.fromHex('#224400'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#274824'),
-        lightestColor: Color.fromHex('#bbddcc'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ccffbb'), Color.fromHex('#001100')],
-        minmaxRed: [Color.fromHex('#775522'), Color.fromHex('#ccffbb')],
-        minmaxGreen: [Color.fromHex('#55aa33'), Color.fromHex('#111122')],
-        minmaxBlue: [Color.fromHex('#444444'), Color.fromHex('#ccffbb')],
-        mostFrequentColor: Color.fromHex('#112211'),
-        mostSaturatedColor: Color.fromHex('#112200'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.texts = texts satisfies IWallpaperTexts;

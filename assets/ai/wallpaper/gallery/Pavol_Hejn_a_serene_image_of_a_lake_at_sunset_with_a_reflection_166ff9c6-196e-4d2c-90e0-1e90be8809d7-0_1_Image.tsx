@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.json';
-import source from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.png';
+import source from 'https://cdn.midjourney.com/166ff9c6-196e-4d2c-90e0-1e90be8809d7/0_1.png';
+import texts from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.texts.json';
 
 /**
  * Image of A serene image of a lake at sunset with a reflection of the sky for a travel or vacation website
@@ -40,27 +41,7 @@ export function ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e9
 
 ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.colorStats = {
-    averageColor: Color.fromHex('#724f35'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4411'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#ffff66')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#222200'),
-    mostGroupedColor: Color.fromHex('#112233'),
-    bottom: {
-        averageColor: Color.fromHex('#493730'),
-        lightestColor: Color.fromHex('#ddccaa'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ddccaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd4411'), Color.fromHex('#ffdd88')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#440000')],
-        minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffdd77')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#112233'),
-    },
-} satisfies IImageColorStats;
+ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_3.json';
-import source from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_3.png';
+import source from 'https://cdn.midjourney.com/6c11a9ac-584a-4ef1-bbe8-d2518ca38b76/0_3.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_glacier_on_a_distant_planet_with_t_6c11a9ac-584a-4ef1-bbe8-d2518ca38b76-0_3.texts.json';
 
 /**
  * Image of A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.
@@ -40,27 +41,7 @@ export function APhotographOfAGlacierOnADistantPlanetWithT6c11a9ac584a4ef1Bbe8D2
 
 APhotographOfAGlacierOnADistantPlanetWithT6c11a9ac584a4ef1Bbe8D2518ca38b760_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAGlacierOnADistantPlanetWithT6c11a9ac584a4ef1Bbe8D2518ca38b760_3_Image.colorStats = {
-    averageColor: Color.fromHex('#40555e'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#666655'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#118888'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#006688'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#001122'),
-    bottom: {
-        averageColor: Color.fromHex('#4b5358'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#666655'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#448888'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335566'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#334444'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAGlacierOnADistantPlanetWithT6c11a9ac584a4ef1Bbe8D2518ca38b760_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAGlacierOnADistantPlanetWithT6c11a9ac584a4ef1Bbe8D2518ca38b760_3_Image.texts =
+    texts satisfies IWallpaperTexts;

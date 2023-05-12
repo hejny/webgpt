@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_1.png';
+import source from 'https://cdn.midjourney.com/0b4e4fca-ade1-42cf-8a5f-b6330f20645a/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_0b4e4fca-ade1-42cf-8a5f-b6330f20645a-0_1.texts.json';
 
 /**
  * Image of A wallpaper featuring a collage of futuristic technology such as drones, robots, and smart devices, set against a black background.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5
 
 AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#1a2225'),
-    lightestColor: Color.fromHex('#eeeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4411'), Color.fromHex('#55ffff')],
-    minmaxGreen: [Color.fromHex('#119966'), Color.fromHex('#eeeeff')],
-    minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#eeffff')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#171c20'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc4411'), Color.fromHex('#33eedd')],
-        minmaxGreen: [Color.fromHex('#00aa88'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#eeffff')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#001100'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingACollageOfFuturisticTechno0b4e4fcaAde142cf8a5fB6330f20645a0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

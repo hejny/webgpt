@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.json';
-import source from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.png';
+import source from 'https://cdn.midjourney.com/6e6533f5-7774-4664-a6c1-8ebb09cefb82/0_1.png';
+import texts from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.texts.json';
 
 /**
  * Image of A poster-style image of a mission to Mars, with bold typography and a futuristic color scheme that represents the ambition of space exploration.
@@ -40,27 +41,7 @@ export function APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18eb
 
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.colorStats = {
-    averageColor: Color.fromHex('#724238'),
-    lightestColor: Color.fromHex('#ffeedd'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeedd'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee2200'), Color.fromHex('#eeffbb')],
-    minmaxGreen: [Color.fromHex('#779955'), Color.fromHex('#ee2222')],
-    minmaxBlue: [Color.fromHex('#114466'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#110011'),
-    mostSaturatedColor: Color.fromHex('#004455'),
-    mostGroupedColor: Color.fromHex('#110011'),
-    bottom: {
-        averageColor: Color.fromHex('#7b231d'),
-        lightestColor: Color.fromHex('#ffeedd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee2200'), Color.fromHex('#ffeedd')],
-        minmaxGreen: [Color.fromHex('#888866'), Color.fromHex('#ee2211')],
-        minmaxBlue: [Color.fromHex('#443355'), Color.fromHex('#ffee99')],
-        mostFrequentColor: Color.fromHex('#110011'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#110011'),
-    },
-} satisfies IImageColorStats;
+APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.texts =
+    texts satisfies IWallpaperTexts;

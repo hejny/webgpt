@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_single_graphic_of_a_futuristic_ci_39a50bb2-bfe7-43cb-a6c9-56666ffc50d3-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_single_graphic_of_a_futuristic_ci_39a50bb2-bfe7-43cb-a6c9-56666ffc50d3-0_2.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_single_graphic_of_a_futuristic_ci_39a50bb2-bfe7-43cb-a6c9-56666ffc50d3-0_2.png';
+import source from 'https://cdn.midjourney.com/39a50bb2-bfe7-43cb-a6c9-56666ffc50d3/0_2.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_single_graphic_of_a_futuristic_ci_39a50bb2-bfe7-43cb-a6c9-56666ffc50d3-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a single graphic of a futuristic cityscape, in a solid color such as orange or green.
@@ -40,27 +41,7 @@ export function AWallpaperWithASingleGraphicOfAFuturisticCi39a50bb2Bfe743cbA6c95
 
 AWallpaperWithASingleGraphicOfAFuturisticCi39a50bb2Bfe743cbA6c956666ffc50d30_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASingleGraphicOfAFuturisticCi39a50bb2Bfe743cbA6c956666ffc50d30_2_Image.colorStats = {
-    averageColor: Color.fromHex('#37381d'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd3300'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#44aa55'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#115566'), Color.fromHex('#ffff66')],
-    mostFrequentColor: Color.fromHex('#224444'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#091b16'),
-        lightestColor: Color.fromHex('#bbaa77'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#aabb77'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd3300'), Color.fromHex('#118877')],
-        minmaxGreen: [Color.fromHex('#118866'), Color.fromHex('#dd3300')],
-        minmaxBlue: [Color.fromHex('#225566'), Color.fromHex('#ffbb11')],
-        mostFrequentColor: Color.fromHex('#224444'),
-        mostSaturatedColor: Color.fromHex('#002211'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASingleGraphicOfAFuturisticCi39a50bb2Bfe743cbA6c956666ffc50d30_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASingleGraphicOfAFuturisticCi39a50bb2Bfe743cbA6c956666ffc50d30_2_Image.texts =
+    texts satisfies IWallpaperTexts;

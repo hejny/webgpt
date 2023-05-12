@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_1e7100c2-35d2-421a-94b6-cc9f75bc5655-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_1e7100c2-35d2-421a-94b6-cc9f75bc5655-0_2.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_1e7100c2-35d2-421a-94b6-cc9f75bc5655-0_2.png';
+import source from 'https://cdn.midjourney.com/1e7100c2-35d2-421a-94b6-cc9f75bc5655/0_2.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_1e7100c2-35d2-421a-94b6-cc9f75bc5655-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of neon-colored circuitry, set against a black background.
@@ -40,27 +41,7 @@ export function AWallpaperWithARepeatingPatternOfNeonColored1e7100c235d2421a94b6
 
 AWallpaperWithARepeatingPatternOfNeonColored1e7100c235d2421a94b6Cc9f75bc56550_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithARepeatingPatternOfNeonColored1e7100c235d2421a94b6Cc9f75bc56550_2_Image.colorStats = {
-    averageColor: Color.fromHex('#1b1415'),
-    lightestColor: Color.fromHex('#ddeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee1111'), Color.fromHex('#00ffff')],
-    minmaxGreen: [Color.fromHex('#33cc22'), Color.fromHex('#ff22bb')],
-    minmaxBlue: [Color.fromHex('#1122cc'), Color.fromHex('#ffff33')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#331100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#161113'),
-        lightestColor: Color.fromHex('#eeeeee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee1122'), Color.fromHex('#00ffff')],
-        minmaxGreen: [Color.fromHex('#44ee55'), Color.fromHex('#ff22bb')],
-        minmaxBlue: [Color.fromHex('#4411bb'), Color.fromHex('#eeff77')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithARepeatingPatternOfNeonColored1e7100c235d2421a94b6Cc9f75bc56550_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithARepeatingPatternOfNeonColored1e7100c235d2421a94b6Cc9f75bc56550_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_2.json';
-import source from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_2.png';
+import source from 'https://cdn.midjourney.com/5a921135-14fd-45a4-94e2-4631f2036259/0_2.png';
+import texts from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_2.texts.json';
 
 /**
  * Image of A futuristic image of a cityscape with flying cars for a sci-fi or technology website
@@ -40,27 +41,7 @@ export function AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24
 
 AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_2_Image.colorStats = {
-    averageColor: Color.fromHex('#78756a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4411'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#44bb77'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#113377'), Color.fromHex('#ffee66')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#221100'),
-    mostGroupedColor: Color.fromHex('#7799aa'),
-    bottom: {
-        averageColor: Color.fromHex('#4b4539'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa4400'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#889955'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#113377'), Color.fromHex('#ffffaa')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#222200'),
-        mostGroupedColor: Color.fromHex('#222222'),
-    },
-} satisfies IImageColorStats;
+AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_2_Image.texts =
+    texts satisfies IWallpaperTexts;

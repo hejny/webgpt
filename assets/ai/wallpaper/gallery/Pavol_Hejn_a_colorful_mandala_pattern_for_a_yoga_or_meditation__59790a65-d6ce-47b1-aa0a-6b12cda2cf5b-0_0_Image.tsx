@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__59790a65-d6ce-47b1-aa0a-6b12cda2cf5b-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__59790a65-d6ce-47b1-aa0a-6b12cda2cf5b-0_0.json';
-import source from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__59790a65-d6ce-47b1-aa0a-6b12cda2cf5b-0_0.png';
+import source from 'https://cdn.midjourney.com/59790a65-d6ce-47b1-aa0a-6b12cda2cf5b/0_0.png';
+import texts from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__59790a65-d6ce-47b1-aa0a-6b12cda2cf5b-0_0.texts.json';
 
 /**
  * Image of A colorful mandala pattern for a yoga or meditation website
@@ -40,27 +41,7 @@ export function AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6
 
 AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#6b435f'),
-    lightestColor: Color.fromHex('#33eeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#99eebb'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd2233'), Color.fromHex('#00eecc')],
-    minmaxGreen: [Color.fromHex('#22ee88'), Color.fromHex('#ff11aa')],
-    minmaxBlue: [Color.fromHex('#3311aa'), Color.fromHex('#ffbb44')],
-    mostFrequentColor: Color.fromHex('#222255'),
-    mostSaturatedColor: Color.fromHex('#000033'),
-    mostGroupedColor: Color.fromHex('#ff9966'),
-    bottom: {
-        averageColor: Color.fromHex('#66395b'),
-        lightestColor: Color.fromHex('#ee44bb'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffaa99'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd2233'), Color.fromHex('#11cccc')],
-        minmaxGreen: [Color.fromHex('#22aa77'), Color.fromHex('#ff1199')],
-        minmaxBlue: [Color.fromHex('#2233aa'), Color.fromHex('#ffbb44')],
-        mostFrequentColor: Color.fromHex('#222255'),
-        mostSaturatedColor: Color.fromHex('#110022'),
-        mostGroupedColor: Color.fromHex('#ff9966'),
-    },
-} satisfies IImageColorStats;
+AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_3.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_3.json';
-import source from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_3.png';
+import source from 'https://cdn.midjourney.com/514808fe-967d-496b-977c-c3e2780ca4e6/0_3.png';
+import texts from './Pavol_Hejn_an_abstract_illustration_of_an_ai_powered_chatbot_wi_514808fe-967d-496b-977c-c3e2780ca4e6-0_3.texts.json';
 
 /**
  * Image of An abstract illustration of an AI-powered chatbot, with sleek and modern graphics and a minimalist color scheme.
@@ -40,27 +41,7 @@ export function AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977c
 
 AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_3_Image.colorStats = {
-    averageColor: Color.fromHex('#c4a29b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4444'), Color.fromHex('#99ffff')],
-    minmaxGreen: [Color.fromHex('#449988'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#114477'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#aacccc'),
-    mostSaturatedColor: Color.fromHex('#004466'),
-    mostGroupedColor: Color.fromHex('#ffddcc'),
-    bottom: {
-        averageColor: Color.fromHex('#a38a88'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc4444'), Color.fromHex('#99ffff')],
-        minmaxGreen: [Color.fromHex('#449988'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#114477'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#aacccc'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#111133'),
-    },
-} satisfies IImageColorStats;
+AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractIllustrationOfAnAiPoweredChatbotWi514808fe967d496b977cC3e2780ca4e60_3_Image.texts =
+    texts satisfies IWallpaperTexts;

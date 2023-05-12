@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_3.png';
+import source from 'https://cdn.midjourney.com/7b154014-86f3-4776-b308-fbd4055fdedb/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_3.texts.json';
 
 /**
  * Image of A close-up of a seashell on the beach
@@ -39,27 +40,5 @@ export function ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_3
 }
 
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_3_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#9f917f'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3300'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#889977'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#335599'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#335566'),
-    mostSaturatedColor: Color.fromHex('#662200'),
-    mostGroupedColor: Color.fromHex('#335566'),
-    bottom: {
-        averageColor: Color.fromHex('#756a61'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3300'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#447777'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#335566'),
-        mostSaturatedColor: Color.fromHex('#662200'),
-        mostGroupedColor: Color.fromHex('#335566'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_3_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_3_Image.texts = texts satisfies IWallpaperTexts;

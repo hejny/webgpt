@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_boat_on_calm_waters_for_a__e0742bcc-b4ec-4860-8fea-0f9e7500ff94-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_boat_on_calm_waters_for_a__e0742bcc-b4ec-4860-8fea-0f9e7500ff94-0_1.json';
-import source from './Pavol_Hejn_a_minimalist_graphic_of_a_boat_on_calm_waters_for_a__e0742bcc-b4ec-4860-8fea-0f9e7500ff94-0_1.png';
+import source from 'https://cdn.midjourney.com/e0742bcc-b4ec-4860-8fea-0f9e7500ff94/0_1.png';
+import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_boat_on_calm_waters_for_a__e0742bcc-b4ec-4860-8fea-0f9e7500ff94-0_1.texts.json';
 
 /**
  * Image of A minimalist graphic of a boat on calm waters for a boating or water sports website
@@ -40,27 +41,7 @@ export function AMinimalistGraphicOfABoatOnCalmWatersForAE0742bccB4ec48608fea0f9
 
 AMinimalistGraphicOfABoatOnCalmWatersForAE0742bccB4ec48608fea0f9e7500ff940_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistGraphicOfABoatOnCalmWatersForAE0742bccB4ec48608fea0f9e7500ff940_1_Image.colorStats = {
-    averageColor: Color.fromHex('#a3c7a6'),
-    lightestColor: Color.fromHex('#ffddee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4422'), Color.fromHex('#eeffee')],
-    minmaxGreen: [Color.fromHex('#449977'), Color.fromHex('#ffddee')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffee66')],
-    mostFrequentColor: Color.fromHex('#55aabb'),
-    mostSaturatedColor: Color.fromHex('#002222'),
-    mostGroupedColor: Color.fromHex('#44bbbb'),
-    bottom: {
-        averageColor: Color.fromHex('#53b2ad'),
-        lightestColor: Color.fromHex('#aaddcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeeeaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc5522'), Color.fromHex('#44ccbb')],
-        minmaxGreen: [Color.fromHex('#449977'), Color.fromHex('#110011')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffee66')],
-        mostFrequentColor: Color.fromHex('#55aabb'),
-        mostSaturatedColor: Color.fromHex('#002222'),
-        mostGroupedColor: Color.fromHex('#44bbbb'),
-    },
-} satisfies IImageColorStats;
+AMinimalistGraphicOfABoatOnCalmWatersForAE0742bccB4ec48608fea0f9e7500ff940_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistGraphicOfABoatOnCalmWatersForAE0742bccB4ec48608fea0f9e7500ff940_1_Image.texts =
+    texts satisfies IWallpaperTexts;

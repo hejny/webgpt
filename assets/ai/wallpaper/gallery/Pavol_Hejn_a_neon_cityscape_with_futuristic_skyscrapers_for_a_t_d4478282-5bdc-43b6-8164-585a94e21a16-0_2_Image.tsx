@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_d4478282-5bdc-43b6-8164-585a94e21a16-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_d4478282-5bdc-43b6-8164-585a94e21a16-0_2.json';
-import source from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_d4478282-5bdc-43b6-8164-585a94e21a16-0_2.png';
+import source from 'https://cdn.midjourney.com/d4478282-5bdc-43b6-8164-585a94e21a16/0_2.png';
+import texts from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_d4478282-5bdc-43b6-8164-585a94e21a16-0_2.texts.json';
 
 /**
  * Image of A neon cityscape with futuristic skyscrapers for a tech blog homepage
@@ -40,27 +41,7 @@ export function ANeonCityscapeWithFuturisticSkyscrapersForATD44782825bdc43b68164
 
 ANeonCityscapeWithFuturisticSkyscrapersForATD44782825bdc43b68164585a94e21a160_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ANeonCityscapeWithFuturisticSkyscrapersForATD44782825bdc43b68164585a94e21a160_2_Image.colorStats = {
-    averageColor: Color.fromHex('#4f266a'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#ff0011'), Color.fromHex('#11ffff')],
-    minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#ff00cc')],
-    minmaxBlue: [Color.fromHex('#0000ff'), Color.fromHex('#ffff66')],
-    mostFrequentColor: Color.fromHex('#000044'),
-    mostSaturatedColor: Color.fromHex('#000033'),
-    mostGroupedColor: Color.fromHex('#000033'),
-    bottom: {
-        averageColor: Color.fromHex('#612165'),
-        lightestColor: Color.fromHex('#ff77ff'),
-        darkestColor: Color.fromHex('#000011'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#ff0011'), Color.fromHex('#22eeff')],
-        minmaxGreen: [Color.fromHex('#007755'), Color.fromHex('#ff00cc')],
-        minmaxBlue: [Color.fromHex('#1111ff'), Color.fromHex('#ffff99')],
-        mostFrequentColor: Color.fromHex('#000044'),
-        mostSaturatedColor: Color.fromHex('#001155'),
-        mostGroupedColor: Color.fromHex('#000033'),
-    },
-} satisfies IImageColorStats;
+ANeonCityscapeWithFuturisticSkyscrapersForATD44782825bdc43b68164585a94e21a160_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ANeonCityscapeWithFuturisticSkyscrapersForATD44782825bdc43b68164585a94e21a160_2_Image.texts =
+    texts satisfies IWallpaperTexts;

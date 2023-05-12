@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa-0_2.json';
-import source from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa-0_2.png';
+import source from 'https://cdn.midjourney.com/70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa/0_2.png';
+import texts from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa-0_2.texts.json';
 
 /**
  * Image of An Art Deco-inspired pattern in shades of gold and black, with futuristic elements such as robot arms and AI nodes.
@@ -40,27 +41,7 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c
 
 AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#3b2c12'),
-    lightestColor: Color.fromHex('#ffeeaa'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeeaa'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#884400'), Color.fromHex('#ffeeaa')],
-    minmaxGreen: [Color.fromHex('#999944'), Color.fromHex('#330000')],
-    minmaxBlue: [Color.fromHex('#444444'), Color.fromHex('#ffee66')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#2c200d'),
-        lightestColor: Color.fromHex('#ffeeaa'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#884400'), Color.fromHex('#ffeeaa')],
-        minmaxGreen: [Color.fromHex('#888844'), Color.fromHex('#330000')],
-        minmaxBlue: [Color.fromHex('#444444'), Color.fromHex('#ffee77')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#443300'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

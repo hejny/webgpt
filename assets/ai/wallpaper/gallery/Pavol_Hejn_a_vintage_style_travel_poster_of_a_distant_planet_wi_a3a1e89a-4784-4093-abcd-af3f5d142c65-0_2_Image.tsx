@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_a3a1e89a-4784-4093-abcd-af3f5d142c65-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_a3a1e89a-4784-4093-abcd-af3f5d142c65-0_2.json';
-import source from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_a3a1e89a-4784-4093-abcd-af3f5d142c65-0_2.png';
+import source from 'https://cdn.midjourney.com/a3a1e89a-4784-4093-abcd-af3f5d142c65/0_2.png';
+import texts from './Pavol_Hejn_a_vintage_style_travel_poster_of_a_distant_planet_wi_a3a1e89a-4784-4093-abcd-af3f5d142c65-0_2.texts.json';
 
 /**
  * Image of A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.
@@ -40,27 +41,7 @@ export function AVintageStyleTravelPosterOfADistantPlanetWiA3a1e89a47844093AbcdA
 
 AVintageStyleTravelPosterOfADistantPlanetWiA3a1e89a47844093AbcdAf3f5d142c650_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AVintageStyleTravelPosterOfADistantPlanetWiA3a1e89a47844093AbcdAf3f5d142c650_2_Image.colorStats = {
-    averageColor: Color.fromHex('#927055'),
-    lightestColor: Color.fromHex('#ffffcc'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffcc'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee3322'), Color.fromHex('#ffffcc')],
-    minmaxGreen: [Color.fromHex('#778844'), Color.fromHex('#ee3322')],
-    minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#eecc88'),
-    mostSaturatedColor: Color.fromHex('#002222'),
-    mostGroupedColor: Color.fromHex('#eecc88'),
-    bottom: {
-        averageColor: Color.fromHex('#595148'),
-        lightestColor: Color.fromHex('#ffffcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee3322'), Color.fromHex('#ffffcc')],
-        minmaxGreen: [Color.fromHex('#778844'), Color.fromHex('#ee3322')],
-        minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#ffffaa')],
-        mostFrequentColor: Color.fromHex('#eecc88'),
-        mostSaturatedColor: Color.fromHex('#002222'),
-        mostGroupedColor: Color.fromHex('#112233'),
-    },
-} satisfies IImageColorStats;
+AVintageStyleTravelPosterOfADistantPlanetWiA3a1e89a47844093AbcdAf3f5d142c650_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AVintageStyleTravelPosterOfADistantPlanetWiA3a1e89a47844093AbcdAf3f5d142c650_2_Image.texts =
+    texts satisfies IWallpaperTexts;

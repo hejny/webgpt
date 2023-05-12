@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_tree_trunk_with_moss_cec00fc9-66d6-4464-bdda-a9976c255b88-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_tree_trunk_with_moss_cec00fc9-66d6-4464-bdda-a9976c255b88-0_2.json';
-import source from './Pavol_Hejn_a_close_up_of_a_tree_trunk_with_moss_cec00fc9-66d6-4464-bdda-a9976c255b88-0_2.png';
+import source from 'https://cdn.midjourney.com/cec00fc9-66d6-4464-bdda-a9976c255b88/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_tree_trunk_with_moss_cec00fc9-66d6-4464-bdda-a9976c255b88-0_2.texts.json';
 
 /**
  * Image of A close-up of a tree trunk with moss
@@ -37,27 +38,5 @@ export function ACloseUpOfATreeTrunkWithMossCec00fc966d64464BddaA9976c255b880_2_
 }
 
 ACloseUpOfATreeTrunkWithMossCec00fc966d64464BddaA9976c255b880_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfATreeTrunkWithMossCec00fc966d64464BddaA9976c255b880_2_Image.colorStats = {
-    averageColor: Color.fromHex('#4f4e2e'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3322'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#779944'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#112211'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#3d3a20'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3322'), Color.fromHex('#ffffdd')],
-        minmaxGreen: [Color.fromHex('#889933'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#333344'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#112211'),
-        mostSaturatedColor: Color.fromHex('#112200'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfATreeTrunkWithMossCec00fc966d64464BddaA9976c255b880_2_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfATreeTrunkWithMossCec00fc966d64464BddaA9976c255b880_2_Image.texts = texts satisfies IWallpaperTexts;

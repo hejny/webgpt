@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_0.json';
-import source from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_0.png';
+import source from 'https://cdn.midjourney.com/2bf21499-fcb4-456a-a22b-c71137352387/0_0.png';
+import texts from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_2bf21499-fcb4-456a-a22b-c71137352387-0_0.texts.json';
 
 /**
  * Image of A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows.
@@ -40,27 +41,7 @@ export function AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22b
 
 AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_0_Image.colorStats = {
-    averageColor: Color.fromHex('#181b24'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa4411'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#225599'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#0d0e13'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa4411'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#225599'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AStylizedDepictionOfASpacecraftInOrbitAround2bf21499Fcb4456aA22bC711373523870_0_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.json';
-import source from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.png';
+import source from 'https://cdn.midjourney.com/8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c/0_2.png';
+import texts from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.texts.json';
 
 /**
  * Image of A collage of vintage postcards from around the world
@@ -40,27 +41,7 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b
 
 ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#8b7257'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#111100'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#993322'), Color.fromHex('#ffffee')],
-    minmaxGreen: [Color.fromHex('#888855'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#222211'),
-    mostSaturatedColor: Color.fromHex('#221100'),
-    mostGroupedColor: Color.fromHex('#ddccaa'),
-    bottom: {
-        averageColor: Color.fromHex('#81694f'),
-        lightestColor: Color.fromHex('#eeddcc'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#eeddcc'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#995533'), Color.fromHex('#ddddcc')],
-        minmaxGreen: [Color.fromHex('#888855'), Color.fromHex('#220000')],
-        minmaxBlue: [Color.fromHex('#774455'), Color.fromHex('#eeddbb')],
-        mostFrequentColor: Color.fromHex('#222211'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#ccbb99'),
-    },
-} satisfies IImageColorStats;
+ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

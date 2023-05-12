@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_d73bd8aa-f693-43d1-8d35-8c77c7154777-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_d73bd8aa-f693-43d1-8d35-8c77c7154777-0_1.json';
-import source from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_d73bd8aa-f693-43d1-8d35-8c77c7154777-0_1.png';
+import source from 'https://cdn.midjourney.com/d73bd8aa-f693-43d1-8d35-8c77c7154777/0_1.png';
+import texts from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_d73bd8aa-f693-43d1-8d35-8c77c7154777-0_1.texts.json';
 
 /**
  * Image of A cozy winter cabin surrounded by snow-covered trees for a home decor or lifestyle blog
@@ -40,27 +41,7 @@ export function ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d35
 
 ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d358c77c71547770_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d358c77c71547770_1_Image.colorStats = {
-    averageColor: Color.fromHex('#a9adb4'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#992222'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#9999aa'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#ddddee'),
-    bottom: {
-        averageColor: Color.fromHex('#a2a7b0'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#992222'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#9999aa'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#ddddee'),
-    },
-} satisfies IImageColorStats;
+ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d358c77c71547770_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d358c77c71547770_1_Image.texts =
+    texts satisfies IWallpaperTexts;

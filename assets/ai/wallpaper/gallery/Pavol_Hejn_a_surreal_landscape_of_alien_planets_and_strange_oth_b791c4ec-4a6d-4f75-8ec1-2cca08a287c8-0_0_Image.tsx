@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_0.json';
-import source from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_0.png';
+import source from 'https://cdn.midjourney.com/b791c4ec-4a6d-4f75-8ec1-2cca08a287c8/0_0.png';
+import texts from './Pavol_Hejn_a_surreal_landscape_of_alien_planets_and_strange_oth_b791c4ec-4a6d-4f75-8ec1-2cca08a287c8-0_0.texts.json';
 
 /**
  * Image of A surreal landscape of alien planets and strange, otherworldly creatures.
@@ -40,27 +41,7 @@ export function ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec1
 
 ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec12cca08a287c80_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec12cca08a287c80_0_Image.colorStats = {
-    averageColor: Color.fromHex('#2d3a3b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#774433'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#225566'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#272b2b'),
-        lightestColor: Color.fromHex('#eeffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#774433'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#eeffff')],
-        minmaxBlue: [Color.fromHex('#225566'), Color.fromHex('#eeffee')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec12cca08a287c80_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealLandscapeOfAlienPlanetsAndStrangeOthB791c4ec4a6d4f758ec12cca08a287c80_0_Image.texts =
+    texts satisfies IWallpaperTexts;

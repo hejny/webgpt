@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_0.json';
-import source from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_0.png';
+import source from 'https://cdn.midjourney.com/8950dbf7-64f7-49af-a540-b60ce02d8a21/0_0.png';
+import texts from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_0.texts.json';
 
 /**
  * Image of A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge.
@@ -40,27 +41,7 @@ export function ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540
 
 ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.colorStats = {
-    averageColor: Color.fromHex('#2a2f3d'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3333'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#889977'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#002288'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#252129'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa4433'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#998844'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.texts =
+    texts satisfies IWallpaperTexts;

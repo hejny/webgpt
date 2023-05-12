@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.json';
-import source from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.png';
+import source from 'https://cdn.midjourney.com/54786a0e-22dd-49cc-9e74-8736592d3bc8/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.texts.json';
 
 /**
  * Image of A close-up of a dragonfly on a leaf
@@ -37,27 +38,5 @@ export function ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_I
 }
 
 ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.colorStats = {
-    averageColor: Color.fromHex('#2f6652'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc5522'), Color.fromHex('#bbffff')],
-    minmaxGreen: [Color.fromHex('#22aa33'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#1155aa'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#001100'),
-    mostSaturatedColor: Color.fromHex('#003344'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#4c756f'),
-        lightestColor: Color.fromHex('#eeeeee'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#664422'), Color.fromHex('#ccffee')],
-        minmaxGreen: [Color.fromHex('#44aa66'), Color.fromHex('#eeeeee')],
-        minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#eeffee')],
-        mostFrequentColor: Color.fromHex('#001100'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.texts = texts satisfies IWallpaperTexts;

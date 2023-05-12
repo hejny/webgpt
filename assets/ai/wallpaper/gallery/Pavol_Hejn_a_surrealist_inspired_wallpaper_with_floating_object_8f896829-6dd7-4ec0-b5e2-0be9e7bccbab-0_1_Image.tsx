@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_8f896829-6dd7-4ec0-b5e2-0be9e7bccbab-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_8f896829-6dd7-4ec0-b5e2-0be9e7bccbab-0_1.json';
-import source from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_8f896829-6dd7-4ec0-b5e2-0be9e7bccbab-0_1.png';
+import source from 'https://cdn.midjourney.com/8f896829-6dd7-4ec0-b5e2-0be9e7bccbab/0_1.png';
+import texts from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_8f896829-6dd7-4ec0-b5e2-0be9e7bccbab-0_1.texts.json';
 
 /**
  * Image of A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors.
@@ -40,27 +41,7 @@ export function ASurrealistInspiredWallpaperWithFloatingObject8f8968296dd74ec0B5
 
 ASurrealistInspiredWallpaperWithFloatingObject8f8968296dd74ec0B5e20be9e7bccbab0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealistInspiredWallpaperWithFloatingObject8f8968296dd74ec0B5e20be9e7bccbab0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#a37c4e'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb4411'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#112244'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#ccaa77'),
-    mostSaturatedColor: Color.fromHex('#332200'),
-    mostGroupedColor: Color.fromHex('#eecc99'),
-    bottom: {
-        averageColor: Color.fromHex('#8d653c'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993300'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#667744'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#112244'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#ccaa77'),
-        mostSaturatedColor: Color.fromHex('#332200'),
-        mostGroupedColor: Color.fromHex('#ccaa66'),
-    },
-} satisfies IImageColorStats;
+ASurrealistInspiredWallpaperWithFloatingObject8f8968296dd74ec0B5e20be9e7bccbab0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealistInspiredWallpaperWithFloatingObject8f8968296dd74ec0B5e20be9e7bccbab0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

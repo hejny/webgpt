@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_3.json';
-import source from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_3.png';
+import source from 'https://cdn.midjourney.com/a829bdcc-6e85-492c-a8d4-4155cb6c977f/0_3.png';
+import texts from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_3.texts.json';
 
 /**
  * Image of A black and white outline of an astronaut exploring a distant planet, with intricate details and shading.
@@ -40,27 +41,7 @@ export function ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44
 
 ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#919090'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#555555'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#ffffff'),
-    bottom: {
-        averageColor: Color.fromHex('#91908f'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#555555'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#ffffff'),
-    },
-} satisfies IImageColorStats;
+ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

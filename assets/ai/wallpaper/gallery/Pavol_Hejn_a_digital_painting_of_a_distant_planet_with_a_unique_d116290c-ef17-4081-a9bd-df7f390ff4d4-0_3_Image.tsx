@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.json';
-import source from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.png';
+import source from 'https://cdn.midjourney.com/d116290c-ef17-4081-a9bd-df7f390ff4d4/0_3.png';
+import texts from './Pavol_Hejn_a_digital_painting_of_a_distant_planet_with_a_unique_d116290c-ef17-4081-a9bd-df7f390ff4d4-0_3.texts.json';
 
 /**
  * Image of A digital painting of a distant planet, with a unique atmosphere and unusual terrain.
@@ -40,27 +41,7 @@ export function ADigitalPaintingOfADistantPlanetWithAUniqueD116290cEf174081A9bdD
 
 ADigitalPaintingOfADistantPlanetWithAUniqueD116290cEf174081A9bdDf7f390ff4d40_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalPaintingOfADistantPlanetWithAUniqueD116290cEf174081A9bdDf7f390ff4d40_3_Image.colorStats = {
-    averageColor: Color.fromHex('#565d5a'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3300'), Color.fromHex('#ffffee')],
-    minmaxGreen: [Color.fromHex('#779977'), Color.fromHex('#ffffee')],
-    minmaxBlue: [Color.fromHex('#444477'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#223344'),
-    bottom: {
-        averageColor: Color.fromHex('#453937'),
-        lightestColor: Color.fromHex('#ffffee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc3300'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffffee')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffff99')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#110000'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ADigitalPaintingOfADistantPlanetWithAUniqueD116290cEf174081A9bdDf7f390ff4d40_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalPaintingOfADistantPlanetWithAUniqueD116290cEf174081A9bdDf7f390ff4d40_3_Image.texts =
+    texts satisfies IWallpaperTexts;

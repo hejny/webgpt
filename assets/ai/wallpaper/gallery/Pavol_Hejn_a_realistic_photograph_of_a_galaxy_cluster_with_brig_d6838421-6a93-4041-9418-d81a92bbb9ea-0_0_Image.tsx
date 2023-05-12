@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.json';
-import source from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.png';
+import source from 'https://cdn.midjourney.com/d6838421-6a93-4041-9418-d81a92bbb9ea/0_0.png';
+import texts from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_d6838421-6a93-4041-9418-d81a92bbb9ea-0_0.texts.json';
 
 /**
  * Image of A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe.
@@ -40,27 +41,7 @@ export function ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418
 
 ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#3f2634'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd2200'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#bbaa44'), Color.fromHex('#1133ee')],
-    minmaxBlue: [Color.fromHex('#1133ee'), Color.fromHex('#ffcc33')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#001122'),
-    bottom: {
-        averageColor: Color.fromHex('#4a2729'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd2200'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#1133ee')],
-        minmaxBlue: [Color.fromHex('#1133ee'), Color.fromHex('#ffbb22')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

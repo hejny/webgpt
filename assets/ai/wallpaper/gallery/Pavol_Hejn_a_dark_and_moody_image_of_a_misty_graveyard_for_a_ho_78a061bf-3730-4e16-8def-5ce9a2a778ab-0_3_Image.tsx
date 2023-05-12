@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_3.json';
-import source from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_3.png';
+import source from 'https://cdn.midjourney.com/78a061bf-3730-4e16-8def-5ce9a2a778ab/0_3.png';
+import texts from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_3.texts.json';
 
 /**
  * Image of A dark and moody image of a misty graveyard for a horror or supernatural website
@@ -40,27 +41,7 @@ export function ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce
 
 ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#2e3035'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#886666'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#889977'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#15161a'),
-        lightestColor: Color.fromHex('#aaaabb'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#aaaabb'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#886666'), Color.fromHex('#aaaabb')],
-        minmaxGreen: [Color.fromHex('#778877'), Color.fromHex('#110011')],
-        minmaxBlue: [Color.fromHex('#334455'), Color.fromHex('#aaaaaa')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

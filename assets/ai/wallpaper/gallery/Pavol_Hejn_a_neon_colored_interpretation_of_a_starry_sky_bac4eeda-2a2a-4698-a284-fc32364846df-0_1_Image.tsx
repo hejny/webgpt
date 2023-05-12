@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_bac4eeda-2a2a-4698-a284-fc32364846df-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_bac4eeda-2a2a-4698-a284-fc32364846df-0_1.json';
-import source from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_bac4eeda-2a2a-4698-a284-fc32364846df-0_1.png';
+import source from 'https://cdn.midjourney.com/bac4eeda-2a2a-4698-a284-fc32364846df/0_1.png';
+import texts from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_bac4eeda-2a2a-4698-a284-fc32364846df-0_1.texts.json';
 
 /**
  * Image of A neon-colored interpretation of a starry sky
@@ -40,27 +41,6 @@ export function ANeonColoredInterpretationOfAStarrySkyBac4eeda2a2a4698A284Fc3236
 
 ANeonColoredInterpretationOfAStarrySkyBac4eeda2a2a4698A284Fc32364846df0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ANeonColoredInterpretationOfAStarrySkyBac4eeda2a2a4698A284Fc32364846df0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#2b497a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000011'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#bb3344'), Color.fromHex('#11eeee')],
-    minmaxGreen: [Color.fromHex('#22bb99'), Color.fromHex('#ee4488')],
-    minmaxBlue: [Color.fromHex('#002299'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#002255'),
-    mostSaturatedColor: Color.fromHex('#002244'),
-    mostGroupedColor: Color.fromHex('#001144'),
-    bottom: {
-        averageColor: Color.fromHex('#443667'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000011'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#bb3344'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#88bb88'), Color.fromHex('#ee4488')],
-        minmaxBlue: [Color.fromHex('#002299'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#002255'),
-        mostSaturatedColor: Color.fromHex('#002288'),
-        mostGroupedColor: Color.fromHex('#001144'),
-    },
-} satisfies IImageColorStats;
+ANeonColoredInterpretationOfAStarrySkyBac4eeda2a2a4698A284Fc32364846df0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ANeonColoredInterpretationOfAStarrySkyBac4eeda2a2a4698A284Fc32364846df0_1_Image.texts = texts satisfies IWallpaperTexts;

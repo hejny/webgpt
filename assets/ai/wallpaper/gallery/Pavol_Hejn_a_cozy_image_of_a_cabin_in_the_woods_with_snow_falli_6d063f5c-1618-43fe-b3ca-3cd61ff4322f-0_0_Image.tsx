@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_cozy_image_of_a_cabin_in_the_woods_with_snow_falli_6d063f5c-1618-43fe-b3ca-3cd61ff4322f-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_cozy_image_of_a_cabin_in_the_woods_with_snow_falli_6d063f5c-1618-43fe-b3ca-3cd61ff4322f-0_0.json';
-import source from './Pavol_Hejn_a_cozy_image_of_a_cabin_in_the_woods_with_snow_falli_6d063f5c-1618-43fe-b3ca-3cd61ff4322f-0_0.png';
+import source from 'https://cdn.midjourney.com/6d063f5c-1618-43fe-b3ca-3cd61ff4322f/0_0.png';
+import texts from './Pavol_Hejn_a_cozy_image_of_a_cabin_in_the_woods_with_snow_falli_6d063f5c-1618-43fe-b3ca-3cd61ff4322f-0_0.texts.json';
 
 /**
  * Image of A cozy image of a cabin in the woods with snow falling for a winter or holiday website.
@@ -40,27 +41,7 @@ export function ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd
 
 ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#615661'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd2200'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#aa9922'), Color.fromHex('#aa0000')],
-    minmaxBlue: [Color.fromHex('#223377'), Color.fromHex('#ffff66')],
-    mostFrequentColor: Color.fromHex('#112244'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#334455'),
-    bottom: {
-        averageColor: Color.fromHex('#675969'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc2211'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#aa9933'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#223377'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#112244'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#111133'),
-    },
-} satisfies IImageColorStats;
+ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

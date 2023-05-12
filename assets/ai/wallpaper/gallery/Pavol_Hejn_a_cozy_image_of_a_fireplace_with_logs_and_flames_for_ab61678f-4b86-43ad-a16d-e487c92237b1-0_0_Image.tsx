@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_0.json';
-import source from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_0.png';
+import source from 'https://cdn.midjourney.com/ab61678f-4b86-43ad-a16d-e487c92237b1/0_0.png';
+import texts from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_0.texts.json';
 
 /**
  * Image of A cozy image of a fireplace with logs and flames for a home decor or lifestyle blog.
@@ -40,27 +41,7 @@ export function ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE4
 
 ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.colorStats = {
-    averageColor: Color.fromHex('#3d210f'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee3300'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#5555bb'), Color.fromHex('#ffff77')],
-    mostFrequentColor: Color.fromHex('#110000'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#110000'),
-    bottom: {
-        averageColor: Color.fromHex('#371d0d'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#887744'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#443377'), Color.fromHex('#ffdd33')],
-        mostFrequentColor: Color.fromHex('#110000'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.texts =
+    texts satisfies IWallpaperTexts;

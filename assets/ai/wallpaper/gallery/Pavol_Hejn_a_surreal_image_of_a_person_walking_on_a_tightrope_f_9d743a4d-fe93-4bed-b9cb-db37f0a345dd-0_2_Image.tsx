@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_walking_on_a_tightrope_f_9d743a4d-fe93-4bed-b9cb-db37f0a345dd-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_walking_on_a_tightrope_f_9d743a4d-fe93-4bed-b9cb-db37f0a345dd-0_2.json';
-import source from './Pavol_Hejn_a_surreal_image_of_a_person_walking_on_a_tightrope_f_9d743a4d-fe93-4bed-b9cb-db37f0a345dd-0_2.png';
+import source from 'https://cdn.midjourney.com/9d743a4d-fe93-4bed-b9cb-db37f0a345dd/0_2.png';
+import texts from './Pavol_Hejn_a_surreal_image_of_a_person_walking_on_a_tightrope_f_9d743a4d-fe93-4bed-b9cb-db37f0a345dd-0_2.texts.json';
 
 /**
  * Image of A surreal image of a person walking on a tightrope for a motivational or personal development website
@@ -40,27 +41,7 @@ export function ASurrealImageOfAPersonWalkingOnATightropeF9d743a4dFe934bedB9cbDb
 
 ASurrealImageOfAPersonWalkingOnATightropeF9d743a4dFe934bedB9cbDb37f0a345dd0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealImageOfAPersonWalkingOnATightropeF9d743a4dFe934bedB9cbDb37f0a345dd0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#9b9791'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#001111'),
-    minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#001111')],
-    minmaxRed: [Color.fromHex('#aa5544'), Color.fromHex('#ddeeee')],
-    minmaxGreen: [Color.fromHex('#779988'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffeecc')],
-    mostFrequentColor: Color.fromHex('#112244'),
-    mostSaturatedColor: Color.fromHex('#001133'),
-    mostGroupedColor: Color.fromHex('#eeddcc'),
-    bottom: {
-        averageColor: Color.fromHex('#636e73'),
-        lightestColor: Color.fromHex('#ddddcc'),
-        darkestColor: Color.fromHex('#001122'),
-        minmaxWhite: [Color.fromHex('#ddddcc'), Color.fromHex('#001122')],
-        minmaxRed: [Color.fromHex('#776666'), Color.fromHex('#ddddcc')],
-        minmaxGreen: [Color.fromHex('#779988'), Color.fromHex('#ddcccc')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ddddcc')],
-        mostFrequentColor: Color.fromHex('#112244'),
-        mostSaturatedColor: Color.fromHex('#001133'),
-        mostGroupedColor: Color.fromHex('#ccbbaa'),
-    },
-} satisfies IImageColorStats;
+ASurrealImageOfAPersonWalkingOnATightropeF9d743a4dFe934bedB9cbDb37f0a345dd0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealImageOfAPersonWalkingOnATightropeF9d743a4dFe934bedB9cbDb37f0a345dd0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.json';
-import source from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.png';
+import source from 'https://cdn.midjourney.com/99431dee-0c4c-42b3-8c35-deaea2466770/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.texts.json';
 
 /**
  * Image of A close-up image of a robot's eye with neon green accents
@@ -40,27 +41,7 @@ export function ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deae
 
 ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.colorStats = {
-    averageColor: Color.fromHex('#071c16'),
-    lightestColor: Color.fromHex('#eeffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb3333'), Color.fromHex('#11eecc')],
-    minmaxGreen: [Color.fromHex('#00ff00'), Color.fromHex('#eeffff')],
-    minmaxBlue: [Color.fromHex('#005599'), Color.fromHex('#ccff11')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#040c10'),
-        lightestColor: Color.fromHex('#ddffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ddffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb3333'), Color.fromHex('#99ffff')],
-        minmaxGreen: [Color.fromHex('#00cc00'), Color.fromHex('#ddffff')],
-        minmaxBlue: [Color.fromHex('#115588'), Color.fromHex('#ddffff')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.texts =
+    texts satisfies IWallpaperTexts;

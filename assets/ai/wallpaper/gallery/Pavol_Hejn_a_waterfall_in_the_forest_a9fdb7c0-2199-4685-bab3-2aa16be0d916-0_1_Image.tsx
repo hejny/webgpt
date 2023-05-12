@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_1.json';
-import source from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_1.png';
+import source from 'https://cdn.midjourney.com/a9fdb7c0-2199-4685-bab3-2aa16be0d916/0_1.png';
+import texts from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_1.texts.json';
 
 /**
  * Image of A waterfall in the forest
@@ -37,27 +38,5 @@ export function AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_1_Image(p
 }
 
 AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_1_Image.metadata = metadata satisfies IWallpaperMetadata;
-AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_1_Image.colorStats = {
-    averageColor: Color.fromHex('#2b3523'),
-    lightestColor: Color.fromHex('#eeeeee'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#eeffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#886611'), Color.fromHex('#eeffee')],
-    minmaxGreen: [Color.fromHex('#77aa22'), Color.fromHex('#ffeedd')],
-    minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#1c211a'),
-        lightestColor: Color.fromHex('#ddeedd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ddeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#775533'), Color.fromHex('#ddeedd')],
-        minmaxGreen: [Color.fromHex('#779933'), Color.fromHex('#220000')],
-        minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#eeeeaa')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#112200'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_1_Image.colorStats = hydrateColorStats(colorStats);
+AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_1_Image.texts = texts satisfies IWallpaperTexts;

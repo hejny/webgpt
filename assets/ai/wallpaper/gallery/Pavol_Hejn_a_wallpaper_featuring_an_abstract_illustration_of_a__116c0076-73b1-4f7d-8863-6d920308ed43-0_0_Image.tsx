@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__116c0076-73b1-4f7d-8863-6d920308ed43-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__116c0076-73b1-4f7d-8863-6d920308ed43-0_0.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__116c0076-73b1-4f7d-8863-6d920308ed43-0_0.png';
+import source from 'https://cdn.midjourney.com/116c0076-73b1-4f7d-8863-6d920308ed43/0_0.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__116c0076-73b1-4f7d-8863-6d920308ed43-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfA116c007673b14f7d8863
 
 AWallpaperFeaturingAnAbstractIllustrationOfA116c007673b14f7d88636d920308ed430_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingAnAbstractIllustrationOfA116c007673b14f7d88636d920308ed430_0_Image.colorStats = {
-    averageColor: Color.fromHex('#222f4e'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc1100'), Color.fromHex('#00ffbb')],
-    minmaxGreen: [Color.fromHex('#00ee99'), Color.fromHex('#dd1133')],
-    minmaxBlue: [Color.fromHex('#1144aa'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001133'),
-    mostGroupedColor: Color.fromHex('#112244'),
-    bottom: {
-        averageColor: Color.fromHex('#282c4a'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc1133'), Color.fromHex('#55ffff')],
-        minmaxGreen: [Color.fromHex('#55aa66'), Color.fromHex('#bb0022')],
-        minmaxBlue: [Color.fromHex('#1144aa'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingAnAbstractIllustrationOfA116c007673b14f7d88636d920308ed430_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingAnAbstractIllustrationOfA116c007673b14f7d88636d920308ed430_0_Image.texts =
+    texts satisfies IWallpaperTexts;

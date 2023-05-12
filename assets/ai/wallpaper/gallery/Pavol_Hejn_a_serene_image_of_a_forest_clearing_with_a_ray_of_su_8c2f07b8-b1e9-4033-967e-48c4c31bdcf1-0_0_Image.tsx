@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.json';
-import source from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.png';
+import source from 'https://cdn.midjourney.com/8c2f07b8-b1e9-4033-967e-48c4c31bdcf1/0_0.png';
+import texts from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.texts.json';
 
 /**
  * Image of A serene image of a forest clearing with a ray of sunlight for a spiritual or mindfulness website
@@ -40,27 +41,7 @@ export function ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c
 
 ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.colorStats = {
-    averageColor: Color.fromHex('#453e25'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#884400'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#889933'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffee55')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#2e2c10'),
-        lightestColor: Color.fromHex('#ddccaa'),
-        darkestColor: Color.fromHex('#002200'),
-        minmaxWhite: [Color.fromHex('#ffee99'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#884400'), Color.fromHex('#ffee99')],
-        minmaxGreen: [Color.fromHex('#889933'), Color.fromHex('#330000')],
-        minmaxBlue: [Color.fromHex('#555555'), Color.fromHex('#ffee55')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#112200'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.texts =
+    texts satisfies IWallpaperTexts;

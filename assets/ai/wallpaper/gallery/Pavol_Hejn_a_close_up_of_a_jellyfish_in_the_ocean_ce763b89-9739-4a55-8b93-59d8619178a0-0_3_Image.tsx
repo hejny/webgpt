@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.png';
+import source from 'https://cdn.midjourney.com/ce763b89-9739-4a55-8b93-59d8619178a0/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_3.texts.json';
 
 /**
  * Image of A close-up of a jellyfish in the ocean
@@ -40,27 +41,5 @@ export function ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_
 
 ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_3_Image.colorStats = {
-    averageColor: Color.fromHex('#1c1c39'),
-    lightestColor: Color.fromHex('#ffccff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#bb8844'), Color.fromHex('#2200aa')],
-    minmaxBlue: [Color.fromHex('#0022dd'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001133'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#0d0b1c'),
-        lightestColor: Color.fromHex('#ddbbff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ddbbff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#884488'), Color.fromHex('#ddbbff')],
-        minmaxGreen: [Color.fromHex('#666699'), Color.fromHex('#cc99ff')],
-        minmaxBlue: [Color.fromHex('#2233aa'), Color.fromHex('#ddbbff')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_3_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_3_Image.texts = texts satisfies IWallpaperTexts;

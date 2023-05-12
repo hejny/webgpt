@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_waves_crashing_on_the_beach_for_dff1e602-fa8d-40a3-8bec-932885dc7994-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_waves_crashing_on_the_beach_for_dff1e602-fa8d-40a3-8bec-932885dc7994-0_2.json';
-import source from './Pavol_Hejn_an_abstract_image_of_waves_crashing_on_the_beach_for_dff1e602-fa8d-40a3-8bec-932885dc7994-0_2.png';
+import source from 'https://cdn.midjourney.com/dff1e602-fa8d-40a3-8bec-932885dc7994/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_waves_crashing_on_the_beach_for_dff1e602-fa8d-40a3-8bec-932885dc7994-0_2.texts.json';
 
 /**
  * Image of An abstract image of waves crashing on the beach for a vacation or travel website
@@ -40,27 +41,7 @@ export function AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec9
 
 AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_2_Image.colorStats = {
-    averageColor: Color.fromHex('#7b8097'),
-    lightestColor: Color.fromHex('#ffddff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd2200'), Color.fromHex('#22aaff')],
-    minmaxGreen: [Color.fromHex('#557777'), Color.fromHex('#ffccff')],
-    minmaxBlue: [Color.fromHex('#0033aa'), Color.fromHex('#ffee66')],
-    mostFrequentColor: Color.fromHex('#002244'),
-    mostSaturatedColor: Color.fromHex('#003355'),
-    mostGroupedColor: Color.fromHex('#115588'),
-    bottom: {
-        averageColor: Color.fromHex('#36587c'),
-        lightestColor: Color.fromHex('#ffccff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeeeff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc2200'), Color.fromHex('#22aaff')],
-        minmaxGreen: [Color.fromHex('#557777'), Color.fromHex('#ffccff')],
-        minmaxBlue: [Color.fromHex('#0033aa'), Color.fromHex('#ffee66')],
-        mostFrequentColor: Color.fromHex('#002244'),
-        mostSaturatedColor: Color.fromHex('#003355'),
-        mostGroupedColor: Color.fromHex('#115588'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_2_Image.texts =
+    texts satisfies IWallpaperTexts;

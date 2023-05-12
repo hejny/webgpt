@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_1.png';
+import source from 'https://cdn.midjourney.com/5709f541-7759-4663-9206-e8f11ffb514d/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a cyborg's face, against a background of digital noise and static.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8
 
 AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#3c4650'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#771122'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#447766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#225588'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#335566'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#335566'),
-    bottom: {
-        averageColor: Color.fromHex('#364552'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#771122'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#447777'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#4477aa'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#335566'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#335566'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

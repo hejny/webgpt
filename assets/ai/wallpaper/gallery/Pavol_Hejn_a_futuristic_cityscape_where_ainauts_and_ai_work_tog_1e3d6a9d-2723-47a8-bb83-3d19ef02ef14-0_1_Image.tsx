@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_1e3d6a9d-2723-47a8-bb83-3d19ef02ef14-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_1e3d6a9d-2723-47a8-bb83-3d19ef02ef14-0_1.json';
-import source from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_1e3d6a9d-2723-47a8-bb83-3d19ef02ef14-0_1.png';
+import source from 'https://cdn.midjourney.com/1e3d6a9d-2723-47a8-bb83-3d19ef02ef14/0_1.png';
+import texts from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_ai_work_tog_1e3d6a9d-2723-47a8-bb83-3d19ef02ef14-0_1.texts.json';
 
 /**
  * Image of A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure.
@@ -40,27 +41,7 @@ export function AFuturisticCityscapeWhereAinautsAndAiWorkToge3d6a9d272347a8Bb833
 
 AFuturisticCityscapeWhereAinautsAndAiWorkToge3d6a9d272347a8Bb833d19ef02ef1401_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AFuturisticCityscapeWhereAinautsAndAiWorkToge3d6a9d272347a8Bb833d19ef02ef1401_1_Image.colorStats = {
-    averageColor: Color.fromHex('#61606a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#66eeee')],
-    minmaxGreen: [Color.fromHex('#33cc66'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#224499'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#223355'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#7788aa'),
-    bottom: {
-        averageColor: Color.fromHex('#514c53'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb3311'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#889955'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#224499'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#223355'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#111122'),
-    },
-} satisfies IImageColorStats;
+AFuturisticCityscapeWhereAinautsAndAiWorkToge3d6a9d272347a8Bb833d19ef02ef1401_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AFuturisticCityscapeWhereAinautsAndAiWorkToge3d6a9d272347a8Bb833d19ef02ef1401_1_Image.texts =
+    texts satisfies IWallpaperTexts;

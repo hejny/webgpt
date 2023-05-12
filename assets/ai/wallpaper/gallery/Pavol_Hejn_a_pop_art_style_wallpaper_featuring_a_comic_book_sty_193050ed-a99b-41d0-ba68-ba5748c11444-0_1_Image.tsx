@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_193050ed-a99b-41d0-ba68-ba5748c11444-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_193050ed-a99b-41d0-ba68-ba5748c11444-0_1.json';
-import source from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_193050ed-a99b-41d0-ba68-ba5748c11444-0_1.png';
+import source from 'https://cdn.midjourney.com/193050ed-a99b-41d0-ba68-ba5748c11444/0_1.png';
+import texts from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_193050ed-a99b-41d0-ba68-ba5748c11444-0_1.texts.json';
 
 /**
  * Image of A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.
@@ -40,27 +41,7 @@ export function APopArtStyleWallpaperFeaturingAComicBookSty93050edA99b41d0Ba68Ba
 
 APopArtStyleWallpaperFeaturingAComicBookSty93050edA99b41d0Ba68Ba5748c1144401_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APopArtStyleWallpaperFeaturingAComicBookSty93050edA99b41d0Ba68Ba5748c1144401_1_Image.colorStats = {
-    averageColor: Color.fromHex('#a97a69'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb1122'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#33bb88'), Color.fromHex('#dd2255')],
-    minmaxBlue: [Color.fromHex('#333388'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#bb4455'),
-    mostSaturatedColor: Color.fromHex('#332200'),
-    mostGroupedColor: Color.fromHex('#cccccc'),
-    bottom: {
-        averageColor: Color.fromHex('#8d736b'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc2233'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#77bb77'), Color.fromHex('#dd2255')],
-        minmaxBlue: [Color.fromHex('#333388'), Color.fromHex('#ffffaa')],
-        mostFrequentColor: Color.fromHex('#bb4455'),
-        mostSaturatedColor: Color.fromHex('#332200'),
-        mostGroupedColor: Color.fromHex('#cc3344'),
-    },
-} satisfies IImageColorStats;
+APopArtStyleWallpaperFeaturingAComicBookSty93050edA99b41d0Ba68Ba5748c1144401_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APopArtStyleWallpaperFeaturingAComicBookSty93050edA99b41d0Ba68Ba5748c1144401_1_Image.texts =
+    texts satisfies IWallpaperTexts;

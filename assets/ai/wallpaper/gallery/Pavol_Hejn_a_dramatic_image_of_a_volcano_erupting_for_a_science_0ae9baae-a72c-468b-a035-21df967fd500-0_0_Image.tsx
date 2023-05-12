@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.json';
-import source from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.png';
+import source from 'https://cdn.midjourney.com/0ae9baae-a72c-468b-a035-21df967fd500/0_0.png';
+import texts from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.texts.json';
 
 /**
  * Image of A dramatic image of a volcano erupting for a science or geology blog
@@ -40,27 +41,7 @@ export function ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521
 
 ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.colorStats = {
-    averageColor: Color.fromHex('#673330'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee0000'), Color.fromHex('#ffffee')],
-    minmaxGreen: [Color.fromHex('#bb9955'), Color.fromHex('#ee0011')],
-    minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#482629'),
-        lightestColor: Color.fromHex('#ffddbb'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffddbb'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd1111'), Color.fromHex('#ffddbb')],
-        minmaxGreen: [Color.fromHex('#776666'), Color.fromHex('#cc0000')],
-        minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffddaa')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.texts =
+    texts satisfies IWallpaperTexts;

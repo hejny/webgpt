@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_sunset_with_bold_warm_colors__edbfaac0-3a34-4e16-b3a4-84e07238fdb1-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_sunset_with_bold_warm_colors__edbfaac0-3a34-4e16-b3a4-84e07238fdb1-0_2.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_sunset_with_bold_warm_colors__edbfaac0-3a34-4e16-b3a4-84e07238fdb1-0_2.png';
+import source from 'https://cdn.midjourney.com/edbfaac0-3a34-4e16-b3a4-84e07238fdb1/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_sunset_with_bold_warm_colors__edbfaac0-3a34-4e16-b3a4-84e07238fdb1-0_2.texts.json';
 
 /**
  * Image of An abstract image of a sunset with bold, warm colors for a photography or travel website
@@ -40,27 +41,7 @@ export function AnAbstractImageOfASunsetWithBoldWarmColorsEdbfaac03a344e16B3a484
 
 AnAbstractImageOfASunsetWithBoldWarmColorsEdbfaac03a344e16B3a484e07238fdb10_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfASunsetWithBoldWarmColorsEdbfaac03a344e16B3a484e07238fdb10_2_Image.colorStats = {
-    averageColor: Color.fromHex('#884431'),
-    lightestColor: Color.fromHex('#ffddcc'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeecc'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ff0011'), Color.fromHex('#ffffbb')],
-    minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#ff0011')],
-    minmaxBlue: [Color.fromHex('#336688'), Color.fromHex('#ffee55')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#ff3300'),
-    mostGroupedColor: Color.fromHex('#002233'),
-    bottom: {
-        averageColor: Color.fromHex('#1b2631'),
-        lightestColor: Color.fromHex('#77aaaa'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#cc9988'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb3322'), Color.fromHex('#449999')],
-        minmaxGreen: [Color.fromHex('#779977'), Color.fromHex('#550022')],
-        minmaxBlue: [Color.fromHex('#336688'), Color.fromHex('#dd9966')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#002233'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfASunsetWithBoldWarmColorsEdbfaac03a344e16B3a484e07238fdb10_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfASunsetWithBoldWarmColorsEdbfaac03a344e16B3a484e07238fdb10_2_Image.texts =
+    texts satisfies IWallpaperTexts;

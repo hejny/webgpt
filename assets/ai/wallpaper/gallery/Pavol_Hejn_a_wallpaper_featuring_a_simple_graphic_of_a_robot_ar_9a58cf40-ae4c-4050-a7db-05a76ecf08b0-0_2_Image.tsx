@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0_2.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0_2.png';
+import source from 'https://cdn.midjourney.com/9a58cf40-ae4c-4050-a7db-05a76ecf08b0/0_2.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_9a58cf40-ae4c-4050-a7db-05a76ecf08b0-0_2.texts.json';
 
 /**
  * Image of A wallpaper featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db0
 
 AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db05a76ecf08b00_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db05a76ecf08b00_2_Image.colorStats = {
-    averageColor: Color.fromHex('#0f1212'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#553344'), Color.fromHex('#00ffee')],
-    minmaxGreen: [Color.fromHex('#00aa77'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#225588'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#080c0d'),
-        lightestColor: Color.fromHex('#77ffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eedddd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#553344'), Color.fromHex('#00ffdd')],
-        minmaxGreen: [Color.fromHex('#00aa77'), Color.fromHex('#eedddd')],
-        minmaxBlue: [Color.fromHex('#006677'), Color.fromHex('#eedddd')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110000'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db05a76ecf08b00_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingASimpleGraphicOfARobotAr9a58cf40Ae4c4050A7db05a76ecf08b00_2_Image.texts =
+    texts satisfies IWallpaperTexts;

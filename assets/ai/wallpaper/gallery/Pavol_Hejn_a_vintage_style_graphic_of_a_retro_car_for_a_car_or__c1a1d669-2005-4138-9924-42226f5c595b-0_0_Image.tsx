@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_0.json';
-import source from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_0.png';
+import source from 'https://cdn.midjourney.com/c1a1d669-2005-4138-9924-42226f5c595b/0_0.png';
+import texts from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_0.texts.json';
 
 /**
  * Image of A vintage-style graphic of a retro car for a car or travel website
@@ -40,27 +41,7 @@ export function AVintageStyleGraphicOfARetroCarForACarOrC1a1d6692005413899244222
 
 AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#cdb36a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee3311'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#449966'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#113377'), Color.fromHex('#ffee55')],
-    mostFrequentColor: Color.fromHex('#eebb66'),
-    mostSaturatedColor: Color.fromHex('#002233'),
-    mostGroupedColor: Color.fromHex('#eebb55'),
-    bottom: {
-        averageColor: Color.fromHex('#d0b267'),
-        lightestColor: Color.fromHex('#ffeedd'),
-        darkestColor: Color.fromHex('#440000'),
-        minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#440000')],
-        minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#eeffdd')],
-        minmaxGreen: [Color.fromHex('#66aa77'), Color.fromHex('#ff4433')],
-        minmaxBlue: [Color.fromHex('#113366'), Color.fromHex('#ffffaa')],
-        mostFrequentColor: Color.fromHex('#eebb66'),
-        mostSaturatedColor: Color.fromHex('#440011'),
-        mostGroupedColor: Color.fromHex('#eebb55'),
-    },
-} satisfies IImageColorStats;
+AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

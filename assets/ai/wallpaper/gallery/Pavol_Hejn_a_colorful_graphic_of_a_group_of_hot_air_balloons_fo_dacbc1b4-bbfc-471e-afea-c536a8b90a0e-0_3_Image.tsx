@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_group_of_hot_air_balloons_fo_dacbc1b4-bbfc-471e-afea-c536a8b90a0e-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_group_of_hot_air_balloons_fo_dacbc1b4-bbfc-471e-afea-c536a8b90a0e-0_3.json';
-import source from './Pavol_Hejn_a_colorful_graphic_of_a_group_of_hot_air_balloons_fo_dacbc1b4-bbfc-471e-afea-c536a8b90a0e-0_3.png';
+import source from 'https://cdn.midjourney.com/dacbc1b4-bbfc-471e-afea-c536a8b90a0e/0_3.png';
+import texts from './Pavol_Hejn_a_colorful_graphic_of_a_group_of_hot_air_balloons_fo_dacbc1b4-bbfc-471e-afea-c536a8b90a0e-0_3.texts.json';
 
 /**
  * Image of A colorful graphic of a group of hot air balloons for a travel or adventure website
@@ -40,27 +41,7 @@ export function AColorfulGraphicOfAGroupOfHotAirBalloonsFoDacbc1b4Bbfc471eAfeaC5
 
 AColorfulGraphicOfAGroupOfHotAirBalloonsFoDacbc1b4Bbfc471eAfeaC536a8b90a0e0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AColorfulGraphicOfAGroupOfHotAirBalloonsFoDacbc1b4Bbfc471eAfeaC536a8b90a0e0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#babba1'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#bb2211'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#449977'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#ffddaa'),
-    mostSaturatedColor: Color.fromHex('#662200'),
-    mostGroupedColor: Color.fromHex('#77cccc'),
-    bottom: {
-        averageColor: Color.fromHex('#d9ccad'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#bb2211'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#558855'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#ffee66')],
-        mostFrequentColor: Color.fromHex('#ffddaa'),
-        mostSaturatedColor: Color.fromHex('#551100'),
-        mostGroupedColor: Color.fromHex('#ffddaa'),
-    },
-} satisfies IImageColorStats;
+AColorfulGraphicOfAGroupOfHotAirBalloonsFoDacbc1b4Bbfc471eAfeaC536a8b90a0e0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AColorfulGraphicOfAGroupOfHotAirBalloonsFoDacbc1b4Bbfc471eAfeaC536a8b90a0e0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

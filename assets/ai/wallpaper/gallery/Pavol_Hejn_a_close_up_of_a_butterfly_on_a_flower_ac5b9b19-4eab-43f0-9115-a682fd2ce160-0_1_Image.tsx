@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_ac5b9b19-4eab-43f0-9115-a682fd2ce160-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_ac5b9b19-4eab-43f0-9115-a682fd2ce160-0_1.json';
-import source from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_ac5b9b19-4eab-43f0-9115-a682fd2ce160-0_1.png';
+import source from 'https://cdn.midjourney.com/ac5b9b19-4eab-43f0-9115-a682fd2ce160/0_1.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_ac5b9b19-4eab-43f0-9115-a682fd2ce160-0_1.texts.json';
 
 /**
  * Image of A close-up of a butterfly on a flower
@@ -39,27 +40,5 @@ export function ACloseUpOfAButterflyOnAFlowerAc5b9b194eab43f09115A682fd2ce1600_1
 }
 
 ACloseUpOfAButterflyOnAFlowerAc5b9b194eab43f09115A682fd2ce1600_1_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfAButterflyOnAFlowerAc5b9b194eab43f09115A682fd2ce1600_1_Image.colorStats = {
-    averageColor: Color.fromHex('#5d4f26'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#779944'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#334477'), Color.fromHex('#ffcc11')],
-    mostFrequentColor: Color.fromHex('#331100'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#112211'),
-    bottom: {
-        averageColor: Color.fromHex('#2f3016'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc3300'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#779944'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#334477'), Color.fromHex('#ffbb00')],
-        mostFrequentColor: Color.fromHex('#331100'),
-        mostSaturatedColor: Color.fromHex('#441100'),
-        mostGroupedColor: Color.fromHex('#112211'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfAButterflyOnAFlowerAc5b9b194eab43f09115A682fd2ce1600_1_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfAButterflyOnAFlowerAc5b9b194eab43f09115A682fd2ce1600_1_Image.texts = texts satisfies IWallpaperTexts;

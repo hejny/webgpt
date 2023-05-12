@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_retro_poster_style_image_of_a_spaceship_in_orbit_a_ffd0e6d9-3ba7-44bf-8ea6-83545bd6a211-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_retro_poster_style_image_of_a_spaceship_in_orbit_a_ffd0e6d9-3ba7-44bf-8ea6-83545bd6a211-0_2.json';
-import source from './Pavol_Hejn_a_retro_poster_style_image_of_a_spaceship_in_orbit_a_ffd0e6d9-3ba7-44bf-8ea6-83545bd6a211-0_2.png';
+import source from 'https://cdn.midjourney.com/ffd0e6d9-3ba7-44bf-8ea6-83545bd6a211/0_2.png';
+import texts from './Pavol_Hejn_a_retro_poster_style_image_of_a_spaceship_in_orbit_a_ffd0e6d9-3ba7-44bf-8ea6-83545bd6a211-0_2.texts.json';
 
 /**
  * Image of A retro poster-style image of a spaceship in orbit around Earth, with bold colors and typography.
@@ -40,27 +41,7 @@ export function ARetroPosterStyleImageOfASpaceshipInOrbitAFfd0e6d93ba744bf8ea683
 
 ARetroPosterStyleImageOfASpaceshipInOrbitAFfd0e6d93ba744bf8ea683545bd6a2110_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ARetroPosterStyleImageOfASpaceshipInOrbitAFfd0e6d93ba744bf8ea683545bd6a2110_2_Image.colorStats = {
-    averageColor: Color.fromHex('#6f5f45'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#ddffee')],
-    minmaxGreen: [Color.fromHex('#22aa77'), Color.fromHex('#ffffee')],
-    minmaxBlue: [Color.fromHex('#114455'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#002222'),
-    mostSaturatedColor: Color.fromHex('#002233'),
-    mostGroupedColor: Color.fromHex('#112233'),
-    bottom: {
-        averageColor: Color.fromHex('#707c5a'),
-        lightestColor: Color.fromHex('#eeeedd'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee4422'), Color.fromHex('#ddffcc')],
-        minmaxGreen: [Color.fromHex('#448844'), Color.fromHex('#ee4433')],
-        minmaxBlue: [Color.fromHex('#114455'), Color.fromHex('#ffff99')],
-        mostFrequentColor: Color.fromHex('#002222'),
-        mostSaturatedColor: Color.fromHex('#002233'),
-        mostGroupedColor: Color.fromHex('#112233'),
-    },
-} satisfies IImageColorStats;
+ARetroPosterStyleImageOfASpaceshipInOrbitAFfd0e6d93ba744bf8ea683545bd6a2110_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ARetroPosterStyleImageOfASpaceshipInOrbitAFfd0e6d93ba744bf8ea683545bd6a2110_2_Image.texts =
+    texts satisfies IWallpaperTexts;

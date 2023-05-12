@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_swirling_smoke_and_fire_for_a_c_49c9efff-cce8-4fbe-92f7-90e931b5530c-0_3.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_swirling_smoke_and_fire_for_a_c_49c9efff-cce8-4fbe-92f7-90e931b5530c-0_3.json';
-import source from './Pavol_Hejn_an_abstract_image_of_swirling_smoke_and_fire_for_a_c_49c9efff-cce8-4fbe-92f7-90e931b5530c-0_3.png';
+import source from 'https://cdn.midjourney.com/49c9efff-cce8-4fbe-92f7-90e931b5530c/0_3.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_swirling_smoke_and_fire_for_a_c_49c9efff-cce8-4fbe-92f7-90e931b5530c-0_3.texts.json';
 
 /**
  * Image of An abstract image of swirling smoke and fire for a cooking or food blog
@@ -40,27 +41,7 @@ export function AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790
 
 AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#50291e'),
-    lightestColor: Color.fromHex('#ffddcc'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeecc'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc2211'), Color.fromHex('#eeeecc')],
-    minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#cc2222')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffaa00')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#220000'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#2c1a17'),
-        lightestColor: Color.fromHex('#eeccaa'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffdd99'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc2211'), Color.fromHex('#ffdd99')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#cc2211')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffbb44')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

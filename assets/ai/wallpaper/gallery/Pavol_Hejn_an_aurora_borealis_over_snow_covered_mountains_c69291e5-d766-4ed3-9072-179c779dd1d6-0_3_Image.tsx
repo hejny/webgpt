@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.colors.json';
 import metadata from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.json';
-import source from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.png';
+import source from 'https://cdn.midjourney.com/c69291e5-d766-4ed3-9072-179c779dd1d6/0_3.png';
+import texts from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.texts.json';
 
 /**
  * Image of An aurora borealis over snow-covered mountains
@@ -40,27 +41,7 @@ export function AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c
 
 AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.colorStats = {
-    averageColor: Color.fromHex('#464f4b'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3344'), Color.fromHex('#88ffee')],
-    minmaxGreen: [Color.fromHex('#55aa44'), Color.fromHex('#ffbbff')],
-    minmaxBlue: [Color.fromHex('#1133aa'), Color.fromHex('#ffff77')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#000022'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#394243'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#884433'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#55aa44'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#223377'), Color.fromHex('#ffff77')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#223344'),
-    },
-} satisfies IImageColorStats;
+AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_4727e9be-7f24-4ba5-bcb7-ef5f2b9518d2-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_4727e9be-7f24-4ba5-bcb7-ef5f2b9518d2-0_3.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_4727e9be-7f24-4ba5-bcb7-ef5f2b9518d2-0_3.png';
+import source from 'https://cdn.midjourney.com/4727e9be-7f24-4ba5-bcb7-ef5f2b9518d2/0_3.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_4727e9be-7f24-4ba5-bcb7-ef5f2b9518d2-0_3.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleGraphicOfADigitalDashb4727e9be7f244ba5Bcb7E
 
 AWallpaperWithASimpleGraphicOfADigitalDashb4727e9be7f244ba5Bcb7Ef5f2b9518d20_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleGraphicOfADigitalDashb4727e9be7f244ba5Bcb7Ef5f2b9518d20_3_Image.colorStats = {
-    averageColor: Color.fromHex('#0a1220'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4422'), Color.fromHex('#00ffff')],
-    minmaxGreen: [Color.fromHex('#00aa55'), Color.fromHex('#ee44ee')],
-    minmaxBlue: [Color.fromHex('#3322aa'), Color.fromHex('#ffdd33')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#050d18'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993333'), Color.fromHex('#00ffff')],
-        minmaxGreen: [Color.fromHex('#22aa77'), Color.fromHex('#ee55ee')],
-        minmaxBlue: [Color.fromHex('#3322aa'), Color.fromHex('#ffeeff')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleGraphicOfADigitalDashb4727e9be7f244ba5Bcb7Ef5f2b9518d20_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleGraphicOfADigitalDashb4727e9be7f244ba5Bcb7Ef5f2b9518d20_3_Image.texts =
+    texts satisfies IWallpaperTexts;

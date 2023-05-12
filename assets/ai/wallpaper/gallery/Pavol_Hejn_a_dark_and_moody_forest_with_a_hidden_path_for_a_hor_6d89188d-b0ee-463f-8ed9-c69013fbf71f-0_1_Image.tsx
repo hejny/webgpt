@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_6d89188d-b0ee-463f-8ed9-c69013fbf71f-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_6d89188d-b0ee-463f-8ed9-c69013fbf71f-0_1.json';
-import source from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_6d89188d-b0ee-463f-8ed9-c69013fbf71f-0_1.png';
+import source from 'https://cdn.midjourney.com/6d89188d-b0ee-463f-8ed9-c69013fbf71f/0_1.png';
+import texts from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_6d89188d-b0ee-463f-8ed9-c69013fbf71f-0_1.texts.json';
 
 /**
  * Image of A dark and moody forest with a hidden path for a horror or mystery website
@@ -40,27 +41,7 @@ export function ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69
 
 ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#1e2226'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#885533'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#889933'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#1e1f20'),
-        lightestColor: Color.fromHex('#eeeedd'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#885533'), Color.fromHex('#eeeedd')],
-        minmaxGreen: [Color.fromHex('#88aa66'), Color.fromHex('#eeeedd')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#eeeeaa')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

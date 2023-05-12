@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_7412cadd-3bf0-441e-84c4-25df9c061868-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_7412cadd-3bf0-441e-84c4-25df9c061868-0_3.json';
-import source from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_7412cadd-3bf0-441e-84c4-25df9c061868-0_3.png';
+import source from 'https://cdn.midjourney.com/7412cadd-3bf0-441e-84c4-25df9c061868/0_3.png';
+import texts from './Pavol_Hejn_a_group_of_ainauts_exploring_an_underground_cavern_o_7412cadd-3bf0-441e-84c4-25df9c061868-0_3.texts.json';
 
 /**
  * Image of A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them.
@@ -40,27 +41,7 @@ export function AGroupOfAinautsExploringAnUndergroundCavernO7412cadd3bf0441e84c4
 
 AGroupOfAinautsExploringAnUndergroundCavernO7412cadd3bf0441e84c425df9c0618680_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGroupOfAinautsExploringAnUndergroundCavernO7412cadd3bf0441e84c425df9c0618680_3_Image.colorStats = {
-    averageColor: Color.fromHex('#353255'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#992233'), Color.fromHex('#bbffff')],
-    minmaxGreen: [Color.fromHex('#667777'), Color.fromHex('#ffccff')],
-    minmaxBlue: [Color.fromHex('#3344aa'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#3b3151'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3344'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#668899'), Color.fromHex('#ffccff')],
-        minmaxBlue: [Color.fromHex('#334499'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+AGroupOfAinautsExploringAnUndergroundCavernO7412cadd3bf0441e84c425df9c0618680_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGroupOfAinautsExploringAnUndergroundCavernO7412cadd3bf0441e84c425df9c0618680_3_Image.texts =
+    texts satisfies IWallpaperTexts;

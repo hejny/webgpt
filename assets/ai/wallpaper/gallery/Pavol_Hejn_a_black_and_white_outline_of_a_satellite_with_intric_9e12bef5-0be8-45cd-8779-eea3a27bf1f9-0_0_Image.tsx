@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_0.json';
-import source from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_0.png';
+import source from 'https://cdn.midjourney.com/9e12bef5-0be8-45cd-8779-eea3a27bf1f9/0_0.png';
+import texts from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_0.texts.json';
 
 /**
  * Image of A black and white outline of a satellite, with intricate details that showcase its technical components and purpose.
@@ -40,27 +41,7 @@ export function ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779E
 
 ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.colorStats = {
-    averageColor: Color.fromHex('#c7c5bc'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#554455'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#ffffee'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#ffffee'),
-    bottom: {
-        averageColor: Color.fromHex('#d9d8cc'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#554455'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#ffffee'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#ffffee'),
-    },
-} satisfies IImageColorStats;
+ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.texts =
+    texts satisfies IWallpaperTexts;

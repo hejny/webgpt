@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_e431e979-4754-483d-b172-0e725be302d9-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_e431e979-4754-483d-b172-0e725be302d9-0_2.json';
-import source from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_e431e979-4754-483d-b172-0e725be302d9-0_2.png';
+import source from 'https://cdn.midjourney.com/e431e979-4754-483d-b172-0e725be302d9/0_2.png';
+import texts from './Pavol_Hejn_a_minimalist_design_featuring_ai_related_buzzwords_i_e431e979-4754-483d-b172-0e725be302d9-0_2.texts.json';
 
 /**
  * Image of A minimalist design featuring AI-related buzzwords in different fonts and colors
@@ -40,27 +41,7 @@ export function AMinimalistDesignFeaturingAiRelatedBuzzwordsIE431e9794754483dB17
 
 AMinimalistDesignFeaturingAiRelatedBuzzwordsIE431e9794754483dB1720e725be302d90_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistDesignFeaturingAiRelatedBuzzwordsIE431e9794754483dB1720e725be302d90_2_Image.colorStats = {
-    averageColor: Color.fromHex('#e3b5b8'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc0000'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#889911'), Color.fromHex('#cc0000')],
-    minmaxBlue: [Color.fromHex('#4455aa'), Color.fromHex('#ffdd33')],
-    mostFrequentColor: Color.fromHex('#ffdddd'),
-    mostSaturatedColor: Color.fromHex('#cc2200'),
-    mostGroupedColor: Color.fromHex('#ffddee'),
-    bottom: {
-        averageColor: Color.fromHex('#ebb1b1'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd2200'), Color.fromHex('#ddeeff')],
-        minmaxGreen: [Color.fromHex('#889911'), Color.fromHex('#aa0000')],
-        minmaxBlue: [Color.fromHex('#3366aa'), Color.fromHex('#ffcc22')],
-        mostFrequentColor: Color.fromHex('#ffdddd'),
-        mostSaturatedColor: Color.fromHex('#882200'),
-        mostGroupedColor: Color.fromHex('#ffddee'),
-    },
-} satisfies IImageColorStats;
+AMinimalistDesignFeaturingAiRelatedBuzzwordsIE431e9794754483dB1720e725be302d90_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistDesignFeaturingAiRelatedBuzzwordsIE431e9794754483dB1720e725be302d90_2_Image.texts =
+    texts satisfies IWallpaperTexts;

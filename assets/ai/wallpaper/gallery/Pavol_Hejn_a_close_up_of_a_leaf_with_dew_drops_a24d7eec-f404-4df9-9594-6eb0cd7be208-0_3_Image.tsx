@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_3.png';
+import source from 'https://cdn.midjourney.com/a24d7eec-f404-4df9-9594-6eb0cd7be208/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_3.texts.json';
 
 /**
  * Image of A close-up of a leaf with dew drops
@@ -37,27 +38,5 @@ export function ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_3_I
 }
 
 ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_3_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_3_Image.colorStats = {
-    averageColor: Color.fromHex('#384e32'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#002200'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#88bb11'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#445588'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#002211'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#1f2e1d'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#002200'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#448822'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#446688'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#002211'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_3_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_3_Image.texts = texts satisfies IWallpaperTexts;

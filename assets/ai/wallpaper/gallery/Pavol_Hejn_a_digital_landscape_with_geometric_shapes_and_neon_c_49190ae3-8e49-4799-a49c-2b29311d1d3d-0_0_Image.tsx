@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_49190ae3-8e49-4799-a49c-2b29311d1d3d-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_49190ae3-8e49-4799-a49c-2b29311d1d3d-0_0.json';
-import source from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_49190ae3-8e49-4799-a49c-2b29311d1d3d-0_0.png';
+import source from 'https://cdn.midjourney.com/49190ae3-8e49-4799-a49c-2b29311d1d3d/0_0.png';
+import texts from './Pavol_Hejn_a_digital_landscape_with_geometric_shapes_and_neon_c_49190ae3-8e49-4799-a49c-2b29311d1d3d-0_0.texts.json';
 
 /**
  * Image of A digital landscape with geometric shapes and neon colors
@@ -40,27 +41,7 @@ export function ADigitalLandscapeWithGeometricShapesAndNeonC49190ae38e494799A49c
 
 ADigitalLandscapeWithGeometricShapesAndNeonC49190ae38e494799A49c2b29311d1d3d0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalLandscapeWithGeometricShapesAndNeonC49190ae38e494799A49c2b29311d1d3d0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#431d41'),
-    lightestColor: Color.fromHex('#ff66ff'),
-    darkestColor: Color.fromHex('#334400'),
-    minmaxWhite: [Color.fromHex('#eeffdd'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#dd1133'), Color.fromHex('#11eeee')],
-    minmaxGreen: [Color.fromHex('#339955'), Color.fromHex('#8800ff')],
-    minmaxBlue: [Color.fromHex('#3311dd'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000022'),
-    mostGroupedColor: Color.fromHex('#000022'),
-    bottom: {
-        averageColor: Color.fromHex('#20173b'),
-        lightestColor: Color.fromHex('#ddaaee'),
-        darkestColor: Color.fromHex('#334400'),
-        minmaxWhite: [Color.fromHex('#eeffcc'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#dd2222'), Color.fromHex('#11eeee')],
-        minmaxGreen: [Color.fromHex('#339955'), Color.fromHex('#ff2288')],
-        minmaxBlue: [Color.fromHex('#1155cc'), Color.fromHex('#ffff88')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#660055'),
-        mostGroupedColor: Color.fromHex('#000022'),
-    },
-} satisfies IImageColorStats;
+ADigitalLandscapeWithGeometricShapesAndNeonC49190ae38e494799A49c2b29311d1d3d0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalLandscapeWithGeometricShapesAndNeonC49190ae38e494799A49c2b29311d1d3d0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

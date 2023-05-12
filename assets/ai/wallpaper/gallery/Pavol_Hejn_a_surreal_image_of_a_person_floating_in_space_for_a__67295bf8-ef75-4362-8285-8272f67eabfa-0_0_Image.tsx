@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__67295bf8-ef75-4362-8285-8272f67eabfa-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__67295bf8-ef75-4362-8285-8272f67eabfa-0_0.json';
-import source from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__67295bf8-ef75-4362-8285-8272f67eabfa-0_0.png';
+import source from 'https://cdn.midjourney.com/67295bf8-ef75-4362-8285-8272f67eabfa/0_0.png';
+import texts from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__67295bf8-ef75-4362-8285-8272f67eabfa-0_0.texts.json';
 
 /**
  * Image of A surreal image of a person floating in space for a spirituality or personal growth website
@@ -40,27 +41,7 @@ export function ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef7543628285827
 
 ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#60666c'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#221111'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#221111')],
-    minmaxRed: [Color.fromHex('#774433'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#557766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#222233'),
-    mostSaturatedColor: Color.fromHex('#553322'),
-    mostGroupedColor: Color.fromHex('#333344'),
-    bottom: {
-        averageColor: Color.fromHex('#414b56'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#222222'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#222222')],
-        minmaxRed: [Color.fromHex('#553333'), Color.fromHex('#ddeeee')],
-        minmaxGreen: [Color.fromHex('#557766'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#222233'),
-        mostSaturatedColor: Color.fromHex('#223344'),
-        mostGroupedColor: Color.fromHex('#222233'),
-    },
-} satisfies IImageColorStats;
+ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

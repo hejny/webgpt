@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__78fd9506-5218-4175-a1f1-baa131d72683-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__78fd9506-5218-4175-a1f1-baa131d72683-0_2.json';
-import source from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__78fd9506-5218-4175-a1f1-baa131d72683-0_2.png';
+import source from 'https://cdn.midjourney.com/78fd9506-5218-4175-a1f1-baa131d72683/0_2.png';
+import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__78fd9506-5218-4175-a1f1-baa131d72683-0_2.texts.json';
 
 /**
  * Image of A minimalist graphic of a leaf for an environmental or sustainable living website
@@ -40,27 +41,7 @@ export function AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1B
 
 AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_2_Image.colorStats = {
-    averageColor: Color.fromHex('#7cad8c'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#558844'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#558844')],
-    minmaxRed: [Color.fromHex('#667766'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#559944'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#667766'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#88aa88'),
-    mostSaturatedColor: Color.fromHex('#559944'),
-    mostGroupedColor: Color.fromHex('#77aa88'),
-    bottom: {
-        averageColor: Color.fromHex('#79ab8a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#559955'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#558855')],
-        minmaxRed: [Color.fromHex('#889977'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#559955'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#779988'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#88aa88'),
-        mostSaturatedColor: Color.fromHex('#559955'),
-        mostGroupedColor: Color.fromHex('#77aa88'),
-    },
-} satisfies IImageColorStats;
+AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_2_Image.texts =
+    texts satisfies IWallpaperTexts;

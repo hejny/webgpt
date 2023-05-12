@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_3.json';
-import source from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_3.png';
+import source from 'https://cdn.midjourney.com/fdae2082-0fae-42be-bd9d-639ddbc532f9/0_3.png';
+import texts from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_fdae2082-0fae-42be-bd9d-639ddbc532f9-0_3.texts.json';
 
 /**
  * Image of A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
@@ -40,27 +41,7 @@ export function AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d6
 
 AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_3_Image.colorStats = {
-    averageColor: Color.fromHex('#2e2f30'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#993300'), Color.fromHex('#99eeff')],
-    minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#225588'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#110000'),
-    bottom: {
-        averageColor: Color.fromHex('#231f21'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb6622'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110000'),
-        mostGroupedColor: Color.fromHex('#110000'),
-    },
-} satisfies IImageColorStats;
+AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_3_Image.texts =
+    texts satisfies IWallpaperTexts;

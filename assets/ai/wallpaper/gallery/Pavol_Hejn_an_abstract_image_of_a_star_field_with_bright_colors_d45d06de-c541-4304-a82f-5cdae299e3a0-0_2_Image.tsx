@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_d45d06de-c541-4304-a82f-5cdae299e3a0-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_d45d06de-c541-4304-a82f-5cdae299e3a0-0_2.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_d45d06de-c541-4304-a82f-5cdae299e3a0-0_2.png';
+import source from 'https://cdn.midjourney.com/d45d06de-c541-4304-a82f-5cdae299e3a0/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_d45d06de-c541-4304-a82f-5cdae299e3a0-0_2.texts.json';
 
 /**
  * Image of An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos.
@@ -40,27 +41,7 @@ export function AnAbstractImageOfAStarFieldWithBrightColorsD45d06deC5414304A82f5
 
 AnAbstractImageOfAStarFieldWithBrightColorsD45d06deC5414304A82f5cdae299e3a00_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfAStarFieldWithBrightColorsD45d06deC5414304A82f5cdae299e3a00_2_Image.colorStats = {
-    averageColor: Color.fromHex('#815a58'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc1100'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#445599'), Color.fromHex('#ffee33')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#916057'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#440000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110011')],
-        minmaxRed: [Color.fromHex('#cc2200'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#445599'), Color.fromHex('#ffee33')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#440011'),
-        mostGroupedColor: Color.fromHex('#112233'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfAStarFieldWithBrightColorsD45d06deC5414304A82f5cdae299e3a00_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfAStarFieldWithBrightColorsD45d06deC5414304A82f5cdae299e3a00_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.json';
-import source from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.png';
+import source from 'https://cdn.midjourney.com/148a2aa3-fc1a-4eaa-9083-a6250d5fab36/0_2.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__148a2aa3-fc1a-4eaa-9083-a6250d5fab36-0_2.texts.json';
 
 /**
  * Image of An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
@@ -40,27 +41,7 @@ export function AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083
 
 AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_2_Image.colorStats = {
-    averageColor: Color.fromHex('#485567'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#773322'), Color.fromHex('#99eeff')],
-    minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#54657a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#442200'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#001122')],
-        minmaxRed: [Color.fromHex('#995533'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#001133'),
-        mostGroupedColor: Color.fromHex('#112233'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_2_Image.texts =
+    texts satisfies IWallpaperTexts;

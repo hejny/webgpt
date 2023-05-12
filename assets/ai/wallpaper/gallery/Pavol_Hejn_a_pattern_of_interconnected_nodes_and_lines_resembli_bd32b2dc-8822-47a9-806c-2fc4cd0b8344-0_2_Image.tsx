@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_bd32b2dc-8822-47a9-806c-2fc4cd0b8344-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_bd32b2dc-8822-47a9-806c-2fc4cd0b8344-0_2.json';
-import source from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_bd32b2dc-8822-47a9-806c-2fc4cd0b8344-0_2.png';
+import source from 'https://cdn.midjourney.com/bd32b2dc-8822-47a9-806c-2fc4cd0b8344/0_2.png';
+import texts from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_bd32b2dc-8822-47a9-806c-2fc4cd0b8344-0_2.texts.json';
 
 /**
  * Image of A pattern of interconnected nodes and lines resembling a neural network
@@ -40,27 +41,7 @@ export function APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806
 
 APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_2_Image.colorStats = {
-    averageColor: Color.fromHex('#472525'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd1111'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#cc0011')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#220000'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#322527'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd1111'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#cc0011')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffff99')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#002222'),
-    },
-} satisfies IImageColorStats;
+APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_2_Image.texts =
+    texts satisfies IWallpaperTexts;

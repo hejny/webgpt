@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_22411c1d-dd90-4fba-9867-1ba644af8a07-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_22411c1d-dd90-4fba-9867-1ba644af8a07-0_1.json';
-import source from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_22411c1d-dd90-4fba-9867-1ba644af8a07-0_1.png';
+import source from 'https://cdn.midjourney.com/22411c1d-dd90-4fba-9867-1ba644af8a07/0_1.png';
+import texts from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_22411c1d-dd90-4fba-9867-1ba644af8a07-0_1.texts.json';
 
 /**
  * Image of A serene mountain landscape with a clear blue lake for a meditation or wellness website
@@ -40,27 +41,7 @@ export function ASereneMountainLandscapeWithAClearBlueLakeF22411c1dDd904fba98671
 
 ASereneMountainLandscapeWithAClearBlueLakeF22411c1dDd904fba98671ba644af8a070_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASereneMountainLandscapeWithAClearBlueLakeF22411c1dDd904fba98671ba644af8a070_1_Image.colorStats = {
-    averageColor: Color.fromHex('#728c8f'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#664433'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#889944'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#116688'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#555555'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#88bbcc'),
-    bottom: {
-        averageColor: Color.fromHex('#576e6d'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#664433'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667722'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#555555'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#337777'),
-    },
-} satisfies IImageColorStats;
+ASereneMountainLandscapeWithAClearBlueLakeF22411c1dDd904fba98671ba644af8a070_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASereneMountainLandscapeWithAClearBlueLakeF22411c1dDd904fba98671ba644af8a070_1_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_0.json';
-import source from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_0.png';
+import source from 'https://cdn.midjourney.com/68b1e444-349e-49ae-8929-06cb4817b8aa/0_0.png';
+import texts from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_0.texts.json';
 
 /**
  * Image of A serene image of a waterfall in the jungle for a travel or adventure website
@@ -40,27 +41,7 @@ export function ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906c
 
 ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#363a29'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#774422'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#559911'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#335566'), Color.fromHex('#eeff44')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#282d22'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#775522'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#559922'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#335566'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

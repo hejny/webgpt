@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__cc7f784e-ea5a-486d-accb-753a16fb0e61-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__cc7f784e-ea5a-486d-accb-753a16fb0e61-0_2.json';
-import source from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__cc7f784e-ea5a-486d-accb-753a16fb0e61-0_2.png';
+import source from 'https://cdn.midjourney.com/cc7f784e-ea5a-486d-accb-753a16fb0e61/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__cc7f784e-ea5a-486d-accb-753a16fb0e61-0_2.texts.json';
 
 /**
  * Image of A close-up image of a telescope lens, with the stars and planets visible in the reflection.
@@ -40,27 +41,7 @@ export function ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753
 
 ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_2_Image.colorStats = {
-    averageColor: Color.fromHex('#1a2f39'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#662222'), Color.fromHex('#aaffff')],
-    minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#005599'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#243c45'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#662222'), Color.fromHex('#aaffff')],
-        minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#005599'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_2_Image.texts =
+    texts satisfies IWallpaperTexts;

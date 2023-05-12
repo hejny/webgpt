@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.json';
-import source from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.png';
+import source from 'https://cdn.midjourney.com/75fce806-594b-474b-9f2e-a908c90002e7/0_3.png';
+import texts from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_3.texts.json';
 
 /**
  * Image of A photorealistic image of the Earth from space, with vibrant colors and intricate details.
@@ -40,27 +41,7 @@ export function APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA
 
 APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_3_Image.colorStats = {
-    averageColor: Color.fromHex('#191e25'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa5544'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#229988'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#004488'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#0c0e14'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#664444'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#446655'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_3_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_b338f5e3-b21a-440a-b10e-191c0b5847d6-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_b338f5e3-b21a-440a-b10e-191c0b5847d6-0_0.json';
-import source from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_b338f5e3-b21a-440a-b10e-191c0b5847d6-0_0.png';
+import source from 'https://cdn.midjourney.com/b338f5e3-b21a-440a-b10e-191c0b5847d6/0_0.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_b338f5e3-b21a-440a-b10e-191c0b5847d6-0_0.texts.json';
 
 /**
  * Image of A photograph of a starry night sky, with the Milky Way galaxy visible overhead.
@@ -40,27 +41,7 @@ export function APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e19
 
 APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.colorStats = {
-    averageColor: Color.fromHex('#2c3965'),
-    lightestColor: Color.fromHex('#ffddff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#663355'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#558833'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#1133aa'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#110022'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#293346'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#553355'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#558833'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#224499'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#110022'),
-        mostGroupedColor: Color.fromHex('#111122'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.texts =
+    texts satisfies IWallpaperTexts;

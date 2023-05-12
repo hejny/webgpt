@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_mountain_range_for_an_outd_938155fa-e6bd-4c27-8fc1-a32122d0bb6a-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_mountain_range_for_an_outd_938155fa-e6bd-4c27-8fc1-a32122d0bb6a-0_2.json';
-import source from './Pavol_Hejn_a_minimalist_graphic_of_a_mountain_range_for_an_outd_938155fa-e6bd-4c27-8fc1-a32122d0bb6a-0_2.png';
+import source from 'https://cdn.midjourney.com/938155fa-e6bd-4c27-8fc1-a32122d0bb6a/0_2.png';
+import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_mountain_range_for_an_outd_938155fa-e6bd-4c27-8fc1-a32122d0bb6a-0_2.texts.json';
 
 /**
  * Image of A minimalist graphic of a mountain range for an outdoor or adventure sports website
@@ -40,27 +41,7 @@ export function AMinimalistGraphicOfAMountainRangeForAnOutd938155faE6bd4c278fc1A
 
 AMinimalistGraphicOfAMountainRangeForAnOutd938155faE6bd4c278fc1A32122d0bb6a0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistGraphicOfAMountainRangeForAnOutd938155faE6bd4c278fc1A32122d0bb6a0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#b99492'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#222244'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#222244')],
-    minmaxRed: [Color.fromHex('#cc5555'), Color.fromHex('#eeffee')],
-    minmaxGreen: [Color.fromHex('#667777'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#4455aa'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#335577'),
-    mostSaturatedColor: Color.fromHex('#224466'),
-    mostGroupedColor: Color.fromHex('#335577'),
-    bottom: {
-        averageColor: Color.fromHex('#596b88'),
-        lightestColor: Color.fromHex('#ffcccc'),
-        darkestColor: Color.fromHex('#222244'),
-        minmaxWhite: [Color.fromHex('#ddddcc'), Color.fromHex('#222244')],
-        minmaxRed: [Color.fromHex('#884466'), Color.fromHex('#88cccc')],
-        minmaxGreen: [Color.fromHex('#447788'), Color.fromHex('#ffcccc')],
-        minmaxBlue: [Color.fromHex('#6666bb'), Color.fromHex('#eeddbb')],
-        mostFrequentColor: Color.fromHex('#335577'),
-        mostSaturatedColor: Color.fromHex('#224466'),
-        mostGroupedColor: Color.fromHex('#335577'),
-    },
-} satisfies IImageColorStats;
+AMinimalistGraphicOfAMountainRangeForAnOutd938155faE6bd4c278fc1A32122d0bb6a0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistGraphicOfAMountainRangeForAnOutd938155faE6bd4c278fc1A32122d0bb6a0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

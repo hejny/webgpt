@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_6a0aaaf3-09e3-44b4-a355-28da9aa9bfb4-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_6a0aaaf3-09e3-44b4-a355-28da9aa9bfb4-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_6a0aaaf3-09e3-44b4-a355-28da9aa9bfb4-0_1.png';
+import source from 'https://cdn.midjourney.com/6a0aaaf3-09e3-44b4-a355-28da9aa9bfb4/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_black_and_white_graphic_of_6a0aaaf3-09e3-44b4-a355-28da9aa9bfb4-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a simple black and white graphic of a robot's head, against a solid colored background.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleBlackAndWhiteGraphicOf6a0aaaf309e344b4A3552
 
 AWallpaperWithASimpleBlackAndWhiteGraphicOf6a0aaaf309e344b4A35528da9aa9bfb40_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleBlackAndWhiteGraphicOf6a0aaaf309e344b4A35528da9aa9bfb40_1_Image.colorStats = {
-    averageColor: Color.fromHex('#343433'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#222222'),
-    bottom: {
-        averageColor: Color.fromHex('#2a2928'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#222222'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleBlackAndWhiteGraphicOf6a0aaaf309e344b4A35528da9aa9bfb40_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleBlackAndWhiteGraphicOf6a0aaaf309e344b4A35528da9aa9bfb40_1_Image.texts =
+    texts satisfies IWallpaperTexts;

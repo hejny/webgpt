@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.json';
-import source from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.png';
+import source from 'https://cdn.midjourney.com/37267751-5121-44b4-b98a-3d8e2e6ea256/0_3.png';
+import texts from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.texts.json';
 
 /**
  * Image of A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity.
@@ -40,27 +41,7 @@ export function ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8
 
 ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.colorStats = {
-    averageColor: Color.fromHex('#4a393d'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee1100'), Color.fromHex('#00ffff')],
-    minmaxGreen: [Color.fromHex('#55cc77'), Color.fromHex('#ee22dd')],
-    minmaxBlue: [Color.fromHex('#0044aa'), Color.fromHex('#ffcc00')],
-    mostFrequentColor: Color.fromHex('#663333'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#404752'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee1100'), Color.fromHex('#00ffff')],
-        minmaxGreen: [Color.fromHex('#55cc77'), Color.fromHex('#ff0055')],
-        minmaxBlue: [Color.fromHex('#0044aa'), Color.fromHex('#ffcc00')],
-        mostFrequentColor: Color.fromHex('#663333'),
-        mostSaturatedColor: Color.fromHex('#330022'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.texts =
+    texts satisfies IWallpaperTexts;

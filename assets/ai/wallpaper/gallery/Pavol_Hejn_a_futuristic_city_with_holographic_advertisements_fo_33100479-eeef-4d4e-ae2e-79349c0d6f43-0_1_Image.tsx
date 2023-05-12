@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_1.json';
-import source from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_1.png';
+import source from 'https://cdn.midjourney.com/33100479-eeef-4d4e-ae2e-79349c0d6f43/0_1.png';
+import texts from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_1.texts.json';
 
 /**
  * Image of A futuristic city with holographic advertisements for a tech or innovation website
@@ -40,27 +41,7 @@ export function AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe
 
 AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_1_Image.colorStats = {
-    averageColor: Color.fromHex('#49596d'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc2222'), Color.fromHex('#11eeff')],
-    minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#1144bb'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#003344'),
-    bottom: {
-        averageColor: Color.fromHex('#4e5261'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#88ffff')],
-        minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#ffddff')],
-        minmaxBlue: [Color.fromHex('#2233aa'), Color.fromHex('#ffff88')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#222233'),
-    },
-} satisfies IImageColorStats;
+AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_1_Image.texts =
+    texts satisfies IWallpaperTexts;

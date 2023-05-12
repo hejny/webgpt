@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_starfish_in_the_ocean_fc04bdaa-3501-4c7a-b6ec-442da9c1d3b7-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_starfish_in_the_ocean_fc04bdaa-3501-4c7a-b6ec-442da9c1d3b7-0_2.json';
-import source from './Pavol_Hejn_a_close_up_of_a_starfish_in_the_ocean_fc04bdaa-3501-4c7a-b6ec-442da9c1d3b7-0_2.png';
+import source from 'https://cdn.midjourney.com/fc04bdaa-3501-4c7a-b6ec-442da9c1d3b7/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_starfish_in_the_ocean_fc04bdaa-3501-4c7a-b6ec-442da9c1d3b7-0_2.texts.json';
 
 /**
  * Image of A close-up of a starfish in the ocean
@@ -39,27 +40,5 @@ export function ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_2
 }
 
 ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#5c8283'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#339966'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffdd22')],
-    mostFrequentColor: Color.fromHex('#002222'),
-    mostSaturatedColor: Color.fromHex('#007788'),
-    mostGroupedColor: Color.fromHex('#008888'),
-    bottom: {
-        averageColor: Color.fromHex('#2f6564'),
-        lightestColor: Color.fromHex('#ddeeee'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#ccffdd')],
-        minmaxGreen: [Color.fromHex('#66aa66'), Color.fromHex('#770000')],
-        minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffee55')],
-        mostFrequentColor: Color.fromHex('#002222'),
-        mostSaturatedColor: Color.fromHex('#007788'),
-        mostGroupedColor: Color.fromHex('#008888'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_2_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_2_Image.texts = texts satisfies IWallpaperTexts;

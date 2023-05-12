@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615-e745-40d1-afef-62086ed8ea7c-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615-e745-40d1-afef-62086ed8ea7c-0_2.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615-e745-40d1-afef-62086ed8ea7c-0_2.png';
+import source from 'https://cdn.midjourney.com/62b90615-e745-40d1-afef-62086ed8ea7c/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_62b90615-e745-40d1-afef-62086ed8ea7c-0_2.texts.json';
 
 /**
  * Image of An abstract image of a deep space object, such as a black hole or pulsar, with swirling colors and patterns.
@@ -40,27 +41,7 @@ export function AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef620
 
 AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef62086ed8ea7c0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef62086ed8ea7c0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#131216'),
-    lightestColor: Color.fromHex('#ffccff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa1133'), Color.fromHex('#22eeff')],
-    minmaxGreen: [Color.fromHex('#779911'), Color.fromHex('#ff88ff')],
-    minmaxBlue: [Color.fromHex('#2233aa'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#121418'),
-        lightestColor: Color.fromHex('#ff88ff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa1144'), Color.fromHex('#22eeff')],
-        minmaxGreen: [Color.fromHex('#66aa77'), Color.fromHex('#ff88ff')],
-        minmaxBlue: [Color.fromHex('#4444aa'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef62086ed8ea7c0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfADeepSpaceObjectSuchAsAB62b90615E74540d1Afef62086ed8ea7c0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

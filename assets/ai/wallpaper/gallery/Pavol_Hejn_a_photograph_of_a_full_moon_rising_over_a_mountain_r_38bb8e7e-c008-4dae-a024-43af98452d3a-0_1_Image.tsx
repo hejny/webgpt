@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_1.json';
-import source from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_1.png';
+import source from 'https://cdn.midjourney.com/38bb8e7e-c008-4dae-a024-43af98452d3a/0_1.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_38bb8e7e-c008-4dae-a024-43af98452d3a-0_1.texts.json';
 
 /**
  * Image of A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.
@@ -40,27 +41,7 @@ export function APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443
 
 APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443af98452d3a0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443af98452d3a0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#4c504d'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#664444'), Color.fromHex('#ffffee')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#383d3d'),
-        lightestColor: Color.fromHex('#dddddd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#dddddd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#ccdddd')],
-        minmaxGreen: [Color.fromHex('#668877'), Color.fromHex('#000011')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#dddddd')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443af98452d3a0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAFullMoonRisingOverAMountainR38bb8e7eC0084daeA02443af98452d3a0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

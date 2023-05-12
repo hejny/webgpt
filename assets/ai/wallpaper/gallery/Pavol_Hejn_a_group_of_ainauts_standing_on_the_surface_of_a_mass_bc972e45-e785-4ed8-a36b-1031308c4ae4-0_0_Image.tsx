@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_bc972e45-e785-4ed8-a36b-1031308c4ae4-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_bc972e45-e785-4ed8-a36b-1031308c4ae4-0_0.json';
-import source from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_bc972e45-e785-4ed8-a36b-1031308c4ae4-0_0.png';
+import source from 'https://cdn.midjourney.com/bc972e45-e785-4ed8-a36b-1031308c4ae4/0_0.png';
+import texts from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_mass_bc972e45-e785-4ed8-a36b-1031308c4ae4-0_0.texts.json';
 
 /**
  * Image of A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.
@@ -40,27 +41,7 @@ export function AGroupOfAinautsStandingOnTheSurfaceOfAMassBc972e45E7854ed8A36b10
 
 AGroupOfAinautsStandingOnTheSurfaceOfAMassBc972e45E7854ed8A36b1031308c4ae40_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGroupOfAinautsStandingOnTheSurfaceOfAMassBc972e45E7854ed8A36b1031308c4ae40_0_Image.colorStats = {
-    averageColor: Color.fromHex('#735f66'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#cc3300'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#777766'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#335599'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#110011'),
-    mostSaturatedColor: Color.fromHex('#220000'),
-    mostGroupedColor: Color.fromHex('#446699'),
-    bottom: {
-        averageColor: Color.fromHex('#7c4437'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#cc3300'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#777766'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#445588'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#110011'),
-        mostSaturatedColor: Color.fromHex('#220000'),
-        mostGroupedColor: Color.fromHex('#221111'),
-    },
-} satisfies IImageColorStats;
+AGroupOfAinautsStandingOnTheSurfaceOfAMassBc972e45E7854ed8A36b1031308c4ae40_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGroupOfAinautsStandingOnTheSurfaceOfAMassBc972e45E7854ed8A36b1031308c4ae40_0_Image.texts =
+    texts satisfies IWallpaperTexts;

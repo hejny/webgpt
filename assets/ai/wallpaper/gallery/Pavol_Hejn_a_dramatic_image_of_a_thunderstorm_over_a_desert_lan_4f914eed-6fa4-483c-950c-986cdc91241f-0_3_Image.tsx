@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.json';
-import source from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.png';
+import source from 'https://cdn.midjourney.com/4f914eed-6fa4-483c-950c-986cdc91241f/0_3.png';
+import texts from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.texts.json';
 
 /**
  * Image of A dramatic image of a thunderstorm over a desert landscape for a weather or news website
@@ -40,27 +41,7 @@ export function ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c9
 
 ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#4d3933'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#bb3300'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#557766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#773300'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#5c2e21'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#bb3300'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#887755'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#773300'),
-        mostGroupedColor: Color.fromHex('#221111'),
-    },
-} satisfies IImageColorStats;
+ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

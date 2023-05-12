@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_9ee902b4-0222-417b-bf9e-c2f318e9cbba-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_9ee902b4-0222-417b-bf9e-c2f318e9cbba-0_3.json';
-import source from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_9ee902b4-0222-417b-bf9e-c2f318e9cbba-0_3.png';
+import source from 'https://cdn.midjourney.com/9ee902b4-0222-417b-bf9e-c2f318e9cbba/0_3.png';
+import texts from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_9ee902b4-0222-417b-bf9e-c2f318e9cbba-0_3.texts.json';
 
 /**
  * Image of A colorful graphic of a bicycle for a cycling or fitness blog
@@ -40,27 +41,7 @@ export function AColorfulGraphicOfABicycleForACyclingOrFit9ee902b40222417bBf9eC2
 
 AColorfulGraphicOfABicycleForACyclingOrFit9ee902b40222417bBf9eC2f318e9cbba0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AColorfulGraphicOfABicycleForACyclingOrFit9ee902b40222417bBf9eC2f318e9cbba0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#c09d84'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111111'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000022')],
-    minmaxRed: [Color.fromHex('#ee1122'), Color.fromHex('#33eeff')],
-    minmaxGreen: [Color.fromHex('#669966'), Color.fromHex('#ee1133')],
-    minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffdd33')],
-    mostFrequentColor: Color.fromHex('#55aabb'),
-    mostSaturatedColor: Color.fromHex('#990033'),
-    mostGroupedColor: Color.fromHex('#ffddbb'),
-    bottom: {
-        averageColor: Color.fromHex('#94857e'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#111111'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110011')],
-        minmaxRed: [Color.fromHex('#ee1122'), Color.fromHex('#33eeff')],
-        minmaxGreen: [Color.fromHex('#669966'), Color.fromHex('#ee1122')],
-        minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffdd33')],
-        mostFrequentColor: Color.fromHex('#55aabb'),
-        mostSaturatedColor: Color.fromHex('#990033'),
-        mostGroupedColor: Color.fromHex('#44aabb'),
-    },
-} satisfies IImageColorStats;
+AColorfulGraphicOfABicycleForACyclingOrFit9ee902b40222417bBf9eC2f318e9cbba0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AColorfulGraphicOfABicycleForACyclingOrFit9ee902b40222417bBf9eC2f318e9cbba0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

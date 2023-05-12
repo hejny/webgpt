@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_underwater_scene_with_coral_and_fish_760ff8ac-0b2c-42c8-b335-bcd4eb186390-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_underwater_scene_with_coral_and_fish_760ff8ac-0b2c-42c8-b335-bcd4eb186390-0_1.json';
-import source from './Pavol_Hejn_an_underwater_scene_with_coral_and_fish_760ff8ac-0b2c-42c8-b335-bcd4eb186390-0_1.png';
+import source from 'https://cdn.midjourney.com/760ff8ac-0b2c-42c8-b335-bcd4eb186390/0_1.png';
+import texts from './Pavol_Hejn_an_underwater_scene_with_coral_and_fish_760ff8ac-0b2c-42c8-b335-bcd4eb186390-0_1.texts.json';
 
 /**
  * Image of An underwater scene with coral and fish
@@ -40,27 +41,5 @@ export function AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb18639
 
 AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_1_Image.colorStats = {
-    averageColor: Color.fromHex('#464745'),
-    lightestColor: Color.fromHex('#ddddff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc2211'), Color.fromHex('#11dddd')],
-    minmaxGreen: [Color.fromHex('#44cc77'), Color.fromHex('#ee3344')],
-    minmaxBlue: [Color.fromHex('#115599'), Color.fromHex('#ffdd11')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#5b4137'),
-        lightestColor: Color.fromHex('#ffccee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd3311'), Color.fromHex('#77eeff')],
-        minmaxGreen: [Color.fromHex('#66bb66'), Color.fromHex('#ee3344')],
-        minmaxBlue: [Color.fromHex('#115588'), Color.fromHex('#ffcc22')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_1_Image.colorStats = hydrateColorStats(colorStats);
+AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_1_Image.texts = texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_68938bae-be07-4109-aa15-80a8f6bf1505-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_68938bae-be07-4109-aa15-80a8f6bf1505-0_0.json';
-import source from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_68938bae-be07-4109-aa15-80a8f6bf1505-0_0.png';
+import source from 'https://cdn.midjourney.com/68938bae-be07-4109-aa15-80a8f6bf1505/0_0.png';
+import texts from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_68938bae-be07-4109-aa15-80a8f6bf1505-0_0.texts.json';
 
 /**
  * Image of A photograph of an astronaut standing on the surface of the moon with Earth in the background.
@@ -40,27 +41,7 @@ export function APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa15
 
 APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa1580a8f6bf15050_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa1580a8f6bf15050_0_Image.colorStats = {
-    averageColor: Color.fromHex('#33373f'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#772211'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#444455'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#606061'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#664444'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#444455'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa1580a8f6bf15050_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAnAstronautStandingOnTheSurface68938baeBe074109Aa1580a8f6bf15050_0_Image.texts =
+    texts satisfies IWallpaperTexts;

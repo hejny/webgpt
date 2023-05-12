@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_8390aaa9-34c4-4170-af28-4cb4b21ea18f-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_8390aaa9-34c4-4170-af28-4cb4b21ea18f-0_1.json';
-import source from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_8390aaa9-34c4-4170-af28-4cb4b21ea18f-0_1.png';
+import source from 'https://cdn.midjourney.com/8390aaa9-34c4-4170-af28-4cb4b21ea18f/0_1.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_8390aaa9-34c4-4170-af28-4cb4b21ea18f-0_1.texts.json';
 
 /**
  * Image of A close-up of a snail on a leaf
@@ -37,27 +38,5 @@ export function ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_1_Image
 }
 
 ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#506132'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3300'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#55aa22'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#443355'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#334400'),
-    mostGroupedColor: Color.fromHex('#112200'),
-    bottom: {
-        averageColor: Color.fromHex('#314911'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993311'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#66aa22'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#222200'),
-        mostGroupedColor: Color.fromHex('#112200'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_1_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_1_Image.texts = texts satisfies IWallpaperTexts;

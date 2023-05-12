@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_3.json';
-import source from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_3.png';
+import source from 'https://cdn.midjourney.com/056d488d-cbd3-4ae0-aa4b-11a3b5653109/0_3.png';
+import texts from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__056d488d-cbd3-4ae0-aa4b-11a3b5653109-0_3.texts.json';
 
 /**
  * Image of A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.
@@ -40,27 +41,7 @@ export function AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a
 
 AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_3_Image.colorStats = {
-    averageColor: Color.fromHex('#4f443b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#995533'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#221111'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#333333'),
-    bottom: {
-        averageColor: Color.fromHex('#342e2d'),
-        lightestColor: Color.fromHex('#88aacc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#bbbb99'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#885533'), Color.fromHex('#77bbcc')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#220000')],
-        minmaxBlue: [Color.fromHex('#556677'), Color.fromHex('#bbbb99')],
-        mostFrequentColor: Color.fromHex('#221111'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#333333'),
-    },
-} satisfies IImageColorStats;
+AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_3_Image.texts =
+    texts satisfies IWallpaperTexts;

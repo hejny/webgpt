@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.json';
-import source from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.png';
+import source from 'https://cdn.midjourney.com/4bdd858a-c789-4652-ab2b-5f31a22a6bd7/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.texts.json';
 
 /**
  * Image of An abstract pattern with bright colors
@@ -40,27 +41,5 @@ export function AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd
 
 AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#d48673'),
-    lightestColor: Color.fromHex('#eeccff'),
-    darkestColor: Color.fromHex('#221122'),
-    minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#111133')],
-    minmaxRed: [Color.fromHex('#ee2200'), Color.fromHex('#ffffcc')],
-    minmaxGreen: [Color.fromHex('#66aa99'), Color.fromHex('#ee1144')],
-    minmaxBlue: [Color.fromHex('#113399'), Color.fromHex('#ffee33')],
-    mostFrequentColor: Color.fromHex('#aa6677'),
-    mostSaturatedColor: Color.fromHex('#ffbb00'),
-    mostGroupedColor: Color.fromHex('#ff9911'),
-    bottom: {
-        averageColor: Color.fromHex('#db856d'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#cc2200'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#001155')],
-        minmaxRed: [Color.fromHex('#ee2200'), Color.fromHex('#ffeeee')],
-        minmaxGreen: [Color.fromHex('#bb9955'), Color.fromHex('#ee1144')],
-        minmaxBlue: [Color.fromHex('#113399'), Color.fromHex('#ffee44')],
-        mostFrequentColor: Color.fromHex('#aa6677'),
-        mostSaturatedColor: Color.fromHex('#ee8800'),
-        mostGroupedColor: Color.fromHex('#ff9911'),
-    },
-} satisfies IImageColorStats;
+AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.colorStats = hydrateColorStats(colorStats);
+AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.texts = texts satisfies IWallpaperTexts;

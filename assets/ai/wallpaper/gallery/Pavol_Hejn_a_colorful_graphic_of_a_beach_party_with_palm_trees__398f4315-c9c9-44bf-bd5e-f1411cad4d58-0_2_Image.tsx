@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.json';
-import source from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.png';
+import source from 'https://cdn.midjourney.com/398f4315-c9c9-44bf-bd5e-f1411cad4d58/0_2.png';
+import texts from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.texts.json';
 
 /**
  * Image of A colorful graphic of a beach party with palm trees and cocktails for a vacation or travel website
@@ -40,27 +41,7 @@ export function AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1
 
 AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.colorStats = {
-    averageColor: Color.fromHex('#876863'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#222222'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#001155')],
-    minmaxRed: [Color.fromHex('#ee1133'), Color.fromHex('#11eedd')],
-    minmaxGreen: [Color.fromHex('#44aa55'), Color.fromHex('#ff1166')],
-    minmaxBlue: [Color.fromHex('#003399'), Color.fromHex('#ffff33')],
-    mostFrequentColor: Color.fromHex('#002255'),
-    mostSaturatedColor: Color.fromHex('#005577'),
-    mostGroupedColor: Color.fromHex('#002255'),
-    bottom: {
-        averageColor: Color.fromHex('#2c5975'),
-        lightestColor: Color.fromHex('#ffffee'),
-        darkestColor: Color.fromHex('#114433'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#111144')],
-        minmaxRed: [Color.fromHex('#ee3344'), Color.fromHex('#11eedd')],
-        minmaxGreen: [Color.fromHex('#77cc66'), Color.fromHex('#ff4466')],
-        minmaxBlue: [Color.fromHex('#004499'), Color.fromHex('#ffff33')],
-        mostFrequentColor: Color.fromHex('#002255'),
-        mostSaturatedColor: Color.fromHex('#002266'),
-        mostGroupedColor: Color.fromHex('#002255'),
-    },
-} satisfies IImageColorStats;
+AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.texts =
+    texts satisfies IWallpaperTexts;

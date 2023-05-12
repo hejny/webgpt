@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10-c1bb-40dc-8bb0-234ffb78f253-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10-c1bb-40dc-8bb0-234ffb78f253-0_1.json';
-import source from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10-c1bb-40dc-8bb0-234ffb78f253-0_1.png';
+import source from 'https://cdn.midjourney.com/888a4d10-c1bb-40dc-8bb0-234ffb78f253/0_1.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_888a4d10-c1bb-40dc-8bb0-234ffb78f253-0_1.texts.json';
 
 /**
  * Image of A photograph of a mountain range on another planet, with the bright sun shining through the peaks.
@@ -40,27 +41,7 @@ export function APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb02
 
 APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb0234ffb78f2530_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb0234ffb78f2530_1_Image.colorStats = {
-    averageColor: Color.fromHex('#806859'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#993300'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#779988'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#222222'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#ffeedd'),
-    bottom: {
-        averageColor: Color.fromHex('#4c3127'),
-        lightestColor: Color.fromHex('#ccbbaa'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffcc88'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993300'), Color.fromHex('#ccbbaa')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#550000')],
-        minmaxBlue: [Color.fromHex('#443355'), Color.fromHex('#ffcc88')],
-        mostFrequentColor: Color.fromHex('#222222'),
-        mostSaturatedColor: Color.fromHex('#220011'),
-        mostGroupedColor: Color.fromHex('#221111'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb0234ffb78f2530_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAMountainRangeOnAnotherPlanetW888a4d10C1bb40dc8bb0234ffb78f2530_1_Image.texts =
+    texts satisfies IWallpaperTexts;

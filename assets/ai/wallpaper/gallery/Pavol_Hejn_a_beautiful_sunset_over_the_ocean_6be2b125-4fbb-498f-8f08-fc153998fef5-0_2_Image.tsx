@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_2.json';
-import source from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_2.png';
+import source from 'https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_2.png';
+import texts from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_2.texts.json';
 
 /**
  * Image of A beautiful sunset over the ocean
@@ -37,27 +38,5 @@ export function ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_2_
 }
 
 ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_2_Image.colorStats = {
-    averageColor: Color.fromHex('#734722'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4411'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#998833'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffff33')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#443421'),
-        lightestColor: Color.fromHex('#ffffcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb4400'), Color.fromHex('#ffffcc')],
-        minmaxGreen: [Color.fromHex('#887733'), Color.fromHex('#ffffcc')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffff55')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_2_Image.colorStats = hydrateColorStats(colorStats);
+ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_2_Image.texts = texts satisfies IWallpaperTexts;

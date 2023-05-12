@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_3.json';
-import source from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_3.png';
+import source from 'https://cdn.midjourney.com/a8587861-961f-4ac0-b6c1-4b84cb239531/0_3.png';
+import texts from './Pavol_Hejn_a_vintage_map_of_the_stars_and_constellations_with_d_a8587861-961f-4ac0-b6c1-4b84cb239531-0_3.texts.json';
 
 /**
  * Image of A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.
@@ -40,27 +41,7 @@ export function AVintageMapOfTheStarsAndConstellationsWithDA8587861961f4ac0B6c14
 
 AVintageMapOfTheStarsAndConstellationsWithDA8587861961f4ac0B6c14b84cb2395310_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AVintageMapOfTheStarsAndConstellationsWithDA8587861961f4ac0B6c14b84cb2395310_3_Image.colorStats = {
-    averageColor: Color.fromHex('#9a815e'),
-    lightestColor: Color.fromHex('#ffffcc'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffcc'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa4422'), Color.fromHex('#ffffcc')],
-    minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ffddcc')],
-    minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#333322'),
-    mostSaturatedColor: Color.fromHex('#332200'),
-    mostGroupedColor: Color.fromHex('#ddbb88'),
-    bottom: {
-        averageColor: Color.fromHex('#a28763'),
-        lightestColor: Color.fromHex('#ffeecc'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#ffeecc'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#993322'), Color.fromHex('#ffeecc')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeecc')],
-        minmaxBlue: [Color.fromHex('#445555'), Color.fromHex('#ffeeaa')],
-        mostFrequentColor: Color.fromHex('#333322'),
-        mostSaturatedColor: Color.fromHex('#331100'),
-        mostGroupedColor: Color.fromHex('#ddbb88'),
-    },
-} satisfies IImageColorStats;
+AVintageMapOfTheStarsAndConstellationsWithDA8587861961f4ac0B6c14b84cb2395310_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AVintageMapOfTheStarsAndConstellationsWithDA8587861961f4ac0B6c14b84cb2395310_3_Image.texts =
+    texts satisfies IWallpaperTexts;

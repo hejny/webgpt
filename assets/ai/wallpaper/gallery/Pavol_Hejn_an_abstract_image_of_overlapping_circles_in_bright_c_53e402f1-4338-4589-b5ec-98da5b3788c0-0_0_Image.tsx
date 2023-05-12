@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_0.json';
-import source from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_0.png';
+import source from 'https://cdn.midjourney.com/53e402f1-4338-4589-b5ec-98da5b3788c0/0_0.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_0.texts.json';
 
 /**
  * Image of An abstract image of overlapping circles in bright colors for a business or marketing website
@@ -40,27 +41,7 @@ export function AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec
 
 AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_0_Image.colorStats = {
-    averageColor: Color.fromHex('#4e303d'),
-    lightestColor: Color.fromHex('#ddffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ff0011'), Color.fromHex('#11ffff')],
-    minmaxGreen: [Color.fromHex('#44cc77'), Color.fromHex('#ff11cc')],
-    minmaxBlue: [Color.fromHex('#3322cc'), Color.fromHex('#ffdd33')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#4d2b37'),
-        lightestColor: Color.fromHex('#ddffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee1111'), Color.fromHex('#11ffff')],
-        minmaxGreen: [Color.fromHex('#22aa77'), Color.fromHex('#ee0077')],
-        minmaxBlue: [Color.fromHex('#0044bb'), Color.fromHex('#ffcc22')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#550044'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_0_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_6cf7e8b2-116e-4d5e-b995-66f64fced840-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_6cf7e8b2-116e-4d5e-b995-66f64fced840-0_2.json';
-import source from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_6cf7e8b2-116e-4d5e-b995-66f64fced840-0_2.png';
+import source from 'https://cdn.midjourney.com/6cf7e8b2-116e-4d5e-b995-66f64fced840/0_2.png';
+import texts from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_6cf7e8b2-116e-4d5e-b995-66f64fced840-0_2.texts.json';
 
 /**
  * Image of An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect.
@@ -40,27 +41,7 @@ export function AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99
 
 AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_2_Image.colorStats = {
-    averageColor: Color.fromHex('#7e6653'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd1111'), Color.fromHex('#55eeff')],
-    minmaxGreen: [Color.fromHex('#449933'), Color.fromHex('#cc0033')],
-    minmaxBlue: [Color.fromHex('#0055bb'), Color.fromHex('#ffdd11')],
-    mostFrequentColor: Color.fromHex('#445555'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#eeeedd'),
-    bottom: {
-        averageColor: Color.fromHex('#a06e42'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee2211'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#779922'), Color.fromHex('#ee2211')],
-        minmaxBlue: [Color.fromHex('#1177dd'), Color.fromHex('#ffdd11')],
-        mostFrequentColor: Color.fromHex('#445555'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#552233'),
-    },
-} satisfies IImageColorStats;
+AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_2.json';
-import source from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_2.png';
+import source from 'https://cdn.midjourney.com/160c3dc8-8dbb-4cee-9114-3d6c468fe6b6/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_2.texts.json';
 
 /**
  * Image of A close-up of a crab on the beach
@@ -37,27 +38,5 @@ export function ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_2_Ima
 }
 
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_2_Image.colorStats = {
-    averageColor: Color.fromHex('#969192'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc2211'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#444477'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#556666'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#eeffff'),
-    bottom: {
-        averageColor: Color.fromHex('#7f7268'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#888855'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#556666'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#bbbbaa'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_2_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_2_Image.texts = texts satisfies IWallpaperTexts;

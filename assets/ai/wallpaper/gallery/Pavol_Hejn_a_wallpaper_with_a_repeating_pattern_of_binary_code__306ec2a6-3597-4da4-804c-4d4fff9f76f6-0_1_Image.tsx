@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__306ec2a6-3597-4da4-804c-4d4fff9f76f6-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__306ec2a6-3597-4da4-804c-4d4fff9f76f6-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__306ec2a6-3597-4da4-804c-4d4fff9f76f6-0_1.png';
+import source from 'https://cdn.midjourney.com/306ec2a6-3597-4da4-804c-4d4fff9f76f6/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__306ec2a6-3597-4da4-804c-4d4fff9f76f6-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of binary code, in a simple font and black and white color scheme.
@@ -40,27 +41,7 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode306ec2a635974da4804c4
 
 AWallpaperWithARepeatingPatternOfBinaryCode306ec2a635974da4804c4d4fff9f76f60_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithARepeatingPatternOfBinaryCode306ec2a635974da4804c4d4fff9f76f60_1_Image.colorStats = {
-    averageColor: Color.fromHex('#0f0f0f'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#0d0d0d'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithARepeatingPatternOfBinaryCode306ec2a635974da4804c4d4fff9f76f60_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithARepeatingPatternOfBinaryCode306ec2a635974da4804c4d4fff9f76f60_1_Image.texts =
+    texts satisfies IWallpaperTexts;

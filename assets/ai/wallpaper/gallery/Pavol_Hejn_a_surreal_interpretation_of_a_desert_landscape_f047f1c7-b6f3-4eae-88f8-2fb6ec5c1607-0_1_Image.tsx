@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0_1.json';
-import source from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0_1.png';
+import source from 'https://cdn.midjourney.com/f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607/0_1.png';
+import texts from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_f047f1c7-b6f3-4eae-88f8-2fb6ec5c1607-0_1.texts.json';
 
 /**
  * Image of A surreal interpretation of a desert landscape
@@ -40,27 +41,7 @@ export function ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6
 
 ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6ec5c16070_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6ec5c16070_1_Image.colorStats = {
-    averageColor: Color.fromHex('#877367'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#884422'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#889977'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#664433'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#ddddcc'),
-    bottom: {
-        averageColor: Color.fromHex('#745545'),
-        lightestColor: Color.fromHex('#ffddcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffddcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#884422'), Color.fromHex('#eeddcc')],
-        minmaxGreen: [Color.fromHex('#666644'), Color.fromHex('#ffddcc')],
-        minmaxBlue: [Color.fromHex('#333344'), Color.fromHex('#ffddbb')],
-        mostFrequentColor: Color.fromHex('#664433'),
-        mostSaturatedColor: Color.fromHex('#110000'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6ec5c16070_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealInterpretationOfADesertLandscapeF047f1c7B6f34eae88f82fb6ec5c16070_1_Image.texts =
+    texts satisfies IWallpaperTexts;

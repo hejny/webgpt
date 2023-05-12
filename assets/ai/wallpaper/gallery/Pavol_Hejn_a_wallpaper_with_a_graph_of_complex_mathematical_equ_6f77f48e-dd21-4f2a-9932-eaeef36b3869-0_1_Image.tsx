@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_1.png';
+import source from 'https://cdn.midjourney.com/6f77f48e-dd21-4f2a-9932-eaeef36b3869/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_6f77f48e-dd21-4f2a-9932-eaeef36b3869-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a graph of complex mathematical equations, arranged in a minimalist and modern design.
@@ -40,27 +41,7 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932
 
 AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.colorStats = {
-    averageColor: Color.fromHex('#d2d0c0'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111111'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#111111')],
-    minmaxRed: [Color.fromHex('#665544'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#ffeedd'),
-    mostSaturatedColor: Color.fromHex('#221133'),
-    mostGroupedColor: Color.fromHex('#ccccbb'),
-    bottom: {
-        averageColor: Color.fromHex('#d7d4c3'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#333333'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#223344')],
-        minmaxRed: [Color.fromHex('#665544'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#ffeedd'),
-        mostSaturatedColor: Color.fromHex('#224455'),
-        mostGroupedColor: Color.fromHex('#ccccbb'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.texts =
+    texts satisfies IWallpaperTexts;

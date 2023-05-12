@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_0.json';
-import source from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_0.png';
+import source from 'https://cdn.midjourney.com/d508a146-6242-43d8-8d89-a0db7e936f73/0_0.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_0.texts.json';
 
 /**
  * Image of A close-up of a bee on a flower
@@ -37,27 +38,5 @@ export function ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_0_Image
 }
 
 ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_0_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_0_Image.colorStats = {
-    averageColor: Color.fromHex('#9e5f18'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#777711'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#ffee00')],
-    mostFrequentColor: Color.fromHex('#442200'),
-    mostSaturatedColor: Color.fromHex('#bb5500'),
-    mostGroupedColor: Color.fromHex('#663322'),
-    bottom: {
-        averageColor: Color.fromHex('#b1670b'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb2200'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#777711'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#554466'), Color.fromHex('#ffee00')],
-        mostFrequentColor: Color.fromHex('#442200'),
-        mostSaturatedColor: Color.fromHex('#552200'),
-        mostGroupedColor: Color.fromHex('#331111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_0_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_0_Image.texts = texts satisfies IWallpaperTexts;

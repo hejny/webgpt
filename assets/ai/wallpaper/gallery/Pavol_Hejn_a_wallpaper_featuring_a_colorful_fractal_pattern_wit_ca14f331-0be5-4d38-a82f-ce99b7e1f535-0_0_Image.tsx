@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.png';
+import source from 'https://cdn.midjourney.com/ca14f331-0be5-4d38-a82f-ce99b7e1f535/0_0.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82
 
 AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82fCe99b7e1f5350_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82fCe99b7e1f5350_0_Image.colorStats = {
-    averageColor: Color.fromHex('#423228'),
-    lightestColor: Color.fromHex('#eeeeee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc1111'), Color.fromHex('#22eedd')],
-    minmaxGreen: [Color.fromHex('#44bb66'), Color.fromHex('#cc1122')],
-    minmaxBlue: [Color.fromHex('#002277'), Color.fromHex('#ffee22')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#3a2926'),
-        lightestColor: Color.fromHex('#889999'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ccbb66'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb3300'), Color.fromHex('#118877')],
-        minmaxGreen: [Color.fromHex('#449955'), Color.fromHex('#770022')],
-        minmaxBlue: [Color.fromHex('#334466'), Color.fromHex('#eebb33')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82fCe99b7e1f5350_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82fCe99b7e1f5350_0_Image.texts =
+    texts satisfies IWallpaperTexts;

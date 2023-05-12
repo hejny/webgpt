@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_0.json';
-import source from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_0.png';
+import source from 'https://cdn.midjourney.com/52813773-864c-445f-a336-f22707e90136/0_0.png';
+import texts from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_0.texts.json';
 
 /**
  * Image of A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space.
@@ -40,27 +41,7 @@ export function ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F
 
 ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_0_Image.colorStats = {
-    averageColor: Color.fromHex('#494140'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3300'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#34221d'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc5522'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#888855'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_0_Image.texts =
+    texts satisfies IWallpaperTexts;

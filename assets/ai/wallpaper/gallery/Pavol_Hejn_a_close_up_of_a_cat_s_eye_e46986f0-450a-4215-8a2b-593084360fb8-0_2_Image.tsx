@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_2.json';
-import source from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_2.png';
+import source from 'https://cdn.midjourney.com/e46986f0-450a-4215-8a2b-593084360fb8/0_2.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_2.texts.json';
 
 /**
  * Image of A close-up of a cat’s eye
@@ -37,27 +38,5 @@ export function ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_2_Image(prop
 }
 
 ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_2_Image.colorStats = {
-    averageColor: Color.fromHex('#755b47'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa4422'), Color.fromHex('#99ffee')],
-    minmaxGreen: [Color.fromHex('#447766'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#554444'),
-    mostSaturatedColor: Color.fromHex('#331100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#785c47'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc6633'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#447766'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#ffee99')],
-        mostFrequentColor: Color.fromHex('#554444'),
-        mostSaturatedColor: Color.fromHex('#331100'),
-        mostGroupedColor: Color.fromHex('#221111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_2_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_2_Image.texts = texts satisfies IWallpaperTexts;

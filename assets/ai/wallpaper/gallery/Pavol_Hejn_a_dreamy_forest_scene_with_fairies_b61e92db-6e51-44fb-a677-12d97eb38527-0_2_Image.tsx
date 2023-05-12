@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_2.json';
-import source from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_2.png';
+import source from 'https://cdn.midjourney.com/b61e92db-6e51-44fb-a677-12d97eb38527/0_2.png';
+import texts from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_b61e92db-6e51-44fb-a677-12d97eb38527-0_2.texts.json';
 
 /**
  * Image of A dreamy forest scene with fairies
@@ -39,27 +40,5 @@ export function ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_2
 }
 
 ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_2_Image.colorStats = {
-    averageColor: Color.fromHex('#423722'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb4400'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#888822'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#554455'), Color.fromHex('#ffff66')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#111100'),
-    bottom: {
-        averageColor: Color.fromHex('#2b2414'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993311'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#888822'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#554455'), Color.fromHex('#ffee55')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#111100'),
-    },
-} satisfies IImageColorStats;
+ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_2_Image.colorStats = hydrateColorStats(colorStats);
+ADreamyForestSceneWithFairiesB61e92db6e5144fbA67712d97eb385270_2_Image.texts = texts satisfies IWallpaperTexts;

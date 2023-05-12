@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_9bc36e9b-41c0-4f87-970a-67b918fcaf70-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_9bc36e9b-41c0-4f87-970a-67b918fcaf70-0_3.json';
-import source from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_9bc36e9b-41c0-4f87-970a-67b918fcaf70-0_3.png';
+import source from 'https://cdn.midjourney.com/9bc36e9b-41c0-4f87-970a-67b918fcaf70/0_3.png';
+import texts from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_9bc36e9b-41c0-4f87-970a-67b918fcaf70-0_3.texts.json';
 
 /**
  * Image of A dreamy watercolor painting of a field of flowers for a wedding or event planning website
@@ -40,27 +41,7 @@ export function ADreamyWatercolorPaintingOfAFieldOfFlowersF9bc36e9b41c04f87970a6
 
 ADreamyWatercolorPaintingOfAFieldOfFlowersF9bc36e9b41c04f87970a67b918fcaf700_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADreamyWatercolorPaintingOfAFieldOfFlowersF9bc36e9b41c04f87970a67b918fcaf700_3_Image.colorStats = {
-    averageColor: Color.fromHex('#d6c1b7'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc1111'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#889944'), Color.fromHex('#bb0033')],
-    minmaxBlue: [Color.fromHex('#333388'), Color.fromHex('#ffdd33')],
-    mostFrequentColor: Color.fromHex('#cccc99'),
-    mostSaturatedColor: Color.fromHex('#221100'),
-    mostGroupedColor: Color.fromHex('#eeeeee'),
-    bottom: {
-        averageColor: Color.fromHex('#caaf92'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc1122'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#889944'), Color.fromHex('#bb0033')],
-        minmaxBlue: [Color.fromHex('#335599'), Color.fromHex('#ffdd33')],
-        mostFrequentColor: Color.fromHex('#cccc99'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#eeddbb'),
-    },
-} satisfies IImageColorStats;
+ADreamyWatercolorPaintingOfAFieldOfFlowersF9bc36e9b41c04f87970a67b918fcaf700_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADreamyWatercolorPaintingOfAFieldOfFlowersF9bc36e9b41c04f87970a67b918fcaf700_3_Image.texts =
+    texts satisfies IWallpaperTexts;

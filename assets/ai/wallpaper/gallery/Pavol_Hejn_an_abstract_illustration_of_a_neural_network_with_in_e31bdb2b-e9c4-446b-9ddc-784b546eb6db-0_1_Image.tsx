@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_1.json';
-import source from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_1.png';
+import source from 'https://cdn.midjourney.com/e31bdb2b-e9c4-446b-9ddc-784b546eb6db/0_1.png';
+import texts from './Pavol_Hejn_an_abstract_illustration_of_a_neural_network_with_in_e31bdb2b-e9c4-446b-9ddc-784b546eb6db-0_1.texts.json';
 
 /**
  * Image of An abstract illustration of a neural network, with intricate lines and a dark and technological color palette.
@@ -40,27 +41,7 @@ export function AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc
 
 AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#1d1d1d'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc2200'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#55aa66'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#336699'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#001111'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#131618'),
-        lightestColor: Color.fromHex('#88bbcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#bbccaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc2200'), Color.fromHex('#2299bb')],
-        minmaxGreen: [Color.fromHex('#779955'), Color.fromHex('#bb1100')],
-        minmaxBlue: [Color.fromHex('#664488'), Color.fromHex('#ee5500')],
-        mostFrequentColor: Color.fromHex('#001111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

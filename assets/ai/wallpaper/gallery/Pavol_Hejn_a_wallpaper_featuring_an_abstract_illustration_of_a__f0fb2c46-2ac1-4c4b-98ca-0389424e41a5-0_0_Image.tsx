@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__f0fb2c46-2ac1-4c4b-98ca-0389424e41a5-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__f0fb2c46-2ac1-4c4b-98ca-0389424e41a5-0_0.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__f0fb2c46-2ac1-4c4b-98ca-0389424e41a5-0_0.png';
+import source from 'https://cdn.midjourney.com/f0fb2c46-2ac1-4c4b-98ca-0389424e41a5/0_0.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__f0fb2c46-2ac1-4c4b-98ca-0389424e41a5-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfAF0fb2c462ac14c4b98ca
 
 AWallpaperFeaturingAnAbstractIllustrationOfAF0fb2c462ac14c4b98ca0389424e41a50_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingAnAbstractIllustrationOfAF0fb2c462ac14c4b98ca0389424e41a50_0_Image.colorStats = {
-    averageColor: Color.fromHex('#3e0e11'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee0000'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#557777'), Color.fromHex('#ee0011')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#222222'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#110000'),
-    bottom: {
-        averageColor: Color.fromHex('#350306'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee0000'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#887766'), Color.fromHex('#ee0011')],
-        minmaxBlue: [Color.fromHex('#555577'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#222222'),
-        mostSaturatedColor: Color.fromHex('#220000'),
-        mostGroupedColor: Color.fromHex('#110000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingAnAbstractIllustrationOfAF0fb2c462ac14c4b98ca0389424e41a50_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingAnAbstractIllustrationOfAF0fb2c462ac14c4b98ca0389424e41a50_0_Image.texts =
+    texts satisfies IWallpaperTexts;

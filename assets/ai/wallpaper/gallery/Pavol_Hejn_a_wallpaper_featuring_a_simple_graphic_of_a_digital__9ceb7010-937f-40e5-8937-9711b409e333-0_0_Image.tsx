@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_0.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_0.png';
+import source from 'https://cdn.midjourney.com/9ceb7010-937f-40e5-8937-9711b409e333/0_0.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__9ceb7010-937f-40e5-8937-9711b409e333-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379
 
 AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_0_Image.colorStats = {
-    averageColor: Color.fromHex('#121719'),
-    lightestColor: Color.fromHex('#bbffee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#bbffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3322'), Color.fromHex('#66ffdd')],
-    minmaxGreen: [Color.fromHex('#33aa66'), Color.fromHex('#ff6688')],
-    minmaxBlue: [Color.fromHex('#226677'), Color.fromHex('#bbffcc')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#0a0f11'),
-        lightestColor: Color.fromHex('#aaeedd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#aaeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#995555'), Color.fromHex('#77ffdd')],
-        minmaxGreen: [Color.fromHex('#33aa66'), Color.fromHex('#220011')],
-        minmaxBlue: [Color.fromHex('#336677'), Color.fromHex('#99ffcc')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingASimpleGraphicOfADigital9ceb7010937f40e589379711b409e3330_0_Image.texts =
+    texts satisfies IWallpaperTexts;

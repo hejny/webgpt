@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_0.json';
-import source from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_0.png';
+import source from 'https://cdn.midjourney.com/3bdbef82-2e14-4555-8cc9-71adbdb25974/0_0.png';
+import texts from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_0.texts.json';
 
 /**
  * Image of A digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface.
@@ -40,27 +41,7 @@ export function ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc9
 
 ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_0_Image.colorStats = {
-    averageColor: Color.fromHex('#47524e'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3311'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#554488'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#110000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#002233'),
-    bottom: {
-        averageColor: Color.fromHex('#44362a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd4411'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#663366'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#110000'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#113333'),
-    },
-} satisfies IImageColorStats;
+ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_0_Image.texts =
+    texts satisfies IWallpaperTexts;

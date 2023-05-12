@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_0.json';
-import source from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_0.png';
+import source from 'https://cdn.midjourney.com/50fd2ff2-77bd-4816-a29c-516b364f53ad/0_0.png';
+import texts from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_50fd2ff2-77bd-4816-a29c-516b364f53ad-0_0.texts.json';
 
 /**
  * Image of A geometric design in shades of purple and pink, inspired by the shape of a quantum computer
@@ -40,27 +41,7 @@ export function AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c5
 
 AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c516b364f53ad0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c516b364f53ad0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#3d1d31'),
-    lightestColor: Color.fromHex('#ffddff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb3355'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#887777'), Color.fromHex('#ff99ee')],
-    minmaxBlue: [Color.fromHex('#552288'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#2a1321'),
-        lightestColor: Color.fromHex('#ffbbdd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffcccc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb3355'), Color.fromHex('#ffcccc')],
-        minmaxGreen: [Color.fromHex('#665555'), Color.fromHex('#ff99cc')],
-        minmaxBlue: [Color.fromHex('#552288'), Color.fromHex('#ffcccc')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#220011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c516b364f53ad0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGeometricDesignInShadesOfPurpleAndPinkInsp50fd2ff277bd4816A29c516b364f53ad0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

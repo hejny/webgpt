@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_1.json';
-import source from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_1.png';
+import source from 'https://cdn.midjourney.com/26ff23d7-b92e-4874-8653-6d42fb8e622a/0_1.png';
+import texts from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_1.texts.json';
 
 /**
  * Image of A desert landscape with a cactus in the foreground
@@ -40,27 +41,7 @@ export function ADesertLandscapeWithACactusInTheForeground26ff23d7B92e487486536d
 
 ADesertLandscapeWithACactusInTheForeground26ff23d7B92e487486536d42fb8e622a0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADesertLandscapeWithACactusInTheForeground26ff23d7B92e487486536d42fb8e622a0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#9c8163'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#aa4411'), Color.fromHex('#ccffee')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#225555'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#552211'),
-    mostSaturatedColor: Color.fromHex('#552200'),
-    mostGroupedColor: Color.fromHex('#ffffdd'),
-    bottom: {
-        averageColor: Color.fromHex('#97633e'),
-        lightestColor: Color.fromHex('#ffddbb'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffddbb'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#aa4411'), Color.fromHex('#ffddbb')],
-        minmaxGreen: [Color.fromHex('#887744'), Color.fromHex('#440000')],
-        minmaxBlue: [Color.fromHex('#332233'), Color.fromHex('#ffdd88')],
-        mostFrequentColor: Color.fromHex('#552211'),
-        mostSaturatedColor: Color.fromHex('#552200'),
-        mostGroupedColor: Color.fromHex('#554422'),
-    },
-} satisfies IImageColorStats;
+ADesertLandscapeWithACactusInTheForeground26ff23d7B92e487486536d42fb8e622a0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADesertLandscapeWithACactusInTheForeground26ff23d7B92e487486536d42fb8e622a0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

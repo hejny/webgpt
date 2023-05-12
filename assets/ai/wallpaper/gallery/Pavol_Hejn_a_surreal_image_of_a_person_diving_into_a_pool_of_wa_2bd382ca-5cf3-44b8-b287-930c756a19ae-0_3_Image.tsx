@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_3.json';
-import source from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_3.png';
+import source from 'https://cdn.midjourney.com/2bd382ca-5cf3-44b8-b287-930c756a19ae/0_3.png';
+import texts from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_3.texts.json';
 
 /**
  * Image of A surreal image of a person diving into a pool of water for a health or fitness blog
@@ -40,27 +41,7 @@ export function ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930
 
 ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#82a1a3'),
-    lightestColor: Color.fromHex('#eeeeff'),
-    darkestColor: Color.fromHex('#112222'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#112222')],
-    minmaxRed: [Color.fromHex('#774444'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#eeeeff')],
-    minmaxBlue: [Color.fromHex('#445577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#446666'),
-    mostSaturatedColor: Color.fromHex('#336677'),
-    mostGroupedColor: Color.fromHex('#447777'),
-    bottom: {
-        averageColor: Color.fromHex('#5b898d'),
-        lightestColor: Color.fromHex('#ddffee'),
-        darkestColor: Color.fromHex('#222222'),
-        minmaxWhite: [Color.fromHex('#ddffee'), Color.fromHex('#222222')],
-        minmaxRed: [Color.fromHex('#664444'), Color.fromHex('#ddffee')],
-        minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#eedddd')],
-        minmaxBlue: [Color.fromHex('#336677'), Color.fromHex('#ddffee')],
-        mostFrequentColor: Color.fromHex('#446666'),
-        mostSaturatedColor: Color.fromHex('#336677'),
-        mostGroupedColor: Color.fromHex('#447777'),
-    },
-} satisfies IImageColorStats;
+ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_0.json';
-import source from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_0.png';
+import source from 'https://cdn.midjourney.com/d410ad0b-1da1-4afb-bf81-6e1beffb85a1/0_0.png';
+import texts from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_d410ad0b-1da1-4afb-bf81-6e1beffb85a1-0_0.texts.json';
 
 /**
  * Image of An image of a rocket launching into space with a trail of fire behind it, set against a starry sky.
@@ -40,27 +41,7 @@ export function AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e
 
 AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_0_Image.colorStats = {
-    averageColor: Color.fromHex('#1f1b2b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee2211'), Color.fromHex('#aaffff')],
-    minmaxGreen: [Color.fromHex('#338888'), Color.fromHex('#ee2211')],
-    minmaxBlue: [Color.fromHex('#116688'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#2d2734'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#cc3333'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#448888'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#001122'),
-    },
-} satisfies IImageColorStats;
+AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnImageOfARocketLaunchingIntoSpaceWithATraD410ad0b1da14afbBf816e1beffb85a10_0_Image.texts =
+    texts satisfies IWallpaperTexts;

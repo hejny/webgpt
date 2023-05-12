@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_3.png';
+import source from 'https://cdn.midjourney.com/eb03508b-fde5-40fd-b4b4-8b65a2d23019/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_3.texts.json';
 
 /**
  * Image of A close-up of a seagull in flight
@@ -37,27 +38,5 @@ export function ACloseUpOfASeagullInFlightEb03508bFde540fdB4b48b65a2d230190_3_Im
 }
 
 ACloseUpOfASeagullInFlightEb03508bFde540fdB4b48b65a2d230190_3_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfASeagullInFlightEb03508bFde540fdB4b48b65a2d230190_3_Image.colorStats = {
-    averageColor: Color.fromHex('#8ca2b6'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3355'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#889955'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#335599'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#556666'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#aaccdd'),
-    bottom: {
-        averageColor: Color.fromHex('#acbccb'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#222211'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#221111')],
-        minmaxRed: [Color.fromHex('#884433'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#556666'),
-        mostSaturatedColor: Color.fromHex('#551122'),
-        mostGroupedColor: Color.fromHex('#aaccdd'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfASeagullInFlightEb03508bFde540fdB4b48b65a2d230190_3_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfASeagullInFlightEb03508bFde540fdB4b48b65a2d230190_3_Image.texts = texts satisfies IWallpaperTexts;

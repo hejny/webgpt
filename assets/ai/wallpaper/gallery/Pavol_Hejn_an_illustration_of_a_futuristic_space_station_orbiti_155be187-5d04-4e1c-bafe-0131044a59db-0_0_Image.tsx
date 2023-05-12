@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_0.json';
-import source from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_0.png';
+import source from 'https://cdn.midjourney.com/155be187-5d04-4e1c-bafe-0131044a59db/0_0.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_0.texts.json';
 
 /**
  * Image of An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.
@@ -40,27 +41,7 @@ export function AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBaf
 
 AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#4f566b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4411'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#2244bb'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#404e6a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb4411'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#888866'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#2244bb'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

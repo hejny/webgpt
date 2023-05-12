@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_dog_s_nose_4c09a649-ac2d-4ac1-9680-917b0cf2bcbe-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_dog_s_nose_4c09a649-ac2d-4ac1-9680-917b0cf2bcbe-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_dog_s_nose_4c09a649-ac2d-4ac1-9680-917b0cf2bcbe-0_3.png';
+import source from 'https://cdn.midjourney.com/4c09a649-ac2d-4ac1-9680-917b0cf2bcbe/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_dog_s_nose_4c09a649-ac2d-4ac1-9680-917b0cf2bcbe-0_3.texts.json';
 
 /**
  * Image of A close-up of a dog’s nose
@@ -37,27 +38,5 @@ export function ACloseUpOfADogSNose4c09a649Ac2d4ac19680917b0cf2bcbe0_3_Image(pro
 }
 
 ACloseUpOfADogSNose4c09a649Ac2d4ac19680917b0cf2bcbe0_3_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfADogSNose4c09a649Ac2d4ac19680917b0cf2bcbe0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#634934'),
-    lightestColor: Color.fromHex('#eeeeee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#ddeeee')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeedd')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffeedd')],
-    mostFrequentColor: Color.fromHex('#665544'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#805f3f'),
-        lightestColor: Color.fromHex('#ffddaa'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffddaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#eeddaa')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#110011')],
-        minmaxBlue: [Color.fromHex('#554444'), Color.fromHex('#ffdd99')],
-        mostFrequentColor: Color.fromHex('#665544'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfADogSNose4c09a649Ac2d4ac19680917b0cf2bcbe0_3_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfADogSNose4c09a649Ac2d4ac19680917b0cf2bcbe0_3_Image.texts = texts satisfies IWallpaperTexts;

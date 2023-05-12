@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_3.json';
-import source from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_3.png';
+import source from 'https://cdn.midjourney.com/02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14/0_3.png';
+import texts from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_3.texts.json';
 
 /**
  * Image of A snowy mountain peak with a clear blue sky
@@ -40,27 +41,5 @@ export function ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54cc
 
 ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_3_Image.colorStats = {
-    averageColor: Color.fromHex('#60aace'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#112244'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#002255')],
-    minmaxRed: [Color.fromHex('#664477'), Color.fromHex('#22ccee')],
-    minmaxGreen: [Color.fromHex('#669999'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#114499'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#335588'),
-    mostSaturatedColor: Color.fromHex('#002255'),
-    mostGroupedColor: Color.fromHex('#44bbdd'),
-    bottom: {
-        averageColor: Color.fromHex('#7da2c7'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#112244'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#002255')],
-        minmaxRed: [Color.fromHex('#664477'), Color.fromHex('#22ccee')],
-        minmaxGreen: [Color.fromHex('#337788'), Color.fromHex('#ffddff')],
-        minmaxBlue: [Color.fromHex('#114499'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#335588'),
-        mostSaturatedColor: Color.fromHex('#002255'),
-        mostGroupedColor: Color.fromHex('#5599cc'),
-    },
-} satisfies IImageColorStats;
+ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_3_Image.colorStats = hydrateColorStats(colorStats);
+ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_3_Image.texts = texts satisfies IWallpaperTexts;

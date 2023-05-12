@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__ef6bf260-f204-44bf-94a1-5ffc6d0449b7-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__ef6bf260-f204-44bf-94a1-5ffc6d0449b7-0_2.json';
-import source from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__ef6bf260-f204-44bf-94a1-5ffc6d0449b7-0_2.png';
+import source from 'https://cdn.midjourney.com/ef6bf260-f204-44bf-94a1-5ffc6d0449b7/0_2.png';
+import texts from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__ef6bf260-f204-44bf-94a1-5ffc6d0449b7-0_2.texts.json';
 
 /**
  * Image of A minimalist geometric pattern in pastel colors for a fashion or beauty website
@@ -40,27 +41,7 @@ export function AMinimalistGeometricPatternInPastelColorsForEf6bf260F20444bf94a1
 
 AMinimalistGeometricPatternInPastelColorsForEf6bf260F20444bf94a15ffc6d0449b70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistGeometricPatternInPastelColorsForEf6bf260F20444bf94a15ffc6d0449b70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#e3c7ba'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#bb6644'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#bb5544')],
-    minmaxRed: [Color.fromHex('#cc5544'), Color.fromHex('#eeffee')],
-    minmaxGreen: [Color.fromHex('#88aa99'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#778899'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#ffccbb'),
-    mostSaturatedColor: Color.fromHex('#cc6644'),
-    mostGroupedColor: Color.fromHex('#ffeeee'),
-    bottom: {
-        averageColor: Color.fromHex('#e8dad1'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#cc7755'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#cc6655')],
-        minmaxRed: [Color.fromHex('#dd6655'), Color.fromHex('#ddeeee')],
-        minmaxGreen: [Color.fromHex('#779999'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#778899'), Color.fromHex('#ffeedd')],
-        mostFrequentColor: Color.fromHex('#ffccbb'),
-        mostSaturatedColor: Color.fromHex('#dd7755'),
-        mostGroupedColor: Color.fromHex('#dddddd'),
-    },
-} satisfies IImageColorStats;
+AMinimalistGeometricPatternInPastelColorsForEf6bf260F20444bf94a15ffc6d0449b70_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistGeometricPatternInPastelColorsForEf6bf260F20444bf94a15ffc6d0449b70_2_Image.texts =
+    texts satisfies IWallpaperTexts;

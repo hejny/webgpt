@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_1.json';
-import source from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_1.png';
+import source from 'https://cdn.midjourney.com/fd6eb902-59b7-476a-a867-c7ea98e0226e/0_1.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_1.texts.json';
 
 /**
  * Image of An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.
@@ -40,27 +41,7 @@ export function AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C
 
 AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#938b86'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#cc4422'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#998844'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#555577'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#331111'),
-    mostSaturatedColor: Color.fromHex('#221100'),
-    mostGroupedColor: Color.fromHex('#66aabb'),
-    bottom: {
-        averageColor: Color.fromHex('#835d4b'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#cc4422'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#998844'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#331111'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#332222'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

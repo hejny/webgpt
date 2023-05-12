@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_illustration_of_a_data_visualization_wit_2d274717-b032-4770-ac8c-4efbc3b40352-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_data_visualization_wit_2d274717-b032-4770-ac8c-4efbc3b40352-0_2.json';
-import source from './Pavol_Hejn_an_abstract_illustration_of_a_data_visualization_wit_2d274717-b032-4770-ac8c-4efbc3b40352-0_2.png';
+import source from 'https://cdn.midjourney.com/2d274717-b032-4770-ac8c-4efbc3b40352/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_illustration_of_a_data_visualization_wit_2d274717-b032-4770-ac8c-4efbc3b40352-0_2.texts.json';
 
 /**
  * Image of An abstract illustration of a data visualization, with sleek and modern graphics and a minimalist color scheme.
@@ -40,27 +41,7 @@ export function AnAbstractIllustrationOfADataVisualizationWitd274717B0324770Ac8c
 
 AnAbstractIllustrationOfADataVisualizationWitd274717B0324770Ac8c4efbc3b4035202_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractIllustrationOfADataVisualizationWitd274717B0324770Ac8c4efbc3b4035202_2_Image.colorStats = {
-    averageColor: Color.fromHex('#d8cebe'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001111'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000022')],
-    minmaxRed: [Color.fromHex('#dd1111'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#dd1111')],
-    minmaxBlue: [Color.fromHex('#333366'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#ffeedd'),
-    mostSaturatedColor: Color.fromHex('#660033'),
-    mostGroupedColor: Color.fromHex('#eeeedd'),
-    bottom: {
-        averageColor: Color.fromHex('#e3d6c3'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001111'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000022')],
-        minmaxRed: [Color.fromHex('#dd1111'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#dd1111')],
-        minmaxBlue: [Color.fromHex('#223355'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#ffeedd'),
-        mostSaturatedColor: Color.fromHex('#990011'),
-        mostGroupedColor: Color.fromHex('#eeeedd'),
-    },
-} satisfies IImageColorStats;
+AnAbstractIllustrationOfADataVisualizationWitd274717B0324770Ac8c4efbc3b4035202_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractIllustrationOfADataVisualizationWitd274717B0324770Ac8c4efbc3b4035202_2_Image.texts =
+    texts satisfies IWallpaperTexts;

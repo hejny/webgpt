@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_1.json';
-import source from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_1.png';
+import source from 'https://cdn.midjourney.com/b3da2234-dabd-4b9b-a830-0286ab824204/0_1.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_lava_flow_on_a_volcanic_planet_wit_b3da2234-dabd-4b9b-a830-0286ab824204-0_1.texts.json';
 
 /**
  * Image of A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.
@@ -40,27 +41,7 @@ export function APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA83002
 
 APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_1_Image.colorStats = {
-    averageColor: Color.fromHex('#371011'),
-    lightestColor: Color.fromHex('#ff7777'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffbb66'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ff1100'), Color.fromHex('#001111')],
-    minmaxGreen: [Color.fromHex('#665555'), Color.fromHex('#ee0011')],
-    minmaxBlue: [Color.fromHex('#443344'), Color.fromHex('#ffbb11')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#221100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#20090c'),
-        lightestColor: Color.fromHex('#dd5566'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ff8844'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ff1100'), Color.fromHex('#001111')],
-        minmaxGreen: [Color.fromHex('#665555'), Color.fromHex('#ff1111')],
-        minmaxBlue: [Color.fromHex('#443344'), Color.fromHex('#ff6600')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_1_Image.texts =
+    texts satisfies IWallpaperTexts;

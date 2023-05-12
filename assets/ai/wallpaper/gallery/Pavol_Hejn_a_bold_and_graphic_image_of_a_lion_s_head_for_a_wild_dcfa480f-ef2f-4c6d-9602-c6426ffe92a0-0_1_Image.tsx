@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_bold_and_graphic_image_of_a_lion_s_head_for_a_wild_dcfa480f-ef2f-4c6d-9602-c6426ffe92a0-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_bold_and_graphic_image_of_a_lion_s_head_for_a_wild_dcfa480f-ef2f-4c6d-9602-c6426ffe92a0-0_1.json';
-import source from './Pavol_Hejn_a_bold_and_graphic_image_of_a_lion_s_head_for_a_wild_dcfa480f-ef2f-4c6d-9602-c6426ffe92a0-0_1.png';
+import source from 'https://cdn.midjourney.com/dcfa480f-ef2f-4c6d-9602-c6426ffe92a0/0_1.png';
+import texts from './Pavol_Hejn_a_bold_and_graphic_image_of_a_lion_s_head_for_a_wild_dcfa480f-ef2f-4c6d-9602-c6426ffe92a0-0_1.texts.json';
 
 /**
  * Image of A bold and graphic image of a lion's head for a wildlife or animal conservation website
@@ -40,27 +41,7 @@ export function ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C642
 
 ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.colorStats = {
-    averageColor: Color.fromHex('#332d2f'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb4411'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#115599'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#262b34'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc5522'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#115599'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.texts =
+    texts satisfies IWallpaperTexts;

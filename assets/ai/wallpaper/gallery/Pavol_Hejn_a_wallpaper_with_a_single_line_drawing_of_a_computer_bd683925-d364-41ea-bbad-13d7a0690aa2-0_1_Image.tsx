@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_1.png';
+import source from 'https://cdn.midjourney.com/bd683925-d364-41ea-bbad-13d7a0690aa2/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a single line drawing of a computer chip, in a muted color palette such as grey or blue.
@@ -40,27 +41,7 @@ export function AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad1
 
 AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_1_Image.colorStats = {
-    averageColor: Color.fromHex('#58757d'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#002222'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#002222')],
-    minmaxRed: [Color.fromHex('#776666'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#557777'),
-    mostSaturatedColor: Color.fromHex('#002222'),
-    mostGroupedColor: Color.fromHex('#335566'),
-    bottom: {
-        averageColor: Color.fromHex('#5f7b82'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#113333'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#113333')],
-        minmaxRed: [Color.fromHex('#555555'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#557777'),
-        mostSaturatedColor: Color.fromHex('#114455'),
-        mostGroupedColor: Color.fromHex('#557777'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_1_Image.texts =
+    texts satisfies IWallpaperTexts;

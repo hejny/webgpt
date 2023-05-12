@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_2.colors.json';
 import metadata from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_2.json';
-import source from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_2.png';
+import source from 'https://cdn.midjourney.com/664066a4-7076-4cfc-a434-02dc7b42eaa7/0_2.png';
+import texts from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__664066a4-7076-4cfc-a434-02dc7b42eaa7-0_2.texts.json';
 
 /**
  * Image of AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.
@@ -40,27 +41,7 @@ export function AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA434
 
 AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA43402dc7b42eaa70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA43402dc7b42eaa70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#0a4b46'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#885555'), Color.fromHex('#33ffff')],
-    minmaxGreen: [Color.fromHex('#00bb66'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#007799'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#002211'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#01302c'),
-        lightestColor: Color.fromHex('#eeffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#222222'), Color.fromHex('#00eedd')],
-        minmaxGreen: [Color.fromHex('#00bb66'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#116677'), Color.fromHex('#eeffff')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA43402dc7b42eaa70_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AinautsWorkingInAMassiveLaboratoryFilledWith664066a470764cfcA43402dc7b42eaa70_2_Image.texts =
+    texts satisfies IWallpaperTexts;

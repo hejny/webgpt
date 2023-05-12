@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.json';
-import source from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.png';
+import source from 'https://cdn.midjourney.com/30660838-6a7d-4053-b6e3-3f79d3125d66/0_2.png';
+import texts from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.texts.json';
 
 /**
  * Image of A bright and playful image of a rainbow for a children's or education website
@@ -40,27 +41,7 @@ export function ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f
 
 ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.colorStats = {
-    averageColor: Color.fromHex('#a1cdd6'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#ffdd00'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#ee3322')],
-    minmaxRed: [Color.fromHex('#ee3322'), Color.fromHex('#44ddff')],
-    minmaxGreen: [Color.fromHex('#88dd77'), Color.fromHex('#ff3355')],
-    minmaxBlue: [Color.fromHex('#5577aa'), Color.fromHex('#ffdd00')],
-    mostFrequentColor: Color.fromHex('#88ccdd'),
-    mostSaturatedColor: Color.fromHex('#ffdd00'),
-    mostGroupedColor: Color.fromHex('#88ccee'),
-    bottom: {
-        averageColor: Color.fromHex('#9cd3e8'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#ffdd00'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#ee4433')],
-        minmaxRed: [Color.fromHex('#ee4433'), Color.fromHex('#bbffff')],
-        minmaxGreen: [Color.fromHex('#99dd66'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#6677aa'), Color.fromHex('#ffdd00')],
-        mostFrequentColor: Color.fromHex('#88ccdd'),
-        mostSaturatedColor: Color.fromHex('#ffdd00'),
-        mostGroupedColor: Color.fromHex('#88ccee'),
-    },
-} satisfies IImageColorStats;
+ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.texts =
+    texts satisfies IWallpaperTexts;

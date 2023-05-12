@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_1.png';
+import source from 'https://cdn.midjourney.com/2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleIllustrationOfAVirtual2ba7c4065a5f4a5dAd46C
 
 AWallpaperWithASimpleIllustrationOfAVirtual2ba7c4065a5f4a5dAd46C8945d2c3c980_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleIllustrationOfAVirtual2ba7c4065a5f4a5dAd46C8945d2c3c980_1_Image.colorStats = {
-    averageColor: Color.fromHex('#573b8e'),
-    lightestColor: Color.fromHex('#77ccff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeffcc'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd1133'), Color.fromHex('#00ffdd')],
-    minmaxGreen: [Color.fromHex('#00aa77'), Color.fromHex('#ee0088')],
-    minmaxBlue: [Color.fromHex('#5533cc'), Color.fromHex('#ffff77')],
-    mostFrequentColor: Color.fromHex('#11aabb'),
-    mostSaturatedColor: Color.fromHex('#008888'),
-    mostGroupedColor: Color.fromHex('#cc2299'),
-    bottom: {
-        averageColor: Color.fromHex('#2d3883'),
-        lightestColor: Color.fromHex('#77ccff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#88ccee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd3344'), Color.fromHex('#11ffee')],
-        minmaxGreen: [Color.fromHex('#009977'), Color.fromHex('#770066')],
-        minmaxBlue: [Color.fromHex('#5533bb'), Color.fromHex('#ff5544')],
-        mostFrequentColor: Color.fromHex('#11aabb'),
-        mostSaturatedColor: Color.fromHex('#002244'),
-        mostGroupedColor: Color.fromHex('#001144'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleIllustrationOfAVirtual2ba7c4065a5f4a5dAd46C8945d2c3c980_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleIllustrationOfAVirtual2ba7c4065a5f4a5dAd46C8945d2c3c980_1_Image.texts =
+    texts satisfies IWallpaperTexts;

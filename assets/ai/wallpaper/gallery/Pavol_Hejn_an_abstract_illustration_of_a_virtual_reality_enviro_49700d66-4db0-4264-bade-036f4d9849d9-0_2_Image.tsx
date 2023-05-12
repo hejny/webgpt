@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_illustration_of_a_virtual_reality_enviro_49700d66-4db0-4264-bade-036f4d9849d9-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_illustration_of_a_virtual_reality_enviro_49700d66-4db0-4264-bade-036f4d9849d9-0_2.json';
-import source from './Pavol_Hejn_an_abstract_illustration_of_a_virtual_reality_enviro_49700d66-4db0-4264-bade-036f4d9849d9-0_2.png';
+import source from 'https://cdn.midjourney.com/49700d66-4db0-4264-bade-036f4d9849d9/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_illustration_of_a_virtual_reality_enviro_49700d66-4db0-4264-bade-036f4d9849d9-0_2.texts.json';
 
 /**
  * Image of An abstract illustration of a virtual reality environment, with futuristic graphics and a minimalist color scheme.
@@ -40,27 +41,7 @@ export function AnAbstractIllustrationOfAVirtualRealityEnviro49700d664db04264Bad
 
 AnAbstractIllustrationOfAVirtualRealityEnviro49700d664db04264Bade036f4d9849d90_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractIllustrationOfAVirtualRealityEnviro49700d664db04264Bade036f4d9849d90_2_Image.colorStats = {
-    averageColor: Color.fromHex('#b85659'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee0011'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#448888'), Color.fromHex('#ee0011')],
-    minmaxBlue: [Color.fromHex('#225588'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#aa1111'),
-    mostSaturatedColor: Color.fromHex('#550011'),
-    mostGroupedColor: Color.fromHex('#110000'),
-    bottom: {
-        averageColor: Color.fromHex('#cb7f7f'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee1111'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#558888'), Color.fromHex('#dd0011')],
-        minmaxBlue: [Color.fromHex('#225588'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#aa1111'),
-        mostSaturatedColor: Color.fromHex('#220000'),
-        mostGroupedColor: Color.fromHex('#eedddd'),
-    },
-} satisfies IImageColorStats;
+AnAbstractIllustrationOfAVirtualRealityEnviro49700d664db04264Bade036f4d9849d90_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractIllustrationOfAVirtualRealityEnviro49700d664db04264Bade036f4d9849d90_2_Image.texts =
+    texts satisfies IWallpaperTexts;

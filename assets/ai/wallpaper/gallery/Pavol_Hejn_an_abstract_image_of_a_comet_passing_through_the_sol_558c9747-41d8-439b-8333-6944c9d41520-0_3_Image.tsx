@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_558c9747-41d8-439b-8333-6944c9d41520-0_3.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_558c9747-41d8-439b-8333-6944c9d41520-0_3.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_558c9747-41d8-439b-8333-6944c9d41520-0_3.png';
+import source from 'https://cdn.midjourney.com/558c9747-41d8-439b-8333-6944c9d41520/0_3.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_558c9747-41d8-439b-8333-6944c9d41520-0_3.texts.json';
 
 /**
  * Image of An abstract image of a comet passing through the solar system, with bright colors and swirling patterns that represent its trajectory.
@@ -40,27 +41,7 @@ export function AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336
 
 AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_3_Image.colorStats = {
-    averageColor: Color.fromHex('#4f3526'),
-    lightestColor: Color.fromHex('#eeffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee3311'), Color.fromHex('#99ffee')],
-    minmaxGreen: [Color.fromHex('#559977'), Color.fromHex('#ee3322')],
-    minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffff33')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#4c3d31'),
-        lightestColor: Color.fromHex('#ddffee'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeffdd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee3311'), Color.fromHex('#ddffee')],
-        minmaxGreen: [Color.fromHex('#559977'), Color.fromHex('#ee3322')],
-        minmaxBlue: [Color.fromHex('#226688'), Color.fromHex('#ffee22')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#112222'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_3_Image.texts =
+    texts satisfies IWallpaperTexts;

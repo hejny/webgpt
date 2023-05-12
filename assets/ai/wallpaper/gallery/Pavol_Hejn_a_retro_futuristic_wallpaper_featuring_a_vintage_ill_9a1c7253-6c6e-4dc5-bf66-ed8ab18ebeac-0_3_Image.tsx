@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_9a1c7253-6c6e-4dc5-bf66-ed8ab18ebeac-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_9a1c7253-6c6e-4dc5-bf66-ed8ab18ebeac-0_3.json';
-import source from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_9a1c7253-6c6e-4dc5-bf66-ed8ab18ebeac-0_3.png';
+import source from 'https://cdn.midjourney.com/9a1c7253-6c6e-4dc5-bf66-ed8ab18ebeac/0_3.png';
+import texts from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_9a1c7253-6c6e-4dc5-bf66-ed8ab18ebeac-0_3.texts.json';
 
 /**
  * Image of A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background.
@@ -40,27 +41,7 @@ export function ARetroFuturisticWallpaperFeaturingAVintageIll9a1c72536c6e4dc5Bf6
 
 ARetroFuturisticWallpaperFeaturingAVintageIll9a1c72536c6e4dc5Bf66Ed8ab18ebeac0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ARetroFuturisticWallpaperFeaturingAVintageIll9a1c72536c6e4dc5Bf66Ed8ab18ebeac0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#40493d'),
-    lightestColor: Color.fromHex('#99ccaa'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffff88'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ff1100'), Color.fromHex('#00bb88')],
-    minmaxGreen: [Color.fromHex('#22cc33'), Color.fromHex('#ff1144')],
-    minmaxBlue: [Color.fromHex('#114477'), Color.fromHex('#eeee00')],
-    mostFrequentColor: Color.fromHex('#221122'),
-    mostSaturatedColor: Color.fromHex('#007777'),
-    mostGroupedColor: Color.fromHex('#221122'),
-    bottom: {
-        averageColor: Color.fromHex('#484137'),
-        lightestColor: Color.fromHex('#99ccaa'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffff88'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ff1100'), Color.fromHex('#00bb66')],
-        minmaxGreen: [Color.fromHex('#22cc33'), Color.fromHex('#ff1144')],
-        minmaxBlue: [Color.fromHex('#004477'), Color.fromHex('#eeee00')],
-        mostFrequentColor: Color.fromHex('#221122'),
-        mostSaturatedColor: Color.fromHex('#007766'),
-        mostGroupedColor: Color.fromHex('#221122'),
-    },
-} satisfies IImageColorStats;
+ARetroFuturisticWallpaperFeaturingAVintageIll9a1c72536c6e4dc5Bf66Ed8ab18ebeac0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ARetroFuturisticWallpaperFeaturingAVintageIll9a1c72536c6e4dc5Bf66Ed8ab18ebeac0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

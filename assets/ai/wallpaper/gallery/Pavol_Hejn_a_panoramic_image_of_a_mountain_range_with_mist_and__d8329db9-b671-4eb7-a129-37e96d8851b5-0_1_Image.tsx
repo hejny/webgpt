@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_1.json';
-import source from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_1.png';
+import source from 'https://cdn.midjourney.com/d8329db9-b671-4eb7-a129-37e96d8851b5/0_1.png';
+import texts from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_1.texts.json';
 
 /**
  * Image of A panoramic image of a mountain range, with mist and clouds drifting through the peaks.
@@ -40,27 +41,7 @@ export function APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937
 
 APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_1_Image.colorStats = {
-    averageColor: Color.fromHex('#7f7b72'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#001100')],
-    minmaxRed: [Color.fromHex('#884433'), Color.fromHex('#ffffdd')],
-    minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ffddee')],
-    minmaxBlue: [Color.fromHex('#444466'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#41413c'),
-        lightestColor: Color.fromHex('#ddccbb'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ddccbb'), Color.fromHex('#001100')],
-        minmaxRed: [Color.fromHex('#884433'), Color.fromHex('#ccccbb')],
-        minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#331111')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ddcc99')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_1_Image.texts =
+    texts satisfies IWallpaperTexts;

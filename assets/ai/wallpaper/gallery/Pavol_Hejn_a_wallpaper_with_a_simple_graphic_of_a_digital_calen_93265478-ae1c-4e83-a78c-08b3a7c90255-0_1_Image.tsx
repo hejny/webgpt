@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_1.png';
+import source from 'https://cdn.midjourney.com/93265478-ae1c-4e83-a78c-08b3a7c90255/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_calen_93265478-ae1c-4e83-a78c-08b3a7c90255-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c0
 
 AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_1_Image.colorStats = {
-    averageColor: Color.fromHex('#827475'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#111111'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#111111')],
-    minmaxRed: [Color.fromHex('#aa4433'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#669988'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#554455'),
-    mostSaturatedColor: Color.fromHex('#aa4433'),
-    mostGroupedColor: Color.fromHex('#222233'),
-    bottom: {
-        averageColor: Color.fromHex('#a29e9b'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#111111'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#111111')],
-        minmaxRed: [Color.fromHex('#774433'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#669988'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#554455'),
-        mostSaturatedColor: Color.fromHex('#112233'),
-        mostGroupedColor: Color.fromHex('#112222'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_1_Image.texts =
+    texts satisfies IWallpaperTexts;

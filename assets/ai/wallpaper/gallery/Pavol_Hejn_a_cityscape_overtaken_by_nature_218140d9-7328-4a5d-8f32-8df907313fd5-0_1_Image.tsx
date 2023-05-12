@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_1.json';
-import source from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_1.png';
+import source from 'https://cdn.midjourney.com/218140d9-7328-4a5d-8f32-8df907313fd5/0_1.png';
+import texts from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_1.texts.json';
 
 /**
  * Image of A cityscape overtaken by nature
@@ -37,27 +38,5 @@ export function ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_1_I
 }
 
 ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_1_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_1_Image.colorStats = {
-    averageColor: Color.fromHex('#949b89'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#885544'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#669944'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#eeeedd'),
-    bottom: {
-        averageColor: Color.fromHex('#566251'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#664433'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#669944'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#ddddcc'),
-    },
-} satisfies IImageColorStats;
+ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_1_Image.colorStats = hydrateColorStats(colorStats);
+ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_1_Image.texts = texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.json';
-import source from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.png';
+import source from 'https://cdn.midjourney.com/a1b93f91-6533-4234-994b-671324fdbd6b/0_0.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.texts.json';
 
 /**
  * Image of A photograph of a desert landscape at sunset, with warm colors and long shadows.
@@ -40,27 +41,7 @@ export function APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b6
 
 APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#9e6553'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#dd3300'), Color.fromHex('#ffffee')],
-    minmaxGreen: [Color.fromHex('#557777'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#446688'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#331100'),
-    mostSaturatedColor: Color.fromHex('#661100'),
-    mostGroupedColor: Color.fromHex('#667788'),
-    bottom: {
-        averageColor: Color.fromHex('#803017'),
-        lightestColor: Color.fromHex('#ffaa66'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffbb66'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#dd3300'), Color.fromHex('#ffbb66')],
-        minmaxGreen: [Color.fromHex('#998855'), Color.fromHex('#880000')],
-        minmaxBlue: [Color.fromHex('#442233'), Color.fromHex('#ffbb55')],
-        mostFrequentColor: Color.fromHex('#331100'),
-        mostSaturatedColor: Color.fromHex('#661100'),
-        mostGroupedColor: Color.fromHex('#331111'),
-    },
-} satisfies IImageColorStats;
+APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

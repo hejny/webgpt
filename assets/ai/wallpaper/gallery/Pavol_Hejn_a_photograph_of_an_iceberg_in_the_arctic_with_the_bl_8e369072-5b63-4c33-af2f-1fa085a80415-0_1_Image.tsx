@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_1.json';
-import source from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_1.png';
+import source from 'https://cdn.midjourney.com/8e369072-5b63-4c33-af2f-1fa085a80415/0_1.png';
+import texts from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_8e369072-5b63-4c33-af2f-1fa085a80415-0_1.texts.json';
 
 /**
  * Image of A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky.
@@ -40,27 +41,7 @@ export function APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1f
 
 APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_1_Image.colorStats = {
-    averageColor: Color.fromHex('#1a252d'),
-    lightestColor: Color.fromHex('#ccddee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ccddee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#443344'), Color.fromHex('#bbddee')],
-    minmaxGreen: [Color.fromHex('#228888'), Color.fromHex('#110011')],
-    minmaxBlue: [Color.fromHex('#006688'), Color.fromHex('#ccdddd')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#0d161b'),
-        lightestColor: Color.fromHex('#bbbbcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#bbbbcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#443344'), Color.fromHex('#99bbcc')],
-        minmaxGreen: [Color.fromHex('#337777'), Color.fromHex('#110011')],
-        minmaxBlue: [Color.fromHex('#116688'), Color.fromHex('#bbbbbb')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAnIcebergInTheArcticWithTheBl8e3690725b634c33Af2f1fa085a804150_1_Image.texts =
+    texts satisfies IWallpaperTexts;

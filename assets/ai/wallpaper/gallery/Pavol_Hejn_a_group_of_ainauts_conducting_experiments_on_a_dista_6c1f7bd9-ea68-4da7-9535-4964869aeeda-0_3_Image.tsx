@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.json';
-import source from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.png';
+import source from 'https://cdn.midjourney.com/6c1f7bd9-ea68-4da7-9535-4964869aeeda/0_3.png';
+import texts from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_6c1f7bd9-ea68-4da7-9535-4964869aeeda-0_3.texts.json';
 
 /**
  * Image of A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
@@ -40,27 +41,7 @@ export function AGroupOfAinautsConductingExperimentsOnADista6c1f7bd9Ea684da79535
 
 AGroupOfAinautsConductingExperimentsOnADista6c1f7bd9Ea684da795354964869aeeda0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGroupOfAinautsConductingExperimentsOnADista6c1f7bd9Ea684da795354964869aeeda0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#48515a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb4422'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#445588'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#223344'),
-    bottom: {
-        averageColor: Color.fromHex('#46515b'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb4422'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#445588'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#556677'),
-    },
-} satisfies IImageColorStats;
+AGroupOfAinautsConductingExperimentsOnADista6c1f7bd9Ea684da795354964869aeeda0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGroupOfAinautsConductingExperimentsOnADista6c1f7bd9Ea684da795354964869aeeda0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

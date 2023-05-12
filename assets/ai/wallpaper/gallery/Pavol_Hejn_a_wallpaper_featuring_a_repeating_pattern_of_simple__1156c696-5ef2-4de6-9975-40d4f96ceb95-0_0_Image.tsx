@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.png';
+import source from 'https://cdn.midjourney.com/1156c696-5ef2-4de6-9975-40d4f96ceb95/0_0.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de69975
 
 AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_Image.colorStats = {
-    averageColor: Color.fromHex('#817a76'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#774422'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#556677'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#887755'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#dddddd'),
-    bottom: {
-        averageColor: Color.fromHex('#605751'),
-        lightestColor: Color.fromHex('#eeeeee'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#774422'), Color.fromHex('#ddeeee')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#eeddee')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#eeeecc')],
-        mostFrequentColor: Color.fromHex('#887755'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingARepeatingPatternOfSimple1156c6965ef24de6997540d4f96ceb950_0_Image.texts =
+    texts satisfies IWallpaperTexts;

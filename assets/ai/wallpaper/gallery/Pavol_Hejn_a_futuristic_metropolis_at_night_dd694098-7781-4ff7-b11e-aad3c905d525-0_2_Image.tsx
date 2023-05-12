@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_2.json';
-import source from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_2.png';
+import source from 'https://cdn.midjourney.com/dd694098-7781-4ff7-b11e-aad3c905d525/0_2.png';
+import texts from './Pavol_Hejn_a_futuristic_metropolis_at_night_dd694098-7781-4ff7-b11e-aad3c905d525-0_2.texts.json';
 
 /**
  * Image of A futuristic metropolis at night
@@ -37,27 +38,5 @@ export function AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_
 }
 
 AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_Image.metadata = metadata satisfies IWallpaperMetadata;
-AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_Image.colorStats = {
-    averageColor: Color.fromHex('#213450'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb3311'), Color.fromHex('#22eeee')],
-    minmaxGreen: [Color.fromHex('#44bbaa'), Color.fromHex('#3311cc')],
-    minmaxBlue: [Color.fromHex('#1111cc'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#112233'),
-    bottom: {
-        averageColor: Color.fromHex('#2d2d44'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb3311'), Color.fromHex('#66ffee')],
-        minmaxGreen: [Color.fromHex('#44bbaa'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#2244aa'), Color.fromHex('#ffff88')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#002244'),
-        mostGroupedColor: Color.fromHex('#001122'),
-    },
-} satisfies IImageColorStats;
+AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_Image.colorStats = hydrateColorStats(colorStats);
+AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_2_Image.texts = texts satisfies IWallpaperTexts;

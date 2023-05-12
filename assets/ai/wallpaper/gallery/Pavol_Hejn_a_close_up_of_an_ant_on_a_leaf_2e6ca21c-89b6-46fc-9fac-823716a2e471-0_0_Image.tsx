@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_0.json';
-import source from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_0.png';
+import source from 'https://cdn.midjourney.com/2e6ca21c-89b6-46fc-9fac-823716a2e471/0_0.png';
+import texts from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_0.texts.json';
 
 /**
  * Image of A close-up of an ant on a leaf
@@ -37,27 +38,5 @@ export function ACloseUpOfAnAntOnALeaf2e6ca21c89b646fc9fac823716a2e4710_0_Image(
 }
 
 ACloseUpOfAnAntOnALeaf2e6ca21c89b646fc9fac823716a2e4710_0_Image.metadata = metadata satisfies IWallpaperMetadata;
-ACloseUpOfAnAntOnALeaf2e6ca21c89b646fc9fac823716a2e4710_0_Image.colorStats = {
-    averageColor: Color.fromHex('#3e4809'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3300'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#88aa00'), Color.fromHex('#aa0000')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffbb00')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#333300'),
-    mostGroupedColor: Color.fromHex('#001100'),
-    bottom: {
-        averageColor: Color.fromHex('#5c6408'),
-        lightestColor: Color.fromHex('#ffffee'),
-        darkestColor: Color.fromHex('#002200'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#993311'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#88aa00'), Color.fromHex('#ffffee')],
-        minmaxBlue: [Color.fromHex('#776677'), Color.fromHex('#ccdd00')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#114400'),
-        mostGroupedColor: Color.fromHex('#112200'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfAnAntOnALeaf2e6ca21c89b646fc9fac823716a2e4710_0_Image.colorStats = hydrateColorStats(colorStats);
+ACloseUpOfAnAntOnALeaf2e6ca21c89b646fc9fac823716a2e4710_0_Image.texts = texts satisfies IWallpaperTexts;

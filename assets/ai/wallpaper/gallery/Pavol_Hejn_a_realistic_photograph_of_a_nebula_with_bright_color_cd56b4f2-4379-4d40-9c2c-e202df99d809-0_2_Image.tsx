@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_2.json';
-import source from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_2.png';
+import source from 'https://cdn.midjourney.com/cd56b4f2-4379-4d40-9c2c-e202df99d809/0_2.png';
+import texts from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_2.texts.json';
 
 /**
  * Image of A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.
@@ -40,27 +41,7 @@ export function ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2c
 
 ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_2_Image.colorStats = {
-    averageColor: Color.fromHex('#3a393a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3311'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#115577'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#001122'),
-    bottom: {
-        averageColor: Color.fromHex('#392f2f'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3311'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#557766'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_2_Image.texts =
+    texts satisfies IWallpaperTexts;

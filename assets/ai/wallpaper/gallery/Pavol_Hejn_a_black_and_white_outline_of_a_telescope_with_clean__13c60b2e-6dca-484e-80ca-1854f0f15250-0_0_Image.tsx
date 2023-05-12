@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__13c60b2e-6dca-484e-80ca-1854f0f15250-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__13c60b2e-6dca-484e-80ca-1854f0f15250-0_0.json';
-import source from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__13c60b2e-6dca-484e-80ca-1854f0f15250-0_0.png';
+import source from 'https://cdn.midjourney.com/13c60b2e-6dca-484e-80ca-1854f0f15250/0_0.png';
+import texts from './Pavol_Hejn_a_black_and_white_outline_of_a_telescope_with_clean__13c60b2e-6dca-484e-80ca-1854f0f15250-0_0.texts.json';
 
 /**
  * Image of A black and white outline of a telescope, with clean lines and simple shapes that highlight the intricate mechanics of the instrument.
@@ -40,27 +41,7 @@ export function ABlackAndWhiteOutlineOfATelescopeWithClean13c60b2e6dca484e80ca18
 
 ABlackAndWhiteOutlineOfATelescopeWithClean13c60b2e6dca484e80ca1854f0f152500_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABlackAndWhiteOutlineOfATelescopeWithClean13c60b2e6dca484e80ca1854f0f152500_0_Image.colorStats = {
-    averageColor: Color.fromHex('#e2e2e2'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#ffffff'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#ffffff'),
-    bottom: {
-        averageColor: Color.fromHex('#d6d6d5'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#ffffff'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#ffffff'),
-    },
-} satisfies IImageColorStats;
+ABlackAndWhiteOutlineOfATelescopeWithClean13c60b2e6dca484e80ca1854f0f152500_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABlackAndWhiteOutlineOfATelescopeWithClean13c60b2e6dca484e80ca1854f0f152500_0_Image.texts =
+    texts satisfies IWallpaperTexts;

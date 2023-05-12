@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.json';
-import source from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.png';
+import source from 'https://cdn.midjourney.com/f9accf1c-18a8-458c-88c9-271d91a17953/0_1.png';
+import texts from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_f9accf1c-18a8-458c-88c9-271d91a17953-0_1.texts.json';
 
 /**
  * Image of A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration.
@@ -40,27 +41,7 @@ export function ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c92
 
 ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c9271d91a179530_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c9271d91a179530_1_Image.colorStats = {
-    averageColor: Color.fromHex('#0c1b20'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#994400'), Color.fromHex('#22ffff')],
-    minmaxGreen: [Color.fromHex('#66aa33'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#2244aa'), Color.fromHex('#ffff55')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#081013'),
-        lightestColor: Color.fromHex('#ccffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ccffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#994433'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#44aa55'), Color.fromHex('#ccffff')],
-        minmaxBlue: [Color.fromHex('#334477'), Color.fromHex('#bbffaa')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c9271d91a179530_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalPaintingOfADeepSeaCreatureWithTentaF9accf1c18a8458c88c9271d91a179530_1_Image.texts =
+    texts satisfies IWallpaperTexts;

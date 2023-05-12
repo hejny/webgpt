@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_2.json';
-import source from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_2.png';
+import source from 'https://cdn.midjourney.com/28302389-cdf2-4ca7-86b1-b376e8076eed/0_2.png';
+import texts from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_2.texts.json';
 
 /**
  * Image of A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.
@@ -40,27 +41,7 @@ export function ADigitalImageOfAGalaxyCollisionWithSwirling8302389Cdf24ca786b1B3
 
 ADigitalImageOfAGalaxyCollisionWithSwirling8302389Cdf24ca786b1B376e8076eed02_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADigitalImageOfAGalaxyCollisionWithSwirling8302389Cdf24ca786b1B376e8076eed02_2_Image.colorStats = {
-    averageColor: Color.fromHex('#5f4b48'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc2222'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#449988'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#114488'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#110022'),
-    mostGroupedColor: Color.fromHex('#001122'),
-    bottom: {
-        averageColor: Color.fromHex('#4f3e3c'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb2211'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#223366'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#001122'),
-    },
-} satisfies IImageColorStats;
+ADigitalImageOfAGalaxyCollisionWithSwirling8302389Cdf24ca786b1B376e8076eed02_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADigitalImageOfAGalaxyCollisionWithSwirling8302389Cdf24ca786b1B376e8076eed02_2_Image.texts =
+    texts satisfies IWallpaperTexts;

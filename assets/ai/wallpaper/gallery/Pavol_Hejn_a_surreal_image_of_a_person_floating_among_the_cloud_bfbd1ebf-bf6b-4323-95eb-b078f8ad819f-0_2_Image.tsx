@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_floating_among_the_cloud_bfbd1ebf-bf6b-4323-95eb-b078f8ad819f-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_floating_among_the_cloud_bfbd1ebf-bf6b-4323-95eb-b078f8ad819f-0_2.json';
-import source from './Pavol_Hejn_a_surreal_image_of_a_person_floating_among_the_cloud_bfbd1ebf-bf6b-4323-95eb-b078f8ad819f-0_2.png';
+import source from 'https://cdn.midjourney.com/bfbd1ebf-bf6b-4323-95eb-b078f8ad819f/0_2.png';
+import texts from './Pavol_Hejn_a_surreal_image_of_a_person_floating_among_the_cloud_bfbd1ebf-bf6b-4323-95eb-b078f8ad819f-0_2.texts.json';
 
 /**
  * Image of A surreal image of a person floating among the clouds for a spirituality or personal growth website
@@ -40,27 +41,7 @@ export function ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB
 
 ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#95a8ab'),
-    lightestColor: Color.fromHex('#ffeeee'),
-    darkestColor: Color.fromHex('#222222'),
-    minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#222222')],
-    minmaxRed: [Color.fromHex('#886666'), Color.fromHex('#ddeeee')],
-    minmaxGreen: [Color.fromHex('#558888'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#ffeedd')],
-    mostFrequentColor: Color.fromHex('#444455'),
-    mostSaturatedColor: Color.fromHex('#558899'),
-    mostGroupedColor: Color.fromHex('#668888'),
-    bottom: {
-        averageColor: Color.fromHex('#6a808a'),
-        lightestColor: Color.fromHex('#eedddd'),
-        darkestColor: Color.fromHex('#445555'),
-        minmaxWhite: [Color.fromHex('#eeeedd'), Color.fromHex('#444455')],
-        minmaxRed: [Color.fromHex('#554455'), Color.fromHex('#ddeedd')],
-        minmaxGreen: [Color.fromHex('#557777'), Color.fromHex('#eedddd')],
-        minmaxBlue: [Color.fromHex('#556688'), Color.fromHex('#eeeedd')],
-        mostFrequentColor: Color.fromHex('#444455'),
-        mostSaturatedColor: Color.fromHex('#446677'),
-        mostGroupedColor: Color.fromHex('#668888'),
-    },
-} satisfies IImageColorStats;
+ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

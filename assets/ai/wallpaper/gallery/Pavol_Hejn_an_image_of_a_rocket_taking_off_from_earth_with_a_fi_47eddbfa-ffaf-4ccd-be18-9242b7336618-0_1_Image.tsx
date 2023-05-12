@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_1.json';
-import source from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_1.png';
+import source from 'https://cdn.midjourney.com/47eddbfa-ffaf-4ccd-be18-9242b7336618/0_1.png';
+import texts from './Pavol_Hejn_an_image_of_a_rocket_taking_off_from_earth_with_a_fi_47eddbfa-ffaf-4ccd-be18-9242b7336618-0_1.texts.json';
 
 /**
  * Image of An image of a rocket taking off from Earth, with a fiery trail leading into the clouds.
@@ -40,27 +41,7 @@ export function AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe18924
 
 AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_1_Image.colorStats = {
-    averageColor: Color.fromHex('#9c7362'),
-    lightestColor: Color.fromHex('#ffeedd'),
-    darkestColor: Color.fromHex('#551100'),
-    minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#221122')],
-    minmaxRed: [Color.fromHex('#cc4422'), Color.fromHex('#eeffdd')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeedd')],
-    minmaxBlue: [Color.fromHex('#224466'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#442222'),
-    mostSaturatedColor: Color.fromHex('#551100'),
-    mostGroupedColor: Color.fromHex('#334455'),
-    bottom: {
-        averageColor: Color.fromHex('#a8634c'),
-        lightestColor: Color.fromHex('#ffddbb'),
-        darkestColor: Color.fromHex('#551100'),
-        minmaxWhite: [Color.fromHex('#ffddbb'), Color.fromHex('#221122')],
-        minmaxRed: [Color.fromHex('#aa3322'), Color.fromHex('#ffeeaa')],
-        minmaxGreen: [Color.fromHex('#888877'), Color.fromHex('#771111')],
-        minmaxBlue: [Color.fromHex('#333344'), Color.fromHex('#ffee88')],
-        mostFrequentColor: Color.fromHex('#442222'),
-        mostSaturatedColor: Color.fromHex('#551100'),
-        mostGroupedColor: Color.fromHex('#bb7755'),
-    },
-} satisfies IImageColorStats;
+AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_1_Image.texts =
+    texts satisfies IWallpaperTexts;

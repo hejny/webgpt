@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_c4ec9527-1ecb-4128-9c3e-5cf33ca23513-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_c4ec9527-1ecb-4128-9c3e-5cf33ca23513-0_3.json';
-import source from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_c4ec9527-1ecb-4128-9c3e-5cf33ca23513-0_3.png';
+import source from 'https://cdn.midjourney.com/c4ec9527-1ecb-4128-9c3e-5cf33ca23513/0_3.png';
+import texts from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_c4ec9527-1ecb-4128-9c3e-5cf33ca23513-0_3.texts.json';
 
 /**
  * Image of A whimsical scene of a hot air balloon flying over a city for a lifestyle or adventure website
@@ -40,27 +41,7 @@ export function AWhimsicalSceneOfAHotAirBalloonFlyingOverAC4ec95271ecb41289c3e5c
 
 AWhimsicalSceneOfAHotAirBalloonFlyingOverAC4ec95271ecb41289c3e5cf33ca235130_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWhimsicalSceneOfAHotAirBalloonFlyingOverAC4ec95271ecb41289c3e5cf33ca235130_3_Image.colorStats = {
-    averageColor: Color.fromHex('#a09887'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#333300'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#111133')],
-    minmaxRed: [Color.fromHex('#cc4422'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#889933'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#334466'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#445500'),
-    mostGroupedColor: Color.fromHex('#66bbbb'),
-    bottom: {
-        averageColor: Color.fromHex('#826354'),
-        lightestColor: Color.fromHex('#ffffee'),
-        darkestColor: Color.fromHex('#333300'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#111133')],
-        minmaxRed: [Color.fromHex('#cc4422'), Color.fromHex('#eeffee')],
-        minmaxGreen: [Color.fromHex('#889933'), Color.fromHex('#ee4466')],
-        minmaxBlue: [Color.fromHex('#334466'), Color.fromHex('#ffff99')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#445500'),
-        mostGroupedColor: Color.fromHex('#553344'),
-    },
-} satisfies IImageColorStats;
+AWhimsicalSceneOfAHotAirBalloonFlyingOverAC4ec95271ecb41289c3e5cf33ca235130_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWhimsicalSceneOfAHotAirBalloonFlyingOverAC4ec95271ecb41289c3e5cf33ca235130_3_Image.texts =
+    texts satisfies IWallpaperTexts;

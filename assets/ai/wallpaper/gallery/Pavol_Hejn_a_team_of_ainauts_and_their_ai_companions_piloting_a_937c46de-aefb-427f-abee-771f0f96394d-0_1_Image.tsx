@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_937c46de-aefb-427f-abee-771f0f96394d-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_937c46de-aefb-427f-abee-771f0f96394d-0_1.json';
-import source from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_937c46de-aefb-427f-abee-771f0f96394d-0_1.png';
+import source from 'https://cdn.midjourney.com/937c46de-aefb-427f-abee-771f0f96394d/0_1.png';
+import texts from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_piloting_a_937c46de-aefb-427f-abee-771f0f96394d-0_1.texts.json';
 
 /**
  * Image of A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them.
@@ -40,27 +41,7 @@ export function ATeamOfAinautsAndTheirAiCompanionsPilotingA937c46deAefb427fAbee7
 
 ATeamOfAinautsAndTheirAiCompanionsPilotingA937c46deAefb427fAbee771f0f96394d0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ATeamOfAinautsAndTheirAiCompanionsPilotingA937c46deAefb427fAbee771f0f96394d0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#3d353c'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4411'), Color.fromHex('#99ffff')],
-    minmaxGreen: [Color.fromHex('#669955'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#334488'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111122'),
-    bottom: {
-        averageColor: Color.fromHex('#553d3f'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3300'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#334488'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#220011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ATeamOfAinautsAndTheirAiCompanionsPilotingA937c46deAefb427fAbee771f0f96394d0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ATeamOfAinautsAndTheirAiCompanionsPilotingA937c46deAefb427fAbee771f0f96394d0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

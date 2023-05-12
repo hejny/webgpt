@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_0.json';
-import source from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_0.png';
+import source from 'https://cdn.midjourney.com/f3a4128a-879f-4434-9c41-0a5c719a0e72/0_0.png';
+import texts from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_0.texts.json';
 
 /**
  * Image of A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.
@@ -40,27 +41,7 @@ export function AFuturisticSpacecraftCrewedEntirelyByAinautsHF3a4128a879f44349c4
 
 AFuturisticSpacecraftCrewedEntirelyByAinautsHF3a4128a879f44349c410a5c719a0e720_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AFuturisticSpacecraftCrewedEntirelyByAinautsHF3a4128a879f44349c410a5c719a0e720_0_Image.colorStats = {
-    averageColor: Color.fromHex('#49545a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#aa3322'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#005599'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#001133'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#001122'),
-    bottom: {
-        averageColor: Color.fromHex('#2a3c4a'),
-        lightestColor: Color.fromHex('#eeffff'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#bb4422'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#005599'), Color.fromHex('#ffee99')],
-        mostFrequentColor: Color.fromHex('#001133'),
-        mostSaturatedColor: Color.fromHex('#001122'),
-        mostGroupedColor: Color.fromHex('#001122'),
-    },
-} satisfies IImageColorStats;
+AFuturisticSpacecraftCrewedEntirelyByAinautsHF3a4128a879f44349c410a5c719a0e720_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AFuturisticSpacecraftCrewedEntirelyByAinautsHF3a4128a879f44349c410a5c719a0e720_0_Image.texts =
+    texts satisfies IWallpaperTexts;

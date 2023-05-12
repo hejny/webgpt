@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_1.png';
+import source from 'https://cdn.midjourney.com/b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_b9bcd719-b4e3-42cd-8adf-dd0bc66be8e7-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfD
 
 AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_1_Image.colorStats = {
-    averageColor: Color.fromHex('#033039'),
-    lightestColor: Color.fromHex('#bbeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ccddee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#221122'), Color.fromHex('#00ffff')],
-    minmaxGreen: [Color.fromHex('#00bb77'), Color.fromHex('#000011')],
-    minmaxBlue: [Color.fromHex('#0066bb'), Color.fromHex('#aaffee')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#002222'),
-    bottom: {
-        averageColor: Color.fromHex('#05343e'),
-        lightestColor: Color.fromHex('#bbeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ccddee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#221122'), Color.fromHex('#00ffee')],
-        minmaxGreen: [Color.fromHex('#008855'), Color.fromHex('#000011')],
-        minmaxBlue: [Color.fromHex('#0066bb'), Color.fromHex('#aaffee')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#002233'),
-        mostGroupedColor: Color.fromHex('#001122'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleGraphicOfAnAbstractCirB9bcd719B4e342cd8adfDd0bc66be8e70_1_Image.texts =
+    texts satisfies IWallpaperTexts;

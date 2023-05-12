@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_8ad02715-5aa0-461c-be2f-b5aaeaa35929-0_2.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_8ad02715-5aa0-461c-be2f-b5aaeaa35929-0_2.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_8ad02715-5aa0-461c-be2f-b5aaeaa35929-0_2.png';
+import source from 'https://cdn.midjourney.com/8ad02715-5aa0-461c-be2f-b5aaeaa35929/0_2.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_8ad02715-5aa0-461c-be2f-b5aaeaa35929-0_2.texts.json';
 
 /**
  * Image of An abstract image of a stormy sky with lightning bolts for a weather or news website
@@ -40,27 +41,7 @@ export function AnAbstractImageOfAStormySkyWithLightningBol8ad027155aa0461cBe2fB
 
 AnAbstractImageOfAStormySkyWithLightningBol8ad027155aa0461cBe2fB5aaeaa359290_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfAStormySkyWithLightningBol8ad027155aa0461cBe2fB5aaeaa359290_2_Image.colorStats = {
-    averageColor: Color.fromHex('#3c406a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3344'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#667777'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#2244aa'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#001133'),
-    mostGroupedColor: Color.fromHex('#001122'),
-    bottom: {
-        averageColor: Color.fromHex('#1d1838'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3344'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#667777'), Color.fromHex('#ffddff')],
-        minmaxBlue: [Color.fromHex('#334488'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#110022'),
-        mostGroupedColor: Color.fromHex('#001122'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfAStormySkyWithLightningBol8ad027155aa0461cBe2fB5aaeaa359290_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfAStormySkyWithLightningBol8ad027155aa0461cBe2fB5aaeaa359290_2_Image.texts =
+    texts satisfies IWallpaperTexts;

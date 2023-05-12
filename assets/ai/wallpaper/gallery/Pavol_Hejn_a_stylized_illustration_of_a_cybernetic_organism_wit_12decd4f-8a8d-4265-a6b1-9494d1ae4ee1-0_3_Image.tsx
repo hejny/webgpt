@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_12decd4f-8a8d-4265-a6b1-9494d1ae4ee1-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_12decd4f-8a8d-4265-a6b1-9494d1ae4ee1-0_3.json';
-import source from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_12decd4f-8a8d-4265-a6b1-9494d1ae4ee1-0_3.png';
+import source from 'https://cdn.midjourney.com/12decd4f-8a8d-4265-a6b1-9494d1ae4ee1/0_3.png';
+import texts from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_12decd4f-8a8d-4265-a6b1-9494d1ae4ee1-0_3.texts.json';
 
 /**
  * Image of A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.
@@ -40,27 +41,7 @@ export function AStylizedIllustrationOfACyberneticOrganismWit12decd4f8a8d4265A6b
 
 AStylizedIllustrationOfACyberneticOrganismWit12decd4f8a8d4265A6b19494d1ae4ee10_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AStylizedIllustrationOfACyberneticOrganismWit12decd4f8a8d4265A6b19494d1ae4ee10_3_Image.colorStats = {
-    averageColor: Color.fromHex('#415e64'),
-    lightestColor: Color.fromHex('#eeffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa3311'), Color.fromHex('#22ffee')],
-    minmaxGreen: [Color.fromHex('#448866'), Color.fromHex('#ffeeee')],
-    minmaxBlue: [Color.fromHex('#115599'), Color.fromHex('#ffff55')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#002244'),
-    mostGroupedColor: Color.fromHex('#113344'),
-    bottom: {
-        averageColor: Color.fromHex('#2b4452'),
-        lightestColor: Color.fromHex('#88eeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ddeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa3311'), Color.fromHex('#11eeee')],
-        minmaxGreen: [Color.fromHex('#55bb99'), Color.fromHex('#550000')],
-        minmaxBlue: [Color.fromHex('#114488'), Color.fromHex('#ffdd66')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#002244'),
-        mostGroupedColor: Color.fromHex('#114455'),
-    },
-} satisfies IImageColorStats;
+AStylizedIllustrationOfACyberneticOrganismWit12decd4f8a8d4265A6b19494d1ae4ee10_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AStylizedIllustrationOfACyberneticOrganismWit12decd4f8a8d4265A6b19494d1ae4ee10_3_Image.texts =
+    texts satisfies IWallpaperTexts;

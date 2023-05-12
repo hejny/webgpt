@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_c9639a0d-476f-41a3-97f6-4fb8ef3df043-0_3.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_c9639a0d-476f-41a3-97f6-4fb8ef3df043-0_3.json';
-import source from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_c9639a0d-476f-41a3-97f6-4fb8ef3df043-0_3.png';
+import source from 'https://cdn.midjourney.com/c9639a0d-476f-41a3-97f6-4fb8ef3df043/0_3.png';
+import texts from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_c9639a0d-476f-41a3-97f6-4fb8ef3df043-0_3.texts.json';
 
 /**
  * Image of An abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns.
@@ -40,27 +41,7 @@ export function AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f6
 
 AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_3_Image.colorStats = {
-    averageColor: Color.fromHex('#6b4c46'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd2211'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#559977'), Color.fromHex('#ffddff')],
-    minmaxBlue: [Color.fromHex('#446699'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#223344'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#ffeeee'),
-    bottom: {
-        averageColor: Color.fromHex('#735c53'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc2211'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#ffddff')],
-        minmaxBlue: [Color.fromHex('#115577'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#223344'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_3_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_85014640-2d2f-4978-bd3e-e678a1f60ce6-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_85014640-2d2f-4978-bd3e-e678a1f60ce6-0_2.json';
-import source from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_85014640-2d2f-4978-bd3e-e678a1f60ce6-0_2.png';
+import source from 'https://cdn.midjourney.com/85014640-2d2f-4978-bd3e-e678a1f60ce6/0_2.png';
+import texts from './Pavol_Hejn_a_photograph_of_the_northern_lights_with_the_green_a_85014640-2d2f-4978-bd3e-e678a1f60ce6-0_2.texts.json';
 
 /**
  * Image of A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.
@@ -40,27 +41,7 @@ export function APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE
 
 APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_2_Image.colorStats = {
-    averageColor: Color.fromHex('#354042'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#772255'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#55bb55'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#553377'), Color.fromHex('#eeffff')],
-    mostFrequentColor: Color.fromHex('#001122'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#3b5440'),
-        lightestColor: Color.fromHex('#bbffdd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ddffcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#884455'), Color.fromHex('#bbffdd')],
-        minmaxGreen: [Color.fromHex('#55bb55'), Color.fromHex('#220011')],
-        minmaxBlue: [Color.fromHex('#113355'), Color.fromHex('#ddffcc')],
-        mostFrequentColor: Color.fromHex('#001122'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_2_Image.texts =
+    texts satisfies IWallpaperTexts;

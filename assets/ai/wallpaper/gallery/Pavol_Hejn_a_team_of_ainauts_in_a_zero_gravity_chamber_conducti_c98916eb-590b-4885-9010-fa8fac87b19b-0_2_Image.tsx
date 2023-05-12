@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_2.json';
-import source from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_2.png';
+import source from 'https://cdn.midjourney.com/c98916eb-590b-4885-9010-fa8fac87b19b/0_2.png';
+import texts from './Pavol_Hejn_a_team_of_ainauts_in_a_zero_gravity_chamber_conducti_c98916eb-590b-4885-9010-fa8fac87b19b-0_2.texts.json';
 
 /**
  * Image of A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.
@@ -40,27 +41,7 @@ export function ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010F
 
 ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#37484f'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#884444'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#447766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#112222'),
-    bottom: {
-        averageColor: Color.fromHex('#26343b'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#775555'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#668877'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#112222'),
-    },
-} satisfies IImageColorStats;
+ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

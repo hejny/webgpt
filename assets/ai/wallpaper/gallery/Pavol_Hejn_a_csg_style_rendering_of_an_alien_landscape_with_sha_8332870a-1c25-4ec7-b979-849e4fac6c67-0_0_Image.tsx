@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_8332870a-1c25-4ec7-b979-849e4fac6c67-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_8332870a-1c25-4ec7-b979-849e4fac6c67-0_0.json';
-import source from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_8332870a-1c25-4ec7-b979-849e4fac6c67-0_0.png';
+import source from 'https://cdn.midjourney.com/8332870a-1c25-4ec7-b979-849e4fac6c67/0_0.png';
+import texts from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_8332870a-1c25-4ec7-b979-849e4fac6c67-0_0.texts.json';
 
 /**
  * Image of A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe.
@@ -40,27 +41,7 @@ export function ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B9798
 
 ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_0_Image.colorStats = {
-    averageColor: Color.fromHex('#856559'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ff3300'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#449977'), Color.fromHex('#ff3300')],
-    minmaxBlue: [Color.fromHex('#444477'), Color.fromHex('#ffffcc')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#440011'),
-    mostGroupedColor: Color.fromHex('#446666'),
-    bottom: {
-        averageColor: Color.fromHex('#8a4839'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ff3300'), Color.fromHex('#eeffee')],
-        minmaxGreen: [Color.fromHex('#669977'), Color.fromHex('#ff3300')],
-        minmaxBlue: [Color.fromHex('#223355'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#882200'),
-        mostGroupedColor: Color.fromHex('#882211'),
-    },
-} satisfies IImageColorStats;
+ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_0_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_futuristic_spaceship_crewed_entirely_by_ainauts_tr_eb8be439-1dba-44de-85c7-782b8683e265-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_futuristic_spaceship_crewed_entirely_by_ainauts_tr_eb8be439-1dba-44de-85c7-782b8683e265-0_1.json';
-import source from './Pavol_Hejn_a_futuristic_spaceship_crewed_entirely_by_ainauts_tr_eb8be439-1dba-44de-85c7-782b8683e265-0_1.png';
+import source from 'https://cdn.midjourney.com/eb8be439-1dba-44de-85c7-782b8683e265/0_1.png';
+import texts from './Pavol_Hejn_a_futuristic_spaceship_crewed_entirely_by_ainauts_tr_eb8be439-1dba-44de-85c7-782b8683e265-0_1.texts.json';
 
 /**
  * Image of A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.
@@ -40,27 +41,7 @@ export function AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c
 
 AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_1_Image.colorStats = {
-    averageColor: Color.fromHex('#273a4b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4400'), Color.fromHex('#33ffff')],
-    minmaxGreen: [Color.fromHex('#338888'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#1166bb'), Color.fromHex('#ffff99')],
-    mostFrequentColor: Color.fromHex('#000022'),
-    mostSaturatedColor: Color.fromHex('#552200'),
-    mostGroupedColor: Color.fromHex('#000011'),
-    bottom: {
-        averageColor: Color.fromHex('#1f3247'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#33eeff')],
-        minmaxGreen: [Color.fromHex('#338888'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#1166aa'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#000022'),
-        mostSaturatedColor: Color.fromHex('#552200'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_1_Image.texts =
+    texts satisfies IWallpaperTexts;

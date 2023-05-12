@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.png';
+import source from 'https://cdn.midjourney.com/48628035-073a-4ba2-bf38-d3a6f4865319/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background.
@@ -40,27 +41,7 @@ export function AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38
 
 AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38D3a6f48653190_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38D3a6f48653190_1_Image.colorStats = {
-    averageColor: Color.fromHex('#141917'),
-    lightestColor: Color.fromHex('#bbeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ddffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb4400'), Color.fromHex('#aaffff')],
-    minmaxGreen: [Color.fromHex('#448866'), Color.fromHex('#550000')],
-    minmaxBlue: [Color.fromHex('#336699'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#112222'),
-    bottom: {
-        averageColor: Color.fromHex('#131716'),
-        lightestColor: Color.fromHex('#bbeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#dddddd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa4400'), Color.fromHex('#bbffff')],
-        minmaxGreen: [Color.fromHex('#228877'), Color.fromHex('#550000')],
-        minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffff88')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38D3a6f48653190_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38D3a6f48653190_1_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_84c1138a-9326-4f39-ba19-3cf3481d747c-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_84c1138a-9326-4f39-ba19-3cf3481d747c-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_84c1138a-9326-4f39-ba19-3cf3481d747c-0_1.png';
+import source from 'https://cdn.midjourney.com/84c1138a-9326-4f39-ba19-3cf3481d747c/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_84c1138a-9326-4f39-ba19-3cf3481d747c-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons.
@@ -40,27 +41,7 @@ export function AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba19
 
 AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#82816b'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc5522'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#66aa77'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#112222'),
-    bottom: {
-        averageColor: Color.fromHex('#7e806c'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa5511'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#55aa88'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#226677'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#eeeecc'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

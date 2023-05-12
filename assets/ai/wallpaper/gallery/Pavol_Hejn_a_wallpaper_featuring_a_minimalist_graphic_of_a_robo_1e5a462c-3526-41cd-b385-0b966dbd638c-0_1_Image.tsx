@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_1e5a462c-3526-41cd-b385-0b966dbd638c-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_1e5a462c-3526-41cd-b385-0b966dbd638c-0_1.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_1e5a462c-3526-41cd-b385-0b966dbd638c-0_1.png';
+import source from 'https://cdn.midjourney.com/1e5a462c-3526-41cd-b385-0b966dbd638c/0_1.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_minimalist_graphic_of_a_robo_1e5a462c-3526-41cd-b385-0b966dbd638c-0_1.texts.json';
 
 /**
  * Image of A wallpaper featuring a minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingAMinimalistGraphicOfARoboe5a462c352641cdB3850
 
 AWallpaperFeaturingAMinimalistGraphicOfARoboe5a462c352641cdB3850b966dbd638c01_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingAMinimalistGraphicOfARoboe5a462c352641cdB3850b966dbd638c01_1_Image.colorStats = {
-    averageColor: Color.fromHex('#f6991c'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb6622'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#556677'), Color.fromHex('#ffaa00')],
-    mostFrequentColor: Color.fromHex('#ee9922'),
-    mostSaturatedColor: Color.fromHex('#ff9900'),
-    mostGroupedColor: Color.fromHex('#ff9911'),
-    bottom: {
-        averageColor: Color.fromHex('#fa9816'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb6622'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#777755'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#556677'), Color.fromHex('#ffaa00')],
-        mostFrequentColor: Color.fromHex('#ee9922'),
-        mostSaturatedColor: Color.fromHex('#ff9900'),
-        mostGroupedColor: Color.fromHex('#ff9911'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingAMinimalistGraphicOfARoboe5a462c352641cdB3850b966dbd638c01_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingAMinimalistGraphicOfARoboe5a462c352641cdB3850b966dbd638c01_1_Image.texts =
+    texts satisfies IWallpaperTexts;

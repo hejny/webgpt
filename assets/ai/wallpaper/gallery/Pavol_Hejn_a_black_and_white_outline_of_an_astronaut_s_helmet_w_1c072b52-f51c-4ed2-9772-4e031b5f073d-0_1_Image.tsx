@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_1c072b52-f51c-4ed2-9772-4e031b5f073d-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_1c072b52-f51c-4ed2-9772-4e031b5f073d-0_1.json';
-import source from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_1c072b52-f51c-4ed2-9772-4e031b5f073d-0_1.png';
+import source from 'https://cdn.midjourney.com/1c072b52-f51c-4ed2-9772-4e031b5f073d/0_1.png';
+import texts from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_1c072b52-f51c-4ed2-9772-4e031b5f073d-0_1.texts.json';
 
 /**
  * Image of A black and white outline of an astronaut's helmet, with intricate details that showcase the reflection of the surrounding environment.
@@ -40,27 +41,7 @@ export function ABlackAndWhiteOutlineOfAnAstronautSHelmetWc072b52F51c4ed297724e0
 
 ABlackAndWhiteOutlineOfAnAstronautSHelmetWc072b52F51c4ed297724e031b5f073d01_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABlackAndWhiteOutlineOfAnAstronautSHelmetWc072b52F51c4ed297724e031b5f073d01_1_Image.colorStats = {
-    averageColor: Color.fromHex('#333232'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#555566'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#343433'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554444'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#667766'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#444455'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ABlackAndWhiteOutlineOfAnAstronautSHelmetWc072b52F51c4ed297724e031b5f073d01_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABlackAndWhiteOutlineOfAnAstronautSHelmetWc072b52F51c4ed297724e031b5f073d01_1_Image.texts =
+    texts satisfies IWallpaperTexts;

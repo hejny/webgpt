@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_10e6d742-d354-42a9-8c19-ca72846339e7-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_10e6d742-d354-42a9-8c19-ca72846339e7-0_2.json';
-import source from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_10e6d742-d354-42a9-8c19-ca72846339e7-0_2.png';
+import source from 'https://cdn.midjourney.com/10e6d742-d354-42a9-8c19-ca72846339e7/0_2.png';
+import texts from './Pavol_Hejn_a_pixel_art_inspired_wallpaper_featuring_a_retro_sty_10e6d742-d354-42a9-8c19-ca72846339e7-0_2.texts.json';
 
 /**
  * Image of A pixel art-inspired wallpaper featuring a retro-style robot, with a limited color palette and pixelated lines.
@@ -40,27 +41,7 @@ export function APixelArtInspiredWallpaperFeaturingARetroSty10e6d742D35442a98c19
 
 APixelArtInspiredWallpaperFeaturingARetroSty10e6d742D35442a98c19Ca72846339e70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APixelArtInspiredWallpaperFeaturingARetroSty10e6d742D35442a98c19Ca72846339e70_2_Image.colorStats = {
-    averageColor: Color.fromHex('#798e8a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#441100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110011')],
-    minmaxRed: [Color.fromHex('#bb5533'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#559988'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#445588'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#666677'),
-    mostSaturatedColor: Color.fromHex('#330022'),
-    mostGroupedColor: Color.fromHex('#77bbbb'),
-    bottom: {
-        averageColor: Color.fromHex('#718a8a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#110011'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110011')],
-        minmaxRed: [Color.fromHex('#552233'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#559988'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#445588'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#666677'),
-        mostSaturatedColor: Color.fromHex('#330022'),
-        mostGroupedColor: Color.fromHex('#558899'),
-    },
-} satisfies IImageColorStats;
+APixelArtInspiredWallpaperFeaturingARetroSty10e6d742D35442a98c19Ca72846339e70_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+APixelArtInspiredWallpaperFeaturingARetroSty10e6d742D35442a98c19Ca72846339e70_2_Image.texts =
+    texts satisfies IWallpaperTexts;

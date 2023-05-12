@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087-cde7-4246-8398-023dd8837d6b-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087-cde7-4246-8398-023dd8837d6b-0_3.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087-cde7-4246-8398-023dd8837d6b-0_3.png';
+import source from 'https://cdn.midjourney.com/e2c1b087-cde7-4246-8398-023dd8837d6b/0_3.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_drone_ag_e2c1b087-cde7-4246-8398-023dd8837d6b-0_3.texts.json';
 
 /**
  * Image of A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors.
@@ -40,27 +41,7 @@ export function AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde74246839802
 
 AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde742468398023dd8837d6b0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde742468398023dd8837d6b0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#555c4c'),
-    lightestColor: Color.fromHex('#ddbb88'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ddbb88'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4411'), Color.fromHex('#55aa99')],
-    minmaxGreen: [Color.fromHex('#449977'), Color.fromHex('#ff5511')],
-    minmaxBlue: [Color.fromHex('#115577'), Color.fromHex('#ff7700')],
-    mostFrequentColor: Color.fromHex('#666655'),
-    mostSaturatedColor: Color.fromHex('#ff5500'),
-    mostGroupedColor: Color.fromHex('#335555'),
-    bottom: {
-        averageColor: Color.fromHex('#545c4c'),
-        lightestColor: Color.fromHex('#99bb99'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#99bb99'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee5511'), Color.fromHex('#66aa99')],
-        minmaxGreen: [Color.fromHex('#669966'), Color.fromHex('#330000')],
-        minmaxBlue: [Color.fromHex('#115577'), Color.fromHex('#ff6600')],
-        mostFrequentColor: Color.fromHex('#666655'),
-        mostSaturatedColor: Color.fromHex('#ff6600'),
-        mostGroupedColor: Color.fromHex('#335555'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde742468398023dd8837d6b0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASingleLineDrawingOfADroneAgE2c1b087Cde742468398023dd8837d6b0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

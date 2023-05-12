@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_701e3e0e-70c2-42b9-9c73-3e7b9062a395-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_701e3e0e-70c2-42b9-9c73-3e7b9062a395-0_2.json';
-import source from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_701e3e0e-70c2-42b9-9c73-3e7b9062a395-0_2.png';
+import source from 'https://cdn.midjourney.com/701e3e0e-70c2-42b9-9c73-3e7b9062a395/0_2.png';
+import texts from './Pavol_Hejn_a_calming_beach_sunset_with_palm_trees_for_a_vacatio_701e3e0e-70c2-42b9-9c73-3e7b9062a395-0_2.texts.json';
 
 /**
  * Image of A calming beach sunset with palm trees for a vacation rental or real estate website
@@ -40,27 +41,7 @@ export function ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733
 
 ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_2_Image.colorStats = {
-    averageColor: Color.fromHex('#81443e'),
-    lightestColor: Color.fromHex('#ffeeaa'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeeaa'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3322'), Color.fromHex('#ffff99')],
-    minmaxGreen: [Color.fromHex('#447788'), Color.fromHex('#ff4433')],
-    minmaxBlue: [Color.fromHex('#333377'), Color.fromHex('#ffff88')],
-    mostFrequentColor: Color.fromHex('#222233'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#6c3f3c'),
-        lightestColor: Color.fromHex('#ffeeaa'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffeeaa'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#cc3322'), Color.fromHex('#ffff99')],
-        minmaxGreen: [Color.fromHex('#447788'), Color.fromHex('#ee4444')],
-        minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffff88')],
-        mostFrequentColor: Color.fromHex('#222233'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#111122'),
-    },
-} satisfies IImageColorStats;
+ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__22c68aaa-b282-4abe-b30b-7e0718e37ffa-0_3.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__22c68aaa-b282-4abe-b30b-7e0718e37ffa-0_3.json';
-import source from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__22c68aaa-b282-4abe-b30b-7e0718e37ffa-0_3.png';
+import source from 'https://cdn.midjourney.com/22c68aaa-b282-4abe-b30b-7e0718e37ffa/0_3.png';
+import texts from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__22c68aaa-b282-4abe-b30b-7e0718e37ffa-0_3.texts.json';
 
 /**
  * Image of An abstract watercolor painting with vibrant colors for an art or design blog
@@ -40,27 +41,7 @@ export function AnAbstractWatercolorPaintingWithVibrantColors22c68aaaB2824abeB30
 
 AnAbstractWatercolorPaintingWithVibrantColors22c68aaaB2824abeB30b7e0718e37ffa0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractWatercolorPaintingWithVibrantColors22c68aaaB2824abeB30b7e0718e37ffa0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#c9b0b6'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#336622'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#001133')],
-    minmaxRed: [Color.fromHex('#ee3333'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#66aa55'), Color.fromHex('#ff44aa')],
-    minmaxBlue: [Color.fromHex('#004499'), Color.fromHex('#ffee66')],
-    mostFrequentColor: Color.fromHex('#eeccdd'),
-    mostSaturatedColor: Color.fromHex('#004488'),
-    mostGroupedColor: Color.fromHex('#ffcccc'),
-    bottom: {
-        averageColor: Color.fromHex('#b5b1c3'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#001133'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#001133')],
-        minmaxRed: [Color.fromHex('#dd4422'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#779955'), Color.fromHex('#ff44aa')],
-        minmaxBlue: [Color.fromHex('#004499'), Color.fromHex('#ffee77')],
-        mostFrequentColor: Color.fromHex('#eeccdd'),
-        mostSaturatedColor: Color.fromHex('#004488'),
-        mostGroupedColor: Color.fromHex('#ccddee'),
-    },
-} satisfies IImageColorStats;
+AnAbstractWatercolorPaintingWithVibrantColors22c68aaaB2824abeB30b7e0718e37ffa0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractWatercolorPaintingWithVibrantColors22c68aaaB2824abeB30b7e0718e37ffa0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

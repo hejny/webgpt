@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_2.json';
-import source from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_2.png';
+import source from 'https://cdn.midjourney.com/05d8dbb7-169e-4f40-ae4b-5da139b56fba/0_2.png';
+import texts from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_2.texts.json';
 
 /**
  * Image of A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them.
@@ -40,27 +41,7 @@ export function AGroupOfAinautsExploringTheRuinsOfAnAncient05d8dbb7169e4f40Ae4b5
 
 AGroupOfAinautsExploringTheRuinsOfAnAncient05d8dbb7169e4f40Ae4b5da139b56fba0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AGroupOfAinautsExploringTheRuinsOfAnAncient05d8dbb7169e4f40Ae4b5da139b56fba0_2_Image.colorStats = {
-    averageColor: Color.fromHex('#656d6a'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#884433'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#334444'),
-    bottom: {
-        averageColor: Color.fromHex('#4d4b46'),
-        lightestColor: Color.fromHex('#ffeeee'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#ffeeee'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#884433'), Color.fromHex('#eeeeee')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#ffeeee')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffeebb')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#332200'),
-        mostGroupedColor: Color.fromHex('#222222'),
-    },
-} satisfies IImageColorStats;
+AGroupOfAinautsExploringTheRuinsOfAnAncient05d8dbb7169e4f40Ae4b5da139b56fba0_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AGroupOfAinautsExploringTheRuinsOfAnAncient05d8dbb7169e4f40Ae4b5da139b56fba0_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_1.json';
-import source from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_1.png';
+import source from 'https://cdn.midjourney.com/bcf08c38-efa4-4631-a761-588842e6f805/0_1.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_1.texts.json';
 
 /**
  * Image of An illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
@@ -40,27 +41,7 @@ export function AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A7615
 
 AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_1_Image.colorStats = {
-    averageColor: Color.fromHex('#2c3239'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa2222'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#888855'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#223333'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#18202a'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#663322'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#777744'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335588'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#223333'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#111122'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_1_Image.texts =
+    texts satisfies IWallpaperTexts;

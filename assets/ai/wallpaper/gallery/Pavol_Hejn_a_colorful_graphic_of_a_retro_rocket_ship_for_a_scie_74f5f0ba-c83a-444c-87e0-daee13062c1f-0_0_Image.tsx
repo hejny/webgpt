@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_0.json';
-import source from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_0.png';
+import source from 'https://cdn.midjourney.com/74f5f0ba-c83a-444c-87e0-daee13062c1f/0_0.png';
+import texts from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_0.texts.json';
 
 /**
  * Image of A colorful graphic of a retro rocket ship for a science or space exploration website
@@ -40,27 +41,7 @@ export function AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Da
 
 AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#a7a064'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd2222'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#66aa55'), Color.fromHex('#cc1122')],
-    minmaxBlue: [Color.fromHex('#114477'), Color.fromHex('#ffcc22')],
-    mostFrequentColor: Color.fromHex('#ffcc55'),
-    mostSaturatedColor: Color.fromHex('#001133'),
-    mostGroupedColor: Color.fromHex('#ffbb44'),
-    bottom: {
-        averageColor: Color.fromHex('#aaa864'),
-        lightestColor: Color.fromHex('#eeffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb2222'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#66aa55'), Color.fromHex('#eeffff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffcc22')],
-        mostFrequentColor: Color.fromHex('#ffcc55'),
-        mostSaturatedColor: Color.fromHex('#003344'),
-        mostGroupedColor: Color.fromHex('#ffbb44'),
-    },
-} satisfies IImageColorStats;
+AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__e3651f20-d067-485f-94ac-7d3e11a6a55d-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__e3651f20-d067-485f-94ac-7d3e11a6a55d-0_0.json';
-import source from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__e3651f20-d067-485f-94ac-7d3e11a6a55d-0_0.png';
+import source from 'https://cdn.midjourney.com/e3651f20-d067-485f-94ac-7d3e11a6a55d/0_0.png';
+import texts from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__e3651f20-d067-485f-94ac-7d3e11a6a55d-0_0.texts.json';
 
 /**
  * Image of An urban-inspired wallpaper with a grunge aesthetic, featuring a neon-lit cityscape with futuristic elements such as holographic billboards.
@@ -40,27 +41,7 @@ export function AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac
 
 AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac7d3e11a6a55d0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac7d3e11a6a55d0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#313040'),
-    lightestColor: Color.fromHex('#ffccff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee1100'), Color.fromHex('#11eedd')],
-    minmaxGreen: [Color.fromHex('#00bb77'), Color.fromHex('#ff44dd')],
-    minmaxBlue: [Color.fromHex('#3333bb'), Color.fromHex('#ffee22')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#3d2d34'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb0011'), Color.fromHex('#bbffff')],
-        minmaxGreen: [Color.fromHex('#22aa88'), Color.fromHex('#ff66dd')],
-        minmaxBlue: [Color.fromHex('#222299'), Color.fromHex('#ffff77')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac7d3e11a6a55d0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnUrbanInspiredWallpaperWithAGrungeAestheticE3651f20D067485f94ac7d3e11a6a55d0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

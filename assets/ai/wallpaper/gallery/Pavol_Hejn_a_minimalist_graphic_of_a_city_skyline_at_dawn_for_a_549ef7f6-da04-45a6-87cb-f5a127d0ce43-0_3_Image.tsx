@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_city_skyline_at_dawn_for_a_549ef7f6-da04-45a6-87cb-f5a127d0ce43-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_city_skyline_at_dawn_for_a_549ef7f6-da04-45a6-87cb-f5a127d0ce43-0_3.json';
-import source from './Pavol_Hejn_a_minimalist_graphic_of_a_city_skyline_at_dawn_for_a_549ef7f6-da04-45a6-87cb-f5a127d0ce43-0_3.png';
+import source from 'https://cdn.midjourney.com/549ef7f6-da04-45a6-87cb-f5a127d0ce43/0_3.png';
+import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_city_skyline_at_dawn_for_a_549ef7f6-da04-45a6-87cb-f5a127d0ce43-0_3.texts.json';
 
 /**
  * Image of A minimalist graphic of a city skyline at dawn for a business or marketing website
@@ -40,27 +41,7 @@ export function AMinimalistGraphicOfACitySkylineAtDawnForA549ef7f6Da0445a687cbF5
 
 AMinimalistGraphicOfACitySkylineAtDawnForA549ef7f6Da0445a687cbF5a127d0ce430_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistGraphicOfACitySkylineAtDawnForA549ef7f6Da0445a687cbF5a127d0ce430_3_Image.colorStats = {
-    averageColor: Color.fromHex('#a15449'),
-    lightestColor: Color.fromHex('#ffeedd'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffeedd'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4433'), Color.fromHex('#ffeedd')],
-    minmaxGreen: [Color.fromHex('#aa8866'), Color.fromHex('#ffeedd')],
-    minmaxBlue: [Color.fromHex('#553344'), Color.fromHex('#ffeeaa')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#330011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#2c1114'),
-        lightestColor: Color.fromHex('#ffddcc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeecc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc4444'), Color.fromHex('#ffeecc')],
-        minmaxGreen: [Color.fromHex('#ccaa77'), Color.fromHex('#550011')],
-        minmaxBlue: [Color.fromHex('#553344'), Color.fromHex('#ffeeaa')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+AMinimalistGraphicOfACitySkylineAtDawnForA549ef7f6Da0445a687cbF5a127d0ce430_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistGraphicOfACitySkylineAtDawnForA549ef7f6Da0445a687cbF5a127d0ce430_3_Image.texts =
+    texts satisfies IWallpaperTexts;

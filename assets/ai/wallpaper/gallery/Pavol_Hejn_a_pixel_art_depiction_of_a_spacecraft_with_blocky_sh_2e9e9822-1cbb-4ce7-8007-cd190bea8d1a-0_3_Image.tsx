@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_2e9e9822-1cbb-4ce7-8007-cd190bea8d1a-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_2e9e9822-1cbb-4ce7-8007-cd190bea8d1a-0_3.json';
-import source from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_2e9e9822-1cbb-4ce7-8007-cd190bea8d1a-0_3.png';
+import source from 'https://cdn.midjourney.com/2e9e9822-1cbb-4ce7-8007-cd190bea8d1a/0_3.png';
+import texts from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_2e9e9822-1cbb-4ce7-8007-cd190bea8d1a-0_3.texts.json';
 
 /**
  * Image of A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.
@@ -40,27 +41,7 @@ export function APixelArtDepictionOfASpacecraftWithBlockySh2e9e98221cbb4ce78007C
 
 APixelArtDepictionOfASpacecraftWithBlockySh2e9e98221cbb4ce78007Cd190bea8d1a0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APixelArtDepictionOfASpacecraftWithBlockySh2e9e98221cbb4ce78007Cd190bea8d1a0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#a6bfa7'),
-    lightestColor: Color.fromHex('#eeeeff'),
-    darkestColor: Color.fromHex('#001122'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#001122')],
-    minmaxRed: [Color.fromHex('#dd3322'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#eeeeff')],
-    minmaxBlue: [Color.fromHex('#334499'), Color.fromHex('#ffffaa')],
-    mostFrequentColor: Color.fromHex('#aaddcc'),
-    mostSaturatedColor: Color.fromHex('#001122'),
-    mostGroupedColor: Color.fromHex('#aaddbb'),
-    bottom: {
-        averageColor: Color.fromHex('#a3c1a9'),
-        lightestColor: Color.fromHex('#eeffee'),
-        darkestColor: Color.fromHex('#441111'),
-        minmaxWhite: [Color.fromHex('#eeffee'), Color.fromHex('#221122')],
-        minmaxRed: [Color.fromHex('#cc3333'), Color.fromHex('#ddffee')],
-        minmaxGreen: [Color.fromHex('#66aa88'), Color.fromHex('#ee5577')],
-        minmaxBlue: [Color.fromHex('#334499'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#aaddcc'),
-        mostSaturatedColor: Color.fromHex('#330033'),
-        mostGroupedColor: Color.fromHex('#aaddbb'),
-    },
-} satisfies IImageColorStats;
+APixelArtDepictionOfASpacecraftWithBlockySh2e9e98221cbb4ce78007Cd190bea8d1a0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+APixelArtDepictionOfASpacecraftWithBlockySh2e9e98221cbb4ce78007Cd190bea8d1a0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

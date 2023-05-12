@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_dca7be3d-9085-4f60-a9bd-168d5bcd3cc9-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_dca7be3d-9085-4f60-a9bd-168d5bcd3cc9-0_3.json';
-import source from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_dca7be3d-9085-4f60-a9bd-168d5bcd3cc9-0_3.png';
+import source from 'https://cdn.midjourney.com/dca7be3d-9085-4f60-a9bd-168d5bcd3cc9/0_3.png';
+import texts from './Pavol_Hejn_a_surreal_image_of_a_floating_island_with_a_waterfal_dca7be3d-9085-4f60-a9bd-168d5bcd3cc9-0_3.texts.json';
 
 /**
  * Image of A surreal image of a floating island with a waterfall for a travel blog or agency
@@ -40,27 +41,7 @@ export function ASurrealImageOfAFloatingIslandWithAWaterfalDca7be3d90854f60A9bd1
 
 ASurrealImageOfAFloatingIslandWithAWaterfalDca7be3d90854f60A9bd168d5bcd3cc90_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealImageOfAFloatingIslandWithAWaterfalDca7be3d90854f60A9bd168d5bcd3cc90_3_Image.colorStats = {
-    averageColor: Color.fromHex('#759091'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#112200'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#111100')],
-    minmaxRed: [Color.fromHex('#775533'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#668855'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#225577'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#002233'),
-    mostGroupedColor: Color.fromHex('#223344'),
-    bottom: {
-        averageColor: Color.fromHex('#426369'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#222211'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#001122')],
-        minmaxRed: [Color.fromHex('#664433'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#338877'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#334466'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#002233'),
-        mostGroupedColor: Color.fromHex('#223344'),
-    },
-} satisfies IImageColorStats;
+ASurrealImageOfAFloatingIslandWithAWaterfalDca7be3d90854f60A9bd168d5bcd3cc90_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealImageOfAFloatingIslandWithAWaterfalDca7be3d90854f60A9bd168d5bcd3cc90_3_Image.texts =
+    texts satisfies IWallpaperTexts;

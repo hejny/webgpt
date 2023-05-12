@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_15c02153-ec4e-4aab-b32c-33fb45c0c8f5-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_15c02153-ec4e-4aab-b32c-33fb45c0c8f5-0_1.json';
-import source from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_15c02153-ec4e-4aab-b32c-33fb45c0c8f5-0_1.png';
+import source from 'https://cdn.midjourney.com/15c02153-ec4e-4aab-b32c-33fb45c0c8f5/0_1.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_15c02153-ec4e-4aab-b32c-33fb45c0c8f5-0_1.texts.json';
 
 /**
  * Image of An illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet.
@@ -40,27 +41,7 @@ export function AnIllustrationOfAFuturisticAstronautInASleek5c02153Ec4e4aabB32c3
 
 AnIllustrationOfAFuturisticAstronautInASleek5c02153Ec4e4aabB32c33fb45c0c8f501_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfAFuturisticAstronautInASleek5c02153Ec4e4aabB32c33fb45c0c8f501_1_Image.colorStats = {
-    averageColor: Color.fromHex('#5c5f64'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#111100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#993322'), Color.fromHex('#55eeff')],
-    minmaxGreen: [Color.fromHex('#339999'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#115588'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#111122'),
-    mostSaturatedColor: Color.fromHex('#220000'),
-    mostGroupedColor: Color.fromHex('#222233'),
-    bottom: {
-        averageColor: Color.fromHex('#505d69'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#111100'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-        minmaxRed: [Color.fromHex('#bb6622'), Color.fromHex('#ffffff')],
-        minmaxGreen: [Color.fromHex('#779988'), Color.fromHex('#ffffff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffcc')],
-        mostFrequentColor: Color.fromHex('#111122'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#222233'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfAFuturisticAstronautInASleek5c02153Ec4e4aabB32c33fb45c0c8f501_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfAFuturisticAstronautInASleek5c02153Ec4e4aabB32c33fb45c0c8f501_1_Image.texts =
+    texts satisfies IWallpaperTexts;

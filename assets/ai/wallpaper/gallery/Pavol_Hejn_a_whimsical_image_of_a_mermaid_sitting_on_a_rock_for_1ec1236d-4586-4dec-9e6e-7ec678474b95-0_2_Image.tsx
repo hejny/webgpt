@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_2.json';
-import source from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_2.png';
+import source from 'https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_2.png';
+import texts from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_2.texts.json';
 
 /**
  * Image of A whimsical image of a mermaid sitting on a rock for a fantasy or fiction website
@@ -40,27 +41,7 @@ export function AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7e
 
 AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_2_Image.colorStats = {
-    averageColor: Color.fromHex('#6f7a70'),
-    lightestColor: Color.fromHex('#eeeeee'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#eeeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#664433'), Color.fromHex('#eeffdd')],
-    minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#eeeeee')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#eeffdd')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#bbccbb'),
-    bottom: {
-        averageColor: Color.fromHex('#3d4844'),
-        lightestColor: Color.fromHex('#ddddcc'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ddddcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#554433'), Color.fromHex('#ddddcc')],
-        minmaxGreen: [Color.fromHex('#668866'), Color.fromHex('#000000')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ddddcc')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#111111'),
-    },
-} satisfies IImageColorStats;
+AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_2_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_17ba18a7-947b-49f0-b952-3c5ccc2045b9-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_17ba18a7-947b-49f0-b952-3c5ccc2045b9-0_2.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_17ba18a7-947b-49f0-b952-3c5ccc2045b9-0_2.png';
+import source from 'https://cdn.midjourney.com/17ba18a7-947b-49f0-b952-3c5ccc2045b9/0_2.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_virtual_assis_17ba18a7-947b-49f0-b952-3c5ccc2045b9-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a virtual assistant or chatbot, with space for messages and alerts.
@@ -40,27 +41,7 @@ export function AWallpaperWithASimpleGraphicOfAVirtualAssis17ba18a7947b49f0B9523
 
 AWallpaperWithASimpleGraphicOfAVirtualAssis17ba18a7947b49f0B9523c5ccc2045b90_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithASimpleGraphicOfAVirtualAssis17ba18a7947b49f0B9523c5ccc2045b90_2_Image.colorStats = {
-    averageColor: Color.fromHex('#29113a'),
-    lightestColor: Color.fromHex('#ff99ff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd1155'), Color.fromHex('#00ffee')],
-    minmaxGreen: [Color.fromHex('#00ee77'), Color.fromHex('#ee00ff')],
-    minmaxBlue: [Color.fromHex('#2211dd'), Color.fromHex('#ffee55')],
-    mostFrequentColor: Color.fromHex('#000022'),
-    mostSaturatedColor: Color.fromHex('#110022'),
-    mostGroupedColor: Color.fromHex('#110022'),
-    bottom: {
-        averageColor: Color.fromHex('#260a33'),
-        lightestColor: Color.fromHex('#ffccff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd1155'), Color.fromHex('#00eeee')],
-        minmaxGreen: [Color.fromHex('#00cc77'), Color.fromHex('#ee00ff')],
-        minmaxBlue: [Color.fromHex('#5511bb'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#000022'),
-        mostSaturatedColor: Color.fromHex('#110022'),
-        mostGroupedColor: Color.fromHex('#110022'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithASimpleGraphicOfAVirtualAssis17ba18a7947b49f0B9523c5ccc2045b90_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithASimpleGraphicOfAVirtualAssis17ba18a7947b49f0B9523c5ccc2045b90_2_Image.texts =
+    texts satisfies IWallpaperTexts;

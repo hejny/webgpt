@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_0.json';
-import source from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_0.png';
+import source from 'https://cdn.midjourney.com/e635bda5-db86-4c53-8d21-8e9c7801bd94/0_0.png';
+import texts from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_0.texts.json';
 
 /**
  * Image of A bold and graphic image of a tiger's head for a wildlife or animal conservation website
@@ -40,27 +41,7 @@ export function ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c
 
 ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.colorStats = {
-    averageColor: Color.fromHex('#342616'),
-    lightestColor: Color.fromHex('#ffffdd'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc4433'), Color.fromHex('#ffffdd')],
-    minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ffffdd')],
-    minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffee44')],
-    mostFrequentColor: Color.fromHex('#000000'),
-    mostSaturatedColor: Color.fromHex('#110000'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#292016'),
-        lightestColor: Color.fromHex('#ffccbb'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#cc4433'), Color.fromHex('#eeeeaa')],
-        minmaxGreen: [Color.fromHex('#778855'), Color.fromHex('#ff6644')],
-        minmaxBlue: [Color.fromHex('#445566'), Color.fromHex('#ffee99')],
-        mostFrequentColor: Color.fromHex('#000000'),
-        mostSaturatedColor: Color.fromHex('#110000'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.texts =
+    texts satisfies IWallpaperTexts;

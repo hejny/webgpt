@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.json';
-import source from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.png';
+import source from 'https://cdn.midjourney.com/e06eece0-8eb1-4104-a195-a3f2518607d1/0_3.png';
+import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__e06eece0-8eb1-4104-a195-a3f2518607d1-0_3.texts.json';
 
 /**
  * Image of A minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme.
@@ -40,27 +41,7 @@ export function AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195
 
 AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.colorStats = {
-    averageColor: Color.fromHex('#7b86ab'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000011'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000011')],
-    minmaxRed: [Color.fromHex('#884488'), Color.fromHex('#55ddee')],
-    minmaxGreen: [Color.fromHex('#33aaaa'), Color.fromHex('#ffbbff')],
-    minmaxBlue: [Color.fromHex('#4444aa'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#7799bb'),
-    mostSaturatedColor: Color.fromHex('#0077aa'),
-    mostGroupedColor: Color.fromHex('#334477'),
-    bottom: {
-        averageColor: Color.fromHex('#5a6a93'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#112244'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#112244')],
-        minmaxRed: [Color.fromHex('#884488'), Color.fromHex('#ddffff')],
-        minmaxGreen: [Color.fromHex('#447788'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#4444aa'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#7799bb'),
-        mostSaturatedColor: Color.fromHex('#113377'),
-        mostGroupedColor: Color.fromHex('#334477'),
-    },
-} satisfies IImageColorStats;
+AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.texts =
+    texts satisfies IWallpaperTexts;

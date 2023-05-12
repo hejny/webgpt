@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_3.json';
-import source from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_3.png';
+import source from 'https://cdn.midjourney.com/68bdb7af-adc9-47c9-8893-67e31299e98b/0_3.png';
+import texts from './Pavol_Hejn_a_close_up_of_a_dolphin_jumping_out_of_the_water_68bdb7af-adc9-47c9-8893-67e31299e98b-0_3.texts.json';
 
 /**
  * Image of A close-up of a dolphin jumping out of the water
@@ -40,27 +41,6 @@ export function ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e312
 
 ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#789fab'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#aa4411'), Color.fromHex('#aaffff')],
-    minmaxGreen: [Color.fromHex('#228877'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#115577'),
-    mostSaturatedColor: Color.fromHex('#007799'),
-    mostGroupedColor: Color.fromHex('#bbccdd'),
-    bottom: {
-        averageColor: Color.fromHex('#5d95a2'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa4411'), Color.fromHex('#bbffff')],
-        minmaxGreen: [Color.fromHex('#228877'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#115577'),
-        mostSaturatedColor: Color.fromHex('#005577'),
-        mostGroupedColor: Color.fromHex('#005566'),
-    },
-} satisfies IImageColorStats;
+ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_3_Image.texts = texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__732a58fa-1a92-461d-b46a-4090fb8c7bd3-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__732a58fa-1a92-461d-b46a-4090fb8c7bd3-0_3.json';
-import source from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__732a58fa-1a92-461d-b46a-4090fb8c7bd3-0_3.png';
+import source from 'https://cdn.midjourney.com/732a58fa-1a92-461d-b46a-4090fb8c7bd3/0_3.png';
+import texts from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__732a58fa-1a92-461d-b46a-4090fb8c7bd3-0_3.texts.json';
 
 /**
  * Image of A vibrant galaxy with swirling colors and stars for a science or astronomy blog
@@ -40,27 +41,7 @@ export function AVibrantGalaxyWithSwirlingColorsAndStarsFor732a58fa1a92461dB46a4
 
 AVibrantGalaxyWithSwirlingColorsAndStarsFor732a58fa1a92461dB46a4090fb8c7bd30_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AVibrantGalaxyWithSwirlingColorsAndStarsFor732a58fa1a92461dB46a4090fb8c7bd30_3_Image.colorStats = {
-    averageColor: Color.fromHex('#774348'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee1100'), Color.fromHex('#ddffff')],
-    minmaxGreen: [Color.fromHex('#999966'), Color.fromHex('#ee1111')],
-    minmaxBlue: [Color.fromHex('#2222aa'), Color.fromHex('#ffdd44')],
-    mostFrequentColor: Color.fromHex('#332244'),
-    mostSaturatedColor: Color.fromHex('#110011'),
-    mostGroupedColor: Color.fromHex('#111133'),
-    bottom: {
-        averageColor: Color.fromHex('#744752'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#dd2211'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#999966'), Color.fromHex('#ffddff')],
-        minmaxBlue: [Color.fromHex('#2222aa'), Color.fromHex('#ffffff')],
-        mostFrequentColor: Color.fromHex('#332244'),
-        mostSaturatedColor: Color.fromHex('#110022'),
-        mostGroupedColor: Color.fromHex('#111122'),
-    },
-} satisfies IImageColorStats;
+AVibrantGalaxyWithSwirlingColorsAndStarsFor732a58fa1a92461dB46a4090fb8c7bd30_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AVibrantGalaxyWithSwirlingColorsAndStarsFor732a58fa1a92461dB46a4090fb8c7bd30_3_Image.texts =
+    texts satisfies IWallpaperTexts;

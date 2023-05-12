@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_695bccbd-d3dd-46e3-82c6-bd6769d9ccfe-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_695bccbd-d3dd-46e3-82c6-bd6769d9ccfe-0_1.json';
-import source from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_695bccbd-d3dd-46e3-82c6-bd6769d9ccfe-0_1.png';
+import source from 'https://cdn.midjourney.com/695bccbd-d3dd-46e3-82c6-bd6769d9ccfe/0_1.png';
+import texts from './Pavol_Hejn_a_whimsical_tea_party_with_anthropomorphic_animals_695bccbd-d3dd-46e3-82c6-bd6769d9ccfe-0_1.texts.json';
 
 /**
  * Image of A whimsical tea party with anthropomorphic animals
@@ -40,27 +41,7 @@ export function AWhimsicalTeaPartyWithAnthropomorphicAnimals695bccbdD3dd46e382c6
 
 AWhimsicalTeaPartyWithAnthropomorphicAnimals695bccbdD3dd46e382c6Bd6769d9ccfe0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWhimsicalTeaPartyWithAnthropomorphicAnimals695bccbdD3dd46e382c6Bd6769d9ccfe0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#503c2f'),
-    lightestColor: Color.fromHex('#ffffee'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb3311'), Color.fromHex('#ffffee')],
-    minmaxGreen: [Color.fromHex('#889955'), Color.fromHex('#ffffee')],
-    minmaxBlue: [Color.fromHex('#334477'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#221100'),
-    mostGroupedColor: Color.fromHex('#111111'),
-    bottom: {
-        averageColor: Color.fromHex('#4a2f28'),
-        lightestColor: Color.fromHex('#ffffee'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#aa2211'), Color.fromHex('#ffffee')],
-        minmaxGreen: [Color.fromHex('#777733'), Color.fromHex('#ffffee')],
-        minmaxBlue: [Color.fromHex('#334477'), Color.fromHex('#ffffee')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#000011'),
-    },
-} satisfies IImageColorStats;
+AWhimsicalTeaPartyWithAnthropomorphicAnimals695bccbdD3dd46e382c6Bd6769d9ccfe0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWhimsicalTeaPartyWithAnthropomorphicAnimals695bccbdD3dd46e382c6Bd6769d9ccfe0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

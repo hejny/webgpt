@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_b5e4266f-7e64-4d4e-9a24-e0fafdc770eb-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_b5e4266f-7e64-4d4e-9a24-e0fafdc770eb-0_3.json';
-import source from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_b5e4266f-7e64-4d4e-9a24-e0fafdc770eb-0_3.png';
+import source from 'https://cdn.midjourney.com/b5e4266f-7e64-4d4e-9a24-e0fafdc770eb/0_3.png';
+import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_b5e4266f-7e64-4d4e-9a24-e0fafdc770eb-0_3.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of simple geometric shapes, in a monochromatic color palette such as grey or blue.
@@ -40,27 +41,7 @@ export function AWallpaperWithARepeatingPatternOfSimpleGeomeB5e4266f7e644d4e9a24
 
 AWallpaperWithARepeatingPatternOfSimpleGeomeB5e4266f7e644d4e9a24E0fafdc770eb0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperWithARepeatingPatternOfSimpleGeomeB5e4266f7e644d4e9a24E0fafdc770eb0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#7d8488'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#001100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#774433'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#669977'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffee')],
-    mostFrequentColor: Color.fromHex('#cccccc'),
-    mostSaturatedColor: Color.fromHex('#111100'),
-    mostGroupedColor: Color.fromHex('#aaaaaa'),
-    bottom: {
-        averageColor: Color.fromHex('#7e8184'),
-        lightestColor: Color.fromHex('#eeeeff'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#774433'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#336633'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#eeffee')],
-        mostFrequentColor: Color.fromHex('#cccccc'),
-        mostSaturatedColor: Color.fromHex('#111100'),
-        mostGroupedColor: Color.fromHex('#aaaaaa'),
-    },
-} satisfies IImageColorStats;
+AWallpaperWithARepeatingPatternOfSimpleGeomeB5e4266f7e644d4e9a24E0fafdc770eb0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperWithARepeatingPatternOfSimpleGeomeB5e4266f7e644d4e9a24E0fafdc770eb0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

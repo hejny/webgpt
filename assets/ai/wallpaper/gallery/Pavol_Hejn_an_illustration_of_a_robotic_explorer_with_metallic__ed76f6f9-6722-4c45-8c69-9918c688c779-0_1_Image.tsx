@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_1.json';
-import source from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_1.png';
+import source from 'https://cdn.midjourney.com/ed76f6f9-6722-4c45-8c69-9918c688c779/0_1.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_1.texts.json';
 
 /**
  * Image of An illustration of a robotic explorer, with metallic textures and intricate details.
@@ -40,27 +41,7 @@ export function AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c69
 
 AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c699918c688c7790_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c699918c688c7790_1_Image.colorStats = {
-    averageColor: Color.fromHex('#343931'),
-    lightestColor: Color.fromHex('#eeddff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#eeeeff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#995533'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#448877'), Color.fromHex('#eeddff')],
-    minmaxBlue: [Color.fromHex('#335577'), Color.fromHex('#ffffdd')],
-    mostFrequentColor: Color.fromHex('#224444'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#222222'),
-    bottom: {
-        averageColor: Color.fromHex('#303028'),
-        lightestColor: Color.fromHex('#eeddff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#eeeeff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#774422'), Color.fromHex('#eeeeff')],
-        minmaxGreen: [Color.fromHex('#778866'), Color.fromHex('#eeddff')],
-        minmaxBlue: [Color.fromHex('#334455'), Color.fromHex('#eeeedd')],
-        mostFrequentColor: Color.fromHex('#224444'),
-        mostSaturatedColor: Color.fromHex('#221100'),
-        mostGroupedColor: Color.fromHex('#334444'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c699918c688c7790_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c699918c688c7790_1_Image.texts =
+    texts satisfies IWallpaperTexts;

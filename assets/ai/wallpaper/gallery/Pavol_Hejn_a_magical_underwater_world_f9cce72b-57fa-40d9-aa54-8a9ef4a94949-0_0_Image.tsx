@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.json';
-import source from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.png';
+import source from 'https://cdn.midjourney.com/f9cce72b-57fa-40d9-aa54-8a9ef4a94949/0_0.png';
+import texts from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.texts.json';
 
 /**
  * Image of A magical underwater world
@@ -37,27 +38,5 @@ export function AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image
 }
 
 AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.metadata = metadata satisfies IWallpaperMetadata;
-AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.colorStats = {
-    averageColor: Color.fromHex('#37676c'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#331100'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#001111')],
-    minmaxRed: [Color.fromHex('#dd3311'), Color.fromHex('#77ffff')],
-    minmaxGreen: [Color.fromHex('#55aa55'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#224499'), Color.fromHex('#ffdd22')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#002233'),
-    mostGroupedColor: Color.fromHex('#113344'),
-    bottom: {
-        averageColor: Color.fromHex('#254c4f'),
-        lightestColor: Color.fromHex('#eeffff'),
-        darkestColor: Color.fromHex('#002211'),
-        minmaxWhite: [Color.fromHex('#eeffff'), Color.fromHex('#001111')],
-        minmaxRed: [Color.fromHex('#bb2222'), Color.fromHex('#88ffff')],
-        minmaxGreen: [Color.fromHex('#55aa55'), Color.fromHex('#eeeeff')],
-        minmaxBlue: [Color.fromHex('#224499'), Color.fromHex('#ffff99')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#002222'),
-        mostGroupedColor: Color.fromHex('#113344'),
-    },
-} satisfies IImageColorStats;
+AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.colorStats = hydrateColorStats(colorStats);
+AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.texts = texts satisfies IWallpaperTexts;

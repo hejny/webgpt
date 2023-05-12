@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_b5d191af-f3dc-4394-ab75-855adf486058-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_b5d191af-f3dc-4394-ab75-855adf486058-0_0.json';
-import source from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_b5d191af-f3dc-4394-ab75-855adf486058-0_0.png';
+import source from 'https://cdn.midjourney.com/b5d191af-f3dc-4394-ab75-855adf486058/0_0.png';
+import texts from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_b5d191af-f3dc-4394-ab75-855adf486058-0_0.texts.json';
 
 /**
  * Image of A bright and cheerful image of a sunflower field for a gardening or nature website
@@ -40,27 +41,7 @@ export function ABrightAndCheerfulImageOfASunflowerFieldForB5d191afF3dc4394Ab758
 
 ABrightAndCheerfulImageOfASunflowerFieldForB5d191afF3dc4394Ab75855adf4860580_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ABrightAndCheerfulImageOfASunflowerFieldForB5d191afF3dc4394Ab75855adf4860580_0_Image.colorStats = {
-    averageColor: Color.fromHex('#8d8f59'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#dd4411'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#669900'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#2266bb'), Color.fromHex('#ffff00')],
-    mostFrequentColor: Color.fromHex('#332200'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#5599dd'),
-    bottom: {
-        averageColor: Color.fromHex('#7e781f'),
-        lightestColor: Color.fromHex('#ffffdd'),
-        darkestColor: Color.fromHex('#001100'),
-        minmaxWhite: [Color.fromHex('#ffffdd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#bb4400'), Color.fromHex('#eeffdd')],
-        minmaxGreen: [Color.fromHex('#88aa00'), Color.fromHex('#ffffdd')],
-        minmaxBlue: [Color.fromHex('#334455'), Color.fromHex('#ffff00')],
-        mostFrequentColor: Color.fromHex('#332200'),
-        mostSaturatedColor: Color.fromHex('#bb9900'),
-        mostGroupedColor: Color.fromHex('#112211'),
-    },
-} satisfies IImageColorStats;
+ABrightAndCheerfulImageOfASunflowerFieldForB5d191afF3dc4394Ab75855adf4860580_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+ABrightAndCheerfulImageOfASunflowerFieldForB5d191afF3dc4394Ab75855adf4860580_0_Image.texts =
+    texts satisfies IWallpaperTexts;

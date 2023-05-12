@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.png';
+import source from 'https://cdn.midjourney.com/91150074-94a9-4b45-a508-a7f8776699e7/0_0.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops, set against a gradient background.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508
 
 AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.colorStats = {
-    averageColor: Color.fromHex('#835d76'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#cc3344'), Color.fromHex('#77eeee')],
-    minmaxGreen: [Color.fromHex('#338866'), Color.fromHex('#ff44dd')],
-    minmaxBlue: [Color.fromHex('#554499'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#dd5555'),
-    mostSaturatedColor: Color.fromHex('#220033'),
-    mostGroupedColor: Color.fromHex('#333344'),
-    bottom: {
-        averageColor: Color.fromHex('#645769'),
-        lightestColor: Color.fromHex('#ffeeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee4455'), Color.fromHex('#77eeee')],
-        minmaxGreen: [Color.fromHex('#558866'), Color.fromHex('#ffbbff')],
-        minmaxBlue: [Color.fromHex('#554499'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#dd5555'),
-        mostSaturatedColor: Color.fromHex('#110011'),
-        mostGroupedColor: Color.fromHex('#333344'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_0_Image.texts =
+    texts satisfies IWallpaperTexts;

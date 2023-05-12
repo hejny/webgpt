@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_3776e268-6f51-4049-ba72-0277e62ebba5-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_3776e268-6f51-4049-ba72-0277e62ebba5-0_3.json';
-import source from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_3776e268-6f51-4049-ba72-0277e62ebba5-0_3.png';
+import source from 'https://cdn.midjourney.com/3776e268-6f51-4049-ba72-0277e62ebba5/0_3.png';
+import texts from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_an_3776e268-6f51-4049-ba72-0277e62ebba5-0_3.texts.json';
 
 /**
  * Image of A wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design, set against a gradient background.
@@ -40,27 +41,7 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfAn776e2686f514049Ba72
 
 AWallpaperFeaturingAnAbstractIllustrationOfAn776e2686f514049Ba720277e62ebba503_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AWallpaperFeaturingAnAbstractIllustrationOfAn776e2686f514049Ba720277e62ebba503_3_Image.colorStats = {
-    averageColor: Color.fromHex('#9d9081'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#110000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-    minmaxRed: [Color.fromHex('#ff3366'), Color.fromHex('#bbffff')],
-    minmaxGreen: [Color.fromHex('#33bb44'), Color.fromHex('#ff3377')],
-    minmaxBlue: [Color.fromHex('#552288'), Color.fromHex('#ffee66')],
-    mostFrequentColor: Color.fromHex('#dd9999'),
-    mostSaturatedColor: Color.fromHex('#002255'),
-    mostGroupedColor: Color.fromHex('#ff7777'),
-    bottom: {
-        averageColor: Color.fromHex('#5b6d65'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#110000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#110000')],
-        minmaxRed: [Color.fromHex('#ff3366'), Color.fromHex('#eeffff')],
-        minmaxGreen: [Color.fromHex('#33bb44'), Color.fromHex('#ff3377')],
-        minmaxBlue: [Color.fromHex('#552288'), Color.fromHex('#ffffbb')],
-        mostFrequentColor: Color.fromHex('#dd9999'),
-        mostSaturatedColor: Color.fromHex('#002255'),
-        mostGroupedColor: Color.fromHex('#227766'),
-    },
-} satisfies IImageColorStats;
+AWallpaperFeaturingAnAbstractIllustrationOfAn776e2686f514049Ba720277e62ebba503_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+AWallpaperFeaturingAnAbstractIllustrationOfAn776e2686f514049Ba720277e62ebba503_3_Image.texts =
+    texts satisfies IWallpaperTexts;

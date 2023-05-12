@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_dark_and_moody_image_of_a_moonlit_forest_for_a_hor_25536320-d5d9-4b7d-b9bd-8f9e1a966c29-0_2.colors.json';
 import metadata from './Pavol_Hejn_a_dark_and_moody_image_of_a_moonlit_forest_for_a_hor_25536320-d5d9-4b7d-b9bd-8f9e1a966c29-0_2.json';
-import source from './Pavol_Hejn_a_dark_and_moody_image_of_a_moonlit_forest_for_a_hor_25536320-d5d9-4b7d-b9bd-8f9e1a966c29-0_2.png';
+import source from 'https://cdn.midjourney.com/25536320-d5d9-4b7d-b9bd-8f9e1a966c29/0_2.png';
+import texts from './Pavol_Hejn_a_dark_and_moody_image_of_a_moonlit_forest_for_a_hor_25536320-d5d9-4b7d-b9bd-8f9e1a966c29-0_2.texts.json';
 
 /**
  * Image of A dark and moody image of a moonlit forest for a horror or supernatural website
@@ -40,27 +41,7 @@ export function ADarkAndMoodyImageOfAMoonlitForestForAHor5536320D5d94b7dB9bd8f9e
 
 ADarkAndMoodyImageOfAMoonlitForestForAHor5536320D5d94b7dB9bd8f9e1a966c2902_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ADarkAndMoodyImageOfAMoonlitForestForAHor5536320D5d94b7dB9bd8f9e1a966c2902_2_Image.colorStats = {
-    averageColor: Color.fromHex('#0e151c'),
-    lightestColor: Color.fromHex('#cceeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ddeeee'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#444433'), Color.fromHex('#ccffff')],
-    minmaxGreen: [Color.fromHex('#447777'), Color.fromHex('#cceeff')],
-    minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ccffff')],
-    mostFrequentColor: Color.fromHex('#000011'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#0b1016'),
-        lightestColor: Color.fromHex('#cceeff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ddeeee'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#444433'), Color.fromHex('#ccffff')],
-        minmaxGreen: [Color.fromHex('#447777'), Color.fromHex('#cceeff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ccffff')],
-        mostFrequentColor: Color.fromHex('#000011'),
-        mostSaturatedColor: Color.fromHex('#000011'),
-        mostGroupedColor: Color.fromHex('#000000'),
-    },
-} satisfies IImageColorStats;
+ADarkAndMoodyImageOfAMoonlitForestForAHor5536320D5d94b7dB9bd8f9e1a966c2902_2_Image.colorStats =
+    hydrateColorStats(colorStats);
+ADarkAndMoodyImageOfAMoonlitForestForAHor5536320D5d94b7dB9bd8f9e1a966c2902_2_Image.texts =
+    texts satisfies IWallpaperTexts;

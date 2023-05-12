@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_standing_on_a_giant_lily_663c6339-2c89-432b-8266-6ba6ac9c53f3-0_1.colors.json';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_standing_on_a_giant_lily_663c6339-2c89-432b-8266-6ba6ac9c53f3-0_1.json';
-import source from './Pavol_Hejn_a_surreal_image_of_a_person_standing_on_a_giant_lily_663c6339-2c89-432b-8266-6ba6ac9c53f3-0_1.png';
+import source from 'https://cdn.midjourney.com/663c6339-2c89-432b-8266-6ba6ac9c53f3/0_1.png';
+import texts from './Pavol_Hejn_a_surreal_image_of_a_person_standing_on_a_giant_lily_663c6339-2c89-432b-8266-6ba6ac9c53f3-0_1.texts.json';
 
 /**
  * Image of A surreal image of a person standing on a giant lily pad in a pond for a creativity or imagination website
@@ -40,27 +41,7 @@ export function ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666b
 
 ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_1_Image.colorStats = {
-    averageColor: Color.fromHex('#b6b396'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#ffffff')],
-    minmaxGreen: [Color.fromHex('#669955'), Color.fromHex('#ffffff')],
-    minmaxBlue: [Color.fromHex('#334455'), Color.fromHex('#ffff77')],
-    mostFrequentColor: Color.fromHex('#224444'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#eeddcc'),
-    bottom: {
-        averageColor: Color.fromHex('#828166'),
-        lightestColor: Color.fromHex('#ffeedd'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeedd'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#994422'), Color.fromHex('#ffffcc')],
-        minmaxGreen: [Color.fromHex('#669955'), Color.fromHex('#ffeedd')],
-        minmaxBlue: [Color.fromHex('#334455'), Color.fromHex('#ffffaa')],
-        mostFrequentColor: Color.fromHex('#224444'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#223322'),
-    },
-} satisfies IImageColorStats;
+ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_1_Image.texts =
+    texts satisfies IWallpaperTexts;

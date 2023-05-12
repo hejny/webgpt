@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_3.colors.json';
 import metadata from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_3.json';
-import source from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_3.png';
+import source from 'https://cdn.midjourney.com/2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab/0_3.png';
+import texts from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_3.texts.json';
 
 /**
  * Image of A playful graphic of a group of animals in a jungle for a children's or education website
@@ -40,27 +41,7 @@ export function APlayfulGraphicOfAGroupOfAnimalsInAJungle2c1da9c3Fdf04fbdAef1B84
 
 APlayfulGraphicOfAGroupOfAnimalsInAJungle2c1da9c3Fdf04fbdAef1B84c465ae5ab0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APlayfulGraphicOfAGroupOfAnimalsInAJungle2c1da9c3Fdf04fbdAef1B84c465ae5ab0_3_Image.colorStats = {
-    averageColor: Color.fromHex('#5f7b66'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee3322'), Color.fromHex('#bbffff')],
-    minmaxGreen: [Color.fromHex('#66aa44'), Color.fromHex('#ff3355')],
-    minmaxBlue: [Color.fromHex('#225588'), Color.fromHex('#ffdd33')],
-    mostFrequentColor: Color.fromHex('#004444'),
-    mostSaturatedColor: Color.fromHex('#005555'),
-    mostGroupedColor: Color.fromHex('#000000'),
-    bottom: {
-        averageColor: Color.fromHex('#6b7e5d'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ee3322'), Color.fromHex('#bbffff')],
-        minmaxGreen: [Color.fromHex('#66aa44'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#336699'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#004444'),
-        mostSaturatedColor: Color.fromHex('#005544'),
-        mostGroupedColor: Color.fromHex('#004455'),
-    },
-} satisfies IImageColorStats;
+APlayfulGraphicOfAGroupOfAnimalsInAJungle2c1da9c3Fdf04fbdAef1B84c465ae5ab0_3_Image.colorStats =
+    hydrateColorStats(colorStats);
+APlayfulGraphicOfAGroupOfAnimalsInAJungle2c1da9c3Fdf04fbdAef1B84c465ae5ab0_3_Image.texts =
+    texts satisfies IWallpaperTexts;

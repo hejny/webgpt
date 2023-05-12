@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_1.colors.json';
 import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_1.json';
-import source from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_1.png';
+import source from 'https://cdn.midjourney.com/322efe9b-ef35-4305-87d1-ec84d9f83ecd/0_1.png';
+import texts from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_322efe9b-ef35-4305-87d1-ec84d9f83ecd-0_1.texts.json';
 
 /**
  * Image of An illustration of a cyborg with a metallic body and glowing eyes
@@ -40,27 +41,7 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1E
 
 AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_1_Image.colorStats = {
-    averageColor: Color.fromHex('#191f21'),
-    lightestColor: Color.fromHex('#ffffff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#bb3322'), Color.fromHex('#99ffff')],
-    minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffeeff')],
-    minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffffbb')],
-    mostFrequentColor: Color.fromHex('#111111'),
-    mostSaturatedColor: Color.fromHex('#000011'),
-    mostGroupedColor: Color.fromHex('#001111'),
-    bottom: {
-        averageColor: Color.fromHex('#1e2424'),
-        lightestColor: Color.fromHex('#ffffff'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#994433'), Color.fromHex('#99ffff')],
-        minmaxGreen: [Color.fromHex('#558877'), Color.fromHex('#ffeeff')],
-        minmaxBlue: [Color.fromHex('#224477'), Color.fromHex('#ffffdd')],
-        mostFrequentColor: Color.fromHex('#111111'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#001111'),
-    },
-} satisfies IImageColorStats;
+AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_1_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnIllustrationOfACyborgWithAMetallicBodyAnd322efe9bEf35430587d1Ec84d9f83ecd0_1_Image.texts =
+    texts satisfies IWallpaperTexts;

@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_b0a1bc1d-3711-4527-86fc-d49623479a1d-0_0.colors.json';
 import metadata from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_b0a1bc1d-3711-4527-86fc-d49623479a1d-0_0.json';
-import source from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_b0a1bc1d-3711-4527-86fc-d49623479a1d-0_0.png';
+import source from 'https://cdn.midjourney.com/b0a1bc1d-3711-4527-86fc-d49623479a1d/0_0.png';
+import texts from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_b0a1bc1d-3711-4527-86fc-d49623479a1d-0_0.texts.json';
 
 /**
  * Image of An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines.
@@ -40,27 +41,7 @@ export function AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fc
 
 AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#505046'),
-    lightestColor: Color.fromHex('#cccccc'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffbb'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#ee1133'), Color.fromHex('#11ddcc')],
-    minmaxGreen: [Color.fromHex('#44aa77'), Color.fromHex('#ee1144')],
-    minmaxBlue: [Color.fromHex('#005588'), Color.fromHex('#ffff77')],
-    mostFrequentColor: Color.fromHex('#112233'),
-    mostSaturatedColor: Color.fromHex('#001111'),
-    mostGroupedColor: Color.fromHex('#112233'),
-    bottom: {
-        averageColor: Color.fromHex('#554e45'),
-        lightestColor: Color.fromHex('#ffeeaa'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffeeaa'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#ff3333'), Color.fromHex('#22ccaa')],
-        minmaxGreen: [Color.fromHex('#33aa88'), Color.fromHex('#ff3355')],
-        minmaxBlue: [Color.fromHex('#113366'), Color.fromHex('#ffee66')],
-        mostFrequentColor: Color.fromHex('#112233'),
-        mostSaturatedColor: Color.fromHex('#001111'),
-        mostGroupedColor: Color.fromHex('#224455'),
-    },
-} satisfies IImageColorStats;
+AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_0_Image.texts =
+    texts satisfies IWallpaperTexts;

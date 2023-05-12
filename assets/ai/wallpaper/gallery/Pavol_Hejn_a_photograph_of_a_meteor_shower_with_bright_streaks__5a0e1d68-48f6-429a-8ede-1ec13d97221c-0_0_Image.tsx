@@ -8,11 +8,12 @@
  */
 
 import Image from 'next/image';
-import { Color } from '../../../../src/utils/color/Color';
-import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-import { IWallpaperMetadata, IWallpaperComponentProps } from '../IWallpaperComponent';
+import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
+import { IWallpaperMetadata, IWallpaperTexts, IWallpaperComponentProps } from '../IWallpaperComponent';
+import colorStats from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__5a0e1d68-48f6-429a-8ede-1ec13d97221c-0_0.colors.json';
 import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__5a0e1d68-48f6-429a-8ede-1ec13d97221c-0_0.json';
-import source from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__5a0e1d68-48f6-429a-8ede-1ec13d97221c-0_0.png';
+import source from 'https://cdn.midjourney.com/5a0e1d68-48f6-429a-8ede-1ec13d97221c/0_0.png';
+import texts from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__5a0e1d68-48f6-429a-8ede-1ec13d97221c-0_0.texts.json';
 
 /**
  * Image of A photograph of a meteor shower, with bright streaks of light crossing the night sky.
@@ -40,27 +41,7 @@ export function APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1
 
 APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
-APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_0_Image.colorStats = {
-    averageColor: Color.fromHex('#61374c'),
-    lightestColor: Color.fromHex('#ffeeff'),
-    darkestColor: Color.fromHex('#000000'),
-    minmaxWhite: [Color.fromHex('#ffffff'), Color.fromHex('#000000')],
-    minmaxRed: [Color.fromHex('#992200'), Color.fromHex('#eeffff')],
-    minmaxGreen: [Color.fromHex('#887755'), Color.fromHex('#ffaaff')],
-    minmaxBlue: [Color.fromHex('#3333aa'), Color.fromHex('#ffffff')],
-    mostFrequentColor: Color.fromHex('#110011'),
-    mostSaturatedColor: Color.fromHex('#110022'),
-    mostGroupedColor: Color.fromHex('#110011'),
-    bottom: {
-        averageColor: Color.fromHex('#603030'),
-        lightestColor: Color.fromHex('#ffcccc'),
-        darkestColor: Color.fromHex('#000000'),
-        minmaxWhite: [Color.fromHex('#ffddcc'), Color.fromHex('#000000')],
-        minmaxRed: [Color.fromHex('#992200'), Color.fromHex('#ffddcc')],
-        minmaxGreen: [Color.fromHex('#aa8844'), Color.fromHex('#660000')],
-        minmaxBlue: [Color.fromHex('#443366'), Color.fromHex('#ffddbb')],
-        mostFrequentColor: Color.fromHex('#110011'),
-        mostSaturatedColor: Color.fromHex('#441100'),
-        mostGroupedColor: Color.fromHex('#110011'),
-    },
-} satisfies IImageColorStats;
+APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_0_Image.colorStats =
+    hydrateColorStats(colorStats);
+APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_0_Image.texts =
+    texts satisfies IWallpaperTexts;
