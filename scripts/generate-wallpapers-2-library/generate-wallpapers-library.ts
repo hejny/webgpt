@@ -185,8 +185,6 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         await writeFile(wallpaperFilePath, wallpaperFileContent, 'utf8');
         console.info(`💾 ${relative(process.cwd(), wallpaperFilePath).split('\\').join('/')}`);
-
-        break;
     }
 
     const indexFileContent = await Promise.resolve(
