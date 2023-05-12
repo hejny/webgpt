@@ -2,22 +2,10 @@
     "averageColor": "#383a39",
     "lightestColor": "#ffeeff",
     "darkestColor": "#000000",
-    "minmaxWhite": [
-        "#ffffee",
-        "#000000"
-    ],
-    "minmaxRed": [
-        "#cc5511",
-        "#eeffff"
-    ],
-    "minmaxGreen": [
-        "#778855",
-        "#ffeeff"
-    ],
-    "minmaxBlue": [
-        "#223355",
-        "#ffffaa"
-    ],
+    "minmaxWhite": ["#ffffee", "#000000"],
+    "minmaxRed": ["#cc5511", "#eeffff"],
+    "minmaxGreen": ["#778855", "#ffeeff"],
+    "minmaxBlue": ["#223355", "#ffffaa"],
     "mostFrequentColor": "#001122",
     "mostSaturatedColor": "#001122",
     "mostGroupedColor": "#001122",
@@ -25,22 +13,10 @@
         "averageColor": "#232f36",
         "lightestColor": "#ffffee",
         "darkestColor": "#001111",
-        "minmaxWhite": [
-            "#ffffee",
-            "#001111"
-        ],
-        "minmaxRed": [
-            "#bb5522",
-            "#ffffee"
-        ],
-        "minmaxGreen": [
-            "#668866",
-            "#ffeeee"
-        ],
-        "minmaxBlue": [
-            "#443355",
-            "#ffffcc"
-        ],
+        "minmaxWhite": ["#ffffee", "#001111"],
+        "minmaxRed": ["#bb5522", "#ffffee"],
+        "minmaxGreen": ["#668866", "#ffeeee"],
+        "minmaxBlue": ["#443355", "#ffffcc"],
         "mostFrequentColor": "#001122",
         "mostSaturatedColor": "#001122",
         "mostGroupedColor": "#001122"
