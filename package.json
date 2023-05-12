@@ -53,7 +53,7 @@
         "xyzt": "5.4.0"
     },
     "devDependencies": {
-        "chatgpt": "^5.2.4",
+        "chatgpt": "5.2.4",
         "@total-typescript/ts-reset": "0.4.2",
         "@types/isomorphic-fetch": "0.0.36",
         "@types/jest": "29.2.6",
@@ -71,7 +71,7 @@
         "chokidar-cli": "3.0.0",
         "commander": "9.4.1",
         "cypress": "12.3.0",
-        "dotenv": "^16.0.3",
+        "dotenv": "16.0.3",
         "eslint": "8.31.0",
         "eslint-config-next": "13.1.1",
         "gh-pages": "4.0.0",
@@ -81,7 +81,7 @@
         "jimp": "0.22.7",
         "js-yaml": "4.1.0",
         "jsdom": "21.1.1",
-        "moment": "^2.29.4",
+        "moment": "2.29.4",
         "organize-imports-cli": "0.10.0",
         "prettier": "2.8.1",
         "ts-jest": "29.0.5",
