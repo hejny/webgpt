@@ -16,6 +16,10 @@ export function useWallpaper(): IWallpaperComponent {
     } else if (router.pathname === '/showcase/[slug]') {
         const wallpaperId = router.query.slug as string;
 
+        if (typeof wallpaperId !== 'string') {
+            throw new Error('Wallpaper id is not 1 string');
+        }
+
         const Wallpaper = generated_wallpapers.find((wallpaper) => wallpaper.metadata.id === wallpaperId)!;
 
         if (Wallpaper) {
@@ -37,6 +41,8 @@ export function useWallpaper(): IWallpaperComponent {
         return fallbackWallpaper;
         */
     } else {
-        throw new Error(`Hook useWallpaper can not be used on "${router.pathname}"`);
+        return ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image;
+
+        // throw new Error(`Hook useWallpaper can not be used on "${router.pathname}"`);
     }
 }
