@@ -40,6 +40,9 @@ export function AGroupOfAinautsInHighTechSuitsExploringAFr8d25bb1eA8074ccdB19519
     );
 }
 
+AGroupOfAinautsInHighTechSuitsExploringAFr8d25bb1eA8074ccdB19519d01288b8450_0_Image.src = new URL(
+    'https://cdn.midjourney.com/8d25bb1e-a807-4ccd-b195-19d01288b845/0_0.png',
+);
 AGroupOfAinautsInHighTechSuitsExploringAFr8d25bb1eA8074ccdB19519d01288b8450_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsInHighTechSuitsExploringAFr8d25bb1eA8074ccdB19519d01288b8450_0_Image.colorStats =

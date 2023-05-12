@@ -40,6 +40,9 @@ export function ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779E
     );
 }
 
+ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.src = new URL(
+    'https://cdn.midjourney.com/9e12bef5-0be8-45cd-8779-eea3a27bf1f9/0_0.png',
+);
 ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_0_Image.colorStats =

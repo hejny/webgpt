@@ -40,6 +40,9 @@ export function ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB
     );
 }
 
+ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/bfbd1ebf-bf6b-4323-95eb-b078f8ad819f/0_0.png',
+);
 ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAPersonFloatingAmongTheCloudBfbd1ebfBf6b432395ebB078f8ad819f0_0_Image.colorStats =

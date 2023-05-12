@@ -40,6 +40,9 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c
     );
 }
 
+AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/70e9f55b-d301-4e3f-b9ee-9c8ebe8fabfa/0_2.png',
+);
 AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnArtDecoInspiredPatternInShadesOfGoldAndB70e9f55bD3014e3fB9ee9c8ebe8fabfa0_2_Image.colorStats =

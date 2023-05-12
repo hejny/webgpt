@@ -40,6 +40,9 @@ export function AColorfulGraphicOfABicycleRaceForASportsOrFc35f70e4928477f9bf62a
     );
 }
 
+AColorfulGraphicOfABicycleRaceForASportsOrFc35f70e4928477f9bf62a6a0ff7cb290_0_Image.src = new URL(
+    'https://cdn.midjourney.com/fc35f70e-4928-477f-9bf6-2a6a0ff7cb29/0_0.png',
+);
 AColorfulGraphicOfABicycleRaceForASportsOrFc35f70e4928477f9bf62a6a0ff7cb290_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfABicycleRaceForASportsOrFc35f70e4928477f9bf62a6a0ff7cb290_0_Image.colorStats =

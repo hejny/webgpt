@@ -40,6 +40,9 @@ export function ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE4
     );
 }
 
+ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.src = new URL(
+    'https://cdn.midjourney.com/ab61678f-4b86-43ad-a16d-e487c92237b1/0_0.png',
+);
 ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_0_Image.colorStats =

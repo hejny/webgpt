@@ -40,6 +40,9 @@ export function AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B513
     );
 }
 
+AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2f918843-47cf-41c9-b513-78e3d39ff3a1/0_2.png',
+);
 AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.colorStats =

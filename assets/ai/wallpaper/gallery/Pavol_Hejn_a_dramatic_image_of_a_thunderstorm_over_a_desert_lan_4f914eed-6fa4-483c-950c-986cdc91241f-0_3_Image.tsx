@@ -40,6 +40,9 @@ export function ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c9
     );
 }
 
+ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/4f914eed-6fa4-483c-950c-986cdc91241f/0_3.png',
+);
 ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.colorStats =

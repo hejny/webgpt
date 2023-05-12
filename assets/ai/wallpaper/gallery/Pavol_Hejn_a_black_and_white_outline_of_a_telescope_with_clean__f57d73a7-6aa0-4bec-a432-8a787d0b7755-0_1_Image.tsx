@@ -40,6 +40,9 @@ export function ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a
     );
 }
 
+ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_1_Image.src = new URL(
+    'https://cdn.midjourney.com/f57d73a7-6aa0-4bec-a432-8a787d0b7755/0_1.png',
+);
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfATelescopeWithCleanF57d73a76aa04becA4328a787d0b77550_1_Image.colorStats =

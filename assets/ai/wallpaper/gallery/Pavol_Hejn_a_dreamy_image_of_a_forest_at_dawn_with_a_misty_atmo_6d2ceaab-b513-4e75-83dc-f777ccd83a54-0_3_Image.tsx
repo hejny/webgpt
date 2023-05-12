@@ -40,6 +40,9 @@ export function ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF77
     );
 }
 
+ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_3_Image.src = new URL(
+    'https://cdn.midjourney.com/6d2ceaab-b513-4e75-83dc-f777ccd83a54/0_3.png',
+);
 ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_3_Image.colorStats =

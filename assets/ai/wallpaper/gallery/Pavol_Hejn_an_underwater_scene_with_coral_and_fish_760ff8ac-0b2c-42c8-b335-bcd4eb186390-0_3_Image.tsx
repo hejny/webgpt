@@ -40,6 +40,9 @@ export function AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb18639
     );
 }
 
+AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_3_Image.src = new URL(
+    'https://cdn.midjourney.com/760ff8ac-0b2c-42c8-b335-bcd4eb186390/0_3.png',
+);
 AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnUnderwaterSceneWithCoralAndFish760ff8ac0b2c42c8B335Bcd4eb1863900_3_Image.colorStats = hydrateColorStats(colorStats);

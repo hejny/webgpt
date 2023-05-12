@@ -40,6 +40,9 @@ export function APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e19
     );
 }
 
+APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.src = new URL(
+    'https://cdn.midjourney.com/b338f5e3-b21a-440a-b10e-191c0b5847d6/0_0.png',
+);
 APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAStarryNightSkyWithTheMilkyWaB338f5e3B21a440aB10e191c0b5847d60_0_Image.colorStats =

@@ -40,6 +40,9 @@ export function AWallpaperWithASimpleGraphicOfANeuralNetworF36fd6639128413387039
     );
 }
 
+AWallpaperWithASimpleGraphicOfANeuralNetworF36fd66391284133870391d8d1737baf0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/f36fd663-9128-4133-8703-91d8d1737baf/0_3.png',
+);
 AWallpaperWithASimpleGraphicOfANeuralNetworF36fd66391284133870391d8d1737baf0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfANeuralNetworF36fd66391284133870391d8d1737baf0_3_Image.colorStats =

@@ -40,6 +40,9 @@ export function AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA
     );
 }
 
+AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/44a12836-879e-4dde-90da-a8ebf9c6ab0b/0_3.png',
+);
 AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AStylizedIllustrationOfAnAiPoweredRobotWith44a12836879e4dde90daA8ebf9c6ab0b0_3_Image.colorStats =

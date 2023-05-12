@@ -40,6 +40,9 @@ export function AColorfulGraphicOfARowOfCityBuildingsForAn8f9bc876E3c74382B753Cf
     );
 }
 
+AColorfulGraphicOfARowOfCityBuildingsForAn8f9bc876E3c74382B753Cfbe7ab7ee100_2_Image.src = new URL(
+    'https://cdn.midjourney.com/8f9bc876-e3c7-4382-b753-cfbe7ab7ee10/0_2.png',
+);
 AColorfulGraphicOfARowOfCityBuildingsForAn8f9bc876E3c74382B753Cfbe7ab7ee100_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfARowOfCityBuildingsForAn8f9bc876E3c74382B753Cfbe7ab7ee100_2_Image.colorStats =

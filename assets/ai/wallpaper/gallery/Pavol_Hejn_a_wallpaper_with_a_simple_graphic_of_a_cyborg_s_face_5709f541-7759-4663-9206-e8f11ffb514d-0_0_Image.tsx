@@ -40,6 +40,9 @@ export function AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8
     );
 }
 
+AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/5709f541-7759-4663-9206-e8f11ffb514d/0_0.png',
+);
 AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_0_Image.colorStats =

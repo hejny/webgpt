@@ -40,6 +40,9 @@ export function ARepeatingPatternOfCircuitBoardComponentsInS1d7b1f2d07db41efA1cc
     );
 }
 
+ARepeatingPatternOfCircuitBoardComponentsInS1d7b1f2d07db41efA1cc8243eb8de4720_3_Image.src = new URL(
+    'https://cdn.midjourney.com/1d7b1f2d-07db-41ef-a1cc-8243eb8de472/0_3.png',
+);
 ARepeatingPatternOfCircuitBoardComponentsInS1d7b1f2d07db41efA1cc8243eb8de4720_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ARepeatingPatternOfCircuitBoardComponentsInS1d7b1f2d07db41efA1cc8243eb8de4720_3_Image.colorStats =

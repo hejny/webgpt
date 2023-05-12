@@ -40,6 +40,9 @@ export function ADesertLandscapeWithACactusInTheForeground31b6770182a84ef8A4ac47
     );
 }
 
+ADesertLandscapeWithACactusInTheForeground31b6770182a84ef8A4ac4723c54d31590_1_Image.src = new URL(
+    'https://cdn.midjourney.com/31b67701-82a8-4ef8-a4ac-4723c54d3159/0_1.png',
+);
 ADesertLandscapeWithACactusInTheForeground31b6770182a84ef8A4ac4723c54d31590_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADesertLandscapeWithACactusInTheForeground31b6770182a84ef8A4ac4723c54d31590_1_Image.colorStats =

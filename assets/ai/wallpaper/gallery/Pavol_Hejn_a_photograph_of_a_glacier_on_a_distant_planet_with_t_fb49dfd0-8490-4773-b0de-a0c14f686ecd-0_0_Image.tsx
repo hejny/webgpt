@@ -40,6 +40,9 @@ export function APhotographOfAGlacierOnADistantPlanetWithTFb49dfd084904773B0deA0
     );
 }
 
+APhotographOfAGlacierOnADistantPlanetWithTFb49dfd084904773B0deA0c14f686ecd0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/fb49dfd0-8490-4773-b0de-a0c14f686ecd/0_0.png',
+);
 APhotographOfAGlacierOnADistantPlanetWithTFb49dfd084904773B0deA0c14f686ecd0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAGlacierOnADistantPlanetWithTFb49dfd084904773B0deA0c14f686ecd0_0_Image.colorStats =

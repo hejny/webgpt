@@ -40,6 +40,9 @@ export function AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f6
     );
 }
 
+AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_2_Image.src = new URL(
+    'https://cdn.midjourney.com/c9639a0d-476f-41a3-97f6-4fb8ef3df043/0_2.png',
+);
 AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f64fb8ef3df0430_2_Image.colorStats =

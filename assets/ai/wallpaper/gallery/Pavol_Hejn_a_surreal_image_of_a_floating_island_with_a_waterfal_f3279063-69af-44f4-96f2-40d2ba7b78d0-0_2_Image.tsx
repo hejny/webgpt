@@ -40,6 +40,9 @@ export function ASurrealImageOfAFloatingIslandWithAWaterfalF327906369af44f496f24
     );
 }
 
+ASurrealImageOfAFloatingIslandWithAWaterfalF327906369af44f496f240d2ba7b78d00_2_Image.src = new URL(
+    'https://cdn.midjourney.com/f3279063-69af-44f4-96f2-40d2ba7b78d0/0_2.png',
+);
 ASurrealImageOfAFloatingIslandWithAWaterfalF327906369af44f496f240d2ba7b78d00_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAFloatingIslandWithAWaterfalF327906369af44f496f240d2ba7b78d00_2_Image.colorStats =

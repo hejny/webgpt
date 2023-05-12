@@ -40,6 +40,9 @@ export function AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad1
     );
 }
 
+AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.src = new URL(
+    'https://cdn.midjourney.com/bd683925-d364-41ea-bbad-13d7a0690aa2/0_2.png',
+);
 AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.colorStats =

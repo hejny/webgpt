@@ -38,6 +38,9 @@ export function ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Im
     );
 }
 
+ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.src = new URL(
+    'https://cdn.midjourney.com/b6ed2855-fc11-482d-bb90-22a09000e3c1/0_1.png',
+);
 ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.colorStats = hydrateColorStats(colorStats);
 ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.texts = texts satisfies IWallpaperTexts;

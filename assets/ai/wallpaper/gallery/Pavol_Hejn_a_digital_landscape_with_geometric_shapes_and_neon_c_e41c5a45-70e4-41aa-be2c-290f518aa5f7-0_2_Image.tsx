@@ -40,6 +40,9 @@ export function ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c
     );
 }
 
+ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.src = new URL(
+    'https://cdn.midjourney.com/e41c5a45-70e4-41aa-be2c-290f518aa5f7/0_2.png',
+);
 ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalLandscapeWithGeometricShapesAndNeonCE41c5a4570e441aaBe2c290f518aa5f70_2_Image.colorStats =

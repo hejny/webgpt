@@ -40,6 +40,9 @@ export function AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984f
     );
 }
 
+AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984fE15e147130290_2_Image.src = new URL(
+    'https://cdn.midjourney.com/3d15429c-3bc5-41d1-984f-e15e14713029/0_2.png',
+);
 AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984fE15e147130290_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistWallpaperWithASingleLineDrawingOf3d15429c3bc541d1984fE15e147130290_2_Image.colorStats =

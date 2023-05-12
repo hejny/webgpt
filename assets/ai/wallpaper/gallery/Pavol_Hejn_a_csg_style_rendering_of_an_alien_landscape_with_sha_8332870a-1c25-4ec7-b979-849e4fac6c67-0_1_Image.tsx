@@ -40,6 +40,9 @@ export function ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B9798
     );
 }
 
+ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_1_Image.src = new URL(
+    'https://cdn.midjourney.com/8332870a-1c25-4ec7-b979-849e4fac6c67/0_1.png',
+);
 ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B979849e4fac6c670_1_Image.colorStats =

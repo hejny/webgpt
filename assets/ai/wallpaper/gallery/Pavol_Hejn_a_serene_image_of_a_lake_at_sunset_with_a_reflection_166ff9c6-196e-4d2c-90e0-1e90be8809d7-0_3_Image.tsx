@@ -40,6 +40,9 @@ export function ASereneImageOfALakeAtSunsetWithAReflection166ff9c6196e4d2c90e01e
     );
 }
 
+ASereneImageOfALakeAtSunsetWithAReflection166ff9c6196e4d2c90e01e90be8809d70_3_Image.src = new URL(
+    'https://cdn.midjourney.com/166ff9c6-196e-4d2c-90e0-1e90be8809d7/0_3.png',
+);
 ASereneImageOfALakeAtSunsetWithAReflection166ff9c6196e4d2c90e01e90be8809d70_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASereneImageOfALakeAtSunsetWithAReflection166ff9c6196e4d2c90e01e90be8809d70_3_Image.colorStats =

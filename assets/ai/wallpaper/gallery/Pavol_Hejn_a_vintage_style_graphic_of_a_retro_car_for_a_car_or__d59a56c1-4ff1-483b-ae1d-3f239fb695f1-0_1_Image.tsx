@@ -40,6 +40,9 @@ export function AVintageStyleGraphicOfARetroCarForACarOrD59a56c14ff1483bAe1d3f23
     );
 }
 
+AVintageStyleGraphicOfARetroCarForACarOrD59a56c14ff1483bAe1d3f239fb695f10_1_Image.src = new URL(
+    'https://cdn.midjourney.com/d59a56c1-4ff1-483b-ae1d-3f239fb695f1/0_1.png',
+);
 AVintageStyleGraphicOfARetroCarForACarOrD59a56c14ff1483bAe1d3f239fb695f10_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AVintageStyleGraphicOfARetroCarForACarOrD59a56c14ff1483bAe1d3f239fb695f10_1_Image.colorStats =

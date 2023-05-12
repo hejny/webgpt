@@ -40,6 +40,9 @@ export function AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d6
     );
 }
 
+AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_2_Image.src = new URL(
+    'https://cdn.midjourney.com/fdae2082-0fae-42be-bd9d-639ddbc532f9/0_2.png',
+);
 AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsObservingTheRingsOfSaturnFroFdae20820fae42beBd9d639ddbc532f90_2_Image.colorStats =

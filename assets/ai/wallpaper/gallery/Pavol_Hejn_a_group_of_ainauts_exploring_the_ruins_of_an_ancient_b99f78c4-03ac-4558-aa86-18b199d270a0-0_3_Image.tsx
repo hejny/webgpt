@@ -40,6 +40,9 @@ export function AGroupOfAinautsExploringTheRuinsOfAnAncientB99f78c403ac4558Aa861
     );
 }
 
+AGroupOfAinautsExploringTheRuinsOfAnAncientB99f78c403ac4558Aa8618b199d270a00_3_Image.src = new URL(
+    'https://cdn.midjourney.com/b99f78c4-03ac-4558-aa86-18b199d270a0/0_3.png',
+);
 AGroupOfAinautsExploringTheRuinsOfAnAncientB99f78c403ac4558Aa8618b199d270a00_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsExploringTheRuinsOfAnAncientB99f78c403ac4558Aa8618b199d270a00_3_Image.colorStats =

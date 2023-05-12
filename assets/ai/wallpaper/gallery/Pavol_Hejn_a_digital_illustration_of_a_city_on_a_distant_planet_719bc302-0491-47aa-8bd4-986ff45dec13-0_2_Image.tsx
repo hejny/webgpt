@@ -40,6 +40,9 @@ export function ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd49
     );
 }
 
+ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd4986ff45dec130_2_Image.src = new URL(
+    'https://cdn.midjourney.com/719bc302-0491-47aa-8bd4-986ff45dec13/0_2.png',
+);
 ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd4986ff45dec130_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalIllustrationOfACityOnADistantPlanet719bc302049147aa8bd4986ff45dec130_2_Image.colorStats =

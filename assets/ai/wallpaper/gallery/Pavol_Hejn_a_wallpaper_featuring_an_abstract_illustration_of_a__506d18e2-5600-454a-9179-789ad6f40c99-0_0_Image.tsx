@@ -40,6 +40,9 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179
     );
 }
 
+AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_0_Image.src = new URL(
+    'https://cdn.midjourney.com/506d18e2-5600-454a-9179-789ad6f40c99/0_0.png',
+);
 AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_0_Image.colorStats =

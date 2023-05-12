@@ -40,6 +40,9 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24
     );
 }
 
+AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_Image.src = new URL(
+    'https://cdn.midjourney.com/885c443c-80a4-4b2d-80a2-4fbb6e4e5211/0_1.png',
+);
 AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24fbb6e4e52110_1_Image.colorStats =

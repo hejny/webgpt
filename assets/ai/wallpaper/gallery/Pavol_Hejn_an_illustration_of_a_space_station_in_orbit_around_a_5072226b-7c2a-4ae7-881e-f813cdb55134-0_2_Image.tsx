@@ -40,6 +40,9 @@ export function AnIllustrationOfASpaceStationInOrbitAroundA5072226b7c2a4ae7881eF
     );
 }
 
+AnIllustrationOfASpaceStationInOrbitAroundA5072226b7c2a4ae7881eF813cdb551340_2_Image.src = new URL(
+    'https://cdn.midjourney.com/5072226b-7c2a-4ae7-881e-f813cdb55134/0_2.png',
+);
 AnIllustrationOfASpaceStationInOrbitAroundA5072226b7c2a4ae7881eF813cdb551340_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfASpaceStationInOrbitAroundA5072226b7c2a4ae7881eF813cdb551340_2_Image.colorStats =

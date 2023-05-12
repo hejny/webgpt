@@ -40,6 +40,9 @@ export function AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc
     );
 }
 
+AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/e31bdb2b-e9c4-446b-9ddc-784b546eb6db/0_0.png',
+);
 AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractIllustrationOfANeuralNetworkWithInE31bdb2bE9c4446b9ddc784b546eb6db0_0_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95f
     );
 }
 
+AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_0_Image.src = new URL(
+    'https://cdn.midjourney.com/d1f72b89-0604-443b-95fe-822318ac0437/0_0.png',
+);
 AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_0_Image.colorStats =

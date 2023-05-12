@@ -40,6 +40,9 @@ export function AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e9415499
     );
 }
 
+AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.src = new URL(
+    'https://cdn.midjourney.com/b2d0130d-56e9-4154-997a-4282b75f0954/0_3.png',
+);
 AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.colorStats =

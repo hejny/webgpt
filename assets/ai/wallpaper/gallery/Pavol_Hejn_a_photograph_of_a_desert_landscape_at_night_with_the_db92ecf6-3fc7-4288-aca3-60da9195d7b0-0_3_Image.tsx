@@ -40,6 +40,9 @@ export function APhotographOfADesertLandscapeAtNightWithTheDb92ecf63fc74288Aca36
     );
 }
 
+APhotographOfADesertLandscapeAtNightWithTheDb92ecf63fc74288Aca360da9195d7b00_3_Image.src = new URL(
+    'https://cdn.midjourney.com/db92ecf6-3fc7-4288-aca3-60da9195d7b0/0_3.png',
+);
 APhotographOfADesertLandscapeAtNightWithTheDb92ecf63fc74288Aca360da9195d7b00_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfADesertLandscapeAtNightWithTheDb92ecf63fc74288Aca360da9195d7b00_3_Image.colorStats =

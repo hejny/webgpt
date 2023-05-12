@@ -40,6 +40,9 @@ export function ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed
     );
 }
 
+ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed59d7f1ac203_3_Image.src = new URL(
+    'https://cdn.midjourney.com/3d05f9b8-c57e-41fe-8011-fed59d7f1ac2/0_3.png',
+);
 ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed59d7f1ac203_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfAnAstronautSHelmetWd05f9b8C57e41fe8011Fed59d7f1ac203_3_Image.colorStats =

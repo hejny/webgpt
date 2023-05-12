@@ -40,6 +40,9 @@ export function APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98
     );
 }
 
+APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_1_Image.src = new URL(
+    'https://cdn.midjourney.com/a954f85c-12dd-42db-a40f-98a05a5d7e62/0_1.png',
+);
 APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APanoramicImageOfAMountainRangeWithMistAndA954f85c12dd42dbA40f98a05a5d7e620_1_Image.colorStats =

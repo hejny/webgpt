@@ -40,6 +40,9 @@ export function AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5
     );
 }
 
+AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/93d77662-1f58-4125-bab5-224ff27b04ce/0_0.png',
+);
 AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_0_Image.colorStats =

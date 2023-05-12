@@ -40,6 +40,9 @@ export function AnAbstractImageOfASwirlingGalaxyWithBrightC8906a8893f44a82A33751
     );
 }
 
+AnAbstractImageOfASwirlingGalaxyWithBrightC8906a8893f44a82A337516c808f340802_2_Image.src = new URL(
+    'https://cdn.midjourney.com/28906a88-93f4-4a82-a337-516c808f3408/0_2.png',
+);
 AnAbstractImageOfASwirlingGalaxyWithBrightC8906a8893f44a82A337516c808f340802_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfASwirlingGalaxyWithBrightC8906a8893f44a82A337516c808f340802_2_Image.colorStats =

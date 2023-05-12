@@ -40,6 +40,9 @@ export function ATeamOfAinautsAndTheirAiCompanionsRacingAcr55956f7f43f14414850c0
     );
 }
 
+ATeamOfAinautsAndTheirAiCompanionsRacingAcr55956f7f43f14414850c08feb753a6870_3_Image.src = new URL(
+    'https://cdn.midjourney.com/55956f7f-43f1-4414-850c-08feb753a687/0_3.png',
+);
 ATeamOfAinautsAndTheirAiCompanionsRacingAcr55956f7f43f14414850c08feb753a6870_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsAndTheirAiCompanionsRacingAcr55956f7f43f14414850c08feb753a6870_3_Image.colorStats =

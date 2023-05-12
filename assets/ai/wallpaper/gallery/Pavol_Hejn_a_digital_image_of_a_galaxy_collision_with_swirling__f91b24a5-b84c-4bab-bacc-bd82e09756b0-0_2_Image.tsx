@@ -40,6 +40,9 @@ export function ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccB
     );
 }
 
+ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_2_Image.src = new URL(
+    'https://cdn.midjourney.com/f91b24a5-b84c-4bab-bacc-bd82e09756b0/0_2.png',
+);
 ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccBd82e09756b00_2_Image.colorStats =

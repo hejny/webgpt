@@ -40,6 +40,9 @@ export function ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930
     );
 }
 
+ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/2bd382ca-5cf3-44b8-b287-930c756a19ae/0_0.png',
+);
 ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_0_Image.colorStats =

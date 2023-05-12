@@ -40,6 +40,9 @@ export function ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739
     );
 }
 
+ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_2_Image.src = new URL(
+    'https://cdn.midjourney.com/52427f43-2b70-44c5-b073-9dd05bdc2b41/0_2.png',
+);
 ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba54
     );
 }
 
+AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/226b66d5-baba-432a-88ba-5457b8031bdb/0_1.png',
+);
 AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.colorStats =

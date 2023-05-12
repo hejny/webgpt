@@ -40,6 +40,9 @@ export function AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6
     );
 }
 
+AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/59790a65-d6ce-47b1-aa0a-6b12cda2cf5b/0_1.png',
+);
 AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6b12cda2cf5b0_1_Image.colorStats =

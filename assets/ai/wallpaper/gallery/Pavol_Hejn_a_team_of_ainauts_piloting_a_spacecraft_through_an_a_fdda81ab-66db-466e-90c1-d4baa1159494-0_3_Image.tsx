@@ -40,6 +40,9 @@ export function ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D
     );
 }
 
+ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_3_Image.src = new URL(
+    'https://cdn.midjourney.com/fdda81ab-66db-466e-90c1-d4baa1159494/0_3.png',
+);
 ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsPilotingASpacecraftThroughAnAFdda81ab66db466e90c1D4baa11594940_3_Image.colorStats =

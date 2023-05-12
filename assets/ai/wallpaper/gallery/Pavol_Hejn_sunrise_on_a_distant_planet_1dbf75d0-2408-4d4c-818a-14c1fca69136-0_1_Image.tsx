@@ -38,6 +38,9 @@ export function SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image
     );
 }
 
+SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.src = new URL(
+    'https://cdn.midjourney.com/1dbf75d0-2408-4d4c-818a-14c1fca69136/0_1.png',
+);
 SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.colorStats = hydrateColorStats(colorStats);
 SunriseOnADistantPlanetdbf75d024084d4c818a14c1fca6913601_1_Image.texts = texts satisfies IWallpaperTexts;

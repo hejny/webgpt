@@ -40,6 +40,9 @@ export function ADigitalPaintingOfADistantPlanetWithAUniqueC0d48fb316ac4653B5c77
     );
 }
 
+ADigitalPaintingOfADistantPlanetWithAUniqueC0d48fb316ac4653B5c77c1fab7883620_2_Image.src = new URL(
+    'https://cdn.midjourney.com/c0d48fb3-16ac-4653-b5c7-7c1fab788362/0_2.png',
+);
 ADigitalPaintingOfADistantPlanetWithAUniqueC0d48fb316ac4653B5c77c1fab7883620_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfADistantPlanetWithAUniqueC0d48fb316ac4653B5c77c1fab7883620_2_Image.colorStats =

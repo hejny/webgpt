@@ -40,6 +40,9 @@ export function AMinimalistGraphicOfACitySkylineAtDuskForA3317450F903452eA4b64cd
     );
 }
 
+AMinimalistGraphicOfACitySkylineAtDuskForA3317450F903452eA4b64cd18db6822701_1_Image.src = new URL(
+    'https://cdn.midjourney.com/13317450-f903-452e-a4b6-4cd18db68227/0_1.png',
+);
 AMinimalistGraphicOfACitySkylineAtDuskForA3317450F903452eA4b64cd18db6822701_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistGraphicOfACitySkylineAtDuskForA3317450F903452eA4b64cd18db6822701_1_Image.colorStats =

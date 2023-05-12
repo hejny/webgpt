@@ -40,6 +40,9 @@ export function APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1
     );
 }
 
+APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/5a0e1d68-48f6-429a-8ede-1ec13d97221c/0_3.png',
+);
 APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAMeteorShowerWithBrightStreaks5a0e1d6848f6429a8ede1ec13d97221c0_3_Image.colorStats =

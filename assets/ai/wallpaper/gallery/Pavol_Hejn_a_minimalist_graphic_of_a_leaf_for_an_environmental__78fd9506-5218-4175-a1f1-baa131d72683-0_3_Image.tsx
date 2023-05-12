@@ -40,6 +40,9 @@ export function AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1B
     );
 }
 
+AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_3_Image.src = new URL(
+    'https://cdn.midjourney.com/78fd9506-5218-4175-a1f1-baa131d72683/0_3.png',
+);
 AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1Baa131d726830_3_Image.colorStats =

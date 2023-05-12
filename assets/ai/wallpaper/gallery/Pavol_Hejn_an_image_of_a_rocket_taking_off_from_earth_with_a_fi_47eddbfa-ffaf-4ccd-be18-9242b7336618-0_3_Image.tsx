@@ -40,6 +40,9 @@ export function AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe18924
     );
 }
 
+AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_3_Image.src = new URL(
+    'https://cdn.midjourney.com/47eddbfa-ffaf-4ccd-be18-9242b7336618/0_3.png',
+);
 AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnImageOfARocketTakingOffFromEarthWithAFi47eddbfaFfaf4ccdBe189242b73366180_3_Image.colorStats =

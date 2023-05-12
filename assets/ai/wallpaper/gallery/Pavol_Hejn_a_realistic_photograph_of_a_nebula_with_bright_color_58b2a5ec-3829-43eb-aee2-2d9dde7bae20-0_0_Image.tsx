@@ -40,6 +40,9 @@ export function ARealisticPhotographOfANebulaWithBrightColor58b2a5ec382943ebAee2
     );
 }
 
+ARealisticPhotographOfANebulaWithBrightColor58b2a5ec382943ebAee22d9dde7bae200_0_Image.src = new URL(
+    'https://cdn.midjourney.com/58b2a5ec-3829-43eb-aee2-2d9dde7bae20/0_0.png',
+);
 ARealisticPhotographOfANebulaWithBrightColor58b2a5ec382943ebAee22d9dde7bae200_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ARealisticPhotographOfANebulaWithBrightColor58b2a5ec382943ebAee22d9dde7bae200_0_Image.colorStats =

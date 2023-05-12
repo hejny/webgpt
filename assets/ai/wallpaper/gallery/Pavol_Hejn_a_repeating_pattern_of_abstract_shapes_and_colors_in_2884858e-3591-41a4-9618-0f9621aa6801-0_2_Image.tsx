@@ -40,6 +40,9 @@ export function ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180
     );
 }
 
+ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2884858e-3591-41a4-9618-0f9621aa6801/0_2.png',
+);
 ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function AStylizedIllustrationOfACyberneticOrganismWit1d7d60dd1e7f49e0B1b
     );
 }
 
+AStylizedIllustrationOfACyberneticOrganismWit1d7d60dd1e7f49e0B1bc5f274c109e4a0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a/0_2.png',
+);
 AStylizedIllustrationOfACyberneticOrganismWit1d7d60dd1e7f49e0B1bc5f274c109e4a0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AStylizedIllustrationOfACyberneticOrganismWit1d7d60dd1e7f49e0B1bc5f274c109e4a0_2_Image.colorStats =

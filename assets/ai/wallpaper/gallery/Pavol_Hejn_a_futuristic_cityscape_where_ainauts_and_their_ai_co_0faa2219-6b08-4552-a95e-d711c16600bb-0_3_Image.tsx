@@ -40,6 +40,9 @@ export function AFuturisticCityscapeWhereAinautsAndTheirAiCo0faa22196b084552A95e
     );
 }
 
+AFuturisticCityscapeWhereAinautsAndTheirAiCo0faa22196b084552A95eD711c16600bb0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/0faa2219-6b08-4552-a95e-d711c16600bb/0_3.png',
+);
 AFuturisticCityscapeWhereAinautsAndTheirAiCo0faa22196b084552A95eD711c16600bb0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWhereAinautsAndTheirAiCo0faa22196b084552A95eD711c16600bb0_3_Image.colorStats =

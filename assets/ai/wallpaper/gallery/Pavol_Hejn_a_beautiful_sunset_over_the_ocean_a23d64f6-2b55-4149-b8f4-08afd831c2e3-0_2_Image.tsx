@@ -38,6 +38,9 @@ export function ABeautifulSunsetOverTheOceanA23d64f62b554149B8f408afd831c2e30_2_
     );
 }
 
+ABeautifulSunsetOverTheOceanA23d64f62b554149B8f408afd831c2e30_2_Image.src = new URL(
+    'https://cdn.midjourney.com/a23d64f6-2b55-4149-b8f4-08afd831c2e3/0_2.png',
+);
 ABeautifulSunsetOverTheOceanA23d64f62b554149B8f408afd831c2e30_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 ABeautifulSunsetOverTheOceanA23d64f62b554149B8f408afd831c2e30_2_Image.colorStats = hydrateColorStats(colorStats);
 ABeautifulSunsetOverTheOceanA23d64f62b554149B8f408afd831c2e30_2_Image.texts = texts satisfies IWallpaperTexts;

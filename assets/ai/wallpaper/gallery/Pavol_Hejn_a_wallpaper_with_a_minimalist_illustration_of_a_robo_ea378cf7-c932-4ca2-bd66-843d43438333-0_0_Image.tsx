@@ -40,6 +40,9 @@ export function AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66
     );
 }
 
+AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66843d434383330_0_Image.src = new URL(
+    'https://cdn.midjourney.com/ea378cf7-c932-4ca2-bd66-843d43438333/0_0.png',
+);
 AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66843d434383330_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithAMinimalistIllustrationOfARoboEa378cf7C9324ca2Bd66843d434383330_0_Image.colorStats =

@@ -40,6 +40,9 @@ export function ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418
     );
 }
 
+ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/d6838421-6a93-4041-9418-d81a92bbb9ea/0_2.png',
+);
 ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ARealisticPhotographOfAGalaxyClusterWithBrigD68384216a9340419418D81a92bbb9ea0_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function AMinimalistWallpaperWithASingleLineDrawingOfE669223e90474468Bf64
     );
 }
 
+AMinimalistWallpaperWithASingleLineDrawingOfE669223e90474468Bf6485fdc52183df0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/e669223e-9047-4468-bf64-85fdc52183df/0_3.png',
+);
 AMinimalistWallpaperWithASingleLineDrawingOfE669223e90474468Bf6485fdc52183df0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistWallpaperWithASingleLineDrawingOfE669223e90474468Bf6485fdc52183df0_3_Image.colorStats =

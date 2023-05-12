@@ -38,6 +38,9 @@ export function ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_I
     );
 }
 
+ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/ffe7c22c-85ab-48ad-be38-386617226b6f/0_1.png',
+);
 ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image.colorStats = hydrateColorStats(colorStats);
 ACityscapeOvertakenByNatureFfe7c22c85ab48adBe38386617226b6f0_1_Image.texts = texts satisfies IWallpaperTexts;

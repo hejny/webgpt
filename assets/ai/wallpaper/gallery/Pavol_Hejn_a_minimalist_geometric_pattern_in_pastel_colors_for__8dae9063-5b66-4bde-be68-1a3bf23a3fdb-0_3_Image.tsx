@@ -40,6 +40,9 @@ export function AMinimalistGeometricPatternInPastelColorsFor8dae90635b664bdeBe68
     );
 }
 
+AMinimalistGeometricPatternInPastelColorsFor8dae90635b664bdeBe681a3bf23a3fdb0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/8dae9063-5b66-4bde-be68-1a3bf23a3fdb/0_3.png',
+);
 AMinimalistGeometricPatternInPastelColorsFor8dae90635b664bdeBe681a3bf23a3fdb0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistGeometricPatternInPastelColorsFor8dae90635b664bdeBe681a3bf23a3fdb0_3_Image.colorStats =

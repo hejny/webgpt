@@ -40,6 +40,9 @@ export function AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd
     );
 }
 
+AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_3_Image.src = new URL(
+    'https://cdn.midjourney.com/f706fe96-caaf-47ea-836a-ad7a06664232/0_3.png',
+);
 AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_3_Image.colorStats =

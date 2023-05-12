@@ -40,6 +40,9 @@ export function ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd
     );
 }
 
+ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/6d063f5c-1618-43fe-b3ca-3cd61ff4322f/0_1.png',
+);
 ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACozyImageOfACabinInTheWoodsWithSnowFalli6d063f5c161843feB3ca3cd61ff4322f0_1_Image.colorStats =

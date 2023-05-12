@@ -40,6 +40,9 @@ export function ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540
     );
 }
 
+ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.src = new URL(
+    'https://cdn.midjourney.com/8950dbf7-64f7-49af-a540-b60ce02d8a21/0_0.png',
+);
 ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540B60ce02d8a210_0_Image.colorStats =

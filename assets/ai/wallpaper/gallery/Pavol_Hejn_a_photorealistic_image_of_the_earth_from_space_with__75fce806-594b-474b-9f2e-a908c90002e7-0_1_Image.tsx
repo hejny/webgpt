@@ -40,6 +40,9 @@ export function APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA
     );
 }
 
+APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_1_Image.src = new URL(
+    'https://cdn.midjourney.com/75fce806-594b-474b-9f2e-a908c90002e7/0_1.png',
+);
 APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_1_Image.colorStats =

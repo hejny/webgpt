@@ -40,6 +40,9 @@ export function APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18eb
     );
 }
 
+APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Image.src = new URL(
+    'https://cdn.midjourney.com/6e6533f5-7774-4664-a6c1-8ebb09cefb82/0_3.png',
+);
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_3_Image.colorStats =

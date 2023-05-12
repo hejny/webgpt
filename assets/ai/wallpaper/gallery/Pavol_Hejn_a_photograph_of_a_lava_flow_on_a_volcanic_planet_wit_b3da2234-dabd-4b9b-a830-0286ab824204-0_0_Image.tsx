@@ -40,6 +40,9 @@ export function APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA83002
     );
 }
 
+APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_0_Image.src = new URL(
+    'https://cdn.midjourney.com/b3da2234-dabd-4b9b-a830-0286ab824204/0_0.png',
+);
 APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfALavaFlowOnAVolcanicPlanetWitB3da2234Dabd4b9bA8300286ab8242040_0_Image.colorStats =

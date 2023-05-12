@@ -40,6 +40,9 @@ export function AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Da
     );
 }
 
+AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/74f5f0ba-c83a-444c-87e0-daee13062c1f/0_0.png',
+);
 AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_0_Image.colorStats =

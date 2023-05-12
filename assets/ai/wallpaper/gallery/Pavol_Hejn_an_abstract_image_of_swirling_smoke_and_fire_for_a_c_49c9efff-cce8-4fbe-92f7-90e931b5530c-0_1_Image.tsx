@@ -40,6 +40,9 @@ export function AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790
     );
 }
 
+AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/49c9efff-cce8-4fbe-92f7-90e931b5530c/0_1.png',
+);
 AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfSwirlingSmokeAndFireForAC49c9efffCce84fbe92f790e931b5530c0_1_Image.colorStats =

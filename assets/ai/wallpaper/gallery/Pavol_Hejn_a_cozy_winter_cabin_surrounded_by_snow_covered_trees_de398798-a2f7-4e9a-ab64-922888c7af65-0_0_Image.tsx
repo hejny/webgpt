@@ -40,6 +40,9 @@ export function ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64
     );
 }
 
+ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_0_Image.src = new URL(
+    'https://cdn.midjourney.com/de398798-a2f7-4e9a-ab64-922888c7af65/0_0.png',
+);
 ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_0_Image.colorStats =

@@ -40,6 +40,9 @@ export function AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11
     );
 }
 
+AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/fde70dc3-bd26-4506-b6fd-11e8b250b25e/0_0.png',
+);
 AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AVibrantGraphicOfAPeacockForAFashionOrBeauFde70dc3Bd264506B6fd11e8b250b25e0_0_Image.colorStats =

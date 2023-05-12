@@ -40,6 +40,9 @@ export function AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C
     );
 }
 
+AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/fd6eb902-59b7-476a-a867-c7ea98e0226e/0_3.png',
+);
 AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_3_Image.colorStats =

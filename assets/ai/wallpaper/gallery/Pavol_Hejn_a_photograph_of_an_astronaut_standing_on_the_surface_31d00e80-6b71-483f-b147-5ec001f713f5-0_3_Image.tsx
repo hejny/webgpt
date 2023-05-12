@@ -40,6 +40,9 @@ export function APhotographOfAnAstronautStandingOnTheSurface1d00e806b71483fB1475
     );
 }
 
+APhotographOfAnAstronautStandingOnTheSurface1d00e806b71483fB1475ec001f713f503_3_Image.src = new URL(
+    'https://cdn.midjourney.com/31d00e80-6b71-483f-b147-5ec001f713f5/0_3.png',
+);
 APhotographOfAnAstronautStandingOnTheSurface1d00e806b71483fB1475ec001f713f503_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAnAstronautStandingOnTheSurface1d00e806b71483fB1475ec001f713f503_3_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221
     );
 }
 
+AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_2_Image.src = new URL(
+    'https://cdn.midjourney.com/fd6ceb52-cea8-41fd-a221-fcbde3192db1/0_2.png',
+);
 AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractRepresentationOfTheInsideOfAComputFd6ceb52Cea841fdA221Fcbde3192db10_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f37
     );
 }
 
+ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_0_Image.src = new URL(
+    'https://cdn.midjourney.com/33e477af-06e3-44a4-8973-605a78f79f37/0_0.png',
+);
 ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpOfASpiderwebWithDewDrops33e477af06e344a48973605a78f79f370_0_Image.colorStats = hydrateColorStats(colorStats);

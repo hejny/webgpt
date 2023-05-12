@@ -40,6 +40,9 @@ export function APosterStyleImageOfARocketTakingOffFromEar34670bdC4c54513A2783e3
     );
 }
 
+APosterStyleImageOfARocketTakingOffFromEar34670bdC4c54513A2783e34f6dec00d03_3_Image.src = new URL(
+    'https://cdn.midjourney.com/334670bd-c4c5-4513-a278-3e34f6dec00d/0_3.png',
+);
 APosterStyleImageOfARocketTakingOffFromEar34670bdC4c54513A2783e34f6dec00d03_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APosterStyleImageOfARocketTakingOffFromEar34670bdC4c54513A2783e34f6dec00d03_3_Image.colorStats =

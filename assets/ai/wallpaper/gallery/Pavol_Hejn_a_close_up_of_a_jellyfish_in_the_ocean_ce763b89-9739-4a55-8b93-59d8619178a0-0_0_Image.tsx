@@ -40,6 +40,9 @@ export function ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_
     );
 }
 
+ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_0_Image.src = new URL(
+    'https://cdn.midjourney.com/ce763b89-9739-4a55-8b93-59d8619178a0/0_0.png',
+);
 ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_0_Image.colorStats = hydrateColorStats(colorStats);

@@ -40,6 +40,9 @@ export function AnAbstractImageOfOverlappingCirclesInBrightCFebce1b70c5e4086855b
     );
 }
 
+AnAbstractImageOfOverlappingCirclesInBrightCFebce1b70c5e4086855bB5e9149ee10b0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/febce1b7-0c5e-4086-855b-b5e9149ee10b/0_3.png',
+);
 AnAbstractImageOfOverlappingCirclesInBrightCFebce1b70c5e4086855bB5e9149ee10b0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfOverlappingCirclesInBrightCFebce1b70c5e4086855bB5e9149ee10b0_3_Image.colorStats =

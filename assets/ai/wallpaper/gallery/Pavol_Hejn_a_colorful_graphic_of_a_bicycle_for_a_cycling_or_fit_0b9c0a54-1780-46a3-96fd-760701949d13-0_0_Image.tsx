@@ -40,6 +40,9 @@ export function AColorfulGraphicOfABicycleForACyclingOrFitb9c0a54178046a396fd760
     );
 }
 
+AColorfulGraphicOfABicycleForACyclingOrFitb9c0a54178046a396fd760701949d1300_0_Image.src = new URL(
+    'https://cdn.midjourney.com/0b9c0a54-1780-46a3-96fd-760701949d13/0_0.png',
+);
 AColorfulGraphicOfABicycleForACyclingOrFitb9c0a54178046a396fd760701949d1300_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfABicycleForACyclingOrFitb9c0a54178046a396fd760701949d1300_0_Image.colorStats =

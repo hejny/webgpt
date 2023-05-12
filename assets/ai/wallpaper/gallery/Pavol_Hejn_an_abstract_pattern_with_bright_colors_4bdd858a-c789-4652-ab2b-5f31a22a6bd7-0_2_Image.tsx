@@ -40,6 +40,9 @@ export function AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd
     );
 }
 
+AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.src = new URL(
+    'https://cdn.midjourney.com/4bdd858a-c789-4652-ab2b-5f31a22a6bd7/0_2.png',
+);
 AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.colorStats = hydrateColorStats(colorStats);

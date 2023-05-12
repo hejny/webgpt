@@ -40,6 +40,9 @@ export function AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe
     );
 }
 
+AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_2_Image.src = new URL(
+    'https://cdn.midjourney.com/33100479-eeef-4d4e-ae2e-79349c0d6f43/0_2.png',
+);
 AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityWithHolographicAdvertisementsFo33100479Eeef4d4eAe2e79349c0d6f430_2_Image.colorStats =

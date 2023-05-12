@@ -40,6 +40,9 @@ export function ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef7543628285827
     );
 }
 
+ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/67295bf8-ef75-4362-8285-8272f67eabfa/0_2.png',
+);
 ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAPersonFloatingInSpaceForA67295bf8Ef75436282858272f67eabfa0_2_Image.colorStats =

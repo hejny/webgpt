@@ -40,6 +40,9 @@ export function AMountainRangeWithAClearBlueSkyDc4c9a47990e4c53A36b3d1f1eeb3f300
     );
 }
 
+AMountainRangeWithAClearBlueSkyDc4c9a47990e4c53A36b3d1f1eeb3f300_3_Image.src = new URL(
+    'https://cdn.midjourney.com/dc4c9a47-990e-4c53-a36b-3d1f1eeb3f30/0_3.png',
+);
 AMountainRangeWithAClearBlueSkyDc4c9a47990e4c53A36b3d1f1eeb3f300_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMountainRangeWithAClearBlueSkyDc4c9a47990e4c53A36b3d1f1eeb3f300_3_Image.colorStats = hydrateColorStats(colorStats);

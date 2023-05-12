@@ -40,6 +40,9 @@ export function APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE
     );
 }
 
+APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_0_Image.src = new URL(
+    'https://cdn.midjourney.com/85014640-2d2f-4978-bd3e-e678a1f60ce6/0_0.png',
+);
 APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfTheNorthernLightsWithTheGreenA850146402d2f4978Bd3eE678a1f60ce60_0_Image.colorStats =

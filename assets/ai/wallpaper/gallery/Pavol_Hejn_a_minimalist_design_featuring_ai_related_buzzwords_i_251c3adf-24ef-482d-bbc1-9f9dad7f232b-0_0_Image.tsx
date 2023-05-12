@@ -40,6 +40,9 @@ export function AMinimalistDesignFeaturingAiRelatedBuzzwordsI251c3adf24ef482dBbc
     );
 }
 
+AMinimalistDesignFeaturingAiRelatedBuzzwordsI251c3adf24ef482dBbc19f9dad7f232b0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/251c3adf-24ef-482d-bbc1-9f9dad7f232b/0_0.png',
+);
 AMinimalistDesignFeaturingAiRelatedBuzzwordsI251c3adf24ef482dBbc19f9dad7f232b0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistDesignFeaturingAiRelatedBuzzwordsI251c3adf24ef482dBbc19f9dad7f232b0_0_Image.colorStats =

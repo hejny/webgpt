@@ -40,6 +40,9 @@ export function AWallpaperFeaturingAMinimalistGraphicOfARobo1e5a462c352641cdB385
     );
 }
 
+AWallpaperFeaturingAMinimalistGraphicOfARobo1e5a462c352641cdB3850b966dbd638c0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/1e5a462c-3526-41cd-b385-0b966dbd638c/0_2.png',
+);
 AWallpaperFeaturingAMinimalistGraphicOfARobo1e5a462c352641cdB3850b966dbd638c0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAMinimalistGraphicOfARobo1e5a462c352641cdB3850b966dbd638c0_2_Image.colorStats =

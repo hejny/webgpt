@@ -40,6 +40,9 @@ export function AnIllustrationOfAFuturisticSpaceStationOrbiti55be1875d044e1cBafe
     );
 }
 
+AnIllustrationOfAFuturisticSpaceStationOrbiti55be1875d044e1cBafe0131044a59db01_1_Image.src = new URL(
+    'https://cdn.midjourney.com/155be187-5d04-4e1c-bafe-0131044a59db/0_1.png',
+);
 AnIllustrationOfAFuturisticSpaceStationOrbiti55be1875d044e1cBafe0131044a59db01_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAFuturisticSpaceStationOrbiti55be1875d044e1cBafe0131044a59db01_1_Image.colorStats =

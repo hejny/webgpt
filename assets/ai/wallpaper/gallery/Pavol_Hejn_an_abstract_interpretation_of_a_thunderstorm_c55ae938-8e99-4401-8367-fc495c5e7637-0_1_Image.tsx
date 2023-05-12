@@ -40,6 +40,9 @@ export function AnAbstractInterpretationOfAThunderstormC55ae9388e9944018367Fc495
     );
 }
 
+AnAbstractInterpretationOfAThunderstormC55ae9388e9944018367Fc495c5e76370_1_Image.src = new URL(
+    'https://cdn.midjourney.com/c55ae938-8e99-4401-8367-fc495c5e7637/0_1.png',
+);
 AnAbstractInterpretationOfAThunderstormC55ae9388e9944018367Fc495c5e76370_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractInterpretationOfAThunderstormC55ae9388e9944018367Fc495c5e76370_1_Image.colorStats =

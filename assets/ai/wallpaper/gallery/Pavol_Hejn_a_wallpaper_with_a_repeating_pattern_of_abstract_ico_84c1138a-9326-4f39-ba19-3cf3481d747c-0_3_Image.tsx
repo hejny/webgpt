@@ -40,6 +40,9 @@ export function AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba19
     );
 }
 
+AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/84c1138a-9326-4f39-ba19-3cf3481d747c/0_3.png',
+);
 AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractIco84c1138a93264f39Ba193cf3481d747c0_3_Image.colorStats =

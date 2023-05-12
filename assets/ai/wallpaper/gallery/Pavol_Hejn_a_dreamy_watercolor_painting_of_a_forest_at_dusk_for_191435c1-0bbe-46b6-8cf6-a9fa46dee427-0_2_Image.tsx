@@ -40,6 +40,9 @@ export function ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A
     );
 }
 
+ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_2_Image.src = new URL(
+    'https://cdn.midjourney.com/191435c1-0bbe-46b6-8cf6-a9fa46dee427/0_2.png',
+);
 ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_2_Image.colorStats =

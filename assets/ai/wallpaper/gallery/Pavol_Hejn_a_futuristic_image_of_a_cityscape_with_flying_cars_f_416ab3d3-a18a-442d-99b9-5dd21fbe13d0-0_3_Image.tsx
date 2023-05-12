@@ -40,6 +40,9 @@ export function AFuturisticImageOfACityscapeWithFlyingCarsF416ab3d3A18a442d99b95
     );
 }
 
+AFuturisticImageOfACityscapeWithFlyingCarsF416ab3d3A18a442d99b95dd21fbe13d00_3_Image.src = new URL(
+    'https://cdn.midjourney.com/416ab3d3-a18a-442d-99b9-5dd21fbe13d0/0_3.png',
+);
 AFuturisticImageOfACityscapeWithFlyingCarsF416ab3d3A18a442d99b95dd21fbe13d00_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AFuturisticImageOfACityscapeWithFlyingCarsF416ab3d3A18a442d99b95dd21fbe13d00_3_Image.colorStats =

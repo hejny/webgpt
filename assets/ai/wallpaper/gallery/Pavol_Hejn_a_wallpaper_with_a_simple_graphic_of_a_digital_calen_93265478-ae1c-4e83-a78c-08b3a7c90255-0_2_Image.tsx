@@ -40,6 +40,9 @@ export function AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c0
     );
 }
 
+AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_2_Image.src = new URL(
+    'https://cdn.midjourney.com/93265478-ae1c-4e83-a78c-08b3a7c90255/0_2.png',
+);
 AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfADigitalCalen93265478Ae1c4e83A78c08b3a7c902550_2_Image.colorStats =

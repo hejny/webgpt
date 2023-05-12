@@ -40,6 +40,9 @@ export function ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C642
     );
 }
 
+ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.src = new URL(
+    'https://cdn.midjourney.com/dcfa480f-ef2f-4c6d-9602-c6426ffe92a0/0_1.png',
+);
 ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABoldAndGraphicImageOfALionSHeadForAWildDcfa480fEf2f4c6d9602C6426ffe92a00_1_Image.colorStats =

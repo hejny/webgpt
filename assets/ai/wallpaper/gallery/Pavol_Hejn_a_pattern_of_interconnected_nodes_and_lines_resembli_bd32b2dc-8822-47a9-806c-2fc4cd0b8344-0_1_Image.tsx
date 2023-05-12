@@ -40,6 +40,9 @@ export function APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806
     );
 }
 
+APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_1_Image.src = new URL(
+    'https://cdn.midjourney.com/bd32b2dc-8822-47a9-806c-2fc4cd0b8344/0_1.png',
+);
 APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806c2fc4cd0b83440_1_Image.colorStats =

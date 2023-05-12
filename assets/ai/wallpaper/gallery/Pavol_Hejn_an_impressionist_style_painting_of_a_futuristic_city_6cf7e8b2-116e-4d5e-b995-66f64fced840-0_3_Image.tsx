@@ -40,6 +40,9 @@ export function AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99
     );
 }
 
+AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_3_Image.src = new URL(
+    'https://cdn.midjourney.com/6cf7e8b2-116e-4d5e-b995-66f64fced840/0_3.png',
+);
 AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99566f64fced8400_3_Image.colorStats =

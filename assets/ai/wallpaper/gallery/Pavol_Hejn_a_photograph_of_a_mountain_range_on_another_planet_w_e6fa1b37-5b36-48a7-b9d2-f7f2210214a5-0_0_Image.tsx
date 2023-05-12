@@ -40,6 +40,9 @@ export function APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F
     );
 }
 
+APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_0_Image.src = new URL(
+    'https://cdn.midjourney.com/e6fa1b37-5b36-48a7-b9d2-f7f2210214a5/0_0.png',
+);
 APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_0_Image.colorStats =

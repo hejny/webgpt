@@ -40,6 +40,9 @@ export function ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e312
     );
 }
 
+ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/68bdb7af-adc9-47c9-8893-67e31299e98b/0_1.png',
+);
 ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpOfADolphinJumpingOutOfTheWater68bdb7afAdc947c9889367e31299e98b0_1_Image.colorStats =

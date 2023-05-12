@@ -40,6 +40,9 @@ export function ACsgStyleRenderingOfASpaceshipInOrbitAround64477679411f4d0fAbb28
     );
 }
 
+ACsgStyleRenderingOfASpaceshipInOrbitAround64477679411f4d0fAbb282e948835eb60_3_Image.src = new URL(
+    'https://cdn.midjourney.com/64477679-411f-4d0f-abb2-82e948835eb6/0_3.png',
+);
 ACsgStyleRenderingOfASpaceshipInOrbitAround64477679411f4d0fAbb282e948835eb60_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACsgStyleRenderingOfASpaceshipInOrbitAround64477679411f4d0fAbb282e948835eb60_3_Image.colorStats =

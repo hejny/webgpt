@@ -40,6 +40,9 @@ export function AGroupOfAinautsAndTheirAiCompanionsExploringa0d4ab476c64df8B1550
     );
 }
 
+AGroupOfAinautsAndTheirAiCompanionsExploringa0d4ab476c64df8B1550ba96a8832f402_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2a0d4ab4-76c6-4df8-b155-0ba96a8832f4/0_2.png',
+);
 AGroupOfAinautsAndTheirAiCompanionsExploringa0d4ab476c64df8B1550ba96a8832f402_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsAndTheirAiCompanionsExploringa0d4ab476c64df8B1550ba96a8832f402_2_Image.colorStats =

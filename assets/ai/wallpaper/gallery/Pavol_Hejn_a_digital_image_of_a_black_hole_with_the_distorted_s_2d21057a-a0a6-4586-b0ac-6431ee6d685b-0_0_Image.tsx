@@ -40,6 +40,9 @@ export function ADigitalImageOfABlackHoleWithTheDistortedS2d21057aA0a64586B0ac64
     );
 }
 
+ADigitalImageOfABlackHoleWithTheDistortedS2d21057aA0a64586B0ac6431ee6d685b0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/2d21057a-a0a6-4586-b0ac-6431ee6d685b/0_0.png',
+);
 ADigitalImageOfABlackHoleWithTheDistortedS2d21057aA0a64586B0ac6431ee6d685b0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalImageOfABlackHoleWithTheDistortedS2d21057aA0a64586B0ac6431ee6d685b0_0_Image.colorStats =

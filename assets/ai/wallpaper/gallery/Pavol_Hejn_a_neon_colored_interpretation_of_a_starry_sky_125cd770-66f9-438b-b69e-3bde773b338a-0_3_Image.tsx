@@ -40,6 +40,9 @@ export function ANeonColoredInterpretationOfAStarrySky125cd77066f9438bB69e3bde77
     );
 }
 
+ANeonColoredInterpretationOfAStarrySky125cd77066f9438bB69e3bde773b338a0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/125cd770-66f9-438b-b69e-3bde773b338a/0_3.png',
+);
 ANeonColoredInterpretationOfAStarrySky125cd77066f9438bB69e3bde773b338a0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ANeonColoredInterpretationOfAStarrySky125cd77066f9438bB69e3bde773b338a0_3_Image.colorStats =

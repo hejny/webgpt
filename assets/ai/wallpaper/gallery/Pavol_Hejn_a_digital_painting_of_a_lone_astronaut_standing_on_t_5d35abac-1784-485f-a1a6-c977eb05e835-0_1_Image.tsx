@@ -40,6 +40,9 @@ export function ADigitalPaintingOfALoneAstronautStandingOnT5d35abac1784485fA1a6C
     );
 }
 
+ADigitalPaintingOfALoneAstronautStandingOnT5d35abac1784485fA1a6C977eb05e8350_1_Image.src = new URL(
+    'https://cdn.midjourney.com/5d35abac-1784-485f-a1a6-c977eb05e835/0_1.png',
+);
 ADigitalPaintingOfALoneAstronautStandingOnT5d35abac1784485fA1a6C977eb05e8350_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfALoneAstronautStandingOnT5d35abac1784485fA1a6C977eb05e8350_1_Image.colorStats =

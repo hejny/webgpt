@@ -40,6 +40,9 @@ export function AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611
     );
 }
 
+AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611a1479694a3f01_1_Image.src = new URL(
+    'https://cdn.midjourney.com/1d5bfa73-c656-4cd6-8a61-1a1479694a3f/0_1.png',
+);
 AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611a1479694a3f01_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfCircuitBoard5bfa73C6564cd68a611a1479694a3f01_1_Image.colorStats =

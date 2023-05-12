@@ -40,6 +40,9 @@ export function ADigitalPaintingOfADeepSeaCreatureWithTentac02231c824c4a75A6eb42
     );
 }
 
+ADigitalPaintingOfADeepSeaCreatureWithTentac02231c824c4a75A6eb42bdd42069e302_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2c02231c-824c-4a75-a6eb-42bdd42069e3/0_2.png',
+);
 ADigitalPaintingOfADeepSeaCreatureWithTentac02231c824c4a75A6eb42bdd42069e302_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfADeepSeaCreatureWithTentac02231c824c4a75A6eb42bdd42069e302_2_Image.colorStats =

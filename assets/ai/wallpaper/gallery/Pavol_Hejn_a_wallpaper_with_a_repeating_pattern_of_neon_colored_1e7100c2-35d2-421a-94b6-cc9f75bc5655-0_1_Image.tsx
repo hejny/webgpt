@@ -40,6 +40,9 @@ export function AWallpaperWithARepeatingPatternOfNeonColorede7100c235d2421a94b6C
     );
 }
 
+AWallpaperWithARepeatingPatternOfNeonColorede7100c235d2421a94b6Cc9f75bc565501_1_Image.src = new URL(
+    'https://cdn.midjourney.com/1e7100c2-35d2-421a-94b6-cc9f75bc5655/0_1.png',
+);
 AWallpaperWithARepeatingPatternOfNeonColorede7100c235d2421a94b6Cc9f75bc565501_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfNeonColorede7100c235d2421a94b6Cc9f75bc565501_1_Image.colorStats =

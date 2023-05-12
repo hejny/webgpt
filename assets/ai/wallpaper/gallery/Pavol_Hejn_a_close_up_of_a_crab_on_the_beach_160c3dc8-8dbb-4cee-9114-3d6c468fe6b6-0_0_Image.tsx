@@ -38,6 +38,9 @@ export function ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Ima
     );
 }
 
+ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.src = new URL(
+    'https://cdn.midjourney.com/160c3dc8-8dbb-4cee-9114-3d6c468fe6b6/0_0.png',
+);
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.colorStats = hydrateColorStats(colorStats);
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.texts = texts satisfies IWallpaperTexts;

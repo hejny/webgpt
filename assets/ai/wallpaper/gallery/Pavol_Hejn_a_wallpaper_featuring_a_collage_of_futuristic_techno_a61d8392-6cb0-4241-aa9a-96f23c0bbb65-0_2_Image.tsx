@@ -40,6 +40,9 @@ export function AWallpaperFeaturingACollageOfFuturisticTechnoA61d83926cb04241Aa9
     );
 }
 
+AWallpaperFeaturingACollageOfFuturisticTechnoA61d83926cb04241Aa9a96f23c0bbb650_2_Image.src = new URL(
+    'https://cdn.midjourney.com/a61d8392-6cb0-4241-aa9a-96f23c0bbb65/0_2.png',
+);
 AWallpaperFeaturingACollageOfFuturisticTechnoA61d83926cb04241Aa9a96f23c0bbb650_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingACollageOfFuturisticTechnoA61d83926cb04241Aa9a96f23c0bbb650_2_Image.colorStats =

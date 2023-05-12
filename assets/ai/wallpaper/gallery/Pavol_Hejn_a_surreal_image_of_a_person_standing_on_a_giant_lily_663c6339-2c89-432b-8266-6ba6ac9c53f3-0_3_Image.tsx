@@ -40,6 +40,9 @@ export function ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666b
     );
 }
 
+ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_3_Image.src = new URL(
+    'https://cdn.midjourney.com/663c6339-2c89-432b-8266-6ba6ac9c53f3/0_3.png',
+);
 ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAPersonStandingOnAGiantLily663c63392c89432b82666ba6ac9c53f30_3_Image.colorStats =

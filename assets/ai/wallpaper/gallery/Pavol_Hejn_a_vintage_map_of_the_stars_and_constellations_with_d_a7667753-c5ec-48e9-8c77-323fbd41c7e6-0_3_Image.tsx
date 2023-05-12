@@ -40,6 +40,9 @@ export function AVintageMapOfTheStarsAndConstellationsWithDA7667753C5ec48e98c773
     );
 }
 
+AVintageMapOfTheStarsAndConstellationsWithDA7667753C5ec48e98c77323fbd41c7e60_3_Image.src = new URL(
+    'https://cdn.midjourney.com/a7667753-c5ec-48e9-8c77-323fbd41c7e6/0_3.png',
+);
 AVintageMapOfTheStarsAndConstellationsWithDA7667753C5ec48e98c77323fbd41c7e60_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AVintageMapOfTheStarsAndConstellationsWithDA7667753C5ec48e98c77323fbd41c7e60_3_Image.colorStats =

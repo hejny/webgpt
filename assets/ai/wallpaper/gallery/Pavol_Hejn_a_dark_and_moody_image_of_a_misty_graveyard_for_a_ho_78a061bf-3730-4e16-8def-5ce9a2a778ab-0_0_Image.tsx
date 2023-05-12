@@ -40,6 +40,9 @@ export function ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce
     );
 }
 
+ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/78a061bf-3730-4e16-8def-5ce9a2a778ab/0_0.png',
+);
 ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.colorStats =

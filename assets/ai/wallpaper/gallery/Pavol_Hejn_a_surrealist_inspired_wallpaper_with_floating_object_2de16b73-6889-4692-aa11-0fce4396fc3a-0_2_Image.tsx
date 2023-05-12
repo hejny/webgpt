@@ -40,6 +40,9 @@ export function ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa1
     );
 }
 
+ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa110fce4396fc3a02_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2de16b73-6889-4692-aa11-0fce4396fc3a/0_2.png',
+);
 ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa110fce4396fc3a02_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealistInspiredWallpaperWithFloatingObjectde16b7368894692Aa110fce4396fc3a02_2_Image.colorStats =

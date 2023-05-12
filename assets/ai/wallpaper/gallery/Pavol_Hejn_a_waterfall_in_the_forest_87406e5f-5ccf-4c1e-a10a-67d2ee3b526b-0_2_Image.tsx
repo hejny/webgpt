@@ -38,6 +38,9 @@ export function AWaterfallInTheForest87406e5f5ccf4c1eA10a67d2ee3b526b0_2_Image(p
     );
 }
 
+AWaterfallInTheForest87406e5f5ccf4c1eA10a67d2ee3b526b0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/87406e5f-5ccf-4c1e-a10a-67d2ee3b526b/0_2.png',
+);
 AWaterfallInTheForest87406e5f5ccf4c1eA10a67d2ee3b526b0_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 AWaterfallInTheForest87406e5f5ccf4c1eA10a67d2ee3b526b0_2_Image.colorStats = hydrateColorStats(colorStats);
 AWaterfallInTheForest87406e5f5ccf4c1eA10a67d2ee3b526b0_2_Image.texts = texts satisfies IWallpaperTexts;

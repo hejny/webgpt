@@ -40,6 +40,9 @@ export function APhotographOfAnIcebergInTheArcticWithTheBl42d0d489E31f4ab684d93e
     );
 }
 
+APhotographOfAnIcebergInTheArcticWithTheBl42d0d489E31f4ab684d93e50b26897190_0_Image.src = new URL(
+    'https://cdn.midjourney.com/42d0d489-e31f-4ab6-84d9-3e50b2689719/0_0.png',
+);
 APhotographOfAnIcebergInTheArcticWithTheBl42d0d489E31f4ab684d93e50b26897190_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAnIcebergInTheArcticWithTheBl42d0d489E31f4ab684d93e50b26897190_0_Image.colorStats =

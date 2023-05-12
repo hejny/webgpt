@@ -40,6 +40,9 @@ export function AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7e
     );
 }
 
+AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.src = new URL(
+    'https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_3.png',
+);
 AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.colorStats =

@@ -40,6 +40,9 @@ export function APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d
     );
 }
 
+APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_0_Image.src = new URL(
+    'https://cdn.midjourney.com/8680c6bf-b469-471d-994c-0d66ac682ef8/0_0.png',
+);
 APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_0_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e7
     );
 }
 
+AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_1_Image.src = new URL(
+    'https://cdn.midjourney.com/42a4535f-1f50-467e-b63e-74a50c027181/0_1.png',
+);
 AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_1_Image.colorStats =

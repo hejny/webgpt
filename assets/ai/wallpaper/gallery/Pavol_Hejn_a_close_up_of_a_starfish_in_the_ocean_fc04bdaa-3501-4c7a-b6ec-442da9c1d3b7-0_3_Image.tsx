@@ -40,6 +40,9 @@ export function ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_3
     );
 }
 
+ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_3_Image.src = new URL(
+    'https://cdn.midjourney.com/fc04bdaa-3501-4c7a-b6ec-442da9c1d3b7/0_3.png',
+);
 ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_3_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_3_Image.colorStats = hydrateColorStats(colorStats);
 ACloseUpOfAStarfishInTheOceanFc04bdaa35014c7aB6ec442da9c1d3b70_3_Image.texts = texts satisfies IWallpaperTexts;

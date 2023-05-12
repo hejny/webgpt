@@ -40,6 +40,9 @@ export function ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733
     );
 }
 
+ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_3_Image.src = new URL(
+    'https://cdn.midjourney.com/701e3e0e-70c2-42b9-9c73-3e7b9062a395/0_3.png',
+);
 ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACalmingBeachSunsetWithPalmTreesForAVacatio701e3e0e70c242b99c733e7b9062a3950_3_Image.colorStats =

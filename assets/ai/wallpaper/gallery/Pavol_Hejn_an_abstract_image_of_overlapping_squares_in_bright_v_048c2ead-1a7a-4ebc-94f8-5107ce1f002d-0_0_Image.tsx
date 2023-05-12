@@ -40,6 +40,9 @@ export function AnAbstractImageOfOverlappingSquaresInBrightV48c2ead1a7a4ebc94f85
     );
 }
 
+AnAbstractImageOfOverlappingSquaresInBrightV48c2ead1a7a4ebc94f85107ce1f002d00_0_Image.src = new URL(
+    'https://cdn.midjourney.com/048c2ead-1a7a-4ebc-94f8-5107ce1f002d/0_0.png',
+);
 AnAbstractImageOfOverlappingSquaresInBrightV48c2ead1a7a4ebc94f85107ce1f002d00_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfOverlappingSquaresInBrightV48c2ead1a7a4ebc94f85107ce1f002d00_0_Image.colorStats =

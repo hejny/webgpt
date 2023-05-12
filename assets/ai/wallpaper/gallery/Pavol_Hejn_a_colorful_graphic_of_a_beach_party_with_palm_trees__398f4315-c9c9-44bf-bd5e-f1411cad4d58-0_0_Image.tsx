@@ -40,6 +40,9 @@ export function AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1
     );
 }
 
+AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_0_Image.src = new URL(
+    'https://cdn.midjourney.com/398f4315-c9c9-44bf-bd5e-f1411cad4d58/0_0.png',
+);
 AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_0_Image.colorStats =

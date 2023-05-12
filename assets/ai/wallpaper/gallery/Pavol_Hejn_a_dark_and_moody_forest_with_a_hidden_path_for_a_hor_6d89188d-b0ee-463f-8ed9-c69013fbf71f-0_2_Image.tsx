@@ -40,6 +40,9 @@ export function ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69
     );
 }
 
+ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/6d89188d-b0ee-463f-8ed9-c69013fbf71f/0_2.png',
+);
 ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADarkAndMoodyForestWithAHiddenPathForAHor6d89188dB0ee463f8ed9C69013fbf71f0_2_Image.colorStats =

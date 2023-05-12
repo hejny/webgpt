@@ -40,6 +40,9 @@ export function ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b13
     );
 }
 
+ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b132368cb20d1003_3_Image.src = new URL(
+    'https://cdn.midjourney.com/3ead49fc-4cdb-4252-a4b1-32368cb20d10/0_3.png',
+);
 ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b132368cb20d1003_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfASpaceshipApproachingAnAliead49fc4cdb4252A4b132368cb20d1003_3_Image.colorStats =

@@ -38,6 +38,9 @@ export function ACitySkylineAtNight99a0ea6a14ed44fb8c18C0879b0ed3120_0_Image(pro
     );
 }
 
+ACitySkylineAtNight99a0ea6a14ed44fb8c18C0879b0ed3120_0_Image.src = new URL(
+    'https://cdn.midjourney.com/99a0ea6a-14ed-44fb-8c18-c0879b0ed312/0_0.png',
+);
 ACitySkylineAtNight99a0ea6a14ed44fb8c18C0879b0ed3120_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACitySkylineAtNight99a0ea6a14ed44fb8c18C0879b0ed3120_0_Image.colorStats = hydrateColorStats(colorStats);
 ACitySkylineAtNight99a0ea6a14ed44fb8c18C0879b0ed3120_0_Image.texts = texts satisfies IWallpaperTexts;

@@ -40,6 +40,9 @@ export function ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753
     );
 }
 
+ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_3_Image.src = new URL(
+    'https://cdn.midjourney.com/cc7f784e-ea5a-486d-accb-753a16fb0e61/0_3.png',
+);
 ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpImageOfATelescopeLensWithTheStarsCc7f784eEa5a486dAccb753a16fb0e610_3_Image.colorStats =

@@ -40,6 +40,9 @@ export function AMinimalistImageOfACitySkylineAtNightForAE3ebc75cE75b406eA90c867
     );
 }
 
+AMinimalistImageOfACitySkylineAtNightForAE3ebc75cE75b406eA90c867269a69dda0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/e3ebc75c-e75b-406e-a90c-867269a69dda/0_2.png',
+);
 AMinimalistImageOfACitySkylineAtNightForAE3ebc75cE75b406eA90c867269a69dda0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistImageOfACitySkylineAtNightForAE3ebc75cE75b406eA90c867269a69dda0_2_Image.colorStats =

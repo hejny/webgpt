@@ -40,6 +40,9 @@ export function ASurrealLandscapeOfAlienPlanetsAndStrangeOthA12472f1E76548b4Aa7a
     );
 }
 
+ASurrealLandscapeOfAlienPlanetsAndStrangeOthA12472f1E76548b4Aa7a71de0ff5e1690_1_Image.src = new URL(
+    'https://cdn.midjourney.com/a12472f1-e765-48b4-aa7a-71de0ff5e169/0_1.png',
+);
 ASurrealLandscapeOfAlienPlanetsAndStrangeOthA12472f1E76548b4Aa7a71de0ff5e1690_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealLandscapeOfAlienPlanetsAndStrangeOthA12472f1E76548b4Aa7a71de0ff5e1690_1_Image.colorStats =

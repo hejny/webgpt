@@ -40,6 +40,9 @@ export function APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b6
     );
 }
 
+APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/a1b93f91-6533-4234-994b-671324fdbd6b/0_2.png',
+);
 APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_2_Image.colorStats =

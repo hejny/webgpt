@@ -38,6 +38,9 @@ export function AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_
     );
 }
 
+AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.src = new URL(
+    'https://cdn.midjourney.com/dd694098-7781-4ff7-b11e-aad3c905d525/0_3.png',
+);
 AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.metadata = metadata satisfies IWallpaperMetadata;
 AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.colorStats = hydrateColorStats(colorStats);
 AFuturisticMetropolisAtNightDd69409877814ff7B11eAad3c905d5250_3_Image.texts = texts satisfies IWallpaperTexts;

@@ -40,6 +40,9 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36e
     );
 }
 
+AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_2_Image.src = new URL(
+    'https://cdn.midjourney.com/fb454755-ed56-4069-b36e-ad85a6001658/0_2.png',
+);
 AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_2_Image.colorStats =

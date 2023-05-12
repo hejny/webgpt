@@ -40,6 +40,9 @@ export function ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010F
     );
 }
 
+ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/c98916eb-590b-4885-9010-fa8fac87b19b/0_0.png',
+);
 ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsInAZeroGravityChamberConductiC98916eb590b48859010Fa8fac87b19b0_0_Image.colorStats =

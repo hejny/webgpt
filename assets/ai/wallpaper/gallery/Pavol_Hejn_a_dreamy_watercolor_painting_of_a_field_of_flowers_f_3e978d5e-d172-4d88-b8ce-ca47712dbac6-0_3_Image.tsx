@@ -40,6 +40,9 @@ export function ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa
     );
 }
 
+ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.src = new URL(
+    'https://cdn.midjourney.com/3e978d5e-d172-4d88-b8ce-ca47712dbac6/0_3.png',
+);
 ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.colorStats =

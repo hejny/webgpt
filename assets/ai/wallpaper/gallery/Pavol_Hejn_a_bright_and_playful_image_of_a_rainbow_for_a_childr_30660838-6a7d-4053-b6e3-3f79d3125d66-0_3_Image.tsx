@@ -40,6 +40,9 @@ export function ABrightAndPlayfulImageOfARainbowForAChildr06608386a7d4053B6e33f7
     );
 }
 
+ABrightAndPlayfulImageOfARainbowForAChildr06608386a7d4053B6e33f79d3125d6603_3_Image.src = new URL(
+    'https://cdn.midjourney.com/30660838-6a7d-4053-b6e3-3f79d3125d66/0_3.png',
+);
 ABrightAndPlayfulImageOfARainbowForAChildr06608386a7d4053B6e33f79d3125d6603_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABrightAndPlayfulImageOfARainbowForAChildr06608386a7d4053B6e33f79d3125d6603_3_Image.colorStats =

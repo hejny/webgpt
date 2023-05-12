@@ -40,6 +40,9 @@ export function AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a
     );
 }
 
+AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_2_Image.src = new URL(
+    'https://cdn.midjourney.com/056d488d-cbd3-4ae0-aa4b-11a3b5653109/0_2.png',
+);
 AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsInASpaceStationWatchingAsA056d488dCbd34ae0Aa4b11a3b56531090_2_Image.colorStats =

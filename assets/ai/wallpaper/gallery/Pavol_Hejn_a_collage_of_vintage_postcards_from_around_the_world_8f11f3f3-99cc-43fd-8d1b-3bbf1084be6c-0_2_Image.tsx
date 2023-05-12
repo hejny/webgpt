@@ -40,6 +40,9 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b
     );
 }
 
+ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c/0_2.png',
+);
 ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.colorStats =

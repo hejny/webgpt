@@ -40,6 +40,9 @@ export function ARealisticPhotographOfARocketLaunchWithFieryB2517f86474d459780c6
     );
 }
 
+ARealisticPhotographOfARocketLaunchWithFieryB2517f86474d459780c69dc0cef2b7840_1_Image.src = new URL(
+    'https://cdn.midjourney.com/b2517f86-474d-4597-80c6-9dc0cef2b784/0_1.png',
+);
 ARealisticPhotographOfARocketLaunchWithFieryB2517f86474d459780c69dc0cef2b7840_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ARealisticPhotographOfARocketLaunchWithFieryB2517f86474d459780c69dc0cef2b7840_1_Image.colorStats =

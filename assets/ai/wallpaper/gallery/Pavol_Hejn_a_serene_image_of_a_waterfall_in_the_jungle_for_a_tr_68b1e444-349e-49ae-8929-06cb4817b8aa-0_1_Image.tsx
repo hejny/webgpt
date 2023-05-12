@@ -40,6 +40,9 @@ export function ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906c
     );
 }
 
+ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/68b1e444-349e-49ae-8929-06cb4817b8aa/0_1.png',
+);
 ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_1_Image.colorStats =

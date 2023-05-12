@@ -40,6 +40,9 @@ export function ADarkAndMoodyImageOfAMoonlitForestForAHor25536320D5d94b7dB9bd8f9
     );
 }
 
+ADarkAndMoodyImageOfAMoonlitForestForAHor25536320D5d94b7dB9bd8f9e1a966c290_1_Image.src = new URL(
+    'https://cdn.midjourney.com/25536320-d5d9-4b7d-b9bd-8f9e1a966c29/0_1.png',
+);
 ADarkAndMoodyImageOfAMoonlitForestForAHor25536320D5d94b7dB9bd8f9e1a966c290_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADarkAndMoodyImageOfAMoonlitForestForAHor25536320D5d94b7dB9bd8f9e1a966c290_1_Image.colorStats =

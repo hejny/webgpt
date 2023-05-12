@@ -40,6 +40,9 @@ export function AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c2
     );
 }
 
+AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c22303d827ff40_2_Image.src = new URL(
+    'https://cdn.midjourney.com/b226ddeb-42af-4501-a77c-22303d827ff4/0_2.png',
+);
 AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c22303d827ff40_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c22303d827ff40_2_Image.colorStats =

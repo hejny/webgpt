@@ -40,6 +40,9 @@ export function ASurrealInterpretationOfADesertLandscapeDf2bc40aB36b4e8bBd8508b6
     );
 }
 
+ASurrealInterpretationOfADesertLandscapeDf2bc40aB36b4e8bBd8508b645af12180_3_Image.src = new URL(
+    'https://cdn.midjourney.com/df2bc40a-b36b-4e8b-bd85-08b645af1218/0_3.png',
+);
 ASurrealInterpretationOfADesertLandscapeDf2bc40aB36b4e8bBd8508b645af12180_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASurrealInterpretationOfADesertLandscapeDf2bc40aB36b4e8bBd8508b645af12180_3_Image.colorStats =

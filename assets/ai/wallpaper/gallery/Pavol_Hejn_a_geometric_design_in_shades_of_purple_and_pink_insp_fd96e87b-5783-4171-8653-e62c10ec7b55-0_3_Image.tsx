@@ -40,6 +40,9 @@ export function AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E
     );
 }
 
+AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.src = new URL(
+    'https://cdn.midjourney.com/fd96e87b-5783-4171-8653-e62c10ec7b55/0_3.png',
+);
 AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.colorStats =

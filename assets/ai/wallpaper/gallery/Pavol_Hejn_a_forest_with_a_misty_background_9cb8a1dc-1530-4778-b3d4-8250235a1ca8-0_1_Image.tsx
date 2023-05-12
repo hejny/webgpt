@@ -38,6 +38,9 @@ export function AForestWithAMistyBackground9cb8a1dc15304778B3d48250235a1ca80_1_I
     );
 }
 
+AForestWithAMistyBackground9cb8a1dc15304778B3d48250235a1ca80_1_Image.src = new URL(
+    'https://cdn.midjourney.com/9cb8a1dc-1530-4778-b3d4-8250235a1ca8/0_1.png',
+);
 AForestWithAMistyBackground9cb8a1dc15304778B3d48250235a1ca80_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 AForestWithAMistyBackground9cb8a1dc15304778B3d48250235a1ca80_1_Image.colorStats = hydrateColorStats(colorStats);
 AForestWithAMistyBackground9cb8a1dc15304778B3d48250235a1ca80_1_Image.texts = texts satisfies IWallpaperTexts;

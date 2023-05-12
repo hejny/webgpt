@@ -40,6 +40,9 @@ export function AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec9
     );
 }
 
+AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_0_Image.src = new URL(
+    'https://cdn.midjourney.com/dff1e602-fa8d-40a3-8bec-932885dc7994/0_0.png',
+);
 AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfWavesCrashingOnTheBeachForDff1e602Fa8d40a38bec932885dc79940_0_Image.colorStats =

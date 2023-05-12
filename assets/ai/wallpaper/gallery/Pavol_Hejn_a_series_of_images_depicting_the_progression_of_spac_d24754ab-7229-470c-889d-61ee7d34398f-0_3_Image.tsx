@@ -40,6 +40,9 @@ export function ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d
     );
 }
 
+ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/d24754ab-7229-470c-889d-61ee7d34398f/0_3.png',
+);
 ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_3_Image.colorStats =

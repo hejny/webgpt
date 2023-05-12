@@ -40,6 +40,9 @@ export function AGroupOfAinautsExploringAnUndergroundCavernO4f79da1b4619447093e1
     );
 }
 
+AGroupOfAinautsExploringAnUndergroundCavernO4f79da1b4619447093e1C64b833094b30_3_Image.src = new URL(
+    'https://cdn.midjourney.com/4f79da1b-4619-4470-93e1-c64b833094b3/0_3.png',
+);
 AGroupOfAinautsExploringAnUndergroundCavernO4f79da1b4619447093e1C64b833094b30_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsExploringAnUndergroundCavernO4f79da1b4619447093e1C64b833094b30_3_Image.colorStats =

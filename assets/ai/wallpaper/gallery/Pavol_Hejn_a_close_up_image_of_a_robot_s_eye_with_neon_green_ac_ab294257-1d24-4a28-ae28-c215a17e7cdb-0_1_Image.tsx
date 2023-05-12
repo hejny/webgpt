@@ -40,6 +40,9 @@ export function ACloseUpImageOfARobotSEyeWithNeonGreenAcAb2942571d244a28Ae28C215
     );
 }
 
+ACloseUpImageOfARobotSEyeWithNeonGreenAcAb2942571d244a28Ae28C215a17e7cdb0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/ab294257-1d24-4a28-ae28-c215a17e7cdb/0_1.png',
+);
 ACloseUpImageOfARobotSEyeWithNeonGreenAcAb2942571d244a28Ae28C215a17e7cdb0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpImageOfARobotSEyeWithNeonGreenAcAb2942571d244a28Ae28C215a17e7cdb0_1_Image.colorStats =

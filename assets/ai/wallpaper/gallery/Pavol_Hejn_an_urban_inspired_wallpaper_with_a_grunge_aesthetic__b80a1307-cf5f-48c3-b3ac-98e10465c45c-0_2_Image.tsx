@@ -40,6 +40,9 @@ export function AnUrbanInspiredWallpaperWithAGrungeAestheticB80a1307Cf5f48c3B3ac
     );
 }
 
+AnUrbanInspiredWallpaperWithAGrungeAestheticB80a1307Cf5f48c3B3ac98e10465c45c0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/b80a1307-cf5f-48c3-b3ac-98e10465c45c/0_2.png',
+);
 AnUrbanInspiredWallpaperWithAGrungeAestheticB80a1307Cf5f48c3B3ac98e10465c45c0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnUrbanInspiredWallpaperWithAGrungeAestheticB80a1307Cf5f48c3B3ac98e10465c45c0_2_Image.colorStats =

@@ -38,6 +38,9 @@ export function AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image
     );
 }
 
+AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.src = new URL(
+    'https://cdn.midjourney.com/7e8551e6-84c4-4af2-b647-5d7f0e8f0fdd/0_1.png',
+);
 AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.colorStats = hydrateColorStats(colorStats);
 AMagicalUnderwaterWorld7e8551e684c44af2B6475d7f0e8f0fdd0_1_Image.texts = texts satisfies IWallpaperTexts;

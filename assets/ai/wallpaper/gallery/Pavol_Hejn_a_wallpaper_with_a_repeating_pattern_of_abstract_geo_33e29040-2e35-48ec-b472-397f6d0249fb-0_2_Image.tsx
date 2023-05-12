@@ -40,6 +40,9 @@ export function AWallpaperWithARepeatingPatternOfAbstractGeo33e290402e3548ecB472
     );
 }
 
+AWallpaperWithARepeatingPatternOfAbstractGeo33e290402e3548ecB472397f6d0249fb0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/33e29040-2e35-48ec-b472-397f6d0249fb/0_2.png',
+);
 AWallpaperWithARepeatingPatternOfAbstractGeo33e290402e3548ecB472397f6d0249fb0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractGeo33e290402e3548ecB472397f6d0249fb0_2_Image.colorStats =

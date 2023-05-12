@@ -40,6 +40,9 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005
     );
 }
 
+AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_3_Image.src = new URL(
+    'https://cdn.midjourney.com/8e34c1cd-472a-4a41-8c00-5061ce80dd23/0_3.png',
+);
 AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_3_Image.colorStats =

@@ -40,6 +40,9 @@ export function AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbA
     );
 }
 
+AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2971d261-35d2-4d65-a1fb-ab5fb70328c7/0_2.png',
+);
 AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fc
     );
 }
 
+AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/b0a1bc1d-3711-4527-86fc-d49623479a1d/0_3.png',
+);
 AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractWallpaperInspiredByTheShapesAndColB0a1bc1d3711452786fcD49623479a1d0_3_Image.colorStats =

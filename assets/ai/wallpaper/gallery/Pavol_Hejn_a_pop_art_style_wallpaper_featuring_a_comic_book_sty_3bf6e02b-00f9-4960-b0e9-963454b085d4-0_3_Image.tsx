@@ -40,6 +40,9 @@ export function APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e996
     );
 }
 
+APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.src = new URL(
+    'https://cdn.midjourney.com/3bf6e02b-00f9-4960-b0e9-963454b085d4/0_3.png',
+);
 APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.colorStats =

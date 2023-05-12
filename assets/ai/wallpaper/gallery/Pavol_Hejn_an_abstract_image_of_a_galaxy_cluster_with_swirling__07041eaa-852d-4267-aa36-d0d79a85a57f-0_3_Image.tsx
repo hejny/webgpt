@@ -40,6 +40,9 @@ export function AnAbstractImageOfAGalaxyClusterWithSwirling07041eaa852d4267Aa36D
     );
 }
 
+AnAbstractImageOfAGalaxyClusterWithSwirling07041eaa852d4267Aa36D0d79a85a57f0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/07041eaa-852d-4267-aa36-d0d79a85a57f/0_3.png',
+);
 AnAbstractImageOfAGalaxyClusterWithSwirling07041eaa852d4267Aa36D0d79a85a57f0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAGalaxyClusterWithSwirling07041eaa852d4267Aa36D0d79a85a57f0_3_Image.colorStats =

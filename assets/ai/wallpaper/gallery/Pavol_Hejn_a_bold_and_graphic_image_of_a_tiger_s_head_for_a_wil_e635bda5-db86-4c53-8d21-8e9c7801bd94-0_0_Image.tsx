@@ -40,6 +40,9 @@ export function ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c
     );
 }
 
+ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.src = new URL(
+    'https://cdn.midjourney.com/e635bda5-db86-4c53-8d21-8e9c7801bd94/0_0.png',
+);
 ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_0_Image.colorStats =

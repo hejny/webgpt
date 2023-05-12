@@ -40,6 +40,9 @@ export function ABrightAndCheerfulImageOfASunflowerFieldFor8f592506F783430dBb388
     );
 }
 
+ABrightAndCheerfulImageOfASunflowerFieldFor8f592506F783430dBb388facb0246c9e0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/8f592506-f783-430d-bb38-8facb0246c9e/0_3.png',
+);
 ABrightAndCheerfulImageOfASunflowerFieldFor8f592506F783430dBb388facb0246c9e0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ABrightAndCheerfulImageOfASunflowerFieldFor8f592506F783430dBb388facb0246c9e0_3_Image.colorStats =

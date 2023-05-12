@@ -40,6 +40,9 @@ export function ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_0
     );
 }
 
+ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/7b154014-86f3-4776-b308-fbd4055fdedb/0_0.png',
+);
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_0_Image.colorStats = hydrateColorStats(colorStats);
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_0_Image.texts = texts satisfies IWallpaperTexts;

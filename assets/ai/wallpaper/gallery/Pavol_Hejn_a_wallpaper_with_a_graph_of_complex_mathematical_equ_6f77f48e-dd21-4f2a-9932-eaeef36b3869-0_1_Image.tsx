@@ -40,6 +40,9 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932
     );
 }
 
+AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.src = new URL(
+    'https://cdn.midjourney.com/6f77f48e-dd21-4f2a-9932-eaeef36b3869/0_1.png',
+);
 AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithAGraphOfComplexMathematicalEqu6f77f48eDd214f2a9932Eaeef36b38690_1_Image.colorStats =

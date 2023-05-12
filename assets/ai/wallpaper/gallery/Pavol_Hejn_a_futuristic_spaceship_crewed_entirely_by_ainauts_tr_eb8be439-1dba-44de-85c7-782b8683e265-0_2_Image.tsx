@@ -40,6 +40,9 @@ export function AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c
     );
 }
 
+AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_2_Image.src = new URL(
+    'https://cdn.midjourney.com/eb8be439-1dba-44de-85c7-782b8683e265/0_2.png',
+);
 AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AFuturisticSpaceshipCrewedEntirelyByAinautsTrEb8be4391dba44de85c7782b8683e2650_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function ANeonCityscapeWithFuturisticSkyscrapersForATe4e308904604a8b98930
     );
 }
 
+ANeonCityscapeWithFuturisticSkyscrapersForATe4e308904604a8b98930d9a586c9c2d01_1_Image.src = new URL(
+    'https://cdn.midjourney.com/1e4e3089-0460-4a8b-9893-0d9a586c9c2d/0_1.png',
+);
 ANeonCityscapeWithFuturisticSkyscrapersForATe4e308904604a8b98930d9a586c9c2d01_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ANeonCityscapeWithFuturisticSkyscrapersForATe4e308904604a8b98930d9a586c9c2d01_1_Image.colorStats =

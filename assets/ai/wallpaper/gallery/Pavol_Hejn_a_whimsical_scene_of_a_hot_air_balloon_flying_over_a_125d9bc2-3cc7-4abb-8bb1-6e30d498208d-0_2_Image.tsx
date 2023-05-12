@@ -40,6 +40,9 @@ export function AWhimsicalSceneOfAHotAirBalloonFlyingOverA125d9bc23cc74abb8bb16e
     );
 }
 
+AWhimsicalSceneOfAHotAirBalloonFlyingOverA125d9bc23cc74abb8bb16e30d498208d0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/125d9bc2-3cc7-4abb-8bb1-6e30d498208d/0_2.png',
+);
 AWhimsicalSceneOfAHotAirBalloonFlyingOverA125d9bc23cc74abb8bb16e30d498208d0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWhimsicalSceneOfAHotAirBalloonFlyingOverA125d9bc23cc74abb8bb16e30d498208d0_2_Image.colorStats =

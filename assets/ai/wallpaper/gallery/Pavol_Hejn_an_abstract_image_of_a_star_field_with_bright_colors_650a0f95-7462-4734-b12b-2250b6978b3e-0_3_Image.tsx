@@ -40,6 +40,9 @@ export function AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2
     );
 }
 
+AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/650a0f95-7462-4734-b12b-2250b6978b3e/0_3.png',
+);
 AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_3_Image.colorStats =

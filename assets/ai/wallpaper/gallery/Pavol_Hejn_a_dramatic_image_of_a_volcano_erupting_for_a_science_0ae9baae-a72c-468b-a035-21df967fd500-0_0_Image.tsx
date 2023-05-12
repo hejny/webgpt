@@ -40,6 +40,9 @@ export function ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521
     );
 }
 
+ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.src = new URL(
+    'https://cdn.midjourney.com/0ae9baae-a72c-468b-a035-21df967fd500/0_0.png',
+);
 ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.colorStats =

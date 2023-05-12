@@ -40,6 +40,9 @@ export function APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c
     );
 }
 
+APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.src = new URL(
+    'https://cdn.midjourney.com/2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab/0_2.png',
+);
 APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.colorStats =

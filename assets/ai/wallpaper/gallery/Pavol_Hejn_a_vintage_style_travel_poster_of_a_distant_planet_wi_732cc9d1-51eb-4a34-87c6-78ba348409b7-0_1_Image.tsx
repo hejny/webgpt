@@ -40,6 +40,9 @@ export function AVintageStyleTravelPosterOfADistantPlanetWi732cc9d151eb4a3487c67
     );
 }
 
+AVintageStyleTravelPosterOfADistantPlanetWi732cc9d151eb4a3487c678ba348409b70_1_Image.src = new URL(
+    'https://cdn.midjourney.com/732cc9d1-51eb-4a34-87c6-78ba348409b7/0_1.png',
+);
 AVintageStyleTravelPosterOfADistantPlanetWi732cc9d151eb4a3487c678ba348409b70_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AVintageStyleTravelPosterOfADistantPlanetWi732cc9d151eb4a3487c678ba348409b70_1_Image.colorStats =

@@ -40,6 +40,9 @@ export function AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE3
     );
 }
 
+AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE38b37c788080_1_Image.src = new URL(
+    'https://cdn.midjourney.com/95660e98-b69e-4c6b-816b-e38b37c78808/0_1.png',
+);
 AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE38b37c788080_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASingleLineDrawingOfADroneAg95660e98B69e4c6b816bE38b37c788080_1_Image.colorStats =

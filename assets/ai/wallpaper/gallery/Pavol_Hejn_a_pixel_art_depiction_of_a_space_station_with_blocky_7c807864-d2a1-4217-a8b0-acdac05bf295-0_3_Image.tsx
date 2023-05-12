@@ -40,6 +40,9 @@ export function APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0A
     );
 }
 
+APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_3_Image.src = new URL(
+    'https://cdn.midjourney.com/7c807864-d2a1-4217-a8b0-acdac05bf295/0_3.png',
+);
 APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 APixelArtDepictionOfASpaceStationWithBlocky7c807864D2a14217A8b0Acdac05bf2950_3_Image.colorStats =

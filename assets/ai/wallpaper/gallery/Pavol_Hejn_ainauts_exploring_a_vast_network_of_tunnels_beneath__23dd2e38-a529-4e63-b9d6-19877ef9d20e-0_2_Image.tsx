@@ -40,6 +40,9 @@ export function AinautsExploringAVastNetworkOfTunnelsBeneath3dd2e38A5294e63B9d61
     );
 }
 
+AinautsExploringAVastNetworkOfTunnelsBeneath3dd2e38A5294e63B9d619877ef9d20e02_2_Image.src = new URL(
+    'https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_2.png',
+);
 AinautsExploringAVastNetworkOfTunnelsBeneath3dd2e38A5294e63B9d619877ef9d20e02_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AinautsExploringAVastNetworkOfTunnelsBeneath3dd2e38A5294e63B9d619877ef9d20e02_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083
     );
 }
 
+AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_3_Image.src = new URL(
+    'https://cdn.midjourney.com/148a2aa3-fc1a-4eaa-9083-a6250d5fab36/0_3.png',
+);
 AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAFuturisticSpaceElevatorWith148a2aa3Fc1a4eaa9083A6250d5fab360_3_Image.colorStats =

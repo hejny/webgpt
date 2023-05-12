@@ -40,6 +40,9 @@ export function AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800
     );
 }
 
+AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800F9bdd08d72b50_1_Image.src = new URL(
+    'https://cdn.midjourney.com/83d94335-7745-4612-8800-f9bdd08d72b5/0_1.png',
+);
 AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800F9bdd08d72b50_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWhimsicalTeaPartyWithAnthropomorphicAnimals83d94335774546128800F9bdd08d72b50_1_Image.colorStats =

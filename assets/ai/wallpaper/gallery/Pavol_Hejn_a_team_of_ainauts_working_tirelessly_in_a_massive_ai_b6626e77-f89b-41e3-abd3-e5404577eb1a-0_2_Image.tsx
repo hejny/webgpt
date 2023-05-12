@@ -40,6 +40,9 @@ export function ATeamOfAinautsWorkingTirelesslyInAMassiveAiB6626e77F89b41e3Abd3E
     );
 }
 
+ATeamOfAinautsWorkingTirelesslyInAMassiveAiB6626e77F89b41e3Abd3E5404577eb1a0_2_Image.src = new URL(
+    'https://cdn.midjourney.com/b6626e77-f89b-41e3-abd3-e5404577eb1a/0_2.png',
+);
 ATeamOfAinautsWorkingTirelesslyInAMassiveAiB6626e77F89b41e3Abd3E5404577eb1a0_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsWorkingTirelesslyInAMassiveAiB6626e77F89b41e3Abd3E5404577eb1a0_2_Image.colorStats =

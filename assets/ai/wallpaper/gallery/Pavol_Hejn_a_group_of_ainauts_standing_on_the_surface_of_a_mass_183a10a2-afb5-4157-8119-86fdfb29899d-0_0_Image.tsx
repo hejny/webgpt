@@ -40,6 +40,9 @@ export function AGroupOfAinautsStandingOnTheSurfaceOfAMass183a10a2Afb54157811986
     );
 }
 
+AGroupOfAinautsStandingOnTheSurfaceOfAMass183a10a2Afb54157811986fdfb29899d0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/183a10a2-afb5-4157-8119-86fdfb29899d/0_0.png',
+);
 AGroupOfAinautsStandingOnTheSurfaceOfAMass183a10a2Afb54157811986fdfb29899d0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsStandingOnTheSurfaceOfAMass183a10a2Afb54157811986fdfb29899d0_0_Image.colorStats =

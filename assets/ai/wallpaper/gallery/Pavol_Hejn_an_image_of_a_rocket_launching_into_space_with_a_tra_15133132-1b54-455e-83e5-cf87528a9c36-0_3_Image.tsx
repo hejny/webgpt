@@ -40,6 +40,9 @@ export function AnImageOfARocketLaunchingIntoSpaceWithATra151331321b54455e83e5Cf
     );
 }
 
+AnImageOfARocketLaunchingIntoSpaceWithATra151331321b54455e83e5Cf87528a9c360_3_Image.src = new URL(
+    'https://cdn.midjourney.com/15133132-1b54-455e-83e5-cf87528a9c36/0_3.png',
+);
 AnImageOfARocketLaunchingIntoSpaceWithATra151331321b54455e83e5Cf87528a9c360_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnImageOfARocketLaunchingIntoSpaceWithATra151331321b54455e83e5Cf87528a9c360_3_Image.colorStats =

@@ -40,6 +40,9 @@ export function AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c
     );
 }
 
+AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_2_Image.src = new URL(
+    'https://cdn.midjourney.com/c69291e5-d766-4ed3-9072-179c779dd1d6/0_2.png',
+);
 AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_2_Image.colorStats =

@@ -40,6 +40,9 @@ export function ADramaticImageOfAThunderstormOverACitySkyliAc936a4d5a614989Ae968
     );
 }
 
+ADramaticImageOfAThunderstormOverACitySkyliAc936a4d5a614989Ae968b0cd757ddcd0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/ac936a4d-5a61-4989-ae96-8b0cd757ddcd/0_0.png',
+);
 ADramaticImageOfAThunderstormOverACitySkyliAc936a4d5a614989Ae968b0cd757ddcd0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ADramaticImageOfAThunderstormOverACitySkyliAc936a4d5a614989Ae968b0cd757ddcd0_0_Image.colorStats =

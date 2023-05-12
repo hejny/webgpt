@@ -40,6 +40,9 @@ export function AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a3689322
     );
 }
 
+AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_1_Image.src = new URL(
+    'https://cdn.midjourney.com/52c5f24c-f263-4a36-8932-27b51cfe0051/0_1.png',
+);
 AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_1_Image.colorStats =

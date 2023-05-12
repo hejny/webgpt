@@ -40,6 +40,9 @@ export function AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336
     );
 }
 
+AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_2_Image.src = new URL(
+    'https://cdn.midjourney.com/558c9747-41d8-439b-8333-6944c9d41520/0_2.png',
+);
 AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfACometPassingThroughTheSol558c974741d8439b83336944c9d415200_2_Image.colorStats =

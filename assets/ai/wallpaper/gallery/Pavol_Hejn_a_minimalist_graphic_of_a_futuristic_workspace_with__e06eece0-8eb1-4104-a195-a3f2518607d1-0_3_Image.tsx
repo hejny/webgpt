@@ -40,6 +40,9 @@ export function AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195
     );
 }
 
+AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.src = new URL(
+    'https://cdn.midjourney.com/e06eece0-8eb1-4104-a195-a3f2518607d1/0_3.png',
+);
 AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMinimalistGraphicOfAFuturisticWorkspaceWithE06eece08eb14104A195A3f2518607d10_3_Image.colorStats =

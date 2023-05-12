@@ -40,6 +40,9 @@ export function AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49B
     );
 }
 
+AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_2_Image.src = new URL(
+    'https://cdn.midjourney.com/6c32a61d-854e-42f6-9b49-bfabb16ccdd1/0_2.png',
+);
 AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_2_Image.colorStats =

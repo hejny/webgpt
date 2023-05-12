@@ -38,6 +38,9 @@ export function ACloseUpOfABirdInFlight0f42051f65e946e689dfFe5276eb146a0_3_Image
     );
 }
 
+ACloseUpOfABirdInFlight0f42051f65e946e689dfFe5276eb146a0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/0f42051f-65e9-46e6-89df-fe5276eb146a/0_3.png',
+);
 ACloseUpOfABirdInFlight0f42051f65e946e689dfFe5276eb146a0_3_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfABirdInFlight0f42051f65e946e689dfFe5276eb146a0_3_Image.colorStats = hydrateColorStats(colorStats);
 ACloseUpOfABirdInFlight0f42051f65e946e689dfFe5276eb146a0_3_Image.texts = texts satisfies IWallpaperTexts;

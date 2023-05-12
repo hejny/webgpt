@@ -38,6 +38,9 @@ export function ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_3_Image
     );
 }
 
+ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_3_Image.src = new URL(
+    'https://cdn.midjourney.com/8390aaa9-34c4-4170-af28-4cb4b21ea18f/0_3.png',
+);
 ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_3_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_3_Image.colorStats = hydrateColorStats(colorStats);
 ACloseUpOfASnailOnALeaf8390aaa934c44170Af284cb4b21ea18f0_3_Image.texts = texts satisfies IWallpaperTexts;

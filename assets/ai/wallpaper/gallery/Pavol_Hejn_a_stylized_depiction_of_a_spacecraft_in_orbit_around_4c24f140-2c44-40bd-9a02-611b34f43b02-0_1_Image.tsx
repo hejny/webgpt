@@ -40,6 +40,9 @@ export function AStylizedDepictionOfASpacecraftInOrbitAround4c24f1402c4440bd9a02
     );
 }
 
+AStylizedDepictionOfASpacecraftInOrbitAround4c24f1402c4440bd9a02611b34f43b020_1_Image.src = new URL(
+    'https://cdn.midjourney.com/4c24f140-2c44-40bd-9a02-611b34f43b02/0_1.png',
+);
 AStylizedDepictionOfASpacecraftInOrbitAround4c24f1402c4440bd9a02611b34f43b020_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AStylizedDepictionOfASpacecraftInOrbitAround4c24f1402c4440bd9a02611b34f43b020_1_Image.colorStats =

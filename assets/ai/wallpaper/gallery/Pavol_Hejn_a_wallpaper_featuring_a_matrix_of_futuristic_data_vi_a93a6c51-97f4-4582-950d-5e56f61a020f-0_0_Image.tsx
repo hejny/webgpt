@@ -40,6 +40,9 @@ export function AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d
     );
 }
 
+AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d5e56f61a020f0_0_Image.src = new URL(
+    'https://cdn.midjourney.com/a93a6c51-97f4-4582-950d-5e56f61a020f/0_0.png',
+);
 AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d5e56f61a020f0_0_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAMatrixOfFuturisticDataViA93a6c5197f44582950d5e56f61a020f0_0_Image.colorStats =
