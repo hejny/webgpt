@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/5455febb-ab5a-4610-b64f-1f62dda9dcb5/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5455febb-ab5a-4610-b64f-1f62dda9dcb5-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperWithASimpleGraphicOfACyborgSFace5455febbAb5a4610B64f1f
     return (
         <Image
             alt="A wallpaper with a simple graphic of a cyborg's face, against a background of digital noise and static."
-            src={source}
+            src="https://cdn.midjourney.com/5455febb-ab5a-4610-b64f-1f62dda9dcb5/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

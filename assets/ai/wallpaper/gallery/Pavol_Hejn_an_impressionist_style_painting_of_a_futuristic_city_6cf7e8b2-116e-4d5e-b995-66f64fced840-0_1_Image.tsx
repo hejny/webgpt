@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/6cf7e8b2-116e-4d5e-b995-66f64fced840/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_impressionist_style_painting_of_a_futuristic_city_6cf7e8b2-116e-4d5e-b995-66f64fced840-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AnImpressionistStylePaintingOfAFuturisticCity6cf7e8b2116e4d5eB99
     return (
         <Image
             alt="An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect."
-            src={source}
+            src="https://cdn.midjourney.com/6cf7e8b2-116e-4d5e-b995-66f64fced840/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

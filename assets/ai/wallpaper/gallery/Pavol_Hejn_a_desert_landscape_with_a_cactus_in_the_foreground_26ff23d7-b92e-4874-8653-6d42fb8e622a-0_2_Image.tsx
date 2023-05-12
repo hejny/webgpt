@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/26ff23d7-b92e-4874-8653-6d42fb8e622a/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d4
     return (
         <Image
             alt="A desert landscape with a cactus in the foreground"
-            src={source}
+            src="https://cdn.midjourney.com/26ff23d7-b92e-4874-8653-6d42fb8e622a/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

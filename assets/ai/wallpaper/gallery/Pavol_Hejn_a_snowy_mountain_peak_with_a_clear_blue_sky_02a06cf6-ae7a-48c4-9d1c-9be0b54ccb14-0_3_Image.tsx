@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_3.colors.json';
@@ -29,9 +29,10 @@ export function ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54cc
     return (
         <Image
             alt="A snowy mountain peak with a clear blue sky"
-            src={source}
+            src="https://cdn.midjourney.com/02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

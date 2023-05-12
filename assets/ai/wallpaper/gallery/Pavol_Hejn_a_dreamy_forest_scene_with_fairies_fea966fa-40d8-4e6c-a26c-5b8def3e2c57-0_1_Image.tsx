@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/fea966fa-40d8-4e6c-a26c-5b8def3e2c57/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_fea966fa-40d8-4e6c-a26c-5b8def3e2c57-0_1.colors.json';
@@ -29,9 +29,10 @@ export function ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1
     return (
         <Image
             alt="A dreamy forest scene with fairies"
-            src={source}
+            src="https://cdn.midjourney.com/fea966fa-40d8-4e6c-a26c-5b8def3e2c57/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

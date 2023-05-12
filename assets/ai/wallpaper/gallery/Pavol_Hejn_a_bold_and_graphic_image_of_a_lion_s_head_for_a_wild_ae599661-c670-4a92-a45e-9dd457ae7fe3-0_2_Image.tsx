@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/ae599661-c670-4a92-a45e-9dd457ae7fe3/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_bold_and_graphic_image_of_a_lion_s_head_for_a_wild_ae599661-c670-4a92-a45e-9dd457ae7fe3-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ABoldAndGraphicImageOfALionSHeadForAWildAe599661C6704a92A45e9dd4
     return (
         <Image
             alt="A bold and graphic image of a lion's head for a wildlife or animal conservation website"
-            src={source}
+            src="https://cdn.midjourney.com/ae599661-c670-4a92-a45e-9dd457ae7fe3/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

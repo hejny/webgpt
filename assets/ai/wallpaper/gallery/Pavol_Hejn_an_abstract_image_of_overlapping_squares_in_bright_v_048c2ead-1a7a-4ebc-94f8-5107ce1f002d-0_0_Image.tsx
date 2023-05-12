@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/048c2ead-1a7a-4ebc-94f8-5107ce1f002d/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_overlapping_squares_in_bright_v_048c2ead-1a7a-4ebc-94f8-5107ce1f002d-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractImageOfOverlappingSquaresInBrightV48c2ead1a7a4ebc94f85
     return (
         <Image
             alt="An abstract image of overlapping squares in bright, vibrant colors for a business or marketing website"
-            src={source}
+            src="https://cdn.midjourney.com/048c2ead-1a7a-4ebc-94f8-5107ce1f002d/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

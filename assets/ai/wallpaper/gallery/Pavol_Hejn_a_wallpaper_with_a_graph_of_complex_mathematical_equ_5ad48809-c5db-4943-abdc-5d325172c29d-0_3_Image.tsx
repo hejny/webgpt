@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/5ad48809-c5db-4943-abdc-5d325172c29d/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_5ad48809-c5db-4943-abdc-5d325172c29d-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc
     return (
         <Image
             alt="A wallpaper with a graph of complex mathematical equations, arranged in a minimalist and modern design."
-            src={source}
+            src="https://cdn.midjourney.com/5ad48809-c5db-4943-abdc-5d325172c29d/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

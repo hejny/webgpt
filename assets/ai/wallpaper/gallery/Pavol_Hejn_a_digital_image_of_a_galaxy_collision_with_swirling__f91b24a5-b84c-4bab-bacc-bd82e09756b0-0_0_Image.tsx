@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/f91b24a5-b84c-4bab-bacc-bd82e09756b0/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__f91b24a5-b84c-4bab-bacc-bd82e09756b0-0_0.colors.json';
@@ -29,9 +29,10 @@ export function ADigitalImageOfAGalaxyCollisionWithSwirlingF91b24a5B84c4babBaccB
     return (
         <Image
             alt="A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event."
-            src={source}
+            src="https://cdn.midjourney.com/f91b24a5-b84c-4bab-bacc-bd82e09756b0/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/832d43ef-8482-48ca-80fc-d747fbd4dba9/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_wallpaper_inspired_by_the_shapes_and_col_832d43ef-8482-48ca-80fc-d747fbd4dba9-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractWallpaperInspiredByTheShapesAndCol832d43ef848248ca80fc
     return (
         <Image
             alt="An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines."
-            src={source}
+            src="https://cdn.midjourney.com/832d43ef-8482-48ca-80fc-d747fbd4dba9/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

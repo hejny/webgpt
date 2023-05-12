@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/fb7a1db1-e6cf-44fd-9d59-329900d5ce0e/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_fb7a1db1-e6cf-44fd-9d59-329900d5ce0e-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AFuturisticCityWithHolographicAdvertisementsFoFb7a1db1E6cf44fd9d
     return (
         <Image
             alt="A futuristic city with holographic advertisements for a tech or innovation website"
-            src={source}
+            src="https://cdn.midjourney.com/fb7a1db1-e6cf-44fd-9d59-329900d5ce0e/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

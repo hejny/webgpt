@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/520efdfb-3aee-4c0a-b2df-fa3995231f5c/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_sunrise_on_a_distant_planet_520efdfb-3aee-4c0a-b2df-fa3995231f5c-0_2.colors.json';
@@ -27,9 +27,10 @@ export function SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image
     return (
         <Image
             alt="Sunrise on a distant planet"
-            src={source}
+            src="https://cdn.midjourney.com/520efdfb-3aee-4c0a-b2df-fa3995231f5c/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

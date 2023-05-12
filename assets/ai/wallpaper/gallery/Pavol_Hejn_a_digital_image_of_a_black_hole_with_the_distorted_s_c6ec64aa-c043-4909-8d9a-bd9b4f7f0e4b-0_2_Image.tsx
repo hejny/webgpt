@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ADigitalImageOfABlackHoleWithTheDistortedSC6ec64aaC04349098d9aBd
     return (
         <Image
             alt="A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity."
-            src={source}
+            src="https://cdn.midjourney.com/c6ec64aa-c043-4909-8d9a-bd9b4f7f0e4b/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

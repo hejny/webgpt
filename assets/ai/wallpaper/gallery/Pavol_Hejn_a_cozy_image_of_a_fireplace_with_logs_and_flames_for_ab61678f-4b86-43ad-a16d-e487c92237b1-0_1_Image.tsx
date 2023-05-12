@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/ab61678f-4b86-43ad-a16d-e487c92237b1/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_1.colors.json';
@@ -29,9 +29,10 @@ export function ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE4
     return (
         <Image
             alt="A cozy image of a fireplace with logs and flames for a home decor or lifestyle blog."
-            src={source}
+            src="https://cdn.midjourney.com/ab61678f-4b86-43ad-a16d-e487c92237b1/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

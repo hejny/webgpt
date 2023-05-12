@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_ainauts_exploring_a_vast_network_of_tunnels_beneath__23dd2e38-a529-4e63-b9d6-19877ef9d20e-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AinautsExploringAVastNetworkOfTunnelsBeneath23dd2e38A5294e63B9d6
     return (
         <Image
             alt="AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
-            src={source}
+            src="https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

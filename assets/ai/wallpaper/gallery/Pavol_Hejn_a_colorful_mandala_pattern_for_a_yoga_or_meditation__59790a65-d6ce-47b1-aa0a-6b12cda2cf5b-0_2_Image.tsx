@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/59790a65-d6ce-47b1-aa0a-6b12cda2cf5b/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__59790a65-d6ce-47b1-aa0a-6b12cda2cf5b-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AColorfulMandalaPatternForAYogaOrMeditation59790a65D6ce47b1Aa0a6
     return (
         <Image
             alt="A colorful mandala pattern for a yoga or meditation website"
-            src={source}
+            src="https://cdn.midjourney.com/59790a65-d6ce-47b1-aa0a-6b12cda2cf5b/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

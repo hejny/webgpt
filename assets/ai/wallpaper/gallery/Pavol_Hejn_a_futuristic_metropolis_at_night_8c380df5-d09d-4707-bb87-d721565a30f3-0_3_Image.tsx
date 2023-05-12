@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/8c380df5-d09d-4707-bb87-d721565a30f3/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_metropolis_at_night_8c380df5-d09d-4707-bb87-d721565a30f3-0_3.colors.json';
@@ -27,9 +27,10 @@ export function AFuturisticMetropolisAtNight8c380df5D09d4707Bb87D721565a30f30_3_
     return (
         <Image
             alt="A futuristic metropolis at night"
-            src={source}
+            src="https://cdn.midjourney.com/8c380df5-d09d-4707-bb87-d721565a30f3/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

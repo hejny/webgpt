@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/0094b8cd-7fd6-4077-bfa1-2f291eb1b1df/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_0094b8cd-7fd6-4077-bfa1-2f291eb1b1df-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd0094b8cd7fd64077Bfa12
     return (
         <Image
             alt="An illustration of a cyborg with a metallic body and glowing eyes"
-            src={source}
+            src="https://cdn.midjourney.com/0094b8cd-7fd6-4077-bfa1-2f291eb1b1df/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/549ef7f6-da04-45a6-87cb-f5a127d0ce43/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_city_skyline_at_dawn_for_a_549ef7f6-da04-45a6-87cb-f5a127d0ce43-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AMinimalistGraphicOfACitySkylineAtDawnForA549ef7f6Da0445a687cbF5
     return (
         <Image
             alt="A minimalist graphic of a city skyline at dawn for a business or marketing website"
-            src={source}
+            src="https://cdn.midjourney.com/549ef7f6-da04-45a6-87cb-f5a127d0ce43/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

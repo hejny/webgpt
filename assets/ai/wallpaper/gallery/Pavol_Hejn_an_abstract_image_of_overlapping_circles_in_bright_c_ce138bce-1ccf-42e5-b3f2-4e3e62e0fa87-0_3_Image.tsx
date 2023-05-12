@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/ce138bce-1ccf-42e5-b3f2-4e3e62e0fa87/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_ce138bce-1ccf-42e5-b3f2-4e3e62e0fa87-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractImageOfOverlappingCirclesInBrightCCe138bce1ccf42e5B3f2
     return (
         <Image
             alt="An abstract image of overlapping circles in bright colors for a business or marketing website"
-            src={source}
+            src="https://cdn.midjourney.com/ce138bce-1ccf-42e5-b3f2-4e3e62e0fa87/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

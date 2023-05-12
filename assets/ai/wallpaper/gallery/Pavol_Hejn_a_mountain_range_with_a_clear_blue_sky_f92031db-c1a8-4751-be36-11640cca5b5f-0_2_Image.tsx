@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/f92031db-c1a8-4751-be36-11640cca5b5f/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_mountain_range_with_a_clear_blue_sky_f92031db-c1a8-4751-be36-11640cca5b5f-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0
     return (
         <Image
             alt="A mountain range with a clear blue sky"
-            src={source}
+            src="https://cdn.midjourney.com/f92031db-c1a8-4751-be36-11640cca5b5f/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

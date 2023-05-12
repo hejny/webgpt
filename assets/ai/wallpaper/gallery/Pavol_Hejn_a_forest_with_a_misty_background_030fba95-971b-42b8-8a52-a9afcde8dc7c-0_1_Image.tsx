@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/030fba95-971b-42b8-8a52-a9afcde8dc7c/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_forest_with_a_misty_background_030fba95-971b-42b8-8a52-a9afcde8dc7c-0_1.colors.json';
@@ -27,9 +27,10 @@ export function AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_1_I
     return (
         <Image
             alt="A forest with a misty background"
-            src={source}
+            src="https://cdn.midjourney.com/030fba95-971b-42b8-8a52-a9afcde8dc7c/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

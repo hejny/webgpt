@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b
     return (
         <Image
             alt="A collage of vintage postcards from around the world"
-            src={source}
+            src="https://cdn.midjourney.com/8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/8332870a-1c25-4ec7-b979-849e4fac6c67/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_csg_style_rendering_of_an_alien_landscape_with_sha_8332870a-1c25-4ec7-b979-849e4fac6c67-0_1.colors.json';
@@ -29,9 +29,10 @@ export function ACsgStyleRenderingOfAnAlienLandscapeWithSha8332870a1c254ec7B9798
     return (
         <Image
             alt="A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe."
-            src={source}
+            src="https://cdn.midjourney.com/8332870a-1c25-4ec7-b979-849e4fac6c67/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

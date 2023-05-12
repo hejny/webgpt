@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/fb454755-ed56-4069-b36e-ad85a6001658/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fb454755-ed56-4069-b36e-ad85a6001658-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36e
     return (
         <Image
             alt="An abstract representation of the inside of a computer chip with a metallic color palette"
-            src={source}
+            src="https://cdn.midjourney.com/fb454755-ed56-4069-b36e-ad85a6001658/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

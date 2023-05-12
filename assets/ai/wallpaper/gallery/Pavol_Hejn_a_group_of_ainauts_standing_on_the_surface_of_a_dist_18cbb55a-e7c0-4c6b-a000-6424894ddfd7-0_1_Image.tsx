@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/18cbb55a-e7c0-4c6b-a000-6424894ddfd7/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_18cbb55a-e7c0-4c6b-a000-6424894ddfd7-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AGroupOfAinautsStandingOnTheSurfaceOfADist8cbb55aE7c04c6bA000642
     return (
         <Image
             alt="A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance."
-            src={source}
+            src="https://cdn.midjourney.com/18cbb55a-e7c0-4c6b-a000-6424894ddfd7/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

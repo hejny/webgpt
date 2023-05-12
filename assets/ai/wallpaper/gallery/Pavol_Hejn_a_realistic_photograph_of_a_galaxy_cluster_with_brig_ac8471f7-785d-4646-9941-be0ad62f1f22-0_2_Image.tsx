@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/ac8471f7-785d-4646-9941-be0ad62f1f22/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_ac8471f7-785d-4646-9941-be0ad62f1f22-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941
     return (
         <Image
             alt="A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe."
-            src={source}
+            src="https://cdn.midjourney.com/ac8471f7-785d-4646-9941-be0ad62f1f22/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

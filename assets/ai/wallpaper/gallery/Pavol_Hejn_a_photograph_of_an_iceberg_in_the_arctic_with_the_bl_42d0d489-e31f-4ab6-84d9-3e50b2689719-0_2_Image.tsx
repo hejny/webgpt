@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/42d0d489-e31f-4ab6-84d9-3e50b2689719/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_42d0d489-e31f-4ab6-84d9-3e50b2689719-0_2.colors.json';
@@ -29,9 +29,10 @@ export function APhotographOfAnIcebergInTheArcticWithTheBl42d0d489E31f4ab684d93e
     return (
         <Image
             alt="A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky."
-            src={source}
+            src="https://cdn.midjourney.com/42d0d489-e31f-4ab6-84d9-3e50b2689719/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

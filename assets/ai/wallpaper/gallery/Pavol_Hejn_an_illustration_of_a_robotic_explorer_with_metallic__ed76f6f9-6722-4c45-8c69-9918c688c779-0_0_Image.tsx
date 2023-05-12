@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/ed76f6f9-6722-4c45-8c69-9918c688c779/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__ed76f6f9-6722-4c45-8c69-9918c688c779-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AnIllustrationOfARoboticExplorerWithMetallicEd76f6f967224c458c69
     return (
         <Image
             alt="An illustration of a robotic explorer, with metallic textures and intricate details."
-            src={source}
+            src="https://cdn.midjourney.com/ed76f6f9-6722-4c45-8c69-9918c688c779/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

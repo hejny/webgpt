@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/a23087b0-c6bd-456f-89d5-ae5607589de4/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_a23087b0-c6bd-456f-89d5-ae5607589de4-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ADarkAndMoodyForestWithAHiddenPathForAHorA23087b0C6bd456f89d5Ae5
     return (
         <Image
             alt="A dark and moody forest with a hidden path for a horror or mystery website"
-            src={source}
+            src="https://cdn.midjourney.com/a23087b0-c6bd-456f-89d5-ae5607589de4/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

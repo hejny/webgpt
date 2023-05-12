@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/d24754ab-7229-470c-889d-61ee7d34398f/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d24754ab-7229-470c-889d-61ee7d34398f-0_0.colors.json';
@@ -29,9 +29,10 @@ export function ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d
     return (
         <Image
             alt="A series of images depicting the progression of space exploration, from early rockets to modern spacecraft."
-            src={source}
+            src="https://cdn.midjourney.com/d24754ab-7229-470c-889d-61ee7d34398f/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

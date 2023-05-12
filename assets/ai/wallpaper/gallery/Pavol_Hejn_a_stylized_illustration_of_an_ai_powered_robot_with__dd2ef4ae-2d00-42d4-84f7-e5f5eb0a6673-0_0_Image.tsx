@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/dd2ef4ae-2d00-42d4-84f7-e5f5eb0a6673/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_stylized_illustration_of_an_ai_powered_robot_with__dd2ef4ae-2d00-42d4-84f7-e5f5eb0a6673-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AStylizedIllustrationOfAnAiPoweredRobotWithDd2ef4ae2d0042d484f7E
     return (
         <Image
             alt="A stylized illustration of an AI-powered robot, with sleek and modern graphics and a minimalist color scheme."
-            src={source}
+            src="https://cdn.midjourney.com/dd2ef4ae-2d00-42d4-84f7-e5f5eb0a6673/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,8 +6,6 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_2.png';
 import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
@@ -29,7 +27,7 @@ export function ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_2_
     return (
         <Image
             alt="A beautiful sunset over the ocean"
-            src={source}
+            src="https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_2.png"
             draggable="false"
             placeholder="blur"
             blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}

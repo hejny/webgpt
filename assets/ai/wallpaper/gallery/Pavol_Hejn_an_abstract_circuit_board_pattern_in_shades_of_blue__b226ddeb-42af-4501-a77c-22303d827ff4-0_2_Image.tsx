@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/b226ddeb-42af-4501-a77c-22303d827ff4/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__b226ddeb-42af-4501-a77c-22303d827ff4-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractCircuitBoardPatternInShadesOfBlueB226ddeb42af4501A77c2
     return (
         <Image
             alt="An abstract circuit board pattern in shades of blue and silver"
-            src={source}
+            src="https://cdn.midjourney.com/b226ddeb-42af-4501-a77c-22303d827ff4/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

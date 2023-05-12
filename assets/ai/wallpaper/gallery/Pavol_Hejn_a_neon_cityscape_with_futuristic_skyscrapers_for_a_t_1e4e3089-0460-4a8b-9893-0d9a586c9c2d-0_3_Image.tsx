@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/1e4e3089-0460-4a8b-9893-0d9a586c9c2d/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.colors.json';
@@ -29,9 +29,10 @@ export function ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b9893
     return (
         <Image
             alt="A neon cityscape with futuristic skyscrapers for a tech blog homepage"
-            src={source}
+            src="https://cdn.midjourney.com/1e4e3089-0460-4a8b-9893-0d9a586c9c2d/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/d73bd8aa-f693-43d1-8d35-8c77c7154777/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_d73bd8aa-f693-43d1-8d35-8c77c7154777-0_2.colors.json';
@@ -29,9 +29,10 @@ export function ACozyWinterCabinSurroundedBySnowCoveredTreesD73bd8aaF69343d18d35
     return (
         <Image
             alt="A cozy winter cabin surrounded by snow-covered trees for a home decor or lifestyle blog"
-            src={source}
+            src="https://cdn.midjourney.com/d73bd8aa-f693-43d1-8d35-8c77c7154777/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

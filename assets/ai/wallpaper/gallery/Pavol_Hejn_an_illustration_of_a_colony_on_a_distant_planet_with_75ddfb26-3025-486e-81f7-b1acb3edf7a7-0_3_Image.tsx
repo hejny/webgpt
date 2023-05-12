@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/75ddfb26-3025-486e-81f7-b1acb3edf7a7/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_75ddfb26-3025-486e-81f7-b1acb3edf7a7-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AnIllustrationOfAColonyOnADistantPlanetWith75ddfb263025486e81f7B
     return (
         <Image
             alt="An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture."
-            src={source}
+            src="https://cdn.midjourney.com/75ddfb26-3025-486e-81f7-b1acb3edf7a7/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/885c443c-80a4-4b2d-80a2-4fbb6e4e5211/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_binary_code__885c443c-80a4-4b2d-80a2-4fbb6e4e5211-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperWithARepeatingPatternOfBinaryCode885c443c80a44b2d80a24
     return (
         <Image
             alt="A wallpaper with a repeating pattern of binary code, in a simple font and black and white color scheme."
-            src={source}
+            src="https://cdn.midjourney.com/885c443c-80a4-4b2d-80a2-4fbb6e4e5211/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

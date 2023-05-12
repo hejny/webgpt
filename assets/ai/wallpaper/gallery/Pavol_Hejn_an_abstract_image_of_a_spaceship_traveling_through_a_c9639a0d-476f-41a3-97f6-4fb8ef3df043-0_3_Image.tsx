@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/c9639a0d-476f-41a3-97f6-4fb8ef3df043/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_spaceship_traveling_through_a_c9639a0d-476f-41a3-97f6-4fb8ef3df043-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractImageOfASpaceshipTravelingThroughAC9639a0d476f41a397f6
     return (
         <Image
             alt="An abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns."
-            src={source}
+            src="https://cdn.midjourney.com/c9639a0d-476f-41a3-97f6-4fb8ef3df043/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

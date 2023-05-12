@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/350eeb50-d4c9-4568-aeea-44d88f450e7f/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__350eeb50-d4c9-4568-aeea-44d88f450e7f-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AinautsAndTheirAiCompanionsWorkingTogetherIn350eeb50D4c94568Aeea
     return (
         <Image
             alt="AInauts and their AI companions working together in a massive, zero-gravity space station."
-            src={source}
+            src="https://cdn.midjourney.com/350eeb50-d4c9-4568-aeea-44d88f450e7f/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/8950dbf7-64f7-49af-a540-b60ce02d8a21/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_8950dbf7-64f7-49af-a540-b60ce02d8a21-0_1.colors.json';
@@ -29,9 +29,10 @@ export function ADigitalPaintingOfASpaceshipExploringAnAster8950dbf764f749afA540
     return (
         <Image
             alt="A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge."
-            src={source}
+            src="https://cdn.midjourney.com/8950dbf7-64f7-49af-a540-b60ce02d8a21/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

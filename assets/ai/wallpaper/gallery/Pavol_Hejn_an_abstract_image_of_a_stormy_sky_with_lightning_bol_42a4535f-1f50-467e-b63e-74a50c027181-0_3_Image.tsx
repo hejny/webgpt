@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/42a4535f-1f50-467e-b63e-74a50c027181/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_42a4535f-1f50-467e-b63e-74a50c027181-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e7
     return (
         <Image
             alt="An abstract image of a stormy sky with lightning bolts for a weather or news website"
-            src={source}
+            src="https://cdn.midjourney.com/42a4535f-1f50-467e-b63e-74a50c027181/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

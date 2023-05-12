@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/52427f43-2b70-44c5-b073-9dd05bdc2b41/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_52427f43-2b70-44c5-b073-9dd05bdc2b41-0_1.colors.json';
@@ -29,9 +29,10 @@ export function ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739
     return (
         <Image
             alt="A serene mountain landscape with a clear blue lake for a meditation or wellness website"
-            src={source}
+            src="https://cdn.midjourney.com/52427f43-2b70-44c5-b073-9dd05bdc2b41/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

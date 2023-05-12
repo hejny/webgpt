@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/2c02231c-824c-4a75-a6eb-42bdd42069e3/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_painting_of_a_deep_sea_creature_with_tenta_2c02231c-824c-4a75-a6eb-42bdd42069e3-0_0.colors.json';
@@ -29,9 +29,10 @@ export function ADigitalPaintingOfADeepSeaCreatureWithTenta2c02231c824c4a75A6eb4
     return (
         <Image
             alt="A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration."
-            src={source}
+            src="https://cdn.midjourney.com/2c02231c-824c-4a75-a6eb-42bdd42069e3/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

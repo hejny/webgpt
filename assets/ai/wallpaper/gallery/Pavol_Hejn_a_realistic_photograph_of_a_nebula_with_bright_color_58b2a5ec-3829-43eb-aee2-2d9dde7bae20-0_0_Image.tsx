@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/58b2a5ec-3829-43eb-aee2-2d9dde7bae20/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_58b2a5ec-3829-43eb-aee2-2d9dde7bae20-0_0.colors.json';
@@ -29,9 +29,10 @@ export function ARealisticPhotographOfANebulaWithBrightColor58b2a5ec382943ebAee2
     return (
         <Image
             alt="A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe."
-            src={source}
+            src="https://cdn.midjourney.com/58b2a5ec-3829-43eb-aee2-2d9dde7bae20/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

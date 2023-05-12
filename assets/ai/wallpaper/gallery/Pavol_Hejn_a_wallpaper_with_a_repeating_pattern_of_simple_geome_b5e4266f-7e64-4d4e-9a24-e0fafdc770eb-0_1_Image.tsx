@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/b5e4266f-7e64-4d4e-9a24-e0fafdc770eb/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_b5e4266f-7e64-4d4e-9a24-e0fafdc770eb-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperWithARepeatingPatternOfSimpleGeomeB5e4266f7e644d4e9a24
     return (
         <Image
             alt="A wallpaper with a repeating pattern of simple geometric shapes, in a monochromatic color palette such as grey or blue."
-            src={source}
+            src="https://cdn.midjourney.com/b5e4266f-7e64-4d4e-9a24-e0fafdc770eb/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

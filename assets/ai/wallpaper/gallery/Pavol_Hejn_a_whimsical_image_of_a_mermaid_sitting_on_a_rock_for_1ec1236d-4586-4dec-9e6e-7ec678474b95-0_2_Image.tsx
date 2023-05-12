@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7e
     return (
         <Image
             alt="A whimsical image of a mermaid sitting on a rock for a fantasy or fiction website"
-            src={source}
+            src="https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

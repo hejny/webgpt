@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/bd32b2dc-8822-47a9-806c-2fc4cd0b8344/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_bd32b2dc-8822-47a9-806c-2fc4cd0b8344-0_0.colors.json';
@@ -29,9 +29,10 @@ export function APatternOfInterconnectedNodesAndLinesResembliBd32b2dc882247a9806
     return (
         <Image
             alt="A pattern of interconnected nodes and lines resembling a neural network"
-            src={source}
+            src="https://cdn.midjourney.com/bd32b2dc-8822-47a9-806c-2fc4cd0b8344/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

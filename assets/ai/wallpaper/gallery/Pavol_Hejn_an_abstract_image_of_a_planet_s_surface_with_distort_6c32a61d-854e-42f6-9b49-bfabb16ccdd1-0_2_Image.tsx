@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/6c32a61d-854e-42f6-9b49-bfabb16ccdd1/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49B
     return (
         <Image
             alt="An abstract image of a planet's surface, with distorted shapes and vivid colors that create a surreal and otherworldly feel."
-            src={source}
+            src="https://cdn.midjourney.com/6c32a61d-854e-42f6-9b49-bfabb16ccdd1/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

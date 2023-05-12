@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/cf1bdc71-a22f-4da7-aa90-51ef766cf24b/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_cf1bdc71-a22f-4da7-aa90-51ef766cf24b-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperFeaturingAMatrixOfFuturisticDataViCf1bdc71A22f4da7Aa90
     return (
         <Image
             alt="A wallpaper featuring a matrix of futuristic data visualizations and graphs"
-            src={source}
+            src="https://cdn.midjourney.com/cf1bdc71-a22f-4da7-aa90-51ef766cf24b/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

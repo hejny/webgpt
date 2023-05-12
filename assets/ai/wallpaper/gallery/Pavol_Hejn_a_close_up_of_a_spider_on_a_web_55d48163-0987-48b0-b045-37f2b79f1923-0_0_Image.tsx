@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/55d48163-0987-48b0-b045-37f2b79f1923/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_0.colors.json';
@@ -27,9 +27,10 @@ export function ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_0_Image
     return (
         <Image
             alt="A close-up of a spider on a web"
-            src={source}
+            src="https://cdn.midjourney.com/55d48163-0987-48b0-b045-37f2b79f1923/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

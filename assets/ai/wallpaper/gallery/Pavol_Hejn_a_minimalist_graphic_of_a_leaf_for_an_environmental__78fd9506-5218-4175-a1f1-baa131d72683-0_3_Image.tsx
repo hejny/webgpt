@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/78fd9506-5218-4175-a1f1-baa131d72683/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__78fd9506-5218-4175-a1f1-baa131d72683-0_3.colors.json';
@@ -29,9 +29,10 @@ export function AMinimalistGraphicOfALeafForAnEnvironmental78fd950652184175A1f1B
     return (
         <Image
             alt="A minimalist graphic of a leaf for an environmental or sustainable living website"
-            src={source}
+            src="https://cdn.midjourney.com/78fd9506-5218-4175-a1f1-baa131d72683/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/8f896829-6dd7-4ec0-b5e2-0be9e7bccbab/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_surrealist_inspired_wallpaper_with_floating_object_8f896829-6dd7-4ec0-b5e2-0be9e7bccbab-0_1.colors.json';
@@ -29,9 +29,10 @@ export function ASurrealistInspiredWallpaperWithFloatingObject8f8968296dd74ec0B5
     return (
         <Image
             alt="A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors."
-            src={source}
+            src="https://cdn.midjourney.com/8f896829-6dd7-4ec0-b5e2-0be9e7bccbab/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

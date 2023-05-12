@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/48628035-073a-4ba2-bf38-d3a6f4865319/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_48628035-073a-4ba2-bf38-d3a6f4865319-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperWithARepeatingPatternOfAbstractSha48628035073a4ba2Bf38
     return (
         <Image
             alt="A wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background."
-            src={source}
+            src="https://cdn.midjourney.com/48628035-073a-4ba2-bf38-d3a6f4865319/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

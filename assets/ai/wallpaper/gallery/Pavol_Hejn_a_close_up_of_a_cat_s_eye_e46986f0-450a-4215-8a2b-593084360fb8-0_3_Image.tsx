@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/e46986f0-450a-4215-8a2b-593084360fb8/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_3.colors.json';
@@ -27,9 +27,10 @@ export function ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_3_Image(prop
     return (
         <Image
             alt="A close-up of a cat’s eye"
-            src={source}
+            src="https://cdn.midjourney.com/e46986f0-450a-4215-8a2b-593084360fb8/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

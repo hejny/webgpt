@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/d45d06de-c541-4304-a82f-5cdae299e3a0/0_2.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_d45d06de-c541-4304-a82f-5cdae299e3a0-0_2.colors.json';
@@ -29,9 +29,10 @@ export function AnAbstractImageOfAStarFieldWithBrightColorsD45d06deC5414304A82f5
     return (
         <Image
             alt="An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos."
-            src={source}
+            src="https://cdn.midjourney.com/d45d06de-c541-4304-a82f-5cdae299e3a0/0_2.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

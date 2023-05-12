@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/ca14f331-0be5-4d38-a82f-ce99b7e1f535/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_colorful_fractal_pattern_wit_ca14f331-0be5-4d38-a82f-ce99b7e1f535-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperFeaturingAColorfulFractalPatternWitCa14f3310be54d38A82
     return (
         <Image
             alt="A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors."
-            src={source}
+            src="https://cdn.midjourney.com/ca14f331-0be5-4d38-a82f-ce99b7e1f535/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

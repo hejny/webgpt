@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/9bef1d06-bb03-4424-b9e1-0d88f404e0e6/0_3.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_9bef1d06-bb03-4424-b9e1-0d88f404e0e6-0_3.colors.json';
@@ -29,9 +29,10 @@ export function ADreamyWatercolorPaintingOfAFieldOfFlowersF9bef1d06Bb034424B9e10
     return (
         <Image
             alt="A dreamy watercolor painting of a field of flowers for a wedding or event planning website"
-            src={source}
+            src="https://cdn.midjourney.com/9bef1d06-bb03-4424-b9e1-0d88f404e0e6/0_3.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/f3923698-6a5a-41e6-ab15-095db6a35598/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_f3923698-6a5a-41e6-ab15-095db6a35598-0_0.colors.json';
@@ -27,9 +27,10 @@ export function ACloseUpOfABeeOnAFlowerF39236986a5a41e6Ab15095db6a355980_0_Image
     return (
         <Image
             alt="A close-up of a bee on a flower"
-            src={source}
+            src="https://cdn.midjourney.com/f3923698-6a5a-41e6-ab15-095db6a35598/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

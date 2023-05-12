@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/c268f290-a109-4d1b-ba4e-b27ccc52a525/0_1.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_digital_rendering_of_a_quant_c268f290-a109-4d1b-ba4e-b27ccc52a525-0_1.colors.json';
@@ -29,9 +29,10 @@ export function AWallpaperFeaturingADigitalRenderingOfAQuantC268f290A1094d1bBa4e
     return (
         <Image
             alt="A wallpaper featuring a digital rendering of a quantum computer, with a minimalist color scheme and geometric lines."
-            src={source}
+            src="https://cdn.midjourney.com/c268f290-a109-4d1b-ba4e-b27ccc52a525/0_1.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}

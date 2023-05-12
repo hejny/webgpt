@@ -6,9 +6,9 @@
  *      - And remove this warning
  *    Then the file will not be re-generated automatically
  */
-
-import source from 'https://cdn.midjourney.com/233fc1d3-c5b0-42b8-8fec-ffd700a7cbaf/0_0.png';
 import Image from 'next/image';
+import { Color } from '../../../../src/utils/color/Color';
+import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_workspace_with__233fc1d3-c5b0-42b8-8fec-ffd700a7cbaf-0_0.colors.json';
@@ -29,9 +29,10 @@ export function AMinimalistGraphicOfAFuturisticWorkspaceWith233fc1d3C5b042b88fec
     return (
         <Image
             alt="A minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme."
-            src={source}
+            src="https://cdn.midjourney.com/233fc1d3-c5b0-42b8-8fec-ffd700a7cbaf/0_0.png"
             draggable="false"
             placeholder="blur"
+            blurDataURL={Color.fromHex(colorStats.averageColor).then(colorToDataUrl).value}
             height={Math.round((width / 1920) * 1080)}
             style={{ objectFit: 'cover', width: '100%', height: '100%' }}
             {...{ width, quality }}
