@@ -23,6 +23,8 @@ if (process.cwd() !== join(__dirname, '../..')) {
 
 const program = new commander.Command();
 program.option('--commit', `Autocommit changes`);
+// TODO:> program.option('--random', ``);
+// TODO:> program.option('--reverse', ``);
 program.parse(process.argv);
 const { commit: isCommited } = program.opts();
 
@@ -90,9 +92,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
 
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
         const colorStats = computeImageColorStats(
-            await createImageInNode(
-                metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */],
-            ),
+            await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
         );
 
         await writeFile(

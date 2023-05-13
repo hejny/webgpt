@@ -8,7 +8,7 @@ import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import glob from 'glob-promise';
 import moment from 'moment';
-import { dirname, join, relative } from 'path';
+import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { IWallpaperMetadata, IWallpaperTexts } from '../../assets/ai/wallpaper/IWallpaperComponent';
@@ -18,71 +18,22 @@ import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
 import { isFileExisting } from '../utils/isFileExisting';
 
-if (process.cwd() !== join(__dirname, '../..')) {
-    console.error(chalk.red(`CWD must be root of the project`));
-    process.exit(1);
+// TODO: !! forEachWallpaper+forEachWallpaperInParallel Extract to common utils
+// TODO: !! forEachWallpaper+forEachWallpaperInParallel Use in every wallpaper script
+// TODO: !! forEachWallpaper+forEachWallpaperInParallel New wallpaper structure
+
+interface IWallpaperFiles {
+    metadataPath: string;
+    // TODO: colorStatsPath: string;
+    textsPath: string;
 }
 
-const program = new commander.Command();
-program.option('--commit', `Autocommit changes`);
-program.parse(process.argv);
-const { commit: isCommited } = program.opts();
+function getWallpapersDir() {
+    return join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
+}
 
-generateWallpapersTexts({ isCommited })
-    .catch((error) => {
-        console.error(chalk.bgRed(error.name));
-        console.error(error);
-        process.exit(1);
-    })
-    .then(() => {
-        process.exit(0);
-    });
-
-async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) {
-    console.info(`🧾  Generating wallpapers texts`);
-
-    if (isCommited && !(await isWorkingTreeClean(process.cwd()))) {
-        throw new Error(`Working tree is not clean`);
-    }
-
-    /**/
-    const importDynamic = new Function('modulePath', 'return import(modulePath)');
-    const { ChatGPTAPI, ChatGPTError } = await importDynamic('chatgpt');
-    const chatGptApi = new ChatGPTAPI({
-        apiKey: OPENAI_API_KEY!,
-        completionParams: {
-            temperature: 0.5,
-            top_p: 0.8,
-        },
-    });
-
-    let lastMessageId: string | undefined = undefined;
-    async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
-        try {
-            const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
-                parentMessageId: isContinuingConversation
-                    ? lastMessageId
-                    : undefined /* <- Note: [5] This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
-            });
-
-            lastMessageId = gptResponseForContent.id;
-            return gptResponseForContent.text;
-        } catch (error) {
-            if (!(error instanceof ChatGPTError)) {
-                throw error;
-            }
-
-            console.warn(`⚠️  ${(error as Error).message}`);
-            console.warn(`💤  Retrying in 1 minute`);
-
-            await forTime(1000 * 60);
-
-            return askGpt(message, isContinuingConversation);
-        }
-    }
-    /**/
-
-    const wallpapersDir = join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
+async function forEachWallpaper(callback: (wallpeperFiles: IWallpaperFiles) => Promise<void>): Promise<void> {
+    const wallpapersDir = getWallpapersDir();
     const wallpapersPaths = await glob(
         join(wallpapersDir, '*.png' /* <- TODO: !!! Use here metadata files */).split('\\').join('/'),
     );
@@ -126,8 +77,78 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         if (!(await isFileExisting(metadataPath))) {
             throw new Error(`Metadata file does not exist "${metadataPath}"`);
         }
+    }
+}
 
+// TODO: async function forEachWallpaperInParallel(callback:(wallpeperFiles: IWallpaperFiles)=>Promise<void>): Promise<void>{}
+
+if (process.cwd() !== join(__dirname, '../..')) {
+    console.error(chalk.red(`CWD must be root of the project`));
+    process.exit(1);
+}
+
+const program = new commander.Command();
+program.option('--commit', `Autocommit changes`);
+program.option('--parallel', `Run in multiple promises in parallel`);
+program.parse(process.argv);
+const { commit: isCommited, parallel: isParallel } = program.opts();
+
+generateWallpapersTexts({ isCommited, isParallel })
+    .catch((error) => {
+        console.error(chalk.bgRed(error.name));
+        console.error(error);
+        process.exit(1);
+    })
+    .then(() => {
+        process.exit(0);
+    });
+
+async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited: boolean; isParallel: boolean }) {
+    console.info(`🧾  Generating wallpapers texts`);
+
+    // TODO: Use isParallel
+
+    if (isCommited && !(await isWorkingTreeClean(process.cwd()))) {
+        throw new Error(`Working tree is not clean`);
+    }
+
+    const importDynamic = new Function('modulePath', 'return import(modulePath)');
+    const { ChatGPTAPI, ChatGPTError } = await importDynamic('chatgpt');
+    const chatGptApi = new ChatGPTAPI({
+        apiKey: OPENAI_API_KEY!,
+        completionParams: {
+            temperature: 0.5,
+            top_p: 0.8,
+        },
+    });
+
+    await forEachWallpaper(async ({ metadataPath, textsPath }) => {
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
+
+        let lastMessageId: string | undefined = undefined;
+        async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
+            try {
+                const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
+                    parentMessageId: isContinuingConversation
+                        ? lastMessageId
+                        : undefined /* <- Note: [5] This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
+                });
+
+                lastMessageId = gptResponseForContent.id;
+                return gptResponseForContent.text;
+            } catch (error) {
+                if (!(error instanceof ChatGPTError)) {
+                    throw error;
+                }
+
+                console.warn(`⚠️  ${(error as Error).message}`);
+                console.warn(`💤  Retrying in 1 minute`);
+
+                await forTime(1000 * 60);
+
+                return askGpt(message, isContinuingConversation);
+            }
+        }
 
         const texts = { title: '', content: '' } satisfies IWallpaperTexts;
 
@@ -135,13 +156,13 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
         const title = spaceTrim(
             (block) => `
 
-            Write me short (max 3 words) title for website with main wallpaper that is:
+                Write me short (max 3 words) title for website with main wallpaper that is:
 
-            "${block(metadata.prompt)}"
+                "${block(metadata.prompt)}"
 
-            The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.
-        
-        `,
+                The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.
+            
+            `,
         );
         texts.title = await askGpt(title, false);
         /**/
@@ -165,10 +186,10 @@ async function generateWallpapersTexts({ isCommited }: { isCommited: boolean }) 
 
         await writeFile(textsPath, JSON.stringify({ ...texts, prompts: { title, content } }, null, 4) + '\n', 'utf8');
         console.info(`💾 ${relative(process.cwd(), textsPath).split('\\').join('/')}`);
-    }
+    });
 
     if (isCommited) {
-        await commit(dirname(wallpapersDir), `🧾 Generate wallpapers texts`);
+        await commit(getWallpapersDir(), `🧾 Generate wallpapers texts`);
     }
 
     console.info(`[ Done 🧾  Generating wallpapers texts ]`);
