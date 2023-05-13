@@ -34,7 +34,12 @@ function getWallpapersDir() {
     return join(process.cwd(), 'assets', 'ai', 'wallpaper', 'gallery');
 }
 
-async function forEachWallpaper(callback: (wallpeperFiles: IWallpaperFiles) => Promise<void>): Promise<void> {
+async function forEachWallpaper(options: {
+    makeWork(wallpeperFiles: IWallpaperFiles): Promise<void>;
+    parallel: number;
+}): Promise<void> {
+    const { makeWork, parallel } = options;
+
     const wallpapersDir = getWallpapersDir();
     const wallpapersPaths = await glob(
         join(wallpapersDir, '*.png' /* <- TODO: !!! Use here metadata files */).split('\\').join('/'),
@@ -46,11 +51,15 @@ async function forEachWallpaper(callback: (wallpeperFiles: IWallpaperFiles) => P
         lastTime: moment(),
         startTime: moment(),
     };
+
+    const workingOn = new Set<Promise<void>>();
+
     for (const wallpaperPath of wallpapersPaths) {
         // Note: We can not make this parallel because of [5]
         await forPlay();
 
-        // TODO: [🥼] Make just one util for stats
+        // [🥼] This is the place
+        // TODO: Make stats to be working with parallel
         stats.done++;
         const statsTotalString = `${stats.done}/${stats.total}`;
         const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
@@ -63,19 +72,26 @@ async function forEachWallpaper(callback: (wallpeperFiles: IWallpaperFiles) => P
         const estimatedTime = durationOfOne * (stats.total - stats.done);
         const statsTimeEstimateString =
             estimatedTime === Infinity ? '' : `${moment.duration(estimatedTime).humanize()} left`;
-
         const statsString = `${statsPercentString} ${statsTotalString} ${statsSpeedString} ${statsTimeEstimateString}`;
 
-        console.info(chalk.bgGray(statsString) + ' ' + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
+        console.info(chalk.bgGray(statsString) + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
         const contentPath = wallpaperPath.replace(/\.png$/, '.content.md');
 
         if (!(await isFileExisting(metadataPath))) {
+            // TODO: !! Do not crash for all processes JUST report at the end
             throw new Error(`Metadata file does not exist "${metadataPath}"`);
         }
 
-        await callback({ metadataPath, contentPath });
+        const work = /* not await */ makeWork({ metadataPath, contentPath });
+        workingOn.add(work);
+        work.catch(() => void 0).then(() => void workingOn.delete(work));
+
+        if (workingOn.size >= parallel) {
+            console.info(chalk.bgGray(`Waiting for ${workingOn.size} wallpapers to finish`));
+            await Promise.all(workingOn);
+        }
     }
 }
 
@@ -87,13 +103,13 @@ if (process.cwd() !== join(__dirname, '../..')) {
 }
 
 const program = new commander.Command();
-program.option('--commit', `Autocommit changes`);
-program.option('--parallel', `Run in multiple promises in parallel`);
+program.option('--commit', `Autocommit changes`, false);
+program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
-const { commit: isCommited, parallel: isParallel } = program.opts();
+const { commit: isCommited, parallel } = program.opts();
 
 // TODO: !! Rename to generateWallpapersContent
-generateWallpapersTexts({ isCommited, isParallel })
+generateWallpapersTexts({ isCommited, parallel: parseInt(parallel) })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -103,7 +119,7 @@ generateWallpapersTexts({ isCommited, isParallel })
         process.exit(0);
     });
 
-async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited: boolean; isParallel: boolean }) {
+async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
     console.info(`🧾  Generating wallpapers texts`);
 
     // TODO: Use isParallel
@@ -122,45 +138,47 @@ async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited:
         },
     });
 
-    await forEachWallpaper(async ({ metadataPath, contentPath }) => {
-        if (await isFileExisting(contentPath)) {
-            console.info(`⏩ Content file does already exists`);
-            return;
-        }
-
-        // TODO: !! Maybe parse + pass metadata in IWallpaperFiles
-        const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
-
-        let lastMessageId: string | undefined = undefined;
-        async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
-            try {
-                const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
-                    parentMessageId: isContinuingConversation
-                        ? lastMessageId
-                        : undefined /* <- Note: [5] This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
-                });
-
-                lastMessageId = gptResponseForContent.id;
-                return gptResponseForContent.text;
-            } catch (error) {
-                if (!(error instanceof ChatGPTError)) {
-                    throw error;
-                }
-
-                console.warn(`⚠️  ${(error as Error).message}`);
-                console.warn(`💤  Retrying in 1 minute`);
-
-                await forTime(1000 * 60);
-
-                return askGpt(message, isContinuingConversation);
+    await forEachWallpaper({
+        parallel,
+        async makeWork({ metadataPath, contentPath }) {
+            if (await isFileExisting(contentPath)) {
+                console.info(`⏩ Content file does already exists`);
+                return;
             }
-        }
 
-        // const texts = { title: '', content: '' } satisfies IWallpaperTexts;
+            // TODO: !! Maybe parse + pass metadata in IWallpaperFiles
+            const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
 
-        /**/
-        const contentPrompt = spaceTrim(
-            (block) => `
+            let lastMessageId: string | undefined = undefined;
+            async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
+                try {
+                    const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
+                        parentMessageId: isContinuingConversation
+                            ? lastMessageId
+                            : undefined /* <- Note: [5] This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
+                    });
+
+                    lastMessageId = gptResponseForContent.id;
+                    return gptResponseForContent.text;
+                } catch (error) {
+                    if (!(error instanceof ChatGPTError)) {
+                        throw error;
+                    }
+
+                    console.warn(`⚠️  ${(error as Error).message}`);
+                    console.warn(`💤  Retrying in 1 minute`);
+
+                    await forTime(1000 * 60);
+
+                    return askGpt(message, isContinuingConversation);
+                }
+            }
+
+            // const texts = { title: '', content: '' } satisfies IWallpaperTexts;
+
+            /**/
+            const contentPrompt = spaceTrim(
+                (block) => `
 
                 Write me content for website with wallpaper which alt text is:
 
@@ -178,25 +196,25 @@ async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited:
                 - Links should be only #hash anchors (and you can refer to the document itself)
                 - Do not include images
             `,
-        );
-        const content = await askGpt(contentPrompt, false);
-        /**/
+            );
+            const content = await askGpt(contentPrompt, false);
+            /**/
 
-        /**/
-        const fontPrompt = spaceTrim(
-            (block) => `
+            /**/
+            const fontPrompt = spaceTrim(
+                (block) => `
 
                 Write me a Google font which is best fitting for the website. Write just the font name nothing else.
             
             `,
-        );
-        const font = await askGpt(fontPrompt, true);
-        /**/
+            );
+            const font = await askGpt(fontPrompt, true);
+            /**/
 
-        await writeFile(
-            contentPath,
-            spaceTrim(
-                (block) => `
+            await writeFile(
+                contentPath,
+                spaceTrim(
+                    (block) => `
 
                     <!--
                     ${block(contentPrompt)}
@@ -207,10 +225,11 @@ async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited:
                     ${block(content)}
       
                 `,
-            ) + '\n',
-            'utf8',
-        );
-        console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
+                ) + '\n',
+                'utf8',
+            );
+            console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
+        },
     });
 
     if (isCommited) {
