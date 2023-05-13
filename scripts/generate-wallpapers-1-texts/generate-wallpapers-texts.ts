@@ -17,6 +17,7 @@ import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forPlay } from '../utils/forPlay';
 import { isFileExisting } from '../utils/isFileExisting';
+import { randomItem } from '../utils/randomItem';
 
 // TODO: !! forEachWallpaper+forEachWallpaperInParallel Extract to common utils
 // TODO: !! forEachWallpaper+forEachWallpaperInParallel Use in every wallpaper script
@@ -177,39 +178,14 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
             // const texts = { title: '', content: '' } satisfies IWallpaperTexts;
 
             /**/
-            const contentPrompt = spaceTrim(
-                (block) => `
-
-                Write me content for website with wallpaper which alt text is:
-
-                "${block(metadata.prompt)}"
-                
-                The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
-                
-                - Use markdown format 
-                - Start with the heading
-                - The content should look like a real website 
-                - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-                - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-                - You can use formatting like bold or _italic_
-                - You can include UTF-8 emojis
-                - Links should be only #hash anchors (and you can refer to the document itself)
-                - Do not include images
-            `,
-            );
+            const contentPrompt = spaceTrim(randomPromptTemplate().replace('🟦', metadata.prompt));
             const content = await askGpt(contentPrompt, false);
             /**/
 
-            /**/
-            const fontPrompt = spaceTrim(
-                (block) => `
-
-                Write me a Google font which is best fitting for the website. Write just the font name nothing else.
-            
-            `,
+            const font = await askGpt(
+                'Write me a Google font which is best fitting for the website. Write just the font name nothing else.',
+                true,
             );
-            const font = await askGpt(fontPrompt, true);
-            /**/
 
             await writeFile(
                 contentPath,
@@ -237,6 +213,51 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
     }
 
     console.info(`[ Done 🧾  Generating wallpapers texts ]`);
+}
+
+function randomPromptTemplate() {
+    return randomItem(
+        `
+            Write me markdown content of website with wallpaper:
+
+            "🟦"
+
+            The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+            - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
+            - You can use formatting like bold or _italic_
+            - You can include UTF-8 emojis
+            - Links should be only #hash anchors (and you can refer to the document itself)
+            - Do not include images
+        `,
+        `
+            Write me content for website with wallpaper which alt text is:
+
+            "🟦"
+
+            The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+
+            - Use markdown format 
+            - Start with the heading
+            - The content should look like a real website 
+            - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
+            - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
+            - You can use formatting like bold or _italic_
+            - You can include UTF-8 emojis
+            - Links should be only #hash anchors (and you can refer to the document itself)
+            - Do not include images
+        `,
+        `
+            Write me markdown content of website with wallpaper:
+
+            "🟦"
+
+            The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+        `,
+        `
+            Write me content for website with wallpaper "🟦"
+        `,
+    );
 }
 
 /**
