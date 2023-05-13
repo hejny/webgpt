@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -28,9 +28,9 @@ Our wallpaper is more than just a pretty picture. It's a way to infuse your digi
 
 Here are just a few reasons why you should choose our wallpaper:
 
-- High-quality image: Our wallpaper features a high-resolution image that looks great on any screen size.
-- Easy installation: With just a few clicks, you can download and install our wallpaper on your device.
-- Free: Our wallpaper is completely free to download and use.
+-   High-quality image: Our wallpaper features a high-resolution image that looks great on any screen size.
+-   Easy installation: With just a few clicks, you can download and install our wallpaper on your device.
+-   Free: Our wallpaper is completely free to download and use.
 
 ## User Stories
 
@@ -54,8 +54,8 @@ Getting our ocean sunset wallpaper on your device is easy. Here's how to do it:
 
 Looking for more information about the benefits of nature on mental health? Check out these resources:
 
-- [The Nature Fix: Why Nature Makes Us Happier, Healthier, and More Creative](#)
-- [The Benefits of Being in Nature](#)
+-   [The Nature Fix: Why Nature Makes Us Happier, Healthier, and More Creative](#)
+-   [The Benefits of Being in Nature](#)
 
 ## Contact Us
 
