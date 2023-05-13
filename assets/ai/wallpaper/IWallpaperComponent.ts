@@ -19,7 +19,7 @@ export interface IWallpaperComponent {
 
 export type IWallpaperMetadata = IMidjourneyJob;
 export type IWallpaperColorStats = IImageColorStats;
-export interface IWallpaperTexts {
+export interface IWallpaperTexts /* !!! Remove */ {
     title: string /*_markdown*/;
     content: string /*_markdown*/;
 }

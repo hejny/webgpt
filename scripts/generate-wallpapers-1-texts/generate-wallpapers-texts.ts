@@ -11,7 +11,7 @@ import moment from 'moment';
 import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
-import { IWallpaperMetadata, IWallpaperTexts } from '../../assets/ai/wallpaper/IWallpaperComponent';
+import { IWallpaperMetadata } from '../../assets/ai/wallpaper/IWallpaperComponent';
 import { OPENAI_API_KEY } from '../../config';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
@@ -23,9 +23,11 @@ import { isFileExisting } from '../utils/isFileExisting';
 // TODO: !! forEachWallpaper+forEachWallpaperInParallel New wallpaper structure
 
 interface IWallpaperFiles {
+    // !!! metadataFilePath, contentFilePath,...
+
     metadataPath: string;
     // TODO: colorStatsPath: string;
-    textsPath: string;
+    contentPath: string;
 }
 
 function getWallpapersDir() {
@@ -67,16 +69,13 @@ async function forEachWallpaper(callback: (wallpeperFiles: IWallpaperFiles) => P
         console.info(chalk.bgGray(statsString) + ' ' + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
-        const textsPath = wallpaperPath.replace(/\.png$/, '.texts.json');
-
-        if (await isFileExisting(textsPath)) {
-            console.info(`⏩ Texts file does already exists`);
-            continue;
-        }
+        const contentPath = wallpaperPath.replace(/\.png$/, '.content.md');
 
         if (!(await isFileExisting(metadataPath))) {
             throw new Error(`Metadata file does not exist "${metadataPath}"`);
         }
+
+        await callback({ metadataPath, contentPath });
     }
 }
 
@@ -93,6 +92,7 @@ program.option('--parallel', `Run in multiple promises in parallel`);
 program.parse(process.argv);
 const { commit: isCommited, parallel: isParallel } = program.opts();
 
+// TODO: !! Rename to generateWallpapersContent
 generateWallpapersTexts({ isCommited, isParallel })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
@@ -122,7 +122,13 @@ async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited:
         },
     });
 
-    await forEachWallpaper(async ({ metadataPath, textsPath }) => {
+    await forEachWallpaper(async ({ metadataPath, contentPath }) => {
+        if (await isFileExisting(contentPath)) {
+            console.info(`⏩ Content file does already exists`);
+            return;
+        }
+
+        // TODO: !! Maybe parse + pass metadata in IWallpaperFiles
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
 
         let lastMessageId: string | undefined = undefined;
@@ -150,42 +156,61 @@ async function generateWallpapersTexts({ isCommited, isParallel }: { isCommited:
             }
         }
 
-        const texts = { title: '', content: '' } satisfies IWallpaperTexts;
+        // const texts = { title: '', content: '' } satisfies IWallpaperTexts;
 
         /**/
-        const title = spaceTrim(
+        const contentPrompt = spaceTrim(
             (block) => `
 
-                Write me short (max 3 words) title for website with main wallpaper that is:
+                Write me content for website with wallpaper which alt text is:
 
                 "${block(metadata.prompt)}"
+                
+                The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+                
+                - Use markdown format 
+                - Start with the heading
+                - The content should look like a real website 
+                - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
+                - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
+                - You can use formatting like bold or _italic_
+                - You can include UTF-8 emojis
+                - Links should be only #hash anchors (and you can refer to the document itself)
+                - Do not include images
+            `,
+        );
+        const content = await askGpt(contentPrompt, false);
+        /**/
 
-                The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.
+        /**/
+        const fontPrompt = spaceTrim(
+            (block) => `
+
+                Write me a Google font which is best fitting for the website. Write just the font name nothing else.
             
             `,
         );
-        texts.title = await askGpt(title, false);
+        const font = await askGpt(fontPrompt, true);
         /**/
 
-        /**/
-        const content = spaceTrim(`
+        await writeFile(
+            contentPath,
+            spaceTrim(
+                (block) => `
 
-            Write me some content for this website in markdown format.
-            The content should be a short description of the website which is using this wallpaper.
+                    <!--
+                    ${block(contentPrompt)}
+                    -->
 
-            - You can include UTF-8 emojis
-            - You can use formatting like **bold** or _italic_
-            - Do not describe the wallpaper itself, but rather the website which is using it.
-            - Do not start with any title - title will be included automatically
-            - Do not include links
-            - Do not include images
-        
-        `);
-        texts.content = await askGpt(content, true);
-        /**/
+                    <!--font:${font}-->
 
-        await writeFile(textsPath, JSON.stringify({ ...texts, prompts: { title, content } }, null, 4) + '\n', 'utf8');
-        console.info(`💾 ${relative(process.cwd(), textsPath).split('\\').join('/')}`);
+                    ${block(content)}
+      
+                `,
+            ) + '\n',
+            'utf8',
+        );
+        console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
     });
 
     if (isCommited) {
