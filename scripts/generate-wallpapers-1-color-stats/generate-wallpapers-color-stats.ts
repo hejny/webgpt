@@ -6,7 +6,7 @@ import { readFile, writeFile } from 'fs/promises';
 import glob from 'glob-promise';
 import moment from 'moment';
 import { dirname, join, relative } from 'path';
-import { IWallpaperMetadata } from '../../assets/ai/wallpaper/IWallpaperComponent';
+import { IWallpaperMetadata } from '../../assets/ai/wallpaper/IWallpaper';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { computeImageColorStats } from '../../src/utils/image/utils/0-computeImageColorStats';
 import { TakeChain } from '../../src/utils/take/classes/TakeChain';

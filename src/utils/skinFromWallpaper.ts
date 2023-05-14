@@ -1,4 +1,4 @@
-import { IWallpaperComponent } from '../../assets/ai/wallpaper/IWallpaperComponent';
+import { IWallpaper } from '../../assets/ai/wallpaper/IWallpaper';
 import { Color } from './color/Color';
 import { darken } from './color/operators/darken';
 import { furthest } from './color/operators/furthest';
@@ -22,8 +22,8 @@ export interface ISkin {
 /**
  * @@@
  */
-export function skinFromWallpaper(Wallpaper: IWallpaperComponent): ISkin {
-    const { colorStats } = Wallpaper;
+export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
+    const { colorStats } = wallpaper;
 
     const highlightedTextColor = colorStats.mostFrequentColor.then(furthest(Color.get('black'), Color.get('white')));
     const normalTextColor = highlightedTextColor.then(mix(0.2, colorStats.mostFrequentColor));

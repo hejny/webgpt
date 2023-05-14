@@ -13,17 +13,17 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { skinFromWallpaper } from '../../utils/skinFromWallpaper';
 
 export default function ShowcasePage({ lang }: any) {
-    const Wallpaper = useWallpaper();
+    const wallpaper = useWallpaper();
 
     return (
         <>
             <AppHead />
-            <SkinStyle skin={skinFromWallpaper(Wallpaper)} />
+            <SkinStyle skin={skinFromWallpaper(wallpaper)} />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
-                    <HeaderWallpaper {...{ Wallpaper }} />
+                    <HeaderWallpaper {...{ wallpaper }} />
                 </header>
                 <div className={styles.background}>
                     <TiledBackground />

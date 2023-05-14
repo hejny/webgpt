@@ -1,15 +1,15 @@
 import { IImageColorStats } from '../../../src/utils/image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
 
-export interface IWallpaperComponentProps {
+export interface IWallpaperProps {
     width: number;
     quality: number;
 }
 
-export interface IWallpaperComponent {
-    (props: IWallpaperComponentProps): JSX.Element;
-    src: URL;
-    metadata: IWallpaperMetadata /* <- TODO: This should be renamed to IWallpaperPrompt */;
+export interface IWallpaper {
+    id: string /*_wallpaper_id*/;
+    src: string /*_url*/ /* <- Note: Not using URL objects because of serialization */;
+    prompt: string;
     colorStats: IWallpaperColorStats;
     // TODO: shapeStats> IWallpaperShapeStats;
 
@@ -17,7 +17,7 @@ export interface IWallpaperComponent {
     // TODO: isTile + some mechanism to add additional metadata
 }
 
-export type IWallpaperMetadata = IMidjourneyJob;
+export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
 export type IWallpaperColorStats = IImageColorStats;
 
 /**

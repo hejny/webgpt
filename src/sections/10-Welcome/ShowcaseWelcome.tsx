@@ -9,16 +9,16 @@ import styles from './Welcome.module.css';
  * @@@
  */
 export function ShowcaseWelcomeSection() {
-    const Wallpaper = useWallpaper();
+    const wallpaper = useWallpaper();
     const skin = useSkin();
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
             <h1 className={styles.handritten}>
-                <HandwrittenText color={skin.highlightedTextColor}>{Wallpaper.texts.title}</HandwrittenText>
+                <HandwrittenText color={skin.highlightedTextColor}>{/*wallpaper.title*/ '!!!'}</HandwrittenText>
             </h1>
 
-            <Article content={Wallpaper.texts.content} isEnhanced />
+            <Article content={wallpaper.content} isEnhanced />
         </Section>
     );
 }

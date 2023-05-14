@@ -1,5 +1,6 @@
 import { Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Vector } from 'xyzt';
 import { generated_wallpapers } from '../../assets/ai/wallpaper';
@@ -15,23 +16,24 @@ import { AppHead } from '../sections/00-AppHead/AppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
+import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
 import { useWallpaper } from '../utils/hooks/useWallpaper';
 import { skinFromWallpaper } from '../utils/skinFromWallpaper';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export default function GalleryPage() {
-    const Wallpaper = useWallpaper();
+    const wallpaper = useWallpaper();
 
     return (
         <>
             <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
-            <SkinStyle skin={skinFromWallpaper(Wallpaper)} />
+            <SkinStyle skin={skinFromWallpaper(wallpaper)} />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
-                    <HeaderWallpaper {...{ Wallpaper }} />
+                    <HeaderWallpaper {...{ wallpaper }} />
                 </header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
@@ -50,20 +52,30 @@ export default function GalleryPage() {
                                 // Random sort
                                 .sort(() => Math.random() - 0.5)
                                 .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
-                                .map((Wallpaper, i) => (
+                                .map((wallpaper, i) => (
                                     // TODO: <MidjourneyImage/>
                                     // TODO: Show diffusion as animation
                                     <Link
-                                        href={`/showcase/${Wallpaper.metadata.id}`}
+                                        href={`/showcase/${wallpaper.id}`}
                                         key={i /* <- TODO: Better, can we use just id */}
                                         // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
                                     >
                                         <Item>
                                             <Item.Image>
-                                                <Wallpaper quality={55} width={1920 / 2} />
+                                                <Image
+                                                    src={wallpaper.src}
+                                                    alt={wallpaper.prompt}
+                                                    draggable="false"
+                                                    placeholder="blur"
+                                                    blurDataURL={colorToDataUrl(wallpaper.colorStats.averageColor)}
+                                                    quality={55}
+                                                    width={Math.round(1920 / 2)}
+                                                    height={Math.round(1080 / 2)}
+                                                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                                                />
                                             </Item.Image>
                                             <Item.Description>
-                                                <ImagineTag>{Wallpaper.metadata.full_command}</ImagineTag>
+                                                <ImagineTag>{wallpaper.prompt}</ImagineTag>
 
                                                 {/*
                                                     TODO: !! Put in downloads link to MidJourney>

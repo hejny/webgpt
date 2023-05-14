@@ -24,12 +24,12 @@ export function AppHead(props: AppHeadProps) {
 
     // TODO: !!! Populate ONLY from Wallpaper
 
-    const Wallpaper =
+    const wallpaper =
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
     const skin = useSkin();
 
-    const title = Wallpaper.texts.title;
-    const description = removeMarkdownFormatting(removeMarkdownLinks(Wallpaper.texts.content));
+    const title = '!!!';
+    const description = removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content));
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
@@ -41,10 +41,10 @@ export function AppHead(props: AppHeadProps) {
                 <meta name="viewport" content="width=device-width" />
 
                 {/* Primary meta tags */}
-                <title>{Wallpaper.texts.title}</title>
+                <title>{wallpaper.texts.title}</title>
                 <meta
                     name="description"
-                    content={removeMarkdownFormatting(removeMarkdownLinks(Wallpaper.texts.content))}
+                    content={removeMarkdownFormatting(removeMarkdownLinks(wallpaper.texts.content))}
                 />
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
                 <meta
@@ -58,7 +58,7 @@ export function AppHead(props: AppHeadProps) {
                 <meta property="og:description" content={description} />
                 <meta
                     property="og:image"
-                    content={Wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                    content={wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
                 />
                 <meta property="og:url" content={homeUrl} />
                 <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
@@ -74,7 +74,7 @@ export function AppHead(props: AppHeadProps) {
                 <meta property="twitter:description" content={description} />
                 <meta
                     property="twitter:image"
-                    content={Wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                    content={wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
                 />
             </Head>
             <LanguagePicker />
