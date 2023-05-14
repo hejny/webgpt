@@ -19,11 +19,9 @@ export function ShowcaseWelcomeSection() {
             </h1>
             */}
 
-            <Article content={wallpaper.content} />
+            <div style={{ fontFamily: `'${wallpaper.font}', sans-serif` }}>
+                <Article content={wallpaper.content} />
+            </div>
         </Section>
     );
 }
-
-/**
- * TODO: !!!! Use the font here
- */

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Open Sans');
+@import url('https://fonts.googleapis.com/css2?family=Lobster');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Inter');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script');
+
+/* TODO: Do not hardcode fonts - load dynamically only the used one in some smarter way (Maybe use recommended Next import) */

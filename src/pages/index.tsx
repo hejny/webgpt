@@ -17,7 +17,7 @@ import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
 import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
-import { useWallpaper, WallpapersContext } from '../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../utils/hooks/useWallpaper';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
@@ -26,7 +26,6 @@ export interface PageProps {
 }
 
 export default function GalleryPage({ wallpapers }: PageProps) {
-
     return (
         <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
             <AppHead /*subtitle="Gallery" /* <- TODO: !! Translate */ />
@@ -52,7 +51,7 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                             {wallpapers
                                 // Random sort
                                 .sort(() => Math.random() - 0.5)
-                                .slice(0, 50) /* <- TODO: !!!! Some inteligent pagination */
+                                // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
                                 .map((wallpaper, i) => (
                                     // TODO: <MidjourneyImage/>
                                     // TODO: Show diffusion as animation
@@ -114,7 +113,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
- * TODO: !!!! Filters
+ * TODO: !!! Filters
  * TODO: !! Preview page on hover on each item
  * TODO: !! i18n + make section
  * TODO: [🪒] Can be getStaticProps shared between all pages?
