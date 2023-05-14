@@ -123,6 +123,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
 
         wallpapers.push({ entityName: componentName, entityPath: wallpaperFilePath });
 
+        // TODO: !!! Do not create component BUT just the implement IWallpaper interface
         const wallpaperFileContent = await Promise.resolve(
             `
 
