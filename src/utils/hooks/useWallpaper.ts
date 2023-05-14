@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router';
 import { createContext, useContext } from 'react';
 import { hydrateWallpaper } from '../../../assets/ai/wallpaper/hydrateWallpaper';
-// import { ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image } from '../../../assets/ai/wallpaper/gallery/Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__6cd3eee4-47af-4316-b49e-3e9982df2b24-0_2_Image';
 import { IWallpaper } from '../../../assets/ai/wallpaper/IWallpaper';
+import { DEFAULT_WALLPAPER_ID } from '../../../config';
 
 export const WallpapersContext = createContext<Array<IWallpaper>>([]);
+
 
 /**
  * A function that returns a wallpaper component based on the router query ⁘
@@ -16,7 +17,7 @@ export function useWallpaper(): IWallpaper {
     const router = useRouter();
 
     const defaultWallpaper = hydrateWallpaper(
-        wallpapers.find(({ id }) => id === '7e9b434d-59bc-4d69-a486-d7401d94f5e0'),
+        wallpapers.find(({ id }) => id === DEFAULT_WALLPAPER_ID),
     );
 
     if (wallpapers.length === 0) {

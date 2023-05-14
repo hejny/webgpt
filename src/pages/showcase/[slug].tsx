@@ -2,6 +2,7 @@ import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
 import { PageProps } from '..';
+import { DEFAULT_WALLPAPER_ID } from '../../../config';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
@@ -46,11 +47,23 @@ export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
     };
 };
 
-export async function getStaticProps({ locale }: { locale: string }) {
+export async function getStaticProps({
+    locale,
+    params,
+}: {
+    locale: string;
+    params: any /* <- TODO: !! Type propperly + NOT manually */;
+}) {
+    const { slug } = params;
+
+    const relevantWallpapers = (await getWallpapers(/* <- TODO: !!! Put here ONLY the listed wallpaper */)).filter(
+        ({ id }) => id === slug || id === DEFAULT_WALLPAPER_ID,
+    );
+
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: await getWallpapers(/* <- TODO: !!! Put here ONLY the listed wallpaper */),
+            wallpapers: relevantWallpapers,
         },
     };
 }
