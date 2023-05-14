@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Creepster"-->
+<!--font:Creepster-->
 
 # Dark Forest Wallpaper for Horror and Mystery Websites
 
@@ -30,17 +30,17 @@ We are a team of horror and mystery enthusiasts who understand the importance of
 
 Our wallpaper has been used by a variety of horror and mystery websites, including:
 
-- A horror author's personal website, where the wallpaper perfectly complements the author's dark and twisted stories.
-- A mystery podcast's website, where the wallpaper sets the mood for each episode's suspenseful storytelling.
-- A horror movie review website, where the wallpaper adds to the overall creepy vibe of the site.
+-   A horror author's personal website, where the wallpaper perfectly complements the author's dark and twisted stories.
+-   A mystery podcast's website, where the wallpaper sets the mood for each episode's suspenseful storytelling.
+-   A horror movie review website, where the wallpaper adds to the overall creepy vibe of the site.
 
 ## References
 
 Here are some references to help you make the most of our dark forest wallpaper:
 
-- [How to Write a Spooky Story](#)
-- [10 Best Horror Movies of All Time](#)
-- [Creating Suspense in Your Writing](#)
+-   [How to Write a Spooky Story](#)
+-   [10 Best Horror Movies of All Time](#)
+-   [Creating Suspense in Your Writing](#)
 
 ## Contact Us
 

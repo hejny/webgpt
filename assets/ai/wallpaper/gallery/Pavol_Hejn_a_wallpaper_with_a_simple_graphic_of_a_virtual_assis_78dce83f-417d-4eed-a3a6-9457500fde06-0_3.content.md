@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a virtual assistant or chatbot, with space for messages and alerts, set against a gradient background."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper that showcases a simple graphic of a virtual assistant or chatbot. This wallpaper is perfect for those who love technology and want to add a touch of modernity to their desktop or mobile device.
 

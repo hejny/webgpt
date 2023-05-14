@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme."
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Welcome to our website featuring a minimalist graphic of a futuristic workspace! This wallpaper is perfect for those who appreciate sleek lines and modern design.
 

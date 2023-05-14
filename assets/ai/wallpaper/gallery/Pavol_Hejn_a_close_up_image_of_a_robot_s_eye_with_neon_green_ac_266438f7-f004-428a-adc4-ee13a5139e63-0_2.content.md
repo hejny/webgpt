@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Neon Robotics: Bringing the Future to Life
 
-Welcome to Neon Robotics, your one-stop-shop for all things futuristic and cutting-edge. Our website is designed to inspire and inform those who are passionate about the latest advances in technology. 
+Welcome to Neon Robotics, your one-stop-shop for all things futuristic and cutting-edge. Our website is designed to inspire and inform those who are passionate about the latest advances in technology.
 
 ## About Us
 
@@ -46,9 +46,9 @@ As you navigate through our website, you'll notice a striking wallpaper featurin
 
 If you're interested in learning more about the world of robotics, we've compiled a list of resources that we think you'll find useful:
 
-- [Robotics Business Review](#)
-- [IEEE Robotics and Automation Society](#)
-- [Robotics Trends](#)
+-   [Robotics Business Review](#)
+-   [IEEE Robotics and Automation Society](#)
+-   [Robotics Trends](#)
 
 ## Contact Us
 

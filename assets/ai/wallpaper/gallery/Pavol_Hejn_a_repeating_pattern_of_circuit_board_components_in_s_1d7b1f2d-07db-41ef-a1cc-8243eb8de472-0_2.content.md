@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Circuit Board Wallpaper for Tech Enthusiasts
 
@@ -28,9 +28,9 @@ Our wallpaper features a repeating pattern of circuit board components, in shade
 
 ## User Stories
 
-- "I'm a software engineer and I wanted to add some personality to my home office. This wallpaper was the perfect choice - it's subtle enough to not be distracting but still showcases my love for technology."
-- "My son is really into computers and gaming, so I wanted to surprise him with a new wallpaper for his room. He absolutely loves it and says it makes him feel like he's inside a computer!"
-- "I run a tech startup and we recently moved into a new office space. We wanted to create a space that was both functional and visually appealing, and this wallpaper helped us achieve that goal."
+-   "I'm a software engineer and I wanted to add some personality to my home office. This wallpaper was the perfect choice - it's subtle enough to not be distracting but still showcases my love for technology."
+-   "My son is really into computers and gaming, so I wanted to surprise him with a new wallpaper for his room. He absolutely loves it and says it makes him feel like he's inside a computer!"
+-   "I run a tech startup and we recently moved into a new office space. We wanted to create a space that was both functional and visually appealing, and this wallpaper helped us achieve that goal."
 
 ## Installation Tips
 
@@ -46,9 +46,9 @@ Installing wallpaper can seem daunting, but with the right tools and a little bi
 
 If you're interested in learning more about circuit boards and electronics, here are some resources to check out:
 
-- [Adafruit Industries](https://www.adafruit.com/)
-- [SparkFun Electronics](https://www.sparkfun.com/)
-- [Electronics Tutorials](https://www.electronics-tutorials.ws/)
+-   [Adafruit Industries](https://www.adafruit.com/)
+-   [SparkFun Electronics](https://www.sparkfun.com/)
+-   [Electronics Tutorials](https://www.electronics-tutorials.ws/)
 
 ## Contact Us
 

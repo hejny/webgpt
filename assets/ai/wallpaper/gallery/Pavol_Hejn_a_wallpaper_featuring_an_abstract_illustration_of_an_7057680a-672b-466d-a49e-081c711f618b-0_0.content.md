@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of an AI neural network, with intricate lines and a dark and technological color palette."
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Looking for a wallpaper that captures the essence of cutting-edge technology and artificial intelligence? Look no further than our abstract AI neural network wallpaper.
 

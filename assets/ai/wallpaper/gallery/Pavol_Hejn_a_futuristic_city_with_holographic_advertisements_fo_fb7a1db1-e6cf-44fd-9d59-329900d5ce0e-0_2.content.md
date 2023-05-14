@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A futuristic city with holographic advertisements for a tech or innovation website"
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Welcome to our tech and innovation website, where we explore the latest advancements in technology and their impact on society. Our wallpaper features a stunning futuristic cityscape, complete with towering skyscrapers and holographic advertisements that showcase the cutting-edge products and services of tomorrow.
 

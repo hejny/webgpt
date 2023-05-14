@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # "RoboWall: Simple Graphic Robot Arm Wallpaper"
 
@@ -28,9 +28,9 @@ The robot arm design is perfect for those who love technology and futuristic the
 
 ### Wallpaper Specifications
 
-- Dimensions: 1920x1080 pixels
-- File format: JPG
-- File size: 1.5 MB
+-   Dimensions: 1920x1080 pixels
+-   File format: JPG
+-   File size: 1.5 MB
 
 ## User Stories
 
@@ -48,8 +48,8 @@ To download this wallpaper, simply right-click on the image and select "Save Ima
 
 If you're interested in learning more about robot arms and their applications, check out these resources:
 
-- [Robotics Online](#)
-- [Robotics Business Review](#)
+-   [Robotics Online](#)
+-   [Robotics Business Review](#)
 
 ## Contact Us
 

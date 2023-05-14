@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Virtual Reality Wallpaper for Futuristic Environments
 
@@ -24,10 +24,10 @@ Welcome to our collection of virtual reality wallpapers! Our abstract illustrati
 
 ## Features
 
-- High-quality resolution for a stunning display on any device
-- Abstract illustration of a virtual reality environment with futuristic graphics and a minimalist color scheme
-- Perfect for desktop backgrounds, phone screens, or social media profiles
-- Easy to download and use
+-   High-quality resolution for a stunning display on any device
+-   Abstract illustration of a virtual reality environment with futuristic graphics and a minimalist color scheme
+-   Perfect for desktop backgrounds, phone screens, or social media profiles
+-   Easy to download and use
 
 ## User Stories
 
@@ -41,16 +41,16 @@ Welcome to our collection of virtual reality wallpapers! Our abstract illustrati
 
 Looking for more virtual reality inspiration? Check out these resources:
 
-- [Virtual Reality Society](#)
-- [Oculus VR](#)
-- [HTC Vive](#)
+-   [Virtual Reality Society](#)
+-   [Oculus VR](#)
+-   [HTC Vive](#)
 
 ## Contact Us
 
 Have a question or comment about our virtual reality wallpaper? We'd love to hear from you! Get in touch via email at [info@virtualrealitywallpapers.com](mailto:info@virtualrealitywallpapers.com) or follow us on social media:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 Thank you for choosing Virtual Reality Wallpapers - we hope our designs inspire your imagination and transport you to new worlds.

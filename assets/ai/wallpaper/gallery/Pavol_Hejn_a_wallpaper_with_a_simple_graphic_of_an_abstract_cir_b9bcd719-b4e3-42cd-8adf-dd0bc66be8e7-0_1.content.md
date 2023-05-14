@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Looking for a wallpaper that's both stylish and tech-inspired? Look no further than our abstract circuit board wallpaper, featuring a simple yet eye-catching graphic in shades of blue and green.
 

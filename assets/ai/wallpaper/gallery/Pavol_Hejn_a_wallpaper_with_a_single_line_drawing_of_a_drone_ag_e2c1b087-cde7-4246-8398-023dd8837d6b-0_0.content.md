@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper with a single line drawing of a drone set against a background of bold geometric shapes in complementary colors. This wallpaper is perfect for those who appreciate modern and minimalist design.
 

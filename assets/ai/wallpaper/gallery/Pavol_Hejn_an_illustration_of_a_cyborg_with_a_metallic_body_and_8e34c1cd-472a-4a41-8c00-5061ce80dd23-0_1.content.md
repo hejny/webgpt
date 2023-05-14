@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Cybernetic Future: Embrace the Power of Technology
 
@@ -34,9 +34,9 @@ Cybernetics is the study of communication and control in living organisms and ma
 
 At Cybernetic Future, we believe that the best way to understand the impact of technology is to hear from the people who are using it. That's why we have collected stories from individuals whose lives have been transformed by cybernetics. Here are just a few examples:
 
-- **John**, a veteran who lost his leg in combat, received a prosthetic limb that uses advanced sensors to mimic the movement of a natural leg.
-- **Maria**, who suffers from Parkinson's disease, underwent deep brain stimulation surgery, which uses electrodes to regulate her brain activity and reduce her symptoms.
-- **David**, a factory worker, now works alongside robots that help him lift heavy objects and perform repetitive tasks, reducing his risk of injury.
+-   **John**, a veteran who lost his leg in combat, received a prosthetic limb that uses advanced sensors to mimic the movement of a natural leg.
+-   **Maria**, who suffers from Parkinson's disease, underwent deep brain stimulation surgery, which uses electrodes to regulate her brain activity and reduce her symptoms.
+-   **David**, a factory worker, now works alongside robots that help him lift heavy objects and perform repetitive tasks, reducing his risk of injury.
 
 These stories demonstrate the incredible potential of cybernetics to improve our lives and create a better future for all.
 
@@ -44,9 +44,9 @@ These stories demonstrate the incredible potential of cybernetics to improve our
 
 If you want to learn more about cybernetics and its applications, we have compiled a list of resources to get you started:
 
-- **Books**: "Cybernetics: Or Control and Communication in the Animal and the Machine" by Norbert Wiener, "The Cyborg Handbook" edited by Chris Hables Gray, and "The Singularity Is Near" by Ray Kurzweil.
-- **Websites**: The Cybernetics Society, The International Association for Cybernetics, and The Cybernetics Library.
-- **Events**: The Annual Conference on Cybernetics and Systems, The IEEE Conference on Cybernetics and Intelligent Systems, and The World Congress on Cybernetics and Systems.
+-   **Books**: "Cybernetics: Or Control and Communication in the Animal and the Machine" by Norbert Wiener, "The Cyborg Handbook" edited by Chris Hables Gray, and "The Singularity Is Near" by Ray Kurzweil.
+-   **Websites**: The Cybernetics Society, The International Association for Cybernetics, and The Cybernetics Library.
+-   **Events**: The Annual Conference on Cybernetics and Systems, The IEEE Conference on Cybernetics and Intelligent Systems, and The World Congress on Cybernetics and Systems.
 
 ## Contact Us
 

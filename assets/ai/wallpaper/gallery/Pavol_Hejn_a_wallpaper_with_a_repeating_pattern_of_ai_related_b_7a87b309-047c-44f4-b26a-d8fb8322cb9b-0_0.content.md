@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # AI Buzzwords Wallpaper
 
@@ -20,24 +20,24 @@ Decorate your desktop or phone screen with our AI Buzzwords Wallpaper! This mini
 
 ## Features
 
-- Minimalist design
-- Repeating pattern of AI-related buzzwords
-- Sleek font and color scheme
-- Available for desktop and phone screens
+-   Minimalist design
+-   Repeating pattern of AI-related buzzwords
+-   Sleek font and color scheme
+-   Available for desktop and phone screens
 
 ## How to Use
 
 To use the AI Buzzwords Wallpaper on your device, simply download the image and set it as your wallpaper. The wallpaper is available in multiple sizes to fit a range of devices.
 
-> "A great way to show off your love for AI and stay inspired throughout the day!" 
+> "A great way to show off your love for AI and stay inspired throughout the day!"
 
 ## Download
 
 Download the AI Buzzwords Wallpaper in the following sizes:
 
-- 1920x1080 (desktop)
-- 1280x720 (desktop)
-- 1080x1920 (phone)
+-   1920x1080 (desktop)
+-   1280x720 (desktop)
+-   1080x1920 (phone)
 
 ---
 

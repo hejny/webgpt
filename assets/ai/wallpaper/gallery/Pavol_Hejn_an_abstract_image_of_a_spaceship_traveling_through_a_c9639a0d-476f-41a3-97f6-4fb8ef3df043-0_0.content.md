@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Inter"-->
+<!--font:Inter-->
 
 # Cosmic Dreams: Explore the Universe with Our Abstract Spaceship Wallpaper
 
-Welcome to Cosmic Dreams, your one-stop-shop for all things space-related. Our website offers a wide range of high-quality wallpapers featuring stunning images of galaxies, stars, and planets. Our latest addition is an abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns. 
+Welcome to Cosmic Dreams, your one-stop-shop for all things space-related. Our website offers a wide range of high-quality wallpapers featuring stunning images of galaxies, stars, and planets. Our latest addition is an abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns.
 
 ## About the Wallpaper
 
@@ -44,12 +44,12 @@ To download our abstract spaceship wallpaper, simply click on the image above an
 
 Looking for more space-themed content? Check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our website or products, please don't hesitate to [contact us](#). We're always happy to hear from our customers and are committed to providing the best possible service. 
+If you have any questions or feedback about our website or products, please don't hesitate to [contact us](#). We're always happy to hear from our customers and are committed to providing the best possible service.
 
 Thank you for visiting Cosmic Dreams!

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Retro-Futuristic Robot Wallpaper for Your Desktop
 
@@ -24,9 +24,9 @@ Add a touch of retro-futuristic style to your desktop with our stunning wallpape
 
 ## Features
 
-- High-quality resolution: Our wallpaper is available in high-definition resolution, ensuring that it looks crisp and clear on any screen size.
-- Easy to download: Simply click the download button and save the image to your computer or device.
-- Free to use: Our wallpaper is completely free to download and use for personal or commercial purposes.
+-   High-quality resolution: Our wallpaper is available in high-definition resolution, ensuring that it looks crisp and clear on any screen size.
+-   Easy to download: Simply click the download button and save the image to your computer or device.
+-   Free to use: Our wallpaper is completely free to download and use for personal or commercial purposes.
 
 ## User Stories
 
@@ -46,9 +46,9 @@ To use our retro-futuristic robot wallpaper, simply follow these steps:
 
 Looking for more inspiration? Check out these resources:
 
-- [Retro-Futurism: A Look Back at How We Imagined the Future](#)
-- [Vintage Robot Illustrations: A Collection of Classic Sci-Fi Art](#)
-- [Neon Color Palettes: How to Use Bright Colors in Your Design](#)
+-   [Retro-Futurism: A Look Back at How We Imagined the Future](#)
+-   [Vintage Robot Illustrations: A Collection of Classic Sci-Fi Art](#)
+-   [Neon Color Palettes: How to Use Bright Colors in Your Design](#)
 
 ## Contact Us
 

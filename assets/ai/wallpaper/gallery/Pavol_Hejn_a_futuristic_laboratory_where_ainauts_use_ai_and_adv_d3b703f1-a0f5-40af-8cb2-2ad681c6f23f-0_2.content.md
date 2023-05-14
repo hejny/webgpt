@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # The AInauts Lab: Where AI Meets Life
 
@@ -32,9 +32,9 @@ Our team takes a multidisciplinary approach to research, drawing on expertise fr
 
 From developing new drugs and therapies to creating synthetic organisms with novel properties, the AInauts Lab is at the forefront of cutting-edge research in life sciences. Some of our current projects include:
 
-- **Gene Editing with AI**: Using machine learning algorithms to identify and edit genes associated with diseases such as cancer and Alzheimer's.
-- **Synthetic Biology**: Creating new organisms with unique properties by combining genetic material from different species.
-- **Drug Discovery**: Using AI to analyze vast amounts of data and identify promising drug candidates for a variety of conditions.
+-   **Gene Editing with AI**: Using machine learning algorithms to identify and edit genes associated with diseases such as cancer and Alzheimer's.
+-   **Synthetic Biology**: Creating new organisms with unique properties by combining genetic material from different species.
+-   **Drug Discovery**: Using AI to analyze vast amounts of data and identify promising drug candidates for a variety of conditions.
 
 ## Join Us
 

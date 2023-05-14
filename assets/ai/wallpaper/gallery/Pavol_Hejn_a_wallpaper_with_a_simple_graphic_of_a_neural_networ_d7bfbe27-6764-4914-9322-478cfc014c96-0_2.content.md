@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Neural Network Wallpaper for Tech Enthusiasts
 
@@ -32,9 +32,9 @@ The complementary colors used in the background add depth and dimension to the w
 
 Here are some examples of how our customers have used this wallpaper:
 
-- John, a data scientist, uses this wallpaper as a reminder of the power of neural networks and the potential they hold for solving complex problems.
-- Sarah, a software engineer, finds the colors and design of this wallpaper soothing and inspiring during long coding sessions.
-- Alex, a student studying artificial intelligence, uses this wallpaper as a visual aid to help him remember the different components of a neural network.
+-   John, a data scientist, uses this wallpaper as a reminder of the power of neural networks and the potential they hold for solving complex problems.
+-   Sarah, a software engineer, finds the colors and design of this wallpaper soothing and inspiring during long coding sessions.
+-   Alex, a student studying artificial intelligence, uses this wallpaper as a visual aid to help him remember the different components of a neural network.
 
 ## Download the Wallpaper
 
@@ -44,9 +44,9 @@ To download this wallpaper, simply right-click on the image and select "Save Ima
 
 If you're interested in learning more about neural networks and artificial intelligence, here are some resources we recommend:
 
-- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen
-- [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597) by Stuart Russell and Peter Norvig
-- [Machine Learning Mastery](https://machinelearningmastery.com/) by Jason Brownlee
+-   [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen
+-   [Artificial Intelligence: A Modern Approach](https://www.amazon.com/Artificial-Intelligence-Modern-Approach-3rd/dp/0136042597) by Stuart Russell and Peter Norvig
+-   [Machine Learning Mastery](https://machinelearningmastery.com/) by Jason Brownlee
 
 ## Contact Us
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Schoolbell"-->
+<!--font:Schoolbell-->
 
 # Rainbow Learning: Fun and Engaging Education for Children
 
@@ -42,24 +42,24 @@ Here are some stories from parents and educators who have used our materials:
 
 We offer a wide range of resources for parents and educators, including:
 
-- Worksheets for math, reading, writing, and more
-- Lesson plans for preschool through middle school
-- Activities for science, social studies, and art
-- Educational games and apps
-- Reference materials for parents and educators
+-   Worksheets for math, reading, writing, and more
+-   Lesson plans for preschool through middle school
+-   Activities for science, social studies, and art
+-   Educational games and apps
+-   Reference materials for parents and educators
 
 ## Contact Us
 
 If you have any questions or feedback, please don't hesitate to contact us. We're always happy to hear from you!
 
-- Email: info@rainbowlearning.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@rainbowlearning.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 ## References
 
 Here are some resources we recommend for parents and educators:
 
-- National Association for the Education of Young Children
-- Common Sense Media
-- Scholastic Parents
+-   National Association for the Education of Young Children
+-   Common Sense Media
+-   Scholastic Parents

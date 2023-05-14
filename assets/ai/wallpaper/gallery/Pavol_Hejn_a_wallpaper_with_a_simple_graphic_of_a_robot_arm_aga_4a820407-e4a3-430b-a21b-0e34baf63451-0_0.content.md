@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a robot arm, against a gradient background of two complementary colors."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a stunning wallpaper design that showcases a simple graphic of a robot arm against a gradient background of two complementary colors. 
+Welcome to our website featuring a stunning wallpaper design that showcases a simple graphic of a robot arm against a gradient background of two complementary colors.
 
 This wallpaper is perfect for those who love minimalistic yet futuristic designs. The robot arm graphic adds a touch of technology and innovation to any space, while the gradient background creates a sense of depth and dimension.
 

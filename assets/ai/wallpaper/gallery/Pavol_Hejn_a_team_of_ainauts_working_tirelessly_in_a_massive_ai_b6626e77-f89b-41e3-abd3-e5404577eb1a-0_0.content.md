@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Welcome to the AI Factory
 
@@ -32,9 +32,9 @@ At the AI Factory, we take a collaborative approach to innovation. Our team incl
 
 We have developed a range of AI products that are already making a difference in the world. These include:
 
-- **Smart Home Automation:** Our AI-powered home automation system learns your preferences and adjusts your home's temperature, lighting, and security based on your habits.
-- **Medical Diagnosis:** Our machine learning algorithms can analyze medical images and provide accurate diagnoses for a range of conditions.
-- **Climate Modeling:** We're using AI to model the impacts of climate change and develop strategies to mitigate its effects.
+-   **Smart Home Automation:** Our AI-powered home automation system learns your preferences and adjusts your home's temperature, lighting, and security based on your habits.
+-   **Medical Diagnosis:** Our machine learning algorithms can analyze medical images and provide accurate diagnoses for a range of conditions.
+-   **Climate Modeling:** We're using AI to model the impacts of climate change and develop strategies to mitigate its effects.
 
 ## Join Us
 
@@ -42,4 +42,4 @@ If you're passionate about AI and want to be part of a team that's making a diff
 
 ---
 
-*Thank you for visiting the AI Factory. Together, we can build a better future with AI.*
+_Thank you for visiting the AI Factory. Together, we can build a better future with AI._

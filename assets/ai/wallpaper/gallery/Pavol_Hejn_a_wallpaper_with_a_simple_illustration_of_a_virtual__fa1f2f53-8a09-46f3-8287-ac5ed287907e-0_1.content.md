@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Virtual Reality Wallpaper for Tech Enthusiasts
 
@@ -30,9 +30,9 @@ Our virtual reality wallpaper captures the essence of this exciting technology t
 
 Here are some user stories from our satisfied customers:
 
-- "I love this wallpaper! It's the perfect way to show off my passion for VR technology."
-- "The colors are so vibrant and eye-catching. I get compliments on my wallpaper all the time!"
-- "As a gamer, this wallpaper really speaks to me. It's a constant reminder of the amazing experiences I've had in virtual reality."
+-   "I love this wallpaper! It's the perfect way to show off my passion for VR technology."
+-   "The colors are so vibrant and eye-catching. I get compliments on my wallpaper all the time!"
+-   "As a gamer, this wallpaper really speaks to me. It's a constant reminder of the amazing experiences I've had in virtual reality."
 
 ## How to Download
 
@@ -44,9 +44,9 @@ To download this wallpaper, simply click the download button below. The image wi
 
 Looking for more information about virtual reality technology? Check out these resources:
 
-- [Virtual Reality Society](#)
-- [Oculus](#)
-- [HTC Vive](#)
+-   [Virtual Reality Society](#)
+-   [Oculus](#)
+-   [HTC Vive](#)
 
 ## Contact Us
 

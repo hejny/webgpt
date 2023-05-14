@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Drone Wallpaper: Elevate Your Desktop with High-Tech Style
 
@@ -26,10 +26,10 @@ Looking for a wallpaper that's both stylish and futuristic? Look no further than
 
 Our drone wallpaper is the perfect choice for anyone who wants to add a touch of high-tech style to their desktop or mobile device. Here are just a few reasons why you'll love it:
 
-- **Stylish Design:** Our drone wallpaper features a minimalist single-line drawing of a drone that's both modern and elegant.
-- **Bold Colors:** The geometric shapes in the background of our wallpaper come in a range of bold, complementary colors that really pop.
-- **Versatile Use:** Whether you're looking to spruce up your desktop, phone, or tablet, our drone wallpaper looks great on any device.
-- **Easy Download:** With just a few clicks, you can download our drone wallpaper and start enjoying its high-tech style right away.
+-   **Stylish Design:** Our drone wallpaper features a minimalist single-line drawing of a drone that's both modern and elegant.
+-   **Bold Colors:** The geometric shapes in the background of our wallpaper come in a range of bold, complementary colors that really pop.
+-   **Versatile Use:** Whether you're looking to spruce up your desktop, phone, or tablet, our drone wallpaper looks great on any device.
+-   **Easy Download:** With just a few clicks, you can download our drone wallpaper and start enjoying its high-tech style right away.
 
 ## User Stories
 
@@ -53,14 +53,14 @@ Ready to elevate your desktop with our drone wallpaper? Here's how to download i
 
 Looking for more inspiration? Check out these articles on the latest trends in wallpaper design:
 
-- [10 Wallpaper Trends to Try in 2021](#)
-- [The Best Wallpaper Designers of 2021](#)
-- [How to Choose the Perfect Wallpaper for Your Space](#)
+-   [10 Wallpaper Trends to Try in 2021](#)
+-   [The Best Wallpaper Designers of 2021](#)
+-   [How to Choose the Perfect Wallpaper for Your Space](#)
 
 ## Contact Us
 
 Have a question or comment about our drone wallpaper? We'd love to hear from you! Here's how to get in touch:
 
-- Email: info@drone-wallpaper.com
-- Phone: 555-1234
-- Social Media: Follow us on Twitter, Facebook, and Instagram for the latest updates and inspiration.
+-   Email: info@drone-wallpaper.com
+-   Phone: 555-1234
+-   Social Media: Follow us on Twitter, Facebook, and Instagram for the latest updates and inspiration.

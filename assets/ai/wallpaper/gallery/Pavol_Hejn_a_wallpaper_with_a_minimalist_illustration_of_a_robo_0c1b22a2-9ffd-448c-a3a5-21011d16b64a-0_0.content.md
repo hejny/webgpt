@@ -12,25 +12,30 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Robotic Arm Wallpaper
 
 Welcome to our website featuring a minimalist wallpaper of a robotic arm set against a dark and moody background. This wallpaper is perfect for those who love technology and futuristic designs.
 
 ## Features
-- Minimalist design
-- Illustration of a robotic arm
-- Dark and moody color scheme
+
+-   Minimalist design
+-   Illustration of a robotic arm
+-   Dark and moody color scheme
 
 ## Download
+
 To download this wallpaper, simply right-click on the image and select "Save Image As" or click on the link below:
-- [Download Robotic Arm Wallpaper](#download-link)
+
+-   [Download Robotic Arm Wallpaper](#download-link)
 
 ## Usage
+
 This wallpaper can be used as a desktop background or lock screen wallpaper on your computer or mobile device. It's perfect for anyone who wants to add a touch of technology to their digital life.
 
 ## Compatibility
+
 This wallpaper is compatible with most devices and operating systems, including Windows, macOS, iOS, and Android.
 
 > "The future is now." - Unknown
@@ -38,4 +43,5 @@ This wallpaper is compatible with most devices and operating systems, including 
 ---
 
 ### Download Link
+
 [![Robotic Arm Wallpaper](https://example.com/robotic-arm-wallpaper.jpg)](https://example.com/robotic-arm-wallpaper.jpg)

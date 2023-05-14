@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Space Mono"-->
+<!--font:Space Mono-->
 
 # AI Space Odyssey
 
@@ -28,13 +28,13 @@ Our mission is to use cutting-edge technology to discover new worlds, study the 
 
 ## Our Projects
 
-- **Deep Space Exploration:** We are currently working on a project to send an unmanned spacecraft to explore the far reaches of our galaxy. Using advanced AI systems, we hope to gather data on distant planets, stars, and other celestial objects.
+-   **Deep Space Exploration:** We are currently working on a project to send an unmanned spacecraft to explore the far reaches of our galaxy. Using advanced AI systems, we hope to gather data on distant planets, stars, and other celestial objects.
 
-- **AI-Assisted Astronomy:** Our team is also using AI to analyze astronomical data and make new discoveries about the universe. By training machine learning algorithms on vast amounts of data, we hope to uncover hidden patterns and insights that would be impossible for humans to detect on their own.
+-   **AI-Assisted Astronomy:** Our team is also using AI to analyze astronomical data and make new discoveries about the universe. By training machine learning algorithms on vast amounts of data, we hope to uncover hidden patterns and insights that would be impossible for humans to detect on their own.
 
 ## Join Us
 
-If you share our passion for space and AI, we invite you to join our community. Follow us on social media and stay up-to-date on our latest projects and discoveries. Together, we can explore the final frontier and unlock the secrets of the cosmos. 
+If you share our passion for space and AI, we invite you to join our community. Follow us on social media and stay up-to-date on our latest projects and discoveries. Together, we can explore the final frontier and unlock the secrets of the cosmos.
 
 ---
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of AI-related buzzwords, in a minimalist font and color scheme."
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Introducing our latest wallpaper design, perfect for those who are passionate about artificial intelligence and the latest tech trends. This wallpaper features a repeating pattern of AI-related buzzwords in a minimalist font and color scheme.
 

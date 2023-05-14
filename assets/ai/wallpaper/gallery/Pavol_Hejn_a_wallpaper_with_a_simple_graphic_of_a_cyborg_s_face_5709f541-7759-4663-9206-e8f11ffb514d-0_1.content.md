@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a cyborg's face, against a background of digital noise and static."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a striking wallpaper design that showcases a simple graphic of a cyborg's face against a backdrop of digital noise and static. This unique wallpaper is perfect for those who appreciate the fusion of technology and art.
 

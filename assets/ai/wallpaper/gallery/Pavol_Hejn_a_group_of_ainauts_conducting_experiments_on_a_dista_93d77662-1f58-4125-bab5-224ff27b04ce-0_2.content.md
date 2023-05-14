@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # "AInauts on a Distant Moon"
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background. 
+Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## Who are AInauts?
 

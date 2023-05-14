@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Neural Network Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a stunning wallpaper with a simple graphic of a
 
 ## Features
 
-- Simple yet elegant design
-- Perfect for desktops, laptops, and mobile devices
-- High-quality resolution for a clear and crisp image
-- Complementary colors that make the neural network stand out
+-   Simple yet elegant design
+-   Perfect for desktops, laptops, and mobile devices
+-   High-quality resolution for a clear and crisp image
+-   Complementary colors that make the neural network stand out
 
 ## How to Download
 

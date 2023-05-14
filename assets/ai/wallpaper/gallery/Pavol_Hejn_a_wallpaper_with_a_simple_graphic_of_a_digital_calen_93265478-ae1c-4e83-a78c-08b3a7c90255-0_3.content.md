@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders. 
+Welcome to our website featuring a wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders.
 
 This wallpaper is perfect for those who like to stay organized and keep track of their daily tasks. The clean and minimalistic design allows you to focus on what's important without any distractions.
 

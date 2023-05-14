@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Cyborgs R Us
 
@@ -30,10 +30,10 @@ At Cyborgs R Us, we offer a wide range of products to help you become the ultima
 
 Our product categories include:
 
-- Implants
-- Prosthetics
-- Augmentations
-- Accessories
+-   Implants
+-   Prosthetics
+-   Augmentations
+-   Accessories
 
 ## Our Services
 
@@ -41,10 +41,10 @@ In addition to our top-of-the-line products, we also offer a variety of services
 
 Our services include:
 
-- Installation
-- Maintenance
-- Repair
-- Consultation
+-   Installation
+-   Maintenance
+-   Repair
+-   Consultation
 
 ## Contact Us
 
@@ -52,6 +52,6 @@ If you have any questions about our products or services, please don't hesitate 
 
 You can reach us at:
 
-- Phone: 555-555-5555
-- Email: info@cyborgsrus.com
-- Twitter: [@CyborgsRUs](https://twitter.com/CyborgsRUs)
+-   Phone: 555-555-5555
+-   Email: info@cyborgsrus.com
+-   Twitter: [@CyborgsRUs](https://twitter.com/CyborgsRUs)

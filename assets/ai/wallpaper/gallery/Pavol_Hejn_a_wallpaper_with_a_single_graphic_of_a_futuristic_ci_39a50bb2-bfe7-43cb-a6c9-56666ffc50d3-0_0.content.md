@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Cityscape Wallpaper
 
@@ -30,9 +30,9 @@ Our wallpaper is not only visually appealing but also high-quality and durable. 
 
 Here are some examples of how our customers have used our wallpaper:
 
-- "I installed this wallpaper in my home office and it instantly transformed the space. It's so modern and inspiring!"
-- "I wanted to create a futuristic theme for my son's bedroom, and this wallpaper was the perfect addition."
-- "As an interior designer, I'm always on the lookout for unique wall coverings. This wallpaper exceeded my expectations."
+-   "I installed this wallpaper in my home office and it instantly transformed the space. It's so modern and inspiring!"
+-   "I wanted to create a futuristic theme for my son's bedroom, and this wallpaper was the perfect addition."
+-   "As an interior designer, I'm always on the lookout for unique wall coverings. This wallpaper exceeded my expectations."
 
 ## References
 
@@ -50,6 +50,6 @@ If you have any questions about our wallpaper or would like to place an order, p
 
 Phone: 555-1234  
 Email: info@futuristicwallpaper.com  
-Address: 123 Main St, Anytown USA  
+Address: 123 Main St, Anytown USA
 
 Thank you for considering our futuristic cityscape wallpaper. We can't wait to see how it transforms your space!

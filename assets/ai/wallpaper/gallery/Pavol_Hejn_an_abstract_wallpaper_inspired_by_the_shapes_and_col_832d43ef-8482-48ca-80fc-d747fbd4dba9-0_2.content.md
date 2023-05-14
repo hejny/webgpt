@@ -12,17 +12,17 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Inter"-->
+<!--font:Inter-->
 
 # Quantum Wallpaper
 
-Decorate your desktop or phone with our abstract wallpaper inspired by the shapes and colors of quantum physics. 
+Decorate your desktop or phone with our abstract wallpaper inspired by the shapes and colors of quantum physics.
 
 ## Features
 
-- Bold colors and intricate lines
-- High-resolution image suitable for all devices
-- Unique design inspired by quantum physics
+-   Bold colors and intricate lines
+-   High-resolution image suitable for all devices
+-   Unique design inspired by quantum physics
 
 ## Download
 

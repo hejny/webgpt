@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Circuit Board Wallpaper for Tech Enthusiasts
 
@@ -32,9 +32,9 @@ Our wallpaper is made from high-quality materials that are durable and easy to i
 
 ## User Stories
 
-- "I love this wallpaper! It's the perfect addition to my home office and really brings out my inner tech geek." - John D.
-- "The circuit board design is so unique and cool. I get compliments on it all the time!" - Sarah L.
-- "I'm not usually a fan of wallpaper, but this design caught my eye. It looks amazing in my living room." - Michael K.
+-   "I love this wallpaper! It's the perfect addition to my home office and really brings out my inner tech geek." - John D.
+-   "The circuit board design is so unique and cool. I get compliments on it all the time!" - Sarah L.
+-   "I'm not usually a fan of wallpaper, but this design caught my eye. It looks amazing in my living room." - Michael K.
 
 ## Installation Tips
 
@@ -49,9 +49,9 @@ Installing wallpaper can seem intimidating, but with a little bit of patience an
 
 If you're interested in learning more about circuit boards and electronics, here are a few resources to check out:
 
-- [Adafruit Industries](#) - A leading online retailer of electronics components and tools.
-- [SparkFun Electronics](#) - Another great resource for electronics enthusiasts, with a focus on open-source hardware.
-- [Hackaday](#) - A community-driven website that covers all things related to electronics, from DIY projects to the latest industry news.
+-   [Adafruit Industries](#) - A leading online retailer of electronics components and tools.
+-   [SparkFun Electronics](#) - Another great resource for electronics enthusiasts, with a focus on open-source hardware.
+-   [Hackaday](#) - A community-driven website that covers all things related to electronics, from DIY projects to the latest industry news.
 
 ## Contact Us
 

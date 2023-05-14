@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A whimsical tea party with anthropomorphic animals"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our whimsical tea party with anthropomorphic animals wallpaper collection! This charming and playful design is perfect for anyone who loves the magic of fairy tales and wants to add a touch of whimsy to their home decor.
 

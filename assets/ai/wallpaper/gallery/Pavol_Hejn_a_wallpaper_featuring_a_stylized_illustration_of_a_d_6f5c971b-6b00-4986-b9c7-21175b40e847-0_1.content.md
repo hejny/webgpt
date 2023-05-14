@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # "Dystopian Future" Wallpaper for Your Desktop
 
@@ -24,10 +24,10 @@ Transform your desktop into a futuristic dystopian world with our "Dystopian Fut
 
 ## Features
 
-- High-quality digital illustration
-- Metallic textures and digital glitch effects
-- Available in multiple resolutions to fit any screen size
-- Free to download and use
+-   High-quality digital illustration
+-   Metallic textures and digital glitch effects
+-   Available in multiple resolutions to fit any screen size
+-   Free to download and use
 
 ## How to Download
 
@@ -45,9 +45,9 @@ Our users love the "Dystopian Future" wallpaper! Here are some of their stories:
 
 If you're interested in learning more about dystopian futures, here are some resources we recommend:
 
-- [The Handmaid's Tale](#) by Margaret Atwood
-- [Blade Runner](#) directed by Ridley Scott
-- [1984](#) by George Orwell
+-   [The Handmaid's Tale](#) by Margaret Atwood
+-   [Blade Runner](#) directed by Ridley Scott
+-   [1984](#) by George Orwell
 
 ## Contact Us
 

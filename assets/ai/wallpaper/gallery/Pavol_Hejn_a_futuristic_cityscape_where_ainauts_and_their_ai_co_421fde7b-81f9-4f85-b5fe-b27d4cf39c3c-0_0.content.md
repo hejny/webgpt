@@ -12,13 +12,13 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Welcome to the Future!
 
 ## A Futuristic Cityscape
 
-Experience the future with our stunning wallpaper depicting a bustling cityscape where AI and humans work together to build towering skyscrapers and infrastructure. 
+Experience the future with our stunning wallpaper depicting a bustling cityscape where AI and humans work together to build towering skyscrapers and infrastructure.
 
 ## A Vision of Collaboration
 

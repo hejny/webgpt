@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Vehicle Wallpaper
 
@@ -20,14 +20,14 @@ Welcome to our website featuring a wallpaper of a futuristic vehicle! This wallp
 
 ## Features of the Wallpaper
 
-- Simple illustration of a futuristic vehicle
-- Metallic textures for a modern look
-- Dark and moody color scheme
+-   Simple illustration of a futuristic vehicle
+-   Metallic textures for a modern look
+-   Dark and moody color scheme
 
 ## How to Download
 
 To download this wallpaper, simply right-click on the image and select "Save Image As" to save it to your device. You can then set it as your desktop background or use it as a phone wallpaper.
 
-> "This wallpaper is perfect for anyone who loves futuristic designs and wants to add a touch of modernity to their devices." 
+> "This wallpaper is perfect for anyone who loves futuristic designs and wants to add a touch of modernity to their devices."
 
 We hope you enjoy this wallpaper and feel free to browse our website for more exciting wallpapers!

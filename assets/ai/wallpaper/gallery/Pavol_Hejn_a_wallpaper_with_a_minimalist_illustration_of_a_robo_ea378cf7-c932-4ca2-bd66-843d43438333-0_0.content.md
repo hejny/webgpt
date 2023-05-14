@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Inter"-->
+<!--font:Inter-->
 
 # Minimalist Robotic Arm Wallpaper
 
@@ -40,16 +40,16 @@ Our minimalist wallpapers have been downloaded and enjoyed by people from all ov
 
 If you're interested in learning more about minimalist design and how it can improve your life, here are some references that we recommend:
 
-- [The Power of Minimalism](#) - a TED talk by Graham Hill that explores the benefits of living with less.
-- [Less is More: The Art of Minimalism](#) - an article by The Guardian that discusses the history and philosophy of minimalism.
-- [Minimalism: A Documentary About the Important Things](#) - a documentary film by Matt D'Avella that examines the impact of consumerism on our lives and how minimalism can help us find happiness.
+-   [The Power of Minimalism](#) - a TED talk by Graham Hill that explores the benefits of living with less.
+-   [Less is More: The Art of Minimalism](#) - an article by The Guardian that discusses the history and philosophy of minimalism.
+-   [Minimalism: A Documentary About the Important Things](#) - a documentary film by Matt D'Avella that examines the impact of consumerism on our lives and how minimalism can help us find happiness.
 
 ## Contact Us
 
 If you have any questions, comments, or suggestions about our wallpapers, please feel free to contact us. We'd love to hear from you and help you find the perfect wallpaper for your device.
 
-- Email: info@minimalistwallpapers.com
-- Twitter: @minimalistwalls
-- Instagram: @minimalistwallpapers
+-   Email: info@minimalistwallpapers.com
+-   Twitter: @minimalistwalls
+-   Instagram: @minimalistwallpapers
 
 Thank you for visiting our website and we hope you enjoy our minimalist robotic arm wallpaper!

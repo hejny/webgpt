@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Virtual Reality Wallpaper
 
@@ -20,9 +20,9 @@ This wallpaper features a simple illustration of a virtual reality headset again
 
 ## Features
 
-- Simple yet eye-catching design
-- High-quality resolution for crisp details
-- Perfect for use on desktops, laptops, tablets, and smartphones
+-   Simple yet eye-catching design
+-   High-quality resolution for crisp details
+-   Perfect for use on desktops, laptops, tablets, and smartphones
 
 ## How to Use
 

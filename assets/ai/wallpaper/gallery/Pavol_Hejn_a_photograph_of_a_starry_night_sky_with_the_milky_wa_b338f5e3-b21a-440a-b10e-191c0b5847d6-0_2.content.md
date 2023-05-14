@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of a starry night sky, with the Milky Way galaxy visible overhead."
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Welcome to our website featuring a stunning wallpaper of a starry night sky, showcasing the magnificent Milky Way galaxy. This breathtaking photograph captures the beauty and wonder of the universe above us.
 

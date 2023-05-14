@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # RoboWallpaper
 
-Welcome to RoboWallpaper, your source for unique and creative wallpapers! Our latest addition is a simple yet eye-catching black and white graphic of a robot's head against a solid colored background. 
+Welcome to RoboWallpaper, your source for unique and creative wallpapers! Our latest addition is a simple yet eye-catching black and white graphic of a robot's head against a solid colored background.
 
 This wallpaper is perfect for anyone who loves technology or science fiction. The minimalist design adds a touch of sophistication to any device, while the robot motif represents innovation and progress.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a futuristic vehicle. This wallpaper features a simple yet captivating illustration of a sleek and modern vehicle, with metallic textures that give it a futuristic look. The dark and moody color scheme adds an element of mystery and intrigue to the overall design.
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Poppins"-->
+<!--font:Poppins-->
 
 # Quantum-Inspired Wallpaper
 
@@ -20,15 +20,15 @@ Welcome to our website featuring a stunning wallpaper design inspired by the sha
 
 ## Features
 
-- Geometric design
-- Shades of purple and pink
-- Inspired by quantum computing
+-   Geometric design
+-   Shades of purple and pink
+-   Inspired by quantum computing
 
 ## Benefits
 
-- Adds sophistication to any room
-- Provides a unique conversation piece
-- Inspires curiosity about quantum computing
+-   Adds sophistication to any room
+-   Provides a unique conversation piece
+-   Inspires curiosity about quantum computing
 
 > "This wallpaper is a perfect blend of art and science." - Happy Customer
 

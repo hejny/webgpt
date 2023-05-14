@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Exploring the Unknown: AInauts Conducting Experiments on a Frozen Moon
 
-Welcome to our website, where we showcase the exciting work of our team of AInauts as they conduct experiments on a massive, frozen moon orbiting a gas giant planet. 
+Welcome to our website, where we showcase the exciting work of our team of AInauts as they conduct experiments on a massive, frozen moon orbiting a gas giant planet.
 
 ## The Mission
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Futuristic Cityscape Wallpaper for Your Sci-Fi or Technology Website
 
@@ -20,9 +20,9 @@ Are you looking for a visually stunning wallpaper that captures the essence of f
 
 ## Features
 
-- High-quality resolution for a crisp and clear display
-- Perfect for sci-fi, technology, or futuristic-themed websites
-- Instantly adds a modern and cutting-edge vibe to your website
+-   High-quality resolution for a crisp and clear display
+-   Perfect for sci-fi, technology, or futuristic-themed websites
+-   Instantly adds a modern and cutting-edge vibe to your website
 
 ## How to Use
 

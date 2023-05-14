@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Circuit Board Wallpaper for Tech Enthusiasts
 
@@ -26,10 +26,10 @@ Welcome to our website, where we celebrate the beauty of technology with our cir
 
 Our circuit board wallpaper is not only visually stunning but also has practical benefits. Here are some reasons why you should choose our wallpaper:
 
-- **Unique:** Our wallpaper is unlike any other wallpaper on the market. It's perfect for those who want to stand out from the crowd and make a statement.
-- **Durable:** Our wallpaper is made from high-quality materials that are designed to last. It's scratch-resistant, tear-resistant, and easy to clean.
-- **Easy to Install:** Installing our wallpaper is a breeze. You don't need any special tools or skills to install it. Simply follow the instructions provided, and you'll have a beautiful new feature wall in no time.
-- **Versatile:** Our wallpaper can be used in a variety of settings, including homes, offices, and even retail spaces. It's perfect for tech stores, gaming rooms, and more.
+-   **Unique:** Our wallpaper is unlike any other wallpaper on the market. It's perfect for those who want to stand out from the crowd and make a statement.
+-   **Durable:** Our wallpaper is made from high-quality materials that are designed to last. It's scratch-resistant, tear-resistant, and easy to clean.
+-   **Easy to Install:** Installing our wallpaper is a breeze. You don't need any special tools or skills to install it. Simply follow the instructions provided, and you'll have a beautiful new feature wall in no time.
+-   **Versatile:** Our wallpaper can be used in a variety of settings, including homes, offices, and even retail spaces. It's perfect for tech stores, gaming rooms, and more.
 
 ## User Stories
 

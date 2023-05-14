@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Vehicle Wallpaper for Your Desktop
 
@@ -48,16 +48,16 @@ Here are some stories from our users who have downloaded and used our wallpaper:
 
 If you're interested in learning more about futuristic vehicles and the design process behind them, check out these resources:
 
-- [Designing Futuristic Vehicles: Tips and Tricks](#)
-- [The Evolution of Futuristic Vehicle Design](#)
-- [The Future of Transportation: A Look at the Latest Innovations](#)
+-   [Designing Futuristic Vehicles: Tips and Tricks](#)
+-   [The Evolution of Futuristic Vehicle Design](#)
+-   [The Future of Transportation: A Look at the Latest Innovations](#)
 
 ## Contact Us
 
 If you have any questions or comments about our wallpaper, please don't hesitate to contact us. You can reach us by email or through our social media channels.
 
-- Email: [contact@futuristicwallpapers.com](mailto:contact@futuristicwallpapers.com)
-- Twitter: [@futuristicwalls](#)
-- Instagram: [@futuristicwallpapers](#)
+-   Email: [contact@futuristicwallpapers.com](mailto:contact@futuristicwallpapers.com)
+-   Twitter: [@futuristicwalls](#)
+-   Instagram: [@futuristicwallpapers](#)
 
 We hope you enjoy our wallpaper and look forward to hearing from you soon!

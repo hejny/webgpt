@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Cybernetic Enhancements: A New Era of Human Evolution
 
@@ -30,10 +30,10 @@ Cybernetic enhancements are technological implants or prosthetics that enhance h
 
 The benefits of cybernetic enhancements are numerous and far-reaching. Here are just a few examples:
 
-- Improved physical performance: With cybernetic enhancements, humans can run faster, jump higher, and lift heavier weights than ever before.
-- Enhanced senses: Imagine being able to see in the dark or hear sounds beyond the human range of hearing.
-- Increased intelligence: Brain-computer interfaces can enhance cognitive functions like memory, learning, and problem-solving.
-- Longer lifespan: With advanced medical implants, humans can live longer and healthier lives.
+-   Improved physical performance: With cybernetic enhancements, humans can run faster, jump higher, and lift heavier weights than ever before.
+-   Enhanced senses: Imagine being able to see in the dark or hear sounds beyond the human range of hearing.
+-   Increased intelligence: Brain-computer interfaces can enhance cognitive functions like memory, learning, and problem-solving.
+-   Longer lifespan: With advanced medical implants, humans can live longer and healthier lives.
 
 ## User Stories
 

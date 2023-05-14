@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Playfair Display"-->
+<!--font:Playfair Display-->
 
 # Dreamy Forest Scene with Fairies
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a beautiful wallpaper of a dreamy forest scene 
 
 ## Wallpaper Features
 
-- High resolution image
-- Beautiful colors and details
-- Perfect for desktop or mobile devices
-- Free to download and use
+-   High resolution image
+-   Beautiful colors and details
+-   Perfect for desktop or mobile devices
+-   Free to download and use
 
 ## Download Instructions
 

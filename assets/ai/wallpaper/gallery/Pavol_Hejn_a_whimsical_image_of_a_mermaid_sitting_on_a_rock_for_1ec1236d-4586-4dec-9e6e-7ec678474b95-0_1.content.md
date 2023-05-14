@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Playfair Display"-->
+<!--font:Playfair Display-->
 
 # Under the Sea: A Fantasy and Fiction Website
 
@@ -42,21 +42,21 @@ Here are some stories from our users who have found inspiration and joy through 
 
 Check out some of our latest articles:
 
-- The Magic of Unicorns: History and Folklore
-- Top 10 Fantasy Novels of All Time
-- Exploring the World of Harry Potter: A Beginner's Guide
-- The Art of Worldbuilding: Tips and Tricks for Writers
+-   The Magic of Unicorns: History and Folklore
+-   Top 10 Fantasy Novels of All Time
+-   Exploring the World of Harry Potter: A Beginner's Guide
+-   The Art of Worldbuilding: Tips and Tricks for Writers
 
 ## References
 
 Looking for more resources on fantasy and fiction? Check out these websites:
 
-- [Fantasy-Faction](#)
-- [Tor.com](#)
-- [The Fantasy Hive](#)
+-   [Fantasy-Faction](#)
+-   [Tor.com](#)
+-   [The Fantasy Hive](#)
 
 ## Contact Us
 
-Have a question or suggestion for us? We'd love to hear from you! Send us an email at [contact@underthesea.com](mailto:contact@underthesea.com) or fill out our contact form [here](#). You can also follow us on [Twitter](#) and [Facebook](#) for updates and discussions. 
+Have a question or suggestion for us? We'd love to hear from you! Send us an email at [contact@underthesea.com](mailto:contact@underthesea.com) or fill out our contact form [here](#). You can also follow us on [Twitter](#) and [Facebook](#) for updates and discussions.
 
 Thank you for visiting Under the Sea, where imagination knows no bounds!

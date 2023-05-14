@@ -12,15 +12,15 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # AI Experiments on a Distant Moon
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background. 
+Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## About the Wallpaper
 
-The wallpaper depicts a scene from a distant moon where a team of AInauts are performing experiments in an alien environment. The massive gas giant in the background adds to the awe-inspiring view of this extraterrestrial world. 
+The wallpaper depicts a scene from a distant moon where a team of AInauts are performing experiments in an alien environment. The massive gas giant in the background adds to the awe-inspiring view of this extraterrestrial world.
 
 ## Our Mission
 
@@ -28,9 +28,9 @@ Our mission is to explore and study the vast universe beyond our planet using ar
 
 ## Our Projects
 
-- **Exoplanet Detection:** We use machine learning algorithms to analyze data from telescopes and identify exoplanets orbiting other stars.
-- **Black Hole Research:** Our team studies the behavior of black holes using AI models to simulate their dynamics and predict their effects on nearby objects.
-- **Astrobiology:** We investigate the possibility of life on other planets by analyzing the chemical composition of their atmospheres and surfaces using AI techniques.
+-   **Exoplanet Detection:** We use machine learning algorithms to analyze data from telescopes and identify exoplanets orbiting other stars.
+-   **Black Hole Research:** Our team studies the behavior of black holes using AI models to simulate their dynamics and predict their effects on nearby objects.
+-   **Astrobiology:** We investigate the possibility of life on other planets by analyzing the chemical composition of their atmospheres and surfaces using AI techniques.
 
 ## Join Us
 

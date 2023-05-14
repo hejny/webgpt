@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Geometric Grid" Wallpaper for Your Modern Space
 
@@ -30,9 +30,9 @@ Our "Geometric Grid" wallpaper features a repeating pattern of simple geometric 
 
 Here are some examples of how our customers have used the "Geometric Grid" wallpaper to transform their spaces:
 
-- "I used the black and white version of this wallpaper in my home office and it looks amazing! It adds just the right amount of visual interest without being too distracting."
-- "We recently renovated our bathroom and added the blue version of this wallpaper as an accent wall. It really ties the whole room together and makes it feel more cohesive."
-- "I used the pink version of this wallpaper in my daughter's bedroom and she loves it! It's playful and fun without being too childish."
+-   "I used the black and white version of this wallpaper in my home office and it looks amazing! It adds just the right amount of visual interest without being too distracting."
+-   "We recently renovated our bathroom and added the blue version of this wallpaper as an accent wall. It really ties the whole room together and makes it feel more cohesive."
+-   "I used the pink version of this wallpaper in my daughter's bedroom and she loves it! It's playful and fun without being too childish."
 
 ## Installation Tips
 
@@ -51,9 +51,9 @@ Installing wallpaper can be a bit tricky, but with the right tools and some pati
 
 If you're looking for more inspiration, check out these resources:
 
-- [Houzz](#): Browse thousands of photos of modern interiors featuring geometric wallpaper.
-- [Pinterest](#): Find DIY tutorials and creative ideas for using wallpaper in your home.
-- [Apartment Therapy](#): Get tips and advice on decorating with wallpaper from design experts.
+-   [Houzz](#): Browse thousands of photos of modern interiors featuring geometric wallpaper.
+-   [Pinterest](#): Find DIY tutorials and creative ideas for using wallpaper in your home.
+-   [Apartment Therapy](#): Get tips and advice on decorating with wallpaper from design experts.
 
 ## Contact Us
 

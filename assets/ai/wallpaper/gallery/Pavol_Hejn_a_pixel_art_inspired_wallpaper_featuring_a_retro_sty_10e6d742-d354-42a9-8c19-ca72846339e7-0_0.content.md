@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A pixel art-inspired wallpaper featuring a retro-style robot, with a limited color palette and pixelated lines."
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Welcome to our website featuring a stunning pixel art-inspired wallpaper! This design showcases a retro-style robot with a limited color palette and pixelated lines, perfect for those who appreciate the charm of classic video games.
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Dystopian Future Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a stunning wallpaper that will transport you to
 
 ## Features
 
-- Stylized illustration of a dystopian future
-- Metallic textures and digital glitch effects
-- High-quality resolution for a crisp and clear display
-- Compatible with desktop and mobile devices
+-   Stylized illustration of a dystopian future
+-   Metallic textures and digital glitch effects
+-   High-quality resolution for a crisp and clear display
+-   Compatible with desktop and mobile devices
 
 ## Download
 

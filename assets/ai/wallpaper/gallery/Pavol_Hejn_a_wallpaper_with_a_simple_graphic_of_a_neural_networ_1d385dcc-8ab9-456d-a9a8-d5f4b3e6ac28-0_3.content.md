@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper design that combines simplicity and sophistication. Our wallpaper features a graphic of a neural network, set against a background of complementary colors.
 

@@ -12,27 +12,32 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Dashboard Wallpaper
 
 Welcome to our website featuring a sleek and modern wallpaper design for your desktop or mobile device. Our wallpaper showcases a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.
 
 ## Features
-- Clean and minimalist design
-- High-resolution image quality
-- Perfect for technology enthusiasts and professionals
-- Suitable for both personal and professional use
+
+-   Clean and minimalist design
+-   High-resolution image quality
+-   Perfect for technology enthusiasts and professionals
+-   Suitable for both personal and professional use
 
 ## Compatibility
+
 Our wallpaper is compatible with a wide range of devices, including:
-- Desktop computers (Windows and Mac)
-- Laptops
-- Tablets
-- Smartphones
+
+-   Desktop computers (Windows and Mac)
+-   Laptops
+-   Tablets
+-   Smartphones
 
 ## Download Instructions
+
 To download our wallpaper, simply follow these steps:
+
 1. Click on the "Download" button located below.
 2. Save the image to your device.
 3. Set the image as your desktop or mobile wallpaper.

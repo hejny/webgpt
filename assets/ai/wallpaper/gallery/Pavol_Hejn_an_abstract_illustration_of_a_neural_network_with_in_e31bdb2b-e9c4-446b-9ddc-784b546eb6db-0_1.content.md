@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Neural Network Wallpaper for Tech Enthusiasts
 
@@ -30,17 +30,17 @@ Our website features an eye-catching wallpaper that showcases an abstract illust
 
 We believe that technology has the power to transform lives and make the world a better place. That's why we're dedicated to sharing stories of people whose lives have been positively impacted by technology. Here are some examples:
 
-- **John's Story:** John is a farmer who used to struggle with low crop yields due to unpredictable weather patterns. But after implementing precision agriculture techniques that utilize data analytics and machine learning algorithms, he was able to increase his crop yield by 30%.
+-   **John's Story:** John is a farmer who used to struggle with low crop yields due to unpredictable weather patterns. But after implementing precision agriculture techniques that utilize data analytics and machine learning algorithms, he was able to increase his crop yield by 30%.
 
-- **Samantha's Story:** Samantha is a wheelchair user who had difficulty navigating her city's public transportation system. But after the implementation of smart transit technologies like real-time bus tracking and accessible mobile apps, she's now able to travel independently and with ease.
+-   **Samantha's Story:** Samantha is a wheelchair user who had difficulty navigating her city's public transportation system. But after the implementation of smart transit technologies like real-time bus tracking and accessible mobile apps, she's now able to travel independently and with ease.
 
 ## Latest News and Trends
 
 Stay up-to-date with the latest news and trends in the tech industry through our curated articles and blog posts. From artificial intelligence and blockchain to virtual reality and cybersecurity, we cover it all. Here are some of our recent articles:
 
-- "How AI is Revolutionizing Healthcare"
-- "The Rise of NFTs: What You Need to Know"
-- "Cybersecurity Threats in the Age of Remote Work"
+-   "How AI is Revolutionizing Healthcare"
+-   "The Rise of NFTs: What You Need to Know"
+-   "Cybersecurity Threats in the Age of Remote Work"
 
 ## References
 

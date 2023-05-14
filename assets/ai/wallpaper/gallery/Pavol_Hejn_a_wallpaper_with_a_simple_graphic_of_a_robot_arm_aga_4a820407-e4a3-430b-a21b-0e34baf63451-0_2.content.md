@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Robot Arm Wallpaper for Your Tech-Themed Desktop
 
@@ -26,9 +26,9 @@ Looking for a simple yet stylish wallpaper to give your desktop a tech-themed ma
 
 Our wallpaper offers several benefits that make it stand out from other options:
 
-- **Simplicity:** The minimalist design of the robotic arm graphic makes it easy on the eyes and won't distract you from your work.
-- **Versatility:** The gradient background of two complementary colors means that this wallpaper will match well with a variety of desktop icons and themes.
-- **Quality:** Our wallpaper is high-resolution, ensuring that it will look crisp and clear on even the largest desktop screens.
+-   **Simplicity:** The minimalist design of the robotic arm graphic makes it easy on the eyes and won't distract you from your work.
+-   **Versatility:** The gradient background of two complementary colors means that this wallpaper will match well with a variety of desktop icons and themes.
+-   **Quality:** Our wallpaper is high-resolution, ensuring that it will look crisp and clear on even the largest desktop screens.
 
 ## User Stories
 
@@ -50,8 +50,8 @@ Ready to download our robot arm wallpaper? Follow these simple steps:
 
 Want to learn more about the inspiration behind our robot arm wallpaper? Check out these resources:
 
-- [Robotics in Manufacturing: How Robots Have Changed the Industry](#)
-- [The Evolution of Robotics: From Simple Machines to Artificial Intelligence](#)
+-   [Robotics in Manufacturing: How Robots Have Changed the Industry](#)
+-   [The Evolution of Robotics: From Simple Machines to Artificial Intelligence](#)
 
 ## Contact Us
 

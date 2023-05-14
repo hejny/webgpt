@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a stormy sky with lightning bolts for a weather or news website"
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 Welcome to our weather and news website, where we bring you the latest updates on all things related to the environment and current events. Our website is designed to keep you informed and up-to-date with accurate information that you can rely on.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Retro Space Station Wallpaper
 
@@ -28,9 +28,9 @@ This wallpaper is a perfect blend of retro and futuristic design elements. The p
 
 ## User Stories
 
-- "I've been looking for a wallpaper that combines my love for sci-fi and retro games, and this one is perfect!"
-- "I needed a new wallpaper for my work computer, and this one really stands out without being too distracting."
-- "My son loves space and video games, so I put this wallpaper on his tablet and he thinks it's the coolest thing ever."
+-   "I've been looking for a wallpaper that combines my love for sci-fi and retro games, and this one is perfect!"
+-   "I needed a new wallpaper for my work computer, and this one really stands out without being too distracting."
+-   "My son loves space and video games, so I put this wallpaper on his tablet and he thinks it's the coolest thing ever."
 
 ## How to Download
 
@@ -40,9 +40,9 @@ To download this wallpaper, simply click the "Download" button below the image. 
 
 If you're interested in learning more about pixel art and retro gaming, check out these resources:
 
-- [Pixel Joint](https://pixeljoint.com/) - A community dedicated to pixel art and graphics.
-- [Retro Gamer](https://www.retrogamer.net/) - A magazine and website focused on retro gaming.
-- [The Art of Atari](https://www.amazon.com/Art-Atari-Tim-Lapetino/dp/1524101036) - A book that explores the art and design of Atari games.
+-   [Pixel Joint](https://pixeljoint.com/) - A community dedicated to pixel art and graphics.
+-   [Retro Gamer](https://www.retrogamer.net/) - A magazine and website focused on retro gaming.
+-   [The Art of Atari](https://www.amazon.com/Art-Atari-Tim-Lapetino/dp/1524101036) - A book that explores the art and design of Atari games.
 
 ## Contact Us
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Spacecraft Pixel Art Wallpaper
 
@@ -30,9 +30,9 @@ Our spacecraft pixel art wallpaper is a high-quality digital image that can be u
 
 Here are some user stories from people who have downloaded our spacecraft pixel art wallpaper:
 
-- "I love this wallpaper! It brings back so many memories of playing old-school space shooter games."
-- "This wallpaper is perfect for my gaming setup. It adds a fun and playful touch to my desktop."
-- "As a sci-fi fan, I appreciate the retro-futuristic look of this wallpaper. It's like something out of an old pulp magazine."
+-   "I love this wallpaper! It brings back so many memories of playing old-school space shooter games."
+-   "This wallpaper is perfect for my gaming setup. It adds a fun and playful touch to my desktop."
+-   "As a sci-fi fan, I appreciate the retro-futuristic look of this wallpaper. It's like something out of an old pulp magazine."
 
 ## Download the Wallpaper
 
@@ -44,9 +44,9 @@ To download our spacecraft pixel art wallpaper, simply click on the link below a
 
 If you're interested in learning more about pixel art and its history, check out these resources:
 
-- [Pixel Art Academy](#)
-- [The History of Pixel Art](#)
-- [Pixel Joint - Pixel Art Community](#)
+-   [Pixel Art Academy](#)
+-   [The History of Pixel Art](#)
+-   [Pixel Joint - Pixel Art Community](#)
 
 ## Contact Us
 
@@ -60,9 +60,9 @@ Address: 123 Main Street, Anytown USA
 
 Follow us on social media:
 
-- [Twitter](#)
-- [Instagram](#)
-- [Facebook](#)
+-   [Twitter](#)
+-   [Instagram](#)
+-   [Facebook](#)
 
 ---
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # The Hidden Path: A Dark and Moody Forest for Your Horror or Mystery Website
 
@@ -32,9 +32,9 @@ Our collection includes a wide variety of dark and moody forest wallpapers, each
 
 Some of our most popular wallpapers include:
 
-- "The Haunted Woods": A misty forest shrouded in ghostly apparitions.
-- "The Enchanted Forest": A magical forest filled with wonder and danger.
-- "The Forbidden Forest": A dark and foreboding forest with an ominous aura.
+-   "The Haunted Woods": A misty forest shrouded in ghostly apparitions.
+-   "The Enchanted Forest": A magical forest filled with wonder and danger.
+-   "The Forbidden Forest": A dark and foreboding forest with an ominous aura.
 
 All of our wallpapers are available in a variety of resolutions to ensure a perfect fit for your website.
 
@@ -52,4 +52,4 @@ If you have any questions or comments about our wallpapers, please don't hesitat
 
 ## References
 
-- [Unsplash](https://unsplash.com/photos/0p7qS8V6gTw) - The original photo used to create our featured wallpaper.
+-   [Unsplash](https://unsplash.com/photos/0p7qS8V6gTw) - The original photo used to create our featured wallpaper.

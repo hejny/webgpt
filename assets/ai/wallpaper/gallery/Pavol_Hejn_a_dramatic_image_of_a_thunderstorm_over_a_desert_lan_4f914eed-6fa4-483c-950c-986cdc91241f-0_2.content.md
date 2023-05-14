@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dramatic image of a thunderstorm over a desert landscape for a weather or news website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our weather and news website, where we strive to provide you with the latest updates on current events and weather conditions around the world. As part of our commitment to bringing you the most captivating visual experience, we are proud to present a dramatic image of a thunderstorm over a desert landscape as our wallpaper.
 

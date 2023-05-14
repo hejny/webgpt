@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Roboto"-->
+<!--font:Roboto-->
 
 # Digital Clock Wallpaper
 
@@ -20,9 +20,9 @@ Welcome to our website featuring a simple and sleek digital clock wallpaper. Thi
 
 ## Features
 
-- Simple graphic design of a digital clock or timer
-- Space for setting alarms and countdowns
-- Sleek and modern look
+-   Simple graphic design of a digital clock or timer
+-   Space for setting alarms and countdowns
+-   Sleek and modern look
 
 ## How to Use
 
