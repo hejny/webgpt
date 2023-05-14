@@ -138,7 +138,7 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
     });
 
     if (isCommited) {
-        await commit(getWallpapersDir(), `🧾 Generate wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾 Generate wallpapers texts`);
     }
 
     console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
