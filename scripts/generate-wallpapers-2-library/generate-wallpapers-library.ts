@@ -118,7 +118,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
         ).replace(/^\.\/\.\.\//, '../');
 
         const metadataImportPath = wallpaperImportPath.replace(/\.png$/, '.json');
-        const textsImportPath = wallpaperImportPath.replace(/\.png$/, '.texts.json');
+        const contentImportPath = wallpaperImportPath.replace(/\.png$/, '.content.md');
         const colorStatsImportPath = wallpaperImportPath.replace(/\.png$/, '.colors.json');
 
         wallpapers.push({ entityName: componentName, entityPath: wallpaperFilePath });
@@ -145,9 +145,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             // import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
             import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
             import colorStats from '${colorStatsImportPath}'
+            import content from '${contentImportPath}';
             import metadata from '${metadataImportPath}';
-            import texts from '${textsImportPath}';
-
 
             /**
              * Image of ${metadata.prompt}
@@ -178,7 +177,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             ${componentName}.src = new URL('${wallpaperUrl}');
             ${componentName}.metadata = metadata satisfies IWallpaperMetadata;
             ${componentName}.colorStats = hydrateColorStats(colorStats);
-            ${componentName}.texts = texts satisfies IWallpaperTexts;
+            ${componentName}.content = content;
         `,
         )
             .then((content) => {
