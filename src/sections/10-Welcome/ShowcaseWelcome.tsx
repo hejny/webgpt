@@ -19,7 +19,7 @@ export function ShowcaseWelcomeSection() {
             </h1>
             */}
 
-            <Article content={wallpaper.content} isEnhanced />
+            <Article content={wallpaper.content} />
         </Section>
     );
 }

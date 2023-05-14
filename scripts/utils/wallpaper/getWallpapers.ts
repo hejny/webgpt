@@ -40,6 +40,7 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
 
         content = removeMarkdownComments(content);
         content = spaceTrim(content);
+        // TODO: !! Replace here [email protected]
 
         const title =
             content.match(/^#\s*(?<title>.*)\s*$/m)?.groups?.title ??
