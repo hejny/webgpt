@@ -50,9 +50,9 @@
         {
             "name": "🏭🖼️ Generate wallpapers (every step + commit)",
             "commands": [
-                "ts-node ./scripts/generate-wallpapers-1-texts/generate-wallpapers-texts.ts --commit",
-                "ts-node ./scripts/generate-wallpapers-1-color-stats/generate-wallpapers-color-stats.ts --commit",
-                "ts-node ./scripts/generate-wallpapers-2-library/generate-wallpapers-library.ts --commit"
+                "ts-node ./scripts/generate-wallpapers-1-texts/generate-wallpapers-texts.ts --parallel 10 --commit",
+                "ts-node ./scripts/generate-wallpapers-1-color-stats/generate-wallpapers-color-stats.ts --parallel 10 --commit",
+                "ts-node ./scripts/generate-wallpapers-2-library/generate-wallpapers-library.ts --parallel 10 --commit"
             ],
             "onlySingle": true,
             "focus": true
@@ -65,19 +65,23 @@
         },
         {
             "name": "🏭🧾 [2-3/4] Generate wallpapers texts",
-            "commands": ["ts-node ./scripts/generate-wallpapers-1-texts/generate-wallpapers-texts.ts"],
+            "commands": ["ts-node ./scripts/generate-wallpapers-1-texts/generate-wallpapers-texts.ts --parallel 10"],
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🎨 [2-3/4] Generate wallpapers color stats",
-            "commands": ["ts-node ./scripts/generate-wallpapers-1-color-stats/generate-wallpapers-color-stats.ts"],
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-1-color-stats/generate-wallpapers-color-stats.ts --parallel 10"
+            ],
             "onlySingle": true,
             "focus": true
         },
         {
             "name": "🏭🖼️ [ 4/4 ] Generate wallpapers library",
-            "commands": ["ts-node ./scripts/generate-wallpapers-2-library/generate-wallpapers-library.ts"],
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-2-library/generate-wallpapers-library.ts --parallel 10"
+            ],
             "onlySingle": true,
             "focus": true
         },

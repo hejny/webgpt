@@ -48,7 +48,7 @@ async function forEachWallpaper(options: {
 
     const stats = {
         total: wallpapersPaths.length,
-        done: -1,
+        done: 0,
         lastTime: moment(),
         startTime: moment(),
     };
@@ -56,44 +56,61 @@ async function forEachWallpaper(options: {
     const workingOn = new Set<Promise<void>>();
 
     for (const wallpaperPath of wallpapersPaths) {
-        // Note: We can not make this parallel because of [5]
         await forPlay();
 
-        // [🥼] This is the place
-        // TODO: Make stats to be working with parallel
-        stats.done++;
-        const statsTotalString = `${stats.done}/${stats.total}`;
-        const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
-        const now = moment();
-        const durationOfOne = now.diff(stats.lastTime);
-        stats.lastTime = now;
-        const statsSpeedString = `${Math.round(((60 * 1000) / durationOfOne) * 10) / 10} img/m`;
-        // const elapsedTime = moment().diff(stats.startTime);
-        // const estimatedTime = (elapsedTime / stats.done) * (stats.total - stats.done);
-        const estimatedTime = durationOfOne * (stats.total - stats.done);
-        const statsTimeEstimateString =
-            estimatedTime === Infinity ? '' : `${moment.duration(estimatedTime).humanize()} left`;
-        const statsString = `${statsPercentString} ${statsTotalString} ${statsSpeedString} ${statsTimeEstimateString}`;
-
-        console.info(chalk.bgGray(statsString) + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
+        console.info(chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
         const contentPath = wallpaperPath.replace(/\.png$/, '.contentx.md');
 
         if (!(await isFileExisting(metadataPath))) {
-            // TODO: !! Do not crash for all processes JUST [4] report at the end
+            // TODO: Do not crash for all processes JUST [4] report at the end
             throw new Error(`Metadata file does not exist "${metadataPath}"`);
         }
 
-        // const work = /* not await */ makeWork({ metadataPath, contentPath });
-        const work = forTime(1000);
+        const work = /* not await */ makeWork({ metadataPath, contentPath });
+        // [3] const work = forTime(0.0263 * 1000 * 60);
         workingOn.add(work);
-        // !!! Timeout + [4] report at the end
-        work.catch(() => void 0).then(() => void workingOn.delete(work));
+
+        work.catch(() => {
+            // TODO: Add timeout error
+            // TODO: [4] report all errors at the end
+        }).then(() => {
+            stats.done++;
+            workingOn.delete(work);
+        });
 
         if (workingOn.size >= parallel) {
-            console.info(chalk.bgGray(`Waiting for ${workingOn.size} wallpapers to finish`));
-            await Promise.all(workingOn);
+            //-----------
+            // [🥼] This is the place
+            const statsTotalString = `${stats.done}/${stats.total}`;
+            const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
+            const now = moment();
+
+            /*
+            TODO: !! [3] Make it work for parallel
+            const durationOfOne = now.diff(stats.lastTime);
+            stats.lastTime = now;
+            const statsSpeedString = `${Math.round(((60 * 1000) / durationOfOne) * 10) / 10} img/m`;
+            // const elapsedTime = moment().diff(stats.startTime);
+            // const estimatedTime = (elapsedTime / stats.done) * (stats.total - stats.done);
+            const estimatedTime = durationOfOne * (stats.total - stats.done);
+            const statsTimeEstimateString =
+                estimatedTime === Infinity ? '' : `${moment.duration(estimatedTime).humanize()} left`;
+            */
+
+            const statsString = [
+                statsPercentString,
+                statsTotalString,
+                // [3] statsSpeedString,
+                // [3] statsTimeEstimateString,
+                `${workingOn.size} running`,
+            ].join(' ');
+
+            console.info(chalk.bgGray(statsString));
+            //-----------
+
+            await Promise.race(workingOn);
         }
     }
 }
@@ -158,7 +175,7 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
                     const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
                         parentMessageId: isContinuingConversation
                             ? lastMessageId
-                            : undefined /* <- Note: [5] This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
+                            : undefined /* <- Note: This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
                     });
 
                     lastMessageId = gptResponseForContent.id;
