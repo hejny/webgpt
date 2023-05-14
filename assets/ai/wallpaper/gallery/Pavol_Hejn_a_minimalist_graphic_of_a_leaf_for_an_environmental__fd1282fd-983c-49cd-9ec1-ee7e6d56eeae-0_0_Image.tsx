@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_0.colors.json';
 import content from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_0.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_0.json';

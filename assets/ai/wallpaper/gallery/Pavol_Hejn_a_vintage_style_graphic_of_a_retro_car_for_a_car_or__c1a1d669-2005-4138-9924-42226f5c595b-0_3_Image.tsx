@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_3.colors.json';
 import content from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_3.content.md';
 import metadata from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_3.json';

@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.colors.json';
 import content from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.content.md';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.json';

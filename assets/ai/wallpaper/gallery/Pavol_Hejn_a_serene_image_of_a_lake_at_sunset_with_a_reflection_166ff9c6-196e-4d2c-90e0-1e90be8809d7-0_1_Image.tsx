@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.colors.json';
 import content from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.content.md';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.json';

@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_1.colors.json';
 import content from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_1.content.md';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_1.json';

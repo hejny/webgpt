@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__8dae9063-5b66-4bde-be68-1a3bf23a3fdb-0_3.colors.json';
 import content from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__8dae9063-5b66-4bde-be68-1a3bf23a3fdb-0_3.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__8dae9063-5b66-4bde-be68-1a3bf23a3fdb-0_3.json';

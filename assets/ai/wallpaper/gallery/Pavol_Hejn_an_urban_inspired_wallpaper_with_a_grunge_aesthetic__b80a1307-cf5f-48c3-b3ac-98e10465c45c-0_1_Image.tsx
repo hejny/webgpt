@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__b80a1307-cf5f-48c3-b3ac-98e10465c45c-0_1.colors.json';
 import content from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__b80a1307-cf5f-48c3-b3ac-98e10465c45c-0_1.content.md';
 import metadata from './Pavol_Hejn_an_urban_inspired_wallpaper_with_a_grunge_aesthetic__b80a1307-cf5f-48c3-b3ac-98e10465c45c-0_1.json';

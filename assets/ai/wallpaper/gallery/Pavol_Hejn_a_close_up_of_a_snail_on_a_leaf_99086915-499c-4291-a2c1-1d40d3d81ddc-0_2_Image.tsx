@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_2.colors.json';
 import content from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_2.json';

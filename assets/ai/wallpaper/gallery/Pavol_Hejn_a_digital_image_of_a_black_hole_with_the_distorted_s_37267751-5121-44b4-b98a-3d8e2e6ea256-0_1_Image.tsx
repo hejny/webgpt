@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_1.colors.json';
 import content from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_1.content.md';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_1.json';

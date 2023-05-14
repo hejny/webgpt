@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.colors.json';
 import content from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.content.md';
 import metadata from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_1.json';

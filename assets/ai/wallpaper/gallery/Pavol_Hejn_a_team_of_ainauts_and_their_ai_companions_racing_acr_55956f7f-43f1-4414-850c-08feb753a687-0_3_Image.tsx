@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_55956f7f-43f1-4414-850c-08feb753a687-0_3.colors.json';
 import content from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_55956f7f-43f1-4414-850c-08feb753a687-0_3.content.md';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_racing_acr_55956f7f-43f1-4414-850c-08feb753a687-0_3.json';

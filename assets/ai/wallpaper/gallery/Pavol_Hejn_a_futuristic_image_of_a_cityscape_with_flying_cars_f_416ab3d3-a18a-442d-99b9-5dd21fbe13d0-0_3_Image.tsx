@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_416ab3d3-a18a-442d-99b9-5dd21fbe13d0-0_3.colors.json';
 import content from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_416ab3d3-a18a-442d-99b9-5dd21fbe13d0-0_3.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_416ab3d3-a18a-442d-99b9-5dd21fbe13d0-0_3.json';

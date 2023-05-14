@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_2.colors.json';
 import content from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_eb03508b-fde5-40fd-b4b4-8b65a2d23019-0_2.json';

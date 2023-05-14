@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_3.colors.json';
 import content from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_3.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_spacecraft_crewed_entirely_by_ainauts_h_f3a4128a-879f-4434-9c41-0a5c719a0e72-0_3.json';

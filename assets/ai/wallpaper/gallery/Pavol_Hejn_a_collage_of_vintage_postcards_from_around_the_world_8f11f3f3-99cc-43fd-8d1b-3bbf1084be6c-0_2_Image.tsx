@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.colors.json';
 import content from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.content.md';
 import metadata from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.json';

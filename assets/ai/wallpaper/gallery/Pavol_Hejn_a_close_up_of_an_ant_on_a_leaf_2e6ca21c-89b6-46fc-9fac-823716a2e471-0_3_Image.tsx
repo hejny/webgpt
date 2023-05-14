@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { Color } from '../../../../src/utils/color/Color';
 import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl';
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
-import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_3.colors.json';
 import content from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_3.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_an_ant_on_a_leaf_2e6ca21c-89b6-46fc-9fac-823716a2e471-0_3.json';
