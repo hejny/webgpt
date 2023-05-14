@@ -1,0 +1,24 @@
+{
+    "averageColor": "#323228",
+    "lightestColor": "#ffffff",
+    "darkestColor": "#000000",
+    "minmaxWhite": ["#ffffff", "#000000"],
+    "minmaxRed": ["#ee0000", "#66eedd"],
+    "minmaxGreen": ["#55aa44", "#ee0000"],
+    "minmaxBlue": ["#006699", "#ffcc11"],
+    "mostFrequentColor": "#664433",
+    "mostSaturatedColor": "#002222",
+    "mostGroupedColor": "#001111",
+    "bottom": {
+        "averageColor": "#30342a",
+        "lightestColor": "#ffffff",
+        "darkestColor": "#000000",
+        "minmaxWhite": ["#ffffff", "#000000"],
+        "minmaxRed": ["#ee0000", "#66eedd"],
+        "minmaxGreen": ["#11aa77", "#ee0000"],
+        "minmaxBlue": ["#003366", "#ffbb11"],
+        "mostFrequentColor": "#664433",
+        "mostSaturatedColor": "#001111",
+        "mostGroupedColor": "#001111"
+    }
+}
