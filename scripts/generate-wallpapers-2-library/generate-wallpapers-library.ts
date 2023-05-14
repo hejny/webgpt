@@ -91,6 +91,8 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             throw new Error(`Can not find jobUuid in "${name}"`);
         }
 
+        // TODO: Fix https://www.midjourney.com/app/jobs/[HERE] is some nonsence number
+
         const jobUrl = new URL(`https://www.midjourney.com/app/jobs/${jobUuid}`);
 
         const nameWithoutExtension = name.replace(/\.png$/, '');
