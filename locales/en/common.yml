@@ -65,7 +65,7 @@ Footer:
     home: Home
     gallery: Gallery
     contact: Contact
-    technical-details: Technical details
+    technical: Technical
 
 TechnicalInfo:
     title: About

@@ -15,9 +15,11 @@ export function FooterSection() {
             <ul>
                 <li>© {new Date().getFullYear()}</li>
 
+                {/*
                 <li>
                     <Link href="https://pavolhejny.com">Pavol Hejný</Link>
                 </li>
+                */}
 
                 <li>
                     <Link href="/">{t('Footer.home')}</Link>
@@ -34,7 +36,7 @@ export function FooterSection() {
                 </li>
 
                 <li>
-                    <Link href="/about">{t('Footer.technical-details')}</Link>
+                    <Link href="/about">{t('Footer.technical')}</Link>
                 </li>
 
                 {/*
