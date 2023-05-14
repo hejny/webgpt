@@ -1,13 +1,48 @@
 .GetWebButton {
     /* TODO: Use or remove empty css */
 
-    z-index: 9999;
+    z-index: 1000;
     position: fixed;
-    left: 30px;
-    bottom: 30px;
+    right: 15px;
+    bottom: 15px;
 
-    padding: 30px;
-    background-color: yellow;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(43, 43, 43, 0.774);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.685);
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.getButton,
+.galleryButton,
+.randomButton {
+    text-align: center;
+    font-size: 17px;
+    margin: 5px;
+}
+
+.getButton {
+    font-size: 20px;
+    font-weight: bold;
+    /*
+    background-color: rgb(181, 230, 135);
+    */
+}
+
+.galleryButton {
+    /*
+    background-color: rgb(136, 162, 196);
+    color: black !important;
+    */
+}
+
+.randomButton {
+    /*
+    background-color: rgb(136, 162, 196);
+    color: black !important;
+    */
 }

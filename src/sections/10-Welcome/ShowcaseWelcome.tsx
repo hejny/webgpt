@@ -1,5 +1,4 @@
 import { Article } from '../../components/Article/Article';
-import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
 import { Section } from '../../components/Section/Section';
 import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -23,8 +22,6 @@ export function ShowcaseWelcomeSection() {
             <div style={{ fontFamily: `'${wallpaper.font}', sans-serif` }}>
                 <Article content={wallpaper.content} />
             </div>
-
-            <GetWebButton />
         </Section>
     );
 }
