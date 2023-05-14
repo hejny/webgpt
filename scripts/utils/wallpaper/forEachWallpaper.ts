@@ -74,4 +74,7 @@ export async function forEachWallpaper(options: {
             await Promise.race(workingOn);
         }
     }
+
+    // Note: And finally waiting for all the remaining ones
+    await Promise.all(workingOn);
 }

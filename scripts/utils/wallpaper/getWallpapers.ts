@@ -16,15 +16,17 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
         const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.json');
         const contentPath = metadataPath.replace(/\.json$/, '.content.md');
 
+        const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
+        const id = metadata!.id;
+
         if (!(await isFileExisting(colorStatsPath))) {
-            throw new Error(`Colors file does not exist "${colorStatsPath}"`);
+            throw new Error(`Colors file for ${id} does not exist "${colorStatsPath}"`);
         }
 
         if (!(await isFileExisting(contentPath))) {
-            throw new Error(`Content file does not exist "${contentPath}"`);
+            throw new Error(`Content file for ${id} does not exist "${contentPath}"`);
         }
 
-        const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
         const colorStats = JSON.parse(await readFile(colorStatsPath, 'utf8')) as IWallpaperColorStats;
         let content = await readFile(contentPath, 'utf8');
 
@@ -38,7 +40,6 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
             content.match(/^#\s*(?<title>.*)\s*$/m)?.groups?.title ??
             'Untitled'; /* <- TODO: Make util extractTitleFromMarkdown */
 
-        const id = metadata!.id;
         const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
         const prompt = metadata!.prompt;
 
