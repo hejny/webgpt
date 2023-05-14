@@ -29,7 +29,7 @@ export function AppHead(props: AppHeadProps) {
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
     const skin = useSkin();
 
-    const title = '!!!';
+    const title = '!!!!';
     const description = removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content));
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
@@ -42,7 +42,7 @@ export function AppHead(props: AppHeadProps) {
                 <meta name="viewport" content="width=device-width" />
 
                 {/* Primary meta tags */}
-                <title>!!!</title>
+                <title>{title}</title>
                 <meta name="description" content={removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content))} />
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
                 <meta

@@ -15,7 +15,7 @@ export function ShowcaseWelcomeSection() {
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
             <h1 className={styles.handritten}>
-                <HandwrittenText color={skin.highlightedTextColor}>{/*wallpaper.title*/ '!!!'}</HandwrittenText>
+                <HandwrittenText color={skin.highlightedTextColor}>{/*wallpaper.title*/ '!!!!'}</HandwrittenText>
             </h1>
 
             <Article content={wallpaper.content} isEnhanced />

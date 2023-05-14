@@ -37,7 +37,3 @@ export async function createImageInNode(path: string): Promise<Image> {
     // Return the image object as a promise
     return Promise.resolve(image);
 }
-
-/**
- * TODO: !!! createImageInNodeFromFile vs createImageInNodeFromUrl OR createImageInNode and pass the buffer regardless of the source
- */

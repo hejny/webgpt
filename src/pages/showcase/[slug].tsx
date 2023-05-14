@@ -55,12 +55,11 @@ export async function getStaticProps({ locale }: { locale: string }) {
 
 /**
  * TODO: !!! Showcase should contain link back to mainpage <Link className="button" href="/">{t('Welcome.back-home')}</Link>
- * TODO: !!! Special text for each wallpaper
  * TODO: !!! Special effect for each wallpaper
  * TODO: !!! When sharing link to showcase, preview to socials should work
  * TODO: !!! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !!! Preview as on [Mobile][Tablet] - show the direct QR code
- * TODO: !!! Button to [I want this website] 
+ * TODO: !!!! Button to [I want this website] 
  * TODO: !! Better IDs for wallpapers - make it without GET parameters
  * TODO: !! Make foreground-background paralax effect for each wallpaper
  * TODO: !! Fix Shuffle without React hydration error
