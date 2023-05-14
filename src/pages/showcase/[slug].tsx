@@ -41,8 +41,8 @@ export default function ShowcasePage({ wallpapers }: PageProps) {
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
     return {
-        paths: (await getWallpapers()).map(({ id }) => id), // <- Note: indicates that no page needs be created at build time
-        fallback: 'blocking', // <- Note: indicates the type of fallback
+        paths: (await getWallpapers()).map(({ id }) => `/showcase/${id}`), // <- Note: indicates that no page needs be created at build time
+        fallback: 'blocking', // <- Note: indicates the type of fallback - TODO: !!! Probbably change to false and solve 404 problem
     };
 };
 
@@ -50,7 +50,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: await getWallpapers(),
+            wallpapers: await getWallpapers(/* <- TODO: !!! Put here ONLY the listed wallpaper */),
         },
     };
 }
