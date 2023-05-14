@@ -61,7 +61,7 @@ async function forEachWallpaper(options: {
         console.info(chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
-        const contentPath = wallpaperPath.replace(/\.png$/, '.contentx.md');
+        const contentPath = wallpaperPath.replace(/\.png$/, '.content.md');
 
         if (!(await isFileExisting(metadataPath))) {
             // TODO: Do not crash for all processes JUST [4] report at the end
