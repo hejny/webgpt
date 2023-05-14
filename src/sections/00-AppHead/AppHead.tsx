@@ -21,7 +21,7 @@ export function AppHead() {
             removeMarkdownLinks(wallpaper.content),
         ); /* <- TODO: !!! Better/remove the prefix 👓⭐ ?Generate by ChatGPT? */
 
-    const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
+    const homeUrl = 'https://ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
     return (
         <>

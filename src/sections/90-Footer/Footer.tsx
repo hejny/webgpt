@@ -27,7 +27,7 @@ export function FooterSection() {
 
                 {/*
                 <li>
-                    <Link href="https://blog.ai.ai.hejny.org">Blog</Link>
+                    <Link href="https://blog.pavolhejny.com">Blog</Link>
                 </li>
                 */}
 

@@ -20,7 +20,7 @@ jobs:
 
             - name: Configurate GIT
               run: |
-                  git config --global user.email "me@ai.ai.hejny.org"
+                  git config --global user.email "me@pavolhejny.com"
                   git config --global user.name "hejny"
 
             # [0] - name: Generate projects library

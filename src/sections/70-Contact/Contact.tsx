@@ -76,7 +76,7 @@ export function ContactSection(props: ContactProps) {
                                 <a href="https://twitter.com/pavolhejny">Twitter</a>
                             </li>
                             <li>
-                                <a href="https://blog.ai.ai.hejny.org">Blog</a>
+                                <a href="https://blog.pavolhejny.com">Blog</a>
                             </li>
                             <li>
                                 <a href="https://www.blockchain.com/btc/address/bc1qyuy7j80lxepv2wjdvflgajyatpmyqkmc75spvq">
