@@ -3,7 +3,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Vector } from 'xyzt';
-import { generated_wallpapers } from '../../assets/ai/wallpaper';
+import { IWallpaper } from '../../assets/ai/wallpaper/IWallpaper';
+import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../components/ImagineTag/ImagineTag';
@@ -22,7 +23,11 @@ import { skinFromWallpaper } from '../utils/skinFromWallpaper';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
-export default function GalleryPage() {
+interface GalleryPageProps {
+    wallpapers: Array<IWallpaper>;
+}
+
+export default function GalleryPage({ wallpapers }: GalleryPageProps) {
     const wallpaper = useWallpaper();
 
     return (
@@ -48,7 +53,7 @@ export default function GalleryPage() {
                         <p>Images used on this page are generated using MidJourney:</p>
 
                         <Items itemsOnRow={2}>
-                            {generated_wallpapers
+                            {wallpapers
                                 // Random sort
                                 .sort(() => Math.random() - 0.5)
                                 .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
@@ -107,6 +112,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
+            wallpapers: await getWallpapers(),
         },
     };
 }
