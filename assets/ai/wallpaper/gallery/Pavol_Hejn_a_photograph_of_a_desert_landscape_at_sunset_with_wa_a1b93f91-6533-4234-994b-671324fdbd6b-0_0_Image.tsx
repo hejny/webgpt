@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.json';
-import texts from './Pavol_Hejn_a_photograph_of_a_desert_landscape_at_sunset_with_wa_a1b93f91-6533-4234-994b-671324fdbd6b-0_0.texts.json';
 
 /**
  * Image of A photograph of a desert landscape at sunset, with warm colors and long shadows.
@@ -39,7 +39,6 @@ export function APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b6
         />
     );
 }
-
 APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.src = new URL(
     'https://cdn.midjourney.com/a1b93f91-6533-4234-994b-671324fdbd6b/0_0.png',
 );
@@ -47,5 +46,4 @@ APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_I
     metadata satisfies IWallpaperMetadata;
 APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfADesertLandscapeAtSunsetWithWaA1b93f9165334234994b671324fdbd6b0_0_Image.content = content;

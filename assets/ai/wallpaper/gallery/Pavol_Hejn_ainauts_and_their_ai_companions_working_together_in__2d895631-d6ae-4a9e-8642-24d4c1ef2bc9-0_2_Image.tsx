@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.colors.json';
+import content from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.content.md';
 import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.json';
-import texts from './Pavol_Hejn_ainauts_and_their_ai_companions_working_together_in__2d895631-d6ae-4a9e-8642-24d4c1ef2bc9-0_2.texts.json';
 
 /**
  * Image of AInauts and their AI companions working together in a massive, zero-gravity space station.
@@ -39,7 +39,6 @@ export function AinautsAndTheirAiCompanionsWorkingTogetherInD895631D6ae4a9e86422
         />
     );
 }
-
 AinautsAndTheirAiCompanionsWorkingTogetherInD895631D6ae4a9e864224d4c1ef2bc902_2_Image.src = new URL(
     'https://cdn.midjourney.com/2d895631-d6ae-4a9e-8642-24d4c1ef2bc9/0_2.png',
 );
@@ -47,5 +46,4 @@ AinautsAndTheirAiCompanionsWorkingTogetherInD895631D6ae4a9e864224d4c1ef2bc902_2_
     metadata satisfies IWallpaperMetadata;
 AinautsAndTheirAiCompanionsWorkingTogetherInD895631D6ae4a9e864224d4c1ef2bc902_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AinautsAndTheirAiCompanionsWorkingTogetherInD895631D6ae4a9e864224d4c1ef2bc902_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AinautsAndTheirAiCompanionsWorkingTogetherInD895631D6ae4a9e864224d4c1ef2bc902_2_Image.content = content;

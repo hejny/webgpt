@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_3aed9d31-5666-4b64-a335-e952ca793a6a-0_0.colors.json';
+import content from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_3aed9d31-5666-4b64-a335-e952ca793a6a-0_0.content.md';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_3aed9d31-5666-4b64-a335-e952ca793a6a-0_0.json';
-import texts from './Pavol_Hejn_a_pixel_art_depiction_of_a_space_station_with_blocky_3aed9d31-5666-4b64-a335-e952ca793a6a-0_0.texts.json';
 
 /**
  * Image of A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel.
@@ -39,7 +39,6 @@ export function APixelArtDepictionOfASpaceStationWithBlocky3aed9d3156664b64A335E
         />
     );
 }
-
 APixelArtDepictionOfASpaceStationWithBlocky3aed9d3156664b64A335E952ca793a6a0_0_Image.src = new URL(
     'https://cdn.midjourney.com/3aed9d31-5666-4b64-a335-e952ca793a6a/0_0.png',
 );
@@ -47,5 +46,4 @@ APixelArtDepictionOfASpaceStationWithBlocky3aed9d3156664b64A335E952ca793a6a0_0_I
     metadata satisfies IWallpaperMetadata;
 APixelArtDepictionOfASpaceStationWithBlocky3aed9d3156664b64A335E952ca793a6a0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-APixelArtDepictionOfASpaceStationWithBlocky3aed9d3156664b64A335E952ca793a6a0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+APixelArtDepictionOfASpaceStationWithBlocky3aed9d3156664b64A335E952ca793a6a0_0_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_2.colors.json';
+import content from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_2.content.md';
 import metadata from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_2.json';
-import texts from './Pavol_Hejn_a_pixel_art_depiction_of_a_spacecraft_with_blocky_sh_914c341b-c582-43fa-908c-c2b67d4a0e55-0_2.texts.json';
 
 /**
  * Image of A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.
@@ -39,7 +39,6 @@ export function APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC
         />
     );
 }
-
 APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC2b67d4a0e550_2_Image.src = new URL(
     'https://cdn.midjourney.com/914c341b-c582-43fa-908c-c2b67d4a0e55/0_2.png',
 );
@@ -47,5 +46,4 @@ APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC2b67d4a0e550_2_I
     metadata satisfies IWallpaperMetadata;
 APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC2b67d4a0e550_2_Image.colorStats =
     hydrateColorStats(colorStats);
-APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC2b67d4a0e550_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+APixelArtDepictionOfASpacecraftWithBlockySh914c341bC58243fa908cC2b67d4a0e550_2_Image.content = content;

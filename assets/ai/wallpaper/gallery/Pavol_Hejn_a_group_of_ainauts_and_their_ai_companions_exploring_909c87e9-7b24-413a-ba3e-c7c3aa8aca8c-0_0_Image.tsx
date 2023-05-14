@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_and_their_ai_companions_exploring_909c87e9-7b24-413a-ba3e-c7c3aa8aca8c-0_0.texts.json';
 
 /**
  * Image of A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsAndTheirAiCompanionsExploring909c87e97b24413aBa3e
         />
     );
 }
-
 AGroupOfAinautsAndTheirAiCompanionsExploring909c87e97b24413aBa3eC7c3aa8aca8c0_0_Image.src = new URL(
     'https://cdn.midjourney.com/909c87e9-7b24-413a-ba3e-c7c3aa8aca8c/0_0.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsAndTheirAiCompanionsExploring909c87e97b24413aBa3eC7c3aa8aca8c0_0_
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsAndTheirAiCompanionsExploring909c87e97b24413aBa3eC7c3aa8aca8c0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsAndTheirAiCompanionsExploring909c87e97b24413aBa3eC7c3aa8aca8c0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsAndTheirAiCompanionsExploring909c87e97b24413aBa3eC7c3aa8aca8c0_0_Image.content = content;

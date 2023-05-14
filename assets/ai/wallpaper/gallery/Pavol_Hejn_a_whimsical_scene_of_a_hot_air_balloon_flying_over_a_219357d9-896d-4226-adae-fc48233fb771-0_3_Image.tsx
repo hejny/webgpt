@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_219357d9-896d-4226-adae-fc48233fb771-0_3.colors.json';
+import content from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_219357d9-896d-4226-adae-fc48233fb771-0_3.content.md';
 import metadata from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_219357d9-896d-4226-adae-fc48233fb771-0_3.json';
-import texts from './Pavol_Hejn_a_whimsical_scene_of_a_hot_air_balloon_flying_over_a_219357d9-896d-4226-adae-fc48233fb771-0_3.texts.json';
 
 /**
  * Image of A whimsical scene of a hot air balloon flying over a city for a lifestyle or adventure website
@@ -39,7 +39,6 @@ export function AWhimsicalSceneOfAHotAirBalloonFlyingOverA219357d9896d4226AdaeFc
         />
     );
 }
-
 AWhimsicalSceneOfAHotAirBalloonFlyingOverA219357d9896d4226AdaeFc48233fb7710_3_Image.src = new URL(
     'https://cdn.midjourney.com/219357d9-896d-4226-adae-fc48233fb771/0_3.png',
 );
@@ -47,5 +46,4 @@ AWhimsicalSceneOfAHotAirBalloonFlyingOverA219357d9896d4226AdaeFc48233fb7710_3_Im
     metadata satisfies IWallpaperMetadata;
 AWhimsicalSceneOfAHotAirBalloonFlyingOverA219357d9896d4226AdaeFc48233fb7710_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AWhimsicalSceneOfAHotAirBalloonFlyingOverA219357d9896d4226AdaeFc48233fb7710_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWhimsicalSceneOfAHotAirBalloonFlyingOverA219357d9896d4226AdaeFc48233fb7710_3_Image.content = content;

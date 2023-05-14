@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_ladybug_on_a_leaf_b08189dd-e46b-48a8-89e6-110b45d1788d-0_1.texts.json';
 
 /**
  * Image of A close-up of a ladybug on a leaf
@@ -37,10 +37,9 @@ export function ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Ima
         />
     );
 }
-
 ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.src = new URL(
     'https://cdn.midjourney.com/b08189dd-e46b-48a8-89e6-110b45d1788d/0_1.png',
 );
 ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfALadybugOnALeafB08189ddE46b48a889e6110b45d1788d0_1_Image.content = content;

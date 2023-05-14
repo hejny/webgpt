@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_8e34c1cd-472a-4a41-8c00-5061ce80dd23-0_1.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_8e34c1cd-472a-4a41-8c00-5061ce80dd23-0_1.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_8e34c1cd-472a-4a41-8c00-5061ce80dd23-0_1.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_cyborg_with_a_metallic_body_and_8e34c1cd-472a-4a41-8c00-5061ce80dd23-0_1.texts.json';
 
 /**
  * Image of An illustration of a cyborg with a metallic body and glowing eyes
@@ -39,7 +39,6 @@ export function AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005
         />
     );
 }
-
 AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_1_Image.src = new URL(
     'https://cdn.midjourney.com/8e34c1cd-472a-4a41-8c00-5061ce80dd23/0_1.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_1_I
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfACyborgWithAMetallicBodyAnd8e34c1cd472a4a418c005061ce80dd230_1_Image.content = content;

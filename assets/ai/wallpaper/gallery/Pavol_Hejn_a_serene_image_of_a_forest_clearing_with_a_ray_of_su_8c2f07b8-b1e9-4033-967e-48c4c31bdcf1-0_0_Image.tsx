@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.colors.json';
+import content from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.content.md';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.json';
-import texts from './Pavol_Hejn_a_serene_image_of_a_forest_clearing_with_a_ray_of_su_8c2f07b8-b1e9-4033-967e-48c4c31bdcf1-0_0.texts.json';
 
 /**
  * Image of A serene image of a forest clearing with a ray of sunlight for a spiritual or mindfulness website
@@ -39,7 +39,6 @@ export function ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c
         />
     );
 }
-
 ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.src = new URL(
     'https://cdn.midjourney.com/8c2f07b8-b1e9-4033-967e-48c4c31bdcf1/0_0.png',
 );
@@ -47,5 +46,4 @@ ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Ima
     metadata satisfies IWallpaperMetadata;
 ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASereneImageOfAForestClearingWithARayOfSu8c2f07b8B1e94033967e48c4c31bdcf10_0_Image.content = content;

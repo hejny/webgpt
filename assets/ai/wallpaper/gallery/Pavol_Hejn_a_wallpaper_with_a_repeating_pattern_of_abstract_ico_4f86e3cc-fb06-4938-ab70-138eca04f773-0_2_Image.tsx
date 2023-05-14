@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_4f86e3cc-fb06-4938-ab70-138eca04f773-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_4f86e3cc-fb06-4938-ab70-138eca04f773-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_4f86e3cc-fb06-4938-ab70-138eca04f773-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_ico_4f86e3cc-fb06-4938-ab70-138eca04f773-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons.
@@ -39,7 +39,6 @@ export function AWallpaperWithARepeatingPatternOfAbstractIco4f86e3ccFb064938Ab70
         />
     );
 }
-
 AWallpaperWithARepeatingPatternOfAbstractIco4f86e3ccFb064938Ab70138eca04f7730_2_Image.src = new URL(
     'https://cdn.midjourney.com/4f86e3cc-fb06-4938-ab70-138eca04f773/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithARepeatingPatternOfAbstractIco4f86e3ccFb064938Ab70138eca04f7730_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractIco4f86e3ccFb064938Ab70138eca04f7730_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithARepeatingPatternOfAbstractIco4f86e3ccFb064938Ab70138eca04f7730_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithARepeatingPatternOfAbstractIco4f86e3ccFb064938Ab70138eca04f7730_2_Image.content = content;

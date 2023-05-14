@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_0.colors.json';
+import content from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_0.content.md';
 import metadata from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_0.json';
-import texts from './Pavol_Hejn_a_cityscape_overtaken_by_nature_218140d9-7328-4a5d-8f32-8df907313fd5-0_0.texts.json';
 
 /**
  * Image of A cityscape overtaken by nature
@@ -37,10 +37,9 @@ export function ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_0_I
         />
     );
 }
-
 ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_0_Image.src = new URL(
     'https://cdn.midjourney.com/218140d9-7328-4a5d-8f32-8df907313fd5/0_0.png',
 );
 ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_0_Image.colorStats = hydrateColorStats(colorStats);
-ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_0_Image.texts = texts satisfies IWallpaperTexts;
+ACityscapeOvertakenByNature218140d973284a5d8f328df907313fd50_0_Image.content = content;

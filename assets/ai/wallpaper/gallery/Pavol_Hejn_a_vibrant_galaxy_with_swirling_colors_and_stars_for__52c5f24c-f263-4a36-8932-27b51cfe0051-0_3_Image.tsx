@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__52c5f24c-f263-4a36-8932-27b51cfe0051-0_3.colors.json';
+import content from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__52c5f24c-f263-4a36-8932-27b51cfe0051-0_3.content.md';
 import metadata from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__52c5f24c-f263-4a36-8932-27b51cfe0051-0_3.json';
-import texts from './Pavol_Hejn_a_vibrant_galaxy_with_swirling_colors_and_stars_for__52c5f24c-f263-4a36-8932-27b51cfe0051-0_3.texts.json';
 
 /**
  * Image of A vibrant galaxy with swirling colors and stars for a science or astronomy blog
@@ -39,7 +39,6 @@ export function AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a3689322
         />
     );
 }
-
 AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_3_Image.src = new URL(
     'https://cdn.midjourney.com/52c5f24c-f263-4a36-8932-27b51cfe0051/0_3.png',
 );
@@ -47,5 +46,4 @@ AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_3_I
     metadata satisfies IWallpaperMetadata;
 AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AVibrantGalaxyWithSwirlingColorsAndStarsFor52c5f24cF2634a36893227b51cfe00510_3_Image.content = content;

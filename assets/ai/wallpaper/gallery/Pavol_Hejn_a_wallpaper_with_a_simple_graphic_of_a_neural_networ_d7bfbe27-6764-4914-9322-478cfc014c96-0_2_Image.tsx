@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_d7bfbe27-6764-4914-9322-478cfc014c96-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_d7bfbe27-6764-4914-9322-478cfc014c96-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_d7bfbe27-6764-4914-9322-478cfc014c96-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_neural_networ_d7bfbe27-6764-4914-9322-478cfc014c96-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a neural network, against a background of complementary colors.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleGraphicOfANeuralNetworD7bfbe276764491493224
         />
     );
 }
-
 AWallpaperWithASimpleGraphicOfANeuralNetworD7bfbe27676449149322478cfc014c960_2_Image.src = new URL(
     'https://cdn.midjourney.com/d7bfbe27-6764-4914-9322-478cfc014c96/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleGraphicOfANeuralNetworD7bfbe27676449149322478cfc014c960_2_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfANeuralNetworD7bfbe27676449149322478cfc014c960_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleGraphicOfANeuralNetworD7bfbe27676449149322478cfc014c960_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleGraphicOfANeuralNetworD7bfbe27676449149322478cfc014c960_2_Image.content = content;

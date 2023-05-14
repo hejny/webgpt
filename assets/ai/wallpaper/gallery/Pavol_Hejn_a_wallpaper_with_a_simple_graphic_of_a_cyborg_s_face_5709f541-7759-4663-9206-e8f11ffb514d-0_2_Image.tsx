@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_cyborg_s_face_5709f541-7759-4663-9206-e8f11ffb514d-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a cyborg's face, against a background of digital noise and static.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8
         />
     );
 }
-
 AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_2_Image.src = new URL(
     'https://cdn.midjourney.com/5709f541-7759-4663-9206-e8f11ffb514d/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_2_Im
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleGraphicOfACyborgSFace5709f541775946639206E8f11ffb514d0_2_Image.content = content;

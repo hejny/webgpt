@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fb454755-ed56-4069-b36e-ad85a6001658-0_1.colors.json';
+import content from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fb454755-ed56-4069-b36e-ad85a6001658-0_1.content.md';
 import metadata from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fb454755-ed56-4069-b36e-ad85a6001658-0_1.json';
-import texts from './Pavol_Hejn_an_abstract_representation_of_the_inside_of_a_comput_fb454755-ed56-4069-b36e-ad85a6001658-0_1.texts.json';
 
 /**
  * Image of An abstract representation of the inside of a computer chip with a metallic color palette
@@ -39,7 +39,6 @@ export function AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36e
         />
     );
 }
-
 AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_1_Image.src = new URL(
     'https://cdn.midjourney.com/fb454755-ed56-4069-b36e-ad85a6001658/0_1.png',
 );
@@ -47,5 +46,4 @@ AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_1_
     metadata satisfies IWallpaperMetadata;
 AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractRepresentationOfTheInsideOfAComputFb454755Ed564069B36eAd85a60016580_1_Image.content = content;

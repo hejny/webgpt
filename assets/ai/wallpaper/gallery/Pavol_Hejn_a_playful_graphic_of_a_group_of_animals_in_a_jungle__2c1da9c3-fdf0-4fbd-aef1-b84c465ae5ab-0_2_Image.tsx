@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_2.colors.json';
+import content from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_2.content.md';
 import metadata from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_2.json';
-import texts from './Pavol_Hejn_a_playful_graphic_of_a_group_of_animals_in_a_jungle__2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab-0_2.texts.json';
 
 /**
  * Image of A playful graphic of a group of animals in a jungle for a children's or education website
@@ -39,7 +39,6 @@ export function APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c
         />
     );
 }
-
 APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.src = new URL(
     'https://cdn.midjourney.com/2c1da9c3-fdf0-4fbd-aef1-b84c465ae5ab/0_2.png',
 );
@@ -47,5 +46,4 @@ APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Ima
     metadata satisfies IWallpaperMetadata;
 APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.colorStats =
     hydrateColorStats(colorStats);
-APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+APlayfulGraphicOfAGroupOfAnimalsInAJungleC1da9c3Fdf04fbdAef1B84c465ae5ab02_2_Image.content = content;

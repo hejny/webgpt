@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.colors.json';
+import content from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.content.md';
 import metadata from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.json';
-import texts from './Pavol_Hejn_a_poster_style_image_of_a_mission_to_mars_with_bold__6e6533f5-7774-4664-a6c1-8ebb09cefb82-0_1.texts.json';
 
 /**
  * Image of A poster-style image of a mission to Mars, with bold typography and a futuristic color scheme that represents the ambition of space exploration.
@@ -39,7 +39,6 @@ export function APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18eb
         />
     );
 }
-
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.src = new URL(
     'https://cdn.midjourney.com/6e6533f5-7774-4664-a6c1-8ebb09cefb82/0_1.png',
 );
@@ -47,5 +46,4 @@ APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Ima
     metadata satisfies IWallpaperMetadata;
 APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.colorStats =
     hydrateColorStats(colorStats);
-APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+APosterStyleImageOfAMissionToMarsWithBold6e6533f577744664A6c18ebb09cefb820_1_Image.content = content;

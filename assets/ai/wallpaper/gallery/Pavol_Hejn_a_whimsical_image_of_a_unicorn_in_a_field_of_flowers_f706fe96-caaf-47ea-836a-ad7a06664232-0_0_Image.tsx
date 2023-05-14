@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_0.colors.json';
+import content from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_0.content.md';
 import metadata from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_0.json';
-import texts from './Pavol_Hejn_a_whimsical_image_of_a_unicorn_in_a_field_of_flowers_f706fe96-caaf-47ea-836a-ad7a06664232-0_0.texts.json';
 
 /**
  * Image of A whimsical image of a unicorn in a field of flowers for a fantasy or fiction website
@@ -39,7 +39,6 @@ export function AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd
         />
     );
 }
-
 AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_0_Image.src = new URL(
     'https://cdn.midjourney.com/f706fe96-caaf-47ea-836a-ad7a06664232/0_0.png',
 );
@@ -47,5 +46,4 @@ AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_0_Im
     metadata satisfies IWallpaperMetadata;
 AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWhimsicalImageOfAUnicornInAFieldOfFlowersF706fe96Caaf47ea836aAd7a066642320_0_Image.content = content;

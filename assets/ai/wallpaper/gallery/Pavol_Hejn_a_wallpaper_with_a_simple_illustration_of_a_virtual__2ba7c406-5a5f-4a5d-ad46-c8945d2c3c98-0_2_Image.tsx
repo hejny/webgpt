@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_virtual__2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleIllustrationOfAVirtualBa7c4065a5f4a5dAd46C8
         />
     );
 }
-
 AWallpaperWithASimpleIllustrationOfAVirtualBa7c4065a5f4a5dAd46C8945d2c3c9802_2_Image.src = new URL(
     'https://cdn.midjourney.com/2ba7c406-5a5f-4a5d-ad46-c8945d2c3c98/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleIllustrationOfAVirtualBa7c4065a5f4a5dAd46C8945d2c3c9802_2_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleIllustrationOfAVirtualBa7c4065a5f4a5dAd46C8945d2c3c9802_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleIllustrationOfAVirtualBa7c4065a5f4a5dAd46C8945d2c3c9802_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleIllustrationOfAVirtualBa7c4065a5f4a5dAd46C8945d2c3c9802_2_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_7a5e8803-96d7-4790-ae04-1e53d5db35b7-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract shapes inspired by the Mandelbrot set, in a monochromatic color scheme.
@@ -39,7 +39,6 @@ export function AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae04
         />
     );
 }
-
 AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_2_Image.src = new URL(
     'https://cdn.midjourney.com/7a5e8803-96d7-4790-ae04-1e53d5db35b7/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithARepeatingPatternOfAbstractSha7a5e880396d74790Ae041e53d5db35b70_2_Image.content = content;

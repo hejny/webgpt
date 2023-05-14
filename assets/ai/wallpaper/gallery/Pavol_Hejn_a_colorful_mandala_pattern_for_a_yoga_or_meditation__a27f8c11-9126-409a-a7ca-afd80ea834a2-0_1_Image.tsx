@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__a27f8c11-9126-409a-a7ca-afd80ea834a2-0_1.colors.json';
+import content from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__a27f8c11-9126-409a-a7ca-afd80ea834a2-0_1.content.md';
 import metadata from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__a27f8c11-9126-409a-a7ca-afd80ea834a2-0_1.json';
-import texts from './Pavol_Hejn_a_colorful_mandala_pattern_for_a_yoga_or_meditation__a27f8c11-9126-409a-a7ca-afd80ea834a2-0_1.texts.json';
 
 /**
  * Image of A colorful mandala pattern for a yoga or meditation website
@@ -39,7 +39,6 @@ export function AColorfulMandalaPatternForAYogaOrMeditationA27f8c119126409aA7caA
         />
     );
 }
-
 AColorfulMandalaPatternForAYogaOrMeditationA27f8c119126409aA7caAfd80ea834a20_1_Image.src = new URL(
     'https://cdn.midjourney.com/a27f8c11-9126-409a-a7ca-afd80ea834a2/0_1.png',
 );
@@ -47,5 +46,4 @@ AColorfulMandalaPatternForAYogaOrMeditationA27f8c119126409aA7caAfd80ea834a20_1_I
     metadata satisfies IWallpaperMetadata;
 AColorfulMandalaPatternForAYogaOrMeditationA27f8c119126409aA7caAfd80ea834a20_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AColorfulMandalaPatternForAYogaOrMeditationA27f8c119126409aA7caAfd80ea834a20_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AColorfulMandalaPatternForAYogaOrMeditationA27f8c119126409aA7caAfd80ea834a20_1_Image.content = content;

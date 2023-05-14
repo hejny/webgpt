@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_2.colors.json';
+import content from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_2.content.md';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_2.json';
-import texts from './Pavol_Hejn_a_team_of_ainauts_piloting_a_small_spacecraft_throug_bdbfc142-36bb-455b-aeac-e31744cd233b-0_2.texts.json';
 
 /**
  * Image of A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them.
@@ -39,7 +39,6 @@ export function ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeac
         />
     );
 }
-
 ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeacE31744cd233b0_2_Image.src = new URL(
     'https://cdn.midjourney.com/bdbfc142-36bb-455b-aeac-e31744cd233b/0_2.png',
 );
@@ -47,5 +46,4 @@ ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeacE31744cd233b0_2_
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeacE31744cd233b0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeacE31744cd233b0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ATeamOfAinautsPilotingASmallSpacecraftThrougBdbfc14236bb455bAeacE31744cd233b0_2_Image.content = content;

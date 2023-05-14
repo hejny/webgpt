@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_0.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_0.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_0.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_star_field_with_bright_colors_650a0f95-7462-4734-b12b-2250b6978b3e-0_0.texts.json';
 
 /**
  * Image of An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos.
@@ -39,7 +39,6 @@ export function AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2
         />
     );
 }
-
 AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_0_Image.src = new URL(
     'https://cdn.midjourney.com/650a0f95-7462-4734-b12b-2250b6978b3e/0_0.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_0_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfAStarFieldWithBrightColors650a0f9574624734B12b2250b6978b3e0_0_Image.content = content;

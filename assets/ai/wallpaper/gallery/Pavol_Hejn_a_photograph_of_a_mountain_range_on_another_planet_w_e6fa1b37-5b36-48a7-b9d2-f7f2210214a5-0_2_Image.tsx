@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_e6fa1b37-5b36-48a7-b9d2-f7f2210214a5-0_2.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_e6fa1b37-5b36-48a7-b9d2-f7f2210214a5-0_2.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_e6fa1b37-5b36-48a7-b9d2-f7f2210214a5-0_2.json';
-import texts from './Pavol_Hejn_a_photograph_of_a_mountain_range_on_another_planet_w_e6fa1b37-5b36-48a7-b9d2-f7f2210214a5-0_2.texts.json';
 
 /**
  * Image of A photograph of a mountain range on another planet, with the bright sun shining through the peaks.
@@ -39,7 +39,6 @@ export function APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F
         />
     );
 }
-
 APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_2_Image.src = new URL(
     'https://cdn.midjourney.com/e6fa1b37-5b36-48a7-b9d2-f7f2210214a5/0_2.png',
 );
@@ -47,5 +46,4 @@ APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_2_I
     metadata satisfies IWallpaperMetadata;
 APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_2_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfAMountainRangeOnAnotherPlanetWE6fa1b375b3648a7B9d2F7f2210214a50_2_Image.content = content;

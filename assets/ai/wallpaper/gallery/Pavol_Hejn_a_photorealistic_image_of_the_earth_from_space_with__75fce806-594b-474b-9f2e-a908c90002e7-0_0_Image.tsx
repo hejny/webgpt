@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_0.colors.json';
+import content from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_0.content.md';
 import metadata from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_0.json';
-import texts from './Pavol_Hejn_a_photorealistic_image_of_the_earth_from_space_with__75fce806-594b-474b-9f2e-a908c90002e7-0_0.texts.json';
 
 /**
  * Image of A photorealistic image of the Earth from space, with vibrant colors and intricate details.
@@ -39,7 +39,6 @@ export function APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA
         />
     );
 }
-
 APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_0_Image.src = new URL(
     'https://cdn.midjourney.com/75fce806-594b-474b-9f2e-a908c90002e7/0_0.png',
 );
@@ -47,5 +46,4 @@ APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_0_I
     metadata satisfies IWallpaperMetadata;
 APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_0_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotorealisticImageOfTheEarthFromSpaceWith75fce806594b474b9f2eA908c90002e70_0_Image.content = content;

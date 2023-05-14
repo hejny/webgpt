@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_1.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_1.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_1.json';
-import texts from './Pavol_Hejn_a_photograph_of_an_iceberg_in_the_arctic_with_the_bl_1c1c3cf1-8fca-4598-805b-0ff63df767ea-0_1.texts.json';
 
 /**
  * Image of A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky.
@@ -39,7 +39,6 @@ export function APhotographOfAnIcebergInTheArcticWithTheBlc1c3cf18fca4598805b0ff
         />
     );
 }
-
 APhotographOfAnIcebergInTheArcticWithTheBlc1c3cf18fca4598805b0ff63df767ea01_1_Image.src = new URL(
     'https://cdn.midjourney.com/1c1c3cf1-8fca-4598-805b-0ff63df767ea/0_1.png',
 );
@@ -47,5 +46,4 @@ APhotographOfAnIcebergInTheArcticWithTheBlc1c3cf18fca4598805b0ff63df767ea01_1_Im
     metadata satisfies IWallpaperMetadata;
 APhotographOfAnIcebergInTheArcticWithTheBlc1c3cf18fca4598805b0ff63df767ea01_1_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfAnIcebergInTheArcticWithTheBlc1c3cf18fca4598805b0ff63df767ea01_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfAnIcebergInTheArcticWithTheBlc1c3cf18fca4598805b0ff63df767ea01_1_Image.content = content;

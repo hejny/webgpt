@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.colors.json';
+import content from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.json';
-import texts from './Pavol_Hejn_a_minimalist_wallpaper_with_a_single_line_drawing_of_1d33c07e-a553-4c56-b7b8-c3321364d87b-0_3.texts.json';
 
 /**
  * Image of A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue.
@@ -39,7 +39,6 @@ export function AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8
         />
     );
 }
-
 AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_Image.src = new URL(
     'https://cdn.midjourney.com/1d33c07e-a553-4c56-b7b8-c3321364d87b/0_3.png',
 );
@@ -47,5 +46,4 @@ AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_
     metadata satisfies IWallpaperMetadata;
 AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AMinimalistWallpaperWithASingleLineDrawingOf1d33c07eA5534c56B7b8C3321364d87b0_3_Image.content = content;

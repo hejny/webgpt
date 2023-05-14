@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_ffde2e34-8cd9-46d9-b31a-b70698ac0d8d-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_ffde2e34-8cd9-46d9-b31a-b70698ac0d8d-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_ffde2e34-8cd9-46d9-b31a-b70698ac0d8d-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_abstract_sha_ffde2e34-8cd9-46d9-b31a-b70698ac0d8d-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.
@@ -39,7 +39,6 @@ export function AWallpaperWithARepeatingPatternOfAbstractShaFfde2e348cd946d9B31a
         />
     );
 }
-
 AWallpaperWithARepeatingPatternOfAbstractShaFfde2e348cd946d9B31aB70698ac0d8d0_2_Image.src = new URL(
     'https://cdn.midjourney.com/ffde2e34-8cd9-46d9-b31a-b70698ac0d8d/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithARepeatingPatternOfAbstractShaFfde2e348cd946d9B31aB70698ac0d8d0_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAbstractShaFfde2e348cd946d9B31aB70698ac0d8d0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithARepeatingPatternOfAbstractShaFfde2e348cd946d9B31aB70698ac0d8d0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithARepeatingPatternOfAbstractShaFfde2e348cd946d9B31aB70698ac0d8d0_2_Image.content = content;

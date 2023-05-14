@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_1.colors.json';
+import content from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_1.content.md';
 import metadata from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_1.json';
-import texts from './Pavol_Hejn_a_vintage_style_graphic_of_a_retro_car_for_a_car_or__c1a1d669-2005-4138-9924-42226f5c595b-0_1.texts.json';
 
 /**
  * Image of A vintage-style graphic of a retro car for a car or travel website
@@ -39,7 +39,6 @@ export function AVintageStyleGraphicOfARetroCarForACarOrC1a1d6692005413899244222
         />
     );
 }
-
 AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_1_Image.src = new URL(
     'https://cdn.midjourney.com/c1a1d669-2005-4138-9924-42226f5c595b/0_1.png',
 );
@@ -47,5 +46,4 @@ AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_1_Imag
     metadata satisfies IWallpaperMetadata;
 AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AVintageStyleGraphicOfARetroCarForACarOrC1a1d66920054138992442226f5c595b0_1_Image.content = content;

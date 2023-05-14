@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_6477e95d-32ff-43e5-bc23-08d7a2e1c45a-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_6477e95d-32ff-43e5-bc23-08d7a2e1c45a-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_6477e95d-32ff-43e5-bc23-08d7a2e1c45a-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_an_abstrac_6477e95d-32ff-43e5-bc23-08d7a2e1c45a-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a simple illustration of an abstract network, in a minimal color palette of black and white.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleIllustrationOfAnAbstrac6477e95d32ff43e5Bc23
         />
     );
 }
-
 AWallpaperWithASimpleIllustrationOfAnAbstrac6477e95d32ff43e5Bc2308d7a2e1c45a0_2_Image.src = new URL(
     'https://cdn.midjourney.com/6477e95d-32ff-43e5-bc23-08d7a2e1c45a/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleIllustrationOfAnAbstrac6477e95d32ff43e5Bc2308d7a2e1c45a0_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleIllustrationOfAnAbstrac6477e95d32ff43e5Bc2308d7a2e1c45a0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleIllustrationOfAnAbstrac6477e95d32ff43e5Bc2308d7a2e1c45a0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleIllustrationOfAnAbstrac6477e95d32ff43e5Bc2308d7a2e1c45a0_2_Image.content = content;

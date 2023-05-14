@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.colors.json';
+import content from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.content.md';
 import metadata from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.json';
-import texts from './Pavol_Hejn_a_neon_colored_interpretation_of_a_starry_sky_125cd770-66f9-438b-b69e-3bde773b338a-0_1.texts.json';
 
 /**
  * Image of A neon-colored interpretation of a starry sky
@@ -39,7 +39,6 @@ export function ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773
         />
     );
 }
-
 ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.src = new URL(
     'https://cdn.midjourney.com/125cd770-66f9-438b-b69e-3bde773b338a/0_1.png',
 );
@@ -47,4 +46,4 @@ ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.
     metadata satisfies IWallpaperMetadata;
 ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.texts = texts satisfies IWallpaperTexts;
+ANeonColoredInterpretationOfAStarrySky25cd77066f9438bB69e3bde773b338a01_1_Image.content = content;

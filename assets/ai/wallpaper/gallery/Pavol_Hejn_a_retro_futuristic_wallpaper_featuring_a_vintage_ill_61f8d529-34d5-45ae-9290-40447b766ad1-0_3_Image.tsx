@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_61f8d529-34d5-45ae-9290-40447b766ad1-0_3.colors.json';
+import content from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_61f8d529-34d5-45ae-9290-40447b766ad1-0_3.content.md';
 import metadata from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_61f8d529-34d5-45ae-9290-40447b766ad1-0_3.json';
-import texts from './Pavol_Hejn_a_retro_futuristic_wallpaper_featuring_a_vintage_ill_61f8d529-34d5-45ae-9290-40447b766ad1-0_3.texts.json';
 
 /**
  * Image of A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background.
@@ -39,7 +39,6 @@ export function ARetroFuturisticWallpaperFeaturingAVintageIll61f8d52934d545ae929
         />
     );
 }
-
 ARetroFuturisticWallpaperFeaturingAVintageIll61f8d52934d545ae929040447b766ad10_3_Image.src = new URL(
     'https://cdn.midjourney.com/61f8d529-34d5-45ae-9290-40447b766ad1/0_3.png',
 );
@@ -47,5 +46,4 @@ ARetroFuturisticWallpaperFeaturingAVintageIll61f8d52934d545ae929040447b766ad10_3
     metadata satisfies IWallpaperMetadata;
 ARetroFuturisticWallpaperFeaturingAVintageIll61f8d52934d545ae929040447b766ad10_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ARetroFuturisticWallpaperFeaturingAVintageIll61f8d52934d545ae929040447b766ad10_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ARetroFuturisticWallpaperFeaturingAVintageIll61f8d52934d545ae929040447b766ad10_3_Image.content = content;

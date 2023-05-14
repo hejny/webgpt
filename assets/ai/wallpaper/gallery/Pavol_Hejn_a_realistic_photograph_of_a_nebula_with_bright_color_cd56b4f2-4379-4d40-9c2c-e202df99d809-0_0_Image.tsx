@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_0.colors.json';
+import content from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_0.content.md';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_0.json';
-import texts from './Pavol_Hejn_a_realistic_photograph_of_a_nebula_with_bright_color_cd56b4f2-4379-4d40-9c2c-e202df99d809-0_0.texts.json';
 
 /**
  * Image of A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.
@@ -39,7 +39,6 @@ export function ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2c
         />
     );
 }
-
 ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_0_Image.src = new URL(
     'https://cdn.midjourney.com/cd56b4f2-4379-4d40-9c2c-e202df99d809/0_0.png',
 );
@@ -47,5 +46,4 @@ ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_0_
     metadata satisfies IWallpaperMetadata;
 ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ARealisticPhotographOfANebulaWithBrightColorCd56b4f243794d409c2cE202df99d8090_0_Image.content = content;

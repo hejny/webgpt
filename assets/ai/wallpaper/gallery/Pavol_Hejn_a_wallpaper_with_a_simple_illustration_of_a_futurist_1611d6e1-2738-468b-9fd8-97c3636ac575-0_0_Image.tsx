@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_1611d6e1-2738-468b-9fd8-97c3636ac575-0_0.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_1611d6e1-2738-468b-9fd8-97c3636ac575-0_0.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_1611d6e1-2738-468b-9fd8-97c3636ac575-0_0.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_illustration_of_a_futurist_1611d6e1-2738-468b-9fd8-97c3636ac575-0_0.texts.json';
 
 /**
  * Image of A wallpaper with a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd8
         />
     );
 }
-
 AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd897c3636ac5750_0_Image.src = new URL(
     'https://cdn.midjourney.com/1611d6e1-2738-468b-9fd8-97c3636ac575/0_0.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd897c3636ac5750_0_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd897c3636ac5750_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd897c3636ac5750_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleIllustrationOfAFuturist1611d6e12738468b9fd897c3636ac5750_0_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_9a35d444-6be7-44ef-9a70-8215191e317a-0_0.colors.json';
+import content from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_9a35d444-6be7-44ef-9a70-8215191e317a-0_0.content.md';
 import metadata from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_9a35d444-6be7-44ef-9a70-8215191e317a-0_0.json';
-import texts from './Pavol_Hejn_a_stylized_depiction_of_a_spacecraft_in_orbit_around_9a35d444-6be7-44ef-9a70-8215191e317a-0_0.texts.json';
 
 /**
  * Image of A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows.
@@ -39,7 +39,6 @@ export function AStylizedDepictionOfASpacecraftInOrbitAround9a35d4446be744ef9a70
         />
     );
 }
-
 AStylizedDepictionOfASpacecraftInOrbitAround9a35d4446be744ef9a708215191e317a0_0_Image.src = new URL(
     'https://cdn.midjourney.com/9a35d444-6be7-44ef-9a70-8215191e317a/0_0.png',
 );
@@ -47,5 +46,4 @@ AStylizedDepictionOfASpacecraftInOrbitAround9a35d4446be744ef9a708215191e317a0_0_
     metadata satisfies IWallpaperMetadata;
 AStylizedDepictionOfASpacecraftInOrbitAround9a35d4446be744ef9a708215191e317a0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AStylizedDepictionOfASpacecraftInOrbitAround9a35d4446be744ef9a708215191e317a0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AStylizedDepictionOfASpacecraftInOrbitAround9a35d4446be744ef9a708215191e317a0_0_Image.content = content;

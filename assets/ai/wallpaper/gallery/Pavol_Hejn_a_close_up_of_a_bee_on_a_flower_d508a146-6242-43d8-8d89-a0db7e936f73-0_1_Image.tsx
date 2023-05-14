@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_1.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_1.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_1.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_bee_on_a_flower_d508a146-6242-43d8-8d89-a0db7e936f73-0_1.texts.json';
 
 /**
  * Image of A close-up of a bee on a flower
@@ -37,10 +37,9 @@ export function ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_1_Image
         />
     );
 }
-
 ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_1_Image.src = new URL(
     'https://cdn.midjourney.com/d508a146-6242-43d8-8d89-a0db7e936f73/0_1.png',
 );
 ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_1_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_1_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfABeeOnAFlowerD508a146624243d88d89A0db7e936f730_1_Image.content = content;

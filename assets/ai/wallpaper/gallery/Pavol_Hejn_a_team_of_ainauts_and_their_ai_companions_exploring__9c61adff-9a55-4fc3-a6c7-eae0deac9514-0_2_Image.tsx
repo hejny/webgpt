@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_exploring__9c61adff-9a55-4fc3-a6c7-eae0deac9514-0_2.colors.json';
+import content from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_exploring__9c61adff-9a55-4fc3-a6c7-eae0deac9514-0_2.content.md';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_exploring__9c61adff-9a55-4fc3-a6c7-eae0deac9514-0_2.json';
-import texts from './Pavol_Hejn_a_team_of_ainauts_and_their_ai_companions_exploring__9c61adff-9a55-4fc3-a6c7-eae0deac9514-0_2.texts.json';
 
 /**
  * Image of A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet.
@@ -39,7 +39,6 @@ export function ATeamOfAinautsAndTheirAiCompanionsExploring9c61adff9a554fc3A6c7E
         />
     );
 }
-
 ATeamOfAinautsAndTheirAiCompanionsExploring9c61adff9a554fc3A6c7Eae0deac95140_2_Image.src = new URL(
     'https://cdn.midjourney.com/9c61adff-9a55-4fc3-a6c7-eae0deac9514/0_2.png',
 );
@@ -47,5 +46,4 @@ ATeamOfAinautsAndTheirAiCompanionsExploring9c61adff9a554fc3A6c7Eae0deac95140_2_I
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsAndTheirAiCompanionsExploring9c61adff9a554fc3A6c7Eae0deac95140_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ATeamOfAinautsAndTheirAiCompanionsExploring9c61adff9a554fc3A6c7Eae0deac95140_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ATeamOfAinautsAndTheirAiCompanionsExploring9c61adff9a554fc3A6c7Eae0deac95140_2_Image.content = content;

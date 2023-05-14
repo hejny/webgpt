@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_1.colors.json';
+import content from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_1.content.md';
 import metadata from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_1.json';
-import texts from './Pavol_Hejn_a_team_of_ainauts_working_together_to_explore_the_de_256cd553-15bc-4e3b-a6da-72bd9bad3eb7-0_1.texts.json';
 
 /**
  * Image of A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips.
@@ -39,7 +39,6 @@ export function ATeamOfAinautsWorkingTogetherToExploreTheDe256cd55315bc4e3bA6da7
         />
     );
 }
-
 ATeamOfAinautsWorkingTogetherToExploreTheDe256cd55315bc4e3bA6da72bd9bad3eb70_1_Image.src = new URL(
     'https://cdn.midjourney.com/256cd553-15bc-4e3b-a6da-72bd9bad3eb7/0_1.png',
 );
@@ -47,5 +46,4 @@ ATeamOfAinautsWorkingTogetherToExploreTheDe256cd55315bc4e3bA6da72bd9bad3eb70_1_I
     metadata satisfies IWallpaperMetadata;
 ATeamOfAinautsWorkingTogetherToExploreTheDe256cd55315bc4e3bA6da72bd9bad3eb70_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ATeamOfAinautsWorkingTogetherToExploreTheDe256cd55315bc4e3bA6da72bd9bad3eb70_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ATeamOfAinautsWorkingTogetherToExploreTheDe256cd55315bc4e3bA6da72bd9bad3eb70_1_Image.content = content;

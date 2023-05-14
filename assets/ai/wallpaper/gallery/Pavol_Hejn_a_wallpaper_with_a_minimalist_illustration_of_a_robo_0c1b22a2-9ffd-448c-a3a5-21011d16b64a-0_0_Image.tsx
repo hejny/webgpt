@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_0c1b22a2-9ffd-448c-a3a5-21011d16b64a-0_0.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_0c1b22a2-9ffd-448c-a3a5-21011d16b64a-0_0.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_0c1b22a2-9ffd-448c-a3a5-21011d16b64a-0_0.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_minimalist_illustration_of_a_robo_0c1b22a2-9ffd-448c-a3a5-21011d16b64a-0_0.texts.json';
 
 /**
  * Image of A wallpaper with a minimalist illustration of a robotic arm, against a background of dark and moody colors.
@@ -39,7 +39,6 @@ export function AWallpaperWithAMinimalistIllustrationOfARoboc1b22a29ffd448cA3a52
         />
     );
 }
-
 AWallpaperWithAMinimalistIllustrationOfARoboc1b22a29ffd448cA3a521011d16b64a00_0_Image.src = new URL(
     'https://cdn.midjourney.com/0c1b22a2-9ffd-448c-a3a5-21011d16b64a/0_0.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithAMinimalistIllustrationOfARoboc1b22a29ffd448cA3a521011d16b64a00_0_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithAMinimalistIllustrationOfARoboc1b22a29ffd448cA3a521011d16b64a00_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithAMinimalistIllustrationOfARoboc1b22a29ffd448cA3a521011d16b64a00_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithAMinimalistIllustrationOfARoboc1b22a29ffd448cA3a521011d16b64a00_0_Image.content = content;

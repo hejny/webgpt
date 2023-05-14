@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_mountain_range_with_a_clear_blue_sky_f92031db-c1a8-4751-be36-11640cca5b5f-0_1.colors.json';
+import content from './Pavol_Hejn_a_mountain_range_with_a_clear_blue_sky_f92031db-c1a8-4751-be36-11640cca5b5f-0_1.content.md';
 import metadata from './Pavol_Hejn_a_mountain_range_with_a_clear_blue_sky_f92031db-c1a8-4751-be36-11640cca5b5f-0_1.json';
-import texts from './Pavol_Hejn_a_mountain_range_with_a_clear_blue_sky_f92031db-c1a8-4751-be36-11640cca5b5f-0_1.texts.json';
 
 /**
  * Image of A mountain range with a clear blue sky
@@ -39,11 +39,10 @@ export function AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0
         />
     );
 }
-
 AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0_1_Image.src = new URL(
     'https://cdn.midjourney.com/f92031db-c1a8-4751-be36-11640cca5b5f/0_1.png',
 );
 AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0_1_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0_1_Image.colorStats = hydrateColorStats(colorStats);
-AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0_1_Image.texts = texts satisfies IWallpaperTexts;
+AMountainRangeWithAClearBlueSkyF92031dbC1a84751Be3611640cca5b5f0_1_Image.content = content;

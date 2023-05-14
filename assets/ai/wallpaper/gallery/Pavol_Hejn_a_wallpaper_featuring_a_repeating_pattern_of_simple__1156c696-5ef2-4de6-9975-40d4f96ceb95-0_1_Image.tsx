@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_1.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_1.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_1.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_simple__1156c696-5ef2-4de6-9975-40d4f96ceb95-0_1.texts.json';
 
 /**
  * Image of A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design.
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de699754
         />
     );
 }
-
 AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de6997540d4f96ceb9501_1_Image.src = new URL(
     'https://cdn.midjourney.com/1156c696-5ef2-4de6-9975-40d4f96ceb95/0_1.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de6997540d4f96ceb9501_1_
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de6997540d4f96ceb9501_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de6997540d4f96ceb9501_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingARepeatingPatternOfSimple156c6965ef24de6997540d4f96ceb9501_1_Image.content = content;

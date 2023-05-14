@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_8d07eb3f-9681-4257-ae43-2b3321cca370-0_0.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_8d07eb3f-9681-4257-ae43-2b3321cca370-0_0.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_8d07eb3f-9681-4257-ae43-2b3321cca370-0_0.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_observing_the_rings_of_saturn_fro_8d07eb3f-9681-4257-ae43-2b3321cca370-0_0.texts.json';
 
 /**
  * Image of A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsObservingTheRingsOfSaturnFro8d07eb3f96814257Ae432
         />
     );
 }
-
 AGroupOfAinautsObservingTheRingsOfSaturnFro8d07eb3f96814257Ae432b3321cca3700_0_Image.src = new URL(
     'https://cdn.midjourney.com/8d07eb3f-9681-4257-ae43-2b3321cca370/0_0.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsObservingTheRingsOfSaturnFro8d07eb3f96814257Ae432b3321cca3700_0_I
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsObservingTheRingsOfSaturnFro8d07eb3f96814257Ae432b3321cca3700_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsObservingTheRingsOfSaturnFro8d07eb3f96814257Ae432b3321cca3700_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsObservingTheRingsOfSaturnFro8d07eb3f96814257Ae432b3321cca3700_0_Image.content = content;

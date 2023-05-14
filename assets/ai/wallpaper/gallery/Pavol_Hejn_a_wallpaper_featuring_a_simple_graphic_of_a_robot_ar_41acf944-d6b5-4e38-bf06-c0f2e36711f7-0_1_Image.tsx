@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_41acf944-d6b5-4e38-bf06-c0f2e36711f7-0_1.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_41acf944-d6b5-4e38-bf06-c0f2e36711f7-0_1.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_41acf944-d6b5-4e38-bf06-c0f2e36711f7-0_1.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_robot_ar_41acf944-d6b5-4e38-bf06-c0f2e36711f7-0_1.texts.json';
 
 /**
  * Image of A wallpaper featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages.
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingASimpleGraphicOfARobotAr41acf944D6b54e38Bf06C
         />
     );
 }
-
 AWallpaperFeaturingASimpleGraphicOfARobotAr41acf944D6b54e38Bf06C0f2e36711f70_1_Image.src = new URL(
     'https://cdn.midjourney.com/41acf944-d6b5-4e38-bf06-c0f2e36711f7/0_1.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingASimpleGraphicOfARobotAr41acf944D6b54e38Bf06C0f2e36711f70_1_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingASimpleGraphicOfARobotAr41acf944D6b54e38Bf06C0f2e36711f70_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingASimpleGraphicOfARobotAr41acf944D6b54e38Bf06C0f2e36711f70_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingASimpleGraphicOfARobotAr41acf944D6b54e38Bf06C0f2e36711f70_1_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_c81366d9-a212-4056-8172-1fd93efe4200-0_3.colors.json';
+import content from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_c81366d9-a212-4056-8172-1fd93efe4200-0_3.content.md';
 import metadata from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_c81366d9-a212-4056-8172-1fd93efe4200-0_3.json';
-import texts from './Pavol_Hejn_a_bright_and_cheerful_image_of_a_sunflower_field_for_c81366d9-a212-4056-8172-1fd93efe4200-0_3.texts.json';
 
 /**
  * Image of A bright and cheerful image of a sunflower field for a gardening or nature website
@@ -39,7 +39,6 @@ export function ABrightAndCheerfulImageOfASunflowerFieldForC81366d9A212405681721
         />
     );
 }
-
 ABrightAndCheerfulImageOfASunflowerFieldForC81366d9A212405681721fd93efe42000_3_Image.src = new URL(
     'https://cdn.midjourney.com/c81366d9-a212-4056-8172-1fd93efe4200/0_3.png',
 );
@@ -47,5 +46,4 @@ ABrightAndCheerfulImageOfASunflowerFieldForC81366d9A212405681721fd93efe42000_3_I
     metadata satisfies IWallpaperMetadata;
 ABrightAndCheerfulImageOfASunflowerFieldForC81366d9A212405681721fd93efe42000_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ABrightAndCheerfulImageOfASunflowerFieldForC81366d9A212405681721fd93efe42000_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ABrightAndCheerfulImageOfASunflowerFieldForC81366d9A212405681721fd93efe42000_3_Image.content = content;

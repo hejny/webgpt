@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_repeating_pattern_of_abstract_shapes_and_colors_in_2884858e-3591-41a4-9618-0f9621aa6801-0_2.colors.json';
+import content from './Pavol_Hejn_a_repeating_pattern_of_abstract_shapes_and_colors_in_2884858e-3591-41a4-9618-0f9621aa6801-0_2.content.md';
 import metadata from './Pavol_Hejn_a_repeating_pattern_of_abstract_shapes_and_colors_in_2884858e-3591-41a4-9618-0f9621aa6801-0_2.json';
-import texts from './Pavol_Hejn_a_repeating_pattern_of_abstract_shapes_and_colors_in_2884858e-3591-41a4-9618-0f9621aa6801-0_2.texts.json';
 
 /**
  * Image of A repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.
@@ -39,7 +39,6 @@ export function ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180
         />
     );
 }
-
 ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.src = new URL(
     'https://cdn.midjourney.com/2884858e-3591-41a4-9618-0f9621aa6801/0_2.png',
 );
@@ -47,5 +46,4 @@ ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_
     metadata satisfies IWallpaperMetadata;
 ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ARepeatingPatternOfAbstractShapesAndColorsIn884858e359141a496180f9621aa680102_2_Image.content = content;

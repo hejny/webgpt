@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__2971d261-35d2-4d65-a1fb-ab5fb70328c7-0_2.colors.json';
+import content from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__2971d261-35d2-4d65-a1fb-ab5fb70328c7-0_2.content.md';
 import metadata from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__2971d261-35d2-4d65-a1fb-ab5fb70328c7-0_2.json';
-import texts from './Pavol_Hejn_ainauts_working_in_a_massive_laboratory_filled_with__2971d261-35d2-4d65-a1fb-ab5fb70328c7-0_2.texts.json';
 
 /**
  * Image of AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.
@@ -39,7 +39,6 @@ export function AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbA
         />
     );
 }
-
 AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.src = new URL(
     'https://cdn.midjourney.com/2971d261-35d2-4d65-a1fb-ab5fb70328c7/0_2.png',
 );
@@ -47,5 +46,4 @@ AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_
     metadata satisfies IWallpaperMetadata;
 AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AinautsWorkingInAMassiveLaboratoryFilledWith971d26135d24d65A1fbAb5fb70328c702_2_Image.content = content;

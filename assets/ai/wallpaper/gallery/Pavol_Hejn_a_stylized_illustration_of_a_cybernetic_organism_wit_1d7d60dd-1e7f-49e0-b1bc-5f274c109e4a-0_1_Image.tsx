@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_1.colors.json';
+import content from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_1.content.md';
 import metadata from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_1.json';
-import texts from './Pavol_Hejn_a_stylized_illustration_of_a_cybernetic_organism_wit_1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a-0_1.texts.json';
 
 /**
  * Image of A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.
@@ -39,7 +39,6 @@ export function AStylizedIllustrationOfACyberneticOrganismWitd7d60dd1e7f49e0B1bc
         />
     );
 }
-
 AStylizedIllustrationOfACyberneticOrganismWitd7d60dd1e7f49e0B1bc5f274c109e4a01_1_Image.src = new URL(
     'https://cdn.midjourney.com/1d7d60dd-1e7f-49e0-b1bc-5f274c109e4a/0_1.png',
 );
@@ -47,5 +46,4 @@ AStylizedIllustrationOfACyberneticOrganismWitd7d60dd1e7f49e0B1bc5f274c109e4a01_1
     metadata satisfies IWallpaperMetadata;
 AStylizedIllustrationOfACyberneticOrganismWitd7d60dd1e7f49e0B1bc5f274c109e4a01_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AStylizedIllustrationOfACyberneticOrganismWitd7d60dd1e7f49e0B1bc5f274c109e4a01_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AStylizedIllustrationOfACyberneticOrganismWitd7d60dd1e7f49e0B1bc5f274c109e4a01_1_Image.content = content;

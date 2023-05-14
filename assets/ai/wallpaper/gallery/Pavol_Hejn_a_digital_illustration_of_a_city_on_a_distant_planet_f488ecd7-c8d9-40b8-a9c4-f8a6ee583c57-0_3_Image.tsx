@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_illustration_of_a_city_on_a_distant_planet_f488ecd7-c8d9-40b8-a9c4-f8a6ee583c57-0_3.colors.json';
+import content from './Pavol_Hejn_a_digital_illustration_of_a_city_on_a_distant_planet_f488ecd7-c8d9-40b8-a9c4-f8a6ee583c57-0_3.content.md';
 import metadata from './Pavol_Hejn_a_digital_illustration_of_a_city_on_a_distant_planet_f488ecd7-c8d9-40b8-a9c4-f8a6ee583c57-0_3.json';
-import texts from './Pavol_Hejn_a_digital_illustration_of_a_city_on_a_distant_planet_f488ecd7-c8d9-40b8-a9c4-f8a6ee583c57-0_3.texts.json';
 
 /**
  * Image of A digital illustration of a city on a distant planet, with towering buildings and advanced technology.
@@ -39,7 +39,6 @@ export function ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F
         />
     );
 }
-
 ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F8a6ee583c570_3_Image.src = new URL(
     'https://cdn.midjourney.com/f488ecd7-c8d9-40b8-a9c4-f8a6ee583c57/0_3.png',
 );
@@ -47,5 +46,4 @@ ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F8a6ee583c570_3_I
     metadata satisfies IWallpaperMetadata;
 ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F8a6ee583c570_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F8a6ee583c570_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalIllustrationOfACityOnADistantPlanetF488ecd7C8d940b8A9c4F8a6ee583c570_3_Image.content = content;

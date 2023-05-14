@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_exploring_the_ruins_of_an_ancient_05d8dbb7-169e-4f40-ae4b-5da139b56fba-0_0.texts.json';
 
 /**
  * Image of A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsExploringTheRuinsOfAnAncient5d8dbb7169e4f40Ae4b5d
         />
     );
 }
-
 AGroupOfAinautsExploringTheRuinsOfAnAncient5d8dbb7169e4f40Ae4b5da139b56fba00_0_Image.src = new URL(
     'https://cdn.midjourney.com/05d8dbb7-169e-4f40-ae4b-5da139b56fba/0_0.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsExploringTheRuinsOfAnAncient5d8dbb7169e4f40Ae4b5da139b56fba00_0_I
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsExploringTheRuinsOfAnAncient5d8dbb7169e4f40Ae4b5da139b56fba00_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsExploringTheRuinsOfAnAncient5d8dbb7169e4f40Ae4b5da139b56fba00_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsExploringTheRuinsOfAnAncient5d8dbb7169e4f40Ae4b5da139b56fba00_0_Image.content = content;

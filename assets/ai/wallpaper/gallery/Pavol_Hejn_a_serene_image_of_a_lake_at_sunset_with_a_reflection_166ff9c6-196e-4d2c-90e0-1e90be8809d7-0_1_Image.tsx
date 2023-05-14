@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.colors.json';
+import content from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.content.md';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.json';
-import texts from './Pavol_Hejn_a_serene_image_of_a_lake_at_sunset_with_a_reflection_166ff9c6-196e-4d2c-90e0-1e90be8809d7-0_1.texts.json';
 
 /**
  * Image of A serene image of a lake at sunset with a reflection of the sky for a travel or vacation website
@@ -39,7 +39,6 @@ export function ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e9
         />
     );
 }
-
 ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.src = new URL(
     'https://cdn.midjourney.com/166ff9c6-196e-4d2c-90e0-1e90be8809d7/0_1.png',
 );
@@ -47,5 +46,4 @@ ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Im
     metadata satisfies IWallpaperMetadata;
 ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASereneImageOfALakeAtSunsetWithAReflection66ff9c6196e4d2c90e01e90be8809d701_1_Image.content = content;

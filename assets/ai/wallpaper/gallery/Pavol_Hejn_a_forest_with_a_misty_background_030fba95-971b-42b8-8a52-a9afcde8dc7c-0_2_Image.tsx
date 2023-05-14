@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_forest_with_a_misty_background_030fba95-971b-42b8-8a52-a9afcde8dc7c-0_2.colors.json';
+import content from './Pavol_Hejn_a_forest_with_a_misty_background_030fba95-971b-42b8-8a52-a9afcde8dc7c-0_2.content.md';
 import metadata from './Pavol_Hejn_a_forest_with_a_misty_background_030fba95-971b-42b8-8a52-a9afcde8dc7c-0_2.json';
-import texts from './Pavol_Hejn_a_forest_with_a_misty_background_030fba95-971b-42b8-8a52-a9afcde8dc7c-0_2.texts.json';
 
 /**
  * Image of A forest with a misty background
@@ -37,10 +37,9 @@ export function AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_I
         />
     );
 }
-
 AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_Image.src = new URL(
     'https://cdn.midjourney.com/030fba95-971b-42b8-8a52-a9afcde8dc7c/0_2.png',
 );
 AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_Image.colorStats = hydrateColorStats(colorStats);
-AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_Image.texts = texts satisfies IWallpaperTexts;
+AForestWithAMistyBackground030fba95971b42b88a52A9afcde8dc7c0_2_Image.content = content;

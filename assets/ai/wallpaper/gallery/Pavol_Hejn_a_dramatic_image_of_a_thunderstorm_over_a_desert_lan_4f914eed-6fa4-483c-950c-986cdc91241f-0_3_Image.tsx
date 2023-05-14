@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.colors.json';
+import content from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.content.md';
 import metadata from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.json';
-import texts from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_desert_lan_4f914eed-6fa4-483c-950c-986cdc91241f-0_3.texts.json';
 
 /**
  * Image of A dramatic image of a thunderstorm over a desert landscape for a weather or news website
@@ -39,7 +39,6 @@ export function ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c9
         />
     );
 }
-
 ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.src = new URL(
     'https://cdn.midjourney.com/4f914eed-6fa4-483c-950c-986cdc91241f/0_3.png',
 );
@@ -47,5 +46,4 @@ ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_I
     metadata satisfies IWallpaperMetadata;
 ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADramaticImageOfAThunderstormOverADesertLan4f914eed6fa4483c950c986cdc91241f0_3_Image.content = content;

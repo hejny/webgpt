@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_062effdf-834c-4294-978d-52fdf51572fd-0_0.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_062effdf-834c-4294-978d-52fdf51572fd-0_0.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_062effdf-834c-4294-978d-52fdf51572fd-0_0.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_a_matrix_of_futuristic_data_vi_062effdf-834c-4294-978d-52fdf51572fd-0_0.texts.json';
 
 /**
  * Image of A wallpaper featuring a matrix of futuristic data visualizations and graphs
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingAMatrixOfFuturisticDataVi62effdf834c4294978d5
         />
     );
 }
-
 AWallpaperFeaturingAMatrixOfFuturisticDataVi62effdf834c4294978d52fdf51572fd00_0_Image.src = new URL(
     'https://cdn.midjourney.com/062effdf-834c-4294-978d-52fdf51572fd/0_0.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingAMatrixOfFuturisticDataVi62effdf834c4294978d52fdf51572fd00_0_
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAMatrixOfFuturisticDataVi62effdf834c4294978d52fdf51572fd00_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingAMatrixOfFuturisticDataVi62effdf834c4294978d52fdf51572fd00_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingAMatrixOfFuturisticDataVi62effdf834c4294978d52fdf51572fd00_0_Image.content = content;

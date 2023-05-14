@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_2.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_2.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_jellyfish_in_the_ocean_ce763b89-9739-4a55-8b93-59d8619178a0-0_2.texts.json';
 
 /**
  * Image of A close-up of a jellyfish in the ocean
@@ -39,11 +39,10 @@ export function ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_
         />
     );
 }
-
 ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_2_Image.src = new URL(
     'https://cdn.midjourney.com/ce763b89-9739-4a55-8b93-59d8619178a0/0_2.png',
 );
 ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_2_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_2_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfAJellyfishInTheOceanCe763b8997394a558b9359d8619178a00_2_Image.content = content;

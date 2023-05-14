@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_8cbbc87f-f5bd-4378-b4b7-67f4011d6d46-0_1.colors.json';
+import content from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_8cbbc87f-f5bd-4378-b4b7-67f4011d6d46-0_1.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_8cbbc87f-f5bd-4378-b4b7-67f4011d6d46-0_1.json';
-import texts from './Pavol_Hejn_a_futuristic_laboratory_where_ainauts_use_ai_and_adv_8cbbc87f-f5bd-4378-b4b7-67f4011d6d46-0_1.texts.json';
 
 /**
  * Image of A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.
@@ -39,7 +39,6 @@ export function AFuturisticLaboratoryWhereAinautsUseAiAndAdv8cbbc87fF5bd4378B4b7
         />
     );
 }
-
 AFuturisticLaboratoryWhereAinautsUseAiAndAdv8cbbc87fF5bd4378B4b767f4011d6d460_1_Image.src = new URL(
     'https://cdn.midjourney.com/8cbbc87f-f5bd-4378-b4b7-67f4011d6d46/0_1.png',
 );
@@ -47,5 +46,4 @@ AFuturisticLaboratoryWhereAinautsUseAiAndAdv8cbbc87fF5bd4378B4b767f4011d6d460_1_
     metadata satisfies IWallpaperMetadata;
 AFuturisticLaboratoryWhereAinautsUseAiAndAdv8cbbc87fF5bd4378B4b767f4011d6d460_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticLaboratoryWhereAinautsUseAiAndAdv8cbbc87fF5bd4378B4b767f4011d6d460_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticLaboratoryWhereAinautsUseAiAndAdv8cbbc87fF5bd4378B4b767f4011d6d460_1_Image.content = content;

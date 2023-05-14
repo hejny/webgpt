@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_3.colors.json';
+import content from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_3.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_3.json';
-import texts from './Pavol_Hejn_a_futuristic_city_with_holographic_advertisements_fo_33100479-eeef-4d4e-ae2e-79349c0d6f43-0_3.texts.json';
 
 /**
  * Image of A futuristic city with holographic advertisements for a tech or innovation website
@@ -39,7 +39,6 @@ export function AFuturisticCityWithHolographicAdvertisementsFo3100479Eeef4d4eAe2
         />
     );
 }
-
 AFuturisticCityWithHolographicAdvertisementsFo3100479Eeef4d4eAe2e79349c0d6f4303_3_Image.src = new URL(
     'https://cdn.midjourney.com/33100479-eeef-4d4e-ae2e-79349c0d6f43/0_3.png',
 );
@@ -47,5 +46,4 @@ AFuturisticCityWithHolographicAdvertisementsFo3100479Eeef4d4eAe2e79349c0d6f4303_
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityWithHolographicAdvertisementsFo3100479Eeef4d4eAe2e79349c0d6f4303_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticCityWithHolographicAdvertisementsFo3100479Eeef4d4eAe2e79349c0d6f4303_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticCityWithHolographicAdvertisementsFo3100479Eeef4d4eAe2e79349c0d6f4303_3_Image.content = content;

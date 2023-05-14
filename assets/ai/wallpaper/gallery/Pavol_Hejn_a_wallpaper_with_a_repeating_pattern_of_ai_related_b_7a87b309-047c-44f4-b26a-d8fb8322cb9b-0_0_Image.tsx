@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_7a87b309-047c-44f4-b26a-d8fb8322cb9b-0_0.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_7a87b309-047c-44f4-b26a-d8fb8322cb9b-0_0.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_7a87b309-047c-44f4-b26a-d8fb8322cb9b-0_0.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_ai_related_b_7a87b309-047c-44f4-b26a-d8fb8322cb9b-0_0.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of AI-related buzzwords, in a minimalist font and color scheme.
@@ -39,7 +39,6 @@ export function AWallpaperWithARepeatingPatternOfAiRelatedB7a87b309047c44f4B26aD
         />
     );
 }
-
 AWallpaperWithARepeatingPatternOfAiRelatedB7a87b309047c44f4B26aD8fb8322cb9b0_0_Image.src = new URL(
     'https://cdn.midjourney.com/7a87b309-047c-44f4-b26a-d8fb8322cb9b/0_0.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithARepeatingPatternOfAiRelatedB7a87b309047c44f4B26aD8fb8322cb9b0_0_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfAiRelatedB7a87b309047c44f4B26aD8fb8322cb9b0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithARepeatingPatternOfAiRelatedB7a87b309047c44f4B26aD8fb8322cb9b0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithARepeatingPatternOfAiRelatedB7a87b309047c44f4B26aD8fb8322cb9b0_0_Image.content = content;

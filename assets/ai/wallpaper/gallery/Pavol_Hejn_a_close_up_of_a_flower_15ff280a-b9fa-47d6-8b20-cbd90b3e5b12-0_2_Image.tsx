@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_flower_15ff280a-b9fa-47d6-8b20-cbd90b3e5b12-0_2.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_flower_15ff280a-b9fa-47d6-8b20-cbd90b3e5b12-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_flower_15ff280a-b9fa-47d6-8b20-cbd90b3e5b12-0_2.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_flower_15ff280a-b9fa-47d6-8b20-cbd90b3e5b12-0_2.texts.json';
 
 /**
  * Image of A close-up of a flower
@@ -37,10 +37,9 @@ export function ACloseUpOfAFlower15ff280aB9fa47d68b20Cbd90b3e5b120_2_Image(props
         />
     );
 }
-
 ACloseUpOfAFlower15ff280aB9fa47d68b20Cbd90b3e5b120_2_Image.src = new URL(
     'https://cdn.midjourney.com/15ff280a-b9fa-47d6-8b20-cbd90b3e5b12/0_2.png',
 );
 ACloseUpOfAFlower15ff280aB9fa47d68b20Cbd90b3e5b120_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfAFlower15ff280aB9fa47d68b20Cbd90b3e5b120_2_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfAFlower15ff280aB9fa47d68b20Cbd90b3e5b120_2_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfAFlower15ff280aB9fa47d68b20Cbd90b3e5b120_2_Image.content = content;

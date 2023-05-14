@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_0ea8197d-fb7e-4689-ac9d-a00497469caa-0_0.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_0ea8197d-fb7e-4689-ac9d-a00497469caa-0_0.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_0ea8197d-fb7e-4689-ac9d-a00497469caa-0_0.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_simple_geome_0ea8197d-fb7e-4689-ac9d-a00497469caa-0_0.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of simple geometric shapes, in a monochromatic color palette such as grey or blue.
@@ -39,7 +39,6 @@ export function AWallpaperWithARepeatingPatternOfSimpleGeomeea8197dFb7e4689Ac9dA
         />
     );
 }
-
 AWallpaperWithARepeatingPatternOfSimpleGeomeea8197dFb7e4689Ac9dA00497469caa00_0_Image.src = new URL(
     'https://cdn.midjourney.com/0ea8197d-fb7e-4689-ac9d-a00497469caa/0_0.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithARepeatingPatternOfSimpleGeomeea8197dFb7e4689Ac9dA00497469caa00_0_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfSimpleGeomeea8197dFb7e4689Ac9dA00497469caa00_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithARepeatingPatternOfSimpleGeomeea8197dFb7e4689Ac9dA00497469caa00_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithARepeatingPatternOfSimpleGeomeea8197dFb7e4689Ac9dA00497469caa00_0_Image.content = content;

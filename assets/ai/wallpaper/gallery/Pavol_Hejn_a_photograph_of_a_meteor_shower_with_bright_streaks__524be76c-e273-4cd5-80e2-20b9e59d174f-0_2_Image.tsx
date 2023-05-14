@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__524be76c-e273-4cd5-80e2-20b9e59d174f-0_2.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__524be76c-e273-4cd5-80e2-20b9e59d174f-0_2.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__524be76c-e273-4cd5-80e2-20b9e59d174f-0_2.json';
-import texts from './Pavol_Hejn_a_photograph_of_a_meteor_shower_with_bright_streaks__524be76c-e273-4cd5-80e2-20b9e59d174f-0_2.texts.json';
 
 /**
  * Image of A photograph of a meteor shower, with bright streaks of light crossing the night sky.
@@ -39,7 +39,6 @@ export function APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e22
         />
     );
 }
-
 APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e220b9e59d174f0_2_Image.src = new URL(
     'https://cdn.midjourney.com/524be76c-e273-4cd5-80e2-20b9e59d174f/0_2.png',
 );
@@ -47,5 +46,4 @@ APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e220b9e59d174f0_2_I
     metadata satisfies IWallpaperMetadata;
 APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e220b9e59d174f0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e220b9e59d174f0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfAMeteorShowerWithBrightStreaks524be76cE2734cd580e220b9e59d174f0_2_Image.content = content;

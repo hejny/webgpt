@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_3.colors.json';
+import content from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_3.content.md';
 import metadata from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_3.json';
-import texts from './Pavol_Hejn_a_bold_and_graphic_image_of_a_tiger_s_head_for_a_wil_e635bda5-db86-4c53-8d21-8e9c7801bd94-0_3.texts.json';
 
 /**
  * Image of A bold and graphic image of a tiger's head for a wildlife or animal conservation website
@@ -39,7 +39,6 @@ export function ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c
         />
     );
 }
-
 ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_3_Image.src = new URL(
     'https://cdn.midjourney.com/e635bda5-db86-4c53-8d21-8e9c7801bd94/0_3.png',
 );
@@ -47,5 +46,4 @@ ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_3_Imag
     metadata satisfies IWallpaperMetadata;
 ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ABoldAndGraphicImageOfATigerSHeadForAWilE635bda5Db864c538d218e9c7801bd940_3_Image.content = content;

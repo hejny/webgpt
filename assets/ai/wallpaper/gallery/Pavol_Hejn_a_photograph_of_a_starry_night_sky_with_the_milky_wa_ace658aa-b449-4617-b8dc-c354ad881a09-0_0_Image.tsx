@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.json';
-import texts from './Pavol_Hejn_a_photograph_of_a_starry_night_sky_with_the_milky_wa_ace658aa-b449-4617-b8dc-c354ad881a09-0_0.texts.json';
 
 /**
  * Image of A photograph of a starry night sky, with the Milky Way galaxy visible overhead.
@@ -39,7 +39,6 @@ export function APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC3
         />
     );
 }
-
 APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Image.src = new URL(
     'https://cdn.midjourney.com/ace658aa-b449-4617-b8dc-c354ad881a09/0_0.png',
 );
@@ -47,5 +46,4 @@ APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Im
     metadata satisfies IWallpaperMetadata;
 APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfAStarryNightSkyWithTheMilkyWaAce658aaB4494617B8dcC354ad881a090_0_Image.content = content;

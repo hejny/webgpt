@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_0.colors.json';
+import content from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_0.content.md';
 import metadata from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_0.json';
-import texts from './Pavol_Hejn_an_abstract_circuit_board_pattern_in_shades_of_blue__65aa5857-9bfb-4227-b358-54ae102a5c99-0_0.texts.json';
 
 /**
  * Image of An abstract circuit board pattern in shades of blue and silver
@@ -39,7 +39,6 @@ export function AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B3585
         />
     );
 }
-
 AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_Image.src = new URL(
     'https://cdn.midjourney.com/65aa5857-9bfb-4227-b358-54ae102a5c99/0_0.png',
 );
@@ -47,5 +46,4 @@ AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractCircuitBoardPatternInShadesOfBlue65aa58579bfb4227B35854ae102a5c990_0_Image.content = content;

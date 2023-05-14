@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_b6ed2855-fc11-482d-bb90-22a09000e3c1-0_1.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_b6ed2855-fc11-482d-bb90-22a09000e3c1-0_1.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_b6ed2855-fc11-482d-bb90-22a09000e3c1-0_1.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_seagull_in_flight_b6ed2855-fc11-482d-bb90-22a09000e3c1-0_1.texts.json';
 
 /**
  * Image of A close-up of a seagull in flight
@@ -37,10 +37,9 @@ export function ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Im
         />
     );
 }
-
 ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.src = new URL(
     'https://cdn.midjourney.com/b6ed2855-fc11-482d-bb90-22a09000e3c1/0_1.png',
 );
 ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfASeagullInFlightB6ed2855Fc11482dBb9022a09000e3c10_1_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_0.colors.json';
+import content from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_0.content.md';
 import metadata from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_0.json';
-import texts from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_forest_at_dusk_for_191435c1-0bbe-46b6-8cf6-a9fa46dee427-0_0.texts.json';
 
 /**
  * Image of A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog
@@ -39,7 +39,6 @@ export function ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A
         />
     );
 }
-
 ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_0_Image.src = new URL(
     'https://cdn.midjourney.com/191435c1-0bbe-46b6-8cf6-a9fa46dee427/0_0.png',
 );
@@ -47,5 +46,4 @@ ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_0_I
     metadata satisfies IWallpaperMetadata;
 ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADreamyWatercolorPaintingOfAForestAtDuskFor191435c10bbe46b68cf6A9fa46dee4270_0_Image.content = content;

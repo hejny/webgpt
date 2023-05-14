@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_0.colors.json';
+import content from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_0.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_0.json';
-import texts from './Pavol_Hejn_a_futuristic_image_of_a_cityscape_with_flying_cars_f_5a921135-14fd-45a4-94e2-4631f2036259-0_0.texts.json';
 
 /**
  * Image of A futuristic image of a cityscape with flying cars for a sci-fi or technology website
@@ -39,7 +39,6 @@ export function AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24
         />
     );
 }
-
 AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_0_Image.src = new URL(
     'https://cdn.midjourney.com/5a921135-14fd-45a4-94e2-4631f2036259/0_0.png',
 );
@@ -47,5 +46,4 @@ AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_0_I
     metadata satisfies IWallpaperMetadata;
 AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticImageOfACityscapeWithFlyingCarsF5a92113514fd45a494e24631f20362590_0_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__80249808-db35-4e04-9e70-f2c4d3f49462-0_1.colors.json';
+import content from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__80249808-db35-4e04-9e70-f2c4d3f49462-0_1.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__80249808-db35-4e04-9e70-f2c4d3f49462-0_1.json';
-import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_futuristic_cityscape_with__80249808-db35-4e04-9e70-f2c4d3f49462-0_1.texts.json';
 
 /**
  * Image of A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.
@@ -39,7 +39,6 @@ export function AMinimalistGraphicOfAFuturisticCityscapeWith80249808Db354e049e70
         />
     );
 }
-
 AMinimalistGraphicOfAFuturisticCityscapeWith80249808Db354e049e70F2c4d3f494620_1_Image.src = new URL(
     'https://cdn.midjourney.com/80249808-db35-4e04-9e70-f2c4d3f49462/0_1.png',
 );
@@ -47,5 +46,4 @@ AMinimalistGraphicOfAFuturisticCityscapeWith80249808Db354e049e70F2c4d3f494620_1_
     metadata satisfies IWallpaperMetadata;
 AMinimalistGraphicOfAFuturisticCityscapeWith80249808Db354e049e70F2c4d3f494620_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AMinimalistGraphicOfAFuturisticCityscapeWith80249808Db354e049e70F2c4d3f494620_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AMinimalistGraphicOfAFuturisticCityscapeWith80249808Db354e049e70F2c4d3f494620_1_Image.content = content;

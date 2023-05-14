@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.colors.json';
+import content from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.content.md';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.json';
-import texts from './Pavol_Hejn_a_digital_image_of_a_black_hole_with_the_distorted_s_37267751-5121-44b4-b98a-3d8e2e6ea256-0_3.texts.json';
 
 /**
  * Image of A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity.
@@ -39,7 +39,6 @@ export function ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8
         />
     );
 }
-
 ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.src = new URL(
     'https://cdn.midjourney.com/37267751-5121-44b4-b98a-3d8e2e6ea256/0_3.png',
 );
@@ -47,5 +46,4 @@ ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Im
     metadata satisfies IWallpaperMetadata;
 ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalImageOfABlackHoleWithTheDistortedS7267751512144b4B98a3d8e2e6ea25603_3_Image.content = content;

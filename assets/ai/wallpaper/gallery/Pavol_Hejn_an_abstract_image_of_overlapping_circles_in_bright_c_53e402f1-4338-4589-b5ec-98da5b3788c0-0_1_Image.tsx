@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_1.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_1.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_1.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_overlapping_circles_in_bright_c_53e402f1-4338-4589-b5ec-98da5b3788c0-0_1.texts.json';
 
 /**
  * Image of An abstract image of overlapping circles in bright colors for a business or marketing website
@@ -39,7 +39,6 @@ export function AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec
         />
     );
 }
-
 AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_1_Image.src = new URL(
     'https://cdn.midjourney.com/53e402f1-4338-4589-b5ec-98da5b3788c0/0_1.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_1_
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfOverlappingCirclesInBrightC53e402f143384589B5ec98da5b3788c00_1_Image.content = content;

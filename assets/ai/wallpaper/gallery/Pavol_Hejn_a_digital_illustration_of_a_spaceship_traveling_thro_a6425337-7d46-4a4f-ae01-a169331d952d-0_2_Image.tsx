@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_2.colors.json';
+import content from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_2.content.md';
 import metadata from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_2.json';
-import texts from './Pavol_Hejn_a_digital_illustration_of_a_spaceship_traveling_thro_a6425337-7d46-4a4f-ae01-a169331d952d-0_2.texts.json';
 
 /**
  * Image of A digital illustration of a spaceship traveling through a colorful nebula.
@@ -39,7 +39,6 @@ export function ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe0
         />
     );
 }
-
 ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_2_Image.src = new URL(
     'https://cdn.midjourney.com/a6425337-7d46-4a4f-ae01-a169331d952d/0_2.png',
 );
@@ -47,5 +46,4 @@ ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_2
     metadata satisfies IWallpaperMetadata;
 ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalIllustrationOfASpaceshipTravelingThroA64253377d464a4fAe01A169331d952d0_2_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_90a075e6-6c1d-4790-8ecc-f710b78fabd3-0_0.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_90a075e6-6c1d-4790-8ecc-f710b78fabd3-0_0.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_90a075e6-6c1d-4790-8ecc-f710b78fabd3-0_0.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_spaceship_approaching_a_wormh_90a075e6-6c1d-4790-8ecc-f710b78fabd3-0_0.texts.json';
 
 /**
  * Image of An abstract image of a spaceship approaching a wormhole, with bright colors and distorted shapes.
@@ -39,7 +39,6 @@ export function AnAbstractImageOfASpaceshipApproachingAWormh90a075e66c1d47908ecc
         />
     );
 }
-
 AnAbstractImageOfASpaceshipApproachingAWormh90a075e66c1d47908eccF710b78fabd30_0_Image.src = new URL(
     'https://cdn.midjourney.com/90a075e6-6c1d-4790-8ecc-f710b78fabd3/0_0.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfASpaceshipApproachingAWormh90a075e66c1d47908eccF710b78fabd30_0_
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfASpaceshipApproachingAWormh90a075e66c1d47908eccF710b78fabd30_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfASpaceshipApproachingAWormh90a075e66c1d47908eccF710b78fabd30_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfASpaceshipApproachingAWormh90a075e66c1d47908eccF710b78fabd30_0_Image.content = content;

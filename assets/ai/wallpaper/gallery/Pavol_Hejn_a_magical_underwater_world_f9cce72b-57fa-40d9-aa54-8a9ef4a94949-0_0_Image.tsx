@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.colors.json';
+import content from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.content.md';
 import metadata from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.json';
-import texts from './Pavol_Hejn_a_magical_underwater_world_f9cce72b-57fa-40d9-aa54-8a9ef4a94949-0_0.texts.json';
 
 /**
  * Image of A magical underwater world
@@ -37,10 +37,9 @@ export function AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image
         />
     );
 }
-
 AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.src = new URL(
     'https://cdn.midjourney.com/f9cce72b-57fa-40d9-aa54-8a9ef4a94949/0_0.png',
 );
 AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.colorStats = hydrateColorStats(colorStats);
-AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.texts = texts satisfies IWallpaperTexts;
+AMagicalUnderwaterWorldF9cce72b57fa40d9Aa548a9ef4a949490_0_Image.content = content;

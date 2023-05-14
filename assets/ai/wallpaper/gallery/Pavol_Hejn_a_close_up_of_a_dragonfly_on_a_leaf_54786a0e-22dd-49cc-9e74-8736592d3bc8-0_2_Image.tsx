@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_dragonfly_on_a_leaf_54786a0e-22dd-49cc-9e74-8736592d3bc8-0_2.texts.json';
 
 /**
  * Image of A close-up of a dragonfly on a leaf
@@ -37,10 +37,9 @@ export function ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_I
         />
     );
 }
-
 ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.src = new URL(
     'https://cdn.midjourney.com/54786a0e-22dd-49cc-9e74-8736592d3bc8/0_2.png',
 );
 ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfADragonflyOnALeaf54786a0e22dd49cc9e748736592d3bc80_2_Image.content = content;

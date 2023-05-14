@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_1.colors.json';
+import content from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_1.content.md';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_1.json';
-import texts from './Pavol_Hejn_a_digital_painting_of_a_spaceship_approaching_an_ali_3bdbef82-2e14-4555-8cc9-71adbdb25974-0_1.texts.json';
 
 /**
  * Image of A digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface.
@@ -39,7 +39,6 @@ export function ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc9
         />
     );
 }
-
 ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_1_Image.src = new URL(
     'https://cdn.midjourney.com/3bdbef82-2e14-4555-8cc9-71adbdb25974/0_1.png',
 );
@@ -47,5 +46,4 @@ ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_1_
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalPaintingOfASpaceshipApproachingAnAli3bdbef822e1445558cc971adbdb259740_1_Image.content = content;

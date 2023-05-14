@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_5ad48809-c5db-4943-abdc-5d325172c29d-0_3.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_5ad48809-c5db-4943-abdc-5d325172c29d-0_3.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_5ad48809-c5db-4943-abdc-5d325172c29d-0_3.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_graph_of_complex_mathematical_equ_5ad48809-c5db-4943-abdc-5d325172c29d-0_3.texts.json';
 
 /**
  * Image of A wallpaper with a graph of complex mathematical equations, arranged in a minimalist and modern design.
@@ -39,7 +39,6 @@ export function AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc
         />
     );
 }
-
 AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc5d325172c29d0_3_Image.src = new URL(
     'https://cdn.midjourney.com/5ad48809-c5db-4943-abdc-5d325172c29d/0_3.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc5d325172c29d0_3_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc5d325172c29d0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc5d325172c29d0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithAGraphOfComplexMathematicalEqu5ad48809C5db4943Abdc5d325172c29d0_3_Image.content = content;

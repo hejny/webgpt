@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_558e018d-91d7-479e-9a46-385c298123dd-0_0.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_558e018d-91d7-479e-9a46-385c298123dd-0_0.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_558e018d-91d7-479e-9a46-385c298123dd-0_0.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_558e018d-91d7-479e-9a46-385c298123dd-0_0.texts.json';
 
 /**
  * Image of A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsConductingExperimentsOnADista558e018d91d7479e9a46
         />
     );
 }
-
 AGroupOfAinautsConductingExperimentsOnADista558e018d91d7479e9a46385c298123dd0_0_Image.src = new URL(
     'https://cdn.midjourney.com/558e018d-91d7-479e-9a46-385c298123dd/0_0.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsConductingExperimentsOnADista558e018d91d7479e9a46385c298123dd0_0_
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsConductingExperimentsOnADista558e018d91d7479e9a46385c298123dd0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsConductingExperimentsOnADista558e018d91d7479e9a46385c298123dd0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsConductingExperimentsOnADista558e018d91d7479e9a46385c298123dd0_0_Image.content = content;

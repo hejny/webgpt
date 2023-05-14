@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_1.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_1.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_1.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_leaf_with_dew_drops_a24d7eec-f404-4df9-9594-6eb0cd7be208-0_1.texts.json';
 
 /**
  * Image of A close-up of a leaf with dew drops
@@ -37,10 +37,9 @@ export function ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_1_I
         />
     );
 }
-
 ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_1_Image.src = new URL(
     'https://cdn.midjourney.com/a24d7eec-f404-4df9-9594-6eb0cd7be208/0_1.png',
 );
 ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_1_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_1_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfALeafWithDewDropsA24d7eecF4044df995946eb0cd7be2080_1_Image.content = content;

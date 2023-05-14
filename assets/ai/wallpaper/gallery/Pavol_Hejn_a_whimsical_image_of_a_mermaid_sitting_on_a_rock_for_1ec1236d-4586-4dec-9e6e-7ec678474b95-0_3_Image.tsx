@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_3.colors.json';
+import content from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_3.content.md';
 import metadata from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_3.json';
-import texts from './Pavol_Hejn_a_whimsical_image_of_a_mermaid_sitting_on_a_rock_for_1ec1236d-4586-4dec-9e6e-7ec678474b95-0_3.texts.json';
 
 /**
  * Image of A whimsical image of a mermaid sitting on a rock for a fantasy or fiction website
@@ -39,7 +39,6 @@ export function AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7e
         />
     );
 }
-
 AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.src = new URL(
     'https://cdn.midjourney.com/1ec1236d-4586-4dec-9e6e-7ec678474b95/0_3.png',
 );
@@ -47,5 +46,4 @@ AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Im
     metadata satisfies IWallpaperMetadata;
 AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWhimsicalImageOfAMermaidSittingOnARockFor1ec1236d45864dec9e6e7ec678474b950_3_Image.content = content;

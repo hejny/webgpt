@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.colors.json';
+import content from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.content.md';
 import metadata from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.json';
-import texts from './Pavol_Hejn_a_bright_and_playful_image_of_a_rainbow_for_a_childr_30660838-6a7d-4053-b6e3-3f79d3125d66-0_2.texts.json';
 
 /**
  * Image of A bright and playful image of a rainbow for a children's or education website
@@ -39,7 +39,6 @@ export function ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f
         />
     );
 }
-
 ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.src = new URL(
     'https://cdn.midjourney.com/30660838-6a7d-4053-b6e3-3f79d3125d66/0_2.png',
 );
@@ -47,5 +46,4 @@ ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Im
     metadata satisfies IWallpaperMetadata;
 ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ABrightAndPlayfulImageOfARainbowForAChildr306608386a7d4053B6e33f79d3125d660_2_Image.content = content;

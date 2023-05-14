@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_a93c661e-a50e-489d-8f0f-bf0104e73813-0_2.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_a93c661e-a50e-489d-8f0f-bf0104e73813-0_2.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_a93c661e-a50e-489d-8f0f-bf0104e73813-0_2.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_standing_on_the_surface_of_a_dist_a93c661e-a50e-489d-8f0f-bf0104e73813-0_2.texts.json';
 
 /**
  * Image of A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsStandingOnTheSurfaceOfADistA93c661eA50e489d8f0fBf
         />
     );
 }
-
 AGroupOfAinautsStandingOnTheSurfaceOfADistA93c661eA50e489d8f0fBf0104e738130_2_Image.src = new URL(
     'https://cdn.midjourney.com/a93c661e-a50e-489d-8f0f-bf0104e73813/0_2.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsStandingOnTheSurfaceOfADistA93c661eA50e489d8f0fBf0104e738130_2_Im
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsStandingOnTheSurfaceOfADistA93c661eA50e489d8f0fBf0104e738130_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsStandingOnTheSurfaceOfADistA93c661eA50e489d8f0fBf0104e738130_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsStandingOnTheSurfaceOfADistA93c661eA50e489d8f0fBf0104e738130_2_Image.content = content;

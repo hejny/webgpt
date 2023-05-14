@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_1.colors.json';
+import content from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_1.content.md';
 import metadata from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_1.json';
-import texts from './Pavol_Hejn_a_beautiful_sunset_over_the_ocean_6be2b125-4fbb-498f-8f08-fc153998fef5-0_1.texts.json';
 
 /**
  * Image of A beautiful sunset over the ocean
@@ -37,10 +37,9 @@ export function ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_1_
         />
     );
 }
-
 ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_1_Image.src = new URL(
     'https://cdn.midjourney.com/6be2b125-4fbb-498f-8f08-fc153998fef5/0_1.png',
 );
 ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_1_Image.colorStats = hydrateColorStats(colorStats);
-ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_1_Image.texts = texts satisfies IWallpaperTexts;
+ABeautifulSunsetOverTheOcean6be2b1254fbb498f8f08Fc153998fef50_1_Image.content = content;

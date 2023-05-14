@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_overlapping_squares_in_bright_v_048c2ead-1a7a-4ebc-94f8-5107ce1f002d-0_1.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_overlapping_squares_in_bright_v_048c2ead-1a7a-4ebc-94f8-5107ce1f002d-0_1.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_overlapping_squares_in_bright_v_048c2ead-1a7a-4ebc-94f8-5107ce1f002d-0_1.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_overlapping_squares_in_bright_v_048c2ead-1a7a-4ebc-94f8-5107ce1f002d-0_1.texts.json';
 
 /**
  * Image of An abstract image of overlapping squares in bright, vibrant colors for a business or marketing website
@@ -39,7 +39,6 @@ export function AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f8
         />
     );
 }
-
 AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f85107ce1f002d0_1_Image.src = new URL(
     'https://cdn.midjourney.com/048c2ead-1a7a-4ebc-94f8-5107ce1f002d/0_1.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f85107ce1f002d0_1_
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f85107ce1f002d0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f85107ce1f002d0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfOverlappingSquaresInBrightV048c2ead1a7a4ebc94f85107ce1f002d0_1_Image.content = content;

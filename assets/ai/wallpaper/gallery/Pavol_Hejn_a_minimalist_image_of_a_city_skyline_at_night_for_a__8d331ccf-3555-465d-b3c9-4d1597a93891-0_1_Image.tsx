@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_image_of_a_city_skyline_at_night_for_a__8d331ccf-3555-465d-b3c9-4d1597a93891-0_1.colors.json';
+import content from './Pavol_Hejn_a_minimalist_image_of_a_city_skyline_at_night_for_a__8d331ccf-3555-465d-b3c9-4d1597a93891-0_1.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_image_of_a_city_skyline_at_night_for_a__8d331ccf-3555-465d-b3c9-4d1597a93891-0_1.json';
-import texts from './Pavol_Hejn_a_minimalist_image_of_a_city_skyline_at_night_for_a__8d331ccf-3555-465d-b3c9-4d1597a93891-0_1.texts.json';
 
 /**
  * Image of A minimalist image of a city skyline at night for a real estate or architecture website
@@ -39,7 +39,6 @@ export function AMinimalistImageOfACitySkylineAtNightForA8d331ccf3555465dB3c94d1
         />
     );
 }
-
 AMinimalistImageOfACitySkylineAtNightForA8d331ccf3555465dB3c94d1597a938910_1_Image.src = new URL(
     'https://cdn.midjourney.com/8d331ccf-3555-465d-b3c9-4d1597a93891/0_1.png',
 );
@@ -47,5 +46,4 @@ AMinimalistImageOfACitySkylineAtNightForA8d331ccf3555465dB3c94d1597a938910_1_Ima
     metadata satisfies IWallpaperMetadata;
 AMinimalistImageOfACitySkylineAtNightForA8d331ccf3555465dB3c94d1597a938910_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AMinimalistImageOfACitySkylineAtNightForA8d331ccf3555465dB3c94d1597a938910_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AMinimalistImageOfACitySkylineAtNightForA8d331ccf3555465dB3c94d1597a938910_1_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_1.colors.json';
+import content from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_1.content.md';
 import metadata from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_1.json';
-import texts from './Pavol_Hejn_a_cozy_winter_cabin_surrounded_by_snow_covered_trees_de398798-a2f7-4e9a-ab64-922888c7af65-0_1.texts.json';
 
 /**
  * Image of A cozy winter cabin surrounded by snow-covered trees for a home decor or lifestyle blog
@@ -39,7 +39,6 @@ export function ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64
         />
     );
 }
-
 ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_1_Image.src = new URL(
     'https://cdn.midjourney.com/de398798-a2f7-4e9a-ab64-922888c7af65/0_1.png',
 );
@@ -47,5 +46,4 @@ ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_1_
     metadata satisfies IWallpaperMetadata;
 ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ACozyWinterCabinSurroundedBySnowCoveredTreesDe398798A2f74e9aAb64922888c7af650_1_Image.content = content;

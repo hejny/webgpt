@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_3e978d5e-d172-4d88-b8ce-ca47712dbac6-0_3.colors.json';
+import content from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_3e978d5e-d172-4d88-b8ce-ca47712dbac6-0_3.content.md';
 import metadata from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_3e978d5e-d172-4d88-b8ce-ca47712dbac6-0_3.json';
-import texts from './Pavol_Hejn_a_dreamy_watercolor_painting_of_a_field_of_flowers_f_3e978d5e-d172-4d88-b8ce-ca47712dbac6-0_3.texts.json';
 
 /**
  * Image of A dreamy watercolor painting of a field of flowers for a wedding or event planning website
@@ -39,7 +39,6 @@ export function ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa
         />
     );
 }
-
 ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.src = new URL(
     'https://cdn.midjourney.com/3e978d5e-d172-4d88-b8ce-ca47712dbac6/0_3.png',
 );
@@ -47,5 +46,4 @@ ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_I
     metadata satisfies IWallpaperMetadata;
 ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADreamyWatercolorPaintingOfAFieldOfFlowersFe978d5eD1724d88B8ceCa47712dbac603_3_Image.content = content;

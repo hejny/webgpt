@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.colors.json';
+import content from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.content.md';
 import metadata from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.json';
-import texts from './Pavol_Hejn_a_pattern_of_interconnected_nodes_and_lines_resembli_33cddba4-0a32-494b-b17d-39946d991382-0_1.texts.json';
 
 /**
  * Image of A pattern of interconnected nodes and lines resembling a neural network
@@ -39,7 +39,6 @@ export function APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17
         />
     );
 }
-
 APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1_Image.src = new URL(
     'https://cdn.midjourney.com/33cddba4-0a32-494b-b17d-39946d991382/0_1.png',
 );
@@ -47,5 +46,4 @@ APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1
     metadata satisfies IWallpaperMetadata;
 APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1_Image.colorStats =
     hydrateColorStats(colorStats);
-APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+APatternOfInterconnectedNodesAndLinesResembli33cddba40a32494bB17d39946d9913820_1_Image.content = content;

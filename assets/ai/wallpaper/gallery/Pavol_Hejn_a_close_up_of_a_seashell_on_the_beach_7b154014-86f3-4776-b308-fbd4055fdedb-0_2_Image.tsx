@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_2.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_2.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_seashell_on_the_beach_7b154014-86f3-4776-b308-fbd4055fdedb-0_2.texts.json';
 
 /**
  * Image of A close-up of a seashell on the beach
@@ -39,10 +39,9 @@ export function ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_2
         />
     );
 }
-
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_2_Image.src = new URL(
     'https://cdn.midjourney.com/7b154014-86f3-4776-b308-fbd4055fdedb/0_2.png',
 );
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_2_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_2_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfASeashellOnTheBeach7b15401486f34776B308Fbd4055fdedb0_2_Image.content = content;

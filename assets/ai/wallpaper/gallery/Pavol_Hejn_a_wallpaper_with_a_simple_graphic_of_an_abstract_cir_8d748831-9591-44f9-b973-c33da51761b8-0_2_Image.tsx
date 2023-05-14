@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_8d748831-9591-44f9-b973-c33da51761b8-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_8d748831-9591-44f9-b973-c33da51761b8-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_8d748831-9591-44f9-b973-c33da51761b8-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_an_abstract_cir_8d748831-9591-44f9-b973-c33da51761b8-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleGraphicOfAnAbstractCir8d748831959144f9B973C
         />
     );
 }
-
 AWallpaperWithASimpleGraphicOfAnAbstractCir8d748831959144f9B973C33da51761b80_2_Image.src = new URL(
     'https://cdn.midjourney.com/8d748831-9591-44f9-b973-c33da51761b8/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleGraphicOfAnAbstractCir8d748831959144f9B973C33da51761b80_2_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfAnAbstractCir8d748831959144f9B973C33da51761b80_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleGraphicOfAnAbstractCir8d748831959144f9B973C33da51761b80_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleGraphicOfAnAbstractCir8d748831959144f9B973C33da51761b80_2_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_3.colors.json';
+import content from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_3.content.md';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_3.json';
-import texts from './Pavol_Hejn_a_colorful_graphic_of_a_retro_rocket_ship_for_a_scie_74f5f0ba-c83a-444c-87e0-daee13062c1f-0_3.texts.json';
 
 /**
  * Image of A colorful graphic of a retro rocket ship for a science or space exploration website
@@ -39,7 +39,6 @@ export function AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Da
         />
     );
 }
-
 AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_3_Image.src = new URL(
     'https://cdn.midjourney.com/74f5f0ba-c83a-444c-87e0-daee13062c1f/0_3.png',
 );
@@ -47,5 +46,4 @@ AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_3_Im
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AColorfulGraphicOfARetroRocketShipForAScie74f5f0baC83a444c87e0Daee13062c1f0_3_Image.content = content;

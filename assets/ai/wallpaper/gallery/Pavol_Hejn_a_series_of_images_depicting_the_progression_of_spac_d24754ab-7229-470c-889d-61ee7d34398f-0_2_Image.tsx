@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d24754ab-7229-470c-889d-61ee7d34398f-0_2.colors.json';
+import content from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d24754ab-7229-470c-889d-61ee7d34398f-0_2.content.md';
 import metadata from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d24754ab-7229-470c-889d-61ee7d34398f-0_2.json';
-import texts from './Pavol_Hejn_a_series_of_images_depicting_the_progression_of_spac_d24754ab-7229-470c-889d-61ee7d34398f-0_2.texts.json';
 
 /**
  * Image of A series of images depicting the progression of space exploration, from early rockets to modern spacecraft.
@@ -39,7 +39,6 @@ export function ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d
         />
     );
 }
-
 ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_2_Image.src = new URL(
     'https://cdn.midjourney.com/d24754ab-7229-470c-889d-61ee7d34398f/0_2.png',
 );
@@ -47,5 +46,4 @@ ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_2_
     metadata satisfies IWallpaperMetadata;
 ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASeriesOfImagesDepictingTheProgressionOfSpacD24754ab7229470c889d61ee7d34398f0_2_Image.content = content;

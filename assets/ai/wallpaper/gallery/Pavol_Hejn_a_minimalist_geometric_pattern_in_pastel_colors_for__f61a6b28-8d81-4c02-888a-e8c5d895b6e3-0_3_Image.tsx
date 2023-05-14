@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__f61a6b28-8d81-4c02-888a-e8c5d895b6e3-0_3.colors.json';
+import content from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__f61a6b28-8d81-4c02-888a-e8c5d895b6e3-0_3.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__f61a6b28-8d81-4c02-888a-e8c5d895b6e3-0_3.json';
-import texts from './Pavol_Hejn_a_minimalist_geometric_pattern_in_pastel_colors_for__f61a6b28-8d81-4c02-888a-e8c5d895b6e3-0_3.texts.json';
 
 /**
  * Image of A minimalist geometric pattern in pastel colors for a fashion or beauty website
@@ -39,7 +39,6 @@ export function AMinimalistGeometricPatternInPastelColorsForF61a6b288d814c02888a
         />
     );
 }
-
 AMinimalistGeometricPatternInPastelColorsForF61a6b288d814c02888aE8c5d895b6e30_3_Image.src = new URL(
     'https://cdn.midjourney.com/f61a6b28-8d81-4c02-888a-e8c5d895b6e3/0_3.png',
 );
@@ -47,5 +46,4 @@ AMinimalistGeometricPatternInPastelColorsForF61a6b288d814c02888aE8c5d895b6e30_3_
     metadata satisfies IWallpaperMetadata;
 AMinimalistGeometricPatternInPastelColorsForF61a6b288d814c02888aE8c5d895b6e30_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AMinimalistGeometricPatternInPastelColorsForF61a6b288d814c02888aE8c5d895b6e30_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AMinimalistGeometricPatternInPastelColorsForF61a6b288d814c02888aE8c5d895b6e30_3_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_2f918843-47cf-41c9-b513-78e3d39ff3a1-0_2.colors.json';
+import content from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_2f918843-47cf-41c9-b513-78e3d39ff3a1-0_2.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_2f918843-47cf-41c9-b513-78e3d39ff3a1-0_2.json';
-import texts from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_use_advanced_ai_2f918843-47cf-41c9-b513-78e3d39ff3a1-0_2.texts.json';
 
 /**
  * Image of A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems.
@@ -39,7 +39,6 @@ export function AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B513
         />
     );
 }
-
 AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.src = new URL(
     'https://cdn.midjourney.com/2f918843-47cf-41c9-b513-78e3d39ff3a1/0_2.png',
 );
@@ -47,5 +46,4 @@ AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticCityscapeWhereAinautsUseAdvancedAif91884347cf41c9B51378e3d39ff3a102_2_Image.content = content;

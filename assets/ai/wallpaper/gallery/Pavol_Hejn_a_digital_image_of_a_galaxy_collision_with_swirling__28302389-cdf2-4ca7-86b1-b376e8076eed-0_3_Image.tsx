@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_3.colors.json';
+import content from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_3.content.md';
 import metadata from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_3.json';
-import texts from './Pavol_Hejn_a_digital_image_of_a_galaxy_collision_with_swirling__28302389-cdf2-4ca7-86b1-b376e8076eed-0_3.texts.json';
 
 /**
  * Image of A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.
@@ -39,7 +39,6 @@ export function ADigitalImageOfAGalaxyCollisionWithSwirling28302389Cdf24ca786b1B
         />
     );
 }
-
 ADigitalImageOfAGalaxyCollisionWithSwirling28302389Cdf24ca786b1B376e8076eed0_3_Image.src = new URL(
     'https://cdn.midjourney.com/28302389-cdf2-4ca7-86b1-b376e8076eed/0_3.png',
 );
@@ -47,5 +46,4 @@ ADigitalImageOfAGalaxyCollisionWithSwirling28302389Cdf24ca786b1B376e8076eed0_3_I
     metadata satisfies IWallpaperMetadata;
 ADigitalImageOfAGalaxyCollisionWithSwirling28302389Cdf24ca786b1B376e8076eed0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalImageOfAGalaxyCollisionWithSwirling28302389Cdf24ca786b1B376e8076eed0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalImageOfAGalaxyCollisionWithSwirling28302389Cdf24ca786b1B376e8076eed0_3_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_3.colors.json';
+import content from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_3.content.md';
 import metadata from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_3.json';
-import texts from './Pavol_Hejn_a_serene_image_of_a_waterfall_in_the_jungle_for_a_tr_68b1e444-349e-49ae-8929-06cb4817b8aa-0_3.texts.json';
 
 /**
  * Image of A serene image of a waterfall in the jungle for a travel or adventure website
@@ -39,7 +39,6 @@ export function ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906c
         />
     );
 }
-
 ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_3_Image.src = new URL(
     'https://cdn.midjourney.com/68b1e444-349e-49ae-8929-06cb4817b8aa/0_3.png',
 );
@@ -47,5 +46,4 @@ ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_3_Ima
     metadata satisfies IWallpaperMetadata;
 ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASereneImageOfAWaterfallInTheJungleForATr68b1e444349e49ae892906cb4817b8aa0_3_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.colors.json';
+import content from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.content.md';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.json';
-import texts from './Pavol_Hejn_a_realistic_photograph_of_a_rocket_launch_with_fiery_024b902b-509d-4ea1-954e-4ecbed7099d8-0_2.texts.json';
 
 /**
  * Image of A realistic photograph of a rocket launch, with fiery trails and smoke visible in the sky.
@@ -39,7 +39,6 @@ export function ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e
         />
     );
 }
-
 ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e4ecbed7099d80_2_Image.src = new URL(
     'https://cdn.midjourney.com/024b902b-509d-4ea1-954e-4ecbed7099d8/0_2.png',
 );
@@ -47,5 +46,4 @@ ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e4ecbed7099d80_2_
     metadata satisfies IWallpaperMetadata;
 ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e4ecbed7099d80_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e4ecbed7099d80_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ARealisticPhotographOfARocketLaunchWithFiery024b902b509d4ea1954e4ecbed7099d80_2_Image.content = content;

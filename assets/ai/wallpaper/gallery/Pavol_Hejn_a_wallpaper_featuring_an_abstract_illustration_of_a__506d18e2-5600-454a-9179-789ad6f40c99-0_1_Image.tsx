@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_1.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_1.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_1.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_an_abstract_illustration_of_a__506d18e2-5600-454a-9179-789ad6f40c99-0_1.texts.json';
 
 /**
  * Image of A wallpaper featuring an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background.
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179
         />
     );
 }
-
 AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_1_Image.src = new URL(
     'https://cdn.midjourney.com/506d18e2-5600-454a-9179-789ad6f40c99/0_1.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_1_
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingAnAbstractIllustrationOfA506d18e25600454a9179789ad6f40c990_1_Image.content = content;

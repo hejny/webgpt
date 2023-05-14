@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.colors.json';
+import content from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.content.md';
 import metadata from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.json';
-import texts from './Pavol_Hejn_a_dramatic_image_of_a_volcano_erupting_for_a_science_0ae9baae-a72c-468b-a035-21df967fd500-0_0.texts.json';
 
 /**
  * Image of A dramatic image of a volcano erupting for a science or geology blog
@@ -39,7 +39,6 @@ export function ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521
         />
     );
 }
-
 ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.src = new URL(
     'https://cdn.midjourney.com/0ae9baae-a72c-468b-a035-21df967fd500/0_0.png',
 );
@@ -47,5 +46,4 @@ ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_I
     metadata satisfies IWallpaperMetadata;
 ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADramaticImageOfAVolcanoEruptingForAScienceae9baaeA72c468bA03521df967fd50000_0_Image.content = content;

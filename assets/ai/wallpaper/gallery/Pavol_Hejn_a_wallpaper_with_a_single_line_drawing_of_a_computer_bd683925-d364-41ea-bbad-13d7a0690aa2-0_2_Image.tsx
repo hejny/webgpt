@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_single_line_drawing_of_a_computer_bd683925-d364-41ea-bbad-13d7a0690aa2-0_2.texts.json';
 
 /**
  * Image of A wallpaper with a single line drawing of a computer chip, in a muted color palette such as grey or blue.
@@ -39,7 +39,6 @@ export function AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad1
         />
     );
 }
-
 AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.src = new URL(
     'https://cdn.midjourney.com/bd683925-d364-41ea-bbad-13d7a0690aa2/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASingleLineDrawingOfAComputerBd683925D36441eaBbad13d7a0690aa20_2_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_42a4535f-1f50-467e-b63e-74a50c027181-0_3.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_42a4535f-1f50-467e-b63e-74a50c027181-0_3.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_42a4535f-1f50-467e-b63e-74a50c027181-0_3.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_stormy_sky_with_lightning_bol_42a4535f-1f50-467e-b63e-74a50c027181-0_3.texts.json';
 
 /**
  * Image of An abstract image of a stormy sky with lightning bolts for a weather or news website
@@ -39,7 +39,6 @@ export function AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e7
         />
     );
 }
-
 AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_3_Image.src = new URL(
     'https://cdn.midjourney.com/42a4535f-1f50-467e-b63e-74a50c027181/0_3.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_3_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfAStormySkyWithLightningBol42a4535f1f50467eB63e74a50c0271810_3_Image.content = content;

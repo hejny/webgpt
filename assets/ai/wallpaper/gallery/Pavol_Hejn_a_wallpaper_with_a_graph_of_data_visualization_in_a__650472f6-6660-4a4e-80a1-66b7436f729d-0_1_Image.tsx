@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_graph_of_data_visualization_in_a__650472f6-6660-4a4e-80a1-66b7436f729d-0_1.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_graph_of_data_visualization_in_a__650472f6-6660-4a4e-80a1-66b7436f729d-0_1.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_graph_of_data_visualization_in_a__650472f6-6660-4a4e-80a1-66b7436f729d-0_1.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_graph_of_data_visualization_in_a__650472f6-6660-4a4e-80a1-66b7436f729d-0_1.texts.json';
 
 /**
  * Image of A wallpaper with a graph of data visualization, in a minimalist and modern design.
@@ -39,7 +39,6 @@ export function AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166
         />
     );
 }
-
 AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166b7436f729d0_1_Image.src = new URL(
     'https://cdn.midjourney.com/650472f6-6660-4a4e-80a1-66b7436f729d/0_1.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166b7436f729d0_1_Im
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166b7436f729d0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166b7436f729d0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithAGraphOfDataVisualizationInA650472f666604a4e80a166b7436f729d0_1_Image.content = content;

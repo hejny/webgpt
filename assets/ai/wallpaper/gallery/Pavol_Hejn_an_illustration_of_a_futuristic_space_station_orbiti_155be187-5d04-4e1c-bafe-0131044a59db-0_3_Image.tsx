@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_3.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_3.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_3.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_futuristic_space_station_orbiti_155be187-5d04-4e1c-bafe-0131044a59db-0_3.texts.json';
 
 /**
  * Image of An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.
@@ -39,7 +39,6 @@ export function AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBaf
         />
     );
 }
-
 AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_3_Image.src = new URL(
     'https://cdn.midjourney.com/155be187-5d04-4e1c-bafe-0131044a59db/0_3.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_3
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfAFuturisticSpaceStationOrbiti155be1875d044e1cBafe0131044a59db0_3_Image.content = content;

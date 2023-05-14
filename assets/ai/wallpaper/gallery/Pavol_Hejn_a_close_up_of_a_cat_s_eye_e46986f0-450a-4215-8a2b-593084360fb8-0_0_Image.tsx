@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_0.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_0.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_0.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_cat_s_eye_e46986f0-450a-4215-8a2b-593084360fb8-0_0.texts.json';
 
 /**
  * Image of A close-up of a cat’s eye
@@ -37,10 +37,9 @@ export function ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_0_Image(prop
         />
     );
 }
-
 ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_0_Image.src = new URL(
     'https://cdn.midjourney.com/e46986f0-450a-4215-8a2b-593084360fb8/0_0.png',
 );
 ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_0_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_0_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfACatSEyeE46986f0450a42158a2b593084360fb80_0_Image.content = content;

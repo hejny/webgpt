@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_work_alongside__ce84a24f-7767-4f87-9037-ded6cc7897b0-0_3.colors.json';
+import content from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_work_alongside__ce84a24f-7767-4f87-9037-ded6cc7897b0-0_3.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_work_alongside__ce84a24f-7767-4f87-9037-ded6cc7897b0-0_3.json';
-import texts from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_work_alongside__ce84a24f-7767-4f87-9037-ded6cc7897b0-0_3.texts.json';
 
 /**
  * Image of A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.
@@ -39,7 +39,6 @@ export function AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f87903
         />
     );
 }
-
 AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f879037Ded6cc7897b00_3_Image.src = new URL(
     'https://cdn.midjourney.com/ce84a24f-7767-4f87-9037-ded6cc7897b0/0_3.png',
 );
@@ -47,5 +46,4 @@ AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f879037Ded6cc7897b00_3
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f879037Ded6cc7897b00_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f879037Ded6cc7897b00_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticCityscapeWhereAinautsWorkAlongsideCe84a24f77674f879037Ded6cc7897b00_3_Image.content = content;

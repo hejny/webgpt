@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_3.colors.json';
+import content from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_3.content.md';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_3.json';
-import texts from './Pavol_Hejn_a_digital_painting_of_a_lone_astronaut_standing_on_t_52813773-864c-445f-a336-f22707e90136-0_3.texts.json';
 
 /**
  * Image of A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space.
@@ -39,7 +39,6 @@ export function ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F
         />
     );
 }
-
 ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_3_Image.src = new URL(
     'https://cdn.midjourney.com/52813773-864c-445f-a336-f22707e90136/0_3.png',
 );
@@ -47,5 +46,4 @@ ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_3_I
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalPaintingOfALoneAstronautStandingOnT52813773864c445fA336F22707e901360_3_Image.content = content;

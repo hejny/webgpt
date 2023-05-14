@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.colors.json';
+import content from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.content.md';
 import metadata from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.json';
-import texts from './Pavol_Hejn_an_art_deco_inspired_pattern_in_shades_of_gold_and_b_226b66d5-baba-432a-88ba-5457b8031bdb-0_1.texts.json';
 
 /**
  * Image of An Art Deco-inspired pattern in shades of gold and black, with futuristic elements such as robot arms and AI nodes.
@@ -39,7 +39,6 @@ export function AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba54
         />
     );
 }
-
 AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.src = new URL(
     'https://cdn.midjourney.com/226b66d5-baba-432a-88ba-5457b8031bdb/0_1.png',
 );
@@ -47,5 +46,4 @@ AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Im
     metadata satisfies IWallpaperMetadata;
 AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnArtDecoInspiredPatternInShadesOfGoldAndB226b66d5Baba432a88ba5457b8031bdb0_1_Image.content = content;

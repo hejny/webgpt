@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_1.colors.json';
+import content from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_1.content.md';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_1.json';
-import texts from './Pavol_Hejn_a_surreal_image_of_a_person_diving_into_a_pool_of_wa_2bd382ca-5cf3-44b8-b287-930c756a19ae-0_1.texts.json';
 
 /**
  * Image of A surreal image of a person diving into a pool of water for a health or fitness blog
@@ -39,7 +39,6 @@ export function ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930
         />
     );
 }
-
 ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_1_Image.src = new URL(
     'https://cdn.midjourney.com/2bd382ca-5cf3-44b8-b287-930c756a19ae/0_1.png',
 );
@@ -47,5 +46,4 @@ ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_1_Ima
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASurrealImageOfAPersonDivingIntoAPoolOfWa2bd382ca5cf344b8B287930c756a19ae0_1_Image.content = content;

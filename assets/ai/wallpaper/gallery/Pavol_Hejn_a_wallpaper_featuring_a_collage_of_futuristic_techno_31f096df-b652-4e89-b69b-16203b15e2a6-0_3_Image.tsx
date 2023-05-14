@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_3.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_3.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_3.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_a_collage_of_futuristic_techno_31f096df-b652-4e89-b69b-16203b15e2a6-0_3.texts.json';
 
 /**
  * Image of A wallpaper featuring a collage of futuristic technology such as drones, robots, and smart devices, set against a black background.
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingACollageOfFuturisticTechno1f096dfB6524e89B69b
         />
     );
 }
-
 AWallpaperFeaturingACollageOfFuturisticTechno1f096dfB6524e89B69b16203b15e2a603_3_Image.src = new URL(
     'https://cdn.midjourney.com/31f096df-b652-4e89-b69b-16203b15e2a6/0_3.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingACollageOfFuturisticTechno1f096dfB6524e89B69b16203b15e2a603_3
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingACollageOfFuturisticTechno1f096dfB6524e89B69b16203b15e2a603_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingACollageOfFuturisticTechno1f096dfB6524e89B69b16203b15e2a603_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingACollageOfFuturisticTechno1f096dfB6524e89B69b16203b15e2a603_3_Image.content = content;

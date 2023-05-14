@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_0.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_0.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_0.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_robotic_explorer_with_metallic__07f80492-8232-469b-be96-2bcd8deff72d-0_0.texts.json';
 
 /**
  * Image of An illustration of a robotic explorer, with metallic textures and intricate details.
@@ -39,7 +39,6 @@ export function AnIllustrationOfARoboticExplorerWithMetallic7f804928232469bBe962
         />
     );
 }
-
 AnIllustrationOfARoboticExplorerWithMetallic7f804928232469bBe962bcd8deff72d00_0_Image.src = new URL(
     'https://cdn.midjourney.com/07f80492-8232-469b-be96-2bcd8deff72d/0_0.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfARoboticExplorerWithMetallic7f804928232469bBe962bcd8deff72d00_0_
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfARoboticExplorerWithMetallic7f804928232469bBe962bcd8deff72d00_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfARoboticExplorerWithMetallic7f804928232469bBe962bcd8deff72d00_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfARoboticExplorerWithMetallic7f804928232469bBe962bcd8deff72d00_0_Image.content = content;

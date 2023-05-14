@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_93d77662-1f58-4125-bab5-224ff27b04ce-0_2.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_93d77662-1f58-4125-bab5-224ff27b04ce-0_2.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_93d77662-1f58-4125-bab5-224ff27b04ce-0_2.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_conducting_experiments_on_a_dista_93d77662-1f58-4125-bab5-224ff27b04ce-0_2.texts.json';
 
 /**
  * Image of A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5
         />
     );
 }
-
 AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_2_Image.src = new URL(
     'https://cdn.midjourney.com/93d77662-1f58-4125-bab5-224ff27b04ce/0_2.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_2_
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsConductingExperimentsOnADista93d776621f584125Bab5224ff27b04ce0_2_Image.content = content;

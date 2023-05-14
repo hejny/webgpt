@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.colors.json';
+import content from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.content.md';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.json';
-import texts from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_s_helmet_w_3d05f9b8-c57e-41fe-8011-fed59d7f1ac2-0_0.texts.json';
 
 /**
  * Image of A black and white outline of an astronaut's helmet, with intricate details that showcase the reflection of the surrounding environment.
@@ -39,7 +39,6 @@ export function ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fe
         />
     );
 }
-
 ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Image.src = new URL(
     'https://cdn.midjourney.com/3d05f9b8-c57e-41fe-8011-fed59d7f1ac2/0_0.png',
 );
@@ -47,5 +46,4 @@ ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Im
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ABlackAndWhiteOutlineOfAnAstronautSHelmetW3d05f9b8C57e41fe8011Fed59d7f1ac20_0_Image.content = content;

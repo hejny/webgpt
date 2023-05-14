@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0_3.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0_3.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0_3.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_simple_graphic_of_a_digital_dashb_3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0-0_3.texts.json';
 
 /**
  * Image of A wallpaper with a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.
@@ -39,7 +39,6 @@ export function AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3
         />
     );
 }
-
 AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3059b50d0f003_3_Image.src = new URL(
     'https://cdn.midjourney.com/3e3e028c-ef5f-4a5c-a2bb-a3059b50d0f0/0_3.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3059b50d0f003_3_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3059b50d0f003_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3059b50d0f003_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithASimpleGraphicOfADigitalDashbe3e028cEf5f4a5cA2bbA3059b50d0f003_3_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_3.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_3.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_3.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_swirling_galaxy_with_bright_c_47c12104-08bf-470f-a7d4-514305054eae-0_3.texts.json';
 
 /**
  * Image of An abstract image of a swirling galaxy, with bright colors and intricate patterns.
@@ -39,7 +39,6 @@ export function AnAbstractImageOfASwirlingGalaxyWithBrightC47c1210408bf470fA7d45
         />
     );
 }
-
 AnAbstractImageOfASwirlingGalaxyWithBrightC47c1210408bf470fA7d4514305054eae0_3_Image.src = new URL(
     'https://cdn.midjourney.com/47c12104-08bf-470f-a7d4-514305054eae/0_3.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfASwirlingGalaxyWithBrightC47c1210408bf470fA7d4514305054eae0_3_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfASwirlingGalaxyWithBrightC47c1210408bf470fA7d4514305054eae0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfASwirlingGalaxyWithBrightC47c1210408bf470fA7d4514305054eae0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfASwirlingGalaxyWithBrightC47c1210408bf470fA7d4514305054eae0_3_Image.content = content;

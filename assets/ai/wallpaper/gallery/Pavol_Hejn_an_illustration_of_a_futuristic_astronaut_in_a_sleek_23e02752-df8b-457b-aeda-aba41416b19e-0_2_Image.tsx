@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_23e02752-df8b-457b-aeda-aba41416b19e-0_2.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_23e02752-df8b-457b-aeda-aba41416b19e-0_2.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_23e02752-df8b-457b-aeda-aba41416b19e-0_2.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_futuristic_astronaut_in_a_sleek_23e02752-df8b-457b-aeda-aba41416b19e-0_2.texts.json';
 
 /**
  * Image of An illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet.
@@ -39,7 +39,6 @@ export function AnIllustrationOfAFuturisticAstronautInASleek3e02752Df8b457bAedaA
         />
     );
 }
-
 AnIllustrationOfAFuturisticAstronautInASleek3e02752Df8b457bAedaAba41416b19e02_2_Image.src = new URL(
     'https://cdn.midjourney.com/23e02752-df8b-457b-aeda-aba41416b19e/0_2.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfAFuturisticAstronautInASleek3e02752Df8b457bAedaAba41416b19e02_2_
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAFuturisticAstronautInASleek3e02752Df8b457bAedaAba41416b19e02_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfAFuturisticAstronautInASleek3e02752Df8b457bAedaAba41416b19e02_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfAFuturisticAstronautInASleek3e02752Df8b457bAedaAba41416b19e02_2_Image.content = content;

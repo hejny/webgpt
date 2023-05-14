@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_sunrise_on_a_distant_planet_520efdfb-3aee-4c0a-b2df-fa3995231f5c-0_2.colors.json';
+import content from './Pavol_Hejn_sunrise_on_a_distant_planet_520efdfb-3aee-4c0a-b2df-fa3995231f5c-0_2.content.md';
 import metadata from './Pavol_Hejn_sunrise_on_a_distant_planet_520efdfb-3aee-4c0a-b2df-fa3995231f5c-0_2.json';
-import texts from './Pavol_Hejn_sunrise_on_a_distant_planet_520efdfb-3aee-4c0a-b2df-fa3995231f5c-0_2.texts.json';
 
 /**
  * Image of Sunrise on a distant planet
@@ -37,10 +37,9 @@ export function SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image
         />
     );
 }
-
 SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image.src = new URL(
     'https://cdn.midjourney.com/520efdfb-3aee-4c0a-b2df-fa3995231f5c/0_2.png',
 );
 SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image.metadata = metadata satisfies IWallpaperMetadata;
 SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image.colorStats = hydrateColorStats(colorStats);
-SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image.texts = texts satisfies IWallpaperTexts;
+SunriseOnADistantPlanet520efdfb3aee4c0aB2dfFa3995231f5c0_2_Image.content = content;

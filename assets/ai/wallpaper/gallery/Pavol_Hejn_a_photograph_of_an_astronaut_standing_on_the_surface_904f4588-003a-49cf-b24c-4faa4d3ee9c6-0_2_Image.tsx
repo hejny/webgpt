@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_904f4588-003a-49cf-b24c-4faa4d3ee9c6-0_2.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_904f4588-003a-49cf-b24c-4faa4d3ee9c6-0_2.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_904f4588-003a-49cf-b24c-4faa4d3ee9c6-0_2.json';
-import texts from './Pavol_Hejn_a_photograph_of_an_astronaut_standing_on_the_surface_904f4588-003a-49cf-b24c-4faa4d3ee9c6-0_2.texts.json';
 
 /**
  * Image of A photograph of an astronaut standing on the surface of the moon with Earth in the background.
@@ -39,7 +39,6 @@ export function APhotographOfAnAstronautStandingOnTheSurface904f4588003a49cfB24c
         />
     );
 }
-
 APhotographOfAnAstronautStandingOnTheSurface904f4588003a49cfB24c4faa4d3ee9c60_2_Image.src = new URL(
     'https://cdn.midjourney.com/904f4588-003a-49cf-b24c-4faa4d3ee9c6/0_2.png',
 );
@@ -47,5 +46,4 @@ APhotographOfAnAstronautStandingOnTheSurface904f4588003a49cfB24c4faa4d3ee9c60_2_
     metadata satisfies IWallpaperMetadata;
 APhotographOfAnAstronautStandingOnTheSurface904f4588003a49cfB24c4faa4d3ee9c60_2_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfAnAstronautStandingOnTheSurface904f4588003a49cfB24c4faa4d3ee9c60_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfAnAstronautStandingOnTheSurface904f4588003a49cfB24c4faa4d3ee9c60_2_Image.content = content;

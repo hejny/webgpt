@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_3.colors.json';
+import content from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_3.content.md';
 import metadata from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_3.json';
-import texts from './Pavol_Hejn_a_pop_art_style_wallpaper_featuring_a_comic_book_sty_3bf6e02b-00f9-4960-b0e9-963454b085d4-0_3.texts.json';
 
 /**
  * Image of A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.
@@ -39,7 +39,6 @@ export function APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e996
         />
     );
 }
-
 APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.src = new URL(
     'https://cdn.midjourney.com/3bf6e02b-00f9-4960-b0e9-963454b085d4/0_3.png',
 );
@@ -47,5 +46,4 @@ APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_I
     metadata satisfies IWallpaperMetadata;
 APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.colorStats =
     hydrateColorStats(colorStats);
-APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+APopArtStyleWallpaperFeaturingAComicBookStybf6e02b00f94960B0e9963454b085d403_3_Image.content = content;

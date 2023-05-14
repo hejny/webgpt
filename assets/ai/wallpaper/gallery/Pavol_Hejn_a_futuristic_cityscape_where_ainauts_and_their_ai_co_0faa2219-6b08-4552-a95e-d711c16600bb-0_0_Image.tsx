@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_0faa2219-6b08-4552-a95e-d711c16600bb-0_0.colors.json';
+import content from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_0faa2219-6b08-4552-a95e-d711c16600bb-0_0.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_0faa2219-6b08-4552-a95e-d711c16600bb-0_0.json';
-import texts from './Pavol_Hejn_a_futuristic_cityscape_where_ainauts_and_their_ai_co_0faa2219-6b08-4552-a95e-d711c16600bb-0_0.texts.json';
 
 /**
  * Image of A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.
@@ -39,7 +39,6 @@ export function AFuturisticCityscapeWhereAinautsAndTheirAiCofaa22196b084552A95eD
         />
     );
 }
-
 AFuturisticCityscapeWhereAinautsAndTheirAiCofaa22196b084552A95eD711c16600bb00_0_Image.src = new URL(
     'https://cdn.midjourney.com/0faa2219-6b08-4552-a95e-d711c16600bb/0_0.png',
 );
@@ -47,5 +46,4 @@ AFuturisticCityscapeWhereAinautsAndTheirAiCofaa22196b084552A95eD711c16600bb00_0_
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWhereAinautsAndTheirAiCofaa22196b084552A95eD711c16600bb00_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticCityscapeWhereAinautsAndTheirAiCofaa22196b084552A95eD711c16600bb00_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticCityscapeWhereAinautsAndTheirAiCofaa22196b084552A95eD711c16600bb00_0_Image.content = content;

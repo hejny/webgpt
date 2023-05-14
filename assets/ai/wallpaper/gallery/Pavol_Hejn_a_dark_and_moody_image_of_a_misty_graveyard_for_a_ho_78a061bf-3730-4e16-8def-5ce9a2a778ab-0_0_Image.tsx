@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_0.colors.json';
+import content from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_0.content.md';
 import metadata from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_0.json';
-import texts from './Pavol_Hejn_a_dark_and_moody_image_of_a_misty_graveyard_for_a_ho_78a061bf-3730-4e16-8def-5ce9a2a778ab-0_0.texts.json';
 
 /**
  * Image of A dark and moody image of a misty graveyard for a horror or supernatural website
@@ -39,7 +39,6 @@ export function ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce
         />
     );
 }
-
 ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.src = new URL(
     'https://cdn.midjourney.com/78a061bf-3730-4e16-8def-5ce9a2a778ab/0_0.png',
 );
@@ -47,5 +46,4 @@ ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Ima
     metadata satisfies IWallpaperMetadata;
 ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADarkAndMoodyImageOfAMistyGraveyardForAHo78a061bf37304e168def5ce9a2a778ab0_0_Image.content = content;

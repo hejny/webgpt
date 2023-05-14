@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.colors.json';
+import content from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.content.md';
 import metadata from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.json';
-import texts from './Pavol_Hejn_an_abstract_pattern_with_bright_colors_4bdd858a-c789-4652-ab2b-5f31a22a6bd7-0_2.texts.json';
 
 /**
  * Image of An abstract pattern with bright colors
@@ -39,11 +39,10 @@ export function AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd
         />
     );
 }
-
 AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.src = new URL(
     'https://cdn.midjourney.com/4bdd858a-c789-4652-ab2b-5f31a22a6bd7/0_2.png',
 );
 AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.colorStats = hydrateColorStats(colorStats);
-AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.texts = texts satisfies IWallpaperTexts;
+AnAbstractPatternWithBrightColors4bdd858aC7894652Ab2b5f31a22a6bd70_2_Image.content = content;

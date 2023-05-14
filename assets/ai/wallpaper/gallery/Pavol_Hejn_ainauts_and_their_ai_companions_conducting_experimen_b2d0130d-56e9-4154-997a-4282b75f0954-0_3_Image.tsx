@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_ainauts_and_their_ai_companions_conducting_experimen_b2d0130d-56e9-4154-997a-4282b75f0954-0_3.colors.json';
+import content from './Pavol_Hejn_ainauts_and_their_ai_companions_conducting_experimen_b2d0130d-56e9-4154-997a-4282b75f0954-0_3.content.md';
 import metadata from './Pavol_Hejn_ainauts_and_their_ai_companions_conducting_experimen_b2d0130d-56e9-4154-997a-4282b75f0954-0_3.json';
-import texts from './Pavol_Hejn_ainauts_and_their_ai_companions_conducting_experimen_b2d0130d-56e9-4154-997a-4282b75f0954-0_3.texts.json';
 
 /**
  * Image of AInauts and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them.
@@ -39,7 +39,6 @@ export function AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e9415499
         />
     );
 }
-
 AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.src = new URL(
     'https://cdn.midjourney.com/b2d0130d-56e9-4154-997a-4282b75f0954/0_3.png',
 );
@@ -47,5 +46,4 @@ AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_
     metadata satisfies IWallpaperMetadata;
 AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AinautsAndTheirAiCompanionsConductingExperimenB2d0130d56e94154997a4282b75f09540_3_Image.content = content;

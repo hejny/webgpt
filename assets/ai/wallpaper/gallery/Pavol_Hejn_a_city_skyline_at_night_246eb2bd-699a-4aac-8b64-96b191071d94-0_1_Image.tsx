@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_city_skyline_at_night_246eb2bd-699a-4aac-8b64-96b191071d94-0_1.colors.json';
+import content from './Pavol_Hejn_a_city_skyline_at_night_246eb2bd-699a-4aac-8b64-96b191071d94-0_1.content.md';
 import metadata from './Pavol_Hejn_a_city_skyline_at_night_246eb2bd-699a-4aac-8b64-96b191071d94-0_1.json';
-import texts from './Pavol_Hejn_a_city_skyline_at_night_246eb2bd-699a-4aac-8b64-96b191071d94-0_1.texts.json';
 
 /**
  * Image of A city skyline at night
@@ -37,10 +37,9 @@ export function ACitySkylineAtNight246eb2bd699a4aac8b6496b191071d940_1_Image(pro
         />
     );
 }
-
 ACitySkylineAtNight246eb2bd699a4aac8b6496b191071d940_1_Image.src = new URL(
     'https://cdn.midjourney.com/246eb2bd-699a-4aac-8b64-96b191071d94/0_1.png',
 );
 ACitySkylineAtNight246eb2bd699a4aac8b6496b191071d940_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACitySkylineAtNight246eb2bd699a4aac8b6496b191071d940_1_Image.colorStats = hydrateColorStats(colorStats);
-ACitySkylineAtNight246eb2bd699a4aac8b6496b191071d940_1_Image.texts = texts satisfies IWallpaperTexts;
+ACitySkylineAtNight246eb2bd699a4aac8b6496b191071d940_1_Image.content = content;

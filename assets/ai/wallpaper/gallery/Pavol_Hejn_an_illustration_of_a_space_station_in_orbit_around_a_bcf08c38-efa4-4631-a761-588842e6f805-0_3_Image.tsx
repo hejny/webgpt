@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_3.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_3.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_3.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_space_station_in_orbit_around_a_bcf08c38-efa4-4631-a761-588842e6f805-0_3.texts.json';
 
 /**
  * Image of An illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
@@ -39,7 +39,6 @@ export function AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A7615
         />
     );
 }
-
 AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_3_Image.src = new URL(
     'https://cdn.midjourney.com/bcf08c38-efa4-4631-a761-588842e6f805/0_3.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_3_I
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfASpaceStationInOrbitAroundABcf08c38Efa44631A761588842e6f8050_3_Image.content = content;

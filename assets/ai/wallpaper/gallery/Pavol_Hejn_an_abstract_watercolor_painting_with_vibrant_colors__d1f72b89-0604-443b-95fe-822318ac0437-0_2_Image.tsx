@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__d1f72b89-0604-443b-95fe-822318ac0437-0_2.colors.json';
+import content from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__d1f72b89-0604-443b-95fe-822318ac0437-0_2.content.md';
 import metadata from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__d1f72b89-0604-443b-95fe-822318ac0437-0_2.json';
-import texts from './Pavol_Hejn_an_abstract_watercolor_painting_with_vibrant_colors__d1f72b89-0604-443b-95fe-822318ac0437-0_2.texts.json';
 
 /**
  * Image of An abstract watercolor painting with vibrant colors for an art or design blog
@@ -39,7 +39,6 @@ export function AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95f
         />
     );
 }
-
 AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_2_Image.src = new URL(
     'https://cdn.midjourney.com/d1f72b89-0604-443b-95fe-822318ac0437/0_2.png',
 );
@@ -47,5 +46,4 @@ AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_2
     metadata satisfies IWallpaperMetadata;
 AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractWatercolorPaintingWithVibrantColorsD1f72b890604443b95fe822318ac04370_2_Image.content = content;

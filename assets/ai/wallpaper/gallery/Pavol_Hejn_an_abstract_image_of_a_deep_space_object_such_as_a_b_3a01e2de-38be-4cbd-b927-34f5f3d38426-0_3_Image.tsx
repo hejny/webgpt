@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_3a01e2de-38be-4cbd-b927-34f5f3d38426-0_3.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_3a01e2de-38be-4cbd-b927-34f5f3d38426-0_3.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_3a01e2de-38be-4cbd-b927-34f5f3d38426-0_3.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_deep_space_object_such_as_a_b_3a01e2de-38be-4cbd-b927-34f5f3d38426-0_3.texts.json';
 
 /**
  * Image of An abstract image of a deep space object, such as a black hole or pulsar, with swirling colors and patterns.
@@ -39,7 +39,6 @@ export function AnAbstractImageOfADeepSpaceObjectSuchAsABa01e2de38be4cbdB92734f5
         />
     );
 }
-
 AnAbstractImageOfADeepSpaceObjectSuchAsABa01e2de38be4cbdB92734f5f3d3842603_3_Image.src = new URL(
     'https://cdn.midjourney.com/3a01e2de-38be-4cbd-b927-34f5f3d38426/0_3.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfADeepSpaceObjectSuchAsABa01e2de38be4cbdB92734f5f3d3842603_3_Ima
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfADeepSpaceObjectSuchAsABa01e2de38be4cbdB92734f5f3d3842603_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfADeepSpaceObjectSuchAsABa01e2de38be4cbdB92734f5f3d3842603_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfADeepSpaceObjectSuchAsABa01e2de38be4cbdB92734f5f3d3842603_3_Image.content = content;

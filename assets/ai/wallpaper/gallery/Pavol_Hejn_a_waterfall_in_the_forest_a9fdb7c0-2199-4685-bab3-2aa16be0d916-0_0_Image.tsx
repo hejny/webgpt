@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_0.colors.json';
+import content from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_0.content.md';
 import metadata from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_0.json';
-import texts from './Pavol_Hejn_a_waterfall_in_the_forest_a9fdb7c0-2199-4685-bab3-2aa16be0d916-0_0.texts.json';
 
 /**
  * Image of A waterfall in the forest
@@ -37,10 +37,9 @@ export function AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_0_Image(p
         />
     );
 }
-
 AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_0_Image.src = new URL(
     'https://cdn.midjourney.com/a9fdb7c0-2199-4685-bab3-2aa16be0d916/0_0.png',
 );
 AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_0_Image.colorStats = hydrateColorStats(colorStats);
-AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_0_Image.texts = texts satisfies IWallpaperTexts;
+AWaterfallInTheForestA9fdb7c021994685Bab32aa16be0d9160_0_Image.content = content;

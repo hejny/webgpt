@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_3.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_3.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_3.json';
-import texts from './Pavol_Hejn_a_wallpaper_with_a_repeating_pattern_of_neon_colored_391ec65a-a091-4d76-9e42-d16de5b0c620-0_3.texts.json';
 
 /**
  * Image of A wallpaper with a repeating pattern of neon-colored circuitry, set against a black background.
@@ -39,7 +39,6 @@ export function AWallpaperWithARepeatingPatternOfNeonColored91ec65aA0914d769e42D
         />
     );
 }
-
 AWallpaperWithARepeatingPatternOfNeonColored91ec65aA0914d769e42D16de5b0c62003_3_Image.src = new URL(
     'https://cdn.midjourney.com/391ec65a-a091-4d76-9e42-d16de5b0c620/0_3.png',
 );
@@ -47,5 +46,4 @@ AWallpaperWithARepeatingPatternOfNeonColored91ec65aA0914d769e42D16de5b0c62003_3_
     metadata satisfies IWallpaperMetadata;
 AWallpaperWithARepeatingPatternOfNeonColored91ec65aA0914d769e42D16de5b0c62003_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperWithARepeatingPatternOfNeonColored91ec65aA0914d769e42D16de5b0c62003_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperWithARepeatingPatternOfNeonColored91ec65aA0914d769e42D16de5b0c62003_3_Image.content = content;

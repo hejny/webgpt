@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.colors.json';
+import content from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.content.md';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.json';
-import texts from './Pavol_Hejn_a_black_and_white_outline_of_an_astronaut_exploring__a829bdcc-6e85-492c-a8d4-4155cb6c977f-0_1.texts.json';
 
 /**
  * Image of A black and white outline of an astronaut exploring a distant planet, with intricate details and shading.
@@ -39,7 +39,6 @@ export function ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44
         />
     );
 }
-
 ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_1_Image.src = new URL(
     'https://cdn.midjourney.com/a829bdcc-6e85-492c-a8d4-4155cb6c977f/0_1.png',
 );
@@ -47,5 +46,4 @@ ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_1_I
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ABlackAndWhiteOutlineOfAnAstronautExploringA829bdcc6e85492cA8d44155cb6c977f0_1_Image.content = content;

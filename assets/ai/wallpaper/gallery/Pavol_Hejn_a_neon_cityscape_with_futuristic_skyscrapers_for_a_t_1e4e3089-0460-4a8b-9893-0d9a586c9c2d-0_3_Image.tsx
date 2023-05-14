@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.colors.json';
+import content from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.content.md';
 import metadata from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.json';
-import texts from './Pavol_Hejn_a_neon_cityscape_with_futuristic_skyscrapers_for_a_t_1e4e3089-0460-4a8b-9893-0d9a586c9c2d-0_3.texts.json';
 
 /**
  * Image of A neon cityscape with futuristic skyscrapers for a tech blog homepage
@@ -39,7 +39,6 @@ export function ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b9893
         />
     );
 }
-
 ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b98930d9a586c9c2d0_3_Image.src = new URL(
     'https://cdn.midjourney.com/1e4e3089-0460-4a8b-9893-0d9a586c9c2d/0_3.png',
 );
@@ -47,5 +46,4 @@ ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b98930d9a586c9c2d0_3_
     metadata satisfies IWallpaperMetadata;
 ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b98930d9a586c9c2d0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b98930d9a586c9c2d0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ANeonCityscapeWithFuturisticSkyscrapersForAT1e4e308904604a8b98930d9a586c9c2d0_3_Image.content = content;

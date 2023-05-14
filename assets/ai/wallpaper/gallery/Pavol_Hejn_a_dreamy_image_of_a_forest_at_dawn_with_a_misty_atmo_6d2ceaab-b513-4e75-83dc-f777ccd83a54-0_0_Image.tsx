@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dreamy_image_of_a_forest_at_dawn_with_a_misty_atmo_6d2ceaab-b513-4e75-83dc-f777ccd83a54-0_0.colors.json';
+import content from './Pavol_Hejn_a_dreamy_image_of_a_forest_at_dawn_with_a_misty_atmo_6d2ceaab-b513-4e75-83dc-f777ccd83a54-0_0.content.md';
 import metadata from './Pavol_Hejn_a_dreamy_image_of_a_forest_at_dawn_with_a_misty_atmo_6d2ceaab-b513-4e75-83dc-f777ccd83a54-0_0.json';
-import texts from './Pavol_Hejn_a_dreamy_image_of_a_forest_at_dawn_with_a_misty_atmo_6d2ceaab-b513-4e75-83dc-f777ccd83a54-0_0.texts.json';
 
 /**
  * Image of A dreamy image of a forest at dawn with a misty atmosphere for a nature or wildlife blog
@@ -39,7 +39,6 @@ export function ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF77
         />
     );
 }
-
 ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_0_Image.src = new URL(
     'https://cdn.midjourney.com/6d2ceaab-b513-4e75-83dc-f777ccd83a54/0_0.png',
 );
@@ -47,5 +46,4 @@ ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_0_Ima
     metadata satisfies IWallpaperMetadata;
 ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADreamyImageOfAForestAtDawnWithAMistyAtmo6d2ceaabB5134e7583dcF777ccd83a540_0_Image.content = content;

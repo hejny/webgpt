@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_3.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_3.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_3.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_spiderweb_with_dew_drops_33e477af-06e3-44a4-8973-605a78f79f37-0_3.texts.json';
 
 /**
  * Image of A close-up of a spiderweb with dew drops
@@ -39,11 +39,10 @@ export function ACloseUpOfASpiderwebWithDewDrops3e477af06e344a48973605a78f79f370
         />
     );
 }
-
 ACloseUpOfASpiderwebWithDewDrops3e477af06e344a48973605a78f79f3703_3_Image.src = new URL(
     'https://cdn.midjourney.com/33e477af-06e3-44a4-8973-605a78f79f37/0_3.png',
 );
 ACloseUpOfASpiderwebWithDewDrops3e477af06e344a48973605a78f79f3703_3_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ACloseUpOfASpiderwebWithDewDrops3e477af06e344a48973605a78f79f3703_3_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfASpiderwebWithDewDrops3e477af06e344a48973605a78f79f3703_3_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfASpiderwebWithDewDrops3e477af06e344a48973605a78f79f3703_3_Image.content = content;

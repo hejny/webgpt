@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__22fa9cc9-d345-4fad-aaf6-3c954b579f36-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__22fa9cc9-d345-4fad-aaf6-3c954b579f36-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__22fa9cc9-d345-4fad-aaf6-3c954b579f36-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_a_simple_graphic_of_a_digital__22fa9cc9-d345-4fad-aaf6-3c954b579f36-0_2.texts.json';
 
 /**
  * Image of A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns, set against a gradient background.
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingASimpleGraphicOfADigital2fa9cc9D3454fadAaf63c
         />
     );
 }
-
 AWallpaperFeaturingASimpleGraphicOfADigital2fa9cc9D3454fadAaf63c954b579f3602_2_Image.src = new URL(
     'https://cdn.midjourney.com/22fa9cc9-d345-4fad-aaf6-3c954b579f36/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingASimpleGraphicOfADigital2fa9cc9D3454fadAaf63c954b579f3602_2_I
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingASimpleGraphicOfADigital2fa9cc9D3454fadAaf63c954b579f3602_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingASimpleGraphicOfADigital2fa9cc9D3454fadAaf63c954b579f3602_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingASimpleGraphicOfADigital2fa9cc9D3454fadAaf63c954b579f3602_2_Image.content = content;

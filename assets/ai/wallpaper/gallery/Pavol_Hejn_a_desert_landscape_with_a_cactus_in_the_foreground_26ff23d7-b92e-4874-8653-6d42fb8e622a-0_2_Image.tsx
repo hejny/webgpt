@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_2.colors.json';
+import content from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_2.content.md';
 import metadata from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_2.json';
-import texts from './Pavol_Hejn_a_desert_landscape_with_a_cactus_in_the_foreground_26ff23d7-b92e-4874-8653-6d42fb8e622a-0_2.texts.json';
 
 /**
  * Image of A desert landscape with a cactus in the foreground
@@ -39,7 +39,6 @@ export function ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d4
         />
     );
 }
-
 ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d42fb8e622a02_2_Image.src = new URL(
     'https://cdn.midjourney.com/26ff23d7-b92e-4874-8653-6d42fb8e622a/0_2.png',
 );
@@ -47,5 +46,4 @@ ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d42fb8e622a02_2_Im
     metadata satisfies IWallpaperMetadata;
 ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d42fb8e622a02_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d42fb8e622a02_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADesertLandscapeWithACactusInTheForeground6ff23d7B92e487486536d42fb8e622a02_2_Image.content = content;

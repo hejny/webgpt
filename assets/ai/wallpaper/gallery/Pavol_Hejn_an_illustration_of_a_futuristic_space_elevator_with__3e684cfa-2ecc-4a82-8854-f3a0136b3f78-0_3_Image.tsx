@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_3.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_3.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_3.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_futuristic_space_elevator_with__3e684cfa-2ecc-4a82-8854-f3a0136b3f78-0_3.texts.json';
 
 /**
  * Image of An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
@@ -39,7 +39,6 @@ export function AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F
         />
     );
 }
-
 AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_Image.src = new URL(
     'https://cdn.midjourney.com/3e684cfa-2ecc-4a82-8854-f3a0136b3f78/0_3.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfAFuturisticSpaceElevatorWithE684cfa2ecc4a828854F3a0136b3f7803_3_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_7d9d4cf0-138e-44fd-bcd4-7c91ee111a52-0_1.colors.json';
+import content from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_7d9d4cf0-138e-44fd-bcd4-7c91ee111a52-0_1.content.md';
 import metadata from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_7d9d4cf0-138e-44fd-bcd4-7c91ee111a52-0_1.json';
-import texts from './Pavol_Hejn_a_surreal_interpretation_of_a_desert_landscape_7d9d4cf0-138e-44fd-bcd4-7c91ee111a52-0_1.texts.json';
 
 /**
  * Image of A surreal interpretation of a desert landscape
@@ -39,7 +39,6 @@ export function ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91
         />
     );
 }
-
 ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91ee111a520_1_Image.src = new URL(
     'https://cdn.midjourney.com/7d9d4cf0-138e-44fd-bcd4-7c91ee111a52/0_1.png',
 );
@@ -47,5 +46,4 @@ ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91ee111a520_1_Imag
     metadata satisfies IWallpaperMetadata;
 ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91ee111a520_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91ee111a520_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASurrealInterpretationOfADesertLandscape7d9d4cf0138e44fdBcd47c91ee111a520_1_Image.content = content;

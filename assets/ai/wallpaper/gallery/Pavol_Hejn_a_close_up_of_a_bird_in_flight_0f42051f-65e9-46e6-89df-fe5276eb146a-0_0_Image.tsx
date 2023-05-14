@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_bird_in_flight_0f42051f-65e9-46e6-89df-fe5276eb146a-0_0.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_bird_in_flight_0f42051f-65e9-46e6-89df-fe5276eb146a-0_0.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_bird_in_flight_0f42051f-65e9-46e6-89df-fe5276eb146a-0_0.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_bird_in_flight_0f42051f-65e9-46e6-89df-fe5276eb146a-0_0.texts.json';
 
 /**
  * Image of A close-up of a bird in flight
@@ -37,10 +37,9 @@ export function ACloseUpOfABirdInFlightf42051f65e946e689dfFe5276eb146a00_0_Image
         />
     );
 }
-
 ACloseUpOfABirdInFlightf42051f65e946e689dfFe5276eb146a00_0_Image.src = new URL(
     'https://cdn.midjourney.com/0f42051f-65e9-46e6-89df-fe5276eb146a/0_0.png',
 );
 ACloseUpOfABirdInFlightf42051f65e946e689dfFe5276eb146a00_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfABirdInFlightf42051f65e946e689dfFe5276eb146a00_0_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfABirdInFlightf42051f65e946e689dfFe5276eb146a00_0_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfABirdInFlightf42051f65e946e689dfFe5276eb146a00_0_Image.content = content;

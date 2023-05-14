@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.colors.json';
+import content from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.content.md';
 import metadata from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.json';
-import texts from './Pavol_Hejn_a_geometric_design_in_shades_of_purple_and_pink_insp_fd96e87b-5783-4171-8653-e62c10ec7b55-0_3.texts.json';
 
 /**
  * Image of A geometric design in shades of purple and pink, inspired by the shape of a quantum computer
@@ -39,7 +39,6 @@ export function AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E
         />
     );
 }
-
 AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.src = new URL(
     'https://cdn.midjourney.com/fd96e87b-5783-4171-8653-e62c10ec7b55/0_3.png',
 );
@@ -47,5 +46,4 @@ AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_I
     metadata satisfies IWallpaperMetadata;
 AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGeometricDesignInShadesOfPurpleAndPinkInspFd96e87b578341718653E62c10ec7b550_3_Image.content = content;

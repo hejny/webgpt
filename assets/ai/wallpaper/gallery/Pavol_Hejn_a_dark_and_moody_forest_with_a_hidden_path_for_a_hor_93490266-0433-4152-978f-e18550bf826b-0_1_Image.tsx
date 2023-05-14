@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_93490266-0433-4152-978f-e18550bf826b-0_1.colors.json';
+import content from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_93490266-0433-4152-978f-e18550bf826b-0_1.content.md';
 import metadata from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_93490266-0433-4152-978f-e18550bf826b-0_1.json';
-import texts from './Pavol_Hejn_a_dark_and_moody_forest_with_a_hidden_path_for_a_hor_93490266-0433-4152-978f-e18550bf826b-0_1.texts.json';
 
 /**
  * Image of A dark and moody forest with a hidden path for a horror or mystery website
@@ -39,7 +39,6 @@ export function ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18
         />
     );
 }
-
 ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18550bf826b0_1_Image.src = new URL(
     'https://cdn.midjourney.com/93490266-0433-4152-978f-e18550bf826b/0_1.png',
 );
@@ -47,5 +46,4 @@ ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18550bf826b0_1_Ima
     metadata satisfies IWallpaperMetadata;
 ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18550bf826b0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18550bf826b0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADarkAndMoodyForestWithAHiddenPathForAHor9349026604334152978fE18550bf826b0_1_Image.content = content;

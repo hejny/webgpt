@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_2.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_2.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_2.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_comet_passing_through_the_sol_2742fafc-af96-4f65-a0bc-7090ed84bc40-0_2.texts.json';
 
 /**
  * Image of An abstract image of a comet passing through the solar system, with bright colors and swirling patterns that represent its trajectory.
@@ -39,7 +39,6 @@ export function AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc70
         />
     );
 }
-
 AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_Image.src = new URL(
     'https://cdn.midjourney.com/2742fafc-af96-4f65-a0bc-7090ed84bc40/0_2.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfACometPassingThroughTheSol742fafcAf964f65A0bc7090ed84bc4002_2_Image.content = content;

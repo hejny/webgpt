@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_dac49f09-5d46-473d-b87c-a5b1bec692fe-0_0.colors.json';
+import content from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_dac49f09-5d46-473d-b87c-a5b1bec692fe-0_0.content.md';
 import metadata from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_dac49f09-5d46-473d-b87c-a5b1bec692fe-0_0.json';
-import texts from './Pavol_Hejn_a_digital_painting_of_a_spaceship_exploring_an_aster_dac49f09-5d46-473d-b87c-a5b1bec692fe-0_0.texts.json';
 
 /**
  * Image of A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge.
@@ -39,7 +39,6 @@ export function ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87c
         />
     );
 }
-
 ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87cA5b1bec692fe0_0_Image.src = new URL(
     'https://cdn.midjourney.com/dac49f09-5d46-473d-b87c-a5b1bec692fe/0_0.png',
 );
@@ -47,5 +46,4 @@ ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87cA5b1bec692fe0_0_
     metadata satisfies IWallpaperMetadata;
 ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87cA5b1bec692fe0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87cA5b1bec692fe0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADigitalPaintingOfASpaceshipExploringAnAsterDac49f095d46473dB87cA5b1bec692fe0_0_Image.content = content;

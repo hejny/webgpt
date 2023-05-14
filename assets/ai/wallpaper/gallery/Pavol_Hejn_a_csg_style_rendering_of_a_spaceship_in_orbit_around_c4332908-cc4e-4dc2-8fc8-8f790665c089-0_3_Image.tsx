@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_csg_style_rendering_of_a_spaceship_in_orbit_around_c4332908-cc4e-4dc2-8fc8-8f790665c089-0_3.colors.json';
+import content from './Pavol_Hejn_a_csg_style_rendering_of_a_spaceship_in_orbit_around_c4332908-cc4e-4dc2-8fc8-8f790665c089-0_3.content.md';
 import metadata from './Pavol_Hejn_a_csg_style_rendering_of_a_spaceship_in_orbit_around_c4332908-cc4e-4dc2-8fc8-8f790665c089-0_3.json';
-import texts from './Pavol_Hejn_a_csg_style_rendering_of_a_spaceship_in_orbit_around_c4332908-cc4e-4dc2-8fc8-8f790665c089-0_3.texts.json';
 
 /**
  * Image of A csg-style rendering of a spaceship in orbit around a planet, with sharp angles and clean lines that highlight its modern and sleek design.
@@ -39,7 +39,6 @@ export function ACsgStyleRenderingOfASpaceshipInOrbitAroundC4332908Cc4e4dc28fc88
         />
     );
 }
-
 ACsgStyleRenderingOfASpaceshipInOrbitAroundC4332908Cc4e4dc28fc88f790665c0890_3_Image.src = new URL(
     'https://cdn.midjourney.com/c4332908-cc4e-4dc2-8fc8-8f790665c089/0_3.png',
 );
@@ -47,5 +46,4 @@ ACsgStyleRenderingOfASpaceshipInOrbitAroundC4332908Cc4e4dc28fc88f790665c0890_3_I
     metadata satisfies IWallpaperMetadata;
 ACsgStyleRenderingOfASpaceshipInOrbitAroundC4332908Cc4e4dc28fc88f790665c0890_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ACsgStyleRenderingOfASpaceshipInOrbitAroundC4332908Cc4e4dc28fc88f790665c0890_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ACsgStyleRenderingOfASpaceshipInOrbitAroundC4332908Cc4e4dc28fc88f790665c0890_3_Image.content = content;

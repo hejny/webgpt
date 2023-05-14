@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_2.colors.json';
+import content from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_2.content.md';
 import metadata from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_2.json';
-import texts from './Pavol_Hejn_a_snowy_mountain_peak_with_a_clear_blue_sky_02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14-0_2.texts.json';
 
 /**
  * Image of A snowy mountain peak with a clear blue sky
@@ -39,11 +39,10 @@ export function ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54cc
         />
     );
 }
-
 ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_2_Image.src = new URL(
     'https://cdn.midjourney.com/02a06cf6-ae7a-48c4-9d1c-9be0b54ccb14/0_2.png',
 );
 ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_2_Image.metadata =
     metadata satisfies IWallpaperMetadata;
 ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_2_Image.colorStats = hydrateColorStats(colorStats);
-ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_2_Image.texts = texts satisfies IWallpaperTexts;
+ASnowyMountainPeakWithAClearBlueSky02a06cf6Ae7a48c49d1c9be0b54ccb140_2_Image.content = content;

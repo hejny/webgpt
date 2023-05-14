@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_2.colors.json';
+import content from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_2.content.md';
 import metadata from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_2.json';
-import texts from './Pavol_Hejn_a_wallpaper_featuring_a_repeating_pattern_of_sleek_a_91150074-94a9-4b45-a508-a7f8776699e7-0_2.texts.json';
 
 /**
  * Image of A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops, set against a gradient background.
@@ -39,7 +39,6 @@ export function AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508
         />
     );
 }
-
 AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_2_Image.src = new URL(
     'https://cdn.midjourney.com/91150074-94a9-4b45-a508-a7f8776699e7/0_2.png',
 );
@@ -47,5 +46,4 @@ AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_2_
     metadata satisfies IWallpaperMetadata;
 AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AWallpaperFeaturingARepeatingPatternOfSleekA9115007494a94b45A508A7f8776699e70_2_Image.content = content;

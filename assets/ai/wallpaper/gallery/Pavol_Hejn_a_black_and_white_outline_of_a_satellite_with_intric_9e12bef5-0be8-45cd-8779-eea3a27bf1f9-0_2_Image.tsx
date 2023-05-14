@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_2.colors.json';
+import content from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_2.content.md';
 import metadata from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_2.json';
-import texts from './Pavol_Hejn_a_black_and_white_outline_of_a_satellite_with_intric_9e12bef5-0be8-45cd-8779-eea3a27bf1f9-0_2.texts.json';
 
 /**
  * Image of A black and white outline of a satellite, with intricate details that showcase its technical components and purpose.
@@ -39,7 +39,6 @@ export function ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779E
         />
     );
 }
-
 ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_2_Image.src = new URL(
     'https://cdn.midjourney.com/9e12bef5-0be8-45cd-8779-eea3a27bf1f9/0_2.png',
 );
@@ -47,5 +46,4 @@ ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_2_I
     metadata satisfies IWallpaperMetadata;
 ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ABlackAndWhiteOutlineOfASatelliteWithIntric9e12bef50be845cd8779Eea3a27bf1f90_2_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_2.colors.json';
+import content from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_2.content.md';
 import metadata from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_2.json';
-import texts from './Pavol_Hejn_a_cozy_image_of_a_fireplace_with_logs_and_flames_for_ab61678f-4b86-43ad-a16d-e487c92237b1-0_2.texts.json';
 
 /**
  * Image of A cozy image of a fireplace with logs and flames for a home decor or lifestyle blog.
@@ -39,7 +39,6 @@ export function ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE4
         />
     );
 }
-
 ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_2_Image.src = new URL(
     'https://cdn.midjourney.com/ab61678f-4b86-43ad-a16d-e487c92237b1/0_2.png',
 );
@@ -47,5 +46,4 @@ ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_2_Im
     metadata satisfies IWallpaperMetadata;
 ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ACozyImageOfAFireplaceWithLogsAndFlamesForAb61678f4b8643adA16dE487c92237b10_2_Image.content = content;

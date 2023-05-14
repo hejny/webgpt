@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_fea966fa-40d8-4e6c-a26c-5b8def3e2c57-0_1.colors.json';
+import content from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_fea966fa-40d8-4e6c-a26c-5b8def3e2c57-0_1.content.md';
 import metadata from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_fea966fa-40d8-4e6c-a26c-5b8def3e2c57-0_1.json';
-import texts from './Pavol_Hejn_a_dreamy_forest_scene_with_fairies_fea966fa-40d8-4e6c-a26c-5b8def3e2c57-0_1.texts.json';
 
 /**
  * Image of A dreamy forest scene with fairies
@@ -39,10 +39,9 @@ export function ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1
         />
     );
 }
-
 ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1_Image.src = new URL(
     'https://cdn.midjourney.com/fea966fa-40d8-4e6c-a26c-5b8def3e2c57/0_1.png',
 );
 ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1_Image.colorStats = hydrateColorStats(colorStats);
-ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1_Image.texts = texts satisfies IWallpaperTexts;
+ADreamyForestSceneWithFairiesFea966fa40d84e6cA26c5b8def3e2c570_1_Image.content = content;

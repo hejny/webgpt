@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_3.colors.json';
+import content from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_3.content.md';
 import metadata from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_3.json';
-import texts from './Pavol_Hejn_an_abstract_image_of_a_planet_s_surface_with_distort_6c32a61d-854e-42f6-9b49-bfabb16ccdd1-0_3.texts.json';
 
 /**
  * Image of An abstract image of a planet's surface, with distorted shapes and vivid colors that create a surreal and otherworldly feel.
@@ -39,7 +39,6 @@ export function AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49B
         />
     );
 }
-
 AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_3_Image.src = new URL(
     'https://cdn.midjourney.com/6c32a61d-854e-42f6-9b49-bfabb16ccdd1/0_3.png',
 );
@@ -47,5 +46,4 @@ AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_3_I
     metadata satisfies IWallpaperMetadata;
 AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAbstractImageOfAPlanetSSurfaceWithDistort6c32a61d854e42f69b49Bfabb16ccdd10_3_Image.content = content;

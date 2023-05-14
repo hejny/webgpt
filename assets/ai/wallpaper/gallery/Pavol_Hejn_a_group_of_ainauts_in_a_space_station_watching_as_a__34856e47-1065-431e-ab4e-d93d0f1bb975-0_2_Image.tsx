@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__34856e47-1065-431e-ab4e-d93d0f1bb975-0_2.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__34856e47-1065-431e-ab4e-d93d0f1bb975-0_2.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__34856e47-1065-431e-ab4e-d93d0f1bb975-0_2.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_in_a_space_station_watching_as_a__34856e47-1065-431e-ab4e-d93d0f1bb975-0_2.texts.json';
 
 /**
  * Image of A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsInASpaceStationWatchingAsA34856e471065431eAb4eD93
         />
     );
 }
-
 AGroupOfAinautsInASpaceStationWatchingAsA34856e471065431eAb4eD93d0f1bb9750_2_Image.src = new URL(
     'https://cdn.midjourney.com/34856e47-1065-431e-ab4e-d93d0f1bb975/0_2.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsInASpaceStationWatchingAsA34856e471065431eAb4eD93d0f1bb9750_2_Ima
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsInASpaceStationWatchingAsA34856e471065431eAb4eD93d0f1bb9750_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsInASpaceStationWatchingAsA34856e471065431eAb4eD93d0f1bb9750_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsInASpaceStationWatchingAsA34856e471065431eAb4eD93d0f1bb9750_2_Image.content = content;

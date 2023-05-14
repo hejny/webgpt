@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.colors.json';
+import content from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.content.md';
 import metadata from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.json';
-import texts from './Pavol_Hejn_a_collage_of_vintage_postcards_from_around_the_world_8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c-0_2.texts.json';
 
 /**
  * Image of A collage of vintage postcards from around the world
@@ -39,7 +39,6 @@ export function ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b
         />
     );
 }
-
 ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.src = new URL(
     'https://cdn.midjourney.com/8f11f3f3-99cc-43fd-8d1b-3bbf1084be6c/0_2.png',
 );
@@ -47,5 +46,4 @@ ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_
     metadata satisfies IWallpaperMetadata;
 ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ACollageOfVintagePostcardsFromAroundTheWorld8f11f3f399cc43fd8d1b3bbf1084be6c0_2_Image.content = content;

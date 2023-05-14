@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_spider_on_a_web_55d48163-0987-48b0-b045-37f2b79f1923-0_3.texts.json';
 
 /**
  * Image of A close-up of a spider on a web
@@ -37,10 +37,9 @@ export function ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image
         />
     );
 }
-
 ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.src = new URL(
     'https://cdn.midjourney.com/55d48163-0987-48b0-b045-37f2b79f1923/0_3.png',
 );
 ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfASpiderOnAWeb55d48163098748b0B04537f2b79f19230_3_Image.content = content;

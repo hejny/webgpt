@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_3.colors.json';
+import content from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_3.content.md';
 import metadata from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_3.json';
-import texts from './Pavol_Hejn_a_minimalist_graphic_of_a_leaf_for_an_environmental__fd1282fd-983c-49cd-9ec1-ee7e6d56eeae-0_3.texts.json';
 
 /**
  * Image of A minimalist graphic of a leaf for an environmental or sustainable living website
@@ -39,7 +39,6 @@ export function AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1E
         />
     );
 }
-
 AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1Ee7e6d56eeae0_3_Image.src = new URL(
     'https://cdn.midjourney.com/fd1282fd-983c-49cd-9ec1-ee7e6d56eeae/0_3.png',
 );
@@ -47,5 +46,4 @@ AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1Ee7e6d56eeae0_3_I
     metadata satisfies IWallpaperMetadata;
 AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1Ee7e6d56eeae0_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1Ee7e6d56eeae0_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AMinimalistGraphicOfALeafForAnEnvironmentalFd1282fd983c49cd9ec1Ee7e6d56eeae0_3_Image.content = content;

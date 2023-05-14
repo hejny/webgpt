@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.colors.json';
+import content from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.content.md';
 import metadata from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.json';
-import texts from './Pavol_Hejn_an_aurora_borealis_over_snow_covered_mountains_c69291e5-d766-4ed3-9072-179c779dd1d6-0_3.texts.json';
 
 /**
  * Image of An aurora borealis over snow-covered mountains
@@ -39,7 +39,6 @@ export function AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c
         />
     );
 }
-
 AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.src = new URL(
     'https://cdn.midjourney.com/c69291e5-d766-4ed3-9072-179c779dd1d6/0_3.png',
 );
@@ -47,5 +46,4 @@ AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Imag
     metadata satisfies IWallpaperMetadata;
 AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnAuroraBorealisOverSnowCoveredMountainsC69291e5D7664ed39072179c779dd1d60_3_Image.content = content;

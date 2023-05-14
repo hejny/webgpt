@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_0.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_0.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_0.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_crab_on_the_beach_160c3dc8-8dbb-4cee-9114-3d6c468fe6b6-0_0.texts.json';
 
 /**
  * Image of A close-up of a crab on the beach
@@ -37,10 +37,9 @@ export function ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Ima
         />
     );
 }
-
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.src = new URL(
     'https://cdn.midjourney.com/160c3dc8-8dbb-4cee-9114-3d6c468fe6b6/0_0.png',
 );
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfACrabOnTheBeach160c3dc88dbb4cee91143d6c468fe6b60_0_Image.content = content;

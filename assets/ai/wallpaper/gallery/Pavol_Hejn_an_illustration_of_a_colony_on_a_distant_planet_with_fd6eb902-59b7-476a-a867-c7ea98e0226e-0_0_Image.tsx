@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_0.colors.json';
+import content from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_0.content.md';
 import metadata from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_0.json';
-import texts from './Pavol_Hejn_an_illustration_of_a_colony_on_a_distant_planet_with_fd6eb902-59b7-476a-a867-c7ea98e0226e-0_0.texts.json';
 
 /**
  * Image of An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.
@@ -39,7 +39,6 @@ export function AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C
         />
     );
 }
-
 AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_0_Image.src = new URL(
     'https://cdn.midjourney.com/fd6eb902-59b7-476a-a867-c7ea98e0226e/0_0.png',
 );
@@ -47,5 +46,4 @@ AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_0_I
     metadata satisfies IWallpaperMetadata;
 AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_0_Image.colorStats =
     hydrateColorStats(colorStats);
-AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnIllustrationOfAColonyOnADistantPlanetWithFd6eb90259b7476aA867C7ea98e0226e0_0_Image.content = content;

@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_the__3a6065d3-2030-4b42-9f46-e6a050318a54-0_3.colors.json';
+import content from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_the__3a6065d3-2030-4b42-9f46-e6a050318a54-0_3.content.md';
 import metadata from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_the__3a6065d3-2030-4b42-9f46-e6a050318a54-0_3.json';
-import texts from './Pavol_Hejn_a_group_of_ainauts_in_high_tech_suits_exploring_the__3a6065d3-2030-4b42-9f46-e6a050318a54-0_3.texts.json';
 
 /**
  * Image of A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance.
@@ -39,7 +39,6 @@ export function AGroupOfAinautsInHighTechSuitsExploringTheA6065d320304b429f46E6a
         />
     );
 }
-
 AGroupOfAinautsInHighTechSuitsExploringTheA6065d320304b429f46E6a050318a5403_3_Image.src = new URL(
     'https://cdn.midjourney.com/3a6065d3-2030-4b42-9f46-e6a050318a54/0_3.png',
 );
@@ -47,5 +46,4 @@ AGroupOfAinautsInHighTechSuitsExploringTheA6065d320304b429f46E6a050318a5403_3_Im
     metadata satisfies IWallpaperMetadata;
 AGroupOfAinautsInHighTechSuitsExploringTheA6065d320304b429f46E6a050318a5403_3_Image.colorStats =
     hydrateColorStats(colorStats);
-AGroupOfAinautsInHighTechSuitsExploringTheA6065d320304b429f46E6a050318a5403_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+AGroupOfAinautsInHighTechSuitsExploringTheA6065d320304b429f46E6a050318a5403_3_Image.content = content;

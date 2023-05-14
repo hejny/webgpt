@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_1.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_1.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_1.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_snail_on_a_leaf_99086915-499c-4291-a2c1-1d40d3d81ddc-0_1.texts.json';
 
 /**
  * Image of A close-up of a snail on a leaf
@@ -37,10 +37,9 @@ export function ACloseUpOfASnailOnALeaf99086915499c4291A2c11d40d3d81ddc0_1_Image
         />
     );
 }
-
 ACloseUpOfASnailOnALeaf99086915499c4291A2c11d40d3d81ddc0_1_Image.src = new URL(
     'https://cdn.midjourney.com/99086915-499c-4291-a2c1-1d40d3d81ddc/0_1.png',
 );
 ACloseUpOfASnailOnALeaf99086915499c4291A2c11d40d3d81ddc0_1_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfASnailOnALeaf99086915499c4291A2c11d40d3d81ddc0_1_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfASnailOnALeaf99086915499c4291A2c11d40d3d81ddc0_1_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfASnailOnALeaf99086915499c4291A2c11d40d3d81ddc0_1_Image.content = content;

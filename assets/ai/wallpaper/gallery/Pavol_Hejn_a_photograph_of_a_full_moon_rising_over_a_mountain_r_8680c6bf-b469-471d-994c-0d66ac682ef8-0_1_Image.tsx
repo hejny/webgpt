@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_8680c6bf-b469-471d-994c-0d66ac682ef8-0_1.colors.json';
+import content from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_8680c6bf-b469-471d-994c-0d66ac682ef8-0_1.content.md';
 import metadata from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_8680c6bf-b469-471d-994c-0d66ac682ef8-0_1.json';
-import texts from './Pavol_Hejn_a_photograph_of_a_full_moon_rising_over_a_mountain_r_8680c6bf-b469-471d-994c-0d66ac682ef8-0_1.texts.json';
 
 /**
  * Image of A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.
@@ -39,7 +39,6 @@ export function APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d
         />
     );
 }
-
 APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_1_Image.src = new URL(
     'https://cdn.midjourney.com/8680c6bf-b469-471d-994c-0d66ac682ef8/0_1.png',
 );
@@ -47,5 +46,4 @@ APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_1_Im
     metadata satisfies IWallpaperMetadata;
 APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_1_Image.colorStats =
     hydrateColorStats(colorStats);
-APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+APhotographOfAFullMoonRisingOverAMountainR8680c6bfB469471d994c0d66ac682ef80_1_Image.content = content;

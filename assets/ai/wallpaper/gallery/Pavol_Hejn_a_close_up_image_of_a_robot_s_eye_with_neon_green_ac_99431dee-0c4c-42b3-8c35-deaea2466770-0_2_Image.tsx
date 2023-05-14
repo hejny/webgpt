@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.colors.json';
+import content from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.content.md';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.json';
-import texts from './Pavol_Hejn_a_close_up_image_of_a_robot_s_eye_with_neon_green_ac_99431dee-0c4c-42b3-8c35-deaea2466770-0_2.texts.json';
 
 /**
  * Image of A close-up image of a robot's eye with neon green accents
@@ -39,7 +39,6 @@ export function ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deae
         />
     );
 }
-
 ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.src = new URL(
     'https://cdn.midjourney.com/99431dee-0c4c-42b3-8c35-deaea2466770/0_2.png',
 );
@@ -47,5 +46,4 @@ ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Imag
     metadata satisfies IWallpaperMetadata;
 ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.colorStats =
     hydrateColorStats(colorStats);
-ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+ACloseUpImageOfARobotSEyeWithNeonGreenAc99431dee0c4c42b38c35Deaea24667700_2_Image.content = content;

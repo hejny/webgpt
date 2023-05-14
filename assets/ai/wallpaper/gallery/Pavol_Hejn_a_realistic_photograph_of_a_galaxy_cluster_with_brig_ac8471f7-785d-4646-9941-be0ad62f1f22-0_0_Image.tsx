@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_ac8471f7-785d-4646-9941-be0ad62f1f22-0_0.colors.json';
+import content from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_ac8471f7-785d-4646-9941-be0ad62f1f22-0_0.content.md';
 import metadata from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_ac8471f7-785d-4646-9941-be0ad62f1f22-0_0.json';
-import texts from './Pavol_Hejn_a_realistic_photograph_of_a_galaxy_cluster_with_brig_ac8471f7-785d-4646-9941-be0ad62f1f22-0_0.texts.json';
 
 /**
  * Image of A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe.
@@ -39,7 +39,6 @@ export function ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941
         />
     );
 }
-
 ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941Be0ad62f1f220_0_Image.src = new URL(
     'https://cdn.midjourney.com/ac8471f7-785d-4646-9941-be0ad62f1f22/0_0.png',
 );
@@ -47,5 +46,4 @@ ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941Be0ad62f1f220_0_
     metadata satisfies IWallpaperMetadata;
 ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941Be0ad62f1f220_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941Be0ad62f1f220_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ARealisticPhotographOfAGalaxyClusterWithBrigAc8471f7785d46469941Be0ad62f1f220_0_Image.content = content;

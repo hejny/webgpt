@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_0b9c0a54-1780-46a3-96fd-760701949d13-0_2.colors.json';
+import content from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_0b9c0a54-1780-46a3-96fd-760701949d13-0_2.content.md';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_0b9c0a54-1780-46a3-96fd-760701949d13-0_2.json';
-import texts from './Pavol_Hejn_a_colorful_graphic_of_a_bicycle_for_a_cycling_or_fit_0b9c0a54-1780-46a3-96fd-760701949d13-0_2.texts.json';
 
 /**
  * Image of A colorful graphic of a bicycle for a cycling or fitness blog
@@ -39,7 +39,6 @@ export function AColorfulGraphicOfABicycleForACyclingOrFit0b9c0a54178046a396fd76
         />
     );
 }
-
 AColorfulGraphicOfABicycleForACyclingOrFit0b9c0a54178046a396fd760701949d130_2_Image.src = new URL(
     'https://cdn.midjourney.com/0b9c0a54-1780-46a3-96fd-760701949d13/0_2.png',
 );
@@ -47,5 +46,4 @@ AColorfulGraphicOfABicycleForACyclingOrFit0b9c0a54178046a396fd760701949d130_2_Im
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfABicycleForACyclingOrFit0b9c0a54178046a396fd760701949d130_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AColorfulGraphicOfABicycleForACyclingOrFit0b9c0a54178046a396fd760701949d130_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AColorfulGraphicOfABicycleForACyclingOrFit0b9c0a54178046a396fd760701949d130_2_Image.content = content;

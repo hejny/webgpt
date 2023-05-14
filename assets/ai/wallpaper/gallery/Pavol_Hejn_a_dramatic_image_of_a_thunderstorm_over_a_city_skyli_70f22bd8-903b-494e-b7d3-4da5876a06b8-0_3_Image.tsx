@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_city_skyli_70f22bd8-903b-494e-b7d3-4da5876a06b8-0_3.colors.json';
+import content from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_city_skyli_70f22bd8-903b-494e-b7d3-4da5876a06b8-0_3.content.md';
 import metadata from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_city_skyli_70f22bd8-903b-494e-b7d3-4da5876a06b8-0_3.json';
-import texts from './Pavol_Hejn_a_dramatic_image_of_a_thunderstorm_over_a_city_skyli_70f22bd8-903b-494e-b7d3-4da5876a06b8-0_3.texts.json';
 
 /**
  * Image of A dramatic image of a thunderstorm over a city skyline for a weather or news website.
@@ -39,7 +39,6 @@ export function ADramaticImageOfAThunderstormOverACitySkyli70f22bd8903b494eB7d34
         />
     );
 }
-
 ADramaticImageOfAThunderstormOverACitySkyli70f22bd8903b494eB7d34da5876a06b80_3_Image.src = new URL(
     'https://cdn.midjourney.com/70f22bd8-903b-494e-b7d3-4da5876a06b8/0_3.png',
 );
@@ -47,5 +46,4 @@ ADramaticImageOfAThunderstormOverACitySkyli70f22bd8903b494eB7d34da5876a06b80_3_I
     metadata satisfies IWallpaperMetadata;
 ADramaticImageOfAThunderstormOverACitySkyli70f22bd8903b494eB7d34da5876a06b80_3_Image.colorStats =
     hydrateColorStats(colorStats);
-ADramaticImageOfAThunderstormOverACitySkyli70f22bd8903b494eB7d34da5876a06b80_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+ADramaticImageOfAThunderstormOverACitySkyli70f22bd8903b494eB7d34da5876a06b80_3_Image.content = content;

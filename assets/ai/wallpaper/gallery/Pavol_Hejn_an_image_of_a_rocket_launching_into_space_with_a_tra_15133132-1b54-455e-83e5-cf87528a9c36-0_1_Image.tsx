@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.colors.json';
+import content from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.content.md';
 import metadata from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.json';
-import texts from './Pavol_Hejn_an_image_of_a_rocket_launching_into_space_with_a_tra_15133132-1b54-455e-83e5-cf87528a9c36-0_1.texts.json';
 
 /**
  * Image of An image of a rocket launching into space with a trail of fire behind it, set against a starry sky.
@@ -39,7 +39,6 @@ export function AnImageOfARocketLaunchingIntoSpaceWithATra51331321b54455e83e5Cf8
         />
     );
 }
-
 AnImageOfARocketLaunchingIntoSpaceWithATra51331321b54455e83e5Cf87528a9c3601_1_Image.src = new URL(
     'https://cdn.midjourney.com/15133132-1b54-455e-83e5-cf87528a9c36/0_1.png',
 );
@@ -47,5 +46,4 @@ AnImageOfARocketLaunchingIntoSpaceWithATra51331321b54455e83e5Cf87528a9c3601_1_Im
     metadata satisfies IWallpaperMetadata;
 AnImageOfARocketLaunchingIntoSpaceWithATra51331321b54455e83e5Cf87528a9c3601_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AnImageOfARocketLaunchingIntoSpaceWithATra51331321b54455e83e5Cf87528a9c3601_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AnImageOfARocketLaunchingIntoSpaceWithATra51331321b54455e83e5Cf87528a9c3601_1_Image.content = content;

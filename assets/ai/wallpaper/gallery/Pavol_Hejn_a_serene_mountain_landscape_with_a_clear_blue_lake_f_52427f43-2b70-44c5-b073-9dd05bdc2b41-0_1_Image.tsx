@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_52427f43-2b70-44c5-b073-9dd05bdc2b41-0_1.colors.json';
+import content from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_52427f43-2b70-44c5-b073-9dd05bdc2b41-0_1.content.md';
 import metadata from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_52427f43-2b70-44c5-b073-9dd05bdc2b41-0_1.json';
-import texts from './Pavol_Hejn_a_serene_mountain_landscape_with_a_clear_blue_lake_f_52427f43-2b70-44c5-b073-9dd05bdc2b41-0_1.texts.json';
 
 /**
  * Image of A serene mountain landscape with a clear blue lake for a meditation or wellness website
@@ -39,7 +39,6 @@ export function ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739
         />
     );
 }
-
 ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_1_Image.src = new URL(
     'https://cdn.midjourney.com/52427f43-2b70-44c5-b073-9dd05bdc2b41/0_1.png',
 );
@@ -47,5 +46,4 @@ ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_1_I
     metadata satisfies IWallpaperMetadata;
 ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASereneMountainLandscapeWithAClearBlueLakeF52427f432b7044c5B0739dd05bdc2b410_1_Image.content = content;

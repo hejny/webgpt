@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__42ae2795-b3eb-4159-a78a-34512c19c0dc-0_1.colors.json';
+import content from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__42ae2795-b3eb-4159-a78a-34512c19c0dc-0_1.content.md';
 import metadata from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__42ae2795-b3eb-4159-a78a-34512c19c0dc-0_1.json';
-import texts from './Pavol_Hejn_a_surreal_image_of_a_person_floating_in_space_for_a__42ae2795-b3eb-4159-a78a-34512c19c0dc-0_1.texts.json';
 
 /**
  * Image of A surreal image of a person floating in space for a spirituality or personal growth website
@@ -39,7 +39,6 @@ export function ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a345
         />
     );
 }
-
 ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a34512c19c0dc0_1_Image.src = new URL(
     'https://cdn.midjourney.com/42ae2795-b3eb-4159-a78a-34512c19c0dc/0_1.png',
 );
@@ -47,5 +46,4 @@ ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a34512c19c0dc0_1_Ima
     metadata satisfies IWallpaperMetadata;
 ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a34512c19c0dc0_1_Image.colorStats =
     hydrateColorStats(colorStats);
-ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a34512c19c0dc0_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+ASurrealImageOfAPersonFloatingInSpaceForA42ae2795B3eb4159A78a34512c19c0dc0_1_Image.content = content;

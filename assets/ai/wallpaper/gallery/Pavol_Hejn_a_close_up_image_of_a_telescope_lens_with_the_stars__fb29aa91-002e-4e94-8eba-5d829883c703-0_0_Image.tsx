@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.colors.json';
+import content from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.content.md';
 import metadata from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.json';
-import texts from './Pavol_Hejn_a_close_up_image_of_a_telescope_lens_with_the_stars__fb29aa91-002e-4e94-8eba-5d829883c703-0_0.texts.json';
 
 /**
  * Image of A close-up image of a telescope lens, with the stars and planets visible in the reflection.
@@ -39,7 +39,6 @@ export function ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d8
         />
     );
 }
-
 ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_0_Image.src = new URL(
     'https://cdn.midjourney.com/fb29aa91-002e-4e94-8eba-5d829883c703/0_0.png',
 );
@@ -47,5 +46,4 @@ ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_0_Ima
     metadata satisfies IWallpaperMetadata;
 ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_0_Image.colorStats =
     hydrateColorStats(colorStats);
-ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_0_Image.texts =
-    texts satisfies IWallpaperTexts;
+ACloseUpImageOfATelescopeLensWithTheStarsFb29aa91002e4e948eba5d829883c7030_0_Image.content = content;

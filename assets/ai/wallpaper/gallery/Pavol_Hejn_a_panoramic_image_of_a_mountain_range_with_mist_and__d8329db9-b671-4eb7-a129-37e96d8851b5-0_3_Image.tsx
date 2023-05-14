@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_3.colors.json';
+import content from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_3.content.md';
 import metadata from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_3.json';
-import texts from './Pavol_Hejn_a_panoramic_image_of_a_mountain_range_with_mist_and__d8329db9-b671-4eb7-a129-37e96d8851b5-0_3.texts.json';
 
 /**
  * Image of A panoramic image of a mountain range, with mist and clouds drifting through the peaks.
@@ -39,7 +39,6 @@ export function APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937
         />
     );
 }
-
 APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_3_Image.src = new URL(
     'https://cdn.midjourney.com/d8329db9-b671-4eb7-a129-37e96d8851b5/0_3.png',
 );
@@ -47,5 +46,4 @@ APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_3_Im
     metadata satisfies IWallpaperMetadata;
 APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_3_Image.colorStats =
     hydrateColorStats(colorStats);
-APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_3_Image.texts =
-    texts satisfies IWallpaperTexts;
+APanoramicImageOfAMountainRangeWithMistAndD8329db9B6714eb7A12937e96d8851b50_3_Image.content = content;

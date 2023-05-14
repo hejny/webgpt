@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.colors.json';
+import content from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.content.md';
 import metadata from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.json';
-import texts from './Pavol_Hejn_a_colorful_graphic_of_a_beach_party_with_palm_trees__398f4315-c9c9-44bf-bd5e-f1411cad4d58-0_2.texts.json';
 
 /**
  * Image of A colorful graphic of a beach party with palm trees and cocktails for a vacation or travel website
@@ -39,7 +39,6 @@ export function AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1
         />
     );
 }
-
 AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.src = new URL(
     'https://cdn.midjourney.com/398f4315-c9c9-44bf-bd5e-f1411cad4d58/0_2.png',
 );
@@ -47,5 +46,4 @@ AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Im
     metadata satisfies IWallpaperMetadata;
 AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.colorStats =
     hydrateColorStats(colorStats);
-AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.texts =
-    texts satisfies IWallpaperTexts;
+AColorfulGraphicOfABeachPartyWithPalmTrees398f4315C9c944bfBd5eF1411cad4d580_2_Image.content = content;

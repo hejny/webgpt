@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_aab77591-becc-47bb-8b6b-703b43f3508b-0_0.colors.json';
+import content from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_aab77591-becc-47bb-8b6b-703b43f3508b-0_0.content.md';
 import metadata from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_aab77591-becc-47bb-8b6b-703b43f3508b-0_0.json';
-import texts from './Pavol_Hejn_a_close_up_of_a_butterfly_on_a_flower_aab77591-becc-47bb-8b6b-703b43f3508b-0_0.texts.json';
 
 /**
  * Image of A close-up of a butterfly on a flower
@@ -39,10 +39,9 @@ export function ACloseUpOfAButterflyOnAFlowerAab77591Becc47bb8b6b703b43f3508b0_0
         />
     );
 }
-
 ACloseUpOfAButterflyOnAFlowerAab77591Becc47bb8b6b703b43f3508b0_0_Image.src = new URL(
     'https://cdn.midjourney.com/aab77591-becc-47bb-8b6b-703b43f3508b/0_0.png',
 );
 ACloseUpOfAButterflyOnAFlowerAab77591Becc47bb8b6b703b43f3508b0_0_Image.metadata = metadata satisfies IWallpaperMetadata;
 ACloseUpOfAButterflyOnAFlowerAab77591Becc47bb8b6b703b43f3508b0_0_Image.colorStats = hydrateColorStats(colorStats);
-ACloseUpOfAButterflyOnAFlowerAab77591Becc47bb8b6b703b43f3508b0_0_Image.texts = texts satisfies IWallpaperTexts;
+ACloseUpOfAButterflyOnAFlowerAab77591Becc47bb8b6b703b43f3508b0_0_Image.content = content;

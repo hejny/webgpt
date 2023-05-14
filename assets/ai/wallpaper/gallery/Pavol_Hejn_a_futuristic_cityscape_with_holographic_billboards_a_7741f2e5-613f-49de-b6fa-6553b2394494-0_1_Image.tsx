@@ -12,8 +12,8 @@ import { colorToDataUrl } from '../../../../src/utils/color/utils/colorToDataUrl
 import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
 import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
 import colorStats from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.colors.json';
+import content from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.content.md';
 import metadata from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.json';
-import texts from './Pavol_Hejn_a_futuristic_cityscape_with_holographic_billboards_a_7741f2e5-613f-49de-b6fa-6553b2394494-0_1.texts.json';
 
 /**
  * Image of A futuristic cityscape with holographic billboards and flying cars
@@ -39,7 +39,6 @@ export function AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6
         />
     );
 }
-
 AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_1_Image.src = new URL(
     'https://cdn.midjourney.com/7741f2e5-613f-49de-b6fa-6553b2394494/0_1.png',
 );
@@ -47,5 +46,4 @@ AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_
     metadata satisfies IWallpaperMetadata;
 AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_1_Image.colorStats =
     hydrateColorStats(colorStats);
-AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_1_Image.texts =
-    texts satisfies IWallpaperTexts;
+AFuturisticCityscapeWithHolographicBillboardsA7741f2e5613f49deB6fa6553b23944940_1_Image.content = content;
