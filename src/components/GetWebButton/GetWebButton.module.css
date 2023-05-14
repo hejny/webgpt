@@ -27,8 +27,8 @@
 
 .getButton {
     font-size: 20px;
-    font-weight: bold;
     /*
+    font-weight: bold;
     background-color: rgb(181, 230, 135);
     */
 }
@@ -45,4 +45,16 @@
     background-color: rgb(136, 162, 196);
     color: black !important;
     */
+}
+
+@media only screen and (max-width: 900px) {
+    .GetWebButton {
+        display: none;
+        /*
+        TODO: !!!
+        position: absolute;
+        top: 0;
+        bottom: unset;
+        */
+    }
 }
