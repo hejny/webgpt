@@ -1,24 +1,16 @@
 import { readFile } from 'fs/promises';
-import glob from 'glob-promise';
-import { join } from 'path';
 import spaceTrim from 'spacetrim';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../assets/ai/wallpaper/IWallpaper';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { isFileExisting } from '../../utils/isFileExisting';
-import { getWallpapersDir } from './getWallpapersDir';
+import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
 
 /**
  * @@@
  */
 export async function getWallpapers(): Promise<Array<IWallpaper>> {
     const wallpapers: Array<IWallpaper> = [];
-
-    const wallpapersDir = await getWallpapersDir();
-    const wallpapersMetadataPaths = (
-        await glob(join(wallpapersDir, '*.json').split('\\').join('/'), {
-            // TODO: ignore: ['*.colors.json'],
-        })
-    ).filter((path) => !path.endsWith('.colors.json'));
+    const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
     for (const metadataPath of wallpapersMetadataPaths) {
         const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.json');

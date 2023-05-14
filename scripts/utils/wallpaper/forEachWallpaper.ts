@@ -1,10 +1,7 @@
 import chalk from 'chalk';
-import glob from 'glob-promise';
 import moment from 'moment';
-import { join } from 'path';
-import { isFileExisting } from '../../utils/isFileExisting';
 import { forPlay } from '../forPlay';
-import { getWallpapersDir } from './getWallpapersDir';
+import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
 import { IWallpaperFiles } from './IWallpaperFiles';
 
 /**
@@ -16,14 +13,10 @@ export async function forEachWallpaper(options: {
 }): Promise<void> {
     const { makeWork, parallel } = options;
 
-    // TODO: !! DRY Use here getWallpapers
-    const wallpapersDir = await getWallpapersDir();
-    const wallpapersPaths = await glob(
-        join(wallpapersDir, '*.png' /* <- TODO: !!! Use here metadata files */).split('\\').join('/'),
-    );
+    const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
     const stats = {
-        total: wallpapersPaths.length,
+        total: wallpapersMetadataPaths.length,
         done: 0,
         lastTime: moment(),
         startTime: moment(),
@@ -31,20 +24,14 @@ export async function forEachWallpaper(options: {
 
     const workingOn = new Set<Promise<void>>();
 
-    for (const wallpaperPath of wallpapersPaths) {
+    for (const wallpapersMetadataPath of wallpapersMetadataPaths) {
         await forPlay();
 
-        console.info(chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
+        console.info(chalk.grey(`${wallpapersMetadataPath.split('\\').join('/')}`));
 
-        const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
-        const contentPath = wallpaperPath.replace(/\.png$/, '.content.md');
+        const contentPath = wallpapersMetadataPath.replace(/\.json$/, '.content.md');
 
-        if (!(await isFileExisting(metadataPath))) {
-            // TODO: Do not crash for all processes JUST [4] report at the end
-            throw new Error(`Metadata file does not exist "${metadataPath}"`);
-        }
-
-        const work = /* not await */ makeWork({ metadataPath, contentPath });
+        const work = /* not await */ makeWork({ metadataPath: wallpapersMetadataPath, contentPath });
         // [3] const work = forTime(0.0263 * 1000 * 60);
         workingOn.add(work);
 
