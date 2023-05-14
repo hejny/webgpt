@@ -8,28 +8,15 @@ import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
- * A functional component that renders the head element and the language picker ⁘
- *
- * @param {AppHeadProps} props - The props for the component
- * @returns {JSX.Element} - The JSX element for the component
- */
-interface AppHeadProps {
-    subtitle?: string /* <- !!! Remove */;
-}
-
-/**
  * @@@
  */
-export function AppHead(props: AppHeadProps) {
-    const { subtitle } = props;
-
-    // TODO: !!! Populate ONLY from Wallpaper
+export function AppHead() {
 
     const wallpaper =
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
     const skin = useSkin();
 
-    const title = '!!!!';
+    const title = wallpaper.title;
     const description = removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content));
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */

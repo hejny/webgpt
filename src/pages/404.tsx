@@ -13,7 +13,7 @@ import { WallpapersContext } from '../utils/hooks/useWallpaper';
 export default function NotFoundPage({ wallpapers }: PageProps) {
     return (
         <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
-            <AppHead subtitle="Not found" /* <- TODO: !! Translate */ />
+            <AppHead /*subtitle="Not found" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />

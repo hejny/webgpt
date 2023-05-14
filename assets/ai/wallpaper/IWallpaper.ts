@@ -13,7 +13,9 @@ export interface IWallpaper {
     colorStats: IWallpaperColorStats;
     // TODO: shapeStats> IWallpaperShapeStats;
 
+    title: string /* <- Note: This is just derrived */;
     content: string /*_markdown*/;
+    font: string /* <- Note: This is just derrived */;
     // TODO: isTile + some mechanism to add additional metadata
 }
 

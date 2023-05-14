@@ -29,7 +29,7 @@ export default function GalleryPage({ wallpapers }: PageProps) {
 
     return (
         <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
-            <AppHead subtitle="Gallery" /* <- TODO: !! Translate */ />
+            <AppHead /*subtitle="Gallery" /* <- TODO: !! Translate */ />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />

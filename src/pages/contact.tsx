@@ -13,7 +13,7 @@ import { WallpapersContext } from '../utils/hooks/useWallpaper';
 export default function ContactPage({ wallpapers }: PageProps) {
     return (
         <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
-            <AppHead subtitle="Contact" /* <- TODO: !! Translate */ />
+            <AppHead /*subtitle="Contact" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />

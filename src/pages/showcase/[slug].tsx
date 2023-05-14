@@ -10,7 +10,7 @@ import { AppHead } from '../../sections/00-AppHead/AppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
 import styles from '../../styles/common.module.css';
-import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../../utils/hooks/useWallpaper';
 
 export default function ShowcasePage({ wallpapers }: PageProps) {
     return (

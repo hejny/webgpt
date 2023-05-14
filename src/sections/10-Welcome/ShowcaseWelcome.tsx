@@ -1,5 +1,4 @@
 import { Article } from '../../components/Article/Article';
-import { HandwrittenText } from '../../components/HandwrittenText/HandwrittenText';
 import { Section } from '../../components/Section/Section';
 import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -14,11 +13,17 @@ export function ShowcaseWelcomeSection() {
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
+            {/*
             <h1 className={styles.handritten}>
-                <HandwrittenText color={skin.highlightedTextColor}>{/*wallpaper.title*/ '!!!!'}</HandwrittenText>
+                <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>
+            */}
 
             <Article content={wallpaper.content} isEnhanced />
         </Section>
     );
 }
+
+/**
+ * TODO: !!!! Use the font here
+ */
