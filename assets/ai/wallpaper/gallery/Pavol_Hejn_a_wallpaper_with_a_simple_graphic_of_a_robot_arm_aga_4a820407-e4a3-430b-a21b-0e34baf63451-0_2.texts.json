@@ -1,8 +1,0 @@
-{
-    "title": "\"Robotic Gradient Wallpapers\"",
-    "content": "Robotic Gradient Wallpapers is a website dedicated to providing high-quality wallpapers featuring simple graphics of robot arms against gradient backgrounds of complementary colors. Our collection includes a variety of color schemes, so you can find the perfect wallpaper to match your personal style. Whether you're a fan of minimalism or bold and bright colors, we've got you covered. All of our wallpapers are available for free download in various resolutions, making it easy to find the perfect fit for your device. Upgrade your desktop or mobile background with one of our eye-catching robotic gradient wallpapers today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a robot arm, against a gradient background of two complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

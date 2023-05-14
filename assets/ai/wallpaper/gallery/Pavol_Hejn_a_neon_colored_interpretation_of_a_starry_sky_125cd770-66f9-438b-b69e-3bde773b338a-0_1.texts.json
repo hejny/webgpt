@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Nightscape\"",
-    "content": "# Neon Nightscape\n\nWelcome to Neon Nightscape, a website that brings the beauty of the night sky to life with a neon-colored twist. Our website offers a unique and captivating experience for those who love the night sky and want to explore it in a new way.\n\nAt Neon Nightscape, we provide a collection of stunning wallpapers that feature neon colors and a starry sky. These wallpapers are perfect for adding a pop of color to your desktop or mobile device. We update our collection regularly, so you can always find something new and exciting.\n\nIn addition to our wallpapers, we also offer a blog where we share interesting facts about the night sky, tips for stargazing, and news about upcoming celestial events. Whether you're an avid astronomer or just someone who appreciates the beauty of the night sky, our blog has something for everyone.\n\nSo why wait? Browse our collection of neon nightscape wallpapers and discover a new way to appreciate the beauty of the night sky.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A neon-colored interpretation of a starry sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

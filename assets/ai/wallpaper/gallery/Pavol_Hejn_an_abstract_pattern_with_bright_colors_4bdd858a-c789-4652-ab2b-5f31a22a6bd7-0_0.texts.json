@@ -1,8 +1,0 @@
-{
-    "title": "\"Vibrant Abstracts\"",
-    "content": "Welcome to Vibrant Abstracts! Our website is dedicated to showcasing stunning abstract patterns with bright colors. Our collection of wallpapers will add a pop of color and energy to any device screen.\n\nWhether you're looking for a bold new background for your desktop, phone, or tablet, we have a wide range of options to choose from. From playful geometric shapes to mesmerizing swirls and curves, our abstract patterns are sure to impress.\n\nOur wallpapers are designed to be both eye-catching and versatile, making them perfect for personal or professional use. Whether you want to liven up your own device or add some personality to your work computer, our collection has something for everyone.\n\nSo why settle for a boring, plain background when you can have a vibrant and dynamic abstract pattern? Browse our collection today and find the perfect wallpaper to suit your style and mood.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract pattern with bright colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

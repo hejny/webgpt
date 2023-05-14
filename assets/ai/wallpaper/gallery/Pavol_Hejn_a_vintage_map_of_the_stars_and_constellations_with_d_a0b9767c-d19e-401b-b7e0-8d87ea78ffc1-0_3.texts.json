@@ -1,8 +1,0 @@
-{
-    "title": "Celestial Cartography Hub.",
-    "content": "# Celestial Cartography Hub\n\nWelcome to Celestial Cartography Hub, your go-to source for all things related to the stars and constellations. Our website is dedicated to providing you with detailed information about the celestial bodies that make up our universe.\n\nOur team of experts has curated a vast collection of resources, including articles, images, and videos, to help you explore the wonders of the cosmos. Whether you're an amateur astronomer or a seasoned stargazer, we have something for everyone.\n\nAt Celestial Cartography Hub, we believe that understanding the universe is key to understanding ourselves. That's why we strive to provide accurate and engaging content that will inspire you to look up at the night sky with wonder and curiosity.\n\nSo come on in and join us on this journey of discovery. We can't wait to share the beauty and mystery of the cosmos with you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Starry Desert Nights\"",
-    "content": "# Welcome to Starry Desert Nights\n\nOur website is dedicated to bringing you the best in outdoor adventure and exploration. We believe that there's nothing quite like the feeling of being out in nature, surrounded by the beauty of the world around us.\n\nAt Starry Desert Nights, we're all about helping you find your next great adventure. Whether you're a seasoned traveler or just starting out, we have everything you need to plan your next trip. From hiking and camping gear to expert advice on the best trails and destinations, we're here to help you make the most of your time outdoors.\n\nSo why wait? Start exploring today with Starry Desert Nights!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a desert landscape at night, with the stars visible in the sky above.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

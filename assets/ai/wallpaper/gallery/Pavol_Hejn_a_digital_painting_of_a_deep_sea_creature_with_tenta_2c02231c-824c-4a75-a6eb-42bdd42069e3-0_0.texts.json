@@ -1,8 +1,0 @@
-{
-    "title": "\"Deep Sea Wonders\"",
-    "content": "# Deep Sea Wonders\n\nWelcome to Deep Sea Wonders, a website dedicated to exploring the mysteries of the deep ocean. Our site features articles, photos, and videos that showcase the fascinating creatures and ecosystems found in the depths of the sea.\n\nOur team of marine biologists and underwater photographers are passionate about sharing their knowledge and experiences with you. From the bizarre and otherworldly creatures of the abyss to the colorful coral reefs of the tropics, we aim to inspire curiosity and appreciation for the wonders of the underwater world.\n\nJoin us on our journey as we delve into the unknown and discover the secrets of the deep sea.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

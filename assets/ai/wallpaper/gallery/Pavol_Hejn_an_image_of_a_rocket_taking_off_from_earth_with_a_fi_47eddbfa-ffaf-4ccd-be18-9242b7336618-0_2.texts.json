@@ -1,8 +1,0 @@
-{
-    "title": "\"Launchpad Dreams\"",
-    "content": "Welcome to Launchpad Dreams ✨\n\nOur website is dedicated to inspiring and empowering dreamers to shoot for the stars. We believe that everyone has the potential to achieve their goals, no matter how big or small they may seem.\n\nThrough our collection of articles, interviews, and resources, we aim to provide you with the knowledge and motivation needed to turn your dreams into reality. From entrepreneurship to personal development, we cover a range of topics that will help you on your journey to success.\n\nSo join us as we launch into the unknown, fueled by passion and determination. Together, we can reach new heights and make our wildest dreams come true 🚀",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An image of a rocket taking off from Earth, with a fiery trail leading into the clouds.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Transcendence Space\"",
-    "content": "# Transcendence Space\n\nWelcome to Transcendence Space, a website dedicated to exploring spirituality and personal growth. Our goal is to provide a space where you can connect with others on a similar journey and find resources to support your own path of transcendence.\n\nWe believe that the human experience is more than just physical existence. Through spiritual practices and personal growth, we can tap into a deeper understanding of ourselves and the world around us. Our website offers a variety of articles, videos, and community forums to help you explore these topics.\n\nJoin our community and discover new ways to expand your consciousness, connect with others, and find inner peace. Let's journey together towards transcendence.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating in space for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

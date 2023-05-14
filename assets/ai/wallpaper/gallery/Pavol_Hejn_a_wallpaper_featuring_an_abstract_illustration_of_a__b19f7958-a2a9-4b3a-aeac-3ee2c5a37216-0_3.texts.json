@@ -1,8 +1,0 @@
-{
-    "title": "\"Data Center Dreams\"",
-    "content": "👋 Welcome to our website, where we bring you the latest in data center technology and design. Our sleek and modern graphics will transport you to a futuristic world of endless possibilities.\n\nExplore our collection of abstract illustrations, featuring cutting-edge data centers that are sure to inspire your imagination. With a minimalist color scheme, our wallpapers are perfect for adding a touch of sophistication to any device.\n\nWhether you're an IT professional, a tech enthusiast, or just someone who appreciates great design, our website has something for everyone. Join us on this journey into the future of data centers and discover the endless possibilities that await.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a futuristic data center, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

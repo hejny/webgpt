@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Odyssey Progression\"",
-    "content": "# Space Odyssey Progression\n\nWelcome to Space Odyssey Progression, a website dedicated to showcasing the incredible journey of space exploration. Our site features a series of stunning images that depict the evolution of space technology from its earliest beginnings to the present day.\n\nExplore our collection of images and marvel at the ingenuity and perseverance of the scientists, engineers, and astronauts who have made space travel possible. From the early days of rocketry to the cutting-edge spacecraft of today, our gallery provides a unique glimpse into the history of space exploration.\n\nWhether you're a space enthusiast, a history buff, or simply someone who appreciates beautiful imagery, we invite you to join us on this journey through the stars.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A series of images depicting the progression of space exploration, from early rockets to modern spacecraft.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Odyssey Adventure\"",
-    "content": "# Space Odyssey Adventure\n\nWelcome to Space Odyssey Adventure, the ultimate destination for space enthusiasts! Our website is dedicated to providing you with the latest news and updates on space exploration, as well as exciting content that will take you on a journey through the cosmos.\n\nJoin our team of AInauts as they pilot their spacecraft through an asteroid field, dodging explosions and debris along the way. Follow their adventure as they explore new planets, encounter alien life forms, and discover the mysteries of the universe.\n\nOur website features a variety of articles, videos, and interactive content that will keep you engaged and entertained. From interviews with astronauts and scientists to stunning images of galaxies and nebulae, we have something for everyone.\n\nSo come aboard and join us on this epic Space Odyssey Adventure!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

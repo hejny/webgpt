@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Robot Art\"",
-    "content": "# Neon Robot Art\n\nWelcome to Neon Robot Art, a website dedicated to showcasing the best in retro-futuristic art and design. Our collection features vintage illustrations of robots and other futuristic themes set against vibrant neon-colored backgrounds.\n\nOur goal is to bring together a community of art enthusiasts who appreciate the unique blend of nostalgia and futurism that defines this genre. Whether you're a fan of classic sci-fi movies or simply love the aesthetic of retro-futurism, we have something for everyone.\n\nBrowse our collection of wallpapers and discover new artists and designs that capture the essence of this exciting genre. We update our selection regularly, so be sure to check back often for fresh inspiration.\n\nJoin our community today and immerse yourself in the world of Neon Robot Art!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Imaginative Lily Pad\"",
-    "content": "# Imaginative Lily Pad\n\nWelcome to Imaginative Lily Pad, a website dedicated to exploring the depths of creativity and imagination. Our mission is to inspire and encourage individuals to tap into their inner creativity and unleash their imaginations.\n\nAt Imaginative Lily Pad, we believe that everyone has the potential to be creative and imaginative, and we aim to provide the resources and tools necessary to help individuals unlock this potential. Whether you're an artist, writer, musician, or simply someone who wants to explore their creative side, our website is designed to cater to all.\n\nFrom articles on the latest trends in art and design to tutorials on how to hone your craft, our website is a one-stop-shop for all things creative. We also feature interviews with established artists and creatives, providing insight into their creative processes and offering inspiration to our readers.\n\nSo come join us on this journey of self-discovery and creativity. Let your imagination run wild and explore the possibilities that await you at Imaginative Lily Pad.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person standing on a giant lily pad in a pond for a creativity or imagination website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Nightscape\"",
-    "content": "🌃 Welcome to Future Nightscape 🌆\n\nWe are a website dedicated to bringing you the most stunning and captivating wallpapers featuring futuristic cityscapes. Our collection includes a variety of abstract illustrations, each one depicting a unique vision of what the future might look like.\n\nWhether you're looking for a wallpaper to spruce up your desktop or to use as a backdrop for your next project, we've got you covered. Our wallpapers are available in high resolution, ensuring that every detail of the artwork is captured perfectly.\n\nSo why settle for a boring, generic wallpaper when you can have a glimpse into the future with our stunning cityscapes? Browse our collection today and find the perfect wallpaper to inspire you every day.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

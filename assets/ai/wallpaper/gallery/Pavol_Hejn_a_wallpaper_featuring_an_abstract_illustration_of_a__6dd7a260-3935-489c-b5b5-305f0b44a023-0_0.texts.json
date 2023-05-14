@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Nightscape\"",
-    "content": "Welcome to our website, where we bring you the coolest and most futuristic nightscape wallpaper. Our wallpaper features an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers that will make your desktop or mobile screen stand out.\n\nWith this wallpaper, you'll feel like you're transported to a world of high-tech marvels and endless possibilities. Whether you're a fan of science fiction or just love the sleek and modern look of a futuristic cityscape, our wallpaper is perfect for you.\n\nSo why settle for a boring and bland wallpaper when you can have something that truly reflects your style and personality? Download our Futuristic Nightscape wallpaper today and give your device the upgrade it deserves!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

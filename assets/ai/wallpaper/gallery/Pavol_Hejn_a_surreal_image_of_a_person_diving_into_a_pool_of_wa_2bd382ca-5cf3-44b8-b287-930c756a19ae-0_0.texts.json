@@ -1,8 +1,0 @@
-{
-    "title": "\"Dive to Health\"",
-    "content": "# Dive to Health\n\nWelcome to Dive to Health, a blog dedicated to helping you achieve your health and fitness goals. Our mission is to provide you with the knowledge, resources, and inspiration you need to lead a healthy lifestyle.\n\nOur team of experts will guide you through everything from nutrition and exercise to mental health and self-care. We believe that a healthy body and mind are essential for a happy and fulfilling life, and we're here to help you on your journey.\n\nWhether you're a seasoned athlete or just starting out on your fitness journey, Dive to Health has something for everyone. Join our community today and start diving into a healthier, happier you!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person diving into a pool of water for a health or fitness blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Enigmatic Woods\"",
-    "content": "# Enigmatic Woods\n\nWelcome to Enigmatic Woods, a website dedicated to all things mysterious and eerie. Our dark and moody forest wallpaper sets the tone for the content you'll find here - stories of horror, suspense, and unexplained phenomena.\n\nWhether you're a fan of classic ghost stories or prefer more modern tales of terror, we've got something for everyone. Browse our collection of short fiction, read up on true crime cases that will send shivers down your spine, or explore our articles on the paranormal and supernatural.\n\nBut be warned - once you enter the Enigmatic Woods, there's no telling what you might encounter. Are you brave enough to follow the hidden path?",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody forest with a hidden path for a horror or mystery website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

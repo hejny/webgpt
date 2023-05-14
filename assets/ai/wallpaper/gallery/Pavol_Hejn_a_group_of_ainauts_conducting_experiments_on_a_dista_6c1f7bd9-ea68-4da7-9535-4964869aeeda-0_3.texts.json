@@ -1,8 +1,0 @@
-{
-    "title": "\"ExoLab Adventures\"",
-    "content": "# ExoLab Adventures\n\nWelcome to ExoLab Adventures, your one-stop destination for all things space exploration! Our website is dedicated to providing you with the latest news, updates, and insights on the most exciting developments in space science and technology.\n\nOur team of expert writers and researchers are passionate about all things space-related, and we strive to bring you the most accurate and up-to-date information on topics ranging from astrophysics and astronomy to rocket engineering and planetary science.\n\nBut that's not all - at ExoLab Adventures, we believe that learning about space should be fun and engaging. That's why we've created a range of interactive resources and tools to help you explore the universe in a whole new way. From virtual reality simulations to online games and puzzles, there's something for everyone here at ExoLab Adventures.\n\nSo what are you waiting for? Join us on our mission to discover the wonders of the cosmos, and embark on your own ExoLab Adventure today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

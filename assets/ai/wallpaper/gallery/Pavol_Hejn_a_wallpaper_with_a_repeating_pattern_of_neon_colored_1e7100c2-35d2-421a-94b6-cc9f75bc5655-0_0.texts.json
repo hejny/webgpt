@@ -1,8 +1,0 @@
-{
-    "title": "Neon Circuit Wallpapers.",
-    "content": "Welcome to our website, where you can find a stunning collection of wallpapers featuring a neon-colored circuitry pattern set against a black background. Our selection of wallpapers is perfect for those who love technology and want to add a futuristic touch to their devices. \n\nWhether you're looking for a wallpaper for your desktop, laptop, tablet, or smartphone, we've got you covered. Our wallpapers are available in various resolutions and sizes, ensuring that you'll find the perfect fit for your device.\n\nWe update our collection regularly, so be sure to check back often to see our latest additions. Downloading our wallpapers is quick and easy, and they're all completely free. So why not give your device a sleek and modern look with our neon circuitry wallpapers?",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of neon-colored circuitry, set against a black background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

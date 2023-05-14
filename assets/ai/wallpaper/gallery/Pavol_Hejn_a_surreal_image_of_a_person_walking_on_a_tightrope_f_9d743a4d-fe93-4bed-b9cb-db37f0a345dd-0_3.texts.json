@@ -1,8 +1,0 @@
-{
-    "title": "\"Balancing Life's Journey\"",
-    "content": "# Balancing Life's Journey\n\nWelcome to Balancing Life's Journey, a website dedicated to providing motivational and personal development resources to help you navigate life's challenges. Our mission is to inspire and empower individuals to achieve their goals and dreams by providing practical tools and strategies for personal growth.\n\nWe believe that life is like walking on a tightrope - it requires balance, focus, and determination. Our website offers a variety of resources to help you maintain your balance and stay focused on your journey. From articles and blog posts on topics such as mindfulness, goal-setting, and self-care, to online courses and coaching services, we are here to support you every step of the way.\n\nWhether you're facing a difficult challenge or simply looking to improve your overall well-being, we invite you to explore our website and discover the resources that can help you achieve your full potential. Thank you for joining us on this journey towards greater balance and fulfillment in life.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person walking on a tightrope for a motivational or personal development website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Alpine Bliss\"",
-    "content": "# Alpine Bliss\n\nWelcome to Alpine Bliss, a website dedicated to showcasing the beauty and wonder of the world's highest peaks. Our site features stunning photography and breathtaking imagery of snow-capped mountains, crystal-clear lakes, and vast alpine landscapes.\n\nWhether you're an avid mountaineer or simply appreciate the majesty of nature, Alpine Bliss is the perfect destination for exploring the world's most awe-inspiring mountain ranges. From the towering peaks of the Himalayas to the rugged terrain of the Rockies, our collection of images will transport you to some of the most remote and beautiful corners of the earth.\n\nSo come explore with us and experience the thrill of the climb, the serenity of the summit, and the pure joy of being surrounded by nature's grandeur.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A snowy mountain peak with a clear blue sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

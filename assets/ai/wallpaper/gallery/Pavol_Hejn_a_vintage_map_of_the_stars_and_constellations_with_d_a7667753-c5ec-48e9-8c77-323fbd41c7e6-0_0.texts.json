@@ -1,8 +1,0 @@
-{
-    "title": "Celestial Explorer.",
-    "content": "# Celestial Explorer\n\nWelcome to Celestial Explorer, your go-to website for all things space-related! Our website features a vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies. \n\nAt Celestial Explorer, we're passionate about exploring the mysteries of the universe and sharing our discoveries with others. Whether you're an amateur astronomer or simply fascinated by the beauty of the cosmos, our website is the perfect place to indulge your curiosity.\n\nExplore our collection of articles and resources to learn more about the latest discoveries in astronomy, astrophysics, and space exploration. From black holes to exoplanets, our team of experts has got you covered.\n\nJoin our community of space enthusiasts and share your own insights and discoveries. Connect with like-minded individuals from around the world and stay up-to-date on the latest developments in space science.\n\nSo what are you waiting for? Start your journey of discovery today with Celestial Explorer!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

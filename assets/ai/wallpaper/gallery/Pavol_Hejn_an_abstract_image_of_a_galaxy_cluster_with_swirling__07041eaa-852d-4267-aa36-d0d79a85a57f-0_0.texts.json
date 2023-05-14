@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Dreams.",
-    "content": "Welcome to Galactic Dreams, a website that takes you on a journey through the vastness of space. Our abstract galaxy cluster wallpaper sets the mood for exploring the unknown and discovering new worlds. \n\nHere at Galactic Dreams, we provide a platform for space enthusiasts to share their experiences and knowledge with others. From the latest space news to breathtaking images captured by telescopes, we strive to bring you the most fascinating content about our universe.\n\nJoin our community and let's explore the final frontier together! 🚀🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a galaxy cluster, with swirling colors and patterns representing the vastness of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

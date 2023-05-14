@@ -1,8 +1,0 @@
-{
-    "title": "\"Abstract Wallpapers Hub\"",
-    "content": "**Welcome to Abstract Wallpapers Hub!**\n\nOur website is a collection of stunning wallpapers featuring abstract shapes and colors that are inspired by the latest web design trends and patterns. Our wallpapers are perfect for anyone who wants to add a touch of creativity and style to their desktop, phone, or tablet.\n\nWe have a wide variety of wallpapers to choose from, so you're sure to find one that suits your taste. Whether you prefer bold and vibrant colors or subtle and understated designs, we have something for everyone.\n\nAll of our wallpapers are available for free download in high resolution, so you can enjoy them on any device without sacrificing quality. We update our collection regularly, so be sure to check back often for new additions.\n\nThank you for visiting Abstract Wallpapers Hub, and we hope you enjoy our collection of beautiful abstract wallpapers!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

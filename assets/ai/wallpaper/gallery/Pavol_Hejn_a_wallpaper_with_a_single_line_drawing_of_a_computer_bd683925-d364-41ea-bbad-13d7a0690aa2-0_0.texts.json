@@ -1,8 +1,0 @@
-{
-    "title": "\"Chip Tech Wallpapers\"",
-    "content": "Welcome to our website featuring a sleek and modern wallpaper design. Our website is dedicated to providing high-quality wallpapers with a focus on technology, specifically computer chips. \n\nOur wallpapers are perfect for those who want to showcase their love for technology in a stylish and subtle way. The muted color palette of grey and blue adds a touch of sophistication to any desktop or mobile device. \n\nWe strive to provide a user-friendly experience for our visitors, so you can easily browse and download your favorite wallpapers. Our collection is regularly updated with new designs, so be sure to check back often! \n\nThank you for visiting our website, we hope you enjoy our selection of chip tech wallpapers.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a single line drawing of a computer chip, in a muted color palette such as grey or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

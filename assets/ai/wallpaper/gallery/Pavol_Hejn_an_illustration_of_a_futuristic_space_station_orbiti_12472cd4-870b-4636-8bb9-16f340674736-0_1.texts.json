@@ -1,8 +1,0 @@
-{
-    "title": "\"Orbiting Tomorrow's Frontier\"",
-    "content": "Welcome to our website, where the future meets the present. Our mission is to inspire and motivate you with the latest advancements in science and technology. We strive to bring you the most exciting news and stories from the world of space exploration, artificial intelligence, robotics, and more. \n\nOur sleek and modern design reflects our passion for innovation and progress. The futuristic space station orbiting a distant planet serves as a symbol of our commitment to exploring new frontiers and pushing the boundaries of what's possible. \n\nJoin us on this journey into the unknown and discover the wonders of tomorrow. Together, we can build a better future for ourselves and generations to come.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

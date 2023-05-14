@@ -1,8 +1,0 @@
-{
-    "title": "Machine Menace Wallpapers",
-    "content": "Welcome to Machine Menace Wallpapers! Our website is dedicated to providing you with high-quality wallpapers featuring dark and ominous machines. Whether you're a fan of sci-fi, cyberpunk, or just love the aesthetic of mechanical monstrosities, we've got you covered.\n\nOur collection includes a wide variety of abstract illustrations, each with their own unique style and flair. From glowing red lights to intricate mechanical parts, our wallpapers are sure to make your desktop or mobile device stand out.\n\nAll of our wallpapers are available for free download in a range of resolutions, so you can find the perfect fit for your device. So why wait? Browse our collection today and add some machine menace to your screen!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

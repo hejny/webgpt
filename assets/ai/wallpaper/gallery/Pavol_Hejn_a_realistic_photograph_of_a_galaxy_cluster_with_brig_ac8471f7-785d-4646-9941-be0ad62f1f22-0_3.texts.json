@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Vista.",
-    "content": "# Galactic Vista\n\nGalactic Vista is a website dedicated to providing breathtaking views of the universe through stunning photography. Our collection of images captures the vastness and beauty of space, from distant galaxies to our own solar system.\n\nExplore the wonders of the cosmos with our high-quality wallpapers, featuring vivid colors and intricate details that transport you to the furthest reaches of the universe. Whether you're a space enthusiast or simply looking for a stunning background for your desktop or mobile device, Galactic Vista has something for everyone.\n\nJoin us on a journey through the cosmos and discover the awe-inspiring beauty of the universe.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

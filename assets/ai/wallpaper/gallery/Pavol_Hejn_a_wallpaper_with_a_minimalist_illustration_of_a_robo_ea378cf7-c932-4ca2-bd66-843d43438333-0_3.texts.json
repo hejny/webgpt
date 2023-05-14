@@ -1,8 +1,0 @@
-{
-    "title": "\"Robo-Art Wallpapers\"",
-    "content": "Welcome to our website, where you can find a collection of minimalist wallpapers featuring futuristic robotic designs. Our wallpapers are perfect for those who appreciate the beauty of simplicity and want to add a touch of modernity to their desktop or mobile device. With our dark and moody color schemes, our wallpapers will give your device a sleek and sophisticated look. Whether you're a fan of science fiction or simply love the aesthetic of robots, our collection has something for everyone. Browse through our selection and download your favorite wallpaper today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a minimalist illustration of a robotic arm, against a background of dark and moody colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

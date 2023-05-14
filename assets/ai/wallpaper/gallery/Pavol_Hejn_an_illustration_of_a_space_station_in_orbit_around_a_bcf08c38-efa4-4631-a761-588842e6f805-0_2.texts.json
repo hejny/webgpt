@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Outpost\"",
-    "content": "🚀 Welcome to Galactic Outpost! 🪐\n\nOur website is dedicated to all things space-related, from the latest news and discoveries to stunning visuals of our universe. \n\nExplore our collection of breathtaking wallpapers featuring planets, stars, galaxies, and more. Our curated selection includes both real-life photographs and artistic interpretations of the cosmos.\n\nWhether you're a space enthusiast or just looking for a new desktop background, Galactic Outpost has something for everyone. Join us on a journey through the final frontier.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

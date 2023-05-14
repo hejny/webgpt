@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Odyssey\"",
-    "content": "# Alien Odyssey\n\nWelcome to Alien Odyssey, a website dedicated to exploring the wonders of the universe. Our site features articles, images, and videos about extraterrestrial life, space exploration, and the mysteries of the cosmos.\n\nJoin us on a journey through the stars as we delve into the latest scientific discoveries and speculate about what lies beyond our own planet. From the possibility of finding microbial life on Mars to the search for habitable exoplanets, we cover it all.\n\nOur community of like-minded individuals is passionate about all things space-related, and we encourage you to share your thoughts and ideas with us. Whether you're an amateur astronomer or a seasoned astrophysicist, there's something here for everyone.\n\nSo come along with us on this intergalactic adventure, and let's explore the unknown together.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Wordplay\"",
-    "content": "# AI Wordplay\n\nWelcome to AI Wordplay, the ultimate destination for all things related to artificial intelligence! Our minimalist website design features a dynamic wallpaper that showcases various AI-related buzzwords in different fonts and colors.\n\nAt AI Wordplay, we strive to provide our visitors with the latest news, insights, and trends in the world of AI. From machine learning and natural language processing to robotics and automation, we cover it all. Whether you're a seasoned AI professional or just starting to explore this exciting field, our website has something for everyone.\n\nIn addition to our informative articles and blog posts, we also offer a range of resources and tools to help you stay up-to-date on the latest developments in AI. From webinars and podcasts to online courses and certifications, we've got you covered.\n\nSo why wait? Explore AI Wordplay today and join the conversation about the future of artificial intelligence!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist design featuring AI-related buzzwords in different fonts and colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

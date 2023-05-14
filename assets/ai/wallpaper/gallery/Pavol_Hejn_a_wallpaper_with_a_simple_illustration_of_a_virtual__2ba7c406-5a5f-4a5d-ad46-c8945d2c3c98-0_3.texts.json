@@ -1,8 +1,0 @@
-{
-    "title": "\"VR Gradient Wallpapers\"",
-    "content": "Welcome to our website, where you can find a collection of stunning wallpapers featuring virtual reality headsets against gradient backgrounds. Our selection of wallpapers is perfect for anyone who loves technology, gaming, or simply appreciates beautiful design.\n\nEach wallpaper on our site has been carefully curated to ensure the highest quality and resolution, so you can enjoy a crisp and clear image on your desktop, laptop, or mobile device. Whether you're looking for a bold and vibrant design or something more subtle and minimalist, we have a range of options to suit your style.\n\nOur wallpapers are free to download and use, and we add new designs regularly to keep things fresh and exciting. So why not give your screen a makeover today with one of our VR headset wallpapers? We're sure you'll love the way it looks!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

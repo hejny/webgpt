@@ -1,8 +1,0 @@
-{
-    "title": "\"Arctic Chill\"",
-    "content": "# Arctic Chill\n\nWelcome to Arctic Chill, a website dedicated to exploring the beauty and wonder of the Arctic region. Our goal is to provide a space where visitors can learn about this unique and fragile ecosystem, its inhabitants, and the challenges it faces in the modern world.\n\nThrough stunning photography, informative articles, and engaging multimedia content, we aim to inspire a deeper appreciation for the Arctic and a greater understanding of the importance of protecting it for future generations.\n\nJoin us on a journey through this icy wilderness, from the towering glaciers and snow-capped peaks to the frozen tundra and remote communities that call it home. Discover the incredible wildlife that thrives in this harsh environment, from polar bears and walruses to narwhals and arctic foxes.\n\nWhether you're a nature lover, an adventurer, or simply curious about the world around you, Arctic Chill has something for everyone. So come explore with us and experience the magic of the Arctic firsthand.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

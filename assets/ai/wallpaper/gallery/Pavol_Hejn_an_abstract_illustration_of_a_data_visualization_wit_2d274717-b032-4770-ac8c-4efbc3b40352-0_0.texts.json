@@ -1,8 +1,0 @@
-{
-    "title": "\"Data Artistry\"",
-    "content": "**Data Artistry**\n\nWelcome to Data Artistry, a website dedicated to showcasing the beauty and creativity of data visualization. Our sleek and modern graphics, combined with a minimalist color scheme, provide the perfect backdrop for exploring the world of data in a visually stunning way.\n\nWhether you're a data scientist looking to showcase your latest findings or simply someone who appreciates the artistry of information, our abstract illustrations are sure to captivate and inspire. So come explore the world of data with us and discover the beauty that lies within.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a data visualization, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

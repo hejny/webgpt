@@ -1,8 +1,0 @@
-{
-    "title": "\"Winter Cabin Vibes\"",
-    "content": "# Winter Cabin Vibes\n\nWelcome to Winter Cabin Vibes, your go-to destination for all things cozy and rustic. Our website is dedicated to providing inspiration for home decor and lifestyle ideas that capture the essence of a winter cabin retreat.\n\nWhether you're looking to create a warm and inviting atmosphere in your own home or seeking out new ways to embrace the outdoors during the colder months, we've got you covered. From DIY projects and seasonal recipes to travel guides and product recommendations, our content is designed to help you channel the peaceful and serene vibes of a winter cabin getaway.\n\nSo come on in, grab a cup of hot cocoa, and explore our site. We hope you'll find inspiration and ideas that bring a little bit of winter cabin magic into your everyday life.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A cozy winter cabin surrounded by snow-covered trees for a home decor or lifestyle blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

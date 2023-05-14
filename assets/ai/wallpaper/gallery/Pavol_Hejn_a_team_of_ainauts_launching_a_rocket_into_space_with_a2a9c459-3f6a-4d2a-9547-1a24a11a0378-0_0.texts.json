@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Launch Central\"",
-    "content": "# Space Launch Central\n\nWelcome to Space Launch Central, your go-to destination for all things space-related. Our website is dedicated to bringing you the latest news and updates on space exploration, rocket launches, and everything in between.\n\nOur team of experts works tirelessly to provide you with accurate and up-to-date information on the latest space missions, including details on launch dates, rocket specifications, and mission objectives. We also offer in-depth analysis and commentary on the latest developments in the space industry, as well as interviews with leading experts in the field.\n\nWhether you're a space enthusiast, a student studying astronomy or aerospace engineering, or simply curious about what's happening beyond our planet, Space Launch Central has something for everyone. Join us on our journey to explore the final frontier and discover the wonders of the universe.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts launching a rocket into space, with the Earth visible in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

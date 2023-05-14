@@ -1,8 +1,0 @@
-{
-    "title": "\"Balloon Adventures\"",
-    "content": "# Balloon Adventures\n\nWelcome to Balloon Adventures, your ultimate guide to exploring the world from a unique perspective. Our website is dedicated to providing you with the best hot air balloon adventures around the globe.\n\nWhether you're a seasoned traveler or just starting out, our team of experts has curated a list of the most breathtaking and exhilarating hot air balloon rides for you to experience. From soaring over the stunning landscapes of Cappadocia, Turkey to floating above the majestic Serengeti National Park in Tanzania, we've got you covered.\n\nOur website features detailed information on each adventure, including pricing, duration, and highlights of the journey. We also offer helpful tips and advice on how to prepare for your hot air balloon ride, ensuring that you have the safest and most enjoyable experience possible.\n\nJoin us on an unforgettable journey and discover the world from a whole new perspective with Balloon Adventures.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a group of hot air balloons for a travel or adventure website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

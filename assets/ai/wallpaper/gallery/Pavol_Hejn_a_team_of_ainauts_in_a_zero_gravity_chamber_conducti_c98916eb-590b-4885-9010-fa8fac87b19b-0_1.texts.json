@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Gravity Experiments\"",
-    "content": "# AI Gravity Experiments\n\nWelcome to AI Gravity Experiments, the website dedicated to exploring the effects of artificial intelligence on the human body in zero-gravity conditions. Our team of AInauts conduct experiments in a state-of-the-art zero-gravity chamber to study how AI can impact human physiology and behavior.\n\nThrough our research, we aim to gain a deeper understanding of the potential benefits and risks of integrating AI into human systems, such as space exploration and medical treatments. Our findings will help shape the future of AI development and its applications in various fields.\n\nStay up-to-date with our latest discoveries and breakthroughs by following our blog and social media channels. Join us on this exciting journey of discovery and innovation at AI Gravity Experiments.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

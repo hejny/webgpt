@@ -1,8 +1,0 @@
-{
-    "title": "\"Otherworldly Odyssey\"",
-    "content": "# Otherworldly Odyssey\n\nWelcome to Otherworldly Odyssey, a website that takes you on a journey through surreal landscapes of alien planets and introduces you to strange, otherworldly creatures. \n\nOur site is dedicated to showcasing the beauty and wonder of science fiction and fantasy art. We curate the best artwork from around the world and present it in a visually stunning way. \n\nWhether you're a fan of space operas or epic fantasy, our collection of wallpapers will transport you to new worlds and inspire your imagination. \n\nJoin us on this adventure and explore the unknown with Otherworldly Odyssey.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal landscape of alien planets and strange, otherworldly creatures.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

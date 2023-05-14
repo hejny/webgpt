@@ -1,8 +1,0 @@
-{
-    "title": "\"Beyond Our Reach\"",
-    "content": "# Beyond Our Reach\n\nWelcome to Beyond Our Reach, a website dedicated to exploring the mysteries of the universe. Our mission is to bring you the latest news and discoveries from the world of space exploration, as well as to inspire and educate those who share our passion for the unknown.\n\nThrough our articles, videos, and podcasts, we aim to take you on a journey to the farthest reaches of the cosmos, where we will encounter strange new worlds, encounter alien life forms, and unravel the secrets of the universe itself.\n\nJoin us as we venture into the unknown, and discover what lies beyond our reach.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

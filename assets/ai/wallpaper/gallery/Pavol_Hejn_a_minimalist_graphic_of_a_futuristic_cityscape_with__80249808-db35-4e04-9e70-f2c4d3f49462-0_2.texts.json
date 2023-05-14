@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Cityscape\"",
-    "content": "# Futuristic Cityscape\n\nWelcome to Futuristic Cityscape, a website dedicated to exploring the cutting-edge of urban design and architecture. Our team of experts is passionate about discovering the most innovative and forward-thinking cityscapes from around the world.\n\nThrough our carefully curated collection of articles, photos, and videos, we aim to inspire and inform our readers about the latest trends and developments in urban planning. Whether you're an architect, designer, or simply someone who loves cities, Futuristic Cityscape has something for you.\n\nJoin us as we explore the future of urban living, from sustainable skyscrapers to smart cities powered by artificial intelligence. With our stunning minimalist graphic of a futuristic cityscape as your backdrop, you'll be transported to a world of endless possibilities.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Future City Walls\"",
-    "content": "Welcome to Future City Walls, the ultimate destination for those who love futuristic cityscapes! Our website features a stunning wallpaper with a single graphic of a futuristic cityscape in solid colors such as orange or green. \n\nOur goal is to provide you with an immersive experience that transports you into the future. Whether you're looking for inspiration for your next creative project or simply want to decorate your desktop or mobile device with a sleek and modern design, our wallpaper is the perfect choice.\n\nWith its minimalist yet striking design, our wallpaper is sure to make a statement wherever it's displayed. So why wait? Download our wallpaper today and step into the world of tomorrow!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a single graphic of a futuristic cityscape, in a solid color such as orange or green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

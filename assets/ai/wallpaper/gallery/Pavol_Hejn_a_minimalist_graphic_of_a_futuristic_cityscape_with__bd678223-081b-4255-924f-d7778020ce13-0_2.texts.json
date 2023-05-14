@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Noir Wallpapers\"",
-    "content": "# Future Noir Wallpapers\n\nWelcome to Future Noir Wallpapers, your go-to destination for high-quality wallpapers featuring a futuristic and moody aesthetic. Our collection of wallpapers is carefully curated to provide you with the perfect backdrop for your desktop, laptop, or mobile device.\n\nOur website features a minimalist design that allows you to easily browse through our collection of wallpapers. Whether you're looking for a dark and brooding cityscape or a neon-lit cyberpunk scene, we have something for everyone.\n\nAll of our wallpapers are available in high resolution, ensuring that they look great on any device. We also update our collection regularly, so be sure to check back often for new additions.\n\nAt Future Noir Wallpapers, we're passionate about providing our users with a unique and immersive visual experience. So why settle for a boring and generic wallpaper when you can have one that truly reflects your style and personality? Browse our collection today and find the perfect wallpaper to transform your device into a work of art.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

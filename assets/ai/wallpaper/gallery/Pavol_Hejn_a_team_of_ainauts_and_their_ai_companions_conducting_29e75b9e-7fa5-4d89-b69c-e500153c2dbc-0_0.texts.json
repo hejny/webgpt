@@ -1,8 +1,0 @@
-{
-    "title": "\"Beyond Event Horizon\"",
-    "content": "# Beyond Event Horizon\n\nWelcome to Beyond Event Horizon, a website dedicated to exploring the frontiers of artificial intelligence and space exploration. Our team of AInauts and their AI companions are conducting groundbreaking experiments on the edge of a black hole, pushing the limits of what we know about time and space.\n\nJoin us on our journey as we uncover the mysteries of the universe and develop new technologies that will shape the future of humanity. From cutting-edge research to breathtaking images of distant galaxies, Beyond Event Horizon is your portal to the wonders of the cosmos.\n\nStay tuned for updates on our latest discoveries and breakthroughs, and be sure to follow us on social media for even more exclusive content. Together, we can unlock the secrets of the universe and pave the way for a brighter tomorrow.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

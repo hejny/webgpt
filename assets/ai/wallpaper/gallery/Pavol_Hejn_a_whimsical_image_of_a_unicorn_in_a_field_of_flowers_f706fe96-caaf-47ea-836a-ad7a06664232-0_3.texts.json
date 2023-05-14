@@ -1,8 +1,0 @@
-{
-    "title": "\"Enchanted Tales\"",
-    "content": "Welcome to Enchanted Tales ✨\n\nStep into a world of magic and wonder where anything is possible. Our website is dedicated to all things fantasy and fiction, where you can immerse yourself in stories that transport you to far-off lands and introduce you to mythical creatures.\n\nOur collection of stories will take you on adventures with dragons, fairies, and wizards, as well as other magical beings. From epic battles to heartwarming romances, our tales are sure to captivate your imagination.\n\nWhether you're a fan of classic fairy tales or modern-day fantasy novels, we have something for everyone. So sit back, relax, and let us whisk you away to a world of enchantment.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical image of a unicorn in a field of flowers for a fantasy or fiction website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

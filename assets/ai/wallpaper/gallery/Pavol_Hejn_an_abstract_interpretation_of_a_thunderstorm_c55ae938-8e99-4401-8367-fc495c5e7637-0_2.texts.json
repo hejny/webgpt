@@ -1,8 +1,0 @@
-{
-    "title": "Stormy Art Gallery.",
-    "content": "Welcome to Stormy Art Gallery, where we showcase the beauty and power of nature through abstract art. Our website features a stunning wallpaper that captures the essence of a thunderstorm in a unique and captivating way.\n\nExplore our collection of artwork inspired by the forces of nature, from lightning strikes to rolling clouds and everything in between. Each piece is a one-of-a-kind interpretation of the stormy elements, created by talented artists from around the world.\n\nWhether you're an art enthusiast or simply appreciate the raw energy of a thunderstorm, you'll find something to love at Stormy Art Gallery. Browse our selection, discover new favorites, and bring the beauty of nature into your home with our high-quality prints and canvases.\n\nJoin us on this journey of artistic exploration and let the power of the storm inspire you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract interpretation of a thunderstorm\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

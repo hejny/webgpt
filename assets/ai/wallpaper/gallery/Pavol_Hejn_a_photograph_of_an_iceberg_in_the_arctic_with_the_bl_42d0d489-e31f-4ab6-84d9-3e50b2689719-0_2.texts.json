@@ -1,8 +1,0 @@
-{
-    "title": "\"Frosty Arctic View\"",
-    "content": "# Frosty Arctic View\n\nWelcome to Frosty Arctic View, a website dedicated to showcasing the beauty and wonder of the Arctic region. Our site features stunning photographs and videos of the Arctic landscape, wildlife, and culture.\n\nOur goal is to inspire a greater appreciation for this unique and fragile ecosystem, and to raise awareness about the urgent need to protect it from the impacts of climate change and other threats.\n\nWhether you're an adventurer, nature lover, or simply curious about the world around you, we invite you to explore our site and discover the magic of the Arctic.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

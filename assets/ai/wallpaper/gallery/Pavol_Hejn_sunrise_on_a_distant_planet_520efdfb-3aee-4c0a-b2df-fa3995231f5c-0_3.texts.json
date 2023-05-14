@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Dawn Hub\"",
-    "content": "Welcome to Alien Dawn Hub! 🚀\n\nOur website is dedicated to bringing you the latest news and updates on all things related to extraterrestrial life. Our team of expert researchers and scientists work tirelessly to bring you the most accurate and up-to-date information on the search for life beyond our planet.\n\nExplore our articles, videos, and podcasts to learn more about the mysteries of the universe and the potential for life on other planets. Join our community of like-minded individuals who share a passion for space exploration and the search for answers to some of the biggest questions in science.\n\nWhether you're a seasoned astronomer or just starting your journey into the world of space exploration, Alien Dawn Hub has something for everyone. So come join us as we venture into the unknown and discover what lies beyond our own planet. 🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"Sunrise on a distant planet\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

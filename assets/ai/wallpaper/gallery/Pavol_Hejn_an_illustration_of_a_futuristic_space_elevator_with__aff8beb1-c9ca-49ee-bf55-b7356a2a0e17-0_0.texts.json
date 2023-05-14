@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Lift Art\"",
-    "content": "Welcome to Space Lift Art, your go-to destination for stunning illustrations of futuristic space elevators! Our website is dedicated to showcasing the beauty and wonder of space lift technology through breathtaking artwork that captures the imagination. \n\nWhether you're a fan of science fiction, engineering, or just love exploring the possibilities of what lies beyond our planet, you'll find something to inspire you here. Our collection features a wide range of styles and interpretations of the space elevator concept, from sleek and modern designs to more fantastical depictions that push the limits of what's possible.\n\nSo take a look around, browse our galleries, and let your mind soar to new heights with Space Lift Art!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

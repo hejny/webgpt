@@ -1,8 +1,0 @@
-{
-    "title": "Cosmic Odyssey.",
-    "content": "# Cosmic Odyssey\n\nWelcome to Cosmic Odyssey, your ultimate destination for all things related to space exploration and discovery! Our website is dedicated to providing you with the latest news, updates, and insights about the mysteries of the universe.\n\nAt Cosmic Odyssey, we believe that space is the final frontier, and our mission is to inspire and educate people about the wonders of the cosmos. Whether you're a seasoned astronomer or just someone who's curious about what lies beyond our planet, you'll find something of interest on our site.\n\nFrom in-depth articles about the latest scientific discoveries to stunning images and videos of the cosmos, we've got it all. Our team of expert writers and researchers are passionate about sharing their knowledge and insights with our readers, and we're always on the lookout for new and exciting stories to tell.\n\nSo join us on a journey through the stars, and discover the incredible beauty and complexity of the universe. With Cosmic Odyssey as your guide, the sky's the limit!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a spaceship traveling through a colorful nebula.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

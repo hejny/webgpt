@@ -1,8 +1,0 @@
-{
-    "title": "\"Innovative AI Factory\"",
-    "content": "# Innovative AI Factory\n\nWelcome to our website, where we showcase the latest and most innovative technologies being developed by our team of AInauts. Our AI factory is a hub of creativity and innovation, where our experts work tirelessly to create cutting-edge solutions for a variety of industries.\n\nWe believe that AI has the power to revolutionize the way we live and work, and we're committed to pushing the boundaries of what's possible with this exciting technology. Whether you're interested in machine learning, natural language processing, or computer vision, you'll find something to inspire you on our site.\n\nSo why not take a look around and see what our team has been working on? From chatbots to self-driving cars, we're always exploring new ways to harness the power of AI and make the world a better place.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts working tirelessly in a massive AI factory, creating new and innovative technologies for the future.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

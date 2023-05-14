@@ -1,8 +1,0 @@
-{
-    "title": "\"Forest Falls\"",
-    "content": "🌳 **Welcome to Forest Falls!** 🌳\n\nOur website is a peaceful escape into nature, featuring a stunning wallpaper of a waterfall nestled in the heart of a lush forest. \n\nHere at Forest Falls, we believe that taking a moment to appreciate the beauty of the natural world can have a profound impact on our well-being. That's why we've created a space where you can immerse yourself in the tranquility of a forest setting, even if you're miles away from the nearest tree.\n\nWhether you're looking for inspiration for your next outdoor adventure, or simply want to take a few minutes to unwind and relax, Forest Falls has something for everyone. So sit back, take a deep breath, and let the soothing sounds of the waterfall carry you away to a place of peace and serenity.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A waterfall in the forest\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

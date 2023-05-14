@@ -1,8 +1,0 @@
-{
-    "title": "Peacock Chic.",
-    "content": "# Peacock Chic\n\nPeacock Chic is a fashion and beauty blog that brings you the latest trends, tips, and inspiration. Our team of fashion experts and beauty gurus are passionate about helping you look and feel your best.\n\nWith our vibrant graphic of a peacock, we aim to capture the essence of beauty, elegance, and confidence. Our blog features articles on fashion, beauty, lifestyle, and wellness, with a focus on empowering women to embrace their unique style and personality.\n\nWhether you're looking for fashion advice, makeup tutorials, or lifestyle tips, Peacock Chic has got you covered. Join our community of like-minded fashionistas and beauty enthusiasts and discover your own peacock chic style today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vibrant graphic of a peacock for a fashion or beauty blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

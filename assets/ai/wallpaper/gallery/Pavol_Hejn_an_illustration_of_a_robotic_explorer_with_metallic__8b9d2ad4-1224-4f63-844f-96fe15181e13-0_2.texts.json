@@ -1,8 +1,0 @@
-{
-    "title": "\"Metallic Explorer Art\"",
-    "content": "👋 Welcome to our website featuring a stunning illustration of a robotic explorer! Our site is dedicated to showcasing unique and intricate artwork, with a focus on futuristic and sci-fi themes. \n\nExplore our collection of metallic art pieces, each with their own detailed textures and designs. Our wallpapers are perfect for adding a touch of sci-fi inspiration to your desktop or mobile device.\n\nIn addition to our wallpaper collection, we also feature articles and interviews with talented artists in the industry. Stay up to date with the latest trends and techniques in digital art, and get inspired to create your own masterpieces.\n\nThank you for visiting our site, and we hope our artwork brings a spark of creativity to your day! 🚀",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a robotic explorer, with metallic textures and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

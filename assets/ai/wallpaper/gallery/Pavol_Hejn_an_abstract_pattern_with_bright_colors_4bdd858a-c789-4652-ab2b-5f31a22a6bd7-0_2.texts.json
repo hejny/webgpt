@@ -1,8 +1,0 @@
-{
-    "title": "Colorful Abstracts.",
-    "content": "Welcome to Colorful Abstracts, the perfect place for those who appreciate bright and vibrant abstract patterns. Our website features a stunning wallpaper with a unique design that will make your device stand out from the crowd. We are passionate about bringing color and life to your screens, and we believe that our wallpaper is the perfect way to do just that. Whether you're looking to spice up your desktop, laptop, or mobile device, our colorful abstract wallpaper is sure to impress. Join us today and discover the beauty of abstract art! 🎨🌈",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract pattern with bright colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

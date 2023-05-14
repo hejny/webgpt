@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Nightscape\"",
-    "content": "# Welcome to Neon Nightscape!\n\nOur website is dedicated to bringing you a unique and vibrant visual experience. We use a stunning neon-colored interpretation of a starry sky as our main wallpaper, creating an atmosphere that is both futuristic and ethereal.\n\nAt Neon Nightscape, we believe that beauty and functionality go hand in hand. That's why we've designed our website to be user-friendly and easy to navigate, so you can find what you're looking for quickly and easily.\n\nWhether you're here to browse our collection of stunning images, read our latest blog posts, or just soak up the atmosphere, we're confident that you'll find something to love at Neon Nightscape.\n\nSo sit back, relax, and enjoy the view!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A neon-colored interpretation of a starry sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Cityscape Hub\"",
-    "content": "# Future Cityscape Hub\n\nWelcome to the Future Cityscape Hub, your go-to destination for all things related to futuristic cityscapes and advanced technology. Our website is dedicated to providing you with the latest news, updates, and insights on the cutting-edge developments in urban planning, architecture, and design.\n\nWhether you're a fan of science fiction, an aspiring architect or urban planner, or simply fascinated by the possibilities of future cities, our website has something for everyone. From stunning digital illustrations to in-depth articles and interviews with experts in the field, we aim to inspire and inform our readers about the exciting possibilities of what lies ahead.\n\nJoin our community of like-minded individuals and stay up-to-date with the latest trends and innovations in future cityscapes. We invite you to explore our website and discover the endless possibilities of the cities of tomorrow.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a city on a distant planet, with towering buildings and advanced technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Sustainable Leaf Life\"",
-    "content": "# Sustainable Leaf Life\n\nWelcome to Sustainable Leaf Life, your go-to resource for all things related to sustainable living and environmentalism. Our website is dedicated to providing you with the latest news, tips, and ideas on how to live a more eco-friendly lifestyle.\n\nWe believe that small changes can make a big impact, and we are committed to helping you make those changes in your daily life. Whether you're looking for ways to reduce your carbon footprint, minimize waste, or support ethical and sustainable brands, we've got you covered.\n\nOur team of writers and contributors are passionate about sustainability and are constantly researching and exploring new ways to live more sustainably. We also feature interviews with experts in the field, as well as profiles of individuals and organizations who are making a difference in their communities.\n\nJoin us on our journey towards a more sustainable future. Let's work together to protect our planet and create a better world for future generations.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a leaf for an environmental or sustainable living website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"RoboSketch\"",
-    "content": "# Welcome to RoboSketch!\n\nRoboSketch is a platform that inspires creativity and productivity. Our minimalist robot hand wallpaper holding a stylus or pen with a space for taking notes or sketching ideas sets the tone for our website. We believe in the power of visual thinking, and our website provides a space for you to unleash your creativity and bring your ideas to life.\n\nWith RoboSketch, you can explore different mediums such as drawing, sketching, and note-taking. Our platform is designed to help you create, organize, and share your ideas with ease. Whether you are an artist, designer, student, or professional, RoboSketch offers a variety of tools to help you unlock your full potential.\n\nJoin our community today and start exploring the endless possibilities of visual thinking!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
-    }
-}

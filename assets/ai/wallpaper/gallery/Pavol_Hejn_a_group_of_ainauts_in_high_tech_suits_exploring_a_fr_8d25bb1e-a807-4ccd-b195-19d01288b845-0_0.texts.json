@@ -1,8 +1,0 @@
-{
-    "title": "\"Frozen Planet Exploration\"",
-    "content": "# Frozen Planet Exploration\n\nWelcome to Frozen Planet Exploration, your ultimate guide to exploring the frozen wastelands of distant planets. Our website is dedicated to providing you with the latest information and resources on high-tech exploration suits, ice formations, and everything in between.\n\nWhether you're a seasoned explorer or just starting out, our team of experts has curated a collection of articles, guides, and tips to help you navigate the challenges of exploring frozen planets. From the best equipment to use in extreme conditions to the most breathtaking locations to visit, we've got you covered.\n\nJoin us on an adventure of a lifetime as we take you on a journey through some of the most remote and beautiful places in the universe. With our stunning wallpaper as your backdrop, let your imagination run wild and discover the wonders that await you on Frozen Planet Exploration.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

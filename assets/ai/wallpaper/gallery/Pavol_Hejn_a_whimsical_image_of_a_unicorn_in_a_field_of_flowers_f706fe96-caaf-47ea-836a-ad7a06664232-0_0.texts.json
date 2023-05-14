@@ -1,8 +1,0 @@
-{
-    "title": "\"Fantasy Unicorn World\"",
-    "content": "Welcome to our magical world of fantasy and fiction! Our website is dedicated to all things whimsical, enchanting, and fantastical. Immerse yourself in a world where unicorns roam free in fields of flowers and fairies flit about in the trees.\n\nWhether you're a fan of classic fairy tales or modern fantasy epics, we have something for everyone. From book reviews and author interviews to movie and TV show recommendations, we'll keep you up-to-date on the latest and greatest in the world of fantasy and fiction.\n\nJoin our community of like-minded individuals who share your love of all things magical. Share your favorite books, movies, and TV shows, and discover new ones that will transport you to far-off lands and enchanted realms.\n\nSo come on in, grab a cup of tea, and lose yourself in the fantastical world of our website. We can't wait to explore with you! 🦄🌸✨",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical image of a unicorn in a field of flowers for a fantasy or fiction website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

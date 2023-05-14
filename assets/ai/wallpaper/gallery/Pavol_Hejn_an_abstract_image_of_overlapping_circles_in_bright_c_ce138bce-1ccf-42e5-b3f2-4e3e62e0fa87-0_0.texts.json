@@ -1,8 +1,0 @@
-{
-    "title": "\"Circular Marketing Hub\"",
-    "content": "Welcome to our Circular Marketing Hub! 🚀\n\nOur website is designed to help businesses take their marketing efforts to the next level. We provide a variety of resources, including articles, tutorials, and tools, to help you create effective marketing campaigns that will reach your target audience.\n\nOur team of experts has years of experience in the industry and are always up-to-date with the latest trends and best practices. Whether you're just starting out or looking to improve your existing marketing strategy, we've got you covered.\n\nJoin our community today and start learning how to create impactful marketing campaigns that will drive results for your business! 💪",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping circles in bright colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

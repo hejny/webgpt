@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Forestscape\"",
-    "content": "# Misty Forestscape\n\nWelcome to Misty Forestscape, a website dedicated to showcasing the beauty of nature. Our homepage features a stunning wallpaper of a forest with a misty background, setting the tone for the rest of our content.\n\nExplore our collection of articles and photographs that highlight the wonders of the natural world. From majestic mountains to tranquil lakes, we aim to inspire appreciation and awe for our planet's diverse landscapes.\n\nJoin our community of nature enthusiasts and share your own experiences and photos with us. Together, let's celebrate the beauty of our world and work towards preserving it for future generations.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

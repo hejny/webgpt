@@ -1,8 +1,0 @@
-{
-    "title": "\"AI City Monitor\"",
-    "content": "# AI City Monitor\n\nAI City Monitor is a website dedicated to providing up-to-date information on the latest advancements in AI technology for city infrastructure and system maintenance. Our team of experts curates news, research papers, and case studies from around the world to help you stay informed about the latest developments in this rapidly evolving field.\n\nOur goal is to bridge the gap between cutting-edge research and practical applications of AI in urban environments. Whether you are a city planner, engineer, or simply interested in the future of smart cities, our website has something for everyone.\n\nJoin us as we explore the potential of AI to transform the way we live, work, and interact with our urban surroundings.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"AuroraSky\"",
-    "content": "# AuroraSky\n\nWelcome to AuroraSky, a website dedicated to bringing you stunning imagery of the Northern Lights. Our collection of photographs showcases the natural beauty of this awe-inspiring phenomenon, with its vibrant green and purple hues swirling in the night sky.\n\nWhether you're a seasoned aurora chaser or simply appreciate the wonder of nature, our wallpapers are sure to captivate and inspire you. From remote wilderness locations to bustling cityscapes, our images transport you to the heart of the action, allowing you to experience the magic of the Northern Lights from anywhere in the world.\n\nSo why not brighten up your desktop or phone screen with one of our breathtaking wallpapers today? With new images added regularly, there's always something new to discover at AuroraSky.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

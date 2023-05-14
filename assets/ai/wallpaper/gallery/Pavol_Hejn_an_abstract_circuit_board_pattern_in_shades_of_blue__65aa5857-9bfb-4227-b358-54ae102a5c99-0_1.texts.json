@@ -1,8 +1,0 @@
-{
-    "title": "\"Techy Blue Background\"",
-    "content": "This website is the perfect destination for anyone who loves technology and sleek design. Our abstract circuit board pattern in shades of blue and silver provides a futuristic backdrop that will make your device stand out from the crowd. Whether you're looking to spruce up your desktop, phone, or tablet, our techy blue background is sure to impress. With its clean lines and modern aesthetic, this wallpaper is ideal for anyone who wants to stay ahead of the curve. So why wait? Download our wallpaper today and take your tech game to the next level! 💻📱🚀",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract circuit board pattern in shades of blue and silver\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

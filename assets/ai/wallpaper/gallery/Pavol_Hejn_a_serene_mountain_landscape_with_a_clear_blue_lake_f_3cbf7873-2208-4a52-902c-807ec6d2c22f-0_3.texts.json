@@ -1,8 +1,0 @@
-{
-    "title": "\"Tranquil Zen Haven\"",
-    "content": "# Tranquil Zen Haven\n\nWelcome to Tranquil Zen Haven, your ultimate destination for relaxation and wellness. Our website is dedicated to providing you with a serene and calming atmosphere that will help you unwind and find inner peace.\n\nWe offer a variety of resources and tools to support your journey towards mindfulness and well-being. From guided meditations and yoga classes to healthy living tips and inspirational quotes, our content is designed to nourish your mind, body, and soul.\n\nOur community is built on the principles of kindness, compassion, and acceptance. We believe that everyone deserves a safe space to explore their inner selves and connect with others who share their values and aspirations.\n\nSo come join us at Tranquil Zen Haven and discover the power of stillness and tranquility. Let us guide you on your path towards a more peaceful and fulfilling life.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene mountain landscape with a clear blue lake for a meditation or wellness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

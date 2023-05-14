@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Ride\"",
-    "content": "Welcome to our website, where you can find a stunning wallpaper featuring a futuristic vehicle. Our website is dedicated to providing high-quality wallpapers that are perfect for anyone who wants to add a touch of sci-fi to their desktop or mobile device. \n\nOur collection of wallpapers includes a variety of themes, from space and technology to nature and abstract designs. Whether you're looking for a calming landscape or an eye-catching pattern, we have something for everyone.\n\nAll of our wallpapers are carefully selected to ensure that they meet our high standards for quality and style. We update our collection regularly, so be sure to check back often for new additions.\n\nWith our simple and easy-to-use interface, it's never been easier to find the perfect wallpaper for your device. So why wait? Browse our collection today and give your device a fresh new look!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

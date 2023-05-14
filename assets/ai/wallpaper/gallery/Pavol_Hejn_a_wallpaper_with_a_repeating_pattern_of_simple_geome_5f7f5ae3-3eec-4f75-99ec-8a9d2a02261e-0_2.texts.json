@@ -1,8 +1,0 @@
-{
-    "title": "\"Grid Geometrics\"",
-    "content": "Welcome to Grid Geometrics, your go-to destination for stylish and modern wallpapers. Our website features a wide range of simple geometric patterns arranged in a grid-like structure that will add a touch of sophistication to any room. Whether you're looking for a bold statement piece or a subtle accent, our collection has something for everyone. With easy-to-use navigation and high-quality images, finding the perfect wallpaper has never been easier. Browse our selection today and transform your space into a work of art.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of simple geometric shapes, arranged in a grid-like structure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

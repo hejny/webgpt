@@ -1,8 +1,0 @@
-{
-    "title": "\"Nighttime Cityscape\"",
-    "content": "# Nighttime Cityscape\n\nWelcome to Nighttime Cityscape, a website dedicated to showcasing the beauty and allure of futuristic metropolises at night. Our collection of high-quality wallpapers captures the essence of these cities with their bright lights, towering skyscrapers, and bustling streets.\n\nWhether you're looking for a new desktop background or just want to admire the stunning visuals of these cities, Nighttime Cityscape has something for everyone. Our wallpapers are carefully curated to showcase the best of what these cities have to offer, from the neon-lit streets of Tokyo to the sleek architecture of Dubai.\n\nSo why not add some excitement to your digital space and explore our collection today? With new wallpapers added regularly, there's always something fresh and inspiring to discover on Nighttime Cityscape.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic metropolis at night\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

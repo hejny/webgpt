@@ -1,8 +1,0 @@
-{
-    "title": "\"Drone Geometry Wallpaper\"",
-    "content": "Welcome to our website! Our platform features a stunning wallpaper that showcases a single line drawing of a drone, set against a background of geometric shapes in complementary colors. \n\nOur website is designed to provide you with a visually captivating experience that will enhance your digital space. Whether you're looking to spruce up your desktop or phone background, or simply seeking inspiration for your next design project, our drone geometry wallpaper is the perfect choice.\n\nWith its sleek and modern design, this wallpaper is sure to impress anyone who sees it. The combination of the minimalist drone illustration and the vibrant geometric shapes creates a striking visual contrast that is both eye-catching and memorable.\n\nSo why wait? Download our drone geometry wallpaper today and elevate your digital space to the next level!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

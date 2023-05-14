@@ -1,8 +1,0 @@
-{
-    "title": "\"Orbit Ascension\"",
-    "content": "🚀 Welcome to Orbit Ascension 🌎\n\nOur website is dedicated to exploring the future of space travel and the technology that will make it possible. With our futuristic space elevator wallpaper as a backdrop, we aim to inspire and educate visitors about the possibilities of space exploration.\n\nFrom the latest developments in rocket technology to the potential of space elevators, we cover all aspects of space travel. Our articles are written by experts in the field and are designed to be accessible to everyone, from space enthusiasts to those new to the subject.\n\nJoin us on our journey as we explore the final frontier and uncover the secrets of the universe.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

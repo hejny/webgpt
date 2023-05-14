@@ -1,8 +1,0 @@
-{
-    "title": "\"Desert Expedition HQ\"",
-    "content": "# Desert Expedition HQ\n\nWelcome to Desert Expedition HQ, your ultimate source for all things related to high-tech exploration of desert planets. Our website is dedicated to providing you with the latest news, updates, and insights into the world of space exploration.\n\nOur team of expert AInauts are constantly pushing the boundaries of what's possible, using cutting-edge technology to explore the most remote and inhospitable corners of the galaxy. Whether you're a seasoned explorer or just starting out, our website has everything you need to stay informed and inspired.\n\nFrom detailed mission reports and in-depth analysis of the latest scientific discoveries, to stunning photos and videos of our expeditions, Desert Expedition HQ is your go-to destination for all things related to space exploration. So why wait? Join us on our journey today and discover the wonders of the universe like never before!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

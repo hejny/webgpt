@@ -1,8 +1,0 @@
-{
-    "title": "\"Neural Artistry\"",
-    "content": "Welcome to our website, where we showcase the beauty of neural networks through abstract illustrations. Our collection features intricate lines and a dark, technological color palette that highlights the complexity and sophistication of these powerful systems.\n\nExplore our gallery and discover stunning pieces of art that capture the essence of artificial intelligence. From simple designs to complex patterns, each illustration is a unique representation of the inner workings of neural networks.\n\nWhether you are a technology enthusiast or an art lover, our website offers a captivating glimpse into the world of AI and its potential for creative expression. Join us on this journey and experience the beauty of neural artistry.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a neural network, with intricate lines and a dark and technological color palette.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

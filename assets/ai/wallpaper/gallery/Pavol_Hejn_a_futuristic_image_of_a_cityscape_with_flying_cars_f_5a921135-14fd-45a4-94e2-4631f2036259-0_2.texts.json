@@ -1,8 +1,0 @@
-{
-    "title": "\"Flying Future City\"",
-    "content": "# Flying Future City\n\nWelcome to Flying Future City, a website dedicated to all things sci-fi and technology! Our website features the latest news and updates on futuristic advancements in various fields such as transportation, communication, robotics, and more.\n\nOur team of experts curates and shares articles, videos, and images that showcase the latest innovations and breakthroughs in science and technology. From flying cars to space travel, we cover it all!\n\nJoin our community of tech enthusiasts and stay up-to-date with the latest trends and developments in the world of science fiction and technology. Explore our website and discover the future today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic image of a cityscape with flying cars for a sci-fi or technology website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

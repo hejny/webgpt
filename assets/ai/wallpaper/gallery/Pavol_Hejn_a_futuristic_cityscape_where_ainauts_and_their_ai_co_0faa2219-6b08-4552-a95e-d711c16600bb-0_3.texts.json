@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Metropolis\"",
-    "content": "# Welcome to AI Metropolis\n\nAI Metropolis is a website that explores the intersection of artificial intelligence and urban development. Our mission is to showcase the latest advancements in AI technology and how they are being used to shape the cities of tomorrow.\n\nThrough our articles, videos, and interactive features, we aim to provide a glimpse into a future where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure. From autonomous construction vehicles to smart traffic management systems, we cover all aspects of AI-powered urban planning and development.\n\nJoin us on this exciting journey as we discover the endless possibilities of AI in shaping the cities of the future.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

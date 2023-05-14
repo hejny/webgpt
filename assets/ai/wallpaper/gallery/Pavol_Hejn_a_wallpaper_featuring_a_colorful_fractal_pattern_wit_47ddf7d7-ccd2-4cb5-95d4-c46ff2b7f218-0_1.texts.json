@@ -1,8 +1,0 @@
-{
-    "title": "Fractal Wallpapers.",
-    "content": "# Fractal Wallpapers\n\nWelcome to Fractal Wallpapers, your source for stunning and unique wallpapers featuring intricate fractal patterns. Our collection of wallpapers is carefully curated to showcase the beauty and complexity of fractals, with bold colors and mesmerizing designs that will enhance any device's screen.\n\nWhether you're looking to add a pop of color to your desktop or want to personalize your phone with a one-of-a-kind wallpaper, our collection has something for everyone. Our wallpapers are available in a variety of resolutions to fit any screen size, and we update our collection regularly with new and exciting designs.\n\nAt Fractal Wallpapers, we believe that art should be accessible to everyone, which is why all of our wallpapers are free to download and use. So why settle for a boring, generic wallpaper when you can have a stunning fractal design that truly stands out? Browse our collection today and find the perfect wallpaper for your device.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

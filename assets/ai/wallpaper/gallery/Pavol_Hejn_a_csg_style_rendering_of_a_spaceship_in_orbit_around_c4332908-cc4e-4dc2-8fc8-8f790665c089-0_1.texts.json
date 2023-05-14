@@ -1,8 +1,0 @@
-{
-    "title": "\"Orbital Spaceship\"",
-    "content": "# Orbital Spaceship\n\nWelcome to Orbital Spaceship, your go-to destination for all things modern and sleek in the world of space travel. Our website is dedicated to showcasing the latest and greatest in spaceship design, featuring stunning renderings of spacecraft in orbit around various planets.\n\nOur team of expert designers and enthusiasts are passionate about pushing the boundaries of what's possible in the realm of space exploration. Whether you're a seasoned astronaut or simply a fan of futuristic design, we have something for everyone on our site.\n\nExplore our collection of high-quality wallpapers featuring sharp angles and clean lines that highlight the beauty of modern spaceship design. From sleek shuttles to massive interstellar cruisers, our images capture the essence of cutting-edge technology and innovation.\n\nSo why wait? Dive into our collection today and experience the thrill of space travel from the comfort of your own screen.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A csg-style rendering of a spaceship in orbit around a planet, with sharp angles and clean lines that highlight its modern and sleek design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

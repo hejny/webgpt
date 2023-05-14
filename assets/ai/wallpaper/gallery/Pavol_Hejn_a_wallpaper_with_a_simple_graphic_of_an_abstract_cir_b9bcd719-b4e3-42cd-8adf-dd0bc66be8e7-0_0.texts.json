@@ -1,8 +1,0 @@
-{
-    "title": "\"Circuit Wall Art\"",
-    "content": "Welcome to Circuit Wall Art, where we bring a touch of technology to your home or office decor. Our website features a stunning wallpaper with a simple graphic of an abstract circuit board in shades of blue and green, perfect for those who love all things tech. \n\nOur collection includes a variety of circuit-inspired wall art, ranging from canvas prints to metal sculptures. Each piece is carefully crafted to add a unique and modern touch to any space. \n\nWhether you're a tech enthusiast or simply looking for a stylish way to decorate your home or office, Circuit Wall Art has something for everyone. Browse our collection today and discover the perfect piece to complement your style.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"AInauts in Space\"",
-    "content": "# AInauts in Space\n\nWelcome to AInauts in Space, your go-to destination for all things related to the latest advancements in artificial intelligence and space exploration. Our website is dedicated to providing you with the latest news, updates, and insights on the exciting world of AI-powered space travel.\n\nAt AInauts in Space, we are passionate about exploring the vast expanse of space with the help of cutting-edge technology and advanced artificial intelligence. Our team of experts is constantly researching and developing new ways to improve the efficiency, safety, and effectiveness of space missions using AI.\n\nWhether you're a space enthusiast, a tech geek, or simply curious about the future of space exploration, AInauts in Space has something for everyone. From in-depth articles and interviews with leading experts to stunning visuals and interactive features, our website is designed to inform, educate, and inspire.\n\nSo join us on this exciting journey into the final frontier and discover the limitless possibilities of AI-powered space travel.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Robo Adventure Hub\"",
-    "content": "🤖 Welcome to Robo Adventure Hub! 🚀\n\nOur website is the ultimate destination for all things robotic exploration. From deep space missions to underwater expeditions, we've got you covered.\n\nGet the latest news on cutting-edge technology and groundbreaking discoveries in the field of robotics. Connect with like-minded enthusiasts and experts from around the world.\n\nWhether you're a seasoned professional or just starting out, Robo Adventure Hub has something for everyone. Join us on our mission to explore the unknown and push the boundaries of what's possible with robotics.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a robotic explorer, with metallic textures and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

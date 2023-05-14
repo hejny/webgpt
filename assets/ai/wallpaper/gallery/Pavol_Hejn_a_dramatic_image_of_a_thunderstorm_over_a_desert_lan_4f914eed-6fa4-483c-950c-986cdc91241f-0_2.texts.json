@@ -1,8 +1,0 @@
-{
-    "title": "\"Stormy News\"",
-    "content": "# Stormy News\n\nWelcome to Stormy News, your go-to source for the latest and most accurate weather updates. Our team of experienced meteorologists works around the clock to provide you with up-to-date information on current weather conditions, severe weather alerts, and long-term forecasts.\n\nOur website features a clean and user-friendly interface that allows you to easily navigate through our articles and reports. Whether you're looking for local weather updates or want to stay informed about weather events happening around the world, Stormy News has got you covered.\n\nIn addition to our weather coverage, we also provide breaking news stories related to weather events, including natural disasters, climate change, and environmental issues. We believe that staying informed about these topics is crucial in today's world, and we strive to provide our readers with comprehensive and unbiased coverage.\n\nThank you for choosing Stormy News as your trusted source for weather and news updates. Stay safe and stay informed!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a thunderstorm over a desert landscape for a weather or news website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Woodland\"",
-    "content": "# Misty Woodland\n\nWelcome to Misty Woodland, a website dedicated to exploring the beauty and mystery of the forest. Our site features articles, photos, and videos that showcase the unique flora and fauna found in woodlands around the world.\n\nJoin us as we delve into the fascinating world of forests, from the towering trees to the tiny creatures that call them home. Discover the secrets hidden within the misty depths of these enchanting landscapes.\n\nWhether you're an avid nature lover or simply curious about the natural world, Misty Woodland has something for everyone. So come explore with us and experience the magic of the forest like never before.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

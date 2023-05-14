@@ -1,8 +1,0 @@
-{
-    "title": "\"Exoplanet Colony\"",
-    "content": "Welcome to Exoplanet Colony, a website dedicated to exploring the possibilities of human habitation on distant planets. Our site features articles and resources related to the challenges and opportunities of building a colony in space.\n\nOur team of experts includes scientists, engineers, architects, and artists who are passionate about imagining what life could be like on other worlds. From designing futuristic structures to developing sustainable food systems, we explore every aspect of creating a thriving community beyond Earth.\n\nWhether you're a science fiction fan or a serious researcher, Exoplanet Colony has something for everyone. Join us as we journey to the stars and discover what lies beyond our own planet.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

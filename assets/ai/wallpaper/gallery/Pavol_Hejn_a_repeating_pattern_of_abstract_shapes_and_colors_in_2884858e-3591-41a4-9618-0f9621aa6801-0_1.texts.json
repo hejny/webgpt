@@ -1,8 +1,0 @@
-{
-    "title": "\"Abstract Web Patterns\"",
-    "content": "# Abstract Web Patterns\n\nWelcome to Abstract Web Patterns, your go-to source for unique and trendy web design patterns. Our website features a wide variety of abstract shapes and colors that are perfect for adding a touch of creativity to your web projects.\n\nOur patterns are inspired by the latest web design trends and are designed to be seamlessly repeatable, making them ideal for use as backgrounds, headers, or any other element you can think of. Whether you're a web designer looking to add some flair to your portfolio or a business owner looking to spice up your website, our patterns are sure to impress.\n\nWe update our collection regularly, so be sure to check back often for new and exciting patterns. And if you have a specific design in mind, we also offer custom pattern creation services to bring your vision to life.\n\nThank you for visiting Abstract Web Patterns, we hope our patterns inspire your next web project!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

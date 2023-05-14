@@ -1,8 +1,0 @@
-{
-    "title": "\"Cloud-bound Growth\"",
-    "content": "# Cloud-bound Growth\n\nCloud-bound Growth is a website dedicated to spirituality and personal growth. Our mission is to provide inspiration, guidance, and resources to those who are seeking a deeper understanding of themselves and the world around them.\n\nThrough our articles, videos, and podcasts, we explore a variety of topics related to personal growth, including mindfulness, meditation, self-care, and more. We believe that everyone has the potential to live a fulfilling and meaningful life, and we strive to help our readers and listeners tap into their inner wisdom and unlock their full potential.\n\nWhether you're just starting your journey of self-discovery or you're looking for new insights and perspectives, Cloud-bound Growth is here to support you every step of the way. Join our community today and begin your own journey of growth and transformation.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating among the clouds for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

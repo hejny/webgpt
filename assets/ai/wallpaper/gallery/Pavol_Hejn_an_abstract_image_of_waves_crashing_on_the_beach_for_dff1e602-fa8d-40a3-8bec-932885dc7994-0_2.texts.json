@@ -1,8 +1,0 @@
-{
-    "title": "\"WaveGetaways\"",
-    "content": "Welcome to WaveGetaways! 🌊🏖️\n\nOur website is your ultimate destination for planning the perfect beach vacation. With our curated selection of stunning beachfront properties, you can experience the beauty and tranquility of the ocean like never before.\n\nWhether you're looking for a romantic getaway or a fun-filled family vacation, we have something for everyone. From luxurious villas to cozy cottages, our properties offer breathtaking views and top-notch amenities to make your stay unforgettable.\n\nOur team of travel experts is dedicated to providing personalized service and ensuring that every aspect of your trip is seamless and stress-free. So sit back, relax, and let us help you plan your dream beach vacation today!\n\nBook now and get ready to soak up the sun, feel the sand between your toes, and listen to the soothing sound of waves crashing on the shore. 🌞🌴🌊",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of waves crashing on the beach for a vacation or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

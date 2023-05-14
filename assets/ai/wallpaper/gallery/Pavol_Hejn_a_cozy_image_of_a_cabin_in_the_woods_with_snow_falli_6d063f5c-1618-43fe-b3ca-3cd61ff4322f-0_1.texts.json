@@ -1,8 +1,0 @@
-{
-    "title": "\"Winter Cabin Vibes\"",
-    "content": "# Winter Cabin Vibes\n\nWelcome to Winter Cabin Vibes, your go-to destination for all things cozy and wintery! Our website is designed to transport you to a peaceful cabin in the woods, complete with snow falling outside and a warm fire crackling inside. \n\nWe curate content that will help you embrace the winter season, whether you're looking for holiday inspiration, cozy recipes, or tips on how to stay warm during those chilly months. Our goal is to create a space where you can unwind and find joy in the simple pleasures of winter.\n\nSo grab a cup of hot cocoa, snuggle up under a blanket, and let Winter Cabin Vibes be your guide to a cozy and magical winter season.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A cozy image of a cabin in the woods with snow falling for a winter or holiday website.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

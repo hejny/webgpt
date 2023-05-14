@@ -1,8 +1,0 @@
-{
-    "title": "\"Starry Space Maps\"",
-    "content": "# Welcome to Starry Space Maps\n\nStarry Space Maps is your go-to destination for all things related to space exploration and astronomy. Our website features a vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies.\n\nOur mission is to provide you with a visually stunning and informative experience that will ignite your passion for the wonders of the universe. Whether you're an amateur stargazer or a seasoned astronomer, our website has something for everyone.\n\nExplore our collection of articles, videos, and interactive tools to learn more about the history of space exploration, the latest discoveries in astronomy, and the technology behind the spacecraft that have taken us beyond our planet.\n\nJoin our community of space enthusiasts and share your own experiences and insights. Connect with like-minded individuals from around the world and discover the beauty and mystery of the cosmos together.\n\nThank you for visiting Starry Space Maps. We hope you enjoy your journey through the stars.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

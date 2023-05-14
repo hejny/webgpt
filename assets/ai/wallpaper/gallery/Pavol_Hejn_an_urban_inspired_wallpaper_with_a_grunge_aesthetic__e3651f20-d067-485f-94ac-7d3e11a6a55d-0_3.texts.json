@@ -1,8 +1,0 @@
-{
-    "title": "Grunge Cityscape.",
-    "content": "Welcome to our website featuring a grunge-inspired cityscape wallpaper! Our site offers a unique and edgy aesthetic that will transform your desktop or mobile device. With futuristic elements such as holographic billboards, this wallpaper is perfect for those who love urban style and modern technology. Our wallpaper is available in various resolutions to fit your device perfectly. Browse our collection and download your favorite wallpaper today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An urban-inspired wallpaper with a grunge aesthetic, featuring a neon-lit cityscape with futuristic elements such as holographic billboards.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

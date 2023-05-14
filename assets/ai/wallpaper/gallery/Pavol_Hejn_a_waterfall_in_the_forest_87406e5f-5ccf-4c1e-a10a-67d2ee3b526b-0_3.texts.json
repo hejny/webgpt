@@ -1,8 +1,0 @@
-{
-    "title": "\"Forest Falls\"",
-    "content": "Welcome to Forest Falls, a website dedicated to bringing the beauty of nature to your screen. Our main wallpaper features a stunning waterfall nestled in a lush forest setting, providing a serene and peaceful backdrop for your desktop or mobile device. \n\nAt Forest Falls, we believe in the power of nature to inspire and rejuvenate, and our collection of wallpapers reflects this belief. Whether you're looking for a calming image to help you focus during work or study, or simply want to bring a touch of the outdoors into your daily life, we've got you covered.\n\nOur wallpapers are carefully curated to showcase the best of nature's beauty, from majestic mountains and sweeping vistas to delicate flowers and intricate patterns. We update our collection regularly, so be sure to check back often for new additions.\n\nThank you for visiting Forest Falls, and we hope our wallpapers bring a little bit of peace and tranquility into your day. 🌿🌺🍃",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A waterfall in the forest\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

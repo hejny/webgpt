@@ -1,8 +1,0 @@
-{
-    "title": "\"Mountain Bliss\"",
-    "content": "# Mountain Bliss\n\nWelcome to Mountain Bliss, your ultimate destination for meditation and wellness. Our serene mountain landscape with a clear blue lake is the perfect backdrop for relaxation and rejuvenation.\n\nAt Mountain Bliss, we believe in the power of nature to heal and restore the mind, body, and soul. Our website offers a variety of guided meditations, yoga classes, and wellness resources to help you find inner peace and balance.\n\nWhether you're a seasoned meditator or just starting out on your wellness journey, our community of like-minded individuals is here to support you every step of the way. Join us today and discover the transformative power of Mountain Bliss.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene mountain landscape with a clear blue lake for a meditation or wellness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

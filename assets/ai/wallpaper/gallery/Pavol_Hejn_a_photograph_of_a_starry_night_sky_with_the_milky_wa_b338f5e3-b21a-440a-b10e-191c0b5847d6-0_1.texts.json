@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Sky View.",
-    "content": "# Galactic Sky View\n\nGalactic Sky View is a website dedicated to bringing the beauty of the night sky to your screen. Our main feature is a stunning photograph of the Milky Way galaxy, captured in all its glory on a clear, starry night. \n\nBut we're more than just a pretty picture. Our website offers a wealth of information about astronomy and stargazing, including tips for beginners, guides to identifying constellations, and news about upcoming celestial events. \n\nWhether you're an experienced astronomer or simply someone who appreciates the wonders of the universe, Galactic Sky View has something for you. So sit back, relax, and let us take you on a journey through the stars.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a starry night sky, with the Milky Way galaxy visible overhead.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Desert Storm News\"",
-    "content": "# Desert Storm News\n\nWelcome to Desert Storm News, your go-to source for the latest weather and news updates. Our website features a dramatic image of a thunderstorm over a desert landscape, setting the tone for our coverage of breaking news and severe weather events.\n\nStay up-to-date with the latest developments in your area, including severe weather alerts, traffic updates, and breaking news stories. Our team of experienced journalists works around the clock to bring you accurate and reliable information, so you can make informed decisions about your safety and well-being.\n\nWhether you're looking for local news or national headlines, Desert Storm News has you covered. We are committed to delivering timely and relevant content that matters to our readers. So bookmark our site and check back often for the latest updates. Thank you for choosing Desert Storm News as your trusted source for news and weather.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a thunderstorm over a desert landscape for a weather or news website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

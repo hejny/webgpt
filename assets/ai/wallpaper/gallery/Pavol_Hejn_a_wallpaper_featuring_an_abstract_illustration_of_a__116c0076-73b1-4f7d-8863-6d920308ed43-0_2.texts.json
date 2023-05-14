@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Cityscapes\"",
-    "content": "Welcome to our website, where we showcase the most stunning and captivating futuristic cityscapes. Our collection features a variety of abstract illustrations of cities that are sure to transport you to a different world. From glowing lights to towering skyscrapers, our wallpapers capture the essence of what it means to live in a modern metropolis. Whether you're looking for inspiration for your next sci-fi project or just want to admire the beauty of these futuristic landscapes, our website has something for everyone. Browse our collection today and experience the awe-inspiring power of the future! 🚀🌃",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

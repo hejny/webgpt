@@ -1,8 +1,0 @@
-{
-    "title": "\"Haunted Gravesite\"",
-    "content": "# Haunted Gravesite\n\nWelcome to Haunted Gravesite, your go-to destination for all things horror and supernatural. Our website is dedicated to providing you with the spookiest content that will send chills down your spine.\n\nExplore our collection of bone-chilling stories, terrifying legends, and creepy urban myths. We cover everything from ghosts and demons to witches and vampires. Our team of expert writers carefully curates each piece of content to ensure that it is both informative and frightening.\n\nIn addition to our written content, we also offer a variety of multimedia resources. Watch our spine-tingling videos, listen to our bone-chilling podcasts, or browse our gallery of eerie photographs.\n\nWhether you're a seasoned horror enthusiast or just looking for a good scare, Haunted Gravesite has something for everyone. So come on in, but be warned - once you enter, there's no turning back.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody image of a misty graveyard for a horror or supernatural website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

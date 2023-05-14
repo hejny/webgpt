@@ -1,8 +1,0 @@
-{
-    "title": "\"SpaceScape\"",
-    "content": "# SpaceScape\n\nWelcome to SpaceScape, the ultimate destination for space enthusiasts! Our website features a stunning photorealistic image of the Earth from space as its main wallpaper. \n\nBut that's just the beginning. At SpaceScape, we offer a wealth of information and resources about space exploration, astronomy, and the wonders of the universe. Whether you're a seasoned astronomer or just starting to explore the cosmos, our website has something for everyone.\n\nExplore our articles and videos to learn about the latest discoveries in space science, or browse our collection of breathtaking images captured by telescopes and spacecraft. Connect with other space enthusiasts in our forums and chat rooms, or join one of our online events to engage with experts in the field.\n\nAt SpaceScape, we believe that space exploration is one of the most important endeavors humanity can undertake. Join us on our journey to discover the mysteries of the universe and unlock the secrets of our place in it.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photorealistic image of the Earth from space, with vibrant colors and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

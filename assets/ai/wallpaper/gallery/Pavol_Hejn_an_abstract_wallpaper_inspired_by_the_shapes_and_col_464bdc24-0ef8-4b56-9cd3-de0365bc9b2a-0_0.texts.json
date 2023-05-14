@@ -1,8 +1,0 @@
-{
-    "title": "Quantum Wallpapers.",
-    "content": "Welcome to Quantum Wallpapers, your go-to source for stunning abstract wallpapers inspired by the shapes and colors of quantum physics. Our collection features bold colors and intricate lines that are sure to make a statement on any device. Whether you're looking to add some personality to your phone, tablet, or desktop background, we've got you covered. Our wallpapers are designed to be both beautiful and functional, so you can enjoy them without sacrificing usability. Browse our collection today and find the perfect wallpaper to express your unique style!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

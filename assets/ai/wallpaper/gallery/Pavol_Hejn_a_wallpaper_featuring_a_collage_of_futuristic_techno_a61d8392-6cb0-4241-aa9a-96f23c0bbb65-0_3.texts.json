@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Tech Collage\"",
-    "content": "# Futuristic Tech Collage\n\nWelcome to Futuristic Tech Collage, your go-to source for the latest and greatest in cutting-edge technology. Our website is dedicated to bringing you the most up-to-date news, reviews, and insights on all things tech-related.\n\nFrom drones and robots to smart devices and everything in between, we cover it all. Our team of expert writers and editors are constantly scouring the web for the latest developments in the world of tech, so you can stay informed and ahead of the curve.\n\nWhether you're a tech enthusiast, a professional in the industry, or just someone who wants to stay up-to-date on the latest gadgets and innovations, Futuristic Tech Collage has something for you. So why wait? Explore our site today and discover the future of technology!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a collage of futuristic technology such as drones, robots, and smart devices, set against a black background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

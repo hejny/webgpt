@@ -1,8 +1,0 @@
-{
-    "title": "\"Otherworldly Adventures\"",
-    "content": "# Otherworldly Adventures\n\nWelcome to Otherworldly Adventures, your go-to destination for exploring the most fascinating and exotic planets in the universe. Our website is dedicated to providing you with the best travel experiences that are out of this world.\n\nWe specialize in curating unique and unforgettable trips to distant planets, where you can immerse yourself in breathtaking landscapes, meet fascinating alien species, and discover new cultures and ways of life. Whether you're a seasoned space traveler or a first-time explorer, we have something for everyone.\n\nOur team of expert guides and travel planners will work with you to create a customized itinerary that suits your interests and preferences. We offer a range of activities, from hiking and stargazing to cultural tours and culinary experiences. And with our state-of-the-art spacecraft and accommodations, you'll enjoy a comfortable and safe journey every step of the way.\n\nSo why wait? Book your next adventure with Otherworldly Adventures today and discover the wonders of the universe like never before.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Stormy Abstractions.",
-    "content": "Welcome to Stormy Abstractions, where we bring you a unique and captivating interpretation of thunderstorms. Our website features an array of abstract designs that capture the essence of the stormy weather, from the flashes of lightning to the rumbling thunder. \n\nEach wallpaper is carefully crafted to evoke a sense of awe and wonder, drawing inspiration from the raw power of nature. Whether you're looking for a striking background for your desktop or mobile device, or simply seeking inspiration for your next creative project, our collection of stormy abstractions is sure to impress.\n\nBrowse through our gallery and discover the beauty of thunderstorms in a whole new light. With our stunning designs, you can bring the power and majesty of these natural phenomena into your everyday life. So why wait? Start exploring our collection today and experience the magic of stormy abstractions for yourself!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract interpretation of a thunderstorm\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

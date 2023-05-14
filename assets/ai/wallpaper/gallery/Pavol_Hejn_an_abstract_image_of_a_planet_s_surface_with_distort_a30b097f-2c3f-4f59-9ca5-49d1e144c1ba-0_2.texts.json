@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Worldscape\"",
-    "content": "Welcome to Alien Worldscape, a website that takes you on a journey through surreal and otherworldly landscapes. Our abstract imagery of planets' surfaces will transport you to unknown realms filled with distorted shapes and vivid colors. \n\nImmerse yourself in the dreamlike atmosphere of our wallpapers and let your imagination run wild. Whether you're looking for inspiration for your next creative project or simply seeking a break from reality, Alien Worldscape has something for everyone.\n\nExplore our collection of mesmerizing wallpapers and discover new worlds beyond your wildest dreams. Join us on this cosmic adventure and experience the beauty of the unknown.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a planet's surface, with distorted shapes and vivid colors that create a surreal and otherworldly feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Stellar Cartography Hub\"",
-    "content": "# Stellar Cartography Hub\n\nWelcome to the Stellar Cartography Hub, your go-to resource for exploring the wonders of the universe. Our website features a vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies.\n\nWhether you're an amateur astronomer or a seasoned stargazer, our site offers a wealth of information on the cosmos. Explore the latest news and discoveries in space science, learn about the history of astronomy, and discover tips and tricks for observing the night sky.\n\nOur community of space enthusiasts is always growing, so join us today and start exploring the final frontier!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

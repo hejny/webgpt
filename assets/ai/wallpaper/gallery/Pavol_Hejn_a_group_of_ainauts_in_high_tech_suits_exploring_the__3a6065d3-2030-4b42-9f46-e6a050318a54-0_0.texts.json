@@ -1,8 +1,0 @@
-{
-    "title": "\"Desert AI Expedition\"",
-    "content": "# Desert AI Expedition\n\nWelcome to the Desert AI Expedition website! Our team of AInauts is on a mission to explore the surface of a desert planet, using high-tech suits to navigate the harsh environment. \n\nOur website serves as a hub for all things related to our expedition. Here, you can find updates on our progress, photos and videos from our journey, and information about the technology we're using to make this mission possible.\n\nWe're excited to share our adventure with the world and hope to inspire others to push the boundaries of what's possible with artificial intelligence and exploration. Join us on our journey and stay tuned for more updates!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

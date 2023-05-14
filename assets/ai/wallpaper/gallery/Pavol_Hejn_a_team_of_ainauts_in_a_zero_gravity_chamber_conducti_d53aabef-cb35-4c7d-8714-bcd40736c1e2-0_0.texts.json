@@ -1,8 +1,0 @@
-{
-    "title": "\"AI in Space\"",
-    "content": "# AI in Space\n\nWelcome to AI in Space, the website that explores the intersection of artificial intelligence and space exploration. Our team of AInauts conduct experiments in zero-gravity chambers to study the effects of AI on the human body.\n\nWe believe that AI has the potential to revolutionize space exploration by enabling us to perform complex tasks with greater efficiency and accuracy. Our mission is to push the boundaries of what is possible by harnessing the power of AI in space.\n\nJoin us on our journey as we explore the frontiers of science and technology. Follow our blog for updates on our latest experiments and discoveries, and learn about the cutting-edge technologies that are shaping the future of space exploration.\n\nThank you for visiting AI in Space. We look forward to sharing our passion for science and technology with you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

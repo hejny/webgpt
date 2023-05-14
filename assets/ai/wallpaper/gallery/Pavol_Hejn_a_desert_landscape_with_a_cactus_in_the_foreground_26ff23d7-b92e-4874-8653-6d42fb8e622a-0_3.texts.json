@@ -1,8 +1,0 @@
-{
-    "title": "\"Desert Oasis Online\"",
-    "content": "# Desert Oasis Online\n\nWelcome to Desert Oasis Online, your go-to destination for all things related to the desert landscape. Our website is dedicated to providing you with the latest news, information, and resources about this unique environment.\n\nWhether you're a nature enthusiast, a photographer, or just someone who appreciates the beauty of the desert, our website has something for you. We offer a wide range of articles, photos, and videos that showcase the stunning landscapes and fascinating wildlife of the desert.\n\nOur goal is to help you explore and understand this amazing ecosystem, while also promoting conservation and sustainability efforts. So come join us on a journey through the desert, and discover all the wonders that this remarkable landscape has to offer.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A desert landscape with a cactus in the foreground\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

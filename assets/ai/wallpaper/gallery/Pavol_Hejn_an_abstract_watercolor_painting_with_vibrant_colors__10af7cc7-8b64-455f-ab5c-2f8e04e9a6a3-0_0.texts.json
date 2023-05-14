@@ -1,8 +1,0 @@
-{
-    "title": "\"Colorful Art Blog\"",
-    "content": "Welcome to our colorful art blog! 🎨🌈\n\nOur website is dedicated to showcasing vibrant and inspiring artwork from around the world. We feature a variety of mediums, including painting, drawing, sculpture, and digital art.\n\nOur team of passionate art enthusiasts curates each piece to ensure that it meets our high standards for creativity and originality. We believe that art should be accessible to everyone, so we strive to showcase both established and emerging artists.\n\nWhether you're an artist yourself or simply appreciate beautiful and unique artwork, we hope that our blog will inspire you to explore new styles and perspectives. Thank you for visiting!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract watercolor painting with vibrant colors for an art or design blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Comet Art Gallery.",
-    "content": "Welcome to our website, where we showcase a stunning collection of abstract art inspired by the cosmos. Our featured wallpaper is an awe-inspiring image of a comet passing through our solar system, captured in vibrant colors and swirling patterns that represent its trajectory. \n\nOur site is dedicated to celebrating the beauty of space through the lens of abstract art. We curate a diverse selection of pieces from talented artists around the world, each with their unique interpretation of the cosmos. From galaxies to nebulas, black holes to supernovas, our collection offers a glimpse into the mysteries of the universe.\n\nWhether you're an art enthusiast or simply drawn to the wonders of space, our website provides a visual feast for the eyes. Explore our gallery and discover the perfect piece to add a touch of cosmic wonder to your home or office.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a comet passing through the solar system, with bright colors and swirling patterns that represent its trajectory.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

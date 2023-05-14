@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Forest Mornings\"",
-    "content": "# Misty Forest Mornings\n\nWelcome to Misty Forest Mornings, your go-to destination for all things nature and wildlife! Our website is dedicated to bringing you the most breathtaking images and stories from the great outdoors.\n\nOur team of passionate photographers and writers travel far and wide to capture the beauty of nature in all its forms. From misty forests at dawn to rugged mountain peaks, we strive to showcase the incredible diversity of our planet's natural wonders.\n\nWhether you're a seasoned nature enthusiast or simply looking for some inspiration, Misty Forest Mornings has something for everyone. Join us on a journey through the wild and discover the magic of the natural world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy image of a forest at dawn with a misty atmosphere for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

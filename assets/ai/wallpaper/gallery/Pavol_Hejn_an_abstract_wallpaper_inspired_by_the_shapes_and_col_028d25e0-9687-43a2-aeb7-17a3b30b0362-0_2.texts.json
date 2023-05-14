@@ -1,8 +1,0 @@
-{
-    "title": "\"Quantum-inspired Art\"",
-    "content": "🎨 Welcome to our website, where we showcase a collection of abstract wallpapers inspired by the fascinating world of quantum physics. Our wallpapers are designed with bold colors and intricate lines that capture the essence of the subatomic realm. \n\n🌌 Whether you're a science enthusiast or simply appreciate beautiful art, our quantum-inspired wallpapers are sure to add a unique touch to your desktop or mobile device. \n\n💻 Browse our collection and choose from a variety of designs that range from subtle and minimalist to vibrant and eye-catching. All of our wallpapers are available for download in high resolution, so you can enjoy them in all their detail and glory. \n\n🔬 Join us on a journey through the wonders of quantum physics, as we explore the beauty and complexity of the universe at its smallest scale.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

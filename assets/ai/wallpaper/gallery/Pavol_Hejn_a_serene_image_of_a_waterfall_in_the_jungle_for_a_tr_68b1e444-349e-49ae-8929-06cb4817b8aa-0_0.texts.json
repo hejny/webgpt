@@ -1,8 +1,0 @@
-{
-    "title": "\"Jungle Falls Adventure\"",
-    "content": "# Jungle Falls Adventure\n\nWelcome to Jungle Falls Adventure, the ultimate destination for nature lovers and adventure seekers! Our website is dedicated to providing you with the most thrilling and unforgettable travel experiences in the heart of the jungle.\n\nExplore the lush greenery and stunning landscapes of our carefully curated destinations. From hiking through dense forests to swimming in crystal clear waters, we offer a range of activities that cater to all levels of adventure.\n\nOur team of experienced guides will take you on an unforgettable journey, sharing their knowledge and passion for the natural world along the way. Whether you're a seasoned explorer or a first-time adventurer, we have something for everyone.\n\nSo come and join us on an epic journey through the jungle and discover the beauty and wonder of nature like never before. Book your adventure today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene image of a waterfall in the jungle for a travel or adventure website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

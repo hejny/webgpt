@@ -1,8 +1,0 @@
-{
-    "title": "\"Triangle Zen\"",
-    "content": "Welcome to Triangle Zen, a wellness and self-care website dedicated to helping you find inner peace and balance. Our site offers a variety of resources to help you on your journey towards a more mindful and fulfilling life.\n\nWhether you're looking for guided meditations, yoga classes, or simply some inspiration to help you stay centered throughout the day, we've got you covered. Our team of experts is constantly updating our content with the latest tips and techniques for achieving greater well-being.\n\nSo take a deep breath, relax, and explore all that Triangle Zen has to offer. We're here to support you every step of the way on your path to enlightenment. 🧘‍♀️🌸💆‍♂️",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping triangles in cool, calming colors for a wellness or self-care website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Workspace Wallpapers\"",
-    "content": "Welcome to our website, where you can find a collection of stunning wallpapers featuring futuristic workspaces. Our wallpapers are designed with a minimalist and modern approach, providing a sleek and stylish look for your desktop or mobile device. Whether you're a tech enthusiast or just love the aesthetic of a clean workspace, our wallpapers are sure to impress. Browse our selection and choose the perfect wallpaper to enhance your digital space.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a stylized illustration of a futuristic workspace, with a minimalist and modern design, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

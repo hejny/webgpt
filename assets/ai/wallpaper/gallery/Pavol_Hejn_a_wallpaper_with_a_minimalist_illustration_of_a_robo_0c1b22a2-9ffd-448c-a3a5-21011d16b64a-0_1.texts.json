@@ -1,8 +1,0 @@
-{
-    "title": "\"Robotic Artistry\"",
-    "content": "Welcome to our website, where we showcase the beauty of minimalist design and technology. Our wallpaper featuring a robotic arm against a dark and moody background perfectly captures the essence of our aesthetic. We believe that less is more, and this wallpaper exemplifies that philosophy with its simple yet striking illustration. As you explore our site, you'll find more examples of how we incorporate minimalism into our designs, from sleek user interfaces to clean typography. Join us on our journey to appreciate the artistry of technology.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a minimalist illustration of a robotic arm, against a background of dark and moody colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

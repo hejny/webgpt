@@ -1,8 +1,0 @@
-{
-    "title": "\"Metallic Chip Abstracts\"",
-    "content": "Welcome to Metallic Chip Abstracts! Our website is dedicated to showcasing the beauty and complexity of computer chips through abstract art. Our main wallpaper features a stunning representation of the inner workings of a computer chip, with a metallic color palette that adds a futuristic touch.\n\nExplore our collection of abstract art pieces inspired by computer chips, and discover the intricate patterns and structures that make up these essential components of modern technology. From minimalist designs to more elaborate compositions, our artworks offer a unique perspective on the world of computing.\n\nWhether you're a tech enthusiast, an artist, or simply appreciate the aesthetics of abstract art, Metallic Chip Abstracts has something for you. Browse our gallery, download wallpapers for your devices, or purchase prints to adorn your walls with stunning metallic chip-inspired art.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract representation of the inside of a computer chip with a metallic color palette\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Transcendent Space Journey\"",
-    "content": "# Transcendent Space Journey\n\nWelcome to Transcendent Space Journey, a website dedicated to exploring spirituality and personal growth through the lens of space exploration. Our mission is to inspire individuals to transcend their limitations and reach new heights in their personal development journey.\n\nThrough our articles, podcasts, and community forums, we aim to provide a space for individuals to explore and connect with their inner selves while also learning about the vast mysteries of the universe. Our content covers a wide range of topics, from meditation and mindfulness practices to the latest discoveries in astrophysics and cosmology.\n\nJoin us on this journey of self-discovery and cosmic exploration. Let's transcend together.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating in space for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

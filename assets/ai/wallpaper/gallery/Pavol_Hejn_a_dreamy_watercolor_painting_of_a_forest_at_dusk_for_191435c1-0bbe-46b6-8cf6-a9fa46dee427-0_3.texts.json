@@ -1,8 +1,0 @@
-{
-    "title": "\"Wilderness Tales\"",
-    "content": "# Wilderness Tales\n\nWelcome to Wilderness Tales, a nature and wildlife blog that takes you on a journey through the beauty of the natural world. Our aim is to inspire and educate our readers about the wonders of nature and the importance of conservation.\n\nThrough our articles, photographs, and videos, we showcase the diversity of life on Earth and the intricate relationships between different species. We cover a wide range of topics, from the majestic forests and mountains to the smallest insects and birds.\n\nJoin us as we explore the wilderness and share our stories and experiences with you. Whether you are an avid nature lover or just starting to appreciate the beauty of the natural world, there is something for everyone on Wilderness Tales.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

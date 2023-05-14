@@ -1,8 +1,0 @@
-{
-    "title": "AI Space Odyssey.",
-    "content": "# AI Space Odyssey\n\nWelcome to AI Space Odyssey, your go-to destination for all things related to the future of space travel. Our website is dedicated to exploring the possibilities of a futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.\n\nAt AI Space Odyssey, we believe that the future of space travel lies in the hands of artificial intelligence. With advancements in AI technology, we envision a world where spacecraft are crewed entirely by intelligent machines capable of navigating the vast expanse of space with ease and efficiency.\n\nOur website is a hub for all those interested in the intersection of AI and space travel. We provide the latest news and updates on the development of AI-powered spacecraft, as well as in-depth analysis and commentary from experts in the field.\n\nWhether you're a space enthusiast, a tech junkie, or just curious about the future of space travel, AI Space Odyssey has something for everyone. Join us on our journey as we explore the final frontier with the help of our AI companions.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

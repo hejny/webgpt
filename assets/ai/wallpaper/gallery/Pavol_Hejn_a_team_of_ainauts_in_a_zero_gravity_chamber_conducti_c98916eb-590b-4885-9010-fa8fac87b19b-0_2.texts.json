@@ -1,8 +1,0 @@
-{
-    "title": "AI Zero-G Lab.",
-    "content": "# AI Zero-G Lab\n\nWelcome to AI Zero-G Lab, the premier destination for cutting-edge research on the effects of artificial intelligence on the human body. Our team of AInauts conducts experiments in a zero-gravity chamber to simulate the conditions of space and explore the impact of AI on human physiology.\n\nAt AI Zero-G Lab, we are dedicated to advancing our understanding of how AI can improve our lives while minimizing potential risks. Our research covers a wide range of topics, including cognitive enhancement, physical performance, and emotional well-being.\n\nJoin us on our mission to unlock the full potential of AI and create a brighter future for humanity. Explore our website to learn more about our research, meet our team, and stay up-to-date with the latest developments in the field.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

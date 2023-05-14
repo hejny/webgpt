@@ -1,8 +1,0 @@
-{
-    "title": "\"Black Hole Explorers\"",
-    "content": "# Black Hole Explorers\n\nWelcome to Black Hole Explorers, a website dedicated to exploring the depths of black holes with the help of artificial intelligence and futuristic technology. Our team of AInauts is constantly pushing the boundaries of what we know about these mysterious cosmic phenomena.\n\nThrough our research and exploration, we hope to uncover new insights into the nature of black holes and their role in shaping the universe as we know it. Join us on this exciting journey as we delve deeper into the unknown and unlock the secrets of the cosmos.\n\nStay tuned for regular updates and discoveries from our team of intrepid explorers. Together, we can shed light on some of the most enigmatic and fascinating objects in the universe.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

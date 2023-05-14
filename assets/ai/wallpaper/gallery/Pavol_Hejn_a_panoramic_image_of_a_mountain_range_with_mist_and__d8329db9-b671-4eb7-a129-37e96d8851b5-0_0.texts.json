@@ -1,8 +1,0 @@
-{
-    "title": "\"Peak Panorama\"",
-    "content": "# Peak Panorama\n\nWelcome to Peak Panorama, your go-to destination for breathtaking mountain views. Our website features a stunning panoramic image of a mountain range, with mist and clouds drifting through the peaks. \n\nAt Peak Panorama, we understand the allure of mountains and the sense of awe they inspire. That's why we've curated a collection of articles, photos, and videos that showcase the beauty and majesty of these natural wonders. \n\nWhether you're an avid hiker, a nature lover, or simply someone who appreciates stunning scenery, Peak Panorama has something for you. Explore our site to discover new trails, learn about different mountain ranges, and immerse yourself in the grandeur of the great outdoors.\n\nJoin our community of like-minded individuals who share a passion for mountains and all they have to offer. From tips on hiking and camping to stories of mountaineering adventures, there's always something new and exciting to discover at Peak Panorama.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A panoramic image of a mountain range, with mist and clouds drifting through the peaks.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

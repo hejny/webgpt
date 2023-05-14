@@ -1,8 +1,0 @@
-{
-    "title": "\"Crystal Caverns Expedition\"",
-    "content": "🚀 Welcome to Crystal Caverns Expedition! 🪐\n\nJoin our team of AInauts on an exciting journey to explore the vast network of tunnels beneath the surface of a distant planet. Our mission is to uncover the secrets of these crystal caverns and discover what lies hidden within.\n\nAs you navigate through our website, you'll find a wealth of information about our expedition, including details about our team, our equipment, and our progress so far. You can also follow us on social media to stay up-to-date with the latest news and insights from the field.\n\nWhether you're a seasoned explorer or just curious about the wonders of the universe, we invite you to join us on this incredible adventure. Let's boldly go where no one has gone before!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

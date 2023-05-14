@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Survival Squad\"",
-    "content": "# Space Survival Squad\n\nWelcome to Space Survival Squad, the ultimate destination for space enthusiasts and adventure seekers. Our website is dedicated to providing you with the latest news, updates, and insights on everything related to space exploration.\n\nOur team of expert AInauts will take you on a thrilling journey through the vast expanse of space, where you'll encounter dangerous asteroid fields, explore distant planets, and witness some of the most awe-inspiring sights in the universe.\n\nWhether you're an avid space enthusiast or just looking for a thrilling escape from reality, Space Survival Squad has something for everyone. So come join us on this epic adventure, and let's explore the final frontier together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

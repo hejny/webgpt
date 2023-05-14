@@ -1,8 +1,0 @@
-{
-    "title": "\"Peak Serenity\"",
-    "content": "# Peak Serenity\n\nWelcome to Peak Serenity, a website dedicated to providing you with a peaceful and calming experience. Our snowy mountain peak with a clear blue sky wallpaper serves as the perfect backdrop for your browsing experience.\n\nAt Peak Serenity, we believe that taking a moment to pause and appreciate the beauty of nature can have a positive impact on our mental wellbeing. That's why we've curated a collection of articles, photos, and videos that celebrate the natural world and inspire us to live more mindfully.\n\nWhether you're looking to escape the stresses of everyday life or simply want to immerse yourself in the tranquility of nature, Peak Serenity is the perfect destination for you. So sit back, relax, and let our serene mountain peak transport you to a place of peace and serenity.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A snowy mountain peak with a clear blue sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

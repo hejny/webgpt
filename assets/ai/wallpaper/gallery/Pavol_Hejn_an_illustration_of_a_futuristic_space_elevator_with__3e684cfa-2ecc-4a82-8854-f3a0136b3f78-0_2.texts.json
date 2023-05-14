@@ -1,8 +1,0 @@
-{
-    "title": "\"Elevating Futures\"",
-    "content": "Welcome to Elevating Futures! 🚀\n\nOur website is dedicated to exploring and discussing the latest advancements in space technology, with a particular focus on the development of space elevators. \n\nWe believe that space elevators have the potential to revolutionize the way we access and utilize space, and we are committed to keeping our readers up-to-date on the latest news and breakthroughs in this exciting field.\n\nWhether you're a space enthusiast, a scientist, or simply curious about the future of space travel, Elevating Futures is your go-to source for all things space elevator. Join us on our mission to elevate humanity's future among the stars!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

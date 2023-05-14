@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic AI Adventures\"",
-    "content": "# Galactic AI Adventures\n\nWelcome to Galactic AI Adventures, the ultimate destination for space enthusiasts and adventure seekers! Our website is dedicated to bringing you the most thrilling and immersive space experiences through the power of artificial intelligence.\n\nJoin our team of AInauts as they navigate through treacherous asteroid fields, dodge incoming debris, and battle hostile alien forces. With our cutting-edge technology and state-of-the-art graphics, you'll feel like you're right in the middle of the action.\n\nBut that's not all - we also offer a wide range of educational resources to help you learn more about the science behind space travel and exploration. From interactive simulations to informative articles, we've got everything you need to satisfy your curiosity about the cosmos.\n\nSo what are you waiting for? Strap on your virtual reality headset and get ready for the ride of a lifetime with Galactic AI Adventures!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

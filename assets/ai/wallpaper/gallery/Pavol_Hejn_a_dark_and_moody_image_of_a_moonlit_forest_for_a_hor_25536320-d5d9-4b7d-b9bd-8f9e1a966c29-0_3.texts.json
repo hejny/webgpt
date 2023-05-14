@@ -1,8 +1,0 @@
-{
-    "title": "\"Nightfall Woods\"",
-    "content": "# Nightfall Woods\n\nWelcome to Nightfall Woods, a website dedicated to all things horror and supernatural. Our site features articles, reviews, and discussions on the latest horror movies, TV shows, books, and games. \n\nOur team of writers are passionate about the genre and are always on the lookout for the best and most terrifying content to share with our readers. Whether you're a fan of classic horror or prefer the latest scares, Nightfall Woods has something for everyone.\n\nJoin our community and connect with other horror enthusiasts through our forums and social media channels. Share your own recommendations and experiences, or simply immerse yourself in the spooky atmosphere of our moonlit forest backdrop.\n\nStay up-to-date with the latest news and releases in the horror world, and discover hidden gems that you may have missed. Whether you're looking for a good scare or just enjoy the thrill of the unknown, Nightfall Woods is the perfect destination for all your horror needs.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody image of a moonlit forest for a horror or supernatural website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

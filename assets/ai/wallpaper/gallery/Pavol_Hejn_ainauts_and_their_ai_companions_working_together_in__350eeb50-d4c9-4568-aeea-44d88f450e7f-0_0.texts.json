@@ -1,8 +1,0 @@
-{
-    "title": "AI Space Duo.",
-    "content": "🚀 Welcome to AI Space Duo, the ultimate destination for space enthusiasts and AI lovers! \n\nOur website is dedicated to showcasing the incredible collaboration between AInauts and their AI companions as they work together in a massive, zero-gravity space station. \n\nHere, you'll find fascinating articles, breathtaking photos, and captivating videos that highlight the cutting-edge technology and innovative teamwork that make space exploration possible. \n\nWhether you're a seasoned astronaut or just getting started on your journey into the final frontier, AI Space Duo has something for everyone. So come join us on this incredible adventure and discover the wonders of space like never before! 🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts and their AI companions working together in a massive, zero-gravity space station.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Spaceflight Adventure\"",
-    "content": "# Spaceflight Adventure\n\nWelcome to Spaceflight Adventure, your ultimate destination for all things related to space exploration and interstellar travel. Our website is dedicated to providing you with the latest news, updates, and insights on the world of space travel.\n\nOur team of experts and enthusiasts are passionate about all things space-related, from the latest advancements in rocket technology to the search for extraterrestrial life. We strive to bring you the most accurate and up-to-date information on the latest missions, launches, and discoveries from around the galaxy.\n\nWhether you're a seasoned astronaut or just a casual stargazer, our website has something for everyone. From breathtaking images of distant galaxies to informative articles on the science behind space travel, we aim to inspire and educate our readers about the wonders of the universe.\n\nSo join us on this incredible journey through the cosmos, as we explore the final frontier and push the boundaries of human knowledge and understanding. Welcome aboard, fellow space traveler!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

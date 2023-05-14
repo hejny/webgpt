@@ -1,8 +1,0 @@
-{
-    "title": "\"Cyborg Digital Art\"",
-    "content": "Welcome to our website, where we showcase the beauty of digital art through the lens of cyborgs. Our minimalist wallpaper features a simple graphic of a cyborg's face, set against a background of digital noise and static. \n\nOur website is dedicated to exploring the intersection of humanity and technology, and how these two forces can come together to create something truly unique and beautiful. We believe that the cyborg represents the ultimate fusion of man and machine, and our wallpaper captures this idea perfectly.\n\nWhether you're a fan of science fiction, technology, or just love great design, we invite you to explore our collection of cyborg-inspired artwork. From futuristic landscapes to cutting-edge fashion, our website has something for everyone who appreciates the beauty of the digital world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a cyborg's face, against a background of digital noise and static.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

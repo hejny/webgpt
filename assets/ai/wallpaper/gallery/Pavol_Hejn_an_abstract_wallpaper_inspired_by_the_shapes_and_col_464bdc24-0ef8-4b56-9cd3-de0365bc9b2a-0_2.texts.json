@@ -1,8 +1,0 @@
-{
-    "title": "Quantum Artistry.",
-    "content": "Welcome to Quantum Artistry, a website dedicated to showcasing the beauty and complexity of quantum physics through abstract art. Our collection features bold colors and intricate lines inspired by the shapes and colors found in the quantum world. Each wallpaper is carefully crafted to capture the essence of this fascinating field of science, making it the perfect addition to any desktop or mobile device. Whether you're a physicist, an artist, or simply someone who appreciates the beauty of the universe, our wallpapers are sure to inspire and delight. Browse our collection today and discover the wonders of quantum artistry.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

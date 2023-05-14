@@ -1,8 +1,0 @@
-{
-    "title": "Cosmic Explorer.",
-    "content": "# Cosmic Explorer\n\nWelcome to Cosmic Explorer, your portal to the wonders of space exploration! Our website is dedicated to providing you with the latest news and information on all things related to space travel, astronomy, and the search for extraterrestrial life.\n\nOur team of experts scours the internet to bring you the most up-to-date and accurate information on space missions, discoveries, and breakthroughs. Whether you're a seasoned astronomer or just starting out, we have something for everyone.\n\nExplore our articles, videos, and galleries to learn about the history of space exploration, current missions, and future plans for exploring the cosmos. Join our community of space enthusiasts to share your thoughts and insights on the latest developments in space science.\n\nAt Cosmic Explorer, we believe that the universe is full of mysteries waiting to be uncovered. Join us on this journey of discovery as we explore the final frontier.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

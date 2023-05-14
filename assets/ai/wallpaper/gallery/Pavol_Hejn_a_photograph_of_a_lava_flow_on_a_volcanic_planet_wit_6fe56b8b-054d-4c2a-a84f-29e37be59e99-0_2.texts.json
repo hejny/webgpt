@@ -1,8 +1,0 @@
-{
-    "title": "Volcanic Visions.",
-    "content": "# Volcanic Visions\n\nWelcome to Volcanic Visions, a website dedicated to bringing you the most breathtaking and awe-inspiring images of volcanic planets from across the galaxy. Our collection of wallpapers features stunning photographs that capture the raw power and beauty of these natural wonders.\n\nWhether you're looking for a new desktop background or just want to marvel at the incredible landscapes of other worlds, our selection of high-quality wallpapers is sure to satisfy. From fiery lava flows to towering ash clouds, each image captures a unique moment in the life of these volatile planets.\n\nAt Volcanic Visions, we believe that the universe is full of wonders waiting to be discovered. Join us on a journey through the cosmos and explore the fascinating world of volcanic planets.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

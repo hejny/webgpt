@@ -1,8 +1,0 @@
-{
-    "title": "\"Stellar Creation Hub\"",
-    "content": "Welcome to Stellar Creation Hub! 🚀\n\nOur website is dedicated to exploring the wonders of the universe and the awe-inspiring phenomena that occur within it. From the birth of stars to the formation of galaxies, we aim to provide a platform for space enthusiasts to learn and engage with the latest discoveries in astrophysics.\n\nThrough our articles, videos, and interactive content, we hope to inspire a sense of curiosity and wonder about the cosmos and our place within it. Join us on this journey of discovery as we delve into the mysteries of the universe and uncover the secrets of its creation. ✨",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a nebula, with bright colors and intricate patterns representing the birth of stars.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

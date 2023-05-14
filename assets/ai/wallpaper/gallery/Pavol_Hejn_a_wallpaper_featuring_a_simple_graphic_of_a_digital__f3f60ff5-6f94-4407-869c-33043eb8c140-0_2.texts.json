@@ -1,8 +1,0 @@
-{
-    "title": "\"Countdown Wallpapers\"",
-    "content": "Welcome to Countdown Wallpapers! Our website provides you with a unique and functional wallpaper featuring a digital clock or timer, set against a gradient background. With this wallpaper, you can easily set alarms and countdowns to keep track of important events or deadlines. \n\nOur minimalist design ensures that the clock or timer stands out, making it easy to read at a glance. The gradient background adds a touch of color and style to your desktop or mobile device, making it look both functional and beautiful.\n\nWhether you need a reminder for an upcoming meeting, a deadline for a project, or simply want to keep track of time while working, our Countdown Wallpaper is the perfect solution. Download it today and never miss an important event again!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

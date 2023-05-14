@@ -1,8 +1,0 @@
-{
-    "title": "\"Otherworldly Landscapes\"",
-    "content": "# Otherworldly Landscapes\n\nWelcome to Otherworldly Landscapes, a website dedicated to showcasing the most breathtaking and awe-inspiring landscapes from around the universe. Our collection of photographs will transport you to distant planets, moons, and asteroids, where you can marvel at the natural beauty of the cosmos.\n\nOur mission is to inspire a sense of wonder and curiosity about the universe we live in. We believe that by exploring the wonders of space, we can gain a greater appreciation for our own planet and the delicate balance of life that exists here.\n\nWhether you're a seasoned astronomer or simply someone who appreciates the beauty of nature, we invite you to join us on a journey through the cosmos. Explore our collection of otherworldly landscapes and discover the wonders of the universe for yourself.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

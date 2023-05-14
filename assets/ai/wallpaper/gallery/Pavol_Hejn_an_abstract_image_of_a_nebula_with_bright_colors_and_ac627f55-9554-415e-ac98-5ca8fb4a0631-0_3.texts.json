@@ -1,8 +1,0 @@
-{
-    "title": "Starbirth Gallery.",
-    "content": "Welcome to Starbirth Gallery! Our website is dedicated to showcasing the beauty and wonder of the cosmos through stunning abstract imagery. \n\nOur collection features a variety of vibrant and intricate patterns, each representing the birth of stars in their own unique way. From swirling nebulas to explosive supernovas, our wallpapers capture the awe-inspiring power and majesty of the universe.\n\nWhether you're an astronomy enthusiast or simply appreciate beautiful artwork, our gallery has something for everyone. So why not add a touch of cosmic inspiration to your desktop or mobile device today? Browse our collection and discover the beauty of starbirth for yourself!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a nebula, with bright colors and intricate patterns representing the birth of stars.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

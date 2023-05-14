@@ -1,8 +1,0 @@
-{
-    "title": "\"Geometric Grid Wallpaper\"",
-    "content": "This website is a minimalist's dream. With a repeating pattern of simple geometric shapes arranged in a grid-like structure, the wallpaper creates a calming and organized backdrop for your browsing experience. Whether you're looking to declutter your digital space or simply appreciate the beauty of simplicity, this website provides a refreshing escape from the chaos of everyday life.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of simple geometric shapes, arranged in a grid-like structure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

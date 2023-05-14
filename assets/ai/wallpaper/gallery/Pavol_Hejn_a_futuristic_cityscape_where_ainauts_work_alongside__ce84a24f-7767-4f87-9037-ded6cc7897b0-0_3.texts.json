@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Tech Hub\"",
-    "content": "# Future Tech Hub\n\nWelcome to Future Tech Hub, the ultimate destination for all things related to science and technology. Our website is designed to inspire and inform those who are passionate about pushing the boundaries of what's possible.\n\nAt Future Tech Hub, we bring together the latest news, research, and insights from the world of technology. Our team of experts is dedicated to providing you with the most up-to-date information on topics ranging from artificial intelligence and robotics to space exploration and quantum computing.\n\nWhether you're a student, researcher, or simply someone who loves to stay informed about the latest developments in tech, Future Tech Hub has something for you. Join our community today and be part of the conversation about the future of science and technology.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

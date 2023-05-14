@@ -1,8 +1,0 @@
-{
-    "title": "\"Innovate City\"",
-    "content": "# Innovate City\n\nWelcome to Innovate City, the hub of the latest and greatest in technology and innovation. Our website is dedicated to bringing you the most cutting-edge news, reviews, and insights into the world of tech.\n\nWith a team of expert writers and analysts, we cover everything from the latest gadgets and software releases to breakthroughs in AI and robotics. Our goal is to keep you up-to-date on all the advancements that are shaping our world and changing the way we live and work.\n\nBut we're not just about reporting on the latest tech trends. We also aim to inspire and empower our readers to embrace innovation and explore new possibilities. Whether you're an entrepreneur, a developer, or simply someone who loves technology, Innovate City is the place to be.\n\nSo join us on this exciting journey into the future, where anything is possible and the only limit is your imagination.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic city with holographic advertisements for a tech or innovation website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

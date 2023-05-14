@@ -1,8 +1,0 @@
-{
-    "title": "\"Techy Background Hub\"",
-    "content": "# Techy Background Hub\n\nWelcome to Techy Background Hub, your go-to destination for high-quality technology-inspired wallpapers! Our website features a vast collection of wallpapers that are perfect for anyone who loves all things tech.\n\nOur wallpapers feature a variety of designs, from circuit board components to futuristic cityscapes and everything in between. We understand that everyone has their own unique style, which is why we offer a wide range of color options to choose from.\n\nWhether you're looking to spice up your desktop background or want to give your phone a fresh new look, our wallpapers are the perfect solution. All of our wallpapers are available for free download and are optimized for a variety of screen sizes, so you can be sure that they will look great on any device.\n\nSo why wait? Browse our collection today and find the perfect wallpaper to showcase your love for technology!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A repeating pattern of circuit board components, in shades of black, grey, and neon green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

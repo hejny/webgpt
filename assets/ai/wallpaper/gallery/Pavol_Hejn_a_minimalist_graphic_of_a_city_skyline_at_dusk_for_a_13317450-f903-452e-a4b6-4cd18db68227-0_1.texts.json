@@ -1,8 +1,0 @@
-{
-    "title": "\"Cityscape Homes\"",
-    "content": "# Cityscape Homes\n\nWelcome to Cityscape Homes, your premier destination for all things real estate and architecture. Our website features the latest listings for homes, apartments, and commercial properties in some of the most vibrant cities around the world.\n\nWe believe that finding the perfect home or property should be an enjoyable and stress-free experience. That's why we've designed our website to be user-friendly and easy to navigate. Whether you're a first-time homebuyer or a seasoned investor, you'll find everything you need to make informed decisions about your next real estate purchase.\n\nAt Cityscape Homes, we're passionate about architecture and design. We feature stunning properties with unique and modern architectural styles that will inspire you. Our team of experienced agents is dedicated to helping you find the property of your dreams.\n\nSo what are you waiting for? Browse our listings today and start your journey towards finding your perfect home or investment property.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a city skyline at dusk for a real estate or architecture website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

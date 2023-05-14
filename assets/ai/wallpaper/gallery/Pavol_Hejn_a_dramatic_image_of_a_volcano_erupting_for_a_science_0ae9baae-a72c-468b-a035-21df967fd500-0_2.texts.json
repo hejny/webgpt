@@ -1,8 +1,0 @@
-{
-    "title": "Volcano Insights.",
-    "content": "# Volcano Insights\n\nWelcome to Volcano Insights, your go-to source for all things related to volcanoes and geology! Our website is dedicated to providing you with the latest news, research, and insights into the fascinating world of volcanoes.\n\nOur team of experts includes geologists, scientists, and researchers who are passionate about studying the earth's natural wonders. We aim to share our knowledge and expertise with you through engaging articles, stunning visuals, and informative videos.\n\nWhether you're a student, a professional in the field, or simply someone who is interested in learning more about volcanoes, we have something for everyone. From the basics of volcano formation to the latest volcanic eruptions around the world, we cover it all.\n\nJoin us on this exciting journey of discovery and exploration as we delve deeper into the mysteries of volcanoes and the earth's geological processes. Don't forget to check out our stunning wallpaper featuring a dramatic image of a volcano erupting - it's sure to inspire awe and wonder!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a volcano erupting for a science or geology blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

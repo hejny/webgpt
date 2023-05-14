@@ -1,8 +1,0 @@
-{
-    "title": "\"Digital Device Decor\"",
-    "content": "# Welcome to Digital Device Decor!\n\nOur website is dedicated to providing you with the latest and greatest digital device wallpapers. Our sleek and modern repeating pattern of smartphones, tablets, and laptops will give your device a fresh and contemporary look. \n\nWe understand that personalization is important, which is why we offer a variety of color schemes to choose from. Whether you prefer bold and bright or subtle and subdued, we've got you covered.\n\nOur wallpapers are optimized for all devices, ensuring a seamless and high-quality experience no matter what device you're using. Plus, our easy-to-use download process means you can have your new wallpaper up and running in no time.\n\nSo why settle for a boring default wallpaper when you can showcase your style with Digital Device Decor? Browse our selection today and find the perfect wallpaper to make your device stand out.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
-    }
-}

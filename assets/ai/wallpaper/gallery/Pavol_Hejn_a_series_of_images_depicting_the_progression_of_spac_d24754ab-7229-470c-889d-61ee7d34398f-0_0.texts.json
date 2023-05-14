@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Exploration Progression\"",
-    "content": "# Space Exploration Progression\n\nWelcome to our website showcasing the incredible progression of space exploration. From the early days of rockets and satellites to the modern spacecraft that have taken us to the far reaches of our solar system, we aim to provide a visual journey through the history of space exploration.\n\nOur collection of images captures the excitement and wonder of each milestone in space exploration, from the launch of Sputnik to the first moon landing and beyond. Our goal is to inspire and educate visitors about the incredible achievements of humanity in the pursuit of knowledge and discovery.\n\nWhether you're a space enthusiast or simply curious about the history of space exploration, we hope our website will spark your imagination and encourage you to learn more about the fascinating world of space. So sit back, relax, and enjoy the journey!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A series of images depicting the progression of space exploration, from early rockets to modern spacecraft.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Splendor.",
-    "content": "# Galactic Splendor\n\nGalactic Splendor is a website dedicated to exploring the wonders of the universe. Our mission is to provide a platform for space enthusiasts to come together and share their passion for astronomy, astrophysics, and cosmology.\n\nThrough our curated collection of articles, videos, and podcasts, we aim to educate and inspire our readers about the mysteries of the cosmos. From the birth of stars to the formation of galaxies, we delve into the science behind the awe-inspiring phenomena that make up our universe.\n\nOur community of contributors includes scientists, researchers, and amateur astronomers who are all passionate about sharing their knowledge and insights with others. Whether you're a seasoned stargazer or just starting out on your journey of discovery, Galactic Splendor has something for everyone.\n\nSo come join us as we embark on a journey through the vastness of space. Let's explore the wonders of the universe together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

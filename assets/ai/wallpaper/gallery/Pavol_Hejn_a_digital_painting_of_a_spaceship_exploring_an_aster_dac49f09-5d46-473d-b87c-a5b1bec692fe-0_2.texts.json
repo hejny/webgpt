@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Adventure Hub\"",
-    "content": "# Welcome to Space Adventure Hub!\n\nOur website is dedicated to all things space exploration. We are passionate about the mysteries of the universe and the thrill of venturing into the great unknown.\n\nHere at Space Adventure Hub, we offer a variety of resources for anyone interested in space travel. From news and updates on the latest missions and discoveries, to educational articles and videos that delve into the science behind it all.\n\nBut we're not just about learning - we also love to have fun! Our community of space enthusiasts come together to share their own experiences and insights, as well as participate in challenges and competitions that test their knowledge and skills.\n\nSo whether you're an aspiring astronaut or simply fascinated by the cosmos, join us at Space Adventure Hub and embark on your own journey through the stars.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Pop Robot\"",
-    "content": "# Futuristic Pop Robot\n\nWelcome to our website featuring a pop art-style wallpaper of a futuristic robot or cyborg. Our website is dedicated to showcasing the latest and greatest in science fiction, technology, and pop culture.\n\nOur team of writers and contributors are passionate about all things sci-fi and are committed to bringing you the most interesting and engaging content on the web. From movie and TV reviews to in-depth analysis of the latest tech gadgets, we've got it all covered.\n\nSo whether you're a die-hard fan of classic sci-fi movies or just someone who loves cool gadgets and futuristic technology, you've come to the right place. Explore our site and discover a world of exciting possibilities!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

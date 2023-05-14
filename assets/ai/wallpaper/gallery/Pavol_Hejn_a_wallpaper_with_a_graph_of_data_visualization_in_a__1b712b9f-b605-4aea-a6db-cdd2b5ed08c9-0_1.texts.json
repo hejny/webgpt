@@ -1,8 +1,0 @@
-{
-    "title": "\"GraphWalls\"",
-    "content": "**GraphWalls** is a website that offers a collection of minimalist and modern wallpapers featuring data visualizations in the form of graphs. Our wallpapers are perfect for those who appreciate both aesthetics and functionality. With our carefully curated selection, you can add a touch of sophistication to your desktop or mobile device while staying up-to-date with the latest data trends. Whether you're a data analyst, designer, or simply someone who loves clean and simple designs, GraphWalls has something for everyone. Browse our gallery today and find the perfect wallpaper to elevate your digital workspace.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a graph of data visualization, in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

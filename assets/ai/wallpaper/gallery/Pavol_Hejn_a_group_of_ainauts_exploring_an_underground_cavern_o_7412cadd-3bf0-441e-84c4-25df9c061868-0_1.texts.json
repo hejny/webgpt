@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Cavern Expedition\"",
-    "content": "# Alien Cavern Expedition\n\nWelcome to our website dedicated to the exploration of alien caverns! Join us on an exciting adventure as we explore mysterious underground worlds on distant planets. Our team of AInauts is equipped with the latest technology and knowledge to navigate these uncharted territories.\n\nOur mission is to discover new forms of life, uncover ancient artifacts, and learn about the history of these fascinating planets. We document our findings through stunning photography and detailed reports, which you can find on our website.\n\nFollow along with our journey as we encounter strange creatures, glowing fungi, and otherworldly landscapes. We hope to inspire a sense of wonder and curiosity in our visitors, and encourage them to learn more about the vast universe beyond our own planet.\n\nJoin us on this thrilling expedition into the unknown!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

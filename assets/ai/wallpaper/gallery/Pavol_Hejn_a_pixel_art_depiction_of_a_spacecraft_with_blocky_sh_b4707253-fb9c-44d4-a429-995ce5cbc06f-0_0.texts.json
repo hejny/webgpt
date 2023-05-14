@@ -1,8 +1,0 @@
-{
-    "title": "\"Retro Space Adventure\"",
-    "content": "# Retro Space Adventure\n\nWelcome to Retro Space Adventure, a website dedicated to bringing back the nostalgia of classic space exploration games. Our website is designed to take you on a journey through the stars, with pixel art depictions of spacecraft and planets that transport you back to the golden age of gaming.\n\nWith our unique blend of retro design and modern technology, we offer an immersive experience that will have you feeling like you're piloting your own spacecraft through the galaxy. Whether you're a seasoned gamer or new to the world of retro gaming, Retro Space Adventure has something for everyone.\n\nExplore our site to discover a range of games, articles, and resources that celebrate the joy of classic gaming. From reviews of classic titles to in-depth guides on how to get the most out of your favorite games, we've got everything you need to relive the glory days of gaming.\n\nSo come join us on a journey through the stars, and experience the thrill of retro space adventure like never before!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Forest Morn\"",
-    "content": "# Misty Forest Morn\n\nWelcome to Misty Forest Morn, a nature and wildlife blog that explores the beauty and wonder of the natural world. Our website is dedicated to sharing stunning images and stories of the wilderness, from misty forests at dawn to sweeping landscapes and majestic creatures.\n\nJoin us on a journey through some of the most breathtaking places on earth, as we delve into the mysteries of the natural world and discover the hidden wonders that lie just beyond our doorstep. Whether you're an avid adventurer or simply appreciate the beauty of nature, Misty Forest Morn has something for everyone.\n\nExplore our collection of articles, photographs, and videos, all carefully curated to showcase the best of nature and wildlife. From informative guides on how to explore the great outdoors to inspiring stories of conservation and environmentalism, our content is designed to inspire, educate, and entertain.\n\nSo why wait? Come explore the wild with us and experience the magic of Misty Forest Morn.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy image of a forest at dawn with a misty atmosphere for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

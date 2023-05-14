@@ -1,8 +1,0 @@
-{
-    "title": "\"Home Hearth Decor\"",
-    "content": "# Home Hearth Decor\n\nWelcome to Home Hearth Decor, your go-to source for cozy and inviting home decor inspiration. Our website features a curated collection of ideas and tips for creating a warm and welcoming atmosphere in your living space.\n\nAt Home Hearth Decor, we believe that a well-decorated home should be both stylish and comfortable. That's why we focus on showcasing decor elements that not only look great but also add a sense of warmth and coziness to any room.\n\nWhether you're looking to spruce up your living room, bedroom, or any other area of your home, our website has everything you need to create a space that feels like a true sanctuary. From rustic accents to soft textiles, we've got you covered.\n\nSo why wait? Browse our site today and discover the many ways you can transform your home into a cozy retreat with the help of Home Hearth Decor.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A cozy image of a fireplace with logs and flames for a home decor or lifestyle blog.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

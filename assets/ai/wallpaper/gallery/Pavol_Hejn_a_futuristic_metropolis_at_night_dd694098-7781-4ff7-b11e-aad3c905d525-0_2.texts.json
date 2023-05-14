@@ -1,8 +1,0 @@
-{
-    "title": "\"Night Cityscape Hub\"",
-    "content": "# Night Cityscape Hub\n\nWelcome to Night Cityscape Hub, your go-to destination for all things related to futuristic metropolises at night. Our website is dedicated to showcasing stunning visuals of urban landscapes that come to life after dark.\n\nWhether you're a fan of science fiction, architecture, or photography, our collection of high-quality wallpapers will transport you to a world of neon lights, towering skyscrapers, and bustling streets. \n\nOur team of expert curators scours the web to bring you the best images of futuristic cities from around the globe. From Tokyo to New York, from Dubai to Shanghai, we've got you covered with a wide variety of cityscapes that capture the essence of modern urban living.\n\nSo why wait? Browse our collection today and find the perfect wallpaper to transform your desktop, laptop, or mobile device into a stunning window into the future.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic metropolis at night\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

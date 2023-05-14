@@ -1,8 +1,0 @@
-{
-    "title": "\"Fiery Food Flair\"",
-    "content": "Welcome to Fiery Food Flair! 🔥🍴\n\nOur website is dedicated to all things food, from delicious recipes to cooking tips and techniques. We believe that cooking should be a fun and creative process, and we're here to help you add some flair to your meals.\n\nWhether you're a seasoned chef or a beginner in the kitchen, our easy-to-follow recipes and step-by-step guides will help you create mouth-watering dishes that are sure to impress. From classic comfort foods to exotic international cuisine, we've got you covered.\n\nBut we're not just about recipes - we also love to explore the cultural and social aspects of food. We'll take you on a journey around the world to discover new flavors and traditions, and share stories and insights about the role of food in different cultures.\n\nSo come join us on this culinary adventure, and let's add some fiery flair to your food! 🔥👨‍🍳👩‍🍳",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of swirling smoke and fire for a cooking or food blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

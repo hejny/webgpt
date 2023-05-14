@@ -1,8 +1,0 @@
-{
-    "title": "\"Mandel Monochrome Patterns\"",
-    "content": "Welcome to our website! Our site is a celebration of minimalism and abstract art, featuring a repeating pattern of monochromatic shapes inspired by the Mandelbrot set. Our wallpaper design creates a calming and sophisticated atmosphere, perfect for any space that needs a touch of elegance. With its intricate yet understated design, this wallpaper is sure to impress anyone who appreciates the beauty of simplicity. Whether you're looking to add a unique touch to your home or office, or simply want to browse our collection of stunning wallpapers, we invite you to explore our site and discover the beauty of Mandel Monochrome Patterns.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes inspired by the Mandelbrot set, in a monochromatic color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

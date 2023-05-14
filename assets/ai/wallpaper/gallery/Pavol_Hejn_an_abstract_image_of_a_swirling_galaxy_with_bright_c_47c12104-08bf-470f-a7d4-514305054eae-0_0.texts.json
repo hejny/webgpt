@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Art Hub.",
-    "content": "Welcome to Galactic Art Hub! Our website is a vibrant platform for artists and art enthusiasts alike. We showcase a diverse range of artwork, from traditional paintings to digital creations. Our community is passionate about exploring the beauty of the universe and beyond, and our swirling galaxy wallpaper reflects that spirit of exploration. Join us in celebrating the wonder of art and the cosmos! 🌌✨",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a swirling galaxy, with bright colors and intricate patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

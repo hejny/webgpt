@@ -1,8 +1,0 @@
-{
-    "title": "\"Dawn Cityscape\"",
-    "content": "# Dawn Cityscape\n\nWelcome to Dawn Cityscape, a business and marketing website featuring a minimalist graphic of a city skyline at dawn. Our website is designed to provide you with the latest news, trends, and insights in the world of business and marketing.\n\nAt Dawn Cityscape, we believe that simplicity is key. Our website's clean and uncluttered design reflects our commitment to delivering clear and concise information to our readers. Whether you're a seasoned entrepreneur or just starting out in the world of business, our website has something for everyone.\n\nFrom marketing tips and strategies to industry news and analysis, we cover it all. Our team of experienced writers and experts are dedicated to providing you with the most up-to-date and relevant information in the world of business and marketing.\n\nSo why wait? Browse our website today and discover the power of simplicity in business and marketing.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a city skyline at dawn for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

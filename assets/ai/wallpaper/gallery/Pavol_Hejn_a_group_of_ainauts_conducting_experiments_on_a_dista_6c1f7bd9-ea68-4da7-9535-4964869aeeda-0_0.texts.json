@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Research Station\"",
-    "content": "# Galactic Research Station\n\nWelcome to the Galactic Research Station, a hub for cutting-edge research and experimentation in deep space. Our team of AInauts are dedicated to pushing the boundaries of science and technology, conducting experiments on distant moons, asteroids, and even black holes.\n\nAt the Galactic Research Station, we believe that the mysteries of the universe are waiting to be unlocked, and we're committed to uncovering them through rigorous scientific inquiry. Whether you're a seasoned researcher or a curious amateur, our website offers a wealth of resources and information to help you explore the cosmos and stay up-to-date on the latest discoveries.\n\nJoin us on our journey to unravel the secrets of the universe, and discover the wonders of deep space like never before.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

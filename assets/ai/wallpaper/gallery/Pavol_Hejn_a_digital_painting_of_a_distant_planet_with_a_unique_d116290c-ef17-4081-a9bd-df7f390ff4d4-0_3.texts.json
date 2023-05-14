@@ -1,8 +1,0 @@
-{
-    "title": "\"Otherworldly Landscapes\"",
-    "content": "# Otherworldly Landscapes\n\nWelcome to Otherworldly Landscapes, a website dedicated to showcasing the most stunning and unique landscapes from around the universe. Our collection features digital paintings of planets, moons, and other celestial bodies that are sure to transport you to another world.\n\nOur team of artists and designers work tirelessly to create these breathtaking images, each one capturing the essence and beauty of a different extraterrestrial environment. From the swirling clouds of gas giants to the jagged peaks of alien mountains, our wallpapers are sure to inspire awe and wonder.\n\nWhether you're a space enthusiast, an artist, or simply someone who appreciates the beauty of nature, Otherworldly Landscapes has something for everyone. So why not take a journey to the stars and explore the incredible vistas of the cosmos with us?",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a distant planet, with a unique atmosphere and unusual terrain.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

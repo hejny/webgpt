@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Forest View\"",
-    "content": "# Misty Forest View\n\nWelcome to Misty Forest View, a website dedicated to showcasing the beauty of nature through stunning photography. Our website features a collection of high-quality wallpapers that capture the essence of the great outdoors, including this misty forest view.\n\nAt Misty Forest View, we believe in the power of nature to inspire and uplift us. Our wallpapers are carefully selected to showcase the majesty of the natural world, from towering mountains to tranquil forests. Whether you're looking for a calming background for your desktop or a breathtaking image to share with friends, our collection has something for everyone.\n\nWe update our collection regularly, so be sure to check back often for new additions. And if you have a favorite nature photo that you'd like to see featured on our site, don't hesitate to get in touch. We're always on the lookout for new and inspiring images to share with our community.\n\nThank you for visiting Misty Forest View. We hope our collection brings a little bit of the beauty of nature into your daily life.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

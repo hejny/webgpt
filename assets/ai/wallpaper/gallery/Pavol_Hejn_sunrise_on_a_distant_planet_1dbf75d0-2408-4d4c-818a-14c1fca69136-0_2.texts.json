@@ -1,8 +1,0 @@
-{
-    "title": "\"Distant Sunrise\"",
-    "content": "Welcome to our website, where you can experience the beauty of a distant sunrise on an alien planet. Our website features stunning wallpapers that will transport you to another world, allowing you to escape the stresses of everyday life and immerse yourself in a breathtaking landscape.\n\nOur collection of wallpapers showcases a variety of different planets and sunrises, each one more awe-inspiring than the last. Whether you're looking for a new desktop background or just want to admire some beautiful artwork, our website has something for everyone.\n\nSo why not take a moment to explore our collection and discover your new favorite wallpaper? With new additions regularly added to our selection, there's always something new to discover and enjoy.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"Sunrise on a distant planet\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

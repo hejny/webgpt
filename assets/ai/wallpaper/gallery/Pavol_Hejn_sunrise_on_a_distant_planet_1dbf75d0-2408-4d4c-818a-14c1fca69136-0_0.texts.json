@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Dawn\"",
-    "content": "Welcome to Alien Dawn, the ultimate destination for sci-fi enthusiasts! Our website is dedicated to bringing you the latest news and updates from the world of science fiction, including movies, TV shows, books, and more.\n\nAt Alien Dawn, we believe that science fiction has the power to inspire and captivate audiences like no other genre. Whether you're a die-hard fan or just getting started, our site is the perfect place to discover new stories, connect with other fans, and explore the far reaches of the universe.\n\nFrom classic space operas to cutting-edge cyberpunk, we cover it all. Our team of writers and editors are passionate about science fiction, and we're always on the lookout for the latest and greatest in the genre.\n\nSo why not join us on our journey to the stars? With Alien Dawn, you'll never be far from the action.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"Sunrise on a distant planet\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

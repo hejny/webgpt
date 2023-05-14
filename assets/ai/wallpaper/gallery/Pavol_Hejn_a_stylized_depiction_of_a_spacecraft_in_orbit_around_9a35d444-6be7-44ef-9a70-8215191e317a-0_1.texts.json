@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Explorer Hub\"",
-    "content": "# Galactic Explorer Hub\n\nWelcome to the Galactic Explorer Hub, your one-stop destination for all things related to space exploration and discovery! Our website is dedicated to providing you with the latest news, updates, and insights from the world of astronomy and space science.\n\nWhether you're an amateur stargazer or a seasoned astronaut, our website has something for everyone. From in-depth articles and expert analysis to stunning visuals and multimedia content, we strive to bring you the best that the universe has to offer.\n\nAt Galactic Explorer Hub, we believe that the exploration of space is one of the most important endeavors of our time. By sharing knowledge and fostering curiosity, we hope to inspire the next generation of scientists and explorers to push the boundaries of what we know about the cosmos.\n\nSo come join us on this journey of discovery, as we explore the mysteries of the universe and unlock its secrets together.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

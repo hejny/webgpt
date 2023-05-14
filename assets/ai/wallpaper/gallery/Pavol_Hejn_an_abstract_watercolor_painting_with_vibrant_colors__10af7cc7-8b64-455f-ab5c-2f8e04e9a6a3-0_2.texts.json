@@ -1,8 +1,0 @@
-{
-    "title": "Colorful Creatives Hub.",
-    "content": "**Welcome to Colorful Creatives Hub!**\n\nOur website is a vibrant and inspiring space for artists, designers, and creatives of all kinds. We believe that creativity is the lifeblood of innovation, and we're passionate about fostering a community where ideas can flourish.\n\nWhether you're looking for inspiration, tips and tricks, or just a place to connect with like-minded individuals, you've come to the right place. Our blog features articles on everything from the latest design trends to the creative process itself, and our forums are a great place to share your own work and get feedback from others.\n\nSo why not join us? Whether you're an experienced artist or just starting out, there's always something new to learn and discover at Colorful Creatives Hub.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract watercolor painting with vibrant colors for an art or design blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

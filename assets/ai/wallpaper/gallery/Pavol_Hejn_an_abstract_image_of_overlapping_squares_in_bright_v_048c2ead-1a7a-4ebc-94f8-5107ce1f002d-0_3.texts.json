@@ -1,8 +1,0 @@
-{
-    "title": "\"Colorful Business Boost\"",
-    "content": "**Welcome to Colorful Business Boost!**\n\nOur website is designed to help businesses and marketers stand out with bold, vibrant colors. We believe that a strong visual identity can make all the difference in attracting and retaining customers.\n\nWith our abstract image of overlapping squares in bright, eye-catching colors, your website or marketing materials will immediately grab attention and convey a sense of energy and creativity.\n\nWhether you're looking to revamp your website, create engaging social media posts, or design eye-catching advertisements, our colorful wallpaper is the perfect starting point for any project.\n\nAt Colorful Business Boost, we're passionate about helping businesses succeed through visually stunning design. Let us help you take your branding to the next level with our dynamic and exciting wallpaper.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping squares in bright, vibrant colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

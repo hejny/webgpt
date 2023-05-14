@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Ride\"",
-    "content": "Welcome to our website, where we showcase a sleek and futuristic vehicle that will take you on a ride through the stars. Our website is dedicated to providing you with high-quality wallpapers that are perfect for your desktop or mobile device. With its metallic textures and dark, moody color scheme, this wallpaper is sure to add a touch of sophistication to any screen. Whether you're a fan of science fiction or just appreciate good design, our website has something for everyone. So why wait? Download our wallpaper today and take your device on a journey to the future!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Nebula Vista.",
-    "content": "# Welcome to Nebula Vista!\n\nNebula Vista is a website dedicated to bringing the beauty of the universe to your digital screens. Our main attraction is a stunning photograph of a nebula, featuring intricate details and bright colors that showcase the awe-inspiring wonders of space.\n\nBut Nebula Vista is more than just a wallpaper site. We strive to provide a holistic experience for our users, offering a variety of resources and content related to astronomy and space exploration. Whether you're a seasoned stargazer or simply curious about the cosmos, we have something for you.\n\nExplore our blog for articles on the latest discoveries in astrophysics, or check out our gallery of space-themed artwork from talented artists around the world. And of course, don't forget to download our beautiful nebula wallpaper to add a touch of cosmic inspiration to your desktop or mobile device.\n\nAt Nebula Vista, we believe that the universe is a source of endless wonder and inspiration. Join us on our mission to share that wonder with the world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

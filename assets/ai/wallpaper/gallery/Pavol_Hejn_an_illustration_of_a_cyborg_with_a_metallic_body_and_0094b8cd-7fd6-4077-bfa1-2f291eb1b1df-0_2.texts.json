@@ -1,8 +1,0 @@
-{
-    "title": "Cyborg Central.",
-    "content": "Welcome to Cyborg Central! 🤖\n\nOur website is dedicated to all things cyborg-related. Here, you'll find the latest news and updates on advancements in cyborg technology, as well as discussions and debates on the ethical implications of merging man and machine.\n\nWhether you're a cyborg enthusiast or simply curious about the future of humanity, we invite you to join our community and engage in thoughtful conversations with like-minded individuals.\n\nSo come explore the world of cyborgs with us, and discover what the future has in store for humanity!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a cyborg with a metallic body and glowing eyes\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

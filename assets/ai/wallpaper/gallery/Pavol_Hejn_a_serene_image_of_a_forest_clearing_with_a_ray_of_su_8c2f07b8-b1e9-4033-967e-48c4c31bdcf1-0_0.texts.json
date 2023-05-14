@@ -1,8 +1,0 @@
-{
-    "title": "\"Mindful Forest Haven\"",
-    "content": "# Mindful Forest Haven\n\nWelcome to Mindful Forest Haven, a serene online space dedicated to promoting mindfulness and spiritual well-being. Our website is designed to provide you with the tools and resources you need to cultivate a more peaceful and fulfilling life.\n\nAt Mindful Forest Haven, we believe that connecting with nature is an essential part of achieving inner peace and balance. That's why we've chosen a beautiful forest clearing as the backdrop for our site. The image of the sun shining through the trees serves as a reminder to slow down, breathe deeply, and appreciate the beauty of the world around us.\n\nWhether you're looking for guided meditations, mindfulness exercises, or simply a place to connect with like-minded individuals, you'll find it all here at Mindful Forest Haven. Our community is open to everyone, regardless of your level of experience or background.\n\nSo take a deep breath, relax, and explore all that Mindful Forest Haven has to offer. We're here to support you on your journey towards greater peace and happiness.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene image of a forest clearing with a ray of sunlight for a spiritual or mindfulness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

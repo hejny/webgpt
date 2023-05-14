@@ -1,8 +1,0 @@
-{
-    "title": "\"Task Master Wallpapers\"",
-    "content": "Task Master Wallpapers is a website that provides a simple and efficient way to keep track of your daily tasks. Our digital calendar and to-do list wallpaper allows you to easily jot down notes and reminders throughout the day, so you never forget an important task again. With our minimalist design, you can stay focused on what's important without any unnecessary distractions. Choose from a variety of colors and styles to customize your desktop and stay organized in style. Upgrade your productivity game with Task Master Wallpapers today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

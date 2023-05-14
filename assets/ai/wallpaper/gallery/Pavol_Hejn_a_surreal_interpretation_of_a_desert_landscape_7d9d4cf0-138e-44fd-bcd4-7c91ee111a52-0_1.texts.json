@@ -1,8 +1,0 @@
-{
-    "title": "Dreamy Desert Visions.",
-    "content": "# Dreamy Desert Visions\n\nWelcome to Dreamy Desert Visions, a website dedicated to showcasing surreal interpretations of desert landscapes. Our collection of wallpapers features stunning visuals that will transport you to another world.\n\nOur team of talented artists and designers have created unique pieces that capture the essence of the desert in a dreamlike way. From towering sand dunes to vast expanses of rocky terrain, our wallpapers will inspire your imagination and add a touch of magic to your desktop or mobile device.\n\nWhether you're a nature lover, an art enthusiast, or simply looking for a new wallpaper to brighten up your screen, you'll find something to love on Dreamy Desert Visions. Browse our collection today and discover the beauty of the desert like never before.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal interpretation of a desert landscape\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

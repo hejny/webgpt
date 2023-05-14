@@ -1,8 +1,0 @@
-{
-    "title": "\"Transcendence Portal\"",
-    "content": "# Transcendence Portal\n\nWelcome to Transcendence Portal, a website dedicated to exploring spirituality and personal growth. Our mission is to provide a space for individuals to connect with their inner selves and discover new ways of expanding their consciousness.\n\nThrough our articles, videos, and community forums, we aim to inspire and support those on their spiritual journey. Whether you are seeking guidance on meditation, mindfulness, or self-discovery, we offer a wealth of resources to help you navigate your path.\n\nJoin us on this transformative journey and discover the infinite possibilities that await you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating in space for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

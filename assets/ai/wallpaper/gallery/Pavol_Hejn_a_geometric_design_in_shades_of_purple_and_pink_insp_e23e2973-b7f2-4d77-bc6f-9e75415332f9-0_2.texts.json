@@ -1,8 +1,0 @@
-{
-    "title": "Quantum Geometrics.",
-    "content": "# Quantum Geometrics\n\nWelcome to Quantum Geometrics, a website dedicated to exploring the intersection of quantum computing and geometric design. Our mission is to showcase the beauty and complexity of quantum computing through visually stunning geometric designs.\n\nOur website features a curated collection of wallpapers inspired by the shapes and patterns found in quantum computing. Each wallpaper is carefully crafted to highlight the intricate nature of quantum systems while also providing a visually pleasing backdrop for your desktop or mobile device.\n\nIn addition to our wallpaper collection, we also offer articles and resources on quantum computing and its applications in various fields. Whether you're a quantum enthusiast or simply appreciate beautiful design, we hope you'll find something to enjoy on Quantum Geometrics.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A geometric design in shades of purple and pink, inspired by the shape of a quantum computer\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

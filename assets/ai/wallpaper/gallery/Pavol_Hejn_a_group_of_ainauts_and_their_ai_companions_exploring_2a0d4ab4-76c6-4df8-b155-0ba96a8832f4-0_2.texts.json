@@ -1,8 +1,0 @@
-{
-    "title": "\"Space AI Exploration\"",
-    "content": "# Space AI Exploration\n\nWelcome to Space AI Exploration, a website dedicated to the exploration of abandoned spacecrafts with the help of artificial intelligence. Our team of AInauts and their trusty AI companions travel through the depths of space to uncover the mysteries left behind by previous civilizations.\n\nOur website features articles, images, and videos of our expeditions, as well as interviews with experts in the fields of space exploration and artificial intelligence. Join us on our journey to discover the secrets of the universe and the limitless possibilities of AI technology.\n\nStay up-to-date with our latest discoveries by subscribing to our newsletter and following us on social media. We hope you enjoy your visit to Space AI Exploration!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

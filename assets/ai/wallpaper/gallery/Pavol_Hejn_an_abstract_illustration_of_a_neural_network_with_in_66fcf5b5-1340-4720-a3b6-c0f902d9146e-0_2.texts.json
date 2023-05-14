@@ -1,8 +1,0 @@
-{
-    "title": "\"Neurotech Hub\"",
-    "content": "Welcome to Neurotech Hub! 🧠💻\n\nOur website is dedicated to exploring the latest developments in the field of neural networks and artificial intelligence. We provide a platform for researchers, engineers, and enthusiasts to connect and share their knowledge and ideas.\n\nAt Neurotech Hub, you'll find a wealth of resources on topics such as deep learning, computer vision, natural language processing, and more. Our articles and tutorials are designed to be accessible to everyone, from beginners to experts.\n\nWe also offer a community forum where you can ask questions, share your projects, and collaborate with others. Whether you're looking to stay up-to-date on the latest research or dive deeper into the world of AI, Neurotech Hub has something for you.\n\nJoin us today and become a part of the Neurotech community!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract illustration of a neural network, with intricate lines and a dark and technological color palette.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

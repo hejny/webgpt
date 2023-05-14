@@ -1,8 +1,0 @@
-{
-    "title": "\"Enchanted Ocean Dreams\"",
-    "content": "# Enchanted Ocean Dreams\n\nWelcome to Enchanted Ocean Dreams, a website dedicated to exploring the wonders of the underwater world. Our site features articles, photos, and videos that showcase the beauty and magic of the ocean.\n\nDive into our collection of content and discover fascinating creatures, breathtaking seascapes, and intriguing stories from beneath the waves. Whether you're an experienced scuba diver or simply have a love for the ocean, our site offers something for everyone.\n\nJoin us on a journey through the depths of the sea and let Enchanted Ocean Dreams inspire your sense of wonder and curiosity about this enchanting world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A magical underwater world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

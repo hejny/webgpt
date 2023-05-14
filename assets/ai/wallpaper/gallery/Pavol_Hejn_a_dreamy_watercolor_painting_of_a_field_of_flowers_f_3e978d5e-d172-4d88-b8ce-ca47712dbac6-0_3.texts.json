@@ -1,8 +1,0 @@
-{
-    "title": "\"Floral Event Planner\"",
-    "content": "# Floral Event Planner\n\nWelcome to Floral Event Planner, your one-stop-shop for all your event planning needs. Our website features a dreamy watercolor painting of a field of flowers that perfectly captures the essence of our services.\n\nAt Floral Event Planner, we specialize in creating beautiful and memorable events that are tailored to your unique style and preferences. Whether you're planning a wedding, corporate event, or private party, our team of experienced planners will work with you every step of the way to bring your vision to life.\n\nFrom selecting the perfect venue to choosing the right floral arrangements and decor, we take care of every detail so you can sit back, relax, and enjoy your special day. With Floral Event Planner, you can trust that your event will be one-of-a-kind and unforgettable.\n\nContact us today to schedule a consultation and let us help you create the event of your dreams.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy watercolor painting of a field of flowers for a wedding or event planning website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

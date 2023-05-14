@@ -1,8 +1,0 @@
-{
-    "title": "\"Imagination Pond\"",
-    "content": "# Imagination Pond\n\nWelcome to Imagination Pond, a website dedicated to fostering creativity and imagination. Our goal is to inspire and encourage individuals to tap into their inner creativity and explore the limitless possibilities of their imagination.\n\nThrough our articles, resources, and community, we aim to provide a platform for individuals to express themselves and share their unique perspectives with the world. Whether you are an artist, writer, musician, or simply someone who wants to explore their creative side, Imagination Pond is the perfect place for you.\n\nJoin us on this journey as we dive into the depths of our imagination and discover new and exciting ways to express ourselves. Let's make the impossible possible and turn our wildest dreams into reality.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person standing on a giant lily pad in a pond for a creativity or imagination website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

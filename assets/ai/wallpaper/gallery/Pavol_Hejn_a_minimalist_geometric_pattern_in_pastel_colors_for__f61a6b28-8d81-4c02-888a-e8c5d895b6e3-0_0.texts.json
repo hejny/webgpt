@@ -1,8 +1,0 @@
-{
-    "title": "\"Pastel Chic\"",
-    "content": "# Pastel Chic\n\nWelcome to Pastel Chic, the ultimate destination for fashion and beauty enthusiasts. Our website is designed with a minimalist approach, showcasing the latest trends in the industry through a beautiful pastel geometric pattern.\n\nExplore our collection of fashion and beauty products carefully curated by our team of experts. From clothing to accessories, skincare to makeup, we have everything you need to elevate your style and enhance your beauty routine.\n\nStay up-to-date with the latest news and tips from our blog, featuring articles on fashion trends, beauty hacks, and lifestyle advice. Connect with like-minded individuals through our community forum and share your thoughts and ideas.\n\nAt Pastel Chic, we believe that fashion and beauty should be accessible to everyone. That's why we offer a wide range of products at affordable prices without compromising on quality. Shop with us today and experience the chic and elegant world of Pastel Chic.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist geometric pattern in pastel colors for a fashion or beauty website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Clock Gradient Wallpapers\"",
-    "content": "Looking for a minimalist and functional wallpaper for your desktop or mobile device? Look no further than Clock Gradient Wallpapers! Our selection of wallpapers feature a sleek graphic of a digital clock or timer, set against a gradient background that adds a touch of color to your screen. With space for setting alarms and countdowns, our wallpapers are not only stylish but practical too. Choose from a variety of gradient colors to match your personal style and give your device a fresh new look. Download our Clock Gradient Wallpapers today and stay on time in style! ⏰🎨",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns, set against a gradient background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Beyond Earthly Limits\"",
-    "content": "# Beyond Earthly Limits\n\nWelcome to Beyond Earthly Limits, a website dedicated to spirituality and personal growth. Our mission is to help you discover your inner self and reach new heights in your personal development journey.\n\nThrough our articles, videos, and community forum, we offer insights and guidance on various topics such as meditation, mindfulness, self-awareness, and more. Our content is designed to inspire, motivate, and empower you to live a more meaningful and fulfilling life.\n\nWhether you're just starting out on your spiritual journey or you're a seasoned practitioner, our website has something for everyone. Join our community today and embark on a journey of self-discovery and transformation. Together, let's go beyond earthly limits and unlock our true potential.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating in space for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

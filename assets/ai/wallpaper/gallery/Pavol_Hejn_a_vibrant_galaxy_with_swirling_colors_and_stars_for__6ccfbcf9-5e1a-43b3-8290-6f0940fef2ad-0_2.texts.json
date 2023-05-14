@@ -1,8 +1,0 @@
-{
-    "title": "\"Stellar Spectrum\"",
-    "content": "# Stellar Spectrum\n\nWelcome to Stellar Spectrum, your go-to source for the latest news and insights on all things related to astronomy and space science. Our website is dedicated to providing you with up-to-date information about the universe we live in, from the latest discoveries and breakthroughs to the most fascinating phenomena and mysteries.\n\nAt Stellar Spectrum, we believe that everyone should have access to the wonders of the cosmos, which is why we strive to make our content both informative and accessible. Whether you're a seasoned astronomer or simply curious about the universe, our articles, videos, and images are designed to engage and inspire.\n\nSo why wait? Join us on a journey through the stars and discover the beauty and complexity of the universe like never before.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vibrant galaxy with swirling colors and stars for a science or astronomy blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

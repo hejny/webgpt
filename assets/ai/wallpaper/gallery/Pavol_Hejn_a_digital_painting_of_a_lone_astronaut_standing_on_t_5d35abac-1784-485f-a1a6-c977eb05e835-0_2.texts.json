@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Explorer's Hub\"",
-    "content": "# Welcome to Space Explorer's Hub!\n\nOur website is dedicated to all things space exploration. From the latest news on NASA missions to interviews with astronauts, we aim to bring you the most fascinating and up-to-date information about the cosmos.\n\nBut we're not just about facts and figures - we also want to inspire your sense of wonder and awe for the universe. That's why we've chosen this stunning digital painting of an astronaut as our main wallpaper. It captures the essence of what it means to explore the unknown, to push the boundaries of human knowledge and experience.\n\nSo come join us on this journey of discovery. Whether you're a seasoned space enthusiast or just starting to look up at the stars, there's something here for everyone. Let's explore the final frontier together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

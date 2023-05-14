@@ -1,8 +1,0 @@
-{
-    "title": "\"Moonlit Mountains\"",
-    "content": "# Moonlit Mountains\n\nWelcome to Moonlit Mountains, your source for breathtaking nature wallpapers. Our collection features stunning landscapes, from majestic mountain ranges to serene lakes and everything in between.\n\nWe believe that nature has a calming effect on the mind and can help us feel more connected to the world around us. That's why we've curated a selection of high-quality wallpapers that showcase the beauty of our planet.\n\nAll of our wallpapers are free to download and use for personal use. Whether you're looking to spruce up your desktop background or find inspiration for your next adventure, Moonlit Mountains has something for everyone.\n\nSo sit back, relax, and let the beauty of nature wash over you with our stunning wallpapers.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

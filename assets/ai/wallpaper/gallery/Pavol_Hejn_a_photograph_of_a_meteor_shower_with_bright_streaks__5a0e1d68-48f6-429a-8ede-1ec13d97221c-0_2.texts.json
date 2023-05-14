@@ -1,8 +1,0 @@
-{
-    "title": "\"Starry Nightlife\"",
-    "content": "# Welcome to Starry Nightlife\n\nStarry Nightlife is a website dedicated to exploring the beauty of the night sky. Our goal is to inspire and educate people about astronomy, astrophotography, and stargazing.\n\nWe believe that the night sky is a fascinating and awe-inspiring subject that can captivate anyone, regardless of their background or experience level. Whether you're an experienced astronomer or a casual stargazer, there's always something new to discover in the heavens above.\n\nOur website features a collection of articles, tutorials, and resources that cover a wide range of topics related to astronomy and stargazing. From tips on how to get started with astrophotography to guides on the best places to view meteor showers, we've got you covered.\n\nSo come join us on a journey through the stars. Let's explore the wonders of the universe together and discover the magic of the night sky.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a meteor shower, with bright streaks of light crossing the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

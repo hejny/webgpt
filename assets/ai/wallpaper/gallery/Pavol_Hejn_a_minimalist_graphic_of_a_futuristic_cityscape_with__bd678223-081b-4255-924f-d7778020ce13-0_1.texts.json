@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Metropolis\"",
-    "content": "# Neon Metropolis\n\nWelcome to Neon Metropolis, a website dedicated to exploring the intersection of technology and urban life. Our minimalist graphic of a futuristic cityscape sets the tone for our content, which focuses on the latest innovations in urban design, architecture, and infrastructure.\n\nThrough our articles and features, we aim to inspire and inform our readers about the possibilities of urban living in the 21st century. From smart cities to sustainable transportation, we cover a wide range of topics that are shaping the future of our cities.\n\nWhether you're an urban planner, architect, or simply interested in the future of our cities, Neon Metropolis is the place for you. Join us as we explore the cutting edge of urban innovation and design.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Buzz Wall\"",
-    "content": "# AI Buzz Wall\n\nAI Buzz Wall is a website that brings you the latest news and updates on artificial intelligence (AI) and related technologies. Our minimalist design features an eye-catching wallpaper with various AI-related buzzwords in different fonts and colors, creating a visually striking background for our content.\n\nWhether you're a tech enthusiast, researcher, or just curious about the latest developments in AI, AI Buzz Wall has got you covered. We cover a wide range of topics, including machine learning, natural language processing, robotics, and more. Our articles are written by experts in the field and provide insightful analysis and commentary on the latest trends and breakthroughs in AI.\n\nIn addition to our articles, we also feature interviews with leading AI researchers and entrepreneurs, as well as reviews of the latest AI products and services. With AI Buzz Wall, you'll stay up-to-date on all things AI and be at the forefront of this exciting and rapidly evolving field.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist design featuring AI-related buzzwords in different fonts and colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

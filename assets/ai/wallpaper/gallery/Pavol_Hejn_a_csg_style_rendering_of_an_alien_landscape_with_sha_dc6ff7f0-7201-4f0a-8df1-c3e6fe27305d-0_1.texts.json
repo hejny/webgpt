@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Landscapes\"",
-    "content": "# Futuristic Landscapes\n\nWelcome to Futuristic Landscapes, your one-stop-shop for all things futuristic and otherworldly. Our website is dedicated to showcasing the most stunning and awe-inspiring landscapes from across the universe. \n\nFrom sprawling alien metropolises to desolate wastelands, our collection of high-quality wallpapers will transport you to a world beyond your wildest imagination. Our selection features only the most cutting-edge and unique designs, with sharp angles and contrasting colors that create a truly industrial and futuristic vibe.\n\nWhether you're looking to spice up your desktop background or simply want to marvel at the wonders of the cosmos, Futuristic Landscapes has something for everyone. So why wait? Dive into our collection today and discover a universe of endless possibilities!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

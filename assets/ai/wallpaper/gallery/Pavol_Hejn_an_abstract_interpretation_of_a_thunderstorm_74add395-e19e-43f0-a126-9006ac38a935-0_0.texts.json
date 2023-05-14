@@ -1,8 +1,0 @@
-{
-    "title": "Stormy Abstraction.",
-    "content": "Stormy Abstraction is a website that offers a unique and captivating experience for those seeking artistic inspiration. Our abstract interpretation of a thunderstorm serves as the main wallpaper, providing an immersive backdrop to our content. From thought-provoking articles to stunning visual art, Stormy Abstraction is a hub for creativity and self-expression. Join our community and explore the beauty of the storm in all its abstract glory.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract interpretation of a thunderstorm\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

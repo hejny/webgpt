@@ -1,8 +1,0 @@
-{
-    "title": "Cloud-bound Spirituality.",
-    "content": "# Cloud-bound Spirituality\n\nWelcome to Cloud-bound Spirituality, a website dedicated to exploring spirituality and personal growth. Our goal is to provide a space where individuals can come together to learn, share, and grow in their spiritual journeys.\n\nOur content covers a wide range of topics, including meditation, mindfulness, self-reflection, and more. We believe that everyone's journey is unique, and we strive to provide resources and guidance to help you on your path.\n\nIn addition to our articles and resources, we also offer a community forum where members can connect with each other, share experiences, and ask questions. We believe that community is an essential part of any spiritual journey, and we encourage our members to support and uplift each other along the way.\n\nThank you for visiting Cloud-bound Spirituality. We hope that our website can be a helpful resource as you explore your own spiritual path.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating among the clouds for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

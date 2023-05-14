@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Wonders\"",
-    "content": "# Galactic Wonders\n\nWelcome to Galactic Wonders, your ultimate source for stunning and awe-inspiring images of the universe. Our website features a collection of breathtaking photographs and illustrations that showcase the beauty and vastness of space.\n\nExplore our gallery of galaxy clusters, nebulas, stars, and planets captured by some of the most talented astrophotographers and artists in the world. Each image is carefully selected to provide you with a unique and unforgettable viewing experience.\n\nWhether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates the wonders of the cosmos, Galactic Wonders has something for you. Join us on a journey through the universe and discover the mysteries and marvels that lie beyond our world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Mystic Mountain View\"",
-    "content": "# Welcome to Mystic Mountain View\n\nMystic Mountain View is a website that offers a breathtaking view of nature's beauty. Our website features stunning landscapes, captured by talented photographers from around the world.\n\nOur goal is to provide you with a moment of peace and inspiration in your busy day. Whether you're looking for a new desktop background or just want to escape into nature for a few minutes, our collection of high-quality wallpapers is sure to satisfy.\n\nWe update our collection regularly, so be sure to check back often for new additions. And if you have a photograph that you think would make a great addition to our collection, please don't hesitate to get in touch.\n\nThank you for visiting Mystic Mountain View. We hope our wallpapers bring you joy and a sense of wonder.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Retro Space Adventure\"",
-    "content": "# Retro Space Adventure\n\nWelcome to Retro Space Adventure, a website dedicated to all things retro sci-fi! Our site is filled with articles, reviews, and news about classic science fiction movies, TV shows, books, and games from the golden age of the genre.\n\nJoin us on a journey through the stars as we explore the imaginative worlds and futuristic technologies of yesteryear. From the iconic spaceships of Star Wars and Star Trek to the dystopian landscapes of Blade Runner and The Terminator, we cover it all.\n\nWhether you're a die-hard fan or just discovering the wonders of retro sci-fi, Retro Space Adventure is the perfect destination for anyone who loves the thrill of adventure and the excitement of exploration. So buckle up and get ready for a journey through time and space that will take you to the farthest reaches of the imagination!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

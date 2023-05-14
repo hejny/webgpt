@@ -1,8 +1,0 @@
-{
-    "title": "\"Techy Wallpapers\"",
-    "content": "Welcome to our website! 🎉\n\nWe are a platform dedicated to providing you with the best tech-themed wallpapers for your devices. Our collection of abstract circuit board patterns, like the one featured on our homepage, is just the beginning.\n\nWhether you're a computer enthusiast or simply appreciate the aesthetic of technology, we have a wide variety of wallpapers to choose from. From futuristic designs to classic computer components, there's something for everyone.\n\nOur wallpapers are optimized for various devices, including desktops, laptops, tablets, and smartphones. We strive to provide high-quality images that will make your screen look amazing.\n\nSo what are you waiting for? Browse our collection and find the perfect wallpaper for your device today! 💻📱",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract circuit board pattern in shades of blue and silver\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

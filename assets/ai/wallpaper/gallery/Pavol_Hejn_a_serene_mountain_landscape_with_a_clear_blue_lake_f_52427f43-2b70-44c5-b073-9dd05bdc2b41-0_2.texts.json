@@ -1,8 +1,0 @@
-{
-    "title": "\"Tranquil Zen Retreat\"",
-    "content": "# Tranquil Zen Retreat\n\nWelcome to Tranquil Zen Retreat, your online destination for relaxation and wellness. Our serene mountain landscape with a clear blue lake sets the tone for your journey towards inner peace and tranquility.\n\nOur website offers a variety of resources to help you achieve a state of calm and balance. Explore our collection of guided meditations, yoga classes, and mindfulness exercises designed to reduce stress and promote mental clarity.\n\nWhether you're a seasoned practitioner or just starting out on your wellness journey, Tranquil Zen Retreat has something for everyone. Join our community today and discover the transformative power of mindfulness and self-care.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene mountain landscape with a clear blue lake for a meditation or wellness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

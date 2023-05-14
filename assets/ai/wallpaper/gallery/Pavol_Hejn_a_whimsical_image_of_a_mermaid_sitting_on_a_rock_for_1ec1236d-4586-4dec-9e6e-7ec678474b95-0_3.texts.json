@@ -1,8 +1,0 @@
-{
-    "title": "\"Mermaid's Fantasy\"",
-    "content": "Welcome to Mermaid's Fantasy, a website dedicated to all things whimsical and fantastical! Our site is the perfect destination for those who love to explore the magical realms of fiction and fantasy. \n\nHere, you'll find a wide range of content that will transport you to otherworldly places, from enchanting stories to breathtaking artwork. Whether you're a fan of mermaids, unicorns, dragons, or any other mystical creatures, we've got something for you.\n\nOur community is made up of passionate fantasy lovers who come together to share their favorite works and discuss all things related to the genre. We encourage you to join us and become part of our magical world.\n\nSo come on in, take a look around, and let your imagination run wild. We hope you enjoy your stay at Mermaid's Fantasy! 🧜‍♀️🐉🦄",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical image of a mermaid sitting on a rock for a fantasy or fiction website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

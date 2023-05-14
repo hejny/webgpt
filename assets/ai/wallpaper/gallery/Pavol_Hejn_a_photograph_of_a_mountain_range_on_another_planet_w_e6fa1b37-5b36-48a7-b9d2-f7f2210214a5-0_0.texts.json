@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Peaks\"",
-    "content": "# Alien Peaks\n\nWelcome to Alien Peaks, a website dedicated to exploring the beauty of otherworldly landscapes. Our mission is to showcase stunning photographs of extraterrestrial vistas, from the soaring peaks of distant planets to the glittering expanse of alien oceans.\n\nAt Alien Peaks, we believe that there is something truly awe-inspiring about the unknown and the unexplored. We are passionate about sharing these wonders with others, and our collection of images is just the beginning. Whether you are an avid space enthusiast or simply someone who appreciates the beauty of nature, we hope that our site will inspire you to look up at the stars and dream of what lies beyond.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a mountain range on another planet, with the bright sun shining through the peaks.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

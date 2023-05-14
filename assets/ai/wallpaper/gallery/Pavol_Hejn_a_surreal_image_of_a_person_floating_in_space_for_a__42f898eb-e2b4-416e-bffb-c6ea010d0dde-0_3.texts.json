@@ -1,8 +1,0 @@
-{
-    "title": "\"Beyond Earth\"",
-    "content": "# Beyond Earth\n\nWelcome to Beyond Earth, a website dedicated to exploring spirituality and personal growth. Our mission is to provide a space for individuals to connect with their inner selves and discover the limitless potential within.\n\nThrough our articles, podcasts, and community forums, we aim to inspire and empower individuals on their journey towards self-discovery and personal transformation. Our content covers a range of topics, including mindfulness, meditation, manifestation, and more.\n\nAt Beyond Earth, we believe that the key to unlocking our true potential lies in connecting with the universe around us. Our surreal image of a person floating in space serves as a reminder of the infinite possibilities available to us when we tap into our spiritual essence.\n\nJoin us on this journey beyond Earth and discover the power within you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person floating in space for a spirituality or personal growth website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

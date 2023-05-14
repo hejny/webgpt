@@ -1,8 +1,0 @@
-{
-    "title": "\"Tech Pattern Wallpapers\"",
-    "content": "**Tech Pattern Wallpapers**\n\nLooking for a wallpaper that showcases your love for technology? Look no further than Tech Pattern Wallpapers! Our website features a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons. With this wallpaper, you can show off your passion for all things tech while adding a sleek and modern touch to your desktop or mobile device. Whether you're a software engineer, IT professional, or just someone who loves gadgets, our Tech Pattern Wallpaper is the perfect choice for you. So why wait? Download it today and give your devices a high-tech makeover!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

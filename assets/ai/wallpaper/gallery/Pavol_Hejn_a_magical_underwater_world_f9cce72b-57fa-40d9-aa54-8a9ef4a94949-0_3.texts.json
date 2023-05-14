@@ -1,8 +1,0 @@
-{
-    "title": "\"Enchanted Ocean Depths\"",
-    "content": "# Enchanted Ocean Depths\n\nWelcome to Enchanted Ocean Depths, a website dedicated to exploring the mystical and wondrous world that lies beneath the waves. \n\nHere, you'll find a treasure trove of information on the creatures that inhabit the ocean depths, from tiny seahorses to massive whales. Our team of marine biologists and oceanographers have scoured the seas to bring you the latest insights and discoveries about this fascinating realm.\n\nBut we don't just stop at education - we also believe in the power of art to inspire and captivate. That's why we've adorned our site with stunning imagery of an enchanted underwater world, sure to transport you to another realm entirely.\n\nSo come dive with us into the Enchanted Ocean Depths, and discover the magic that lies beneath the surface.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A magical underwater world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

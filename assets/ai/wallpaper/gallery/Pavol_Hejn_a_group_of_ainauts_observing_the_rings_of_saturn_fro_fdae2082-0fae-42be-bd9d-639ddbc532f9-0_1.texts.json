@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Observers\"",
-    "content": "# Galactic Observers\n\nGalactic Observers is a website dedicated to providing the latest news and updates on space exploration, astronomy, and astrophysics. Our team of experts includes scientists, researchers, and enthusiasts who are passionate about discovering the mysteries of the universe.\n\nWe strive to bring you the most accurate and up-to-date information on space missions, discoveries, and breakthroughs. Our goal is to inspire and educate people about the wonders of the cosmos and the importance of space exploration.\n\nJoin us on our journey as we explore the depths of the universe and uncover its secrets. Whether you're a seasoned astronomer or just starting to learn about space, Galactic Observers has something for everyone.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

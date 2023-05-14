@@ -1,8 +1,0 @@
-{
-    "title": "\"Data Matrix Wallpaper\"",
-    "content": "👋 Welcome to our website! \n\nWe are a platform dedicated to providing you with the latest and most innovative data visualizations and graphs. Our team of experts curates the best visualizations from around the world, showcasing cutting-edge technology and design.\n\nOur sleek and futuristic interface allows you to easily browse through our collection of visualizations, which cover a wide range of topics including finance, health, technology, and more. Whether you're a data enthusiast or just looking for some inspiration, our website has something for everyone.\n\nJoin our community of data lovers and stay up-to-date with the latest trends in data visualization. Don't forget to bookmark our page and check back often for new and exciting content!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a matrix of futuristic data visualizations and graphs\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
-    }
-}

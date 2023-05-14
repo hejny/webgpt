@@ -1,8 +1,0 @@
-{
-    "title": "\"Circuit Wall Art\"",
-    "content": "Circuit Wall Art is your go-to destination for unique and captivating circuit board wallpapers. Our collection features a range of abstract designs in shades of blue and green that are perfect for adding a touch of tech-inspired style to any room. Whether you're looking to decorate your home office, bedroom, or living space, our high-quality wallpapers are sure to impress. With easy installation and a variety of sizing options available, Circuit Wall Art makes it simple to elevate your decor with a modern edge. Explore our collection today and discover the perfect circuit board wallpaper for your space.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

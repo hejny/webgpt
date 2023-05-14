@@ -1,8 +1,0 @@
-{
-    "title": "\"Sleek Space Design\"",
-    "content": "# Sleek Space Design\n\nWelcome to Sleek Space Design, your one-stop-shop for modern and stylish spaceship designs. Our website features a collection of sleek and cutting-edge spaceships that will take your breath away.\n\nAt Sleek Space Design, we believe that form should always follow function. That's why our spaceships are not only visually stunning but also highly functional and efficient. Whether you're a space enthusiast or a sci-fi fan, our designs are sure to impress.\n\nBrowse through our collection and find the perfect spaceship for your needs. From cargo haulers to exploration vessels, we have it all. And if you can't find what you're looking for, our team of expert designers can create a custom design just for you.\n\nJoin us on a journey through the cosmos with Sleek Space Design.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A csg-style rendering of a spaceship in orbit around a planet, with sharp angles and clean lines that highlight its modern and sleek design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

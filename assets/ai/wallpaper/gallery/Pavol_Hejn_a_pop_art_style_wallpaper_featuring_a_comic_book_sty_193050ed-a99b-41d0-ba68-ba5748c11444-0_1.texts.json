@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Pop Art\"",
-    "content": "# Futuristic Pop Art\n\nWelcome to our website, where we showcase the latest and greatest in futuristic pop art. Our collection features a wide range of artwork inspired by science fiction, technology, and all things futuristic.\n\nOur focus is on pop art-style illustrations that capture the imagination and transport you to another world. From cyborgs and robots to spaceships and alien landscapes, our artwork is sure to inspire and delight.\n\nWe are constantly updating our collection with new and exciting pieces, so be sure to check back often. Whether you're a fan of classic sci-fi or cutting-edge futurism, we have something for everyone.\n\nSo come explore our collection and experience the thrill of futuristic pop art!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

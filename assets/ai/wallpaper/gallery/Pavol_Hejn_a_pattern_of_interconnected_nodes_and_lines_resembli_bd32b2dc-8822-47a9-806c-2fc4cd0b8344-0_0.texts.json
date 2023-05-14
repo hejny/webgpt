@@ -1,8 +1,0 @@
-{
-    "title": "\"Neural Web Design\"",
-    "content": "# Neural Web Design\n\nWelcome to our website, where we specialize in creating stunning web designs that are inspired by the complexity and interconnectedness of neural networks. Our team of expert designers understands the importance of not only creating visually appealing websites but also ensuring they are functional and user-friendly.\n\nWe believe that a well-designed website should be able to communicate effectively with its users, just like how neurons communicate with each other in a neural network. Our designs are carefully crafted to ensure that every element works together seamlessly, creating a cohesive and intuitive user experience.\n\nWhether you're looking for a simple brochure website or a complex e-commerce platform, we have the skills and expertise to bring your vision to life. We pride ourselves on staying up-to-date with the latest design trends and technologies, so you can be sure that your website will be both beautiful and cutting-edge.\n\nSo if you're ready to take your online presence to the next level, get in touch with us today and let's create something truly amazing together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pattern of interconnected nodes and lines resembling a neural network\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

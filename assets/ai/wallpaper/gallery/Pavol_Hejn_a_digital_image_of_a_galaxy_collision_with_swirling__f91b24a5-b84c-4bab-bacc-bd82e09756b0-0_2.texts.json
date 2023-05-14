@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Chaos Hub.",
-    "content": "# Galactic Chaos Hub\n\nWelcome to the Galactic Chaos Hub, your go-to source for all things related to galactic collisions and cosmic chaos! \n\nOur website is dedicated to bringing you the latest news, research, and discoveries in the field of astrophysics, with a focus on the fascinating phenomenon of galaxy collisions. \n\nExplore our articles, videos, and interactive features to learn about the incredible forces at work in these cosmic clashes, and how they shape the evolution of galaxies over billions of years. \n\nWhether you're a professional astronomer or simply a curious space enthusiast, the Galactic Chaos Hub has something for everyone. Join our community today and discover the wonders of the universe!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

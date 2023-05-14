@@ -1,8 +1,0 @@
-{
-    "title": "AuroraView.",
-    "content": "# Welcome to AuroraView\n\nAuroraView is a website dedicated to bringing you stunning views of the Northern Lights. Our main wallpaper features a breathtaking photograph of the aurora borealis, with its characteristic green and purple hues swirling in the night sky.\n\nOur website is designed to provide you with a calming and inspiring experience. Whether you're looking for a new desktop background or simply want to escape into the beauty of nature, AuroraView has something for everyone.\n\nIn addition to our main wallpaper, we also offer a variety of other Northern Lights-themed images and resources. From informational articles about the science behind the aurora to tips for capturing your own photographs, our goal is to help you explore and appreciate this incredible natural phenomenon.\n\nSo sit back, relax, and let AuroraView transport you to the magical world of the Northern Lights.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

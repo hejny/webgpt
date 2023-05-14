@@ -1,8 +1,0 @@
-{
-    "title": "\"Haunted Woods Online\"",
-    "content": "# Haunted Woods Online\n\nWelcome to Haunted Woods Online, your go-to destination for all things horror and supernatural. Our website is dedicated to providing you with the latest news, reviews, and insights into the world of horror entertainment.\n\nWhether you're a fan of spine-chilling movies, bone-rattling books, or hair-raising TV shows, we've got you covered. Our team of experts scours the darkest corners of the internet to bring you the most terrifying content available.\n\nBut that's not all - we also offer a community forum where you can connect with other horror enthusiasts from around the world. Share your favorite stories, discuss the latest trends, and even get tips on how to survive a zombie apocalypse.\n\nSo come on in, grab a flashlight, and explore the haunted woods with us. Just be sure to watch your back... you never know what might be lurking in the shadows.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody image of a moonlit forest for a horror or supernatural website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

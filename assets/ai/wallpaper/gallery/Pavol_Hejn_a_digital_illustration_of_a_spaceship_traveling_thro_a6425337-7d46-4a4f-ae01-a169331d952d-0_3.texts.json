@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Odyssey\"",
-    "content": "# Galactic Odyssey\n\nWelcome to Galactic Odyssey, your portal to the stars! Our website is dedicated to bringing you the latest news and updates on space exploration, astronomy, and technology.\n\nJoin us on a journey through the cosmos as we explore the mysteries of the universe. From the latest discoveries in exoplanet research to the cutting-edge technologies that will take us to Mars and beyond, we've got it all.\n\nOur team of expert writers and contributors are passionate about space and science, and they're always on the lookout for the most exciting stories and developments in the field.\n\nSo come along with us on this epic adventure, and let's discover the wonders of the universe together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a spaceship traveling through a colorful nebula.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

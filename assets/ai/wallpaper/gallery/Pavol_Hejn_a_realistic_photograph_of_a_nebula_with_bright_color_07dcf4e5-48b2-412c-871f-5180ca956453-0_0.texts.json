@@ -1,8 +1,0 @@
-{
-    "title": "Nebula Gallery.",
-    "content": "# Nebula Gallery\n\nWelcome to Nebula Gallery, your source for stunning and captivating images of the universe. Our website features a collection of high-quality photographs showcasing the beauty and wonder of the cosmos.\n\nExplore our gallery to discover breathtaking images of galaxies, stars, planets, and of course, nebulas. Our collection includes both real-life photographs captured by astronomers and artists' renditions that bring the universe to life in vivid detail.\n\nWhether you're an astronomy enthusiast or simply appreciate the beauty of the cosmos, Nebula Gallery has something for everyone. Our images are perfect for use as desktop wallpapers, phone backgrounds, or even as framed art pieces for your home or office.\n\nJoin us on a journey through the vast expanse of space and experience the awe-inspiring beauty of the universe with Nebula Gallery.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

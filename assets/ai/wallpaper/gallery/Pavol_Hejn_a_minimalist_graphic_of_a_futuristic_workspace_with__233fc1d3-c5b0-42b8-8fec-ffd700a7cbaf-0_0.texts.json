@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Workspace Hub\"",
-    "content": "# Future Workspace Hub\n\nWelcome to the Future Workspace Hub, your go-to destination for all things related to modern and minimalist workspaces. Our website is designed to inspire and inform those who are looking to create a futuristic workspace that is both functional and aesthetically pleasing.\n\nWe offer a wide range of resources, including articles, product reviews, and design inspiration, to help you transform your workspace into a sleek and stylish environment that will boost your productivity and creativity. Whether you're a freelancer, entrepreneur, or corporate professional, our website has something for everyone.\n\nJoin our community of like-minded individuals who share a passion for innovative and cutting-edge workspaces. Stay up-to-date with the latest trends and technologies, and connect with other professionals who can offer valuable insights and advice.\n\nAt Future Workspace Hub, we believe that your workspace should be a reflection of your personality and style. Let us help you create a workspace that inspires you to do your best work and achieve your goals.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

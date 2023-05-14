@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Cityscape Gallery\"",
-    "content": "# Welcome to Future Cityscape Gallery\n\nOur website is dedicated to showcasing the most stunning and imaginative digital illustrations of futuristic cities from around the world. We feature artwork from talented artists who have created breathtaking scenes of cities on distant planets, with towering buildings and advanced technology.\n\nAt Future Cityscape Gallery, we believe that art has the power to transport us to other worlds and inspire us to imagine what the future could hold. Our collection of cityscapes will take you on a journey to new and exciting places, where imagination knows no bounds.\n\nWhether you're an art enthusiast, a sci-fi fan, or just someone who loves to dream big, our gallery has something for everyone. So come explore the wonders of the future with us at Future Cityscape Gallery.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a city on a distant planet, with towering buildings and advanced technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

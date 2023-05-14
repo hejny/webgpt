@@ -1,8 +1,0 @@
-{
-    "title": "\"Lunar Lab Adventures\"",
-    "content": "# Welcome to Lunar Lab Adventures!\n\nOur website is dedicated to bringing you the latest news and updates on the exciting experiments being conducted by our team of AInauts on a distant moon. \n\nJoin us on this thrilling journey as we explore the mysteries of the universe and push the boundaries of what is possible with cutting-edge technology and AI-powered research.\n\nStay up-to-date with our progress and discoveries through our blog, photo gallery, and video updates. And don't forget to follow us on social media for even more behind-the-scenes access to our lunar lab adventures.\n\nThank you for joining us on this incredible journey of discovery and innovation!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

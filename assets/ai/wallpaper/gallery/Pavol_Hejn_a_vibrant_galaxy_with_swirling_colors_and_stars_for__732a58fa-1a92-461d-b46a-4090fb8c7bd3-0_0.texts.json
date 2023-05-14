@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Explorations.",
-    "content": "# Galactic Explorations\n\nWelcome to Galactic Explorations, your go-to destination for all things science and astronomy! Our website is dedicated to providing you with the latest news, discoveries, and insights from the world of space exploration.\n\nAt Galactic Explorations, we believe that the universe is a vast and fascinating place, full of wonders waiting to be discovered. Whether you're an amateur stargazer or a seasoned astronomer, our website has something for everyone.\n\nFrom in-depth articles on the latest space missions to stunning images of distant galaxies, our content is designed to inspire and inform. We also feature interviews with leading scientists and experts in the field, giving you a behind-the-scenes look at the cutting edge of space research.\n\nSo come join us on a journey through the cosmos, as we explore the mysteries of the universe and discover the wonders of space. With Galactic Explorations, the sky's the limit!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vibrant galaxy with swirling colors and stars for a science or astronomy blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Cosmic Canvas.",
-    "content": "Welcome to Cosmic Canvas, a website that brings the beauty and wonder of space into your digital world. Our abstract galaxy cluster wallpaper serves as the backdrop for your desktop or mobile device, inspiring creativity and imagination with its swirling colors and patterns. Whether you're an astronomy enthusiast or simply appreciate stunning visuals, our wallpaper is sure to elevate your digital experience. Join us in exploring the vastness of space, one pixel at a time. 🚀✨🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a galaxy cluster, with swirling colors and patterns representing the vastness of space.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

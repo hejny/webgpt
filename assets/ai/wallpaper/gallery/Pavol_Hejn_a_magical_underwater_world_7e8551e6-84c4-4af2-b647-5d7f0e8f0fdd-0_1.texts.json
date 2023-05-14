@@ -1,8 +1,0 @@
-{
-    "title": "\"Enchanted Ocean Depths\"",
-    "content": "# Enchanted Ocean Depths\n\nWelcome to Enchanted Ocean Depths, a website dedicated to bringing the magic of the underwater world to your screen. Our collection of stunning wallpapers features vibrant colors and intricate details that will transport you to a world beyond your imagination.\n\nOur website is designed to provide a serene and calming experience as you browse through our selection of wallpapers. Whether you're looking for a new desktop background or a screensaver, we have something for everyone.\n\nAt Enchanted Ocean Depths, we are passionate about the beauty and wonder of the ocean. We believe that by bringing this magic into your daily life, we can inspire a greater appreciation for the natural world and encourage conservation efforts to protect it.\n\nThank you for visiting our website and we hope you enjoy exploring the depths of our enchanting underwater world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A magical underwater world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

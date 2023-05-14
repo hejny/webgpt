@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Geometry Land\"",
-    "content": "# Neon Geometry Land\n\nWelcome to Neon Geometry Land, a digital world where geometric shapes and neon colors come together to create stunning landscapes. Our website features a collection of visually captivating wallpapers that are perfect for adding a touch of vibrancy to your desktop or mobile device.\n\nAt Neon Geometry Land, we believe that art should be accessible to everyone. That's why all of our wallpapers are available for free download in high resolution. Whether you're looking for a new background for your computer, tablet, or phone, we've got you covered.\n\nOur collection is constantly growing, so be sure to check back often for the latest additions. And if you have any suggestions or requests, feel free to reach out to us. We love hearing from our community and are always looking for ways to improve our offerings.\n\nThank you for visiting Neon Geometry Land. We hope you enjoy exploring our collection as much as we enjoyed creating it.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital landscape with geometric shapes and neon colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

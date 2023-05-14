@@ -1,8 +1,0 @@
-{
-    "title": "\"Wilderness Wonders\"",
-    "content": "# Wilderness Wonders\n\nWelcome to Wilderness Wonders, your go-to destination for all things nature and wildlife. Our website is dedicated to exploring the beauty of the great outdoors and sharing it with the world.\n\nWe believe that nature is a source of inspiration, wonder, and healing. That's why we've created a space where you can immerse yourself in stunning visuals, informative articles, and engaging stories about the natural world.\n\nWhether you're an avid hiker, a birdwatching enthusiast, or simply someone who appreciates the beauty of nature, you'll find something to love on our website. From breathtaking landscapes to fascinating wildlife, we've got it all.\n\nSo come along on a journey of discovery and exploration with Wilderness Wonders. Let us inspire you to connect with the natural world and discover the wonders that await you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

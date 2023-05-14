@@ -1,8 +1,0 @@
-{
-    "title": "\"Insect Macro World\"",
-    "content": "# Welcome to Insect Macro World\n\nOur website is dedicated to showcasing the beauty and wonder of the insect world through stunning macro photography. \n\nWe believe that every creature, no matter how small, has its own unique story to tell. Through our collection of high-quality images, we hope to inspire a greater appreciation for the intricate details and fascinating behaviors of insects.\n\nWhether you're a seasoned entomologist or simply someone who appreciates the natural world, we invite you to explore our site and discover the incredible diversity of insects that inhabit our planet. From the tiniest ants to the largest beetles, there's always something new and exciting to discover in the world of insects.\n\nSo come on in, take a look around, and see the world from an insect's perspective. We promise you won't be disappointed!",
-    "prompts": {
-        "title": "\n\n            Write me short (max 3 words) title for website with main wallpaper that is:\n\n            \"A close-up of an ant on a leaf\"\n\n            The title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.\n        \n        ",
-        "content": "\n\n            Write me some content for this website in markdown format.\n            The content should be a short description of the website which is using this wallpaper.\n\n            Do not describe the wallpaper itself, but rather the website which is using it.\n        \n        "
-    }
-}

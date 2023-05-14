@@ -1,8 +1,0 @@
-{
-    "title": "\"Floral Event Dreams\"",
-    "content": "# Floral Event Dreams\n\nWelcome to Floral Event Dreams, your go-to website for all things event planning. Our dreamy watercolor painting of a field of flowers sets the tone for the beautiful and memorable events we can help you create.\n\nFrom weddings to corporate events, our experienced team is here to assist you in bringing your vision to life. We offer a wide range of services including floral arrangements, venue selection, catering, and more.\n\nAt Floral Event Dreams, we understand that every event is unique and deserves its own special touch. That's why we work closely with our clients to ensure that every detail is taken care of and that their event is a true reflection of their personal style and preferences.\n\nWhether you're planning an intimate gathering or a grand celebration, let Floral Event Dreams turn your dreams into reality. Contact us today to start planning your next event.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy watercolor painting of a field of flowers for a wedding or event planning website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

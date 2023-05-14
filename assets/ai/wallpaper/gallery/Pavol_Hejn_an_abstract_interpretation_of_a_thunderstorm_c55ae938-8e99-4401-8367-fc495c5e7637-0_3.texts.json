@@ -1,8 +1,0 @@
-{
-    "title": "Stormy Abstractions.",
-    "content": "Stormy Abstractions is a website that showcases a collection of abstract interpretations of thunderstorms. Our curated selection of wallpapers captures the raw power and beauty of thunderstorms, with each image offering a unique perspective on this natural phenomenon. Whether you're looking for a striking background for your desktop or mobile device, or simply want to appreciate the artistry of these captivating images, Stormy Abstractions has something for everyone. Browse our gallery today and discover the awe-inspiring world of thunderstorm abstractions. ⚡️🌩️",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract interpretation of a thunderstorm\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

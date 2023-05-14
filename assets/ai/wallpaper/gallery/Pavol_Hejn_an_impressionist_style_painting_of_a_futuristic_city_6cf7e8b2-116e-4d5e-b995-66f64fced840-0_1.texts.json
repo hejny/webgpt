@@ -1,8 +1,0 @@
-{
-    "title": "Dreamy Future City.",
-    "content": "Welcome to Dreamy Future City, a website that takes you on a journey through a futuristic metropolis. Our site is dedicated to showcasing the beauty and wonder of what could be, with stunning visuals and captivating stories. Explore the city's towering skyscrapers, bustling streets, and advanced technology, all while experiencing the dreamy effect of our impressionist-style wallpaper. Whether you're a fan of science fiction, art, or simply want to escape into a world of imagination, Dreamy Future City has something for everyone. So come join us on this exciting adventure and see where your dreams can take you!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien World Art\"",
-    "content": "# Alien World Art\n\nWelcome to Alien World Art, your destination for unique and captivating digital paintings of distant planets and otherworldly landscapes. Our collection features stunning artwork created by talented artists from around the world.\n\nExplore our website to discover a wide variety of imaginative and visually striking pieces that will transport you to other dimensions. Whether you're looking for a new desktop wallpaper or want to add some otherworldly flair to your home decor, we have something for everyone.\n\nOur team is dedicated to curating the best possible selection of alien-inspired art, so you can be sure that each piece in our collection is truly one-of-a-kind. We also offer affordable prices and fast shipping, so you can start enjoying your new artwork as soon as possible.\n\nThank you for visiting Alien World Art, and we hope you enjoy browsing our collection!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a distant planet, with a unique atmosphere and unusual terrain.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

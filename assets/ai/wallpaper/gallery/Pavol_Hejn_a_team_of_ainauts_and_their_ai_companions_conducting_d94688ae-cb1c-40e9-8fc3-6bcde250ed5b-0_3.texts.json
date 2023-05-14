@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Black Hole\"",
-    "content": "# AI Black Hole\n\nWelcome to AI Black Hole, the ultimate destination for all things related to artificial intelligence and space exploration. Our website is dedicated to providing you with the latest news, updates, and insights on the cutting-edge research being conducted at the intersection of these two exciting fields.\n\nOur team of AInauts, accompanied by their trusty AI companions, are pushing the boundaries of what we know about the universe by conducting groundbreaking experiments on the edge of a black hole. With time and space warping around them, they are uncovering new discoveries that will shape our understanding of the cosmos for years to come.\n\nJoin us on this thrilling journey as we explore the frontiers of science and technology. Whether you're a seasoned researcher or just starting out in the field, there's something for everyone at AI Black Hole. So buckle up and get ready for an adventure unlike any other!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

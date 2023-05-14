@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Lab AI\"",
-    "content": "👋 Welcome to Future Lab AI!\n\nWe are a team of AInauts conducting cutting-edge research in a massive laboratory filled with glowing equipment and holographic displays. Our mission is to push the boundaries of artificial intelligence and develop innovative solutions that will shape the future.\n\nOn our website, you'll find the latest updates on our research projects, as well as insights into the world of AI. Whether you're a fellow researcher, a tech enthusiast, or simply curious about the future of technology, we invite you to join us on this exciting journey.\n\nStay tuned for more updates and discoveries from the Future Lab AI team!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

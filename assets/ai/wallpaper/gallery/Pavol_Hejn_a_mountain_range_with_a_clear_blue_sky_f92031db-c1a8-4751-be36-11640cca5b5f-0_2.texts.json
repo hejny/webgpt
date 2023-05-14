@@ -1,8 +1,0 @@
-{
-    "title": "\"Peak Panorama\"",
-    "content": "# Peak Panorama\n\nWelcome to Peak Panorama, your ultimate destination for breathtaking mountain landscapes. Our website features a stunning collection of high-quality wallpapers showcasing the beauty of mountain ranges from all around the world.\n\nWhether you're an avid hiker or simply appreciate the majesty of nature, our wallpapers are sure to inspire and captivate you. With a clear blue sky as the backdrop, each image captures the rugged beauty of these majestic peaks, inviting you to explore and experience the great outdoors.\n\nOur wallpapers are perfect for adding a touch of natural beauty to your desktop, laptop, or mobile device. So why not bring the beauty of the mountains into your daily life with Peak Panorama? Browse our collection today and discover your new favorite wallpaper.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A mountain range with a clear blue sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

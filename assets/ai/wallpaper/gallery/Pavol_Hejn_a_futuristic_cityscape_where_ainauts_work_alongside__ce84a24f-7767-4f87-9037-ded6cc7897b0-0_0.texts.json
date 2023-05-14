@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Metropolis Hub\"",
-    "content": "# AI Metropolis Hub\n\nWelcome to the AI Metropolis Hub, where science and technology meet the future! Our website is dedicated to bringing you the latest news, developments, and innovations in the world of artificial intelligence and its applications.\n\nHere at the AI Metropolis Hub, we believe that the power of AI can be harnessed to create a better world for all. Our team of experts works tirelessly to bring you the most cutting-edge research and insights into the field, from breakthroughs in machine learning to the latest advancements in robotics.\n\nWhether you're an AI enthusiast, a researcher, or simply curious about the world of tomorrow, you'll find everything you need right here on our site. So why wait? Join us today and discover the limitless potential of AI!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

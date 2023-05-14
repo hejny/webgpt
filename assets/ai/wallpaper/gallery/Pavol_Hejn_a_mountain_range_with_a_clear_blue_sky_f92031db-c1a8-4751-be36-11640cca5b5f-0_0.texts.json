@@ -1,8 +1,0 @@
-{
-    "title": "\"Sky-high Scenery\"",
-    "content": "# Sky-high Scenery\n\nWelcome to Sky-high Scenery, your destination for breathtaking mountain views. Our website features a stunning wallpaper of a mountain range against a clear blue sky that will transport you to the great outdoors.\n\nAt Sky-high Scenery, we believe in the power of nature to inspire and rejuvenate. That's why we've curated a collection of beautiful landscapes from around the world, all available as high-quality wallpapers for your desktop or mobile device.\n\nWhether you're looking to escape the hustle and bustle of city life or simply want to bring a touch of natural beauty into your daily routine, Sky-high Scenery has something for everyone. So why not explore our collection today and discover the wonders of the great outdoors?",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A mountain range with a clear blue sky\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Abstract Network Art\"",
-    "content": "Welcome to our website! Here you will find a collection of abstract network art wallpapers in a minimal black and white color palette. Our wallpapers are perfect for those who appreciate simplicity and modern design. Whether you're looking to spruce up your desktop background or add some visual interest to your mobile device, we have something for everyone. Browse our selection and find the perfect wallpaper to complement your style.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of an abstract network, in a minimal color palette of black and white.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

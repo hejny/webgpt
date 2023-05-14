@@ -1,8 +1,0 @@
-{
-    "title": "\"FutureTech City\"",
-    "content": "# FutureTech City\n\nWelcome to FutureTech City, your go-to destination for all things technology! Our website is dedicated to bringing you the latest news, trends, and insights from the world of tech.\n\nOur team of experts scours the internet to find the most interesting and innovative developments in the industry, from cutting-edge gadgets to breakthrough software and everything in between. We also provide in-depth analysis and commentary on the latest tech trends, helping you stay ahead of the curve.\n\nWhether you're a tech enthusiast, a professional working in the industry, or just someone who wants to stay up-to-date with the latest tech news, FutureTech City has something for you. So why not join us today and become part of our community?",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A neon cityscape with futuristic skyscrapers for a tech blog homepage\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

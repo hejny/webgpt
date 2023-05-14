@@ -1,8 +1,0 @@
-{
-    "title": "\"Equation Wallpapers\"",
-    "content": "👋 Welcome to our website featuring a collection of wallpapers that will satisfy your inner math nerd! Our minimalist and modern designs showcase simple equations and formulas arranged in repeating patterns, creating a unique and eye-catching backdrop for your desktop or mobile device. Whether you're a student, teacher, or just someone who loves math, our Equation Wallpapers are the perfect way to add some personality to your screens. Browse through our selection and find the perfect wallpaper to suit your style.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
-    }
-}

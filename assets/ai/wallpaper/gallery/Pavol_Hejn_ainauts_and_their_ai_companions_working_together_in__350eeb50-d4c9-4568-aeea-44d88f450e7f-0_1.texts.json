@@ -1,8 +1,0 @@
-{
-    "title": "AI Space Team.",
-    "content": "AI Space Team is a platform dedicated to exploring the possibilities of artificial intelligence and its integration with space technology. Our website features news, articles, and discussions about the latest advancements in AI and how they are being used to enhance space exploration. Our community of AInauts and space enthusiasts share their insights and experiences on our forum, and we welcome anyone who shares our passion for the intersection of AI and space. Join us as we embark on this exciting journey into the final frontier! 🚀🤖",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"AInauts and their AI companions working together in a massive, zero-gravity space station.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

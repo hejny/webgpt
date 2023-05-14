@@ -1,8 +1,0 @@
-{
-    "title": "\"AInaut City\"",
-    "content": "# AInaut City\n\nWelcome to AInaut City, a website dedicated to showcasing the latest advancements in artificial intelligence and its impact on urban development. Our website features articles, videos, and images that explore how AI technology is transforming the way we build and design cities.\n\nAt AInaut City, we believe that the future of urban development lies in the collaboration between humans and AI. Our website showcases a futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure. Through our content, we aim to inspire and educate our readers on the possibilities of AI in urban development.\n\nWhether you are a student, researcher, or simply interested in the latest technological advancements, AInaut City has something for everyone. Join us as we explore the exciting world of AI and urban development.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

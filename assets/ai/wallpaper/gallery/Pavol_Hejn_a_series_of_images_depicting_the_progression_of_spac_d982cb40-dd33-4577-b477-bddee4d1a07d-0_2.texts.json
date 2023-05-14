@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Exploration Timeline\"",
-    "content": "# Space Exploration Timeline\n\nExplore the history of space exploration with our collection of images showcasing the progression of technology and innovation from early rockets to modern spacecraft. \n\nOur website provides a visual timeline of significant moments in space exploration, highlighting key missions and breakthroughs that have expanded our understanding of the universe. From the first human in space to the latest Mars rover, our wallpaper captures the excitement and wonder of space exploration.\n\nWhether you're a space enthusiast or simply curious about the history of human achievement, our website offers a unique perspective on the evolution of space technology. Join us on a journey through time and discover the incredible feats of science and engineering that have propelled us into the cosmos.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A series of images depicting the progression of space exploration, from early rockets to modern spacecraft.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

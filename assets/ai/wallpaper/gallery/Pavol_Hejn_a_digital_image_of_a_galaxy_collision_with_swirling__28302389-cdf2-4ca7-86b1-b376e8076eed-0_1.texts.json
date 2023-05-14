@@ -1,8 +1,0 @@
-{
-    "title": "Galactic Chaos Wallpapers.",
-    "content": "# Galactic Chaos Wallpapers\n\nWelcome to Galactic Chaos Wallpapers, your ultimate destination for stunning and captivating wallpapers of galaxies in collision. Our website offers a vast collection of high-quality digital images that showcase the beauty and chaos of these cosmic events.\n\nWe understand that finding the perfect wallpaper can be a daunting task, which is why we've curated a selection of the most mesmerizing galaxy collision images available. From swirling colors to distorted shapes, each image captures the essence of the event in its own unique way.\n\nOur wallpapers are perfect for anyone who wants to add a touch of cosmic beauty to their desktop, phone, or tablet. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates the wonders of the universe, our collection has something for everyone.\n\nSo why wait? Browse our gallery today and find the perfect wallpaper to transform your device into a stunning work of art.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

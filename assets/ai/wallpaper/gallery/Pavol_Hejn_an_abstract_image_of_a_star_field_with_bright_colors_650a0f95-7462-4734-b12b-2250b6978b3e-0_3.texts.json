@@ -1,8 +1,0 @@
-{
-    "title": "Cosmic Splendor.",
-    "content": "Welcome to Cosmic Splendor, a website that celebrates the awe-inspiring beauty of the cosmos. Our site features a stunning abstract image of a star field, with swirling patterns and bright colors that evoke the mystery and wonder of the universe. \n\nExplore our site to discover fascinating articles and resources about astronomy, space exploration, and the latest discoveries in astrophysics. From stunning images captured by telescopes and spacecraft to in-depth analysis of the latest research, we aim to inspire curiosity and wonder about the vast expanse of space.\n\nWhether you're a seasoned stargazer or simply curious about the mysteries of the universe, Cosmic Splendor is your go-to source for all things cosmic. Join us on a journey through the cosmos and discover the splendor of the universe. 🚀✨🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Colorful Business Circles\"",
-    "content": "**Welcome to Colorful Business Circles!**\n\nOur website is designed to provide you with the latest news and insights on business and marketing. Our team of experts works tirelessly to bring you the most up-to-date information on industry trends, best practices, and innovative strategies.\n\nWhether you're a seasoned professional or just starting out in your career, we've got something for everyone. From in-depth analysis of market research to practical tips on building your brand, our articles are tailored to help you succeed.\n\nSo why wait? Join our community today and stay ahead of the curve in the ever-changing world of business and marketing.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping circles in bright colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

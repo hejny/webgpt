@@ -1,8 +1,0 @@
-{
-    "title": "\"Beach Getaways Now\"",
-    "content": "Welcome to Beach Getaways Now! 🌴🌊\n\nOur website is your one-stop-shop for planning the ultimate beach vacation. Whether you're looking for a relaxing getaway or an action-packed adventure, we've got you covered.\n\nBrowse our selection of top-rated beach destinations around the world and find the perfect spot to soak up the sun and surf. Our expert travel guides provide insider tips on the best local restaurants, activities, and attractions to make your trip unforgettable.\n\nWith easy booking and affordable prices, planning your dream beach vacation has never been easier. So pack your bags and get ready for some fun in the sun with Beach Getaways Now! ☀️🏖️",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of waves crashing on the beach for a vacation or travel website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

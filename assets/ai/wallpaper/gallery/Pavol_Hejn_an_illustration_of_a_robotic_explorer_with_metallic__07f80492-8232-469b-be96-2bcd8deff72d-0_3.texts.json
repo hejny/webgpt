@@ -1,8 +1,0 @@
-{
-    "title": "\"Robotic Frontier Adventure\"",
-    "content": "🚀 Welcome to Robotic Frontier Adventure! 🌌\n\nJoin us on an exciting journey through the uncharted territories of space, as we explore new worlds and encounter strange creatures. Our team of robotic explorers are equipped with the latest technology, allowing them to navigate even the most treacherous terrain.\n\nExperience the thrill of discovery as we uncover the secrets of distant planets, and witness the wonders of the universe up close. With stunning visuals and intricate details, our wallpapers will transport you to the far reaches of space.\n\nWhether you're a seasoned explorer or a curious novice, Robotic Frontier Adventure has something for everyone. So come aboard and let's embark on a journey of a lifetime!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a robotic explorer, with metallic textures and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Virtual Headset Wallpapers\"",
-    "content": "Welcome to our website, where you can find a collection of virtual reality headset wallpapers. Our simple yet stylish illustrations are designed to showcase your love for VR technology and add a touch of personality to your desktop or mobile device. With a gradient background of two contrasting colors, these wallpapers are perfect for those who appreciate minimalism and modern design. Browse our collection and find the perfect wallpaper to suit your style. Whether you're a gamer, developer, or simply a fan of VR, we've got you covered. Download your favorite wallpaper today and take your desktop to the next level!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

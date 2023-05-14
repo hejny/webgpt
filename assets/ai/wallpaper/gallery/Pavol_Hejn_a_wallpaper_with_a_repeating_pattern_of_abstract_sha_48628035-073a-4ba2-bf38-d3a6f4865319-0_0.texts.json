@@ -1,8 +1,0 @@
-{
-    "title": "\"Viral Wall Art\"",
-    "content": "Welcome to our website, where you can find a collection of wallpapers featuring abstract shapes inspired by computer viruses and malware. Our wallpapers are set against a sleek black background, making them perfect for adding a touch of edginess to your desktop or mobile device. \n\nOur selection of wallpapers is carefully curated to provide a unique and eye-catching look that will make your device stand out from the rest. Whether you're looking for something subtle or bold, we have a wallpaper that will suit your style.\n\nAll of our wallpapers are available for free download in high resolution, so you can enjoy them on any device without sacrificing quality. So why settle for a boring wallpaper when you can have one that's inspired by the cutting-edge world of computer security? Check out our collection today and give your device the upgrade it deserves!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

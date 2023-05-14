@@ -1,8 +1,0 @@
-{
-    "title": "\"Launchpad Chronicles\"",
-    "content": "# Launchpad Chronicles\n\nWelcome to Launchpad Chronicles, the ultimate destination for space enthusiasts! Our website is dedicated to bringing you the latest news, updates, and insights from the world of space exploration.\n\nWe cover everything from rocket launches to space missions, from the latest discoveries to the most exciting developments in space technology. Our team of expert writers and editors are passionate about all things space-related, and we strive to bring you the most accurate and up-to-date information available.\n\nWhether you're a seasoned space enthusiast or just starting to explore the wonders of the universe, Launchpad Chronicles has something for everyone. So come join us on this incredible journey as we explore the final frontier and discover the secrets of the cosmos!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a rocket launch, with fiery trails and smoke visible in the sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

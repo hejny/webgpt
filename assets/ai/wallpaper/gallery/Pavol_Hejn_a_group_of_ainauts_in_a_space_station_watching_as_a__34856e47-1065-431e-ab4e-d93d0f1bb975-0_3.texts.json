@@ -1,8 +1,0 @@
-{
-    "title": "\"TechSaviors.space\"",
-    "content": "# TechSaviors.space\n\nTechSaviors.space is a website dedicated to exploring the latest advancements in artificial intelligence and technology. Our team of experts provides insightful articles, reviews, and analysis on the latest breakthroughs in the field.\n\nWe believe that AI and technology have the power to transform our world for the better, and we are committed to bringing you the latest news and insights on how these innovations can be used to solve some of the biggest challenges facing humanity today.\n\nWhether you're interested in space exploration, healthcare, or environmental sustainability, TechSaviors.space has something for you. Join us as we explore the cutting edge of AI and technology and discover the amazing possibilities that lie ahead.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

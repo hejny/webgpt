@@ -1,8 +1,0 @@
-{
-    "title": "\"Frozen Moon Explorers\"",
-    "content": "# Frozen Moon Explorers\n\nWelcome to Frozen Moon Explorers, a website dedicated to the exploration of a massive, frozen moon orbiting a gas giant planet. Our team of AInauts is conducting groundbreaking experiments and research on this distant world, pushing the boundaries of what we know about our universe.\n\nJoin us on our journey as we delve into the mysteries of this icy moon and uncover its secrets. Through stunning imagery and detailed reports, we aim to bring you closer to the wonders of space and inspire a new generation of explorers.\n\nWhether you're a seasoned astronomer or simply curious about the cosmos, Frozen Moon Explorers has something for everyone. So come along with us as we embark on this incredible adventure and discover the beauty and complexity of our universe.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

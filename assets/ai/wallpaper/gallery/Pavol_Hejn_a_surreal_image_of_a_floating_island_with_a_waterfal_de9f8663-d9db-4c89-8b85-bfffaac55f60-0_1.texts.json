@@ -1,8 +1,0 @@
-{
-    "title": "Island Dreamscape.",
-    "content": "# Island Dreamscape\n\nWelcome to Island Dreamscape, your ultimate travel destination guide. Our website is designed to inspire and help you plan your next dream vacation to the most beautiful islands around the world.\n\nWe offer a wide range of travel guides, tips, and recommendations for solo travelers, couples, families, and groups. From exotic beaches to adventurous hikes, we have it all covered.\n\nOur team of expert travelers has explored every corner of the world to bring you the best island experiences. We also provide personalized trip planning services to ensure that your vacation is tailored to your preferences and budget.\n\nJoin us on a journey to discover the hidden gems of the world's most stunning islands. Let Island Dreamscape be your guide to the ultimate travel adventure.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a floating island with a waterfall for a travel blog or agency\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Galactic Getaways\"",
-    "content": "# Galactic Getaways\n\nWelcome to Galactic Getaways, your one-stop-shop for interstellar travel planning. Our website is designed to help you explore the far reaches of the universe in style and comfort. \n\nWith our extensive database of planets, moons, and other celestial bodies, you can browse a wide variety of destinations and find the perfect spot for your next adventure. Whether you're looking for a relaxing beach vacation on a distant planet or an adrenaline-fueled spacewalk over a gas giant, we've got you covered.\n\nOur easy-to-use search tools let you filter by distance, climate, and other factors to find the ideal destination for your needs. And with detailed information on local customs, transportation options, and accommodations, you'll be fully prepared for your journey.\n\nSo why wait? Start exploring the cosmos today with Galactic Getaways!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A vintage-style travel poster of a distant planet, with bold typography and an artistic rendering of the landscape.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

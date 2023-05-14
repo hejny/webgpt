@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Metropolis\"",
-    "content": "# Futuristic Metropolis\n\nWelcome to Futuristic Metropolis, your one-stop destination for all things futuristic and cutting-edge. Our website is dedicated to showcasing the latest advancements in technology, architecture, and design that are shaping the cities of tomorrow.\n\nExplore our curated collection of articles, photos, and videos that capture the essence of a world where holographic billboards and flying cars are the norm. From the latest smart city initiatives to the most innovative urban planning projects, we bring you the best of what the future has to offer.\n\nJoin our community of forward-thinking individuals who share a passion for innovation and creativity. Connect with like-minded people from around the world and stay up-to-date on the latest trends and developments in the world of futurism.\n\nAt Futuristic Metropolis, we believe that the future belongs to those who dare to dream big and push the boundaries of what's possible. Join us on this exciting journey as we explore the endless possibilities of a world beyond our wildest imagination.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape with holographic billboards and flying cars\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Rocket Launch Hub\"",
-    "content": "# Rocket Launch Hub\n\nRocket Launch Hub is your go-to destination for all things related to rocket launches. Our website provides up-to-date information on upcoming rocket launches from around the world, including launch dates, times, and locations.\n\nIn addition to launch schedules, we also offer news and updates on the latest developments in the space industry, as well as insights into the technology behind rockets and spacecraft.\n\nWhether you're a space enthusiast or just curious about the latest advances in space exploration, Rocket Launch Hub has everything you need to stay informed and engaged. So join us today and be a part of the exciting world of rocket launches!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A poster-style image of a rocket taking off from Earth, with bold typography and a vintage color scheme that adds a touch of nostalgia.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

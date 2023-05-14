@@ -1,8 +1,0 @@
-{
-    "title": "\"Exotic Peaks\"",
-    "content": "# Exotic Peaks\n\nWelcome to Exotic Peaks, your destination for breathtaking wallpapers of otherworldly landscapes. Our collection features stunning photographs of mountains, valleys, and canyons from across the universe.\n\nExperience the awe-inspiring beauty of distant planets and galaxies with our high-quality wallpapers, carefully curated to transport you to another world. Each image captures the unique colors and textures of these alien landscapes, from the vibrant reds of Mars to the icy blues of Neptune.\n\nWhether you're looking to spruce up your desktop background or add a touch of wonder to your phone screen, our collection has something for everyone. So why settle for ordinary scenery when you can explore the extraordinary? Browse our selection today and discover the magic of Exotic Peaks.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a mountain range on another planet, with the bright sun shining through the peaks.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

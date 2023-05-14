@@ -1,8 +1,0 @@
-{
-    "title": "\"Pixel Space Adventure\"",
-    "content": "# Pixel Space Adventure\n\nWelcome to Pixel Space Adventure, the ultimate destination for space enthusiasts and lovers of pixel art! Our website features a unique collection of pixelated spacecraft designs that are sure to take you on an unforgettable journey through the galaxy.\n\nExplore our vast selection of pixel art depictions of spaceships, each with its own distinct style and personality. From retro-inspired designs to futuristic creations, there's something for everyone on Pixel Space Adventure.\n\nIn addition to our stunning collection of spacecraft designs, we also offer a variety of resources and tools for aspiring pixel artists. Whether you're just starting out or looking to hone your skills, our tutorials and community forums provide the perfect platform for learning and sharing your work.\n\nSo come join us on a pixelated adventure through the cosmos. With Pixel Space Adventure, the possibilities are endless!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

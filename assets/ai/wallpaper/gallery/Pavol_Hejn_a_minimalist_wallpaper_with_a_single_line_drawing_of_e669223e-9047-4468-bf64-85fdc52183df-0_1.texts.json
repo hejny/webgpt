@@ -1,8 +1,0 @@
-{
-    "title": "\"Cyborg Art Wallpapers\"",
-    "content": "# Cyborg Art Wallpapers\n\nWelcome to Cyborg Art Wallpapers, your go-to source for unique and striking minimalist wallpapers featuring single-line drawings of cyborgs. Our collection includes a variety of colors, from bold reds to bright blues, so you can find the perfect wallpaper to match your style.\n\nOur wallpapers are designed with simplicity in mind, making them the perfect addition to any device or screen. Whether you're looking to add some personality to your desktop background or spice up your phone's lock screen, our cyborg art wallpapers are sure to impress.\n\nWe update our collection regularly, so be sure to check back often for new designs. And if you have any questions or suggestions, don't hesitate to reach out to us. We love hearing from our customers and are always happy to help.\n\nThank you for choosing Cyborg Art Wallpapers. We hope you enjoy our collection as much as we do!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

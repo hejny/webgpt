@@ -1,8 +1,0 @@
-{
-    "title": "\"Animal Tea Party\"",
-    "content": "Welcome to Animal Tea Party - the place where whimsy and charm come together for a delightful experience! Our website is dedicated to bringing you the latest news, reviews, and trends in the world of anthropomorphic animals. From tea parties to fashion shows, we cover it all with our unique blend of fun and informative content.\n\nJoin us as we explore the fascinating world of animal-inspired art, literature, and culture. Whether you're a fan of classic tales like Alice in Wonderland or modern hits like Zootopia, you'll find something to love on our site. We also feature interviews with artists, authors, and creators who are making waves in the furry fandom community.\n\nSo grab a cup of tea and settle in for a journey into the whimsical world of Animal Tea Party. We promise you won't be disappointed! 🐰🐻🐶🐱🍵✨",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A whimsical tea party with anthropomorphic animals\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

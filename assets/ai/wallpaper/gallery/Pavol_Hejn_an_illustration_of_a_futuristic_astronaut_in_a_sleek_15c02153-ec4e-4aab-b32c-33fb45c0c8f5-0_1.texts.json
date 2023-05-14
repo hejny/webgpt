@@ -1,8 +1,0 @@
-{
-    "title": "Cosmic Explorer Hub.",
-    "content": "Welcome to Cosmic Explorer Hub 🚀\n\nOur website is dedicated to all space enthusiasts who are eager to explore the universe and its mysteries. With our vast collection of articles, videos, and podcasts, we aim to provide you with the latest news and insights from the world of space exploration.\n\nWhether you're interested in astronomy, astrophysics, or simply fascinated by the beauty of the cosmos, you'll find something here to satisfy your curiosity. Our team of experts is constantly updating the content, so be sure to check back often for new discoveries and exciting developments.\n\nJoin us on this journey of discovery and let's explore the final frontier together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

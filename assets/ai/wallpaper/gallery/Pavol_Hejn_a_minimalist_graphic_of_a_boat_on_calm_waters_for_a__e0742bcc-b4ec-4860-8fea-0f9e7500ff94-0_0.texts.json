@@ -1,8 +1,0 @@
-{
-    "title": "\"Serene Boat Adventures\"",
-    "content": "# Serene Boat Adventures\n\nWelcome to Serene Boat Adventures, your ultimate destination for all things boating and water sports! Our website is dedicated to providing you with the best resources and information to help you plan your next adventure on the water.\n\nWhether you're a seasoned boater or just starting out, our team of experts is here to guide you every step of the way. From choosing the right boat to finding the perfect location, we've got you covered.\n\nOur website features a wide range of articles and guides on everything from safety tips to the latest boating trends. We also offer a comprehensive directory of marinas, boat rentals, and other resources to help you make the most of your time on the water.\n\nSo why wait? Start exploring our website today and discover the endless possibilities of boating and water sports!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a boat on calm waters for a boating or water sports website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

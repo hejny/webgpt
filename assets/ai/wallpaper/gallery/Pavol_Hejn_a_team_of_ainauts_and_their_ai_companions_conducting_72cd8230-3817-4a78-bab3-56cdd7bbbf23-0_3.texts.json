@@ -1,8 +1,0 @@
-{
-    "title": "\"Giant Planet Explorers\"",
-    "content": "# Giant Planet Explorers\n\nWelcome to Giant Planet Explorers, the ultimate destination for space enthusiasts and science lovers! Our website is dedicated to bringing you the latest updates on the exciting missions of our team of AInauts and their AI companions as they conduct experiments on the surface of a massive gas giant planet.\n\nOur team of experts is passionate about exploring the mysteries of the universe and uncovering the secrets of these distant worlds. Through our website, we aim to share our knowledge and discoveries with the world, providing you with fascinating insights into the wonders of outer space.\n\nWhether you're a seasoned astronomer or simply curious about the cosmos, Giant Planet Explorers has something for everyone. From stunning images and videos of our latest missions to in-depth articles and scientific analysis, our website is your go-to source for all things space-related.\n\nSo join us on this incredible journey of discovery as we explore the vast expanse of the universe and unlock the secrets of these magnificent gas giant planets.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Northern Lights Adventure\"",
-    "content": "Welcome to our website, where we invite you to embark on a journey of adventure and wonder. Our website is dedicated to showcasing the beauty of nature, and what better way to start than with an aurora borealis over snow-covered mountains. \n\nWe believe that nature has the power to inspire, heal, and connect us all. That's why we've created this platform to share our love for the great outdoors and encourage others to explore the world around them. \n\nWhether you're an avid traveler or simply looking for a moment of escape, our website offers a variety of resources to help you plan your next adventure. From travel guides and tips to breathtaking photography and inspiring stories, we aim to provide a comprehensive and immersive experience for our visitors. \n\nSo join us on this journey, as we discover the magic of nature and all that it has to offer. Let's explore together and create unforgettable memories that will last a lifetime.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An aurora borealis over snow-covered mountains\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

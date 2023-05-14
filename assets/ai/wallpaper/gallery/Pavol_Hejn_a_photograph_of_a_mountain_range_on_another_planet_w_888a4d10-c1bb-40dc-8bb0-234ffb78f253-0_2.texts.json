@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Peak View\"",
-    "content": "# Alien Peak View\n\nWelcome to Alien Peak View, the ultimate destination for space enthusiasts and adventurers alike! Our website features stunning photographs of alien landscapes, including this breathtaking image of a mountain range on another planet.\n\nExplore our collection of high-quality wallpapers and discover otherworldly vistas that will transport you to different corners of the universe. Whether you're looking for inspiration for your next sci-fi project or simply want to marvel at the wonders of the cosmos, Alien Peak View has something for everyone.\n\nAll of our wallpapers are carefully curated to provide the best possible viewing experience, with each image capturing the beauty and mystery of the cosmos in its own unique way. So why wait? Start exploring today and discover the infinite possibilities of the universe with Alien Peak View!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a mountain range on another planet, with the bright sun shining through the peaks.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

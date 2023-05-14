@@ -1,8 +1,0 @@
-{
-    "title": "\"Beyond AI Horizons\"",
-    "content": "# Beyond AI Horizons\n\nWelcome to Beyond AI Horizons, a website dedicated to exploring the possibilities of artificial intelligence and its impact on our future. Our team of experts is passionate about pushing the boundaries of what AI can do and discovering new frontiers in technology.\n\nThrough our articles, videos, and podcasts, we aim to provide thought-provoking insights into the world of AI and how it's transforming industries such as healthcare, finance, and transportation. We also delve into the ethical considerations surrounding AI and its potential impact on society.\n\nJoin us on this journey as we explore the intersection of AI and humanity, and discover what lies beyond the horizons of our current understanding.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

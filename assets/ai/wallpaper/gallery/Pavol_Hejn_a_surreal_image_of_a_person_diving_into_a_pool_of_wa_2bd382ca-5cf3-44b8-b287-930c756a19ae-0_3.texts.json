@@ -1,8 +1,0 @@
-{
-    "title": "\"Dive to Wellness\"",
-    "content": "# Dive to Wellness\n\nDive to Wellness is a health and fitness blog dedicated to helping individuals achieve their wellness goals. Our mission is to provide valuable information, tips, and resources to help our readers lead healthier, happier lives.\n\nAt Dive to Wellness, we believe that wellness is more than just physical health - it's a holistic approach that encompasses mental, emotional, and spiritual well-being as well. That's why we cover a wide range of topics, from nutrition and exercise to mindfulness and self-care.\n\nOur team of experts includes certified personal trainers, nutritionists, and wellness coaches who are passionate about helping others live their best lives. We also feature inspiring stories from real people who have transformed their health and wellness through dedication and hard work.\n\nWhether you're just starting your wellness journey or looking for new ways to stay motivated, Dive to Wellness has something for everyone. Join us today and dive into a world of wellness!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal image of a person diving into a pool of water for a health or fitness blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

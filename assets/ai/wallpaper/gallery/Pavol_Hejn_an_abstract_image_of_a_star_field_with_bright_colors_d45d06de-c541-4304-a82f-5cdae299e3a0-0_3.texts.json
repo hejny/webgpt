@@ -1,8 +1,0 @@
-{
-    "title": "Cosmic Swirls.",
-    "content": "Welcome to Cosmic Swirls! Our website is dedicated to exploring the mystery and beauty of the cosmos through stunning abstract imagery. Our main wallpaper, featuring a star field with bright colors and swirling patterns, sets the tone for our site's exploration of the wonders of space.\n\nFrom the latest discoveries in astronomy to the most intriguing theories about the origins of the universe, we strive to bring you the most fascinating and thought-provoking content about the cosmos. Whether you're a seasoned astronomer or simply someone who marvels at the night sky, we hope that our site will inspire you to look up and wonder at the vastness of the universe.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

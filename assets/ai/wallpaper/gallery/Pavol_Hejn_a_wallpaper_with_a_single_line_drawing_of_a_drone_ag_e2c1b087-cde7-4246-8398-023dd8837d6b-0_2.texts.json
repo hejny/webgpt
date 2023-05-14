@@ -1,8 +1,0 @@
-{
-    "title": "\"Drone Geometric Art\"",
-    "content": "Welcome to our website featuring a stunning wallpaper that showcases the beauty of geometric shapes and minimalist art. Our website is dedicated to bringing you the latest and most unique designs in modern art, with a focus on single-line drawings and complementary color schemes.\n\nOur drone-themed wallpaper is just one example of the kind of eye-catching designs you can expect to find on our site. Whether you're looking for inspiration for your own creative projects or simply want to add some visual interest to your desktop or mobile device, we have something for everyone.\n\nBrowse our collection of wallpapers and discover the perfect addition to your digital space. With new designs added regularly, you'll always find something fresh and exciting to enhance your online experience. Thank you for visiting our site and we hope you enjoy our beautiful artwork!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

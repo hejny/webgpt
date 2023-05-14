@@ -1,8 +1,0 @@
-{
-    "title": "\"Starry Night Skies\"",
-    "content": "# Welcome to Starry Night Skies!\n\nOur website is dedicated to bringing you breathtaking images of the night sky. Our collection of high-quality wallpapers features stunning photographs of stars, galaxies, and celestial events that will transport you to the far reaches of the universe.\n\nWhether you're an amateur astronomer or simply appreciate the beauty of the cosmos, our wallpapers are sure to inspire and awe. Each image is carefully selected for its visual impact and quality, ensuring that your desktop or mobile device will look amazing.\n\nSo why settle for a boring, generic wallpaper when you can have a piece of the universe right on your screen? Browse our collection today and discover the wonders of the night sky!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of a meteor shower, with bright streaks of light crossing the night sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

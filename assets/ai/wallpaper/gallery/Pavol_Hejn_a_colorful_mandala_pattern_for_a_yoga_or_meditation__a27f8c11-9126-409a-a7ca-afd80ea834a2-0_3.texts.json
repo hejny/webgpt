@@ -1,8 +1,0 @@
-{
-    "title": "\"Mandala Zen\"",
-    "content": "# Mandala Zen\n\nWelcome to Mandala Zen, your go-to destination for all things yoga and meditation. Our website is designed to help you find inner peace and balance through the practice of mindfulness.\n\nExplore our collection of guided meditations, yoga classes, and wellness resources to help you cultivate a deeper sense of calm and relaxation in your daily life. Our community of like-minded individuals is here to support you on your journey towards a more mindful and fulfilling life.\n\nWhether you're a seasoned yogi or just starting out on your meditation journey, Mandala Zen has something for everyone. Join us today and discover the transformative power of mindfulness.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful mandala pattern for a yoga or meditation website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

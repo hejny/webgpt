@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Launch Daily\"",
-    "content": "Welcome to Space Launch Daily! 🚀\n\nOur website is dedicated to bringing you the latest news and updates on space launches happening around the world. From rockets launching into orbit, to probes exploring our solar system, we cover it all.\n\nStay up-to-date with the latest launch schedules, mission details, and live coverage of historic events. Our team of expert writers and contributors provide in-depth analysis and commentary on the most exciting developments in space exploration.\n\nJoin our community of space enthusiasts and share your thoughts and opinions on the latest space news. Whether you're a seasoned astronaut or just getting started, there's something for everyone at Space Launch Daily.\n\nSo buckle up and get ready for lift-off! We'll take you on a journey through the final frontier and beyond.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An image of a rocket launching into space with a trail of fire behind it, set against a starry sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

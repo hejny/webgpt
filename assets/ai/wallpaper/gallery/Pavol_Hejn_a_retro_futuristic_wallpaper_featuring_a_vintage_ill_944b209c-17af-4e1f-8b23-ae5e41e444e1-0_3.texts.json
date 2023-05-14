@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Robot Dreams\"",
-    "content": "# Welcome to Neon Robot Dreams\n\nNeon Robot Dreams is a website dedicated to the exploration of retro-futuristic art and design. Our mission is to showcase the best examples of vintage-inspired artwork that imagines what the future might have looked like from the perspective of the past.\n\nOur main feature is our collection of stunning wallpapers, featuring vintage illustrations of robots set against neon-colored backgrounds. These wallpapers are perfect for anyone who loves the combination of classic sci-fi aesthetics with a modern twist.\n\nIn addition to our wallpapers, we also feature articles and interviews with artists and designers who are keeping the retro-futuristic spirit alive today. Whether you're a fan of classic science fiction or just appreciate great design, Neon Robot Dreams has something for you.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

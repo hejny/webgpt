@@ -1,8 +1,0 @@
-{
-    "title": "\"Web-inspired Patterns\"",
-    "content": "# Web-inspired Patterns\n\nWelcome to our website featuring a collection of repeating patterns inspired by the latest web design trends. Our patterns are designed to add a touch of modernity and creativity to your digital projects.\n\nWhether you're working on a website, mobile app, or graphic design project, our patterns can be used as backgrounds, textures, or accents to enhance your visuals. Our collection includes a variety of abstract shapes and colors that can be customized to fit your specific needs.\n\nOur patterns are available for download in high-resolution formats, making them perfect for both personal and commercial use. We update our collection regularly, so be sure to check back often for new designs.\n\nThank you for visiting our website and we hope our patterns inspire you to create something amazing!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A repeating pattern of abstract shapes and colors, inspired by web design trends and patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

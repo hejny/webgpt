@@ -1,8 +1,0 @@
-{
-    "title": "\"Circuit Wallpapers\"",
-    "content": "Welcome to our website, where you can find a stunning collection of wallpapers featuring circuit board components in black, grey, and neon green. Our wallpapers are perfect for anyone who loves technology and wants to add a touch of futuristic style to their desktop or mobile device.\n\nWith our easy-to-use interface, you can browse through our extensive selection of circuit board wallpapers and choose the perfect one for your device. Whether you're looking for a subtle pattern or a bold design, we have something for everyone.\n\nAll of our wallpapers are high-quality and optimized for various screen sizes, so you can be sure that they will look great on your device. Plus, our collection is regularly updated with new designs, so you can always find something fresh and exciting.\n\nSo why wait? Browse our collection today and find the perfect circuit board wallpaper for your device!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

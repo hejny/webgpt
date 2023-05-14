@@ -1,8 +1,0 @@
-{
-    "title": "\"RoboNote Wallpapers\"",
-    "content": "# Welcome to RoboNote Wallpapers\n\nGet inspired and stay organized with our collection of minimalist wallpapers featuring a robot hand holding a stylus or pen. Our wallpapers provide a space for you to jot down your ideas, sketch out designs, or simply keep track of your to-do list.\n\nWith a sleek and modern design, our wallpapers are perfect for anyone who wants to add a touch of creativity to their digital workspace. Whether you're a designer, writer, or just someone who loves to doodle, our wallpapers will help you stay focused and motivated throughout the day.\n\nAll of our wallpapers are available for free download in high resolution, so you can easily set them as your desktop background or lock screen. We update our collection regularly, so be sure to check back often for new designs.\n\nJoin our community of creative thinkers and start using RoboNote Wallpapers today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not repeat the title of the website.\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Colorful Business Hub\"",
-    "content": "**Welcome to Colorful Business Hub!**\n\nOur website is designed to help businesses and marketers stay up-to-date with the latest trends and strategies in the industry. Our team of experts provides insightful articles, tips, and resources to help you grow your business and reach your marketing goals.\n\nAt Colorful Business Hub, we believe that creativity and innovation are key to success in today's fast-paced digital world. That's why our website features a vibrant and dynamic abstract image of overlapping squares in bright colors, representing the energy and excitement of the business world.\n\nWhether you're looking for advice on social media marketing, SEO, or branding, our website has everything you need to stay ahead of the curve. Join our community today and start exploring the endless possibilities of modern business!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping squares in bright, vibrant colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Binary Wallpapers\"",
-    "content": "Welcome to Binary Wallpapers! Our website offers a unique collection of wallpapers featuring a repeating pattern of binary code in a simple font and black and white color scheme. \n\nOur wallpapers are perfect for tech enthusiasts, programmers, and anyone who loves minimalist design. With our high-quality wallpapers, you can give your desktop, laptop, or mobile device a sleek and modern look.\n\nAll of our wallpapers are carefully designed to ensure that the binary code pattern is both visually appealing and easy to read. Whether you're looking for a wallpaper for your personal computer or your office workspace, we have a variety of options to choose from.\n\nSo why wait? Browse our collection today and find the perfect wallpaper to enhance your digital space.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a repeating pattern of binary code, in a simple font and black and white color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

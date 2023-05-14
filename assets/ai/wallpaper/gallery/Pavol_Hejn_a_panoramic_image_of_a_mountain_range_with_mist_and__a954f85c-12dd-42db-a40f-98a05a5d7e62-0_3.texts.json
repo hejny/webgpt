@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Mountain View\"",
-    "content": "# Misty Mountain View\n\nWelcome to Misty Mountain View, a website dedicated to providing breathtaking panoramic views of mountain ranges from around the world. Our collection of high-quality wallpapers features mist and clouds drifting through the peaks, creating a serene and peaceful atmosphere.\n\nWhether you're looking for a new desktop background or just want to escape into the beauty of nature, our selection of images is sure to inspire and captivate you. From the towering heights of the Himalayas to the rugged terrain of the Rockies, we have something for every mountain lover.\n\nAll of our wallpapers are available for free download in high resolution, so you can enjoy the stunning scenery on any device. So sit back, relax, and immerse yourself in the majesty of Misty Mountain View.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A panoramic image of a mountain range, with mist and clouds drifting through the peaks.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

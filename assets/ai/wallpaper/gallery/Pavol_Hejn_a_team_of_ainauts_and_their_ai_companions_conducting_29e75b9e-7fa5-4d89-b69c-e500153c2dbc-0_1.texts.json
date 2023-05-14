@@ -1,8 +1,0 @@
-{
-    "title": "\"Black Hole Lab\"",
-    "content": "# Black Hole Lab\n\nWelcome to Black Hole Lab, where cutting-edge AI technology meets the mysteries of the universe. Our team of AInauts and their trusty AI companions are conducting groundbreaking experiments on the edge of a black hole, pushing the boundaries of our understanding of time and space.\n\nAt Black Hole Lab, we strive to unlock the secrets of the universe through innovative research and exploration. Our mission is to push the limits of what is possible, using the power of AI and advanced technology to explore the furthest reaches of the cosmos.\n\nJoin us on this exciting journey as we delve deeper into the mysteries of the universe. Explore our site to learn more about our team, our research, and the incredible discoveries we are making at the edge of a black hole.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

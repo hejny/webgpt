@@ -1,8 +1,0 @@
-{
-    "title": "\"Orbit Station HQ\"",
-    "content": "Welcome to Orbit Station HQ 🚀 \n\nOur website is dedicated to providing you with the latest news and updates on space exploration. From the latest missions to the newest discoveries, we've got you covered. Our team of experts works tirelessly to bring you the most accurate and up-to-date information available.\n\nAt Orbit Station HQ, we believe that the future of humanity lies in the stars. That's why we're committed to bringing you the latest news and insights into the world of space exploration. Whether you're a space enthusiast or just curious about what's out there, our website has something for everyone.\n\nJoin us on our journey as we explore the final frontier and discover the wonders of the universe. Together, we can unlock the secrets of the cosmos and pave the way for a brighter future for all of humanity.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "Fractal Bliss.",
-    "content": "# Fractal Bliss\n\nWelcome to Fractal Bliss, your source for stunning and unique wallpapers featuring intricate fractal patterns. Our collection of wallpapers is carefully curated to bring you the most vibrant and colorful designs that will transform your desktop or mobile device.\n\nAt Fractal Bliss, we believe that art should be accessible to everyone, which is why we offer our wallpapers for free download. Whether you're looking to add a pop of color to your workspace or simply want to admire the beauty of fractal art, our wallpapers are sure to impress.\n\nOur website is updated regularly with new designs, so be sure to check back often to see what's new. And if you have a specific request or idea for a wallpaper, feel free to reach out to us - we love hearing from our community!\n\nThank you for choosing Fractal Bliss as your go-to source for mesmerizing wallpapers.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

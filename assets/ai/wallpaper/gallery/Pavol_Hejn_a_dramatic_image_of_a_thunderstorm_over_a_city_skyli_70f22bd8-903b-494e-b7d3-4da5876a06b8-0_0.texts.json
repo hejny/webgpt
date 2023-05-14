@@ -1,8 +1,0 @@
-{
-    "title": "Stormy Skyline News",
-    "content": "# Stormy Skyline News\n\nStormy Skyline News is a premier source for the latest weather and news updates. Our team of experienced journalists and meteorologists work around the clock to bring you up-to-date information on breaking news, severe weather, and other important events happening in your area.\n\nOur website features a sleek and modern design, with easy navigation and a user-friendly interface. You can quickly find the information you need, whether it's the latest weather forecast or breaking news story.\n\nAt Stormy Skyline News, we are committed to delivering accurate and reliable information to our readers. We understand the importance of staying informed, especially during times of severe weather or emergency situations.\n\nSo whether you're looking for the latest news headlines or need to know if a storm is headed your way, trust Stormy Skyline News to keep you informed and prepared.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dramatic image of a thunderstorm over a city skyline for a weather or news website.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

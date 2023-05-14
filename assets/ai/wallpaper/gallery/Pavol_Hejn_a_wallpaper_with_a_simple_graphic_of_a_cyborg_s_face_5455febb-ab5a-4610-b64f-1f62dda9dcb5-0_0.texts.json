@@ -1,8 +1,0 @@
-{
-    "title": "\"Cyborg Art Wallpapers\"",
-    "content": "Welcome to our website featuring a collection of unique and captivating cyborg art wallpapers. Our selection includes a variety of styles, from abstract to realistic, all showcasing the fusion of human and machine. Each wallpaper features a simple graphic of a cyborg's face against a backdrop of digital noise and static, adding a futuristic and technological touch to your device's screen. With our carefully curated collection, you'll find the perfect wallpaper to showcase your love for cyborgs and technology. Browse our gallery now and elevate your device's aesthetic with our cyborg art wallpapers.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple graphic of a cyborg's face, against a background of digital noise and static.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

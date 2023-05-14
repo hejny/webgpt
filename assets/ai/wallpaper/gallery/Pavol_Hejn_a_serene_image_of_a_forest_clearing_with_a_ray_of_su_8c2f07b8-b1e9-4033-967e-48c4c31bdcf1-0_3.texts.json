@@ -1,8 +1,0 @@
-{
-    "title": "\"Mindful Forest\"",
-    "content": "# Mindful Forest\n\nWelcome to Mindful Forest, a website dedicated to promoting mindfulness and spirituality through the beauty of nature. Our serene forest clearing wallpaper is just a glimpse of what we have to offer.\n\nAt Mindful Forest, we believe that connecting with nature can help us find inner peace and balance. We offer a variety of resources and tools to help you on your journey towards mindfulness, including guided meditations, yoga classes, and articles on mindfulness and spirituality.\n\nOur community is made up of individuals who share a passion for nature and mindfulness. We encourage you to join our community and connect with like-minded individuals who are also on a path towards greater self-awareness and personal growth.\n\nThank you for visiting Mindful Forest. We hope that our website inspires you to connect with nature and cultivate mindfulness in your daily life.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A serene image of a forest clearing with a ray of sunlight for a spiritual or mindfulness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

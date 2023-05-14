@@ -1,8 +1,0 @@
-{
-    "title": "\"Orbit Explorer\"",
-    "content": "# Orbit Explorer\n\nWelcome to Orbit Explorer, your destination for space exploration and discovery. Our website is dedicated to bringing you the latest news, images, and information about the cosmos.\n\nJoin us on a journey through the universe as we explore distant planets, moons, and stars. Our team of experts provides in-depth analysis and commentary on the latest discoveries and advancements in space science.\n\nWhether you're an avid space enthusiast or just curious about the mysteries of the cosmos, Orbit Explorer has something for everyone. Browse our collection of articles, videos, and interactive features to learn more about the wonders of the universe.\n\nSo come join us on this exciting adventure and discover the beauty and complexity of the cosmos.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

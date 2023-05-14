@@ -1,8 +1,0 @@
-{
-    "title": "\"Clock Wallpapers\"",
-    "content": "**Welcome to Clock Wallpapers!**\n\nOur website offers a variety of wallpapers featuring a simple graphic of a digital clock or timer. These wallpapers are perfect for anyone who wants to keep track of time while also adding a stylish touch to their desktop or mobile device.\n\nWith our clock wallpapers, you can easily set alarms and countdowns to help you stay on schedule and meet your deadlines. Whether you're at work, at home, or on the go, our wallpapers are a convenient way to stay organized and productive.\n\nChoose from a range of designs, including classic analog clocks, sleek digital displays, and fun countdown timers. Our wallpapers are available in a variety of resolutions and formats, so you can find the perfect fit for your device.\n\nSo why wait? Download one of our clock wallpapers today and start keeping track of time in style!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Data Art Wall\"",
-    "content": "🎨 **Data Art Wall** is a platform dedicated to bringing minimalist and modern data visualizations to your desktop. Our curated collection of wallpapers features stunning graphs and charts that transform your computer screen into a work of art. Whether you're a data enthusiast or simply appreciate beautiful design, our selection of wallpapers will inspire and captivate you. With new additions regularly added to our collection, you'll never run out of options to refresh your desktop and impress your colleagues. Upgrade your workspace with Data Art Wall today! 🖥️",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a graph of data visualization, in a minimalist and modern design.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Cyborg Art Hub\"",
-    "content": "Welcome to Cyborg Art Hub! \n\nOur website is a hub for all things cyborg-related. We showcase the best cyborg art from around the world, featuring artists who specialize in creating stunning illustrations of cyborgs and other futuristic beings. \n\nWhether you're a fan of science fiction or just appreciate the beauty of mechanical beings, our website has something for everyone. Our collection includes a variety of styles, from realistic depictions to more abstract interpretations. \n\nWe also offer resources for aspiring cyborg artists, including tutorials and inspiration galleries. So come explore our virtual gallery and immerse yourself in the world of cyborg art! 💻🤖🎨",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An illustration of a cyborg with a metallic body and glowing eyes\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

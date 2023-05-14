@@ -1,8 +1,0 @@
-{
-    "title": "\"Cyber Art Gallery\"",
-    "content": "# Cyber Art Gallery\n\nWelcome to our Cyber Art Gallery, where we showcase the best in cybernetic and futuristic art. Our collection features a wide range of styles and mediums, from digital paintings to 3D renders and beyond.\n\nOur mission is to bring together artists and enthusiasts who share a passion for all things cyber. Whether you're a seasoned professional or just starting out, we invite you to explore our collection and discover new works that inspire and excite.\n\nIn addition to our curated gallery, we also offer resources and tools for artists looking to improve their skills and connect with others in the community. From tutorials and workshops to forums and social events, we're here to help you grow as an artist and find your place in the world of cyber art.\n\nThank you for visiting our gallery, and we hope you enjoy your stay!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

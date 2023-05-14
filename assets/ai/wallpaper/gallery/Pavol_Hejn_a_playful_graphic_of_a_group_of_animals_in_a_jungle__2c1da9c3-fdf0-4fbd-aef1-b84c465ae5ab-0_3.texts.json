@@ -1,8 +1,0 @@
-{
-    "title": "\"Jungle Friends Fun\"",
-    "content": "# Jungle Friends Fun\n\nWelcome to Jungle Friends Fun, a website designed for children and educators who love animals and nature! Our website is filled with fun and educational resources that will engage and inspire young learners.\n\nExplore our collection of interactive games, puzzles, and quizzes that teach children about the different species of animals found in the jungle. Our content is designed to be both entertaining and informative, providing a well-rounded learning experience.\n\nIn addition to our online resources, we also offer printable worksheets and activities that can be used in the classroom or at home. These resources are perfect for parents and teachers who want to supplement their child's education with engaging and hands-on activities.\n\nJoin us on our journey through the jungle as we discover new and exciting facts about the animals that call it home. Let's learn and have fun together!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A playful graphic of a group of animals in a jungle for a children's or education website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

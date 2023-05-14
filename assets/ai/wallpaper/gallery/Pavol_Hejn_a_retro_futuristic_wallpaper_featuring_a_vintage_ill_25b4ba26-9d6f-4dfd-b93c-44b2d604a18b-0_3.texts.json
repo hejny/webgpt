@@ -1,8 +1,0 @@
-{
-    "title": "\"Neon Robot Wallpapers\"",
-    "content": "# Welcome to Neon Robot Wallpapers!\n\nOur website is dedicated to providing you with a collection of retro-futuristic wallpapers featuring vintage illustrations of robots set against vibrant neon-colored backgrounds. \n\nWhether you're a fan of sci-fi, robotics, or just love the aesthetic of neon colors, our collection has something for everyone. Each wallpaper is carefully curated to ensure that it meets our high standards for quality and style.\n\nAll of our wallpapers are available for free download in various resolutions, making it easy to find the perfect fit for your desktop, laptop, or mobile device. So why settle for a boring, plain background when you can have a stunning neon robot wallpaper instead?\n\nExplore our collection today and add some retro-futuristic flair to your digital life!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

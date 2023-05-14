@@ -1,8 +1,0 @@
-{
-    "title": "Pixel Bot Wallpapers.",
-    "content": "# Pixel Bot Wallpapers\n\nWelcome to Pixel Bot Wallpapers, your go-to destination for unique and retro-inspired wallpapers. Our collection features a variety of pixel art designs, including our popular retro-style robot wallpaper. \n\nOur wallpapers are perfect for adding a touch of nostalgia and personality to your desktop or mobile device. With a limited color palette and pixelated lines, each design is carefully crafted to bring a sense of simplicity and charm to your digital space.\n\nAt Pixel Bot Wallpapers, we're passionate about creating high-quality, one-of-a-kind designs that stand out from the crowd. Whether you're a fan of classic video games or simply appreciate the artistry of pixel art, our collection has something for everyone.\n\nBrowse our selection today and find the perfect wallpaper to showcase your unique style and personality.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A pixel art-inspired wallpaper featuring a retro-style robot, with a limited color palette and pixelated lines.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

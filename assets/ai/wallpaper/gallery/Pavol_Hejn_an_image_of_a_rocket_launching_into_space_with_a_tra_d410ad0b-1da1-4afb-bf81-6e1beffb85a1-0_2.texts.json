@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Launch Hub\"",
-    "content": "**Welcome to Space Launch Hub!**\n\nWe are your go-to destination for the latest news and updates on space launches around the world. Our mission is to provide you with up-to-date information on rocket launches, satellite deployments, and other space-related events.\n\nAt Space Launch Hub, we strive to make space exploration accessible to everyone. Whether you're a seasoned space enthusiast or just getting started, our website has something for you. From launch schedules to live streams, we've got you covered.\n\nJoin our community of like-minded individuals and stay informed about the latest developments in space technology. With our stunning wallpaper featuring a rocket launching into space, you'll feel like you're part of the action every time you visit our site.\n\nThank you for choosing Space Launch Hub - the ultimate resource for all things space! 🚀🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An image of a rocket launching into space with a trail of fire behind it, set against a starry sky.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

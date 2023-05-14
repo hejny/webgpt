@@ -1,8 +1,0 @@
-{
-    "title": "\"Sea Depths Exploration\"",
-    "content": "# Sea Depths Exploration\n\nWelcome to Sea Depths Exploration, a website dedicated to the exploration of the deep sea and its mysterious creatures. Our goal is to provide you with a glimpse into the fascinating world that lies beneath the waves.\n\nThrough our articles, photos, and videos, we aim to showcase the beauty and wonder of the deep sea, from the strange and otherworldly creatures that inhabit it, to the incredible geological formations that shape its landscape.\n\nJoin us on a journey of discovery as we delve into the depths of the ocean, uncovering its secrets and marveling at its wonders. Whether you're a seasoned ocean explorer or simply curious about what lies beneath the waves, Sea Depths Exploration has something for everyone.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

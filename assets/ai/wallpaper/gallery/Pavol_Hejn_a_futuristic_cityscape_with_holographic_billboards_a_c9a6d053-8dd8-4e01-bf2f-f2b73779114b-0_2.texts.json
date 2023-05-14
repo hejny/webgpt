@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Metropolis Hub\"",
-    "content": "# Future Metropolis Hub\n\nWelcome to the Future Metropolis Hub, your ultimate destination for all things related to futuristic cityscapes and technology. \n\nOur website is dedicated to providing you with the latest news, updates, and insights on the most cutting-edge innovations in urban design and development. From holographic billboards to flying cars, we cover it all.\n\nWhether you're a tech enthusiast, an urban planner, or simply someone who appreciates the beauty of a well-designed city, our website has something for you. Explore our articles, galleries, and resources to stay up-to-date on the latest trends and developments in the world of futuristic cities.\n\nJoin our community of like-minded individuals and share your own ideas and perspectives on the future of urban living. We believe that by coming together and sharing our knowledge and expertise, we can create a better tomorrow for everyone.\n\nSo what are you waiting for? Dive into the world of the Future Metropolis Hub and discover the endless possibilities of tomorrow's cities.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape with holographic billboards and flying cars\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

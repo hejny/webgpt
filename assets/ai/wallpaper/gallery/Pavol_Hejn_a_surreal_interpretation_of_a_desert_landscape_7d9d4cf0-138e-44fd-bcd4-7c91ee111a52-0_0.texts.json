@@ -1,8 +1,0 @@
-{
-    "title": "Desert Dreamscape.",
-    "content": "# Desert Dreamscape\n\nWelcome to Desert Dreamscape, a website that offers a surreal interpretation of a desert landscape. Our website is designed to transport you to a dreamlike world where the boundaries between reality and imagination are blurred.\n\nThrough our collection of stunning wallpapers, we aim to provide a unique visual experience that inspires creativity and ignites the senses. Whether you're looking for inspiration for your next art project or simply want to add a touch of surrealism to your digital space, our wallpapers are sure to captivate your imagination.\n\nAt Desert Dreamscape, we believe that art should be accessible to everyone. That's why all of our wallpapers are available for free download in high resolution. We hope that our website will inspire you to explore your own creativity and embrace the beauty of the surreal.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal interpretation of a desert landscape\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

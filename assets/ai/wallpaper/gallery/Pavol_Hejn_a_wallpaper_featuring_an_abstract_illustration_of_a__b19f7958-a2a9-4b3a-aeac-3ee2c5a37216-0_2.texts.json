@@ -1,8 +1,0 @@
-{
-    "title": "\"Futuristic Tech Wallpaper\"",
-    "content": "Welcome to our website, where you can find a stunning wallpaper featuring an abstract illustration of a futuristic data center. Our sleek and modern graphics, combined with a minimalist color scheme, will give your desktop or mobile device a stylish and high-tech look. Whether you're a tech enthusiast, a designer, or simply someone who appreciates beautiful visuals, our Futuristic Tech Wallpaper is the perfect choice for you. Browse our collection and download your favorite wallpaper today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper featuring an abstract illustration of a futuristic data center, with sleek and modern graphics and a minimalist color scheme.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

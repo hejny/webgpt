@@ -1,8 +1,0 @@
-{
-    "title": "\"Peak Pursuits\"",
-    "content": "# Peak Pursuits\n\nWelcome to Peak Pursuits, your ultimate destination for all things outdoor and adventure sports. Our website is dedicated to providing you with the latest news, tips, and resources to help you make the most of your time in the great outdoors.\n\nWhether you're an experienced hiker, a seasoned climber, or just starting out on your outdoor journey, we have something for everyone. From gear reviews and expert advice to trip planning and trail guides, our goal is to help you get outside and explore the world around you.\n\nAt Peak Pursuits, we believe that the best adventures are the ones that challenge us, push us out of our comfort zones, and connect us with nature. So whether you're looking to summit a mountain, paddle down a river, or simply enjoy a peaceful hike through the woods, we're here to help you make it happen.\n\nJoin our community of like-minded adventurers today and start exploring the world with Peak Pursuits.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a mountain range for an outdoor or adventure sports website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Misty Forestscape\"",
-    "content": "# Misty Forestscape\n\nWelcome to Misty Forestscape, your destination for peaceful and serene nature wallpapers. Our website features a collection of high-quality forest landscapes with misty backgrounds that will transport you to a world of tranquility and beauty.\n\nOur carefully curated selection of wallpapers is perfect for those who seek to escape the hustle and bustle of everyday life and find solace in the calming embrace of nature. Whether you're looking to spruce up your desktop or mobile device, our wallpapers are sure to bring a touch of serenity to your daily routine.\n\nAt Misty Forestscape, we believe that everyone deserves a moment of peace and quiet amidst the chaos of modern life. That's why we've made it our mission to provide you with the most breathtaking forest landscapes that will help you unwind and recharge your batteries.\n\nSo come on in, browse our collection, and find the perfect wallpaper that speaks to your soul. Let Misty Forestscape be your guide to a more peaceful and mindful existence.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A forest with a misty background\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

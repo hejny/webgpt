@@ -1,8 +1,0 @@
-{
-    "title": "\"AIGasExperiments\"",
-    "content": "# AIGasExperiments\n\nWelcome to AIGasExperiments, the website where you can follow the adventures of a team of AInauts and their AI companions as they conduct experiments on the surface of a massive, gas giant planet.\n\nOur team is comprised of some of the brightest minds in artificial intelligence and space exploration. Together, they are pushing the boundaries of what we know about this mysterious planet and its unique properties.\n\nThrough our website, you can stay up-to-date on the latest findings and discoveries from our team. We'll be sharing photos, videos, and scientific data from our experiments, giving you an inside look at the cutting-edge research happening on this distant world.\n\nSo come along with us on this incredible journey of discovery. Follow AIGasExperiments for all the latest updates and insights from our team of intrepid explorers.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

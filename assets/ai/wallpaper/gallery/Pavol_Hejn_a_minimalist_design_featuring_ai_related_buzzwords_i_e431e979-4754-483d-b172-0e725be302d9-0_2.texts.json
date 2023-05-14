@@ -1,8 +1,0 @@
-{
-    "title": "\"AI Word Wall\"",
-    "content": "# AI Word Wall\n\nAI Word Wall is a website dedicated to exploring and showcasing the latest buzzwords related to artificial intelligence. Our minimalist design features a collection of AI-related words in different fonts and colors, creating a visually stunning display that captures the essence of this rapidly evolving field.\n\nOur goal is to provide a platform for AI enthusiasts, researchers, and professionals to stay up-to-date with the latest trends and advancements in the field. Whether you're looking to expand your knowledge or simply admire the beauty of language, our AI Word Wall is sure to inspire and captivate.\n\nJoin us on this exciting journey as we explore the cutting-edge world of artificial intelligence, one word at a time.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist design featuring AI-related buzzwords in different fonts and colors\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

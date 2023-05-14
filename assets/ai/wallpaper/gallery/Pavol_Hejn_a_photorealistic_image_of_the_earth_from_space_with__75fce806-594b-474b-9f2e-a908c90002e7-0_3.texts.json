@@ -1,8 +1,0 @@
-{
-    "title": "\"Planet's Palette\"",
-    "content": "# Planet's Palette\n\nWelcome to Planet's Palette, your go-to destination for stunning wallpapers of planet Earth. Our website features a collection of high-quality images captured from space, showcasing the beauty and diversity of our planet.\n\nWhether you're looking for a vibrant landscape to brighten up your desktop background or a serene view to help you relax, we've got you covered. Our selection includes everything from bustling cities and majestic mountains to tranquil oceans and lush forests.\n\nAt Planet's Palette, we believe that every image tells a story and has the power to inspire. That's why we're committed to providing you with the best possible experience, whether you're browsing our gallery or downloading your favorite wallpaper.\n\nSo why wait? Start exploring our collection today and discover the wonders of our planet in all their glory!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photorealistic image of the Earth from space, with vibrant colors and intricate details.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

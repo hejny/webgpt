@@ -1,8 +1,0 @@
-{
-    "title": "\"MonoNet Wallpapers\"",
-    "content": "Welcome to MonoNet Wallpapers! Our website offers a wide selection of high-quality wallpapers featuring a simple illustration of an abstract network. Our minimal color palette of black and white makes these wallpapers perfect for those who prefer a clean and modern look. \n\nWhether you're looking to spruce up your desktop background or add some style to your phone screen, our wallpapers are sure to impress. With new designs added regularly, there's always something fresh to choose from. \n\nBrowse our collection today and find the perfect wallpaper to elevate your digital space!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of an abstract network, in a minimal color palette of black and white.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

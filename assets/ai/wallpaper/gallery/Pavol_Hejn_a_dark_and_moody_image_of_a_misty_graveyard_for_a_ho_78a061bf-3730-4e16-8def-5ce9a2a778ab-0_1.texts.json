@@ -1,8 +1,0 @@
-{
-    "title": "\"Haunted Gravesite\"",
-    "content": "# Haunted Gravesite\n\nWelcome to our website, Haunted Gravesite! We are a community of horror and supernatural enthusiasts who love all things spooky and mysterious. Our site is dedicated to sharing stories, news, and information about the paranormal world.\n\nJoin us as we explore haunted locations, share ghostly encounters, and discuss the latest in horror movies, books, and TV shows. Whether you're a seasoned ghost hunter or just starting to dip your toes into the world of horror, there's something for everyone here at Haunted Gravesite.\n\nSo come on in, pull up a chair, and get ready to be spooked. Who knows what kind of eerie tales and bone-chilling experiences await you?",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody image of a misty graveyard for a horror or supernatural website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

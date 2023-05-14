@@ -1,8 +1,0 @@
-{
-    "title": "\"Sci-Fi Metropolis\"",
-    "content": "# Sci-Fi Metropolis\n\nWelcome to Sci-Fi Metropolis, your ultimate destination for futuristic cityscapes and advanced technology! Our website features a stunning digital illustration of a city on a distant planet, complete with towering skyscrapers and state-of-the-art infrastructure.\n\nAt Sci-Fi Metropolis, we're passionate about exploring the possibilities of what our future cities could look like. From flying cars and holographic displays to eco-friendly energy sources and smart buildings, we showcase the latest advancements in urban design and technology.\n\nWhether you're a science fiction enthusiast, an architect, or simply someone who appreciates beautiful art, Sci-Fi Metropolis is the perfect place to immerse yourself in a world of endless possibilities. So come and explore our digital metropolis today!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a city on a distant planet, with towering buildings and advanced technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

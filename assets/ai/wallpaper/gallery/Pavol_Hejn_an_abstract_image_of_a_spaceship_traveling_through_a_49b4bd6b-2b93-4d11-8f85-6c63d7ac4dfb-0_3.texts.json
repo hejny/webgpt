@@ -1,8 +1,0 @@
-{
-    "title": "\"Surreal Space Adventure\"",
-    "content": "Welcome to our website, where we take you on a surreal space adventure! Our website is dedicated to bringing you the latest news and updates from the world of science fiction and space exploration. \n\nHere, you'll find articles, reviews, and interviews covering everything from classic sci-fi novels to the latest blockbuster movies. We're passionate about all things space-related, and we want to share that passion with you.\n\nOur team of writers and contributors are experts in their fields, with backgrounds in science, technology, and the arts. They bring a unique perspective to our content, offering insights and analysis that you won't find anywhere else.\n\nSo come along with us on this journey through the cosmos. Strap yourself in and get ready for an adventure like no other. We promise you won't be disappointed! 🚀🌌",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

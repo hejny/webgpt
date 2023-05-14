@@ -1,8 +1,0 @@
-{
-    "title": "\"Gravity's Canvas\"",
-    "content": "# Gravity's Canvas\n\nWelcome to Gravity's Canvas, a website dedicated to exploring the mysteries of space and the wonders of the universe. Our site features a stunning digital image of a black hole as its main wallpaper, with distorted shapes and bright colors representing the extreme gravity found in these cosmic objects.\n\nAt Gravity's Canvas, we strive to provide informative and engaging content about space exploration, astronomy, and astrophysics. From the latest news and discoveries to educational articles and resources, our goal is to inspire curiosity and promote understanding of the vast and awe-inspiring universe around us.\n\nWhether you're an amateur stargazer or a seasoned astronomer, we invite you to join us on this journey of discovery and exploration. So sit back, relax, and let Gravity's Canvas take you on a journey through the cosmos.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

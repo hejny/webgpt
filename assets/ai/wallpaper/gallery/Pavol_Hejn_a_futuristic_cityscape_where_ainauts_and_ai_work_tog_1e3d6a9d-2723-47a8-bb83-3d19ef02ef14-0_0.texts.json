@@ -1,8 +1,0 @@
-{
-    "title": "AI Metropolis.",
-    "content": "# AI Metropolis\n\nWelcome to AI Metropolis, the online platform that showcases the latest developments in futuristic architecture and infrastructure. Our website features stunning visuals of a cityscape where humans and artificial intelligence work together to create sustainable structures that meet the needs of modern society.\n\nExplore our collection of articles, videos, and images that highlight the innovative ways in which AI is transforming the built environment. From smart buildings and energy-efficient transportation systems to eco-friendly urban planning, we cover it all.\n\nJoin our community of architects, engineers, and tech enthusiasts who are passionate about creating a better world through the power of AI. Stay up-to-date with the latest trends and breakthroughs in the field and share your own ideas and projects with like-minded individuals.\n\nAt AI Metropolis, we believe that the future of cities lies in the integration of human creativity and technological innovation. Join us on this exciting journey towards a smarter, more sustainable, and more beautiful world.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

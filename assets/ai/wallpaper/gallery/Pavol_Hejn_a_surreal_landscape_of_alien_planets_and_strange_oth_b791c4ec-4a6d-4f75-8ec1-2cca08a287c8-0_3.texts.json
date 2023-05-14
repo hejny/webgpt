@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Worldscape\"",
-    "content": "# Alien Worldscape\n\nWelcome to Alien Worldscape, a website dedicated to exploring the mysteries of the universe through surreal landscapes and otherworldly creatures. \n\nOur collection of wallpapers features breathtaking scenes of alien planets and their inhabitants, each one more bizarre and fascinating than the last. Whether you're a science fiction fan, an artist looking for inspiration, or simply someone who appreciates the beauty of the unknown, our wallpapers are sure to transport you to another world.\n\nWe update our collection regularly, so be sure to check back often for new additions. And if you have any suggestions or requests for specific types of alien worlds or creatures you'd like to see, feel free to contact us – we're always eager to hear from fellow space enthusiasts.\n\nThank you for visiting Alien Worldscape – we hope our wallpapers inspire you to dream big and explore the infinite possibilities of the cosmos.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A surreal landscape of alien planets and strange, otherworldly creatures.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

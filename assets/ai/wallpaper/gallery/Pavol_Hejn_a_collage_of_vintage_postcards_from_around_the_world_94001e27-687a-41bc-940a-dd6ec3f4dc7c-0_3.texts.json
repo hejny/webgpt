@@ -1,8 +1,0 @@
-{
-    "title": "\"Postcard World\"",
-    "content": "# Postcard World\n\nWelcome to Postcard World, a website dedicated to showcasing vintage postcards from around the world. Our collection features postcards from different eras and countries, each with its own unique story to tell.\n\nExplore our curated selection of postcards and discover the beauty and diversity of the world through these historical artifacts. From scenic landscapes to iconic landmarks, our collection offers a glimpse into the past and a window into different cultures and traditions.\n\nWhether you're a collector, a history buff, or simply appreciate the artistry of vintage postcards, Postcard World is the perfect destination for you. Join us on a journey through time and across continents, and discover the rich history and cultural heritage of the world we live in.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A collage of vintage postcards from around the world\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

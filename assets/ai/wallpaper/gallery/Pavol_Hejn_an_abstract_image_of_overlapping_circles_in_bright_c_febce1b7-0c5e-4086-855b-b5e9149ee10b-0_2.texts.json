@@ -1,8 +1,0 @@
-{
-    "title": "\"Circular Spectrum\"",
-    "content": "Welcome to Circular Spectrum, a vibrant business and marketing website that is sure to catch your eye. Our abstract image of overlapping circles in bright colors perfectly captures the dynamic and interconnected nature of modern business.\n\nAt Circular Spectrum, we specialize in providing cutting-edge solutions for businesses looking to stay ahead of the curve. Our team of experts is dedicated to helping you achieve your goals through innovative strategies and effective communication.\n\nWhether you're a small startup or a large corporation, we have the tools and expertise to help you succeed. So why wait? Join the Circular Spectrum community today and start taking your business to the next level!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"An abstract image of overlapping circles in bright colors for a business or marketing website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

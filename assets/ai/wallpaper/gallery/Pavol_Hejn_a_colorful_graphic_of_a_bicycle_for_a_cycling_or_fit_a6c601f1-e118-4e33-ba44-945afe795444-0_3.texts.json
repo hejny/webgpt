@@ -1,8 +1,0 @@
-{
-    "title": "\"Bike Fit Fun\"",
-    "content": "# Bike Fit Fun\n\nWelcome to Bike Fit Fun, your go-to destination for all things cycling and fitness! Our website is dedicated to providing you with the latest news, tips, and advice on how to stay fit and healthy while enjoying the great outdoors on your bike.\n\nWhether you're a seasoned cyclist or just starting out, we've got something for everyone. From beginner-friendly routes to advanced training plans, our team of experts has you covered. We also feature reviews of the latest gear and equipment, so you can make informed decisions when it comes to purchasing new cycling gear.\n\nAt Bike Fit Fun, we believe that cycling should be both fun and rewarding. That's why we focus not only on the physical benefits of cycling but also on the mental and emotional benefits. Cycling is a great way to reduce stress, clear your mind, and connect with nature.\n\nSo what are you waiting for? Grab your bike and join us on this exciting journey towards better health and fitness. Don't forget to check out our colorful graphic of a bicycle, which perfectly captures the spirit of our website!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a bicycle for a cycling or fitness blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "title": "\"Space Explorer Hub\"",
-    "content": "# Welcome to Space Explorer Hub\n\nSpace Explorer Hub is your go-to destination for all things space-related. Our website is dedicated to providing you with the latest news, updates, and information about space exploration, astronomy, and everything in between.\n\nOur team of expert writers and researchers are passionate about space and are committed to bringing you the most accurate and up-to-date information available. Whether you're a seasoned space enthusiast or just starting to explore the wonders of the cosmos, we've got something for everyone.\n\nFrom breaking news stories to in-depth features and interviews with leading scientists and astronauts, our content covers a wide range of topics and is designed to inform, educate, and inspire. So why wait? Start exploring the universe today with Space Explorer Hub!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A photograph of an astronaut standing on the surface of the moon with Earth in the background.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

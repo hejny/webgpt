@@ -1,8 +1,0 @@
-{
-    "title": "\"Alien Ruins Expedition\"",
-    "content": "# Alien Ruins Expedition\n\nWelcome to Alien Ruins Expedition, your ultimate guide to exploring the mysteries of a distant planet's ancient civilization. Our team of AInauts has traveled across the galaxy to uncover the secrets hidden within these towering statues and temples.\n\nJoin us on an adventure as we delve into the history and culture of this long-lost civilization. Our website provides you with all the information you need to plan your own expedition, including maps, guides, and tips for navigating the treacherous terrain.\n\nWhether you're a seasoned explorer or a curious newcomer, Alien Ruins Expedition has something for everyone. So pack your bags and get ready to embark on a journey of discovery that will take you to the very limits of human knowledge.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

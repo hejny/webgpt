@@ -1,8 +1,0 @@
-{
-    "title": "\"Exotic Worldscape\"",
-    "content": "# Exotic Worldscape\n\nWelcome to Exotic Worldscape, your destination for breathtaking digital paintings of distant planets and otherworldly landscapes. Our curated collection features unique atmospheres, unusual terrains, and stunning vistas that will transport you to another world.\n\nWhether you're a sci-fi enthusiast, an art lover, or simply seeking inspiration, our high-quality wallpapers are sure to captivate your imagination and enhance your desktop or mobile device. With new additions regularly added to our collection, there's always something fresh and exciting to discover at Exotic Worldscape.\n\nBrowse our gallery today and experience the wonder and beauty of these exotic worlds for yourself.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital painting of a distant planet, with a unique atmosphere and unusual terrain.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

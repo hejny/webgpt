@@ -1,8 +1,0 @@
-{
-    "title": "Nebula Hub.",
-    "content": "# Welcome to Nebula Hub\n\nNebula Hub is your go-to website for all things space-related. Our website features stunning visuals of the universe, including a breathtaking photograph of a nebula as our main wallpaper.\n\nExplore our collection of articles and videos that cover a wide range of topics, from the latest discoveries in astrophysics to the history of space exploration. We also provide educational resources for students and teachers who are passionate about learning more about the cosmos.\n\nJoin our community of space enthusiasts and stay up-to-date with the latest news and events in the world of astronomy. Whether you're a seasoned astronomer or just starting out, Nebula Hub has something for everyone.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

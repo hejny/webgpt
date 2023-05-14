@@ -1,8 +1,0 @@
-{
-    "title": "\"Graveyard Shadows\"",
-    "content": "# Graveyard Shadows\n\nWelcome to Graveyard Shadows, a website dedicated to all things horror and supernatural. Our dark and moody aesthetic sets the tone for our content, which includes articles, reviews, and discussions about everything from classic horror movies to the latest supernatural TV shows.\n\nOur team of writers are passionate about the genre and are always on the lookout for the next great horror or supernatural story. We also feature guest writers who share their own experiences with the paranormal and explore the mysteries of the unknown.\n\nWhether you're a die-hard horror fan or just looking to explore the darker side of entertainment, Graveyard Shadows is the perfect destination for you. So come on in, but be warned - once you enter, there's no turning back...",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dark and moody image of a misty graveyard for a horror or supernatural website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

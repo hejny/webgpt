@@ -1,8 +1,0 @@
-{
-    "title": "\"Racing Fitness Fun\"",
-    "content": "# Racing Fitness Fun\n\nWelcome to Racing Fitness Fun, your go-to website for all things sports and fitness! Our mission is to inspire and motivate you to lead a healthy and active lifestyle through engaging content and resources.\n\nWe believe that fitness should be fun and accessible to everyone, regardless of their level of experience or expertise. That's why we offer a wide range of articles, videos, and tutorials on various sports and fitness activities, from cycling and running to yoga and strength training.\n\nOur community of like-minded individuals is here to support and encourage you on your fitness journey. Connect with other members, share your progress, and get inspired by their success stories.\n\nSo what are you waiting for? Join Racing Fitness Fun today and start living your best, healthiest life!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A colorful graphic of a bicycle race for a sports or fitness website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

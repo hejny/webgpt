@@ -1,8 +1,0 @@
-{
-    "title": "\"Virtual Headset Hub\"",
-    "content": "Welcome to Virtual Headset Hub! 🎉\n\nOur website is dedicated to all things virtual reality. We are a community of VR enthusiasts who love to explore the latest in VR technology, games, and experiences.\n\nAt Virtual Headset Hub, you'll find everything you need to know about VR, from reviews of the newest headsets to guides on how to set up your own VR system. We also have a forum where you can connect with other VR fans and share your thoughts and experiences.\n\nWhether you're a seasoned VR pro or just getting started, we've got something for everyone here at Virtual Headset Hub. So put on your headset and join us on this exciting journey into the world of virtual reality! 💻👓🌎",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\n- You can include UTF-8 emojis\n- You can use formatting like **bold** or _italic_\n- Do not describe the wallpaper itself, but rather the website which is using it.\n- Do not start with any title - title will be included automatically\n- Do not include links\n- Do not include images"
-    }
-}

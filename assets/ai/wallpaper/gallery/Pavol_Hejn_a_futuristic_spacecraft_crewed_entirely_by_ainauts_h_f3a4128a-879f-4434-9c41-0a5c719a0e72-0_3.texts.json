@@ -1,8 +1,0 @@
-{
-    "title": "\"AInauts Odyssey\"",
-    "content": "# AInauts Odyssey\n\nWelcome to AInauts Odyssey, a website dedicated to exploring the exciting world of artificial intelligence and space travel. Our site features a stunning wallpaper depicting a futuristic spacecraft crewed entirely by AInauts hurtling through space at incredible speeds.\n\nAt AInauts Odyssey, we are passionate about the intersection of AI and space exploration. We believe that AI has the potential to revolutionize the way we explore and understand the universe around us. Through our articles, videos, and other content, we aim to educate and inspire people about the possibilities of AI in space.\n\nWhether you're an AI enthusiast, a space buff, or just someone who loves cool sci-fi imagery, AInauts Odyssey is the perfect destination for you. So come join us on this exciting journey into the future of space exploration!",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

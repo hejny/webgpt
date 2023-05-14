@@ -1,8 +1,0 @@
-{
-    "title": "\"Future Cityscape\"",
-    "content": "# Future Cityscape\n\nWelcome to Future Cityscape, your go-to destination for futuristic cityscapes and digital illustrations. Our website features a stunning collection of high-quality wallpapers, showcasing advanced technology and towering buildings on distant planets.\n\nWhether you're looking to add some sci-fi flair to your desktop background or simply appreciate the artistry of digital illustration, our curated selection has something for everyone. Browse through our extensive library of images and find the perfect wallpaper to inspire your imagination.\n\nAt Future Cityscape, we are passionate about bringing the future to life through art. Join us on a journey to explore the possibilities of tomorrow and immerse yourself in the world of science fiction and fantasy.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A digital illustration of a city on a distant planet, with towering buildings and advanced technology.\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

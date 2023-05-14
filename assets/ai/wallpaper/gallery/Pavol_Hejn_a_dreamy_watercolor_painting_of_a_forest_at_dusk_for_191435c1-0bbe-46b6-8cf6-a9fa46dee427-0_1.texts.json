@@ -1,8 +1,0 @@
-{
-    "title": "\"Wilderness Chronicles\"",
-    "content": "# Wilderness Chronicles\n\nWelcome to Wilderness Chronicles, a nature and wildlife blog dedicated to exploring the wonders of the great outdoors. Our goal is to inspire and educate our readers about the beauty and importance of nature through captivating stories, stunning photography, and informative articles.\n\nJoin us on a journey through the world's most breathtaking landscapes, from towering mountains and dense forests to pristine beaches and crystal-clear lakes. Discover the incredible diversity of wildlife that inhabits these environments, from majestic elephants and fierce predators to tiny insects and colorful birds.\n\nWhether you're an avid nature lover or simply looking to escape the hustle and bustle of everyday life, Wilderness Chronicles has something for everyone. So sit back, relax, and let us take you on an unforgettable adventure into the heart of the wilderness.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}

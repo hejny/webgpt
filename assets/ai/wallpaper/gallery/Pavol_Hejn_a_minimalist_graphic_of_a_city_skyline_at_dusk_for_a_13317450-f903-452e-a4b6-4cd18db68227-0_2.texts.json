@@ -1,8 +1,0 @@
-{
-    "title": "\"Dusk Cityscape\"",
-    "content": "# Dusk Cityscape\n\nWelcome to Dusk Cityscape, a real estate and architecture website showcasing the beauty of urban skylines at dusk. Our minimalist graphic of a city skyline at dusk sets the tone for our website, which is dedicated to highlighting the stunning architecture and real estate developments in cities around the world.\n\nOur site features breathtaking photography and in-depth articles on the latest trends in urban design and development. From sleek skyscrapers to historic landmarks, we showcase the best of what cities have to offer. Whether you're a real estate professional, an architecture enthusiast, or simply someone who loves the beauty of cityscapes, Dusk Cityscape has something for you.\n\nJoin us as we explore the world's most captivating cities and the incredible real estate and architecture that make them so special.",
-    "prompts": {
-        "title": "Write me short (max 3 words) title for website with main wallpaper that is:\n\n\"A minimalist graphic of a city skyline at dusk for a real estate or architecture website\"\n\nThe title should not be 1:1 copy of the prompt but rather a short description of the website which is using this wallpaper.",
-        "content": "Write me some content for this website in markdown format.\nThe content should be a short description of the website which is using this wallpaper.\n\nDo not describe the wallpaper itself, but rather the website which is using it."
-    }
-}
