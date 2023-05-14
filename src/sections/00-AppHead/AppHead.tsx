@@ -14,10 +14,12 @@ export function AppHead() {
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
     const skin = useSkin();
 
-    const title = wallpaper.title;
+    const title = '👓' + wallpaper.title;
     const description =
         '⭐' +
-        removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content)); /* <- TODO: !!! Better/remove the prefix ⭐ */
+        removeMarkdownFormatting(
+            removeMarkdownLinks(wallpaper.content),
+        ); /* <- TODO: !!! Better/remove the prefix 👓⭐ ?Generate by ChatGPT? */
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
