@@ -229,11 +229,7 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
             const usedFontsSize = usedFonts.size;
             usedFonts.add(font);
             if (usedFontsSize !== usedFonts.size) {
-                console.info(
-                    `🔤 Using fonts: ${Array.from(usedFonts)
-                        .map((font) => `"${font}"`)
-                        .join(', ')}`,
-                );
+                console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
             }
 
             console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
@@ -243,6 +239,8 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
     if (isCommited) {
         await commit(getWallpapersDir(), `🧾 Generate wallpapers texts`);
     }
+
+    console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
 
     console.info(`[ Done 🧾  Generating wallpapers texts ]`);
 }
