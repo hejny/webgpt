@@ -78,14 +78,15 @@ async function forEachWallpaper(options: {
         console.info(chalk.bgGray(statsString) + chalk.grey(`${wallpaperPath.split('\\').join('/')}`));
 
         const metadataPath = wallpaperPath.replace(/\.png$/, '.json');
-        const contentPath = wallpaperPath.replace(/\.png$/, '.content.md');
+        const contentPath = wallpaperPath.replace(/\.png$/, '.contentx.md');
 
         if (!(await isFileExisting(metadataPath))) {
             // TODO: !! Do not crash for all processes JUST report at the end
             throw new Error(`Metadata file does not exist "${metadataPath}"`);
         }
 
-        const work = /* not await */ makeWork({ metadataPath, contentPath });
+        // const work = /* not await */ makeWork({ metadataPath, contentPath });
+        const work = forTime(1000);
         workingOn.add(work);
         work.catch(() => void 0).then(() => void workingOn.delete(work));
 
