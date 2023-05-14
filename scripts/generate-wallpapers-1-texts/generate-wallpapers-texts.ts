@@ -158,6 +158,8 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
         },
     });
 
+    const usedFonts = new Set<string>();
+
     await forEachWallpaper({
         parallel,
         async makeWork({ metadataPath, contentPath }) {
@@ -223,6 +225,17 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
                 ) + '\n',
                 'utf8',
             );
+
+            const usedFontsSize = usedFonts.size;
+            usedFonts.add(font);
+            if (usedFontsSize !== usedFonts.size) {
+                console.info(
+                    `🔤 Using fonts: ${Array.from(usedFonts)
+                        .map((font) => `"${font}"`)
+                        .join(', ')}`,
+                );
+            }
+
             console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
         },
     });
