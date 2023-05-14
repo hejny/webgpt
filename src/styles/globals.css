@@ -24,12 +24,11 @@ body {
     display: inline-block;
     text-decoration: none;
 
-    transition: all 0.05s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
-    background-color: rgba(44, 44, 44, 0.705);
-    color: var(--highlighted-text-color);
+    filter: hue-rotate(30deg);
     box-shadow: var(--highlighted-text-color) 0 0 5px;
 }
 

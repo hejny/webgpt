@@ -15,7 +15,9 @@ export function AppHead() {
     const skin = useSkin();
 
     const title = wallpaper.title;
-    const description = removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content));
+    const description =
+        '⭐' +
+        removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content)); /* <- TODO: !!! Better/remove the prefix ⭐ */
 
     const homeUrl = 'https://www.ai.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
@@ -28,7 +30,7 @@ export function AppHead() {
 
                 {/* Primary meta tags */}
                 <title>{title}</title>
-                <meta name="description" content={removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content))} />
+                <meta name="description" content={description} />
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
                 <meta
                     name="theme-color"

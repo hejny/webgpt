@@ -4,6 +4,7 @@ import { Vector } from 'xyzt';
 import { PageProps } from '..';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
+import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { AppHead } from '../../sections/00-AppHead/AppHead';
@@ -29,6 +30,7 @@ export default function ShowcasePage({ wallpapers }: PageProps) {
                     <ShowcaseWelcomeSection />
                     {/*<ReferencesSection variant="SHORT" />*/}
                 </main>
+                <GetWebButton />
                 <footer>
                     <FooterSection />
                 </footer>
@@ -39,8 +41,8 @@ export default function ShowcasePage({ wallpapers }: PageProps) {
 
 export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
     return {
-        paths: [], // <- Note: indicates that no page needs be created at build time
-        fallback: 'blocking', // <- Note: indicates the type of fallback
+        paths: (await getWallpapers()).map(({ id }) => `/showcase/${id}`), // <- Note: indicates that no page needs be created at build time
+        fallback: 'blocking', // <- Note: indicates the type of fallback - TODO: !!! Probbably change to false and solve 404 problem
     };
 };
 
@@ -48,7 +50,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: await getWallpapers(),
+            wallpapers: await getWallpapers(/* <- TODO: !!! Put here ONLY the listed wallpaper */),
         },
     };
 }
@@ -59,7 +61,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
  * TODO: !!! When sharing link to showcase, preview to socials should work
  * TODO: !!! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !!! Preview as on [Mobile][Tablet] - show the direct QR code
- * TODO: !!!! Button to [I want this website] 
  * TODO: !! Better IDs for wallpapers - make it without GET parameters
  * TODO: !! Make foreground-background paralax effect for each wallpaper
  * TODO: !! Fix Shuffle without React hydration error
