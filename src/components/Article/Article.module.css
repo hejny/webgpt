@@ -1,4 +1,35 @@
-
-
-.Article{  
+.Article {
 }
+
+.Article h1 {
+    line-height: 110%;
+    margin-bottom: 60px;
+    font-size: 65px;
+}
+
+.Article h2 {
+    margin-top: 30px;
+    border-bottom: 1px solid var(--normal-text-color);
+}
+
+.Article ul,
+.Article ol {
+    text-align: left;
+}
+
+.Article hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*
+TODO:
+
+
+@media only screen and (max-width: 600px) {
+    .page main h1 {
+        font-size: 70px;
+    }
+}
+
+*/

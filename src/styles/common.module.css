@@ -77,8 +77,10 @@
     color: var(--highlighted-text-color);
 }
 
+/*
+
 .page h1 {
-    line-height: 70%;
+    line-height: 110%;
     margin-bottom: 60px;
 }
 
@@ -92,18 +94,17 @@
 .page main h1 {
     /* TODO: h1 should be semantically in <header/> */
 
-    /*/
+/*/
     outline: 1px dotted purple;
-    /**/
+    /** /
 
     font-size: 85px;
-    white-space: nowrap;
 
     /*
     TODO: Implement in handwriteText
     text-shadow: #dec36f 0px 0px 25px /* <- [🎨] */
 
-    /* TODO: DRY */
+/* TODO: DRY * /
     margin: 0;
     padding: 0;
     margin-block-start: 0;
@@ -117,6 +118,8 @@
         font-size: 70px;
     }
 }
+
+*/
 
 .page footer {
     /*/
