@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a digital calendar or to-do list, with space for notes and reminders."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a simple yet functional digital calendar/to-do list wallpaper. This wallpaper is perfect for those who want to stay organized and on top of their tasks.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract illustration of a virtual reality environment, with futuristic graphics and a minimalist color scheme."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of an abstract illustration of a virtual reality environment. This wallpaper is perfect for those who love futuristic graphics and minimalist color schemes.
 

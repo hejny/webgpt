@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # AI-Powered Search Engine Wallpaper
 
@@ -30,24 +30,24 @@ Our wallpaper features an abstract illustration of an AI-powered search engine w
 
 Here are some user stories from our satisfied customers:
 
-- "I love this wallpaper! It's the perfect addition to my home office. The design is so modern and sleek, and it really adds a pop of color to my space." - Jane, Graphic Designer
-- "As a software engineer, I'm always looking for ways to incorporate technology into my life. This wallpaper is the perfect way to do that. It's a subtle nod to the power of AI, and it looks great on my desktop." - Mark, Software Engineer
-- "I'm not usually one for abstract art, but there's something about this wallpaper that really speaks to me. It's like a visual representation of the future of technology." - Sarah, Artist
+-   "I love this wallpaper! It's the perfect addition to my home office. The design is so modern and sleek, and it really adds a pop of color to my space." - Jane, Graphic Designer
+-   "As a software engineer, I'm always looking for ways to incorporate technology into my life. This wallpaper is the perfect way to do that. It's a subtle nod to the power of AI, and it looks great on my desktop." - Mark, Software Engineer
+-   "I'm not usually one for abstract art, but there's something about this wallpaper that really speaks to me. It's like a visual representation of the future of technology." - Sarah, Artist
 
 ## References
 
 If you're interested in learning more about AI-powered search engines, we recommend checking out these resources:
 
-- [How AI is changing the way we search for information](#)
-- [The benefits and drawbacks of using AI-powered search engines](#)
-- [A brief history of search engines and their evolution](#)
+-   [How AI is changing the way we search for information](#)
+-   [The benefits and drawbacks of using AI-powered search engines](#)
+-   [A brief history of search engines and their evolution](#)
 
 ## Contact Us
 
 If you have any questions or comments about our wallpaper, please don't hesitate to reach out to us. You can contact us via email at [info@aiwallpaper.com](mailto:info@aiwallpaper.com) or through our social media channels:
 
-- [Twitter](#)
-- [Instagram](#)
-- [Facebook](#)
+-   [Twitter](#)
+-   [Instagram](#)
+-   [Facebook](#)
 
 Thank you for visiting our website, and we hope you enjoy our AI-powered search engine wallpaper!

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our website, where we bring you the latest and greatest in AI technology. Our team of AInauts is constantly pushing the boundaries of what's possible with artificial intelligence, and we're excited to share our latest project with you.
 

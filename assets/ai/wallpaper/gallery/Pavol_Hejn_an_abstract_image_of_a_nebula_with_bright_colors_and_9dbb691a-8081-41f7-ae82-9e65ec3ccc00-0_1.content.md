@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The "Montserrat" font is a great fit for the website.-->
+<!--font:The Montserrat font is a great fit for the website.-->
 
 # Stellar Dreams - Abstract Nebula Wallpaper
 
@@ -32,9 +32,9 @@ The wallpaper is available in high-resolution formats, ensuring that every detai
 
 Our wallpaper has been used by people from all walks of life, including:
 
-- Space enthusiasts who want to bring a piece of the cosmos into their daily lives
-- Creatives who find inspiration in the intricate patterns and vibrant colors of the designs
-- Professionals who want to add a touch of elegance and sophistication to their workspaces
+-   Space enthusiasts who want to bring a piece of the cosmos into their daily lives
+-   Creatives who find inspiration in the intricate patterns and vibrant colors of the designs
+-   Professionals who want to add a touch of elegance and sophistication to their workspaces
 
 ## How to Download
 
@@ -48,6 +48,6 @@ If you have any questions or comments about our wallpaper, please feel free to r
 
 ## References
 
-- NASA's Hubble Space Telescope: [https://www.nasa.gov/mission_pages/hubble/main/index.html](#)
-- Space.com: [https://www.space.com/](#)
-- Astronomy Magazine: [https://astronomy.com/](#)
+-   NASA's Hubble Space Telescope: [https://www.nasa.gov/mission_pages/hubble/main/index.html](#)
+-   Space.com: [https://www.space.com/](#)
+-   Astronomy Magazine: [https://astronomy.com/](#)

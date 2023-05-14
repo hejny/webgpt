@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # "Spiderweb Serenity" - A Nature-Inspired Wallpaper for Your Desktop
 
@@ -26,9 +26,9 @@ Welcome to our website featuring "Spiderweb Serenity," a stunning wallpaper capt
 
 Our wallpaper is not only aesthetically pleasing but also provides numerous benefits, including:
 
-- **Relaxation:** The intricate details of the spiderweb and the glistening dew drops create a calming effect that can help reduce stress levels.
-- **Nature-Inspired:** Being surrounded by nature has been shown to improve overall well-being and productivity.
-- **High-Quality:** Our wallpaper is of the highest quality, ensuring that the image will be crisp and clear on any screen size.
+-   **Relaxation:** The intricate details of the spiderweb and the glistening dew drops create a calming effect that can help reduce stress levels.
+-   **Nature-Inspired:** Being surrounded by nature has been shown to improve overall well-being and productivity.
+-   **High-Quality:** Our wallpaper is of the highest quality, ensuring that the image will be crisp and clear on any screen size.
 
 ## User Stories
 
@@ -48,8 +48,8 @@ To download our wallpaper, simply right-click on the image and select "Save Imag
 
 Here are some resources related to the benefits of nature and relaxation:
 
-- [The Health Benefits of Nature](https://www.health.harvard.edu/mind-and-mood/sour-mood-getting-you-down-get-back-to-nature)
-- [Relaxation Techniques for Stress Relief](https://www.helpguide.org/articles/stress/relaxation-techniques-for-stress-relief.htm)
+-   [The Health Benefits of Nature](https://www.health.harvard.edu/mind-and-mood/sour-mood-getting-you-down-get-back-to-nature)
+-   [Relaxation Techniques for Stress Relief](https://www.helpguide.org/articles/stress/relaxation-techniques-for-stress-relief.htm)
 
 ## Contact Us
 

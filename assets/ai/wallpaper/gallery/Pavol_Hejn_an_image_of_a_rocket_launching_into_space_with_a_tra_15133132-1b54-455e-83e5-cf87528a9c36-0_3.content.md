@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "An image of a rocket launching into space with a trail of fire behind it, set against a starry sky."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our website featuring a stunning wallpaper of a rocket launching into space with a trail of fire behind it, set against a starry sky. 
+Welcome to our website featuring a stunning wallpaper of a rocket launching into space with a trail of fire behind it, set against a starry sky.
 
 This captivating image captures the excitement and wonder of space exploration. The rocket's powerful engines ignite, propelling it upwards towards the vast expanse of the universe. The fiery trail left behind creates a striking contrast against the dark backdrop of the starry sky.
 

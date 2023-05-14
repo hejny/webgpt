@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Fractal Wallpaper
 
@@ -14,10 +14,10 @@ Welcome to our website featuring a stunning wallpaper showcasing a mesmerizing f
 
 ## Features
 
-- Colorful fractal pattern
-- Intricate lines and shapes
-- High-quality resolution
-- Perfect for desktops, laptops, and mobile devices
+-   Colorful fractal pattern
+-   Intricate lines and shapes
+-   High-quality resolution
+-   Perfect for desktops, laptops, and mobile devices
 
 ## Download
 

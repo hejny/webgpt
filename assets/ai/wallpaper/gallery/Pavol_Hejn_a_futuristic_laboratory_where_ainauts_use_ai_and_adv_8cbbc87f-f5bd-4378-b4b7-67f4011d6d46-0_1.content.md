@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # The AI Lab: Where Science Fiction Becomes Reality
 
@@ -46,9 +46,9 @@ Quantum computing is one of the most exciting areas of research in computer scie
 
 Our work at the AI Lab has the potential to impact people's lives in countless ways. Here are just a few examples of how our research could make a difference:
 
-- **John**, a farmer in rural Africa, is struggling to grow enough food to feed his family. With the help of our synthetic biology team, he is able to use genetically modified crops that are resistant to drought and pests, increasing his yields and improving his quality of life.
-- **Maria**, a cancer patient, is undergoing chemotherapy but experiencing severe side effects. Our AI-powered drug discovery system helps her doctor find a personalized treatment plan that minimizes her symptoms and maximizes her chances of recovery.
-- **David**, a climate scientist, is studying the effects of global warming on the world's oceans. By using our quantum computing system to simulate complex climate models, he is able to make more accurate predictions about the future of our planet.
+-   **John**, a farmer in rural Africa, is struggling to grow enough food to feed his family. With the help of our synthetic biology team, he is able to use genetically modified crops that are resistant to drought and pests, increasing his yields and improving his quality of life.
+-   **Maria**, a cancer patient, is undergoing chemotherapy but experiencing severe side effects. Our AI-powered drug discovery system helps her doctor find a personalized treatment plan that minimizes her symptoms and maximizes her chances of recovery.
+-   **David**, a climate scientist, is studying the effects of global warming on the world's oceans. By using our quantum computing system to simulate complex climate models, he is able to make more accurate predictions about the future of our planet.
 
 ## References
 

@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A mountain range with a clear blue sky"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a stunning wallpaper of a mountain range with a clear blue sky! 
+Welcome to our website featuring a stunning wallpaper of a mountain range with a clear blue sky!
 
 This breathtaking image captures the beauty and majesty of nature in all its glory. The towering peaks of the mountains stand tall against the backdrop of a vivid blue sky, creating a sense of awe and wonder that is sure to inspire and uplift you.
 

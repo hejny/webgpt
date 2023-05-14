@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a captivating wallpaper that showcases an abstract illustration of a dark and ominous machine. This wallpaper is perfect for those who appreciate the beauty of mechanical parts and the allure of glowing red lights.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract watercolor painting with vibrant colors for an art or design blog"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 If you're looking for a wallpaper that will make a statement, look no further than this abstract watercolor painting. With its vibrant colors and bold brushstrokes, it's sure to catch the eye of anyone who sees it.
 

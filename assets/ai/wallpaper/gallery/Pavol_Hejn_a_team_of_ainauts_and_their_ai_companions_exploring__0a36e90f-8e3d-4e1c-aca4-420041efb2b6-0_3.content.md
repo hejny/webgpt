@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space.
 

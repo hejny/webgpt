@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # AI Spacecraft Wallpaper: Explore the Universe with Us
 
@@ -42,16 +42,16 @@ Here are some stories from users who have used our spacecraft to explore the uni
 
 We offer a range of services to help organizations and individuals explore the universe:
 
-- **Spacecraft Development:** We can develop customized spacecraft that meet your specific needs.
-- **Data Analysis:** Our team can analyze the data collected by our spacecraft to provide valuable insights.
-- **Consulting:** We offer consulting services to help you plan and execute your space exploration missions.
+-   **Spacecraft Development:** We can develop customized spacecraft that meet your specific needs.
+-   **Data Analysis:** Our team can analyze the data collected by our spacecraft to provide valuable insights.
+-   **Consulting:** We offer consulting services to help you plan and execute your space exploration missions.
 
 ## References
 
 Check out some of our recent publications and news articles:
 
-- *AI-Powered Spacecraft Successfully Navigates Through Asteroid Field* (Space News)
-- *Exploring the Universe with Artificial Intelligence* (Scientific American)
+-   _AI-Powered Spacecraft Successfully Navigates Through Asteroid Field_ (Space News)
+-   _Exploring the Universe with Artificial Intelligence_ (Scientific American)
 
 ## Contact Us
 

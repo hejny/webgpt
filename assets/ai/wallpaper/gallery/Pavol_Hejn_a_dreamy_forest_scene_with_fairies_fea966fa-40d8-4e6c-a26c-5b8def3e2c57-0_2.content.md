@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Dreamy Forest Scene with Fairies
 
@@ -20,9 +20,9 @@ Welcome to our website featuring a dreamy forest scene with fairies wallpaper. I
 
 ## Features
 
-- High-quality image resolution
-- Captivating and whimsical design
-- Perfect for adding a touch of magic to your device's background
+-   High-quality image resolution
+-   Captivating and whimsical design
+-   Perfect for adding a touch of magic to your device's background
 
 ## How to Download
 
@@ -41,10 +41,10 @@ This wallpaper features a mystical forest scene complete with vibrant green foli
 
 This wallpaper is compatible with a variety of devices, including:
 
-- Desktop computers
-- Laptops
-- Tablets
-- Smartphones
+-   Desktop computers
+-   Laptops
+-   Tablets
+-   Smartphones
 
 ## Conclusion
 

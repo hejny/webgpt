@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Stargazing Wallpapers - Meteor Shower
 
@@ -28,9 +28,9 @@ Meteor showers occur when the Earth passes through a trail of debris left by a c
 
 Some of the most well-known meteor showers include:
 
-- Perseids (August)
-- Geminids (December)
-- Leonids (November)
+-   Perseids (August)
+-   Geminids (December)
+-   Leonids (November)
 
 To see a meteor shower, find a dark location away from city lights and give your eyes time to adjust to the darkness. Bring a blanket or chair to sit on and enjoy the show!
 
@@ -46,8 +46,8 @@ Our meteor shower wallpaper is available in a variety of resolutions to fit your
 
 ## References
 
-- EarthSky: [Meteor Shower Guide](https://earthsky.org/astronomy-essentials/earthskys-meteor-shower-guide)
-- NASA: [Meteor Showers](https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-are-meteors-k4.html)
+-   EarthSky: [Meteor Shower Guide](https://earthsky.org/astronomy-essentials/earthskys-meteor-shower-guide)
+-   NASA: [Meteor Showers](https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-are-meteors-k4.html)
 
 ## Contact Us
 

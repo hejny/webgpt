@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a star field, with bright colors and swirling patterns that represent the mystery and beauty of the cosmos."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper that showcases the beauty and mystery of the cosmos. This abstract image of a star field is sure to captivate your imagination with its bright colors and swirling patterns.
 

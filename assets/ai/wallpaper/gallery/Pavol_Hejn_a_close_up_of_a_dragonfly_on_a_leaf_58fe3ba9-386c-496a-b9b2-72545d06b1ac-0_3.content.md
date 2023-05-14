@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Dragonfly Wallpaper for Nature Lovers
 
-Welcome to our website dedicated to nature enthusiasts who love to bring the beauty of the outdoors into their homes. Our dragonfly wallpaper captures the intricate details of these fascinating creatures in a stunning close-up shot on a leaf. 
+Welcome to our website dedicated to nature enthusiasts who love to bring the beauty of the outdoors into their homes. Our dragonfly wallpaper captures the intricate details of these fascinating creatures in a stunning close-up shot on a leaf.
 
 ## Why Choose Dragonfly Wallpaper?
 
@@ -53,8 +53,8 @@ For more detailed instructions, check out our [wallpaper installation guide](#in
 
 If you're interested in learning more about dragonflies and their symbolism, check out these resources:
 
-- [Dragonfly Symbolism & Meaning](https://www.buildingbeautifulsouls.com/symbols-meanings/animal-symbolism/dragonfly-symbolism-meaning/)
-- [Dragonfly Facts & Information](https://www.dragonfly-site.com/)
+-   [Dragonfly Symbolism & Meaning](https://www.buildingbeautifulsouls.com/symbols-meanings/animal-symbolism/dragonfly-symbolism-meaning/)
+-   [Dragonfly Facts & Information](https://www.dragonfly-site.com/)
 
 ## Contact Us
 

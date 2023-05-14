@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
-Welcome to our website featuring a stunning digital image of a galaxy collision! This mesmerizing wallpaper captures the chaos and beauty of two galaxies colliding in space. 
+Welcome to our website featuring a stunning digital image of a galaxy collision! This mesmerizing wallpaper captures the chaos and beauty of two galaxies colliding in space.
 
 The swirling colors and distorted shapes in the image represent the intense gravitational forces at play during this cosmic event. As the galaxies merge, their stars, gas, and dust are pulled and twisted into new formations, creating a spectacular display of light and color.
 

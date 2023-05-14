@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A colorful mandala pattern for a yoga or meditation website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our yoga and meditation website, where we strive to create a peaceful and harmonious space for all who visit. Our latest addition to the site is a stunning wallpaper featuring a colorful mandala pattern that perfectly embodies the essence of mindfulness and tranquility.
 

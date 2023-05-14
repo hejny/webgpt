@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of an illustration depicting a space station in orbit around a gas giant planet. This breathtaking image showcases the beauty and vastness of outer space, with rings and storms visible in the background.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Garden Snail Wallpaper
 
@@ -36,24 +36,24 @@ We offer a variety of resolutions to ensure that our wallpapers look great on an
 
 ## User Stories
 
-- "I love having a little piece of nature on my computer screen. The garden snail wallpaper is so cute and reminds me to slow down and appreciate the beauty around me." - Sarah, 27
-- "As a biology student, I'm always looking for ways to incorporate my love of science into my daily life. The garden snail wallpaper is a perfect way to do that!" - Michael, 21
-- "I'm an avid gardener, and I love seeing all the different creatures that visit my yard. The garden snail wallpaper is a fun reminder of all the little things that make my garden so special." - Karen, 45
+-   "I love having a little piece of nature on my computer screen. The garden snail wallpaper is so cute and reminds me to slow down and appreciate the beauty around me." - Sarah, 27
+-   "As a biology student, I'm always looking for ways to incorporate my love of science into my daily life. The garden snail wallpaper is a perfect way to do that!" - Michael, 21
+-   "I'm an avid gardener, and I love seeing all the different creatures that visit my yard. The garden snail wallpaper is a fun reminder of all the little things that make my garden so special." - Karen, 45
 
 ## References
 
 If you're interested in learning more about garden snails and their role in the ecosystem, check out these resources:
 
-- [National Wildlife Federation](#)
-- [Encyclopedia Britannica](#)
-- [Smithsonian Magazine](#)
+-   [National Wildlife Federation](#)
+-   [Encyclopedia Britannica](#)
+-   [Smithsonian Magazine](#)
 
 ## Contact Us
 
 If you have any questions or comments about our garden snail wallpapers, please don't hesitate to contact us. We're always happy to hear from fellow nature enthusiasts!
 
-- Email: info@gardensnailwallpaper.com
-- Phone: 555-1234
-- Address: 123 Main Street, Anytown USA
+-   Email: info@gardensnailwallpaper.com
+-   Phone: 555-1234
+-   Address: 123 Main Street, Anytown USA
 
 Thank you for visiting our website, and we hope that you enjoy our collection of garden snail wallpapers!

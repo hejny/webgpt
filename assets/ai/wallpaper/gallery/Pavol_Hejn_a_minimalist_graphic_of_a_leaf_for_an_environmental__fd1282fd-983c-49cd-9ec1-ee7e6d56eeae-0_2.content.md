@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Open Sans" font would be a great fit for the sustainable living website.-->
+<!--font:The Open Sans font would be a great fit for the sustainable living website.-->
 
 # Sustainable Living Website
 
@@ -26,11 +26,11 @@ Our mission is to provide information and resources to help people live more sus
 
 Here are some tips to help you live a more sustainable lifestyle:
 
-- Reduce your energy consumption by turning off lights and unplugging electronics when not in use.
-- Use reusable bags, water bottles, and containers to reduce waste.
-- Eat a plant-based diet or reduce your meat consumption to lower your carbon footprint.
-- Choose products made from sustainable materials, such as bamboo or recycled plastic.
-- Support local farmers and businesses to reduce transportation emissions.
+-   Reduce your energy consumption by turning off lights and unplugging electronics when not in use.
+-   Use reusable bags, water bottles, and containers to reduce waste.
+-   Eat a plant-based diet or reduce your meat consumption to lower your carbon footprint.
+-   Choose products made from sustainable materials, such as bamboo or recycled plastic.
+-   Support local farmers and businesses to reduce transportation emissions.
 
 > "The greatest threat to our planet is the belief that someone else will save it." - Robert Swan
 

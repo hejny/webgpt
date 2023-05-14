@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dark and moody image of a misty graveyard for a horror or supernatural website"
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our horror and supernatural website, where we embrace the darker side of life. Our wallpaper features a hauntingly beautiful image of a misty graveyard, shrouded in darkness and mystery.
 

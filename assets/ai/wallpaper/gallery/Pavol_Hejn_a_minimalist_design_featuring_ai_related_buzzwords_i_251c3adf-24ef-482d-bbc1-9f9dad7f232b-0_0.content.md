@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # AI Buzzwords Wallpaper
 
@@ -34,17 +34,17 @@ To download our AI Buzzwords Wallpaper, simply click on the image above and save
 
 Here are some examples of how people have used our AI Buzzwords Wallpaper:
 
-- John, a software engineer, uses the wallpaper as a reminder of the latest trends and technologies in his field.
-- Sarah, a student studying computer science, uses the wallpaper as inspiration for her coding projects.
-- Mark, a tech enthusiast, uses the wallpaper as a conversation starter when he's out and about with his laptop.
+-   John, a software engineer, uses the wallpaper as a reminder of the latest trends and technologies in his field.
+-   Sarah, a student studying computer science, uses the wallpaper as inspiration for her coding projects.
+-   Mark, a tech enthusiast, uses the wallpaper as a conversation starter when he's out and about with his laptop.
 
 ## References
 
 If you're interested in learning more about the buzzwords featured in our wallpaper, here are some resources to check out:
 
-- [What is Machine Learning?](#)
-- [Neural Networks Explained](#)
-- [Deep Learning Basics](#)
+-   [What is Machine Learning?](#)
+-   [Neural Networks Explained](#)
+-   [Deep Learning Basics](#)
 
 ## Contact Us
 

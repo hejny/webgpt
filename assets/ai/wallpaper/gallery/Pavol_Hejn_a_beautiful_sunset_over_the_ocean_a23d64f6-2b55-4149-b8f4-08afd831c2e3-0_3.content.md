@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Ocean Sunset Wallpaper for a Relaxing Desktop
 
@@ -46,16 +46,16 @@ Here are some user stories from people who have downloaded and used our Ocean Su
 
 If you're interested in learning more about sunsets over the ocean, here are some references that you might find interesting:
 
-- [National Geographic: Why Sunsets Are More Colorful Over Water](#)
-- [Live Science: Why Do Sunsets Look Different Around the World?](#)
-- [NASA: Earth Observatory - Ocean Sunsets](#)
+-   [National Geographic: Why Sunsets Are More Colorful Over Water](#)
+-   [Live Science: Why Do Sunsets Look Different Around the World?](#)
+-   [NASA: Earth Observatory - Ocean Sunsets](#)
 
 ## Contact Us
 
 If you have any questions or comments about our Ocean Sunset Wallpaper, please don't hesitate to contact us. You can reach us by email or through our social media channels.
 
-- Email: [contact@oceansunsetwallpaper.com](mailto:contact@oceansunsetwallpaper.com)
-- Twitter: [@oceansunsetwp](#)
-- Instagram: [@oceansunsetwallpaper](#)
+-   Email: [contact@oceansunsetwallpaper.com](mailto:contact@oceansunsetwallpaper.com)
+-   Twitter: [@oceansunsetwp](#)
+-   Instagram: [@oceansunsetwallpaper](#)
 
 We hope you enjoy our Ocean Sunset Wallpaper and that it brings a sense of calm and relaxation to your day.

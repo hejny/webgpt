@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The "Montserrat" font would be a great fit for this website.-->
+<!--font:The Montserrat font would be a great fit for this website.-->
 
 # Exploring the Mysteries of a Distant Planet
 
@@ -36,17 +36,17 @@ Through our research, we have discovered that this civilization was highly advan
 
 Here are just a few examples of the incredible discoveries our team has made:
 
-- We found a cache of ancient texts that describe a catastrophic event that destroyed this civilization. By studying these texts, we hope to learn more about what happened and how we can prevent similar disasters from occurring in our own time.
-- One of our AI systems discovered a hidden chamber deep beneath the surface of the planet. Inside, we found a wealth of advanced technology that could revolutionize our understanding of physics and engineering.
-- Our team recently uncovered a statue that bears a striking resemblance to one found on Earth. This has led us to speculate that there may be a connection between this ancient civilization and our own planet.
+-   We found a cache of ancient texts that describe a catastrophic event that destroyed this civilization. By studying these texts, we hope to learn more about what happened and how we can prevent similar disasters from occurring in our own time.
+-   One of our AI systems discovered a hidden chamber deep beneath the surface of the planet. Inside, we found a wealth of advanced technology that could revolutionize our understanding of physics and engineering.
+-   Our team recently uncovered a statue that bears a striking resemblance to one found on Earth. This has led us to speculate that there may be a connection between this ancient civilization and our own planet.
 
 ## References
 
 If you're interested in learning more about our research and discoveries, please check out some of our references:
 
-- "The Lost Civilization: Uncovering the Secrets of a Distant Planet" by Dr. Jane Smith
-- "Ancient Texts of the Distant Planet" by Dr. John Doe
-- "Interstellar Travel and Advanced AI: The Legacy of a Lost Civilization" by Dr. Sarah Johnson
+-   "The Lost Civilization: Uncovering the Secrets of a Distant Planet" by Dr. Jane Smith
+-   "Ancient Texts of the Distant Planet" by Dr. John Doe
+-   "Interstellar Travel and Advanced AI: The Legacy of a Lost Civilization" by Dr. Sarah Johnson
 
 ## Contact Us
 

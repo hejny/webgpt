@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper that showcases an abstract illustration of a futuristic cityscape. This wallpaper is perfect for those who love the combination of technology and art.
 

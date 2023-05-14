@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Workspace Wallpaper
 
@@ -20,13 +20,13 @@ Welcome to our website featuring a minimalist graphic of a futuristic workspace,
 
 ## Features
 
-- Minimalist design
-- Futuristic workspace theme
-- Sleek lines and modern color scheme
+-   Minimalist design
+-   Futuristic workspace theme
+-   Sleek lines and modern color scheme
 
 ## How to Use
 
-To use this wallpaper, simply download the image by clicking on the download button below. Once downloaded, set it as your desktop or mobile wallpaper. 
+To use this wallpaper, simply download the image by clicking on the download button below. Once downloaded, set it as your desktop or mobile wallpaper.
 
 > "Simplicity is the ultimate sophistication." - Leonardo da Vinci
 

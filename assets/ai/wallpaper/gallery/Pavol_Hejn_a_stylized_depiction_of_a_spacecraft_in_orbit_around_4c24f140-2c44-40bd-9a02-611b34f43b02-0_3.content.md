@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Spacecraft Wallpaper
 
@@ -40,9 +40,9 @@ Here are some stories from our satisfied users:
 
 If you're interested in learning more about space travel and spacecraft design, check out these resources:
 
-- [NASA](#) - The official website of the National Aeronautics and Space Administration
-- [SpaceX](#) - The website of SpaceX, a private space exploration company
-- [The Planetary Society](#) - A non-profit organization dedicated to space exploration and education
+-   [NASA](#) - The official website of the National Aeronautics and Space Administration
+-   [SpaceX](#) - The website of SpaceX, a private space exploration company
+-   [The Planetary Society](#) - A non-profit organization dedicated to space exploration and education
 
 ## Contact Us
 

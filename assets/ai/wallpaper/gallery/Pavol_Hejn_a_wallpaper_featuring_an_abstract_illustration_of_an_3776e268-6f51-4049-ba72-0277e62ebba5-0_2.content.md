@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design, set against a gradient background."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of an AI-powered search engine! This wallpaper showcases a minimalist and modern design, with an abstract illustration of an AI-powered search engine set against a gradient background.
 

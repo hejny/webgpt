@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Explore the Futuristic Cityscape of Planet X
 
@@ -44,9 +44,9 @@ Downloading our wallpapers is easy! Simply click on the image you want to downlo
 
 If you're interested in learning more about Planet X and its inhabitants, we recommend checking out these resources:
 
-- "The Chronicles of Planet X" by Jane Doe (novel)
-- "Exploring Planet X" documentary by National Geographic
-- "Life on Planet X" podcast by XYZ Studios
+-   "The Chronicles of Planet X" by Jane Doe (novel)
+-   "Exploring Planet X" documentary by National Geographic
+-   "Life on Planet X" podcast by XYZ Studios
 
 ## Contact Us
 

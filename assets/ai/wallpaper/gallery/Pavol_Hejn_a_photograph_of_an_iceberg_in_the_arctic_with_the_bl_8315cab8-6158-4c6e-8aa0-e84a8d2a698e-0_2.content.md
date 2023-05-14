@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning photograph of an iceberg in the Arctic. This wallpaper captures the beauty and majesty of nature, with the contrasting colors of blue and white against a dark sky creating a truly mesmerizing image.
 

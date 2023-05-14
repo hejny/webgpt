@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to the Future: Exploring Space Elevators
 
-Are you ready for a glimpse into the future of space travel? Look no further than our stunning wallpaper featuring an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit. 
+Are you ready for a glimpse into the future of space travel? Look no further than our stunning wallpaper featuring an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
 
 ## What is a Space Elevator?
 
@@ -38,17 +38,17 @@ If successful, a space elevator could revolutionize space travel and make it acc
 
 Here are some examples of how a space elevator could change the way we think about space travel:
 
-- Sarah, a scientist, could easily transport equipment and experiments into space for research purposes.
-- John, a wealthy entrepreneur, could take his family on a vacation to space without needing to undergo extensive astronaut training.
-- Maria, an astronaut, could use the space elevator as a more efficient way to travel between Earth and a space station.
+-   Sarah, a scientist, could easily transport equipment and experiments into space for research purposes.
+-   John, a wealthy entrepreneur, could take his family on a vacation to space without needing to undergo extensive astronaut training.
+-   Maria, an astronaut, could use the space elevator as a more efficient way to travel between Earth and a space station.
 
 ## References
 
 Want to learn more about space elevators? Check out these resources:
 
-- [International Space Elevator Consortium](#ISEC)
-- [Obayashi Corporation](#Obayashi)
-- [NASA's Space Elevator Concept](#NASA)
+-   [International Space Elevator Consortium](#ISEC)
+-   [Obayashi Corporation](#Obayashi)
+-   [NASA's Space Elevator Concept](#NASA)
 
 ## Contact Us
 

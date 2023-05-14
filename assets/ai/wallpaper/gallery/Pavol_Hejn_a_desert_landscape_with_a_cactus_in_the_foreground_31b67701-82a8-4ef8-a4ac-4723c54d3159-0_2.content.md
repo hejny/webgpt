@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A desert landscape with a cactus in the foreground"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a desert landscape with a cactus in the foreground. This breathtaking image captures the beauty and serenity of the desert, with its vast expanse of sand dunes and rocky outcroppings.
 

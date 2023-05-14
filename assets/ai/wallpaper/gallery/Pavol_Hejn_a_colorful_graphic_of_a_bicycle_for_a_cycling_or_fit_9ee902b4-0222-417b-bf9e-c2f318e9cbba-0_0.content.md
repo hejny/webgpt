@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A colorful graphic of a bicycle for a cycling or fitness blog"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our cycling and fitness blog! We're excited to share with you our latest wallpaper featuring a colorful graphic of a bicycle. 
+Welcome to our cycling and fitness blog! We're excited to share with you our latest wallpaper featuring a colorful graphic of a bicycle.
 
 This wallpaper is perfect for anyone who loves cycling or is interested in getting into the sport. The bright colors and bold design are sure to inspire you to get out there and hit the road.
 

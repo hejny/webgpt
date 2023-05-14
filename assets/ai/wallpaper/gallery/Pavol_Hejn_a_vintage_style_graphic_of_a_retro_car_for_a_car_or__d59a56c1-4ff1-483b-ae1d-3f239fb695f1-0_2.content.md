@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A vintage-style graphic of a retro car for a car or travel website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our car and travel website, where we offer a wide range of vintage-inspired wallpapers to add character and charm to your space. One of our most popular designs features a retro car in all its glory.
 

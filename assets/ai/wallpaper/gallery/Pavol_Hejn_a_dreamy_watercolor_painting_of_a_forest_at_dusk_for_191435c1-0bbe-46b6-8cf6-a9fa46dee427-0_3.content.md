@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our nature and wildlife blog! We are excited to share with you our latest addition to our collection of wallpapers - a dreamy watercolor painting of a forest at dusk.
 

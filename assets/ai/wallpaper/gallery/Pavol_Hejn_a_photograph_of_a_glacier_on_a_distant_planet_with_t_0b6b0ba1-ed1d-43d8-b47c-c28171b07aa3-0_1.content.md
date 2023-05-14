@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Planet Glacier Wallpaper
 
-Welcome to our website, where you can download the stunning "Planet Glacier" wallpaper for your desktop or mobile device. This breathtaking photograph captures a glacier on a distant planet, with the blue and white colors contrasting against the dark sky. 
+Welcome to our website, where you can download the stunning "Planet Glacier" wallpaper for your desktop or mobile device. This breathtaking photograph captures a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.
 
 ## Why Choose Planet Glacier Wallpaper?
 
@@ -30,9 +30,9 @@ Our wallpaper is not only visually striking but also high-quality, ensuring that
 
 Here are some stories from users who have downloaded our Planet Glacier wallpaper:
 
-- "I love how the colors of the glacier pop against my black laptop. It's such a calming image to look at while I work." - Sarah
-- "I've been using this wallpaper on my phone for months now, and every time I unlock my screen, I'm reminded of the beauty of nature." - Alex
-- "As an astronomy enthusiast, this wallpaper is the perfect addition to my space-themed desktop setup." - Mike
+-   "I love how the colors of the glacier pop against my black laptop. It's such a calming image to look at while I work." - Sarah
+-   "I've been using this wallpaper on my phone for months now, and every time I unlock my screen, I'm reminded of the beauty of nature." - Alex
+-   "As an astronomy enthusiast, this wallpaper is the perfect addition to my space-themed desktop setup." - Mike
 
 ## How to Download
 
@@ -44,9 +44,9 @@ To download the Planet Glacier wallpaper, simply click the download button below
 
 If you're interested in learning more about glaciers and their impact on the environment, check out these resources:
 
-- [National Geographic: Glaciers](#)
-- [NASA: All About Glaciers](#)
-- [World Glacier Monitoring Service](#)
+-   [National Geographic: Glaciers](#)
+-   [NASA: All About Glaciers](#)
+-   [World Glacier Monitoring Service](#)
 
 ## Contact Us
 

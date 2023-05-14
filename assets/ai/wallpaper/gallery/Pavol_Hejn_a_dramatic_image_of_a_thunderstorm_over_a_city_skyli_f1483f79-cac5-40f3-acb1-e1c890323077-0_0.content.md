@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dramatic image of a thunderstorm over a city skyline for a weather or news website."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our weather and news website, where we bring you the latest updates on the world's most dramatic weather events. To complement our coverage, we have a stunning wallpaper featuring a thunderstorm over a city skyline.
 

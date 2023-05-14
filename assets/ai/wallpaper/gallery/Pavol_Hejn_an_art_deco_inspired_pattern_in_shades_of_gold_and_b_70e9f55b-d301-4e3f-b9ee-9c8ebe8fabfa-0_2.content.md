@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An Art Deco-inspired pattern in shades of gold and black, with futuristic elements such as robot arms and AI nodes."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning Art Deco-inspired wallpaper in shades of gold and black, with futuristic elements that are sure to impress. This unique design blends classic Art Deco motifs with modern technology-inspired details, creating a bold and eye-catching pattern that is perfect for any space.
 

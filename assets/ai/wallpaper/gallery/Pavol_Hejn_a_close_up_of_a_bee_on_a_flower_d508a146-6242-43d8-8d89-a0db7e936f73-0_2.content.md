@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Bee-Friendly Gardening: How to Attract Bees to Your Garden
 
-Welcome to our website dedicated to bee-friendly gardening! Our mission is to help you create a beautiful and thriving garden that supports our pollinator friends. 
+Welcome to our website dedicated to bee-friendly gardening! Our mission is to help you create a beautiful and thriving garden that supports our pollinator friends.
 
 ## Why Bee-Friendly Gardening Matters
 
@@ -28,7 +28,7 @@ Did you know that bees are responsible for pollinating one-third of the food we 
 
 ## The Importance of Flowers
 
-One of the easiest ways to attract bees to your garden is by planting flowers. Bees are attracted to brightly colored flowers with a sweet fragrance. When choosing flowers, aim for a variety of shapes and sizes to accommodate different types of bees. 
+One of the easiest ways to attract bees to your garden is by planting flowers. Bees are attracted to brightly colored flowers with a sweet fragrance. When choosing flowers, aim for a variety of shapes and sizes to accommodate different types of bees.
 
 Our wallpaper features a close-up of a bee on a flower, which serves as a reminder of the beauty and importance of these tiny creatures.
 
@@ -36,10 +36,10 @@ Our wallpaper features a close-up of a bee on a flower, which serves as a remind
 
 Here are some tips to get started on your bee-friendly garden:
 
-- Plant a variety of flowers that bloom at different times of the year to provide food for bees throughout the seasons.
-- Avoid using pesticides and herbicides, which can be harmful to bees and other beneficial insects.
-- Provide nesting sites for solitary bees, such as small piles of twigs or hollow stems.
-- Consider adding a water source, such as a shallow dish filled with rocks and water, for bees to drink from.
+-   Plant a variety of flowers that bloom at different times of the year to provide food for bees throughout the seasons.
+-   Avoid using pesticides and herbicides, which can be harmful to bees and other beneficial insects.
+-   Provide nesting sites for solitary bees, such as small piles of twigs or hollow stems.
+-   Consider adding a water source, such as a shallow dish filled with rocks and water, for bees to drink from.
 
 ## User Stories
 
@@ -53,6 +53,6 @@ Hear from some of our satisfied customers who have created their own bee-friendl
 
 Looking for more information on bee-friendly gardening? Check out these resources:
 
-- [The Bee-Friendly Garden: Design an Abundant, Flower-Filled Yard that Nurtures Bees and Supports Biodiversity](#) by Kate Frey and Gretchen LeBuhn
-- [Pollinator Partnership](#), a nonprofit organization dedicated to protecting pollinators and their habitats
-- [The Honeybee Conservancy](#), a nonprofit organization focused on raising awareness about the importance of bees
+-   [The Bee-Friendly Garden: Design an Abundant, Flower-Filled Yard that Nurtures Bees and Supports Biodiversity](#) by Kate Frey and Gretchen LeBuhn
+-   [Pollinator Partnership](#), a nonprofit organization dedicated to protecting pollinators and their habitats
+-   [The Honeybee Conservancy](#), a nonprofit organization focused on raising awareness about the importance of bees

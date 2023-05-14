@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Galactic Dreams" - Abstract Wallpaper for Your Desktop
 
@@ -30,9 +30,9 @@ Our featured wallpaper is an abstract image of a swirling galaxy, with bright co
 
 Here are some examples of how our users have used this wallpaper to enhance their desktop experience:
 
-- "I love using this wallpaper when I'm working on creative projects. It helps me get into the right mindset and sparks my imagination."
-- "I've been using this wallpaper for a few weeks now, and it still amazes me every time I see it. It's like having a piece of art on my desktop!"
-- "I was looking for a new wallpaper to freshen up my computer, and this one caught my eye immediately. It's so vibrant and dynamic - it really makes my screen pop!"
+-   "I love using this wallpaper when I'm working on creative projects. It helps me get into the right mindset and sparks my imagination."
+-   "I've been using this wallpaper for a few weeks now, and it still amazes me every time I see it. It's like having a piece of art on my desktop!"
+-   "I was looking for a new wallpaper to freshen up my computer, and this one caught my eye immediately. It's so vibrant and dynamic - it really makes my screen pop!"
 
 ## Download Instructions
 
@@ -42,9 +42,9 @@ To download this wallpaper, simply click the "Download" button below. The file w
 
 Looking for more inspiration? Check out these resources:
 
-- [Unsplash](#) - A great source for free, high-quality images
-- [DeviantArt](#) - A community of artists sharing their work online
-- [Wallpaper Engine](#) - A software program that allows you to create and customize animated wallpapers for your desktop
+-   [Unsplash](#) - A great source for free, high-quality images
+-   [DeviantArt](#) - A community of artists sharing their work online
+-   [Wallpaper Engine](#) - A software program that allows you to create and customize animated wallpapers for your desktop
 
 ## Contact Us
 

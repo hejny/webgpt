@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Data Visualization Wallpaper
 
@@ -20,10 +20,10 @@ Decorate your desktop or mobile screen with our abstract wallpaper featuring a f
 
 ## Features
 
-- Abstract illustration of a futuristic data visualization
-- Sleek and modern graphics
-- Minimalist color scheme
-- Available for desktop and mobile devices
+-   Abstract illustration of a futuristic data visualization
+-   Sleek and modern graphics
+-   Minimalist color scheme
+-   Available for desktop and mobile devices
 
 ## How to Download
 
@@ -35,10 +35,10 @@ To download this wallpaper, simply right-click on the image and select "Save ima
 
 This wallpaper is compatible with most desktop and mobile devices, including:
 
-- Windows computers
-- Mac computers
-- iOS devices
-- Android devices
+-   Windows computers
+-   Mac computers
+-   iOS devices
+-   Android devices
 
 ## Customize Your Device
 

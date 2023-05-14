@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple illustration of a virtual reality headset, against a gradient background of two contrasting colors."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper that showcases a simple illustration of a virtual reality headset against a gradient background of two contrasting colors.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Cosmic Dreams - Abstract Space Wallpapers
 
@@ -28,9 +28,9 @@ Our wallpapers are carefully curated to showcase the beauty and mystery of the c
 
 Some of our most popular wallpapers include:
 
-- "Nebula Dreams" - A vibrant image of a swirling nebula, with shades of purple, pink, and blue.
-- "Cosmic Collision" - An explosive image of two galaxies colliding, with bright bursts of color and light.
-- "Black Hole Abyss" - A haunting image of a black hole, with swirling patterns and deep shadows.
+-   "Nebula Dreams" - A vibrant image of a swirling nebula, with shades of purple, pink, and blue.
+-   "Cosmic Collision" - An explosive image of two galaxies colliding, with bright bursts of color and light.
+-   "Black Hole Abyss" - A haunting image of a black hole, with swirling patterns and deep shadows.
 
 All of our wallpapers are free to download and use for personal use.
 
@@ -46,9 +46,9 @@ Here are some stories from our satisfied users:
 
 Want to learn more about the deep space objects featured in our wallpapers? Check out these resources:
 
-- [NASA](#) - The official website of NASA, with information on space exploration and discoveries.
-- [ESA](#) - The European Space Agency's website, with news and updates on space missions.
-- [Space.com](#) - A popular website for space news and education.
+-   [NASA](#) - The official website of NASA, with information on space exploration and discoveries.
+-   [ESA](#) - The European Space Agency's website, with news and updates on space missions.
+-   [Space.com](#) - A popular website for space news and education.
 
 ## Contact Us
 

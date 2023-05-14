@@ -12,35 +12,35 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Montserrat" font is a great choice for the website.-->
+<!--font:The Montserrat font is a great choice for the website.-->
 
 # AInauts: Building a Space Elevator with AI Companions
 
-Welcome to our website where we showcase the collaboration between AInauts and their AI companions in constructing a massive, orbiting space elevator. 
+Welcome to our website where we showcase the collaboration between AInauts and their AI companions in constructing a massive, orbiting space elevator.
 
 ## What is a Space Elevator?
 
-A space elevator is a theoretical structure that can transport people and cargo from Earth's surface to space without the need for rockets. It consists of a cable anchored to the Earth's surface and extending into space, with a counterweight at the other end to maintain tension. 
+A space elevator is a theoretical structure that can transport people and cargo from Earth's surface to space without the need for rockets. It consists of a cable anchored to the Earth's surface and extending into space, with a counterweight at the other end to maintain tension.
 
 ## How are AInauts Involved?
 
 AInauts, or artificial intelligence astronauts, are robots designed to perform tasks in space that are too dangerous or difficult for humans. In the construction of the space elevator, AInauts work alongside their AI companions to perform various tasks such as:
 
-- Surveying potential locations for the space elevator
-- Designing and manufacturing components for the elevator
-- Assembling and maintaining the elevator structure
+-   Surveying potential locations for the space elevator
+-   Designing and manufacturing components for the elevator
+-   Assembling and maintaining the elevator structure
 
 With the help of AI technology, AInauts can work efficiently and autonomously in space, making the construction of the space elevator faster and safer.
 
-> "The partnership between AInauts and AI companions is crucial in building the space elevator. Together, they form a powerful team that can overcome the challenges of constructing a structure that reaches beyond Earth's atmosphere." - *Dr. Jane Smith, Lead Engineer*
+> "The partnership between AInauts and AI companions is crucial in building the space elevator. Together, they form a powerful team that can overcome the challenges of constructing a structure that reaches beyond Earth's atmosphere." - _Dr. Jane Smith, Lead Engineer_
 
 ## Benefits of a Space Elevator
 
 The construction of a space elevator has many potential benefits, including:
 
-- Reduced cost of space travel
-- Increased accessibility to space for scientific research and exploration
-- Decreased environmental impact of rocket launches
+-   Reduced cost of space travel
+-   Increased accessibility to space for scientific research and exploration
+-   Decreased environmental impact of rocket launches
 
 The development of a space elevator is an exciting prospect that could revolutionize the way we explore and utilize space.
 

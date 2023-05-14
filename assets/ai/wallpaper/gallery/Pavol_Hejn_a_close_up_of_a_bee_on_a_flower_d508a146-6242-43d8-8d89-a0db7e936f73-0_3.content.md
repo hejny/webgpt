@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to our Nature-inspired Wallpaper Collection
 
@@ -28,10 +28,10 @@ Our "Bee on Flower" wallpaper captures the essence of one of nature's most impor
 
 ## Features
 
-- High-quality printing for vibrant colors and crisp details
-- Easy to install and remove without damaging walls
-- Durable and long-lasting material
-- Available in a variety of sizes to fit any room
+-   High-quality printing for vibrant colors and crisp details
+-   Easy to install and remove without damaging walls
+-   Durable and long-lasting material
+-   Available in a variety of sizes to fit any room
 
 ## User Stories
 
@@ -57,8 +57,8 @@ Have questions about our "Bee on Flower" wallpaper or any of our other nature-in
 
 Want to learn more about the importance of bees in our ecosystem? Check out these resources:
 
-- [The Importance of Bees: Why It Matters](#)
-- [How to Create a Bee-Friendly Garden](#)
-- [10 Fascinating Facts About Bees](#)
+-   [The Importance of Bees: Why It Matters](#)
+-   [How to Create a Bee-Friendly Garden](#)
+-   [10 Fascinating Facts About Bees](#)
 
 Thank you for considering our "Bee on Flower" wallpaper and for supporting our mission to bring the beauty of nature into your home or office.

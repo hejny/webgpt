@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to the Future!
 
-Looking for a glimpse into the future? Look no further than our website, featuring a stunning wallpaper of a futuristic cityscape complete with flying cars. 
+Looking for a glimpse into the future? Look no further than our website, featuring a stunning wallpaper of a futuristic cityscape complete with flying cars.
 
 Our sci-fi and technology website is dedicated to exploring the latest advancements in science and technology, from artificial intelligence and virtual reality to space travel and beyond. Join us as we journey into the unknown and discover what lies ahead.
 

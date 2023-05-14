@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Geometric Wallpaper
 
@@ -20,10 +20,10 @@ Decorate your home or office with our stylish geometric wallpaper. Our wallpaper
 
 ## Features
 
-- Repeating pattern of simple geometric shapes
-- Monochromatic color palette in grey or blue
-- Easy to match with any decor
-- Perfect for homes or offices
+-   Repeating pattern of simple geometric shapes
+-   Monochromatic color palette in grey or blue
+-   Easy to match with any decor
+-   Perfect for homes or offices
 
 ## Installation
 

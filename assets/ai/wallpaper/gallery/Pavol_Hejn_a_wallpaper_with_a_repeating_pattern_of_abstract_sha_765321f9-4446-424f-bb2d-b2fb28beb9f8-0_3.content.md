@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Introducing our latest addition to the wallpaper collection - a mesmerizing design inspired by computer viruses and malware. This unique wallpaper features a repeating pattern of abstract shapes that are sure to catch the eye of anyone who enters the room.
 

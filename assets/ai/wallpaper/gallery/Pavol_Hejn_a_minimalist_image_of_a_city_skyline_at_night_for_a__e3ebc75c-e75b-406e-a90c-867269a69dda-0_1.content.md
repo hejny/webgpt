@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A minimalist image of a city skyline at night for a real estate or architecture website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our real estate and architecture website, where we showcase the beauty of city skylines at night through our minimalist wallpaper. 
+Welcome to our real estate and architecture website, where we showcase the beauty of city skylines at night through our minimalist wallpaper.
 
 Our wallpaper captures the essence of a bustling city skyline at night, with its vibrant lights and towering buildings. The simplicity of the image highlights the elegance of the architecture and the energy of the city.
 

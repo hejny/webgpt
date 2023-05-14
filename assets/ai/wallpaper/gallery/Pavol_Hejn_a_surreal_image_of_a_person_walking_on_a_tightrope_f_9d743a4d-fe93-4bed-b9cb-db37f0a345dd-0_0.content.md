@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A surreal image of a person walking on a tightrope for a motivational or personal development website"
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our motivational and personal development website, where we believe that every individual has the potential to achieve their dreams and goals. Our featured wallpaper is a surreal image of a person walking on a tightrope, which represents the challenges and risks that we encounter in our journey towards success.
 

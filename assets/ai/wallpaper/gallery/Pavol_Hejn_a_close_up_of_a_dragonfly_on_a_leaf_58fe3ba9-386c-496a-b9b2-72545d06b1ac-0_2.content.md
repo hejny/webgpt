@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Dragonfly Wallpaper for Nature Lovers
 
@@ -32,23 +32,23 @@ Our dragonfly wallpaper captures the essence of these amazing insects with its v
 
 ## User Stories
 
-- "I love dragonflies and this wallpaper is the perfect addition to my nature-themed bedroom." - Sarah
-- "As an environmental scientist, I appreciate the importance of dragonflies in our ecosystem. This wallpaper reminds me of their significance every day." - John
+-   "I love dragonflies and this wallpaper is the perfect addition to my nature-themed bedroom." - Sarah
+-   "As an environmental scientist, I appreciate the importance of dragonflies in our ecosystem. This wallpaper reminds me of their significance every day." - John
 
 ## References
 
 If you're interested in learning more about dragonflies, check out these resources:
 
-- [The Dragonfly Society](#)
-- [National Geographic: Dragonflies](#)
-- [Smithsonian Magazine: The Fascinating World of Dragonflies](#)
+-   [The Dragonfly Society](#)
+-   [National Geographic: Dragonflies](#)
+-   [Smithsonian Magazine: The Fascinating World of Dragonflies](#)
 
 ## Contact Us
 
 If you have any questions or comments about our dragonfly wallpaper, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: info@dragonflywallpaper.com
-- Phone: 555-555-5555
-- Address: 123 Main Street, Anytown USA
+-   Email: info@dragonflywallpaper.com
+-   Phone: 555-555-5555
+-   Address: 123 Main Street, Anytown USA
 
 Thank you for choosing our dragonfly wallpaper!

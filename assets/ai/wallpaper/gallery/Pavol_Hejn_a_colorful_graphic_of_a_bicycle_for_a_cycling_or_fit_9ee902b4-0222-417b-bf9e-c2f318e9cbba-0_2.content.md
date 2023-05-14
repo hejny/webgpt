@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Cycling and Fitness Blog
 
@@ -30,9 +30,9 @@ We believe that cycling is not only a fun activity, but it's also a great way to
 
 Our blog covers a wide range of topics related to cycling and fitness. Here are some of the things you can expect to find on our blog:
 
-- Tips for beginners: If you're new to cycling, we have plenty of tips to help you get started.
-- Workouts: We'll show you how to use cycling as a workout to build strength and endurance.
-- Nutrition: We'll discuss the importance of nutrition when it comes to cycling and fitness.
-- Gear: We'll review the latest gear and gadgets to help you get the most out of your cycling experience.
+-   Tips for beginners: If you're new to cycling, we have plenty of tips to help you get started.
+-   Workouts: We'll show you how to use cycling as a workout to build strength and endurance.
+-   Nutrition: We'll discuss the importance of nutrition when it comes to cycling and fitness.
+-   Gear: We'll review the latest gear and gadgets to help you get the most out of your cycling experience.
 
 Stay tuned for more updates and articles on our cycling and fitness blog. Don't forget to subscribe to our newsletter to stay up-to-date with all the latest news and information.

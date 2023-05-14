@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of abstract geometric shapes and patterns, inspired by web design trends and color schemes."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Transform your space with our stunning wallpaper featuring a repeating pattern of abstract geometric shapes and patterns. Inspired by the latest web design trends and color schemes, this wallpaper is perfect for adding a touch of modern style to any room.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A stylized illustration of a cybernetic organism, with metallic textures and digital glitch effects."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a stylized illustration of a cybernetic organism! This artwork showcases the perfect blend of technology and nature, with its metallic textures and digital glitch effects.
 

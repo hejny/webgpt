@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a simple graphic of a digital clock or timer, with space for setting alarms and countdowns."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website, where you can find a unique and stylish wallpaper featuring a simple graphic of a digital clock or timer. This wallpaper is perfect for those who want to keep track of time in a modern and sleek way.
 

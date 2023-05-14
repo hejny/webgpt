@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our futuristic wallpaper featuring a team of AInauts conducting experiments on the effects of AI on the human body in a zero-gravity chamber. This stunning image captures the essence of our mission to explore the intersection of artificial intelligence and human biology.
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # AI-powered Search Engine Wallpaper
 
@@ -20,15 +20,15 @@ Enhance your desktop background with our abstract illustration of an AI-powered 
 
 ## Features
 
-- Abstract illustration of an AI-powered search engine
-- Minimalist and modern design
-- Gradient background for a visually stunning effect
+-   Abstract illustration of an AI-powered search engine
+-   Minimalist and modern design
+-   Gradient background for a visually stunning effect
 
 ## Benefits
 
-- Enhance your desktop background with a unique and modern design
-- Stay inspired by the power of artificial intelligence
-- Create a professional and sleek look for your computer desktop
+-   Enhance your desktop background with a unique and modern design
+-   Stay inspired by the power of artificial intelligence
+-   Create a professional and sleek look for your computer desktop
 
 > "The best way to predict the future is to create it." - Peter Drucker
 

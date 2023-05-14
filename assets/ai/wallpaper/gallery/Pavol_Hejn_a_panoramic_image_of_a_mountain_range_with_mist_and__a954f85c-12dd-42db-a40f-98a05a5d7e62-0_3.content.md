@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Mountain Range Wallpaper for Your Desktop
 
-Welcome to our website where you can find the perfect mountain range wallpaper for your desktop. Our collection of high-quality wallpapers features stunning landscapes from all around the world. 
+Welcome to our website where you can find the perfect mountain range wallpaper for your desktop. Our collection of high-quality wallpapers features stunning landscapes from all around the world.
 
 ## Why Choose a Mountain Range Wallpaper?
 
@@ -38,16 +38,16 @@ Downloading a wallpaper from our collection is easy. Simply click on the downloa
 
 Here are some stories from our users who have downloaded our mountain range wallpapers:
 
-- "I work in a busy city, and having a mountain range wallpaper on my desktop helps me relax and stay focused."
-- "I recently went on a hiking trip to the Swiss Alps, and downloading a wallpaper from your collection brings back memories of that trip every time I see it."
-- "I love the outdoors, but I don't always have the time to go on adventures. Having a mountain range wallpaper on my desktop makes me feel like I'm still connected to nature."
+-   "I work in a busy city, and having a mountain range wallpaper on my desktop helps me relax and stay focused."
+-   "I recently went on a hiking trip to the Swiss Alps, and downloading a wallpaper from your collection brings back memories of that trip every time I see it."
+-   "I love the outdoors, but I don't always have the time to go on adventures. Having a mountain range wallpaper on my desktop makes me feel like I'm still connected to nature."
 
 ## References
 
 If you want to learn more about the benefits of nature and how it can improve your well-being, check out these resources:
 
-- [The Nature Fix: Why Nature Makes Us Happier, Healthier, and More Creative](#)
-- [The Benefits of Nature: Improved Health and Well-Being](#)
+-   [The Nature Fix: Why Nature Makes Us Happier, Healthier, and More Creative](#)
+-   [The Benefits of Nature: Improved Health and Well-Being](#)
 
 ## Contact Us
 

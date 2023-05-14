@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Exploring the Mysteries of Mars
 
@@ -50,9 +50,9 @@ Here are some stories from people who have been inspired by the exploration of M
 
 If you want to learn more about Mars and the exploration of space, here are some resources that you may find helpful:
 
-- [NASA's Mars Exploration Program](#)
-- [Space.com's Mars Coverage](#)
-- [National Geographic's Mars Page](#)
+-   [NASA's Mars Exploration Program](#)
+-   [Space.com's Mars Coverage](#)
+-   [National Geographic's Mars Page](#)
 
 ## Contact Us
 

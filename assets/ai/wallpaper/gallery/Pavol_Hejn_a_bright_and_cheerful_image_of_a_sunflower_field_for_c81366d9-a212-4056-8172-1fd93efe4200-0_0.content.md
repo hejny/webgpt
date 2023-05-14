@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that would best fit the website is "Montserrat".-->
+<!--font:The font that would best fit the website is Montserrat-->
 
 # Sunflower Fields: A Haven for Nature Lovers
 
@@ -32,10 +32,10 @@ But sunflowers aren't just pretty to look at – they also have a variety of use
 
 If you're interested in growing your own sunflowers, we have some tips to help you get started:
 
-- Choose a sunny location with well-draining soil
-- Plant the seeds in late spring or early summer
-- Water regularly, but don't overwater
-- Provide support for taller varieties
+-   Choose a sunny location with well-draining soil
+-   Plant the seeds in late spring or early summer
+-   Water regularly, but don't overwater
+-   Provide support for taller varieties
 
 For more detailed information on growing sunflowers, check out our [gardening guide](#).
 
@@ -51,9 +51,9 @@ We love hearing from our readers about their experiences with gardening and natu
 
 Looking for more information on sunflowers and gardening? Check out these resources:
 
-- [The Old Farmer's Almanac](#)
-- [National Gardening Association](#)
-- [Sunflower Association](#)
+-   [The Old Farmer's Almanac](#)
+-   [National Gardening Association](#)
+-   [Sunflower Association](#)
 
 ## Contact Us
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website, where we offer a stunning wallpaper featuring a photograph of a glacier on a distant planet. The image captures the beauty and mystery of outer space, with the blue and white colors of the glacier contrasting against the dark sky.
 

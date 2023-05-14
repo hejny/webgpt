@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Virtual Reality Wallpapers
 
@@ -16,10 +16,10 @@ Decorate your desktop or phone with our virtual reality wallpaper featuring a si
 
 Choose from a variety of resolutions to fit your device:
 
-- 1920x1080
-- 2560x1440
-- 3840x2160
-- Mobile versions for Android and iOS
+-   1920x1080
+-   2560x1440
+-   3840x2160
+-   Mobile versions for Android and iOS
 
 ## How to Set Wallpaper
 

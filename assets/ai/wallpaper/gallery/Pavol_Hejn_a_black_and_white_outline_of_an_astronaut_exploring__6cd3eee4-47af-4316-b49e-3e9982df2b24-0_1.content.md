@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Exploration Wallpaper
 
@@ -30,19 +30,19 @@ Our space exploration wallpaper is designed to inspire curiosity and wonder abou
 
 Our space exploration wallpaper has been used by people from all walks of life. Here are some examples of how our users have incorporated this wallpaper into their lives:
 
-- **Astronomy Enthusiast:** John is an astronomy enthusiast who loves to gaze at the stars. He uses our space exploration wallpaper as his desktop background to remind him of the beauty and mystery of the universe.
+-   **Astronomy Enthusiast:** John is an astronomy enthusiast who loves to gaze at the stars. He uses our space exploration wallpaper as his desktop background to remind him of the beauty and mystery of the universe.
 
-- **Science Fiction Writer:** Sarah is a science fiction writer who is currently working on a novel set in space. She uses our space exploration wallpaper as inspiration for her writing, imagining what it would be like to explore a distant planet.
+-   **Science Fiction Writer:** Sarah is a science fiction writer who is currently working on a novel set in space. She uses our space exploration wallpaper as inspiration for her writing, imagining what it would be like to explore a distant planet.
 
-- **Space Explorer:** Alex is a space explorer who has traveled to many different planets in his career. He uses our space exploration wallpaper as a reminder of the wonders he has seen and the adventures still waiting to be had.
+-   **Space Explorer:** Alex is a space explorer who has traveled to many different planets in his career. He uses our space exploration wallpaper as a reminder of the wonders he has seen and the adventures still waiting to be had.
 
 ## References
 
 If you're interested in learning more about space exploration, here are some resources that we recommend:
 
-- [NASA](#nasa)
-- [SpaceX](#spacex)
-- [European Space Agency](#european-space-agency)
+-   [NASA](#nasa)
+-   [SpaceX](#spacex)
+-   [European Space Agency](#european-space-agency)
 
 ## Contact Us
 

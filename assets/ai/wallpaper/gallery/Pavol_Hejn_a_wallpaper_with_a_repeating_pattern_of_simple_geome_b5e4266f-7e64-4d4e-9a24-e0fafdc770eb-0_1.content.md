@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of simple geometric shapes, in a monochromatic color palette such as grey or blue."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Introducing our latest wallpaper design - a stunning repeating pattern of simple geometric shapes, available in a monochromatic color palette of either grey or blue. This wallpaper is perfect for those who appreciate minimalist and modern aesthetics.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a lava flow on a volcanic planet. This incredible photograph captures the raw power and beauty of nature, with its vibrant red and orange hues evoking a sense of danger and excitement.
 

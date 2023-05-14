@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Data Visualization Made Easy
 
@@ -30,9 +30,9 @@ Our team consists of experienced data analysts and designers who are passionate 
 
 We offer a range of services to help you make the most of your data:
 
-- **Data Analysis:** We can help you analyze your data and identify insights that are relevant to your business or organization.
-- **Visualization Design:** We can create custom visualizations that are tailored to your specific needs and goals.
-- **Training and Workshops:** We offer training and workshops on data visualization best practices, tools, and techniques.
+-   **Data Analysis:** We can help you analyze your data and identify insights that are relevant to your business or organization.
+-   **Visualization Design:** We can create custom visualizations that are tailored to your specific needs and goals.
+-   **Training and Workshops:** We offer training and workshops on data visualization best practices, tools, and techniques.
 
 ## User Stories
 
@@ -46,17 +46,17 @@ Here are some examples of how we have helped our clients:
 
 Check out some of our recent projects and case studies:
 
-- Project A: [Link](#project-a)
-- Project B: [Link](#project-b)
-- Case Study: [Link](#case-study)
+-   Project A: [Link](#project-a)
+-   Project B: [Link](#project-b)
+-   Case Study: [Link](#case-study)
 
 ## Contact Us
 
 Ready to take your data visualization to the next level? Contact us today to schedule a consultation:
 
-- Email: info@companyname.com
-- Phone: 555-1234
-- Address: 123 Main Street, Anytown USA
+-   Email: info@companyname.com
+-   Phone: 555-1234
+-   Address: 123 Main Street, Anytown USA
 
 ## Wallpaper
 

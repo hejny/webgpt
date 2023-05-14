@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # City Skyline Wallpaper for Real Estate and Architecture Websites
 
@@ -32,9 +32,9 @@ Whether you're a real estate agent showcasing luxury properties or an architect 
 
 Here are some examples of how our city skyline wallpaper can enhance your website:
 
-- Sarah, a real estate agent, used our wallpaper on her website to showcase high-end properties in the heart of downtown. The sleek design of the wallpaper perfectly complemented the luxurious feel of the properties she was selling.
-- John, an architect, used our wallpaper on his website to showcase his portfolio of modern buildings. The city skyline in the background added a sense of context to his work and helped potential clients envision their projects in a real-world setting.
-- Rachel, a blogger writing about urban living, used our wallpaper as the background for her blog posts. The minimalist design allowed her content to take center stage while still providing a stylish backdrop for her readers.
+-   Sarah, a real estate agent, used our wallpaper on her website to showcase high-end properties in the heart of downtown. The sleek design of the wallpaper perfectly complemented the luxurious feel of the properties she was selling.
+-   John, an architect, used our wallpaper on his website to showcase his portfolio of modern buildings. The city skyline in the background added a sense of context to his work and helped potential clients envision their projects in a real-world setting.
+-   Rachel, a blogger writing about urban living, used our wallpaper as the background for her blog posts. The minimalist design allowed her content to take center stage while still providing a stylish backdrop for her readers.
 
 ## References
 

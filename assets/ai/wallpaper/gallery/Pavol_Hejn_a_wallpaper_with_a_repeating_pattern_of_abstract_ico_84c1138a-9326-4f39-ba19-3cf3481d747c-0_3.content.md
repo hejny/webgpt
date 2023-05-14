@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Looking for a wallpaper that captures the essence of the tech industry? Look no further than our abstract icon and symbol wallpaper! This unique design features a repeating pattern of computer chips, power buttons, and other symbols commonly associated with technology.
 

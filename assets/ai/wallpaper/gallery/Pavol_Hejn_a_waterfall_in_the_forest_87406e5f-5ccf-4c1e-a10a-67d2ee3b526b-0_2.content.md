@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Forest Waterfall Wallpaper
 
@@ -16,9 +16,9 @@ Welcome to our website featuring a stunning wallpaper of a waterfall in the fore
 
 You can download this wallpaper in various resolutions to fit your screen size. Simply click on the links below to start the download:
 
-- [1920x1080](link-to-download)
-- [1280x720](link-to-download)
-- [640x1136](link-to-download)
+-   [1920x1080](link-to-download)
+-   [1280x720](link-to-download)
+-   [640x1136](link-to-download)
 
 ## About the Location
 

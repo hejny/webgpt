@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a robotic explorer, with metallic textures and intricate details."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of an illustration of a robotic explorer. This wallpaper is perfect for anyone who loves science fiction, technology, and futuristic designs.
 

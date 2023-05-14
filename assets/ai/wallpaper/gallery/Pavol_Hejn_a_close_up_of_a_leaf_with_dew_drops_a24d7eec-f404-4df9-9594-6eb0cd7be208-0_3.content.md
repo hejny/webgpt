@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Nature's Beauty: Leaf with Dew Drops Wallpaper
 
@@ -30,9 +30,9 @@ The leaf with dew drops wallpaper is a high-resolution image that brings the bea
 
 Our customers have shared their experiences using this wallpaper in their homes and offices. Here are some of their stories:
 
-- "I love how this wallpaper adds a touch of nature to my otherwise plain living room. It's like having a piece of the outdoors inside with me."
-- "I work from home, and this wallpaper helps me feel more connected to nature while I'm stuck inside all day. It's a refreshing change of scenery."
-- "I put this wallpaper in my bedroom, and it creates a calming atmosphere. The soft colors and natural elements help me relax before bed."
+-   "I love how this wallpaper adds a touch of nature to my otherwise plain living room. It's like having a piece of the outdoors inside with me."
+-   "I work from home, and this wallpaper helps me feel more connected to nature while I'm stuck inside all day. It's a refreshing change of scenery."
+-   "I put this wallpaper in my bedroom, and it creates a calming atmosphere. The soft colors and natural elements help me relax before bed."
 
 ## How to Use the Wallpaper
 
@@ -42,9 +42,9 @@ To use this wallpaper, simply download the image and set it as your desktop back
 
 If you're interested in learning more about the beauty of nature, check out these resources:
 
-- [National Geographic](#)
-- [BBC Earth](#)
-- [Nature Conservancy](#)
+-   [National Geographic](#)
+-   [BBC Earth](#)
+-   [Nature Conservancy](#)
 
 ## Contact Us
 

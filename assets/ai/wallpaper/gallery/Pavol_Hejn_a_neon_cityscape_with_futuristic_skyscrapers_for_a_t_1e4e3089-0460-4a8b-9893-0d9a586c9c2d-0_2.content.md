@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Tech Blog: Exploring the Latest in Technology
 
@@ -30,12 +30,12 @@ At Futuristic Tech Blog, we are passionate about exploring the latest advancemen
 
 Our blog covers a wide range of topics, including:
 
-- Artificial Intelligence
-- Virtual Reality
-- Blockchain
-- Cybersecurity
-- Internet of Things
-- Robotics
+-   Artificial Intelligence
+-   Virtual Reality
+-   Blockchain
+-   Cybersecurity
+-   Internet of Things
+-   Robotics
 
 We strive to provide in-depth analysis and commentary on the latest news and trends in these areas, as well as interviews with experts in the field.
 
@@ -51,11 +51,11 @@ We love hearing from our readers about how our content has helped them stay info
 
 We pride ourselves on providing accurate and reliable information to our readers. Here are some of the sources we use to inform our content:
 
-- Wired
-- TechCrunch
-- MIT Technology Review
-- IEEE Spectrum
-- Ars Technica
+-   Wired
+-   TechCrunch
+-   MIT Technology Review
+-   IEEE Spectrum
+-   Ars Technica
 
 ## Contact Us
 

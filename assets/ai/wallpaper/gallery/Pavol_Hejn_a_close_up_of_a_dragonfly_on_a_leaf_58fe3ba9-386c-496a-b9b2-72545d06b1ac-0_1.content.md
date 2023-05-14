@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Dragonfly Dreams: Beautiful Wallpapers for Your Desktop
 
@@ -28,9 +28,9 @@ Our wallpaper features a close-up of a dragonfly on a leaf, captured in exquisit
 
 ### Specifications
 
-- Resolution: 1920x1080
-- Format: JPEG
-- Size: 1.5 MB
+-   Resolution: 1920x1080
+-   Format: JPEG
+-   Size: 1.5 MB
 
 ## How to Download
 
@@ -56,9 +56,9 @@ Here are some stories from our satisfied customers:
 
 If you're interested in learning more about dragonflies, check out these resources:
 
-- [National Geographic: Dragonfly](#)
-- [Smithsonian Magazine: The Secret World of Dragonflies](#)
-- [Dragonfly Society of the Americas](#)
+-   [National Geographic: Dragonfly](#)
+-   [Smithsonian Magazine: The Secret World of Dragonflies](#)
+-   [Dragonfly Society of the Americas](#)
 
 ## Contact Us
 

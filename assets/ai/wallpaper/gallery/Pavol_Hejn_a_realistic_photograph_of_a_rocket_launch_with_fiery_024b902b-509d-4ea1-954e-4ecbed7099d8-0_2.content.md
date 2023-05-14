@@ -12,18 +12,18 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Rocket Launch Wallpaper
 
-Looking for a stunning wallpaper to spice up your desktop or phone background? Look no further than our realistic photograph of a rocket launch! 
+Looking for a stunning wallpaper to spice up your desktop or phone background? Look no further than our realistic photograph of a rocket launch!
 
 ## Features
 
-- Realistic depiction of a rocket launch
-- Fiery trails and smoke visible in the sky
-- Perfect for desktop or phone backgrounds
-- High resolution image available for download
+-   Realistic depiction of a rocket launch
+-   Fiery trails and smoke visible in the sky
+-   Perfect for desktop or phone backgrounds
+-   High resolution image available for download
 
 ## Download
 

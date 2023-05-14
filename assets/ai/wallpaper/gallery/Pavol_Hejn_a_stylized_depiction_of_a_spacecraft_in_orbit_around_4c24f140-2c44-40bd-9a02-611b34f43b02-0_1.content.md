@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Spacecraft in Orbit Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a stunning wallpaper of a spacecraft in orbit a
 
 ## Features
 
-- Stylized depiction of a spacecraft in orbit
-- Dramatic lighting and shadows create a sense of depth and atmosphere
-- Perfect for desktops, laptops, tablets, and smartphones
-- High-resolution image ensures clarity and detail
+-   Stylized depiction of a spacecraft in orbit
+-   Dramatic lighting and shadows create a sense of depth and atmosphere
+-   Perfect for desktops, laptops, tablets, and smartphones
+-   High-resolution image ensures clarity and detail
 
 ## Download Instructions
 

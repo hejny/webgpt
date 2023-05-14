@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Nature's Beauty: A Waterfall in the Forest
 
-Welcome to our website showcasing the beauty of nature! Our current wallpaper features a breathtaking waterfall nestled in the heart of a lush forest. 
+Welcome to our website showcasing the beauty of nature! Our current wallpaper features a breathtaking waterfall nestled in the heart of a lush forest.
 
 As you gaze at this stunning image, imagine the sound of rushing water and the fresh scent of foliage. This serene scene is a reminder of the tranquility that can be found in nature.
 

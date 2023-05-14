@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a spaceship traveling through a wormhole, with bright colors and surreal patterns."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of an abstract image of a spaceship traveling through a wormhole. This mesmerizing wallpaper is sure to transport you to another world with its bright colors and surreal patterns.
 

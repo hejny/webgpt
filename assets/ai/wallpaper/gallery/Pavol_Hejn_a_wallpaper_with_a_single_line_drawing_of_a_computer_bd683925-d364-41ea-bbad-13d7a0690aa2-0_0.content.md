@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a single line drawing of a computer chip, in a muted color palette such as grey or blue."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper design that is perfect for any tech enthusiast or lover of modern minimalism. Our wallpaper features a single line drawing of a computer chip, rendered in a muted color palette of grey or blue.
 

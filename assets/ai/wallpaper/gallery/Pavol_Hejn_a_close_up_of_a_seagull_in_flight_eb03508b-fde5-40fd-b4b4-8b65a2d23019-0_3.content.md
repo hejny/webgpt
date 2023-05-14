@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Coastal Vibes: A Seagull's Flight
 
@@ -34,9 +34,9 @@ To download this wallpaper, simply right-click on the image and select "Save Ima
 
 Here are some examples of how people have used this wallpaper to enhance their digital space:
 
-- "I work in a high-stress environment, and seeing this wallpaper on my computer screen helps me feel more relaxed and focused."
-- "I love the beach but don't get to go very often, so having this wallpaper on my phone reminds me of the peacefulness and beauty of the coast."
-- "My kids love birds, and they were so excited to see this seagull wallpaper on our family computer. It's become a fun conversation starter for us."
+-   "I work in a high-stress environment, and seeing this wallpaper on my computer screen helps me feel more relaxed and focused."
+-   "I love the beach but don't get to go very often, so having this wallpaper on my phone reminds me of the peacefulness and beauty of the coast."
+-   "My kids love birds, and they were so excited to see this seagull wallpaper on our family computer. It's become a fun conversation starter for us."
 
 ## References
 

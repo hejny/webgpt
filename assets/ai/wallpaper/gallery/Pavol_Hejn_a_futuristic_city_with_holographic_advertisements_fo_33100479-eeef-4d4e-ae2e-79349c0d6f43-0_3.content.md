@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Welcome to the Future of Innovation!
 
@@ -22,11 +22,11 @@ Are you ready to experience the cutting-edge technology and innovation of tomorr
 
 Our homepage features a stunning wallpaper of a futuristic city with holographic advertisements. This immersive image is just a taste of what you can expect from our website. Join us on a journey through the most innovative breakthroughs in fields such as:
 
-- Artificial intelligence
-- Robotics
-- Biotechnology
-- Space exploration
-- Quantum computing
+-   Artificial intelligence
+-   Robotics
+-   Biotechnology
+-   Space exploration
+-   Quantum computing
 
 ## Stay Ahead of the Curve
 

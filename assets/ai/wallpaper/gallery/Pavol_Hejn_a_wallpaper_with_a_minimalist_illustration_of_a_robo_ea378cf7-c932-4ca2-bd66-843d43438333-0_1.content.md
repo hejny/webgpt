@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Robotic Arm Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a stunning wallpaper with a minimalist illustra
 
 ## Features
 
-- Minimalist illustration of a robotic arm
-- Dark and moody background colors
-- High-quality resolution for optimal display on any device
-- Available in multiple sizes to fit your screen perfectly
+-   Minimalist illustration of a robotic arm
+-   Dark and moody background colors
+-   High-quality resolution for optimal display on any device
+-   Available in multiple sizes to fit your screen perfectly
 
 ## How to Download
 
@@ -35,10 +35,10 @@ To download this wallpaper, simply click the link below and save the image to yo
 
 This wallpaper is compatible with a wide range of devices, including:
 
-- Desktop computers
-- Laptops
-- Tablets
-- Mobile phones
+-   Desktop computers
+-   Laptops
+-   Tablets
+-   Mobile phones
 
 ## Customize Your Device
 

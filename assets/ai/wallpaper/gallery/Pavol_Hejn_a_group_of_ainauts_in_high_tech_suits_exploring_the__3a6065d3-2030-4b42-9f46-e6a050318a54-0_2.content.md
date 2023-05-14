@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts exploring the surface of a desert planet. These high-tech suits are designed to protect them from the harsh environment, allowing them to venture into uncharted territories and discover new worlds.
 

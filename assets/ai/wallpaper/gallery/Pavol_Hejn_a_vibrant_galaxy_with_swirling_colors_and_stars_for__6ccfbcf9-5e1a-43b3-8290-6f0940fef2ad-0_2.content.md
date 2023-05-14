@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A vibrant galaxy with swirling colors and stars for a science or astronomy blog"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Looking for a wallpaper that truly captures the beauty and wonder of the universe? Look no further than our stunning "Vibrant Galaxy" wallpaper, featuring swirling colors and stars that will transport you to the far reaches of space.
 

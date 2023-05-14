@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Nature and Wildlife Blog
 
-Welcome to our nature and wildlife blog, where we share stories and images of the beauty and wonder of the natural world. 
+Welcome to our nature and wildlife blog, where we share stories and images of the beauty and wonder of the natural world.
 
 ---
 
@@ -24,7 +24,7 @@ Welcome to our nature and wildlife blog, where we share stories and images of th
 
 Each month, we feature a stunning wallpaper image that captures the essence of nature. This month's wallpaper is a dreamy image of a forest at dawn with a misty atmosphere.
 
-> "The morning sun filtered through the trees, casting a warm glow on the forest floor. The mist hung low, creating an ethereal atmosphere that made me feel like I was walking through a dream." 
+> "The morning sun filtered through the trees, casting a warm glow on the forest floor. The mist hung low, creating an ethereal atmosphere that made me feel like I was walking through a dream."
 
 Feel free to download this wallpaper for your desktop or mobile device and immerse yourself in the tranquility of nature.
 
@@ -42,9 +42,9 @@ At our nature and wildlife blog, we are passionate about preserving and protecti
 
 Check out some of our latest articles:
 
-- 5 Reasons Why National Parks Are Important
-- The Secret Life of Bees: Fascinating Facts About These Incredible Insects
-- Exploring the Great Barrier Reef: A Journey Underwater
+-   5 Reasons Why National Parks Are Important
+-   The Secret Life of Bees: Fascinating Facts About These Incredible Insects
+-   Exploring the Great Barrier Reef: A Journey Underwater
 
 ---
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Tech Icons Wallpaper
 
@@ -24,14 +24,14 @@ Welcome to our collection of tech-inspired wallpapers! Our "Tech Icons" wallpape
 
 ## Features
 
-- High-quality resolution for crisp, clear images
-- Repeat pattern for seamless application across multiple screens
-- Abstract design that adds a modern touch to any device
+-   High-quality resolution for crisp, clear images
+-   Repeat pattern for seamless application across multiple screens
+-   Abstract design that adds a modern touch to any device
 
 ## User Stories
 
-- "I'm a software engineer and I love having tech-inspired wallpapers on my devices. The Tech Icons wallpaper is perfect for me because it showcases my passion for technology while still looking sleek and professional." - John, 32
-- "I recently started a tech blog and I wanted a background image that would tie in with my theme. The Tech Icons wallpaper was exactly what I was looking for!" - Sarah, 27
+-   "I'm a software engineer and I love having tech-inspired wallpapers on my devices. The Tech Icons wallpaper is perfect for me because it showcases my passion for technology while still looking sleek and professional." - John, 32
+-   "I recently started a tech blog and I wanted a background image that would tie in with my theme. The Tech Icons wallpaper was exactly what I was looking for!" - Sarah, 27
 
 ## Installation Instructions
 
@@ -43,9 +43,9 @@ Welcome to our collection of tech-inspired wallpapers! Our "Tech Icons" wallpape
 
 Looking for more tech-inspired wallpapers? Check out these resources:
 
-- [WallpaperSafari](#)
-- [TechSpot](#)
-- [Unsplash](#)
+-   [WallpaperSafari](#)
+-   [TechSpot](#)
+-   [Unsplash](#)
 
 ## Contact Us
 

@@ -12,15 +12,15 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Montserrat" font would be a great fit for this website.-->
+<!--font:The Montserrat font would be a great fit for this website.-->
 
 # Adventure Awaits
 
-Welcome to our travel website where adventure is just a click away! 
+Welcome to our travel website where adventure is just a click away!
 
 ## Experience the Serenity of Nature
 
-Escape to the jungle and immerse yourself in the beauty of nature. Our serene image of a waterfall in the jungle will transport you to a world of tranquility and peace. 
+Escape to the jungle and immerse yourself in the beauty of nature. Our serene image of a waterfall in the jungle will transport you to a world of tranquility and peace.
 
 > "In every walk with nature, one receives far more than he seeks." - John Muir
 
@@ -30,10 +30,10 @@ Whether you're looking for a solo trip or a family vacation, we've got you cover
 
 ### Explore Our Destinations
 
-- Costa Rica
-- Bali
-- New Zealand
-- Iceland
+-   Costa Rica
+-   Bali
+-   New Zealand
+-   Iceland
 
 ## Join Our Community
 

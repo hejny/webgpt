@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The "Open Sans" font would be a great fit for this website.-->
+<!--font:The Open Sans font would be a great fit for this website.-->
 
 # Mindful Forest: Find Peace and Serenity in Nature
 
@@ -30,10 +30,10 @@ At Mindful Forest, we believe that nature has the power to heal and soothe the m
 
 We offer a range of services to help you on your journey towards mindfulness and spiritual well-being:
 
-- Guided Meditations: Our guided meditations are designed to help you relax, focus, and find inner peace.
-- Nature Walks: Join us for a guided nature walk and experience the healing power of the forest firsthand.
-- Mindfulness Workshops: Learn how to incorporate mindfulness into your daily life with our workshops led by experienced instructors.
-- Retreats: Immerse yourself in nature and deepen your mindfulness practice with one of our retreats.
+-   Guided Meditations: Our guided meditations are designed to help you relax, focus, and find inner peace.
+-   Nature Walks: Join us for a guided nature walk and experience the healing power of the forest firsthand.
+-   Mindfulness Workshops: Learn how to incorporate mindfulness into your daily life with our workshops led by experienced instructors.
+-   Retreats: Immerse yourself in nature and deepen your mindfulness practice with one of our retreats.
 
 ## User Stories
 
@@ -47,9 +47,9 @@ Our users have found great benefit in our services. Here are some of their stori
 
 We are proud to be affiliated with the following organizations:
 
-- The Sierra Club
-- The Nature Conservancy
-- The Mindfulness Association
+-   The Sierra Club
+-   The Nature Conservancy
+-   The Mindfulness Association
 
 ## Contact Us
 

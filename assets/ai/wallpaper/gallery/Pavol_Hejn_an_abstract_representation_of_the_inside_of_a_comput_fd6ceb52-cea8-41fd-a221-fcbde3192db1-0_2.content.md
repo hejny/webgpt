@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "An abstract representation of the inside of a computer chip with a metallic color palette"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our website featuring a stunning wallpaper of an abstract representation of the inside of a computer chip with a metallic color palette! 
+Welcome to our website featuring a stunning wallpaper of an abstract representation of the inside of a computer chip with a metallic color palette!
 
 This wallpaper is perfect for those who appreciate technology and its intricate design. The metallic color palette adds a touch of sophistication, making it suitable for any modern home or office space.
 

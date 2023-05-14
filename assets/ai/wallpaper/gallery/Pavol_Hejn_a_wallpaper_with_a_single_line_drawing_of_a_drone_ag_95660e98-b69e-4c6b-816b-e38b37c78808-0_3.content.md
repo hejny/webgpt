@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a unique wallpaper design that combines modern technology with striking geometric patterns. This wallpaper features a single line drawing of a drone, set against a backdrop of complementary colored geometric shapes.
 

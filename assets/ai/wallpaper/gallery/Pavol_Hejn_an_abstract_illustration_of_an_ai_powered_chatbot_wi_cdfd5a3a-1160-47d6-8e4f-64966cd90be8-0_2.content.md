@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract illustration of an AI-powered chatbot, with sleek and modern graphics and a minimalist color scheme."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of an abstract illustration of an AI-powered chatbot. This sleek and modern design is sure to catch your eye with its minimalist color scheme and futuristic graphics.
 

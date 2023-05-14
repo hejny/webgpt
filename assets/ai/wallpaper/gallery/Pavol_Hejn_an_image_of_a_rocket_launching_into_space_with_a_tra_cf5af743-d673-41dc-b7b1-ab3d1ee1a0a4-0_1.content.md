@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Rocket Wallpaper
 
-Welcome to our website featuring the stunning "Space Rocket" wallpaper! This breathtaking image captures the excitement and wonder of space exploration, with a rocket launching into the starry sky leaving a trail of fire behind it. 
+Welcome to our website featuring the stunning "Space Rocket" wallpaper! This breathtaking image captures the excitement and wonder of space exploration, with a rocket launching into the starry sky leaving a trail of fire behind it.
 
 ## About Our Website
 
@@ -46,9 +46,9 @@ To download the Space Rocket wallpaper, simply click on the link below and save 
 
 If you're interested in learning more about space exploration and the history of rocket launches, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a full moon rising over a mountain range. This captivating photograph captures the essence of mystery and wonder that nature has to offer.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Oceanic Starfish - Discover the Wonders of the Sea
 
@@ -38,9 +38,9 @@ With Oceanic Starfish, you can explore the ocean from the comfort of your own ho
 
 Our articles cover a variety of topics related to marine life, including:
 
-- The biology and behavior of different species of fish, mammals, and invertebrates
-- The impact of climate change and pollution on ocean ecosystems
-- The latest research and discoveries in marine science
+-   The biology and behavior of different species of fish, mammals, and invertebrates
+-   The impact of climate change and pollution on ocean ecosystems
+-   The latest research and discoveries in marine science
 
 ### Videos
 
@@ -54,21 +54,21 @@ Our interactive content allows you to dive deeper into the world of marine life.
 
 At Oceanic Starfish, we believe that everyone can make a difference in protecting our oceans. Here are some ways you can get involved:
 
-- Volunteer with local conservation organizations
-- Reduce your use of single-use plastics
-- Support sustainable fishing practices
-- Spread awareness about the importance of ocean conservation on social media
+-   Volunteer with local conservation organizations
+-   Reduce your use of single-use plastics
+-   Support sustainable fishing practices
+-   Spread awareness about the importance of ocean conservation on social media
 
 ## References
 
 If you're interested in learning more about the ocean and marine life, here are some resources we recommend:
 
-- National Geographic's Ocean page (#ocean)
-- The Ocean Cleanup (#cleanup)
-- The Marine Conservation Society (#conservation)
+-   National Geographic's Ocean page (#ocean)
+-   The Ocean Cleanup (#cleanup)
+-   The Marine Conservation Society (#conservation)
 
 ## Contact Us
 
-If you have any questions or feedback about our website, we'd love to hear from you. You can reach us at contact@oceanicstarfish.com or follow us on Twitter (@oceanicstarfish). 
+If you have any questions or feedback about our website, we'd love to hear from you. You can reach us at contact@oceanicstarfish.com or follow us on Twitter (@oceanicstarfish).
 
 Thank you for visiting Oceanic Starfish - we hope you enjoy exploring the wonders of the sea! 🐠🌊

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of neon-colored circuitry, set against a black background."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Looking for a wallpaper that's both stylish and tech-inspired? Look no further than our neon-colored circuitry wallpaper!
 

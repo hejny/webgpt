@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Sunflower Fields: Discover the Beauty of Nature
 
@@ -30,10 +30,10 @@ At Sunflower Fields, we are passionate about nature and believe that everyone sh
 
 We offer a wide range of services to help you create your own sunflower field, including:
 
-- Gardening tips and tricks
-- Landscaping design
-- Seed selection and planting advice
-- Maintenance and care instructions
+-   Gardening tips and tricks
+-   Landscaping design
+-   Seed selection and planting advice
+-   Maintenance and care instructions
 
 Whether you're a seasoned gardener or just starting out, we have something for everyone.
 
@@ -49,23 +49,23 @@ Don't just take our word for it - here are some stories from our satisfied custo
 
 Looking for more information on sunflowers? Check out these helpful resources:
 
-- [National Garden Bureau](#)
-- [Sunflower Association](#)
-- [Gardening Know How](#)
+-   [National Garden Bureau](#)
+-   [Sunflower Association](#)
+-   [Gardening Know How](#)
 
 ## Contact Us
 
 Have a question or need some advice? Get in touch with us today:
 
-- Email: info@sunflowerfields.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@sunflowerfields.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 Join us on social media to stay up-to-date on the latest news and tips:
 
-- [Facebook](#)
-- [Twitter](#)
-- [Instagram](#)
+-   [Facebook](#)
+-   [Twitter](#)
+-   [Instagram](#)
 
 ## Conclusion
 

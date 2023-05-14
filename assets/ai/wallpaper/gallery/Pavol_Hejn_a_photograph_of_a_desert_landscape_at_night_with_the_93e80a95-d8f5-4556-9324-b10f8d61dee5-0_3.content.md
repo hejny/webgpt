@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Desert Night Sky Wallpaper
 
@@ -20,10 +20,10 @@ Decorate your desktop or mobile screen with the stunning beauty of a desert nigh
 
 ## Features:
 
-- High-quality photograph
-- Captures the serene beauty of a desert at night
-- Stars visible in the sky above
-- Perfect for desktop or mobile backgrounds
+-   High-quality photograph
+-   Captures the serene beauty of a desert at night
+-   Stars visible in the sky above
+-   Perfect for desktop or mobile backgrounds
 
 ## How to Use:
 
@@ -33,7 +33,7 @@ Decorate your desktop or mobile screen with the stunning beauty of a desert nigh
 
 > "The clearest way into the Universe is through a forest wilderness." - John Muir
 
-Enjoy the tranquility of the desert night sky every time you open your device. Download this breathtaking wallpaper now! 
+Enjoy the tranquility of the desert night sky every time you open your device. Download this breathtaking wallpaper now!
 
 ---
 

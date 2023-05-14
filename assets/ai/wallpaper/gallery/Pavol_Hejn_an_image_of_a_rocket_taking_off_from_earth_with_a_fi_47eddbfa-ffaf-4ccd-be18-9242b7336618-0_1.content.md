@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An image of a rocket taking off from Earth, with a fiery trail leading into the clouds."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a rocket taking off from Earth, leaving behind a fiery trail that pierces through the clouds. This breathtaking image captures the excitement and wonder of space exploration.
 

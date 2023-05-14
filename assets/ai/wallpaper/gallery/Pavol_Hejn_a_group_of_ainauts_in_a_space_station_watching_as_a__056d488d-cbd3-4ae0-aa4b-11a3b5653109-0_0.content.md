@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to AInauts
 
-Experience the thrill of space exploration with AInauts, a team of highly skilled astronauts and advanced artificial intelligence technology. 
+Experience the thrill of space exploration with AInauts, a team of highly skilled astronauts and advanced artificial intelligence technology.
 
 Our latest wallpaper features a group of AInauts in a space station, facing a critical mission to save Earth from a massive asteroid hurtling towards it. With their expertise and cutting-edge AI technology, they are the only hope for humanity's survival.
 

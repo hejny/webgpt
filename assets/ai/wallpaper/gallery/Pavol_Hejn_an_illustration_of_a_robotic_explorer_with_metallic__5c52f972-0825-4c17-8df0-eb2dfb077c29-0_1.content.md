@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Robotic Explorer Wallpaper for Tech Enthusiasts
 
@@ -30,17 +30,17 @@ Our wallpaper is not just a pretty picture. It represents the spirit of explorat
 
 Here are some examples of how our users have used our robotic explorer wallpaper:
 
-- John, a software engineer, uses it as his desktop background to remind him of the exciting challenges he faces every day.
-- Sarah, a student of robotics, printed it out and hung it on her wall to inspire her during long study sessions.
-- Mike, a sci-fi writer, used it as a cover image for his latest novel, which features a similar robot explorer as the main character.
+-   John, a software engineer, uses it as his desktop background to remind him of the exciting challenges he faces every day.
+-   Sarah, a student of robotics, printed it out and hung it on her wall to inspire her during long study sessions.
+-   Mike, a sci-fi writer, used it as a cover image for his latest novel, which features a similar robot explorer as the main character.
 
 ## References
 
 If you want to learn more about the inspiration behind our robotic explorer wallpaper, here are some references we recommend:
 
-- [NASA's Mars Exploration Program](#)
-- [Boston Dynamics' Spot Robot](#)
-- [Robonaut 2 by NASA and General Motors](#)
+-   [NASA's Mars Exploration Program](#)
+-   [Boston Dynamics' Spot Robot](#)
+-   [Robonaut 2 by NASA and General Motors](#)
 
 ## Contact Us
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Exploring the Depths of Gas Giants: AI-Assisted Research
 
@@ -34,9 +34,9 @@ Our mission is to explore the depths of gas giants and uncover the secrets hidde
 
 Our research has already yielded some exciting discoveries. Here are just a few examples of how our work is making an impact:
 
-- **Astronomers**: Our data is helping astronomers refine their models of gas giant formation and predict the properties of exoplanets beyond our solar system.
-- **Planetary Scientists**: Our findings are shedding new light on the internal structure and dynamics of gas giants, which could have implications for our understanding of the solar system as a whole.
-- **AI Researchers**: Our approach to combining human and machine intelligence is pushing the boundaries of what's possible in the field of AI, opening up new avenues for exploration and discovery.
+-   **Astronomers**: Our data is helping astronomers refine their models of gas giant formation and predict the properties of exoplanets beyond our solar system.
+-   **Planetary Scientists**: Our findings are shedding new light on the internal structure and dynamics of gas giants, which could have implications for our understanding of the solar system as a whole.
+-   **AI Researchers**: Our approach to combining human and machine intelligence is pushing the boundaries of what's possible in the field of AI, opening up new avenues for exploration and discovery.
 
 ## Our Process
 
@@ -46,9 +46,9 @@ Our research involves deploying robotic probes to the surface of gas giants, whe
 
 Here are some resources you might find helpful if you're interested in learning more about gas giants and our research:
 
-- [NASA's Gas Giants Overview](#)
-- [European Space Agency's Jupiter Mission](#)
-- [Nature Astronomy: The Atmospheres of the Solar System's Giant Planets](#)
+-   [NASA's Gas Giants Overview](#)
+-   [European Space Agency's Jupiter Mission](#)
+-   [Nature Astronomy: The Atmospheres of the Solar System's Giant Planets](#)
 
 ## Contact Us
 

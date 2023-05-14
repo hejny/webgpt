@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Dark and Ominous Machine Wallpaper
 
@@ -20,9 +20,9 @@ Looking for a wallpaper that will add a touch of darkness to your desktop? Look 
 
 ## Features
 
-- Abstract illustration of a dark and ominous machine
-- Glowing red lights and mechanical parts
-- Perfect for adding a touch of darkness to your desktop
+-   Abstract illustration of a dark and ominous machine
+-   Glowing red lights and mechanical parts
+-   Perfect for adding a touch of darkness to your desktop
 
 ## How to Download
 
@@ -32,10 +32,10 @@ To download the wallpaper, simply right-click on the image and select "Save Imag
 
 Our wallpaper is compatible with a variety of devices, including:
 
-- Desktop computers
-- Laptops
-- Tablets
-- Smartphones
+-   Desktop computers
+-   Laptops
+-   Tablets
+-   Smartphones
 
 ## Conclusion
 

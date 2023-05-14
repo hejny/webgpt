@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a city skyline at dusk for a real estate or architecture website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our real estate and architecture website! We are excited to showcase our latest wallpaper featuring a minimalist graphic of a city skyline at dusk.
 

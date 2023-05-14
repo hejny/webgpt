@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to the World of Cycling
 
@@ -28,11 +28,11 @@ Our team of experienced cyclists and fitness enthusiasts created this website to
 
 ## Our Services
 
-- News and Events: Stay up-to-date with the latest cycling news and events from around the world. From the Tour de France to local charity rides, we've got you covered.
+-   News and Events: Stay up-to-date with the latest cycling news and events from around the world. From the Tour de France to local charity rides, we've got you covered.
 
-- Gear Reviews: Looking for the best cycling gear? Check out our reviews of bikes, helmets, shoes, and more. We only recommend products that we have personally tested and loved.
+-   Gear Reviews: Looking for the best cycling gear? Check out our reviews of bikes, helmets, shoes, and more. We only recommend products that we have personally tested and loved.
 
-- Training Tips: Whether you're a beginner or an experienced cyclist, we have training tips to help you improve your performance and reach your goals.
+-   Training Tips: Whether you're a beginner or an experienced cyclist, we have training tips to help you improve your performance and reach your goals.
 
 ## User Stories
 
@@ -46,12 +46,12 @@ Don't just take our word for it - hear from our satisfied users:
 
 Check out some of our favorite cycling resources:
 
-- [USA Cycling](#)
-- [Cyclingnews.com](#)
-- [Bicycling Magazine](#)
+-   [USA Cycling](#)
+-   [Cyclingnews.com](#)
+-   [Bicycling Magazine](#)
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Send us an email at info@cyclingwebsite.com or follow us on [Twitter](#) and [Facebook](#) for the latest updates. 
+Have a question or suggestion? We'd love to hear from you! Send us an email at info@cyclingwebsite.com or follow us on [Twitter](#) and [Facebook](#) for the latest updates.
 
 Join us on the road to a healthier, happier life with cycling! 🚴‍♀️🚴‍♂️

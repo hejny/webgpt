@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A stylized depiction of a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a spacecraft in orbit around a distant planet or moon. This wallpaper showcases the beauty and wonder of space exploration, with its dramatic lighting and shadows adding depth and intrigue to the image.
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Robot Wallpaper
 
@@ -20,17 +20,17 @@ Add a touch of pop art to your space with our comic book-style wallpaper featuri
 
 ## Features
 
-- Pop art-style wallpaper
-- Comic book-style illustration of a futuristic robot or cyborg
-- Vibrant and eye-catching design
-- Perfect for sci-fi and technology enthusiasts
+-   Pop art-style wallpaper
+-   Comic book-style illustration of a futuristic robot or cyborg
+-   Vibrant and eye-catching design
+-   Perfect for sci-fi and technology enthusiasts
 
 ## Specifications
 
-- Material: Vinyl
-- Roll size: 20.5 inches x 33 feet
-- Coverage: Approximately 56 square feet
-- Pattern repeat: 20.5 inches
-- Application method: Paste the wall
+-   Material: Vinyl
+-   Roll size: 20.5 inches x 33 feet
+-   Coverage: Approximately 56 square feet
+-   Pattern repeat: 20.5 inches
+-   Application method: Paste the wall
 
 > "The future is now with our Futuristic Robot Wallpaper. Transform any room into a sci-fi wonderland with this vibrant and dynamic design."

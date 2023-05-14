@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Oceanic Wonders: A Jellyfish Close-Up Wallpaper
 
@@ -30,9 +30,9 @@ This high-resolution wallpaper features a close-up of a jellyfish in its natural
 
 Here are some examples of how our users have used this wallpaper:
 
-- "I'm a marine biology student, and I love having this wallpaper on my computer as a reminder of why I'm studying what I'm studying."
-- "I work in a stressful job, and looking at this wallpaper during breaks helps me relax and escape for a few moments."
-- "I've always been fascinated by jellyfish, and this wallpaper is the perfect way to bring their beauty into my home."
+-   "I'm a marine biology student, and I love having this wallpaper on my computer as a reminder of why I'm studying what I'm studying."
+-   "I work in a stressful job, and looking at this wallpaper during breaks helps me relax and escape for a few moments."
+-   "I've always been fascinated by jellyfish, and this wallpaper is the perfect way to bring their beauty into my home."
 
 ## Download Instructions
 
@@ -42,9 +42,9 @@ To download this wallpaper, simply right-click on the image and select "Save Ima
 
 If you're interested in learning more about jellyfish and other marine life, we recommend checking out the following resources:
 
-- [National Geographic](#) - Explore the world's oceans and learn about the creatures that call them home.
-- [MarineBio](#) - A comprehensive database of marine species and ecosystems.
-- [The Ocean Cleanup](#) - An organization dedicated to cleaning up plastic pollution in the ocean.
+-   [National Geographic](#) - Explore the world's oceans and learn about the creatures that call them home.
+-   [MarineBio](#) - A comprehensive database of marine species and ecosystems.
+-   [The Ocean Cleanup](#) - An organization dedicated to cleaning up plastic pollution in the ocean.
 
 ## Contact Us
 

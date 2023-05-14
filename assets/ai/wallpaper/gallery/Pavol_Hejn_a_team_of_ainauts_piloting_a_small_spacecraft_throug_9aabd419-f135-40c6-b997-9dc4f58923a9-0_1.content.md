@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # AI Spacecraft Piloting Through an Asteroid Field
 
-Welcome to our website featuring a stunning wallpaper of a team of AInauts navigating their spacecraft through a treacherous asteroid field. 
+Welcome to our website featuring a stunning wallpaper of a team of AInauts navigating their spacecraft through a treacherous asteroid field.
 
 ## The Thrill of Space Exploration
 
@@ -28,7 +28,7 @@ One of the biggest challenges of space exploration is navigating through dangero
 
 ## Join Us on Our Journey
 
-At our company, we're passionate about space exploration and the possibilities it holds for the future. Whether you're a fellow enthusiast or just curious about what we do, we invite you to join us on our journey. Follow our updates and stay tuned for exciting new developments in the world of space exploration. 
+At our company, we're passionate about space exploration and the possibilities it holds for the future. Whether you're a fellow enthusiast or just curious about what we do, we invite you to join us on our journey. Follow our updates and stay tuned for exciting new developments in the world of space exploration.
 
 ---
 

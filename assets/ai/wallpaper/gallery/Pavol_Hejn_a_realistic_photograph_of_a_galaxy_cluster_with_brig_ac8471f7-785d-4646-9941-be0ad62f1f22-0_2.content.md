@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Universe: A Galaxy Cluster Wallpaper
 
@@ -42,16 +42,16 @@ Our wallpaper has been downloaded by people all over the world who share a love 
 
 If you want to learn more about the galaxy cluster featured in our wallpaper, here are some resources to check out:
 
-- [NASA's Hubble Space Telescope website](#)
-- [Astronomy Picture of the Day](#)
-- [National Geographic's article on galaxy clusters](#)
+-   [NASA's Hubble Space Telescope website](#)
+-   [Astronomy Picture of the Day](#)
+-   [National Geographic's article on galaxy clusters](#)
 
 ## Contact Us
 
 If you have any questions or comments about our wallpaper or website, please don't hesitate to reach out to us. You can contact us through the following channels:
 
-- Email: [contact@exploringtheuniverse.com](mailto:contact@exploringtheuniverse.com)
-- Twitter: [@exploreuniverse](#)
-- Instagram: [@exploringtheuniverse](#)
+-   Email: [contact@exploringtheuniverse.com](mailto:contact@exploringtheuniverse.com)
+-   Twitter: [@exploreuniverse](#)
+-   Instagram: [@exploringtheuniverse](#)
 
 We'd love to hear from you and continue to share our passion for space and exploration.

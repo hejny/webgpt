@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Transform your space into a celestial wonderland with our vintage map of the stars and constellations wallpaper. This stunning design features detailed illustrations of spacecraft and celestial bodies, making it the perfect addition to any astronomy enthusiast's collection.
 

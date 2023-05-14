@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a virtual assistant or chatbot, with space for messages and alerts."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a unique wallpaper design perfect for those who love technology and innovation. Our wallpaper features a simple yet eye-catching graphic of a virtual assistant or chatbot, with ample space for messages and alerts.
 

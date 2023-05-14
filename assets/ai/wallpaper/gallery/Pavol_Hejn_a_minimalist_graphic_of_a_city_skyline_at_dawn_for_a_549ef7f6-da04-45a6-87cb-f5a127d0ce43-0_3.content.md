@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A minimalist graphic of a city skyline at dawn for a business or marketing website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our business and marketing website, where we believe that first impressions matter. That's why we've chosen a minimalist graphic of a city skyline at dawn as the wallpaper for our homepage. 
+Welcome to our business and marketing website, where we believe that first impressions matter. That's why we've chosen a minimalist graphic of a city skyline at dawn as the wallpaper for our homepage.
 
 The city skyline at dawn represents the start of a new day, full of possibilities and opportunities. It symbolizes growth, progress, and innovation - all values that are important to us as a business. The minimalist design of the graphic is sleek and modern, reflecting our commitment to staying ahead of the curve in our industry.
 

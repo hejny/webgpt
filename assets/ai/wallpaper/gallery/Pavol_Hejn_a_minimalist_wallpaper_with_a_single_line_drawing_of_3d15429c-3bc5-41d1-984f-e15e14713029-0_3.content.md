@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Looking for a wallpaper that combines minimalism and futuristic elements? Look no further than our cyborg line drawing wallpaper. With its clean lines and striking color options like bright red or blue, this wallpaper is the perfect addition to any modern space.
 

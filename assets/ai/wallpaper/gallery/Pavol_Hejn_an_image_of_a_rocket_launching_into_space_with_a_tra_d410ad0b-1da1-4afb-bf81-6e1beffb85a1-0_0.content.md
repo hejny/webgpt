@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Adventures
 
-Explore the universe with our collection of stunning wallpapers. 
+Explore the universe with our collection of stunning wallpapers.
 
 ---
 
@@ -28,9 +28,9 @@ An image of a rocket launching into space with a trail of fire behind it, set ag
 
 ### Features:
 
-- High-quality resolution
-- Compatible with all devices
-- Easy to download and set as your wallpaper
+-   High-quality resolution
+-   Compatible with all devices
+-   Easy to download and set as your wallpaper
 
 ---
 

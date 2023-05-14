@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a deep space object, such as a black hole or pulsar, with swirling colors and patterns."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of an abstract image of a deep space object! This mesmerizing design showcases the beauty and mystery of the cosmos, with swirling colors and patterns that evoke the awe-inspiring nature of black holes, pulsars, and other celestial objects.
 

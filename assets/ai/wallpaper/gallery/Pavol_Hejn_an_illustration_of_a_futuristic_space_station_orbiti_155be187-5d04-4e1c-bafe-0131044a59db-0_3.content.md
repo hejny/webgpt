@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Space Station" - Futuristic Wallpaper for Your Desktop
 
@@ -30,9 +30,9 @@ Our space station wallpaper features sleek lines and metallic accents that creat
 
 Here are some user stories from people who have downloaded and used our space station wallpaper:
 
-- "I love science fiction, and this wallpaper is perfect for my desktop. It's like having a little piece of the future right on my computer screen."
-- "The colors in this wallpaper are so vibrant and beautiful. I find myself staring at it throughout the day."
-- "I work in a tech company, and this wallpaper is perfect for my office computer. It's a great conversation starter with my colleagues."
+-   "I love science fiction, and this wallpaper is perfect for my desktop. It's like having a little piece of the future right on my computer screen."
+-   "The colors in this wallpaper are so vibrant and beautiful. I find myself staring at it throughout the day."
+-   "I work in a tech company, and this wallpaper is perfect for my office computer. It's a great conversation starter with my colleagues."
 
 ## How to Download
 
@@ -44,9 +44,9 @@ To download our space station wallpaper, simply click on the link below and save
 
 If you're interested in learning more about space stations and the future of space exploration, check out these resources:
 
-- [NASA - International Space Station](#)
-- [SpaceX - Starship](#)
-- [ESA - Space Station](#)
+-   [NASA - International Space Station](#)
+-   [SpaceX - Starship](#)
+-   [ESA - Space Station](#)
 
 ## Contact Us
 

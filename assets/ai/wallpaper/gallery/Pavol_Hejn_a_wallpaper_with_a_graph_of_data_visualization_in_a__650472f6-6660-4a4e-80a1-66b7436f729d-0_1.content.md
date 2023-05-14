@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a graph of data visualization, in a minimalist and modern design."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper with a graph of data visualization in a minimalist and modern design. This wallpaper is perfect for those who appreciate the beauty of data and its ability to convey complex information in a visually appealing way.
 

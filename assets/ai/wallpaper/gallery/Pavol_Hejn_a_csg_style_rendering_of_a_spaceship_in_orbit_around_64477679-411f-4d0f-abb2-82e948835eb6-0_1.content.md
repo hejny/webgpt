@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A csg-style rendering of a spaceship in orbit around a planet, with sharp angles and clean lines that highlight its modern and sleek design."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website, where you can find a stunning wallpaper featuring a spaceship in orbit around a planet. This csg-style rendering showcases the ship's modern and sleek design with its sharp angles and clean lines.
 

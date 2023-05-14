@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Virtual Reality Headset Wallpaper
 
@@ -20,9 +20,9 @@ This wallpaper features a simple illustration of a virtual reality headset again
 
 ## Features
 
-- Simple yet eye-catching design
-- High-resolution image suitable for all screen sizes
-- Easy to download and set as your wallpaper
+-   Simple yet eye-catching design
+-   High-resolution image suitable for all screen sizes
+-   Easy to download and set as your wallpaper
 
 ## Download Instructions
 
@@ -38,10 +38,10 @@ To download this wallpaper, simply follow these steps:
 
 This wallpaper is compatible with a wide range of devices, including:
 
-- Desktop computers
-- Laptops
-- Mobile phones
-- Tablets
+-   Desktop computers
+-   Laptops
+-   Mobile phones
+-   Tablets
 
 ## Conclusion
 

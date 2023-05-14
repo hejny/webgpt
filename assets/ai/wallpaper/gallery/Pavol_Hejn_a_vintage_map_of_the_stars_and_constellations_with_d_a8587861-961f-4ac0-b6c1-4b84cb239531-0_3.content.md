@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Stargaze with our Vintage Map Wallpaper"
 
@@ -20,17 +20,17 @@ Looking for a way to bring the beauty of the cosmos into your home? Our vintage 
 
 ## Features
 
-- Detailed illustrations of spacecraft and celestial bodies
-- Vintage aesthetic adds character to any room
-- High-quality printing ensures long-lasting durability
-- Easy to install and remove without damaging walls
+-   Detailed illustrations of spacecraft and celestial bodies
+-   Vintage aesthetic adds character to any room
+-   High-quality printing ensures long-lasting durability
+-   Easy to install and remove without damaging walls
 
 ## Specifications
 
-- Dimensions: [insert dimensions here]
-- Material: Vinyl
-- Pattern repeat: [insert pattern repeat here]
-- Color options: [insert color options here]
+-   Dimensions: [insert dimensions here]
+-   Material: Vinyl
+-   Pattern repeat: [insert pattern repeat here]
+-   Color options: [insert color options here]
 
 ## Installation
 

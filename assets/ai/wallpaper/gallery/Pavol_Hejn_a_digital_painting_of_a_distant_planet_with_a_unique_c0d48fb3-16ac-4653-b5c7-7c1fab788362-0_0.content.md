@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital painting of a distant planet, with a unique atmosphere and unusual terrain."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website, where you can find a stunning digital painting of a distant planet that will transport you to another world.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Nature Takes Over" - A Wallpaper Collection Inspired by the Beauty of Nature
 
@@ -40,27 +40,27 @@ Here are some stories from our satisfied customers:
 
 If you're interested in learning more about the benefits of incorporating nature into your home or office decor, check out these resources:
 
-- [The Benefits of Biophilic Design](#benefits-of-biophilic-design)
-- [How to Create a Nature-Inspired Home](#nature-inspired-home)
+-   [The Benefits of Biophilic Design](#benefits-of-biophilic-design)
+-   [How to Create a Nature-Inspired Home](#nature-inspired-home)
 
 ### Benefits of Biophilic Design
 
 Biophilic design is a concept that emphasizes the importance of connecting with nature in our built environments. Studies have shown that incorporating natural elements into our homes and workplaces can have a range of positive effects on our health and well-being, including:
 
-- Reduced stress levels
-- Increased productivity
-- Improved mood and mental clarity
-- Better air quality
+-   Reduced stress levels
+-   Increased productivity
+-   Improved mood and mental clarity
+-   Better air quality
 
 ### Nature-Inspired Home
 
 If you're interested in creating a home that's inspired by nature, there are many ways to do so. Here are some ideas to get you started:
 
-- Use natural materials like wood, stone, and bamboo in your decor
-- Incorporate plants and flowers into your space
-- Choose colors that evoke the natural world, such as greens, blues, and earth tones
-- Open up your space to natural light and fresh air
-- Use natural scents like lavender or eucalyptus to create a calming atmosphere
+-   Use natural materials like wood, stone, and bamboo in your decor
+-   Incorporate plants and flowers into your space
+-   Choose colors that evoke the natural world, such as greens, blues, and earth tones
+-   Open up your space to natural light and fresh air
+-   Use natural scents like lavender or eucalyptus to create a calming atmosphere
 
 ## Contact Us
 

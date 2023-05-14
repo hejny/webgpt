@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Circuitry Wallpaper
 
@@ -20,4 +20,4 @@ To download this wallpaper, simply click on the "Download" button below and save
 
 [![Circuitry Wallpaper](https://example.com/circuitry-wallpaper.jpg)](https://example.com/download/circuitry-wallpaper.jpg)
 
-*Note: This wallpaper is for personal use only and may not be used for commercial purposes without permission.*
+_Note: This wallpaper is for personal use only and may not be used for commercial purposes without permission._

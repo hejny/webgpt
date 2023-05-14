@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Surrealist Dreamscape Wallpaper for Your Home or Office
 
@@ -24,10 +24,10 @@ Transform your space into a surreal dreamscape with our unique wallpaper design.
 
 ## Features
 
-- High-quality printing technology ensures vibrant colors and crisp details
-- Durable and easy to install wallpaper material
-- Available in custom sizes to fit any wall dimensions
-- Easy to clean and maintain
+-   High-quality printing technology ensures vibrant colors and crisp details
+-   Durable and easy to install wallpaper material
+-   Available in custom sizes to fit any wall dimensions
+-   Easy to clean and maintain
 
 ## User Stories
 
@@ -51,29 +51,29 @@ For more detailed installation instructions, please refer to our [installation g
 
 ## References
 
-- [Surrealism - Wikipedia](https://en.wikipedia.org/wiki/Surrealism)
-- [The History of Wallpaper - The Spruce](https://www.thespruce.com/history-of-wallpaper-1977448)
+-   [Surrealism - Wikipedia](https://en.wikipedia.org/wiki/Surrealism)
+-   [The History of Wallpaper - The Spruce](https://www.thespruce.com/history-of-wallpaper-1977448)
 
 ## Contact Us
 
 If you have any questions or concerns about our surrealist dreamscape wallpaper, please don't hesitate to contact us. Our customer service team is available 24/7 to assist you with your order and installation needs.
 
-- Email: info@dreamscapewallpaper.com
-- Phone: 1-800-555-1234
-- Social media: [@DreamscapeWallpaper](#social-media) on Instagram, Twitter, and Facebook
+-   Email: info@dreamscapewallpaper.com
+-   Phone: 1-800-555-1234
+-   Social media: [@DreamscapeWallpaper](#social-media) on Instagram, Twitter, and Facebook
 
 ## Installation Guide
 
 ### Materials Needed
 
-- Wallpaper
-- Wallpaper primer
-- Measuring tape
-- Utility knife
-- Wallpaper brush or roller
-- Smoothing tool (squeegee or plastic spatula)
-- Level
-- Pencil
+-   Wallpaper
+-   Wallpaper primer
+-   Measuring tape
+-   Utility knife
+-   Wallpaper brush or roller
+-   Smoothing tool (squeegee or plastic spatula)
+-   Level
+-   Pencil
 
 ### Step-by-Step Instructions
 

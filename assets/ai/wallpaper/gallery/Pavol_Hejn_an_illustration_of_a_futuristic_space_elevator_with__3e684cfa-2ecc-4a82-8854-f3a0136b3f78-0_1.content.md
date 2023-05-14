@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to the Future: Space Elevator Wallpaper
 
@@ -32,9 +32,9 @@ The concept of a space elevator has been around for over a century, but it wasn'
 
 Here are some examples of how our space elevator wallpaper might inspire you:
 
-- As an aspiring astronaut, you use the wallpaper as motivation to pursue your dream of traveling to space.
-- As a science fiction fan, you imagine all the incredible stories that could be set on a space elevator and use the wallpaper as inspiration for your writing.
-- As a student, you use the wallpaper as a reminder of the amazing technological advancements being made in the world today.
+-   As an aspiring astronaut, you use the wallpaper as motivation to pursue your dream of traveling to space.
+-   As a science fiction fan, you imagine all the incredible stories that could be set on a space elevator and use the wallpaper as inspiration for your writing.
+-   As a student, you use the wallpaper as a reminder of the amazing technological advancements being made in the world today.
 
 ## Get the Wallpaper
 
@@ -44,9 +44,9 @@ Ready to download our space elevator wallpaper? Simply click the link below to a
 
 And if you're interested in learning more about the science behind the space elevator, check out these resources:
 
-- [Space Elevators: An Introduction](#)
-- [The Space Elevator Concept](#)
-- [Carbon Nanotubes and the Space Elevator](#)
+-   [Space Elevators: An Introduction](#)
+-   [The Space Elevator Concept](#)
+-   [Carbon Nanotubes and the Space Elevator](#)
 
 ## Contact Us
 

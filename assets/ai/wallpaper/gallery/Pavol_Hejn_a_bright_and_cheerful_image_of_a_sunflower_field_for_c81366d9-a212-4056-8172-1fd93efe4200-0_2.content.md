@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that best fits the website is "Montserrat".-->
+<!--font:The font that best fits the website is Montserrat-->
 
 # Sunflower Garden: Tips and Tricks for Growing Your Own
 
@@ -26,10 +26,10 @@ Welcome to Sunflower Garden, your go-to source for all things related to growing
 
 Sunflowers are not only beautiful but also have many practical uses. Here are some reasons why you should consider growing sunflowers:
 
-- They attract pollinators such as bees and butterflies to your garden
-- They provide food for birds and other wildlife
-- They can be used to make oil, birdseed, and even cosmetics
-- They are easy to grow and maintain
+-   They attract pollinators such as bees and butterflies to your garden
+-   They provide food for birds and other wildlife
+-   They can be used to make oil, birdseed, and even cosmetics
+-   They are easy to grow and maintain
 
 ## Getting Started
 
@@ -53,9 +53,9 @@ Don't just take our word for it - here are some stories from real users who have
 
 For more information on growing sunflowers, check out these resources:
 
-- [The Old Farmer's Almanac](#)
-- [National Gardening Association](#)
-- [Sunflower Growing Guide](#)
+-   [The Old Farmer's Almanac](#)
+-   [National Gardening Association](#)
+-   [Sunflower Growing Guide](#)
 
 ## Contact Us
 

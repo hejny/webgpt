@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dreamy forest scene with fairies"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a dreamy forest scene with fairies. This enchanting wallpaper will transport you to a magical world where fairies dance among the trees and sparkling light illuminates the forest.
 

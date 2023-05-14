@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photorealistic image of the Earth from space, with vibrant colors and intricate details."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of the Earth from space! This photorealistic image captures the intricate details and vibrant colors of our beautiful planet, making it a perfect addition to any desktop or mobile device.
 

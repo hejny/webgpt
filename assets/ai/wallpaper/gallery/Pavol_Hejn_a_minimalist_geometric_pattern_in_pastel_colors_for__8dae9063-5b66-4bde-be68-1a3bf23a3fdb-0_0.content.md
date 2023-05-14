@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist geometric pattern in pastel colors for a fashion or beauty website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Introducing our latest wallpaper design, perfect for a fashion or beauty website! This minimalist geometric pattern features soft pastel colors that create a calming and sophisticated atmosphere.
 

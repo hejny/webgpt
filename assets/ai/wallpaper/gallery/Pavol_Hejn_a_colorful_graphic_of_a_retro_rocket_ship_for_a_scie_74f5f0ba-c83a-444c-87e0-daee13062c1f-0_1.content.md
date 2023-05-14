@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A colorful graphic of a retro rocket ship for a science or space exploration website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our science and space exploration website! We are excited to present to you our latest wallpaper featuring a colorful graphic of a retro rocket ship. 
+Welcome to our science and space exploration website! We are excited to present to you our latest wallpaper featuring a colorful graphic of a retro rocket ship.
 
 This wallpaper is perfect for anyone who loves space exploration and wants to add a touch of nostalgia to their desktop or mobile device. The vibrant colors and unique design of the rocket ship will transport you back in time to the golden age of space travel.
 

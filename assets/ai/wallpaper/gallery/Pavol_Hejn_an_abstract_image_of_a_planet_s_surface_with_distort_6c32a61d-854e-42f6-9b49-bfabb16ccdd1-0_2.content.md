@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Surreal Planetary Landscapes Wallpaper
 
-Welcome to our collection of surreal planetary landscapes wallpapers! Our website offers a unique selection of abstract images that will transport you to otherworldly realms. 
+Welcome to our collection of surreal planetary landscapes wallpapers! Our website offers a unique selection of abstract images that will transport you to otherworldly realms.
 
 ## About the Wallpaper
 
@@ -30,9 +30,9 @@ Our featured wallpaper is an abstract image of a planet's surface, with distorte
 
 Here are some user stories from our satisfied customers:
 
-- "I love this wallpaper! It makes me feel like I'm exploring a distant planet."
-- "The colors and shapes in this wallpaper are so mesmerizing. It's like a work of art."
-- "I wanted something different for my desktop background, and this wallpaper definitely delivers."
+-   "I love this wallpaper! It makes me feel like I'm exploring a distant planet."
+-   "The colors and shapes in this wallpaper are so mesmerizing. It's like a work of art."
+-   "I wanted something different for my desktop background, and this wallpaper definitely delivers."
 
 ## How to Download
 
@@ -46,9 +46,9 @@ If you're looking for more surreal and abstract wallpapers, be sure to check out
 
 Here are some references that inspired our collection of surreal planetary landscapes wallpapers:
 
-- The paintings of Salvador Dali
-- The science fiction novels of Frank Herbert
-- The music of Pink Floyd
+-   The paintings of Salvador Dali
+-   The science fiction novels of Frank Herbert
+-   The music of Pink Floyd
 
 ## Contact Us
 

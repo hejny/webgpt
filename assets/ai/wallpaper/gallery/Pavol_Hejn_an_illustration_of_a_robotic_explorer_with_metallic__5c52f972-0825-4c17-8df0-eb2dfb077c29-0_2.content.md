@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a robotic explorer, with metallic textures and intricate details."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring an incredible wallpaper of a robotic explorer! This stunning illustration showcases the intricate details and metallic textures of this futuristic machine, transporting you to a world of advanced technology and exploration.
 

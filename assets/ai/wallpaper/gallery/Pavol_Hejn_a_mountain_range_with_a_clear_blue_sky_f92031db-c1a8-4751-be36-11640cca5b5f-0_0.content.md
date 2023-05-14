@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Mountain Range Wallpaper
 
-Welcome to our website featuring a stunning wallpaper of a mountain range against a clear blue sky. 
+Welcome to our website featuring a stunning wallpaper of a mountain range against a clear blue sky.
 
 ## About the Wallpaper
 
@@ -34,8 +34,8 @@ This wallpaper is free for personal use only. If you would like to use it for co
 
 ## Tips for Using the Wallpaper
 
-- Adjust the brightness and contrast of your device to make the colors pop
-- Try using this wallpaper as a background for your favorite apps or widgets
-- Consider using a matching color scheme for your icons and desktop theme to create a cohesive look
+-   Adjust the brightness and contrast of your device to make the colors pop
+-   Try using this wallpaper as a background for your favorite apps or widgets
+-   Consider using a matching color scheme for your icons and desktop theme to create a cohesive look
 
 We hope you enjoy this beautiful wallpaper and that it brings a sense of peace and tranquility to your digital space.

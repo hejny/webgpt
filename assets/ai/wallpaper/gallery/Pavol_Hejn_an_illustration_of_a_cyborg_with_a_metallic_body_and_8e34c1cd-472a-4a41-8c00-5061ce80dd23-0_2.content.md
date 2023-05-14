@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a cyborg with a metallic body and glowing eyes"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of an illustration depicting a cyborg with a metallic body and glowing eyes. This captivating image is sure to add a futuristic and edgy vibe to any device or desktop.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Transform your space into a dreamy futuristic oasis with our stunning impressionist-style wallpaper. This unique design features a beautiful cityscape, painted in bold colors and blurred lines to create a mesmerizing effect.
 

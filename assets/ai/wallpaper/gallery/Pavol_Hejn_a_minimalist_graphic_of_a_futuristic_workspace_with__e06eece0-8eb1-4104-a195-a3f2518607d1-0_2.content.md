@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning minimalist graphic of a futuristic workspace. This wallpaper captures the essence of modernity and sophistication with its sleek lines and contemporary color scheme.
 

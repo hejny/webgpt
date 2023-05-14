@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Cosmic Dreams: A Neon-Colored Interpretation of a Starry Sky
 
@@ -30,9 +30,9 @@ Our wallpaper is made from high-quality materials that are both durable and easy
 
 Here are just a few examples of how our customers have used our wallpaper to transform their spaces:
 
-- "I installed this wallpaper in my bedroom and it's like sleeping under the stars every night. It's so beautiful and peaceful." - Sarah, 28
-- "I wanted to create a fun and inspiring workspace for my graphic design business, and this wallpaper was the perfect addition. It's creative and unique, just like my work." - Alex, 35
-- "My daughter loves space and science, so I surprised her with this wallpaper in her playroom. She thinks it's the coolest thing ever!" - Emily, 42
+-   "I installed this wallpaper in my bedroom and it's like sleeping under the stars every night. It's so beautiful and peaceful." - Sarah, 28
+-   "I wanted to create a fun and inspiring workspace for my graphic design business, and this wallpaper was the perfect addition. It's creative and unique, just like my work." - Alex, 35
+-   "My daughter loves space and science, so I surprised her with this wallpaper in her playroom. She thinks it's the coolest thing ever!" - Emily, 42
 
 ## Installation Tips
 
@@ -47,8 +47,8 @@ Installing wallpaper can be intimidating, but with the right tools and a little 
 
 We take pride in our products and want you to feel confident in your purchase. Here are some references from satisfied customers:
 
-- "The quality of this wallpaper is amazing! It was easy to install and looks even better than I imagined." - John, 31
-- "I had a question about the installation process and the customer service team was so helpful and friendly. They really went above and beyond to make sure I was happy with my purchase." - Maria, 40
+-   "The quality of this wallpaper is amazing! It was easy to install and looks even better than I imagined." - John, 31
+-   "I had a question about the installation process and the customer service team was so helpful and friendly. They really went above and beyond to make sure I was happy with my purchase." - Maria, 40
 
 ## Contact Us
 

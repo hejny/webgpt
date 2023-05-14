@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Abstract Squares Wallpaper for Business and Marketing Websites
 
@@ -20,15 +20,15 @@ Add a pop of color to your business or marketing website with this abstract wall
 
 ## Features
 
-- High-quality image: The wallpaper is available in high resolution, ensuring that it looks great on any screen size.
-- Eye-catching design: The overlapping squares create a dynamic and visually interesting pattern that will draw visitors' attention.
-- Versatile use: This wallpaper can be used as a background for your website's homepage, landing pages, or blog posts.
+-   High-quality image: The wallpaper is available in high resolution, ensuring that it looks great on any screen size.
+-   Eye-catching design: The overlapping squares create a dynamic and visually interesting pattern that will draw visitors' attention.
+-   Versatile use: This wallpaper can be used as a background for your website's homepage, landing pages, or blog posts.
 
 ## Benefits
 
-- Enhance brand identity: The use of vibrant colors and abstract shapes can help reinforce your brand's identity and make it more memorable.
-- Create a welcoming atmosphere: A visually appealing website can help create a positive first impression and make visitors feel welcome.
-- Increase engagement: By using an eye-catching wallpaper, you can encourage visitors to stay on your website longer and explore its content.
+-   Enhance brand identity: The use of vibrant colors and abstract shapes can help reinforce your brand's identity and make it more memorable.
+-   Create a welcoming atmosphere: A visually appealing website can help create a positive first impression and make visitors feel welcome.
+-   Increase engagement: By using an eye-catching wallpaper, you can encourage visitors to stay on your website longer and explore its content.
 
 ## How to Use
 
@@ -36,7 +36,7 @@ To use this wallpaper on your website, simply download the image file and upload
 
 ```html
 <div style="background-image: url('path/to/image.jpg');">
-  <!-- Your website content here -->
+    <!-- Your website content here -->
 </div>
 ```
 

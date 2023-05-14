@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper with a graph of complex mathematical equations, arranged in a minimalist and modern design."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Introducing our latest addition to the wallpaper collection - a stunning design featuring a graph of complex mathematical equations, arranged in a minimalist and modern style. 
+Introducing our latest addition to the wallpaper collection - a stunning design featuring a graph of complex mathematical equations, arranged in a minimalist and modern style.
 
 This wallpaper is perfect for those who appreciate the beauty of mathematics and want to add a touch of sophistication to their space. The intricate equations are displayed in a sleek and contemporary manner, making this wallpaper a true work of art.
 

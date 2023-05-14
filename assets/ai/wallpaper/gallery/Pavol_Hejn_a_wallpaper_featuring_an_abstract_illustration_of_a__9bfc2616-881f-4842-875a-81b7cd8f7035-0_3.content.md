@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Introducing our latest addition to our wallpaper collection - a stunning abstract illustration of a futuristic cityscape. This wallpaper features a mesmerizing display of glowing lights and a dark, moody color scheme that will transport you to a world beyond your imagination.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Wallpaper - Explore the Universe with Our Black and White Satellite Outline
 
@@ -32,9 +32,9 @@ Whether you're an astronomy enthusiast, a space technology buff, or simply looki
 
 Here are some examples of how our customers have used our satellite outline wallpaper:
 
-- "I'm a space technology engineer, and I love having this wallpaper on my desktop. It reminds me of the incredible work we do every day to explore the universe."
-- "I'm a student studying astronomy, and this wallpaper is a great source of inspiration for me. It reminds me of the endless possibilities of space exploration."
-- "I'm a minimalist at heart, and this wallpaper fits perfectly with my aesthetic. It's simple yet sophisticated, and it makes my phone look amazing."
+-   "I'm a space technology engineer, and I love having this wallpaper on my desktop. It reminds me of the incredible work we do every day to explore the universe."
+-   "I'm a student studying astronomy, and this wallpaper is a great source of inspiration for me. It reminds me of the endless possibilities of space exploration."
+-   "I'm a minimalist at heart, and this wallpaper fits perfectly with my aesthetic. It's simple yet sophisticated, and it makes my phone look amazing."
 
 ## How to Download
 
@@ -46,17 +46,17 @@ To download our satellite outline wallpaper, simply click the link below:
 
 If you're interested in learning more about space technology and exploration, here are some resources to check out:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
-- [The Planetary Society](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
+-   [The Planetary Society](#)
 
 ## Contact Us
 
 If you have any questions or comments about our space wallpaper collection, please don't hesitate to contact us:
 
-- Email: info@spacewallpaper.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@spacewallpaper.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 Thank you for choosing our satellite outline wallpaper. We hope it inspires you to explore the universe and all its wonders!

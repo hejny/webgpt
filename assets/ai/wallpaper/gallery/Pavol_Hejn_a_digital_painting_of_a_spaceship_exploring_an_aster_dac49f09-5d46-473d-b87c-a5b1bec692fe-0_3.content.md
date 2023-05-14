@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning digital painting of a spaceship exploring an asteroid field. This wallpaper captures the thrill and excitement of space exploration, with the rocky terrain and dangerous debris creating a sense of adventure and challenge.
 

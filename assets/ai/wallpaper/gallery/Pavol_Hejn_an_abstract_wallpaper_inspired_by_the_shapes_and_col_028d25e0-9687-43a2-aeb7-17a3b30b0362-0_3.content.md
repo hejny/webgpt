@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that best fits the website is "Montserrat".-->
+<!--font:The font that best fits the website is Montserrat-->
 
 # Quantum Wallpaper - Bold and Intricate Designs
 
@@ -51,9 +51,9 @@ Installing our quantum wallpaper is easy and straightforward. Here are the steps
 
 If you're interested in learning more about quantum physics, here are some resources to check out:
 
-- [Quantum Physics for Beginners](#)
-- [Introduction to Quantum Mechanics](#)
-- [The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory](#)
+-   [Quantum Physics for Beginners](#)
+-   [Introduction to Quantum Mechanics](#)
+-   [The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory](#)
 
 ## Contact Us
 

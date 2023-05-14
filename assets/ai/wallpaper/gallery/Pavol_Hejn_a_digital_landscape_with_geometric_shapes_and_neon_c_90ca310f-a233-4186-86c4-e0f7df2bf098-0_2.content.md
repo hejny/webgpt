@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Digital Landscape with Geometric Shapes and Neon Colors
 
@@ -20,24 +20,24 @@ Welcome to our website featuring a stunning digital landscape wallpaper with geo
 
 ## Features
 
-- High-resolution image that looks great on any screen size
-- Unique combination of geometric shapes and neon colors creates an eye-catching effect
-- Perfect for use as a desktop background, phone wallpaper, or social media cover photo
+-   High-resolution image that looks great on any screen size
+-   Unique combination of geometric shapes and neon colors creates an eye-catching effect
+-   Perfect for use as a desktop background, phone wallpaper, or social media cover photo
 
 ## How to Download
 
 To download this wallpaper, simply right-click on the image and select "Save Image As." You can then choose where to save the file on your computer or device.
 
-> "This wallpaper is a perfect fit for anyone who wants to add a touch of modernity and vibrancy to their digital space." 
+> "This wallpaper is a perfect fit for anyone who wants to add a touch of modernity and vibrancy to their digital space."
 
 ## Compatibility
 
 This wallpaper is compatible with a wide range of devices and operating systems, including:
 
-- Windows computers
-- Mac computers
-- iOS devices (iPhone and iPad)
-- Android devices
+-   Windows computers
+-   Mac computers
+-   iOS devices (iPhone and iPad)
+-   Android devices
 
 ## Conclusion
 

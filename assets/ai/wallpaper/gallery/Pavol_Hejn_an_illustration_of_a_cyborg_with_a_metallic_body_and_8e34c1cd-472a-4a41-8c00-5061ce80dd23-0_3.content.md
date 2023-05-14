@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a cyborg with a metallic body and glowing eyes"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a cyborg with a metallic body and glowing eyes! This illustration captures the essence of futuristic technology and brings it to life in an awe-inspiring way.
 

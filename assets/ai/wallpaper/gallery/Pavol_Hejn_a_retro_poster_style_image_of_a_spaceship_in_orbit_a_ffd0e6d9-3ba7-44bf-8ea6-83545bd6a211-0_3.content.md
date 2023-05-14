@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A retro poster-style image of a spaceship in orbit around Earth, with bold colors and typography."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning retro poster-style wallpaper of a spaceship in orbit around Earth. This bold and colorful image captures the essence of classic science fiction and will transport you to another world.
 

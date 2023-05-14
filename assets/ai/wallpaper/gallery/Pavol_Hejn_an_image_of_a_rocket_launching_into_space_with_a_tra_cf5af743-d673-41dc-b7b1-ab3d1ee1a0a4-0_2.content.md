@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Montserrat" font would be a great fit for this website.-->
+<!--font:The Montserrat font would be a great fit for this website.-->
 
 # Space Adventures
 
-Welcome to Space Adventures, your ultimate destination for all things space-related! 
+Welcome to Space Adventures, your ultimate destination for all things space-related!
 
 ## Wallpaper
 
@@ -28,7 +28,7 @@ At Space Adventures, we believe that space is the final frontier, and we're dedi
 
 ## Explore the Cosmos
 
-Our website is packed with resources to help you explore the cosmos. From informative articles and videos to stunning images of distant galaxies and nebulas, there's something for everyone at Space Adventures. So why wait? Start exploring today and discover the wonders of the universe! 
+Our website is packed with resources to help you explore the cosmos. From informative articles and videos to stunning images of distant galaxies and nebulas, there's something for everyone at Space Adventures. So why wait? Start exploring today and discover the wonders of the universe!
 
 ---
 

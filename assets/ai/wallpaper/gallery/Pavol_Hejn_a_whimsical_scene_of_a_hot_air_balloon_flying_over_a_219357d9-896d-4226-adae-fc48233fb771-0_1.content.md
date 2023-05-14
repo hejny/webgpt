@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Up, up and away: Exploring the World from a Hot Air Balloon
 
@@ -40,9 +40,9 @@ Don't just take our word for it - check out these real-life user stories from pe
 
 If you're interested in taking a hot air balloon ride, here are some resources to help you plan your adventure:
 
-- [Hot Air Ballooning Guide](#) - A comprehensive guide to hot air ballooning, including safety tips, what to expect on your ride, and where to find hot air balloon festivals around the world.
-- [Hot Air Balloon Rides Near Me](#) - Use this handy tool to find hot air balloon rides in your area.
-- [Hot Air Balloon Photography Tips](#) - If you're a photography enthusiast, check out these tips for capturing stunning photos from your hot air balloon ride.
+-   [Hot Air Ballooning Guide](#) - A comprehensive guide to hot air ballooning, including safety tips, what to expect on your ride, and where to find hot air balloon festivals around the world.
+-   [Hot Air Balloon Rides Near Me](#) - Use this handy tool to find hot air balloon rides in your area.
+-   [Hot Air Balloon Photography Tips](#) - If you're a photography enthusiast, check out these tips for capturing stunning photos from your hot air balloon ride.
 
 ## Contact Us
 

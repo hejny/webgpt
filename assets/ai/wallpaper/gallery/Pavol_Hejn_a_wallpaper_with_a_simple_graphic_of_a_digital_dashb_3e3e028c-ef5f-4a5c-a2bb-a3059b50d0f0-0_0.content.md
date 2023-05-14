@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Looking for a wallpaper that will help you stay on top of your data management game? Look no further than our digital dashboard wallpaper!
 

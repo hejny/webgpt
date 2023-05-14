@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Cyborg Minimalist Wallpaper
 
@@ -24,10 +24,10 @@ Looking for a striking and unique wallpaper to give your device a futuristic edg
 
 ## Features
 
-- Single line drawing of a cyborg
-- Striking color options, including bright red and blue
-- Minimalist design for a sleek and modern look
-- High-quality resolution for clear display on any device
+-   Single line drawing of a cyborg
+-   Striking color options, including bright red and blue
+-   Minimalist design for a sleek and modern look
+-   High-quality resolution for clear display on any device
 
 ## User Stories
 
@@ -39,9 +39,9 @@ Looking for a striking and unique wallpaper to give your device a futuristic edg
 
 Want to learn more about cyborgs and their place in popular culture? Check out these articles:
 
-- [The Evolution of Cyborgs in Pop Culture](#)
-- [What Makes a Cyborg? Exploring the Definition and History](#)
-- [The Top 10 Cyborg Characters in Film and TV](#)
+-   [The Evolution of Cyborgs in Pop Culture](#)
+-   [What Makes a Cyborg? Exploring the Definition and History](#)
+-   [The Top 10 Cyborg Characters in Film and TV](#)
 
 ## Contact Us
 

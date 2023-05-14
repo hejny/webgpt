@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Arachnid Aesthetics: Spider Wallpaper for Your Home
 
@@ -36,11 +36,11 @@ Our spider wallpaper is made from high-quality materials that are durable and ea
 
 Installing wallpaper can seem daunting, but with a little patience and preparation, it's a DIY project anyone can tackle. Here are some tips to help you get started:
 
-- Measure your walls carefully to determine how much wallpaper you need.
-- Make sure your walls are clean and smooth before applying the wallpaper.
-- Use a wallpaper primer to ensure the wallpaper adheres properly.
-- Follow the manufacturer's instructions carefully when applying the wallpaper.
-- Take your time and be patient - installing wallpaper can be time-consuming, but the end result is worth it!
+-   Measure your walls carefully to determine how much wallpaper you need.
+-   Make sure your walls are clean and smooth before applying the wallpaper.
+-   Use a wallpaper primer to ensure the wallpaper adheres properly.
+-   Follow the manufacturer's instructions carefully when applying the wallpaper.
+-   Take your time and be patient - installing wallpaper can be time-consuming, but the end result is worth it!
 
 ## User Stories
 
@@ -58,5 +58,5 @@ You can reach us by phone at 555-555-5555 or by email at info@arachnidaesthetics
 
 ## References
 
-- National Geographic: [Spiders](https://www.nationalgeographic.com/animals/invertebrates/group/spiders/)
-- Wallpaper Direct: [How to Hang Wallpaper](https://www.wallpaperdirect.com/articles/how-to-hang-wallpaper)
+-   National Geographic: [Spiders](https://www.nationalgeographic.com/animals/invertebrates/group/spiders/)
+-   Wallpaper Direct: [How to Hang Wallpaper](https://www.wallpaperdirect.com/articles/how-to-hang-wallpaper)

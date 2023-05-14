@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that best fits the CycleFit website is "Montserrat".-->
+<!--font:The font that best fits the CycleFit website is Montserrat-->
 
 # Welcome to CycleFit
 
@@ -30,11 +30,11 @@ We are a team of passionate cyclists and fitness enthusiasts who believe that cy
 
 Our content covers a wide range of topics related to cycling and fitness, including:
 
-- Cycling routes and trails
-- Training plans and workouts
-- Nutrition and hydration tips
-- Gear reviews and recommendations
-- User stories and experiences
+-   Cycling routes and trails
+-   Training plans and workouts
+-   Nutrition and hydration tips
+-   Gear reviews and recommendations
+-   User stories and experiences
 
 ## User Stories
 
@@ -48,12 +48,12 @@ We love hearing from our readers about their cycling and fitness journeys. Here 
 
 Looking for more information on cycling and fitness? Check out these helpful references:
 
-- [Bicycling.com](#)
-- [Cyclingnews.com](#)
-- [Runner's World](#)
+-   [Bicycling.com](#)
+-   [Cyclingnews.com](#)
+-   [Runner's World](#)
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Get in touch with us at cyclefit@domain.com or follow us on [Twitter](#) and [Instagram](#) for the latest updates. 
+Have a question or suggestion? We'd love to hear from you! Get in touch with us at cyclefit@domain.com or follow us on [Twitter](#) and [Instagram](#) for the latest updates.
 
 Happy cycling! 🚴‍♀️🚴‍♂️

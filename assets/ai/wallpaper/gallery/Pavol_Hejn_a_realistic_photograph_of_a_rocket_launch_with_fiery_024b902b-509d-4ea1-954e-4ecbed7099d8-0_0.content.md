@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Rocket Launch Wallpaper: Igniting Your Desktop
 
@@ -26,10 +26,10 @@ Welcome to our website, where we offer a stunning rocket launch wallpaper that w
 
 Our rocket launch wallpaper is not only visually striking but also high-quality and versatile. Here are some reasons why you should choose our wallpaper:
 
-- Realistic: Our photograph captures the intricate details of a rocket launch, from the flames and smoke to the intricate machinery.
-- High-Quality: Our wallpaper is available in high resolution, ensuring that it looks crisp and clear on any device.
-- Versatile: Our wallpaper is suitable for a variety of devices, including desktops, laptops, tablets, and smartphones.
-- Inspirational: Our wallpaper serves as a constant reminder of the incredible achievements of space exploration, inspiring you to dream big and reach for the stars.
+-   Realistic: Our photograph captures the intricate details of a rocket launch, from the flames and smoke to the intricate machinery.
+-   High-Quality: Our wallpaper is available in high resolution, ensuring that it looks crisp and clear on any device.
+-   Versatile: Our wallpaper is suitable for a variety of devices, including desktops, laptops, tablets, and smartphones.
+-   Inspirational: Our wallpaper serves as a constant reminder of the incredible achievements of space exploration, inspiring you to dream big and reach for the stars.
 
 ## User Stories
 
@@ -51,9 +51,9 @@ Downloading our rocket launch wallpaper is easy and free. Simply follow these st
 
 If you're interested in learning more about rocket launches and space exploration, here are some resources to check out:
 
-- NASA: https://www.nasa.gov/
-- SpaceX: https://www.spacex.com/
-- ESA: https://www.esa.int/
+-   NASA: https://www.nasa.gov/
+-   SpaceX: https://www.spacex.com/
+-   ESA: https://www.esa.int/
 
 ## Contact Us
 

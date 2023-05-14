@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital image of a galaxy collision, with swirling colors and distorted shapes representing the chaos of the event."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a galaxy collision. This digital image captures the chaotic beauty of two galaxies merging, with swirling colors and distorted shapes representing the intense gravitational forces at play.
 

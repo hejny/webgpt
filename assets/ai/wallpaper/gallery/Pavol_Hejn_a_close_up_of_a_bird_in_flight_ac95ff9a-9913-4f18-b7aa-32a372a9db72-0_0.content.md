@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Birdwatcher's Paradise
 
@@ -34,10 +34,10 @@ Our stunning wallpaper features a close-up of a bird in flight. The intricate de
 
 We offer a wide range of resources to help you learn more about birds and birdwatching. Our website features:
 
-- **Bird Identification Guide:** Use our comprehensive guide to identify different species of birds based on their physical characteristics, behavior, and habitat.
-- **Birding Hotspots:** Discover the best places to go birdwatching in your area or around the world.
-- **Birding Gear Reviews:** Read our expert reviews of the latest birding gear, including binoculars, spotting scopes, and cameras.
-- **Birding Tips:** Learn from our experienced birdwatchers as they share their tips and tricks for spotting and identifying birds.
+-   **Bird Identification Guide:** Use our comprehensive guide to identify different species of birds based on their physical characteristics, behavior, and habitat.
+-   **Birding Hotspots:** Discover the best places to go birdwatching in your area or around the world.
+-   **Birding Gear Reviews:** Read our expert reviews of the latest birding gear, including binoculars, spotting scopes, and cameras.
+-   **Birding Tips:** Learn from our experienced birdwatchers as they share their tips and tricks for spotting and identifying birds.
 
 ## User Stories
 
@@ -51,12 +51,12 @@ Here are some stories from our satisfied users:
 
 Do you have a question or comment about our website? We'd love to hear from you! You can reach us by email at info@birdwatchersparadise.com or follow us on social media:
 
-- Twitter: [@birdwatchersparadise](#twitter)
-- Instagram: [@birdwatchersparadise](#instagram)
+-   Twitter: [@birdwatchersparadise](#twitter)
+-   Instagram: [@birdwatchersparadise](#instagram)
 
 ## References
 
-- [Audubon Society](#audubon)
-- [Cornell Lab of Ornithology](#cornell) 
+-   [Audubon Society](#audubon)
+-   [Cornell Lab of Ornithology](#cornell)
 
 Thank you for visiting Birdwatcher's Paradise. Happy birdwatching! 🐦

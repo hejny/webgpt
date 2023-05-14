@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Introducing our latest wallpaper design - a sleek and modern graphic of a robot arm holding a smartphone. This unique wallpaper is perfect for those who love technology and want to add a touch of futuristic style to their device.
 

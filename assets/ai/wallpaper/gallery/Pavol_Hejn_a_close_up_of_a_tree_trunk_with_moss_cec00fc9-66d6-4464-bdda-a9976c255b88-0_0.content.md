@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Nature-Inspired Wallpapers for a Serene Workspace
 
@@ -44,8 +44,8 @@ Using our wallpapers is easy! Simply download the high-resolution image file and
 
 For more information about the benefits of incorporating nature into your workspace, check out these resources:
 
-- [The Benefits of Biophilic Design in the Workplace](#benefits-of-biophilic-design)
-- [How to Create a Nature-Inspired Workspace](#nature-inspired-workspace)
+-   [The Benefits of Biophilic Design in the Workplace](#benefits-of-biophilic-design)
+-   [How to Create a Nature-Inspired Workspace](#nature-inspired-workspace)
 
 ## Contact Us
 
@@ -65,11 +65,11 @@ To set a wallpaper on your device:
 
 Biophilic design is an approach to architecture and interior design that incorporates natural elements into the built environment. Studies have shown that biophilic design can have a range of benefits for human health and well-being, including:
 
-- Reduced stress levels
-- Improved cognitive function
-- Increased creativity
-- Better air quality
-- Improved mood and overall happiness
+-   Reduced stress levels
+-   Improved cognitive function
+-   Increased creativity
+-   Better air quality
+-   Improved mood and overall happiness
 
 By incorporating nature-inspired wallpapers into your workspace, you can experience some of these benefits without having to completely overhaul your environment.
 
@@ -77,8 +77,8 @@ By incorporating nature-inspired wallpapers into your workspace, you can experie
 
 Creating a nature-inspired workspace doesn't have to be complicated. Here are some simple tips to get you started:
 
-- Add plants to your workspace
-- Use natural materials like wood and stone in your decor
-- Incorporate natural light into your space
-- Choose nature-inspired colors for your walls and accessories
-- Use nature-inspired wallpapers on your devices
+-   Add plants to your workspace
+-   Use natural materials like wood and stone in your decor
+-   Incorporate natural light into your space
+-   Choose nature-inspired colors for your walls and accessories
+-   Use nature-inspired wallpapers on your devices

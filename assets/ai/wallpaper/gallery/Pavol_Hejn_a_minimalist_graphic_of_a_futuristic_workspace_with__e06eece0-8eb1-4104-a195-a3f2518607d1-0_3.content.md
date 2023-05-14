@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Future Workspace Wallpaper
 
@@ -30,9 +30,9 @@ Our Future Workspace Wallpaper features clean lines, a futuristic design, and a 
 
 Here are some user stories from people who have used our Future Workspace Wallpaper:
 
-- "I love the clean lines and modern design of this wallpaper. It really helps me stay focused on my work."
-- "This wallpaper has completely transformed my workspace. I feel more motivated and productive than ever before."
-- "The colors in this wallpaper are so calming. It really helps me relax and concentrate on my tasks."
+-   "I love the clean lines and modern design of this wallpaper. It really helps me stay focused on my work."
+-   "This wallpaper has completely transformed my workspace. I feel more motivated and productive than ever before."
+-   "The colors in this wallpaper are so calming. It really helps me relax and concentrate on my tasks."
 
 ## How to Use the Wallpaper
 
@@ -42,8 +42,8 @@ Using our Future Workspace Wallpaper is easy! Simply download the image and set 
 
 Here are some resources that we used to create our Future Workspace Wallpaper:
 
-- [Color Hunt](https://colorhunt.co/) - A collection of beautiful color palettes
-- [Unsplash](https://unsplash.com/) - A library of free high-resolution photos
+-   [Color Hunt](https://colorhunt.co/) - A collection of beautiful color palettes
+-   [Unsplash](https://unsplash.com/) - A library of free high-resolution photos
 
 ## Contact Us
 

@@ -12,26 +12,26 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Volcanic Planets Wallpaper Collection
 
-Welcome to our collection of stunning wallpapers featuring the most breathtaking views of volcanic planets in the galaxy. 
+Welcome to our collection of stunning wallpapers featuring the most breathtaking views of volcanic planets in the galaxy.
 
 ## Lava Flow
 
 This wallpaper captures the intense beauty of a lava flow on a volcanic planet. The red and orange colors evoke a sense of danger and excitement, making it the perfect choice for those who love adventure.
 
-> "The fiery lava flow is a reminder of the raw power of nature and the wonders of the universe." 
+> "The fiery lava flow is a reminder of the raw power of nature and the wonders of the universe."
 
-Feel free to download this wallpaper and use it as your desktop background or phone lock screen. 
+Feel free to download this wallpaper and use it as your desktop background or phone lock screen.
 
 ---
 
 Check out our other wallpapers in the collection:
 
-- **Volcanic Eruption:** Witness the explosive power of a volcanic eruption with this stunning wallpaper.
-- **Crater Lake:** This wallpaper features a serene view of a crater lake on a volcanic planet, perfect for those who prefer a more peaceful setting.
-- **Ashen Landscape:** Experience the desolate beauty of an ashen landscape with this hauntingly beautiful wallpaper.
+-   **Volcanic Eruption:** Witness the explosive power of a volcanic eruption with this stunning wallpaper.
+-   **Crater Lake:** This wallpaper features a serene view of a crater lake on a volcanic planet, perfect for those who prefer a more peaceful setting.
+-   **Ashen Landscape:** Experience the desolate beauty of an ashen landscape with this hauntingly beautiful wallpaper.
 
 Stay tuned for more updates and additions to our collection.

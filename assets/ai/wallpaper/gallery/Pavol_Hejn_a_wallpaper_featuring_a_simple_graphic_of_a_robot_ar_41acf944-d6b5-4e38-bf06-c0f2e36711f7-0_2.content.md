@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Introducing our latest wallpaper design - a sleek and modern graphic featuring a robot arm holding a smartphone. This design is perfect for those who love technology and want to showcase their passion on their desktop or mobile device.
 

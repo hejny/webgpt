@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Red Planet: A Journey to Mars
 
@@ -30,9 +30,9 @@ Mars has captured the imagination of scientists and space enthusiasts for centur
 
 Stay up-to-date with the latest news and discoveries about Mars. Our team scours the web for the most interesting articles and research papers, and we summarize them for you in an easy-to-read format. Here are some recent headlines:
 
-- NASA's Perseverance Rover Finds Evidence of Ancient Microbial Life on Mars
-- China's Zhurong Rover Sends Back Stunning Images of Martian Landscape
-- SpaceX Plans to Launch First Crewed Mission to Mars by 2026
+-   NASA's Perseverance Rover Finds Evidence of Ancient Microbial Life on Mars
+-   China's Zhurong Rover Sends Back Stunning Images of Martian Landscape
+-   SpaceX Plans to Launch First Crewed Mission to Mars by 2026
 
 ## User Stories
 
@@ -44,9 +44,9 @@ Are you planning a trip to Mars? Or just curious about what life might be like o
 
 Looking for more in-depth information about Mars? Check out our references section, where we've compiled a list of books, websites, and other resources to help you learn more. Here are a few of our favorites:
 
-- "The Martian" by Andy Weir
-- NASA's Mars Exploration Program website
-- "Mars: Our Future on the Red Planet" by Leonard David
+-   "The Martian" by Andy Weir
+-   NASA's Mars Exploration Program website
+-   "Mars: Our Future on the Red Planet" by Leonard David
 
 ## Contact Us
 

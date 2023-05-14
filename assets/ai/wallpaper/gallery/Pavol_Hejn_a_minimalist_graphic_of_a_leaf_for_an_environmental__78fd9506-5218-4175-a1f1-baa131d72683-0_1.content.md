@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A minimalist graphic of a leaf for an environmental or sustainable living website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our environmental and sustainable living website! We are excited to offer you a minimalist graphic of a leaf as wallpaper for your device. 
+Welcome to our environmental and sustainable living website! We are excited to offer you a minimalist graphic of a leaf as wallpaper for your device.
 
 This simple yet elegant design represents our commitment to promoting eco-friendly practices and a greener future. By incorporating this wallpaper into your daily life, you can be reminded of the importance of reducing waste, conserving resources, and protecting our planet.
 

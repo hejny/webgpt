@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A series of images depicting the progression of space exploration, from early rockets to modern spacecraft."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our space exploration wallpaper collection, where we showcase the incredible journey of human exploration beyond our planet. Our wallpaper series features a range of images that depict the progression of space exploration, from early rockets to modern spacecraft.
 

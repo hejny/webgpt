@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that would be best fitting for the website featuring a photograph of a desert landscape at sunset is "Montserrat".-->
+<!--font:The font that would be best fitting for the website featuring a photograph of a desert landscape at sunset is Montserrat.-->
 
 # Desert Sunset Wallpaper
 
@@ -30,18 +30,18 @@ At Desert Sunset Wallpaper, we are passionate about bringing the natural beauty 
 
 Our customers love our wallpapers for their unique and captivating designs. Here are just a few examples of how people have used our desert sunset wallpaper:
 
-- "I added this wallpaper to my living room and it instantly transformed the space. The warm colors and peaceful landscape make me feel like I'm on vacation every time I walk in the room." - Sarah, interior designer
-- "I work from home and was looking for a way to brighten up my workspace. This wallpaper not only adds color and interest to my office, but it also helps me stay focused and relaxed throughout the day." - John, freelance writer
-- "I recently moved to a new apartment and wanted to create a cozy and inviting bedroom. This wallpaper was the perfect addition - it creates a warm and welcoming atmosphere that makes me feel right at home." - Emily, recent college graduate
+-   "I added this wallpaper to my living room and it instantly transformed the space. The warm colors and peaceful landscape make me feel like I'm on vacation every time I walk in the room." - Sarah, interior designer
+-   "I work from home and was looking for a way to brighten up my workspace. This wallpaper not only adds color and interest to my office, but it also helps me stay focused and relaxed throughout the day." - John, freelance writer
+-   "I recently moved to a new apartment and wanted to create a cozy and inviting bedroom. This wallpaper was the perfect addition - it creates a warm and welcoming atmosphere that makes me feel right at home." - Emily, recent college graduate
 
 ## References
 
 We take pride in offering high-quality products and exceptional customer service. Here are some of the reasons why our customers choose us:
 
-- Wide selection of beautiful and unique wallpapers
-- High-quality printing and materials
-- Fast and reliable shipping
-- Easy ordering and hassle-free returns
+-   Wide selection of beautiful and unique wallpapers
+-   High-quality printing and materials
+-   Fast and reliable shipping
+-   Easy ordering and hassle-free returns
 
 ## Contact Us
 

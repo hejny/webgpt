@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Introducing our latest addition to the wallpaper collection - a stunning design featuring a repeating pattern of circuit board components in shades of black, grey, and neon green. 
+Introducing our latest addition to the wallpaper collection - a stunning design featuring a repeating pattern of circuit board components in shades of black, grey, and neon green.
 
 This unique wallpaper is perfect for those who appreciate technology and want to bring a futuristic touch to their interior decor. The intricate details of the circuit board components create a mesmerizing effect that will add depth and texture to any room.
 

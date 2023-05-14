@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Neural Network Wallpaper
 
-Welcome to our website featuring a stunning wallpaper with a simple graphic of a neural network against a background of complementary colors. 
+Welcome to our website featuring a stunning wallpaper with a simple graphic of a neural network against a background of complementary colors.
 
 This wallpaper is perfect for anyone interested in artificial intelligence, machine learning, or computer science. It's a great way to add some personality and style to your desktop or mobile device.
 

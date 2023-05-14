@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A vintage-style graphic of a retro car for a car or travel website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our car and travel website! We are excited to introduce you to our latest addition, a vintage-style graphic of a retro car wallpaper. This wallpaper is perfect for anyone who loves classic cars or dreams of embarking on a road trip in a vintage vehicle.
 

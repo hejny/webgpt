@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Geometric Grid Wallpaper for Modern Interiors
 
@@ -24,10 +24,10 @@ Make a statement in your home or office with our geometric grid wallpaper. This 
 
 ## Features
 
-- High-quality printing ensures sharp and vibrant colors
-- Durable, non-woven material is easy to install and remove
-- Available in a range of sizes to fit any space
-- Perfect for accent walls, home offices, and modern living spaces
+-   High-quality printing ensures sharp and vibrant colors
+-   Durable, non-woven material is easy to install and remove
+-   Available in a range of sizes to fit any space
+-   Perfect for accent walls, home offices, and modern living spaces
 
 ## User Stories
 
@@ -50,9 +50,9 @@ Our wallpaper is designed to be easy to install, even for beginners. Simply foll
 
 Check out some of our other popular wallpaper designs:
 
-- [Floral Watercolor Wallpaper](#)
-- [Rustic Wood Plank Wallpaper](#)
-- [Abstract Brushstroke Wallpaper](#)
+-   [Floral Watercolor Wallpaper](#)
+-   [Rustic Wood Plank Wallpaper](#)
+-   [Abstract Brushstroke Wallpaper](#)
 
 ## Contact Us
 

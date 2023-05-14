@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Workspace Wallpaper
 
@@ -42,15 +42,15 @@ Using the "Futuristic Workspace" wallpaper is easy. Simply download the high-res
 
 Here are some articles and resources that inspired the design of the "Futuristic Workspace" wallpaper:
 
-- [Minimalist Workspaces to Inspire Your Productivity](#)
-- [The Benefits of a Minimalist Workspace](#)
-- [Creating a Modern Home Office](#)
+-   [Minimalist Workspaces to Inspire Your Productivity](#)
+-   [The Benefits of a Minimalist Workspace](#)
+-   [Creating a Modern Home Office](#)
 
 ## Contact Us
 
 If you have any questions or feedback about the "Futuristic Workspace" wallpaper, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: info@futuristicworkspace.com
-- Phone: 555-555-5555
+-   Email: info@futuristicworkspace.com
+-   Phone: 555-555-5555
 
 Thank you for visiting our website and we hope that the "Futuristic Workspace" wallpaper inspires you to create a workspace that helps you achieve your goals.

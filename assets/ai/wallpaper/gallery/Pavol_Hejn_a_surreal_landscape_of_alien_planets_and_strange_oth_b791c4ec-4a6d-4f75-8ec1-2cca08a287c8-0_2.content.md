@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A surreal landscape of alien planets and strange, otherworldly creatures."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our collection of surreal wallpapers featuring alien planets and otherworldly creatures. Our wallpapers will transport you to a world beyond your imagination, where strange and fantastical landscapes await.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the universe."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a realistic photograph of a nebula! This wallpaper captures the mesmerizing beauty of the universe with its bright colors and intricate details.
 

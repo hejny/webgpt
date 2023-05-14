@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Sustainable Living Website
 
-Welcome to our sustainable living website! Here, we provide tips and resources for living a more environmentally-friendly lifestyle. 
+Welcome to our sustainable living website! Here, we provide tips and resources for living a more environmentally-friendly lifestyle.
 
 ## Our Philosophy
 

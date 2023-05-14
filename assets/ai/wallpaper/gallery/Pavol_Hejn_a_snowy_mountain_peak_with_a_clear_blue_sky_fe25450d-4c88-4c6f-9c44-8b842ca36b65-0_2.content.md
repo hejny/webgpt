@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Alpine Adventures
 
-Welcome to Alpine Adventures, your ultimate guide to exploring the breathtaking beauty of the mountains. 
+Welcome to Alpine Adventures, your ultimate guide to exploring the breathtaking beauty of the mountains.
 
 ## Snowy Mountain Peak with Clear Blue Sky
 

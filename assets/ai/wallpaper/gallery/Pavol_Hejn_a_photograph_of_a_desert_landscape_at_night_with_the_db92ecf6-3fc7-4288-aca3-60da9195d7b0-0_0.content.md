@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Desert Night Sky Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a stunning photograph of a desert landscape at 
 
 ## Features
 
-- High-quality resolution for a clear and crisp image
-- Captivating view of the desert landscape at night
-- Stars shining brightly in the sky above
-- Perfect for desktop backgrounds or phone wallpapers
+-   High-quality resolution for a clear and crisp image
+-   Captivating view of the desert landscape at night
+-   Stars shining brightly in the sky above
+-   Perfect for desktop backgrounds or phone wallpapers
 
 ## How to Download
 

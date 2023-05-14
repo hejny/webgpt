@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # AI Chatbot Website
 
@@ -26,17 +26,17 @@ An AI chatbot is a computer program designed to simulate conversation with human
 
 Using an AI chatbot has many benefits, including:
 
-- 24/7 availability
-- Instant response time
-- Cost-effective
-- Personalized experience
-- Scalability
+-   24/7 availability
+-   Instant response time
+-   Cost-effective
+-   Personalized experience
+-   Scalability
 
 ## Our AI Chatbot Solutions
 
 At our company, we offer custom AI chatbot solutions tailored to your specific needs. Whether you need a chatbot for customer support, lead generation, or any other purpose, we've got you covered.
 
-> "Our AI chatbot solutions are designed to streamline your business operations and improve customer satisfaction." 
+> "Our AI chatbot solutions are designed to streamline your business operations and improve customer satisfaction."
 
 ## Contact Us
 

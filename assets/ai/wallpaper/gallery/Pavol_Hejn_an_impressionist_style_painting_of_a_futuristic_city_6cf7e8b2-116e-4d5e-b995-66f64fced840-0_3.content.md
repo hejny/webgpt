@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper that combines the beauty of impressionist-style painting with the futuristic vision of a cityscape. This unique piece of art captures the essence of both worlds, creating a dreamy and surreal effect that will transport you to another dimension.
 

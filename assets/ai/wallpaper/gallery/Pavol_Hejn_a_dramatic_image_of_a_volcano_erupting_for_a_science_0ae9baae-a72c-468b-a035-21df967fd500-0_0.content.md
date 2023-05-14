@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Volcano Eruption: A Fascinating Natural Phenomenon
 
@@ -30,10 +30,10 @@ But while they can be dangerous, volcanoes also play an important role in shapin
 
 If you're fascinated by volcanoes like we are, there's so much to learn and explore. Here are just a few topics we cover on our website:
 
-- The different types of volcanoes and how they form
-- The history of volcanic eruptions and their impact on human civilization
-- How scientists study volcanoes and predict eruptions
-- The cultural significance of volcanoes in different parts of the world
+-   The different types of volcanoes and how they form
+-   The history of volcanic eruptions and their impact on human civilization
+-   How scientists study volcanoes and predict eruptions
+-   The cultural significance of volcanoes in different parts of the world
 
 ## Join the Conversation
 

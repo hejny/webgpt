@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Butterfly Garden Wallpaper for Nature Lovers
 
@@ -46,9 +46,9 @@ Here are some stories from our users who have downloaded our butterfly garden wa
 
 If you're interested in learning more about butterflies and their role in nature, check out these resources:
 
-- [Butterfly Conservation](#conservation)
-- [National Geographic](#natgeo)
-- [The Butterfly Website](#website)
+-   [Butterfly Conservation](#conservation)
+-   [National Geographic](#natgeo)
+-   [The Butterfly Website](#website)
 
 ## Contact Us
 
@@ -86,6 +86,6 @@ The Butterfly Website is a comprehensive resource for all things butterfly-relat
 
 If you have any questions or feedback about our butterfly garden wallpaper, please feel free to contact us:
 
-- Email: info@butterflywallpaper.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@butterflywallpaper.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA

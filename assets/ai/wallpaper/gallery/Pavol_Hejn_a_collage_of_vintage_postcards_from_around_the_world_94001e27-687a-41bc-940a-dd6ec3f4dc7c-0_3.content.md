@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A collage of vintage postcards from around the world"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a beautiful wallpaper design that captures the essence of travel and adventure! Our "Collage of Vintage Postcards from Around the World" wallpaper is the perfect addition to any room, adding a touch of nostalgia and wanderlust.
 

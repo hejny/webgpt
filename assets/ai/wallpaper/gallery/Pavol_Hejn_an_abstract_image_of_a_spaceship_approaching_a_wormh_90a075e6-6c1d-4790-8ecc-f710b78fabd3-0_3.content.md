@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Odyssey - Explore the Cosmos
 
@@ -30,10 +30,10 @@ Our wallpaper features an abstract image of a spaceship approaching a wormhole, 
 
 At Space Odyssey, we offer a range of features to help you learn more about space and stay up-to-date with the latest news and discoveries:
 
-- **Articles:** Our team of expert writers provides in-depth articles on various topics related to space, including astronomy, astrophysics, and space exploration.
-- **News:** Stay informed about the latest developments in space science with our news section, which covers everything from new discoveries to upcoming missions.
-- **Events:** Find out about upcoming space-related events, such as rocket launches and stargazing parties, in your area or online.
-- **Resources:** Check out our collection of resources, including books, videos, and podcasts, to deepen your knowledge of space and astronomy.
+-   **Articles:** Our team of expert writers provides in-depth articles on various topics related to space, including astronomy, astrophysics, and space exploration.
+-   **News:** Stay informed about the latest developments in space science with our news section, which covers everything from new discoveries to upcoming missions.
+-   **Events:** Find out about upcoming space-related events, such as rocket launches and stargazing parties, in your area or online.
+-   **Resources:** Check out our collection of resources, including books, videos, and podcasts, to deepen your knowledge of space and astronomy.
 
 ## User Stories
 
@@ -47,10 +47,10 @@ Here are some examples of how people have used Space Odyssey to enhance their un
 
 Our articles and resources are based on the latest scientific research and are reviewed by experts in the field. Here are some of the sources we rely on:
 
-- NASA
-- European Space Agency
-- Space.com
-- Astronomy Magazine
+-   NASA
+-   European Space Agency
+-   Space.com
+-   Astronomy Magazine
 
 ## Contact Us
 

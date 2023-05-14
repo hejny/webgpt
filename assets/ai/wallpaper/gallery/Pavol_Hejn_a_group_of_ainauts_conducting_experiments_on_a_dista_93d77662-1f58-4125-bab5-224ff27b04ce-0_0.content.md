@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background. This captivating image captures the essence of exploration and discovery, as these intrepid explorers push the boundaries of what we know about the universe.
 

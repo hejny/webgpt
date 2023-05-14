@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
-Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure. 
+Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.
 
 This breathtaking image represents a future where artificial intelligence and human ingenuity come together to create a world beyond our wildest dreams. The AInauts, highly skilled individuals trained to work alongside advanced AI systems, are the driving force behind the construction of these awe-inspiring structures.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a minimalist graphic of a futuristic cityscape. This wallpaper is perfect for those who appreciate the beauty of a dark and moody color scheme combined with glowing neon lights.
 

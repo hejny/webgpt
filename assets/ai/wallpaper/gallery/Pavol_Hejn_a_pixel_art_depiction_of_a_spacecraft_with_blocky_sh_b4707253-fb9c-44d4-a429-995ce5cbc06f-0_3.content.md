@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a unique wallpaper design that is sure to bring back memories of classic video games and sci-fi movies. Our pixel art depiction of a spacecraft features blocky shapes and limited colors, creating a nostalgic and playful feel that is perfect for any space enthusiast.
 

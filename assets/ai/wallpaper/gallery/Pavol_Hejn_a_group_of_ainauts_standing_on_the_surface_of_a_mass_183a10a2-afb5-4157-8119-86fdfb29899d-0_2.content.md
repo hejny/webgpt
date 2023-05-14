@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them."
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a stunning wallpaper of "A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them." 
+Welcome to our website featuring a stunning wallpaper of "A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them."
 
 This breathtaking wallpaper captures the essence of exploration and adventure in an extraterrestrial world. The scene depicts a group of AInauts, advanced artificial intelligence beings, standing on the rugged terrain of a rocky planet. The towering mountains and deep canyons surrounding them create a sense of awe and wonder, inviting us to imagine what lies beyond.
 

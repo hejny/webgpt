@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a stunning vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies. 
+Welcome to our website featuring a stunning vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies.
 
 This wallpaper design is perfect for anyone who loves astronomy or space exploration. The intricate details on the map showcase the beauty of the night sky, while the spacecraft and celestial bodies add a touch of adventure and excitement.
 

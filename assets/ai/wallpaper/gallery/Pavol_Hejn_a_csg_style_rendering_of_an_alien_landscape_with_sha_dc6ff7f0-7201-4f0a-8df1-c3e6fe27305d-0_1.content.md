@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of an alien landscape rendered in a csg-style. This wallpaper is perfect for anyone who loves futuristic and industrial vibes.
 

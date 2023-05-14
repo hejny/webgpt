@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Butterfly Bliss: Discover the Beauty of Nature with Our Wallpaper
 
@@ -42,12 +42,12 @@ Here are some stories from our happy customers:
 
 If you're interested in learning more about butterflies and their role in nature, here are some resources to check out:
 
-- [Butterflies and Moths of North America](#)
-- [The Butterfly Site](#)
-- [National Geographic: Butterflies](#)
+-   [Butterflies and Moths of North America](#)
+-   [The Butterfly Site](#)
+-   [National Geographic: Butterflies](#)
 
 ## Contact Us
 
-If you have any questions or comments about our wallpapers, please don't hesitate to reach out to us. You can contact us by email at info@butterflybliss.com or by filling out the form on our [contact page](#). We'd love to hear from you! 
+If you have any questions or comments about our wallpapers, please don't hesitate to reach out to us. You can contact us by email at info@butterflybliss.com or by filling out the form on our [contact page](#). We'd love to hear from you!
 
 Thank you for visiting Butterfly Bliss, and we hope our wallpapers bring a little bit of joy and beauty into your life.

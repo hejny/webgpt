@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring an exciting wallpaper of a futuristic space elevator! This illustration showcases a remarkable concept that has captured the imagination of scientists, engineers, and science fiction enthusiasts for decades.
 

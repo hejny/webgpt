@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Red Planet: A Journey into the Unknown
 
-Welcome to our website dedicated to the exploration of the Red Planet! Our team of experts has gathered the most stunning images and wallpapers of Mars for you to enjoy. 
+Welcome to our website dedicated to the exploration of the Red Planet! Our team of experts has gathered the most stunning images and wallpapers of Mars for you to enjoy.
 
 ## About Us
 
@@ -28,7 +28,7 @@ We are a group of space enthusiasts who are passionate about exploring the unkno
 
 ## Our Wallpaper
 
-Our featured wallpaper depicts a group of AInauts standing on the surface of Mars, with towering dust storms raging in the distance. This breathtaking image captures the stark beauty of the Red Planet and the challenges that come with exploring it. 
+Our featured wallpaper depicts a group of AInauts standing on the surface of Mars, with towering dust storms raging in the distance. This breathtaking image captures the stark beauty of the Red Planet and the challenges that come with exploring it.
 
 ## User Stories
 
@@ -42,9 +42,9 @@ Our website is not just about showcasing beautiful images, but also about sharin
 
 If you're interested in learning more about Mars and space exploration, check out these resources:
 
-- [NASA Mars Exploration Program](#nasa-mars-exploration-program)
-- [SpaceX Mars Mission](#spacex-mars-mission)
-- [ESA Mars Exploration](#esa-mars-exploration)
+-   [NASA Mars Exploration Program](#nasa-mars-exploration-program)
+-   [SpaceX Mars Mission](#spacex-mars-mission)
+-   [ESA Mars Exploration](#esa-mars-exploration)
 
 ### NASA Mars Exploration Program
 

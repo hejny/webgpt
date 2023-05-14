@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring an exciting wallpaper of a team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This image captures the essence of adventure, danger, and the power of artificial intelligence.
 

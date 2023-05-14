@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a swirling galaxy, with bright colors and intricate patterns."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of an abstract swirling galaxy. This mesmerizing image captures the beauty and complexity of the universe, with its intricate patterns and bright colors.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design."
 -->
 
-<!--font:The font that would best fit for your website is "Open Sans".-->
+<!--font:The font that would best fit for your website is Open Sans.-->
 
 Welcome to our website featuring a stunning wallpaper that showcases an abstract illustration of an AI-powered search engine. This wallpaper is designed with a minimalist and modern aesthetic, making it the perfect addition to any tech-savvy individual's desktop or mobile device.
 

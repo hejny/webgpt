@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dreamy watercolor painting of a forest at dusk for a nature or wildlife blog"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our nature and wildlife blog, where we showcase the beauty of the natural world through stunning imagery. Our latest addition is a dreamy watercolor painting of a forest at dusk, which captures the serene and peaceful atmosphere of nature.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Butterfly Garden Wallpaper for Nature Lovers
 
@@ -32,9 +32,9 @@ The wallpaper is made from high-quality materials, ensuring durability and longe
 
 Here are some user stories from our satisfied customers:
 
-- "I absolutely love my Butterfly Garden Wallpaper! It adds a beautiful touch of nature to my living room and everyone who visits compliments it."
-- "The wallpaper was so easy to install, and the quality is fantastic. I'm already planning on ordering more for other rooms in my house."
-- "I was hesitant to order wallpaper online, but I'm so glad I did. The Butterfly Garden Wallpaper exceeded my expectations, and it looks even better in person than it does in the pictures."
+-   "I absolutely love my Butterfly Garden Wallpaper! It adds a beautiful touch of nature to my living room and everyone who visits compliments it."
+-   "The wallpaper was so easy to install, and the quality is fantastic. I'm already planning on ordering more for other rooms in my house."
+-   "I was hesitant to order wallpaper online, but I'm so glad I did. The Butterfly Garden Wallpaper exceeded my expectations, and it looks even better in person than it does in the pictures."
 
 ## References
 

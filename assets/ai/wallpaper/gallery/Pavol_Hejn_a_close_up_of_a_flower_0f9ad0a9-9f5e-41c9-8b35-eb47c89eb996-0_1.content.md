@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Flower Power: Elevate Your Space with Our Close-Up Flower Wallpaper
 
@@ -51,9 +51,9 @@ Installing our close-up flower wallpaper is easy and straightforward. Simply fol
 
 Here are some helpful resources for learning more about wallpaper and home decor:
 
-- [The Spruce: Wallpaper 101](#)
-- [Better Homes & Gardens: Home Decor Ideas](#)
-- [HGTV: Decorating Tips and Tricks](#)
+-   [The Spruce: Wallpaper 101](#)
+-   [Better Homes & Gardens: Home Decor Ideas](#)
+-   [HGTV: Decorating Tips and Tricks](#)
 
 ## Contact Us
 

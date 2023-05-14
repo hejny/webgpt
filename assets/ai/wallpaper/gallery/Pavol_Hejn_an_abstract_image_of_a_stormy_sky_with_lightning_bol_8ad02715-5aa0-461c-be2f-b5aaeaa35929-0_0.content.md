@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Stormy Sky Wallpaper for Weather and News Websites
 
@@ -20,15 +20,15 @@ Decorate your website with an eye-catching abstract image of a stormy sky with l
 
 ## Features
 
-- High-resolution image suitable for desktop and mobile devices
-- Abstract design that captures the mood of stormy weather
-- Lightning bolts add a dynamic element to the image
-- Easy to download and use on your website
+-   High-resolution image suitable for desktop and mobile devices
+-   Abstract design that captures the mood of stormy weather
+-   Lightning bolts add a dynamic element to the image
+-   Easy to download and use on your website
 
 ## How to Use
 
 1. Download the wallpaper by clicking the link below:
-   - [Stormy Sky Wallpaper](#)
+    - [Stormy Sky Wallpaper](#)
 2. Save the image to your computer or device.
 3. Upload the image to your website's media library.
 4. Set the image as your website's background using CSS code.

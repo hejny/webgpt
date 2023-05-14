@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of binary code, in a simple font and black and white color scheme."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Introducing our latest wallpaper design - a unique and eye-catching pattern of binary code in a simple font and black and white color scheme. This wallpaper is perfect for those who love technology, coding, or simply want to add a modern touch to their space.
 

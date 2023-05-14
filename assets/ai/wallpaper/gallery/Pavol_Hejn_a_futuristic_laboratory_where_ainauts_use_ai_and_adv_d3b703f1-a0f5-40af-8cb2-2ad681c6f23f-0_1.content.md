@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website showcasing the futuristic laboratory where AInauts use AI and advanced technology to create new forms of life. Our wallpaper depicts a world where science fiction becomes reality, as cutting-edge technology and artificial intelligence come together to push the boundaries of what is possible.
 

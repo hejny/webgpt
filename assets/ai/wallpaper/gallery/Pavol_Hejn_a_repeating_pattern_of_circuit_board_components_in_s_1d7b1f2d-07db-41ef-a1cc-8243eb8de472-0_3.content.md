@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Circuit Board Wallpaper
 
@@ -22,7 +22,7 @@ Welcome to our website featuring a unique wallpaper design that showcases a repe
 
 The wallpaper features shades of black, grey, and neon green, creating a stunning contrast that will make any room stand out. The circuit board components are intricately designed, giving the wallpaper a sense of depth and complexity.
 
-> "This wallpaper is perfect for tech enthusiasts who want to bring a touch of innovation to their home decor." 
+> "This wallpaper is perfect for tech enthusiasts who want to bring a touch of innovation to their home decor."
 
 ## Installation Tips
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website, where we showcase stunning wallpapers that transport you to otherworldly places. Our latest addition is a breathtaking image of AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.
 

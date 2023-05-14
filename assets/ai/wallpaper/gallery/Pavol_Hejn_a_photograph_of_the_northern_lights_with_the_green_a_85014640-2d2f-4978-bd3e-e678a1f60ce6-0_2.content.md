@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of the Northern Lights, with the green and purple hues swirling in the night sky."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of the Northern Lights! This breathtaking photograph captures the awe-inspiring beauty of the Aurora Borealis, with its vivid green and purple hues swirling in the night sky.
 

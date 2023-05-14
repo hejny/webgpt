@@ -12,21 +12,21 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Tech Blog Homepage
 
-Welcome to our tech blog! Our homepage features a stunning neon cityscape with futuristic skyscrapers as the wallpaper. 
+Welcome to our tech blog! Our homepage features a stunning neon cityscape with futuristic skyscrapers as the wallpaper.
 
 ## Stay up-to-date with the latest tech news and trends
 
 We cover a wide range of topics related to technology, including:
 
-- Artificial intelligence and machine learning
-- Cybersecurity and data privacy
-- Internet of Things (IoT)
-- Cloud computing and virtualization
-- Software development and programming languages
+-   Artificial intelligence and machine learning
+-   Cybersecurity and data privacy
+-   Internet of Things (IoT)
+-   Cloud computing and virtualization
+-   Software development and programming languages
 
 Stay informed about the latest advancements in these fields and more by subscribing to our newsletter.
 

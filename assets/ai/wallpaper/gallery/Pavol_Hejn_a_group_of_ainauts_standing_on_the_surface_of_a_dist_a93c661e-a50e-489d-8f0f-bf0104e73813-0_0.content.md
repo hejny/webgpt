@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance."
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring an awe-inspiring wallpaper of a group of AInauts standing on the surface of a distant planet, gazing up at a massive, alien structure looming in the distance. This captivating image captures the essence of exploration, discovery, and adventure.
 

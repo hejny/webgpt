@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Lost in Space: Exploring Abandoned Research Facilities with AInauts"
 
@@ -48,9 +48,9 @@ We have explored many abandoned research facilities in space and have uncovered 
 
 Here are some references to help you learn more about abandoned research facilities in space:
 
-- "Abandoned Research Facilities in Space: A Comprehensive Guide" by Dr. Sarah J. Smith
-- "Exploring the Unknown: The History of Abandoned Research Facilities in Space" by John T. Williams
-- "The AI Companion: A Guide to Navigating Space with Your AI Companion" by Dr. Lisa K. Lee
+-   "Abandoned Research Facilities in Space: A Comprehensive Guide" by Dr. Sarah J. Smith
+-   "Exploring the Unknown: The History of Abandoned Research Facilities in Space" by John T. Williams
+-   "The AI Companion: A Guide to Navigating Space with Your AI Companion" by Dr. Lisa K. Lee
 
 ## Contact Us
 

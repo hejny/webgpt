@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A neon cityscape with futuristic skyscrapers for a tech blog homepage"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our tech blog homepage, where we explore the latest advancements in technology and how they are shaping our world. Our website is designed to be visually stimulating and inspiring, which is why we have chosen a wallpaper featuring a neon cityscape with futuristic skyscrapers.
 

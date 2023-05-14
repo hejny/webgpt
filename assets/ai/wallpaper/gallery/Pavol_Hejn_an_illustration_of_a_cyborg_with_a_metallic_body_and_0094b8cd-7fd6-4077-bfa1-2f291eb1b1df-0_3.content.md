@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Cyborg Illustration Wallpaper for Futuristic Design Inspiration
 
@@ -30,9 +30,9 @@ This wallpaper is perfect for designers, developers, and sci-fi enthusiasts who 
 
 ## User Stories
 
-- "I'm a designer working on a new sci-fi game, and I need some inspiration for the character designs. The cyborg illustration wallpaper gave me some great ideas for creating futuristic and powerful characters."
-- "As a tech blogger, I'm always looking for eye-catching visuals to accompany my articles. The cyborg illustration wallpaper is perfect for adding a touch of sci-fi to my blog posts."
-- "I love sci-fi movies and TV shows, and the cyborg illustration wallpaper is a great way to show my love for the genre. I've set it as my desktop background, and it looks amazing!"
+-   "I'm a designer working on a new sci-fi game, and I need some inspiration for the character designs. The cyborg illustration wallpaper gave me some great ideas for creating futuristic and powerful characters."
+-   "As a tech blogger, I'm always looking for eye-catching visuals to accompany my articles. The cyborg illustration wallpaper is perfect for adding a touch of sci-fi to my blog posts."
+-   "I love sci-fi movies and TV shows, and the cyborg illustration wallpaper is a great way to show my love for the genre. I've set it as my desktop background, and it looks amazing!"
 
 ## How to Download the Wallpaper
 
@@ -44,9 +44,9 @@ To download the cyborg illustration wallpaper, simply click on the link below an
 
 If you're interested in learning more about futuristic design, here are some resources that you might find helpful:
 
-- [Futuristic UI Design: A Comprehensive Guide](#)
-- [The Art of Science Fiction: 25 Examples of Inspiring Concept Art](#)
-- [The Best Sci-Fi Movies of All Time](#)
+-   [Futuristic UI Design: A Comprehensive Guide](#)
+-   [The Art of Science Fiction: 25 Examples of Inspiring Concept Art](#)
+-   [The Best Sci-Fi Movies of All Time](#)
 
 ## Contact Us
 

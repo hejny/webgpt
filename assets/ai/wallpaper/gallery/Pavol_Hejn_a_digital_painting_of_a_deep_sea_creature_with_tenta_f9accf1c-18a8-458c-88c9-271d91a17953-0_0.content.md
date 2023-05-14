@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning digital painting of a deep sea creature! This mesmerizing wallpaper showcases the beauty and mystery of the ocean's depths, with intricate tentacles and bioluminescent patterns that evoke a sense of wonder and exploration.
 

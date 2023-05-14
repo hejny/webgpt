@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Bee-Friendly Gardening: Tips and Tricks for a Buzzing Garden
 
@@ -28,11 +28,11 @@ Bees are essential pollinators that help fertilize plants and ensure the product
 
 ## Tips for Creating a Bee-Friendly Garden
 
-- Choose native plants that provide nectar and pollen for bees.
-- Plant flowers with different shapes and colors to attract a variety of bee species.
-- Provide nesting sites for solitary bees, such as bee hotels or bare patches of soil.
-- Avoid using pesticides and herbicides that can harm bees and other beneficial insects.
-- Provide a source of water, such as a shallow dish with pebbles for bees to land on.
+-   Choose native plants that provide nectar and pollen for bees.
+-   Plant flowers with different shapes and colors to attract a variety of bee species.
+-   Provide nesting sites for solitary bees, such as bee hotels or bare patches of soil.
+-   Avoid using pesticides and herbicides that can harm bees and other beneficial insects.
+-   Provide a source of water, such as a shallow dish with pebbles for bees to land on.
 
 ## User Stories
 
@@ -44,10 +44,10 @@ Bees are essential pollinators that help fertilize plants and ensure the product
 
 Here are some resources to learn more about bee-friendly gardening:
 
-- [The Bee-Friendly Garden by Kate Frey and Gretchen LeBuhn](#)
-- [Pollinator Partnership](#)
-- [The Honeybee Conservancy](#)
+-   [The Bee-Friendly Garden by Kate Frey and Gretchen LeBuhn](#)
+-   [Pollinator Partnership](#)
+-   [The Honeybee Conservancy](#)
 
 ## Contact Us
 
-Have questions or want to share your own bee-friendly gardening tips? Contact us at [email protected] or follow us on Twitter @_beefriendlygarden.
+Have questions or want to share your own bee-friendly gardening tips? Contact us at [email protected] or follow us on Twitter @\_beefriendlygarden.

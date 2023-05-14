@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper featuring a minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Introducing our latest addition to our wallpaper collection - a stunning minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas. 
+Introducing our latest addition to our wallpaper collection - a stunning minimalist graphic of a robot hand holding a stylus or pen, with a space for taking notes or sketching ideas.
 
 This unique design is perfect for anyone who loves technology and creativity. The sleek lines and futuristic look of the robot hand will inspire you to think outside the box and come up with innovative ideas.
 

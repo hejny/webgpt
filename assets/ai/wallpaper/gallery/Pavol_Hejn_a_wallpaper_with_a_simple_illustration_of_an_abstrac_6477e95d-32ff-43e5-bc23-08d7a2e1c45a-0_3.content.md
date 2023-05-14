@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Network Wallpaper for Your Digital Workspace
 
@@ -24,9 +24,9 @@ Add a touch of sophistication to your digital workspace with our minimalist netw
 
 ## Features
 
-- Minimalist design: Our wallpaper features a simple and elegant design that will not distract you from your work.
-- High resolution: The wallpaper is available in high resolution, ensuring that it looks great on all types of screens.
-- Easy to install: Installing the wallpaper is easy and straightforward. Simply download the image and set it as your desktop background.
+-   Minimalist design: Our wallpaper features a simple and elegant design that will not distract you from your work.
+-   High resolution: The wallpaper is available in high resolution, ensuring that it looks great on all types of screens.
+-   Easy to install: Installing the wallpaper is easy and straightforward. Simply download the image and set it as your desktop background.
 
 ## User Stories
 
@@ -40,8 +40,8 @@ Our network wallpaper has been used by many satisfied customers who appreciate i
 
 Looking for more inspiration for your digital workspace? Check out these resources:
 
-- [Minimalist Desktop Wallpapers](#): A collection of minimalist desktop wallpapers for your digital workspace.
-- [How to Create a Minimalist Workspace](#): A guide to creating a minimalist workspace that promotes focus and productivity.
+-   [Minimalist Desktop Wallpapers](#): A collection of minimalist desktop wallpapers for your digital workspace.
+-   [How to Create a Minimalist Workspace](#): A guide to creating a minimalist workspace that promotes focus and productivity.
 
 ## Contact
 

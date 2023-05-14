@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A whimsical scene of a hot air balloon flying over a city for a lifestyle or adventure website"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our lifestyle and adventure website, where we believe in living life to the fullest and embracing every moment with enthusiasm. Our latest wallpaper design captures the essence of adventure and whimsy, featuring a hot air balloon soaring over a bustling cityscape.
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Dreamy Watercolor Wallpaper for Your Wedding or Event Planning Website
 
@@ -20,17 +20,17 @@ Decorate your website with this beautiful watercolor wallpaper featuring a field
 
 ## Features
 
-- High-quality watercolor painting
-- Soft and dreamy color palette
-- Seamless pattern for easy use as wallpaper
-- Perfect for wedding or event planning websites
+-   High-quality watercolor painting
+-   Soft and dreamy color palette
+-   Seamless pattern for easy use as wallpaper
+-   Perfect for wedding or event planning websites
 
 ## How to Use
 
 To use this wallpaper on your website, simply download the image and set it as your background. The seamless pattern ensures that the wallpaper will look great no matter what size screen your visitors are using.
 
 ```html
-<body style="background-image: url('#');">
+<body style="background-image: url('#');"></body>
 ```
 
 ## Download

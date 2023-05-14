@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Sunflower Garden: Tips and Inspiration for Growing Your Own
 
@@ -30,10 +30,10 @@ At Sunflower Garden, we're passionate about helping people connect with nature a
 
 Sunflowers are more than just a pretty face - they're also incredibly versatile and easy to grow. Here are just a few reasons why you should consider adding sunflowers to your garden:
 
-- They attract pollinators like bees and butterflies
-- They can be used as a natural screen or fence
-- They make beautiful cut flowers for bouquets and arrangements
-- They're low-maintenance and drought-tolerant
+-   They attract pollinators like bees and butterflies
+-   They can be used as a natural screen or fence
+-   They make beautiful cut flowers for bouquets and arrangements
+-   They're low-maintenance and drought-tolerant
 
 ## Getting Started
 
@@ -61,9 +61,9 @@ Here are some stories from our satisfied customers who have successfully grown s
 
 Looking for more information about growing sunflowers? Check out these resources:
 
-- [The Old Farmer's Almanac: How to Grow Sunflowers](#)
-- [Better Homes & Gardens: Growing Sunflowers](#)
-- [Gardening Know How: Tips for Growing Sunflowers](#)
+-   [The Old Farmer's Almanac: How to Grow Sunflowers](#)
+-   [Better Homes & Gardens: Growing Sunflowers](#)
+-   [Gardening Know How: Tips for Growing Sunflowers](#)
 
 ## Contact Us
 

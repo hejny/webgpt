@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A minimalist design featuring AI-related buzzwords in different fonts and colors"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a minimalist wallpaper design that showcases AI-related buzzwords in various fonts and colors. 
+Welcome to our website featuring a minimalist wallpaper design that showcases AI-related buzzwords in various fonts and colors.
 
 This wallpaper is perfect for those who are passionate about artificial intelligence and want to showcase their love for the field in a stylish and modern way. The simple yet striking design features popular AI buzzwords such as "machine learning," "neural networks," "deep learning," and "natural language processing" arranged in different fonts and colors, creating an eye-catching display.
 

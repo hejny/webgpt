@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Flower Power: A Wallpaper to Brighten Your Space
 
@@ -26,10 +26,10 @@ Welcome to our website featuring a stunning close-up of a flower as the perfect 
 
 Our flower wallpaper is not just a pretty picture, but also a powerful tool to enhance your mood and productivity. Research shows that exposure to nature, even in the form of images, can have a positive effect on mental health and well-being. By adding our flower wallpaper to your environment, you can:
 
-- Reduce stress and anxiety
-- Boost creativity and inspiration
-- Increase focus and concentration
-- Improve overall mood and happiness
+-   Reduce stress and anxiety
+-   Boost creativity and inspiration
+-   Increase focus and concentration
+-   Improve overall mood and happiness
 
 In addition, our wallpaper is easy to install and maintain, with a durable and fade-resistant material that will last for years to come.
 
@@ -45,9 +45,9 @@ Here are some real-life examples of how our flower wallpaper has made a differen
 
 Here are some articles and studies that support the benefits of nature exposure:
 
-- "The Restorative Benefits of Nature: Toward An Integrative Framework" by Stephen Kaplan and Marc Berman (2010)
-- "The Psychological Benefits of Indoor Plants: A Critical Review of the Experimental Literature" by Craig Knight and colleagues (2015)
-- "Exposure to Nature and Public Health: An Updated Review of the Literature" by Danielle Shanahan and colleagues (2016)
+-   "The Restorative Benefits of Nature: Toward An Integrative Framework" by Stephen Kaplan and Marc Berman (2010)
+-   "The Psychological Benefits of Indoor Plants: A Critical Review of the Experimental Literature" by Craig Knight and colleagues (2015)
+-   "Exposure to Nature and Public Health: An Updated Review of the Literature" by Danielle Shanahan and colleagues (2016)
 
 ## Contact Us
 

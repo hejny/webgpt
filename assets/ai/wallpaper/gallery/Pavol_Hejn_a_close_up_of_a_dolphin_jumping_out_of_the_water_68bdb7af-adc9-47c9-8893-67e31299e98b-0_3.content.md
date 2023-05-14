@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Dolphin Wallpaper for Ocean Lovers
 
@@ -30,17 +30,17 @@ At Dolphin Wallpaper, we believe that everyone should have access to high-qualit
 
 Here are some examples of how our users have used our dolphin wallpaper:
 
-- "I work in a busy office and often feel stressed throughout the day. Having this beautiful dolphin wallpaper as my background reminds me to take a deep breath and appreciate the natural world around us."
-- "My daughter loves dolphins and was thrilled when I set her tablet background to this stunning image. She now spends hours learning about these amazing animals and their habitat."
-- "As a marine biologist, I spend a lot of time on my computer researching and writing reports. This dolphin wallpaper not only brightens up my workspace but also reminds me why I do what I do."
+-   "I work in a busy office and often feel stressed throughout the day. Having this beautiful dolphin wallpaper as my background reminds me to take a deep breath and appreciate the natural world around us."
+-   "My daughter loves dolphins and was thrilled when I set her tablet background to this stunning image. She now spends hours learning about these amazing animals and their habitat."
+-   "As a marine biologist, I spend a lot of time on my computer researching and writing reports. This dolphin wallpaper not only brightens up my workspace but also reminds me why I do what I do."
 
 ## References
 
 If you're interested in learning more about dolphins and other marine life, we recommend checking out the following resources:
 
-- [National Geographic](#) - Explore the ocean and learn about the animals that call it home.
-- [Ocean Conservation Society](#) - Discover ways to protect and conserve marine life.
-- [Dolphin Research Center](#) - Learn about dolphin behavior, training, and research.
+-   [National Geographic](#) - Explore the ocean and learn about the animals that call it home.
+-   [Ocean Conservation Society](#) - Discover ways to protect and conserve marine life.
+-   [Dolphin Research Center](#) - Learn about dolphin behavior, training, and research.
 
 ## Contact Us
 

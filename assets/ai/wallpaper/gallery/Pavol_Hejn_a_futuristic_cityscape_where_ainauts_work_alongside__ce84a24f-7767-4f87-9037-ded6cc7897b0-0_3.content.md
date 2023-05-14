@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology. 
+Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.
 
 Imagine a world where artificial intelligence is seamlessly integrated into our daily lives, where AInauts (AI astronauts) explore the far reaches of space, and where cutting-edge technology drives progress in every field. This is the world that our wallpaper depicts, and it's a vision of the future that we're excited to be a part of.
 

@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Welcome to our Virtual Reality Experience
 
-Looking for an immersive virtual reality experience? Look no further than our cutting-edge technology that will transport you to a whole new world. 
+Looking for an immersive virtual reality experience? Look no further than our cutting-edge technology that will transport you to a whole new world.
 
 ## Abstract Illustration Wallpaper
 

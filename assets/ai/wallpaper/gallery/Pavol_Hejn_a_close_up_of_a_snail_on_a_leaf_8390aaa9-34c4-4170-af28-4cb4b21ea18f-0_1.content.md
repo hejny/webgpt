@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Garden Snail Wallpaper
 
-Welcome to our collection of garden snail wallpapers! Our wallpapers are perfect for adding a touch of nature to your desktop or mobile device. 
+Welcome to our collection of garden snail wallpapers! Our wallpapers are perfect for adding a touch of nature to your desktop or mobile device.
 
 ## About the Garden Snail
 
@@ -34,9 +34,9 @@ Our wallpaper features a close-up of a snail on a leaf, showcasing the intricate
 
 We offer our garden snail wallpaper in various resolutions to fit your device's screen size. Simply click on the link below that corresponds to your device to download:
 
-- [Desktop (1920x1080)](#)
-- [Mobile (750x1334)](#)
-- [Tablet (2048x1536)](#)
+-   [Desktop (1920x1080)](#)
+-   [Mobile (750x1334)](#)
+-   [Tablet (2048x1536)](#)
 
 ## User Stories
 
@@ -50,8 +50,8 @@ Here are some examples of how our users have enjoyed our garden snail wallpaper:
 
 If you're interested in learning more about garden snails, check out these resources:
 
-- [National Geographic: Garden Snail](https://www.nationalgeographic.com/animals/invertebrates/group/garden-snails/)
-- [Garden Snail Facts](https://www.softschools.com/facts/animals/garden_snail_facts/1405/) 
+-   [National Geographic: Garden Snail](https://www.nationalgeographic.com/animals/invertebrates/group/garden-snails/)
+-   [Garden Snail Facts](https://www.softschools.com/facts/animals/garden_snail_facts/1405/)
 
 ## Contact Us
 

@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
-Welcome to our website featuring a stunning wallpaper with a simple graphic of a neural network against a background of complementary colors. 
+Welcome to our website featuring a stunning wallpaper with a simple graphic of a neural network against a background of complementary colors.
 
 This wallpaper is perfect for anyone who is interested in technology, artificial intelligence, or neuroscience. The neural network depicted on the wallpaper represents the complex web of connections that exist within the human brain and other advanced computing systems.
 

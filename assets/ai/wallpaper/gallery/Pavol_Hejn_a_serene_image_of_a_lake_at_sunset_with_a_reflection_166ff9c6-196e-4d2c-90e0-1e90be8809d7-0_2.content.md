@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Travel to Serenity
 
@@ -24,19 +24,19 @@ Escape the hustle and bustle of city life and immerse yourself in the peaceful s
 
 ### Activities
 
-- Take a leisurely stroll along the lakeside and soak in the beauty of nature.
-- Rent a boat and explore the lake at your own pace.
-- Set up a picnic and enjoy a relaxing meal amidst the stunning scenery.
-- Capture the perfect Instagram-worthy shot of the sunset reflecting on the lake.
+-   Take a leisurely stroll along the lakeside and soak in the beauty of nature.
+-   Rent a boat and explore the lake at your own pace.
+-   Set up a picnic and enjoy a relaxing meal amidst the stunning scenery.
+-   Capture the perfect Instagram-worthy shot of the sunset reflecting on the lake.
 
 ### Accommodation
 
 Stay in one of our cozy cabins nestled among the trees and wake up to the sound of birds chirping and the gentle breeze rustling through the leaves. Our cabins are equipped with all the amenities you need for a comfortable stay, including:
 
-- Fully-equipped kitchen
-- Comfy beds with fresh linens
-- Private bathroom with hot water
-- Cozy fireplace for chilly evenings
+-   Fully-equipped kitchen
+-   Comfy beds with fresh linens
+-   Private bathroom with hot water
+-   Cozy fireplace for chilly evenings
 
 ## Book Your Trip Today
 

@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Desert Landscape Wallpaper
 
@@ -20,15 +20,15 @@ Welcome to our website featuring a stunning desert landscape wallpaper with a ca
 
 ## Features
 
-- High resolution: The wallpaper is available in high definition, ensuring that every detail of the desert landscape and cactus is captured.
-- Multiple sizes: We offer the wallpaper in various sizes to fit your screen perfectly, including 1920x1080, 2560x1440, and 3840x2160.
-- Easy to download: Simply click on the download button to save the wallpaper to your device.
+-   High resolution: The wallpaper is available in high definition, ensuring that every detail of the desert landscape and cactus is captured.
+-   Multiple sizes: We offer the wallpaper in various sizes to fit your screen perfectly, including 1920x1080, 2560x1440, and 3840x2160.
+-   Easy to download: Simply click on the download button to save the wallpaper to your device.
 
 ## Benefits
 
-- Relaxing: The peaceful and calming desert landscape can help reduce stress and promote relaxation.
-- Inspirational: The natural beauty of the desert can inspire creativity and a sense of wonder.
-- Customizable: The wallpaper can be adjusted to fit your personal preferences and style.
+-   Relaxing: The peaceful and calming desert landscape can help reduce stress and promote relaxation.
+-   Inspirational: The natural beauty of the desert can inspire creativity and a sense of wonder.
+-   Customizable: The wallpaper can be adjusted to fit your personal preferences and style.
 
 > "The desert landscape is a beautiful reminder that even in the harshest environments, life can thrive." - Unknown
 

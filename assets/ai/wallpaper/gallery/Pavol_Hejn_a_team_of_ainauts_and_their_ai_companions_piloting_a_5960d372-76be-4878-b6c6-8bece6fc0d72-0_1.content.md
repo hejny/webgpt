@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # AInauts: Exploring the Depths of the Galaxy
 
@@ -32,10 +32,10 @@ Our goal is to push the boundaries of what we know about the universe. We use cu
 
 We've curated a collection of articles, videos, and images that showcase the wonders of space. Whether you're a seasoned astronomer or just starting your journey, there's something here for everyone. Here are some of our most popular categories:
 
-- **Astronomy:** Learn about the latest discoveries in the field of astronomy.
-- **Space Travel:** Follow our AInauts as they explore the depths of space.
-- **Astrophotography:** Feast your eyes on stunning images of the cosmos.
-- **Science Fiction:** Immerse yourself in the world of science fiction and imagine the possibilities of the future.
+-   **Astronomy:** Learn about the latest discoveries in the field of astronomy.
+-   **Space Travel:** Follow our AInauts as they explore the depths of space.
+-   **Astrophotography:** Feast your eyes on stunning images of the cosmos.
+-   **Science Fiction:** Immerse yourself in the world of science fiction and imagine the possibilities of the future.
 
 ## Join Our Community
 

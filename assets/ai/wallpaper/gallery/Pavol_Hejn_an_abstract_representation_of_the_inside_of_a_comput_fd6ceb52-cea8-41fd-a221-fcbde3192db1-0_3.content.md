@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract representation of the inside of a computer chip with a metallic color palette"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper design that showcases an abstract representation of the inside of a computer chip with a metallic color palette. This wallpaper is perfect for anyone who loves technology and wants to add a touch of modern sophistication to their space.
 

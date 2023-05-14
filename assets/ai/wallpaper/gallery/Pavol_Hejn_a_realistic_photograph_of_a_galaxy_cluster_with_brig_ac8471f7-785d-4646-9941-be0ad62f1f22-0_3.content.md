@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a galaxy cluster! This image captures the beauty and vastness of the universe, with intricate details and bright colors that are sure to inspire wonder and awe.
 

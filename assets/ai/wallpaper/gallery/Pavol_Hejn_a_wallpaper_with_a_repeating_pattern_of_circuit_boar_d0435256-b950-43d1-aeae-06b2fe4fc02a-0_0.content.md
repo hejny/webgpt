@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Looking for a wallpaper that will add a touch of tech-inspired style to your space? Look no further than our circuit board component wallpaper!
 

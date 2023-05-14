@@ -6,11 +6,11 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Cybernetic Wallpapers
 
-Welcome to our collection of cybernetic wallpapers! Our wallpapers feature stunning graphics of cyborgs, robots, and futuristic technology. 
+Welcome to our collection of cybernetic wallpapers! Our wallpapers feature stunning graphics of cyborgs, robots, and futuristic technology.
 
 ## Cyborg Wallpaper
 

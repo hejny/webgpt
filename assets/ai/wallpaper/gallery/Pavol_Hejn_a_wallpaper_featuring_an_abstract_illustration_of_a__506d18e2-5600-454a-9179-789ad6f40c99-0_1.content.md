@@ -12,18 +12,18 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Cityscape Wallpaper
 
-Welcome to our website featuring a stunning wallpaper of an abstract illustration of a futuristic cityscape. This wallpaper is perfect for anyone who loves the combination of technology and art. 
+Welcome to our website featuring a stunning wallpaper of an abstract illustration of a futuristic cityscape. This wallpaper is perfect for anyone who loves the combination of technology and art.
 
 ## Features
 
-- Abstract illustration of a futuristic cityscape
-- Glowing lights and a dark, moody color scheme
-- Set against a gradient background
-- Available in various resolutions to fit your device's screen size
+-   Abstract illustration of a futuristic cityscape
+-   Glowing lights and a dark, moody color scheme
+-   Set against a gradient background
+-   Available in various resolutions to fit your device's screen size
 
 ## How to Download
 
@@ -35,10 +35,10 @@ To download this wallpaper, simply click on the link below and save the image to
 
 Our wallpaper is compatible with a variety of devices, including:
 
-- Desktop computers
-- Laptops
-- Tablets
-- Smartphones
+-   Desktop computers
+-   Laptops
+-   Tablets
+-   Smartphones
 
 ## Installation Instructions
 

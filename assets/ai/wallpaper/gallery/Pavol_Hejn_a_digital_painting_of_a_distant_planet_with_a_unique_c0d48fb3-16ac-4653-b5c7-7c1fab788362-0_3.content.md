@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Exploring the Unknown: Discovering New Worlds"
 
@@ -34,18 +34,18 @@ Our mission is to explore the unknown and discover new worlds. We aim to expand 
 
 We love hearing from our users about their experiences with our website and how it has inspired them. Here are some of our favorite user stories:
 
-- "I have always been fascinated by space, but this website has taken my interest to a whole new level. The images and information on this site are truly awe-inspiring."
-- "As a teacher, I am always looking for ways to engage my students in science. This website has become an invaluable resource for my classroom."
-- "I never realized how much there was to discover beyond our own planet. This website has opened my eyes to the endless possibilities of space exploration."
+-   "I have always been fascinated by space, but this website has taken my interest to a whole new level. The images and information on this site are truly awe-inspiring."
+-   "As a teacher, I am always looking for ways to engage my students in science. This website has become an invaluable resource for my classroom."
+-   "I never realized how much there was to discover beyond our own planet. This website has opened my eyes to the endless possibilities of space exploration."
 
 ## References
 
 We take our research and exploration seriously, and we rely on a variety of sources to inform our work. Here are some of the references we use:
 
-- NASA
-- European Space Agency
-- National Geographic
-- Scientific American
+-   NASA
+-   European Space Agency
+-   National Geographic
+-   Scientific American
 
 ## Contact Us
 

@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 -->
 
-<!--font:"Open Sans" is a versatile and widely used Google font that would be a great fit for most websites.-->
+<!--font:Open Sans is a versatile and widely used Google font that would be a great fit for most websites.-->
 
-Welcome to our website featuring the stunning wallpaper of "AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research." 
+Welcome to our website featuring the stunning wallpaper of "AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 
 The image captures the essence of the exciting world of artificial intelligence (AI) research, where scientists and engineers are pushing the boundaries of what's possible with technology. In this laboratory, you can see AI experts working together to solve complex problems and develop new technologies that will shape the future.
 

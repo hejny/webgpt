@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A vibrant graphic of a peacock for a fashion or beauty blog"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our fashion and beauty blog, where we strive to bring you the latest trends and inspiration for your personal style. Our vibrant peacock wallpaper is the perfect addition to any fashionista's digital space.
 

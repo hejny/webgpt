@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Geometric Grid Wallpaper
 
@@ -20,15 +20,15 @@ Welcome to our website featuring a stunning wallpaper with a repeating pattern o
 
 ## Features
 
-- Simple geometric shapes
-- Repeating pattern
-- Grid-like structure
+-   Simple geometric shapes
+-   Repeating pattern
+-   Grid-like structure
 
 ## Benefits
 
-- Adds modern sophistication to any space
-- Creates a visually interesting backdrop
-- Easy to match with various decor styles
+-   Adds modern sophistication to any space
+-   Creates a visually interesting backdrop
+-   Easy to match with various decor styles
 
 ## Installation
 
@@ -41,6 +41,6 @@ Installing this wallpaper is a breeze! Simply follow these steps:
 5. Carefully apply the wallpaper to the surface, smoothing out any bubbles or wrinkles.
 6. Enjoy your beautiful new wallpaper!
 
-> "This wallpaper is a great way to add a modern touch to any room. The simple geometric shapes and grid-like structure create a visually interesting backdrop that is sure to impress." 
+> "This wallpaper is a great way to add a modern touch to any room. The simple geometric shapes and grid-like structure create a visually interesting backdrop that is sure to impress."
 
 Get yours today by clicking [here](#).

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design, set against a gradient background."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper that showcases the power of AI-powered search engines in a minimalist and modern design. This wallpaper features an abstract illustration of an AI-powered search engine, set against a gradient background that adds depth and dimension to the overall design.
 

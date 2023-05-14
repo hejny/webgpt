@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure.
 

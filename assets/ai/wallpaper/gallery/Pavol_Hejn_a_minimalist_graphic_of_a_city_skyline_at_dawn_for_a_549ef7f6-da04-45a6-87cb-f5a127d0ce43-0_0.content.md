@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a city skyline at dawn for a business or marketing website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our business and marketing website, where we strive to provide you with the best tools and resources to help your business succeed. One of the ways we do this is by offering a minimalist graphic of a city skyline at dawn as a wallpaper option for your website.
 

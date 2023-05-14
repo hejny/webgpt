@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning digital painting of a deep sea creature! This mesmerizing wallpaper showcases the beauty and mystery of the ocean's depths.
 

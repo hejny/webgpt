@@ -12,19 +12,21 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Data Visualizations and Graphs Wallpaper
 
-Transform your desktop background with our stunning wallpaper featuring a matrix of futuristic data visualizations and graphs. 
+Transform your desktop background with our stunning wallpaper featuring a matrix of futuristic data visualizations and graphs.
 
 ## Features
-- High-quality resolution for a crystal-clear display
-- Unique and eye-catching design
-- Perfect for tech enthusiasts, data analysts, and anyone who appreciates sleek visuals
-- Available for free download
+
+-   High-quality resolution for a crystal-clear display
+-   Unique and eye-catching design
+-   Perfect for tech enthusiasts, data analysts, and anyone who appreciates sleek visuals
+-   Available for free download
 
 ## How to Download
+
 1. Click the download button below
 2. Save the image to your computer
 3. Right-click on the saved image file and select "Set as Desktop Background"

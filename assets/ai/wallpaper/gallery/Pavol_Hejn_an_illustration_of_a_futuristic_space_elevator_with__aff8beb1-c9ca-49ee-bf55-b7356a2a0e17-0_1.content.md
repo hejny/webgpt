@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to the Future: Space Elevator
 
@@ -20,7 +20,7 @@ Are you ready to take a journey into the future? Look no further than our wallpa
 
 ## What is a Space Elevator?
 
-A space elevator is a theoretical transportation system that would allow people and cargo to travel from Earth's surface into space without the need for rockets. The idea involves a cable extending from the surface of the Earth into space, anchored to a counterweight beyond geostationary orbit. 
+A space elevator is a theoretical transportation system that would allow people and cargo to travel from Earth's surface into space without the need for rockets. The idea involves a cable extending from the surface of the Earth into space, anchored to a counterweight beyond geostationary orbit.
 
 ## Why a Space Elevator?
 

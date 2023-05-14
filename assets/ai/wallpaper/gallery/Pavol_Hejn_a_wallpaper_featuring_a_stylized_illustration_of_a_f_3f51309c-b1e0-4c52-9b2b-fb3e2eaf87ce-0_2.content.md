@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Workspace Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website where you can download a stunning wallpaper featuring a s
 
 ## Features
 
-- Stylized illustration of a futuristic workspace
-- Minimalist and modern design
-- Gradient background
-- High-quality resolution for all devices
+-   Stylized illustration of a futuristic workspace
+-   Minimalist and modern design
+-   Gradient background
+-   High-quality resolution for all devices
 
 ## How to Download
 

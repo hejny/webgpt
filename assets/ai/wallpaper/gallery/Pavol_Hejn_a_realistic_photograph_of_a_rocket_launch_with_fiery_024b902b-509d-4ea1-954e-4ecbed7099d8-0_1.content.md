@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Exploration Wallpaper
 
-Decorate your desktop or mobile device with this stunning wallpaper featuring a realistic photograph of a rocket launch. 
+Decorate your desktop or mobile device with this stunning wallpaper featuring a realistic photograph of a rocket launch.
 
 ## About the Wallpaper
 

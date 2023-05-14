@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A digital painting of a spaceship exploring an asteroid field, with the rocky terrain and dangerous debris creating a sense of adventure and challenge."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
-Welcome to our website featuring a stunning digital painting of a spaceship exploring an asteroid field! 
+Welcome to our website featuring a stunning digital painting of a spaceship exploring an asteroid field!
 
 This wallpaper captures the excitement and thrill of space exploration, with the rocky terrain and dangerous debris creating a sense of adventure and challenge. You can almost feel the tension as the spaceship navigates through the asteroids, searching for new discoveries and facing unknown dangers.
 

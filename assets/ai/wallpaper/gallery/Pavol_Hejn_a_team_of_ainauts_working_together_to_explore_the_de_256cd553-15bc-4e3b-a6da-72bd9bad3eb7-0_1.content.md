@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a team of AInauts working together to explore the depths of a black hole. This image captures the essence of human curiosity and the relentless pursuit of knowledge.
 

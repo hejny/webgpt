@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Workspace Wallpaper
 
@@ -30,9 +30,9 @@ Our wallpaper features a stylized illustration of a futuristic workspace set aga
 
 Here are some user stories from people who have used our wallpaper:
 
-- "I love this wallpaper! It's so sleek and modern. Whenever I look at it, I feel like I'm in a high-tech office."
-- "This wallpaper has helped me stay focused while working from home. It's a great reminder that even though I'm not in an office, I can still be productive."
-- "I use this wallpaper on both my work and personal computers. It's versatile enough to fit any setting."
+-   "I love this wallpaper! It's so sleek and modern. Whenever I look at it, I feel like I'm in a high-tech office."
+-   "This wallpaper has helped me stay focused while working from home. It's a great reminder that even though I'm not in an office, I can still be productive."
+-   "I use this wallpaper on both my work and personal computers. It's versatile enough to fit any setting."
 
 ## How to Download
 
@@ -44,8 +44,8 @@ To download our wallpaper, simply click the download button below. The image wil
 
 Here are some articles related to the benefits of having a good desktop wallpaper:
 
-- [The Psychology of Desktop Wallpapers](#)
-- [How Your Desktop Wallpaper Can Affect Your Productivity](#)
+-   [The Psychology of Desktop Wallpapers](#)
+-   [How Your Desktop Wallpaper Can Affect Your Productivity](#)
 
 ## Contact Us
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Cosmos: A Journey Through the Stars
 
@@ -42,9 +42,9 @@ Here are some stories from people who have been inspired by the wonders of space
 
 Here are some of the latest discoveries from space:
 
-- The discovery of water on the moon
-- The first image of a black hole
-- Evidence of an underground ocean on one of Jupiter's moons
+-   The discovery of water on the moon
+-   The first image of a black hole
+-   Evidence of an underground ocean on one of Jupiter's moons
 
 For more information about these discoveries and others, check out our [References](#references) section.
 

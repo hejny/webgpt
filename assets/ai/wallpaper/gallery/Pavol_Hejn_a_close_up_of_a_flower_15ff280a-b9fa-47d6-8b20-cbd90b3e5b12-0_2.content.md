@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Floral Delight - Bringing Nature to Your Walls
 
@@ -40,11 +40,11 @@ Here are some stories from our satisfied customers:
 
 We take pride in providing our customers with the best possible experience. Here are some of the reasons why you should choose Floral Delight for your next wallpaper purchase:
 
-- High-quality materials: Our wallpapers are made from premium quality materials, ensuring they are durable, long-lasting, and easy to install.
+-   High-quality materials: Our wallpapers are made from premium quality materials, ensuring they are durable, long-lasting, and easy to install.
 
-- Wide selection: We have a wide range of floral wallpapers to choose from, including delicate pastel blooms and bold tropical flowers.
+-   Wide selection: We have a wide range of floral wallpapers to choose from, including delicate pastel blooms and bold tropical flowers.
 
-- Custom sizing options: We offer custom sizing options, so you can get the perfect fit for your space.
+-   Custom sizing options: We offer custom sizing options, so you can get the perfect fit for your space.
 
 ## Contact Us
 

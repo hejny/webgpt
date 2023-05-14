@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring an incredible wallpaper of a team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet.
 

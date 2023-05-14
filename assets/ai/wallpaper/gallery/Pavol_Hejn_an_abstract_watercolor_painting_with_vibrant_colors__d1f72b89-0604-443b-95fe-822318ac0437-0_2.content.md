@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Vibrant Watercolor Painting for Your Art and Design Inspiration
 
@@ -32,16 +32,16 @@ The overall result is a dynamic and captivating work of art that would make a gr
 
 Here are some examples of how people have used this painting to inspire their own creative endeavors:
 
-- "I'm an interior designer, and I recently used this painting as inspiration for a client's living room. We pulled out the blues and greens from the painting and incorporated them into the color scheme of the room. It turned out beautifully!"
-- "I'm an amateur painter, and I've been struggling to find my own style. Seeing this painting gave me some new ideas for techniques to try in my own work."
-- "I just moved into a new apartment, and I wanted to add some color to my walls without going too crazy. This painting was the perfect solution!"
+-   "I'm an interior designer, and I recently used this painting as inspiration for a client's living room. We pulled out the blues and greens from the painting and incorporated them into the color scheme of the room. It turned out beautifully!"
+-   "I'm an amateur painter, and I've been struggling to find my own style. Seeing this painting gave me some new ideas for techniques to try in my own work."
+-   "I just moved into a new apartment, and I wanted to add some color to my walls without going too crazy. This painting was the perfect solution!"
 
 ## References
 
 If you're interested in learning more about the artist who created this painting, or if you want to see more of their work, here are some resources to check out:
 
-- [Artist's website](#)
-- [Interview with the artist](#)
+-   [Artist's website](#)
+-   [Interview with the artist](#)
 
 ## Contact Us
 

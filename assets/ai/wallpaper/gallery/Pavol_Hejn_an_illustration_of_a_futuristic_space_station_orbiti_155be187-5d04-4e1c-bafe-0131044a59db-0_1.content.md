@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring an amazing wallpaper of a futuristic space station orbiting a distant planet. This stunning illustration depicts a sleek and modern design with metallic accents that give it a futuristic feel.
 

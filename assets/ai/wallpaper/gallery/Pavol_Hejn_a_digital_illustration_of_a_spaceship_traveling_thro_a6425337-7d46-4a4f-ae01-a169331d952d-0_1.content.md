@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital illustration of a spaceship traveling through a colorful nebula."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning digital illustration of a spaceship traveling through a colorful nebula. This wallpaper is perfect for anyone who loves space and science fiction.
 

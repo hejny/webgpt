@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring a stunning wallpaper of a team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet. 
+Welcome to our website featuring a stunning wallpaper of a team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet.
 
 In this captivating image, you can see the team of explorers delving deep into the unknown, equipped with advanced technology and accompanied by their trusty AI companions. The intricate details of the cave system are beautifully depicted, showcasing the wonders that await those brave enough to venture into uncharted territories.
 

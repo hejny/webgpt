@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of an astronaut standing on the surface of the moon with Earth in the background."
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of an astronaut standing on the surface of the moon with Earth in the background. This iconic photograph captures a moment in history that changed the way we view ourselves and our place in the universe.
 

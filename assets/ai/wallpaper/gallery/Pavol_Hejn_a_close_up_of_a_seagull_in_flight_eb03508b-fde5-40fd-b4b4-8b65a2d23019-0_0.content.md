@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Coastal Vibes: Seagull in Flight Wallpaper
 
@@ -48,14 +48,14 @@ Installing our "Seagull in Flight" wallpaper is quick and easy. Simply follow th
 
 Looking for more inspiration for your coastal-themed home decor? Check out these resources:
 
-- [Coastal Living](#)
-- [HGTV Coastal Decorating Ideas](#)
-- [Better Homes & Gardens Coastal Decor](#)
+-   [Coastal Living](#)
+-   [HGTV Coastal Decorating Ideas](#)
+-   [Better Homes & Gardens Coastal Decor](#)
 
 ## Contact Us
 
 If you have any questions about our "Seagull in Flight" wallpaper or any of our other products, please don't hesitate to contact us. We're always happy to help!
 
-- Phone: 555-555-5555
-- Email: info@coastalvibes.com
-- Address: 123 Beach Blvd, Suite 456, Anytown USA 12345
+-   Phone: 555-555-5555
+-   Email: info@coastalvibes.com
+-   Address: 123 Beach Blvd, Suite 456, Anytown USA 12345

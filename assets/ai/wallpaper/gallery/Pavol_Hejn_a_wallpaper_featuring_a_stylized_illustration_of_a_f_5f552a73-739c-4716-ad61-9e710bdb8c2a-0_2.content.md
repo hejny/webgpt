@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a stylized illustration of a futuristic workspace, with a minimalist and modern design, set against a gradient background."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Transform your desktop or mobile screen into a futuristic workspace with our stunning wallpaper featuring a stylized illustration of a modern and minimalist design. The wallpaper showcases a sleek and sophisticated workspace that is perfect for anyone who wants to stay ahead of the game.
 

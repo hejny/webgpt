@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A waterfall in the forest"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring the stunning wallpaper "A waterfall in the forest." This breathtaking image captures the beauty and tranquility of nature, transporting you to a peaceful oasis in the heart of the forest.
 

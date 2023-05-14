@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A futuristic city with holographic advertisements for a tech or innovation website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our tech and innovation website, where we bring you the latest news and updates on cutting-edge technologies and futuristic innovations. Our wallpaper showcases a bustling city of the future, complete with towering skyscrapers and holographic advertisements that light up the night sky.
 

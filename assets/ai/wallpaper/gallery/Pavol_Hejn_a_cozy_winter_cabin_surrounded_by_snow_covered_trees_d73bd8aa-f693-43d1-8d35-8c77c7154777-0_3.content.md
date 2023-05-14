@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A cozy winter cabin surrounded by snow-covered trees for a home decor or lifestyle blog"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website, where we offer a stunning winter cabin wallpaper that is perfect for adding a cozy touch to your home decor or lifestyle blog. The wallpaper features a charming cabin nestled in the midst of snow-covered trees, creating a serene and peaceful atmosphere.
 

@@ -12,25 +12,28 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Galactic Dreams" - A Wallpaper to Take You on a Cosmic Journey
 
-Are you ready for an otherworldly experience? Look no further than "Galactic Dreams," our stunning wallpaper featuring an abstract image of a swirling galaxy. 
+Are you ready for an otherworldly experience? Look no further than "Galactic Dreams," our stunning wallpaper featuring an abstract image of a swirling galaxy.
 
 ## Features
-- Bright and vibrant colors that will bring life to any device or room
-- Intricate patterns that will keep your eyes mesmerized 
-- High resolution image quality that will make you feel like you're really in space
+
+-   Bright and vibrant colors that will bring life to any device or room
+-   Intricate patterns that will keep your eyes mesmerized
+-   High resolution image quality that will make you feel like you're really in space
 
 ## Usage
-- Perfect for use as a desktop background, phone wallpaper, or even as a print for your home or office
-- Easy to download and set as your wallpaper in just a few clicks
+
+-   Perfect for use as a desktop background, phone wallpaper, or even as a print for your home or office
+-   Easy to download and set as your wallpaper in just a few clicks
 
 ## Inspiration
+
 > "We are all in the gutter, but some of us are looking at the stars." - Oscar Wilde
 
-Let "Galactic Dreams" inspire you to reach for the stars and explore new horizons. 
+Let "Galactic Dreams" inspire you to reach for the stars and explore new horizons.
 
 ---
 

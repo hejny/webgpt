@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Circuit Board Wallpaper
 
@@ -20,16 +20,16 @@ Looking for a wallpaper that will add a touch of tech to your workspace or home?
 
 ## Features
 
-- Repeating pattern of circuit board components
-- Shades of black, grey, and neon green
-- Perfect for adding a touch of tech to any space
+-   Repeating pattern of circuit board components
+-   Shades of black, grey, and neon green
+-   Perfect for adding a touch of tech to any space
 
 ## Specifications
 
-- Dimensions: 10m x 0.53m
-- Material: Non-woven fabric
-- Pattern repeat: 53cm
-- Roll coverage: 5.3 square meters
+-   Dimensions: 10m x 0.53m
+-   Material: Non-woven fabric
+-   Pattern repeat: 53cm
+-   Roll coverage: 5.3 square meters
 
 ## Installation
 

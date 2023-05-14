@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A repeating pattern of abstract shapes and colors, inspired by web design trends and patterns."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper design that is sure to make a statement in any space. Our repeating pattern of abstract shapes and colors is inspired by the latest web design trends and patterns, making it a perfect choice for those who want to stay on-trend.
 

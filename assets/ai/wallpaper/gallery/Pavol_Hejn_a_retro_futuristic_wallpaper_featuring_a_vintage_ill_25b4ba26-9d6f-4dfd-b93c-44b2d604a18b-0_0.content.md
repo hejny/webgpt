@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Looking for a wallpaper that combines the charm of vintage illustrations with the excitement of futuristic technology? Look no further than our retro-futuristic wallpaper, featuring a classic robot design set against a vibrant neon background.
 

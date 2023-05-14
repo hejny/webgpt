@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Cosmic Dreams: Abstract Star Field Wallpaper
 
@@ -40,16 +40,16 @@ Our wallpapers have been downloaded by thousands of people around the world, eac
 
 If you're interested in learning more about the cosmos, here are some resources we recommend:
 
-- [NASA](#) - The National Aeronautics and Space Administration has a wealth of information about space exploration and astronomy.
-- [Space.com](#) - This website covers the latest news and discoveries in space science.
-- [Astronomy Magazine](#) - A monthly publication that explores the science and hobby of astronomy.
+-   [NASA](#) - The National Aeronautics and Space Administration has a wealth of information about space exploration and astronomy.
+-   [Space.com](#) - This website covers the latest news and discoveries in space science.
+-   [Astronomy Magazine](#) - A monthly publication that explores the science and hobby of astronomy.
 
 ## Contact Us
 
 We would love to hear from you! If you have any questions or feedback, please don't hesitate to reach out to us:
 
-- Email: [info@cosmicdreams.com](mailto:info@cosmicdreams.com)
-- Twitter: [@cosmicdreams](#)
-- Instagram: [@cosmicdreams](#)
+-   Email: [info@cosmicdreams.com](mailto:info@cosmicdreams.com)
+-   Twitter: [@cosmicdreams](#)
+-   Instagram: [@cosmicdreams](#)
 
 Thank you for visiting Cosmic Dreams, and we hope our wallpaper brings a little bit of the cosmos into your life.

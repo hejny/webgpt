@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dreamy image of a forest at dawn with a misty atmosphere for a nature or wildlife blog"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our nature and wildlife blog, where we share the beauty of the natural world through stunning imagery. Our latest wallpaper features a dreamy image of a forest at dawn with a misty atmosphere, transporting you to a serene and peaceful place.
 

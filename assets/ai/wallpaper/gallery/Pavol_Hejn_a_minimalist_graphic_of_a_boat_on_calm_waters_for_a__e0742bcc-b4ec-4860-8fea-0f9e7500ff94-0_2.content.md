@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A minimalist graphic of a boat on calm waters for a boating or water sports website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our boating and water sports website! We are excited to offer you a minimalist graphic wallpaper featuring a serene boat on calm waters. 
+Welcome to our boating and water sports website! We are excited to offer you a minimalist graphic wallpaper featuring a serene boat on calm waters.
 
 This wallpaper is perfect for those who appreciate the simplicity and beauty of nature. The peaceful image of the boat on the water can transport you to a place of relaxation and tranquility, reminding you of the joys of being out on the water.
 

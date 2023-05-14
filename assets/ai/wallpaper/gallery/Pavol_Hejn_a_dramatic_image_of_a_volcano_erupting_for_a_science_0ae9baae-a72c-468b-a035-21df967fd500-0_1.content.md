@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dramatic image of a volcano erupting for a science or geology blog"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our science and geology blog, where we explore the wonders of the natural world. Today, we are featuring a dramatic image of a volcano erupting as our wallpaper. This stunning image captures the raw power and beauty of one of nature's most awe-inspiring phenomena.
 

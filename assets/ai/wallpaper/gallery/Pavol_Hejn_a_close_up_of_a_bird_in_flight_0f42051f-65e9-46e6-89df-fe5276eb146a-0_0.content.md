@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Birdwatcher's Paradise: A Close-Up of a Bird in Flight
 
@@ -26,10 +26,10 @@ Welcome to Birdwatcher's Paradise, where you can immerse yourself in the world o
 
 At Birdwatcher's Paradise, we are passionate about birds and dedicated to providing bird enthusiasts with everything they need to explore and appreciate the avian world. Our website offers a wide range of resources, including:
 
-- **Bird Identification:** Use our comprehensive database to identify any bird you encounter on your birdwatching adventures.
-- **Birdwatching Tips:** Learn from experienced birdwatchers and improve your skills with our expert tips and advice.
-- **User Stories:** Read stories from other birdwatchers and share your own experiences with the community.
-- **Wallpapers:** Download beautiful wallpapers featuring birds in their natural habitats, like this close-up of a bird in flight.
+-   **Bird Identification:** Use our comprehensive database to identify any bird you encounter on your birdwatching adventures.
+-   **Birdwatching Tips:** Learn from experienced birdwatchers and improve your skills with our expert tips and advice.
+-   **User Stories:** Read stories from other birdwatchers and share your own experiences with the community.
+-   **Wallpapers:** Download beautiful wallpapers featuring birds in their natural habitats, like this close-up of a bird in flight.
 
 ## Our Mission
 
@@ -39,9 +39,9 @@ Our mission is to inspire people to appreciate and protect birds and their habit
 
 Here are some helpful resources to help you get started on your birdwatching journey:
 
-- [The Cornell Lab of Ornithology](#): A leading authority on birds and bird conservation.
-- [Audubon Society](#): A nonprofit organization dedicated to protecting birds and their habitats.
-- [eBird](#): A platform for birdwatchers to record and share their sightings.
+-   [The Cornell Lab of Ornithology](#): A leading authority on birds and bird conservation.
+-   [Audubon Society](#): A nonprofit organization dedicated to protecting birds and their habitats.
+-   [eBird](#): A platform for birdwatchers to record and share their sightings.
 
 ## Contact Us
 

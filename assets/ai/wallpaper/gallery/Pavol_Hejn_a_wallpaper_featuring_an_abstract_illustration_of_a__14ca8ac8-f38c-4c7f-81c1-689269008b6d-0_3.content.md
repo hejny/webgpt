@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Introducing our latest wallpaper design featuring an abstract illustration of a dark and ominous machine. This wallpaper is perfect for those who love the industrial and futuristic aesthetic.
 

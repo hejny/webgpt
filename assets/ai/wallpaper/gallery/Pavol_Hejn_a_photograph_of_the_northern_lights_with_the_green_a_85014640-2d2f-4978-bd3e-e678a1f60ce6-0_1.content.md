@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of the Northern Lights, with the green and purple hues swirling in the night sky."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of the Northern Lights. This breathtaking photograph captures the beauty and mystery of one of nature's most awe-inspiring phenomena.
 

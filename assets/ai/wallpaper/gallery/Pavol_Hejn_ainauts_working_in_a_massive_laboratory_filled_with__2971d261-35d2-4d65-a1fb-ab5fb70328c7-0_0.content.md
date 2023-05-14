@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring the stunning wallpaper of AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.
 

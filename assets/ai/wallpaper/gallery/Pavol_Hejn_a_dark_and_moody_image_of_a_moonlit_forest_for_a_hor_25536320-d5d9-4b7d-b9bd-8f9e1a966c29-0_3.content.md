@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Dark and Moody Moonlit Forest Wallpaper
 
@@ -20,9 +20,9 @@ Looking for the perfect wallpaper to set the tone for your horror or supernatura
 
 ## Features
 
-- Dark and moody atmosphere
-- Full moon casting an eerie glow over the trees
-- Perfect for horror or supernatural websites
+-   Dark and moody atmosphere
+-   Full moon casting an eerie glow over the trees
+-   Perfect for horror or supernatural websites
 
 ## How to Use
 
@@ -36,11 +36,12 @@ To use this wallpaper on your website, simply download the image and set it as y
 
 This stunning photograph captures the eerie beauty of a forest at night, illuminated by the light of a full moon. The dark shadows and twisted branches create a sense of foreboding, making it the perfect choice for any horror or supernatural-themed website.
 
-> "The woods are lovely, dark and deep, 
-> But I have promises to keep, 
-> And miles to go before I sleep, 
-> And miles to go before I sleep." 
-> - Robert Frost
+> "The woods are lovely, dark and deep,
+> But I have promises to keep,
+> And miles to go before I sleep,
+> And miles to go before I sleep."
+>
+> -   Robert Frost
 
 ## Conclusion
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A colorful graphic of a group of hot air balloons for a travel or adventure website"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our travel and adventure website! We are excited to share with you our colorful graphic of a group of hot air balloons, which perfectly captures the spirit of exploration and adventure that we promote.
 

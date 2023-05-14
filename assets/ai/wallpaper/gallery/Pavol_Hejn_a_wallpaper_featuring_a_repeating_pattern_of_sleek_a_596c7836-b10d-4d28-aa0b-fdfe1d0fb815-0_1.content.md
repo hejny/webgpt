@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Digital Devices Wallpaper for Tech Enthusiasts
 
@@ -26,11 +26,11 @@ If you're a tech enthusiast looking to spice up your desktop or mobile device, o
 
 Our digital devices wallpaper is designed with tech lovers in mind. The repeating pattern showcases some of the most popular and cutting-edge devices on the market today, including:
 
-- iPhones
-- iPads
-- MacBooks
-- Surface Pros
-- Samsung Galaxy phones and tablets
+-   iPhones
+-   iPads
+-   MacBooks
+-   Surface Pros
+-   Samsung Galaxy phones and tablets
 
 The wallpaper is available in a variety of resolutions, so you can choose the one that best fits your device. And because it's a repeating pattern, you don't have to worry about the wallpaper looking stretched or distorted on larger screens.
 
@@ -48,9 +48,9 @@ Here are some examples of how our digital devices wallpaper has been used by sat
 
 To download our digital devices wallpaper, simply click the link below that corresponds to your device's resolution:
 
-- [1920x1080](#1920x1080)
-- [2560x1440](#2560x1440)
-- [3840x2160](#3840x2160)
+-   [1920x1080](#1920x1080)
+-   [2560x1440](#2560x1440)
+-   [3840x2160](#3840x2160)
 
 Once you've downloaded the wallpaper, simply set it as your device's background. If you need help doing this, check out our [FAQ](#faq) section.
 
@@ -60,10 +60,10 @@ Once you've downloaded the wallpaper, simply set it as your device's background.
 
 The process for setting your wallpaper as your device's background varies depending on the device and operating system you're using. Here are some general instructions:
 
-- **Windows 10:** Right-click on the desktop, select "Personalize," then choose "Background" and select the downloaded image.
-- **MacOS:** Control-click on the desktop, select "Change Desktop Background," then click the "+" button and select the downloaded image.
-- **iOS:** Go to "Settings," select "Wallpaper," then choose "Choose a New Wallpaper" and select the downloaded image.
-- **Android:** Go to "Settings," select "Display," then choose "Wallpaper" and select the downloaded image.
+-   **Windows 10:** Right-click on the desktop, select "Personalize," then choose "Background" and select the downloaded image.
+-   **MacOS:** Control-click on the desktop, select "Change Desktop Background," then click the "+" button and select the downloaded image.
+-   **iOS:** Go to "Settings," select "Wallpaper," then choose "Choose a New Wallpaper" and select the downloaded image.
+-   **Android:** Go to "Settings," select "Display," then choose "Wallpaper" and select the downloaded image.
 
 ### Can I use this wallpaper commercially?
 

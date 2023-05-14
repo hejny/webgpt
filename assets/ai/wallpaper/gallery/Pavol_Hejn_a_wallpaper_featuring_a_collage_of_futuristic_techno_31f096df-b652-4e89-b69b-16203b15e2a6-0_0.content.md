@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a collage of futuristic technology such as drones, robots, and smart devices, set against a black background."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Introducing our latest wallpaper design - a stunning collage of futuristic technology set against a sleek black background. This wallpaper is perfect for anyone who loves all things tech and wants to add a touch of modernity to their space.
 

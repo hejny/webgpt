@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of overlapping circles in bright colors for a business or marketing website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our business and marketing website, where we strive to provide you with the best experience possible. Our website is designed to be visually appealing and engaging, which is why we have chosen an abstract image of overlapping circles in bright colors as our wallpaper.
 

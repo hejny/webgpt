@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Surreal Desert Landscapes Wallpaper Collection
 
-Welcome to our collection of surreal desert landscape wallpapers! Our unique and stunning designs are perfect for adding a touch of otherworldliness to your desktop or mobile device. 
+Welcome to our collection of surreal desert landscape wallpapers! Our unique and stunning designs are perfect for adding a touch of otherworldliness to your desktop or mobile device.
 
 ## About the Collection
 
@@ -30,9 +30,9 @@ Our collection features a variety of surreal interpretations of desert landscape
 
 Here are some stories from satisfied customers who have used our wallpapers:
 
-- "I love the way these wallpapers make my computer screen look like a portal to another dimension!" - Sarah T.
-- "I'm a big fan of the surrealism movement, so these wallpapers are right up my alley. They're so unique and eye-catching." - Alex S.
-- "I live in a city and don't get to see much nature, so having these wallpapers on my phone is like having a little piece of the outdoors with me all the time." - Emily L.
+-   "I love the way these wallpapers make my computer screen look like a portal to another dimension!" - Sarah T.
+-   "I'm a big fan of the surrealism movement, so these wallpapers are right up my alley. They're so unique and eye-catching." - Alex S.
+-   "I live in a city and don't get to see much nature, so having these wallpapers on my phone is like having a little piece of the outdoors with me all the time." - Emily L.
 
 ## How to Use
 
@@ -42,8 +42,8 @@ To use our wallpapers, simply click on the image you like and save it to your de
 
 If you're interested in learning more about surrealism and its influence on art and design, check out these resources:
 
-- [Surrealism - Tate](#surrealism-tate)
-- [What is Surrealism? - MoMA](#what-is-surrealism-moma)
+-   [Surrealism - Tate](#surrealism-tate)
+-   [What is Surrealism? - MoMA](#what-is-surrealism-moma)
 
 ## Contact Us
 

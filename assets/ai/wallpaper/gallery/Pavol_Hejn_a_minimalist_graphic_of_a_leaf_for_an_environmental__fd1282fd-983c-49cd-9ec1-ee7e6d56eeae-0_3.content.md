@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a leaf for an environmental or sustainable living website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our environmental and sustainable living website! We believe that small changes can make a big difference when it comes to protecting our planet, and we're here to provide you with the resources and inspiration you need to live a more eco-friendly lifestyle.
 

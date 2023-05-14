@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Feline Wallpapers: Get Closer to Your Favorite Furry Friends
 
@@ -46,16 +46,16 @@ Downloading our wallpapers is easy! Simply browse our collection, select your fa
 
 If you have any questions or feedback about our wallpapers, please don't hesitate to get in touch. You can reach us via email at [contact@felinewallpapers.com](mailto:contact@felinewallpapers.com) or through our social media channels:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 ## References
 
 Here are some resources that we used to create our wallpapers:
 
-- [Unsplash](https://unsplash.com/)
-- [Pexels](https://www.pexels.com/)
-- [Pixabay](https://pixabay.com/)
+-   [Unsplash](https://unsplash.com/)
+-   [Pexels](https://www.pexels.com/)
+-   [Pixabay](https://pixabay.com/)
 
 Thank you for visiting Feline Wallpapers. We hope you enjoy our collection as much as we do!

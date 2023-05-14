@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # "Cyborg Dreams" - A Minimalist Wallpaper for Your Futuristic Fantasy
 
@@ -40,19 +40,19 @@ Our wallpapers have been used by people all over the world, from students to pro
 
 Downloading our wallpapers is easy. Simply click on the link below to download the wallpaper in the size that best fits your device:
 
-- [Download "Cyborg Dreams" wallpaper](#)
+-   [Download "Cyborg Dreams" wallpaper](#)
 
 ## References
 
 We take pride in creating high-quality wallpapers that are not only visually appealing but also thought-provoking. Here are some references we used when designing "Cyborg Dreams":
 
-- [Cyborgs in popular culture](#)
-- [Minimalist design principles](#)
-- [Color psychology](#)
+-   [Cyborgs in popular culture](#)
+-   [Minimalist design principles](#)
+-   [Color psychology](#)
 
 ## Contact Us
 
 If you have any questions or comments about our wallpapers, please don't hesitate to contact us. We love hearing from our users and are always looking for ways to improve our products.
 
-- Email: [contact@cyborgdreams.com](mailto:contact@cyborgdreams.com)
-- Twitter: [@CyborgDreams](#)
+-   Email: [contact@cyborgdreams.com](mailto:contact@cyborgdreams.com)
+-   Twitter: [@CyborgDreams](#)

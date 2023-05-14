@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A vibrant galaxy with swirling colors and stars for a science or astronomy blog"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our science and astronomy blog, where we explore the wonders of the universe! 
+Welcome to our science and astronomy blog, where we explore the wonders of the universe!
 
 Our latest wallpaper features a vibrant galaxy with swirling colors and stars, capturing the awe-inspiring beauty of space. This stunning image is a reminder of the endless possibilities and mysteries that exist beyond our planet.
 

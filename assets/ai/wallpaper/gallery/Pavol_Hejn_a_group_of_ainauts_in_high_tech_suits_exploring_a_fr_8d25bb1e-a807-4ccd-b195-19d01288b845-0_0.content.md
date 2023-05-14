@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of AInauts exploring a frozen wasteland on a distant planet. The image depicts a group of high-tech suited explorers traversing through towering ice formations, creating an awe-inspiring scene.
 

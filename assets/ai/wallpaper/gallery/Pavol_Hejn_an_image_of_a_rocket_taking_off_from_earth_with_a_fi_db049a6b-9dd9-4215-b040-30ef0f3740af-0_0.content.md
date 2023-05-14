@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The font that best fits the Space Adventures website is "Montserrat".-->
+<!--font:The font that best fits the Space Adventures website is Montserrat-->
 
 # Space Adventures
 
-Welcome to Space Adventures, your go-to website for all things space-related! Our website is designed to take you on a journey through the vast expanse of the universe. 
+Welcome to Space Adventures, your go-to website for all things space-related! Our website is designed to take you on a journey through the vast expanse of the universe.
 
 ## Wallpaper
 
@@ -28,10 +28,10 @@ At Space Adventures, our mission is to bring the wonders of space to everyone. W
 
 ## What We Offer
 
-- **News and Updates**: Stay up-to-date on the latest developments in space exploration, including new missions, discoveries, and technologies.
-- **Educational Resources**: Learn about the science behind space travel, from the physics of rocket propulsion to the biology of living in space.
-- **Virtual Tours**: Take a virtual tour of some of the most exciting destinations in our solar system, including Mars, Jupiter, and Saturn.
-- **Community**: Connect with other space enthusiasts from around the world, share your own experiences and insights, and join in discussions about the future of space exploration.
+-   **News and Updates**: Stay up-to-date on the latest developments in space exploration, including new missions, discoveries, and technologies.
+-   **Educational Resources**: Learn about the science behind space travel, from the physics of rocket propulsion to the biology of living in space.
+-   **Virtual Tours**: Take a virtual tour of some of the most exciting destinations in our solar system, including Mars, Jupiter, and Saturn.
+-   **Community**: Connect with other space enthusiasts from around the world, share your own experiences and insights, and join in discussions about the future of space exploration.
 
 ## Join Us Today
 

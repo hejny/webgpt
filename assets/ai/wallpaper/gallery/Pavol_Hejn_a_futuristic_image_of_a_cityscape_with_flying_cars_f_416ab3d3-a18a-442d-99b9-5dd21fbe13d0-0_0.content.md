@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A futuristic image of a cityscape with flying cars for a sci-fi or technology website"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our sci-fi and technology website, where we explore the latest advancements in science and technology. Our website is designed to provide you with the most exciting and innovative content that will take you on a journey into the future.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Futuristic Workspace Wallpaper for Your Tech-Savvy Desktop
 
@@ -28,10 +28,10 @@ Our wallpaper is designed to provide you with a glimpse of what the future holds
 
 ## Benefits of Using Our Wallpaper
 
-- Enhances productivity by creating a professional and organized workspace
-- Provides a visually pleasing background for your desktop
-- Gives your computer a modern and sophisticated look
-- Easy to download and install
+-   Enhances productivity by creating a professional and organized workspace
+-   Provides a visually pleasing background for your desktop
+-   Gives your computer a modern and sophisticated look
+-   Easy to download and install
 
 ## User Stories
 
@@ -49,16 +49,16 @@ Our wallpaper is designed to provide you with a glimpse of what the future holds
 
 If you're interested in learning more about futuristic workspaces, check out these resources:
 
-- [The Future of Work: 10 Predictions for 2022 and Beyond](#)
-- [How Technology is Changing the Way We Work](#)
+-   [The Future of Work: 10 Predictions for 2022 and Beyond](#)
+-   [How Technology is Changing the Way We Work](#)
 
 ## Contact Us
 
 If you have any questions or comments about our wallpaper, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: [info@futuristicwallpaper.com](mailto:info@futuristicwallpaper.com)
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: [info@futuristicwallpaper.com](mailto:info@futuristicwallpaper.com)
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 ---
 

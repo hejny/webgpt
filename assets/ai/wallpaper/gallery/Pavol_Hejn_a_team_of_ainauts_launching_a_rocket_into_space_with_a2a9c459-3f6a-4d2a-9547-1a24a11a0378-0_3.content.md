@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts launching a rocket into space, with the Earth visible in the background."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a team of AInauts launching a rocket into space with the Earth visible in the background. This incredible image captures the excitement and wonder of space exploration, as well as the cutting-edge technology that makes it possible.
 

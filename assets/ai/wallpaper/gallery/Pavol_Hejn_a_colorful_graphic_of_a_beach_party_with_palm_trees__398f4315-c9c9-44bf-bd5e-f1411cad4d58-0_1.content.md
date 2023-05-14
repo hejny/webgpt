@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A colorful graphic of a beach party with palm trees and cocktails for a vacation or travel website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our vibrant collection of wallpapers featuring a colorful graphic of a beach party with palm trees and cocktails! If you're looking for the perfect wallpaper to inspire your next vacation or travel adventure, you've come to the right place.
 

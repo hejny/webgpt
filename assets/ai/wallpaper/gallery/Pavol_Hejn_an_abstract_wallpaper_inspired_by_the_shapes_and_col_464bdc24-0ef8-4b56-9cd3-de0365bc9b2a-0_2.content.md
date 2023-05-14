@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Introducing our newest addition to the wallpaper collection - an abstract design inspired by the fascinating world of quantum physics. This wallpaper features bold colors and intricate lines that come together to create a visually stunning masterpiece.
 

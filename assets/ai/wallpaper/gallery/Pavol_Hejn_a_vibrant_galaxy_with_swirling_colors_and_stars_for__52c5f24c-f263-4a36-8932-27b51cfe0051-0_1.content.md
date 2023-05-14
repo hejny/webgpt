@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A vibrant galaxy with swirling colors and stars for a science or astronomy blog"
 -->
 
-<!--font:The font that would best fit the science and astronomy blog with a vibrant galaxy wallpaper is "Montserrat".-->
+<!--font:The font that would best fit the science and astronomy blog with a vibrant galaxy wallpaper is Montserrat.-->
 
 Welcome to our science and astronomy blog, where we explore the wonders of the universe! Our website features a stunning wallpaper of a vibrant galaxy with swirling colors and stars, inviting you to join us on a journey through space.
 

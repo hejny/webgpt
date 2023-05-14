@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our website featuring a stunning wallpaper of a futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds. 
+Welcome to our website featuring a stunning wallpaper of a futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.
 
 Imagine a world where artificial intelligence has advanced to the point where it can pilot a spacecraft with precision and efficiency, without the need for human intervention. This wallpaper captures that very vision, showcasing a sleek and modern spacecraft manned by a team of intelligent AI beings.
 

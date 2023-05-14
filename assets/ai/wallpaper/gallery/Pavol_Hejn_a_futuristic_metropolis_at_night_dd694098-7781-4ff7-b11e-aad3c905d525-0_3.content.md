@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A futuristic metropolis at night"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a futuristic metropolis at night. This breathtaking image captures the essence of a modern city with its towering skyscrapers, sleek architecture, and vibrant lights.
 

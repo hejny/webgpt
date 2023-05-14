@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Retro Robot Wallpaper
 
@@ -20,10 +20,10 @@ Add a touch of nostalgia to your desktop with our pixel art-inspired wallpaper f
 
 ## Features
 
-- Pixel art-inspired design
-- Retro-style robot
-- Limited color palette
-- Pixelated lines
+-   Pixel art-inspired design
+-   Retro-style robot
+-   Limited color palette
+-   Pixelated lines
 
 ## Download
 

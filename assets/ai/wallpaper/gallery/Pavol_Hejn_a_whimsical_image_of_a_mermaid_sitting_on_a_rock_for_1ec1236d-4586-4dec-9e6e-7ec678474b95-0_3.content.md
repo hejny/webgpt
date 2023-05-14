@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A whimsical image of a mermaid sitting on a rock for a fantasy or fiction website"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our fantasy and fiction website, where imagination comes to life! Our latest addition to our wallpaper collection is a whimsical image of a mermaid sitting on a rock.
 

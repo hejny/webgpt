@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Bee-Friendly Gardening: Tips for Creating a Buzzworthy Garden
 
-Welcome to our website dedicated to bee-friendly gardening! Our mission is to inspire and educate gardeners on how to create beautiful outdoor spaces that also support the health and well-being of bees and other pollinators. 
+Welcome to our website dedicated to bee-friendly gardening! Our mission is to inspire and educate gardeners on how to create beautiful outdoor spaces that also support the health and well-being of bees and other pollinators.
 
 ## Why Bee-Friendly Gardening Matters
 
@@ -30,11 +30,11 @@ Bees play a crucial role in pollinating many of the fruits, vegetables, and flow
 
 Here are some tips for designing a garden that will attract and support bees:
 
-- Choose native plants that provide nectar and pollen throughout the growing season. Bees are especially attracted to blue, purple, and yellow flowers.
-- Plant in clusters rather than single plants to make it easier for bees to find and access the flowers.
-- Provide nesting sites by leaving areas of bare soil or installing bee hotels.
-- Avoid using pesticides and herbicides that can harm bees and other beneficial insects.
-- Consider adding a water source such as a bird bath or shallow dish with rocks for bees to drink from.
+-   Choose native plants that provide nectar and pollen throughout the growing season. Bees are especially attracted to blue, purple, and yellow flowers.
+-   Plant in clusters rather than single plants to make it easier for bees to find and access the flowers.
+-   Provide nesting sites by leaving areas of bare soil or installing bee hotels.
+-   Avoid using pesticides and herbicides that can harm bees and other beneficial insects.
+-   Consider adding a water source such as a bird bath or shallow dish with rocks for bees to drink from.
 
 ## User Stories
 
@@ -50,12 +50,12 @@ We've heard from many gardeners who have successfully created bee-friendly garde
 
 Here are some additional resources for learning about bee-friendly gardening:
 
-- [The Xerces Society](#xerces-society): A nonprofit organization dedicated to protecting pollinators and their habitats.
-- [Pollinator Partnership](#pollinator-partnership): A nonprofit organization that promotes the health of pollinators through conservation, education, and research.
-- [National Wildlife Federation](#national-wildlife-federation): An organization that provides resources for creating wildlife-friendly gardens.
+-   [The Xerces Society](#xerces-society): A nonprofit organization dedicated to protecting pollinators and their habitats.
+-   [Pollinator Partnership](#pollinator-partnership): A nonprofit organization that promotes the health of pollinators through conservation, education, and research.
+-   [National Wildlife Federation](#national-wildlife-federation): An organization that provides resources for creating wildlife-friendly gardens.
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Please email us at [info@beefriendlygardening.com](mailto:info@beefriendlygardening.com) or follow us on [Twitter](#twitter) and [Facebook](#facebook). 
+Have questions or feedback? We'd love to hear from you! Please email us at [info@beefriendlygardening.com](mailto:info@beefriendlygardening.com) or follow us on [Twitter](#twitter) and [Facebook](#facebook).
 
 Thank you for visiting our website and joining us in our mission to create buzzworthy gardens that support the health and well-being of bees!

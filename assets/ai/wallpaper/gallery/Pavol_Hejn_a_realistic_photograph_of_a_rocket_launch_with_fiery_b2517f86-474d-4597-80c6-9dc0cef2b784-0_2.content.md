@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A realistic photograph of a rocket launch, with fiery trails and smoke visible in the sky."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a realistic photograph of a rocket launch. This captivating image captures the excitement and power of space exploration, with fiery trails and smoke visible in the sky.
 

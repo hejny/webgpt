@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital image of a black hole, with the distorted shapes and bright colors representing the extreme gravity."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a digital image of a black hole! This incredible image captures the awe-inspiring power of extreme gravity, as evidenced by the distorted shapes and bright colors that surround the black hole.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Introducing our latest addition to our wallpaper collection, a unique and modern design featuring a repeating pattern of simple equations and formulas. This wallpaper is perfect for those who love math or appreciate the beauty of simplicity in design.
 

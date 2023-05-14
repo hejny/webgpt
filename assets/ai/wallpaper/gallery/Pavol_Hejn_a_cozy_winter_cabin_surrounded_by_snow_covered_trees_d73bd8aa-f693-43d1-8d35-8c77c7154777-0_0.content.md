@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Winter Wonderland Home Decor Ideas
 
@@ -32,11 +32,11 @@ Our featured wallpaper is the perfect addition to any winter-themed room. The im
 
 Looking for more winter decorating ideas? Here are some of our favorite tips:
 
-- Add cozy textures like faux fur blankets and knit pillows
-- Incorporate natural elements like pinecones and evergreen branches
-- Use warm lighting to create a cozy atmosphere
-- Swap out your regular throw pillows for ones with winter designs or colors
-- Hang string lights or candles for added ambiance
+-   Add cozy textures like faux fur blankets and knit pillows
+-   Incorporate natural elements like pinecones and evergreen branches
+-   Use warm lighting to create a cozy atmosphere
+-   Swap out your regular throw pillows for ones with winter designs or colors
+-   Hang string lights or candles for added ambiance
 
 ## User Stories
 
@@ -52,5 +52,5 @@ Have questions or want to share your own winter decor ideas? We'd love to hear f
 
 ## References
 
-- [10 Cozy Winter Decorating Ideas](https://www.countryliving.com/home-design/decorating-ideas/g4506/winter-decorating-ideas/)
-- [Winter Decor Ideas for a Cozy Home](https://www.hgtv.com/design/decorating/design-101/10-winter-decor-ideas-for-a-cozy-home-pictures)
+-   [10 Cozy Winter Decorating Ideas](https://www.countryliving.com/home-design/decorating-ideas/g4506/winter-decorating-ideas/)
+-   [Winter Decor Ideas for a Cozy Home](https://www.hgtv.com/design/decorating/design-101/10-winter-decor-ideas-for-a-cozy-home-pictures)

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Flower Power Wallpaper for Your Home
 
@@ -26,9 +26,9 @@ Welcome to our website where you can find beautiful flower power wallpaper to tr
 
 Our "Close-up of a Flower" wallpaper captures the intricate details of a blooming flower, showcasing its delicate petals, vibrant colors, and unique texture. This wallpaper is perfect for adding a touch of elegance and sophistication to any room in your home.
 
-- Available in various sizes to fit your wall perfectly
-- Made with high-quality materials to ensure durability
-- Easy to install and remove without damaging your walls
+-   Available in various sizes to fit your wall perfectly
+-   Made with high-quality materials to ensure durability
+-   Easy to install and remove without damaging your walls
 
 ## User Stories
 
@@ -50,8 +50,8 @@ If you have any questions about our flower power wallpaper or need assistance wi
 
 Check out these resources to learn more about the benefits of using wallpaper in your home:
 
-- [The Pros and Cons of Wallpaper](#)
-- [10 Creative Ways to Use Wallpaper in Your Home](#)
-- [Wallpaper vs. Paint: Which is Better for Your Home?](#)
+-   [The Pros and Cons of Wallpaper](#)
+-   [10 Creative Ways to Use Wallpaper in Your Home](#)
+-   [Wallpaper vs. Paint: Which is Better for Your Home?](#)
 
 Thank you for choosing our flower power wallpaper to enhance your home. We can't wait to see how it transforms your space!

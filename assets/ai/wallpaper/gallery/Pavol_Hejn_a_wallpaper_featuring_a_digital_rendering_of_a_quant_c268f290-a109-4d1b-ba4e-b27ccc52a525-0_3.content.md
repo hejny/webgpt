@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a digital rendering of a quantum computer, with a minimalist color scheme and geometric lines."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper that showcases a digital rendering of a quantum computer. This wallpaper is perfect for anyone who loves technology and wants to add a touch of sophistication to their desktop or mobile device.
 

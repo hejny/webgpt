@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a stylized illustration of a futuristic workspace, with a minimalist and modern design, set against a gradient background."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper that showcases a futuristic workspace. This wallpaper is perfect for anyone who wants to add a touch of modernity and sophistication to their desktop or mobile device.
 

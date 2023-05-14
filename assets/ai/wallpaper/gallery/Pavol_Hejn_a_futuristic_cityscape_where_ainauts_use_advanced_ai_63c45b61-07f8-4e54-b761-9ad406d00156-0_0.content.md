@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems. 
+Welcome to our website featuring a stunning wallpaper of a futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems.
 
 Imagine a world where cities are not only beautiful but also efficient and sustainable. This is the vision of the future that our wallpaper represents. The city is bustling with activity, yet everything runs smoothly thanks to the advanced AI technology used by the AInauts.
 

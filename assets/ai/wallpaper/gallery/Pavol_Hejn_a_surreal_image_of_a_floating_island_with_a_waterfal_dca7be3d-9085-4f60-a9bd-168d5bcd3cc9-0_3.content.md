@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A surreal image of a floating island with a waterfall for a travel blog or agency"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our travel blog or agency! We are excited to showcase this stunning wallpaper featuring a surreal image of a floating island with a waterfall.
 

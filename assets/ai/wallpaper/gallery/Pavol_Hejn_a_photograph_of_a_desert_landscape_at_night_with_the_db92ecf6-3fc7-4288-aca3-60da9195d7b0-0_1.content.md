@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The "Open Sans" font would be a great fit for the website.-->
+<!--font:The Open Sans font would be a great fit for the website.-->
 
 # Desert Nights Wallpaper
 
@@ -30,9 +30,9 @@ Our wallpaper collection is carefully curated to showcase the magnificence of na
 
 Our wallpapers are perfect for anyone who loves nature and wants to bring the beauty of the outdoors into their home or office. Here are some examples of how our users have incorporated our Desert Nights Wallpaper into their lives:
 
-- "I work from home and needed something calming to look at during breaks. The Desert Nights Wallpaper is perfect - it's peaceful and helps me relax."
-- "I love stargazing, but I live in the city where it's hard to see the stars. The Desert Nights Wallpaper lets me enjoy the beauty of the night sky anytime I want."
-- "I recently redecorated my bedroom and wanted something that would make a statement. The Desert Nights Wallpaper is the centerpiece of the room - it's absolutely stunning."
+-   "I work from home and needed something calming to look at during breaks. The Desert Nights Wallpaper is perfect - it's peaceful and helps me relax."
+-   "I love stargazing, but I live in the city where it's hard to see the stars. The Desert Nights Wallpaper lets me enjoy the beauty of the night sky anytime I want."
+-   "I recently redecorated my bedroom and wanted something that would make a statement. The Desert Nights Wallpaper is the centerpiece of the room - it's absolutely stunning."
 
 ## References
 

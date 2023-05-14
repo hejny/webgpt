@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A magical underwater world"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
-Welcome to our website featuring the stunning wallpaper "A magical underwater world." 
+Welcome to our website featuring the stunning wallpaper "A magical underwater world."
 
 Immerse yourself in the beauty of this enchanting scene, where vibrant corals and exotic fish create a mesmerizing display. The intricate details of the sea creatures and plants are captured in high definition, making it feel like you're diving right into the depths of the ocean.
 

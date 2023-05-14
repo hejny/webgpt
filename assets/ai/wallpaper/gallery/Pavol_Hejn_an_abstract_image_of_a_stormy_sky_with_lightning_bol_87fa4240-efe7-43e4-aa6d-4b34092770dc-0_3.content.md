@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a stormy sky with lightning bolts for a weather or news website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our weather and news website! We are excited to offer you a stunning wallpaper featuring an abstract image of a stormy sky with lightning bolts.
 

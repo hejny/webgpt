@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a futuristic astronaut standing on the surface of a distant planet. This illustration captures the imagination and spirit of space exploration, as we look towards the future of humanity's journey beyond Earth.
 

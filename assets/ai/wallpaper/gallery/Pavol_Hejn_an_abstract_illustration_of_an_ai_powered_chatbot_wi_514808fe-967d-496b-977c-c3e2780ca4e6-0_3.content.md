@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # AI-Powered Chatbot: Revolutionizing Customer Service
 
@@ -30,10 +30,10 @@ At [Company Name], we believe that chatbots are the future of customer service. 
 
 There are countless benefits to using an AI-powered chatbot for your business. Here are just a few:
 
-- **24/7 Availability:** Unlike human customer service representatives, chatbots can be available around the clock, ensuring that your customers always have access to the help they need.
-- **Increased Efficiency:** Chatbots can handle multiple conversations simultaneously, drastically reducing wait times and increasing overall efficiency.
-- **Personalization:** With the power of AI, chatbots can learn about each individual user and tailor their responses accordingly, creating a more personalized experience.
-- **Cost Savings:** By automating certain aspects of customer service, businesses can save money on labor costs while still providing high-quality support.
+-   **24/7 Availability:** Unlike human customer service representatives, chatbots can be available around the clock, ensuring that your customers always have access to the help they need.
+-   **Increased Efficiency:** Chatbots can handle multiple conversations simultaneously, drastically reducing wait times and increasing overall efficiency.
+-   **Personalization:** With the power of AI, chatbots can learn about each individual user and tailor their responses accordingly, creating a more personalized experience.
+-   **Cost Savings:** By automating certain aspects of customer service, businesses can save money on labor costs while still providing high-quality support.
 
 ## User Stories
 
@@ -47,9 +47,9 @@ Don't just take our word for it - here are some real-life examples of how AI-pow
 
 Want to learn more about AI-powered chatbots? Here are some resources we recommend:
 
-- [The Future of Customer Service: AI-Powered Chatbots](#)
-- [How Chatbots Are Revolutionizing E-commerce](#)
-- [5 Benefits of Using a Chatbot for Your Business](#)
+-   [The Future of Customer Service: AI-Powered Chatbots](#)
+-   [How Chatbots Are Revolutionizing E-commerce](#)
+-   [5 Benefits of Using a Chatbot for Your Business](#)
 
 ## Contact Us
 

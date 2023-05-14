@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "A wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
-Welcome to our website featuring a unique wallpaper design that will electrify your space! Our circuit board wallpaper features a repeating pattern of intricate components in shades of black, grey, and neon green. 
+Welcome to our website featuring a unique wallpaper design that will electrify your space! Our circuit board wallpaper features a repeating pattern of intricate components in shades of black, grey, and neon green.
 
 This wallpaper is perfect for those who love technology, science, or just want to add a futuristic touch to their home or office. The sleek and modern design will complement any contemporary decor style, while the vibrant neon green accents add a pop of color and excitement.
 

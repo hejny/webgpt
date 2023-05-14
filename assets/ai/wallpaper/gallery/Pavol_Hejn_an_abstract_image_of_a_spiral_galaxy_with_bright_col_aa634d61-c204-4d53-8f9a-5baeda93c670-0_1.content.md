@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Cosmic Dreams - Abstract Galaxy Wallpaper
 
@@ -32,10 +32,10 @@ At Cosmic Dreams, we believe that everyone should have access to beautiful and i
 
 Our wallpapers are:
 
-- High-quality: Our wallpapers are designed by professional artists and photographers, ensuring that you receive the highest quality images.
-- Easy to download: Simply click the "Download" button on our website to instantly download your chosen wallpaper.
-- Compatible with all devices: Our wallpapers are optimized for use on desktops, laptops, tablets, and smartphones.
-- Free: All of our wallpapers are completely free to download and use.
+-   High-quality: Our wallpapers are designed by professional artists and photographers, ensuring that you receive the highest quality images.
+-   Easy to download: Simply click the "Download" button on our website to instantly download your chosen wallpaper.
+-   Compatible with all devices: Our wallpapers are optimized for use on desktops, laptops, tablets, and smartphones.
+-   Free: All of our wallpapers are completely free to download and use.
 
 ## User Stories
 
@@ -49,9 +49,9 @@ Here are some stories from our satisfied users:
 
 Check out these resources to learn more about the beauty of space:
 
-- [NASA](https://www.nasa.gov/)
-- [Space.com](https://www.space.com/)
-- [Hubble Space Telescope](https://www.spacetelescope.org/)
+-   [NASA](https://www.nasa.gov/)
+-   [Space.com](https://www.space.com/)
+-   [Hubble Space Telescope](https://www.spacetelescope.org/)
 
 ## Contact Us
 
@@ -59,6 +59,6 @@ Have a question or comment? We'd love to hear from you! Get in touch with us at 
 
 Follow us on social media for updates and new wallpapers:
 
-- [Twitter](https://twitter.com/cosmicdreams)
-- [Instagram](https://www.instagram.com/cosmicdreams/)
-- [Facebook](https://www.facebook.com/cosmicdreams/)
+-   [Twitter](https://twitter.com/cosmicdreams)
+-   [Instagram](https://www.instagram.com/cosmicdreams/)
+-   [Facebook](https://www.facebook.com/cosmicdreams/)

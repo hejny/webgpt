@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # AI Space Station Observing Saturn's Rings
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies. 
+Welcome to our website featuring a stunning wallpaper of a group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
 
 ## About the Wallpaper
 
@@ -28,7 +28,7 @@ At our organization, we are dedicated to advancing the field of artificial intel
 
 ## Join Us
 
-If you share our passion for space exploration and AI, we invite you to join our community. Whether you are an AI researcher, space enthusiast, or simply someone who wants to learn more about these exciting fields, there is a place for you here. Together, we can help shape the future of space exploration and unlock the secrets of the universe. 
+If you share our passion for space exploration and AI, we invite you to join our community. Whether you are an AI researcher, space enthusiast, or simply someone who wants to learn more about these exciting fields, there is a place for you here. Together, we can help shape the future of space exploration and unlock the secrets of the universe.
 
 ---
 

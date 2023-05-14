@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Birdwatcher's Delight: A Close-Up of a Bird in Flight
 
@@ -32,24 +32,24 @@ We offer a wide range of resources, including bird identification guides, birdin
 
 Our website is designed with birders in mind. Here are some examples of how our users have benefited from our resources:
 
-- Sarah, a beginner birder, used our bird identification guide to identify a bird she saw in her backyard for the first time.
-- John, an experienced birder, discovered a new birding hotspot thanks to our list of recommended locations.
-- Mary, a bird enthusiast, purchased a pair of binoculars from our website and was thrilled with the quality and price.
+-   Sarah, a beginner birder, used our bird identification guide to identify a bird she saw in her backyard for the first time.
+-   John, an experienced birder, discovered a new birding hotspot thanks to our list of recommended locations.
+-   Mary, a bird enthusiast, purchased a pair of binoculars from our website and was thrilled with the quality and price.
 
 ## Our Products
 
 We only carry the best products for birders, and we stand behind every item we sell. Here are some of our top-selling products:
 
-- **Binoculars:** We have a wide range of binoculars available, from compact models perfect for travel to high-end options for serious birders.
-- **Field Guides:** Our selection of field guides includes books covering birds from around the world, as well as regional guides for specific areas.
-- **Bird Feeders:** Attract birds to your backyard with our selection of bird feeders, including hummingbird feeders, suet feeders, and more.
+-   **Binoculars:** We have a wide range of binoculars available, from compact models perfect for travel to high-end options for serious birders.
+-   **Field Guides:** Our selection of field guides includes books covering birds from around the world, as well as regional guides for specific areas.
+-   **Bird Feeders:** Attract birds to your backyard with our selection of bird feeders, including hummingbird feeders, suet feeders, and more.
 
 ## References
 
 We are proud to be a trusted source of information for birders around the world. Here are some references we recommend:
 
-- **Cornell Lab of Ornithology:** The Cornell Lab of Ornithology is a leading organization in the study and conservation of birds. Their website offers a wealth of resources for birders, including bird identification tools and citizen science projects.
-- **Audubon Society:** The Audubon Society is dedicated to protecting birds and their habitats. Their website offers information on birding events, conservation efforts, and more.
+-   **Cornell Lab of Ornithology:** The Cornell Lab of Ornithology is a leading organization in the study and conservation of birds. Their website offers a wealth of resources for birders, including bird identification tools and citizen science projects.
+-   **Audubon Society:** The Audubon Society is dedicated to protecting birds and their habitats. Their website offers information on birding events, conservation efforts, and more.
 
 ## Contact Us
 

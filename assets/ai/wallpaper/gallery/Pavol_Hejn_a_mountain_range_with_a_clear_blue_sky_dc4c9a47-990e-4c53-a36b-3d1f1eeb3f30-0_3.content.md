@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Mountain Range Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a stunning wallpaper of a mountain range agains
 
 ## Features
 
-- High-quality resolution
-- Perfectly captures the essence of nature's beauty
-- Ideal for desktops, laptops, tablets, and smartphones
-- Free to download and use
+-   High-quality resolution
+-   Perfectly captures the essence of nature's beauty
+-   Ideal for desktops, laptops, tablets, and smartphones
+-   Free to download and use
 
 ## How to Download
 

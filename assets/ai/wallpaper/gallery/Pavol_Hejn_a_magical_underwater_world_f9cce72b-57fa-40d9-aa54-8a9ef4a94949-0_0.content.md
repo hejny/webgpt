@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Exploring the Enchanting Depths of the Ocean
 
-Welcome to our website, where we bring you a glimpse of the mesmerizing underwater world through our stunning wallpaper featuring "A magical underwater world". 
+Welcome to our website, where we bring you a glimpse of the mesmerizing underwater world through our stunning wallpaper featuring "A magical underwater world".
 
 ## Discover the Wonders of the Ocean
 
@@ -44,17 +44,17 @@ Here are some stories from our users who have downloaded our wallpaper:
 
 We have compiled a list of references that you might find useful if you want to learn more about the ocean and its inhabitants:
 
-- National Geographic: [Ocean](#)
-- MarineBio Conservation Society: [Marine Life](#)
-- Ocean Conservancy: [Ocean Issues](#)
+-   National Geographic: [Ocean](#)
+-   MarineBio Conservation Society: [Marine Life](#)
+-   Ocean Conservancy: [Ocean Issues](#)
 
 ## Contact Us
 
 If you have any questions or feedback, please do not hesitate to contact us. We would love to hear from you!
 
-- Email: [info@oceanwallpapers.com](mailto:info@oceanwallpapers.com)
-- Phone: [+1 (555) 123-4567](tel:+15551234567)
-- Address: 1234 Ocean Drive, Suite 567, Miami, FL 33139
+-   Email: [info@oceanwallpapers.com](mailto:info@oceanwallpapers.com)
+-   Phone: [+1 (555) 123-4567](tel:+15551234567)
+-   Address: 1234 Ocean Drive, Suite 567, Miami, FL 33139
 
 ---
 

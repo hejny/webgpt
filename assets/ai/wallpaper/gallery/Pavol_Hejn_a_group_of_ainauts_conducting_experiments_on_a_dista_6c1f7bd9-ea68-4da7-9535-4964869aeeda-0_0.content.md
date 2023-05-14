@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Unknown: AInauts on a Distant Moon
 
@@ -34,9 +34,9 @@ Our team of AInauts consists of highly skilled scientists and engineers who are 
 
 At our research station on the distant moon, we are conducting a variety of experiments to better understand the moon's geology, atmosphere, and potential for supporting life. Some of our current research projects include:
 
-- Mapping the moon's surface using advanced imaging technology
-- Studying the composition of the moon's atmosphere and soil
-- Searching for signs of microbial life in the moon's subsurface oceans
+-   Mapping the moon's surface using advanced imaging technology
+-   Studying the composition of the moon's atmosphere and soil
+-   Searching for signs of microbial life in the moon's subsurface oceans
 
 ## User Stories
 
@@ -50,9 +50,9 @@ Our research has the potential to benefit humanity in countless ways, from advan
 
 For more information about our research and the work being done by the AInauts, please check out the following resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 

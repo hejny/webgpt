@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Space Elevator Construction: AInauts and AI Companions Working Together
 
@@ -24,7 +24,7 @@ Welcome to our website dedicated to the construction of a massive, orbiting spac
 
 ## What is a Space Elevator?
 
-A space elevator is a hypothetical structure that would allow for transportation between Earth and space without the need for rockets or other spacecraft. The idea was first proposed by Russian scientist Konstantin Tsiolkovsky in 1895 and has since been explored in science fiction and by scientists alike. 
+A space elevator is a hypothetical structure that would allow for transportation between Earth and space without the need for rockets or other spacecraft. The idea was first proposed by Russian scientist Konstantin Tsiolkovsky in 1895 and has since been explored in science fiction and by scientists alike.
 
 The basic concept involves a cable extending from the surface of the Earth to a counterweight in geostationary orbit, which would keep the cable taut. Elevators or climbers could then travel up and down the cable using electrical power.
 
@@ -36,9 +36,9 @@ AInauts are astronauts who have been specially trained in artificial intelligenc
 
 Together, AInauts and their AI companions are able to tackle the challenges of constructing a space elevator, including:
 
-- Designing and testing the cable material
-- Building and maintaining the infrastructure on the ground and in space
-- Ensuring the safety of everyone involved in the project
+-   Designing and testing the cable material
+-   Building and maintaining the infrastructure on the ground and in space
+-   Ensuring the safety of everyone involved in the project
 
 ## User Stories
 
@@ -54,9 +54,9 @@ Our website features stories from people who are passionate about space explorat
 
 If you're interested in learning more about space elevators, here are some resources that we recommend:
 
-- [The Space Elevator Concept](#)
-- [NASA's Space Elevator Research](#)
-- [The International Space Elevator Consortium](#)
+-   [The Space Elevator Concept](#)
+-   [NASA's Space Elevator Research](#)
+-   [The International Space Elevator Consortium](#)
 
 ## Contact Us
 

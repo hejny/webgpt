@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An image of a rocket launching into space with a trail of fire behind it, set against a starry sky."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a rocket launching into space! This captivating image showcases the power and beauty of space exploration.
 

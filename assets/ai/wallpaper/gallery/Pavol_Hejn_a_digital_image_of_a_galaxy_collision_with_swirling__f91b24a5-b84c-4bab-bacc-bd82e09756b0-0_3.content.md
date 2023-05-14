@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Mysteries of the Universe with Galaxy Collision Wallpaper
 
@@ -42,16 +42,16 @@ Here are some user stories from people who have visited our site:
 
 If you want to learn more about galaxy collisions and the science behind our wallpaper, we recommend checking out these resources:
 
-- [NASA's page on galaxy collisions](#nasa-galaxy-collisions)
-- [National Geographic's article on the Andromeda-Milky Way collision](#natgeo-galaxy-collision)
-- [Theoretical Astrophysics Group at the University of Leicester](#leicester-galaxy-collisions)
+-   [NASA's page on galaxy collisions](#nasa-galaxy-collisions)
+-   [National Geographic's article on the Andromeda-Milky Way collision](#natgeo-galaxy-collision)
+-   [Theoretical Astrophysics Group at the University of Leicester](#leicester-galaxy-collisions)
 
 ## Contact Us
 
 If you have any questions or feedback about our site, we would love to hear from you. You can reach us at:
 
-- Email: info@universemysteries.com
-- Twitter: [@universemysteries](#twitter-universe-mysteries)
-- Facebook: [Universe Mysteries](#facebook-universe-mysteries)
+-   Email: info@universemysteries.com
+-   Twitter: [@universemysteries](#twitter-universe-mysteries)
+-   Facebook: [Universe Mysteries](#facebook-universe-mysteries)
 
 Thank you for visiting our site and exploring the wonders of the universe with us! 🚀🌌

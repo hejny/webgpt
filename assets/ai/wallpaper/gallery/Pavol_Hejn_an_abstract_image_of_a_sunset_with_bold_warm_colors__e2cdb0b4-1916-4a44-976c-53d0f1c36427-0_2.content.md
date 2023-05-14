@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of a sunset with bold, warm colors for a photography or travel website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our photography and travel website, where we strive to inspire your wanderlust and capture the beauty of the world through our lens. Our latest wallpaper features an abstract image of a sunset with bold, warm colors that will transport you to a dreamy destination.
 

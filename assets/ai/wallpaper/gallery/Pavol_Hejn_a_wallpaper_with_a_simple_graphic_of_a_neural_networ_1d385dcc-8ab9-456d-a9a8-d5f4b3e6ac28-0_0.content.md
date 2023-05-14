@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Neural Network Wallpaper
 
@@ -22,7 +22,7 @@ Welcome to our website featuring a stunning wallpaper design showcasing a simple
 
 The neural network graphic is set against a background of complementary colors, which creates a striking contrast and enhances the visual impact of the design. The color scheme adds depth and dimension to the wallpaper, making it perfect for any device screen or desktop background.
 
-> "The colors are chosen to complement each other, creating a harmonious balance that draws the eye to the neural network graphic." 
+> "The colors are chosen to complement each other, creating a harmonious balance that draws the eye to the neural network graphic."
 
 ## Perfect for Tech Enthusiasts
 

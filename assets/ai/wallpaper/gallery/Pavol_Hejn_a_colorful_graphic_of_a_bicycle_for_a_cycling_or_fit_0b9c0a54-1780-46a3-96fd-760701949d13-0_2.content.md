@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A colorful graphic of a bicycle for a cycling or fitness blog"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our cycling and fitness blog! We're excited to share with you the latest tips, tricks, and trends in the world of cycling and exercise. And what better way to get started than with a colorful graphic of a bicycle wallpaper?
 

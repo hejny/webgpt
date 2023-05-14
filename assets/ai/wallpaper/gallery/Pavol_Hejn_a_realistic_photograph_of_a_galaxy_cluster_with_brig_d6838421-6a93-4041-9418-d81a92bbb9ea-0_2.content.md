@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A realistic photograph of a galaxy cluster, with bright colors and intricate details that showcase the vastness of the universe."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a galaxy cluster that showcases the vastness and beauty of the universe. This realistic photograph captures the intricate details and bright colors of this awe-inspiring celestial object.
 

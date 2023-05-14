@@ -12,19 +12,22 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Moonlit Mountains Wallpaper
 
 Experience the beauty of nature with our stunning wallpaper featuring a photograph of a full moon rising over a mountain range. The mist and clouds add to the sense of mystery, making this wallpaper perfect for those who love a touch of enchantment in their lives.
 
 ## Features
-- High-quality resolution for a crisp and clear display
-- Perfectly captures the serene and captivating essence of nature
-- Compatible with most devices and screen sizes
+
+-   High-quality resolution for a crisp and clear display
+-   Perfectly captures the serene and captivating essence of nature
+-   Compatible with most devices and screen sizes
 
 ## How to Download
+
 To download the Moonlit Mountains wallpaper, simply follow these steps:
+
 1. Click on the "Download" button below.
 2. Right-click on the image and select "Save Image As".
 3. Choose a location on your device to save the image.

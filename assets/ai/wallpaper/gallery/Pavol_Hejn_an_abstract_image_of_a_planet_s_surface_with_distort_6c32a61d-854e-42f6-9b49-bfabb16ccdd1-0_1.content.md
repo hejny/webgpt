@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Otherworldly Planetary Surface Wallpaper
 
-Welcome to our website featuring a stunning wallpaper of an abstract image of a planet's surface. The wallpaper showcases distorted shapes and vivid colors that create a surreal and otherworldly feel. 
+Welcome to our website featuring a stunning wallpaper of an abstract image of a planet's surface. The wallpaper showcases distorted shapes and vivid colors that create a surreal and otherworldly feel.
 
 ## About the Wallpaper
 
@@ -32,10 +32,10 @@ To download this beautiful wallpaper, simply click on the link below and save it
 
 Our wallpaper is compatible with a wide range of devices, including:
 
-- Desktop computers
-- Laptops
-- Tablets
-- Smartphones
+-   Desktop computers
+-   Laptops
+-   Tablets
+-   Smartphones
 
 ## How to Set Wallpaper
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An illustration of a robotic explorer, with metallic textures and intricate details."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring an incredible wallpaper of a robotic explorer! This stunning illustration showcases the futuristic design of a robot with intricate details and metallic textures that give it a realistic look.
 

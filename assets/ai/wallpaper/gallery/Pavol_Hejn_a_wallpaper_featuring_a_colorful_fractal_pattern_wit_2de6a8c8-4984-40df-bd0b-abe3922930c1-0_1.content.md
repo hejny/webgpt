@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a colorful fractal pattern, with intricate lines and bold colors."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Looking for a wallpaper that will add some pizzazz to your space? Look no further than our colorful fractal pattern wallpaper! Featuring intricate lines and bold, vibrant colors, this wallpaper is sure to make a statement in any room.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital painting of a distant planet, with a unique atmosphere and unusual terrain."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning digital painting of a distant planet with a unique atmosphere and unusual terrain. This wallpaper is perfect for those who love to explore the unknown and marvel at the beauty of the universe.
 

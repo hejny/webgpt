@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A dark and moody forest with a hidden path for a horror or mystery website"
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our dark and moody forest wallpaper, perfect for those who love horror or mystery themes. This wallpaper features a dense forest with twisted trees and eerie shadows, creating an ominous atmosphere that will send shivers down your spine.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Abstract Watercolor Wallpaper for Your Art and Design Inspiration
 
@@ -36,17 +36,17 @@ Using our abstract watercolor wallpaper is easy! Simply download the image and s
 
 Here are some examples of how our users have used our abstract watercolor wallpaper:
 
-- A graphic designer used it as a background for a social media post about mindfulness.
-- An artist used it as inspiration for a series of paintings featuring abstract landscapes.
-- A web developer used it as a header image for a website about eco-friendly products.
+-   A graphic designer used it as a background for a social media post about mindfulness.
+-   An artist used it as inspiration for a series of paintings featuring abstract landscapes.
+-   A web developer used it as a header image for a website about eco-friendly products.
 
 ## References
 
 If you're looking for more inspiration, check out these resources:
 
-- [Watercolor Techniques](#) - A guide to different watercolor techniques for beginners and advanced artists.
-- [Color Theory](#) - A comprehensive guide to color theory and how to use it in your designs.
-- [Design Inspiration](#) - A collection of websites and blogs with stunning design inspiration.
+-   [Watercolor Techniques](#) - A guide to different watercolor techniques for beginners and advanced artists.
+-   [Color Theory](#) - A comprehensive guide to color theory and how to use it in your designs.
+-   [Design Inspiration](#) - A collection of websites and blogs with stunning design inspiration.
 
 ## Contact Us
 

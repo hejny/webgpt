@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The font that would be best fitting for the website with a focus on spirituality and personal growth is "Montserrat".-->
+<!--font:The font that would be best fitting for the website with a focus on spirituality and personal growth is Montserrat.-->
 
 # Journey to Inner Peace
 

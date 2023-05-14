@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of overlapping circles in bright colors for a business or marketing website"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our business and marketing website, where we believe in making a bold statement with every aspect of your brand. That's why we've chosen this stunning wallpaper featuring overlapping circles in bright colors to represent our commitment to creativity and innovation.
 

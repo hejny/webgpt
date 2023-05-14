@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of a desert landscape at night, with the stars visible in the sky above."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a desert landscape at night, with the stars visible in the sky above. This mesmerizing photograph captures the beauty and mystery of the desert at night, with its vast expanse and endless starry skies.
 

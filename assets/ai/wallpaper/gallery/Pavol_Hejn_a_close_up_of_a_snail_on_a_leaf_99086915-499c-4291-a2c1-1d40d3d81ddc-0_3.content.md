@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Garden Snail Wallpaper for Nature Lovers
 
@@ -30,10 +30,10 @@ Garden snails, also known as Helix aspersa, are one of the most common species o
 
 By using our garden snail wallpaper, you can enjoy the following benefits:
 
-- Bring a piece of nature into your digital space
-- Create a calming and peaceful atmosphere
-- Add a unique and interesting touch to your device
-- Show your appreciation for the beauty of small creatures
+-   Bring a piece of nature into your digital space
+-   Create a calming and peaceful atmosphere
+-   Add a unique and interesting touch to your device
+-   Show your appreciation for the beauty of small creatures
 
 ## User Stories
 
@@ -53,9 +53,9 @@ To download our garden snail wallpaper, simply right-click on the image and sele
 
 If you're interested in learning more about garden snails, here are some resources to check out:
 
-- [National Geographic](https://www.nationalgeographic.com/animals/invertebrates/group/garden-snails/)
-- [Gardening Know How](https://www.gardeningknowhow.com/plant-problems/pests/insects/getting-rid-of-garden-snails.htm)
-- [The Spruce Pets](https://www.thesprucepets.com/pet-snails-1238325)
+-   [National Geographic](https://www.nationalgeographic.com/animals/invertebrates/group/garden-snails/)
+-   [Gardening Know How](https://www.gardeningknowhow.com/plant-problems/pests/insects/getting-rid-of-garden-snails.htm)
+-   [The Spruce Pets](https://www.thesprucepets.com/pet-snails-1238325)
 
 ## Contact Us
 

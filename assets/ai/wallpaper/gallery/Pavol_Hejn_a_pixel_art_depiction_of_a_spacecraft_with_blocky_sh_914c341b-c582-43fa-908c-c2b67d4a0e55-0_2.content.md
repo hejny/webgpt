@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Pixel Art Spacecraft Wallpaper
 
@@ -20,10 +20,10 @@ Welcome to our website featuring a pixel art depiction of a spacecraft. This wal
 
 ## Features
 
-- Pixel art style
-- Depiction of a spacecraft
-- Limited color palette
-- Playful and nostalgic feel
+-   Pixel art style
+-   Depiction of a spacecraft
+-   Limited color palette
+-   Playful and nostalgic feel
 
 ## Download
 

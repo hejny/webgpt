@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet.
 

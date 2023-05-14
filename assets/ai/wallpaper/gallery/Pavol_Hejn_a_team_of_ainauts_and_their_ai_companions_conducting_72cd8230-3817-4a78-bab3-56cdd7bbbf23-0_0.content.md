@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet. This image captures the imagination of what could be possible with advanced artificial intelligence and space exploration.
 

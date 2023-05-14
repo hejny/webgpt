@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website, where we bring you the most stunning and mind-bending wallpapers that will transport you to worlds beyond your imagination. Our latest addition is a wallpaper that features a team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.
 

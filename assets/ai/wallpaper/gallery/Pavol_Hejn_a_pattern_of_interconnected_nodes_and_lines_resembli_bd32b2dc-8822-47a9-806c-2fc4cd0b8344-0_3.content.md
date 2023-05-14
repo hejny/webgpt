@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A pattern of interconnected nodes and lines resembling a neural network"
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a unique wallpaper design inspired by the intricate network of neurons in the human brain. This pattern features interconnected nodes and lines that mimic the complex web of connections found within our own minds.
 

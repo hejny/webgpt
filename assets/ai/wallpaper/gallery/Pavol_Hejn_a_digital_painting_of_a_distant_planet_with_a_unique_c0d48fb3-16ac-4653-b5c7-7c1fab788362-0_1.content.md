@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Discover the Wonders of the Cosmos with Our Unique Planet Wallpaper
 
@@ -26,9 +26,9 @@ If you're looking for a stunning wallpaper that will transport you to another wo
 
 Our planet wallpaper is more than just a pretty picture. Here are some of the features that make it stand out:
 
-- **High-quality resolution:** Our wallpaper is available in a range of resolutions, so you can choose the one that best fits your screen size.
-- **Realistic details:** Our digital painting is so detailed that you'll feel like you're actually standing on the surface of the planet.
-- **Unique design:** Unlike other planet wallpapers, ours features a truly unique planet with an atmosphere and terrain that you won't find anywhere else.
+-   **High-quality resolution:** Our wallpaper is available in a range of resolutions, so you can choose the one that best fits your screen size.
+-   **Realistic details:** Our digital painting is so detailed that you'll feel like you're actually standing on the surface of the planet.
+-   **Unique design:** Unlike other planet wallpapers, ours features a truly unique planet with an atmosphere and terrain that you won't find anywhere else.
 
 ## User Stories
 
@@ -44,9 +44,9 @@ Here are some stories from our satisfied customers who have used our planet wall
 
 If you're interested in learning more about the science behind our planet wallpaper, here are some resources you might find helpful:
 
-- [NASA's Exoplanet Exploration website](#)
-- [National Geographic's article on exoplanets](#)
-- [The Planetary Society's guide to exoplanets](#)
+-   [NASA's Exoplanet Exploration website](#)
+-   [National Geographic's article on exoplanets](#)
+-   [The Planetary Society's guide to exoplanets](#)
 
 ## Contact Us
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that best fits the website is "Open Sans".-->
+<!--font:The font that best fits the website is Open Sans.-->
 
 # Sunflower Fields: A Haven for Gardeners and Nature Lovers
 
@@ -30,10 +30,10 @@ Our homepage features a bright and cheerful image of a sunflower field, which pe
 
 Whether you're a seasoned gardener or just starting out, our website has something for everyone. Here are some of the resources you can expect to find:
 
-- **Gardening Tips:** From soil preparation to pest control, we offer practical advice to help you grow healthy and vibrant plants.
-- **Plant Care Guides:** We have comprehensive guides on various types of plants, including sunflowers, that cover everything from planting to pruning.
-- **DIY Projects:** Get creative with our DIY projects that will add a personal touch to your garden.
-- **User Stories:** Read inspiring stories from fellow gardeners who have transformed their outdoor spaces into beautiful havens.
+-   **Gardening Tips:** From soil preparation to pest control, we offer practical advice to help you grow healthy and vibrant plants.
+-   **Plant Care Guides:** We have comprehensive guides on various types of plants, including sunflowers, that cover everything from planting to pruning.
+-   **DIY Projects:** Get creative with our DIY projects that will add a personal touch to your garden.
+-   **User Stories:** Read inspiring stories from fellow gardeners who have transformed their outdoor spaces into beautiful havens.
 
 ## Join Our Community
 
@@ -45,5 +45,5 @@ We love hearing from our readers! If you have any questions, comments, or sugges
 
 ## References
 
-- National Sunflower Association. (n.d.). Benefits of Sunflowers. Retrieved from https://www.sunflowernsa.com/all-about/sunflower-benefits/
-- Royal Horticultural Society. (2021). Sunflower. Retrieved from https://www.rhs.org.uk/plants/24902/helianthus-annuus/details
+-   National Sunflower Association. (n.d.). Benefits of Sunflowers. Retrieved from https://www.sunflowernsa.com/all-about/sunflower-benefits/
+-   Royal Horticultural Society. (2021). Sunflower. Retrieved from https://www.rhs.org.uk/plants/24902/helianthus-annuus/details

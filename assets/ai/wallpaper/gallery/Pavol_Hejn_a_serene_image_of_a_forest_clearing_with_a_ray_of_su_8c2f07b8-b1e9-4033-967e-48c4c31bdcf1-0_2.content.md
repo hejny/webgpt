@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Serenity Now
 
-Welcome to our spiritual and mindfulness website, where we strive to provide a peaceful and calming experience for all who visit. 
+Welcome to our spiritual and mindfulness website, where we strive to provide a peaceful and calming experience for all who visit.
 
 ## Forest Clearing Wallpaper
 
@@ -32,10 +32,10 @@ At Serenity Now, we believe in the power of mindfulness and meditation to promot
 
 We offer a variety of services to support your mindfulness journey, including:
 
-- Guided meditations
-- Mindfulness courses
-- Yoga classes
-- Personal coaching
+-   Guided meditations
+-   Mindfulness courses
+-   Yoga classes
+-   Personal coaching
 
 ## Get Started
 

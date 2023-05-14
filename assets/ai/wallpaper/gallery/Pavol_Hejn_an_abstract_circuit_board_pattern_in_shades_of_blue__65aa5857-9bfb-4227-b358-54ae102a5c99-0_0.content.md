@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Circuit Board Wallpaper
 
@@ -20,17 +20,17 @@ Welcome to our website featuring an abstract circuit board pattern in shades of 
 
 ## Features
 
-- Abstract circuit board pattern
-- Shades of blue and silver
-- High-quality digital print
-- Easy to install and remove
+-   Abstract circuit board pattern
+-   Shades of blue and silver
+-   High-quality digital print
+-   Easy to install and remove
 
 ## Specifications
 
-- Material: Non-woven fabric
-- Roll size: 53cm x 10m
-- Pattern repeat: 53cm
-- Coverage: 5.3sqm per roll
+-   Material: Non-woven fabric
+-   Roll size: 53cm x 10m
+-   Pattern repeat: 53cm
+-   Coverage: 5.3sqm per roll
 
 ## Installation
 

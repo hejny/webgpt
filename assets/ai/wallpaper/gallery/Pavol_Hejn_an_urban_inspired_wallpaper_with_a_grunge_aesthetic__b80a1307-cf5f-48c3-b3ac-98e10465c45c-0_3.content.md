@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An urban-inspired wallpaper with a grunge aesthetic, featuring a neon-lit cityscape with futuristic elements such as holographic billboards."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Introducing our latest addition to the wallpaper collection - an urban-inspired design with a grunge aesthetic that will transform any room into a futuristic cityscape. This wallpaper features a stunning neon-lit cityscape with towering skyscrapers and holographic billboards that add a touch of sci-fi to your walls.
 

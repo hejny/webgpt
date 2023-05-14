@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning digital painting of a spaceship approaching an alien planet. This captivating wallpaper depicts a scene of adventure and exploration, as the spacecraft navigates through the vast expanse of space towards a mysterious new world.
 

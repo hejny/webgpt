@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Tech-inspired Abstract Wallpaper
 
@@ -20,16 +20,16 @@ This wallpaper features a repeating pattern of abstract icons and symbols common
 
 ## Features
 
-- High-quality digital print
-- Repeatable pattern for easy installation
-- Ideal for home or office decor
-- Adds a modern touch to any space
+-   High-quality digital print
+-   Repeatable pattern for easy installation
+-   Ideal for home or office decor
+-   Adds a modern touch to any space
 
 ## Specifications
 
-- Dimensions: 1920 x 1080 pixels
-- Format: JPEG
-- File size: 1.5 MB
+-   Dimensions: 1920 x 1080 pixels
+-   Format: JPEG
+-   File size: 1.5 MB
 
 ## Installation
 

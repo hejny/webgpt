@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 # Spiderweb Wallpaper for Your Desktop
 
@@ -26,10 +26,10 @@ Transform your computer screen into a stunning work of art with our spiderweb wa
 
 Our spiderweb wallpaper is more than just a pretty picture. It's designed to enhance your desktop experience in several ways:
 
-- **Aesthetically pleasing:** The detailed spiderweb and sparkling dew drops create a visually captivating image that will impress anyone who sees it.
-- **Calming effect:** Studies show that nature-themed wallpapers can have a calming effect on people, reducing stress and anxiety levels.
-- **High-quality image:** Our wallpaper is available in high resolution, ensuring that every detail of the spiderweb is visible on your screen.
-- **Easy to install:** Installing our wallpaper is quick and easy, and we provide step-by-step instructions to guide you through the process.
+-   **Aesthetically pleasing:** The detailed spiderweb and sparkling dew drops create a visually captivating image that will impress anyone who sees it.
+-   **Calming effect:** Studies show that nature-themed wallpapers can have a calming effect on people, reducing stress and anxiety levels.
+-   **High-quality image:** Our wallpaper is available in high resolution, ensuring that every detail of the spiderweb is visible on your screen.
+-   **Easy to install:** Installing our wallpaper is quick and easy, and we provide step-by-step instructions to guide you through the process.
 
 ## User Stories
 
@@ -53,7 +53,7 @@ Here are some stories from our satisfied customers who have installed our spider
 
 ## References
 
-- [The Benefits of Nature-Themed Wallpapers](https://www.psychologytoday.com/us/blog/urban-mindfulness/201811/the-benefits-nature-themed-wallpapers)
+-   [The Benefits of Nature-Themed Wallpapers](https://www.psychologytoday.com/us/blog/urban-mindfulness/201811/the-benefits-nature-themed-wallpapers)
 
 ## Contact Us
 

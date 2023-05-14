@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring an abstract illustration of a dark and futuristic cityscape, with glowing lights and skyscrapers."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Transform your space with our stunning wallpaper featuring an abstract illustration of a dark and futuristic cityscape. The intricate details of the skyscrapers and glowing lights create a mesmerizing effect that will transport you to a world of imagination.
 

@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "An abstract image of waves crashing on the beach for a vacation or travel website"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our vacation and travel website, where we bring you the best of the world's beaches. Our latest addition is a stunning wallpaper featuring an abstract image of waves crashing on the beach.
 

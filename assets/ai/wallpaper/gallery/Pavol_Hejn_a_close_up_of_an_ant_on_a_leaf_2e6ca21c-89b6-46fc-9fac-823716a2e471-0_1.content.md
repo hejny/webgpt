@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A close-up of an ant on a leaf"
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Welcome to our website featuring a stunning wallpaper of a close-up of an ant on a leaf. This mesmerizing image captures the intricate details of nature, showcasing the beauty and complexity of even the smallest creatures.
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # DataViz Wallpaper - Minimalist and Modern Design
 
@@ -30,9 +30,9 @@ Our wallpaper features a beautiful graph of data visualization that is both info
 
 Here are some user stories from satisfied customers who have used our wallpaper:
 
-- "I love the minimalist design of this wallpaper. It's perfect for my work computer and helps me stay focused on my tasks."
-- "The colors in this wallpaper are so soothing. It's like having a little piece of art on my phone."
-- "I'm a data analyst, and this wallpaper is perfect for inspiring me when I'm feeling stuck."
+-   "I love the minimalist design of this wallpaper. It's perfect for my work computer and helps me stay focused on my tasks."
+-   "The colors in this wallpaper are so soothing. It's like having a little piece of art on my phone."
+-   "I'm a data analyst, and this wallpaper is perfect for inspiring me when I'm feeling stuck."
 
 ## How to Download
 
@@ -42,9 +42,9 @@ Downloading our wallpaper is easy! Simply click the download button below and sa
 
 If you're interested in learning more about data visualization, here are some great resources to check out:
 
-- [Data Visualization Society](#)
-- [FlowingData](#)
-- [Information is Beautiful](#)
+-   [Data Visualization Society](#)
+-   [FlowingData](#)
+-   [Information is Beautiful](#)
 
 ## Contact Us
 

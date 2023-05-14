@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Launch Wallpaper - Blast Off to New Heights
 
@@ -40,26 +40,26 @@ Here are some examples of how our website has impacted people's lives:
 
 We offer a wide range of content on our website, including:
 
-- News articles about the latest space discoveries and missions
-- Educational resources for students and teachers
-- Stunning images and videos of space phenomena
-- Interviews with experts in the field of space exploration
-- Opinion pieces and editorials about the future of space travel
+-   News articles about the latest space discoveries and missions
+-   Educational resources for students and teachers
+-   Stunning images and videos of space phenomena
+-   Interviews with experts in the field of space exploration
+-   Opinion pieces and editorials about the future of space travel
 
 ## References
 
 If you're interested in learning more about space exploration, we recommend checking out these resources:
 
-- NASA's website: #nasa
-- Space.com: #spacecom
-- The Planetary Society: #planetarysociety
+-   NASA's website: #nasa
+-   Space.com: #spacecom
+-   The Planetary Society: #planetarysociety
 
 ## Contact Us
 
 If you have any questions or comments about our website, please don't hesitate to reach out to us. You can contact us via email at info@spacelaunch.com or follow us on social media:
 
-- Twitter: #spacelaunch
-- Facebook: #spacelaunchfb
-- Instagram: #spacelaunchig
+-   Twitter: #spacelaunch
+-   Facebook: #spacelaunchfb
+-   Instagram: #spacelaunchig
 
 Thank you for visiting our site, and we hope you enjoy the space launch wallpaper as much as we do!

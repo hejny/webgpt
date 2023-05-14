@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The "Montserrat" font would be a great fit for the website.-->
+<!--font:The Montserrat font would be a great fit for the website.-->
 
 # Sunflower Fields: A Haven for Nature Lovers
 
@@ -34,11 +34,11 @@ At Sunflower Fields, we are passionate about promoting sustainable and eco-frien
 
 Our website offers a wealth of resources and information on topics such as:
 
-- Sustainable gardening practices
-- Native plants and their benefits
-- Composting and soil health
-- Wildlife-friendly landscaping
-- Organic pest control
+-   Sustainable gardening practices
+-   Native plants and their benefits
+-   Composting and soil health
+-   Wildlife-friendly landscaping
+-   Organic pest control
 
 ## User Stories
 
@@ -52,9 +52,9 @@ Here are some examples of how our website has helped people connect with nature 
 
 If you're interested in learning more about sustainable gardening and landscaping, we recommend checking out the following resources:
 
-- [The Sustainable Gardening Library](#)
-- [National Wildlife Federation](#)
-- [The Xerces Society](#)
+-   [The Sustainable Gardening Library](#)
+-   [National Wildlife Federation](#)
+-   [The Xerces Society](#)
 
 ## Contact Us
 

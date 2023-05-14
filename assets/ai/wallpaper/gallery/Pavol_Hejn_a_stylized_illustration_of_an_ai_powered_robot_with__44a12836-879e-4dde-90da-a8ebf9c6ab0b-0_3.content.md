@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A stylized illustration of an AI-powered robot, with sleek and modern graphics and a minimalist color scheme."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of an AI-powered robot! This stylized illustration showcases the cutting-edge technology and sleek design that define the modern era. With its minimalist color scheme and clean graphics, this wallpaper is perfect for those who appreciate both form and function.
 

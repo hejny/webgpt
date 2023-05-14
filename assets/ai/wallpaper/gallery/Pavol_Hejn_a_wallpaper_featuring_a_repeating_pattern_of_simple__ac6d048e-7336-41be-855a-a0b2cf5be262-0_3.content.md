@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Introducing our latest wallpaper design - a stunning and unique pattern featuring simple equations and formulas arranged in a minimalist and modern style. This wallpaper is perfect for anyone who loves math, science, or just appreciates clean and elegant design.
 

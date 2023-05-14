@@ -2,9 +2,9 @@
 Write me content for website with wallpaper "AInauts and their AI companions working together in a massive, zero-gravity space station."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
-Welcome to our website featuring a stunning wallpaper of AInauts and their AI companions working together in a massive, zero-gravity space station. 
+Welcome to our website featuring a stunning wallpaper of AInauts and their AI companions working together in a massive, zero-gravity space station.
 
 The image captures the essence of collaboration between humans and artificial intelligence in an environment that is both awe-inspiring and challenging. The AInauts are shown working on various tasks, from conducting scientific experiments to repairing equipment, while their AI companions assist them with their expertise and precision.
 

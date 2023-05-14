@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A photograph of a mountain range on another planet, with the bright sun shining through the peaks."
 -->
 
-<!--font:Poppins.-->
+<!--font:Poppins-->
 
 Welcome to our website featuring a stunning wallpaper of a mountain range on another planet. This breathtaking image captures the beauty and majesty of a distant world, with towering peaks that seem to stretch up towards the bright sun shining through them.
 

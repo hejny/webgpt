@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Discover the Wonders of the Universe with Our Telescope Wallpaper
 
@@ -28,9 +28,9 @@ With our telescope wallpaper, you can explore the wonders of the universe withou
 
 ## Features
 
-- High-quality image resolution
-- Clean lines and simple shapes
-- Easy to install on any desktop or laptop computer
+-   High-quality image resolution
+-   Clean lines and simple shapes
+-   Easy to install on any desktop or laptop computer
 
 ## User Stories
 
@@ -42,9 +42,9 @@ With our telescope wallpaper, you can explore the wonders of the universe withou
 
 Want to learn more about telescopes and astronomy? Check out these great resources:
 
-- [NASA](#nasa)
-- [Sky & Telescope Magazine](#sky-telescope-magazine)
-- [Astronomy.com](#astronomy-com)
+-   [NASA](#nasa)
+-   [Sky & Telescope Magazine](#sky-telescope-magazine)
+-   [Astronomy.com](#astronomy-com)
 
 ## Contact Us
 
@@ -53,10 +53,13 @@ Have questions about our telescope wallpaper or need help with installation? Con
 ---
 
 ###### NASA
+
 The National Aeronautics and Space Administration (NASA) is an independent agency of the U.S. federal government responsible for the civilian space program, as well as aeronautics and space research.
 
 ###### Sky & Telescope Magazine
+
 Sky & Telescope is a monthly American magazine covering all aspects of amateur astronomy, including the latest news on astronomical discoveries, equipment, and techniques.
 
 ###### Astronomy.com
+
 Astronomy.com is a website dedicated to providing information and resources for amateur astronomers. It features articles, videos, and forums on a wide range of topics related to astronomy and space exploration.

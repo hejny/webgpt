@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Explore the Wonders of Nature with Our Travel Website
 
@@ -34,10 +34,10 @@ At our travel website, we provide you with all the resources you need to plan yo
 
 Here are some of the things you can expect from our website:
 
-- Detailed destination guides that provide you with information about the best places to visit, things to do, and where to stay.
-- Travel tips that will help you save money, stay safe, and make the most of your trip.
-- User stories that give you a glimpse into the experiences of other travelers and inspire you to create your own adventure.
-- References to useful websites, books, and other resources that will help you plan your trip.
+-   Detailed destination guides that provide you with information about the best places to visit, things to do, and where to stay.
+-   Travel tips that will help you save money, stay safe, and make the most of your trip.
+-   User stories that give you a glimpse into the experiences of other travelers and inspire you to create your own adventure.
+-   References to useful websites, books, and other resources that will help you plan your trip.
 
 ## Contact Us
 

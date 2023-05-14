@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A minimalist graphic of a futuristic cityscape, with glowing neon lights and a dark and moody color scheme."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a minimalist graphic of a futuristic cityscape. This wallpaper captures the essence of a modern metropolis with its sleek and sophisticated design.
 

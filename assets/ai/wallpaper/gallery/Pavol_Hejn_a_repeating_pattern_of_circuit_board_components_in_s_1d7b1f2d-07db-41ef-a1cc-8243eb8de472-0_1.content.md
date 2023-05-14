@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Circuit Board Wallpaper for Tech Enthusiasts
 
@@ -30,9 +30,9 @@ Our circuit board wallpaper is not only visually striking but also high-quality 
 
 Here are some examples of how our customers have used our circuit board wallpaper:
 
-- "I installed this wallpaper in my home office, and it has completely transformed the space. It gives me a sense of motivation and inspiration whenever I look at it."
-- "As a tech enthusiast, I was looking for a way to incorporate my love of technology into my home decor. This wallpaper was the perfect solution!"
-- "I work in a tech startup, and we recently redecorated our office space. This wallpaper was the perfect addition to our new, modern aesthetic."
+-   "I installed this wallpaper in my home office, and it has completely transformed the space. It gives me a sense of motivation and inspiration whenever I look at it."
+-   "As a tech enthusiast, I was looking for a way to incorporate my love of technology into my home decor. This wallpaper was the perfect solution!"
+-   "I work in a tech startup, and we recently redecorated our office space. This wallpaper was the perfect addition to our new, modern aesthetic."
 
 ## Installation and Care
 
@@ -42,16 +42,16 @@ Installing our circuit board wallpaper is easy and straightforward. Simply follo
 
 If you're interested in learning more about circuit boards and electronics, here are some resources to check out:
 
-- [How Stuff Works: How Circuit Boards Work](#)
-- [Electronics Tutorials](#)
-- [Adafruit Industries: Learn Electronics](#)
+-   [How Stuff Works: How Circuit Boards Work](#)
+-   [Electronics Tutorials](#)
+-   [Adafruit Industries: Learn Electronics](#)
 
 ## Contact Us
 
 If you have any questions or concerns about our circuit board wallpaper, please don't hesitate to contact us. We're always happy to help and provide support to our customers.
 
-- Phone: 555-555-5555
-- Email: info@circuits.com
-- Address: 123 Main St, Anytown USA
+-   Phone: 555-555-5555
+-   Email: info@circuits.com
+-   Address: 123 Main St, Anytown USA
 
 Thank you for considering our circuit board wallpaper for your home or office. We hope you love it as much as we do!

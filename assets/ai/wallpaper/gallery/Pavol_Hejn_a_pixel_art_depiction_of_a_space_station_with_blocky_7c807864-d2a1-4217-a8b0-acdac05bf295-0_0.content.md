@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning pixel art depiction of a space station! This wallpaper is the perfect blend of retro and futuristic, with its blocky shapes and limited color palette creating a unique visual experience.
 

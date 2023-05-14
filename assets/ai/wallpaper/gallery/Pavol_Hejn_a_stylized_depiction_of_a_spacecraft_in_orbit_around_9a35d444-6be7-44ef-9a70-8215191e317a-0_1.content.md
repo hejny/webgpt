@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Space Exploration Wallpaper
 
@@ -30,21 +30,21 @@ Our space exploration wallpaper features a stylized depiction of a spacecraft in
 
 Here are some user stories from people who have used our space exploration wallpaper:
 
-- "I'm a big fan of sci-fi movies and TV shows, so when I saw this wallpaper, I knew I had to have it. It looks amazing on my desktop, and I love how it makes me feel like I'm exploring the galaxy."
-- "I work in a boring office, but having this wallpaper on my computer screen makes me feel like I'm on an adventure. It's a great way to escape for a few minutes during the day."
-- "I'm studying astrophysics in college, and this wallpaper is the perfect inspiration for me. It reminds me why I love space and why I'm working so hard to learn more about it."
+-   "I'm a big fan of sci-fi movies and TV shows, so when I saw this wallpaper, I knew I had to have it. It looks amazing on my desktop, and I love how it makes me feel like I'm exploring the galaxy."
+-   "I work in a boring office, but having this wallpaper on my computer screen makes me feel like I'm on an adventure. It's a great way to escape for a few minutes during the day."
+-   "I'm studying astrophysics in college, and this wallpaper is the perfect inspiration for me. It reminds me why I love space and why I'm working so hard to learn more about it."
 
 ## How to Download
 
-To download our space exploration wallpaper, simply click the "Download" button below. The image is available in multiple sizes, so you can choose the one that best fits your device. 
+To download our space exploration wallpaper, simply click the "Download" button below. The image is available in multiple sizes, so you can choose the one that best fits your device.
 
 ## References
 
 If you're interested in learning more about space exploration, here are some resources we recommend:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 

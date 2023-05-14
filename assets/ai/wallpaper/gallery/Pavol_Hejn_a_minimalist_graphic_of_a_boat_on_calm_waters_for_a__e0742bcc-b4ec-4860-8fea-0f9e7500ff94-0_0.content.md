@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 # Welcome to AquaSports
 
@@ -28,13 +28,13 @@ At AquaSports, we are passionate about water sports and boating. Our mission is 
 
 We offer a wide range of products for all your water sports needs, including:
 
-- Boats
-- Kayaks
-- Paddleboards
-- Wakeboards
-- Water skis
-- Life jackets
-- And much more!
+-   Boats
+-   Kayaks
+-   Paddleboards
+-   Wakeboards
+-   Water skis
+-   Life jackets
+-   And much more!
 
 All of our products are carefully selected to ensure that they meet our high standards for quality and performance. We work with the best brands in the industry to bring you the latest and greatest in water sports gear.
 
@@ -50,9 +50,9 @@ Here are some stories from our satisfied customers:
 
 In addition to our products, we also offer a variety of services to help you get the most out of your water sports experience. These include:
 
-- Rentals: If you're not ready to commit to buying your own equipment, we offer rentals for boats, kayaks, paddleboards, and more.
-- Repairs: If your equipment needs repairs or maintenance, our team of experts can help get you back on the water as quickly as possible.
-- Lessons: Whether you're a beginner or an experienced pro, we offer lessons for all skill levels to help you improve your technique and get the most out of your time on the water.
+-   Rentals: If you're not ready to commit to buying your own equipment, we offer rentals for boats, kayaks, paddleboards, and more.
+-   Repairs: If your equipment needs repairs or maintenance, our team of experts can help get you back on the water as quickly as possible.
+-   Lessons: Whether you're a beginner or an experienced pro, we offer lessons for all skill levels to help you improve your technique and get the most out of your time on the water.
 
 ## Contact Us
 

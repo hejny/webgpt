@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops."
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 Introducing our sleek and modern digital devices wallpaper, featuring a repeating pattern of some of the most popular gadgets of our time. With this wallpaper, you can bring a touch of technology to any room in your home or office.
 

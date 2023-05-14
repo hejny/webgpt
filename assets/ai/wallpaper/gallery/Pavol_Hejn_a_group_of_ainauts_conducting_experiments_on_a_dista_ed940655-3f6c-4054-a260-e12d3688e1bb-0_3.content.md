@@ -2,7 +2,7 @@
 Write me content for website with wallpaper "A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
 -->
 
-<!--font:"Montserrat"-->
+<!--font:Montserrat-->
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant planet, with a red sun setting behind them. This breathtaking image captures the essence of exploration and discovery that drives us as a species.
 

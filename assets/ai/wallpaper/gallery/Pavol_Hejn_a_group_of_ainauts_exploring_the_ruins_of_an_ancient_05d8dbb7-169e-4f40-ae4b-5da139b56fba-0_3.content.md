@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Exploring the Mysteries of an Ancient Civilization
 
@@ -42,9 +42,9 @@ We've had the privilege of working with some amazing individuals who share our p
 
 If you're interested in learning more about this ancient civilization, we've compiled a list of resources that we've found helpful:
 
-- *The Lost Civilization: Uncovering the Secrets of a Forgotten Society* by Dr. Jane Smith
-- *Ancient Technology and Its Modern Applications* by Dr. John Doe
-- *Exploring the Ruins: A Photographic Journey* by National Geographic
+-   _The Lost Civilization: Uncovering the Secrets of a Forgotten Society_ by Dr. Jane Smith
+-   _Ancient Technology and Its Modern Applications_ by Dr. John Doe
+-   _Exploring the Ruins: A Photographic Journey_ by National Geographic
 
 ## Contact Us
 

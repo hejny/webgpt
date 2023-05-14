@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Open Sans"-->
+<!--font:Open Sans-->
 
 # Sustainable Living Tips: Make a Positive Impact on the Environment
 
@@ -30,22 +30,22 @@ Climate change, pollution, and resource depletion are just some of the many envi
 
 We believe that sustainable living should be accessible to everyone. Here are some easy ways to get started:
 
-- Reduce your energy consumption by turning off lights and unplugging electronics when not in use.
-- Cut down on water usage by fixing leaks and taking shorter showers.
-- Choose reusable products like cloth bags, water bottles, and food containers.
-- Eat less meat and dairy, or try going vegetarian or vegan.
-- Support local farmers and businesses to reduce the carbon footprint of transportation.
-- Use public transportation, bike, or walk instead of driving alone.
-- Recycle and compost as much as possible.
+-   Reduce your energy consumption by turning off lights and unplugging electronics when not in use.
+-   Cut down on water usage by fixing leaks and taking shorter showers.
+-   Choose reusable products like cloth bags, water bottles, and food containers.
+-   Eat less meat and dairy, or try going vegetarian or vegan.
+-   Support local farmers and businesses to reduce the carbon footprint of transportation.
+-   Use public transportation, bike, or walk instead of driving alone.
+-   Recycle and compost as much as possible.
 
 ## Resources for Sustainable Living
 
 If you want to learn more about sustainable living, check out these resources:
 
-- [The Environmental Protection Agency](#) offers information on environmental topics and resources for individuals and businesses.
-- [The Sierra Club](#) is a grassroots environmental organization that advocates for conservation and sustainability.
-- [Greenpeace](#) is an international organization that campaigns for solutions to environmental issues.
-- [The Minimalists](#) offer tips and inspiration for simplifying your life and reducing your environmental impact.
+-   [The Environmental Protection Agency](#) offers information on environmental topics and resources for individuals and businesses.
+-   [The Sierra Club](#) is a grassroots environmental organization that advocates for conservation and sustainability.
+-   [Greenpeace](#) is an international organization that campaigns for solutions to environmental issues.
+-   [The Minimalists](#) offer tips and inspiration for simplifying your life and reducing your environmental impact.
 
 ## User Stories
 
