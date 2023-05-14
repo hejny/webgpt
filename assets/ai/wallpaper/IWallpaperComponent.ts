@@ -12,17 +12,13 @@ export interface IWallpaperComponent {
     metadata: IWallpaperMetadata /* <- TODO: This should be renamed to IWallpaperPrompt */;
     colorStats: IWallpaperColorStats;
     // TODO: shapeStats> IWallpaperShapeStats;
-    texts: IWallpaperTexts;
 
+    content: string /*_markdown*/;
     // TODO: isTile + some mechanism to add additional metadata
 }
 
 export type IWallpaperMetadata = IMidjourneyJob;
 export type IWallpaperColorStats = IImageColorStats;
-export interface IWallpaperTexts /* !!! Remove */ {
-    title: string /*_markdown*/;
-    content: string /*_markdown*/;
-}
 
 /**
  * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"

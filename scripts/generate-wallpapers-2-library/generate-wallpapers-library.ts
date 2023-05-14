@@ -143,7 +143,7 @@ async function generateWallpapersLibrary({ isCommited }: { isCommited: boolean }
             import { hydrateColorStats } from '../../../../src/utils/image/utils/hydrateColorStats';
             // import { Color } from '../../../../src/utils/color/Color';
             // import { IImageColorStats } from '../../../../src/utils/image/utils/IImageColorStats';
-            import { IWallpaperComponentProps, IWallpaperMetadata, IWallpaperTexts } from '../IWallpaperComponent';
+            import { IWallpaperComponentProps, IWallpaperMetadata } from '../IWallpaperComponent';
             import colorStats from '${colorStatsImportPath}'
             import content from '${contentImportPath}';
             import metadata from '${metadataImportPath}';
