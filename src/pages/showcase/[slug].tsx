@@ -1,29 +1,26 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
+import { PageProps } from '..';
+import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
-import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { AppHead } from '../../sections/00-AppHead/AppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
 import styles from '../../styles/common.module.css';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { skinFromWallpaper } from '../../utils/skinFromWallpaper';
+import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
 
-export default function ShowcasePage({ lang }: any) {
-    const wallpaper = useWallpaper();
-
+export default function ShowcasePage({ wallpapers }: PageProps) {
     return (
-        <>
+        <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
             <AppHead />
-            <SkinStyle skin={skinFromWallpaper(wallpaper)} />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
                 <header>
-                    <HeaderWallpaper {...{ wallpaper }} />
+                    <HeaderWallpaper />
                 </header>
                 <div className={styles.background}>
                     <TiledBackground />
@@ -36,7 +33,7 @@ export default function ShowcasePage({ lang }: any) {
                     <FooterSection />
                 </footer>
             </div>
-        </>
+        </WallpapersContext.Provider>
     );
 }
 
@@ -51,6 +48,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
+            wallpapers: await getWallpapers(),
         },
     };
 }

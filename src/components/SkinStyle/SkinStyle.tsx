@@ -1,14 +1,10 @@
-import { ISkin } from '../../utils/skinFromWallpaper';
-
-interface ISkinStyleProps {
-    skin: ISkin;
-}
+import { useSkin } from '../../utils/hooks/useSkin';
 
 /**
  * @@@
  */
-export function SkinStyle(props: ISkinStyleProps) {
-    const { skin } = props;
+export function SkinStyle() {
+    const skin = useSkin();
 
     return (
         <style>{`

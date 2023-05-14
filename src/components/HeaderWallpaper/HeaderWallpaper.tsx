@@ -1,21 +1,13 @@
 import Image from 'next/image';
-import { IWallpaper } from '../../../assets/ai/wallpaper/IWallpaper';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './HeaderWallpaper.module.css';
-
-interface IHeaderWallpaperProps {
-    wallpaper: IWallpaper;
-}
 
 /**
  * @@
  */
-export function HeaderWallpaper(props: IHeaderWallpaperProps) {
-    const {
-        wallpaper: { src, prompt, colorStats },
-    } = props;
-
-    // const {mainBackground} = skinFromWallpaper(Wallpaper);
+export function HeaderWallpaper() {
+    const { src, prompt, colorStats } = useWallpaper();
 
     const quality = 97;
     const width = 1920;

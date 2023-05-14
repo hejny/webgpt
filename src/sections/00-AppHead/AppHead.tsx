@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
 import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
+import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useSkin } from '../../utils/hooks/useSkin';
@@ -41,11 +42,8 @@ export function AppHead(props: AppHeadProps) {
                 <meta name="viewport" content="width=device-width" />
 
                 {/* Primary meta tags */}
-                <title>{wallpaper.texts.title}</title>
-                <meta
-                    name="description"
-                    content={removeMarkdownFormatting(removeMarkdownLinks(wallpaper.texts.content))}
-                />
+                <title>!!!</title>
+                <meta name="description" content={removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content))} />
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
                 <meta
                     name="theme-color"
@@ -58,7 +56,7 @@ export function AppHead(props: AppHeadProps) {
                 <meta property="og:description" content={description} />
                 <meta
                     property="og:image"
-                    content={wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                    content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
                 />
                 <meta property="og:url" content={homeUrl} />
                 <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
@@ -74,10 +72,11 @@ export function AppHead(props: AppHeadProps) {
                 <meta property="twitter:description" content={description} />
                 <meta
                     property="twitter:image"
-                    content={wallpaper.src.href /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                    content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
                 />
             </Head>
             <LanguagePicker />
+            <SkinStyle />
         </>
     );
 }

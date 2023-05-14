@@ -19,3 +19,7 @@ export default async function wallpapersHandler(
 
     response.status(200).json({ wallpapers });
 }
+
+/**
+ * TODO: !! This is unused - maybe delete it?
+ */
