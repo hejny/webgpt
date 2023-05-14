@@ -15,7 +15,9 @@ export function useWallpaper(): IWallpaper {
     const wallpapers = useContext(WallpapersContext);
     const router = useRouter();
 
-    const defaultWallpaper = hydrateWallpaper(wallpapers[0]); // !!!! ABlackAndWhiteOutlineOfAnAstronautExploring6cd3eee447af4316B49e3e9982df2b240_2_Image;
+    const defaultWallpaper = hydrateWallpaper(
+        wallpapers.find(({ id }) => id === '7e9b434d-59bc-4d69-a486-d7401d94f5e0'),
+    );
 
     if (wallpapers.length === 0) {
         throw new Error('Wallpapers are not loaded yet OR you have not provided wallpapers through WallpapersContext.');
