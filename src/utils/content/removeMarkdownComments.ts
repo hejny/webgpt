@@ -6,5 +6,5 @@
  */
 export function removeMarkdownComments(str: string): string {
     // Use regular expressions to remove Markdown comments from the string
-    return str.replace(/<!--(.*)-->/g, '');
+    return str.replace(/<!--(.*)-->/gs, '');
 }

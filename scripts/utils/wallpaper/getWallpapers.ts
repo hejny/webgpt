@@ -1,6 +1,7 @@
 import { readFile } from 'fs/promises';
 import glob from 'glob-promise';
 import { join } from 'path';
+import spaceTrim from 'spacetrim';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../assets/ai/wallpaper/IWallpaper';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { isFileExisting } from '../../utils/isFileExisting';
@@ -35,9 +36,10 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
         const colorStats = JSON.parse(await readFile(colorStatsPath, 'utf8')) as IWallpaperColorStats;
         let content = await readFile(contentPath, 'utf8');
 
-        // !!!! const font =
+        const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font ?? 'Unknown';
 
         content = removeMarkdownComments(content);
+        content = spaceTrim(content);
 
         const title =
             content.match(/^#\s*(?<title>.*)\s*$/m)?.groups?.title ??
@@ -54,7 +56,7 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
             colorStats,
             title,
             content,
-            font: 'Roboto' /* <- !!!! */,
+            font,
         });
     }
 
