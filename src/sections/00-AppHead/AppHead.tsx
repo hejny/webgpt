@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
-import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
 import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
@@ -11,7 +10,6 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
  * @@@
  */
 export function AppHead() {
-
     const wallpaper =
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
     const skin = useSkin();
@@ -62,7 +60,7 @@ export function AppHead() {
                     content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
                 />
             </Head>
-            <LanguagePicker />
+            {/* TODO: <LanguagePicker /> */}
             <SkinStyle />
         </>
     );
