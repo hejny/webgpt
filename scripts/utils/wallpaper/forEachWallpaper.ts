@@ -9,9 +9,9 @@ import { IWallpaperFiles } from './IWallpaperFiles';
  */
 export async function forEachWallpaper(options: {
     makeWork(wallpeperFiles: IWallpaperFiles): Promise<void>;
-    parallel: number;
+    parallelWorksCount: number;
 }): Promise<void> {
-    const { makeWork, parallel } = options;
+    const { makeWork, parallelWorksCount: parallel } = options;
 
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
@@ -24,14 +24,15 @@ export async function forEachWallpaper(options: {
 
     const workingOn = new Set<Promise<void>>();
 
-    for (const wallpapersMetadataPath of wallpapersMetadataPaths) {
+    for (const metadataPath of wallpapersMetadataPaths) {
         await forPlay();
 
-        console.info(chalk.grey(`${wallpapersMetadataPath.split('\\').join('/')}`));
+        console.info(chalk.grey(`${metadataPath.split('\\').join('/')}`));
 
-        const contentPath = wallpapersMetadataPath.replace(/\.json$/, '.content.md');
+        const contentPath = metadataPath.replace(/\.json$/, '.content.md');
+        const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.yaml');
 
-        const work = /* not await */ makeWork({ metadataPath: wallpapersMetadataPath, contentPath });
+        const work = /* not await */ makeWork({ metadataPath, contentPath, colorStatsPath });
         // [3] const work = forTime(0.0263 * 1000 * 60);
         workingOn.add(work);
 

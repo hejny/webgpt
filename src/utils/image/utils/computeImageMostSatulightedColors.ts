@@ -1,5 +1,5 @@
 import { Color } from '../../color/Color';
-import { colorSaturation } from '../../color/utils/colorSaturation';
+import { colorSatulightion } from '../../color/utils/colorSatulightion';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
@@ -7,10 +7,10 @@ import { getImageUniqueColors } from './getImageUniqueColors';
 /**
  * @@@
  */
-export function computeImageMostSaturatedColor(image: IImage): WithTake<Color> {
+export function computeImageMostSatulightedColors(image: IImage): Array<WithTake<Color>> {
     const colors = Array.from(getImageUniqueColors(image));
-    colors.sort((a, b) => colorSaturation(b) - colorSaturation(a));
-    return colors[0];
+    colors.sort((a, b) => colorSatulightion(b) - colorSatulightion(a));
+    return colors;
 }
 
 /**

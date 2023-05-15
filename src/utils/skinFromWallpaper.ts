@@ -66,6 +66,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
 }
 
 /**
+ * TODO: !! Use computeImagePalette
  *       - https://ai.hejny.org/showcase/5cec4e9b-6a09-46d7-be3f-342ad9cf9ed3 (white text)
  * TODO: Make footer dynamic from Wallpaper
  */

@@ -6,7 +6,7 @@ import { IImage } from '../IImage';
 /**
  * @@@
  */
-export function computeImageMostGroupedColor(image: IImage): WithTake<Color> {
+export function computeImageMostGroupedColors(image: IImage): Array<WithTake<Color>> {
     // Create a 2D array to keep track of visited pixels
     const visited = new Array(image.width).fill(null).map(() => new Array(image.height).fill(false));
 
@@ -53,5 +53,5 @@ export function computeImageMostGroupedColor(image: IImage): WithTake<Color> {
         throw new Error('Image has no pixels');
     }
 
-    return mostGroupedColor;
+    return [mostGroupedColor] /* <- TODO: !! List all (distant at least x) colors */;
 }

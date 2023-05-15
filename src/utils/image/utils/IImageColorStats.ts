@@ -5,40 +5,19 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
  * Define an interface for the image color statistics
  */
 export interface IImageColorStats extends IImageColorStatsRegion {
+    version: number;
+    // TODO: colorSpace:number
 
-
-(
-computeImagePalette:
-
-... mostSatulightedColors, darkestColor, lightestColor, ... most grouped, most frequent 
-
-
- + odfiltrovat všechny barvy, který jsou od sebe méně než nějakou vzdálenost
-
-)
-
-
-    // TODO: !!! Split all between topLine, topHalf,...
-    // !!! center: IImageColorStatsPart;
-    //top: IImageColorStatsPart;
-    //left: IImageColorStatsPart;
-    //right: IImageColorStatsPart;
-    bottom: IImageColorStatsRegion;
-    //topLeft: IImageColorStatsPart;
-    //topRight: IImageColorStatsPart;
-    //bottomLeft: IImageColorStatsPart;
-    //bottomRight: IImageColorStatsPart;
+    bottomHalf: IImageColorStatsRegion;
+    bottomThird: IImageColorStatsRegion;
+    bottomLine: IImageColorStatsRegion;
 }
 
 /**
  * Define an interface for the image color statistics for one particular region
  */
 export interface IImageColorStatsRegion {
-
-
-colorSpace:number 
-region: IRegion + pixel size 
-
+    // TODO: region: IRegion + pixel size
 
     /**
      * The average color of the image as a Color object
@@ -55,7 +34,7 @@ region: IRegion + pixel size
      */
     darkestColor: WithTake<Color>;
 
-/**
+    /**
      * The most saturation*lightness colors of the image as a Color object ...@@@!!!!
 
 
@@ -66,8 +45,17 @@ ty pak vybírám ty pak postupně beru od něj do nejméně avšak maximálně d
 
 
      */
-    mostSatulightedColors: Array<WithTake<Color>;
+    mostSatulightedColors: Array<WithTake<Color>>;
 
+    /**
+     * The most frequent color of the image as a Color object
+     */
+    mostFrequentColors: Array<WithTake<Color>>;
+
+    /**
+     * The most grouped color of the image as a Color object
+     */
+    mostGroupedColors: Array<WithTake<Color>>;
 
     /**
      * Colors that are nearest and furthest from white
@@ -88,16 +76,8 @@ ty pak vybírám ty pak postupně beru od něj do nejméně avšak maximálně d
      * Colors that are nearest and furthest from blue
      */
     minmaxBlue: [WithTake<Color>, WithTake<Color>];
-
-    /**
-     * The most frequent color of the image as a Color object
-     */
-    mostFrequentColor: Array<WithTake<Color>;
-
-    
-
-    /**
-     * The most grouped color of the image as a Color object
-     */
-    mostGroupedColor: Array<WithTake<Color>;
 }
+
+/**
+ * TODO: !! MinMax as interface as {min: Color, max: Color}
+ */

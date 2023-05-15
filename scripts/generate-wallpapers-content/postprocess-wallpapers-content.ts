@@ -46,11 +46,9 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
     const usedFonts = new Set<string>();
 
     await forEachWallpaper({
-        parallel,
+        parallelWorksCount: parallel,
         async makeWork({ metadataPath, contentPath }) {
-
-
-            // TODO: !! Require at least some structure 
+            // TODO: !! Require at least some structure
             // TODO: !! In title there should not be word "Wallpaper"
             // TODO: !! Multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
 

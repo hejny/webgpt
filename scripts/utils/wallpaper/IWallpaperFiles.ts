@@ -2,8 +2,8 @@
  * @@@
  */
 export interface IWallpaperFiles {
-    // !!! metadataFilePath, contentFilePath,...
+    // Prefix by file !!! metadataFilePath, contentFilePath,... - replace ACRY
     metadataPath: string;
-    // TODO: colorStatsPath: string;
+    colorStatsPath: string;
     contentPath: string;
 }

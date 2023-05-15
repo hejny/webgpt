@@ -5,7 +5,7 @@ import { IImage } from '../IImage';
 /**
  * @@@
  */
-export function computeImageMostFrequentColor(image: IImage): WithTake<Color> {
+export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Color>> {
     const colorCounts: Map<string, number> = new Map();
     let mostFrequentColor: WithTake<Color> | null = null;
     let maxCount = 0;
@@ -32,5 +32,5 @@ export function computeImageMostFrequentColor(image: IImage): WithTake<Color> {
         throw new Error('Image has no pixels');
     }
 
-    return mostFrequentColor;
+    return [mostFrequentColor] /* <- TODO: !! List all (distant at least x) colors */;
 }

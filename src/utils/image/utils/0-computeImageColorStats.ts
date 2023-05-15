@@ -6,20 +6,27 @@ import { computeImageAverageColor } from './computeImageAverageColor';
 import { computeImageDarkestColor } from './computeImageDarkestColor';
 import { computeImageLightestColor } from './computeImageLightestColor';
 import { computeImageMinmaxColors } from './computeImageMinmaxColors';
-import { computeImageMostFrequentColor } from './computeImageMostFrequentColor';
-import { computeImageMostGroupedColor } from './computeImageMostGroupedColor';
-import { computeImageMostSaturatedColor } from './computeImageMostSaturatedColor';
+import { computeImageMostFrequentColors } from './computeImageMostFrequentColors';
+import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
+import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
 
 /**
  * Compute the image color statistics
  */
 export function computeImageColorStats(image: IImage): IImageColorStats {
-    const bottomImage = image.crop(new Vector(0, image.height * 0.62), new Vector(image.width, image.height));
-
     return {
+        version: 5,
         ...computeWholeImageColorStats(image),
-        bottom: computeWholeImageColorStats(bottomImage),
+        bottomHalf: computeWholeImageColorStats(
+            image.crop(new Vector(0, image.height * (1 / 2)), new Vector(image.width, image.height)),
+        ),
+        bottomThird: computeWholeImageColorStats(
+            image.crop(new Vector(0, image.height * (2 / 3)), new Vector(image.width, image.height)),
+        ),
+        bottomLine: computeWholeImageColorStats(
+            image.crop(new Vector(0, image.height - 1), new Vector(image.width, image.height)),
+        ),
     };
 }
 
@@ -40,10 +47,9 @@ function computeWholeImageColorStats(image: IImage): IImageColorStatsRegion {
         minmaxGreen: computeImageMinmaxColors(image, Color.fromHex('#00FF00')),
         minmaxBlue: computeImageMinmaxColors(image, Color.fromHex('#0000FF')),
 
-        mostFrequentColor: computeImageMostFrequentColor(image),
-        mostSaturatedColor: computeImageMostSaturatedColor(image),
-        // NOT used - too slow> mostIsolatedColor: computeImageMostIsolatedColor(image),
-        mostGroupedColor: computeImageMostGroupedColor(image),
+        mostFrequentColors: computeImageMostFrequentColors(image),
+        mostSatulightedColors: computeImageMostSatulightedColors(image),
+        mostGroupedColors: computeImageMostGroupedColors(image),
     };
 }
 
