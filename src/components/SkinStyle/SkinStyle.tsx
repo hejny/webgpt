@@ -11,6 +11,7 @@ export function SkinStyle() {
             :root {
                 --normal-text-color: ${skin.normalTextColor.toHex()};
                 --highlighted-text-color: ${skin.highlightedTextColor.toHex()};
+                --highlighted-text-shaddow: ${skin.highlightedTextShaddow};
                 --footer-text-color: ${skin.footerTextColor.toHex()};
                 --main-background: ${skin.mainBackground};
                 --footer-background: ${skin.footerBackground}

@@ -15,6 +15,7 @@ import { withAlpha } from './color/operators/withAlpha';
 export interface ISkin {
     normalTextColor: Color;
     highlightedTextColor: Color;
+    highlightedTextShaddow: string;
     footerTextColor: Color;
     mainBackground: string;
     footerBackground: string;
@@ -26,12 +27,14 @@ export interface ISkin {
 export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     const { colorStats } = wallpaper;
 
-    const highlightedTextColor = colorStats.mostFrequentColor.then(textColor);
+    const highlightedTextColor = colorStats.mostSaturatedColor.then(textColor);
+    const highlightedTextShaddow = `0 0 30px ${highlightedTextColor.then(negative).toHex()}`;
     const normalTextColor = highlightedTextColor.then(mix(0.2, colorStats.mostFrequentColor));
 
-    const mainBackground = `linear-gradient(to bottom, ${colorStats.bottom.mostSaturatedColor
-        .then(withAlpha(1))
-        .toHex()}, ${colorStats.bottom.mostSaturatedColor.then(grayscale).then(withAlpha(0.5)).toHex()}),
+    const mainBackground = `linear-gradient(to bottom, ${colorStats.bottom.mostSaturatedColor.toHex()}, ${colorStats.bottom.mostSaturatedColor
+        .then(grayscale)
+        .then(withAlpha(0.5))
+        .toHex()}),
         url(/patterns/simple/grey.png)`;
 
     const footerTextColor = colorStats.darkestColor.then(negative);
@@ -44,6 +47,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     const skin: ISkin = {
         normalTextColor,
         highlightedTextColor,
+        highlightedTextShaddow,
         footerTextColor,
         mainBackground,
         footerBackground,
@@ -62,7 +66,6 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
 }
 
 /**
- * TODO: !!!! Light mode
  *       - https://ai.hejny.org/showcase/5cec4e9b-6a09-46d7-be3f-342ad9cf9ed3 (white text)
  * TODO: Make footer dynamic from Wallpaper
  */

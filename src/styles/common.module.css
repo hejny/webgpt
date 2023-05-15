@@ -77,6 +77,10 @@
     color: var(--highlighted-text-color);
 }
 
+.page h1 {
+    text-shadow: var(--highlighted-text-shaddow);
+}
+
 /*
 
 .page h1 {
