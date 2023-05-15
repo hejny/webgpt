@@ -9,12 +9,12 @@ import { readFile, writeFile } from 'fs/promises';
 import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
-import { IWallpaperMetadata } from '../../assets/ai/wallpaper/IWallpaper';
 import { OPENAI_API_KEY } from '../../config';
+import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
+import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { isFileExisting } from '../utils/isFileExisting';
-import { randomItem } from '../utils/randomItem';
 import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
 import { getWallpapersDir } from '../utils/wallpaper/getWallpapersDir';
 

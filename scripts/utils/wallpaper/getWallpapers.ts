@@ -1,8 +1,8 @@
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
-import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../assets/ai/wallpaper/IWallpaper';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
+import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
 

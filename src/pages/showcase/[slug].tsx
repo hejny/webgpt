@@ -1,6 +1,7 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
+import { DEFAULT_WALLPAPER_ID } from '../../../config';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
@@ -10,23 +11,27 @@ import { AppHead } from '../../sections/00-AppHead/AppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
 import styles from '../../styles/common.module.css';
-import { randomItem } from '../../utils/color/randomItem';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
+import { randomItem } from '../../utils/randomItem';
 
 export interface ShowcasePageProps {
     currentWallpaper: IWallpaper;
     randomWallpaper: IWallpaper;
+    defaultWallpaper: IWallpaper;
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
-    let { currentWallpaper, randomWallpaper } = props;
+    let { currentWallpaper, randomWallpaper, defaultWallpaper } = props;
     currentWallpaper = hydrateWallpaper(currentWallpaper);
     randomWallpaper = hydrateWallpaper(randomWallpaper);
+    defaultWallpaper = hydrateWallpaper(defaultWallpaper);
 
     return (
-        <WallpapersContext.Provider value={[currentWallpaper]} /* <- Is this the right place to be Provider in? */>
+        <WallpapersContext.Provider
+            value={[currentWallpaper, defaultWallpaper]} /* <- Is this the right place to be Provider in? */
+        >
             <AppHead />
 
             <div className={styles.page}>
@@ -67,6 +72,7 @@ export async function getStaticProps({
     const { slug } = params;
 
     const wallpapers = await getWallpapers();
+    const defaultWallpaper = wallpapers.find(({ id }) => id === DEFAULT_WALLPAPER_ID)!;
     const currentWallpaper = wallpapers.find(({ id }) => id === slug);
     const randomWallpaper = randomItem(
         ...wallpapers,
@@ -75,8 +81,10 @@ export async function getStaticProps({
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
+
             currentWallpaper,
             randomWallpaper,
+            defaultWallpaper,
         },
     };
 }

@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { IWallpaper } from '../../../assets/ai/wallpaper/IWallpaper';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
+import { IWallpaper } from '../../../src/utils/IWallpaper';
 
 const wallpapers: Array<IWallpaper> = [];
 

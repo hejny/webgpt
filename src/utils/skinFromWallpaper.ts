@@ -1,4 +1,4 @@
-import { IWallpaper } from '../../assets/ai/wallpaper/IWallpaper';
+import { IWallpaper } from '../../src/utils/IWallpaper';
 import { Color } from './color/Color';
 import { darken } from './color/operators/darken';
 import { textColor } from './color/operators/furthest';

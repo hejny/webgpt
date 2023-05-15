@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { forTime } from 'waitasecond';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
-import { randomItem } from '../../utils/color/randomItem';
+import { randomItem } from '../../utils/randomItem';
 import styles from './HandwrittenText.module.css';
 import { handwriteText } from './utils/handwriteText';
 

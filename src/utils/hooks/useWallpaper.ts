@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { createContext, useContext } from 'react';
-import { IWallpaper } from '../../../assets/ai/wallpaper/IWallpaper';
+import { IWallpaper } from '../../../src/utils/IWallpaper';
 import { DEFAULT_WALLPAPER_ID } from '../../../config';
 
 export const WallpapersContext = createContext<Array<IWallpaper>>([]);
@@ -14,7 +14,7 @@ export function useWallpaper(): IWallpaper {
     const wallpapers = useContext(WallpapersContext);
     const router = useRouter();
 
-    const defaultWallpaper = wallpapers.find(({ id }) => id === DEFAULT_WALLPAPER_ID);
+    const defaultWallpaper = wallpapers.find(({ id }) => id === DEFAULT_WALLPAPER_ID)!;
 
     if (wallpapers.length === 0) {
         throw new Error('Wallpapers are not loaded yet OR you have not provided wallpapers through WallpapersContext.');
