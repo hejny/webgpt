@@ -19,9 +19,19 @@ export function ShowcaseWelcomeSection() {
             </h1>
             */}
 
-            <div style={{ fontFamily: `'${wallpaper.font}', sans-serif` }}>
+            <div
+                style={{ fontFamily: `'${wallpaper.font}', sans-serif` }}
+                onClick={(event) => {
+                    (event.target as HTMLDivElement).setAttribute('contenteditable', 'true');
+                    // TODO: !!! Also save the changes after editing
+                }}
+            >
                 <Article content={wallpaper.content} />
             </div>
         </Section>
     );
 }
+
+/**
+ * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome
+ */
