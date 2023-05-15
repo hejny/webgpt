@@ -85,4 +85,5 @@ export async function getStaticProps({
  *       BUT
  *       YES> import { useTranslation } from 'next-i18next';
  * TODO: !! Better url than /showcase/...
+ * TODO: [👕][🧠] What should be the ID of customized wallpaper?
  */

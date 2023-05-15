@@ -73,7 +73,8 @@ export function GetWebButton() {
  * TODO: !!! On mobile
  * TODO: !!! [Previous][Next]
  * TODO: !!! [Simmilar]
- * TODO: !!! [Change content] to change the markdown
+ * TODO: !! [👕] [Change photo]
+ * TODO: !! [👕] [Change content] to change the markdown
  * TODO: !!! Allow to => export (+Collboard export) => Buy
  * TODO: !! Use translate
  */
