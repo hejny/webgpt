@@ -50,10 +50,10 @@
         {
             "name": "🏭🖼️ Generate wallpapers (every step + commit)",
             "commands": [
-                "ts-node ./scripts/generate-wallpapers-texts/generate-wallpapers-texts.ts --parallel 10 --commit",
+                "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit",
                 "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --parallel 10 --commit",
                 "ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts --parallel 10 --commit",
-                "ts-node ./scripts/generate-postprocess-content/postprocess-wallpapers-content.ts --commit"
+                "ts-node ./scripts/generate-wallpapers-content/postprocess-wallpapers-content.ts --commit"
             ],
             "onlySingle": true,
             "focus": true
@@ -65,8 +65,8 @@
             "focus": true
         },
         {
-            "name": "🏭🧾 [2-3/4] Generate wallpapers texts",
-            "commands": ["ts-node ./scripts/generate-wallpapers-texts/generate-wallpapers-texts.ts --parallel 10"],
+            "name": "🏭🧾 [2-3/4] Generate wallpapers content",
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10"],
             "onlySingle": true,
             "focus": true
         },
@@ -80,7 +80,7 @@
         },
         {
             "name": "🏭🧾 [ 4/4 ] Postprocess wallpapers content",
-            "commands": ["ts-node ./scripts/generate-postprocess-content/postprocess-wallpapers-content.ts"],
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/postprocess-wallpapers-content.ts"],
             "onlySingle": true,
             "focus": true
         },

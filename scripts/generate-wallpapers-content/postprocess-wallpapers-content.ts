@@ -5,7 +5,9 @@ dotenv.config({ path: '.env.local' });
 
 import chalk from 'chalk';
 import commander from 'commander';
+import { readFile, rm } from 'fs/promises';
 import { join, relative } from 'path';
+import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
@@ -51,7 +53,14 @@ async function postprocessWallpapersTexts({ isCommited, parallel }: { isCommited
             // TODO: !! In title there should not be word "Wallpaper"
             // TODO: !! Multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
 
-            console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
+            const content = await readFile(contentPath, 'utf-8');
+            const title = extractTitleFromMarkdown(content);
+
+            if (title === null) {
+                rm(contentPath);
+                console.info(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
+                console.info(`🗑 Removing file because of missing title `);
+            }
         },
     });
 

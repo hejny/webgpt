@@ -1,6 +1,7 @@
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../assets/ai/wallpaper/IWallpaper';
+import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
@@ -42,9 +43,7 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
         content = spaceTrim(content);
         // TODO: !! Replace here [email protected]
 
-        const title =
-            content.match(/^#\s*(?<title>.*)\s*$/m)?.groups?.title ??
-            'Untitled'; /* <- TODO: Make util extractTitleFromMarkdown */
+        const title = extractTitleFromMarkdown(content) || 'Untitled';
 
         const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
         const prompt = metadata!.prompt;
