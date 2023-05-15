@@ -1,23 +1,31 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
 import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
-import { furthest } from '../../utils/color/operators/furthest';
-import { randomItem } from '../../utils/color/randomItem';
+import { textColor } from '../../utils/color/operators/furthest';
 import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
 import styles from './GetWebButton.module.css';
+
+interface GetWebButtonProps {
+    randomWallpaper: IWallpaper;
+}
 
 /**
  * @@
  */
-export function GetWebButton() {
+export function GetWebButton(props: GetWebButtonProps) {
+    const { randomWallpaper } = props;
+
     // TODO: const {mainBackground}= useSkin();
 
     const { colorStats } = useWallpaper();
     const wallpapers = useContext(WallpapersContext);
+    const router = useRouter();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
     const backgroundColor = Color.from(`#60f1a8`);
@@ -31,7 +39,7 @@ export function GetWebButton() {
                 return Color.fromValues(...hslToRgb(hue, saturation, light));
             })
             .toHex(),
-        color: backgroundColor.then(furthest(Color.from('#fff'), Color.from('#000'))).toHex(),
+        color: backgroundColor.then(textColor).toHex(),
     };
 
     return (
@@ -41,7 +49,7 @@ export function GetWebButton() {
                 className={classNames('button', styles.getButton)}
                 style={{
                     backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(furthest(Color.from('#fff'), Color.from('#000'))).toHex(),
+                    color: backgroundColor.then(textColor).toHex(),
                 }}
             >
                 <Article content="I ❤ this web!" isEnhanced />
@@ -51,15 +59,14 @@ export function GetWebButton() {
                     Gallery
                 </Link>
                 <Link
-                    // TODO: !!!! Fix random
-                    href={
-                        '/showcase/' +
-                        randomItem(
-                            ...wallpapers.map(({ id }) => id) /* <- TODO: Filter itself + simmilar + already picked */,
-                        )
-                    }
+                    href={`/showcase/${randomWallpaper.id}`}
                     className={classNames('button', styles.randomButton)}
-                    style={minorButtonStyle}
+                    style={{
+                        ...minorButtonStyle,
+
+                        backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
+                        color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                    }}
                 >
                     Random
                 </Link>

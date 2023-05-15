@@ -1,8 +1,6 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
-import { PageProps } from '..';
-import { DEFAULT_WALLPAPER_ID } from '../../../config';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
@@ -12,11 +10,23 @@ import { AppHead } from '../../sections/00-AppHead/AppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
 import styles from '../../styles/common.module.css';
+import { randomItem } from '../../utils/color/randomItem';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
+import { IWallpaper } from '../../utils/IWallpaper';
 
-export default function ShowcasePage({ wallpapers }: PageProps) {
+export interface ShowcasePageProps {
+    currentWallpaper: IWallpaper;
+    randomWallpaper: IWallpaper;
+}
+
+export default function ShowcasePage(props: ShowcasePageProps) {
+    let { currentWallpaper, randomWallpaper } = props;
+    currentWallpaper = hydrateWallpaper(currentWallpaper);
+    randomWallpaper = hydrateWallpaper(randomWallpaper);
+
     return (
-        <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
+        <WallpapersContext.Provider value={[currentWallpaper]} /* <- Is this the right place to be Provider in? */>
             <AppHead />
 
             <div className={styles.page}>
@@ -31,7 +41,7 @@ export default function ShowcasePage({ wallpapers }: PageProps) {
                     <ShowcaseWelcomeSection />
                     {/*<ReferencesSection variant="SHORT" />*/}
                 </main>
-                <GetWebButton />
+                <GetWebButton {...{ randomWallpaper }} />
                 <footer>
                     <FooterSection />
                 </footer>
@@ -56,14 +66,17 @@ export async function getStaticProps({
 }) {
     const { slug } = params;
 
-    const relevantWallpapers = (await getWallpapers(/* <- TODO: !!! Put here ONLY the listed wallpaper */)).filter(
-        ({ id }) => id === slug || id === DEFAULT_WALLPAPER_ID,
-    );
+    const wallpapers = await getWallpapers();
+    const currentWallpaper = wallpapers.find(({ id }) => id === slug);
+    const randomWallpaper = randomItem(
+        ...wallpapers,
+    ); /* <- TODO: !! Make big chain to traverse whole gallery by clicking random + minor simmilar chains  */
 
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: relevantWallpapers,
+            currentWallpaper,
+            randomWallpaper,
         },
     };
 }

@@ -1,7 +1,7 @@
 import { IWallpaper } from '../../assets/ai/wallpaper/IWallpaper';
 import { Color } from './color/Color';
 import { darken } from './color/operators/darken';
-import { furthest } from './color/operators/furthest';
+import { textColor } from './color/operators/furthest';
 import { grayscale } from './color/operators/grayscale';
 import { mix } from './color/operators/mix';
 import { negative } from './color/operators/negative';
@@ -26,7 +26,7 @@ export interface ISkin {
 export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     const { colorStats } = wallpaper;
 
-    const highlightedTextColor = colorStats.mostFrequentColor.then(furthest(Color.get('black'), Color.get('white')));
+    const highlightedTextColor = colorStats.mostFrequentColor.then(textColor);
     const normalTextColor = highlightedTextColor.then(mix(0.2, colorStats.mostFrequentColor));
 
     const mainBackground = `linear-gradient(to bottom, ${colorStats.bottom.mostSaturatedColor

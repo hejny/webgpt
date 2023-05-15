@@ -18,6 +18,7 @@ import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
 import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
+import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
@@ -27,7 +28,9 @@ export interface PageProps {
 
 export default function GalleryPage({ wallpapers }: PageProps) {
     return (
-        <WallpapersContext.Provider value={wallpapers} /* <- Is this the right place to be Provider in? */>
+        <WallpapersContext.Provider
+            value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
+        >
             <AppHead /*subtitle="Gallery" /* <- TODO: !! Translate */ />
 
             <div className={classNames(styles.page, oswaltFont.className)}>

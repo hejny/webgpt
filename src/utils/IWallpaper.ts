@@ -1,4 +1,4 @@
-import { IImageColorStats } from '../../../src/utils/image/utils/IImageColorStats';
+import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
 
 export interface IWallpaperProps {

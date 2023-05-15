@@ -16,3 +16,5 @@ export function furthest(...colors: Color[]): IColorTransformer {
         return furthestColor;
     };
 }
+
+export const textColor = furthest(Color.get('white'), Color.from('black'));
