@@ -21,7 +21,7 @@ export function ShowcaseWelcomeSection() {
 
             <div
                 style={{
-                    fontFamily: `'${wallpaper.font}', sans-serif` /* <- !!!! Fix + Use only in one place OR link by tag */,
+                    fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,
                 }}
                 onClick={(event) => {
                     (event.target as HTMLDivElement).setAttribute('contenteditable', 'true');
