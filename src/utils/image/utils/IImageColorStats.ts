@@ -5,7 +5,8 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
  * Define an interface for the image color statistics
  */
 export interface IImageColorStats extends IImageColorStatsRegion {
-    //center: IImageColorStatsPart;
+    // TODO: !!! Split all between topLine, topHalf,...
+    // !!! center: IImageColorStatsPart;
     //top: IImageColorStatsPart;
     //left: IImageColorStatsPart;
     //right: IImageColorStatsPart;

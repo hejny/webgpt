@@ -1,2 +1,0 @@
-TODO: Should it be done here OR in BPE
-TODO: Add BPE ignore on harvest

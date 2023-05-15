@@ -7,6 +7,7 @@ import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
 import { furthest } from '../../utils/color/operators/furthest';
 import { randomItem } from '../../utils/color/randomItem';
 import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { Article } from '../Article/Article';
 import styles from './GetWebButton.module.css';
 
 /**
@@ -43,13 +44,14 @@ export function GetWebButton() {
                     color: backgroundColor.then(furthest(Color.from('#fff'), Color.from('#000'))).toHex(),
                 }}
             >
-                I want this web!
+                <Article content="I ❤ this web!" isEnhanced />
             </Link>
             <div>
                 <Link href={'/'} className={classNames('button', styles.galleryButton)} style={minorButtonStyle}>
                     Gallery
                 </Link>
                 <Link
+                    // TODO: !!!! Fix random
                     href={
                         '/showcase/' +
                         randomItem(
@@ -67,5 +69,11 @@ export function GetWebButton() {
 }
 
 /**
+ * TODO: !!! No outline - simpler design
+ * TODO: !!! On mobile
+ * TODO: !!! [Previous][Next]
+ * TODO: !!! [Simmilar]
+ * TODO: !!! [Change content] to change the markdown
+ * TODO: !!! Allow to => export (+Collboard export) => Buy
  * TODO: !! Use translate
  */

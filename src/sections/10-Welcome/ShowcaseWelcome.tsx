@@ -20,9 +20,10 @@ export function ShowcaseWelcomeSection() {
             */}
 
             <div
-                style={{ fontFamily: `'${wallpaper.font}', sans-serif` }}
+                style={{ fontFamily: `'${wallpaper.font}', sans-serif` /* <- !!!! Fix + Use only in one place OR link by tag */ }}
                 onClick={(event) => {
                     (event.target as HTMLDivElement).setAttribute('contenteditable', 'true');
+                    (event.target as HTMLDivElement).setAttribute('spellcheck', 'false');
                     // TODO: !!! Also save the changes after editing
                 }}
             >
@@ -33,5 +34,6 @@ export function ShowcaseWelcomeSection() {
 }
 
 /**
+ * TODO: !!! Allow to edit the header position + other things
  * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome
  */

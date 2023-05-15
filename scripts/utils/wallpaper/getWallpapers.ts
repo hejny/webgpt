@@ -12,7 +12,7 @@ const wallpapers: Array<IWallpaper> = [];
  */
 export async function getWallpapers(): Promise<Array<IWallpaper>> {
     if (wallpapers.length) {
-        // TODO: !!! Ensure that wallpapers are ready
+        // TODO: !! Ensure that wallpapers are ready
         return wallpapers;
     }
 
@@ -62,3 +62,7 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
 
     return wallpapers;
 }
+
+/**
+ * TODO: Update wallpapers during the run
+ */

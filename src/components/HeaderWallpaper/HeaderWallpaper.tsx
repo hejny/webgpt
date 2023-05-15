@@ -16,7 +16,7 @@ export function HeaderWallpaper() {
         <div className={styles.HeaderWallpaper} style={{ backgroundColor: colorStats.averageColor.toHex() }}>
             <div className={styles.inner}>
                 <Image
-                    src={src}
+                    src={src} /* <- TODO: Here should be really upscaled version by Upscalyr */
                     alt={prompt}
                     draggable="false"
                     placeholder="blur"

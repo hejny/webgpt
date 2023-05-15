@@ -50,7 +50,7 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                         <Items itemsOnRow={2}>
                             {wallpapers
                                 // Random sort
-                                .sort(() => Math.random() - 0.5)
+                                //.sort(() => Math.random() - 0.5)
                                 // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
                                 .map((wallpaper, i) => (
                                     // TODO: <MidjourneyImage/>
@@ -113,7 +113,9 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
- * TODO: !!! Filters
+ * TODO: !!! [🧶] FAQ section - how it works
+ * TODO: !!! Design for gallery - split showcase and gallery
+ * TODO: !!! Filters - [Shuffle][Fulltext][Limit][Light/Dark/Color]
  * TODO: !! Preview page on hover on each item
  * TODO: !! i18n + make section
  * TODO: [🪒] Can be getStaticProps shared between all pages?

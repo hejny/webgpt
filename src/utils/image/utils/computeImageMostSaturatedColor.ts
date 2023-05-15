@@ -12,3 +12,8 @@ export function computeImageMostSaturatedColor(image: IImage): WithTake<Color> {
     colors.sort((a, b) => colorSaturation(b) - colorSaturation(a));
     return colors[0];
 }
+
+/**
+ * TODO: !!! This is not working properly for very dark colors
+ * TODO: Write unit tests
+ */

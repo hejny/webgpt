@@ -69,11 +69,11 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!! Showcase should contain link back to mainpage <Link className="button" href="/">{t('Welcome.back-home')}</Link>
- * TODO: !!! Special effect for each wallpaper
+ * TODO: !! Special effect for each wallpaper
  * TODO: !!! When sharing link to showcase, preview to socials should work
  * TODO: !!! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !!! Preview as on [Mobile][Tablet] - show the direct QR code
+ * TODO: !!! [🧶] Add overlay which explains how it works and lead to FAQ permalink
  * TODO: !! Better IDs for wallpapers - make it without GET parameters
  * TODO: !! Make foreground-background paralax effect for each wallpaper
  * TODO: !! Fix Shuffle without React hydration error
@@ -84,4 +84,5 @@ export async function getStaticProps({
  *       NOT> import { useTranslation } from 'react-i18next';
  *       BUT
  *       YES> import { useTranslation } from 'next-i18next';
+ * TODO: !! Better url than /showcase/...
  */
