@@ -21,6 +21,12 @@ export interface IImageColorStats extends IImageColorStatsRegion {
  * Define an interface for the image color statistics for one particular region
  */
 export interface IImageColorStatsRegion {
+
+
+colorSpace:number 
+region: IRegion + pixel size 
+
+
     /**
      * The average color of the image as a Color object
      */
@@ -59,20 +65,16 @@ export interface IImageColorStatsRegion {
     /**
      * The most frequent color of the image as a Color object
      */
-    mostFrequentColor: WithTake<Color>;
+    mostFrequentColor: Array<WithTake<Color>;
 
     /**
      * The most saturated color of the image as a Color object
      */
-    mostSaturatedColor: WithTake<Color>;
+    mostSaturatedColor: Array<WithTake<Color>;
 
-    /**
-     * The most isolated color of the image as a Color object
-     */
-    // NOT used - too slow> mostIsolatedColor: WithTake<Color>;
 
     /**
      * The most grouped color of the image as a Color object
      */
-    mostGroupedColor: WithTake<Color>;
+    mostGroupedColor: Array<WithTake<Color>;
 }
