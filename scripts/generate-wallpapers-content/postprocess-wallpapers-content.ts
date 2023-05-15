@@ -48,7 +48,9 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
     await forEachWallpaper({
         parallel,
         async makeWork({ metadataPath, contentPath }) {
-            // TODO: !! Every wallpaper must contain <h1>
+
+
+            // TODO: !! Require at least some structure 
             // TODO: !! In title there should not be word "Wallpaper"
             // TODO: !! Multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
 
