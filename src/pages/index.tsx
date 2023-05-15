@@ -115,8 +115,8 @@ export async function getStaticProps({ locale }: { locale: string }) {
 /**
  * TODO: !!! [🧶] FAQ section - how it works
  * TODO: !!! Design for gallery - split showcase and gallery
- * TODO: !!! [1] Filters - [Shuffle][Fulltext][Limit][Light/Dark/Color]
- * TODO: !!! [1] Order
+ * TODO: !!! [1] Filters - [Fulltext][Light/Dark/Color]
+ * TODO: !!! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]
  * TODO: !!! [1] Limit
  * TODO: !! [1] Pagination
  * TODO: !! Preview page on hover on each item
