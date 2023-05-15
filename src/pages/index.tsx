@@ -75,7 +75,11 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                                                 />
                                             </Item.Image>
                                             <Item.Description>
-                                                <ImagineTag>{wallpaper.prompt}</ImagineTag>
+                                                <ImagineTag>
+                                                    {
+                                                        wallpaper.prompt /* TODO: !!! Hide or show just title+font NOT prompt */
+                                                    }
+                                                </ImagineTag>
 
                                                 {/*
                                                     TODO: !! Put in downloads link to MidJourney>

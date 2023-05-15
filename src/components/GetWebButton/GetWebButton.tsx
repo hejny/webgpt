@@ -77,4 +77,5 @@ export function GetWebButton() {
  * TODO: !! [👕] [Change content] to change the markdown
  * TODO: !!! Allow to => export (+Collboard export) => Buy
  * TODO: !! Use translate
+ * TODO: !! [🧶] Show here prompt, link to midjourney, how it was made,...
  */
