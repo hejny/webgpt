@@ -6,10 +6,13 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
  */
 export interface IImageColorStats extends IImageColorStatsRegion {
 
-palette:
+
+(
+computeImagePalette:
 
 ... mostSatulightedColors, darkestColor, lightestColor + odfiltrovat všechny barvy, který jsou od sebe méně než nějakou vzdálenost
 
+)
 
 
     // TODO: !!! Split all between topLine, topHalf,...
