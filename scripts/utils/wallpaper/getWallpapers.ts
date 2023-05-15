@@ -5,11 +5,17 @@ import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdow
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
 
+const wallpapers: Array<IWallpaper> = [];
+
 /**
  * @@@
  */
 export async function getWallpapers(): Promise<Array<IWallpaper>> {
-    const wallpapers: Array<IWallpaper> = [];
+    if (wallpapers.length) {
+        // TODO: !!! Ensure that wallpapers are ready
+        return wallpapers;
+    }
+
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
     for (const metadataPath of wallpapersMetadataPaths) {
