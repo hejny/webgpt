@@ -42,6 +42,12 @@ region: IRegion + pixel size
      */
     darkestColor: WithTake<Color>;
 
+/**
+     * The most saturation*lightness colors of the image as a Color object ...@@@!!!!
+     */
+    mostSatulightedColor: Array<WithTake<Color>;
+
+
     /**
      * Colors that are nearest and furthest from white
      */
@@ -67,11 +73,7 @@ region: IRegion + pixel size
      */
     mostFrequentColor: Array<WithTake<Color>;
 
-    /**
-     * The most saturated color of the image as a Color object
-     */
-    mostSaturatedColor: Array<WithTake<Color>;
-
+    
 
     /**
      * The most grouped color of the image as a Color object
