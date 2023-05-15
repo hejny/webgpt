@@ -59,7 +59,7 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
         },
     });
 
-    const usedFonts = new Set<string>();
+    const usedFonts: Record<string, number> = {};
 
     await forEachWallpaper({
         parallel,
@@ -105,7 +105,30 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
             /**/
 
             const font = await askGpt(
-                'Write me a Google font which is best fitting for the website. Write just the font name nothing else.',
+                /* <- TODO: !!! Make better diversity of the fonts */
+                `
+                    Write me a Google font which is best fitting for the website. Write just the font name nothing else.
+
+                    Pick from the list:
+                    - Montserrat
+                    - Poppins
+                    - Open Sans
+                    - Lobster
+                    - Playfair Display
+                    - Great Vibes
+                    - Lato
+                    - Roboto
+                    - Inter
+                    - IBM Plex Sans
+                    - Exo 2
+                    - Orbitron
+                    - Dancing Script
+                    - Alegreya
+                    - Raleway
+                    - Futura
+                    - Barlow Condensed
+                
+                `,
                 true,
             );
 
@@ -127,10 +150,15 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
                 'utf8',
             );
 
-            const usedFontsSize = usedFonts.size;
-            usedFonts.add(font);
+            const usedFontsSize = Object.keys(usedFonts).length;
+            usedFonts[font] = usedFonts[font] ?? 0;
+            usedFonts[font]++;
             if (usedFontsSize !== usedFonts.size) {
-                console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
+                console.info(
+                    `🔤 Using fonts:\n${Object.entries(usedFonts)
+                        .map(([font, count]) => `• ${count}x ${font}`)
+                        .join('\n')}`,
+                );
             }
 
             console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
@@ -141,7 +169,11 @@ async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: b
         await commit(await getWallpapersDir(), `🧾 Generate wallpapers texts`);
     }
 
-    console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
+    console.info(
+        `🔤 Using fonts:\n${Object.entries(usedFonts)
+            .map(([font, count]) => `• ${count}x ${font}`)
+            .join('\n')}`,
+    );
 
     console.info(`[ Done 🧾  Generating wallpapers texts ]`);
 }
