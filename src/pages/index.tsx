@@ -115,17 +115,15 @@ export async function getStaticProps({ locale }: { locale: string }) {
 /**
  * TODO: !!! [🧶] FAQ section - how it works
  * TODO: !!! Design for gallery - split showcase and gallery
- * TODO: !!! Filters - [Shuffle][Fulltext][Limit][Light/Dark/Color]
+ * TODO: !!! [1] Filters - [Shuffle][Fulltext][Limit][Light/Dark/Color]
+ * TODO: !!! [1] Order
+ * TODO: !!! [1] Limit
+ * TODO: !! [1] Pagination
  * TODO: !! Preview page on hover on each item
- * TODO: !! i18n + make section
  * TODO: [🪒] Can be getStaticProps shared between all pages?
  * TODO: [🪒] Can be fonts shared between all pages?
  * TODO: Write better about how are images created
  *       TODO: Connect with section/article about AI generative technology
- * TODO: Some image frames
- * TODO: Make some menu
  * TODO: [🧈] Best way how to share page css
- * TODO: DRY with index.tsx
  * TODO: [🔗] ACRY should we use <a ...>...</a> OR <Link ...>...</Link> for external links in Next App
- * TODO: Generate the components like <CaveOfIdeasWithTransparentLookThroughImageXfe3480c5 /> with links
  */
