@@ -47,6 +47,7 @@ region: IRegion + pixel size
 
 
 nejdřív všechny barvy se řadím
+nejdříve futruju ty Šárka které mají alespoň nějakou minimální hodnotu – pokud je obrázek černobílý tohle bude prostě prázdné a nevadí mi to
 potom vyberu pouze ty, které mají alespoň 0.62 – zlatý řez saturation X light hodnoty
 ty pak vybírám ty pak postupně beru od něj do nejméně avšak maximálně do těch 0,62 a u každé hodnotím, zda je její hue alespoň o 30 úhlových stupňů jiné oproti všem ostatním
 
