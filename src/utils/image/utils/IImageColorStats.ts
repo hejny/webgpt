@@ -10,7 +10,10 @@ export interface IImageColorStats extends IImageColorStatsRegion {
 (
 computeImagePalette:
 
-... mostSatulightedColors, darkestColor, lightestColor + odfiltrovat všechny barvy, který jsou od sebe méně než nějakou vzdálenost
+... mostSatulightedColors, darkestColor, lightestColor, ... most grouped, most frequent 
+
+
+ + odfiltrovat všechny barvy, který jsou od sebe méně než nějakou vzdálenost
 
 )
 
