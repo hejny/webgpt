@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "private": false,
     "license": "SEE LICENSE IN LICENSE",
-    "description": "-->",
+    "description": "We are the ...",
     "nonce": 0,
     "homepage": "https://ai.hejny.org/",
     "repository": {
@@ -41,7 +41,7 @@
         "next": "13.1.1",
         "next-i18next": "13.2.2",
         "openmoji": "14.0.0",
-        "raw-loader": "^4.0.2",
+        "raw-loader": "4.0.2",
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-i18next": "12.2.0",
