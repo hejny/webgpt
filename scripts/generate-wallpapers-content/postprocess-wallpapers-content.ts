@@ -24,8 +24,7 @@ program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
 const { commit: isCommited, parallel } = program.opts();
 
-// TODO: !! Rename to generateWallpapersContent
-postprocessWallpapersTexts({ isCommited, parallel: parseInt(parallel) })
+postprocessWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -35,7 +34,7 @@ postprocessWallpapersTexts({ isCommited, parallel: parseInt(parallel) })
         process.exit(0);
     });
 
-async function postprocessWallpapersTexts({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
+async function postprocessWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
     console.info(`🧾  Postprocessing wallpapers texts`);
 
     // TODO: Use isParallel
@@ -65,10 +64,10 @@ async function postprocessWallpapersTexts({ isCommited, parallel }: { isCommited
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾 Generate wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾 Postprocess wallpapers texts`);
     }
 
     console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
 
-    console.info(`[ Done 🧾  Generating wallpapers texts ]`);
+    console.info(`[ Done 🧾  Postprocessing wallpapers texts ]`);
 }

@@ -29,8 +29,7 @@ program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
 const { commit: isCommited, parallel } = program.opts();
 
-// TODO: !! Rename to generateWallpapersContent
-generateWallpapersTexts({ isCommited, parallel: parseInt(parallel) })
+generateWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -40,7 +39,7 @@ generateWallpapersTexts({ isCommited, parallel: parseInt(parallel) })
         process.exit(0);
     });
 
-async function generateWallpapersTexts({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
+async function generateWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
     console.info(`🧾  Generating wallpapers texts`);
 
     // TODO: Use isParallel
