@@ -1,4 +1,4 @@
-import { hydrateColorStats } from '../../../src/utils/image/utils/hydrateColorStats';
+import { hydrateColorStats } from './image/utils/hydrateColorStats';
 import { IWallpaper } from './IWallpaper';
 
 export function hydrateWallpaper(json: any /*JsonObject & IWallpaper*/): IWallpaper {

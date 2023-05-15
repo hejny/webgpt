@@ -1,4 +1,7 @@
-TODO: Should it be done here OR in BPE
+
+TODO: Harvest all files containing imagine (animals.imagine.txt)
+TODO: Harvest all variants like --tile, misc versions,...
 TODO: Add BPE ignore on harvest
-TODO: Search also through parents
-TODO: Use ❤ favorite
+TODO: Harvest from downloaded gallery
+TODO: Search also through parents 
+TODO: Use ❤ favorite (or at least harvest the info)
