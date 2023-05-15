@@ -6,9 +6,14 @@ import { colorSaturation } from './colorSaturation';
  * Calculates saturation*lightness of the color
  */
 export function colorSatulightion(color: Color): number {
-    //const [hue, saturation, light] = rgbToHsl(color.red, color.green, color.blue);
+    // TODO: !! There is some flaw in rgbToHsl bacause [1] not work but [2] works - light vs luminance?
+    //[1]> const [hue, saturation, light] = rgbToHsl(color.red, color.green, color.blue);
+    //[1]> return saturation * light;
 
+    //[2]:
     return colorSaturation(color) * colorLuminance(color);
-
-    // TODO: !!!! Reflect algoritm to descriptions
 }
+
+/**
+ * TODO: !!! Reflect algoritm to descriptions
+ */
