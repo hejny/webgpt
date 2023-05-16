@@ -106,7 +106,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🎨 Generate wallpapers color-stats`);
+        await commit(await getWallpapersDir(), `🎨 Generate wallpapers color-stats version ${COLORSTATS_VERSION}`);
     }
 
     console.info(`[ Done 🎨  Generating wallpapers color-stats ]`);
