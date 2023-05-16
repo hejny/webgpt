@@ -1,5 +1,6 @@
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
+import YAML from 'yaml';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
@@ -20,7 +21,7 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
     for (const metadataPath of wallpapersMetadataPaths) {
-        const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.json');
+        const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.yaml');
         const contentPath = metadataPath.replace(/\.json$/, '.content.md');
 
         const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
@@ -34,7 +35,7 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
             throw new Error(`Content file for ${id} does not exist "${contentPath}"`);
         }
 
-        const colorStats = JSON.parse(await readFile(colorStatsPath, 'utf8')) as IWallpaperColorStats;
+        const colorStats = YAML.parse(await readFile(colorStatsPath, 'utf8')) as IWallpaperColorStats;
         let content = await readFile(contentPath, 'utf8');
 
         const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font ?? 'Unknown';
