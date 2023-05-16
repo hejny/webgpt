@@ -22,10 +22,13 @@ if (process.cwd() !== join(__dirname, '../..')) {
 
 const program = new commander.Command();
 program.option('--commit', `Autocommit changes`);
+program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
+program.parse(process.argv);
+
 // TODO:> program.option('--random', ``);
 // TODO:> program.option('--reverse', ``);
 program.parse(process.argv);
-const { commit: isCommited } = program.opts();
+const { commit: isCommited, parallel } = program.opts();
 
 generateWallpapersColorStats({ isCommited })
     .catch((error) => {
@@ -45,7 +48,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
     }
 
     await forEachWallpaper({
-        parallelWorksCount: 1 /* <- !! Better */,
+        parallelWorksCount: parallel /* <- !! Better */,
         async makeWork({ metadataPath, colorStatsPath }) {
             if (await isFileExisting(colorStatsPath)) {
                 console.info(`⏩ Color stats file does already exists`);
