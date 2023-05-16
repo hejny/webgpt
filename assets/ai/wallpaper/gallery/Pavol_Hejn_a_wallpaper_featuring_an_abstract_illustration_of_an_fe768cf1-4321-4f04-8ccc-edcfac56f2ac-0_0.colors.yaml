@@ -1,21 +1,11 @@
-version: 6
+version: 7
 averageColor: '#ada390'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
-minmaxWhite:
-    - '#ffffff'
-    - '#000000'
-minmaxRed:
-    - '#ee4422'
-    - '#ddffff'
-minmaxGreen:
-    - '#339966'
-    - '#ffeeff'
-minmaxBlue:
-    - '#222255'
-    - '#ffffcc'
 mostFrequentColors:
-    - '#999988'
+    - '#eeddcc'
+    - '#224444'
+    - '#998877'
 mostSatulightedColors:
     - '#33bbaa'
     - '#ff8899'
@@ -28,20 +18,11 @@ bottomHalf:
     averageColor: '#908c7d'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffff'
-        - '#000000'
-    minmaxRed:
-        - '#ee4422'
-        - '#ddffff'
-    minmaxGreen:
-        - '#66aa77'
-        - '#ffeeff'
-    minmaxBlue:
-        - '#222255'
-        - '#ffffcc'
     mostFrequentColors:
-        - '#999988'
+        - '#eeddcc'
+        - '#224444'
+        - '#bb6655'
+        - '#55bbaa'
     mostSatulightedColors:
         - '#55ccbb'
         - '#ff8899'
@@ -54,20 +35,11 @@ bottomThird:
     averageColor: '#878d80'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffff'
-        - '#000000'
-    minmaxRed:
-        - '#ee4422'
-        - '#ddffff'
-    minmaxGreen:
-        - '#66aa77'
-        - '#ffeeff'
-    minmaxBlue:
-        - '#113355'
-        - '#ffffcc'
     mostFrequentColors:
-        - '#999988'
+        - '#eeddcc'
+        - '#224444'
+        - '#bb6655'
+        - '#55bbaa'
     mostSatulightedColors:
         - '#55ccbb'
         - '#ff8899'
@@ -80,20 +52,10 @@ bottomLine:
     averageColor: '#8d988c'
     lightestColor: '#ffeedd'
     darkestColor: '#000011'
-    minmaxWhite:
-        - '#ffeedd'
-        - '#000011'
-    minmaxRed:
-        - '#bb5566'
-        - '#eeeedd'
-    minmaxGreen:
-        - '#558866'
-        - '#ffdddd'
-    minmaxBlue:
-        - '#224455'
-        - '#ffeecc'
     mostFrequentColors:
-        - '#999988'
+        - '#eeddcc'
+        - '#112233'
+        - '#558877'
     mostSatulightedColors:
         - '#bb5566'
         - '#eebb99'

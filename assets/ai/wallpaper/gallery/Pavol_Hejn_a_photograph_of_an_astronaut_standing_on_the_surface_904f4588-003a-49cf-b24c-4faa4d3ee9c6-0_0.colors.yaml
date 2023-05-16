@@ -1,21 +1,11 @@
-version: 6
+version: 7
 averageColor: '#716c5d'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
-minmaxWhite:
-    - '#ffffff'
-    - '#000000'
-minmaxRed:
-    - '#993311'
-    - '#eeffff'
-minmaxGreen:
-    - '#448877'
-    - '#ffffff'
-minmaxBlue:
-    - '#335566'
-    - '#ffffcc'
 mostFrequentColors:
-    - '#112222'
+    - '#223333'
+    - '#ffeecc'
+    - '#999988'
 mostSatulightedColors:
     - '#ffaa66'
     - '#337777'
@@ -26,20 +16,11 @@ bottomHalf:
     averageColor: '#655d50'
     lightestColor: '#ffffee'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffee'
-        - '#000000'
-    minmaxRed:
-        - '#994422'
-        - '#ffffee'
-    minmaxGreen:
-        - '#558877'
-        - '#ffeeee'
-    minmaxBlue:
-        - '#335566'
-        - '#ffffcc'
     mostFrequentColors:
-        - '#112222'
+        - '#111111'
+        - '#ffeecc'
+        - '#556666'
+        - '#dd9955'
     mostSatulightedColors:
         - '#ffaa66'
         - '#447777'
@@ -50,20 +31,10 @@ bottomThird:
     averageColor: '#3b3f3b'
     lightestColor: '#eeddcc'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#eeddcc'
-        - '#000000'
-    minmaxRed:
-        - '#664422'
-        - '#eeddcc'
-    minmaxGreen:
-        - '#778866'
-        - '#110011'
-    minmaxBlue:
-        - '#335566'
-        - '#eeddbb'
     mostFrequentColors:
-        - '#112222'
+        - '#111111'
+        - '#556666'
+        - '#bbbbaa'
     mostSatulightedColors:
         - '#aa9966'
         - '#446677'
@@ -76,20 +47,9 @@ bottomLine:
     averageColor: '#1a1c1d'
     lightestColor: '#777777'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#777777'
-        - '#000000'
-    minmaxRed:
-        - '#443322'
-        - '#001122'
-    minmaxGreen:
-        - '#556655'
-        - '#110011'
-    minmaxBlue:
-        - '#334455'
-        - '#000000'
     mostFrequentColors:
-        - '#112222'
+        - '#111111'
+        - '#556666'
     mostSatulightedColors:
         - '#334455'
         - '#443322'

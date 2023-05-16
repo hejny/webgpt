@@ -1,3 +1,59 @@
 version: 7
-note: This is just a lock before real color stats are made - if you see this the
-  process is still running or it crashed.
+averageColor: '#525d4b'
+lightestColor: '#ffffff'
+darkestColor: '#001100'
+mostFrequentColors:
+    - '#111111'
+    - '#cccccc'
+    - '#667766'
+mostSatulightedColors:
+    - '#ddff88'
+    - '#ffcc99'
+    - '#99dd88'
+    - '#559977'
+    - '#bbddee'
+mostGroupedColors:
+    - '#111111'
+bottomHalf:
+    averageColor: '#343f25'
+    lightestColor: '#ffffff'
+    darkestColor: '#002200'
+    mostFrequentColors:
+        - '#000000'
+        - '#446633'
+        - '#bbbbaa'
+    mostSatulightedColors:
+        - '#ddff88'
+        - '#ffcc99'
+        - '#99dd88'
+        - '#559977'
+    mostGroupedColors:
+        - '#000000'
+bottomThird:
+    averageColor: '#262e18'
+    lightestColor: '#eeffcc'
+    darkestColor: '#003300'
+    mostFrequentColors:
+        - '#000000'
+        - '#665544'
+        - '#aacc88'
+    mostSatulightedColors:
+        - '#ddff88'
+        - '#ffcc99'
+        - '#99dd88'
+        - '#336655'
+    mostGroupedColors:
+        - '#000000'
+bottomLine:
+    averageColor: '#18190c'
+    lightestColor: '#775555'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - '#000000'
+        - '#666633'
+    mostSatulightedColors:
+        - '#668833'
+        - '#775544'
+        - '#335533'
+    mostGroupedColors:
+        - '#000000'
