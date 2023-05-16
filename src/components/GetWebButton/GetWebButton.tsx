@@ -70,12 +70,13 @@ export function GetWebButton(props: GetWebButtonProps) {
                     // Note: No need for preventDefault
                     //  [🤰] Just quick-change the HeaderWallpaper for upgoing color
 
-                    console.log('HeaderWallpaper', document.getElementById('HeaderWallpaper'));
+                    const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
+
+                    console.log('HeaderWallpaper', headerWallpaperElement);
 
                     // !!! Is this working?
-                    document
-                        .getElementById('HeaderWallpaper')!
-                        .setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
+                    headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
+                    headerWallpaperElement.removeAttribute('srcset');
                 }}
                 prefetch={true}
                 /* Note: randomWallpaper image is prefetched here -> [🤰] */
