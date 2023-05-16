@@ -1,4 +1,4 @@
-import { COLORS_LIMIT, MOST_FREQUENT_COLORS_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
+import { COLORS_LIMIT, DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
 import { Color } from '../../color/Color';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
@@ -29,7 +29,7 @@ export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Co
 
     // 3️⃣ Pick colors that has some distance threshold  (compared to all other already picked colors)
     const distanceTheashold =
-        colorDistanceSquared(Color.get('black'), Color.get('white')) * MOST_FREQUENT_COLORS_DISTANCE_THEASHOLD_RATIO;
+        colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
     const uniqueColors: Array<WithTake<Color>> = [];
     for (const color of mostFrequentColors) {
         if (uniqueColors.every((uniqueColor) => colorDistanceSquared(color, uniqueColor) >= distanceTheashold)) {

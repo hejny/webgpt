@@ -1,11 +1,17 @@
 import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
 import { useState } from 'react';
+import { DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
 import { SelectWithFirst } from '../../../components/SelectWithFirst/SelectWithFirst';
 import { Color } from '../../../utils/color/Color';
+import { colorDistanceSquared } from '../../../utils/color/utils/colorDistance';
+import { IWallpaper } from '../../../utils/IWallpaper';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
+import styles from './GalleryFilter.module.css';
 
-interface GalleryWhereOrderLimit {
+// TODO: !!! Break into files
+
+export interface GalleryFilter {
     color?: WithTake<Color>;
     limit: number;
     isRandom: boolean;
@@ -15,11 +21,44 @@ interface GalleryWhereOrderLimit {
 }
 
 interface GalleryFilterProps {
-    defaultFilter: GalleryWhereOrderLimit;
-    onFilterChange(newFilter: GalleryWhereOrderLimit): void;
+    defaultFilter: GalleryFilter;
+    onFilterChange(newFilter: GalleryFilter): void;
 }
 
-export function GalleryFilter(props: GalleryFilterProps) {
+export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryFilter): Array<IWallpaper> {
+    const { color, limit, isRandom } = filter;
+
+    if (isRandom) {
+        // Note: .sort method is mutating array so making a copy before
+        wallpapers = [...wallpapers];
+    }
+
+    if (color) {
+        const treasholdSquared =
+            colorDistanceSquared(Color.get('black'), Color.get('white')) *
+            DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO; /* <- TODO: !!! Is here corect work with squaring */
+        wallpapers = wallpapers.filter(
+            (wallpaper) =>
+                colorDistanceSquared(
+                    wallpaper.colorStats.averageColor /* <- TODO: !!! Test here whole palette */,
+                    color,
+                ) <= treasholdSquared,
+        );
+    }
+
+    if (isRandom) {
+        // Note: .sort method is mutating array so no need to assign it back
+        wallpapers.sort(() => Math.random() - 0.5);
+    }
+
+    if (limit < Infinity) {
+        wallpapers = wallpapers.slice(0, limit);
+    }
+
+    return wallpapers;
+}
+
+export function GalleryFilterInput(props: GalleryFilterProps) {
     const { defaultFilter, onFilterChange } = props;
 
     const { t } = useTranslation();
@@ -28,15 +67,22 @@ export function GalleryFilter(props: GalleryFilterProps) {
     const [limit, setLimit] = useState<number>(defaultFilter.limit);
     const [isRandom, setRandom] = useState<boolean>(false);
 
-    onFilterChange({ color, limit, isRandom }); /* <- !!!! Better */
-    // const changeColor = (color: Color | null)=>{setColor(color);onFilterChange({...})}
+    // !!! [4] Remove const changeColor = (color: Color | null)=>{setColor(color);onFilterChange({...})}
+
+    if (
+        defaultFilter.color?.toHex() !== color?.toHex() ||
+        defaultFilter.limit !== limit ||
+        defaultFilter.isRandom !== isRandom
+    ) {
+        onFilterChange({ color, limit, isRandom }); /* <- !!!! [4] Better */
+    }
 
     return (
-        <div>
-            <h3>Filters</h3>
+        <div className={styles.GalleryFilter}>
+            {/* <h3>Filters</h3> */}
 
             <div>
-                Prefer color:
+                Preferovaná barva:
                 <input
                     type="color"
                     defaultValue={(color || Color.get('white')).toHex()}
@@ -45,24 +91,26 @@ export function GalleryFilter(props: GalleryFilterProps) {
             </div>
 
             <SelectWithFirst
-                title={`Limit`}
+                title={`Na stránku`}
                 value={limit}
                 onChange={(newLimit) => void setLimit(newLimit)}
-                numberOfButtons={1}
+                numberOfButtons={4}
                 options={[
-                    { id: Infinity, title: 'Vše' },
-                    { id: 100, title: '100' },
                     { id: 10, title: '10' },
+                    { id: 100, title: '100' },
+                    { id: 500, title: '500' },
+                    { id: Infinity, title: 'Vše' },
                 ]}
             />
 
             <SelectWithFirst
-                title={`Limit`}
+                title={`Řadit`}
                 value={isRandom}
                 onChange={(newIsRandom) => void setRandom(newIsRandom)}
                 numberOfButtons={2}
                 options={[
-                    { id: false, title: 'V pořadí' },
+                    { id: false, title: 'Vzestupně (A-Z)' },
+                    // TODO: Sestupně (Z-A)
                     { id: true, title: 'Náhodně' },
                 ]}
             />

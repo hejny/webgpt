@@ -1,4 +1,3 @@
-import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,11 +6,9 @@ import { ImagineTag } from '../../components/ImagineTag/ImagineTag';
 import { Item } from '../../components/Items/Item';
 import { Items } from '../../components/Items/Items';
 import { Section } from '../../components/Section/Section';
-import { Color } from '../../utils/color/Color';
-import { colorDistanceSquared } from '../../utils/color/utils/colorDistance';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
-import { GalleryFilter } from './GalleryFilter/GalleryFilter';
+import { filterWallpapers, GalleryFilter, GalleryFilterInput } from './GalleryFilter/GalleryFilter';
 
 interface SampleProps {}
 
@@ -21,39 +18,22 @@ export function GallerySection(props: SampleProps) {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
-    const [preferColor, setPreferColor] = useState<Color | null>(null);
+    const [filter, setFilter] = useState<GalleryFilter>({ limit: 100, isRandom: false });
 
-    const sortedWallpapers = wallpapers;
-
-    sortedWallpapers.sort((wallpaper1, wallpaper2) => {
-        if (preferColor) {
-            const color1 = wallpaper1.colorStats.averageColor;
-            const color2 = wallpaper2.colorStats.averageColor;
-
-            const color1Distance = colorDistanceSquared(preferColor, color1);
-            const color2Distance = colorDistanceSquared(preferColor, color2);
-
-            return color1Distance - color2Distance;
-        }
-
-        return 0;
-    });
+    const filteredWallpapers = filterWallpapers(wallpapers, filter); /* <- TODO: !!! Cache (memoize) + Do async */
 
     return (
         <Section>
             {/* <- TODO: !! Make propper secrion from this */}
             {/* TODO: !! Translate */}
-            <h1>🎨 Gallery of webs</h1>
+            <h1>AI Web Maker</h1>
             <p>Web pages listed here are pre-generated using AI:</p>
 
-            <GalleryFilter />
-            <br />
-            {Math.random()}
-            <br />
-            {sortedWallpapers.length + ' items'}
+            <GalleryFilterInput defaultFilter={filter} onFilterChange={setFilter} />
+
             <br />
             <Items itemsOnRow={3}>
-                {sortedWallpapers
+                {filteredWallpapers
                     // Random sort
                     //.sort(() => Math.random() - 0.5)
                     // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
