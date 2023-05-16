@@ -1,13 +1,14 @@
-import { COLORS_LIMIT, MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES, MOST_SATULIGHTED_COLORS_SATULIGHTION_TRERESHOLD_RATIO } from '../../../../config';
+import {
+    COLORS_LIMIT,
+    MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES,
+    MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO,
+} from '../../../../config';
 import { Color } from '../../color/Color';
 import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { colorSatulightion } from '../../color/utils/colorSatulightion';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
-
-
-
 
 /**
  * @@@
@@ -18,10 +19,10 @@ export function computeImageMostSatulightedColors(image: IImage): Array<WithTake
     colors.sort((a, b) => colorSatulightion(b) - colorSatulightion(a));
 
     // 2️⃣ Drop colors with low saturation (compared to the most saturated color)
-    const requiredSatulightion = colorSatulightion(colors[0]) * MOST_SATULIGHTED_COLORS_SATULIGHTION_TRERESHOLD_RATIO;
+    const requiredSatulightion = colorSatulightion(colors[0]) * MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO;
     const saturatedColors = colors.filter((color) => colorSatulightion(color) >= requiredSatulightion);
 
-    // 3️⃣ Pick more colors with different hue (compared to all other already picked colors)
+    // 3️⃣ Pick colors with different hue (compared to all other already picked colors)
     const uniqueColors: Array<WithTake<Color>> = [];
     for (const color of saturatedColors) {
         if (
