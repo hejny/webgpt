@@ -53,7 +53,7 @@
         "typescript": "4.9.4",
         "waitasecond": "1.11.1",
         "xyzt": "5.4.0",
-        "yaml": "^2.2.2"
+        "yaml": "2.2.2"
     },
     "devDependencies": {
         "@total-typescript/ts-reset": "0.4.2",
