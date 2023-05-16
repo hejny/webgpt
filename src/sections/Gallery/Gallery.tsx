@@ -126,8 +126,8 @@ export function GallerySection(props: SampleProps) {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                        
-                                        
+
+
                                     */}
                                 </Item.Description>
                             </Item>
