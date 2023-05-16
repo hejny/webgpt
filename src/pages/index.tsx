@@ -13,7 +13,7 @@ import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
-import styles from '../styles/common.module.css';
+import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
@@ -44,10 +44,10 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                     <Section>
                         {/* <- TODO: !! Make propper secrion from this */}
                         {/* TODO: !! Translate */}
-                        <h2>Gallery</h2>
-                        <p>Images used on this page are generated using MidJourney:</p>
+                        <h1>🎨 Gallery of webs</h1>
+                        <p>Web pages listed here are pre-generated using AI:</p>
 
-                        <Items itemsOnRow={2}>
+                        <Items itemsOnRow={3}>
                             {wallpapers
                                 // Random sort
                                 //.sort(() => Math.random() - 0.5)
@@ -74,10 +74,44 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                                                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}
                                                 />
                                             </Item.Image>
+                                            {/*
+                                            TODO: !! [2]
+                                            <Item.Image>
+                                                <style>{`
+                                                    @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font
+                                                        .split(' ')
+                                                        .join('+')}&display=swap}');
+                                                `}</style>
+                                                <div
+                                                    style={{
+                                                        width: '100%',
+                                                        height: '100%',
+                                                        display: 'flex',
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+
+                                                        fontFamily: `'${wallpaper.font}', sans-serif` ,
+                                                    }}
+                                                    onClick={(event) => {
+                                                        (event.target as HTMLDivElement).setAttribute(
+                                                            'contenteditable',
+                                                            'true',
+                                                        );
+                                                        (event.target as HTMLDivElement).setAttribute(
+                                                            'spellcheck',
+                                                            'false',
+                                                        );
+                                                        // TODO: !!! Also save the changes after editing
+                                                    }}
+                                                >
+                                                    {wallpaper.title}
+                                                </div>
+                                            </Item.Image>
+                                            */}
                                             <Item.Description>
                                                 <ImagineTag>
                                                     {
-                                                        wallpaper.prompt /* TODO: !!! Hide or show just title+font NOT prompt */
+                                                        wallpaper.prompt /* TODO: !! [2] Hide or show just title+font NOT prompt */
                                                     }
                                                 </ImagineTag>
 

@@ -7,7 +7,7 @@ import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { ContactSection } from '../sections/70-Contact/Contact';
 import { FooterSection } from '../sections/90-Footer/Footer';
-import styles from '../styles/common.module.css';
+import styles from '../styles/static.module.css';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
 import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 

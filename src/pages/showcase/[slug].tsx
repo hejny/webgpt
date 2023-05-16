@@ -10,7 +10,7 @@ import { TiledBackground } from '../../components/TiledBackground/TiledBackgroun
 import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
-import styles from '../../styles/common.module.css';
+import styles from '../../styles/showcase.module.css';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
