@@ -6,6 +6,7 @@ import { Color } from '../../utils/color/Color';
 import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
 import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
 import { textColor } from '../../utils/color/operators/furthest';
+import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
@@ -65,6 +66,15 @@ export function GetWebButton(props: GetWebButtonProps) {
             </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
+                onClick={() => {
+                    // Note: No need for preventDefault
+                    //  [🤰] Just quick-change the HeaderWallpaper for upgoing color
+
+                    // !!! Is this working?
+                    document
+                        .getElementById('HeaderWallpaper')!
+                        .setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
+                }}
                 prefetch={true}
                 /* Note: randomWallpaper image is prefetched here -> [🤰] */
                 className={classNames('button', styles.randomButton)}
