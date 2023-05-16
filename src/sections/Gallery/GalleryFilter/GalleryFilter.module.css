@@ -1,0 +1,32 @@
+.GalleryFilter {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    /*background-color: rgba(41, 81, 168, 0.308);*/
+    margin: 20px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.GalleryFilter > * {
+    /*/
+    outline: 1px dotted green;
+    /**/
+    margin: 10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@media only screen and (max-width: 1000px) {
+    .GalleryFilter {
+        flex-direction: column;
+    }
+}
