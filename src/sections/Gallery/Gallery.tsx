@@ -11,6 +11,7 @@ import { Color } from '../../utils/color/Color';
 import { colorDistanceSquared } from '../../utils/color/utils/colorDistance';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { GalleryFilter } from './GalleryFilter/GalleryFilter';
 
 interface SampleProps {}
 
@@ -45,15 +46,7 @@ export function GallerySection(props: SampleProps) {
             <h1>🎨 Gallery of webs</h1>
             <p>Web pages listed here are pre-generated using AI:</p>
 
-            <div>
-                <h3>Filters</h3>
-                Prefer color:{' '}
-                <input
-                    type="color"
-                    defaultValue={(preferColor || Color.get('white')).toHex()}
-                    onChange={debounce((event) => setPreferColor(Color.fromHex(event.target.value)), 500)}
-                />
-            </div>
+            <GalleryFilter />
             <br />
             {Math.random()}
             <br />

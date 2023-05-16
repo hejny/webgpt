@@ -1,0 +1,16 @@
+.SelectWithFirst {
+    /* TODO: Use or remove empty css */
+}
+
+.SelectWithFirst select {
+    outline: none;
+}
+
+.selected {
+    border: 2px solid red;
+}
+
+.title {
+    display: inline-block;
+    width: 70px;
+}
