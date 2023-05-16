@@ -5,27 +5,38 @@
     position: fixed;
     right: 15px;
     bottom: 15px;
+    width: 220px;
 
-    padding: 5px;
-    background-color: rgba(43, 43, 43, 0.774);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.685);
+    padding: 3px;
+    background-color: rgba(43, 43, 43, 0.11);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(10px);
     border-radius: 6px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: left;
     justify-content: center;
+}
+
+.GetWebButton,
+.GetWebButton * {
+    transition: none;
 }
 
 .getButton,
 .galleryButton,
 .randomButton {
+    border: none;
+    outline: none;
     text-align: center;
     font-size: 17px;
     margin: 5px;
 }
 
 .getButton {
+    flex-grow: 2;
     font-size: 20px;
     /*
     font-weight: bold;
@@ -34,6 +45,7 @@
 }
 
 .galleryButton {
+    flex-grow: 1;
     /*
     background-color: rgb(136, 162, 196);
     color: black !important;
@@ -41,6 +53,7 @@
 }
 
 .randomButton {
+    flex-grow: 1;
     /*
     background-color: rgb(136, 162, 196);
     color: black !important;
@@ -49,12 +62,19 @@
 
 @media only screen and (max-width: 900px) {
     .GetWebButton {
-        display: none;
-        /*
-        TODO: !!!
-        position: absolute;
-        top: 0;
-        bottom: unset;
-        */
+        width: 85px;
+        right: -30px;
+        flex-direction: column;
+    }
+
+    .getButton,
+    .galleryButton,
+    .randomButton {
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+        width: 40px;
+        padding-left: 2px;
+
+        /*transform: rotate(180deg);*/
     }
 }

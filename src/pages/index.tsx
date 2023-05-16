@@ -6,15 +6,15 @@ import { Vector } from 'xyzt';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
-import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../components/ImagineTag/ImagineTag';
 import { Item } from '../components/Items/Item';
 import { Items } from '../components/Items/Items';
 import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { AppHead } from '../sections/00-AppHead/AppHead';
+import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
-import styles from '../styles/common.module.css';
+import { GallerySection } from '../sections/Gallery/Gallery';
+import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
@@ -31,76 +31,18 @@ export default function GalleryPage({ wallpapers }: PageProps) {
         <WallpapersContext.Provider
             value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
         >
-            <AppHead /*subtitle="Gallery" /* <- TODO: !! Translate */ />
+            <StaticAppHead subtitle={null} />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>
-                    <HeaderWallpaper />
-                </header>
+                <header>{/* <HeaderWallpaper /> */}</header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
                     <TiledBackground />
                 </div>
                 <main>
                     {/* !!! <HomepageWelcomeSection variant="SIDEPAGE" />*/}
-                    <Section>
-                        {/* <- TODO: !! Make propper secrion from this */}
-                        {/* TODO: !! Translate */}
-                        <h2>Gallery</h2>
-                        <p>Images used on this page are generated using MidJourney:</p>
-
-                        <Items itemsOnRow={2}>
-                            {wallpapers
-                                // Random sort
-                                //.sort(() => Math.random() - 0.5)
-                                // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
-                                .map((wallpaper, i) => (
-                                    // TODO: <MidjourneyImage/>
-                                    // TODO: Show diffusion as animation
-                                    <Link
-                                        href={`/showcase/${wallpaper.id}`}
-                                        key={i /* <- TODO: Better, can we use just id */}
-                                        // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
-                                    >
-                                        <Item>
-                                            <Item.Image>
-                                                <Image
-                                                    src={wallpaper.src}
-                                                    alt={wallpaper.prompt}
-                                                    draggable="false"
-                                                    placeholder="blur"
-                                                    blurDataURL={colorToDataUrl(wallpaper.colorStats.averageColor)}
-                                                    quality={55}
-                                                    width={Math.round(1920 / 2)}
-                                                    height={Math.round(1080 / 2)}
-                                                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                                                />
-                                            </Item.Image>
-                                            <Item.Description>
-                                                <ImagineTag>
-                                                    {
-                                                        wallpaper.prompt /* TODO: !!! Hide or show just title+font NOT prompt */
-                                                    }
-                                                </ImagineTag>
-
-                                                {/*
-                                                    TODO: !! Put in downloads link to MidJourney>
-
-                                                    <a
-                                                        href="https://www.midjourney.com/app/jobs/..." /* <- From metadata * /
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                    >
-                                                    
-                                                    
-                                                */}
-                                            </Item.Description>
-                                        </Item>
-                                    </Link>
-                                ))}
-                        </Items>
-                    </Section>
+                    <GallerySection />
                 </main>
                 <footer>
                     <FooterSection />

@@ -10,8 +10,9 @@ import { IWallpaperFiles } from './IWallpaperFiles';
 export async function forEachWallpaper(options: {
     makeWork(wallpeperFiles: IWallpaperFiles): Promise<void>;
     parallelWorksCount: number;
+    isShuffled: boolean;
 }): Promise<void> {
-    const { makeWork, parallelWorksCount: parallel } = options;
+    const { makeWork, parallelWorksCount, isShuffled } = options;
 
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
@@ -24,6 +25,10 @@ export async function forEachWallpaper(options: {
 
     const workingOn = new Set<Promise<void>>();
 
+    if (isShuffled) {
+        wallpapersMetadataPaths.sort(() => Math.random() - 0.5);
+    }
+
     for (const metadataPath of wallpapersMetadataPaths) {
         await forPlay();
 
@@ -32,27 +37,29 @@ export async function forEachWallpaper(options: {
         const contentPath = metadataPath.replace(/\.json$/, '.content.md');
         const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.yaml');
 
-        const work = /* not await */ makeWork({ metadataPath, contentPath, colorStatsPath });
+        const work = /* not await */ makeWork({ metadataPath, contentPath, colorStatsPath }).catch((error) => {
+            // TODO: Add timeout error
+            // TODO: [4] report all errors ALSO at the end
+
+            console.error(error);
+        });
         // [3] const work = forTime(0.0263 * 1000 * 60);
         workingOn.add(work);
 
-        work.catch(() => {
-            // TODO: Add timeout error
-            // TODO: [4] report all errors at the end
-        }).then(() => {
+        work.then(() => {
             stats.done++;
             workingOn.delete(work);
         });
 
-        if (workingOn.size >= parallel) {
+        if (workingOn.size >= parallelWorksCount) {
             //-----------
             // [🥼] This is the place
             const statsTotalString = `${stats.done}/${stats.total}`;
             const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
-            const now = moment();
 
             /*
             TODO: !! [3] Make it work for parallel
+            const now = moment();
             const durationOfOne = now.diff(stats.lastTime);
             stats.lastTime = now;
             const statsSpeedString = `${Math.round(((60 * 1000) / durationOfOne) * 10) / 10} img/m`;

@@ -3,7 +3,7 @@ import { colorLuminance } from './colorLuminance';
 import { colorSaturation } from './colorSaturation';
 
 /**
- * Calculates saturation*lightness of the color
+ * Calculates saturation*luminance of the color
  */
 export function colorSatulightion(color: Color): number {
     // TODO: !! There is some flaw in rgbToHsl bacause [1] not work but [2] works - light vs luminance?
@@ -13,7 +13,3 @@ export function colorSatulightion(color: Color): number {
     //[2]:
     return colorSaturation(color) * colorLuminance(color);
 }
-
-/**
- * TODO: !!! Reflect algoritm to descriptions
- */

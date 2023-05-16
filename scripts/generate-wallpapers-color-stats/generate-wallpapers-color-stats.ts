@@ -4,7 +4,9 @@ import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import { join, relative } from 'path';
+import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
+import { COLORSTATS_VERSION } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { computeImageColorStats } from '../../src/utils/image/utils/0-computeImageColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
@@ -22,12 +24,17 @@ if (process.cwd() !== join(__dirname, '../..')) {
 
 const program = new commander.Command();
 program.option('--commit', `Autocommit changes`);
+program.option('--shuffle', `Randomize wallpapers order`);
+// TODO: Probbably tell why to not use --parallel in colors
+program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
+program.parse(process.argv);
+
 // TODO:> program.option('--random', ``);
 // TODO:> program.option('--reverse', ``);
 program.parse(process.argv);
-const { commit: isCommited } = program.opts();
+const { commit: isCommited, shuffle: isShuffled } = program.opts();
 
-generateWallpapersColorStats({ isCommited })
+generateWallpapersColorStats({ isCommited, isShuffled })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -37,7 +44,7 @@ generateWallpapersColorStats({ isCommited })
         process.exit(0);
     });
 
-async function generateWallpapersColorStats({ isCommited }: { isCommited: boolean }) {
+async function generateWallpapersColorStats({ isCommited, isShuffled }: { isCommited: boolean; isShuffled: boolean }) {
     console.info(`🎨  Generating wallpapers color-stats`);
 
     if (isCommited && !(await isWorkingTreeClean(process.cwd()))) {
@@ -45,18 +52,38 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
     }
 
     await forEachWallpaper({
-        parallelWorksCount: 1 /* <- !! Better */,
+        isShuffled,
+        parallelWorksCount: 1,
         async makeWork({ metadataPath, colorStatsPath }) {
             if (await isFileExisting(colorStatsPath)) {
-                console.info(`⏩ Color stats file does already exists`);
-                // TODO: !!! Instead of this Detect if already computed with same version - if yes, skip if no immediatelly make lock with just version
+                const { version } = YAML.parse(await readFile(colorStatsPath, 'utf8'));
+
+                if (version === COLORSTATS_VERSION) {
+                    console.info(`⏩ Color stats file has already been computed with same version`);
+                    return;
+                }
             }
+
+            // Note: Making a lock file to prevent multiple processes to compute the same color stats
+            await writeFile(
+                colorStatsPath,
+                YAML.stringify({
+                    version: COLORSTATS_VERSION,
+                    note: 'This is just a lock before real color stats are made - if you see this the process is still running or it crashed.',
+                })
+                    .split('"')
+                    .join("'") /* <- TODO: Can the replace be done directly in YAML.stringify options? */,
+                'utf8',
+            );
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
             const colorStats = computeImageColorStats(
                 await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
             );
+
+            // TODO: !! Break also createImageInNode, computeImageColorStats and its subfunctions into forImmediate chunks
+            await forImmediate();
 
             await writeFile(
                 colorStatsPath,
@@ -82,7 +109,7 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🎨 Generate wallpapers color-stats`);
+        await commit(await getWallpapersDir(), `🎨 Generate wallpapers color-stats version ${COLORSTATS_VERSION}`);
     }
 
     console.info(`[ Done 🎨  Generating wallpapers color-stats ]`);

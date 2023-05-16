@@ -1,16 +1,16 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 import { Vector } from 'xyzt';
-import { DEFAULT_WALLPAPER_ID } from '../../../config';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
-import { AppHead } from '../../sections/00-AppHead/AppHead';
+import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
-import styles from '../../styles/common.module.css';
+import styles from '../../styles/showcase.module.css';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
@@ -19,20 +19,24 @@ import { randomItem } from '../../utils/randomItem';
 export interface ShowcasePageProps {
     currentWallpaper: IWallpaper;
     randomWallpaper: IWallpaper;
-    defaultWallpaper: IWallpaper;
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
-    let { currentWallpaper, randomWallpaper, defaultWallpaper } = props;
+    let { currentWallpaper, randomWallpaper } = props;
     currentWallpaper = hydrateWallpaper(currentWallpaper);
     randomWallpaper = hydrateWallpaper(randomWallpaper);
-    defaultWallpaper = hydrateWallpaper(defaultWallpaper);
 
     return (
-        <WallpapersContext.Provider
-            value={[currentWallpaper, defaultWallpaper]} /* <- Is this the right place to be Provider in? */
-        >
-            <AppHead />
+        <WallpapersContext.Provider value={[currentWallpaper]} /* <- Is this the right place to be Provider in? */>
+            <ShowcaseAppHead />
+            <Head>
+                <link
+                    // TODO: !!! Is this working? Maybe use prerender
+                    rel="prefetch"
+                    href={randomWallpaper.src}
+                    as="image" /* <- Note: [🤰] Here is preloaded randomWallpaper */
+                />
+            </Head>
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
@@ -72,7 +76,6 @@ export async function getStaticProps({
     const { slug } = params;
 
     const wallpapers = await getWallpapers();
-    const defaultWallpaper = wallpapers.find(({ id }) => id === DEFAULT_WALLPAPER_ID)!;
     const currentWallpaper = wallpapers.find(({ id }) => id === slug);
     const randomWallpaper = randomItem(
         ...wallpapers,
@@ -84,7 +87,6 @@ export async function getStaticProps({
 
             currentWallpaper,
             randomWallpaper,
-            defaultWallpaper,
         },
     };
 }

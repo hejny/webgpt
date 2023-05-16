@@ -19,6 +19,11 @@ export function ShowcaseWelcomeSection() {
             </h1>
             */}
 
+            <style>{`
+                @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font
+                    .split(' ')
+                    .join('+')}&display=swap}');
+            `}</style>
             <div
                 style={{
                     fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,

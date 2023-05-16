@@ -6,6 +6,7 @@ import { Color } from '../../utils/color/Color';
 import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
 import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
 import { textColor } from '../../utils/color/operators/furthest';
+import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
@@ -28,7 +29,7 @@ export function GetWebButton(props: GetWebButtonProps) {
     const router = useRouter();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
-    const backgroundColor = Color.from(`#60f1a8`);
+    const backgroundColor = Color.from(`#8dc1e4`);
 
     const minorButtonStyle = {
         backgroundColor: backgroundColor
@@ -54,28 +55,47 @@ export function GetWebButton(props: GetWebButtonProps) {
             >
                 <Article content="I ❤ this web!" isEnhanced />
             </Link>
-            <div>
-                <Link href={'/'} className={classNames('button', styles.galleryButton)} style={minorButtonStyle}>
-                    Gallery
-                </Link>
-                <Link
-                    href={`/showcase/${randomWallpaper.id}`}
-                    className={classNames('button', styles.randomButton)}
-                    style={{
-                        ...minorButtonStyle,
 
-                        backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
-                        color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
-                    }}
-                >
-                    Random
-                </Link>
-            </div>
+            <Link
+                href={'/'}
+                className={classNames('button', styles.galleryButton)}
+                style={minorButtonStyle}
+                prefetch={false}
+            >
+                <Article content="Gallery" isEnhanced />
+            </Link>
+            <Link
+                href={`/showcase/${randomWallpaper.id}`}
+                onClick={() => {
+                    // Note: No need for preventDefault
+                    //  [🤰] Just quick-change the HeaderWallpaper for upgoing color
+
+                    const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
+
+                    console.log('HeaderWallpaper', headerWallpaperElement);
+
+                    // !!! Is this working?
+                    headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
+                    headerWallpaperElement.removeAttribute('srcset');
+                }}
+                prefetch={true}
+                /* Note: randomWallpaper image is prefetched here -> [🤰] */
+                className={classNames('button', styles.randomButton)}
+                style={{
+                    ...minorButtonStyle,
+
+                    backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
+                    color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                }}
+            >
+                <Article content="🎲" isEnhanced />
+            </Link>
         </div>
     );
 }
 
 /**
+ * TODO: !!! [🤰] Pick one working method for immediate change of HeaderWallpaper and cleanup rest
  * TODO: !!! No outline - simpler design
  * TODO: !!! On mobile
  * TODO: !!! [Previous][Next]
@@ -83,6 +103,7 @@ export function GetWebButton(props: GetWebButtonProps) {
  * TODO: !! [👕] [Change photo]
  * TODO: !! [👕] [Change content] to change the markdown
  * TODO: !!! Allow to => export (+Collboard export) => Buy
+ * TODO: !! Rename component to something more meaningful
  * TODO: !! Use translate
  * TODO: !! [🧶] Show here prompt, link to midjourney, how it was made,...
  */

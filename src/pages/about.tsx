@@ -4,10 +4,10 @@ import { PageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { AppHead } from '../sections/00-AppHead/AppHead';
+import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import { TechnicalInfo } from '../sections/TechnicalInfo/TechnicalInfo';
-import styles from '../styles/common.module.css';
+import styles from '../styles/static.module.css';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
 import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 
@@ -16,7 +16,7 @@ export default function AboutPage({ wallpapers }: PageProps) {
         <WallpapersContext.Provider
             value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
         >
-            <AppHead /*subtitle="About" /* <- TODO: !! Translate */ />
+            <StaticAppHead subtitle="About" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />

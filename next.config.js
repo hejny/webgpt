@@ -24,6 +24,7 @@ const nextConfig = {
         });
         return config;
     },
+    staticPageGenerationTimeout: 60 * 5 /* 5 minutes */,
 };
 
 module.exports = nextConfig;
