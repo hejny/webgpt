@@ -12,8 +12,6 @@ import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
 
-
-
 /**
  * Compute the image color statistics
  */

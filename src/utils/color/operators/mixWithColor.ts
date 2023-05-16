@@ -7,7 +7,7 @@ import { IColorTransformer } from './IColorTransformer';
  * @param ratio the ratio of the first color to the second color, from 0 to 1
  * @param additionalColor the second color to mix with the first color
  */
-export function mix(ratio: number, additionalColor: Color): IColorTransformer {
+export function mixWithColor(ratio: number, additionalColor: Color): IColorTransformer {
     return (baseColor: Color) => {
         const r = Math.round(baseColor.red * (1 - ratio) + additionalColor.red * ratio);
         const g = Math.round(baseColor.green * (1 - ratio) + additionalColor.green * ratio);

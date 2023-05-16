@@ -3,7 +3,7 @@ import { Color } from './color/Color';
 import { darken } from './color/operators/darken';
 import { textColor } from './color/operators/furthest';
 import { grayscale } from './color/operators/grayscale';
-import { mix } from './color/operators/mix';
+import { mixWithColor } from './color/operators/mixWithColor';
 import { negative } from './color/operators/negative';
 import { withAlpha } from './color/operators/withAlpha';
 
@@ -27,14 +27,17 @@ export interface ISkin {
 export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     const { colorStats } = wallpaper;
 
-    // TODO: !!! use here a palette
-    // TODO: !!!!! vars should be only a palette like --primaty --secondary --tertiary,...
-    
+    // TODO: Maybe !! use here a palette
+    // TODO: Maybe !! vars should be only a palette like --primaty --secondary --tertiary,...
+
+    // 1️⃣ Figure out the main background color - take the most frequent color from the bottom third of the image
+    const mainBackgroundColor = colorStats.mostFrequentColors[0];
+
     const highlightedTextColor = colorStats.mostSatulightedColors[0].then(textColor);
     const highlightedTextShaddow = `0 0 30px ${highlightedTextColor.then(negative).toHex()}`;
-    const normalTextColor = highlightedTextColor.then(mix(0.2, colorStats.mostFrequentColors[0]));
+    const normalTextColor = highlightedTextColor.then(mixWithColor(0.2, colorStats.mostFrequentColors[0]));
 
-    const mainBackground = `linear-gradient(to bottom, ${colorStats.bottomThird.mostSatulightedColors[0].toHex()}, ${colorStats.bottomThird.mostSatulightedColors[0]
+    const mainBackground = `linear-gradient(to bottom, ${mainBackgroundColor.toHex()}, ${mainBackgroundColor
         .then(grayscale)
         .then(withAlpha(0.5))
         .toHex()}),

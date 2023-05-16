@@ -1,4 +1,6 @@
-export function computeImagePalette() {
+import { IImageColorStats } from './IImageColorStats';
+
+export function computeImagePalette(colorStats: IImageColorStats) {
     /*
 ... mostSatulightedColors, darkestColor, lightestColor, ... most grouped, most frequent 
 
@@ -9,5 +11,5 @@ export function computeImagePalette() {
 }
 
 /**
- * TODO: !! Implement - Use 3️⃣ from computeImageMostSatulightedColors
+ * TODO: Maybe !! Implement - Use 3️⃣ from computeImageMostSatulightedColors
  */
