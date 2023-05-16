@@ -42,7 +42,7 @@ export function GallerySection(props: SampleProps) {
                         // TODO: Show diffusion as animation
                         <Link
                             href={`/showcase/${wallpaper.id}`}
-                            key={i /* <- TODO: Better, can we use just id */}
+                            key={wallpaper.id}
                             // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
                         >
                             <Item>
