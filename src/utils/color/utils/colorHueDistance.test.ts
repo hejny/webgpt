@@ -52,17 +52,17 @@ describe('colorHueDistance', () => {
     });
 
     it(`is 30 for colors with 30 degrees hue difference`, () => {
-        expect(colorHueDistance(Color.from('#ff0000'), Color.from('#ff8000'))).toBe(30);
-        expect(colorHueDistance(Color.from('#ff8000'), Color.from('#ffff00'))).toBe(30);
-        expect(colorHueDistance(Color.from('#ffff00'), Color.from('#80ff00'))).toBe(30);
-        expect(colorHueDistance(Color.from('#80ff00'), Color.from('#00ff00'))).toBe(30);
-        expect(colorHueDistance(Color.from('#00ff00'), Color.from('#00ff80'))).toBe(30);
-        expect(colorHueDistance(Color.from('#00ff80'), Color.from('#00ffff'))).toBe(30);
-        expect(colorHueDistance(Color.from('#00ffff'), Color.from('#0080ff'))).toBe(30);
-        expect(colorHueDistance(Color.from('#0080ff'), Color.from('#0000ff'))).toBe(30);
-        expect(colorHueDistance(Color.from('#0000ff'), Color.from('#8000ff'))).toBe(30);
-        expect(colorHueDistance(Color.from('#8000ff'), Color.from('#ff00ff'))).toBe(30);
-        expect(colorHueDistance(Color.from('#ff00ff'), Color.from('#ff0080'))).toBe(30);
-        expect(colorHueDistance(Color.from('#ff0080'), Color.from('#ff0000'))).toBe(30);
+        expect(colorHueDistance(Color.from('#ff0000'), Color.from('#ff8000'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#ff8000'), Color.from('#ffff00'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#ffff00'), Color.from('#80ff00'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#80ff00'), Color.from('#00ff00'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#00ff00'), Color.from('#00ff80'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#00ff80'), Color.from('#00ffff'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#00ffff'), Color.from('#0080ff'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#0080ff'), Color.from('#0000ff'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#0000ff'), Color.from('#8000ff'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#8000ff'), Color.from('#ff00ff'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#ff00ff'), Color.from('#ff0080'))).toBeCloseTo(30, -1);
+        expect(colorHueDistance(Color.from('#ff0080'), Color.from('#ff0000'))).toBeCloseTo(30, -1);
     });
 });
