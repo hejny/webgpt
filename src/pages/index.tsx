@@ -6,13 +6,12 @@ import { Vector } from 'xyzt';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
-import { HeaderWallpaper } from '../components/HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../components/ImagineTag/ImagineTag';
 import { Item } from '../components/Items/Item';
 import { Items } from '../components/Items/Items';
 import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { AppHead } from '../sections/00-AppHead/AppHead';
+import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { classNames } from '../utils/classNames';
@@ -31,13 +30,11 @@ export default function GalleryPage({ wallpapers }: PageProps) {
         <WallpapersContext.Provider
             value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
         >
-            <AppHead /*subtitle="Gallery" /* <- TODO: !! Translate */ />
+            <StaticAppHead subtitle={null} />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
                 <DebugGrid size={new Vector(5, 5)} />
-                <header>
-                    <HeaderWallpaper />
-                </header>
+                <header>{/* <HeaderWallpaper /> */}</header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
                     <TiledBackground />

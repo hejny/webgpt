@@ -5,7 +5,7 @@ import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { AppHead } from '../sections/00-AppHead/AppHead';
+import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
@@ -13,8 +13,10 @@ import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 
 export default function NotFoundPage({ wallpapers }: PageProps) {
     return (
-        <WallpapersContext.Provider value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */>
-            <AppHead /*subtitle="Not found" /* <- TODO: !! Translate */ />
+        <WallpapersContext.Provider
+            value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
+        >
+            <StaticAppHead subtitle="Not found" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />

@@ -4,7 +4,7 @@ import { PageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { AppHead } from '../sections/00-AppHead/AppHead';
+import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { ReferencesSection } from '../sections/40-References/References';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/common.module.css';
@@ -16,7 +16,7 @@ export default function ReferencesPage({ wallpapers }: PageProps) {
         <WallpapersContext.Provider
             value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
         >
-            <AppHead /*subtitle="References" /* <- TODO: !! Translate */ />
+            <StaticAppHead subtitle="References" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />

@@ -1,31 +1,22 @@
 import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
-import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
-import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
-import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
-import { useSkin } from '../../utils/hooks/useSkin';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
+
+interface StaticAppHeadProps {
+    subtitle: string | null;
+}
 
 /**
  * @@@
  */
-export function AppHead() {
-    const wallpaper =
-        useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
-    const skin = useSkin();
+export function StaticAppHead(props: StaticAppHeadProps) {
+    const { subtitle } = props;
 
-    const title = '👓' + wallpaper.title;
-    const description =
-        '⭐' +
-        removeMarkdownFormatting(
-            removeMarkdownLinks(wallpaper.content),
-        ); /* <- TODO: !!! Better/remove the prefix 👓⭐ ?Generate by ChatGPT? */
-
+    // TODO: !! Use translation
+    const title = (subtitle ? subtitle + ' 🎨 ' : '') + `Gallery of AI generated images`;
+    const description = `!!!`;
     const homeUrl = 'https://ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
-    // TODO: !!! Sharing to FB is not wotking
-    // TODO: !!! Test sharing to Twitter
-    // TODO: !!! Test sharing to LinkedIn
     return (
         <>
             <Head>
@@ -37,19 +28,13 @@ export function AppHead() {
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
-                <meta
-                    name="theme-color"
-                    content={skin.mainBackground /* <- TODO: Is it a good idea to pick theme-color this way */}
-                />
+                <meta name="theme-color" content={'#000000'} />
 
                 {/* Open Graph (Facebook) */}
                 <meta property="og:title" content={title} />
                 <meta property="og:site_name" content={title} />
                 <meta property="og:description" content={description} />
-                <meta
-                    property="og:image"
-                    content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
-                />
+                <meta property="og:image" content={'!!!'} />
                 <meta property="og:url" content={homeUrl} />
                 <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
 
@@ -62,13 +47,9 @@ export function AppHead() {
                 <meta property="twitter:url" content={homeUrl} />
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
-                <meta
-                    property="twitter:image"
-                    content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
-                />
+                <meta property="twitter:image" content={`!!!`} />
             </Head>
-            {/* TODO: <LanguagePicker /> */}
-            <SkinStyle />
+            <LanguagePicker />
         </>
     );
 }
