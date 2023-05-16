@@ -6,7 +6,6 @@ import { colorDownscaleImage } from './colorDownscaleImage';
 import { computeImageAverageColor } from './computeImageAverageColor';
 import { computeImageDarkestColor } from './computeImageDarkestColor';
 import { computeImageLightestColor } from './computeImageLightestColor';
-import { computeImageMinmaxColors } from './computeImageMinmaxColors';
 import { computeImageMostFrequentColors } from './computeImageMostFrequentColors';
 import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
@@ -42,12 +41,6 @@ function computeWholeImageColorStats(image: IImage): IImageColorStatsRegion {
         averageColor: computeImageAverageColor(image),
         lightestColor: computeImageLightestColor(image),
         darkestColor: computeImageDarkestColor(image),
-
-        minmaxWhite: computeImageMinmaxColors(image, Color.fromHex('#FFFFFF')),
-        minmaxRed: computeImageMinmaxColors(image, Color.fromHex('#FF0000')),
-        minmaxGreen: computeImageMinmaxColors(image, Color.fromHex('#00FF00')),
-        minmaxBlue: computeImageMinmaxColors(image, Color.fromHex('#0000FF')),
-
         mostFrequentColors: computeImageMostFrequentColors(image),
         mostSatulightedColors: computeImageMostSatulightedColors(image),
         mostGroupedColors: computeImageMostGroupedColors(image),

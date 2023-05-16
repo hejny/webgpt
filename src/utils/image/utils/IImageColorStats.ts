@@ -49,27 +49,4 @@ export interface IImageColorStatsRegion {
      */
     mostGroupedColors: Array<WithTake<Color>>;
 
-    /**
-     * Colors that are nearest and furthest from white
-     */
-    minmaxWhite: [WithTake<Color>, WithTake<Color>];
-
-    /**
-     * Colors that are nearest and furthest from red
-     */
-    minmaxRed: [WithTake<Color>, WithTake<Color>];
-
-    /**
-     * Colors that are nearest and furthest from green
-     */
-    minmaxGreen: [WithTake<Color>, WithTake<Color>];
-
-    /**
-     * Colors that are nearest and furthest from blue
-     */
-    minmaxBlue: [WithTake<Color>, WithTake<Color>];
 }
-
-/**
- * TODO: !! MinMax as interface as {min: Color, max: Color}
- */
