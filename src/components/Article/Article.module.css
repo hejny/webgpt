@@ -3,12 +3,12 @@
 
 .Article h1 {
     line-height: 110%;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 65px;
 }
 
 .Article h2 {
-    margin-top: 30px;
+    margin-top: 50px;
     border-bottom: 1px solid var(--normal-text-color);
 }
 
@@ -20,6 +20,14 @@
 .Article hr {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.Article blockquote {
+    font-size: 1.2em;
+    border: 2px solid var(--palette-0);
+    margin: 20px;
+    padding: 20px;
+    /* TODO: Allow to mix opacity> background-color: rgba(var(--palette-1), 0.5); @see https://stackoverflow.com/a/41265350 */
 }
 
 /*
