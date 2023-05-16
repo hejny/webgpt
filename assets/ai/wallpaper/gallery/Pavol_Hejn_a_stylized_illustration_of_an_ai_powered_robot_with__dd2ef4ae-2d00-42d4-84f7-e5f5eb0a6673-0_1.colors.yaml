@@ -1,0 +1,99 @@
+version: 6
+averageColor: '#77a6a7'
+lightestColor: '#ffffff'
+darkestColor: '#001100'
+minmaxWhite:
+    - '#ffffff'
+    - '#000000'
+minmaxRed:
+    - '#dd2200'
+    - '#ccffff'
+minmaxGreen:
+    - '#229988'
+    - '#cc0011'
+minmaxBlue:
+    - '#004488'
+    - '#ffffcc'
+mostFrequentColors:
+    - '#88bbbb'
+mostSatulightedColors:
+    - '#22aabb'
+    - '#ff5566'
+    - '#ffaa66'
+    - '#88ddbb'
+    - '#772255'
+mostGroupedColors:
+    - '#88bbbb'
+bottomHalf:
+    averageColor: '#65989c'
+    lightestColor: '#ffffff'
+    darkestColor: '#001100'
+    minmaxWhite:
+        - '#ffffff'
+        - '#000000'
+    minmaxRed:
+        - '#cc2222'
+        - '#ccffff'
+    minmaxGreen:
+        - '#229988'
+        - '#990044'
+    minmaxBlue:
+        - '#116699'
+        - '#ffffdd'
+    mostFrequentColors:
+        - '#88bbbb'
+    mostSatulightedColors:
+        - '#33aabb'
+        - '#990044'
+        - '#ff6655'
+        - '#ffdd99'
+        - '#88ddbb'
+        - '#556699'
+    mostGroupedColors:
+        - '#88bbbb'
+bottomThird:
+    averageColor: '#5f9296'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    minmaxWhite:
+        - '#ffffff'
+        - '#000000'
+    minmaxRed:
+        - '#dd3344'
+        - '#ccffff'
+    minmaxGreen:
+        - '#229988'
+        - '#990044'
+    minmaxBlue:
+        - '#116688'
+        - '#ffffee'
+    mostFrequentColors:
+        - '#88bbbb'
+    mostSatulightedColors:
+        - '#33aabb'
+        - '#990044'
+        - '#ff5544'
+    mostGroupedColors:
+        - '#88bbbb'
+bottomLine:
+    averageColor: '#5c9197'
+    lightestColor: '#99dddd'
+    darkestColor: '#002233'
+    minmaxWhite:
+        - '#99dddd'
+        - '#002233'
+    minmaxRed:
+        - '#002233'
+        - '#88dddd'
+    minmaxGreen:
+        - '#449988'
+        - '#002244'
+    minmaxBlue:
+        - '#116688'
+        - '#99ddcc'
+    mostFrequentColors:
+        - '#88bbbb'
+    mostSatulightedColors:
+        - '#33aabb'
+    mostGroupedColors:
+        - '#88bbbb'

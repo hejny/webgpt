@@ -1,0 +1,99 @@
+version: 6
+averageColor: '#a26954'
+lightestColor: '#ffffee'
+darkestColor: '#000000'
+minmaxWhite:
+    - '#ffffee'
+    - '#000000'
+minmaxRed:
+    - '#cc3333'
+    - '#ffffee'
+minmaxGreen:
+    - '#777766'
+    - '#ffffee'
+minmaxBlue:
+    - '#223355'
+    - '#ffffbb'
+mostFrequentColors:
+    - '#002233'
+mostSatulightedColors:
+    - '#ff6655'
+    - '#ffbb55'
+    - '#994477'
+    - '#223355'
+    - '#eeffcc'
+mostGroupedColors:
+    - '#112233'
+bottomHalf:
+    averageColor: '#4c3d43'
+    lightestColor: '#ffffee'
+    darkestColor: '#000000'
+    minmaxWhite:
+        - '#ffffee'
+        - '#000000'
+    minmaxRed:
+        - '#dd4433'
+        - '#ffffee'
+    minmaxGreen:
+        - '#777766'
+        - '#ffffee'
+    minmaxBlue:
+        - '#223355'
+        - '#ffffbb'
+    mostFrequentColors:
+        - '#002233'
+    mostSatulightedColors:
+        - '#ffaa55'
+        - '#dd4455'
+        - '#eeee99'
+        - '#774466'
+        - '#223355'
+    mostGroupedColors:
+        - '#112233'
+bottomThird:
+    averageColor: '#2a2e3b'
+    lightestColor: '#ffbb88'
+    darkestColor: '#000011'
+    minmaxWhite:
+        - '#ffcc88'
+        - '#000011'
+    minmaxRed:
+        - '#aa5544'
+        - '#ffcc88'
+    minmaxGreen:
+        - '#777766'
+        - '#000011'
+    minmaxBlue:
+        - '#333355'
+        - '#ffcc77'
+    mostFrequentColors:
+        - '#002233'
+    mostSatulightedColors:
+        - '#ffaa55'
+        - '#bb6666'
+        - '#663355'
+        - '#113344'
+    mostGroupedColors:
+        - '#112233'
+bottomLine:
+    averageColor: '#0f2233'
+    lightestColor: '#112233'
+    darkestColor: '#002233'
+    minmaxWhite:
+        - '#112233'
+        - '#002233'
+    minmaxRed:
+        - '#112233'
+        - '#002233'
+    minmaxGreen:
+        - '#002233'
+        - '#112233'
+    minmaxBlue:
+        - '#112233'
+        - '#002233'
+    mostFrequentColors:
+        - '#002233'
+    mostSatulightedColors:
+        - '#002233'
+    mostGroupedColors:
+        - '#112233'
