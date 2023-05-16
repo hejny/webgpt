@@ -28,7 +28,7 @@ export function GetWebButton(props: GetWebButtonProps) {
     const router = useRouter();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
-    const backgroundColor = Color.from(`#60f1a8`);
+    const backgroundColor = Color.from(`#8dc1e4`);
 
     const minorButtonStyle = {
         backgroundColor: backgroundColor
@@ -54,24 +54,23 @@ export function GetWebButton(props: GetWebButtonProps) {
             >
                 <Article content="I ❤ this web!" isEnhanced />
             </Link>
-            <div>
-                <Link href={'/'} className={classNames('button', styles.galleryButton)} style={minorButtonStyle}>
-                    Gallery
-                </Link>
-                <Link
-                    href={`/showcase/${randomWallpaper.id}`}
-                    /* Note: randomWallpaper image is preloaded here -> [🤰] */
-                    className={classNames('button', styles.randomButton)}
-                    style={{
-                        ...minorButtonStyle,
 
-                        backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
-                        color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
-                    }}
-                >
-                    Random
-                </Link>
-            </div>
+            <Link href={'/'} className={classNames('button', styles.galleryButton)} style={minorButtonStyle}>
+                Gallery
+            </Link>
+            <Link
+                href={`/showcase/${randomWallpaper.id}`}
+                /* Note: randomWallpaper image is preloaded here -> [🤰] */
+                className={classNames('button', styles.randomButton)}
+                style={{
+                    ...minorButtonStyle,
+
+                    backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
+                    color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                }}
+            >
+                Random
+            </Link>
         </div>
     );
 }
@@ -84,6 +83,7 @@ export function GetWebButton(props: GetWebButtonProps) {
  * TODO: !! [👕] [Change photo]
  * TODO: !! [👕] [Change content] to change the markdown
  * TODO: !!! Allow to => export (+Collboard export) => Buy
+ * TODO: !! Rename component to something more meaningful
  * TODO: !! Use translate
  * TODO: !! [🧶] Show here prompt, link to midjourney, how it was made,...
  */

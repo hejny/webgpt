@@ -29,7 +29,7 @@ body {
 
 .button:hover {
     filter: hue-rotate(30deg);
-    box-shadow: var(--highlighted-text-color) 0 0 5px;
+    box-shadow: #0000004d 0 0 10px;
 }
 
 .button.button-featured {
