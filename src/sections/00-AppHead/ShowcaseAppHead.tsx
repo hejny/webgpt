@@ -3,6 +3,7 @@ import favicon from '../../../public/favicon.ico';
 import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
+
 import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
@@ -21,8 +22,7 @@ export function ShowcaseAppHead() {
             removeMarkdownLinks(wallpaper.content),
         ); /* <- TODO: !!! Better/remove the prefix 👓⭐ ?Generate by ChatGPT? */
 
-    const homeUrl =
-        'https://ai.hejny.org'; /* <- TODO: Self URL into some configuration */ /* <- TODO: !! Add showcase/[slug] here */
+    const homeUrl = `https://ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
     // TODO: !!! Sharing to FB is not wotking
     // TODO: !!! Test sharing to Twitter

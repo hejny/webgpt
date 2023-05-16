@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
+import gallery1Image from '../../../public/screenshots/gallery-1.png';
 import { LanguagePicker } from '../../components/LanguagePicker/LanguagePicker';
 
 interface StaticAppHeadProps {
@@ -13,8 +14,8 @@ export function StaticAppHead(props: StaticAppHeadProps) {
     const { subtitle } = props;
 
     // TODO: !! Use translation
-    const title = (subtitle ? subtitle + ' 🎨 ' : '') + `Gallery of AI generated images`;
-    const description = `!!!`;
+    const title = (subtitle ? subtitle + ' 🎨 ' : '') + `AI Web Maker`;
+    const description = `Thousands of AI generated web designs`;
     const homeUrl = 'https://ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
     return (
@@ -34,7 +35,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
                 <meta property="og:title" content={title} />
                 <meta property="og:site_name" content={title} />
                 <meta property="og:description" content={description} />
-                <meta property="og:image" content={'!!!'} />
+                <meta property="og:image" content={gallery1Image.src} />
                 <meta property="og:url" content={homeUrl} />
                 <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
 
@@ -47,7 +48,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
                 <meta property="twitter:url" content={homeUrl} />
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
-                <meta property="twitter:image" content={`!!!`} />
+                <meta property="twitter:image" content={gallery1Image.src} />
             </Head>
             <LanguagePicker />
         </>
