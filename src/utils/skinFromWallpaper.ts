@@ -22,6 +22,8 @@ export interface ISkin {
     footerTextColor: Color;
     mainBackground: string;
     footerBackground: string;
+
+    palette: Array<Color>;
 }
 
 /**
@@ -67,6 +69,14 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
             footerTextColor,
             mainBackground,
             footerBackground,
+
+            palette: [
+                // TODO: Share [9]
+                ...colorStats.mostFrequentColors,
+                ...colorStats.mostSatulightedColors,
+
+                // TODO: !!! More
+            ],
         };
 
         /*/
@@ -92,6 +102,8 @@ function* generatePrimaryColorCandidates(colorStats: IImageColorStats): Iterable
         colorStats,
         colorStats.bottomLine /* TODO: Combinations */,
     ]) {
+        // TODO: Share [9]
+
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
             yield mostFrequentColor;
         }

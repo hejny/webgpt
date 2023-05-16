@@ -16,9 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Montserrat-->
+<!--font:Orbitron-->
 
-# AInauts Wallpaper - Explore the Future of Space Exploration
+# Ainautes
+
+> Mission:Future
 
 Welcome to our website, where we celebrate the future of space exploration with our stunning AInauts wallpaper. Our wallpaper features a group of AInauts conducting experiments on a distant planet, with a red sun setting behind them. This captivating image captures the imagination and inspires us to explore the unknown.
 

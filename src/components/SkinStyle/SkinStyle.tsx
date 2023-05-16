@@ -14,12 +14,16 @@ export function SkinStyle() {
                 --highlighted-text-shaddow: ${skin.highlightedTextShaddow};
                 --footer-text-color: ${skin.footerTextColor.toHex()};
                 --main-background: ${skin.mainBackground};
-                --footer-background: ${skin.footerBackground}
+                --footer-background: ${skin.footerBackground};
+
+                ${skin.palette.map((color, i) => `--palette-${i}: ${color.toHex()};`).join('\n')}
+      
             }
         `}</style>
     );
 }
 
 /**
+ * TODO: !!! Make repeat in palette to guarantee at least 10 colors
  * TODO: Allow partial ISkin
  */
