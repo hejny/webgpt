@@ -15,12 +15,13 @@ export function ShowcaseAppHead() {
         useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
     const skin = useSkin();
 
-    const title = '👓' + wallpaper.title;
-    const description =
-        '⭐' +
-        removeMarkdownFormatting(
-            removeMarkdownLinks(wallpaper.content),
-        ); /* <- TODO: !!! Better/remove the prefix 👓⭐ ?Generate by ChatGPT? */
+    // TODO: !! IWalpaper should have custom emoji which will be contained here
+
+    const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
+    const description = removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content)).replace(
+        '# ' + wallpaper.title,
+        '' /* <- TODO: !!! Title should be removed in removeMarkdownFormatting */,
+    );
 
     const homeUrl = `https://ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
