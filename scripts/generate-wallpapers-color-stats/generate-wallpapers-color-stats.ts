@@ -4,6 +4,7 @@ import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import { join, relative } from 'path';
+import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
 import { COLORSTATS_VERSION } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
@@ -77,6 +78,9 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
             const colorStats = computeImageColorStats(
                 await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
             );
+
+            // TODO: !! Break also createImageInNode, computeImageColorStats and its subfunctions into forImmediate chunks
+            await forImmediate();
 
             await writeFile(
                 colorStatsPath,

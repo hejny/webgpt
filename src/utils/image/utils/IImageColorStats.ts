@@ -35,15 +35,7 @@ export interface IImageColorStatsRegion {
     darkestColor: WithTake<Color>;
 
     /**
-     * The most saturation*lightness colors of the image as a Color object ...@@@!!!!
-
-
-nejdřív všechny barvy se řadím
-nejdříve futruju ty Šárka které mají alespoň nějakou minimální hodnotu – pokud je obrázek černobílý tohle bude prostě prázdné a nevadí mi to
-potom vyberu pouze ty, které mají alespoň 0.62 – zlatý řez saturation X light hodnoty
-ty pak vybírám ty pak postupně beru od něj do nejméně avšak maximálně do těch 0,62 a u každé hodnotím, zda je její hue alespoň o 30 úhlových stupňů jiné oproti všem ostatním
-
-
+     * The most saturation*luminance colors of the image with different hue as a Color object
      */
     mostSatulightedColors: Array<WithTake<Color>>;
 

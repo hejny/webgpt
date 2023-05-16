@@ -16,7 +16,7 @@ export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 
 export const DEFAULT_WALLPAPER_ID = '7e9b434d-59bc-4d69-a486-d7401d94f5e0'; /* <- TODO: Maybe through propper config */
 
-export const COLORSTATS_VERSION = 5;
+export const COLORSTATS_VERSION = 6;
 
 export const FONTS = [
     'Montserrat',
