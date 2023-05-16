@@ -35,7 +35,7 @@ export const FONTS = [
     // TODO: !!! List more
 ];
 
-export const COLORSTATS_VERSION = 6;
+export const COLORSTATS_VERSION = 7;
 export const COLORS_LIMIT = 10;
 export const MOST_SATULIGHTED_COLORS_SATULIGHTION_TRERESHOLD_RATIO = 0.5;
 export const MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES = 30;
