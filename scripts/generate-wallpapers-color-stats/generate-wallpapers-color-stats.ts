@@ -5,6 +5,7 @@ import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import { join, relative } from 'path';
 import YAML from 'yaml';
+import { COLORSTATS_VERSION } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { computeImageColorStats } from '../../src/utils/image/utils/0-computeImageColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
@@ -54,9 +55,22 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
         parallelWorksCount: 1,
         async makeWork({ metadataPath, colorStatsPath }) {
             if (await isFileExisting(colorStatsPath)) {
-                console.info(`⏩ Color stats file does already exists`);
-                // TODO: !!! Instead of this Detect if already computed with same version - if yes, skip if no immediatelly make lock with just version
+                const { version } = YAML.parse(await readFile(colorStatsPath, 'utf8'));
+
+                if (version === COLORSTATS_VERSION) {
+                    console.info(`⏩ Color stats file has already been computed with same version`);
+                    return;
+                }
             }
+
+            // Note: Making a lock file to prevent multiple processes to compute the same color stats
+            await writeFile(
+                colorStatsPath,
+                YAML.stringify({ version: COLORSTATS_VERSION })
+                    .split('"')
+                    .join("'") /* <- TODO: Can the replace be done directly in YAML.stringify options? */,
+                'utf8',
+            );
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;

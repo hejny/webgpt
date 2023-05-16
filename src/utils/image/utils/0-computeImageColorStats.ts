@@ -1,4 +1,5 @@
 import { Vector } from 'xyzt';
+import { COLORSTATS_VERSION } from '../../../../config';
 import { Color } from '../../color/Color';
 import { IImage } from '../IImage';
 import { colorDownscaleImage } from './colorDownscaleImage';
@@ -11,12 +12,14 @@ import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
 
+
+
 /**
  * Compute the image color statistics
  */
 export function computeImageColorStats(image: IImage): IImageColorStats {
     return {
-        version: 5,
+        version: COLORSTATS_VERSION,
         ...computeWholeImageColorStats(image),
         bottomHalf: computeWholeImageColorStats(
             image.crop(new Vector(0, image.height * (1 / 2)), new Vector(image.width, image.height)),

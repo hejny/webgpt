@@ -14,4 +14,27 @@ export const VERCEL_GIT_COMMIT_SHA = config.get('VERCEL_GIT_COMMIT_SHA').value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 
-export const DEFAULT_WALLPAPER_ID = '7e9b434d-59bc-4d69-a486-d7401d94f5e0' /* <- TODO: Maybe through propper config */;
+export const DEFAULT_WALLPAPER_ID = '7e9b434d-59bc-4d69-a486-d7401d94f5e0'; /* <- TODO: Maybe through propper config */
+
+export const COLORSTATS_VERSION = 5;
+
+export const FONTS = [
+    'Montserrat',
+    'Poppins',
+    'Open Sans',
+    'Lobster',
+    'Playfair Display',
+    'Great Vibes',
+    'Lato',
+    'Roboto',
+    'Inter',
+    'IBM Plex Sans',
+    'Exo 2',
+    'Orbitron',
+    'Dancing Script',
+    'Alegreya',
+    'Raleway',
+    'Futura',
+    'Barlow Condensed',
+    // TODO: !!! List more
+];

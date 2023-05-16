@@ -27,11 +27,14 @@ export interface ISkin {
 export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     const { colorStats } = wallpaper;
 
-    const highlightedTextColor = colorStats.mostSaturatedColor.then(textColor);
+    // TODO: !!! use here a palette
+    // TODO: !!!!! vars should be only a palette like --primaty --secondary --tertiary,...
+    
+    const highlightedTextColor = colorStats.mostSatulightedColors[0].then(textColor);
     const highlightedTextShaddow = `0 0 30px ${highlightedTextColor.then(negative).toHex()}`;
-    const normalTextColor = highlightedTextColor.then(mix(0.2, colorStats.mostFrequentColor));
+    const normalTextColor = highlightedTextColor.then(mix(0.2, colorStats.mostFrequentColors[0]));
 
-    const mainBackground = `linear-gradient(to bottom, ${colorStats.bottom.mostSaturatedColor.toHex()}, ${colorStats.bottom.mostSaturatedColor
+    const mainBackground = `linear-gradient(to bottom, ${colorStats.bottomThird.mostSatulightedColors[0].toHex()}, ${colorStats.bottomThird.mostSatulightedColors[0]
         .then(grayscale)
         .then(withAlpha(0.5))
         .toHex()}),
@@ -66,7 +69,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
 }
 
 /**
- * TODO: !! Use computeImagePalette
+ * TODO: !! Use computeImagePalette OR precumpute in colorstats (v7)
  *       - https://ai.hejny.org/showcase/5cec4e9b-6a09-46d7-be3f-342ad9cf9ed3 (white text)
  * TODO: Make footer dynamic from Wallpaper
  */

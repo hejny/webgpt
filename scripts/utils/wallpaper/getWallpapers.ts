@@ -1,22 +1,35 @@
+import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
+import { COLORSTATS_VERSION, FONTS } from '../../../config';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
 
-const wallpapers: Array<IWallpaper> = [];
+/**
+ * @@@
+ */
+let wallpapers: Promise<Array<IWallpaper>>;
 
 /**
  * @@@
  */
-export async function getWallpapers(): Promise<Array<IWallpaper>> {
-    if (wallpapers.length) {
-        // TODO: !! Ensure that wallpapers are ready
-        return wallpapers;
+export function getWallpapers(): Promise<Array<IWallpaper>> {
+    if (!wallpapers) {
+        wallpapers = /* not await */ findWallpapers(false);
     }
+
+    return wallpapers;
+}
+
+/**
+ * @@@
+ */
+async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>> {
+    const wallpapers: Array<IWallpaper> = [];
 
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
@@ -28,17 +41,63 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
         const id = metadata!.id;
 
         if (!(await isFileExisting(colorStatsPath))) {
-            throw new Error(`Colors file for ${id} does not exist "${colorStatsPath}"`);
-        }
-
-        if (!(await isFileExisting(contentPath))) {
-            throw new Error(`Content file for ${id} does not exist "${contentPath}"`);
+            if (showWarnings) {
+                console.warn(
+                    chalk.yellow(` ⏩  Skipping wallpaper ${id} Colors file does not exist\n${colorStatsPath}`),
+                );
+            }
+            continue;
         }
 
         const colorStats = YAML.parse(await readFile(colorStatsPath, 'utf8')) as IWallpaperColorStats;
-        let content = await readFile(contentPath, 'utf8');
 
+        if (colorStats === null || colorStats === undefined || !colorStats || !colorStats.version) {
+            if (showWarnings) {
+                console.warn(chalk.yellow(` ⏩  Skipping wallpaper ${id} Colors for is corrupted\n${colorStatsPath}`));
+            }
+            continue;
+        }
+
+        if (Object.keys(colorStats).length <= 1) {
+            if (showWarnings) {
+                console.warn(
+                    chalk.yellow(
+                        ` ⏩  Skipping wallpaper ${id} Colors for ${id} seems as just an empty lock file of running or failed process\n${colorStatsPath}`,
+                    ),
+                );
+            }
+            continue;
+        }
+
+        if (colorStats.version !== COLORSTATS_VERSION) {
+            if (showWarnings) {
+                console.warn(
+                    chalk.yellow(
+                        ` ⏩  Skipping wallpaper ${id} Colors has different version "${colorStats.version}" (expected "${COLORSTATS_VERSION}")`,
+                    ),
+                );
+            }
+            continue;
+        }
+
+        if (!(await isFileExisting(contentPath))) {
+            if (showWarnings) {
+                console.warn(
+                    chalk.yellow(` ⏩  Skipping wallpaper ${id} Content file for does not exist\n${contentPath}`),
+                );
+            }
+            continue;
+        }
+
+        let content = await readFile(contentPath, 'utf8');
         const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font ?? 'Unknown';
+
+        if (!FONTS.includes(font)) {
+            if (showWarnings) {
+                console.warn(chalk.yellow(` ⏩  Skipping wallpaper ${id} Font "${font}" is not supported`));
+            }
+            continue;
+        }
 
         content = removeMarkdownComments(content);
         content = spaceTrim(content);
@@ -65,4 +124,5 @@ export async function getWallpapers(): Promise<Array<IWallpaper>> {
 
 /**
  * TODO: Update wallpapers during the run
+ * TODO: !!! Make script that can check all wallpapers and list only warnings
  */

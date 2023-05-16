@@ -9,7 +9,7 @@ import { readFile, writeFile } from 'fs/promises';
 import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
-import { OPENAI_API_KEY } from '../../config';
+import { FONTS, OPENAI_API_KEY } from '../../config';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
@@ -61,6 +61,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     const usedFonts: Record<string, number> = {};
 
     await forEachWallpaper({
+        isShuffled: false,
         parallelWorksCount: parallel,
         async makeWork({ metadataPath, contentPath }) {
             if (await isFileExisting(contentPath)) {
@@ -96,48 +97,22 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 }
             }
 
-            // const texts = { title: '', content: '' } satisfies IWallpaperTexts;
-
-            /**/
-            const contentPrompt = spaceTrim(randomPromptTemplate().replace('🟦', metadata.prompt));
+            const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
             const content = await askGpt(contentPrompt, false);
-            /**/
 
-            const font = await askGpt(
-                /* <- TODO: !!! Make better diversity of the fonts */
-                `
-                    Write me a Google font which is best fitting for the website. Write just the font name nothing else.
-
-                    Pick from the list:
-                    - Montserrat
-                    - Poppins
-                    - Open Sans
-                    - Lobster
-                    - Playfair Display
-                    - Great Vibes
-                    - Lato
-                    - Roboto
-                    - Inter
-                    - IBM Plex Sans
-                    - Exo 2
-                    - Orbitron
-                    - Dancing Script
-                    - Alegreya
-                    - Raleway
-                    - Futura
-                    - Barlow Condensed
-                
-                `,
-                true,
-            );
+            const fontPrompt = createFontPromptTemplate();
+            const font = await askGpt(fontPrompt, true);
 
             await writeFile(
                 contentPath,
                 spaceTrim(
                     (block) => `
 
-                    <!--
+                    <!--contentPrompt:
                     ${block(contentPrompt)}
+                    -->
+                    <!--fontPrompt:
+                    ${block(fontPrompt)}
                     -->
 
                     <!--font:${font}-->
@@ -177,7 +152,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     console.info(`[ Done 🧾  Generating wallpapers texts ]`);
 }
 
-function randomPromptTemplate() {
+function createContentPromptTemplate() {
     return randomItem(
         `
             Write me markdown content of website with wallpaper:
@@ -219,6 +194,20 @@ function randomPromptTemplate() {
         `
             Write me content for website with wallpaper "🟦"
         `,
+    );
+}
+
+function createFontPromptTemplate() {
+    return spaceTrim(
+        (block) =>
+            `
+                Write me a Google font which is best fitting for the website. Write just the font name nothing else.
+
+                Pick from the list:
+                ${block(FONTS.map((fontName) => `- fontName`).join('\n'))}
+
+            
+            `,
     );
 }
 
