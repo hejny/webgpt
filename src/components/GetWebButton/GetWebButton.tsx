@@ -55,12 +55,18 @@ export function GetWebButton(props: GetWebButtonProps) {
                 <Article content="I ❤ this web!" isEnhanced />
             </Link>
 
-            <Link href={'/'} className={classNames('button', styles.galleryButton)} style={minorButtonStyle}>
-                Gallery
+            <Link
+                href={'/'}
+                className={classNames('button', styles.galleryButton)}
+                style={minorButtonStyle}
+                prefetch={false}
+            >
+                <Article content="Gallery" isEnhanced />
             </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
-                /* Note: randomWallpaper image is preloaded here -> [🤰] */
+                prefetch={true}
+                /* Note: randomWallpaper image is prefetched here -> [🤰] */
                 className={classNames('button', styles.randomButton)}
                 style={{
                     ...minorButtonStyle,
@@ -69,7 +75,7 @@ export function GetWebButton(props: GetWebButtonProps) {
                     color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
                 }}
             >
-                Random
+                <Article content="🎲" isEnhanced />
             </Link>
         </div>
     );
