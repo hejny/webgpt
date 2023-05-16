@@ -60,6 +60,7 @@ export function GetWebButton(props: GetWebButtonProps) {
                 </Link>
                 <Link
                     href={`/showcase/${randomWallpaper.id}`}
+                    /* Note: randomWallpaper image is preloaded here -> [🤰] */
                     className={classNames('button', styles.randomButton)}
                     style={{
                         ...minorButtonStyle,

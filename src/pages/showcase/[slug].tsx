@@ -1,5 +1,6 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 import { Vector } from 'xyzt';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
@@ -28,6 +29,13 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     return (
         <WallpapersContext.Provider value={[currentWallpaper]} /* <- Is this the right place to be Provider in? */>
             <ShowcaseAppHead />
+            <Head>
+                <link
+                    rel="preload"
+                    href={randomWallpaper.src}
+                    as="image" /* <- Note: [🤰] Here is preloaded randomWallpaper */
+                />
+            </Head>
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
