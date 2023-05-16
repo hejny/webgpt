@@ -1,3 +1,4 @@
+import { COLORS_LIMIT, MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES, MOST_SATULIGHTED_COLORS_SATULIGHTION_TRERESHOLD_RATIO } from '../../../../config';
 import { Color } from '../../color/Color';
 import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { colorSatulightion } from '../../color/utils/colorSatulightion';
@@ -5,10 +6,8 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
 import { getImageUniqueColors } from './getImageUniqueColors';
 
-// !!! To config
-const MOST_SATULIGHTED_COLORS_LIMIT = 10;
-const MOST_SATULIGHTED_COLORS_SATULIGHTION_TRERESHOLD_RATIO = 0.5;
-const MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES = 30;
+
+
 
 /**
  * @@@
@@ -33,7 +32,7 @@ export function computeImageMostSatulightedColors(image: IImage): Array<WithTake
             uniqueColors.push(color);
         }
 
-        if (uniqueColors.length >= MOST_SATULIGHTED_COLORS_LIMIT) {
+        if (uniqueColors.length >= COLORS_LIMIT) {
             break;
         }
     }

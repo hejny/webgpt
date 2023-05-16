@@ -14,8 +14,6 @@ export const VERCEL_GIT_COMMIT_SHA = config.get('VERCEL_GIT_COMMIT_SHA').value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 
-export const COLORSTATS_VERSION = 6;
-
 export const FONTS = [
     'Montserrat',
     'Poppins',
@@ -36,3 +34,8 @@ export const FONTS = [
     'Barlow Condensed',
     // TODO: !!! List more
 ];
+
+export const COLORSTATS_VERSION = 6;
+export const COLORS_LIMIT = 10;
+export const MOST_SATULIGHTED_COLORS_SATULIGHTION_TRERESHOLD_RATIO = 0.5;
+export const MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES = 30;

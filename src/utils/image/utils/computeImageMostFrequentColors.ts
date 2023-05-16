@@ -1,3 +1,4 @@
+import { COLORS_LIMIT } from '../../../../config';
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImage } from '../IImage';
@@ -7,8 +8,6 @@ import { IImage } from '../IImage';
  */
 export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Color>> {
     const colorCounts: Map<string, number> = new Map();
-    let mostFrequentColor: WithTake<Color> | null = null;
-    let maxCount = 0;
 
     // Loop through all the pixels in the image
     for (let x = 0; x < image.width; x++) {
@@ -19,18 +18,11 @@ export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Co
             // Increment the count for this color
             const count = (colorCounts.get(colorString) || 0) + 1;
             colorCounts.set(colorString, count);
-
-            // Check if this color is now the most frequent
-            if (count > maxCount) {
-                maxCount = count;
-                mostFrequentColor = color;
-            }
         }
     }
 
-    if (mostFrequentColor === null) {
-        throw new Error('Image has no pixels');
-    }
-
-    return [mostFrequentColor] /* <- TODO: !! List all (distant at least x) colors */;
+    return Array.from(colorCounts.entries())
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, COLORS_LIMIT)
+        .map(([colorCode]) => Color.fromHex(colorCode));
 }
