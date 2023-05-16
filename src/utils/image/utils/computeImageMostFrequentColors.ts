@@ -13,7 +13,7 @@ export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Co
     for (let x = 0; x < image.width; x++) {
         for (let y = 0; y < image.height; y++) {
             const color = image.getPixel({ x, y });
-            const colorString = color.toString();
+            const colorString = color.toHex();
 
             // Increment the count for this color
             const count = (colorCounts.get(colorString) || 0) + 1;
