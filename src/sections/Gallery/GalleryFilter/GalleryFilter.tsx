@@ -82,7 +82,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
             {/* <h3>Filters</h3> */}
 
             <div>
-                Preferovaná barva:
+                Prefer color:&nbsp;&nbsp;
                 <input
                     type="color"
                     defaultValue={(color || Color.get('white')).toHex()}
@@ -91,7 +91,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
             </div>
 
             <SelectWithFirst
-                title={`Na stránku`}
+                title={`Items on page: `}
                 value={limit}
                 onChange={(newLimit) => void setLimit(newLimit)}
                 numberOfButtons={4}
@@ -99,19 +99,19 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                     { id: 10, title: '10' },
                     { id: 100, title: '100' },
                     { id: 500, title: '500' },
-                    { id: Infinity, title: 'Vše' },
+                    { id: Infinity, title: 'All' },
                 ]}
             />
 
             <SelectWithFirst
-                title={`Řadit`}
+                title={`Order: `}
                 value={isRandom}
                 onChange={(newIsRandom) => void setRandom(newIsRandom)}
                 numberOfButtons={2}
                 options={[
-                    { id: false, title: 'Vzestupně (A-Z)' },
-                    // TODO: Sestupně (Z-A)
-                    { id: true, title: 'Náhodně' },
+                    { id: false, title: 'Ascending (A-Z)' },
+                    // TODO: Descending (Z-A)
+                    { id: true, title: 'Random' },
                 ]}
             />
         </div>
