@@ -1,21 +1,14 @@
-version: 6
+version: 7
 averageColor: '#4a2145'
 lightestColor: '#ffeeff'
 darkestColor: '#000000'
-minmaxWhite:
-    - '#ffffff'
-    - '#000000'
-minmaxRed:
-    - '#ff1111'
-    - '#44ffff'
-minmaxGreen:
-    - '#33ccaa'
-    - '#ee0066'
-minmaxBlue:
-    - '#0033dd'
-    - '#ffffdd'
 mostFrequentColors:
     - '#001122'
+    - '#ff4477'
+    - '#336688'
+    - '#ffcc99'
+    - '#44eedd'
+    - '#aa0011'
 mostSatulightedColors:
     - '#00ddee'
     - '#1155ee'
@@ -28,20 +21,12 @@ bottomHalf:
     averageColor: '#4b1e3f'
     lightestColor: '#ffeeff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffff'
-        - '#000000'
-    minmaxRed:
-        - '#ff1111'
-        - '#bbffff'
-    minmaxGreen:
-        - '#338877'
-        - '#ee0066'
-    minmaxBlue:
-        - '#444499'
-        - '#ffffdd'
     mostFrequentColors:
         - '#001122'
+        - '#ee2255'
+        - '#ffcc99'
+        - '#665577'
+        - '#66ccbb'
     mostSatulightedColors:
         - '#ff3399'
         - '#771177'
@@ -57,20 +42,12 @@ bottomThird:
     averageColor: '#501f3e'
     lightestColor: '#ffeeff'
     darkestColor: '#220000'
-    minmaxWhite:
-        - '#ffffff'
-        - '#000011'
-    minmaxRed:
-        - '#ff1133'
-        - '#ddffff'
-    minmaxGreen:
-        - '#77aa88'
-        - '#ee0066'
-    minmaxBlue:
-        - '#552288'
-        - '#ffffdd'
     mostFrequentColors:
         - '#001122'
+        - '#ee2255'
+        - '#eeeeee'
+        - '#ff9977'
+        - '#665577'
     mostSatulightedColors:
         - '#ff3399'
         - '#771177'
@@ -84,20 +61,9 @@ bottomLine:
     averageColor: '#0a1124'
     lightestColor: '#cc4444'
     darkestColor: '#000011'
-    minmaxWhite:
-        - '#cc4444'
-        - '#000011'
-    minmaxRed:
-        - '#ee3322'
-        - '#001133'
-    minmaxGreen:
-        - '#222244'
-        - '#ee3333'
-    minmaxBlue:
-        - '#222244'
-        - '#ee3322'
     mostFrequentColors:
         - '#001122'
+        - '#ee3333'
     mostSatulightedColors:
         - '#ee3333'
         - '#661144'

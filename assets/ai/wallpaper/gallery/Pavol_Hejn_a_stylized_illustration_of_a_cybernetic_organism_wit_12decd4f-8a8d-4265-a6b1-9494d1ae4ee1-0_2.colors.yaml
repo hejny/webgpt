@@ -1,21 +1,13 @@
-version: 6
+version: 7
 averageColor: '#5c4745'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
-minmaxWhite:
-    - '#ffffff'
-    - '#000000'
-minmaxRed:
-    - '#ee3311'
-    - '#99ffff'
-minmaxGreen:
-    - '#22aa99'
-    - '#ffeeff'
-minmaxBlue:
-    - '#114477'
-    - '#ffcc22'
 mostFrequentColors:
     - '#222233'
+    - '#ee9966'
+    - '#448899'
+    - '#99eeee'
+    - '#bb3322'
 mostSatulightedColors:
     - '#44bbdd'
     - '#ff9955'
@@ -28,20 +20,12 @@ bottomHalf:
     averageColor: '#443234'
     lightestColor: '#ddffff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffee'
-        - '#000000'
-    minmaxRed:
-        - '#ee3311'
-        - '#99ffff'
-    minmaxGreen:
-        - '#338877'
-        - '#bb1100'
-    minmaxBlue:
-        - '#114477'
-        - '#ffcc22'
     mostFrequentColors:
-        - '#222233'
+        - '#111122'
+        - '#dd6644'
+        - '#ffdd77'
+        - '#447788'
+        - '#88ccdd'
     mostSatulightedColors:
         - '#44bbdd'
         - '#ff9955'
@@ -53,20 +37,12 @@ bottomThird:
     averageColor: '#352b31'
     lightestColor: '#ddffff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffee'
-        - '#000000'
-    minmaxRed:
-        - '#ee3311'
-        - '#99ffff'
-    minmaxGreen:
-        - '#338877'
-        - '#bb1100'
-    minmaxBlue:
-        - '#114477'
-        - '#ffffee'
     mostFrequentColors:
-        - '#222233'
+        - '#111122'
+        - '#aa4433'
+        - '#77bbcc'
+        - '#ffbb88'
+        - '#116688'
     mostSatulightedColors:
         - '#44bbdd'
         - '#ff9955'
@@ -77,20 +53,11 @@ bottomLine:
     averageColor: '#442c30'
     lightestColor: '#bbeeee'
     darkestColor: '#330000'
-    minmaxWhite:
-        - '#bbeeee'
-        - '#110011'
-    minmaxRed:
-        - '#aa2211'
-        - '#bbeeee'
-    minmaxGreen:
-        - '#447777'
-        - '#330000'
-    minmaxBlue:
-        - '#334466'
-        - '#ff9955'
     mostFrequentColors:
         - '#222233'
+        - '#bb4433'
+        - '#5599aa'
+        - '#bbeeee'
     mostSatulightedColors:
         - '#77ccdd'
         - '#ff9955'

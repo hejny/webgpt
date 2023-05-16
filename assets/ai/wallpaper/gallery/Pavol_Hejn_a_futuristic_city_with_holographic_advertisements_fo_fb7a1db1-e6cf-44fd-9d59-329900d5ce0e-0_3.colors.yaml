@@ -1,21 +1,17 @@
-version: 6
+version: 7
 averageColor: '#575784'
 lightestColor: '#ffeeff'
 darkestColor: '#000000'
-minmaxWhite:
-    - '#ffffff'
-    - '#000000'
-minmaxRed:
-    - '#cc2200'
-    - '#22ffff'
-minmaxGreen:
-    - '#11dd11'
-    - '#ff22aa'
-minmaxBlue:
-    - '#1122cc'
-    - '#ffee33'
 mostFrequentColors:
-    - '#111133'
+    - '#111122'
+    - '#5577bb'
+    - '#eeeeee'
+    - '#aa4444'
+    - '#ee77cc'
+    - '#55eeff'
+    - '#33ee66'
+    - '#ffaa33'
+    - '#229900'
 mostSatulightedColors:
     - '#00ccff'
     - '#0033dd'
@@ -29,20 +25,16 @@ bottomHalf:
     averageColor: '#665070'
     lightestColor: '#ffeeff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffff'
-        - '#000000'
-    minmaxRed:
-        - '#dd2233'
-        - '#22ffff'
-    minmaxGreen:
-        - '#11dd11'
-        - '#ff22aa'
-    minmaxBlue:
-        - '#1133cc'
-        - '#ffff66'
     mostFrequentColors:
-        - '#111133'
+        - '#111122'
+        - '#5577bb'
+        - '#eeeeee'
+        - '#aa4444'
+        - '#ff66cc'
+        - '#22ddff'
+        - '#33ee66'
+        - '#eebb55'
+        - '#229900'
     mostSatulightedColors:
         - '#00aaff'
         - '#cc33dd'
@@ -55,20 +47,14 @@ bottomThird:
     averageColor: '#634963'
     lightestColor: '#ffeeff'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffff'
-        - '#000000'
-    minmaxRed:
-        - '#dd2233'
-        - '#22ffff'
-    minmaxGreen:
-        - '#11dd11'
-        - '#ff44cc'
-    minmaxBlue:
-        - '#1155dd'
-        - '#ffff66'
     mostFrequentColors:
-        - '#111133'
+        - '#332244'
+        - '#6677bb'
+        - '#eeeeee'
+        - '#cc5544'
+        - '#44dd33'
+        - '#eecc44'
+        - '#55eeee'
     mostSatulightedColors:
         - '#00ccee'
         - '#1155dd'
@@ -83,20 +69,10 @@ bottomLine:
     averageColor: '#3b283f'
     lightestColor: '#bbaacc'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#bbaacc'
-        - '#000000'
-    minmaxRed:
-        - '#bb5533'
-        - '#bbaacc'
-    minmaxGreen:
-        - '#aa7744'
-        - '#110022'
-    minmaxBlue:
-        - '#444477'
-        - '#ff9966'
     mostFrequentColors:
-        - '#111133'
+        - '#000011'
+        - '#554477'
+        - '#bb99bb'
     mostSatulightedColors:
         - '#bb5599'
         - '#884499'

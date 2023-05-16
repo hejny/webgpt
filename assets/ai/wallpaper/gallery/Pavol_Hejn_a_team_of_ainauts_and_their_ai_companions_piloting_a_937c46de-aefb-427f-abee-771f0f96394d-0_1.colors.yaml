@@ -1,0 +1,7 @@
+version: 7
+averageColor: '#3d353c'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - '#111122'
+    - '#448899

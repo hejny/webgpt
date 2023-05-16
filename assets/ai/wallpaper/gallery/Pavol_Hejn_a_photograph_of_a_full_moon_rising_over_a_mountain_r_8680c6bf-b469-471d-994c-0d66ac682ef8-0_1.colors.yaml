@@ -1,0 +1,63 @@
+version: 7
+averageColor: '#47494f'
+lightestColor: '#ffeeee'
+darkestColor: '#111111'
+mostFrequentColors:
+    - '#112233'
+    - '#777777'
+    - '#ffdd99'
+mostSatulightedColors:
+    - '#ffcc88'
+    - '#446688'
+    - '#336666'
+    - '#bb8888'
+mostGroupedColors:
+    - '#112233'
+bottomHalf:
+    averageColor: '#333945'
+    lightestColor: '#eeddcc'
+    darkestColor: '#111111'
+    mostFrequentColors:
+        - '#111122'
+        - '#777777'
+        - '#ddccaa'
+    mostSatulightedColors:
+        - '#eeccaa'
+        - '#667799'
+        - '#779999'
+        - '#332244'
+        - '#ddbbbb'
+        - '#ccccaa'
+        - '#664455'
+    mostGroupedColors:
+        - '#111122'
+bottomThird:
+    averageColor: '#353a44'
+    lightestColor: '#eeddcc'
+    darkestColor: '#111111'
+    mostFrequentColors:
+        - '#111122'
+        - '#777777'
+        - '#ddccaa'
+    mostSatulightedColors:
+        - '#eeccaa'
+        - '#332244'
+        - '#556677'
+        - '#333355'
+        - '#224444'
+        - '#ddbbbb'
+        - '#ccccaa'
+    mostGroupedColors:
+        - '#111122'
+bottomLine:
+    averageColor: '#111927'
+    lightestColor: '#112233'
+    darkestColor: '#112222'
+    mostFrequentColors:
+        - '#111122'
+    mostSatulightedColors:
+        - '#112233'
+        - '#112222'
+        - '#111122'
+    mostGroupedColors:
+        - '#111122'

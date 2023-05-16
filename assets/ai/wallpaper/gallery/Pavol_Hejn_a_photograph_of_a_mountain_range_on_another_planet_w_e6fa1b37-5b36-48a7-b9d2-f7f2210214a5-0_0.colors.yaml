@@ -1,21 +1,11 @@
-version: 6
+version: 7
 averageColor: '#69402d'
 lightestColor: '#ffffdd'
 darkestColor: '#000000'
-minmaxWhite:
-    - '#ffffdd'
-    - '#000000'
-minmaxRed:
-    - '#dd2200'
-    - '#ffffdd'
-minmaxGreen:
-    - '#777733'
-    - '#aa0000'
-minmaxBlue:
-    - '#114477'
-    - '#ffff66'
 mostFrequentColors:
-    - '#331111'
+    - '#111111'
+    - '#bb5522'
+    - '#ffdd66'
 mostSatulightedColors:
     - '#114477'
     - '#ffaa55'
@@ -29,20 +19,10 @@ bottomHalf:
     averageColor: '#4b1f17'
     lightestColor: '#ffffdd'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffffdd'
-        - '#000000'
-    minmaxRed:
-        - '#dd2200'
-        - '#ffffdd'
-    minmaxGreen:
-        - '#666644'
-        - '#aa0000'
-    minmaxBlue:
-        - '#333366'
-        - '#ffff88'
     mostFrequentColors:
-        - '#331111'
+        - '#111111'
+        - '#cc6633'
+        - '#ffcc77'
     mostSatulightedColors:
         - '#ffaa55'
         - '#ffff88'
@@ -56,20 +36,11 @@ bottomThird:
     averageColor: '#3b1411'
     lightestColor: '#ffeecc'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ffeecc'
-        - '#000000'
-    minmaxRed:
-        - '#dd2200'
-        - '#ffeecc'
-    minmaxGreen:
-        - '#666644'
-        - '#aa0000'
-    minmaxBlue:
-        - '#333366'
-        - '#ffff88'
     mostFrequentColors:
-        - '#331111'
+        - '#111111'
+        - '#aa3311'
+        - '#ff9944'
+        - '#ffeecc'
     mostSatulightedColors:
         - '#ff9955'
         - '#ffff88'
@@ -82,20 +53,9 @@ bottomLine:
     averageColor: '#340e09'
     lightestColor: '#ff9955'
     darkestColor: '#000000'
-    minmaxWhite:
-        - '#ff9955'
-        - '#000000'
-    minmaxRed:
-        - '#bb2200'
-        - '#001122'
-    minmaxGreen:
-        - '#444444'
-        - '#770000'
-    minmaxBlue:
-        - '#222244'
-        - '#ee5500'
     mostFrequentColors:
-        - '#331111'
+        - '#110000'
+        - '#995533'
     mostSatulightedColors:
         - '#ff9955'
     mostGroupedColors:
