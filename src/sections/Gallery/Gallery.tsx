@@ -1,11 +1,14 @@
+import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ImagineTag } from '../../components/ImagineTag/ImagineTag';
 import { Item } from '../../components/Items/Item';
 import { Items } from '../../components/Items/Items';
 import { Section } from '../../components/Section/Section';
+import { Color } from '../../utils/color/Color';
+import { colorDistanceSquared } from '../../utils/color/utils/colorDistance';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../../utils/hooks/useWallpaper';
 
@@ -17,6 +20,24 @@ export function GallerySection(props: SampleProps) {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
+    const [preferColor, setPreferColor] = useState<Color | null>(null);
+
+    const sortedWallpapers = wallpapers;
+
+    sortedWallpapers.sort((wallpaper1, wallpaper2) => {
+        if (preferColor) {
+            const color1 = wallpaper1.colorStats.averageColor;
+            const color2 = wallpaper2.colorStats.averageColor;
+
+            const color1Distance = colorDistanceSquared(preferColor, color1);
+            const color2Distance = colorDistanceSquared(preferColor, color2);
+
+            return color1Distance - color2Distance;
+        }
+
+        return 0;
+    });
+
     return (
         <Section>
             {/* <- TODO: !! Make propper secrion from this */}
@@ -24,8 +45,22 @@ export function GallerySection(props: SampleProps) {
             <h1>🎨 Gallery of webs</h1>
             <p>Web pages listed here are pre-generated using AI:</p>
 
+            <div>
+                <h3>Filters</h3>
+                Prefer color:{' '}
+                <input
+                    type="color"
+                    defaultValue={(preferColor || Color.get('white')).toHex()}
+                    onChange={debounce((event) => setPreferColor(Color.fromHex(event.target.value)), 500)}
+                />
+            </div>
+            <br />
+            {Math.random()}
+            <br />
+            {sortedWallpapers.length + ' items'}
+            <br />
             <Items itemsOnRow={3}>
-                {wallpapers
+                {sortedWallpapers
                     // Random sort
                     //.sort(() => Math.random() - 0.5)
                     // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
