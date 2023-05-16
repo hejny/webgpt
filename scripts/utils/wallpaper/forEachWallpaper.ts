@@ -10,8 +10,9 @@ import { IWallpaperFiles } from './IWallpaperFiles';
 export async function forEachWallpaper(options: {
     makeWork(wallpeperFiles: IWallpaperFiles): Promise<void>;
     parallelWorksCount: number;
+    isShuffled: boolean;
 }): Promise<void> {
-    const { makeWork, parallelWorksCount: parallel } = options;
+    const { makeWork, parallelWorksCount, isShuffled } = options;
 
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
@@ -23,6 +24,10 @@ export async function forEachWallpaper(options: {
     };
 
     const workingOn = new Set<Promise<void>>();
+
+    if (isShuffled) {
+        wallpapersMetadataPaths.sort(() => Math.random() - 0.5);
+    }
 
     for (const metadataPath of wallpapersMetadataPaths) {
         await forPlay();
@@ -44,7 +49,7 @@ export async function forEachWallpaper(options: {
             workingOn.delete(work);
         });
 
-        if (workingOn.size >= parallel) {
+        if (workingOn.size >= parallelWorksCount) {
             //-----------
             // [🥼] This is the place
             const statsTotalString = `${stats.done}/${stats.total}`;

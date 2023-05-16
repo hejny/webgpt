@@ -51,7 +51,7 @@
             "name": "🏭🖼️ Generate wallpapers (every step + commit)",
             "commands": [
                 "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit",
-                "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --parallel 10 --commit",
+                "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit",
                 "ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts --parallel 10 --commit",
                 "ts-node ./scripts/generate-wallpapers-content/postprocess-wallpapers-content.ts --commit"
             ],
@@ -72,9 +72,7 @@
         },
         {
             "name": "🏭🎨 [2-3/4] Generate wallpapers color stats",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --parallel 10"
-            ],
+            "commands": ["ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts"],
             "onlySingle": true,
             "focus": true
         },

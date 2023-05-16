@@ -22,15 +22,17 @@ if (process.cwd() !== join(__dirname, '../..')) {
 
 const program = new commander.Command();
 program.option('--commit', `Autocommit changes`);
+program.option('--shuffle', `Randomize wallpapers order`);
+// TODO: Probbably tell why to not use --parallel in colors
 program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
 
 // TODO:> program.option('--random', ``);
 // TODO:> program.option('--reverse', ``);
 program.parse(process.argv);
-const { commit: isCommited, parallel } = program.opts();
+const { commit: isCommited, shuffle: isShuffled } = program.opts();
 
-generateWallpapersColorStats({ isCommited })
+generateWallpapersColorStats({ isCommited, isShuffled })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -40,7 +42,7 @@ generateWallpapersColorStats({ isCommited })
         process.exit(0);
     });
 
-async function generateWallpapersColorStats({ isCommited }: { isCommited: boolean }) {
+async function generateWallpapersColorStats({ isCommited, isShuffled }: { isCommited: boolean; isShuffled: boolean }) {
     console.info(`🎨  Generating wallpapers color-stats`);
 
     if (isCommited && !(await isWorkingTreeClean(process.cwd()))) {
@@ -48,7 +50,8 @@ async function generateWallpapersColorStats({ isCommited }: { isCommited: boolea
     }
 
     await forEachWallpaper({
-        parallelWorksCount: parallel /* <- !! Better */,
+        isShuffled,
+        parallelWorksCount: 1,
         async makeWork({ metadataPath, colorStatsPath }) {
             if (await isFileExisting(colorStatsPath)) {
                 console.info(`⏩ Color stats file does already exists`);
