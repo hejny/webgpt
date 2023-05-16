@@ -67,7 +67,10 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
             // Note: Making a lock file to prevent multiple processes to compute the same color stats
             await writeFile(
                 colorStatsPath,
-                YAML.stringify({ version: COLORSTATS_VERSION })
+                YAML.stringify({
+                    version: COLORSTATS_VERSION,
+                    note: 'This is just a lock before real color stats are made - if you see this the process is still running or crashed.',
+                })
                     .split('"')
                     .join("'") /* <- TODO: Can the replace be done directly in YAML.stringify options? */,
                 'utf8',
@@ -75,6 +78,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
+            console.log({ metadata });
             const colorStats = computeImageColorStats(
                 await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
             );
