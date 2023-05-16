@@ -13,6 +13,7 @@ import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
+import { GallerySection } from '../sections/Gallery/Gallery';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
@@ -41,97 +42,7 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                 </div>
                 <main>
                     {/* !!! <HomepageWelcomeSection variant="SIDEPAGE" />*/}
-                    <Section>
-                        {/* <- TODO: !! Make propper secrion from this */}
-                        {/* TODO: !! Translate */}
-                        <h1>🎨 Gallery of webs</h1>
-                        <p>Web pages listed here are pre-generated using AI:</p>
-
-                        <Items itemsOnRow={3}>
-                            {wallpapers
-                                // Random sort
-                                //.sort(() => Math.random() - 0.5)
-                                // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
-                                .map((wallpaper, i) => (
-                                    // TODO: <MidjourneyImage/>
-                                    // TODO: Show diffusion as animation
-                                    <Link
-                                        href={`/showcase/${wallpaper.id}`}
-                                        key={i /* <- TODO: Better, can we use just id */}
-                                        // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
-                                    >
-                                        <Item>
-                                            <Item.Image>
-                                                <Image
-                                                    src={wallpaper.src}
-                                                    alt={wallpaper.prompt}
-                                                    draggable="false"
-                                                    placeholder="blur"
-                                                    blurDataURL={colorToDataUrl(wallpaper.colorStats.averageColor)}
-                                                    quality={55}
-                                                    width={Math.round(1920 / 2)}
-                                                    height={Math.round(1080 / 2)}
-                                                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                                                />
-                                            </Item.Image>
-                                            {/*
-                                            TODO: !! [2]
-                                            <Item.Image>
-                                                <style>{`
-                                                    @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font
-                                                        .split(' ')
-                                                        .join('+')}&display=swap}');
-                                                `}</style>
-                                                <div
-                                                    style={{
-                                                        width: '100%',
-                                                        height: '100%',
-                                                        display: 'flex',
-                                                        alignItems: 'center',
-                                                        justifyContent: 'center',
-
-                                                        fontFamily: `'${wallpaper.font}', sans-serif` ,
-                                                    }}
-                                                    onClick={(event) => {
-                                                        (event.target as HTMLDivElement).setAttribute(
-                                                            'contenteditable',
-                                                            'true',
-                                                        );
-                                                        (event.target as HTMLDivElement).setAttribute(
-                                                            'spellcheck',
-                                                            'false',
-                                                        );
-                                                        // TODO: !!! Also save the changes after editing
-                                                    }}
-                                                >
-                                                    {wallpaper.title}
-                                                </div>
-                                            </Item.Image>
-                                            */}
-                                            <Item.Description>
-                                                <ImagineTag>
-                                                    {
-                                                        wallpaper.prompt /* TODO: !! [2] Hide or show just title+font NOT prompt */
-                                                    }
-                                                </ImagineTag>
-
-                                                {/*
-                                                    TODO: !! Put in downloads link to MidJourney>
-
-                                                    <a
-                                                        href="https://www.midjourney.com/app/jobs/..." /* <- From metadata * /
-                                                        target="_blank"
-                                                        rel="noreferrer"
-                                                    >
-                                                    
-                                                    
-                                                */}
-                                            </Item.Description>
-                                        </Item>
-                                    </Link>
-                                ))}
-                        </Items>
-                    </Section>
+                    <GallerySection />
                 </main>
                 <footer>
                     <FooterSection />
