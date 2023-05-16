@@ -70,6 +70,8 @@ export function GetWebButton(props: GetWebButtonProps) {
                     // Note: No need for preventDefault
                     //  [🤰] Just quick-change the HeaderWallpaper for upgoing color
 
+                    console.log('HeaderWallpaper', document.getElementById('HeaderWallpaper'));
+
                     // !!! Is this working?
                     document
                         .getElementById('HeaderWallpaper')!
@@ -92,6 +94,7 @@ export function GetWebButton(props: GetWebButtonProps) {
 }
 
 /**
+ * TODO: !!! [🤰] Pick one working method for immediate change of HeaderWallpaper and cleanup rest
  * TODO: !!! No outline - simpler design
  * TODO: !!! On mobile
  * TODO: !!! [Previous][Next]
