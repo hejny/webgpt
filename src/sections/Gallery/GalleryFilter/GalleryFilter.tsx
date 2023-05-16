@@ -12,6 +12,7 @@ import styles from './GalleryFilter.module.css';
 // TODO: !!! Break into files
 
 export interface GalleryFilter {
+    fulltext?: string;
     color?: WithTake<Color>;
     limit: number;
     isRandom: boolean;
@@ -26,11 +27,18 @@ interface GalleryFilterProps {
 }
 
 export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryFilter): Array<IWallpaper> {
-    const { color, limit, isRandom } = filter;
+    console.log('filterWallpapers');
+    const { fulltext, color, limit, isRandom } = filter;
 
     if (isRandom) {
         // Note: .sort method is mutating array so making a copy before
         wallpapers = [...wallpapers];
+    }
+
+    if (fulltext) {
+        // TODO: !!! Normalize words
+        // TODO: !!! Search in tags, content, title,...
+        wallpapers = wallpapers.filter((wallpaper) => wallpaper.prompt.toLowerCase().includes(fulltext.toLowerCase()));
     }
 
     if (color) {
@@ -63,6 +71,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
 
     const { t } = useTranslation();
 
+    const [fulltext, setFulltext] = useState<string | undefined>(defaultFilter.fulltext);
     const [color, setColor] = useState<WithTake<Color> | undefined>(defaultFilter.color || undefined);
     const [limit, setLimit] = useState<number>(defaultFilter.limit);
     const [isRandom, setRandom] = useState<boolean>(false);
@@ -70,16 +79,26 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
     // !!! [4] Remove const changeColor = (color: Color | null)=>{setColor(color);onFilterChange({...})}
 
     if (
+        defaultFilter.fulltext !== fulltext ||
         defaultFilter.color?.toHex() !== color?.toHex() ||
         defaultFilter.limit !== limit ||
         defaultFilter.isRandom !== isRandom
     ) {
-        onFilterChange({ color, limit, isRandom }); /* <- !!!! [4] Better */
+        onFilterChange({ fulltext, color, limit, isRandom }); /* <- !!!! [4] Better */
     }
 
     return (
         <div className={styles.GalleryFilter}>
             {/* <h3>Filters</h3> */}
+
+            <div>
+                Search:&nbsp;&nbsp;
+                <input
+                    type="text"
+                    defaultValue={fulltext || ''}
+                    onChange={debounce((event) => setFulltext(event.target.value.trim() || undefined), 500)}
+                />
+            </div>
 
             <div>
                 Prefer color:&nbsp;&nbsp;
