@@ -20,9 +20,9 @@ export function ShowcaseWelcomeSection() {
             */}
 
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font
+                @import url(https://fonts.googleapis.com/css2?family=${wallpaper.font
                     .split(' ')
-                    .join('+')}&amp;display=swap}');
+                    .join('+')}&amp;display=swap});
             `}</style>
             <div
                 style={{
