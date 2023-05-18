@@ -9,7 +9,7 @@
 
 .Article h2 {
     margin-top: 60px;
-    border-bottom: 1px solid var(--normal-text-color);
+    border-bottom: 1px solid var(--palette-2);
 }
 
 .Article ul,
