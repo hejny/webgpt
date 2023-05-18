@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Macro World: A Close-Up Look at Nature
+# Macro Nature: A Close-Up View
 
 Welcome to Macro World, a website dedicated to exploring the intricate details of nature through stunning close-up photography. Our current featured wallpaper is a mesmerizing close-up of an ant on a leaf.
 

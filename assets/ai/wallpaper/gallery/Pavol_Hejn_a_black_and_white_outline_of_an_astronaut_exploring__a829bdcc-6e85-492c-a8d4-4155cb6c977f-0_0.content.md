@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Space website: Exploring the Unknown.
+# Space Exploration Website
 
 Welcome to our space-themed website, where we explore the mysteries of the universe and beyond. Our website is dedicated to providing you with an immersive experience that will take you on a journey through space and time.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Nature-inspired Workspace Designs.
+# Nature-Inspired Workspaces
 
 Welcome to our website dedicated to creating inspiring workspaces that promote productivity and well-being. We believe that the environment you work in can have a significant impact on your mood, creativity, and overall performance. That's why we offer a collection of nature-inspired designs that will transform your workspace into a peaceful and energizing haven.
 

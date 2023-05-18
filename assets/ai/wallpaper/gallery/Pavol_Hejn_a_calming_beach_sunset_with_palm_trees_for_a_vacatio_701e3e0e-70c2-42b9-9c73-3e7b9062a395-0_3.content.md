@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Beachfront Rentals in Paradise.
+# Beach Rentals in Paradise
 
 Welcome to our luxurious beachfront vacation rentals, where you can experience the ultimate relaxation in paradise. Our properties are located in some of the most beautiful and sought-after destinations around the world. Each rental is carefully selected for its stunning location, modern amenities, and exceptional service.
 

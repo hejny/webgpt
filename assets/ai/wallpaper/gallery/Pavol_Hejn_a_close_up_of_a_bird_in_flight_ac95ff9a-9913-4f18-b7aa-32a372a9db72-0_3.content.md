@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Space with Stunning Backdrops.
+# Elevate Your Space with Backdrops
 
 Welcome to our website, where we offer a wide selection of stunning backgrounds to enhance the look and feel of your home or office. Our collection includes high-quality images of nature, animals, abstract designs, and more.
 

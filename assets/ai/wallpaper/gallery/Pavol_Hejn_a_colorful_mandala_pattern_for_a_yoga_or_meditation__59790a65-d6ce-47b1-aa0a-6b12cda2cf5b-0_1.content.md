@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Yoga and Meditation with Colorful Mandalas
+# Colorful Mandalas for Yoga and Meditation
 
 Welcome to our website dedicated to promoting inner peace and mindfulness through the practice of yoga and meditation. Our site features a stunning mandala pattern that is sure to inspire and uplift you during your visit.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ladybug Close-up: A Stunning Nature Background
+# Stunning Ladybug Nature Background
 
 Add a touch of nature to your digital space with this stunning close-up of a ladybug on a leaf. The vibrant colors and intricate details of the ladybug make it the perfect background for your desktop or mobile device.
 

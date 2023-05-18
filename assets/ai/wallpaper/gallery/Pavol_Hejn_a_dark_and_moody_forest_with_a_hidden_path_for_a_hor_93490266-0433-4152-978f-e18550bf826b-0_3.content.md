@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:The font that best fits the eerie and mysterious theme of the website is "Cinzel Decorative".-->
 
-# Haunted Forest: Dark and Mysterious Path.
+# Haunted Forest: Shadowy Trail
 
 Welcome to our horror and mystery website, where we invite you to explore the eerie and unsettling world of the haunted forest. Our wallpaper sets the tone for what you can expect on this journey - a dark and moody forest with a hidden path, waiting to be discovered.
 

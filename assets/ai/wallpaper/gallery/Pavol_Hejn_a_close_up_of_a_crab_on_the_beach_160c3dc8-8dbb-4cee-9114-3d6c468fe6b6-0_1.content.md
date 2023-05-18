@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Serene Coastal Digital Backgrounds.
+# Coastal Digital Backgrounds
 
 Transform your digital life with our Coastal Backgrounds. Our collection of stunning beach-inspired imagery will transport you to the seaside, providing a sense of calm and relaxation in the midst of your busy day.
 

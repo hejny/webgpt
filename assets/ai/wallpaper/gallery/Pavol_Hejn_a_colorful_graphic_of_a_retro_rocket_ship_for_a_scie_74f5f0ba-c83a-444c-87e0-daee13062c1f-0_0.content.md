@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Explore the Universe with Retro Rocket.
+# Retro Rocket Explores Universe
 
 Welcome to Retro Rocket, your one-stop destination for all things space exploration. Our website is dedicated to bringing you the latest news, updates, and information about the universe beyond our planet.
 

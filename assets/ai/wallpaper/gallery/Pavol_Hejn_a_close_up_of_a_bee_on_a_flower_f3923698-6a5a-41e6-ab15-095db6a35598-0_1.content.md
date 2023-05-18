@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Bee on Flower: Nature's Beauty Up Close.
+# Bee on Flower: Up Close Nature's Beauty
 
 Welcome to our website, where we celebrate the beauty of nature through stunning wallpapers. Our latest addition features a close-up of a bee on a flower, showcasing the intricate details of both the insect and the plant.
 

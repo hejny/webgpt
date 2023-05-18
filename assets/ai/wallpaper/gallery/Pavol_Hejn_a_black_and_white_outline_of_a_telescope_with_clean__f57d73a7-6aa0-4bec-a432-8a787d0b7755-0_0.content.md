@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elegant Telescope Desktop Background.
+# Elegant Telescope Wallpaper
 
 Welcome to our website, where we offer a unique collection of backgrounds that will transform your desktop into an inspiring work of art. Our telescope background is perfect for anyone who loves astronomy and wants to add a touch of elegance to their computer screen.
 

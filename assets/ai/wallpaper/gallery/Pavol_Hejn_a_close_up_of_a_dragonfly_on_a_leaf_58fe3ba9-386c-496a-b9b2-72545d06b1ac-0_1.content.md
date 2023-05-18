@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Nature Backgrounds for Relaxation.
+# Relaxing Nature Backgrounds
 
 Welcome to our website, where we offer a collection of nature-inspired backgrounds that can help you relax and unwind. Our high-quality wallpapers are designed to bring the beauty of the outdoors into your daily life and create a calming atmosphere.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Bird in Flight: A Paradise for Birdwatchers.
+# Birdwatcher's Paradise: In-Flight
 
 Welcome to Birdwatcher's Paradise, where you can immerse yourself in the world of birdwatching and enjoy stunning wallpapers like this close-up of a bird in flight.
 

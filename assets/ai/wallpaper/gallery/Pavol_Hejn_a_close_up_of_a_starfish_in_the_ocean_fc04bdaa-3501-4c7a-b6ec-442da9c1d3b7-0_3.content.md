@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Lato-->
 
-# Oceanic Starfish: Beautifully Mysterious.
+# Mysterious Ocean Starfish
 
 Welcome to our website dedicated to the amazing starfish of the ocean. Our stunning wallpaper showcases a close-up of a starfish in its natural habitat, giving you a glimpse into the beauty and mystery of these fascinating creatures.
 

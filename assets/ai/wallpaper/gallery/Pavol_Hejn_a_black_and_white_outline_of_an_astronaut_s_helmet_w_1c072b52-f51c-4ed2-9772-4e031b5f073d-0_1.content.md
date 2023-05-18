@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Universe with Stunning Space Backgrounds.
+# Stunning Space Backgrounds for Universe Exploration
 
 Welcome to Space Odyssey, your gateway to the mysteries of the universe. Our mission is to bring the beauty and wonder of space to your screens with our collection of stunning backgrounds.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Desert Landscapes with Our New Background.
+# New Desert Background for Exploration
 
 Welcome to our website where we offer a variety of stunning backgrounds for your desktop. Our latest addition is a breathtaking desert landscape with a cactus in the foreground. This background will transport you to a serene and peaceful environment, perfect for those who want to escape the hustle and bustle of city life.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Beachy Home Decor: Seashell Dreams
+# Seashell-themed Decor
 
 Welcome to Seashell Dreams, your one-stop-shop for all things beachy and beautiful. Our website is dedicated to providing you with high-quality wallpapers that will transport you to the shores of your favorite beach destinations.
 

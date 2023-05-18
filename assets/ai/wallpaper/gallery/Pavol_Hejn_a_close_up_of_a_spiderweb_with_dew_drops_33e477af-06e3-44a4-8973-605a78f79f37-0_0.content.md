@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Nature-Inspired Website Backgrounds
+# Nature website backgrounds
 
 Welcome to our website, where we offer a selection of beautiful and nature-inspired backgrounds for your website. Our current featured wallpaper is a stunning close-up of a spiderweb with dew drops.
 

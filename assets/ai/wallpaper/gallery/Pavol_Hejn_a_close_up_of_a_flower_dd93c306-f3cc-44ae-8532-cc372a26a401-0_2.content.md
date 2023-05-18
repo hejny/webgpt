@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# "Nature on Your Walls: Floral Delight"
+# Floral Delight: Nature on Your Walls
 
 Welcome to Floral Delight, your one-stop-shop for beautiful and high-quality floral wallpapers. Our collection features a wide range of stunning designs that are perfect for adding a touch of nature to your home or office.
 

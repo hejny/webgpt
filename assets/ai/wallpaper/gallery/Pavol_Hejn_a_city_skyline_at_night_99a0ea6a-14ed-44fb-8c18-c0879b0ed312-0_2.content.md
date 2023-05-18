@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discovering the Best Nightlife in the City.
+# Best Nightlife in City
 
 Welcome to our website dedicated to exploring the vibrant and thrilling world of city nightlife. Our stunning wallpaper background depicts a city skyline at night, capturing the energy and atmosphere of urban living after dark.
 

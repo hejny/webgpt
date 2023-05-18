@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# "Explore the Universe with Digital Illustrations"
+# Digital Illustrations: Exploring the Universe
 
 Welcome to Space Odyssey, your gateway to the universe. We offer a wide range of digital illustrations that will take you on a journey through the vast expanse of space. Our collection includes stunning visuals of galaxies, planets, stars, and much more. 
 

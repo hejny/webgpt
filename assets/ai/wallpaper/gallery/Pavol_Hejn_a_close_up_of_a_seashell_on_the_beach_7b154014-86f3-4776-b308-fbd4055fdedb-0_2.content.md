@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Seashell Serenity" - Peaceful Beach Desktop Background
+# "Peaceful Beach with Seashells" - Desktop Background
 
 Welcome to our website where we offer a variety of stunning backgrounds for your desktop. Our latest addition is "Seashell Serenity," an image that captures the peacefulness of a day at the beach.
 

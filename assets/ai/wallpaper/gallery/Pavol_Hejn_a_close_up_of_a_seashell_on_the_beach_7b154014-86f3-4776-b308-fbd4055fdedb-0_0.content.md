@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Seashell Background: Beach Tranquility for Your Workspace.
+# Seashell Background for a Tranquil Workspace
 
 Welcome to our website, where we offer a variety of beach-inspired backgrounds to transform your digital workspace. Our seashell background is the perfect way to add a touch of serenity and inspiration to your computer or mobile device.
 

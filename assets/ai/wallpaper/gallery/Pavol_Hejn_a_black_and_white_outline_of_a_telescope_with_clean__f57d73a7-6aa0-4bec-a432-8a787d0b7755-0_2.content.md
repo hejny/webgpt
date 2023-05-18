@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Universe on Our Website.
+# Discover the Universe Online
 
 Welcome to our space website, where you can explore the mysteries of the universe and unleash your inner explorer. Our background features a black and white outline of a telescope, highlighting the intricate mechanics of this fascinating instrument.
 

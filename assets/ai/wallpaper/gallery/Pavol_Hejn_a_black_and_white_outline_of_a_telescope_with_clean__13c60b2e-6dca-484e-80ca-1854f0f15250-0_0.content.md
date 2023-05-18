@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Discover Space with Telescope Wallpaper"
+# Explore Space with Telescope Wallpaper
 
 Welcome to our website, where you can download a stunning black and white outline of a telescope as your new desktop wallpaper. The clean lines and simple shapes highlight the intricate mechanics of this fascinating instrument, inspiring you to explore the mysteries of the universe.
 

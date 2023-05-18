@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Beach Vibes for Your Digital Workspace.
+# Digital Beach Vibes
 
 Welcome to our website, where we offer a range of beautiful backgrounds to enhance your digital workspace. Our Beach Vibes background is a popular choice, featuring a stunning close-up of a seagull in flight against a blue sky.
 

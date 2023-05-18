@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Space with Our Telescope Backgrounds.
+# Explore Space with Telescope Backgrounds
 
 Welcome to our website, where we offer a stunning collection of backgrounds that will transport you to the depths of space. Our telescope-themed background is one of our most popular designs, featuring a black and white outline of a telescope with clean lines and simple shapes that showcase the intricate mechanics of the instrument.
 

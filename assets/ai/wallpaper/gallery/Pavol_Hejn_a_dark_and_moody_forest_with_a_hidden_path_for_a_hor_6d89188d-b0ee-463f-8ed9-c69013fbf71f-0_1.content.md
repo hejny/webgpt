@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Dark Forest for Your Horror/Mystery Website: The Hidden Path
+# Hidden Path in Dark Forest for Horror/Mystery Website
 
 If you're looking to set the tone for your horror or mystery website, look no further than our dark and moody forest wallpaper. With its deep shadows and twisted trees, this image is sure to send shivers down your visitors' spines.
 

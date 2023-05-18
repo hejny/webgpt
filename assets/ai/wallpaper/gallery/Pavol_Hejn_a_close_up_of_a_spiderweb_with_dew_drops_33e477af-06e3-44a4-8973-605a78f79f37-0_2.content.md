@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Celebrate Nature's Beauty on Our Website
+# Celebrate Nature on Our Website
 
 Welcome to our website, dedicated to celebrating the wonders of nature. We believe that connecting with nature is essential for our well-being and hope to inspire others to appreciate and protect our planet.
 

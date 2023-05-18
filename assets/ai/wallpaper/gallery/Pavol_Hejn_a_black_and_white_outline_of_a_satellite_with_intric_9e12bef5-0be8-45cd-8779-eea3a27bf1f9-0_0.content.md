@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Satellite Comms: Global Connection.
+# Global Satellite Comms
 
 Welcome to our website dedicated to satellite communication and its importance in today's world. Our mission is to provide you with all the information you need about satellite communication, including its history, uses, and future developments.
 

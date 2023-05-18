@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Explore the World with Our Travel Guides"
+# Travel the World with Our Guides
 
 Welcome to our travel and adventure website! Our goal is to inspire you to explore the world and create unforgettable memories. To set the tone for your journey, we have a colorful graphic of a group of hot air balloons as our wallpaper.
 
