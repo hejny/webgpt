@@ -39,7 +39,7 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
-export const COLORSTATS_VERSION = 7;
+export const COLORSTATS_VERSION = 8;
 export const COLORS_LIMIT = 10;
 export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;
 export const MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES = 30;

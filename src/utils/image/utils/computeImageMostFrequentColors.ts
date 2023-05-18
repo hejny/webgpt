@@ -28,7 +28,7 @@ export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Co
         .map(([colorCode]) => Color.fromHex(colorCode));
 
     // 3️⃣ Pick colors that has some distance threshold  (compared to all other already picked colors)
-    // !!!! Pokud některé barvy vylučují respektive vždy beru tu první a ty ostatní blízké zahazuji než narazím na nějakou další no tak tohle by mělo fungovat tím způsobem že se všechny příbuzné barvy seskupí do jednoho clusteru a ten se vážení zprůměruje na základě četnosti – tím pádem například pokud je hodně odstínů šedé a nejčastější je ten nejsvětlejší tak výsledná barva nebude pouze ta nejsvětlejší ale někde uprostřed více světla
+    //    TODO: This has one flaw which need to be fixed [🦯]
     const distanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
     const uniqueColors: Array<WithTake<Color>> = [];

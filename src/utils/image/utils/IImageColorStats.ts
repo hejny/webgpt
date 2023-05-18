@@ -6,6 +6,7 @@ import { WithTake } from '../../take/interfaces/ITakeChain';
  */
 export interface IImageColorStats extends IImageColorStatsRegion {
     version: number;
+    palette: Array<WithTake<Color>>;
     // TODO: colorSpace:number
 
     bottomHalf: IImageColorStatsRegion;
@@ -48,5 +49,4 @@ export interface IImageColorStatsRegion {
      * The most grouped color of the image as a Color object
      */
     mostGroupedColors: Array<WithTake<Color>>;
-
 }
