@@ -22,13 +22,20 @@ if (process.cwd() !== join(__dirname, '../..')) {
 }
 
 const program = new commander.Command();
-// TODO: !!! Each repair should have its own flag + commit (with this flag) and it should be runned in sequentially
+
 program.option('--commit', `Autocommit changes`, false);
+program.option('--repair-fonts', `Fix fonts`, false);
+program.option('--repair-title', `Fix title lenght`, false);
 program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
-const { commit: isCommited, parallel } = program.opts();
+const { commit: isCommited, repairFonts, repairTitle, parallel } = program.opts();
 
-repairWallpapersContent({ isCommited, parallel: parseInt(parallel) })
+repairWallpapersContent({
+    isCommited,
+    isRepairingFonts: repairFonts,
+    isRepairingTitle: repairTitle,
+    parallel: parseInt(parallel),
+})
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -38,7 +45,17 @@ repairWallpapersContent({ isCommited, parallel: parseInt(parallel) })
         process.exit(0);
     });
 
-async function repairWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
+async function repairWallpapersContent({
+    isCommited,
+    isRepairingFonts,
+    isRepairingTitle,
+    parallel,
+}: {
+    isCommited: boolean;
+    isRepairingFonts: boolean;
+    isRepairingTitle: boolean;
+    parallel: number;
+}) {
     console.info(`🧾🩹  Repairing wallpapers content`);
 
     // TODO: Use isParallel
@@ -88,40 +105,44 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
             const originalContent = content;
             let title = extractTitleFromMarkdown(content);
 
-            let font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
-            if (font && !FONTS.includes(font)) {
-                const existingFont = FONTS.find((existingFont) => font!.includes(existingFont));
+            if (isRepairingFonts) {
+                let font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
+                if (font && !FONTS.includes(font)) {
+                    const existingFont = FONTS.find((existingFont) => font!.includes(existingFont));
 
-                if (existingFont) {
-                    content = content.replace(font, existingFont);
-                    font = existingFont;
+                    if (existingFont) {
+                        content = content.replace(font, existingFont);
+                        font = existingFont;
+                    }
                 }
+
+                font = font ?? 'Unknown';
+                usedFonts[font] = usedFonts[font] ?? 0;
+                usedFonts[font]++;
             }
 
-            font = font ?? 'Unknown';
-            usedFonts[font] = usedFonts[font] ?? 0;
-            usedFonts[font]++;
-
-            if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
-                let titleShort = await askGpt(`
+            if (isRepairingTitle) {
+                if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
+                    let titleShort = await askGpt(`
                     Make following title shorter: ${title}
                 `);
 
-                // Note: Remove the quotes from titleShort
-                titleShort = titleShort.replace(/^"(.*)"$/, '$1');
+                    // Note: Remove the quotes from titleShort
+                    titleShort = titleShort.replace(/^"(.*)"$/, '$1');
 
-                // Note: Remove the dot from the end of the titleShort
-                titleShort = titleShort.replace(/\.$/, '');
+                    // Note: Remove the dot from the end of the titleShort
+                    titleShort = titleShort.replace(/\.$/, '');
 
-                if (titleShort.trim().length < title.trim().length) {
-                    content = content.replace(title, titleShort);
-                }
+                    if (titleShort.trim().length < title.trim().length) {
+                        content = content.replace(title, titleShort);
+                    }
 
-                if (titleShort.trim().length > MAX_CHARS_IN_TITLE) {
-                    console.warn(
-                        chalk.bgYellow(` ⚠️  Title is too long after the summarization`) +
-                            chalk.yellow(`\n title:${title}\n titleShort:${titleShort}`),
-                    );
+                    if (titleShort.trim().length > MAX_CHARS_IN_TITLE) {
+                        console.warn(
+                            chalk.bgYellow(` ⚠️  Title is too long after the summarization`) +
+                                chalk.yellow(`\n title:${title}\n titleShort:${titleShort}`),
+                        );
+                    }
                 }
             }
 
@@ -133,14 +154,21 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾🩹 Repair wallpapers content`);
+        await commit(
+            await getWallpapersDir(),
+            `🧾🩹 Repair wallpapers ${[isRepairingFonts && 'fonts', isRepairingTitle && 'titles']
+                .filter((part) => part)
+                .join(' and ')}`,
+        );
     }
 
-    console.info(
-        `🔤 Using fonts:\n${Object.entries(usedFonts)
-            .map(([font, count]) => `• ${count}x ${font}`)
-            .join('\n')}`,
-    );
+    if (isRepairingFonts) {
+        console.info(
+            `🔤 Using fonts:\n${Object.entries(usedFonts)
+                .map(([font, count]) => `• ${count}x ${font}`)
+                .join('\n')}`,
+        );
+    }
 
     console.info(`[ Done 🧾🩹  Repairing wallpapers content ]`);
 }

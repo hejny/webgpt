@@ -53,7 +53,8 @@
                 "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit",
                 "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit",
                 "ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts --parallel 10 --commit",
-                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --commit",
+                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --commit",
+                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-title --commit",
                 "ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts --commit"
             ],
             "onlySingle": true,
@@ -79,7 +80,9 @@
         },
         {
             "name": "🏭🧾 [ 4/5 ] Repair wallpapers content",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts"],
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --repair-title"
+            ],
             "onlySingle": true,
             "focus": true
         },
