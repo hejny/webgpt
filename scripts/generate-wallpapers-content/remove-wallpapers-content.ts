@@ -40,7 +40,6 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         throw new Error(`Working tree is not clean`);
     }
 
-
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
@@ -78,7 +77,6 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
 
             const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             if (!font || !FONTS.includes(font)) {
-                // TODO: Try to fix the font
                 rm(contentPath);
                 console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
                 return;
