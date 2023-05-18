@@ -73,16 +73,21 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             // TODO: !! Maybe parse + pass metadata in IWallpaperFiles
             const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
 
+            const thread: Array<string> = [];
             let lastMessageId: string | undefined = undefined;
             async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
+                message = spaceTrim(message);
+                thread.push(message);
                 try {
-                    const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
+                    const gptResponseForContent = await chatGptApi.sendMessage(message, {
                         parentMessageId: isContinuingConversation
                             ? lastMessageId
                             : undefined /* <- Note: This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
                     });
 
                     lastMessageId = gptResponseForContent.id;
+
+                    thread.push(gptResponseForContent.text);
                     return gptResponseForContent.text;
                 } catch (error) {
                     if (!(error instanceof ChatGPTError)) {
@@ -100,16 +105,13 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
 
             const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
             let content = await askGpt(contentPrompt, false);
-            const contentThread: Array<string> = [contentPrompt];
 
             for (let i = 0; i < 3; i++) {
                 const title = extractTitleFromMarkdown(content);
 
                 // TODO: [💵] DRY this checks
                 if (title === null) {
-                    contentThread.push(content);
-                    const fixPropmt = `Content does not have heading, fix it.`;
-                    contentThread.push(fixPropmt);
+                    const fixPropmt = `Content does not have heading, rewrite whole content.`;
                     content = await askGpt(fixPropmt, true);
                     continue;
                 }
@@ -117,17 +119,13 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 if (title.trim().length > 'Futuristic Cityscape Wallpaper'.length) {
                     //                    'Tvořím něco z ničeho nic'
                     //                    'Futuristic Cityscape Wallpaper'
-                    contentThread.push(content);
-                    const fixPropmt = `Heading should be short and concise, fix it.`;
-                    contentThread.push(fixPropmt);
+                    const fixPropmt = `Heading should be short and concise, rewrite whole content.`;
                     content = await askGpt(fixPropmt, true);
                     continue;
                 }
 
                 if (title?.toLowerCase().includes('wallpaper')) {
-                    contentThread.push(content);
-                    const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, fix it.`;
-                    contentThread.push(fixPropmt);
+                    const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.`;
                     content = await askGpt(fixPropmt, true);
                     continue;
                 }
@@ -143,16 +141,15 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 spaceTrim(
                     (block) => `
 
-                    <!--contentThread:
-                    ${block(contentThread.join('\n\n\n---\n\n\n'))}
-                    -->
-                    <!--fontPrompt:
-                    ${block(fontPrompt)}
-                    -->
-
                     <!--font:${font}-->
 
                     ${block(content)}
+
+                    <!--
+
+                    ${block(thread.join('\n\n\n---\n\n\n'))}
+
+                    -->
       
                 `,
                 ) + '\n',
