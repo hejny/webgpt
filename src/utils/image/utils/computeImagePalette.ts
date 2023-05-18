@@ -1,8 +1,13 @@
-import { COLORS_LIMIT, DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
+import {
+    COLORS_LIMIT,
+    DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO,
+    DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
+} from '../../../../config';
 import { Color } from '../../color/Color';
 import { textColor } from '../../color/operators/furthest';
 import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
+import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImageColorStats } from './IImageColorStats';
 
@@ -54,22 +59,25 @@ export function computeImagePalette(colorStats: Omit<IImageColorStats, 'version'
         primaryColor = paletteCandidates[0];
     }
 
-    // 2️⃣⛙ Make sortedPaletteCandidates
+    // 2️⃣🅲 Get the secondary color
     const secondaryColor = primaryColor.then(textColor);
-    const sortedPaletteCandidates = [
-        primaryColor,
-        secondaryColor,
-        ...paletteCandidates.filter((color) => color !== primaryColor),
-    ];
 
-    // 3️⃣ Pick colors that has some distance threshold (compared to all other already picked colors)
+    // 3️⃣ Pick colors that has some distance+hue threshold (compared to all other already picked colors)
     //    TODO: This has one flaw which need to be fixed [🦯]
     const distanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
-    const palette: Array<WithTake<Color>> = [];
-    for (const paletteCandidate of sortedPaletteCandidates) {
+    const palette: Array<WithTake<Color>> = [primaryColor, secondaryColor];
+    for (const paletteCandidate of paletteCandidates.filter(
+        (color) => color !== primaryColor && color !== secondaryColor,
+    )) {
         // TODO: !! Make in this distance hue more relevant
-        if (palette.every((uniqueColor) => colorDistanceSquared(paletteCandidate, uniqueColor) >= distanceTheashold)) {
+        if (
+            palette.every((uniqueColor) => colorDistanceSquared(paletteCandidate, uniqueColor) >= distanceTheashold) &&
+            palette.every(
+                (uniqueColor) =>
+                    colorHueDistance(paletteCandidate, uniqueColor) >= DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
+            )
+        ) {
             palette.push(paletteCandidate);
         }
 

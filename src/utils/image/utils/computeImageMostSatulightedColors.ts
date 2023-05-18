@@ -1,6 +1,6 @@
 import {
     COLORS_LIMIT,
-    MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES,
+    DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
     MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO,
 } from '../../../../config';
 import { Color } from '../../color/Color';
@@ -28,7 +28,7 @@ export function computeImageMostSatulightedColors(image: IImage): Array<WithTake
     for (const color of saturatedColors) {
         if (
             uniqueColors.every(
-                (uniqueColor) => colorHueDistance(color, uniqueColor) >= MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES,
+                (uniqueColor) => colorHueDistance(color, uniqueColor) >= DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
             )
         ) {
             uniqueColors.push(color);
