@@ -106,9 +106,11 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
                     Make following title shorter: ${title}
                 `);
 
-                if (titleShort.trim().length <= MAX_CHARS_IN_TITLE) {
+                if (titleShort.trim().length < title.trim().length) {
                     content = content.replace(title, titleShort);
-                } else {
+                }
+
+                if (titleShort.trim().length > MAX_CHARS_IN_TITLE) {
                     console.warn(
                         chalk.bgYellow(` ⚠️  Title is too long after the summarization`) +
                             chalk.yellow(`title:${title}\n` + `titleShort:${titleShort}`),
