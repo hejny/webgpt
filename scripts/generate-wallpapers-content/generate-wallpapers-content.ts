@@ -10,6 +10,7 @@ import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { FONTS, OPENAI_API_KEY } from '../../config';
+import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
@@ -97,8 +98,33 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 }
             }
 
-            const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
-            const content = await askGpt(contentPrompt, false);
+            const contentThread: Array<string> = [];
+            let content: string;
+            for (let i = 0; i < 3; i++) {
+                const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
+                content = await askGpt(contentPrompt, false);
+
+                const title = extractTitleFromMarkdown(content);
+
+                // TODO: [💵] DRY this checks
+                if (title === null) {
+                    contentThread.push(content);
+                    const fixPropmt = `Content does not have heading, fix it.`;
+                    contentThread.push(fixPropmt);
+                    content = await askGpt(fixPropmt, true);
+                    continue;
+                }
+
+                if (title?.toLowerCase().includes('wallpaper')) {
+                    contentThread.push(content);
+                    const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, fix it.`;
+                    contentThread.push(fixPropmt);
+                    content = await askGpt(fixPropmt, true);
+                    continue;
+                }
+
+                break;
+            }
 
             const fontPrompt = createFontPromptTemplate();
             const font = await askGpt(fontPrompt, true);
@@ -109,7 +135,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                     (block) => `
 
                     <!--contentPrompt:
-                    ${block(contentPrompt)}
+                    ${block(contentThread.join('\n\n\n---\n\n\n'))}
                     -->
                     <!--fontPrompt:
                     ${block(fontPrompt)}

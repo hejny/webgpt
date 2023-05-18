@@ -56,6 +56,7 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
             const content = await readFile(contentPath, 'utf-8');
             const title = extractTitleFromMarkdown(content);
 
+            // TODO: [💵] DRY this checks 
             if (title === null) {
                 rm(contentPath);
                 console.info(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
