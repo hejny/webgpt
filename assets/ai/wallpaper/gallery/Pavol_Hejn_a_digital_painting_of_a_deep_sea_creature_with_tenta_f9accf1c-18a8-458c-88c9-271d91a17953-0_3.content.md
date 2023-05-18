@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Wonders of the Deep Sea
+# Explore Deep Sea Wonders
 
 Immerse yourself in the mystery and beauty of the ocean's depths with our stunning digital painting of a deep sea creature. This captivating artwork features intricate tentacles and bioluminescent patterns that will transport you to a world of exploration and wonder.
 

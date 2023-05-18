@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Ainautes: Where Science and Technology Meet
+# Ainautes: Where SciTech Meets
 
 Experience the future with us in this stunning cityscape where Ainautes work hand-in-hand with AI to push the boundaries of science and technology. Our team of experts is dedicated to creating innovative solutions that will change the world.
 

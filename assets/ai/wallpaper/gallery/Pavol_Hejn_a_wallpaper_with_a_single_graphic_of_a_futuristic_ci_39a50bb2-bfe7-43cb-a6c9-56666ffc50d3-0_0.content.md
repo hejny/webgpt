@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Future with our Futuristic Cityscape Background
+# Future Cityscape Background for Exploration
 
 Step into a world of tomorrow with our stunning background featuring a futuristic cityscape. The graphic depicts a bustling metropolis in a solid color such as orange or green, adding a touch of modernity to any device.
 

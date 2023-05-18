@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature-Inspired Desktop Backgrounds
+# Nature Desktop Backgrounds
 
 Welcome to our website featuring a collection of nature-inspired desktop backgrounds to enhance your computer screen. Our carefully curated selection includes stunning landscapes, breathtaking seascapes, and peaceful forest scenes.
 

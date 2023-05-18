@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Space with Geometric Patterns
+# Geometric Patterns Elevate Space
 
 Introducing our abstract geometric pattern, inspired by contemporary web design trends and color schemes. This repeating pattern of bold shapes and intricate designs is the perfect addition to any modern interior.
 

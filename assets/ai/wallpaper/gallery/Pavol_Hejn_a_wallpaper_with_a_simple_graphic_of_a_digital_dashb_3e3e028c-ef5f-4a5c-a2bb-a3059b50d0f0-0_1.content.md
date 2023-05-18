@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Dashboard Background for Your Business Website
+# Digital Dashboard Background for Business Website
 
 Welcome to our website, where we offer a digital dashboard background that can help you take your business website to the next level. Our wallpaper features a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Neon Geometric Landscapes - Art
+# Neon Geometric Landscapes Art
 
 Welcome to Geometric Landscapes, a collection of stunning digital art featuring landscapes created with geometric shapes and vibrant neon colors. Our collection brings together the worlds of nature and technology, showcasing the beauty of digital art.
 

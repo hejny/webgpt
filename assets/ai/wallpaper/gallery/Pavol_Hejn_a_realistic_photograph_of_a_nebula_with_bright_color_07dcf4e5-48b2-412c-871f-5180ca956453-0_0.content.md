@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Nebula Backgrounds for Universe's Beauty
+# Beautiful Nebula Backgrounds
 
 Our stunning nebula background captures the intricate details and vibrant colors of a distant nebula, allowing you to transform your digital space into a window to the cosmos. Whether you're an astronomy enthusiast, a science fiction fan, or simply appreciate the wonders of nature, our nebula background is the perfect way to add a touch of cosmic inspiration to your website or social media profiles.
 

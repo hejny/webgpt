@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Fractal Background for Creativity
+# Fractal Creativity Background
 
 Welcome to our creative environment, where we believe that the right surroundings can inspire great ideas. Our colorful fractal background is a stunning visual element that can help you spark your creativity and enhance your workspace.
 

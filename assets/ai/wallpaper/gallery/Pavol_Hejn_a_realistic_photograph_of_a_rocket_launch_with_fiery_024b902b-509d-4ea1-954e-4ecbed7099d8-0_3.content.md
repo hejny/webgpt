@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Universe with Our Space Adventures Desktop Background
+# Space Adventures Desktop Backgrounds
 
 Our Space Adventures desktop background is the perfect way to transform your computer screen into a window to the universe. This stunning photograph captures the excitement and awe of space exploration, with a realistic depiction of a rocket launch complete with fiery trails and smoke visible in the sky.
 

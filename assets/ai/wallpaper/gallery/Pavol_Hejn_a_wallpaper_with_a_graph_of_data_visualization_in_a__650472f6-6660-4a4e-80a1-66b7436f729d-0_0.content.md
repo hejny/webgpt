@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Data Visualization with Minimal Design
+# Simplify Data Visualization with Minimalism
 
 Welcome to our website where we showcase the beauty and effectiveness of minimalist data visualization. Our background features a stunning graph that captures the essence of simplicity and elegance.
 

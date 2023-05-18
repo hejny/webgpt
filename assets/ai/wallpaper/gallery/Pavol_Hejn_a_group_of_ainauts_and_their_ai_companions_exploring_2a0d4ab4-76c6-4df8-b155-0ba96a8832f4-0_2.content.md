@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Unknown: A Sci-Fi Adventure
+# Sci-Fi Adventure: Exploring the Unknown
 
 Welcome to our website, where we take you on a journey through the unexplored depths of space. Our mission is to bring you the latest news and updates from the world of science fiction, including books, movies, and TV shows.
 

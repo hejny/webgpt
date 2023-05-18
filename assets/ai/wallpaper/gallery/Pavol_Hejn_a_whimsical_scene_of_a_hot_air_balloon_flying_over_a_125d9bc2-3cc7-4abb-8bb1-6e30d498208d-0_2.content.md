@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Explore the World with Our Lifestyle Tips
+# Discover Global Lifestyle Tips
 
 Welcome to Adventure Awaits, your go-to source for all things lifestyle and adventure. Whether you're a seasoned traveler or just starting to explore, our website is here to inspire and guide you on your journey.
 

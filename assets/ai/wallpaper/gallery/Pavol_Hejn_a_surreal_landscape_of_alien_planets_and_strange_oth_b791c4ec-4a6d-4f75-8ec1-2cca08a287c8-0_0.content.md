@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Our Otherworldly Adventure
+# Otherworldly Adventure Awaits!
 
 Explore surreal landscapes of alien planets and discover strange creatures from beyond your imagination. Our collection of wallpapers will transport you to a world beyond your wildest dreams.
 

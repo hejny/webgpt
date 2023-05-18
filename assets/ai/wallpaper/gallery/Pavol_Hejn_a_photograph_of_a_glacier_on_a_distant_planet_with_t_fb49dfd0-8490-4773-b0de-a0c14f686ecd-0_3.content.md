@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Wonders of the Universe
+# Universe Wonders
 
 Welcome to our website dedicated to exploring the mysteries and beauty of the universe. As you navigate through our pages, we hope to inspire your curiosity and ignite your imagination.
 

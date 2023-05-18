@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Yoga and Meditation with a Colorful Mandala Pattern
+# Colorful Mandala Yoga and Meditation
 
 Welcome to our yoga and meditation website, where we strive to create a peaceful and calming environment for your practice. Our website features a colorful mandala pattern that is perfect for enhancing your meditation experience.
 

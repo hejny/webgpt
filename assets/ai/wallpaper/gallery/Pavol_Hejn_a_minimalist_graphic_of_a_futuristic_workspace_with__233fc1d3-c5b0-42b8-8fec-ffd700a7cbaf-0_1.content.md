@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Workspace for Productivity
+# Futuristic Productivity Workspace
 
 Welcome to our website dedicated to helping you boost your productivity and creativity! Our minimalist graphic of a futuristic workspace can inspire you to create an environment that promotes focus and innovation.
 

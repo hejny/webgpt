@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey Through the Depths of Space
+# Journeying Through Space's Depths
 
 Welcome to our website, where we take you on a journey through the depths of space. Our mission is to explore the unknown and uncover the mysteries of the universe. 
 

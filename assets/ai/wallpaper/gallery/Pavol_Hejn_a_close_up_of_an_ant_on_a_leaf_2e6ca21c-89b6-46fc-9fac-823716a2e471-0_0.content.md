@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature-inspired Background for Your Desktop
+# Nature Desktop Background
 
 Welcome to our website where you can find a variety of nature-inspired backgrounds for your desktop. Our wallpapers are carefully selected to bring a touch of the natural world into your daily routine. 
 

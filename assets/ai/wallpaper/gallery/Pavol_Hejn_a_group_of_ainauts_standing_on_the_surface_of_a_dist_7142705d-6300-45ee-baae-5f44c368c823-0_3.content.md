@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Wonders of Distant Planets
+# Exploring Distant Planets' Wonders
 
 Welcome to our website dedicated to exploring the mysteries of the universe! Our stunning wallpaper captures a group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them. 
 

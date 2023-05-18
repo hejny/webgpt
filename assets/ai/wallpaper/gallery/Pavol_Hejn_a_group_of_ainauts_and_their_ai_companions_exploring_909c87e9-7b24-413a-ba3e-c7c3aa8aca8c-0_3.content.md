@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "The Uncharted Depths: A Journey into the Unknown"
+# Journey into the Uncharted Depths
 
 Welcome to our website, where we take you on a thrilling adventure through the uncharted depths of space. Join a group of Ainautes and their AI companions as they explore a massive, abandoned research facility that holds secrets beyond imagination.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Future of Technology: A Tech Website with a Futuristic Twist
+# Futuristic Tech Website Explores Technology's Future
 
 Welcome to our tech website, where we explore the latest advancements in technology and how they impact our lives. Our website is designed to keep you up-to-date with the latest news, reviews, and trends in the world of tech.
 

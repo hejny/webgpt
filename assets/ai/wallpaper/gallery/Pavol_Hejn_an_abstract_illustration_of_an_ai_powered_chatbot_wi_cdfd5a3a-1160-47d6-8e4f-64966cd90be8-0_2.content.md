@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI-Powered Chatbot for Seamless Customer Support
+# AI Chatbot for Customer Support
 
 Welcome to our website featuring an abstract illustration of an AI-powered chatbot. Our sleek and modern graphics, combined with a minimalist color scheme, reflect our commitment to providing seamless customer support through cutting-edge technology.
 

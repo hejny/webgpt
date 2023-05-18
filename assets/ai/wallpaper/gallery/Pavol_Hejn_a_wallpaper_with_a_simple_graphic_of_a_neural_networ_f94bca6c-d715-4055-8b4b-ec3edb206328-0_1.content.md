@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Power of Neural Networks Explored
+# Exploring Neural Network Power
 
 Welcome to our website, where we delve into the fascinating world of neural networks. Our site features a stunning graphic that showcases the intricate workings of a neural network against a backdrop of complementary colors.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Brand with a Minimalist City Skyline Background
+# Elevate Your Brand with a Minimal City Skyline
 
 Welcome to our business and marketing website, where we help you take your brand to the next level. Our minimalist city skyline background is the perfect addition to enhance the look and feel of your website. The graphic depicts a beautiful city skyline at dawn, which is perfect for a professional setting.
 

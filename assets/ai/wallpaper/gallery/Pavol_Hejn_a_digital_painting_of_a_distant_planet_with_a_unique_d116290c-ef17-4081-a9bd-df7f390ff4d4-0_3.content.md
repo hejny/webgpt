@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Mysteries of a Distant Planet
+# Mystery of Distant Planet
 
 Welcome to our website featuring a stunning digital painting of a distant planet. This breathtaking artwork depicts a world with a unique atmosphere and unusual terrain, inviting you to explore its mysteries.
 

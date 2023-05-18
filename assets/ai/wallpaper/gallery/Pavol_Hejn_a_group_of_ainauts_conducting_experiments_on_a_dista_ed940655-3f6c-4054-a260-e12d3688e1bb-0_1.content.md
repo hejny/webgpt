@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Ainautes: Exploring New Worlds
+# Ainautes: New World Exploration
 
 Welcome to The Ainautes, a website dedicated to the exploration of new worlds and the study of their ecosystems. Our stunning background image featuring a group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them, perfectly captures the spirit of adventure and discovery that drives us.
 

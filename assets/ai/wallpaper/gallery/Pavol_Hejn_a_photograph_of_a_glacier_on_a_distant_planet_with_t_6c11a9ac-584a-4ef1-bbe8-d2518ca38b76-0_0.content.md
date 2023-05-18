@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Arctic Planetary Glacial Explorer
+# Arctic Glacial Explorer
 
 Welcome to Arctic Explorer, your ultimate guide to exploring the frozen wonders of distant planets. Our website is dedicated to bringing you stunning photographs and information about glaciers from all corners of the universe.
 

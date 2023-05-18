@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Abstract Shapes for Inspiring Workspaces
+# Inspiring Workspace Shapes
 
 Welcome to our website, where we offer an inspiring addition to your workspace. Our abstract shapes background is designed with web design trends and patterns in mind, making it the perfect complement to any creative environment.
 

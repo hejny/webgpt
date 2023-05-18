@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Vintage Star Map for Space Exploration
+# Vintage Space Map
 
 Our vintage star map is a beautiful illustration that allows you to embark on a journey through the stars and constellations. With intricate depictions of spacecraft and celestial bodies, this piece brings the wonders of the universe into your home.
 

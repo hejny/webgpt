@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Frontiers of Science with AI Companions
+# AI Companions in Science Exploration
 
 Welcome to our website dedicated to exploring the latest scientific discoveries and advancements in the field of artificial intelligence. Our team of Ainautes (AI enthusiasts) and their AI companions are constantly pushing the boundaries of what is possible, conducting groundbreaking experiments and research in a zero-gravity laboratory.
 

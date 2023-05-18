@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Vintage Travel Poster for Distant Planet
+# Vintage Travel Poster for Alien World
 
 Welcome to our website featuring a stunning vintage-style travel poster of a distant planet. This unique wallpaper captures the imagination with its bold typography and artistic rendering of an otherworldly landscape. Whether you're a science fiction enthusiast, a lover of retro design, or simply looking for a captivating addition to your home or office decor, this wallpaper is sure to impress.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Lost Expedition: Exploring an Abandoned Spaceship
+# Lost Expedition: Abandoned Spaceship Exploration
 
 Welcome to our website, where we take you on a thrilling journey through space. Join us and our AI companions as we explore a massive, abandoned spacecraft floating in the depths of the galaxy.
 

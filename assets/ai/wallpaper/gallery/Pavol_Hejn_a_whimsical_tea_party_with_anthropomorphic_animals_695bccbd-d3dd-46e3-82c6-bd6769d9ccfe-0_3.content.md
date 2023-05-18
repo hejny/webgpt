@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to our Whimsical Tea Party!
+# Whimsical Tea Party Welcome!
 
 Join us for a delightful experience in a magical world where animals come to life and enjoy tea parties just like humans do. Our whimsical wallpaper sets the scene for an unforgettable adventure.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Data Viz Exploration
+# Futuristic Data Visualization
 
 Welcome to our website dedicated to exploring the world of futuristic data visualization. Our sleek and modern graphics, combined with a minimalist color scheme, provide a unique and sophisticated experience for anyone interested in this exciting field.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Ainautes: Exploring the Unknown
+# Ainautes: Into the Unknown
 
 Welcome to our website, where we share our adventures as Ainautes exploring the depths of space. Our latest expedition took us to a distant planet, where we discovered an underground cavern filled with wonders beyond our wildest imaginations.
 

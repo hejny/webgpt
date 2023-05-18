@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Find Inner Peace and Tranquility with Our Mindful Mandala Background
+# Mindful Mandala Background for Inner Peace and Tranquility
 
 Welcome to our yoga and meditation website where we offer a wide range of resources to help you find inner peace and tranquility. Our mindful mandala background is the perfect complement to your meditation practice, providing a colorful and calming environment to help you focus your mind and relax your body.
 

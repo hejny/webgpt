@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Geometric Backgrounds for Your Online Presence
+# Geometric Online Backgrounds
 
 Welcome to our website, where we offer a collection of modern and stylish backgrounds to enhance your online presence. Our geometric backgrounds are a perfect choice for those who want to add a touch of sophistication to their website.
 

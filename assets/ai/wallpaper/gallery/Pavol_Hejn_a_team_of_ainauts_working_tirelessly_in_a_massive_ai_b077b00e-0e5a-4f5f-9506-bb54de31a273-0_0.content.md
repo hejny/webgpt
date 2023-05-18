@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Welcome to the Ainautes AI Factory
+# Ainautes AI Factory Welcome
 
 Our team of skilled Ainautes is dedicated to pushing the boundaries of artificial intelligence and creating cutting-edge technologies for the future. Our state-of-the-art factory is where we work tirelessly to develop new and innovative solutions that will shape the world of tomorrow.
 

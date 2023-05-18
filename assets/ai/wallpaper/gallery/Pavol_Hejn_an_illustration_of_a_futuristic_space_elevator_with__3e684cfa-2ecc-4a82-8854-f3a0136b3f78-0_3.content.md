@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Welcome to the Future of Space Travel
+# Future Space Travel
 
 Experience the awe-inspiring vision of a space elevator with our stunning wallpaper. Imagine traveling from Earth into orbit without the need for rockets or spacecraft.
 

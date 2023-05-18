@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Enhance Digital Look with Circuit Board Design
+# Improve Look with Circuit Board Design
 
 Looking for a way to give your computer or phone a fresh and modern look? Look no further than our circuit board design in shades of blue and silver!
 

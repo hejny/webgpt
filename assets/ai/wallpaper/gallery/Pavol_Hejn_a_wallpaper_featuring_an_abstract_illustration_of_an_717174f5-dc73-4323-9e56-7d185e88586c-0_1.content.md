@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI-Powered Search Engine Background
+# AI Search Engine Background
 
 Welcome to our website! Our platform is designed to provide you with an intelligent and efficient search experience. Our AI-powered search engine is constantly learning and improving, ensuring that you receive the most relevant results every time.
 

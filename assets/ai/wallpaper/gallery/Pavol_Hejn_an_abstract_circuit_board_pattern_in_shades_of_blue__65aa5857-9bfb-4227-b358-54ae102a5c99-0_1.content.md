@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Circuit Board Design
+# Futuristic Circuit Design
 
 Transform your living or workspace with our abstract circuit board design in shades of blue and silver. This modern pattern is sure to inspire creativity and innovation in your daily life.
 

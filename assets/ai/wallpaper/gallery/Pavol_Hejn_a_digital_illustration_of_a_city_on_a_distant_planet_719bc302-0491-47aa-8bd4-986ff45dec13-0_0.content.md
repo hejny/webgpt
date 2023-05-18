@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore a Futuristic City on a Distant Planet
+# Tour a Futuristic Planet City
 
 Welcome to our website where you can experience a digital illustration of a city on a distant planet. Our stunning background will transport you to a world of towering buildings and advanced technology.
 

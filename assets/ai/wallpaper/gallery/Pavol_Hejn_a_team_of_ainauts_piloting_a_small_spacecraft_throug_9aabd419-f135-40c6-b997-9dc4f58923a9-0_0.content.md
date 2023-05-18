@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space Adventure: Navigate Through an Asteroid Field
+# Asteroid Field Navigation
 
 Embark on a thrilling journey with our team of skilled Ainautes as they navigate their way through a treacherous asteroid field. Watch as they expertly pilot their small spacecraft, dodging debris and navigating through narrow passages.
 

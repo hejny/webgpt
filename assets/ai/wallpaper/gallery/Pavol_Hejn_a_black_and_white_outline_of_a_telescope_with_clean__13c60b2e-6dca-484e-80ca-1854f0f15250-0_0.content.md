@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# StarGaze: Explore the Universe with Our Telescopes
+# StarGaze: Explore the Universe with Telescopes
 
 Welcome to StarGaze, your go-to destination for exploring the universe. Our telescopes are designed to provide you with a clear and detailed view of the night sky. 
 

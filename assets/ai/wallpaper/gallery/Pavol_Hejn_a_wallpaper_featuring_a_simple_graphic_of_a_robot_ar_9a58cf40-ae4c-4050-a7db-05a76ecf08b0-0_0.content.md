@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# TechConnect: Tech News & Updates
+# TechConnect: News & Updates
 
 Welcome to TechConnect, your ultimate destination for the most recent tech news, updates, and insights. Our website provides a vast collection of articles, reviews, and user stories covering the latest gadgets, software, and trends in the tech industry.
 

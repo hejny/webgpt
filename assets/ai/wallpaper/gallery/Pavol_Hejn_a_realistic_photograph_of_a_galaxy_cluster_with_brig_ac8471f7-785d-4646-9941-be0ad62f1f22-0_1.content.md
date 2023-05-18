@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Galaxy Cluster: A Glimpse of the Universe
+# Galaxy Cluster: Universe Glimpse
 
 Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our image is sure to transport you to the depths of space.
 

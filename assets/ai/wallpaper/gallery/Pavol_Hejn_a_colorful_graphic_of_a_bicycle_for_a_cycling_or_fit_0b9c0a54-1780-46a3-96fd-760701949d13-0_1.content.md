@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Pedaling Towards Fitness: A Colorful Graphic of a Bicycle for Our Health and Wellness Blog
+# Cycle for Fitness: Colorful Graphic for Wellness Blog
 
 Welcome to our health and wellness blog, where we are committed to helping you achieve your fitness goals. As part of our dedication to creating a motivating environment, we have chosen a colorful graphic of a bicycle as our background.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Serenity: Finding Peace in a Chaotic World
+# Serenity in Chaos
 
 Welcome to Serenity, your ultimate destination for finding inner peace and tranquility. Our mission is to help you achieve a state of calmness amidst the chaos of everyday life. 
 

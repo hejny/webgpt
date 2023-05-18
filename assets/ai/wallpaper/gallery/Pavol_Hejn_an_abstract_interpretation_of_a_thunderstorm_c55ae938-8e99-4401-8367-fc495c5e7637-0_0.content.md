@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Thunderstorm: An Abstract Interpretation
+# Thunderstorm: Abstract Interpretation
 
 Welcome to our website featuring an abstract interpretation of a thunderstorm! Our unique wallpaper captures the raw energy and power of a thunderstorm in a mesmerizing display of colors and shapes.
 

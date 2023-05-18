@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Welcome to the World of Ainautes
+# Ainautes' World
 
 Experience the thrill of exploration with our high-tech suits and join us on an adventure to the surface of a desert planet. Our team of expert explorers will guide you through the vast expanse of sand dunes and rocky terrain, as we uncover the secrets of this mysterious world.
 

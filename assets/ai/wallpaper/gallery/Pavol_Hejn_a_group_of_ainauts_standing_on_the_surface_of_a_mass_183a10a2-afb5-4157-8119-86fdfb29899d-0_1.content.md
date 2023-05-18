@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Wonders of Space with Our Cosmic Collection
+# Discover Space Wonders with Our Collection
 
 Welcome to our website, where we offer a wide range of cosmic-themed wallpapers to enhance your desktop or mobile background. Our collection includes stunning images of galaxies, nebulas, planets, and more, all captured by talented photographers and artists from around the world.
 

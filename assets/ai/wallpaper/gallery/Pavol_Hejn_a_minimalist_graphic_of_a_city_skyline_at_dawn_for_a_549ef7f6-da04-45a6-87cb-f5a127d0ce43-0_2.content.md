@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Skyline Dawn: A Minimalist Graphic for Your Business Website
+# Minimalist Skyline Dawn Graphic for Business Website
 
 Welcome to Skyline Dawn, your source for minimalist graphics that add a touch of elegance and sophistication to your business or marketing website. Our signature graphic is a city skyline at dawn, perfect for setting the tone of your website and capturing the attention of your visitors.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Wonders of Space with Our Futuristic Space Station Desktop Background
+# Discover Space Wonders with Our Futuristic Desktop Background
 
 Welcome to our website where you can find stunning desktop backgrounds that will transport you to another world. Our latest addition is an illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents. This background will inspire your imagination and take you on a journey through the wonders of space.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Futuristic Tech on Our Site
+# Discover Futuristic Tech Here
 
 Welcome to our website, your ultimate destination for all things tech. We bring you the latest news, insights, and analysis from the world of technology. And as a bonus, we've included a sleek and stylish abstract circuit board design as the background for our site.
 

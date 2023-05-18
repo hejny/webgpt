@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Robotic Explorer Illustrates Future
+# Robotic Explorer Shows Future
 
 Our website is your gateway to the latest trends in technology and innovation. And what better way to represent the cutting-edge advancements that are shaping our world than with our stunning robotic explorer illustration?
 

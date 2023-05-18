@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Enhance Website with Binary Code Background
+# Improve Website with Binary Background
 
 Looking to add a subtle touch of tech to your website's design? Our binary code background is the perfect solution. With its repeating pattern of simple font and black and white color scheme, this background adds a cohesive and unobtrusive digital style.
 

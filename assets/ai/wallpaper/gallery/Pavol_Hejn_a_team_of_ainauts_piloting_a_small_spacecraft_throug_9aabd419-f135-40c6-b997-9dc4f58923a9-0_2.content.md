@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Journey to the Stars: Explore the Final Frontier
+# Exploring the Final Frontier
 
 Welcome to our website dedicated to the exploration of space! Our stunning background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This captivating image sets the tone for our site and captures the excitement and danger of space travel.
 

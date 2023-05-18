@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Cosmic Space Exploration Background
+# Cosmic Exploration Background
 
 Welcome to Cosmic Adventure, your destination for exploring the mysteries of space. Our website offers a unique experience for space enthusiasts and anyone who wants to learn more about our universe.
 

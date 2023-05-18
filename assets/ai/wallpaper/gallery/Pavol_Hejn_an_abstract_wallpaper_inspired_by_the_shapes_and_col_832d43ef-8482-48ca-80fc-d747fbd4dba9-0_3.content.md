@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Quantum Physics Exploration: Fascinating Inspiration
+# Quantum Inspiration
 
 Welcome to Quantum Inspiration, a website dedicated to exploring the fascinating world of quantum physics. Our abstract wallpaper provides a visually stimulating background for our content, which covers a wide range of topics related to this incredible field of science.
 

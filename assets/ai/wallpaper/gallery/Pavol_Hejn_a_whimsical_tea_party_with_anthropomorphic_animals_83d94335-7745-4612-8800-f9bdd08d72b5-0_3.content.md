@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to our Whimsical Tea Party Background
+# Whimsical Tea Party Background
 
 Step into a world of whimsy and imagination with our delightful anthropomorphic animal tea party background. Whether you're looking to add some charm to your digital devices or simply want to escape to a magical place, our background is the perfect choice.
 

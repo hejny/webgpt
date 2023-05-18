@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to our Jungle Adventure!
+# Jungle Adventure Welcome!
 
 Our website is all about exploring the wonders of the jungle and its amazing inhabitants. To make your visit even more exciting, we've added a playful graphic of a group of animals in their natural habitat as our wallpaper.
 

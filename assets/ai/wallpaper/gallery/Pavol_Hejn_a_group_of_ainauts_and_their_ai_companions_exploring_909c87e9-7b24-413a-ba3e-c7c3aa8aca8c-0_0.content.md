@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# The Ainautes: Exploring the Unknown
+# Ainautes: Exploring the Unknown
 
 Welcome to our website, where we share the thrilling adventures of a group of Ainautes and their AI companions. Our latest expedition takes us to an abandoned research facility in the depths of space.
 

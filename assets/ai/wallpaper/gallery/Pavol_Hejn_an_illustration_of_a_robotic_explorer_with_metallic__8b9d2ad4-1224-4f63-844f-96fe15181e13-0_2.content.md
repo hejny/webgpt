@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future with Our Robotic Explorer Illustration
+# Robotic Explorer Illustration for Future Exploration
 
 Our website is dedicated to all things futuristic and innovative, and we're excited to showcase our latest addition - an incredible illustration of a robotic explorer. With its intricate details and metallic textures, this artwork perfectly captures the essence of cutting-edge technology.
 

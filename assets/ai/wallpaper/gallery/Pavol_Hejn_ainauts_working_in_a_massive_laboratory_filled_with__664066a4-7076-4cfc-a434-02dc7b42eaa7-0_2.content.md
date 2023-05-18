@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Welcome to the Future of Science
+# Future Science Welcome
 
 At Ainautes, we are dedicated to pushing the boundaries of scientific research. Our state-of-the-art laboratory is equipped with the latest technology and staffed by a team of brilliant scientists who are passionate about exploring the unknown.
 

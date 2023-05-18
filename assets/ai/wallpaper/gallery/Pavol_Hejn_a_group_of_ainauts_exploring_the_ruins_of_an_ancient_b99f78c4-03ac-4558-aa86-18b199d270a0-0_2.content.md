@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Mysteries of Ancient Planetary Civilizations
+# Ancient Planetary Mysteries
 
 Welcome to our website dedicated to uncovering the secrets of ancient civilizations on distant planets. Our team of Ainautes is passionate about exploring the unknown and discovering the mysteries of the universe.
 

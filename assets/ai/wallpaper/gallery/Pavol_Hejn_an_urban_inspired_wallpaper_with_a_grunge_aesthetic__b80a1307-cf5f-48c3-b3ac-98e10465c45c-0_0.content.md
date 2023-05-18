@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Tech Website with a Futuristic City Nightscape
+# Elevate Tech Website with Futuristic Nightscape
 
 Welcome to our tech website, where we showcase the latest in technology news, reviews, and trends. Our website features a stunning background that will elevate your site's design and make it stand out from the competition. Our futuristic city nightscape wallpaper is the perfect addition to any tech-focused website.
 

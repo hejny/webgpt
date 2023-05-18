@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to the World of Ainautes
+# Ainautes' World
 
 Experience the future with our stunning wallpaper featuring a cityscape where Ainautes, the advanced AI technology, monitor and maintain the city's infrastructure and systems.
 

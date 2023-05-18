@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Welcome to our Nature-inspired Workspace
+# Nature Workspace Welcome
 
 Transform your workspace into a calming and inspiring environment with our nature-inspired wallpaper. Our "Forest with a Misty Background" wallpaper brings the beauty of the outdoors inside, creating a peaceful atmosphere that will help you stay focused and productive.
 

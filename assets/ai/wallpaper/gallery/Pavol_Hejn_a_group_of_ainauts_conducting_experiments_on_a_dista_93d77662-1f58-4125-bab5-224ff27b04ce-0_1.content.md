@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Ainautes: Exploring a Distant Moon
+# Exploring Ainautes Moon
 
 Welcome to the world of Ainautes, where we push the boundaries of science and explore the unknown. Our team of scientists is currently conducting groundbreaking experiments on a distant moon, with a breathtaking view of a massive gas giant looming in the background.
 

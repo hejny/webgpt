@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Malware Design Adds Edge to Space
+# Malware Boosts Space Edge
 
 Looking for a way to make your space stand out? Our abstract pattern inspired by computer viruses and malware is the perfect solution. Against a sleek black background, this design adds a touch of unconventional style to any room.
 

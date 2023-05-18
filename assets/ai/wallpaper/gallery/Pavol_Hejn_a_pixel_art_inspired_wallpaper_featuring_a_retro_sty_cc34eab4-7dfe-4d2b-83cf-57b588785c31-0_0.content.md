@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Retro Robot Background for Your Desktop
+# Desktop Retro Robot Background
 
 Add a touch of nostalgia to your computer with our pixel art-inspired wallpaper featuring a retro-style robot. The limited color palette and pixelated lines give it a unique, vintage feel that will transport you back in time.
 

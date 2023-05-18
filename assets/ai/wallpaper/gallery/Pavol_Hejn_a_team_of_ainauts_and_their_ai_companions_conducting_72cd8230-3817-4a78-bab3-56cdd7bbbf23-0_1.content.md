@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Depths of Gas Giants: A Journey to the Unknown
+# Journey to the Depths of Gas Giants
 
 Welcome to our website dedicated to exploring the depths of gas giants! Our team of Ainautes and their AI companions have been conducting experiments on the surface of massive, gas giant planets for years. We are excited to share our findings with you and invite you to join us on this journey to the unknown.
 

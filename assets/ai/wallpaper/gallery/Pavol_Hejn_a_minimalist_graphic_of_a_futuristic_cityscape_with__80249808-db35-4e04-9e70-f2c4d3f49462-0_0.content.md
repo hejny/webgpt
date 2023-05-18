@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Digital Workspace Inspiration for Future Cities
+# Inspiring Digital Workspaces for Future Cities
 
 Transform your digital workspace with our minimalist graphic of a futuristic cityscape. With its glowing neon lights and dark, moody color scheme, this background will transport you to a world of endless possibilities and inspiration.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Welcome to Ainautes - Pushing the Boundaries of Science and Technology
+# Ainautes: Pushing Science and Technology Boundaries
 
 Experience the future with our stunning cityscape wallpaper, where Ainautes work alongside AI to create groundbreaking innovations in science and technology. Our community of brilliant minds is dedicated to exploring new frontiers and pushing the limits of what's possible.
 

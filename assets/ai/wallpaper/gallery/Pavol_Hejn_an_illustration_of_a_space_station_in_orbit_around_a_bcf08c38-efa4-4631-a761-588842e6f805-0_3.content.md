@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Space Station Orbiting a Gas Giant
+# Orbiting Gas Giant
 
 Welcome to our website featuring an incredible illustration of a space station in orbit around a gas giant planet. The stunning image showcases the rings and storms visible in the background, creating a mesmerizing scene that captures the imagination.
 

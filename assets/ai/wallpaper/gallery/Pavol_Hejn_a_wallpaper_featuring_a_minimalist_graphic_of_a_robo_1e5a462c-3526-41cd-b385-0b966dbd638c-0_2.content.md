@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Boost Productivity with Our Digital Notepad's Minimalist Background
+# Maximize Productivity with Our Minimalist Digital Notepad
 
 Welcome to Digital Notepad, the ultimate productivity tool for digital note-taking and sketching. Our minimalist robot hand background provides the perfect backdrop for your creative ideas.
 

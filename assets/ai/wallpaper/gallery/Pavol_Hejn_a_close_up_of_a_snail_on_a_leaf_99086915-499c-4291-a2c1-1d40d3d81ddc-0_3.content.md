@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature-Inspired Desktop Backgrounds for a Refreshing Workday
+# Nature Desktop Backgrounds for a Refreshing Workday
 
 Welcome to our website, where we offer a collection of stunning nature-inspired desktop backgrounds that will help you stay motivated and refreshed throughout your workday. Our carefully curated selection of wallpapers features some of the most breathtaking natural landscapes and wildlife close-ups, including this close-up of a snail on a leaf.
 

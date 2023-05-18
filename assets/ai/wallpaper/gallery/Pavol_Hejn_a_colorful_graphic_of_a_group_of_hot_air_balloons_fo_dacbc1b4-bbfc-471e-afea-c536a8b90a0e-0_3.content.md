@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Adventure awaits: Explore the world with our travel tips and guides
+# Explore the World with Our Travel Tips and Guides
 
 Welcome to our adventure-packed website, where we share our passion for exploring new destinations and experiencing different cultures. Our colorful graphic of a group of hot air balloons perfectly captures the spirit of adventure that drives us to seek out new horizons.
 

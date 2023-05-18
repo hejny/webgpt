@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Futuristic Data Center Welcome!
+# Future Data Center Welcome!
 
 We are excited to present our new wallpaper featuring an abstract illustration of a futuristic data center. This wallpaper is perfect for anyone who loves sleek and modern graphics with a minimalist color scheme.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Website with Minimal Skyline
+# Elevate Website with Minimal Skyline
 
 Add a touch of sophistication and elegance to your business or marketing website with this stunning minimalist graphic of a city skyline at dawn. The clean lines and muted colors create a modern aesthetic that will elevate the overall look of your site.
 

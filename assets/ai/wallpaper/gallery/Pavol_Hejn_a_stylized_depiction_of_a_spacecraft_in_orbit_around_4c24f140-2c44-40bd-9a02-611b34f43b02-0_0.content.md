@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Space Odyssey
+# Space Odyssey: Explore the Universe
 
 Welcome to Space Odyssey, your ultimate destination for exploring the wonders of the universe. Our website is dedicated to providing you with the latest news and discoveries in space exploration, astronomy, and astrophysics.
 

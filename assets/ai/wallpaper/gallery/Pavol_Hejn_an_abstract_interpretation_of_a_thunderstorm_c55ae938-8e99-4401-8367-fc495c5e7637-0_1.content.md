@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Stormy Skies: An Abstract Interpretation of a Thunderstorm
+# Abstract Thunderstorm Interpretation
 
 Experience the raw power and beauty of nature with our stunning abstract interpretation of a thunderstorm. Our captivating design features deep shades of blue and purple, representing the ominous clouds that roll in before a storm.
 

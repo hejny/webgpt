@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI and Humans Building Space Elevator
+# AI and Humans Build Space Elevator
 
 Welcome to our website dedicated to the construction of a massive, orbiting space elevator. Our team of Ainautes and their AI companions are working together tirelessly to make this ambitious project a reality.
 

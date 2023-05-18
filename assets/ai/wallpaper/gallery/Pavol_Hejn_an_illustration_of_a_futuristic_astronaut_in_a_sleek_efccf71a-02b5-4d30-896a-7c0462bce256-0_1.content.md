@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Universe's Wonders with Futuristic Astronaut Art
+# Discover Space Wonders with Futuristic Art
 
 Embark on a journey to explore the mysteries of the universe with our captivating artwork featuring a futuristic astronaut in a sleek spacesuit standing on the surface of a distant planet.
 

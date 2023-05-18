@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Abandoned Spaceship Exploration
+# Abandoned Spaceship Exp
 
 Welcome to our website dedicated to exploring the mysteries of an abandoned spaceship floating in the depths of space. Our team of Ainautes and their AI companions have embarked on a daring mission to uncover the secrets hidden within this massive vessel.
 

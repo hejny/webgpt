@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Our Galactic Adventure!
+# Galactic Adventure Welcome!
 
 Experience the wonder of the cosmos with our stunning digital painting of a distant planet. Featuring a unique atmosphere and unusual terrain, this wallpaper will transport you to a world beyond your imagination.
 

@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Winter Wonderland: Cozy Home Decor Ideas
+# Cozy Winter Home Decor Ideas
 
 Welcome to Winter Wonderland, your go-to source for all things cozy and festive! Whether you're looking to spruce up your home decor or simply want to embrace the winter season, we've got you covered. Our website features a variety of articles, tips, and inspiration to help you create the perfect cozy atmosphere in your home.
 

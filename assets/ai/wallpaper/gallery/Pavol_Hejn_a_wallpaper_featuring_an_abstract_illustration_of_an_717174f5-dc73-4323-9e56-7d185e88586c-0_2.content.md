@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Welcome to the Future of Search
+# Future Search Welcome
 
 Our website is powered by an AI-driven search engine, designed to provide you with the most relevant and accurate results possible. And what better way to showcase our cutting-edge technology than with a stunning wallpaper?
 

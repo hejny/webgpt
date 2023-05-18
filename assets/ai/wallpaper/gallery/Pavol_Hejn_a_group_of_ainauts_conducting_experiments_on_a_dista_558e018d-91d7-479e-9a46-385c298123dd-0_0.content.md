@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Ainautes: Exploring the Unknown
+# Ainautes: Into the Unknown
 
 Welcome to Ainautes, where we explore the depths of space and beyond. Our team of expert scientists and engineers work tirelessly to uncover the mysteries of the universe. Our latest mission takes us to a distant planet, where we conduct experiments with the help of our advanced artificial intelligence technology.
 

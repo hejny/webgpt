@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cybersecurity for Your Digital World
+# Digital Cybersecurity
 
 Welcome to our cybersecurity resource hub, where we provide the latest information on cyber threats and tools to help you protect your digital assets. Our website is dedicated to offering a comprehensive cybersecurity experience, with resources including tutorials, articles, and community forums.
 

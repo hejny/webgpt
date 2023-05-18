@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring the Mysteries of the Universe: A Journey Through Time and Space
+# Journey Through the Mysteries of the Universe
 
 Welcome to our website dedicated to exploring the wonders of the universe. Our mission is to bring you the latest discoveries, theories, and advancements in the field of astrophysics. 
 

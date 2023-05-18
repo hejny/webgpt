@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Journey to the Depths: Exploring a Massive Cave System on a Distant Planet"
+# Exploring a Massive Cave System on a Distant Planet
 
 Welcome to our website, where we share the incredible journey of a team of Ainautes and their AI companions as they venture deep into the depths of a massive underground cave system on a distant planet. 
 

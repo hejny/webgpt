@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# The Future of Biotechnology: Creating New Life Forms with AI and Advanced Technology
+# Future Biotech: AI and Tech for New Life Forms
 
 Welcome to our website dedicated to exploring the cutting-edge field of biotechnology. Our team of Ainautes (AI scientists) uses advanced technology to push the boundaries of what is possible in creating new life forms.
 

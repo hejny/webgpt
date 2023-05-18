@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# RoboNotify - Notification Assistant
+# RoboNotify - Notif Assistant
 
 RoboNotify is the ultimate solution for staying on top of your important notifications and messages. Our sleek wallpaper features a graphic of a robot arm holding a smartphone, with ample space for displaying all your most critical alerts.
 

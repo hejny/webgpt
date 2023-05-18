@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Welcome to the Ainautes Futuristic Laboratory
+# Ainautes Lab: Futuristic Welcome
 
 Our laboratory is a hub of innovation where we use cutting-edge AI and advanced technology to create new forms of life. Our team of expert scientists and engineers are dedicated to pushing the boundaries of what's possible in the field of synthetic biology.
 

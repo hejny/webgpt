@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Frontiers of Space with Ainautes
+# Space Exploration with Ainautes
 
 Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, captivating user stories, and stunning visuals that will take you on a journey through the cosmos.
 

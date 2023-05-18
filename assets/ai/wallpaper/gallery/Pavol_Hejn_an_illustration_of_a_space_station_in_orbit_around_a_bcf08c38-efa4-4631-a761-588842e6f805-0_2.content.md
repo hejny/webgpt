@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Backgrounds for Exploration
+# Exploration Space Backgrounds
 
 Experience the awe-inspiring beauty of space with our collection of high-quality space-themed backgrounds. Each image is carefully selected to transport you to another world, from distant galaxies to alien planets.
 

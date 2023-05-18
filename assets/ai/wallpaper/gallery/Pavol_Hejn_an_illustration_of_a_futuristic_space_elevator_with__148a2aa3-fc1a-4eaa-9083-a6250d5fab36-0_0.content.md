@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Welcome to the Future of Space Travel
+# Future Space Travel
 
 Experience the ultimate in space travel with our futuristic space elevator wallpaper. This stunning illustration depicts a cable stretching from Earth into orbit, offering a glimpse of what could be possible in the not-too-distant future.
 

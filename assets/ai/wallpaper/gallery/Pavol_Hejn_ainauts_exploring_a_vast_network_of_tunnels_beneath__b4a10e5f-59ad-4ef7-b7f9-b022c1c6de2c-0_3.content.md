@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Exploring the Depths: Uncovering the Mysteries of Subterranean Worlds
+# Subterranean Mysteries: Exploring Depths
 
 Welcome to our website dedicated to the exploration and study of underground environments on distant planets. Our team of Ainautes is passionate about discovering the secrets hidden beneath the surface, and we are excited to share our findings with you.
 

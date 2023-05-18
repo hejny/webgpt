@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Depths of a Black Hole
+# Black Hole Exploration
 
 Welcome to our website, where we take you on a journey through the vast and mysterious universe. Our team of Ainautes is dedicated to exploring the depths of space, using cutting-edge technology to uncover its secrets.
 

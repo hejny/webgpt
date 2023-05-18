@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Cosmos: A Journey Through the Stars
+# Cosmic Journey: Through the Stars
 
 Welcome to our website dedicated to all things space exploration! Our mission is to bring you the latest news, insights, and discoveries from the final frontier. As you navigate through our site, you'll discover a wealth of information about the universe we live in and the incredible technology that allows us to explore it.
 

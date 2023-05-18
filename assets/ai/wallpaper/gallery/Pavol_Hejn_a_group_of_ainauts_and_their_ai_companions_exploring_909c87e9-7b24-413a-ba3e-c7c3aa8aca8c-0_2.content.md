@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Cosmos with AI Companions
+# Cosmic AI Companions
 
 Welcome to our website, where we explore the mysteries of the universe with the help of AI companions. Our website features a stunning background image depicting a group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space. This image perfectly captures the essence of our mission: to uncover the secrets of the cosmos and share our discoveries with the world.
 

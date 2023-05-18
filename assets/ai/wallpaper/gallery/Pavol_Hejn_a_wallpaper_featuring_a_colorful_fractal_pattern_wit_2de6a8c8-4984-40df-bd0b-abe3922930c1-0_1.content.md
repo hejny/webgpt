@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Customize Workspace with Fractal Backgrounds
+# Customize Workspace with Fractals
 
 Welcome to our website, where we offer a selection of stunning fractal backgrounds that can add some personality and creativity to your workspace. Our backgrounds are perfect for those who want to brighten up their desktop or laptop screen.
 

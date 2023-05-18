@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Pedal Your Way to Fitness with Our Cycling Blog
+# Get Fit with Our Cycling Blog
 
 Welcome to our cycling and fitness blog, where we provide you with all the resources and inspiration you need to embark on a healthy lifestyle. Our website is designed to help you achieve your fitness goals, whether you're a seasoned cyclist or just starting out.
 

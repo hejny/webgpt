@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Schedule with Minimalist Background
+# Minimalist Background for Simple Schedule
 
 Maximize your productivity and stay organized with our minimalist digital background featuring a calendar or to-do list. Our design provides ample space for notes and reminders, helping you streamline your schedule and stay focused throughout the day.
 

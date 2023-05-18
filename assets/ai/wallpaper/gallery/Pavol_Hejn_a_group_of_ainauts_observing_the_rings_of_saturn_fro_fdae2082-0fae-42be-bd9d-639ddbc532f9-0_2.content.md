@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the wonders of space with our immersive backgrounds
+# Explore space with our immersive backgrounds
 
 Looking for a way to bring the beauty of space into your daily life? Our collection of high-tech space backgrounds is just what you need. Featuring stunning images of galaxies, planets, and more, these backgrounds are the perfect way to add a touch of cosmic wonder to your desktop or mobile device.
 

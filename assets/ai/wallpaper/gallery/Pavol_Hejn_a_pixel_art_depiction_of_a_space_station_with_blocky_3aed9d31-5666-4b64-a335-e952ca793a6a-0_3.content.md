@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Futuristic Space Station Desktop Background
+# Retro-Futuristic Space Station Wallpaper
 
 Welcome to our website where you can download a high-quality desktop background featuring a pixel art depiction of a retro-futuristic space station. The limited color palette and blocky shapes create a unique aesthetic that will transport you to another world every time you look at your screen.
 

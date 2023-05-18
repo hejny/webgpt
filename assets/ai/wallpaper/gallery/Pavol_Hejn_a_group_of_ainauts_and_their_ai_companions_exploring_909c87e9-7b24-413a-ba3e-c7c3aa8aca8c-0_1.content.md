@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Ainautes: Exploring the Depths of Space
+# Exploring Space with Ainautes
 
 Welcome to Ainautes, a community of space explorers and their AI companions. Our latest adventure takes us to a massive, abandoned research facility in the far reaches of the universe.
 

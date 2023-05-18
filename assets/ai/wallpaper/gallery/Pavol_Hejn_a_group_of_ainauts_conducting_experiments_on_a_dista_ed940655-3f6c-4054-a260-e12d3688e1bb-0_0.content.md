@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Ainautes: Exploring the Unknown
+# Ainautes: The Unknown Explored
 
 Welcome to Ainautes, where we push the boundaries of science and exploration. Our team of intrepid scientists is currently conducting groundbreaking experiments on a distant planet, with a red sun setting behind them.
 

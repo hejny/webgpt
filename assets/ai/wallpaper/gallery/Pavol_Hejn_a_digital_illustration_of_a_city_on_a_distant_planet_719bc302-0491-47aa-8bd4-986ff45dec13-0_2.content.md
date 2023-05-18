@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Our Futuristic World
+# Welcome to Our Future World
 
 Explore the wonders of a distant planet with our stunning digital illustration of a futuristic city. Marvel at towering buildings and advanced technology that will transport you to a world beyond your imagination.
 

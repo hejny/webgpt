@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Depths of a Black Hole: A Futuristic Adventure
+# Futuristic Adventure into Black Holes
 
 Welcome to our website, where we bring you on an exciting journey to explore the depths of a black hole. Our team of Ainautes is equipped with state-of-the-art technology, ready to take on this thrilling adventure.
 

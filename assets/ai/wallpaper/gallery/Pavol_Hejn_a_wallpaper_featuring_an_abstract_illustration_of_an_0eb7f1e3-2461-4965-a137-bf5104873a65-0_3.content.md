@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discover the Future of AI-Powered Search Engines
+# Future of AI Search Engines
 
 Experience the power of artificial intelligence with our stunning wallpaper featuring an abstract illustration of an AI-powered search engine. The minimalist and modern design of this background is sure to inspire you as you delve into the exciting world of AI.
 

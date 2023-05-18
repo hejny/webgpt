@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Tech Site's Binary Code Background
+# Tech Site's Binary Background
 
 Add a touch of sophistication and modernity to your tech-related website or blog with our binary code background.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Beauty of Nature with Our Stunning Night Sky Background
+# Explore Nature's Beauty with Our Night Sky Background
 
 Welcome to our website, where we offer a beautiful night sky background that will transport you to a peaceful and inspiring place. Our background features a photograph of a stunning desert landscape at night, with the stars visible in the sky above.
 

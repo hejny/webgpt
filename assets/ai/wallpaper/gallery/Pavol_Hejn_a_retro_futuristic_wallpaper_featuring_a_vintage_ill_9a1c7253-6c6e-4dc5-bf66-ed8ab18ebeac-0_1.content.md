@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Retro-Futuristic Project Design
+# Retro-Futuristic Design
 
 Our retro-futuristic design features a vintage illustration of a robot set against a neon-colored background, adding a touch of sci-fi flair to any creative project.
 

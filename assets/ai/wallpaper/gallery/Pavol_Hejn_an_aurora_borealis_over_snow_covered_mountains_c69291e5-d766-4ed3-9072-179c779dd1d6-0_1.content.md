@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Embrace the Magic of Northern Lights with Our Aurora Borealis Background
+# Experience Northern Lights with Our Aurora Background
 
 Welcome to our website, where you can discover stunning backgrounds that will transform your digital space. Our breathtaking aurora borealis background captures the enchanting beauty of the northern lights illuminating the snow-covered mountains.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore an Otherworldly Industrial Landscape
+# Otherworldly Industrial Exploration
 
 Transport yourself to another world with this stunning CSG-style rendering of an alien landscape. The sharp angles and contrasting colors create a futuristic and industrial vibe that is sure to impress.
 

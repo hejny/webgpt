@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Wonders of Space: A Stunning Background for Your Desktop
+# Space Wonders for Your Desktop
 
 Welcome to our website dedicated to exploring the mysteries and wonders of space! Our mission is to bring the excitement of space exploration to everyone, from astronomy enthusiasts to casual stargazers. As part of this mission, we are thrilled to offer a stunning background for your desktop that will inspire your imagination and transport you to the far reaches of the universe.
 

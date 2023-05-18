@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Welcome to CityWatch - The Future of Urban Infrastructure
+# CityWatch: Future Urban Infrastructure
 
 ## About Us
 CityWatch is a cutting-edge AI technology company dedicated to creating smarter, more efficient cities. Our team of Ainautes works tirelessly to monitor and maintain the infrastructure and systems that keep our cities running smoothly. 

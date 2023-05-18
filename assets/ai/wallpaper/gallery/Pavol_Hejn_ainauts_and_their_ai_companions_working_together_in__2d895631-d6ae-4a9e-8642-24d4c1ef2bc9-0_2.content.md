@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Collaborating with AI Companions in Space
+# Collaborating with AI in Space
 
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence and space exploration. Our mission is to bring together a community of innovators, scientists, and enthusiasts who share a passion for the limitless possibilities of technology and space.
 

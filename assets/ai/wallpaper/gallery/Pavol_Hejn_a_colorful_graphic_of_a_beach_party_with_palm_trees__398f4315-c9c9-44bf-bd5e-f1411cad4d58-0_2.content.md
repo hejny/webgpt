@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Our Tropical Paradise
+# Tropical Paradise Welcome
 
 Escape to a tropical paradise with our website, your ultimate destination for all things beach and vacation related. To enhance your browsing experience, we have added a colorful graphic of a beach party with palm trees and cocktails as the background.
 

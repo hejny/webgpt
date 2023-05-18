@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Dark Tech Background
+# Futuristic Dark Tech Backdrop
 
 Welcome to our tech website, where we provide the latest news and insights on all things technology-related. Our website is designed to keep you informed and up-to-date on the latest trends and developments in the tech industry.
 

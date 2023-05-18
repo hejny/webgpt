@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Malware Madness: A Cybersecurity Resource Hub
+# Cybersecurity Resource Hub for Malware
 
 Welcome to Malware Madness, your go-to resource for all things cybersecurity. Our website is dedicated to providing you with the latest news, tips, and tools to keep your digital life safe and secure.
 

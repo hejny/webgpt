@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# The Enigmatic Desert: A Surreal Journey Through Time and Space
+# Enigmatic Desert: Surreal Journey
 
 Welcome to our website, where you can embark on a surreal journey through a desert landscape that defies time and space. Our stunning wallpaper is just the beginning of the adventure.
 

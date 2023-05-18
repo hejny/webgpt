@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Vintage Star Maps: Explore the Night Sky
+# Explore Vintage Night Sky Maps
 
 Experience the mysteries of the universe with our collection of vintage star maps. Our featured wallpaper showcases a beautifully illustrated map of the stars and constellations, complete with spacecraft and celestial bodies.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring the Depths of Gas Giants: A Journey Through the Universe
+# Journeying through Gas Giants in the Universe
 
 Welcome to our website dedicated to exploring the mysteries of the universe! Our team of Ainautes and their AI companions are on a mission to uncover the secrets of the cosmos. 
 

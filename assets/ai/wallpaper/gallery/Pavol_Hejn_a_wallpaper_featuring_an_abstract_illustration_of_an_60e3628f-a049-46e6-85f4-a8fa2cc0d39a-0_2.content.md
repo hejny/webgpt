@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI-Powered Search Engine for Modern Businesses
+# AI Search Engine for Businesses
 
 Welcome to our website, where we offer an AI-powered search engine designed specifically for modern businesses. Our innovative technology allows you to quickly and easily find the information you need, without wasting time sifting through irrelevant results.
 

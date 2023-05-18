@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Dive into the Wonders of the Ocean with Our Underwater Adventure Website
+# Explore Ocean Wonders with Our Website
 
 Welcome to our website, where you can explore the beauty and diversity of the ocean through stunning visuals and educational content. Our website features a captivating underwater adventure background that will transport you to the depths of the sea.
 

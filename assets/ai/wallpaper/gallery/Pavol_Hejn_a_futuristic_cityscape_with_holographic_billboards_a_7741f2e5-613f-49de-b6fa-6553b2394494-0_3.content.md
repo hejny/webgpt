@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Welcome to Futurize - Transform Your Business with Cutting-Edge Technology
+# Futurize: Transform Your Business with Technology
 
 ## About Us
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to the World of Ainautes and AI Racing!
+# Ainautes and AI Racing: Welcome!
 
 Get ready to experience the thrill of high-speed racing on a desert planet with our team of skilled Ainautes and their trusty AI companions. Our cutting-edge buggies are equipped with advanced technology that will take you on an adrenaline-fueled journey through the rugged terrain.
 

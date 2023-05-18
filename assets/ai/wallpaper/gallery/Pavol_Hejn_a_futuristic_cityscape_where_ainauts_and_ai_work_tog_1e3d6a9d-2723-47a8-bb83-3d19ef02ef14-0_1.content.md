@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to the World of Ainautes and AI
+# Ainautes and AI World Welcome
 
 Experience a futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure. Our wallpaper showcases the seamless collaboration between humans and technology, resulting in a harmonious and efficient society.
 

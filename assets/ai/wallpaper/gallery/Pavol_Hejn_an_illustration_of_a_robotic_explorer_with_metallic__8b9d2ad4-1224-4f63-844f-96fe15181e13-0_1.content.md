@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Robotic Art Explorer: Future Discovery
+# Robotic Art Discovery
 
 Welcome to our website, where we feature an amazing illustration of a robotic explorer that will take you on a journey to the future. This artwork is a stunning display of intricate details and metallic textures that are sure to capture your imagination.
 

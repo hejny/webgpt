@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# TechConnect: Your Ultimate Tech Destination
+# TechConnect: Your Tech Destination
 
 Welcome to TechConnect, your ultimate destination for all things technology. Our website is dedicated to bringing you the latest news, reviews, and insights on the world of tech. 
 

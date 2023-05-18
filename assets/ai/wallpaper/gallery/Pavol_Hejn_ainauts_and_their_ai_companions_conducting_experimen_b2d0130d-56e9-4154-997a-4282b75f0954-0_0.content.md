@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Future of Science with AI Companions
+# Future Science with AI Companions
 
 Welcome to our website, where we explore the intersection of science and technology. Our mission is to push the boundaries of scientific discovery with the help of artificial intelligence. We believe that by combining human curiosity and ingenuity with the power of AI, we can unlock new frontiers in research.
 

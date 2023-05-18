@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# MathWorks - Simplify Math for All
+# MathWorks - Simplify Math
 
 Welcome to MathWorks, where we believe that everyone can learn math with the right resources and support. Our mission is to make math easy and accessible for all by providing simple explanations and visual aids. As part of our commitment to simplifying math, we've created a unique wallpaper featuring a repeating pattern of simple equations and formulas arranged in a minimalist and modern design.
 

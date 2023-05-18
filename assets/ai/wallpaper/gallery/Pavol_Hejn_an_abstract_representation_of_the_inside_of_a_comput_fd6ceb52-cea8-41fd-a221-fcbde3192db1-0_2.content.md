@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Metallic Circuit: Modern Tech for Your Website
+# Modern Metallic Tech for Your Website
 
 Looking for a modern and edgy background for your technology-related website? Metallic Circuit is the perfect solution! This abstract representation of a computer chip with a metallic color palette adds a sleek and professional touch to any website.
 

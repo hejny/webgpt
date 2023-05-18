@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Experience the Energy of Urban Living
+# Urban Energy Experience
 
 Welcome to our website dedicated to celebrating the vibrant and dynamic lifestyle of urban living. Our mission is to provide you with all the resources you need to make the most of your city life. From exploring the best neighborhoods to finding the hottest restaurants and bars, we've got you covered.
 

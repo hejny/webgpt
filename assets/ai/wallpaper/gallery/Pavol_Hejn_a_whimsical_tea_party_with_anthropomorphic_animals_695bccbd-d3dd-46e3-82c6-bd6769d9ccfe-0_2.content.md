@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Anthropomorphic Animal Tea Party
+# Animal Tea Party
 
 Step into a world of enchantment and joy with our charming anthropomorphic animal friends. Our whimsical theme sets the scene for a delightful tea party where anything is possible.
 

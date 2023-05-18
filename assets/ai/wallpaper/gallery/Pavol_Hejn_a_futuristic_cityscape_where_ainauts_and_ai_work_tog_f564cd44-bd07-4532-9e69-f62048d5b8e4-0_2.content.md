@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Welcome to the Future of Infrastructure
+# Future Infrastructure Welcome
 
 Experience a glimpse into the future with our stunning wallpaper showcasing a futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure. 
 

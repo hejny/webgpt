@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Galactic Wonders: Volcanic Planets
+# Galactic Volcanoes
 
 Explore the fiery landscapes of volcanic planets with our stunning wallpaper featuring a photograph of a lava flow. The vibrant red and orange hues will transport you to another world, evoking a sense of danger and excitement.
 

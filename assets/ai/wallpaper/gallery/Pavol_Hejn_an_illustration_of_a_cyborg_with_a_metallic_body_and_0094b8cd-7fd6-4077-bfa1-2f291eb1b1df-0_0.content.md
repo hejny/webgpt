@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cybernetic Enhancements for the Future
+# Future Cyber Enhancements
 
 ![Cyborg Illustration](cyborg-illustration.jpg)
 

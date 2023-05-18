@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Ainautes: Exploring the Unknown
+# Ainautes: Into the Unknown
 
 Welcome to Ainautes, where we push the boundaries of science and exploration. Our team of brilliant scientists, engineers, and adventurers are dedicated to discovering the unknown, with the help of our AI companions.
 

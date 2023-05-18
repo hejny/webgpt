@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Wonders of Space: A Journey Through the Cosmos
+# Cosmic Exploration: Wonders of Space
 
 Welcome to our website, where we take you on a journey through the mysteries and marvels of the universe. Our stunning background featuring a group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them, sets the scene for an immersive space-themed experience.
 

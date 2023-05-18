@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Vintage Star Map for Space Travel
+# Vintage Space Map
 
 Welcome to our website featuring a stunning vintage map of the stars and constellations, complete with detailed illustrations of spacecraft and celestial bodies. This unique wallpaper is perfect for anyone who loves astronomy, space exploration, or simply wants to add some cosmic flair to their home or office.
 

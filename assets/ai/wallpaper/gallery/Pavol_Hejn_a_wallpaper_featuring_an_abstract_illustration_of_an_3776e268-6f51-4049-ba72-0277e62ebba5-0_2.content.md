@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI Search Engine: Accurate Results
+# AI Search: Accurate Results
 
 Welcome to our website, where we offer you a unique search experience powered by artificial intelligence. Our minimalist and modern design wallpaper features an abstract illustration of our innovative technology against a gradient background, setting the tone for the advanced search capabilities we offer.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Cycle Your Way to Fitness" - A Comprehensive Guide to Cycling for Health and Wellness
+# Cycling for Health and Wellness: A Comprehensive Guide
 
 Welcome to "Cycle Your Way to Fitness," your go-to resource for all things cycling-related. Whether you're a seasoned pro or just starting out, we've got everything you need to know about using cycling as a tool for improving your health and fitness.
 

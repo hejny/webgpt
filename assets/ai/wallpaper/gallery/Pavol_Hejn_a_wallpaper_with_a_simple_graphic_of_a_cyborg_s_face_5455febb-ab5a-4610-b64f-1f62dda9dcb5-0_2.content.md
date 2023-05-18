@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Cyborgs: News, Research, and Stories
+# Cyborgs: News and Stories
 
 Welcome to our website dedicated to exploring the fascinating world of cyborgs! Our site provides you with the latest news, research, and user stories about the rapidly evolving field of cybernetics.
 

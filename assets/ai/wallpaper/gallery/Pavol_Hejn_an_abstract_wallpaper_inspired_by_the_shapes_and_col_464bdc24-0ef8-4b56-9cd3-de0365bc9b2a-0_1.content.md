@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Abstract Backgrounds for Your Space
+# Quantum Space Backgrounds
 
 Welcome to our website, where we provide you with the perfect abstract background to enhance your creativity. Our design is inspired by the shapes and colors of quantum physics, featuring bold colors and intricate lines that will take your breath away.
 

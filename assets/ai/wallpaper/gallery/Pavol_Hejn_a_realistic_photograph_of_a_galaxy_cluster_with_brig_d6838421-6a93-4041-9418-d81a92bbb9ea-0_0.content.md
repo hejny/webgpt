@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Universe Window: Galaxy Cluster Background
+# Galactic Background in Universe Window
 
 Experience the beauty and complexity of the universe with our galaxy cluster background. This stunning photograph captures the intricate details and vibrant colors of distant galaxies, showcasing the vastness and mystery of space.
 

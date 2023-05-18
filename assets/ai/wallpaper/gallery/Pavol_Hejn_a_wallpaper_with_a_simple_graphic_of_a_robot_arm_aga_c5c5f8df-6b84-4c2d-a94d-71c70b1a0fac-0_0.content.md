@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Robotics Company Website Background
+# Robotics Website Background
 
 Welcome to the official website of XYZ Robotics, a leading provider of cutting-edge robotic solutions for various industries. Our company is committed to delivering innovative and reliable automation technologies that help businesses optimize their operations and increase productivity.
 

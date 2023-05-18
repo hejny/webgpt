@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Protecting Earth from Massive Asteroids
+# Protecting Earth from Asteroids
 
 Welcome to our website dedicated to protecting Earth from massive asteroids! Our team of experts is committed to developing innovative solutions that utilize advanced technology and AI to prevent catastrophic asteroid impacts.
 

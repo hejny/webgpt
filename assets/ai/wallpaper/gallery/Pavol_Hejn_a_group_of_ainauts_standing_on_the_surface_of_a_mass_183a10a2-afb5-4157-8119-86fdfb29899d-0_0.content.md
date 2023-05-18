@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Wonders of Space: A Journey Through the Universe
+# Journey Through the Universe's Wonders
 
 Welcome to our website dedicated to exploring the wonders of space! Our mission is to provide you with the latest news and information about everything related to space exploration, from the latest scientific discoveries to the most breathtaking images captured by telescopes and spacecraft.
 
