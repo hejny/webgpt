@@ -65,7 +65,7 @@ export function GallerySection(props: SampleProps) {
                                     <style>{`
                                         @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font
                                             .split(' ')
-                                            .join('+')}&display=swap}');
+                                            .join('+')}&amp;display=swap}');
                                     `}</style>
                                     <div
                                         style={{
