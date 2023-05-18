@@ -79,10 +79,14 @@
             "focus": true
         },
         {
-            "name": "🏭🧾 [ 4/5 ] Repair wallpapers content",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --repair-title"
-            ],
+            "name": "🏭🧾 [ 4/5 ] Repair wallpapers content fonts",
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts "],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🧾 [ 4/5 ] Repair wallpapers content title",
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts  --repair-title"],
             "onlySingle": true,
             "focus": true
         },
