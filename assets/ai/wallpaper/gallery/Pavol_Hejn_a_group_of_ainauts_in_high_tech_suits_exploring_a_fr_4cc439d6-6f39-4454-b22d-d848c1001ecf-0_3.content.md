@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
+"A group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -22,13 +22,13 @@ Explore the vast unknown with our collection of stunning wallpapers. Transport y
 
 ## Wallpaper: Frozen Wasteland
 
-Witness a group of AInauts in high-tech suits as they explore a frozen wasteland on a distant planet. Towering ice formations surround them, creating an otherworldly landscape that is both beautiful and treacherous.
+Witness a group of Ainautes in high-tech suits as they explore a frozen wasteland on a distant planet. Towering ice formations surround them, creating an otherworldly landscape that is both beautiful and treacherous.
 
 ---
 
 ### About the Wallpaper
 
-This breathtaking wallpaper captures the essence of space exploration - the thrill of discovery, the wonder of the unknown, and the courage to venture into uncharted territories. The AInauts depicted in this image represent the cutting-edge technology and innovation that drive space exploration forward.
+This breathtaking wallpaper captures the essence of space exploration - the thrill of discovery, the wonder of the unknown, and the courage to venture into uncharted territories. The Ainautes depicted in this image represent the cutting-edge technology and innovation that drive space exploration forward.
 
 The frozen wasteland setting is both haunting and awe-inspiring, reminding us of the beauty and power of nature. The towering ice formations are a testament to the forces that shape our universe, and the resilience of life in the face of adversity.
 

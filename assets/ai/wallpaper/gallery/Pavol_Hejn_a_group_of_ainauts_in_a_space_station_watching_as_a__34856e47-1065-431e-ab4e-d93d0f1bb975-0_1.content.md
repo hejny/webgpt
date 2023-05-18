@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
+"A group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # "AI in Space Adventure"
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts in a space station, witnessing a catastrophic event - a massive asteroid hurtling towards Earth. With only their AI and technology, these brave individuals must use their skills and ingenuity to save themselves and the planet from destruction.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes in a space station, witnessing a catastrophic event - a massive asteroid hurtling towards Earth. With only their AI and technology, these brave individuals must use their skills and ingenuity to save themselves and the planet from destruction.
 
 Our website is dedicated to exploring the exciting world of artificial intelligence and its potential to revolutionize the way we live and work. From space exploration to healthcare, from finance to entertainment, AI is transforming every aspect of our lives.
 

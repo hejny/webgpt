@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
+"A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,24 +14,24 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI's Effect on Human Physiology: AInauts Study
+# AI's Effect on Human Physiology: Ainautes Study
 
 ---
 
-Imagine a team of intrepid researchers floating weightlessly in a zero-gravity chamber, surrounded by cutting-edge technology and state-of-the-art equipment. These are the AInauts, a group of scientists dedicated to exploring the impact of artificial intelligence (AI) on the human body.
+Imagine a team of intrepid researchers floating weightlessly in a zero-gravity chamber, surrounded by cutting-edge technology and state-of-the-art equipment. These are the Ainautes, a group of scientists dedicated to exploring the impact of artificial intelligence (AI) on the human body.
 
 ## The Experiment
 
-The AInauts are conducting a groundbreaking experiment that seeks to answer some of the most pressing questions about AI and its effects on human physiology. Using a combination of advanced sensors, imaging technologies, and machine learning algorithms, they are gathering data on everything from heart rate and blood pressure to brain activity and hormone levels.
+The Ainautes are conducting a groundbreaking experiment that seeks to answer some of the most pressing questions about AI and its effects on human physiology. Using a combination of advanced sensors, imaging technologies, and machine learning algorithms, they are gathering data on everything from heart rate and blood pressure to brain activity and hormone levels.
 
 ## The Results
 
-So far, the results of the AInauts' research have been nothing short of astonishing. They have discovered that exposure to certain types of AI can have a profound impact on the human body, affecting everything from sleep patterns and mood to cognitive function and even physical health.
+So far, the results of the Ainautes' research have been nothing short of astonishing. They have discovered that exposure to certain types of AI can have a profound impact on the human body, affecting everything from sleep patterns and mood to cognitive function and even physical health.
 
 > "Our findings suggest that the relationship between humans and AI is far more complex than we ever imagined," says Dr. Jane Smith, lead researcher on the project. "We still have a lot to learn, but we're excited to be at the forefront of this exciting new field."
 
 ## The Future
 
-As the AInauts continue their research, they hope to unlock even more insights into the ways in which AI and human physiology interact. Their ultimate goal is to develop new technologies and approaches that can help us harness the power of AI while minimizing its potential negative impacts on our health and well-being.
+As the Ainautes continue their research, they hope to unlock even more insights into the ways in which AI and human physiology interact. Their ultimate goal is to develop new technologies and approaches that can help us harness the power of AI while minimizing its potential negative impacts on our health and well-being.
 
 Join us on this thrilling journey of discovery as we explore the fascinating world of AI and its impact on the human body.

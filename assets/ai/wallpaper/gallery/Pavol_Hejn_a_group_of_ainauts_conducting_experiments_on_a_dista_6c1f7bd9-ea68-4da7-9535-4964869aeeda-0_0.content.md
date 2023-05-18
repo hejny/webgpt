@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
+"A group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,17 +18,17 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Unknown: AInauts on a Distant Moon
+# Exploring the Unknown: Ainautes on a Distant Moon
 
-Welcome to our website dedicated to the exploration of distant moons and planets! Our team of AInauts is conducting groundbreaking experiments on a remote moon, with a massive gas giant looming in the background. We are excited to share our findings and discoveries with you!
+Welcome to our website dedicated to the exploration of distant moons and planets! Our team of Ainautes is conducting groundbreaking experiments on a remote moon, with a massive gas giant looming in the background. We are excited to share our findings and discoveries with you!
 
 ## Our Mission
 
 Our mission is to push the boundaries of space exploration and uncover the mysteries of the universe. With the help of advanced artificial intelligence and cutting-edge technology, we aim to explore the furthest reaches of our galaxy and beyond.
 
-## The AInauts
+## The Ainautes
 
-Our team of AInauts consists of highly skilled scientists and engineers who are passionate about space exploration. Equipped with state-of-the-art equipment and advanced AI systems, our AInauts are able to conduct experiments and collect data in even the harshest environments.
+Our team of Ainautes consists of highly skilled scientists and engineers who are passionate about space exploration. Equipped with state-of-the-art equipment and advanced AI systems, our Ainautes are able to conduct experiments and collect data in even the harshest environments.
 
 ## Our Research
 
@@ -42,13 +42,13 @@ At our research station on the distant moon, we are conducting a variety of expe
 
 Our research has the potential to benefit humanity in countless ways, from advancing our understanding of the universe to developing new technologies that could improve life on Earth. Here are just a few examples of how our work could impact people's lives:
 
-> "As a science teacher, I am always looking for ways to inspire my students and get them excited about learning. The work being done by the AInauts is truly inspiring, and I can't wait to share their discoveries with my students." - Sarah T., Science Teacher
+> "As a science teacher, I am always looking for ways to inspire my students and get them excited about learning. The work being done by the Ainautes is truly inspiring, and I can't wait to share their discoveries with my students." - Sarah T., Science Teacher
 
-> "I have always been fascinated by space exploration, and the work being done by the AInauts is truly groundbreaking. Their research could lead to new discoveries that could change the course of human history." - John D., Space Enthusiast
+> "I have always been fascinated by space exploration, and the work being done by the Ainautes is truly groundbreaking. Their research could lead to new discoveries that could change the course of human history." - John D., Space Enthusiast
 
 ## References
 
-For more information about our research and the work being done by the AInauts, please check out the following resources:
+For more information about our research and the work being done by the Ainautes, please check out the following resources:
 
 -   [NASA](#)
 -   [SpaceX](#)

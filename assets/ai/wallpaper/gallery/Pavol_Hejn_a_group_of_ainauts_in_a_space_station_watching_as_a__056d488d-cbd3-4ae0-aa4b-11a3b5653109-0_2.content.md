@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
+"A group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,13 +16,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Saves the Day
 
-A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.
+A group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them.
 
 ---
 
 ## About the Wallpaper
 
-This stunning wallpaper depicts a group of AInauts working together to save humanity from an impending disaster. With the Earth in peril, these brave individuals rely on their advanced technology and artificial intelligence to come up with a plan to avert catastrophe.
+This stunning wallpaper depicts a group of Ainautes working together to save humanity from an impending disaster. With the Earth in peril, these brave individuals rely on their advanced technology and artificial intelligence to come up with a plan to avert catastrophe.
 
 ## Download the Wallpaper
 

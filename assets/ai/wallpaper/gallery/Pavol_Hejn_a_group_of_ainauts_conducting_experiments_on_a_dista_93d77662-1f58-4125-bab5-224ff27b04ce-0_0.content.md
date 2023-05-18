@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
+"A group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI on Distant Moon.
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon. The wallpaper showcases the team's efforts in exploring the vast universe and pushing the boundaries of artificial intelligence.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes conducting experiments on a distant moon. The wallpaper showcases the team's efforts in exploring the vast universe and pushing the boundaries of artificial intelligence.
 
 ## The Wallpaper
 
-The wallpaper depicts a scene on a distant moon, with a massive gas giant looming in the background. The AInauts are seen working on their equipment, surrounded by the moon's rocky terrain. The image captures the essence of space exploration and the wonder of discovering new worlds.
+The wallpaper depicts a scene on a distant moon, with a massive gas giant looming in the background. The Ainautes are seen working on their equipment, surrounded by the moon's rocky terrain. The image captures the essence of space exploration and the wonder of discovering new worlds.
 
 > "The universe is full of magical things patiently waiting for our wits to grow sharper." - Eden Phillpotts
 
@@ -32,7 +32,7 @@ At our core, we are a team of passionate scientists, engineers, and researchers 
 
 ## Join Us
 
-Are you interested in joining our team of AInauts? We are always looking for talented individuals who share our passion for AI and space exploration. Check out our [careers page](#) to learn more about current opportunities.
+Are you interested in joining our team of Ainautes? We are always looking for talented individuals who share our passion for AI and space exploration. Check out our [careers page](#) to learn more about current opportunities.
 
 ## Contact Us
 

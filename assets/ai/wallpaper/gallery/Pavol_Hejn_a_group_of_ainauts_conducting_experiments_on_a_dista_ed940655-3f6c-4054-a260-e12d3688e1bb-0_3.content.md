@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
+"A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Exploring the Unknown
+# Ainautes: Exploring the Unknown
 
-Welcome to our website, where we share our adventures as a group of AInauts exploring distant planets and conducting experiments in the pursuit of knowledge.
+Welcome to our website, where we share our adventures as a group of Ainautes exploring distant planets and conducting experiments in the pursuit of knowledge.
 
 ## Wallpaper
 
-As you can see, our wallpaper depicts a breathtaking scene from one of our expeditions. The image shows a group of AInauts working on a distant planet, with a red sun setting behind them. It captures the sense of wonder and excitement that we experience every day as we explore the unknown.
+As you can see, our wallpaper depicts a breathtaking scene from one of our expeditions. The image shows a group of Ainautes working on a distant planet, with a red sun setting behind them. It captures the sense of wonder and excitement that we experience every day as we explore the unknown.
 
 ## Our Mission
 

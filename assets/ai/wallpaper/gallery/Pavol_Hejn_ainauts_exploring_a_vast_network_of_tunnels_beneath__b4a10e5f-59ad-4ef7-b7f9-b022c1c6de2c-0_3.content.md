@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
+"Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Mystery Caverns on Planet X
 
-Welcome to our website dedicated to the exploration of the fascinating underground world of Planet X. Our team of AInauts has been tirelessly delving into the intricate network of tunnels that lie beneath the planet's surface, discovering new wonders and uncovering ancient secrets.
+Welcome to our website dedicated to the exploration of the fascinating underground world of Planet X. Our team of Ainautes has been tirelessly delving into the intricate network of tunnels that lie beneath the planet's surface, discovering new wonders and uncovering ancient secrets.
 
 One of the most breathtaking sights we have encountered on our journey are the glowing crystals that adorn the cavern walls. These crystals come in all shapes and sizes, emitting a soft, ethereal light that illuminates the otherwise pitch-black darkness.
 

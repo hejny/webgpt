@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies."
+"A team of Ainautes and their AI companions racing across the surface of a desert planet in high-tech buggies."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -20,13 +20,13 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Future Desert Racing with AI.
 
-Welcome to AI Racing, where humans and artificial intelligence come together to push the limits of what's possible. Our team of AInauts and their AI companions race across the surface of a desert planet in high-tech buggies, showcasing the latest advancements in technology and teamwork.
+Welcome to AI Racing, where humans and artificial intelligence come together to push the limits of what's possible. Our team of Ainautes and their AI companions race across the surface of a desert planet in high-tech buggies, showcasing the latest advancements in technology and teamwork.
 
 ## About Us
 
 At AI Racing, we believe that the future of racing lies in the collaboration between human skill and artificial intelligence. Our team is made up of skilled drivers and engineers who work together with advanced AI systems to achieve unprecedented levels of performance.
 
-Our buggies are equipped with cutting-edge sensors and processors that allow them to analyze the terrain and make split-second decisions to optimize speed and control. Meanwhile, our AInauts provide strategic guidance and tactical support, working in perfect harmony with their AI companions to outmaneuver the competition.
+Our buggies are equipped with cutting-edge sensors and processors that allow them to analyze the terrain and make split-second decisions to optimize speed and control. Meanwhile, our Ainautes provide strategic guidance and tactical support, working in perfect harmony with their AI companions to outmaneuver the competition.
 
 ## User Stories
 
@@ -54,7 +54,7 @@ Want to learn more about AI Racing and the technology behind it? Check out some 
 
 -   [The Science Behind AI-Assisted Driving](#)
 
--   [Meet the AInauts: The Humans Behind the Machines](#)
+-   [Meet the Ainautes: The Humans Behind the Machines](#)
 
 ## Contact Us
 

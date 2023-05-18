@@ -1,8 +1,8 @@
 <!--font:Montserrat-->
 
-# Future Tech with AInauts
+# Future Tech with Ainautes
 
-Step into the world of AInauts, where our team of experts conducts groundbreaking research in artificial intelligence, machine learning, and robotics. Our massive laboratory is equipped with state-of-the-art equipment and holographic displays to facilitate cutting-edge research.
+Step into the world of Ainautes, where our team of experts conducts groundbreaking research in artificial intelligence, machine learning, and robotics. Our massive laboratory is equipped with state-of-the-art equipment and holographic displays to facilitate cutting-edge research.
 
 Explore our website to learn more about our team, our projects, and our mission to push the boundaries of scientific innovation. Join us on this exciting journey towards a better tomorrow.
 
@@ -10,7 +10,7 @@ Explore our website to learn more about our team, our projects, and our mission 
 
 Write me markdown content of website with wallpaper:
 
-"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
+"Ainautes working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -18,25 +18,9 @@ The header of the page should not be copy of the text but rather a real content 
 ---
 
 
-# Welcome to the World of AInauts
+# Welcome to the World of Ainautes
 
-Experience the future of scientific research with our team of AInauts working in a massive laboratory filled with glowing equipment and holographic displays. Our cutting-edge research is at the forefront of artificial intelligence, machine learning, and robotics.
-
-Explore our website to learn more about our team, our projects, and our mission to push the boundaries of science and technology. Join us on this exciting journey towards a better tomorrow.
-
-
----
-
-
-Heading is too long, rewrite whole content.
-
-
----
-
-
-# Discover the Future of Scientific Research with AInauts
-
-Step into the world of AInauts, where cutting-edge research meets futuristic technology. Our team of experts works in a massive laboratory equipped with state-of-the-art equipment and holographic displays to conduct groundbreaking research in the fields of artificial intelligence, machine learning, and robotics.
+Experience the future of scientific research with our team of Ainautes working in a massive laboratory filled with glowing equipment and holographic displays. Our cutting-edge research is at the forefront of artificial intelligence, machine learning, and robotics.
 
 Explore our website to learn more about our team, our projects, and our mission to push the boundaries of science and technology. Join us on this exciting journey towards a better tomorrow.
 
@@ -50,9 +34,25 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Explore the World of AInauts: Where Science Meets Technology
+# Discover the Future of Scientific Research with Ainautes
 
-Welcome to the world of AInauts, where science and technology come together to shape the future. Our team of experts conducts cutting-edge research in artificial intelligence, machine learning, and robotics in a massive laboratory filled with glowing equipment and holographic displays.
+Step into the world of Ainautes, where cutting-edge research meets futuristic technology. Our team of experts works in a massive laboratory equipped with state-of-the-art equipment and holographic displays to conduct groundbreaking research in the fields of artificial intelligence, machine learning, and robotics.
+
+Explore our website to learn more about our team, our projects, and our mission to push the boundaries of science and technology. Join us on this exciting journey towards a better tomorrow.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore the World of Ainautes: Where Science Meets Technology
+
+Welcome to the world of Ainautes, where science and technology come together to shape the future. Our team of experts conducts cutting-edge research in artificial intelligence, machine learning, and robotics in a massive laboratory filled with glowing equipment and holographic displays.
 
 Discover our website to learn more about our team, our projects, and our mission to push the boundaries of scientific innovation. Join us on this exciting journey towards a better tomorrow.
 
@@ -66,9 +66,9 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Discover the Future of Science and Technology with AInauts
+# Discover the Future of Science and Technology with Ainautes
 
-Step into the world of AInauts, where our team of experts conducts groundbreaking research in artificial intelligence, machine learning, and robotics. Our massive laboratory is equipped with state-of-the-art equipment and holographic displays to facilitate cutting-edge research.
+Step into the world of Ainautes, where our team of experts conducts groundbreaking research in artificial intelligence, machine learning, and robotics. Our massive laboratory is equipped with state-of-the-art equipment and holographic displays to facilitate cutting-edge research.
 
 Explore our website to learn more about our team, our projects, and our mission to push the boundaries of scientific innovation. Join us on this exciting journey towards a better tomorrow.
 

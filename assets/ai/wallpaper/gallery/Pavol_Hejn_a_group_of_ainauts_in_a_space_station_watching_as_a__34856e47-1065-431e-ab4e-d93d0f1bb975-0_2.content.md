@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
+"A group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Saves Space Adventure
 
-Welcome to our space-themed wallpaper featuring a group of AInauts in a space station, facing an imminent threat to Earth. The scene captures the essence of technology and human ingenuity working together to overcome a crisis.
+Welcome to our space-themed wallpaper featuring a group of Ainautes in a space station, facing an imminent threat to Earth. The scene captures the essence of technology and human ingenuity working together to overcome a crisis.
 
 ## The Story Behind the Wallpaper
 

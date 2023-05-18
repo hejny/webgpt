@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
+"Ainautes and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Zero Gravity AI Laboratory
 
-Experience the future of science with our stunning wallpaper featuring AInauts and their AI companions conducting experiments in a zero-gravity laboratory. Watch as colorful chemicals and particles float all around them, creating a mesmerizing display of scientific exploration.
+Experience the future of science with our stunning wallpaper featuring Ainautes and their AI companions conducting experiments in a zero-gravity laboratory. Watch as colorful chemicals and particles float all around them, creating a mesmerizing display of scientific exploration.
 
 At Zero Gravity AI Laboratory, we are committed to pushing the boundaries of what is possible through cutting-edge technology and innovative research. Join us on this exciting journey as we explore the mysteries of the universe and unlock the secrets of artificial intelligence.
 

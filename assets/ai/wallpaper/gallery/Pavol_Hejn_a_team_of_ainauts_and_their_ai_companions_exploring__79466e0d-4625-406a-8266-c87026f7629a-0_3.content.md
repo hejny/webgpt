@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
+"A team of Ainautes and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Orbitron-->
 
-# AInauts: Exploring the Unknown
+# Ainautes: Exploring the Unknown
 
 Welcome to our website, where we take you on a journey through the depths of space. Join us as we explore a massive, abandoned alien spacecraft with the help of our AI companions.
 
 ## The Mission
 
-Our team of AInauts has been tasked with investigating this mysterious vessel that has been floating in space for eons. Equipped with state-of-the-art technology and our trusty AI companions, we are ready to uncover its secrets.
+Our team of Ainautes has been tasked with investigating this mysterious vessel that has been floating in space for eons. Equipped with state-of-the-art technology and our trusty AI companions, we are ready to uncover its secrets.
 
 ## The Ship
 

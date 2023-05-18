@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
+"A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,25 +16,25 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Experiment on Distant World
 
-Welcome to our website showcasing an incredible wallpaper of AInauts conducting experiments on a distant planet, with a red sun setting behind them.
+Welcome to our website showcasing an incredible wallpaper of Ainautes conducting experiments on a distant planet, with a red sun setting behind them.
 
-## Who are the AInauts?
+## Who are the Ainautes?
 
-The AInauts are a group of highly skilled scientists and engineers who specialize in artificial intelligence research and space exploration. They are always looking for new ways to push the boundaries of science and technology.
+The Ainautes are a group of highly skilled scientists and engineers who specialize in artificial intelligence research and space exploration. They are always looking for new ways to push the boundaries of science and technology.
 
 ## The Distant Planet
 
-The planet depicted in this wallpaper is located in a far-off solar system, many light-years away from Earth. It is an alien world with a unique environment that provides a perfect testing ground for the AInauts' latest experiments.
+The planet depicted in this wallpaper is located in a far-off solar system, many light-years away from Earth. It is an alien world with a unique environment that provides a perfect testing ground for the Ainautes' latest experiments.
 
 ## The Red Sun
 
-The red sun setting behind the AInauts is a common sight on this planet. Its unusual color is due to its composition, which is different from the sun in our own solar system. Despite the differences, the AInauts have adapted to the local conditions and continue to make groundbreaking discoveries.
+The red sun setting behind the Ainautes is a common sight on this planet. Its unusual color is due to its composition, which is different from the sun in our own solar system. Despite the differences, the Ainautes have adapted to the local conditions and continue to make groundbreaking discoveries.
 
-> "We may be far from home, but we're making progress every day." - AInaut team leader
+> "We may be far from home, but we're making progress every day." - Ainaute team leader
 
 ## Join Us
 
-If you're interested in learning more about the AInauts and their work, follow us on social media or sign up for our newsletter. Stay tuned for updates on our latest projects and discoveries!
+If you're interested in learning more about the Ainautes and their work, follow us on social media or sign up for our newsletter. Stay tuned for updates on our latest projects and discoveries!
 
 ---
 
