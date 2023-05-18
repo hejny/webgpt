@@ -51,8 +51,8 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
-            const content = await readFile(contentPath, 'utf-8');
-            const title = extractTitleFromMarkdown(content);
+            let content = await readFile(contentPath, 'utf-8');
+            let title = extractTitleFromMarkdown(content);
 
             const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             if (font && !FONTS.includes(font)) {
@@ -60,7 +60,7 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
 
                 if (existingFont) {
                     console.info(chalk.green(` 🩹  Repair the file`));
-                    content.replace(font, existingFont);
+                    content = content.replace(font, existingFont);
                     await writeFile(contentPath, content, 'utf-8');
                 }
             }
