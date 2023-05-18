@@ -22,6 +22,7 @@ if (process.cwd() !== join(__dirname, '../..')) {
 }
 
 const program = new commander.Command();
+// TODO: !!! Each repair should have its own flag + commit (with this flag) and it should be runned in sequentially
 program.option('--commit', `Autocommit changes`, false);
 program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
@@ -102,9 +103,15 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
             usedFonts[font]++;
 
             if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
-                const titleShort = await askGpt(`
+                let titleShort = await askGpt(`
                     Make following title shorter: ${title}
                 `);
+
+                // Note: Remove the quotes from titleShort
+                titleShort = titleShort.replace(/^"(.*)"$/, '$1');
+
+                // Note: Remove the dot from the end of the titleShort
+                titleShort = titleShort.replace(/\.$/, '');
 
                 if (titleShort.trim().length < title.trim().length) {
                     content = content.replace(title, titleShort);
