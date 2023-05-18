@@ -98,12 +98,11 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 }
             }
 
-            const contentThread: Array<string> = [];
-            let content: string;
-            for (let i = 0; i < 3; i++) {
-                const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
-                content = await askGpt(contentPrompt, false);
+            const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
+            let content = await askGpt(contentPrompt, false);
+            const contentThread: Array<string> = [contentPrompt];
 
+            for (let i = 0; i < 3; i++) {
                 const title = extractTitleFromMarkdown(content);
 
                 // TODO: [💵] DRY this checks
@@ -134,7 +133,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 spaceTrim(
                     (block) => `
 
-                    <!--contentPrompt:
+                    <!--contentThread:
                     ${block(contentThread.join('\n\n\n---\n\n\n'))}
                     -->
                     <!--fontPrompt:
