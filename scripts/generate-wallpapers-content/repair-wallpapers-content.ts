@@ -102,16 +102,16 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
             usedFonts[font]++;
 
             if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
-                const titleSummary = await askGpt(`
-                    Summarize: ${title}
+                const titleShort = await askGpt(`
+                    Make following title shorter: ${title}
                 `);
 
-                if (titleSummary.trim().length <= MAX_CHARS_IN_TITLE) {
-                    content = content.replace(title, titleSummary);
+                if (titleShort.trim().length <= MAX_CHARS_IN_TITLE) {
+                    content = content.replace(title, titleShort);
                 } else {
                     console.warn(
                         chalk.bgYellow(` ⚠️  Title is too long after the summarization`) +
-                            chalk.yellow(`title:${title}\ntitleSummary:${titleSummary}`),
+                            chalk.yellow(`title:${title}\n` + `titleShort:${titleShort}`),
                     );
                 }
             }
