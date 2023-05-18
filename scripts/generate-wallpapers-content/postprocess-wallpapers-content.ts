@@ -50,8 +50,7 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
         parallelWorksCount: parallel,
         async makeWork({ metadataPath, contentPath }) {
             // TODO: !! Require at least some structure
-            // TODO: !! Cleanup font and if cannnot be recognized then remove it
-            // TODO: !! In title there should not be word "Wallpaper"
+            // TODO: !! Cleanup font and if cannnot be recognized then remove i
             // TODO: !! Multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
 
             const content = await readFile(contentPath, 'utf-8');
