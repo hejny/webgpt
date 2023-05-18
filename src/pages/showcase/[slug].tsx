@@ -26,6 +26,8 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     currentWallpaper = hydrateWallpaper(currentWallpaper);
     randomWallpaper = hydrateWallpaper(randomWallpaper);
 
+    console.info('🖼 currentWallpaper:', currentWallpaper);
+
     return (
         <WallpapersContext.Provider value={[currentWallpaper]} /* <- Is this the right place to be Provider in? */>
             <ShowcaseAppHead />

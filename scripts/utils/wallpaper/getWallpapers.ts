@@ -116,7 +116,10 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             title,
             content,
             font,
-        });
+            metadataPath,
+            colorStatsPath,
+            contentPath,
+        } as IWallpaper);
     }
 
     return wallpapers;

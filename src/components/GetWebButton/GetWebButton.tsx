@@ -60,7 +60,7 @@ export function GetWebButton(props: GetWebButtonProps) {
                 href={'/'}
                 className={classNames('button', styles.galleryButton)}
                 style={minorButtonStyle}
-                prefetch={false}
+                prefetch={false /* <- Note: Because gallery is enormous */}
             >
                 <Article content="Gallery" isEnhanced />
             </Link>
@@ -78,7 +78,6 @@ export function GetWebButton(props: GetWebButtonProps) {
                     headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
                     headerWallpaperElement.removeAttribute('srcset');
                 }}
-                prefetch={true}
                 /* Note: randomWallpaper image is prefetched here -> [🤰] */
                 className={classNames('button', styles.randomButton)}
                 style={{
