@@ -33,7 +33,8 @@ export const FONTS = [
     'Futura',
     'Barlow Condensed',
     'Cabin',
-    'Cinzel','Cinzel Decorative',
+    'Cinzel',
+    'Cinzel Decorative',
     'Cormorant Garamond',
     'Creepster' /* <- TODO: Where it is used */,
     // TODO: !! List more
@@ -43,7 +44,7 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
-export const COLORSTATS_VERSION = 8;
+export const COLORSTATS_VERSION = 9;
 export const COLORS_LIMIT = 10;
 export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;
 
