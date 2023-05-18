@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Galaxy Cluster Background
+# Galaxy Cluster Background for Universe Exploration.
 
 Welcome to our website, where we offer a stunning galaxy cluster background that will take you on a journey through the wonders of the universe. Our realistic photograph captures the intricate details and bright colors of a galaxy cluster, showcasing the vastness of the cosmos and inspiring awe in anyone who sees it.
 

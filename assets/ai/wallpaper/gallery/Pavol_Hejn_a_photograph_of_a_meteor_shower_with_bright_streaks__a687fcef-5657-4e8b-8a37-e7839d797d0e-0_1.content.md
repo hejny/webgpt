@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Journey: Explore the Wonders of the Universe
+# Cosmic Exploration: Discover the Universe
 
 Welcome to Cosmic Journey, where we invite you to explore the infinite possibilities of the universe. Our collection of high-quality backgrounds features stunning images of galaxies, nebulas, planets, and more. 
 

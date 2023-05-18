@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts Racing Across a Desert Planet
+# AI Racers on Desert Planet.
 
 Welcome to our website featuring an exciting wallpaper of a team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies. Here's what you can expect from this page:
 

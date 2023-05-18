@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Lato-->
 
-# Flower Power: Bringing Nature to Your Desktop
+# "Flower Power for Your Desktop"
 
 Welcome to our website, where we offer a stunning close-up of a flower as your desktop wallpaper. Our goal is to bring the beauty of nature into your daily life, even when you're stuck behind a computer screen.
 

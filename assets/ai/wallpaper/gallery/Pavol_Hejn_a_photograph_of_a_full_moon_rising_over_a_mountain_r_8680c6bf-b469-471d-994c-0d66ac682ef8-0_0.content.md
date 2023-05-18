@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Great Outdoors with Our Mountain Adventure Website
+# Mountain Adventure Website: Explore the Outdoors.
 
 Welcome to our mountain adventure website, your go-to resource for exploring the great outdoors. Whether you're an experienced hiker or a beginner looking to discover the beauty of nature, we have everything you need to plan your next mountain adventure.
 

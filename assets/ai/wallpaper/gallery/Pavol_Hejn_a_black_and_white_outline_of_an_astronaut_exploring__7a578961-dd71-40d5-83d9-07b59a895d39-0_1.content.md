@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Embark on a Journey of Space Exploration with Our Astronaut Wallpaper
+# "Explore Space with Our Astronaut Wallpaper"
 
 Our black and white wallpaper depicts an astronaut exploring a distant planet, inviting you to embark on your own journey of discovery and adventure. The intricate details and shading bring this otherworldly scene to life, inspiring your imagination and curiosity about the mysteries of space.
 

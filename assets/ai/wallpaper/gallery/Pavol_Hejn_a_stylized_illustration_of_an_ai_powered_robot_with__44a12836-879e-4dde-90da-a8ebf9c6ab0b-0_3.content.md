@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI-Powered Robotics for the Future
+# AI Robotics for the Future.
 
 Welcome to our website dedicated to exploring the exciting world of AI-powered robotics. Our sleek and modern graphics are inspired by the cutting-edge technology that is rapidly transforming the way we live and work.
 

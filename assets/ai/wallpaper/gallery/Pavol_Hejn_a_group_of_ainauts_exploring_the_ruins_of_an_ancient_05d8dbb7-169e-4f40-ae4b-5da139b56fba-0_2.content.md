@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of a Distant Civilization
+# Mystery of Distant Civilization
 
 Welcome to our website dedicated to exploring the mysteries of ancient civilizations on distant planets. Our team of AInauts is passionate about uncovering the secrets of long-forgotten cultures, and we're excited to share our findings with you.
 

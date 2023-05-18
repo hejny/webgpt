@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Winter Wonderland Home Decor Inspiration
+# Winter Home Decor Ideas.
 
 Looking for cozy winter home decor inspiration? Look no further than our stunning wallpaper featuring a charming winter cabin surrounded by snow-covered trees. Bring the beauty of the outdoors into your home with this gorgeous wallpaper that will add warmth and coziness to any room.
 

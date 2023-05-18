@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Enhance Your Tech Content with AI Buzzwords
+# Boost Tech Content with AI Jargon.
 
 Looking to add a professional touch to your tech content? Our AI buzzwords background can help. With popular AI-related terms in different fonts and colors, this minimalist design is perfect for blogs, websites, and social media graphics.
 

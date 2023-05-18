@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Experience the Beauty of Desert Sunsets
+# Desert Sunsets: A Beautiful Experience
 
 Immerse yourself in the stunning beauty of a desert landscape at sunset with our captivating background image. The warm colors and elongated shadows create a serene atmosphere, transporting you to a peaceful natural environment.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# AI in Space: Saving Earth from a Massive Asteroid
+# AI Saves Earth from Asteroid in Space.
 
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence and its potential for saving humanity. Our stunning wallpaper depicts a group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them. This image perfectly captures the importance of AI in space exploration and disaster mitigation.
 

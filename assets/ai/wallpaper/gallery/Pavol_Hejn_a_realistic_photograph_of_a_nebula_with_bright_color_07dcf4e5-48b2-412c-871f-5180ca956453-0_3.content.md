@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Universe with Our Nebula Background
+# Nebula Background for Universe Exploration.
 
 Step into the vast expanse of the universe with our stunning nebula background. This high-quality photograph captures the intricate details and vibrant colors of a distant nebula, transporting you to another world.
 

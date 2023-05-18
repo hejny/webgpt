@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Piloting Through the Galaxy
+# AInauts: Galaxy Pilots
 
 Welcome to our website where you can explore the universe with us! Our team of AInauts and their AI companions are on a mission to discover new worlds and civilizations. 
 

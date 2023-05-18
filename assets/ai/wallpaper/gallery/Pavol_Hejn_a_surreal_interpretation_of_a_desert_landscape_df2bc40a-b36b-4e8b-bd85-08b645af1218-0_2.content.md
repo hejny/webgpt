@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our surreal desert landscape!
+# Surreal desert welcome!
 
 Our website features a stunning wallpaper that showcases a surreal interpretation of a desert landscape. The image is a work of art that captures the essence of the vast, open spaces and unique beauty of the desert.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Space Odyssey" Theme: Explore the Cosmos on Your Devices
+# "Explore the Cosmos on Your Devices with Space Odyssey"
 
 Our "Space Odyssey" theme brings the vastness of space to your digital devices. Featuring a stunning black and white outline of an astronaut's helmet, this theme showcases intricate details that make you feel like you're on a spacewalk yourself.
 

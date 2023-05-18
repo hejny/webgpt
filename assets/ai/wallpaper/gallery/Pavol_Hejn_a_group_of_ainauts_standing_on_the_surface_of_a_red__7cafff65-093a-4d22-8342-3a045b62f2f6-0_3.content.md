@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Red Planet: A Journey to Mars
+# Journey to Mars: Exploring the Red Planet.
 
 Welcome to our website dedicated to exploring the mysteries of Mars! Our goal is to provide you with the latest news, research, and insights into the Red Planet. To help set the mood, we've included a stunning wallpaper featuring a group of AInauts standing on the surface of Mars, with towering dust storms raging in the distance.
 

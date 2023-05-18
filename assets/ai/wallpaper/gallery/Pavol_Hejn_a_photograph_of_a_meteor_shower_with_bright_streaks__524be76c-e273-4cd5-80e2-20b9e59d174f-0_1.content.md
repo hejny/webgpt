@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Meteor Shower Background
+# Meteor Shower Background for Universe Exploration
 
 Our meteor shower background is more than just a beautiful image for your screen. It's an invitation to explore the mysteries and marvels of the universe.
 

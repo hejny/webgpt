@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Inter-->
 
-# Welcome to AInauts - Your Gateway to AI Exploration
+# AInauts: Your AI Gateway.
 
 Explore the unknown with AInauts! Our team of highly skilled professionals is dedicated to pushing the boundaries of artificial intelligence and space exploration. Our latest wallpaper features a group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. This image represents our commitment to innovation and adventure.
 

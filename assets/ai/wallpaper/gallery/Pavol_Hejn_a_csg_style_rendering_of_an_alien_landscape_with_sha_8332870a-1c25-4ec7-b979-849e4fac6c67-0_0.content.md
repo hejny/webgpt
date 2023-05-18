@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Alien Landscape Wallpaper
+# Alien Wallpaper
 
 Transform your desktop or mobile device with this stunning CSG-style rendering of an alien landscape. The sharp angles and contrasting colors create a futuristic and industrial vibe that will transport you to another world.
 

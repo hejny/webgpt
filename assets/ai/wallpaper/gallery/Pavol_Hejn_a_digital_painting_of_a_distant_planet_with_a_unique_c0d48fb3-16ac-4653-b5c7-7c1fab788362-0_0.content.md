@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Explore the Mysteries of a Distant Planet
+# Mystery of Distant Planet
 
 Welcome to our website, where you can immerse yourself in the breathtaking beauty of a digital painting depicting a distant planet. This stunning artwork showcases the unique atmosphere and unusual terrain of an otherworldly destination that is waiting to be discovered.
 

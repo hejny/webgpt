@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Welcome to the Future of Construction
+# Future Construction Welcome
 
 Experience the awe-inspiring world of tomorrow with our futuristic cityscape wallpaper. Immerse yourself in a world where AInauts and their AI counterparts work together seamlessly to build towering skyscrapers and cutting-edge infrastructure.
 

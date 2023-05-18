@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Surreal Universe!
+# Surreal Universe Welcome!
 
 Get ready to embark on a journey through an otherworldly realm with our collection of stunning wallpapers. Immerse yourself in a surreal landscape filled with alien planets, bizarre creatures, and mind-bending vistas.
 

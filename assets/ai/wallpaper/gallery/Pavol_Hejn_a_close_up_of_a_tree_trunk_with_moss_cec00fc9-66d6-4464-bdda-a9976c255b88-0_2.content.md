@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature-Inspired Designs for a Serene Home
+# Nature-Inspired Home Designs
 
 Welcome to our website, where we offer a range of nature-inspired designs that will transform your home into a serene oasis. Our designs are inspired by the beauty of the natural world and are designed to bring a sense of calm and tranquility to your living space.
 

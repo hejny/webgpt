@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Beauty of Seagulls in Flight
+# Beauty of Flying Seagulls.
 
 Our website is dedicated to showcasing the natural beauty that surrounds us, and this stunning image of a seagull in flight is no exception. With its powerful wings and striking contrast against the blue sky, this image captures the majesty and grace of these magnificent birds.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Futuristic Robot: A Sci-Fi Blast from the Past
+# Retro-Futuristic Robot: Sci-Fi Blast
 
 Take a trip down memory lane with our retro-futuristic robot background. Featuring a vintage illustration of a robot, this design will transport you back to the golden age of science fiction. With classic metallic details and futuristic elements, this image is a true blast from the past.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Research at the Edge of a Black Hole
+# AI Research near Black Hole
 
 Welcome to our website dedicated to showcasing the groundbreaking research conducted by our team of AInauts and their AI companions on the edge of a black hole. Our experiments take us to the limits of human understanding, as we explore the mysteries of time and space.
 

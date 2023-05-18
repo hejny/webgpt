@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey to Distant Planets
+# Journey to Distant Planets.
 
 Welcome to our website dedicated to exploring the mysteries of the universe! Our mission is to share with you the wonders of space and the adventures of those who dare to explore it. 
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Volcanic Planets: Explore the Beauty and Danger of Lava Flows
+# Exploring Volcanic Planets: Beauty and Danger of Lava Flows.
 
 Welcome to our website dedicated to exploring the fascinating world of volcanic planets. Our stunning wallpaper features a photograph of a lava flow on one such planet, with its vivid red and orange colors evoking a sense of danger and excitement.
 

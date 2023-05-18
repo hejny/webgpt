@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Night Skyline: A Stunning Background for Your Digital Devices
+# Shorter title: Stunning Night Skyline for Your Devices
 
 Looking to add some excitement to your digital devices? Our "City Skyline at Night" wallpaper captures the vibrancy and energy of a bustling metropolis after dark. The towering skyscrapers and twinkling lights create a stunning backdrop that will transport you to the heart of the city.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AInauts and their AI Companions Conducting Experiments on a Gas Giant Planet
+# AI and AInauts Experiment on Gas Giant Planet.
 
 Welcome to our website featuring a stunning wallpaper of a team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet. 
 

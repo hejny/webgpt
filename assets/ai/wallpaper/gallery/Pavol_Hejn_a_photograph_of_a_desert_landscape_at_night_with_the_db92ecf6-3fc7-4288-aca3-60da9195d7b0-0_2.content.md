@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Desert Nights - Inspiring Backgrounds for Your Device
+# Shorter title: Inspiring Desert Night Backgrounds
 
 Welcome to Desert Nights, your source for inspiring backgrounds that transport you to the beauty of the desert landscape. Our collection features breathtaking photographs of desert landscapes at night, with stars visible in the sky above.
 

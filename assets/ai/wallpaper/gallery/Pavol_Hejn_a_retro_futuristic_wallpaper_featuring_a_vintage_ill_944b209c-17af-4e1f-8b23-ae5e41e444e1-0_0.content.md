@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Discovering the Future: Robotics, AI, and Technology"
+# "Exploring Future Tech: Robotics and AI"
 
 Welcome to our website dedicated to exploring the latest trends and advancements in robotics, artificial intelligence, and technology. Our mission is to provide you with insightful articles, news, and resources that will inspire you to think about the future in new and exciting ways.
 

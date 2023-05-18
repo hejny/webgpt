@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Adventure Awaits: Your Ultimate Guide to Mountain Exploration
+# "Ultimate Guide to Mountain Adventure"
 
 Welcome to Adventure Awaits, your ultimate guide to exploring the world's most beautiful mountains. Our website is designed to inspire and inform adventure seekers like you, who are looking for their next thrilling experience.
 

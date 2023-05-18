@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Arctic with Our Stunning Desktop Background
+# Explore Arctic with Our Desktop Wallpaper
 
 Welcome to our website where we offer a stunning desktop background that captures the beauty of the Arctic. The photograph features an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky. 
 

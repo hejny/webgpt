@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Urban Jungle: Where Nature Reclaims the City
+# Urban Jungle: When Nature Takes Over the City.
 
 At Urban Jungle, we're passionate about showcasing the beauty of nature taking over urban spaces. Our featured wallpaper captures this phenomenon perfectly, with lush greenery and vibrant flowers overtaking a once-busy city street.
 

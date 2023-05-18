@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Majestic Mountain Ranges
+# Discover Mountain Ranges.
 
 Welcome to our website where you can explore the stunning beauty of mountain ranges through a collection of breathtaking wallpapers. 
 

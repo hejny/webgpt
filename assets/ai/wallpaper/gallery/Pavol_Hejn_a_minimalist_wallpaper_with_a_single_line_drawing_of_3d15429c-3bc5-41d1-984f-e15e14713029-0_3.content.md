@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Cyborg Art for a Minimalist Look
+# Minimalist Cyborg Art
 
 Elevate your digital space with our collection of futuristic cyborg art. Our minimalist designs feature striking single line drawings of cyborgs in bold colors like bright red and blue, perfect for adding a touch of modern style to your desktop or mobile device.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# The AI Lab: Creating the Future of Life with Advanced Technology
+# AI Lab: Advancing Life with Technology
 
 Welcome to The AI Lab, a futuristic laboratory where AInauts use AI and advanced technology to create new forms of life. Our mission is to push the boundaries of what is possible and explore the potential of AI in shaping the future of life.
 

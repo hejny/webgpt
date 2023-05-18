@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts Exploring a Mysterious Rocky Planet
+# AInauts on Mysterious Rocky Planet
 
 Welcome to our website, where we showcase stunning wallpapers of different planets and galaxies. In this edition, we present a breathtaking image of a group of AInauts exploring a massive, rocky planet.
 

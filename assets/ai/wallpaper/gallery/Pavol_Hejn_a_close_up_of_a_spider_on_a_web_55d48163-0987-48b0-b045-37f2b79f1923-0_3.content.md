@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Spooky Halloween Desktop Background
+# Halloween Desktop Spookiness
 
 Welcome to our website where we offer a spooky desktop background to help you get into the Halloween spirit. Our background features a close-up of a spider on a web, adding a touch of spookiness to your computer screen.
 

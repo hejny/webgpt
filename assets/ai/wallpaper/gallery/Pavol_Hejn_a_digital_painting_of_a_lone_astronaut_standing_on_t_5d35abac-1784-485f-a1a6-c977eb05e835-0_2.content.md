@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Experience the Beauty of Space with Our Digital Artwork
+# Explore Space's Beauty with Our Digital Art.
 
 Our digital artwork captures the awe-inspiring beauty and wonder of space, featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe.
 

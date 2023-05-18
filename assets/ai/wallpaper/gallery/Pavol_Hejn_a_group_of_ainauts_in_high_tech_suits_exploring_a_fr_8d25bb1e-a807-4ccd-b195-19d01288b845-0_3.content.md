@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Frontiers of Technology
+# Frontier Tech Exploration
 
 Welcome to our website, where we showcase the latest advancements in technology and innovation. Our goal is to inspire and educate our readers about the exciting possibilities that await us in the future.
 

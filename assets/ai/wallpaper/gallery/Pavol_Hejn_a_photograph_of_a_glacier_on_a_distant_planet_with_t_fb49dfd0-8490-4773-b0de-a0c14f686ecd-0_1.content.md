@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Backgrounds for a Stellar Experience
+# Cosmic Backgrounds for Stellar Experience
 
 Immerse yourself in the wonders of space with our stunning cosmic backgrounds. Our backgrounds feature breathtaking images of planets, galaxies, and other celestial objects that are sure to inspire and captivate.
 

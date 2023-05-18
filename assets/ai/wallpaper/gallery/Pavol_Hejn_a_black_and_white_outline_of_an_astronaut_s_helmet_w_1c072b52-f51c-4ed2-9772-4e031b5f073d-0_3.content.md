@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Wonders of Space with Our Astronaut Helmet Desktop Background
+# Discover Space Wonders with Astronaut Helmet Desktop Background
 
 Our astronaut helmet desktop background is a unique and inspiring way to bring the beauty of space exploration to your computer. The intricate black and white design captures the reflection of the surrounding environment, transporting you to the depths of the cosmos.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# The AI Spacecraft Adventure: Exploring the Depths of Space
+# AI Spacecraft Explores Deep Space.
 
 Welcome to our website dedicated to the thrilling adventure of a group of AInauts and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space. Our wallpaper captures just a glimpse of the excitement and mystery that awaits you on this journey.
 

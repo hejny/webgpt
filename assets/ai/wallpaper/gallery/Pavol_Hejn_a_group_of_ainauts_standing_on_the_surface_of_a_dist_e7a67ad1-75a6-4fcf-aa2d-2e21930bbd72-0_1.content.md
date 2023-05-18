@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Discover the Wonders of Distant Planets
+# Exploring Faraway Worlds
 
 Experience the thrill of space exploration with our stunning wallpaper featuring a group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them. 
 

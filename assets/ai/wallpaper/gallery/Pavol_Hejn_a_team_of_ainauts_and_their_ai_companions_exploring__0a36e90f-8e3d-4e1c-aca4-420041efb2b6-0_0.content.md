@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the AI Spacecraft Exploration Mission
+# AI Space Mission Welcome
 
 Join our team of AInauts and their AI companions as we embark on an exciting journey to explore a massive, abandoned alien spacecraft floating in the depths of space. 
 

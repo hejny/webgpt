@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Add a Touch of Quantum to Your Workspace with Our Design
+# Quantumize Your Workspace Design.
 
 Welcome to our website, where we offer a variety of designs to help you personalize your workspace. Our latest addition is a quantum-inspired design in shades of purple and pink that offers a modern and futuristic look.
 

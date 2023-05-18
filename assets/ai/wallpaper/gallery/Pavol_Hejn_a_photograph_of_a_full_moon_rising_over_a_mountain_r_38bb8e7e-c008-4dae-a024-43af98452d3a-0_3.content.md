@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Mystical Mountain: A Background of Nature's Serenity
+# "Nature's Serenity: Mystical Mountain Background"
 
 Welcome to our website where you can discover the wonders of nature through stunning photographs that will transform your desktop background. Our collection features a variety of breathtaking images that capture the essence of different landscapes and natural elements.
 

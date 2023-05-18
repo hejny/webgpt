@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Arctic with Our Desktop Background
+# Explore Arctic via Desktop Background
 
 Welcome to our website where you can download a stunning desktop background featuring an iceberg in the Arctic. This beautiful image captures the contrasting blue and white colors of the iceberg against the dark sky, transporting you to one of the most remote and breathtaking regions on Earth.
 

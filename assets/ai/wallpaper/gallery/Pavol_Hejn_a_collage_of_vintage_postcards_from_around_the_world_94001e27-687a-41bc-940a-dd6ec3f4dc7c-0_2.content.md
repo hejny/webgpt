@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Vintage Postcards from Around the World
+# Global Vintage Postcards.
 
 Welcome to our website featuring a beautiful collage of vintage postcards from around the world. Our collection showcases the unique artistry and cultural significance of postcards from different eras and regions.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# TechHub - Your Gateway to the World of Technology
+# TechHub: Gateway to Tech World.
 
 Welcome to TechHub, your gateway to the world of technology. Our website is designed to provide you with the latest news, updates, and insights from the tech industry.
 

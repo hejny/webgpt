@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Galactic Adventures: Exploring the Unknown
+# Galactic Exploration.
 
 Welcome to Galactic Adventures, where we take you on a journey through the vast and mysterious universe. Our team of AInauts is always ready to embark on new expeditions to discover the unknown.
 

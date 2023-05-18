@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# "AI Saves the Day: A Space Adventure"
+# "AI in Space Adventure"
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts in a space station, witnessing a catastrophic event - a massive asteroid hurtling towards Earth. With only their AI and technology, these brave individuals must use their skills and ingenuity to save themselves and the planet from destruction.
 

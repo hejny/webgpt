@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI-Powered Solutions for Modern Businesses
+# AI for Modern Businesses.
 
 Welcome to our website! We provide cutting-edge AI-powered solutions for businesses looking to stay ahead in today's fast-paced world. Our technology is designed to streamline processes, increase efficiency, and improve overall performance.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Frozen Wasteland
+# Frozen Wasteland Welcome.
 
 ## A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them.
 

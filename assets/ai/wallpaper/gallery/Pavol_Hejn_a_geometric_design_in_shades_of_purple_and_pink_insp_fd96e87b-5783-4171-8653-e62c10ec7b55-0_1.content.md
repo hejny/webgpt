@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Quantum-Inspired Geometric Desktop Background
+# Quantum Geometric Desktop Background
 
 Welcome to our website featuring a stunning geometric desktop background inspired by the principles of quantum computing. Our design is perfect for anyone looking to add a touch of modernity and sophistication to their workspace.
 

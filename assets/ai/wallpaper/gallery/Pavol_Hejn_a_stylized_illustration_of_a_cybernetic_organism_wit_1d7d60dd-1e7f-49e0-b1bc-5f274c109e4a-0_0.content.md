@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cybernetic Organism Background for a Futuristic Desktop
+# "Futuristic Desktop's Cybernetic Organism Background"
 
 Upgrade your desktop with our cybernetic organism background. This unique illustration features metallic textures and digital glitch effects, transforming your screen into a futuristic cyberpunk-inspired workspace.
 

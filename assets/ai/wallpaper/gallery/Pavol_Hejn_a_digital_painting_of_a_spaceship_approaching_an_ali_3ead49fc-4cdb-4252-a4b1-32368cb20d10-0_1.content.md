@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Space Odyssey: Explore the Unknown
+# "Space Odyssey: Explore Unknown"
 
 Welcome to Space Odyssey, where we take you on a journey through the vast expanse of space. Our latest addition to our collection is a stunning digital painting of a spaceship approaching an alien planet. The artwork showcases the unusual flora and fauna visible on the planet's surface, inviting you to explore the unknown.
 

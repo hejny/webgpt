@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# Welcome to Our Futuristic City!
+# Futuristic City Welcome!
 
 Experience the wonder of a distant planet with our stunning digital illustration of a futuristic city. Marvel at the towering buildings and advanced technology that make this world truly unique.
 

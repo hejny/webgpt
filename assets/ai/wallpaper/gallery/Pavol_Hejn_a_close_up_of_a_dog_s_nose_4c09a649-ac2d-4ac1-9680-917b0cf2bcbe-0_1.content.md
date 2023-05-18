@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Celebrating the Incredible Sense of Smell in Dogs
+# "Dogs' Incredible Sense of Smell Celebration"
 
 Welcome to our website where we celebrate the incredible sense of smell that dogs possess! Our wallpaper features a stunning close-up of a dog's nose, showcasing the intricate details and unique characteristics that make each dog's sniffer special.
 

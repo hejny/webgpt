@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Discovering the Mysteries of an Alien Structure
+# Alien Structure Mysteries Discovered.
 
 Welcome to our website dedicated to exploring the secrets of a massive, alien structure located on a distant planet. Our team of AInauts has been working tirelessly to uncover the mysteries of this incredible artifact, and we're excited to share our findings with you.
 

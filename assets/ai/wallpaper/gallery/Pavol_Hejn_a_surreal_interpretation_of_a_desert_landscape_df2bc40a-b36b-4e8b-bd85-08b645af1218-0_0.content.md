@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Surreal Desert Landscape Artwork
+# Surreal Desert Art
 
 Welcome to our website, where you can find a unique and surreal interpretation of a desert landscape as artwork for your device. Our artwork is not just a simple picture - it's a work of art that can inspire creativity and imagination.
 

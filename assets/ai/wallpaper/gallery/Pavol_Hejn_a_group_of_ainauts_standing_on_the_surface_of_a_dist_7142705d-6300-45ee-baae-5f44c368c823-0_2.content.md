@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the World of AInauts
+# AInauts' World
 
 Are you ready to explore the unknown depths of space? Join us on an adventure like no other as we journey to distant planets and encounter alien lifeforms.
 

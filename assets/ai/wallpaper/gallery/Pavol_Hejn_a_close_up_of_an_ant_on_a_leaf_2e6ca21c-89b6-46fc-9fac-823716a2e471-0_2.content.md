@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Ants on a Leaf: Bringing Nature to Your Desktop
+# Ants on a Leaf for Your Desktop.
 
 Welcome to our website, where we offer stunning wallpapers that bring the beauty of nature to your desktop. Our featured wallpaper is a close-up of an ant on a leaf, captured in exquisite detail.
 

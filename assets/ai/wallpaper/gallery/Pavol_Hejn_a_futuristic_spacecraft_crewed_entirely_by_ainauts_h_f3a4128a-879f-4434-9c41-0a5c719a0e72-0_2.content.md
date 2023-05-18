@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI-Powered Spacecraft: Exploring the Final Frontier
+# AI spacecraft exploring space.
 
 Welcome to our futuristic spacecraft, crewed entirely by AInauts and capable of traveling at incredible speeds through the vast expanse of space. Our cutting-edge technology and advanced artificial intelligence systems allow us to explore new worlds and push the boundaries of human knowledge.
 

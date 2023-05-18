@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Deep Sea Creatures - Discover the Wonders of the Ocean
+# "Exploring Deep Sea Wonders"
 
 Welcome to our website dedicated to exploring the fascinating world of deep sea creatures. Our homepage features a stunning digital painting of one of the most mysterious and awe-inspiring creatures of the deep ocean.
 

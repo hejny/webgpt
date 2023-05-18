@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the World of AInauts
+# AInauts' World.
 
 Experience a world where humans and AI work together to build a better future. Our futuristic cityscape wallpaper showcases the collaboration between AInauts and their AI counterparts as they construct towering skyscrapers and infrastructure.
 

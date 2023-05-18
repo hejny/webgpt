@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cosmic Dreams: Discover Captivating Digital Backgrounds
+# Captivating Digital Backgrounds for Cosmic Dreams.
 
 Welcome to Cosmic Dreams, where we offer a unique collection of digital backgrounds that will transport you to another world. Our latest addition is a stunning neon-colored interpretation of a starry sky, which is just one example of the captivating digital backgrounds we have available.
 

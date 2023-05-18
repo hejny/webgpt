@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Add a Touch of Adventure to Your Desktop with Our Space-themed Background
+# Spice up your desktop with our space background.
 
 Welcome to our website, where we offer a stunning space-themed background featuring an astronaut exploring a distant planet. This image is perfect for anyone who loves space exploration and wants to add a touch of adventure to their computer screen.
 

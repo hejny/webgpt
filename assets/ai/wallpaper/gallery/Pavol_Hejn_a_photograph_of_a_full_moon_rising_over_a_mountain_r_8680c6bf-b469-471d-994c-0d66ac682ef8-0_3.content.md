@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Immerse Yourself in Nature's Mystical Beauty
+# Immerse in Nature's Beauty.
 
 Step into a world of wonder and awe-inspiring landscapes with our stunning website background. Featuring a photograph of a full moon rising over misty mountain ranges, this image transports you to a place of tranquility and natural beauty.
 

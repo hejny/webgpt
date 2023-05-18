@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Depths of Gas Giants: A Journey with AInauts
+# Journeying with AInauts into Gas Giants' Depths.
 
 Welcome to our website dedicated to showcasing the incredible work of our team of AInauts and their AI companions as they conduct experiments on the surface of massive gas giant planets. Our mission is to explore these mysterious worlds and uncover the secrets hidden within their depths.
 

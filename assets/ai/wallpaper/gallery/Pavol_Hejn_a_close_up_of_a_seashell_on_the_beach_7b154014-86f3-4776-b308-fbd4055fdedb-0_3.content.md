@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Seashell Background: Add a Touch of Coastal Charm to Your Space
+# Coastal Seashell Background: Add Charm to Your Space.
 
 Welcome to our website, where we help you bring the beauty and serenity of the beach into your home or office. Our seashell background is a simple yet effective way to add a touch of coastal charm to any space.
 

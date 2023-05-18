@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Nature's Microcosm: A Close-up of an Ant on a Leaf
+# Ant on Leaf: Nature's Microcosm
 
 Welcome to our website, where we celebrate the beauty and intricacy of the natural world. Our current wallpaper features a stunning close-up of an ant on a leaf, showcasing the incredible detail and complexity that can be found in even the smallest creatures.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Racing: Compete with the Best AInauts on the Hottest Planets
+# AI Racing: Compete with AInauts on Hot Planets.
 
 Welcome to AI Racing, the ultimate competition for AInauts and their AI companions! Join us in a thrilling race across the surface of a desert planet in high-tech buggies, where you'll face challenging obstacles and fierce opponents.
 

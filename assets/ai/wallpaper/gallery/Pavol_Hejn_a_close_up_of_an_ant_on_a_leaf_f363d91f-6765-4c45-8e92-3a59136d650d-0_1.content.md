@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Nature's Wonders: A Close-up of an Ant on a Leaf
+# Ant on Leaf: Nature's Close-up
 
 Welcome to our website featuring stunning nature wallpapers! Our latest addition is a close-up photograph of an ant on a leaf. This incredible shot captures the intricate details of the ant's body and the texture of the leaf.
 

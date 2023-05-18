@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Unveiling the Wonders of Deep Sea Creatures
+# Exploring Deep Sea Wonders
 
 Welcome to our website dedicated to unveiling the wonders of deep sea creatures. Our homepage features a breathtaking digital painting of one such creature, with its tentacles and bioluminescent patterns igniting a sense of curiosity and fascination.
 

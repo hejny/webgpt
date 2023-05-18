@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Digital Art
+# Digital Art for Exploring the Universe
 
 Our digital painting captures the awe-inspiring beauty of space exploration, featuring a lone astronaut standing on the edge of a crater and gazing out at the endless expanse of the cosmos. This stunning artwork is the perfect way to immerse yourself in the wonders of the universe and stay inspired by the limitless possibilities of human exploration.
 

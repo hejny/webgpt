@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Digital Aesthetic with Quantum-Inspired Design
+# Quantum-Inspired Design for Digital Aesthetics.
 
 Looking to add a touch of sophistication and modernity to your digital space? Our latest creation is just what you need - a stunning geometric pattern in shades of purple and pink, inspired by the shape of a quantum computer.
 

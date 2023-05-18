@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Feline Insights: Your Guide to Cat Care
+# Cat Care Guide: Feline Insights
 
 Welcome to Feline Insights, your ultimate guide to cat care. Our website is dedicated to providing cat lovers with the information they need to keep their furry friends happy and healthy. From nutrition and health to behavior and training, we cover it all.
 

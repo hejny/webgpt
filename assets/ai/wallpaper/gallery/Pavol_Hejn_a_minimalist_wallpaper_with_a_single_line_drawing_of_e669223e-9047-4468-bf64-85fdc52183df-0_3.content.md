@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# CyberSpace: Where Art and Technology Meet
+# CyberArt: Where Tech Meets Art.
 
 Welcome to CyberSpace, where we believe that art and technology can coexist to create something truly unique. Our minimalist artwork collection features a striking single-line drawing of a cyborg in bold colors like bright red or blue, perfect for adding a futuristic touch to your digital world.
 

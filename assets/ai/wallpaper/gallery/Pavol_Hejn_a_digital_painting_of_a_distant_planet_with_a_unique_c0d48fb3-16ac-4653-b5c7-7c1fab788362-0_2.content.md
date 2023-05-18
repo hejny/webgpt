@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# "Galactic Dreams" - Explore the Mysteries of the Universe
+# "Galactic Dreams: Mysteries of the Universe"
 
 Welcome to Galactic Dreams, your ultimate destination for stunning digital paintings of distant planets and galaxies. Our collection features breathtaking visuals that will transport you to a world beyond your imagination.
 

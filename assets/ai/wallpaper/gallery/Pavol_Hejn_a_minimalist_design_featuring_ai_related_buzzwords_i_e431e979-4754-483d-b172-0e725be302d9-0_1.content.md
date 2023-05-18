@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# AI Buzzwords: Stay Up-to-Date with the Latest Advances
+# AI Buzzwords: Latest Advances Update.
 
 Welcome to our minimalist website featuring an AI buzzwords background! Our goal is to keep you informed on the latest advances in artificial intelligence.
 

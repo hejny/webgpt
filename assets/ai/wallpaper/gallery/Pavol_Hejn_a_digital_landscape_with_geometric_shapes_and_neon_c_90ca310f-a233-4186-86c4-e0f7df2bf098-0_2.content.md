@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Digital Landscape with Geometric Shapes and Neon Colors
+# Digital Landscape with Geometric Shapes & Neon Colors.
 
 Welcome to our website featuring a stunning digital landscape wallpaper with geometric shapes and neon colors. This wallpaper is perfect for anyone who loves modern design and vibrant colors.
 

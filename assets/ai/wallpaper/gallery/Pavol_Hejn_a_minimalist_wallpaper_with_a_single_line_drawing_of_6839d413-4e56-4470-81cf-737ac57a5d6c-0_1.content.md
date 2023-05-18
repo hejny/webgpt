@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Upgrade Your Digital Devices with a Futuristic Cyborg Theme
+# "Upgrade to Futuristic Cyborg Theme for Digital Devices"
 
 Transform your digital devices with our futuristic cyborg theme! This minimalist and edgy design is perfect for those who want to make a statement and stand out from the crowd.
 

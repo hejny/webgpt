@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Mysteries of a Gas Giant Planet with Our AInaut Team
+# Discover a Gas Giant Planet with AInaut.
 
 Our team of AInauts and their AI companions are on a mission to uncover the secrets of a massive, gas giant planet. Join us as we conduct groundbreaking experiments and gather data on this fascinating world.
 

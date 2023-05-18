@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future: A Pop Art-Inspired Online Destination
+# Pop Art Future: Online Destination.
 
 Embark on a journey into the future with our pop art-inspired website design. Featuring a dynamic comic book-style illustration of a cyborg or robot, this visually stunning background sets the tone for an exciting and engaging online experience.
 

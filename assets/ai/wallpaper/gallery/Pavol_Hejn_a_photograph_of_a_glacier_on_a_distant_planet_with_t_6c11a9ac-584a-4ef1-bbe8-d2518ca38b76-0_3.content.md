@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Discover the Wonders of Our Galaxy" 
+# "Explore Our Galaxy's Wonders"
 
 Welcome to our website, where we showcase stunning images of the universe that will take your breath away. Our wallpaper collection features captivating photographs from different planets, galaxies, and stars. Each image is carefully selected to give you a glimpse into the vastness and beauty of our universe.
 

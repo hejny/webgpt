@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Serene Workspace with Nature-Inspired Backgrounds
+# Nature-Inspired Workspace
 
 Welcome to our website, where we offer a range of nature-inspired backgrounds that can help you create a calming and serene workspace. Our backgrounds are designed to reduce stress levels, improve your mood, and increase productivity.
 

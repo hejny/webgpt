@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Enchanting Depths of the Ocean
+# Oceanic Exploration.
 
 Welcome to our website, where we bring you a glimpse of the mesmerizing underwater world through our stunning wallpaper featuring "A magical underwater world".
 

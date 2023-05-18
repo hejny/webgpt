@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Mountain Meditation: Find Peace and Serenity in Nature
+# Shorter title: Finding Peace in Mountain Meditation
 
 Welcome to Mountain Meditation, your go-to destination for finding inner peace and tranquility through the power of nature. Our website is designed to help you escape the hustle and bustle of daily life and immerse yourself in the serene beauty of the great outdoors.
 

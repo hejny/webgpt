@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Beauty of Nature: A Snail on a Leaf
+# Nature's Beauty: Snail on Leaf
 
 Welcome to our website dedicated to showcasing the beauty of nature! Our current background features a stunning close-up of a snail on a leaf, reminding us of the intricate details and wonder that can be found in even the smallest of creatures.
 

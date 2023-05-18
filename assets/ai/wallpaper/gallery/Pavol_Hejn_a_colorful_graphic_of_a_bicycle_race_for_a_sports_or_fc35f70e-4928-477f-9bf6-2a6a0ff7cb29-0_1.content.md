@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Achieve Your Fitness Goals with Our Bicycle Race Graphic
+# "Fitness Goals? Join Our Bike Race!"
 
 Looking for inspiration to get active and take your fitness journey to the next level? Look no further than our stunning graphic of a bicycle race! This dynamic image captures the excitement and energy of competitive cycling, and serves as a powerful reminder of what you can achieve with hard work and dedication.
 

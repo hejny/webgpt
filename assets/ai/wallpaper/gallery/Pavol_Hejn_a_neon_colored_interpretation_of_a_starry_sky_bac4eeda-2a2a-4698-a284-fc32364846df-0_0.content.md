@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Starry Nights" - A Neon-Colored Interpretation of the Night Sky
+# "Neon Starry Nights"
 
 Welcome to "Starry Nights," a website dedicated to bringing the beauty of the night sky into your home. Our signature wallpaper features a neon-colored interpretation of a starry sky, perfect for adding a touch of whimsy and wonder to any room.
 

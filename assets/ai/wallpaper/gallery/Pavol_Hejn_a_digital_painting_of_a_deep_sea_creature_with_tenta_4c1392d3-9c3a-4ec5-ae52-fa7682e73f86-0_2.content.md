@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of the Deep Sea
+# Deep Sea Mysteries
 
 Our website is dedicated to uncovering the secrets and wonders of the deep sea. We provide a wealth of resources and information for anyone who is fascinated by the ocean and its inhabitants.
 

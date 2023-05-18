@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Beach-Inspired Backgrounds to Help You Relax and Recharge
+# Relaxing Beach Backgrounds.
 
 Welcome to our website, where you can find a collection of high-quality backgrounds that will transport you to the beach without leaving your workspace. Our team of designers has curated a selection of images that capture the beauty and serenity of the beach, providing you with a calming and inspiring backdrop for your device.
 

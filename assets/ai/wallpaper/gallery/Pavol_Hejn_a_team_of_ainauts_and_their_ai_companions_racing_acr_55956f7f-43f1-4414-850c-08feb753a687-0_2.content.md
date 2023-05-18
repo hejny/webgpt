@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Racing: Experience the Future of Racing
+# Future AI Racing
 
 Welcome to AI Racing, where the future of racing has arrived. Our team of AInauts and their AI companions are here to take you on a thrilling ride across the surface of a desert planet in high-tech buggies.
 

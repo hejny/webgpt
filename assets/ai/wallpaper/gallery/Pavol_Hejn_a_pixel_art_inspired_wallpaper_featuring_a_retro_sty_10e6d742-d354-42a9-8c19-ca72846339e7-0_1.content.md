@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Get a Blast from the Past with Our Retro-Style Robot Background
+# Retro Robot Background: Blast from the Past
 
 Step back in time with our pixel art-inspired robot background. This unique design features a limited color palette and pixelated lines, reminiscent of classic video games and computer graphics.
 

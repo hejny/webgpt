@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Futuristic Cityscape
+# Futuristic Cityscape Welcome
 
 Explore a world where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems. Our wallpaper depicts a glimpse of this futuristic cityscape, where towering skyscrapers, flying vehicles, and holographic displays dominate the landscape.
 

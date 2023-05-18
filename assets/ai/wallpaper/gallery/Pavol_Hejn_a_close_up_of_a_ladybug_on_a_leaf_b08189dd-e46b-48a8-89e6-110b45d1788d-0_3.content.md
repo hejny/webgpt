@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Beautiful Garden Backgrounds for Your Screen
+# Garden Screen Backgrounds.
 
 Welcome to our collection of stunning garden backgrounds! Our selection features high-quality images of various plants, flowers, and insects that will bring a touch of nature to your screen. 
 

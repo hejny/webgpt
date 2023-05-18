@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# A Close-Up of a Dragonfly on a Leaf: Nature's Intricate Beauty
+# Dragonfly on Leaf: Nature's Beauty
 
 Immerse yourself in the beauty of nature with our stunning photograph of a dragonfly perched on a leaf. This captivating image captures the intricate details and vibrant colors of these fascinating creatures in their natural habitat.
 

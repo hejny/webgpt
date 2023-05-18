@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Nature's Beauty: A Close-up of a Spiderweb with Dew Drops
+# Dewy Spiderweb Close-up
 
 Welcome to our website dedicated to showcasing the beauty of nature. Our wallpaper, featuring a close-up of a spiderweb with dew drops, is just one example of the stunning sights that can be found in the natural world.
 

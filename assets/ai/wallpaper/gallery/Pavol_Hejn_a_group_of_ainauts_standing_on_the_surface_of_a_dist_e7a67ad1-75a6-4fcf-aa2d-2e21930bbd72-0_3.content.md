@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Unknown: Discovering Alien Worlds
+# Discover Alien Worlds.
 
 Are you ready to embark on a journey to the unknown? Join our team of AInauts as we explore distant planets and uncover the mysteries of the universe.
 

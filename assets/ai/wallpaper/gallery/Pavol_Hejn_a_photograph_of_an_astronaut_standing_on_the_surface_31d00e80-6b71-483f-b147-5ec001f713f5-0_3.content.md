@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe: Discover the Wonders of Space
+# Discover the Wonders of Space
 
 Welcome to our website dedicated to space exploration and the mysteries of the universe. Our mission is to inspire and educate people about the beauty and complexity of space through stunning visuals and informative content.
 

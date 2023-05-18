@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Floral Delight - Bringing Nature to Your Walls
+# "Nature on Your Walls: Floral Delight"
 
 Welcome to Floral Delight, your one-stop destination for beautiful floral wallpapers that will transform any room into a natural wonderland. Our collection features stunning photographs of flowers in all their glory, captured in high resolution and printed on premium quality wallpaper.
 

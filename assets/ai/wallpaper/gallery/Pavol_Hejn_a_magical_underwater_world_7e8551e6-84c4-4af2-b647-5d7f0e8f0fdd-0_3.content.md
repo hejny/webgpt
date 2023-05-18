@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our Underwater Wonderland!
+# Underwater Wonderland Welcome!
 
 Dive into a magical world of vibrant colors and mesmerizing creatures with our stunning underwater wallpaper. Immerse yourself in the beauty of the deep blue sea and let your imagination run wild.
 

@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Universe with Our Realistic Galaxy Cluster Background
+# Realistic Galaxy Cluster Background for Universe Exploration.
 
 Our stunning galaxy cluster background offers a glimpse into the vastness and complexity of the universe. This realistic photograph captures the intricate details and vibrant colors of a distant galaxy cluster, inspiring a sense of wonder and curiosity about the mysteries of space.
 

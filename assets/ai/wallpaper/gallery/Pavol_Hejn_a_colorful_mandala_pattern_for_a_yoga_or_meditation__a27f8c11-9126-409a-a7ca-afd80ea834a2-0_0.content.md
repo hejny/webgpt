@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Yoga and Meditation with Mandala
+# Mandala Yoga and Meditation.
 
 Welcome to our website dedicated to the practice of yoga and meditation. We believe that a peaceful mind and a healthy body are essential for a fulfilling life. To help you achieve this, we offer a variety of classes, workshops, and retreats.
 

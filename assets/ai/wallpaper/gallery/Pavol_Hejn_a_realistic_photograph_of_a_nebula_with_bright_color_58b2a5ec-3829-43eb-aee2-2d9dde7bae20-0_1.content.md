@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Nebula Background: Explore the Wonders of the Cosmos
+# Cosmic Nebula Background Exploration.
 
 Welcome to our website, where you can download a stunning nebula background that will transport you to the far reaches of the universe. Our background features a realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of space.
 

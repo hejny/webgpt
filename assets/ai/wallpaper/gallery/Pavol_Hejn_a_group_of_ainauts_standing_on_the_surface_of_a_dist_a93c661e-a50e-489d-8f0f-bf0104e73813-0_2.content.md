@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: Discovering Alien Structures on Distant Planets
+# Discovering Alien Structures on Distant Planets.
 
 Welcome to our website dedicated to exploring the unknown. Our team of AInauts has been traveling across the universe, discovering new planets and uncovering mysteries that have never been seen before. Our latest adventure took us to a distant planet, where we stumbled upon a massive, alien structure looming in the distance. 
 

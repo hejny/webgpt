@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Glaciers Beyond Earth: Exploring the Wonders of Space
+# Glaciers in Space
 
 Welcome to our website, where we take you on an exciting journey through the universe to explore the unique beauty and characteristics of glaciers found on distant planets. Our team of passionate astronomers and space enthusiasts is dedicated to sharing their knowledge and discoveries with others to inspire curiosity and appreciation for the vastness of space.
 

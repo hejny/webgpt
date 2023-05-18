@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of Mars
+# Mars Mysteries
 
 Welcome to our website dedicated to exploring the mysteries of Mars! Our goal is to provide you with the latest news, research, and images from the Red Planet. As a tribute to the incredible advancements in space exploration, we have chosen a stunning wallpaper that captures the essence of the Martian landscape.
 

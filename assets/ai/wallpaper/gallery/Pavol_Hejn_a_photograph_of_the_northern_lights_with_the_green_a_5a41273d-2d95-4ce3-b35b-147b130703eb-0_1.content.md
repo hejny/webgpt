@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# The Wonder of the Northern Lights
+# Northern Lights' Wonder.
 
 Our website features a captivating background image of the Northern Lights, showcasing the green and purple hues swirling in the night sky. As you explore our site, you'll discover the science behind this natural phenomenon and the cultural significance it holds for people around the world.
 

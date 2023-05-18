@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Digital Artwork
+# Discover the Universe through Digital Art.
 
 Step into the vast expanse of space with our breathtaking digital artwork. Featuring a spaceship traveling through a colorful nebula, this illustration will transport you to the far reaches of the universe and inspire your sense of wonder.
 

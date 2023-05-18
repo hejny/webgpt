@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Wonders of Space with Our Digital Art
+# Explore Space Wonders with Digital Art
 
 Our digital art takes you on a journey through space, featuring a spaceship soaring through a colorful nebula. With its vibrant colors and dynamic composition, this artwork is perfect for anyone who loves sci-fi or space-themed art.
 

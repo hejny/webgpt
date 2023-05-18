@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Welcome to our Cycling and Fitness Blog!
+# Cycling & Fitness Blog Welcome!
 
 Here, we share tips and tricks for staying fit and healthy through cycling. To add some color to your day, we've chosen a vibrant graphic of a bicycle as our wallpaper.
 

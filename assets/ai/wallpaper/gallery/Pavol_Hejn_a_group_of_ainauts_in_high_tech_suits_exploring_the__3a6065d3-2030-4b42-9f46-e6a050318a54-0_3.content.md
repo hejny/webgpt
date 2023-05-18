@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Exploration of Desert Planets
+# AI Explores Desert Planets
 
 Welcome to our website dedicated to the exciting world of AI exploration on desert planets! Our team of AInauts, equipped with high-tech suits, venture into the unknown depths of these harsh environments to uncover new discoveries and push the boundaries of science.
 

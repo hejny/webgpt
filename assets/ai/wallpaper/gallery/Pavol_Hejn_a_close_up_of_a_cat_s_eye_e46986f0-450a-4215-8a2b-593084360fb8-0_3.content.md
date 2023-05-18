@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Fascinating World of Cats on Our Website
+# Explore Cats on Our Website.
 
 Welcome to our feline-focused website, where we offer a wealth of information on cat behavior, health, nutrition, and more. Whether you're a seasoned cat lover or new to the world of cats, we have something for everyone.
 

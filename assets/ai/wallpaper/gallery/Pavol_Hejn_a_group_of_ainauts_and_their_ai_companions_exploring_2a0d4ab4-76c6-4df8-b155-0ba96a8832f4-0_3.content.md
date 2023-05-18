@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AInauts Explore an Abandoned Spacecraft
+# AI Explores Abandoned Spacecraft.
 
 Welcome to our website featuring a stunning wallpaper of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space.
 

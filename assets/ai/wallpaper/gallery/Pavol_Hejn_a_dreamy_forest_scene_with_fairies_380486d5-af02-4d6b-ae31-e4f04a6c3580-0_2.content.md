@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Enchanting Forest: A Magical Gateway to Your Imagination
+# Magical Forest: Gateway to Imagination.
 
 Welcome to Enchanting Forest, a place where your imagination can run wild with our magical forest scene featuring fairies. Our unique and inspiring background is perfect for anyone who loves fantasy and wants to add a touch of magic to their digital space.
 

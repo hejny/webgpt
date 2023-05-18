@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Butterfly and Flower: A Natural Theme for Your Digital Devices
+# "Nature Theme: Butterflies and Flowers for Devices"
 
 Bring the beauty of nature to your digital world with our butterfly and flower theme. This stunning close-up image of a butterfly on a flower will create a serene and visually pleasing aesthetic for your desktop or phone screen.
 

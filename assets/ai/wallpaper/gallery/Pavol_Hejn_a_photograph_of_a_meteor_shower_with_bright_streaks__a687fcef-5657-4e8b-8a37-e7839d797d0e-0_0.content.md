@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Experience the Beauty of a Meteor Shower with our Background
+# Meteor Shower Background: Experience its Beauty.
 
 Transport yourself to a world beyond our own and witness the stunning beauty of a meteor shower with our captivating background. This breathtaking photograph captures the brilliance of streaking meteors lighting up the night sky.
 

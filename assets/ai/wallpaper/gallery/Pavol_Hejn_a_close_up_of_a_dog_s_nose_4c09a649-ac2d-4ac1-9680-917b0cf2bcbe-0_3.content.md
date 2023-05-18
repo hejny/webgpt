@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Find Your Perfect Pet Companion
+# Perfect Pet Companion Finder.
 
 Welcome to our website dedicated to helping you find your perfect pet companion! Our mission is to assist you in discovering the ideal furry friend that suits your lifestyle and needs.
 

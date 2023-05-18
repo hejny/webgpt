@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Beauty of Desert Landscapes
+# Discover Desert Beauty.
 
 Welcome to our website, where we invite you to explore the breathtaking beauty of desert landscapes. Our homepage features a stunning photograph of a desert landscape at sunset, with warm colors and long shadows that will transport you to another world.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: Discovering New Worlds and Alien Structures
+# Discovering New Worlds and Alien Structures
 
 Welcome to our website dedicated to exploring the unknown and discovering new worlds! Our mission is to share with you the wonders of space exploration, from the vastness of the universe to the smallest details of distant planets.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Discover the Mysteries of the Deep Sea
+# Mysteries of the Deep Sea
 
 Are you fascinated by the unknown depths of the ocean? Do you dream of exploring the uncharted territories of the underwater world? Then, this digital painting is perfect for you!
 

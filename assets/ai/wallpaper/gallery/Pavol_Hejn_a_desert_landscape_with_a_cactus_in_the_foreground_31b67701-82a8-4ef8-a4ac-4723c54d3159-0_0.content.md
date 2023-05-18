@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Create a Calming Workspace with a Desert Landscape
+# Calming Desert Workspace
 
 Looking to transform your workspace into a calming and peaceful environment? Our stunning desert landscape is the perfect solution. Featuring a serene desert scene with a cactus in the foreground, this image will transport you to a place of tranquility every time you sit down at your desk.
 

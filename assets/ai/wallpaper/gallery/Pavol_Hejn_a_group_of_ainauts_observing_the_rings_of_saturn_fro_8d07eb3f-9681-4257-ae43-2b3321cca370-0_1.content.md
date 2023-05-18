@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Space Station: Exploring the Wonders of the Universe
+# AI Space Station: Universe Exploration.
 
 Welcome to AI Space Station, where we bring you closer to the mysteries of the universe through cutting-edge technology and artificial intelligence. Our team of AInauts is dedicated to exploring the vast expanse of space, discovering new worlds, and pushing the boundaries of human knowledge.
 

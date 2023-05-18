@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# AI Spaceship: Exploring the Unknown
+# AI Spaceship Explores Unknown
 
 Welcome to our website dedicated to showcasing the incredible journey of a futuristic spaceship crewed entirely by AInauts. Our AI-powered vessel is on a mission of discovery, traveling through the vast expanse of space in search of new worlds and civilizations.
 

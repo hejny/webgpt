@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Flower Power: Adding a Touch of Nature to Your Desktop
+# "Nature on Desktop: Flower Power"
 
 Welcome to our website, where we offer beautiful wallpapers that bring the beauty of nature into your digital life. Our latest addition is a close-up of a flower that will add a touch of elegance and serenity to your desktop.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Your Workflow with Our Productivity Platform
+# Simplify Workflow with Our Platform.
 
 Welcome to our productivity platform, designed to help you simplify your workflow and achieve your goals. Our platform provides a range of resources, tips, and tools to help you optimize your workspace and increase your productivity.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Beachy Background for Your Website
+# Beachy Website Background.
 
 Looking to add a touch of the beach to your website? Our background featuring a close-up of a crab on the shore is the perfect addition to create a coastal vibe.
 

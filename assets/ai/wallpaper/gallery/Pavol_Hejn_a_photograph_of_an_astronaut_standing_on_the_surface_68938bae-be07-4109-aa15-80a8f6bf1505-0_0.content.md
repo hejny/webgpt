@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Universe on Our Space-Themed Website
+# "Discover Space on Our Website"
 
 Welcome to our space-themed website, where you can explore the wonders of the universe from the comfort of your own home. Our website features a captivating photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning visual representation of the beauty and mystery of space.
 

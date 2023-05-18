@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro Space Adventure: An Exciting Pixel Art Platformer
+# Retro Space Adventure: Pixel Platformer
 
 Welcome to Retro Space Adventure, an exciting platformer game that takes you on a journey through the galaxy! Our game features pixel art graphics that transport you back to the golden age of gaming.
 

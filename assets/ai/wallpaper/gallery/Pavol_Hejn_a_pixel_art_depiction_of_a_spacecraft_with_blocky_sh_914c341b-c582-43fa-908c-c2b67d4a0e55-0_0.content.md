@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Universe with Pixel Art on Space Adventures
+# Pixel Art Space Adventures: Discover the Universe
 
 Welcome to Space Adventures, your ultimate destination for space exploration and discovery. Our team of experts is dedicated to bringing you the latest news and updates on space missions, discoveries, and technology.
 

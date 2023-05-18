@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Beauty of Snowy Mountains
+# Snowy Mountain Beauty
 
 Welcome to our website where you can explore the stunning beauty of nature with our collection of snowy mountain wallpapers. Our carefully curated selection features high-quality images that will transport you to some of the most breathtaking locations on earth.
 

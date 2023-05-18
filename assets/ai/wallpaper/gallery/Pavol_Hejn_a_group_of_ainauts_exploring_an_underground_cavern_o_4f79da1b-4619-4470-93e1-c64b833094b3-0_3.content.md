@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey to the Depths of Our Imagination
+# Journeying into Our Imagination's Depths.
 
 Welcome to our website, where we invite you to embark on a journey of discovery and imagination. Our goal is to inspire you with stunning visuals that showcase the wonders of the universe, from the depths of the ocean to the far reaches of space.
 

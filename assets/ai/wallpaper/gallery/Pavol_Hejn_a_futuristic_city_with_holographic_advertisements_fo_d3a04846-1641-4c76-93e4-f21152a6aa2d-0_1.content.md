@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# Welcome to our Tech and Innovation Website!
+# Tech & Innovation Website Welcome!
 
 Experience the future with us as we explore the latest advancements in technology and innovation. Our website is your go-to source for all things futuristic.
 

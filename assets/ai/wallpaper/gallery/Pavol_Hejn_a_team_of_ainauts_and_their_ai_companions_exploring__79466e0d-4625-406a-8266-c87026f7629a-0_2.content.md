@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts - Exploring the Abandoned Alien Spacecraft
+# AInauts: Alien Craft Exploration.
 
 Welcome to AInauts, where we bring together the brightest minds in AI and robotics to explore the unknown. Our current mission takes us to a massive, abandoned alien spacecraft floating in the depths of space.
 

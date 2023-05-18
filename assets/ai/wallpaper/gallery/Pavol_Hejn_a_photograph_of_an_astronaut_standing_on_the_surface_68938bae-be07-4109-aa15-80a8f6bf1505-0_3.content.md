@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space-Themed Decor: Bring the Universe into Your Home
+# "Bring the Universe Home with Space Decor"
 
 Our space-themed decor is the perfect way to add a touch of cosmic beauty to your living space. Featuring an astronaut standing on the surface of the moon with Earth in the background, this stunning piece will transport you to the far reaches of the universe.
 

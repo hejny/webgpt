@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Explore the Mysteries of Distant Planets
+# Mystery of Distant Planets
 
 Welcome to our website dedicated to exploring the wonders of space! As you browse through our content, take a moment to admire the stunning photograph of a glacier on a distant planet that graces our homepage. 
 

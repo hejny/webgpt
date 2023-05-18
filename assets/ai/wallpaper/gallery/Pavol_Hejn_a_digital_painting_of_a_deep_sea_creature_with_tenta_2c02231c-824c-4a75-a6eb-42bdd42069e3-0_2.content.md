@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Enchanting World of Deep Sea Creatures
+# Enchanting Deep Sea Creatures
 
 Welcome to our website dedicated to exploring the enchanting world of deep sea creatures. Our homepage features a mesmerizing digital painting of a deep sea creature with tentacles and bioluminescent patterns, inviting you to embark on an adventure of discovery.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with Quantum-Inspired Geometric Design
+# Elevate Workspace with Quantum Geometric Design.
 
 Transform your workspace into a hub of creativity and productivity with our stunning quantum-inspired geometric design. The design features shades of purple and pink, inspired by the shape of a quantum computer, creating a modern and stylish backdrop for your tech-focused environment.
 

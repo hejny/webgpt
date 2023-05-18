@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Unknown: AInauts on a Frozen Planet
+# AInauts on Frozen Planet.
 
 Welcome to our website dedicated to the exploration of distant planets by AInauts, advanced robots equipped with artificial intelligence. Our latest wallpaper features a group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them.
 

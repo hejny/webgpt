@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Welcome to the Futuristic City of AInauts
+# Futuristic AInauts City
 
 Step into a world where advanced AI technology and human ingenuity combine to create a futuristic cityscape unlike any other. Our city is constantly monitored and maintained by AInauts, highly skilled individuals who use their expertise to ensure that everything runs smoothly.
 

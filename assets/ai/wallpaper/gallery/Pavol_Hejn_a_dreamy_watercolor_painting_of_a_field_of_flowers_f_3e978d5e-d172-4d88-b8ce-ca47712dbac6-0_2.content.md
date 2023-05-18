@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Dreamy Watercolor Flowers for Your Special Event
+# Watercolor Flowers for Your Event.
 
 Welcome to our event planning website, where we help you bring your dream event to life. Our specialty is creating a beautiful and memorable experience that reflects your unique style and vision. One of the ways we do this is by incorporating stunning visuals, like our dreamy watercolor flowers.
 

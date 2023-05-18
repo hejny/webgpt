@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Cybernetic Organism Design for Your Futuristic Workspace
+# Futuristic Workspace Cybernetic Organism Design.
 
 Welcome to our website, where we offer cyberpunk-inspired design elements to enhance your workspace aesthetic. Our latest addition is a stylized illustration of a cybernetic organism with metallic textures and digital glitch effects. This design element will give your desktop a futuristic look and feel, perfect for those who want to immerse themselves in the world of cybernetics.
 

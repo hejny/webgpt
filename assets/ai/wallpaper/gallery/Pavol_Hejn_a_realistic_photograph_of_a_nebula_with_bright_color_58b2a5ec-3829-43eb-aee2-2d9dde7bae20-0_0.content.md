@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Wonders - Discover the Beauty of the Universe
+# Cosmic Beauty - Exploring the Universe
 
 Welcome to Cosmic Wonders, where we invite you to explore the stunning beauty of the universe through a collection of breathtaking photographs. Our carefully curated selection showcases the majesty of the cosmos, from vibrant galaxies to shimmering star clusters.
 

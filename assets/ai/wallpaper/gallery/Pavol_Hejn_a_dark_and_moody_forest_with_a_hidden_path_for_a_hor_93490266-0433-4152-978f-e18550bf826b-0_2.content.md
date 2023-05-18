@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Cormorant Garamond-->
 
-# The Dark Forest: A Haven for Horror and Mystery Fans
+# Dark Forest: Haven for Horror & Mystery Fans.
 
 Welcome to The Dark Forest, a website dedicated to all things spooky, eerie, and mysterious. Our wallpaper sets the tone for what you can expect from our content: a journey through the unknown, where secrets lurk behind every tree and shadow.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Galactic Volcanoes: Exploring the Fiery Depths of the Universe
+# Exploring Galactic Volcanoes.
 
 Welcome to Galactic Volcanoes, your ultimate guide to exploring the thrilling and dangerous world of volcanic planets. Our stunning wallpaper features a photograph of a lava flow on one such planet, with its fiery red and orange hues capturing the excitement and peril of these otherworldly landscapes.
 

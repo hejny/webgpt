@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Nature Takes Over" - A Collection of Cityscapes Overtaken by Nature
+# "Nature Overtakes Cityscapes: A Collection"
 
 Welcome to "Nature Takes Over," a stunning collection of cityscape wallpapers that showcase the power of nature as it slowly reclaims urban spaces. Our curated selection of high-quality images captures the beauty and awe-inspiring majesty of nature as it engulfs some of the world's most iconic cities.
 

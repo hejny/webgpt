@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Exploring the Depths of the Galaxy
+# AInauts: Galactic Exploration.
 
 Welcome to our space exploration website! Our team of AInauts and their AI companions are on a mission to discover the mysteries of the universe. As you browse through our content, you'll find stunning visuals that showcase the beauty and complexity of space.
 

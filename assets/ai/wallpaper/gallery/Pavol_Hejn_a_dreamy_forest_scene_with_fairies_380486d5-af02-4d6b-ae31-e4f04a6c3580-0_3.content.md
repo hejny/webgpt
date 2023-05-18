@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Fairy Forest - A Magical Realm of Whimsy
+# Fairy Forest: A Whimsical Realm.
 
 Enter a world of whimsy and enchantment with Fairy Forest. Our playful fairies and vibrant forest scene create the perfect backdrop for any room.
 

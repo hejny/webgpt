@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Surrealist-Inspired Design for Endless Creativity
+# Surrealist Design for Endless Creativity.
 
 Welcome to The Workshop, where creativity knows no bounds. Our surrealist-inspired design is the perfect addition to your creative projects. Featuring floating objects such as gears, cogs, and computer parts against a background of muted colors, this design will transport you to a world of endless possibilities.
 

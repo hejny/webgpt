@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# "Exploring the Depths of a Distant Planet"
+# "Deep Exploration of Distant Planet"
 
 Welcome to our website, where we take you on a journey through the uncharted depths of a distant planet. Our team of AInauts and their AI companions have embarked on an incredible adventure to explore a massive, underground cave system.
 

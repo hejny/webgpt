@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Desktop with a Modern Spacecraft Design
+# Modern spacecraft desktop design.
 
 Upgrade your desktop aesthetics with our csg-style rendering of a spacecraft in orbit around a planet. The sleek and modern design features clean lines and sharp angles, perfect for adding a touch of elegance to your computer screen.
 

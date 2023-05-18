@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Birdwatcher's Delight: A Close-Up of a Bird in Flight
+# Bird in Flight: A Delight for Birdwatchers
 
 Welcome to Birdwatcher's Delight, your one-stop-shop for all things birding! Our website is dedicated to providing you with the best information, resources, and products to help you make the most out of your birdwatching experience.
 

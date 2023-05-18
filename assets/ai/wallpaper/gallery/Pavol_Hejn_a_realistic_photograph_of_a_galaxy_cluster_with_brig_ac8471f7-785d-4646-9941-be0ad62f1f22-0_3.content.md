@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Mysteries of Space with Our Engaging Content
+# Discover Space Mysteries with Our Content.
 
 Welcome to our website, where we invite you to embark on a journey through the mysteries of space. Our realistic photograph of a galaxy cluster serves as a captivating backdrop for our site, providing a glimpse into the vastness of the universe that we aim to explore.
 

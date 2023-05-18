@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Night Sky Background: Add Cosmic Magic to Your Digital Space
+# Cosmic Night Sky Background for Digital Space.
 
 Our Night Sky Background is the perfect choice for anyone who wants to add some cosmic magic to their digital space. Featuring a stunning photograph of a meteor shower with bright streaks of light crossing the night sky, this background captures the beauty and wonder of the universe.
 

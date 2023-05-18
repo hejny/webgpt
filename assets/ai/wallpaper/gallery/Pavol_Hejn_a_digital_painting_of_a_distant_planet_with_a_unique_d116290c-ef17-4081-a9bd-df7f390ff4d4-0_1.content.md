@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Universe with Our Planet-Inspired Background
+# Explore Universe with Planet Background
 
 Welcome to our website, where we offer a unique experience of exploring space through our planet-inspired background. Our digital painting of a distant planet captures the imagination and ignites curiosity about the vast universe beyond our world.
 

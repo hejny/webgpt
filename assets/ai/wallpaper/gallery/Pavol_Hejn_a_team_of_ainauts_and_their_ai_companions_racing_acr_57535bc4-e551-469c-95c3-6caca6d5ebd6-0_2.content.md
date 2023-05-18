@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Racing Adventure on a Desert Planet
+# AI Racing on Desert Planet
 
 Are you ready for an adrenaline-fueled adventure? Join our team of AInauts and their AI companions as they race across the surface of a desert planet in high-tech buggies. 
 

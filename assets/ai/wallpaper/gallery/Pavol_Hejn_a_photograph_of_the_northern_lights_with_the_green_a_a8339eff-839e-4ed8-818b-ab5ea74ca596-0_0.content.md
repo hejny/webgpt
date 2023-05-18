@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# The Northern Lights: A Natural Wonder
+# Northern Lights: A Wonder.
 
 Immerse yourself in the breathtaking beauty of the Aurora Borealis with our stunning desktop or phone background. This photograph captures the essence of the green and purple hues swirling in the night sky, transporting you to a world of natural wonder.
 

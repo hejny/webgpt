@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Orbitron-->
 
-# AI Experiments on the Edge of a Black Hole
+# AI Experiments near Black Hole
 
 Welcome to our website showcasing an exciting wallpaper featuring a team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.
 

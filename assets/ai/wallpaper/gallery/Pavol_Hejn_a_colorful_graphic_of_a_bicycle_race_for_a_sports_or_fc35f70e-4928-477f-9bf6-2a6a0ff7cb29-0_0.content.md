@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Welcome to the World of Cycling
+# Cycling World Welcome
 
 Are you passionate about cycling? Do you love watching bicycle races and cheering for your favorite athletes? Then you've come to the right place! Our website is dedicated to all things cycling, from news and events to gear and training tips.
 

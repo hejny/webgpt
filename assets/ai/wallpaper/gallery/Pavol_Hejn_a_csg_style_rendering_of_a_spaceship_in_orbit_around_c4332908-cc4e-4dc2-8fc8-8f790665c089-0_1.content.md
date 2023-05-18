@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Space Desktop Background
+# Futuristic Space Wallpaper.
 
 Our futuristic space desktop background will transport you to another world. Featuring a csg-style rendering of a spaceship in orbit around a planet, this design boasts sharp angles and clean lines that highlight its modern and sleek design. Whether you're a tech enthusiast or a sci-fi fan, this background is sure to impress.
 

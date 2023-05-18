@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Space Odyssey: A Futuristic Adventure
+# Futuristic Space Adventure.
 
 Welcome to Space Odyssey, a thrilling journey through the depths of space. Our website is designed to give you an immersive experience that will take you on a ride through the universe.
 

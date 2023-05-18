@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Wonders of Space with Our Nebula Photograph
+# Discover Space Wonders with Nebula Photo
 
 Immerse yourself in the mesmerizing beauty of space with our stunning nebula photograph. This captivating image showcases intricate details and vibrant colors of a distant galaxy, bringing the wonders of the universe into your home.
 

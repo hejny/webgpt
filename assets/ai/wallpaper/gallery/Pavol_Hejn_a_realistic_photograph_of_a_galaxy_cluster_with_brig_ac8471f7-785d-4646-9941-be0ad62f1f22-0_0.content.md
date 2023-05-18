@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Beauty of the Universe with Our Galaxy Cluster Image
+# Explore the Universe's Beauty with Our Galaxy Cluster Image.
 
 Our galaxy cluster image captures the breathtaking beauty and vastness of the cosmos. Whether you're an astronomy enthusiast or simply appreciate stunning imagery, this photograph is sure to inspire wonder and awe.
 

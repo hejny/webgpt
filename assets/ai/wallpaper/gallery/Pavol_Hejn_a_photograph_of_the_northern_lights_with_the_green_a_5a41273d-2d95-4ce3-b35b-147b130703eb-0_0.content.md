@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Unveiling the Enchantment of the Northern Lights
+# Enchanting Northern Lights
 
 Experience the enchanting beauty of the Aurora Borealis with our captivating website background. The green and purple hues dancing across the night sky are sure to leave you spellbound.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Exo 2-->
 
-# AI Exploration Mission on a Frozen Planet
+# AI on Frozen Planet Mission
 
 Welcome to our website showcasing the thrilling adventures of a group of AInauts exploring a frozen wasteland on a distant planet. Our team of highly skilled scientists and engineers are equipped with state-of-the-art suits, designed to withstand extreme temperatures and harsh environments.
 

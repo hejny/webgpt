@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro Space Station Pixel Art for Your Desktop
+# Retro Pixel Art Space Station for Desktop.
 
 Step back in time with this pixel art depiction of a retro space station. The limited color palette and blocky shapes give it a nostalgic feel, while still maintaining a futuristic edge.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Future of Life Creation
+# Future Life Creation Welcome
 
 At our laboratory, we are pushing the boundaries of what is possible with AI and advanced technology to create new forms of life. Our team of AInauts is dedicated to exploring the possibilities of synthetic biology and designing living organisms that can help solve some of the world's biggest challenges.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Stargaze - Discover the Wonders of the Night Sky
+# Stargaze: Discover Night Sky Wonders.
 
 Welcome to Stargaze, your portal to the mysteries and beauty of the universe. Our website is dedicated to showcasing stunning photographs and informative articles that capture the breathtaking sights of the night sky.
 

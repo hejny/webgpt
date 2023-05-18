@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Future of Cityscapes
+# Future Cityscapes
 
 Imagine a world where artificial intelligence and humans work together to create sustainable and awe-inspiring structures. Our wallpaper depicts a futuristic cityscape where AInauts and AI collaborate to build massive infrastructure that is both functional and beautiful.
 

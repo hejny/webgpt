@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Universe: Navigate an Asteroid Field
+# Explore the Universe: Asteroid Navigation.
 
 Journey through space with our stunning digital painting of a spaceship navigating an asteroid field. Our artwork captures the beauty and danger of traversing through the universe, inviting you to embark on your own adventure.
 

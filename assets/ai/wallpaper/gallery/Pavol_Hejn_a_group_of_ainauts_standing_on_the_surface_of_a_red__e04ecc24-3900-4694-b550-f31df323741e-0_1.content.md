@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: AInauts on a Red Planet
+# AInauts on the Red Planet
 
 Welcome to our website, where we take you on a journey to explore the unknown. Our latest adventure takes us to a red planet in a distant galaxy, where a group of AInauts are standing on its surface.
 

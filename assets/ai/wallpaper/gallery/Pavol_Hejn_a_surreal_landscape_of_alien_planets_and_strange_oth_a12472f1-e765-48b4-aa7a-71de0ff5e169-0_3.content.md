@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Exo 2-->
 
-# Alien Planets and Strange Creatures
+# Extraterrestrial Life.
 
 Welcome to our website featuring a surreal landscape of alien planets and strange, otherworldly creatures. Our collection of wallpapers will transport you to a world beyond your imagination.
 

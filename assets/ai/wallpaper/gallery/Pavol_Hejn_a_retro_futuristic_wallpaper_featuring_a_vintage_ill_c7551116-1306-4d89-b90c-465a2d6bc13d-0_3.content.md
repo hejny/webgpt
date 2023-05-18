@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Stay Ahead with Our Latest Tech Articles
+# "Tech Articles to Stay Ahead"
 
 Welcome to our tech blog, where we explore the latest innovations in technology and how they are shaping our world. Our mission is to provide you with insightful articles that help you stay up-to-date with the fast-paced world of tech.
 

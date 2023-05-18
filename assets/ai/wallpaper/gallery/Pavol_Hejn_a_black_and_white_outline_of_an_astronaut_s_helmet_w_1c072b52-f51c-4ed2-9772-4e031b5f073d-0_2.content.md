@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Embark on a Cosmic Adventure with Our Space Odyssey Theme
+# Cosmic Adventure: Space Odyssey Theme
 
 Take a journey through the cosmos with our "Space Odyssey" theme! Featuring a captivating black and white outline of an astronaut's helmet, this theme will transport you to the far reaches of outer space.
 

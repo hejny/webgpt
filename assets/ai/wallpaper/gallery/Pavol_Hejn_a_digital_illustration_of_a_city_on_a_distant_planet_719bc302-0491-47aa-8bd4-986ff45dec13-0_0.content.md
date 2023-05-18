@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Futuristic World
+# Futuristic Welcome
 
 Experience the awe-inspiring view of a city on a distant planet with our digital illustration wallpaper. Our wallpaper features towering buildings and advanced technology that will transport you to a futuristic world.
 

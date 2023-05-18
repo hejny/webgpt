@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature's Beauty: Inspiring Your Connection with the Outdoors
+# Connecting with Nature's Beauty.
 
 Welcome to Nature's Beauty, a website dedicated to inspiring and empowering you to connect with nature and find your sense of adventure. Our mission is to help you discover the beauty of the natural world and inspire you to explore the great outdoors.
 

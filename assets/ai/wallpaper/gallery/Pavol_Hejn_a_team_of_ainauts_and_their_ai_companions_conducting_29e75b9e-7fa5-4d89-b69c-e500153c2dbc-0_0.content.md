@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Mysteries of the Universe
+# Universe's Mysteries Explored.
 
 Welcome to our website dedicated to exploring the mysteries of the universe! Our team of AInauts and their AI companions are on a mission to unravel the secrets of the cosmos. As you browse through our site, you'll find a wealth of information about the latest discoveries in astronomy, astrophysics, and cosmology.
 

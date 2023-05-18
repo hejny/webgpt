@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey Through the Cosmos
+# Journey through the Cosmos
 
 Welcome to our website dedicated to the exploration of the cosmos! Our team of AInauts is constantly pushing the boundaries of what we know about the universe, and we're excited to share our discoveries with you.
 

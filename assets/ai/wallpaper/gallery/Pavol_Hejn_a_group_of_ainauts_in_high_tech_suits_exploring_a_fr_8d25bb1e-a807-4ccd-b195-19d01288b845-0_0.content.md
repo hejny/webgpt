@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Join AInauts in the Pursuit of Discovery
+# Discover with AInauts.
 
 Embark on a thrilling adventure with our team of AInauts. Our latest wallpaper captures the excitement of exploration as they navigate a frozen wasteland on a distant planet, surrounded by towering ice formations.
 

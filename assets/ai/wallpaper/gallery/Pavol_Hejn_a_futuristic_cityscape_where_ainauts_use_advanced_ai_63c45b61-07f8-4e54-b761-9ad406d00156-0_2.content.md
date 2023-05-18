@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Future Cityscape!
+# Future Cityscape Welcome!
 
 This is a futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems. The city is designed to be sustainable, efficient, and technologically advanced.
 

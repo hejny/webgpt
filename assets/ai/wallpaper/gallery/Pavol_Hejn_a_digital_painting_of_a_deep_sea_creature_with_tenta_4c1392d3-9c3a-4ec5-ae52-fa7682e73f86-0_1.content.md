@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Dive into the Fascinating World of Deep Sea Creatures
+# Explore Deep Sea Creatures.
 
 Welcome to our website, where you can dive into the captivating world of deep sea creatures. Our stunning digital painting serves as a backdrop, featuring a mysterious creature with tentacles and bioluminescent patterns that evoke a sense of wonder and curiosity.
 

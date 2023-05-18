@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# "Journey to the Depths: Exploring an Alien Cave System with AI Companions"
+# "Exploring Alien Caves with AI Companions"
 
 Welcome to our website, where we take you on a thrilling adventure to a distant planet. Join our team of AInauts and their trusty AI companions as they delve into the depths of a massive underground cave system.
 

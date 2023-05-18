@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Free Desktop Background: Explore the Night Sky with Milky Way Galaxy
+# "Free Milky Way Desktop Background"
 
 Our free desktop background featuring the Milky Way galaxy is a stunning way to bring the beauty of the night sky to your computer. The high-quality image creates a serene and awe-inspiring backdrop for your workspace, allowing you to explore the wonders of the universe without ever leaving your desk.
 

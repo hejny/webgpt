@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Cosmos: A Journey Through Space and Time
+# Cosmic Journey: Through Space and Time.
 
 Welcome to our website, where we take you on a journey through the vast expanse of space and time. Our mission is to explore the mysteries of the universe and share our findings with curious minds like yours.
 

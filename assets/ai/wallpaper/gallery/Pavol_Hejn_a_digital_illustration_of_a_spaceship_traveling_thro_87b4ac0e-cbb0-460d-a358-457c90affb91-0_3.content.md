@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the Cosmos with Space Adventures
+# Cosmic Adventures
 
 Welcome to Space Adventures, your ultimate guide to exploring the vast expanse of the cosmos. Our website is dedicated to providing you with all the information you need to plan your next space adventure.
 

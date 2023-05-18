@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Spooky Spider Background: Add Some Creepiness to Your Desktop
+# "Spooky Spider Desktop Background"
 
 Welcome to our website, where we offer a unique collection of backgrounds that will transform your desktop into a work of art. Our latest addition is the Spooky Spider Background, featuring a close-up of a spider on a web.
 

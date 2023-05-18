@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Enchanting Depths of the Ocean
+# Oceanic Enchantment
 
 Welcome to our website where we take you on an exciting journey through the mystical world beneath the waves. Our wallpaper showcases a magical underwater world, and we invite you to dive deeper into this realm with us.
 

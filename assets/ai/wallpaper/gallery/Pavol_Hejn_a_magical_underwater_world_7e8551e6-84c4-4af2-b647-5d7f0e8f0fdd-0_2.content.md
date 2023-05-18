@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our Magical Underwater World!
+# Magical Underwater World Welcome!
 
 Dive into a mesmerizing world of vibrant colors and breathtaking creatures. Our stunning underwater wallpaper will transport you to an enchanting realm that's waiting to be explored.
 

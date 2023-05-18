@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Add Nostalgia to Your Tech Space with Retro Robot Design
+# Add Retro Robots to Your Tech Space for Nostalgia.
 
 Welcome to our website, where you can find a unique retro robot design that adds personality and nostalgia to your tech space. Our pixel art-inspired design features a retro-style robot with a limited color palette and pixelated lines.
 

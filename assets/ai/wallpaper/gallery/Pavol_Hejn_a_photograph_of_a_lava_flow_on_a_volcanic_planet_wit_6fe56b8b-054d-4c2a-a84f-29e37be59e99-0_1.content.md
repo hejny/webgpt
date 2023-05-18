@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Wonders of Volcanic Planets
+# Wonders of Volcanic Planets
 
 Welcome to our guide for exploring the most fascinating and dangerous places in the galaxy - volcanic planets. Our website is your ultimate resource for discovering new worlds, experiencing thrilling adventures, and creating unforgettable memories.
 

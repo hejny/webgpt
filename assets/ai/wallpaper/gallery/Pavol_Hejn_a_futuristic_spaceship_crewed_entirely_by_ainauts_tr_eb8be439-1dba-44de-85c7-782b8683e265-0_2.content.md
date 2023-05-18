@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Discover the Future with Our AI-Driven Space Exploration Mission
+# AI-Powered Space Exploration: Discover the Future
 
 Welcome to our website dedicated to the exciting world of space exploration! Our mission is to bring you the latest news, updates, and insights into the future of space travel. We are passionate about exploring the vast expanse of space and discovering new worlds, and we want to share that passion with you.
 

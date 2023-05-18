@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space Launch Desktop Background
+# Space Launch Wallpaper
 
 Take your desktop to new heights with our stunning space launch desktop background. This realistic photograph captures the excitement and wonder of a rocket launch, with fiery trails and smoke visible in the sky.
 

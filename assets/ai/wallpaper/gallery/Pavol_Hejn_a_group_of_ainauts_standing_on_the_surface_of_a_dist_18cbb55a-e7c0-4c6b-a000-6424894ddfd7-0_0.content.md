@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Wonders of Space with Our AI-Powered Background
+# Discover Space Wonders with AI Background.
 
 Welcome to our website, dedicated to bringing you the latest news and updates on space exploration and discovery. Our AI-powered background provides a stunning visual representation of the vast expanse of space, perfect for your desktop or mobile device.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:IBM Plex Sans-->
 
-# Welcome to the Future Cityscape
+# Future Cityscape Welcome
 
 Imagine a city where advanced technology meets urban living. Our futuristic cityscape wallpaper showcases the perfect blend of innovation and functionality.
 

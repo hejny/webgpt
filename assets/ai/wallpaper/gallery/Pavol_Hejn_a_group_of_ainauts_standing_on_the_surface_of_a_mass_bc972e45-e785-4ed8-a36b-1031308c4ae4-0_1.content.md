@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Unknown: A Journey to the Depths of Space
+# Journey to the Depths of Space
 
 Welcome to our website dedicated to space exploration and discovery! Our mission is to bring you the latest news, updates, and insights from the world of astronomy and astrophysics. As passionate enthusiasts ourselves, we believe that the mysteries of the universe are worth exploring and understanding.
 

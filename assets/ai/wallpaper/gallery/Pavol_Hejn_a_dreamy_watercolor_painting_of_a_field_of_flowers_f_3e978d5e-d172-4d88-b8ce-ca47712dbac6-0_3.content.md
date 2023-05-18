@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Wedding and Event Planning Services
+# Event Planning Services.
 
 Welcome to our wedding and event planning website! We specialize in creating unforgettable experiences for your special day. Our team of experienced planners will work with you every step of the way to ensure that your vision becomes a reality.
 

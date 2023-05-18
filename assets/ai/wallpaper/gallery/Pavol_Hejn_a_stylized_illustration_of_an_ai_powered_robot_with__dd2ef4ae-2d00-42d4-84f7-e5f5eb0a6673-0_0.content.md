@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI-Powered Robots for Your Business
+# AI Robots for Business.
 
 Welcome to our website, where we offer cutting-edge AI-powered robots to enhance your business operations. Our robots are designed with sleek and modern graphics, just like the stylized illustration you see on this page.
 

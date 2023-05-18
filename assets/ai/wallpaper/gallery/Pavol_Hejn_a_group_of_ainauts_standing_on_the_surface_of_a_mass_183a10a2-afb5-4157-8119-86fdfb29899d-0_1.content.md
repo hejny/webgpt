@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Exploration: Discovering New Worlds
+# AI Explores New Worlds.
 
 Welcome to our website dedicated to the exploration of new worlds using artificial intelligence. Our team of AInauts is constantly pushing the boundaries of what's possible, discovering new planets and unlocking the secrets of the universe.
 

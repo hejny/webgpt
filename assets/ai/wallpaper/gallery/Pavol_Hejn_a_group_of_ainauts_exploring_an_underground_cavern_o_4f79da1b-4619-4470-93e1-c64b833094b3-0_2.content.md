@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Universe with Our AI-Powered Virtual Tours
+# Explore the Universe with AI Virtual Tours.
 
 Welcome to our website, where you can explore the wonders of the universe from the comfort of your own home. Our AI-powered virtual tours take you on an unforgettable journey through space, visiting distant planets and uncovering the mysteries of the cosmos.
 

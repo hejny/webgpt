@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring the Future of Technology
+# Future Technology Exploration.
 
 Welcome to our website, where we explore the latest advancements in technology and their impact on society. Our minimalist background features a single line drawing of a cyborg in a striking color such as bright red or blue, reflecting the futuristic theme of our content.
 

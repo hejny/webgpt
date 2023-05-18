@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Majestic Beauty of the Mountains
+# Discover Mountain Majesty.
 
 Welcome to our website where you can immerse yourself in the breathtaking beauty of nature. Our latest wallpaper features a stunning mountain range set against a clear blue sky, inviting you to escape into the tranquility of the great outdoors.
 

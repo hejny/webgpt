@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Experimentation at the Edge of a Black Hole
+# AI at Black Hole's Edge
 
 Welcome to our website where we showcase the incredible work of our team of AInauts and their AI companions. Our latest experiment has taken us to the edge of a black hole, where time and space warp around us.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Aurora Backgrounds: Free High-Quality Desktop and Mobile Wallpapers
+# Free Aurora Wallpapers for Desktop and Mobile.
 
 Welcome to our website, where you can download stunning Aurora backgrounds for your desktop or mobile device. Our collection features high-quality photographs of the Northern Lights, capturing the mesmerizing green and purple hues swirling in the night sky.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Exploring the Frozen Wasteland of a Distant Planet
+# AInauts: Frozen Planet Exploration
 
 Welcome to our website, where we showcase the incredible adventures of our team of AInauts. Our latest expedition took us to a distant planet, where we explored a frozen wasteland unlike anything we've ever seen before.
 

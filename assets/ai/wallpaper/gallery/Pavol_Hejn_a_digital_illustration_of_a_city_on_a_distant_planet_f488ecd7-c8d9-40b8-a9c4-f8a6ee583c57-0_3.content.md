@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Futuristic City on a Distant Planet
+# Futuristic City on Distant Planet
 
 Welcome to our website where you can immerse yourself in the stunning digital illustration of a futuristic city on a distant planet. The towering buildings and advanced technology depicted in this wallpaper will transport you to a world beyond your imagination.
 

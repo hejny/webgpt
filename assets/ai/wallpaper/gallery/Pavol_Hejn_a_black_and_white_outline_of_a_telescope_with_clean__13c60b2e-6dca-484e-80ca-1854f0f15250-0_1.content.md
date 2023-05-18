@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Night Sky with Our Telescopes
+# Night Sky Exploration with Telescopes.
 
 Our telescopes make stargazing a breeze, and our stunning wallpaper featuring a black and white outline of a telescope perfectly captures our passion for astronomy.
 

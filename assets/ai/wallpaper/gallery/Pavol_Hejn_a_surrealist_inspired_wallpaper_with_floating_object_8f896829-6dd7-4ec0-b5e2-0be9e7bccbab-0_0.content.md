@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Surrealist Decor for Your Dreamlike Space
+# Dreamlike Surrealist Decor
 
 Add a touch of surrealism to your living space with our collection of decor inspired by the surrealist art movement. Featuring floating objects such as gears, cogs, and computer parts against a background of muted colors, our pieces are perfect for sparking creativity and imagination.
 

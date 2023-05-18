@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Nature-Inspired Desktop Wallpapers
+# "Nature Desktop Wallpapers"
 
 Welcome to our website dedicated to bringing the beauty of nature to your digital life! Our collection of wallpapers and backgrounds feature stunning photographs of flora and fauna from around the world. 
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Explore the Wonders of the Universe
+# Universe's Wonders Explored.
 
 Welcome to our website, where we invite you to embark on a journey through the vast and mysterious universe. To enhance your experience, we have chosen a stunning wallpaper that captures the beauty of a glacier on a distant planet.
 

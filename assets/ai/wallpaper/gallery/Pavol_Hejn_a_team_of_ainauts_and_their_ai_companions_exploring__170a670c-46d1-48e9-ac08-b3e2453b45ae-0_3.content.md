@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# The AI Space Station Exploration
+# AI Space Station Exploration
 
 Welcome to our website dedicated to the exploration of a massive, ancient space station orbiting a distant planet. Our team of AInauts and their AI companions have embarked on an exciting mission to uncover the secrets of this mysterious structure.
 

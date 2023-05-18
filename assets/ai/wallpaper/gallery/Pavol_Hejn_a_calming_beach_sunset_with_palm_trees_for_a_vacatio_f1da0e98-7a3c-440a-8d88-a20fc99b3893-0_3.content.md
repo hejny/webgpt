@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Beachfront Vacation Rentals in Paradise
+# Beachfront Rentals in Paradise.
 
 Welcome to our luxurious beachfront vacation rentals, where you can experience the ultimate tropical paradise. Our stunning properties are located in the heart of the Caribbean, offering breathtaking views of the crystal-clear waters and sandy beaches. 
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# AI Space Exploration: Discovering the Unknown
+# AI Explores Space
 
 Welcome to our website dedicated to the futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery. Our mission is to bring you the latest updates and insights into the world of artificial intelligence and space exploration.
 

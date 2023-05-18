@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Add a Modern Touch with a Quantum-Inspired Geometric Design
+# Modernize with Quantum-Inspired Geometry.
 
 Transform your living space with our stunning geometric design, inspired by the shape of a quantum computer. The intricate pattern in shades of purple and pink creates a mesmerizing effect that will add a modern touch to any room.
 

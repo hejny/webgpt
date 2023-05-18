@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring New Frontiers: AInauts on a Desert Planet
+# AI Explorers on Desert Planet.
 
 Welcome to our website, where we showcase the latest in AI technology and innovation. Our wallpaper features a group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. This image represents the spirit of exploration and discovery that drives us forward.
 

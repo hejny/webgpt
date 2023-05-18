@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Immerse Yourself in the Cosmos with Our Space Backgrounds
+# Cosmic Space Backgrounds for Immersive Experience.
 
 Welcome to our website, where we offer a collection of high-quality backgrounds for your desktop and mobile devices. Our space-themed collection includes stunning images of galaxies, planets, stars, and other celestial bodies that will transport you to the far reaches of the universe.
 

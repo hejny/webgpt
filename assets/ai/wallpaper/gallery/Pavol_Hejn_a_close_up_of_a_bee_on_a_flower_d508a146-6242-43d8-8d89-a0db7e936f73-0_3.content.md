@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Create a Buzzing Backyard: Tips for Bee-Friendly Gardening
+# Bee-Friendly Gardening Tips for a Buzzing Backyard.
 
 Welcome to our guide on bee-friendly gardening! Our website is dedicated to providing you with the best information and resources to help you create a thriving garden that supports local pollinators.
 

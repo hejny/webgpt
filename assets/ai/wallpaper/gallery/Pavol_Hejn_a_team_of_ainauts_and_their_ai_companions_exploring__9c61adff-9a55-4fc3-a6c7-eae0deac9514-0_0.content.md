@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# The Space Station Explorer - Discover the Secrets of the Ancient Space Station
+# Ancient Space Station Revealed by Space Station Explorer
 
 Welcome to The Space Station Explorer, your ultimate guide to exploring the mysteries of the massive, ancient space station orbiting a distant planet. Our team of AInauts and their AI companions are dedicated to uncovering the secrets of this incredible structure, and we invite you to join us on our journey.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of the Universe with AI
+# Unveiling Universe's Mysteries with AI.
 
 Welcome to our website where we showcase the incredible work of our team of AInauts and their AI companions. Our mission is to push the boundaries of scientific knowledge by conducting groundbreaking experiments on the edge of a black hole.
 

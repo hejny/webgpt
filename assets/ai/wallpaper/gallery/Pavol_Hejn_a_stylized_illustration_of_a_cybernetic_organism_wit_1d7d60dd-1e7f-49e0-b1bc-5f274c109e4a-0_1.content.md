@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future with Our Cybernetic Organism Illustration
+# Future Exploration with Cybernetic Organism Illustration.
 
 Welcome to our website, where we showcase the latest in technology and design. Our cybernetic organism illustration is a stunning representation of the future, featuring metallic textures and digital glitch effects that capture the essence of our brand.
 

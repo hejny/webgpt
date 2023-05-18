@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# "The Last Frontier" - An AI Adventure
+# "AI Explores the Last Frontier"
 
 Welcome to "The Last Frontier", an immersive experience that takes you on a journey through the depths of space. Join a group of AInauts and their AI companions as they explore a massive, abandoned research facility in search of answers.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Exploration: Journey into the Unknown
+# AI Exploration: Into the Unknown
 
 Welcome to our website dedicated to the exploration of distant planets through the power of artificial intelligence. Our team of AInauts is constantly pushing the boundaries of what we know about the universe, and we are excited to share our latest discovery with you.
 

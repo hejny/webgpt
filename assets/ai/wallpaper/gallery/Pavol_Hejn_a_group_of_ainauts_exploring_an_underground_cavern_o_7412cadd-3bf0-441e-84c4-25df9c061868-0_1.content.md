@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the World of AInauts
+# AInauts' World
 
 Experience the thrill of exploration with our team of AInauts as they venture into the depths of a distant planet. Our latest wallpaper captures the essence of their adventure, with glowing fungi and strange creatures all around them in an underground cavern.
 

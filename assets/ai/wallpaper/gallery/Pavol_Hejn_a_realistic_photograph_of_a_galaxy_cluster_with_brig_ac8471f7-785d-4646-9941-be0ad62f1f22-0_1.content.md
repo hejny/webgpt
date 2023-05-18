@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Our Captivating Galaxy Cluster Background: A Glimpse into the Vastness of the Universe
+# Captivating Galaxy Cluster Background: A Glimpse of the Universe's Vastness.
 
 Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our image is sure to transport you to the depths of space.
 

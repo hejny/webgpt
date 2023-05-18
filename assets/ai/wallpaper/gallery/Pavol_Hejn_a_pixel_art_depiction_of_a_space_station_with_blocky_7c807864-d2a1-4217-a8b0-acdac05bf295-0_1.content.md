@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Futuristic Space Station Artwork
+# Retro-Futuristic Space Art.
 
 Get transported to a world of retro-futuristic space exploration with our space station artwork. The pixelated design features blocky shapes and limited colors, reminiscent of classic video games and science fiction.
 

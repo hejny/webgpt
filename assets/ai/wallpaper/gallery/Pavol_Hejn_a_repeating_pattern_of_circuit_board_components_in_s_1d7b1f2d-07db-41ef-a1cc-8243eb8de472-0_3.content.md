@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Latest in Tech with TechGeek
+# Explore TechGeek's Latest Tech.
 
 Welcome to TechGeek, your ultimate source for the latest news, reviews, and insights from the world of technology. Our website features a unique wallpaper that reflects our passion for all things tech.
 

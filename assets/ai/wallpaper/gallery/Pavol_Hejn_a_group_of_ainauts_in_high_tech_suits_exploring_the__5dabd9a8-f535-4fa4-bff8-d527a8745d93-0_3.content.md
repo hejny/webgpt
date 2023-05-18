@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey to the Desert Planet
+# Journey to a Desert Planet.
 
 Welcome to our website dedicated to all things related to space exploration and adventure! Our goal is to provide you with the latest news, updates, and stories about the wonders of the universe. 
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of a Distant Planet
+# Mystery of Distant Planet
 
 Welcome to our website dedicated to uncovering the secrets of an ancient civilization on a distant planet. Our team of AInauts has been tirelessly exploring the ruins of this long-lost culture, and we invite you to join us on our journey.
 

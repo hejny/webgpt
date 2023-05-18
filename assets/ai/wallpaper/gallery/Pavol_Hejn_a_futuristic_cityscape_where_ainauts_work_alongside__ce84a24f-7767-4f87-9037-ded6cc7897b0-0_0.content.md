@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the World of AInauts and AI!
+# AInauts and AI World Welcome
 
 Step into a world where cutting-edge technology meets futuristic design. Our cityscape wallpaper showcases the collaborative efforts of AInauts and AI, working together to push the boundaries of science and technology.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modernize Your Space with a Quantum-Inspired Design
+# Quantum-Inspired Design for Modern Spaces.
 
 Looking for a way to modernize your home or office? Our stunning quantum-inspired design is the perfect solution. The geometric pattern, featuring shades of purple and pink, adds a touch of sophistication to any space.
 

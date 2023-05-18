@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the World of AInauts!
+# AInauts Welcome!
 
 ## Explore the Mysteries of a Distant Planet
 

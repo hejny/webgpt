@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discovering the Power of AI Buzzwords
+# The Power of AI Buzzwords
 
 Welcome to our website dedicated to exploring the power of artificial intelligence buzzwords. Our sleek design features a minimalist background with various AI-related terms in different fonts and colors, setting the stage for the content you'll find here.
 

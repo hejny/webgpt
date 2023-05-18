@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Beautiful Floral Backgrounds for Your Device
+# Floral Device Backgrounds.
 
 Looking to add a touch of nature to your phone or computer? Our collection of stunning floral backgrounds is just what you need. Each image is carefully curated to provide a high-quality background that complements your device's interface and brings a sense of calm and beauty to your screen.
 

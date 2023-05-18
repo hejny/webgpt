@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Journey Through the Cosmos with Our "Space Odyssey" Theme
+# "Space Odyssey" Journey Through the Cosmos
 
 Experience the beauty and mystery of space with our "Space Odyssey" theme. Featuring a captivating black and white outline of an astronaut's helmet, the intricate details reflect the surrounding environment, transporting you to another world.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# The AInauts Lab: Where AI Meets Life
+# AInauts Lab: AI Meets Life
 
 Welcome to the AInauts Lab, a cutting-edge facility where artificial intelligence and advanced technology converge to create new forms of life. Our team of expert scientists, engineers, and researchers are dedicated to pushing the boundaries of what is possible with AI.
 

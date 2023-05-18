@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Discover the Mysteries of a Distant Planet
+# Mysteries of a Distant Planet
 
 Welcome to our website, where you can explore the breathtaking beauty of a distant planet through a stunning digital painting. Our wallpaper showcases the unique atmosphere and unusual terrain of this otherworldly destination.
 

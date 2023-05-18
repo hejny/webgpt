@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey to Discover New Worlds
+# Discovering New Worlds: An Exploration.
 
 Welcome to our website, where we take you on a journey through the uncharted territories of the universe. Our team of explorers, known as AInauts, are constantly on the lookout for new planets and galaxies to explore. We bring you stunning visuals from our expeditions, like this wallpaper of our AInauts exploring an underground cavern on a distant planet.
 

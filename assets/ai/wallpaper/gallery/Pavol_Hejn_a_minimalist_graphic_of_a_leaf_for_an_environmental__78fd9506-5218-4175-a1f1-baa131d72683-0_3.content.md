@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Inter-->
 
-# Sustainable Living Tips and Resources
+# Sustainable Living Tips & Resources
 
 Welcome to our website dedicated to providing you with practical tips and resources for living a more sustainable lifestyle. Our minimalist graphic of a leaf represents our commitment to the environment and our belief that small changes can make a big impact.
 

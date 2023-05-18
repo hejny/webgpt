@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Alien Planet Wallpaper for Your Gaming Setup
+# "Alien Gaming Wallpaper for Futuristic Setup"
 
 Welcome to our website, where we provide you with the best gaming backgrounds for your setup. Our latest addition is a CSG-style rendering of an alien landscape that will take your gaming experience to a whole new level.
 

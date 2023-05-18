@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Otherworldly Planets and Creatures
+# Discover Alien Worlds and Beings.
 
 Welcome to our website, where you can discover a surreal landscape of alien planets and strange, otherworldly creatures. Our mesmerizing background will transport you to a world beyond your wildest imagination.
 

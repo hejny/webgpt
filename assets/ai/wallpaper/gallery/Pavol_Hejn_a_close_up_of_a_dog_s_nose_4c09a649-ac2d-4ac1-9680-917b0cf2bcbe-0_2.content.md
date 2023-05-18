@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Join the Dog Lovers Hub Community and Celebrate Your Love for Dogs
+# Celebrate your love for dogs with Dog Lovers Hub Community!
 
 Dog Lovers Hub is a vibrant community of dog lovers who share stories, tips, and resources about everything related to our furry friends. Our goal is to spread canine cuteness and bring joy to the lives of dog owners and enthusiasts around the world.
 

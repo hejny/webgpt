@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Explorers: Venturing into the Unknown
+# AI Explorers: Into the Unknown
 
 Welcome to our website, where we take you on an exciting journey through the depths of space. Join us as we follow a team of AInauts and their AI companions on their mission to explore a massive, underground cave system on a distant planet.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# TechScape: Exploring the Future of Technology
+# TechScape: Future Technology Exploration.
 
 Welcome to TechScape, your go-to source for all things tech-related. Our mission is to provide you with the latest news, trends, and insights in the world of technology. Our homepage features a stunning neon cityscape with futuristic skyscrapers that perfectly captures our vision of the future.
 

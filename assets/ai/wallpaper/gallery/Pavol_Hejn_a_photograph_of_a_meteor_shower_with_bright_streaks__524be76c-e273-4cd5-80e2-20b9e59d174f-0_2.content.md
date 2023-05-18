@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Experience a Meteor Shower on Your Screen
+# Watch a Meteor Shower Online
 
 Bring the beauty and wonder of a meteor shower to your digital devices with our stunning background image. This captivating photograph captures the essence of shooting stars streaking across the night sky, creating a sense of awe and inspiration.
 

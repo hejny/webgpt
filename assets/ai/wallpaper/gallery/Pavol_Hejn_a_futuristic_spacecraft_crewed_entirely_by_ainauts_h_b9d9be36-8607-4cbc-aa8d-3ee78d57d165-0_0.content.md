@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the World of AInauts
+# AInauts' World
 
 Are you ready to embark on a journey through space like no other? Imagine being part of a crew that is entirely made up of artificial intelligence, hurtling through the vast expanse of the universe at incredible speeds. That's what our futuristic spacecraft offers!
 

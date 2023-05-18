@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Exploring the Uncharted Planets
+# Uncharted Planet Exploration.
 
 Welcome to our website dedicated to exploring the uncharted planets of our galaxy. Our team of AInauts is on a mission to discover new worlds and uncover their mysteries.
 

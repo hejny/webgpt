@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Discover the Universe: A Community for Space Enthusiasts
+# Universe Community: For Space Enthusiasts
 
 Welcome to our website dedicated to exploring the wonders of the universe. Our homepage features a stunning digital painting of an astronaut standing on the edge of a crater, gazing out at the vast expanse of space. This image sets the tone for what you can expect from our site - a community of space enthusiasts coming together to share their passion and learn more about the latest developments in space exploration and astronomy.
 

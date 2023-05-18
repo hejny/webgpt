@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Beach Vibes: Bring the Serenity of the Shore to Your Home
+# Beach Vibes at Home.
 
 Transform your living space into a tranquil oasis with our stunning beach-inspired wallpaper. Our collection features breathtaking images that capture the essence of the seaside, including this close-up of a crab on the beach. 
 

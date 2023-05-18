@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Unveiling the Mysteries of Space Stations
+# Exploring Space Stations
 
 Experience the thrill of space exploration with our stunning pixel art depiction of a space station. This captivating image captures the essence of what makes space stations so fascinating - the potential for discovery and innovation.
 

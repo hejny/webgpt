@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Experience the Beauty of a Meteor Shower on Your Screen
+# Watch Meteor Shower on Screen
 
 Immerse yourself in the captivating beauty of a meteor shower with our stunning background image. This photograph captures the night sky as bright streaks of light cross the darkness, creating a mesmerizing display of celestial wonder.
 

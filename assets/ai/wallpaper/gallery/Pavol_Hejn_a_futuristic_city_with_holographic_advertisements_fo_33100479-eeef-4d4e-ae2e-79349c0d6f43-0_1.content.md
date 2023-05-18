@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# Welcome to TechX - Where Innovation Meets the Future
+# TechX: Where Innovation Meets Future.
 
 ## About Us
 

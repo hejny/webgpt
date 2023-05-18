@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Future of City Building
+# Future City Building
 
 Experience a breathtaking view of a futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure. This wallpaper embodies the future of urban development where technology and sustainability are at the forefront.
 

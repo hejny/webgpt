@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Unknown: A Journey Through the Depths of Space
+# Journey Through Space's Depths.
 
 Welcome to our website dedicated to exploring the mysteries of space! Our team of AInauts and their AI companions are on a mission to uncover the secrets of the universe, starting with a massive, abandoned alien spacecraft floating in the depths of space.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Experiments on a Distant Moon
+# AI on Distant Moon.
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon. The wallpaper showcases the team's efforts in exploring the vast universe and pushing the boundaries of artificial intelligence.
 

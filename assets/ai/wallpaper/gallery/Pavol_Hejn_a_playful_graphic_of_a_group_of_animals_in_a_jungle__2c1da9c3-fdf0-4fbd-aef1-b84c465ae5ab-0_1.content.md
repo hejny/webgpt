@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Jungle Safari - Explore the Wild with Fun!
+# Jungle Safari: Wild Fun!
 
 Welcome to Jungle Safari, a website designed to educate and entertain children about the wonders of nature. Our playful graphic of a group of animals in a jungle will transport your child to a world of adventure and learning.
 

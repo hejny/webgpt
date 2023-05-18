@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space-Themed Desktop Background for Your Inner Astronaut
+# Space Desktop Background for Astronauts
 
 Welcome to our website, where we offer a range of high-quality desktop backgrounds to enhance your computer experience. Our latest addition is a stunning space-themed photograph that captures the excitement and wonder of space exploration.
 

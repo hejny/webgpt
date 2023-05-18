@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Welcome to the Future of Cityscapes
+# Future Cityscapes
 
 Experience a breathtaking view of a futuristic cityscape where AInauts and AI work hand in hand to create massive, sustainable structures and infrastructure. Our wallpaper captures the essence of a world where technology and nature coexist in perfect harmony.
 
