@@ -16,7 +16,9 @@ export function SkinStyle() {
                 --main-background: ${skin.mainBackground};
                 --footer-background: ${skin.footerBackground};
 
-                ${skin.palette.map((color, i) => `--palette-${i}: ${color.toHex()};`).join('\n')}
+                ${[...skin.palette, ...skin.palette, ...skin.palette, ...skin.palette /* <- 💩 */]
+                    .map((color, i) => `--palette-${i}: ${color.toHex()};`)
+                    .join('\n')}
       
             }
         `}</style>
@@ -25,6 +27,6 @@ export function SkinStyle() {
 
 /**
  * TODO: !!!! Use ONLY --palette vars
- * TODO: !!! Make repeat in palette to guarantee at least 10 colors
+ * TODO: !! Make repeat in palette to guarantee at least 10 colors
  * TODO: Allow partial ISkin
  */
