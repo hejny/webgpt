@@ -114,6 +114,16 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                     continue;
                 }
 
+                if (title.trim().length > 'Futuristic Cityscape Wallpaper'.length) {
+                    //                    'Tvořím něco z ničeho nic'
+                    //                    'Futuristic Cityscape Wallpaper'
+                    contentThread.push(content);
+                    const fixPropmt = `Heading should be short and concise, fix it.`;
+                    contentThread.push(fixPropmt);
+                    content = await askGpt(fixPropmt, true);
+                    continue;
+                }
+
                 if (title?.toLowerCase().includes('wallpaper')) {
                     contentThread.push(content);
                     const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, fix it.`;
