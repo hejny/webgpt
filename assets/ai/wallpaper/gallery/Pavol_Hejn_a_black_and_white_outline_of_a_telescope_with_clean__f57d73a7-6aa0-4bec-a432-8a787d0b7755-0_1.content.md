@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Telescope-Inspired Universe Background
+# Telescope Universe Background
 
 Welcome to our website, where we offer a stunning telescope-inspired background that will take you on a journey through the cosmos. Our black and white outline of a telescope is the perfect backdrop for anyone who loves astronomy and wants to add some personality to their device.
 

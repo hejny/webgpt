@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Satellites & Space Tech Exploration
+# Space Tech & Satellites
 
 Our captivating black and white outline of a satellite is more than just a background. It's an invitation to explore the fascinating world of space technology and discover the incredible advancements that have shaped our modern world.
 
