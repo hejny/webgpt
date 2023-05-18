@@ -61,6 +61,14 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
                 rm(contentPath);
                 console.info(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
                 console.info(`🗑 Removing file because of missing title `);
+                return;
+            }
+
+            if (title?.toLowerCase().includes('wallpaper')) {
+                rm(contentPath);
+                console.info(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
+                console.info(`🗑 Removing file because it contains wallpaper in title\n"${title}"`);
+                return;
             }
         },
     });
