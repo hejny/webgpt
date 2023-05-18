@@ -1,4 +1,4 @@
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Discover Space Wonders on Our Site
 
