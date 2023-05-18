@@ -113,7 +113,7 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
                 if (titleShort.trim().length > MAX_CHARS_IN_TITLE) {
                     console.warn(
                         chalk.bgYellow(` ⚠️  Title is too long after the summarization`) +
-                            chalk.yellow(`title:${title}\n` + `titleShort:${titleShort}`),
+                            chalk.yellow(`\n title:${title}\n titleShort:${titleShort}`),
                     );
                 }
             }
