@@ -7,6 +7,7 @@ import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, rm } from 'fs/promises';
 import { join, relative } from 'path';
+import { FONTS } from '../../config';
 import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
@@ -49,27 +50,48 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
         isShuffled: false,
         parallelWorksCount: parallel,
         async makeWork({ metadataPath, contentPath }) {
-            // TODO: !! Require at least some structure
-            // TODO: !! Cleanup font and if cannnot be recognized then remove i
-            // TODO: !! Multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
+            console.info(chalk.gray(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`));
 
             const content = await readFile(contentPath, 'utf-8');
             const title = extractTitleFromMarkdown(content);
 
-            // TODO: [💵] DRY this checks 
+            // TODO: [💵] DRY this checks
             if (title === null) {
                 rm(contentPath);
-                console.info(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
-                console.info(`🗑 Removing file because of missing title `);
+                console.info(chalk.red(`🗑 Removing file because of missing title `));
                 return;
             }
 
             if (title?.toLowerCase().includes('wallpaper')) {
                 rm(contentPath);
-                console.info(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
-                console.info(`🗑 Removing file because it contains wallpaper in title\n"${title}"`);
+
+                console.info(chalk.red(`🗑 Removing file because it contains "wallpaper" in title\n"${title}"`));
                 return;
             }
+
+            if (
+                !(
+                    /\#\#/.test(content) ||
+                    /\`\`\`/.test(content) ||
+                    /\*\*/.test(content) ||
+                    /\_/.test(content) ||
+                    /^-\s+/m.test(content)
+                )
+            ) {
+                rm(contentPath);
+                console.info(chalk.red(`🗑 Removing file because it has no structure`));
+                return;
+            }
+
+            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
+            if (!font || !FONTS.includes(font)) {
+                // TODO: Try to fix the font
+                rm(contentPath);
+                console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
+                return;
+            }
+
+            // TODO: !!! Shorten the text
         },
     });
 
@@ -81,3 +103,7 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
 
     console.info(`[ Done 🧾  Postprocessing wallpapers texts ]`);
 }
+
+/**
+ * TODO: Do we want multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
+ */
