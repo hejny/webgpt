@@ -17,12 +17,13 @@
         margin: 0;
         padding: 0;
 
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250vh;
     }
     iframe {
-        min-width: 50%;
-        height: 90vh;
+        width: 100%;
+        height: 100%;
         border: none;
         pointer-events: none;
     }
