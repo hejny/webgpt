@@ -88,10 +88,40 @@ export function computeImagePalette(colorStats: Omit<IImageColorStats, 'version'
 
     // TODO: [3]
 
+    // 4️⃣ Sort the palette so primary and secondary color are first and then the rest is sorted as
+    //    every color is the most different previous one
+    palette.sort((colorA, colorB) => {
+        if (colorA === primaryColor) {
+            return -1;
+        }
+        if (colorB === primaryColor) {
+            return 1;
+        }
+        if (colorA === secondaryColor) {
+            return -1;
+        }
+        if (colorB === secondaryColor) {
+            return 1;
+        }
+
+        const distanceA = palette
+
+            .filter((color) => color !== colorA)
+            .map((color) => colorDistanceSquared(colorA, color))
+            .reduce((sum, distance) => sum + distance, 0);
+        const distanceB = palette
+            .filter((color) => color !== colorB)
+            .map((color) => colorDistanceSquared(colorB, color))
+            .reduce((sum, distance) => sum + distance, 0);
+
+        return distanceA - distanceB;
+    });
+
     return palette;
 }
 
 /**
+ * TODO: Match also the last with the first color and if not matching then add last color to the palette at the end as a "separator"
  * TODO: [🧠] Should be white/black text color hardcoded as second color in palette? (NOW IT IS as secondaryColor)
  * TODO: !!! Is here correct manipulation with square of distance?
  * TODO: [3] Check that there is some miminal number of colors in palette
