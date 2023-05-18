@@ -89,7 +89,7 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
 
             let font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             if (font && !FONTS.includes(font)) {
-                const existingFont = FONTS.find((existingFont) => font.includes(existingFont));
+                const existingFont = FONTS.find((existingFont) => font!.includes(existingFont));
 
                 if (existingFont) {
                     content = content.replace(font, existingFont);
