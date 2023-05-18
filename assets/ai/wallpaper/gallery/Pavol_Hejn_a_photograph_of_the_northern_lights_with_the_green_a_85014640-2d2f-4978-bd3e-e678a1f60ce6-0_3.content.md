@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Natural Website Backgrounds
+# Natural Website Backgrounds
 
 Our website features a stunning background showcasing the Northern Lights in all their glory. The green and purple hues swirling in the night sky will transport you to a world of wonder and enchantment as you explore our articles and resources about the natural world.
 

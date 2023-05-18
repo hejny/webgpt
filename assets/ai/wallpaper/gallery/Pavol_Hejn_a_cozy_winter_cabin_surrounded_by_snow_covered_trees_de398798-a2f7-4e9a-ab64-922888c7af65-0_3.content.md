@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cozy Winter Retreat with Snowy Cabin Background
+# Snowy Cabin Winter Retreat
 
 Welcome to our home decor and lifestyle blog, where we provide inspiration and tips to create a warm and inviting living space. Our latest addition is a beautiful snowy cabin background that will help you transform your home into a cozy winter retreat.
 

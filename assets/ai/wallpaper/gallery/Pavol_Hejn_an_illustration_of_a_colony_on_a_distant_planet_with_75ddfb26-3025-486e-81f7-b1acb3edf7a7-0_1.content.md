@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Future Planetary Colony Illustration
+# Future Colony Artwork
 
 Welcome to our website, where we explore the possibilities of future living through a stunning illustration of a colony on a distant planet. This artwork is more than just a background; it's a representation of what could be possible in the years to come.
 

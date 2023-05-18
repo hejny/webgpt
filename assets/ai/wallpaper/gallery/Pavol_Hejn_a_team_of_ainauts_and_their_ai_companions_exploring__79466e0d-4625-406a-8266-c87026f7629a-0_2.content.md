@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Abandoned Alien Spacecraft Exploration: Ainautes
+# Exploring Abandoned Alien Spacecraft: Ainautes
 
 Welcome to Ainautes, a team of space explorers and their AI companions on a mission to unravel the secrets of the universe. Our latest adventure takes us deep into the unknown as we explore a massive, abandoned alien spacecraft floating in the depths of space.
 

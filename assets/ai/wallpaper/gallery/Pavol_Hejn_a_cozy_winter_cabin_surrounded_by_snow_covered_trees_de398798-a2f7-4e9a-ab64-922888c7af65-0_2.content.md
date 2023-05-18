@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Winter Cabin Decor: Cozy Retreat
+# Cozy Winter Cabin Decor
 
 Welcome to Winter Cabin Retreat, your ultimate guide to creating a cozy and inviting home decor for the winter season. Our website offers a wide range of tips and ideas to help you transform your living space into a warm and welcoming retreat that you'll love coming home to.
 

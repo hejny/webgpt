@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Retro Robot Background for Projects
+# Retro Robot Project Background
 
 Looking for a unique and eye-catching background for your next creative project? Look no further than our Retro Robot wallpaper! This pixel art-inspired design features a charming retro-style robot, complete with limited color palette and pixelated lines.
 

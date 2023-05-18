@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Join Our Robot on a Futuristic Adventure
+# Join Our Robot on a Futuristic Trip
 
 Our website is excited to showcase an incredible illustration of a robotic explorer that will transport you to a world of boundless imagination. This artwork boasts intricate details and metallic textures that perfectly capture the essence of cutting-edge technology and exploration.
 

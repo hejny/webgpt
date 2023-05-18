@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Neural Graphics Update for Tech Site
+# Neural Graphics Tech Update
 
 Welcome to our tech website! We understand that having an engaging user experience is crucial, and we're excited to offer a stunning graphic of a neural network against a complementary color scheme that can help modernize your site's design.
 

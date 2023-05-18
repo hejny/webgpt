@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Stay Updated on Robotics, Drones, and Smart Devices
+# Robotics, Drones, and Smart Devices Updates
 
 Welcome to our website, where we provide the latest news and insights on cutting-edge technology. Our focus is on exploring the advancements in robotics, drones, and smart devices that are transforming our world.
 

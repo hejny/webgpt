@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Enigmatic Desert: Surreal Journey
+# Mysterious Desert: Unreal Trip
 
 Welcome to our website, where you can embark on a surreal journey through a desert landscape that defies time and space. Our stunning wallpaper is just the beginning of the adventure.
 

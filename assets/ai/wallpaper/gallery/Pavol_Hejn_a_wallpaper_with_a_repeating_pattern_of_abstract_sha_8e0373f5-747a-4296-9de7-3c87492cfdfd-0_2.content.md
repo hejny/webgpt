@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Monochrome Workspace Background
+# Mono Workspace Background
 
 Welcome to our website where you can find the perfect monochromatic abstract background for your workspace. Our latest addition is a repeating pattern of abstract shapes inspired by the Mandelbrot set, in a monochromatic color scheme.
 

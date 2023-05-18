@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Ainautes: Pushing Science and Technology Boundaries
+# Ainautes: Advancing Tech Boundaries
 
 Explore our futuristic cityscape where Ainautes work hand in hand with AI to drive innovation and discovery. Our team of experts is dedicated to pushing the boundaries of science and technology, with a focus on creating a better future for all.
 

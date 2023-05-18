@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Website for Space Exploration
+# Cosmic Space Website
 
 Looking for a website that inspires your sense of adventure and curiosity about space? Look no further than our space-inspired website, featuring a captivating black and white outline of an astronaut's helmet with intricate details that showcase the reflection of the surrounding environment.
 

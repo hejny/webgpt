@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Future Exploration: Ainautes and AI Companions Experimenting
+# Exploring Ainautes and AI Companions in the Future
 
 Welcome to our website dedicated to exploring the frontiers of science and technology. Our team of Ainautes, accompanied by their trusty AI companions, are conducting groundbreaking experiments in a zero-gravity laboratory. 
 

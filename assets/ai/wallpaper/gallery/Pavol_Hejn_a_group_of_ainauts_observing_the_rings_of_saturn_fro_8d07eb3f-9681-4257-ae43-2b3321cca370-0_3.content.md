@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Space Wonders with High-Tech Background
+# Explore Space Wonders with High-Tech Background
 
 Welcome to our website, where we bring the beauty and mystery of space to your digital devices. Our high-tech background features a group of Ainautes observing the rings of Saturn from a state-of-the-art space station, surrounded by stars and galaxies. With this stunning wallpaper, you can immerse yourself in the wonders of the universe and feel inspired every time you open your device.
 

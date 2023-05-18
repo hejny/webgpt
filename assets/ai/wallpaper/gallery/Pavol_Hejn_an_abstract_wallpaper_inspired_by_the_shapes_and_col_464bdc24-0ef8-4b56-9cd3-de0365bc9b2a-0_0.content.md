@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discover Quantum Physics Beauty with Abstract Background
+# Abstract Backgrounds Enhance Quantum Physics Beauty
 
 Our website features an abstract background that captures the intricate shapes and vibrant colors found in quantum physics. The design is a perfect blend of science and art, showcasing the beauty of this fascinating field in a visually stunning way.
 

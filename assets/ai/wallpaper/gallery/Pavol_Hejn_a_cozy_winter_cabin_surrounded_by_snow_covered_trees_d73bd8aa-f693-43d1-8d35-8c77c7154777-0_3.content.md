@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cozy Winter Cabin: Home Decor Blog
+# Winter Cabin Decor Blog
 
 Welcome to Cozy Winter Cabin, your go-to source for all things home decor and lifestyle. Our blog is dedicated to helping you create a warm and inviting space that you'll love coming home to. Whether you're looking for inspiration for your next DIY project or tips on how to decorate for the holidays, we've got you covered.
 

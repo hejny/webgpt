@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Space with Galaxy Background
+# Galactic Space Exploration
 
 Welcome to our website, where you can explore the mysteries of the universe through our stunning galaxy-themed wallpaper. Our background features a breathtaking photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky. This image is sure to transport you to another world and inspire your imagination.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Improve productivity with a timer
+# Boost productivity with a timer
 
 Welcome to our website where you can find a unique countdown timer background that will help you stay focused and boost your productivity. Our digital clock wallpaper is perfect for anyone who needs a visual reminder of their goals, deadlines, or tasks.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Wildlife's Beauty: Exploring Nature's Palette
+# Exploring Nature's Palette: Wildlife Beauty
 
 Welcome to Nature's Palette, a blog dedicated to exploring the wonders of nature and wildlife. Our website is a platform for nature enthusiasts to come together and share their experiences, stories, and knowledge about the natural world.
 

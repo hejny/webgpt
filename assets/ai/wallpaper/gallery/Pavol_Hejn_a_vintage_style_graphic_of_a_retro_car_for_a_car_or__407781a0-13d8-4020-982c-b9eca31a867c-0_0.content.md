@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Enjoy Road Tripping with Our Website
+# Road Trip with Us!
 
 Welcome to our travel website, where we celebrate the freedom and adventure of hitting the open road. Our vintage-style graphic of a retro car sets the tone for the nostalgic journey you are about to embark on.
 

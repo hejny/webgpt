@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Night Sky with Desert Background
+# Night Sky over Desert
 
 Transform your computer screen into a stunning night sky with our high-quality desert landscape background. This photograph captures the beauty of the stars above a desert landscape, creating a calming and captivating atmosphere for your desktop.
 

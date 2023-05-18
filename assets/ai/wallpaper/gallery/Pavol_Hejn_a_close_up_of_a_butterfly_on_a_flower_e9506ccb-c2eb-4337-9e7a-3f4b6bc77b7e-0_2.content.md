@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Close-Ups: Butterflies and Flowers in Nature
+# Nature's Close-Ups: Butterflies & Flowers
 
 Welcome to our website dedicated to celebrating the beauty of nature. Our stunning butterfly and flower close-up is a perfect representation of the delicate balance and wonder that can be found in the natural world. This captivating image is free to download and use as your background, providing a daily reminder of the beauty that surrounds us.
 

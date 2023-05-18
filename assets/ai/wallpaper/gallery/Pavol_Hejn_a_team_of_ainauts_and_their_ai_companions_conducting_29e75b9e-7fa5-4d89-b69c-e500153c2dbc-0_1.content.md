@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Journey Through the Mysteries of the Universe
+# Universe's Mysteries Journey
 
 Welcome to our website dedicated to exploring the wonders of the universe. Our mission is to bring you the latest discoveries, theories, and advancements in the field of astrophysics. 
 

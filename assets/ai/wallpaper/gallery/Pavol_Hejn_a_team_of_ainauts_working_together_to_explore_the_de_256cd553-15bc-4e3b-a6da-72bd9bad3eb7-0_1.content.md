@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Black Hole Depths with Ainautes
+# Black Hole Exploration with Ainautes
 
 Welcome to our website dedicated to showcasing the incredible journey of our team of Ainautes as they explore the depths of a black hole. Equipped with state-of-the-art futuristic technology, our team is pushing the boundaries of space exploration and discovery.
 

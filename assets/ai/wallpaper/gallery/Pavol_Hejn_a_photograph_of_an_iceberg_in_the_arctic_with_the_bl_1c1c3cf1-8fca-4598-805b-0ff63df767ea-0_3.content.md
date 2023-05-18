@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Arctic Wonders Desktop Backgrounds
+# Arctic Desktop Backgrounds
 
 Welcome to our website, where you can discover the beauty of the Arctic through our carefully curated desktop background. Our latest addition is a stunning photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky. This background will transport you to the icy wilderness of the North Pole every time you turn on your computer.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Colony on Distant Planet
+# Distant Planet Colony
 
 ![Illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture.](image-url)
 

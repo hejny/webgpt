@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Decoding an Ancient Civilization's Enigmas
+# Deciphering Ancient Enigmas
 
 Welcome to our website dedicated to uncovering the secrets of a long-lost civilization on a distant planet. Our team of Ainautes has been tirelessly exploring the ruins, uncovering incredible artifacts and unraveling the mysteries of this ancient society.
 

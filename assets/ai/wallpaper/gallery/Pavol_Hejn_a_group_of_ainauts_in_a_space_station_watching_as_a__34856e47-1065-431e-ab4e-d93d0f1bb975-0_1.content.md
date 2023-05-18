@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Space Odyssey: Exploring the Final Frontier
+# Exploring Space's Final Frontier
 
 Welcome to Space Odyssey, your one-stop destination for all things space-related. Our website is dedicated to providing you with the latest news, updates, and information about the universe beyond our planet. 
 

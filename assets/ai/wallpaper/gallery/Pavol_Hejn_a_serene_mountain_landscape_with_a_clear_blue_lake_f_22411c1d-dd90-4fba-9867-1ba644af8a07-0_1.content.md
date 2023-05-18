@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Soothing Environments for Mindful Living
+# Soothing Environments for Mindfulness
 
 Welcome to our website dedicated to promoting mindful living through the use of serene backgrounds. Our carefully curated collection of backgrounds is designed to create a peaceful environment in your home or office, helping you to practice mindfulness and reduce stress.
 

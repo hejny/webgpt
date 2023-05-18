@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Experience Northern Lights Magic
+# Northern Lights Experience
 
 Immerse yourself in the stunning beauty of the Aurora Borealis with our captivating website background. This mesmerizing photograph captures the green and purple hues of the Northern Lights swirling in the night sky, transporting you to a world of natural wonder.
 

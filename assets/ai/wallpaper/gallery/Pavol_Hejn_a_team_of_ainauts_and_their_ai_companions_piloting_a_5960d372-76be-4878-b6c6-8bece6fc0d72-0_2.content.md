@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Galactic Exploration: Journeying Through Space
+# Galactic Space Journey
 
 Welcome to Galactic Odyssey, your ultimate destination for all things space exploration. Our mission is to bring you the latest news and discoveries from the far reaches of the universe.
 

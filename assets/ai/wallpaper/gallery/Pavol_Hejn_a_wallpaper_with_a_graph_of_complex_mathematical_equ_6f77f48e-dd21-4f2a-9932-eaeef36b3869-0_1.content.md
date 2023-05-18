@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Productive Workspace Math Equations
+# Efficient Workspace Math
 
 Welcome to our website, where we offer a unique collection of mathematical equations designed to enhance your workspace. Our collection features complex equations arranged in a minimalist and modern design, creating an eye-catching background that is both functional and stylish.
 

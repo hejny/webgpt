@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discovering Distant Planet Mysteries in Space
+# Exploring Distant Planet Mysteries
 
 Welcome to our website dedicated to exploring the vastness of space and uncovering the secrets of distant planets. Our mission is to bring you closer to the wonders of the universe and inspire you to embark on your own interstellar journey.
 

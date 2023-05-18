@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Shorter title: "Desert Oasis for Workspace Relaxation"
+# Workspace Oasis in the Desert
 
 Welcome to Desert Oasis, a website dedicated to providing you with a calming and serene workspace background. Our featured wallpaper is a stunning desert landscape with a cactus in the foreground, perfect for those who want to escape the hustle and bustle of city life.
 

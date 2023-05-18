@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Data Visualization Solutions for Business Growth
+# Shorter Title: Data Viz for Business Growth
 
 Welcome to our website dedicated to helping businesses grow through effective data visualization. The background of this page features a minimalist and modern design with a graph of data visualization.
 

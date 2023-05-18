@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech-ify Workspace with Circuit Boards
+# Tech-ify Workspace with Circuits
 
 Elevate your workspace with our circuit board component design. This unique pattern features repeating shapes and lines in shades of black, grey, and neon green, inspired by the inner workings of technology.
 

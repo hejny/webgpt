@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Mountain Beauty with Our Community
+# Explore Mountain Beauty with Our Community
 
 Welcome to our nature community dedicated to exploring the beauty of mountains! Our website is a platform for nature enthusiasts who want to learn more about the majestic mountain ranges around the world. 
 

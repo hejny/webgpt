@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Frozen Moons of Gas Giants Exploration
+# Exploring Frozen Moons of Gas Giants
 
 Welcome to our website, where we share our adventures and discoveries as a team of Ainautes conducting experiments on the frozen moons orbiting gas giant planets. Our current focus is on a massive moon that has been largely unexplored until now.
 

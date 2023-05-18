@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Nature's Mysteries with Mountain Moonrise Background
+# Explore Nature's Secrets with Mountain Moonrise
 
 Our stunning background image captures the essence of nature's mysteries, featuring a full moon rising over a mountain range, shrouded in mist and clouds. The perfect backdrop for those who love adventure and exploring the great outdoors.
 

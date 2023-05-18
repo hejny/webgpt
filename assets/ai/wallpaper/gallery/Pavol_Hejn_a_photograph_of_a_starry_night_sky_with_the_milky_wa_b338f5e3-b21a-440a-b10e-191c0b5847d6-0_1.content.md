@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Night Sky Wonders with Astronomy Background
+# Explore Night Sky with Astronomy Background
 
 Welcome to our website, where we offer a stunning astronomy-themed background for your desktop or mobile device. Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead. 
 

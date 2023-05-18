@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ant on Leaf: A Close-Up of Nature
+# Ant on Leaf: Nature Close-Up
 
 Welcome to our website, where we celebrate the beauty and intricacy of nature through stunning wallpapers. Our latest addition features a close-up of an ant on a leaf, captured in incredible detail.
 

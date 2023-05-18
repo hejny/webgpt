@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring Icy Moons in Outer Solar System
+# Exploring Icy Moons
 
 Welcome to our website dedicated to exploring the icy moons of the outer solar system! Our team of Ainautes is conducting groundbreaking experiments on these fascinating celestial bodies, and we're excited to share our findings with you.
 

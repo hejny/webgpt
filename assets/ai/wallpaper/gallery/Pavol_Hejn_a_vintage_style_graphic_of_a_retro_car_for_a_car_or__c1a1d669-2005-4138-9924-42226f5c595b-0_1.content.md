@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Retro Rides: Stylish World Exploration
+# Stylish Retro World Exploration
 
 Welcome to Retro Rides, your one-stop-shop for vintage car enthusiasts and travel aficionados alike. Our website is dedicated to celebrating the timeless charm of retro cars and the adventures they can take you on.
 

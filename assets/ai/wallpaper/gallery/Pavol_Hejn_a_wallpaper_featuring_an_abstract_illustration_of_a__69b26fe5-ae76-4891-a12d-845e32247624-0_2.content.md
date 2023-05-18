@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Dark Machine Background for Your Tech Website
+# Dark Tech Background
 
 Looking for a striking background that will make your tech website stand out? Look no further than our dark machine wallpaper. This abstract illustration features an ominous machine with glowing red lights and mechanical parts, creating a futuristic and edgy vibe.
 

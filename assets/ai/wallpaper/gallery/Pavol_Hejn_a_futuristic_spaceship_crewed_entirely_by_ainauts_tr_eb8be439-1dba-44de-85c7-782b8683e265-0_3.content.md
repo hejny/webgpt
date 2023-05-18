@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ainautes: Exploring the Unknown
+# Ainautes: Into the Unknown
 
 Welcome to Ainautes, a futuristic spaceship crewed entirely by a team of intrepid explorers. Our mission is to travel through the vast expanse of space in search of new discoveries and knowledge.
 

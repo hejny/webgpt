@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Futurize: Transform Your Business with Technology
+# Futurize Your Business with Technology
 
 ## About Us
 

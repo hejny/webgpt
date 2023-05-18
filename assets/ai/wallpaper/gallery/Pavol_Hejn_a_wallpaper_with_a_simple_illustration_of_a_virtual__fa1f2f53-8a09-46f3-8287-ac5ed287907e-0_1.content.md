@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Enter Virtual Reality with Stylish Illustration
+# Stylish Illustration for Virtual Reality
 
 Experience the thrill of virtual reality every time you use your device with this stunning illustration featuring a VR headset against a gradient background of two contrasting colors. The sleek design and minimalist style make it the perfect addition to any digital space, whether you're a gamer, tech enthusiast, or simply love the idea of exploring new worlds.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Journey Through Space's Unknown
+# Space Odyssey
 
 Welcome to our website, where we embark on a journey through space and explore the unknown. Our team of Ainautes and their AI companions are always ready for an adventure, and they have discovered something truly remarkable - a massive, abandoned alien spacecraft floating in the depths of space.
 

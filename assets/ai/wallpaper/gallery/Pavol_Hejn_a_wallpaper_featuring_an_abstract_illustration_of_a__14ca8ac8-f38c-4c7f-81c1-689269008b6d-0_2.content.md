@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Dark Machinery for Elevated Projects
+# Elevated Projects' Dark Machinery
 
 Welcome to Dark Machinery, where we provide an abstract illustration of a dark and ominous machine, complete with glowing red lights and intricate mechanical parts. Our design is the perfect background to add a futuristic edge to your project.
 

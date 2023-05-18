@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI-Ainaute Space Station Welcome
+# AI-Ainaute Station Welcome
 
 Experience the future of space exploration with our state-of-the-art facility where Ainautes and their AI companions work together in a zero-gravity environment. Our space station is equipped with the latest technology and resources to support groundbreaking research and development in various fields.
 

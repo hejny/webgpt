@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Stormy Vibes for an Inspiring Workspace
+# Stormy Workspace Vibes
 
 Welcome to Stormy Vibes, a website dedicated to providing you with inspiration and resources to help you create your dream workspace. Our bold and abstract wallpaper, an interpretation of a thunderstorm, is the perfect backdrop for your creative endeavors.
 

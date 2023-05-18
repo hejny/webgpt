@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# FutureScape: Tomorrow's Glimpse
+# Tomorrow's Glimpse
 
 ## About Us
 FutureScape is a platform dedicated to exploring the future of technology and its impact on society. Our team of experts and enthusiasts are passionate about all things futuristic, from cutting-edge gadgets to mind-bending scientific discoveries.

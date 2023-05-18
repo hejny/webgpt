@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ainautes: Exploring the Unknown
+# Ainautes: Into the Unknown
 
 Welcome to Ainautes, a community of explorers dedicated to uncovering the mysteries of the universe. Our latest expedition takes us deep into the underground caverns of a distant planet, where we encounter a world unlike any other.
 

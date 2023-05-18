@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Digital Data Center Background
+# Digital Data Center Background
 
 Transform your digital space with our abstract illustration of a futuristic data center. The sleek and modern graphics, paired with a minimalist color scheme, create a visually stunning background for your desktop or mobile screen.
 

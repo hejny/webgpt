@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the World: Adventure Awaits!
+# Adventure awaits!
 
 Welcome to Adventure Awaits, your go-to resource for all things travel and adventure! Our website is designed to inspire and assist you in planning your next great adventure. Whether you're a seasoned traveler or just starting out, we have everything you need to make your trip unforgettable.
 

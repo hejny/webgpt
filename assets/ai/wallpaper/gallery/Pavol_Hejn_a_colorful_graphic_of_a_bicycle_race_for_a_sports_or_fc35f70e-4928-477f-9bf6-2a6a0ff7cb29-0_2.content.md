@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Sports and Fitness Website Welcome!
+# Sports & Fitness Site Welcome!
 
 We are dedicated to promoting an active and healthy lifestyle through sports and fitness. Our website offers a wide range of resources and information to help you achieve your fitness goals.
 

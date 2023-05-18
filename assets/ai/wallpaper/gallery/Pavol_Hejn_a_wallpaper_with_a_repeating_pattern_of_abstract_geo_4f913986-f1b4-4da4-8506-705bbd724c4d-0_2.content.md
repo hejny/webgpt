@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Geometric Backgrounds for Web Design
+# Geometric Web Backgrounds
 
 Welcome to our website, where you can find a collection of modern geometric backgrounds that are perfect for your web design needs. Our abstract shapes and patterns are inspired by the latest trends in web design and color schemes.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech Website Explores the Future
+# Future-Tech Website
 
 Welcome to our tech website, where we provide the latest news and updates on technology. Our website is dedicated to keeping you informed and up-to-date with the latest trends in the tech world. To enhance your browsing experience, we have added a new background that will give your screen a futuristic and industrial vibe.
 
