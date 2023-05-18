@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The font that best fits the eerie and mysterious theme of the website is "Cinzel Decorative".-->
+<!--font:Cinzel-->
 
 # Haunted Forest: Shadowy Trail
 

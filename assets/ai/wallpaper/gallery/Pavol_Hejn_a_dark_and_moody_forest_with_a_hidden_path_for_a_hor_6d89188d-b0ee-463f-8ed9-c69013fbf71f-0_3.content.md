@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that best fits the dark and mysterious theme of the website is "Cormorant Garamond".-->
+<!--font:Cormorant Garamond-->
 
 # Mystery Forest Exploration
 

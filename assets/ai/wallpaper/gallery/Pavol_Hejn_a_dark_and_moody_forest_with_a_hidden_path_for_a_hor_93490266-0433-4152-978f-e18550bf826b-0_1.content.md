@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Creepster" font would be the best fitting for the website.-->
+<!--font:Creepster-->
 
 # Uncovering Dark Forest's Hidden Path Mysteries
 
