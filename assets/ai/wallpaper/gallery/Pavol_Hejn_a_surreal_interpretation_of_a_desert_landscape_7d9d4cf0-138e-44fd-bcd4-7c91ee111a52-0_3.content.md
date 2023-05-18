@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Surreal Desert Landscape for Device Background
+# Surreal Desert Background
 
 Welcome to our website, where we offer a stunning surreal interpretation of a desert landscape as a background for your device. Our captivating design features towering rock formations, swirling clouds, and a glowing moon in the sky, creating a mesmerizing effect that will transport you to another world.
 

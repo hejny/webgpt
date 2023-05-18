@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Retro-Futuristic Space Station Pixel Art Exploration"
+# Retro Space Station Pixel Art
 
 Welcome to our website dedicated to exploring the fascinating world of space stations, sci-fi, and pixel art. Our site features a stunning pixel art depiction of a space station that captures the retro-futuristic aesthetic with limited colors and blocky shapes.
 

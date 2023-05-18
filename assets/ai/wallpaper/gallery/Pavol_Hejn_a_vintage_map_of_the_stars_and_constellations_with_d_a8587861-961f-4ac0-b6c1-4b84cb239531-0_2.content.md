@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Vintage Star Map for Cosmos Exploration
+# Vintage Star Map for Space Exploration
 
 Experience the awe-inspiring beauty of the night sky with a stunning vintage star map. This intricate illustration features detailed depictions of spacecraft, constellations, and celestial bodies, making it the perfect choice for anyone who appreciates the wonders of the universe.
 

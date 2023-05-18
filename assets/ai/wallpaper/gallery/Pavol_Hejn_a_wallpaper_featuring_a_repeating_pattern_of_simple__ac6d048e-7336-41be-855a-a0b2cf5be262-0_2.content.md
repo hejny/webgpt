@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# MathWall - Minimalist Digital Background for Math Enthusiasts
+# MathWall - Minimalist Background for Math Fans
 
 MathWall is a unique digital background that combines the beauty of mathematics with a minimalist and modern design. The repeating pattern of simple equations and formulas creates a visually stimulating and intellectually inspiring backdrop for your desktop or mobile device.
 

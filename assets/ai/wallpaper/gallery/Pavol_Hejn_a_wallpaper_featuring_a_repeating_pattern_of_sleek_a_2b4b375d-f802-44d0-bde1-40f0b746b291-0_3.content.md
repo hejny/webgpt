@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Boost Your Tech with Our Digital Backgrounds
+# Enhance Tech with Digital Backgrounds
 
 Welcome to our website dedicated to all things tech! Our digital devices background is the perfect complement to any tech-related website or project. With a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops, this background will instantly elevate your tech game.
 

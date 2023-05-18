@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space Backgrounds for Exploration
+# Exploration Space Backgrounds
 
 Welcome to our space-themed website, your ultimate guide to exploring the universe! Whether you're an amateur stargazer or a seasoned astronaut, we've got everything you need to plan your next interstellar adventure.
 

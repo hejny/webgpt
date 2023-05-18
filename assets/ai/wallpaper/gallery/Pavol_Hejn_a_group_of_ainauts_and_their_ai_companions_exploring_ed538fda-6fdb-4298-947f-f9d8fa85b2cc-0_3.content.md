@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# AI uncovers abandoned research facility secrets
+# AI reveals abandoned research facility secrets
 
 Welcome to our website dedicated to exploring the mysteries of an abandoned research facility in deep space. Our team of AInauts and their trusty AI companions have embarked on a journey to uncover the secrets of this massive structure, and we want you to join us.
 

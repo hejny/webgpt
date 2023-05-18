@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Shorter title: Meteor Shower Universe Background
+# Universe Background of Meteor Showers
 
 Our meteor shower background is more than just a beautiful image for your screen. It's an invitation to explore the mysteries and marvels of the universe.
 

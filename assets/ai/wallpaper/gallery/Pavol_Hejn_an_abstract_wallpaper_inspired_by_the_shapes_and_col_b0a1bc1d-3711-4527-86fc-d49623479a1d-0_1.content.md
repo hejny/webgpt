@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Office Design for Innovation
+# Quantum Workplace Innovation Design
 
 Welcome to our futuristic office, where we believe that the right environment can inspire creativity and innovation. Our quantum-inspired abstract background is designed to transport you to a world of endless possibilities.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI-Powered Search Engine for Modern Websites
+# AI Search Engine for Modern Websites
 
 Looking for a unique and modern background to elevate your website? Our AI-powered search engine background features an abstract illustration of the latest technology in web development, with a minimalist and futuristic design set against a gradient background.
 

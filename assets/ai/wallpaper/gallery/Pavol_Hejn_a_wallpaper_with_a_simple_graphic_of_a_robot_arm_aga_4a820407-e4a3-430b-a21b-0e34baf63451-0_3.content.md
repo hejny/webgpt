@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Our Website's Tech Future
+# Discover Our Tech Future
 
 Welcome to our tech-focused website, where we explore all things futuristic and cutting-edge. To enhance your browsing experience, we've included a sleek and modern background featuring a simple graphic of a robotic arm against a gradient background of two complementary colors.
 

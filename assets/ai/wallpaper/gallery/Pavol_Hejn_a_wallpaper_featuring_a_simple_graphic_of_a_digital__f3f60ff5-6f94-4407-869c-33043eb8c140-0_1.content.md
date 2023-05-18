@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Improve Productivity with Timer Background
+# Boost Productivity with Timers
 
 Our timer background is designed to help you stay focused and productive throughout your day. Featuring a minimalist digital clock or timer graphic set against a gradient background, our design includes space for setting alarms and countdowns.
 

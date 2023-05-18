@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Playful website background ideas for Whimsical Wonderland
+# Playful Backgrounds for Whimsical Websites
 
 Welcome to Whimsical Wonderland, where you can find charming and playful backgrounds to enhance your website's appearance. Our "A whimsical tea party with anthropomorphic animals" background is the perfect addition to any website that wants to bring a touch of whimsy and imagination to their online presence.
 

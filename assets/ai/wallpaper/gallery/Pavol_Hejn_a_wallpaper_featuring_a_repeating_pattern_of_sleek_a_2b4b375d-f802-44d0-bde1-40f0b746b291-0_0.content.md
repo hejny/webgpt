@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Wallpaper for Elevated Workspace
+# Digital Wallpaper for Workspace
 
 Welcome to our website, where we offer a digital devices wallpaper to elevate your workspace. Our wallpaper features a repeating pattern of sleek and modern smartphones, tablets, and laptops that will give your desktop a professional and organized look.
 

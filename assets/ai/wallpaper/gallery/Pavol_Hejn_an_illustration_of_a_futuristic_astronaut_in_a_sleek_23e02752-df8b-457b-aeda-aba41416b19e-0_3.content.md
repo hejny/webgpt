@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Astronaut Background for Space Exploration
+# Futuristic Astronaut for Space Exploration
 
 Welcome to our website, where we offer a unique collection of backgrounds that will take you on a journey beyond our world. Our latest addition is an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet. This stunning background is perfect for anyone who loves space exploration or simply wants to add a touch of sci-fi to their digital environment.
 

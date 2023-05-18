@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech Abstract Icons for Workspace
+# Tech Icons for Workspace
 
 Add some personality to your workspace with our tech-inspired abstract icon and symbol background. Featuring commonly used tech industry symbols such as computer chips and power buttons, this repeating pattern will elevate your desktop and make it stand out.
 

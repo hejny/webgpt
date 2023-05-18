@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Futuristic Technology
+# Futuristic Tech Exploration
 
 Welcome to our website, where we explore the latest and greatest in futuristic technology. Our mission is to inspire and educate people about the possibilities of technology, and we strive to be a trusted source of information for anyone who wants to stay up-to-date on the latest advancements in the industry.
 

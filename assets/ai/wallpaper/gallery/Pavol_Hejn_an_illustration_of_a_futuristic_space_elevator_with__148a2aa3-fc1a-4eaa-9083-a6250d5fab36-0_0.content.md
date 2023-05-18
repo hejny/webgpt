@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Space Elevator: Gateway to the Stars
+# Space Elevator: Star Gateway
 
 Welcome to our website dedicated to exploring the possibilities of space travel through the concept of a space elevator. Our wallpaper features an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
 

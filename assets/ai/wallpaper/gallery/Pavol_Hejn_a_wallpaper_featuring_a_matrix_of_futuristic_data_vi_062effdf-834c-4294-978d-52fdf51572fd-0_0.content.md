@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Future of Data Visualization with Matrix Background
+# Data Viz Future with Matrix Background
 
 Experience the forefront of data visualization with our stunning matrix background. Featuring a range of futuristic visualizations and graphs, this background is perfect for any tech enthusiast looking to add a touch of innovation to their desktop.
 

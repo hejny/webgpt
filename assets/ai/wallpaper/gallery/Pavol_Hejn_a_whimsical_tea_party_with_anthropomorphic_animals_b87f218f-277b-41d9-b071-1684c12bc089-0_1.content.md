@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Anthropomorphic Animal Tea Party
+# Animal Tea Party
 
 Welcome to our charming website featuring a delightful wallpaper design of a whimsical tea party with anthropomorphic animals. This playful and imaginative scene is perfect for those who love all things cute and quirky.
 

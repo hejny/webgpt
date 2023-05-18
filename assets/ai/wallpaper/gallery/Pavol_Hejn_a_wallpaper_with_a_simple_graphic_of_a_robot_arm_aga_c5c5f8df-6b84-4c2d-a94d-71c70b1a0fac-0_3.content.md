@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Style with Futuristic Design
+# Elevate Style with Futuristic Design
 
 Looking to add a touch of modern flair to your living space or device? Our sleek and stylish background featuring a robotic arm graphic against a gradient of two complementary colors is the perfect solution.
 

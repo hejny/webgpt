@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts Experiment on Distant Moon
+# AI Moon Experiment
 
 Welcome to our website, where we share the exciting adventures of our team of AInauts as they explore the vastness of space. Our latest wallpaper showcases our team conducting experiments on a distant moon, with a massive gas giant looming in the background.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Virtual Reality Experience - Welcome!
+# Virtual Welcome Experience
 
 Looking for an immersive virtual reality experience? Look no further than our cutting-edge technology that will transport you to a whole new world.
 

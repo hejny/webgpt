@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Virtual Reality Wallpaper for Tech Website
+# VR Wallpaper for Tech Site
 
 Welcome to our tech website! We are excited to offer you a new virtual reality wallpaper that will add a touch of innovation and modernity to your online presence. Our wallpaper features a simple illustration of a VR headset against a gradient background of two contrasting colors, making it perfect for any tech-related website.
 

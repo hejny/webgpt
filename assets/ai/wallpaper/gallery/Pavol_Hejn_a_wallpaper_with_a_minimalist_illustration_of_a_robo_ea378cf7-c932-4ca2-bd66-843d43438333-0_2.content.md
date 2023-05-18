@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Experience Innovative Power with Our Robotic Arm Illustration
+# Experience Innovative Power with Our Robotic Arm
 
 Our minimalist illustration features a robotic arm against a dark and moody background, showcasing the power of innovation in a simple and elegant way. At FutureTech, we believe that technology should be both functional and beautiful, and our design embodies this philosophy.
 

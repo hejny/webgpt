@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Explore the Future with Our Robotic Illustration
+# Robotic Illustration: Exploring the Future
 
 Our stunning illustration of a robotic explorer invites you to explore the exciting world of robotics and technology. With its intricate details and metallic textures, this artwork brings to life the endless possibilities of discovery.
 

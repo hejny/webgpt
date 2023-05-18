@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Peacock's Beauty: Fashion & Lifestyle Blog
+# Peacock's Fashion & Lifestyle Blog
 
 Welcome to The Peacock's Beauty, your go-to source for all things fashion and lifestyle. Our vibrant graphic of a peacock perfectly captures the essence of our blog, which is all about embracing your unique beauty and expressing yourself through fashion.
 

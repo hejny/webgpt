@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring Space Elevators in the Future
+# Future of Space Elevators
 
 Are you ready for a glimpse into the future of space travel? Look no further than our stunning wallpaper featuring an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
 

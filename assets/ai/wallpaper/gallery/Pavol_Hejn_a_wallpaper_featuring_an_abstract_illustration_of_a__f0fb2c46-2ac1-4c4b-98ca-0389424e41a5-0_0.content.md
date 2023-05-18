@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Darken Your Desktop with Our Ominous Machine Illustration
+# Ominous Machine Illustration for Your Desktop Background
 
 Looking for a way to spice up your computer desktop? Our abstract machine illustration featuring a dark and ominous design with glowing red lights and intricate mechanical parts is just what you need.
 

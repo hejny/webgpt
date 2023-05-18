@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Future's AInauts Leading Cutting-Edge Research
+# Future AI Researchers Leading Innovation
 
 As technology continues to advance at an unprecedented pace, so does the need for innovative solutions to complex problems. That's where our team of AInauts comes in - working tirelessly in a massive laboratory filled with glowing equipment and holographic displays to conduct cutting-edge research that will shape the future.
 

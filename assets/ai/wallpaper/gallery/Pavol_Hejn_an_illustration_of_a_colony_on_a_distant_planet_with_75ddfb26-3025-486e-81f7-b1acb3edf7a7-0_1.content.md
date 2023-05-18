@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Futuristic Colony on Distant Planet
+# Distant Planet's Futuristic Colony
 
 ![Illustration of a colony on a distant planet](https://example.com/wallpaper.jpg)
 

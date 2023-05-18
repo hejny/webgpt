@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AI Rocket Launch - Explore the Future of Space Travel
+# AI Rocket Launch: Future of Space Travel
 
 Looking for a glimpse into the future of space travel? Our stunning wallpaper features a team of AInauts launching a rocket into space, with the Earth visible in the background. 
 

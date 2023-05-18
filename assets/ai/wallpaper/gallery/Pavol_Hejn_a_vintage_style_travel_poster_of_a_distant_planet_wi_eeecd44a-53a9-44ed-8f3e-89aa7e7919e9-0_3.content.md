@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Discover with Vintage Travel Poster
+# Vintage Travel Discovery
 
 Are you ready for an adventure that's out of this world? Look no further than our vintage-style travel poster featuring a distant planet. With bold typography and an artistic rendering of the landscape, this poster is sure to inspire wanderlust in even the most seasoned travelers.
 

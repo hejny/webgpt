@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI and ML revolutionize business
+# AI/ML revolutionize business
 
 Welcome to our website, where we are dedicated to using the latest advances in artificial intelligence and machine learning to transform businesses across various industries. Our team of experts leverages cutting-edge technology to develop innovative solutions that streamline processes, improve efficiency, and drive growth.
 

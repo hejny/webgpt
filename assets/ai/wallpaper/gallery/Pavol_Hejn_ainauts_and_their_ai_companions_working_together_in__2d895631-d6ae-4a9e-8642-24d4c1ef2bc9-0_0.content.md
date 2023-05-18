@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Future of AI Companions in Space
+# AI Companions in Space: Future
 
 Welcome to our website dedicated to exploring the exciting world of AI companions in space. Our wallpaper showcases AInauts and their AI companions working together in a massive, zero-gravity space station, highlighting the potential for AI to revolutionize the way we explore and interact with the universe.
 

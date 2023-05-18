@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Tech Style with Digital Device Backgrounds
+# Enhance Tech Style with Digital Backgrounds
 
 Welcome to our website, where we celebrate the latest in technology with our sleek and modern digital devices background. Our background features a repeating pattern of smartphones, tablets, and laptops set against a gradient design, making it the perfect choice for tech enthusiasts who want to showcase their love for all things digital.
 

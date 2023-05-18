@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Innovative Workspace Design for the Future
+# Future Workspace Design
 
 Welcome to our website, where we explore innovative and functional workspace design that fosters creativity, productivity, and collaboration. Our mission is to inspire and empower businesses to create work environments that reflect their values and aspirations.
 

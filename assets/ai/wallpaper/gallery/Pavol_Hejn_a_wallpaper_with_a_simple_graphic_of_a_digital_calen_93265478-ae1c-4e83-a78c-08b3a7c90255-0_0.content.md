@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TaskMaster - Simplify Your Tasks
+# Simplify Tasks with TaskMaster
 
 Welcome to TaskMaster, the ultimate digital task management solution! Our platform provides a simple and intuitive interface for you to keep track of all your tasks and never miss a deadline again.
 

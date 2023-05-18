@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Future Space Travel: Potential of a Space Elevator
+# Space Elevator: Future Travel Potential
 
 Welcome to our website dedicated to exploring the exciting concept of a space elevator. Our site features an incredible illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
 

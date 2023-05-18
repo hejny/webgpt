@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Jungle World: Fun Learning for Kids
+# Jungle Learning for Kids
 
 Welcome to Jungle World, a website that offers a fun and educational experience for children. Our playful graphic of a group of animals in a jungle sets the tone for an exciting adventure that will spark your child's curiosity.
 

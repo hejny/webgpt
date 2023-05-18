@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Future-Proof Your Business with Innovation
+# Innovate for Business Future
 
 Welcome to our website, where we provide innovative solutions to help businesses stay ahead of the curve and future-proof their operations. Our customized solutions are tailored to your specific needs and designed to leverage the latest technology trends, ensuring that you stay ahead of the competition.
 

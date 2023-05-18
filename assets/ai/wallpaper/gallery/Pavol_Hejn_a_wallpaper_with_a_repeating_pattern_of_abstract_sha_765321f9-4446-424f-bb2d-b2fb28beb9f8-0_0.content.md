@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# CyberScape: Your Ultimate Online Security Destination
+# CyberScape: Your Security Destination
 
 Welcome to CyberScape, your go-to source for all things online security. Our website is dedicated to providing you with the latest news, tips, and resources to help you stay safe online. And our sleek background sets the tone for what we're all about.
 

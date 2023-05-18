@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# AInauts Observing Saturn's Rings from High-Tech Space Station
+# Observing Saturn's Rings from High-Tech Space Station
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies. 
 

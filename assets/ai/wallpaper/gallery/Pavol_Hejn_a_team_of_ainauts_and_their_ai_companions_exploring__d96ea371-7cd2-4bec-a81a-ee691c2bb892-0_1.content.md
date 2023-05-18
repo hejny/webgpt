@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Companions for Alien Cave Exploration
+# AI for Alien Cave Exploration
 
 Welcome to our website, where we take you on a thrilling adventure to a distant planet. Join our team of AInauts and their trusty AI companions as they delve into the depths of a massive underground cave system.
 

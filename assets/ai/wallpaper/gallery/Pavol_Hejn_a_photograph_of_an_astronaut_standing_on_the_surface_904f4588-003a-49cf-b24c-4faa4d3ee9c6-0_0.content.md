@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cosmic Collection: Explore Space
+# Cosmic Exploration
 
 Welcome to our website where we offer a range of high-quality digital backgrounds to enhance your online experience. Our Cosmic Collection features a stunning photograph of an astronaut on the moon with Earth in the background, perfect for anyone who loves to explore the mysteries of space.
 

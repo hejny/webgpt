@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Cityscape: Enter Now
+# Enter Futuristic Cityscape
 
 Experience a world of endless possibilities with our captivating abstract illustration of a futuristic cityscape. With its glowing lights and dark, moody color scheme set against a gradient background, this image will transport you to another dimension.
 

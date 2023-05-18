@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Space Station Orbiting a Gas Giant
+# Orbiting Gas Giant
 
 Welcome to our website featuring an incredible illustration of a space station in orbit around a gas giant planet. This stunning wallpaper showcases the beauty and mystery of outer space, with rings and storms visible in the background.
 

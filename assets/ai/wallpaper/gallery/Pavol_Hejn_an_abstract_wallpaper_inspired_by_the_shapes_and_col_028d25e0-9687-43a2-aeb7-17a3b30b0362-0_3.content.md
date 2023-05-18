@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Creativity: When Science Collides
+# Quantum Creativity in Science
 
 Welcome to Quantum Dreams, where science and art collide. Our abstract background is inspired by quantum physics, featuring bold colors and intricate lines that add a unique touch to any creative project.
 

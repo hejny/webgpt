@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Vintage Star Map for Universe Exploration
+# Vintage Star Map for Space Exploration
 
 Our vintage star map is a stunning illustration that showcases the stars and constellations in intricate detail, along with spacecraft and other celestial bodies. It's the perfect way to bring the beauty of the night sky to your digital world.
 

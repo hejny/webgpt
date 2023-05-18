@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Enchanting Underwater Exploration
+# Underwater Enchantment
 
 Welcome to our website, where we invite you to explore the mesmerizing beauty of our underwater world. Our collection of wallpapers captures the magic of the ocean, showcasing its vibrant colors and diverse marine life.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Experiments on Distant Planet
+# AI on Distant Planet
 
 Welcome to our website showcasing the incredible work of our team of AInauts! Our group is currently conducting experiments on a distant planet, with a red sun setting behind us. 
 

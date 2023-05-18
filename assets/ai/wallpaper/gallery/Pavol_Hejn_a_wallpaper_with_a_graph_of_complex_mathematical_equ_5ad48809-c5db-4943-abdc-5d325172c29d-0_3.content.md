@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Enhance Desktop with Math Equations
+# Math-Enhanced Desktop
 
 Looking for a way to add some sophistication and inspiration to your digital workspace? Look no further than our collection of stunning mathematical equations, designed specifically for use as desktop backgrounds.
 

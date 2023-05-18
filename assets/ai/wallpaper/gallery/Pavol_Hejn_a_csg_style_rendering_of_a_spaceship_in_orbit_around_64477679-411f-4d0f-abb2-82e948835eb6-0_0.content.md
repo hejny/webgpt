@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploration Desktop Space Backgrounds
+# Desktop Space Background Exploration
 
 Welcome to our website where you can find a collection of stunning desktop backgrounds. Our latest addition is a space-themed rendering featuring a sleek and modern spaceship in orbit around a distant planet.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AI-Piloted Spaceship Explores Space
+# AI spaceship explores space
 
 Experience the thrill of space exploration like never before with our team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. This stunning wallpaper captures the excitement and danger of deep space travel, and is the perfect backdrop for any sci-fi enthusiast's desktop.
 

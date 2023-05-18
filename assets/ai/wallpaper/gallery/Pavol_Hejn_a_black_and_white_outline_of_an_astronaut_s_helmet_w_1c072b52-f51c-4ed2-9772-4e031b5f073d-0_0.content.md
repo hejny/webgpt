@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Space with Astronaut Desktop Image
+# Space Explorer Desktop Image
 
 Our astronaut helmet desktop image is the perfect way to add a touch of cosmic inspiration to your computer. The black and white outline of the helmet is filled with intricate details that capture the essence of space exploration.
 

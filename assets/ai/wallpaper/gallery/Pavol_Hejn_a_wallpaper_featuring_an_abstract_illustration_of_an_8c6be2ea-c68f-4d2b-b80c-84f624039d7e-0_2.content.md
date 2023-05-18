@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Futuristic AI Website Background
+# AI Website Background
 
 Enhance the look of your website with our AI-powered search engine background. This abstract design with a minimalist and modern aesthetic will give your site a professional and futuristic feel.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Vintage Celestial Map for Universe Exploration
+# Antique Star Chart for Space Exploration
 
 Welcome to our website, where we offer a stunning celestial map that will take you on a journey through the vast expanse of the universe. Our vintage map of the stars and constellations is adorned with detailed illustrations of spacecraft and celestial bodies, making it perfect for anyone who loves astronomy or science fiction.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Future Technology and Innovation Exploration
+# Exploring Future Technology and Innovation
 
 Welcome to our website dedicated to exploring the latest technology and innovation trends. Our mission is to provide you with up-to-date information, insights, and resources on the cutting-edge of technology.
 

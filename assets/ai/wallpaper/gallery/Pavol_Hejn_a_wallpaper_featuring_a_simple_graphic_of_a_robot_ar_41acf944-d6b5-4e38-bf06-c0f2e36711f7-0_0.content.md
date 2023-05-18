@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Maximize Productivity with a Minimalist Robot Arm
+# Maximize Productivity with a Robot Arm
 
 Welcome to our website, where we provide you with the perfect background to enhance your productivity workspace. Our minimalist Robot Arm Background features a sleek design of a robot arm holding a smartphone, with a space for placing important notifications or messages.
 

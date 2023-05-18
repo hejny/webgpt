@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Home with Modern Decor
+# Modernize Your Home Decor
 
 Welcome to our website where we offer a wide range of modern and stylish home decor options that can help you create a space that reflects your unique taste and personality. 
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Improve Workspace with Digital Background
+# Digital Backgrounds to Improve Workspace
 
 Welcome to our website, where we provide tech enthusiasts with the tools they need to enhance their digital experience. Our digital devices background is the perfect addition to your desktop or mobile device, adding a touch of modernity and professionalism to your workspace.
 

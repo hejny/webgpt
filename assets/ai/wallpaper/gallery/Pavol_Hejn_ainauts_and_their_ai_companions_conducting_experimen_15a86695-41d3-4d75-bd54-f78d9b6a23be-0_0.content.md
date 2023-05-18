@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI-assisted Zero Gravity Experiments
+# AI in Zero Gravity Experiments
 
 Welcome to our website featuring stunning wallpaper of AInauts and their AI companions conducting experiments in a zero-gravity laboratory. The image captures the excitement and wonder of scientific exploration as colorful chemicals and particles float all around them.
 

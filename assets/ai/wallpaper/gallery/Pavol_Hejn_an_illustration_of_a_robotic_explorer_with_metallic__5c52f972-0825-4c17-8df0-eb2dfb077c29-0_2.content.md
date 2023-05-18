@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Robotic Technology in Space Exploration
+# Robotic Tech in Space Exploration
 
 Welcome to our website dedicated to exploring the vast unknowns of space through the use of robotic technology. Our mission is to push the boundaries of what we know about the universe and to bring that knowledge back to Earth.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Space Station Explorer: Welcome!
+# AI Space Explorer: Welcome!
 
 Join our team of AInauts and their trusty AI companions as we embark on an exciting journey to explore a massive, ancient space station orbiting a distant planet. Our mission is to uncover the secrets of this mysterious structure and learn more about the advanced technology that created it.
 

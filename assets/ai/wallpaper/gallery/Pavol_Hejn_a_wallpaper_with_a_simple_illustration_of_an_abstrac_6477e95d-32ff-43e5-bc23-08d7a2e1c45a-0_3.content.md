@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Minimal Background for Your Digital Space
+# Simplified Digital Background
 
 Welcome to our website, where we offer a simple and elegant background to elevate your digital space. Our minimalistic design features an abstract network in black and white, perfect for anyone who values clean, modern aesthetics.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Enhance Digital Space with Abstract Shapes & Colors
+# Improve Digital Space with Abstract Design
 
 Welcome to our website! We offer a unique design that will add a touch of creativity to your digital space. Our abstract shapes and colors design is inspired by the latest web design trends and patterns.
 

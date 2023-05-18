@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Gas Giant's Space Station Orbit
+# Gas Giant's Station Orbit
 
 Welcome to our website dedicated to the stunning wallpaper featuring an illustration of a space station orbiting a gas giant planet. This wallpaper captures the imagination with its intricate details, showcasing the beauty and mystery of space.
 

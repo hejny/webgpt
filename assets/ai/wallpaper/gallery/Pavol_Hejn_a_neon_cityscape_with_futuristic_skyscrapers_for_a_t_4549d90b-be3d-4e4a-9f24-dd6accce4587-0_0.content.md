@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# TechScape: Futuristic Tech Destination
+# Futuristic TechScape
 
 Welcome to TechScape, the ultimate destination for all things futuristic technology. Our homepage features a stunning neon cityscape with towering skyscrapers that embody the innovative spirit of our brand. 
 

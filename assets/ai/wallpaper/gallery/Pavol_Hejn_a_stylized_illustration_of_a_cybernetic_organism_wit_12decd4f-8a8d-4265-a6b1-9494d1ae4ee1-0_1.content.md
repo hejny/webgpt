@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cybernetics: Communication and Control in Organisms and Machines
+# Shorter title: Cybernetics: Communication and Control
 
 Welcome to our website dedicated to exploring the exciting world of cybernetics! Our mission is to provide you with the latest news, research, and resources on this interdisciplinary field that combines biology, engineering, computer science, and more. As you browse our site, you'll notice a striking wallpaper in the background. This stylized illustration of a cybernetic organism perfectly captures the spirit of our mission.
 

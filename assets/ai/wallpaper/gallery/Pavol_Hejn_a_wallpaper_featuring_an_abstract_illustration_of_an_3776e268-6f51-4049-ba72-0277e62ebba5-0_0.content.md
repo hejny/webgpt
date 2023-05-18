@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI-Powered Personalized Search Results
+# AI Personalized Search Results
 
 Welcome to our website, where we offer an innovative search engine that uses artificial intelligence (AI) to provide fast and accurate results tailored to your preferences. Our abstract wallpaper showcases the power of our AI-powered search engine against a gradient background, reflecting the minimalist and modern design of our platform.
 

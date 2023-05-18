@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Website Style with Geometric Backgrounds
+# Elevate Website Style with Geometric Backdrops
 
 Welcome to our website, where we offer a unique collection of abstract geometric backgrounds to enhance your website's visual appeal. Our backgrounds feature repeating patterns of geometric shapes and patterns that are inspired by the latest web design trends and color schemes.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover AI on Our Minimalist Site
+# AI on Minimalist Site
 
 Welcome to our website, your go-to source for the latest news and insights on artificial intelligence, machine learning, and other cutting-edge technologies. Our site features a stunning abstract illustration of an AI-powered search engine as the background, reflecting our focus on the power and potential of AI.
 

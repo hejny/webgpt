@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Explore the Universe: Space Odyssey
+# Universe Odyssey
 
 Welcome to Space Odyssey, your ultimate destination for exploring the wonders of the universe. Our website offers a variety of resources and information about space, from the latest news and discoveries to stunning visual depictions of distant planets and galaxies.
 

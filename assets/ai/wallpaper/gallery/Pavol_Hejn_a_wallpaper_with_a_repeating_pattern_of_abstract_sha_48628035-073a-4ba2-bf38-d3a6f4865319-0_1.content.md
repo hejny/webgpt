@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cybersecurity for Your Business
+# Business Cybersecurity
 
 Welcome to our cybersecurity solutions website featuring a unique wallpaper with a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background. Our mission is to provide comprehensive cybersecurity solutions that safeguard your business from cyber threats.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Shortened title: Travel Posters for Distant Planets
+# Posters for Distant Planets Travel
 
 Welcome to our collection of vintage-style travel posters featuring some of the most stunning and exotic planets in the galaxy. Our posters are designed to inspire your imagination and awaken your sense of adventure, whether you're a seasoned space explorer or a curious armchair traveler.
 

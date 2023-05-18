@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Shorter title: Futuristic Online Backgrounds
+# Online Futuristic Backgrounds
 
 Welcome to our website, where we offer a collection of dark and futuristic backgrounds to enhance your online presence. Our latest addition is an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts. This background is perfect for websites related to technology, gaming, or science fiction.
 

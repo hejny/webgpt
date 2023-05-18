@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the Cosmos with Our Site
+# Cosmic Exploration Site
 
 Welcome to our astronomy website, your ultimate destination for exploring the mysteries of the universe. Whether you're a novice or an experienced stargazer, we have something to offer.
 

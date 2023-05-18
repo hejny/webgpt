@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Embrace the Future with Our Tech Site
+# Embrace the Future with Tech Site
 
 Our website offers a sleek and modern design that features a gradient background of complementary colors and a graphic of a robot arm. If you're passionate about technology and innovation, our website is the perfect destination for you.
 

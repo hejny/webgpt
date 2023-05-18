@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Dark Tech Background
+# Futuristic Dark Tech Backdrop
 
 Looking for a background that will give your tech website a futuristic edge? Our dark machine background is just what you need! Featuring an abstract illustration of a menacing machine with glowing red lights and intricate mechanical parts, this background will add depth and dimension to your site.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Drone Delivery for Fast Shipping
+# Drone Shipping
 
 Welcome to our website, where we offer drone delivery services for businesses and individuals. Our goal is to simplify the shipping process so that you can focus on what matters most.
 

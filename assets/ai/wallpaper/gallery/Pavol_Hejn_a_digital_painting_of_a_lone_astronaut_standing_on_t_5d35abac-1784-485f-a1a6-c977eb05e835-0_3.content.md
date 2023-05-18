@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Space Wonders with Digital Art
+# Digital Art Explores Space Wonders
 
 Our digital artwork captures the captivating beauty and enigma of space, featuring a lone astronaut standing on the edge of a crater and gazing out into the endless expanse beyond. It's the perfect addition to your desktop or mobile device, bringing the marvels of space exploration into your daily life.
 

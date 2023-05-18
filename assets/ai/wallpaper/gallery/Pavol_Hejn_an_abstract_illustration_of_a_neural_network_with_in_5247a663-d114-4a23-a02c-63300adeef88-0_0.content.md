@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Tech Website with Neural Network Background
+# Neural Network Background Elevates Tech Website
 
 Welcome to our tech website, where we provide you with the latest news and insights about the world of technology. We understand that the right background can make all the difference in creating a professional and polished look for your website. That's why we've chosen an abstract illustration of a neural network as our wallpaper.
 

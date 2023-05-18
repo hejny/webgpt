@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Planetarium Background for Space Discovery
+# Space Discovery Planetarium Background
 
 Welcome to our website, where you can explore the beauty and mystery of space through our stunning planetarium background. Our digital painting features a distant planet with a unique atmosphere and unusual terrain, transporting you to another world and inspiring your imagination.
 

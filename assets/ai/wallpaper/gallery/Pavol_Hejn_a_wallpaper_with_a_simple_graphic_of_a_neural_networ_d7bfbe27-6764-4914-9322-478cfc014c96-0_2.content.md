@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# NeuroLab: Explore the Human Brain
+# NeuroLab: Brain Exploration
 
 Welcome to NeuroLab, your ultimate digital destination for discovering the wonders of the human brain. Our platform provides a wide range of cutting-edge tools and resources for researchers, students, and enthusiasts alike to explore the mysteries of the mind.
 

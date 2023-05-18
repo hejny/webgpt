@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Future Data Visualizations: Discover Futuristic Graphs
+# Futuristic Graphs: The Future of Data Visualization
 
 Welcome to our website, your ultimate destination for exploring the latest trends and innovations in data visualization. Our stunning background of futuristic data visualizations and graphs sets the tone for what you can expect from our content.
 

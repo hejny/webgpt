@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cosmic Exploration with Experts
+# Expert-led Cosmic Exploration
 
 Welcome to our website dedicated to exploring the mysteries of the universe! Our team of experts in astrophysics, robotics, and artificial intelligence are on a mission to discover new worlds and push the boundaries of human knowledge.
 

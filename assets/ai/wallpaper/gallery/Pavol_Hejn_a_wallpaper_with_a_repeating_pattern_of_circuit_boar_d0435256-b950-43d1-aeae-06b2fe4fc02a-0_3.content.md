@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Tech News Hub: Circuitry Dreams
+# Tech Hub: Circuit Dreams
 
 Welcome to Circuitry Dreams, your destination for the latest in technology news. Our website features a sleek and modern design with a wallpaper that sets the tone for our tech-forward content.
 

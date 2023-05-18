@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Adventures: Explore the Universe
+# Shorter title: Universe Exploration
 
 Welcome to Space Adventures, your ultimate destination for all things space-related. Our website is designed to inspire and educate people about the wonders of space, from the vast expanse of the universe to the latest discoveries in space exploration.
 

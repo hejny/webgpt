@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Explore Distant Planetary Mysteries
+# Discover Exoplanet Enigmas
 
 Experience the wonder of exploration with our collection of breathtaking wallpapers. Immerse yourself in the awe-inspiring scene of a group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them.
 

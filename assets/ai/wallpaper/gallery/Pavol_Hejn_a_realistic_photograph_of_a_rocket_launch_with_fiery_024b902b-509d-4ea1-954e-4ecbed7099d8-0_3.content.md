@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Space with Desktop Wallpaper
+# Space Desktop Wallpaper Exploration
 
 Get inspired to explore the wonders of space every time you open your computer with our stunning desktop background. Featuring a realistic photograph of a rocket launch, this background captures the fiery trails and smoke visible in the sky, transporting you to the thrilling moment of liftoff.
 

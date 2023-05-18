@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Surrealistic Design for a Whimsical Space
+# Surreal Design for Whimsical Space
 
 Transform your living space into a whimsical wonderland with our surrealistic design. Inspired by the surrealist art movement, our design features floating objects such as gears, cogs, and computer parts against a muted color background, creating a sense of depth and movement that will captivate your imagination.
 

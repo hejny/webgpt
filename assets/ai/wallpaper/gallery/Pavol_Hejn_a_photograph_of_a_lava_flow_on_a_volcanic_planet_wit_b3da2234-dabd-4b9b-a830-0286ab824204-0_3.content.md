@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Volcanic Planet Adventure Awaits
+# Volcanic Adventure Awaits
 
 Welcome to Adventure Awaits, where we offer expeditions to some of the most extreme environments in the galaxy. Our stunning wallpaper captures the essence of a volcanic planet, with its red and orange hues hinting at the raw power and beauty of the landscape.
 

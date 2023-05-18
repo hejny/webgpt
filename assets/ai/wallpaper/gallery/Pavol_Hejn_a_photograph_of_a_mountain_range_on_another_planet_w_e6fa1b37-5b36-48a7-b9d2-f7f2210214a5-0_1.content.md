@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Immersive Space Desktop Backgrounds
+# Immersive Space Backgrounds
 
 Welcome to our website, where we offer an immersive experience for space enthusiasts. Our desktop background features a stunning photograph of a mountain range on another planet, with the bright sun shining through the peaks. 
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Galactic Gateway: Space Destination
+# Galactic Gateway
 
 Welcome to Galactic Gateway, your ultimate destination for all things space. Our mission is to provide you with the latest news, insights, and resources about the universe and beyond, so you can explore and discover the wonders of space.
 

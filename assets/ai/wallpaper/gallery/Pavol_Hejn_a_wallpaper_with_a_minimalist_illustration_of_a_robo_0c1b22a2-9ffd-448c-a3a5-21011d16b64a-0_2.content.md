@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Robotic Arm Background for Devices
+# Futuristic Robotic Arm Background
 
 Upgrade your digital devices with our sleek and modern illustration of a robotic arm against a dark and moody backdrop. This minimalist background is perfect for anyone who wants to add a touch of sophistication and style to their desktop or phone screen.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the World of AInauts and their AI Companions!
+# AInauts and Their AI Companions
 
 Our website is dedicated to showcasing the incredible partnership between AInauts and their AI companions. Our stunning wallpaper features these dynamic duos working together in a massive, zero-gravity space station.
 

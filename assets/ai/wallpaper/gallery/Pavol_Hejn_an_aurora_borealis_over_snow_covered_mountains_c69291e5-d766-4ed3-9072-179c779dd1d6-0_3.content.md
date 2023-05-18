@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Northern Lights Above Snowy Mountains
+# Northern Lights over Snowy Mountains
 
 Welcome to our website featuring a stunning wallpaper of an aurora borealis over snow-covered mountains. This breathtaking image captures the beauty and wonder of nature, showcasing the majesty of the northern lights against a backdrop of snowy peaks.
 

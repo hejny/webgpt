@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI and AInauts building the future of space travel
+# AI and AInauts shaping space travel's future
 
 Imagine a world where space travel is as routine as taking a plane. That's the vision of the AInauts, a team of astronauts and their AI companions who are working together to construct a massive, orbiting space elevator.
 

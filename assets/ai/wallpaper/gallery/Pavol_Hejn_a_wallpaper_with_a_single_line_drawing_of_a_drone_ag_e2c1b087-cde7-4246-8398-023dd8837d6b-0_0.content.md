@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# DroneZone: Boost Your Online Presence
+# DroneZone: Online Boost
 
 Welcome to DroneZone, where we help businesses and individuals take their online presence to new heights. Our website offers a range of services, from social media management to web design, all designed to help you stand out in today's crowded digital landscape.
 

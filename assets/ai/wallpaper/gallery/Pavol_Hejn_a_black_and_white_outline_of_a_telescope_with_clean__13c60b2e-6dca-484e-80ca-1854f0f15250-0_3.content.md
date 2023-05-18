@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Universe with Our Telescopes.
+# Telescope-Assisted Universe Exploration
 
 Our telescopes are designed to help you explore the mysteries of the cosmos, whether you're a seasoned stargazer or just starting out. With our reliable and top-of-the-line instruments, you can observe distant galaxies, track the movements of planets, and marvel at the beauty of the moon and stars.
 

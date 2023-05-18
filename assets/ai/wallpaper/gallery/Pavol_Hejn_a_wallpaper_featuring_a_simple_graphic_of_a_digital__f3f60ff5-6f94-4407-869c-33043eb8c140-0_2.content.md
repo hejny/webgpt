@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Simplify Your Schedule with Timekeeper's Timer
+# Simplify Schedule with Timekeeper Timer
 
 Timekeeper is the ultimate tool for simplifying your schedule and boosting your productivity. Our digital clock and timer wallpaper features a sleek graphic that allows you to easily set alarms and countdowns.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Neural Networks and AI
+# Neural Networks & AI Discovery
 
 Welcome to our website, where you can explore the exciting world of neural networks and artificial intelligence. Our site features a stunning background with a minimalist graphic of a neural network against a backdrop of complementary colors.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Minimalist Cyborg Design for Future
+# Future Minimalist Cyborg Design
 
 Step into the future with our minimalist cyborg design. Featuring a single line drawing of a cyborg in bold contrast against a solid background, available in bright red or blue, this design is perfect for those who appreciate modern aesthetics.
 

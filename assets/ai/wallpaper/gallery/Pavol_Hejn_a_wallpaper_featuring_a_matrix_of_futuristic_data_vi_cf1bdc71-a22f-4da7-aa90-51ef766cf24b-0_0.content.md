@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Data Analysis for Your Business
+# Business Data Analysis
 
 Welcome to our website where we provide advanced data analysis solutions for businesses. Our services include data visualization, predictive analytics, and machine learning. We believe that data is the key to unlocking a business's full potential, and that's why we offer tailored solutions to help you make sense of your data.
 

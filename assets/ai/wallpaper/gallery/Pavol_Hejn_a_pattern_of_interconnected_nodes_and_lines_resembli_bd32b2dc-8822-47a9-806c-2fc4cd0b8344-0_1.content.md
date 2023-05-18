@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# NeuroFlow: Personalized Mental Health Tech
+# NeuroFlow: Mental Health Tech
 
 NeuroFlow is a mental health technology company that utilizes clinical best practices, technology, and data analytics to provide personalized care for individuals struggling with mental health issues. Our mission is to empower people to take control of their mental health by equipping them with the necessary tools.
 

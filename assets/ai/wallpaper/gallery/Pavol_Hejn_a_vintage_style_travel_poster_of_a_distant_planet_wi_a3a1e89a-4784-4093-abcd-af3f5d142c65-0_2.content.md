@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Vintage Space Travel Backgrounds
+# Retro Space Backgrounds
 
 Welcome to our website featuring a vintage-style travel poster background of a distant planet. With its artistic rendering of the landscape and bold typography, this background is perfect for space enthusiasts who want to add some adventure to their browsing experience.
 

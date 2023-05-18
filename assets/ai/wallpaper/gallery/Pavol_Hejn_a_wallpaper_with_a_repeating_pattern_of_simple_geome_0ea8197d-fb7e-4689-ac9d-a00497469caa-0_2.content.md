@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Update space with geometric designs
+# Geometric Space Update
 
 Add a touch of modern sophistication to your home or office decor with our collection of geometric designs. Our monochromatic patterns feature simple shapes in shades of grey and blue, creating a subtle yet striking backdrop for any space.
 

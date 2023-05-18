@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify with a Virtual Assistant
+# Virtual Assistant Simplifies
 
 Meet your new personal virtual assistant! This sleek graphic of a chatbot or virtual assistant will bring both functionality and style to your desktop or mobile device. With plenty of space for messages and alerts, you'll never miss an important notification again.
 

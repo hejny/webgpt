@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech Trends with Surrealist Background
+# Surreal Tech Trends
 
 Welcome to our tech enthusiast website, where we explore the latest advancements in technology and how they are shaping our world. Our surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors, reflects our forward-thinking approach.
 

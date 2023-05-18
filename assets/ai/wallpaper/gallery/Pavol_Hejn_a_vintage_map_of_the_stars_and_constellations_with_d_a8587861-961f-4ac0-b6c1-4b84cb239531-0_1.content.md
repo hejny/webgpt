@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Vintage Star Map for Cosmic Exploration
+# Cosmic Vintage Star Map
 
 Welcome to our website, where you can discover the beauty of the universe with our stunning vintage map of stars and constellations. This wallpaper features detailed illustrations of spacecraft and celestial bodies that will take you on a journey through the cosmos.
 

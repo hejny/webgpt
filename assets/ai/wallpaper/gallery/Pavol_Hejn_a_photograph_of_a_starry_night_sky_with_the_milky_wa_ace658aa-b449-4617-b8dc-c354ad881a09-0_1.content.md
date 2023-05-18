@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Stargaze: Night Sky Exploration
+# Night Sky Stargazing
 
 Looking for a breathtaking view of the Milky Way galaxy? Look no further than Stargaze, your ultimate guide to exploring the wonders of the night sky.
 

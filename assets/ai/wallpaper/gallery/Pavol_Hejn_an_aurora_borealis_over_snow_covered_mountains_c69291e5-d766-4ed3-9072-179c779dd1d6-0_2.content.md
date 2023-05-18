@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Shorter title: Aurora Borealis for Your Digital Experience
+# Digital Aurora Borealis
 
 Welcome to our website where you can add a touch of natural beauty to your digital devices with our stunning aurora borealis background. Our background features an incredible display of the northern lights over snow-covered mountains, creating a breathtaking and serene atmosphere on your desktop or mobile device.
 

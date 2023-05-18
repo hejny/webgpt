@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Discover the Beauty and Power of Mathematics
+# Mathematics: Beauty and Power Unveiled
 
 Welcome to our website, where we celebrate the beauty and power of mathematics. Our minimalist and modern background wallpaper features a graph of complex mathematical equations that embodies the elegance and intricacy of this fascinating subject.
 

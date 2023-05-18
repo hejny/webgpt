@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Data Visualization for Better Business Decisions
+# Data Viz for Business Decisions
 
 Welcome to our website dedicated to providing you with the latest insights on data visualizations and analytics. Our background showcases a matrix of futuristic data visualizations and graphs that sets the tone for the cutting-edge information you'll find here.
 

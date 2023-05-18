@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Future Sustainable City Built by AI.
+# AI-built Sustainable City
 
 Welcome to our website showcasing a futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure. Our vision is to build a world where technology and nature coexist in harmony, creating a better future for all.
 

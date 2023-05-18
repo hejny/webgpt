@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space Backgrounds for Your Journey
+# Journey Space Backgrounds
 
 Welcome to our website where we offer a unique collection of space-themed backgrounds that will take you on a journey through the vast expanse of the universe. Our latest addition features an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet, ready for exploration.
 

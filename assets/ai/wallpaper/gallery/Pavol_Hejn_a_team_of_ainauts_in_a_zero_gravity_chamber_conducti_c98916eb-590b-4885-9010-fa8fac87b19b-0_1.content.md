@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: AI and Human Physiology Intersection
+# AInauts: AI and Physiology Intersection
 
 Welcome to AInauts, where we push the boundaries of scientific exploration by studying the effects of artificial intelligence on the human body. Our team of experts conducts experiments in a zero-gravity chamber, simulating conditions that astronauts experience in space.
 

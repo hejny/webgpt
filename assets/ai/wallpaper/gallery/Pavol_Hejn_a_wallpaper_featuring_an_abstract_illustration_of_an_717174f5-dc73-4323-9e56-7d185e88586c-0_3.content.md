@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Next-Gen AI-Powered Search Engine
+# AI-Powered Search Engine
 
 Welcome to our website, where we offer a state-of-the-art search engine powered by artificial intelligence. Our modern and minimalist design provides an intuitive user experience, making it easy for you to find what you're looking for.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech-inspired workspace theme for futuristic vibe
+# Futuristic tech workspace theme
 
 Upgrade your workspace with our custom tech-inspired theme. Featuring a repeating pattern of circuit board components in shades of black, grey, and neon green, this intricate design will give your desktop a futuristic vibe that's sure to impress.
 

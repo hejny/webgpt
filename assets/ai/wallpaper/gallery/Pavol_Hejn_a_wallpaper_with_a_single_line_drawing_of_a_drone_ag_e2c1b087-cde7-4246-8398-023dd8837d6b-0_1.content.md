@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Drone Delivery: The Future of Shipping
+# Drone Delivery: Future Shipping
 
 Welcome to our website dedicated to exploring the world of drone delivery! Our mission is to provide insights into the latest advancements in this innovative technology that promises to revolutionize the way we ship goods.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Power up with Data Visualization
+# Data Viz for Powering Up
 
 Welcome to our website, where we explore the fascinating world of data visualization. Our modern and sleek design features a stunning abstract illustration of futuristic data visualization, setting the tone for our content.
 

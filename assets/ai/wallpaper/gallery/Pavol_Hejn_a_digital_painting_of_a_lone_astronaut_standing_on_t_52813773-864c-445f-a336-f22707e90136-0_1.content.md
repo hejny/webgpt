@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Art for Cosmic Exploration
+# Cosmic Digital Art
 
 Experience the wonders of the cosmos with this breathtaking digital painting. Featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space, this artwork is perfect for anyone who loves adventure and exploration.
 

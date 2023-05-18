@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Space Station Archaeology
+# AInauts: Space Archaeology
 
 Welcome to AInauts, a website dedicated to chronicling the adventures of a team of explorers and their AI companions as they delve into the secrets of a massive space station orbiting a distant planet.
 

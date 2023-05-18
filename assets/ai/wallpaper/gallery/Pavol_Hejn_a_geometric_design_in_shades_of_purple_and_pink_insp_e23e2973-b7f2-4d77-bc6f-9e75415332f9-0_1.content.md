@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Design for Elevated Spaces
+# Quantum Design for High Spaces
 
 Welcome to our website featuring a mesmerizing geometric design inspired by the shape of a quantum computer. The stunning pattern in shades of purple and pink creates a unique visual effect that is sure to elevate any space.
 

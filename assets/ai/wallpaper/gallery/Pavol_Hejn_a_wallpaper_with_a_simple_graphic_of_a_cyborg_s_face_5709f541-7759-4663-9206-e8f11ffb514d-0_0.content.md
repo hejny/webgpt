@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Secure Your Digital Identity with Cybersecurity Tips
+# Secure Your Digital Identity with Cyber Tips
 
 Welcome to our cyber security website, where we provide resources and information on how to protect your digital identity. As part of our mission to promote cyber safety, we've created a visually stunning graphic that you can use as a background for your desktop or mobile device.
 

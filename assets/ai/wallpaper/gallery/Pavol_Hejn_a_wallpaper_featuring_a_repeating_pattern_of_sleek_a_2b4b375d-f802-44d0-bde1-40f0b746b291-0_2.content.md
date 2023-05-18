@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modernize Your Digital Style with Our Device Pattern
+# Update Your Digital Style with Our Device Pattern
 
 Upgrade the look of your digital devices with our modern pattern featuring popular gadgets like smartphones, tablets, and laptops.
 

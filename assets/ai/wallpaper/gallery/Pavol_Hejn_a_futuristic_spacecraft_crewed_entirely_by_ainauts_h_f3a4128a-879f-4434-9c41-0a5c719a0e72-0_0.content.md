@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Spacecraft: Frontier Exploration
+# AI Space Exploration
 
 Welcome to our website dedicated to exploring the possibilities of artificial intelligence in space travel. Our wallpaper depicts a futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds. But this is not just science fiction - we are on the cusp of a new era of space exploration, where AI and robotics will play an increasingly important role.
 

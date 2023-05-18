@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Quantum Computing: Science & Art
+# Quantum Computing: SciArt
 
 Welcome to our website, where we explore the fascinating world of quantum computing and its intersection with art. Our geometric design, inspired by the shape of a quantum computer and featuring shades of purple and pink, serves as a beautiful representation of the beauty that emerges from this groundbreaking technology.
 

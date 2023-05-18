@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Boost Productivity with Futuristic Workspace Design
+# Futuristic Workspace Design for Productivity Boost
 
 Transform your digital workspace into an inspiring environment with our new stylized illustration. Our minimalist and modern design features a futuristic workspace that will encourage creativity and boost productivity.
 

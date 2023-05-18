@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Futuristic Urban Wallpaper: Neon Nights
+# Neon Nights Wallpaper
 
 Experience the excitement and energy of urban life with our stunning wallpaper, Neon Nights. Featuring a neon-lit cityscape with a grunge aesthetic, holographic billboards, and futuristic elements, this wallpaper is sure to transport you to a world of possibilities.
 

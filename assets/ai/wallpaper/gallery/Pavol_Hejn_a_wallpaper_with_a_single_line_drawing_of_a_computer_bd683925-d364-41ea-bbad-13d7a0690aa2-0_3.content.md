@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Sleek Tech Workspace Background
+# Tech Workspace Background
 
 Enhance your digital workspace with our minimalist single line drawing of a computer chip. Our background features a muted color palette in shades of grey or blue, adding a touch of sophistication to any device.
 

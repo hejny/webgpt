@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Space Adventure: Asteroid Exploration
+# Asteroid Exploration in Space
 
 Welcome to our space adventure website, where you can experience the thrill of exploring the vast and dangerous universe. Our latest wallpaper features a digital painting of a spaceship navigating through an asteroid field. The rocky terrain and debris create a sense of excitement and challenge that will inspire your own space exploration dreams.
 

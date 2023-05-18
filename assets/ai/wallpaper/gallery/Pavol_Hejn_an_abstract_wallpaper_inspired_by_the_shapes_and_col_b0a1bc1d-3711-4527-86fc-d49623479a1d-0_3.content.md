@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Quantum-Inspired Background for Projects
+# Quantum Background for Projects
 
 Elevate your creative projects with our unique quantum-inspired abstract background. Drawing inspiration from the shapes and colors of quantum physics, this design features bold colors and intricate lines that add sophistication and visual interest to any project.
 

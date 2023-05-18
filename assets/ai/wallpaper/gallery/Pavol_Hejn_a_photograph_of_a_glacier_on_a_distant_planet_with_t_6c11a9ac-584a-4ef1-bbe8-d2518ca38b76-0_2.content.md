@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Space Wonders with Stunning Backgrounds
+# Discover Space Wonders with Stunning Backdrops
 
 Take a journey through the cosmos with our breathtaking collection of space backgrounds. From distant galaxies to mesmerizing nebulae, our stunning images will transport you to another world.
 

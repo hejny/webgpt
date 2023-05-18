@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Future Desktop Backgrounds
+# Retro-Future Desktop Wallpapers
 
 Welcome to our website where you can find a variety of unique desktop backgrounds to suit your preferences. Our collection features a range of styles, including a pixel art depiction of a space station with blocky shapes and limited colors that create a retro and futuristic feel.
 
