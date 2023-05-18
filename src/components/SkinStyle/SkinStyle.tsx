@@ -24,6 +24,7 @@ export function SkinStyle() {
 }
 
 /**
+ * TODO: !!!! Use ONLY --palette vars
  * TODO: !!! Make repeat in palette to guarantee at least 10 colors
  * TODO: Allow partial ISkin
  */
