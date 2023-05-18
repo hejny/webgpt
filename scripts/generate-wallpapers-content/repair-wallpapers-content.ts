@@ -36,7 +36,7 @@ repairWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     });
 
 async function repairWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
-    console.info(`🧾🩹  Repairing wallpapers texts`);
+    console.info(`🧾🩹  Repairing wallpapers content`);
 
     // TODO: Use isParallel
 
@@ -70,12 +70,12 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾🩹 Repair wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾🩹 Repair wallpapers content`);
     }
 
     console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
 
-    console.info(`[ Done 🧾🩹  Repairing wallpapers texts ]`);
+    console.info(`[ Done 🧾🩹  Repairing wallpapers content ]`);
 }
 
 /**

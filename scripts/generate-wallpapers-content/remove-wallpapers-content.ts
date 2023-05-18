@@ -36,7 +36,7 @@ removeWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     });
 
 async function removeWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
-    console.info(`🧾🗑  Removing wallpapers texts`);
+    console.info(`🧾🗑  Removing wallpapers content`);
 
     // TODO: Use isParallel
 
@@ -92,12 +92,12 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾🗑 Remove wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾🗑 Remove wallpapers content`);
     }
 
     console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
 
-    console.info(`[ Done 🧾🗑  Removeing wallpapers texts ]`);
+    console.info(`[ Done 🧾🗑  Removeing wallpapers content ]`);
 }
 
 /**

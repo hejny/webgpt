@@ -41,7 +41,7 @@ generateWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     });
 
 async function generateWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
-    console.info(`🧾  Generating wallpapers texts`);
+    console.info(`🧾  Generating wallpapers content`);
 
     // TODO: Use isParallel
 
@@ -173,7 +173,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾 Generate wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾 Generate wallpapers content`);
     }
 
     console.info(
@@ -182,7 +182,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             .join('\n')}`,
     );
 
-    console.info(`[ Done 🧾  Generating wallpapers texts ]`);
+    console.info(`[ Done 🧾  Generating wallpapers content ]`);
 }
 
 function createContentPromptTemplate() {
