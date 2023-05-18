@@ -123,13 +123,14 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                     continue;
                 }
 
-                if (title.trim().length > 'Futuristic Cityscape Wallpaper'.length) {
-                    //                    'Tvořím něco z ničeho nic'
-                    //                    'Futuristic Cityscape Wallpaper'
+                /*
+                Note: Doing this in repair script
+                if (title.trim().length > MAX_CHARS_IN_TITLE) {
                     const fixPropmt = `Heading is too long, rewrite whole content.`;
                     content = await askGpt(fixPropmt, true);
                     continue;
                 }
+                */
 
                 break;
             }

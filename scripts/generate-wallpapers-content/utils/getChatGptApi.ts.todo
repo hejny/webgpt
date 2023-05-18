@@ -1,0 +1,18 @@
+export async function getChatGptApi(){
+
+    const importDynamic = new Function('modulePath', 'return import(modulePath)');
+    const { ChatGPTAPI, ChatGPTError } = await importDynamic('chatgpt');
+    const chatGptApi = new ChatGPTAPI({
+        apiKey: OPENAI_API_KEY!,
+        completionParams: {
+            temperature: 0.5,
+            top_p: 0.8,
+        },
+    });
+
+
+
+
+    
+
+}

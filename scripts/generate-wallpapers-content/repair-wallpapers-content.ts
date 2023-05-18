@@ -7,7 +7,9 @@ import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
-import { FONTS } from '../../config';
+import spaceTrim from 'spacetrim';
+import { forTime } from 'waitasecond';
+import { FONTS, MAX_CHARS_IN_TITLE, OPENAI_API_KEY } from '../../config';
 import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
@@ -44,28 +46,80 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
         throw new Error(`Working tree is not clean`);
     }
 
-    const usedFonts = new Set<string>();
+    const importDynamic = new Function('modulePath', 'return import(modulePath)');
+    const { ChatGPTAPI, ChatGPTError } = await importDynamic('chatgpt');
+    const chatGptApi = new ChatGPTAPI({
+        apiKey: OPENAI_API_KEY!,
+        completionParams: {
+            temperature: 0.5,
+            top_p: 0.8,
+        },
+    });
+
+    const usedFonts: Record<string, number> = {};
 
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
+            async function askGpt(message: string): Promise<string> {
+                message = spaceTrim(message);
+
+                try {
+                    const gptResponseForContent = await chatGptApi.sendMessage(message);
+                    return gptResponseForContent.text;
+                } catch (error) {
+                    if (!(error instanceof ChatGPTError)) {
+                        throw error;
+                    }
+
+                    console.warn(`⚠️  ${(error as Error).message}`);
+                    console.warn(`💤  Retrying in 1 minute`);
+
+                    await forTime(1000 * 60);
+
+                    return askGpt(message);
+                }
+            }
+
             let content = await readFile(contentPath, 'utf-8');
+            const originalContent = content;
             let title = extractTitleFromMarkdown(content);
 
-            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
+            let font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             if (font && !FONTS.includes(font)) {
                 const existingFont = FONTS.find((existingFont) => font.includes(existingFont));
 
                 if (existingFont) {
-                    console.info(chalk.green(` 🩹  Repair the file`));
                     content = content.replace(font, existingFont);
-                    await writeFile(contentPath, content, 'utf-8');
+                    font = existingFont;
                 }
             }
 
-            // TODO: !!! Shorten the text
+            font = font ?? 'Unknown';
+            usedFonts[font] = usedFonts[font] ?? 0;
+            usedFonts[font]++;
+
+            if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
+                const titleSummary = await askGpt(`
+                    Summarize: ${title}
+                `);
+
+                if (titleSummary.trim().length <= MAX_CHARS_IN_TITLE) {
+                    content = content.replace(title, titleSummary);
+                } else {
+                    console.warn(
+                        chalk.bgYellow(` ⚠️  Title is too long after the summarization`) +
+                            chalk.yellow(`title:${title}\ntitleSummary:${titleSummary}`),
+                    );
+                }
+            }
+
+            if (content !== originalContent) {
+                console.info(chalk.green(` 🩹  Repair the file`));
+                await writeFile(contentPath, content, 'utf-8');
+            }
         },
     });
 
@@ -73,7 +127,11 @@ async function repairWallpapersContent({ isCommited, parallel }: { isCommited: b
         await commit(await getWallpapersDir(), `🧾🩹 Repair wallpapers content`);
     }
 
-    console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
+    console.info(
+        `🔤 Using fonts:\n${Object.entries(usedFonts)
+            .map(([font, count]) => `• ${count}x ${font}`)
+            .join('\n')}`,
+    );
 
     console.info(`[ Done 🧾🩹  Repairing wallpapers content ]`);
 }

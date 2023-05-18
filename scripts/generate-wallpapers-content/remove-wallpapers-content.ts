@@ -1,8 +1,4 @@
 #!/usr/bin/env ts-node
-
-import * as dotenv from 'dotenv';
-dotenv.config({ path: '.env.local' });
-
 import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, rm } from 'fs/promises';
@@ -44,7 +40,6 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         throw new Error(`Working tree is not clean`);
     }
 
-    const usedFonts = new Set<string>();
 
     await forEachWallpaper({
         isShuffled: false,
@@ -94,8 +89,6 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
     if (isCommited) {
         await commit(await getWallpapersDir(), `🧾🗑 Remove wallpapers content`);
     }
-
-    console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
 
     console.info(`[ Done 🧾🗑  Removeing wallpapers content ]`);
 }
