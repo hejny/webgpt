@@ -1,0 +1,51 @@
+<iframe src="/showcase/caadd184-364b-4ec7-a0cc-436d0e3b5330" scrolling="no"></iframe>
+<!-- -->
+<iframe src="/showcase/91433014-7f75-439a-9d35-6dbba2c6d79e" scrolling="no"></iframe>
+<iframe src="/showcase/a53d2f17-9e88-4121-80cc-d3e4c763a799" scrolling="no"></iframe>
+<iframe src="/showcase/9c6f0729-9cac-47b6-9e8f-6b7d1eb6140e" scrolling="no"></iframe>
+<iframe src="/showcase/39a218fa-b35e-4fb7-a445-66fae2e92439" scrolling="no"></iframe>
+<iframe src="/showcase/4f1f7f6e-63e8-4f96-bcec-28732c3186bc" scrolling="no"></iframe>
+<iframe src="/showcase/dae9dd8c-d34d-4c9e-b1c1-a46e4e45c182" scrolling="no"></iframe>
+<iframe src="/showcase/99ef193d-045c-453c-bea2-783e9eea7947" scrolling="no"></iframe>
+<iframe src="/showcase/7d39abd0-eaf0-426d-a1d5-14744e7b450d" scrolling="no"></iframe>
+<iframe src="/showcase/3a5cc840-ff31-4e71-9fb0-90f2d86b43ee" scrolling="no"></iframe>
+<iframe src="/showcase/a0cc7d43-1d6b-4c00-93ab-fb67d4927b56" scrolling="no"></iframe>
+<iframe src="/showcase/96645ee0-2441-4bf6-9977-f23b0bbf3a3a" scrolling="no"></iframe>
+<iframe src="/showcase/ba1556cd-b6f5-4bbf-87cd-eb55bc61a116" scrolling="no"></iframe>
+<!--TODO: Add more-->
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250vh;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        pointer-events: none;
+    }
+</style>
+
+<script>
+    // TODO: Do not show the Next.js errors in the iframes (they are not relevant in this case)
+    document.querySelectorAll('iframe').forEach((iframeElement) => {
+        function hideNextjsErrors() {
+            const iframeDocument = iframeElement.contentDocument;
+            iframeDocument.body.innerHTML =
+                iframeDocument.body.innerHTML +
+                `
+                    nextjs-portal {
+                        display: none;
+                    }
+                `;
+        }
+
+        hideNextjsErrors();
+        iframeElement.addEventListener('load', hideNextjsErrors);
+    });
+</script>

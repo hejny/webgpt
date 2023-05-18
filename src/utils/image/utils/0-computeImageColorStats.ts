@@ -1,6 +1,5 @@
 import { Vector } from 'xyzt';
 import { COLORSTATS_VERSION } from '../../../../config';
-import { Color } from '../../color/Color';
 import { IImage } from '../IImage';
 import { colorDownscaleImage } from './colorDownscaleImage';
 import { computeImageAverageColor } from './computeImageAverageColor';
@@ -9,14 +8,14 @@ import { computeImageLightestColor } from './computeImageLightestColor';
 import { computeImageMostFrequentColors } from './computeImageMostFrequentColors';
 import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
+import { computeImagePalette } from './computeImagePalette';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
 
 /**
  * Compute the image color statistics
  */
 export function computeImageColorStats(image: IImage): IImageColorStats {
-    return {
-        version: COLORSTATS_VERSION,
+    const stats = {
         ...computeWholeImageColorStats(image),
         bottomHalf: computeWholeImageColorStats(
             image.crop(new Vector(0, image.height * (1 / 2)), new Vector(image.width, image.height)),
@@ -27,7 +26,9 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
         bottomLine: computeWholeImageColorStats(
             image.crop(new Vector(0, image.height - 1), new Vector(image.width, image.height)),
         ),
-    };
+    } satisfies Omit<IImageColorStats, 'version' | 'palette'>;
+
+    return { version: COLORSTATS_VERSION, palette: computeImagePalette(stats), ...stats };
 }
 
 /**

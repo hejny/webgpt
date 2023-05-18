@@ -1,6 +1,6 @@
 import {
     COLORS_LIMIT,
-    MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES,
+    DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
     MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO,
 } from '../../../../config';
 import { Color } from '../../color/Color';
@@ -23,12 +23,12 @@ export function computeImageMostSatulightedColors(image: IImage): Array<WithTake
     const saturatedColors = colors.filter((color) => colorSatulightion(color) >= requiredSatulightion);
 
     // 3️⃣ Pick colors with different hue (compared to all other already picked colors)
-    // !!!! Pokud některé barvy vylučují respektive vždy beru tu první a ty ostatní blízké zahazuji než narazím na nějakou další no tak tohle by mělo fungovat tím způsobem že se všechny příbuzné barvy seskupí do jednoho clusteru a ten se vážení zprůměruje na základě četnosti – tím pádem například pokud je hodně odstínů šedé a nejčastější je ten nejsvětlejší tak výsledná barva nebude pouze ta nejsvětlejší ale někde uprostřed více světla
+    //    TODO: This has one flaw which need to be fixed [🦯]
     const uniqueColors: Array<WithTake<Color>> = [];
     for (const color of saturatedColors) {
         if (
             uniqueColors.every(
-                (uniqueColor) => colorHueDistance(color, uniqueColor) >= MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES,
+                (uniqueColor) => colorHueDistance(color, uniqueColor) >= DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
             )
         ) {
             uniqueColors.push(color);

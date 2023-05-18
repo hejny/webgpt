@@ -60,7 +60,7 @@ export function GallerySection(props: SampleProps) {
                                     />
                                 </Item.Image>
                                 {/*
-                                TODO: !! [2]
+                                TODO: !! [2] + Probbably use Item.FloatingTitle
                                 <Item.Image>
                                     <style>{`
                                         @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font

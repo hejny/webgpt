@@ -1,4 +1,9 @@
-version: 7
+version: 8
+palette:
+    - '#001122'
+    - '#ffffff'
+    - '#aa2266'
+    - '#66dddd'
 averageColor: '#3d2b45'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
