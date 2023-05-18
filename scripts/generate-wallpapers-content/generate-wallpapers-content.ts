@@ -64,6 +64,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
+        logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
             if (await isFileExisting(contentPath)) {
                 console.info(`⏩ Content file does already exists`);

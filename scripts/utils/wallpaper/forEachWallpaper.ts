@@ -11,8 +11,9 @@ export async function forEachWallpaper(options: {
     makeWork(wallpeperFiles: IWallpaperFiles): Promise<void>;
     parallelWorksCount: number;
     isShuffled: boolean;
+    logBeforeEachWork: keyof IWallpaperFiles;
 }): Promise<void> {
-    const { makeWork, parallelWorksCount, isShuffled } = options;
+    const { makeWork, parallelWorksCount, isShuffled, logBeforeEachWork } = options;
 
     const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
 
@@ -32,12 +33,13 @@ export async function forEachWallpaper(options: {
     for (const metadataPath of wallpapersMetadataPaths) {
         await forPlay();
 
-        console.info(chalk.grey(`${metadataPath.split('\\').join('/')}`));
-
         const contentPath = metadataPath.replace(/\.json$/, '.content.md');
         const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.yaml');
 
-        const work = /* not await */ makeWork({ metadataPath, contentPath, colorStatsPath }).catch((error) => {
+        const wallpaperFiles = { metadataPath, contentPath, colorStatsPath };
+        console.info(chalk.grey(wallpaperFiles[logBeforeEachWork].split('\\').join('/')));
+
+        const work = /* not await */ makeWork(wallpaperFiles).catch((error) => {
             // TODO: Add timeout error
             // TODO: [4] report all errors ALSO at the end
 

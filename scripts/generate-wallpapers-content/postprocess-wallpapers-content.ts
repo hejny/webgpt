@@ -6,7 +6,7 @@ dotenv.config({ path: '.env.local' });
 import chalk from 'chalk';
 import commander from 'commander';
 import { readFile, rm } from 'fs/promises';
-import { join, relative } from 'path';
+import { join } from 'path';
 import { FONTS } from '../../config';
 import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
 import { commit } from '../utils/autocommit/commit';
@@ -48,10 +48,8 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
 
     await forEachWallpaper({
         isShuffled: false,
-        parallelWorksCount: parallel,
+        parallelWorksCount: parallel,  logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
-            console.info(chalk.gray(`🗑 ${relative(process.cwd(), contentPath).split('\\').join('/')}`));
-
             const content = await readFile(contentPath, 'utf-8');
             const title = extractTitleFromMarkdown(content);
 
@@ -64,7 +62,6 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
 
             if (title?.toLowerCase().includes('wallpaper')) {
                 rm(contentPath);
-
                 console.info(chalk.red(`🗑 Removing file because it contains "wallpaper" in title\n"${title}"`));
                 return;
             }
