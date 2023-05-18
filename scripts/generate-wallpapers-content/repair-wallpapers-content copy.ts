@@ -5,7 +5,7 @@ dotenv.config({ path: '.env.local' });
 
 import chalk from 'chalk';
 import commander from 'commander';
-import { readFile, rm } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 import { FONTS } from '../../config';
 import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
@@ -25,7 +25,7 @@ program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
 program.parse(process.argv);
 const { commit: isCommited, parallel } = program.opts();
 
-postprocessWallpapersContent({ isCommited, parallel: parseInt(parallel) })
+repairWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -35,8 +35,8 @@ postprocessWallpapersContent({ isCommited, parallel: parseInt(parallel) })
         process.exit(0);
     });
 
-async function postprocessWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
-    console.info(`🧾  Postprocessing wallpapers texts`);
+async function repairWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
+    console.info(`🧾🩹  Repairing wallpapers texts`);
 
     // TODO: Use isParallel
 
@@ -48,44 +48,21 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
 
     await forEachWallpaper({
         isShuffled: false,
-        parallelWorksCount: parallel,  logBeforeEachWork: 'contentPath',
+        parallelWorksCount: parallel,
+        logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
             const content = await readFile(contentPath, 'utf-8');
             const title = extractTitleFromMarkdown(content);
 
-            // TODO: [💵] DRY this checks
-            if (title === null) {
-                rm(contentPath);
-                console.info(chalk.red(`🗑 Removing file because of missing title `));
-                return;
-            }
-
-            if (title?.toLowerCase().includes('wallpaper')) {
-                rm(contentPath);
-                console.info(chalk.red(`🗑 Removing file because it contains "wallpaper" in title\n"${title}"`));
-                return;
-            }
-
-            if (
-                !(
-                    /\#\#/.test(content) ||
-                    /\`\`\`/.test(content) ||
-                    /\*\*/.test(content) ||
-                    /\_/.test(content) ||
-                    /^-\s+/m.test(content)
-                )
-            ) {
-                rm(contentPath);
-                console.info(chalk.red(`🗑 Removing file because it has no structure`));
-                return;
-            }
-
             const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
-            if (!font || !FONTS.includes(font)) {
-                // TODO: Try to fix the font
-                rm(contentPath);
-                console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
-                return;
+            if (font && !FONTS.includes(font)) {
+                const existingFont = FONTS.find((existingFont) => font.includes(existingFont));
+
+                if (existingFont) {
+                    console.info(chalk.green(` 🩹  Repair the file`));
+                    content.replace(font, existingFont);
+                    await writeFile(contentPath, content, 'utf-8');
+                }
             }
 
             // TODO: !!! Shorten the text
@@ -93,12 +70,12 @@ async function postprocessWallpapersContent({ isCommited, parallel }: { isCommit
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾 Postprocess wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾🩹 Repair wallpapers texts`);
     }
 
     console.info(`🔤 Using fonts: ${Array.from(usedFonts).join(', ')}`);
 
-    console.info(`[ Done 🧾  Postprocessing wallpapers texts ]`);
+    console.info(`[ Done 🧾🩹  Repairing wallpapers texts ]`);
 }
 
 /**

@@ -53,32 +53,39 @@
                 "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit",
                 "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit",
                 "ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts --parallel 10 --commit",
-                "ts-node ./scripts/generate-wallpapers-content/postprocess-wallpapers-content.ts --commit"
+                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --commit",
+                "ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts --commit"
             ],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭⏬ [ 1/4 ] Harvest wallpapers library",
+            "name": "🏭⏬ [ 1/5 ] Harvest wallpapers library",
             "commands": ["ts-node ./scripts/generate-wallpapers-harvest/TODO.txt"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🧾 [2-3/4] Generate wallpapers content",
+            "name": "🏭🧾 [2-3/5] Generate wallpapers content",
             "commands": ["ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🎨 [2-3/4] Generate wallpapers color stats",
+            "name": "🏭🎨 [2-3/5] Generate wallpapers color stats",
             "commands": ["ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🧾 [ 4/4 ] Postprocess wallpapers content",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/postprocess-wallpapers-content.ts"],
+            "name": "🏭🧾 [ 4/5 ] Repair wallpapers content",
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
+            "name": "🏭🧾 [ 5/5 ] Remove wallpapers content",
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts"],
             "onlySingle": true,
             "focus": true
         },
