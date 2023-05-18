@@ -1,4 +1,4 @@
-<!--font:The best fitting Google font for the website would be "Montserrat".-->
+<!--font:Montserrat-->
 
 # Explore the Cosmos with Our Space-Inspired Website
 

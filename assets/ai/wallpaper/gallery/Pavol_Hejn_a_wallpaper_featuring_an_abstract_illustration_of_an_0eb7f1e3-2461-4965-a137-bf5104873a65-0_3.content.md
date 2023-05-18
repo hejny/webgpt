@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Open Sans" for the website.-->
+<!--font:Open Sans-->
 
 # Discover the Future of AI-Powered Search Engines
 

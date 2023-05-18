@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Roboto" font for the website.-->
+<!--font:Roboto-->
 
 # Welcome to Ainautes - Pushing the Boundaries of Science and Technology
 

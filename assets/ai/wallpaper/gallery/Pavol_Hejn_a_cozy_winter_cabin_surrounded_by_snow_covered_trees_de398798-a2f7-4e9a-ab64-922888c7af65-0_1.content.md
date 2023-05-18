@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Create a Cozy Winter Retreat with Our Snowy Cabin Background
 
