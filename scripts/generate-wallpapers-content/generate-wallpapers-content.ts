@@ -162,10 +162,11 @@ function createContentPromptTemplate() {
             The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
             - Use markdown format 
-            - Start with the heading
+            - Start with heading
             - Heading should be short and concise
             - The content should look like a real website 
             - The website should not be about the wallpaper, wallpaper is just a related background
+            - Heading should be contain work "wallpaper" or "background"
             - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
             - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
             - You can use formatting like bold or _italic_
@@ -187,10 +188,13 @@ function createFontPromptTemplate() {
     return spaceTrim(
         (block) =>
             `
-                Write me a Google font which is best fitting for the website. Write just the font name nothing else.
+                Write me a Google font which is best fitting for the website.
 
                 Pick from the list:
-                ${block(FONTS.map((fontName) => `- fontName`).join('\n'))}
+                ${block(FONTS.map((fontName) => `- ${fontName}`).join('\n'))}
+
+
+                Write just the font name nothing else.
 
             
             `,
