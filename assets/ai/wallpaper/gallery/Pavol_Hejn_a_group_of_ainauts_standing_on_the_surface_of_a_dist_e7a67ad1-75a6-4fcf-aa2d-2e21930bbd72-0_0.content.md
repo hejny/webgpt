@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them."
+"A group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Discover Exoplanet Enigmas
 
-Experience the wonder of exploration with our collection of breathtaking wallpapers. Immerse yourself in the awe-inspiring scene of a group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them.
+Experience the wonder of exploration with our collection of breathtaking wallpapers. Immerse yourself in the awe-inspiring scene of a group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them.
 
 ## Explore the Unknown
 
-Let your imagination run wild as you gaze upon this stunning depiction of space exploration. Our wallpaper captures the thrill of discovery and the excitement of venturing into the unknown. 
+Let your imagination run wild as you gaze upon this stunning depiction of space exploration. Our wallpaper captures the thrill of discovery and the excitement of venturing into the unknown.
 
 ## Awe-Inspiring Design
 

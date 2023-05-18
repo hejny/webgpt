@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts launching a rocket into space, with the Earth visible in the background."
+"A team of Ainautes launching a rocket into space, with the Earth visible in the background."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Space Exploration
 
-Welcome to our website dedicated to exploring space with the help of artificial intelligence. Our team of AInauts is constantly pushing the boundaries of what's possible in space exploration.
+Welcome to our website dedicated to exploring space with the help of artificial intelligence. Our team of Ainautes is constantly pushing the boundaries of what's possible in space exploration.
 
 ## Wallpaper
 

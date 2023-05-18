@@ -6,7 +6,7 @@ Welcome to our website, dedicated to bringing you the latest news and updates on
 
 ## Discover New Worlds
 
-With our background, you can immerse yourself in a world of adventure, joining a group of AInauts as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
+With our background, you can immerse yourself in a world of adventure, joining a group of Ainautes as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
 
 ## User Stories
 
@@ -20,17 +20,17 @@ Our users have shared their experiences with our background:
 
 For those interested in learning more about space exploration and discovery, we've compiled a list of references to help you get started:
 
-- [NASA](#nasa)
-- [SpaceX](#spacex)
-- [European Space Agency](#esa)
+-   [NASA](#nasa)
+-   [SpaceX](#spacex)
+-   [European Space Agency](#esa)
 
 ## Contact Us
 
 If you have any questions or comments about our AI-powered background, please don't hesitate to reach out to us:
 
-- Email: [contact@universebackground.com](mailto:contact@universebackground.com)
-- Phone: 555-1234
-- Twitter: [@UniverseBackground](#twitter)
+-   Email: [contact@universebackground.com](mailto:contact@universebackground.com)
+-   Phone: 555-1234
+-   Twitter: [@UniverseBackground](#twitter)
 
 Thank you for visiting our website, and we hope you enjoy our background as much as we do!
 
@@ -38,14 +38,14 @@ Thank you for visiting our website, and we hope you enjoy our background as much
 
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance."
+"A group of Ainautes standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -65,7 +65,7 @@ Welcome to our website, where we bring you the latest in space exploration and d
 
 ## Explore the Unknown
 
-With our wallpaper, you can join a group of AInauts as they stand on the surface of a distant planet, looking up at a massive, alien structure looming in the distance. Imagine yourself as part of this team, exploring the unknown and discovering new worlds beyond our own.
+With our wallpaper, you can join a group of Ainautes as they stand on the surface of a distant planet, looking up at a massive, alien structure looming in the distance. Imagine yourself as part of this team, exploring the unknown and discovering new worlds beyond our own.
 
 ## User Stories
 
@@ -109,7 +109,7 @@ Welcome to our website, dedicated to bringing you the latest news and updates on
 
 ## Discover New Worlds
 
-With our background, you can immerse yourself in a world of adventure, joining a group of AInauts as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
+With our background, you can immerse yourself in a world of adventure, joining a group of Ainautes as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
 
 ## User Stories
 
@@ -153,7 +153,7 @@ Welcome to our website, dedicated to bringing you the latest news and updates on
 
 ## Discover New Worlds
 
-With our background, you can immerse yourself in a world of adventure, joining a group of AInauts as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
+With our background, you can immerse yourself in a world of adventure, joining a group of Ainautes as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
 
 ## User Stories
 
@@ -197,7 +197,7 @@ Welcome to our website, dedicated to bringing you the latest news and updates on
 
 ## Discover New Worlds
 
-With our background, you can immerse yourself in a world of adventure, joining a group of AInauts as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
+With our background, you can immerse yourself in a world of adventure, joining a group of Ainautes as they explore the surface of a distant planet. Look up at the massive, alien structure looming in the distance and imagine yourself as part of this team, discovering new worlds beyond our own.
 
 ## User Stories
 

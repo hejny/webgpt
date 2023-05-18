@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet."
+"A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Space Station Exploration
 
-Welcome to our website dedicated to the exploration of a massive, ancient space station orbiting a distant planet. Our team of AInauts and their AI companions have embarked on an exciting mission to uncover the secrets of this mysterious structure.
+Welcome to our website dedicated to the exploration of a massive, ancient space station orbiting a distant planet. Our team of Ainautes and their AI companions have embarked on an exciting mission to uncover the secrets of this mysterious structure.
 
 ## About the Mission
 
@@ -42,9 +42,9 @@ We believe that the exploration of this space station will have a profound impac
 
 If you're interested in learning more about the AI space station mission, here are some resources that you might find helpful:
 
-- [NASA's official page on the mission](#nasa)
-- [A documentary on the making of the mission](#documentary)
-- [Interviews with the team members](#interviews)
+-   [NASA's official page on the mission](#nasa)
+-   [A documentary on the making of the mission](#documentary)
+-   [Interviews with the team members](#interviews)
 
 ## Contact Us
 

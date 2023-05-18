@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"AInauts and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
+"Ainautes and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Research in Zero-G
 
-Welcome to our website dedicated to the exciting world of artificial intelligence research in zero-gravity environments! Our team of AInauts and their trusty AI companions are constantly pushing the boundaries of what's possible in space-based experimentation.
+Welcome to our website dedicated to the exciting world of artificial intelligence research in zero-gravity environments! Our team of Ainautes and their trusty AI companions are constantly pushing the boundaries of what's possible in space-based experimentation.
 
 ## About Us
 
@@ -46,9 +46,9 @@ Here are just a few examples of how our research is making a difference:
 
 If you're interested in learning more about our research, we invite you to check out some of the following resources:
 
-- [Zero-Gravity AI: Exploring the Potential of Artificial Intelligence in Space](#)
-- [AI and Robotics in Space: The Next Frontier](#)
-- [NASA's Artificial Intelligence Research in Space](#)
+-   [Zero-Gravity AI: Exploring the Potential of Artificial Intelligence in Space](#)
+-   [AI and Robotics in Space: The Next Frontier](#)
+-   [NASA's Artificial Intelligence Research in Space](#)
 
 ## Contact Us
 

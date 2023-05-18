@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet."
+"A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -24,7 +24,7 @@ Welcome to The AI Space Station Explorer, the ultimate resource for all things r
 
 ## About Us
 
-Our team of AInauts and their AI companions are passionate about exploring the vast expanse of space and uncovering its many mysteries. We believe that the future of space exploration lies in the integration of advanced artificial intelligence technologies, and we are committed to pushing the boundaries of what is possible in this exciting field.
+Our team of Ainautes and their AI companions are passionate about exploring the vast expanse of space and uncovering its many mysteries. We believe that the future of space exploration lies in the integration of advanced artificial intelligence technologies, and we are committed to pushing the boundaries of what is possible in this exciting field.
 
 ## Our Mission
 
@@ -34,9 +34,9 @@ At The AI Space Station Explorer, our mission is to promote the development and 
 
 Here are just a few examples of how AI is already being used in space exploration:
 
-- NASA's Mars Curiosity Rover uses AI algorithms to analyze images of the Martian surface and identify potential targets for further study.
-- SpaceX's Crew Dragon spacecraft uses AI-powered sensors to detect potential hazards during docking maneuvers with the International Space Station.
-- The European Space Agency's Gaia mission is using AI to process vast amounts of data about the positions and motions of stars in our galaxy.
+-   NASA's Mars Curiosity Rover uses AI algorithms to analyze images of the Martian surface and identify potential targets for further study.
+-   SpaceX's Crew Dragon spacecraft uses AI-powered sensors to detect potential hazards during docking maneuvers with the International Space Station.
+-   The European Space Agency's Gaia mission is using AI to process vast amounts of data about the positions and motions of stars in our galaxy.
 
 ## Resources
 

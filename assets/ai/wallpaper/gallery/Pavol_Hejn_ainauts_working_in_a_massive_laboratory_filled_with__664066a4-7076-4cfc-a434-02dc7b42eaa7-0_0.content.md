@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
+"Ainautes working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to AInauts Lab
+# Welcome to Ainautes Lab
 
-At AInauts Lab, we are dedicated to pushing the boundaries of AI research. Our team of experts works tirelessly in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.
+At Ainautes Lab, we are dedicated to pushing the boundaries of AI research. Our team of experts works tirelessly in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research.
 
 ## About Us
 
@@ -24,12 +24,12 @@ Our lab is home to some of the brightest minds in the field of artificial intell
 
 ## Our Research
 
-At AInauts Lab, we focus on a wide range of research areas, including:
+At Ainautes Lab, we focus on a wide range of research areas, including:
 
-- Natural Language Processing
-- Computer Vision
-- Robotics
-- Machine Learning
+-   Natural Language Processing
+-   Computer Vision
+-   Robotics
+-   Machine Learning
 
 We are constantly exploring new ideas and pushing the limits of what's possible with AI.
 
@@ -45,4 +45,4 @@ Are you passionate about AI and looking for an exciting career opportunity? We a
 
 ---
 
-Stay up to date with the latest news and developments from AInauts Lab by following us on [Twitter](#) and [LinkedIn](#).
+Stay up to date with the latest news and developments from Ainautes Lab by following us on [Twitter](#) and [LinkedIn](#).

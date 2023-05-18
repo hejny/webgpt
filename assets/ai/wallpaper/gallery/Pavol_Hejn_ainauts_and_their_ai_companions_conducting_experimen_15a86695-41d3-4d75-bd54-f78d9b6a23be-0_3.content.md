@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"AInauts and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
+"Ainautes and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Experiments in Zero-Gravity
 
-Welcome to the AI Space Lab, where AInauts and their AI companions conduct experiments in a zero-gravity laboratory. Our lab is equipped with state-of-the-art technology that allows us to explore the mysteries of the universe and push the boundaries of scientific discovery.
+Welcome to the AI Space Lab, where Ainautes and their AI companions conduct experiments in a zero-gravity laboratory. Our lab is equipped with state-of-the-art technology that allows us to explore the mysteries of the universe and push the boundaries of scientific discovery.
 
 ## Our Mission
 
@@ -30,12 +30,12 @@ At AI Space Lab, our mission is to advance scientific knowledge through cutting-
 
 Our team of scientists and engineers are currently working on a variety of projects, including:
 
-- Studying the behavior of particles in zero-gravity environments
-- Developing new materials for use in space travel and exploration
-- Creating AI systems that can assist astronauts in their work
-- Investigating the potential for using AI to detect and mitigate the effects of space radiation
+-   Studying the behavior of particles in zero-gravity environments
+-   Developing new materials for use in space travel and exploration
+-   Creating AI systems that can assist astronauts in their work
+-   Investigating the potential for using AI to detect and mitigate the effects of space radiation
 
-All of our research is conducted in our zero-gravity laboratory, which is specially designed to simulate the conditions of outer space. Our AInauts and their AI companions work together to collect data, analyze results, and develop new theories about the universe.
+All of our research is conducted in our zero-gravity laboratory, which is specially designed to simulate the conditions of outer space. Our Ainautes and their AI companions work together to collect data, analyze results, and develop new theories about the universe.
 
 ## User Stories
 
@@ -49,9 +49,9 @@ We believe that our work has the potential to make a real difference in the worl
 
 If you're interested in learning more about our research, we encourage you to check out some of our references:
 
-- [AI in Space: How Artificial Intelligence is Used for Space Exploration](#)
-- [The Future of Space Travel: Innovations in Materials Science](#)
-- [Zero-Gravity Research: Exploring the Behavior of Particles in Outer Space](#)
+-   [AI in Space: How Artificial Intelligence is Used for Space Exploration](#)
+-   [The Future of Space Travel: Innovations in Materials Science](#)
+-   [Zero-Gravity Research: Exploring the Behavior of Particles in Outer Space](#)
 
 ## Contact Us
 

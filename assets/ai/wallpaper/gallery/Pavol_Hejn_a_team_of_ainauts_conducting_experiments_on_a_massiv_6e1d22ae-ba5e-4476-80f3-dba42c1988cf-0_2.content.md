@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet."
+"A team of Ainautes conducting experiments on a massive, frozen moon orbiting a gas giant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Exploring Gas Giant Moons
 
-Welcome to our website where we share our adventures as a team of AInauts exploring the frozen moons orbiting gas giant planets. Our current mission involves conducting experiments on a massive, frozen moon that has caught our attention.
+Welcome to our website where we share our adventures as a team of Ainautes exploring the frozen moons orbiting gas giant planets. Our current mission involves conducting experiments on a massive, frozen moon that has caught our attention.
 
 ## The Challenge of Exploration
 

@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips."
+"A team of Ainautes working together to explore the depths of a black hole, with futuristic technology at their fingertips."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Explores Black Hole Depths
 
-Welcome to our website dedicated to exploring the mysteries of black holes! Our team of AInauts is passionate about using cutting-edge technology to uncover the secrets of these fascinating cosmic phenomena. 
+Welcome to our website dedicated to exploring the mysteries of black holes! Our team of Ainautes is passionate about using cutting-edge technology to uncover the secrets of these fascinating cosmic phenomena.
 
 ## Our Mission
 
@@ -30,9 +30,9 @@ Our mission is to use AI technology to explore the depths of black holes and gai
 
 Our team is made up of experts in the fields of astrophysics, computer science, and artificial intelligence. Together, we bring a unique set of skills and perspectives to our work. Meet some of our key team members:
 
-- **Dr. Sarah Johnson** - Astrophysicist and project lead
-- **Dr. Raj Patel** - Computer scientist and AI expert
-- **Dr. Maria Rodriguez** - Data analyst and visualization specialist
+-   **Dr. Sarah Johnson** - Astrophysicist and project lead
+-   **Dr. Raj Patel** - Computer scientist and AI expert
+-   **Dr. Maria Rodriguez** - Data analyst and visualization specialist
 
 ## Our Technology
 
@@ -50,14 +50,14 @@ We are proud to have worked with a number of partners and collaborators on our m
 
 Interested in learning more about black holes and our work to explore them? Check out these resources:
 
-- [NASA's Black Hole Portal](#)
-- [The Event Horizon Telescope Collaboration](#)
-- [Our Publications](#)
+-   [NASA's Black Hole Portal](#)
+-   [The Event Horizon Telescope Collaboration](#)
+-   [Our Publications](#)
 
 ## Contact Us
 
 Have a question or want to learn more about our work? Get in touch with us:
 
-- Email: info@blackholeexplorers.com
-- Phone: 555-1234
-- Address: 123 Main Street, Anytown USA
+-   Email: info@blackholeexplorers.com
+-   Phone: 555-1234
+-   Address: 123 Main Street, Anytown USA

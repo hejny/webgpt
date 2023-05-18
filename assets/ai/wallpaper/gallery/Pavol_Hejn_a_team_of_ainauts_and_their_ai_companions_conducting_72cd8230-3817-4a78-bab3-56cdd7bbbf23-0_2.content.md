@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
+"A team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Explores Gas Giant
 
-Welcome to our website dedicated to the exploration of the universe! Our team of AInauts, together with their AI companions, has been conducting experiments on the surface of a massive, gas giant planet. We are excited to share with you our findings and discoveries from this incredible journey.
+Welcome to our website dedicated to the exploration of the universe! Our team of Ainautes, together with their AI companions, has been conducting experiments on the surface of a massive, gas giant planet. We are excited to share with you our findings and discoveries from this incredible journey.
 
 ## About Us
 
@@ -50,9 +50,9 @@ Here are some stories from people who have followed our journey:
 
 If you're interested in learning more about our mission and the discoveries we have made, check out these resources:
 
-- [NASA's website on gas giant planets](#)
-- [Article on AI companions in space exploration](#)
-- [Scientific paper on our experiments and findings](#)
+-   [NASA's website on gas giant planets](#)
+-   [Article on AI companions in space exploration](#)
+-   [Scientific paper on our experiments and findings](#)
 
 ## Contact Us
 

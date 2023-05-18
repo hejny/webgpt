@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+            "A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/8cbbc87f-f5bd-4378-b4b7-67f4011d6d46/0_3.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "ae513306-7417-480a-8faf-2b6d13f4a6ab",
-    "image_paths": [
-        "https://cdn.midjourney.com/8cbbc87f-f5bd-4378-b4b7-67f4011d6d46/0_3.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/8cbbc87f-f5bd-4378-b4b7-67f4011d6d46/0_3.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105410888451756094",
     "platform_thread_id": null,
-    "prompt": "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.",
+    "prompt": "A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.  --aspect 3:2 --q 2",
+    "full_command": "A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life.  --aspect 3:2 --q 2",
     "reference_job_id": "8cbbc87f-f5bd-4378-b4b7-67f4011d6d46",
     "reference_image_num": "3"
 }

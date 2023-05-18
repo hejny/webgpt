@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
+"A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI-Driven Space Exploration
 
-Welcome to our website dedicated to the exciting world of space exploration powered by artificial intelligence. Our team of AInauts is at the forefront of cutting-edge technology, piloting a state-of-the-art spaceship through the endless expanse of the cosmos.
+Welcome to our website dedicated to the exciting world of space exploration powered by artificial intelligence. Our team of Ainautes is at the forefront of cutting-edge technology, piloting a state-of-the-art spaceship through the endless expanse of the cosmos.
 
 With our advanced AI systems and unparalleled expertise, we are on a mission of discovery, exploring new frontiers and uncovering the mysteries of the universe. Join us on this incredible journey as we push the boundaries of what's possible and unlock the secrets of the cosmos.
 

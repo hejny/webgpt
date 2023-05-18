@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
+"A group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Mission to Save Earth.
 
-Welcome to our website dedicated to exploring the possibilities of artificial intelligence (AI) in saving our planet from catastrophic events. Our wallpaper showcases a group of AInauts stationed in space, monitoring a massive asteroid hurtling towards Earth. With only their AI and technology to rely on, they are on a mission to save humanity.
+Welcome to our website dedicated to exploring the possibilities of artificial intelligence (AI) in saving our planet from catastrophic events. Our wallpaper showcases a group of Ainautes stationed in space, monitoring a massive asteroid hurtling towards Earth. With only their AI and technology to rely on, they are on a mission to save humanity.
 
 ## Our Mission
 

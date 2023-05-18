@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips."
+"A team of Ainautes working together to explore the depths of a black hole, with futuristic technology at their fingertips."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,27 +14,27 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts' Journey Welcome
+# Ainautes' Journey Welcome
 
-Explore the depths of a black hole with our team of AInauts, equipped with futuristic technology at their fingertips.
+Explore the depths of a black hole with our team of Ainautes, equipped with futuristic technology at their fingertips.
 
 ---
 
 ## Wallpaper Description
 
-Our wallpaper depicts a team of AInauts working together to explore the mysteries of a black hole. The image showcases the advanced technology that they use in their mission, which includes sleek spacesuits and high-tech equipment.
+Our wallpaper depicts a team of Ainautes working together to explore the mysteries of a black hole. The image showcases the advanced technology that they use in their mission, which includes sleek spacesuits and high-tech equipment.
 
 ---
 
-## Who are the AInauts?
+## Who are the Ainautes?
 
-The AInauts are a team of highly skilled scientists and engineers who use artificial intelligence and machine learning to explore the unknown depths of space. They work tirelessly to uncover new information about the universe and push the boundaries of what we know.
+The Ainautes are a team of highly skilled scientists and engineers who use artificial intelligence and machine learning to explore the unknown depths of space. They work tirelessly to uncover new information about the universe and push the boundaries of what we know.
 
 ---
 
 ## Our Mission
 
-At AInauts, our mission is to discover and understand the mysteries of the universe using cutting-edge technology and innovative techniques. We believe that by exploring the unknown, we can unlock the secrets of the cosmos and improve life on Earth.
+At Ainautes, our mission is to discover and understand the mysteries of the universe using cutting-edge technology and innovative techniques. We believe that by exploring the unknown, we can unlock the secrets of the cosmos and improve life on Earth.
 
 ---
 
@@ -44,7 +44,7 @@ At AInauts, our mission is to discover and understand the mysteries of the unive
 
 ## Join Us
 
-If you're interested in joining our team of AInauts or learning more about our mission, please [contact us](#contact) for more information.
+If you're interested in joining our team of Ainautes or learning more about our mission, please [contact us](#contact) for more information.
 
 ---
 
@@ -52,10 +52,10 @@ If you're interested in joining our team of AInauts or learning more about our m
 
 Follow us on social media to stay up-to-date on our latest discoveries and advancements in space exploration:
 
-- Twitter: [@AInautsOfficial](https://twitter.com/AInautsOfficial)
-- Facebook: [@AInautsOfficial](https://www.facebook.com/AInautsOfficial)
-- Instagram: [@AInautsOfficial](https://www.instagram.com/AInautsOfficial)
+-   Twitter: [@AinautesOfficial](https://twitter.com/AinautesOfficial)
+-   Facebook: [@AinautesOfficial](https://www.facebook.com/AinautesOfficial)
+-   Instagram: [@AinautesOfficial](https://www.instagram.com/AinautesOfficial)
 
 ---
 
-Thank you for visiting AInauts! We hope you enjoyed our wallpaper and learning more about our mission.
+Thank you for visiting Ainautes! We hope you enjoyed our wallpaper and learning more about our mission.

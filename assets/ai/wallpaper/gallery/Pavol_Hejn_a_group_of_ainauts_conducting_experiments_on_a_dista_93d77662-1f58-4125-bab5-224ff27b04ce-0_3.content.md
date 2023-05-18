@@ -6,7 +6,7 @@ Welcome to our website dedicated to exploring the mysteries of the universe! Our
 
 ## Wallpaper
 
-Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
+Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## About Us
 
@@ -30,9 +30,9 @@ Here are some stories from people who have been inspired by our work:
 
 If you're interested in learning more about our work, here are some resources to check out:
 
-- Our blog, where we share updates on our latest projects and discoveries
-- Our social media pages, where you can connect with other space enthusiasts and stay up-to-date on the latest news
-- Our research papers, which are published in top scientific journals and conferences around the world
+-   Our blog, where we share updates on our latest projects and discoveries
+-   Our social media pages, where you can connect with other space enthusiasts and stay up-to-date on the latest news
+-   Our research papers, which are published in top scientific journals and conferences around the world
 
 ## Contact Us
 
@@ -42,14 +42,14 @@ If you have any questions or would like to get involved with our team, please do
 
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
+"A group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ Welcome to our website dedicated to exploring the mysteries of the universe! Our
 
 ## Wallpaper
 
-Our stunning wallpaper depicts a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background. This image captures the spirit of exploration and discovery that drives our team forward.
+Our stunning wallpaper depicts a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background. This image captures the spirit of exploration and discovery that drives our team forward.
 
 ## About Us
 
@@ -117,7 +117,7 @@ Welcome to our website dedicated to exploring the mysteries of the universe! Our
 
 ## Wallpaper
 
-Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background. 
+Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## About Us
 
@@ -165,7 +165,7 @@ Welcome to our website dedicated to exploring the mysteries of the universe! Our
 
 ## Wallpaper
 
-Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
+Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## About Us
 
@@ -213,7 +213,7 @@ Welcome to our website dedicated to exploring the mysteries of the universe! Our
 
 ## Wallpaper
 
-Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
+Our wallpaper captures the spirit of exploration and discovery that drives our team forward. It depicts a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## About Us
 

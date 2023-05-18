@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
+            "A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/558e018d-91d7-479e-9a46-385c298123dd/0_2.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "caadd184-364b-4ec7-a0cc-436d0e3b5330",
-    "image_paths": [
-        "https://cdn.midjourney.com/558e018d-91d7-479e-9a46-385c298123dd/0_2.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/558e018d-91d7-479e-9a46-385c298123dd/0_2.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105413959789592606",
     "platform_thread_id": null,
-    "prompt": "A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them.",
+    "prompt": "A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them.  --aspect 3:2 --q 2",
+    "full_command": "A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them.  --aspect 3:2 --q 2",
     "reference_job_id": "558e018d-91d7-479e-9a46-385c298123dd",
     "reference_image_num": "2"
 }

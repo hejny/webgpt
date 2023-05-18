@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet."
+"A team of Ainautes conducting experiments on a massive, frozen moon orbiting a gas giant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring Icy Moons in the Outer Solar System
 
-Welcome to our website dedicated to exploring the icy moons of the outer solar system! Our team of AInauts is conducting groundbreaking experiments on these fascinating celestial bodies, and we're excited to share our findings with you.
+Welcome to our website dedicated to exploring the icy moons of the outer solar system! Our team of Ainautes is conducting groundbreaking experiments on these fascinating celestial bodies, and we're excited to share our findings with you.
 
 ## About Us
 
@@ -46,16 +46,16 @@ We've received numerous messages from people around the world who are fascinated
 
 If you're interested in learning more about our research, we've compiled a list of references below:
 
-- Smith, J. et al. (2022). "Subsurface Oceans on Icy Moons: Implications for Astrobiology." *Science Advances*, 8(1), eabc1234. 
-- Jones, R. et al. (2023). "Composition and Geology of a Massive Frozen Moon Orbiting a Gas Giant Planet." *Nature Astronomy*, 7(2), 123-134.
-- Johnson, M. et al. (2023). "Exploring the Icy Moons of the Outer Solar System: Insights from Multiple Spacecraft Flybys." *Journal of Geophysical Research: Planets*, 128(4), 567-578.
+-   Smith, J. et al. (2022). "Subsurface Oceans on Icy Moons: Implications for Astrobiology." _Science Advances_, 8(1), eabc1234.
+-   Jones, R. et al. (2023). "Composition and Geology of a Massive Frozen Moon Orbiting a Gas Giant Planet." _Nature Astronomy_, 7(2), 123-134.
+-   Johnson, M. et al. (2023). "Exploring the Icy Moons of the Outer Solar System: Insights from Multiple Spacecraft Flybys." _Journal of Geophysical Research: Planets_, 128(4), 567-578.
 
 ## Contact Us
 
 If you have any questions or comments about our research, please don't hesitate to get in touch! You can reach us by email at [contact@icy-moons-exploration.com](mailto:contact@icy-moons-exploration.com) or follow us on social media using the links below:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 Thank you for visiting our website, and we hope you'll continue to follow our exciting journey into the outer solar system!

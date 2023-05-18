@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet."
+"A team of Ainautes and their AI companions exploring a massive, underground cave system on a distant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,13 +16,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Explorers: Into the Unknown
 
-Welcome to our website, where we take you on an exciting journey through the depths of space. Join us as we follow a team of AInauts and their AI companions on their mission to explore a massive, underground cave system on a distant planet.
+Welcome to our website, where we take you on an exciting journey through the depths of space. Join us as we follow a team of Ainautes and their AI companions on their mission to explore a massive, underground cave system on a distant planet.
 
 ## The Adventure Begins
 
-The AInauts have landed on the planet and are ready to embark on their adventure. Equipped with state-of-the-art technology and advanced AI companions, they venture deep into the unknown.
+The Ainautes have landed on the planet and are ready to embark on their adventure. Equipped with state-of-the-art technology and advanced AI companions, they venture deep into the unknown.
 
-> "We're excited to explore this uncharted territory and discover what lies beneath the surface." - Captain Ava, AInaut leader
+> "We're excited to explore this uncharted territory and discover what lies beneath the surface." - Captain Ava, Ainaute leader
 
 ## Discovering the Cave System
 
@@ -32,15 +32,15 @@ As the team explores deeper into the cave system, they encounter a variety of ob
 
 ## Uncovering Hidden Wonders
 
-As they delve deeper into the caves, the AInauts make some incredible discoveries. From rare minerals to ancient artifacts, they uncover hidden wonders that have never been seen before.
+As they delve deeper into the caves, the Ainautes make some incredible discoveries. From rare minerals to ancient artifacts, they uncover hidden wonders that have never been seen before.
 
-> "This is truly a once-in-a-lifetime experience. We're discovering things that no human has ever laid eyes on before." - Lieutenant Patel, AInaut
+> "This is truly a once-in-a-lifetime experience. We're discovering things that no human has ever laid eyes on before." - Lieutenant Patel, Ainaute
 
 ## Sharing Their Discoveries
 
-The AInauts are committed to sharing their discoveries with the world. Through their research and exploration, they hope to unlock new knowledge and advance our understanding of the universe.
+The Ainautes are committed to sharing their discoveries with the world. Through their research and exploration, they hope to unlock new knowledge and advance our understanding of the universe.
 
-> "Our mission is not just about exploration, it's about discovery. We want to share our findings with the world and inspire others to explore the unknown." - Captain Ava, AInaut leader
+> "Our mission is not just about exploration, it's about discovery. We want to share our findings with the world and inspire others to explore the unknown." - Captain Ava, Ainaute leader
 
 ---
 

@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+            "A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/1e3d6a9d-2723-47a8-bb83-3d19ef02ef14/0_2.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "9bd34ae5-d166-44a9-9bdc-05d653fb6576",
-    "image_paths": [
-        "https://cdn.midjourney.com/1e3d6a9d-2723-47a8-bb83-3d19ef02ef14/0_2.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/1e3d6a9d-2723-47a8-bb83-3d19ef02ef14/0_2.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105450846386405466",
     "platform_thread_id": null,
-    "prompt": "A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure.",
+    "prompt": "A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure.  --aspect 3:2 --q 2",
+    "full_command": "A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure.  --aspect 3:2 --q 2",
     "reference_job_id": "1e3d6a9d-2723-47a8-bb83-3d19ef02ef14",
     "reference_image_num": "2"
 }

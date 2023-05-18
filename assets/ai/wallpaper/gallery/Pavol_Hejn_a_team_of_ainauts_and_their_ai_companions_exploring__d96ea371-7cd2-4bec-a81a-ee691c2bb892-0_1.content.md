@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions exploring a massive, underground cave system on a distant planet."
+"A team of Ainauts and their AI companions exploring a massive, underground cave system on a distant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI for Alien Cave Exploration
 
-Welcome to our website, where we take you on a thrilling adventure to a distant planet. Join our team of AInauts and their trusty AI companions as they delve into the depths of a massive underground cave system.
+Welcome to our website, where we take you on a thrilling adventure to a distant planet. Join our team of Ainauts and their trusty AI companions as they delve into the depths of a massive underground cave system.
 
 Our journey will take us through winding tunnels, treacherous crevices, and mysterious chambers filled with strange creatures and ancient artifacts. With the help of our advanced AI technology, we'll be able to navigate this dangerous terrain and uncover the secrets hidden within.
 

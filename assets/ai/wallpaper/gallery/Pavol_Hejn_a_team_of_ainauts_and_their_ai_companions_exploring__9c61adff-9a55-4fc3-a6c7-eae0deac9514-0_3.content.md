@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet."
+"A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Space Station Exploration
 
-Welcome to our website dedicated to the exciting adventures of a team of AInauts and their AI companions as they explore a massive, ancient space station orbiting a distant planet. 
+Welcome to our website dedicated to the exciting adventures of a team of Ainautes and their AI companions as they explore a massive, ancient space station orbiting a distant planet.
 
 Our team is made up of some of the brightest minds in artificial intelligence and space exploration, who have come together to uncover the secrets of this mysterious station and the civilization that built it. With the help of our advanced AI companions, we are able to navigate the complex systems of the station and unlock its many mysteries.
 

@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
+"A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Black Hole Expedition
 
-Welcome to our website, where we take you on a journey to the edge of a black hole. Our team of AInauts and their AI companions conduct experiments in this unfathomable space, where time and space warp around them.
+Welcome to our website, where we take you on a journey to the edge of a black hole. Our team of Ainautes and their AI companions conduct experiments in this unfathomable space, where time and space warp around them.
 
 ## Wallpaper
 
-![A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.](#)
+![A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.](#)
 
 ## About Us
 

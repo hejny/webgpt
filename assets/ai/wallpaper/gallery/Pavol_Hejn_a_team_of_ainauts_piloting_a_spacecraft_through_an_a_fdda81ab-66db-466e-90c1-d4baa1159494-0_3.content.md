@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
+"A team of Ainauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -24,7 +24,7 @@ Welcome to Space Odyssey, your ultimate destination for all things space explora
 
 ## Wallpaper
 
-Our stunning wallpaper features a team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. This incredible image captures the excitement and danger of space exploration, and serves as a reminder of the bravery and ingenuity of those who dare to venture into the unknown.
+Our stunning wallpaper features a team of Ainauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. This incredible image captures the excitement and danger of space exploration, and serves as a reminder of the bravery and ingenuity of those who dare to venture into the unknown.
 
 ## About Us
 

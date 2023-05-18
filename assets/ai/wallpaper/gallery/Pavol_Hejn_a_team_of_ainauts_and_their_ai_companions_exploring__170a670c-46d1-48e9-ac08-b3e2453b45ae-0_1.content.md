@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet."
+"A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Universe with Space Station Explorer
 
-Welcome to "The Space Station Explorer," a website dedicated to the exploration of the vast universe and all its wonders. Our team of AInauts and their AI companions are constantly discovering new planets, galaxies, and space stations that have never been seen before.
+Welcome to "The Space Station Explorer," a website dedicated to the exploration of the vast universe and all its wonders. Our team of Ainautes and their AI companions are constantly discovering new planets, galaxies, and space stations that have never been seen before.
 
 ## About Us
 

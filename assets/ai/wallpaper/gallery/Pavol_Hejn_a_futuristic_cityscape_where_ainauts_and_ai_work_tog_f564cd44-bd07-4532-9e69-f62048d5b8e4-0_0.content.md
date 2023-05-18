@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+"A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI-built Sustainable City
 
-Welcome to our website showcasing a futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure. Our vision is to build a world where technology and nature coexist in harmony, creating a better future for all.
+Welcome to our website showcasing a futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure. Our vision is to build a world where technology and nature coexist in harmony, creating a better future for all.
 
 ## Our Mission
 
@@ -42,9 +42,9 @@ We believe that sustainability should be at the core of every decision we make. 
 
 If you're interested in learning more about our approach to building sustainable cities, we recommend checking out the following resources:
 
-- [The Green New Deal](#)
-- [The United Nations Sustainable Development Goals](#)
-- [The Intergovernmental Panel on Climate Change](#)
+-   [The Green New Deal](#)
+-   [The United Nations Sustainable Development Goals](#)
+-   [The Intergovernmental Panel on Climate Change](#)
 
 ## Contact Us
 

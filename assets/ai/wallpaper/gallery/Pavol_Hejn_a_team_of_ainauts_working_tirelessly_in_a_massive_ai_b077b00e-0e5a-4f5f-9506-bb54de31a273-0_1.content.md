@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
+"A team of Ainautes working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Factory: Innovating Future
 
-Welcome to AI Factory, where a team of AInauts work tirelessly to create new and innovative technologies for the future. Our mission is to push the boundaries of what's possible with artificial intelligence and machine learning, and we're proud to be at the forefront of this exciting field.
+Welcome to AI Factory, where a team of Ainautes work tirelessly to create new and innovative technologies for the future. Our mission is to push the boundaries of what's possible with artificial intelligence and machine learning, and we're proud to be at the forefront of this exciting field.
 
 ## Our Work
 
@@ -28,10 +28,10 @@ At AI Factory, we're focused on developing cutting-edge AI technologies that can
 
 Some of our current projects include:
 
-- Developing AI-powered medical diagnostic tools that can help doctors detect diseases earlier and more accurately
-- Creating intelligent transportation systems that can reduce traffic congestion and improve safety on the roads
-- Building smart energy grids that can optimize energy usage and reduce carbon emissions
-- Designing educational software that can personalize learning for each student based on their unique needs and abilities
+-   Developing AI-powered medical diagnostic tools that can help doctors detect diseases earlier and more accurately
+-   Creating intelligent transportation systems that can reduce traffic congestion and improve safety on the roads
+-   Building smart energy grids that can optimize energy usage and reduce carbon emissions
+-   Designing educational software that can personalize learning for each student based on their unique needs and abilities
 
 We're always looking for talented individuals to join our team and help us drive innovation forward. If you're passionate about AI and want to make a difference in the world, we'd love to hear from you.
 
@@ -49,16 +49,16 @@ Our work has already had a significant impact on many people's lives. Here are j
 
 If you're interested in learning more about our work and the technologies we're developing, please check out the following resources:
 
-- [AI Factory Blog](#blog)
-- [AI Factory Research Papers](#papers)
-- [AI Factory Team Members](#team)
+-   [AI Factory Blog](#blog)
+-   [AI Factory Research Papers](#papers)
+-   [AI Factory Team Members](#team)
 
 ## Contact Us
 
 We'd love to hear from you! If you have any questions or comments about our work, please don't hesitate to get in touch.
 
-- Email: [contact@aifactory.com](mailto:contact@aifactory.com)
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: [contact@aifactory.com](mailto:contact@aifactory.com)
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 Thank you for visiting AI Factory. We look forward to working with you to create a better future through AI innovation.

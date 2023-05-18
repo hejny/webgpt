@@ -1,18 +1,18 @@
 <!--font:Montserrat-->
 
-# Discover with AInauts.
+# Discover with Ainauts.
 
-Embark on a thrilling adventure with our team of AInauts. Our latest wallpaper captures the excitement of exploration as they navigate a frozen wasteland on a distant planet, surrounded by towering ice formations.
+Embark on a thrilling adventure with our team of Ainauts. Our latest wallpaper captures the excitement of exploration as they navigate a frozen wasteland on a distant planet, surrounded by towering ice formations.
 
-Equipped with high-tech suits and advanced technology, our AInauts push the boundaries of what is possible and explore uncharted territories. Experience the wonder and awe of discovering new worlds through their eyes.
+Equipped with high-tech suits and advanced technology, our Ainauts push the boundaries of what is possible and explore uncharted territories. Experience the wonder and awe of discovering new worlds through their eyes.
 
-Download this stunning wallpaper now and let it transport you to another world. Join us in the pursuit of knowledge and discovery with AInauts, and discover the thrill of exploration.
+Download this stunning wallpaper now and let it transport you to another world. Join us in the pursuit of knowledge and discovery with Ainauts, and discover the thrill of exploration.
 
 <!--
 
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
+"A group of Ainauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -20,9 +20,9 @@ The header of the page should not be copy of the text but rather a real content 
 ---
 
 
-# Welcome to the World of AInauts
+# Welcome to the World of Ainauts
 
-Experience the thrill of exploration with our team of AInauts as they venture into uncharted territories in their high-tech suits. Our latest wallpaper features a group of AInauts on a distant planet, braving the frozen wasteland and towering ice formations.
+Experience the thrill of exploration with our team of Ainauts as they venture into uncharted territories in their high-tech suits. Our latest wallpaper features a group of Ainauts on a distant planet, braving the frozen wasteland and towering ice formations.
 
 Join us on an adventure beyond your imagination and discover the wonders of the universe. Download this stunning wallpaper now and let it transport you to another world.
 
@@ -36,31 +36,13 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Discover the Thrill of Exploration with AInauts
+# Discover the Thrill of Exploration with Ainauts
 
-Embark on an adventure beyond your wildest dreams with our team of AInauts. Our latest wallpaper captures the excitement of exploration as they traverse a frozen wasteland on a distant planet, surrounded by towering ice formations.
+Embark on an adventure beyond your wildest dreams with our team of Ainauts. Our latest wallpaper captures the excitement of exploration as they traverse a frozen wasteland on a distant planet, surrounded by towering ice formations.
 
-Experience the wonder and awe of discovering new worlds through the eyes of our AInauts. With their high-tech suits and advanced technology, they are able to explore uncharted territories and push the boundaries of what is possible.
+Experience the wonder and awe of discovering new worlds through the eyes of our Ainauts. With their high-tech suits and advanced technology, they are able to explore uncharted territories and push the boundaries of what is possible.
 
-Download this stunning wallpaper now and let it transport you to another world. Join us in the pursuit of knowledge and discovery, and discover the thrill of exploration with AInauts.
-
-
----
-
-
-Heading is too long, rewrite whole content.
-
-
----
-
-
-# Explore New Worlds with AInauts
-
-Join our team of AInauts on an adventure beyond your imagination. Our latest wallpaper captures the excitement of exploration as they brave a frozen wasteland on a distant planet, surrounded by towering ice formations.
-
-Equipped with high-tech suits and advanced technology, our AInauts are able to push the boundaries of what is possible and explore uncharted territories. Experience the wonder and awe of discovering new worlds through their eyes.
-
-Download this stunning wallpaper now and let it transport you to another world. Discover the thrill of exploration with AInauts and join us in the pursuit of knowledge and discovery.
+Download this stunning wallpaper now and let it transport you to another world. Join us in the pursuit of knowledge and discovery, and discover the thrill of exploration with Ainauts.
 
 
 ---
@@ -72,13 +54,31 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Join AInauts in the Pursuit of Discovery
+# Explore New Worlds with Ainauts
 
-Embark on a thrilling adventure with our team of AInauts. Our latest wallpaper captures the excitement of exploration as they navigate a frozen wasteland on a distant planet, surrounded by towering ice formations.
+Join our team of Ainauts on an adventure beyond your imagination. Our latest wallpaper captures the excitement of exploration as they brave a frozen wasteland on a distant planet, surrounded by towering ice formations.
 
-Equipped with high-tech suits and advanced technology, our AInauts push the boundaries of what is possible and explore uncharted territories. Experience the wonder and awe of discovering new worlds through their eyes.
+Equipped with high-tech suits and advanced technology, our Ainauts are able to push the boundaries of what is possible and explore uncharted territories. Experience the wonder and awe of discovering new worlds through their eyes.
 
-Download this stunning wallpaper now and let it transport you to another world. Join us in the pursuit of knowledge and discovery with AInauts, and discover the thrill of exploration.
+Download this stunning wallpaper now and let it transport you to another world. Discover the thrill of exploration with Ainauts and join us in the pursuit of knowledge and discovery.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Join Ainauts in the Pursuit of Discovery
+
+Embark on a thrilling adventure with our team of Ainauts. Our latest wallpaper captures the excitement of exploration as they navigate a frozen wasteland on a distant planet, surrounded by towering ice formations.
+
+Equipped with high-tech suits and advanced technology, our Ainauts push the boundaries of what is possible and explore uncharted territories. Experience the wonder and awe of discovering new worlds through their eyes.
+
+Download this stunning wallpaper now and let it transport you to another world. Join us in the pursuit of knowledge and discovery with Ainauts, and discover the thrill of exploration.
 
 
 ---

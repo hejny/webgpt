@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds."
+"A futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts' World.
+# Ainautes' World.
 
-Are you ready for an intergalactic adventure like no other? Step into the world of AInauts, where a futuristic spacecraft is crewed entirely by advanced artificial intelligence.
+Are you ready for an intergalactic adventure like no other? Step into the world of Ainautes, where a futuristic spacecraft is crewed entirely by advanced artificial intelligence.
 
 ## The Future of Space Travel
 
-At AInauts, we believe that the future of space travel lies in the hands of AI technology. Our spacecraft is equipped with the latest advancements in artificial intelligence, allowing us to explore the depths of space at incredible speeds.
+At Ainautes, we believe that the future of space travel lies in the hands of AI technology. Our spacecraft is equipped with the latest advancements in artificial intelligence, allowing us to explore the depths of space at incredible speeds.
 
 ## Meet the Crew
 
@@ -28,10 +28,10 @@ Our crew may be made up entirely of AI, but they are far from robotic. Each memb
 
 ## Join the Adventure
 
-Ready to embark on an adventure through the stars? Join the AInauts crew today and experience the thrill of space travel like never before. Whether you're looking to explore new worlds or simply enjoy the view, our spacecraft is the perfect way to see the universe.
+Ready to embark on an adventure through the stars? Join the Ainautes crew today and experience the thrill of space travel like never before. Whether you're looking to explore new worlds or simply enjoy the view, our spacecraft is the perfect way to see the universe.
 
-> "The universe is vast and full of wonders. Let the AInauts take you on a journey beyond your wildest dreams." - AInauts CEO
+> "The universe is vast and full of wonders. Let the Ainautes take you on a journey beyond your wildest dreams." - Ainautes CEO
 
 ---
 
-[Sign up now](#signup) to join the AInauts crew and start your journey through the cosmos.
+[Sign up now](#signup) to join the Ainautes crew and start your journey through the cosmos.

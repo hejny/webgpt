@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
+"Ainautes working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI and Robotics Research
 
-Welcome to our website dedicated to the latest advancements in artificial intelligence and robotics. Our team of AInauts is working tirelessly to push the boundaries of what's possible with these exciting technologies.
+Welcome to our website dedicated to the latest advancements in artificial intelligence and robotics. Our team of Ainautes is working tirelessly to push the boundaries of what's possible with these exciting technologies.
 
 ## About Us
 
@@ -30,10 +30,10 @@ Our massive laboratory is filled with glowing equipment and holographic displays
 
 Our research focuses on a variety of areas, including:
 
-- Natural language processing
-- Computer vision
-- Reinforcement learning
-- Robotics
+-   Natural language processing
+-   Computer vision
+-   Reinforcement learning
+-   Robotics
 
 We believe that by combining these fields, we can create intelligent systems that can operate in the real world and make a positive impact on society.
 

@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
+"Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,19 +14,19 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts' World
+# Ainautes' World
 
 ## Explore the Mysterious Tunnels of a Distant Planet
 
-Are you ready for an adventure of a lifetime? Join our team of AInauts as we explore the vast network of tunnels beneath the surface of a distant planet. With glowing crystals all around us, we'll navigate through the twists and turns, uncovering the secrets hidden within.
+Are you ready for an adventure of a lifetime? Join our team of Ainautes as we explore the vast network of tunnels beneath the surface of a distant planet. With glowing crystals all around us, we'll navigate through the twists and turns, uncovering the secrets hidden within.
 
-## Meet Our AInauts
+## Meet Our Ainautes
 
-Our team of AInauts are highly trained and equipped with the latest technology to ensure a safe and successful mission. Meet our crew:
+Our team of Ainautes are highly trained and equipped with the latest technology to ensure a safe and successful mission. Meet our crew:
 
-- **Ava:** The leader of our expedition, Ava is a seasoned explorer with years of experience in deep space missions.
-- **Max:** Our resident engineer, Max keeps our equipment running smoothly and troubleshoots any technical issues that arise.
-- **Luna:** As our chief scientist, Luna studies the geological formations and analyzes samples collected during our journey.
+-   **Ava:** The leader of our expedition, Ava is a seasoned explorer with years of experience in deep space missions.
+-   **Max:** Our resident engineer, Max keeps our equipment running smoothly and troubleshoots any technical issues that arise.
+-   **Luna:** As our chief scientist, Luna studies the geological formations and analyzes samples collected during our journey.
 
 ## Discover the Wonders of the Underground World
 

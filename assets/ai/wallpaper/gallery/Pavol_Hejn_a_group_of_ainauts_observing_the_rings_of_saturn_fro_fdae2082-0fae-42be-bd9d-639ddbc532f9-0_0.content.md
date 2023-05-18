@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies."
+"A group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Space Station Observing Saturn's Rings
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
 
 ## About the Wallpaper
 
-This wallpaper captures the beauty and wonder of space exploration. The AInauts are shown gazing in awe at the majestic rings of Saturn, which have fascinated astronomers for centuries. The high-tech space station they are stationed on is equipped with advanced technology that allows them to study the planet and its surroundings in great detail.
+This wallpaper captures the beauty and wonder of space exploration. The Ainautes are shown gazing in awe at the majestic rings of Saturn, which have fascinated astronomers for centuries. The high-tech space station they are stationed on is equipped with advanced technology that allows them to study the planet and its surroundings in great detail.
 
 ## Our Mission
 

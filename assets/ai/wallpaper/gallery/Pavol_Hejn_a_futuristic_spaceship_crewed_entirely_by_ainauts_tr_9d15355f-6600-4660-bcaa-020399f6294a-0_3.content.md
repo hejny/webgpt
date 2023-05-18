@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
+"A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Spaceship Explores Cosmos
 
-Welcome to our website featuring a stunning wallpaper of a futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.
+Welcome to our website featuring a stunning wallpaper of a futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery.
 
 ## About Us
 
@@ -28,7 +28,7 @@ Our mission is to push the boundaries of space exploration and discover new worl
 
 ## Our Technology
 
-Our spaceship is equipped with the latest advancements in AI technology, including advanced machine learning algorithms and neural networks. Our AInauts are capable of adapting to any situation and making split-second decisions based on real-time data.
+Our spaceship is equipped with the latest advancements in AI technology, including advanced machine learning algorithms and neural networks. Our Ainautes are capable of adapting to any situation and making split-second decisions based on real-time data.
 
 > "We are pioneers in the field of AI-driven space exploration, and we are constantly pushing the limits of what is possible." - Dr. John Smith, Chief Scientist
 

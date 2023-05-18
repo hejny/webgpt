@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
+"A team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Space Adventure!
 
-Are you ready for an interstellar adventure? Join our team of AInauts as they pilot a small spacecraft through a dangerous asteroid field, with debris flying all around them.
+Are you ready for an interstellar adventure? Join our team of Ainautes as they pilot a small spacecraft through a dangerous asteroid field, with debris flying all around them.
 
 ## Wallpaper
 

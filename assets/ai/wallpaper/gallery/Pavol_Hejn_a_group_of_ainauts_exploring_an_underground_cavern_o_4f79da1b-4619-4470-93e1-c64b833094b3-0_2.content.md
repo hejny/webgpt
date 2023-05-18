@@ -6,7 +6,7 @@ Welcome to our website, where you can explore the wonders of the universe from t
 
 ## Explore a Remote Planet
 
-Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of AInauts exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
+Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of Ainautes exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
 
 ## User Stories
 
@@ -20,30 +20,30 @@ Here are some stories from our satisfied customers:
 
 If you want to learn more about the science behind our virtual tours, check out these resources:
 
-- [NASA's website](#)
-- [Space.com](#)
-- [National Geographic](#)
+-   [NASA's website](#)
+-   [Space.com](#)
+-   [National Geographic](#)
 
 ## Contact Us
 
 If you have any questions or comments about our virtual tours, please don't hesitate to get in touch. You can reach us at:
 
-- Email: info@virtualtours.com
-- Phone: 555-1234
-- Twitter: @virtualtours
+-   Email: info@virtualtours.com
+-   Phone: 555-1234
+-   Twitter: @virtualtours
 
 <!--
 
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
+"A group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ Welcome to our website, where you can experience the thrill of space travel with
 
 ## Explore a Distant Planet
 
-Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of AInauts exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
+Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of Ainautes exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
 
 ## User Stories
 
@@ -105,7 +105,7 @@ Welcome to our website, where you can embark on a thrilling journey through the 
 
 ## Discover a Distant Planet
 
-Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of AInauts exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
+Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of Ainautes exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
 
 ## User Stories
 
@@ -147,7 +147,7 @@ Welcome to our website, where you can experience the thrill of space travel with
 
 ## Discover a New World
 
-Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of AInauts exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
+Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of Ainautes exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
 
 ## User Stories
 
@@ -189,7 +189,7 @@ Welcome to our website, where you can explore the wonders of the universe from t
 
 ## Explore a Remote Planet
 
-Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of AInauts exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
+Our latest tour takes you to a remote planet in a far-off galaxy. As you navigate the rugged terrain, you'll encounter a group of Ainautes exploring an underground cavern. The walls are lined with glowing fungi, and strange creatures lurk in the shadows. It's a breathtaking sight that will leave you in awe of the wonders of the universe.
 
 ## User Stories
 

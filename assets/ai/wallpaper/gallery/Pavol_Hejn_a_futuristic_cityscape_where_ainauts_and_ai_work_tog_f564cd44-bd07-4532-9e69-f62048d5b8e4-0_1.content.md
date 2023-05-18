@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+"A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Future City Building
 
-Experience a breathtaking view of a futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure. This wallpaper embodies the future of urban development where technology and sustainability are at the forefront.
+Experience a breathtaking view of a futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure. This wallpaper embodies the future of urban development where technology and sustainability are at the forefront.
 
 ## A New Era of City Building
 

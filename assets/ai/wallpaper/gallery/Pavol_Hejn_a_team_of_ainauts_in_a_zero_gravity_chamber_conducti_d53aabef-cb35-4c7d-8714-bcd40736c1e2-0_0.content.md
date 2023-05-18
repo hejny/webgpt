@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
+"A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,19 +14,19 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI's Impact on Human Physiology: AInauts
+# AI's Impact on Human Physiology: Ainautes
 
 ---
 
 Imagine a team of scientists, floating weightlessly in a zero-gravity chamber, conducting experiments that could change the way we think about artificial intelligence and its impact on the human body. This is the scene depicted in our wallpaper, which captures the excitement and wonder of scientific discovery.
 
-At AInauts, we are dedicated to exploring the frontiers of AI research, and our team of experts is constantly pushing the boundaries of what is possible. Through rigorous experimentation and analysis, we are working to unlock the full potential of this powerful technology, while also ensuring that it remains safe and beneficial for humanity.
+At Ainautes, we are dedicated to exploring the frontiers of AI research, and our team of experts is constantly pushing the boundaries of what is possible. Through rigorous experimentation and analysis, we are working to unlock the full potential of this powerful technology, while also ensuring that it remains safe and beneficial for humanity.
 
 Some of the key questions we are exploring include:
 
-- How does exposure to AI affect brain function and cognition?
-- What are the long-term effects of AI on physical health and well-being?
-- Can AI be used to enhance human performance and productivity?
+-   How does exposure to AI affect brain function and cognition?
+-   What are the long-term effects of AI on physical health and well-being?
+-   Can AI be used to enhance human performance and productivity?
 
 By tackling these and other important issues, we hope to pave the way for a future in which AI is fully integrated into our lives, helping us to achieve our goals and live healthier, more fulfilling lives.
 

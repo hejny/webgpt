@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance."
+            "A group of Ainautes standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/a93c661e-a50e-489d-8f0f-bf0104e73813/0_1.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "d54efa07-17ab-4c98-8a55-30d8e2f5cbb1",
-    "image_paths": [
-        "https://cdn.midjourney.com/a93c661e-a50e-489d-8f0f-bf0104e73813/0_1.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/a93c661e-a50e-489d-8f0f-bf0104e73813/0_1.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105433377701638164",
     "platform_thread_id": null,
-    "prompt": "A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.",
+    "prompt": "A group of Ainautes standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A group of AInauts standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.  --aspect 3:2 --q 2",
+    "full_command": "A group of Ainautes standing on the surface of a distant planet, looking up at a massive, alien structure looming in the distance.  --aspect 3:2 --q 2",
     "reference_job_id": "a93c661e-a50e-489d-8f0f-bf0104e73813",
     "reference_image_num": "1"
 }

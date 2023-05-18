@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts and their AI companions working together in a massive, zero-gravity space station."
+"Ainauts and their AI companions working together in a massive, zero-gravity space station."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,27 +14,27 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Companions Explore Space as AInauts
+# AI Companions Explore Space as Ainauts
 
-Welcome to our website where we showcase the incredible work of AInauts and their AI companions. Our stunning wallpaper depicts these intrepid explorers working together in a massive, zero-gravity space station.
+Welcome to our website where we showcase the incredible work of Ainauts and their AI companions. Our stunning wallpaper depicts these intrepid explorers working together in a massive, zero-gravity space station.
 
-## Who are AInauts?
+## Who are Ainauts?
 
-AInauts are astronauts who are accompanied by advanced artificial intelligence (AI) systems on their missions. These AI companions are designed to help with tasks such as navigation, data analysis, and problem-solving.
+Ainauts are astronauts who are accompanied by advanced artificial intelligence (AI) systems on their missions. These AI companions are designed to help with tasks such as navigation, data analysis, and problem-solving.
 
 ## The Benefits of AI Companions
 
-The use of AI companions has revolutionized space exploration. With their ability to process vast amounts of data quickly and accurately, they enable AInauts to make more informed decisions and carry out complex tasks with greater efficiency.
+The use of AI companions has revolutionized space exploration. With their ability to process vast amounts of data quickly and accurately, they enable Ainauts to make more informed decisions and carry out complex tasks with greater efficiency.
 
-> "Working with an AI companion is like having a second brain. It allows us to focus on the bigger picture and achieve more than we ever thought possible." - Commander Maria Rodriguez, AInaut
+> "Working with an AI companion is like having a second brain. It allows us to focus on the bigger picture and achieve more than we ever thought possible." - Commander Maria Rodriguez, Ainaut
 
-## Join the AInauts
+## Join the Ainauts
 
-Are you interested in becoming an AInaut? We are always looking for talented individuals to join our team. Check out our [careers page](#) for more information.
+Are you interested in becoming an Ainaut? We are always looking for talented individuals to join our team. Check out our [careers page](#) for more information.
 
 ## Explore More
 
-If you want to learn more about AInauts and their AI companions, check out our [blog](#) where we share stories from the frontiers of space exploration.
+If you want to learn more about Ainauts and their AI companions, check out our [blog](#) where we share stories from the frontiers of space exploration.
 
 ---
 

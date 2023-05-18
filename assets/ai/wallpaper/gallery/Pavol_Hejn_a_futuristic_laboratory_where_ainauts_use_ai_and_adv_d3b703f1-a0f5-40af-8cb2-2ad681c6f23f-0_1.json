@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+            "A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/d3b703f1-a0f5-40af-8cb2-2ad681c6f23f/0_1.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "47e53d5f-8532-43e5-bed4-da8eb38b2a59",
-    "image_paths": [
-        "https://cdn.midjourney.com/d3b703f1-a0f5-40af-8cb2-2ad681c6f23f/0_1.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/d3b703f1-a0f5-40af-8cb2-2ad681c6f23f/0_1.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103072983330865233",
     "platform_thread_id": null,
-    "prompt": "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.",
+    "prompt": "A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "d3b703f1-a0f5-40af-8cb2-2ad681c6f23f",
     "reference_image_num": "1"
 }

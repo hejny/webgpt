@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems."
+"A futuristic cityscape where Ainauts use advanced AI technology to monitor and maintain the city's infrastructure and systems."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -18,9 +18,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 Imagine a city where advanced technology meets urban living. Our futuristic cityscape wallpaper showcases the perfect blend of innovation and functionality.
 
-## AInauts at Work
+## Ainauts at Work
 
-The city is monitored and maintained by highly skilled AInauts, who use advanced AI technology to keep the infrastructure and systems running smoothly. They work around the clock to ensure that everything is in perfect order.
+The city is monitored and maintained by highly skilled Ainauts, who use advanced AI technology to keep the infrastructure and systems running smoothly. They work around the clock to ensure that everything is in perfect order.
 
 ## Cutting-Edge Technology
 

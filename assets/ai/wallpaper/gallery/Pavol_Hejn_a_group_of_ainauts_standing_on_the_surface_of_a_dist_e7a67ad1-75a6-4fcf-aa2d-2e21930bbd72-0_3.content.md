@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them."
+"A group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Discover Alien Worlds.
 
-Are you ready to embark on a journey to the unknown? Join our team of AInauts as we explore distant planets and uncover the mysteries of the universe.
+Are you ready to embark on a journey to the unknown? Join our team of Ainautes as we explore distant planets and uncover the mysteries of the universe.
 
 ## Wallpaper
 
-![A group of AInauts standing on the surface of a distant planet, with a massive, alien structure towering above them.](#)
+![A group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them.](#)
 
 ## Our Mission
 
@@ -34,7 +34,7 @@ Join us on our latest mission as we travel to [planet name], a remote planet loc
 
 As we venture deeper into the planet's terrain, we come across an enormous structure unlike anything we've ever seen before. Towering hundreds of feet into the air, the structure is covered in intricate patterns and symbols that seem to glow in the dim light.
 
-> "This is incredible," one of our AInauts remarks. "I've never seen anything like it."
+> "This is incredible," one of our Ainautes remarks. "I've never seen anything like it."
 
 ## The Future of Space Exploration
 

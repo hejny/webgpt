@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
+"Ainautes working in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to AInauts Laboratory
+# Welcome to Ainautes Laboratory
 
-At AInauts Laboratory, we are at the forefront of cutting-edge research in artificial intelligence. Our team of experts work tirelessly in a massive laboratory filled with glowing equipment and holographic displays to develop innovative solutions for the future.
+At Ainautes Laboratory, we are at the forefront of cutting-edge research in artificial intelligence. Our team of experts work tirelessly in a massive laboratory filled with glowing equipment and holographic displays to develop innovative solutions for the future.
 
 ## Our Mission
 
@@ -26,10 +26,10 @@ Our mission is to push the boundaries of AI research and development to create i
 
 We focus on several areas of AI research, including:
 
-- **Machine Learning:** We develop algorithms that enable machines to learn from data and make predictions or decisions.
-- **Natural Language Processing:** We work on technologies that allow computers to understand and generate human language.
-- **Computer Vision:** We investigate methods for enabling machines to interpret and analyze visual information from the world around them.
-- **Robotics:** We design and build robots that can perform tasks autonomously or with human guidance.
+-   **Machine Learning:** We develop algorithms that enable machines to learn from data and make predictions or decisions.
+-   **Natural Language Processing:** We work on technologies that allow computers to understand and generate human language.
+-   **Computer Vision:** We investigate methods for enabling machines to interpret and analyze visual information from the world around them.
+-   **Robotics:** We design and build robots that can perform tasks autonomously or with human guidance.
 
 ## Join Our Team
 

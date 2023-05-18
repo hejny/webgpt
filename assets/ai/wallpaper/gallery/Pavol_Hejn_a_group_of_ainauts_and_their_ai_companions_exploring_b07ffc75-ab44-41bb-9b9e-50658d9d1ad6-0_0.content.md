@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -20,11 +20,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI spacecraft explores space
 
-Welcome to our website dedicated to the thrilling adventure of a group of AInauts and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space. Our wallpaper captures just a glimpse of the excitement and mystery that awaits you on this journey.
+Welcome to our website dedicated to the thrilling adventure of a group of Ainautes and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space. Our wallpaper captures just a glimpse of the excitement and mystery that awaits you on this journey.
 
 ## About the Adventure
 
-The AI Spacecraft Adventure is an interactive experience that takes you on a journey through the vast expanse of space. You will join a team of AInauts and their AI companions as they explore the abandoned spacecraft, uncovering its secrets and discovering new technologies along the way.
+The AI Spacecraft Adventure is an interactive experience that takes you on a journey through the vast expanse of space. You will join a team of Ainautes and their AI companions as they explore the abandoned spacecraft, uncovering its secrets and discovering new technologies along the way.
 
 As you progress through the adventure, you will encounter various challenges and obstacles that require you to use your problem-solving skills and creativity. With the help of your AI companion, you will need to navigate through the ship's complex systems, decipher ancient codes, and overcome unexpected dangers.
 

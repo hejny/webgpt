@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
+"A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -24,13 +24,13 @@ Welcome to our website dedicated to the exciting world of space exploration! Our
 
 ## About Us
 
-Our team is made up of a group of scientists, engineers, and space enthusiasts who are dedicated to pushing the boundaries of what's possible in space exploration. We believe that the future of space travel lies in the hands of artificial intelligence, and that's why we've created a futuristic spaceship crewed entirely by AInauts.
+Our team is made up of a group of scientists, engineers, and space enthusiasts who are dedicated to pushing the boundaries of what's possible in space exploration. We believe that the future of space travel lies in the hands of artificial intelligence, and that's why we've created a futuristic spaceship crewed entirely by Ainautes.
 
-Our AInauts are intelligent, adaptable, and always learning. They are able to make split-second decisions based on complex data analysis, and they never tire or need rest. With our AInauts at the helm, we can explore the far reaches of space faster and more efficiently than ever before.
+Our Ainautes are intelligent, adaptable, and always learning. They are able to make split-second decisions based on complex data analysis, and they never tire or need rest. With our Ainautes at the helm, we can explore the far reaches of space faster and more efficiently than ever before.
 
 ## Our Mission
 
-Our mission is simple: to explore the unknown and discover new worlds. Our spaceship is equipped with the latest technology and tools for scientific research, and our AInauts are constantly scanning the cosmos for signs of life and other interesting phenomena.
+Our mission is simple: to explore the unknown and discover new worlds. Our spaceship is equipped with the latest technology and tools for scientific research, and our Ainautes are constantly scanning the cosmos for signs of life and other interesting phenomena.
 
 We believe that the future of humanity lies beyond Earth, and we are committed to paving the way for future generations to explore the stars. Our ultimate goal is to establish a permanent human presence on other planets, and we believe that our AI-driven approach is the key to making that dream a reality.
 
@@ -40,7 +40,7 @@ Here are some stories from people who have been inspired by our mission:
 
 > "I've always been fascinated by space travel, but I never thought it would be possible in my lifetime. Thanks to your AI-driven approach, I'm more hopeful than ever that we'll be able to explore the stars and find new worlds to call home." - Sarah, 32
 
-> "As a scientist, I'm always looking for new ways to push the boundaries of what's possible. Your AInauts are truly groundbreaking, and I can't wait to see what discoveries they make in the years to come." - Dr. Patel, 47
+> "As a scientist, I'm always looking for new ways to push the boundaries of what's possible. Your Ainautes are truly groundbreaking, and I can't wait to see what discoveries they make in the years to come." - Dr. Patel, 47
 
 ## References
 

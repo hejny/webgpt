@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts launching a rocket into space, with the Earth visible in the background."
+"A team of Ainautes launching a rocket into space, with the Earth visible in the background."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Rocket Launch: Future of Space Travel
 
-Looking for a glimpse into the future of space travel? Our stunning wallpaper features a team of AInauts launching a rocket into space, with the Earth visible in the background. 
+Looking for a glimpse into the future of space travel? Our stunning wallpaper features a team of Ainautes launching a rocket into space, with the Earth visible in the background.
 
 At our website, we're passionate about exploring the possibilities of artificial intelligence and its potential impact on space exploration. From designing more efficient propulsion systems to developing smarter robots for planetary exploration, we believe that AI will play a crucial role in the future of space travel.
 

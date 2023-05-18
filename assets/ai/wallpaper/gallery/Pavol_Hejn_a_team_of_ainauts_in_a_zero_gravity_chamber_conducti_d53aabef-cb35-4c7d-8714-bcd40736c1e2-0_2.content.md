@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
+"A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI impact on space health
 
-Welcome to our website dedicated to exploring the intersection of artificial intelligence and human health in space. Our team of AInauts is conducting groundbreaking experiments in a zero-gravity chamber to better understand how AI affects the human body.
+Welcome to our website dedicated to exploring the intersection of artificial intelligence and human health in space. Our team of Ainautes is conducting groundbreaking experiments in a zero-gravity chamber to better understand how AI affects the human body.
 
 ## About Us
 
@@ -32,10 +32,10 @@ Our current focus is on understanding how AI can be used to enhance the health a
 
 Our research includes:
 
-- Monitoring vital signs and physiological responses to stress
-- Developing AI algorithms to predict and prevent health problems
-- Studying the effects of AI-assisted exercise and nutrition programs
-- Investigating the impact of AI on mental health and cognitive function
+-   Monitoring vital signs and physiological responses to stress
+-   Developing AI algorithms to predict and prevent health problems
+-   Studying the effects of AI-assisted exercise and nutrition programs
+-   Investigating the impact of AI on mental health and cognitive function
 
 ## User Stories
 
@@ -49,9 +49,9 @@ Our research has the potential to benefit not only astronauts but also people on
 
 If you're interested in learning more about our research and the broader field of AI in space, check out these resources:
 
-- [NASA's Artificial Intelligence Research](#)
-- [European Space Agency's Human and Robotics Exploration Program](#)
-- [International Space Station Research](#)
+-   [NASA's Artificial Intelligence Research](#)
+-   [European Space Agency's Human and Robotics Exploration Program](#)
+-   [International Space Station Research](#)
 
 ## Contact Us
 

@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them."
+            "A group of Ainautes standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/bc972e45-e785-4ed8-a36b-1031308c4ae4/0_2.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "0c5b9672-5605-4028-8afb-e1d7eab1713a",
-    "image_paths": [
-        "https://cdn.midjourney.com/bc972e45-e785-4ed8-a36b-1031308c4ae4/0_2.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/bc972e45-e785-4ed8-a36b-1031308c4ae4/0_2.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105456547099836496",
     "platform_thread_id": null,
-    "prompt": "A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.",
+    "prompt": "A group of Ainautes standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A group of AInauts standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.  --aspect 3:2 --q 2",
+    "full_command": "A group of Ainautes standing on the surface of a massive, rocky planet, with towering mountains and deep canyons all around them.  --aspect 3:2 --q 2",
     "reference_job_id": "bc972e45-e785-4ed8-a36b-1031308c4ae4",
     "reference_image_num": "2"
 }

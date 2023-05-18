@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
+"A team of Ainauts working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Factory
 
-Welcome to our AI Factory, where a team of AInauts work tirelessly to create new and innovative technologies for the future. Our factory is a massive hub of creativity and innovation, where we explore the limitless possibilities of artificial intelligence.
+Welcome to our AI Factory, where a team of Ainauts work tirelessly to create new and innovative technologies for the future. Our factory is a massive hub of creativity and innovation, where we explore the limitless possibilities of artificial intelligence.
 
 ## Our Mission
 

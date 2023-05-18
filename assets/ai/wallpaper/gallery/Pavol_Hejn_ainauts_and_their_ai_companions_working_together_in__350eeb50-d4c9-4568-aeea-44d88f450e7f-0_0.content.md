@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"AInauts and their AI companions working together in a massive, zero-gravity space station."
+"Ainautes and their AI companions working together in a massive, zero-gravity space station."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Future of Human-AI Collaboration in Space
 
-Welcome to our website dedicated to exploring the exciting world of artificial intelligence (AI) and its role in space exploration. Our stunning wallpaper depicts AInauts and their AI companions working together in a massive, zero-gravity space station, showcasing the incredible potential of AI-human collaboration.
+Welcome to our website dedicated to exploring the exciting world of artificial intelligence (AI) and its role in space exploration. Our stunning wallpaper depicts Ainautes and their AI companions working together in a massive, zero-gravity space station, showcasing the incredible potential of AI-human collaboration.
 
 ## About Us
 
@@ -34,7 +34,7 @@ Our mission is to educate and inspire others about the potential of AI in space 
 
 We've gathered some amazing stories from people who have experienced the power of AI in space exploration firsthand. Here are just a few:
 
-> "As an AInaut, I rely on my AI companion to help me navigate the complexities of space travel. Together, we're able to accomplish things that would be impossible for humans alone." - Maria Rodriguez, AInaut
+> "As an Ainaute, I rely on my AI companion to help me navigate the complexities of space travel. Together, we're able to accomplish things that would be impossible for humans alone." - Maria Rodriguez, Ainaute
 
 > "Thanks to AI, we're able to process vast amounts of data from space telescopes and other instruments, helping us make new discoveries and gain a better understanding of the universe." - Dr. James Smith, Astrophysicist
 
@@ -44,9 +44,9 @@ We've gathered some amazing stories from people who have experienced the power o
 
 Looking for more information about AI and space exploration? Check out these resources:
 
-- [NASA's Artificial Intelligence Program](#nasa-ai-program)
-- [The Future of AI in Space Exploration](#ai-future-space)
-- [Ethical Considerations for AI in Space](#ethical-ai-space)
+-   [NASA's Artificial Intelligence Program](#nasa-ai-program)
+-   [The Future of AI in Space Exploration](#ai-future-space)
+-   [Ethical Considerations for AI in Space](#ethical-ai-space)
 
 ## Contact Us
 

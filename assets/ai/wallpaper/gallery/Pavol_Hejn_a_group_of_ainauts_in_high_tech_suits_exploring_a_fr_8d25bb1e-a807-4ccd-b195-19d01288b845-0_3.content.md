@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
+"A group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -24,7 +24,7 @@ Welcome to our website, where we showcase the latest advancements in technology 
 
 ## Wallpaper
 
-Our featured wallpaper depicts a group of AInauts exploring a frozen wasteland on a distant planet. Clad in high-tech suits, they brave the harsh conditions to uncover the secrets hidden beneath the ice. Towering formations surround them, reminding us of the vastness of space and the endless possibilities for exploration.
+Our featured wallpaper depicts a group of Ainautes exploring a frozen wasteland on a distant planet. Clad in high-tech suits, they brave the harsh conditions to uncover the secrets hidden beneath the ice. Towering formations surround them, reminding us of the vastness of space and the endless possibilities for exploration.
 
 ## User Stories
 

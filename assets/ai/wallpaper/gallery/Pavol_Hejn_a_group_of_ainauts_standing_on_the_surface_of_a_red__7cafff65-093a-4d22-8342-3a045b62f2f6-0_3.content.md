@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance."
+"A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Journey to Mars: Exploring the Red Planet.
 
-Welcome to our website dedicated to exploring the mysteries of Mars! Our goal is to provide you with the latest news, research, and insights into the Red Planet. To help set the mood, we've included a stunning wallpaper featuring a group of AInauts standing on the surface of Mars, with towering dust storms raging in the distance.
+Welcome to our website dedicated to exploring the mysteries of Mars! Our goal is to provide you with the latest news, research, and insights into the Red Planet. To help set the mood, we've included a stunning wallpaper featuring a group of Ainautes standing on the surface of Mars, with towering dust storms raging in the distance.
 
 ## Why Mars?
 
@@ -54,4 +54,4 @@ Have a question or comment about our website? Want to suggest a topic for us to 
 
 ---
 
-Thanks for visiting Exploring Mars! Don't forget to download our wallpaper featuring AInauts on the surface of Mars. It's the perfect way to inspire your own journey to the Red Planet.
+Thanks for visiting Exploring Mars! Don't forget to download our wallpaper featuring Ainautes on the surface of Mars. It's the perfect way to inspire your own journey to the Red Planet.

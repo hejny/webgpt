@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet."
+            "A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/9c61adff-9a55-4fc3-a6c7-eae0deac9514/0_1.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "d4f967db-04f9-439d-8906-54dff3f1812a",
-    "image_paths": [
-        "https://cdn.midjourney.com/9c61adff-9a55-4fc3-a6c7-eae0deac9514/0_1.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/9c61adff-9a55-4fc3-a6c7-eae0deac9514/0_1.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105436373088997446",
     "platform_thread_id": null,
-    "prompt": "A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet.",
+    "prompt": "A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A team of AInauts and their AI companions exploring a massive, ancient space station orbiting a distant planet.  --aspect 3:2 --q 2",
+    "full_command": "A team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet.  --aspect 3:2 --q 2",
     "reference_job_id": "9c61adff-9a55-4fc3-a6c7-eae0deac9514",
     "reference_image_num": "1"
 }

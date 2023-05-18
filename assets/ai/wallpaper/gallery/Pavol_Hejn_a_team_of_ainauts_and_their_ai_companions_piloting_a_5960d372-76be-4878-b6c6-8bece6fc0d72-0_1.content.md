@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
+"A team of Ainauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Galactic Exploration.
+# Ainauts: Galactic Exploration.
 
-Welcome to our space exploration website! Our team of AInauts and their AI companions are on a mission to discover the mysteries of the universe. As you browse through our content, you'll find stunning visuals that showcase the beauty and complexity of space.
+Welcome to our space exploration website! Our team of Ainauts and their AI companions are on a mission to discover the mysteries of the universe. As you browse through our content, you'll find stunning visuals that showcase the beauty and complexity of space.
 
 ## Wallpaper: Piloting Through the Heart of the Galaxy
 
-Behold our latest wallpaper featuring our AInauts piloting a massive spacecraft through the heart of a galaxy. The image captures the awe-inspiring sight of stars and nebulae all around them. It's a testament to the wonders of space and the power of technology.
+Behold our latest wallpaper featuring our Ainauts piloting a massive spacecraft through the heart of a galaxy. The image captures the awe-inspiring sight of stars and nebulae all around them. It's a testament to the wonders of space and the power of technology.
 
 > "The universe is full of magical things patiently waiting for our wits to grow sharper." - Eden Phillpotts
 
@@ -33,7 +33,7 @@ Our goal is to push the boundaries of what we know about the universe. We use cu
 We've curated a collection of articles, videos, and images that showcase the wonders of space. Whether you're a seasoned astronomer or just starting your journey, there's something here for everyone. Here are some of our most popular categories:
 
 -   **Astronomy:** Learn about the latest discoveries in the field of astronomy.
--   **Space Travel:** Follow our AInauts as they explore the depths of space.
+-   **Space Travel:** Follow our Ainauts as they explore the depths of space.
 -   **Astrophotography:** Feast your eyes on stunning images of the cosmos.
 -   **Science Fiction:** Immerse yourself in the world of science fiction and imagine the possibilities of the future.
 

@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
+"A team of Ainautes and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Galaxy Pilots
+# Ainautes: Galaxy Pilots
 
-Welcome to our website where you can explore the universe with us! Our team of AInauts and their AI companions are on a mission to discover new worlds and civilizations. 
+Welcome to our website where you can explore the universe with us! Our team of Ainautes and their AI companions are on a mission to discover new worlds and civilizations.
 
 ## Wallpaper Description
 
@@ -34,7 +34,7 @@ Our mission is to explore new worlds, seek out new life and civilizations, and b
 
 ## Join Us
 
-Are you interested in joining our team of AInauts? We are always looking for talented individuals who share our passion for space exploration and AI technology. Contact us at #join-us to learn more about career opportunities with us.
+Are you interested in joining our team of Ainautes? We are always looking for talented individuals who share our passion for space exploration and AI technology. Contact us at #join-us to learn more about career opportunities with us.
 
 ---
 

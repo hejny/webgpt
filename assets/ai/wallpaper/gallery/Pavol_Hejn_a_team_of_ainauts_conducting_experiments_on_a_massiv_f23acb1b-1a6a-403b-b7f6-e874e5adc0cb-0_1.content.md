@@ -1,16 +1,16 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet."
+"A team of Ainautes conducting experiments on a massive, frozen moon orbiting a gas giant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
 <!--font:Poppins-->
 
-# AInauts Explore Frozen Moon
+# Ainautes Explore Frozen Moon
 
-Welcome to our website dedicated to showcasing the incredible work of a team of AInauts as they conduct experiments on a massive, frozen moon orbiting a gas giant planet. 
+Welcome to our website dedicated to showcasing the incredible work of a team of Ainautes as they conduct experiments on a massive, frozen moon orbiting a gas giant planet.
 
 Our team is made up of some of the brightest minds in the field of artificial intelligence and space exploration. Together, they are pushing the boundaries of what we know about the universe and the potential for life beyond Earth.
 

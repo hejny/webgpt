@@ -2,13 +2,13 @@
 
 # Workspace Space Background
 
-Add some excitement and inspiration to your digital workspace with our space-themed background. Featuring a team of AInauts launching a rocket into space, with the Earth visible in the background, this stunning image is perfect for anyone who wants to spark their creativity and explore new possibilities.
+Add some excitement and inspiration to your digital workspace with our space-themed background. Featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background, this stunning image is perfect for anyone who wants to spark their creativity and explore new possibilities.
 
 ## Why Choose Our Space-themed Background?
 
-- Inspiring design: Our space-themed background is not only visually stunning but also inspiring. It's perfect for those who want to let their imagination soar.
-- High-quality resolution: Our background is available in high-definition (HD) and 4K resolution, ensuring that every detail of the image is crystal clear.
-- Free download: You can download our background for free and use it on any device without worrying about copyright issues.
+-   Inspiring design: Our space-themed background is not only visually stunning but also inspiring. It's perfect for those who want to let their imagination soar.
+-   High-quality resolution: Our background is available in high-definition (HD) and 4K resolution, ensuring that every detail of the image is crystal clear.
+-   Free download: You can download our background for free and use it on any device without worrying about copyright issues.
 
 ## User Stories
 
@@ -22,17 +22,17 @@ Our space-themed background has been downloaded by people all over the world. He
 
 If you want to learn more about space exploration and astronomy, here are some resources:
 
-- NASA's official website: #nasa
-- European Space Agency's official website: #esa
-- Space.com: #spacecom
+-   NASA's official website: #nasa
+-   European Space Agency's official website: #esa
+-   Space.com: #spacecom
 
 ## Contact Us
 
 If you have any questions or feedback, please feel free to contact us at [email protected] or through our social media channels:
 
-- Twitter: #twitter
-- Facebook: #facebook
-- Instagram: #instagram
+-   Twitter: #twitter
+-   Facebook: #facebook
+-   Instagram: #instagram
 
 Join us on a journey of exploration and discovery with our space-themed background. Download it now and launch your imagination!
 
@@ -40,14 +40,14 @@ Join us on a journey of exploration and discovery with our space-themed backgrou
 
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts launching a rocket into space, with the Earth visible in the background."
+"A team of Ainautes launching a rocket into space, with the Earth visible in the background."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Universe with Our Space-themed Wallpaper
 
-Add a touch of adventure to your desktop or phone background with our space-themed wallpaper featuring a team of AInauts launching a rocket into space, with the Earth visible in the background. Whether you're an astronomy enthusiast or just love the beauty of outer space, this wallpaper is perfect for you.
+Add a touch of adventure to your desktop or phone background with our space-themed wallpaper featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background. Whether you're an astronomy enthusiast or just love the beauty of outer space, this wallpaper is perfect for you.
 
 ## Why Choose Our Space-themed Wallpaper?
 
@@ -109,7 +109,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Launch Your Imagination with Our Space-themed Background
 
-Looking for a way to add some excitement to your digital workspace? Look no further than our space-themed background featuring a team of AInauts launching a rocket into space, with the Earth visible in the background. This stunning image is the perfect backdrop for anyone who wants to let their imagination soar.
+Looking for a way to add some excitement to your digital workspace? Look no further than our space-themed background featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background. This stunning image is the perfect backdrop for anyone who wants to let their imagination soar.
 
 ## Why Choose Our Space-themed Background?
 
@@ -155,7 +155,7 @@ Heading is too long, rewrite whole content.
 
 # Explore New Worlds with Our Space-themed Background
 
-Our space-themed background featuring a team of AInauts launching a rocket into space, with the Earth visible in the background, is the perfect way to add some excitement and inspiration to your digital workspace. 
+Our space-themed background featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background, is the perfect way to add some excitement and inspiration to your digital workspace.
 
 ## Why Choose Our Space-themed Background?
 
@@ -201,7 +201,7 @@ Heading is too long, rewrite whole content.
 
 # Space-themed Background for Your Digital Workspace
 
-Add some excitement and inspiration to your digital workspace with our space-themed background. Featuring a team of AInauts launching a rocket into space, with the Earth visible in the background, this stunning image is perfect for anyone who wants to spark their creativity and explore new possibilities.
+Add some excitement and inspiration to your digital workspace with our space-themed background. Featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background, this stunning image is perfect for anyone who wants to spark their creativity and explore new possibilities.
 
 ## Why Choose Our Space-themed Background?
 

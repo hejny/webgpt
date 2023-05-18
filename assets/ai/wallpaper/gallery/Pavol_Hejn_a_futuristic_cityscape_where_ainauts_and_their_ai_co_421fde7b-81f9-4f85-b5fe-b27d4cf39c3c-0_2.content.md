@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure."
+"A futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Welcome to FutureScape
 
-At FutureScape, we believe in a future where humans and artificial intelligence work together to build a better world. Our team of AInauts and AI counterparts are dedicated to creating innovative solutions for the challenges of tomorrow.
+At FutureScape, we believe in a future where humans and artificial intelligence work together to build a better world. Our team of Ainautes and AI counterparts are dedicated to creating innovative solutions for the challenges of tomorrow.
 
 ## About Us
 
@@ -34,10 +34,10 @@ At FutureScape, we offer a wide range of services designed to meet the needs of 
 
 Our services include:
 
-- **AI-Powered Design**: Our AI algorithms can analyze complex data sets to generate optimized designs for buildings, roads, and other infrastructure.
-- **Smart City Solutions**: We offer a range of smart city solutions, including traffic management systems, energy-efficient lighting, and waste management solutions.
-- **Construction Management**: Our team of AInauts can oversee every aspect of your construction project, from planning to execution, ensuring that it is completed on time and within budget.
-- **Consulting Services**: We offer consulting services to help you develop your AI strategy, identify opportunities for innovation, and navigate the complex regulatory landscape.
+-   **AI-Powered Design**: Our AI algorithms can analyze complex data sets to generate optimized designs for buildings, roads, and other infrastructure.
+-   **Smart City Solutions**: We offer a range of smart city solutions, including traffic management systems, energy-efficient lighting, and waste management solutions.
+-   **Construction Management**: Our team of Ainautes can oversee every aspect of your construction project, from planning to execution, ensuring that it is completed on time and within budget.
+-   **Consulting Services**: We offer consulting services to help you develop your AI strategy, identify opportunities for innovation, and navigate the complex regulatory landscape.
 
 ## User Stories
 
@@ -47,13 +47,13 @@ Our services include:
 
 ### "FutureScape's construction management team saved us time and money"
 
-"We were facing tight deadlines and budget constraints on our latest construction project. FutureScape's AInauts were able to optimize the construction process, reducing waste and improving efficiency. Thanks to their expertise, we were able to complete the project on time and under budget."
+"We were facing tight deadlines and budget constraints on our latest construction project. FutureScape's Ainautes were able to optimize the construction process, reducing waste and improving efficiency. Thanks to their expertise, we were able to complete the project on time and under budget."
 
 ## References
 
-- [Our Team](#about-us)
-- [Services](#our-services)
-- [User Stories](#user-stories)
+-   [Our Team](#about-us)
+-   [Services](#our-services)
+-   [User Stories](#user-stories)
 
 ## Contact Us
 

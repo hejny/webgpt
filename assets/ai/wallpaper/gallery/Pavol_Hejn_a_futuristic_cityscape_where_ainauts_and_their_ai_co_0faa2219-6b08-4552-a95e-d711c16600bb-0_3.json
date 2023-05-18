@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure."
+            "A futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/0faa2219-6b08-4552-a95e-d711c16600bb/0_3.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "b7f51b04-5c5e-47bd-ab3d-b32ce5a54caa",
-    "image_paths": [
-        "https://cdn.midjourney.com/0faa2219-6b08-4552-a95e-d711c16600bb/0_3.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/0faa2219-6b08-4552-a95e-d711c16600bb/0_3.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105416854098419722",
     "platform_thread_id": null,
-    "prompt": "A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.",
+    "prompt": "A futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure.  --aspect 3:2 --q 2",
+    "full_command": "A futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure.  --aspect 3:2 --q 2",
     "reference_job_id": "0faa2219-6b08-4552-a95e-d711c16600bb",
     "reference_image_num": "3"
 }

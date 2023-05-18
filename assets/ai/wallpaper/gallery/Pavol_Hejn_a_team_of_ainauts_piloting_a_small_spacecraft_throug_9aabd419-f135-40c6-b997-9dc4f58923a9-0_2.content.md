@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
+"A team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI team explores deep space
 
-Welcome to our website, where we take you on a journey through the vast expanse of space. Our team of AInauts is at the forefront of space exploration, piloting small spacecraft through treacherous asteroid fields and navigating the unknown depths of the universe.
+Welcome to our website, where we take you on a journey through the vast expanse of space. Our team of Ainautes is at the forefront of space exploration, piloting small spacecraft through treacherous asteroid fields and navigating the unknown depths of the universe.
 
 Our stunning wallpaper captures the excitement and danger of space travel, as our intrepid crew dodges debris flying all around them. With advanced AI technology at their fingertips, they are able to navigate even the most perilous situations and uncover the mysteries of the cosmos.
 

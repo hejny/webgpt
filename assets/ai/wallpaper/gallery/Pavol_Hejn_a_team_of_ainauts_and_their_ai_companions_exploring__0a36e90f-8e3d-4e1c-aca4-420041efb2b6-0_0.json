@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
+            "A team of Ainautes and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/0a36e90f-8e3d-4e1c-aca4-420041efb2b6/0_0.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "25d33075-ff79-4f06-bd2b-aaaa0e4be49e",
-    "image_paths": [
-        "https://cdn.midjourney.com/0a36e90f-8e3d-4e1c-aca4-420041efb2b6/0_0.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/0a36e90f-8e3d-4e1c-aca4-420041efb2b6/0_0.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103116754407931924",
     "platform_thread_id": null,
-    "prompt": "A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space.",
+    "prompt": "A team of Ainautes and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "A team of Ainautes and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "0a36e90f-8e3d-4e1c-aca4-420041efb2b6",
     "reference_image_num": "0"
 }

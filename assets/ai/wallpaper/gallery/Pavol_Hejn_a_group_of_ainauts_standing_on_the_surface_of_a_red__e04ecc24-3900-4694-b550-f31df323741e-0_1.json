@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance."
+            "A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/e04ecc24-3900-4694-b550-f31df323741e/0_1.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "f80e6965-8ae0-4797-b773-f6604775ff83",
-    "image_paths": [
-        "https://cdn.midjourney.com/e04ecc24-3900-4694-b550-f31df323741e/0_1.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/e04ecc24-3900-4694-b550-f31df323741e/0_1.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103100395246587924",
     "platform_thread_id": null,
-    "prompt": "A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance.",
+    "prompt": "A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "e04ecc24-3900-4694-b550-f31df323741e",
     "reference_image_num": "1"
 }

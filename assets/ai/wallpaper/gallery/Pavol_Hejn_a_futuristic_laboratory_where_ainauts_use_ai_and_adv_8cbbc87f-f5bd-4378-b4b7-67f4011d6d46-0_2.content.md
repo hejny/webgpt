@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+"A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Lab: Advancing Life with Tech
 
-Welcome to The AI Lab, a futuristic laboratory where AInauts use AI and advanced technology to create new forms of life. Our mission is to push the boundaries of what is possible and explore the potential of AI in shaping the future of life.
+Welcome to The AI Lab, a futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life. Our mission is to push the boundaries of what is possible and explore the potential of AI in shaping the future of life.
 
 ## About Us
 
@@ -32,9 +32,9 @@ Our state-of-the-art facility is equipped with the latest technology, including 
 
 At The AI Lab, we are working on several exciting projects that aim to revolutionize the field of synthetic biology. Some of our current projects include:
 
-- **AI-assisted gene editing:** We are using AI to optimize the process of gene editing, making it faster, more efficient, and more precise than ever before.
-- **Synthetic organisms:** We are developing new ways to create synthetic organisms with unique properties and functions, such as bacteria that can detect and neutralize pollutants in the environment.
-- **Bio-inspired materials:** We are exploring the potential of biomimicry to create new materials that are stronger, more durable, and more sustainable than traditional materials.
+-   **AI-assisted gene editing:** We are using AI to optimize the process of gene editing, making it faster, more efficient, and more precise than ever before.
+-   **Synthetic organisms:** We are developing new ways to create synthetic organisms with unique properties and functions, such as bacteria that can detect and neutralize pollutants in the environment.
+-   **Bio-inspired materials:** We are exploring the potential of biomimicry to create new materials that are stronger, more durable, and more sustainable than traditional materials.
 
 ## User Stories
 
@@ -50,14 +50,14 @@ Our work at The AI Lab has the potential to impact many different industries and
 
 If you're interested in learning more about the field of synthetic biology and the potential of AI in shaping the future of life, we recommend checking out these resources:
 
-- [Synthetic Biology: A Primer](#)
-- [The Future of Life: Challenges and Opportunities](#)
-- [AI and Synthetic Biology: A Match Made in Heaven?](#)
+-   [Synthetic Biology: A Primer](#)
+-   [The Future of Life: Challenges and Opportunities](#)
+-   [AI and Synthetic Biology: A Match Made in Heaven?](#)
 
 ## Contact Us
 
 If you have any questions or would like to learn more about our work at The AI Lab, please don't hesitate to get in touch. You can reach us at:
 
-- Phone: 555-1234
-- Email: info@ailab.com
-- Address: 123 Main Street, Suite 100, Anytown USA
+-   Phone: 555-1234
+-   Email: info@ailab.com
+-   Address: 123 Main Street, Suite 100, Anytown USA

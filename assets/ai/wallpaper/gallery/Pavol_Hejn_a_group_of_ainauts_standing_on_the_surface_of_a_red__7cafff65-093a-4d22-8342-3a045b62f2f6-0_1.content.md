@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance."
+"A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -28,7 +28,7 @@ We are a group of space enthusiasts who are passionate about exploring the unkno
 
 ## Our Wallpaper
 
-Our featured wallpaper depicts a group of AInauts standing on the surface of Mars, with towering dust storms raging in the distance. This breathtaking image captures the stark beauty of the Red Planet and the challenges that come with exploring it.
+Our featured wallpaper depicts a group of Ainautes standing on the surface of Mars, with towering dust storms raging in the distance. This breathtaking image captures the stark beauty of the Red Planet and the challenges that come with exploring it.
 
 ## User Stories
 

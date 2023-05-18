@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
+            "A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/9d15355f-6600-4660-bcaa-020399f6294a/0_3.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "0cb079dc-cb28-4acb-a5e6-44ce57bf2320",
-    "image_paths": [
-        "https://cdn.midjourney.com/9d15355f-6600-4660-bcaa-020399f6294a/0_3.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/9d15355f-6600-4660-bcaa-020399f6294a/0_3.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103080711226925066",
     "platform_thread_id": null,
-    "prompt": "A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.",
+    "prompt": "A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "9d15355f-6600-4660-bcaa-020399f6294a",
     "reference_image_num": "3"
 }

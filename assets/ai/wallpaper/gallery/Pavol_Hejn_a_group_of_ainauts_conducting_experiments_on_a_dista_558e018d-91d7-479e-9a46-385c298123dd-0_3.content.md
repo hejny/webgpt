@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
+"A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI on Distant Planet
 
-Welcome to our website showcasing the incredible work of our team of AInauts! Our group is currently conducting experiments on a distant planet, with a red sun setting behind us. 
+Welcome to our website showcasing the incredible work of our team of Ainautes! Our group is currently conducting experiments on a distant planet, with a red sun setting behind us.
 
-## Who are the AInauts?
+## Who are the Ainautes?
 
-The AInauts are a team of scientists and engineers who specialize in artificial intelligence and space exploration. Our mission is to push the boundaries of what is possible and discover new worlds and technologies.
+The Ainautes are a team of scientists and engineers who specialize in artificial intelligence and space exploration. Our mission is to push the boundaries of what is possible and discover new worlds and technologies.
 
 ## Our Current Mission
 
@@ -34,7 +34,7 @@ One of the most striking features of this planet is the red sun that sets behind
 
 ## Join Our Mission
 
-Are you interested in joining our team of AInauts? We are always looking for talented individuals who share our passion for exploring the unknown. Contact us at [join@ainauts.com](#) to learn more about opportunities to work with us.
+Are you interested in joining our team of Ainautes? We are always looking for talented individuals who share our passion for exploring the unknown. Contact us at [join@ainauts.com](#) to learn more about opportunities to work with us.
 
 ---
 

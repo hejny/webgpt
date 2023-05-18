@@ -2,7 +2,7 @@
 
 # Welcome to the Future City
 
-Immerse yourself in a world where artificial intelligence and human innovation come together to create a sustainable future. Our cityscape is a testament to the power of collaboration between AInauts and AI, working in harmony to build massive structures and infrastructure that can withstand the test of time.
+Immerse yourself in a world where artificial intelligence and human innovation come together to create a sustainable future. Our cityscape is a testament to the power of collaboration between Ainautes and AI, working in harmony to build massive structures and infrastructure that can withstand the test of time.
 
 As you explore our futuristic metropolis, you'll witness towering skyscrapers and sprawling networks of transportation systems that seamlessly integrate with nature. From energy-efficient buildings to high-speed transit systems, every aspect of our city is designed to minimize environmental impact while maximizing efficiency.
 
@@ -12,7 +12,7 @@ Join us on this journey towards a brighter tomorrow, where technology and humani
 
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+"A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -22,7 +22,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Welcome to the Future City
 
-Immerse yourself in a world where artificial intelligence and human innovation come together to create a sustainable future. Our cityscape is a testament to the power of collaboration between AInauts and AI, working in harmony to build massive structures and infrastructure that can withstand the test of time.
+Immerse yourself in a world where artificial intelligence and human innovation come together to create a sustainable future. Our cityscape is a testament to the power of collaboration between Ainautes and AI, working in harmony to build massive structures and infrastructure that can withstand the test of time.
 
 As you explore our futuristic metropolis, you'll witness towering skyscrapers and sprawling networks of transportation systems that seamlessly integrate with nature. From energy-efficient buildings to high-speed transit systems, every aspect of our city is designed to minimize environmental impact while maximizing efficiency.
 

@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+"A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Future Life Creation Welcome
 
-At our laboratory, we are pushing the boundaries of what is possible with AI and advanced technology to create new forms of life. Our team of AInauts is dedicated to exploring the possibilities of synthetic biology and designing living organisms that can help solve some of the world's biggest challenges.
+At our laboratory, we are pushing the boundaries of what is possible with AI and advanced technology to create new forms of life. Our team of Ainautes is dedicated to exploring the possibilities of synthetic biology and designing living organisms that can help solve some of the world's biggest challenges.
 
 ## Our Mission
 
@@ -32,9 +32,9 @@ At our laboratory, we take a multidisciplinary approach to life creation. Our te
 
 Our current projects include:
 
-- **Bioenergy**: Designing microorganisms that can convert waste into clean energy.
-- **Bioremediation**: Developing bacteria that can break down harmful pollutants in the environment.
-- **Precision Agriculture**: Creating crops that can thrive in challenging environments and require fewer resources.
+-   **Bioenergy**: Designing microorganisms that can convert waste into clean energy.
+-   **Bioremediation**: Developing bacteria that can break down harmful pollutants in the environment.
+-   **Precision Agriculture**: Creating crops that can thrive in challenging environments and require fewer resources.
 
 ## Join Us
 

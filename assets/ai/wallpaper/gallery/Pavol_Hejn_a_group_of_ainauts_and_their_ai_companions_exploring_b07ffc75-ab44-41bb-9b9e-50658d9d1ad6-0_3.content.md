@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Exploring Abandoned Spaceships
 
-Welcome to our website, where we take you on a thrilling journey through the depths of space. Join our team of AInauts and their AI companions as they explore a massive, abandoned spacecraft, uncovering its secrets and unraveling the mysteries that lie within.
+Welcome to our website, where we take you on a thrilling journey through the depths of space. Join our team of Ainautes and their AI companions as they explore a massive, abandoned spacecraft, uncovering its secrets and unraveling the mysteries that lie within.
 
 Our wallpaper captures the essence of this adventure, showcasing the vastness of space and the awe-inspiring beauty of the spacecraft. With its intricate details and stunning visuals, it serves as a reminder of the wonders that await us in the universe.
 

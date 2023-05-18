@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+"A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # The Lab of the Future
 
-Welcome to our futuristic laboratory, where AInauts use cutting-edge AI and advanced technology to create new forms of life. Our lab is a place where science fiction meets reality, and where we push the boundaries of what's possible.
+Welcome to our futuristic laboratory, where Ainautes use cutting-edge AI and advanced technology to create new forms of life. Our lab is a place where science fiction meets reality, and where we push the boundaries of what's possible.
 
-## Meet the AInauts
+## Meet the Ainautes
 
-Our team of AInauts are some of the brightest minds in the field of artificial intelligence. They come from all over the world, bringing with them unique perspectives and expertise. Together, they work tirelessly to create new forms of life that will change the world as we know it.
+Our team of Ainautes are some of the brightest minds in the field of artificial intelligence. They come from all over the world, bringing with them unique perspectives and expertise. Together, they work tirelessly to create new forms of life that will change the world as we know it.
 
 ## Advanced Technology
 

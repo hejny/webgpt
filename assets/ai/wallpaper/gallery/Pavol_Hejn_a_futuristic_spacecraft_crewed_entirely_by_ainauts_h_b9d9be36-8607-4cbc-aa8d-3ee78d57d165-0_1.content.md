@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds."
+"A futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
@@ -10,7 +10,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI spacecraft exploring space
 
-Welcome to our website dedicated to showcasing the latest advancements in space exploration technology. Our current focus is on a futuristic spacecraft crewed entirely by AInauts, capable of traveling at incredible speeds through the vast expanse of space.
+Welcome to our website dedicated to showcasing the latest advancements in space exploration technology. Our current focus is on a futuristic spacecraft crewed entirely by Ainautes, capable of traveling at incredible speeds through the vast expanse of space.
 
 Our team of experts has been working tirelessly to develop this groundbreaking technology, and we are excited to share our progress with you. From the design and construction of the spacecraft to the development of its advanced artificial intelligence systems, we are pushing the boundaries of what is possible in space exploration.
 

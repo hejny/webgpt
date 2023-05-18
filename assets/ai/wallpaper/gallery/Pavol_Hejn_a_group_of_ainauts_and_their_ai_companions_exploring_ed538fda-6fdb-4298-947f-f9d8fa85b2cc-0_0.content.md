@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring Abandoned Research Facilities in Lost Space with AInauts
+# Exploring Abandoned Research Facilities in Lost Space with Ainautes
 
-Welcome to our website dedicated to the exploration of abandoned research facilities in space! Our team of AInauts and their AI companions are on a mission to uncover the secrets of these forgotten places. Join us on our journey as we delve into the unknown.
+Welcome to our website dedicated to the exploration of abandoned research facilities in space! Our team of Ainautes and their AI companions are on a mission to uncover the secrets of these forgotten places. Join us on our journey as we delve into the unknown.
 
 ## About Us
 

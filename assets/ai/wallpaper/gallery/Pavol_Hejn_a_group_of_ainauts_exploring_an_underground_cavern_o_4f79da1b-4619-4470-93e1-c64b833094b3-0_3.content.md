@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
+"A group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -24,7 +24,7 @@ Welcome to our website, where we invite you to embark on a journey of discovery 
 
 ## The Adventure Begins
 
-Our wallpaper depicts a group of AInauts exploring an underground cavern on a distant planet. The scene is alive with glowing fungi and strange creatures all around them. As you gaze at this image, let your mind wander and imagine what it would be like to join these explorers on their adventure.
+Our wallpaper depicts a group of Ainautes exploring an underground cavern on a distant planet. The scene is alive with glowing fungi and strange creatures all around them. As you gaze at this image, let your mind wander and imagine what it would be like to join these explorers on their adventure.
 
 ## User Stories
 
@@ -42,9 +42,9 @@ Connect with other like-minded individuals who share your passion for exploratio
 
 For more information on the science behind our wallpaper, check out these resources:
 
-- [NASA Astrobiology](#nasa-astrobiology)
-- [National Geographic](#national-geographic)
-- [Smithsonian Magazine](#smithsonian-magazine)
+-   [NASA Astrobiology](#nasa-astrobiology)
+-   [National Geographic](#national-geographic)
+-   [Smithsonian Magazine](#smithsonian-magazine)
 
 ## Contact Us
 

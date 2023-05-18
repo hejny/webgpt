@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
+"A team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Asteroid Field Navigation
 
-Welcome to our website, where you can experience an exciting space adventure! Our wallpaper depicts a team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. Get ready to embark on a thrilling journey through space!
+Welcome to our website, where you can experience an exciting space adventure! Our wallpaper depicts a team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. Get ready to embark on a thrilling journey through space!
 
 ## About Us
 
@@ -46,9 +46,9 @@ Use the arrow keys on your keyboard to steer your spacecraft and avoid collision
 
 If you're interested in learning more about space exploration, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 

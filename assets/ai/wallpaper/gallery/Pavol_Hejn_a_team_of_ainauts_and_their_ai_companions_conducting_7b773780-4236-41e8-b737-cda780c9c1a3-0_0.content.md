@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
+"A team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI probes Gas Giants
 
-Welcome to our website dedicated to the exciting world of gas giant exploration! Our team of AInauts and their AI companions are conducting groundbreaking experiments on the surface of these massive planets, unlocking new insights into their composition and behavior.
+Welcome to our website dedicated to the exciting world of gas giant exploration! Our team of Ainautes and their AI companions are conducting groundbreaking experiments on the surface of these massive planets, unlocking new insights into their composition and behavior.
 
 ## About Us
 
