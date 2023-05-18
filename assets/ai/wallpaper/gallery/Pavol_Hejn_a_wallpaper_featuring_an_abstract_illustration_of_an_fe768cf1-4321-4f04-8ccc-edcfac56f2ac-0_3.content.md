@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring AI-Powered Search Engines
+# AI Search Engines
 
 Welcome to our website where we explore the exciting world of AI-powered search engines and their impact on modern society. Our minimalist background sets the tone for a futuristic and innovative browsing experience.
 

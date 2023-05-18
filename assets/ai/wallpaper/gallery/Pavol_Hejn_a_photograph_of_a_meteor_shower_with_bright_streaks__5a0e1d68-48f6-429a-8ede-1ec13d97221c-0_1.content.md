@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Night Sky: Free Background Image for Your Device
+# Free Night Sky Background for Your Device
 
 Our free background image captures the beauty of a meteor shower with bright streaks of light crossing the night sky. But it's more than just a stunning visual addition to your device. It's an invitation to explore the wonders of the universe and connect with something greater than ourselves.
 

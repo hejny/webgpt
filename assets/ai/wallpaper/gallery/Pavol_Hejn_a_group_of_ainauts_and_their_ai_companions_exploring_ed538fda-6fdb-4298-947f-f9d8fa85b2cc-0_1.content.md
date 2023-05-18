@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "AI Explores Abandoned Research Facility"
+# AI Explores Deserted Lab
 
 Welcome to AI Space Exploration, a website dedicated to showcasing the incredible adventures of AInauts and their AI companions as they explore the mysteries of deep space. Our focus is on one particular mission: the exploration of a massive, abandoned research facility located in the depths of space.
 

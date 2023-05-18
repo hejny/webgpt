@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Unleash the Potential of Data Visualization
+# Maximize Data Visualization Potential
 
 Welcome to our website dedicated to the power of data visualization. We believe that clear and concise communication of complex information is crucial in today's world, and we're here to help you achieve this through the art of data visualization.
 

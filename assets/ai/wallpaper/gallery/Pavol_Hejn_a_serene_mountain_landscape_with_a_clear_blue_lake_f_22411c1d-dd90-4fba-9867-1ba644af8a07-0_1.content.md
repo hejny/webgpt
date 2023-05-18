@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Serenity: Meditation & Wellness Destination.
+# Serenity Wellness: Meditation Destination
 
 Welcome to Serenity Now, your ultimate destination for relaxation and rejuvenation. Our website features a stunning wallpaper of a serene mountain landscape with a clear blue lake, the perfect backdrop for your meditation or wellness journey.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum-Inspired Office Design for Creative and Innovative Spaces
+# Quantum Office Design for Innovation
 
 Welcome to our futuristic office, where we believe that the right environment can inspire creativity and innovation. Our quantum-inspired abstract background is designed to transport you to a world of endless possibilities.
 

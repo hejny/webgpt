@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Future of Tech with Us
+# Explore Tech's Future with Us
 
 Welcome to our website, where you can explore the exciting world of technology. Our minimalist illustration of a robotic arm against a dark and moody background sets the tone for an immersive experience.
 

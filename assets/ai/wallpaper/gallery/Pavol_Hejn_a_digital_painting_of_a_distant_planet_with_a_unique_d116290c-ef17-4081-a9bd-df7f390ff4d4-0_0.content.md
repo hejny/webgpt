@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Unique Planetary World Welcome!
+# Welcome to a Unique Planet!
 
 Are you tired of seeing the same old boring wallpapers on your computer screen? Look no further! Our website offers a digital painting of a distant planet, with a unique atmosphere and unusual terrain. 
 

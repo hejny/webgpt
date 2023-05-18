@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: High-Tech Space Exploration.
+# AInauts: Space Tech Exploration
 
 Welcome to AInauts, where we bring you closer to the wonders of the universe through advanced technology and artificial intelligence. Our team of scientists and engineers are currently stationed in a state-of-the-art space station, orbiting around Saturn and studying its magnificent rings.
 

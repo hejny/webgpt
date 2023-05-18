@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist AI Buzzwords Design for Tech Enthusiasts
+# Simplified AI Design for Tech Fans
 
 Stay up-to-date with the latest buzzwords in artificial intelligence (AI) using our minimalist design. Featuring a repeating pattern of commonly used AI-related terms, this design is perfect for tech enthusiasts and professionals who want to stay on top of industry trends.
 

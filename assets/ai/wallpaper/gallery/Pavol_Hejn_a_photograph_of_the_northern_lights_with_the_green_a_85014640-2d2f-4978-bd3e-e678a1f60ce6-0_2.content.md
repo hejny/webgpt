@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Shorter title: "Northern Lights Background"
+# Northern Lights
 
 Welcome to our website, where you can explore the beauty of the Northern Lights through our stunning Aurora Borealis background. Our background features a photograph of the mesmerizing green and purple hues swirling in the night sky, creating a calming and peaceful ambiance for any space.
 

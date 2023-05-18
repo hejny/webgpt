@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Exploring the Frozen Moons of Our Solar System
+# Frozen Moons of Our Solar System Exploration
 
 Welcome to our website dedicated to exploring the frozen moons of our solar system. Our team of AInauts is conducting experiments on a massive, frozen moon orbiting a gas giant planet, and we're excited to share our findings with you.
 

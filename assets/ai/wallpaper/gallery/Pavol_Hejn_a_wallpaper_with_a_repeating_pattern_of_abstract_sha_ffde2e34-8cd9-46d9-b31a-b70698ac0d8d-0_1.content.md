@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Digital Space with Abstract Shapes and Colors
+# Elevate Digital Space with Abstract Shapes & Colors
 
 Transform your digital space with our stunning abstract background featuring a repeating pattern of shapes and colors inspired by the latest web design trends. 
 

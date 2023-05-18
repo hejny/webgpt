@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Dreamy Florals for Special Occasions.
+# Special Occasion Florals
 
 Welcome to our wedding and event planning website, where we strive to make your special day as beautiful and memorable as possible. Our latest addition is a stunning watercolor wallpaper featuring a field of flowers that will transport you to a dreamy wonderland.
 

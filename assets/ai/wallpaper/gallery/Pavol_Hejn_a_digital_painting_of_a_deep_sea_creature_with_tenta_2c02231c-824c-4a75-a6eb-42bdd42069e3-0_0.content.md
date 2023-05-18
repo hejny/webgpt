@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of the Deep Sea.
+# Deep Sea Mysteries
 
 Welcome to our website dedicated to exploring the mysteries of the deep sea! Our goal is to share information and resources about the fascinating creatures and environments that exist in the darkest depths of the ocean.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Futuristic Astronaut Desktop Wallpaper
+# Futuristic Astronaut Wallpaper
 
 Experience the thrill of space exploration with our stunning futuristic astronaut desktop wallpaper. Featuring an illustration of an astronaut in a sleek spacesuit standing on the surface of a distant planet, this wallpaper will transport you to the final frontier.
 

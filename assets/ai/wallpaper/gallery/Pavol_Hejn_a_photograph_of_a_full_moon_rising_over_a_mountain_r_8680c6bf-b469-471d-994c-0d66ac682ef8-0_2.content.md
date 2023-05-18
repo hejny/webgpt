@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Mystical Mountain Desktop Backgrounds.
+# Mystical Mountain Wallpapers
 
 Welcome to our website where you can find a variety of high-quality backgrounds to personalize your desktop. Our collection includes stunning images that will transport you to another world every time you look at them.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Journeying Through Abandoned Alien Spaceships.
+# Exploring Abandoned Alien Spaceships
 
 Welcome to our website, where we take you on a journey through the depths of space and explore the unknown. Our team of AInauts and their AI companions are always ready to embark on new adventures, and this time we have found something truly extraordinary - a massive, abandoned alien spacecraft.
 

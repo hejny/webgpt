@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Unleash the Potential of Quantum Computing
+# Quantum Computing Unleashed
 
 Our website features a stunning digital rendering of a quantum computer that serves as a backdrop for your desktop. The image boasts a minimalist color scheme and geometric lines, creating a visually striking display that is sure to catch your eye.
 

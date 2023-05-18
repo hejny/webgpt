@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Manage Your Time Effectively with Countdown
+# Effective Time Management with Countdown
 
 Welcome to Countdown, the ultimate productivity tool for time management. Our website provides a range of features and tools that allow you to set alarms, countdowns, and reminders to help you make the most of your time.
 

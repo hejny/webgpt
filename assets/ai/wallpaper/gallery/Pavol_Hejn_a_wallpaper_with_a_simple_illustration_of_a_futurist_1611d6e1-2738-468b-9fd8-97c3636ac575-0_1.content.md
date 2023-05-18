@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with a High-Tech Background
+# Elevate Workspace with High-Tech Background
 
 Welcome to our website, where we provide you with the tools and resources to create a modern and inspiring workspace that fuels your creativity and productivity. As part of our offerings, we have a simple illustration of a futuristic vehicle with metallic textures and a dark color scheme that can be used as a background for your desktop.
 

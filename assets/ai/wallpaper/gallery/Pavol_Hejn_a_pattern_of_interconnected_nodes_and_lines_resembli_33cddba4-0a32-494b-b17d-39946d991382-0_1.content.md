@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring Neural Network Wonders
+# Neural Network Exploration
 
 Welcome to our website where we explore the incredible world of neural networks. Our background features a pattern inspired by the intricate structure of these powerful systems.
 

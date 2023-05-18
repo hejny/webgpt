@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the World of AInauts
+# AInauts' World
 
 Experience the thrill of exploration as you journey with our team of AInauts deep into the underground tunnels of a distant planet. Our cutting-edge technology and advanced AI systems allow us to navigate through the treacherous terrain, uncovering new wonders at every turn.
 

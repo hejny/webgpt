@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cybersecurity for Small Businesses.
+# Small Business Cybersecurity
 
 Welcome to our website dedicated to providing resources and information about cybersecurity for small businesses. Our minimalist wallpaper features a single line drawing of a cyborg in bright red or blue, reminding you to stay vigilant against digital threats.
 

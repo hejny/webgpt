@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Fascinating World of Quantum Physics with Our Abstract Design
+# Discover Quantum Physics with Our Abstract Design
 
 Our abstract design is a beautiful representation of the shapes and colors found in the intriguing field of quantum physics. The intricate lines and bold colors capture the essence of this complex world, making it perfect for anyone who appreciates stunning design or has an interest in science.
 

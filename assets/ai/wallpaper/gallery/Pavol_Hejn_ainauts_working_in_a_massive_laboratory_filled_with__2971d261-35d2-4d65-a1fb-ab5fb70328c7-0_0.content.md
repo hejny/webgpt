@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Welcome to the Future: Exploring Cutting-Edge Research with AInauts
+# Future Research with AInauts
 
 Are you ready to explore the latest advancements in scientific research? Look no further than our website, where we take you on a journey through the world of AInauts and their groundbreaking work.
 

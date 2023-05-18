@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the World of Neural Networks
+# Neural Network Exploration
 
 Welcome to our website dedicated to exploring the fascinating world of neural networks. Our visually stunning graphic, featuring a simple yet captivating image of a neural network set against a background of complementary colors, is just one aspect of what we offer.
 

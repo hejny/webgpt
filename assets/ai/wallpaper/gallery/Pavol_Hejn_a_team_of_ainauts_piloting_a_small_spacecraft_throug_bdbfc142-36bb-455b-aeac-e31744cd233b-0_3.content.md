@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our AI Space Adventure!
+# AI Space Adventure!
 
 Get ready to embark on an exciting journey through space with our team of AInauts. Our latest wallpaper features a small spacecraft piloted by skilled artificial intelligence, navigating through a treacherous asteroid field with debris flying all around them.
 

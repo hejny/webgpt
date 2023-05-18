@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the World of AI Neural Networks
+# Exploring AI Neural Networks
 
 Welcome to our website, where you can explore the fascinating world of artificial intelligence through an abstract illustration of an AI neural network. The intricate lines and dark, technological color palette of the design will transport you to a futuristic realm where anything is possible.
 

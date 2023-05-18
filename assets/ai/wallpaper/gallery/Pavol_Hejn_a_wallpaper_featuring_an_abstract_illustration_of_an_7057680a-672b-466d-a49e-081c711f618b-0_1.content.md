@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Power of Artificial Intelligence with Our Website
+# Power up with AI on our site!
 
 Welcome to our website, where we explore the exciting and rapidly evolving field of artificial intelligence. Our goal is to provide you with the latest news, insights, and analysis on this groundbreaking technology.
 

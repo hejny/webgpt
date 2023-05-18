@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Dystopian Futures: A Critical Look at Society and Technology
+# Shorter title: "Dystopian Futures: Society and Technology"
 
 Welcome to our website where we explore the themes of dystopia, taking a critical look at the impact of society and technology on our world. Our content delves into thought-provoking topics such as social inequality, the consequences of unchecked power, and the effects of technology on humanity.
 

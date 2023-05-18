@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Get Instant Support with Our Chatbot
+# Instant Chatbot Support
 
 Welcome to our website, where you can get instant support through our virtual assistant or chatbot. Our wallpaper features a simple graphic of our chatbot, which has ample space for messages and alerts, ensuring that you never miss any important information.
 

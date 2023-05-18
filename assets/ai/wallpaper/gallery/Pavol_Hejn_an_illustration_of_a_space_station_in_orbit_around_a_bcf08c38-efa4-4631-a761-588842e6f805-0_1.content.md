@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Wonders of Space with Our Gas Giant Illustration
+# Discover Space Wonders with Gas Giant Illustration
 
 Welcome to our website where you can discover the beauty and mystery of space through our stunning illustration of a space station in orbit around a gas giant planet. The intricate details of the rings and storms visible in the background make this image truly captivating.
 

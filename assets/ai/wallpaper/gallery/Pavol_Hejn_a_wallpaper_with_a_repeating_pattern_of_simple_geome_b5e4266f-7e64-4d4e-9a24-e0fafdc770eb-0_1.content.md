@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Space with Modern Geometric Designs
+# Modern Geometric Designs for Elevated Spaces
 
 Looking to add a touch of modern sophistication to your space? Our collection of geometric designs is the perfect solution. Featuring simple shapes in a monochromatic color palette, our patterns create a stunning visual impact that will transform any room.
 

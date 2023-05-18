@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to AInauts' Zero-Gravity Laboratory
+# AInauts' Zero-G Lab
 
 Experience the future of science and exploration with AInauts and their AI companions as they conduct groundbreaking experiments in a zero-gravity laboratory. Our wallpaper showcases the colorful chemicals and particles floating all around them, giving you a glimpse into the exciting world of space research.
 

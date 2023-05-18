@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future with Our Futuristic Technology Display
+# Future Tech Display
 
 Our website is dedicated to showcasing the latest advancements in technology through a visually stunning display. Our futuristic technology collage features a sleek black background and an impressive collection of devices, including drones, robots, and smart gadgets.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# "Exploring Abandoned Spaceships in the Galaxy"
+# Exploring Abandoned Spaceships
 
 Welcome to our website, where we take you on a thrilling journey through the depths of space. Join our team of AInauts and their AI companions as they explore a massive, abandoned spacecraft, uncovering its secrets and unraveling the mysteries that lie within.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Fascinating World of Cyborgs
+# Cyborgs: A Fascinating World
 
 Welcome to our website dedicated to exploring the fascinating world of cyborgs. Our mission is to examine the intersection of man and machine, exploring how technology can enhance human capabilities through cyborg technology.
 

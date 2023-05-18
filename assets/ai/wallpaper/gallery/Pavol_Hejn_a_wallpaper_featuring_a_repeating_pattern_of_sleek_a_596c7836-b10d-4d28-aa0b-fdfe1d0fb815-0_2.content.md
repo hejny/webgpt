@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Devices Background for Your Productive Workspace
+# Digital Device Background for Productive Workspace
 
 Welcome to our website dedicated to helping you create the perfect workspace. Our digital devices background is a sleek and modern addition that can inspire productivity and creativity in your workspace.
 

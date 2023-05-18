@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Exploring the Impact of AI on Human Physiology
+# AI's Impact on Human Physiology: AInauts Exploration
 
 ---
 

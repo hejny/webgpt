@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to Our Futuristic Colony on a Distant Planet
+# Futuristic Colony on Distant Planet
 
 Experience the beauty and wonder of our colony on a distant planet through this stunning wallpaper. The illustration showcases a mix of futuristic and traditional architecture, giving you a glimpse into the unique blend of technology and culture that defines our community.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Add Retro Robot Personality to Your Workspace Background"
+# Retro Robot Background for Your Workspace
 
 Our retro robot background is a unique and inspiring addition to any workspace. Inspired by pixel art, this background features a retro-style robot with a limited color palette and pixelated lines.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring Alien Structure with AInauts
+# AI Explores Alien Structure
 
 Welcome to our website, where we explore the wonders of space and the mysteries that lie beyond. Our team of AInauts has traveled to the far reaches of the galaxy to bring you the latest discoveries and insights into the unknown.
 

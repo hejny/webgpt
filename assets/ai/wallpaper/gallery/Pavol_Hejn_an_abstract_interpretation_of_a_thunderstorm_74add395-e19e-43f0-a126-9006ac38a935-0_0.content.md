@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Stormy Skies: Experience the Drama of a Thunderstorm in Your Space
+# Thunderstorm Experience in Your Space
 
 Transform your space with the power and beauty of a thunderstorm. Our Stormy Skies design captures the essence of a stormy sky with bold strokes of deep blues, grays, and purples, creating a dramatic and captivating backdrop for any room.
 

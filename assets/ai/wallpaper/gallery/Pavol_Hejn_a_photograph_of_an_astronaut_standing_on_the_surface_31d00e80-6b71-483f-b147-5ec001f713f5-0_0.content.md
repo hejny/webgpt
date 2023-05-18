@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Space Wonders with Astronaut Desktop Wallpaper.
+# Explore Space with Astronaut Wallpaper
 
 Our astronaut desktop background is a stunning space scene that will inspire wonder and curiosity every time you open your computer. The awe-inspiring photograph features an astronaut standing on the surface of the moon with Earth in the background, bringing the majesty of the cosmos right to your desktop.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the World of Virtual Reality
+# Virtual Reality Exploration
 
 Welcome to our website, your ultimate guide to the world of virtual reality! Our wallpaper features a simple yet captivating illustration of a VR headset against a gradient background of two contrasting colors, setting the tone for your journey into the exciting realm of VR.
 

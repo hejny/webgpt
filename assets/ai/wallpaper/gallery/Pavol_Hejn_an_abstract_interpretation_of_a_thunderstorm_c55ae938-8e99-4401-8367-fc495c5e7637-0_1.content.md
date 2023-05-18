@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Electric Skies: An Abstract Interpretation of a Thunderstorm
+# Electric Skies: Abstract Thunderstorm Interpretation
 
 Welcome to our website featuring a stunning wallpaper inspired by the raw power and beauty of thunderstorms. Our wallpaper captures the essence of an electrifying storm with its abstract interpretation, showcasing the dynamic interplay of light and dark, chaos and order.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Experimenting on Distant Planet.
+# AI Experiment on Distant Planet
 
 Welcome to our website showcasing an incredible wallpaper of AInauts conducting experiments on a distant planet, with a red sun setting behind them.
 

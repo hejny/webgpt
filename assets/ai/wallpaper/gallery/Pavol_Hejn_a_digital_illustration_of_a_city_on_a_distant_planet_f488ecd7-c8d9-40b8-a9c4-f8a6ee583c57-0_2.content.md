@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Future Cityscapes: Digital Illustrations of Advanced Tech.
+# Digital Illustrations of Future Tech Cityscapes
 
 Welcome to our collection of stunning digital illustrations featuring futuristic cityscapes on distant planets. Our wallpapers showcase towering buildings, bustling streets, and advanced technology that will transport you to a world beyond your imagination.
 

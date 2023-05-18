@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Neural Network Background for Your Website
+# Futuristic Neural Website Background
 
 Make your website stand out with our unique and innovative neural network background. This design features a simple graphic of a neural network against a complementary color scheme, creating a visually striking look that conveys a sense of expertise and cutting-edge technology.
 

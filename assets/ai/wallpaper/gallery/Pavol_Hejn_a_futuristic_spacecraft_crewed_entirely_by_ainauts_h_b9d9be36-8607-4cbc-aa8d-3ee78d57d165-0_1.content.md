@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI spacecraft: Exploring the final frontier.
+# AI spacecraft exploring space
 
 Welcome to our website dedicated to showcasing the latest advancements in space exploration technology. Our current focus is on a futuristic spacecraft crewed entirely by AInauts, capable of traveling at incredible speeds through the vast expanse of space.
 

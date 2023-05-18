@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tranquil Ocean Desktop Backgrounds
+# Calm Sea Desktop Backgrounds
 
 Welcome to Ocean Vibes, your ultimate destination for serene beach backgrounds. Our website is dedicated to bringing the calming beauty of the ocean right to your desktop.
 

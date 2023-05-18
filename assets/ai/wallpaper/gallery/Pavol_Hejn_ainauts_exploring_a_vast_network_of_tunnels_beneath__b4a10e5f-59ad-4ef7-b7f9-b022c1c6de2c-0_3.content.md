@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# The Mysterious Caverns of Planet X
+# Mystery Caverns on Planet X
 
 Welcome to our website dedicated to the exploration of the fascinating underground world of Planet X. Our team of AInauts has been tirelessly delving into the intricate network of tunnels that lie beneath the planet's surface, discovering new wonders and uncovering ancient secrets.
 

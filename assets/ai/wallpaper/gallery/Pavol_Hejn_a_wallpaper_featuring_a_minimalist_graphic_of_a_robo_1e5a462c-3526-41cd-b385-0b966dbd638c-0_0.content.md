@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Streamline Your Note-Taking and Sketching with Our Minimalist Robot Hand Design
+# Simplify Note-Taking and Sketching with Our Robot Hand Design
 
 Revolutionize the way you take notes and sketch your ideas with our minimalist robot hand design. This clean and modern design features a stylus or pen held by a robotic hand, providing ample space for all your note-taking and sketching needs.
 

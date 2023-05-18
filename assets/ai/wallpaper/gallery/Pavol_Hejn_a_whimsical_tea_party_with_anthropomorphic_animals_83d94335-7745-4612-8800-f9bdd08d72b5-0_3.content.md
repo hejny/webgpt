@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Dancing Script-->
 
-# Welcome to our Whimsical Tea Party!
+# Whimsical Tea Party Welcome!
 
 Join us for a delightful experience with our collection of anthropomorphic animal wallpapers. These charming designs will transport you to a world of fantasy and wonder, where tea parties are hosted by rabbits and cats wear top hats.
 

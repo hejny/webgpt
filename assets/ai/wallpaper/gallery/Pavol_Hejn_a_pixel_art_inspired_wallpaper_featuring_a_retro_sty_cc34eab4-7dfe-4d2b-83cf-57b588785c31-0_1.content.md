@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Vintage Look with Retro Robot Background"
+# Retro Robot Vintage Look
 
 Bring some retro charm to your desktop or phone with our pixel art-inspired Retro Robot background! Featuring a limited color palette and pixelated lines, this background is perfect for anyone who loves classic video games and 80s sci-fi.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Add a Tech-Inspired Touch to Your Desktop with Our Icon Pattern
+# Tech Icon Pattern for Your Desktop
 
 Looking to give your desktop a unique and tech-inspired look? Check out our abstract icon pattern! This repeating pattern features symbols commonly used in the tech industry, such as computer chips and power buttons, adding a touch of digital flair to your computer screen.
 

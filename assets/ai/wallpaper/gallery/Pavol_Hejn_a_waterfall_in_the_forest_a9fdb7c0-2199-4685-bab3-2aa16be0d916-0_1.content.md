@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Nature's Beauty: A Waterfall in the Forest
+# Forest Waterfall's Beauty
 
 Welcome to our website showcasing the beauty of nature! Our current wallpaper features a breathtaking waterfall nestled in the heart of a lush forest.
 

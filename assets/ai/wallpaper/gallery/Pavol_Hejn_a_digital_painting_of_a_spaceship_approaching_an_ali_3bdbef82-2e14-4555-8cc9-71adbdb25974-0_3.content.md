@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Sci-Fi Adventure Background for Alien World Exploration
+# Shorter title: Sci-Fi Alien World Adventure Background
 
 Welcome to our website where you can download a captivating sci-fi adventure background that will transport you to a distant planet filled with wonder and mystery. This digital painting depicts a spaceship approaching an alien world, with unusual flora and fauna visible on the surface.
 

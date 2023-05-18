@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Thunderstorm: An Abstract Interpretation
+# Thunderstorm Abstraction
 
 Welcome to our website featuring an abstract interpretation of a thunderstorm. Our stunning wallpaper captures the essence of a thunderstorm with its bold colors and dynamic shapes.
 

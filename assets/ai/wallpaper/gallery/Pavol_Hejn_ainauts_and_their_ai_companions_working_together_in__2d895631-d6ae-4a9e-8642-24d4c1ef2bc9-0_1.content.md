@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to AInauts Space Station
+# AInauts Space Station Welcome
 
 Explore the vastness of space with our team of AInauts and their AI companions. Our massive zero-gravity space station is home to some of the most advanced technology in the galaxy, allowing us to conduct groundbreaking research and push the boundaries of space exploration.
 

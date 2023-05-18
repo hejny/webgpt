@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Online Presence with a Modern Geometric Design
+# Elevate Online Presence with Geometric Design
 
 Welcome to our website, where we offer you a unique and modern geometric design to enhance your online presence. Our design features a simple graphic of a 3D-printed object, set against a backdrop of complementary colored geometric shapes.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Data Visualizations Background
+# Futuristic Data Visuals Background
 
 Welcome to our website dedicated to the world of data and analytics. Our goal is to help you understand how data can be used to drive business decisions and improve outcomes. As part of our commitment to providing an innovative experience, we have chosen a futuristic background featuring a matrix of data visualizations and graphs.
 

@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Futuristic Backgrounds for Your Devices
+# Futuristic Device Backgrounds
 
 Transform your desktop or mobile device with our collection of high-quality backgrounds, featuring an abstract circuit board pattern in shades of blue and silver.
 

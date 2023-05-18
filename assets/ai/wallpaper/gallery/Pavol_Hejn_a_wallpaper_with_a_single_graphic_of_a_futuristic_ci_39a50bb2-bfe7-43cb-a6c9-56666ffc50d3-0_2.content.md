@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Futuristic Cityscapes: Explore a New World of Design
+# Explore Futuristic Cityscapes
 
 Welcome to our collection of stunning graphics featuring futuristic cityscapes. Our designs are inspired by science fiction movies and showcase towering skyscrapers, flying vehicles, and advanced technology.
 

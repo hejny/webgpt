@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Geometric Design for Your Digital Space.
+# Quantum Design for Your Digital Space
 
 Experience the beauty of quantum computing with our stunning geometric design, featuring shades of purple and pink. This cutting-edge design is perfect for adding a touch of futuristic style to your digital space.
 

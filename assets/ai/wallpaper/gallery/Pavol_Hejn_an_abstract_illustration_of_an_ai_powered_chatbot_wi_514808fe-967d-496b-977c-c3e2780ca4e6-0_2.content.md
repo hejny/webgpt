@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Chatbot - Revolutionizing Conversations
+# AI Chatbot Revolutionizing Conversations
 
 Welcome to our website, where we showcase the power of AI chatbots in revolutionizing conversations. Our sleek and modern graphics are inspired by the abstract illustration of an AI-powered chatbot. The minimalist color scheme is designed to create a calming and professional atmosphere for our users.
 

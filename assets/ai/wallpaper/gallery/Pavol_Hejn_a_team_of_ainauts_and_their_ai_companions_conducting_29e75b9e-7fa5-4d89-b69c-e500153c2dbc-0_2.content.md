@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# "Journey to the Edge of a Black Hole"
+# Black Hole Expedition
 
 Welcome to our website, where we take you on a journey to the edge of a black hole. Our team of AInauts and their AI companions conduct experiments in this unfathomable space, where time and space warp around them.
 

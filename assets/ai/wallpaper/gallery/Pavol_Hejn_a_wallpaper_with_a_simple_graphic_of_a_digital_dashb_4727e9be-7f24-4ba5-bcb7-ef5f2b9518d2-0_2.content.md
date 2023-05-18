@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Website Design with a Digital Control Panel Background
+# Improve Website Design with Digital Control Panel Background
 
 Looking for a way to give your website a professional and modern look? Our digital control panel background is the perfect solution. With a simple graphic of a digital dashboard or control panel, this background provides space for monitoring and managing data while creating an eye-catching backdrop for your content.
 

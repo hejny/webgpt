@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Universe with Our Desktop Backgrounds.
+# Explore the Universe with Our Desktop Backgrounds
 
 Welcome to our website, where we offer a stunning desktop background that will take you on a journey through the universe. Our background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. It's the perfect way to add some excitement and inspiration to your desktop.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# DarkTech: Art and Technology in Harmony
+# Harmonious DarkTech Art
 
 DarkTech is a platform that celebrates the intersection of art and technology. Our goal is to showcase the beauty and complexity of technology through artistic expression.
 

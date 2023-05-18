@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Lab: Science Fiction to Reality
+# AI Lab: From Sci-Fi to Reality
 
 Welcome to the AI Lab, a cutting-edge research facility where AInauts use artificial intelligence and advanced technology to create new forms of life. Our team of experts is dedicated to pushing the boundaries of what's possible, exploring the frontiers of science and engineering, and unlocking the secrets of the universe.
 

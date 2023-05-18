@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Thunderstorm Central: Your Ultimate Resource for Exploring the Power of Nature
+# Thunderstorm Central: Explore the Power of Nature
 
 Welcome to Thunderstorm Central, your ultimate resource for exploring the captivating world of thunderstorms. Our team of weather enthusiasts, scientists, and educators are passionate about sharing knowledge and resources to deepen your understanding and appreciation of this awe-inspiring force of nature.
 

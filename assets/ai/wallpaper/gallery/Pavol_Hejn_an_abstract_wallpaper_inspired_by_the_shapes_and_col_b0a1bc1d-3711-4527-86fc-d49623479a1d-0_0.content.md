@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Digital Space with Quantum-Inspired Art
+# Quantum Art for Digital Spaces
 
 Transform your digital space with our stunning quantum-inspired art, designed to add a touch of elegance and creativity to your desktop or phone background. Drawing inspiration from the shapes and colors found in quantum physics, this unique artwork features bold and intricate designs that are sure to impress.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Future Tech & Innovation Welcome
+# Future Tech Welcome
 
 Are you ready for a glimpse into the future? Our website is here to provide you with the latest and greatest in technology and innovation. And what better way to showcase our vision than with this stunning wallpaper of a futuristic city filled with holographic advertisements?
 

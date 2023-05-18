@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Futuristic Data Visualization with Minimalist Design
+# Futuristic Data Visualization with Minimalist Design
 
 Welcome to our website where we showcase the latest advancements in futuristic data visualization. Our minimalist design and sleek graphics take you on a journey through the world of data visualization.
 

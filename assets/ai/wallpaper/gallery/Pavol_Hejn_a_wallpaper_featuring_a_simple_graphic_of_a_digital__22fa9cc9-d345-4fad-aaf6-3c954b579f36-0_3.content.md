@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Manage Your Time Effectively with TimeTracker
+# TimeTracker: Manage Your Time Effectively
 
 Welcome to TimeTracker, the ultimate tool for managing your time and boosting your productivity. Our intuitive interface is designed to help you stay focused and on task, with features like alarms and countdowns to keep you on schedule.
 

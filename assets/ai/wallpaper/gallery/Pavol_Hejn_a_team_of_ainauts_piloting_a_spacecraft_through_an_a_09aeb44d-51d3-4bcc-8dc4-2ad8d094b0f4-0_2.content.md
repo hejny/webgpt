@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Space Adventure: Navigate Through the Asteroid Field
+# Asteroid Field Navigation
 
 Welcome to our website, where you can experience an exciting space adventure! Our wallpaper depicts a team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. Get ready to embark on a thrilling journey through space!
 

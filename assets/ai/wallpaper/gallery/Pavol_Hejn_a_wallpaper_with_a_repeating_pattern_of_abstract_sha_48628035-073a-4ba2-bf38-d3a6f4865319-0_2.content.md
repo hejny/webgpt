@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cyberpunk-Inspired Desktop Background for a Futuristic Workspace
+# Cyberpunk Desktop Background for Futuristic Workspace
 
 Get ready to take your digital workspace to the next level with our latest desktop background design. Featuring a repeating pattern of abstract shapes inspired by computer viruses and malware, this sleek and edgy design is set against a dark black background, perfect for those who want to add a touch of cyberpunk aesthetics to their desktop.
 

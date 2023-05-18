@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# AI Buzzwords Wallpaper for Tech Enthusiasts
+# AI Buzzwords Wallpaper for Tech Fans
 
 Looking for a sleek and minimalist wallpaper to showcase your love for artificial intelligence? Our AI Buzzwords wallpaper features a repeating pattern of AI-related buzzwords in a sleek font and color scheme. 
 

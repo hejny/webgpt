@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Power of Quantum Computing
+# Power of Quantum Computing Discovered
 
 Immerse yourself in the cutting-edge world of quantum computing with our stunning wallpaper featuring a digital rendering of a quantum computer. The minimalist design and geometric lines create a sleek and modern background for your digital workspace.
 

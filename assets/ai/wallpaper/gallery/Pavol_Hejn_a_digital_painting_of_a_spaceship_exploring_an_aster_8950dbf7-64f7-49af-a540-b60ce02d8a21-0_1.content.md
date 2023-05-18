@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Digital Space Adventure Painting.
+# Digital Adventure Painting
 
 Take your desktop to new heights with our stunning digital painting of a spaceship exploring an asteroid field. The rocky terrain and dangerous debris create a sense of adventure and challenge, inviting you to join the crew on their mission to explore the mysteries of space.
 

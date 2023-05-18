@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# DataVizPro: Your Partner for Cutting-Edge Data Solutions
+# DataVizPro: Cutting-Edge Data Solutions Partner
 
 Welcome to DataVizPro, your partner for cutting-edge data solutions. Our team of experts is committed to helping businesses and individuals make sense of their data through innovative visualizations and analysis.
 

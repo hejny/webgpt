@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Seagull's Majestic Flight: A Nature Reminder
+# Majestic Seagull Flight: Nature Reminder
 
 Our stunning wallpaper captures the essence of nature with a close-up of a seagull in flight. This majestic bird represents the freedom and grace of life in the wild, reminding us of the beauty that surrounds us every day.
 

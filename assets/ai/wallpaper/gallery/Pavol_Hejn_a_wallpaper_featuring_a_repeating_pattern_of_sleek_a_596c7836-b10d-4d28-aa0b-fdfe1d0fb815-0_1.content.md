@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with a Modern Digital Device Design
+# Upgrade Your Workspace with a Digital Device Design
 
 Upgrade your workspace with our modern design featuring a repeating pattern of popular digital devices such as smartphones, tablets, and laptops. Our design is perfect for anyone who wants to add a touch of tech-savvy style to their desktop or mobile device.
 

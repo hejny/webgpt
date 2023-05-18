@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Explore the Depths of Space with Our AI-Powered Team
+# AI-Powered Team Explores Space's Depths
 
 Welcome to our website, where we take you on a journey through the vast expanse of space. Our team of AInauts is at the forefront of space exploration, piloting small spacecraft through treacherous asteroid fields and navigating the unknown depths of the universe.
 

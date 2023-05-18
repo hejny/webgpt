@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Explore the Wonders of the Universe with Our Vintage-Style Travel Posters
+# Vintage Travel Posters for the Universe's Wonders
 
 Looking for a unique way to decorate your space and satisfy your wanderlust at the same time? Look no further than our collection of vintage-style travel posters featuring distant planets, galaxies, and other celestial wonders. Each poster is designed with bold typography and an artistic rendering of the landscape, bringing the beauty of the universe right into your home.
 

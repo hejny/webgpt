@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Exploring the Frozen Moons of Gas Giants
+# Frozen Moons of Gas Giants Exploration
 
 Welcome to our website where we share our adventures as a team of AInauts exploring the frozen moons orbiting gas giant planets. Our current mission involves conducting experiments on a massive, frozen moon that has caught our attention.
 

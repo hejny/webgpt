@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modern Geometric Backgrounds for Your Website
+# Geometric Website Backgrounds
 
 Welcome to our website where we offer a selection of modern and eye-catching backgrounds for your website. Our latest addition is a set of geometric patterns with abstract shapes and designs that create a dynamic and visually interesting background, perfect for those who want to add a touch of modernity and boldness to their website.
 

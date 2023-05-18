@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Space Wonders with Nebula Background.
+# Explore Space with Nebula Background
 
 Welcome to our website, where we offer a stunning background that captures the beauty of the universe. Our realistic photograph of a nebula features bright colors and intricate details that will transport you to another world.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Sleek Data Dashboard Wallpaper for Your Business Website
+# Sleek Dashboard Wallpaper for Business Website
 
 Welcome to our website, where we offer a range of backgrounds to help you improve the look and feel of your business website. Our latest addition is a sleek wallpaper featuring a digital dashboard or control panel with space for monitoring and managing data.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature's Mystery: Moonlit Mountain Background
+# Moonlit Mountain Mystery
 
 Welcome to our website, where we celebrate the beauty and wonder of nature. Our moonlit mountain background captures the essence of mystery and awe that surrounds us in the natural world.
 

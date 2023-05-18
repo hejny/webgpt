@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# "AI Team Explores Gas Giant in Universe"
+# AI Explores Gas Giant in Universe
 
 Welcome to our website dedicated to the exploration of the universe! Our team of AInauts, together with their AI companions, has been conducting experiments on the surface of a massive, gas giant planet. We are excited to share with you our findings and discoveries from this incredible journey.
 

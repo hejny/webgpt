@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech-Inspired Background for Your Device
+# Tech Background for Your Device
 
 Upgrade your device's background with our tech-inspired design featuring a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons.
 

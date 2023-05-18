@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# TechWave - Your Source for the Latest in Technology News and Reviews
+# TechWave - Latest Tech News and Reviews
 
 Welcome to TechWave, your go-to source for the latest technology news, reviews, and user stories. Our website is designed to keep you up-to-date with the latest trends in the tech world.
 

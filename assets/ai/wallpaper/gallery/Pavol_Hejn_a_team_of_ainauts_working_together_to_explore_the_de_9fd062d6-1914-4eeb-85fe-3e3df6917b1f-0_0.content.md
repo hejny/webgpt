@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the AInauts' Journey
+# AInauts' Journey Welcome
 
 Explore the depths of a black hole with our team of AInauts, equipped with futuristic technology at their fingertips.
 

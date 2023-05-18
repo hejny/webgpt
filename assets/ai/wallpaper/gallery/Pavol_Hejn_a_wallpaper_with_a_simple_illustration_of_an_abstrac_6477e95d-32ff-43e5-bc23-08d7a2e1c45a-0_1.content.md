@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the World of Abstract Networks
+# Abstract Network Exploration
 
 Welcome to our website dedicated to exploring the fascinating world of abstract networks. Our minimalist design features a stunning illustration of an abstract network as a related background, providing the perfect visual representation of this complex topic.
 

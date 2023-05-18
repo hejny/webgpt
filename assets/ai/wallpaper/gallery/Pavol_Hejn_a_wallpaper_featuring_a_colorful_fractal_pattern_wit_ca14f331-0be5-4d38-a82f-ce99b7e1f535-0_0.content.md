@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Mesmerizing World of Fractal Art
+# Fractal Art Exploration
 
 Step into the enchanting world of fractal art with our stunning website background. Featuring a colorful and intricate pattern, this design adds a touch of elegance to your browsing experience.
 

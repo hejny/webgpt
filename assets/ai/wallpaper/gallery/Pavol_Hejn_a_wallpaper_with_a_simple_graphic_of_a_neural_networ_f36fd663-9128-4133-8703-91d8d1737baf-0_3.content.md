@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Cutting-Edge of Artificial Intelligence
+# Cutting-Edge AI Exploration
 
 Our website provides a visually stunning backdrop featuring a simple graphic of a neural network against a complementary color scheme. But this is just the beginning. Our focus is on exploring the cutting-edge of artificial intelligence and machine learning, with a particular emphasis on neural networks.
 

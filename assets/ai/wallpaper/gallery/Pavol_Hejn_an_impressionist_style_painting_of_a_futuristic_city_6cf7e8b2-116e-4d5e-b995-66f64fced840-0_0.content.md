@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Futuristic Cityscapes: A Window to the Future
+# Future Cityscapes
 
 Welcome to our website, where we showcase stunning artwork that captures the essence of futuristic cityscapes. Our latest addition is an impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect.
 

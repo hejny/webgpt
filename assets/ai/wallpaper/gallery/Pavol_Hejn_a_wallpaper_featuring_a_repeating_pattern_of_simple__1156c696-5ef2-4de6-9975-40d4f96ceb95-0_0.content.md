@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# MathWall - Mathematical Art for Your Desktop
+# MathWall: Mathematical Desktop Art
 
 Welcome to MathWall, the perfect destination for those who appreciate the beauty of mathematics and minimalist design. Our wallpaper collection features stunning repeating patterns of simple equations and formulas arranged in a modern and eye-catching style.
 

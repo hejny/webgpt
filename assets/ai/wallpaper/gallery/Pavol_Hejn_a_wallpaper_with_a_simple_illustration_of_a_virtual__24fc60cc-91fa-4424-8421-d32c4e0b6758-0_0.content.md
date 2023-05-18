@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Immerse Yourself in Virtual Reality with a VR Headset
+# Experience VR with a Headset
 
 Step into a whole new world of gaming and entertainment with this stunning wallpaper featuring a sleek design of a VR headset. The gradient background of two contrasting colors adds a modern touch to the overall look.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Future of Science and Technology with AInauts
+# Future Tech with AInauts
 
 Step into the world of AInauts, where our team of experts conducts groundbreaking research in artificial intelligence, machine learning, and robotics. Our massive laboratory is equipped with state-of-the-art equipment and holographic displays to facilitate cutting-edge research.
 

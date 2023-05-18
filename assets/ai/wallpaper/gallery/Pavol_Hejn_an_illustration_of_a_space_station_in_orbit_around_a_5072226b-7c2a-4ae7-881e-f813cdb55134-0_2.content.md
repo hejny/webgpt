@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Space Station Orbiting a Gas Giant
+# Orbiting Gas Giant Space Station
 
 Welcome to our website where you can download an amazing wallpaper of a space station orbiting a gas giant planet. The illustration captures the beauty of outer space, with stunning rings and storms visible in the background.
 

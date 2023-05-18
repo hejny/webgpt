@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Stay Up-to-Date with the Latest Tech Trends
+# Keep up with Tech Trends
 
 Our website features a unique and modern design inspired by circuit board components in shades of black, grey, and neon green. But our focus is on providing you with the latest news and insights on everything tech-related.
 

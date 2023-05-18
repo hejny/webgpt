@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future with Our Futuristic Technology Collage
+# Future Tech Collage Exploration
 
 Get ready to explore the future with our visually stunning collage of the latest advancements in technology. Featuring an array of futuristic devices, including drones, robots, and smart gadgets, set against a sleek black background, this design is sure to impress.
 

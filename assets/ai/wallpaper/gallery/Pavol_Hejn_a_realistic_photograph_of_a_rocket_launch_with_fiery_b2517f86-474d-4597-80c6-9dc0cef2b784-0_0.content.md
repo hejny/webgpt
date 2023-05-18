@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Shorter title: SpaceX Launch Desktop Wallpaper: Thrilling Space Exploration
+# SpaceX Launch Wallpaper: Thrilling Exploration
 
 Transform your desktop into a breathtaking view of space with our SpaceX Launch desktop background. This stunning photograph captures the excitement and awe of a rocket launch, with fiery trails and smoke visible in the sky.
 

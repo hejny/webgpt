@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Welcome to "Sunrise on a Distant Planet"
+# Sunrise on Another Planet
 
 Experience the beauty of a sunrise on a distant planet with our stunning wallpaper. Our high-quality image captures the vibrant colors and unique landscape of this far-off world.
 

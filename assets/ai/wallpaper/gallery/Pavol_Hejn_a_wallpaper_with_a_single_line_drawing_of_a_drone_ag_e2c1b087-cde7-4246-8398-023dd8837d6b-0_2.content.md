@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the World of Drones with DroneX
+# Explore Drones with DroneX
 
 Welcome to DroneX, your gateway to the exciting world of drones. Whether you're a seasoned pro or just starting out, we have everything you need to explore this thrilling hobby.
 

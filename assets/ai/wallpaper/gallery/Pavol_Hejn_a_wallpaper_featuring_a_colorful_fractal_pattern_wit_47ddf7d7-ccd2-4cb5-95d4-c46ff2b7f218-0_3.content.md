@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Empowering Creativity with a Dynamic Fractal Background
+# Dynamic Fractal Background Empowers Creativity
 
 Welcome to our platform dedicated to empowering creatives from all backgrounds. Our website provides a variety of resources and tools to help you bring your ideas to life.
 

@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Jellyfish Close-Up: Exploring Ocean Beauty
+# Ocean Beauty Explored: Jellyfish Close-Up
 
 Immerse yourself in the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This captivating image showcases the vibrant colors and intricate details of one of nature's most fascinating creatures.
 

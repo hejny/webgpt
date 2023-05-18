@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# DataVizPro - Your Ultimate Data Visualization Tool
+# DataVizPro - Ultimate Data Viz Tool
 
 Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a comprehensive suite of tools to help you create stunning visualizations that will help you better understand your data.
 

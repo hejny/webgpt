@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Inter-->
 
-# Cutting-Edge Research in AI and Robotics
+# AI and Robotics Research
 
 Welcome to our website dedicated to the latest advancements in artificial intelligence and robotics. Our team of AInauts is working tirelessly to push the boundaries of what's possible with these exciting technologies.
 

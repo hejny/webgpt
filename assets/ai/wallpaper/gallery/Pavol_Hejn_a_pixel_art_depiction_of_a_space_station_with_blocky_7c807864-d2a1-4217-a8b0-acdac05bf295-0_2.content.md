@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Futuristic Space Exploration: Unleash Your Imagination.
+# Retro-Futuristic Space Exploration: Imagine More
 
 Welcome to our website where you can unleash your imagination and explore a captivating world of retro-futuristic space exploration. Our pixel art depiction of a space station, with its blocky shapes and limited color palette, will transport you to a different time and place.
 

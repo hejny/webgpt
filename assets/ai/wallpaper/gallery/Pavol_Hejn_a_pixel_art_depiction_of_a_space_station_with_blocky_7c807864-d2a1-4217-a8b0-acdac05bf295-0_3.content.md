@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Space with Our Pixel Art Space Station
+# Pixel Space Station for Space Exploration
 
 Step into the world of space exploration with our stunning pixel art depiction of a space station. The retro-futuristic design, with blocky shapes and limited colors, creates a unique and captivating experience.
 

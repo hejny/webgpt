@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modernize Your Space with Geometric Elegance
+# Geometric Elegance for Modern Spaces
 
 Our website features a stunning modern geometric design that will add sophistication to any room in your home or office. The repeating pattern of simple geometric shapes arranged in a grid-like structure creates a sleek and stylish backdrop for your space.
 

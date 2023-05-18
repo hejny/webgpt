@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Future: A Collage of Futuristic Technology
+# Futuristic Technology Collage
 
 Step into a world of innovation and possibility with our stunning wallpaper featuring a collage of futuristic technology. Against a sleek black background, drones, robots, and smart devices come together in a dazzling display that captures the excitement of what's to come.
 

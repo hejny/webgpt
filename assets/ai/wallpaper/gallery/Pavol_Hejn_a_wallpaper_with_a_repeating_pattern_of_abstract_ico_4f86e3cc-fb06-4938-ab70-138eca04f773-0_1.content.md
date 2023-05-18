@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Tech Style with Our Abstract Background
+# Elevate Tech Style with Abstract Background
 
 Add a touch of tech-inspired style to your desktop or mobile device with our abstract background. Featuring a repeating pattern of icons and symbols commonly used in the tech industry, such as computer chips and power buttons, this high-quality image is perfect for anyone who wants to showcase their love of technology.
 

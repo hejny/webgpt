@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist AI Buzzwords Background for Tech Enthusiasts
+# Minimalist AI Buzzwords for Tech Enthusiasts
 
 Welcome to our tech-focused website! Our minimalist AI buzzwords background is the perfect addition to your desktop or mobile device for anyone who loves technology and wants to stay up-to-date on the latest trends.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Whimsical Surrealist Decor for Your Space.
+# Surrealist Decor for Your Space
 
 Elevate the aesthetic of your space with our collection of surrealist-inspired decor. Our unique design features floating gears, cogs, and computer parts against a backdrop of muted colors, adding a touch of whimsy and creativity to any room.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Timekeeper: Your Productivity Companion
+# Productivity Companion: Timekeeper
 
 Welcome to Timekeeper, your ultimate productivity companion. Our sleek digital clock or timer design is the perfect addition to your desktop or mobile device, providing you with space for setting alarms and countdowns.
 

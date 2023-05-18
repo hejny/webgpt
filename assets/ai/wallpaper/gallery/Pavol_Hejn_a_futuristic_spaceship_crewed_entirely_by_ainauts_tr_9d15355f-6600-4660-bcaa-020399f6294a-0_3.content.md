@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Spaceship Explores Universe.
+# AI Spaceship Explores Cosmos
 
 Welcome to our website featuring a stunning wallpaper of a futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery.
 

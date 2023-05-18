@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discover the Latest in Technology with Future Tech Hub
+# Explore Future Tech Hub
 
 Welcome to Future Tech Hub, your ultimate source for exploring the latest advancements in technology. Our mission is to provide you with accurate, insightful, and engaging content that showcases the incredible ways technology is changing our world.
 

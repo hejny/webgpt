@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Circuit Board-Inspired Background
+# Circuit Board Background
 
 Looking for a unique and modern background to give your device a fresh new look? Our circuit board-inspired background is the perfect choice! Featuring an abstract circuit board graphic in shades of blue and green, this design adds a touch of sophistication to any desktop or mobile device.
 

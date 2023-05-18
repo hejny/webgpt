@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Digital Experience with Our Tech-Inspired Background
+# Enhance Digital Experience with Tech Background
 
 Welcome to our tech-focused website! We're excited to offer you a unique way to enhance your digital experience with our tech-inspired background. Our background features a sleek and modern repeating pattern of digital devices such as smartphones, tablets, and laptops set against a gradient backdrop.
 

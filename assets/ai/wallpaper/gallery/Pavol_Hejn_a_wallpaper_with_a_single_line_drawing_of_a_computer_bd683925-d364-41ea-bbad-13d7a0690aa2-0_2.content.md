@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Modernize Your Tech Setup with Our Computer Chip Design
+# Upgrade Your Tech with Our Chip Design
 
 Upgrade your tech setup with our computer chip design, featuring a sleek and modern single line drawing in muted grey or blue tones. This design is perfect for anyone who wants to add sophistication to their desktop without being too distracting.
 

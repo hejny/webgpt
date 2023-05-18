@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Boost Your Productivity with a Futuristic Desktop Background
+# Boost Productivity with Futuristic Desktop Background
 
 Get inspired and stay focused with our futuristic desktop background. Featuring a stylized illustration of a sleek and modern workspace, this background is the perfect addition to any screen.
 

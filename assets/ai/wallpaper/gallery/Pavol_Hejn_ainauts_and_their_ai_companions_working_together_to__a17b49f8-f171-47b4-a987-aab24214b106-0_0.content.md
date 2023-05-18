@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the World of AInauts and their AI Companions
+# AInauts and their AI Companions
 
 Experience the thrill of space exploration as you witness the incredible collaboration between AInauts and their AI companions in constructing a massive, orbiting space elevator. Our wallpaper captures the essence of this futuristic vision, showcasing the intricate details of the construction process.
 

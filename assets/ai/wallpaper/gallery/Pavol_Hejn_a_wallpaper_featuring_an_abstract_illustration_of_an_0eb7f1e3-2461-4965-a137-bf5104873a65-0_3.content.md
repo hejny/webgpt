@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI-Powered Search Engine for Modern Users
+# AI Search Engine for Modern Users
 
 Welcome to our website, where we provide a cutting-edge search engine powered by artificial intelligence. Our minimalist and modern design makes it easy for users to find exactly what they're looking for with just a few clicks.
 

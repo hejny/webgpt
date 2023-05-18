@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Enter a World of Innovation and Progress
+# Innovative World
 
 Step into a world of innovation and progress with our abstract illustration of a futuristic cityscape. This captivating image features glowing lights and towering skyscrapers, evoking the excitement and energy of a cutting-edge metropolis.
 

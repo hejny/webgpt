@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Embrace the Future with Futuristic Cityscape.
+# Embracing Futuristic Cityscapes
 
 Our website invites you to immerse yourself in a mesmerizing view of a futuristic cityscape. This stunning minimalist graphic features glowing neon lights and a dark, moody color scheme that sets the tone for an exploration of the latest trends in technology and design.
 

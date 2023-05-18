@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Exploring the Frozen Moons of the Outer Solar System
+# Frozen Moons of Outer Solar System Exploration
 
 Welcome to our website, where we showcase the latest discoveries and experiments conducted by our team of AInauts on the frozen moons orbiting gas giant planets in the outer solar system.
 

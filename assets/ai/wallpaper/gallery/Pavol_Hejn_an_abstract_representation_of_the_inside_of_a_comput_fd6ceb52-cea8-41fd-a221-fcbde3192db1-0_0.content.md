@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Metallic Chip: Your Tech Guide
+# Tech Guide to Metallic Chips
 
 Welcome to The Metallic Chip, your ultimate guide to the latest advancements in computer technology. Our website design features an abstract representation of the inside of a computer chip with a metallic color palette as our background.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Insights for a Safer Online World
+# Safer Online Insights
 
 Welcome to our website dedicated to providing insights on cybersecurity. Our mission is to keep you informed about the latest threats, trends, and solutions in the world of cybersecurity.
 

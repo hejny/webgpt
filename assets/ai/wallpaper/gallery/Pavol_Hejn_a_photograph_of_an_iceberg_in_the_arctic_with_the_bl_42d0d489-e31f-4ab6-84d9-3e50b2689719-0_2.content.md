@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Arctic with Our Desktop Backgrounds.
+# Arctic Desktop Backgrounds to Explore
 
 Welcome to our website, a community of adventure enthusiasts who love exploring the world's most remote and beautiful places. Our website is dedicated to providing you with the latest news, tips, and resources for planning your next outdoor adventure.
 

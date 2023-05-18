@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Sunrise Background: Explore a New World
+# New World Sunrise
 
 Welcome to our website, where we offer a stunning sunrise background that will transport you to a new world. Our background is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
 

@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Explore the Future of Design and Innovation on Our Art Deco-Inspired Site
+# Future Design & Innovation Explored on Art Deco Site
 
 Welcome to our website, where we're redefining what's possible in design and innovation. Our sleek and modern site features a bold pattern in shades of gold and black, with Art Deco-inspired elements such as robot arms and AI nodes.
 

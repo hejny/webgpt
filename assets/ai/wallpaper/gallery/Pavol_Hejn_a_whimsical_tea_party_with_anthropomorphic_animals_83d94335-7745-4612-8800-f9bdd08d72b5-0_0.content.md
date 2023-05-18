@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Dancing Script-->
 
-# Welcome to the Whimsical Tea Party!
+# Whimsical Tea Party Welcome!
 
 Join us for a delightful afternoon with our charming guests - anthropomorphic animals! Our whimsical wallpaper sets the scene for an enchanting tea party experience. 
 

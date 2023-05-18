@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Modern Home Decor with Geometric Shapes
+# Geometric Home Decor
 
 Welcome to our website featuring modern home decor ideas with a repeating pattern of simple geometric shapes in a monochromatic color palette. Our minimalist design is perfect for adding a touch of sophistication and style to any room.
 

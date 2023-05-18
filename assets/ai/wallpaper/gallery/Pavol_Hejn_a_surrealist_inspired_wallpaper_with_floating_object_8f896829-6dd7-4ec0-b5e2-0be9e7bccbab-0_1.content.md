@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Surrealist Imagery for Your Space.
+# Surrealist Decor for Your Space
 
 Welcome to our website, where we offer surrealism-inspired imagery that can enhance your creative space. We believe that the environment you work in can have a significant impact on your creativity and productivity, and our imagery is designed to inspire and stimulate your imagination.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Gas Giant Background
+# Discover Gas Giants as Universe Background
 
 Our gas giant background is the perfect way to add a touch of space to your desktop or mobile device. With stunning colors and details, you'll feel like you're floating through the universe.
 

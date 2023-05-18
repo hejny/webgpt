@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TechNexus: Where Tech Enthusiasts Connect
+# TechNexus: Tech Enthusiast Hub
 
 Welcome to TechNexus, the ultimate destination for tech enthusiasts! Our platform is designed to bring together a community of like-minded individuals from around the world. Whether you're an expert or just starting out, we've got everything you need to stay up-to-date on the latest industry trends and developments.
 

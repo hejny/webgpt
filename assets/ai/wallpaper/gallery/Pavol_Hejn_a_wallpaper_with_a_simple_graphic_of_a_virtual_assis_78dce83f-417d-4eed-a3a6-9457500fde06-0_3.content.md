@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Add Style and Functionality to Your Tech with a Chatbot Design
+# Enhance Tech with Chatbot Design
 
 Upgrade your tech devices with our sleek chatbot design, perfect for desktops, laptops, and mobile devices. This modern design adds both style and functionality to your device.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover a Futuristic Cityscape
+# Futuristic Cityscape Discovery
 
 Experience the future with our abstract illustration of a futuristic cityscape. The design features a dark and moody color scheme, with glowing lights that create an otherworldly atmosphere.
 

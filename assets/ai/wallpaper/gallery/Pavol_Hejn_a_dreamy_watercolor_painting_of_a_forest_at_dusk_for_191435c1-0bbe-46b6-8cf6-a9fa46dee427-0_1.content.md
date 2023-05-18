@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Outdoor Exploration: Discovering Nature's Wonders
+# Discovering Nature Outdoors
 
 Welcome to Nature Wanderlust, a blog dedicated to all things nature and wildlife. Our goal is to inspire you to get out and explore the beauty of the natural world around us. 
 

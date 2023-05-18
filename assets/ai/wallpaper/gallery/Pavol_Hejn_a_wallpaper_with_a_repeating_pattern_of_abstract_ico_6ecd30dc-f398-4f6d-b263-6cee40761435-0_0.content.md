@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# TechConnect: Your Destination for the Latest in Tech
+# TechConnect: Latest in Tech
 
 Welcome to TechConnect, your destination for staying informed about the latest news, trends, and innovations in technology. Our website features a unique wallpaper with a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons. This background reflects our commitment to providing you with the most relevant and up-to-date information about the tech world.
 

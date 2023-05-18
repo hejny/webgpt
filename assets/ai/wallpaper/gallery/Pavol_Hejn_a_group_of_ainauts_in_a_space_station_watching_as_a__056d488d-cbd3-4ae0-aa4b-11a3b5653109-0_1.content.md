@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: The Ultimate Space Adventure.
+# AInauts: Space Adventure
 
 Experience the thrill of space exploration with AInauts, the premier provider of AI-powered space technology. Our team of experts and cutting-edge AI systems will take you on an unforgettable journey through the cosmos.
 

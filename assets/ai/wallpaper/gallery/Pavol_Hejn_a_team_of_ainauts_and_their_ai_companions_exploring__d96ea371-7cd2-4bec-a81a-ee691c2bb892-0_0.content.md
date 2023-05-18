@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Join Our Team of AInauts to Explore Distant Planets
+# Join Our AInaut Team to Explore Planets
 
 Welcome to our website, where we showcase the incredible adventures of our team of AInauts and their AI companions. Our latest expedition takes us deep into a massive underground cave system on a distant planet, where we hope to uncover new discoveries and push the boundaries of exploration.
 

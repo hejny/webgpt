@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Space Odyssey: Navigating Through the Unknown
+# Navigating the Unknown in Space
 
 Welcome to Space Odyssey, your ultimate destination for all things space exploration. Our website is dedicated to providing you with the latest news, updates, and insights into the world of space travel.
 

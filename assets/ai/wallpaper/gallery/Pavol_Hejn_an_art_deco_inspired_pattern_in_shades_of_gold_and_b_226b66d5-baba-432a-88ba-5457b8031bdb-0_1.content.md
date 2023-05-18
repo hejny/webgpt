@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Technology and Design for a Better Future
+# Tech & Design for a Better Future
 
 Welcome to our website dedicated to exploring the latest advancements in technology and design. Our mission is to inspire creativity and innovation in all aspects of life, from business to art. As you browse through our content, you'll notice a striking background design that draws inspiration from the Art Deco movement of the 1920s and 1930s. The pattern features geometric shapes, bold colors, and intricate details, with a futuristic twist that incorporates elements such as robot arms and AI nodes.
 

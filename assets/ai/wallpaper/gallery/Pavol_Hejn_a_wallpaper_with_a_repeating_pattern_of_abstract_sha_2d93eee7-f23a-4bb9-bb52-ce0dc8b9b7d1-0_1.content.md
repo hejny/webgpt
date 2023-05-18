@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Enhance Your Digital Workspace with Cyber-Inspired Wallpaper
+# Improve Workspace with Cyber Wallpaper
 
 Looking for a way to add some creative flair and tech-inspired style to your digital workspace? Our cyber-inspired wallpaper is the perfect solution. Featuring a repeating pattern of abstract shapes inspired by computer viruses and malware, this unique design adds a touch of edgy sophistication to your desktop.
 

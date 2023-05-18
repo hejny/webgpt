@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Cybernetic Dreams: Exploring the Future of Technology
+# Future of Cybernetics
 
 Welcome to Cybernetic Dreams, a website dedicated to exploring the cutting-edge technology and innovations that are shaping our future.
 

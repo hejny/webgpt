@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Desert Adventure Planning Guide"
+# Desert Adventure Guide
 
 Welcome to our website, the ultimate resource for planning an unforgettable desert adventure. Whether you're a seasoned desert explorer or a first-time visitor, we've got everything you need to plan your dream trip.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Exploring Space with AI Companions
+# AI Companions Explore Space as AInauts
 
 Welcome to our website where we showcase the incredible work of AInauts and their AI companions. Our stunning wallpaper depicts these intrepid explorers working together in a massive, zero-gravity space station.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modern Circuit Board Graphic Design
+# Modern Circuit Board Design
 
 Enhance your project with our modern circuit board graphic design! This sleek and eye-catching graphic features a minimalist abstract circuit board design in shades of blue and green.
 

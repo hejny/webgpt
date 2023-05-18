@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Exploring Abandoned Research Facilities with AInauts in Lost Space"
+# Exploring Abandoned Research Facilities in Lost Space with AInauts
 
 Welcome to our website dedicated to the exploration of abandoned research facilities in space! Our team of AInauts and their AI companions are on a mission to uncover the secrets of these forgotten places. Join us on our journey as we delve into the unknown.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Frontiers of Technology
+# Frontier Tech Exploration
 
 Welcome to our website dedicated to exploring the latest frontiers of technology. Our stunning collage features a variety of futuristic devices, including drones, robots, and smart devices, all set against a sleek black background.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Nature's Beauty with Our Forest Design.
+# Forest Design: Explore Nature's Beauty
 
 Welcome to our website where we offer a mystical forest design that brings the beauty of nature into your space. Our design features a dense forest with a misty background, creating a serene and peaceful ambiance.
 

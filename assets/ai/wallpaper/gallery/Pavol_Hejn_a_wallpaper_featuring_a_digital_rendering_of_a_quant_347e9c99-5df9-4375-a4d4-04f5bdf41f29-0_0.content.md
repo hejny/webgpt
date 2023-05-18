@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring Quantum Computing: The Future of Technology
+# Quantum Computing: The Future
 
 Welcome to our website dedicated to exploring the fascinating world of quantum computing! Our modern design features a stunning digital rendering of a quantum computer, providing a sleek and inspiring backdrop for our informative content.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Wonders of Space with Our Enthusiast Community
+# Explore Space with Our Community
 
 Welcome to our website dedicated to the mysteries and wonders of space! Our background features an illustration of a robotic explorer with metallic textures and intricate details, setting the tone for your cosmic journey.
 

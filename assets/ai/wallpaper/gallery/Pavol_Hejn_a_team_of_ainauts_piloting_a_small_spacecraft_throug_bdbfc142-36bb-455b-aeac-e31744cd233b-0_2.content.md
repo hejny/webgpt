@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to our AI Space Adventure!
+# AI Space Adventure!
 
 Are you ready for an interstellar adventure? Join our team of AInauts as they pilot a small spacecraft through a dangerous asteroid field, with debris flying all around them.
 

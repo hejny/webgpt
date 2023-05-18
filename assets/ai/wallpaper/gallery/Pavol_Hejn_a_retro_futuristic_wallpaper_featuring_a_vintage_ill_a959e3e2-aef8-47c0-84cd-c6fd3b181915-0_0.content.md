@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Retro Robot Illustration for Your Futuristic Tech Website
+# Retro Robot Illustration for Tech Website
 
 Welcome to our tech website, where we explore the latest trends and innovations in the world of technology. We are excited to introduce our new retro robot illustration featuring a vintage illustration of a robot set against a neon-colored background.
 

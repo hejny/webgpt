@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Other Worlds with our Planet Zephyr Background
+# Discover Other Worlds with Zephyr Background
 
 Welcome to our website, where you can discover a stunning collection of backgrounds that will transport you to other worlds. Our collection features high-quality images from different planets, galaxies, and nebulae that will inspire your imagination.
 

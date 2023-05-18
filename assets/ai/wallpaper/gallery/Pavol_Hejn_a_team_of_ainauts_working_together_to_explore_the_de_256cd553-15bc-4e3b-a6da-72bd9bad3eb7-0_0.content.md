@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the World of AInauts
+# AInauts' World
 
 Experience the thrill of space exploration with our team of AInauts who are on a mission to explore the depths of a black hole. Equipped with the latest futuristic technology, our team is determined to unravel the mysteries of the universe.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Surreal Desert Landscape Welcome.
+# Surreal Desert Welcome
 
 Experience the beauty of a surreal interpretation of a desert landscape with our stunning wallpaper. 
 

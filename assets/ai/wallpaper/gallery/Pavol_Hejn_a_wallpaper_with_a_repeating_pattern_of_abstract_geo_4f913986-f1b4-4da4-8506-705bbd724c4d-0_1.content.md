@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Digital Experience with Abstract Geometric Patterns
+# Enhance Digital Experience with Geometric Patterns
 
 Add a touch of modern design to your digital devices with our abstract geometric patterns. Inspired by the latest web design trends and color schemes, our unique backgrounds feature intricate shapes and patterns that will enhance your desktop or mobile device.
 

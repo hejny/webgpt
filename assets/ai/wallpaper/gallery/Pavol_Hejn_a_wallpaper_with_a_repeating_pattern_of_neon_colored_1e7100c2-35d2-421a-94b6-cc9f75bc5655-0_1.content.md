@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# TechConnect: Your Source for Latest Tech News
+# TechConnect: Latest Tech News Source
 
 Welcome to TechConnect, your ultimate source for the latest technology news. Our website is dedicated to keeping you informed about the latest tech trends, from smartphones to gaming consoles.
 

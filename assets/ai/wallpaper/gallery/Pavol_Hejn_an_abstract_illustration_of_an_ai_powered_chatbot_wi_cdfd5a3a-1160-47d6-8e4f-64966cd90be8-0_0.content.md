@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Chatbot Solutions for Your Business
+# AI Chatbot Solutions for Business
 
 Welcome to our website, where we offer cutting-edge AI chatbot solutions for your business needs. Our team of experts has developed a sleek and modern chatbot, powered by the latest AI technology, to help you enhance customer experience and streamline your operations.
 

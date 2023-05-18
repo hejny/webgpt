@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to the Future: A World of Possibilities
+# Future Possibilities
 
 ## About Us
 Our website is dedicated to exploring the possibilities of the future. We believe that innovation and creativity are essential for progress, and we're passionate about bringing people together to create a better world.

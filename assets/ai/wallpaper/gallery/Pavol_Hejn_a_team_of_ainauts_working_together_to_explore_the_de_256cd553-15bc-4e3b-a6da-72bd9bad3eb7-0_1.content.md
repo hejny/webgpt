@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to our AI Exploration Team!
+# AI Exploration Team Welcome!
 
 We are a team of AInauts dedicated to exploring the depths of black holes using cutting-edge technology. Our mission is to uncover the mysteries of the universe and push the boundaries of human knowledge.
 

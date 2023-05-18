@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech and Bio: Unlocking Human Potential.
+# Tech and Bio for Human Potential
 
 Welcome to our website dedicated to exploring the intersection of technology and biology and unlocking human potential. Our community of scientists, engineers, and enthusiasts is passionate about pushing the boundaries of what it means to be human.
 

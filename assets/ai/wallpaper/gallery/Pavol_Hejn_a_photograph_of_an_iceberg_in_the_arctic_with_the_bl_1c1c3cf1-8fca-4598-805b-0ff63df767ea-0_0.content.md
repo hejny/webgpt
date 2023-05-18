@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Arctic: Your Guide
+# Arctic Exploration Guide
 
 Welcome to Arctic Adventures, your go-to resource for exploring the beauty and wonder of the Arctic. Our website is dedicated to providing you with all the information and resources you need to plan an unforgettable adventure in this incredible region.
 

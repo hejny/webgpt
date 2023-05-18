@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Retro-Futuristic Robot Home Decor
+# Retro Robot Decor
 
 Elevate your home decor with a pop art-style illustration of a retro-futuristic robot or cyborg. This unique design brings a touch of sci-fi nostalgia to any room, and is sure to impress your guests.
 

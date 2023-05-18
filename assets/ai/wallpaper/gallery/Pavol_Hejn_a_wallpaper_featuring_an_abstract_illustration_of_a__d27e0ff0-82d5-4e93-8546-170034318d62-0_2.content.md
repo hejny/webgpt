@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the Future of Data Centers
+# Future of Data Centers
 
 Welcome to our website, where we bring you the latest news and insights into the exciting world of data centers. Our sleek and modern design features an abstract illustration of a futuristic data center, with minimalist color schemes and stunning graphics that transport you to the forefront of technology and innovation.
 

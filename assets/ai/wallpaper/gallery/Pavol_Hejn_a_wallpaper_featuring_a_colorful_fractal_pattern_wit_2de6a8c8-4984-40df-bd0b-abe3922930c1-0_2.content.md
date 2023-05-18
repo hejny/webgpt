@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Fractal Background for Your Creative Workspace
+# Fractal Workspace Background
 
 Welcome to our website, where we offer a stunning and intricate fractal background that will add a touch of creativity to your workspace. Our background features bold colors and intricate lines, making it the perfect addition to any room.
 

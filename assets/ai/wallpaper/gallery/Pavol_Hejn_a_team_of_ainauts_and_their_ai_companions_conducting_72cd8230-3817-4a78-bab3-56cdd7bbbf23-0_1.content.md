@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# "Journeying with AInauts and AI Companions into a Gas Giant's Depths"
+# Exploring a Gas Giant with AInauts and AI Companions
 
 Welcome to our website, where we take you on an exciting journey to the surface of a massive gas giant planet. Join our team of AInauts and their trusty AI companions as they conduct groundbreaking experiments and explore the unknown depths of this mysterious world.
 

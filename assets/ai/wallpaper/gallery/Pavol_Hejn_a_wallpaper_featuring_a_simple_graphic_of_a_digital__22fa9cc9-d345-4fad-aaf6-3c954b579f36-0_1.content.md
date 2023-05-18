@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Simplify Your Workspace with Minimalist Desktop Backgrounds
+# Simplify Workspace with Minimalist Desktop Backgrounds
 
 Welcome to our website, where we offer a collection of minimalist desktop backgrounds designed to help you simplify your workspace and increase productivity. Our backgrounds feature simple graphics and soothing colors, perfect for anyone who wants to declutter their desktop and reduce visual distractions while working on their computer.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# RoboWorks: Where Technology Meets Creativity
+# RoboWorks: Tech Meets Creativity
 
 Welcome to RoboWorks, a platform where technology meets creativity to create innovative solutions for the future. Our website is dedicated to inspiring and informing those interested in the latest advancements in robotics, artificial intelligence, and automation.
 

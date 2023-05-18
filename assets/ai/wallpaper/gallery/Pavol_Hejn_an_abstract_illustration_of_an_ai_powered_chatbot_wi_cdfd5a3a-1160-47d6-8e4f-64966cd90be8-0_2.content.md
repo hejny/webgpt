@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Chat with our AI-powered chatbot!
+# AI chatbot available for chat!
 
 Welcome to our website, where you can chat with our AI-powered chatbot. Our chatbot is designed with sleek and modern graphics, featuring an abstract illustration that represents the power of artificial intelligence. The minimalist color scheme adds to the overall aesthetic, creating a visually pleasing experience for our users.
 

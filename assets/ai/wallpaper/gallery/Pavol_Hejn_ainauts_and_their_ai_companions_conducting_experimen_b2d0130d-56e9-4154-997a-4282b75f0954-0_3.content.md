@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Zero-Gravity Lab!
+# Zero-G Lab Welcome!
 
 Explore the exciting world of AInauts and their AI companions as they conduct experiments in a zero-gravity laboratory. Our stunning wallpaper captures the essence of this futuristic environment, with colorful chemicals and particles floating all around them.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Mystery Planet with Unique Atmosphere.
+# Unique-atmosphere Mystery Planet
 
 Welcome to our website where you can find stunning digital paintings of distant planets. Our latest addition is a breathtaking image of a planet with a unique atmosphere and unusual terrain. This artwork is perfect for adding a touch of otherworldly beauty to your desktop or mobile device.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# High-Tech Background for Your Website
+# High-Tech Website Background
 
 Welcome to our website, where we offer a range of stunning backgrounds to help you create a unique and impactful online presence. Our latest addition is an abstract illustration of a futuristic cityscape that will add a touch of high-tech sophistication to your website.
 

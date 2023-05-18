@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Fairy Forest: A Magical Fantasy World
+# Magical Fairy Forest
 
 Welcome to Fairy Forest, a place where dreams come true and magic is real. Immerse yourself in the enchanting world of fairies and discover the beauty of nature in its purest form.
 

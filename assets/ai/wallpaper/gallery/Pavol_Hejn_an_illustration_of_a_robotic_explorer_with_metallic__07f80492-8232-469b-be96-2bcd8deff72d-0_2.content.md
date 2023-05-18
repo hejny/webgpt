@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Future of Technology and Innovation
+# Future Tech Innovation
 
 Welcome to our website dedicated to exploring the latest advancements in technology and innovation. Our background features an illustration of a robotic explorer, symbolizing our mission to discover what lies ahead in the world of tech.
 

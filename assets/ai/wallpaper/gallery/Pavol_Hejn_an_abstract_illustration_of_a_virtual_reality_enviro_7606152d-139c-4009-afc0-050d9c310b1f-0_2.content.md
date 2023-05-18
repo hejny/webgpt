@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# VR World - Experience the Future
+# Future VR Experience
 
 Welcome to VR World, where you can immerse yourself in a virtual reality environment that will transport you to the future. Our abstract illustration wallpaper features futuristic graphics and a minimalist color scheme that perfectly captures the essence of what we offer.
 

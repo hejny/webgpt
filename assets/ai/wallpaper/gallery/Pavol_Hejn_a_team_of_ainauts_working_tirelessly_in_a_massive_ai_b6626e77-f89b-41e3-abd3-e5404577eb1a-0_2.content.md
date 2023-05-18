@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Welcome to the Future of AI Technology
+# Future of AI Tech Welcome
 
 At our AI factory, we are dedicated to creating new and innovative technologies that will shape the future. Our team of AInauts works tirelessly to develop groundbreaking solutions that will revolutionize industries and change the world.
 

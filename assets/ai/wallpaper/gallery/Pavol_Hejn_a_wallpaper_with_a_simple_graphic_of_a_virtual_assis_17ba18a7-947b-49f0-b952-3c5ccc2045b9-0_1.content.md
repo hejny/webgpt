@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Boost Your Productivity with Virtual Assistants
+# Maximize Productivity with Virtual Assistants
 
 Welcome to our website dedicated to helping you increase your productivity and achieve your goals with the help of virtual assistants. Our modern design features a simple graphic of a virtual assistant or chatbot, providing an inspiring background as you browse our site.
 

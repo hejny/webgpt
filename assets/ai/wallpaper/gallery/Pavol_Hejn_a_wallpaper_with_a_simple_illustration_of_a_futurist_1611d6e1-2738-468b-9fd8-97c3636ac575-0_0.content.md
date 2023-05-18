@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Workspace Inspiration
+# Future Workspace Inspo
 
 Welcome to our website, where we offer resources and tips to help you create a workspace that inspires your creativity. As part of our collection, we have an illustration of a futuristic vehicle that can serve as a background for your workspace.
 

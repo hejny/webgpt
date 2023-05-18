@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Forest Adventure: Bringing Nature to Your Desktop
+# Desktop Forest Adventure
 
 At Forest Adventure, we believe that everyone should have access to the beauty and wonder of nature. Our stunning landscape backgrounds are designed to transport you to some of the most breathtaking locations on earth, right from your desktop.
 

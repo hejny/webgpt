@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Jellyfish Up Close: Oceanic Wonders
+# Jellyfish: Oceanic Wonders
 
 Welcome to Oceanic Wonders, your ultimate source for stunning underwater wallpapers. Our latest addition is a mesmerizing close-up shot of a jellyfish in the ocean. This wallpaper captures the beauty and mystery of these fascinating creatures, making it the perfect addition to any device.
 

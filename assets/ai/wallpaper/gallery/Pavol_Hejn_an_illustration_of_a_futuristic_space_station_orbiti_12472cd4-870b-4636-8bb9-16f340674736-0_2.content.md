@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Space Station Wallpaper
+# Futuristic Space Wallpaper
 
 Add a touch of sci-fi to your next project with our free-to-use wallpaper featuring an illustration of a futuristic space station orbiting a distant planet.
 

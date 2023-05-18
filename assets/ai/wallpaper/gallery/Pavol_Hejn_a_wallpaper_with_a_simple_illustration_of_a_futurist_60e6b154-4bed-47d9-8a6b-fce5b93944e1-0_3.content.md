@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Discover the Future with a Striking Vehicle Illustration
+# Future Vehicle Illustration Discovery
 
 Experience the excitement of the future with this captivating illustration of a sleek and stylish vehicle. The metallic textures and dark, moody color scheme create an atmosphere of sophistication that will transport you to another world.
 

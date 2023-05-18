@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Universe's Wonders.
+# Universe's Wonders Explored
 
 Welcome to our website dedicated to exploring the mysteries and beauty of the universe. As you browse through our pages, take a moment to admire the stunning photograph of a glacier on a distant planet that graces our homepage.
 

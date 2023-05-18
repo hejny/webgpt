@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Vintage Map Background: Explore the Cosmos in Style
+# Cosmic Exploration with Vintage Map Background
 
 Welcome to our website, where we offer a stunning vintage map background of the stars and constellations. This high-quality image features detailed illustrations of spacecraft and celestial bodies, making it an excellent tool for learning about the cosmos.
 

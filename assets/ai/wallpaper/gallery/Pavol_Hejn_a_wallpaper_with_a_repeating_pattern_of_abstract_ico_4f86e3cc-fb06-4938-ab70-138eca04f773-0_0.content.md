@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech-Inspired Design for Your Workspace
+# Tech-Driven Workspace Design
 
 Upgrade your workspace with our tech-inspired design featuring a repeating pattern of abstract icons and symbols commonly used in the tech industry. This design is perfect for anyone who loves technology and wants to add a touch of style to their workspace.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Gas Giants' Depths Explored with AI Research.
+# Exploring Gas Giants' Depths with AI
 
 Welcome to our website dedicated to the exciting world of gas giant exploration! Our team of AInauts and their AI companions are conducting groundbreaking experiments on the surface of these massive planets, unlocking new insights into their composition and behavior.
 

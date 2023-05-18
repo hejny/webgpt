@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Circuit Board Background for Your Tech Website
+# Tech Website Circuit Board Background
 
 Our circuit board background in shades of blue and silver is the perfect choice to add a modern and futuristic touch to your tech-themed website. This abstract pattern is unique, eye-catching, and seamless, providing a professional look that's sure to impress your visitors.
 

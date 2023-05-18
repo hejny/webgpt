@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts Experimenting with AI Effects on Human Body in Zero-Gravity Chamber
+# AI Experiments on Human Body in Zero-Gravity Chamber
 
 Explore the exciting world of artificial intelligence and its effects on the human body through our team of AInauts conducting experiments in a zero-gravity chamber.
 

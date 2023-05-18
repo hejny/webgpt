@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum-inspired Design for Your Creative Space
+# Quantum-Inspired Creative Space Design
 
 Our abstract design draws inspiration from the shapes and colors of quantum physics, featuring bold hues and intricate lines. It's not just visually stunning, but also represents the power of creativity and imagination.
 

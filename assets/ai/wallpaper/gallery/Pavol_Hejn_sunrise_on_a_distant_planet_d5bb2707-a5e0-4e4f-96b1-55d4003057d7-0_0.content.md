@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to "Sunrise on a Distant Planet"
+# "Sunrise on a Distant Planet" Welcome
 
 Experience the breathtaking beauty of a distant planet's sunrise with our stunning wallpaper. This mesmerizing image captures the vibrant colors and unique landscape of an alien world, transporting you to another dimension.
 

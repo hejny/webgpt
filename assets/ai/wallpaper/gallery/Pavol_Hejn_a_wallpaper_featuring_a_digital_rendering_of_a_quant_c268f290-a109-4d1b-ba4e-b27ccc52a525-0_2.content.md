@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Quantum Computing: Unleashing the Power of the Future
+# Quantum Computing's Future Power
 
 Welcome to our website, where we invite you to discover the world of quantum computing. Our minimalist digital rendering of a quantum computer showcases the beauty and complexity of this cutting-edge technology.
 

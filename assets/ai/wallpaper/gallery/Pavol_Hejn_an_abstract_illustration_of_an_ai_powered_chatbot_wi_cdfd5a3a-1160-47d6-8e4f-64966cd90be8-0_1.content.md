@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Chatbot: Revolutionizing Customer Service
+# AI Chatbot: Transforming Customer Service
 
 Welcome to our website, where we explore the exciting world of AI-powered chatbots and their impact on customer service. Our sleek and modern wallpaper perfectly captures the essence of this technology - a minimalist design that's both futuristic and approachable.
 

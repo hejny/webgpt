@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Digital Space with Cyborg Art.
+# Cyborg Art Elevates Digital Space
 
 Transform your digital space with our minimalist cyborg artwork. Featuring a sleek single line drawing of a futuristic cyborg in bold, vibrant colors like bright red or blue, this unique design is perfect for those who appreciate modern aesthetics.
 

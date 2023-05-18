@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Customize Desktop with Retro Robot Background.
+# Customize Desktop with Retro Robot Wallpaper
 
 Add some personality and fun to your workspace with our pixel art-inspired background featuring a retro-style robot. The limited color palette and pixelated lines give it a nostalgic feel that's perfect for fans of classic video games or anyone looking for a cool new background.
 

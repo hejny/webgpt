@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech-Inspired Design for Your Desktop or Mobile Device
+# Tech Design for Desktop or Mobile
 
 Welcome to our website featuring a unique and modern design that is perfect for tech enthusiasts! Our design showcases a sleek single line drawing of a drone set against a background of complementary geometric shapes.
 

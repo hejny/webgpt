@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Exploring the Frontiers of AI in Space
+# AI in Space Exploration: AInauts
 
 Welcome to the world of AInauts, where humans and artificial intelligence work together to push the boundaries of space exploration. Our team of intrepid astronauts and their trusty AI companions are on a mission to conduct groundbreaking experiments in a zero-gravity laboratory.
 

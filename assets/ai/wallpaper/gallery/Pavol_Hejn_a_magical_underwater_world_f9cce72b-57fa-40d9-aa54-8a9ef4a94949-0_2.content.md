@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Magical Underwater World Welcome!
+# Welcome to the Underwater Magic!
 
 Dive into a world of wonder and explore the depths of our magical underwater kingdom. With vibrant colors and mesmerizing creatures, you'll feel like you've stepped into another world.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Adventure: Galactic Exploration.
+# Galactic Exploration
 
 Welcome to Galactic Exploration, where we invite you to join us on a journey through the cosmos to discover new and exciting worlds. Our latest mission takes us to a planet unlike any other, with unique flora and fauna waiting to be explored.
 

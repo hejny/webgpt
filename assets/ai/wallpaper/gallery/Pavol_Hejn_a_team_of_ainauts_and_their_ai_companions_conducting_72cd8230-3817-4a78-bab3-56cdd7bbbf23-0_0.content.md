@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Gas Giant Planet Depths Explored.
+# Exploring Depths of Gas Giants
 
 Welcome to our website where we showcase the incredible work of our team of AInauts and their AI companions as they conduct groundbreaking experiments on the surface of massive gas giant planets. 
 

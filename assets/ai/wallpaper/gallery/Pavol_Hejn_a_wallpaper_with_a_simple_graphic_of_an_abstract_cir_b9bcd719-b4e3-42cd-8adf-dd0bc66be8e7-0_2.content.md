@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Digital Workspace with a Futuristic Circuit Board Design
+# Upgrade Your Workspace with Futuristic Circuit Board Design
 
 Looking to add some high-tech style and sophistication to your computer or mobile device? Look no further than our abstract circuit board design! Featuring shades of blue and green, this unique graphic is sure to make your desktop stand out.
 

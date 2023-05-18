@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Welcome to ChatGenie: Your Personal AI Chatbot
+# ChatGenie: Your AI Chatbot
 
 ## About ChatGenie
 

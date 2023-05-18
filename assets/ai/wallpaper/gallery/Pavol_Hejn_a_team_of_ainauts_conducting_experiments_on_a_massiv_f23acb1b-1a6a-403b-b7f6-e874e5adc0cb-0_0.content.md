@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Exploring the Unknown: AI Experiments on a Frozen Moon
+# AI Experiments on a Frozen Moon
 
 Welcome to our website where we share our exciting journey of exploring a massive, frozen moon orbiting a gas giant planet. Our team of AInauts is conducting groundbreaking experiments using advanced artificial intelligence technology to uncover the mysteries of this distant world.
 

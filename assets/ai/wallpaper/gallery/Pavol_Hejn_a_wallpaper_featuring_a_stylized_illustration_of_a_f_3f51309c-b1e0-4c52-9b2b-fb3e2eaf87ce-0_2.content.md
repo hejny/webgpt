@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Inspiring Futuristic Workspace Illustration
+# Futuristic Workspace Illustration
 
 Elevate your desktop background with our inspiring illustration of a futuristic workspace. With its sleek and modern design, this stylized workspace is the perfect addition to any workspace.
 

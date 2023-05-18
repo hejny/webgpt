@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Surreal Desert Landscape Welcome
+# Surreal Desert Welcome
 
 Experience the beauty of nature in a whole new way with our surreal interpretation of a desert landscape wallpaper. This stunning wallpaper will transport you to another world, where the sky is pink and the sand dunes are endless.
 

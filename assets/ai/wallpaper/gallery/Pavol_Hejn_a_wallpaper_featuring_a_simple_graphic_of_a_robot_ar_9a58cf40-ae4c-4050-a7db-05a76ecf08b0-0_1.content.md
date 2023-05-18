@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Boost Your Productivity with a Minimalist Desktop Graphic
+# Boost Productivity with Minimal Desktop Graphic
 
 Welcome to our website dedicated to helping you create a minimalist workspace that will boost your productivity and focus. As part of our mission, we offer a simple yet effective graphic of a robot arm holding a smartphone as a background for your desktop.
 

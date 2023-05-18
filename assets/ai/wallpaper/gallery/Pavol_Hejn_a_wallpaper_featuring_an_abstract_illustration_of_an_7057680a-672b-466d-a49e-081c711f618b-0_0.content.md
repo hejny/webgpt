@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# The Power of Neural Networks in Modern Technology
+# Neural Networks' Role in Modern Technology
 
 Welcome to our website dedicated to exploring the fascinating world of neural networks and their role in modern technology. Our background features an abstract illustration of an AI neural network, with intricate lines and a dark and technological color palette, setting the tone for the cutting-edge information you'll find here.
 

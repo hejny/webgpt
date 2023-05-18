@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Enhance Your Digital Experience with Our Stunning Backgrounds
+# Improve Digital Experience with Stunning Backgrounds
 
 Welcome to our website, where you can find a collection of stunning backgrounds to enhance your digital experience. Our selection includes a wide variety of styles and themes, from abstract to nature-inspired designs.
 

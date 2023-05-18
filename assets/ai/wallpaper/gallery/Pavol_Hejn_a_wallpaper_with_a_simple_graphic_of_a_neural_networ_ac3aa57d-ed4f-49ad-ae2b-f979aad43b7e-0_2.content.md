@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Unleash the Power of Neural Networks
+# Power up Neural Networks
 
 Our website is your gateway to the incredible world of neural networks. With a stunning background featuring a simple graphic of a neural network set against complementary colors, we invite you to join us on a journey of discovery and innovation.
 

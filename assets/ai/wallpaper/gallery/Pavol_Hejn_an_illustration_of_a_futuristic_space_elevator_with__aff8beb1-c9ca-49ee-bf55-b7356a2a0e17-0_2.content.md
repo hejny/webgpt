@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Future of Space Travel
+# Future Space Travel
 
 Are you ready to explore the universe like never before? Our futuristic space elevator wallpaper is just the beginning. 
 

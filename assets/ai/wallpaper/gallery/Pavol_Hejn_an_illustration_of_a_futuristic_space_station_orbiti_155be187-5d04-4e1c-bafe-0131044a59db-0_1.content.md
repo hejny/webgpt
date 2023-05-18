@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# FutureTech: Pioneering Space Exploration Through Innovation
+# FutureTech: Innovating Space Exploration
 
 Welcome to FutureTech, a technology company that is pioneering space exploration through innovation. Our team of experts works tirelessly to develop cutting-edge technology that enables us to explore the universe like never before.
 

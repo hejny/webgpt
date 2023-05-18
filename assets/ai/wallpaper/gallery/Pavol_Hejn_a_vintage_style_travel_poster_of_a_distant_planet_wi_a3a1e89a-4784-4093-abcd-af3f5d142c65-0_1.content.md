@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Mysteries of Planet X
+# Mystery of Planet X
 
 Welcome to our virtual journey to Planet X - a distant and mysterious planet that has long captured the imagination of space enthusiasts. Our vintage-style travel poster captures the essence of this enigmatic world with its bold typography and artistic rendering of the landscape.
 

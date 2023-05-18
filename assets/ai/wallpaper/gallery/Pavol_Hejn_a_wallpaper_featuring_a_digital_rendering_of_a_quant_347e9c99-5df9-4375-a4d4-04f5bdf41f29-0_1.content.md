@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the World of Quantum Computing
+# Quantum Computing Exploration
 
 Get inspired by the cutting-edge field of quantum computing with our stunning digital rendering of a quantum computer. The minimalist design features sleek geometric lines and a muted color scheme, creating a beautiful backdrop that will transport you to the forefront of technology every time you use your computer.
 

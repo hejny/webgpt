@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Fractals: Download Our Stunning Background
+# Fractal Backgrounds for Download
 
 Welcome to our website where you can explore the fascinating world of fractals with our beautiful background. 
 

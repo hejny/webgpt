@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space Enthusiast Website: Explore the Universe's Wonders.
+# Space website: Discover the universe
 
 Welcome to our space enthusiast website, where you can explore the mysteries and wonders of the universe. Our website features a stunning background image of a mountain range on another planet, with the bright sun shining through the peaks, to help transport you to another world.
 

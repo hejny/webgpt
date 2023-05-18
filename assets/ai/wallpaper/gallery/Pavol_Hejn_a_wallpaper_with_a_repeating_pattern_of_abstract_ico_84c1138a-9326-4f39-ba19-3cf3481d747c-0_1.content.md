@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with Tech-Inspired Design
+# Tech-inspired Workspace Design
 
 Looking to add some personality and style to your digital workspace? Look no further than this repeating pattern of abstract icons and symbols commonly used in the tech industry. From computer chips to power buttons, this design is sure to impress.
 

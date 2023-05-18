@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modern Geometric Backgrounds for Your Website
+# Geometric Website Backgrounds
 
 Looking to give your website a fresh and modern look? Our collection of geometric backgrounds is just what you need. These wallpapers feature abstract shapes and patterns inspired by the latest web design trends and color schemes.
 

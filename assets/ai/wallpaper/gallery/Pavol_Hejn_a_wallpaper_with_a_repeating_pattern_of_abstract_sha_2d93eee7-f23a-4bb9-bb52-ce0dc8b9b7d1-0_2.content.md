@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Malware-Inspired Backgrounds for Your Cybersecurity Website
+# Malware Backgrounds for Cybersecurity Website
 
 Welcome to our collection of malware-inspired backgrounds, designed to enhance the visual appeal of your cybersecurity website. Our backgrounds are perfect for websites that want to make a statement about their commitment to protecting users from online threats.
 

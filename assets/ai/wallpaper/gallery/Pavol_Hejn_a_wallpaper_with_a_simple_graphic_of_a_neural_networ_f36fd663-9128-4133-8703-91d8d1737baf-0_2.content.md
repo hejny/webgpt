@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Elevate Your Tech Aesthetic with Our Neural Network Design
+# Enhance Tech Aesthetics with Neural Network Design
 
 Welcome to our website, where we offer a unique design featuring a simple graphic of a neural network against a backdrop of complementary colors. Our design is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
 

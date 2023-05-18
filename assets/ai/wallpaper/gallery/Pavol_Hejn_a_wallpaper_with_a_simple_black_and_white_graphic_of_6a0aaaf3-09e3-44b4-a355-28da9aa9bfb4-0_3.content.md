@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Robotics Lab" - Exploring the Future of Robotics
+# Future Robotics Lab
 
 Welcome to Robotics Lab, a platform dedicated to exploring the latest advancements in robotics technology. Our website is designed for engineers, researchers, and enthusiasts who want to stay up-to-date on the latest trends and breakthroughs in the field of robotics.
 

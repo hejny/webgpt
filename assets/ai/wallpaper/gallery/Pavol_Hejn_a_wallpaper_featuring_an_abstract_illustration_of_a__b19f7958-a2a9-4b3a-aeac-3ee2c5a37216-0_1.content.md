@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Explore the Future of Technology with Our Abstract Data Center Design
+# Future Tech with Abstract Data Center Design
 
 Step into the future with our mesmerizing abstract illustration of a futuristic data center. This sleek and modern graphic features a minimalist color scheme that's perfect for any tech enthusiast.
 

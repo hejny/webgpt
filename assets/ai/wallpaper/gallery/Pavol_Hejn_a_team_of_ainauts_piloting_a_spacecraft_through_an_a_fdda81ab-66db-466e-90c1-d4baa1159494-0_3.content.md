@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Space Odyssey: Exploring the Final Frontier
+# Exploring Space's Final Frontier
 
 Welcome to Space Odyssey, your ultimate destination for all things space exploration. Our website is dedicated to bringing you the latest news, updates, and insights into the world of space travel.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Small Business Cybersecurity: Protecting Digital Assets.
+# Cybersecurity for Small Businesses
 
 Welcome to our website dedicated to helping small businesses protect their digital assets from cyber threats. Our minimalist wallpaper features a striking single line drawing of a cyborg in bright red or blue, serving as a reminder of the importance of cybersecurity.
 

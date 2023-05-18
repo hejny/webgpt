@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Nature's Beauty: A Waterfall in the Forest
+# Forest Waterfall Beauty
 
 Experience the breathtaking beauty of nature with our "Waterfall in the Forest" wallpaper. This stunning image captures the serenity and tranquility of a secluded waterfall nestled deep within a lush forest.
 

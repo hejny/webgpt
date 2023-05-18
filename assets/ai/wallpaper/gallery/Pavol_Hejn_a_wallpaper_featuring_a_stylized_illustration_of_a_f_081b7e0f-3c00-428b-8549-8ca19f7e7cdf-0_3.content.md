@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Boost Your Productivity with a Futuristic Workspace Design
+# Futuristic Workspace Design for Productivity Boost
 
 Welcome to our website dedicated to helping you create a workspace that inspires you to do your best work. Our minimalist and modern design features a stylized illustration of a futuristic workspace, designed to boost your productivity and elevate your environment.
 

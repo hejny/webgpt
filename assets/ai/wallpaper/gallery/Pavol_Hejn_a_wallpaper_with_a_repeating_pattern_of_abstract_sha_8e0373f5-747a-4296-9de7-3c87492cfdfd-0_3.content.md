@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring Fractal Geometry with the Mandelbrot Set
+# Fractal Geometry and the Mandelbrot Set
 
 Experience the mesmerizing world of fractal geometry with our Mandelbrot-inspired website. Our abstract design features repeating patterns of intricate shapes in a monochromatic color scheme, setting the tone for your exploration.
 

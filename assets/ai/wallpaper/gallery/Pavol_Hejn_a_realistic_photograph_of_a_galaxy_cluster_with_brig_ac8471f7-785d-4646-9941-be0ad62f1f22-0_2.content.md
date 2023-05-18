@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore Space Wonders on Our Website.
+# Discover Space Wonders on Our Site
 
 Welcome to our website, where we aim to inspire and educate people about the vastness of the universe through astronomy and space exploration. Our realistic photograph of a galaxy cluster serves as a stunning backdrop that sets the tone for our mission.
 

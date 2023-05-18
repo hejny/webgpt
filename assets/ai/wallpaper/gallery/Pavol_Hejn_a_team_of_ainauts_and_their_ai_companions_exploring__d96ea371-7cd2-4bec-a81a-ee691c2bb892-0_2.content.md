@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Explores Distant Planet's Underground Caves.
+# AI explores planet's caves
 
 Welcome to our website showcasing the incredible journey of a team of AInauts and their AI companions as they explore a massive, underground cave system on a distant planet.
 

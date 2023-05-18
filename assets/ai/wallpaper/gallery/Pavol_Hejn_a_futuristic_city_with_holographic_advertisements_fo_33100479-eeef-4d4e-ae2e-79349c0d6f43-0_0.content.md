@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# FutureTech: Innovating the World
+# FutureTech: Innovating World
 
 We are a tech and innovation website dedicated to bringing you the latest news, insights, and breakthroughs in technology. Our goal is to help you stay ahead of the curve and understand how emerging technologies will shape the future.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modern Design with Geometric Shapes
+# Geometric Modern Design
 
 Our website celebrates modern and minimalist design, and we're excited to showcase a stunning background featuring geometric shapes in complementary colors. This graphic is the perfect addition to any device, whether you're updating your desktop or phone.
 

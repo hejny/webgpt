@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Future of Technology
+# Future Technology Exploration
 
 Welcome to our website dedicated to exploring the exciting world of futuristic technology and its impact on society. Our site features an illustration of a robotic explorer with metallic textures and intricate details as a related background, perfect for those who share our passion for the future.
 

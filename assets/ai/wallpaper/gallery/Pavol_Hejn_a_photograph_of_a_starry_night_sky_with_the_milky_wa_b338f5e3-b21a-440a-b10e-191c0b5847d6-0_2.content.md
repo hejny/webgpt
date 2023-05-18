@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Stargaze: Explore Night Sky Beauty.
+# Stargaze: Night Sky Exploration
 
 Welcome to Stargaze, your ultimate destination for exploring the breathtaking beauty of the night sky. Our collection features stunning wallpapers of starry nights, including the Milky Way galaxy visible overhead.
 

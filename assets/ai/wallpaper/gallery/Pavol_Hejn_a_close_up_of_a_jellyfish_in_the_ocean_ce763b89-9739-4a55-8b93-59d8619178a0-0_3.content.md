@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Ocean Desktop Backgrounds
+# Ocean Desktop Backgrounds
 
 Our ocean-themed desktop backgrounds will transport you to the depths of the sea, showcasing the mesmerizing beauty and diversity of marine life. Our featured background captures a close-up of a jellyfish in the ocean, highlighting the intricate details and vibrant colors of these fascinating creatures.
 

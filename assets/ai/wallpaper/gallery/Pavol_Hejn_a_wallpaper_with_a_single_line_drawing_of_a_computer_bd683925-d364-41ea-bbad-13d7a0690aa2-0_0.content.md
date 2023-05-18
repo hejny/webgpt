@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TechConnect - Your Hub for the Latest in Tech
+# TechConnect - Your Latest Tech Hub
 
 Welcome to TechConnect, your go-to source for the latest news and updates in the world of technology. Our mission is to keep you informed and connected to the newest gadgets, devices, software updates, and advancements.
 

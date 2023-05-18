@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Minimalist Living with City Views at Cityscape.
+# Minimalist Living with City Views at Cityscape
 
 Welcome to Cityscape, where we believe that a home should be more than just a place to live - it should be an extension of your lifestyle. Our minimalist homes offer breathtaking views of the city skyline at dusk, providing a serene and peaceful atmosphere for you to call your own.
 

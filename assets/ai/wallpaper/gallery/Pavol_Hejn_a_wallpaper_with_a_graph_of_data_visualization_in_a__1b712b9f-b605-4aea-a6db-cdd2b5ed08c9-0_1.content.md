@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Beauty of Data Visualization on Our Minimalist Site
+# Minimalist Site Showcases Stunning Data Visualization
 
 Welcome to our minimalist website featuring a stunning data visualization graph as the backdrop. Our site is perfect for anyone who loves data and wants to explore its beauty in a whole new way.
 

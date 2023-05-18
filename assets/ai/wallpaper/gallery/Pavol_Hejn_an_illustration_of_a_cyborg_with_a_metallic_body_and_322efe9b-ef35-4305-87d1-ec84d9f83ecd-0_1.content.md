@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Cybernetic Enhancements: A New Era of Human Evolution
+# Cybernetic Enhancements: A New Human Era
 
 Welcome to our website dedicated to exploring the exciting world of cybernetic enhancements. Our stunning wallpaper featuring an illustration of a cyborg with a metallic body and glowing eyes is just a glimpse of what's possible when humans merge with technology.
 

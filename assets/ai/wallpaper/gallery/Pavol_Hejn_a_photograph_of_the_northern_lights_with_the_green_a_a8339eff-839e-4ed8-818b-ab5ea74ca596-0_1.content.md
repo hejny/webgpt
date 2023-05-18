@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Magical Aurora Borealis Backgrounds Available Now!"
+# Get Aurora Borealis Backgrounds Now!
 
 Welcome to our website where we celebrate the beauty of nature. Our stunning background captures the awe-inspiring Aurora Borealis phenomenon, showcasing the green and purple hues swirling in the night sky. 
 

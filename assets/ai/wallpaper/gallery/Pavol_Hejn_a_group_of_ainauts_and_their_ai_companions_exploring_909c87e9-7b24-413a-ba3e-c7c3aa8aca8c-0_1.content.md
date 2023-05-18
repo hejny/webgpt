@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# "Lost Frontier: Abandoned Research Facility Exploration"
+# Abandoned Research Facility Exploration
 
 Welcome to "The Lost Frontier", an immersive experience that takes you on a journey through an abandoned research facility in the depths of space. Join a group of AInauts and their AI companions as they explore the remnants of a once-thriving scientific community.
 

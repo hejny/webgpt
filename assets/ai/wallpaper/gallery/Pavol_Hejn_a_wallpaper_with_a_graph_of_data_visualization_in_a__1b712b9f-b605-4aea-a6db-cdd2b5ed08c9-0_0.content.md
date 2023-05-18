@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Unleash the Power of Data Visualization
+# Power up Data Visualization
 
 Welcome to our website dedicated to the art and science of data visualization. We believe that data can be transformed into stunning visuals that not only communicate information but also inspire creativity and innovation.
 

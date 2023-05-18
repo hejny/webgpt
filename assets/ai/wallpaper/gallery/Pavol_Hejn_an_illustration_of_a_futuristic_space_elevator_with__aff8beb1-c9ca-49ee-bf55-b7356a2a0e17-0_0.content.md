@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Welcome to the Future of Space Travel
+# Future Space Travel
 
 Are you ready to take your space travel experience to the next level? Look no further than our futuristic space elevator wallpaper, featuring a cable stretching from Earth into orbit. 
 

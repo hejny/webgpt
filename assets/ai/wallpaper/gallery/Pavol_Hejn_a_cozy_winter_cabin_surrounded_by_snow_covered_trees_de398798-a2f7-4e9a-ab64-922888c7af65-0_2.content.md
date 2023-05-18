@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Lora-->
 
-# Cozy Cabin Decor Tips for Winter
+# Winter Cabin Decor Tips
 
 Welcome to Cozy Cabin Living, your ultimate guide to creating a warm and inviting home during the winter months. Our blog is dedicated to all things cozy, from decorating tips to delicious recipes and everything in between.
 

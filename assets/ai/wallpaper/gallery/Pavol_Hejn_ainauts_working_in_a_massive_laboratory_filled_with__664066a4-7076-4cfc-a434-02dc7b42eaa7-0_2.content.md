@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# Welcome to the World of AInauts
+# AInauts' World
 
 Explore the world of AInauts, where cutting-edge research is conducted in a massive laboratory filled with glowing equipment and holographic displays. Our team of experts work tirelessly to push the boundaries of AI technology and bring innovative solutions to real-world problems.
 

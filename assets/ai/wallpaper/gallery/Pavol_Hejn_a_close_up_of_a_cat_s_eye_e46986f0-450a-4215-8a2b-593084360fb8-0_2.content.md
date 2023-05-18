@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cats' Mysterious and Beautiful Eyes
+# Mysterious Beauty of Cats' Eyes
 
 Experience the captivating allure of a cat's eye with our stunning close-up image. This mesmerizing photograph captures the intricate details and vibrant colors of a feline iris, inviting you to explore the beauty and mystery of these majestic creatures.
 

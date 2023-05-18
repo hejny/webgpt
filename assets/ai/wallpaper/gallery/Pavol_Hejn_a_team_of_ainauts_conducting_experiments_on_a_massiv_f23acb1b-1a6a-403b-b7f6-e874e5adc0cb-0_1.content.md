@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Team of AInauts on a Frozen Moon
+# AInauts Team Explores Frozen Moon
 
 Welcome to our website dedicated to showcasing the incredible work of a team of AInauts as they conduct experiments on a massive, frozen moon orbiting a gas giant planet. 
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# City Energy: Modern Lifestyle Blog
+# Modern City Energy Blog
 
 Welcome to our modern lifestyle blog! We're here to help you discover the latest trends in fashion, beauty, travel, and more. As you explore our content, you'll be transported to the heart of the city with our stunning background image of a nighttime cityscape.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech-inspired Circuit Board Background
+# Tech Circuit Board Background
 
 Welcome to our website dedicated to all things tech! Our circuit board background is the perfect addition to your device, whether you're a programmer, engineer, or simply love technology.
 

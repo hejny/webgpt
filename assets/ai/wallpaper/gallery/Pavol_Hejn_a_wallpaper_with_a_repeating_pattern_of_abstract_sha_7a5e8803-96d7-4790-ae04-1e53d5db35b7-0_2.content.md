@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Beauty of the Mandelbrot Set
+# Mandelbrot Set Beauty
 
 Welcome to our website, where we invite you to explore the captivating world of the Mandelbrot set. Our abstract wallpaper, inspired by this famous mathematical object, features a stunning repeating pattern of abstract shapes in a monochromatic color scheme.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Plan Your Next Adventure with Our Travel Website
+# Plan Your Adventure with Us!
 
 Welcome to our travel website, where we provide you with all the information you need to plan your next adventure. Our website is designed to make trip planning as easy as possible, and our vintage-style graphic of a retro car background adds a touch of nostalgia to your journey.
 

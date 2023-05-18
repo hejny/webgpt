@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to our Cyberpunk-Inspired World
+# Cyberpunk World Welcome
 
 Step into the future with our website dedicated to exploring the cutting-edge world of technology, science fiction, and cyberpunk culture. Our unique wallpaper design featuring a cyborg's face set against a backdrop of digital noise and static is just a small taste of what we have to offer.
 

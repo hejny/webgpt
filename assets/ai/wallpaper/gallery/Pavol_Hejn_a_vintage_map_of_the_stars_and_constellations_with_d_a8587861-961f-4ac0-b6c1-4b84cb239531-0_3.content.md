@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Cosmos with Our Vintage Star Map
+# Vintage Star Map for Cosmic Exploration
 
 Take a journey through the cosmos with our vintage star map. This stunning illustration showcases the stars and constellations in intricate detail, featuring depictions of spacecraft and celestial bodies that will transport you to another world.
 

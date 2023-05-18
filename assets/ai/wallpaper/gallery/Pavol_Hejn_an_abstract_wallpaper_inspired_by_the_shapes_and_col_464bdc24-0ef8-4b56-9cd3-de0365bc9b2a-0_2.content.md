@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Quantum-inspired Abstract Art for Your Devices
+# Quantum Art for Your Devices
 
 Infuse your digital devices with a touch of creativity and inspiration through our stunning abstract art. Inspired by the shapes and colors found in quantum physics, this artwork features bold colors and intricate lines that are sure to make a statement on your desktop or mobile screen.
 

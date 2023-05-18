@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Explore the World of AI and Machine Learning
+# Discover AI and Machine Learning
 
 Welcome to our website dedicated to exploring the fascinating world of artificial intelligence and machine learning. As part of our commitment to this field, we have created a beautiful background featuring a simple graphic of a neural network against a backdrop of complementary colors.
 

@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Space Exploration Team Welcome.
+# AI Space Team Welcome
 
 Join our team of AInauts and their AI companions as we explore a massive, abandoned alien spacecraft floating in the depths of space. Our mission is to uncover the secrets of this mysterious vessel and unlock the knowledge it holds.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Wonders of Space with Our Futuristic Astronaut Illustration
+# Explore Space with Our Futuristic Astronaut Illustration
 
 Take a journey to the stars with our stunning illustration of a futuristic astronaut on a distant planet. This captivating image features an astronaut in a sleek spacesuit, standing on the surface of a mysterious world, ready to explore the wonders of space.
 

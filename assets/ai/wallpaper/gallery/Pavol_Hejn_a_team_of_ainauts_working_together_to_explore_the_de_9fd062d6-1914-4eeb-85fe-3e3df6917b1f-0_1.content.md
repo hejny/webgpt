@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Exploring the Depths of a Black Hole
+# AInauts: Black Hole Exploration
 
 Welcome to our website where you can join us on an exciting journey into the unknown depths of a black hole. Our team of AInauts is equipped with cutting-edge technology that allows us to explore and study this mysterious phenomenon like never before.
 

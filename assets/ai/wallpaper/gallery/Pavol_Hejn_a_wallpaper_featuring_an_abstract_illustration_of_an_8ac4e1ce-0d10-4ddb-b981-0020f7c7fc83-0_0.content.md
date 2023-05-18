@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Unraveling the Mysteries of AI Neural Networks
+# Decoding AI Neural Networks
 
 Our website features a captivating abstract illustration of an AI neural network as a background. The intricate lines and dark, technological color palette of the design make it perfect for those interested in artificial intelligence or modern technology.
 

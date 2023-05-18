@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Exploring Latest Futuristic Tech"
+# Futuristic Tech Exploration
 
 Welcome to our futuristic tech blog, where we delve into the latest trends and developments in the world of technology. Our homepage features a stunning neon cityscape with towering skyscrapers that represent the cutting-edge nature of our content.
 

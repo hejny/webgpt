@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TechZone - Explore the World of Technology
+# TechZone: Explore Technology
 
 Welcome to TechZone, a community of tech enthusiasts who share their passion and knowledge about the latest advancements in the tech industry. Our website is designed to provide a platform for learning, sharing, and connecting with like-minded individuals.
 

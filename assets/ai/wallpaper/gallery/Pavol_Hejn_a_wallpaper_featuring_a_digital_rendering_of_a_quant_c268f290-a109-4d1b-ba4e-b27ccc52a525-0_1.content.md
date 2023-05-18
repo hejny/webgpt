@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Power of Quantum Computing with Our Minimalist Digital Background
+# Quantum Computing: Minimalist Digital Background
 
 Our digital background features a sleek rendering of a quantum computer, designed to inspire anyone interested in science and technology. With its minimalist color scheme and geometric lines, it's perfect for adding a touch of sophistication to your desktop or mobile device.
 

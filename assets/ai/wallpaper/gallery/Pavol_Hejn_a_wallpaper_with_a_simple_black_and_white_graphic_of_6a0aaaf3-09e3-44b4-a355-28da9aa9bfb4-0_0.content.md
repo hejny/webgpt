@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Embrace the Future: Explore Our Robot-Themed Website
+# Explore Our Robot Website
 
 Are you fascinated by the world of technology, robotics, and artificial intelligence? Do you love science fiction and the idea of exploring new frontiers? Then our robot-themed website is the perfect destination for you.
 

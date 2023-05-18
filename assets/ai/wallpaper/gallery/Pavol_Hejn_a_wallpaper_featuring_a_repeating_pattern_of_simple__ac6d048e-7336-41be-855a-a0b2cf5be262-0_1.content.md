@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# MathLab - Simplify Your Math Learning
+# Simplify Math Learning with MathLab
 
 Welcome to MathLab, the platform that simplifies math learning for you. Our mission is to make math accessible and enjoyable for everyone. To enhance your learning experience, we have designed our website with a minimalist and modern wallpaper featuring a repeating pattern of simple equations and formulas.
 

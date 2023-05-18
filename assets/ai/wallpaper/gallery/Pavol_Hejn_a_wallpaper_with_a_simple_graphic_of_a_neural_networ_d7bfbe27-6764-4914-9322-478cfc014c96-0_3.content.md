@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Exciting World of AI and Machine Learning
+# Exploring AI and Machine Learning
 
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence and machine learning. Our platform offers a wealth of resources, including news articles, research papers, tutorials, and online courses, all designed to help you stay up-to-date with the latest advancements in this rapidly evolving field.
 

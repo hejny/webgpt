@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Futuristic Alien Landscape Entry
+# Alien Landscape Entry
 
 Step into an awe-inspiring CSG-style rendering of an alien world that will transport you to another realm. This image boasts sharp angles and contrasting colors, creating a futuristic and industrial atmosphere that is sure to captivate your senses.
 

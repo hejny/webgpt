@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Stargaze - Discover the Night Sky
+# Stargaze: Night Sky Discovery
 
 Welcome to Stargaze, your ultimate guide to exploring the breathtaking beauty of the night sky. Our website is dedicated to providing you with all the information you need to discover and appreciate the wonders of the universe.
 

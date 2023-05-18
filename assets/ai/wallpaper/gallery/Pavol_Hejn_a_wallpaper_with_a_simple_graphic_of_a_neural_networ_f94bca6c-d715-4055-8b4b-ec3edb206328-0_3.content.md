@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Inspire Your Work with a Neural Network Design
+# Inspiring Work with Neural Network Design
 
 Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against complementary colors.
 

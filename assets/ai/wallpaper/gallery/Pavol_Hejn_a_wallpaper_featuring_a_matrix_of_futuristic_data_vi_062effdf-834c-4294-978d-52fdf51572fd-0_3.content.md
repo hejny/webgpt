@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the World of Data Visualization with Our Matrix Background
+# Discover Data Visualization with Matrix Background
 
 Our stunning matrix background is a visual masterpiece that will transport you into the world of data visualization. Featuring a mesmerizing design that showcases various data visualizations and graphs, this background is perfect for anyone who wants to explore the art and science of data.
 

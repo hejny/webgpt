@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discovering the Future of Technology
+# Future Technology Discovery
 
 Welcome to our website dedicated to discovering the latest advancements in technology. Our design features a minimalist illustration of a robotic arm set against a dark and moody background, creating a futuristic atmosphere for our content.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Shorter title: AI Buzzwords with Minimalist Design
+# Minimalist AI Buzzwords
 
 Welcome to our website dedicated to keeping you informed about the latest developments in artificial intelligence and machine learning. Our minimalist design features an AI buzzwords background, perfect for tech enthusiasts who want to add a touch of creativity to their device.
 

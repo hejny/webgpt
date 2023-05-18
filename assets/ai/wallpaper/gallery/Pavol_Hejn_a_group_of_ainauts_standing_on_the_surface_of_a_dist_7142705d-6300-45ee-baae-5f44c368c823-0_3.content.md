@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Unravel a Faraway World's Enigmas
+# Unravel Faraway Enigmas
 
 Welcome to our website, where we invite you to join a group of AInauts on their journey to explore a mysterious planet in a far-off corner of the universe. Our stunning wallpaper captures the awe-inspiring moment when the team first set foot on the planet's surface and gazed up at a massive, alien structure that loomed above them.
 

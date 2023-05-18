@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Space Lab: Conducting Experiments in Zero-Gravity
+# AI Experiments in Zero-Gravity
 
 Welcome to the AI Space Lab, where AInauts and their AI companions conduct experiments in a zero-gravity laboratory. Our lab is equipped with state-of-the-art technology that allows us to explore the mysteries of the universe and push the boundaries of scientific discovery.
 

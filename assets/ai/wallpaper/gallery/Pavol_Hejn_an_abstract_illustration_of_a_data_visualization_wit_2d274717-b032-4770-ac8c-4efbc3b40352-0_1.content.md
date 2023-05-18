@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Data Visualization for Modern Businesses
+# Modern Business Data Visualization
 
 Welcome to our website dedicated to helping businesses improve their data visualization strategies. Our team of experts has years of experience in the field, and we are here to provide you with the latest tips, tricks, and tools to help you make sense of your data.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts: Building a Space Elevator with AI Companions
+# AI-assisted Space Elevator Construction: AInauts
 
 Welcome to our website where we showcase the collaboration between AInauts and their AI companions in constructing a massive, orbiting space elevator.
 

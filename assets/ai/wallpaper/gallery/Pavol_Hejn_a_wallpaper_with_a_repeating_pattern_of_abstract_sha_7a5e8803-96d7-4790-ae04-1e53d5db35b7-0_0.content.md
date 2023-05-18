@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Inspiring Abstract Shapes Background for Your Digital Workspace
+# Abstract Shapes for Your Digital Workspace
 
 Welcome to our website, where we help you unleash your creativity! Our abstract shapes background is the perfect way to add some artistic flair to your digital workspace. Inspired by the Mandelbrot set, our repeating pattern of abstract shapes in a monochromatic color scheme creates a calming and inspiring environment, allowing you to focus on your work.
 

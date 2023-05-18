@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cyber-Inspired Desktop Background
+# Cyber Desktop Background
 
 Upgrade your desktop with our cyber-inspired background featuring a repeating pattern of abstract shapes inspired by computer viruses and malware. The intricate design is set against a sleek black background, creating a bold and edgy look that's perfect for tech enthusiasts and cyber security professionals alike.
 

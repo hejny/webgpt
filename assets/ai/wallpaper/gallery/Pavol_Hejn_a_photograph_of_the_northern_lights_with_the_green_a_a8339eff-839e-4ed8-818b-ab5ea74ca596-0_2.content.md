@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Desktop Northern Lights Background.
+# Desktop Aurora Background
 
 Transform your computer screen into a mesmerizing display of natural beauty with our Northern Lights background. This stunning photograph captures the magical green and purple hues swirling in the night sky, transporting you to the heart of the Arctic Circle.
 

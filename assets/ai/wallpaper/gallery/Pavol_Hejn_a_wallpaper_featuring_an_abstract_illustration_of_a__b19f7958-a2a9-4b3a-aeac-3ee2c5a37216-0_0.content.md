@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# The Future is Now: A Minimalist Data Center Illustration
+# Minimalist Data Center: The Future
 
 Welcome to our website, where you can download a stunning abstract illustration of a futuristic data center. With sleek and modern graphics and a minimalist color scheme, this design adds a touch of sophistication to any desktop or mobile device.
 

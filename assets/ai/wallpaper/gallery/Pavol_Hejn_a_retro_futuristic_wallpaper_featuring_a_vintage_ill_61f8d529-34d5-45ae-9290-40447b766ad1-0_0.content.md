@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Inspiring Retro-Futuristic Backgrounds.
+# Retro-Futuristic Backgrounds
 
 Welcome to our website where we offer a unique collection of retro-futuristic backgrounds that will add a touch of creativity to your workspace. Our latest addition features a vintage illustration of a robot set against a neon-colored background, perfect for those who love the combination of vintage and futuristic elements.
 

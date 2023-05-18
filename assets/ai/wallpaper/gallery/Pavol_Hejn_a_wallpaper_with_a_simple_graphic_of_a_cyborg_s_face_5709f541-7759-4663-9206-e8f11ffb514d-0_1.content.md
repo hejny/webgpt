@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cybernetic Style for Your Digital Space
+# Cyber Style for Your Digital Space
 
 Welcome to our website, where we offer a unique collection of digital assets to enhance your online experience. Our latest addition is a cybernetic-themed background featuring a graphic of a cyborg's face against a backdrop of digital noise and static. This background adds a touch of futuristic style to your digital space.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts conducting experiments on a distant planet
+# AI conducting experiments on distant planet
 
 Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant planet, with a red sun setting behind them. This image captures the spirit of exploration and discovery that drives us forward in our pursuit of knowledge.
 

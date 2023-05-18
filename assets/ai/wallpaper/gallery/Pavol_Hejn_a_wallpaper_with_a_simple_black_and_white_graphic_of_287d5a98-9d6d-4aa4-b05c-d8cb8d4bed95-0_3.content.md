@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Welcome to Our Robotics Company
+# Robotics Company Welcome
 
 We are a robotics company that is dedicated to developing cutting-edge technology that enhances people's lives. Our mission is to create robots that can perform tasks that are too dangerous, difficult, or tedious for humans.
 

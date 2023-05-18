@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AInauts: Future Space Exploration.
+# AInauts: Space Future
 
 Welcome to our website, where we explore the exciting world of space travel with a twist - all of our spacecraft are crewed entirely by artificial intelligence!
 

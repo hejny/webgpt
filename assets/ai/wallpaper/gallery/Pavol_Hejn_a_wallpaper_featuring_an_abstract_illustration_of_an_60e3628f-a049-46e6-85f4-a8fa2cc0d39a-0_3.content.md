@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Experience Effortless Browsing with Our AI-Powered Search Engine
+# Effortless Browsing with AI-Powered Search Engine
 
 Welcome to our website, where we offer a cutting-edge search engine powered by artificial intelligence. Our minimalist and modern design is inspired by the latest trends in technology and user experience.
 

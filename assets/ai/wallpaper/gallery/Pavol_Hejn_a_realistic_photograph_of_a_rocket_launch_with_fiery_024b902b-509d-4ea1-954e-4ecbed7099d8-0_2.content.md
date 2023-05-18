@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Shorter title: Rocket Launch Desktop Background
+# Rocket Desktop Background
 
 Looking for a way to add some visual interest to your desktop? Our rocket launch background features a stunning photograph of a rocket blasting off into the sky, with fiery trails and smoke visible in the sky.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Racing: The Ultimate Adventure!
+# AI Racing Adventure!
 
 Are you ready for the ride of your life? Join us on an epic journey across the galaxy as we race through some of the most challenging terrains in the universe. Our team of AInauts and their AI companions are ready to take on any challenge, from scorching deserts to icy tundras.
 

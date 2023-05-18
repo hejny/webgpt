@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Your Workspace with Minimalist Design
+# Simplify Workspace with Minimalism
 
 Welcome to our website dedicated to helping you create a productive and organized digital workspace. Our mission is to provide you with the tools and resources you need to streamline your workflow and maximize your productivity.
 

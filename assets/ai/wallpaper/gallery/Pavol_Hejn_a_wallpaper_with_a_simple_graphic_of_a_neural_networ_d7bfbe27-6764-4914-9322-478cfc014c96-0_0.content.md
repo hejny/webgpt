@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Enhance Your Workspace with a Neural Network Design
+# Neural Network Design for Workspace Enhancement
 
 Looking for a way to add some personality and visual interest to your workspace? Our neural network design is the perfect solution. Featuring a clean and simple graphic that highlights the intricacies of neural networks, this design is set against a background of complementary colors.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Discover the Fascinating World of Interstellar Colonies
+# Exploring Interstellar Colonies
 
 Welcome to our website dedicated to exploring the exciting world of interstellar colonies! Our goal is to provide you with all the information you need to learn about these fascinating communities and their unique cultures, traditions, and architecture.
 

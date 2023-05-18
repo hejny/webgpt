@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Magical Event with Stunning Floral Backdrop"
+# Enchanting Floral Event
 
 Welcome to our event planning website, where we specialize in creating unforgettable experiences for all of life's special moments. We are excited to offer our latest addition - a breathtaking watercolor painting of a field of flowers that will add a touch of magic and romance to your event.
 

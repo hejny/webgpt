@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Your Life with RoboNotify's Notification Management
+# Simplify Life with RoboNotify's Notifications
 
 Are you tired of feeling overwhelmed by a constant barrage of notifications on your phone? Do you find it difficult to keep track of important messages and reminders? RoboNotify is here to help.
 

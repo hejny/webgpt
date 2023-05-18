@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Space with Abstract Geometric Patterns
+# Elevate Your Space with Geometric Patterns
 
 Add a touch of modern style to your home or office space with our abstract geometric patterns. Inspired by the latest web design trends and color schemes, these repeating patterns of shapes and lines will instantly transform any room.
 

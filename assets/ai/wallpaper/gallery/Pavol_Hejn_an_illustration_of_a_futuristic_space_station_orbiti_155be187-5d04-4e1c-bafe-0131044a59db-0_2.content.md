@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Futuristic Space Station
+# Futuristic Space Station Welcome
 
 This website is dedicated to showcasing the beauty and wonder of space exploration. Our featured wallpaper is an illustration of a futuristic space station orbiting a distant planet, with sleek lines and metallic accents.
 

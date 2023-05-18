@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Enhance Your Projects with Geometric Backgrounds
+# Improve Projects with Geometric Backgrounds
 
 Welcome to our website, where we offer a variety of geometric backgrounds to add a modern touch to your creative projects. Our collection includes a stunning wallpaper with a repeating pattern of simple geometric shapes arranged in a grid-like structure.
 

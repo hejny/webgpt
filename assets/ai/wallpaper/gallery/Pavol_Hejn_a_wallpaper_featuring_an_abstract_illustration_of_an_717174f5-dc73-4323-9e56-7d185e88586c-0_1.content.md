@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to Our AI-Powered Search Engine
+# AI Search Engine Welcome
 
 Looking for a powerful and intelligent search engine? Look no further than our cutting-edge AI-powered search engine. Our advanced algorithms can help you find exactly what you're looking for, quickly and easily.
 

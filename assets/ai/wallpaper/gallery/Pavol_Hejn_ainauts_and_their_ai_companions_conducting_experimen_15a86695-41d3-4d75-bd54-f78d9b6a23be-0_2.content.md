@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Research in Zero-Gravity Environments
+# AI Research in Zero-G
 
 Welcome to our website dedicated to the exciting world of artificial intelligence research in zero-gravity environments! Our team of AInauts and their trusty AI companions are constantly pushing the boundaries of what's possible in space-based experimentation.
 

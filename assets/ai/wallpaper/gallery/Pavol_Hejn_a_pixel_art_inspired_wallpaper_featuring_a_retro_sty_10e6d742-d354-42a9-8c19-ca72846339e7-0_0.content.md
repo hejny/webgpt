@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Retro Robot Workspace Inspiration
+# Retro Robot Workspace Ideas
 
 Welcome to our website where you can find the perfect background for your creative workspace. Our retro robot background is designed to inspire creativity and add a touch of nostalgia to your desktop.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Embrace the Dark Side of Technology with Our Malware-Inspired Abstract Design
+# Malware-Inspired Design: Embrace Technology's Dark Side
 
 Looking to add a touch of edge and intrigue to your digital presence? Our Malware Madness design might just be the perfect solution. Featuring a repeating pattern of abstract shapes inspired by computer viruses and malware, this design is set against a sleek black background that's sure to make a statement.
 

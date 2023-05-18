@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Space Adventure: A Journey Through the Asteroid Belt
+# Asteroid Belt Adventure
 
 Welcome to our space adventure! Join a team of AInauts as they pilot a spacecraft through an asteroid field, with explosions and debris flying all around them. Our stunning wallpaper captures the excitement and danger of space exploration.
 

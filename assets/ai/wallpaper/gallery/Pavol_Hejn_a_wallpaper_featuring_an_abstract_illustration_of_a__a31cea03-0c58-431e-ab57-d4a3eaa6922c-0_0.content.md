@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future of Data Visualization with Our Abstract Artwork
+# Future of Data Visualization through Abstract Art
 
 Our abstract artwork is a stunning representation of the future of data visualization. With sleek and modern graphics and a minimalist color scheme, this piece is the perfect choice for anyone who appreciates cutting-edge design and technology.
 

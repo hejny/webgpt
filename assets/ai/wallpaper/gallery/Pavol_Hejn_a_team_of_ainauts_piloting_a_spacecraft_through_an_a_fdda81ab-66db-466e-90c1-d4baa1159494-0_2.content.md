@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AInauts: Exploring Space with Artificial Intelligence
+# AInauts: AI Explores Space
 
 Welcome to AInauts, your go-to source for the latest news and updates on space exploration and artificial intelligence. Our team of skilled AInauts is dedicated to pushing the boundaries of what's possible in space using cutting-edge technology and innovative approaches.
 

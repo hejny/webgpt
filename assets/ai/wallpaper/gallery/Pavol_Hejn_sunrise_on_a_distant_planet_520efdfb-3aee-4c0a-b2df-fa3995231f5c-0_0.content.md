@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Experience the Beauty of a Distant Planet's Sunrise"
+# Sunrise on a Distant Planet
 
 Welcome to our website where you can download and experience the stunning beauty of a distant planet's sunrise. Our high-resolution wallpaper captures the moment when the sun rises over the horizon, illuminating the surreal landscape with its warm glow.
 

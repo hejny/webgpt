@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Brand with Modern Geometric Design
+# Modern Geometric Design for Branding
 
 Make a lasting impression on your audience with our stunning modern geometric design. Inspired by the latest web design trends and color schemes, this repeating pattern of abstract shapes and patterns will add a touch of contemporary elegance to your brand's online presence.
 

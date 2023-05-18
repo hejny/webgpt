@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Exploring the Unknown: Discovering New Worlds"
+# Discovering New Worlds: Exploring the Unknown
 
 Welcome to our website dedicated to exploring the unknown and discovering new worlds. Our homepage features a stunning digital painting of a distant planet, with a unique atmosphere and unusual terrain. This captivating image sets the tone for our mission to uncover the mysteries of the universe.
 

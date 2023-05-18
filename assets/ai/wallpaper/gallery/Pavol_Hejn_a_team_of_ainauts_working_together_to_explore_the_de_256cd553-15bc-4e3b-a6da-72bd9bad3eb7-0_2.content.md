@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the AI Space Exploration Project
+# AI Space Exploration Project Welcome
 
 Our team of AInauts is dedicated to pushing the boundaries of space exploration. With cutting-edge technology at our fingertips, we are venturing into uncharted territory, including the depths of a black hole.
 

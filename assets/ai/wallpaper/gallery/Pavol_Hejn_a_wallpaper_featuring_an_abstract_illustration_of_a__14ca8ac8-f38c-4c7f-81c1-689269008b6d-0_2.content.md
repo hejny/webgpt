@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Dark Machinery: Elevate Your Project with a Futuristic Twist
+# Elevate Your Project with Dark Machinery
 
 Welcome to Dark Machinery, where we provide an abstract illustration of a dark and ominous machine, complete with glowing red lights and intricate mechanical parts. Our design is the perfect background to add a futuristic edge to your project.
 

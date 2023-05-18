@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with MathWall: A Minimalist Digital Background Showcasing the Beauty of Mathematics
+# MathWall: Elevate Your Workspace with Minimalist Math Backgrounds
 
 MathWall is a unique digital background that adds sophistication and style to your workspace. Featuring a minimalist design and a repeating pattern of simple equations and formulas, MathWall showcases the elegance of mathematics in a modern way.
 

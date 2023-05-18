@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech-Inspired Abstract Art for a Modern Environment
+# Tech-inspired abstract art for modern spaces
 
 Add a touch of modernity to your environment with our tech-inspired abstract art. Featuring a repeating pattern of icons and symbols commonly used in the tech industry, such as computer chips and power buttons, this piece is sure to impress and spark conversation among colleagues and guests.
 

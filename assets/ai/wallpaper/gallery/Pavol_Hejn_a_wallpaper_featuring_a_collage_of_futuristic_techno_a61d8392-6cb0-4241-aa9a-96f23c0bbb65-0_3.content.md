@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Unleashing the Power of Future Technologies
+# Powering Future Tech
 
 Welcome to our website, where we explore the latest advancements in technology and their impact on our lives. Our background showcases a collage of futuristic technology such as drones, robots, and smart devices, set against a black background, setting the tone for what we're all about.
 

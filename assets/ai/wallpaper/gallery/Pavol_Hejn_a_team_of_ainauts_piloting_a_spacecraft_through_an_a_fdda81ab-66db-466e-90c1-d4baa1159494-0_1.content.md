@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the AI Spacecraft Adventure!
+# AI Space Adventure!
 
 Get ready for an out-of-this-world adventure with our team of AInauts as they pilot their spacecraft through a treacherous asteroid field. With explosions and debris flying all around them, it's a race against time to navigate through the danger and reach their destination.
 

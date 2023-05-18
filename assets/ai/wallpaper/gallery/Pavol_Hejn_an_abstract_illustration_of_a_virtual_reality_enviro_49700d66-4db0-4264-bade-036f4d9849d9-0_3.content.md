@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to our Futuristic VR World!
+# Futuristic VR World Welcome!
 
 Experience the ultimate virtual reality environment with our stunning wallpaper. Our abstract illustration is designed to transport you into a futuristic world filled with cutting-edge graphics and a minimalist color scheme that will leave you in awe.
 

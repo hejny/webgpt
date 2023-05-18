@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Digital Artwork: Explore the Universe"
+# Explore the Universe with Digital Art
 
 Our stunning digital artwork features a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. With its high-resolution and vivid colors, our painting captures the majesty of space exploration and is perfect for use as a desktop or mobile background.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Space with Our Immersive Website
+# Immersive Space Exploration Website
 
 Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 

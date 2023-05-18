@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modern Digital Devices Gradient Background
+# Digital Gradient Devices
 
 Upgrade the look of your desktop or mobile device with our modern digital devices gradient background. This sleek design features a repeating pattern of smartphones, tablets, and laptops set against a gradient backdrop.
 

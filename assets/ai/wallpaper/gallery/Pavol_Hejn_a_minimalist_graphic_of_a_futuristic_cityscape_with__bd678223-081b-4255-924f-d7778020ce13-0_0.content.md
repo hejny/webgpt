@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech Insights for Staying Ahead.
+# Tech Tips for Success
 
 Welcome to our tech website, where we provide the latest insights and news on technology trends. Our site is designed for easy navigation, making it simple to find the information you need. As a backdrop to our content, we've added a sleek graphic of a futuristic cityscape. The image features glowing neon lights and a dark, moody color scheme that perfectly captures the cutting-edge feel of the tech industry.
 

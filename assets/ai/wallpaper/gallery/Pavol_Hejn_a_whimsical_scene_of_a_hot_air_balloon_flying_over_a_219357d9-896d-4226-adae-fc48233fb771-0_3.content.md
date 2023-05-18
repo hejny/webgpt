@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Adventure Awaits: Explore the World from Above
+# Adventure Awaits: Explore from Above
 
 Welcome to our lifestyle and adventure website, where we inspire you to explore the world in new and exciting ways. Our featured wallpaper is a whimsical scene of a hot air balloon flying over a city, reminding us that adventure is just around the corner.
 

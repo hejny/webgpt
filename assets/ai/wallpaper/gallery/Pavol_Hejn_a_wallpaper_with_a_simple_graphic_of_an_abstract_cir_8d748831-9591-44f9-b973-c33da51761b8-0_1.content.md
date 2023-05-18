@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modernize Your Tech Website with a Circuit Board Background
+# Tech Website Modernized with Circuit Board Background
 
 Our circuit board background is the perfect way to give your tech website a modern and professional look. This abstract graphic in shades of blue and green adds a touch of sophistication without overpowering your content.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Create a Productive and Inspiring Workspace with Our Futuristic Background
+# Productive and Inspiring Workspace with Futuristic Background
 
 Our minimalist and modern background features a stylized illustration of a futuristic workspace, perfect for creating a focused and inspiring environment.
 

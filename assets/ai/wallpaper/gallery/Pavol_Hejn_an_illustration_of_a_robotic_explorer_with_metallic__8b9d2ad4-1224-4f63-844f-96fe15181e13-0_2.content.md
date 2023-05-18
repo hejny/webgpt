@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Beyond the Horizon: A Wallpaper to Spark Your Imagination
+# Imaginative Wallpaper
 
 Welcome to our website, where we offer a unique wallpaper that will take you on a journey of imagination. Our wallpaper features an illustration of a robotic explorer, complete with metallic textures and intricate details. This captivating image is not just a simple background; it's a representation of human ingenuity and the limitless possibilities of the future.
 

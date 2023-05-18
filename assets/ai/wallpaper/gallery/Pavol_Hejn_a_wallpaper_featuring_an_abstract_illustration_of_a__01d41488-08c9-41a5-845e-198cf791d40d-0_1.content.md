@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Future: A Dark and Futuristic Cityscape
+# Dark Futuristic Cityscape
 
 Welcome to our website where we explore the possibilities of a futuristic world. Our goal is to provide you with the latest news, trends, and insights into the future.
 

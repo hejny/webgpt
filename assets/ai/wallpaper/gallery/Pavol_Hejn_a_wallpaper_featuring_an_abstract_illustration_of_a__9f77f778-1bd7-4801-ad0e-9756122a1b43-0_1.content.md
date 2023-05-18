@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Cityscapes: A World of Innovation and Creativity
+# Futuristic Cityscapes: Innovating Creativity
 
 Welcome to our website dedicated to exploring the world of futuristic cityscapes. Our abstract illustration of a futuristic cityscape, featuring glowing lights and a dark and moody color scheme, sets the tone for the innovative and creative content you'll find here.
 

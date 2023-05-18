@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# TechArm - Futuristic Device Backgrounds
+# TechArm Device Backgrounds
 
 Welcome to TechArm, your destination for unique and futuristic device backgrounds. Our latest addition is a minimalist graphic of a robot arm set against a complementary gradient background.
 
