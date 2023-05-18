@@ -116,16 +116,16 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                     continue;
                 }
 
-                if (title.trim().length > 'Futuristic Cityscape Wallpaper'.length) {
-                    //                    'Tvořím něco z ničeho nic'
-                    //                    'Futuristic Cityscape Wallpaper'
-                    const fixPropmt = `Heading should be short and concise, rewrite whole content.`;
+                if (title?.toLowerCase().includes('wallpaper')) {
+                    const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.`;
                     content = await askGpt(fixPropmt, true);
                     continue;
                 }
 
-                if (title?.toLowerCase().includes('wallpaper')) {
-                    const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.`;
+                if (title.trim().length > 'Futuristic Cityscape Wallpaper'.length) {
+                    //                    'Tvořím něco z ničeho nic'
+                    //                    'Futuristic Cityscape Wallpaper'
+                    const fixPropmt = `Heading is too long, rewrite whole content.`;
                     content = await askGpt(fixPropmt, true);
                     continue;
                 }
