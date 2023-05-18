@@ -38,10 +38,14 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
     if (fulltext) {
         // TODO: !!! Normalize words
         // TODO: !!! Search in tags, content, title,...
+        // TODO: [🔎] Search through keywords @see https://ibb.co/2Fy7kN4
         wallpapers = wallpapers.filter((wallpaper) => wallpaper.prompt.toLowerCase().includes(fulltext.toLowerCase()));
     }
 
     if (color) {
+        // TODO: Search through whole palette (with bigger weight on first color) not average color WHEN palette is available and materialized
+        // TODO: !!! If nothing found, increase treashold
+
         const treasholdSquared =
             colorDistanceSquared(Color.get('black'), Color.get('white')) *
             DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO; /* <- TODO: !!! Is here corect work with squaring */

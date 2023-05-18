@@ -55,6 +55,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
             .toHex()}),
         url(/patterns/simple/grey.png)`;
 
+        // TODO: !!!! Footer always black
         const footerTextColor = colorStats.darkestColor.then(negative);
         const footerBackground = `linear-gradient(to bottom, ${footerTextColor
             .then(negative)
@@ -118,6 +119,7 @@ function* generatePrimaryColorCandidates(colorStats: IImageColorStats): Iterable
         regionStats.lightestColor;
     }
 
+    // !!!! Prefer Black, allow White, when at the end NEVER hardcored fallback just return to first and pick that
     // [🏴] Note: At last resort, use black and white fallbacks
     yield Color.get('black');
     yield Color.get('white');

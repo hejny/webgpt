@@ -32,7 +32,7 @@ export const FONTS = [
     'Raleway',
     'Futura',
     'Barlow Condensed',
-    // TODO: !!! List more
+    // TODO: !! List more
 ];
 
 export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length;

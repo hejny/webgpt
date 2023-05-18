@@ -95,6 +95,7 @@ export function GetWebButton(props: GetWebButtonProps) {
 }
 
 /**
+ * TODO: Edit on GitHub button | Each wallpaper in each subfolder+ gallery/a/b/id/....ext
  * TODO: !!! [🤰] Pick one working method for immediate change of HeaderWallpaper and cleanup rest
  * TODO: !!! No outline - simpler design
  * TODO: !!! On mobile

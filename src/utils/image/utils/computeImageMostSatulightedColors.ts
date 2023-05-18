@@ -23,6 +23,7 @@ export function computeImageMostSatulightedColors(image: IImage): Array<WithTake
     const saturatedColors = colors.filter((color) => colorSatulightion(color) >= requiredSatulightion);
 
     // 3️⃣ Pick colors with different hue (compared to all other already picked colors)
+    // !!!! Pokud některé barvy vylučují respektive vždy beru tu první a ty ostatní blízké zahazuji než narazím na nějakou další no tak tohle by mělo fungovat tím způsobem že se všechny příbuzné barvy seskupí do jednoho clusteru a ten se vážení zprůměruje na základě četnosti – tím pádem například pokud je hodně odstínů šedé a nejčastější je ten nejsvětlejší tak výsledná barva nebude pouze ta nejsvětlejší ale někde uprostřed více světla
     const uniqueColors: Array<WithTake<Color>> = [];
     for (const color of saturatedColors) {
         if (

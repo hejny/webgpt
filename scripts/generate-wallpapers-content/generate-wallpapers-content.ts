@@ -241,6 +241,8 @@ function createFontPromptTemplate() {
 }
 
 /**
+ * TODO: [🔎] Write tags/keywords for each website to search through @see https://ibb.co/2Fy7kN4
+ * TODO: [🧬] In future multiple text variants for each paragraph
  * TODO: Maybe use getMidjourneyLink from batch-froject-editor
  * TODO: Persistency and uniqueness of the names
  */
