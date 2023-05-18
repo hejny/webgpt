@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Inter" font for this website.-->
+<!--font:Inter-->
 
 # Circuitry Dreams: Your Destination for Tech News
 

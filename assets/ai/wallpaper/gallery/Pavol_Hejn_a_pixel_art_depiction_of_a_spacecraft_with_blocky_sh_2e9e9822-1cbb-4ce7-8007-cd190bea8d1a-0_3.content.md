@@ -1,4 +1,4 @@
-<!--font:I recommend using the font "Montserrat" for your website.-->
+<!--font:Montserrat-->
 
 # Retro Space Gaming Background
 

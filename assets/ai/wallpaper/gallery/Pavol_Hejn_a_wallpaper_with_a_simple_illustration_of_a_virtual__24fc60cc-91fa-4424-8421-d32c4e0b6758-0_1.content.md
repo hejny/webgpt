@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for your website.-->
+<!--font:Montserrat-->
 
 # Enter the World of Virtual Reality
 

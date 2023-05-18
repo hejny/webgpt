@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Your Cybersecurity Resource: Protecting Your Digital World
 

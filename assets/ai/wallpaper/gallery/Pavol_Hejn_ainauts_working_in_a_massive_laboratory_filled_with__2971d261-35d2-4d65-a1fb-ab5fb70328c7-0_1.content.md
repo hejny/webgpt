@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" for the website.-->
+<!--font:Montserrat-->
 
 # Discover the Future of Science and Technology with AInauts
 

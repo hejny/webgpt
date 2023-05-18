@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The "Montserrat" font is a popular and versatile Google font that could be a great fit for many websites.-->
+<!--font:Montserrat-->
 
 # Welcome to "Sunrise on a Distant Planet"
 

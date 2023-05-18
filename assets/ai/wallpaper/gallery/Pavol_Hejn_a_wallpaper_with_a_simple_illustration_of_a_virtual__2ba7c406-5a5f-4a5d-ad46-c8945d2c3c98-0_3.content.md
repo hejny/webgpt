@@ -1,4 +1,4 @@
-<!--font:For the website, I would recommend using "Montserrat" as the Google font.-->
+<!--font:Montserrat-->
 
 # Explore the World of Virtual Reality
 

@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Montserrat" for the website.-->
+<!--font:Montserrat-->
 
 # Futuristic Office Background
 

@@ -1,4 +1,4 @@
-<!--font:I recommend using the font "Open Sans" for the website.-->
+<!--font:Open Sans-->
 
 # Add Nostalgia to Your Tech Space with Retro Robot Design
 

@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for your website.-->
+<!--font:Montserrat-->
 
 # Enhance Your Productivity with a Modern Workspace Background
 

@@ -1,4 +1,4 @@
-<!--font:I would recommend using the font "Montserrat" for the website.-->
+<!--font:Montserrat-->
 
 # Retro Space Station Pixel Art for Your Desktop
 

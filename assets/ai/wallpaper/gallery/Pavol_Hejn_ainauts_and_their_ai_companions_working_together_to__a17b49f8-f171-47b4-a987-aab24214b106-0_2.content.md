@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The Montserrat font is a great choice for the website.-->
+<!--font:Montserrat-->
 
 # AInauts: Building a Space Elevator with AI Companions
 

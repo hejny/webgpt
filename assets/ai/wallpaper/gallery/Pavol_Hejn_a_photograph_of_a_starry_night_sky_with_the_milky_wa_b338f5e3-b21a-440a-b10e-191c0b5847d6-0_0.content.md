@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Roboto" font for your website.-->
+<!--font:Roboto-->
 
 # Explore the Cosmos with Our Astronomy Website
 

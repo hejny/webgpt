@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Discover the Beauty of the Universe with Our Nebula Background
 

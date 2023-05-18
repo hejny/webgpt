@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Open Sans" font for your website.-->
+<!--font:Open Sans-->
 
 # Futuristic AI Background for Your Website
 

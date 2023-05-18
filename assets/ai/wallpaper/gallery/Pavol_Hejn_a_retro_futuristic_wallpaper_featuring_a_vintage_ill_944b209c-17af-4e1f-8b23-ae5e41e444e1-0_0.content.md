@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # "Discovering the Future: Robotics, AI, and Technology"
 

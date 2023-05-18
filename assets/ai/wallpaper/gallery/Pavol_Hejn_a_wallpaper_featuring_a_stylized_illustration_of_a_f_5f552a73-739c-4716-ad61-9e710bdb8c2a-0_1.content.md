@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for your website.-->
+<!--font:Montserrat-->
 
 # Futuristic Workspace Design for a Productive Digital Space
 

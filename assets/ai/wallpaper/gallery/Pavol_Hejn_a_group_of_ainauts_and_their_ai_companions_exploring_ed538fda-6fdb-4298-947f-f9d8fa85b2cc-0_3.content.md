@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The best fitting Google font for this website would be "Roboto".-->
+<!--font:Roboto-->
 
 # AI Exploration: Uncovering the Secrets of an Abandoned Research Facility
 

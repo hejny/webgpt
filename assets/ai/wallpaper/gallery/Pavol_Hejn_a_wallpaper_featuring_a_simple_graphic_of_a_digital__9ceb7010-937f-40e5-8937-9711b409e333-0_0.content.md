@@ -1,4 +1,4 @@
-<!--font:For this website, I would recommend using the "Open Sans" font.-->
+<!--font:Open Sans-->
 
 # Time Keeper - Your Ultimate Time Management Tool
 

@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The Montserrat font is a great option for websites as it is easy to read and has a modern, clean look.-->
+<!--font:Montserrat-->
 
 # Welcome to Our Magical Underwater World!
 

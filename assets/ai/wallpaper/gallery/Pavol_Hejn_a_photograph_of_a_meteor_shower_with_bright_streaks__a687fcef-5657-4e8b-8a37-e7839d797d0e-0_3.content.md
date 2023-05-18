@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for your website.-->
+<!--font:Montserrat-->
 
 # Stargaze - Discover the Wonders of the Night Sky
 

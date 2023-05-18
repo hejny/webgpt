@@ -1,4 +1,4 @@
-<!--font:I recommend using "Poppins" as the Google font for this website.-->
+<!--font:Poppins-->
 
 # Welcome to the Futuristic City
 

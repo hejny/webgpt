@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The Montserrat font would be a great fit for this website.-->
+<!--font:Montserrat-->
 
 # Exploring the Mysteries of a Distant Planet
 

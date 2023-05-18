@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Roboto" as the Google font for the website.-->
+<!--font:Roboto-->
 
 # Enhance Your Workspace with a Neural Network Design
 

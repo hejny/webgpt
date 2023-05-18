@@ -1,4 +1,4 @@
-<!--font:I recommend using "Roboto" for your website.-->
+<!--font:Roboto-->
 
 # Discover the Universe with Space Adventures
 

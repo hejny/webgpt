@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # MathWall - A Minimalist and Modern Digital Background for Math Enthusiasts
 

@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Inter.-->
+<!--font:Inter-->
 
 # Welcome to the Future: AInauts and AI Building the City of Tomorrow
 

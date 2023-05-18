@@ -1,4 +1,4 @@
-<!--font:Roboto.-->
+<!--font:Roboto-->
 
 # The Power of Neural Networks in Modern Technology
 

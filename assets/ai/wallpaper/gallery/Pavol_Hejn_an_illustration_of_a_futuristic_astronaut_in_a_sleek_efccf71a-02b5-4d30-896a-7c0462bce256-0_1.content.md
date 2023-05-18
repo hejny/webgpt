@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" as the Google font for the website.-->
+<!--font:Montserrat-->
 
 # Discover the Wonders of the Universe with Our Futuristic Astronaut Artwork
 

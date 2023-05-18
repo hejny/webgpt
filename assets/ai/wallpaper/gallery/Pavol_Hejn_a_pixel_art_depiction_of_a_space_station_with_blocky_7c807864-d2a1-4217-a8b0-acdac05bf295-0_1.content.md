@@ -1,4 +1,4 @@
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Retro-Futuristic Space Station Artwork
 

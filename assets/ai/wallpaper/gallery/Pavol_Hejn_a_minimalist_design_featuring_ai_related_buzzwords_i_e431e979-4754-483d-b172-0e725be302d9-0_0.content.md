@@ -1,4 +1,4 @@
-<!--font:I recommend using "Roboto" for the website.-->
+<!--font:Roboto-->
 
 # Enhance Your Tech Content with AI Buzzwords
 

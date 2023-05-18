@@ -1,4 +1,4 @@
-<!--font:I recommend using the font "Open Sans" for your website.-->
+<!--font:Open Sans-->
 
 # A Close-Up of a Dragonfly on a Leaf: Nature's Intricate Beauty
 

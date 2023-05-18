@@ -1,4 +1,4 @@
-<!--font:I would recommend using the **Roboto** font for the website.-->
+<!--font:Roboto-->
 
 # TechConnect: Your Destination for the Latest in Tech
 

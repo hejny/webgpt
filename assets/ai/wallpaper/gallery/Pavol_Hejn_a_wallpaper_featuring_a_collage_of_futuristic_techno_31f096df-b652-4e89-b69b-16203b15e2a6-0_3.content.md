@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" as the Google font for this website.-->
+<!--font:Montserrat-->
 
 # Future Tech: Exploring the Latest in Technology
 

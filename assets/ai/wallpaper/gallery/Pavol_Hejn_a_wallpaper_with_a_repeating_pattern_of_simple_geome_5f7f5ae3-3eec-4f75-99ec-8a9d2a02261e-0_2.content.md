@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Open Sans" font for the website.-->
+<!--font:Open Sans-->
 
 # Enhance Your Projects with Geometric Backgrounds
 

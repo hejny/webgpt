@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Roboto" font for the website.-->
+<!--font:Roboto-->
 
 # Explore the Future of Data Centers
 

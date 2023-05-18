@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The "Dancing Script" font would be a great fit for the Whimsical Tea Party website.-->
+<!--font:Dancing Script-->
 
 # Welcome to the Whimsical Tea Party!
 

@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Open Sans" font for your website.-->
+<!--font:Open Sans-->
 
 # Surreal Desert Landscape Artwork
 

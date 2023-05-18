@@ -1,4 +1,4 @@
-<!--font:For the Art Deco-inspired website, the font "Futura" would be a great fit.-->
+<!--font:Futura-->
 
 # Explore the Future of Design and Innovation on Our Art Deco-Inspired Site
 

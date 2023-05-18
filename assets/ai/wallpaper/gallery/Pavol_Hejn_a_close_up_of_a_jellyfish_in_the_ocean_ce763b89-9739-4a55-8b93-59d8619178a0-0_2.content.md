@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Open Sans" as it is a clean and modern font that is easy to read and works well for both headings and body text.-->
+<!--font:Open Sans-->
 
 # Dive into the Beauty of the Ocean with a Jellyfish Close-Up
 

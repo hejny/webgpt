@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Open Sans" for the website.-->
+<!--font:Open Sans-->
 
 # Simplify Data Management with a Digital Dashboard
 

@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" for the website.-->
+<!--font:Montserrat-->
 
 # Discover the Universe with Our Planet-Inspired Background
 

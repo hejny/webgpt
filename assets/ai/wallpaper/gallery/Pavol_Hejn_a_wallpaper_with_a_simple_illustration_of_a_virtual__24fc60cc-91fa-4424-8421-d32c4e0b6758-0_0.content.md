@@ -1,4 +1,4 @@
-<!--font:The best fitting Google font for the website is "Roboto".-->
+<!--font:Roboto-->
 
 # Immerse Yourself in Virtual Reality with a VR Headset
 

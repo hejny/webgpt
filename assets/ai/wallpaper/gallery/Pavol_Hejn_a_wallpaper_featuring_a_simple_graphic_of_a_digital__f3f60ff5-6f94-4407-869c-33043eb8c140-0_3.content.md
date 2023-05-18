@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" as the Google font for your website.-->
+<!--font:Montserrat-->
 
 # Manage Your Time Effectively with Countdown
 

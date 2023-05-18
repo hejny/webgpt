@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Montserrat" for your website.-->
+<!--font:Montserrat-->
 
 # Quantum Computing: Unleashing the Power of the Future
 

@@ -1,4 +1,4 @@
-<!--font:I recommend using the Google font "Poppins" for the website.-->
+<!--font:Poppins-->
 
 # Add a Futuristic Vibe to Your Workspace with a Tech-Inspired Theme
 

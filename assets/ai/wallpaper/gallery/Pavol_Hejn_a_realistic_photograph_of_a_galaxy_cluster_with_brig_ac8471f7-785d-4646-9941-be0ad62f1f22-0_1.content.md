@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" as the Google font for the website.-->
+<!--font:Montserrat-->
 
 # Our Captivating Galaxy Cluster Background: A Glimpse into the Vastness of the Universe
 

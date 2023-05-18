@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The font that best fits the Wanderlust Adventures website is Montserrat-->
+<!--font:Montserrat-->
 
 # Wanderlust Adventures
 

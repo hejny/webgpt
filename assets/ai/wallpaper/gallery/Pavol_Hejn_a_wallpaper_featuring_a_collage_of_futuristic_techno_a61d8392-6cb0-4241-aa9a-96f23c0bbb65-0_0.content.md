@@ -1,4 +1,4 @@
-<!--font:Inter.-->
+<!--font:Inter-->
 
 # Discover the Latest in Technology with Future Tech Hub
 

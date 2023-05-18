@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" as the Google font for the website.-->
+<!--font:Montserrat-->
 
 # Your Ultimate Destination for the Latest in Technology
 

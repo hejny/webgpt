@@ -1,4 +1,4 @@
-<!--font:I recommend using "Roboto" as the Google font for your website.-->
+<!--font:Roboto-->
 
 # Modern Geometric Backgrounds for Your Online Presence
 

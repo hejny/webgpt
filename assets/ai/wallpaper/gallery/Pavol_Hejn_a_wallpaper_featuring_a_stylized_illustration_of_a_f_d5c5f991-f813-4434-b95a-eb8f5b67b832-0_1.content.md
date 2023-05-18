@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" for the website.-->
+<!--font:Montserrat-->
 
 # Inspire Creativity and Productivity with a Futuristic Workspace Design
 

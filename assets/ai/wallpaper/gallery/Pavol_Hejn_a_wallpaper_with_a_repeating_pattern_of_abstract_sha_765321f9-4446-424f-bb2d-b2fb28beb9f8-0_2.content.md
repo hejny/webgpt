@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" for your website.-->
+<!--font:Montserrat-->
 
 # Malware-Inspired Abstract Background for Your Tech-Forward Website
 

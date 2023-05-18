@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Roboto" for the website.-->
+<!--font:Roboto-->
 
 # Simplify Data Management with a Modern Dashboard
 

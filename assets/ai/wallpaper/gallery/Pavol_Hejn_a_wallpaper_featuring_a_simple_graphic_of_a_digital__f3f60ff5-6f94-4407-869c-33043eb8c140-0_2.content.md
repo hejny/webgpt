@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Simplify Your Schedule with Timekeeper's Digital Clock and Timer
 

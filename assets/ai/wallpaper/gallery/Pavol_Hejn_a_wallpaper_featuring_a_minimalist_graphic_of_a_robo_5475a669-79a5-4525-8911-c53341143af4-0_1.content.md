@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" for your website.-->
+<!--font:Montserrat-->
 
 # Digital Workspace Background for Enhanced Productivity
 

@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Discover the Power of Artificial Intelligence with Our Website
 

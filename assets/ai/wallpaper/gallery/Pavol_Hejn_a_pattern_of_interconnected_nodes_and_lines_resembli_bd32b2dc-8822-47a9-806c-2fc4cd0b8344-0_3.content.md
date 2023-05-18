@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Montserrat" font for your website.-->
+<!--font:Montserrat-->
 
 # Cultivate Your Creativity and Boost Your Productivity with Our Resources
 

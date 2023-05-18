@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Montserrat" as it is a modern and clean sans-serif font that is easy to read on both desktop and mobile devices.-->
+<!--font:Montserrat-->
 
 # Explore the Future with Our Futuristic Technology Collage
 

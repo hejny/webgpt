@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The font that best fits the futuristic and cutting-edge theme of the website is "Roboto".-->
+<!--font:Roboto-->
 
 # The Lab of the Future
 

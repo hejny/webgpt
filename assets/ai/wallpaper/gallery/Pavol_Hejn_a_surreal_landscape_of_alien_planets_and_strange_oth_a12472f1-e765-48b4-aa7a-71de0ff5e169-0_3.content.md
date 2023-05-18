@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Exo 2" font would be a good fit for this website.-->
+<!--font:Exo 2-->
 
 # Alien Planets and Strange Creatures
 

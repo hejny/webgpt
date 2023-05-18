@@ -1,4 +1,4 @@
-<!--font:The best fitting Google font for the website would be "Montserrat".-->
+<!--font:Montserrat-->
 
 # Explore the Future with Our Futuristic Technology Display
 

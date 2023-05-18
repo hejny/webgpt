@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Roboto.-->
+<!--font:Roboto-->
 
 # AI in Space: Saving Earth from a Massive Asteroid
 

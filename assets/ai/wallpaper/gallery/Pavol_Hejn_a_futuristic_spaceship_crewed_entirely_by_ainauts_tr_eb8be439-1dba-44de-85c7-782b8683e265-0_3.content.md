@@ -6,7 +6,7 @@ Write me markdown content of website with wallpaper:
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
-<!--font:The "Roboto" font is a great option for websites due to its clean and modern design.-->
+<!--font:Roboto-->
 
 # AI Spaceship: Exploring the Unknown
 

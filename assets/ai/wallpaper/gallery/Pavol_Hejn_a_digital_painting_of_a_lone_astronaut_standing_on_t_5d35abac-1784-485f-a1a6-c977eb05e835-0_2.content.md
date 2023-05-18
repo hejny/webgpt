@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Experience the Beauty of Space with Our Digital Artwork
 

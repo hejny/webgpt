@@ -1,4 +1,4 @@
-<!--font:I would recommend using "Montserrat" for the website.-->
+<!--font:Montserrat-->
 
 # Butterfly and Flower Background: A Touch of Nature for Your Device
 

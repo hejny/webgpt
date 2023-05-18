@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" as the best fitting Google font for the website.-->
+<!--font:Montserrat-->
 
 # Enter the World of the Futuristic Cityscape
 

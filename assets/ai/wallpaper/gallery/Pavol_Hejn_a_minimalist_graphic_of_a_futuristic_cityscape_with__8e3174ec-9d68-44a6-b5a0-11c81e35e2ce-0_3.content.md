@@ -1,4 +1,4 @@
-<!--font:Montserrat.-->
+<!--font:Montserrat-->
 
 # Explore the Future of Design with our Futuristic Cityscape
 

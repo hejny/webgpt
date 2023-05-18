@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Orbitron" font would be a great fit for this website.-->
+<!--font:Orbitron-->
 
 # AI Space Exploration
 

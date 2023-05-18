@@ -1,4 +1,4 @@
-<!--font:I recommend using the "Roboto" font for your website.-->
+<!--font:Roboto-->
 
 # NeuroLab - Discover the Wonders of the Human Brain
 

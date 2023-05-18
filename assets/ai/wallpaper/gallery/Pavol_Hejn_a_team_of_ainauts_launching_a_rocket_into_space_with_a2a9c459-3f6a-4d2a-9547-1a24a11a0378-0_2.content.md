@@ -1,4 +1,4 @@
-<!--font:I recommend using the Google font "Montserrat" for this website.-->
+<!--font:Montserrat-->
 
 # Space-themed Background for Your Digital Workspace
 

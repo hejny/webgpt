@@ -1,4 +1,4 @@
-<!--font:I recommend using "Montserrat" for your website.-->
+<!--font:Montserrat-->
 
 # Boost Your Productivity with a Virtual Assistant Design
 

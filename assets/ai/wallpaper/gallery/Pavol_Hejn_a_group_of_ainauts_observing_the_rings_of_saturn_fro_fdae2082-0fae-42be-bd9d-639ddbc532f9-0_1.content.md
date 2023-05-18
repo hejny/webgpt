@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Roboto" font is a great choice for this website.-->
+<!--font:Roboto-->
 
 # AInauts Observing Saturn's Rings from High-Tech Space Station
 

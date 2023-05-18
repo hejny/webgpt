@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Roboto" font for the website.-->
+<!--font:Roboto-->
 
 # Flower Photography by John Doe
 

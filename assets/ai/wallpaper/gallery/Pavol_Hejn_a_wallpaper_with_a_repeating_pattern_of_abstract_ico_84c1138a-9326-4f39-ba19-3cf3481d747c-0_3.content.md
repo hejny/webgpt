@@ -1,4 +1,4 @@
-<!--font:I would recommend using the "Montserrat" font for the website.-->
+<!--font:Montserrat-->
 
 # Add a Tech-Inspired Touch to Your Desktop with Our Icon Pattern
 
