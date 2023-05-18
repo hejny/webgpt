@@ -1,3 +1,5 @@
+<iframe src="/showcase/caadd184-364b-4ec7-a0cc-436d0e3b5330" scrolling="no"></iframe>
+<!---->
 <iframe src="/showcase/91433014-7f75-439a-9d35-6dbba2c6d79e" scrolling="no"></iframe>
 <iframe src="/showcase/a53d2f17-9e88-4121-80cc-d3e4c763a799" scrolling="no"></iframe>
 <iframe src="/showcase/9c6f0729-9cac-47b6-9e8f-6b7d1eb6140e" scrolling="no"></iframe>
@@ -28,3 +30,22 @@
         pointer-events: none;
     }
 </style>
+
+<script>
+    // TODO: Do not show the Next.js errors in the iframes (they are not relevant in this case)
+    document.querySelectorAll('iframe').forEach((iframeElement) => {
+        function hideNextjsErrors() {
+            const iframeDocument = iframeElement.contentDocument;
+            iframeDocument.body.innerHTML =
+                iframeDocument.body.innerHTML +
+                `
+                    nextjs-portal {
+                        display: none;
+                    }
+                `;
+        }
+
+        hideNextjsErrors();
+        iframeElement.addEventListener('load', hideNextjsErrors);
+    });
+</script>
