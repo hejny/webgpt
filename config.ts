@@ -32,6 +32,10 @@ export const FONTS = [
     'Raleway',
     'Futura',
     'Barlow Condensed',
+    'Cabin',
+    'Cinzel','Cinzel Decorative',
+    'Cormorant Garamond',
+    'Creepster' /* <- TODO: Where it is used */,
     // TODO: !! List more
 ];
 
