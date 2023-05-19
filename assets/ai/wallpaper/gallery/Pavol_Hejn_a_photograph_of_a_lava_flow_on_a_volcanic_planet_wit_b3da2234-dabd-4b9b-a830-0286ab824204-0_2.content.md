@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Volcano World: Explore Volcanoes
+# Explore Volcanoes
 
 Welcome to Volcano World, your ultimate guide to the fascinating world of volcanoes. Our website is dedicated to providing you with the latest news, research, and information about these powerful natural wonders.
 

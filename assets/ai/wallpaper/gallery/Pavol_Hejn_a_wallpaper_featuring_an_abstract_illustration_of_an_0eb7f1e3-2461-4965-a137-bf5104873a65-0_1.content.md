@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# AI search engine for future search
+# Future AI search engine
 
 Our AI-powered engine is at the forefront of search technology, providing a sleek and modern design that makes finding information and products easier than ever before.
 

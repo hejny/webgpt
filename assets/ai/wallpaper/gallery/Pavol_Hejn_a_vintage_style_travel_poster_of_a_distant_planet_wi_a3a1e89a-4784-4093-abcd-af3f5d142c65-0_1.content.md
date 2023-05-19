@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover a Distant Planet's Wonders
+# Exploring a Far Planet's Wonders
 
 Welcome to our website where we celebrate the beauty and mystery of distant planets. Our vintage-style travel poster wallpaper captures the essence of adventure and exploration, featuring a stunning landscape that is sure to inspire your wanderlust.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Mountain-Backdropped Natural Beauty
+# Mountainous Natural Beauty
 
 Welcome to our website, where you can explore the natural world with our collection of high-quality backgrounds. Our backgrounds feature stunning images that showcase the beauty and wonder of nature.
 
