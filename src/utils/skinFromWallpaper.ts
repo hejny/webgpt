@@ -7,6 +7,7 @@ import { negative } from './color/operators/negative';
 import { withAlpha } from './color/operators/withAlpha';
 
 /**
+ * !!!!!! Remove Skin and USE ONLY palette + put font into css vars
  * An interface that defines the properties of a skin ⁘
  *
  * @interface
