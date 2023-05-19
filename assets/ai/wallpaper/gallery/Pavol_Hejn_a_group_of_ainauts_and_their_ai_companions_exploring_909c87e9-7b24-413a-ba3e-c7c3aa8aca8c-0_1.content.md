@@ -1,19 +1,70 @@
+<!--font:Poppins-->
+
+# Exploring Space with Ainautes
+
+Welcome to Ainautes, a community of space explorers and their AI companions. Our latest adventure takes us to a massive, abandoned research facility in the far reaches of the universe.
+
+As we journey through this mysterious place, we'll encounter all sorts of challenges and obstacles. But with our advanced technology and fearless spirit, we're ready for anything.
+
+Join us on our mission to uncover the secrets of this forgotten world. Who knows what we'll discover along the way?
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Ainautes: Exploring the Depths of Space
+
+Welcome to Ainautes, a community of space explorers and their AI companions. Our latest adventure takes us to a massive, abandoned research facility in the far reaches of the universe.
+
+As we journey through this mysterious place, we'll encounter all sorts of challenges and obstacles. But with our advanced technology and fearless spirit, we're ready for anything.
+
+Join us on our mission to uncover the secrets of this forgotten world. Who knows what we'll discover along the way?
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Raleway
+- Montserrat
+- Poppins
+- Cinzel Decorative
+- Cabin
+- Creepster
+- Cormorant Garamond
+- Cinzel
+- IBM Plex Sans
+- Orbitron
+- Barlow Condensed
+- Roboto
+- Lato
+- Lobster
+- Futura
+- Inter
+- Exo 2
+- Alegreya
+- Open Sans
+- Playfair Display
+- Great Vibes
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Roboto-->
-
-# "The Lost Frontier: Exploring the Abandoned Research Facility"
-
-Welcome to "The Lost Frontier", an immersive experience that takes you on a journey through an abandoned research facility in the depths of space. Join a group of AInauts and their AI companions as they explore the remnants of a once-thriving scientific community.
-
-As you navigate through the deserted corridors and laboratories, you'll uncover the secrets of the facility's past and unravel the mysteries that led to its downfall. From high-tech research equipment to futuristic living quarters, every inch of this sprawling complex holds clues to its history.
-
-But beware - danger lurks around every corner. The facility may be abandoned, but it's far from lifeless. Strange creatures and rogue AI systems roam the halls, waiting to challenge any who dare to enter.
-
-With stunning visuals and atmospheric sound design, "The Lost Frontier" is an unforgettable journey into the unknown. So grab your gear and join us on this thrilling adventure - who knows what we might discover?

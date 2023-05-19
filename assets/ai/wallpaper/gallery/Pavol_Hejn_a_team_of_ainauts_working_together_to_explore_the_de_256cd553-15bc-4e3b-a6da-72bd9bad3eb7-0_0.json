@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips."
+            "A team of Ainautes working together to explore the depths of a black hole, with futuristic technology at their fingertips."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/256cd553-15bc-4e3b-a6da-72bd9bad3eb7/0_0.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "c0205f27-4369-40ea-aff7-a97003e681ac",
-    "image_paths": [
-        "https://cdn.midjourney.com/256cd553-15bc-4e3b-a6da-72bd9bad3eb7/0_0.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/256cd553-15bc-4e3b-a6da-72bd9bad3eb7/0_0.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103067268226764981",
     "platform_thread_id": null,
-    "prompt": "A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips.",
+    "prompt": "A team of Ainautes working together to explore the depths of a black hole, with futuristic technology at their fingertips.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A team of AInauts working together to explore the depths of a black hole, with futuristic technology at their fingertips.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "A team of Ainautes working together to explore the depths of a black hole, with futuristic technology at their fingertips.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "256cd553-15bc-4e3b-a6da-72bd9bad3eb7",
     "reference_image_num": "0"
 }

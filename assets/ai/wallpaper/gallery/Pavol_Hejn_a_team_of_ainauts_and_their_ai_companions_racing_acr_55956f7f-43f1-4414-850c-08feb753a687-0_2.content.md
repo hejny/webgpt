@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies."
+"A team of Ainautes and their AI companions racing across the surface of a desert planet in high-tech buggies."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,23 +18,23 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Racing: Experience the Future of Racing
+# Future AI Racing
 
-Welcome to AI Racing, where the future of racing has arrived. Our team of AInauts and their AI companions are here to take you on a thrilling ride across the surface of a desert planet in high-tech buggies.
+Welcome to AI Racing, where the future of racing has arrived. Our team of Ainautes and their AI companions are here to take you on a thrilling ride across the surface of a desert planet in high-tech buggies.
 
 ## The Ultimate Racing Experience
 
 At AI Racing, we offer an unparalleled racing experience that combines cutting-edge technology with heart-pumping action. Our AI-powered buggies are designed to provide maximum speed and agility, allowing you to navigate even the toughest terrain with ease. Whether you're a seasoned racer or a newcomer to the sport, our races are sure to get your adrenaline pumping.
 
-## Meet the AInauts
+## Meet the Ainautes
 
-Our AInauts are the best in the business, each one handpicked for their skill and expertise. They work closely with their AI companions to ensure that every race is a success. From navigating treacherous obstacles to outmaneuvering the competition, our AInauts are always up for the challenge.
+Our Ainautes are the best in the business, each one handpicked for their skill and expertise. They work closely with their AI companions to ensure that every race is a success. From navigating treacherous obstacles to outmaneuvering the competition, our Ainautes are always up for the challenge.
 
 ## User Stories
 
 Don't just take our word for it – hear from some of our satisfied customers:
 
-> "I've been a racing fan my whole life, but nothing compares to the thrill of AI Racing. The buggies are amazing, and the AInauts are true professionals. I can't wait for my next race!" - John D.
+> "I've been a racing fan my whole life, but nothing compares to the thrill of AI Racing. The buggies are amazing, and the Ainautes are true professionals. I can't wait for my next race!" - John D.
 
 > "As someone who's never raced before, I was a little nervous about trying AI Racing. But the team at AI Racing made me feel right at home. They walked me through everything and made sure I was comfortable before we started. It was an incredible experience." - Sarah T.
 

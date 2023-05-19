@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
+"A group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,28 +14,28 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts on a Distant Moon
+# Ainautes on a Distant Moon
 
-Welcome to our website featuring an incredible wallpaper of AInauts conducting experiments on a distant moon. The wallpaper showcases the amazing work being done by our team of scientists in exploring the universe and pushing the boundaries of AI research.
+Welcome to our website featuring an incredible wallpaper of Ainautes conducting experiments on a distant moon. The wallpaper showcases the amazing work being done by our team of scientists in exploring the universe and pushing the boundaries of AI research.
 
 ## Wallpaper Description
 
-The wallpaper features a group of AInauts performing experiments on a distant moon, with a massive gas giant looming in the background. The image captures the awe-inspiring beauty of space exploration and the excitement of scientific discovery.
+The wallpaper features a group of Ainautes performing experiments on a distant moon, with a massive gas giant looming in the background. The image captures the awe-inspiring beauty of space exploration and the excitement of scientific discovery.
 
-## About AInauts
+## About Ainautes
 
-AInauts is a team of pioneering scientists and engineers dedicated to advancing the field of artificial intelligence through space exploration. Our mission is to push the boundaries of AI research and develop new technologies that will help us better understand our universe and improve life on Earth.
+Ainautes is a team of pioneering scientists and engineers dedicated to advancing the field of artificial intelligence through space exploration. Our mission is to push the boundaries of AI research and develop new technologies that will help us better understand our universe and improve life on Earth.
 
 ## Our Work
 
-At AInauts, we are working on a variety of exciting projects that are helping us to achieve our mission. Some of our current projects include:
+At Ainautes, we are working on a variety of exciting projects that are helping us to achieve our mission. Some of our current projects include:
 
-- Developing AI-powered spacecraft that can explore deep space
-- Creating intelligent robots that can assist astronauts on long-duration missions
-- Conducting experiments to study the effects of space travel on the human body
+-   Developing AI-powered spacecraft that can explore deep space
+-   Creating intelligent robots that can assist astronauts on long-duration missions
+-   Conducting experiments to study the effects of space travel on the human body
 
 ## Join Us
 
 If you share our passion for space exploration and AI research, we invite you to join us on our journey. Follow us on social media or sign up for our newsletter to stay up-to-date on our latest projects and discoveries.
 
-> "Exploration is in our DNA, and we are committed to using AI to unlock the secrets of the universe." - AInauts
+> "Exploration is in our DNA, and we are committed to using AI to unlock the secrets of the universe." - Ainautes

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Wonders of the Universe
+# Universe's Wonders
 
 Welcome to our website dedicated to showcasing the beauty and mystery of the universe. As you browse through our pages, you will discover stunning images and fascinating information about the cosmos.
 

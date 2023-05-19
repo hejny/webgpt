@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
+"A group of Ainautes exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Exploration of Ancient Civilization Ruins
+# AI Explores Ancient Ruins
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts exploring the ruins of an ancient civilization on a distant planet. The wallpaper depicts towering statues and temples all around them, giving us a glimpse into the mysterious and fascinating world of this long-lost civilization.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes exploring the ruins of an ancient civilization on a distant planet. The wallpaper depicts towering statues and temples all around them, giving us a glimpse into the mysterious and fascinating world of this long-lost civilization.
 
 ## Discover the Wonders of the Past
 

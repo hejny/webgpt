@@ -1,4 +1,8 @@
-version: 7
+version: 'colorful-16bit-fullsize-1'
+palette:
+    - '#aa6666'
+    - '#ffffff'
+    - '#111100'
 averageColor: '#674332'
 lightestColor: '#ffffee'
 darkestColor: '#111100'

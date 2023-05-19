@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies."
+"A team of Ainautes and their AI companions racing across the surface of a desert planet in high-tech buggies."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Racing: Join the Adventure!
+# AI Racing Adventure!
 
-Welcome to AI Racing, where humans and machines work together to conquer new frontiers! Our team of AInauts and their AI companions are always on the lookout for the next challenge. Today, they're racing across the surface of a desert planet in high-tech buggies, pushing themselves and their machines to the limit.
+Welcome to AI Racing, where humans and machines work together to conquer new frontiers! Our team of Ainautes and their AI companions are always on the lookout for the next challenge. Today, they're racing across the surface of a desert planet in high-tech buggies, pushing themselves and their machines to the limit.
 
 ## About Us
 

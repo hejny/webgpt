@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Mountain Meditation: Find Peace in Nature
+# Nature Meditation: Find Peace
 
 Welcome to Mountain Meditation, a website dedicated to helping you find inner peace through the beauty of nature. Our serene mountain landscape with a clear blue lake wallpaper is just a glimpse of what we have to offer.
 

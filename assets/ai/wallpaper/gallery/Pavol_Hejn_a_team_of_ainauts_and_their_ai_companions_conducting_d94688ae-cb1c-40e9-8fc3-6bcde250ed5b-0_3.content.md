@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
+"A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -12,15 +12,15 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Orbitron" font would be a great fit for this website.-->
+<!--font:Orbitron-->
 
-# AI Experiments on the Edge of a Black Hole
+# AI near Black Hole
 
-Welcome to our website showcasing an exciting wallpaper featuring a team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.
+Welcome to our website showcasing an exciting wallpaper featuring a team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.
 
 ## About the Wallpaper
 
-Our stunning wallpaper depicts a group of AInauts and their AI companions conducting groundbreaking experiments on the edge of a black hole. The image captures the excitement and danger of exploring the unknown, as the team pushes the boundaries of what is possible with artificial intelligence and advanced technology.
+Our stunning wallpaper depicts a group of Ainautes and their AI companions conducting groundbreaking experiments on the edge of a black hole. The image captures the excitement and danger of exploring the unknown, as the team pushes the boundaries of what is possible with artificial intelligence and advanced technology.
 
 ## The Significance of the Image
 

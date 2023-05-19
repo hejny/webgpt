@@ -1,17 +1,80 @@
+<!--font:Poppins-->
+
+# Ainautes AI Factory Welcome
+
+Our team of dedicated professionals works tirelessly to create cutting-edge technologies that will shape the future. Our factory is a hub of innovation, where we harness the power of artificial intelligence to develop new and exciting products.
+
+As you explore our website, you'll discover the many ways in which our AI solutions can benefit your business. From machine learning algorithms to natural language processing tools, we have the expertise and experience to help you stay ahead of the curve.
+
+So why wait? Join us on this exciting journey into the world of AI and see what the future holds!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
+"A team of Ainautes working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+Write me markdown content of website with wallpaper:
+
+"A team of Ainautes working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to the Ainautes AI Factory
+
+Our team of dedicated professionals works tirelessly to create cutting-edge technologies that will shape the future. Our factory is a hub of innovation, where we harness the power of artificial intelligence to develop new and exciting products.
+
+As you explore our website, you'll discover the many ways in which our AI solutions can benefit your business. From machine learning algorithms to natural language processing tools, we have the expertise and experience to help you stay ahead of the curve.
+
+So why wait? Join us on this exciting journey into the world of AI and see what the future holds!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Open Sans
+- Exo 2
+- Orbitron
+- Montserrat
+- Futura
+- Dancing Script
+- Playfair Display
+- Cabin
+- Roboto
+- Cinzel Decorative
+- Cinzel
+- Creepster
+- Great Vibes
+- IBM Plex Sans
+- Lato
+- Poppins
+- Barlow Condensed
+- Lobster
+- Inter
+- Cormorant Garamond
+- Raleway
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Inter.-->
-
-# Welcome to the AI Factory
-
-Our team of AInauts is dedicated to pushing the boundaries of technology and innovation. At our massive AI factory, we work tirelessly to create new and exciting technologies that will shape the future.
-
-With state-of-the-art equipment and a passion for progress, our team is constantly exploring new ideas and pushing the limits of what's possible. From machine learning to natural language processing, we're at the forefront of the latest developments in AI.
-
-Join us on this exciting journey as we explore the cutting edge of technology and work towards a brighter future for all.

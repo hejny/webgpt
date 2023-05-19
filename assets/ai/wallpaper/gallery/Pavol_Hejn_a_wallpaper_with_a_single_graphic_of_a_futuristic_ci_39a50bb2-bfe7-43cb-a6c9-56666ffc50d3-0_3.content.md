@@ -1,57 +1,119 @@
+<!--font:Poppins-->
+
+# Future Cityscape Background
+
+Elevate your digital experience with our modern cityscape background. Featuring a sleek and futuristic skyline, this background is the perfect way to add some excitement to your desktop or mobile device.
+
+Available in solid colors such as orange or green, our background is ideal for anyone who loves science fiction or urban landscapes. Whether you're using it for work or personal use, our cityscape background will transport you to a world of endless possibilities.
+
+So why settle for a plain and uninspiring background when you can step into the future with our modern cityscape background? Download it today and start your journey towards a new and exciting digital world!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a single graphic of a futuristic cityscape, in a solid color such as orange or green."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Futuristic Cityscape Wallpaper
+
+Decorate your desktop or mobile device with our stunning wallpaper featuring a single graphic of a futuristic cityscape. The wallpaper is available in solid colors such as orange or green, adding a pop of color to your screen.
+
+With its sleek and modern design, this wallpaper is perfect for anyone who loves science fiction or urban landscapes. Whether you're using it as a background for your work computer or personal phone, this wallpaper will make your device stand out.
+
+Download our futuristic cityscape wallpaper today and bring a touch of the future to your digital world!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Discover the Future with Our Futuristic Cityscape Background
+
+Looking for a way to add some excitement to your digital world? Look no further than our stunning futuristic cityscape background. Featuring a single graphic of a sleek and modern city skyline, this background is sure to make your desktop or mobile device stand out.
+
+Available in solid colors such as orange or green, our background is perfect for anyone who loves science fiction or urban landscapes. Whether you're using it as a backdrop for your work computer or personal phone, this background will transport you to a world of endless possibilities.
+
+So why settle for a boring, plain background when you can discover the future with our futuristic cityscape background? Download it today and start exploring!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore a Futuristic World with Our Cityscape Background
+
+Transform your digital world with our stunning cityscape background. Featuring a sleek and modern skyline, this background is the perfect way to add some excitement to your desktop or mobile device.
+
+Available in solid colors like orange or green, our background is ideal for anyone who loves science fiction or urban landscapes. Whether you're using it as a backdrop for work or personal use, our cityscape background will transport you to a futuristic world full of endless possibilities.
+
+So why settle for a boring, plain background when you can explore a whole new world with our cityscape background? Download it today and start your journey into the future!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Step into the Future with Our Modern Cityscape Background
+
+Elevate your digital experience with our modern cityscape background. Featuring a sleek and futuristic skyline, this background is the perfect way to add some excitement to your desktop or mobile device.
+
+Available in solid colors such as orange or green, our background is ideal for anyone who loves science fiction or urban landscapes. Whether you're using it for work or personal use, our cityscape background will transport you to a world of endless possibilities.
+
+So why settle for a plain and uninspiring background when you can step into the future with our modern cityscape background? Download it today and start your journey towards a new and exciting digital world!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- Raleway
+- IBM Plex Sans
+- Exo 2
+- Poppins
+- Playfair Display
+- Orbitron
+- Great Vibes
+- Dancing Script
+- Open Sans
+- Barlow Condensed
+- Inter
+- Lobster
+- Futura
+- Roboto
+- Lato
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# Futuristic Cityscape Wallpaper for Your Desktop
-
-Transform your desktop into a futuristic metropolis with our stunning wallpaper featuring a single graphic of a cityscape. Available in solid colors such as orange or green, this wallpaper will add a touch of modernity to your workspace.
-
-## Features
-
-- High-resolution image
-- Available in multiple colors
-- Perfect for desktops and laptops
-- Easy to download and install
-
-## User Stories
-
-> "I love the futuristic look of this wallpaper. It makes me feel like I'm living in the future!" - John, software developer
-
-> "The orange color really pops on my dark-themed desktop. It's become my favorite wallpaper." - Sarah, graphic designer
-
-## Installation Instructions
-
-1. Right-click on the image and select "Save Image As"
-2. Save the image to your desired location
-3. Open the "Settings" app on your computer
-4. Click on "Personalization"
-5. Select "Background" from the left-hand menu
-6. Click on "Browse" and navigate to where you saved the wallpaper
-7. Select the wallpaper and click "Choose picture"
-8. Enjoy your new futuristic desktop!
-
-## References
-
-- [How to Change Your Desktop Background in Windows 10](https://www.howtogeek.com/666988/how-to-change-your-desktop-background-in-windows-10/)
-- [How to Change Your Desktop Background on a Mac](https://www.businessinsider.com/how-to-change-desktop-background-mac)
-- [The Best Wallpaper Sites for Finding Unique Backgrounds](https://www.digitaltrends.com/computing/best-wallpaper-sites/)
-
-## Contact Us
-
-If you have any questions or comments about our wallpaper, please don't hesitate to contact us at [email protected]. We'd love to hear from you!

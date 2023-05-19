@@ -1,91 +1,93 @@
+<!--font:Poppins-->
+
+# Butterfly on a Flower
+
+Welcome to our website featuring a stunning close-up photograph of a butterfly resting on a flower. 
+
+## About the Photo
+
+This beautiful wallpaper captures the intricate details of a butterfly's wings as it perches delicately on a vibrant pink flower. The soft focus of the background adds depth and contrast, making the butterfly and flower stand out even more.
+
+## Download the Wallpaper
+
+If you love this image as much as we do, you can download it for free and use it as your desktop or mobile wallpaper. Simply click the download button below and save the image to your device.
+
+[Download Wallpaper](link-to-download)
+
+## Our Mission
+
+At Butterfly on a Flower, we are passionate about showcasing the beauty of nature through photography. We believe that by sharing these images, we can inspire others to appreciate and protect the natural world around us.
+
+## Get in Touch
+
+If you have any questions or comments, we would love to hear from you. Please feel free to contact us through our website or social media channels. Thank you for visiting Butterfly on a Flower!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A close-up of a butterfly on a flower"
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Open Sans-->
-
-# Butterfly Garden Wallpaper for Nature Lovers
-
-Welcome to our website, where you can download our stunning butterfly garden wallpaper. This wallpaper features a close-up of a beautiful butterfly perched on a flower, capturing the essence of nature's beauty and tranquility.
-
-## About Our Wallpaper
-
-Our wallpaper is designed to bring the beauty of nature into your home or office. The high-quality image captures the intricate details of the butterfly's wings and the vibrant colors of the flower. It is perfect for anyone who loves nature and wants to add a touch of serenity to their space.
-
-## How to Download
-
-To download our butterfly garden wallpaper, simply click the download button below. The wallpaper is available in various sizes to fit different screen resolutions. Once downloaded, you can set it as your desktop or mobile wallpaper.
-
-[Download Now](#download)
-
-## User Stories
-
-Here are some stories from our users who have downloaded our butterfly garden wallpaper:
-
-> "I love this wallpaper! Every time I look at it, it reminds me of the beauty of nature and helps me relax." - Sarah
-
-> "The colors in this wallpaper are so vibrant and eye-catching. It's the perfect addition to my workspace." - John
-
-> "As someone who loves butterflies, this wallpaper is a dream come true. It's like having a piece of nature right on my computer screen." - Emily
-
-## References
-
-If you're interested in learning more about butterflies and their role in nature, check out these resources:
-
--   [Butterfly Conservation](#conservation)
--   [National Geographic](#natgeo)
--   [The Butterfly Website](#website)
-
-## Contact Us
-
-If you have any questions or feedback about our butterfly garden wallpaper, please don't hesitate to contact us. We'd love to hear from you!
-
-[Contact Us](#contact)
 
 ---
 
-### Download
 
-To download our butterfly garden wallpaper, click the link below:
+# Butterfly on a Flower
 
-[Download Now](#download)
+Welcome to our website featuring a stunning close-up photograph of a butterfly resting on a flower. 
 
-### Conservation
+## About the Photo
 
-Butterfly Conservation is a UK-based charity dedicated to protecting butterflies and moths and their habitats. Visit their website to learn more:
+This beautiful wallpaper captures the intricate details of a butterfly's wings as it perches delicately on a vibrant pink flower. The soft focus of the background adds depth and contrast, making the butterfly and flower stand out even more.
 
-[Butterfly Conservation](#conservation)
+## Download the Wallpaper
 
-### National Geographic
+If you love this image as much as we do, you can download it for free and use it as your desktop or mobile wallpaper. Simply click the download button below and save the image to your device.
 
-National Geographic has a wealth of information about butterflies, including stunning photos and videos. Check out their website to learn more:
+[Download Wallpaper](link-to-download)
 
-[National Geographic](#natgeo)
+## Our Mission
 
-### The Butterfly Website
+At Butterfly on a Flower, we are passionate about showcasing the beauty of nature through photography. We believe that by sharing these images, we can inspire others to appreciate and protect the natural world around us.
 
-The Butterfly Website is a comprehensive resource for all things butterfly-related. From identification guides to conservation tips, this website has it all:
+## Get in Touch
 
-[The Butterfly Website](#website)
+If you have any questions or comments, we would love to hear from you. Please feel free to contact us through our website or social media channels. Thank you for visiting Butterfly on a Flower!
 
-### Contact
 
-If you have any questions or feedback about our butterfly garden wallpaper, please feel free to contact us:
+---
 
--   Email: info@butterflywallpaper.com
--   Phone: 555-1234
--   Address: 123 Main St, Anytown USA
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Playfair Display
+- Roboto
+- Inter
+- Raleway
+- Lato
+- Poppins
+- Great Vibes
+- IBM Plex Sans
+- Barlow Condensed
+- Futura
+- Montserrat
+- Dancing Script
+- Orbitron
+- Lobster
+- Exo 2
+- Alegreya
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

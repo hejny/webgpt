@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Fairyland - A Magical World of Fantasy
+# Fairyland: A Fantasy World
 
 Welcome to Fairyland, a place where dreams come true and magic is real. Immerse yourself in the enchanting world of fairies and let your imagination run wild.
 

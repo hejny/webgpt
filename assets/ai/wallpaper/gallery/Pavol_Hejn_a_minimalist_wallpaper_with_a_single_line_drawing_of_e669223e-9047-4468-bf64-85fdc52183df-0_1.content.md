@@ -1,58 +1,113 @@
+<!--font:Poppins-->
+
+# Futuristic Cyborg Art
+
+Welcome to our collection of minimalist artwork featuring single line drawings of cyborgs. Our art is designed to add a touch of futuristic style to your home or office decor.
+
+## About this Artwork
+
+This particular piece features a striking single line drawing of a cyborg in a bold and eye-catching color, such as bright red or blue. The minimalistic design is perfect for those who appreciate simplicity and modernity.
+
+## How to Purchase
+
+To purchase this artwork, simply click the "Buy Now" button below and select your preferred size and medium. We offer a variety of options to fit your space and style needs.
+
+## Other Artworks
+
+If you're looking for more cyborg-themed art, be sure to check out our other designs. We have a variety of styles and colors to choose from, so you're sure to find one that suits your taste.
+
+Thank you for visiting our site and we hope you enjoy our collection of futuristic cyborg art!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
 
-<!--font:Montserrat-->
+---
 
-# "Cyborg Dreams" - A Minimalist Wallpaper for Your Futuristic Fantasy
 
-Welcome to "Cyborg Dreams," a collection of minimalist wallpapers that will take you on a journey to the future. Our wallpapers are designed to inspire and ignite your imagination, and our latest addition is no exception.
+# Cyborg Wallpapers
 
-## The Wallpaper
+Welcome to our collection of minimalist wallpapers featuring single line drawings of cyborgs. Our wallpapers are designed to add a touch of futuristic style to your desktop or mobile device.
 
-Our newest wallpaper features a single line drawing of a cyborg in a striking color such as bright red or blue. This wallpaper is perfect for those who love futuristic designs and want to add a touch of minimalism to their desktop or mobile device.
+## About this Wallpaper
 
-The cyborg in the wallpaper is depicted with precision and simplicity, capturing the essence of what it means to be a cyborg. The bright colors used in the design make the wallpaper stand out, giving your device a unique and eye-catching look.
-
-## User Stories
-
-Our wallpapers have been used by people all over the world, from students to professionals, artists to engineers. Here are some stories from our users:
-
-> "I've been using 'Cyborg Dreams' as my desktop wallpaper for the past month, and it has really helped me stay focused and motivated. Every time I look at it, I'm reminded of the future and all the possibilities it holds." - Sarah, student
-
-> "As an engineer, I'm always looking for inspiration for my next project. 'Cyborg Dreams' has been a great source of inspiration for me, and it's also a great conversation starter when I'm meeting with clients." - John, engineer
+This particular wallpaper features a striking single line drawing of a cyborg in a bold and eye-catching color, such as bright red or blue. The minimalistic design is perfect for those who appreciate simplicity and modernity.
 
 ## How to Download
 
-Downloading our wallpapers is easy. Simply click on the link below to download the wallpaper in the size that best fits your device:
+To download this wallpaper, simply click the "Download" button below and save the image to your device. We offer a variety of sizes to fit your screen resolution needs.
 
--   [Download "Cyborg Dreams" wallpaper](#)
+## Other Wallpapers
 
-## References
+If you're looking for more cyborg-themed wallpapers, be sure to check out our other designs. We have a variety of styles and colors to choose from, so you're sure to find one that suits your taste.
 
-We take pride in creating high-quality wallpapers that are not only visually appealing but also thought-provoking. Here are some references we used when designing "Cyborg Dreams":
+Thank you for visiting our site and we hope you enjoy our collection of cyborg wallpapers!
 
--   [Cyborgs in popular culture](#)
--   [Minimalist design principles](#)
--   [Color psychology](#)
 
-## Contact Us
+---
 
-If you have any questions or comments about our wallpapers, please don't hesitate to contact us. We love hearing from our users and are always looking for ways to improve our products.
 
--   Email: [contact@cyborgdreams.com](mailto:contact@cyborgdreams.com)
--   Twitter: [@CyborgDreams](#)
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Futuristic Cyborg Art
+
+Welcome to our collection of minimalist artwork featuring single line drawings of cyborgs. Our art is designed to add a touch of futuristic style to your home or office decor.
+
+## About this Artwork
+
+This particular piece features a striking single line drawing of a cyborg in a bold and eye-catching color, such as bright red or blue. The minimalistic design is perfect for those who appreciate simplicity and modernity.
+
+## How to Purchase
+
+To purchase this artwork, simply click the "Buy Now" button below and select your preferred size and medium. We offer a variety of options to fit your space and style needs.
+
+## Other Artworks
+
+If you're looking for more cyborg-themed art, be sure to check out our other designs. We have a variety of styles and colors to choose from, so you're sure to find one that suits your taste.
+
+Thank you for visiting our site and we hope you enjoy our collection of futuristic cyborg art!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Roboto
+- Great Vibes
+- IBM Plex Sans
+- Lato
+- Lobster
+- Orbitron
+- Poppins
+- Playfair Display
+- Montserrat
+- Exo 2
+- Dancing Script
+- Raleway
+- Alegreya
+- Inter
+- Futura
+- Barlow Condensed
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

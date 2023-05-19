@@ -1,17 +1,74 @@
+<!--font:Montserrat-->
+
+# Urban Living at its Finest
+
+Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life. 
+
+## City Buildings Wallpaper
+
+To add some flair to your desktop or phone background, we've included a colorful graphic of a row of city buildings. This wallpaper captures the energy and excitement of urban living, and is perfect for anyone who loves the city. Download it now and show off your love for urban living! 
+
+[Download Wallpaper](insert-link-here)
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A colorful graphic of a row of city buildings for an urban or city living website"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
--->
 
-<!--font:Poppins-->
+
+---
+
 
 # Urban Living at its Finest
 
-Welcome to our urban living website where we showcase the best of city living. Our vibrant community is filled with diverse cultures, exciting events, and endless opportunities. 
+Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life. 
 
-To capture the essence of our city, we have chosen a colorful graphic of a row of city buildings as our wallpaper. This stunning image represents the bustling energy and vibrant atmosphere that our city has to offer.
+## City Buildings Wallpaper
 
-Whether you're looking for a new home, exploring local hotspots, or simply immersing yourself in the city's culture, our website is the perfect guide for all things urban living. Join us on this exciting journey and discover the beauty of city life.
+To add some flair to your desktop or phone background, we've included a colorful graphic of a row of city buildings. This wallpaper captures the energy and excitement of urban living, and is perfect for anyone who loves the city. Download it now and show off your love for urban living! 
+
+[Download Wallpaper](insert-link-here)
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Alegreya
+- Barlow Condensed
+- Lobster
+- Futura
+- Cormorant Garamond
+- Open Sans
+- Dancing Script
+- Raleway
+- Great Vibes
+- Inter
+- Poppins
+- Playfair Display
+- Creepster
+- IBM Plex Sans
+- Orbitron
+- Cabin
+- Roboto
+- Cinzel
+- Exo 2
+- Montserrat
+- Cinzel Decorative
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

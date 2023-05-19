@@ -1,19 +1,66 @@
+<!--font:Inter-->
+
+# AI & Ainautes' Zero-G Experiments
+
+Welcome to our website where we showcase the latest advancements in science and technology. Our featured wallpaper depicts Ainautes, the pioneers of space exploration, and their AI companions conducting experiments in a zero-gravity laboratory. The vibrant colors of the chemicals and particles floating around them add to the futuristic feel of this image.
+
+We believe that innovation is key to progress and we strive to bring you the most exciting developments from various fields of study. Join us on this journey as we explore the frontiers of science and push the boundaries of what is possible.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"AInauts and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
+"Ainautes and their AI companions conducting experiments in a zero-gravity laboratory, with colorful chemicals and particles floating all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# "Exploring the Future: Ainautes and their AI Companions Conducting Zero-Gravity Experiments"
+
+Welcome to our website where we showcase the latest advancements in science and technology. Our featured wallpaper depicts Ainautes, the pioneers of space exploration, and their AI companions conducting experiments in a zero-gravity laboratory. The vibrant colors of the chemicals and particles floating around them add to the futuristic feel of this image.
+
+We believe that innovation is key to progress and we strive to bring you the most exciting developments from various fields of study. Join us on this journey as we explore the frontiers of science and push the boundaries of what is possible.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Cabin
+- Lato
+- Montserrat
+- IBM Plex Sans
+- Alegreya
+- Lobster
+- Cormorant Garamond
+- Inter
+- Cinzel
+- Orbitron
+- Barlow Condensed
+- Poppins
+- Open Sans
+- Dancing Script
+- Great Vibes
+- Playfair Display
+- Futura
+- Roboto
+- Cinzel Decorative
+- Raleway
+- Exo 2
+- Creepster
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Inter
+
 -->
-
-<!--font:Montserrat-->
-
-# AInauts: Exploring the Frontiers of AI in Space
-
-Welcome to the world of AInauts, where humans and artificial intelligence work together to push the boundaries of space exploration. Our team of intrepid astronauts and their trusty AI companions are on a mission to conduct groundbreaking experiments in a zero-gravity laboratory.
-
-As you explore our website, you'll discover the incredible technology that powers our missions, the innovative research we're conducting, and the amazing discoveries we've made so far. But first, take a moment to marvel at our stunning wallpaper, which captures the excitement and wonder of life in space.
-
-In this image, you can see our AInauts hard at work, surrounded by colorful chemicals and particles that float weightlessly around them. It's just one snapshot of the incredible work we do every day, as we strive to unlock the secrets of the universe and harness the power of AI to make our dreams of space exploration a reality.
-
-So come along for the ride and join us on our journey into the unknown. Whether you're a space enthusiast, a tech lover, or simply someone who believes in the power of human ingenuity, there's something here for everyone. Let's boldly go where no one has gone before!

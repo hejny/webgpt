@@ -1,39 +1,65 @@
+<!--font:Open Sans-->
+
+# Arctic Wonders
+
+Welcome to Arctic Wonders, a website dedicated to showcasing the beauty and majesty of the Arctic region. Our homepage features a stunning photograph of an iceberg in the Arctic, with its blue and white colors contrasting against a dark sky.
+
+Explore our website to discover more breathtaking images of glaciers, wildlife, and landscapes from this unique and remote part of the world. Learn about the importance of preserving the Arctic ecosystem and the challenges it faces in the modern era.
+
+Join us on a journey to the top of the world and discover the wonders of the Arctic.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A photograph of an iceberg in the Arctic, with the blue and white colors contrasting against a dark sky."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Arctic Wonders
+
+Welcome to Arctic Wonders, a website dedicated to showcasing the beauty and majesty of the Arctic region. Our homepage features a stunning photograph of an iceberg in the Arctic, with its blue and white colors contrasting against a dark sky.
+
+Explore our website to discover more breathtaking images of glaciers, wildlife, and landscapes from this unique and remote part of the world. Learn about the importance of preserving the Arctic ecosystem and the challenges it faces in the modern era.
+
+Join us on a journey to the top of the world and discover the wonders of the Arctic.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Dancing Script
+- Roboto
+- Open Sans
+- Alegreya
+- Lato
+- Barlow Condensed
+- Playfair Display
+- Orbitron
+- Lobster
+- Futura
+- Inter
+- Exo 2
+- Poppins
+- Raleway
+- Montserrat
+- IBM Plex Sans
+- Great Vibes
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Montserrat-->
-
-# Arctic Wallpapers
-
-Welcome to our collection of stunning Arctic wallpapers! Our wallpapers feature breathtaking photographs of the Arctic's natural beauty, including glaciers, icebergs, and wildlife. 
-
-## Iceberg in the Arctic
-
-Our featured wallpaper captures the essence of the Arctic with a photograph of an iceberg in the Arctic. The blue and white colors of the iceberg contrast beautifully against the dark sky, creating a mesmerizing image that will transport you to this incredible part of the world.
-
-> "The Arctic is a magical place, full of wonder and beauty. We hope our wallpapers can bring a piece of that magic into your daily life." - Arctic Wallpapers Team
-
-## How to Download
-
-To download our wallpapers, simply click on the resolution that best fits your device. All of our wallpapers are available in high definition (HD) and are free to download.
-
-- [1920x1080](#1920x1080)
-- [2560x1440](#2560x1440)
-- [3840x2160](#3840x2160)
-
-## Share Your Experience
-
-We would love to see how our wallpapers look on your devices! Share your experience with us by using the hashtag #ArcticWallpapers on social media. 
-
-Thank you for visiting Arctic Wallpapers, we hope you enjoy our collection of beautiful Arctic wallpapers!

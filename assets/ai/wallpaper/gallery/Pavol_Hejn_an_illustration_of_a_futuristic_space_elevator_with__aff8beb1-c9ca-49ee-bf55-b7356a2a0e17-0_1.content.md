@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Future: Space Elevator
+# Future's Space Elevator
 
 Are you ready to take a journey into the future? Look no further than our wallpaper featuring an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
 

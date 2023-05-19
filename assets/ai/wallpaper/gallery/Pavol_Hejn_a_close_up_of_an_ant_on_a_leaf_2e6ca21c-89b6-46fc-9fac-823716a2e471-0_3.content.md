@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Nature's Marvels: A Close-Up of an Ant on a Leaf
+# Nature Close-Up: Ant on Leaf
 
 Welcome to our website showcasing the beauty of nature! Our featured wallpaper is a stunning close-up of an ant on a leaf. 
 

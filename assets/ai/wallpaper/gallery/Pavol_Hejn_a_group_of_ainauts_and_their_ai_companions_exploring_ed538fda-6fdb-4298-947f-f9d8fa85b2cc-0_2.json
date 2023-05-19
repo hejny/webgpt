@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space."
+            "A group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/ed538fda-6fdb-4298-947f-f9d8fa85b2cc/0_2.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "7a572f66-d355-4c2f-9416-9e4ccf72cdcf",
-    "image_paths": [
-        "https://cdn.midjourney.com/ed538fda-6fdb-4298-947f-f9d8fa85b2cc/0_2.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/ed538fda-6fdb-4298-947f-f9d8fa85b2cc/0_2.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105454360407851058",
     "platform_thread_id": null,
-    "prompt": "A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space.",
+    "prompt": "A group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space.  --aspect 3:2 --q 2",
+    "full_command": "A group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space.  --aspect 3:2 --q 2",
     "reference_job_id": "ed538fda-6fdb-4298-947f-f9d8fa85b2cc",
     "reference_image_num": "2"
 }

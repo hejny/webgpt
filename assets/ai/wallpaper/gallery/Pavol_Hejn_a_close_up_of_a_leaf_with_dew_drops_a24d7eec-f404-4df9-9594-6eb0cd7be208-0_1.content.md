@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Nature's Beauty: A Leaf with Dew Drops
+# Dewy Leaf
 
 Welcome to our website dedicated to showcasing the beauty of nature through stunning wallpapers. Our current featured wallpaper is a close-up of a leaf with dew drops, capturing the intricate details and natural wonder of this simple yet breathtaking scene.
 

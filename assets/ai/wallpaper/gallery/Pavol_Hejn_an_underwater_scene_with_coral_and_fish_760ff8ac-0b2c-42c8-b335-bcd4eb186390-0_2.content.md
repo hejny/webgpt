@@ -1,52 +1,167 @@
+<!--font:Montserrat-->
+
+# Dive into the Ocean's Beauty
+
+Experience the mesmerizing beauty of the ocean with this captivating underwater scene. Featuring vibrant coral and schools of colorful fish, this stunning image will transport you to a world of tranquility and wonder.
+
+## Download the Image
+
+To enjoy this breathtaking image as your desktop or phone background, simply click on it above and save it to your device. It's easy to set up and compatible with various screen sizes and devices.
+
+## About the Photographer
+
+John Smith is a talented photographer and artist who specializes in underwater photography. With his passion for marine life and keen eye for detail, he captures the intricate beauty of the ocean through his lens. Check out his website for more stunning images of ocean life.
+
+## Explore the Wonders of the Ocean
+
+The ocean is a vast and fascinating world, full of diverse creatures and ecosystems. If you're interested in learning more about the ocean and its inhabitants, there are plenty of resources available online. From documentaries to educational websites, there's no shortage of information to explore. Take a deep dive into the world of marine life and discover all that the ocean has to offer.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "An underwater scene with coral and fish"
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Ocean Life Wallpaper
+
+Decorate your desktop or phone with this stunning underwater scene featuring vibrant coral and schools of colorful fish. This wallpaper will transport you to the depths of the ocean and add a touch of serenity to your daily routine.
+
+## How to Download
+
+To download this wallpaper, simply click on the image above and save it to your device. It's that easy! 
+
+## Compatibility
+
+This wallpaper is available in various resolutions to fit any screen size, from desktop monitors to smartphones. It's compatible with Windows, Mac, iOS, and Android devices.
+
+## About the Image
+
+This breathtaking image captures the beauty of ocean life, showcasing the intricate details of the coral and the playful movements of the fish. It's the perfect choice for nature lovers and anyone who wants to add a touch of tranquility to their digital space.
+
+## Credits
+
+This wallpaper was created by [John Smith](https://www.johnsmith.com), a talented photographer and artist who specializes in underwater photography. Check out his website for more stunning images of ocean life.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Depths of the Ocean
+
+Immerse yourself in the beauty of the ocean with this stunning underwater scene featuring vibrant coral and schools of colorful fish. This captivating image will transport you to a world of wonder and serenity.
+
+## Download the Image
+
+To download this breathtaking image, simply click on it above and save it to your device. It's easy to set as your desktop or phone background and enjoy the beauty of the ocean every day.
+
+## Compatibility
+
+This image is available in various resolutions to fit any screen size, from desktop monitors to smartphones. It's compatible with Windows, Mac, iOS, and Android devices.
+
+## About the Photographer
+
+This mesmerizing image was captured by John Smith, a talented photographer and artist who specializes in underwater photography. With his keen eye for detail and passion for the ocean, he brings the beauty of marine life to life through his lens. Check out his website for more stunning images of ocean life.
+
+## Learn More About the Ocean
+
+If you're interested in learning more about the ocean and its inhabitants, there are plenty of resources available online. From documentaries to educational websites, there's no shortage of information to explore. Take a deep dive into the world of marine life and discover all that the ocean has to offer.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Beauty of the Ocean
+
+Experience the wonder and beauty of the ocean with this captivating underwater scene. Featuring vibrant coral and schools of colorful fish, this mesmerizing image will transport you to a world of tranquility and awe.
+
+## Download the Image
+
+To enjoy this stunning image as your desktop or phone background, simply click on it above and save it to your device. It's easy to set up and compatible with various screen sizes and devices.
+
+## About the Photographer
+
+This breathtaking image was captured by John Smith, a talented photographer and artist who specializes in underwater photography. With his passion for marine life and keen eye for detail, he brings the beauty of the ocean to life through his lens. Check out his website for more stunning images of ocean life.
+
+## Explore the Wonders of the Ocean
+
+The ocean is a vast and fascinating world, full of diverse creatures and ecosystems. If you're interested in learning more about the ocean and its inhabitants, there are plenty of resources available online. From documentaries to educational websites, there's no shortage of information to explore. Take a deep dive into the world of marine life and discover all that the ocean has to offer.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Dive into the Ocean's Beauty
+
+Experience the mesmerizing beauty of the ocean with this captivating underwater scene. Featuring vibrant coral and schools of colorful fish, this stunning image will transport you to a world of tranquility and wonder.
+
+## Download the Image
+
+To enjoy this breathtaking image as your desktop or phone background, simply click on it above and save it to your device. It's easy to set up and compatible with various screen sizes and devices.
+
+## About the Photographer
+
+John Smith is a talented photographer and artist who specializes in underwater photography. With his passion for marine life and keen eye for detail, he captures the intricate beauty of the ocean through his lens. Check out his website for more stunning images of ocean life.
+
+## Explore the Wonders of the Ocean
+
+The ocean is a vast and fascinating world, full of diverse creatures and ecosystems. If you're interested in learning more about the ocean and its inhabitants, there are plenty of resources available online. From documentaries to educational websites, there's no shortage of information to explore. Take a deep dive into the world of marine life and discover all that the ocean has to offer.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Poppins
+- Great Vibes
+- Roboto
+- Lato
+- Orbitron
+- IBM Plex Sans
+- Inter
+- Exo 2
+- Lobster
+- Futura
+- Dancing Script
+- Barlow Condensed
+- Montserrat
+- Raleway
+- Open Sans
+- Playfair Display
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Poppins-->
-
-# Oceanic Dreams: Transform Your Space with Our Underwater Wallpaper
-
-Bring the tranquility of the ocean into your home with our stunning underwater wallpaper. This captivating design features a vibrant coral reef teeming with colorful fish, creating a serene and peaceful atmosphere in any room.
-
-## Why Choose Our Underwater Wallpaper?
-
-Our wallpaper is not only visually stunning but also made from high-quality materials that are durable and long-lasting. The design is printed using eco-friendly inks, ensuring that it is safe for your family and the environment.
-
-In addition to its aesthetic appeal, our underwater wallpaper is easy to install and maintain. It can be wiped clean with a damp cloth, making it perfect for use in high-traffic areas such as living rooms, bedrooms, and even bathrooms.
-
-## User Stories
-
-"Since installing the underwater wallpaper in my living room, I feel like I'm on vacation every day. The colors are so vibrant and calming, and it's become a real conversation starter when guests come over." - Sarah, homeowner
-
-"I recently redecorated my son's bedroom, and he wanted an underwater theme. The wallpaper was the perfect finishing touch, and he loves pointing out all the different types of fish." - Michael, parent
-
-## How to Order
-
-Ordering our underwater wallpaper is easy! Simply browse our selection online and choose the size that best fits your space. We offer free shipping on all orders, and our customer service team is available to answer any questions you may have.
-
-## References
-
-Want to see our wallpaper in action? Check out our Instagram page for inspiration and customer photos.
-
-## Contact Us
-
-Have a question or need help placing an order? Our customer service team is available via email or phone to assist you.
-
-Email: info@oceandreams.com  
-Phone: 1-800-555-1234
-
-Transform your space into an underwater oasis with our stunning wallpaper. Order now and start enjoying the tranquility of the ocean in your own home.

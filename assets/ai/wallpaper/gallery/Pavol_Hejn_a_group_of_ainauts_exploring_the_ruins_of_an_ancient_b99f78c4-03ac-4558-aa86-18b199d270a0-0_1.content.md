@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
+"A group of Ainautes exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of a Lost Civilization
+# Lost Civilization Mysteries Explored.
 
-Welcome to our website dedicated to the exploration of ancient civilizations on distant planets. Our team of AInauts travels to the far reaches of the galaxy in search of lost artifacts, forgotten knowledge, and the secrets of civilizations long gone.
+Welcome to our website dedicated to the exploration of ancient civilizations on distant planets. Our team of Ainautes travels to the far reaches of the galaxy in search of lost artifacts, forgotten knowledge, and the secrets of civilizations long gone.
 
 ## Our Mission
 
@@ -28,7 +28,7 @@ Our mission is to uncover the mysteries of ancient civilizations and share our f
 
 ## The Ruins of an Ancient Civilization
 
-Our wallpaper depicts a group of AInauts exploring the ruins of an ancient civilization on a distant planet. Towering statues and temples surround them, hinting at the grandeur of a civilization that once flourished here.
+Our wallpaper depicts a group of Ainautes exploring the ruins of an ancient civilization on a distant planet. Towering statues and temples surround them, hinting at the grandeur of a civilization that once flourished here.
 
 As we explore these ruins, we are struck by the sophistication of the technology and the artistry of the architecture. We wonder what happened to this civilization and why it disappeared. Was it a natural disaster, war, or something else entirely?
 

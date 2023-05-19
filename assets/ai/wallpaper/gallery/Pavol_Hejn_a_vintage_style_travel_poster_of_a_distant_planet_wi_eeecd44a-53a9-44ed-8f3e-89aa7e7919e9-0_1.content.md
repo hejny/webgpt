@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Explore the Wonders of Our Universe with Vintage-Style Travel Posters
+# Vintage Space Posters
 
 Welcome to our collection of vintage-style travel posters featuring distant planets and other celestial wonders! Our posters are designed with bold typography and artistic renderings of landscapes that will transport you to another world. Whether you're a space enthusiast or just looking for unique wall decor, our posters are sure to inspire wonder and curiosity.
 

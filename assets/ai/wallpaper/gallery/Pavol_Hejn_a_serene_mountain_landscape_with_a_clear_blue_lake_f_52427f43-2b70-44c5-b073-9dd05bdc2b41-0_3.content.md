@@ -12,9 +12,9 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The font that best fits the serene mountain landscape with a clear blue lake for a meditation or wellness website is Montserrat.-->
+<!--font:Montserrat-->
 
-# Serene Mountain Landscape for Meditation and Wellness
+# Meditative Mountain Scene
 
 Welcome to our meditation and wellness website, where we offer a serene mountain landscape with a clear blue lake as the perfect wallpaper to help you relax and find inner peace.
 

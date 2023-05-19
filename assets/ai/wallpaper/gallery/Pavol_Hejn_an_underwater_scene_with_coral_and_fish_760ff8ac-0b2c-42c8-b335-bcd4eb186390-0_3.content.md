@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# "Oceanic Wonders" - An Underwater Scene with Coral and Fish
+# Underwater Reef Scene
 
 Welcome to our website featuring a stunning underwater scene with vibrant coral and schools of fish. Immerse yourself in the beauty of the ocean and explore the wonders that lie beneath the surface.
 

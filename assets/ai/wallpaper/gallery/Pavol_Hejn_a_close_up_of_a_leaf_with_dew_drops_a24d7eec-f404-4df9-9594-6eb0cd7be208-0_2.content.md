@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Nature's Beauty: A Close-Up of a Leaf with Dew Drops
+# Dewy Leaf Close-Up.
 
 Welcome to our website, where we celebrate the beauty of nature through stunning wallpapers. Our current featured wallpaper is a close-up of a leaf with dew drops that captures the intricate details and natural elegance of this simple yet captivating subject.
 

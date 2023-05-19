@@ -1,19 +1,70 @@
-<!--
-Write me markdown content of website with wallpaper:
-
-"A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds."
-
-The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
--->
-
 <!--font:Montserrat-->
 
-# AI-Powered Spacecraft: Exploring the Final Frontier
+# Ainautes: Space Travel
 
-Welcome to our website dedicated to showcasing the latest advancements in space exploration technology. Our current focus is on a futuristic spacecraft crewed entirely by AInauts, capable of traveling at incredible speeds through the vast expanse of space.
+Welcome to our website dedicated to the exploration of the universe. Our team of Ainautes, highly skilled and trained individuals, are on a mission to discover new worlds and unlock the mysteries of the cosmos.
 
-Our team of experts has been working tirelessly to develop this groundbreaking technology, and we are excited to share our progress with you. From the design and construction of the spacecraft to the development of its advanced artificial intelligence systems, we are pushing the boundaries of what is possible in space exploration.
+As you browse through our site, you'll find fascinating articles about our latest discoveries, stunning images of distant galaxies and nebulae, and updates on our current mission. But before you delve into the depths of space with us, take a moment to appreciate the beauty of our futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds.
 
-As you browse our site, you'll find detailed information about the technology behind our spacecraft, as well as updates on our latest missions and discoveries. We invite you to join us on this exciting journey as we explore the final frontier with our AI-powered spacecraft.
+This stunning wallpaper captures the essence of our mission and the spirit of adventure that drives us forward. So sit back, relax, and let your imagination soar as you explore the wonders of the universe with us.
 
-And don't forget to download our stunning wallpaper featuring our spacecraft hurtling through space at incredible speeds! It's the perfect way to show your support for our mission and stay inspired as we continue to push the limits of space exploration.
+<!--
+
+Write me markdown content of website with wallpaper:
+
+"A futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds."
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Ainautes: Exploring the Universe
+
+Welcome to our website dedicated to the exploration of the universe. Our team of Ainautes, highly skilled and trained individuals, are on a mission to discover new worlds and unlock the mysteries of the cosmos.
+
+As you browse through our site, you'll find fascinating articles about our latest discoveries, stunning images of distant galaxies and nebulae, and updates on our current mission. But before you delve into the depths of space with us, take a moment to appreciate the beauty of our futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds.
+
+This stunning wallpaper captures the essence of our mission and the spirit of adventure that drives us forward. So sit back, relax, and let your imagination soar as you explore the wonders of the universe with us.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Inter
+- Cabin
+- Lato
+- Orbitron
+- Futura
+- Barlow Condensed
+- Lobster
+- Roboto
+- Open Sans
+- Exo 2
+- Alegreya
+- Raleway
+- Playfair Display
+- Creepster
+- Poppins
+- Dancing Script
+- Montserrat
+- Great Vibes
+- IBM Plex Sans
+- Cinzel Decorative
+- Cormorant Garamond
+- Cinzel
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

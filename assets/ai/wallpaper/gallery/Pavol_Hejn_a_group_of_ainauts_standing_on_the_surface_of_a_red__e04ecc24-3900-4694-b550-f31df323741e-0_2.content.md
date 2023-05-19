@@ -1,20 +1,20 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance."
+"A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 -->
 
 <!--font:Montserrat-->
 
-# AInauts: Exploring the Unknown
+# Ainautes: Into the Unknown
 
-Welcome to AInauts, where we push the boundaries of exploration using cutting-edge AI technology. Our team of experts is dedicated to uncovering the mysteries of the universe, one planet at a time.
+Welcome to Ainautes, where we push the boundaries of exploration using cutting-edge AI technology. Our team of experts is dedicated to uncovering the mysteries of the universe, one planet at a time.
 
 ## Red Planet Expedition
 
-Our latest mission has taken us to the surface of a red planet, where our team of AInauts are braving towering dust storms to conduct groundbreaking research. This stunning wallpaper captures the awe-inspiring landscape and the determination of our team as they explore the unknown.
+Our latest mission has taken us to the surface of a red planet, where our team of Ainautes are braving towering dust storms to conduct groundbreaking research. This stunning wallpaper captures the awe-inspiring landscape and the determination of our team as they explore the unknown.
 
 ## Join the Journey
 

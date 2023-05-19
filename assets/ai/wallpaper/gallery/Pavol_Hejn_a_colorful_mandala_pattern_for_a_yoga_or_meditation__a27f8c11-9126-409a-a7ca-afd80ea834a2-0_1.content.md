@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Meditation and Mindfulness with Mandala Patterns
+# Mindful Mandala Meditation.
 
 Welcome to our online meditation and mindfulness community, where we believe that inner peace can be achieved through the power of mandala patterns. Our website offers a variety of resources and tools to help you cultivate a daily meditation practice and find a deeper connection with yourself.
 

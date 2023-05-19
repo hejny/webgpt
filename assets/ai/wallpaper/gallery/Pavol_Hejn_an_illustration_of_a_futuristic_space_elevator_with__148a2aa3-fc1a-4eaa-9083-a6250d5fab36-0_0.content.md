@@ -1,17 +1,70 @@
+<!--font:Montserrat-->
+
+# Future Space Travel
+
+Experience the ultimate in space travel with our futuristic space elevator wallpaper. This stunning illustration depicts a cable stretching from Earth into orbit, offering a glimpse of what could be possible in the not-too-distant future.
+
+Whether you're a space enthusiast or simply looking for a unique and eye-catching wallpaper for your desktop or mobile device, this image is sure to impress. With its sleek design and attention to detail, it's the perfect way to add a touch of sci-fi style to your digital life.
+
+So why wait? Download our space elevator wallpaper today and take your desktop to new heights!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "An illustration of a futuristic space elevator, with a cable stretching from Earth into orbit."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to the Future of Space Travel
+
+Experience the ultimate in space travel with our futuristic space elevator wallpaper. This stunning illustration depicts a cable stretching from Earth into orbit, offering a glimpse of what could be possible in the not-too-distant future.
+
+Whether you're a space enthusiast or simply looking for a unique and eye-catching wallpaper for your desktop or mobile device, this image is sure to impress. With its sleek design and attention to detail, it's the perfect way to add a touch of sci-fi style to your digital life.
+
+So why wait? Download our space elevator wallpaper today and take your desktop to new heights!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Dancing Script
+- Great Vibes
+- Cormorant Garamond
+- Futura
+- Cabin
+- Playfair Display
+- Creepster
+- Inter
+- Lobster
+- Open Sans
+- Cinzel
+- Roboto
+- Alegreya
+- Poppins
+- Cinzel Decorative
+- IBM Plex Sans
+- Orbitron
+- Barlow Condensed
+- Raleway
+- Montserrat
+- Exo 2
+- Lato
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Montserrat-->
-
-# Space Elevator: A Gateway to the Stars
-
-Welcome to our website dedicated to exploring the possibilities of space travel through the concept of a space elevator. Our wallpaper features an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit.
-
-A space elevator is a proposed type of transportation system that could revolutionize space travel. It involves a cable or ribbon extending from the surface of the Earth into space, with a counterweight at the end to keep it taut. The idea is that spacecraft could climb up and down the cable using mechanical means, rather than relying on rockets.
-
-On this site, we delve into the science behind space elevators, their potential benefits and challenges, and the latest developments in the field. Join us as we explore the exciting frontier of space travel made possible by the space elevator.

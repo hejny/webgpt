@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
+"A group of Ainautes exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,11 +14,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the World of AInauts!
+# Ainautes Welcome!
 
 ## Explore the Mysteries of a Distant Planet
 
-Are you ready for an adventure of a lifetime? Join our team of AInauts as we journey through the ruins of an ancient civilization on a far-off planet. 
+Are you ready for an adventure of a lifetime? Join our team of Ainautes as we journey through the ruins of an ancient civilization on a far-off planet.
 
 ## Discover Towering Statues and Temples
 
@@ -28,7 +28,7 @@ As we explore this mysterious world, towering statues and temples surround us at
 
 ## Experience the Power of AI
 
-Our team of AInauts is equipped with the latest AI technology, allowing us to navigate through treacherous terrain and decipher ancient languages. With the power of AI, nothing can stand in our way.
+Our team of Ainautes is equipped with the latest AI technology, allowing us to navigate through treacherous terrain and decipher ancient languages. With the power of AI, nothing can stand in our way.
 
 ## Join Us on Our Journey
 

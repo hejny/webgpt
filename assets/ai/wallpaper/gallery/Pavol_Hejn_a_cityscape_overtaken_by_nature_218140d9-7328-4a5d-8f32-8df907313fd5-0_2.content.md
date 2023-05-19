@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Urban Jungle: A Cityscape Overtaken by Nature
+# Nature conquers city
 
 Welcome to Urban Jungle, a website dedicated to showcasing the beauty of nature as it takes over urban landscapes. Our featured wallpaper for this page depicts a stunning cityscape that has been overtaken by lush greenery, reminding us of the power and resilience of nature.
 

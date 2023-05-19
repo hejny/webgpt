@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Future of Technology and Innovation!
+# Welcome to Future Tech!
 
 Are you ready to step into a world where holographic advertisements light up the cityscape, showcasing the latest and greatest in tech? Look no further than our website, where we bring you the cutting-edge advancements that will shape the future.
 

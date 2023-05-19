@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our Whimsical Tea Party!
+# Whimsical Tea Party Welcome!
 
 Step into a world of fantasy and fun with our delightful wallpaper featuring anthropomorphic animals enjoying a whimsical tea party. This charming design is perfect for adding a touch of whimsy to any room in your home.
 

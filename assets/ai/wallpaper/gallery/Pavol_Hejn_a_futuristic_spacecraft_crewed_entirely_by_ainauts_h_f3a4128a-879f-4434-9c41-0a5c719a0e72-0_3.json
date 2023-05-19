@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds."
+            "A futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/f3a4128a-879f-4434-9c41-0a5c719a0e72/0_3.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "ed7efdc5-12a8-437f-9227-7585ecd528b0",
-    "image_paths": [
-        "https://cdn.midjourney.com/f3a4128a-879f-4434-9c41-0a5c719a0e72/0_3.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/f3a4128a-879f-4434-9c41-0a5c719a0e72/0_3.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105443140674007090",
     "platform_thread_id": null,
-    "prompt": "A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.",
+    "prompt": "A futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic spacecraft crewed entirely by AInauts, hurtling through space at incredible speeds.  --aspect 3:2 --q 2",
+    "full_command": "A futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds.  --aspect 3:2 --q 2",
     "reference_job_id": "f3a4128a-879f-4434-9c41-0a5c719a0e72",
     "reference_image_num": "3"
 }

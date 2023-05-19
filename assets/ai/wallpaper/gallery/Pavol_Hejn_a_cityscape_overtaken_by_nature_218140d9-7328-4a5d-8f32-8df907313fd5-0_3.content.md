@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Urban Jungle: A Cityscape Overtaken by Nature
+# Nature reclaims cityscape
 
 Welcome to Urban Jungle, where we celebrate the beauty of nature reclaiming urban spaces. Our website is dedicated to showcasing stunning images of cities around the world that have been transformed by the power of nature.
 

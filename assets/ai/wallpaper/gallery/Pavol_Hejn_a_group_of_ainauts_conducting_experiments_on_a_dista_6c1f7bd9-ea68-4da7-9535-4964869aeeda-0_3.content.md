@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
+"A group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AInauts Conducting Experiments on a Distant Moon
+# AI experiments on remote moon
 
-Welcome to our website featuring an incredible wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background. This stunning image captures the spirit of exploration and innovation that drives us forward.
+Welcome to our website featuring an incredible wallpaper of a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background. This stunning image captures the spirit of exploration and innovation that drives us forward.
 
 ## About Us
 
@@ -30,7 +30,7 @@ Our mission is to push the boundaries of AI and unlock its full potential. We be
 
 At our core, we believe in collaboration and open communication. We work closely with other researchers and organizations to share knowledge and advance the field as a whole. By fostering a culture of creativity and innovation, we are able to tackle some of the most complex challenges facing humanity today.
 
-> "The universe is full of possibilities, and we are here to explore them." - AInauts Team
+> "The universe is full of possibilities, and we are here to explore them." - Ainautes Team
 
 ## Join Us
 

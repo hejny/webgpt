@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Welcome to Our Real Estate Website
+# Real Estate Website Welcome
 
 We specialize in providing top-notch real estate services to our clients. Our team of experts is dedicated to helping you find your dream home or investment property.
 

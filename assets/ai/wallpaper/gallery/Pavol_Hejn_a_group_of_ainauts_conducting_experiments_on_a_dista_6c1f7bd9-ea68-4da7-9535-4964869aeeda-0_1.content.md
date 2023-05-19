@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background."
+"A group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# AI Experiments on a Distant Moon
+# AI on Distant Moon
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant moon, with a massive gas giant looming in the background.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes conducting experiments on a distant moon, with a massive gas giant looming in the background.
 
 ## About the Wallpaper
 
-The wallpaper depicts a scene from a distant moon where a team of AInauts are performing experiments in an alien environment. The massive gas giant in the background adds to the awe-inspiring view of this extraterrestrial world.
+The wallpaper depicts a scene from a distant moon where a team of Ainautes are performing experiments in an alien environment. The massive gas giant in the background adds to the awe-inspiring view of this extraterrestrial world.
 
 ## Our Mission
 

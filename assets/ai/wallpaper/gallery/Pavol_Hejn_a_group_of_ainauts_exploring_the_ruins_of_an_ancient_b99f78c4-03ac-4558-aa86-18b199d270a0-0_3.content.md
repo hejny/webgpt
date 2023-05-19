@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
+"A group of Ainautes exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The Montserrat font would be a great fit for this website.-->
+<!--font:Montserrat-->
 
-# Exploring the Mysteries of a Distant Planet
+# Mystery of Distant Planet
 
-Welcome to our website dedicated to uncovering the secrets of an ancient civilization on a distant planet. Our team of AInauts has been tirelessly exploring the ruins of this long-lost culture, and we invite you to join us on our journey.
+Welcome to our website dedicated to uncovering the secrets of an ancient civilization on a distant planet. Our team of Ainautes has been tirelessly exploring the ruins of this long-lost culture, and we invite you to join us on our journey.
 
 ## About Us
 

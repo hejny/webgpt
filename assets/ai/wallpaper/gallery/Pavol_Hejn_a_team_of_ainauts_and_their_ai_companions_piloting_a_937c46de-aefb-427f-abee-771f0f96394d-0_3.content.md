@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
+"A team of Ainautes and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Cosmos: A Journey Through the Stars
+# Cosmic Journey: Stars
 
 Welcome to our website dedicated to all things space! Our passion for exploring the cosmos has led us on a journey through the stars, and we want to share that journey with you. As you navigate through our site, you'll find information about the latest space missions, stunning images of galaxies and nebulae, and stories from people who have been inspired by the wonders of the universe.
 
@@ -28,7 +28,7 @@ Our mission is to inspire curiosity and wonder about the universe we live in. We
 
 ## The Wallpaper
 
-Our stunning wallpaper features a team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them. This image captures the spirit of our mission - to explore the cosmos and discover new wonders in the universe.
+Our stunning wallpaper features a team of Ainautes and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them. This image captures the spirit of our mission - to explore the cosmos and discover new wonders in the universe.
 
 ## User Stories
 

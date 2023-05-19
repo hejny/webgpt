@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies."
+"A team of Ainautes and their AI companions racing across the surface of a desert planet in high-tech buggies."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,13 +18,13 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Welcome to AI Racing: The Ultimate Adventure!
+# AI Racing Adventure!
 
-Are you ready for the ride of your life? Join us on an epic journey across the galaxy as we race through some of the most challenging terrains in the universe. Our team of AInauts and their AI companions are ready to take on any challenge, from scorching deserts to icy tundras.
+Are you ready for the ride of your life? Join us on an epic journey across the galaxy as we race through some of the most challenging terrains in the universe. Our team of Ainautes and their AI companions are ready to take on any challenge, from scorching deserts to icy tundras.
 
 ## About Us
 
-At AI Racing, we believe that adventure is out there waiting for us. That's why we've dedicated ourselves to exploring the far reaches of the galaxy and pushing the limits of what's possible. Our team of expert AInauts has years of experience navigating treacherous terrain, and our cutting-edge AI technology ensures that we're always one step ahead of the competition.
+At AI Racing, we believe that adventure is out there waiting for us. That's why we've dedicated ourselves to exploring the far reaches of the galaxy and pushing the limits of what's possible. Our team of expert Ainautes has years of experience navigating treacherous terrain, and our cutting-edge AI technology ensures that we're always one step ahead of the competition.
 
 ## Our Races
 
@@ -42,9 +42,9 @@ Don't just take our word for it - hear from some of our satisfied customers:
 
 Ready to join the adventure? Contact us today to learn more about our upcoming races and how you can get involved. You can reach us at:
 
-- Phone: 555-1234
-- Email: info@airacing.com
-- Twitter: @AI_Racing
+-   Phone: 555-1234
+-   Email: info@airacing.com
+-   Twitter: @AI_Racing
 
 ## References
 

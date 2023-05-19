@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
+"A group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,15 +14,15 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Exploring the Unknown
+# Ainautes: Into the Unknown
 
-Welcome to our website dedicated to the adventures of AInauts - a team of intrepid explorers who travel to distant planets in search of new discoveries. Join us on our latest mission as we venture deep into an underground cavern, filled with glowing fungi and strange creatures.
+Welcome to our website dedicated to the adventures of Ainautes - a team of intrepid explorers who travel to distant planets in search of new discoveries. Join us on our latest mission as we venture deep into an underground cavern, filled with glowing fungi and strange creatures.
 
 ## The Journey Begins
 
 Our journey begins as we descend into the depths of a mysterious planet, guided by our trusty AI companion. The air grows colder and the darkness becomes more oppressive as we make our way deeper into the cavern.
 
-> "The unknown always holds the potential for great discovery." - AInauts motto
+> "The unknown always holds the potential for great discovery." - Ainautes motto
 
 ## Discoveries Await
 
@@ -32,7 +32,7 @@ As we explore the cavern, we come across a variety of strange and wondrous sight
 
 Of course, no exploration is without its challenges. We encounter treacherous terrain and unexpected obstacles at every turn. But with our advanced technology and unwavering determination, we press on.
 
-> "The greatest challenges often lead to the greatest rewards." - AInauts motto
+> "The greatest challenges often lead to the greatest rewards." - Ainautes motto
 
 ## Join Us on Our Journey
 

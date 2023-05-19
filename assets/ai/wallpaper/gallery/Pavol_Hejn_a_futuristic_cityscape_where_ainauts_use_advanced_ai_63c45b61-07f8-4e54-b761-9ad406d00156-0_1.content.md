@@ -1,47 +1,119 @@
+<!--font:Montserrat-->
+
+# Futuristic Ainauts City
+
+Step into a world where advanced AI technology and human ingenuity combine to create a futuristic cityscape unlike any other. Our city is constantly monitored and maintained by Ainauts, highly skilled individuals who use their expertise to ensure that everything runs smoothly.
+
+Explore our city and discover the innovative infrastructure and systems that make it all possible. From energy-efficient buildings to smart transportation, we've thought of everything to create a truly sustainable urban environment.
+
+Take a piece of this visionary world with you by downloading our stunning wallpaper featuring the Futuristic City of Ainauts. Join us in imagining what the future could be like and let's work together to build it. Welcome to the world of Ainauts.
+
 <!--
-Write me content for website with wallpaper which alt text is:
 
-"A futuristic cityscape where AInauts use advanced AI technology to monitor and maintain the city's infrastructure and systems."
+Write me markdown content of website with wallpaper:
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+"A futuristic cityscape where Ainauts use advanced AI technology to monitor and maintain the city's infrastructure and systems."
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to the City of the Future
+
+Experience a world where AI and humans work together seamlessly to create a sustainable and efficient city. Our futuristic cityscape is monitored and maintained by Ainauts, highly skilled individuals who use advanced AI technology to ensure that everything runs smoothly.
+
+Explore our city and discover the innovative infrastructure and systems that make it all possible. From energy-efficient buildings to smart transportation, we've thought of everything to create a truly sustainable urban environment.
+
+Download our stunning wallpaper featuring the City of the Future and bring a piece of this visionary world to your desktop or mobile device. Join us in imagining what the future could be like and let's build it together.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the City of the Future
+
+Step into a world where humans and AI work in harmony to create a sustainable and efficient city. Our futuristic cityscape is constantly monitored and maintained by Ainauts, highly skilled individuals who use advanced AI technology to ensure that everything runs smoothly.
+
+Explore our city and witness the innovative infrastructure and systems that make it all possible. From energy-efficient buildings to smart transportation, we've thought of everything to create a truly sustainable urban environment.
+
+Take a piece of this visionary world with you by downloading our stunning wallpaper featuring the City of the Future. Join us in imagining what the future could be like and let's work together to build it. Welcome to the City of the Future.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover a Sustainable and Efficient City of the Future
+
+Experience a world where humans and AI work together seamlessly to create a sustainable and efficient city. Our futuristic cityscape is constantly monitored and maintained by Ainauts, highly skilled individuals who use advanced AI technology to ensure that everything runs smoothly.
+
+Explore our city and discover the innovative infrastructure and systems that make it all possible. From energy-efficient buildings to smart transportation, we've thought of everything to create a truly sustainable urban environment.
+
+Bring a piece of this visionary world to your desktop or mobile device by downloading our stunning wallpaper featuring the City of the Future. Join us in imagining what the future could be like and let's work together to build it. Welcome to a sustainable and efficient City of the Future.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Welcome to the Futuristic City of Ainauts
+
+Step into a world where advanced AI technology and human ingenuity combine to create a futuristic cityscape unlike any other. Our city is constantly monitored and maintained by Ainauts, highly skilled individuals who use their expertise to ensure that everything runs smoothly.
+
+Explore our city and discover the innovative infrastructure and systems that make it all possible. From energy-efficient buildings to smart transportation, we've thought of everything to create a truly sustainable urban environment.
+
+Take a piece of this visionary world with you by downloading our stunning wallpaper featuring the Futuristic City of Ainauts. Join us in imagining what the future could be like and let's work together to build it. Welcome to the world of Ainauts.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Exo 2
+- Lato
+- Raleway
+- Open Sans
+- Poppins
+- Orbitron
+- Playfair Display
+- Futura
+- Montserrat
+- Lobster
+- Roboto
+- Great Vibes
+- Inter
+- IBM Plex Sans
+- Alegreya
+- Barlow Condensed
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Inter-->
-
-# AI Cityscape Wallpaper
-
-Welcome to our website featuring the stunning AI cityscape wallpaper. This futuristic image depicts a world where advanced artificial intelligence technology is used to monitor and maintain the city's infrastructure and systems. 
-
-## About Us
-
-We are a team of tech enthusiasts who are passionate about exploring the latest advancements in AI technology. Our goal is to share our knowledge and insights with the wider community, and inspire others to embrace the potential of AI.
-
-## User Stories
-
-Here are some examples of how people have used our AI cityscape wallpaper:
-
-- A tech startup used the wallpaper as the background for their company website, to showcase their innovative approach to using AI in urban planning.
-- An architecture student used the wallpaper as inspiration for their final project, designing a sustainable city that uses AI to optimize energy usage and reduce waste.
-- A science fiction writer used the wallpaper as a visual reference for their latest novel, which is set in a future world where AI has transformed every aspect of society.
-
-## References
-
-If you're interested in learning more about AI and its applications in urban planning, here are some resources we recommend:
-
-- [AI in Urban Planning: Current Applications and Future Possibilities](#)
-- [Smart Cities: How AI is Transforming Urban Planning](#)
-- [The Role of AI in Sustainable Urban Development](#)
-
-## Contact Us
-
-If you have any questions or feedback about our website or the AI cityscape wallpaper, please don't hesitate to get in touch. You can reach us via email at [contact@aicityscape.com](mailto:contact@aicityscape.com) or follow us on Twitter [@aicityscape](#). We look forward to hearing from you!

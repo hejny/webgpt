@@ -1,4 +1,41 @@
+<!--font:Montserrat-->
+
+# Space Exploration Background
+
+Welcome to our website dedicated to space exploration and the wonders of the universe. Our black and white outline wallpaper of a satellite is the perfect background for anyone interested in the technical components of space travel.
+
+## About Us
+
+Our team of space enthusiasts is passionate about sharing the latest news and discoveries in the field of space exploration. From NASA missions to private space companies, we cover it all. Our goal is to inspire and educate people about the endless possibilities of space.
+
+## User Stories
+
+Here are some stories from our users who have been inspired by our website and our satellite wallpaper:
+
+- "I use this wallpaper as a reminder of the incredible achievements of humanity in space. It motivates me to pursue my own dreams and goals." - John, student
+- "As a space engineer, I appreciate the intricate details of the satellite in this wallpaper. It's a great source of inspiration for my work." - Sarah, engineer
+- "I love looking at this wallpaper when I'm feeling stressed. It reminds me of the vastness of the universe and puts things into perspective." - Emily, artist
+
+## References
+
+For more information about space exploration, check out these resources:
+
+- [NASA](#)
+- [SpaceX](#)
+- [European Space Agency](#)
+
+## Contact Us
+
+If you have any questions or feedback, please don't hesitate to contact us:
+
+- Email: info@spaceexploration.com
+- Phone: 555-1234
+- Twitter: [@spaceexplore](#) 
+
+Thank you for visiting our website and we hope our satellite wallpaper inspires you to explore the wonders of space!
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A black and white outline of a satellite, with intricate details that showcase its technical components and purpose."
@@ -6,56 +43,88 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Poppins-->
-
-# Space Exploration Wallpaper
-
-Decorate your desktop with a stunning black and white outline of a satellite, with intricate details that showcase its technical components and purpose. Our space exploration wallpaper is perfect for anyone who loves astronomy, technology, or simply wants to add a touch of elegance to their computer screen.
-
-## About the Wallpaper
-
-Our space exploration wallpaper features a detailed illustration of a satellite, highlighting its various technical components and purpose. The black and white color scheme gives it a sleek and modern look, making it a great addition to any desktop background.
-
-Whether you're an astronomy enthusiast, a tech-savvy individual, or just someone who appreciates beautiful design, this wallpaper is sure to impress.
-
-## User Stories
-
-Here are some examples of how our space exploration wallpaper can enhance your desktop experience:
-
-- "I work in the aerospace industry and love having a reminder of my passion on my computer screen."
-- "As an astronomy student, I find this wallpaper both inspiring and informative."
-- "I'm always looking for new ways to personalize my desktop, and this wallpaper adds a touch of sophistication."
-
-## How to Download
-
-To download our space exploration wallpaper, simply click the download button below. It's completely free and available in a variety of resolutions to fit your screen size.
-
-[Download](#download)
-
-## References
-
-If you're interested in learning more about space exploration and satellites, here are some resources we recommend:
-
-- [NASA](https://www.nasa.gov/)
-- [Space.com](https://www.space.com/)
-- [European Space Agency](https://www.esa.int/ESA)
-
-## Contact Us
-
-If you have any questions or feedback about our space exploration wallpaper, feel free to reach out to us using the contact form below. We'd love to hear from you!
-
-[Contact Us](#contact)
 
 ---
 
-Thank you for considering our space exploration wallpaper for your desktop background. We hope it inspires you to reach for the stars!
+
+# Space Exploration Background
+
+Welcome to our website dedicated to space exploration and the wonders of the universe. Our black and white outline wallpaper of a satellite is the perfect background for anyone interested in the technical components of space travel.
+
+## About Us
+
+Our team of space enthusiasts is passionate about sharing the latest news and discoveries in the field of space exploration. From NASA missions to private space companies, we cover it all. Our goal is to inspire and educate people about the endless possibilities of space.
+
+## User Stories
+
+Here are some stories from our users who have been inspired by our website and our satellite wallpaper:
+
+- "I use this wallpaper as a reminder of the incredible achievements of humanity in space. It motivates me to pursue my own dreams and goals." - John, student
+- "As a space engineer, I appreciate the intricate details of the satellite in this wallpaper. It's a great source of inspiration for my work." - Sarah, engineer
+- "I love looking at this wallpaper when I'm feeling stressed. It reminds me of the vastness of the universe and puts things into perspective." - Emily, artist
+
+## References
+
+For more information about space exploration, check out these resources:
+
+- [NASA](#)
+- [SpaceX](#)
+- [European Space Agency](#)
+
+## Contact Us
+
+If you have any questions or feedback, please don't hesitate to contact us:
+
+- Email: info@spaceexploration.com
+- Phone: 555-1234
+- Twitter: [@spaceexplore](#) 
+
+Thank you for visiting our website and we hope our satellite wallpaper inspires you to explore the wonders of space!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Orbitron
+- Alegreya
+- IBM Plex Sans
+- Inter
+- Lobster
+- Montserrat
+- Roboto
+- Futura
+- Playfair Display
+- Great Vibes
+- Poppins
+- Exo 2
+- Barlow Condensed
+- Raleway
+- Open Sans
+- Lato
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

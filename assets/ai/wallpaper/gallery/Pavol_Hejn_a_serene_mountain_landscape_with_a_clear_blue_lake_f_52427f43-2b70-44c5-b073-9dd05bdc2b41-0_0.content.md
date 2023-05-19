@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Serenity Now: A Meditation and Wellness Website
+# Serenity Wellness
 
 Welcome to Serenity Now, your go-to destination for all things meditation and wellness. Our mission is to help you find inner peace and tranquility through mindfulness practices and self-care techniques. 
 

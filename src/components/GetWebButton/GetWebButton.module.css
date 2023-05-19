@@ -13,6 +13,7 @@
     backdrop-filter: blur(10px);
     border-radius: 6px;
 
+    /* TODO: !!!! Design with more buttons */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -25,9 +26,7 @@
     transition: none;
 }
 
-.getButton,
-.galleryButton,
-.randomButton {
+.button {
     border: none;
     outline: none;
     text-align: center;
@@ -44,15 +43,7 @@
     */
 }
 
-.galleryButton {
-    flex-grow: 1;
-    /*
-    background-color: rgb(136, 162, 196);
-    color: black !important;
-    */
-}
-
-.randomButton {
+.button {
     flex-grow: 1;
     /*
     background-color: rgb(136, 162, 196);
@@ -67,9 +58,7 @@
         flex-direction: column;
     }
 
-    .getButton,
-    .galleryButton,
-    .randomButton {
+    .button {
         writing-mode: vertical-lr;
         text-orientation: sideways;
         width: 40px;

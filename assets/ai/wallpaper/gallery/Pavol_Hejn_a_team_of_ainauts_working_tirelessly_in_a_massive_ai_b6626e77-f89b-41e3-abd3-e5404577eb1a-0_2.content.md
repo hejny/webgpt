@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
+"A team of Ainautes working tirelessly in a massive AI factory, creating new and innovative technologies for the future."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Welcome to the Future of AI Technology
+# Future of AI Tech Welcome
 
-At our AI factory, we are dedicated to creating new and innovative technologies that will shape the future. Our team of AInauts works tirelessly to develop groundbreaking solutions that will revolutionize industries and change the world.
+At our AI factory, we are dedicated to creating new and innovative technologies that will shape the future. Our team of Ainautes works tirelessly to develop groundbreaking solutions that will revolutionize industries and change the world.
 
 ## About Us
 
@@ -34,10 +34,10 @@ We offer a wide range of services that leverage the power of AI to help business
 
 Some of our core services include:
 
-- **AI Consulting**: We work closely with clients to understand their unique needs and develop customized AI strategies that align with their business objectives.
-- **Software Development**: Our team of developers can create custom software solutions that integrate AI and machine learning algorithms to improve efficiency and accuracy.
-- **Data Analysis**: We use advanced analytics tools to help clients make sense of complex data sets and gain insights that drive informed decision-making.
-- **Automation**: We design and implement automated systems that streamline workflows and reduce costs while improving quality and consistency.
+-   **AI Consulting**: We work closely with clients to understand their unique needs and develop customized AI strategies that align with their business objectives.
+-   **Software Development**: Our team of developers can create custom software solutions that integrate AI and machine learning algorithms to improve efficiency and accuracy.
+-   **Data Analysis**: We use advanced analytics tools to help clients make sense of complex data sets and gain insights that drive informed decision-making.
+-   **Automation**: We design and implement automated systems that streamline workflows and reduce costs while improving quality and consistency.
 
 ## User Stories
 
@@ -51,10 +51,10 @@ Our AI solutions have helped businesses and organizations across a wide range of
 
 We are proud to have worked with some of the most innovative companies in the world. Here are a few of our satisfied clients:
 
-- XYZ Manufacturing
-- ABC Corporation
-- DEF Healthcare
-- GHI Transportation
+-   XYZ Manufacturing
+-   ABC Corporation
+-   DEF Healthcare
+-   GHI Transportation
 
 ## Contact Us
 

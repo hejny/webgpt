@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Cosmic Dreams - Explore the Wonders of the Universe
+# Cosmic Discovery
 
 Welcome to Cosmic Dreams, a website dedicated to showcasing the beauty and wonder of the universe through stunning photographs and artwork. Our mission is to inspire curiosity and awe in our visitors, and to share the incredible mysteries of space with people from all walks of life.
 

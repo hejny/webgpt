@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
+"A group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,11 +14,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Frozen Wasteland
+# Frozen Wasteland Welcome.
 
-## A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them.
+## A group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them.
 
-Are you ready to embark on an adventure to the unknown? Join our team of AInauts as we explore the frozen wasteland of a distant planet. Equipped with state-of-the-art high-tech suits, we'll brave the harsh conditions and discover the secrets hidden within the icy terrain.
+Are you ready to embark on an adventure to the unknown? Join our team of Ainautes as we explore the frozen wasteland of a distant planet. Equipped with state-of-the-art high-tech suits, we'll brave the harsh conditions and discover the secrets hidden within the icy terrain.
 
 ### Our Mission
 
@@ -28,12 +28,12 @@ Our mission is to explore the uncharted territories of this frozen wasteland and
 
 ### The Team
 
-Meet our team of expert AInauts who will lead the expedition:
+Meet our team of expert Ainautes who will lead the expedition:
 
-- Captain Jameson
-- Dr. Rodriguez
-- Engineer Kim
-- Navigator Singh
+-   Captain Jameson
+-   Dr. Rodriguez
+-   Engineer Kim
+-   Navigator Singh
 
 With their combined expertise, we're confident that our mission will be a success.
 
@@ -43,4 +43,4 @@ Our high-tech suits are equipped with the latest AI technology, allowing us to n
 
 ### Join Us
 
-Are you ready to join our team of AInauts and explore the frozen wasteland? Sign up now to receive updates on our mission and be the first to know about any new discoveries. Let's boldly go where no one has gone before!
+Are you ready to join our team of Ainautes and explore the frozen wasteland? Sign up now to receive updates on our mission and be the first to know about any new discoveries. Let's boldly go where no one has gone before!

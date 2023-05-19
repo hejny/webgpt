@@ -1,4 +1,33 @@
+<!--font:Montserrat-->
+
+# Glaciers in Space
+
+Welcome to our website, where we take you on an exciting journey through the universe to explore the unique beauty and characteristics of glaciers found on distant planets. Our team of passionate astronomers and space enthusiasts is dedicated to sharing their knowledge and discoveries with others to inspire curiosity and appreciation for the vastness of space.
+
+## Discover the Beauty of Glaciers in Space
+
+As you browse through our website, you will discover stunning images of glaciers on various planets, including the wallpaper featuring a glacier on a distant planet. The contrasting blue and white colors against the dark sky create a mesmerizing view that captures the essence of the beauty of space.
+
+## Explore the Universe
+
+In addition to exploring glaciers, we offer a wealth of information about other celestial bodies such as stars, galaxies, and black holes. Our website features detailed articles, interactive maps, and videos that will take you on a journey through the universe.
+
+## User Stories
+
+Our users come from all over the world and have different backgrounds and interests. Here are some stories from our community:
+
+> "I never knew that glaciers could exist in space until I stumbled upon this website. Now, I'm fascinated by the unique features of each planet's glaciers." - Maria, Spain
+
+> "The images on this website are breathtaking. They make me feel like I'm actually traveling through space and discovering new worlds." - John, USA
+
+## References and Contact Us
+
+If you want to learn more about glaciers in space, we have compiled a list of references that you may find useful. If you have any questions or feedback, please don't hesitate to contact us. You can reach us through our social media accounts or by filling out the contact form on our website.
+
+Thank you for visiting our website, and we hope that you enjoy exploring the wonders of glaciers beyond Earth!
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky."
@@ -6,65 +35,200 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Poppins-->
 
-# Glacier Planet Wallpaper
+---
 
-Welcome to our website where you can download the stunning Glacier Planet Wallpaper. This wallpaper features a breathtaking photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky. It is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
 
-## Features
+# Discover the Wonders of Glaciers in Space
 
-- High-quality resolution: The Glacier Planet Wallpaper is available in high-resolution format, ensuring that it looks great on any screen size.
-- Free to download: Our wallpaper is completely free to download, so you can enjoy its beauty without spending a penny.
-- Unique design: This wallpaper is one-of-a-kind and will make your device stand out from the crowd.
-- Easy to install: Installing the Glacier Planet Wallpaper is quick and easy, even for those who are not tech-savvy.
+Welcome to our website, where we explore the fascinating world of glaciers beyond our planet. Our mission is to provide you with a comprehensive guide to the unique characteristics and beauty of glaciers found on distant planets.
+
+## About Us
+
+Our team consists of passionate astronomers and space enthusiasts who have dedicated their lives to studying the wonders of the universe. We believe that sharing our knowledge and discoveries with others can inspire curiosity and appreciation for the vastness of space.
+
+## The Beauty of Glaciers in Space
+
+As you browse through our website, you will discover stunning images of glaciers on various planets, including the wallpaper featuring a glacier on a distant planet. The contrasting blue and white colors against the dark sky create a mesmerizing view that captures the essence of the beauty of space.
+
+## Explore the Universe
+
+In addition to exploring glaciers, we also offer a wealth of information about other celestial bodies such as stars, galaxies, and black holes. Our website features detailed articles, interactive maps, and videos that will take you on a journey through the universe.
 
 ## User Stories
 
-Our wallpaper has been downloaded by people all over the world, and here are some of their stories:
+Our users come from all over the world and have different backgrounds and interests. Here are some stories from our community:
 
-> "I love this wallpaper! It's so beautiful and unique. Every time I look at it, I feel like I'm transported to another world." - Emily, 24
+> "I never knew that glaciers could exist in space until I stumbled upon this website. Now, I'm fascinated by the unique features of each planet's glaciers." - Maria, Spain
 
-> "I'm a huge space enthusiast, and this wallpaper is perfect for me. It's like having a little piece of the universe on my computer screen." - John, 35
-
-> "I was looking for a new wallpaper for my phone, and when I saw this one, I knew it was the one. It's so pretty and calming to look at." - Sarah, 19
-
-## How to Download
-
-To download the Glacier Planet Wallpaper, simply click the download button below. The wallpaper will be saved to your device, and you can then set it as your background image. If you have any issues downloading or installing the wallpaper, please refer to our [FAQ](#faq) section or contact us using the details below.
+> "The images on this website are breathtaking. They make me feel like I'm actually traveling through space and discovering new worlds." - John, USA
 
 ## References
 
-If you're interested in learning more about glaciers or space, here are some resources that you might find useful:
+If you want to learn more about glaciers in space, we have compiled a list of references that you may find useful:
 
-- [NASA's Glacier Photographs](https://www.nasa.gov/feature/goddard/nasa-scientists-use-satellites-to-track-glacier-melt-in-greenland)
-- [National Geographic's Guide to Glaciers](https://www.nationalgeographic.org/encyclopedia/glacier/)
-- [Space.com's Guide to Space Exploration](https://www.space.com/space-exploration)
-
-## FAQ
-
-### How do I set the wallpaper as my background image?
-
-To set the Glacier Planet Wallpaper as your background image, simply right-click on the image and select "Set as Background" or "Set as Wallpaper," depending on your device.
-
-### Is the wallpaper compatible with all devices?
-
-Yes, the Glacier Planet Wallpaper is compatible with most desktop and mobile devices. However, if you experience any issues with downloading or installing the wallpaper, please contact us using the details below.
+- "Glaciers on Mars" by Nathaniel E. Putzig and James W. Head III (2011)
+- "Icy Moons, Glaciers, and Ice Sheets" by Jeffrey M. Moore and Paul M. Schenk (2018)
+- "Glaciers Beyond Earth" by Kirsty E. Holtom and Stephen J. Moorbath (2006)
 
 ## Contact Us
 
-If you have any questions or concerns about the Glacier Planet Wallpaper, please don't hesitate to contact us. You can reach us at:
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us through our social media accounts or by filling out the contact form on our website.
 
-Email: info@glacierplanetwallpaper.com
-Phone: +1 (555) 123-4567
-Address: 123 Main Street, Anytown USA
+Thank you for visiting our website, and we hope that you enjoy exploring the wonders of glaciers in space!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# The Wonders of Glaciers in Space
+
+Welcome to our website, where we explore the unique beauty and characteristics of glaciers found on distant planets. Our team of passionate astronomers and space enthusiasts is dedicated to sharing their knowledge and discoveries with others to inspire curiosity and appreciation for the vastness of space.
+
+## Discover the Beauty of Glaciers in Space
+
+As you browse through our website, you will discover stunning images of glaciers on various planets, including the wallpaper featuring a glacier on a distant planet. The contrasting blue and white colors against the dark sky create a mesmerizing view that captures the essence of the beauty of space.
+
+## Explore the Universe
+
+In addition to exploring glaciers, we offer a wealth of information about other celestial bodies such as stars, galaxies, and black holes. Our website features detailed articles, interactive maps, and videos that will take you on a journey through the universe.
+
+## User Stories
+
+Our users come from all over the world and have different backgrounds and interests. Here are some stories from our community:
+
+> "I never knew that glaciers could exist in space until I stumbled upon this website. Now, I'm fascinated by the unique features of each planet's glaciers." - Maria, Spain
+
+> "The images on this website are breathtaking. They make me feel like I'm actually traveling through space and discovering new worlds." - John, USA
+
+## References and Contact Us
+
+If you want to learn more about glaciers in space, we have compiled a list of references that you may find useful. If you have any questions or feedback, please don't hesitate to contact us. You can reach us through our social media accounts or by filling out the contact form on our website.
+
+Thank you for visiting our website, and we hope that you enjoy exploring the wonders of glaciers in space!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Exploring Glaciers Beyond Earth
+
+Welcome to our website, where we take you on a journey through the universe to explore the unique beauty and characteristics of glaciers found on distant planets. Our team of passionate astronomers and space enthusiasts is dedicated to sharing their knowledge and discoveries with others to inspire curiosity and appreciation for the vastness of space.
+
+## Discover the Beauty of Glaciers in Space
+
+As you browse through our website, you will discover stunning images of glaciers on various planets, including the wallpaper featuring a glacier on a distant planet. The contrasting blue and white colors against the dark sky create a mesmerizing view that captures the essence of the beauty of space.
+
+## Explore the Universe
+
+In addition to exploring glaciers, we offer a wealth of information about other celestial bodies such as stars, galaxies, and black holes. Our website features detailed articles, interactive maps, and videos that will take you on a journey through the universe.
+
+## User Stories
+
+Our users come from all over the world and have different backgrounds and interests. Here are some stories from our community:
+
+> "I never knew that glaciers could exist in space until I stumbled upon this website. Now, I'm fascinated by the unique features of each planet's glaciers." - Maria, Spain
+
+> "The images on this website are breathtaking. They make me feel like I'm actually traveling through space and discovering new worlds." - John, USA
+
+## References and Contact Us
+
+If you want to learn more about glaciers in space, we have compiled a list of references that you may find useful. If you have any questions or feedback, please don't hesitate to contact us. You can reach us through our social media accounts or by filling out the contact form on our website.
+
+Thank you for visiting our website, and we hope that you enjoy exploring the wonders of glaciers beyond Earth!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Glaciers Beyond Earth: Exploring the Wonders of Space
+
+Welcome to our website, where we take you on an exciting journey through the universe to explore the unique beauty and characteristics of glaciers found on distant planets. Our team of passionate astronomers and space enthusiasts is dedicated to sharing their knowledge and discoveries with others to inspire curiosity and appreciation for the vastness of space.
+
+## Discover the Beauty of Glaciers in Space
+
+As you browse through our website, you will discover stunning images of glaciers on various planets, including the wallpaper featuring a glacier on a distant planet. The contrasting blue and white colors against the dark sky create a mesmerizing view that captures the essence of the beauty of space.
+
+## Explore the Universe
+
+In addition to exploring glaciers, we offer a wealth of information about other celestial bodies such as stars, galaxies, and black holes. Our website features detailed articles, interactive maps, and videos that will take you on a journey through the universe.
+
+## User Stories
+
+Our users come from all over the world and have different backgrounds and interests. Here are some stories from our community:
+
+> "I never knew that glaciers could exist in space until I stumbled upon this website. Now, I'm fascinated by the unique features of each planet's glaciers." - Maria, Spain
+
+> "The images on this website are breathtaking. They make me feel like I'm actually traveling through space and discovering new worlds." - John, USA
+
+## References and Contact Us
+
+If you want to learn more about glaciers in space, we have compiled a list of references that you may find useful. If you have any questions or feedback, please don't hesitate to contact us. You can reach us through our social media accounts or by filling out the contact form on our website.
+
+Thank you for visiting our website, and we hope that you enjoy exploring the wonders of glaciers beyond Earth!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Dancing Script
+- Playfair Display
+- Great Vibes
+- Orbitron
+- IBM Plex Sans
+- Lobster
+- Alegreya
+- Futura
+- Barlow Condensed
+- Inter
+- Lato
+- Roboto
+- Open Sans
+- Exo 2
+- Raleway
+- Poppins
+- Montserrat
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

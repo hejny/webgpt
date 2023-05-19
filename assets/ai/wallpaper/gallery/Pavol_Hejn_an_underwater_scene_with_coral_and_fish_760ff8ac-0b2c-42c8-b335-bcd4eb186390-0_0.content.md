@@ -1,49 +1,124 @@
+<!--font:Poppins-->
+
+# Enchanting Underwater World
+
+Welcome to Ocean's Wonderland, where you can dive into the captivating world of underwater life. Our stunning background features a vibrant coral reef and schools of colorful fish, creating a dynamic and inspiring atmosphere for your desktop or mobile device.
+
+With our high-resolution image, you can transform your screen into a tranquil escape during a busy workday or add a touch of wonder to your living space. Simply download the image and set it as your background to transport yourself to another world.
+
+We invite you to share your experience with us on social media using the hashtag #OceansWonderland and tag us @oceanswonderland. Let's connect and celebrate the beauty of the ocean together!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "An underwater scene with coral and fish"
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Welcome to the Ocean's Wonderland
+
+Dive into the mesmerizing world of underwater life with our stunning wallpaper featuring a vibrant coral reef and schools of colorful fish. 
+
+## About the Wallpaper
+Our wallpaper captures the beauty and tranquility of an underwater scene, bringing the magic of the ocean right into your home or office. The intricate details of the coral and the diverse species of fish create a captivating and dynamic backdrop that will transport you to another world.
+
+## How to Use the Wallpaper
+To use this wallpaper, simply download the high-resolution image and set it as your desktop or mobile background. Whether you're looking for a calming escape during a busy workday or a peaceful ambiance for your living space, our underwater scene is sure to inspire and delight.
+
+## Share Your Experience
+We would love to see how our wallpaper has transformed your space and added a touch of wonder to your day. Share your experience with us on social media using the hashtag #OceansWonderland and tag us @oceanswonderland. Let's connect and celebrate the beauty of the ocean together!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Ocean's Wonderland Wallpaper
+
+Transform your desktop or mobile background with our mesmerizing wallpaper featuring a vibrant coral reef and schools of colorful fish. Our high-resolution image captures the beauty and tranquility of an underwater scene, bringing the magic of the ocean right into your home or office.
+
+To use this wallpaper, simply download the image and set it as your background. Whether you're looking for a calming escape during a busy workday or a peaceful ambiance for your living space, our underwater scene is sure to inspire and delight.
+
+We would love to see how our wallpaper has transformed your space and added a touch of wonder to your day. Share your experience with us on social media using the hashtag #OceansWonderland and tag us @oceanswonderland. Let's connect and celebrate the beauty of the ocean together!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Ocean's Wonderland: Dive into the Mesmerizing World of Underwater Life
+
+Welcome to Ocean's Wonderland, where you can immerse yourself in the captivating world of underwater life. Our stunning background features a vibrant coral reef and schools of colorful fish, creating a dynamic and inspiring atmosphere for your desktop or mobile device.
+
+With our high-resolution image, you can transform your screen into a tranquil escape during a busy workday or add a touch of wonder to your living space. Simply download the image and set it as your background to transport yourself to another world.
+
+We invite you to share your experience with us on social media using the hashtag #OceansWonderland and tag us @oceanswonderland. Let's connect and celebrate the beauty of the ocean together!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Ocean's Wonderland: Immerse Yourself in the Mesmerizing Underwater World
+
+Welcome to Ocean's Wonderland, where you can dive into the captivating world of underwater life. Our stunning background features a vibrant coral reef and schools of colorful fish, creating a dynamic and inspiring atmosphere for your desktop or mobile device.
+
+With our high-resolution image, you can transform your screen into a tranquil escape during a busy workday or add a touch of wonder to your living space. Simply download the image and set it as your background to transport yourself to another world.
+
+We invite you to share your experience with us on social media using the hashtag #OceansWonderland and tag us @oceanswonderland. Let's connect and celebrate the beauty of the ocean together!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Orbitron
+- Exo 2
+- Montserrat
+- Barlow Condensed
+- Poppins
+- Futura
+- Great Vibes
+- Raleway
+- IBM Plex Sans
+- Lobster
+- Roboto
+- Inter
+- Lato
+- Alegreya
+- Dancing Script
+- Open Sans
+- Playfair Display
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# Oceanic Dreams - Transform Your Space with Our Underwater Wallpaper
-
-Welcome to Oceanic Dreams, where we bring the beauty of the ocean into your home with our stunning underwater wallpaper. Our high-quality wallpaper features an enchanting underwater scene with coral and fish, creating a serene atmosphere in any room.
-
-## Why Choose Our Underwater Wallpaper?
-
-Our wallpaper is not only beautiful but also durable and easy to install. Made from premium materials, it is resistant to fading and tearing, ensuring that it will look great for years to come. Plus, our wallpaper is easy to clean, making it perfect for high-traffic areas like the living room or kitchen.
-
-But what really sets our wallpaper apart is its ability to transform any space into a peaceful oasis. The calming blues and greens of the underwater scene create a sense of tranquility and relaxation, making it the perfect addition to any bedroom or meditation space.
-
-## User Stories
-
-"I was looking for a way to add some color and life to my boring white walls, and the underwater wallpaper from Oceanic Dreams was just what I needed! The colors are so vibrant and the scene is so peaceful, it's like having a window to the ocean in my own home." - Sarah, satisfied customer.
-
-"I recently redecorated my office and wanted to create a space that felt calm and relaxing. The underwater wallpaper from Oceanic Dreams was the perfect choice! It creates a soothing atmosphere that helps me focus and stay productive throughout the day." - John, satisfied customer.
-
-## Installation and Care
-
-Installing our wallpaper is a breeze, thanks to our easy-to-follow instructions and included adhesive. Simply measure your wall, cut the wallpaper to size, and apply the adhesive. And when it's time to clean, simply wipe down with a damp cloth - no special cleaners required!
-
-## References
-
-Don't just take our word for it - check out some of our satisfied customers on [Instagram](#instagram) and [Facebook](#facebook).
-
-## Contact Us
-
-Ready to transform your space with our stunning underwater wallpaper? Contact us today to place your order or learn more about our products. You can reach us via email at info@oceanicdreams.com or by phone at 555-1234.
-
-Thank you for choosing Oceanic Dreams - we can't wait to help you create the home of your dreams!

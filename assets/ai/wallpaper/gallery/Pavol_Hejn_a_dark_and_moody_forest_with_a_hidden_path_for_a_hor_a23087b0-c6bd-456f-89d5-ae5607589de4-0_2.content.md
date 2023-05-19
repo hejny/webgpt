@@ -12,9 +12,9 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:"Creepster" font would be a great fit for the horror and mystery website with a dark and moody forest wallpaper.-->
+<!--font:Creepster-->
 
-# Hidden Path in the Dark Forest
+# Dark Forest's Hidden Path
 
 Welcome to our horror and mystery website, where we take you on a journey through the unknown. Our website is designed to give you an immersive experience that will leave you on the edge of your seat.
 

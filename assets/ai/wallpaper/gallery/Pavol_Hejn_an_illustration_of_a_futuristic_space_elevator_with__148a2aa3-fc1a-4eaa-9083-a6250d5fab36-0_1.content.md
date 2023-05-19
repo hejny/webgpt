@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Welcome to the Future of Space Travel
+# Future Space Travel
 
 Welcome to our website, where we explore the exciting world of space travel and technology. Our mission is to inspire and inform people about the latest advancements in space exploration, including the futuristic concept of a space elevator.
 

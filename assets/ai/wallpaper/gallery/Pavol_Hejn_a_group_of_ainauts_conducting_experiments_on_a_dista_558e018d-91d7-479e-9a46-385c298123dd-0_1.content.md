@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
+"A group of AI tests on distant planet., with a red sun setting behind them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts conducting experiments on a distant planet
+# AI tests on distant planet
 
-Welcome to our website featuring a stunning wallpaper of a group of AInauts conducting experiments on a distant planet, with a red sun setting behind them. This image captures the spirit of exploration and discovery that drives us forward in our pursuit of knowledge.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them. This image captures the spirit of exploration and discovery that drives us forward in our pursuit of knowledge.
 
 ## Who are we?
 
@@ -24,7 +24,7 @@ We are a team of scientists and engineers dedicated to pushing the boundaries of
 
 ## What are we working on?
 
-Currently, we are conducting experiments on a distant planet located in a nearby star system. This planet has a unique environment that poses many challenges for our AInauts, but also offers great opportunities for scientific discovery.
+Currently, we are conducting experiments on a distant planet located in a nearby star system. This planet has a unique environment that poses many challenges for our Ainautes, but also offers great opportunities for scientific discovery.
 
 ## Why is this important?
 

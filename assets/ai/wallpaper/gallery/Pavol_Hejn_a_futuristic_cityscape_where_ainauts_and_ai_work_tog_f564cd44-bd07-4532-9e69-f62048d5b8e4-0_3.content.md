@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+"A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -12,13 +12,13 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Inter.-->
+<!--font:Inter-->
 
 # Welcome to the Future
 
 ## A Futuristic Cityscape
 
-Experience a glimpse of the future with our stunning wallpaper featuring a futuristic cityscape. This city is unlike any other, where AInauts and AI work together to create massive, sustainable structures and infrastructure.
+Experience a glimpse of the future with our stunning wallpaper featuring a futuristic cityscape. This city is unlike any other, where Ainautes and AI work together to create massive, sustainable structures and infrastructure.
 
 ## The Power of AI
 

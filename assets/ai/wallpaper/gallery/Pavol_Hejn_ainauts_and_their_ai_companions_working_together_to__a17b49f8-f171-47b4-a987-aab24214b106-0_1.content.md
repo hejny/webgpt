@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"AInauts and their AI companions working together to construct a massive, orbiting space elevator."
+"Ainautes and their AI companions working together to construct a massive, orbiting space elevator."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Space Elevator Construction: AInauts and AI Companions Working Together
+# AI and Humans Build Space Elevator
 
-Welcome to our website dedicated to the construction of a massive, orbiting space elevator. Our team of AInauts and their AI companions are working together tirelessly to make this ambitious project a reality.
+Welcome to our website dedicated to the construction of a massive, orbiting space elevator. Our team of Ainautes and their AI companions are working together tirelessly to make this ambitious project a reality.
 
 ## What is a Space Elevator?
 
@@ -28,13 +28,13 @@ A space elevator is a hypothetical structure that would allow for transportation
 
 The basic concept involves a cable extending from the surface of the Earth to a counterweight in geostationary orbit, which would keep the cable taut. Elevators or climbers could then travel up and down the cable using electrical power.
 
-## The Role of AInauts and AI Companions
+## The Role of Ainautes and AI Companions
 
-The construction of a space elevator is a complex undertaking that requires a lot of planning and coordination. That's where our team of AInauts and their AI companions come in.
+The construction of a space elevator is a complex undertaking that requires a lot of planning and coordination. That's where our team of Ainautes and their AI companions come in.
 
-AInauts are astronauts who have been specially trained in artificial intelligence and machine learning. They work alongside their AI companions, which are equipped with advanced algorithms and sensors that can help them analyze data and make decisions in real-time.
+Ainautes are astronauts who have been specially trained in artificial intelligence and machine learning. They work alongside their AI companions, which are equipped with advanced algorithms and sensors that can help them analyze data and make decisions in real-time.
 
-Together, AInauts and their AI companions are able to tackle the challenges of constructing a space elevator, including:
+Together, Ainautes and their AI companions are able to tackle the challenges of constructing a space elevator, including:
 
 -   Designing and testing the cable material
 -   Building and maintaining the infrastructure on the ground and in space

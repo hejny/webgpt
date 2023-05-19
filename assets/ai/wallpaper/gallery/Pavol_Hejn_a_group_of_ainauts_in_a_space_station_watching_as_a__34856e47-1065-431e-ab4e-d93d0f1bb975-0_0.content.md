@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
+"A group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Roboto.-->
+<!--font:Roboto-->
 
-# AI in Space: Saving Earth from a Massive Asteroid
+# AI Saves Earth from Asteroid
 
-Welcome to our website dedicated to exploring the exciting world of artificial intelligence and its potential for saving humanity. Our stunning wallpaper depicts a group of AInauts in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them. This image perfectly captures the importance of AI in space exploration and disaster mitigation.
+Welcome to our website dedicated to exploring the exciting world of artificial intelligence and its potential for saving humanity. Our stunning wallpaper depicts a group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them. This image perfectly captures the importance of AI in space exploration and disaster mitigation.
 
 ## About Us
 
@@ -28,9 +28,9 @@ We are a team of AI enthusiasts who believe that this technology has the power t
 
 ## Our Services
 
-- **AI Consulting:** We offer expert consulting services to help organizations leverage the power of AI in their operations, from space exploration to disaster response.
-- **AI Development:** Our team of experienced developers can create custom AI solutions tailored to your specific needs and goals.
-- **AI Education:** We provide training and educational resources for individuals and organizations looking to learn more about AI and its potential.
+-   **AI Consulting:** We offer expert consulting services to help organizations leverage the power of AI in their operations, from space exploration to disaster response.
+-   **AI Development:** Our team of experienced developers can create custom AI solutions tailored to your specific needs and goals.
+-   **AI Education:** We provide training and educational resources for individuals and organizations looking to learn more about AI and its potential.
 
 ## User Stories
 
@@ -46,9 +46,9 @@ Our clients come from a wide range of industries and backgrounds, but they all s
 
 Our team is committed to staying up-to-date with the latest developments in AI research and technology. Here are a few of our favorite resources for learning more about this exciting field:
 
-- [OpenAI](https://openai.com/)
-- [MIT Technology Review: Artificial Intelligence](https://www.technologyreview.com/topic/artificial-intelligence/)
-- [AI Weekly Newsletter](https://www.getrevue.co/profile/ai)
+-   [OpenAI](https://openai.com/)
+-   [MIT Technology Review: Artificial Intelligence](https://www.technologyreview.com/topic/artificial-intelligence/)
+-   [AI Weekly Newsletter](https://www.getrevue.co/profile/ai)
 
 ## Contact Us
 

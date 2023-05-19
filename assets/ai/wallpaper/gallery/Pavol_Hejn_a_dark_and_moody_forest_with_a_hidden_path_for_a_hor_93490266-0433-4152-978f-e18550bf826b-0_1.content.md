@@ -16,9 +16,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:"Creepster" font would be the best fitting for the website.-->
+<!--font:Creepster-->
 
-# "The Hidden Path: Exploring the Mysteries of the Dark Forest"
+# Exploring Dark Forest Trails
 
 Welcome to "The Hidden Path", your ultimate guide to exploring the mysteries of the dark forest. Our website is dedicated to providing you with all the information you need to navigate through the eerie and ominous woods, uncovering its secrets and unraveling its enigmas.
 

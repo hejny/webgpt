@@ -1,40 +1,73 @@
+<!--font:Poppins-->
+
+# Stargazing in the Desert
+
+Welcome to our website dedicated to the breathtaking experience of stargazing in the desert! 
+
+To set the mood, we've chosen a stunning photograph of a desert landscape at night, with the stars visible in the sky above. This wallpaper captures the essence of what we're all about - the beauty and wonder of the universe.
+
+Whether you're an avid astronomer or just looking for a unique way to connect with nature, stargazing in the desert is an unforgettable experience. With little light pollution and vast open skies, the desert provides the perfect backdrop for observing the stars and planets.
+
+On our website, you'll find resources and information to help you plan your own stargazing adventure in the desert. From tips on equipment and gear to recommended locations and events, we've got you covered.
+
+So come join us under the stars and discover the magic of stargazing in the desert!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A photograph of a desert landscape at night, with the stars visible in the sky above."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Open Sans-->
-
-# Desert Night Sky Wallpaper
-
-Decorate your desktop or mobile screen with the stunning beauty of a desert night sky. This wallpaper features a captivating photograph of a vast desert landscape, illuminated by the soft glow of the moon and twinkling stars in the clear night sky.
-
-## Features:
-
--   High-quality photograph
--   Captures the serene beauty of a desert at night
--   Stars visible in the sky above
--   Perfect for desktop or mobile backgrounds
-
-## How to Use:
-
-1. Download the wallpaper by clicking on the link below.
-2. Save the image to your device.
-3. Set the image as your desktop or mobile background.
-
-> "The clearest way into the Universe is through a forest wilderness." - John Muir
-
-Enjoy the tranquility of the desert night sky every time you open your device. Download this breathtaking wallpaper now!
 
 ---
 
-[Download Wallpaper](#)
+
+# Stargazing in the Desert
+
+Welcome to our website dedicated to the breathtaking experience of stargazing in the desert! 
+
+To set the mood, we've chosen a stunning photograph of a desert landscape at night, with the stars visible in the sky above. This wallpaper captures the essence of what we're all about - the beauty and wonder of the universe.
+
+Whether you're an avid astronomer or just looking for a unique way to connect with nature, stargazing in the desert is an unforgettable experience. With little light pollution and vast open skies, the desert provides the perfect backdrop for observing the stars and planets.
+
+On our website, you'll find resources and information to help you plan your own stargazing adventure in the desert. From tips on equipment and gear to recommended locations and events, we've got you covered.
+
+So come join us under the stars and discover the magic of stargazing in the desert!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lobster
+- Futura
+- Great Vibes
+- Dancing Script
+- Inter
+- Open Sans
+- Playfair Display
+- Exo 2
+- Raleway
+- Alegreya
+- Lato
+- Poppins
+- Montserrat
+- IBM Plex Sans
+- Barlow Condensed
+- Roboto
+- Orbitron
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

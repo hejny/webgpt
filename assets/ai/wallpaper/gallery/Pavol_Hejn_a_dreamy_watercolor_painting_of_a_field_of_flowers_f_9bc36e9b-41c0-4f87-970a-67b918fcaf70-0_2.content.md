@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Dreamy Watercolor Paintings for Your Event
+# Event Watercolor Paintings.
 
 Welcome to our website, where you can find the most beautiful watercolor paintings for your event. Our collection features a stunning field of flowers that will add a dreamy touch to any wedding or event.
 

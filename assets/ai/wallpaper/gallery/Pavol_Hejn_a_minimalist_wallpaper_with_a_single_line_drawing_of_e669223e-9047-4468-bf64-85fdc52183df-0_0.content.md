@@ -1,49 +1,119 @@
+<!--font:Poppins-->
+
+# Elevated Digital Cyborg Art
+
+Transform your digital space with our minimalist cyborg artwork. Featuring a sleek single line drawing of a futuristic cyborg in bold, vibrant colors like bright red or blue, this unique design is perfect for those who appreciate modern aesthetics.
+
+Use it as a background on your desktop, laptop, or mobile device to add a touch of sci-fi style to your digital world. Whether you're a fan of science fiction or simply love sleek and modern design, this cyborg artwork is sure to impress.
+
+Download the artwork today and take your digital experience to the next level with its eye-catching aesthetic. With its minimalist yet futuristic design, this cyborg artwork is the perfect addition to any digital space.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A minimalist wallpaper with a single line drawing of a cyborg, in a striking color such as bright red or blue."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Cyborg Minimalist Wallpaper
+
+Welcome to our website featuring a striking minimalist wallpaper of a cyborg. The wallpaper features a single line drawing of a cyborg in bold and vibrant colors such as bright red or blue. 
+
+This wallpaper is perfect for those who appreciate simplicity and modern design. It can be used as a background on your desktop, laptop, or mobile device to add a touch of futuristic style to your digital space.
+
+Download this unique wallpaper today and elevate your digital experience with its eye-catching design.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Futuristic Cyborg Design for Your Digital Space
+
+Welcome to our website featuring a striking minimalist design of a cyborg. The design features a single line drawing of a futuristic cyborg in bold and vibrant colors such as bright red or blue.
+
+This unique design is perfect for those who appreciate simplicity and modernity. It can be used as a background on your desktop, laptop, or mobile device to add a touch of futuristic style to your digital space.
+
+Whether you're a fan of science fiction or simply enjoy sleek and modern design, this cyborg artwork will surely impress. Download the design today and elevate your digital experience with its eye-catching aesthetic.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Futuristic Cyborg Artwork for Your Digital Space
+
+Looking for a bold and striking design to add to your digital space? Look no further than our minimalist cyborg artwork. Featuring a single line drawing of a futuristic cyborg in vibrant colors like bright red or blue, this unique artwork is perfect for those who appreciate modern design.
+
+Use it as a background on your desktop, laptop, or mobile device to add a touch of sci-fi style to your digital world. Whether you're a fan of science fiction or simply love sleek and modern design, this cyborg artwork is sure to impress.
+
+Download the artwork today and take your digital experience to the next level with its eye-catching aesthetic. With its minimalist yet futuristic design, this cyborg artwork is the perfect addition to any digital space.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Elevate Your Digital Space with Futuristic Cyborg Art
+
+Transform your digital space with our minimalist cyborg artwork. Featuring a sleek single line drawing of a futuristic cyborg in bold, vibrant colors like bright red or blue, this unique design is perfect for those who appreciate modern aesthetics.
+
+Use it as a background on your desktop, laptop, or mobile device to add a touch of sci-fi style to your digital world. Whether you're a fan of science fiction or simply love sleek and modern design, this cyborg artwork is sure to impress.
+
+Download the artwork today and take your digital experience to the next level with its eye-catching aesthetic. With its minimalist yet futuristic design, this cyborg artwork is the perfect addition to any digital space.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Roboto
+- Barlow Condensed
+- Futura
+- IBM Plex Sans
+- Great Vibes
+- Raleway
+- Poppins
+- Montserrat
+- Lobster
+- Playfair Display
+- Dancing Script
+- Alegreya
+- Exo 2
+- Inter
+- Orbitron
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# Cyberpunk Minimalist Wallpaper
-
-Welcome to our collection of cyberpunk minimalist wallpapers! Our latest addition is a striking wallpaper featuring a single line drawing of a cyborg, available in bright red or blue. 
-
-## About the Wallpaper
-
-This wallpaper is perfect for those who appreciate the sleek and futuristic aesthetic of cyberpunk art. The minimalist design features a single continuous line that creates the outline of a cyborg, with no unnecessary details or distractions. The bold color options of bright red or blue make this wallpaper stand out on any device.
-
-## User Stories
-
-- "I love using this wallpaper on my phone - it's simple yet eye-catching."
-- "As a fan of cyberpunk, I'm always looking for new ways to incorporate it into my daily life. This wallpaper is perfect!"
-- "I use this wallpaper on my work computer to add some personality to my desktop."
-
-## Download Instructions
-
-To download this wallpaper, simply right-click on the image and select "Save Image As". Then, choose the location where you want to save the file. You can set this wallpaper as your background by going to your device's settings and selecting "Wallpaper" or "Background".
-
-## References
-
-If you're interested in learning more about cyberpunk art and culture, check out these resources:
-
-- [r/Cyberpunk](#)
-- [Neuromancer by William Gibson](#)
-- [Blade Runner (1982) directed by Ridley Scott](#)
-
-## Contact Us
-
-If you have any questions or comments, please don't hesitate to reach out to us at [contact@cyberpunkwallpapers.com](mailto:contact@cyberpunkwallpapers.com). We'd love to hear from you!

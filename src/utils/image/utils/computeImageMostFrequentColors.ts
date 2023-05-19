@@ -28,6 +28,7 @@ export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Co
         .map(([colorCode]) => Color.fromHex(colorCode));
 
     // 3️⃣ Pick colors that has some distance threshold  (compared to all other already picked colors)
+    //    TODO: This has one flaw which need to be fixed [🦯]
     const distanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
     const uniqueColors: Array<WithTake<Color>> = [];

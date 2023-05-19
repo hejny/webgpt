@@ -1,47 +1,88 @@
+<!--font:Poppins-->
+
+# Futuristic Neon Cityscape
+
+Transform your space with an urban-inspired design that brings the energy of the city into your home or office. Our grunge aesthetic wallpaper features a neon-lit cityscape with futuristic elements like holographic billboards, creating a truly modern and eye-catching look.
+
+This unique design is perfect for those who want to add a touch of edgy style to their space. Whether you're looking to transform an entire room or just create a statement wall, our high-quality wallpaper is easy to install and built to last.
+
+Experience the vibrant energy of a futuristic cityscape in your own space. Order now and take your interior design to the next level!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "An urban-inspired wallpaper with a grunge aesthetic, featuring a neon-lit cityscape with futuristic elements such as holographic billboards."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Future City Wallpaper
+
+Add a touch of urban style to your space with our grunge-inspired wallpaper featuring a neon-lit cityscape. This unique design incorporates futuristic elements such as holographic billboards, creating a truly modern and eye-catching look.
+
+Made from high-quality materials, our wallpaper is easy to install and built to last. Whether you're looking to transform an entire room or just add a statement wall, this wallpaper is sure to impress.
+
+Order now and bring the energy of the city into your home or office!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Experience the Futuristic Vibe of a Neon-Lit Cityscape
+
+Transform your space with an urban-inspired design that brings the energy of the city into your home or office. Our grunge aesthetic wallpaper features a neon-lit cityscape with futuristic elements like holographic billboards, creating a truly modern and eye-catching look.
+
+This unique design is perfect for those who want to add a touch of edgy style to their space. Whether you're looking to transform an entire room or just create a statement wall, our high-quality wallpaper is easy to install and built to last.
+
+Experience the vibrant energy of a futuristic cityscape in your own space. Order now and take your interior design to the next level!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- IBM Plex Sans
+- Cinzel
+- Raleway
+- Playfair Display
+- Montserrat
+- Great Vibes
+- Lobster
+- Lato
+- Cormorant Garamond
+- Cabin
+- Dancing Script
+- Cinzel Decorative
+- Alegreya
+- Poppins
+- Roboto
+- Barlow Condensed
+- Orbitron
+- Exo 2
+- Open Sans
+- Creepster
+- Futura
+- Inter
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# Futuristic Cityscape Wallpaper
-
-Transform your space with our urban-inspired wallpaper featuring a grunge aesthetic and a neon-lit cityscape. This wallpaper is perfect for those who want to add a touch of edginess to their home or office.
-
-## Features
-
-- Holographic billboards that give a futuristic vibe
-- Grunge aesthetic that adds texture and depth to the wallpaper
-- Neon lights that create a vibrant and energetic atmosphere
-
-## Installation
-
-Installing our wallpaper is easy and hassle-free. Simply follow these steps:
-
-1. Clean the wall surface where you will be applying the wallpaper.
-2. Measure the width and height of the wall to determine how much wallpaper you will need.
-3. Cut the wallpaper into strips according to your measurements.
-4. Apply wallpaper paste to the back of each strip.
-5. Carefully apply each strip to the wall, aligning the edges as you go.
-6. Smooth out any bubbles or wrinkles with a wallpaper brush or squeegee.
-7. Allow the wallpaper to dry completely before enjoying your new urban-inspired space.
-
-## Product Details
-
-- Dimensions: 10m x 0.53m
-- Material: Vinyl
-- Pattern repeat: 53cm
-- Coverage: 5.32 sqm
-- Washable: Yes
-
-> "This wallpaper is perfect for creating a bold statement in any room. Its grunge aesthetic and neon-lit cityscape design are sure to impress anyone who walks in."

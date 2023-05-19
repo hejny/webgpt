@@ -1,49 +1,127 @@
+<!--font:Poppins-->
+
+# Enchanting Deep Sea Creatures
+
+Welcome to our website dedicated to exploring the enchanting world of deep sea creatures. Our homepage features a mesmerizing digital painting of a deep sea creature with tentacles and bioluminescent patterns, inviting you to embark on an adventure of discovery.
+
+As you explore our site, you'll learn about the incredible diversity of life that exists in the deep sea, from giant squid and anglerfish to colorful coral and bizarre jellyfish. We'll take you on a journey through the different zones of the ocean, from the sunlit surface to the dark abyss, and introduce you to the unique adaptations that allow these creatures to survive in such extreme environments.
+
+Whether you're a marine biologist, an avid scuba diver, or simply someone who's fascinated by the wonders of the natural world, we hope you'll find something to inspire and amaze you on our site. Explore our articles, photos, and videos to gain a deeper understanding of the deep sea and the enchanting creatures that call it home.
+
+Join us on this exciting adventure as we discover the enchanting world of deep sea creatures together!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A digital painting of a deep sea creature, with tentacles and bioluminescent patterns evoking a sense of mystery and exploration."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Deep Sea Creatures: Explore the Mysteries of the Ocean
+
+Welcome to our website dedicated to the fascinating world of deep sea creatures. Our homepage features a stunning digital painting of a mysterious creature with tentacles and bioluminescent patterns, inviting you to dive into the depths of the ocean and discover its secrets.
+
+As you explore our site, you'll learn about the incredible diversity of life that exists in the deep sea, from giant squid and anglerfish to colorful coral and bizarre jellyfish. We'll take you on a journey through the different zones of the ocean, from the sunlit surface to the dark abyss, and introduce you to the unique adaptations that allow these creatures to survive in such extreme environments.
+
+Whether you're a marine biologist, an avid scuba diver, or simply someone who's fascinated by the wonders of the natural world, we hope you'll find something to inspire and amaze you on our site. So come on in, and let's explore the mysteries of the ocean together!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Wonders of the Deep Sea
+
+Welcome to our website dedicated to exploring the fascinating world of deep sea creatures. Our homepage features a stunning digital painting of a mysterious creature with tentacles and bioluminescent patterns, inviting you to dive into the depths of the ocean and discover its secrets.
+
+Our site is designed to take you on a journey through the different zones of the ocean, from the sunlit surface to the dark abyss, and introduce you to the unique adaptations that allow these creatures to survive in such extreme environments. You'll learn about the incredible diversity of life that exists in the deep sea, from giant squid and anglerfish to colorful coral and bizarre jellyfish.
+
+Whether you're a marine biologist, an avid scuba diver, or simply someone who's fascinated by the wonders of the natural world, we hope you'll find something to inspire and amaze you on our site. Explore our articles, photos, and videos to gain a deeper understanding of the deep sea and the creatures that call it home.
+
+Join us on this exciting adventure as we discover the wonders of the deep sea together!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Exploring the Mysteries of the Deep Sea
+
+Welcome to our website dedicated to exploring the mysteries of the deep sea. Our homepage features a captivating digital painting of a deep sea creature with tentacles and bioluminescent patterns, inviting you to embark on a journey of discovery.
+
+As you explore our site, you'll learn about the incredible diversity of life that exists in the deep sea, from giant squid and anglerfish to colorful coral and bizarre jellyfish. We'll take you on a journey through the different zones of the ocean, from the sunlit surface to the dark abyss, and introduce you to the unique adaptations that allow these creatures to survive in such extreme environments.
+
+Whether you're a marine biologist, an avid scuba diver, or simply someone who's fascinated by the wonders of the natural world, we hope you'll find something to inspire and amaze you on our site. Explore our articles, photos, and videos to gain a deeper understanding of the deep sea and the mysteries that it holds.
+
+Join us on this exciting adventure as we explore the mysteries of the deep sea together!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Enchanting World of Deep Sea Creatures
+
+Welcome to our website dedicated to exploring the enchanting world of deep sea creatures. Our homepage features a mesmerizing digital painting of a deep sea creature with tentacles and bioluminescent patterns, inviting you to embark on an adventure of discovery.
+
+As you explore our site, you'll learn about the incredible diversity of life that exists in the deep sea, from giant squid and anglerfish to colorful coral and bizarre jellyfish. We'll take you on a journey through the different zones of the ocean, from the sunlit surface to the dark abyss, and introduce you to the unique adaptations that allow these creatures to survive in such extreme environments.
+
+Whether you're a marine biologist, an avid scuba diver, or simply someone who's fascinated by the wonders of the natural world, we hope you'll find something to inspire and amaze you on our site. Explore our articles, photos, and videos to gain a deeper understanding of the deep sea and the enchanting creatures that call it home.
+
+Join us on this exciting adventure as we discover the enchanting world of deep sea creatures together!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- IBM Plex Sans
+- Inter
+- Barlow Condensed
+- Lobster
+- Playfair Display
+- Futura
+- Great Vibes
+- Exo 2
+- Roboto
+- Poppins
+- Lato
+- Open Sans
+- Orbitron
+- Raleway
+- Alegreya
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# Deep Sea Creatures Wallpaper
-
-Welcome to our website dedicated to the exploration and appreciation of deep sea creatures. Our digital painting of a mysterious deep sea creature with tentacles and bioluminescent patterns is the perfect representation of the fascinating creatures that inhabit the depths of our oceans.
-
-## About Us
-
-We are a team of marine biologists, oceanographers, and artists who share a passion for the beauty and diversity of marine life. Our mission is to raise awareness about the importance of protecting our oceans and their inhabitants through education, research, and art.
-
-## Our Collection
-
-Our collection of wallpapers features a variety of deep sea creatures, from the giant squid to the anglerfish. Each wallpaper is a unique digital painting created by our talented artists, who draw inspiration from real-life specimens and scientific research.
-
-## User Stories
-
-"I love using the deep sea creatures wallpaper as my desktop background. It reminds me of the incredible diversity of life on our planet and inspires me to learn more about the oceans." - Sarah, student
-
-"The bioluminescent patterns on the deep sea creature wallpaper are so mesmerizing. I find myself staring at it for minutes at a time, lost in thought." - John, artist
-
-## References
-
-If you're interested in learning more about deep sea creatures, we recommend checking out these resources:
-
--   [NOAA Ocean Explorer](#)
--   [Smithsonian Ocean Portal](#)
--   [MarineBio Conservation Society](#)
-
-## Contact Us
-
-If you have any questions or comments, please don't hesitate to reach out to us at contact@deepseacreatures.com. We would love to hear from you!

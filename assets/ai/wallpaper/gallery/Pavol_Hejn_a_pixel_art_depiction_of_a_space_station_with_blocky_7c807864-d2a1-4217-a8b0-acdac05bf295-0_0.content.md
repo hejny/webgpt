@@ -1,53 +1,92 @@
+<!--font:Open Sans-->
+
+# Retro Deep Space Station
+
+Step into a world of sci-fi wonder with our pixel art depiction of a space station. The limited colors and blocky shapes create a unique aesthetic that blends the past and the future, transporting you to a retro-futuristic world.
+
+This stunning image is perfect for anyone who loves science fiction or pixel art. Use it as a background for your desktop or phone screen to add some personality and style to your digital devices. You'll feel like you're exploring the depths of space in a classic sci-fi setting every time you look at your screen.
+
+Download this high-quality image for free and enjoy the nostalgic feeling of traveling through space in a retro-futuristic space station. It's the perfect way to add some excitement and inspiration to your day.
+
+So why wait? Start your journey through the depths of space today with our retro-futuristic space station image.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Retro-Futuristic Space Station Wallpaper
+
+Decorate your desktop or phone screen with a pixel art depiction of a space station that will transport you to a world of retro-futuristic vibes. The limited colors and blocky shapes of this wallpaper create a unique aesthetic that blends the past and the future.
+
+Download this high-quality wallpaper for free and enjoy the nostalgic feeling of exploring the depths of space in a classic sci-fi setting. Whether you're a fan of pixel art, science fiction, or just want to add some personality to your digital devices, this wallpaper is sure to impress.
+
+So why wait? Add a touch of retro-futuristic style to your screens today with this stunning space station wallpaper.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Depths of Space with a Retro-Futuristic Space Station
+
+Step into a world of sci-fi wonder with our pixel art depiction of a space station. The limited colors and blocky shapes create a unique aesthetic that blends the past and the future, transporting you to a retro-futuristic world.
+
+This stunning image is perfect for anyone who loves science fiction or pixel art. Use it as a background for your desktop or phone screen to add some personality and style to your digital devices. You'll feel like you're exploring the depths of space in a classic sci-fi setting every time you look at your screen.
+
+Download this high-quality image for free and enjoy the nostalgic feeling of traveling through space in a retro-futuristic space station. It's the perfect way to add some excitement and inspiration to your day.
+
+So why wait? Start your journey through the depths of space today with our retro-futuristic space station image.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Cormorant Garamond
+- Exo 2
+- Poppins
+- Dancing Script
+- Orbitron
+- Lato
+- Cinzel Decorative
+- Inter
+- Great Vibes
+- Raleway
+- Roboto
+- Montserrat
+- Futura
+- Playfair Display
+- Alegreya
+- Lobster
+- Cabin
+- IBM Plex Sans
+- Open Sans
+- Barlow Condensed
+- Cinzel
+- Creepster
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Montserrat-->
-
-# Retro Space Station Wallpaper for Your Desktop
-
-Add a touch of nostalgia to your computer with our pixel art depiction of a space station. The blocky shapes and limited colors create a retro and futuristic feel that will transport you back in time while keeping you connected to the future.
-
-## About the Wallpaper
-
-Our wallpaper is inspired by classic video games and sci-fi movies from the 80s and 90s. The pixel art style captures the essence of those times, while the space station design adds a modern twist. The limited color palette gives it a unique look that stands out from other wallpapers.
-
-The wallpaper is available in various resolutions to fit any screen size. You can download it for free and use it as your desktop background, lock screen, or even print it out and hang it on your wall.
-
-## User Stories
-
-Here are some examples of how our retro space station wallpaper has brightened up people's screens:
-
-- "I love the 8-bit style of this wallpaper. It reminds me of my childhood playing old-school video games." - John D.
-- "This wallpaper is perfect for my office. It's professional yet fun, and it inspires me to reach for the stars." - Sarah L.
-- "I'm a sci-fi fan, and this wallpaper satisfies my craving for all things space-related. It's like having a mini space station on my computer." - David M.
-
-## How to Download
-
-To download the wallpaper, simply right-click on the image and select "Save Image As" or "Set as Desktop Background," depending on your browser. You can also click the download button below to get the wallpaper in your desired resolution.
-
-## References
-
-If you're interested in learning more about pixel art and its history, check out these resources:
-
-- [Pixel Art: A Beginner's Guide](#)
-- [The History of Pixel Art](#)
-- [The Pixel Art Renaissance](#)
-
-## Contact Us
-
-If you have any questions or feedback about our retro space station wallpaper, feel free to contact us at [email protected] We'd love to hear from you!

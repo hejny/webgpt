@@ -1,5 +1,8 @@
 import { ConfigChecker } from 'configchecker';
+import { Vector } from 'xyzt';
 import packageJson from './package.json';
+import { createColorfulComputeImageColorStats } from './src/utils/image/utils/10-createColorfulComputeImageColorStats';
+import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 
 export const VERSION = packageJson.version;
 export const DEBUG = {
@@ -32,16 +35,51 @@ export const FONTS = [
     'Raleway',
     'Futura',
     'Barlow Condensed',
-    // TODO: !!! List more
+    'Cabin',
+    'Cinzel',
+    'Cinzel Decorative',
+    'Cormorant Garamond',
+    'Creepster' /* <- TODO: Where it is used */,
+    // TODO: !! List more
 ];
 
-export const COLORSTATS_VERSION = 7;
-export const COLORS_LIMIT = 10;
-export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;
-export const MOST_SATULIGHTED_COLORS_HUE_TRERESHOLD_DEGREES = 30;
+export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 1;
+//                                'Tvořím něco z ničeho nic'
+//                                'Futuristic Cityscape Wallpaper'
+
+export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
 
 /**
- * How much the color should be different tp be considered different
+ * @@@
+ */
+export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
+    createColorfulComputeImageColorStats({
+        colorBits: 16,
+        size: IMAGE_NATURAL_SIZE,
+    }),
+    createColorfulComputeImageColorStats({
+        colorBits: 16,
+        size: IMAGE_NATURAL_SIZE.scale(0.1),
+    }),
+    // TODO: More with createColorfulComputeImageColorStats
+    // TODO: More with different strategy than createColorfulComputeImageColorStats
+];
+
+export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0];
+
+// TODO: [🧠] !! Pass theese as a parameter to the function createComputeImageColorStats
+
+export const COLORS_LIMIT = 10;
+export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;
+
+/**
+ * How much the color should be different (in hue) to be considered different
+ * As degrees of hue
+ */
+export const DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES = 30;
+
+/**
+ * How much the color should be different to be considered different
  * As ratio of distance between white and black
  */
 export const DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of distance between white and black */

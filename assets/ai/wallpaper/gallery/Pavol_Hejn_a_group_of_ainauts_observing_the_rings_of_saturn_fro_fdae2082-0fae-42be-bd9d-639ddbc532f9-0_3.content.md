@@ -1,19 +1,74 @@
+<!--font:Montserrat-->
+
+# Space Station Observing Saturn's Rings
+
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies. 
+
+Our website is dedicated to sharing the wonders of space exploration and discovery with enthusiasts like you. Join us as we explore the mysteries of the universe and learn more about the technology that makes space travel possible.
+
+From the latest updates on space missions to stunning images captured by telescopes and satellites, we bring you the best of what's happening in the world of space science. 
+
+So sit back, relax, and immerse yourself in the beauty of space with our captivating wallpaper as your backdrop.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies."
+"A group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Space Station Observing Saturn's Rings
+
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies. 
+
+Our website is dedicated to sharing the wonders of space exploration and discovery with enthusiasts like you. Join us as we explore the mysteries of the universe and learn more about the technology that makes space travel possible.
+
+From the latest updates on space missions to stunning images captured by telescopes and satellites, we bring you the best of what's happening in the world of space science. 
+
+So sit back, relax, and immerse yourself in the beauty of space with our captivating wallpaper as your backdrop.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Orbitron
+- Poppins
+- Futura
+- Cabin
+- Cinzel Decorative
+- Raleway
+- Exo 2
+- Playfair Display
+- Dancing Script
+- Alegreya
+- Montserrat
+- Lato
+- Roboto
+- Great Vibes
+- Lobster
+- Cinzel
+- IBM Plex Sans
+- Inter
+- Open Sans
+- Barlow Condensed
+- Creepster
+- Cormorant Garamond
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Poppins-->
-
-# AInauts: Exploring the Universe from a High-Tech Space Station
-
-Welcome to AInauts, where we bring you closer to the wonders of the universe through advanced technology and artificial intelligence. Our team of scientists and engineers are currently stationed in a state-of-the-art space station, orbiting around Saturn and studying its magnificent rings.
-
-As you browse through our website, you'll find fascinating insights into the latest discoveries in astronomy and space exploration. From stunning images of distant galaxies to detailed analyses of planetary systems, we strive to provide you with a comprehensive understanding of the cosmos.
-
-Our team of AInauts use cutting-edge AI algorithms to analyze vast amounts of data collected from telescopes and other space probes. With their expertise, we're able to unlock new insights into the mysteries of the universe and push the boundaries of what's possible in space exploration.
-
-So join us on this incredible journey as we explore the vast expanse of the universe and uncover the secrets hidden within. And don't forget to download our exclusive wallpaper featuring our AInauts observing the rings of Saturn, surrounded by stars and galaxies.

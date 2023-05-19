@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Abandoned Spaceship: A Journey into the Unknown
+# Abandoned Spaceship Exp
 
-Welcome to our website dedicated to exploring the mysteries of an abandoned spaceship floating in the depths of space. Our team of AInauts and their AI companions have embarked on a daring mission to uncover the secrets hidden within this massive vessel.
+Welcome to our website dedicated to exploring the mysteries of an abandoned spaceship floating in the depths of space. Our team of Ainautes and their AI companions have embarked on a daring mission to uncover the secrets hidden within this massive vessel.
 
 ## Our Mission
 
@@ -28,7 +28,7 @@ Our mission is to explore every inch of the abandoned spaceship, document our fi
 
 ## Meet Our Team
 
-Our team consists of highly skilled AInauts and their AI companions, each with their own unique set of skills and abilities. From expert engineers to brilliant scientists, our team has what it takes to tackle any challenge that comes our way.
+Our team consists of highly skilled Ainautes and their AI companions, each with their own unique set of skills and abilities. From expert engineers to brilliant scientists, our team has what it takes to tackle any challenge that comes our way.
 
 ## User Stories
 
@@ -42,16 +42,16 @@ We've already received countless stories from users who have been inspired by ou
 
 If you're interested in learning more about our mission and the work we're doing, be sure to check out these resources:
 
-- [Our Blog](#blog)
-- [Our YouTube Channel](#youtube)
-- [Our Twitter Feed](#twitter)
+-   [Our Blog](#blog)
+-   [Our YouTube Channel](#youtube)
+-   [Our Twitter Feed](#twitter)
 
 ## Contact Us
 
 Have a question or comment? We'd love to hear from you! You can reach us at:
 
-- Email: [contact@exploringspaceship.com](mailto:contact@exploringspaceship.com)
-- Phone: 555-1234
+-   Email: [contact@exploringspaceship.com](mailto:contact@exploringspaceship.com)
+-   Phone: 555-1234
 
 ## Join Our Mission
 

@@ -1,17 +1,70 @@
+<!--font:Montserrat-->
+
+# Ainautes Lab: Futuristic Welcome
+
+Here at Ainautes, we are dedicated to pushing the boundaries of science and technology. Our team of experts uses cutting-edge AI and advanced techniques to create new forms of life that will shape the future of our world.
+
+Our laboratory is a hub of innovation, where scientists and engineers work tirelessly to develop groundbreaking solutions to some of the world's most pressing problems. From developing new medicines to creating sustainable energy sources, we are committed to making a positive impact on the world around us.
+
+Take a look around our website to learn more about our research, our team, and our mission. And if you're interested in joining us on this exciting journey, we'd love to hear from you!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+"A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to the Ainautes Futuristic Laboratory
+
+Here at Ainautes, we are dedicated to pushing the boundaries of science and technology. Our team of experts uses cutting-edge AI and advanced techniques to create new forms of life that will shape the future of our world.
+
+Our laboratory is a hub of innovation, where scientists and engineers work tirelessly to develop groundbreaking solutions to some of the world's most pressing problems. From developing new medicines to creating sustainable energy sources, we are committed to making a positive impact on the world around us.
+
+Take a look around our website to learn more about our research, our team, and our mission. And if you're interested in joining us on this exciting journey, we'd love to hear from you!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Great Vibes
+- Lobster
+- Raleway
+- Montserrat
+- Inter
+- Lato
+- Cabin
+- Playfair Display
+- Roboto
+- Cinzel Decorative
+- Alegreya
+- Barlow Condensed
+- Creepster
+- Orbitron
+- Open Sans
+- Cinzel
+- Cormorant Garamond
+- Futura
+- IBM Plex Sans
+- Poppins
+- Exo 2
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Inter.-->
-
-# The Lab of Tomorrow
-
-Welcome to our futuristic laboratory where AInauts utilize cutting-edge AI and advanced technology to push the boundaries of science and create new forms of life. Our team of experts is dedicated to exploring the possibilities of artificial intelligence and its potential to revolutionize the way we approach scientific discovery.
-
-As you explore our website, you'll discover the incredible work being done by our team, including groundbreaking research in fields such as genetics, robotics, and neuroscience. From developing AI-powered prosthetics to creating synthetic organisms with unprecedented capabilities, we're constantly pushing the limits of what's possible.
-
-So come along on this exciting journey into the future of science and innovation. Join us as we harness the power of AI to unlock new discoveries and create a better world for all.

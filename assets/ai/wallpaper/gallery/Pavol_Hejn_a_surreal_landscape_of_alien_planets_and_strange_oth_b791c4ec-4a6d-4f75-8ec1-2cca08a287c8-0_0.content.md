@@ -1,19 +1,98 @@
+<!--font:Poppins-->
+
+# Otherworldly Adventure Awaits!
+
+Explore surreal landscapes of alien planets and discover strange creatures from beyond your imagination. Our collection of wallpapers will transport you to a world beyond your wildest dreams.
+
+## Wallpaper Collection
+
+Our wallpaper collection features stunning images of otherworldly landscapes, from the icy plains of Europa to the fiery volcanoes of Io. Each image is carefully curated to bring you the best of what the universe has to offer.
+
+## Customizable Options
+
+We understand that everyone's taste is different, which is why we offer customizable options for our wallpapers. Choose from a variety of sizes and resolutions to fit your device perfectly. You can also select from different color schemes to match your personal style.
+
+## Easy Download
+
+Downloading our wallpapers is quick and easy. Simply select the image you want and click the download button. It's that simple!
+
+## Join Our Community
+
+Join our community of space enthusiasts and stay up-to-date with the latest news and discoveries from the universe. Share your own experiences and connect with like-minded individuals who share your passion for all things extraterrestrial.
+
+Experience the wonders of the universe with our otherworldly wallpapers. Start your adventure today!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A surreal landscape of alien planets and strange, otherworldly creatures."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to Our Otherworldly Adventure
+
+Explore surreal landscapes of alien planets and discover strange creatures from beyond your imagination. Our collection of wallpapers will transport you to a world beyond your wildest dreams.
+
+## Wallpaper Collection
+
+Our wallpaper collection features stunning images of otherworldly landscapes, from the icy plains of Europa to the fiery volcanoes of Io. Each image is carefully curated to bring you the best of what the universe has to offer.
+
+## Customizable Options
+
+We understand that everyone's taste is different, which is why we offer customizable options for our wallpapers. Choose from a variety of sizes and resolutions to fit your device perfectly. You can also select from different color schemes to match your personal style.
+
+## Easy Download
+
+Downloading our wallpapers is quick and easy. Simply select the image you want and click the download button. It's that simple!
+
+## Join Our Community
+
+Join our community of space enthusiasts and stay up-to-date with the latest news and discoveries from the universe. Share your own experiences and connect with like-minded individuals who share your passion for all things extraterrestrial.
+
+Experience the wonders of the universe with our otherworldly wallpapers. Start your adventure today!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Dancing Script
+- Cinzel
+- Montserrat
+- Creepster
+- Exo 2
+- Futura
+- Raleway
+- Poppins
+- Cabin
+- Roboto
+- Inter
+- Orbitron
+- Playfair Display
+- Barlow Condensed
+- Open Sans
+- Cormorant Garamond
+- Lobster
+- Great Vibes
+- IBM Plex Sans
+- Alegreya
+- Cinzel Decorative
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# Cosmic Dreamscape
-
-Welcome to our surreal landscape of alien planets and strange, otherworldly creatures. Immerse yourself in the cosmic dreamscape with our stunning wallpaper that will transport you to a world beyond your wildest imagination.
-
-Our collection features a range of unique designs, each one handcrafted by talented artists who have brought their visions to life. From swirling galaxies to eerie moonscapes, our wallpapers are sure to inspire awe and wonder.
-
-Whether you're looking to transform your bedroom into a celestial oasis or add a touch of the extraterrestrial to your living room, we've got you covered. Our wallpapers are available in a variety of sizes and materials, so you can choose the perfect fit for your space.
-
-So why wait? Start exploring our collection today and let your imagination run wild in the cosmic dreamscape.

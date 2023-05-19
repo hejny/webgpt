@@ -1,62 +1,85 @@
-<!--
-Write me content for website with wallpaper which alt text is:
-
-"A city skyline at night"
-
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
-
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
 <!--font:Poppins-->
 
-# Night Skyline Wallpaper for Your Desktop
+# Nighttime in the City
 
-Welcome to our website, where you can find the perfect wallpaper for your desktop. We offer a stunning city skyline at night wallpaper that will transform your computer screen into a beautiful nighttime landscape.
+Welcome to our website featuring a stunning city skyline at night! 
 
 ## About the Wallpaper
 
-Our city skyline at night wallpaper captures the beauty and energy of a bustling metropolis after dark. The image features a panoramic view of a city skyline with bright lights and skyscrapers towering over the city streets. The sky is filled with stars, and the moon shines brightly in the distance, creating a peaceful and serene atmosphere.
+Our wallpaper captures the mesmerizing beauty of a bustling city after dark. The twinkling lights of skyscrapers and buildings create a dazzling display that is sure to leave you in awe. Whether you're a fan of urban landscapes or just looking for a captivating background for your desktop or phone, this wallpaper is perfect for you.
 
-This wallpaper is perfect for anyone who loves the excitement and energy of the city but also appreciates the calmness of a starry night. It's an excellent choice for those who want to add a touch of sophistication and elegance to their desktop.
+## Download the Wallpaper
 
-## User Stories
+To download this wallpaper, simply click on the image above and save it to your device. It's available in high resolution, so you can enjoy every detail of the cityscape.
 
-Our customers love our city skyline at night wallpaper because it:
+## Share Your Experience
 
-- Helps them relax and unwind after a long day at work
-- Inspires them to dream big and reach for the stars
-- Adds a touch of style and sophistication to their desktop
-- Reminds them of their favorite city or travel destination
+We would love to see how you're using this wallpaper! Share your experience with us by tagging us on social media or using the hashtag #NighttimeInTheCity. We can't wait to see how this wallpaper brightens up your day (or night)!
 
-## How to Download
+Thank you for visiting our website and we hope you enjoy this stunning city skyline at night.
 
-Downloading our city skyline at night wallpaper is easy! Simply follow these steps:
+<!--
 
-1. Click on the download button below.
-2. Save the image to your desktop or preferred location.
-3. Right-click on the image and select "Set as Desktop Background."
+Write me markdown content of website with wallpaper:
 
-That's it! Your new wallpaper is now ready to use.
+"A city skyline at night"
 
-## References
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-If you're interested in learning more about city skylines and the beauty of the night sky, we recommend checking out the following resources:
 
-- [National Geographic's Night Sky Guide](#)
-- [The Best Cities to See at Night](#)
-- [10 Stunning Photos of City Skylines at Night](#)
+---
 
-## Contact Us
 
-If you have any questions or comments about our city skyline at night wallpaper, please don't hesitate to contact us. You can reach us by email at [info@nightskylinewallpaper.com](mailto:info@nightskylinewallpaper.com) or by phone at 555-555-5555.
+# Nighttime in the City
 
-We hope you enjoy our city skyline at night wallpaper and that it brings a touch of beauty and elegance to your desktop!
+Welcome to our website featuring a stunning city skyline at night! 
+
+## About the Wallpaper
+
+Our wallpaper captures the mesmerizing beauty of a bustling city after dark. The twinkling lights of skyscrapers and buildings create a dazzling display that is sure to leave you in awe. Whether you're a fan of urban landscapes or just looking for a captivating background for your desktop or phone, this wallpaper is perfect for you.
+
+## Download the Wallpaper
+
+To download this wallpaper, simply click on the image above and save it to your device. It's available in high resolution, so you can enjoy every detail of the cityscape.
+
+## Share Your Experience
+
+We would love to see how you're using this wallpaper! Share your experience with us by tagging us on social media or using the hashtag #NighttimeInTheCity. We can't wait to see how this wallpaper brightens up your day (or night)!
+
+Thank you for visiting our website and we hope you enjoy this stunning city skyline at night.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Exo 2
+- Montserrat
+- Poppins
+- Open Sans
+- Orbitron
+- Barlow Condensed
+- Dancing Script
+- Lobster
+- Roboto
+- Playfair Display
+- Great Vibes
+- Inter
+- Futura
+- Raleway
+- Lato
+- IBM Plex Sans
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

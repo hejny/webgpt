@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
+"A team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,21 +14,21 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AInauts and their AI Companions Conducting Experiments on a Gas Giant Planet
+# AI & Ainautes' Gas Experiment
 
-Welcome to our website featuring a stunning wallpaper of a team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet. 
+Welcome to our website featuring a stunning wallpaper of a team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet.
 
-## Who are AInauts?
+## Who are Ainautes?
 
-AInauts are scientists and researchers who specialize in exploring the vastness of space using advanced artificial intelligence technology. They work alongside their AI companions to conduct experiments, gather data, and make groundbreaking discoveries.
+Ainautes are scientists and researchers who specialize in exploring the vastness of space using advanced artificial intelligence technology. They work alongside their AI companions to conduct experiments, gather data, and make groundbreaking discoveries.
 
 ## The Gas Giant Planet
 
-The wallpaper showcases the team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet. Gas giants are planets that are primarily composed of hydrogen and helium, with no solid surface. They are some of the largest planets in the solar system and are fascinating objects to study.
+The wallpaper showcases the team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet. Gas giants are planets that are primarily composed of hydrogen and helium, with no solid surface. They are some of the largest planets in the solar system and are fascinating objects to study.
 
 ## The Experiment
 
-In the wallpaper, you can see the AInauts and their AI companions working together to conduct an experiment on the gas giant planet. What are they studying? What kind of data are they collecting? We'll leave that up to your imagination!
+In the wallpaper, you can see the Ainautes and their AI companions working together to conduct an experiment on the gas giant planet. What are they studying? What kind of data are they collecting? We'll leave that up to your imagination!
 
 ---
 

@@ -1,40 +1,89 @@
+<!--font:Montserrat-->
+
+# Retro Spacecraft Pixel Art
+
+Step back in time with this charming pixel art depiction of a spacecraft. The blocky shapes and limited colors create a nostalgic and playful feel that's sure to bring a smile to your face.
+
+Use this retro-inspired artwork as a background on your desktop or phone, or get creative and use it as inspiration for your own pixel art creations. With its simple yet captivating design, this spacecraft pixel art is perfect for anyone who loves retro gaming or sci-fi.
+
+To download the artwork, simply click the "Download" button below. It's available in various sizes to fit your device perfectly. Add a touch of whimsy to your digital life with this delightful spacecraft pixel art!
+
+[Download](insert download link here)
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
 
-<!--font:Poppins-->
+---
+
 
 # Spacecraft Pixel Art Wallpaper
 
-Welcome to our website featuring a nostalgic and playful pixel art depiction of a spacecraft! This wallpaper is perfect for anyone who loves retro video games or wants to add some fun to their desktop background.
+Decorate your desktop or phone with this charming pixel art wallpaper of a spacecraft! The blocky shapes and limited colors create a nostalgic and playful feel, perfect for anyone who loves retro gaming or sci-fi.
 
-## Features
+To download the wallpaper, simply click the "Download" button below. It's available in various sizes to fit your device perfectly. And if you're feeling creative, why not use it as inspiration for your own pixel art creations?
 
-- Pixel art style
-- Blocky shapes
-- Limited colors
-- Nostalgic and playful feel
+Enjoy the whimsical charm of this spacecraft pixel art wallpaper on all your devices! 
 
-## Usage
+[Download](insert download link here)
 
-To use this wallpaper, simply download the image by clicking on it and then right-clicking to save. Then, set it as your desktop background by following these steps:
 
-1. Right-click on your desktop.
-2. Select "Personalize" from the dropdown menu.
-3. Click on "Background."
-4. Choose "Picture" and select the downloaded image.
-5. Adjust the picture position and choose whether to fill, fit, or stretch the image.
+---
 
-## Conclusion
 
-We hope you enjoy using this spacecraft pixel art wallpaper as much as we do! Don't forget to check out our other wallpapers and stay tuned for more updates.
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Retro Spacecraft Pixel Art
+
+Step back in time with this charming pixel art depiction of a spacecraft. The blocky shapes and limited colors create a nostalgic and playful feel that's sure to bring a smile to your face.
+
+Use this retro-inspired artwork as a background on your desktop or phone, or get creative and use it as inspiration for your own pixel art creations. With its simple yet captivating design, this spacecraft pixel art is perfect for anyone who loves retro gaming or sci-fi.
+
+To download the artwork, simply click the "Download" button below. It's available in various sizes to fit your device perfectly. Add a touch of whimsy to your digital life with this delightful spacecraft pixel art!
+
+[Download](insert download link here)
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Dancing Script
+- Playfair Display
+- Montserrat
+- Inter
+- IBM Plex Sans
+- Roboto
+- Great Vibes
+- Lobster
+- Poppins
+- Alegreya
+- Orbitron
+- Futura
+- Raleway
+- Exo 2
+- Barlow Condensed
+- Lato
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

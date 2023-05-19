@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Misty Forest" - A Serene Escape for Your Desktop
+# Misty Forest Desktop Escape
 
 Welcome to Misty Forest, your ultimate destination for breathtaking wallpapers that transport you to the tranquility of nature. Our wallpaper collection features stunning visuals of forests, mountains, oceans, and more, captured in their most serene moments.
 

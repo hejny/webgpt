@@ -12,9 +12,9 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Cormorant Garamond" font would be a great fit for this website.-->
+<!--font:Cormorant Garamond-->
 
-# The Hidden Path - A Dark and Moody Forest
+# Hidden Path in a Dark Forest.
 
 Welcome to our horror and mystery website, where we explore the unknown and the unexplained. Our website is designed to take you on a journey through the darkest corners of your imagination, and what better way to start than with a dark and moody forest?
 

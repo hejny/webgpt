@@ -30,7 +30,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "src/utils/image/createImageInBrowser.ts.todo"  ],
+, "src/utils/image/createImageInBrowser.ts.todo", "scripts/generate-wallpapers-content/utils/getChatGptApi.ts.todo"  ],
   "exclude": [
     "node_modules",
     "cypress",

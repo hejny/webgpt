@@ -1,17 +1,70 @@
+<!--font:Roboto-->
+
+# Ainautes: Advancing S&T
+
+Experience the future with our stunning cityscape wallpaper, where Ainautes work alongside AI to create groundbreaking innovations in science and technology. Our community of brilliant minds is dedicated to exploring new frontiers and pushing the limits of what's possible.
+
+Join us on this exciting journey as we revolutionize the world through cutting-edge research and development. With Ainautes, the possibilities are endless. Explore our website to learn more about our mission, values, and current projects.
+
+Don't just imagine the future – be a part of it with Ainautes.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology."
+"A futuristic cityscape where Ainautes work alongside AI to push the boundaries of science and technology."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to Ainautes - Pushing the Boundaries of Science and Technology
+
+Experience the future with our stunning cityscape wallpaper, where Ainautes work alongside AI to create groundbreaking innovations in science and technology. Our community of brilliant minds is dedicated to exploring new frontiers and pushing the limits of what's possible.
+
+Join us on this exciting journey as we revolutionize the world through cutting-edge research and development. With Ainautes, the possibilities are endless. Explore our website to learn more about our mission, values, and current projects.
+
+Don't just imagine the future – be a part of it with Ainautes.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lobster
+- Roboto
+- Open Sans
+- Cabin
+- Cinzel
+- IBM Plex Sans
+- Barlow Condensed
+- Great Vibes
+- Poppins
+- Dancing Script
+- Lato
+- Cormorant Garamond
+- Montserrat
+- Cinzel Decorative
+- Alegreya
+- Creepster
+- Futura
+- Orbitron
+- Exo 2
+- Inter
+- Playfair Display
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+I would recommend using the "Roboto" font for the website.
+
 -->
-
-<!--font:Poppins-->
-
-# Welcome to the Future
-
-Our website is dedicated to exploring the cutting-edge advancements in science and technology that are shaping the world of tomorrow. To help set the tone for our vision of the future, we've chosen a stunning wallpaper that depicts a futuristic cityscape.
-
-In this vibrant metropolis, AInauts work alongside AI to push the boundaries of what's possible. From quantum computing to genetic engineering, the brightest minds in the world are coming together to create a better tomorrow.
-
-As you explore our site, we hope this wallpaper inspires you to dream big and imagine the possibilities of what's to come. Join us on this exciting journey into the future!

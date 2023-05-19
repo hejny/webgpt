@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Outdoor Adventure Sports Website
+# Outdoor Sports Site.
 
 Welcome to our outdoor adventure sports website! We're passionate about exploring the great outdoors and helping others do the same. To help inspire you, we've chosen a minimalist graphic of a mountain range as our wallpaper.
 

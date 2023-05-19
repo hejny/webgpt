@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Bee-Friendly Gardening: Tips for Creating a Buzzworthy Garden
+# Bee-Friendly Gardening Tips
 
 Welcome to our website dedicated to bee-friendly gardening! Our mission is to inspire and educate gardeners on how to create beautiful outdoor spaces that also support the health and well-being of bees and other pollinators.
 

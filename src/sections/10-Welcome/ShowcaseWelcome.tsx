@@ -9,7 +9,6 @@ import styles from './Welcome.module.css';
  */
 export function ShowcaseWelcomeSection() {
     const wallpaper = useWallpaper();
-    const skin = useSkin();
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
@@ -20,9 +19,9 @@ export function ShowcaseWelcomeSection() {
             */}
 
             <style>{`
-                @import url('https://fonts.googleapis.com/css2?family=${wallpaper.font
+                @import url(https://fonts.googleapis.com/css2?family=${wallpaper.font
                     .split(' ')
-                    .join('+')}&display=swap}');
+                    .join('+')}&amp;display=swap});
             `}</style>
             <div
                 style={{
@@ -41,6 +40,7 @@ export function ShowcaseWelcomeSection() {
 }
 
 /**
+ * TODO: [🧬] !!! Fake generating - write tokenized text
  * TODO: !! [👕] Allow to edit the header position + other things
  * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome
  */

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Future with Robotic Technology
+# Future Exploration with Robots
 
 Welcome to our website dedicated to exploring the future with robotic technology. As technology advances, so does the potential for robotics to revolutionize the way we live and work. Our website is dedicated to showcasing the latest advancements in robotic technology and how they are shaping the world around us.
 

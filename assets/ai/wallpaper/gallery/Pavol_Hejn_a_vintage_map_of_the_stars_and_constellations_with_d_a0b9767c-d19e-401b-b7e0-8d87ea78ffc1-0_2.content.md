@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Vintage Map of the Stars and Constellations
+# Vintage Star Map
 
 Welcome to our website featuring a stunning vintage map of the stars and constellations. This wallpaper showcases detailed illustrations of spacecraft and celestial bodies, making it the perfect addition to any space enthusiast's collection.
 

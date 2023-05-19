@@ -1,41 +1,129 @@
+<!--font:Montserrat-->
+
+# Universe's Wonders Explored
+
+Welcome to our website dedicated to exploring the mysteries and beauty of the universe. As you browse through our pages, take a moment to admire the stunning photograph of a glacier on a distant planet that graces our homepage.
+
+![Glacier on Distant Planet](https://example.com/glacier-wallpaper.jpg)
+
+The striking contrast of blue and white against the dark sky invites us to imagine what it would be like to witness this breathtaking sight in person. Our mission is to inspire curiosity and wonder about the universe and all that it encompasses.
+
+From the smallest particles to the largest galaxies, there is an infinite amount to discover and explore. Join us on this journey of discovery and let's marvel at the wonders of the universe together.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Poppins-->
-
-# Glacier Planet Wallpaper
-
-Welcome to our website featuring a stunning photograph of a glacier on a distant planet. This wallpaper showcases the beauty of nature and the vastness of the universe.
-
-## Wallpaper Description
-
-The wallpaper features a photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky. The image captures the majesty and grandeur of this icy landscape, which is unlike anything found on Earth.
-
-## Download Instructions
-
-To download this wallpaper, simply right-click on the image and select "Save Image As" to save it to your computer. You can then set it as your desktop background or use it in any other way you like.
-
-## About the Photographer
-
-The photographer who captured this stunning image is John Smith, an avid space enthusiast and amateur photographer. He took this photo during a recent trip to explore the outer reaches of our solar system, using state-of-the-art equipment to capture every detail of this incredible scene.
-
-> "I was blown away by the beauty of this glacier on a distant planet. It's amazing to think that there are so many incredible landscapes out there just waiting to be discovered." - John Smith
-
-## More Wallpapers
-
-If you enjoyed this wallpaper, be sure to check out our collection of other stunning images from around the world and beyond. From breathtaking landscapes to awe-inspiring space photography, we have something for everyone.
 
 ---
 
-Thanks for visiting our website and we hope you enjoy this beautiful glacier planet wallpaper!
+
+# Exploring the Wonders of the Universe
+
+Welcome to our website dedicated to exploring the mysteries and beauty of the universe. As you navigate through our pages, let this stunning photograph of a glacier on a distant planet serve as a reminder of the awe-inspiring wonders that exist beyond our own world.
+
+![Glacier on Distant Planet](https://example.com/glacier-wallpaper.jpg)
+
+The blue and white hues of the glacier stand out against the dark sky, inviting us to imagine what it would be like to stand on that distant planet and witness this breathtaking sight in person. 
+
+Our mission is to inspire curiosity and wonder about the universe and all that it contains. From the smallest particles to the largest galaxies, there is so much to discover and explore. Join us on this journey of discovery and let's marvel at the wonders of the universe together.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Wonders of the Universe
+
+Welcome to our website dedicated to exploring the mysteries and beauty of the universe. As you navigate through our pages, you'll find a stunning photograph of a glacier on a distant planet serving as a reminder of the awe-inspiring wonders that exist beyond our own world.
+
+![Glacier on Distant Planet](https://example.com/glacier-wallpaper.jpg)
+
+The blue and white hues of the glacier stand out against the dark sky, inviting us to imagine what it would be like to witness this breathtaking sight in person. Our mission is to inspire curiosity and wonder about the universe and all that it contains.
+
+From the smallest particles to the largest galaxies, there is so much to discover and explore. Join us on this journey of discovery and let's marvel at the wonders of the universe together.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Exploring the Universe's Wonders
+
+Welcome to our website dedicated to uncovering the mysteries and beauty of the universe. As you explore our pages, take a moment to appreciate the stunning photograph of a glacier on a distant planet that greets you.
+
+![Glacier on Distant Planet](https://example.com/glacier-wallpaper.jpg)
+
+The contrasting blue and white colors against the dark sky invite us to imagine what it would be like to witness this breathtaking sight in person. Our mission is to inspire curiosity and wonder about the universe and all that it contains.
+
+From the tiniest particles to the largest galaxies, there is an endless amount to discover and explore. Join us on this journey of discovery and let's marvel at the wonders of the universe together.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Uncovering the Wonders of the Universe
+
+Welcome to our website dedicated to exploring the mysteries and beauty of the universe. As you browse through our pages, take a moment to admire the stunning photograph of a glacier on a distant planet that graces our homepage.
+
+![Glacier on Distant Planet](https://example.com/glacier-wallpaper.jpg)
+
+The striking contrast of blue and white against the dark sky invites us to imagine what it would be like to witness this breathtaking sight in person. Our mission is to inspire curiosity and wonder about the universe and all that it encompasses.
+
+From the smallest particles to the largest galaxies, there is an infinite amount to discover and explore. Join us on this journey of discovery and let's marvel at the wonders of the universe together.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Roboto
+- Raleway
+- Exo 2
+- IBM Plex Sans
+- Great Vibes
+- Orbitron
+- Playfair Display
+- Montserrat
+- Open Sans
+- Futura
+- Poppins
+- Alegreya
+- Barlow Condensed
+- Lobster
+- Inter
+- Lato
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

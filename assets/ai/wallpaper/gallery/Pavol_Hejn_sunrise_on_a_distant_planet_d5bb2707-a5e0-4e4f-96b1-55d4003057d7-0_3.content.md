@@ -1,15 +1,94 @@
-<!--
-Write me content for website with wallpaper "Sunrise on a distant planet"
--->
-
 <!--font:Poppins-->
 
-Welcome to our website featuring the stunning wallpaper "Sunrise on a distant planet." 
+# Sunrise on a Distant Planet
 
-Imagine waking up to the breathtaking view of a sunrise on a planet millions of miles away. The vibrant colors of the sky, the unique terrain of the planet, and the sense of wonder that comes with exploring the unknown - all captured in this stunning wallpaper.
+Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet." 
 
-Our team of talented artists has created this wallpaper to transport you to another world, where the possibilities are endless and the beauty is beyond imagination. Whether you use it as your desktop background or display it on your mobile device, this wallpaper is sure to inspire awe and spark your imagination.
+## About the Wallpaper
 
-At our website, we offer a wide range of wallpapers that cater to different tastes and preferences. From nature landscapes to abstract designs, we have something for everyone. We also ensure that our wallpapers are of high quality and resolution, so you can enjoy them to the fullest.
+This breathtaking image captures the beauty of a sunrise on a planet far, far away. The vibrant colors and unique landscape make it a perfect choice for anyone looking to add some otherworldly flair to their desktop or mobile device.
 
-So why wait? Download "Sunrise on a distant planet" wallpaper today and let it take you on a journey to the unknown. Explore the wonders of the universe from the comfort of your own device and be inspired by the limitless possibilities that lie ahead.
+## Download the Wallpaper
+
+To download this wallpaper in high resolution, simply click the download button below. It's completely free and available for personal use.
+
+[Download Now](insert-download-link-here)
+
+## Share Your Experience
+
+We would love to see how you're using this wallpaper! Share your experience with us on social media by using the hashtag #DistantPlanetSunrise. Who knows, your post might even be featured on our website!
+
+Thank you for visiting our website and we hope you enjoy your new wallpaper!
+
+<!--
+
+Write me markdown content of website with wallpaper:
+
+"Sunrise on a distant planet"
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Sunrise on a Distant Planet
+
+Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet." 
+
+## About the Wallpaper
+
+This breathtaking image captures the beauty of a sunrise on a planet far, far away. The vibrant colors and unique landscape make it a perfect choice for anyone looking to add some otherworldly flair to their desktop or mobile device.
+
+## Download the Wallpaper
+
+To download this wallpaper in high resolution, simply click the download button below. It's completely free and available for personal use.
+
+[Download Now](insert-download-link-here)
+
+## Share Your Experience
+
+We would love to see how you're using this wallpaper! Share your experience with us on social media by using the hashtag #DistantPlanetSunrise. Who knows, your post might even be featured on our website!
+
+Thank you for visiting our website and we hope you enjoy your new wallpaper!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Cinzel Decorative
+- IBM Plex Sans
+- Roboto
+- Poppins
+- Exo 2
+- Great Vibes
+- Alegreya
+- Orbitron
+- Open Sans
+- Cabin
+- Montserrat
+- Lobster
+- Creepster
+- Playfair Display
+- Cinzel
+- Inter
+- Lato
+- Futura
+- Barlow Condensed
+- Cormorant Garamond
+- Dancing Script
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

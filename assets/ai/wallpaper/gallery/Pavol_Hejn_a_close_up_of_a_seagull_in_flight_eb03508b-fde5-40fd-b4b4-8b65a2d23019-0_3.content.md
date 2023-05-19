@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Coastal Vibes: A Seagull's Flight
+# Coastal Seagull Flight.
 
 Welcome to Coastal Vibes, a website dedicated to bringing the serene beauty of the coast to your digital life. Our latest addition is a stunning wallpaper featuring a close-up of a seagull in flight, captured by talented photographer John Doe.
 

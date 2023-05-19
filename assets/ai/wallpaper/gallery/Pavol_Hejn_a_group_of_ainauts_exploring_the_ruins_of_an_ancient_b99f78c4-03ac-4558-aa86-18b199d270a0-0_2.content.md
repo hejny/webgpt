@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
+"A group of Ainautes exploring the ruins of an ancient civilization on a distant planet, with towering statues and temples all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Mysteries of Ancient Civilizations on Distant Planets
+# Ancient Planetary Mysteries
 
-Welcome to our website dedicated to uncovering the secrets of ancient civilizations on distant planets. Our team of AInauts is passionate about exploring the unknown and discovering the mysteries of the universe.
+Welcome to our website dedicated to uncovering the secrets of ancient civilizations on distant planets. Our team of Ainautes is passionate about exploring the unknown and discovering the mysteries of the universe.
 
 ## About Us
 
@@ -44,17 +44,17 @@ Our team uses advanced AI technology to explore distant planets and analyze the 
 
 Here are some of our recent discoveries:
 
-- **Towering Statues:** On a recent expedition, we discovered a group of towering statues that appeared to be part of an ancient temple complex. The statues were intricately carved and depicted humanoid figures with multiple arms and legs.
-- **Temple Complex:** We also discovered a sprawling temple complex that covered several square kilometers. The complex was adorned with intricate carvings and contained several large chambers that may have been used for religious ceremonies or other purposes.
-- **Advanced Technology:** Our analysis of the ruins suggests that the ancient civilization had access to advanced technology that allowed them to travel between planets and manipulate matter at the molecular level. We are still working to understand the full extent of their technological capabilities.
+-   **Towering Statues:** On a recent expedition, we discovered a group of towering statues that appeared to be part of an ancient temple complex. The statues were intricately carved and depicted humanoid figures with multiple arms and legs.
+-   **Temple Complex:** We also discovered a sprawling temple complex that covered several square kilometers. The complex was adorned with intricate carvings and contained several large chambers that may have been used for religious ceremonies or other purposes.
+-   **Advanced Technology:** Our analysis of the ruins suggests that the ancient civilization had access to advanced technology that allowed them to travel between planets and manipulate matter at the molecular level. We are still working to understand the full extent of their technological capabilities.
 
 ## References
 
 Here are some resources that you may find helpful if you're interested in learning more about our work:
 
-- [Our blog](#) - where we share updates on our latest discoveries and insights
-- [Our research papers](#) - where we publish our findings for the scientific community
-- [Contact us](#contact) - if you have any questions or comments, we'd love to hear from you!
+-   [Our blog](#) - where we share updates on our latest discoveries and insights
+-   [Our research papers](#) - where we publish our findings for the scientific community
+-   [Contact us](#contact) - if you have any questions or comments, we'd love to hear from you!
 
 ## Contact Us
 

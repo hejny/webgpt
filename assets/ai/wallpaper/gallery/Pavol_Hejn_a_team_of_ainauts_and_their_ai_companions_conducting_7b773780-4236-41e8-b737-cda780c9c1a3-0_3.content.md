@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
+"A team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Depths of Gas Giants: A Journey with AInauts
+# Gas Giants with Ainautes
 
-Welcome to our website dedicated to showcasing the incredible work of our team of AInauts and their AI companions as they conduct experiments on the surface of massive gas giant planets. Our mission is to explore these mysterious worlds and uncover the secrets hidden within their depths.
+Welcome to our website dedicated to showcasing the incredible work of our team of Ainautes and their AI companions as they conduct experiments on the surface of massive gas giant planets. Our mission is to explore these mysterious worlds and uncover the secrets hidden within their depths.
 
 ## About Us
 
@@ -44,16 +44,16 @@ Here's what some of our users have to say about our work:
 
 For more information about our work and the technology we use, please refer to the following resources:
 
-- [Our Blog](#blog)
-- [Research Papers](#papers)
-- [Frequently Asked Questions](#faq)
+-   [Our Blog](#blog)
+-   [Research Papers](#papers)
+-   [Frequently Asked Questions](#faq)
 
 ## Contact Us
 
 If you have any questions or would like to learn more about our work, please don't hesitate to contact us:
 
-- Email: [contact@ainauts.com](mailto:contact@ainauts.com)
-- Phone: 1-800-AINAUTS
-- Social Media: [Twitter](#twitter), [Facebook](#facebook), [Instagram](#instagram)
+-   Email: [contact@ainauts.com](mailto:contact@ainauts.com)
+-   Phone: 1-800-AINAUTS
+-   Social Media: [Twitter](#twitter), [Facebook](#facebook), [Instagram](#instagram)
 
-Thank you for visiting our website, and we hope you'll join us on our journey of discovery as we continue to explore the depths of gas giants with our AInauts.
+Thank you for visiting our website, and we hope you'll join us on our journey of discovery as we continue to explore the depths of gas giants with our Ainautes.

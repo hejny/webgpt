@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to the Future of Innovation!
+# Future Innovation Welcome!
 
 Are you ready to experience the cutting-edge technology and innovation of tomorrow? Look no further than our website, where we bring you the latest advancements in science and technology.
 

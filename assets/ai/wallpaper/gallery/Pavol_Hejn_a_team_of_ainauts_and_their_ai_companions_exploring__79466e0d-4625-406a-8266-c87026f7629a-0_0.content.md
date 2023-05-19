@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
+"A team of Ainautes and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Space Exploration
 
-Welcome to our website where we showcase the exciting adventures of a team of AInauts and their AI companions. Join us as we explore a massive, abandoned alien spacecraft floating in the depths of space.
+Welcome to our website where we showcase the exciting adventures of a team of Ainautes and their AI companions. Join us as we explore a massive, abandoned alien spacecraft floating in the depths of space.
 
 ## The Mission
 
@@ -24,12 +24,12 @@ Our mission is to uncover the mysteries of this ancient vessel and discover what
 
 ## The Crew
 
-Meet our talented crew of AInauts and their trusty AI companions:
+Meet our talented crew of Ainautes and their trusty AI companions:
 
-- Captain Ava and her AI companion, Atlas
-- Engineer Max and his AI companion, Nova
-- Scientist Lily and her AI companion, Cosmos
-- Navigator Kai and his AI companion, Vega
+-   Captain Ava and her AI companion, Atlas
+-   Engineer Max and his AI companion, Nova
+-   Scientist Lily and her AI companion, Cosmos
+-   Navigator Kai and his AI companion, Vega
 
 ## The Ship
 

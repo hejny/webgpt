@@ -1,59 +1,97 @@
+<!--font:Montserrat-->
+
+# RoboWall
+
+Welcome to RoboWall, your source for high-quality robot-themed wallpapers! Our featured wallpaper is a simple graphic of a robot arm, set against a gradient background of two complementary colors. This design is perfect for anyone who loves robots or wants to add a futuristic touch to their desktop or mobile device.
+
+Our wallpapers are carefully curated and designed to be both visually appealing and functional. They come in a variety of sizes to fit any screen, from smartphones to large desktop monitors. Plus, all of our wallpapers are free to download and use.
+
+In addition to our featured wallpaper, we offer a wide selection of other robot-themed designs, including abstract patterns, illustrations, and photographs. Browse our collection to find the perfect wallpaper for your device.
+
+At RoboWall, we're passionate about robots and technology, and we believe that everyone should have access to beautiful and inspiring wallpapers that reflect these interests. So why settle for a boring, generic wallpaper when you can have a stunning robot design instead? Download your favorite wallpaper today and join the RoboWall community!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a simple graphic of a robot arm, against a gradient background of two complementary colors."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Montserrat-->
-
-# Robot Arm Wallpaper for Your Tech-Themed Desktop
-
-Are you a tech enthusiast looking to add some personality to your desktop? Look no further than our robot arm wallpaper! This simple graphic features a sleek robotic arm against a gradient background of two complementary colors. It's the perfect addition to any tech-themed setup.
-
-## Features
-
-- High-quality resolution for a crisp, clear image
-- Complementary color gradient adds depth and dimension
-- Simple graphic design won't distract from your icons or desktop widgets
-
-## User Stories
-
-"I love this wallpaper! As an engineer, I appreciate the simplicity and clean design of the robot arm. It's the perfect complement to my minimalist desktop setup." - John D.
-
-"This wallpaper is so cool! The gradient background really makes the robot arm pop. It's like having a piece of modern art on my computer screen." - Sarah M.
-
-## Installation
-
-Getting started with our robot arm wallpaper is easy:
-
-1. Click the download button below to save the image to your computer.
-2. Right-click the downloaded file and select "Set as desktop background" or "Set as wallpaper."
-3. Enjoy your new tech-themed desktop!
-
-## References
-
-Looking for more tech-inspired wallpapers? Check out these resources:
-
-- [WallpaperSafari](#)
-- [WallpaperCave](#)
-- [Unsplash](#)
-
-## Contact Us
-
-Have questions or feedback about our robot arm wallpaper? We'd love to hear from you! Send us an email at [info@techwallpapers.com](mailto:info@techwallpapers.com) or fill out the form below.
 
 ---
 
-Thank you for choosing Tech Wallpapers for your desktop customization needs. Stay tuned for more tech-inspired designs coming soon!
+
+# RoboWall
+
+Welcome to RoboWall, your source for high-quality robot-themed wallpapers! Our featured wallpaper is a simple graphic of a robot arm, set against a gradient background of two complementary colors. This design is perfect for anyone who loves robots or wants to add a futuristic touch to their desktop or mobile device.
+
+Our wallpapers are carefully curated and designed to be both visually appealing and functional. They come in a variety of sizes to fit any screen, from smartphones to large desktop monitors. Plus, all of our wallpapers are free to download and use.
+
+In addition to our featured wallpaper, we offer a wide selection of other robot-themed designs, including abstract patterns, illustrations, and photographs. Browse our collection to find the perfect wallpaper for your device.
+
+At RoboWall, we're passionate about robots and technology, and we believe that everyone should have access to beautiful and inspiring wallpapers that reflect these interests. So why settle for a boring, generic wallpaper when you can have a stunning robot design instead? Download your favorite wallpaper today and join the RoboWall community!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Orbitron
+- Open Sans
+- Lato
+- Alegreya
+- Lobster
+- Great Vibes
+- Montserrat
+- Inter
+- Futura
+- Roboto
+- Dancing Script
+- Exo 2
+- Poppins
+- IBM Plex Sans
+- Barlow Condensed
+- Playfair Display
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Orbitron
+- Open Sans
+- Lato
+- Alegreya
+- Lobster
+- Great Vibes
+- Montserrat
+- Inter
+- Futura
+- Roboto
+- Dancing Script
+- Exo 2
+- Poppins
+- IBM Plex Sans
+- Barlow Condensed
+- Playfair Display
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

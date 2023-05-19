@@ -1,44 +1,159 @@
+<!--font:Poppins-->
+
+# AI Buzzword Background
+
+Add a touch of tech-savvy style to your device with our minimalist background featuring a repeating pattern of AI-related buzzwords. The sleek font and color scheme make it perfect for any desktop or phone.
+
+## Download Instructions
+
+To download the background, simply right-click on the image and select "Save Image As" or "Set as Desktop Background" for immediate use.
+
+## Compatibility
+
+Our background is compatible with most devices and screen resolutions. If you encounter any issues, please contact us for assistance.
+
+## About Us
+
+We're a team of technology enthusiasts who love exploring the latest advancements in AI and machine learning. Stay tuned for more exciting content and updates from our community!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A wallpaper with a repeating pattern of AI-related buzzwords, in a minimalist font and color scheme."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Roboto-->
-
-# AI Buzzwords Wallpaper
-
-Decorate your desktop or phone screen with our AI Buzzwords Wallpaper! This minimalist wallpaper features a repeating pattern of popular AI-related buzzwords, presented in a sleek font and color scheme.
-
-## Features
-
--   Minimalist design
--   Repeating pattern of AI-related buzzwords
--   Sleek font and color scheme
--   Available for desktop and phone screens
-
-## How to Use
-
-To use the AI Buzzwords Wallpaper on your device, simply download the image and set it as your wallpaper. The wallpaper is available in multiple sizes to fit a range of devices.
-
-> "A great way to show off your love for AI and stay inspired throughout the day!"
-
-## Download
-
-Download the AI Buzzwords Wallpaper in the following sizes:
-
--   1920x1080 (desktop)
--   1280x720 (desktop)
--   1080x1920 (phone)
 
 ---
 
-Stay inspired and motivated with our AI Buzzwords Wallpaper. Download now and show off your passion for all things AI!
+
+# AI Buzzwords Wallpaper
+
+Decorate your desktop or phone with our minimalist wallpaper featuring a repeating pattern of AI-related buzzwords. The sleek font and color scheme make it a perfect addition to any tech enthusiast's collection.
+
+## Download Instructions
+
+To download the wallpaper, simply right-click on the image and select "Save Image As" or "Set as Desktop Background" for immediate use.
+
+## Compatibility
+
+This wallpaper is compatible with most devices and screen resolutions. If you encounter any issues, please contact us for assistance.
+
+## About Us
+
+We are a team of technology enthusiasts who love exploring the latest advancements in AI and machine learning. Stay tuned for more exciting content and updates from our community!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# AI Buzzwords for Tech Enthusiasts
+
+Looking to add a touch of tech-savvy style to your desktop or phone? Our minimalist background features a repeating pattern of AI-related buzzwords in a sleek font and color scheme that's perfect for any device.
+
+## Download Instructions
+
+To download the background, simply right-click on the image and select "Save Image As" or "Set as Desktop Background" for immediate use.
+
+## Compatibility
+
+Our background is compatible with most devices and screen resolutions. If you encounter any issues, please contact us for assistance.
+
+## About Us
+
+We're a team of technology enthusiasts who love exploring the latest advancements in AI and machine learning. Stay tuned for more exciting content and updates from our community!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Minimalist AI Buzzword Background
+
+Looking to add a touch of tech-savvy style to your device? Our minimalist background features a repeating pattern of AI-related buzzwords in a sleek font and color scheme that's perfect for any desktop or phone.
+
+## Download Instructions
+
+To download the background, simply right-click on the image and select "Save Image As" or "Set as Desktop Background" for immediate use.
+
+## Compatibility
+
+Our background is compatible with most devices and screen resolutions. If you encounter any issues, please contact us for assistance.
+
+## About Us
+
+We're a team of technology enthusiasts who love exploring the latest advancements in AI and machine learning. Stay tuned for more exciting content and updates from our community!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# AI Buzzword Background
+
+Add a touch of tech-savvy style to your device with our minimalist background featuring a repeating pattern of AI-related buzzwords. The sleek font and color scheme make it perfect for any desktop or phone.
+
+## Download Instructions
+
+To download the background, simply right-click on the image and select "Save Image As" or "Set as Desktop Background" for immediate use.
+
+## Compatibility
+
+Our background is compatible with most devices and screen resolutions. If you encounter any issues, please contact us for assistance.
+
+## About Us
+
+We're a team of technology enthusiasts who love exploring the latest advancements in AI and machine learning. Stay tuned for more exciting content and updates from our community!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Montserrat
+- Roboto
+- Exo 2
+- Raleway
+- Dancing Script
+- Alegreya
+- Poppins
+- IBM Plex Sans
+- Great Vibes
+- Playfair Display
+- Orbitron
+- Lobster
+- Open Sans
+- Lato
+- Barlow Condensed
+- Inter
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

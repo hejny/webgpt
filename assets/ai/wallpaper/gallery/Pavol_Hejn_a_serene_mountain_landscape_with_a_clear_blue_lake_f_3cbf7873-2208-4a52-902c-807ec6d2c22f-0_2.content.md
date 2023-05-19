@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Serenity: Finding Inner Peace through Meditation and Wellness
+# Meditation for Serenity
 
 Welcome to Serenity, your online destination for finding inner peace and tranquility. Our platform is designed to help you achieve a state of calmness and balance in your life through meditation and wellness practices.
 

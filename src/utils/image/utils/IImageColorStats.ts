@@ -1,13 +1,31 @@
 import { Color } from '../../color/Color';
 import { WithTake } from '../../take/interfaces/ITakeChain';
+import { IImage } from '../IImage';
+
+export interface IComputeImageColorStats<TVersion extends string> {
+    version: TVersion;
+    (image: IImage): IImageColorStats<TVersion>;
+}
+
+export interface IImageColorStats<TVersion extends string> {
+    version: TVersion;
+    palette: Array<WithTake<Color>>;
+
+    /**
+     * The average color of the image as a Color object
+     */
+    averageColor: WithTake<Color>;
+
+    // TODO: colorSpace:number
+    // TODO: scaleRatio:number
+}
 
 /**
- * Define an interface for the image color statistics
+ * Define an interface for the image color statistics of current colorstats version
  */
-export interface IImageColorStats extends IImageColorStatsRegion {
-    version: number;
-    // TODO: colorSpace:number
-
+export interface IImageColorStatsAdvanced<TVersion extends string>
+    extends IImageColorStats<TVersion>,
+        IImageColorStatsRegion {
     bottomHalf: IImageColorStatsRegion;
     bottomThird: IImageColorStatsRegion;
     bottomLine: IImageColorStatsRegion;
@@ -18,6 +36,7 @@ export interface IImageColorStats extends IImageColorStatsRegion {
  */
 export interface IImageColorStatsRegion {
     // TODO: region: IRegion + pixel size
+    // TODO: Instead of WithTake<Color> use intefrace IImageColor{count:number, color:WithTake<Color>}
 
     /**
      * The average color of the image as a Color object
@@ -48,5 +67,4 @@ export interface IImageColorStatsRegion {
      * The most grouped color of the image as a Color object
      */
     mostGroupedColors: Array<WithTake<Color>>;
-
 }

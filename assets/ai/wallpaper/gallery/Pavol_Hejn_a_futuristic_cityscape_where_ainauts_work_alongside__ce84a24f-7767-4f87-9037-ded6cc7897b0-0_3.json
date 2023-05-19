@@ -28,14 +28,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology."
+            "A futuristic cityscape where Ainautes work alongside AI to push the boundaries of science and technology."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/ce84a24f-7767-4f87-9037-ded6cc7897b0/0_3.png",
         "eventType": "upscale",
         "test": false
@@ -47,9 +45,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "7199bae0-38a3-4775-88a0-7bfa603130f9",
-    "image_paths": [
-        "https://cdn.midjourney.com/ce84a24f-7767-4f87-9037-ded6cc7897b0/0_3.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/ce84a24f-7767-4f87-9037-ded6cc7897b0/0_3.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -62,7 +58,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1105404970301394945",
     "platform_thread_id": null,
-    "prompt": "A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.",
+    "prompt": "A futuristic cityscape where Ainautes work alongside AI to push the boundaries of science and technology.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -70,7 +66,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A futuristic cityscape where AInauts work alongside AI to push the boundaries of science and technology.  --aspect 3:2 --q 2",
+    "full_command": "A futuristic cityscape where Ainautes work alongside AI to push the boundaries of science and technology.  --aspect 3:2 --q 2",
     "reference_job_id": "ce84a24f-7767-4f87-9037-ded6cc7897b0",
     "reference_image_num": "3"
 }

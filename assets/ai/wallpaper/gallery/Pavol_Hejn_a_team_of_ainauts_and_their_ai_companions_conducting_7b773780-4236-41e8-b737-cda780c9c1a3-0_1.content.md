@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions conducting experiments on the surface of a massive, gas giant planet."
+"A team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Depths of Gas Giants
+# Gas Giant Exploration
 
-Welcome to our website dedicated to the exploration of gas giant planets and their moons. Our team of AInauts and their AI companions are conducting groundbreaking experiments on the surface of these massive planets, discovering new insights into the mysteries of our universe.
+Welcome to our website dedicated to the exploration of gas giant planets and their moons. Our team of Ainautes and their AI companions are conducting groundbreaking experiments on the surface of these massive planets, discovering new insights into the mysteries of our universe.
 
 ## About Us
 
@@ -52,9 +52,9 @@ Our team is currently focused on several key research areas:
 
 If you're interested in learning more about our research, check out these resources:
 
-- [NASA's Gas Giant Exploration Page](#)
-- [ESA's Jupiter Mission Page](#)
-- [Nature Astronomy Journal](#)
+-   [NASA's Gas Giant Exploration Page](#)
+-   [ESA's Jupiter Mission Page](#)
+-   [Nature Astronomy Journal](#)
 
 ## Contact Us
 

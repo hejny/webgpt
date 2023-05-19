@@ -1,43 +1,129 @@
+<!--font:Poppins-->
+
+# Ainautes: AI Explores Space
+
+Welcome to Ainautes, your go-to source for the latest news and updates on space exploration and artificial intelligence. Our team of skilled Ainautes is dedicated to pushing the boundaries of what's possible in space using cutting-edge technology and innovative approaches.
+
+Our website features stunning images of our Ainautes piloting spacecraft through asteroid fields, showcasing the excitement and danger of space exploration, as well as the bravery and skill of our team.
+
+But we're more than just a pretty picture. At Ainautes, we're committed to advancing the field of AI and its applications in space exploration. From developing autonomous spacecraft to analyzing vast amounts of data from distant planets, our team is at the forefront of this exciting field.
+
+Whether you're a space enthusiast or an AI expert, there's something here for everyone. Join us on this incredible journey as we explore the final frontier with the help of artificial intelligence. Let's boldly go where no one has gone before!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
+"A team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Poppins-->
-
-# Space Adventure Wallpaper
-
-Experience the thrill of space exploration with our stunning wallpaper featuring a team of AInauts navigating through an asteroid field. 
-
-![Space Adventure Wallpaper](#)
-
-## About the Wallpaper
-
-Our wallpaper depicts a daring mission through an asteroid field, where explosions and debris fly all around the spacecraft. The image captures the excitement and danger of space exploration, as well as the ingenuity and bravery of those who pilot these missions.
-
-## Features
-
-- High-quality resolution for crisp and clear display on any device
-- Captivating and dynamic design that adds depth to any desktop or mobile screen
-- Easy to download and set up as your new wallpaper
-
-## How to Download
-
-To download this wallpaper, simply right-click on the image and select "Save Image As" to save it to your computer. Then, go to your desktop settings and set the image as your new wallpaper.
-
-## Share Your Experience
-
-We love to see how our customers are using our wallpapers! Share your experience with us by tagging us on social media using the hashtag #SpaceAdventureWallpaper. 
 
 ---
 
-_"Space is for everybody. It's not just for a few people in science or math, or for a select group of astronauts. That's our new frontier out there, and it's everybody's business to know about space."_ - Christa McAuliffe
+
+# Ainautes - Exploring the Final Frontier
+
+Welcome to Ainautes, your one-stop destination for all things related to space exploration and artificial intelligence. Our team of skilled Ainautes is dedicated to pushing the boundaries of what's possible in space, using cutting-edge technology and innovative approaches.
+
+As you explore our website, you'll see stunning images of our Ainautes piloting spacecraft through asteroid fields, with explosions and debris flying all around them. These images capture the excitement and danger of space exploration, and showcase the bravery and skill of our team.
+
+But we're more than just a pretty picture. At Ainautes, we're committed to advancing the field of AI and its applications in space exploration. From developing autonomous spacecraft to analyzing vast amounts of data from distant planets, our team is at the forefront of this exciting field.
+
+So join us on this incredible journey as we explore the final frontier. Whether you're a space enthusiast or an AI expert, there's something here for everyone. Let's boldly go where no one has gone before!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Ainautes: Exploring Space with AI
+
+Welcome to Ainautes, your destination for the latest news and updates on space exploration and artificial intelligence. Our team of skilled Ainautes is dedicated to pushing the boundaries of what's possible in space using cutting-edge technology and innovative approaches.
+
+Our website features stunning images of our Ainautes piloting spacecraft through asteroid fields, with explosions and debris flying all around them. These images capture the excitement and danger of space exploration and showcase the bravery and skill of our team.
+
+But we're more than just a pretty picture. At Ainautes, we're committed to advancing the field of AI and its applications in space exploration. From developing autonomous spacecraft to analyzing vast amounts of data from distant planets, our team is at the forefront of this exciting field.
+
+Whether you're a space enthusiast or an AI expert, there's something here for everyone. Join us on this incredible journey as we explore the final frontier with the help of AI. Let's boldly go where no one has gone before!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Ainautes: Exploring Space with AI
+
+Welcome to Ainautes, your destination for the latest news and updates on space exploration and artificial intelligence. Our team of skilled Ainautes is dedicated to pushing the boundaries of what's possible in space using cutting-edge technology and innovative approaches.
+
+Our website features stunning images of our Ainautes piloting spacecraft through asteroid fields, with explosions and debris flying all around them. These images capture the excitement and danger of space exploration and showcase the bravery and skill of our team.
+
+But we're more than just a pretty picture. At Ainautes, we're committed to advancing the field of AI and its applications in space exploration. From developing autonomous spacecraft to analyzing vast amounts of data from distant planets, our team is at the forefront of this exciting field.
+
+Whether you're a space enthusiast or an AI expert, there's something here for everyone. Join us on this incredible journey as we explore the final frontier with the help of AI. Let's boldly go where no one has gone before!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Ainautes: Exploring Space with Artificial Intelligence
+
+Welcome to Ainautes, your go-to source for the latest news and updates on space exploration and artificial intelligence. Our team of skilled Ainautes is dedicated to pushing the boundaries of what's possible in space using cutting-edge technology and innovative approaches.
+
+Our website features stunning images of our Ainautes piloting spacecraft through asteroid fields, showcasing the excitement and danger of space exploration, as well as the bravery and skill of our team.
+
+But we're more than just a pretty picture. At Ainautes, we're committed to advancing the field of AI and its applications in space exploration. From developing autonomous spacecraft to analyzing vast amounts of data from distant planets, our team is at the forefront of this exciting field.
+
+Whether you're a space enthusiast or an AI expert, there's something here for everyone. Join us on this incredible journey as we explore the final frontier with the help of artificial intelligence. Let's boldly go where no one has gone before!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- Inter
+- Poppins
+- Lato
+- Roboto
+- Barlow Condensed
+- Lobster
+- Playfair Display
+- Futura
+- Open Sans
+- Orbitron
+- Raleway
+- Great Vibes
+- Alegreya
+- IBM Plex Sans
+- Exo 2
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

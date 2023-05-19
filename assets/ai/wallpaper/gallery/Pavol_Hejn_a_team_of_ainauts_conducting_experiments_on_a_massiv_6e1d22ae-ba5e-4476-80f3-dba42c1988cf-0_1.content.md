@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet."
+"A team of Ainautes conducting experiments on a massive, frozen moon orbiting a gas giant planet."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,11 +16,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Roboto.-->
+<!--font:Roboto-->
 
-# Exploring the Frozen Moons of Our Solar System
+# Frozen Moons in Solar System
 
-Welcome to our website dedicated to exploring the frozen moons of our solar system. Our team of AInauts is conducting experiments on a massive, frozen moon orbiting a gas giant planet, and we're excited to share our findings with you.
+Welcome to our website dedicated to exploring the frozen moons of our solar system. Our team of Ainautes is conducting experiments on a massive, frozen moon orbiting a gas giant planet, and we're excited to share our findings with you.
 
 ## About Us
 
@@ -42,17 +42,17 @@ Here are some stories from users who have benefited from our research:
 
 Our team has made some exciting discoveries during our exploration of the frozen moons of our solar system. Here are just a few highlights:
 
-- We've discovered evidence of subsurface oceans on several of these moons, which could potentially harbor life.
-- We've observed geysers of water vapor erupting from the surface of some of these moons, providing valuable insights into their composition.
-- We've used AI algorithms to analyze the data we've collected, allowing us to make more accurate predictions about the characteristics of these moons.
+-   We've discovered evidence of subsurface oceans on several of these moons, which could potentially harbor life.
+-   We've observed geysers of water vapor erupting from the surface of some of these moons, providing valuable insights into their composition.
+-   We've used AI algorithms to analyze the data we've collected, allowing us to make more accurate predictions about the characteristics of these moons.
 
 ## References
 
 If you're interested in learning more about the frozen moons of our solar system, we recommend checking out the following resources:
 
-- NASA's Solar System Exploration website: [#solar-system-exploration](#solar-system-exploration)
-- The Planetary Society: [#planetary-society](#planetary-society)
-- National Geographic's Space section: [#national-geographic-space](#national-geographic-space)
+-   NASA's Solar System Exploration website: [#solar-system-exploration](#solar-system-exploration)
+-   The Planetary Society: [#planetary-society](#planetary-society)
+-   National Geographic's Space section: [#national-geographic-space](#national-geographic-space)
 
 ## Contact Us
 

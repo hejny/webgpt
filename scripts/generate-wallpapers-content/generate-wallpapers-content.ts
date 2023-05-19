@@ -10,6 +10,7 @@ import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { FONTS, OPENAI_API_KEY } from '../../config';
+import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
@@ -40,7 +41,7 @@ generateWallpapersContent({ isCommited, parallel: parseInt(parallel) })
     });
 
 async function generateWallpapersContent({ isCommited, parallel }: { isCommited: boolean; parallel: number }) {
-    console.info(`🧾  Generating wallpapers texts`);
+    console.info(`🧾  Generating wallpapers content`);
 
     // TODO: Use isParallel
 
@@ -63,6 +64,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
+        logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
             if (await isFileExisting(contentPath)) {
                 console.info(`⏩ Content file does already exists`);
@@ -72,16 +74,21 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             // TODO: !! Maybe parse + pass metadata in IWallpaperFiles
             const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
 
+            const thread: Array<string> = [];
             let lastMessageId: string | undefined = undefined;
             async function askGpt(message: string, isContinuingConversation: boolean): Promise<string> {
+                message = spaceTrim(message);
+                thread.push(message);
                 try {
-                    const gptResponseForContent = await chatGptApi.sendMessage(spaceTrim(message), {
+                    const gptResponseForContent = await chatGptApi.sendMessage(message, {
                         parentMessageId: isContinuingConversation
                             ? lastMessageId
                             : undefined /* <- Note: This is not an ideal design pattern to magically keep state without passing through the consumer or making isolated classes BUT for this limited (one-consumer) usage its OK */,
                     });
 
                     lastMessageId = gptResponseForContent.id;
+
+                    thread.push(gptResponseForContent.text);
                     return gptResponseForContent.text;
                 } catch (error) {
                     if (!(error instanceof ChatGPTError)) {
@@ -98,7 +105,35 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             }
 
             const contentPrompt = spaceTrim(createContentPromptTemplate().replace('🟦', metadata.prompt));
-            const content = await askGpt(contentPrompt, false);
+            let content = await askGpt(contentPrompt, false);
+
+            for (let i = 0; i < 3; i++) {
+                const title = extractTitleFromMarkdown(content);
+
+                // TODO: [💵] DRY this checks
+                if (title === null) {
+                    const fixPropmt = `Content does not have heading, rewrite whole content.`;
+                    content = await askGpt(fixPropmt, true);
+                    continue;
+                }
+
+                if (title?.toLowerCase().includes('wallpaper')) {
+                    const fixPropmt = `Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.`;
+                    content = await askGpt(fixPropmt, true);
+                    continue;
+                }
+
+                /*
+                Note: Doing this in repair script
+                if (title.trim().length > MAX_CHARS_IN_TITLE) {
+                    const fixPropmt = `Heading is too long, rewrite whole content.`;
+                    content = await askGpt(fixPropmt, true);
+                    continue;
+                }
+                */
+
+                break;
+            }
 
             const fontPrompt = createFontPromptTemplate();
             const font = await askGpt(fontPrompt, true);
@@ -108,16 +143,15 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 spaceTrim(
                     (block) => `
 
-                    <!--contentPrompt:
-                    ${block(contentPrompt)}
-                    -->
-                    <!--fontPrompt:
-                    ${block(fontPrompt)}
-                    -->
-
                     <!--font:${font}-->
 
                     ${block(content)}
+
+                    <!--
+
+                    ${block(thread.join('\n\n\n---\n\n\n'))}
+
+                    -->
       
                 `,
                 ) + '\n',
@@ -140,7 +174,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾 Generate wallpapers texts`);
+        await commit(await getWallpapersDir(), `🧾 Generate wallpapers content`);
     }
 
     console.info(
@@ -149,24 +183,11 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             .join('\n')}`,
     );
 
-    console.info(`[ Done 🧾  Generating wallpapers texts ]`);
+    console.info(`[ Done 🧾  Generating wallpapers content ]`);
 }
 
 function createContentPromptTemplate() {
     return randomItem(
-        `
-            Write me markdown content of website with wallpaper:
-
-            "🟦"
-
-            The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
-
-            - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-            - You can use formatting like bold or _italic_
-            - You can include UTF-8 emojis
-            - Links should be only #hash anchors (and you can refer to the document itself)
-            - Do not include images
-        `,
         `
             Write me content for website with wallpaper which alt text is:
 
@@ -175,8 +196,11 @@ function createContentPromptTemplate() {
             The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
             - Use markdown format 
-            - Start with the heading
+            - Start with heading
+            - Heading should be short and concise
             - The content should look like a real website 
+            - The website should not be about the wallpaper, wallpaper is just a related background
+            - Heading should be contain work "wallpaper" or "background"
             - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
             - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
             - You can use formatting like bold or _italic_
@@ -191,9 +215,6 @@ function createContentPromptTemplate() {
 
             The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
         `,
-        `
-            Write me content for website with wallpaper "🟦"
-        `,
     );
 }
 
@@ -201,10 +222,18 @@ function createFontPromptTemplate() {
     return spaceTrim(
         (block) =>
             `
-                Write me a Google font which is best fitting for the website. Write just the font name nothing else.
+                Write me a Google font which is best fitting for the website.
 
                 Pick from the list:
-                ${block(FONTS.map((fontName) => `- fontName`).join('\n'))}
+                ${block(
+                    [...FONTS]
+                        .sort(() => Math.random() - 0.5)
+                        .map((fontName) => `- ${fontName}`)
+                        .join('\n'),
+                )}
+
+
+                Write just the font name nothing else.
 
             
             `,
@@ -212,6 +241,8 @@ function createFontPromptTemplate() {
 }
 
 /**
+ * TODO: [🔎] Write tags/keywords for each website to search through @see https://ibb.co/2Fy7kN4
+ * TODO: [🧬] In future multiple text variants for each paragraph
  * TODO: Maybe use getMidjourneyLink from batch-froject-editor
  * TODO: Persistency and uniqueness of the names
  */

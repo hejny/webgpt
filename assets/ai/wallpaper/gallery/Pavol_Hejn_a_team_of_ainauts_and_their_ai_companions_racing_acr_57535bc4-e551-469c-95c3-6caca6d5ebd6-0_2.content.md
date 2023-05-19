@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions racing across the surface of a desert planet in high-tech buggies."
+"A team of Ainautes and their AI companions racing across the surface of a desert planet in high-tech buggies."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Racing Adventure on a Desert Planet
+# AI Racing on Desert Planet
 
-Are you ready for an adrenaline-fueled adventure? Join our team of AInauts and their AI companions as they race across the surface of a desert planet in high-tech buggies. 
+Are you ready for an adrenaline-fueled adventure? Join our team of Ainautes and their AI companions as they race across the surface of a desert planet in high-tech buggies.
 
 ## The Ultimate Challenge
 
@@ -24,7 +24,7 @@ Experience the thrill of racing through treacherous terrain, dodging obstacles, 
 
 ## Meet Our Team
 
-Our team of AInauts is made up of the brightest minds in AI and robotics. Each member brings a unique set of skills and expertise to the table, working together to push the boundaries of what's possible.
+Our team of Ainautes is made up of the brightest minds in AI and robotics. Each member brings a unique set of skills and expertise to the table, working together to push the boundaries of what's possible.
 
 ## Cutting-Edge Technology
 
@@ -32,4 +32,4 @@ Our buggies are equipped with the latest in AI and robotics technology, allowing
 
 ## Ready to Race?
 
-If you're ready to take on the challenge and join our team of AInauts, sign up today. Whether you're an experienced racer or a newcomer to the sport, we have something for everyone. Let's hit the track and see who comes out on top!
+If you're ready to take on the challenge and join our team of Ainautes, sign up today. Whether you're an experienced racer or a newcomer to the sport, we have something for everyone. Let's hit the track and see who comes out on top!

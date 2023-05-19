@@ -1,19 +1,89 @@
+<!--font:Poppins-->
+
+# Digital Device Patterns
+
+Welcome to our website featuring a modern and sleek repeating pattern of digital devices such as smartphones, tablets, and laptops. This unique design is perfect for anyone who loves technology and wants to add a contemporary touch to their digital presence.
+
+Our pattern is versatile and can be used as a background for various digital platforms, including desktops, mobile devices, and websites. The minimalist design and monochromatic color scheme make it suitable for any setting, whether it's a home office or a coffee shop.
+
+The high-resolution version of our digital devices pattern is available for free download. Simply click the download button below and elevate your digital experience with this eye-catching design.
+
+We hope you enjoy using our modern digital devices pattern and that it adds a touch of sophistication to your digital presence.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
--->
 
-<!--font:Poppins-->
+
+---
+
 
 # Digital Devices Wallpaper
 
-Add a touch of modernity to your device with our sleek and stylish wallpaper featuring a repeating pattern of digital devices. The design includes smartphones, tablets, and laptops arranged in an eye-catching formation that is sure to impress.
+Welcome to our website featuring a sleek and modern wallpaper showcasing a repeating pattern of various digital devices such as smartphones, tablets, and laptops. 
 
-With its clean lines and contemporary feel, this wallpaper is perfect for anyone who wants to stay up-to-date with the latest technology trends. Whether you're a tech enthusiast or simply want to give your device a fresh new look, our digital devices wallpaper is the perfect choice.
+This wallpaper is perfect for anyone who loves technology and wants to add a contemporary touch to their desktop or mobile device. The minimalist design and monochromatic color scheme make it versatile and suitable for any setting, whether it's a home office or a coffee shop.
 
-Our wallpaper is available in high-resolution format, ensuring that it looks crisp and clear on any device. It's easy to install and can be customized to fit your screen perfectly, so you can enjoy a seamless and immersive experience.
+Our wallpaper is available in high resolution and can be downloaded for free. Simply click the download button below and enjoy your new digital devices wallpaper!
 
-Upgrade your device today with our digital devices wallpaper and bring a touch of sophistication to your everyday life.
+Download now and elevate your digital experience.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Modern Digital Devices Pattern
+
+Welcome to our website featuring a modern and sleek repeating pattern of digital devices such as smartphones, tablets, and laptops. This unique design is perfect for anyone who loves technology and wants to add a contemporary touch to their digital presence.
+
+Our pattern is versatile and can be used as a background for various digital platforms, including desktops, mobile devices, and websites. The minimalist design and monochromatic color scheme make it suitable for any setting, whether it's a home office or a coffee shop.
+
+The high-resolution version of our digital devices pattern is available for free download. Simply click the download button below and elevate your digital experience with this eye-catching design.
+
+We hope you enjoy using our modern digital devices pattern and that it adds a touch of sophistication to your digital presence.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Roboto
+- Open Sans
+- Montserrat
+- Lobster
+- Poppins
+- Playfair Display
+- Alegreya
+- Dancing Script
+- Barlow Condensed
+- Great Vibes
+- Inter
+- Futura
+- Lato
+- Orbitron
+- IBM Plex Sans
+- Exo 2
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

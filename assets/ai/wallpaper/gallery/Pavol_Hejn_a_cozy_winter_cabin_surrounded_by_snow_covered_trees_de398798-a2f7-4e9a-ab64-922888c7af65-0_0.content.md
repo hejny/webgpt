@@ -1,17 +1,70 @@
+<!--font:Poppins-->
+
+# Winter Cabin Vibes
+
+Welcome to our cozy corner of the internet! Our website is all about embracing the winter season and finding joy in the little things. And what better way to set the mood than with this stunning wallpaper featuring a winter cabin surrounded by snow-covered trees?
+
+Whether you're looking for home decor inspiration or tips for staying cozy during the colder months, we've got you covered. Our team of writers and designers are passionate about all things winter, and we can't wait to share our ideas with you.
+
+So grab a cup of hot cocoa, snuggle up under a warm blanket, and let's get inspired by the beauty of winter!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A cozy winter cabin surrounded by snow-covered trees for a home decor or lifestyle blog"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
--->
 
-<!--font:Montserrat-->
+
+---
+
 
 # Winter Cabin Vibes
 
-Welcome to our cozy corner of the internet, where we embrace the winter season and all its beauty. Our latest addition to the blog is this stunning wallpaper featuring a winter cabin surrounded by snow-covered trees.
+Welcome to our cozy corner of the internet! Our website is all about embracing the winter season and finding joy in the little things. And what better way to set the mood than with this stunning wallpaper featuring a winter cabin surrounded by snow-covered trees?
 
-Whether you're looking for home decor inspiration or simply love the winter aesthetic, this wallpaper is sure to bring warmth and coziness to your space. Imagine curling up with a cup of hot cocoa and a good book while gazing at this picturesque scene.
+Whether you're looking for home decor inspiration or tips for staying cozy during the colder months, we've got you covered. Our team of writers and designers are passionate about all things winter, and we can't wait to share our ideas with you.
 
-Feel free to download this wallpaper and use it as your desktop background or phone lock screen. And don't forget to check out our other winter-themed posts for more inspiration on how to make the most of this magical season.
+So grab a cup of hot cocoa, snuggle up under a warm blanket, and let's get inspired by the beauty of winter!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Roboto
+- Cormorant Garamond
+- Montserrat
+- Creepster
+- Cinzel
+- Raleway
+- Barlow Condensed
+- Lato
+- Poppins
+- Great Vibes
+- Inter
+- Cinzel Decorative
+- Exo 2
+- Open Sans
+- Orbitron
+- Cabin
+- Lobster
+- Playfair Display
+- Dancing Script
+- IBM Plex Sans
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

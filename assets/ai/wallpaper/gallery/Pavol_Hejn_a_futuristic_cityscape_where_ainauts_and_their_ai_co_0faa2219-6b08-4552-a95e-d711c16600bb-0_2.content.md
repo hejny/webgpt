@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure."
+"A futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,19 +14,19 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Futuristic Cityscape!
+# Futuristic Cityscape Welcome!
 
-Experience a world where humans and AI work together to build towering skyscrapers and infrastructure. Our wallpaper captures the essence of this futuristic cityscape, showcasing the collaboration between AInauts and their AI counterparts.
+Experience a world where humans and AI work together to build towering skyscrapers and infrastructure. Our wallpaper captures the essence of this futuristic cityscape, showcasing the collaboration between Ainautes and their AI counterparts.
 
 ## About the Wallpaper
 
-The wallpaper depicts a bustling metropolis with towering skyscrapers, sleek transportation systems, and advanced technology. The city is alive with activity as AInauts and their AI counterparts work side by side to construct new buildings and maintain existing ones.
+The wallpaper depicts a bustling metropolis with towering skyscrapers, sleek transportation systems, and advanced technology. The city is alive with activity as Ainautes and their AI counterparts work side by side to construct new buildings and maintain existing ones.
 
 ## Benefits of Using Our Wallpaper
 
-- Inspiring: Our wallpaper will inspire you to imagine a future where humans and AI work together to achieve great things.
-- Motivating: The image of a futuristic cityscape can motivate you to pursue your own goals and aspirations.
-- Calming: The soothing colors and clean lines of our wallpaper can help create a calm and relaxing environment.
+-   Inspiring: Our wallpaper will inspire you to imagine a future where humans and AI work together to achieve great things.
+-   Motivating: The image of a futuristic cityscape can motivate you to pursue your own goals and aspirations.
+-   Calming: The soothing colors and clean lines of our wallpaper can help create a calm and relaxing environment.
 
 ## How to Download
 

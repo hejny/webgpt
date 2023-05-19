@@ -1,17 +1,70 @@
+<!--font:Open Sans-->
+
+# Galactic Volcanoes
+
+Explore the fiery landscapes of volcanic planets with our stunning wallpaper featuring a photograph of a lava flow. The vibrant red and orange hues will transport you to another world, evoking a sense of danger and excitement.
+
+At Galactic Wonders, we are dedicated to bringing you the most breathtaking images from across the universe. Whether you're an astronomy enthusiast or simply appreciate the beauty of space, our collection of high-quality wallpapers is sure to inspire awe and wonder.
+
+Download this volcanic planet wallpaper today and add a touch of cosmic adventure to your desktop or mobile device. Join us on a journey through the cosmos and discover the many wonders that await!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A photograph of a lava flow on a volcanic planet, with the red and orange colors evoking a sense of danger and excitement."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Galactic Wonders: Volcanic Planets
+
+Explore the fiery landscapes of volcanic planets with our stunning wallpaper featuring a photograph of a lava flow. The vibrant red and orange hues will transport you to another world, evoking a sense of danger and excitement.
+
+At Galactic Wonders, we are dedicated to bringing you the most breathtaking images from across the universe. Whether you're an astronomy enthusiast or simply appreciate the beauty of space, our collection of high-quality wallpapers is sure to inspire awe and wonder.
+
+Download this volcanic planet wallpaper today and add a touch of cosmic adventure to your desktop or mobile device. Join us on a journey through the cosmos and discover the many wonders that await!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Futura
+- Poppins
+- Cinzel
+- Barlow Condensed
+- Montserrat
+- Alegreya
+- Cinzel Decorative
+- Exo 2
+- Lobster
+- Great Vibes
+- Creepster
+- Roboto
+- Raleway
+- Cabin
+- Open Sans
+- Inter
+- Playfair Display
+- Orbitron
+- Cormorant Garamond
+- IBM Plex Sans
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Poppins-->
-
-# Galactic Volcanoes: Exploring the Fiery Depths of the Universe
-
-Welcome to Galactic Volcanoes, your ultimate guide to exploring the thrilling and dangerous world of volcanic planets. Our stunning wallpaper features a photograph of a lava flow on one such planet, with its fiery red and orange hues capturing the excitement and peril of these otherworldly landscapes.
-
-Join us as we delve into the science behind these incredible natural phenomena, from the geology of volcanic activity to the unique ecosystems that thrive in their extreme environments. Discover the latest news and research on volcanic planets throughout the galaxy, and explore stunning images and videos captured by our team of expert explorers.
-
-Whether you're a seasoned space enthusiast or simply curious about the wonders of the universe, Galactic Volcanoes is your go-to source for all things volcanic. So come along on this thrilling journey with us, and experience the fiery depths of the universe like never before.

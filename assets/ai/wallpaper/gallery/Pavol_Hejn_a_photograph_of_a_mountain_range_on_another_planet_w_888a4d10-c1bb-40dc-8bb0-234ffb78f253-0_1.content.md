@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Otherworldly Peaks: A Stunning Mountain Range on Another Planet
+# Alien Range
 
 Welcome to Otherworldly Peaks, a website dedicated to showcasing the beauty of our universe. Our wallpaper features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This stunning image will transport you to another world and inspire your imagination.
 

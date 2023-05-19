@@ -1,56 +1,127 @@
+<!--font:Montserrat-->
+
+# Dystopian Society & Technology
+
+Welcome to our website where we explore the themes of dystopia, taking a critical look at the impact of society and technology on our world. Our content delves into thought-provoking topics such as social inequality, the consequences of unchecked power, and the effects of technology on humanity.
+
+As you browse through our articles, videos, and podcasts, you'll gain a fresh perspective on current events and trends. We offer insightful commentary that challenges conventional thinking and provides a unique lens through which to view the issues that affect us all.
+
+To complement our content, we also offer a stunning wallpaper design that captures the essence of our dystopian vision. Featuring metallic textures and digital glitch effects, it's the perfect backdrop for your digital devices and a unique way to showcase your own aesthetic.
+
+So join us on a journey into the heart of a dystopian future, where nothing is quite as it seems and the only certainty is uncertainty.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper featuring a stylized illustration of a dystopian future, with metallic textures and digital glitch effects."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Montserrat-->
-
-# Welcome to Dystopia: A Wallpaper for the Bold and Brave
-
-Looking for a wallpaper that will make your desktop stand out from the crowd? Look no further than our stylized illustration of a dystopian future. With metallic textures and digital glitch effects, this wallpaper is perfect for those who want to add a touch of edginess to their workspace.
-
-## About the Wallpaper
-
-Our dystopian future wallpaper features a bold and striking design that is sure to turn heads. The metallic textures give it an industrial feel, while the digital glitch effects add a touch of chaos and uncertainty. This wallpaper is perfect for anyone who wants to make a statement with their desktop background.
-
-## User Stories
-
-Here are some examples of how people have used our dystopian future wallpaper:
-
-- "I work in a creative industry and I wanted a desktop background that reflected my personality. This wallpaper was perfect - it's bold and edgy, just like me!"
-- "I'm a gamer and I love anything cyberpunk. This wallpaper was the perfect addition to my gaming setup - it really sets the mood for immersive gameplay."
-- "I'm a student and I spend a lot of time staring at my computer screen. This wallpaper is a nice change of pace from the boring default backgrounds that come with my laptop."
-
-## How to Download
-
-To download our dystopian future wallpaper, simply click the download button below. The wallpaper is available in multiple resolutions to ensure that it looks great on any screen size.
-
-## References
-
-If you're interested in learning more about dystopian futures and the role they play in popular culture, check out these references:
-
-- _1984_ by George Orwell
-- _Brave New World_ by Aldous Huxley
-- _Blade Runner_ directed by Ridley Scott
-- _The Matrix_ directed by the Wachowskis
-
-## Contact Us
-
-If you have any questions or comments about our dystopian future wallpaper, please don't hesitate to reach out. You can contact us via email at [info@dystopiawallpaper.com](mailto:info@dystopiawallpaper.com) or on Twitter [@dystopiawallpaper](https://twitter.com/dystopiawallpaper).
 
 ---
 
-Thank you for choosing Dystopia Wallpaper - where the future is always uncertain, but always stylish.
+
+# Dystopian Future Wallpaper
+
+Welcome to our website featuring a stunning wallpaper design that showcases a dystopian future. The wallpaper features a stylized illustration with metallic textures and digital glitch effects, creating an immersive and captivating visual experience.
+
+Whether you're looking to add a touch of edginess to your desktop or simply appreciate the artistry of dystopian themes, this wallpaper is sure to impress. Its unique blend of futuristic elements and gritty textures make it a standout piece that will elevate any screen it adorns.
+
+So why wait? Download our dystopian future wallpaper today and take your digital aesthetic to the next level!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Welcome to our Dystopian Future
+
+Step into a world of metallic textures and digital glitches with our stylized illustration of a dystopian future. Our website immerses you in a captivating visual experience that showcases the darker side of technology and society.
+
+As you explore our site, you'll discover thought-provoking content that delves into the themes of dystopia, including the impact of technology on humanity, social inequality, and the consequences of unchecked power. Our articles, videos, and podcasts provide insightful commentary on these topics, offering a fresh perspective on the world around us.
+
+And as a backdrop to all this, we offer a stunning wallpaper design that captures the essence of our dystopian vision. With its blend of futuristic elements and gritty textures, it's the perfect complement to our content and a unique way to showcase your own digital aesthetic.
+
+So join us on a journey into the heart of a dystopian future, where nothing is quite as it seems and the only certainty is uncertainty.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Dystopian Futures: Exploring the Dark Side of Society and Technology
+
+Welcome to our website where we explore the themes of dystopia, examining the darker side of society and technology. Our content delves into thought-provoking topics such as social inequality, the consequences of unchecked power, and the impact of technology on humanity.
+
+As you navigate through our articles, videos, and podcasts, you'll gain a fresh perspective on the world around us. We offer insightful commentary on current events and trends, providing a unique lens through which to view the issues that affect us all.
+
+To complement our content, we also offer a stunning wallpaper design that captures the essence of our dystopian vision. Featuring metallic textures and digital glitch effects, it's the perfect backdrop for your digital devices and a unique way to showcase your own aesthetic.
+
+So join us on a journey into the heart of a dystopian future, where nothing is quite as it seems and the only certainty is uncertainty.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Exploring Dystopian Futures: A Critical Look at Society and Technology
+
+Welcome to our website where we explore the themes of dystopia, taking a critical look at the impact of society and technology on our world. Our content delves into thought-provoking topics such as social inequality, the consequences of unchecked power, and the effects of technology on humanity.
+
+As you browse through our articles, videos, and podcasts, you'll gain a fresh perspective on current events and trends. We offer insightful commentary that challenges conventional thinking and provides a unique lens through which to view the issues that affect us all.
+
+To complement our content, we also offer a stunning wallpaper design that captures the essence of our dystopian vision. Featuring metallic textures and digital glitch effects, it's the perfect backdrop for your digital devices and a unique way to showcase your own aesthetic.
+
+So join us on a journey into the heart of a dystopian future, where nothing is quite as it seems and the only certainty is uncertainty.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Roboto
+- Poppins
+- Great Vibes
+- Montserrat
+- Inter
+- Futura
+- Raleway
+- Lato
+- Open Sans
+- Alegreya
+- Orbitron
+- Lobster
+- Exo 2
+- IBM Plex Sans
+- Barlow Condensed
+- Playfair Display
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

@@ -1,17 +1,86 @@
+<!--font:Montserrat-->
+
+# Sports & Fitness Site Welcome!
+
+We are dedicated to promoting an active and healthy lifestyle through sports and fitness. Our website offers a wide range of resources and information to help you achieve your fitness goals.
+
+## Bicycle Racing Wallpaper
+
+Check out our colorful graphic of a bicycle race! This stunning wallpaper is perfect for any sports or fitness enthusiast who loves cycling. Whether you're a professional racer or just enjoy a leisurely ride, this wallpaper will inspire you to push yourself to the limit.
+
+Feel free to download this wallpaper and use it as a background on your computer or mobile device. It's a great way to stay motivated and remind yourself of the thrill of the race.
+
+## More Resources
+
+In addition to our wallpaper, we offer a variety of other resources to help you stay active and healthy. From workout plans to nutrition tips, we have everything you need to reach your fitness goals.
+
+So why wait? Start exploring our website today and take the first step towards a healthier, more active lifestyle!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A colorful graphic of a bicycle race for a sports or fitness website"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to Our Sports and Fitness Website!
+
+We are dedicated to promoting an active and healthy lifestyle through sports and fitness. Our website offers a wide range of resources and information to help you achieve your fitness goals.
+
+## Bicycle Racing Wallpaper
+
+Check out our colorful graphic of a bicycle race! This stunning wallpaper is perfect for any sports or fitness enthusiast who loves cycling. Whether you're a professional racer or just enjoy a leisurely ride, this wallpaper will inspire you to push yourself to the limit.
+
+Feel free to download this wallpaper and use it as a background on your computer or mobile device. It's a great way to stay motivated and remind yourself of the thrill of the race.
+
+## More Resources
+
+In addition to our wallpaper, we offer a variety of other resources to help you stay active and healthy. From workout plans to nutrition tips, we have everything you need to reach your fitness goals.
+
+So why wait? Start exploring our website today and take the first step towards a healthier, more active lifestyle!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Open Sans
+- IBM Plex Sans
+- Cormorant Garamond
+- Cabin
+- Alegreya
+- Poppins
+- Great Vibes
+- Creepster
+- Orbitron
+- Playfair Display
+- Cinzel
+- Raleway
+- Dancing Script
+- Montserrat
+- Roboto
+- Exo 2
+- Inter
+- Cinzel Decorative
+- Barlow Condensed
+- Futura
+- Lobster
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Montserrat-->
-
-# Welcome to our Sports and Fitness Website
-
-Here at our website, we are passionate about all things sports and fitness. Whether you're a seasoned athlete or just starting out on your fitness journey, we have everything you need to achieve your goals.
-
-To add some excitement to your browsing experience, we've included a colorful graphic of a bicycle race as our wallpaper. This stunning image captures the energy and intensity of competitive cycling, inspiring you to push yourself to new heights in your own fitness pursuits.
-
-So take a look around and explore all that our website has to offer. From workout tips and nutrition advice to gear reviews and training plans, we're here to help you reach your full potential. Let's get started!

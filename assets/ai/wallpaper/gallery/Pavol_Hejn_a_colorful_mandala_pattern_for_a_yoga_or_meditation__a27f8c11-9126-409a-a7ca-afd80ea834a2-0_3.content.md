@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Mandala Meditation: Find Your Inner Peace
+# Mandala Meditation for Peace
 
 Welcome to our website dedicated to helping you find inner peace through the ancient practice of mandala meditation. Our colorful mandala pattern is the perfect backdrop for your meditation or yoga practice.
 

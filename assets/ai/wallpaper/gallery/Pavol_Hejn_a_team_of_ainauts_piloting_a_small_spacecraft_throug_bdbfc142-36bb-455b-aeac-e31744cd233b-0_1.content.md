@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
+"A team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,13 +18,13 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Space Odyssey: Navigating Through the Unknown
+# Exploring Space's Unknown
 
 Welcome to Space Odyssey, your ultimate destination for all things space exploration. Our website is dedicated to providing you with the latest news, updates, and insights into the world of space travel.
 
 ## About Us
 
-At Space Odyssey, we are a team of passionate AInauts who are committed to pushing the boundaries of space exploration. We understand that space travel can be dangerous, but we believe that with the right technology and expertise, we can unlock the secrets of the universe and make groundbreaking discoveries.
+At Space Odyssey, we are a team of passionate Ainautes who are committed to pushing the boundaries of space exploration. We understand that space travel can be dangerous, but we believe that with the right technology and expertise, we can unlock the secrets of the universe and make groundbreaking discoveries.
 
 ## Our Mission
 
@@ -40,15 +40,15 @@ Here are some stories from our users who have been inspired by our website:
 
 ## Our Wallpaper
 
-Our wallpaper features a team of AInauts piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This image captures the excitement and danger of space exploration, and serves as a reminder of the incredible achievements that humans have made in the field of space travel.
+Our wallpaper features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This image captures the excitement and danger of space exploration, and serves as a reminder of the incredible achievements that humans have made in the field of space travel.
 
 ## References
 
 If you're interested in learning more about space travel, check out these resources:
 
-- NASA
-- SpaceX
-- European Space Agency
+-   NASA
+-   SpaceX
+-   European Space Agency
 
 ## Contact Us
 

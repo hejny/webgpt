@@ -1,4 +1,49 @@
+<!--font:Montserrat-->
+
+# Immersive Space Website
+
+Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+
+## About Us
+
+We are a team of space enthusiasts who are passionate about sharing our love for the universe with others. Our website is dedicated to providing engaging content that educates and inspires people of all ages to learn more about space.
+
+## Our Mission
+
+Our mission is to make space exploration accessible to everyone. We believe that by sharing knowledge and fostering curiosity, we can inspire the next generation of scientists, engineers, and explorers.
+
+## User Stories
+
+Here are some stories from our users who have been inspired by our website:
+
+> "I've always been interested in space, but your website has taken my fascination to a whole new level. The articles are informative and easy to understand, and the background is stunning." - Tom, 42
+
+> "Your website has been an amazing resource for me to learn about space. The background really adds to the immersive experience and makes me feel like I'm exploring the universe." - Emily, 24
+
+## Our Content
+
+We offer a wide range of content on our website, including:
+
+- Articles on space news, discoveries, and history
+- Educational resources for teachers and students
+- Interactive tools and simulations
+- Interviews with experts in the field
+- A captivating space-themed background, "Sunrise on a Distant Planet"
+
+## References
+
+If you're interested in learning more about space, here are some resources we recommend:
+
+- [NASA](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+
+We love hearing from our readers! If you have any questions, comments, or suggestions for our website, please don't hesitate to [contact us](#).
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "Sunrise on a distant planet"
@@ -6,80 +51,252 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Montserrat-->
 
-# Discover the Beauty of Distant Worlds with Our "Sunrise on a Distant Planet" Wallpaper
+---
 
-Welcome to our website, where we showcase stunning wallpapers that transport you to otherworldly places. Our latest addition is the "Sunrise on a Distant Planet" wallpaper, which captures the breathtaking beauty of a sunrise on a planet far away.
 
-## About the Wallpaper
+# Discover the Wonders of Space with Our "Sunrise on a Distant Planet" Wallpaper
 
-The "Sunrise on a Distant Planet" wallpaper features a vibrant orange and yellow sky with a bright sun rising over a mountain range in the distance. The foreground shows an alien landscape with strange rock formations and plants, giving the impression of a world unlike any we've seen before.
+Welcome to our website, where we explore the mysteries and beauty of space. Our stunning wallpaper, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 
-This wallpaper is perfect for anyone who loves science fiction, astronomy, or simply appreciates the beauty of nature in all its forms. It's available in multiple resolutions to fit any screen size, so you can enjoy it on your desktop, laptop, tablet, or phone.
+## About Us
+
+We are a team of space enthusiasts who are passionate about sharing our love for the universe with others. Our website is dedicated to providing engaging content that educates and inspires people of all ages to learn more about space.
+
+## Our Mission
+
+Our mission is to make space exploration accessible to everyone. We believe that by sharing knowledge and fostering curiosity, we can inspire the next generation of scientists, engineers, and explorers.
 
 ## User Stories
 
-Here are some stories from our users who have downloaded and used this wallpaper:
+Here are some stories from our users who have been inspired by our website:
 
-> "I love this wallpaper! It's like having a piece of another world right on my computer screen. Every time I look at it, I feel inspired to explore new horizons." - Sarah, graphic designer
+> "I've always been fascinated by space, but I never knew where to start learning. Your website has been an amazing resource for me. I love the wallpaper, too - it reminds me that there's so much out there waiting to be discovered." - Emily, 24
 
-> "As an astronomy enthusiast, I'm always looking for ways to bring the cosmos into my daily life. This wallpaper is the perfect addition to my collection, and it reminds me every day of the vastness and wonder of the universe." - David, astronomer
+> "My son is obsessed with space, and your website has been a lifesaver for me. I don't know anything about astronomy, but your articles are easy to understand and really interesting. Plus, he loves the wallpaper - he wants to be an astronaut when he grows up!" - Sarah, 38
 
-> "I downloaded this wallpaper for my phone, and it's been a conversation starter everywhere I go. People are always asking me about the beautiful image on my lock screen, and I love telling them about the amazing worlds beyond our own." - Maria, student
+## Our Content
 
-## How to Download
+We offer a wide range of content on our website, including:
 
-To download the "Sunrise on a Distant Planet" wallpaper, simply click on the link below that corresponds to your screen resolution:
-
-- [1920x1080](#1920x1080)
-- [2560x1440](#2560x1440)
-- [3840x2160](#3840x2160)
+- Articles on space news, discoveries, and history
+- Educational resources for teachers and students
+- Interactive tools and simulations
+- Interviews with experts in the field
+- Beautiful space-themed wallpapers like "Sunrise on a Distant Planet"
 
 ## References
 
-If you're interested in learning more about the science behind this wallpaper, check out these resources:
+If you're interested in learning more about space, here are some resources we recommend:
 
-- [NASA's Exoplanet Exploration Program](#nasa-exoplanet-exploration-program)
-- [The Planetary Society](#planetary-society)
+- [NASA](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpapers, please don't hesitate to contact us. We'd love to hear from you!
+We love hearing from our readers! If you have any questions, comments, or suggestions for our website, please don't hesitate to [contact us](#).
 
-- Email: [contact@ourwebsite.com](mailto:contact@ourwebsite.com)
-- Twitter: [@ourwebsite](#twitter)
 
 ---
 
-### 1920x1080
 
-![Sunrise on a Distant Planet - 1920x1080](#)
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
 
-### 2560x1440
-
-![Sunrise on a Distant Planet - 2560x1440](#)
-
-### 3840x2160
-
-![Sunrise on a Distant Planet - 3840x2160](#)
 
 ---
 
-### NASA Exoplanet Exploration Program
 
-The [NASA Exoplanet Exploration Program](https://exoplanets.nasa.gov/) is dedicated to discovering and characterizing exoplanets, which are planets outside our solar system. They use a variety of methods to detect exoplanets, including the transit method, which involves observing a star for small dips in brightness that indicate the presence of a planet passing in front of it.
+# Explore the Wonders of Space with Our Website
 
-### The Planetary Society
+Welcome to our website, where we delve into the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 
-The [Planetary Society](https://www.planetary.org/) is a nonprofit organization dedicated to exploring the solar system and seeking out new worlds beyond. They advocate for space exploration and research, and they offer educational programs and resources for people of all ages who are interested in space science.
+## About Us
+
+We are a team of space enthusiasts who are passionate about sharing our love for the universe with others. Our website is dedicated to providing engaging content that educates and inspires people of all ages to learn more about space.
+
+## Our Mission
+
+Our mission is to make space exploration accessible to everyone. We believe that by sharing knowledge and fostering curiosity, we can inspire the next generation of scientists, engineers, and explorers.
+
+## User Stories
+
+Here are some stories from our users who have been inspired by our website:
+
+> "I've always been fascinated by space, but I never knew where to start learning. Your website has been an amazing resource for me. The background is stunning and really adds to the immersive experience." - Emily, 24
+
+> "My son is obsessed with space, and your website has been a lifesaver for me. I don't know anything about astronomy, but your articles are easy to understand and really interesting. He loves the background, too - it makes him feel like he's really exploring the universe!" - Sarah, 38
+
+## Our Content
+
+We offer a wide range of content on our website, including:
+
+- Articles on space news, discoveries, and history
+- Educational resources for teachers and students
+- Interactive tools and simulations
+- Interviews with experts in the field
+- A captivating space-themed background, "Sunrise on a Distant Planet"
+
+## References
+
+If you're interested in learning more about space, here are some resources we recommend:
+
+- [NASA](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+
+We love hearing from our readers! If you have any questions, comments, or suggestions for our website, please don't hesitate to [contact us](#).
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Wonders of Space with Our Immersive Website
+
+Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+
+## About Us
+
+We are a team of space enthusiasts who are passionate about sharing our love for the universe with others. Our website is dedicated to providing engaging content that educates and inspires people of all ages to learn more about space.
+
+## Our Mission
+
+Our mission is to make space exploration accessible to everyone. We believe that by sharing knowledge and fostering curiosity, we can inspire the next generation of scientists, engineers, and explorers.
+
+## User Stories
+
+Here are some stories from our users who have been inspired by our website:
+
+> "Your website has been an amazing resource for me to learn about space. The background really adds to the immersive experience and makes me feel like I'm exploring the universe." - Emily, 24
+
+> "I've always been interested in space, but your website has taken my fascination to a whole new level. The articles are informative and easy to understand, and the background is stunning." - Tom, 42
+
+## Our Content
+
+We offer a wide range of content on our website, including:
+
+- Articles on space news, discoveries, and history
+- Educational resources for teachers and students
+- Interactive tools and simulations
+- Interviews with experts in the field
+- A captivating space-themed background, "Sunrise on a Distant Planet"
+
+## References
+
+If you're interested in learning more about space, here are some resources we recommend:
+
+- [NASA](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+
+We love hearing from our readers! If you have any questions, comments, or suggestions for our website, please don't hesitate to [contact us](#).
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore Space with Our Immersive Website
+
+Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+
+## About Us
+
+We are a team of space enthusiasts who are passionate about sharing our love for the universe with others. Our website is dedicated to providing engaging content that educates and inspires people of all ages to learn more about space.
+
+## Our Mission
+
+Our mission is to make space exploration accessible to everyone. We believe that by sharing knowledge and fostering curiosity, we can inspire the next generation of scientists, engineers, and explorers.
+
+## User Stories
+
+Here are some stories from our users who have been inspired by our website:
+
+> "I've always been interested in space, but your website has taken my fascination to a whole new level. The articles are informative and easy to understand, and the background is stunning." - Tom, 42
+
+> "Your website has been an amazing resource for me to learn about space. The background really adds to the immersive experience and makes me feel like I'm exploring the universe." - Emily, 24
+
+## Our Content
+
+We offer a wide range of content on our website, including:
+
+- Articles on space news, discoveries, and history
+- Educational resources for teachers and students
+- Interactive tools and simulations
+- Interviews with experts in the field
+- A captivating space-themed background, "Sunrise on a Distant Planet"
+
+## References
+
+If you're interested in learning more about space, here are some resources we recommend:
+
+- [NASA](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+
+We love hearing from our readers! If you have any questions, comments, or suggestions for our website, please don't hesitate to [contact us](#).
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- IBM Plex Sans
+- Lobster
+- Montserrat
+- Futura
+- Great Vibes
+- Inter
+- Exo 2
+- Lato
+- Dancing Script
+- Roboto
+- Raleway
+- Orbitron
+- Alegreya
+- Barlow Condensed
+- Poppins
+- Playfair Display
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

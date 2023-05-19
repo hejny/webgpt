@@ -1,63 +1,133 @@
+<!--font:Montserrat-->
+
+# Northern Lights: A Wonder.
+
+Immerse yourself in the breathtaking beauty of the Aurora Borealis with our stunning desktop or phone background. This photograph captures the essence of the green and purple hues swirling in the night sky, transporting you to a world of natural wonder.
+
+Our website is dedicated to sharing the magic of the Northern Lights. Discover fascinating facts about this awe-inspiring natural phenomenon, from how it's formed to where it can be seen around the world. Learn about the science behind the lights and explore the cultural significance they hold for indigenous communities.
+
+Whether you're an avid aurora chaser or simply captivated by the beauty of the night sky, our website has something for everyone. Find tips on when and where to see the lights, as well as advice on how to capture them in photographs. 
+
+So why not download our Aurora Borealis background and let it inspire your journey of discovery? Join us on an adventure into the heart of one of nature's most captivating wonders.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A photograph of the Northern Lights, with the green and purple hues swirling in the night sky."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+Write me markdown content of website with wallpaper:
+
+"A photograph of the Northern Lights, with the green and purple hues swirling in the night sky."
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Aurora Borealis Wallpaper
+
+Decorate your desktop or phone screen with a stunning photograph of the Northern Lights. The green and purple hues swirling in the night sky will transport you to a magical world of natural wonder.
+
+To download this wallpaper, simply right-click on the image and select "Save Image As". Then, set it as your wallpaper and enjoy the breathtaking beauty of the Aurora Borealis every time you use your device.
+
+Don't miss out on this opportunity to bring a piece of the Arctic wilderness into your everyday life. Download the Aurora Borealis wallpaper now and experience the magic for yourself.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Wonders of the Northern Lights
+
+Immerse yourself in the beauty of the Aurora Borealis with our stunning desktop or phone background. This photograph captures the essence of the green and purple hues swirling in the night sky, transporting you to a magical world of natural wonder.
+
+Our website is dedicated to sharing the magic of the Northern Lights. Discover fascinating facts about this natural phenomenon, from how it's formed to where it can be seen around the world. Learn about the science behind the lights and explore the cultural significance they hold for indigenous communities.
+
+Whether you're a seasoned aurora chaser or simply captivated by the beauty of the night sky, our website has something for everyone. So why not download our Aurora Borealis background and let it inspire your journey of discovery? Join us on an adventure into the heart of one of nature's most captivating wonders.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Magic of the Northern Lights
+
+Experience the awe-inspiring beauty of the Aurora Borealis with our stunning desktop or phone background. This photograph captures the essence of the green and purple hues swirling in the night sky, transporting you to a magical world of natural wonder.
+
+Our website is dedicated to sharing the magic of the Northern Lights. Learn about the science behind this natural phenomenon and explore the cultural significance it holds for indigenous communities around the world. Discover fascinating facts about where and when to see the lights, as well as tips on how to capture them in photographs.
+
+Whether you're an experienced aurora chaser or simply captivated by the beauty of the night sky, our website has something for everyone. So why not download our Aurora Borealis background and let it inspire your journey of discovery? Join us on an adventure into the heart of one of nature's most captivating wonders.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# The Northern Lights: A Natural Wonder
+
+Immerse yourself in the breathtaking beauty of the Aurora Borealis with our stunning desktop or phone background. This photograph captures the essence of the green and purple hues swirling in the night sky, transporting you to a world of natural wonder.
+
+Our website is dedicated to sharing the magic of the Northern Lights. Discover fascinating facts about this awe-inspiring natural phenomenon, from how it's formed to where it can be seen around the world. Learn about the science behind the lights and explore the cultural significance they hold for indigenous communities.
+
+Whether you're an avid aurora chaser or simply captivated by the beauty of the night sky, our website has something for everyone. Find tips on when and where to see the lights, as well as advice on how to capture them in photographs. 
+
+So why not download our Aurora Borealis background and let it inspire your journey of discovery? Join us on an adventure into the heart of one of nature's most captivating wonders.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Barlow Condensed
+- Great Vibes
+- Alegreya
+- Exo 2
+- Futura
+- IBM Plex Sans
+- Roboto
+- Lato
+- Raleway
+- Montserrat
+- Poppins
+- Open Sans
+- Inter
+- Playfair Display
+- Orbitron
+- Dancing Script
+- Lobster
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Montserrat-->
-
-# Aurora Borealis Wallpaper: Bring the Magic of Northern Lights to Your Screen
-
-Looking for a stunning wallpaper that captures the beauty of the Northern Lights? Look no further than our Aurora Borealis wallpaper, featuring a breathtaking photograph of the green and purple hues swirling in the night sky.
-
-## About the Northern Lights
-
-The Northern Lights, also known as Aurora Borealis, is a natural phenomenon that occurs when charged particles from the sun collide with atoms in Earth's atmosphere. This collision produces beautiful displays of light in the sky, ranging from green to pink to purple.
-
-The Northern Lights are visible in certain parts of the world, including Scandinavia, Canada, and Alaska. Many people travel to these regions specifically to witness this incredible sight.
-
-## Why Choose Our Aurora Borealis Wallpaper?
-
-With our Aurora Borealis wallpaper, you can bring the magic of the Northern Lights to your screen. Whether you're looking to add some color to your desktop or create a calming atmosphere on your phone, our wallpaper is the perfect choice.
-
-Here are just a few reasons why you'll love our Aurora Borealis wallpaper:
-
-- High-quality image: Our wallpaper features a stunning photograph of the Northern Lights, ensuring that you get the most realistic and vivid representation of this natural wonder.
-- Easy to install: Installing our wallpaper is a breeze - simply download the image and set it as your background.
-- Compatible with all devices: Our wallpaper is compatible with a wide range of devices, including desktop computers, laptops, smartphones, and tablets.
-- Free to use: We believe that everyone should be able to enjoy the beauty of the Northern Lights, which is why we offer our wallpaper completely free of charge.
-
-## User Stories
-
-Our Aurora Borealis wallpaper has been downloaded by people all over the world. Here are just a few stories from our users:
-
-> "I live in a city where I can't see the stars at night, let alone the Northern Lights. Having this wallpaper on my phone makes me feel like I'm a little closer to nature." - Sarah, 27
-
-> "I work in an office all day, and sometimes I need a little break from staring at spreadsheets. This wallpaper is a great reminder to take a deep breath and appreciate the beauty of the world." - David, 35
-
-> "I've always been fascinated by the Northern Lights, but I've never had the chance to see them in person. This wallpaper is the next best thing!" - Emily, 22
-
-## Get Your Aurora Borealis Wallpaper Today
-
-Ready to bring the magic of the Northern Lights to your screen? Download our Aurora Borealis wallpaper today and start enjoying the beauty of this natural wonder every day.
-
-## References
-
-- National Geographic: [Aurora Borealis](https://www.nationalgeographic.com/science/space/solar-system/aurora-borealis/)
-- NASA: [Auroras: Paintings in the Sky](https://www.nasa.gov/mission_pages/sunearth/spaceweather/Auroras.html)
-
-## Contact Us
-
-Have a question or comment about our Aurora Borealis wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.

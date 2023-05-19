@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
+"A group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -12,25 +12,25 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Exo 2" font would be a great fit for this website.-->
+<!--font:Exo 2-->
 
-# AI Exploration Mission on a Frozen Planet
+# AI on Frozen Planet Mission
 
-Welcome to our website showcasing the thrilling adventures of a group of AInauts exploring a frozen wasteland on a distant planet. Our team of highly skilled scientists and engineers are equipped with state-of-the-art suits, designed to withstand extreme temperatures and harsh environments.
+Welcome to our website showcasing the thrilling adventures of a group of Ainautes exploring a frozen wasteland on a distant planet. Our team of highly skilled scientists and engineers are equipped with state-of-the-art suits, designed to withstand extreme temperatures and harsh environments.
 
 ## The Frozen Wasteland
 
 As you can see from our stunning wallpaper, the frozen wasteland is a sight to behold. Towering ice formations surround our team as they navigate through the treacherous terrain. The landscape is both beautiful and dangerous, with hidden crevasses and shifting ice sheets posing a constant threat.
 
-## The AInauts
+## The Ainautes
 
-Our team of AInauts are at the forefront of exploration and discovery. Using advanced artificial intelligence and cutting-edge technology, they are able to gather valuable data and insights that will help us better understand the universe around us.
+Our team of Ainautes are at the forefront of exploration and discovery. Using advanced artificial intelligence and cutting-edge technology, they are able to gather valuable data and insights that will help us better understand the universe around us.
 
 > "We are excited to be part of this groundbreaking mission, and look forward to uncovering the mysteries of this frozen world." - Dr. Sarah Lee, Lead Scientist
 
 ## Join the Mission
 
-Are you ready to join us on this incredible journey? Follow our updates and stay tuned for more exciting discoveries. Together, we can push the boundaries of what is possible and unlock the secrets of the universe. 
+Are you ready to join us on this incredible journey? Follow our updates and stay tuned for more exciting discoveries. Together, we can push the boundaries of what is possible and unlock the secrets of the universe.
 
 ---
 

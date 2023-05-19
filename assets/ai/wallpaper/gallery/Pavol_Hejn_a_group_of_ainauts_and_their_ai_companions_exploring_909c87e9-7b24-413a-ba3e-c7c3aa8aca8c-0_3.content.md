@@ -1,19 +1,70 @@
+<!--font:Poppins-->
+
+# Uncharted Depths Journey
+
+Welcome to our website, where we take you on a thrilling adventure through the uncharted depths of space. Join a group of Ainautes and their AI companions as they explore a massive, abandoned research facility that holds secrets beyond imagination.
+
+Our wallpaper captures the essence of this journey, showcasing the vastness of space and the eerie beauty of the abandoned facility. With every click, you'll be transported deeper into this mysterious world, where danger and discovery go hand in hand.
+
+So come along for the ride and discover what lies beyond the stars. Are you ready to embark on an adventure like no other?
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned research facility in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned research facility in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# "The Uncharted Depths: A Journey into the Unknown"
+
+Welcome to our website, where we take you on a thrilling adventure through the uncharted depths of space. Join a group of Ainautes and their AI companions as they explore a massive, abandoned research facility that holds secrets beyond imagination.
+
+Our wallpaper captures the essence of this journey, showcasing the vastness of space and the eerie beauty of the abandoned facility. With every click, you'll be transported deeper into this mysterious world, where danger and discovery go hand in hand.
+
+So come along for the ride and discover what lies beyond the stars. Are you ready to embark on an adventure like no other?
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lobster
+- Great Vibes
+- Barlow Condensed
+- Poppins
+- Cabin
+- Open Sans
+- Futura
+- Lato
+- Creepster
+- Roboto
+- Cinzel Decorative
+- Exo 2
+- Inter
+- Dancing Script
+- Orbitron
+- Cormorant Garamond
+- IBM Plex Sans
+- Playfair Display
+- Cinzel
+- Alegreya
+- Montserrat
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:The "Roboto" font would be a great fit for the website.-->
-
-# AI Space Exploration
-
-Welcome to our website dedicated to the thrilling adventures of a group of AInauts and their AI companions as they explore a massive, abandoned research facility in the depths of space. 
-
-Our team of intrepid explorers is constantly pushing the boundaries of what is possible with the help of cutting-edge artificial intelligence technology. Together, they brave the unknown dangers of the universe in search of answers to some of the biggest questions about our existence.
-
-Join us on this incredible journey through the stars by downloading our stunning wallpaper featuring the AInauts and their AI companions in action. With its high-quality resolution and captivating imagery, this wallpaper is sure to transport you to another world and inspire you to dream big about the possibilities of AI and space exploration.
-
-Don't miss out on this opportunity to be part of the excitement. Download our wallpaper today and let your imagination take flight!

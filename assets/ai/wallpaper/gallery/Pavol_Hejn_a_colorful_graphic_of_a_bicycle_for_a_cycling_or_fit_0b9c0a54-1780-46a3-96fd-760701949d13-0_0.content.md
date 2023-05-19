@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:The font that best fits the CycleFit website is Montserrat-->
+<!--font:Montserrat-->
 
 # Welcome to CycleFit
 

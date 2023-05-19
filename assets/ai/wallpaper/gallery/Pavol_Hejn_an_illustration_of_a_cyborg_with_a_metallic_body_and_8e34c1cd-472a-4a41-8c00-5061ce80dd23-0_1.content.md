@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Cybernetic Future: Embrace the Power of Technology
+# Cybernetic Future
 
 Welcome to our website, where we explore the fascinating world of cybernetics and its impact on our future. Our mission is to educate and inspire people to embrace the power of technology and discover the endless possibilities it offers.
 

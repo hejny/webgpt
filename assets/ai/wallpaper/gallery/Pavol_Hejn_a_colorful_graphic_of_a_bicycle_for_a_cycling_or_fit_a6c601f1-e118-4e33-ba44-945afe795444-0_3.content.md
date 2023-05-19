@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Welcome to Pedal Power: Your Ultimate Cycling Resource
+# Cycling Resource: Pedal Power
 
 Pedal Power is your one-stop-shop for all things cycling. Whether you're a seasoned pro or just starting out, we've got everything you need to take your cycling game to the next level.
 

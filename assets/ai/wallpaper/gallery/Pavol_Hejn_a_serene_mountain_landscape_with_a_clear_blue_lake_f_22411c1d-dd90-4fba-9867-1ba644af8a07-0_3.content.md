@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Serene Mountain Landscapes for Mindful Living
+# Mindful mountain living
 
 Welcome to our meditation and wellness website, where we believe that connecting with nature is essential for a balanced and mindful life. Our serene mountain landscape with a clear blue lake wallpaper is the perfect representation of the tranquility and peacefulness that we strive to bring into your daily routine.
 

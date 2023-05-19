@@ -1,56 +1,92 @@
+<!--font:Montserrat-->
+
+# Tech-Savvy Hub
+
+Welcome to Tech-Savvy Hub, the ultimate destination for tech enthusiasts! Our website is designed to cater to all your technology needs and keep you up-to-date with the latest trends in the world of tech.
+
+As part of our commitment to providing a comprehensive tech experience, we offer a sleek and modern background featuring a repeating pattern of digital devices such as smartphones, tablets, and laptops. This background is perfect for anyone who wants to showcase their love for technology on their desktop or mobile device.
+
+But that's not all - Tech-Savvy Hub offers a wide range of resources, including product reviews, news updates, and how-to guides, to help you stay ahead of the curve. Whether you're a student, professional, or simply someone who loves gadgets, our website has something for everyone.
+
+So why wait? Join the Tech-Savvy community today and take your tech game to the next level!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A wallpaper featuring a repeating pattern of sleek and modern digital devices, such as smartphones, tablets, and laptops."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Poppins-->
-
-# Digital Devices Wallpaper
-
-Decorate your desktop or phone screen with our sleek and modern digital devices wallpaper. This wallpaper features a repeating pattern of popular gadgets, such as smartphones, tablets, and laptops, that will add a touch of tech-savvy style to your device.
-
-## Features
-
-- High-quality resolution for crisp and clear display
-- Repeatable pattern for seamless coverage on any screen size
-- Compatible with various devices, including desktops, laptops, tablets, and smartphones
-- Easy to download and set as your device's background image
-
-## How to Download
-
-To download the digital devices wallpaper, simply follow these steps:
-
-1. Click on the download link below.
-2. Right-click on the image and select "Save Image As."
-3. Choose a location on your device to save the image.
-4. Set the image as your device's background image.
-
-[Download Now](#download-now)
-
-## Compatibility
-
-Our digital devices wallpaper is compatible with various devices, including:
-
-- Desktop computers (Windows and Mac)
-- Laptops (Windows and Mac)
-- Tablets (Android and iOS)
-- Smartphones (Android and iOS)
-
-## Technical Details
-
-- Resolution: 1920 x 1080 pixels
-- File format: JPEG
-- File size: 1.5 MB
 
 ---
 
-Add some digital flair to your device with our digital devices wallpaper. Download now and enjoy the modern and stylish look it brings to your screen!
+
+# Tech Savvy Wallpapers
+
+Looking for a wallpaper that reflects your love for technology? Our Tech Savvy Wallpaper is the perfect fit! Featuring a sleek and modern repeating pattern of digital devices such as smartphones, tablets, and laptops, this wallpaper is sure to impress tech enthusiasts.
+
+With its high-quality resolution, the Tech Savvy Wallpaper will add a touch of sophistication to your desktop or mobile device. Whether you're a student, professional, or simply someone who loves gadgets, this wallpaper is an excellent choice.
+
+So why wait? Download the Tech Savvy Wallpaper today and show off your tech-savviness in style!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Tech-Savvy Hub
+
+Welcome to Tech-Savvy Hub, the ultimate destination for tech enthusiasts! Our website is designed to cater to all your technology needs and keep you up-to-date with the latest trends in the world of tech.
+
+As part of our commitment to providing a comprehensive tech experience, we offer a sleek and modern background featuring a repeating pattern of digital devices such as smartphones, tablets, and laptops. This background is perfect for anyone who wants to showcase their love for technology on their desktop or mobile device.
+
+But that's not all - Tech-Savvy Hub offers a wide range of resources, including product reviews, news updates, and how-to guides, to help you stay ahead of the curve. Whether you're a student, professional, or simply someone who loves gadgets, our website has something for everyone.
+
+So why wait? Join the Tech-Savvy community today and take your tech game to the next level!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Roboto
+- Lobster
+- Inter
+- Poppins
+- Great Vibes
+- Creepster
+- Orbitron
+- Alegreya
+- Cinzel
+- Raleway
+- Cormorant Garamond
+- Open Sans
+- Cinzel Decorative
+- IBM Plex Sans
+- Playfair Display
+- Futura
+- Dancing Script
+- Exo 2
+- Montserrat
+- Lato
+- Barlow Condensed
+- Cabin
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

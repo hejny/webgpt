@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
+"A team of Ainautes and their AI companions exploring a massive, abandoned alien spacecraft floating in the depths of space."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Exploring the Unknown: A Journey Through Abandoned Alien Spaceships
+# Exploring Abandoned Alien Spaceships
 
-Welcome to our website, where we take you on a journey through the depths of space and explore the unknown. Our team of AInauts and their AI companions are always ready to embark on new adventures, and this time we have found something truly extraordinary - a massive, abandoned alien spacecraft.
+Welcome to our website, where we take you on a journey through the depths of space and explore the unknown. Our team of Ainautes and their AI companions are always ready to embark on new adventures, and this time we have found something truly extraordinary - a massive, abandoned alien spacecraft.
 
 ## The Mission
 
@@ -40,9 +40,9 @@ Exploring an abandoned alien spacecraft is no easy task. We face many challenges
 
 If you're interested in learning more about space exploration and the mysteries of the universe, we recommend checking out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 

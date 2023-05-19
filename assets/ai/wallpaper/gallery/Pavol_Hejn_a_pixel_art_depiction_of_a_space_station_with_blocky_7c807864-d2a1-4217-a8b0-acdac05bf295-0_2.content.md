@@ -1,50 +1,145 @@
+<!--font:Montserrat-->
+
+# Retro-Future Space Exploration: Imagine More
+
+Welcome to our website where you can unleash your imagination and explore a captivating world of retro-futuristic space exploration. Our pixel art depiction of a space station, with its blocky shapes and limited color palette, will transport you to a different time and place.
+
+Discover new stories, characters, and worlds that will inspire and excite you. Whether you're a fan of classic sci-fi or modern space exploration, our website offers a unique experience for all.
+
+Join us on this journey through the stars and unlock your creativity. With endless possibilities, let your imagination soar and create your own adventures in this retro-futuristic world. Start exploring now and embark on an unforgettable adventure.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Retro-Futuristic Space Station Wallpaper
+
+Welcome to our website featuring a stunning pixel art depiction of a space station. This wallpaper captures the essence of retro and futuristic design with its blocky shapes and limited color palette. 
+
+Whether you're a fan of classic sci-fi or modern space exploration, this wallpaper is sure to add a unique touch to your desktop or mobile device. Download it now and transport yourself to a world of adventure and imagination.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Retro-Futuristic World of Space Station
+
+Step into a world of adventure and imagination with our stunning pixel art depiction of a space station. With its blocky shapes and limited color palette, this artwork captures the essence of retro and futuristic design.
+
+Our website invites you to explore this captivating world of space exploration and sci-fi inspiration. Discover new stories, characters, and worlds that will transport you to a different time and place.
+
+Whether you're a fan of classic sci-fi or modern space exploration, our website offers a unique experience for all. Join us on this journey through the stars and unlock your imagination.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Retro-Futuristic World of Space Exploration
+
+Welcome to our website where you can discover a captivating world of space exploration and sci-fi inspiration. Our stunning pixel art depiction of a space station, with its blocky shapes and limited color palette, captures the essence of retro and futuristic design.
+
+Explore new stories, characters, and worlds that will transport you to a different time and place. Whether you're a fan of classic sci-fi or modern space exploration, our website offers a unique experience for all.
+
+Join us on this journey through the stars and unlock your imagination. Discover new possibilities and let your creativity soar. Start exploring now and get ready to be inspired.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Unleash Your Imagination with Retro-Futuristic Space Exploration
+
+Welcome to our website where you can unleash your imagination and explore a captivating world of retro-futuristic space exploration. Our pixel art depiction of a space station, with its blocky shapes and limited color palette, will transport you to a different time and place.
+
+Discover new stories, characters, and worlds that will inspire and excite you. Whether you're a fan of classic sci-fi or modern space exploration, our website offers a unique experience for all.
+
+Join us on this journey through the stars and unlock your creativity. With endless possibilities, let your imagination soar and create your own adventures in this retro-futuristic world. Start exploring now and embark on an unforgettable adventure.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- Lobster
+- Great Vibes
+- Lato
+- Futura
+- Orbitron
+- Inter
+- Alegreya
+- Dancing Script
+- Barlow Condensed
+- Exo 2
+- Playfair Display
+- Poppins
+- IBM Plex Sans
+- Roboto
+- Open Sans
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- Lobster
+- Great Vibes
+- Lato
+- Futura
+- Orbitron
+- Inter
+- Alegreya
+- Dancing Script
+- Barlow Condensed
+- Exo 2
+- Playfair Display
+- Poppins
+- IBM Plex Sans
+- Roboto
+- Open Sans
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Montserrat-->
-
-# Retro Futuristic Space Station Wallpaper
-
-Welcome to our collection of retro-futuristic wallpapers! Our pixel art depiction of a space station is the perfect addition to any desktop or mobile device. With blocky shapes and limited colors, this wallpaper creates a unique blend of nostalgia and futuristic vibes.
-
-## About the Wallpaper
-
-Our space station wallpaper was inspired by classic video games and science fiction movies from the 80s and 90s. The pixelated design and limited color palette give it a distinct retro feel, while the futuristic subject matter keeps it fresh and modern.
-
-This wallpaper is available in various resolutions to fit any screen size. Simply download the file and set it as your background to add some retro-futuristic flair to your device.
-
-## User Stories
-
-- "I love the look of old-school video games, but I also want my desktop to look modern. This wallpaper is the perfect compromise!"
-- "I'm a huge sci-fi fan, and this wallpaper reminds me of all my favorite movies and TV shows."
-- "I work in a creative field, and this wallpaper helps me stay inspired throughout the day."
-
-## References
-
-If you're interested in learning more about retro-futurism and its influence on popular culture, check out these resources:
-
-- [Retro-Futurism: A Look Back at Tomorrow](#)
-- [The Art of Pixelated Retro-Futurism](#)
-- [How Science Fiction Imagined the 2020s](#)
-
-## Contact Us
-
-If you have any questions or comments about our retro-futuristic space station wallpaper, please don't hesitate to reach out to us:
-
-- Email: info@retrofuturisticwallpapers.com
-- Twitter: [@retrofuturisticwallpapers](#)

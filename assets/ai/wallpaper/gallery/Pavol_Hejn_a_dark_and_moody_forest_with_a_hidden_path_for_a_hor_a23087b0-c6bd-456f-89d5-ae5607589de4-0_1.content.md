@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# The Hidden Path: A Dark and Moody Forest for Your Horror or Mystery Website
+# Dark Forest: Horror/Mystery
 
 Welcome to The Hidden Path, your go-to source for dark and moody forest wallpapers perfect for your horror or mystery website. Our featured wallpaper is a stunning depiction of a forest shrouded in darkness, with a hidden path leading deeper into the unknown.
 

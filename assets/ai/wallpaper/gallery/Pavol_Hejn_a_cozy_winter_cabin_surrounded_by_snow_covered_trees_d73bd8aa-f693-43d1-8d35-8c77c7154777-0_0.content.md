@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Winter Wonderland Home Decor Ideas
+# Winter Home Decor Ideas.
 
 Welcome to our cozy corner of the internet, where we share inspiration and tips for creating a winter wonderland in your home. Whether you're looking for festive decor ideas or cozy lifestyle tips, we've got you covered.
 

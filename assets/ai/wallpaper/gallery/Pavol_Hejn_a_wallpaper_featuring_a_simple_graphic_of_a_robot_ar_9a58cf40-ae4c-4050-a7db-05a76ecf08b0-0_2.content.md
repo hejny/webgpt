@@ -1,55 +1,119 @@
+<!--font:Poppins-->
+
+# RoboNotify - Notif Assistant
+
+RoboNotify is the ultimate solution for staying on top of your important notifications and messages. Our sleek wallpaper features a graphic of a robot arm holding a smartphone, with ample space for displaying all your most critical alerts.
+
+With RoboNotify, you'll never miss an essential message or notification again. Whether you're at work, on the go, or just relaxing at home, our wallpaper keeps you informed and up-to-date on everything that matters most.
+
+So why wait? Download RoboNotify today and start enjoying the convenience and peace of mind that comes with having your own personal notification assistant right at your fingertips!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# RoboNotify - Your Personal Notification Assistant
+
+Looking for an easy way to stay on top of your important notifications and messages? Look no further than RoboNotify! Our simple yet stylish wallpaper features a graphic of a robot arm holding a smartphone, with plenty of space for displaying all your most important alerts.
+
+With RoboNotify, you'll never miss an important message or notification again. Whether you're at work, on the go, or just relaxing at home, our wallpaper will keep you informed and up-to-date on everything that matters most.
+
+So why wait? Download RoboNotify today and start enjoying the convenience and peace of mind that comes with having your own personal notification assistant right at your fingertips!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# RoboNotify - Stay on Top of Your Notifications
+
+RoboNotify is your personal notification assistant that helps you stay on top of all your important messages and alerts. Our simple yet stylish wallpaper features a graphic of a robot arm holding a smartphone, with ample space for displaying all your most critical notifications.
+
+Whether you're at work, on the go, or relaxing at home, RoboNotify ensures that you never miss an essential message or notification again. With our wallpaper, you'll have all your important alerts right at your fingertips, keeping you informed and up-to-date on everything that matters most.
+
+So why wait? Download RoboNotify today and start enjoying the convenience and peace of mind that comes with having your own personal notification assistant!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# RoboNotify - Your Personal Notification Assistant
+
+RoboNotify is a simple yet effective way to stay on top of your important notifications and messages. Our stylish wallpaper features a graphic of a robot arm holding a smartphone, providing plenty of space for displaying all your most critical alerts.
+
+With RoboNotify, you'll never miss an essential message or notification again. Whether you're at work, on the go, or just relaxing at home, our wallpaper keeps you informed and up-to-date on everything that matters most.
+
+So why wait? Download RoboNotify today and start enjoying the convenience and peace of mind that comes with having your own personal notification assistant right at your fingertips!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# RoboNotify - Your Personal Notification Assistant
+
+RoboNotify is the ultimate solution for staying on top of your important notifications and messages. Our sleek wallpaper features a graphic of a robot arm holding a smartphone, with ample space for displaying all your most critical alerts.
+
+With RoboNotify, you'll never miss an essential message or notification again. Whether you're at work, on the go, or just relaxing at home, our wallpaper keeps you informed and up-to-date on everything that matters most.
+
+So why wait? Download RoboNotify today and start enjoying the convenience and peace of mind that comes with having your own personal notification assistant right at your fingertips!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Playfair Display
+- Montserrat
+- IBM Plex Sans
+- Exo 2
+- Futura
+- Lobster
+- Barlow Condensed
+- Poppins
+- Open Sans
+- Inter
+- Orbitron
+- Roboto
+- Alegreya
+- Dancing Script
+- Great Vibes
+- Lato
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# Robot Arm Wallpaper for Your Productivity Boost
-
-Looking for a wallpaper that can help you stay on top of your tasks? Look no further than our robot arm wallpaper! Featuring a simple graphic of a robot arm holding a smartphone, with a space for placing important notifications or messages, this wallpaper is perfect for anyone who wants to stay organized and focused.
-
-## Why Choose Our Robot Arm Wallpaper?
-
-Our wallpaper is more than just a pretty picture. It's designed to help you be more productive and efficient in your work and personal life. Here are just a few reasons why you should choose our robot arm wallpaper:
-
-- **Stay organized:** With the space for placing important notifications or messages, you'll never forget an important task or appointment again.
-- **Stay focused:** The simple graphic of the robot arm holding a smartphone serves as a reminder to stay focused on your work and avoid distractions.
-- **Boost productivity:** By staying organized and focused, you'll be able to get more done in less time, boosting your productivity and helping you achieve your goals.
-
-## User Stories
-
-Here are some examples of how our robot arm wallpaper has helped people stay organized and focused:
-
-> "I used to have trouble remembering all my appointments and deadlines, but since I started using the robot arm wallpaper, I haven't missed a single one!" - Sarah, Freelance Writer
-
-> "As a software developer, I'm always looking for ways to stay focused and avoid distractions. The robot arm wallpaper helps me do just that by reminding me to stay on task." - John, Software Developer
-
-## How to Use Our Robot Arm Wallpaper
-
-Using our robot arm wallpaper is easy! Simply download the image and set it as your desktop background. Then, use the space provided to place important notifications or messages. You can even customize the wallpaper by adding your own text or graphics.
-
-## References
-
-Looking for more information on productivity and organization? Check out these resources:
-
-- [10 Tips for Staying Organized and Productive](#)
-- [The Pomodoro Technique: A Simple Method for Boosting Productivity](#)
-- [Getting Things Done: The Art of Stress-Free Productivity](#)
-
-## Contact Us
-
-Have a question or comment about our robot arm wallpaper? We'd love to hear from you! Contact us at [insert email address here] or follow us on [insert social media platform here] for more tips and tricks on staying organized and productive.

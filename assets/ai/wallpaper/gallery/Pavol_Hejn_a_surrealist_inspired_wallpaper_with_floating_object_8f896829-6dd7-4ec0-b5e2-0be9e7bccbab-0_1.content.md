@@ -1,91 +1,242 @@
+<!--font:Poppins-->
+
+# Surrealist Space Decor
+
+Welcome to our website, where we offer surrealism-inspired imagery that can enhance your creative space. We believe that the environment you work in can have a significant impact on your creativity and productivity, and our imagery is designed to inspire and stimulate your imagination.
+
+## Our Imagery
+
+Our surrealism-inspired design features floating objects such as gears, cogs, and computer parts against a background of muted colors. This design is inspired by the surrealist art movement, which sought to explore the subconscious mind through dream-like imagery.
+
+Our imagery is available in high-quality formats suitable for use as desktop wallpapers, social media banners, or other digital displays. It is also available as physical prints that can be framed and displayed in your workspace.
+
+## User Stories
+
+Here are some stories from our satisfied customers:
+
+> "I love having the surrealism-inspired imagery on my desktop. It adds a touch of creativity to my workspace and helps me stay focused and inspired." - Sarah, freelance writer
+
+> "As an artist, I'm always looking for new sources of inspiration. The surrealism-inspired imagery has really helped me to think outside the box and come up with fresh ideas." - Alex, visual artist
+
+## References
+
+If you're interested in learning more about surrealist art, we recommend checking out these resources:
+
+- [The Museum of Modern Art](#)
+- [Tate Modern](#)
+- [The Salvador Dali Museum](#)
+
+## Contact Us
+
+If you have any questions about our surrealism-inspired imagery or would like to place an order, please don't hesitate to [contact us](#). We're always happy to help!
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
+- Use markdown format 
+- Start with heading
+- Heading should be short and concise
+- The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Montserrat-->
 
-# Surrealist Dreamscape Wallpaper for Your Home or Office
+---
 
-Transform your space into a surreal dreamscape with our unique wallpaper design. Our surrealist-inspired wallpaper features floating objects such as gears, cogs, and computer parts against a background of muted colors. The intricate details of this wallpaper will captivate your senses and create an otherworldly atmosphere in any room.
 
-## Features
+# The Workshop: Enhancing Your Workspace with a Surrealist-Inspired Wallpaper
 
--   High-quality printing technology ensures vibrant colors and crisp details
--   Durable and easy to install wallpaper material
--   Available in custom sizes to fit any wall dimensions
--   Easy to clean and maintain
+Welcome to The Workshop, where we believe that your workspace should be as inspiring as the work you do. Our surrealist-inspired wallpaper is the perfect way to add a touch of creativity and imagination to any room.
+
+## About the Wallpaper
+
+Our wallpaper features floating objects such as gears, cogs, and computer parts against a background of muted colors. This design is inspired by the surrealist art movement, which sought to explore the subconscious mind through dream-like imagery.
+
+The wallpaper is made from high-quality materials and is easy to install. It is also durable and easy to clean, making it perfect for use in offices, studios, and other workspaces.
 
 ## User Stories
 
-Our customers have used this wallpaper to create stunning accent walls in their homes, offices, and even art galleries. Here are some user stories that showcase the versatility of our surrealist dreamscape wallpaper:
+Here are some stories from our satisfied customers:
 
-> "I wanted to create a unique atmosphere in my home office that would inspire creativity and imagination. This wallpaper was the perfect choice! It adds depth and texture to the room without overwhelming the space." - Sarah, freelance writer
+> "I was looking for a way to make my home office more interesting, and this wallpaper was the perfect solution. It's like having a work of art on my wall!" - Sarah, freelance writer
 
-> "As an art gallery owner, I'm always looking for new ways to showcase contemporary art. This wallpaper provides the perfect backdrop for abstract paintings and sculptures. It's become a popular feature in our gallery exhibitions!" - David, art gallery owner
-
-## Installation Tips
-
-Installing wallpaper can be a daunting task, but with the right tools and preparation, it can be a fun DIY project. Here are some tips to ensure a smooth installation process:
-
-1. Measure your wall dimensions carefully to order the correct amount of wallpaper.
-2. Prepare the wall surface by cleaning it thoroughly and filling any holes or cracks.
-3. Use a wallpaper primer to ensure proper adhesion and prevent air bubbles.
-4. Start at the top of the wall and work your way down, smoothing out any wrinkles or bubbles as you go.
-5. Trim excess wallpaper at the bottom using a sharp utility knife.
-
-For more detailed installation instructions, please refer to our [installation guide](#installation-guide) below.
+> "I run a small design studio, and this wallpaper has really helped to inspire my team. It's amazing how much difference a simple change like this can make." - Alex, graphic designer
 
 ## References
 
--   [Surrealism - Wikipedia](https://en.wikipedia.org/wiki/Surrealism)
--   [The History of Wallpaper - The Spruce](https://www.thespruce.com/history-of-wallpaper-1977448)
+If you're interested in learning more about surrealist art, we recommend checking out these resources:
+
+- [The Museum of Modern Art](#)
+- [Tate Modern](#)
+- [The Salvador Dali Museum](#)
 
 ## Contact Us
 
-If you have any questions or concerns about our surrealist dreamscape wallpaper, please don't hesitate to contact us. Our customer service team is available 24/7 to assist you with your order and installation needs.
+If you have any questions about our wallpaper or would like to place an order, please don't hesitate to [contact us](#). We're always happy to help!
 
--   Email: info@dreamscapewallpaper.com
--   Phone: 1-800-555-1234
--   Social media: [@DreamscapeWallpaper](#social-media) on Instagram, Twitter, and Facebook
 
-## Installation Guide
+---
 
-### Materials Needed
 
--   Wallpaper
--   Wallpaper primer
--   Measuring tape
--   Utility knife
--   Wallpaper brush or roller
--   Smoothing tool (squeegee or plastic spatula)
--   Level
--   Pencil
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
 
-### Step-by-Step Instructions
 
-1. Measure your wall dimensions carefully to order the correct amount of wallpaper.
-2. Prepare the wall surface by cleaning it thoroughly and filling any holes or cracks.
-3. Apply wallpaper primer according to manufacturer's instructions and let dry completely.
-4. Cut the wallpaper into manageable strips, leaving a few extra inches at the top and bottom for trimming.
-5. Use a level and pencil to draw a straight line at the top of the wall as a guide for the first strip.
-6. Apply wallpaper paste to the back of the first strip using a roller or brush, making sure to cover the edges.
-7. Place the first strip at the top of the wall, aligning it with the pencil line and smoothing out any air bubbles or wrinkles with a smoothing tool.
-8. Repeat steps 6 and 7 for each subsequent strip, making sure to match the pattern and overlap the edges slightly.
-9. Trim excess wallpaper at the top and bottom using a sharp utility knife.
-10. Let the wallpaper dry completely before hanging any artwork or decorations.
+---
 
-For more detailed instructions and tips, please refer to our [installation video](#installation-video) below.
+
+# The Creative Workspace: Inspiring Your Work with Surrealist Imagery
+
+Welcome to The Creative Workspace, where we believe that your environment can have a big impact on your creativity and productivity. Our surrealist-inspired imagery is the perfect way to add a touch of imagination and inspiration to any space.
+
+## About the Imagery
+
+Our surrealism-inspired design features floating objects such as gears, cogs, and computer parts against a background of muted colors. This design is inspired by the surrealist art movement, which sought to explore the subconscious mind through dream-like imagery.
+
+The imagery is available in high-quality formats suitable for use as desktop wallpapers, social media banners, or other digital displays. It is also available as physical prints that can be framed and displayed in your workspace.
+
+## User Stories
+
+Here are some stories from our satisfied customers:
+
+> "I was looking for a way to make my home office more interesting, and this imagery was the perfect solution. It's like having a work of art on my screen!" - Sarah, freelance writer
+
+> "As a graphic designer, I'm always looking for new sources of inspiration. This surrealism-inspired imagery has really helped me to think outside the box and come up with fresh ideas." - Alex, graphic designer
+
+## References
+
+If you're interested in learning more about surrealist art, we recommend checking out these resources:
+
+- [The Museum of Modern Art](#)
+- [Tate Modern](#)
+- [The Salvador Dali Museum](#)
+
+## Contact Us
+
+If you have any questions about our surrealist-inspired imagery or would like to place an order, please don't hesitate to [contact us](#). We're always happy to help!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Surrealist Imagery for Your Creative Workspace
+
+Welcome to our website, where we offer surrealism-inspired imagery that can enhance your creative workspace. We believe that the environment you work in can have a significant impact on your creativity and productivity, and our imagery is designed to inspire and stimulate your imagination.
+
+## About Our Imagery
+
+Our surrealism-inspired design features floating objects such as gears, cogs, and computer parts against a background of muted colors. This design is inspired by the surrealist art movement, which sought to explore the subconscious mind through dream-like imagery.
+
+Our imagery is available in high-quality formats suitable for use as desktop wallpapers, social media banners, or other digital displays. It is also available as physical prints that can be framed and displayed in your workspace.
+
+## User Stories
+
+Here are some stories from our satisfied customers:
+
+> "I love the surrealism-inspired imagery on my desktop. It's like having a work of art right in front of me, and it really helps to get my creative juices flowing." - Sarah, freelance writer
+
+> "As a graphic designer, I'm always looking for new sources of inspiration. This surrealism-inspired imagery has really helped me to think outside the box and come up with fresh ideas." - Alex, graphic designer
+
+## References
+
+If you're interested in learning more about surrealist art, we recommend checking out these resources:
+
+- [The Museum of Modern Art](#)
+- [Tate Modern](#)
+- [The Salvador Dali Museum](#)
+
+## Contact Us
+
+If you have any questions about our surrealism-inspired imagery or would like to place an order, please don't hesitate to [contact us](#). We're always happy to help!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Surrealist-Inspired Imagery for Your Creative Space
+
+Welcome to our website, where we offer surrealism-inspired imagery that can enhance your creative space. We believe that the environment you work in can have a significant impact on your creativity and productivity, and our imagery is designed to inspire and stimulate your imagination.
+
+## Our Imagery
+
+Our surrealism-inspired design features floating objects such as gears, cogs, and computer parts against a background of muted colors. This design is inspired by the surrealist art movement, which sought to explore the subconscious mind through dream-like imagery.
+
+Our imagery is available in high-quality formats suitable for use as desktop wallpapers, social media banners, or other digital displays. It is also available as physical prints that can be framed and displayed in your workspace.
+
+## User Stories
+
+Here are some stories from our satisfied customers:
+
+> "I love having the surrealism-inspired imagery on my desktop. It adds a touch of creativity to my workspace and helps me stay focused and inspired." - Sarah, freelance writer
+
+> "As an artist, I'm always looking for new sources of inspiration. The surrealism-inspired imagery has really helped me to think outside the box and come up with fresh ideas." - Alex, visual artist
+
+## References
+
+If you're interested in learning more about surrealist art, we recommend checking out these resources:
+
+- [The Museum of Modern Art](#)
+- [Tate Modern](#)
+- [The Salvador Dali Museum](#)
+
+## Contact Us
+
+If you have any questions about our surrealism-inspired imagery or would like to place an order, please don't hesitate to [contact us](#). We're always happy to help!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Poppins
+- Dancing Script
+- Inter
+- Montserrat
+- Futura
+- Great Vibes
+- Alegreya
+- Lato
+- Raleway
+- Playfair Display
+- Lobster
+- Barlow Condensed
+- Open Sans
+- Orbitron
+- Roboto
+- Exo 2
+- IBM Plex Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

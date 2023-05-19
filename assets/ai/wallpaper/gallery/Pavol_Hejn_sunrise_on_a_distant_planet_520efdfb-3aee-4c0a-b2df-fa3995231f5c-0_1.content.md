@@ -1,4 +1,43 @@
+<!--font:Poppins-->
+
+# New World Sunrise
+
+Welcome to our website, where we offer a stunning sunrise background that will transport you to a new world. Our background is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
+
+## About Our Background
+
+Our background features a breathtaking sunrise on an alien planet. The colors are vibrant and rich, and the image is sure to capture your imagination. Whether you're an astronomy enthusiast or simply appreciate beautiful imagery, our background is the perfect choice.
+
+## How to Download
+
+Downloading our background is easy. Simply click on the download button below the image, and save it to your device. Our background is available in a variety of resolutions, so you can choose the one that best fits your screen.
+
+## User Stories
+
+Our background has already been downloaded by thousands of users around the world. Here are some of the stories they've shared with us:
+
+> "This background is out of this world! It makes me feel like I'm exploring a new planet." - Sarah, USA
+
+> "The colors are so vivid and beautiful. It's like looking at a work of art." - Tom, Canada
+
+> "I love the sense of adventure this background gives me. It's a great way to start my day." - Maria, Spain
+
+## Resources
+
+If you're interested in learning more about space and astronomy, check out these resources:
+
+- [NASA](#)
+- [Space.com](#)
+- [European Space Agency](#)
+
+## Contact Us
+
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+
+Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "Sunrise on a distant planet"
@@ -6,58 +45,228 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Montserrat-->
 
-# Discover the Beauty of Distant Planets with Our Sunrise Wallpaper
+---
 
-Welcome to our website, where you can explore the beauty of distant planets through our stunning sunrise wallpaper. This wallpaper captures the breathtaking view of a sunrise on a planet far away from our own, showcasing the wonders of the universe.
+
+# Discover the Beauty of a Distant Planet with Our Sunrise Wallpaper
+
+Welcome to our website, where we offer a stunning sunrise wallpaper that will transport you to a distant planet. Our wallpaper is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
 
 ## About Our Wallpaper
 
-Our wallpaper features a high-resolution image that is perfect for desktop backgrounds, phone screens, and more. The image depicts a sunrise on a distant planet, with vibrant colors and intricate details that will transport you to another world. Whether you are an astronomy enthusiast or simply appreciate beautiful imagery, our wallpaper is sure to impress.
-
-## User Stories
-
-Our wallpaper has been downloaded by people all over the world who have shared their stories with us. Here are a few examples:
-
-> "I love using this wallpaper as my background. It reminds me of the endless possibilities out there in the universe." - Sarah, USA 🇺🇸
-
-> "This wallpaper is so beautiful and calming. It's the perfect way to start my day." - Tom, UK 🇬🇧
-
-> "As an astrophysicist, I appreciate the accuracy and detail in this image. It's truly stunning." - Maria, Spain 🇪🇸
+Our wallpaper features a breathtaking sunrise on a distant planet. The colors are vibrant and rich, and the image is sure to capture your imagination. Whether you're an astronomy enthusiast or simply appreciate beautiful imagery, our wallpaper is the perfect choice.
 
 ## How to Download
 
-To download our sunrise wallpaper, simply click the download button below the image on our website. The image is available in various resolutions to fit your device perfectly. 
+Downloading our wallpaper is easy. Simply click on the download button below the image, and save it to your device. Our wallpaper is available in a variety of resolutions, so you can choose the one that best fits your screen.
+
+## User Stories
+
+Our wallpaper has already been downloaded by thousands of users around the world. Here are some of the stories they've shared with us:
+
+> "I love this wallpaper! It's like having a little piece of another planet on my computer." - Sarah, USA
+
+> "The colors are so vivid and beautiful. It really brightens up my day." - Tom, Canada
+
+> "I'm not usually into space stuff, but this wallpaper is just too cool to pass up." - Maria, Spain
 
 ## References
 
-If you want to learn more about the science behind sunrises on other planets, check out these resources:
+If you're interested in learning more about space and astronomy, check out these resources:
 
-- [NASA's Solar System Exploration: Sunrises and Sunsets on Other Planets](#nasa)
-- [Space.com: What Would a Sunrise Look Like on Other Planets?](#space)
+- [NASA](#)
+- [Space.com](#)
+- [European Space Agency](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpaper, please don't hesitate to contact us. You can reach us at [contact@ourwebsite.com](mailto:contact@ourwebsite.com) or through our social media channels.
+If you have any questions or comments about our wallpaper, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
 
-Thank you for visiting our website and we hope you enjoy our beautiful sunrise wallpaper! 
+Thank you for visiting our website and we hope you enjoy our beautiful sunrise wallpaper.
+
 
 ---
-#### References
 
-##### NASA
-Learn more about sunrises and sunsets on other planets with NASA's Solar System Exploration: [https://solarsystem.nasa.gov/solar-system/sun/sunrise-sunset/overview/](#)
 
-##### Space
-Discover what a sunrise would look like on other planets with Space.com: [https://www.space.com/what-would-sunrise-look-like-on-other-planets.html](#)
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Beauty of a Distant Planet with Our Sunrise Background
+
+Welcome to our website, where we offer a stunning sunrise background that will transport you to a distant planet. Our background is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
+
+## About Our Background
+
+Our background features a breathtaking sunrise on a distant planet. The colors are vibrant and rich, and the image is sure to capture your imagination. Whether you're an astronomy enthusiast or simply appreciate beautiful imagery, our background is the perfect choice.
+
+## How to Download
+
+Downloading our background is easy. Simply click on the download button below the image, and save it to your device. Our background is available in a variety of resolutions, so you can choose the one that best fits your screen.
+
+## User Stories
+
+Our background has already been downloaded by thousands of users around the world. Here are some of the stories they've shared with us:
+
+> "I love this background! It's like having a little piece of another planet on my computer." - Sarah, USA
+
+> "The colors are so vivid and beautiful. It really brightens up my day." - Tom, Canada
+
+> "I'm not usually into space stuff, but this background is just too cool to pass up." - Maria, Spain
+
+## Resources
+
+If you're interested in learning more about space and astronomy, check out these resources:
+
+- [NASA](#)
+- [Space.com](#)
+- [European Space Agency](#)
+
+## Contact Us
+
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+
+Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover a New World with Our Sunrise Background
+
+Welcome to our website, where we offer a stunning sunrise background that will transport you to a new world. Our background is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
+
+## About Our Background
+
+Our background features a breathtaking sunrise on an alien planet. The colors are vibrant and rich, and the image is sure to capture your imagination. Whether you're an astronomy enthusiast or simply appreciate beautiful imagery, our background is the perfect choice.
+
+## How to Download
+
+Downloading our background is easy. Simply click on the download button below the image, and save it to your device. Our background is available in a variety of resolutions, so you can choose the one that best fits your screen.
+
+## User Stories
+
+Our background has already been downloaded by thousands of users around the world. Here are some of the stories they've shared with us:
+
+> "This background is out of this world! It makes me feel like I'm exploring a new planet." - Sarah, USA
+
+> "The colors are so vivid and beautiful. It's like looking at a work of art." - Tom, Canada
+
+> "I love the sense of adventure this background gives me. It's a great way to start my day." - Maria, Spain
+
+## Resources
+
+If you're interested in learning more about space and astronomy, check out these resources:
+
+- [NASA](#)
+- [Space.com](#)
+- [European Space Agency](#)
+
+## Contact Us
+
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+
+Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Sunrise Background: Explore a New World
+
+Welcome to our website, where we offer a stunning sunrise background that will transport you to a new world. Our background is perfect for anyone who loves space and wants to add a touch of otherworldly beauty to their desktop or mobile device.
+
+## About Our Background
+
+Our background features a breathtaking sunrise on an alien planet. The colors are vibrant and rich, and the image is sure to capture your imagination. Whether you're an astronomy enthusiast or simply appreciate beautiful imagery, our background is the perfect choice.
+
+## How to Download
+
+Downloading our background is easy. Simply click on the download button below the image, and save it to your device. Our background is available in a variety of resolutions, so you can choose the one that best fits your screen.
+
+## User Stories
+
+Our background has already been downloaded by thousands of users around the world. Here are some of the stories they've shared with us:
+
+> "This background is out of this world! It makes me feel like I'm exploring a new planet." - Sarah, USA
+
+> "The colors are so vivid and beautiful. It's like looking at a work of art." - Tom, Canada
+
+> "I love the sense of adventure this background gives me. It's a great way to start my day." - Maria, Spain
+
+## Resources
+
+If you're interested in learning more about space and astronomy, check out these resources:
+
+- [NASA](#)
+- [Space.com](#)
+- [European Space Agency](#)
+
+## Contact Us
+
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+
+Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Great Vibes
+- Open Sans
+- Barlow Condensed
+- Lato
+- Lobster
+- Alegreya
+- Orbitron
+- Futura
+- Dancing Script
+- Roboto
+- Poppins
+- Inter
+- Montserrat
+- Exo 2
+- Raleway
+- Playfair Display
+- IBM Plex Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

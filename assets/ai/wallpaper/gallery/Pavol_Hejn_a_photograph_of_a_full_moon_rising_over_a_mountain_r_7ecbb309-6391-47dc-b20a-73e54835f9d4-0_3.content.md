@@ -1,36 +1,65 @@
+<!--font:Montserrat-->
+
+# Moonlit Mountains
+
+Welcome to Moonlit Mountains, where you can experience the breathtaking beauty of nature at its finest. Our website features a stunning photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.
+
+As you explore our site, you'll discover a wealth of information about the mountains, including their history, geology, flora, and fauna. Whether you're an avid hiker, a nature lover, or simply seeking inspiration, Moonlit Mountains has something for everyone.
+
+So why wait? Start your journey today and immerse yourself in the splendor of the mountains. And don't forget to download our wallpaper to keep the magic of the moonlit mountains with you wherever you go.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Moonlit Mountains
+
+Welcome to Moonlit Mountains, where you can experience the breathtaking beauty of nature at its finest. Our website features a stunning photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.
+
+As you explore our site, you'll discover a wealth of information about the mountains, including their history, geology, flora, and fauna. Whether you're an avid hiker, a nature lover, or simply seeking inspiration, Moonlit Mountains has something for everyone.
+
+So why wait? Start your journey today and immerse yourself in the splendor of the mountains. And don't forget to download our wallpaper to keep the magic of the moonlit mountains with you wherever you go.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Inter
+- Barlow Condensed
+- Orbitron
+- Poppins
+- Dancing Script
+- Roboto
+- Playfair Display
+- IBM Plex Sans
+- Open Sans
+- Lato
+- Raleway
+- Exo 2
+- Lobster
+- Futura
+- Great Vibes
+- Montserrat
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Montserrat-->
-
-# Moonlit Mountains Wallpaper
-
-Decorate your desktop or mobile screen with this stunning wallpaper of a full moon rising over a mountain range. The mist and clouds add to the sense of mystery, making it an ideal choice for those who love nature and adventure.
-
----
-
-## How to Download
-
-1. Click on the image above to open it in full size.
-2. Right-click on the image and select "Save image as...".
-3. Choose a location on your device where you want to save the image.
-4. Click "Save" to download the image.
-
----
-
-> "The moon is a loyal companion. It never leaves. It's always there, watching, steadfast, knowing us in our light and dark moments, changing forever just as we do." - Tahereh Mafi
-
----
-
-Remember to credit the photographer if you use this wallpaper for any public display or publication. Enjoy the beauty of nature every time you look at your screen!

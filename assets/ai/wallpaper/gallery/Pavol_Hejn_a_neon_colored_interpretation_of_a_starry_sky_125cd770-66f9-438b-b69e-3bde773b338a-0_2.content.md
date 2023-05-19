@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Galactic Dreams: A Neon-Colored Interpretation of a Starry Sky
+# Neon Galactic Dreams
 
 Welcome to Galactic Dreams, where we offer you a unique experience of the universe through our neon-colored interpretation of a starry sky wallpaper. Our wallpapers are designed to transform your space into a mesmerizing galaxy that will take your breath away.
 

@@ -1,52 +1,119 @@
+<!--font:Montserrat-->
+
+# Digital Art Explores Universe
+
+Our stunning digital artwork features a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. With its high-resolution and vivid colors, our painting captures the majesty of space exploration and is perfect for use as a desktop or mobile background.
+
+In addition to personal use, our digital artwork is also ideal for websites, social media profiles, or any other digital platform where you want to showcase your love of space. 
+
+Whether you're an avid fan of space exploration or simply appreciate beautiful artwork, our digital painting is sure to inspire and captivate you. So why wait? Download our artwork today and embark on a journey through the cosmos!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Space Exploration Wallpaper
+
+This stunning wallpaper features a digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. Whether you're a fan of space exploration or simply appreciate beautiful artwork, this wallpaper is sure to impress.
+
+With its high resolution and vivid colors, this wallpaper is perfect for sprucing up your desktop or mobile device. It's also great for use as a background image on websites, social media profiles, and more.
+
+So why wait? Download this amazing space exploration wallpaper today and take your digital experience to the next level!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Vastness of Space with Our Digital Artwork
+
+Immerse yourself in the beauty and wonder of space with our stunning digital artwork featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe. 
+
+Our high-resolution digital painting captures the majesty of space exploration and is perfect for use as a desktop or mobile background. It's also ideal for websites, social media profiles, or any other digital platform where you want to showcase your love of space.
+
+Whether you're an avid fan of space exploration or simply appreciate beautiful artwork, our digital painting is sure to inspire and captivate you. So why wait? Download our artwork today and embark on a journey through the cosmos!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Beauty of Space with Our Digital Artwork
+
+Step into the vast expanse of the universe with our stunning digital artwork. Featuring a lone astronaut standing on the edge of a crater, gazing out at the endless wonders of space, our high-resolution painting captures the majesty of space exploration.
+
+Perfect for use as a desktop or mobile background, our digital artwork is also great for websites, social media profiles, or any other digital platform where you want to showcase your love of space. 
+
+Whether you're an avid fan of space exploration or simply appreciate beautiful artwork, our digital painting is sure to inspire and captivate you. So why wait? Download our artwork today and embark on a journey through the cosmos!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore the Universe with Our Digital Artwork
+
+Our stunning digital artwork features a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. With its high-resolution and vivid colors, our painting captures the majesty of space exploration and is perfect for use as a desktop or mobile background.
+
+In addition to personal use, our digital artwork is also ideal for websites, social media profiles, or any other digital platform where you want to showcase your love of space. 
+
+Whether you're an avid fan of space exploration or simply appreciate beautiful artwork, our digital painting is sure to inspire and captivate you. So why wait? Download our artwork today and embark on a journey through the cosmos!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Raleway
+- Inter
+- Roboto
+- IBM Plex Sans
+- Lato
+- Great Vibes
+- Playfair Display
+- Exo 2
+- Orbitron
+- Lobster
+- Futura
+- Alegreya
+- Open Sans
+- Poppins
+- Barlow Condensed
+- Montserrat
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:Montserrat-->
-
-# Space Explorer Wallpaper
-
-Welcome to our website featuring a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This wallpaper captures the awe-inspiring beauty and mystery of space exploration, inspiring us to dream big and reach for the stars.
-
-## About Us
-
-We are a team of space enthusiasts dedicated to sharing the wonder and excitement of space exploration with the world. Our mission is to inspire people of all ages to learn about space, science, and technology through beautiful and engaging visual content.
-
-## User Stories
-
-Here are some stories from our users who have downloaded and used our Space Explorer wallpaper:
-
-- "I love this wallpaper! It reminds me every day that there's a whole universe out there waiting to be explored." - Sarah, student
-- "The detail in this painting is incredible. It feels like I'm right there on the moon with the astronaut." - John, engineer
-- "This wallpaper has inspired me to pursue my dream of becoming an astronaut. Thank you!" - Emily, aspiring astronaut
-
-## References
-
-If you're interested in learning more about space exploration, here are some resources we recommend:
-
-- [NASA](#) - The official website of the National Aeronautics and Space Administration.
-- [Space.com](#) - News, articles, and videos about space and astronomy.
-- [Astronomy Magazine](#) - A monthly magazine covering the latest developments in astronomy and space science.
-
-## Contact Us
-
-If you have any questions or feedback, we'd love to hear from you! You can reach us at:
-
-- Email: [contact@spaceexplorer.com](mailto:contact@spaceexplorer.com)
-- Twitter: [@spaceexplorer](#)
-
-Thank you for visiting our website and exploring the wonders of space with us!

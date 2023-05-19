@@ -1,59 +1,129 @@
+<!--font:Poppins-->
+
+# Modern Geometric Elegance
+
+Our website features a stunning modern geometric design that will add sophistication to any room in your home or office. The repeating pattern of simple geometric shapes arranged in a grid-like structure creates a sleek and stylish backdrop for your space.
+
+Crafted from high-quality materials, this design is built to last. Precision printing ensures sharp lines and vibrant colors that will enhance the overall aesthetic of your room.
+
+This versatile design complements any style, whether you prefer a minimalist approach or a bold statement. It's easy to install and maintain, making it a hassle-free choice for any DIY project.
+
+Browse our selection of modern geometric designs today and transform your space into an elegant work of art.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a repeating pattern of simple geometric shapes, arranged in a grid-like structure."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Geometric Grid Wallpaper
+
+Welcome to our website featuring a stunning wallpaper with a repeating pattern of simple geometric shapes arranged in a grid-like structure. This wallpaper is perfect for adding a touch of modernity and sophistication to any room in your home or office.
+
+Our wallpaper is made from high-quality materials, ensuring that it will last for years to come. The geometric design is printed with precision, resulting in sharp lines and vibrant colors that will enhance the look of your space.
+
+Whether you prefer a minimalist aesthetic or a bold statement, this wallpaper is versatile enough to complement any style. It's also easy to install and maintain, making it a hassle-free choice for any DIY project.
+
+Browse our selection of geometric grid wallpapers today and transform your space into a work of art.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Modern Geometric Design for Your Home or Office
+
+Welcome to our website featuring a stunning modern geometric design that will elevate the look of any room in your home or office. The repeating pattern of simple geometric shapes arranged in a grid-like structure creates a sleek and sophisticated backdrop for your space.
+
+Our high-quality materials ensure that this design will last for years to come. The precision printing results in sharp lines and vibrant colors that will enhance the overall aesthetic of your room.
+
+This versatile design complements any style, whether you prefer a minimalist approach or a bold statement. It's easy to install and maintain, making it a hassle-free choice for any DIY project.
+
+Browse our selection of modern geometric designs today and transform your space into a work of art.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Elevate Your Space with a Modern Geometric Design
+
+Looking to add a touch of sophistication and modernity to your home or office? Our website features a stunning modern geometric design that will elevate the look of any room. The repeating pattern of simple geometric shapes arranged in a grid-like structure creates a sleek and stylish backdrop for your space.
+
+Crafted from high-quality materials, this design is built to last. Precision printing ensures sharp lines and vibrant colors that will enhance the overall aesthetic of your room.
+
+This versatile design complements any style, whether you prefer a minimalist approach or a bold statement. It's easy to install and maintain, making it a hassle-free choice for any DIY project.
+
+Browse our selection of modern geometric designs today and transform your space into a work of art.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Modernize Your Space with Geometric Elegance
+
+Our website features a stunning modern geometric design that will add sophistication to any room in your home or office. The repeating pattern of simple geometric shapes arranged in a grid-like structure creates a sleek and stylish backdrop for your space.
+
+Crafted from high-quality materials, this design is built to last. Precision printing ensures sharp lines and vibrant colors that will enhance the overall aesthetic of your room.
+
+This versatile design complements any style, whether you prefer a minimalist approach or a bold statement. It's easy to install and maintain, making it a hassle-free choice for any DIY project.
+
+Browse our selection of modern geometric designs today and transform your space into an elegant work of art.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Roboto
+- Exo 2
+- Open Sans
+- Lobster
+- Poppins
+- Dancing Script
+- Alegreya
+- Barlow Condensed
+- Raleway
+- Montserrat
+- IBM Plex Sans
+- Futura
+- Orbitron
+- Lato
+- Inter
+- Playfair Display
+- Great Vibes
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Open Sans-->
-
-# Geometric Grid Wallpaper for Modern Interiors
-
-Make a statement in your home or office with our geometric grid wallpaper. This bold and modern design features a repeating pattern of simple geometric shapes arranged in a grid-like structure, creating a dynamic and eye-catching effect on any wall.
-
-## Features
-
--   High-quality printing ensures sharp and vibrant colors
--   Durable, non-woven material is easy to install and remove
--   Available in a range of sizes to fit any space
--   Perfect for accent walls, home offices, and modern living spaces
-
-## User Stories
-
-"I was looking for a way to add some interest to my bland white walls, and this geometric grid wallpaper was the perfect solution! The pattern is subtle enough to not be overwhelming, but still adds a lot of visual interest to my space." - Sarah, interior design enthusiast
-
-"I wanted to create a feature wall in my home office that would inspire creativity and productivity. This wallpaper exceeded my expectations - it's bold and modern, but also soothing and calming at the same time." - John, freelance graphic designer
-
-## Installation
-
-Our wallpaper is designed to be easy to install, even for beginners. Simply follow these steps:
-
-1. Prepare your walls by cleaning them thoroughly and making sure they are dry and smooth.
-2. Measure your wall and cut the wallpaper to the appropriate size, leaving a few extra inches on all sides to allow for trimming.
-3. Apply wallpaper paste to the back of the wallpaper using a roller or brush.
-4. Carefully place the wallpaper onto the wall, smoothing out any bubbles or wrinkles as you go.
-5. Use a sharp knife or scissors to trim off any excess wallpaper around the edges.
-6. Enjoy your new, stylish feature wall!
-
-## References
-
-Check out some of our other popular wallpaper designs:
-
--   [Floral Watercolor Wallpaper](#)
--   [Rustic Wood Plank Wallpaper](#)
--   [Abstract Brushstroke Wallpaper](#)
-
-## Contact Us
-
-If you have any questions about our wallpaper or need help with installation, please don't hesitate to [contact us](#). Our friendly customer service team is always happy to help!

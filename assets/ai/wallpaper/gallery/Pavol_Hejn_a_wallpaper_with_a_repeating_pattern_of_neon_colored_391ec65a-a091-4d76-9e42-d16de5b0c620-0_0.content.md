@@ -1,53 +1,87 @@
+<!--font:Poppins-->
+
+# Futuristic Tech Hub
+
+Welcome to our futuristic tech hub, where we bring you the latest and greatest in technology news, reviews, and trends. Our website features a sleek and modern design with a repeating pattern of neon-colored circuitry set against a black background.
+
+Our goal is to provide you with insightful and informative content that will keep you up-to-date on the ever-evolving world of technology. From new gadgets and software releases to industry updates and expert opinions, we've got you covered.
+
+In addition to our top-notch content, we also offer a high-quality wallpaper featuring the same neon circuitry design as our website. This wallpaper is perfect for anyone who wants to add a touch of tech-inspired style to their desktop or mobile device.
+
+Join us on our journey into the future of technology and stay ahead of the curve with our comprehensive coverage and cutting-edge design.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a repeating pattern of neon-colored circuitry, set against a black background."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Neon Circuitry Wallpaper
+
+Welcome to our website featuring a stunning wallpaper with a repeating pattern of neon-colored circuitry set against a black background. This wallpaper is perfect for those who love technology and futuristic designs.
+
+Our wallpaper is high-quality and will make any room or desktop background stand out. The neon colors add a pop of brightness while the circuitry pattern gives it a unique and modern touch.
+
+Whether you're a tech enthusiast or just looking for a bold statement piece, our neon circuitry wallpaper is sure to impress. Get yours today and elevate your space to the next level!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Futuristic Tech Hub
+
+Welcome to our futuristic tech hub, where we bring you the latest and greatest in technology news, reviews, and trends. Our website features a sleek and modern design with a repeating pattern of neon-colored circuitry set against a black background.
+
+Our goal is to provide you with insightful and informative content that will keep you up-to-date on the ever-evolving world of technology. From new gadgets and software releases to industry updates and expert opinions, we've got you covered.
+
+In addition to our top-notch content, we also offer a high-quality wallpaper featuring the same neon circuitry design as our website. This wallpaper is perfect for anyone who wants to add a touch of tech-inspired style to their desktop or mobile device.
+
+Join us on our journey into the future of technology and stay ahead of the curve with our comprehensive coverage and cutting-edge design.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Alegreya
+- Open Sans
+- Great Vibes
+- Exo 2
+- IBM Plex Sans
+- Lobster
+- Orbitron
+- Dancing Script
+- Poppins
+- Inter
+- Barlow Condensed
+- Playfair Display
+- Montserrat
+- Lato
+- Roboto
+- Raleway
+- Futura
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# "Circuitry Dreams" - A Futuristic Wallpaper for Tech Enthusiasts
-
-Welcome to Circuitry Dreams, the ultimate destination for tech enthusiasts who want to add a futuristic touch to their desktops. Our wallpaper features a mesmerizing repeating pattern of neon-colored circuitry set against a black background, creating a stunning visual effect that will take your breath away.
-
-## Why Choose Circuitry Dreams?
-
-At Circuitry Dreams, we believe that your desktop should reflect your personality and interests. If you're someone who is passionate about technology, science fiction, or just loves the look of neon lights, our wallpaper is perfect for you. Here are some reasons why you should choose Circuitry Dreams:
-
-- Unique design: Our wallpaper is unlike anything you've seen before. The intricate circuitry pattern is both futuristic and elegant, making it a great addition to any desktop.
-- High-quality resolution: We use only the highest quality images to ensure that our wallpaper looks great on any screen size.
-- Easy to install: Installing our wallpaper is a breeze. Simply download the image and set it as your desktop background.
-
-## User Stories
-
-Our wallpaper has been used by people all over the world who want to add a touch of sci-fi to their desktops. Here are some user stories from our satisfied customers:
-
-> "I'm a software engineer, and I spend most of my day staring at my computer screen. Having Circuitry Dreams as my wallpaper makes me feel like I'm working in a futuristic lab. It's the little things that make a big difference!" - John D.
-
-> "I love everything cyberpunk, so when I saw Circuitry Dreams, I knew I had to have it. It's now my go-to wallpaper, and I get compliments on it all the time." - Sarah K.
-
-## References
-
-If you're interested in learning more about the inspiration behind Circuitry Dreams, check out these references:
-
-- "Neon Genesis Evangelion" anime series
-- "Blade Runner" movie
-- Cyberpunk genre in literature and film
-
-## Contact Us
-
-If you have any questions or comments about Circuitry Dreams, we'd love to hear from you. You can reach us at [email protected] or follow us on Twitter @CircuitryDreams.
-
-Thank you for choosing Circuitry Dreams - the wallpaper that will take your desktop to the next level!

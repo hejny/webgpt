@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
+"A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Spaceship Exploration
 
-Welcome to our website dedicated to the exploration of space by a futuristic spaceship crewed entirely by AInauts. Our mission is to discover new worlds, gather knowledge, and expand humanity's understanding of the universe.
+Welcome to our website dedicated to the exploration of space by a futuristic spaceship crewed entirely by Ainautes. Our mission is to discover new worlds, gather knowledge, and expand humanity's understanding of the universe.
 
 ## The Crew
 

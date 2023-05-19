@@ -1,4 +1,36 @@
+<!--font:Montserrat-->
+
+# Vintage Universe Star Map
+
+Our vintage star map background is a beautiful and inspiring addition to any desktop or mobile device. Featuring a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies, this background will take you on a journey through the cosmos.
+
+## Features
+
+- High-quality image resolution for a crisp and clear display
+- Vintage aesthetic adds a touch of nostalgia to your device
+- Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
+- Available in multiple sizes to fit any screen
+
+## Discover the Wonders of the Universe
+
+Use our vintage star map background as a starting point to explore the wonders of the universe. Here are some resources to get you started:
+
+- [NASA's Guide to the Night Sky](#): Learn about the stars and constellations visible from your location.
+- [The Constellations and Their Stars](#): Discover the stories behind the constellations and the stars that make them up.
+- [Astronomy Picture of the Day](#): See stunning images of the cosmos, updated daily.
+
+## User Stories
+
+"I'm an amateur astronomer, and having this star map as my background inspires me to keep exploring the night sky." - John D.
+
+"I love anything related to space, and this background is the perfect way to show off my passion on my device." - Sarah L.
+
+## Contact Us
+
+Have questions or comments about our vintage star map background? Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A vintage map of the stars and constellations, with detailed illustrations of spacecraft and celestial bodies."
@@ -6,56 +38,200 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Montserrat-->
 
-# Discover the Wonders of the Universe with our Vintage Map Wallpaper
+---
 
-Transform your space into a celestial wonderland with our vintage map wallpaper. This unique design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies.
 
-## Explore the Cosmos from Your Own Home
+# Explore the Cosmos with Our Vintage Star Map Wallpaper
 
-With this stunning wallpaper, you can explore the wonders of the universe from the comfort of your own home. The intricate details and vibrant colors will transport you to another world, inspiring awe and wonder every time you look at it.
+Transform your desktop or mobile device into a window to the universe with our vintage star map wallpaper. This stunning background features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies.
 
-Whether you're an astronomy enthusiast or simply love the beauty of the night sky, our vintage map wallpaper is the perfect addition to any room. It's perfect for bedrooms, living rooms, offices, and more.
+## Features
 
-## High-Quality Materials for Long-Lasting Beauty
-
-Our wallpaper is made from high-quality materials that are designed to last. The non-woven fabric is durable and easy to clean, making it perfect for busy households. Plus, the fade-resistant inks ensure that your wallpaper will stay looking beautiful for years to come.
-
-## Easy Installation for a Hassle-Free Experience
-
-Installing our wallpaper is easy and hassle-free. Simply follow the instructions provided, and you'll have your new celestial masterpiece up in no time. Plus, if you ever need assistance, our customer support team is always here to help.
+- High-quality image resolution for a crisp and clear display
+- Vintage aesthetic adds a touch of nostalgia to your device
+- Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
+- Available in multiple sizes to fit any screen
 
 ## User Stories
 
-"I've always been fascinated by the stars and the mysteries of the universe. When I saw this vintage map wallpaper, I knew I had to have it. It's transformed my bedroom into a magical space that inspires me every day." - Sarah, 27
+"I'm an amateur astronomer, and having this star map as my wallpaper makes me feel like I'm always connected to the cosmos." - John D.
 
-"I wanted to create a unique and inspiring workspace in my home office. This vintage map wallpaper was the perfect addition. It's sparked my creativity and helped me stay focused on my goals." - John, 35
+"I love science fiction and anything related to space. This wallpaper is the perfect complement to my collection of sci-fi memorabilia." - Sarah L.
 
 ## References
 
-If you're interested in learning more about astronomy and the wonders of the universe, check out these resources:
+For more information about the stars and constellations featured in our wallpaper, check out these resources:
 
-- NASA: https://www.nasa.gov/
-- Space.com: https://www.space.com/
-- Astronomy Magazine: https://astronomy.com/
+- [NASA's Guide to the Night Sky](#)
+- [The Constellations and Their Stars](#)
+- [Astronomy Picture of the Day](#)
 
 ## Contact Us
 
-If you have any questions or concerns about our vintage map wallpaper, please don't hesitate to contact us. Our customer support team is available 24/7 to assist you.
+Have questions or comments about our vintage star map wallpaper? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
 
-Email: [info@universewallpaper.com](mailto:info@universewallpaper.com)
 
-Phone: 1-800-UNIVERSE (1-800-864-8377)
+---
 
-We hope you enjoy our vintage map wallpaper as much as we do. Happy stargazing!
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Discover the Wonders of the Universe with Our Vintage Star Map Background
+
+Our vintage star map background is the perfect way to add a touch of wonder and inspiration to your desktop or mobile device. Featuring a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies, this background will transport you to the far reaches of the cosmos.
+
+## Features
+
+- High-quality image resolution for a crisp and clear display
+- Vintage aesthetic adds a touch of nostalgia to your device
+- Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
+- Available in multiple sizes to fit any screen
+
+## Explore the Universe
+
+Use our vintage star map background as a starting point to explore the wonders of the universe. Here are some resources to get you started:
+
+- [NASA's Guide to the Night Sky](#): Learn about the stars and constellations visible from your location.
+- [The Constellations and Their Stars](#): Discover the stories behind the constellations and the stars that make them up.
+- [Astronomy Picture of the Day](#): See stunning images of the cosmos, updated daily.
+
+## User Stories
+
+"I'm an amateur astronomer, and having this star map as my background inspires me to keep exploring the night sky." - John D.
+
+"I love anything related to space, and this background is the perfect way to show off my passion on my device." - Sarah L.
+
+## Contact Us
+
+Have questions or comments about our vintage star map background? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Vintage Star Map Background: Explore the Wonders of the Universe
+
+Our vintage star map background is a stunning addition to any desktop or mobile device. With its detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies, this background will transport you to the far reaches of the cosmos.
+
+## Features
+
+- High-quality image resolution for a crisp and clear display
+- Vintage aesthetic adds a touch of nostalgia to your device
+- Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
+- Available in multiple sizes to fit any screen
+
+## Explore the Universe
+
+Use our vintage star map background as a starting point to explore the wonders of the universe. Here are some resources to get you started:
+
+- [NASA's Guide to the Night Sky](#): Learn about the stars and constellations visible from your location.
+- [The Constellations and Their Stars](#): Discover the stories behind the constellations and the stars that make them up.
+- [Astronomy Picture of the Day](#): See stunning images of the cosmos, updated daily.
+
+## User Stories
+
+"I'm an amateur astronomer, and having this star map as my background inspires me to keep exploring the night sky." - John D.
+
+"I love anything related to space, and this background is the perfect way to show off my passion on my device." - Sarah L.
+
+## Contact Us
+
+Have questions or comments about our vintage star map background? Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore the Universe with Our Vintage Star Map Background
+
+Our vintage star map background is a beautiful and inspiring addition to any desktop or mobile device. Featuring a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies, this background will take you on a journey through the cosmos.
+
+## Features
+
+- High-quality image resolution for a crisp and clear display
+- Vintage aesthetic adds a touch of nostalgia to your device
+- Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
+- Available in multiple sizes to fit any screen
+
+## Discover the Wonders of the Universe
+
+Use our vintage star map background as a starting point to explore the wonders of the universe. Here are some resources to get you started:
+
+- [NASA's Guide to the Night Sky](#): Learn about the stars and constellations visible from your location.
+- [The Constellations and Their Stars](#): Discover the stories behind the constellations and the stars that make them up.
+- [Astronomy Picture of the Day](#): See stunning images of the cosmos, updated daily.
+
+## User Stories
+
+"I'm an amateur astronomer, and having this star map as my background inspires me to keep exploring the night sky." - John D.
+
+"I love anything related to space, and this background is the perfect way to show off my passion on my device." - Sarah L.
+
+## Contact Us
+
+Have questions or comments about our vintage star map background? Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Orbitron
+- IBM Plex Sans
+- Poppins
+- Lobster
+- Futura
+- Barlow Condensed
+- Inter
+- Raleway
+- Open Sans
+- Alegreya
+- Playfair Display
+- Roboto
+- Lato
+- Exo 2
+- Dancing Script
+- Great Vibes
+- Montserrat
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

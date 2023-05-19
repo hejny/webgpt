@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
+"A group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts: Exploring the Unknown
+# Ainautes: Into the Unknown
 
-Welcome to our website, where we share our adventures as AInauts exploring the depths of space. Our latest expedition took us to a distant planet, where we discovered an underground cavern filled with wonders beyond our wildest imaginations.
+Welcome to our website, where we share our adventures as Ainautes exploring the depths of space. Our latest expedition took us to a distant planet, where we discovered an underground cavern filled with wonders beyond our wildest imaginations.
 
 ## Journey to the Unknown
 
-Our team of AInauts embarked on a journey to explore this uncharted planet. Equipped with advanced technology and AI-powered tools, we ventured into the unknown, ready to uncover its secrets.
+Our team of Ainautes embarked on a journey to explore this uncharted planet. Equipped with advanced technology and AI-powered tools, we ventured into the unknown, ready to uncover its secrets.
 
 ## Glowing Fungi and Strange Creatures
 
@@ -32,10 +32,10 @@ But we didn't have much time to ponder, as we soon encountered strange creatures
 
 ## Pushing the Boundaries of Exploration
 
-As AInauts, our mission is to push the boundaries of exploration and discover new frontiers. This expedition was just one step towards achieving our goal, and we're excited to see what lies ahead.
+As Ainautes, our mission is to push the boundaries of exploration and discover new frontiers. This expedition was just one step towards achieving our goal, and we're excited to see what lies ahead.
 
 Stay tuned for more updates from our adventures as we continue to explore the unknown.
 
 ---
 
-Join us in our quest to discover the mysteries of the universe! #AInauts #Exploration #SpaceAdventures
+Join us in our quest to discover the mysteries of the universe! #Ainautes #Exploration #SpaceAdventures

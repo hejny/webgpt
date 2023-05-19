@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Vintage Postcards: A Journey Around the World
+# Vintage World Postcards
 
 Welcome to our collection of vintage postcards from around the world! Our wallpaper is a beautiful collage of postcards that will take you on a journey through time and space. Each postcard tells a unique story and captures a moment in history.
 

@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure."
+"A futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Welcome to the Future City
 
-This wallpaper showcases a futuristic cityscape where AInauts and their AI counterparts work together to build towering skyscrapers and infrastructure. As you gaze upon this image, imagine yourself as part of this bustling metropolis, where technology and innovation are at the forefront of every development.
+This wallpaper showcases a futuristic cityscape where Ainautes and their AI counterparts work together to build towering skyscrapers and infrastructure. As you gaze upon this image, imagine yourself as part of this bustling metropolis, where technology and innovation are at the forefront of every development.
 
 ## The Power of AI Collaboration
 
-The future is here, and it's powered by artificial intelligence. In this city, AInauts and their AI counterparts work hand in hand to create a world that is smarter, more efficient, and more sustainable than ever before. From designing buildings to optimizing traffic flow, AI is revolutionizing the way we live and work.
+The future is here, and it's powered by artificial intelligence. In this city, Ainautes and their AI counterparts work hand in hand to create a world that is smarter, more efficient, and more sustainable than ever before. From designing buildings to optimizing traffic flow, AI is revolutionizing the way we live and work.
 
 ## Building a Better Tomorrow
 

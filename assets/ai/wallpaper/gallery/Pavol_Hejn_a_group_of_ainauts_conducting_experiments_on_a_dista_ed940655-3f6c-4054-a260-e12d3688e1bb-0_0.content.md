@@ -1,17 +1,70 @@
+<!--font:Open Sans-->
+
+# Ainautes Explored
+
+Welcome to Ainautes, where we push the boundaries of science and exploration. Our team of intrepid scientists is currently conducting groundbreaking experiments on a distant planet, with a red sun setting behind them.
+
+As you explore our website, you'll discover the latest news and updates from our team, as well as in-depth articles about the technology and techniques we use to conduct our research. We also offer a range of educational resources for students and educators who are interested in learning more about space exploration and scientific discovery.
+
+So come along with us on this incredible journey into the unknown. Who knows what we might discover next?
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts conducting experiments on a distant planet, with a red sun setting behind them."
+"A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Ainautes: Exploring the Unknown
+
+Welcome to Ainautes, where we push the boundaries of science and exploration. Our team of intrepid scientists is currently conducting groundbreaking experiments on a distant planet, with a red sun setting behind them.
+
+As you explore our website, you'll discover the latest news and updates from our team, as well as in-depth articles about the technology and techniques we use to conduct our research. We also offer a range of educational resources for students and educators who are interested in learning more about space exploration and scientific discovery.
+
+So come along with us on this incredible journey into the unknown. Who knows what we might discover next?
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Poppins
+- Cinzel
+- Futura
+- Creepster
+- Cabin
+- Lobster
+- Great Vibes
+- Alegreya
+- Playfair Display
+- Inter
+- Exo 2
+- Roboto
+- Barlow Condensed
+- Orbitron
+- IBM Plex Sans
+- Cormorant Garamond
+- Cinzel Decorative
+- Montserrat
+- Open Sans
+- Dancing Script
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Poppins-->
-
-# AInauts: Exploring the Unknown
-
-Welcome to AInauts, a community of AI researchers and enthusiasts dedicated to exploring the mysteries of the universe. Our team of experts is currently conducting groundbreaking experiments on a distant planet, with a stunning red sun setting behind them.
-
-As we push the boundaries of artificial intelligence and space exploration, we invite you to join us on this exciting journey. Whether you're a seasoned researcher or simply curious about the possibilities of AI, there's a place for you in our community.
-
-Explore our website to learn more about our mission, our team, and our latest discoveries. And don't forget to download our stunning wallpaper featuring the AInauts conducting their experiments against the backdrop of a breathtaking alien landscape.

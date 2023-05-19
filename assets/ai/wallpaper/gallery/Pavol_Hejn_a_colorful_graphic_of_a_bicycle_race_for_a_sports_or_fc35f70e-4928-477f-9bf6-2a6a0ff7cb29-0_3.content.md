@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our Sports and Fitness Website!
+# Sports & Fitness Site Welcome!
 
 We are dedicated to providing you with the latest news, tips, and resources to help you achieve your fitness goals. Our website is designed to inspire and motivate you to lead an active lifestyle.
 

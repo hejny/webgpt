@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+"A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,9 +14,9 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to the Future of Cityscapes
+# Future Cityscapes
 
-Imagine a world where artificial intelligence and humans work together to create sustainable and awe-inspiring structures. Our wallpaper depicts a futuristic cityscape where AInauts and AI collaborate to build massive infrastructure that is both functional and beautiful.
+Imagine a world where artificial intelligence and humans work together to create sustainable and awe-inspiring structures. Our wallpaper depicts a futuristic cityscape where Ainautes and AI collaborate to build massive infrastructure that is both functional and beautiful.
 
 ## The Vision
 
@@ -24,7 +24,7 @@ Our vision is to create a world where technology and nature coexist in harmony. 
 
 ## The Benefits
 
-By using AI in construction, we can reduce waste and increase efficiency. With the help of AInauts, we can create designs that are optimized for functionality and sustainability. This means that our cities will be able to support growing populations while minimizing their impact on the environment.
+By using AI in construction, we can reduce waste and increase efficiency. With the help of Ainautes, we can create designs that are optimized for functionality and sustainability. This means that our cities will be able to support growing populations while minimizing their impact on the environment.
 
 ## Join Us
 

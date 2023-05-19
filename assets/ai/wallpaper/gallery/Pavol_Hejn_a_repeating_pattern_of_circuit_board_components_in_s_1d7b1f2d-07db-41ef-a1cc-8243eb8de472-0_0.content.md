@@ -1,48 +1,87 @@
+<!--font:Montserrat-->
+
+# Tech Enthusiast's Haven
+
+Welcome to our website, designed for tech enthusiasts who appreciate the sleek and futuristic aesthetic of circuit board components. Our website features a unique background design of repeating patterns in shades of black, grey, and neon green, inspired by the intricate inner workings of modern technology.
+
+Explore our site to discover a wealth of resources, from the latest tech news and product reviews to expert tips and tutorials on how to optimize your devices. Whether you're a seasoned tech pro or just starting out, we have something for everyone.
+
+Join our community of like-minded individuals and stay up-to-date with the latest trends and innovations in the world of technology. And don't forget to download our exclusive circuit board background to add some personality to your desktop or mobile devices.
+
+Experience the cutting-edge world of technology like never before, only at Tech Enthusiast's Haven.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A repeating pattern of circuit board components, in shades of black, grey, and neon green."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Circuit Board Wallpaper
+
+Welcome to our website featuring a unique wallpaper design of circuit board components. The repeating pattern showcases shades of black, grey, and neon green, making it a perfect fit for tech enthusiasts or anyone who loves a futuristic aesthetic.
+
+Whether you're looking to spruce up your desktop background or add some personality to your phone lock screen, this circuit board wallpaper is sure to impress. Download it now and enjoy the sleek, modern look it brings to your devices.
+
+Don't settle for boring, generic wallpapers - stand out with our one-of-a-kind circuit board design.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Tech Enthusiast's Haven
+
+Welcome to our website, designed for tech enthusiasts who appreciate the sleek and futuristic aesthetic of circuit board components. Our website features a unique background design of repeating patterns in shades of black, grey, and neon green, inspired by the intricate inner workings of modern technology.
+
+Explore our site to discover a wealth of resources, from the latest tech news and product reviews to expert tips and tutorials on how to optimize your devices. Whether you're a seasoned tech pro or just starting out, we have something for everyone.
+
+Join our community of like-minded individuals and stay up-to-date with the latest trends and innovations in the world of technology. And don't forget to download our exclusive circuit board background to add some personality to your desktop or mobile devices.
+
+Experience the cutting-edge world of technology like never before, only at Tech Enthusiast's Haven.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Great Vibes
+- Roboto
+- Exo 2
+- Inter
+- Futura
+- IBM Plex Sans
+- Montserrat
+- Lato
+- Poppins
+- Barlow Condensed
+- Orbitron
+- Alegreya
+- Open Sans
+- Lobster
+- Playfair Display
+- Dancing Script
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+I would recommend using the "Montserrat" font for this website.
+
 -->
-
-<!--font:Roboto-->
-
-# Circuit Board Wallpaper for Tech Enthusiasts
-
-Welcome to our website, where we celebrate the beauty of technology with our circuit board wallpaper. Our wallpaper features a repeating pattern of circuit board components, in shades of black, grey, and neon green. It's perfect for tech enthusiasts who want to showcase their love for all things tech in their homes or offices.
-
-## Why Choose Circuit Board Wallpaper?
-
-Our circuit board wallpaper is not only visually stunning but also has practical benefits. Here are some reasons why you should choose our wallpaper:
-
--   **Unique:** Our wallpaper is unlike any other wallpaper on the market. It's perfect for those who want to stand out from the crowd and make a statement.
--   **Durable:** Our wallpaper is made from high-quality materials that are designed to last. It's scratch-resistant, tear-resistant, and easy to clean.
--   **Easy to Install:** Installing our wallpaper is a breeze. You don't need any special tools or skills to install it. Simply follow the instructions provided, and you'll have a beautiful new feature wall in no time.
--   **Versatile:** Our wallpaper can be used in a variety of settings, including homes, offices, and even retail spaces. It's perfect for tech stores, gaming rooms, and more.
-
-## User Stories
-
-Here are some stories from our satisfied customers:
-
-> "I've been looking for a unique wallpaper for my home office, and I stumbled upon this circuit board wallpaper. I'm so glad I did! It looks amazing, and it really showcases my love for technology." - John D.
-
-> "I recently opened a tech store, and I wanted to create a feature wall that would catch people's attention. This circuit board wallpaper was perfect! It's eye-catching and really sets the tone for my store." - Sarah L.
-
-## References
-
-If you're interested in purchasing our circuit board wallpaper, please visit our [product page](#product-page) for more information. You can also check out our [gallery](#gallery) to see how our wallpaper looks in real-life settings.
-
-## Contact Us
-
-If you have any questions about our circuit board wallpaper or would like to place an order, please don't hesitate to [contact us](#contact-us). We're always happy to help!

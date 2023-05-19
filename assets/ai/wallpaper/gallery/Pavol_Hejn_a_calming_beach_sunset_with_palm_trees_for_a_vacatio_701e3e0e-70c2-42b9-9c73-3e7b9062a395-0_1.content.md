@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Welcome to Paradise Vacation Rentals
+# Paradise Rentals.
 
 Escape to paradise with our stunning vacation rentals! Our properties are located in the most beautiful and tranquil locations, perfect for those seeking a relaxing getaway. 
 

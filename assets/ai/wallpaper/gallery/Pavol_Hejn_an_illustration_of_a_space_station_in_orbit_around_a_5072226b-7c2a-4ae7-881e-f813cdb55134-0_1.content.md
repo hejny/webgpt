@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Space Station Orbiting a Gas Giant
+# Gas Giant's Station Orbit
 
 Welcome to our website dedicated to space exploration and the wonders of the universe. Here you can find beautiful illustrations and wallpapers depicting some of the most breathtaking sights in space. Our latest addition is an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
 

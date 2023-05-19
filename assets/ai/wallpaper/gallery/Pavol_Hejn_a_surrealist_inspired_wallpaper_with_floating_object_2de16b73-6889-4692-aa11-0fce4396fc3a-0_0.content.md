@@ -1,59 +1,129 @@
+<!--font:Poppins-->
+
+# Whimsical Space Design
+
+Transform your living space into a whimsical wonderland with our surrealistic design. Inspired by the surrealist art movement, our design features floating objects such as gears, cogs, and computer parts against a muted color background, creating a sense of depth and movement that will captivate your imagination.
+
+The surrealist art movement sought to explore the subconscious mind and bring forth dreamlike imagery. With our design, you can create a space that inspires creativity and imagination, making it perfect for home or office.
+
+Our design is easy to install and made from high-quality materials, ensuring that you can enjoy its surreal beauty for years to come. Whether you're looking to add a unique touch to your decor or completely transform your space, our surrealistic design is sure to make a statement.
+
+So why settle for a boring space when you can have a whimsical one? Add our surrealistic design to your environment today and let your imagination run wild.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Gear Up Your Walls with Surrealist-Inspired Wallpaper
+
+Transform your space into a dreamlike world with our surrealist-inspired wallpaper. Featuring floating objects such as gears, cogs, and computer parts, this wallpaper is sure to add a touch of whimsy to any room.
+
+Against a background of muted colors, the floating objects create a sense of movement and depth, making it an ideal choice for those looking to add a unique and dynamic element to their decor.
+
+Our wallpaper is made from high-quality materials and is easy to install, ensuring that you can enjoy its surreal beauty for years to come.
+
+So why wait? Gear up your walls today with our surreal-inspired wallpaper and take your decor to the next level!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Surrealistic Design for a Dreamlike Space
+
+Elevate your living space with our surrealistic design that features floating objects such as gears, cogs, and computer parts. Against a backdrop of muted colors, this design creates a sense of movement and depth, making it an ideal choice for those looking to add a unique and dynamic element to their decor.
+
+Our design is inspired by the surrealist art movement, which sought to explore the subconscious mind and bring forth dreamlike imagery. With our design, you can create a dreamlike space that inspires imagination and creativity.
+
+Whether you're looking to transform your home or office, our design is sure to make a statement. It's easy to install and made from high-quality materials, ensuring that you can enjoy its surreal beauty for years to come.
+
+So why settle for a mundane space when you can have a dreamlike one? Elevate your decor with our surrealistic design today and unlock the full potential of your space.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Surrealistic Design for a Dreamlike Space
+
+Add a touch of whimsy to your living space with our surrealistic design inspired by the surrealist art movement. Our design features floating objects such as gears, cogs, and computer parts against a backdrop of muted colors, creating a sense of movement and depth that will transform any room.
+
+The surrealist art movement sought to explore the subconscious mind and bring forth dreamlike imagery. With our design, you can create a dreamlike space that inspires imagination and creativity.
+
+Our design is easy to install and made from high-quality materials, ensuring that you can enjoy its surreal beauty for years to come. Whether you're looking to transform your home or office, our design is sure to make a statement and elevate your decor.
+
+So why settle for a mundane space when you can have a dreamlike one? Add our surrealistic design to your space today and unlock the full potential of your environment.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Surrealistic Design for a Whimsical Space
+
+Transform your living space into a whimsical wonderland with our surrealistic design. Inspired by the surrealist art movement, our design features floating objects such as gears, cogs, and computer parts against a muted color background, creating a sense of depth and movement that will captivate your imagination.
+
+The surrealist art movement sought to explore the subconscious mind and bring forth dreamlike imagery. With our design, you can create a space that inspires creativity and imagination, making it perfect for home or office.
+
+Our design is easy to install and made from high-quality materials, ensuring that you can enjoy its surreal beauty for years to come. Whether you're looking to add a unique touch to your decor or completely transform your space, our surrealistic design is sure to make a statement.
+
+So why settle for a boring space when you can have a whimsical one? Add our surrealistic design to your environment today and let your imagination run wild.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lobster
+- Great Vibes
+- Barlow Condensed
+- Alegreya
+- Playfair Display
+- Inter
+- Futura
+- Montserrat
+- Orbitron
+- IBM Plex Sans
+- Poppins
+- Lato
+- Exo 2
+- Roboto
+- Dancing Script
+- Raleway
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# Surrealist Dreamscape Wallpaper
-
-Transform your living space into a surreal dreamscape with our stunning wallpaper featuring floating objects such as gears, cogs, and computer parts against a background of muted colors. Our surrealist-inspired design will transport you to another world, where anything is possible.
-
-## Features
-
--   High-quality, durable wallpaper material
--   Easy to install and remove
--   Non-toxic and eco-friendly
--   Customizable to fit any wall size or shape
--   Perfect for adding a unique touch to any room
-
-## User Stories
-
-"I was looking for something different to decorate my office space, and this wallpaper caught my eye. It's the perfect combination of creativity and professionalism." - Jane, Marketing Manager
-
-"I love how this wallpaper adds depth and texture to my bedroom. It's like I'm sleeping in a work of art!" - Tom, Artist
-
-## Installation Instructions
-
-1. Clean the wall surface thoroughly before installation.
-2. Measure the height and width of your wall to determine the amount of wallpaper needed.
-3. Cut the wallpaper to the appropriate size, leaving a few extra inches at the top and bottom for adjustments.
-4. Apply wallpaper paste to the back of the wallpaper using a roller or brush.
-5. Carefully position the wallpaper on the wall, starting from the top and working your way down.
-6. Smooth out any bubbles or wrinkles with a wallpaper smoother.
-7. Trim any excess wallpaper at the top and bottom using a sharp knife or scissors.
-
-## References
-
-Check out some of our other unique wallpaper designs:
-
--   [Geometric Patterns](#)
--   [Nature Scenes](#)
--   [Vintage Florals](#)
-
-## Contact Us
-
-If you have any questions about our products or services, please don't hesitate to contact us at [email protected]. We're always happy to help!

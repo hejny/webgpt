@@ -7,7 +7,7 @@ import { Image } from '../Image';
  */
 export function colorDownscaleImage(image: IImage, numberOfColors: number): Image {
     return image.map((color) => {
-        let { red, green, blue, alpha } = color.clone(); /* <- TODO: Color should have map property */
+        let { red, green, blue /* [🚇], alpha */ } = color.clone(); /* <- TODO: Color should have map property */
 
         function downscaleValue(value: number): number {
             return Math.round((value * (numberOfColors - 1)) / 255) * (255 / (numberOfColors - 1));
@@ -16,9 +16,9 @@ export function colorDownscaleImage(image: IImage, numberOfColors: number): Imag
         red = downscaleValue(red);
         green = downscaleValue(green);
         blue = downscaleValue(blue);
-        alpha = downscaleValue(alpha);
+        // [🚇] alpha = downscaleValue(alpha);
 
-        return Color.fromValues(red, green, blue, alpha);
+        return Color.fromValues(red, green, blue /* [🚇], alpha */);
     }) as Image;
 }
 

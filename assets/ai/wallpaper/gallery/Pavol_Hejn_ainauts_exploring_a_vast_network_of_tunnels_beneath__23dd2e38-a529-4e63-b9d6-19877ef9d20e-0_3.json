@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
+            "Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_3.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "8562d69f-e396-4878-9ae2-f28ecb685f72",
-    "image_paths": [
-        "https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_3.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/23dd2e38-a529-4e63-b9d6-19877ef9d20e/0_3.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103070448289333280",
     "platform_thread_id": null,
-    "prompt": "AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.",
+    "prompt": "Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "23dd2e38-a529-4e63-b9d6-19877ef9d20e",
     "reference_image_num": "3"
 }

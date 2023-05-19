@@ -1,37 +1,65 @@
+<!--font:Poppins-->
+
+# Wedding Planning Made Easy
+
+Welcome to our website dedicated to making your wedding planning experience as seamless and stress-free as possible. To add a touch of dreaminess to your special day, we recommend incorporating our watercolor wallpaper featuring a beautiful field of flowers. This wallpaper is perfect for creating a romantic and whimsical atmosphere that will leave a lasting impression on you and your guests.
+
+Whether you're looking for inspiration for your wedding decor or need help with the logistics of planning, we've got you covered. Our team of experienced wedding planners is here to guide you through every step of the process, from choosing the perfect venue to selecting the right vendors.
+
+So why wait? Start planning your dream wedding today and let us help you create memories that will last a lifetime.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A dreamy watercolor painting of a field of flowers for a wedding or event planning website"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Wedding Planning Made Easy
+
+Welcome to our website dedicated to making your wedding planning experience as seamless and stress-free as possible. To add a touch of dreaminess to your special day, we recommend incorporating our watercolor wallpaper featuring a beautiful field of flowers. This wallpaper is perfect for creating a romantic and whimsical atmosphere that will leave a lasting impression on you and your guests.
+
+Whether you're looking for inspiration for your wedding decor or need help with the logistics of planning, we've got you covered. Our team of experienced wedding planners is here to guide you through every step of the process, from choosing the perfect venue to selecting the right vendors.
+
+So why wait? Start planning your dream wedding today and let us help you create memories that will last a lifetime.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- Great Vibes
+- Poppins
+- IBM Plex Sans
+- Futura
+- Dancing Script
+- Playfair Display
+- Open Sans
+- Barlow Condensed
+- Alegreya
+- Exo 2
+- Roboto
+- Lobster
+- Lato
+- Inter
+- Raleway
+- Orbitron
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# Dreamy Watercolor Wallpaper for Wedding and Event Planning Websites
-
-Decorate your website with the captivating beauty of a watercolor painting featuring a field of flowers. This wallpaper is perfect for wedding and event planning websites, creating a dreamy and romantic atmosphere that will enchant visitors.
-
-## Features
-
-- High-quality watercolor painting
-- Beautiful and captivating design
-- Perfect for wedding and event planning websites
-- Creates a dreamy and romantic atmosphere
-
-## Benefits
-
-- Enhances the overall look and feel of your website
-- Captivates visitors and keeps them engaged
-- Creates a memorable and unique experience for your audience
-- Helps to establish your brand identity
-
-> "This watercolor wallpaper is the perfect addition to any wedding or event planning website. It creates a dreamy and romantic atmosphere that will enchant visitors and keep them engaged." 
-
-Get this beautiful wallpaper today and take your website to the next level!

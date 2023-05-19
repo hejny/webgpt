@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Sustainable Living Tips: Make a Positive Impact on the Environment
+# Green Tips for Sustainability
 
 Welcome to our sustainable living website! We're dedicated to providing you with practical tips and resources to help you live a more eco-friendly lifestyle. Our minimalist graphic of a leaf perfectly represents our mission to promote environmental sustainability.
 

@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
+"A group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey to Discover New Worlds
+# Exploring New Worlds
 
-Welcome to our website, where we take you on a journey through the uncharted territories of the universe. Our team of explorers, known as AInauts, are constantly on the lookout for new planets and galaxies to explore. We bring you stunning visuals from our expeditions, like this wallpaper of our AInauts exploring an underground cavern on a distant planet.
+Welcome to our website, where we take you on a journey through the uncharted territories of the universe. Our team of explorers, known as Ainautes, are constantly on the lookout for new planets and galaxies to explore. We bring you stunning visuals from our expeditions, like this wallpaper of our Ainautes exploring an underground cavern on a distant planet.
 
 ## Who We Are
 
@@ -42,15 +42,15 @@ Our users come from all walks of life, from students and educators to space enth
 
 ## Our Expeditions
 
-Our expeditions take us to the farthest corners of the universe, where we encounter strange and fascinating phenomena. We use advanced technology to capture stunning visuals of our expeditions, like this wallpaper of our AInauts exploring an underground cavern on a distant planet.
+Our expeditions take us to the farthest corners of the universe, where we encounter strange and fascinating phenomena. We use advanced technology to capture stunning visuals of our expeditions, like this wallpaper of our Ainautes exploring an underground cavern on a distant planet.
 
 ## References
 
 For more information about our expeditions and the latest discoveries in space exploration, check out these resources:
 
-- NASA
-- European Space Agency
-- Space.com
+-   NASA
+-   European Space Agency
+-   Space.com
 
 ## Contact Us
 

@@ -1,60 +1,195 @@
+<!--font:Montserrat-->
+
+# MathWall - Minimal Background
+
+MathWall is a unique digital background that combines the beauty of mathematics with a minimalist and modern design. The repeating pattern of simple equations and formulas creates a visually stimulating and intellectually inspiring backdrop for your desktop or mobile device.
+
+## Features
+
+- High-quality, high-resolution design
+- Minimalist and modern aesthetic
+- Repeating pattern of simple equations and formulas
+- Available for desktop and mobile devices
+- Perfect for students, teachers, and math enthusiasts
+
+## Elevate Your Digital Experience
+
+Transform your digital experience with MathWall's captivating design. The minimalist and modern aesthetic creates a clean and organized environment that can help boost productivity and creativity. Whether you're studying, working, or just browsing the web, MathWall is the perfect addition to your digital workspace.
+
+## How to Use
+
+To use MathWall as your digital background, simply download the image file and set it as your desktop or mobile wallpaper. The repeating pattern ensures that the design will look great on any screen size or resolution.
+
+## Download
+
+Download MathWall now and elevate your digital experience with the beauty and elegance of mathematics.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# MathWall - Minimalist Math Wallpaper
+
+MathWall is a unique wallpaper featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design. This wallpaper is perfect for anyone who loves math or wants to add a touch of intellectual flair to their desktop or mobile device.
+
+## Features
+
+- High-quality, high-resolution wallpaper
+- Minimalist and modern design
+- Repeating pattern of simple equations and formulas
+- Available for desktop and mobile devices
+- Perfect for students, teachers, and math enthusiasts
+
+## How to Use
+
+To use MathWall as your wallpaper, simply download the image file and set it as your desktop or mobile wallpaper. The repeating pattern ensures that the wallpaper will look great on any screen size or resolution.
+
+## Download
+
+Download MathWall now and add some mathematical inspiration to your digital workspace!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# MathWall - Minimalist Math-inspired Digital Workspace
+
+MathWall is a unique digital workspace design inspired by the beauty and elegance of mathematics. The minimalist and modern design features a repeating pattern of simple equations and formulas, creating a visually stimulating and intellectually inspiring backdrop for your desktop or mobile device.
+
+## Features
+
+- High-quality, high-resolution design
+- Minimalist and modern aesthetic
+- Repeating pattern of simple equations and formulas
+- Available for desktop and mobile devices
+- Perfect for students, teachers, and math enthusiasts
+
+## Enhance Your Digital Workspace
+
+Transform your digital workspace with MathWall's captivating design. The repeating pattern of equations and formulas creates a stimulating visual environment that can help boost productivity and creativity. Whether you're a student, teacher, or just someone who loves math, MathWall is the perfect addition to your digital workspace.
+
+## How to Use
+
+To use MathWall as your digital workspace background, simply download the image file and set it as your desktop or mobile wallpaper. The repeating pattern ensures that the design will look great on any screen size or resolution.
+
+## Download
+
+Download MathWall now and enhance your digital workspace with the beauty and elegance of mathematics.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# MathWall - A Minimalist and Modern Digital Workspace Background
+
+MathWall is a unique digital workspace background inspired by the elegance of mathematics. The design features a repeating pattern of simple equations and formulas, creating a visually stimulating and intellectually inspiring backdrop for your desktop or mobile device.
+
+## Features
+
+- High-quality, high-resolution design
+- Minimalist and modern aesthetic
+- Repeating pattern of simple equations and formulas
+- Available for desktop and mobile devices
+- Perfect for students, teachers, and math enthusiasts
+
+## Enhance Your Digital Workspace
+
+Transform your digital workspace with MathWall's captivating design. The minimalist and modern aesthetic creates a clean and organized environment that can help boost productivity and creativity. Whether you're studying, working, or just browsing the web, MathWall is the perfect addition to your digital workspace.
+
+## How to Use
+
+To use MathWall as your digital workspace background, simply download the image file and set it as your desktop or mobile wallpaper. The repeating pattern ensures that the design will look great on any screen size or resolution.
+
+## Download
+
+Download MathWall now and enhance your digital workspace with the beauty and elegance of mathematics.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# MathWall - A Minimalist and Modern Digital Background for Math Enthusiasts
+
+MathWall is a unique digital background that combines the beauty of mathematics with a minimalist and modern design. The repeating pattern of simple equations and formulas creates a visually stimulating and intellectually inspiring backdrop for your desktop or mobile device.
+
+## Features
+
+- High-quality, high-resolution design
+- Minimalist and modern aesthetic
+- Repeating pattern of simple equations and formulas
+- Available for desktop and mobile devices
+- Perfect for students, teachers, and math enthusiasts
+
+## Elevate Your Digital Experience
+
+Transform your digital experience with MathWall's captivating design. The minimalist and modern aesthetic creates a clean and organized environment that can help boost productivity and creativity. Whether you're studying, working, or just browsing the web, MathWall is the perfect addition to your digital workspace.
+
+## How to Use
+
+To use MathWall as your digital background, simply download the image file and set it as your desktop or mobile wallpaper. The repeating pattern ensures that the design will look great on any screen size or resolution.
+
+## Download
+
+Download MathWall now and elevate your digital experience with the beauty and elegance of mathematics.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Great Vibes
+- Barlow Condensed
+- Futura
+- Orbitron
+- Open Sans
+- Inter
+- Playfair Display
+- Montserrat
+- Exo 2
+- Alegreya
+- Roboto
+- Raleway
+- Dancing Script
+- IBM Plex Sans
+- Lobster
+- Poppins
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+I recommend using the "Montserrat" font for the website.
+
 -->
-
-<!--font:Poppins-->
-
-# Math-Inspired Wallpaper for Your Modern Workspace
-
-If you're looking to add a touch of sophistication and creativity to your workspace, our math-inspired wallpaper is the perfect solution. Featuring a repeating pattern of simple equations and formulas, arranged in a minimalist and modern design, this wallpaper is sure to inspire and motivate you throughout your workday.
-
-## Why Choose Our Math-Inspired Wallpaper?
-
-Our wallpaper is not only visually stunning but also functional. The equations and formulas featured in the design are not just random symbols but actual mathematical concepts that can spark your curiosity and creativity. Plus, the minimalist and modern design will complement any type of workspace, from home offices to corporate boardrooms.
-
-## User Stories
-
-Here are some stories from our satisfied customers:
-
-> "I've always been fascinated by math, and this wallpaper has given me a new appreciation for it. Every time I look at it, I see something new and interesting." - John D.
-
-> "I was hesitant to try something so bold in my office, but I'm so glad I did. The wallpaper has become a conversation starter with clients and colleagues alike." - Sarah K.
-
-## Installation and Care Instructions
-
-Installing our math-inspired wallpaper is easy and straightforward. Simply follow these steps:
-
-1. Clean the wall surface thoroughly and let it dry completely.
-2. Measure the height and width of the wall to determine how many rolls of wallpaper you need.
-3. Cut the wallpaper into strips according to your measurements, leaving a few extra inches at the top and bottom for trimming.
-4. Apply wallpaper paste to the back of each strip and hang them on the wall, starting from the top and working your way down.
-5. Smooth out any air bubbles or wrinkles with a wallpaper brush or squeegee.
-6. Trim the excess wallpaper at the top and bottom with a sharp utility knife.
-
-To care for your wallpaper, simply wipe it down with a damp cloth as needed. Avoid using harsh chemicals or abrasive materials that can damage the surface.
-
-## References
-
-If you're interested in learning more about the mathematical concepts featured in our wallpaper, here are some resources to check out:
-
-- "Mathematics: A Very Short Introduction" by Timothy Gowers
-- "The Joy of x: A Guided Tour of Math, from One to Infinity" by Steven Strogatz
-- "Proofs from THE BOOK" by Martin Aigner and Gunter M. Ziegler
-
-## Contact Us
-
-If you have any questions or concerns about our math-inspired wallpaper, please don't hesitate to reach out to us at [insert email address]. We're always happy to help!

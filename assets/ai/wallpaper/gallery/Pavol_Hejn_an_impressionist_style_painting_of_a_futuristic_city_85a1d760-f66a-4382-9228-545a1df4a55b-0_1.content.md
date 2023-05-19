@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Futuristic Cityscapes: Impressions of Tomorrow
+# Future City Impressions
 
 Welcome to our website dedicated to exploring the beauty and wonder of futuristic cityscapes. Our goal is to provide you with a visual journey through some of the most stunning and imaginative urban landscapes that have ever been created. And what better way to start than with our featured wallpaper, an impressionist-style painting of a futuristic cityscape, with blurred lines and bold colors creating a dreamy effect.
 

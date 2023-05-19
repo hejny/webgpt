@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Stargaze with a Vintage Map of the Stars and Constellations
+# Vintage Stargazing Map
 
 Are you fascinated by the mysteries of the universe? Do you love gazing up at the night sky, trying to identify constellations and planets? Our vintage map of the stars and constellations is the perfect addition to your home or office. 
 

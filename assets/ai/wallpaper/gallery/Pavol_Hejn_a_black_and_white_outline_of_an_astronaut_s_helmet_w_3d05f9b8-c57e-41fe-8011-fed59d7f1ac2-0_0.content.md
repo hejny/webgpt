@@ -1,58 +1,117 @@
+<!--font:Montserrat-->
+
+# Cosmic Exploration App
+
+Our "Space Odyssey" theme brings the vastness of space to your digital devices. Featuring a stunning black and white outline of an astronaut's helmet, this theme showcases intricate details that make you feel like you're on a spacewalk yourself.
+
+Perfect for anyone who loves space exploration or simply wants to add some cosmic flair to their devices, our theme will transport you to the final frontier every time you open your computer or pick up your phone.
+
+To download our "Space Odyssey" theme, simply click the download button below and follow the instructions for your device. And don't forget to share this amazing theme with your friends and family who are also space enthusiasts. Let's all embark on a journey to explore the cosmos together!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A black and white outline of an astronaut's helmet, with intricate details that showcase the reflection of the surrounding environment."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
 
-<!--font:Montserrat-->
+---
+
 
 # Space Odyssey Wallpaper
 
-Transform your desktop or mobile screen with our stunning Space Odyssey wallpaper. Featuring a black and white outline of an astronaut's helmet, with intricate details that showcase the reflection of the surrounding environment, this wallpaper is perfect for anyone who loves space exploration and adventure.
+Decorate your desktop or phone with our stunning "Space Odyssey" wallpaper featuring a black and white outline of an astronaut's helmet. The intricate details showcase the reflection of the surrounding environment, making you feel like you're on a spacewalk yourself. This wallpaper is perfect for anyone who loves space exploration or simply wants to add some cosmic flair to their digital devices.
 
-## About the Design
+To download the wallpaper, simply click the download button below and save the image to your device. It's that easy! And don't forget to share this amazing wallpaper with your friends and family who are also space enthusiasts. Let's all embark on a journey to the final frontier together!
 
-Our Space Odyssey wallpaper was created by a team of talented designers who are passionate about space exploration. The design features a detailed outline of an astronaut's helmet, which is filled with intricate details that showcase the reflection of the surrounding environment. The black and white color scheme adds a touch of elegance to the design, making it perfect for any device.
 
-## User Stories
+---
 
-Here are some stories from our users who have downloaded and used our Space Odyssey wallpaper:
 
-- "I love this wallpaper! It's so detailed and looks amazing on my desktop."
-- "As a space enthusiast, this wallpaper really speaks to me. It's like having a piece of space on my phone."
-- "The reflection of the environment in the helmet is such a cool detail. I can't stop staring at it!"
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
 
-## Download
 
-To download our Space Odyssey wallpaper, simply click the link below:
+---
 
-[Download Space Odyssey Wallpaper](#)
 
-## References
+# Explore the Cosmos with Our "Space Odyssey" Theme
 
-Here are some articles and resources related to space exploration that you may find interesting:
+Step into the vastness of space with our "Space Odyssey" theme, featuring a stunning black and white outline of an astronaut's helmet. The intricate details of the helmet showcase the reflection of the surrounding environment, immersing you in the feeling of being on a spacewalk yourself.
 
-- [NASA](#)
-- [SpaceX](#)
-- [ESA](#)
-- [Space.com](#)
+Our theme is perfect for anyone who loves space exploration or simply wants to add some cosmic flair to their digital devices. With this theme, you'll feel like you're traveling through the galaxy every time you open your computer or pick up your phone.
 
-## Contact Us
+To download our "Space Odyssey" theme, simply click the download button below and follow the instructions for your device. And don't forget to share this amazing theme with your friends and family who are also space enthusiasts. Let's all embark on a journey to the final frontier together!
 
-If you have any questions or comments about our Space Odyssey wallpaper, please don't hesitate to contact us using the form below:
 
-[Contact Us](#)
+---
 
-We would love to hear from you!
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# "Space Odyssey" Theme: Explore the Cosmos on Your Digital Devices
+
+Immerse yourself in the vastness of space with our "Space Odyssey" theme. Featuring a stunning black and white outline of an astronaut's helmet, this theme showcases intricate details that make you feel like you're on a spacewalk yourself.
+
+Our theme is perfect for anyone who loves space exploration or simply wants to add some cosmic flair to their digital devices. With this theme, you can explore the cosmos every time you open your computer or pick up your phone.
+
+To download our "Space Odyssey" theme, simply click the download button below and follow the instructions for your device. And don't forget to share this amazing theme with your friends and family who are also space enthusiasts. Let's all embark on a journey to the final frontier together!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# "Space Odyssey" Theme: Explore the Cosmos on Your Devices
+
+Our "Space Odyssey" theme brings the vastness of space to your digital devices. Featuring a stunning black and white outline of an astronaut's helmet, this theme showcases intricate details that make you feel like you're on a spacewalk yourself.
+
+Perfect for anyone who loves space exploration or simply wants to add some cosmic flair to their devices, our theme will transport you to the final frontier every time you open your computer or pick up your phone.
+
+To download our "Space Odyssey" theme, simply click the download button below and follow the instructions for your device. And don't forget to share this amazing theme with your friends and family who are also space enthusiasts. Let's all embark on a journey to explore the cosmos together!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Poppins
+- Orbitron
+- Dancing Script
+- Exo 2
+- Open Sans
+- Lobster
+- Barlow Condensed
+- Futura
+- Alegreya
+- Roboto
+- IBM Plex Sans
+- Inter
+- Montserrat
+- Raleway
+- Great Vibes
+- Playfair Display
+- Lato
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

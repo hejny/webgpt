@@ -29,14 +29,12 @@
     "event": {
         "height": 896,
         "textPrompt": [
-            "A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
+            "A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
         ],
         "imagePrompts": null,
         "width": 1344,
         "batchSize": 1,
-        "textPromptWeights": [
-            1
-        ],
+        "textPromptWeights": [1],
         "seedImageURL": "https://cdn.midjourney.com/c98916eb-590b-4885-9010-fa8fac87b19b/0_2.png",
         "eventType": "upscale",
         "test": false
@@ -48,9 +46,7 @@
     "guild_id": null,
     "hidden": false,
     "id": "6f8e9661-01b1-4dbb-94f9-f37b3ba55f24",
-    "image_paths": [
-        "https://cdn.midjourney.com/c98916eb-590b-4885-9010-fa8fac87b19b/0_2.png"
-    ],
+    "image_paths": ["https://cdn.midjourney.com/c98916eb-590b-4885-9010-fa8fac87b19b/0_2.png"],
     "is_published": true,
     "liked_by_user": false,
     "low_priority": true,
@@ -63,7 +59,7 @@
     "platform_channel_id": "994943513500336138",
     "platform_message_id": "1103075612605808810",
     "platform_thread_id": null,
-    "prompt": "A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.",
+    "prompt": "A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body.",
     "ranked_by_user": false,
     "ranking_by_user": null,
     "type": "v5_upscale",
@@ -71,7 +67,7 @@
     "user_id": "eeea95c6-92d3-43e4-94fd-3711f8d7eebe",
     "user_reactions": null,
     "username": "Pavol Hejný",
-    "full_command": "A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body.  --v 5 --aspect 3:2 --q 2",
+    "full_command": "A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body.  --v 5 --aspect 3:2 --q 2",
     "reference_job_id": "c98916eb-590b-4885-9010-fa8fac87b19b",
     "reference_image_num": "2"
 }

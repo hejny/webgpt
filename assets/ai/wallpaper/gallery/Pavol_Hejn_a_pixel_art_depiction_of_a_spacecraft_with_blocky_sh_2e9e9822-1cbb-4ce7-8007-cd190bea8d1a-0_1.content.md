@@ -1,4 +1,43 @@
+<!--font:Montserrat-->
+
+# Retro Pixel Space Platformer
+
+Welcome to Retro Space Adventure, an exciting platformer game that takes you on a journey through the galaxy! Our game features pixel art graphics that transport you back to the golden age of gaming.
+
+## Explore the Galaxy
+
+In Retro Space Adventure, you play as a brave astronaut who must navigate through different planets and defeat alien enemies. Our game features multiple levels, each with its own unique challenges and obstacles. The wallpaper on our website depicts a pixel art spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.
+
+## Collect Power-Ups
+
+As you progress through the game, you'll collect power-ups that will help you on your mission. These include weapons to defeat enemies, shields to protect yourself, and extra lives to keep you going.
+
+## User Stories
+
+Our users love Retro Space Adventure! Here's what some of them have to say:
+
+> "I love the retro feel of this game. It's like playing my favorite games from when I was a kid!" - John D.
+
+> "The pixel art is so cool! It really adds to the overall vibe of the game." - Sarah L.
+
+## References
+
+Want to learn more about Retro Space Adventure? Check out these resources:
+
+- [Gameplay Trailer](#trailer)
+- [Developer Blog](#blog)
+- [FAQs](#faqs)
+
+## Contact Us
+
+Have a question or comment about Retro Space Adventure? Contact us at [contact@retrospaceadventure.com](mailto:contact@retrospaceadventure.com).
+
+---
+
+Ready to embark on your own space adventure? Download the game now and start exploring the galaxy!
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A pixel art depiction of a spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel."
@@ -6,50 +45,228 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Poppins-->
 
-# Spacecraft Pixel Art Wallpaper
+---
 
-Welcome to our website featuring a stunning pixel art depiction of a spacecraft. The wallpaper showcases blocky shapes and limited colors, creating a nostalgic and playful feel that will take you back to the golden age of video games.
 
-## About the Wallpaper
+# Space Adventure: A Retro-Themed Platformer Game
 
-Our spacecraft pixel art wallpaper is perfect for anyone who loves retro gaming or sci-fi aesthetics. The design features a spaceship with a classic shape and simple lines, rendered in a pixelated style reminiscent of early video games.
+Welcome to Space Adventure, a retro-themed platformer game that takes you on an exciting journey through the galaxy! Our game features pixel art graphics that transport you back to the golden age of gaming.
 
-The limited color palette adds to the charm of the artwork, with shades of blue, gray, and white creating a sense of depth and dimensionality. Whether you're a fan of classic arcade games or simply appreciate great design, this wallpaper is sure to impress.
+## Explore the Galaxy
+
+In Space Adventure, you play as a brave astronaut who must navigate through different planets and defeat alien enemies. Our game features multiple levels, each with its own unique challenges and obstacles. The pixel art depiction of a spacecraft in our wallpaper perfectly captures the nostalgic and playful feel of the game.
+
+## Collect Power-Ups
+
+As you progress through the game, you'll collect power-ups that will help you on your mission. These include weapons to defeat enemies, shields to protect yourself, and extra lives to keep you going.
 
 ## User Stories
 
-Here are some user stories from people who have downloaded and used our spacecraft pixel art wallpaper:
+Our users love Space Adventure! Here's what some of them have to say:
 
-- "I love this wallpaper! It reminds me of all the hours I spent playing space-themed games as a kid."
-- "The pixel art style is so cool. It's like having a little piece of retro gaming history on my desktop."
-- "I'm not usually into sci-fi stuff, but this wallpaper is just too cute to resist."
+> "I love the retro feel of this game. It's like playing my favorite games from when I was a kid!" - John D.
 
-## Download the Wallpaper
-
-Ready to add some retro flair to your desktop or mobile device? You can download our spacecraft pixel art wallpaper for free by clicking the link below:
-
-[Download the Spacecraft Pixel Art Wallpaper](#)
+> "The pixel art is so cool! It really adds to the overall vibe of the game." - Sarah L.
 
 ## References
 
-If you want to learn more about pixel art and its history, check out these resources:
+Want to learn more about Space Adventure? Check out these resources:
 
-- [Pixel Art Wikipedia Page](#)
-- [The History of Pixel Art](#)
-- [Pixel Joint - A Community for Pixel Artists](#)
+- [Gameplay Trailer](#trailer)
+- [Developer Blog](#blog)
+- [FAQs](#faqs)
 
 ## Contact Us
 
-If you have any questions or comments about our spacecraft pixel art wallpaper, please don't hesitate to get in touch. You can reach us by email at [contact@website.com](mailto:contact@website.com) or through our [contact form](#). We'd love to hear from you!
+Have a question or comment about Space Adventure? We'd love to hear from you! Contact us at [contact@spaceadventure.com](mailto:contact@spaceadventure.com).
+
+---
+
+Ready to embark on your own space adventure? Download the game now and start exploring the galaxy!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Retro Space Adventure: A Pixel Art Platformer Game
+
+Welcome to Retro Space Adventure, a thrilling platformer game that takes you on an epic journey through the galaxy! Our game features pixel art graphics that transport you back to the golden age of gaming.
+
+## Explore the Galaxy
+
+In Retro Space Adventure, you play as a brave astronaut who must navigate through different planets and defeat alien enemies. Our game features multiple levels, each with its own unique challenges and obstacles. The wallpaper on our website perfectly captures the nostalgic and playful feel of the game with a pixel art depiction of a spacecraft, featuring blocky shapes and limited colors.
+
+## Collect Power-Ups
+
+As you progress through the game, you'll collect power-ups that will help you on your mission. These include weapons to defeat enemies, shields to protect yourself, and extra lives to keep you going.
+
+## User Stories
+
+Our users love Retro Space Adventure! Here's what some of them have to say:
+
+> "I love the retro feel of this game. It's like playing my favorite games from when I was a kid!" - John D.
+
+> "The pixel art is so cool! It really adds to the overall vibe of the game." - Sarah L.
+
+## References
+
+Want to learn more about Retro Space Adventure? Check out these resources:
+
+- [Gameplay Trailer](#trailer)
+- [Developer Blog](#blog)
+- [FAQs](#faqs)
+
+## Contact Us
+
+Have a question or comment about Retro Space Adventure? We'd love to hear from you! Contact us at [contact@retrospaceadventure.com](mailto:contact@retrospaceadventure.com).
+
+---
+
+Ready to embark on your own space adventure? Download the game now and start exploring the galaxy!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Retro Space Adventure: A Pixel Art Platformer Game
+
+Welcome to Retro Space Adventure, a thrilling platformer game that takes you on an epic journey through the galaxy! Our game features pixel art graphics that transport you back to the golden age of gaming.
+
+## Explore the Galaxy
+
+In Retro Space Adventure, you play as a brave astronaut who must navigate through different planets and defeat alien enemies. Our game features multiple levels, each with its own unique challenges and obstacles. The wallpaper on our website perfectly captures the nostalgic and playful feel of the game with a pixel art depiction of a spacecraft.
+
+## Collect Power-Ups
+
+As you progress through the game, you'll collect power-ups that will help you on your mission. These include weapons to defeat enemies, shields to protect yourself, and extra lives to keep you going.
+
+## User Stories
+
+Our users love Retro Space Adventure! Here's what some of them have to say:
+
+> "I love the retro feel of this game. It's like playing my favorite games from when I was a kid!" - John D.
+
+> "The pixel art is so cool! It really adds to the overall vibe of the game." - Sarah L.
+
+## References
+
+Want to learn more about Retro Space Adventure? Check out these resources:
+
+- [Gameplay Trailer](#trailer)
+- [Developer Blog](#blog)
+- [FAQs](#faqs)
+
+## Contact Us
+
+Have a question or comment about Retro Space Adventure? Contact us at [contact@retrospaceadventure.com](mailto:contact@retrospaceadventure.com).
+
+---
+
+Ready to embark on your own space adventure? Download the game now and start exploring the galaxy!
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Retro Space Adventure: An Exciting Pixel Art Platformer
+
+Welcome to Retro Space Adventure, an exciting platformer game that takes you on a journey through the galaxy! Our game features pixel art graphics that transport you back to the golden age of gaming.
+
+## Explore the Galaxy
+
+In Retro Space Adventure, you play as a brave astronaut who must navigate through different planets and defeat alien enemies. Our game features multiple levels, each with its own unique challenges and obstacles. The wallpaper on our website depicts a pixel art spacecraft, with blocky shapes and limited colors creating a nostalgic and playful feel.
+
+## Collect Power-Ups
+
+As you progress through the game, you'll collect power-ups that will help you on your mission. These include weapons to defeat enemies, shields to protect yourself, and extra lives to keep you going.
+
+## User Stories
+
+Our users love Retro Space Adventure! Here's what some of them have to say:
+
+> "I love the retro feel of this game. It's like playing my favorite games from when I was a kid!" - John D.
+
+> "The pixel art is so cool! It really adds to the overall vibe of the game." - Sarah L.
+
+## References
+
+Want to learn more about Retro Space Adventure? Check out these resources:
+
+- [Gameplay Trailer](#trailer)
+- [Developer Blog](#blog)
+- [FAQs](#faqs)
+
+## Contact Us
+
+Have a question or comment about Retro Space Adventure? Contact us at [contact@retrospaceadventure.com](mailto:contact@retrospaceadventure.com).
+
+---
+
+Ready to embark on your own space adventure? Download the game now and start exploring the galaxy!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Great Vibes
+- Montserrat
+- Exo 2
+- Roboto
+- Dancing Script
+- Lato
+- Inter
+- Alegreya
+- Orbitron
+- Raleway
+- Playfair Display
+- Lobster
+- Futura
+- IBM Plex Sans
+- Barlow Condensed
+- Poppins
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

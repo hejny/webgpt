@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Up, up and away: Exploring the World from a Hot Air Balloon
+# Hot Air Balloon Exploration
 
 Welcome to our lifestyle and adventure website! Our goal is to inspire you to live your best life by experiencing new things and exploring the world around you. And what better way to do that than by taking a ride in a hot air balloon?
 

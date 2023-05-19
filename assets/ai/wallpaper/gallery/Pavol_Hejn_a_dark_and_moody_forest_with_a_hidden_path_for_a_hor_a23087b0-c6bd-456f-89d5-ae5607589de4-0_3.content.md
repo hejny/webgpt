@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Cinzel Decorative-->
 
-# The Hidden Path: Exploring the Dark and Mysterious Forest
+# Mystery Forest Exploration
 
 Welcome to "The Hidden Path," a website dedicated to exploring the dark and mysterious forest featured in our wallpaper. Whether you're a horror enthusiast or simply intrigued by the unknown, we invite you to join us on a journey through this eerie landscape.
 

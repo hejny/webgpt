@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
+"A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -12,11 +12,11 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Orbitron" font would be a great fit for this website.-->
+<!--font:Orbitron-->
 
-# AI Experiments on the Edge of a Black Hole
+# AI near Black Hole
 
-Welcome to our website where we showcase the incredible work of our team of AInauts and their AI companions. Our latest experiment takes us to the edge of a black hole, where time and space warp around us.
+Welcome to our website where we showcase the incredible work of our team of Ainautes and their AI companions. Our latest experiment takes us to the edge of a black hole, where time and space warp around us.
 
 ## The Team
 
@@ -28,7 +28,7 @@ We have sent our team and their AI companions to the edge of a black hole to con
 
 ## The Wallpaper
 
-As a tribute to our team's bravery and dedication, we have created this stunning wallpaper. It depicts our AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them. 
+As a tribute to our team's bravery and dedication, we have created this stunning wallpaper. It depicts our Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.
 
 > "Exploring the unknown is not for the faint of heart, but it is necessary for progress." - Unknown
 

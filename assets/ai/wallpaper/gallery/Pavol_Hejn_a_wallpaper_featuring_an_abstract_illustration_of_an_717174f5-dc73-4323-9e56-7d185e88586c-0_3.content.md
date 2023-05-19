@@ -1,53 +1,129 @@
+<!--font:Poppins-->
+
+# AI-Powered Search Engine
+
+Welcome to our website, where we offer a state-of-the-art search engine powered by artificial intelligence. Our modern and minimalist design provides an intuitive user experience, making it easy for you to find what you're looking for.
+
+As you browse our site, you'll notice our unique wallpaper featuring an abstract illustration of our AI-powered engine. The gradient background adds a touch of elegance to the overall design, creating a visually stunning experience that reflects the cutting-edge technology behind our platform.
+
+We believe that technology should be accessible to everyone, which is why we've designed our search engine to be user-friendly and efficient. Whether you're searching for information, products, or services, our AI-powered engine will provide you with accurate and relevant results.
+
+So why wait? Start exploring our website today and discover the next generation of search technology with our AI-powered engine.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design, set against a gradient background."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# AI-Powered Search Engine for Modern Users
+
+Welcome to our website, where we offer a cutting-edge search engine powered by artificial intelligence. Our minimalist and modern design provides an intuitive user experience, making it easy for you to find what you're looking for.
+
+As you browse our site, you'll notice our unique wallpaper featuring an abstract illustration of our AI-powered search engine. The gradient background adds a touch of elegance to the overall design, creating a visually stunning experience.
+
+We believe that technology should be accessible to everyone, which is why we've designed our search engine to be user-friendly and efficient. Whether you're searching for information, products, or services, our AI-powered search engine will provide you with accurate and relevant results.
+
+So why wait? Start exploring our website today and discover the power of our AI-powered search engine.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Power of Our AI-Powered Search Engine
+
+Welcome to our website, where we offer a modern and intuitive search engine powered by artificial intelligence. Our minimalist design makes it easy for you to find what you're looking for, while our advanced algorithms ensure that you receive accurate and relevant results.
+
+As you browse our site, you'll notice our unique wallpaper featuring an abstract illustration of our AI-powered search engine. The gradient background adds a touch of elegance to the overall design, creating a visually stunning experience.
+
+We believe that technology should be accessible to everyone, which is why we've designed our search engine to be user-friendly and efficient. Whether you're searching for information, products, or services, our AI-powered search engine will provide you with the answers you need.
+
+So why wait? Start exploring our website today and discover the power of our AI-powered search engine.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Experience the Future of Search with Our AI-Powered Engine
+
+Welcome to our website, where we offer an advanced search engine powered by artificial intelligence. Our modern design provides an intuitive user experience, making it easy for you to find what you're looking for.
+
+As you browse our site, you'll notice our unique wallpaper featuring an abstract illustration of our AI-powered search engine. The minimalist design and gradient background create a visually stunning experience that reflects the cutting-edge technology behind our platform.
+
+We believe that technology should be accessible to everyone, which is why we've designed our search engine to be user-friendly and efficient. Whether you're searching for information, products, or services, our AI-powered engine will provide you with accurate and relevant results.
+
+So why wait? Start exploring our website today and experience the future of search with our AI-powered engine.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Next Generation of Search Technology with Our AI-Powered Engine
+
+Welcome to our website, where we offer a state-of-the-art search engine powered by artificial intelligence. Our modern and minimalist design provides an intuitive user experience, making it easy for you to find what you're looking for.
+
+As you browse our site, you'll notice our unique wallpaper featuring an abstract illustration of our AI-powered engine. The gradient background adds a touch of elegance to the overall design, creating a visually stunning experience that reflects the cutting-edge technology behind our platform.
+
+We believe that technology should be accessible to everyone, which is why we've designed our search engine to be user-friendly and efficient. Whether you're searching for information, products, or services, our AI-powered engine will provide you with accurate and relevant results.
+
+So why wait? Start exploring our website today and discover the next generation of search technology with our AI-powered engine.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Playfair Display
+- Exo 2
+- IBM Plex Sans
+- Inter
+- Montserrat
+- Alegreya
+- Dancing Script
+- Poppins
+- Orbitron
+- Roboto
+- Futura
+- Lobster
+- Raleway
+- Barlow Condensed
+- Great Vibes
+- Open Sans
+- Lato
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# AI-Powered Search Engine Wallpaper
-
-Welcome to our website featuring a stunning wallpaper showcasing an abstract illustration of an AI-powered search engine. This wallpaper is perfect for tech enthusiasts, designers, and anyone who loves modern and minimalist designs.
-
-## About the Wallpaper
-
-Our wallpaper features an abstract illustration of an AI-powered search engine with a minimalist and modern design. The search engine is represented by a simple yet elegant geometric shape, which is set against a gradient background. The colors used in the gradient are carefully chosen to create a sense of depth and dimension, making the wallpaper visually appealing and eye-catching.
-
-## User Stories
-
-Here are some user stories from our satisfied customers:
-
--   "I love this wallpaper! It's the perfect addition to my home office. The design is so modern and sleek, and it really adds a pop of color to my space." - Jane, Graphic Designer
--   "As a software engineer, I'm always looking for ways to incorporate technology into my life. This wallpaper is the perfect way to do that. It's a subtle nod to the power of AI, and it looks great on my desktop." - Mark, Software Engineer
--   "I'm not usually one for abstract art, but there's something about this wallpaper that really speaks to me. It's like a visual representation of the future of technology." - Sarah, Artist
-
-## References
-
-If you're interested in learning more about AI-powered search engines, we recommend checking out these resources:
-
--   [How AI is changing the way we search for information](#)
--   [The benefits and drawbacks of using AI-powered search engines](#)
--   [A brief history of search engines and their evolution](#)
-
-## Contact Us
-
-If you have any questions or comments about our wallpaper, please don't hesitate to reach out to us. You can contact us via email at [info@aiwallpaper.com](mailto:info@aiwallpaper.com) or through our social media channels:
-
--   [Twitter](#)
--   [Instagram](#)
--   [Facebook](#)
-
-Thank you for visiting our website, and we hope you enjoy our AI-powered search engine wallpaper!

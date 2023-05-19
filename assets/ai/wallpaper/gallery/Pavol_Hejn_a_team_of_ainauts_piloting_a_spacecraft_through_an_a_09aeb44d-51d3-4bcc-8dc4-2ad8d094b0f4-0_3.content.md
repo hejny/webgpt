@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
+"A team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Spacecraft Piloting through an Asteroid Field
+# AI Piloting Asteroid Field
 
-Welcome to our website featuring an exciting wallpaper of a team of AInauts piloting a spacecraft through an asteroid field, with explosions and debris flying all around them.
+Welcome to our website featuring an exciting wallpaper of a team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them.
 
 ## About the Wallpaper
 
-The wallpaper depicts a thrilling scene of space adventure where the AInauts are navigating their spacecraft through a dangerous asteroid field. The team is facing numerous obstacles in their path, including flying debris and explosions. However, they remain focused and determined to complete their mission successfully.
+The wallpaper depicts a thrilling scene of space adventure where the Ainautes are navigating their spacecraft through a dangerous asteroid field. The team is facing numerous obstacles in their path, including flying debris and explosions. However, they remain focused and determined to complete their mission successfully.
 
 ## Download the Wallpaper
 

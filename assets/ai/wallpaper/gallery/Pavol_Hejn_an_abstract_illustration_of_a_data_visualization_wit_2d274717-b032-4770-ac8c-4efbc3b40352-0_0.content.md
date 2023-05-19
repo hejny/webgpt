@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# DataVizPro - Simplify Your Data Analysis
+# DataViz Simplifies Data Analysis
 
 Welcome to DataVizPro, where we help you simplify your data analysis with our powerful tools and intuitive interface. Our platform is designed to make it easy for you to visualize and interpret complex data sets, so you can make informed decisions faster.
 

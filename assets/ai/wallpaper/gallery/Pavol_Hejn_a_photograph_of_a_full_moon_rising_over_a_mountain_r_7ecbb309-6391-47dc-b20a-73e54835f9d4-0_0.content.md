@@ -1,37 +1,69 @@
+<!--font:Montserrat-->
+
+# Moonlit Mountains
+
+Welcome to Moonlit Mountains, where we celebrate the beauty and mystery of nature. Our website features stunning photography of landscapes, wildlife, and natural wonders from around the world.
+
+One of our most popular wallpapers is a photograph of a full moon rising over a mountain range. The mist and clouds in the image add to the sense of mystery and awe that nature can inspire. This wallpaper is perfect for anyone who loves to be reminded of the power and majesty of the natural world.
+
+Explore our website to discover more breathtaking images and learn about the amazing places and creatures that make our planet so special. Join our community of nature lovers and share your own photos and stories with us.
+
+Let Moonlit Mountains inspire you to connect with nature and appreciate its wonders every day.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Montserrat-->
-
-# Moonlit Mountains Wallpaper
-
-Welcome to our website featuring a stunning photograph of a full moon rising over a mountain range. The mist and clouds surrounding the mountains add to the sense of mystery and beauty captured in this image.
-
-## Download the Wallpaper
-
-To download this breathtaking wallpaper, simply right-click on the image and select "Save Image As" to save it to your device. You can then set it as your desktop background or use it for any other purpose you desire.
-
-> "The moon is a loyal companion. It never leaves. It's always there, watching, steadfast, knowing us in our light and dark moments, changing forever just as we do." - Tahereh Mafi
-
-## About the Photographer
-
-This stunning photograph was taken by renowned landscape photographer John Doe. With over 20 years of experience capturing the beauty of nature, John has become known for his ability to capture the essence of a location and convey its unique character through his photographs.
-
-## More Wallpapers
-
-If you enjoyed this wallpaper, be sure to check out our collection of other breathtaking wallpapers featuring natural landscapes from around the world. From majestic waterfalls to serene forests, we have something for everyone.
 
 ---
 
-Thank you for visiting our website and we hope you enjoy your new wallpaper!
+
+# Moonlit Mountains
+
+Welcome to Moonlit Mountains, where we celebrate the beauty and mystery of nature. Our website features stunning photography of landscapes, wildlife, and natural wonders from around the world.
+
+One of our most popular wallpapers is a photograph of a full moon rising over a mountain range. The mist and clouds in the image add to the sense of mystery and awe that nature can inspire. This wallpaper is perfect for anyone who loves to be reminded of the power and majesty of the natural world.
+
+Explore our website to discover more breathtaking images and learn about the amazing places and creatures that make our planet so special. Join our community of nature lovers and share your own photos and stories with us.
+
+Let Moonlit Mountains inspire you to connect with nature and appreciate its wonders every day.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Playfair Display
+- Lato
+- Inter
+- Barlow Condensed
+- Open Sans
+- Futura
+- Dancing Script
+- IBM Plex Sans
+- Lobster
+- Great Vibes
+- Raleway
+- Roboto
+- Exo 2
+- Montserrat
+- Poppins
+- Orbitron
+- Alegreya
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
+-->

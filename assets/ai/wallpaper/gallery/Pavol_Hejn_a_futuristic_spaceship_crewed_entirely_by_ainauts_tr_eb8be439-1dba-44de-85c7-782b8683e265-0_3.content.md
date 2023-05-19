@@ -1,19 +1,70 @@
+<!--font:Montserrat-->
+
+# Ainautes: Into the Unknown
+
+Welcome to Ainautes, a futuristic spaceship crewed entirely by a team of intrepid explorers. Our mission is to travel through the vast expanse of space in search of new discoveries and knowledge.
+
+As you browse our website, take a moment to admire our stunning wallpaper featuring our ship as it journeys through the cosmos. The sleek design and advanced technology of our vessel allow us to explore even the most remote corners of the universe.
+
+Join us on our journey as we uncover the mysteries of the universe and push the boundaries of human exploration. From distant planets to unknown galaxies, there's no limit to what we can discover together.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
+"A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Ainautes: Exploring the Unknown
+
+Welcome to Ainautes, a futuristic spaceship crewed entirely by a team of intrepid explorers. Our mission is to travel through the vast expanse of space in search of new discoveries and knowledge.
+
+As you browse our website, take a moment to admire our stunning wallpaper featuring our ship as it journeys through the cosmos. The sleek design and advanced technology of our vessel allow us to explore even the most remote corners of the universe.
+
+Join us on our journey as we uncover the mysteries of the universe and push the boundaries of human exploration. From distant planets to unknown galaxies, there's no limit to what we can discover together.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Alegreya
+- Montserrat
+- Orbitron
+- Cabin
+- Cinzel
+- Poppins
+- Open Sans
+- Lobster
+- Creepster
+- Playfair Display
+- Cinzel Decorative
+- Futura
+- Barlow Condensed
+- Great Vibes
+- Lato
+- Inter
+- Dancing Script
+- IBM Plex Sans
+- Raleway
+- Cormorant Garamond
+- Roboto
+- Exo 2
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Montserrat
+
 -->
-
-<!--font:The "Roboto" font is a great option for websites due to its clean and modern design.-->
-
-# AI Spaceship: Exploring the Unknown
-
-Welcome to our website dedicated to showcasing the incredible journey of a futuristic spaceship crewed entirely by AInauts. Our AI-powered vessel is on a mission of discovery, traveling through the vast expanse of space in search of new worlds and civilizations.
-
-With cutting-edge technology and advanced artificial intelligence systems, our crew of AInauts is able to navigate the cosmos with unparalleled precision and efficiency. From analyzing complex data sets to making split-second decisions, our AI-driven ship is at the forefront of space exploration.
-
-Join us on our journey as we push the boundaries of what is possible and uncover the mysteries of the universe. Browse our gallery of stunning images and videos captured during our travels, and learn more about the groundbreaking technology that powers our mission.
-
-Thank you for visiting our site, and we hope you enjoy following along on our incredible adventure through the stars.

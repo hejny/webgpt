@@ -1,36 +1,65 @@
+<!--font:Open Sans-->
+
+# Wanderlust Postcards
+
+Welcome to Wanderlust Postcards, where we bring the world to you through a collection of vintage postcards from around the globe. Our curated selection features unique and rare finds that will transport you to different times and places.
+
+As you browse our collection, you'll discover postcards from iconic landmarks like the Eiffel Tower in Paris, the Great Wall of China, and the Taj Mahal in India. You'll also find lesser-known gems like a street scene in Havana, Cuba or a beach in Bali, Indonesia.
+
+Whether you're a seasoned traveler or simply have a love for all things vintage, our postcards are sure to spark your wanderlust and inspire your next adventure. So sit back, relax, and let us take you on a journey through time and space with our beautiful collage of vintage postcards.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A collage of vintage postcards from around the world"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Wanderlust Postcards
+
+Welcome to Wanderlust Postcards, where we bring the world to you through a collection of vintage postcards from around the globe. Our curated selection features unique and rare finds that will transport you to different times and places.
+
+As you browse our collection, you'll discover postcards from iconic landmarks like the Eiffel Tower in Paris, the Great Wall of China, and the Taj Mahal in India. You'll also find lesser-known gems like a street scene in Havana, Cuba or a beach in Bali, Indonesia.
+
+Whether you're a seasoned traveler or simply have a love for all things vintage, our postcards are sure to spark your wanderlust and inspire your next adventure. So sit back, relax, and let us take you on a journey through time and space with our beautiful collage of vintage postcards.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Exo 2
+- Raleway
+- Lobster
+- Alegreya
+- Playfair Display
+- Futura
+- Barlow Condensed
+- Dancing Script
+- Great Vibes
+- Open Sans
+- Poppins
+- Inter
+- IBM Plex Sans
+- Orbitron
+- Lato
+- Roboto
+- Montserrat
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Montserrat-->
-
-# Wanderlust Wallpapers
-
-Decorate your desktop or mobile device with our vintage postcard wallpaper collection. Our "Collage of Vintage Postcards from Around the World" is perfect for those who have a passion for travel and exploring different cultures.
-
-## Features
-
-- High-quality resolution for all devices
-- A unique and eye-catching design that will make your screen stand out
-- Easy to download and set as your wallpaper
-
-## How to Download
-
-1. Click on the image above to view the full-size wallpaper.
-2. Right-click on the image and select "Save image as..."
-3. Choose a location on your device where you want to save the image.
-4. Set the image as your wallpaper through your device's settings.
-
-> "The world is a book, and those who do not travel read only a page." - Saint Augustine
-
-Travel the world without leaving your home with our vintage postcard wallpaper collection. Download now and let your wanderlust take over!

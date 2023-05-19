@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Playfair Display-->
 
-# Dreamy Watercolor Flowers for Your Perfect Event
+# Watercolor Flowers for Events
 
 Welcome to our event planning website! We are excited to offer you the perfect backdrop for your special occasion with our dreamy watercolor wallpaper featuring a field of flowers. This stunning image is sure to create a beautiful and romantic atmosphere that will leave a lasting impression on your guests.
 

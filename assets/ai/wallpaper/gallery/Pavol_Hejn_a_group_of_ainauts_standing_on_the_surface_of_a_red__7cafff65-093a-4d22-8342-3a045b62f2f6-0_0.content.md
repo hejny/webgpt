@@ -1,19 +1,66 @@
-<!--
-Write me markdown content of website with wallpaper:
-
-"A group of AInauts standing on the surface of a red planet, with towering dust storms raging in the distance."
-
-The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
--->
-
 <!--font:Inter-->
 
-# Red Planet Explorers
+# Welcome to the Red Planet!
 
-Welcome to Red Planet Explorers, where we take you on a journey through the vast and mysterious universe. Our team of AInauts has landed on the surface of a red planet, where towering dust storms rage in the distance. 
+Explore the mysteries of the fourth planet from the sun with our stunning wallpaper featuring a group of Ainautes standing on the surface of Mars. In this breathtaking scene, towering dust storms rage in the distance, reminding us of the harsh and unforgiving nature of this alien world.
 
-As you browse our website, you'll learn about the latest discoveries in space exploration, from the formation of galaxies to the search for extraterrestrial life. Join us as we explore the wonders of the universe and push the boundaries of human knowledge.
+Whether you're a space enthusiast or simply looking for a striking new desktop background, our Red Planet wallpaper is sure to impress. Download it today and transport yourself to the rugged terrain of Mars, where adventure and discovery await.
 
-But first, take a moment to admire our stunning wallpaper featuring our brave AInauts standing on the surface of the red planet. The image captures the awe-inspiring beauty and danger of space exploration, reminding us of the incredible challenges that await us as we venture into the unknown.
+<!--
 
-So sit back, relax, and let Red Planet Explorers take you on an unforgettable journey through the cosmos.
+Write me markdown content of website with wallpaper:
+
+"A group of Ainautes standing on the surface of a red planet, with towering dust storms raging in the distance."
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to the Red Planet!
+
+Explore the mysteries of the fourth planet from the sun with our stunning wallpaper featuring a group of Ainautes standing on the surface of Mars. In this breathtaking scene, towering dust storms rage in the distance, reminding us of the harsh and unforgiving nature of this alien world.
+
+Whether you're a space enthusiast or simply looking for a striking new desktop background, our Red Planet wallpaper is sure to impress. Download it today and transport yourself to the rugged terrain of Mars, where adventure and discovery await.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Montserrat
+- Barlow Condensed
+- Lato
+- Poppins
+- Cabin
+- Cinzel
+- Orbitron
+- Open Sans
+- Inter
+- Exo 2
+- Playfair Display
+- Alegreya
+- Creepster
+- Cormorant Garamond
+- Cinzel Decorative
+- Roboto
+- IBM Plex Sans
+- Lobster
+- Raleway
+- Great Vibes
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Inter
+
+-->

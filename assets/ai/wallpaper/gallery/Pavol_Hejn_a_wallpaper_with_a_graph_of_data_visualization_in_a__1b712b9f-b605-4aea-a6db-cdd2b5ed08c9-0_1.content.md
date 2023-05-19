@@ -1,71 +1,137 @@
+<!--font:Poppins-->
+
+# Minimalist data viz site
+
+Welcome to our minimalist website featuring a stunning data visualization graph as the backdrop. Our site is perfect for anyone who loves data and wants to explore its beauty in a whole new way.
+
+Our data visualization graph showcases the relationship between different data points, with each line representing a different variable. The colors used in the graph are subtle yet striking, making it easy on the eyes while still providing visual interest.
+
+Whether you're a data analyst, a designer, or simply someone who appreciates beautiful design, our site is sure to impress. It's perfect for gaining insights into complex datasets and exploring data trends and patterns.
+
+Our site is user-friendly and easy to navigate. You can explore our data visualization graph in detail, zooming in and out to see different aspects of the data. You can also use our interactive tools to manipulate the data and see how different variables affect the overall graph.
+
+So why wait? Start exploring the beauty of data visualization today by visiting our minimalist site.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a graph of data visualization, in a minimalist and modern design."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Data Visualization Wallpaper
+
+Welcome to our website featuring a minimalist and modern wallpaper design showcasing a graph of data visualization. This stunning wallpaper is perfect for anyone who loves data and wants to add a touch of sophistication to their desktop or mobile device.
+
+Our wallpaper features a sleek and simple design that highlights the beauty of data visualization. The graph showcases the relationship between different data points, with each line representing a different variable. The colors used in the graph are subtle yet striking, making it easy on the eyes while still providing visual interest.
+
+Whether you're a data analyst, a designer, or simply someone who appreciates beautiful design, our data visualization wallpaper is sure to impress. It's perfect for use as a background on your computer, tablet, or smartphone, and it's guaranteed to make a statement wherever you use it.
+
+So why wait? Download our data visualization wallpaper today and start enjoying the beauty of data in a whole new way!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Welcome to Our Minimalist Data Visualization Website
+
+We are excited to share with you our sleek and modern website featuring a minimalist design with a data visualization graph as the background. Our website is perfect for anyone who loves data and wants to explore its beauty in a whole new way.
+
+Our data visualization graph showcases the relationship between different data points, with each line representing a different variable. The colors used in the graph are subtle yet striking, making it easy on the eyes while still providing visual interest.
+
+Whether you're a data analyst, a designer, or simply someone who appreciates beautiful design, our website is sure to impress. It's perfect for exploring data trends and patterns, and for gaining insights into complex datasets.
+
+Our website is designed to be user-friendly and easy to navigate. You can explore our data visualization graph in detail, zooming in and out to see different aspects of the data. You can also use our interactive tools to manipulate the data and see how different variables affect the overall graph.
+
+So why wait? Start exploring the beauty of data today by visiting our minimalist data visualization website.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Beauty of Data Visualization on Our Minimalist Website
+
+Welcome to our minimalist website featuring a stunning data visualization graph as the background. Our website is designed for anyone who loves data and wants to explore its beauty in a whole new way.
+
+Our data visualization graph showcases the relationship between different data points, with each line representing a different variable. The colors used in the graph are subtle yet striking, making it easy on the eyes while still providing visual interest.
+
+Whether you're a data analyst, a designer, or simply someone who appreciates beautiful design, our website is sure to impress. It's perfect for gaining insights into complex datasets and exploring data trends and patterns.
+
+Our website is user-friendly and easy to navigate. You can explore our data visualization graph in detail, zooming in and out to see different aspects of the data. You can also use our interactive tools to manipulate the data and see how different variables affect the overall graph.
+
+So why wait? Start discovering the beauty of data visualization today by visiting our minimalist website.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore the Beauty of Data Visualization on Our Minimalist Site
+
+Welcome to our minimalist website featuring a stunning data visualization graph as the backdrop. Our site is perfect for anyone who loves data and wants to explore its beauty in a whole new way.
+
+Our data visualization graph showcases the relationship between different data points, with each line representing a different variable. The colors used in the graph are subtle yet striking, making it easy on the eyes while still providing visual interest.
+
+Whether you're a data analyst, a designer, or simply someone who appreciates beautiful design, our site is sure to impress. It's perfect for gaining insights into complex datasets and exploring data trends and patterns.
+
+Our site is user-friendly and easy to navigate. You can explore our data visualization graph in detail, zooming in and out to see different aspects of the data. You can also use our interactive tools to manipulate the data and see how different variables affect the overall graph.
+
+So why wait? Start exploring the beauty of data visualization today by visiting our minimalist site.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Open Sans
+- Orbitron
+- Lobster
+- Inter
+- Exo 2
+- Futura
+- Raleway
+- Dancing Script
+- Alegreya
+- Lato
+- Roboto
+- Barlow Condensed
+- Montserrat
+- IBM Plex Sans
+- Playfair Display
+- Poppins
+- Great Vibes
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# Data Visualization Wallpaper for Modern Spaces
-
-Welcome to our website featuring a stunning wallpaper design that combines the beauty of data visualization with a minimalist and modern aesthetic. Our wallpaper is perfect for any space, whether it be a home office, living room, or conference room.
-
-## About the Design
-
-Our wallpaper features a graph of data visualization in a clean and simple design. The graph showcases various data points in a visually appealing way, making it both functional and beautiful. The minimalist design allows the data to speak for itself, while the modern aesthetic adds a touch of sophistication to any space.
-
-## Benefits of Using Our Wallpaper
-
-- Adds visual interest to any space
-- Enhances productivity and creativity
-- Provides a modern and sophisticated look
-- Easy to install and remove
-- Made from high-quality materials
-
-## User Stories
-
-"I recently redecorated my home office and wanted to add a unique touch to the space. The data visualization wallpaper was the perfect addition - it's both functional and beautiful!" - Sarah, Freelance Writer
-
-"I work in a tech startup and we wanted to add some personality to our conference room. The data visualization wallpaper not only looks great, but it also helps us visualize our data in a new way." - John, Software Engineer
-
-## Installation Instructions
-
-Our wallpaper is easy to install and remove, making it a great option for renters or those who like to change up their decor frequently. Here are the steps to install our wallpaper:
-
-1. Clean the wall surface and make sure it is dry.
-2. Measure and mark the wall where you want the wallpaper to go.
-3. Apply wallpaper paste to the back of the wallpaper.
-4. Carefully place the wallpaper onto the wall, starting at the top and smoothing out any bubbles or wrinkles.
-5. Trim any excess wallpaper from the edges using a sharp knife or scissors.
-
-To remove the wallpaper, simply peel it off the wall starting from one corner.
-
-## References
-
-For more information on data visualization and its benefits, check out these resources:
-
-- [The Importance of Data Visualization](#)
-- [Data Visualization Best Practices](#)
-- [How to Choose the Right Data Visualization Tool](#)
-
-## Contact Us
-
-If you have any questions or comments about our wallpaper, please don't hesitate to contact us. We're always happy to hear from our customers!
-
-- Email: info@datavisualizationwallpaper.com
-- Phone: 555-555-5555
-- Address: 123 Main Street, Anytown USA
-
-Thank you for visiting our website and we hope you enjoy our data visualization wallpaper!

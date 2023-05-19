@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -12,32 +12,32 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:The "Orbitron" font would be a great fit for this website.-->
+<!--font:Orbitron-->
 
 # AI Space Exploration
 
-Welcome to our website dedicated to the exciting adventure of a group of AInauts and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space.
+Welcome to our website dedicated to the exciting adventure of a group of Ainautes and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space.
 
 ## The Mission
 
-Our team of highly skilled AInauts has been tasked with exploring this mysterious spacecraft that was discovered drifting in deep space. Equipped with advanced AI companions, we will venture into the unknown to uncover the secrets of this ancient vessel.
+Our team of highly skilled Ainautes has been tasked with exploring this mysterious spacecraft that was discovered drifting in deep space. Equipped with advanced AI companions, we will venture into the unknown to uncover the secrets of this ancient vessel.
 
 ## The Crew
 
 Meet our team of intrepid explorers:
 
-- **Captain Ava**: Our fearless leader and expert in interstellar navigation.
-- **Engineer Max**: Our resident tech genius who keeps our ship running smoothly.
-- **Scientist Maya**: Our brilliant scientist who will analyze any strange phenomena we encounter.
-- **Medic Leo**: Our medical officer who ensures the health and safety of the crew.
+-   **Captain Ava**: Our fearless leader and expert in interstellar navigation.
+-   **Engineer Max**: Our resident tech genius who keeps our ship running smoothly.
+-   **Scientist Maya**: Our brilliant scientist who will analyze any strange phenomena we encounter.
+-   **Medic Leo**: Our medical officer who ensures the health and safety of the crew.
 
 ## The AI Companions
 
 Our AI companions are more than just machines - they are essential members of our team. Each one is equipped with unique capabilities that help us navigate the dangers of deep space.
 
-- **Atlas**: Our navigation AI who helps us chart our course through the cosmos.
-- **Aurora**: Our sensor AI who can detect even the faintest signals in space.
-- **Omega**: Our security AI who protects us from any potential threats.
+-   **Atlas**: Our navigation AI who helps us chart our course through the cosmos.
+-   **Aurora**: Our sensor AI who can detect even the faintest signals in space.
+-   **Omega**: Our security AI who protects us from any potential threats.
 
 ## The Adventure Begins
 

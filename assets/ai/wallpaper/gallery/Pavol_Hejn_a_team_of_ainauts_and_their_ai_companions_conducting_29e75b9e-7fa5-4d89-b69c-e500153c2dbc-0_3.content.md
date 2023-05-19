@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
+"A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Welcome to the Black Hole Lab
 
-Explore the mysteries of the universe with our team of AInauts and their AI companions as they conduct groundbreaking experiments on the edge of a black hole. 
+Explore the mysteries of the universe with our team of Ainautes and their AI companions as they conduct groundbreaking experiments on the edge of a black hole.
 
 ## Wallpaper
 
-![A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.](#)
+![A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.](#)
 
 ## Our Mission
 
@@ -28,7 +28,7 @@ At the Black Hole Lab, we are dedicated to advancing our understanding of the co
 
 ## Our Approach
 
-Our approach is rooted in collaboration, innovation, and a deep respect for the natural world. We believe that by working together and combining our unique strengths and perspectives, we can achieve breakthroughs that would be impossible otherwise. 
+Our approach is rooted in collaboration, innovation, and a deep respect for the natural world. We believe that by working together and combining our unique strengths and perspectives, we can achieve breakthroughs that would be impossible otherwise.
 
 ## Our Results
 

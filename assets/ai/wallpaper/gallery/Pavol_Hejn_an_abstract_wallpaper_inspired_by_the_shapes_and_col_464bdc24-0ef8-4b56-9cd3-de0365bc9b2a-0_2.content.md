@@ -1,66 +1,117 @@
+<!--font:Open Sans-->
+
+# Quantum Art for Your Devices
+
+Infuse your digital devices with a touch of creativity and inspiration through our stunning abstract art. Inspired by the shapes and colors found in quantum physics, this artwork features bold colors and intricate lines that are sure to make a statement on your desktop or mobile screen.
+
+Whether you're a science enthusiast or simply appreciate beautiful design, our quantum-inspired abstract art is the perfect way to add a unique blend of science and art to your digital world. 
+
+Download our artwork now and experience the beauty and inspiration it brings to your devices.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "An abstract wallpaper inspired by the shapes and colors of quantum physics, with bold colors and intricate lines."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Quantum-inspired Abstract Wallpaper
+
+Add a touch of quantum physics to your desktop or mobile device with our stunning abstract wallpaper. Featuring bold colors and intricate lines, this wallpaper is inspired by the shapes and colors found in the fascinating world of quantum physics.
+
+Whether you're a science enthusiast or simply appreciate beautiful design, this wallpaper is sure to make a statement on your screen. Download it now and enjoy the unique blend of art and science that it brings to your digital space.
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Quantum-inspired Abstract Art for Your Digital Space
+
+Looking to add a touch of creativity and inspiration to your desktop or mobile device? Look no further than our stunning abstract art inspired by the shapes and colors of quantum physics.
+
+Featuring bold colors and intricate lines, this abstract art is sure to make a statement on your screen. It's the perfect way to infuse your digital space with a unique blend of science and art, whether you're a science enthusiast or simply appreciate beautiful design.
+
+Download our quantum-inspired abstract art now and enjoy the beauty and inspiration it brings to your digital world.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Quantum-inspired Abstract Art for Your Digital Devices
+
+Add a touch of creativity and inspiration to your digital devices with our stunning abstract art inspired by the shapes and colors of quantum physics.
+
+Featuring bold colors and intricate lines, this abstract art is the perfect way to infuse your desktop or mobile device with a unique blend of science and art. Whether you're a science enthusiast or simply appreciate beautiful design, our quantum-inspired abstract art is sure to make a statement on your screen.
+
+Download our artwork now and enjoy the beauty and inspiration it brings to your digital world.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Quantum-inspired Abstract Art for Your Devices
+
+Infuse your digital devices with a touch of creativity and inspiration through our stunning abstract art. Inspired by the shapes and colors found in quantum physics, this artwork features bold colors and intricate lines that are sure to make a statement on your desktop or mobile screen.
+
+Whether you're a science enthusiast or simply appreciate beautiful design, our quantum-inspired abstract art is the perfect way to add a unique blend of science and art to your digital world. 
+
+Download our artwork now and experience the beauty and inspiration it brings to your devices.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Raleway
+- Alegreya
+- Open Sans
+- Barlow Condensed
+- IBM Plex Sans
+- Poppins
+- Roboto
+- Montserrat
+- Inter
+- Playfair Display
+- Lato
+- Great Vibes
+- Exo 2
+- Lobster
+- Orbitron
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Montserrat-->
-
-# Quantum Wallpaper: Bold and Intricate Design for Your Space
-
-Welcome to our collection of quantum-inspired wallpapers, where science meets art. Our abstract wallpaper features bold colors and intricate lines that draw inspiration from the shapes and colors of quantum physics. 
-
-## Why Choose Quantum Wallpaper?
-
-Our quantum wallpaper is not just a decorative piece for your space, it's a conversation starter. It adds depth and character to any room, whether it's your living room, bedroom, or workspace. The intricate design creates a unique visual experience that captures the essence of quantum physics.
-
-## User Stories
-
-Here are some stories from our satisfied customers:
-
-> "I was looking for a wallpaper that would add a touch of personality to my home office. When I came across this quantum-inspired design, I knew it was perfect. It's not only visually stunning but also sparks interesting conversations with my colleagues during video calls." - Sarah
-
-> "I'm a physicist, and I love how this wallpaper captures the beauty of quantum physics. It's like having a piece of my work on display in my living room." - John
-
-## Specifications
-
-- Dimensions: 10m x 0.53m
-- Material: Non-woven fabric
-- Pattern repeat: 53cm
-- Roll coverage: 5.3m²
-- Washability: Spongeable
-- Lightfastness: Good
-
-## Installation
-
-Our quantum wallpaper is easy to install and comes with clear instructions. All you need is wallpaper adhesive, a brush, and a sharp knife. If you're not confident in installing it yourself, we recommend hiring a professional.
-
-## References
-
-If you're interested in learning more about quantum physics, here are some recommended resources:
-
-- [Quantum Physics for Beginners](#) by Jim Al-Khalili
-- [The Elegant Universe](#) by Brian Greene
-- [Quantum Mechanics: The Theoretical Minimum](#) by Leonard Susskind and Art Friedman
-
-## Contact Us
-
-If you have any questions or concerns, please don't hesitate to contact us. Our customer service team is always happy to help.
-
-- Phone: 555-1234
-- Email: info@quantumwallpaper.com
-- Address: 123 Main St, Anytown USA
-
-Add some character to your space with our quantum-inspired wallpaper. Order now and experience the beauty of science in your home or office.

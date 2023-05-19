@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
+"A team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Mysteries of the Universe
+# Universe's Mysteries Explored.
 
-Welcome to our website dedicated to exploring the mysteries of the universe! Our team of AInauts and their AI companions are on a mission to unravel the secrets of the cosmos. As you browse through our site, you'll find a wealth of information about the latest discoveries in astronomy, astrophysics, and cosmology.
+Welcome to our website dedicated to exploring the mysteries of the universe! Our team of Ainautes and their AI companions are on a mission to unravel the secrets of the cosmos. As you browse through our site, you'll find a wealth of information about the latest discoveries in astronomy, astrophysics, and cosmology.
 
 ## Our Mission
 
@@ -28,16 +28,16 @@ Our mission is to push the boundaries of human knowledge by conducting groundbre
 
 ## Our Research
 
-At the heart of our work is our team of AInauts and their AI companions. Together, they are conducting experiments on the edge of a black hole, with time and space warping around them. This image represents the cutting-edge research we are doing to understand the fundamental forces of the universe.
+At the heart of our work is our team of Ainautes and their AI companions. Together, they are conducting experiments on the edge of a black hole, with time and space warping around them. This image represents the cutting-edge research we are doing to understand the fundamental forces of the universe.
 
 Our research covers a wide range of topics, including:
 
-- Black holes
-- Dark matter
-- Dark energy
-- The Big Bang
-- Gravitational waves
-- Exoplanets
+-   Black holes
+-   Dark matter
+-   Dark energy
+-   The Big Bang
+-   Gravitational waves
+-   Exoplanets
 
 ## User Stories
 

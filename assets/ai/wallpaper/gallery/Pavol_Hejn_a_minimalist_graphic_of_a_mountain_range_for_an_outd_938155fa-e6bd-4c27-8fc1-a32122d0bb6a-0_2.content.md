@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Adventure Awaits: Embrace the Great Outdoors
+# Embrace Outdoor Adventure.
 
 Welcome to Adventure Awaits, your go-to destination for all things outdoor and adventure sports! Our mission is to inspire you to embrace the great outdoors and experience the thrill of exploring nature. Whether you're a seasoned adventurer or just starting out, we've got everything you need to make your next trip unforgettable.
 

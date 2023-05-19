@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
+"Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,13 +18,13 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Depths: A Journey Through Subterranean Worlds
+# Exploring Subterranean Depths
 
 Welcome to our website, where we take you on a journey through the depths of otherworldly planets. Our mission is to bring you stunning visuals and immersive experiences that transport you to places beyond your wildest imagination.
 
 ## The Wallpaper
 
-Our current wallpaper features AInauts exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them. This image captures the excitement and wonder of discovering new worlds and the mysteries they hold.
+Our current wallpaper features Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them. This image captures the excitement and wonder of discovering new worlds and the mysteries they hold.
 
 ## Our Mission
 

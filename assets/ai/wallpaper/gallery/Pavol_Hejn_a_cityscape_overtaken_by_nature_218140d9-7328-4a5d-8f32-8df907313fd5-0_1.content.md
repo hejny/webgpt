@@ -1,71 +1,260 @@
+<!--font:Poppins-->
+
+# Urban Jungle: Indoors Out
+
+Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to bring the outdoors in and create a space that nurtures your mind, body, and soul.
+
+Our captivating background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for incorporating nature into your indoor spaces.
+
+## Why Choose Urban Jungle?
+
+- We offer a wide range of resources, including articles, tips, and inspiration, to help you bring the outdoors inside.
+- Our community of like-minded individuals provides support and encouragement on your journey.
+- Our captivating background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
+
+## User Stories
+
+Here are some stories from our community members:
+
+> "As someone who lives in a small apartment in the city, I never thought I could have my own little slice of nature. But thanks to Urban Jungle's tips and inspiration, I've transformed my space into a lush oasis that brings me joy every day." - Alex, Freelance Writer
+
+> "I used to feel so drained and uninspired in my office, but since I started incorporating plants and natural elements into my workspace, I've noticed a huge difference in my productivity and creativity." - Sarah, Graphic Designer
+
+## Resources
+
+Check out these resources to learn more about the benefits of incorporating nature into your indoor spaces:
+
+- [The Biophilic Office Project](#)
+- [The Benefits of Biophilic Design](#)
+- [How Plants Can Improve Your Work Environment](#)
+
+## Connect with Us
+
+Join our community of nature lovers and stay up-to-date on the latest tips and inspiration for bringing the outdoors in. Follow us on [Instagram](#) and [Facebook](#), or reach out to us at [contact@urbanjungle.com](mailto:contact@urbanjungle.com).
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A cityscape overtaken by nature"
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
+- Use markdown format 
+- Start with heading
+- Heading should be short and concise
+- The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Montserrat-->
 
-# "Nature Takes Over" - A Wallpaper Collection Inspired by the Beauty of Nature
+---
 
-Welcome to our collection of stunning wallpapers that showcase the raw power and beauty of nature. Our wallpaper "A cityscape overtaken by nature" is just one example of how nature can transform the urban landscape into a breathtaking work of art.
 
-## About Our Collection
+# Urban Jungle: A Wallpaper to Inspire Your Creativity
 
-Our collection features a wide variety of high-quality wallpapers that capture the essence of nature in all its forms. From majestic mountains to serene beaches, from lush forests to vibrant gardens, our wallpapers are designed to bring the beauty of nature into your home or office.
+Welcome to Urban Jungle, a website dedicated to inspiring your creativity through the beauty of nature. Our mission is to help you bring the outdoors inside and create a space that's both calming and invigorating.
 
-All of our wallpapers are carefully curated to ensure that they meet the highest standards of quality and design. We work with some of the most talented artists and photographers in the industry to bring you wallpapers that are both beautiful and inspiring.
+Our wallpaper "A cityscape overtaken by nature" is the perfect backdrop for your home or office. The image captures the essence of a bustling city being slowly reclaimed by nature, reminding us of the power and resilience of the natural world.
+
+## Why Choose Urban Jungle Wallpaper?
+
+- Unique and eye-catching design
+- High-quality resolution for clear and crisp imagery
+- Easy to install and remove
+- Durable and long-lasting
+- Eco-friendly materials
 
 ## User Stories
 
 Here are some stories from our satisfied customers:
 
-> "I was looking for a wallpaper that would add some color and life to my living room, and I found the perfect one in this collection. The image of the city being taken over by nature is so powerful and inspiring. Every time I look at it, I feel like I'm transported to another world." - Sarah T.
+> "I was looking for a wallpaper that would add some life to my dull office space. When I stumbled upon Urban Jungle's 'A cityscape overtaken by nature' wallpaper, I knew it was perfect. It's been a conversation starter ever since!" - Jane, Marketing Executive
 
-> "I recently redecorated my bedroom, and I wanted to create a peaceful and calming atmosphere. I chose a wallpaper from this collection that features a tranquil forest scene, and it's made such a difference. I feel more relaxed and centered when I'm in my room now." - David S.
+> "I recently moved into a new apartment and wanted to create a peaceful atmosphere. Urban Jungle's wallpaper helped me achieve just that. Every time I look at it, I feel like I'm surrounded by nature." - Tom, Freelance Writer
 
 ## References
 
-If you're interested in learning more about the benefits of incorporating nature into your home or office decor, check out these resources:
+Check out these resources to learn more about the benefits of incorporating nature into your indoor spaces:
 
--   [The Benefits of Biophilic Design](#benefits-of-biophilic-design)
--   [How to Create a Nature-Inspired Home](#nature-inspired-home)
-
-### Benefits of Biophilic Design
-
-Biophilic design is a concept that emphasizes the importance of connecting with nature in our built environments. Studies have shown that incorporating natural elements into our homes and workplaces can have a range of positive effects on our health and well-being, including:
-
--   Reduced stress levels
--   Increased productivity
--   Improved mood and mental clarity
--   Better air quality
-
-### Nature-Inspired Home
-
-If you're interested in creating a home that's inspired by nature, there are many ways to do so. Here are some ideas to get you started:
-
--   Use natural materials like wood, stone, and bamboo in your decor
--   Incorporate plants and flowers into your space
--   Choose colors that evoke the natural world, such as greens, blues, and earth tones
--   Open up your space to natural light and fresh air
--   Use natural scents like lavender or eucalyptus to create a calming atmosphere
+- [The Biophilic Office Project](#)
+- [The Benefits of Biophilic Design](#)
+- [How Plants Can Improve Your Work Environment](#)
 
 ## Contact Us
 
-If you have any questions about our wallpaper collection or would like to place an order, please don't hesitate to contact us. We're always happy to help!
+Have questions about our wallpaper or want to share your own story? We'd love to hear from you! Get in touch with us at [contact@urbanjungle.com](mailto:contact@urbanjungle.com) or follow us on [Instagram](#) for more inspiration.
 
-You can reach us by email at [info@naturetakesover.com](mailto:info@naturetakesover.com) or by phone at (555) 123-4567.
 
-Thank you for visiting "Nature Takes Over"!
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Embrace Nature's Beauty: Transform Your Space with Urban Jungle
+
+Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to embrace nature's beauty and create a space that nurtures your mind, body, and soul.
+
+Our captivating background image, "A cityscape overtaken by nature," serves as a reminder of the power and resilience of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for bringing the outdoors inside.
+
+## Why Choose Urban Jungle?
+
+- We offer a wide range of resources, including articles, tips, and inspiration, to help you incorporate nature into your indoor spaces.
+- Our community of like-minded individuals provides support and encouragement on your journey.
+- Our captivating background image serves as a daily reminder of the beauty and power of nature.
+
+## User Stories
+
+Here are some stories from our community members:
+
+> "I used to feel so drained and uninspired in my office, but since I started incorporating plants and natural elements into my workspace, I've noticed a huge difference in my productivity and creativity." - Sarah, Graphic Designer
+
+> "As someone who lives in a small apartment in the city, I never thought I could have my own little slice of nature. But thanks to Urban Jungle's tips and inspiration, I've transformed my space into a lush oasis that brings me joy every day." - Alex, Freelance Writer
+
+## Resources
+
+Check out these resources to learn more about the benefits of incorporating nature into your indoor spaces:
+
+- [The Biophilic Office Project](#)
+- [The Benefits of Biophilic Design](#)
+- [How Plants Can Improve Your Work Environment](#)
+
+## Connect with Us
+
+Join our community of nature lovers and stay up-to-date on the latest tips and inspiration for transforming your space. Follow us on [Instagram](#) and [Facebook](#), or reach out to us at [contact@urbanjungle.com](mailto:contact@urbanjungle.com).
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Urban Jungle: Bringing Nature Indoors
+
+Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to embrace nature's beauty and create a space that nurtures your mind, body, and soul.
+
+Our captivating background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for bringing the outdoors inside.
+
+## Why Choose Urban Jungle?
+
+- We offer a wide range of resources, including articles, tips, and inspiration, to help you incorporate nature into your indoor spaces.
+- Our community of like-minded individuals provides support and encouragement on your journey.
+- Our captivating background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
+
+## User Stories
+
+Here are some stories from our community members:
+
+> "As someone who lives in a small apartment in the city, I never thought I could have my own little slice of nature. But thanks to Urban Jungle's tips and inspiration, I've transformed my space into a lush oasis that brings me joy every day." - Alex, Freelance Writer
+
+> "I used to feel so drained and uninspired in my office, but since I started incorporating plants and natural elements into my workspace, I've noticed a huge difference in my productivity and creativity." - Sarah, Graphic Designer
+
+## Resources
+
+Check out these resources to learn more about the benefits of incorporating nature into your indoor spaces:
+
+- [The Biophilic Office Project](#)
+- [The Benefits of Biophilic Design](#)
+- [How Plants Can Improve Your Work Environment](#)
+
+## Connect with Us
+
+Join our community of nature lovers and stay up-to-date on the latest tips and inspiration for transforming your space. Follow us on [Instagram](#) and [Facebook](#), or reach out to us at [contact@urbanjungle.com](mailto:contact@urbanjungle.com).
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Urban Jungle: Bringing the Outdoors In
+
+Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to bring the outdoors in and create a space that nurtures your mind, body, and soul.
+
+Our captivating background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for incorporating nature into your indoor spaces.
+
+## Why Choose Urban Jungle?
+
+- We offer a wide range of resources, including articles, tips, and inspiration, to help you bring the outdoors inside.
+- Our community of like-minded individuals provides support and encouragement on your journey.
+- Our captivating background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
+
+## User Stories
+
+Here are some stories from our community members:
+
+> "As someone who lives in a small apartment in the city, I never thought I could have my own little slice of nature. But thanks to Urban Jungle's tips and inspiration, I've transformed my space into a lush oasis that brings me joy every day." - Alex, Freelance Writer
+
+> "I used to feel so drained and uninspired in my office, but since I started incorporating plants and natural elements into my workspace, I've noticed a huge difference in my productivity and creativity." - Sarah, Graphic Designer
+
+## Resources
+
+Check out these resources to learn more about the benefits of incorporating nature into your indoor spaces:
+
+- [The Biophilic Office Project](#)
+- [The Benefits of Biophilic Design](#)
+- [How Plants Can Improve Your Work Environment](#)
+
+## Connect with Us
+
+Join our community of nature lovers and stay up-to-date on the latest tips and inspiration for bringing the outdoors in. Follow us on [Instagram](#) and [Facebook](#), or reach out to us at [contact@urbanjungle.com](mailto:contact@urbanjungle.com).
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Poppins
+- Dancing Script
+- Inter
+- Montserrat
+- Roboto
+- Playfair Display
+- Raleway
+- Exo 2
+- Futura
+- Barlow Condensed
+- IBM Plex Sans
+- Orbitron
+- Open Sans
+- Alegreya
+- Great Vibes
+- Lobster
+- Lato
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins.
+
+-->

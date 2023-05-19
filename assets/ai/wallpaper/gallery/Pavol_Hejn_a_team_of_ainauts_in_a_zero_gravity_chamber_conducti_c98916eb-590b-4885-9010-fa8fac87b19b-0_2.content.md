@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
+"A team of Ainautes in a zero-gravity chamber conducting experiments on the effects of AI on the human body."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,31 +14,31 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AInauts Experimenting with AI Effects on Human Body in Zero-Gravity Chamber
+# AI Zero-G Human Experiments
 
-Explore the exciting world of artificial intelligence and its effects on the human body through our team of AInauts conducting experiments in a zero-gravity chamber.
+Explore the exciting world of artificial intelligence and its effects on the human body through our team of Ainautes conducting experiments in a zero-gravity chamber.
 
-## What is AInauts?
+## What is Ainautes?
 
-AInauts are a group of scientists, researchers, and engineers who specialize in exploring the capabilities and limitations of artificial intelligence. They conduct experiments to understand how AI can impact the human body and improve our lives.
+Ainautes are a group of scientists, researchers, and engineers who specialize in exploring the capabilities and limitations of artificial intelligence. They conduct experiments to understand how AI can impact the human body and improve our lives.
 
 ## The Zero-Gravity Chamber
 
-Our team of AInauts conducts their experiments in a specially designed zero-gravity chamber. This allows them to study the effects of AI on the human body in a controlled environment, free from the influence of gravity.
+Our team of Ainautes conducts their experiments in a specially designed zero-gravity chamber. This allows them to study the effects of AI on the human body in a controlled environment, free from the influence of gravity.
 
-> "The zero-gravity chamber provides us with a unique opportunity to explore the effects of AI on the human body without any external factors influencing our results." - Dr. Jane Smith, Lead AInaut
+> "The zero-gravity chamber provides us with a unique opportunity to explore the effects of AI on the human body without any external factors influencing our results." - Dr. Jane Smith, Lead Ainaute
 
 ## Our Experiments
 
-Our team of AInauts is currently conducting a series of experiments to explore the effects of AI on the human body. These experiments include:
+Our team of Ainautes is currently conducting a series of experiments to explore the effects of AI on the human body. These experiments include:
 
-- Testing the impact of AI on cognitive function
-- Studying the effects of AI on physical performance
-- Investigating the potential benefits of AI in healthcare
+-   Testing the impact of AI on cognitive function
+-   Studying the effects of AI on physical performance
+-   Investigating the potential benefits of AI in healthcare
 
 ## Join Our Community
 
-Stay up-to-date with the latest developments in AI research and join our community of AInaut enthusiasts. Sign up for our newsletter and be the first to know about our latest experiments and discoveries.
+Stay up-to-date with the latest developments in AI research and join our community of Ainaute enthusiasts. Sign up for our newsletter and be the first to know about our latest experiments and discoveries.
 
 ---
 

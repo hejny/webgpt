@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"AInauts and their AI companions working together in a massive, zero-gravity space station."
+"Ainauts and their AI companions working together in a massive, zero-gravity space station."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,24 +14,24 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to AInauts!
+# Welcome to Ainauts!
 
-Explore the futuristic world of AInauts, where humans and AI companions work together in a massive, zero-gravity space station. Our wallpaper captures the essence of this exciting universe, showcasing the incredible bond between humans and their artificial intelligence counterparts.
+Explore the futuristic world of Ainauts, where humans and AI companions work together in a massive, zero-gravity space station. Our wallpaper captures the essence of this exciting universe, showcasing the incredible bond between humans and their artificial intelligence counterparts.
 
-## About AInauts
+## About Ainauts
 
-AInauts is a cutting-edge technology company that specializes in creating advanced AI systems for space exploration. Our mission is to push the boundaries of what is possible in space travel by leveraging the power of artificial intelligence.
+Ainauts is a cutting-edge technology company that specializes in creating advanced AI systems for space exploration. Our mission is to push the boundaries of what is possible in space travel by leveraging the power of artificial intelligence.
 
 ## Our Zero-Gravity Space Station
 
-Our zero-gravity space station is the heart of our operations. It's where our AInauts and their AI companions live and work together, conducting groundbreaking research and exploring the furthest reaches of the galaxy.
+Our zero-gravity space station is the heart of our operations. It's where our Ainauts and their AI companions live and work together, conducting groundbreaking research and exploring the furthest reaches of the galaxy.
 
-> "Working in zero-gravity is an incredibly unique experience. It allows us to do things that would be impossible on Earth, and it really showcases the incredible capabilities of our AI companions." - Dr. Sarah Johnson, Chief Scientist at AInauts
+> "Working in zero-gravity is an incredibly unique experience. It allows us to do things that would be impossible on Earth, and it really showcases the incredible capabilities of our AI companions." - Dr. Sarah Johnson, Chief Scientist at Ainauts
 
-## Join the AInauts Community
+## Join the Ainauts Community
 
-Are you interested in learning more about AInauts and our mission to explore the cosmos with AI? Join our community today! You'll get access to exclusive content, behind-the-scenes looks at our operations, and the chance to connect with other space enthusiasts from around the world.
+Are you interested in learning more about Ainauts and our mission to explore the cosmos with AI? Join our community today! You'll get access to exclusive content, behind-the-scenes looks at our operations, and the chance to connect with other space enthusiasts from around the world.
 
 ---
 
-Experience the wonder of AInauts and their AI companions with our stunning wallpaper. Download it today and bring a piece of the future into your life.
+Experience the wonder of Ainauts and their AI companions with our stunning wallpaper. Download it today and bring a piece of the future into your life.

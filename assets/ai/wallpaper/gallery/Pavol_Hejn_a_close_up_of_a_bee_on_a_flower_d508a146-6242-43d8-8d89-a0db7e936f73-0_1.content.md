@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Lato-->
 
-# Bee-Friendly Gardening: Tips and Tricks
+# Bee Gardening Tips.
 
 Welcome to our website dedicated to bee-friendly gardening! Here, you'll find everything you need to know about creating a beautiful garden that not only looks great but also supports the local bee population. Our wallpaper, featuring a close-up of a bee on a flower, is just a small glimpse of the beauty and importance of these amazing creatures.
 

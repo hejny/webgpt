@@ -1,55 +1,88 @@
+<!--font:Poppins-->
+
+# Exploration City Background
+
+Step into a world of tomorrow with our stunning background featuring a futuristic cityscape. The graphic depicts a bustling metropolis in a solid color such as orange or green, adding a touch of modernity to any device.
+
+Our high-resolution image ensures that the cityscape remains crisp and clear no matter what size device you are using. Whether you're looking to update your desktop, tablet, or phone, this background is sure to impress.
+
+Immerse yourself in the future by downloading our background. Simply click the "Download" button below and save the image to your device. Let our futuristic cityscape transport you to a world beyond today.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a single graphic of a futuristic cityscape, in a solid color such as orange or green."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
 
-<!--font:Montserrat-->
+---
+
 
 # Futuristic Cityscape Wallpaper
 
-Welcome to our collection of futuristic cityscape wallpapers! Our website features a stunning wallpaper with a single graphic of a futuristic cityscape, available in solid colors such as orange or green. This wallpaper is perfect for those who love the look of modern, sleek cities and want to bring that aesthetic into their home or office.
+Welcome to our website featuring a stunning wallpaper of a futuristic cityscape! The wallpaper features a single graphic of a cityscape in a solid color such as orange or green. This wallpaper is perfect for anyone who loves futuristic designs and wants to add a touch of modernity to their desktop or mobile device.
 
-## Why Choose Our Wallpaper?
+Our wallpaper is available in high resolution, ensuring that the image remains crisp and clear no matter what size device you are using. Whether you're looking for a new wallpaper for your computer, tablet, or phone, this futuristic cityscape design is sure to impress.
 
-Our wallpaper is not only visually appealing but also high-quality and durable. Made from top-grade materials, it is easy to install and maintain. The solid color options allow for versatility in design, making it easy to match with any decor style. Plus, the futuristic cityscape graphic adds a unique touch to any room.
+To download the wallpaper, simply click the "Download" button below and save the image to your device. We hope you enjoy using our wallpaper and adding a touch of modernity to your digital life!
 
-## User Stories
 
-Here are some examples of how our customers have used our wallpaper:
+---
 
--   "I installed this wallpaper in my home office and it instantly transformed the space. It's so modern and inspiring!"
--   "I wanted to create a futuristic theme for my son's bedroom, and this wallpaper was the perfect addition."
--   "As an interior designer, I'm always on the lookout for unique wall coverings. This wallpaper exceeded my expectations."
 
-## References
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
 
-Don't just take our word for it - check out what our satisfied customers have to say:
 
-> "The quality of this wallpaper is amazing. It's so easy to clean and has held up well over time." - Jane D.
+---
 
-> "I love the boldness of the graphic on this wallpaper. It really makes a statement in my living room." - Mike S.
 
-> "I was hesitant to try a solid color wallpaper, but the cityscape graphic adds just enough interest to make it work." - Sarah T.
+# Explore the Future with our Futuristic Cityscape Background
 
-## Contact Us
+Step into a world of tomorrow with our stunning background featuring a futuristic cityscape. The graphic depicts a bustling metropolis in a solid color such as orange or green, adding a touch of modernity to any device.
 
-If you have any questions about our wallpaper or would like to place an order, please don't hesitate to contact us. We're here to help!
+Our high-resolution image ensures that the cityscape remains crisp and clear no matter what size device you are using. Whether you're looking to update your desktop, tablet, or phone, this background is sure to impress.
 
-Phone: 555-1234  
-Email: info@futuristicwallpaper.com  
-Address: 123 Main St, Anytown USA
+Immerse yourself in the future by downloading our background. Simply click the "Download" button below and save the image to your device. Let our futuristic cityscape transport you to a world beyond today.
 
-Thank you for considering our futuristic cityscape wallpaper. We can't wait to see how it transforms your space!
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Inter
+- Open Sans
+- Cormorant Garamond
+- Poppins
+- Playfair Display
+- Cinzel Decorative
+- Montserrat
+- Barlow Condensed
+- Lobster
+- Creepster
+- Dancing Script
+- Alegreya
+- Raleway
+- Lato
+- Roboto
+- Great Vibes
+- Orbitron
+- Exo 2
+- IBM Plex Sans
+- Cabin
+- Futura
+- Cinzel
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

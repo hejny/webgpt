@@ -1,60 +1,125 @@
+<!--font:Open Sans-->
+
+# Dreamlike Surrealist Decor
+
+Add a touch of surrealism to your living space with our collection of decor inspired by the surrealist art movement. Featuring floating objects such as gears, cogs, and computer parts against a background of muted colors, our pieces are perfect for sparking creativity and imagination.
+
+Our collection offers a variety of options to suit your style and needs, from tapestries to throw pillows. Each item is made from high-quality materials, designed to last and elevate your space.
+
+Whether you're looking to create an accent wall or add unique pieces to your home office, our surrealistic decor will transform any room into a dreamlike world.
+
+Order now and let your imagination take flight with our collection of surrealistic decor.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Surrealist-Inspired Wallpaper for Your Creative Space
+
+Transform your room into a dreamlike world with our surrealistic wallpaper. Featuring floating objects such as gears, cogs, and computer parts against a background of muted colors, this wallpaper will add a touch of whimsy to any space.
+
+Whether you're looking to spruce up your home office or create a unique accent wall in your living room, our wallpaper is the perfect choice. Made from high-quality materials, it's easy to install and will last for years to come.
+
+So why wait? Order now and let your imagination take flight with our surrealistic wallpaper!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Elevate Your Space with Surrealist-Inspired Decor
+
+Introduce a touch of surrealism to your living space with our latest decor offering. Our collection features floating objects such as gears, cogs, and computer parts against a background of muted colors, inspired by the surrealist art movement.
+
+Whether you're looking to create an accent wall or add a unique piece to your home office, our decor pieces are perfect for sparking creativity and imagination. Made from high-quality materials, each item is designed to last and elevate your space.
+
+From tapestries to throw pillows, our collection offers a variety of options to suit your style and needs. Order now and bring a touch of whimsy to your home with our surrealistic decor.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Surrealist-Inspired Decor for Your Creative Space
+
+Transform your living space into a dreamlike world with our collection of surrealistic decor. Our pieces feature floating objects such as gears, cogs, and computer parts against a background of muted colors, inspired by the surrealist art movement.
+
+Our decor items are perfect for adding a touch of whimsy to any room in your home. Whether you're looking to create an accent wall or add unique pieces to your home office, our collection offers a variety of options to suit your style and needs.
+
+Made from high-quality materials, each item is designed to last and elevate your space. From tapestries to throw pillows, our collection offers something for everyone.
+
+Order now and let your imagination take flight with our surrealistic decor.
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Surrealist Decor for Your Dreamlike Space
+
+Add a touch of surrealism to your living space with our collection of decor inspired by the surrealist art movement. Featuring floating objects such as gears, cogs, and computer parts against a background of muted colors, our pieces are perfect for sparking creativity and imagination.
+
+Our collection offers a variety of options to suit your style and needs, from tapestries to throw pillows. Each item is made from high-quality materials, designed to last and elevate your space.
+
+Whether you're looking to create an accent wall or add unique pieces to your home office, our surrealistic decor will transform any room into a dreamlike world.
+
+Order now and let your imagination take flight with our collection of surrealistic decor.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Orbitron
+- Roboto
+- Lobster
+- Raleway
+- Open Sans
+- Great Vibes
+- Lato
+- Playfair Display
+- Inter
+- Alegreya
+- Poppins
+- Barlow Condensed
+- Montserrat
+- Exo 2
+- IBM Plex Sans
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
 -->
-
-<!--font:Poppins-->
-
-# Surrealist Dreamscape Wallpaper for the Bold and Creative
-
-Transform your space into a whimsical dreamscape with our surrealist-inspired wallpaper. Featuring floating objects such as gears, cogs, and computer parts against a background of muted colors, this wallpaper is perfect for those who want to add a touch of creativity and uniqueness to their home or office.
-
-## Features
-- High-quality, durable wallpaper material that is easy to install and remove
-- Unique design inspired by surrealism and steampunk aesthetics
-- Muted color palette that complements a variety of decor styles
-- Available in custom sizes to fit any wall
-
-## User Stories
-"I've always been drawn to surrealism and wanted to incorporate it into my home decor. This wallpaper was the perfect way to do that and add a unique touch to my living room." - Sarah, artist and homeowner
-
-"As an engineer, I love the combination of mechanical parts and artistic expression in this wallpaper. It's the perfect addition to my home office." - John, engineer and homeowner
-
-## Installation Guide
-1. Measure the wall where you want to install the wallpaper and order the appropriate size.
-2. Clean the wall surface thoroughly to ensure proper adhesion.
-3. Apply wallpaper adhesive to the back of the wallpaper according to the manufacturer's instructions.
-4. Carefully align the wallpaper with the wall and smooth out any air bubbles or wrinkles.
-5. Trim any excess wallpaper along the edges using a sharp knife or scissors.
-
-For more detailed installation instructions, please refer to our [installation guide](#installation-guide).
-
-## References
-- Check out our [gallery](#gallery) for inspiration on how to style your new wallpaper.
-- Read our [FAQs](#faqs) for answers to common questions about our products and services.
-
-## Contact Us
-Have a question or need help with your order? Contact us at [support@dreamscapewallpaper.com](mailto:support@dreamscapewallpaper.com) or call us at 1-800-555-1234.
-
-## FAQs
-### How do I clean the wallpaper?
-We recommend using a soft, damp cloth to gently wipe down the wallpaper. Avoid using abrasive cleaners or scrubbing too hard, as this can damage the wallpaper.
-
-### Can I order a custom size?
-Yes, we offer custom sizes for our wallpaper. Please contact us with your wall measurements and we will provide a quote.
-
-### Is the wallpaper easy to remove?
-Yes, our wallpaper is designed to be easily removable without damaging the wall surface. Simply peel off the wallpaper from one corner and slowly pull it off the wall.

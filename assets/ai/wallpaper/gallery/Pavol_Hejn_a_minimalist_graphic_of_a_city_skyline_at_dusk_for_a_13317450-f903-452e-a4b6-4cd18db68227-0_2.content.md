@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# [Real Estate or Architecture Website Name]
+# Property Site
 
 Welcome to our website, where we showcase the best properties and architecture in the city. Our goal is to help you find your dream home or inspire you with stunning designs.
 

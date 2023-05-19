@@ -1,17 +1,66 @@
+<!--font:Poppins-->
+
+# Ainautes and AI World Welcome
+
+Experience a futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure. Our wallpaper showcases the seamless collaboration between humans and technology, resulting in a harmonious and efficient society.
+
+Explore our website to learn more about the innovative technologies and groundbreaking projects that are shaping the future. Join us on this journey towards a better tomorrow, where human potential and artificial intelligence combine to achieve unprecedented heights.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
-"A futuristic cityscape where AInauts and AI work together to create massive, sustainable structures and infrastructure."
+"A futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Welcome to the World of Ainautes and AI
+
+Experience a futuristic cityscape where Ainautes and AI work together to create massive, sustainable structures and infrastructure. Our wallpaper showcases the seamless collaboration between humans and technology, resulting in a harmonious and efficient society.
+
+Explore our website to learn more about the innovative technologies and groundbreaking projects that are shaping the future. Join us on this journey towards a better tomorrow, where human potential and artificial intelligence combine to achieve unprecedented heights.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- Lobster
+- Open Sans
+- Cinzel Decorative
+- Roboto
+- Exo 2
+- Cabin
+- Futura
+- Raleway
+- Alegreya
+- Orbitron
+- Dancing Script
+- Great Vibes
+- Barlow Condensed
+- IBM Plex Sans
+- Cinzel
+- Playfair Display
+- Inter
+- Creepster
+- Poppins
+- Cormorant Garamond
+- Montserrat
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Inter.-->
-
-# Welcome to the Future of Cityscapes
-
-Explore a world where AInauts and AI work together to create massive, sustainable structures and infrastructure. Our wallpaper showcases the cutting-edge technology and innovative design that make this futuristic cityscape possible.
-
-Immerse yourself in a world where creativity and technology intersect to build a better future. With our high-quality wallpaper, you can bring this vision of the future into your own home or workspace.
-
-Join us on a journey to explore the possibilities of tomorrow's cities. Download our wallpaper today and experience the excitement of a world where humans and machines collaborate to build something truly amazing.

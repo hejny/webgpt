@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our Yoga and Meditation Website
+# Yoga & Meditation Welcome
 
 We are thrilled to offer you a peaceful and serene online space for your yoga and meditation practice. Our website is designed to help you find inner peace and balance through various practices and techniques.
 

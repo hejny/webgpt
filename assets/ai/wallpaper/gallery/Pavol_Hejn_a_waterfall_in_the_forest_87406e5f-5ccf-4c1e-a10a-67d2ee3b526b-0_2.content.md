@@ -1,31 +1,85 @@
+<!--font:Poppins-->
+
+# Forest Waterfall
+
+Welcome to our website featuring the stunning "Forest Waterfall" wallpaper. This breathtaking image captures the beauty of a cascading waterfall surrounded by lush greenery in a serene forest setting.
+
+## About the Wallpaper
+
+Our Forest Waterfall wallpaper is perfect for nature lovers and those seeking a peaceful escape. The high-quality image features vibrant colors and crisp details that make you feel like you're standing right in front of the waterfall.
+
+## Using the Wallpaper
+
+To use this wallpaper, simply click the download button below and save it to your device. You can then set it as your desktop background or use it as a screensaver to bring a touch of nature to your daily routine.
+
+## Share Your Experience
+
+We would love to see how you are using our Forest Waterfall wallpaper! Feel free to share your experience with us on social media using the hashtag #ForestWaterfall. Don't forget to tag us so we can admire your beautiful setup!
+
+Thank you for choosing our Forest Waterfall wallpaper. We hope it brings you joy and tranquility every time you see it.
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A waterfall in the forest"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Forest Waterfall
+
+Welcome to our website featuring the stunning "Forest Waterfall" wallpaper. This breathtaking image captures the beauty of a cascading waterfall surrounded by lush greenery in a serene forest setting.
+
+## About the Wallpaper
+
+Our Forest Waterfall wallpaper is perfect for nature lovers and those seeking a peaceful escape. The high-quality image features vibrant colors and crisp details that make you feel like you're standing right in front of the waterfall.
+
+## Using the Wallpaper
+
+To use this wallpaper, simply click the download button below and save it to your device. You can then set it as your desktop background or use it as a screensaver to bring a touch of nature to your daily routine.
+
+## Share Your Experience
+
+We would love to see how you are using our Forest Waterfall wallpaper! Feel free to share your experience with us on social media using the hashtag #ForestWaterfall. Don't forget to tag us so we can admire your beautiful setup!
+
+Thank you for choosing our Forest Waterfall wallpaper. We hope it brings you joy and tranquility every time you see it.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Lato
+- IBM Plex Sans
+- Exo 2
+- Alegreya
+- Futura
+- Montserrat
+- Inter
+- Raleway
+- Lobster
+- Barlow Condensed
+- Great Vibes
+- Dancing Script
+- Roboto
+- Playfair Display
+- Poppins
+- Open Sans
+- Orbitron
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Open Sans-->
-
-# Forest Waterfall Wallpaper
-
-Welcome to our website featuring a stunning wallpaper of a waterfall in the forest. This high-quality image captures the beauty and tranquility of nature, making it the perfect backdrop for your desktop or mobile device.
-
-## Download Options
-
-You can download this wallpaper in various resolutions to fit your screen size. Simply click on the links below to start the download:
-
--   [1920x1080](link-to-download)
--   [1280x720](link-to-download)
--   [640x1136](link-to-download)
-
-## About the Location
-
-The waterfall in the wallpaper is located in the heart of a lush forest, surrounded by tall trees and foliage. The sound of water cascading down the rocks creates a soothing ambiance that can help you relax and unwind.
-
-## How to Use the Wallpaper
-
-To use this wallpaper as your background, simply download the appropriate resolution for your device and set it as your wallpaper. You can also share this wallpaper with your friends and family by sharing the link to this page.
-
-Thank you for visiting our website and we hope you enjoy this beautiful Forest Waterfall Wallpaper!

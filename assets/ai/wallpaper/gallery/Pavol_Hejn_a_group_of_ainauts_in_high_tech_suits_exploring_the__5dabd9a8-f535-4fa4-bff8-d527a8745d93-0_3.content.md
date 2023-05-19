@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance."
+"A group of Ainautes in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,13 +18,13 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Exploring the Unknown: A Journey to the Desert Planet
+# Journey to a Desert Planet.
 
-Welcome to our website dedicated to all things related to space exploration and adventure! Our goal is to provide you with the latest news, updates, and stories about the wonders of the universe. 
+Welcome to our website dedicated to all things related to space exploration and adventure! Our goal is to provide you with the latest news, updates, and stories about the wonders of the universe.
 
 ## The Wallpaper
 
-Our homepage features a stunning wallpaper that captures the spirit of exploration and discovery. It depicts a group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. This image represents the excitement and danger of space travel, as well as the incredible technology that makes it possible.
+Our homepage features a stunning wallpaper that captures the spirit of exploration and discovery. It depicts a group of Ainautes in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. This image represents the excitement and danger of space travel, as well as the incredible technology that makes it possible.
 
 ## About Us
 
@@ -42,12 +42,12 @@ We love hearing from our readers and learning about their experiences with space
 
 If you're interested in learning more about space exploration, we recommend checking out these resources:
 
-- NASA's website: #nasa
-- Space.com: #spacecom
-- Astronomy magazine: #astronomy
+-   NASA's website: #nasa
+-   Space.com: #spacecom
+-   Astronomy magazine: #astronomy
 
 ## Contact Us
 
-We would love to hear from you! If you have any questions, comments, or suggestions, please feel free to contact us at [email protected] or follow us on Twitter at @explorersunite. 
+We would love to hear from you! If you have any questions, comments, or suggestions, please feel free to contact us at [email protected] or follow us on Twitter at @explorersunite.
 
 Thank you for visiting our website, and we hope you'll join us on our journey to the stars!

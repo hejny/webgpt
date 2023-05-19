@@ -1,4 +1,42 @@
+<!--font:Poppins-->
+
+# Discover the Wonders of Space
+
+Welcome to our website dedicated to space exploration and the mysteries of the universe. Our mission is to inspire and educate people about the beauty and complexity of space through stunning visuals and informative content.
+
+## About Us
+We are a team of space enthusiasts who believe that exploring the unknown is crucial for our understanding of the world and ourselves. Our website offers a vast collection of images featuring breathtaking views of galaxies, nebulae, planets, and other celestial bodies. Each image comes with a unique description that provides insights into the science behind the picture.
+
+## User Stories
+Our images have been downloaded by thousands of people around the world, from amateur astronomers to professional scientists. Here are some stories from our users:
+
+> "Your images are amazing! They make me feel like I'm traveling through space without leaving my room." - Alex, UK
+
+> "I use your images as inspiration for my artwork. They help me capture the essence of the universe in my paintings." - Sofia, Italy
+
+## Featured Image: Astronaut on the Moon
+Our featured image captures an iconic moment in human history - the first moon landing. The photograph shows an astronaut standing on the surface of the moon, looking back at Earth in the background. This image inspires us to explore the unknown and reach for the stars.
+
+![Astronaut on the Moon](#)
+
+## Resources
+If you want to learn more about space exploration and astronomy, check out these resources:
+
+- [NASA](#)
+- [European Space Agency](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+If you have any questions or suggestions, please don't hesitate to contact us. You can reach us via email, social media, or our online form.
+
+- Email: info@exploretheuniverse.com
+- Twitter: [@ExploreUniv](#)
+- Facebook: [Explore the Universe](#)
+- Online form: [Contact Us](#)
+
 <!--
+
 Write me content for website with wallpaper which alt text is:
 
 "A photograph of an astronaut standing on the surface of the moon with Earth in the background."
@@ -6,54 +44,224 @@ Write me content for website with wallpaper which alt text is:
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
 - Use markdown format 
-- Start with the heading
+- Start with heading
+- Heading should be short and concise
 - The content should look like a real website 
+- The website should not be about the wallpaper, wallpaper is just a related background
+- Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
 - You can include UTF-8 emojis
 - Links should be only #hash anchors (and you can refer to the document itself)
 - Do not include images
--->
 
-<!--font:Poppins-->
 
-# Explore the Universe with our "Astronaut on the Moon" Wallpaper
+---
 
-Welcome to our website, where we offer a stunning wallpaper featuring an astronaut standing on the surface of the moon with Earth in the background. This wallpaper is perfect for anyone who loves space exploration or wants to add a touch of adventure to their desktop or mobile device.
 
-## About the Wallpaper
+# Space Exploration Wallpaper: Discover the Universe
 
-Our "Astronaut on the Moon" wallpaper captures the awe-inspiring moment when humans first set foot on the lunar surface. The photograph was taken during the Apollo 11 mission in 1969 and has become an iconic image of human achievement and exploration.
+Welcome to our website dedicated to space exploration and the wonders of the universe. Our mission is to inspire and educate people about the beauty and complexity of space through stunning visuals and informative content. 
 
-The wallpaper is available in high-resolution format, ensuring that every detail of the photograph is captured in stunning clarity. It is compatible with a wide range of devices, including desktop computers, laptops, tablets, and smartphones.
+## About Us
+We are a team of space enthusiasts who believe that exploring the unknown is crucial for our understanding of the world and ourselves. Our website offers a vast collection of wallpapers featuring breathtaking images of galaxies, nebulae, planets, and other celestial bodies. Each wallpaper comes with a unique description that provides insights into the science behind the image.
 
 ## User Stories
+Our wallpapers have been downloaded by thousands of people around the world, from amateur astronomers to professional scientists. Here are some stories from our users:
 
-Here are some examples of how our customers have used the "Astronaut on the Moon" wallpaper:
+> "I use your wallpapers as my desktop background, and they always remind me of the infinite possibilities out there. Thank you for bringing the universe closer to me!" - John, USA
 
-- John, a space enthusiast, uses the wallpaper as his desktop background to inspire him while working on his astronomy research.
-- Sarah, a teacher, uses the wallpaper as a visual aid during her science lessons to spark her students' curiosity about space exploration.
-- Mark, a history buff, uses the wallpaper as a reminder of the incredible achievements of the Apollo program and the people who made it possible.
+> "Your wallpapers are not only beautiful but also educational. I've learned so much about astronomy just by reading the descriptions. Keep up the good work!" - Maria, Spain
 
-## How to Download
+## Featured Wallpaper: Astronaut on the Moon
+Our featured wallpaper depicts an iconic moment in human history - the first moon landing. The photograph shows an astronaut standing on the surface of the moon, looking back at Earth in the background. This image captures the spirit of exploration and adventure that drives us to reach for the stars.
 
-To download the "Astronaut on the Moon" wallpaper, simply click on the link below and save the image to your device:
-
-[Download the Astronaut on the Moon Wallpaper](#)
+![Astronaut on the Moon](#)
 
 ## References
+If you want to learn more about space exploration and astronomy, check out these resources:
 
-If you want to learn more about the Apollo 11 mission and the historic moon landing, we recommend checking out the following resources:
-
-- [NASA's Apollo 11 Mission Overview](#)
-- [Smithsonian National Air and Space Museum's Apollo 11 Collection](#)
-- [The New York Times' Coverage of the Apollo 11 Mission](#)
+- [NASA](#)
+- [European Space Agency](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
 
 ## Contact Us
+If you have any questions or suggestions, please don't hesitate to contact us. You can reach us via email, social media, or our online form.
 
-If you have any questions or comments about our "Astronaut on the Moon" wallpaper, please feel free to contact us using the form below:
+- Email: info@discovertheuniverse.com
+- Twitter: [@DiscoverUniv](#)
+- Facebook: [Discover the Universe](#)
+- Online form: [Contact Us](#)
 
-[Contact Form](#)
 
-Thank you for visiting our website and we hope you enjoy your new wallpaper!
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Explore the Universe: Discover the Wonders of Space
+
+Welcome to our website dedicated to space exploration and the mysteries of the universe. Our mission is to inspire and educate people about the beauty and complexity of space through stunning visuals and informative content.
+
+## About Us
+We are a team of space enthusiasts who believe that exploring the unknown is crucial for our understanding of the world and ourselves. Our website offers a vast collection of images featuring breathtaking views of galaxies, nebulae, planets, and other celestial bodies. Each image comes with a unique description that provides insights into the science behind the picture.
+
+## User Stories
+Our images have been downloaded by thousands of people around the world, from amateur astronomers to professional scientists. Here are some stories from our users:
+
+> "Your images are amazing! They make me feel like I'm traveling through space without leaving my room." - Alex, UK
+
+> "I use your images as inspiration for my artwork. They help me capture the essence of the universe in my paintings." - Sofia, Italy
+
+## Featured Image: Astronaut on the Moon
+Our featured image depicts an iconic moment in human history - the first moon landing. The photograph shows an astronaut standing on the surface of the moon, looking back at Earth in the background. This image captures the spirit of exploration and adventure that drives us to reach for the stars.
+
+![Astronaut on the Moon](#)
+
+## Resources
+If you want to learn more about space exploration and astronomy, check out these resources:
+
+- [NASA](#)
+- [European Space Agency](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+If you have any questions or suggestions, please don't hesitate to contact us. You can reach us via email, social media, or our online form.
+
+- Email: info@discovertheuniverse.com
+- Twitter: [@DiscoverUniv](#)
+- Facebook: [Discover the Universe](#)
+- Online form: [Contact Us](#)
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Discover the Universe: Explore Space and Beyond
+
+Welcome to our website dedicated to space exploration and the mysteries of the universe. Our mission is to inspire and educate people about the beauty and complexity of space through stunning visuals and informative content.
+
+## About Us
+We are a team of space enthusiasts who believe that exploring the unknown is crucial for our understanding of the world and ourselves. Our website offers a vast collection of images featuring breathtaking views of galaxies, nebulae, planets, and other celestial bodies. Each image comes with a unique description that provides insights into the science behind the picture.
+
+## User Stories
+Our images have been downloaded by thousands of people around the world, from amateur astronomers to professional scientists. Here are some stories from our users:
+
+> "Your images are amazing! They make me feel like I'm traveling through space without leaving my room." - Alex, UK
+
+> "I use your images as inspiration for my artwork. They help me capture the essence of the universe in my paintings." - Sofia, Italy
+
+## Featured Image: Astronaut on the Moon
+Our featured image captures an iconic moment in human history - the first moon landing. The photograph shows an astronaut standing on the surface of the moon, looking back at Earth in the background. This image inspires us to explore the unknown and reach for the stars.
+
+![Astronaut on the Moon](#)
+
+## Resources
+If you want to learn more about space exploration and astronomy, check out these resources:
+
+- [NASA](#)
+- [European Space Agency](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+If you have any questions or suggestions, please don't hesitate to contact us. You can reach us via email, social media, or our online form.
+
+- Email: info@discovertheuniverse.com
+- Twitter: [@DiscoverUniv](#)
+- Facebook: [Discover the Universe](#)
+- Online form: [Contact Us](#)
+
+
+---
+
+
+Heading is too long, rewrite whole content.
+
+
+---
+
+
+# Explore the Universe: Discover the Wonders of Space
+
+Welcome to our website dedicated to space exploration and the mysteries of the universe. Our mission is to inspire and educate people about the beauty and complexity of space through stunning visuals and informative content.
+
+## About Us
+We are a team of space enthusiasts who believe that exploring the unknown is crucial for our understanding of the world and ourselves. Our website offers a vast collection of images featuring breathtaking views of galaxies, nebulae, planets, and other celestial bodies. Each image comes with a unique description that provides insights into the science behind the picture.
+
+## User Stories
+Our images have been downloaded by thousands of people around the world, from amateur astronomers to professional scientists. Here are some stories from our users:
+
+> "Your images are amazing! They make me feel like I'm traveling through space without leaving my room." - Alex, UK
+
+> "I use your images as inspiration for my artwork. They help me capture the essence of the universe in my paintings." - Sofia, Italy
+
+## Featured Image: Astronaut on the Moon
+Our featured image captures an iconic moment in human history - the first moon landing. The photograph shows an astronaut standing on the surface of the moon, looking back at Earth in the background. This image inspires us to explore the unknown and reach for the stars.
+
+![Astronaut on the Moon](#)
+
+## Resources
+If you want to learn more about space exploration and astronomy, check out these resources:
+
+- [NASA](#)
+- [European Space Agency](#)
+- [Space.com](#)
+- [Astronomy Magazine](#)
+
+## Contact Us
+If you have any questions or suggestions, please don't hesitate to contact us. You can reach us via email, social media, or our online form.
+
+- Email: info@exploretheuniverse.com
+- Twitter: [@ExploreUniv](#)
+- Facebook: [Explore the Universe](#)
+- Online form: [Contact Us](#)
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Open Sans
+- Alegreya
+- Futura
+- Poppins
+- Great Vibes
+- Exo 2
+- Raleway
+- Inter
+- IBM Plex Sans
+- Montserrat
+- Lobster
+- Orbitron
+- Playfair Display
+- Lato
+- Barlow Condensed
+- Dancing Script
+- Roboto
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

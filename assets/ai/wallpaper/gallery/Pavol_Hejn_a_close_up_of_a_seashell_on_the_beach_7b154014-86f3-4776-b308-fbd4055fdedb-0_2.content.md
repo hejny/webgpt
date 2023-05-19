@@ -1,55 +1,78 @@
+<!--font:Poppins-->
+
+# Beachcombing Adventures
+
+Welcome to Beachcombing Adventures, your ultimate guide to finding treasures on the beach! 
+
+![A close-up of a seashell on the beach](seashell.jpg)
+
+Our website is dedicated to helping you discover the beauty and wonder of the seashore. Whether you're an experienced beachcomber or just starting out, we have tips, tricks, and resources to help you make the most of your beachcombing adventures.
+
+Explore our site to learn about different types of seashells, how to identify them, and where to find them. We also have information on other beach treasures like sea glass, driftwood, and fossils.
+
+So grab your sunscreen, hat, and a bucket, and let's go beachcombing!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A close-up of a seashell on the beach"
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+# Beachcombing Adventures
+
+Welcome to Beachcombing Adventures, your ultimate guide to finding treasures on the beach! 
+
+![A close-up of a seashell on the beach](seashell.jpg)
+
+Our website is dedicated to helping you discover the beauty and wonder of the seashore. Whether you're an experienced beachcomber or just starting out, we have tips, tricks, and resources to help you make the most of your beachcombing adventures.
+
+Explore our site to learn about different types of seashells, how to identify them, and where to find them. We also have information on other beach treasures like sea glass, driftwood, and fossils.
+
+So grab your sunscreen, hat, and a bucket, and let's go beachcombing!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Cabin
+- Montserrat
+- Great Vibes
+- Exo 2
+- Alegreya
+- Raleway
+- Futura
+- Lobster
+- Cormorant Garamond
+- Barlow Condensed
+- Creepster
+- IBM Plex Sans
+- Inter
+- Dancing Script
+- Cinzel Decorative
+- Roboto
+- Playfair Display
+- Orbitron
+- Poppins
+- Open Sans
+- Lato
+- Cinzel
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Open Sans-->
-
-# Beach Vibes: A Collection of Seashell Wallpapers
-
-Welcome to Beach Vibes, your go-to destination for stunning seashell wallpapers. Our collection features high-quality images that capture the essence of the beach and its surroundings.
-
-## About Us
-
-At Beach Vibes, we believe that everyone should have access to beautiful and inspiring wallpapers that bring a sense of calm and relaxation to their daily lives. We strive to curate the best selection of seashell wallpapers that not only look great but also evoke feelings of serenity and tranquility.
-
-## Our Collection
-
-Our collection of seashell wallpapers is carefully curated to provide you with a variety of options that suit your style and preferences. From close-up shots of seashells on the beach to panoramic views of the ocean, our collection has something for everyone.
-
-## User Stories
-
-Here are some stories from our happy customers who have used our seashell wallpapers:
-
-> "I love the calming effect that these wallpapers have on me. Whenever I feel stressed or overwhelmed, I just look at my desktop and feel instantly relaxed." - Sarah
-
-> "The quality of the wallpapers is amazing. The colors are so vivid and the details are so sharp. It's like having a piece of the beach right on my computer screen." - John
-
-> "I'm always looking for new wallpapers to spice up my desktop, and Beach Vibes never disappoints. Their collection is always fresh and exciting, and I can't wait to see what they come up with next." - Emily
-
-## References
-
-If you're interested in learning more about seashells and the beach, here are some resources that you might find useful:
-
--   [Seashells of the World](#seashells-of-the-world)
--   [Beaches of the World](#beaches-of-the-world)
--   [National Geographic: Seashells](#national-geographic-seashells)
-
-## Contact Us
-
-If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us at [beachvibes@example.com](mailto:beachvibes@example.com) or follow us on [Twitter](#twitter) for updates and news about our collection.
-
-We hope you enjoy our seashell wallpapers as much as we do. Thank you for visiting Beach Vibes!

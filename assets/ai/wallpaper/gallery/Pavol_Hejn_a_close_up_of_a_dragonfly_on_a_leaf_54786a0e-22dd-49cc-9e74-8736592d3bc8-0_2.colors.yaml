@@ -1,4 +1,10 @@
-version: 7
+version: colorful-1920x1080-16bit-v11
+palette:
+    - '#001111'
+    - '#ffffff'
+    - '#229933'
+    - '#1155aa'
+    - '#ffaa55'
 averageColor: '#2f6652'
 lightestColor: '#ffffff'
 darkestColor: '#001100'

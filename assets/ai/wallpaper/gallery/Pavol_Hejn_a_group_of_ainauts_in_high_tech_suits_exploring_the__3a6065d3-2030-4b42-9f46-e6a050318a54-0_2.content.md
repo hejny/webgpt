@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A group of AInauts in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance."
+"A group of Ainautes in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Space Exploration
 
-Welcome to our website dedicated to exploring the vast expanse of space with the help of artificial intelligence! Our team of AInauts is committed to pushing the boundaries of what's possible and discovering new worlds.
+Welcome to our website dedicated to exploring the vast expanse of space with the help of artificial intelligence! Our team of Ainautes is committed to pushing the boundaries of what's possible and discovering new worlds.
 
 ## About Us
 
@@ -32,23 +32,23 @@ Our mission is to use artificial intelligence to explore space more efficiently 
 
 ## Our Technology
 
-Our AInauts are equipped with high-tech suits that allow them to survive in even the harshest environments. With advanced sensors and communication systems, they can collect data and transmit it back to Earth in real-time.
+Our Ainautes are equipped with high-tech suits that allow them to survive in even the harshest environments. With advanced sensors and communication systems, they can collect data and transmit it back to Earth in real-time.
 
 ## User Stories
 
 Here are some stories from people who have experienced our technology firsthand:
 
-> "I was amazed by how much data our AInauts were able to collect on their mission to a distant planet. Thanks to their advanced technology, we now know more about that planet than ever before." - John, Astrophysicist
+> "I was amazed by how much data our Ainautes were able to collect on their mission to a distant planet. Thanks to their advanced technology, we now know more about that planet than ever before." - John, Astrophysicist
 
-> "The images captured by our AInauts on their mission to a nearby asteroid were breathtaking. It's incredible to see what we can accomplish with the power of AI." - Sarah, Engineer
+> "The images captured by our Ainautes on their mission to a nearby asteroid were breathtaking. It's incredible to see what we can accomplish with the power of AI." - Sarah, Engineer
 
 ## References
 
 If you're interested in learning more about our work, check out these references:
 
-- [AI in Space Exploration: How It Works](#how-it-works)
-- [The Benefits of Using AI in Space Exploration](#benefits)
-- [The Future of Space Exploration with AI](#future)
+-   [AI in Space Exploration: How It Works](#how-it-works)
+-   [The Benefits of Using AI in Space Exploration](#benefits)
+-   [The Future of Space Exploration with AI](#future)
 
 ## Contact Us
 

@@ -1,13 +1,13 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A team of AInauts and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
+"A team of Ainautes and their AI companions piloting a massive spacecraft through the heart of a galaxy, with stars and nebulae all around them."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -18,17 +18,17 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Explore the Cosmos with Our AI-Powered Spaceship
+# AI spaceship explores cosmos
 
-Welcome aboard our state-of-the-art spacecraft, piloted by a team of AInauts and their trusty AI companions. With cutting-edge technology and advanced artificial intelligence, we're able to explore the depths of the galaxy like never before.
+Welcome aboard our state-of-the-art spacecraft, piloted by a team of Ainautes and their trusty AI companions. With cutting-edge technology and advanced artificial intelligence, we're able to explore the depths of the galaxy like never before.
 
 ## Our Mission
 
 Our mission is simple: to discover new worlds, study the mysteries of the universe, and push the boundaries of human knowledge. With our AI-powered spaceship, we're able to travel further and faster than ever before, reaching places that were once thought impossible.
 
-## The AInauts
+## The Ainautes
 
-Our team of AInauts are some of the brightest minds in the field of space exploration. They work tirelessly to ensure that our ship is always running smoothly, and that we're able to gather as much data as possible on our journeys. From analyzing star patterns to studying the composition of distant planets, our AInauts are at the forefront of scientific discovery.
+Our team of Ainautes are some of the brightest minds in the field of space exploration. They work tirelessly to ensure that our ship is always running smoothly, and that we're able to gather as much data as possible on our journeys. From analyzing star patterns to studying the composition of distant planets, our Ainautes are at the forefront of scientific discovery.
 
 ## Our AI Companions
 

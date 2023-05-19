@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# FutureTech: Innovating the World of Technology
+# FutureTech: Innovation
 
 Welcome to FutureTech, where we bring you the latest advancements in technology and innovation. Our mission is to make the world a better place through groundbreaking discoveries and inventions.
 

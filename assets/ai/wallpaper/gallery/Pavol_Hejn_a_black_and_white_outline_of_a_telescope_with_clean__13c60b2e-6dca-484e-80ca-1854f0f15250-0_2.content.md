@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Explore the Universe with Our Telescopes
+# Telescope and the Universe
 
 Looking for a high-quality telescope to explore the stars and galaxies? Look no further than our collection of telescopes. Our black and white outline wallpaper showcases the intricate mechanics of these amazing instruments.
 

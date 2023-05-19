@@ -1,17 +1,74 @@
-<!--
-Write me markdown content of website with wallpaper:
-
-"A futuristic spaceship crewed entirely by AInauts, traveling through the vast expanse of space on a mission of discovery."
-
-The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
--->
-
 <!--font:Poppins-->
 
-# AI-Driven Space Exploration
+# Ainautes: Space Travel
 
-Welcome to our website dedicated to the exciting world of space exploration powered by artificial intelligence. Our team of AInauts is at the forefront of cutting-edge technology, piloting a state-of-the-art spaceship through the endless expanse of the cosmos.
+Welcome to our website where we take you on a journey through space and time. Our wallpaper features a futuristic spaceship crewed entirely by Ainautes, who are dedicated to exploring the vast expanse of the universe.
 
-With our advanced AI systems and unparalleled expertise, we are on a mission of discovery, exploring new frontiers and uncovering the mysteries of the universe. Join us on this incredible journey as we push the boundaries of what's possible and unlock the secrets of the cosmos.
+Join us as we embark on a mission of discovery, traveling through galaxies and encountering new worlds and civilizations. With cutting-edge technology and a passion for exploration, the Ainautes are pushing the boundaries of what we know about the universe.
 
-And while you're here, why not download our stunning wallpaper featuring our futuristic spaceship in all its glory? It's the perfect way to show your support for our mission and stay inspired as we continue to explore the final frontier.
+Explore our website to learn more about our team, our mission, and the incredible discoveries we have made so far. From stunning images of distant planets to in-depth articles on the latest scientific breakthroughs, we have everything you need to satisfy your curiosity about the cosmos.
+
+So come along with us on this incredible journey, and discover the wonders of the universe with the Ainautes.
+
+<!--
+
+Write me markdown content of website with wallpaper:
+
+"A futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery."
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Discover the Universe with Ainautes
+
+Welcome to our website where we take you on a journey through space and time. Our wallpaper features a futuristic spaceship crewed entirely by Ainautes, who are dedicated to exploring the vast expanse of the universe.
+
+Join us as we embark on a mission of discovery, traveling through galaxies and encountering new worlds and civilizations. With cutting-edge technology and a passion for exploration, the Ainautes are pushing the boundaries of what we know about the universe.
+
+Explore our website to learn more about our team, our mission, and the incredible discoveries we have made so far. From stunning images of distant planets to in-depth articles on the latest scientific breakthroughs, we have everything you need to satisfy your curiosity about the cosmos.
+
+So come along with us on this incredible journey, and discover the wonders of the universe with the Ainautes.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Dancing Script
+- Alegreya
+- IBM Plex Sans
+- Montserrat
+- Orbitron
+- Cabin
+- Barlow Condensed
+- Poppins
+- Open Sans
+- Lobster
+- Cormorant Garamond
+- Exo 2
+- Inter
+- Creepster
+- Cinzel
+- Cinzel Decorative
+- Playfair Display
+- Great Vibes
+- Roboto
+- Raleway
+- Futura
+- Lato
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
+-->

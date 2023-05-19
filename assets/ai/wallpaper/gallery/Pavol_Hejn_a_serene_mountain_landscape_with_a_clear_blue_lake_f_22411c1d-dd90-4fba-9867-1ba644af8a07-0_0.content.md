@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Serene Landscapes for Mindful Living
+# Mindful Landscapes.
 
 Welcome to Serene Landscapes, your go-to destination for finding peace and tranquility in your daily life. Our website is dedicated to providing you with the tools and resources you need to lead a more mindful and intentional existence.
 

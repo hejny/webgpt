@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Welcome to Our Otherworldly Landscape
+# Otherworldly Landscape Welcome
 
 Experience a surreal journey through our collection of alien planets and strange creatures. Our wallpapers will transport you to a world beyond your imagination.
 

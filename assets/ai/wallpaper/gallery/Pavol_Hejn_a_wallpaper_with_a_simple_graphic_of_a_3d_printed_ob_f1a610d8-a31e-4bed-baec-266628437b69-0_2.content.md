@@ -1,19 +1,69 @@
+<!--font:Poppins-->
+
+# 3D Printing Made Easy
+
+Welcome to our website, where we make 3D printing accessible and fun for everyone! 
+
+As you browse through our site, you'll notice our sleek wallpaper featuring a simple graphic of a 3D-printed object against a background of geometric shapes in complementary colors. This design perfectly captures the essence of what we do: combining cutting-edge technology with creative design.
+
+Whether you're an experienced maker or just starting out, we offer a wide range of resources to help you explore the world of 3D printing. From tutorials and guides to product reviews and community forums, we've got everything you need to get started on your next project.
+
+So why wait? Start exploring today and see what amazing things you can create with 3D printing!
+
 <!--
+
 Write me markdown content of website with wallpaper:
 
 "A wallpaper with a simple graphic of a 3D-printed object, against a background of geometric shapes in complementary colors."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# 3D Printing Made Easy
+
+Welcome to our website, where we make 3D printing accessible and fun for everyone! 
+
+As you browse through our site, you'll notice our sleek wallpaper featuring a simple graphic of a 3D-printed object against a background of geometric shapes in complementary colors. This design perfectly captures the essence of what we do: combining cutting-edge technology with creative design.
+
+Whether you're an experienced maker or just starting out, we offer a wide range of resources to help you explore the world of 3D printing. From tutorials and guides to product reviews and community forums, we've got everything you need to get started on your next project.
+
+So why wait? Start exploring today and see what amazing things you can create with 3D printing!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Exo 2
+- Orbitron
+- Alegreya
+- Poppins
+- Montserrat
+- Great Vibes
+- Barlow Condensed
+- Lobster
+- IBM Plex Sans
+- Lato
+- Raleway
+- Inter
+- Playfair Display
+- Dancing Script
+- Roboto
+- Open Sans
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Poppins-->
-
-# 3D-Printed Object Wallpaper
-
-Welcome to our website featuring a stunning wallpaper design that showcases a simple graphic of a 3D-printed object. The image is set against a backdrop of vibrant geometric shapes in complementary colors, creating a dynamic and eye-catching display.
-
-This wallpaper is perfect for anyone who appreciates modern design and wants to add a touch of sophistication to their space. Whether you're looking to update your home office, living room, or bedroom, this wallpaper will make a bold statement and elevate the overall aesthetic of any room.
-
-Made with high-quality materials and designed to last, this wallpaper is easy to install and maintain. It's also customizable, so you can choose the size and color scheme that best suits your needs.
-
-Thank you for visiting our website and we hope you enjoy our 3D-printed object wallpaper!

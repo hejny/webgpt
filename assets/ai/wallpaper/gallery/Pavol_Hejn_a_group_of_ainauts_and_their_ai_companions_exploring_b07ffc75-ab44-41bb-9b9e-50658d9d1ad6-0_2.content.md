@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AInauts and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
+"A group of Ainautes and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,13 +14,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Orbitron-->
 
-# AInauts - Exploring the Abandoned Spacecraft
+# Ainautes: Space Exploration
 
-Welcome to AInauts, where we explore the unknown depths of space with our AI companions. Join us on our latest adventure as we venture into a massive abandoned spacecraft.
+Welcome to Ainautes, where we explore the unknown depths of space with our AI companions. Join us on our latest adventure as we venture into a massive abandoned spacecraft.
 
 ## The Mission
 
-Our team of AInauts has been tasked with exploring this mysterious vessel that has been floating in space for ages. Equipped with advanced technology and our trusty AI companions, we are ready to uncover the secrets hidden within.
+Our team of Ainautes has been tasked with exploring this mysterious vessel that has been floating in space for ages. Equipped with advanced technology and our trusty AI companions, we are ready to uncover the secrets hidden within.
 
 ## The Journey
 
@@ -36,4 +36,4 @@ As we explore further, we begin to uncover clues about the ship's past and the f
 
 ## Join the Adventure
 
-Follow along with our journey as we delve deeper into the abandoned spacecraft and uncover its secrets. With our AI companions by our side, there's no telling what we might discover. Stay tuned for updates and insights from our team of AInauts.
+Follow along with our journey as we delve deeper into the abandoned spacecraft and uncover its secrets. With our AI companions by our side, there's no telling what we might discover. Stay tuned for updates and insights from our team of Ainautes.

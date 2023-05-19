@@ -1,55 +1,87 @@
+<!--font:Inter-->
+
+# Binary Code Background
+
+Welcome to our website featuring a sleek and modern design with a repeating pattern of binary code in a simple font and black and white color scheme. Our website is perfect for tech enthusiasts, programmers, gamers, or anyone who appreciates cool designs.
+
+The binary code pattern on our background represents the fundamental language of computers, making it not only stylish but also functional. It adds a touch of personality to your desktop or mobile device while showcasing your love for technology.
+
+Explore our website to discover informative articles, helpful resources, and exciting news about the latest tech trends. Our content is curated by experts in the field, ensuring that you receive accurate and up-to-date information.
+
+So why wait? Download our binary code background and immerse yourself in the world of technology. Join our community of like-minded individuals and stay informed about the latest developments in the tech industry.
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A wallpaper with a repeating pattern of binary code, in a simple font and black and white color scheme."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
 
-<!--font:Montserrat-->
+---
+
 
 # Binary Code Wallpaper
 
-Welcome to our website featuring a stunning wallpaper with a repeating pattern of binary code. This wallpaper is perfect for those who love technology, coding, or just want a unique and eye-catching design for their desktop or mobile device.
+Welcome to our website featuring a unique wallpaper design with a repeating pattern of binary code. The simple font and black and white color scheme create a sleek and modern look that is perfect for any tech enthusiast.
 
-## About the Wallpaper
+Our wallpaper is not only stylish but also functional, as the binary code pattern represents the fundamental language of computers. It's a great way to showcase your love for technology and add a touch of personality to your desktop or mobile device.
 
-The wallpaper features a simple font and black and white color scheme, making it easy on the eyes while still maintaining a sleek and modern look. The binary code pattern adds an element of intrigue and mystery, making it a great conversation starter or focal point for any room.
+Whether you're a programmer, gamer, or just someone who appreciates cool designs, our binary code wallpaper is sure to impress. So why wait? Download it now and give your device a fresh new look!
 
-Whether you're a programmer, tech enthusiast, or simply appreciate the aesthetics of binary code, this wallpaper is sure to impress.
 
-## User Stories
+---
 
-- "I'm a computer science student and I love having this wallpaper on my laptop. It reminds me of why I fell in love with coding in the first place."
-- "As a graphic designer, I'm always looking for unique and interesting patterns to incorporate into my designs. This binary code wallpaper is perfect for adding a touch of tech-inspired style to any project."
-- "I recently redecorated my home office and wanted something that would inspire me and keep me motivated throughout the day. This wallpaper does just that - every time I look at it, I feel energized and ready to tackle whatever comes my way."
 
-## How to Download
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
 
-To download this wallpaper, simply click the link below and save the image to your device. The wallpaper is available in a variety of resolutions to fit any screen size.
 
-[Download Binary Code Wallpaper](#)
+---
 
-## References
 
-If you're interested in learning more about binary code or coding in general, check out these resources:
+# Binary Code Background
 
-- [Codecademy](#)
-- [W3Schools](#)
-- [Stack Overflow](#)
+Welcome to our website featuring a sleek and modern design with a repeating pattern of binary code in a simple font and black and white color scheme. Our website is perfect for tech enthusiasts, programmers, gamers, or anyone who appreciates cool designs.
 
-## Contact Us
+The binary code pattern on our background represents the fundamental language of computers, making it not only stylish but also functional. It adds a touch of personality to your desktop or mobile device while showcasing your love for technology.
 
-If you have any questions or comments about this wallpaper or our website, please don't hesitate to reach out to us. We'd love to hear from you!
+Explore our website to discover informative articles, helpful resources, and exciting news about the latest tech trends. Our content is curated by experts in the field, ensuring that you receive accurate and up-to-date information.
 
-[Contact Us](#)
+So why wait? Download our binary code background and immerse yourself in the world of technology. Join our community of like-minded individuals and stay informed about the latest developments in the tech industry.
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Futura
+- Exo 2
+- Roboto
+- Orbitron
+- Playfair Display
+- Great Vibes
+- Lobster
+- Dancing Script
+- Barlow Condensed
+- Inter
+- Alegreya
+- Open Sans
+- Poppins
+- Montserrat
+- IBM Plex Sans
+- Lato
+- Raleway
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Inter
+
+-->

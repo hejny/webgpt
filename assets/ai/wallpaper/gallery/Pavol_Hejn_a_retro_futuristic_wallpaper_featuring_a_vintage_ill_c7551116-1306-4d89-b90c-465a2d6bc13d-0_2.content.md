@@ -1,66 +1,93 @@
+<!--font:Poppins-->
+
+# Retro-Futuristic Robot Design
+
+Step into the future with our retro-futuristic robot design featuring a vintage illustration of a robot set against a neon-colored background. This unique blend of old-school charm and modern aesthetics is perfect for those who appreciate the beauty of classic designs with a touch of contemporary style.
+
+The intricate details of the robot's mechanical arms and gears are sure to catch your eye, while the vibrant neon colors in the background add a pop of excitement and energy to any space. Whether you're looking to add a futuristic touch to your desktop or give your phone a new look, this retro-futuristic robot design is the perfect choice.
+
+Our collection of retro-futuristic designs is perfect for anyone who loves the combination of past and future. Explore our other designs and find the perfect match for your style. Download our retro-futuristic robot design now and take a step into the future!
+
 <!--
-Write me content for website with wallpaper which alt text is:
+
+Write me markdown content of website with wallpaper:
 
 "A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background."
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
+
+---
+
+
+Write me markdown content of website with wallpaper:
+
+"A retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background."
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Retro-Futuristic Robot Wallpaper
+
+Welcome to our retro-futuristic wallpaper collection! Our latest addition features a vintage illustration of a robot, set against a vibrant neon-colored background. This wallpaper is perfect for those who love the combination of old-school charm and futuristic vibes.
+
+The intricate details of the robot's design are sure to catch your eye, with its mechanical arms and gears on full display. The neon colors in the background add a touch of modernity, making this wallpaper a unique blend of past and future.
+
+Whether you're looking to add a pop of color to your desktop or give your phone a new look, this retro-futuristic robot wallpaper is the perfect choice. Download it now and enjoy the best of both worlds!
+
+
+---
+
+
+Heading should not include word "wallpaper". The website should not be about the wallpaper itself, wallpaper is just a related background, rewrite whole content.
+
+
+---
+
+
+# Retro-Futuristic Robot Design
+
+Step into the future with our retro-futuristic robot design featuring a vintage illustration of a robot set against a neon-colored background. This unique blend of old-school charm and modern aesthetics is perfect for those who appreciate the beauty of classic designs with a touch of contemporary style.
+
+The intricate details of the robot's mechanical arms and gears are sure to catch your eye, while the vibrant neon colors in the background add a pop of excitement and energy to any space. Whether you're looking to add a futuristic touch to your desktop or give your phone a new look, this retro-futuristic robot design is the perfect choice.
+
+Our collection of retro-futuristic designs is perfect for anyone who loves the combination of past and future. Explore our other designs and find the perfect match for your style. Download our retro-futuristic robot design now and take a step into the future!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Montserrat
+- Lato
+- Great Vibes
+- Orbitron
+- Alegreya
+- Roboto
+- Inter
+- Raleway
+- Playfair Display
+- Dancing Script
+- IBM Plex Sans
+- Poppins
+- Futura
+- Lobster
+- Open Sans
+- Barlow Condensed
+- Exo 2
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Poppins
+
 -->
-
-<!--font:Montserrat-->
-
-# Retro-Futuristic Robot Wallpaper for Your Tech-Savvy Space
-
-Add a touch of nostalgia and futuristic vibes to your space with our retro-futuristic wallpaper featuring a vintage illustration of a robot. This unique design is set against a neon-colored background, making it the perfect addition to any tech-savvy room.
-
-## Features
-
-- High-quality vinyl material
-- Easy to install and remove
-- Durable and long-lasting
-- Fade-resistant colors
-- Available in multiple sizes
-
-## User Stories
-
-"I absolutely love this wallpaper! It's the perfect addition to my home office, and I've received so many compliments on it." - Sarah R.
-
-"The retro-futuristic design of this wallpaper is exactly what I was looking for to complete my gaming room. It looks amazing!" - David T.
-
-## Installation Guide
-
-Installing our retro-futuristic robot wallpaper is quick and easy. Here are the steps:
-
-1. Clean the surface where you will be applying the wallpaper.
-2. Measure the area and cut the wallpaper to the appropriate size.
-3. Peel off the backing and apply the wallpaper to the wall, smoothing out any bubbles or wrinkles as you go.
-4. Trim any excess wallpaper from the edges.
-5. Enjoy your new retro-futuristic space!
-
-## Care Instructions
-
-To keep your wallpaper looking its best, follow these care instructions:
-
-- Wipe clean with a damp cloth as needed.
-- Avoid using harsh chemicals or abrasive materials.
-- Do not expose to direct sunlight for extended periods of time.
-
-## References
-
-Check out some of our other retro-futuristic designs:
-
-- [Vintage Sci-Fi Posters](#)
-- [Space Age Wall Art](#)
-
-## Contact Us
-
-Have questions about our retro-futuristic robot wallpaper or need help with installation? Contact us at support@retrofuturisticspaces.com or give us a call at 555-1234. We're here to help!

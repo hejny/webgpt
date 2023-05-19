@@ -1,7 +1,7 @@
 <!--
 Write me content for website with wallpaper which alt text is:
 
-"A futuristic laboratory where AInauts use AI and advanced technology to create new forms of life."
+"A futuristic laboratory where Ainautes use AI and advanced technology to create new forms of life."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -18,9 +18,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# The AI Lab: Where Science Fiction Becomes Reality
+# AI Lab: Sci-Fi to Reality
 
-Welcome to the AI Lab, a cutting-edge research facility where AInauts use artificial intelligence and advanced technology to create new forms of life. Our team of experts is dedicated to pushing the boundaries of what's possible, exploring the frontiers of science and engineering, and unlocking the secrets of the universe.
+Welcome to the AI Lab, a cutting-edge research facility where Ainautes use artificial intelligence and advanced technology to create new forms of life. Our team of experts is dedicated to pushing the boundaries of what's possible, exploring the frontiers of science and engineering, and unlocking the secrets of the universe.
 
 ## Our Mission
 

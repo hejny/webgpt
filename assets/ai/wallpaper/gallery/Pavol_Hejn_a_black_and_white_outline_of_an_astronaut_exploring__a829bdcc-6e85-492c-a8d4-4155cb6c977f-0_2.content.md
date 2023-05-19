@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Space Explorer - Discovering the Unknown
+# Exploring Space
 
 Welcome to Space Explorer, where we take you on a journey through the vast expanse of space. Our website is dedicated to bringing you the latest news and updates on space exploration, as well as providing resources for those who are interested in learning more about this fascinating field.
 

@@ -1,58 +1,89 @@
-<!--
-Write me content for website with wallpaper which alt text is:
+<!--font:Open Sans-->
 
-"A close-up of a bird in flight"
+# Bird Photography Website
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
-
-- Use markdown format 
-- Start with the heading
-- The content should look like a real website 
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
-
-<!--font:Poppins-->
-
-# Bird in Flight Wallpaper for Nature Lovers
-
-Welcome to our website dedicated to nature lovers who appreciate the beauty of birds in flight. Our stunning wallpaper captures a close-up of a bird soaring through the sky, showcasing its grace and power.
+Welcome to our bird photography website! We are passionate about capturing the beauty and grace of birds in flight. Our homepage features a stunning close-up of a bird in flight as our wallpaper.
 
 ## About Us
 
-At Bird in Flight Wallpaper, we are passionate about bringing the beauty of nature into your home or office. Our high-quality wallpapers are designed to transport you to the great outdoors, providing a sense of peace and tranquility wherever you go.
+Our team of photographers has years of experience in capturing breathtaking shots of birds in their natural habitat. We believe that every bird is unique and deserves to be celebrated through photography.
 
-## Our Collection
+## Gallery
 
-Our collection features a range of stunning wallpapers, each capturing the essence of different birds in flight. From majestic eagles to colorful parrots, our wallpapers are sure to inspire and delight.
+Browse our gallery to see some of our best shots of birds in flight. From majestic eagles to colorful parrots, we have captured a wide variety of species in action.
 
-- **Eagle Soaring:** This wallpaper captures the power and majesty of the eagle as it soars through the clouds.
-- **Hummingbird Delight:** This wallpaper showcases the vibrant colors and delicate movements of the hummingbird in flight.
-- **Pelican Glide:** This wallpaper captures the grace and elegance of the pelican as it glides over the water.
-- **Flamingo Flock:** This wallpaper showcases the beauty of flamingos in flight, with their long legs and pink feathers creating a stunning visual display.
+## Services
 
-## User Stories
-
-Our wallpapers have been used by nature enthusiasts all over the world to bring a sense of calm and serenity to their homes and offices. Here are some stories from our satisfied customers:
-
-> "I recently redecorated my living room and wanted to incorporate some nature-inspired elements. The Eagle Soaring wallpaper was the perfect addition to my accent wall, adding a touch of drama and beauty to the space." - Sarah, California
-
-> "As an avid birdwatcher, I love having the Flamingo Flock wallpaper in my study. It's like having a window into the natural world right in my own home!" - John, New York
-
-## References
-
-Our wallpapers are made with high-quality materials and are designed to last for years to come. Here are some of the features that make our wallpapers stand out:
-
-- **High-resolution printing:** Our wallpapers are printed using state-of-the-art technology, ensuring that every detail is captured in stunning clarity.
-- **Eco-friendly materials:** We use only eco-friendly materials in our wallpapers, ensuring that they are safe for both you and the environment.
-- **Easy installation:** Our wallpapers are easy to install, with clear instructions and all the necessary tools included.
+We offer a range of services for those interested in bird photography. Whether you're a beginner or an experienced photographer, we can help you improve your skills and capture stunning shots of birds in flight.
 
 ## Contact Us
 
-If you have any questions about our wallpapers or would like to place an order, please don't hesitate to contact us. You can reach us by email at info@birdinflightwallpaper.com or by phone at 1-800-555-BIRD.
+If you have any questions or would like to schedule a photography session, please don't hesitate to contact us. We look forward to hearing from you!
 
-Thank you for visiting Bird in Flight Wallpaper, and we hope to help you bring a little bit of nature into your home or office soon!
+<!--
+
+Write me markdown content of website with wallpaper:
+
+"A close-up of a bird in flight"
+
+The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
+
+
+---
+
+
+# Bird Photography Website
+
+Welcome to our bird photography website! We are passionate about capturing the beauty and grace of birds in flight. Our homepage features a stunning close-up of a bird in flight as our wallpaper.
+
+## About Us
+
+Our team of photographers has years of experience in capturing breathtaking shots of birds in their natural habitat. We believe that every bird is unique and deserves to be celebrated through photography.
+
+## Gallery
+
+Browse our gallery to see some of our best shots of birds in flight. From majestic eagles to colorful parrots, we have captured a wide variety of species in action.
+
+## Services
+
+We offer a range of services for those interested in bird photography. Whether you're a beginner or an experienced photographer, we can help you improve your skills and capture stunning shots of birds in flight.
+
+## Contact Us
+
+If you have any questions or would like to schedule a photography session, please don't hesitate to contact us. We look forward to hearing from you!
+
+
+---
+
+
+Write me a Google font which is best fitting for the website.
+
+Pick from the list:
+- Alegreya
+- Playfair Display
+- Exo 2
+- Orbitron
+- Open Sans
+- Poppins
+- IBM Plex Sans
+- Raleway
+- Futura
+- Inter
+- Montserrat
+- Great Vibes
+- Roboto
+- Lobster
+- Barlow Condensed
+- Lato
+- Dancing Script
+
+
+Write just the font name nothing else.
+
+
+---
+
+
+Open Sans
+
+-->

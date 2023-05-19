@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Galactic Hub" - A Futuristic Space Station Orbiting a Distant Planet
+# Galactic Hub: Futuristic Space Station Orbits Planet
 
 Welcome to Galactic Hub, your one-stop-shop for all things space travel. Our website is dedicated to providing you with the latest news and updates on the most exciting developments in space technology.
 

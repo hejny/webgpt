@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Welcome to our Whimsical World!
+# Whimsical World Welcome!
 
 Experience the magic of adventure and lifestyle with our stunning wallpaper featuring a hot air balloon flying over a city. This whimsical scene is sure to capture your imagination and inspire you to explore new horizons.
 

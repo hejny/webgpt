@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Birdwatcher's Paradise: A Close-Up of a Bird in Flight
+# Avian Haven
 
 Welcome to Birdwatcher's Paradise, your ultimate destination for all things birding! Our website is dedicated to providing you with the latest news, resources, and information on birdwatching. As passionate birders ourselves, we understand the thrill of spotting a rare species or witnessing a majestic bird in flight. That's why we've chosen this stunning wallpaper, featuring a close-up of a bird in flight, to represent our love for these beautiful creatures.
 

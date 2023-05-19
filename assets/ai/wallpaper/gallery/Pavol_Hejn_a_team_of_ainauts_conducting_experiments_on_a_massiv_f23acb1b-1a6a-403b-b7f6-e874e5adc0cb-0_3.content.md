@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of AInauts conducting experiments on a massive, frozen moon orbiting a gas giant planet."
+"A team of Ainautes conducting experiments on a massive, frozen moon orbiting a gas giant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -14,21 +14,21 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# Exploring the Unknown: AInauts Conducting Experiments on a Frozen Moon
+# AI Experiment on Frozen Moon
 
-Welcome to our website, where we showcase the exciting work of our team of AInauts as they conduct experiments on a massive, frozen moon orbiting a gas giant planet.
+Welcome to our website, where we showcase the exciting work of our team of Ainautes as they conduct experiments on a massive, frozen moon orbiting a gas giant planet.
 
 ## The Mission
 
-Our mission is to explore the unknown and push the boundaries of what we know about our universe. We believe that by sending AInauts to remote locations in space, we can gather data and insights that will help us better understand our place in the cosmos.
+Our mission is to explore the unknown and push the boundaries of what we know about our universe. We believe that by sending Ainautes to remote locations in space, we can gather data and insights that will help us better understand our place in the cosmos.
 
 ## The Frozen Moon
 
-The frozen moon we are currently exploring is one of the most inhospitable places in the solar system. With temperatures that can drop to -200°C, it is a harsh and unforgiving environment. But despite these challenges, our AInauts are making incredible discoveries.
+The frozen moon we are currently exploring is one of the most inhospitable places in the solar system. With temperatures that can drop to -200°C, it is a harsh and unforgiving environment. But despite these challenges, our Ainautes are making incredible discoveries.
 
 ## The Experiments
 
-Our AInauts are equipped with a range of scientific instruments that allow them to collect data on the frozen moon's geology, atmosphere, and more. They are also conducting experiments to test new technologies and techniques that could be used in future space exploration missions.
+Our Ainautes are equipped with a range of scientific instruments that allow them to collect data on the frozen moon's geology, atmosphere, and more. They are also conducting experiments to test new technologies and techniques that could be used in future space exploration missions.
 
 ## The Future
 
@@ -36,4 +36,4 @@ We believe that the work we are doing today will pave the way for even more ambi
 
 ---
 
-Join us on this exciting journey of discovery as we explore the unknown and unlock the secrets of the universe. #ExploringTheUnknown #AInauts #SpaceExploration
+Join us on this exciting journey of discovery as we explore the unknown and unlock the secrets of the universe. #ExploringTheUnknown #Ainautes #SpaceExploration

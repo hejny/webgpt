@@ -13,10 +13,21 @@ export function SkinStyle() {
                 --highlighted-text-color: ${skin.highlightedTextColor.toHex()};
                 --highlighted-text-shaddow: ${skin.highlightedTextShaddow};
                 --footer-text-color: ${skin.footerTextColor.toHex()};
-                --main-background: ${skin.mainBackground};
                 --footer-background: ${skin.footerBackground};
 
-                ${skin.palette.map((color, i) => `--palette-${i}: ${color.toHex()};`).join('\n')}
+                ${[...skin.palette, ...skin.palette, ...skin.palette, ...skin.palette /* <- 💩 */]
+                    .flatMap((color, i) => [
+                        // TODO: !! DRY [🎋]
+                        `--palette-${i}: ${color.toHex()};`,
+                        `--palette-${i}-red: ${color.red};`,
+                        `--palette-${i}-green: ${color.green};`,
+                        `--palette-${i}-blue: ${color.blue};`,
+                        `--palette-${i}-triplet: ${color.red}, ${color.green}, ${color.blue};`,
+                    ])
+                    .join('\n')}
+
+        
+
       
             }
         `}</style>
@@ -24,6 +35,7 @@ export function SkinStyle() {
 }
 
 /**
- * TODO: !!! Make repeat in palette to guarantee at least 10 colors
+ * TODO: [🥼] Use ONLY --palette vars
+ * TODO: !! Make repeat in palette to guarantee at least 10 colors
  * TODO: Allow partial ISkin
  */
