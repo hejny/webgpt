@@ -1,6 +1,6 @@
-version: 9
+version: 10
 palette:
-    - '#223333'
+    - '#992233'
     - '#ffffff'
     - '#aacc88'
 averageColor: '#baa673'

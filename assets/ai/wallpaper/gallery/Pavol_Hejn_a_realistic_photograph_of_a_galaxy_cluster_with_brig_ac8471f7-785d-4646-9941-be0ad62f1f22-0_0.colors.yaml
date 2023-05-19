@@ -1,8 +1,9 @@
-version: 9
+version: 10
 palette:
-    - '#222244'
+    - '#993355'
     - '#ffffff'
     - '#66aacc'
+    - '#000011'
 averageColor: '#765155'
 lightestColor: '#ffffff'
 darkestColor: '#000000'

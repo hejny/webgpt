@@ -1,6 +1,6 @@
-version: 9
+version: 10
 palette:
-    - '#221111'
+    - '#111111'
     - '#ffffff'
     - '#44aadd'
     - '#ffcc55'
