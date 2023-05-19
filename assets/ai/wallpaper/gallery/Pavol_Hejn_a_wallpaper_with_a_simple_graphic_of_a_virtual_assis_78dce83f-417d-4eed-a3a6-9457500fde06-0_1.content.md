@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Boost Business with Virtual Assistants
+# Boost Business with VAs
 
 Our virtual assistant service is the perfect solution for simplifying your business operations and staying on top of your schedule. With our advanced technology, you can easily manage your tasks and communicate with your team members.
 

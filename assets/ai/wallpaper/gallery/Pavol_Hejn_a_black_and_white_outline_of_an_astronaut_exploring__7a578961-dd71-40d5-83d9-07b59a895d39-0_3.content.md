@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Adventures: Explore the Universe
+# Space Exploration
 
 Welcome to Space Adventures, your one-stop destination for everything related to space exploration. Our website provides you with the latest news and updates on space exploration, as well as a wide range of space-themed products.
 

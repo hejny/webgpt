@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Simplify Schedule with TimeKeeper
+# Simplify Schedule: TimeKeeper
 
 Make the most of your time with TimeKeeper, a sleek and functional digital clock that helps you stay on top of your schedule. With ample space for setting alarms and countdowns, you'll never miss an important event or deadline again.
 

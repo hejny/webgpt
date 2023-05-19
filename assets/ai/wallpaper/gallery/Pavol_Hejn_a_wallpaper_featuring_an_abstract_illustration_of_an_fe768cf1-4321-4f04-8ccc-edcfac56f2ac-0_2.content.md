@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# AI Search Engines: Unleashing Potential
+# AI Search Engines: Unlocking Potential
 
 Our website is dedicated to exploring the incredible potential of AI-powered search engines. The minimalist and modern design of our site features a stunning abstract illustration of an AI-powered search engine, representing the sophistication and power of these cutting-edge technologies.
 

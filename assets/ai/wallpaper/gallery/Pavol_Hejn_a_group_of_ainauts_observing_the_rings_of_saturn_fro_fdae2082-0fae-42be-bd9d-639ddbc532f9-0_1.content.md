@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# Saturn Rings from Space Station
+# Saturn Rings from ISS
 
 Welcome to our website featuring a stunning wallpaper of a group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
 

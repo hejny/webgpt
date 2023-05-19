@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Data Viz's Future: Future Graphs
+# Future of Data Viz: Graphs
 
 Welcome to our website, your ultimate destination for exploring the latest trends and innovations in data visualization. Our stunning background of futuristic data visualizations and graphs sets the tone for what you can expect from our content.
 
