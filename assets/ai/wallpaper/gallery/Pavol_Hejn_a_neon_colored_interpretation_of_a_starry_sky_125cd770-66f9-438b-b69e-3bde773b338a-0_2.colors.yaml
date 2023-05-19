@@ -1,9 +1,9 @@
-version: 8
+version: 9
 palette:
     - '#000000'
     - '#ffffff'
-    - '#ee9933'
     - '#337777'
+    - '#ee9933'
     - '#bb55ee'
     - '#88dd88'
     - '#dd0077'
