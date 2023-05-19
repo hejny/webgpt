@@ -1,12 +1,15 @@
 import { IVector } from 'xyzt';
 import { Color } from '../../color/Color';
-import { IImage } from '../IImage';
 import { Image } from '../Image';
 
 /**
  * @@@
  */
-export function scaleImage(image: IImage, newSize: IVector): Image {
+export function scaleImage(image: Image, newSize: IVector): Image {
+    if (image.size.x === newSize.x && image.size.y === newSize.y) {
+        return image;
+    }
+
     const newImage = new Image(newSize);
 
     for (let y = 0; y < newSize.y!; y++) {
