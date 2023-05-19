@@ -1,9 +1,11 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
+import { useState } from 'react';
 import { Vector } from 'xyzt';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
+import { EditModal } from '../../components/EditModal/EditModal';
 import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
@@ -25,6 +27,8 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
     currentWallpaper = hydrateWallpaper(currentWallpaper);
     randomWallpaper = hydrateWallpaper(randomWallpaper);
+    const [isEditing, setEditing] = useState(false);
+    const [isPresenting, setPresenting] = useState(false);
 
     console.info('🖼 currentWallpaper:', currentWallpaper);
 
@@ -42,6 +46,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
             <div className={styles.page}>
                 <DebugGrid size={new Vector(5, 5)} />
+                {isEditing && <EditModal turnOffEditing={setEditing.bind(null, false)} />}
                 <header>
                     <HeaderWallpaper />
                 </header>
@@ -52,7 +57,14 @@ export default function ShowcasePage(props: ShowcasePageProps) {
                     <ShowcaseWelcomeSection />
                     {/*<ReferencesSection variant="SHORT" />*/}
                 </main>
-                <GetWebButton {...{ randomWallpaper }} />
+                {!isPresenting && (
+                    <GetWebButton
+                        {...{ randomWallpaper }}
+                        turnOnEditing={setEditing.bind(null, true)}
+                        turnOnPresenting={setPresenting.bind(null, true)}
+                    />
+                )}
+
                 <footer>
                     <FooterSection />
                 </footer>
