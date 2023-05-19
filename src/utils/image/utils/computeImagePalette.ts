@@ -22,21 +22,18 @@ export function computeImagePalette(colorStats: Omit<IImageColorStats, 'version'
         colorStats,
         colorStats.bottomLine /* TODO: Combinations */,
     ]) {
-        // TODO: Share [9]
 
-        for (const mostFrequentColor of regionStats.mostFrequentColors) {
-            paletteCandidates.push(mostFrequentColor);
-        }
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
             paletteCandidates.push(mostSatulightedColor);
         }
+        for (const mostGroupedColor of regionStats.mostGroupedColors) {
+            paletteCandidates.push(mostGroupedColor);
+        }
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
             paletteCandidates.push(mostFrequentColor);
         }
-        regionStats.averageColor;
-        for (const mostFrequentColor of regionStats.mostGroupedColors) {
-            paletteCandidates.push(mostFrequentColor);
-        }
+        // regionStats.averageColor;
+        
         paletteCandidates.push(regionStats.darkestColor);
         paletteCandidates.push(regionStats.lightestColor);
     }
