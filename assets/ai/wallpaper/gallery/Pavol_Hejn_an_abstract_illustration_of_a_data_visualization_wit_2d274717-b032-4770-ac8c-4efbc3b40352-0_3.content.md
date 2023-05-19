@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# DataViz for Simple Data Analysis
+# Shorter Title: Simple DataViz
 
 Welcome to DataVisual, where we help you simplify your data analysis with our powerful tools and intuitive interface. Our platform is designed to make it easy for anyone to analyze complex data sets and gain valuable insights.
 

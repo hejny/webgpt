@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Mars: Uncovering Mysteries
+# Mysteries of Mars Explored
 
 Welcome to our website dedicated to exploring the mysteries of Mars, the fourth planet from the Sun. Our goal is to provide you with the latest information and updates on the ongoing exploration of this fascinating planet.
 

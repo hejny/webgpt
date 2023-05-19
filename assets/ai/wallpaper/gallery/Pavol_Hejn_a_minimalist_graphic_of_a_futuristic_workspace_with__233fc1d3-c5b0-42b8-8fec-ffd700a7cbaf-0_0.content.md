@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Digital Workspace Design
+# Digital Workspace of the Future
 
 Enhance your digital experience with our sleek and modern workspace design. Our minimalist graphic features clean lines and a contemporary color scheme that will bring sophistication to your digital space.
 

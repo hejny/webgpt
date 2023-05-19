@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Unknown Adventurer's Journey Site
+# Mystery Explorer's Travel Blog
 
 Welcome to Journey to the Unknown, a website dedicated to all things adventure! Our captivating background image, featuring a group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them, sets the tone for your next journey.
 
