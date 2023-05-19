@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# AI and Human Physiology Intersection: Ainautes
+# AI and Human Physiology: Ainautes
 
 Welcome to Ainautes, where we push the boundaries of human understanding through cutting-edge research on the effects of artificial intelligence on the human body. Our team of expert scientists work tirelessly in our zero-gravity chamber to conduct experiments that will shape the future of medicine and technology.
 

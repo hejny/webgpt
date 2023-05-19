@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI Companions in Zero-G Experiments
+# AI Companions in Zero-G
 
 Experience the thrill of conducting experiments in zero-gravity alongside Ainautes and their AI companions. Our state-of-the-art laboratory is equipped with the latest technology to facilitate your research, while the vibrant colors of chemicals and particles floating around you provide a visually stunning backdrop. Join us for an unforgettable scientific adventure! 
 
