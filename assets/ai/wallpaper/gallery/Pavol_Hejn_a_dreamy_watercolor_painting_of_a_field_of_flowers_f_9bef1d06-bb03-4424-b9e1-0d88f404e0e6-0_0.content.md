@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Blissful Events - Dream Realization
+# Blissful Dream Events
 
 At Blissful Events, we specialize in creating unforgettable experiences that reflect your unique vision and style. Our team of expert planners will work closely with you to ensure that every detail is taken care of, so that you can relax and enjoy your special day.
 

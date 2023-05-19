@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Futuristic Cityscapes with Abstract Art
+# Futuristic Abstract Cityscapes
 
 Our abstract artwork of a dark and futuristic cityscape is the perfect backdrop to transport you to another world. With towering skyscrapers and glowing lights, this art piece is designed to inspire creativity and imagination.
 

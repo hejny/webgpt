@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Nature on Screen: Butterfly Background
+# Screen Nature: Butterfly Backdrop
 
 Welcome to our website, where you can find stunning backgrounds for your phone or desktop that will transport you to the beauty of nature. Our latest addition is a close-up image of a butterfly on a flower that will add a touch of elegance to your digital life.
 

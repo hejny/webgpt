@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Your Day with Digital Organizer
+# Digital Organizer Simplifies Your Day
 
 Our digital calendar and to-do list background is the perfect tool for streamlining your day. With a minimalist design, you can easily schedule your day, manage tasks, and keep important notes and reminders in one place.
 

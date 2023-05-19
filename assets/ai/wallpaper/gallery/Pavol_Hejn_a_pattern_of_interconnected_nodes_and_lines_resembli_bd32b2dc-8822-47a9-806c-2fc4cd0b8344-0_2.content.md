@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Improve Workspace with Neural Background
+# Enhance Workspace with Neural Backdrop
 
 Welcome to our website dedicated to helping you create an inspiring and productive workspace. Our neural network-inspired background is the perfect addition to your computer screen, providing a visually stimulating backdrop to help you stay focused on your work.
 

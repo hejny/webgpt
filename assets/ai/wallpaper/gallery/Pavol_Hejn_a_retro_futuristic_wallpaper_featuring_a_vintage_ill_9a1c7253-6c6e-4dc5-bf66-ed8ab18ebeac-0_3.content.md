@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Timeless Retro-Futuristic Design
+# Retro-Futuristic Design
 
 Welcome to our website, where we celebrate the fascinating world of retro-futuristic design. Our homepage features a stunning illustration of a vintage robot set against a vibrant neon-colored background, giving you a taste of the unique and creative content that awaits.
 

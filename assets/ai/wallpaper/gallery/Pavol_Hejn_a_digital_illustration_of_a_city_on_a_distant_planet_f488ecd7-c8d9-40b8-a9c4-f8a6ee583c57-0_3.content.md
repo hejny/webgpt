@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Alien City Illustration
+# Alien City Illustration
 
 Welcome to our website, where you can discover and download a stunning digital illustration of a city on a distant planet. This background is perfect for sci-fi enthusiasts, gamers, and anyone who loves exploring new worlds.
 

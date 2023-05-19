@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Beauty: Butterflies and Flowers
+# Beauty: Butterflies & Flowers
 
 Experience the wonder of nature with this captivating image of a butterfly perched on a flower. The intricate details and vibrant colors of the butterfly and flower will transport you to a serene and peaceful place.
 

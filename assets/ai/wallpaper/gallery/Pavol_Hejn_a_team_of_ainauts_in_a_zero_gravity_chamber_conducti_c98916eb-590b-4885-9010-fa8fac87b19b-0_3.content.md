@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI and Human Zero-G Experiments
+# AI-Human Zero-G Experiments
 
 Welcome to our website where we explore the fascinating world of artificial intelligence and its impact on human physiology. Our team of Ainautes is conducting experiments in a zero-gravity chamber to understand how AI affects the human body.
 

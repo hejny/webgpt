@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Simplified Data Management via Dashboard
+# Simplified Data Dashboard
 
 Our modern dashboard wallpaper offers a clean and minimalist design that simplifies the process of monitoring and managing your data. With its simple graphic of a control panel, this wallpaper provides ample space for tracking important information.
 

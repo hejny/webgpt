@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Revamp Digital World with Retro Robots
+# Revamp Digital World with Retro Bots
 
 Take a journey into the world of retro-futuristic wonder with our stunning robot illustration. This unique design features a vintage-inspired robot illustration set against a vibrant neon-colored background, bringing together the best of both worlds.
 

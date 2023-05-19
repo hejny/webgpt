@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# DataVisual - Simplify Your Data Analysis
+# Simplify Data Analysis with DataVisual
 
 Welcome to DataVisual, where we help you simplify your data analysis with our powerful tools and intuitive interface. Our platform is designed to make it easy for anyone to analyze complex data sets and gain valuable insights.
 
