@@ -22,7 +22,7 @@ export function computeImagePalette(colorStats: Omit<IImageColorStats, 'version'
         colorStats,
         colorStats.bottomLine /* TODO: Combinations */,
     ]) {
-
+        // TODO: !!!! Here also get in account the color count
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
             paletteCandidates.push(mostSatulightedColor);
         }
@@ -33,7 +33,7 @@ export function computeImagePalette(colorStats: Omit<IImageColorStats, 'version'
             paletteCandidates.push(mostFrequentColor);
         }
         // regionStats.averageColor;
-        
+
         paletteCandidates.push(regionStats.darkestColor);
         paletteCandidates.push(regionStats.lightestColor);
     }

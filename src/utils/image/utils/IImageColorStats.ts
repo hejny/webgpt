@@ -19,6 +19,7 @@ export interface IImageColorStats extends IImageColorStatsRegion {
  */
 export interface IImageColorStatsRegion {
     // TODO: region: IRegion + pixel size
+    // TODO: !!! Instead of WithTake<Color> use intefrace IImageColor{count:number, color:WithTake<Color>}
 
     /**
      * The average color of the image as a Color object
