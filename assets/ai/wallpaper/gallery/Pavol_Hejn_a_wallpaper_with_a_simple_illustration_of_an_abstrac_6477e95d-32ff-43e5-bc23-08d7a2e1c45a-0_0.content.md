@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Simplify Work with Minimal Design
+# Simplify Work with Minimalism
 
 Welcome to our website dedicated to helping modern professionals simplify their work and stay focused on what matters most. We believe that minimalist design can help you streamline your workflow and reduce distractions, allowing you to be more productive and creative.
 

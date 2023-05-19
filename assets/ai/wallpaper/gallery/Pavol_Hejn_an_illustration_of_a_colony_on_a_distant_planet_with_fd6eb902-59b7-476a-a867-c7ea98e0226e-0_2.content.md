@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Future Space Colony Architecture
+# Space Colony Design
 
 Welcome to our website, where we explore the latest trends and innovations in architecture and design. Our space colony background is the perfect way to set the tone for your next project or presentation. 
 

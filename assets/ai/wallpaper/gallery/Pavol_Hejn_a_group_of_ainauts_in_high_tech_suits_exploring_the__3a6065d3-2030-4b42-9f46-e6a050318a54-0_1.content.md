@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Future with Our Background
+# Future Background Exploration
 
 Welcome to our website, where we provide you with a cutting-edge background that will transport you to an exciting and unknown world. Our wallpaper features a group of Ainautes in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. 
 

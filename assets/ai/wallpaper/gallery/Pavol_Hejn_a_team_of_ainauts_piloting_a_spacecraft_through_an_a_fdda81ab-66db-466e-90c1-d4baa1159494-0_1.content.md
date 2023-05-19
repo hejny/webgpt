@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Adventure: Exploring the Final Frontier
+# Exploring the Final Frontier
 
 Welcome to Space Adventure, your ultimate guide to exploring the vast expanse of space! Our website is dedicated to providing you with the latest news, resources, and information about space exploration.
 

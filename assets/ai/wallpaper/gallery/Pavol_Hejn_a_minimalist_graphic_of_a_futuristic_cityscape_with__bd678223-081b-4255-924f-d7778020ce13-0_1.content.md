@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# FutureCity: Futuristic Website Background
+# FutureCity: Futuristic Background
 
 Welcome to FutureCity, the perfect background for your website if you want to convey a futuristic and edgy vibe. Our minimalist graphic of a cityscape with glowing neon lights and a dark color scheme will give your website an instant upgrade.
 

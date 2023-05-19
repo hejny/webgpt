@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ainautes & AI: The Final Frontier
+# AI & Ainautes: The Last Frontier
 
 Welcome to our website where we celebrate the collaboration between Ainautes and their AI companions in exploring the vast expanse of space. Our stunning wallpaper showcases a scene from our imagined future where humans and artificial intelligence work together in a massive, zero-gravity space station.
 

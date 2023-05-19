@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# AI improves business efficiency
+# AI boosts business efficiency
 
 Looking for a search engine that can keep up with your business's fast-paced environment? Our AI-powered search engine is the solution you've been searching for. With advanced algorithms and lightning-fast results, our technology is designed to help you find the information you need quickly and efficiently.
 

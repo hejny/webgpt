@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Ainautes: Advancing S&T Boundaries
+# Ainautes: Advancing S&T
 
 Experience the future with our stunning cityscape wallpaper, where Ainautes work alongside AI to create groundbreaking innovations in science and technology. Our community of brilliant minds is dedicated to exploring new frontiers and pushing the limits of what's possible.
 

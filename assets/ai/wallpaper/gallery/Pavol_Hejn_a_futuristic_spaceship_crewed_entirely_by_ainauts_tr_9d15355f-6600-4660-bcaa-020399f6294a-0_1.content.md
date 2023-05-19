@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Ainautes
+# Ainautes: Exploring the Universe
 
 Welcome to our website where we take you on a journey through space and time. Our wallpaper features a futuristic spaceship crewed entirely by Ainautes, who are dedicated to exploring the vast expanse of the universe.
 

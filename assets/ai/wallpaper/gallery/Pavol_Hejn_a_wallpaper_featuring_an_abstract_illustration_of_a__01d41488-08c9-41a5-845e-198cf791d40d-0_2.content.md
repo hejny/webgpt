@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech Site's Futuristic City Backdrop
+# Tech Site's Futuristic City
 
 Our abstract illustration of a dark and futuristic cityscape is the perfect background to create a cutting-edge vibe for your tech site.
 

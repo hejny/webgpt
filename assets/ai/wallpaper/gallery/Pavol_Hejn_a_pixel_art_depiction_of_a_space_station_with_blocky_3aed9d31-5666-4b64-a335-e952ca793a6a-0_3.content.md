@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Retro-Futuristic Space Station Background
+# Retro-Futuristic Space Station Background for Universe Exploration
 
 Transport yourself to a world of sci-fi wonder with our pixel art depiction of a space station. Featuring blocky shapes and limited colors, this background creates a unique retro-futuristic feel that is sure to inspire your imagination.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Flower Power: Bring Life to Your Walls
+# Revitalize Walls with Flower Power
 
 Welcome to our wallpaper collection featuring a stunning close-up of a flower. Our high-quality wallpapers are perfect for adding a touch of nature and elegance to any room in your home or office.
 
