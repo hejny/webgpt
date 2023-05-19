@@ -9,9 +9,11 @@ import { areColorsEqual } from '../../color/utils/areColorsEqual';
 import { colorDistanceSquared } from '../../color/utils/colorDistance';
 import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
-import { IImageColorStats } from './IImageColorStats';
+import { IImageColorStatsAdvanced } from './IImageColorStats';
 
-export function computeImagePalette(colorStats: Omit<IImageColorStats, 'version' | 'palette'>): Array<WithTake<Color>> {
+export function computeImagePalette(
+    colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>,
+): Array<WithTake<Color>> {
     // 1️⃣ Compute the all palette candidates
 
     const paletteCandidates: Array<WithTake<Color>> = [];

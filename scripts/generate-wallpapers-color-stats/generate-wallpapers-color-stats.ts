@@ -8,7 +8,6 @@ import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
 import { COLORSTATS_DEFAULT_COMPUTE } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
-import { computeImageColorStats } from '../../src/utils/image/utils/10-createColorfulComputeImageColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { TakeChain } from '../../src/utils/take/classes/TakeChain';
 import { commit } from '../utils/autocommit/commit';
@@ -79,7 +78,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
-            const colorStats = computeImageColorStats(
+            const colorStats = COLORSTATS_DEFAULT_COMPUTE(
                 await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
             );
 
