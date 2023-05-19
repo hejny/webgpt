@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Ainautes: Universe Exploration
+# Ainautes: Space Travel
 
 Welcome to Ainautes, where we take you on a journey through the vast expanse of the universe. Our team of expert explorers and scientists are dedicated to uncovering the mysteries of the cosmos and bringing them to you.
 

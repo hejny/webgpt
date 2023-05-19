@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Racing: Join the Adventure!
+# AI Racing Adventure!
 
 Welcome to AI Racing, where humans and machines work together to conquer new frontiers! Our team of Ainautes and their AI companions are always on the lookout for the next challenge. Today, they're racing across the surface of a desert planet in high-tech buggies, pushing themselves and their machines to the limit.
 

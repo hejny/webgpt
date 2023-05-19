@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Ainautes' Futuristic Cityscape
+# Ainautes' Future Cityscape
 
 Experience the cutting-edge technology and advanced AI systems that power our city. Our team of skilled engineers and technicians work tirelessly to ensure that every aspect of Ainautes runs smoothly, from transportation to energy management.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Journey Through Space and Time
+# Space-Time Journey
 
 Welcome to our website dedicated to exploring the vast expanse of the universe! Our mission is to bring you the latest news, discoveries, and theories about the cosmos and the mysteries that lie within it. 
 

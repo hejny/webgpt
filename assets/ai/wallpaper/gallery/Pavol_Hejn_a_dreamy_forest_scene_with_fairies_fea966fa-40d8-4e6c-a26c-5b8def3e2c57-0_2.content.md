@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Enchanted Forest with Fairies.
+# Enchanted Fairy Forest
 
 Welcome to our website featuring a dreamy forest scene with fairies wallpaper. Immerse yourself in the magical world of nature and fantasy with this enchanting wallpaper.
 

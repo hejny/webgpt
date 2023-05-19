@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Enchanting Northern Lights
+# Discover Northern Lights
 
 Welcome to our website where you can immerse yourself in the enchanting beauty of the Northern Lights. Our featured photograph captures the mesmerizing green and purple hues swirling in the night sky, creating a truly unforgettable experience.
 

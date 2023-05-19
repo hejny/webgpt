@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Neon Dreams: Creative Platform
+# Neon Dreams: Creatives
 
 Welcome to Neon Dreams, a digital platform where creativity meets technology. Our mission is to inspire and empower artists, designers, and creators of all kinds to explore their potential and push the boundaries of imagination.
 

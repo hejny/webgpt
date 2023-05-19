@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist AI Buzzwords Design
+# Minimalist AI Design
 
 Welcome to our minimalist website featuring a sleek and stylish design with various AI-related buzzwords in different fonts and colors. Our design is perfect for anyone who wants to showcase their love for artificial intelligence in a sophisticated way.
 

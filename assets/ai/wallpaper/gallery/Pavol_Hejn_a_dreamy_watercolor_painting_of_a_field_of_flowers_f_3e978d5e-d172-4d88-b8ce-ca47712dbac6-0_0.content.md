@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Event Planning Website Welcome
+# Event Website Welcome
 
 Decorate your special occasion with a dreamy watercolor painting of a field of flowers. Our wallpaper will add the perfect touch of elegance and romance to any event.
 

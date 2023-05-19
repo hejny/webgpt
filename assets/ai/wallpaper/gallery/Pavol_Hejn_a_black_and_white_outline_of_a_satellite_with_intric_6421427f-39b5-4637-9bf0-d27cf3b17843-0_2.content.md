@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Satellite Exploration of Space
+# Satellite Space Exploration
 
 Welcome to our website dedicated to space exploration! Our mission is to inspire and educate people about the wonders of the universe and the technology that makes it possible for us to explore it. As part of this mission, we offer a stunning black and white background featuring an intricate outline of a satellite.
 

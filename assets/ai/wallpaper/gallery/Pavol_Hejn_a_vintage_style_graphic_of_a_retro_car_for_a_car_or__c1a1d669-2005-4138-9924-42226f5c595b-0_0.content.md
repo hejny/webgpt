@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Your Ultimate Travel Companion
+# Ultimate Travel Companion
 
 Welcome to our travel website, your ultimate companion for exploring the world. Our site features a vintage-style graphic of a retro car, adding a touch of adventure and nostalgia to your browsing experience.
 

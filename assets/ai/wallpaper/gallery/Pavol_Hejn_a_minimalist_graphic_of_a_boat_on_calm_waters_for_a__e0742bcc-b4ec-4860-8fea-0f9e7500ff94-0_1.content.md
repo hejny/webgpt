@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Welcome to Calm Waters Boating
+# Calm Waters Boating Welcome
 
 At Calm Waters Boating, we are passionate about providing you with the best boating and water sports experience possible. Our minimalist graphic of a boat on calm waters perfectly captures the essence of what we offer: a peaceful and enjoyable time on the water.
 

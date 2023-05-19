@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI for Business Transformation
+# AI for Business Change
 
 Welcome to our workspace, where we specialize in developing cutting-edge solutions that leverage the power of AI to help businesses thrive. Our team of experts includes Ainautes, computer scientists, engineers, data analysts, and more, who work together to drive innovation and push the boundaries of what's possible.
 

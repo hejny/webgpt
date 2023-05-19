@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Math-Inspired Workspace Design
+# Math Workspace Design
 
 Looking to add a touch of sophistication to your workspace? Our minimalist wallpaper, featuring a repeating pattern of simple equations and formulas, is the perfect solution. The sleek and modern design will elevate any desktop, while the mathematical motif is sure to impress.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature Home Office Backgrounds
+# Nature Office Backgrounds
 
 Welcome to our website dedicated to providing you with beautiful and inspiring backgrounds for your home office. Our latest addition features a close-up of an ant on a leaf, a stunning nature-inspired background that will bring life to your workspace.
 

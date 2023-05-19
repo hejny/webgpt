@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Modern Digital Devices Pattern
+# Digital Device Patterns
 
 Welcome to our website featuring a modern and sleek repeating pattern of digital devices such as smartphones, tablets, and laptops. This unique design is perfect for anyone who loves technology and wants to add a contemporary touch to their digital presence.
 

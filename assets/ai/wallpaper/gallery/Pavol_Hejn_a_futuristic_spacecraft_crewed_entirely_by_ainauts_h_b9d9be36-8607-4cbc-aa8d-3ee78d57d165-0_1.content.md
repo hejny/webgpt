@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ainautes: Universe Exploration
+# Ainautes: Space Travel
 
 Welcome to our website dedicated to the exploration of the universe. Our team of Ainautes, highly skilled and trained individuals, are on a mission to discover new worlds and unlock the mysteries of the cosmos.
 

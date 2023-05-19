@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Bringing Nature into Your Home
+# Nature in Your Home
 
 Welcome to our website where we provide a range of nature-inspired backgrounds that bring the beauty of the outdoors into your home. Our collection features stunning images of animals, plants, landscapes, and more, all designed to create a peaceful and calming atmosphere in any room.
 

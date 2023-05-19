@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Abandoned Spaceship Expedition
+# Abandoned Spaceship Trip
 
 Welcome to our website, where we take you on a thrilling journey through space. Join us and our AI companions as we explore a massive, abandoned spacecraft floating in the depths of the galaxy.
 

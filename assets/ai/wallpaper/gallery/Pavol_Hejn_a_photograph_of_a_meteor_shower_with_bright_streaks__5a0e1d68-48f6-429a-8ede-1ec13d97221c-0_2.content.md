@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Stargaze: Explore the Universe
+# Stargaze: Discover Space
 
 Welcome to Stargaze, your ultimate destination for exploring the universe through stunning images. Our collection features awe-inspiring photographs of celestial bodies and phenomena captured by talented photographers and astronomers from around the world.
 

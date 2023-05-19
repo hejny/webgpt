@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Ainautes: Unknown Exploration.
+# Ainautes: Unexplored
 
 Welcome to Ainautes, a community of explorers dedicated to uncovering the mysteries of the universe. Our team of experts uses cutting-edge technology and artificial intelligence to push the boundaries of what we know about the cosmos.
 

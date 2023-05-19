@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Space from Your Device
+# Explore Space Online
 
 Our cosmic background is your gateway to the wonders of the universe. Featuring a stunning photograph of a starry night sky, with the Milky Way galaxy visible overhead, this background will take you on a journey through space and inspire your sense of wonder.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Bee Gardening: Attracting Bees
+# Bee Gardening: Attract Bees
 
 Welcome to our website dedicated to bee-friendly gardening! Our mission is to help you create a beautiful and thriving garden that supports our pollinator friends.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Butterfly Desktop Backgrounds.
+# Butterfly Wallpapers
 
 Welcome to our website where you can find stunning butterfly backgrounds to beautify your desktop. Our collection features high-quality images that will transform your computer screen into a serene and peaceful landscape.
 

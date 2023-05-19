@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Explore Sea Wonders with Starfish
+# Discover Starfish and the Sea
 
 Welcome to Oceanic Starfish, your ultimate guide to exploring the beauty and diversity of the ocean. Our website is dedicated to providing you with an immersive experience that will take you on a journey through the fascinating world of marine life.
 

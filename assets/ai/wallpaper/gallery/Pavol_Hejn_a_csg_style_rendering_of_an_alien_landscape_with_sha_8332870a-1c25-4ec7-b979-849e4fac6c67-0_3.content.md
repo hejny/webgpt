@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Enter a Futuristic Alien World
+# Futuristic Alien World Entry
 
 Experience the thrill of exploring an alien landscape with our CSG-style rendering. The sharp angles and contrasting colors create an industrial and futuristic vibe that will transport you to another world.
 

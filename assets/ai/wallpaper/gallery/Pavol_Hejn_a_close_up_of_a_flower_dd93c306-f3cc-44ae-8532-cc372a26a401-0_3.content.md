@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Flower Photography by John Doe
+# John Doe's Flower Photography
 
 Welcome to my website showcasing my passion for flower photography. Here you will find a collection of stunning close-up shots of various flowers, including this beautiful wallpaper of a close-up of a flower.
 

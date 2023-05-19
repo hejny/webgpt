@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Floral Backdrop for Your Event
+# Floral Event Backdrop
 
 Welcome to our event planning website! We offer a stunning watercolor backdrop featuring a field of flowers that will add elegance and charm to your special occasion.
 

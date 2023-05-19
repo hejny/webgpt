@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Exploration Backgrounds
+# Cosmic Backgrounds
 
 Welcome to our website, where we offer a stunning collection of space-themed backgrounds for your desktop or mobile device. Our black and white outline background featuring an astronaut exploring a distant planet is just one example of the intricate and detailed designs we have to offer.
 
