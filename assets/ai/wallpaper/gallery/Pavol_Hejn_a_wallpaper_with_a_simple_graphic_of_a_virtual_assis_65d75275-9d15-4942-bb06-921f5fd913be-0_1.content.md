@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Virtual Assistants: A Business's Weapon
+# Virtual Assistants: A Business's Ally
 
 Welcome to our website, where we offer virtual assistant services to businesses of all sizes. Our background features a simple graphic of a virtual assistant or chatbot, with space for messages and alerts.
 
