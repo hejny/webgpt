@@ -36,7 +36,7 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
  * Compute the image color statistics for whole image
  */
 function computeWholeImageColorStats(image: IImage): IImageColorStatsRegion {
-    image = scaleImage(image, 0.1);
+    image = scaleImage(image, 0.1 /* <-!!!! Find ideal one */);
     image = colorDownscaleImage(image, 16);
 
     return {
