@@ -6,7 +6,7 @@ import { Image } from '../Image';
  * @@@
  */
 export function scaleImage(image: IImage, ratio: number): Image {
-    const newSize = image.size.scale(ratio);
+    const newSize = image.size.scale(ratio).map(Math.ceil);
     const newImage = new Image(newSize);
 
     for (let y = 0; y < newSize.y; y++) {
