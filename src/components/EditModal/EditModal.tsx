@@ -55,4 +55,5 @@ export function EditModal(props: EditModalProps) {
 /**
  * TODO: !!! Design
  * TODO: !!! Split into info and edit part
+ * TODO: !!! Allow to apply color-stats with different algorithms
  */
