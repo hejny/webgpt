@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Retro-Futuristic Space Station for Exploration
+# Retro-Futuristic Space Station
 
 Transport yourself to a world of sci-fi wonder with our pixel art depiction of a space station. Featuring blocky shapes and limited colors, this background creates a unique retro-futuristic feel that is sure to inspire your imagination.
 

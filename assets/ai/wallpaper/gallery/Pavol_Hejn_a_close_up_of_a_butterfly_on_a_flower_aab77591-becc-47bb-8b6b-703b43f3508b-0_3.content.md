@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Natural Beauty: Butterfly and Flower Close-Ups
+# Close-Ups: Butterflies and Flowers
 
 Bring the beauty of nature to your digital space with this stunning close-up of a butterfly perched on a delicate flower. The intricate details of the butterfly's wings and the vibrant colors of the flower will transport you to a peaceful garden oasis.
 

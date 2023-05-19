@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cave Explorers Unveiling Distant Planet's Mysteries
+# Explorers Unveiling Planet's Mysteries from Cave
 
 Welcome to our website dedicated to showcasing the incredible journey of our team of Ainautes and their AI companions as they explore the vast and mysterious cave system on a distant planet. 
 

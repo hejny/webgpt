@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Robot Hand Background Sparks Creativity
+# Robot Hand Inspires Creativity
 
 Welcome to our website, where we provide resources and inspiration to help you unleash your creativity. Our minimalist background featuring a robot hand holding a stylus or pen is the perfect visual aid for anyone who loves to sketch, take notes, or needs a reminder to stay focused.
 

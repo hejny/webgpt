@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Retro Space Station: Explore Deep Space
+# Retro Deep Space Station
 
 Step into a world of sci-fi wonder with our pixel art depiction of a space station. The limited colors and blocky shapes create a unique aesthetic that blends the past and the future, transporting you to a retro-futuristic world.
 

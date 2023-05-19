@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Vintage Car Rentals for Adventure
+# Vintage Car Adventure Rentals
 
 Welcome to Vintage Car Rentals, where we offer a unique way to travel back in time and experience the thrill of driving a classic car. Our collection includes a variety of vintage cars from the 1920s to the 1970s, each restored to its original glory. 
 
