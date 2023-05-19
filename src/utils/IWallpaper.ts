@@ -20,7 +20,7 @@ export interface IWallpaper {
 }
 
 export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
-export type IWallpaperColorStats = IImageColorStats;
+export type IWallpaperColorStats = IImageColorStats<string>;
 
 /**
  * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"

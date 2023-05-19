@@ -10,6 +10,12 @@ export interface IComputeImageColorStats<TVersion extends string> {
 export interface IImageColorStats<TVersion extends string> {
     version: TVersion;
     palette: Array<WithTake<Color>>;
+
+    /**
+     * The average color of the image as a Color object
+     */
+    averageColor: WithTake<Color>;
+
     // TODO: colorSpace:number
     // TODO: scaleRatio:number
 }

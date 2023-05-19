@@ -2,7 +2,6 @@ import { IWallpaper } from '../../src/utils/IWallpaper';
 import { Color } from './color/Color';
 import { darken } from './color/operators/darken';
 import { grayscale } from './color/operators/grayscale';
-import { mixWithColor } from './color/operators/mixWithColor';
 import { negative } from './color/operators/negative';
 import { withAlpha } from './color/operators/withAlpha';
 
@@ -34,7 +33,9 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     // TODO: [🥼] !!!! Use ONLY palette colors - SNAP to nearest palette color
 
     const highlightedTextShaddow = `0 0 30px ${highlightedTextColor.then(negative).toHex()}`;
-    const normalTextColor = highlightedTextColor.then(mixWithColor(0.2, colorStats.mostFrequentColors[0]));
+    const normalTextColor = highlightedTextColor.then(
+        /*mixWithColor(0.2, colorStats.mostFrequentColors[0] )*/ withAlpha(0.8),
+    ); /* <- TODO: Figure out the best */
 
     const mainBackground = `linear-gradient(to bottom, ${mainBackgroundColor.toHex()}, ${mainBackgroundColor
         .then(grayscale)
@@ -43,7 +44,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
         url(/patterns/simple/grey.png)`;
 
     // TODO: !!!! Footer must be always black
-    const footerTextColor = colorStats.darkestColor.then(negative);
+    const footerTextColor = Color.fromHex('#ccc');
     const footerBackground = `linear-gradient(to bottom, ${footerTextColor
         .then(negative)
         .then(darken(0.2))
