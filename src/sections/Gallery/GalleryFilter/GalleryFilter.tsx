@@ -88,7 +88,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
         defaultFilter.limit !== limit ||
         defaultFilter.isRandom !== isRandom
     ) {
-        onFilterChange({ fulltext, color, limit, isRandom }); /* <- !!!! [4] Better */
+        onFilterChange({ fulltext, color, limit, isRandom }); /* <- TODO: [4] Better */
     }
 
     return (

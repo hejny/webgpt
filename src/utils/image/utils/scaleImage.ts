@@ -58,5 +58,5 @@ function interpolate(q11: Color, q12: Color, q21: Color, q22: Color, x: number, 
  * TODO: Maybe implement via avarage https://sharegpt.com/c/me0ZGD2
  * TODO: Work internally with IVector and mix color operator
  * Note: [🚇] We do not need alpha channel for this application
- * TODO: !!!! ACRY apply [🚇]
+ * TODO: !! ACRY apply [🚇]
  */

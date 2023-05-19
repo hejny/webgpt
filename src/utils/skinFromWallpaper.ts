@@ -31,7 +31,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
     const mainBackgroundColor = colorStats.palette[0];
     const highlightedTextColor = colorStats.palette[1];
 
-    // TODO: !!!! Use ONLY palette colors - SNAP to nearest palette color
+    // TODO: [🥼] !!!! Use ONLY palette colors - SNAP to nearest palette color
 
     const highlightedTextShaddow = `0 0 30px ${highlightedTextColor.then(negative).toHex()}`;
     const normalTextColor = highlightedTextColor.then(mixWithColor(0.2, colorStats.mostFrequentColors[0]));
@@ -42,7 +42,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
         .toHex()}),
         url(/patterns/simple/grey.png)`;
 
-    // TODO: !!!! Footer always black
+    // TODO: !!!! Footer must be always black
     const footerTextColor = colorStats.darkestColor.then(negative);
     const footerBackground = `linear-gradient(to bottom, ${footerTextColor
         .then(negative)

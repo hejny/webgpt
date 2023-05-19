@@ -67,7 +67,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
 
 export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0];
 
-// TODO: !!!! Pass theese as a parameter to the function createComputeImageColorStats
+// TODO: [🧠] !! Pass theese as a parameter to the function createComputeImageColorStats
 
 export const COLORS_LIMIT = 10;
 export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;

@@ -24,7 +24,8 @@ export function computeImagePalette(
         colorStats,
         colorStats.bottomLine /* TODO: Combinations */,
     ]) {
-        // TODO: !!!! Here also get in account the color count
+        // TODO: !! Here also get in account the color count
+        
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
             paletteCandidates.push(mostSatulightedColor);
         }
