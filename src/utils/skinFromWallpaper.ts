@@ -73,7 +73,7 @@ export function skinFromWallpaper(wallpaper: IWallpaper): ISkin {
 }
 
 /**
- * TODO: [🧠] !! Remove Skin and USE ONLY palette + put font into css vars
+ * TODO: [🧠][🥼] !! Remove Skin and USE ONLY palette + put font into css vars
  * TODO: !! Use computeImagePalette OR precumpute in colorstats (v7)
  *       - https://ai.hejny.org/showcase/5cec4e9b-6a09-46d7-be3f-342ad9cf9ed3 (white text)
  * TODO: Make footer dynamic from Wallpaper

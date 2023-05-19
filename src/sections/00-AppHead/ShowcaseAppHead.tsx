@@ -41,7 +41,7 @@ export function ShowcaseAppHead() {
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
                 <meta
                     name="theme-color"
-                    content={skin.mainBackground /* <- TODO: Is it a good idea to pick theme-color this way */}
+                    content={skin.mainBackground /* [🥼] */ /* <- TODO: Is it a good idea to pick theme-color this way */}
                 />
 
                 {/* Open Graph (Facebook) */}

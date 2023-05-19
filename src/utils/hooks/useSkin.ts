@@ -9,3 +9,7 @@ import { useWallpaper } from './useWallpaper';
 export function useSkin(): ISkin {
     return skinFromWallpaper(useWallpaper());
 }
+
+/**
+ * TODO: Remove [🥼]
+ */

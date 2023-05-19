@@ -9,7 +9,6 @@ import styles from './Welcome.module.css';
  */
 export function ShowcaseWelcomeSection() {
     const wallpaper = useWallpaper();
-    const skin = useSkin();
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
