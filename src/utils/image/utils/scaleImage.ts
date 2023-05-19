@@ -5,7 +5,7 @@ import { Image } from '../Image';
  * @@@
  */
 export function scaleImage(image: IImage, ratio: number): Image {
-    const newSize = image.size.scale(ratio).map(Math.round);
+    const newSize = image.size.scale(ratio).map(Math.ceil);
     const newImage = new Image(newSize);
 
     for (let y = 0; y < newSize.y; y++) {
@@ -21,5 +21,5 @@ export function scaleImage(image: IImage, ratio: number): Image {
 }
 
 /**
- * TODO: Do some smart scaling then nearest neighbor
+ * TODO: !!!! Do some smart scaling then nearest neighbor
  */

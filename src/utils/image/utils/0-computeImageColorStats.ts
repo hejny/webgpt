@@ -10,6 +10,7 @@ import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
 import { computeImagePalette } from './computeImagePalette';
 import { IImageColorStats, IImageColorStatsRegion } from './IImageColorStats';
+import { scaleImage } from './scaleImage';
 
 /**
  * Compute the image color statistics
@@ -35,7 +36,7 @@ export function computeImageColorStats(image: IImage): IImageColorStats {
  * Compute the image color statistics for whole image
  */
 function computeWholeImageColorStats(image: IImage): IImageColorStatsRegion {
-    // image = scaleImage(image, 0.1);
+    image = scaleImage(image, 0.1);
     image = colorDownscaleImage(image, 16);
 
     return {
