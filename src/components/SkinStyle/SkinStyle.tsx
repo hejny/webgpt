@@ -13,12 +13,19 @@ export function SkinStyle() {
                 --highlighted-text-color: ${skin.highlightedTextColor.toHex()};
                 --highlighted-text-shaddow: ${skin.highlightedTextShaddow};
                 --footer-text-color: ${skin.footerTextColor.toHex()};
-                --main-background: ${skin.mainBackground};
                 --footer-background: ${skin.footerBackground};
 
                 ${[...skin.palette, ...skin.palette, ...skin.palette, ...skin.palette /* <- 💩 */]
-                    .map((color, i) => `--palette-${i}: ${color.toHex()};`)
+                    .flatMap((color, i) => [
+                        `--palette-${i}: ${color.toHex()};`,
+                        `--palette-${i}-red: ${color.red};`,
+                        `--palette-${i}-green: ${color.green};`,
+                        `--palette-${i}-blue: ${color.blue};`,
+                    ])
                     .join('\n')}
+
+        
+
       
             }
         `}</style>

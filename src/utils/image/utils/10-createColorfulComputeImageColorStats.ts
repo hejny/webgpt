@@ -65,5 +65,6 @@ export function createColorfulComputeImageColorStats /* TODO: <TColorBits extend
 }
 
 /**
+ * @see https://youtu.be/gMqZR3pqMjg
  * TODO: Maybe pause inside with some util like forImmediate, forAnimationFrame
  */
