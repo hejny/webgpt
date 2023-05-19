@@ -6,7 +6,7 @@ import { readFile, writeFile } from 'fs/promises';
 import { join, relative } from 'path';
 import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
-import { COLORSTATS_CURRENT_VERSION } from '../../config';
+import { COLORSTATS_DEFAULT_COMPUTE } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
 import { computeImageColorStats } from '../../src/utils/image/utils/10-createColorfulComputeImageColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
@@ -59,7 +59,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
             if (await isFileExisting(colorStatsPath)) {
                 const { version } = YAML.parse(await readFile(colorStatsPath, 'utf8'));
 
-                if (version === COLORSTATS_CURRENT_VERSION) {
+                if (version === COLORSTATS_DEFAULT_COMPUTE.version) {
                     console.info(`⏩ Color stats file has already been computed with same version`);
                     return;
                 }
@@ -69,7 +69,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
             await writeFile(
                 colorStatsPath,
                 YAML.stringify({
-                    version: COLORSTATS_CURRENT_VERSION,
+                    version: COLORSTATS_DEFAULT_COMPUTE.version,
                     note: 'This is just a lock before real color stats are made - if you see this the process is still running or it crashed.',
                 })
                     .split('"')
@@ -112,7 +112,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
     if (isCommited) {
         await commit(
             await getWallpapersDir(),
-            `🎨 Generate wallpapers color-stats version ${COLORSTATS_CURRENT_VERSION}`,
+            `🎨 Generate wallpapers color-stats version ${COLORSTATS_DEFAULT_COMPUTE.version}`,
         );
     }
 
