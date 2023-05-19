@@ -1,5 +1,7 @@
 import { ConfigChecker } from 'configchecker';
 import packageJson from './package.json';
+import { createColorfulComputeImageColorStats } from './src/utils/image/utils/10-createColorfulComputeImageColorStats';
+import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 
 export const VERSION = packageJson.version;
 export const DEBUG = {
@@ -44,7 +46,26 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
-export const COLORSTATS_VERSION = 'colorful-16bit-fullsize-1';
+/**
+ * @@@
+ */
+export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
+    createColorfulComputeImageColorStats({
+        colorBits: 16,
+        scale: 1,
+    }),
+    createColorfulComputeImageColorStats({
+        colorBits: 16,
+        scale: 0.1,
+    }),
+    // TODO: More with createColorfulComputeImageColorStats
+    // TODO: More with different strategy than createColorfulComputeImageColorStats
+];
+
+export const COLORSTATS_DEFAULT_COMPUTE: IComputeImageColorStats<string> = COLORSTATS_COMPUTE_METHODS[0];
+
+// TODO: !!!! Pass theese as a parameter to the function createComputeImageColorStats
+
 export const COLORS_LIMIT = 10;
 export const MOST_SATULIGHTED_COLORS_SATULIGHTION_THEASHOLD_RATIO = 0.5;
 
