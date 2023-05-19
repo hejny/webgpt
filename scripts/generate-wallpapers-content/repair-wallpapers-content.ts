@@ -124,8 +124,9 @@ async function repairWallpapersContent({
             if (isRepairingTitle) {
                 if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
                     let titleShort = await askGpt(`
-                    Make following title shorter: ${title}
-                `);
+                        Make following title shorter: ${title}
+                    `);
+                    // TODO: !!! Search if titleShort contains words like "title" or "short" and if so, ask again
 
                     // Note: Remove the quotes from titleShort
                     titleShort = titleShort.replace(/^"(.*)"$/, '$1');
