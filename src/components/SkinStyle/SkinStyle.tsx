@@ -17,10 +17,12 @@ export function SkinStyle() {
 
                 ${[...skin.palette, ...skin.palette, ...skin.palette, ...skin.palette /* <- 💩 */]
                     .flatMap((color, i) => [
+                        // TODO: !! DRY [🎋]
                         `--palette-${i}: ${color.toHex()};`,
                         `--palette-${i}-red: ${color.red};`,
                         `--palette-${i}-green: ${color.green};`,
                         `--palette-${i}-blue: ${color.blue};`,
+                        `--palette-${i}-triplet: ${color.red}, ${color.green}, ${color.blue};`,
                     ])
                     .join('\n')}
 

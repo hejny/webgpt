@@ -32,11 +32,7 @@
 
     pointer-events: none;
 
-    background: linear-gradient(
-            to bottom,
-            var(--palette-0),
-            rgba(var(--palette-2-red), var(--palette-2-green), var(--palette-2-blue), 0.3)
-        ),
+    background: linear-gradient(to bottom, var(--palette-0), rgba(var(--palette-2-triplet), 0.3)),
         url(/patterns/simple/grey.png);
 }
 
