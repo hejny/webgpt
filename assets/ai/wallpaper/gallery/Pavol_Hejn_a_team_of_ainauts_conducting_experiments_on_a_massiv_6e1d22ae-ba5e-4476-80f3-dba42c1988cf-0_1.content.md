@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Frozen Moons in Our Solar System
+# Frozen Moons in Solar System
 
 Welcome to our website dedicated to exploring the frozen moons of our solar system. Our team of Ainautes is conducting experiments on a massive, frozen moon orbiting a gas giant planet, and we're excited to share our findings with you.
 

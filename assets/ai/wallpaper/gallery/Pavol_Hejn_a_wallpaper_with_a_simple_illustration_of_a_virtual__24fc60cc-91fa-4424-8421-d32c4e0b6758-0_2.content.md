@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic VR Website Backgrounds
+# VR Website Backgrounds
 
 Welcome to our tech website where we provide the latest news, reviews, and insights into the world of technology. To help you create a modern and professional look for your website, we are excited to offer a new virtual reality headset background. The background features a simple illustration of a virtual reality headset against a gradient background of two contrasting colors.
 

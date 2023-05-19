@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Vintage Star Map: Explore Space's Wonders
+# Vintage Star Map: Explore Space
 
 Welcome to our website where we offer a captivating vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
 
