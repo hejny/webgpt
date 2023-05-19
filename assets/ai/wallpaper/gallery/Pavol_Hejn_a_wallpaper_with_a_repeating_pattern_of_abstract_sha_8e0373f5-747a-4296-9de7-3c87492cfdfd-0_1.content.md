@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Mandelbrot Shapes for Creativity
+# Mandelbrot Creativity
 
 Transform your workspace with our mesmerizing abstract shapes inspired by the intricate patterns of the Mandelbrot set. The repeating pattern in a monochromatic color scheme will add depth and dimension to your screen, creating a visually stimulating environment that inspires creativity.
 

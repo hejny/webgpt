@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro Car Adventure Inspo Here!
+# Retro Car Adventure Inspo!
 
 Welcome to our website dedicated to all things car and travel-related. Our retro car graphic inspires the adventurer in you, whether you're planning a road trip or simply dreaming of hitting the open road.
 

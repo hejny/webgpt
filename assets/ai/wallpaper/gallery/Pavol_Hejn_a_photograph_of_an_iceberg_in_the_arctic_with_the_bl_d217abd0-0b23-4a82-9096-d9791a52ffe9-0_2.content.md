@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Arctic Discovery: Northern Wonders
+# Arctic Wonders
 
 Welcome to Arctic Adventures, your ultimate guide to exploring the breathtaking beauty of the Arctic. Our website is dedicated to providing you with all the information you need to plan your next adventure to this incredible part of the world.
 

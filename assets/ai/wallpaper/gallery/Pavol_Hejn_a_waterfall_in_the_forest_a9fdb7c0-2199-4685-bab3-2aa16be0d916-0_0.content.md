@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Productive Desktop Backgrounds Inspired by Nature
+# Nature-Inspired Productive Desktop Backgrounds
 
 Looking for a way to bring a piece of nature into your work environment? Our collection of nature-inspired desktop backgrounds offers stunning views that will transport you to the great outdoors without ever leaving your desk. 
 

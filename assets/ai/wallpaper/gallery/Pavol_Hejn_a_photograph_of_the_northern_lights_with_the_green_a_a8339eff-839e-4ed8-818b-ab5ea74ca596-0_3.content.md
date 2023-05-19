@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Aurora Screening: Northern Lights
+# Aurora Northern Lights Screening
 
 Our Aurora Borealis background is a breathtaking image that captures the awe-inspiring beauty of the Northern Lights. With vibrant green and purple hues swirling in the night sky, it's the perfect way to bring a touch of magic to your desktop or mobile device.
 

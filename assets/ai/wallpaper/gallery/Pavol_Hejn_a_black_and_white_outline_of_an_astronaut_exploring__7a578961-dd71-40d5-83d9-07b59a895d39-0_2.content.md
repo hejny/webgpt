@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Space Wonders on Our Site
+# Discover Space Wonders Here
 
 Embark on a journey of space exploration with our captivating black and white illustration of an astronaut exploring a distant planet. With intricate details and shading, this stunning artwork will transport you to another world and inspire your sense of adventure.
 

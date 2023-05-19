@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Night Sky Backgrounds for Nature Exploration
+# Shorter title: Night Sky Backgrounds
 
 Welcome to our website, where we offer a beautiful night sky background that will transport you to a peaceful and inspiring place. Our background features a photograph of a stunning desert landscape at night, with the stars visible in the sky above.
 

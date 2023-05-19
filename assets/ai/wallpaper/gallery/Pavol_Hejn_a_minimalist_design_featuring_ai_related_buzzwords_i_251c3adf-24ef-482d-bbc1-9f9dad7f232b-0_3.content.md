@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI Buzzwords: Latest Trends Update.
+# AI Trends Update
 
 This minimalist design features a collection of AI-related buzzwords in different fonts and colors, perfect for anyone interested in staying up-to-date with the latest trends in artificial intelligence.
 

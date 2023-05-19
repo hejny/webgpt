@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring Frozen Moons in Our Solar System
+# Exploring Frozen Moons
 
 Welcome to our website dedicated to the exploration of the frozen moons orbiting gas giant planets in our solar system. Our team of Ainautes is conducting groundbreaking experiments on these icy worlds, uncovering their secrets and pushing the boundaries of scientific knowledge.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Gas Giant Planet's Depths Explored
+# Exploring Gas Giant Depths
 
 Welcome to our website, where we showcase the incredible work of our team of Ainautes and their AI companions as they conduct groundbreaking experiments on the surface of a massive gas giant planet. 
 

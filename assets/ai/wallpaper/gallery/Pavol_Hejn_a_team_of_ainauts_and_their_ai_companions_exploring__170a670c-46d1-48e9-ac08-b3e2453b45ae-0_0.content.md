@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Ainautes: Space Station Mystery
+# Ainautes Mystery
 
 Welcome to our website, where you can join us on an exciting journey of discovery! Our team of skilled Ainautes and their trusty AI companions are currently exploring a massive, ancient space station that orbits a distant planet. 
 

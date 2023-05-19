@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# DarkNet for Private Communication
+# Private DarkNet Communication
 
 Welcome to DarkNet, a platform designed to provide secure and private communication for individuals and businesses. Our platform is built on a powerful neural network that ensures the highest level of security for all your communications.
 

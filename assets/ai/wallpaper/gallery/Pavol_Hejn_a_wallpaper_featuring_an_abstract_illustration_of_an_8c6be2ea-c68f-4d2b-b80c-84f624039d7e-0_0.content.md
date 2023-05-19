@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# AI Search: Minimalist Design for Future Exploration
+# AI Search: Minimalist Future Exploration
 
 Welcome to our website, where we explore the exciting world of AI-powered search engines. Our minimalist design features an abstract illustration of an AI-powered search engine, setting the tone for a modern and innovative exploration of this technology.
 

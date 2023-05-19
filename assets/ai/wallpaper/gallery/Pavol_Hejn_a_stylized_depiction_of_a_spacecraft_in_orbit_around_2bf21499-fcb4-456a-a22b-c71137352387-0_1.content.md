@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Immersive Space's Cosmic Backdrops
+# Immersive Space's Cosmos
 
 Welcome to our website, where we offer a collection of high-quality backgrounds for your desktop and mobile devices. Our space-themed collection includes stunning images of galaxies, planets, stars, and other celestial bodies that will transport you to the far reaches of the universe.
 

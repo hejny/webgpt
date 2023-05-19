@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Snowy Mountains with Winter Sports Gear
+# Winter Sports in Snowy Mountains
 
 Welcome to our website, where we offer a wide range of winter sports gear for adventure enthusiasts. Our passion for snow sports is reflected in the quality and variety of products we offer. Whether you're a seasoned pro or a beginner, we have everything you need to make your winter sports experience unforgettable.
 

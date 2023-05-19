@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Cybersecurity for Business Threats
+# Business Cybersecurity Threats
 
 Welcome to our cybersecurity blog, where we provide valuable insights and tips to help you protect your business from evolving online threats. Our website features a powerful background wallpaper that reflects the dark and ominous nature of cybercrime.
 

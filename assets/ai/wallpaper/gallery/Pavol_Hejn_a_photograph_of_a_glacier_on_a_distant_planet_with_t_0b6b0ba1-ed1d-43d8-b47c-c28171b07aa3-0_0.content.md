@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Wonders with Space Backgrounds
+# Wonderful Space Backgrounds
 
 Welcome to our website, where we offer a range of space-themed backgrounds that will transport you to distant galaxies and awe-inspiring nebulas. Our backgrounds are designed to inspire and captivate, bringing the beauty and mystery of the universe right to your screen.
 

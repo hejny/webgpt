@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Calm Nature Desktop Backgrounds
+# Tranquil Desktop Backgrounds
 
 Welcome to our website, where you can find a collection of stunning nature-inspired desktop backgrounds. Our images are carefully curated to provide a calming and serene atmosphere for your workspace. 
 

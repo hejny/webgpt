@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Chatbot Enhancing Customer Service
+# AI chatbot improves customer service
 
 Welcome to our website, where we explore the world of AI-powered chatbots and their impact on customer service. Our sleek and modern wallpaper perfectly captures the essence of what we're all about - innovation, efficiency, and user experience.
 

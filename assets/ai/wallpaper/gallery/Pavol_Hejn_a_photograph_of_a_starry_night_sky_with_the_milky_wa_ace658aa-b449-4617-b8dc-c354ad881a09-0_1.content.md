@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Night Sky with Our Astronomy Blog
+# Astronomy Blog: Explore the Night Sky
 
 Welcome to our astronomy blog, where we share fascinating insights and stories about the universe beyond our planet. Our blog is dedicated to helping you discover the beauty and mysteries of space, and we're excited to have you join us on this journey.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Sci-Fi Adventure: Into the Unknown
+# Sci-Fi: Into the Unknown
 
 Welcome to our website, where we take you on a journey through the unexplored depths of space. Our mission is to bring you the latest news and updates from the world of science fiction, including books, movies, and TV shows.
 

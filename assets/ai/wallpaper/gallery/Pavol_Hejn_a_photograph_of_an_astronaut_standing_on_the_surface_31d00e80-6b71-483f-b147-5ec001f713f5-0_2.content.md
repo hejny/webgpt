@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Astronauts: Our Space Exploration Story
+# Astronauts' Space Story
 
 Looking for a way to add some inspiration to your device's background? Our astronaut background is the perfect solution. Featuring an astronaut standing on the surface of the moon with Earth in the background, this image is not just a beautiful backdrop, but a gateway to the mysteries of the universe.
 

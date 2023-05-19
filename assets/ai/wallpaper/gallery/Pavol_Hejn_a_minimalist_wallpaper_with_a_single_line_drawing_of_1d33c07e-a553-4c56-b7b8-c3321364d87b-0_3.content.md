@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist Cyborg: Elevate Your Digital Style
+# Digital Minimalist Cyborg
 
 Add a touch of modern sophistication to your digital devices with our minimalist cyborg design. This sleek and simple single-line drawing captures the essence of futuristic technology and innovation.
 

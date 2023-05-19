@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cybersecurity for Online Security
+# Online Cybersecurity
 
 Welcome to our website dedicated to providing you with the latest information and resources on cybersecurity. Our mission is to help you protect your online security and stay safe while using the internet.
 

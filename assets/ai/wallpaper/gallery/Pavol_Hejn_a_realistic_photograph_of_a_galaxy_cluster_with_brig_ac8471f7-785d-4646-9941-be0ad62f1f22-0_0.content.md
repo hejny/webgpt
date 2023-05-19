@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Stunning Galaxy Cluster Image
+# Stunning Galaxy Cluster Image
 
 Our galaxy cluster image captures the breathtaking beauty and vastness of the cosmos. Whether you're an astronomy enthusiast or simply appreciate stunning imagery, this photograph is sure to inspire wonder and awe.
 

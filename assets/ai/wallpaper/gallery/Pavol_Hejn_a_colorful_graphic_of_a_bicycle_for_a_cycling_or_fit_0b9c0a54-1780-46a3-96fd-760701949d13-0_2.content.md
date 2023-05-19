@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Shortened title: Cycling for Health: A Guide
+# Cycling for Health Guide
 
 Welcome to "Cycle Your Way to Fitness," your go-to resource for all things cycling-related. Whether you're a seasoned pro or just starting out, we've got everything you need to know about using cycling as a tool for improving your health and fitness.
 

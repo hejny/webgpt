@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Data Viz Future with Matrix Design
+# Future of Matrix Data Viz
 
 Our matrix design offers a glimpse into the future of data visualization, with futuristic graphs and visualizations that are perfect for anyone who loves technology and innovation. But our website is about much more than just a design - we're dedicated to exploring the cutting edge of data visualization and helping people understand the power and potential of this exciting field.
 

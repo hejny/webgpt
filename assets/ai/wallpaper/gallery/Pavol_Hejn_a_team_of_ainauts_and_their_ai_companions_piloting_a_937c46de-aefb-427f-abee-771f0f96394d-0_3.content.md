@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Cosmic Journey: Through the Stars.
+# Cosmic Journey: Stars
 
 Welcome to our website dedicated to all things space! Our passion for exploring the cosmos has led us on a journey through the stars, and we want to share that journey with you. As you navigate through our site, you'll find information about the latest space missions, stunning images of galaxies and nebulae, and stories from people who have been inspired by the wonders of the universe.
 

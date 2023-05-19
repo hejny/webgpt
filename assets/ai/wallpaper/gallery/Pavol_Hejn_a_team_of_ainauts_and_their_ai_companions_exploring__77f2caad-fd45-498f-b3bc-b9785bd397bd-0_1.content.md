@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Distant Planet's Cave System
+# Distant Planet's Cave Exploration
 
 Welcome to our website, where we share the incredible journey of a team of Ainautes and their AI companions as they venture deep into the depths of a massive underground cave system on a distant planet. 
 

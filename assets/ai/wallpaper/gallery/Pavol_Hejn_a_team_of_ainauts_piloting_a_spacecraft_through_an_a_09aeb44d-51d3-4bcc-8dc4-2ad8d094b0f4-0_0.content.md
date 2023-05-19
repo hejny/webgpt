@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Shorter title: Space Backgrounds for Exploration
+# Space Exploration Backgrounds
 
 Welcome to our website, where we offer a collection of space-themed backgrounds to transform your digital experience. Our selection includes stunning images of galaxies, planets, and spacecraft, including our popular "A team of Ainautes piloting a spacecraft through an asteroid field" background.
 

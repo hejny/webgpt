@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Shorter title: Abstract Digital Workspace
+# Digital Workspace Abstracted
 
 Welcome to our website where you can discover how to elevate your digital workspace with our abstract shapes and colors background. Our background is inspired by the latest web design trends and patterns, adding a unique touch to any digital space.
 

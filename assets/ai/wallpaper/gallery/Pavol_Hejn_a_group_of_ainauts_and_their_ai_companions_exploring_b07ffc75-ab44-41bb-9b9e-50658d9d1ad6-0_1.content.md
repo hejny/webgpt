@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Abandoned Spacecraft Exploration: Into the Unknown
+# Exploring Abandoned Spacecraft: Into the Unknown
 
 Welcome to our website dedicated to uncovering the secrets of abandoned spacecraft! Our website is designed for space enthusiasts who want to learn more about the mysteries of these relics floating in the depths of space. Our captivating background features a group of Ainautes and their AI companions exploring a massive, abandoned spacecraft.
 

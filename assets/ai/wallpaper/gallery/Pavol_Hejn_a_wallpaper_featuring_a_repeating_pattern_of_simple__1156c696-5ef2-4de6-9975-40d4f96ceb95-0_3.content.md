@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist Math for Elevated Space
+# Minimal Math for High Spaces
 
 Looking to add a touch of sophistication to your home or office? Our math-inspired background is the perfect way to elevate your space. Featuring a repeating pattern of simple equations and formulas, this modern and minimalist design will impress anyone who sees it.
 

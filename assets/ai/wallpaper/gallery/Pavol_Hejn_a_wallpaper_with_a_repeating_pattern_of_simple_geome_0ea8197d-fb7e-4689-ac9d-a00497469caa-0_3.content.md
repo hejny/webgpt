@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Home Decor with Geometric Patterns
+# Elevate Home Decor with Geometrics
 
 Transform your living space into a stylish and sophisticated oasis with our collection of modern geometric patterns. Available in shades of grey or blue, these simple yet elegant designs are the perfect way to add a touch of contemporary flair to any room in your home.
 

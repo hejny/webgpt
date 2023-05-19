@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI's impact on human physiology: Shortened
+# AI's impact on human physiology
 
 ---
 

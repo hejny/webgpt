@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Ocean Wonders on Our Website
+# Explore Ocean Wonders Online
 
 Welcome to our website, where you can explore the beauty and diversity of the ocean through stunning visuals and educational content. Our website features a captivating underwater adventure background that will transport you to the depths of the sea.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Darken Background for Better Aesthetics
+# Darken Background for Better Look
 
 Welcome to Dark Machine, where we offer a unique and captivating experience for all of our visitors. Our dark machine background is just one of the many features that sets us apart from other websites.
 

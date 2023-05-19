@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Quantum Computing Background Innovation
+# Quantum Computing Innovation
 
 Our website provides a unique digital rendering of a quantum computer as a background for your desktop or mobile device. The minimalist color scheme and geometric lines create a modern and sleek look that reflects the cutting-edge nature of this field.
 

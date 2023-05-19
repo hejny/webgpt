@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore Space Wonders with Adventure Background
+# Adventure Background: Explore Space Wonders
 
 Welcome to our website, where you can experience the thrill of space exploration from the comfort of your own home. Our Planetary Adventure Background will transport you to a distant world, where towering mountains and deep canyons await your discovery.
 
