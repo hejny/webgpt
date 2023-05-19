@@ -13,8 +13,8 @@ export function scaleImage(image: IImage, ratio: number): Image {
         for (let x = 0; x < newSize.x; x++) {
             const startX = Math.floor(x / ratio);
             const startY = Math.floor(y / ratio);
-            const endX = Math.floor((x + 1) / ratio);
-            const endY = Math.floor((y + 1) / ratio);
+            const endX = Math.ceil((x + 1) / ratio) - 1;
+            const endY = Math.ceil((y + 1) / ratio) - 1;
 
             const pixel = averagePixels(image, startX, startY, endX, endY);
             newImage.setPixel({ x, y }, pixel);

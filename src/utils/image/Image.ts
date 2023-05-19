@@ -1,3 +1,4 @@
+import spaceTrim from 'spacetrim';
 import { IVector, Vector } from 'xyzt';
 import { Color } from '../color/Color';
 import { WithTake } from '../take/interfaces/ITakeChain';
@@ -71,7 +72,15 @@ export class Image implements IImage {
             return this.pixels[position.y || 0][position.x || 0];
         } else {
             // Throw an error if the position is out of bounds
-            throw new Error(`Invalid pixel position (${position.x || 0}, ${position.y || 0})`);
+            throw new Error(
+                spaceTrim(`
+                    Invalid pixel position [${position.x || 0}, ${position.y || 0}]
+
+                    Position must be within the image size
+                    from [0, 0]
+                    to [${this.size.x - 1}, ${this.size.y - 1}]
+                `),
+            );
         }
     }
 
