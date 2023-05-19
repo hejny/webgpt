@@ -1,4 +1,5 @@
 import { ConfigChecker } from 'configchecker';
+import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import { createColorfulComputeImageColorStats } from './src/utils/image/utils/10-createColorfulComputeImageColorStats';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
@@ -46,17 +47,19 @@ export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length;
 //                                'Tvořím něco z ničeho nic'
 //                                'Futuristic Cityscape Wallpaper'
 
+export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
+
 /**
  * @@@
  */
 export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
     createColorfulComputeImageColorStats({
         colorBits: 16,
-        scale: 1,
+        size: IMAGE_NATURAL_SIZE,
     }),
     createColorfulComputeImageColorStats({
         colorBits: 16,
-        scale: 0.1,
+        size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
     // TODO: More with createColorfulComputeImageColorStats
     // TODO: More with different strategy than createColorfulComputeImageColorStats

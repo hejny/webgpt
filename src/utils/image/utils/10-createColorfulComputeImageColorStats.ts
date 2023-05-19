@@ -1,4 +1,4 @@
-import { Vector } from 'xyzt';
+import { IVector, Vector } from 'xyzt';
 import { IImage } from '../IImage';
 import { colorDownscaleImage } from './colorDownscaleImage';
 import { computeImageAverageColor } from './computeImageAverageColor';
@@ -16,13 +16,20 @@ import { scaleImage } from './scaleImage';
  */
 export function createColorfulComputeImageColorStats /* TODO: <TColorBits extends number, TScale extends number>*/(options: {
     colorBits: number;
-    scale: number;
+    size: IVector;
 }): IComputeImageColorStats<string /* TODO: `colorful-${TColorBits}bit-${...}-1`*/> {
-    const { scale, colorBits } = options;
-    const version = `colorful-${options.colorBits}bit-${options.scale === 1 ? 'fullsize' : options.scale}-1` as string;
+    const { colorBits } = options;
+
+    // Check that size has positive integer values
+    const size = Vector.fromObject(options.size);
+    if (size.x < 1 || size.y < 1 || size.x % 1 !== 0 || size.y % 1 !== 0) {
+        throw new Error(`Size must have positive integer values, got ${size.x}x${size.y}`);
+    }
+
+    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v11` as string;
 
     const computeWholeImageColorStats = (image: IImage): IImageColorStatsRegion => {
-        image = scaleImage(image, scale);
+        image = scaleImage(image, size);
         image = colorDownscaleImage(image, colorBits);
 
         return {

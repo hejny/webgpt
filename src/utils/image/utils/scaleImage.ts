@@ -1,3 +1,4 @@
+import { IVector } from 'xyzt';
 import { Color } from '../../color/Color';
 import { IImage } from '../IImage';
 import { Image } from '../Image';
@@ -5,19 +6,18 @@ import { Image } from '../Image';
 /**
  * @@@
  */
-export function scaleImage(image: IImage, ratio: number): Image {
-    const newSize = image.size.scale(ratio).map(Math.ceil);
+export function scaleImage(image: IImage, newSize: IVector): Image {
     const newImage = new Image(newSize);
 
-    for (let y = 0; y < newSize.y; y++) {
-        for (let x = 0; x < newSize.x; x++) {
+    for (let y = 0; y < newSize.y!; y++) {
+        for (let x = 0; x < newSize.x!; x++) {
             const oldX = (x * image.width) / newImage.width;
             const oldY = (y * image.height) / newImage.height;
 
             const x1 = Math.floor(oldX);
             const y1 = Math.floor(oldY);
-            const x2 = Math.ceil(oldX);
-            const y2 = Math.ceil(oldY);
+            const x2 = Math.floor(oldX);
+            const y2 = Math.floor(oldY);
 
             const q11 = image.getPixel({ x: x1, y: y1 });
             const q12 = image.getPixel({ x: x1, y: y2 });
