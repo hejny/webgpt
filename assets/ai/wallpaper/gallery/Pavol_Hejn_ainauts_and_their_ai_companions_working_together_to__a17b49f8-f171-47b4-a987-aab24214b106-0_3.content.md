@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI and Ainautes in Space Travel
+# AI and Ainautes in Space
 
 Imagine a world where space travel is as routine as taking a plane. That's the vision of the Ainautes, a team of astronauts and their AI companions who are working together to construct a massive, orbiting space elevator.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Future Design for Creatives
+# Retro-Future Design
 
 Looking to add a unique and eye-catching touch to your creative project? Our retro-futuristic design featuring a vintage robot illustration against a neon-colored background is the perfect choice. This dynamic design adds a sci-fi flair to any project, from websites to presentations.
 

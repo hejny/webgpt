@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# SmartNotify: Don't Miss Notifications
+# SmartNotify: Stay Notified
 
 SmartNotify is the ultimate solution for staying on top of your notifications. Our advanced app ensures that you never miss an important message or alert again.
 
