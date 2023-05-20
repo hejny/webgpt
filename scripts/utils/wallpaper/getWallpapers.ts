@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
-import { COLORSTATS_DEFAULT_COMPUTE, FONTS } from '../../../config';
+import { FONTS } from '../../../config';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
@@ -69,13 +69,9 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             continue;
         }
 
-        if (colorStats.version !== COLORSTATS_DEFAULT_COMPUTE.version) {
+        if (!colorStats.palette) {
             if (showWarnings) {
-                console.warn(
-                    chalk.yellow(
-                        ` ⏩  Skipping wallpaper ${id} Colors has different version "${colorStats.version}" (expected "${COLORSTATS_DEFAULT_COMPUTE.version}")`,
-                    ),
-                );
+                console.warn(chalk.yellow(` ⏩  Skipping wallpaper ${id} Colors has no palette`));
             }
             continue;
         }
