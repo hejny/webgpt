@@ -55,10 +55,12 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                 return;
             }
 
-            if (title?.toLowerCase().includes('wallpaper')) {
-                rm(contentPath);
-                console.info(chalk.red(`🗑 Removing file because it contains "wallpaper" in title\n"${title}"`));
-                return;
+            for (const bannedWord of ['wallpaper', 'background', 'welcome', 'desktop']) {
+                if (title?.toLowerCase().includes(bannedWord)) {
+                    await rm(contentPath);
+                    console.info(chalk.red(`🗑 Removing file because it contains "${bannedWord}" in title\n"${title}"`));
+                    return;
+                }
             }
 
             if (
@@ -70,14 +72,14 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                     /^-\s+/m.test(content)
                 )
             ) {
-                rm(contentPath);
+                await rm(contentPath);
                 console.info(chalk.red(`🗑 Removing file because it has no structure`));
                 return;
             }
 
             const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             if (!font || !FONTS.includes(font)) {
-                rm(contentPath);
+                await rm(contentPath);
                 console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
                 return;
             }
@@ -88,7 +90,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         await commit(await getWallpapersDir(), `🧾🗑 Remove wallpapers content`);
     }
 
-    console.info(`[ Done 🧾🗑  Removeing wallpapers content ]`);
+    console.info(`[ Done 🧾🗑  Removing wallpapers content ]`);
 }
 
 /**
