@@ -1,6 +1,13 @@
+import { RouterContext } from 'next/dist/shared/lib/router-context';
+import { useRouter } from 'next/router';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { DEBUG } from '../../../config';
+import ShowcasePage from '../../pages/showcase/[slug]';
+import { DebugContext } from '../../pages/_app';
 import { Color } from '../../utils/color/Color';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
+import { ShuffleSeedContext } from '../Shuffle/Shuffle';
 import styles from './EditModal.module.css';
 
 interface EditModalProps {
@@ -13,6 +20,7 @@ interface EditModalProps {
 export function EditModal(props: EditModalProps) {
     const { turnOffEditing } = props;
     const wallpaper = useWallpaper();
+    const router = useRouter();
 
     return (
         <>
@@ -45,6 +53,24 @@ export function EditModal(props: EditModalProps) {
                 <div className={styles.xxxx}>
                     <button className={'button'} onClick={turnOffEditing}>
                         Done
+                    </button>
+
+                    <button
+                        className={'button'}
+                        onClick={() => {
+                            const html = renderToStaticMarkup(
+                                <RouterContext.Provider value={router}>
+                                    <DebugContext.Provider value={DEBUG}>
+                                        <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
+                                            <ShowcasePage currentWallpaper={wallpaper} randomWallpaper={wallpaper} />
+                                        </ShuffleSeedContext.Provider>
+                                    </DebugContext.Provider>
+                                </RouterContext.Provider>,
+                            );
+                            console.log(html);
+                        }}
+                    >
+                        Download
                     </button>
                 </div>
             </div>

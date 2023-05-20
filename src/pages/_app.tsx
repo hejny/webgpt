@@ -7,6 +7,7 @@ import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
 import '../styles/globals.css';
 import '../styles/reset.css';
 
+// TODO: !!! Do not use hardcoded fonts
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 export const DebugContext = createContext<typeof DEBUG>(DEBUG);
 
