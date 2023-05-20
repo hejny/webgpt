@@ -49,50 +49,51 @@
         },
         {
             "name": "🏭🖼️ Generate wallpapers (every step + commit)",
-            "commands": [
-                "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit",
-                "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit",
-                "ts-node ./scripts/generate-wallpapers-library/generate-wallpapers-library.ts --parallel 10 --commit",
-                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --commit",
-                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-title --commit",
-                "ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts --commit"
-            ],
+            "commands": ["TODO", "TODO"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭⏬ [ 1/5 ] Harvest wallpapers library",
+            "name": "🏭⏬ [1] Harvest wallpapers library",
             "commands": ["ts-node ./scripts/generate-wallpapers-harvest/TODO.txt"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🧾 [2-3/5] Generate wallpapers content",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10"],
+            "name": "🏭🧾 [2] Generate wallpapers content",
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-content/generate-wallpapers-content.ts --parallel 10 --commit"
+            ],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🎨 [2-3/5] Generate wallpapers color stats",
-            "commands": ["ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts"],
+            "name": "🏭🧾 [3] Repair wallpapers content fonts",
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts --commit"
+            ],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🧾 [ 4/5 ] Repair wallpapers content fonts",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts --repair-fonts "],
+            "name": "🏭🧾 [4] Remove wallpapers content (If not empty goto [2])",
+            "commands": ["ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts --commit"],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🧾 [ 4/5 ] Repair wallpapers content title",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts  --repair-title"],
+            "name": "🏭🧾 [5] Repair wallpapers content title (Run multiple times until commit empty)",
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-content/repair-wallpapers-content.ts  --repair-title --commit"
+            ],
             "onlySingle": true,
             "focus": true
         },
         {
-            "name": "🏭🧾 [ 5/5 ] Remove wallpapers content",
-            "commands": ["ts-node ./scripts/generate-wallpapers-content/remove-wallpapers-content.ts"],
+            "name": "🏭🎨 [6] Generate wallpapers color stats",
+            "commands": [
+                "ts-node ./scripts/generate-wallpapers-color-stats/generate-wallpapers-color-stats.ts --commit"
+            ],
             "onlySingle": true,
             "focus": true
         },
