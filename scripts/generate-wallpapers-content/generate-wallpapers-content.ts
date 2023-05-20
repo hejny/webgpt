@@ -142,7 +142,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             /**/
 
             /**/
-            const font = randomItem([...FONTS]);
+            const font = randomItem(...FONTS);
             /**/
 
             await writeFile(
