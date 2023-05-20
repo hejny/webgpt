@@ -215,13 +215,6 @@ function createContentPromptTemplate() {
             - Links should be only #hash anchors (and you can refer to the document itself)
             - Do not include images
         `,
-        `
-            Write me markdown content of website with wallpaper:
-
-            "🟦"
-
-            The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
-        `,
     );
 }
 
