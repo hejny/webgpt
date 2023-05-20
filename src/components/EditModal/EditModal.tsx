@@ -2,10 +2,10 @@ import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DEBUG } from '../../../config';
-import ShowcasePage from '../../pages/showcase/[slug]';
 import { DebugContext } from '../../pages/_app';
 import { Color } from '../../utils/color/Color';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { HeaderWallpaper } from '../HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
 import { ShuffleSeedContext } from '../Shuffle/Shuffle';
 import styles from './EditModal.module.css';
@@ -62,12 +62,20 @@ export function EditModal(props: EditModalProps) {
                                 <RouterContext.Provider value={router}>
                                     <DebugContext.Provider value={DEBUG}>
                                         <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
-                                            <ShowcasePage currentWallpaper={wallpaper} randomWallpaper={wallpaper} />
+                                            <WallpapersContext.Provider
+                                                value={[wallpaper]} /* <- This provider is already in ShowcasePage */
+                                            >
+                                                <HeaderWallpaper />
+                                                {/*
+                                                <ShowcasePage currentWallpaper={wallpaper} randomWallpaper={wallpaper} />
+                                                */}
+                                            </WallpapersContext.Provider>
                                         </ShuffleSeedContext.Provider>
                                     </DebugContext.Provider>
                                 </RouterContext.Provider>,
                             );
                             console.log(html);
+                            alert(html);
                         }}
                     >
                         Download
