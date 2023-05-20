@@ -135,8 +135,15 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 break;
             }
 
+            // TODO: !!! Figure out best strategy to pick font
+            /*/
             const fontPrompt = createFontPromptTemplate();
             const font = await askGpt(fontPrompt, true);
+            /**/
+
+            /**/
+            const font = randomItem([...FONTS]);
+            /**/
 
             await writeFile(
                 contentPath,
