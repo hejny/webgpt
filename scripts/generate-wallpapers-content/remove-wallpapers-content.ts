@@ -5,6 +5,7 @@ import { readFile, rm } from 'fs/promises';
 import { join } from 'path';
 import { FONTS } from '../../config';
 import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
+import { removeMarkdownComments } from '../../src/utils/content/removeMarkdownComments';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
@@ -45,7 +46,9 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentPath',
         async makeWork({ metadataPath, contentPath }) {
-            const content = await readFile(contentPath, 'utf-8');
+            let content = await readFile(contentPath, 'utf-8');
+            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
+            content = removeMarkdownComments(content);
             const title = extractTitleFromMarkdown(content);
 
             // TODO: [💵] DRY this checks
@@ -77,7 +80,6 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                 return;
             }
 
-            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             if (!font || !FONTS.includes(font)) {
                 await rm(contentPath);
                 console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
