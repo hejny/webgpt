@@ -1,0 +1,15 @@
+import { Color } from '../../utils/color/Color';
+import styles from './ColorsInput.module.css';
+
+interface ColorsInputProps {
+    color: Color;
+    onChange(color: Color): void;
+}
+
+/**
+ * @@
+ */
+export function ColorsInput(props: ColorsInputProps) {
+    const { color, onChange } = props;
+    return <div className={styles.ColorsInput}>{sample}</div>;
+}

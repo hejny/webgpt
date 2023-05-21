@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DEBUG } from '../../../config';
 import { DebugContext } from '../../pages/_app';
-import { Color } from '../../utils/color/Color';
 import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { ColorInput } from '../ColorInput/ColorInput';
 import { HeaderWallpaper } from '../HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
 import { ShuffleSeedContext } from '../Shuffle/Shuffle';
@@ -32,22 +32,19 @@ export function EditModal(props: EditModalProps) {
                 </div>
                 <div className={styles.xxxx}>
                     {wallpaper.colorStats.palette.map((color, i) => (
-                        <div key={i}>
-                            Color #{i + 1}{' '}
-                            <input
-                                type="color"
-                                defaultValue={color.toHex()}
-                                onChange={(event) => {
-                                    const color = Color.fromHex(event.target.value);
-                                    // TODO: !! DRY [🎋]
-                                    document.documentElement.style.setProperty(`--palette-${i}`, color.toHex());
-                                    document.documentElement.style.setProperty(
-                                        `--palette-${i}-triplet`,
-                                        `${color.red}, ${color.green}, ${color.blue}`,
-                                    );
-                                }}
-                            />
-                        </div>
+                        <ColorInput
+                            key={i}
+                            defaultValue={color}
+                            onChange={(newColor) => {
+                                // TODO: !! DRY [🎋]
+                                // TODO: !!! Reset when switching wallpapers
+                                document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
+                                document.documentElement.style.setProperty(
+                                    `--palette-${i}-triplet`,
+                                    `${newColor.red}, ${newColor.green}, ${newColor.blue}`,
+                                );
+                            }}
+                        />
                     ))}
                 </div>
                 <div className={styles.xxxx}>
