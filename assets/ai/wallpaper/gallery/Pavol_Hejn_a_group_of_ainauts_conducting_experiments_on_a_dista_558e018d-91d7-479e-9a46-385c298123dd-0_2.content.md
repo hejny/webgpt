@@ -1,57 +1,29 @@
-<!--
-Write me content for website with wallpaper which alt text is:
+<!--font:Barlow Condensed-->
 
-"A group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them."
+# AInautes
 
-The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
+> Navigating the Seas of Artificial Intelligence
 
-- Use markdown format
-- Start with the heading
-- The content should look like a real website
-- Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
-- Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
-- You can use formatting like bold or _italic_
-- You can include UTF-8 emojis
-- Links should be only #hash anchors (and you can refer to the document itself)
-- Do not include images
--->
+Meet the AInautes, your trusted crew to guide your corporate ship through the turbulent, unpredictable, novel and amazing seas of artificial intelligence. We are a leading European generative AI consultancy, composed of a dynamic team of seasoned hackers, artificial intelligence geeks, and dedicated researchers, alongside startup innovators, industry experts, and experienced consultancy professionals.
 
-<!--font:Orbitron-->
+## Why AInautes
 
-# Ainautes
+At AInautes, we don't just work with AI; we create and live AI. Our passion and expertise lie in harnessing the power of generative artificial intelligence to revolutionize your organization's operations, enhance efficiency, and drive unprecedented growth. With our deep knowledge and practical experience, we empower businesses like yours to unlock the full potential of AI, positioning you at the forefront of technological innovation.
 
-> Mission:Future
+## How can AInautes help
 
-Welcome to our website, where we celebrate the future of space exploration with our stunning Ainautes wallpaper. Our wallpaper features a group of Ainautes conducting experiments on a distant planet, with a red sun setting behind them. This captivating image captures the imagination and inspires us to explore the unknown.
+One of our core strengths lies in helping you identify and activate teams, functions, and processes within your organization where generative artificial intelligence can truly add value. We understand that each business has its unique set of challenges, and our tailored approach ensures that we align AI solutions with your specific needs and goals. Whether it's streamlining operations, optimizing workflows, or transforming customer experiences, our AI expertise is deployed strategically to cut time, reduce costs, and ensure the seamless flow of all product and people-related pipelines.
 
-## About Ainautes
+By collaborating closely with your teams, we foster a deep understanding of your business objectives, culture, and aspirations. This enables us to design and implement cutting-edge AI strategies that drive tangible results. From initial ideation to implementation and continuous improvement, our holistic approach ensures a seamless integration of AI technologies into your existing processes, while nurturing a culture of innovation and learning throughout your organization.
 
-Ainautes are advanced robots designed to explore space and conduct scientific experiments in environments that are too dangerous or difficult for humans to access. These robots are equipped with artificial intelligence, enabling them to adapt to changing conditions and make decisions based on their environment.
+## AInautes team
 
-At Ainautes, we believe that the future of space exploration lies in the hands of these intelligent machines. With their advanced capabilities and unwavering dedication, Ainautes are poised to revolutionize our understanding of the universe.
+Our team's diverse backgrounds and extensive domain knowledge enable us to tackle challenges across various industries, from finance and healthcare to retail and manufacturing. We stay abreast of the latest advancements in AI research, constantly exploring emerging technologies and methodologies, so that you can confidently embrace the opportunities presented by the rapidly evolving AI landscape.
 
-## User Stories
+-   [**Tomas Studenik**](https://www.tomas-studenik.com/) - Startup Innovator
+-   [**Pavol Hejny**](https://www.pavolhejny.com/) - Coder & Hacker
+-   [**Simon Kos**](https://svetlodat.eu) - Prompt Engineer
+-   [**Rudolf Rosa**](https://ufal.mff.cuni.cz/rudolf-rosa) - AI Researcher & ML Expert
+-   [**Frantisek Vasek**](https://www.linkedin.com/in/frantavasek) - Business Consultant
 
-Our Ainautes wallpaper has inspired many people to dream about the possibilities of space exploration. Here are some stories from our users:
-
-> "I love the Ainautes wallpaper! It reminds me of all the amazing things we can achieve when we work together and push the boundaries of what is possible." - John, 29
-
-> "Every time I look at the Ainautes wallpaper, I feel like I'm transported to another world. It's such a beautiful image, and it makes me excited for what the future holds." - Sarah, 35
-
-## References
-
-If you're interested in learning more about Ainautes and the future of space exploration, check out these resources:
-
--   [NASA](#) - The official website of the National Aeronautics and Space Administration
--   [SpaceX](#) - The official website of SpaceX, a private space exploration company
--   [The Planetary Society](#) - A non-profit organization dedicated to promoting space exploration and education
-
-## Contact Us
-
-If you have any questions or comments about our Ainautes wallpaper or the future of space exploration, please don't hesitate to get in touch. You can reach us at:
-
--   Email: [contact@ainauts.com](mailto:contact@ainauts.com)
--   Phone: 555-1234
--   Address: 123 Main Street, Anytown USA
-
-Thank you for visiting our website, and we hope that our Ainautes wallpaper inspires you to dream big and explore the unknown!
+<!-- Note: Created from document https://docs.google.com/document/d/151jOkfzMttfowX... ask Tomas for access -->
