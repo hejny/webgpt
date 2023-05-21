@@ -16,14 +16,24 @@ export function SkinStyle() {
                 --footer-background: ${skin.footerBackground};
 
                 ${[...skin.palette, ...skin.palette, ...skin.palette, ...skin.palette /* <- 💩 */]
-                    .flatMap((color, i) => [
-                        // TODO: !! DRY [🎋]
-                        `--palette-${i}: ${color.toHex()};`,
-                        `--palette-${i}-red: ${color.red};`,
-                        `--palette-${i}-green: ${color.green};`,
-                        `--palette-${i}-blue: ${color.blue};`,
-                        `--palette-${i}-triplet: ${color.red}, ${color.green}, ${color.blue};`,
-                    ])
+                    .flatMap((color, i) => {
+                        if (i < skin.palette.length) {
+                            return [
+                                // TODO: !! DRY [🎋]
+                                `--palette-${i}: ${color.toHex()};`,
+                                // `--palette-${i}-red: ${color.red};`,
+                                // `--palette-${i}-green: ${color.green};`,
+                                // `--palette-${i}-blue: ${color.blue};`,
+                                `--palette-${i}-triplet: ${color.red}, ${color.green}, ${color.blue};`,
+                            ];
+                        } else {
+                            const j = i % skin.palette.length;
+                            return [
+                                `--palette-${i}: var(--palette-${j});`,
+                                `--palette-${i}-triplet: var(--palette-${j}-triplet);`,
+                            ];
+                        }
+                    })
                     .join('\n')}
 
         
@@ -35,6 +45,7 @@ export function SkinStyle() {
 }
 
 /**
+ * TODO: When CSS Relative colors will be supported, then we can get rid of --palette-x-triplet
  * TODO: [🥼] Use ONLY --palette vars
  * TODO: !! Make repeat in palette to guarantee at least 10 colors
  * TODO: Allow partial ISkin
