@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Achieve Your Fitness Goals with Our Comprehensive Resources
+# Fitness Resources
 
 Welcome to our fitness website, where we offer a comprehensive range of resources to help you achieve your health and fitness goals. Our website features a colorful graphic of a bicycle race that represents the active lifestyle we promote.
 

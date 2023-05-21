@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Bringing Nature Indoors: Our Botanical-Inspired Website
+# Botanical Website
 
 Welcome to our website, where we celebrate the beauty of nature and bring it indoors through our stunning botanical-inspired designs. Our website features a collection of designs that take inspiration from the natural world, including delicate flowers, lush foliage, and intricate spiderwebs with dew drops.
 

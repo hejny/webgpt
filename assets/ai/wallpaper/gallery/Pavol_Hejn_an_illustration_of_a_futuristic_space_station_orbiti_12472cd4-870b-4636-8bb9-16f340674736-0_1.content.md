@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Explore the Future of Space Travel with Our Innovative Website Design
+# Space Future
 
 Welcome to our website, where we delve into the latest advancements in space technology and travel. Our sleek and futuristic design features an illustration of an orbital station orbiting a distant planet, providing the perfect visual backdrop for our content.
 

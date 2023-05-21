@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Journey Through the Cosmos: Exploring the Wonders of Space
+# Cosmic Journey
 
 Welcome to our website, where we invite you to embark on a journey through the cosmos and discover the mysteries of space. Our realistic photograph of a galaxy cluster serves as a backdrop for your exploration, showcasing the beauty and vastness of the universe.
 

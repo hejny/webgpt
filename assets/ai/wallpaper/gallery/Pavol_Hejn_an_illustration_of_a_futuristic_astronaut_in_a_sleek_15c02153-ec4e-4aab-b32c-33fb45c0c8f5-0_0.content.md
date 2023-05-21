@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Explore the Final Frontier with Our Futuristic Space Adventure Background
+# Space Adventure Backgrounds
 
 Welcome to our website, where we offer a stunning wallpaper that will take you on a journey to the far reaches of space. Our wallpaper features an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet. With this background, you can immerse yourself in a world of space exploration and adventure.
 

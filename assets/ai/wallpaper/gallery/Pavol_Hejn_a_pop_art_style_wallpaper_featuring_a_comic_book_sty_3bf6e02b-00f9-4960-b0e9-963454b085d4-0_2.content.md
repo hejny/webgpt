@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Elevate Your Workspace with Our Futuristic Cybernetic Design
+# Cyber Workspace
 
 Welcome to our website where we offer a unique pop art-style wallpaper that will transform your workspace into a futuristic cybernetic environment. Our wallpaper features a comic book-style illustration of a futuristic robot or cyborg that will add a touch of sci-fi to any room.
 

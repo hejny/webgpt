@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# "Tech-Infused: Elevate Your Digital Workspace with Circuitry"
+# Circuit Workspace
 
 Welcome to Tech-Infused, a website dedicated to providing you with the latest tech-inspired backgrounds for your digital workspace. Our current featured background is a repeating pattern of circuit board components, in shades of black, grey, and neon green. This dynamic background is perfect for those who want to add a touch of technology to their desktop or mobile device.
 

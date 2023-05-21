@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Inspiring Your Workspace with Vibrant Fractal Patterns
+# Fractal Workspace Vibes
 
 Welcome to our website, where we believe that your workspace should be a reflection of your creativity and personality. That's why we've chosen a stunning fractal pattern as the background for our site. With its bold colors and intricate lines, it's sure to inspire you and add a touch of vibrancy to your day.
 

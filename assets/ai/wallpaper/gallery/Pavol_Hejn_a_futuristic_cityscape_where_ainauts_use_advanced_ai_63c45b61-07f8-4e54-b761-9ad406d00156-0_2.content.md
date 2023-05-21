@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# The Future of City Infrastructure: Ainautes and AI Technology
+# Ainautes & AI City
 
 Welcome to our website dedicated to exploring the cutting-edge technology behind city infrastructure maintenance. Our futuristic cityscape wallpaper serves as a visual representation of the advanced AI technology used by Ainautes to monitor and maintain the city's systems.
 

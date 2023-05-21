@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Neural Networks in Action: Revolutionizing the Future of Technology
+# Neural Revolution
 
 Welcome to our website dedicated to exploring the world of neural networks and their impact on modern technology. Our site is designed to provide you with the latest news, insights, and resources on this exciting field.
 

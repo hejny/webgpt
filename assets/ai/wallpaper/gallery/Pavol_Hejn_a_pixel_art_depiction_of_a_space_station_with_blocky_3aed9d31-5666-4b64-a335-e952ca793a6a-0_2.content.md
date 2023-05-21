@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Galactic Adventures: Explore the Universe
+# Galactic Explore
 
 Welcome to Galactic Adventures, your go-to destination for all things space exploration! Our website is dedicated to providing you with the latest news and updates on space travel, as well as resources for planning your own interstellar journey. 
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Oceanic Wonders: Exploring the Mysteries of the Deep Sea
+# Deep Sea Exploration
 
 Welcome to Oceanic Wonders, a website dedicated to uncovering the secrets of the ocean. Our stunning digital background features a painting of a deep sea creature with tentacles and bioluminescent patterns, evoking a sense of wonder and intrigue.
 

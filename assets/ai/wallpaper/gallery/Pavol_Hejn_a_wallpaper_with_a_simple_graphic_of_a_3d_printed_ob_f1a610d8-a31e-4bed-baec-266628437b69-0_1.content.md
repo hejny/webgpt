@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Boost Online Presence with Geometric Design
+# Geometric Boost
 
 Welcome to our website, where we offer you a unique and modern geometric design to enhance your online presence. Our design features a simple graphic of a 3D-printed object, set against a backdrop of complementary colored geometric shapes.
 

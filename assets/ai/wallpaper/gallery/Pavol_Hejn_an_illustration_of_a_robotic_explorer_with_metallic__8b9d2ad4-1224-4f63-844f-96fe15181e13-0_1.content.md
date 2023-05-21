@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Exploring the Future: A Community for Futuristic Enthusiasts
+# Futuristic Community
 
 Welcome to our community of like-minded individuals who share a passion for exploring the exciting possibilities of the future. Our website features an illustration of a robotic explorer with metallic textures and intricate details, serving as a backdrop for our discussions and resources.
 

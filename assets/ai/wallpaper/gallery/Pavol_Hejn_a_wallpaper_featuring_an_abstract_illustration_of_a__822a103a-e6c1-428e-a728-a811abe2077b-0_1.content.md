@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Embrace the Future with Our Tech Blog
+# Future Tech Blog
 
 Welcome to our tech blog, where we explore the latest advancements and trends in technology. As a bonus, we are excited to offer you a stunning wallpaper featuring an abstract illustration of a dark and futuristic cityscape. 
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Tech-Savvy Professionals: Elevate Your Workspace with a Sleek Digital Devices Background
+# Sleek Workspace Tech
 
 As a tech-savvy professional, you want your workspace to reflect your passion for digital devices. Our sleek and modern background featuring a repeating pattern of smartphones, tablets, and laptops is the perfect way to add a touch of personality to your computer screen.
 

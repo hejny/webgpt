@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Quantum Computing: Advancing Technology for the Future
+# Quantum Future
 
 Welcome to our website dedicated to exploring the world of quantum computing and its potential impact on our future. Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as a backdrop to our mission of educating and inspiring others about this exciting field.
 

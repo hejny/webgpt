@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Get Inspired for Your Next Adventure
+# Adventure Inspiration
 
 Welcome to our travel website, where we provide you with all the necessary information and inspiration for your next vacation. Our homepage features a colorful graphic of a beach party with palm trees and cocktails, setting the tone for the exciting adventures that await you.
 

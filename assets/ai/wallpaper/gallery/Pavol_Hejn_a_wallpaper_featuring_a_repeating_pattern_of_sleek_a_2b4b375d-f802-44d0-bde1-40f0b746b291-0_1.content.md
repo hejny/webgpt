@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Digital Workspace: Transform Your Space with a Modern Touch
+# Modern Workspace
 
 Upgrade your workspace with our sleek and modern digital devices wallpaper. The repeating pattern of smartphones, tablets, and laptops adds a unique touch to any space and showcases your love for technology.
 

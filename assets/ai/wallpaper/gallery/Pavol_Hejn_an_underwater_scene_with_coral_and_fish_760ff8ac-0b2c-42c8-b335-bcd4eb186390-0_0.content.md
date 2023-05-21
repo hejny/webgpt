@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Oceanic Wonders: Explore the Depths of the Sea
+# Oceanic Wonders
 
 Welcome to Oceanic Wonders, your ultimate guide to the fascinating world beneath the waves. Our website is dedicated to bringing you the latest news, information, and resources on marine life, conservation efforts, and more.
 

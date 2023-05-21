@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Achieve Your Dreams with Desert Dreams
+# Desert Dreams
 
 Welcome to Desert Dreams, a website dedicated to helping you unlock your full potential and achieve your wildest dreams. Our mission is to inspire and motivate you to pursue your passions and live the life you've always wanted.
 

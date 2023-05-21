@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Bringing Nature to Your Digital Workspace
+# Nature Workspace
 
 Welcome to our website, where we offer a range of stunning nature-inspired backgrounds for your desktop. Our collection includes high-quality images that are perfect for bringing a touch of the outdoors into your digital workspace.
 

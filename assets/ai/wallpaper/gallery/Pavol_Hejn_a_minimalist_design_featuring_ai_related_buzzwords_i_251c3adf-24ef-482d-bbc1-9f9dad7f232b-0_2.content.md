@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Tech Insights: Exploring the Latest AI Buzzwords
+# AI Tech Insights
 
 Welcome to our tech insights website, where we delve into the latest AI buzzwords and trends in the industry. Our minimalist design features a backdrop of AI-related buzzwords in different fonts and colors, setting the tone for what you can expect from our content.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Elevate Your Space with Geometric Patterns
+# Geometric Space Elevate
 
 Welcome to our website, where we offer a range of products and services to help you elevate your living space. Our latest addition is a background featuring geometric patterns in complementary colors, which can add a modern touch to any room.
 

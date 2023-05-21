@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Mystical Mountains: Your Ultimate Guide
+# Mystical Mountains Guide
 
 Welcome to our website dedicated to exploring the mystical mountains! Our goal is to provide you with everything you need to know about these awe-inspiring natural wonders. From hiking trails to local legends, we have it all.
 

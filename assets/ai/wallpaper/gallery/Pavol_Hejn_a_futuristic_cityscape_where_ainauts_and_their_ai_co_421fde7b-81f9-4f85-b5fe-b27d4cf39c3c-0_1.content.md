@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Skyline Innovations: Building the Future Together
+# Skyline Future
 
 Welcome to Skyline Innovations, where we're dedicated to creating a better tomorrow through cutting-edge technology and collaboration. Our futuristic cityscape wallpaper sets the tone for our mission: Ainautes and their AI counterparts working together to build towering skyscrapers and infrastructure that will shape the world for generations to come.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Wonders of the Universe with Cosmic Dreams
+# Cosmic Dreams
 
 Welcome to Cosmic Dreams, a website dedicated to exploring the mysteries and beauty of the universe. Our mission is to inspire curiosity and wonder about the cosmos through engaging content and resources.
 

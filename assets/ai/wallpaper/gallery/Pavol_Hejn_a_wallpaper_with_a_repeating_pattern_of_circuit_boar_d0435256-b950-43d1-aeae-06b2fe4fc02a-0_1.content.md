@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# TechHub - A Community for Tech Enthusiasts
+# Tech Community
 
 Welcome to TechHub, a community for tech enthusiasts! Our website is dedicated to providing the latest news and updates in the world of technology. Our wallpaper with a repeating pattern of circuit board components, in shades of black, grey, and neon green, perfectly represents our passion for all things tech.
 

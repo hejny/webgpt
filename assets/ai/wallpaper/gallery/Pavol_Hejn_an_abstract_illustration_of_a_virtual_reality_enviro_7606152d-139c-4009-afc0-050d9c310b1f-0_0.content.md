@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Workspace Solutions
+# Futuristic Workspace
 
 Welcome to Futuristic Workspace Solutions, where we help professionals create inspiring and productive work environments. Our team of experts offers a range of services and resources designed to optimize your workspace and enhance your workflow.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# DataVizPro - Futuristic Visualizations for Your Business
+# DataVizPro
 
 Welcome to DataVizPro, your one-stop-shop for all things data visualization. Our mission is to help businesses make sense of their data by providing intuitive and visually stunning graphics that are easy to understand.
 

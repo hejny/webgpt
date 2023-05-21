@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# The Future of Sustainable Cities: Ainautes and AI Working Together
+# Sustainable City AI
 
 Welcome to our website dedicated to exploring the exciting possibilities of sustainable cities created through the collaboration of Ainautes and AI. Our wallpaper depicts a futuristic cityscape where these two forces work in harmony to build massive structures and infrastructure that are environmentally friendly and efficient.
 

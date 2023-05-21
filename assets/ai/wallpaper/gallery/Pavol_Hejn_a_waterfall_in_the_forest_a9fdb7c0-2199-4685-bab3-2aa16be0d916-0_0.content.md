@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Serenity - Find Your Peaceful Place
+# Serenity Place
 
 Welcome to Serenity, where you can find your peaceful place in the midst of a busy world. Our mission is to provide you with a serene and calming atmosphere that helps you relax and unwind. Our website offers a wide range of resources to help you achieve inner peace and tranquility.
 

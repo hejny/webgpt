@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# The Future is Now: Embrace the Retro-Futuristic Style
+# Retro-Future Now
 
 Welcome to our website, where we celebrate the unique blend of vintage and futuristic design. Our retro-futuristic wallpaper featuring a vintage illustration of a robot against a neon-colored background perfectly captures the essence of this style.
 

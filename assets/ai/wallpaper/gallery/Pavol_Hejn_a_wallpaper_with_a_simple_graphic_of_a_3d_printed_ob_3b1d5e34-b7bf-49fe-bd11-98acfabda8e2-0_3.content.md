@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Geometric Dreams: Inspiring Creativity
+# Geometric Dreams
 
 Welcome to Geometric Dreams, a place where creativity and inspiration come together. Our website is designed to help you unleash your inner artist and find the motivation to pursue your passions.
 

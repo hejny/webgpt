@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Elevate Your Website Design with Geometric Dreams
+# Geometric Design
 
 Welcome to our website, where we offer you a unique and inspiring geometric wallpaper for your website's background. Our Geometric Dreams design is inspired by the latest web design trends and color schemes, featuring abstract shapes and patterns that will give your website an edgy and modern look.
 

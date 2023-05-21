@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Serenity at Sunset: Transform Your Space with Desert-Inspired Design
+# Desert Serenity
 
 Welcome to Serenity at Sunset, where we offer a curated selection of home decor inspired by the beauty of the desert. Our website features a stunning photograph of a desert landscape at sunset as a background, setting the tone for the warm and serene atmosphere that our products can bring to your space.
 

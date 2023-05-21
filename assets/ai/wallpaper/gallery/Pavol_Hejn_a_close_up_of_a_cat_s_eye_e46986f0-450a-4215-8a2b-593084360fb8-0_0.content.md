@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# "Feline Frenzy" - A Community for Cat Lovers
+# Cat Community
 
 Welcome to "Feline Frenzy," a community dedicated to all things feline! Our website is the perfect place for cat lovers to come together and share their passion for these adorable creatures. 
 

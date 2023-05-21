@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# The Future is Now: Embrace the Dystopian Background
+# Dystopian Now
 
 Welcome to our website, where we explore the intersection of technology and society. Our mission is to provide you with insights into how technology shapes our future, for better or worse. As you browse our pages, you'll notice a striking wallpaper featuring a stylized illustration of a dystopian future, with metallic textures and digital glitch effects. This background sets the tone for our discussions on the impact of technology on society.
 

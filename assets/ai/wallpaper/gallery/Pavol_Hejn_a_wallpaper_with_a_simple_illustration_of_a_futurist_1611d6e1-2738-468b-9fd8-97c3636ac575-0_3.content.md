@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Tech News and Resources for the Modern Enthusiast
+# Modern Tech Resources
 
 Welcome to our website, dedicated to providing you with the latest news and updates on the world of technology. We offer a wide range of resources, including articles, tutorials, and user stories, to help you stay up-to-date and informed.
 

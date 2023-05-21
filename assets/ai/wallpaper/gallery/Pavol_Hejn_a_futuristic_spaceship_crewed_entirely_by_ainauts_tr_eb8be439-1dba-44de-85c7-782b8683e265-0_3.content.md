@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Discovering the Unknown: Ainautes' Journey to the Stars
+# Ainautes' Star Journey
 
 Welcome to our website dedicated to exploring the mysteries of the universe! Our wallpaper depicts a futuristic spaceship crewed entirely by Ainautes, traveling through the vast expanse of space on a mission of discovery. 
 

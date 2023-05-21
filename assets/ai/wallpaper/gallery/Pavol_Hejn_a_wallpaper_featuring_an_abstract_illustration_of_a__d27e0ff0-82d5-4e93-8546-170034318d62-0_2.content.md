@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# FutureTech Solutions: Empowering Your Business with Cutting-Edge Technology
+# Cutting-Edge FutureTech
 
 Welcome to FutureTech Solutions, your one-stop-shop for all your technology needs. Our mission is to provide innovative solutions that help businesses thrive in the fast-paced digital world.
 

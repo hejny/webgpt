@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Space Explorer: Discover the Wonders of the Universe
+# Space Explorer
 
 Welcome to Space Explorer, your ultimate destination for exploring the mysteries and wonders of the universe. Our stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space, sets the tone for your journey into the unknown.
 

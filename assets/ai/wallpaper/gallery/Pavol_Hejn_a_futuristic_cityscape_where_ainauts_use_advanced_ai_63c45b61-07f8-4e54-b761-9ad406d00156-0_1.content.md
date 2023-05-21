@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Embrace the Future: Exploring Technology's Endless Possibilities
+# Future Tech Explore
 
 Welcome to our website, where we explore the latest advancements in technology and how they are shaping the world around us. Our goal is to inspire you to embrace the possibilities that technology offers and to imagine a future where anything is possible.
 

@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Discover the Universe: A Space Exploration Community
+# Space Community
 
 Welcome to Discover the Universe, a community dedicated to exploring and learning more about the mysteries of space. Our website is a hub for anyone who shares our passion for space exploration, and our intricate black and white outline of an astronaut's helmet serves as the perfect background for your journey through our site.
 

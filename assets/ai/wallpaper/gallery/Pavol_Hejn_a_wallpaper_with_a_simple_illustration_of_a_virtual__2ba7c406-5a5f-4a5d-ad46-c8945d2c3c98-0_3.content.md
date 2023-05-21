@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Explore the World of Virtual Reality with Our VR Headsets
+# VR Headsets
 
 Welcome to our website, where you can find everything you need to know about virtual reality. Our passion for this technology has led us to create a hub where enthusiasts and beginners alike can come together to learn, share, and experience the latest advancements in VR.
 

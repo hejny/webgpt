@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Whimsical Tea Party Theme for Your Next Event
+# Tea Party Theme
 
 Looking for a unique theme to make your next event unforgettable? Consider a Whimsical Tea Party! Our delightful wallpaper featuring anthropomorphic animals enjoying tea and treats in a charming garden setting is the perfect backdrop for this playful and imaginative theme.
 

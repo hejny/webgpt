@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# The Future of Synthetic Biology: Creating New Life Forms with AI and Advanced Technology
+# Synthetic Life Future
 
 Welcome to our website dedicated to exploring the exciting world of synthetic biology. Our team of Ainautes is passionate about using cutting-edge technology to create new life forms that can revolutionize medicine, agriculture, and environmental sustainability.
 

@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# The Future of AI: Innovations from Ainautes
+# AI Ainautes Future
 
 Welcome to Ainautes, a team of dedicated professionals working tirelessly in a massive AI factory to create new and innovative technologies for the future. Our team is committed to advancing the field of artificial intelligence and bringing cutting-edge solutions to industries across the globe.
 

@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# TechConnect: Connecting You to the Latest in Tech
+# TechConnect
 
 Welcome to TechConnect, your one-stop-shop for all things tech-related. Our website is designed to keep you up-to-date with the latest news, trends, and products in the tech industry. 
 

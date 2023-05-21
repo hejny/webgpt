@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Tech Website Design
+# Futuristic Tech Design
 
 Upgrade your tech website with our neon circuitry design! This repeating pattern features bright neon-colored circuitry set against a sleek black background, adding a touch of sci-fi flair to your site.
 

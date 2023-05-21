@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Bring the Outdoors In: Create a Serene Home Office with Nature-Inspired Design
+# Nature Home Office
 
 Welcome to our website dedicated to helping you create a peaceful and productive home office environment. Our nature-inspired design elements are the perfect addition to your workspace, bringing a touch of the outdoors indoors.
 

@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Join the Ainautes on their Space Adventure
+# Space Ainautes Adventure
 
 Step into the world of the Ainautes, a team of brave space explorers who navigate through dangerous asteroid fields and encounter thrilling adventures. Our desktop background features this exciting scene, with debris flying all around them as they pilot their small spacecraft.
 

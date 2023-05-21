@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Data Dashboard - Your One-Stop Solution for Business Insights
+# Data Dashboard
 
 Welcome to Data Dashboard, your ultimate solution for monitoring and managing data. Our platform provides you with real-time insights into your business operations, enabling you to make informed decisions quickly and efficiently.
 

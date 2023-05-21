@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Dreams - Where Creativity Meets Inspiration
+# Quantum Inspiration
 
 Welcome to Quantum Dreams, your ultimate destination for unique and inspiring designs that will bring a touch of creativity to any space. Our abstract background is inspired by the shapes and colors of quantum physics, with bold colors and intricate lines that are sure to make a statement.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# "Pedal to the Metal" - Your Ultimate Guide to Cycling
+# Cycling Guide
 
 Welcome to Pedal to the Metal, your go-to resource for all things cycling. Whether you're a seasoned pro or just starting out, we've got everything you need to take your cycling game to the next level.
 

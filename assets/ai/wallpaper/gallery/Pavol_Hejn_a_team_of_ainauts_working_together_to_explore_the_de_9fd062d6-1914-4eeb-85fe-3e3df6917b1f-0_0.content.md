@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Unknown: Journey to the Depths of a Black Hole
+# Black Hole Journey
 
 Welcome to our website, where we explore the mysteries of the universe and the unknown. Our team of Ainautes is dedicated to discovering new horizons and pushing the boundaries of science and technology.
 

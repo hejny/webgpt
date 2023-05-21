@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Bringing Nature into Your Home
+# Nature Home
 
 Welcome to our website, where we offer a range of products designed to bring the beauty of nature into your home. Our collection includes everything from furniture to decor, and each piece is carefully chosen for its natural and organic look.
 

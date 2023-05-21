@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# "Boat Adventures" - Explore the Calm Waters
+# Calm Boat Adventures
 
 Welcome to Boat Adventures, your ultimate guide to boating and water sports. Our website is dedicated to providing you with all the information you need for a fun and safe boating experience.
 

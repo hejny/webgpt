@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Elevate Your Space with Quantum-Inspired Design
+# Quantum Space Design
 
 Welcome to our website, where we offer a unique blend of science and art that will elevate your space. Our designs are inspired by the shapes and colors found in quantum physics, creating a mesmerizing pattern that will add personality and vibrancy to any room.
 

@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# The Future of Work: Collaborating with AI Companions
+# AI Collaborators
 
 Welcome to our website dedicated to exploring the exciting possibilities of working alongside AI companions. Our wallpaper, featuring a zero-gravity space station filled with Ainautes and their AI counterparts, represents just one example of how humans and machines can work together in harmony.
 

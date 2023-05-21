@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Pedal Your Way to Fitness with Cycling
+# Cycling Fitness
 
 Welcome to our fitness blog, where we share tips and tricks on how to stay fit and healthy. Our website features a colorful graphic of a bicycle that represents the joy of cycling and its benefits for fitness enthusiasts.
 

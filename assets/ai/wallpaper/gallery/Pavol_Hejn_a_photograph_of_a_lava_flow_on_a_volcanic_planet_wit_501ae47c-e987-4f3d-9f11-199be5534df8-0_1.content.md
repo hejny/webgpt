@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Explore the Volcanic Planet - A Thrilling Adventure
+# Volcanic Adventure
 
 Welcome to our website, where we take you on a thrilling adventure to explore the volcanic planet. Our website is dedicated to providing you with all the necessary information about this mysterious planet and its secrets.
 

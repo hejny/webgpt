@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Achieve Your Fitness Goals with Our Expert Guidance
+# Fitness Guidance
 
 Welcome to our fitness website, where we provide you with the latest tips and tricks to stay healthy and fit. Our website is designed to help you achieve your fitness goals and lead a healthier lifestyle. As part of our commitment to providing you with the best possible experience, we have added a colorful graphic of a bicycle race as our background.
 

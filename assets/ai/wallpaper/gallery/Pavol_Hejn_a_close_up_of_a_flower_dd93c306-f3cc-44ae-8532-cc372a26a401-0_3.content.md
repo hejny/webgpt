@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Transform Your Workspace with the Beauty of Nature
+# Nature Workspace
 
 Welcome to our website where we offer a range of beautiful backgrounds that can transform your workspace into a serene environment. Our latest addition is a stunning close-up of a flower that will bring nature's beauty right to your desktop.
 

@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# The Fascinating World of Spiders: A Nature Lover's Haven
+# Spider World
 
 Welcome to our website dedicated to the captivating world of spiders. Our stunning background featuring a close-up of a spider on a web is the perfect complement for nature enthusiasts who appreciate the intricacies of the natural world.
 

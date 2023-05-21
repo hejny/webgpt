@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Elevate Your Tech-Focused Website with a Minimalist Robotic Arm Illustration
+# Minimal Robo-Arm
 
 Welcome to our tech-focused website! We understand that having a visually appealing and engaging website is important for any business or individual. That's why we've created a minimalist illustration of a robotic arm, set against a dark and moody background, that can elevate the visual appeal of your website.
 

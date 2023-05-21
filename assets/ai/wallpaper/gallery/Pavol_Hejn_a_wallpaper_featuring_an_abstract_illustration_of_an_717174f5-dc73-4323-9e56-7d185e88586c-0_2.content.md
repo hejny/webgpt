@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# "SearchX: Empowering Your Online Experience"
+# SearchX Empowers Online
 
 Welcome to SearchX, the AI-powered search engine that revolutionizes the way you browse the internet. Our minimalist and modern design ensures that your online experience is not only efficient but also aesthetically pleasing. Our abstract illustration of an AI-powered search engine, set against a gradient background, represents our commitment to innovation and user-centric design.
 

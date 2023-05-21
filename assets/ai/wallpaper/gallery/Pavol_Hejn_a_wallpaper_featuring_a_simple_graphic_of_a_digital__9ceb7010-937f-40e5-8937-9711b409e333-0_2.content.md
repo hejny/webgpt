@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Timer: A Simple Tool to Boost Your Productivity
+# Productivity Timer
 
 Welcome to Timer, your go-to tool for setting alarms and countdowns. Our website offers a clean and minimalist interface that helps you stay focused on your tasks without any distractions. 
 

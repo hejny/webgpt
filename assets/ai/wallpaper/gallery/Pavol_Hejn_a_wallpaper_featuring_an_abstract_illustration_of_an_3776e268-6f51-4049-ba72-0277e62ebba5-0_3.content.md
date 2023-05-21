@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Explore the Future of AI-Powered Search with Our Minimalist Design
+# AI Search Design
 
 Welcome to our website, where we delve into the latest developments in artificial intelligence and how they are revolutionizing the way we search for information. Our minimalist design, featuring an abstract illustration of an AI-powered search engine set against a gradient background, provides the perfect backdrop for your desktop or mobile device.
 

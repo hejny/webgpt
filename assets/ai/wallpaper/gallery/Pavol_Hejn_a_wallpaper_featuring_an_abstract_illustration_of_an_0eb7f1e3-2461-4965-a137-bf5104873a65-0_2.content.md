@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# AI-Powered Search Engine for Efficient and Accurate Results
+# AI Search Engine
 
 Welcome to our website dedicated to providing the best search engine experience with the help of AI technology. Our wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design, represents our commitment to innovation and efficiency.
 

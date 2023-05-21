@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Exploring the Mysteries of Mars: A Journey to the Red Planet
+# Mars Exploration Journey
 
 Welcome to our website dedicated to uncovering the secrets of Mars, the fourth planet from the sun. Our mission is to provide you with the latest information and updates on the ongoing exploration of Mars by various space agencies around the world.
 

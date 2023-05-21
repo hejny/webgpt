@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Future-Proof Your Business with Cutting-Edge Technology
+# Cutting-Edge Business
 
 Welcome to our website, where we help businesses prepare for the future with innovative strategies and state-of-the-art technology. Our website features a sleek and modern design, including an abstract illustration of a futuristic data center that sets the tone for the kind of forward-thinking solutions we offer.
 

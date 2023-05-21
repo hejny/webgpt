@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Elevate Your Tech Website with AI Buzzwords
+# AI Website Boost
 
 Welcome to our tech-inspired website featuring a minimalist design with AI buzzwords in different fonts and colors. Our design is perfect for anyone looking to add a touch of modernity to their website while showcasing their love for technology.
 

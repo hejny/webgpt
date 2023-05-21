@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# The Steampunk Workshop: A World of Industrial Fantasy
+# Steampunk World
 
 Welcome to the Steampunk Workshop, a place where fantasy meets industrial revolution. Our website is dedicated to bringing you the best in steampunk-inspired art, fashion, and design. 
 

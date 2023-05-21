@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Transform Your Home with Nature-Inspired Designs
+# Nature Designs
 
 Welcome to our website, where we offer a range of nature-inspired designs that will bring the beauty of the outdoors into your home. Our "A close-up of a dragonfly on a leaf" design is just one example of how you can transform your living space into a peaceful oasis.
 

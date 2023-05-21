@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Modern Design for Your Online Presence
+# Online Design
 
 Welcome to our website dedicated to modern design trends and color schemes. Our background features a repeating pattern of abstract geometric shapes and patterns, inspired by the latest web design trends.
 

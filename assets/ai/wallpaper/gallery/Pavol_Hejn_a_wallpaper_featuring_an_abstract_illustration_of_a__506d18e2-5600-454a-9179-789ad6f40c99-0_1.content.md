@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Embrace the Futuristic Cityscape: A Tech Website with a Bold Vision
+# Futuristic Cityscape
 
 Welcome to our tech website, where we explore the latest trends and innovations in the world of technology. Our website is designed to provide you with valuable insights into the newest gadgets, software, and emerging technologies. To complement our content, we have selected a stunning background featuring an abstract illustration of a futuristic cityscape.
 

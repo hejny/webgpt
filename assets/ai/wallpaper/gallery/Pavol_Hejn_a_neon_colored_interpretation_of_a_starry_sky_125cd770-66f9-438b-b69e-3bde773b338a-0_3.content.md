@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the Cosmos with Cosmic Dreams
+# Cosmic Dreams
 
 Welcome to Cosmic Dreams, where we bring the wonders of the universe to your digital devices. Our latest background design is a neon-colored interpretation of a starry sky that will transport you to another world.
 

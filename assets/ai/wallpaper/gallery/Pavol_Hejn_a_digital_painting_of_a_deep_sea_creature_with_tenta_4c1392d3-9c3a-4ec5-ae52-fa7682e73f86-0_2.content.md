@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Oceanic Wonders: Discover the Mysteries of the Deep Sea
+# Deep Sea Mysteries
 
 Welcome to Oceanic Wonders, a website dedicated to exploring the fascinating world beneath the waves. Our captivating background features a digital painting of a deep sea creature, with tentacles and bioluminescent patterns that evoke a sense of mystery and exploration.
 

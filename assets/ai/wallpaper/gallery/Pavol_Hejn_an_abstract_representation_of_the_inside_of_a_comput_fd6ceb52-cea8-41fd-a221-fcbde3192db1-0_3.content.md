@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Exploring the Future of Technology: Metallic Circuit
+# Metallic Circuit Future
 
 Welcome to Metallic Circuit, a website dedicated to exploring the latest advancements in technology. Our mission is to provide our readers with up-to-date information on the latest trends and innovations shaping the world around us.
 

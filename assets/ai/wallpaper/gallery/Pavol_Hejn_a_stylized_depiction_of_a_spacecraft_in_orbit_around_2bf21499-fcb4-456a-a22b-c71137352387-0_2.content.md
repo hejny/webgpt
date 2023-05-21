@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Discover the Wonders of Space with Galactic Adventures
+# Galactic Adventures
 
 Welcome to Galactic Adventures, your go-to source for all things space-related. Our platform is dedicated to bringing you the latest news, discoveries, and stories from the vast universe we call home. 
 

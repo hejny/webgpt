@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Discover the Wonders of Planet X
+# Planet X Wonders
 
 Welcome to our website dedicated to exploring the mysteries of Planet X, a distant planet that has captured the imagination of people around the world. Our vintage-style travel poster wallpaper sets the tone for your journey into the unknown.
 

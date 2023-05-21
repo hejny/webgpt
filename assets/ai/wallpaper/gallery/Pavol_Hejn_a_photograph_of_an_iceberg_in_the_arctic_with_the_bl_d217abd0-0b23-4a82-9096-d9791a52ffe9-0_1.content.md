@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Explore the Arctic: Your Ultimate Guide
+# Arctic Guide
 
 Welcome to our website, your ultimate guide to exploring the beauty and wonder of the Arctic. Our stunning background featuring a photograph of an iceberg in the Arctic sets the tone for your journey of discovery.
 

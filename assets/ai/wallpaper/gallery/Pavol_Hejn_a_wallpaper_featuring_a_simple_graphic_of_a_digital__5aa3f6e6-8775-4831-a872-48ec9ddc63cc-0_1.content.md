@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Efficient Time Management Tool
+# Time Tool
 
 Welcome to Time Tracker, the ultimate tool for efficient time management. Our website offers a variety of features that help you stay on top of your daily tasks and achieve your goals. And what better way to keep track of your time than with our digital clock wallpaper?
 

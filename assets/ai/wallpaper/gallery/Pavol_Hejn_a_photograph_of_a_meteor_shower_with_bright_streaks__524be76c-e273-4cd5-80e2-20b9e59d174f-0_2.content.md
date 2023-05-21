@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Explore the Wonders of the Night Sky with Stargaze
+# Stargaze Nights
 
 Welcome to Stargaze, a website dedicated to exploring the beauty and wonder of the night sky. Our stunning background features a photograph of a meteor shower, with bright streaks of light crossing the night sky. It's the perfect complement to our mission of inspiring curiosity and appreciation for the cosmos.
 

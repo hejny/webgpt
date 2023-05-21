@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Discover the Beauty of Mountain Ranges with Our Nature Website
+# Mountain Beauty
 
 Welcome to our website dedicated to exploring the beauty of mountain ranges around the world. Our stunning background featuring a mountain range with a clear blue sky sets the tone for what you can expect to find here.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Discovering the Deep: A Journey into the Mysteries of the Ocean
+# Deep Discovery Journey
 
 Welcome to our website dedicated to exploring the wonders of the deep sea! Our homepage features a stunning digital painting of a deep-sea creature, with tentacles and bioluminescent patterns that evoke a sense of mystery and adventure.
 

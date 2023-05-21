@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Nature-Inspired Workspace: Bring the Outdoors In
+# Nature Workspace
 
 Welcome to our website, where we provide a range of products and resources to help you create a nature-inspired workspace. Our mission is to bring the calming and restorative benefits of nature into your daily routine.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Quantum-Inspired Design: Add a Splash of Science to Your Tech
+# Quantum Tech Design
 
 Looking for a unique and eye-catching design for your tech devices? Our abstract design inspired by the shapes and colors of quantum physics is the perfect choice. With bold colors and intricate lines, this design will make your desktop or phone screen stand out from the crowd.
 

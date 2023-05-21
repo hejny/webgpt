@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the World of Neural Networks with Complementary Colors
+# Neural Colors
 
 Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this fascinating field. To enhance your browsing experience, we've included a visually appealing background featuring a simple graphic of a neural network against a backdrop of complementary colors.
 

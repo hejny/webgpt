@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Journey to the Unknown: Explore the Depths of a Distant Planet
+# Distant Planet Exploration
 
 Welcome to our website dedicated to all things sci-fi and adventure! Our stunning background features a group of explorers known as Ainautes, as they venture into the depths of a distant planet. With glowing crystals illuminating their path, they uncover secrets and face challenges along the way.
 

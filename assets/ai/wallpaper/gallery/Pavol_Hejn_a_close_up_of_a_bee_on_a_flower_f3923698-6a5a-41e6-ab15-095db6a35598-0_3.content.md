@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Nature-Inspired Backgrounds: A Garden Wallpaper to Connect You with the Outdoors
+# Garden Wallpaper
 
 Welcome to our website, where we offer a beautiful garden wallpaper that will inspire you to connect with nature. Our wallpaper features a close-up of a bee on a flower, capturing the beauty and vitality of the natural world.
 

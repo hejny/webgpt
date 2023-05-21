@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring the Depths: Uncovering Hidden Wonders
+# Hidden Depths
 
 Welcome to our website dedicated to uncovering the mysteries of the universe. Our mission is to explore the unknown and bring back valuable knowledge for all to enjoy. Our latest adventure takes us to a distant planet where we discovered a vast network of tunnels hidden beneath the surface. 
 

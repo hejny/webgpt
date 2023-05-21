@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Saturn's Rings: A Journey Through the Solar System
+# Solar Journey
 
 Welcome to our website dedicated to exploring the wonders of our solar system. Our mission is to inspire curiosity and wonder about the universe we live in. 
 

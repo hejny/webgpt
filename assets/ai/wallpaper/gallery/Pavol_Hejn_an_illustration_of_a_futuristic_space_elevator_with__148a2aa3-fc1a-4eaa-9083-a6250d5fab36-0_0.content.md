@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Elevate Your Space Experience with Futuristic Designs
+# Futuristic Space Design
 
 Welcome to our website, where we offer a unique collection of futuristic designs that will elevate your space experience. Our featured design is an illustration of a futuristic space elevator, with a cable stretching from Earth into orbit. This design is perfect for those who love science fiction and want to add a touch of futurism to their living space.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore Virtual Reality Gaming
+# VR Gaming
 
 Welcome to our website dedicated to virtual reality gaming! Our site is designed to bring together gamers who are passionate about the latest VR technology and the immersive experiences it offers. As a gamer, you know how important it is to have a visually appealing background that reflects your interests and personality. That's why we've created a custom wallpaper featuring a simple illustration of a virtual reality headset against a gradient background of two contrasting colors.
 

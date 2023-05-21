@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Mindful Mandala: A Journey to Inner Peace
+# Mindful Mandala
 
 Welcome to Mindful Mandala, your ultimate guide to finding inner peace and balance through yoga and meditation. Our website is designed to help you achieve a state of mindfulness, clarity, and relaxation.
 

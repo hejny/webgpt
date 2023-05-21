@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# "Desert Dreams" - Let the Beauty of the Southwest Inspire You
+# Desert Dreams
 
 Welcome to "Desert Dreams," where the stunning beauty of the Southwest sets the stage for your next adventure. Our desert landscape with a cactus in the foreground will transport you to the heart of the Southwest and inspire you to explore new places and embark on exciting journeys.
 

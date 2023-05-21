@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Experience the Magic of the Northern Lights with Our Aurora Borealis-Inspired Website
+# Aurora Website
 
 Welcome to our website, where you can immerse yourself in the beauty and mystery of the Northern Lights. Our website features a stunning photograph of the Aurora Borealis, with its mesmerizing green and purple hues swirling in the night sky, as a background to enhance your browsing experience.
 

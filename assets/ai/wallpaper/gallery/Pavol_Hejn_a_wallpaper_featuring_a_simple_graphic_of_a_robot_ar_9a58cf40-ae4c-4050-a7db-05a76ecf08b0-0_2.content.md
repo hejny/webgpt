@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# TechNotify: Stay Up-to-Date with the Latest Tech News and Notifications
+# TechNotify News
 
 Looking for a way to stay on top of the latest tech news and notifications? Look no further than TechNotify! Our sleek and modern background features a simple graphic of a robot arm holding a smartphone, with space for placing important messages or reminders.
 

@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# FutureTech: Exploring the Latest Innovations in Technology
+# FutureTech Innovations
 
 Welcome to FutureTech, your go-to source for the latest news and insights on the most cutting-edge technology. Our mission is to keep you informed and inspired about the future of tech.
 

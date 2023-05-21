@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Discover the Future of Architecture through Our Sci-Fi Imagery
+# Sci-Fi Architecture
 
 Welcome to our website, where we offer a unique experience for architecture enthusiasts and sci-fi fans alike. Our stunning imagery features illustrations of futuristic cities and settlements on distant planets, showcasing a blend of traditional and modern architectural styles.
 

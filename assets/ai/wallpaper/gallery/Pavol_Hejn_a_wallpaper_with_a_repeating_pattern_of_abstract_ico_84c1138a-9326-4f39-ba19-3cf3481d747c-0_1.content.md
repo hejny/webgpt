@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# TechConnect - Connecting Tech Enthusiasts Worldwide
+# TechConnect Worldwide
 
 Welcome to TechConnect, the ultimate platform for tech enthusiasts worldwide! Our website is designed to provide you with the latest news and updates from the world of technology. Whether you're a developer, designer, or simply someone who loves all things tech, you'll find something here that will pique your interest.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discover the Beauty of Butterflies with Our Nature Website
+# Butterfly Nature
 
 Welcome to our website dedicated to exploring the wonders of nature, including the graceful beauty of butterflies. Our site offers a range of resources, from informative articles and captivating photos to engaging videos and user stories.
 

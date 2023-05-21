@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Metallic Chip: Your Ultimate Destination for the Latest in Technology
+# Metallic Tech
 
 Welcome to Metallic Chip, a website dedicated to providing you with the latest news and trends in the world of technology. Our sleek and modern design is complemented by an abstract representation of the inside of a computer chip with a metallic color palette, which serves as the perfect backdrop for our content.
 

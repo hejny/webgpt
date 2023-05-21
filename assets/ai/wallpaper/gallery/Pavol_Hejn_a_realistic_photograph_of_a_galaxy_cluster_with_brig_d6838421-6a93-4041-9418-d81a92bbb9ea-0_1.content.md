@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Discover the Wonders of the Universe with Our Space-Inspired Website
+# Space website
 
 Welcome to our website, where we provide a stunning space-inspired background that will take you on a journey through the vastness of the universe. Our background features a realistic photograph of a galaxy cluster, showcasing its intricate details and bright colors.
 

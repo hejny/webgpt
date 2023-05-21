@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Space Odyssey: Your Ultimate Destination for Space and Science Fiction
+# Space Odyssey
 
 Welcome to Space Odyssey, the ultimate destination for space enthusiasts and science fiction fans alike. Our website is dedicated to bringing you the latest news, updates, and resources on everything related to space exploration and sci-fi.
 

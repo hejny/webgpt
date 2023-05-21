@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# "Circuit Mind" - Exploring the World of Electronics and Programming
+# Circuit World
 
 Welcome to Circuit Mind, a tech blog dedicated to exploring the intricate workings of electronic circuits and programming. Our website is designed to provide you with insightful articles, tutorials, and resources that will help you stay up-to-date with the latest trends in technology.
 

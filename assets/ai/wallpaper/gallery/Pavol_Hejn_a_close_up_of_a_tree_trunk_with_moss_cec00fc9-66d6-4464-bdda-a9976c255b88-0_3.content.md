@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Natural Beauty: Connecting You with the Wonders of Nature
+# Nature Connect
 
 Welcome to Natural Beauty, a platform dedicated to celebrating and sharing the beauty of the natural world. Our mission is to inspire and encourage people to connect with nature, appreciate its wonders, and work towards its preservation for future generations.
 

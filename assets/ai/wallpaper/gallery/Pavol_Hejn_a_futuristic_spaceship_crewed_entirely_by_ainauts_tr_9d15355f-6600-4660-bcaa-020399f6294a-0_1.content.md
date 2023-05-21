@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Exploring the Universe: Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website, where we invite you to explore the mysteries of the universe through stunning imagery of futuristic spacecrafts crewed entirely by Ainautes. Our collection of backgrounds will transport you to the far reaches of space, igniting your imagination and inspiring curiosity about what lies beyond our planet.
 

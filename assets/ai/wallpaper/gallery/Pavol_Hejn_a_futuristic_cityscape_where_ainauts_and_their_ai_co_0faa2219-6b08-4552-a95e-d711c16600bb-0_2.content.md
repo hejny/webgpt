@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# The Future of Work: Building a Collaborative Ecosystem
+# Collab Future
 
 Welcome to our website, where we explore the exciting possibilities of a future where humans and AI work together in perfect harmony. Our wallpaper depicts a futuristic cityscape where Ainautes and their AI counterparts build towering skyscrapers and infrastructure side by side. This image represents the kind of collaborative ecosystem that we envision for the future of work.
 

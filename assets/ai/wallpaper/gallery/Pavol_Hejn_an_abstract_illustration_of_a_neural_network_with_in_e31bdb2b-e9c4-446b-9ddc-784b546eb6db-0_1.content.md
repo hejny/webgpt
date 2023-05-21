@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# TechConnect - Your Ultimate Resource for All Things Tech
+# TechConnect
 
 Welcome to TechConnect, your one-stop-shop for everything tech-related. Our website is designed to provide you with the latest news, reviews, and insights into the world of technology. Whether you're a tech enthusiast or just looking for information on the latest gadgets, we've got you covered.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discover the Wonders of the Mountains
+# Mountain Wonders
 
 Welcome to our website dedicated to exploring the beauty and adventure of mountain landscapes! Our stunning background featuring a full moon rising over a mountain range with mist and clouds adds the perfect touch of mystery to your desktop or mobile experience.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# "Sail Away" - Your Ultimate Guide to Boating and Water Sports
+# Water Sports Guide
 
 Welcome to Sail Away, your ultimate guide to boating and water sports! Our website is dedicated to providing you with all the information you need to know about boating, sailing, and other water sports. Our minimalist graphic of a boat on calm waters serves as the perfect backdrop for our content.
 

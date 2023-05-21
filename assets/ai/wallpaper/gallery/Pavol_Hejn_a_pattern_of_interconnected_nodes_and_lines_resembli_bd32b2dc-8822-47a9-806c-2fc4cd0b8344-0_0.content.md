@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Unleash Your Creativity with Our Neural Network-Inspired Design
+# Neural Creativity
 
 Welcome to our website, where we offer a unique and inspiring design that features a pattern of interconnected nodes and lines resembling a neural network. Our design is perfect for those who are looking for a creative and innovative touch to their project.
 

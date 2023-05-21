@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Elevate Your Workspace with a Futuristic Alien Landscape
+# Alien Workspace
 
 Welcome to our website, where we offer a unique and inspiring background for your office space. Our csg-style rendering of an alien landscape features sharp angles and contrasting colors that create a futuristic and industrial vibe.
 

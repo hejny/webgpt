@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Whimsical Wonderland: A Delightful Journey Through the World of Anthropomorphic Animals
+# Anthro Wonderland
 
 Welcome to Whimsical Wonderland, a place where imagination meets reality. Our website is dedicated to bringing you on a delightful journey through the world of anthropomorphic animals. Our whimsical tea party wallpaper sets the tone for an enchanting experience that you won't soon forget.
 

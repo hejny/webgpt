@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Experience the Magic of the Northern Lights
+# Northern Lights Magic
 
 Welcome to our website, where you can immerse yourself in the beauty and wonder of the Northern Lights. Our stunning background captures the essence of the aurora borealis, with its green and purple hues swirling in the night sky.
 

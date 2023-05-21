@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Cosmic Dreams: A Journey Through the Stars
+# Cosmic Journey
 
 Welcome to our website, where we offer a stunning digital background that will transport you on a journey through a neon-colored interpretation of a starry sky. Our Cosmic Dreams background is perfect for those who want to add a touch of magic and wonder to their digital devices.
 

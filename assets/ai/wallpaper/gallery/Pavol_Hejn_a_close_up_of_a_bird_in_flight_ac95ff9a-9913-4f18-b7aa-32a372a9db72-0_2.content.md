@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Birdwatcher's Paradise: Discover the Beauty of Birds in Flight
+# Bird Paradise
 
 Welcome to Birdwatcher's Paradise, where you can experience the majesty of birds in their natural habitat. Our website is dedicated to providing bird enthusiasts with the resources they need to explore the world of birdwatching.
 

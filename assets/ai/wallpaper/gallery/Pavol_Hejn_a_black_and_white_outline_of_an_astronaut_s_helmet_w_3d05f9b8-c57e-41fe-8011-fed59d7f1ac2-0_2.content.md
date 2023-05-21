@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Space Adventures: Explore the Unknown
+# Space Adventures
 
 Welcome to Space Adventures, your ultimate destination for all things space-related. Our website is dedicated to providing you with the latest news, updates, and stories about space exploration.
 

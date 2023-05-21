@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Welcome to FuturCity: Building Sustainable Infrastructure with Ainautes and AI
+# FuturCity AI
 
 At FuturCity, we believe that the future of urban development lies in sustainable infrastructure. That's why we're proud to partner with Ainautes and AI to create massive, eco-friendly structures that will stand the test of time.
 

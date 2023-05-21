@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Exploring the Unknown: A Sci-Fi Adventure Hub
+# Sci-Fi Hub
 
 Welcome to our website dedicated to all things science fiction! Our website is a hub for fans of sci-fi literature, movies, TV shows, and games. As part of our commitment to providing you with an immersive experience, we have created a unique background that captures the essence of space exploration.
 

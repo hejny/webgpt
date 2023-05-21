@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# The Future of Technology: Exploring the Possibilities
+# Tech Possibilities
 
 Welcome to our website dedicated to exploring the exciting and ever-evolving world of technology. Our mission is to provide you with the latest news, insights, and trends in the tech industry.
 

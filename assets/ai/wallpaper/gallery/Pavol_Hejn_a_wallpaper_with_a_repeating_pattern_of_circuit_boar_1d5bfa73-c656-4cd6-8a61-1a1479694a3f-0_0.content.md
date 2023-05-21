@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Tech Enthusiast Hub: Your Source for the Latest in Technology
+# Tech Hub
 
 Welcome to our website, where we celebrate all things tech! Our site is dedicated to providing you with the latest news, reviews, and insights on everything from gadgets to software. And what better way to showcase our love for technology than with a background that features a repeating pattern of circuit board components?
 

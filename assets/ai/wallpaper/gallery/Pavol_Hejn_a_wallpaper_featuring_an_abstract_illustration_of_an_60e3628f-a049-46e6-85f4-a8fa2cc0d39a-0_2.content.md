@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Explore the Future of Search Engines with AI-Powered Technology
+# AI Search Future
 
 Welcome to our website, where we delve into the latest advancements in artificial intelligence and its impact on modern search engines. Our minimalist background features an abstract illustration of an AI-powered search engine, set against a gradient backdrop. This design element serves as a visual representation of the cutting-edge technology that is revolutionizing the way we search for information online.
 

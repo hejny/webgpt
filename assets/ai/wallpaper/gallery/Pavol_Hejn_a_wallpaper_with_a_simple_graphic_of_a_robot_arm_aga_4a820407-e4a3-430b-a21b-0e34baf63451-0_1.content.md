@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# RoboArm Tech: Empowering Your Business with Cutting-Edge Robotics
+# RoboArm Tech
 
 Welcome to RoboArm Tech, your go-to source for the latest in robotic technology. Our mission is to provide businesses with innovative solutions that streamline operations and increase efficiency. 
 

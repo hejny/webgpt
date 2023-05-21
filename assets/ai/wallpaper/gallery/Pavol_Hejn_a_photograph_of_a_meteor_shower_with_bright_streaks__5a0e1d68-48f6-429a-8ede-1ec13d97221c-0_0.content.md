@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Wonders of the Universe with Our Astronomy Website
+# Uni Explore
 
 Welcome to our website, where we celebrate the beauty and mysteries of the universe. Our stunning meteor shower background sets the tone for an exploration of the cosmos that awaits you.
 

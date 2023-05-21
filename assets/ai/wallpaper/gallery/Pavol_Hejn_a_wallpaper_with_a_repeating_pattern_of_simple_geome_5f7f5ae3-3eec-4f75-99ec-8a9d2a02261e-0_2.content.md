@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Elevate Your Workspace with a Modern Geometric Design
+# Geometric Workspace
 
 Welcome to our website, where we offer a unique selection of backgrounds to enhance your digital workspace. Our modern geometric design features a repeating pattern of simple shapes arranged in a grid-like structure, perfect for adding a touch of sophistication to your desktop.
 

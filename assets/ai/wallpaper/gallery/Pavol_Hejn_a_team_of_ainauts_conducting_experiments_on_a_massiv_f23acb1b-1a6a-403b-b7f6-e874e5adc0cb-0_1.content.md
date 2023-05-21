@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Exploring Icy Moons with Ainautes
+# Icy Moon Ainautes
 
 Welcome to our website dedicated to exploring the fascinating icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
 

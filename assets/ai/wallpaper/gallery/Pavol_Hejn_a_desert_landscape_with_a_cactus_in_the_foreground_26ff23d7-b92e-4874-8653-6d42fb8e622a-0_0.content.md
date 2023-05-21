@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Create a Serene Workspace with Desert Oasis
+# Desert Workspace
 
 Welcome to our website, where we offer tips and resources for creating a peaceful and productive workspace. One way to enhance your workspace is by using a calming background image, like our Desert Oasis featuring a cactus in the foreground.
 

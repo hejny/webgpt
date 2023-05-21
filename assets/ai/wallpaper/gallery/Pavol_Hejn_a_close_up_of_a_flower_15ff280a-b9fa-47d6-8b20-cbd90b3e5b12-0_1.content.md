@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Find Inspiration for Your Desktop with Our Beautiful Flower Background
+# Flower Desktop Inspo
 
 Welcome to our website where you can discover stunning backgrounds for your desktop. Our collection of high-quality images includes this beautiful close-up of a flower, which will bring inspiration and serenity to your computer screen.
 

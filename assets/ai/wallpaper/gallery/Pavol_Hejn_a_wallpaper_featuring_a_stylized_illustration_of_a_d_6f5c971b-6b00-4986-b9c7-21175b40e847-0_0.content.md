@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# FutureTech - A Vision of Tomorrow
+# FutureVision
 
 Welcome to FutureTech, where we explore the possibilities of tomorrow's technology. Our website is dedicated to bringing you the latest news and trends in the tech industry, as well as providing insights into how these advancements will shape our future.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Discover a Futuristic World for Your Desktop Background
+# Futuristic Desktop World
 
 Welcome to our website where you can discover the perfect background for your desktop that will take you on a journey to a futuristic world. Our latest addition is an abstract illustration of a cityscape, featuring glowing lights and a dark color scheme, set against a gradient background.
 

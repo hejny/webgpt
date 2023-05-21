@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Drone Delivery Services: Fast and Efficient Shipping
+# Drone Shipping
 
 Welcome to our website, where we offer the latest in drone delivery services. Our mission is to provide fast and efficient shipping for all your needs. Our wallpaper with a single line drawing of a drone against a background of geometric shapes in complementary colors represents our commitment to innovation and modern technology.
 

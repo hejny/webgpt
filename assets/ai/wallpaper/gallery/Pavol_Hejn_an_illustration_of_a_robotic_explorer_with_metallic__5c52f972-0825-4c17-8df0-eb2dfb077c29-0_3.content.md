@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Futuristic Tech Design
+# Futuristic Tech Design
 
 Welcome to our website dedicated to exploring the latest and greatest in technology. Our mission is to provide you with the most up-to-date news, reviews, and insights on all things tech-related. As part of our commitment to providing a cutting-edge experience, we have created a stunning design that captures the essence of our mission.
 

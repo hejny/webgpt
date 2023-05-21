@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Explore the Wonders of Space with Our Cosmic Collection
+# Cosmic Space Collection
 
 Welcome to our website where we offer a stunning collection of cosmic images that will transport you to the far reaches of the universe. Our featured image depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows, and is just one example of the breathtaking visuals we have available.
 

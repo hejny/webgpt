@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Jungle Explorers: A Fun and Educational Website for Kids
+# Jungle Kids Website
 
 Welcome to Jungle Explorers, a website designed to educate and entertain children about the wonders of the jungle. Our playful graphic of a group of animals in a jungle wallpaper sets the tone for our fun and interactive learning experience.
 

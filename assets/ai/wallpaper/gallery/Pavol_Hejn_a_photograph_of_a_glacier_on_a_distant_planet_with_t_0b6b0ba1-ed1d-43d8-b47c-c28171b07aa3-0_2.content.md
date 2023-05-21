@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Discover the Wonders of Space with Our Cosmic Collection
+# Cosmic Wonders
 
 Step into the vast expanse of space with our stunning cosmic collection! Each image in our collection has been carefully selected to showcase the beauty and mystery of the universe. From distant galaxies to the icy moons of Jupiter, our collection offers a glimpse into the wonders of space.
 

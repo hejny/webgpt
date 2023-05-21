@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Creative Designs for Your Digital Space
+# Digital Creatives
 
 Welcome to our website, where we showcase a variety of creative designs to enhance your digital space. Our colorful fractal background is just one of the many ways we express our love for art and beauty.
 

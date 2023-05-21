@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Discover the Wonders of Space with Our Cosmic Background
+# Cosmic Backgrounds
 
 Welcome to our website, where we explore the mysteries of space and share the latest news and discoveries in astronomy. Our wallpaper features an incredible illustration of a space station orbiting a gas giant planet, surrounded by stunning rings and stormy clouds. This mesmerizing background sets the tone for our website and invites you to join us on a journey through the cosmos.
 

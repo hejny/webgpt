@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Explore the Universe with Our Vintage Space Map
+# Vintage Space Map
 
 Welcome to our website, where we offer a stunning vintage map of space as a background for your device. This unique and beautiful design features detailed illustrations of spacecraft and celestial bodies, allowing you to explore the wonders of the universe right from your screen.
 

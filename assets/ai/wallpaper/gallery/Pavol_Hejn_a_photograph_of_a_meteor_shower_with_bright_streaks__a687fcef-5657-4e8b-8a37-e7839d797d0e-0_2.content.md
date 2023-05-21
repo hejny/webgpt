@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Stargaze - Enjoy the Beauty of the Night Sky
+# Night Stargaze
 
 Welcome to Stargaze, a website dedicated to bringing you closer to the wonders of the universe. Our mission is to provide you with the tools and resources necessary to explore the night sky and appreciate its beauty.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Desert Oasis: Finding Your Perfect Workspace
+# Desert Workspace
 
 Welcome to Desert Oasis, the ultimate destination for remote workers and digital nomads looking for a serene workspace surrounded by breathtaking natural beauty. Our website offers a variety of resources to help you find your ideal workspace in the desert, whether you're looking for a quiet retreat or a bustling coworking community.
 

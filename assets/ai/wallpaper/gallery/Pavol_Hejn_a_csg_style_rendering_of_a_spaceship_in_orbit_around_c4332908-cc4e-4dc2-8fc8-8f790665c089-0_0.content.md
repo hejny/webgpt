@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Elevate Your Desktop Aesthetics with a Futuristic Spaceship Background
+# Futuristic Background
 
 Welcome to our website, where we provide you with the latest and greatest in tech news, product reviews, and more. As part of our commitment to keeping you up-to-date on all things cutting-edge, we're pleased to offer this stunning background featuring a csg-style rendering of a spaceship in orbit around a planet.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Discover the World from Above: A Hot Air Balloon Adventure
+# Balloon Adventure
 
 Welcome to our lifestyle and adventure website, where we inspire you to explore new horizons and live your best life. Our stunning hot air balloon background sets the tone for your journey, inviting you to take flight and discover the world from a different perspective.
 

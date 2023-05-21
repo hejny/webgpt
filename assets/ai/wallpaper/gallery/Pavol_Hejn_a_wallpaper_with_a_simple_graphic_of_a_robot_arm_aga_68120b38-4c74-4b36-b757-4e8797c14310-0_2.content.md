@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# TechTalks - The Latest News and Insights in the World of Technology
+# TechTalks News
 
 Welcome to TechTalks, a website dedicated to providing you with the latest news, reviews, and insights into the world of technology. Our website is designed for tech enthusiasts who want to stay up-to-date with the latest trends and developments in this fast-paced industry.
 

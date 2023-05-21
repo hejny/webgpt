@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Elevate Your Tech Website with a Minimalist Abstract Network Background
+# Minimalist Network
 
 Welcome to our tech website! We understand the importance of having a visually appealing website that aligns with your brand's identity. That's why we're excited to offer you a minimalist abstract network background that will elevate your website's design.
 

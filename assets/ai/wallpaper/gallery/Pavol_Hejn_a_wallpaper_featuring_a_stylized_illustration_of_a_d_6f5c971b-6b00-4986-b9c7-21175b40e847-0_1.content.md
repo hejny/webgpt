@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# The Future is Now: Exploring the Possibilities of Dystopian Worlds
+# Dystopian Future Now
 
 Welcome to our website, where we delve into the fascinating world of dystopian futures. Our website aims to provide you with a space to explore and learn about the possibilities of what our future could look like.
 

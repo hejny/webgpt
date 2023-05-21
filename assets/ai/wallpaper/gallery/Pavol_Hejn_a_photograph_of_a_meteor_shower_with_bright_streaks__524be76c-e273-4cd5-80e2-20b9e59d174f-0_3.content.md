@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Discover the Beauty of the Night Sky with Our Astronomy Website
+# Night Sky Website
 
 Welcome to our website, where we offer a wealth of resources for anyone who loves astronomy and wants to explore the wonders of the night sky. Our website is designed to be a hub for information, inspiration, and community for amateur astronomers and stargazers alike.
 

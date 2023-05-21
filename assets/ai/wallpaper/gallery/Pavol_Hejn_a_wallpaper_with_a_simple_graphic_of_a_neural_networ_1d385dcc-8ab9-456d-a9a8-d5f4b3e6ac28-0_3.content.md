@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Optimizing Business Operations with Neural Networks
+# Neural Ops
 
 Welcome to our website dedicated to exploring the power of neural networks in optimizing business operations. Our team of experienced data scientists and AI experts is here to help organizations leverage the latest advancements in artificial intelligence to improve their bottom line.
 

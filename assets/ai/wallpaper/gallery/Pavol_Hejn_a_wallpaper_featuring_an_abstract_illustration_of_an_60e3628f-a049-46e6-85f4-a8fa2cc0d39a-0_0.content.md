@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Exploring the Future of AI-Powered Search Engines with Minimalist Design
+# AI Search Future
 
 Welcome to our website, where we delve into the world of artificial intelligence and its impact on search engines. Our website features a sleek and modern design, including an abstract illustration of an AI-powered search engine set against a gradient background.
 

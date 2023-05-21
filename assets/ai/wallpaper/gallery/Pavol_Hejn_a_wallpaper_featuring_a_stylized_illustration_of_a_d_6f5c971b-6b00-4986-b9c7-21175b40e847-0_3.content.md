@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# The Future is Now: Embracing Technology for a Better Tomorrow
+# Tech for Tomorrow
 
 Welcome to our website, where we explore the intersection of technology and society. Our mission is to inspire people to embrace innovation and use it for the betterment of humanity. As a symbol of this vision, we have chosen a wallpaper featuring a stylized illustration of a dystopian future, with metallic textures and digital glitch effects.
 

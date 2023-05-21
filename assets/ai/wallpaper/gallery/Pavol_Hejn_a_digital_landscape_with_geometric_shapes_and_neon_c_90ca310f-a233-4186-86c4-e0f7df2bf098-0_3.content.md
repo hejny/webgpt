@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Vibrant World of Neon Dreams
+# Neon Dreams World
 
 Welcome to our website, where you can immerse yourself in a world of digital landscapes and geometric shapes. Our vibrant wallpaper provides the perfect backdrop for exploring the latest trends in design and technology.
 

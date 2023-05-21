@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Space Odyssey: Exploring the Wonders of the Universe
+# Universe Exploration
 
 Welcome to Space Odyssey, your ultimate destination for all things related to space exploration and science fiction. Our website is dedicated to providing you with the latest news, stories, and resources on space travel, astronomy, and futuristic technology.
 

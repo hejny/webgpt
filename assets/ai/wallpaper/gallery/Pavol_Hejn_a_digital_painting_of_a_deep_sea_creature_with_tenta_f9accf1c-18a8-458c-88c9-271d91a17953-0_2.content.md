@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Discover the Depths: Exploring the Mysteries of the Deep Sea
+# Deep Sea Discovery
 
 Welcome to our website, where we explore the fascinating world of the deep sea. Our digital wallpaper, featuring a stunning painting of a deep sea creature with tentacles and bioluminescent patterns, sets the tone for our exploration.
 

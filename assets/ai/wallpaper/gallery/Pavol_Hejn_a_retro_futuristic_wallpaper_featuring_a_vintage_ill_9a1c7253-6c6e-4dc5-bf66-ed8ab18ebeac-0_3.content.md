@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Retro-Futuristic Background for Your Creative Projects
+# Retro-Future Background
 
 Looking for a unique and eye-catching background to make your website, presentation, or social media stand out? Look no further than our retro-futuristic wallpaper featuring a vintage illustration of a robot set against a neon-colored background.
 

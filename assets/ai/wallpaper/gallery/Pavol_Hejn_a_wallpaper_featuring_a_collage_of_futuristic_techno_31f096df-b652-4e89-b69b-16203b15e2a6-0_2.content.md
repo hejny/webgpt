@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Future Tech Hub: Exploring the Latest Innovations in Technology
+# Tech Hub Innovations
 
 Welcome to Future Tech Hub, your go-to source for all things related to futuristic technology. Our website is dedicated to exploring the latest innovations in the tech industry and providing insights into how they are shaping our world.
 

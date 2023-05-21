@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Boost Your Creativity with an Abstract Thunderstorm Background
+# Abstract Storm
 
 Looking for a way to spark your creativity and add some energy to your workspace? Our abstract thunderstorm background is the perfect choice. With its striking interpretation of a thunderstorm, it will bring inspiration and focus to your desktop or laptop.
 

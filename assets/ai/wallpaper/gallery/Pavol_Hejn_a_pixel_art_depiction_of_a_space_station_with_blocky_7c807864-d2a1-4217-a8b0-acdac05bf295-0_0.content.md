@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Explore the Wonders of Space with Our Comprehensive Resource Hub
+# Space Hub
 
 Welcome to our website, where we provide a wealth of information and resources for space enthusiasts. Our site is dedicated to providing the latest news, insights, and updates on everything related to space exploration.
 

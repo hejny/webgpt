@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Inspiring Your Workspace with Colorful Fractal Patterns
+# Colorful Fractal Inspo
 
 Welcome to our website dedicated to helping you create a productive and inspiring workspace. Our website provides a variety of resources, including our colorful fractal pattern background, which can be used to enhance your desktop and spark creativity.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Discover the Wonders of Space with Space Adventure
+# Space Adventure
 
 Welcome to Space Adventure, your ultimate destination for all things space-related. Our website is designed to inspire and inform space enthusiasts of all levels, from amateur stargazers to seasoned astronomers.
 

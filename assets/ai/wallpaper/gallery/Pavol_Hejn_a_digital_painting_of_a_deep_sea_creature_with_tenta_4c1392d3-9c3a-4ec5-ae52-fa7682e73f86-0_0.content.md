@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Explore the Wonders of the Ocean with Oceanic Adventures
+# Oceanic Adventures
 
 Welcome to Oceanic Adventures, your ultimate guide to exploring the depths of the ocean! Our website is dedicated to providing you with all the information you need to plan and execute the perfect underwater adventure.
 

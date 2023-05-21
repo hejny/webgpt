@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Dashboard Background for Your Data Management Needs
+# Data Dashboard
 
 Welcome to our website, where we provide a sleek and simple digital dashboard background that can help you monitor and manage your data with ease. Our wallpaper features a graphic of a control panel, complete with all the necessary components for keeping track of your important information.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Experience the Beauty of the Northern Lights: A Digital Escape
+# Northern Lights Escape
 
 Welcome to our website, where you can immerse yourself in the captivating beauty of the Northern Lights. Our stunning background features a photograph of the aurora borealis, with its vibrant green and purple hues swirling across the night sky.
 

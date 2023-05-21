@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Virtual Assistant for Efficient Business Operations
+# Virtual Assistant
 
 Welcome to our website dedicated to improving your business operations with the help of virtual assistants. Our wallpaper features a simple graphic of a virtual assistant or chatbot, with space for messages and alerts, reminding you of the benefits of incorporating this technology into your daily routine.
 

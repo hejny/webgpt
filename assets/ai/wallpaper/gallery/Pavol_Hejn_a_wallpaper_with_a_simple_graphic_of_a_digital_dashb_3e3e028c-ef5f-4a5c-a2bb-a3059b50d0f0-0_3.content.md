@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Streamline Your Business with Custom Data Dashboards
+# Custom Dashboards
 
 Welcome to our website dedicated to helping businesses streamline their operations through effective data management. Our custom-designed digital dashboard provides the perfect backdrop for monitoring and managing your company's data.
 

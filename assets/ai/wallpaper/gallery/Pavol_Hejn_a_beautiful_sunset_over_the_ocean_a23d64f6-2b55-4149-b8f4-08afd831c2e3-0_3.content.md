@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Ocean Vibes: Bringing Tranquility to Your Digital Space
+# Digital Ocean Tranquility
 
 Welcome to Ocean Vibes, a website dedicated to bringing the calming energy of the ocean to your digital space. Our beautiful "Sunset over the Ocean" background is the perfect addition to any device, providing a serene backdrop for all your daily tasks.
 

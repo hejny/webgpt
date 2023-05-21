@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Exploring the Depths: A Journey Through Alien Caverns
+# Alien Caverns Journey
 
 Welcome to our website dedicated to exploring the wonders of the universe! Our mission is to bring you closer to the mysteries of the cosmos, and today we're taking you on a journey to an alien planet.
 

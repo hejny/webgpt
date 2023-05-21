@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Futuristic Cyborgs: Exploring the Intersection of Man and Machine
+# Cyborg Exploration
 
 Welcome to our website dedicated to exploring the fascinating world of cyborgs. Our site is a hub for all things related to the intersection of man and machine, from the latest technological advancements to the ethical considerations surrounding the use of technology to enhance human capabilities.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Collaborating with AI Companions in Space: Ainautes' Stories
+# AI Space Companions
 
 Welcome to our website, where we share inspiring stories of Ainautes and their AI companions working together in a massive, zero-gravity space station. Our community is dedicated to exploring the vastness of space and pushing the boundaries of human knowledge with the help of advanced artificial intelligence.
 

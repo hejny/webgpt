@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discover Your Dream Home in the Heart of the City
+# City Dream Home
 
 Welcome to our urban real estate website, where we are dedicated to helping you find your dream home in the heart of the city. Our team of experienced real estate agents has an in-depth knowledge of the local market and is committed to providing exceptional service to our clients.
 

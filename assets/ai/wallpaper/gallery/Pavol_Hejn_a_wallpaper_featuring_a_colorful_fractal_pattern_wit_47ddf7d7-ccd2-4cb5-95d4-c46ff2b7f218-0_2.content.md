@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with a Colorful Fractal Pattern
+# Colorful Fractal Workspace
 
 Welcome to our website, where we provide you with the tools and resources to elevate your workspace. One of our offerings is a colorful fractal pattern that can be used as a background on your desktop or laptop screen. This pattern features intricate lines and bold colors that are sure to inspire and energize you throughout your workday.
 

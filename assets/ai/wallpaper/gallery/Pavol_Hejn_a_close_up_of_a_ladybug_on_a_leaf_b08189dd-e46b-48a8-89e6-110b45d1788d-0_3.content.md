@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Nature-Inspired Home Decor for a Serene Living Space
+# Nature Decor
 
 Create a peaceful and serene living space with our collection of nature-inspired home decor. Our products feature stunning close-up images of natural elements, like flowers, leaves, and insects, that will add depth and texture to any room.
 

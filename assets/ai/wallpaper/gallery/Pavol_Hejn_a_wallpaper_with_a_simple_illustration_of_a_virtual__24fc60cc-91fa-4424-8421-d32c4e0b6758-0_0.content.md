@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Virtual Reality: Step into a New World
+# VR World
 
 Welcome to our website, where we explore the fascinating world of virtual reality. Our site is dedicated to bringing you the latest news, reviews, and insights into this rapidly evolving technology.
 

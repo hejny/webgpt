@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Tech Enthusiast Hub: Your Source for the Latest in Technology
+# Tech Hub
 
 Welcome to our website, dedicated to all things tech! Our site is a hub for the latest news, updates, and discussions on the world of technology. As you browse through our pages, you'll notice a striking background featuring a matrix of futuristic data visualizations and graphs. This background serves as a perfect backdrop for all our tech-related content, inspiring us to keep pushing the boundaries of what's possible.
 

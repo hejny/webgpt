@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Elevate Your Workspace with a Modern Minimalist Design
+# Minimalist Workspace
 
 Welcome to our website dedicated to helping you create a workspace that's both functional and visually appealing. Our modern minimalist design features sleek lines and a contemporary color scheme, providing the perfect backdrop for your workspace.
 

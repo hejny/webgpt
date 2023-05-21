@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Boost Your Creativity with Abstract Shapes Inspired by the Mandelbrot Set
+# Mandelbrot Shapes
 
 Introducing our latest addition to the collection of backgrounds that will help you stay inspired and motivated throughout the day. Our new abstract shapes design is inspired by the intricate patterns found in the Mandelbrot set, creating a unique and mesmerizing effect.
 

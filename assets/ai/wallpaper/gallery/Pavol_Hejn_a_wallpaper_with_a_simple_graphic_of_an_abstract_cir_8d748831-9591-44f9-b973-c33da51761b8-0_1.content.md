@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# TechConnect - Your Ultimate Tech News Destination
+# TechConnect News
 
 Welcome to TechConnect, your ultimate destination for the latest tech news and updates. Our website is designed to keep you informed about the latest happenings in the world of technology. Whether you're a tech enthusiast, a professional, or just someone who loves to stay updated with the latest trends, we've got you covered.
 

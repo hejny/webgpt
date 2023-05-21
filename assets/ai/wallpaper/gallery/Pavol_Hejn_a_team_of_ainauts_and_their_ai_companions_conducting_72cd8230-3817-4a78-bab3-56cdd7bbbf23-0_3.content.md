@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Depths of Gas Giants: Ainautes and AI Companions
+# Gas Giant Exploration
 
 Welcome to our website dedicated to exploring the mysteries of gas giant planets! Our team of Ainautes and their trusty AI companions are on a mission to uncover the secrets hidden within these massive, gaseous worlds.
 

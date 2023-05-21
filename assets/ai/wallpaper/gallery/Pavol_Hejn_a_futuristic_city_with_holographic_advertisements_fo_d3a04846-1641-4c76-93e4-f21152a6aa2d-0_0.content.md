@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# FutureTech: Exploring the Cutting-Edge of Technology
+# Cutting-Edge FutureTech
 
 Welcome to FutureTech, your go-to source for the latest in technological innovations. Our mission is to keep you up-to-date with the most cutting-edge advancements in the tech industry.
 

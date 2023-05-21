@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Magic of the Northern Lights
+# Northern Lights Magic
 
 Experience the breathtaking beauty of the Northern Lights with our stunning background image. Featuring a photograph of the green and purple hues swirling in the night sky, this image will transport you to another world every time you look at it.
 

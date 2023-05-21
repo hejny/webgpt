@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Elevate Your Space with Quantum-Inspired Art
+# Quantum Art
 
 Welcome to our website where we offer a unique and inspiring art piece that will transform your space into an artistic haven. Our abstract art is inspired by the shapes and colors of quantum physics, featuring bold colors and intricate lines that create a stunning visual effect.
 

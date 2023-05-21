@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Elevate Your Tech-Themed Website with an Ominous Machine Background
+# Tech Machine Background
 
 Looking to give your tech-themed website a futuristic edge? Our abstract illustration of a dark and menacing machine, complete with glowing red lights and intricate mechanical parts, is the perfect choice for adding a touch of sophistication and power to your site's aesthetic.
 

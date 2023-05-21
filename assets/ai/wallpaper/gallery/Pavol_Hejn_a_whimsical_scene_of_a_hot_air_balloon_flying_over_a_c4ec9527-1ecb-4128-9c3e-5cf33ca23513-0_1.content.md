@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Adventure City: Where Every Day is an Adventure
+# Adventure City
 
 Welcome to Adventure City, the ultimate destination for adventurers and thrill-seekers! Our website is designed to inspire you to explore new cities, try new activities, and live life to the fullest.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Boost Your Productivity with a Futuristic Workspace
+# Futuristic Workspace
 
 Welcome to our website, where we offer a unique and inspiring workspace design. Our pop art-style background features a comic book-style illustration of a futuristic robot or cyborg, which will add an energetic and dynamic feel to your workspace.
 

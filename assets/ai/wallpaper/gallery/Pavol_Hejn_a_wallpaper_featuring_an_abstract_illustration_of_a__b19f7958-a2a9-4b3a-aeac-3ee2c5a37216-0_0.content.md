@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Elevate Your Business with a Futuristic Data Center Theme
+# Futuristic Data Center
 
 Welcome to our website, where we help businesses stand out with cutting-edge design and technology. Our futuristic data center theme features sleek and modern graphics that are sure to impress clients and customers alike.
 

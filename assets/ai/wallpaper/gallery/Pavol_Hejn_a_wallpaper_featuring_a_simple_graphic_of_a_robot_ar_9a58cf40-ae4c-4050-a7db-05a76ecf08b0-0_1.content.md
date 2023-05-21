@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TechHub - Empowering Your Productivity
+# TechHub Empowers
 
 Welcome to TechHub, your one-stop-shop for all things tech-related. Our website offers a range of resources to help you stay up-to-date with the latest trends and innovations in the tech world.
 

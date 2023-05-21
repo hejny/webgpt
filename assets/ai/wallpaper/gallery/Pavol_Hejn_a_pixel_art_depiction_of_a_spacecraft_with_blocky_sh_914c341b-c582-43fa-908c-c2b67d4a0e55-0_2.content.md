@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Space Adventure: A Retro-Themed Website for Gamers
+# Retro Space Gaming
 
 Welcome to Space Adventure, a website dedicated to all things gaming! Our retro-themed design will take you on a trip down memory lane, with pixel art depictions and limited colors that create a nostalgic and playful feel. Our background wallpaper is a pixel art depiction of a spacecraft, with blocky shapes and limited colors that perfectly capture the essence of classic video games.
 

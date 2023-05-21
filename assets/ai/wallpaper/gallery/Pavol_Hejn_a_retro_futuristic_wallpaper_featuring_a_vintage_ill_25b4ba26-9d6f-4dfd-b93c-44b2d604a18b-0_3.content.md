@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Retro-Futuristic Background: Bringing the Future to Your Screen
+# Retro-Future Screen
 
 Welcome to our website, where we offer a unique retro-futuristic wallpaper that will take you back in time while propelling you into the future. Our wallpaper features a vintage illustration of a robot set against a neon-colored background, giving your screen a bold and vibrant look.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Exploring the Universe: A Journey Through Space
+# Space Journey
 
 Welcome to our website dedicated to exploring the vast universe beyond our planet. Our mission is to bring you the latest news, updates, and insights into the wonders of space.
 

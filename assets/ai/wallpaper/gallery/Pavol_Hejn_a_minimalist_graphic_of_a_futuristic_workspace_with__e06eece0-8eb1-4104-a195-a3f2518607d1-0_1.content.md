@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Boost Your Productivity with a Modern Workspace
+# Modern Workspace Boost
 
 Welcome to our website, where we provide you with the best resources to help you create a workspace that inspires creativity and boosts productivity. Our sleek and modern "Future Workspace" background is just one of the many tools we offer to help you achieve your goals.
 

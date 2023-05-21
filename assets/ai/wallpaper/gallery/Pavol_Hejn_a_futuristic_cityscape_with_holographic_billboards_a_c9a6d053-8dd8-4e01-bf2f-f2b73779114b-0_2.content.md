@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# FutureScape: A Vision of Tomorrow's World
+# FutureScape
 
 Welcome to FutureScape, where we explore the possibilities of tomorrow's world. Our website is dedicated to showcasing the latest advancements in technology, science, and culture that are shaping the future.
 

@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Build Your Dream Workspace with a Futuristic Flair
+# Futuristic Workspace
 
 Welcome to our website where we help you create your dream workspace that is both modern and minimalist. Our stylized illustration of a futuristic workspace can provide the perfect backdrop for your desktop, laptop or mobile device.
 

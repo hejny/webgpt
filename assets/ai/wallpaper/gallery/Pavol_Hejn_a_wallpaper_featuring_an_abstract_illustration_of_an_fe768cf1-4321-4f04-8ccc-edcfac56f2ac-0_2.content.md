@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Future of Search: Enhancing User Experience with AI-powered Search Engines
+# AI Search Future
 
 Welcome to our website, where we explore the exciting possibilities of AI-powered search engines. Our wallpaper features an abstract illustration of such a search engine, with a minimalist and modern design. But this is just the beginning - read on to learn more about how AI is transforming the way we search.
 

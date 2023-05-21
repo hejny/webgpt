@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Quantum Computing: A New Frontier in Technology
+# Quantum Frontier
 
 Welcome to our website dedicated to exploring the exciting world of quantum computing! Our site is designed to provide you with the latest news, information, and resources related to this rapidly-evolving field. 
 

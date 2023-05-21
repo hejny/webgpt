@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Protect Your Devices with Cybersecurity Awareness
+# Device Security
 
 Welcome to our website where we provide resources and information to help you protect your devices from cyber threats. Our website features an illustration of a cyborg with a metallic body and glowing eyes, serving as a visual reminder of the importance of cybersecurity awareness.
 

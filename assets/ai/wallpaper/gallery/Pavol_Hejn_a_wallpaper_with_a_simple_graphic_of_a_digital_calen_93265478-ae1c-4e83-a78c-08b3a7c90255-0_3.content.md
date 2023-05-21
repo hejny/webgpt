@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Boost Your Productivity with a Digital To-Do List
+# Digital To-Do Boost
 
 Welcome to our website, where we help you improve your productivity and stay organized with the help of a digital to-do list. Our minimalist design features a simple graphic of a digital calendar or to-do list, with space for notes and reminders.
 

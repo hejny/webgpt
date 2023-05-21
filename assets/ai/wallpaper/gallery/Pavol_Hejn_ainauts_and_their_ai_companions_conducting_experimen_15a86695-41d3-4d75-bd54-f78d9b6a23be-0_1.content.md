@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Exploring the Future of Science with AI Companions
+# AI Science Companions
 
 Welcome to our website, where we delve into the exciting world of science and technology. Our mission is to explore the possibilities of the future by using cutting-edge technologies such as artificial intelligence (AI) and machine learning (ML). 
 

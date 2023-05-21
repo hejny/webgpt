@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Malware Madness: Protect Your Digital World
+# Malware Protection
 
 Welcome to Malware Madness, your one-stop-shop for all things cybersecurity! Our mission is to keep you safe from the latest threats lurking in the digital world. 
 

@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Nature's Beauty: Bringing the Wonders of Nature to Your Screen
+# Nature Screen
 
 Welcome to Nature's Beauty, a website dedicated to bringing the beauty of nature to your screen through our collection of high-quality backgrounds. Our collection features breathtaking images of landscapes, animals, and plants that will transport you to different parts of the world.
 

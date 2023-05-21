@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# The Warmth of the Desert: Exploring the Beauty of the American Southwest
+# Desert Beauty
 
 Welcome to our website dedicated to exploring the stunning natural beauty of the American Southwest. Our website is filled with information on the region's unique geography, rich history, and diverse cultures.
 

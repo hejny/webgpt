@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# The Hidden Path: Explore the Dark and Mysterious Forest
+# Mysterious Forest Path
 
 Welcome to The Hidden Path, a website dedicated to exploring the unknown and unexplained. Our background wallpaper sets the tone for our focus on horror and mystery, inviting you to delve deeper into the darkness.
 

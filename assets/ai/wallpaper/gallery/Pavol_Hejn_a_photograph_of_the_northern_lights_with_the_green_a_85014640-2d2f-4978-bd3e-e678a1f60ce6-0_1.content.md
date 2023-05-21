@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Experience the Magic of the Northern Lights on Your Screen
+# Northern Lights Screen
 
 Welcome to our website, where you can download a stunning wallpaper featuring the Aurora Borealis. Our wallpaper is more than just a beautiful background - it's a window into the natural world and a source of inspiration for anyone who loves the night sky.
 

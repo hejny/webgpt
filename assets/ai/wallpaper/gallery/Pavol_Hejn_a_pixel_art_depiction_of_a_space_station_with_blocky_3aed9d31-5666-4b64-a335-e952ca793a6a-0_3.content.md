@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Odyssey: Explore the Universe with Us
+# Space Explore Us
 
 Welcome to Space Odyssey, your ultimate destination for all things space-related. Our website is dedicated to bringing you the latest news and updates on space exploration, astronomy, and technology. And what better way to immerse yourself in the world of space than with our stunning pixel art background? 
 

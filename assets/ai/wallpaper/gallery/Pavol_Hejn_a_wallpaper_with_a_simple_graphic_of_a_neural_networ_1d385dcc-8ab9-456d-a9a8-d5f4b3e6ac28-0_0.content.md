@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring Neural Networks and AI
+# Neural AI Exploration
 
 Welcome to our website dedicated to exploring the latest developments in neural networks and artificial intelligence. Our goal is to provide valuable resources, news, and insights for tech enthusiasts who want to stay up-to-date with the cutting-edge advancements in this exciting field. As a bonus, we offer a free background featuring a simple graphic of a neural network against a complementary color scheme.
 

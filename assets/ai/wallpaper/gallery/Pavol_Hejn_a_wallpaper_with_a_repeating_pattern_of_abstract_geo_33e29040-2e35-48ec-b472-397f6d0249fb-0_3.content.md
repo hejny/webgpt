@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Elevate Your Website's Look with Geometric Vibes
+# Geometric Upgrade
 
 Welcome to Geometric Vibes, where we help you enhance the look of your website with stunning abstract geometric patterns. Our designs are inspired by the latest web design trends and color schemes, making them perfect for modern websites.
 

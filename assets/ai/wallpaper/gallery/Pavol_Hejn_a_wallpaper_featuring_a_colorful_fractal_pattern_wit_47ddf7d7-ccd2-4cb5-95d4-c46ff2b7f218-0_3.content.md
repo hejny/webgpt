@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Dynamic fractals enhance creativity
+# Fractal Creativity
 
 Welcome to our platform dedicated to empowering creatives from all backgrounds. Our website provides a variety of resources and tools to help you bring your ideas to life.
 

@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# AI-Powered Search Engine: Revolutionizing the Way We Search
+# AI Search Revolution
 
 Welcome to our website dedicated to exploring the world of AI-powered search engines. Our mission is to educate and inform users about the benefits of using an AI-powered search engine and how it can revolutionize the way we search for information.
 

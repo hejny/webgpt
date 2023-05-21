@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Digital Landscapes: Elevate Your Workspace with Stunning Geometric Designs
+# Geometric Landscapes
 
 Welcome to Digital Landscapes, your destination for unique and visually stunning geometric designs that will transform your workspace. Our collection features a range of digital landscapes, each with its own distinctive style and color palette.
 

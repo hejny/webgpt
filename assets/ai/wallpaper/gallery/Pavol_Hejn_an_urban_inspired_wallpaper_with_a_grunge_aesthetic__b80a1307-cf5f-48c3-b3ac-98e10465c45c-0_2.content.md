@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Urban Nights: Discover the Energy of the City
+# City Nights
 
 Welcome to Urban Nights, a website dedicated to exploring the vibrant energy and excitement of modern cities. Our site is designed for urban enthusiasts who love the fast-paced lifestyle and dynamic culture of the city.
 

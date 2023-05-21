@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# City of the Future: Ainautes and AI Building Sustainable Structures Together
+# Future City AI
 
 Welcome to our website, dedicated to exploring the future of sustainable cities. Our mission is to showcase the latest innovations in architecture, engineering, and urban planning that will help shape the cities of tomorrow. 
 

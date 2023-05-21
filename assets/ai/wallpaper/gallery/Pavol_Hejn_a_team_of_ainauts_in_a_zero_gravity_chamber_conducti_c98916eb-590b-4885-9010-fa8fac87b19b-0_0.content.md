@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Exploring the Effects of AI on Human Health in Zero-Gravity
+# AI Health in Space
 
 Welcome to our website dedicated to exploring the effects of artificial intelligence on human health in zero-gravity environments. Our team of Ainautes is conducting groundbreaking experiments that will help us better understand the impact of AI on the human body.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Digital Timer for Productivity
+# DigTimer
 
 Welcome to our website dedicated to helping you increase your productivity with our customizable digital timer. Our minimalist timer is designed to keep you on track and focused, with customizable alarms and countdowns.
 

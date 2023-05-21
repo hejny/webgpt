@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Cozy Winter Living: Bringing the Outdoors In
+# Indoor Winter Coziness
 
 Welcome to our home decor and lifestyle blog, where we offer inspiration and tips for creating a cozy and inviting living space. Our winter cabin background is the perfect addition to any room, bringing the beauty of nature indoors.
 

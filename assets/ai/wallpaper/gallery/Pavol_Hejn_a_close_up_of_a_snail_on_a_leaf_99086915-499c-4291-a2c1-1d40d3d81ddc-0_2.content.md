@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Transform Your Home Office with Nature-Inspired Decor
+# Nature Office Decor
 
 Welcome to our website, where we offer a variety of nature-inspired decor to help you create a peaceful and productive home office. Our collection includes everything from desk accessories to wall art, all designed to bring the beauty of nature indoors.
 

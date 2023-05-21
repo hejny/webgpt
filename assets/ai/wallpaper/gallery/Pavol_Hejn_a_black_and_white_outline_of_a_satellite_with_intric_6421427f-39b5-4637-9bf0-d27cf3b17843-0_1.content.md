@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Space Explorer: Discovering the Wonders of the Universe
+# Universe Explorer
 
 Welcome to Space Explorer, your ultimate guide to exploring the vastness of the universe. Our website is dedicated to providing you with the latest information about space exploration, astronomy, and technology.
 

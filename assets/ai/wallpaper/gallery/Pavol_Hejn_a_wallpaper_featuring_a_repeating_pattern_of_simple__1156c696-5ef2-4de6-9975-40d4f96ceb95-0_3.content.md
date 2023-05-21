@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Mathematically Minimalist Background
+# Math Minimalism
 
 Welcome to our website! Our mathematically minimalist background is the perfect addition to any workspace or device. This repeating pattern of simple equations and formulas arranged in a modern design provides a sleek and sophisticated look that will inspire creativity and productivity.
 

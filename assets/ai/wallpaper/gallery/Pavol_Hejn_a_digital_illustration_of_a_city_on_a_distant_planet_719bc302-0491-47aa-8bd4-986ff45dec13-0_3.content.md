@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Future Tech on Futuristic Website
+# Futuristic Tech
 
 Welcome to our tech website, where we explore the latest advancements in technology and how they impact our lives. Our website is designed to keep you up-to-date with the latest news, reviews, and trends in the world of tech.
 

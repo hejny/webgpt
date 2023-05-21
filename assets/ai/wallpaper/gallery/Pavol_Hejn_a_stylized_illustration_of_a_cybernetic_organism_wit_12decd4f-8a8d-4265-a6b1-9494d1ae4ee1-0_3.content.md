@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Future of Digital Transformation
+# Digital Future
 
 Welcome to our website dedicated to exploring the future of digital transformation! Our website is designed to provide you with the latest insights, trends, and best practices on how businesses can leverage technology to transform their operations.
 

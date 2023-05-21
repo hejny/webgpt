@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Dragonfly Dreams: Transform Your Space with Tranquil Beauty
+# Dragonfly Dreams
 
 Welcome to Dragonfly Dreams, where we help you create a serene and tranquil environment in your home. Our stunning Dragonfly Dreams background is the perfect addition to any room, providing a calming backdrop that will transport you to a peaceful oasis.
 

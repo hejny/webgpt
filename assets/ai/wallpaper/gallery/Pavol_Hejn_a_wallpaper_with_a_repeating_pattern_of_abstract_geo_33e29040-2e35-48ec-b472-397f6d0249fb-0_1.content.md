@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Elevate Your Web Design with Abstract Geometric Patterns
+# Geometric Web Design
 
 Welcome to our website, where we provide resources and inspiration for modern web design. Our site is dedicated to helping designers create stunning websites that stand out from the crowd.
 

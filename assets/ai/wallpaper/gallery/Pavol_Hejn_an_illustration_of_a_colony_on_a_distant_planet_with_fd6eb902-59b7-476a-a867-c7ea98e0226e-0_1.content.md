@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Discover New Worlds with Our Futuristic Travel Agency
+# Futuristic Travel Agency
 
 Welcome to our travel agency, where we specialize in helping you explore the unknown. Our team of experienced guides will take you on a journey like no other, from the depths of the ocean to the farthest reaches of space.
 

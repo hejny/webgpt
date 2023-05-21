@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# "Neural Pathways" - Exploring the Depths of Creativity
+# Neural Pathways
 
 Welcome to "Neural Pathways," a website dedicated to exploring the intricacies of the human mind and promoting creativity. Our background features a simple graphic of a neural network against a background of complementary colors, providing a stimulating visual environment for your creative endeavors.
 

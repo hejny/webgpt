@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Exploring the Unknown: Ainautes in High-Tech Suits
+# High-Tech Ainautes
 
 Welcome to our website dedicated to exploring the unknown! Our mission is to discover and share knowledge about the mysteries of the universe. Our wallpaper showcases a group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them. This image represents the spirit of exploration and adventure that drives us forward.
 

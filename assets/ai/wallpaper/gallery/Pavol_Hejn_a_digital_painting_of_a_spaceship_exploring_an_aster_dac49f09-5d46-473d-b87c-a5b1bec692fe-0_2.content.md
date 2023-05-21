@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Explorer - A Journey Through the Unknown
+# Space Journey
 
 Welcome to Space Explorer, a website dedicated to exploring the mysteries of the universe. Our mission is to bring you closer to the wonders of space and inspire you to embark on your own journey of discovery.
 

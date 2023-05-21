@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Boost Your Productivity with a Digital Workspace
+# Digital Productivity Boost
 
 Welcome to our website, where we offer tips and tools to help you optimize your digital workspace for maximum productivity. As part of our mission to help you work smarter, not harder, we also offer a sleek and modern wallpaper featuring a repeating pattern of digital devices.
 

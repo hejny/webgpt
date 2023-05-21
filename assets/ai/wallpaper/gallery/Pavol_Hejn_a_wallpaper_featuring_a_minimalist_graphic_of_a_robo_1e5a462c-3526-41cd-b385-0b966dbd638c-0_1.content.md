@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# "Innovative Ideas" - Sparking Creativity and Innovation
+# Innovative Spark
 
 Welcome to "Innovative Ideas," a platform dedicated to inspiring creativity and innovation. Our website provides a space for individuals to share their ideas, collaborate with like-minded individuals, and find inspiration for their next big project. As part of our commitment to fostering creativity, we offer a minimalist graphic featuring a robot hand holding a stylus or pen, providing the perfect backdrop for those who are always brainstorming and jotting down ideas.
 

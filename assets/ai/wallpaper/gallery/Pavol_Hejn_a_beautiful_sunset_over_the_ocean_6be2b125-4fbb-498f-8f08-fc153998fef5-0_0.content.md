@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Ocean Vibes: Bringing the Calming Energy of the Ocean to You
+# Ocean Energy
 
 Welcome to Ocean Vibes, a website dedicated to helping you find peace and tranquility through the beauty of the ocean. Our stunning background featuring a breathtaking sunset over the ocean is just one of the many ways we can help you transform your digital space into a serene oasis.
 

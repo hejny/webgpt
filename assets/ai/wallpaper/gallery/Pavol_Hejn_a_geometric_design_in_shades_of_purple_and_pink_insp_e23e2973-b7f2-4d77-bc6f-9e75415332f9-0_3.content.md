@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Elevate Your Workspace with a Quantum-Inspired Geometric Design
+# Quantum Workspace
 
 Welcome to our website! We offer a unique selection of backgrounds that will elevate your workspace and inspire creativity. Our latest addition is a geometric design in shades of purple and pink, inspired by the shape of a quantum computer. 
 

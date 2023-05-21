@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Cityscapes of the Future - Explore the Neon-Lit Metropolises
+# Future Cityscapes
 
 Welcome to Cityscapes of the Future, a website dedicated to exploring the dark and mysterious side of futuristic cities. Our background features an abstract illustration of a cityscape with towering skyscrapers and glowing lights that will transport you to a world of neon-lit streets and endless possibilities.
 

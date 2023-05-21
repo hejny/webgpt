@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Embrace the Future with Our Tech Blog
+# Future Tech Blog
 
 Welcome to our tech blog, where we explore the latest advancements in technology and share our insights with you. As you browse through our website, you'll notice a stunning background that sets the tone for our futuristic theme. This urban-inspired design features a grunge aesthetic with a neon-lit cityscape and holographic billboards.
 

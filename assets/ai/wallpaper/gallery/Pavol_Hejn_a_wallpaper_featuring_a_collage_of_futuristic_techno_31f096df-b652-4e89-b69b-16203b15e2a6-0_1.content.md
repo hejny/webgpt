@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# FutureTech: Exploring the Latest in Technological Advancements
+# FutureTech Advancements
 
 Welcome to FutureTech, your go-to source for all things related to the latest technological advancements. Our website is dedicated to providing you with up-to-date information on the most innovative and cutting-edge technology available today.
 

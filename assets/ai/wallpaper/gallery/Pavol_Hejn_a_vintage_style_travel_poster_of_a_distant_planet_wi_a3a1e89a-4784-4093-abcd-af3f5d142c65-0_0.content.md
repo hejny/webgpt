@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Explore the Wonders of Space with Our Vintage Travel-Themed Website
+# Vintage Space Travel
 
 Welcome to our website, where you can embark on a journey through space and time. Our vintage travel-themed website takes you on an adventure to distant planets, with stunning wallpapers that transport you to other worlds.
 

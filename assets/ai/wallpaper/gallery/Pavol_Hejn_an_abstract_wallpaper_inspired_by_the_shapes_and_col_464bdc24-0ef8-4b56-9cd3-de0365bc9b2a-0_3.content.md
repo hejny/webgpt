@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Quantum Inspired Design for Your Creative Space
+# Quantum Space Design
 
 Welcome to our website where you can find unique designs that will transform your space into a creative and inspiring environment. Our collection includes a variety of designs that cater to different tastes, from abstract to nature-inspired.
 

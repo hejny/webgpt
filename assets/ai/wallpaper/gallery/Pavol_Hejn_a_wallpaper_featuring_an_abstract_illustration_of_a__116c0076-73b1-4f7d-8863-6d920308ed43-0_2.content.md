@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Future Metropolis - Exploring the Dark and Dystopian World of Tomorrow
+# Dystopian Metropolis
 
 Welcome to Future Metropolis, a website dedicated to exploring the potential consequences of rapid technological advancement and societal change. Our site features articles, stories, and discussions on the future of technology, society, and culture.
 

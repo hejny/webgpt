@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Discover the Wonders of Nature with Our Wildlife Blog
+# Wildlife Wonders
 
 Welcome to our wildlife blog, a place where you can explore the beauty of nature and learn about the incredible diversity of life on our planet. Our website is dedicated to providing a space for nature lovers to connect, share their experiences, and discover new ways to appreciate the natural world.
 

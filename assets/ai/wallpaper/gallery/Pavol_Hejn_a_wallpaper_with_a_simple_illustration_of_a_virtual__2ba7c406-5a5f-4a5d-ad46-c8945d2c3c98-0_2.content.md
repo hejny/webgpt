@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Virtual Reality: Experience a New World
+# New VR World
 
 Welcome to our website where we explore the fascinating world of virtual reality. Our mission is to provide you with the latest information, news, and insights into the ever-evolving VR landscape.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Dark City Nights: A Futuristic Background for Your Website
+# Futuristic Nightscape
 
 Welcome to Dark City Nights, where we provide you with a stunning and unique background for your website. Our wallpaper features an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background.
 

@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# RoboNote - A Minimalist Note-taking App with a Futuristic Twist
+# RoboNote App
 
 Welcome to RoboNote, the ultimate note-taking app for the modern age. Our app is designed to help you capture your ideas and thoughts quickly and efficiently, all while enjoying a sleek and futuristic interface.
 

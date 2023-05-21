@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# TechConnect - Connecting You to the Latest in Technology
+# TechConnect
 
 Welcome to TechConnect, your go-to source for all things technology! Our website provides you with the latest news, reviews, and insights on everything tech-related. 
 

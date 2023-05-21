@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Drone Control: Manage Your UAV Fleet with Ease
+# Drone Control
 
 Welcome to Drone Control, your one-stop-shop for managing your fleet of unmanned aerial vehicles (UAVs). Our platform provides you with the tools you need to monitor and control your drones from anywhere in the world. 
 

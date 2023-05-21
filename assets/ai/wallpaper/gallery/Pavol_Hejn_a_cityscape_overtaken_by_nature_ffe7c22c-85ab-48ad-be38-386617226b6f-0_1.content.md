@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# The Urban Jungle: Exploring the Intersection of City and Nature
+# Urban Nature
 
 Welcome to The Urban Jungle, a website dedicated to exploring the ways in which nature and the city coexist. Our goal is to showcase how green spaces can thrive in urban environments, and how cities can be designed with nature in mind.
 

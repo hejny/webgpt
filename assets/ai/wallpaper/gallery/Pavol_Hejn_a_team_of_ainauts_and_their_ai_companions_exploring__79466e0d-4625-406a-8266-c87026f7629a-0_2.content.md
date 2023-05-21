@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Exploring the Unknown: Uncovering Mysteries of Abandoned Alien Spaceships
+# Alien Mysteries
 
 Welcome to our website dedicated to exploring the mysteries of abandoned alien spacecraft! Our team of Ainautes and their AI companions are on a mission to uncover the secrets hidden within these massive vessels floating in the depths of space.
 

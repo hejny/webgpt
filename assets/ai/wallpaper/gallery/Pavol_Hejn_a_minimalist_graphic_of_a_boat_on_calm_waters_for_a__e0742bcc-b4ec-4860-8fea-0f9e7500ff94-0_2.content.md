@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Calm Waters: Your Ultimate Guide to Boating and Water Sports
+# Water Sports Guide
 
 Welcome to Calm Waters, your go-to destination for all things boating and water sports. Our website is designed to provide you with everything you need to know about these exciting activities, from the best gear to the most beautiful destinations.
 

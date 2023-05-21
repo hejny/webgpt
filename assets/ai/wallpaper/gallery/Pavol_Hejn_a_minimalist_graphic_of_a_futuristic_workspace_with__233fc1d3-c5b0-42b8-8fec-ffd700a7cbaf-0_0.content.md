@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Boost Your Productivity with a Futuristic Workspace
+# Futuristic Workspace
 
 Welcome to our website dedicated to productivity enthusiasts who are looking for ways to enhance their work environment and boost their productivity. Our minimalist graphic of a futuristic workspace, with sleek lines and a modern color scheme, is the perfect background for anyone who wants to create a productive and inspiring work environment.
 

@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Neural Networks in Action: How AI is Revolutionizing the Stock Market
+# AI Stock Revolution
 
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence and its impact on the stock market. Our wallpaper, featuring a simple graphic of a neural network against a background of complementary colors, represents the power and potential of this cutting-edge technology.
 

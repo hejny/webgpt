@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Exploring the Vast Unknowns of Space
+# Space Exploration
 
 Welcome to our website dedicated to all things related to space exploration! Our background features a black and white outline of a satellite, showcasing the intricate technical components and purpose behind space exploration. As you browse through our website, let this background serve as a reminder of the incredible advancements in technology that allow us to explore the vast unknowns of space.
 

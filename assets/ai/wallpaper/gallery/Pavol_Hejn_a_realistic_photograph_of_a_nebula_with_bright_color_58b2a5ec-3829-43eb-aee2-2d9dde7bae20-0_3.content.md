@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Cosmic Dreams: Explore the Beauty of the Universe
+# Cosmic Beauty
 
 Welcome to Cosmic Dreams, a website dedicated to exploring the wonders of the universe. Our stunning background collection features breathtaking photographs of celestial bodies and phenomena that will transport you to the depths of space.
 

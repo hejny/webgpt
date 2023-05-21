@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# The Future of Urban Living: Embracing Technology for Sustainable Cities
+# Tech Cities
 
 Welcome to our website where we explore the future of urban living through the lens of a stunning cityscape background. Our background depicts a futuristic metropolis where Ainautes use advanced AI technology to monitor and maintain the city's infrastructure and systems.
 

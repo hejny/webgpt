@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Space Odyssey: Explore the Wonders of the Universe
+# Universe Odyssey
 
 Welcome to our website, where we invite you to explore the wonders of the universe with our stunning digital painting of a spaceship approaching an alien planet. This artwork serves as a backdrop for our mission to inspire curiosity and imagination about space and astronomy.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Data Visualization: Insights for Modern Businesses
+# Modern Data Insights
 
 Welcome to our website, where we provide insights into the world of data visualization and how it can help modern businesses make informed decisions. Our minimalist and modern design reflects our commitment to simplicity and clarity.
 

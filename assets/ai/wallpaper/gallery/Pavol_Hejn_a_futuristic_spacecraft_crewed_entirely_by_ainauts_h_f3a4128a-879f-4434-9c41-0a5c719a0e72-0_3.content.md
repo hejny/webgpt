@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Spaceship: Cosmos Exploration with Ainautes
+# AI Cosmos Exploration
 
 Welcome to our website dedicated to the futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds. Our mission is to bring you the latest news and updates on the development and deployment of AI-powered spaceships, as well as explore the possibilities and implications of this groundbreaking technology.
 

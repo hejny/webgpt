@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TechHub: Virtual Workspace for Techies
+# TechHub Workspace
 
 Welcome to TechHub, the virtual workspace for tech enthusiasts and professionals. Our platform offers a futuristic design that represents the interconnectedness of technology and how it powers our lives.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Future City Nightscape - A Portal to the World of Futuristic Cities
+# Futuristic Nightscape
 
 Welcome to Future City Nightscape, a website dedicated to exploring the possibilities of futuristic cityscapes. Our abstract illustration of a cityscape with glowing lights and a dark and moody color scheme, set against a gradient background, sets the tone for our exploration of what the future might hold.
 

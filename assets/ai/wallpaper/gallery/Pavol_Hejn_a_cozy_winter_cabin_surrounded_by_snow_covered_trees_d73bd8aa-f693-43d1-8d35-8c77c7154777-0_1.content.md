@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Winter Wonderland: Cozy Home Decor Ideas
+# Cozy Winter Decor
 
 Welcome to our cozy winter wonderland! Our blog is dedicated to all things home decor and lifestyle, with a focus on creating a warm and inviting atmosphere in your living space. Our beautiful wallpaper featuring a cozy winter cabin surrounded by snow-covered trees sets the tone for the perfect winter retreat.
 

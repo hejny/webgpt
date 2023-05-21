@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# FutureTech - Innovating the World
+# Innovative Future Tech
 
 Welcome to FutureTech, a website dedicated to bringing you the latest in technology and innovation. Our mission is to inspire and inform our readers about the future of technology and how it will shape our world.
 

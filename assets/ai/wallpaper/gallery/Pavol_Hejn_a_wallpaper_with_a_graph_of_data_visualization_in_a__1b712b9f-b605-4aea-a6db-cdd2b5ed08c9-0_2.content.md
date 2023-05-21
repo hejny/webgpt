@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Data Visualization for Better Decision Making
+# Data Viz Boost
 
 Welcome to our website, where we help you make informed decisions through data visualization. Our minimalist and modern design philosophy is reflected in our wallpaper, which features a graph of data visualization.
 

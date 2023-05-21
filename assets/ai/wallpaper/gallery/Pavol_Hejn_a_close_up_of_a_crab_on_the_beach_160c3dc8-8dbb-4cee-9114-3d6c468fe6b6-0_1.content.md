@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Bring the Beach to Your Space with Coastal Vibes
+# Coastal Vibes
 
 Transform your space into a seaside oasis with our Coastal Vibes background. This stunning background features a close-up of a crab on the beach, bringing the beauty of the ocean right into your home or office.
 

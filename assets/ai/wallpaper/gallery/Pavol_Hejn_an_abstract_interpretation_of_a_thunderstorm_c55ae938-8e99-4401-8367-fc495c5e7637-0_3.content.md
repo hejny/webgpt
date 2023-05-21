@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Unleash Your Creativity with Abstract Art
+# Abstract Creativity
 
 Welcome to our website, where we explore the power of abstract art and how it can transform your digital experience. Our website is dedicated to providing you with visually striking backgrounds that inspire creativity and productivity.
 

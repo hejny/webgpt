@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Discover the Wonders of Ainautes: Exploring the Mysteries of a Distant Planet
+# Ainaute Planet Exploration
 
 Welcome to our website, where we take you on an exciting journey through the wonders of Ainautes. Our mission is to bring you closer to the mysteries of this distant planet and its awe-inspiring landscapes.
 

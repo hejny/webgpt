@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Transform Your Home Office with Coastal Dreams
+# Coastal Office
 
 Welcome to our website, where we offer a variety of resources and inspiration to help you create the perfect home office. Our Coastal Dreams background is the perfect addition to transform your workspace into a calming oasis.
 

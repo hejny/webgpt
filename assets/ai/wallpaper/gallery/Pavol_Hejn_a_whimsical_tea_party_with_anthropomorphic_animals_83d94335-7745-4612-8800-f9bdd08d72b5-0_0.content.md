@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Bring Whimsy to Your Space with Anthropomorphic Animal Designs
+# Animal Space Whimsy
 
 Welcome to our website, where we offer a variety of unique and playful designs featuring anthropomorphic animals. Our "Whimsical Tea Party with Anthropomorphic Animals" design is just one of the many options we have available.
 

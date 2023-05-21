@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# The Future of AI-Assisted Work in Ainautes: Exploring the Boundaries of Science and Technology
+# AI Ainautes Future
 
 Welcome to our website dedicated to exploring the exciting world of AI-assisted work in Ainautes. Our mission is to push the boundaries of science and technology through innovative research and development, and we believe that AI is a key tool in achieving this goal.
 

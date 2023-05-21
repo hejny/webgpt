@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Timekeeper: Stay on Schedule with Our Countdown Background
+# Countdown Background
 
 Welcome to Timekeeper, the ultimate tool for staying organized and on top of your schedule. Our countdown background is the perfect addition to any desktop or mobile device. With its sleek design and customizable settings, you can easily set alarms and countdowns to keep track of important dates and deadlines.
 

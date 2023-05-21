@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Power of AI-Powered Search Engines with Our Minimalist Design
+# AI Search Design
 
 Welcome to our website, where we explore the latest advancements in AI-powered search engines. Our minimalist design featuring an abstract illustration of an AI-powered search engine is the perfect backdrop for anyone interested in this exciting field.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech Hub - Your One-Stop Destination for All Things Tech
+# Tech Hub
 
 Welcome to Tech Hub, the ultimate destination for all tech enthusiasts! Our website is designed to provide you with the latest news, reviews, and insights from the world of technology. Whether you're a seasoned pro or just getting started, we've got everything you need to stay up-to-date on the latest trends and innovations.
 

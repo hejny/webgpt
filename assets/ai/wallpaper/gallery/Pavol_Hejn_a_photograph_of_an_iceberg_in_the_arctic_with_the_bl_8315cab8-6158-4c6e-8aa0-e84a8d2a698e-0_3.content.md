@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Arctic Adventures: Explore the Wild North
+# Arctic Adventures
 
 Welcome to Arctic Adventures, your ultimate guide to exploring the breathtaking beauty of the Arctic! Our website is dedicated to helping you plan your dream trip to this stunning region, from the snowy landscapes to the icy waters.
 

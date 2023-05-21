@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discover the Beauty of the Universe with Our Space-Inspired Website
+# Space Beauty
 
 Welcome to our website, where you can explore the wonders of the universe through stunning space-inspired visuals. Our website features a realistic photograph of a galaxy cluster as a background, showcasing its intricate details and bright colors that represent the vastness of the cosmos.
 

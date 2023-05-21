@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Adventure Awaits: Explore the World with Our Travel Tips and Stories
+# Travel Adventure
 
 Welcome to Adventure Awaits, your go-to source for travel inspiration and tips. Whether you're a seasoned traveler or just starting to plan your next adventure, our website has everything you need to make the most of your trip.
 

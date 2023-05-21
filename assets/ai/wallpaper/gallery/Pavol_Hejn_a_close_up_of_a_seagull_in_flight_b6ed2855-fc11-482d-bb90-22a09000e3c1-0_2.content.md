@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Coastal Vibes: Transform Your Home with Seagull-Inspired Decor
+# Seagull Decor
 
 Bring the beauty of the beach to your home with our seagull-inspired decor. Our stunning seagull wallpaper captures the essence of coastal living, providing a serene backdrop for any room.
 

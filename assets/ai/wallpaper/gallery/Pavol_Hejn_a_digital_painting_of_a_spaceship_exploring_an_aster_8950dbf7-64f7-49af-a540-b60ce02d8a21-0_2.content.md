@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Space Adventure: Explore the Unknown
+# Space Explore Adventure
 
 Welcome to Space Adventure, where we take you on a journey through the vast expanse of space. Our mission is to inspire and educate people about the wonders of the universe. Our website offers a variety of resources, including articles, videos, and user stories, that will help you learn about space exploration, astronomy, and more.
 

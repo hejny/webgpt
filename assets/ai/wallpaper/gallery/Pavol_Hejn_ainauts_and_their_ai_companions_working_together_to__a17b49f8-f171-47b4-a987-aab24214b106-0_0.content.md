@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Elevator: A Futuristic Solution for Space Travel
+# Space Elevator
 
 Welcome to our website, dedicated to exploring the possibilities of space travel with the help of a space elevator. Our wallpaper features Ainautes and their AI companions working together to construct a massive, orbiting space elevator. This image represents the future of space travel, where humans and machines work together to achieve great things.
 

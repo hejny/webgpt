@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Coastal Vibes: Bringing the Beach to Your Home
+# Beach Vibes
 
 Welcome to Coastal Vibes, your ultimate destination for all things beachy! Our website is dedicated to helping you bring the serene and relaxing atmosphere of the coast into your home. And what better way to start than with our beautiful seashell wallpaper?
 

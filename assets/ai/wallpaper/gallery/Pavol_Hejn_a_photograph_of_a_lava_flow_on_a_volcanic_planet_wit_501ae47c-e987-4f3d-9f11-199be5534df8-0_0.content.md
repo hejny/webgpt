@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Discover the Wonders of Space with Galactic Adventures
+# Galactic Adventures
 
 Welcome to Galactic Adventures, your ultimate guide to space exploration! Our website is dedicated to providing you with the latest news, information, and resources on everything related to space.
 

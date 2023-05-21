@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Quantum Computing for Beginners: Exploring the Future of Technology
+# Quantum Future Beginners
 
 Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect background for diving into this cutting-edge field. 
 

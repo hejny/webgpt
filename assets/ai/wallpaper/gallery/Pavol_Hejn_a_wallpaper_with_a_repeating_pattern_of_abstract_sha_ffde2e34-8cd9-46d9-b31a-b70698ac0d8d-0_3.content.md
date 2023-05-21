@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Elevate Your Workspace with Abstract Shapes
+# Abstract Workspace
 
 Welcome to our website, where we offer inspiration for elevating your workspace with abstract shapes. Our collection features a range of abstract shapes and colors that can be used as backgrounds or accents to enhance your creative environment.
 

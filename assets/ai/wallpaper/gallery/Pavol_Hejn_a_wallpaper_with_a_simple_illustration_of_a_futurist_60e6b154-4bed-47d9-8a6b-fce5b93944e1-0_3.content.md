@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Futuristic Vehicles: Exploring the Future of Transportation
+# Future Vehicles
 
 Welcome to our website dedicated to exploring the exciting world of futuristic vehicles! Our site is designed to provide you with all the latest news, information, and insights into the cutting-edge technology that is shaping the future of transportation.
 

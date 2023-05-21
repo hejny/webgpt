@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# RoboWorks - Empowering Your Business with Robotics
+# RoboWorks
 
 Welcome to RoboWorks, where we bring the latest advancements in robotics to your business. Our mission is to help businesses of all sizes automate their processes and increase efficiency using cutting-edge technology.
 

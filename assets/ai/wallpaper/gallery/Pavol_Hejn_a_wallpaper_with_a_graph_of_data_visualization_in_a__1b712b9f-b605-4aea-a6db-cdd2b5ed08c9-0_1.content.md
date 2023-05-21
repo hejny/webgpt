@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Data-Driven Insights for Your Business
+# Data Insights
 
 Welcome to our website, where we provide valuable insights to help businesses grow. Our team of experts uses data visualization to uncover hidden patterns and trends that can inform your decision-making.
 

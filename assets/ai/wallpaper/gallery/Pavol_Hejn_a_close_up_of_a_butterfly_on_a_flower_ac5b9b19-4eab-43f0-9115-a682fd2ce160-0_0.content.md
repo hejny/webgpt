@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Beautiful Butterfly Background for Your Device
+# Butterfly Background
 
 Welcome to our website where you can find stunning backgrounds for your device. Our latest addition is a close-up of a butterfly on a flower, perfect for nature lovers who want to bring a touch of beauty to their screens.
 

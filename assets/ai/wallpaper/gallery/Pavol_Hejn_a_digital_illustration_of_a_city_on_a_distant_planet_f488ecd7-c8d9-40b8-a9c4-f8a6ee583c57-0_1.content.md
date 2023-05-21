@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Explore the Future with Our Futuristic City Illustration
+# Futuristic Illustration
 
 Welcome to our website where we showcase a stunning digital illustration of a city on a distant planet. The artwork depicts towering buildings and advanced technology, transporting you to a futuristic world full of possibilities.
 

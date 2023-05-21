@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Discover the Beauty of the Night Sky
+# Night Sky Beauty
 
 Welcome to our website, where we celebrate the wonder and beauty of the night sky. Our stunning background featuring a photograph of the Milky Way galaxy is the perfect addition to your desktop.
 

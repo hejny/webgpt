@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Tech Enthusiast's Hub: Your Destination for All Things Tech
+# Tech Hub
 
 Welcome to our website, the ultimate destination for tech enthusiasts who want to stay up-to-date with the latest trends, news, and developments in the world of gadgets, software, and hardware. Our site is designed to cater to all your technology needs, from reviews and tutorials to news and features.
 

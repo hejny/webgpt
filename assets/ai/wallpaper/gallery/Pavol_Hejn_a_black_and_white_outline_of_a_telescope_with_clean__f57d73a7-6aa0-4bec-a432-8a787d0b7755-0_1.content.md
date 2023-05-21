@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Discover the Wonders of the Universe with Our Telescope-Themed Background
+# Telescope Background
 
 Our telescope-themed background is a beautiful and inspiring way to bring the majesty of the night sky into your daily life. Featuring a black and white outline of a telescope, this background highlights the intricate mechanics of the instrument with clean lines and simple shapes.
 

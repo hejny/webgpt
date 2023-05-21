@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# "Inkwell" - A Minimalist Writing Platform
+# Inkwell Platform
 
 Welcome to Inkwell, the ultimate platform for writers and creatives! Our platform is designed to help you focus on your craft and bring your ideas to life. With our minimalist design and distraction-free environment, you can unleash your creativity and let your imagination run wild.
 

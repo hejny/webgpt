@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Exploring the Future of Technology with a Futuristic Website Design
+# Futuristic Tech Website
 
 Welcome to our website, where we explore the latest advancements in technology and share insights on how they impact our lives. Our website is designed to provide you with a comprehensive understanding of the latest trends in technology, from AI to blockchain.
 

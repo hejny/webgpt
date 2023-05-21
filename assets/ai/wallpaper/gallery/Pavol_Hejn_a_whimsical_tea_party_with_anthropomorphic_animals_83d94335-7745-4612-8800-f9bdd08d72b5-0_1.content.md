@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Whimsical Tea Party Decor for Your Home
+# Tea Party Decor
 
 Welcome to our website! If you're looking to add a touch of whimsy and charm to your home, our whimsical tea party decor is the perfect solution. With anthropomorphic animals, teacups, and delicious treats, our decor will transport you to a world of fantasy and imagination.
 

@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Discover the Future: Where Technology Meets Imagination
+# Tech Imagination Future
 
 Welcome to our website dedicated to exploring the possibilities of technology and its impact on our world. Our homepage features an illustration of a robotic explorer, with metallic textures and intricate details, that perfectly captures the spirit of innovation and imagination that we celebrate here.
 

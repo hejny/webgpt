@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# MathWorks - Your Trusted Partner for Mathematical Computing
+# MathWorks Partner
 
 Welcome to MathWorks, your go-to source for mathematical computing solutions. Our mission is to provide you with the tools you need to solve complex problems and innovate in your field. 
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Exploring the Future: Unveiling the Possibilities of Tomorrow
+# Future Exploration
 
 Welcome to our website dedicated to exploring the latest advancements in science and technology. Our mission is to inspire and educate people about the possibilities of the future.
 

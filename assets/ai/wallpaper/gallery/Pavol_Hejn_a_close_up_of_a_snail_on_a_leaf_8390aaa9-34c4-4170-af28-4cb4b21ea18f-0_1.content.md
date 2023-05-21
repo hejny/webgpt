@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Nature-inspired Backgrounds for Your Desktop
+# Nature desktops
 
 Welcome to our website, where we offer a collection of beautiful nature-inspired backgrounds for your desktop. Our high-quality wallpapers are designed to bring the beauty of nature to your computer screen, allowing you to escape from the hustle and bustle of everyday life.
 

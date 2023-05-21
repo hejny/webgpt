@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Explore the Wonders of Space with Our Website
+# Space Exploration
 
 Welcome to our website dedicated to exploring the mysteries and wonders of space! Our digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space, makes for the perfect background for anyone who loves to gaze at the stars and dream of what lies beyond our planet.
 

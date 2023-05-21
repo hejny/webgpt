@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Event Planning Services for Your Dream Occasion
+# Dream Event Services
 
 Welcome to our event planning website featuring a beautiful watercolor painting of a field of flowers, creating a dreamy backdrop to inspire your imagination. Our team of experienced event planners is dedicated to helping you plan and execute your perfect occasion, whether it's a wedding, corporate event, or social gathering.
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Explore the Universe with Our Space Exploration Website
+# Space Explore
 
 Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for extraterrestrial life. As a bonus, we offer a stunning black and white outline of an astronaut exploring a distant planet as a background image for your device.
 

@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# The Tech Hub - Your Go-To Destination for All Things Tech
+# Tech Hub
 
 Welcome to The Tech Hub, the ultimate destination for all tech enthusiasts! Our website is your one-stop-shop for the latest news, reviews, and insights on everything related to technology. 
 

@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Relax and Unwind with Our Beach Vibes Collection
+# Beach Vibes Collection
 
 Welcome to our website where you can find the perfect desktop background to help you relax and unwind. Our collection of high-quality beach vibes imagery will transport you to the serene and calming atmosphere of the beach, even when you're stuck at work or home.
 

@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Future-Proof Your Business with Our Tech Solutions
+# Tech Solutions
 
 Welcome to our website, where we provide cutting-edge technology solutions to help businesses thrive in the digital age. Our mission is to empower businesses with the tools they need to stay ahead of the curve and succeed in an ever-changing landscape.
 

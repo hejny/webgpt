@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Discover the Wonders of the Universe with Our Galaxy-Themed Décor
+# Galaxy Decor
 
 Bring the beauty and mystery of the cosmos into your home or office with our stunning galaxy-themed décor. Our collection features a range of products, from tapestries to throw pillows, all designed to transport you to another world.
 

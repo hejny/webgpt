@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# The Future of Work: Building a Collaborative Ainaute-AI Partnership
+# Ainaute-AI Collaboration
 
 Welcome to our website dedicated to exploring the possibilities of a collaborative future between Ainautes and AI. Our vision is a world where humans and machines work together seamlessly to create a better future for all.
 

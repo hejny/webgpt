@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Elevate Your Device's Aesthetics with Futuristic Tech-inspired Abstract Art
+# Futuristic Art
 
 Welcome to our website! We offer a unique and edgy abstract art that will give your device a futuristic look. Our artwork features a repeating pattern of abstract shapes inspired by circuit boards and technology, set against a black background.
 

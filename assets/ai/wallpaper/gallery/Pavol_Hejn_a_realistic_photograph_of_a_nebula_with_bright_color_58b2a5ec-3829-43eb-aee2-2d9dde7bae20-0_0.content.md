@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Discover the Wonders of Space with Our Cosmic Collection
+# Cosmic Wonders
 
 Welcome to our website, where we offer a stunning collection of space-themed backgrounds that will take you on a journey through the universe. Our selection includes breathtaking images of nebulas, galaxies, and planets, all captured in exquisite detail.
 

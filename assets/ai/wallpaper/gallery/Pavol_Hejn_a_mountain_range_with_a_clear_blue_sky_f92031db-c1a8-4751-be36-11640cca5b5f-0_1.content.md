@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Find Your Next Adventure with Our Guide"
+# Adventure Guide
 
 Welcome to our travel guide, where we provide a stunning mountain range background with a clear blue sky. Our website is dedicated to helping adventure seekers discover new destinations and plan unforgettable trips.
 

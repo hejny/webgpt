@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Journey into the Cosmos: Exploring the Wonders of Space
+# Cosmic Exploration
 
 Welcome to our website dedicated to exploring the mysteries and wonders of space! Our sleek and modern background featuring an illustration of a futuristic space station orbiting a distant planet sets the tone for your journey into the unknown.
 

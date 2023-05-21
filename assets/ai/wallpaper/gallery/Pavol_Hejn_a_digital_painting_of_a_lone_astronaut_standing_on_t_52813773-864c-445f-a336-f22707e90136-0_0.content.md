@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring the Cosmos: A Space Enthusiast's Haven
+# Cosmic Haven
 
 Welcome to our website dedicated to all things space! Our website is a place for space enthusiasts to come together and share their love of the cosmos. Our homepage features a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space, setting the tone for the adventure that awaits.
 

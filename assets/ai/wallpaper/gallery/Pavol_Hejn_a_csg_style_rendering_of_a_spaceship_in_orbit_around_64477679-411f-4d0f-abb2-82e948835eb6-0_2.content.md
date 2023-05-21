@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Space Odyssey: Exploring the Final Frontier
+# Space Exploration
 
 Welcome to Space Odyssey, your ultimate guide to the wonders of space exploration. Our website is dedicated to providing you with the latest news, insights, and resources on all things related to space.
 

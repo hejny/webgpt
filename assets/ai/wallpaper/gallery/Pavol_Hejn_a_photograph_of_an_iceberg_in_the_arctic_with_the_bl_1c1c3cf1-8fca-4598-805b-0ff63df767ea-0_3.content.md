@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Arctic Adventure: Exploring the Wonders of the North
+# Arctic Wonders
 
 Welcome to Arctic Adventure, your ultimate guide to exploring the stunning landscapes and unique cultures of the Arctic region. Our website is dedicated to providing you with all the information you need to plan an unforgettable trip to the top of the world.
 

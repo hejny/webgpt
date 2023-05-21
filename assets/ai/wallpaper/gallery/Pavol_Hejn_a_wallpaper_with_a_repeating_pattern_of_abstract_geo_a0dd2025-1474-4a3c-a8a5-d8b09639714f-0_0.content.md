@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Elevate Your Web Presence with Abstract Geometric Design
+# Geometric Web Presence
 
 Welcome to our web design studio, where we help businesses and individuals achieve their online goals through innovative web design. Our studio is inspired by the latest trends in web design, which is why we have chosen an abstract geometric design as our background.
 

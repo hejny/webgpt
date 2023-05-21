@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Space Odyssey: Explore the Wonders of Space and Science Fiction
+# Space Fiction Odyssey
 
 Welcome to Space Odyssey, your ultimate destination for all things space and science fiction. Our website is dedicated to providing you with the latest news, updates, and insights from the world of space exploration and sci-fi.
 

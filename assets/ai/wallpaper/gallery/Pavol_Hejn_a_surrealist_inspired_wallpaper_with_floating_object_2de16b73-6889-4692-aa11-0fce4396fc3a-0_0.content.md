@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# The Steampunk Workshop - A World of Industrial Fantasy
+# Steampunk World
 
 Welcome to The Steampunk Workshop, where we bring the fantastical world of steampunk to life. Our website is dedicated to all things steampunk, from fashion to home decor and everything in between. Our surreal-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors is just one example of the unique products we offer.
 

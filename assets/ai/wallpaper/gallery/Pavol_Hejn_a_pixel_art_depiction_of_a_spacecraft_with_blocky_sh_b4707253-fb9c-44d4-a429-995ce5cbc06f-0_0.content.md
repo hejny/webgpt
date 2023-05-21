@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Explore the Cosmos with Space Adventures
+# Space Adventures
 
 Welcome to Space Adventures, your go-to resource for all things space-related! Our website is dedicated to providing you with the latest news, tips, and tricks for exploring the cosmos. 
 

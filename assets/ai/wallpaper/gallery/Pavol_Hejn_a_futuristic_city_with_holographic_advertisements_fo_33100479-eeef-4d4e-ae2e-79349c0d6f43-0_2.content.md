@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# FutureTech: Innovating the Future
+# FutureTech Innovation
 
 Welcome to FutureTech, where we bring you the latest and greatest in technological innovation. Our mission is to make the future a better place by creating products that push boundaries and change lives.
 

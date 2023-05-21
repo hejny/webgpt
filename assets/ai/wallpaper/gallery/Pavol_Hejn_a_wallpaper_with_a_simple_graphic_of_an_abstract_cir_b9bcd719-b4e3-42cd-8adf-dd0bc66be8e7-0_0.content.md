@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# TechSpace - A Digital Hub for Innovators
+# TechSpace Hub
 
 Welcome to TechSpace, a digital hub for innovators where creativity meets technology. Our platform provides a space for tech enthusiasts and professionals to connect, collaborate, and innovate. Our wallpaper with a simple graphic of an abstract circuit board, in shades of blue and green, sets the tone for our website's tech-inspired theme.
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Exploring the Frontiers: Ainautes on a Distant Planet
+# Distant Ainautes
 
 Welcome to our website dedicated to exploring the unknown corners of the universe! Our team of Ainautes is always pushing the boundaries of what we know about space, and we're excited to share our latest mission with you.
 

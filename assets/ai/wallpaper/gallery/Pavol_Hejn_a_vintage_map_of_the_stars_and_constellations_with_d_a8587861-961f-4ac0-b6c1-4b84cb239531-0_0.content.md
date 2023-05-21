@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Universe with Our Vintage Map of Stars and Constellations
+# Vintage Star Map
 
 Welcome to our website where you can discover the wonders of the universe through our vintage map of stars and constellations. Our beautifully illustrated map features detailed depictions of spacecraft and celestial bodies, making it a unique and captivating addition to any space.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Enchanting Depths: Exploring the Wonders of Marine Life
+# Enchanting Marine Life
 
 Welcome to our website dedicated to exploring the magical underwater world. Our mission is to provide you with a glimpse into the fascinating marine life that exists beneath the waves. Our wallpaper, "A Magical Underwater World," sets the tone for what you can expect to discover on this site.
 

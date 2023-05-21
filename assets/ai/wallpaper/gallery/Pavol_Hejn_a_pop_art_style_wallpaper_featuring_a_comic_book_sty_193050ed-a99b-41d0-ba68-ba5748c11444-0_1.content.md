@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# The Future of Robotics: Innovative Solutions for a Changing World
+# Robotic Future
 
 Welcome to our website, where we bring you the latest and greatest in robotics technology. Our website features a stunning pop art-style background that showcases our love for creativity and innovation.
 

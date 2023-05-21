@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# TechHub - A Community for Technology Enthusiasts
+# TechHub Community
 
 Welcome to TechHub, a community for technology enthusiasts! Our website is designed to provide you with the latest news and updates in the tech industry. We are dedicated to creating a space where individuals can connect, share ideas, and learn from one another.
 

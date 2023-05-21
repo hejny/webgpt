@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# DataViz Pro - Powerful Visualization Tool for Your Business
+# DataViz Pro
 
 Welcome to DataViz Pro, the ultimate data visualization tool for businesses of all sizes. Our software is designed to help you make sense of your data and turn it into actionable insights that drive growth and success.
 

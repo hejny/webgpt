@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# "Equation Hub" - Your One-Stop Destination for Math Enthusiasts
+# Math Hub
 
 Welcome to Equation Hub, the perfect place for anyone who loves math and wants to explore it further. Our website offers a range of resources, including articles, tutorials, and videos, to help you learn and grow your skills in mathematics.
 

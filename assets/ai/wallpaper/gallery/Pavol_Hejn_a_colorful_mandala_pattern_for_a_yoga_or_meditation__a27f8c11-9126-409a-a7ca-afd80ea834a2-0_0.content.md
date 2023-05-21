@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Create a Calming Space with Our Mandala Pattern
+# Mandala Space
 
 Welcome to our website dedicated to helping you create a peaceful and calming environment in your home or office. We understand the importance of having a space where you can relax, unwind, and recharge.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Elevate Your Website's Design with Geometric Dreams
+# Geometric Dreams
 
 Welcome to Geometric Dreams, where we offer a stunning abstract wallpaper that can take your website's design to the next level. Our repeating pattern of geometric shapes and patterns was inspired by the latest web design trends and color schemes, making it the perfect choice for any modern website.
 

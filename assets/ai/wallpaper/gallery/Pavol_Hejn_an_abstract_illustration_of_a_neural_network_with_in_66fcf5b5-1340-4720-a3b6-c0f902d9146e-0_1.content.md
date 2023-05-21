@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech Exploration by TechnoMind
+# Tech Explore
 
 Welcome to TechnoMind, your source for the latest advancements in technology. Our website features articles, news, and analysis of emerging trends and cutting-edge innovations in the tech industry.
 

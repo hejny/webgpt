@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# TechCity - Your Hub for Future Innovations
+# TechCity Hub
 
 Welcome to TechCity, your go-to destination for all things futuristic and innovative! Our website is dedicated to bringing you the latest news, trends, and breakthroughs in the world of technology. 
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# The Surreal Desert: Exploring the Mysteries of the Arid Landscape
+# Surreal Desert Mysteries
 
 Welcome to our website, where we delve into the surreal world of desert landscapes. Our website is dedicated to exploring the mysteries and beauty of these arid regions, from their unique flora and fauna to their breathtaking geological formations.
 

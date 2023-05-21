@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Elegant Floral Background for Your Next Project
+# Floral Elegance
 
 Welcome to our website, where you can find the perfect floral wallpaper for your next design project. Our close-up flower wallpaper is a beautiful and elegant addition to any website, presentation, or social media post.
 

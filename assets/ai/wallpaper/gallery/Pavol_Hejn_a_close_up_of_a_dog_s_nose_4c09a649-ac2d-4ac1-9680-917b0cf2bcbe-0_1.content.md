@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Dog Grooming Tips: Keeping Your Furry Friend Clean and Healthy
+# Dog Grooming Tips
 
 Welcome to our website dedicated to providing helpful tips and tricks for keeping your dog clean and healthy! Our wallpaper, featuring a close-up of a dog's nose, is a reminder of the importance of proper grooming.
 

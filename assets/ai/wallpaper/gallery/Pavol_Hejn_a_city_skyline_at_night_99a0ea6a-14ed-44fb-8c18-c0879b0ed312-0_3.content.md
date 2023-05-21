@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# City Nights: Bring the Energy of the City Skyline to Your Digital Space
+# City Nights Energy
 
 Welcome to City Nights, a website dedicated to inspiring creativity and productivity through captivating digital backgrounds. Our featured image is a stunning city skyline at night, perfect for those who want to feel the thrill of the city lights without leaving their desk.
 

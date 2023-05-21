@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Virtual Reality Hub: Explore New Worlds
+# VR Hub: New Worlds
 
 Welcome to Virtual Reality Hub, your gateway to immersive experiences. Our website is designed to provide you with the latest news, reviews, and resources on virtual reality technology. 
 

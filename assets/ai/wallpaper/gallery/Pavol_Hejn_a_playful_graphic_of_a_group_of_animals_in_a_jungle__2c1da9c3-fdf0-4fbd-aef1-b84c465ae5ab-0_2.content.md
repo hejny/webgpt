@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Jungle Safari Adventure - A Fun and Educational Website for Kids
+# Jungle Safari Adventure
 
 Welcome to Jungle Safari Adventure, a website that offers an exciting and educational experience for children. Our website is designed to take kids on a virtual journey through the jungle, where they can learn about different animals, their habitats, and behaviors.
 

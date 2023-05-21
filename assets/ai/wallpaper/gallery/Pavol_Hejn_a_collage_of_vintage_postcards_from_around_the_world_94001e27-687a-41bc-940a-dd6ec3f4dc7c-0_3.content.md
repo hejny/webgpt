@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discovering the World: A Journey Through Vintage Postcards
+# Vintage Journey Discovery
 
 Welcome to our website, where we take you on a journey through time and space with our collection of vintage postcards from around the world. Our wallpaper, featuring a collage of these beautiful postcards, sets the tone for the exploration that awaits.
 

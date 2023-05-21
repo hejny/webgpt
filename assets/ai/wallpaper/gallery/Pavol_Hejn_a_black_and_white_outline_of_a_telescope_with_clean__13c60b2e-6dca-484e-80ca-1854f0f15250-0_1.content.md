@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Explore the Wonders of the Universe with Our Telescope Background
+# Universe Telescope Background
 
 Welcome to our website, where we offer a stunning telescope background that will transport you to the vast expanse of space. Our black and white outline of a telescope is perfect for anyone who loves astronomy and wants to add a touch of elegance to their desktop or mobile device.
 

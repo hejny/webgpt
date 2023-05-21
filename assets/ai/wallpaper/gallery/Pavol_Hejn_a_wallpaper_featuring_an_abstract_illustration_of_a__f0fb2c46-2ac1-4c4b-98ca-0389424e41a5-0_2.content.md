@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Tech Background for Your Website
+# Futuristic Tech Background
 
 Welcome to our website featuring a futuristic tech background that will elevate your web design. Our background showcases an abstract illustration of a dark and ominous machine with glowing red lights and mechanical parts, perfect for websites that want to convey a sense of power and technology.
 

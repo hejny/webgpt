@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Exploring the Future: A Tech Enthusiast's Hub
+# Tech Futures Hub
 
 Welcome to our website, where we dive deep into the latest advancements in technology and their potential impact on society. Our homepage features an illustration of a robotic explorer, with metallic textures and intricate details, symbolizing the exciting possibilities that lie ahead.
 

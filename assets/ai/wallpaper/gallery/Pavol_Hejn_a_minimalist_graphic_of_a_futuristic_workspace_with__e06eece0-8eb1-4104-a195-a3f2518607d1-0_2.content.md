@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Elevate Your Productivity with a Minimalist Workspace
+# Minimal Workspace
 
 Welcome to our website, where we help you create a minimalist workspace that boosts your productivity. Our sleek graphic of a futuristic workspace with modern lines and color scheme is the perfect background for your computer or phone.
 

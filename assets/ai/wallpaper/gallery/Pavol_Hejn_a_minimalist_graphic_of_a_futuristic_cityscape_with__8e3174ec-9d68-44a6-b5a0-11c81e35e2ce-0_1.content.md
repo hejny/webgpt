@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Step into the Future with Our Futuristic Cityscape Desktop Background
+# Future Cityscape
 
 Welcome to our website, where we offer a unique and immersive desktop background that will transport you to a futuristic world. Our minimalist graphic of a cityscape features glowing neon lights and a dark, moody color scheme that will add depth and dimension to your desktop.
 

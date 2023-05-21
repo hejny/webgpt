@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Creating a Serene Atmosphere with Desert Nightscape
+# Desert Serenity
 
 Welcome to our website where we explore ways to create a calming and serene atmosphere in your home or office space. One of the ways we achieve this is through our stunning desert nightscape background.
 

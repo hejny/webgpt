@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Open Road with Our Vintage Car Graphic
+# Vintage Car Graphic
 
 Looking for a way to add some retro charm to your car or travel website? Our vintage-style graphic of a classic car is just what you need! This stunning image captures the spirit of adventure and nostalgia, inspiring visitors to hit the open road and explore new destinations.
 

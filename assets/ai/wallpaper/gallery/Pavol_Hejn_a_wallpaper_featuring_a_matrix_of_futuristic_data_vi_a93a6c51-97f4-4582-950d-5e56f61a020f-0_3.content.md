@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Futuristic Data Visualizations: Insights into the Future
+# Future Visuals
 
 Welcome to our website where we offer insights into the future through data visualizations and graphs. Our wallpaper featuring a matrix of futuristic data visualizations and graphs sets the tone for what we do here - provide you with a glimpse into what's to come.
 

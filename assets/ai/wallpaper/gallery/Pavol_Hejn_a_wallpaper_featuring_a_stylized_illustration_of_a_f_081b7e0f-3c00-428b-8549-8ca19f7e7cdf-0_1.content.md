@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Workspace with a Futuristic Design
+# Futuristic Workspace
 
 Welcome to our website, where we provide resources and inspiration for creating a modern workspace. Our minimalist and modern design featuring a stylized illustration of a futuristic workspace is the perfect background for your digital devices.
 

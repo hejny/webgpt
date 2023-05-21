@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Exploring the Unknown: A Journey Through Space
+# Space Journey
 
 Welcome to our website dedicated to exploring the mysteries of space! Our mission is to uncover the secrets of the universe and share our findings with the world. 
 

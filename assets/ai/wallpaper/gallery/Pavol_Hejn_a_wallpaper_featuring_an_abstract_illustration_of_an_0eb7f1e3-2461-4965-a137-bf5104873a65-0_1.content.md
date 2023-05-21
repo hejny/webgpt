@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# AI-Powered Search Engine Background
+# AI Search Background
 
 Welcome to our website, where we offer a unique user experience powered by the latest AI technology. Our minimalist and modern design is complemented by a stunning wallpaper featuring an abstract illustration of our AI-powered search engine.
 

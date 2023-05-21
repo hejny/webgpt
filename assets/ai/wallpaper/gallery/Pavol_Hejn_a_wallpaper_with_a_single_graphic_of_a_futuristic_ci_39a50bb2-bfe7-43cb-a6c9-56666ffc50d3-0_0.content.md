@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Discover the Futuristic Cityscape
+# Futuristic Cityscape
 
 Transform your desktop background with our stunning graphic of a futuristic cityscape. Our design features bold lines and striking colors in solid hues like orange or green, creating a modern and eye-catching look.
 

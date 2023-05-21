@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Building the Future: Ainautes and AI Working Together
+# Ainautes + AI
 
 Welcome to our website dedicated to exploring the exciting possibilities of Ainautes and AI working together to create a sustainable future. Our wallpaper, featuring a futuristic cityscape, represents the potential for these technologies to come together and create massive, sustainable structures and infrastructure.
 

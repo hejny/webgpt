@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Tech-Inspired Website with a Stunning Circuit Board Background
+# Tech Circuit Board
 
 Welcome to our tech-inspired website, where we offer you a unique and visually appealing experience. Our website features an abstract circuit board pattern in shades of blue and silver as the background, creating a modern and futuristic look.
 

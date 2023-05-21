@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Welcome to FutureScape: A World of Endless Possibilities
+# FutureScape World
 
 Transform your desktop into a futuristic world with our stunning graphic of a cityscape, complete with glowing neon lights and a dark and moody color scheme. At FutureScape, we believe that your desktop background should be more than just a static image; it should be an experience.
 

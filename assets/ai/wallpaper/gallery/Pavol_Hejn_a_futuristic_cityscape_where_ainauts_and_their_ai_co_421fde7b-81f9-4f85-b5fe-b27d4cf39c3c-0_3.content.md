@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Building the Future: Ainautes and AI Working Together
+# Ainautes + AI
 
 Welcome to our website dedicated to exploring the future of technology and its impact on society. Our focus is on the collaboration between Ainautes, human workers, and their AI counterparts in building the cities of tomorrow.
 

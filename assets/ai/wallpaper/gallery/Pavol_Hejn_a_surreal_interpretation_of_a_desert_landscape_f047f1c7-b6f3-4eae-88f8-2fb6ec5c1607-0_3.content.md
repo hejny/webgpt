@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Transform Your Home into a Desert Paradise with Our Unique Collection
+# Desert Home Collection
 
 Welcome to our website, where we offer a unique collection of designs that can transform any space into a desert paradise. Our designs are inspired by the beauty and serenity of the desert, creating a warm and inviting atmosphere in your home.
 

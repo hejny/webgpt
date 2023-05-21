@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Explore the Future of Technology with Our Cutting-Edge Tech Website
+# Cutting-Edge Tech
 
 Welcome to our tech website, where we provide you with the latest news, reviews, and insights on the most innovative technology trends. Our website is designed to keep you up-to-date with the latest advancements in the tech industry.
 

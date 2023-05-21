@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Embrace the Future with Our High-Tech Website
+# High-Tech Future
 
 Welcome to our website dedicated to all things tech! We're passionate about technology and everything it has to offer, from the latest gadgets and software to industry news and expert insights. As a backdrop for our content, we've chosen an abstract circuit board pattern in shades of blue and silver. 
 

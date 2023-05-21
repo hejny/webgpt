@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Immerse Yourself in a Magical World with Our Enchanting Forest Scene
+# Enchanting Forest Scene
 
 Welcome to our website, where we offer a collection of beautiful backgrounds to transform your desktop into a magical world. Our latest addition is the enchanting forest scene with fairies, which will transport you to a dreamy realm every time you turn on your computer.
 

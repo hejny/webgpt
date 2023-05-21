@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Explore the Possibilities of Planetary Colonies
+# Planetary Colonies
 
 Welcome to our website, where we delve into the exciting world of space exploration and colonization. Our stunning background illustration features a colony on a distant planet, showcasing a mix of futuristic and traditional architecture.
 

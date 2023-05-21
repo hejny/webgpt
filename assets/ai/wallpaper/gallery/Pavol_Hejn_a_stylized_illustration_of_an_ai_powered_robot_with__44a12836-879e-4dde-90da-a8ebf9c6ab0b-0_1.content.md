@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# AI-Powered Chatbot for Customer Support
+# AI Chatbot Support
 
 Welcome to our website dedicated to providing top-notch customer support through our AI-powered chatbot. Our sleek and modern graphics will give you a taste of the advanced technology we use to enhance your experience.
 

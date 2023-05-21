@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# AI-Powered Search Engine: Revolutionizing the Way We Search
+# AI Search Revolution
 
 Welcome to our website, where we explore the latest advancements in search technology. Our minimalist and modern design is inspired by the abstract illustration of an AI-powered search engine that you see as the background wallpaper.
 

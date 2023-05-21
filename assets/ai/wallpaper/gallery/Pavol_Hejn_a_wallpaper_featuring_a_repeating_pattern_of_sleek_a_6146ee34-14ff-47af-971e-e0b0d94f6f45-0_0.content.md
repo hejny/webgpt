@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Digital Devices Background for Your Tech Website
+# Digital Device Backdrop
 
 Welcome to our tech website, where we provide the latest news and reviews on digital devices. To enhance your browsing experience, we've added a sleek and modern digital device wallpaper as the background of our site.
 

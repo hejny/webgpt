@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the Mysteries of the Night Sky with Our Astronomy Club
+# Night Sky Club
 
 Welcome to our astronomy club, where we explore the wonders of the universe and unravel its mysteries. Our club is open to anyone who has a passion for stargazing, astrophotography, and space exploration.
 

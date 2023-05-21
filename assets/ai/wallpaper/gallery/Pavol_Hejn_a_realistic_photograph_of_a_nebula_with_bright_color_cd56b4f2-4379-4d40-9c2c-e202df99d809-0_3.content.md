@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Cosmic Adventures: Explore the Universe on Your Desktop
+# Desktop Universe Adventures
 
 Welcome to Cosmic Adventures, your go-to source for stunning backgrounds that transport you to the far reaches of the universe. Our "Realistic Nebula" background is a breathtaking example of the beauty and complexity of space.
 

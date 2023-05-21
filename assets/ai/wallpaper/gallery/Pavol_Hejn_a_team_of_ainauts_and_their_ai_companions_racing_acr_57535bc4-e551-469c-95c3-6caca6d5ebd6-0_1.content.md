@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Desert Racing: Experience the Thrill of Off-Road Adventure
+# Off-Road Thrill
 
 Welcome to our website dedicated to the exciting world of desert racing! Our high-quality background featuring a team of Ainautes and their AI companions racing across the surface of a desert planet in high-tech buggies is just a glimpse of the thrilling experience that awaits you.
 

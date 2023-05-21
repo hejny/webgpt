@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Future of Technology
+# Tech Future
 
 Welcome to our website, where we provide the latest news and updates on the world of technology. Our platform is designed to keep you informed about the latest trends, gadgets, and innovations in the tech industry. As part of our commitment to providing a visually appealing experience, we have included an abstract illustration of a virtual reality environment as our background.
 

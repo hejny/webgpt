@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Exploring the Unknown: A Journey Through the Cosmos
+# Cosmic Journey
 
 Welcome to our website, where we take you on a journey through the cosmos and beyond. Our mission is to explore the unknown and push the boundaries of what we know about the universe. 
 

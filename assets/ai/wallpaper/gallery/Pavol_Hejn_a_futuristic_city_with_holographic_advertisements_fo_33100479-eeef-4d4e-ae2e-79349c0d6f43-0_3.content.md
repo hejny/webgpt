@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# FutureTech: Innovating the World
+# FutureTech Innovation
 
 Welcome to FutureTech, where we bring you the latest in technology and innovation. Our mission is to provide you with the tools and knowledge to help you succeed in a rapidly changing world.
 

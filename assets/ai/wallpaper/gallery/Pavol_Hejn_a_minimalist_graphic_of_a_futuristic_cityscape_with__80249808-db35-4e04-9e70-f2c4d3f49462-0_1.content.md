@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Embrace the Future with Our Tech Startup Website
+# Future Startup Website
 
 Welcome to our tech startup website, where we're passionate about innovation and creativity. Our minimalist graphic of a futuristic cityscape perfectly captures the essence of our mission. With glowing neon lights and a dark and moody color scheme, this background sets the tone for an exciting journey into the future.
 

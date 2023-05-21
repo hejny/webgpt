@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Mandala Meditation: Find Inner Peace and Harmony
+# Mandala Meditation
 
 Welcome to our website dedicated to the practice of mandala meditation. Our colorful mandala pattern wallpaper is a perfect representation of what you can expect from our site - a beautiful, intricate design that promotes relaxation and inner peace.
 

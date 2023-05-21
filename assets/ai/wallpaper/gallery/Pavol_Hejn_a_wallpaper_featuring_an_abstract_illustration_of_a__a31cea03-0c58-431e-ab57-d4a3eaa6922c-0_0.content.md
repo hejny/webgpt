@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Data Visualization for Business: Insights Made Easy
+# Data Viz Insights
 
 Welcome to our website dedicated to providing businesses with the tools they need to make data-driven decisions. Our sleek and modern approach to data visualization makes it easy to understand complex information at a glance. 
 

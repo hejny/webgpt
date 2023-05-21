@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Wonders of Space with Our Digital Painting
+# Space Art
 
 Our website is dedicated to exploring the wonders of space and inspiring you to learn more about the universe around us. As a part of that mission, we offer a stunning digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface. Use it as your desktop background to remind yourself of the infinite possibilities waiting to be discovered.
 

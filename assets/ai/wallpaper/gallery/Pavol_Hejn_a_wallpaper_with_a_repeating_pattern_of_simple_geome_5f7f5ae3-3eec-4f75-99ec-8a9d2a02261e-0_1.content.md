@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Elevate Your Space with Modern Geometric Patterns
+# Geometric Space
 
 Welcome to our website, where we offer a variety of modern and stylish backgrounds to enhance the look of your space. Our latest addition is a repeating pattern of simple geometric shapes arranged in a grid-like structure that will add a touch of modernity to any room.
 

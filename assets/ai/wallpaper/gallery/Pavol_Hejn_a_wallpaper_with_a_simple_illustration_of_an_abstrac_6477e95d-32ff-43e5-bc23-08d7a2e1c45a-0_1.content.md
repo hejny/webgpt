@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Networked Connections: Exploring the Power of Collaboration
+# Networked Collaboration
 
 Welcome to Networked Connections, a platform dedicated to exploring the power of collaboration and connection in today's world. Our website is designed to be a hub for individuals and organizations seeking to build meaningful relationships and work together towards common goals.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Neural Networks in Action: Transforming the World of Technology
+# Neural Tech Transformation
 
 Welcome to our website, where we explore the fascinating world of neural networks and their applications. Our website is dedicated to providing you with the latest information on the cutting-edge technology that is changing the way we live and work.
 

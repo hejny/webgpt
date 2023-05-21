@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# AI-Powered Search Engine: Revolutionizing the Way You Browse
+# AI Search Revolution
 
 Welcome to our website, where we are proud to offer you a cutting-edge search engine that is powered by artificial intelligence. Our minimalist and modern design is not only visually appealing but also highly functional, making it easier than ever before to find the information you need.
 

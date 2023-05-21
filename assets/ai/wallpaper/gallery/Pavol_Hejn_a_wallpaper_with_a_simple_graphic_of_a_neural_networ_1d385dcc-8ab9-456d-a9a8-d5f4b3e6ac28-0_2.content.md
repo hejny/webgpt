@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Exploring the Fascinating World of Neural Networks
+# Neural Exploration
 
 Welcome to our website dedicated to exploring the exciting world of neural networks and machine learning. Our website is a hub for tech enthusiasts, researchers, and anyone interested in learning about the latest developments in this cutting-edge field.
 

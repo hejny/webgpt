@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Upgrade Your Digital Workspace with Cybernetic Aesthetics
+# Cyber Workspace Upgrade
 
 Welcome to our website where we offer a range of cybernetic aesthetics to enhance your digital workspace. Our simple yet striking graphic of a cyborg's face against a background of digital noise and static will give your desktop a futuristic edge.
 

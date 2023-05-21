@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Neural Networks in Action: Exploring the Future of AI
+# AI Networks in Action
 
 Welcome to our website dedicated to exploring the fascinating world of neural networks! Our mission is to provide you with the latest news, research, and insights into this rapidly evolving field. 
 

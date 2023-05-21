@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# The Whimsical World of Animal Tea Parties
+# Animal Tea Parties
 
 Welcome to our website, where we celebrate the joy and wonder of anthropomorphic animals gathering for tea parties. Our whimsical wallpaper sets the scene for a magical world where anything is possible.
 

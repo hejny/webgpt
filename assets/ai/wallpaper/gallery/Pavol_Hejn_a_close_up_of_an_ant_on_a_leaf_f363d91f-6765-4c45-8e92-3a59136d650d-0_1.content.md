@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Nature's Wonders - Discover the Beauty of the Outdoors
+# Outdoor Beauty
 
 Welcome to Nature's Wonders, a website dedicated to exploring the beauty of the natural world. Our background features a stunning close-up of an ant on a leaf, bringing a touch of nature to your browsing experience.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# NeuralMind - Unlock Your Creative Potential with Brain-Inspired Design
+# NeuralMind Design
 
 Welcome to NeuralMind, where we believe that the right environment can unlock your creative potential. Our brain-inspired design features a pattern of interconnected nodes and lines resembling a neural network, perfect for those who appreciate the beauty of science and technology.
 

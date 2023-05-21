@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# The Future of Work: Ainautes and AI Pushing the Boundaries of Science and Technology
+# AI Workforce Future
 
 Welcome to our website dedicated to exploring the intersection of human intelligence and artificial intelligence. Our goal is to inspire and inform you about the latest advancements in science and technology, and how they are shaping the future of work.
 

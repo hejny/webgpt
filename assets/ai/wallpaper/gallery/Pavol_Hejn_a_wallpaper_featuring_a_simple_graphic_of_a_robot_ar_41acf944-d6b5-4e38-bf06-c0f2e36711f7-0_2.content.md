@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# TechNotify - Stay on Top of Your Notifications
+# TechNotify
 
 Welcome to TechNotify, the ultimate tool for staying on top of your important notifications and messages. Our simple and intuitive interface makes it easy to manage all of your notifications in one place, so you never miss a thing.
 

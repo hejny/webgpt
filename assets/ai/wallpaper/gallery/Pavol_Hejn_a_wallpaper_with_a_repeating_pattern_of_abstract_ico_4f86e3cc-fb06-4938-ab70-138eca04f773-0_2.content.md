@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# TechConnect - Connecting Tech Enthusiasts
+# TechConnect
 
 ## Welcome to TechConnect!
 

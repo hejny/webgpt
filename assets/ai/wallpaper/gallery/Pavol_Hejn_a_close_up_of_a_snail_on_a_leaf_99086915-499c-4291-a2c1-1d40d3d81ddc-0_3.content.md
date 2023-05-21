@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Bringing Nature to Your Workspace
+# Nature Workspace
 
 Welcome to our website, where we offer a collection of stunning nature-inspired backgrounds to enhance your workspace. Our images feature breathtaking landscapes and captivating wildlife that will transport you to a peaceful outdoor setting.
 

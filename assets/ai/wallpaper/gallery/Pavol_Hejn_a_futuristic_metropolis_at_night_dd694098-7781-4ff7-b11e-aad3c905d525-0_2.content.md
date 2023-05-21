@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Futuristic Metropolis at Night
+# Night Metropolis
 
 Experience the excitement of a futuristic cityscape with our stunning wallpaper depicting a metropolis at night. With its bold, vibrant colors and sleek design, this wallpaper is perfect for adding a touch of modernity to any room.
 

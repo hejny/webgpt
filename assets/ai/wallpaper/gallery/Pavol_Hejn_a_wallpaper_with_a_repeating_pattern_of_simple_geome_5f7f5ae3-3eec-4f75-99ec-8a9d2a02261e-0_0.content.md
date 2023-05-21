@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Geometric Grid: A Modern Background for Your Website
+# Geometric Grid Background
 
 Welcome to Geometric Grid, the perfect background for your modern website! Our wallpaper features a repeating pattern of simple geometric shapes arranged in a grid-like structure. This design is both visually appealing and versatile, making it an excellent choice for a wide range of websites.
 

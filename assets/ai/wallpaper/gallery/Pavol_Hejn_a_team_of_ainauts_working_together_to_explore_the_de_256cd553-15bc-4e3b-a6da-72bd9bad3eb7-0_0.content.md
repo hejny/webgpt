@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Exploring the Unknown: A Journey to the Depths of the Universe
+# Universe Journey
 
 Welcome to our website dedicated to exploring the mysteries of the universe. Our mission is to provide you with the latest news, insights, and tools to help you uncover the secrets of the cosmos.
 

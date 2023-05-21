@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Data Insights for Your Business
+# Business Insights
 
 Welcome to our website, where we provide data-driven insights to help your business grow. Our team of experts uses cutting-edge technology to analyze your data and provide valuable insights that can help you make informed decisions.
 

@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Time Tracker - Manage Your Time Efficiently
+# Time Tracker
 
 Welcome to Time Tracker, your one-stop-shop for managing your time efficiently. Our website provides a range of tools and resources to help you stay on top of your schedule and make the most out of your day.
 

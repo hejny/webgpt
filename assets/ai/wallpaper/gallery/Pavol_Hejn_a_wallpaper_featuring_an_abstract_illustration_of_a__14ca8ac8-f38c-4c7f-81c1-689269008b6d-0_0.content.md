@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Embrace the Future with Our Futuristic Technology Website
+# Future Tech Website
 
 Welcome to our website dedicated to exploring the latest technology trends and innovations. Our mission is to provide you with up-to-date information on everything from artificial intelligence to space exploration.
 

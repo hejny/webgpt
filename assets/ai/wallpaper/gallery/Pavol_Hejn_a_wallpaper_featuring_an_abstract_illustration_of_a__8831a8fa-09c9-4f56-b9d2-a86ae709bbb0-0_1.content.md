@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# FutureVision - Empowering Your Data
+# Data Empowerment
 
 Welcome to FutureVision, the ultimate platform for data visualization and analysis. Our sleek and modern interface is designed to help you make sense of your data like never before. 
 

@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Future Cityscape: A Vision of Tomorrow
+# Tomorrow's City
 
 Welcome to our website where we explore the future through art and design. Our latest addition is an abstract illustration of a futuristic cityscape, with glowing lights and a dark and moody color scheme, set against a gradient background. This piece of art captures the essence of what tomorrow could look like.
 

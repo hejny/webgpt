@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Virtual Reality in Education: Enhancing Learning Through Immersive Technology
+# VR Education
 
 Welcome to our website dedicated to exploring the intersection of virtual reality and education. Our mission is to provide educators with the tools and resources needed to enhance their teaching through immersive technology.
 

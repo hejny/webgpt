@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Exploring the Future: A Website for Futuristic Enthusiasts
+# Futuristic Website
 
 Welcome to our website, where we explore the exciting possibilities of the future. Our mission is to inspire and inform people about the latest advancements in technology, science, and culture that are shaping our world.
 

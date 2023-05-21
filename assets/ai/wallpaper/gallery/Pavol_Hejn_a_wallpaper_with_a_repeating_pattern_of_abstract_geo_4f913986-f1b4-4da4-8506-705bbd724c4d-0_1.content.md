@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Elevate Your Website Design with Abstract Geometric Patterns
+# Abstract Design Patterns
 
 Welcome to our website, where we provide resources and inspiration for creating stunning websites. Our background features an abstract geometric pattern that is perfect for modern websites. Inspired by the latest web design trends and color schemes, this pattern will add a touch of sophistication to your site.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Discover the Mystical Mountains: A Journey Through Nature
+# Mystical Mountains Journey
 
 Welcome to our website, where we offer a unique collection of backgrounds that will take you on a journey through nature. Our latest addition is a stunning photograph of a full moon rising over a mountain range, with mist and clouds adding to the sense of mystery.
 

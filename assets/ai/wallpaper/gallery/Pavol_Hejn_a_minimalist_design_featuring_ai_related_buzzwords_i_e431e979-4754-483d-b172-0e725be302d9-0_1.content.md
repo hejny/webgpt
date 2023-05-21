@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Exploring the World of Artificial Intelligence and Technology
+# AI Tech World
 
 Welcome to our website dedicated to exploring the latest advancements in artificial intelligence, machine learning, and technology. As tech enthusiasts ourselves, we understand the importance of staying up-to-date with the latest trends and developments in the industry.
 

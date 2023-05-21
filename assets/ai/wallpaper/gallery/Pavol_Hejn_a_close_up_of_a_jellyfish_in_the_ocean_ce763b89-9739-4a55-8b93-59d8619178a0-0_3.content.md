@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Oceanic Wonders: Discover the Beauty of Jellyfish
+# Jellyfish Beauty
 
 Welcome to Oceanic Wonders, a website dedicated to exploring the fascinating world beneath the waves. Our site is filled with information about marine life, ocean conservation, and much more. And as you browse our pages, you'll be accompanied by a stunning wallpaper that captures the beauty of one of the ocean's most captivating creatures: the jellyfish.
 

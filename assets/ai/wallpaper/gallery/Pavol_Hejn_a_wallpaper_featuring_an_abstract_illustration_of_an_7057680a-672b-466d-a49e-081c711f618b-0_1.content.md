@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# TechConnect: Connecting You to the Latest in AI
+# TechConnect AI
 
 Welcome to TechConnect, your go-to source for all things AI! Our website is dedicated to keeping you up-to-date with the latest advancements in artificial intelligence and machine learning. 
 

@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# The Future of Life Creation: Exploring the World of Ainautes
+# Ainaute Creation
 
 Welcome to our website, where we delve into the fascinating world of Ainautes and their cutting-edge laboratory. Our mission is to bring you closer to the future of life creation by exploring the latest advancements in AI and technology.
 

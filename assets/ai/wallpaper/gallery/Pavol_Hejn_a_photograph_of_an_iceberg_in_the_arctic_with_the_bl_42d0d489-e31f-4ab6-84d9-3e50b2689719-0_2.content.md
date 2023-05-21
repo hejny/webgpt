@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Arctic Adventure: Exploring the Frozen Tundra
+# Frozen Tundra Adventure
 
 Welcome to Arctic Adventure, your go-to guide for exploring the breathtaking landscapes of the Arctic. Our website is dedicated to providing you with the best tips and tricks for planning your next adventure in this beautiful region. 
 

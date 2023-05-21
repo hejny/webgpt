@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Discover the Wonders of Planet X: A Travel Guide
+# Planet X Guide
 
 Welcome to our website dedicated to exploring the breathtaking landscapes and unique cultures of Planet X. Our vintage-style travel poster wallpaper sets the tone for your journey, with bold typography and an artistic rendering of the planet's terrain.
 

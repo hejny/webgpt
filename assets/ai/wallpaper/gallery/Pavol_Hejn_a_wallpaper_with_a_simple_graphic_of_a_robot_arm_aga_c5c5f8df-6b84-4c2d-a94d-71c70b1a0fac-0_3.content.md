@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# RoboWorks: Empowering Your Robotics Projects
+# RoboWorks Empowers Robotics
 
 Welcome to RoboWorks, your one-stop-shop for all things robotics. Our platform provides you with the tools and resources you need to bring your robotic ideas to life. And what better way to kick off your project than with our robot arm wallpaper?
 

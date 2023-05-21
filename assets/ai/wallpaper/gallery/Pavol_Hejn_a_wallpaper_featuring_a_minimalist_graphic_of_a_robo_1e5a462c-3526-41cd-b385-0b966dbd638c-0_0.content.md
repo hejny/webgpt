@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# RoboNote - A Minimalist Note-Taking Platform
+# RoboNote
 
 Welcome to RoboNote, a minimalist note-taking platform designed to help you capture your ideas and thoughts with ease. Our platform features a sleek graphic of a robot hand holding a stylus or pen, providing a subtle backdrop for your note-taking.
 

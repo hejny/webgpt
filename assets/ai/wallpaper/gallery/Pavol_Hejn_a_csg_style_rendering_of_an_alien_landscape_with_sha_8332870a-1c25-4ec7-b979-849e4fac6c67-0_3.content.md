@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# The Ultimate Workspace for Creative Minds
+# Creative Workspace
 
 Welcome to our website, where we provide a unique and inspiring workspace that will take your creativity to the next level. Our website features a csg-style rendering of an alien landscape as its background, with sharp angles and contrasting colors that create a futuristic and industrial vibe. 
 

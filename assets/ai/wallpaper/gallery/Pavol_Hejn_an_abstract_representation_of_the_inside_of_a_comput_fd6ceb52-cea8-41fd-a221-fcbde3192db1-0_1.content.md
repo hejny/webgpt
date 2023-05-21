@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Metallic Circuit: The Ultimate Destination for Tech Enthusiasts
+# Metallic Circuit
 
 Welcome to Metallic Circuit, the ultimate destination for tech enthusiasts who are always on the lookout for the latest trends and developments in the industry. Our website is designed to cater to your needs by providing you with up-to-date news, reviews, and insights into the world of technology.
 

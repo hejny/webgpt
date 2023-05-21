@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Explore the Universe: Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our space exploration-themed website where you can discover the wonders of the universe. Our website is dedicated to providing you with the latest news, insights, and stories about space exploration, astronomy, and astrophysics.
 

@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Transform Your Home Office with a Desert Oasis
+# Desert Office
 
 Welcome to our website where we provide you with inspiration and ideas to transform your home office into a beautiful and functional workspace. Our latest addition is a stunning desert landscape with a cactus in the foreground, perfect for creating a calming and peaceful environment.
 

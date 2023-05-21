@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# The Future is Now: A Retro-Futuristic Background for Your Digital Space
+# Retro-Future Background
 
 Welcome to our website where we provide you with unique and visually stunning backgrounds for your digital devices. Our latest addition is a retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background. This wallpaper will transport you to a world of science fiction and nostalgia, all while adding a touch of style to your device.
 

@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Elevate Your Workspace with AI Buzzwords
+# AI Workspace
 
 Welcome to our website, where we provide a unique design element to enhance your workspace. Our minimalist wallpaper features popular AI-related buzzwords in different fonts and colors, adding personality and inspiration to your surroundings.
 

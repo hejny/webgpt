@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Elevate Your Tech Experience with Quantum Computing-Inspired Design
+# Quantum Tech Design
 
 Welcome to our website where we offer a unique collection of designs and backgrounds for your tech devices. Our latest addition is a stunning geometric design in shades of purple and pink, inspired by the shape of a quantum computer. This design is perfect for those who love science and technology and want to add a touch of sophistication to their screens.
 

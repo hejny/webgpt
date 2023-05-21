@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Cyber Security Tips for Staying Safe Online
+# Cyber Safety Tips
 
 Welcome to our cyber security website, where we provide you with the latest news and insights on online safety. As a bonus, we are offering a minimalist desktop background featuring a single line drawing of a cyborg in a striking color such as bright red or blue.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Explore the Futuristic Cityscape
+# Futuristic Cityscape
 
 Welcome to our website, where you can discover the beauty of a dark and futuristic cityscape. Our abstract illustration features glowing lights and skyscrapers that will transport you to a cyberpunk world.
 

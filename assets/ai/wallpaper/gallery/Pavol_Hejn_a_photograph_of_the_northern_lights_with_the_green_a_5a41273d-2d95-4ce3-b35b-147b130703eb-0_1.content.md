@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discover the Magic of the Northern Lights
+# Northern Lights Magic
 
 Experience the awe-inspiring beauty of the Northern Lights with our stunning desktop background. Our unique design captures the swirling green and purple hues of this natural phenomenon, providing a breathtaking backdrop for your computer.
 

@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Discover the Mystical Mountains - A Gateway to Adventure
+# Mystical Mountains Adventure
 
 Welcome to our website dedicated to exploring the beauty and mystery of mountains. Our stunning background featuring a full moon rising over a mountain range with mist and clouds sets the mood for adventure seekers who love to explore the great outdoors.
 

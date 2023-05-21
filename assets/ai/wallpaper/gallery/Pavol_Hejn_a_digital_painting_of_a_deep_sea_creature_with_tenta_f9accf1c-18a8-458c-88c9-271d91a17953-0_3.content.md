@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Oceanic Wonders: Exploring the Depths of the Sea
+# Sea Wonders
 
 Welcome to Oceanic Wonders, a website dedicated to showcasing the beauty and mystery of the ocean. Our website is designed to provide you with a unique and immersive experience that will take you on a journey through the depths of the sea.
 

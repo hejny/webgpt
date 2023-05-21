@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Experience the Wonders of Nature with Our Aurora Borealis Background
+# Aurora Backgrounds
 
 Welcome to our website, where you can download a stunning Aurora Borealis background that will transport you to the beauty of the Northern Lights. Our background is a high-quality photograph capturing the green and purple hues swirling in the night sky. It's not just any ordinary background, it's a unique piece of art that will transform your desktop or mobile device into a mesmerizing view of the natural phenomenon.
 

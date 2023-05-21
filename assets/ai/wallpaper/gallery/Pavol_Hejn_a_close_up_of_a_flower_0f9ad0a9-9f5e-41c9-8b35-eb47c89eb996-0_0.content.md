@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Revitalize Walls with Flower Power
+# Flower Walls
 
 Welcome to our wallpaper collection featuring a stunning close-up of a flower. Our high-quality wallpapers are perfect for adding a touch of nature and elegance to any room in your home or office.
 

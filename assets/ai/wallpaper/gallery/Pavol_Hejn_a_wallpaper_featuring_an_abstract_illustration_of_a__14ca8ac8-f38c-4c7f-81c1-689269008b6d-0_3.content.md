@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Embrace the Power of Technology with Our Dark Machinery Background
+# Dark Tech Background
 
 Welcome to our tech-themed website, where we strive to keep you up-to-date on the latest trends and advancements in the world of technology. To enhance your browsing experience, we've included a stunning background featuring an abstract illustration of a dark and ominous machine, complete with glowing red lights and mechanical parts.
 

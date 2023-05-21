@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# The Future of Synthetic Life Creation
+# Synthetic Future
 
 Welcome to our website dedicated to the exploration and advancement of synthetic life creation. Our team of Ainautes (AI scientists) utilize cutting-edge technology to push the boundaries of what is possible in the field of synthetic biology.
 

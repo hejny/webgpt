@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# DarkNet - A Cybersecurity Blog
+# Cyber DarkNet
 
 Welcome to DarkNet, your go-to source for the latest cybersecurity news and insights. Our blog covers a wide range of topics related to online security, from data breaches to malware attacks and everything in between. 
 

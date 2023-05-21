@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Desert Dreams: Surreal Landscapes for Your Walls
+# Desert Landscapes
 
 Welcome to Desert Dreams, where we bring the beauty and mystery of surreal desert landscapes into your home. Our wallpaper collection features stunning designs that will transport you to another world, with vibrant colors and intricate details that capture the essence of these otherworldly environments.
 

@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# AI-Powered Search Engine Background
+# AI Search Background
 
 Welcome to our website! Our platform offers a cutting-edge AI-powered search engine that helps you find what you need quickly and easily. Our minimalist and modern design ensures that your search experience is both efficient and visually appealing.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Space Adventure: A Retro-Themed Text-Based Game
+# Retro Space Game
 
 Welcome to Space Adventure, a nostalgic journey through space exploration! Our retro-themed text-based game takes you on an intergalactic adventure where you can explore different planets, encounter alien species, and collect valuable resources.
 

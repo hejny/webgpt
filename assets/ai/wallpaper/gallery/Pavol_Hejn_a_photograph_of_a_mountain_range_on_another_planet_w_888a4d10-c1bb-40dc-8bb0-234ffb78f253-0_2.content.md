@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Discover the Wonders of Space with Our Cosmic Adventure Website
+# Cosmic Adventure
 
 Welcome to our website dedicated to exploring the mysteries and wonders of space! Our cosmic adventure background featuring a photograph of a mountain range on another planet, with the bright sun shining through the peaks, sets the tone for an immersive experience that takes you on a journey through the cosmos.
 

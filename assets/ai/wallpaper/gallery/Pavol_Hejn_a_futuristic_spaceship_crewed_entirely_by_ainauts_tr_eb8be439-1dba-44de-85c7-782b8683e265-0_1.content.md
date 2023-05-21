@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Spaceship: Future Discovery
+# AI Spaceship Discovery
 
 Welcome aboard our futuristic spaceship crewed entirely by Ainautes! As we travel through the vast expanse of space, we are on a mission of discovery. Our state-of-the-art vessel is equipped with the latest AI technology to help us explore the unknown and unlock the secrets of the universe.
 

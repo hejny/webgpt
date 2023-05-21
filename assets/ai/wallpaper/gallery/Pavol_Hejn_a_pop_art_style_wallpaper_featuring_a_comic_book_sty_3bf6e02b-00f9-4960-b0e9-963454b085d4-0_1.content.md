@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Futuristic Robotics: Exploring the Future of Automation
+# Future Robotics
 
 Welcome to our website dedicated to exploring the exciting world of futuristic robotics! Our site is designed to provide you with all the latest news, information, and insights on the rapidly evolving field of automation.
 

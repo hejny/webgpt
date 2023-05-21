@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Robotics Solutions: Empowering Your Business with Cutting-Edge Technology
+# Robotics Empowerment
 
 Welcome to Robotics Solutions, your premier source for innovative robotics solutions. Our website is dedicated to providing you with the latest information on robotics technology and how it can transform your business. As part of our design, we have chosen a captivating background featuring a simple graphic of a robot arm set against a gradient background of two complementary colors.
 

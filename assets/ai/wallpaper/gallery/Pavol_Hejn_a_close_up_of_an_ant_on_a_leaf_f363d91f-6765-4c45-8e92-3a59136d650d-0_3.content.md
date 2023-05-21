@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Beauty of Nature with Our Website
+# Nature Website
 
 Welcome to our website dedicated to exploring and appreciating the wonders of nature! Our mission is to inspire people of all ages and backgrounds to connect with nature and take action to protect it.
 

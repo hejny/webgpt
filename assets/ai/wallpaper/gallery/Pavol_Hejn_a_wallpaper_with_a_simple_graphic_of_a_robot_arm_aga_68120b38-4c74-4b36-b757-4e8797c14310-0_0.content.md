@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# RoboArm: Inspiring Innovation and Progress in Technology
+# RoboArm Innovation
 
 Welcome to RoboArm, a website dedicated to inspiring innovation and progress in the world of technology. Our sleek and modern design features a simple graphic of a robot arm against a gradient background of two complementary colors, perfect for tech enthusiasts who want to showcase their passion.
 

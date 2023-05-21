@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Explore the Universe with Our Space-Themed Collection
+# Space Collection
 
 Welcome to our website, where you can find a variety of high-quality backgrounds for your desktop or mobile device. Our collection includes a range of space-themed backgrounds that are perfect for anyone who loves astronomy and wants to add a touch of elegance to their device.
 

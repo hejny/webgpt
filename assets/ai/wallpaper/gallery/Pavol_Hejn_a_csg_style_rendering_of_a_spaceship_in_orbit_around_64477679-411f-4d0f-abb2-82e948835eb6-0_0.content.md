@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# The Ultimate Destination for Tech Enthusiasts
+# Tech Hub
 
 Welcome to our website, the ultimate destination for all things tech! Whether you're a professional in the industry or just someone who loves keeping up with the latest trends, we have something for you.
 

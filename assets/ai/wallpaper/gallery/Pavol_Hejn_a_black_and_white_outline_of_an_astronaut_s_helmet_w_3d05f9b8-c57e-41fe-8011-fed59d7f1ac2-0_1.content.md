@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Space Odyssey: Explore the Universe with Our Futuristic Design
+# Futuristic Space Odyssey
 
 Welcome to our website, where we offer a unique space-themed design that will take you on a journey through the cosmos. Our design features a black and white outline of an astronaut's helmet, with intricate details that showcase the reflection of the surrounding environment.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# FutureTech: Embrace the Futuristic Cityscape
+# Future Cityscape
 
 Welcome to FutureTech, where we explore the latest technological advancements that shape our future. Our website is dedicated to providing you with the latest news, reviews, and insights on everything tech-related.
 

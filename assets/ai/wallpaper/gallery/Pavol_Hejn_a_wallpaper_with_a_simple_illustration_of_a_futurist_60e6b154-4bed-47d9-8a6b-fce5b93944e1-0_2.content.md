@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Futuristic Transport: Exploring the Future of Mobility
+# Future Transport
 
 Welcome to our website dedicated to exploring the future of transportation. Our mission is to provide you with insights and knowledge about the latest trends in mobility, from electric cars to self-driving vehicles and beyond. As you browse through our content, enjoy the stunning wallpaper featuring a simple illustration of a futuristic vehicle, with metallic textures and a dark and moody color scheme.
 

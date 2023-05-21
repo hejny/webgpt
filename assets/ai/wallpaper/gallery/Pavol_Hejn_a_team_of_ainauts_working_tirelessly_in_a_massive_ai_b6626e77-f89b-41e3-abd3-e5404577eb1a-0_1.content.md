@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Welcome to the Future of AI Technology
+# Future AI Tech
 
 ## About Us
 

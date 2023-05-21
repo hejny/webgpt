@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# AI-Powered Chatbot: Revolutionizing the Future of Technology
+# AI Chatbot Revolution
 
 Welcome to our tech website, where we explore the latest developments and insights on artificial intelligence (AI) and its transformative impact on industries. Our sleek and modern design features an abstract illustration of an AI-powered chatbot, representing the cutting-edge technology that drives our passion.
 

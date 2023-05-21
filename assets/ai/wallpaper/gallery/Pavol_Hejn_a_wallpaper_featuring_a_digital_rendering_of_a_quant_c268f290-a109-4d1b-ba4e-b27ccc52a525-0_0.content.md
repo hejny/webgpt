@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Quantum Computing: Unlocking the Power of the Future
+# Quantum Power
 
 Welcome to our website dedicated to exploring the exciting world of quantum computing. Our mission is to educate and inspire individuals about the potential of this groundbreaking technology. As you browse our site, you'll notice a stunning wallpaper featuring a digital rendering of a quantum computer, with a minimalist color scheme and geometric lines. This serves as a backdrop to our content, symbolizing the beauty and complexity of quantum computing.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Future Tech Hub: Exploring the Latest Innovations in Technology
+# Tech Hub Innovations
 
 Welcome to Future Tech Hub, your go-to source for the latest news and updates on futuristic technology. Our website is dedicated to exploring the most cutting-edge advancements in the field of technology, from drones and robots to smart devices and beyond.
 

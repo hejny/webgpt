@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Space Station Adventure - Explore the Final Frontier
+# Space Adventure
 
 Welcome to Space Station Adventure, your one-stop-shop for all things space exploration. Our website is dedicated to providing you with the latest news, information, and resources on space travel, science, and technology.
 

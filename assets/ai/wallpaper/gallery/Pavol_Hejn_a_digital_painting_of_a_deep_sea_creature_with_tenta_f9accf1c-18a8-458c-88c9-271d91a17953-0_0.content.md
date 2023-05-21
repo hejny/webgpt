@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Exploring the Depths: A Deep Sea Adventure
+# Deep Sea Adventure
 
 Welcome to Exploring the Depths, a website dedicated to all things deep sea exploration! Our mission is to provide you with the latest news and information about the fascinating world beneath the waves.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# AI-Powered Search Engine: The Future of Information Retrieval
+# AI Search Future
 
 Welcome to our website, where we explore the latest advancements in search engine technology. Our goal is to provide you with a comprehensive understanding of how AI-powered search engines are changing the way we access information.
 

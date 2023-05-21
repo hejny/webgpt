@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Nature-Inspired Backgrounds for Your Desktop
+# Nature desktops
 
 Welcome to our website, where we offer a variety of nature-inspired backgrounds for your desktop. Our collection includes stunning images of landscapes, animals, and plants that will bring a touch of the great outdoors to your computer screen.
 

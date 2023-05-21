@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Tech Enthusiast Hub: Your One-Stop Resource for All Things Tech
+# Tech Hub
 
 Welcome to Tech Enthusiast Hub, your go-to destination for all things tech-related! Our website is dedicated to providing you with the latest news, trends, and insights from the world of technology. Whether you're a seasoned professional or simply interested in learning more about the industry, we've got everything you need right here.
 

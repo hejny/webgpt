@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Elevate Your Workspace with a Futuristic Design
+# Futuristic Workspace
 
 Welcome to our website dedicated to creating a futuristic workspace that will inspire and motivate you. Our Art Deco-inspired design features shades of gold and black, along with futuristic elements such as robot arms and AI nodes, which will transform your workspace into a modern and productive environment.
 

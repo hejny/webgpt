@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Elevate Your Workspace with a Burst of Color and Creativity
+# Colorful Workspace
 
 Welcome to our website where we provide you with a stunning background featuring a colorful fractal pattern that will add a pop of color and creativity to your workspace. Our background is designed with intricate lines and bold colors that are sure to inspire imagination.
 

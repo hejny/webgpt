@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Exploring the Future of Technology
+# Tech Future
 
 Welcome to our tech blog, where we dive deep into the latest technological advancements and their impact on society. Our homepage features a stunning background of a neon cityscape with futuristic skyscrapers, setting the tone for the innovative content you'll find here.
 

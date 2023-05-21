@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Cybersecurity for Small Businesses: Protect Your Company from Online Threats
+# Small Business Security
 
 Welcome to our website dedicated to helping small businesses protect themselves from online threats. Our minimalist wallpaper with a single line drawing of a cyborg in bright red or blue serves as a reminder of the importance of cybersecurity in today's digital world.
 

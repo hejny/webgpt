@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Elevate Your Workspace with Futuristic Vibes
+# Futuristic Workspace
 
 Welcome to our website, where we help you elevate your workspace with unique and inspiring backgrounds. Our latest addition is a minimalist illustration of a robotic arm against a dark and moody background. This design is perfect for anyone who wants to add a touch of futuristic vibes to their workspace.
 

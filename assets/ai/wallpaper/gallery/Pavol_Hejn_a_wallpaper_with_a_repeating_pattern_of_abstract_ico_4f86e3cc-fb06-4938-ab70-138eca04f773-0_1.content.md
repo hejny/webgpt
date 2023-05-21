@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Tech-Inspired Workspace: Elevate Your Productivity
+# Tech Workspace
 
 Welcome to our website, where we provide you with everything you need to create a tech-inspired workspace that will elevate your productivity. Our background features a repeating pattern of abstract icons and symbols commonly used in the tech industry, such as computer chips and power buttons, to help you stay focused and motivated throughout the day.
 

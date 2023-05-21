@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Data Dashboard Background for Your Business
+# Data Background
 
 Welcome to our website, where we provide you with the perfect background for your business's data dashboard. Our wallpaper features a simple graphic of a digital dashboard or control panel, with space for monitoring and managing data.
 

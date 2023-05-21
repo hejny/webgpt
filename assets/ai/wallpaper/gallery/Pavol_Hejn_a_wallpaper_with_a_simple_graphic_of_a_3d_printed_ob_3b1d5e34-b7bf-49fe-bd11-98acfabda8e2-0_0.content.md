@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Elevate Your Interior Design with 3D-Printed Objects
+# 3D Interior Design
 
 Welcome to our website dedicated to helping you elevate your interior design with 3D-printed objects. Our mission is to inspire and guide you through the process of creating a unique and personalized space that reflects your style and personality.
 

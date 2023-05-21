@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Bringing Nature into Your Workspace
+# Nature Workspace
 
 Transform your workspace into a calming oasis with our nature-inspired background. Our close-up of an ant on a leaf will transport you to a peaceful forest, providing the perfect backdrop for focused work.
 

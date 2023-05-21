@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# AI-Powered Search Engine: Revolutionizing Online Search
+# AI Search Revolution
 
 Welcome to our website, where we explore the latest advancements in online search technology. Our mission is to keep you informed about the most innovative and user-friendly search engines available today.
 

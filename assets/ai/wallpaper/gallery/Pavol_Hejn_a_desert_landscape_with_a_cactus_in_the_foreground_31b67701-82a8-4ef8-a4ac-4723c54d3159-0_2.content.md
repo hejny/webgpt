@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Desert Oasis: Finding Serenity in the Midst of Chaos
+# Desert Serenity
 
 Welcome to Desert Oasis, a website dedicated to helping you find peace and tranquility amidst the chaos of daily life. Our mission is to provide you with resources and tools to cultivate mindfulness, relaxation, and inner calm.
 

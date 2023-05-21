@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# TechSpace: Your Source for the Latest Tech News and Trends
+# TechSpace News
 
 Welcome to TechSpace, your go-to source for the latest news and trends in the tech industry. Our website is designed to be visually appealing and easy to navigate, which is why we've chosen a modern background with a repeating pattern of abstract icons and symbols commonly used in the tech industry.
 

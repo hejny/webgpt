@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Futuristic Cityscapes: A Vision of Tomorrow
+# Future Cityscapes
 
 Welcome to our website dedicated to exploring the exciting world of futuristic cityscapes. Our website is a hub for all things related to the cities of tomorrow, from the latest technological advancements to the most innovative architectural designs.
 

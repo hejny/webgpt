@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Bringing Nature into Your Home
+# Nature at Home
 
 Welcome to our website, where we offer a variety of nature-inspired backgrounds to enhance the aesthetic appeal of your home. Our collection includes stunning images of landscapes, flora, and fauna that will add a touch of natural beauty to any room.
 

@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Oceanic Wonders: Explore the Fascinating World of Deep-Sea Creatures
+# Deep-Sea Wonders
 
 Welcome to Oceanic Wonders, where we delve into the mysteries of the ocean and its inhabitants. Our website features a stunning digital painting of a deep-sea creature with tentacles and bioluminescent patterns as the background, setting the tone for an immersive experience.
 

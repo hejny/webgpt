@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Tranquil Waters: Your Ultimate Guide to Boating and Water Sports
+# Water Sports Guide
 
 Welcome to Tranquil Waters, your go-to destination for all things boating and water sports. Our website is designed to provide you with the latest information, tips, and tricks on how to make the most out of your time on the water.
 

@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Explore the Cosmos: A Universe of Possibilities
+# Cosmic Exploration
 
 Welcome to our website, where we offer a portal to the wonders of space. Our featured background is a digital painting of a distant planet with a unique atmosphere and unusual terrain, providing a glimpse into the mysteries of the universe.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Time Manager - A Productivity Tool for Busy Professionals
+# Time Manager
 
 Welcome to Time Manager, the ultimate productivity tool designed to help busy professionals manage their time efficiently. Our platform offers a range of features to help you stay on top of your schedule, including a customizable digital clock wallpaper that can be set up as a timer or countdown.
 

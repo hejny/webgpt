@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Future-Proof Your City with Advanced AI Technology
+# AI City Future
 
 Welcome to our website dedicated to helping cities around the world implement advanced AI technology for monitoring and maintaining their infrastructure and systems. Our mission is to help create a better, more efficient future for everyone.
 

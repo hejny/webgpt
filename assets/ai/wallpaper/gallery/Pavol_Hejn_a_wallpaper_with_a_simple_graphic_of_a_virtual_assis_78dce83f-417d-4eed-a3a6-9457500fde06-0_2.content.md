@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Improve UX with Virtual Assistant
+# Virtual UX Assistant
 
 Welcome to our productivity app website! Our virtual assistant background is the perfect addition to enhance your app's user experience. The simple graphic of a virtual assistant or chatbot, set against a gradient background, will give your users a friendly and familiar face to interact with while they work.
 

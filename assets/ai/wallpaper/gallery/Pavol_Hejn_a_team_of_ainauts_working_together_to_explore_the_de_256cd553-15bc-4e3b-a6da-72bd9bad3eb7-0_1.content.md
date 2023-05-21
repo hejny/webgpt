@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Exploring the Depths of the Universe: A Journey Through Space and Time
+# Universe Journey
 
 Welcome to our website dedicated to exploring the wonders of the universe. Our team of Ainautes is passionate about uncovering the mysteries of the cosmos, from black holes to distant galaxies.
 

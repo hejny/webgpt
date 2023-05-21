@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# The Dark Forest: A Mysterious Path to Horror
+# Dark Forest Path
 
 Welcome to The Dark Forest, a website dedicated to exploring the depths of horror and mystery. Our dark and moody forest wallpaper sets the tone for the spine-chilling content you'll find here.
 

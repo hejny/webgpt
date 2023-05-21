@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Intersection of Technology and Innovation
+# Tech Innovation
 
 Welcome to our tech website, where we explore the latest trends and innovations in the world of technology. Our site is designed to provide you with informative articles, helpful resources, and a community of like-minded individuals who share your passion for all things tech.
 

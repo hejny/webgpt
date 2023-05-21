@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# 3D Printing Services for Your Business
+# 3D Business Printing
 
 Welcome to our website, where we offer professional 3D printing services for businesses of all sizes. Our team of experts uses state-of-the-art technology to bring your ideas to life. 
 

@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Enhance Your Workspace with a Futuristic AI-Powered Robot
+# Futuristic Robot
 
 Welcome to our workspace enhancement page! Our company is dedicated to creating innovative solutions that help you stay focused and productive in your work environment. As part of our commitment to enhancing your workspace, we've created a sleek and modern background featuring a stylized illustration of an AI-powered robot.
 

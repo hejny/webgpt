@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discover the Wonders of Space with Our Digital Art
+# Space Art Discovery
 
 Welcome to our website, where we celebrate the beauty and mystery of space through digital art. Our latest creation is a stunning piece that depicts a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface.
 

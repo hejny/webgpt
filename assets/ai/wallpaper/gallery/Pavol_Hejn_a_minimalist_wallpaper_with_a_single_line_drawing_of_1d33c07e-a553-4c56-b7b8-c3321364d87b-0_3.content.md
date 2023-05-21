@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# FutureTech: Exploring the Latest Advancements in Technology
+# FutureTech Advancements
 
 Welcome to FutureTech, a website dedicated to exploring the latest advancements in technology and their impact on our world. Our minimalist cyborg background is the perfect backdrop for tech enthusiasts who want to stay inspired and motivated.
 

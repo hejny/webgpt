@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Discover the Universe: A Source of Inspiration for Curious Minds
+# Universe Inspiration
 
 Welcome to Discover the Universe, a website dedicated to exploring the wonders of space and inspiring curiosity in people of all ages. Our stunning background features a realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the cosmos.
 

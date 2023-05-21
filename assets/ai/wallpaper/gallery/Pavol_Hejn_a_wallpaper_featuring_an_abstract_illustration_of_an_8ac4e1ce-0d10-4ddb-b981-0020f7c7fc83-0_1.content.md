@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Neural Networks in Action: Transforming the Future of Technology
+# Neural Tech Future
 
 Welcome to our website dedicated to exploring the exciting world of neural networks and their impact on modern technology. Our site provides a wealth of information on the latest developments in artificial intelligence, machine learning, and deep learning.
 

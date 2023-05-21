@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Elevate Your Space with Geometric Shapes
+# Geometric Space
 
 Welcome to our website, where we offer a variety of modern and stylish home decor options. Our latest addition is a collection of products featuring a repeating pattern of simple geometric shapes in a monochromatic color palette such as grey or blue. These designs provide a contemporary feel that can complement any interior style.
 

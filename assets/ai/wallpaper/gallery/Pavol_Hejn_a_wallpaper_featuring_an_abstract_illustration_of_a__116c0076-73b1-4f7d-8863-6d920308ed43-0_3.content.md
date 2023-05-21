@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Future Metropolis: Exploring the Intersection of Urbanism and Technology
+# Urban Tech Future
 
 Welcome to Future Metropolis, a platform dedicated to exploring the intersection of urbanism and technology. Our site is designed to provide you with insights into what cities might look like in the future, how technology will shape our urban environments, and what we can do to create more sustainable, equitable, and livable cities.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Binary Minds - Exploring the Latest Trends in Technology
+# Binary Trends
 
 Welcome to Binary Minds, your go-to source for the latest news and insights on everything tech-related. Our site is designed to provide you with up-to-date information on topics ranging from AI to blockchain, so you can stay informed about the latest trends and developments in the world of technology.
 

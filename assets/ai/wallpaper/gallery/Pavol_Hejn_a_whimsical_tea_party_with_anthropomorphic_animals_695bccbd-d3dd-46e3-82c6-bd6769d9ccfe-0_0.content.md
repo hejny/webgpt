@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# "Whimsical Wonderland" - A Creative Blog for Art and Inspiration
+# Whimsy Blog
 
 Welcome to Whimsical Wonderland, a place where creativity thrives and inspiration is found around every corner. Our website is dedicated to providing you with the resources you need to unleash your inner artist and bring your wildest dreams to life.
 

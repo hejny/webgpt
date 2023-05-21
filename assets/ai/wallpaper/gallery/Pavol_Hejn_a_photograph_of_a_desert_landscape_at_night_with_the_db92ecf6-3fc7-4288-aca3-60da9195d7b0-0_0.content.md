@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Explore the Wonders of the Desert Nightscape
+# Desert Nightscape
 
 Welcome to our website where you can discover the beauty and mystery of the desert nightscape. Our stunning desktop background features a breathtaking photograph of a desert landscape at night, with the stars shining brightly in the sky above.
 

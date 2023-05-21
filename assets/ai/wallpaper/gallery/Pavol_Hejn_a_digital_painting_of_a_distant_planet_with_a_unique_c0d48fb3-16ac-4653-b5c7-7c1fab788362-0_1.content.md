@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Discovering New Frontiers: A Website for Adventurers
+# Frontier Website
 
 Welcome to Discovering New Frontiers, a website dedicated to those who seek adventure and discovery. Our digital background features a distant planet with a unique atmosphere and unusual terrain, setting the tone for your exploratory journey.
 

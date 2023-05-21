@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Space Explorer: Discovering the Wonders of the Universe
+# Universe Explorer
 
 Welcome to Space Explorer, your ultimate guide to exploring the wonders of the universe. Our website is dedicated to providing you with the latest news and information about space exploration, astronomy, and the mysteries of the cosmos.
 

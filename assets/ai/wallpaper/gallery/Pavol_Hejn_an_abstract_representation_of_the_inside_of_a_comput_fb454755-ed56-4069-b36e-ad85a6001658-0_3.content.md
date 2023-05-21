@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Circuitry: A Futuristic Website for Tech Enthusiasts
+# Futuristic Circuit Website
 
 Welcome to Circuitry, a website dedicated to all things tech and futuristic. Our sleek and stylish background featuring an abstract representation of the inside of a computer chip with a metallic color palette is the perfect complement to our tech-focused content.
 

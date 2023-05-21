@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Future-Proof Your Data Center with Our Solutions
+# Data Center Solutions
 
 Welcome to our website dedicated to providing cutting-edge solutions for data centers. Our sleek and modern background featuring an abstract illustration of a futuristic data center is the perfect complement to our mission of helping you stay ahead of the curve in this rapidly evolving industry.
 

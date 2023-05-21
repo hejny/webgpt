@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Desert Nights: Experience the Magic of the Starry Sky
+# Starry Desert Nights
 
 Looking for a way to add some magic to your device's background? Our Desert Nights image is the perfect choice. Featuring a stunning photograph of a desert landscape at night, with the stars twinkling above, this image will transport you to another world.
 

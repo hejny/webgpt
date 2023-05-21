@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Data Visualization for Modern Businesses
+# Data Viz Biz
 
 Welcome to our website dedicated to helping businesses stay ahead of the curve with cutting-edge data visualization tools. Our sleek and modern approach to data analysis is designed to provide insights that are both visually stunning and highly informative.
 

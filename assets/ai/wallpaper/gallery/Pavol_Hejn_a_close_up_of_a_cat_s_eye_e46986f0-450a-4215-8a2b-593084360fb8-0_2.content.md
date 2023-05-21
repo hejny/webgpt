@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# The Feline Way - A Hub for Cat Lovers
+# Cat Hub
 
 Welcome to The Feline Way, your go-to website for all things feline! Our website is dedicated to providing information and resources on cat care, behavior, trivia, and more. As a bonus, we also offer a beautiful cat-themed background for your device.
 

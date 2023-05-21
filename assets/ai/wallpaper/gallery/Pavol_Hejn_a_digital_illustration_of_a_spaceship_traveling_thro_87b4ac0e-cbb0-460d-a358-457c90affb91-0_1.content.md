@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Explore the Universe with Space Adventures
+# Space Adventures
 
 Welcome to Space Adventures, your ultimate guide to exploring the mysteries of the universe. Our website offers an immersive experience for all space enthusiasts who want to learn about the wonders of space.
 

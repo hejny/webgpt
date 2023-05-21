@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Welcome to the Future: Ainautes and AI working together
+# Future Ainautes AI
 
 ## About Us
 We are a team of passionate individuals who believe in the power of collaboration between humans and artificial intelligence. Our mission is to build a better future, where technology and humanity work hand in hand to create a world that benefits everyone.

@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Create a Serene Workspace with Ocean Vibes
+# Ocean Workspace
 
 Transform your workspace into a peaceful oasis with our Ocean Vibes background. Featuring a stunning sunset over the ocean, this background is designed to promote relaxation and reduce stress.
 

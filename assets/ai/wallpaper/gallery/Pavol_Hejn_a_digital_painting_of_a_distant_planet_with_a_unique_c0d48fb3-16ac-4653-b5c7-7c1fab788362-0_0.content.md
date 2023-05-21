@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Unique Landscapes: Exploring the Wonders of Our Universe
+# Universe Landscapes
 
 Welcome to Unique Landscapes, where we take you on a journey through the wonders of our universe. Our website is dedicated to showcasing the most unique and fascinating landscapes found throughout the cosmos. 
 

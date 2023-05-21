@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# AI-Powered Chatbot for Customer Support
+# AI Chatbot Support
 
 Welcome to our website! We provide a cutting-edge AI-powered chatbot solution for customer support. Our chatbot is designed to handle customer inquiries and provide quick and accurate responses, saving your business time and resources.
 

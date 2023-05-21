@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Explore the Depths of Space with Our Cosmic Collection
+# Cosmic Space Collection
 
 Welcome to our website, where we bring you a wide range of space-themed wallpapers to transform your desktop or mobile background into a stunning cosmic vista. Our collection features high-quality digital paintings and illustrations that capture the awe-inspiring beauty of the universe.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Discover the Wonders of Space with Space Adventures
+# Space Adventures
 
 Welcome to Space Adventures, your ultimate destination for all things space-related. Our website is dedicated to providing you with the latest news, updates, and insights into the universe beyond our planet. And what better way to immerse yourself in the wonders of space than with our stunning background image?
 

@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Retro Gaming Hub - Explore Classic Games and More
+# Retro Games Hub
 
 Welcome to Retro Gaming Hub, your ultimate destination for all things classic gaming! Our website is dedicated to bringing you the best in vintage games, consoles, and accessories.
 

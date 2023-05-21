@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Explore the Futuristic Cityscape
+# Futuristic Cityscape
 
 Welcome to our website, where we offer a stunning graphic of a futuristic cityscape as a background for your desktop. The image features tall skyscrapers, flying cars, and glowing neon lights against a dark and moody color scheme that will transform your screen into a futuristic masterpiece.
 

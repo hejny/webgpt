@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Enhance Your Digital Experience with a Futuristic Interface Design
+# Futuristic Interface
 
 Welcome to our website dedicated to providing you with the latest and most innovative interface designs for your digital devices. Our goal is to enhance your experience by providing you with a futuristic and visually appealing interface design.
 

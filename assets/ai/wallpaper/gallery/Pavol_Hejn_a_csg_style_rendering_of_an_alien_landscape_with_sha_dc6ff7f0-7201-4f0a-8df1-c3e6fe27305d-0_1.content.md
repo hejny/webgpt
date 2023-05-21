@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Elevate Your Tech-Oriented Project with a Futuristic Industrial Vibe
+# Futuristic Tech Vibe
 
 Welcome to our website where you can find the perfect background for your tech-oriented project. Our CSG-style rendering of an alien landscape is a great choice for those who want to create a futuristic and industrial vibe.
 

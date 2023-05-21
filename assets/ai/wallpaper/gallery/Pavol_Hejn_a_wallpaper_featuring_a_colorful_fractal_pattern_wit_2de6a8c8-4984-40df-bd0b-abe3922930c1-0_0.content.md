@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Unleash Your Creativity with Our Colorful Fractal Background
+# Fractal Colors
 
 Welcome to our website, where we believe that creativity is the key to success. Our colorful fractal background is the perfect addition to your digital workspace, providing a burst of inspiration and motivation whenever you need it. Featuring intricate lines and bold colors, this background is sure to unleash your inner artist and help you achieve your goals.
 

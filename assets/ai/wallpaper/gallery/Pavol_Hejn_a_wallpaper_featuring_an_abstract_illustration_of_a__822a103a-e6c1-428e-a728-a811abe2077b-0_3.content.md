@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Embrace the Future with Our Tech Blog
+# Future Tech Blog
 
 Welcome to our tech blog, where we explore the latest trends in technology and share insights on how to stay ahead of the game. As you browse through our articles, you'll notice a striking background featuring an abstract illustration of a dark and futuristic cityscape with glowing lights and skyscrapers. This background is not just a visual treat, but also a representation of our vision for the future.
 

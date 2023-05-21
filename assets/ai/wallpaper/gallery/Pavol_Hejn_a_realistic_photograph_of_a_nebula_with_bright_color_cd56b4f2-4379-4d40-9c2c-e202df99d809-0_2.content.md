@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Discover the Beauty of the Universe with Our Space-Themed Background
+# Space Beauty Backgrounds
 
 Welcome to our website where you can explore the wonders of the universe through our stunning space-themed background. Our realistic photograph of a nebula captures the beauty and complexity of the cosmos, showcasing bright colors and intricate details that will leave you in awe.
 

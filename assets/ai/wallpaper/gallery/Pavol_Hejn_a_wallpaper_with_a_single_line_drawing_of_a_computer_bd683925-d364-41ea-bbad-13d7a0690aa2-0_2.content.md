@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# TechConnect: Your Ultimate Guide to the Latest Tech Trends
+# TechConnect Guide
 
 Welcome to TechConnect, your ultimate guide to all things tech! Our website is dedicated to providing you with the latest news and trends in the world of technology. 
 

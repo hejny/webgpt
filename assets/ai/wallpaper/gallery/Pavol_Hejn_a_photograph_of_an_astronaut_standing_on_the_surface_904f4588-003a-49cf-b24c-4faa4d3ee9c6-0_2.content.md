@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Discover the Wonders of Space with Our Stunning Background
+# Space Backgrounds
 
 Looking for a way to add a touch of wonder and inspiration to your home or office? Look no further than our stunning space-themed background, featuring a photograph of an astronaut standing on the surface of the moon with Earth in the background.
 

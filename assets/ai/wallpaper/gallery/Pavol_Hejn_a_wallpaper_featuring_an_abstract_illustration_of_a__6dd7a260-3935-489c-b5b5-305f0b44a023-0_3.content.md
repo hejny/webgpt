@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Future Cityscapes - Exploring the Urban Landscape of Tomorrow
+# Future Cityscapes
 
 Welcome to Future Cityscapes, a website dedicated to exploring the future of urban living. Our site is designed to provide you with all the information you need to stay up-to-date on the latest developments in urban design, architecture, and technology.
 

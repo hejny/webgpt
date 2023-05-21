@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Future of Space with Our Stunning Desktop Background
+# Space Desktops
 
 Welcome to our website where you can download a breathtaking desktop background that will transport you to the future of space exploration. Our stunning illustration features a sleek and futuristic space station orbiting a distant planet, with metallic accents and clean lines that give it a sense of modernity and innovation.
 

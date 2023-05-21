@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Futuristic Industries: Building the World of Tomorrow
+# Future Industries
 
 Welcome to Futuristic Industries, where we are committed to creating a better tomorrow through cutting-edge technology and innovative design. Our mission is to push the boundaries of what is possible and create a world that is both sustainable and efficient.
 

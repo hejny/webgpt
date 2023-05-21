@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Elevate Your Tech-Themed Website with Binary Code Design
+# Binary Tech Design
 
 Are you looking for a way to add some personality to your tech-themed website? Look no further than our binary code design. With its repeating pattern of simple font and black and white color scheme, this design is the perfect addition to any website that wants to showcase its tech-savvy side.
 

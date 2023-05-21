@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Otherworldly Adventures: Exploring Surreal Planets
+# Surreal Planets
 
 Welcome to Otherworldly Adventures, your ultimate guide to exploring surreal planets and encountering strange, otherworldly creatures. Our website is designed to provide you with all the information you need to plan your next intergalactic adventure.
 

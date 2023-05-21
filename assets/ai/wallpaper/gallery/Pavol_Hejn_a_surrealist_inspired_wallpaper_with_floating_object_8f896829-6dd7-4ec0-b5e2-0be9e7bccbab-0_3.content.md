@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# The Workshop: A Creative Space for Makers and Innovators
+# Creative Workshop
 
 Welcome to The Workshop, a digital platform that provides makers and innovators with the tools they need to bring their ideas to life. Our community is made up of artists, engineers, designers, and entrepreneurs who share a passion for creating innovative solutions.
 

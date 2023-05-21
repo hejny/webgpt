@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Cybermind - A Futuristic Blog on the Intersection of Technology and Humanity
+# Cybermind Blog
 
 Welcome to Cybermind, a blog dedicated to exploring the ever-evolving relationship between humans and technology. Our minimalist wallpaper with a single line drawing of a cyborg in a striking color such as bright red or blue sets the tone for our futuristic vision.
 

@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Metallic Circuitry: Exploring the Future of Technology
+# Metal Circuit Future
 
 Welcome to Metallic Circuitry, a website dedicated to exploring the latest advancements in technology and how they can be applied to our daily lives. Our sleek and modern background featuring an abstract representation of the inside of a computer chip with a metallic color palette is the perfect complement to our futuristic approach.
 

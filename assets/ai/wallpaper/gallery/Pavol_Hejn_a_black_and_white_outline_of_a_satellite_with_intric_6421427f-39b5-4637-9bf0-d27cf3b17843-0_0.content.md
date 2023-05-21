@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Final Frontier - A Space Enthusiast's Guide
+# Space Guide
 
 Welcome to our website, where we take you on a journey through the vast expanse of space. Our mission is to bring you closer to the mysteries of the universe and inspire you to explore the final frontier.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Exploring the Universe: A Journey Through Time and Space
+# Universe Journey
 
 Welcome to our website dedicated to exploring the vast universe around us! Our team of Ainautes, along with their AI companions, are conducting groundbreaking experiments on the edge of a black hole. With time and space warping around them, they continue to push the boundaries of what we know about the universe.
 

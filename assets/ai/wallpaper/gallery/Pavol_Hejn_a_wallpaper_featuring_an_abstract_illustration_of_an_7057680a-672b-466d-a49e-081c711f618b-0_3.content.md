@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Neural Networks in Action: Exploring the Power of AI
+# AI Networks
 
 Welcome to our website dedicated to exploring the fascinating world of artificial intelligence and neural networks. Our goal is to provide you with a comprehensive resource that will help you understand the potential of AI technology and its real-world applications.
 

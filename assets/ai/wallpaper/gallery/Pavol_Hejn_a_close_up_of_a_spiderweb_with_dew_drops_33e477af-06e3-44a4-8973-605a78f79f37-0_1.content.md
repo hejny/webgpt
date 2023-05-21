@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discover the Beauty of Nature with Our Website
+# Nature Website
 
 Welcome to our website, where we aim to inspire and educate visitors about the wonders of the natural world. As part of our mission to connect people with nature, we have chosen a stunning background image featuring a close-up of a spiderweb with dew drops.
 

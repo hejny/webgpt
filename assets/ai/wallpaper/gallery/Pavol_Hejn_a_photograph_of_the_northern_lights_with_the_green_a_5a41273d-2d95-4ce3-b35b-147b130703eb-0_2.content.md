@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discover the Mystical Beauty of the Northern Lights
+# Northern Lights Beauty
 
 Welcome to our website where you can explore the captivating beauty of the Northern Lights. Our stunning Aurora Borealis background features a photograph of the green and purple hues swirling in the night sky, creating an enchanting and mystical atmosphere.
 

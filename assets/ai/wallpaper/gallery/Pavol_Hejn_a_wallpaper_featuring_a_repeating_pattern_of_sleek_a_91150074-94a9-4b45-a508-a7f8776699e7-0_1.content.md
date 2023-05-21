@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Modernize Your Workspace with a Digital Edge
+# Digital Workspace
 
 Welcome to our website, where we help you modernize your workspace by incorporating the latest digital technologies. Our sleek and modern background features a repeating pattern of digital devices such as smartphones, tablets, and laptops set against a gradient background, which is sure to inspire your creativity and productivity.
 

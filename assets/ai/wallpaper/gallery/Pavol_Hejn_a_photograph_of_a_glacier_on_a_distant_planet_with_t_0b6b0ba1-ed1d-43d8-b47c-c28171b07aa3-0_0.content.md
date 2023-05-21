@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Discover the Wonders of Space with Our Cosmic Collection
+# Cosmic Wonders
 
 Transform your device into a portal to the universe with our stunning space-themed backgrounds. Featuring breathtaking images of distant planets, galaxies, and celestial bodies, our collection will take you on a journey through the wonders of space.
 

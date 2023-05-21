@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Boost Your Productivity with a Virtual Assistant Background
+# Virtual Assistant Boost
 
 Welcome to our website, where we offer a virtual assistant background that will help you stay organized and productive. Our background features a simple graphic of a virtual assistant or chatbot, with space for messages and alerts, set against a gradient backdrop. This background is perfect for anyone who wants to enhance their workspace and stay on top of their tasks.
 

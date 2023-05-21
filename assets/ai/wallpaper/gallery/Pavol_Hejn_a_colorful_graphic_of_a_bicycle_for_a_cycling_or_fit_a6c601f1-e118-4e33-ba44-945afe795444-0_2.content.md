@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Cycle Your Way to Fitness" - A Blog Dedicated to Promoting a Healthy Lifestyle through Cycling
+# Cycle Fitness Blog
 
 Welcome to our cycling and fitness blog! Our website is dedicated to promoting a healthy lifestyle through cycling. We believe that cycling is not only a fun activity, but also a great way to stay fit and healthy. To help inspire you on your journey, we have added a colorful graphic of a bicycle as a background for our website.
 

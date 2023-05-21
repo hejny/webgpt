@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Futuristic Spacecrafts: Exploring the Final Frontier
+# Futuristic Spacecrafts
 
 Welcome to Futuristic Spacecrafts, your ultimate guide to the latest advancements in space technology. Our mission is to provide you with up-to-date information on spacecraft designs, technologies, and missions that are shaping the future of space exploration.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Future Metropolis: A Vision of Tomorrow for Your Desktop Background
+# Tomorrow's Metropolis
 
 Welcome to our website, where we offer a stunning desktop background featuring an abstract illustration of a futuristic cityscape. This image is perfect for anyone who wants to add a touch of sci-fi to their computer screen.
 

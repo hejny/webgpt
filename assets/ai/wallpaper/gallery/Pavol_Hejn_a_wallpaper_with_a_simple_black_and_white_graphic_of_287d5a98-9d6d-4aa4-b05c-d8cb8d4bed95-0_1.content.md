@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# RoboVision: A Futuristic Platform for Machine Learning
+# RoboVision Platform
 
 Welcome to RoboVision, the ultimate platform for machine learning enthusiasts and professionals alike. Our platform offers a wide range of resources, tools, and tutorials to help you master the art of AI and robotics.
 

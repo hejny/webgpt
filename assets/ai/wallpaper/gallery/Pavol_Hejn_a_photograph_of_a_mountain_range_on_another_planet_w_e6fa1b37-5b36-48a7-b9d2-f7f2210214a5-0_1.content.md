@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Discover the Wonders of the Universe with Our Cosmic Adventure Theme
+# Cosmic Adventure
 
 Transform your desktop into a window to the cosmos with our Cosmic Adventure Theme! Featuring a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks, this theme will transport you to another world every time you turn on your computer.
 

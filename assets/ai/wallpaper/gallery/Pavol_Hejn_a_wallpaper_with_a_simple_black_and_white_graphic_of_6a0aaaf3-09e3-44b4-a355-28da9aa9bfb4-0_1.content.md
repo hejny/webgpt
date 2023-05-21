@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# RoboTask: Automate your Work with Ease
+# RoboTask: Automate Work
 
 Welcome to RoboTask, the ultimate automation tool for your daily tasks. Our simple and intuitive interface allows you to create custom workflows that automate repetitive tasks and save you time. 
 

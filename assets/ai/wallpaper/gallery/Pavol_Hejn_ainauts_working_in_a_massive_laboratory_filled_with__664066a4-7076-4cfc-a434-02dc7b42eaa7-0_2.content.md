@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Cutting-Edge Research in the World of Biotechnology
+# Bio Research
 
 Welcome to our website dedicated to exploring the latest advancements in biotechnology. Our team of expert researchers and scientists are constantly pushing the boundaries of what is possible, utilizing state-of-the-art equipment and technology to make groundbreaking discoveries.
 

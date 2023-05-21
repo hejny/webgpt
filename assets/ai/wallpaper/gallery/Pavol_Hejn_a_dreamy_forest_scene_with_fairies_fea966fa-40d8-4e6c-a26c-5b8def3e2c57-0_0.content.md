@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Enter a Magical World with Our Enchanting Forest Scene
+# Enchanting Forest Scene
 
 Welcome to our website where you can immerse yourself in a magical world with our enchanting forest scene. Our background will transport you to a serene and dreamy forest with fairies, providing an escape from reality.
 

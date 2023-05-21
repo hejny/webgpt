@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Boost Your Productivity with a Futuristic Workspace
+# Futuristic Workspace
 
 Welcome to our website, where we provide resources and inspiration for productivity enthusiasts. Our mission is to help you achieve your goals and improve your work efficiency. As a part of our commitment, we offer a free background featuring a stylized illustration of a futuristic workspace that can help you stay focused and motivated.
 

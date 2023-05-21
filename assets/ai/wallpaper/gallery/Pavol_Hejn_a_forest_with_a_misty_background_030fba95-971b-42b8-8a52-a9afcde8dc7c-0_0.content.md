@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Find Serenity in Nature with Our Forest-Inspired Website
+# Forest Serenity
 
 Welcome to our website, where you can find inspiration for your next outdoor adventure or simply escape into the beauty of nature. Our forest-inspired background sets the tone for a peaceful browsing experience.
 

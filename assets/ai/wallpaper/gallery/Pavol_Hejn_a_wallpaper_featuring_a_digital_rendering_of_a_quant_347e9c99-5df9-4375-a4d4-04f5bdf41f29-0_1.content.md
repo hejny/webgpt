@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Quantum Computing: Revolutionizing the Future of Technology
+# Quantum Revolution
 
 Welcome to our website dedicated to exploring the world of quantum computing and its potential impact on the future of technology. As you navigate through our pages, you'll notice a stunning wallpaper featuring a digital rendering of a quantum computer with a minimalist color scheme and geometric lines. This background serves as a reminder of the power and beauty of this cutting-edge technology.
 

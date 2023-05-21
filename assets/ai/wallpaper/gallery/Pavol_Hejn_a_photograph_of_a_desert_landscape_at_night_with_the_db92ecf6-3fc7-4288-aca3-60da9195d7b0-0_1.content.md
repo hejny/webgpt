@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Beauty of the Desert Nightscape
+# Desert Nightscape
 
 Welcome to our website where we showcase stunning photographs from around the world. We are excited to introduce our latest addition: the Desert Nightscape, a breathtaking photograph capturing the beauty of the desert landscape at night with stars twinkling in the sky above.
 

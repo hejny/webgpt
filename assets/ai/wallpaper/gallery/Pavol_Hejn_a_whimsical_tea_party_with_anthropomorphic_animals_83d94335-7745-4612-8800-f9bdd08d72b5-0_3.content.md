@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Create a Whimsical Wonderland in Your Home with Anthropomorphic Animal Decor
+# Animal Wonderland Decor
 
 Welcome to our website where we offer a wide range of home decor products that will help you create the perfect ambiance for your space. Our latest addition is a charming collection of anthropomorphic animal decor, including a whimsical tea party design that adds character and personality to any room.
 

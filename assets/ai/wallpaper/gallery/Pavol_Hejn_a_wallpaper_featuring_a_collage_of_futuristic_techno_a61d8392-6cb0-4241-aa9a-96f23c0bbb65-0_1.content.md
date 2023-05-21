@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Future Tech Hub: Exploring the Latest in Technology
+# Tech Hub Future
 
 Welcome to Future Tech Hub, where we explore the latest advancements in technology and how they are shaping our world. Our wallpaper featuring a collage of futuristic technology such as drones, robots, and smart devices, set against a black background, sets the tone for what you can expect from our website.
 

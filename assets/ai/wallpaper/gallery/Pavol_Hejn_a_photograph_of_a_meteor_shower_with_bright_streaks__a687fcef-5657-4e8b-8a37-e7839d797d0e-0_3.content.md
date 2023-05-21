@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Explore the Wonders of the Night Sky
+# Night Sky Wonders
 
 Welcome to our website where you can discover the beauty and mystery of the night sky. Our stunning background features a photograph of a meteor shower, with bright streaks of light crossing the dark expanse.
 

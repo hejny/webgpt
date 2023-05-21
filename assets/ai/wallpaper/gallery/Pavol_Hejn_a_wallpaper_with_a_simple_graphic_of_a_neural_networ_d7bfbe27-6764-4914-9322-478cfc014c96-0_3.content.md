@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Neural Networks in Action: Transforming Data into Insights
+# Neural Insights
 
 Welcome to our website where we explore the fascinating world of neural networks and their applications. Our mission is to help you understand how these complex systems work and how they can be used to transform data into insights that drive business decisions.
 

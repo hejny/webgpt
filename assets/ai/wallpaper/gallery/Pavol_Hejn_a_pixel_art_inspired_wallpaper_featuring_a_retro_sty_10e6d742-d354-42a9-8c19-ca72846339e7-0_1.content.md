@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Retro Robot Background for Your Creative Projects
+# Retro Robot Background
 
 Welcome to our website, where we offer a unique retro robot-inspired wallpaper that will add character and style to your creative projects. Our pixel art-inspired wallpaper features a limited color palette and pixelated lines, making it perfect for those who love the nostalgic charm of old-school video games.
 

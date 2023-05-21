@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Quantum-Inspired Design for Your Digital Space
+# Quantum Design
 
 Welcome to our website, where we offer a unique and eye-catching quantum-inspired design that will elevate your digital space. Our abstract design combines the shapes and colors of quantum physics to create a bold and intricate pattern that is sure to impress.
 

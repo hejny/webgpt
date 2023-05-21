@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Misty Forest's Mystical Beauty.
+# Misty Forest Beauty
 
 Welcome to our website where you can explore the mystical beauty of a misty forest. Our stunning background image captures the serene atmosphere of a forest enveloped in mist, inviting you to immerse yourself in nature's wonders.
 

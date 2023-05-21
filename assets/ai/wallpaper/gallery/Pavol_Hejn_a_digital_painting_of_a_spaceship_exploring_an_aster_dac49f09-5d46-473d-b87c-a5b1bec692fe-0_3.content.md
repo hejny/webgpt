@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Space Adventures: Explore the Wonders of the Universe
+# Space Adventures
 
 Welcome to Space Adventures, your ultimate destination for all things space-related. Our website is dedicated to providing you with the latest news, information, and resources about space exploration.
 

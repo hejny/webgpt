@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Welcome to Our Nature-Loving Community
+# Nature Community
 
 We're thrilled to have you here on our website dedicated to all things nature! Our stunning butterfly and flower background is just one of the many ways we celebrate the beauty of the natural world.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Tech Enthusiast Hub: Your One-Stop Destination for All Things Tech
+# Tech Hub
 
 Welcome to Tech Enthusiast Hub, your ultimate destination for all things tech! Our website is dedicated to providing you with the latest news, reviews, and insights on everything related to technology. 
 

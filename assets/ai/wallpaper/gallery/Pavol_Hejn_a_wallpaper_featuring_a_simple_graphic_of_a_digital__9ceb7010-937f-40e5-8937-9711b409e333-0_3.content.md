@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Countdown: A Simple and Effective Way to Achieve Your Goals
+# Countdown Goals
 
 Welcome to Countdown, your go-to source for achieving your goals through effective time management. Our website is designed to help you stay focused and motivated by providing you with the tools you need to track your progress and set achievable deadlines.
 

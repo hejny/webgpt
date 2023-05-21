@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# AI-Powered Search Engine: The Future of Online Searches
+# AI Search Future
 
 Welcome to our website, where we explore the latest advancements in search engine technology. Our minimalist and modern design is inspired by the abstract illustration of an AI-powered search engine wallpaper set against a gradient background.
 

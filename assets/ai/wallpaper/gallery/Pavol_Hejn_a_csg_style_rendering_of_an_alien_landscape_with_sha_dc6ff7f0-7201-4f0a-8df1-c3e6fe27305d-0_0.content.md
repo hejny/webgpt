@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Transform Your Website with a Futuristic Alien Landscape
+# Alien Website Landscapes
 
 Looking to give your website a fresh, modern look? Our CSG-style rendering of an alien landscape is the perfect choice. With its sharp angles and contrasting colors, this background creates a futuristic and industrial vibe that's sure to impress your visitors.
 

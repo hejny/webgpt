@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Futuristic Cyborgs: Exploring the World of Human-Machine Hybrids
+# Cyborg Explorers
 
 Welcome to our website dedicated to exploring the fascinating world of cyborgs - beings that combine human and machine elements to create a new form of life. Our site is designed to be a hub for all things related to this exciting field, from the latest news and research to user stories and references.
 

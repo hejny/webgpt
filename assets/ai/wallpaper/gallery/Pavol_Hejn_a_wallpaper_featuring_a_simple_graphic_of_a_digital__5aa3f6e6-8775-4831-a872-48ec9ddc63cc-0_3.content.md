@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Time Tracker: A Simple Tool to Boost Your Productivity
+# Time Tracker Boost
 
 Welcome to Time Tracker, a productivity tool designed to help you manage your time more efficiently. Our simple and intuitive interface makes it easy to set alarms and countdowns, so you can stay on top of your schedule and accomplish your goals.
 

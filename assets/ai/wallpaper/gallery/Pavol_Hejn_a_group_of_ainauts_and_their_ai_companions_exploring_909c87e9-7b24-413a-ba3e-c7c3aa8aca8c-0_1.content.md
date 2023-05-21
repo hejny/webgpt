@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Exploring the Unknown: Unraveling the Secrets of Abandoned Space Facilities
+# Abandoned Space Secrets
 
 Welcome to our website, where we delve into the mysteries of abandoned space facilities. Our team of Ainautes and their AI companions are dedicated to uncovering the secrets hidden within these massive structures.
 

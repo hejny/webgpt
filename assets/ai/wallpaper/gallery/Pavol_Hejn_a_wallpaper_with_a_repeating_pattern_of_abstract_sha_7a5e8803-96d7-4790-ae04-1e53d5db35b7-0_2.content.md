@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Abstract Shapes: Adding Depth to Your Space
+# Abstract Depth Shapes
 
 Welcome to our website featuring a stunning abstract shapes background inspired by the Mandelbrot set. The intricate pattern of abstract shapes adds depth and interest to any space, making it perfect for both personal and professional settings.
 

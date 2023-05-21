@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Embrace the Future with a Pop Art-Inspired Room
+# Pop Art Room
 
 Welcome to our website, where we celebrate the intersection of art and technology. Our pop art-style wallpaper featuring a comic book-style illustration of a futuristic robot or cyborg is the perfect background for your tech-filled life.
 

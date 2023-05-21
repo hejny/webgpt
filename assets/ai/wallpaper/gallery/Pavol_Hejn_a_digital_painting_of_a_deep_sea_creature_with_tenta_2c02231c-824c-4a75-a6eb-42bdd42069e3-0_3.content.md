@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Deep Sea Exploration: Discover the Mysteries of the Ocean
+# Deep Sea Mysteries
 
 Welcome to our website, where we invite you to dive into the wonders of the oceanic depths. Our stunning background features a digital painting of a deep sea creature, with tentacles and bioluminescent patterns that evoke a sense of mystery and exploration.
 

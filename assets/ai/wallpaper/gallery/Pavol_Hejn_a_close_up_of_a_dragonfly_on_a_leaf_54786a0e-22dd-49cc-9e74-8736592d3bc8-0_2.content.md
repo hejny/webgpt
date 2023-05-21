@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Create a Serene Home Office with Nature-Inspired Decor
+# Nature Office Decor
 
 Welcome to our website, where we offer a wide selection of nature-inspired decor to help you create a calming and inspiring home office environment. Our collections are carefully curated to bring the beauty of the natural world indoors.
 

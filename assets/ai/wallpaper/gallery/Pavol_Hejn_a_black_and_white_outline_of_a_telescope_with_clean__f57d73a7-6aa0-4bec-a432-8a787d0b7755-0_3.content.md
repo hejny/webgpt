@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Discover the Wonders of the Cosmos with Our Astronomy-Inspired Website
+# Cosmic Astronomy Website
 
 Welcome to our website, where we offer a range of products and services that help you explore the wonders of the universe. Our black and white outline of a telescope background is just one way to bring the beauty of the cosmos into your digital space.
 

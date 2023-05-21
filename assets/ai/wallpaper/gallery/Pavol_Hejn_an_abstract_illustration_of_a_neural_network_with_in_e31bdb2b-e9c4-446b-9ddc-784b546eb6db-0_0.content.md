@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# TechConnect - Your Gateway to the Latest in Technology
+# TechConnect
 
 Welcome to TechConnect, your one-stop-shop for all things tech-related. Our website is designed to keep you up-to-date with the latest news, products, and trends in the world of technology. 
 

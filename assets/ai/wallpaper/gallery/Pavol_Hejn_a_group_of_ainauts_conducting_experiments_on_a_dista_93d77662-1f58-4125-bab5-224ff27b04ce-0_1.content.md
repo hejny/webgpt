@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Exploring the Mysteries of the Universe: Ainautes on a Distant Moon
+# Moon Ainautes
 
 Welcome to our website dedicated to exploring the wonders of the universe! Our team of Ainautes is conducting groundbreaking experiments on a distant moon, with a massive gas giant looming in the background. This stunning wallpaper serves as a reminder of the vastness and beauty of the cosmos that we strive to understand.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Virtual Assistant for Your Business
+# Business VA
 
 Welcome to our website where we offer a variety of virtual assistant services to help your business run smoothly. Our wallpaper features a simple graphic of a virtual assistant or chatbot, with space for messages and alerts, to represent the technology that powers our services.
 

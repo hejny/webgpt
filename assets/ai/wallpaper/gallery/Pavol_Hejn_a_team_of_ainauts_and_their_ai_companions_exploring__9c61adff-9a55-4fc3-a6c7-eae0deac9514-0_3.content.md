@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Exploring the Wonders of Space: A Community for Space Enthusiasts
+# Space Community
 
 Welcome to our website, where we bring you the latest news and insights on space exploration. Our background features a team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet. This stunning image is not only visually appealing but also serves as a reminder of the incredible advancements in technology that have made space exploration possible.
 

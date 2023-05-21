@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Ignite Your Creativity with Futuristic Cityscape
+# Futuristic Creativity
 
 Welcome to our platform, where creativity and technology converge to inspire and empower artists, designers, and innovators. Our mission is to provide you with the resources and tools you need to unleash your full potential and bring your ideas to life.
 

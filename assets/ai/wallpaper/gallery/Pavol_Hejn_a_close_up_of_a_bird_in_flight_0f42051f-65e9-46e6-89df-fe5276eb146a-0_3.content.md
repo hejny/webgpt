@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Nature-Inspired Home Decor to Create a Calming Environment
+# Nature Decor
 
 Welcome to our website, where we offer a range of nature-inspired home decor products that are designed to bring the beauty of the outdoors into your living space. Our products are perfect for those who want to create a relaxing and peaceful environment at home.
 

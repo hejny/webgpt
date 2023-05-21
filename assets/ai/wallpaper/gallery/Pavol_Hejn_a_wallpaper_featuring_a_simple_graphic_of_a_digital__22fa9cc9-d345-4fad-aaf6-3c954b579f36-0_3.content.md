@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Countdown - A Productivity Tool for Time Management 
+# Countdown Tool
 
 Welcome to Countdown, your ultimate productivity tool for time management. Our app is designed to help you stay on top of your tasks and make the most out of your day. 
 

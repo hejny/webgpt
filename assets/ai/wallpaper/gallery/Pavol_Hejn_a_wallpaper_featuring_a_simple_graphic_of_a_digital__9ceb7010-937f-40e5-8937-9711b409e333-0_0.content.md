@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Ultimate Time Management Tool: Time Keeper
+# Time Keeper
 
 Welcome to Time Keeper, your ultimate tool for managing your time effectively. Our digital clock or timer with customizable alarm and countdown settings is the perfect background for your computer or mobile device.
 

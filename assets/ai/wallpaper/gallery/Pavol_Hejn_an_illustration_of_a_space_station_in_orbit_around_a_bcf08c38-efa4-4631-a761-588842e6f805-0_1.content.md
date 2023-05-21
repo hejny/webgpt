@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Discover the mysteries of space with our cosmic collection
+# Cosmic Mysteries
 
 Welcome to our website, where we offer a unique collection of backgrounds that will take you on a journey through the cosmos. Our latest addition is an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background. This stunning background is perfect for anyone who loves astronomy or wants to add some cosmic flair to their desktop.
 

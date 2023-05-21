@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Northern Lights Adventure: Experience the Magic of Aurora Borealis
+# Aurora Adventure
 
 Welcome to our website dedicated to adventure seekers and nature lovers! Our wallpaper featuring "An aurora borealis over snow-covered mountains" sets the tone for what we offer - a unique experience that combines the beauty of nature with thrilling activities.
 

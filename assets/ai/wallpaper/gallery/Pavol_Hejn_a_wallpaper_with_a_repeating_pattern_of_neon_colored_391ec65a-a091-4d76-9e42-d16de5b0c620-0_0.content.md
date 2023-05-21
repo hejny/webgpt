@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Neon Circuitry: Futuristic Tech Background
+# Neon Circuitry
 
 Welcome to our website, where we provide you with the most stunning and unique backgrounds for your digital devices. Our latest addition is the Neon Circuitry wallpaper, which features a repeating pattern of neon-colored circuitry set against a black background. 
 

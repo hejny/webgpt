@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Tech Connect: Your Source for the Latest in Technology
+# Tech Connect
 
 Welcome to Tech Connect, your go-to source for all things tech-related. Our website is designed to provide you with the latest news, reviews, and insights on the world of technology. As part of our commitment to enhancing your browsing experience, we have added a new background to our site.
 

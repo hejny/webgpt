@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Arctic Explorers: A High-Tech Adventure
+# Arctic Adventure
 
 Welcome to Arctic Explorers, your ultimate guide to exploring the frozen wastelands of distant planets. Our team of Ainautes in high-tech suits are ready to take you on an adventure like no other.
 

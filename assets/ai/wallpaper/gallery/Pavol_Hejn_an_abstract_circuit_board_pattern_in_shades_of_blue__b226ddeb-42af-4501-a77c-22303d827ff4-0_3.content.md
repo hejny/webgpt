@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Elevate Your Workspace with a Futuristic Design
+# Futuristic Workspace
 
 Welcome to our website dedicated to creating the perfect workspace that inspires productivity and creativity. Our abstract circuit board pattern in shades of blue and silver is the perfect backdrop for a futuristic design that will transform your workspace.
 

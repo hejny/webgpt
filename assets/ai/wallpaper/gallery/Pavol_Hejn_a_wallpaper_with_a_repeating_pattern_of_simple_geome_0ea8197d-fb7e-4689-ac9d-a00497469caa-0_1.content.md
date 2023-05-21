@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Geometric Patterns: Elevate Your Home Decor with Simple Shapes
+# Geometric Decor
 
 Welcome to our website where we offer a variety of home decor ideas and inspiration. Our latest addition is a collection of wallpapers featuring simple geometric patterns in monochromatic color palettes. These wallpapers are perfect for adding a touch of modernity to any room.
 

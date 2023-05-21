@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Boost Your Productivity with Our Futuristic Workspace Design
+# Futuristic Workspace
 
 Welcome to our website, where we provide resources and tools to help you optimize your productivity in the modern workspace. Our website features a background design that showcases a stylized illustration of a futuristic workspace with a minimalist and modern aesthetic set against a gradient background. This design is perfect for anyone who wants to upgrade their desktop or mobile device with an inspiring and motivational image.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Elevate Your Workspace with a Futuristic Design
+# Futuristic Workspace
 
 Welcome to our website, where we offer a stunning desktop background featuring a stylized illustration of a futuristic workspace. Our design is perfect for those who appreciate modern aesthetics and want to elevate their workspace to the next level.
 

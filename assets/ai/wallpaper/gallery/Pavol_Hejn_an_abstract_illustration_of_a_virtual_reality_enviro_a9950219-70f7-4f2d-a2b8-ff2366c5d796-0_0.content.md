@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Boost Your Creativity with a Virtual Reality Workspace
+# VR Workspace
 
 Welcome to our website, where we provide a unique and inspiring virtual reality workspace that will enhance your creativity and productivity. Our abstract illustration of a virtual reality environment features futuristic graphics and a minimalist color scheme that will transport you to another world.
 

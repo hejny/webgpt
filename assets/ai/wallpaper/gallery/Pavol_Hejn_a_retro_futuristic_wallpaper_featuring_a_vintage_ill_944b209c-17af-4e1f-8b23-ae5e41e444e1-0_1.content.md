@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Retro-Futuristic Design for Your Digital Workspace
+# Retro Workspace Design
 
 Transform your digital workspace with our retro-futuristic design featuring a vintage illustration of a robot set against a neon-colored background. Our design will bring a touch of personality and creativity to your workspace, inspiring you to think outside the box and come up with innovative ideas.
 

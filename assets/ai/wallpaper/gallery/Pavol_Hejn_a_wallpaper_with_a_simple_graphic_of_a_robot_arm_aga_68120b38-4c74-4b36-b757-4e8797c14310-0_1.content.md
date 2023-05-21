@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# RoboWorks - Your Ultimate Destination for Robotics and Automation News
+# RoboWorks News
 
 Welcome to RoboWorks, your go-to source for the latest news and updates on robotics and automation. Our website is dedicated to providing you with valuable insights into the world of technology and its impact on society. As a tribute to the world of robotics, we have created a stunning background featuring a simple graphic of a robot arm against a gradient background of two complementary colors.
 

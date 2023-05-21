@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Future Tech: Innovating the World
+# Innovative Future Tech
 
 Welcome to Future Tech, where we explore the latest advancements in technology and how they are shaping our world. Our website is dedicated to providing you with up-to-date information on cutting-edge innovations that are revolutionizing industries and changing the way we live.
 

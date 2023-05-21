@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# AI-Powered Chatbot for Customer Service
+# AI Chatbot Service
 
 Welcome to our website where we offer an innovative AI-powered chatbot that can revolutionize your customer service experience. Our chatbot is designed to provide quick and efficient responses to your customers, improving their satisfaction and loyalty.
 

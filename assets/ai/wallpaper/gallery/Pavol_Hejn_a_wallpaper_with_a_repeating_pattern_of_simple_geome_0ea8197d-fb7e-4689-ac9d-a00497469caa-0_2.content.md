@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Elevate Your Home Office with Modern Minimalist Design
+# Minimalist Home Office
 
 Looking to create a modern and stylish workspace in your home office? Our minimalist design features a repeating pattern of simple geometric shapes in a monochromatic color palette, perfect for adding a touch of sophistication to any room.
 

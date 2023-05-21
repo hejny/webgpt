@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Experience the Thrill of Urban Living in a Futuristic Metropolis
+# Futuristic Metropolis
 
 Welcome to our website, where we explore the exciting possibilities of urban living in a futuristic metropolis. Our stunning background design captures the essence of this dynamic and vibrant cityscape, with its towering skyscrapers, neon lights, and bustling streets.
 

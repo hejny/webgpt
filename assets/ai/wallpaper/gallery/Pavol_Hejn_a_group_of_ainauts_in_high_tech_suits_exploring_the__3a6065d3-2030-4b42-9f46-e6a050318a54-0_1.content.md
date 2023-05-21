@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Exploring the Unknown: The Future of Space Travel
+# Future Space Exploration
 
 Welcome to our website dedicated to exploring the vast unknowns of space. Our mission is to provide you with the latest news, updates, and insights into the world of space exploration. As you navigate through our website, you'll notice a stunning wallpaper featuring a group of Ainautes in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. This wallpaper serves as a reminder of the incredible feats that humanity has achieved in space exploration.
 

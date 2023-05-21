@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Discover Your Perfect Mountain Getaway
+# Mountain Getaway
 
 Welcome to our website, where you can find inspiration for your next mountain retreat. Our stunning background featuring a full moon rising over a mountain range with mist and clouds adds the perfect touch of mystery and tranquility to your browsing experience.
 

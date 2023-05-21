@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# CyberBoost: Empowering Your Digital Life
+# CyberBoost
 
 Welcome to CyberBoost, your ultimate destination for all things tech. Our mission is to empower you with the latest tools and technologies to enhance your digital life. 
 

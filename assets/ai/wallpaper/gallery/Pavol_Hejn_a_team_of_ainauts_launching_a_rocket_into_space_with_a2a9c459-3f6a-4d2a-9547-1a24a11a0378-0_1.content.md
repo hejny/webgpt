@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Final Frontier with Our Space-Themed Décor
+# Space Décor
 
 Bring the excitement of space exploration into your home or office with our stunning space-themed décor. Our featured background showcases a team of Ainautes launching a rocket into space, with the Earth visible in the background. This captivating image is just one of many options that we offer to help you create a space that's out of this world.
 

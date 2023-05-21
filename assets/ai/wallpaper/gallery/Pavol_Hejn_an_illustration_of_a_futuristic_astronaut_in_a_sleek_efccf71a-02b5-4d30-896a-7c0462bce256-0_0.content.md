@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Explore the Unknown: Futuristic Astronaut on a Distant Planet
+# Futuristic Astronauts
 
 Welcome to our website, where we provide you with inspiring backgrounds that will transform your desktop into a sci-fi wonderland. Our latest addition is an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet. This background will take you on a journey through space and inspire you to explore the unknown.
 

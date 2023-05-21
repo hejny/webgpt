@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Experience the Future Today with Our Futuristic Cityscape
+# Future Cityscape
 
 Welcome to our website where we offer a glimpse into the future with our stunning futuristic cityscape background. Our background captures the essence of a world where technology and innovation have transformed the way we live, work, and play.
 

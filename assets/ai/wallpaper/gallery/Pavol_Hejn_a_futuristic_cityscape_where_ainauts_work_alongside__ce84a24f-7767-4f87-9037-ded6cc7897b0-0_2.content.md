@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# The Future of Work: Ainautes and AI Pushing the Boundaries of Science and Technology
+# Ainautes & AI
 
 Welcome to our website dedicated to exploring the exciting world of Ainautes and AI working together to push the boundaries of science and technology. Our mission is to provide you with the latest news, insights, and user stories about this cutting-edge field.
 

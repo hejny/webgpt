@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Robotics Lab: Innovating the Future of Technology
+# Robo Lab
 
 Welcome to the Robotics Lab, where we're dedicated to pushing the boundaries of technology and innovation. Our minimalist wallpaper featuring a robotic arm against a dark and moody background sets the tone for our cutting-edge work.
 

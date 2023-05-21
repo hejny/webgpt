@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# FutureTech: Innovating the World
+# FutureTech Innovation
 
 Welcome to FutureTech, where we're dedicated to bringing you the latest in technology and innovation. Our mission is to empower individuals and organizations to achieve their goals through cutting-edge advancements in science and engineering.
 

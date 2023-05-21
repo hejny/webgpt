@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Bring the Serenity of Nature into Your Space
+# Nature Serenity
 
 Looking to create a calming and peaceful environment in your home or office? Our collection of nature-inspired backgrounds can transport you to a serene and tranquil setting.
 

@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Redefining Your Digital Workspace: A Minimalist and Modern Design
+# Digital Redesign
 
 Welcome to our website, where we help you create a futuristic workspace that inspires productivity and creativity. Our website features a stunning background that will transform your digital space into a minimalist and modern design.
 

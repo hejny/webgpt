@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Explore the Wonders of the Universe with Our Telescope Background
+# Universe Telescope Background
 
 Welcome to our website where we offer a stunning black and white outline of a telescope as your desktop wallpaper. Our background is not only aesthetically pleasing but also serves as a reminder of the vastness and beauty of the universe.
 

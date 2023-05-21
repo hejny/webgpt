@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Floral Delights: Elevate Your Space with Botanical Beauty
+# Botanical Space
 
 Welcome to Floral Delights, your ultimate destination for all things botanical-inspired! Our website is dedicated to bringing the beauty of nature into your home, from stunning floral designs to home decor and accessories.
 

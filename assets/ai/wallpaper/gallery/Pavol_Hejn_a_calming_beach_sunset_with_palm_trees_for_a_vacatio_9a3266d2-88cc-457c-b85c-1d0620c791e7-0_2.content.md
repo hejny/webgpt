@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Beachfront Vacation Rentals: Your Perfect Getaway
+# Beach Rentals
 
 Welcome to our beachfront vacation rental website! We offer a variety of luxurious properties with stunning ocean views and access to pristine beaches. Our properties are perfect for families, couples, or solo travelers looking for a peaceful retreat.
 

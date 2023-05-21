@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Discover the Mysteries of Planet X
+# Planet X Mysteries
 
 Welcome to our website where you can explore the mysteries of Planet X, a distant planet with a unique atmosphere and unusual terrain. Our website is dedicated to providing you with the latest information about this fascinating planet, from its geography and climate to its flora and fauna.
 

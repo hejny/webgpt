@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Quantum Computing Solutions: Enhancing Your Business with Cutting-Edge Technology
+# Quantum Solutions
 
 Welcome to our website dedicated to providing you with the latest quantum computing solutions for your business needs. Our team of experts is here to help you explore the vast potential of quantum computing and how it can revolutionize the way you do business.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Robotics Revolutionizing Future
+# AI Robotics Future
 
 Welcome to our website, where we explore the exciting world of AI-powered robotics and how it is revolutionizing the future. Our wallpaper features a stylized illustration of an AI-powered robot, with sleek and modern graphics and a minimalist color scheme. This image perfectly captures the essence of what we are all about - innovation, technology, and progress.
 

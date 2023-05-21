@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# AI-Powered Search Engine: Revolutionizing the Way You Search
+# AI Search Revolution
 
 Welcome to our website, where we bring you the latest advancements in search engine technology. Our AI-powered search engine is designed to provide you with the most accurate and relevant results for your search queries.
 

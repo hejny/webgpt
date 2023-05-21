@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Virtual Assistant for Your Business
+# Business Assistant
 
 Welcome to our website dedicated to helping you streamline your business with the help of a virtual assistant. Our wallpaper features a simple graphic of a virtual assistant or chatbot, with space for messages and alerts.
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Otherworldly Adventures: Exploring the Surreal Landscape
+# Surreal Adventures
 
 Welcome to Otherworldly Adventures, a website dedicated to exploring the unknown and the surreal. Our site is designed to take you on a journey through strange and fascinating worlds, filled with alien planets, bizarre creatures, and mind-bending landscapes.
 

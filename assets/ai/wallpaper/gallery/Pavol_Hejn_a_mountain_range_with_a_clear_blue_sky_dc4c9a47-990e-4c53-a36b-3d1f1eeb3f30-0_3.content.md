@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Hiking Trails: Explore the Beauty of Mountains
+# Mountain Hiking
 
 Welcome to our website dedicated to hiking enthusiasts! Our site offers a wealth of information on the best hiking trails around the world, including tips, reviews, and recommendations for all skill levels. 
 

@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Discover the Wonders of the Night Sky with our Meteor Shower Background
+# Meteor Night Sky
 
 Welcome to our website, where we celebrate the beauty of the night sky with our stunning meteor shower background. Our wallpaper captures the magic of a meteor shower, with bright streaks of light crossing the night sky, creating a mesmerizing display that will leave you in awe.
 

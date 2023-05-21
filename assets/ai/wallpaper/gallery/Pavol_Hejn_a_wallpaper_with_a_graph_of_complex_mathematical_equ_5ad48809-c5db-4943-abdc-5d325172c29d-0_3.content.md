@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Mathematically Minimalist: A Modern Approach to Design
+# Math Minimalism
 
 Welcome to Mathematically Minimalist, a website dedicated to exploring the intersection of mathematics and design. Our goal is to showcase how mathematical concepts can be used to create stunning visuals that are both aesthetically pleasing and intellectually stimulating.
 

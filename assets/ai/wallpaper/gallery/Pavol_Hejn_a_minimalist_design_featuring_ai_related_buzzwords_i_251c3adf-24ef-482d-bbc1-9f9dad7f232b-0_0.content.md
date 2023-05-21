@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# AI Buzzwords: Inspiring Your Next Project
+# AI Inspires
 
 Welcome to our website, where we provide the latest news and insights on artificial intelligence (AI) to inspire your next project. Our minimalist design featuring AI-related buzzwords in different fonts and colors serves as a backdrop for your exploration of AI.
 

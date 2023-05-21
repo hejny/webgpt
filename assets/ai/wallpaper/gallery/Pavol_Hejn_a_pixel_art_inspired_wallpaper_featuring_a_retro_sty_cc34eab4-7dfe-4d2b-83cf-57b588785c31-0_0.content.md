@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Retro Robot Gaming: Elevate Your Gaming Experience
+# Retro Robot Gaming
 
 Welcome to our website dedicated to all things retro gaming! Our website offers a variety of resources, tips, and tricks for gamers who love the old-school feel of classic games. As part of our commitment to enhancing your gaming experience, we offer a pixel art-inspired wallpaper featuring a retro-style robot, with a limited color palette and pixelated lines.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Metallic Circuit: A Futuristic Technology Hub
+# Futuristic Hub
 
 Welcome to Metallic Circuit, a technology hub that brings you the latest news, reviews, and insights on everything tech-related. Our website is designed to be a one-stop-shop for all your tech needs, providing you with up-to-date information on the latest gadgets, software, and trends.
 

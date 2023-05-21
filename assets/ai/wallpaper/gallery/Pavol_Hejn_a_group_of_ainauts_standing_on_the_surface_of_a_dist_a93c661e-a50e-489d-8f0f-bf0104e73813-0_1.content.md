@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Unknown: A Journey to Distant Planets
+# Distant Planet Journey
 
 Welcome to our website dedicated to exploring the mysteries of the universe. Our mission is to discover new worlds, encounter different life forms, and uncover the secrets of the cosmos. As you navigate through our pages, you will find a wealth of information about space exploration, astronomy, and astrophysics.
 

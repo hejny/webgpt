@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Future of Space Travel with Ainaute Crewed Spaceships
+# Future Space Travel
 
 Welcome to our website dedicated to the exploration and advancement of space travel. Our captivating background features a futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds. This image is just a glimpse of the exciting possibilities that lie ahead in our journey beyond our planet.
 

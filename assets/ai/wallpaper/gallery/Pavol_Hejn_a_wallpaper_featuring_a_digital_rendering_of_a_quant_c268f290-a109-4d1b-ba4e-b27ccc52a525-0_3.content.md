@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Quantum Computing: Revolutionizing the Future of Technology
+# Quantum Revolution
 
 Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist design features a digital rendering of a quantum computer as the background, showcasing the cutting-edge technology that we are passionate about.
 

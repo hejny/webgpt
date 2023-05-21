@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Discover a Futuristic World with Our Digital Illustration
+# Futuristic Illustration
 
 Welcome to our website, where you can discover a whole new world with our stunning digital illustration. Our latest addition features a city on a distant planet, with towering buildings and advanced technology. 
 

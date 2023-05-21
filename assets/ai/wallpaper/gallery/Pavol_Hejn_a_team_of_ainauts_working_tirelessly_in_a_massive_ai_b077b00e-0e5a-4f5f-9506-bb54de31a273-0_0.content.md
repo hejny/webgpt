@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# The Future of AI: Innovations and Technologies
+# AI Innovations Future
 
 Welcome to our website dedicated to exploring the latest advancements in artificial intelligence. Our team of Ainautes is working tirelessly to create new and innovative technologies that will shape the future.
 

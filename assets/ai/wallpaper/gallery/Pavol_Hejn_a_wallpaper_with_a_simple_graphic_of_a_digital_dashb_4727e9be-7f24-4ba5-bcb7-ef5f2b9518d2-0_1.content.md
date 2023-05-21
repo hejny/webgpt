@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Data Management Solutions for Your Business
+# Data Solutions
 
 Welcome to our website dedicated to providing you with the latest tools and resources for managing your data effectively. Our sleek digital dashboard background sets the tone for our commitment to helping businesses make informed decisions based on accurate and up-to-date information.
 

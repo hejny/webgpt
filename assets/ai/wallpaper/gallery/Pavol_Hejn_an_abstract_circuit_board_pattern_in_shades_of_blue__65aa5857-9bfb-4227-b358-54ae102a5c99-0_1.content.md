@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Elevate Your Tech-Inspired Website with an Abstract Circuit Board Design
+# Tech Circuit Design
 
 Looking for a sleek and modern background to complement your tech-inspired website? Look no further than this abstract circuit board design. With its shades of blue and silver, this design is perfect for adding a touch of futuristic flair to your site.
 

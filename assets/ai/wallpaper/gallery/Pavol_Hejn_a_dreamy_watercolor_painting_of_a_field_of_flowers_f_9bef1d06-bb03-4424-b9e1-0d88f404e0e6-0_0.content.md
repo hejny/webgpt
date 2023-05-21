@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Creating Unforgettable Events with a Touch of Nature
+# Nature Events
 
 Welcome to our event planning website, where we specialize in creating unique and unforgettable events. Our watercolor painting of a field of flowers serves as the perfect backdrop to add a touch of nature to your special occasion.
 

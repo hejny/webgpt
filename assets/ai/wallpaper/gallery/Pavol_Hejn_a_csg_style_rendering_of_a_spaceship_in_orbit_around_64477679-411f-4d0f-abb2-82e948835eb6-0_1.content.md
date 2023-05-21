@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Space Odyssey: Explore the Final Frontier with Our Futuristic Design
+# Space Frontier Design
 
 Experience the thrill of space exploration right from your desktop with our Space Odyssey design. Featuring a csg-style rendering of a spaceship in orbit around a planet, this design is the perfect choice for those who appreciate modern and sleek aesthetics.
 

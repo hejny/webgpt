@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# FutureVision - A Futuristic Dashboard for Data Visualization
+# Futuristic Dashboard
 
 Welcome to FutureVision, a modern dashboard that helps you visualize your data in a sleek and intuitive way. Our platform is designed to provide you with a comprehensive overview of your data, allowing you to make informed decisions quickly and efficiently.
 

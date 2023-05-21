@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Nature-Inspired Backgrounds for Your Workspace
+# Nature backgrounds
 
 Welcome to our website offering a collection of nature-inspired backgrounds to enhance your workspace. Our selection includes a variety of images, from landscapes to close-ups of natural elements, such as leaves, flowers, and water droplets.
 

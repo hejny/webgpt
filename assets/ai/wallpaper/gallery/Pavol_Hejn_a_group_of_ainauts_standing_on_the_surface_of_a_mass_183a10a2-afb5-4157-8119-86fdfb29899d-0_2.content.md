@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Discover the Mysteries of the Universe with Our Space Exploration Website
+# Space Mysteries
 
 Welcome to our website dedicated to all things space! We offer a wide variety of resources and information for space enthusiasts of all levels, including news updates, educational materials, and more. As a special feature, we have included a stunning galaxy-themed background that will transport you to another world every time you visit our site.
 

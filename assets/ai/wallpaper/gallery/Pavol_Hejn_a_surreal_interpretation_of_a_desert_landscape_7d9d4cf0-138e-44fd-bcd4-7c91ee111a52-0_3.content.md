@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# "Desert Dreams" - A Surreal Interpretation of a Desert Landscape
+# Desert Dreams
 
 Welcome to "Desert Dreams," a website dedicated to inspiring your creativity with a surreal interpretation of a desert landscape. Our design captures the essence of the vast and mysterious desert, inviting you to escape into your own imagination.
 

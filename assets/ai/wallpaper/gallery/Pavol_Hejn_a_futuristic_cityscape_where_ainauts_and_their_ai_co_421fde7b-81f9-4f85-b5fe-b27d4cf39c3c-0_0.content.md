@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# The Future of Collaboration: Ainautes and AI Building Together
+# Collaborating Futures
 
 Welcome to our website dedicated to exploring the exciting world of collaboration between Ainautes and AI. Our mission is to showcase the incredible potential of this partnership, and to inspire others to embrace this cutting-edge technology.
 

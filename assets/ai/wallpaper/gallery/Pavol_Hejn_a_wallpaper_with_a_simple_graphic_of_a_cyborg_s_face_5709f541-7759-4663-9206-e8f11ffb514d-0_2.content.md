@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# The Future is Now - Embrace the Cybernetic Age with Our Futuristic Design
+# Cyber Design Now
 
 Welcome to our website, dedicated to exploring the latest technological advancements and trends. Our mission is to keep you informed and up-to-date on the latest developments in the tech world.
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# AI Buzzwords: Inspiring Your Next Big Idea
+# AI Inspiration
 
 Looking for inspiration to kickstart your next big project? Look no further than our AI buzzwords background. With its minimalist design featuring a variety of AI-related buzzwords in different fonts and colors, this background is sure to get your creative juices flowing.
 

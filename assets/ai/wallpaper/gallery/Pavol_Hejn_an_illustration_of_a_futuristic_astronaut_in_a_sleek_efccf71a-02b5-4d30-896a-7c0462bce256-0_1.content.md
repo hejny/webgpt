@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Explore the Universe with Our Futuristic Astronaut Illustration
+# Futuristic Astronauts
 
 Welcome to our website, where we offer a range of resources and inspiration for those who are passionate about space exploration and science fiction. As part of our collection, we have an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet. This stunning image can be used as a desktop background to inspire your imagination and fuel your curiosity.
 

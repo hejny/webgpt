@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# The Future of AI: Innovations and Technologies
+# AI Innovations Future
 
 Welcome to our website dedicated to the latest advancements in artificial intelligence. Our team of Ainautes is working tirelessly in a massive AI factory, creating new and innovative technologies for the future. Our wallpaper showcases the passion and dedication that goes into our work.
 

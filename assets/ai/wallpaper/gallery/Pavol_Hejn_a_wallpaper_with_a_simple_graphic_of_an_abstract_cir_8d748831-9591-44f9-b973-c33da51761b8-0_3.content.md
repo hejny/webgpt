@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# TechConnect - Connecting You to the Latest Tech News
+# TechConnect News
 
 Welcome to TechConnect, your go-to source for the latest news and updates in the world of technology. Our website is dedicated to providing you with up-to-date information on everything from new product releases to industry trends and innovations.
 

@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Discover the Wonders of the Universe with Our Telescope-Inspired Background
+# Telescope Background
 
 Welcome to our website, where we offer a unique and exciting way to bring the beauty of space into your home or office. Our telescope-inspired background is the perfect way to showcase your love for astronomy and science while adding a touch of elegance to any space.
 

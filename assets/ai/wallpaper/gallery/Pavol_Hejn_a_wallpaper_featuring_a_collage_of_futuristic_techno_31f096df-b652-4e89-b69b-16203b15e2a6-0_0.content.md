@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Future Tech Hub: Exploring the Latest in Smart Devices and Robotics
+# Smart Robotics Hub
 
 Welcome to Future Tech Hub, your go-to source for all things related to futuristic technology. Our website is dedicated to providing you with the latest news and insights on smart devices, drones, robots, and more.
 

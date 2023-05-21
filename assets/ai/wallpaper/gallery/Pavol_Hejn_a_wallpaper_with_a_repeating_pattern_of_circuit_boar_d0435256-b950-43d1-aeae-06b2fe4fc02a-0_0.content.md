@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# TechConnect - Connecting You to the Latest Tech News and Trends
+# TechConnect News
 
 ## About Us
 At TechConnect, we strive to keep you up-to-date with the latest news and trends in the world of technology. Our team of experts is dedicated to bringing you accurate and reliable information that will help you stay informed and make informed decisions.

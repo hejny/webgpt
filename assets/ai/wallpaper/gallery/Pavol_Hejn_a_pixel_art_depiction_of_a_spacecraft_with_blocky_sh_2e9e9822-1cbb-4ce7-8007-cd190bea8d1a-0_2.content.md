@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Pixel spacecraft explores cosmos
+# Pixel Cosmos Explorer
 
 Welcome to our website where you can find unique and stunning backgrounds for your desktop. Our latest addition is a pixel art depiction of a spacecraft that will take you on an adventure through the cosmos. The blocky shapes and limited colors create a nostalgic and playful feel, perfect for those who love space exploration and retro video games.
 

@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Discover Your Dream Property with Our Real Estate Website
+# Dream Property Website
 
 Welcome to our real estate website, where we offer a wide selection of properties for sale and rent. Our website is designed to provide you with all the information you need to make an informed decision about your next property investment. To enhance your browsing experience, we have added a minimalist graphic of a city skyline at dusk as the background image.
 

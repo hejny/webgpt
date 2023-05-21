@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Malware Madness: Protect Your Devices with Our Cybersecurity Tips
+# Cyber Tips
 
 Welcome to Malware Madness, your one-stop-shop for all things cybersecurity. Our website is dedicated to helping you stay safe online and protect your devices from malicious attacks. 
 

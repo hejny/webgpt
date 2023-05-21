@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# TechHub - A Collaborative Space for Tech Enthusiasts
+# TechHub Space
 
 Welcome to TechHub, a community-driven platform where tech enthusiasts come together to share knowledge and ideas. Our platform is designed to provide a collaborative space for individuals interested in the latest advancements in technology. 
 

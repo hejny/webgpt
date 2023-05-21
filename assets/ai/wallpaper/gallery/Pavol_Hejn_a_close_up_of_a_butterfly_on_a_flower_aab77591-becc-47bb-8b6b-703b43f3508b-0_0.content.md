@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Butterfly Paradise: A Colorful Escape for Your Screens
+# Colorful Butterfly Escape
 
 Welcome to Butterfly Paradise, where you can find a stunning collection of butterfly images to use as backgrounds on your phone or desktop. Our carefully curated selection of high-quality images will transport you to a world of color and beauty every time you look at your screen.
 

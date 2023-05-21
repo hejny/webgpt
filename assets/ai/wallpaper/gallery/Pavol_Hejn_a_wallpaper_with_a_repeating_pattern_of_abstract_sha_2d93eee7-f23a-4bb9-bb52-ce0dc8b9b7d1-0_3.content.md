@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Cyber-Inspired Background for Your Digital Life
+# Cyber Background
 
 Looking for a background that reflects your love of technology and all things digital? Our cyber-inspired background features an abstract pattern inspired by computer viruses and malware, set against a sleek black backdrop. 
 

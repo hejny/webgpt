@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Space Explorer: Embark on a Journey Beyond the Stars
+# Space Journey
 
 Welcome to Space Explorer, your ultimate guide to exploring the wonders of space! Our website is designed to provide you with all the information you need to know about space exploration, from the latest news and discoveries to tips on how to become an astronaut. 
 

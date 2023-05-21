@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Explore the Cosmos with Our Space-Themed Website
+# Cosmic Website
 
 Welcome to our website dedicated to all things space! Our site is designed for anyone who loves to explore the cosmos and learn about the latest developments in space exploration. As part of our commitment to providing a fully immersive experience, we offer a stunning black and white outline of an astronaut's helmet as our background. This intricate design showcases the reflection of the surrounding environment and adds a touch of cosmic inspiration to your browsing experience.
 

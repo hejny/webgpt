@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Exploring the Unknown: Stories of Space Travel
+# Space Travel Stories
 
 Welcome to our website dedicated to space travel and exploration. Our goal is to share stories, news, and insights about the mysteries of the universe. As you navigate through our pages, you'll find inspiring tales of astronauts, groundbreaking discoveries, and fascinating facts about the cosmos.
 

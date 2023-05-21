@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore New Worlds and Cultures with Our Futuristic Travel Agency
+# Futuristic Travel Agency
 
 Welcome to our website, where we offer you the opportunity to embark on unforgettable adventures and explore new worlds and cultures. Our homepage features an illustration of a colony on a distant planet, with a mix of futuristic and traditional architecture, setting the tone for your next off-world experience.
 

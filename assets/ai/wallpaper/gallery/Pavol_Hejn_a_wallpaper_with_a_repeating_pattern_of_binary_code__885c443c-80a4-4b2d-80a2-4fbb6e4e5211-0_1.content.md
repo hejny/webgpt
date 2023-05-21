@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Binary Dreams - Embrace the Beauty of Binary Code
+# Binary Beauty
 
 Welcome to Binary Dreams, a website dedicated to exploring the beauty and simplicity of binary code. Our minimalist background features a repeating pattern of binary code in a simple font and black and white color scheme.
 

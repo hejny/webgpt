@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# The Future of Sustainable Architecture
+# Sustainable Future Architecture
 
 Welcome to our website, where we explore the possibilities of sustainable architecture and how it can shape our future. Our mission is to create a world where humans and nature coexist in harmony, and we believe that sustainable architecture is the key to achieving this.
 

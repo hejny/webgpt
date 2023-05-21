@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Explore the Wonders of Space with Our Digital Illustration
+# Space Illustration
 
 Welcome to our website where you can find stunning digital illustrations that will take you on a journey through space. Our latest addition features a spaceship traveling through a colorful nebula, surrounded by stars and cosmic dust. This image captures the beauty and mystery of space, inspiring your imagination every time you open your computer.
 

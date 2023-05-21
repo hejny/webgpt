@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# The Future of Space Travel: Exploring the Possibilities
+# Space Future
 
 Welcome to our website dedicated to exploring the exciting future of space travel. Our mission is to provide you with the latest news, insights, and resources on the cutting-edge technologies that will take us beyond Earth's atmosphere and into the vast expanse of the universe.
 

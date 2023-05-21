@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# City Nights: A Futuristic Adventure
+# Futuristic Nights
 
 Welcome to City Nights, your ultimate guide to exploring the neon-lit streets of tomorrow. Our website is dedicated to helping you discover the best that this futuristic city has to offer, from the latest holographic billboards to the hottest new nightclubs.
 

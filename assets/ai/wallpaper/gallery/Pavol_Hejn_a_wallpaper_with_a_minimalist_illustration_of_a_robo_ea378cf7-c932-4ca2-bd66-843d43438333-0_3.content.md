@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# RoboTask - Boost Your Productivity with Minimalist Inspiration
+# RoboTask Boost
 
 Welcome to RoboTask, your ultimate destination for productivity inspiration. Our website is designed to help you stay focused and motivated while working on your tasks. As part of our commitment to providing an inspiring workspace, we offer a minimalist illustration of a robotic arm against a dark and moody background.
 

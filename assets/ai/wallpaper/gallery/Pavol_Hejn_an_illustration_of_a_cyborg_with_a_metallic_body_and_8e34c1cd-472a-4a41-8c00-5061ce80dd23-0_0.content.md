@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Futuristic Cyborgs: Exploring the Intersection of Technology and Humanity
+# Tech Cyborgs
 
 Welcome to our website, where we delve into the world of cyborgs and explore the fascinating relationship between man and machine. Our website is dedicated to providing a platform for discussions and insights on how technology is transforming humanity.
 

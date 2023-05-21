@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Nature's Beauty: Ladybug on a Leaf
+# Ladybug Leaf Beauty
 
 Welcome to our website dedicated to nature lovers who appreciate the beauty of the outdoors. Our ladybug on a leaf background is perfect for those who want to bring a touch of nature into their digital lives.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Elevate Your Business Website with a Striking Sunrise City Skyline
+# Sunrise Skyline
 
 Welcome to our business website! We know that first impressions matter, and that's why we've chosen a stunning minimalist graphic of a city skyline at dawn as the background for our site. This striking image will elevate your website and leave a lasting impression on your visitors.
 

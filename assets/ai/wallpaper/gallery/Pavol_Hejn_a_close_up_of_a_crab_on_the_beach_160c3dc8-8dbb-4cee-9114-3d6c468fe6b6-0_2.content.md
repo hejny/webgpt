@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Beach Vibes: Bring the Serenity of the Shore to Your Screen
+# Beach Serenity
 
 Looking for a way to add some peace and tranquility to your digital workspace? Our Beach Vibes background is the perfect solution. Featuring a close-up of a crab on the beach, this background will transport you to the seaside with just a glance.
 

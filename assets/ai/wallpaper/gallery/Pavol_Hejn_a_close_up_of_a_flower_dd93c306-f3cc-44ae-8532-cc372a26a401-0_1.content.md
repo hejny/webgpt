@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Bring Nature into Your Home with Our Stunning Floral Design
+# Floral Home Design
 
 Welcome to our website where you can find a beautiful floral design that will add a touch of nature to your home. Our close-up flower background is perfect for enhancing the beauty of any room in your house.
 

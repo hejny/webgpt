@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Create a Calming Workspace with Nature-Inspired Design
+# Nature Workspace
 
 Transform your workspace into a calming oasis with our nature-inspired design featuring a close-up of a snail on a leaf. Our design is carefully crafted to bring the beauty of nature into your workspace and help you stay focused throughout the day.
 

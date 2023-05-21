@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Discover the Wonders of Space with Our Futuristic Illustration
+# Space Illustration
 
 Welcome to our website, where we offer a stunning illustration of a futuristic space station orbiting a distant planet as a background for your desktop. With sleek lines and metallic accents, this illustration is sure to transport you to another world every time you turn on your computer.
 

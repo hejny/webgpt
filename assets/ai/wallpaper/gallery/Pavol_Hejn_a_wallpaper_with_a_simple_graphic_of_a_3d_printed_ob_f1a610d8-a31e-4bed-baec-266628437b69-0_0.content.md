@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Elevate Your Designs with Geometric Shapes and 3D Printing
+# Geometric 3D Designs
 
 Welcome to our website where you can find inspiration for your creative projects. Our site features a stunning background that combines geometric shapes and a simple graphic of a 3D-printed object, creating a visually striking effect.
 

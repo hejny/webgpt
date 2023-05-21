@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discover the Wonders of Nature - A Website for Adventure Seekers
+# Nature Adventure
 
 Welcome to our website, where we celebrate the beauty of nature and inspire you to explore the great outdoors. Our stunning background featuring a mountain range with a clear blue sky sets the tone for adventure seekers who love to travel and experience the wonders of the world.
 

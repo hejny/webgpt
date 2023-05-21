@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Elevate Your Workspace with Geometric Art
+# Geometric Workspace
 
 Welcome to our website, where we offer a unique geometric art design that will transform your workspace. Our design features a simple graphic of a 3D-printed object set against a background of complementary colored geometric shapes.
 

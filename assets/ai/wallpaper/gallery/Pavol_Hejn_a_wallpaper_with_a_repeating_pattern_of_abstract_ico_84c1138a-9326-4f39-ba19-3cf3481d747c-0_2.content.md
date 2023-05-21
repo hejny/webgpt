@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# TechConnect: Connecting Tech Professionals Worldwide
+# TechConnect Worldwide
 
 Welcome to TechConnect, the premier online community for tech professionals worldwide. Our platform connects experts from diverse fields such as software engineering, cybersecurity, artificial intelligence, and more. 
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Dreams: Spark Your Imagination with a Neon-Colored Interpretation of the Starry Sky
+# Neon Sky Dreams
 
 Welcome to Cosmic Dreams, where we provide you with a stunning neon-colored interpretation of a starry sky as your desktop background. Our website is dedicated to inspiring your imagination and creativity while providing you with a beautiful backdrop for your work.
 

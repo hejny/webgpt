@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Welcome to Futurio - A Visionary Platform for Urban Development
+# Futurio Platform
 
 ## About Us
 Futurio is a leading platform that provides innovative solutions for urban development. Our team of experts works tirelessly to create sustainable and futuristic designs that cater to the needs of modern cities. We believe in creating spaces that are not only functional but also aesthetically pleasing.

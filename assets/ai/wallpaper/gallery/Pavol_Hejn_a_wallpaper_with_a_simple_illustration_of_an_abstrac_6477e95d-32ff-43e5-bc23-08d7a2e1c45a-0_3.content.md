@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# "Connect with Our Minimalist Network Background"
+# Minimalist Network
 
 Welcome to our website, where we offer a sleek and modern background for your digital needs. Our wallpaper features a simple illustration of an abstract network in a minimal color palette of black and white. This design is perfect for those who want to add a touch of sophistication to their devices without overwhelming them.
 

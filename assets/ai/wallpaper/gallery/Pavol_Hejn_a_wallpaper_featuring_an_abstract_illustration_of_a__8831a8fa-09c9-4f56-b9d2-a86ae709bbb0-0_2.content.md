@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# DataVizPro - Powerful Data Visualization Tool
+# DataVizPro
 
 Welcome to DataVizPro, your go-to tool for creating stunning data visualizations. Our sleek and modern graphics make it easy to turn complex data into beautiful insights. 
 

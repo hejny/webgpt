@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Embrace the Future of City Living with Our Inspiring Design
+# Future City Design
 
 Welcome to our website, where we explore the exciting possibilities of modern city living. Our mission is to inspire and inform, providing you with all the latest news, trends, and ideas in urban design. And what better way to set the tone than with our stunning design featuring a single graphic of a futuristic cityscape?
 

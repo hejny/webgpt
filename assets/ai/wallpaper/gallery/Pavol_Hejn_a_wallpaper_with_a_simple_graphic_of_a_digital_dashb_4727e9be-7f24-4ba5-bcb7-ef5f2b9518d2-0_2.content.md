@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Streamline Your Data Management with Our Digital Control Panel
+# Digital Control Panel
 
 Welcome to our website, where we provide solutions for managing your data in the most efficient way possible. Our digital control panel is a perfect addition to your workspace, providing you with a simple yet effective graphic that allows you to monitor and manage your data with ease.
 

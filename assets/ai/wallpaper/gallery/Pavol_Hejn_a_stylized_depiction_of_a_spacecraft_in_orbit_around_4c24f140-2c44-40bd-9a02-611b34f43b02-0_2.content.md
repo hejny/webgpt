@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the Cosmos with Our Space Adventure-Themed Website
+# Cosmic Adventure
 
 Welcome to our space-themed website, where you can embark on a cosmic journey through our universe. Our website is designed to provide an immersive experience for space enthusiasts and anyone who wants to learn more about space exploration.
 

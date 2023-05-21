@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Journey into the Unknown: A Sci-Fi Adventure
+# Sci-Fi Journey
 
 Welcome to our website dedicated to all things sci-fi! Our background image featuring a team of Ainautes and their AI companions exploring a massive, underground cave system on a distant planet sets the tone for the adventure we want to take you on.
 

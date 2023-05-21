@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Exploring the Last Frontier: Abandoned Spaceships in the Universe
+# Abandoned Spaceships
 
 Welcome to our website dedicated to exploring the mysteries of abandoned spaceships. Our captivating background image features a group of Ainautes and their AI companions exploring a massive, abandoned spacecraft floating in the depths of space. This image sets the tone for our website, where we delve into the unknown and uncover the secrets of long-forgotten vessels.
 

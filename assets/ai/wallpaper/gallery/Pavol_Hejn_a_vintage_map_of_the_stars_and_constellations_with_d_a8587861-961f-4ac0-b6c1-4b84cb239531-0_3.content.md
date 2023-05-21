@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Discover the Mysteries of the Universe with Our Vintage Star Map Background
+# Vintage Star Map
 
 Welcome to our website where you can explore the wonders of space with our vintage star map background. Our background features a detailed illustration of the stars and constellations, along with spacecraft and celestial bodies. It's perfect for anyone who loves astronomy or wants to add a unique touch to their digital space.
 

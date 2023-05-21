@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Digital Devices Background for Your Modern Workspace
+# Digital Workspace Background
 
 Welcome to our website, where we provide you with the perfect digital devices background to enhance your modern workspace. Our sleek and modern wallpaper features a repeating pattern of smartphones, tablets, and laptops set against a gradient background.
 

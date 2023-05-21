@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# The Future of Urban Infrastructure: Ainautes and Advanced AI Technology
+# Urban Ainautes AI
 
 Welcome to our website dedicated to exploring the cutting-edge technology that is revolutionizing urban infrastructure management. Our wallpaper depicts a futuristic cityscape where Ainautes use advanced AI technology to monitor and maintain the city's infrastructure and systems. This image represents the future we are working towards, where cities are not only sustainable but also smart and efficient.
 

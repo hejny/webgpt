@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# RoboTech Solutions: Enhancing Your Manufacturing Process
+# RoboTech Solutions
 
 Welcome to RoboTech Solutions, where we specialize in providing cutting-edge robotic technology to enhance your manufacturing process. Our team of experts is dedicated to helping you streamline your production line and increase efficiency.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discover the Wonders of Space: Your Ultimate Destination for Astronomy and Space Exploration
+# Space Discovery
 
 Welcome to our website, dedicated to all space enthusiasts who want to learn more about the mysteries of the cosmos and admire its beauty. Our mission is to provide our visitors with the latest news, insights, and discoveries from the world of astronomy, astrophysics, and space exploration.
 

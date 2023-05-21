@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Discover the Serenity of the Night Sky Desert
+# Night Sky Desert
 
 Welcome to our website where you can immerse yourself in the serenity of the night sky desert. Our stunning wallpaper captures the beauty of the desert landscape at night, with the stars visible in the sky above.
 

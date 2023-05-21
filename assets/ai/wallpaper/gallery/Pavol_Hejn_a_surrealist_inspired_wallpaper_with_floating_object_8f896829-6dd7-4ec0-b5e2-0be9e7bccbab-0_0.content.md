@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# The Workshop: A Creative Hub for Makers and Innovators
+# Creative Workshop Hub
 
 Welcome to The Workshop, a community of makers and innovators who come together to share their knowledge and collaborate on projects. Our space is designed to inspire creativity and spark imagination, and our surrealist-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors, sets the tone for a space that's both playful and thought-provoking.
 

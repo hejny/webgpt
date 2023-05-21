@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Desert Dreams: Transform Your Space with the Beauty of Nature
+# Desert Dreams
 
 Welcome to our website, where you can find inspiration for transforming your living space with the stunning beauty of nature. Our high-quality Desert Dreams background features a breathtaking photograph of a desert landscape at sunset, showcasing warm colors and long shadows that will transport you to another world.
 

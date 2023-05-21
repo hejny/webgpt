@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Wonders of Space with Our Galactic Collection
+# Galactic Wonders
 
 Transform your device into a portal to the cosmos with our stunning space-themed collection! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background. 
 

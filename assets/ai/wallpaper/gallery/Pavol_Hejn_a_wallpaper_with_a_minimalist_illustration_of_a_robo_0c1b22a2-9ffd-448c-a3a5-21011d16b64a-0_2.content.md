@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# RoboDesk - Minimalist Inspiration for Your Workspace
+# RoboDesk Inspiration
 
 Welcome to RoboDesk, a website dedicated to providing you with minimalist inspiration for your workspace. Our latest addition is a stunning illustration of a robotic arm against a dark and moody background.
 

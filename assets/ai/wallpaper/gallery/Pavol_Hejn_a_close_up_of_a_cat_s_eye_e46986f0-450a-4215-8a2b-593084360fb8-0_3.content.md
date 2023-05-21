@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# The Feline World - Exploring the Mysterious and Fascinating Lives of Cats
+# Feline Lives
 
 Welcome to The Feline World, your ultimate guide to everything feline! Our website is dedicated to providing cat lovers with a wealth of information about these fascinating creatures. From their behavior and habits to their history and evolution, we cover it all.
 

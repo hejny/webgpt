@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Future Cityscapes: Exploring the Cutting Edge of Urban Life
+# Future Cityscapes
 
 Welcome to Future Cityscapes, a website dedicated to exploring the latest trends and innovations in urban design and development. Our site features articles, videos, and podcasts on topics ranging from sustainable architecture to smart infrastructure.
 

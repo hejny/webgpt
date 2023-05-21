@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Journey Through the Cosmos: Explore the Universe with Us
+# Cosmic Journey
 
 Welcome to our website dedicated to exploring the vast universe and all its wonders. Our mission is to inspire and educate those who seek to learn more about the cosmos, and to provide a platform for like-minded individuals to connect and share their experiences.
 

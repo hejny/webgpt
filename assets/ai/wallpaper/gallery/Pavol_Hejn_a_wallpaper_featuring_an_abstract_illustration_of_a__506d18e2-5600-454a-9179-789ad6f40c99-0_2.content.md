@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Embrace the Future with Our Tech Startup Website
+# Future Startup Website
 
 Welcome to our tech startup website, where we provide you with the latest trends and innovations in the fast-paced world of technology. Our website is designed to help you stay ahead of the curve and succeed in your business.
 

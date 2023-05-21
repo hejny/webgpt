@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Journey to the Unknown: A Sci-Fi Adventure Website
+# Sci-Fi Journey
 
 Welcome to our website dedicated to all things science fiction! Our homepage features a stunning wallpaper of a team of Ainautes and their AI companions exploring a massive, ancient space station orbiting a distant planet. This is just a glimpse of the exciting content you'll find here.
 

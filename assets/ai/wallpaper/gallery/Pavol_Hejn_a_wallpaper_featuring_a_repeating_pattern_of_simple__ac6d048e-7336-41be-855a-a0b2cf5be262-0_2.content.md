@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# MathLab - A Minimalist Workspace for Math Enthusiasts
+# MathLab
 
 Welcome to MathLab, a minimalist workspace designed for math enthusiasts who value simplicity and functionality. Our workspace is designed to help you focus on what really matters - solving complex equations and exploring mathematical concepts.
 

@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Elevate Your Website's Design with Geometric Patterns
+# Geometric Design
 
 Welcome to our website! We offer a collection of stunning geometric patterns that can elevate the look of any modern website. Our patterns are inspired by the latest web design trends and color schemes, making them perfect for designers who want to create a visually appealing website.
 

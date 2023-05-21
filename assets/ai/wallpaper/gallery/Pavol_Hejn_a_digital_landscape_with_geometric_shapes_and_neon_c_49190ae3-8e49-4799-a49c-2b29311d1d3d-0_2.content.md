@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Elevate Your Workspace with Geometric Dreams
+# Geometric Workspace
 
 Welcome to Geometric Dreams, where we help you elevate your workspace and unleash your creativity. Our digital landscape background features geometric shapes and neon colors that will transport you to a world of innovation and inspiration.
 

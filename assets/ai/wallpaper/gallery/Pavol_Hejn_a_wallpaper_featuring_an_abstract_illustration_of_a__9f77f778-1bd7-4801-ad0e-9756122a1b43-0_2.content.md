@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Future City Background for Your Creative Projects
+# Future City Backgrounds
 
 Welcome to our website, where you can find a stunning wallpaper featuring an abstract illustration of a futuristic cityscape. This background is perfect for your creative projects, whether it's for a website, presentation, or social media post.
 

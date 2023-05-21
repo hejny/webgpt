@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Explore the Wonders of the Arctic with Arctic Explorer
+# Arctic Explorer
 
 Welcome to Arctic Explorer, your ultimate guide to discovering the beauty and wonder of the Arctic region. Our website is dedicated to providing you with all the information you need to plan your next adventure to this incredible part of the world.
 

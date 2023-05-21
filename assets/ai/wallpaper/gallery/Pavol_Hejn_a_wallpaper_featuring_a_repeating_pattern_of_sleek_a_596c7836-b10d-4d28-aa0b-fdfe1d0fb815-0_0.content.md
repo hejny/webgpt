@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Digital Workspace Optimization
+# Digital Optimization
 
 Welcome to our website dedicated to helping you optimize your digital workspace. Our sleek and modern background featuring a repeating pattern of digital devices, such as smartphones, tablets, and laptops, is the perfect addition to enhance your workspace environment.
 

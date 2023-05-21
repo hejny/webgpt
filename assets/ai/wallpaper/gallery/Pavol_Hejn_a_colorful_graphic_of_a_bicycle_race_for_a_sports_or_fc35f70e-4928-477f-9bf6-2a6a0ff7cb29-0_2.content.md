@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Achieve Your Fitness Goals with Our Sports and Fitness Website
+# Fitness website
 
 Welcome to our sports and fitness website, where we provide you with the best resources to achieve your health goals. Our website is designed to motivate and inspire you to push yourself to new limits. To help create an atmosphere of motivation, we have added a colorful graphic of a bicycle race as our background.
 

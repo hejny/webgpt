@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Robots in the Workplace: How Automation is Changing Industries
+# Robots at Work
 
 Welcome to our website dedicated to exploring the impact of robots in the workplace. Our simple black and white graphic of a robot's head against a solid colored background serves as a reminder of the increasing presence of automation in many industries. 
 

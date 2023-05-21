@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Launch Your Business to New Heights with Our Rocket-Themed Office Decor
+# Rocket Office Decor
 
 Looking for a way to inspire your team and create a productive work environment? Look no further than our rocket-themed office decor! Featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background, this decor will remind your team that the sky's the limit.
 

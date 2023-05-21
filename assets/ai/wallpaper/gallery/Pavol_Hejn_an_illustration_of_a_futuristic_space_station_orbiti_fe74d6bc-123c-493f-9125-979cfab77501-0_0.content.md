@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Futuristic Space Station: A Bold Vision of the Future
+# Future Station
 
 Welcome to Futuristic Space Station, a website dedicated to exploring the possibilities of space travel and colonization. Our mission is to inspire and inform our readers about the latest developments in space technology and the potential for human expansion beyond Earth.
 

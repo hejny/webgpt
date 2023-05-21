@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# TechConnect: Connecting You to the Latest in Technology
+# TechConnect
 
 Welcome to TechConnect, your go-to source for all things tech-related. Our website is designed to keep you up-to-date on the latest trends and innovations in the world of technology.
 

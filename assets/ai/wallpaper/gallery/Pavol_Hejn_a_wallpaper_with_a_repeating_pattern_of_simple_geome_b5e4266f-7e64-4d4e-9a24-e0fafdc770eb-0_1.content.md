@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Elevate Your Space with Modern Minimalist Design
+# Minimalist Space Design
 
 Our modern minimalist design features a repeating pattern of simple geometric shapes in a monochromatic color palette of grey or blue. This elegant and understated design can be used as a background for your website, social media profile, or any digital platform to create a sleek and sophisticated look.
 

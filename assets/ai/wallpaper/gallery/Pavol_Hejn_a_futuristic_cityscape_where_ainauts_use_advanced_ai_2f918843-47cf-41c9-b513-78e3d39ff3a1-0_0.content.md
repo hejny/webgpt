@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# The Future of Smart Cities: Using AI to Create Efficient and Sustainable Urban Environments
+# AI Smart Cities
 
 Welcome to our website dedicated to exploring the exciting future of smart cities. Our stunning background showcases a futuristic cityscape where Ainautes use advanced AI technology to monitor and maintain the city's infrastructure and systems.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Dreamy Watercolor Event Planning
+# Watercolor Events
 
 Welcome to our event planning website featuring a beautiful dreamy watercolor background of a field of flowers. Our website is designed to help you plan your dream event with ease and style.
 

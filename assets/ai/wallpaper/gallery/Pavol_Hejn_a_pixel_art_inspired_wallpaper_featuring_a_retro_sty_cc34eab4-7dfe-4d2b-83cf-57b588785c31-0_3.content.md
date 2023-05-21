@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Retro Robot Background for Your Creative Projects
+# Retro Robot Background
 
 Welcome to our website, where you can find a perfect background for your creative projects. Our pixel art-inspired wallpaper featuring a retro-style robot is an excellent choice for those who love the vintage vibe and limited color palette.
 

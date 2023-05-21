@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Explore the Universe with Our Space Adventure Theme
+# Space Adventure Theme
 
 Transform your desktop into a breathtaking space adventure with our stunning background featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background. This high-quality background is perfect for those who love space exploration and want to add some excitement to their computer screen.
 

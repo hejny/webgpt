@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# DarkNet - A Cybersecurity Platform for the Modern Age
+# DarkNet Platform
 
 Welcome to DarkNet, a platform designed to help businesses and individuals protect their digital assets in today's ever-evolving cybersecurity landscape. Our platform provides cutting-edge tools and resources to help you stay ahead of the curve and keep your information safe from cyber threats.
 

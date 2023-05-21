@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Arctic Adventure: Explore the Wonders of the North
+# Arctic Wonders
 
 Welcome to Arctic Adventure, your ultimate guide to exploring the beauty and wonder of the Arctic. Our website is dedicated to providing you with all the information you need to plan your next adventure to this breathtaking region. 
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Elevate Your Digital Workspace with a Modern and Sleek Background
+# Sleek Workspace
 
 Welcome to our website dedicated to helping you optimize your digital workspace! As part of our commitment to providing a comprehensive experience, we have created a modern and sleek background featuring a repeating pattern of digital devices such as smartphones, tablets, and laptops.
 

@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Embrace the Future with Our Tech-Oriented Website
+# Tech Embrace
 
 Welcome to our tech-oriented website, where we provide you with the latest information on technology trends and advancements. To complement our cutting-edge content, we have added a visually stunning wallpaper with a single graphic of a futuristic cityscape in solid colors such as orange or green.
 

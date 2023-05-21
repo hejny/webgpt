@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Space Adventure: Explore the Unknown
+# Space Adventure
 
 Welcome to Space Adventure, your ultimate guide to exploring the unknown. Our website is dedicated to helping you discover new worlds and navigate the challenges of space travel. 
 

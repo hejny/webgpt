@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Exploring the Unknown: A Website for Adventurers
+# Adventurer's Site
 
 Welcome to our website dedicated to all the adventurers out there! Our mission is to provide you with inspiration, resources, and tools to embark on your next journey. And what better way to set the mood than with an illustration that captures the spirit of exploration?
 

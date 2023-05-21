@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Beautiful Butterfly Background for Your Home Screen
+# Butterfly Screen
 
 Welcome to our website where you can find the perfect wallpaper for your phone or desktop. Our latest addition is a stunning close-up of a butterfly on a flower that will add a touch of nature to your device.
 

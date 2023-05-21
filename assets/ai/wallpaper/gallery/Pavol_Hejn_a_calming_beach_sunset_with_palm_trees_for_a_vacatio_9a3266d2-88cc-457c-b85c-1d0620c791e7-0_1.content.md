@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Tranquil Getaway: Your Dream Vacation Rental
+# Dream Rental
 
 Welcome to Tranquil Getaway, your go-to vacation rental for a serene and relaxing escape from the hustle and bustle of everyday life. Our stunning beachfront property boasts breathtaking views of the ocean and a calming beach sunset with palm trees that will leave you feeling refreshed and rejuvenated.
 

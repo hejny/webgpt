@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Journey Through the Universe: Explore Space with Our Collection of Digital Art
+# Universe Art Journey
 
 Welcome to our website, where you can embark on a journey through the universe without leaving your screen. Our collection of digital art features stunning depictions of galaxies, nebulas, planets, and more. Each piece is crafted with care to provide an immersive experience that sparks curiosity and inspires wonder.
 

@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Elevate Your Digital Workspace with Modern Devices
+# Modern Workspace Devices
 
 Welcome to our website, dedicated to helping modern professionals create a productive and inspiring digital workspace. Our sleek and modern background features a repeating pattern of popular digital devices such as smartphones, tablets, and laptops set against a gradient backdrop.
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Exploring the Future of Cybernetics and Artificial Intelligence
+# Cyber AI Future
 
 Welcome to our website dedicated to exploring the latest advancements in technology, artificial intelligence, and cybernetics. Our website is a platform for enthusiasts and professionals alike to learn, share, and collaborate on innovative ideas that will shape the future.
 

@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# Elevate Your Home Decor with Modern Geometric Design
+# Geometric Decor
 
 Welcome to our website where we offer a range of home decor products to help you elevate your living space. Our latest addition features a modern geometric design that is perfect for those who love clean and minimalistic styles.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Future Cities: Exploring the Possibilities
+# Future Cities
 
 Welcome to our website dedicated to exploring the future of cities and urban living. Our mission is to provide you with insights into the latest innovations, trends, and technologies that are shaping the future of urban environments.
 

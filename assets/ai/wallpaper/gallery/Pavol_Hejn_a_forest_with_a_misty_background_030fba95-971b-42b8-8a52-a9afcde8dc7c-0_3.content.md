@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Create a Serene Atmosphere with Our Forest-Themed Home Decor
+# Forest Decor
 
 Welcome to our website, where we offer a range of forest-themed home decor items that will bring the beauty of nature into your living space. Our collection includes everything from wall art to bedding, all designed to create a calming and peaceful atmosphere in your home.
 

@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Exploring the Future of Technology
+# Future Tech
 
 Welcome to our website dedicated to exploring the latest advancements in futuristic technology. Our background features an illustration of a cyborg with a metallic body and glowing eyes, symbolizing the merging of man and machine.
 

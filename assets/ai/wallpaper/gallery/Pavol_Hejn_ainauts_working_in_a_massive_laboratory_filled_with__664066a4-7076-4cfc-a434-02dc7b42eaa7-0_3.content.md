@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# The Future of Science: Exploring Cutting-Edge Research at Ainautes Labs
+# Ainautes Research Future
 
 Welcome to Ainautes Labs, where we are pushing the boundaries of scientific research and innovation. Our team of experts works tirelessly in a massive laboratory filled with glowing equipment and holographic displays, conducting cutting-edge research that is changing the world.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Virtual Assistant for Your Business
+# Business Assistant
 
 Welcome to our website, where we offer a comprehensive virtual assistant service for your business needs. Our virtual assistant will help you manage your daily tasks, schedule appointments, and provide customer support. 
 

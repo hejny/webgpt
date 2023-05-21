@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# "Productivity Boost" - A Minimalist Tool for Creative Minds
+# Creative Boost
 
 Welcome to Productivity Boost, a website designed to help you enhance your productivity with a minimalist tool featuring a robot hand holding a stylus or pen. This tool is not just a pretty background; it's a visual cue that can inspire you to take notes and sketch out your ideas, whether you're working on a project, studying for an exam, or simply jotting down your thoughts.
 

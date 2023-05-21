@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Space Odyssey - A Futuristic Adventure
+# Space Adventure
 
 Welcome to Space Odyssey, the ultimate destination for all space enthusiasts! Our website is dedicated to providing you with the latest news and updates on space exploration, technology, and science.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Explore the Mysteries of a Distant Planet with Our Glacial Landscape
+# Glacial Planet Exploration
 
 Transform your desktop or mobile screen into a breathtaking glacial landscape on a distant planet. Immerse yourself in the beauty of blue and white glaciers contrasting against the dark sky, and discover the mysteries of a world beyond our own.
 

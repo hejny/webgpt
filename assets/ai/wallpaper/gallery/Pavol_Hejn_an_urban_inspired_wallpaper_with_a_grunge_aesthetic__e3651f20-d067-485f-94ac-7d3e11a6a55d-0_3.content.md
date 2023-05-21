@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Futuristic City Nights: An Urban-Inspired Background
+# Futuristic Nights
 
 Welcome to Futuristic City Nights, where we provide you with an urban-inspired background that will transform your device into a futuristic cityscape. Our grunge aesthetic wallpaper features a neon-lit cityscape with holographic billboards that will take you on a journey through time and space.
 

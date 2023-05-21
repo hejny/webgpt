@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Explore the Wonders of Space with Our Cosmic Collection
+# Cosmic Space Collection
 
 Welcome to our website, where we offer a unique collection of cosmic-themed wallpapers that will take your breath away. Our collection features stunning photographs of galaxies, nebulas, and other celestial bodies that showcase the beauty of the universe.
 

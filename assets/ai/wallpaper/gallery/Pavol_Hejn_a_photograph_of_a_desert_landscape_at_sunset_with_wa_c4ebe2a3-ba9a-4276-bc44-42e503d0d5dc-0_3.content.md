@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Beauty of Desert Landscapes
+# Desert Beauty
 
 Welcome to our website dedicated to showcasing the stunning beauty of desert landscapes from around the world. Our collection of high-quality photographs captures the essence of these unique environments, transporting you to a world of natural wonder.
 

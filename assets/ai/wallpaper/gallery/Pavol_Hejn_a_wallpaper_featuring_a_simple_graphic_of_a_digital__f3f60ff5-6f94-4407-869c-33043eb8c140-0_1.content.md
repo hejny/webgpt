@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# "Time Tracker" - A Productivity Tool to Help You Stay Focused
+# Time Tracker
 
 Welcome to Time Tracker, your go-to productivity tool that helps you stay on top of your tasks and goals. Our simple yet effective interface allows you to set alarms and countdowns for all your important deadlines.
 

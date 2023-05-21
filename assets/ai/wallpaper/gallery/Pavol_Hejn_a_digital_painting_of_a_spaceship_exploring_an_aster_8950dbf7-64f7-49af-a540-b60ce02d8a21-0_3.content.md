@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Explore the Final Frontier: A Space Adventure Website
+# Space Adventure Website
 
 Welcome to our website dedicated to space exploration and adventure! Our website is designed to inspire and inform those who are passionate about space travel, astronomy, and science fiction. To enhance your browsing experience, we've included a stunning digital painting of a spaceship exploring an asteroid field as our background.
 

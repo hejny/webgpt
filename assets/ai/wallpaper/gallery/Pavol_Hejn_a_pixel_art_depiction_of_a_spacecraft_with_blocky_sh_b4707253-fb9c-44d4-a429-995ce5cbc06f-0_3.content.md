@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore the Universe with Our Pixel Art Space Adventure
+# Pixel Space Adventure
 
 Welcome to our website dedicated to space exploration and adventure. Our pixel art background featuring a spacecraft adds a playful and nostalgic touch to your browsing experience.
 

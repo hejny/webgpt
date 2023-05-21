@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Ainautes: Exploring New Worlds.
+# New World Ainautes
 
 Welcome to our website dedicated to the exploration of new worlds with the help of Ainautes - advanced AI-powered robots designed to withstand harsh environments and assist human explorers in their quest for knowledge.
 

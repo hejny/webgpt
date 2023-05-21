@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# "Circuitry Dreams" - A Futuristic Tech Blog
+# Circuit Dreams
 
 Welcome to Circuitry Dreams, your go-to source for all things futuristic technology. Our website is dedicated to exploring the latest advancements in science and tech, from AI to robotics to space exploration.
 

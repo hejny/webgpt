@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Explore the Wonders of the Universe with Our Space-Themed Website
+# Space Website
 
 Welcome to our space-themed website, where you can discover the wonders of the universe through captivating content and stunning visuals. Our website is designed to provide an immersive experience that takes you on a journey through the cosmos.
 

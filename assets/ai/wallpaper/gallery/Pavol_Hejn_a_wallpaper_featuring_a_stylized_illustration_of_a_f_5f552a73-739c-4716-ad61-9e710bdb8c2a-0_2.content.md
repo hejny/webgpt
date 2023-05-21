@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Boost Your Productivity with a Futuristic Workspace
+# Futuristic Workspace
 
 Welcome to our website, where we provide resources and tools for productivity enthusiasts. Our mission is to help you achieve your goals by providing a minimalist and modern workspace that inspires creativity and focus. As part of our commitment to this mission, we offer a free download of a stylized illustration of a futuristic workspace set against a gradient background.
 

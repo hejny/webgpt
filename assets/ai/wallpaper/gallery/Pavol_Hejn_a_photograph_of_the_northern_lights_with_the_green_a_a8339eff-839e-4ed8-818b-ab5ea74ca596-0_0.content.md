@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Experience the Magic of the Northern Lights
+# Northern Lights Magic
 
 Welcome to our website, where you can immerse yourself in the beauty and wonder of the Northern Lights. Our stunning wallpaper captures the mesmerizing green and purple hues as they swirl in the night sky, creating a truly magical atmosphere for your desktop or mobile device.
 

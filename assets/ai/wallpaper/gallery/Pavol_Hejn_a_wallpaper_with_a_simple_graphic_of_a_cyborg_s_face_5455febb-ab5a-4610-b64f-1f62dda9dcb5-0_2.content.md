@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Embrace the Future with Cybernetic Aesthetics
+# Cyber Aesthetics
 
 Transform your desktop with our cybernetic wallpaper featuring a simple graphic of a cyborg's face against a background of digital noise and static. Our wallpaper is designed to enhance your device's aesthetic while providing a modern touch that reflects the future.
 

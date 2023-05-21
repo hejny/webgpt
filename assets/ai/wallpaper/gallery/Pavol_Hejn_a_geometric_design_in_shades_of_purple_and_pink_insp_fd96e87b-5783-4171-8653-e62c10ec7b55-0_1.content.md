@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Elevate Your Tech Workspace with Quantum-Inspired Design
+# Quantum Workspace
 
 Welcome to our website, where we offer a unique selection of designs to elevate your tech workspace. Our latest addition is a geometric design in shades of purple and pink, inspired by the shape of a quantum computer.
 

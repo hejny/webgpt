@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Stormy Nights: A Moody Destination for Creative Inspiration
+# Moody Nights
 
 Welcome to Stormy Nights, a destination for those seeking creative inspiration and a moody atmosphere. Our featured desktop background is an interpretation of a thunderstorm that will add depth and character to your computer screen.
 

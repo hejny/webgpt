@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# RoboArm Industries: Revolutionizing the Future of Manufacturing
+# RoboArm Revolution
 
 Welcome to RoboArm Industries, where we are dedicated to creating cutting-edge technology that will change the face of manufacturing. Our wallpaper, featuring a simple graphic of a robot arm against a gradient background of two complementary colors, represents our commitment to innovation and progress.
 

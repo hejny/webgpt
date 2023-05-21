@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Creating Dreamy Events with Watercolor Florals
+# Watercolor Events
 
 Welcome to our event planning website, where we specialize in creating unforgettable experiences for your special occasions. Our team of experts is dedicated to bringing your vision to life, and our watercolor floral background sets the perfect tone for any event.
 

@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Discovering the Universe: Exploring the Wonders of Space
+# Universe Exploration
 
 Welcome to our website dedicated to exploring the mysteries and wonders of space and the universe beyond. Our stunning background image features an astronaut standing on the surface of the moon with Earth in the background, reminding us of humanity's incredible achievements in space exploration.
 

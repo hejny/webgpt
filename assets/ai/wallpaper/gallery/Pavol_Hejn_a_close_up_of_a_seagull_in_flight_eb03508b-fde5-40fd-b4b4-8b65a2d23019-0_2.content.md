@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore the World's Coastlines with Coastal Adventures
+# Coastal Adventures
 
 Welcome to Coastal Adventures, your ultimate guide to exploring the beautiful coastlines of the world! Our website is dedicated to providing you with all the information you need to plan your next coastal adventure. And what better way to get inspired than by using our stunning "A close-up of a seagull in flight" background as your wallpaper?
 

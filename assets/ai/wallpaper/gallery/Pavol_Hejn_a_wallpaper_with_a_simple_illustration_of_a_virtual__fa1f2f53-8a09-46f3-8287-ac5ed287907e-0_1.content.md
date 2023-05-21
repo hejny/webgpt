@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Virtual Reality Hub: Explore the Future of Immersive Technology
+# VR Hub
 
 Welcome to Virtual Reality Hub, your go-to source for all things VR. Our website is dedicated to providing you with the latest news, reviews, and resources on virtual reality technology.
 

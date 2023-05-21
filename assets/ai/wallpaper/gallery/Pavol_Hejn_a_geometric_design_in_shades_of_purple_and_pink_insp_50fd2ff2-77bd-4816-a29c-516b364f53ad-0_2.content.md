@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Quantum Computing Solutions - Harnessing the Power of Quantum Computing
+# Quantum Solutions
 
 Welcome to Quantum Computing Solutions, where we provide cutting-edge solutions for businesses and individuals looking to harness the power of quantum computing. Our website features a stunning geometric design in shades of purple and pink, which is inspired by the shape of a quantum computer.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Snowy Mountain Northern Lights
+# Snow Lights
 
 Welcome to our website, where you can download a stunning background featuring the Aurora Borealis over snow-covered mountains. Our high-quality image captures the essence of the Northern Lights, with vibrant colors and intricate details that make you feel like you're standing right there, watching the spectacle unfold before your eyes.
 

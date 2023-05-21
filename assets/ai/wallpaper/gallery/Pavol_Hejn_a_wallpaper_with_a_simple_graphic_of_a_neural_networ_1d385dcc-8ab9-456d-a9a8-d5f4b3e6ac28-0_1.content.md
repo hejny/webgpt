@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# "Neural Pathways" - Exploring the Wonders of the Brain
+# Brain Pathways
 
 Welcome to Neural Pathways, a website dedicated to exploring the fascinating world of neuroscience and the human brain. Our mission is to provide accessible and engaging content that helps people understand the inner workings of the mind.
 

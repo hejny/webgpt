@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Space Odyssey: Explore the Unknown
+# Space Exploration
 
 Welcome to Space Odyssey, your ultimate guide to exploring the depths of space. Our website is dedicated to providing you with the latest news and information about space exploration, as well as tips and tricks for aspiring astronauts.
 

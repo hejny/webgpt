@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Inspire Your Workspace with a Futuristic Neural Network Design
+# Neural Workspace Inspiration
 
 Welcome to our website, where we offer a unique and inspiring design that will transform your workspace into a futuristic environment. Our abstract illustration features a neural network with intricate lines and a dark and technological color palette.
 

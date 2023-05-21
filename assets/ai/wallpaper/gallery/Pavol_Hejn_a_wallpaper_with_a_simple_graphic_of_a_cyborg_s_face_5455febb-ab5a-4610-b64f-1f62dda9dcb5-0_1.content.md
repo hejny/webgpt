@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Protect Your Digital Life with Cybersecurity Tips and Resources
+# Cyber Tips
 
 Welcome to our website dedicated to helping you stay safe online. We provide the latest cybersecurity news, tips, and resources to help you protect your digital life. As a bonus, we offer a free desktop background that serves as a visual reminder of the importance of staying secure.
 

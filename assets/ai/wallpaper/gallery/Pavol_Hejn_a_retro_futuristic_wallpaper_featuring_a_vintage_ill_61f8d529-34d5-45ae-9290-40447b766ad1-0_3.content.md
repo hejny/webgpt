@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Embrace the Future with Our Retro-Futuristic Robot Design
+# Retro Robot Future
 
 Welcome to our website, where we offer a unique and inspiring retro-futuristic robot design that will bring your creative space to life. Our design features a vintage illustration of a robot set against a neon-colored background, creating a striking visual contrast that is sure to spark your imagination.
 

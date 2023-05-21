@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Data Visualization for Modern Businesses
+# Modern Data Viz
 
 Welcome to our website dedicated to helping modern businesses make sense of their data. Our minimalist and modern design is inspired by the same principles that guide our approach to data visualization.
 

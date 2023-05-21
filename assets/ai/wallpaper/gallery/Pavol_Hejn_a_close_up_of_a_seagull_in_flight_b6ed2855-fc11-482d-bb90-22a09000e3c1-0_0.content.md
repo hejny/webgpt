@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Coastal Vibes: Embrace the Beauty of the Coast
+# Coastal Beauty
 
 Welcome to Coastal Vibes, your ultimate destination for all things beachy and beautiful. Our website is dedicated to helping you embrace the coastal lifestyle, from home decor to fashion and beyond. And what better way to set the tone for your new way of living than with our stunning "A close-up of a seagull in flight" background?
 

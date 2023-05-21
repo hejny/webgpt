@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Exploring the Frontiers of Science: Ainautes and their AI Companions
+# AI Ainautes
 
 Welcome to our website dedicated to exploring the frontiers of science with the help of Ainautes and their AI companions. Our mission is to push the boundaries of human knowledge through cutting-edge research, experimentation, and discovery.
 

@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Discover the Wonders of the Universe with Cosmic Dreams
+# Cosmic Dreams
 
 Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams! Our captivating photograph of a starry night sky, with the Milky Way galaxy visible overhead, will transport you to the depths of space.
 

@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Elevate Your Workspace with a Futuristic Design
+# Futuristic Workspace
 
 Transform your workspace into a modern and sophisticated environment with our stunning wallpaper. Featuring a stylized illustration of a futuristic workspace set against a gradient background, our design is the perfect addition to any room.
 

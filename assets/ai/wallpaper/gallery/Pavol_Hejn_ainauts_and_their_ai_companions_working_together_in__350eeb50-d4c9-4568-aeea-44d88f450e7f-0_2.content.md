@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Collaborative Workspaces in Space: Humans and AI Working Together
+# Space Workspaces
 
 Welcome to our website, where we explore the future of collaborative workspaces in space. Our background image depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
 

@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Explore the Universe with Space Odyssey
+# Space Odyssey
 
 Welcome to Space Odyssey, your ultimate destination for all things space exploration. Our website is dedicated to bringing you the latest news, insights, and stories about space travel, astronomy, and beyond. As a symbol of our passion for space, we offer a stunning wallpaper featuring a team of Ainautes piloting a spacecraft through an asteroid field.
 

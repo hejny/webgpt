@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Elevate Your Workspace with AI Buzzwords
+# AI Workspace
 
 Welcome to our website, where we offer a unique and eye-catching way to enhance the look of your workspace. Our minimalist design features a repeating pattern of AI-related buzzwords, presented in a sleek font and color scheme.
 

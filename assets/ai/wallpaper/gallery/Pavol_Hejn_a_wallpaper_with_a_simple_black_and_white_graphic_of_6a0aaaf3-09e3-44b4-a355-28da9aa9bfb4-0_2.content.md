@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# FutureTech: Explore the World of Advanced Technology
+# Advanced FutureTech
 
 Welcome to FutureTech, your gateway to the world of advanced technology. Our website is dedicated to providing you with the latest news, insights, and resources on all things tech-related.
 

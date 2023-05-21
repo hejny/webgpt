@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# FutureTech: Exploring the Latest Innovations
+# FutureTech Innovations
 
 Welcome to FutureTech, your go-to source for the latest technological advancements and innovations. Our website is designed to keep you up-to-date with the latest trends in technology, and provide you with valuable insights into how these advancements are shaping our future.
 

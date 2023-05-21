@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# The Future of AI: Innovations and Breakthroughs
+# AI Breakthroughs
 
 Welcome to our website dedicated to exploring the latest advancements in artificial intelligence (AI) technology. Our team of Ainautes is passionate about creating new and innovative technologies that will shape the future.
 

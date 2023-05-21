@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Human-AI Collaboration in Space
+# AI Space Collaboration
 
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence (AI) and its role in space exploration. Our stunning wallpaper depicts Ainautes and their AI companions working together in a massive, zero-gravity space station, showcasing the incredible potential of AI-human collaboration.
 

@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# Explore the Fascinating World of Ants with Our Latest Nature-Themed Background
+# Ants Background
 
 Welcome to our website, where we celebrate the wonders of nature through stunning backgrounds. Our latest addition is an ant-themed background that captures the intricate details of these tiny creatures on a leaf.
 

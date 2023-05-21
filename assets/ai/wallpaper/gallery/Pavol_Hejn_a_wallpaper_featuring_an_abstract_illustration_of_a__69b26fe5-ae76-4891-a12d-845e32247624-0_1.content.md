@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Cybersecurity Insights: Protecting Your Digital World
+# Cyber Protect
 
 Welcome to our platform dedicated to providing you with the latest insights and information about cybersecurity. Our team of experts is committed to helping you protect your digital world from cyber threats, and we do this by providing you with practical tips, analysis, and news.
 

@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Virtual Assistant for Your Business
+# Virtual Assistant
 
 Welcome to our website where we offer the best virtual assistant services for your business needs. Our wallpaper features a simple graphic of a virtual assistant or chatbot with space for messages and alerts, which represents the core of our services.
 

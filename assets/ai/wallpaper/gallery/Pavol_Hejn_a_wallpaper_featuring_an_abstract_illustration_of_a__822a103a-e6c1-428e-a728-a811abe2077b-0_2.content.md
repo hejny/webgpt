@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Future City - A Bold Vision for Tomorrow
+# Bold Future City
 
 Welcome to Future City, where we explore the possibilities of tomorrow's urban landscapes. Our website is dedicated to showcasing the latest innovations in architecture, technology, and design, with a focus on creating sustainable and livable cities.
 

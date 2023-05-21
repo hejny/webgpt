@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Tech Hub - A Digital Community for Innovators
+# Tech Hub Community
 
 Welcome to Tech Hub, a digital community for innovators and tech enthusiasts. Our platform is designed to bring together individuals from all over the world who share a passion for technology and innovation. 
 
