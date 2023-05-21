@@ -1,3 +1,4 @@
+// TODO: [7] import MarkdownEditor from '@uiw/react-markdown-editor';
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
@@ -46,6 +47,25 @@ export function EditModal(props: EditModalProps) {
                             }}
                         />
                     ))}
+                </div>
+                <div className={styles.xxxx}>
+                    <textarea
+                        className={styles.editor}
+                        defaultValue={wallpaper.content}
+                        onChange={(event) => {
+                            // TODO: !!! [⛑] Trigger rerender
+                            wallpaper.content = event.target.value;
+                        }}
+                    />
+                    {/*
+                    TODO: !!! [7] https://github.com/uiwjs/react-markdown-editor#support-nextjs
+                    <MarkdownEditor
+                        value={wallpaper.content}
+                        onChange={(newContent) => {
+                            wallpaper.content = newContent;
+                        }}
+                    />
+                    */}
                 </div>
                 <div className={styles.xxxx}>
                     <button className={'button'} onClick={turnOffEditing}>

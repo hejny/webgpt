@@ -30,6 +30,7 @@
     },
     "dependencies": {
         "@next/font": "13.1.1",
+        "@uiw/react-markdown-editor": "^5.11.1",
         "configchecker": "1.5.1",
         "destroyable": "0.12.0",
         "html-react-parser": "3.0.12",

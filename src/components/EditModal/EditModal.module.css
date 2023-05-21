@@ -43,6 +43,12 @@
     align-items: center;
 }
 
+.editor {
+    /*width: 100%;*/
+    width: 90vw;
+    height: 400px;
+}
+
 /*
 TODO: !! On mobile EditModal fills the whole screen
 */

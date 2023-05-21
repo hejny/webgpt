@@ -1,6 +1,6 @@
+import { useEffect, useState } from 'react';
 import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
-import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './Welcome.module.css';
 
@@ -9,6 +9,14 @@ import styles from './Welcome.module.css';
  */
 export function ShowcaseWelcomeSection() {
     const wallpaper = useWallpaper();
+
+    // TODO:!!! Just hack for [⛑]
+    // Render component every second
+    const [tick, setTick] = useState(0);
+    useEffect(() => {
+        const timeout = setTimeout(() => setTick(tick + 1), 1000);
+        return () => clearTimeout(timeout);
+    });
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
