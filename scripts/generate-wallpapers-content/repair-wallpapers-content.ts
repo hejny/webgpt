@@ -124,7 +124,23 @@ async function repairWallpapersContent({
             if (isRepairingTitle) {
                 if (title && title.trim().length > MAX_CHARS_IN_TITLE) {
                     let titleShort = await askGpt(`
-                        Make following title shorter: ${title}
+                        Make following title shorter:
+                        - Use as few characters as possible
+                        - Use maximum 3 words
+                        - If needed, create new words
+                        
+                        Example:
+                        Working with modern tools in space => Space tools
+                        Ocean Vibes: Bringing the Calming Energy of the Ocean to You => Ocean Vibes
+                        Futuristic City for Creatives => Futuristic City
+                        Elevate Your Tech Website with AI Buzzwords => Aibuzz
+                        Space Odyssey: Explore the Wonders of the Universe => Space Odyssey
+                        Tech & Design for Better Future => Tech & Design
+                        Exploring the Unknown: Ainautes in High-Tech Suits => Ainautes
+                        Discover the Wonders of the Universe with Our Telescope Backgrounds => Telescope
+
+                        Your work:
+                        ${title} =>
                     `);
                     // TODO: !!! Search if titleShort contains words like "title" or "short" and if so, ask again
 
