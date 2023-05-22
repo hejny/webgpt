@@ -11,11 +11,20 @@ import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImageColorStatsAdvanced } from './IImageColorStats';
 
-export function computeImagePalette(
+export function computeImagePalette12(
     colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>,
 ): Array<WithTake<Color>> {
-    // 1️⃣ Compute the all palette candidates
+    let primaryColor: WithTake<Color> | null = null;
 
+    // 0️⃣ Check that there is some most occuring color towards the bottom of the image
+    if (
+        colorStats.bottomHalf.mostFrequentColors[0] === colorStats.bottomThird.mostFrequentColors[0] &&
+        colorStats.bottomHalf.mostFrequentColors[0] === colorStats.mostFrequentColors[0]
+    ) {
+        primaryColor = colorStats.bottomHalf.mostFrequentColors[0];
+    }
+
+    // 1️⃣ Compute the all palette candidates
     const paletteCandidates: Array<WithTake<Color>> = [];
 
     for (const regionStats of [
@@ -25,7 +34,7 @@ export function computeImagePalette(
         colorStats.bottomLine /* TODO: Combinations */,
     ]) {
         // TODO: !! Here also get in account the color count
-        
+
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
             paletteCandidates.push(mostSatulightedColor);
         }
@@ -41,22 +50,20 @@ export function computeImagePalette(
         paletteCandidates.push(regionStats.lightestColor);
     }
 
-    // TODO: [3]
-
-    // 2️⃣ Pick best primary color
-    let primaryColor: WithTake<Color> | null = null;
-
-    // 2️⃣🅰 Pick the first color from paletteCandidates which is dark enough to white text on it
-    for (const paletteCandidate of paletteCandidates) {
-        if (areColorsEqual(paletteCandidate.then(textColor), Color.get('white'))) {
-            primaryColor = paletteCandidate;
-            break;
-        }
-    }
-
-    // 2️⃣🅱 Pick just the first color from paletteCandidates
     if (!primaryColor) {
-        primaryColor = paletteCandidates[0];
+        // 2️⃣ Pick best primary color
+        // 2️⃣🅰 Pick the first color from paletteCandidates which is dark enough to white text on it
+        for (const paletteCandidate of paletteCandidates) {
+            if (areColorsEqual(paletteCandidate.then(textColor), Color.get('white'))) {
+                primaryColor = paletteCandidate;
+                break;
+            }
+        }
+
+        // 2️⃣🅱 Pick just the first color from paletteCandidates
+        if (!primaryColor) {
+            primaryColor = paletteCandidates[0];
+        }
     }
 
     // 2️⃣🅲 Get the secondary color

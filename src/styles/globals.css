@@ -10,7 +10,6 @@ body {
     background-color: #121121 /* <- TODO: Color to config */;
 }
 
-/* TODO: [🎨] ACRY all colors in one place HERE */
 /* TODO: Make isolated components from <Button/>, <Button isFeatured/> and <Emoji/>*/
 
 .button /* <- Note: Not using <button> but <Link className="button"*/ {

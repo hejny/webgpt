@@ -13,18 +13,18 @@
 
     background: linear-gradient(to bottom, rgba(var(--palette-4-triplet), 0.05), rgba(var(--palette-2-triplet), 0.1)),
         url(/patterns/simple/stripes-black.png);
-    color: var(var(--palette-3));
+    color: rgba(var(--palette-1-triplet), 0.6);
 
     padding: 20px;
 }
 
 .FooterSection a {
-    color: var(var(--palette-3)) !important;
+    color: inherit !important;
 }
 
 .FooterSection ul li:not(:first-child):before {
     content: '|';
-    color: rgb(17, 96, 117) /* <- [🎨] */;
+    color: rgba(var(--palette-1-triplet), 0.6);
     margin-left: 10px;
     margin-right: 10px;
 }
