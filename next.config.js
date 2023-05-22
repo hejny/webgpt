@@ -1,4 +1,7 @@
+const removeImports = require('next-remove-imports')();
 const { i18n } = require('./next-i18next.config');
+
+
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -27,4 +30,4 @@ const nextConfig = {
     staticPageGenerationTimeout: 60 * 5 /* 5 minutes */,
 };
 
-module.exports = nextConfig;
+module.exports = removeImports(nextConfig);

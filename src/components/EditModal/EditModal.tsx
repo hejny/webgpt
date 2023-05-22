@@ -1,5 +1,7 @@
-// TODO: [7] import MarkdownEditor from '@uiw/react-markdown-editor';
+import '@uiw/react-markdown-editor/markdown-editor.css';
+import '@uiw/react-markdown-preview/markdown.css';
 import { RouterContext } from 'next/dist/shared/lib/router-context';
+import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DEBUG } from '../../../config';
@@ -14,6 +16,8 @@ import { HeaderWallpaper } from '../HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
 import { ShuffleSeedContext } from '../Shuffle/Shuffle';
 import styles from './EditModal.module.css';
+
+const MarkdownEditor = dynamic(() => import('@uiw/react-markdown-editor').then((mod) => mod.default), { ssr: false });
 
 interface EditModalProps {
     turnOffEditing(): void;
@@ -55,22 +59,15 @@ export function EditModal(props: EditModalProps) {
                     ))}
                 </div>
                 <div className={styles.xxxx}>
-                    <textarea
-                        className={styles.editor}
-                        defaultValue={wallpaper.content}
-                        onChange={(event) => {
-                            wallpaperSubject.next({ ...wallpaperSubject.value, content: event.target.value });
-                        }}
-                    />
-                    {/*
-                    TODO: !!! [7] https://github.com/uiwjs/react-markdown-editor#support-nextjs
                     <MarkdownEditor
+                        className={styles.editor}
                         value={wallpaper.content}
-                        onChange={(newContent) => {
-                            wallpaper.content = newContent;
+                        onChange={(content) => {
+                            wallpaperSubject.next({ ...wallpaperSubject.value, content });
                         }}
+                        // TODO: Hide fullscreen button
+                        // toolbarsFilter={(tool) => tool === 'fullscreen'}
                     />
-                    */}
                 </div>
                 <div className={styles.xxxx}>
                     <button className={'button'} onClick={turnOffEditing}>
