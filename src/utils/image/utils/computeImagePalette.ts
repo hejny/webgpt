@@ -11,10 +11,15 @@ import { colorHueDistance } from '../../color/utils/colorHueDistance';
 import { WithTake } from '../../take/interfaces/ITakeChain';
 import { IImageColorStatsAdvanced } from './IImageColorStats';
 
+let totalCount = 0;
+let pickByMostFrequentColorCount = 0;
+
 export function computeImagePalette12(
     colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>,
 ): Array<WithTake<Color>> {
     let primaryColor: WithTake<Color> | null = null;
+
+    totalCount++;
 
     // 0️⃣ Check that there is some most occuring color towards the bottom of the image
     if (
@@ -23,7 +28,8 @@ export function computeImagePalette12(
         areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomThird.mostFrequentColors[0]) &&
         areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomLine.mostFrequentColors[0])
     ) {
-        console.log(' !!! Picking primary as the most frequent one');
+        pickByMostFrequentColorCount++;
+        console.log(` !!! Picking primary as the most frequent one (${pickByMostFrequentColorCount}/${totalCount}))`);
         primaryColor = colorStats.bottomHalf.mostFrequentColors[0];
     }
 
