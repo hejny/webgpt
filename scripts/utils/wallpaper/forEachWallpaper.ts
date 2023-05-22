@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import moment from 'moment';
 import { forPlay } from '../forPlay';
-import { getWallpapersMetadataPaths } from './getWallpapersMetadataPaths';
+import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
 import { IWallpaperFiles } from './IWallpaperFiles';
 
 /**
@@ -15,10 +15,10 @@ export async function forEachWallpaper(options: {
 }): Promise<void> {
     const { makeWork, parallelWorksCount, isShuffled, logBeforeEachWork } = options;
 
-    const wallpapersMetadataPaths = await getWallpapersMetadataPaths();
+    const wallpapersmetadataFilePaths = await getWallpapersmetadataFilePaths();
 
     const stats = {
-        total: wallpapersMetadataPaths.length,
+        total: wallpapersmetadataFilePaths.length,
         done: 0,
         lastTime: moment(),
         startTime: moment(),
@@ -27,16 +27,16 @@ export async function forEachWallpaper(options: {
     const workingOn = new Set<Promise<void>>();
 
     if (isShuffled) {
-        wallpapersMetadataPaths.sort(() => Math.random() - 0.5);
+        wallpapersmetadataFilePaths.sort(() => Math.random() - 0.5);
     }
 
-    for (const metadataPath of wallpapersMetadataPaths) {
+    for (const metadataFilePath of wallpapersmetadataFilePaths) {
         await forPlay();
 
-        const contentPath = metadataPath.replace(/\.json$/, '.content.md');
-        const colorStatsPath = metadataPath.replace(/\.json$/, '.colors.yaml');
+        const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
+        const colorStatsFilePath = metadataFilePath.replace(/\.json$/, '.colors.yaml');
 
-        const wallpaperFiles = { metadataPath, contentPath, colorStatsPath };
+        const wallpaperFiles = { metadataFilePath, contentFilePath, colorStatsFilePath };
         console.info(chalk.grey(wallpaperFiles[logBeforeEachWork].split('\\').join('/')));
 
         const work = /* not await */ makeWork(wallpaperFiles).catch((error) => {

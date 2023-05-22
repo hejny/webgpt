@@ -6,9 +6,9 @@ import { getWallpapersDir } from './getWallpapersDir';
  * @@@
  */
 
-export async function getWallpapersMetadataPaths(): Promise<Array<string>> {
+export async function getWallpapersmetadataFilePaths(): Promise<Array<string>> {
     const wallpapersDir = await getWallpapersDir();
-    const wallpapersMetadataPaths = await glob(join(wallpapersDir, '*.json').split('\\').join('/'));
+    const wallpapersmetadataFilePaths = await glob(join(wallpapersDir, '*.json').split('\\').join('/'));
 
-    return wallpapersMetadataPaths;
+    return wallpapersmetadataFilePaths;
 }

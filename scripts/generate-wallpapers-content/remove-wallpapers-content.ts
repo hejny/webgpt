@@ -44,23 +44,23 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
-        logBeforeEachWork: 'contentPath',
-        async makeWork({ metadataPath, contentPath }) {
-            let content = await readFile(contentPath, 'utf-8');
+        logBeforeEachWork: 'contentFilePath',
+        async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
+            let content = await readFile(contentFilePath, 'utf-8');
             const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
             content = removeMarkdownComments(content);
             const title = extractTitleFromMarkdown(content);
 
             // TODO: [💵] DRY this checks
             if (title === null) {
-                rm(contentPath);
+                rm(contentFilePath);
                 console.info(chalk.red(`🗑 Removing file because of missing title `));
                 return;
             }
 
             for (const bannedWord of ['wallpaper', 'background', 'welcome', 'desktop']) {
                 if (title?.toLowerCase().includes(bannedWord)) {
-                    await rm(contentPath);
+                    await rm(contentFilePath);
                     console.info(chalk.red(`🗑 Removing file because it contains "${bannedWord}" in title\n"${title}"`));
                     return;
                 }
@@ -75,13 +75,13 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
                     /^-\s+/m.test(content)
                 )
             ) {
-                await rm(contentPath);
+                await rm(contentFilePath);
                 console.info(chalk.red(`🗑 Removing file because it has no structure`));
                 return;
             }
 
             if (!font || !FONTS.includes(font)) {
-                await rm(contentPath);
+                await rm(contentFilePath);
                 console.info(chalk.red(`🗑 Removing file because it font is not in the allowed font list "${title}"`));
                 return;
             }

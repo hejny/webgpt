@@ -64,15 +64,15 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
-        logBeforeEachWork: 'contentPath',
-        async makeWork({ metadataPath, contentPath }) {
-            if (await isFileExisting(contentPath)) {
+        logBeforeEachWork: 'contentFilePath',
+        async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
+            if (await isFileExisting(contentFilePath)) {
                 console.info(`⏩ Content file does already exists`);
                 return;
             }
 
             // TODO: !! Maybe parse + pass metadata in IWallpaperFiles
-            const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
+            const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
 
             const thread: Array<string> = [];
             let lastMessageId: string | undefined = undefined;
@@ -146,7 +146,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             /**/
 
             await writeFile(
-                contentPath,
+                contentFilePath,
                 spaceTrim(
                     (block) => `
 
@@ -176,7 +176,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
                 );
             }
 
-            console.info(`💾 ${relative(process.cwd(), contentPath).split('\\').join('/')}`);
+            console.info(`💾 ${relative(process.cwd(), contentFilePath).split('\\').join('/')}`);
         },
     });
 

@@ -79,8 +79,8 @@ async function repairWallpapersContent({
     await forEachWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
-        logBeforeEachWork: 'contentPath',
-        async makeWork({ metadataPath, contentPath }) {
+        logBeforeEachWork: 'contentFilePath',
+        async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
             async function askGpt(message: string): Promise<string> {
                 message = spaceTrim(message);
 
@@ -101,7 +101,7 @@ async function repairWallpapersContent({
                 }
             }
 
-            let content = await readFile(contentPath, 'utf-8');
+            let content = await readFile(contentFilePath, 'utf-8');
             const originalContent = content;
             let title = extractTitleFromMarkdown(content);
 
@@ -142,7 +142,7 @@ async function repairWallpapersContent({
                         Your work:
                         ${title} =>
                     `);
-                    // TODO: !!! Search if titleShort contains words like "title" or "short" and if so, ask again
+                    // TODO: !! Search if titleShort contains words like "title" or "short" and if so, ask again
 
                     // Note: Remove the quotes from titleShort
                     titleShort = titleShort.replace(/^"(.*)"$/, '$1');
@@ -165,7 +165,7 @@ async function repairWallpapersContent({
 
             if (content !== originalContent) {
                 console.info(chalk.green(` 🩹  Repair the file`));
-                await writeFile(contentPath, content, 'utf-8');
+                await writeFile(contentFilePath, content, 'utf-8');
             }
         },
     });

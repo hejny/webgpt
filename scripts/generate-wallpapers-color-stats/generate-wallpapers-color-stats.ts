@@ -53,10 +53,10 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
     await forEachWallpaper({
         isShuffled,
         parallelWorksCount: 1,
-        logBeforeEachWork: 'colorStatsPath',
-        async makeWork({ metadataPath, colorStatsPath }) {
-            if (await isFileExisting(colorStatsPath)) {
-                const { version } = YAML.parse(await readFile(colorStatsPath, 'utf8'));
+        logBeforeEachWork: 'colorStatsFilePath',
+        async makeWork({ metadataFilePath: metadataFilePath, colorStatsFilePath }) {
+            if (await isFileExisting(colorStatsFilePath)) {
+                const { version } = YAML.parse(await readFile(colorStatsFilePath, 'utf8'));
 
                 if (version === COLORSTATS_DEFAULT_COMPUTE.version) {
                     console.info(`⏩ Color stats file has already been computed with same version`);
@@ -66,7 +66,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
 
             // Note: Making a lock file to prevent multiple processes to compute the same color stats
             await writeFile(
-                colorStatsPath,
+                colorStatsFilePath,
                 YAML.stringify({
                     version: COLORSTATS_DEFAULT_COMPUTE.version,
                     note: 'This is just a lock before real color stats are made - if you see this the process is still running or it crashed.',
@@ -77,7 +77,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
             );
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
-            const metadata = JSON.parse(await readFile(metadataPath, 'utf8')) as IWallpaperMetadata;
+            const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
             const colorStats = COLORSTATS_DEFAULT_COMPUTE(
                 await createImageInNode(metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */]),
             );
@@ -86,7 +86,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
             await forImmediate();
 
             await writeFile(
-                colorStatsPath,
+                colorStatsFilePath,
                 YAML.stringify(
                     // TODO: More efficient way then JSON.stringify+JSON.parse
                     JSON.parse(
@@ -104,7 +104,7 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
                     .join("'") /* <- TODO: Can the replace be done directly in YAML.stringify options? */,
                 'utf8',
             );
-            console.info(`💾 ${relative(process.cwd(), colorStatsPath).split('\\').join('/')}`);
+            console.info(`💾 ${relative(process.cwd(), colorStatsFilePath).split('\\').join('/')}`);
         },
     });
 
