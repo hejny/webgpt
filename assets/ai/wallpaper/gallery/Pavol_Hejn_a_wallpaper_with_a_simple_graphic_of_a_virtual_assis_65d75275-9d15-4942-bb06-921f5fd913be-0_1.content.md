@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Virtual Ally
+# VirtuAlly
 
 Welcome to our website, where we offer virtual assistant services to businesses of all sizes. Our background features a simple graphic of a virtual assistant or chatbot, with space for messages and alerts.
 
@@ -24,9 +24,9 @@ Here's what some of our satisfied clients have to say:
 
 We have worked with a variety of companies, including:
 
-- ABC Company
-- XYZ Corporation
-- Acme Inc.
+-   ABC Company
+-   XYZ Corporation
+-   Acme Inc.
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

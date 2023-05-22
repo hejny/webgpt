@@ -1,19 +1,10 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
-import { useState } from 'react';
 import { JsonObject } from 'type-fest';
-import { Vector } from 'xyzt';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
-import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
-import { EditModal } from '../../components/EditModal/EditModal';
-import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
-import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
-import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
-import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
-import { FooterSection } from '../../sections/90-Footer/Footer';
-import styles from '../../styles/showcase.module.css';
+import { ShowcaseContentWithEdit } from '../../sections/ShowcaseContentWithEdit/ShowcaseContentWithEdit';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
@@ -27,9 +18,6 @@ export interface ShowcasePageProps {
 
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
-
-    const [isEditing, setEditing] = useState(false);
-    const [isPresenting, setPresenting] = useState(false);
 
     return (
         <WallpapersContext.Provider
@@ -45,31 +33,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
                 />
             </Head>
 
-            <div className={styles.page}>
-                <DebugGrid size={new Vector(5, 5)} />
-                {isEditing && <EditModal turnOffEditing={setEditing.bind(null, false)} />}
-                <header>
-                    <HeaderWallpaper />
-                </header>
-                <div className={styles.background}>
-                    <TiledBackground />
-                </div>
-                <main>
-                    <ShowcaseWelcomeSection />
-                    {/*<ReferencesSection variant="SHORT" />*/}
-                </main>
-                {!isPresenting && (
-                    <GetWebButton
-                        randomWallpaper={hydrateWallpaper(randomWallpaper)}
-                        turnOnEditing={setEditing.bind(null, true)}
-                        turnOnPresenting={setPresenting.bind(null, true)}
-                    />
-                )}
-
-                <footer>
-                    <FooterSection />
-                </footer>
-            </div>
+            <ShowcaseContentWithEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
         </WallpapersContext.Provider>
     );
 }
