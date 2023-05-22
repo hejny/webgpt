@@ -7,7 +7,7 @@ import { Item } from '../../components/Items/Item';
 import { Items } from '../../components/Items/Items';
 import { Section } from '../../components/Section/Section';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
-import { WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import { filterWallpapers, GalleryFilter, GalleryFilterInput } from './GalleryFilter/GalleryFilter';
 
 interface SampleProps {}
