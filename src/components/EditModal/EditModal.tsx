@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DEBUG } from '../../../config';
 import { DebugContext } from '../../pages/_app';
+import { closePreventionSystem } from '../../utils/ClosePreventionSystem/closePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
@@ -49,6 +50,9 @@ export function EditModal(props: EditModalProps) {
                             onChange={(newColor) => {
                                 // TODO: [🧠] !! DRY [🎋]
                                 // TODO: [🧠] !! Reset when switching wallpapers
+                                closePreventionSystem.registerClosePrevention({
+                                    canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
+                                });
                                 document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
                                 document.documentElement.style.setProperty(
                                     `--palette-${i}-triplet`,
@@ -63,6 +67,9 @@ export function EditModal(props: EditModalProps) {
                         className={styles.editor}
                         value={wallpaper.content}
                         onChange={(content) => {
+                            closePreventionSystem.registerClosePrevention({
+                                canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
+                            });
                             wallpaperSubject.next({ ...wallpaperSubject.value, content });
                         }}
                         // TODO: Hide fullscreen button
