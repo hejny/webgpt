@@ -4,6 +4,7 @@
 
     display: grid;
 
+    /* TODO: !!! This is irrelevant */
     grid-template-columns: 5vw auto 5vw;
     grid-template-rows: 0 10vh 10vh auto minmax(17vh, 75px);
 

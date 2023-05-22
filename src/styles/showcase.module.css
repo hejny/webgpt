@@ -5,7 +5,7 @@
     display: grid;
 
     grid-template-columns: 5vw auto 5vw;
-    grid-template-rows: minmax(40vw, 34vh) 10vh 10vh auto minmax(17vh, 75px);
+    grid-template-rows: minmax(40vw, 34vh) 10vh 10vh auto 150px;
 
     align-items: stretch;
     justify-content: stretch;

@@ -47,7 +47,12 @@ export function GetWebButton(props: GetWebButtonProps) {
     };
 
     return (
-        <div className={styles.GetWebButton} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/>
+        <div
+            className={classNames(
+                'aiai-controls',
+                styles.GetWebButton,
+            )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
+        >
             <Link
                 href={'mailto:me@pavolhejny.com'}
                 className={classNames('button', styles.button, styles.getButton)}

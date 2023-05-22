@@ -1,0 +1,66 @@
+<div class="container">
+    <iframe src="/showcase/3b0a73d9-7e8f-467a-a85e-b90fd1bf7457" scrolling="yes" class="device mobile"></iframe>
+    <iframe src="/showcase/3b0a73d9-7e8f-467a-a85e-b90fd1bf7457" scrolling="yes" class="device tablet"></iframe>
+    <iframe src="/showcase/3b0a73d9-7e8f-467a-a85e-b90fd1bf7457" scrolling="yes" class="device desktop"></iframe>
+</div>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+
+        background: url(../patterns/simple/grey.png);
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .device {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+
+        z-index: 1;
+        opacity: 0.2;
+        /*margin: 20px;*/
+        border: none;
+        outline: none;
+        width: 10px;
+        height: 10px;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.664);
+        background-color: #888;
+        transform: scale(0.5) perspective(1000px) rotateY(5deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .device:hover {
+        z-index: 2;
+        opacity: 1;
+        transform: scale(0.5) perspective(1000px);
+    }
+
+    .device.mobile {
+        width: 800px;
+        height: 1200px;
+    }
+
+    .device.tablet {
+        width: 1200px;
+        height: 1200px;
+    }
+
+    .device.desktop {
+        width: 1920px;
+        height: 1080px;
+    }
+</style>
+
+<script src="./common.js"></script>
