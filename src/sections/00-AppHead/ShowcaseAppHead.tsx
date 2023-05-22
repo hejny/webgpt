@@ -1,14 +1,18 @@
 import Head from 'next/head';
+import { useContext } from 'react';
 import favicon from '../../../public/favicon.ico';
 import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 
 /**
  * @@@
  */
 export function ShowcaseAppHead() {
+    console.log('!!! useContext(WallpapersContext) 1', useContext(WallpapersContext));
+
     const wallpaper = useWallpaper();
 
     // TODO: !! IWalpaper should have custom emoji which will be contained here

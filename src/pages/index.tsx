@@ -1,35 +1,29 @@
 import { Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Image from 'next/image';
-import Link from 'next/link';
+import { JsonObject } from 'type-fest';
 import { Vector } from 'xyzt';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
-import { ImagineTag } from '../components/ImagineTag/ImagineTag';
-import { Item } from '../components/Items/Item';
-import { Items } from '../components/Items/Items';
-import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import { GallerySection } from '../sections/Gallery/Gallery';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
-import { colorToDataUrl } from '../utils/color/utils/colorToDataUrl';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
-import { hydrateWallpaper } from '../utils/hydrateWallpaper';
+import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export interface PageProps {
-    wallpapers: Array<IWallpaper>;
+    wallpapers: Array<JsonObject & IWallpaper>;
 }
 
 export default function GalleryPage({ wallpapers }: PageProps) {
     return (
         <WallpapersContext.Provider
-            value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
+            value={hydrateWallpapers(wallpapers)} /* <- Is this the right place to be Provider in? */
         >
             <StaticAppHead subtitle={null} />
 

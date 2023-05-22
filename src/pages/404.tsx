@@ -9,12 +9,12 @@ import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/static.module.css';
 import { WallpapersContext } from '../utils/hooks/useWallpaper';
-import { hydrateWallpaper } from '../utils/hydrateWallpaper';
+import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 export default function NotFoundPage({ wallpapers }: PageProps) {
     return (
         <WallpapersContext.Provider
-            value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
+            value={hydrateWallpapers(wallpapers)} /* <- Is this the right place to be Provider in? */
         >
             <StaticAppHead subtitle="Not found" /* <- TODO: !! Translate */ />
 

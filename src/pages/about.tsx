@@ -8,13 +8,12 @@ import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import { TechnicalInfo } from '../sections/TechnicalInfo/TechnicalInfo';
 import styles from '../styles/static.module.css';
-import { WallpapersContext } from '../utils/hooks/useWallpaper';
-import { hydrateWallpaper } from '../utils/hydrateWallpaper';
+import { WallpapersContext } from '../utils/hooks/useWallpaper';import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 export default function AboutPage({ wallpapers }: PageProps) {
     return (
         <WallpapersContext.Provider
-            value={wallpapers.map(hydrateWallpaper)} /* <- Is this the right place to be Provider in? */
+            value={hydrateWallpapers(wallpapers)} /* <- Is this the right place to be Provider in? */
         >
             <StaticAppHead subtitle="About" /* <- TODO: !! Translate */ />
 

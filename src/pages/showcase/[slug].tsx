@@ -2,6 +2,7 @@ import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import { useState } from 'react';
+import { JsonObject } from 'type-fest';
 import { Vector } from 'xyzt';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
@@ -13,27 +14,27 @@ import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseWelcomeSection } from '../../sections/10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../../sections/90-Footer/Footer';
 import styles from '../../styles/showcase.module.css';
-import { WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
+import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { randomItem } from '../../utils/randomItem';
 
 export interface ShowcasePageProps {
-    currentWallpaper: IWallpaper;
-    randomWallpaper: IWallpaper;
+    currentWallpaper: IWallpaper & JsonObject;
+    randomWallpaper: IWallpaper & JsonObject;
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
-    currentWallpaper = hydrateWallpaper(currentWallpaper);
-    randomWallpaper = hydrateWallpaper(randomWallpaper);
+
     const [isEditing, setEditing] = useState(false);
     const [isPresenting, setPresenting] = useState(false);
 
-    console.info('🖼 currentWallpaper:', currentWallpaper);
-
     return (
-        <WallpapersContext.Provider value={[currentWallpaper]} /* <- Is this the right place to be Provider in? */>
+        <WallpapersContext.Provider
+            value={hydrateWallpapers([currentWallpaper])} /* <- Is this the right place to be Provider in? */
+        >
             <ShowcaseAppHead />
             <Head>
                 <link
@@ -59,7 +60,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
                 </main>
                 {!isPresenting && (
                     <GetWebButton
-                        {...{ randomWallpaper }}
+                        randomWallpaper={hydrateWallpaper(randomWallpaper)}
                         turnOnEditing={setEditing.bind(null, true)}
                         turnOnPresenting={setPresenting.bind(null, true)}
                     />

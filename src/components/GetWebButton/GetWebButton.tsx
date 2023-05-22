@@ -1,13 +1,10 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useContext } from 'react';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
 import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
 import { textColor } from '../../utils/color/operators/furthest';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
-import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
 import styles from './GetWebButton.module.css';
@@ -24,12 +21,6 @@ interface GetWebButtonProps {
  */
 export function GetWebButton(props: GetWebButtonProps) {
     const { randomWallpaper, turnOnEditing, turnOnPresenting } = props;
-
-    // TODO: const {mainBackground}= useSkin();
-
-    const { colorStats } = useWallpaper();
-    const wallpapers = useContext(WallpapersContext);
-    const router = useRouter();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
     const backgroundColor = Color.from(`#8dc1e4`);

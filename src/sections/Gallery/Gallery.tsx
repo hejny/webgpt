@@ -20,7 +20,10 @@ export function GallerySection(props: SampleProps) {
 
     const [filter, setFilter] = useState<GalleryFilter>({ limit: 100, isRandom: false });
 
-    const filteredWallpapers = filterWallpapers(wallpapers, filter); /* <- TODO: !!! Cache (memoize) + Do async */
+    const filteredWallpapers = filterWallpapers(
+        Object.values(wallpapers).map((wallpaperSubject) => wallpaperSubject.value),
+        filter,
+    ); /* <- TODO: !!! Cache (memoize) + Do async */
 
     return (
         <Section>

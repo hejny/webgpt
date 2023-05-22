@@ -4,7 +4,11 @@ import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DEBUG } from '../../../config';
 import { DebugContext } from '../../pages/_app';
-import { useWallpaper, WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
+import { useObservable } from '../../utils/hooks/useObservable';
+import { WallpapersContext } from '../../utils/hooks/useWallpaper';
+import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { HeaderWallpaper } from '../HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
@@ -20,7 +24,9 @@ interface EditModalProps {
  */
 export function EditModal(props: EditModalProps) {
     const { turnOffEditing } = props;
-    const wallpaper = useWallpaper();
+    const wallpaperId = useCurrentWallpaperId();
+    const wallpaperSubject = useWallpaperSubject(wallpaperId);
+    const { value: wallpaper } = useObservable(wallpaperSubject);
     const router = useRouter();
 
     return (
@@ -53,8 +59,7 @@ export function EditModal(props: EditModalProps) {
                         className={styles.editor}
                         defaultValue={wallpaper.content}
                         onChange={(event) => {
-                            // TODO: !!! [⛑] Trigger rerender
-                            wallpaper.content = event.target.value;
+                            wallpaperSubject.next({ ...wallpaperSubject.value, content: event.target.value });
                         }}
                     />
                     {/*
@@ -80,7 +85,9 @@ export function EditModal(props: EditModalProps) {
                                     <DebugContext.Provider value={DEBUG}>
                                         <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                                             <WallpapersContext.Provider
-                                                value={[wallpaper]} /* <- This provider is already in ShowcasePage */
+                                                value={hydrateWallpapers([
+                                                    wallpaper as any,
+                                                ])} /* <- This provider is already in ShowcasePage */
                                             >
                                                 <HeaderWallpaper />
                                                 {/*
