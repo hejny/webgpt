@@ -43,8 +43,8 @@ export function EditModal(props: EditModalProps) {
                             key={i}
                             defaultValue={color}
                             onChange={(newColor) => {
-                                // TODO: !! DRY [🎋]
-                                // TODO: !!! Reset when switching wallpapers
+                                // TODO: [🧠] !! DRY [🎋]
+                                // TODO: [🧠] !! Reset when switching wallpapers
                                 document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
                                 document.documentElement.style.setProperty(
                                     `--palette-${i}-triplet`,
