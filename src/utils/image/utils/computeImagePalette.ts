@@ -20,7 +20,8 @@ export function computeImagePalette12(
     if (
         // [🥎]
         areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomHalf.mostFrequentColors[0]) &&
-        areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomThird.mostFrequentColors[0])
+        areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomThird.mostFrequentColors[0]) &&
+        areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomLine.mostFrequentColors[0])
     ) {
         console.log(' !!! Picking primary as the most frequent one');
         primaryColor = colorStats.bottomHalf.mostFrequentColors[0];
