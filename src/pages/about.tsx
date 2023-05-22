@@ -8,7 +8,8 @@ import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import { TechnicalInfo } from '../sections/TechnicalInfo/TechnicalInfo';
 import styles from '../styles/static.module.css';
-import { WallpapersContext } from '../utils/hooks/useWallpaper';import { hydrateWallpapers } from '../utils/hydrateWallpapers';
+import { WallpapersContext } from '../utils/hooks/WallpapersContext';
+import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 export default function AboutPage({ wallpapers }: PageProps) {
     return (

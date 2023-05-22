@@ -8,7 +8,7 @@ import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { ReferencesSection } from '../sections/40-References/References';
 import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/static.module.css';
-import { WallpapersContext } from '../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 export default function ReferencesPage({ wallpapers }: PageProps) {

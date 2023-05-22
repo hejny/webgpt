@@ -11,7 +11,7 @@ import { FooterSection } from '../sections/90-Footer/Footer';
 import { GallerySection } from '../sections/Gallery/Gallery';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
-import { WallpapersContext } from '../utils/hooks/useWallpaper';
+import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
