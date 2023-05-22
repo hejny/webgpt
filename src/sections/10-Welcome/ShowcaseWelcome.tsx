@@ -28,11 +28,6 @@ export function ShowcaseWelcomeSection() {
                 style={{
                     fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,
                 }}
-                onClick={(event) => {
-                    (event.target as HTMLDivElement).setAttribute('contenteditable', 'true');
-                    (event.target as HTMLDivElement).setAttribute('spellcheck', 'false');
-                    // TODO: !!! Also save the changes after editing
-                }}
             >
                 <Article content={wallpaper.content} />
             </div>
