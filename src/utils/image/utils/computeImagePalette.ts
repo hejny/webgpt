@@ -18,9 +18,10 @@ export function computeImagePalette12(
 
     // 0️⃣ Check that there is some most occuring color towards the bottom of the image
     if (
-        colorStats.bottomHalf.mostFrequentColors[0] === colorStats.bottomThird.mostFrequentColors[0] &&
-        colorStats.bottomHalf.mostFrequentColors[0] === colorStats.mostFrequentColors[0]
+        colorStats.mostFrequentColors[0] === colorStats.bottomHalf.mostFrequentColors[0] &&
+        colorStats.mostFrequentColors[0] === colorStats.bottomThird.mostFrequentColors[0]
     ) {
+        console.log(' !!! Picking primary as the most frequent one');
         primaryColor = colorStats.bottomHalf.mostFrequentColors[0];
     }
 
