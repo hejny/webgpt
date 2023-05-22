@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# Exploring the Final Frontier
+# Frontier Exploration
 
 Welcome to our website dedicated to space exploration! Our stunning background image features a realistic photograph of a rocket launch, with fiery trails and smoke visible in the sky. It sets the tone for the exciting content you'll find here.
 

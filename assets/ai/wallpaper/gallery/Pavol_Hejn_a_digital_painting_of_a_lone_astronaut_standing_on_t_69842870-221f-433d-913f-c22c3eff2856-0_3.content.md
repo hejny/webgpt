@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Exploring the Final Frontier
+# Frontier Exploration
 
 Welcome to our website dedicated to space exploration! Our background features a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This inspiring image sets the tone for our mission to provide information and resources about space exploration.
 

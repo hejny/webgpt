@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Distant Planet's Future City
+# Planet City Future
 
 Welcome to "City of the Future," a virtual world where you can explore a distant planet filled with towering buildings and advanced technology. Our digital illustration wallpaper showcases the awe-inspiring cityscape that awaits you.
 

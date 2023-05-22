@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# MathLab - Your Math Resource
+# MathLab
 
 Welcome to MathLab, your ultimate resource for all things math-related! Our website offers a variety of resources to help you improve your math skills and gain a better understanding of complex mathematical concepts. 
 

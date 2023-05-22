@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes Explore the Unknown
+# Ainaute Exploration
 
 Welcome to our website where we share the latest adventures of our team of Ainautes. Our latest expedition took us to a massive, rocky planet with towering mountains and deep canyons all around us.
 

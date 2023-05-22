@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Dream Event Floral Backdrops
+# Floral Dreams
 
 Welcome to our event planning website, where we offer a variety of dreamy watercolor floral backdrops to make your special occasion unforgettable. Our wallpapers are perfect for weddings, bridal showers, baby showers, and other events that require an elegant touch.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Latest Future Tech
+# Future Tech Exploration
 
 Welcome to Future Tech, your source for insights and analysis on the latest technological advancements across a wide range of industries. Our wallpaper features a collage of futuristic technology such as drones, robots, and smart devices, set against a black background, setting the tone for the cutting-edge content you'll find here.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Digital Geometric Landscapes
+# Digigeo Landscapes
 
 Welcome to Geometric Landscapes, where we bring you stunning digital art that will transform your device into a visual wonderland. Our featured wallpaper is a vibrant digital landscape with geometric shapes and neon colors that will transport you to a world of endless possibilities.
 

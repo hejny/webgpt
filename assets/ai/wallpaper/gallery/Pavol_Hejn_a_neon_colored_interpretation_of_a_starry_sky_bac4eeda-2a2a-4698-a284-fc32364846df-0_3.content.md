@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Magic for Your Screen
+# Cosmic Screen Magic
 
 Welcome to Cosmic Dreams, where we offer a stunning neon-colored interpretation of a starry sky as your screen background. Our mission is to help you create a more inspiring and productive workspace by adding a touch of cosmic magic to your digital environment.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Dive into the Ocean's Beauty
+# Ocean Dive
 
 Experience the mesmerizing beauty of the ocean with this captivating underwater scene. Featuring vibrant coral and schools of colorful fish, this stunning image will transport you to a world of tranquility and wonder.
 

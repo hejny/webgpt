@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# "Up & Away" - Lifestyle Blog
+# UpAway Blog
 
 Welcome to "Up and Away", a lifestyle adventure blog that takes you on a journey of exploration, discovery, and inspiration. Our website is designed to capture the essence of life's adventures, whether it be through travel, food, or outdoor activities. 
 

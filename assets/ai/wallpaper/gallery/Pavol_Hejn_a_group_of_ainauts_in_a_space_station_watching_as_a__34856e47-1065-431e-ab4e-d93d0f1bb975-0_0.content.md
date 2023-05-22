@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# AI Saves Earth from Asteroid
+# AI Asteroid Savior
 
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence and its potential for saving humanity. Our stunning wallpaper depicts a group of Ainautes in a space station watching as a massive asteroid hurtles towards Earth, with only their AI and technology to save them. This image perfectly captures the importance of AI in space exploration and disaster mitigation.
 

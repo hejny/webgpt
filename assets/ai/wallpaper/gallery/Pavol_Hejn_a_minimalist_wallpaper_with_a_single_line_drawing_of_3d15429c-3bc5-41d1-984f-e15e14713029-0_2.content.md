@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# "Futuristic Cyborg Projects"
+# Cyborg Futures
 
 Welcome to "Cyborg Dreams," where you can find a striking and minimalist background that features a single line drawing of a cyborg in bright red or blue. Our background is perfect for adding a touch of futuristic flair to your creative projects, whether it be for graphic design, web development, or personal use.
 

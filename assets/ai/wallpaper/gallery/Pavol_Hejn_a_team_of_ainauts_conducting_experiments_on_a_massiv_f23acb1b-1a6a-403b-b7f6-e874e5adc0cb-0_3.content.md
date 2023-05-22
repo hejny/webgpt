@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Roboto-->
 
-# AI Experiment on Frozen Moon
+# AI Moon Experiment
 
 Welcome to our website, where we showcase the exciting work of our team of Ainautes as they conduct experiments on a massive, frozen moon orbiting a gas giant planet.
 

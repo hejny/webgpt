@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI spaceship explores cosmos
+# AI Cosmos Explorer
 
 Welcome aboard our state-of-the-art spacecraft, piloted by a team of Ainautes and their trusty AI companions. With cutting-edge technology and advanced artificial intelligence, we're able to explore the depths of the galaxy like never before.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# "Volcanic Planet Adventures"
+# Volcano Trekking
 
 Welcome to our website dedicated to exploring the wonders of volcanic planets!
 

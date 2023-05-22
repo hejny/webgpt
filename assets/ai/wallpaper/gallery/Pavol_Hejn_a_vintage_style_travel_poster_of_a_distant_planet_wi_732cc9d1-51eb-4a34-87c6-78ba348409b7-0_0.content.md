@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Intergalactic Travel Posters
+# Galactic Posters
 
 Welcome to our collection of vintage-style travel posters featuring some of the most beautiful and exotic planets in the galaxy. Our posters are designed with bold typography and artistic renderings of each planet's unique landscape, making them a perfect addition to any space lover's collection.
 

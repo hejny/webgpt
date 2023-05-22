@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI spacecraft explores space
+# AI spacecraft mission
 
 Welcome to our website dedicated to the thrilling adventure of a group of Ainautes and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space. Our wallpaper captures just a glimpse of the excitement and mystery that awaits you on this journey.
 

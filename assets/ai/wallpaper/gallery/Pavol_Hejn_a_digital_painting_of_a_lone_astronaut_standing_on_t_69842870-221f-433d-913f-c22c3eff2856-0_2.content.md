@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to space exploration! Our mission is to provide you with the latest news and information about space, including missions, discoveries, and more. As a backdrop to our content, we feature a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This beautiful image sets the tone for our website and will transport you to another world.
 

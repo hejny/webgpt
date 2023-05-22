@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Open Sans-->
 
-# Data Visualization Made Easy
+# Easy Data Viz
 
 Welcome to our website, where we make data visualization easy and accessible for everyone. Our mission is to help you understand your data and communicate it effectively through beautiful and informative visualizations.
 

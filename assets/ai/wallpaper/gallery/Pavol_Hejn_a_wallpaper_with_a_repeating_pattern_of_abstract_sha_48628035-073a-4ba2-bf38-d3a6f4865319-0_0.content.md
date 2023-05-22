@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# NetSafe: Online Safety Guide
+# NetSafe Guide
 
 Welcome to NetSafe, your guide to safe and secure online experience. Our website is dedicated to providing you with the latest news, tips, and tricks to help you protect yourself and your devices from cyber threats.
 

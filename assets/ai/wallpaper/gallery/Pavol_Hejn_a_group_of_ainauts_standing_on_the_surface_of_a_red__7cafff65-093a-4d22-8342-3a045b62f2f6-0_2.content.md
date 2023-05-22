@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes: Exploring Unknowns
+# Unknown Ainautes
 
 Welcome to Ainautes, where we push the boundaries of exploration with the help of artificial intelligence. Our team of experts and advanced technology allow us to go where no human has gone before.
 

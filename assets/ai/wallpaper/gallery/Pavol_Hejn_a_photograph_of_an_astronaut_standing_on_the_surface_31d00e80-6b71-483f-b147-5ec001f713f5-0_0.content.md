@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore space with our decor
+# Space decor
 
 Transform your living space into a cosmic wonderland with our stunning space-themed décor. Our collection features a breathtaking photograph of an astronaut standing on the surface of the moon with Earth in the background, perfect for adding a touch of otherworldly beauty to any room.
 

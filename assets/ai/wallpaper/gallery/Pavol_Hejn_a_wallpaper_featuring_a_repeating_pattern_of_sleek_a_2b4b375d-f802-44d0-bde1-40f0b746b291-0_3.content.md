@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Modern Workspace Inspiration
+# Mod Workspace
 
 Transform your workspace into a modern and sleek environment with our digital devices-inspired background. Our wallpaper features a repeating pattern of smartphones, tablets, and laptops that will give your space an edgy and contemporary look.
 

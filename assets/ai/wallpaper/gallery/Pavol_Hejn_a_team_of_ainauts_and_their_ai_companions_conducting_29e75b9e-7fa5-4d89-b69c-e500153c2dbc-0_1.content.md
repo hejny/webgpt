@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Universe's Mysteries Journey
+# Cosmic Quest
 
 Welcome to our website dedicated to exploring the wonders of the universe. Our mission is to bring you the latest discoveries, theories, and advancements in the field of astrophysics. 
 

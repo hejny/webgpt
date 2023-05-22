@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Confident Women's Style Tips
+# Women's Style Confidence
 
 Welcome to our fashion and beauty blog, where we celebrate confidence, elegance, and self-expression. Our website is designed to provide you with inspiration and tips on how to embrace your unique style and feel beautiful both inside and out.
 

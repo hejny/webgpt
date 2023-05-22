@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Wonders of Space Exploration
+# Space Wonders
 
 Welcome to our website dedicated to all things space! Our mission is to bring you the latest news, insights, and discoveries from the cosmos. 
 

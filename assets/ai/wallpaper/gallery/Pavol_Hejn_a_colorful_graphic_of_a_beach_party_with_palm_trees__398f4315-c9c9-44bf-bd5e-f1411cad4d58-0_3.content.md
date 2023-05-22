@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Beach Party Vacation Website
+# Beach Vacation
 
 Looking for a tropical getaway? Look no further! Our beach party vacation website has everything you need to plan the perfect trip. 
 

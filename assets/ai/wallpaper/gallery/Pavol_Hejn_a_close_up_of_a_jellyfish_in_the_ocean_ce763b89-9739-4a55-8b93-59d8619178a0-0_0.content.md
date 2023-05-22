@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Jellyfish Close-Up in Ocean.
+# Jellyfish Ocean View
 
 Welcome to Oceanic Wonders, where we celebrate the beauty and diversity of our oceans. Our website is dedicated to showcasing stunning images of marine life, including this mesmerizing close-up of a jellyfish in its natural habitat.
 

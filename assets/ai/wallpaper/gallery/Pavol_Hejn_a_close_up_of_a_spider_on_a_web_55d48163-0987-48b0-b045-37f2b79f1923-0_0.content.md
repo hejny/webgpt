@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Arachnid Web: Precise Beauty
+# Arachnid Beauty
 
 Welcome to Arachnid Web Design, where we create stunning websites that are as intricate and visually appealing as a spider's web. Our team of expert designers and developers work tirelessly to craft websites that not only look amazing but also function flawlessly.
 

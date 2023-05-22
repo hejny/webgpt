@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring the Final Frontier
+# Frontier Exploration
 
 Welcome to our website dedicated to all things space! Our mission is to bring you the latest news, updates, and stories from the final frontier. As you browse through our pages, you'll notice a stunning image that sets the tone for our site.
 
