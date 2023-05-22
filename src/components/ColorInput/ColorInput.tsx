@@ -14,6 +14,7 @@ export function ColorInput(props: ColorInputProps) {
     const { defaultValue, onChange } = props;
 
     const [color, setColor] = useState(defaultValue);
+    const [colorString, setColorString] = useState(color.toHex());
 
     return (
         <div className={styles.ColorInput}>
@@ -23,16 +24,22 @@ export function ColorInput(props: ColorInputProps) {
                 onChange={(event) => {
                     const color = Color.fromHex(event.target.value);
                     setColor(color);
+                    setColorString(color.toHex() /* <- TODO: Try to preserve the format use choosen */);
                     onChange(color);
                 }}
             />
             <input
                 type="text"
-                value={color.toHex()}
+                value={colorString}
                 onChange={(event) => {
-                    const color = Color.fromHex(event.target.value);
-                    setColor(color);
-                    onChange(color);
+                    setColorString(event.target.value);
+                    try {
+                        const color = Color.fromString(event.target.value);
+                        setColor(color);
+                        onChange(color);
+                    } catch (error) {
+                        // Note: Swallow error because it is not a valid color yet
+                    }
                 }}
             />
         </div>
