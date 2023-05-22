@@ -1,65 +1,64 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#aa22cc'
     - '#ffffff'
-    - '#1199ff'
+    - '#1199ee'
     - '#000055'
 averageColor: '#bd3b66'
-lightestColor: '#ffbbff'
-darkestColor: '#110000'
+lightestColor: '#ffccff'
+darkestColor: '#000011'
 mostFrequentColors:
     - '#ff6644'
     - '#aa22bb'
     - '#000055'
     - '#ffeeff'
     - '#2299ee'
-    - '#991111'
 mostSatulightedColors:
-    - '#1199ff'
+    - '#2299ee'
     - '#aa22cc'
-    - '#ff55cc'
-    - '#4422aa'
-    - '#ff4466'
+    - '#dd2299'
+    - '#442299'
+    - '#ff5566'
 mostGroupedColors:
     - '#ff6644'
 bottomHalf:
-    averageColor: '#a7296b'
-    lightestColor: '#ffbbff'
-    darkestColor: '#110000'
+    averageColor: '#a6296b'
+    lightestColor: '#ffccff'
+    darkestColor: '#000011'
     mostFrequentColors:
         - '#bb22aa'
         - '#000055'
         - '#ff6633'
         - '#ff88ee'
-        - '#2299ee'
+        - '#1199dd'
     mostSatulightedColors:
-        - '#1199ff'
+        - '#1199ee'
         - '#aa22cc'
         - '#ff55cc'
-        - '#4422aa'
-        - '#ff4466'
+        - '#5533aa'
+        - '#ff5577'
     mostGroupedColors:
         - '#bb22aa'
 bottomThird:
     averageColor: '#b12669'
-    lightestColor: '#ffaaff'
+    lightestColor: '#ffbbee'
     darkestColor: '#000011'
     mostFrequentColors:
         - '#bb22aa'
         - '#110055'
         - '#ff6633'
-        - '#ffaaee'
+        - '#ff99dd'
     mostSatulightedColors:
         - '#aa22cc'
-        - '#ee44bb'
-        - '#5533aa'
+        - '#cc2299'
+        - '#442299'
         - '#ff4466'
     mostGroupedColors:
         - '#bb22aa'
 bottomLine:
-    averageColor: '#d63375'
+    averageColor: '#d63376'
     lightestColor: '#aa22cc'
-    darkestColor: '#ee6633'
+    darkestColor: '#ff4433'
     mostFrequentColors:
         - '#ff4444'
         - '#9922cc'
@@ -68,4 +67,4 @@ bottomLine:
         - '#cc2299'
         - '#ee3355'
     mostGroupedColors:
-        - '#aa22bb'
+        - '#ff4433'

@@ -1,68 +1,65 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#4455cc'
+    - '#111133'
     - '#ffffff'
     - '#ee77bb'
-    - '#55eecc'
-averageColor: '#3c5b89'
+    - '#3399dd'
+averageColor: '#3c5b8a'
 lightestColor: '#ffffff'
-darkestColor: '#220011'
+darkestColor: '#220022'
 mostFrequentColors:
-    - '#111133'
+    - '#223366'
     - '#5599cc'
     - '#cceeee'
-    - '#ee77bb'
-    - '#bb6622'
+    - '#dd6688'
 mostSatulightedColors:
-    - '#11bbee'
-    - '#5577dd'
-    - '#8855cc'
-    - '#bb44aa'
+    - '#22aaee'
+    - '#ee77bb'
+    - '#9966cc'
+    - '#6666cc'
 mostGroupedColors:
     - '#111133'
 bottomHalf:
     averageColor: '#354875'
-    lightestColor: '#ffeeff'
-    darkestColor: '#220011'
+    lightestColor: '#eeeeff'
+    darkestColor: '#110022'
     mostFrequentColors:
         - '#111133'
         - '#5599cc'
-        - '#cceeff'
+        - '#cceeee'
         - '#ee77bb'
-        - '#aa4433'
     mostSatulightedColors:
-        - '#2299dd'
-        - '#4455cc'
-        - '#55eecc'
-        - '#8855cc'
-        - '#cc55aa'
+        - '#3399dd'
+        - '#ee77bb'
+        - '#9966cc'
+        - '#6666cc'
+        - '#99eedd'
     mostGroupedColors:
         - '#111133'
 bottomThird:
-    averageColor: '#293862'
-    lightestColor: '#ffddff'
-    darkestColor: '#220011'
+    averageColor: '#293863'
+    lightestColor: '#ffffff'
+    darkestColor: '#110022'
     mostFrequentColors:
         - '#111133'
         - '#446699'
         - '#dd88cc'
         - '#ddffff'
-        - '#55ccee'
     mostSatulightedColors:
-        - '#2299dd'
-        - '#4455cc'
-        - '#8855cc'
-        - '#cc55aa'
-        - '#55ccbb'
+        - '#3388dd'
+        - '#9955bb'
+        - '#dd77cc'
+        - '#6666cc'
+        - '#66bbbb'
     mostGroupedColors:
         - '#111133'
 bottomLine:
     averageColor: '#111334'
-    lightestColor: '#112255'
-    darkestColor: '#001133'
+    lightestColor: '#112244'
+    darkestColor: '#111133'
     mostFrequentColors:
         - '#111133'
     mostSatulightedColors:
-        - '#112255'
+        - '#112244'
     mostGroupedColors:
         - '#111133'

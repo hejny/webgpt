@@ -1,65 +1,59 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#000011'
+    - '#3366cc'
     - '#ffffff'
-    - '#aa55dd'
-    - '#ffbb55'
-    - '#11bbff'
+    - '#55ffff'
 averageColor: '#142b3f'
-lightestColor: '#ffffff'
+lightestColor: '#eeffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#001122'
     - '#116688'
     - '#33ddee'
-    - '#aa5544'
-    - '#ddffff'
-    - '#bb77dd'
-    - '#ffdd55'
+    - '#994444'
+    - '#ccffff'
+    - '#eebb77'
 mostSatulightedColors:
-    - '#00bbff'
-    - '#4466dd'
-    - '#aa55dd'
-    - '#77ffdd'
+    - '#11bbff'
+    - '#aa55cc'
+    - '#5566cc'
 mostGroupedColors:
     - '#000011'
 bottomHalf:
-    averageColor: '#151e2f'
-    lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    averageColor: '#161f30'
+    lightestColor: '#ee99ff'
+    darkestColor: '#001111'
     mostFrequentColors:
         - '#001122'
         - '#116688'
-        - '#aa5544'
+        - '#994444'
         - '#55ffff'
-        - '#ffffee'
-        - '#bb77dd'
-        - '#ffbb55'
+        - '#eebb77'
     mostSatulightedColors:
-        - '#11bbff'
-        - '#aa55dd'
-        - '#7788ee'
+        - '#00bbdd'
+        - '#3366cc'
+        - '#aa55cc'
     mostGroupedColors:
         - '#000011'
 bottomThird:
-    averageColor: '#0f1928'
-    lightestColor: '#77eeff'
-    darkestColor: '#000000'
+    averageColor: '#101928'
+    lightestColor: '#66eeff'
+    darkestColor: '#000011'
     mostFrequentColors:
         - '#000011'
-        - '#115577'
-        - '#aa5544'
-        - '#44ddee'
-        - '#eecc99'
+        - '#884444'
+        - '#117799'
+        - '#eebb77'
+        - '#44ffff'
     mostSatulightedColors:
-        - '#22eeff'
-        - '#2255aa'
+        - '#44ffff'
+        - '#1166bb'
     mostGroupedColors:
         - '#000011'
 bottomLine:
     averageColor: '#000812'
     lightestColor: '#001122'
-    darkestColor: '#000000'
+    darkestColor: '#000011'
     mostFrequentColors:
         - '#000011'
     mostSatulightedColors:

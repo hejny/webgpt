@@ -1,10 +1,10 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#229988'
+    - '#112222'
     - '#ffffff'
+    - '#88ccaa'
     - '#ffaa55'
-    - '#002244'
-averageColor: '#736c56'
+averageColor: '#736c55'
 lightestColor: '#ffffff'
 darkestColor: '#001100'
 mostFrequentColors:
@@ -13,18 +13,16 @@ mostFrequentColors:
     - '#ffeebb'
     - '#aa4433'
 mostSatulightedColors:
-    - '#229988'
     - '#ffaa55'
-    - '#ee5555'
-    - '#ffffaa'
-    - '#002244'
-    - '#99ddaa'
-    - '#99bb77'
+    - '#338888'
+    - '#dd6666'
+    - '#88ccaa'
+    - '#eeeeaa'
 mostGroupedColors:
     - '#112222'
 bottomHalf:
     averageColor: '#5c6658'
-    lightestColor: '#ffffff'
+    lightestColor: '#ffffee'
     darkestColor: '#001100'
     mostFrequentColors:
         - '#112222'
@@ -32,43 +30,41 @@ bottomHalf:
         - '#ffeebb'
         - '#aa4433'
     mostSatulightedColors:
-        - '#229988'
-        - '#ff8855'
-        - '#ffeeaa'
-        - '#002244'
-        - '#883344'
-        - '#99ddaa'
-        - '#99bb77'
+        - '#ffaa55'
+        - '#55aaaa'
+        - '#dd6666'
+        - '#88ccaa'
+        - '#ffffcc'
+        - '#cceebb'
     mostGroupedColors:
         - '#112222'
 bottomThird:
-    averageColor: '#555f53'
-    lightestColor: '#ffffff'
-    darkestColor: '#001100'
+    averageColor: '#556053'
+    lightestColor: '#ffffee'
+    darkestColor: '#000000'
     mostFrequentColors:
         - '#112222'
-        - '#77aa99'
         - '#aa4433'
+        - '#77aa99'
         - '#ffeebb'
     mostSatulightedColors:
-        - '#229988'
         - '#ffaa55'
-        - '#cc2233'
+        - '#55aaaa'
+        - '#dd2222'
+        - '#88ccaa'
         - '#ffffbb'
-        - '#88cc99'
     mostGroupedColors:
         - '#112222'
 bottomLine:
-    averageColor: '#47382f'
-    lightestColor: '#aacccc'
-    darkestColor: '#000000'
+    averageColor: '#48382f'
+    lightestColor: '#88bbaa'
+    darkestColor: '#001111'
     mostFrequentColors:
         - '#112222'
         - '#bb4433'
         - '#338877'
-        - '#aaccbb'
     mostSatulightedColors:
-        - '#ff9966'
+        - '#ee8844'
         - '#338877'
     mostGroupedColors:
         - '#112222'

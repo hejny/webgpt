@@ -1,65 +1,58 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#005577'
+    - '#224455'
     - '#ffffff'
-    - '#aaaa88'
-    - '#001100'
-averageColor: '#4d5750'
-lightestColor: '#ffeecc'
-darkestColor: '#001100'
+    - '#ccbb77'
+averageColor: '#4e5750'
+lightestColor: '#eeddbb'
+darkestColor: '#000000'
 mostFrequentColors:
     - '#224455'
     - '#aaaa88'
-    - '#cc4433'
-    - '#ffffcc'
 mostSatulightedColors:
-    - '#005577'
-    - '#ff9955'
-    - '#559988'
-    - '#dddd99'
+    - '#115577'
+    - '#ff8855'
+    - '#ccbb77'
+    - '#226655'
 mostGroupedColors:
     - '#224455'
 bottomHalf:
-    averageColor: '#4d5750'
-    lightestColor: '#ffeecc'
-    darkestColor: '#000000'
+    averageColor: '#4e5750'
+    lightestColor: '#eeccaa'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#224455'
         - '#aaaa88'
-        - '#dd5522'
-        - '#ffffcc'
     mostSatulightedColors:
-        - '#005577'
-        - '#ff9955'
-        - '#559988'
-        - '#dddd99'
+        - '#115577'
+        - '#ff8855'
+        - '#ccbb77'
+        - '#226655'
     mostGroupedColors:
         - '#224455'
 bottomThird:
     averageColor: '#48554f'
-    lightestColor: '#ffccaa'
-    darkestColor: '#000000'
+    lightestColor: '#eeccaa'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#224455'
         - '#aaaa88'
-        - '#dd5522'
     mostSatulightedColors:
-        - '#005577'
+        - '#115577'
         - '#ff9955'
-        - '#337766'
-        - '#dddd99'
+        - '#226655'
     mostGroupedColors:
         - '#224455'
 bottomLine:
-    averageColor: '#374f4f'
-    lightestColor: '#ddccaa'
+    averageColor: '#354d4d'
+    lightestColor: '#ccbb99'
     darkestColor: '#223311'
     mostFrequentColors:
         - '#224455'
-        - '#aa9977'
+        - '#aa9988'
     mostSatulightedColors:
-        - '#eebb77'
-        - '#114466'
-        - '#115544'
+        - '#dd9955'
+        - '#225566'
+        - '#225544'
     mostGroupedColors:
         - '#224455'

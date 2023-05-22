@@ -1,56 +1,50 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#226666'
+    - '#114455'
     - '#ffffff'
-    - '#cc9966'
-averageColor: '#535656'
-lightestColor: '#ffffff'
+    - '#77aa99'
+averageColor: '#525555'
+lightestColor: '#ffeeee'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#333333'
     - '#cccccc'
 mostSatulightedColors:
-    - '#cc9966'
-    - '#226666'
-    - '#aaaa66'
-    - '#99bb77'
-    - '#99aabb'
-    - '#8888aa'
-    - '#558855'
+    - '#ddbb88'
+    - '#114455'
+    - '#558877'
+    - '#bbcc99'
 mostGroupedColors:
-    - '#444444'
+    - '#333333'
 bottomHalf:
-    averageColor: '#686968'
-    lightestColor: '#ffeeff'
+    averageColor: '#666867'
+    lightestColor: '#ffeeee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#cccccc'
         - '#666666'
     mostSatulightedColors:
-        - '#cc9966'
-        - '#226666'
-        - '#aaaa66'
-        - '#99bb88'
-        - '#99aabb'
-        - '#8888aa'
+        - '#ddbb88'
+        - '#114455'
+        - '#558877'
+        - '#668855'
     mostGroupedColors:
         - '#111111'
 bottomThird:
-    averageColor: '#7a7979'
-    lightestColor: '#ffeeee'
+    averageColor: '#797978'
+    lightestColor: '#ffffee'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#cccccc'
         - '#111111'
+        - '#cccccc'
         - '#777777'
     mostSatulightedColors:
-        - '#cc9966'
-        - '#226666'
-        - '#99aabb'
-        - '#8888aa'
+        - '#ddbb88'
+        - '#114455'
+        - '#77aa99'
     mostGroupedColors:
-        - '#cccccc'
+        - '#111111'
 bottomLine:
     averageColor: '#cfcece'
     lightestColor: '#eeeeee'
@@ -58,10 +52,9 @@ bottomLine:
     mostFrequentColors:
         - '#dddddd'
     mostSatulightedColors:
-        - '#eeddee'
-        - '#ddddee'
         - '#ddeeee'
-        - '#eedddd'
+        - '#ccccdd'
         - '#ddddcc'
+        - '#ddcccc'
     mostGroupedColors:
         - '#dddddd'

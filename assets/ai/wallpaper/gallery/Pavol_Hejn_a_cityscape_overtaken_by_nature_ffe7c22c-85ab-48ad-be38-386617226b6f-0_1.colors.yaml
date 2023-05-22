@@ -1,61 +1,60 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#337799'
+    - '#995544'
     - '#ffffff'
     - '#112211'
-averageColor: '#4e533e'
-lightestColor: '#ffffff'
+averageColor: '#4e533f'
+lightestColor: '#ffffee'
 darkestColor: '#001100'
 mostFrequentColors:
     - '#222222'
     - '#ddddcc'
     - '#778888'
 mostSatulightedColors:
-    - '#337799'
-    - '#ffdd77'
-    - '#ccee77'
-    - '#bb7766'
+    - '#dddd66'
+    - '#aa7744'
+    - '#668899'
+    - '#99bb77'
 mostGroupedColors:
-    - '#ddddcc'
+    - '#111111'
 bottomHalf:
-    averageColor: '#343d23'
+    averageColor: '#343c22'
     lightestColor: '#eeffcc'
-    darkestColor: '#001100'
+    darkestColor: '#000000'
     mostFrequentColors:
         - '#222222'
         - '#778844'
-        - '#dddd88'
+        - '#dddd77'
     mostSatulightedColors:
-        - '#337799'
         - '#ffdd77'
-        - '#ccee77'
-        - '#aa6655'
+        - '#99bb66'
+        - '#995544'
     mostGroupedColors:
-        - '#112211'
+        - '#111111'
 bottomThird:
     averageColor: '#323b21'
-    lightestColor: '#eeeecc'
-    darkestColor: '#002200'
+    lightestColor: '#ddeebb'
+    darkestColor: '#001100'
     mostFrequentColors:
-        - '#223322'
-        - '#889944'
-        - '#eeee99'
+        - '#112211'
+        - '#777744'
+        - '#dddd77'
     mostSatulightedColors:
-        - '#ffee88'
-        - '#ccee99'
-        - '#aa6644'
+        - '#eeee77'
+        - '#cc9966'
+        - '#88aa66'
     mostGroupedColors:
         - '#112211'
 bottomLine:
     averageColor: '#1f281b'
-    lightestColor: '#555533'
+    lightestColor: '#445533'
     darkestColor: '#111111'
     mostFrequentColors:
-        - '#223322'
-    mostSatulightedColors:
-        - '#555533'
-        - '#445533'
-        - '#112222'
-        - '#334433'
-    mostGroupedColors:
         - '#112211'
+    mostSatulightedColors:
+        - '#445533'
+        - '#444422'
+        - '#112222'
+        - '#223322'
+    mostGroupedColors:
+        - '#223322'

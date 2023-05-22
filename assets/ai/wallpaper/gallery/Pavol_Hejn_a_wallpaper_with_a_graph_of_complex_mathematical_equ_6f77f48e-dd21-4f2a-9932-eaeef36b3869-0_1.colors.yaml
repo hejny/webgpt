@@ -1,62 +1,63 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#557799'
-    - '#ffffff'
+    - '#ccccbb'
+    - '#000000'
+    - '#667799'
 averageColor: '#d2d0c0'
-lightestColor: '#ffffff'
-darkestColor: '#111111'
+lightestColor: '#ffffee'
+darkestColor: '#333333'
 mostFrequentColors:
     - '#ccccbb'
     - '#667777'
-    - '#222222'
 mostSatulightedColors:
-    - '#6688aa'
-    - '#669999'
+    - '#445577'
     - '#ffeecc'
-    - '#887799'
-    - '#777799'
+    - '#88aaaa'
+    - '#99bbaa'
+    - '#eeffdd'
 mostGroupedColors:
     - '#ccccbb'
 bottomHalf:
-    averageColor: '#d2d1c0'
-    lightestColor: '#ffffff'
-    darkestColor: '#333333'
+    averageColor: '#d2d0c0'
+    lightestColor: '#ffffee'
+    darkestColor: '#444444'
     mostFrequentColors:
         - '#ccccbb'
         - '#667777'
     mostSatulightedColors:
-        - '#557799'
-        - '#669999'
+        - '#667799'
         - '#ffeecc'
-        - '#777799'
-        - '#cceedd'
+        - '#88aaaa'
+        - '#bbddcc'
+        - '#eeffdd'
     mostGroupedColors:
         - '#ccccbb'
 bottomThird:
     averageColor: '#d8d6c4'
-    lightestColor: '#ffffff'
-    darkestColor: '#333333'
+    lightestColor: '#ffeeee'
+    darkestColor: '#445544'
     mostFrequentColors:
         - '#ccccbb'
-        - '#777777'
+        - '#667777'
     mostSatulightedColors:
-        - '#557799'
-        - '#558888'
+        - '#667799'
         - '#ffeecc'
-        - '#777799'
-        - '#cceedd'
+        - '#779999'
+        - '#99bbaa'
+        - '#ccddbb'
     mostGroupedColors:
         - '#ccccbb'
 bottomLine:
-    averageColor: '#dfdbc9'
+    averageColor: '#dedac8'
     lightestColor: '#ffeedd'
-    darkestColor: '#556677'
+    darkestColor: '#667788'
     mostFrequentColors:
         - '#ccccbb'
-        - '#556677'
+        - '#667788'
     mostSatulightedColors:
-        - '#668899'
+        - '#667788'
         - '#ffeedd'
         - '#eeeecc'
+        - '#bbcccc'
     mostGroupedColors:
         - '#ccccbb'

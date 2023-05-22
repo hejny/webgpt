@@ -1,66 +1,65 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#115599'
-    - '#ffffff'
-    - '#ccaa66'
     - '#001100'
+    - '#ffffff'
+    - '#bbaa44'
+    - '#005588'
 averageColor: '#415c2f'
 lightestColor: '#ffffff'
-darkestColor: '#001100'
+darkestColor: '#002200'
 mostFrequentColors:
     - '#001100'
-    - '#bb9966'
-    - '#338811'
-    - '#bbeeee'
+    - '#aacc99'
+    - '#886644'
     - '#006699'
-    - '#aa3300'
 mostSatulightedColors:
-    - '#1188dd'
+    - '#0088cc'
 mostGroupedColors:
     - '#001100'
 bottomHalf:
-    averageColor: '#456b34'
-    lightestColor: '#ffffee'
-    darkestColor: '#001100'
+    averageColor: '#466c34'
+    lightestColor: '#eeffdd'
+    darkestColor: '#002200'
     mostFrequentColors:
         - '#001100'
         - '#aadd99'
         - '#559922'
         - '#005588'
     mostSatulightedColors:
-        - '#115599'
-        - '#55aaaa'
-        - '#bbff77'
-        - '#ccaa66'
-        - '#99ff99'
+        - '#005588'
+        - '#aaee77'
+        - '#bbaa44'
+        - '#88dd99'
     mostGroupedColors:
         - '#001100'
 bottomThird:
-    averageColor: '#3f652c'
-    lightestColor: '#ffffee'
+    averageColor: '#3f662c'
+    lightestColor: '#cceecc'
     darkestColor: '#002200'
     mostFrequentColors:
         - '#001100'
         - '#66aa33'
         - '#bbddaa'
     mostSatulightedColors:
-        - '#bbff77'
-        - '#ccaa66'
-        - '#77cc88'
+        - '#ccff99'
+        - '#bbaa44'
+        - '#66bb77'
+        - '#886655'
     mostGroupedColors:
         - '#001100'
 bottomLine:
-    averageColor: '#223817'
+    averageColor: '#223818'
     lightestColor: '#776655'
     darkestColor: '#001100'
     mostFrequentColors:
         - '#001100'
         - '#447744'
     mostSatulightedColors:
-        - '#668855'
         - '#666622'
-        - '#336644'
+        - '#558855'
+        - '#446622'
         - '#776655'
         - '#775555'
+        - '#224433'
     mostGroupedColors:
         - '#001100'

@@ -1,68 +1,63 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#443344'
+    - '#667788'
     - '#ffffff'
-    - '#aabb99'
+    - '#221122'
 averageColor: '#535759'
-lightestColor: '#ffffff'
+lightestColor: '#eeeeee'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#111111'
     - '#aaaaaa'
-    - '#ffffee'
 mostSatulightedColors:
-    - '#778899'
-    - '#ffeedd'
-    - '#ddeecc'
-    - '#111133'
-    - '#bb9999'
-    - '#999977'
-    - '#554455'
-    - '#eeffff'
+    - '#667788'
+    - '#ccbbaa'
+    - '#aa8888'
+    - '#aabb99'
+    - '#443344'
+    - '#bbbbcc'
+    - '#aabbbb'
 mostGroupedColors:
     - '#aaaaaa'
 bottomHalf:
-    averageColor: '#282d31'
-    lightestColor: '#ffffff'
+    averageColor: '#282d32'
+    lightestColor: '#ddeeee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#666677'
         - '#bbbbbb'
     mostSatulightedColors:
-        - '#778899'
-        - '#eeddcc'
-        - '#bb9999'
-        - '#aabb99'
-        - '#999977'
+        - '#667788'
+        - '#ccbbaa'
+        - '#aa8888'
         - '#443344'
         - '#ddeeee'
-        - '#aaaabb'
+        - '#9999aa'
     mostGroupedColors:
         - '#111111'
 bottomThird:
-    averageColor: '#151b1f'
-    lightestColor: '#bbcccc'
+    averageColor: '#151b20'
+    lightestColor: '#999999'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#666677'
-        - '#bbcccc'
     mostSatulightedColors:
         - '#667788'
-        - '#110011'
-        - '#bbcccc'
-        - '#9999aa'
+        - '#221122'
+        - '#889999'
+        - '#777788'
     mostGroupedColors:
         - '#111111'
 bottomLine:
     averageColor: '#020b11'
-    lightestColor: '#111122'
-    darkestColor: '#001100'
+    lightestColor: '#111111'
+    darkestColor: '#000000'
     mostFrequentColors:
         - '#001111'
     mostSatulightedColors:
-        - '#111122'
         - '#001111'
+        - '#000011'
     mostGroupedColors:
-        - '#111111'
+        - '#001111'

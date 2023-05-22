@@ -1,11 +1,11 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#cc5555'
+    - '#3388aa'
     - '#ffffff'
-    - '#3399bb'
-    - '#224433'
+    - '#ffbb66'
+    - '#442233'
 averageColor: '#4f4c4b'
-lightestColor: '#eeffff'
+lightestColor: '#ddffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#001111'
@@ -13,54 +13,53 @@ mostFrequentColors:
     - '#99bbbb'
     - '#dd7722'
 mostSatulightedColors:
-    - '#3399bb'
-    - '#ffbb55'
-    - '#dd6666'
+    - '#3388aa'
+    - '#ffaa55'
+    - '#dd7777'
 mostGroupedColors:
     - '#000000'
 bottomHalf:
-    averageColor: '#504f4e'
-    lightestColor: '#eeffff'
+    averageColor: '#50504e'
+    lightestColor: '#ddffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#556666'
         - '#99bbbb'
-        - '#dd6622'
+        - '#dd8811'
     mostSatulightedColors:
-        - '#3399bb'
-        - '#ffbb55'
-        - '#cc5555'
+        - '#3388aa'
+        - '#ffbb66'
+        - '#bb4444'
     mostGroupedColors:
         - '#111111'
 bottomThird:
-    averageColor: '#484b49'
-    lightestColor: '#eeffff'
+    averageColor: '#494c4a'
+    lightestColor: '#ddddcc'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#556666'
         - '#aabbaa'
     mostSatulightedColors:
-        - '#77aabb'
+        - '#6699aa'
         - '#bb8866'
         - '#88bbaa'
-        - '#bb8899'
-        - '#555577'
+        - '#bb99aa'
     mostGroupedColors:
         - '#111111'
 bottomLine:
-    averageColor: '#252d31'
-    lightestColor: '#667777'
-    darkestColor: '#000011'
+    averageColor: '#252d30'
+    lightestColor: '#666666'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#111111'
-        - '#776666'
+        - '#666666'
     mostSatulightedColors:
-        - '#335566'
-        - '#553344'
+        - '#336666'
+        - '#445566'
+        - '#442233'
         - '#776655'
         - '#664444'
-        - '#224433'
     mostGroupedColors:
-        - '#002222'
+        - '#111111'

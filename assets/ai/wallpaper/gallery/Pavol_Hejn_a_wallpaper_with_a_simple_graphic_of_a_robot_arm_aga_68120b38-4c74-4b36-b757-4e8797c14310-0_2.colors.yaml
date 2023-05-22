@@ -1,59 +1,58 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#ee2244'
+    - '#ff3344'
     - '#ffffff'
-    - '#ffcc11'
-    - '#001144'
-averageColor: '#cc5928'
-lightestColor: '#eeaa66'
+    - '#ffcc00'
+    - '#661144'
+averageColor: '#cc5a28'
+lightestColor: '#dd6666'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#ff8822'
     - '#331144'
     - '#cc1133'
 mostSatulightedColors:
-    - '#cc2255'
-    - '#ff8855'
-    - '#661155'
-    - '#331155'
-    - '#ffcc00'
-    - '#001144'
+    - '#ff3344'
+    - '#ffaa44'
+    - '#661144'
+    - '#002244'
+    - '#331144'
 mostGroupedColors:
     - '#ff8822'
 bottomHalf:
-    averageColor: '#a0352b'
-    lightestColor: '#ee5566'
-    darkestColor: '#000000'
-    mostFrequentColors:
-        - '#ff4422'
-        - '#441133'
-        - '#ffcc11'
-    mostSatulightedColors:
-        - '#ee2244'
-        - '#ff9955'
-        - '#660044'
-        - '#001144'
-        - '#331144'
-    mostGroupedColors:
-        - '#ff4422'
-bottomThird:
-    averageColor: '#8a2b2d'
+    averageColor: '#a1352a'
     lightestColor: '#ee4455'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#ff4422'
-        - '#002244'
-        - '#ffbb00'
+        - '#441133'
     mostSatulightedColors:
-        - '#ee2244'
-        - '#ffaa44'
-        - '#551144'
-        - '#001144'
+        - '#ff3344'
+        - '#ff9944'
+        - '#661144'
+        - '#002244'
         - '#331144'
     mostGroupedColors:
         - '#ff4422'
+bottomThird:
+    averageColor: '#8b2b2c'
+    lightestColor: '#ff8844'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - '#ff4422'
+        - '#002244'
+        - '#ffcc00'
+    mostSatulightedColors:
+        - '#ee1133'
+        - '#ff8844'
+        - '#551144'
+        - '#002244'
+        - '#331144'
+        - '#111144'
+    mostGroupedColors:
+        - '#ff4422'
 bottomLine:
-    averageColor: '#7b1936'
+    averageColor: '#7b1a36'
     lightestColor: '#ff4433'
     darkestColor: '#111133'
     mostFrequentColors:

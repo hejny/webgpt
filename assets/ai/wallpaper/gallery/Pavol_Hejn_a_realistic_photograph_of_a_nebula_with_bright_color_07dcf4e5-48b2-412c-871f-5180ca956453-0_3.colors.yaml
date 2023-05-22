@@ -1,9 +1,8 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#cc4477'
+    - '#441166'
     - '#ffffff'
-    - '#55aadd'
-    - '#000011'
+    - '#5577bb'
 averageColor: '#574966'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
@@ -12,34 +11,36 @@ mostFrequentColors:
     - '#557799'
     - '#ddddee'
     - '#aa3333'
-    - '#ff8877'
 mostSatulightedColors:
-    - '#55aadd'
-    - '#cc4477'
-    - '#333399'
-    - '#662277'
-    - '#ff9966'
+    - '#77bbee'
+    - '#bb3366'
+    - '#ff8866'
+    - '#5555aa'
+    - '#551155'
+    - '#9977bb'
 mostGroupedColors:
     - '#112244'
 bottomHalf:
-    averageColor: '#5a3d59'
+    averageColor: '#5b3e5a'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111133'
-        - '#ccbbcc'
+        - '#ddccdd'
         - '#aa3344'
+        - '#5577aa'
     mostSatulightedColors:
-        - '#cc4477'
         - '#5577bb'
-        - '#662277'
-        - '#ff9966'
-        - '#554499'
-        - '#bbeeee'
+        - '#ee6688'
+        - '#441166'
+        - '#ff9977'
+        - '#772266'
+        - '#eeddaa'
+        - '#88bbbb'
     mostGroupedColors:
-        - '#000011'
+        - '#111133'
 bottomThird:
-    averageColor: '#442847'
+    averageColor: '#452947'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -49,21 +50,20 @@ bottomThird:
         - '#ffffff'
     mostSatulightedColors:
         - '#cc4477'
-        - '#4455aa'
-        - '#662277'
-        - '#ff9966'
+        - '#334499'
+        - '#441166'
+        - '#ffaa77'
     mostGroupedColors:
         - '#000011'
 bottomLine:
-    averageColor: '#120d30'
-    lightestColor: '#888888'
+    averageColor: '#110d30'
+    lightestColor: '#553366'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000011'
-        - '#888888'
     mostSatulightedColors:
         - '#331166'
-        - '#334477'
+        - '#112255'
         - '#441144'
     mostGroupedColors:
         - '#111144'

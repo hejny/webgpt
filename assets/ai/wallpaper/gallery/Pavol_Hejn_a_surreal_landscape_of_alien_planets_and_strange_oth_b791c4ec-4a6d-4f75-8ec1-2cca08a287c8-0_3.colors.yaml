@@ -1,66 +1,66 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#cc3322'
+    - '#111111'
     - '#ffffff'
-    - '#66aaaa'
-    - '#ffbb55'
-    - '#224466'
-averageColor: '#484d46'
-lightestColor: '#ffffff'
-darkestColor: '#001100'
+    - '#337766'
+    - '#ffaa55'
+averageColor: '#484d47'
+lightestColor: '#ddeeff'
+darkestColor: '#000000'
 mostFrequentColors:
     - '#111111'
     - '#557777'
     - '#bbccbb'
-    - '#dd7733'
+    - '#bb4411'
 mostSatulightedColors:
-    - '#ff9955'
-    - '#5599aa'
-    - '#eeeeaa'
-    - '#66aa88'
+    - '#ffaa55'
+    - '#559988'
+    - '#994444'
+    - '#7799aa'
+    - '#cccc99'
 mostGroupedColors:
     - '#111111'
 bottomHalf:
     averageColor: '#373028'
-    lightestColor: '#ffffff'
-    darkestColor: '#001100'
-    mostFrequentColors:
-        - '#111111'
-        - '#666666'
-        - '#ccbb99'
-        - '#ee6611'
-    mostSatulightedColors:
-        - '#ffbb55'
-        - '#66aaaa'
-        - '#cc3322'
-        - '#224466'
-        - '#337755'
-    mostGroupedColors:
-        - '#111111'
-bottomThird:
-    averageColor: '#2c241c'
-    lightestColor: '#ffffdd'
+    lightestColor: '#ccdddd'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
-        - '#886644'
-        - '#ffbb77'
+        - '#666666'
+        - '#bbbbaa'
     mostSatulightedColors:
-        - '#ffbb66'
-        - '#66aaaa'
-        - '#bb6666'
-        - '#337755'
-        - '#112244'
+        - '#ffaa55'
+        - '#224466'
+        - '#337766'
+        - '#aa6666'
+        - '#cccc99'
+    mostGroupedColors:
+        - '#111111'
+bottomThird:
+    averageColor: '#2c251d'
+    lightestColor: '#ffeedd'
+    darkestColor: '#001100'
+    mostFrequentColors:
+        - '#111111'
+        - '#886644'
+        - '#bbccbb'
+    mostSatulightedColors:
+        - '#ffbb77'
+        - '#337777'
+        - '#993333'
+        - '#bbbb88'
     mostGroupedColors:
         - '#111111'
 bottomLine:
     averageColor: '#171616'
-    lightestColor: '#224444'
-    darkestColor: '#000000'
+    lightestColor: '#223344'
+    darkestColor: '#111100'
     mostFrequentColors:
         - '#111111'
     mostSatulightedColors:
-        - '#113344'
-        - '#224433'
+        - '#223344'
+        - '#224444'
+        - '#110011'
+        - '#222233'
     mostGroupedColors:
         - '#111111'

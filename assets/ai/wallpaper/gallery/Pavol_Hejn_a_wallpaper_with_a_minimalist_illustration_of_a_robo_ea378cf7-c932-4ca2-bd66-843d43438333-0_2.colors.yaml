@@ -1,59 +1,61 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#112244'
+    - '#000000'
     - '#ffffff'
-    - '#998877'
+    - '#776677'
 averageColor: '#020203'
-lightestColor: '#aaaaaa'
+lightestColor: '#999999'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#000000'
     - '#555555'
-    - '#aaaaaa'
 mostSatulightedColors:
-    - '#112244'
-    - '#998866'
-    - '#443355'
+    - '#556677'
+    - '#333355'
+    - '#110022'
+    - '#776677'
+    - '#445555'
 mostGroupedColors:
     - '#000000'
 bottomHalf:
     averageColor: '#020204'
-    lightestColor: '#aaaaaa'
-    darkestColor: '#000000'
-    mostFrequentColors:
-        - '#000000'
-        - '#555555'
-        - '#aaaaaa'
-    mostSatulightedColors:
-        - '#112244'
-        - '#221133'
-        - '#998877'
-    mostGroupedColors:
-        - '#000000'
-bottomThird:
-    averageColor: '#020204'
-    lightestColor: '#aaaaaa'
+    lightestColor: '#887788'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
         - '#666666'
     mostSatulightedColors:
-        - '#112244'
-        - '#221133'
-        - '#998877'
+        - '#223344'
+        - '#110022'
+        - '#776677'
+        - '#777788'
+        - '#778888'
+        - '#888877'
+    mostGroupedColors:
+        - '#000000'
+bottomThird:
+    averageColor: '#020204'
+    lightestColor: '#888888'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - '#000000'
+        - '#555555'
+    mostSatulightedColors:
+        - '#111133'
+        - '#112233'
+        - '#221122'
+        - '#334444'
+        - '#887777'
+        - '#888877'
     mostGroupedColors:
         - '#000000'
 bottomLine:
     averageColor: '#020203'
-    lightestColor: '#887777'
+    lightestColor: '#111122'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
-        - '#776677'
     mostSatulightedColors:
-        - '#776677'
-        - '#887777'
         - '#111122'
-        - '#112222'
     mostGroupedColors:
         - '#000000'

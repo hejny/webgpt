@@ -1,8 +1,9 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#0099aa'
+    - '#009999'
     - '#ffffff'
-    - '#ffdd55'
+    - '#ffbb55'
+    - '#001100'
 averageColor: '#d7c2b5'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
@@ -12,16 +13,15 @@ mostFrequentColors:
     - '#004444'
     - '#bb1111'
     - '#889999'
-    - '#00cccc'
+    - '#44eeee'
 mostSatulightedColors:
-    - '#11ddee'
-    - '#ff4455'
+    - '#00dddd'
 mostGroupedColors:
     - '#eeeeee'
 bottomHalf:
     averageColor: '#d2b9ab'
-    lightestColor: '#eeffff'
-    darkestColor: '#000000'
+    lightestColor: '#ffeeee'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#eeeedd'
         - '#eebb00'
@@ -29,14 +29,14 @@ bottomHalf:
         - '#bb1111'
         - '#889999'
     mostSatulightedColors:
-        - '#0099aa'
-        - '#ee6677'
-        - '#ffdd55'
+        - '#009999'
+        - '#ee3344'
+        - '#ffbb55'
     mostGroupedColors:
         - '#eedddd'
 bottomThird:
     averageColor: '#d3b8a9'
-    lightestColor: '#eeffff'
+    lightestColor: '#ffeeee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#eeeedd'
@@ -46,8 +46,8 @@ bottomThird:
         - '#779999'
     mostSatulightedColors:
         - '#0099aa'
-        - '#ee6677'
-        - '#ffdd55'
+        - '#ee3344'
+        - '#ffaa55'
     mostGroupedColors:
         - '#eedddd'
 bottomLine:

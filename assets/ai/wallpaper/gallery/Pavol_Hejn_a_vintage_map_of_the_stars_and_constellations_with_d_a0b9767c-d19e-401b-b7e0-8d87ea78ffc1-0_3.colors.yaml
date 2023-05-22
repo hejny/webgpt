@@ -1,60 +1,57 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#884455'
+    - '#447766'
     - '#ffffff'
-    - '#ccaa88'
-    - '#001100'
-averageColor: '#8d7c5f'
-lightestColor: '#ffffdd'
-darkestColor: '#001100'
+    - '#ccaa44'
+averageColor: '#8d7b5e'
+lightestColor: '#ffeecc'
+darkestColor: '#000000'
 mostFrequentColors:
     - '#bbaa88'
     - '#444433'
 mostSatulightedColors:
-    - '#ff9966'
-    - '#eedd77'
-    - '#884455'
-    - '#448866'
-    - '#447777'
+    - '#eeaa44'
+    - '#cc3322'
+    - '#447766'
+    - '#aabb88'
 mostGroupedColors:
-    - '#aa9977'
+    - '#ccbb99'
 bottomHalf:
-    averageColor: '#978566'
+    averageColor: '#968565'
     lightestColor: '#ffffdd'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#bbaa88'
         - '#444433'
     mostSatulightedColors:
-        - '#ff9966'
-        - '#eedd77'
-        - '#884455'
-        - '#448866'
-        - '#447777'
+        - '#ee8866'
+        - '#ccaa44'
+        - '#447766'
+        - '#aabb88'
     mostGroupedColors:
-        - '#bbaa88'
+        - '#ccbb99'
 bottomThird:
-    averageColor: '#958465'
-    lightestColor: '#ffeedd'
+    averageColor: '#948465'
+    lightestColor: '#ffffdd'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#bbaa88'
+        - '#ccbb99'
         - '#444433'
+        - '#cc7711'
     mostSatulightedColors:
-        - '#ff9966'
-        - '#eedd77'
-        - '#884455'
-        - '#448866'
-        - '#447777'
+        - '#ffaa88'
+        - '#eedd99'
+        - '#337755'
+        - '#aabb88'
     mostGroupedColors:
-        - '#bbaa88'
+        - '#ccbb99'
 bottomLine:
-    averageColor: '#cbb389'
-    lightestColor: '#eeccaa'
-    darkestColor: '#998866'
+    averageColor: '#ccb389'
+    lightestColor: '#ddbb99'
+    darkestColor: '#aa9966'
     mostFrequentColors:
         - '#ccbb88'
     mostSatulightedColors:
-        - '#eecc99'
+        - '#ddbb88'
     mostGroupedColors:
-        - '#ccaa88'
+        - '#ddcc99'

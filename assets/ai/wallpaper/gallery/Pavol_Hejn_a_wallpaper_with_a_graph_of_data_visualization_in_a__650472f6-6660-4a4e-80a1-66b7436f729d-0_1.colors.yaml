@@ -1,62 +1,57 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#555577'
+    - '#333355'
     - '#ffffff'
-    - '#99bbaa'
 averageColor: '#b6b7b9'
 lightestColor: '#ffffff'
-darkestColor: '#000000'
+darkestColor: '#111111'
 mostFrequentColors:
     - '#ffffff'
     - '#aaaaaa'
     - '#555555'
-    - '#000000'
 mostSatulightedColors:
-    - '#ddeeff'
-    - '#99bbbb'
-    - '#555577'
-    - '#ffeedd'
-    - '#ffdddd'
-    - '#99bbaa'
-    - '#888866'
-    - '#554455'
+    - '#aabbcc'
+    - '#333355'
+    - '#eeddcc'
+    - '#ddbbbb'
+    - '#776677'
+    - '#eeffff'
 mostGroupedColors:
     - '#ffffff'
 bottomHalf:
     averageColor: '#b8b9bb'
     lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#ffffff'
         - '#aaaaaa'
-        - '#555555'
-        - '#000000'
+        - '#333333'
     mostSatulightedColors:
-        - '#ddeeff'
-        - '#99bbbb'
-        - '#555577'
-        - '#ffeedd'
+        - '#ccddee'
+        - '#333355'
         - '#ffdddd'
-        - '#99bbaa'
-        - '#888866'
-        - '#aa99aa'
+        - '#eeddcc'
+        - '#554455'
+        - '#eeffff'
     mostGroupedColors:
         - '#ffffff'
 bottomThird:
-    averageColor: '#acafb1'
+    averageColor: '#acaeb1'
     lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    darkestColor: '#222222'
     mostFrequentColors:
         - '#aaaaaa'
         - '#ffffff'
         - '#333333'
     mostSatulightedColors:
-        - '#ddeeff'
-        - '#998899'
+        - '#554455'
         - '#eeeeff'
         - '#eeffff'
+        - '#ffeeee'
+        - '#ffffee'
+        - '#eeffee'
     mostGroupedColors:
-        - '#aaaaaa'
+        - '#999999'
 bottomLine:
     averageColor: '#8b8f94'
     lightestColor: '#ddddee'
@@ -66,8 +61,7 @@ bottomLine:
         - '#666666'
     mostSatulightedColors:
         - '#ccddee'
-        - '#998899'
         - '#ddddee'
         - '#ccdddd'
     mostGroupedColors:
-        - '#333333'
+        - '#ccdddd'

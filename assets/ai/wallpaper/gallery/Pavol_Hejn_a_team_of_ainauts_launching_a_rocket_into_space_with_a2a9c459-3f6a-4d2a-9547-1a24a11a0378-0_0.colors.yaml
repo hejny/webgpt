@@ -1,64 +1,61 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#557788'
+    - '#334466'
     - '#ffffff'
-    - '#ffbb55'
-    - '#551133'
+    - '#eeaa55'
 averageColor: '#8a8785'
 lightestColor: '#ffffff'
-darkestColor: '#000000'
+darkestColor: '#111111'
 mostFrequentColors:
     - '#334455'
     - '#ddddcc'
     - '#bb8855'
 mostSatulightedColors:
-    - '#ffbb55'
-    - '#ff8888'
-    - '#7788aa'
-    - '#551133'
+    - '#eeaa55'
+    - '#993344'
+    - '#556688'
 mostGroupedColors:
-    - '#223344'
+    - '#334455'
 bottomHalf:
-    averageColor: '#968d87'
+    averageColor: '#968d88'
     lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#445566'
         - '#ffffff'
         - '#aaaaaa'
-        - '#220000'
     mostSatulightedColors:
-        - '#ffcc77'
-        - '#cc7777'
-        - '#557788'
+        - '#ffcc88'
+        - '#bb7777'
+        - '#334466'
     mostGroupedColors:
         - '#ffffff'
 bottomThird:
-    averageColor: '#8f8682'
+    averageColor: '#908782'
     lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    darkestColor: '#110000'
     mostFrequentColors:
         - '#445566'
         - '#ffeecc'
-        - '#220000'
-        - '#cc9955'
+        - '#110000'
     mostSatulightedColors:
-        - '#ffcc77'
-        - '#cc7777'
-        - '#557788'
+        - '#ffbb88'
+        - '#eeeeaa'
+        - '#446677'
+        - '#774455'
     mostGroupedColors:
-        - '#445566'
+        - '#334455'
 bottomLine:
-    averageColor: '#524f57'
-    lightestColor: '#dddddd'
-    darkestColor: '#110000'
+    averageColor: '#525058'
+    lightestColor: '#ddddcc'
+    darkestColor: '#110011'
     mostFrequentColors:
         - '#223344'
-        - '#ccccbb'
+        - '#bbbbbb'
     mostSatulightedColors:
-        - '#995533'
-        - '#445577'
-        - '#662233'
+        - '#995544'
+        - '#223355'
+        - '#663344'
         - '#221133'
     mostGroupedColors:
         - '#444455'

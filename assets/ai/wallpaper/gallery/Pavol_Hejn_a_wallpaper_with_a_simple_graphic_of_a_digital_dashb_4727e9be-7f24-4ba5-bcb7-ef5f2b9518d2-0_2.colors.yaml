@@ -1,49 +1,42 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#000000'
     - '#ffffff'
-    - '#55bb33'
-    - '#dd8822'
-    - '#ee33ff'
+    - '#77cc66'
+    - '#ff9933'
+    - '#ff44ff'
     - '#00ddff'
-averageColor: '#0b1d28'
-lightestColor: '#ff66ff'
+averageColor: '#0b1e28'
+lightestColor: '#ee55ff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#000000'
     - '#225577'
-    - '#22ffff'
-    - '#88aacc'
+    - '#55ffff'
+    - '#aa6611'
     - '#eeffff'
-    - '#dd8822'
-    - '#ee44dd'
-    - '#991133'
-    - '#55bb33'
+    - '#cc55dd'
+    - '#77cc66'
 mostSatulightedColors:
-    - '#ee33ff'
-    - '#00ddff'
-    - '#5588ff'
-    - '#aa77ff'
+    - '#00eeff'
+    - '#ee33dd'
 mostGroupedColors:
     - '#000000'
 bottomHalf:
     averageColor: '#0c1e29'
-    lightestColor: '#ff66ff'
+    lightestColor: '#ff44ff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
         - '#115577'
         - '#22ffff'
-        - '#ddeeff'
-        - '#ee44dd'
-        - '#7799cc'
-        - '#dd8822'
-        - '#880088'
+        - '#bbddff'
+        - '#ff9933'
+        - '#cc55dd'
+        - '#994411'
     mostSatulightedColors:
-        - '#ee33ff'
         - '#00ddff'
-        - '#5588ff'
-        - '#aa77ff'
+        - '#ff44ff'
     mostGroupedColors:
         - '#000000'
 bottomThird:
@@ -53,17 +46,14 @@ bottomThird:
     mostFrequentColors:
         - '#000000'
         - '#115577'
-        - '#33ffff'
+        - '#33eeff'
+        - '#aa6611'
         - '#ddeeff'
-        - '#ee44dd'
+        - '#cc55dd'
         - '#ddcc55'
-        - '#7799cc'
-        - '#884411'
     mostSatulightedColors:
-        - '#ee33ff'
-        - '#00ddff'
-        - '#5588ff'
-        - '#aa77ff'
+        - '#00eeff'
+        - '#dd33ee'
     mostGroupedColors:
         - '#000000'
 bottomLine:
@@ -76,6 +66,6 @@ bottomLine:
         - '#113355'
         - '#330022'
         - '#221133'
-        - '#222244'
+        - '#111133'
     mostGroupedColors:
         - '#000000'

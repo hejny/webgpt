@@ -1,11 +1,11 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#118877'
+    - '#228877'
     - '#ffffff'
     - '#ffcc55'
     - '#001100'
-averageColor: '#37381d'
-lightestColor: '#ffffff'
+averageColor: '#36381d'
+lightestColor: '#ffffee'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#001111'
@@ -13,56 +13,50 @@ mostFrequentColors:
     - '#ffffee'
     - '#77cc88'
 mostSatulightedColors:
-    - '#119977'
-    - '#ff9955'
-    - '#ffee55'
-    - '#77dd88'
-    - '#225566'
-    - '#99cc55'
+    - '#ffbb44'
+    - '#228877'
+    - '#77dd99'
+    - '#ccdd77'
+    - '#224455'
+    - '#77aa66'
 mostGroupedColors:
-    - '#001111'
+    - '#ee7711'
 bottomHalf:
-    averageColor: '#0f2018'
+    averageColor: '#0e2018'
     lightestColor: '#ffffee'
-    darkestColor: '#000000'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#001111'
         - '#ffffee'
         - '#776622'
         - '#eebb44'
     mostSatulightedColors:
-        - '#118877'
         - '#ffcc55'
-        - '#dd4422'
-        - '#ddee99'
-        - '#66aa77'
+        - '#228877'
+        - '#99bb55'
     mostGroupedColors:
         - '#001111'
 bottomThird:
     averageColor: '#081915'
-    lightestColor: '#bbaa77'
+    lightestColor: '#ffbb44'
     darkestColor: '#001100'
     mostFrequentColors:
         - '#001111'
-        - '#dd6611'
+        - '#ee6611'
         - '#227766'
-        - '#aabb77'
     mostSatulightedColors:
-        - '#118877'
-        - '#ff9944'
-        - '#aabb77'
+        - '#ffbb44'
+        - '#228877'
     mostGroupedColors:
         - '#001111'
 bottomLine:
-    averageColor: '#183930'
-    lightestColor: '#887755'
-    darkestColor: '#111100'
+    averageColor: '#17382f'
+    lightestColor: '#225544'
+    darkestColor: '#221100'
     mostFrequentColors:
         - '#113333'
-        - '#888855'
     mostSatulightedColors:
         - '#115544'
-        - '#776633'
-        - '#778855'
+        - '#554422'
     mostGroupedColors:
         - '#113333'

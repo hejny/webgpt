@@ -1,56 +1,55 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#dd4466'
+    - '#aa3355'
     - '#ffffff'
-    - '#1199cc'
-    - '#002200'
-averageColor: '#275b62'
+    - '#88dd33'
+    - '#33ccdd'
+    - '#001100'
+averageColor: '#285c63'
 lightestColor: '#ffffff'
-darkestColor: '#002200'
+darkestColor: '#001111'
 mostFrequentColors:
     - '#112233'
     - '#338888'
     - '#77dddd'
-    - '#dd9988'
-    - '#88ee44'
-    - '#bb2244'
+    - '#aa3355'
+    - '#ffbb99'
 mostSatulightedColors:
-    - '#22ccdd'
-    - '#88ffcc'
-    - '#dd4466'
+    - '#33ccdd'
+    - '#77eebb'
+    - '#aa3355'
 mostGroupedColors:
     - '#113333'
 bottomHalf:
     averageColor: '#1c4f56'
-    lightestColor: '#ffffff'
-    darkestColor: '#002200'
+    lightestColor: '#ccffff'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#001122'
-        - '#227788'
-        - '#66dddd'
-        - '#ffeeee'
-        - '#993311'
-        - '#bb9977'
+        - '#339999'
+        - '#88eeee'
+        - '#bb3344'
+        - '#dd9999'
     mostSatulightedColors:
-        - '#1199cc'
-        - '#77ffdd'
-        - '#dd4466'
+        - '#33ccdd'
+        - '#77eebb'
+        - '#aa3355'
     mostGroupedColors:
-        - '#226677'
+        - '#001111'
 bottomThird:
-    averageColor: '#18434a'
-    lightestColor: '#ffddff'
-    darkestColor: '#002200'
+    averageColor: '#18444a'
+    lightestColor: '#cceeff'
+    darkestColor: '#000000'
     mostFrequentColors:
         - '#001122'
         - '#44bbbb'
+        - '#775566'
         - '#bbffff'
-        - '#666655'
-        - '#77dd33'
-        - '#dd99aa'
+        - '#88dd33'
     mostSatulightedColors:
-        - '#1199cc'
-        - '#77ffdd'
+        - '#44ccee'
+        - '#66ddaa'
+        - '#aa3355'
     mostGroupedColors:
         - '#001111'
 bottomLine:
@@ -60,6 +59,6 @@ bottomLine:
     mostFrequentColors:
         - '#001122'
     mostSatulightedColors:
-        - '#115566'
+        - '#004455'
     mostGroupedColors:
-        - '#001122'
+        - '#001111'

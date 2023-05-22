@@ -1,68 +1,64 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#ee0044'
+    - '#000000'
     - '#ffffff'
     - '#88cc33'
-    - '#00ddff'
-averageColor: '#191d1c'
-lightestColor: '#ccffff'
+    - '#11ddff'
+averageColor: '#191d1b'
+lightestColor: '#bbffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#000000'
-    - '#226677'
+    - '#226666'
     - '#dd1133'
-    - '#22dddd'
     - '#99bb22'
-    - '#cceecc'
-    - '#ff8888'
+    - '#22dddd'
+    - '#ffbb99'
 mostSatulightedColors:
-    - '#00eeff'
-    - '#ee1155'
+    - '#11eeff'
+    - '#ee1144'
 mostGroupedColors:
     - '#000000'
 bottomHalf:
     averageColor: '#151d1c'
-    lightestColor: '#88ffff'
+    lightestColor: '#66ffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
         - '#22bbbb'
         - '#335566'
-        - '#dd1133'
+        - '#ee1133'
         - '#88cc33'
+        - '#ff8866'
         - '#cceecc'
-        - '#ff8855'
     mostSatulightedColors:
-        - '#00ddff'
-        - '#ee0044'
+        - '#11ddff'
     mostGroupedColors:
         - '#000000'
 bottomThird:
-    averageColor: '#151c1b'
-    lightestColor: '#77eeff'
+    averageColor: '#151d1b'
+    lightestColor: '#66ffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
         - '#22bbbb'
         - '#335566'
-        - '#dd2233'
         - '#88bb22'
-        - '#ffaa88'
+        - '#dd1133'
     mostSatulightedColors:
-        - '#00ddff'
+        - '#11ddff'
     mostGroupedColors:
         - '#000000'
 bottomLine:
-    averageColor: '#090f12'
-    lightestColor: '#55cccc'
+    averageColor: '#090e11'
+    lightestColor: '#226666'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
-        - '#116666'
-        - '#bb2233'
-        - '#55cccc'
+        - '#226666'
     mostSatulightedColors:
-        - '#22aabb'
-        - '#dd3344'
+        - '#226666'
+        - '#771122'
+        - '#223344'
     mostGroupedColors:
         - '#000000'

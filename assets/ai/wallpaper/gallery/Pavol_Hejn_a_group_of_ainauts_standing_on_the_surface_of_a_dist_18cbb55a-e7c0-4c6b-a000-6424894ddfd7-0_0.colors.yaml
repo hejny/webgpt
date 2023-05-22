@@ -1,44 +1,39 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#558899'
+    - '#336677'
     - '#ffffff'
-    - '#110011'
 averageColor: '#5f6a71'
-lightestColor: '#ffffff'
+lightestColor: '#ffffee'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#334455'
     - '#99aaaa'
     - '#ffffee'
 mostSatulightedColors:
-    - '#88aacc'
-    - '#eebbaa'
-    - '#77aaaa'
-    - '#aa7788'
-    - '#99aa77'
-    - '#665577'
-    - '#bbbbdd'
+    - '#557799'
+    - '#ffddcc'
+    - '#bbdddd'
+    - '#8888aa'
 mostGroupedColors:
     - '#334455'
 bottomHalf:
-    averageColor: '#5c6467'
-    lightestColor: '#ddeeee'
+    averageColor: '#5c6468'
+    lightestColor: '#ffddcc'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#110000'
         - '#99aaaa'
         - '#555555'
     mostSatulightedColors:
-        - '#558899'
-        - '#ffeecc'
-        - '#99aa77'
-        - '#554466'
-        - '#555577'
-        - '#cceedd'
+        - '#336677'
+        - '#ffddcc'
+        - '#444466'
+        - '#aaccbb'
+        - '#ddddbb'
     mostGroupedColors:
         - '#110000'
 bottomThird:
-    averageColor: '#4a5156'
+    averageColor: '#4a5256'
     lightestColor: '#ddeeee'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -46,23 +41,20 @@ bottomThird:
         - '#aabbbb'
         - '#445566'
     mostSatulightedColors:
-        - '#336677'
-        - '#99aa77'
+        - '#7799aa'
         - '#555577'
-        - '#cceedd'
+        - '#aaccbb'
+        - '#776655'
     mostGroupedColors:
         - '#110000'
 bottomLine:
-    averageColor: '#0d0303'
-    lightestColor: '#555566'
+    averageColor: '#0c0303'
+    lightestColor: '#444455'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#110000'
-        - '#555566'
     mostSatulightedColors:
-        - '#334455'
-        - '#110011'
-        - '#555566'
-        - '#334444'
+        - '#444455'
+        - '#221111'
     mostGroupedColors:
-        - '#000000'
+        - '#110000'

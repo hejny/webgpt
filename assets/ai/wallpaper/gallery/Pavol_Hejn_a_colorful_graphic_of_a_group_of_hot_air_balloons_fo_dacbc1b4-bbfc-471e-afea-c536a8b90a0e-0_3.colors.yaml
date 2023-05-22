@@ -1,12 +1,11 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#881122'
+    - '#557788'
     - '#ffffff'
-    - '#88aabb'
-    - '#ffcc55'
-averageColor: '#babba1'
+    - '#221100'
+averageColor: '#b9bba2'
 lightestColor: '#ffffff'
-darkestColor: '#001100'
+darkestColor: '#221100'
 mostFrequentColors:
     - '#77cccc'
     - '#dd5544'
@@ -15,54 +14,54 @@ mostFrequentColors:
     - '#ffcc55'
 mostSatulightedColors:
     - '#66dddd'
-    - '#ff9955'
-    - '#eeee77'
-    - '#aaeecc'
+    - '#ffbb55'
+    - '#dd4444'
+    - '#88ccaa'
+    - '#eeffbb'
 mostGroupedColors:
     - '#77cccc'
 bottomHalf:
-    averageColor: '#d3c4a6'
+    averageColor: '#d2c4a6'
     lightestColor: '#ffffff'
-    darkestColor: '#001100'
+    darkestColor: '#221100'
     mostFrequentColors:
         - '#ffddaa'
         - '#dd5544'
         - '#557777'
         - '#441111'
     mostSatulightedColors:
-        - '#88eedd'
+        - '#77ddcc'
         - '#ff9955'
-        - '#ffffaa'
-        - '#881122'
-        - '#88aabb'
+        - '#cccc77'
+        - '#557788'
+        - '#bbeecc'
     mostGroupedColors:
-        - '#ffddaa'
+        - '#aaddcc'
 bottomThird:
     averageColor: '#ddceae'
     lightestColor: '#ffffff'
-    darkestColor: '#001100'
+    darkestColor: '#221100'
     mostFrequentColors:
         - '#ffddaa'
         - '#dd5544'
         - '#557777'
-        - '#441111'
+        - '#661111'
     mostSatulightedColors:
-        - '#88eedd'
+        - '#77ddcc'
         - '#ff9955'
-        - '#ffffaa'
-        - '#881122'
+        - '#cccc77'
         - '#557788'
+        - '#bbeecc'
     mostGroupedColors:
-        - '#ffddaa'
+        - '#aaddcc'
 bottomLine:
     averageColor: '#fddaa9'
     lightestColor: '#ffeecc'
-    darkestColor: '#663311'
+    darkestColor: '#774422'
     mostFrequentColors:
         - '#ffddaa'
-        - '#774433'
+        - '#774422'
     mostSatulightedColors:
         - '#ffcc99'
-        - '#773333'
     mostGroupedColors:
         - '#ffddaa'

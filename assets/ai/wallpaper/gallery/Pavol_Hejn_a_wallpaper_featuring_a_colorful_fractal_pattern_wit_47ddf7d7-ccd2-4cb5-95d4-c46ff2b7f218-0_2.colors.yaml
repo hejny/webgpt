@@ -1,68 +1,64 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#4477aa'
     - '#ffffff'
-    - '#44ffff'
-    - '#ffaa55'
+    - '#33eedd'
+    - '#ffcc55'
 averageColor: '#3c2a20'
-lightestColor: '#ffffff'
+lightestColor: '#ffeedd'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#111111'
     - '#aa5522'
     - '#227777'
-    - '#ffee77'
-    - '#66ddcc'
+    - '#eedd66'
+    - '#55eedd'
 mostSatulightedColors:
-    - '#44ffff'
+    - '#44eeee'
     - '#4477aa'
-    - '#ff6677'
-    - '#ffaa55'
-    - '#ffff55'
+    - '#ee5566'
+    - '#ffcc55'
 mostGroupedColors:
     - '#001111'
 bottomHalf:
     averageColor: '#2f2924'
-    lightestColor: '#ccffff'
+    lightestColor: '#ccffee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#995533'
         - '#228888'
+        - '#77eedd'
         - '#eebb66'
-        - '#55eedd'
     mostSatulightedColors:
-        - '#44ffff'
+        - '#33eedd'
         - '#4477aa'
-        - '#cc4466'
-        - '#ffaa55'
+        - '#ffcc55'
+        - '#dd7799'
     mostGroupedColors:
-        - '#110000'
+        - '#000000'
 bottomThird:
     averageColor: '#23201f'
-    lightestColor: '#aaffff'
+    lightestColor: '#88eeee'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#000000'
-        - '#116666'
-        - '#bb6666'
-        - '#44ccbb'
-        - '#ffcccc'
+        - '#111111'
+        - '#227777'
+        - '#bb5566'
+        - '#44eeee'
     mostSatulightedColors:
-        - '#44ffff'
-        - '#cc4466'
-        - '#ff9966'
+        - '#44eeee'
+        - '#cc5577'
+        - '#ff9977'
     mostGroupedColors:
-        - '#110000'
+        - '#000000'
 bottomLine:
     averageColor: '#0a0d0f'
-    lightestColor: '#226666'
+    lightestColor: '#115555'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
-        - '#226666'
     mostSatulightedColors:
-        - '#226666'
-        - '#112233'
+        - '#115555'
     mostGroupedColors:
         - '#000000'

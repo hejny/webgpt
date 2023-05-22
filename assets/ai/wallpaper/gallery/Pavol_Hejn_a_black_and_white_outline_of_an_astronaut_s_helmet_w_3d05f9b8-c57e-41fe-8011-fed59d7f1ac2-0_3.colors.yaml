@@ -1,28 +1,26 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#221122'
+    - '#000000'
     - '#ffffff'
-    - '#888877'
+    - '#aaaabb'
 averageColor: '#2b2b2a'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#000000'
-    - '#555555'
-    - '#aaaaaa'
-    - '#ffffff'
+    - '#666666'
+    - '#dddddd'
 mostSatulightedColors:
-    - '#554455'
-    - '#eeffff'
-    - '#eeeeff'
-    - '#332211'
+    - '#221122'
+    - '#ddeeee'
+    - '#aaaabb'
     - '#ffffee'
-    - '#ffeeee'
+    - '#eedddd'
     - '#eeffee'
 mostGroupedColors:
     - '#000000'
 bottomHalf:
-    averageColor: '#2b2b2a'
+    averageColor: '#2c2b2a'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -31,16 +29,16 @@ bottomHalf:
         - '#aaaaaa'
         - '#ffffff'
     mostSatulightedColors:
-        - '#221122'
-        - '#eeffff'
-        - '#ddddee'
-        - '#ffeeee'
-        - '#ffffee'
+        - '#eeddee'
+        - '#ddeeee'
+        - '#aaaabb'
+        - '#eeeedd'
+        - '#eedddd'
         - '#eeffee'
     mostGroupedColors:
         - '#000000'
 bottomThird:
-    averageColor: '#292827'
+    averageColor: '#292828'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -49,24 +47,22 @@ bottomThird:
         - '#aaaaaa'
         - '#ffffee'
     mostSatulightedColors:
-        - '#998899'
-        - '#ddeeee'
-        - '#ddddee'
+        - '#110011'
+        - '#bbbbcc'
         - '#ffffee'
-        - '#ffeeee'
+        - '#eedddd'
         - '#eeffee'
+        - '#223333'
     mostGroupedColors:
         - '#000000'
 bottomLine:
     averageColor: '#020202'
-    lightestColor: '#888877'
+    lightestColor: '#666666'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000000'
-        - '#555555'
+        - '#666666'
     mostSatulightedColors:
-        - '#445555'
-        - '#888877'
-        - '#332222'
+        - '#000000'
     mostGroupedColors:
         - '#000000'

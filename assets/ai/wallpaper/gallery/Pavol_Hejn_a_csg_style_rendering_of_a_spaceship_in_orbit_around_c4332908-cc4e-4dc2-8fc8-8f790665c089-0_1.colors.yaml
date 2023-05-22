@@ -1,28 +1,26 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#aa5555'
-    - '#ffffff'
-    - '#77aacc'
-    - '#ffbb55'
     - '#000011'
-averageColor: '#3a404b'
+    - '#ffffff'
+    - '#335577'
+    - '#ffcc55'
+averageColor: '#3b414c'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#000011'
     - '#ffffff'
-    - '#445577'
+    - '#335577'
     - '#88aacc'
     - '#cc5511'
     - '#ffbb55'
 mostSatulightedColors:
-    - '#88ccff'
+    - '#77bbee'
     - '#ffbb55'
-    - '#eeffaa'
 mostGroupedColors:
     - '#000000'
 bottomHalf:
-    averageColor: '#1d1f28'
+    averageColor: '#1d1f29'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -32,41 +30,39 @@ bottomHalf:
         - '#dd6611'
         - '#ffdd55'
     mostSatulightedColors:
-        - '#99ddff'
-        - '#ffbb55'
-        - '#eeffaa'
-        - '#aa5555'
+        - '#ffcc55'
+        - '#99ccee'
+        - '#aa5544'
+        - '#eeffbb'
         - '#9999cc'
     mostGroupedColors:
         - '#000011'
 bottomThird:
-    averageColor: '#0d0f18'
+    averageColor: '#0e0f18'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000011'
         - '#335577'
-        - '#ffaa33'
-        - '#ffeecc'
-        - '#aa4411'
-        - '#77aacc'
+        - '#bb5511'
+        - '#ffbb44'
+        - '#ffffdd'
+        - '#88aacc'
     mostSatulightedColors:
-        - '#5588bb'
         - '#ffcc55'
-        - '#eeffaa'
-        - '#bb5544'
-        - '#554477'
+        - '#88bbdd'
+        - '#bb6655'
     mostGroupedColors:
         - '#000011'
 bottomLine:
     averageColor: '#000109'
-    lightestColor: '#222233'
+    lightestColor: '#111122'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#000000'
+        - '#000011'
     mostSatulightedColors:
         - '#001122'
-        - '#222233'
-        - '#112222'
+        - '#111122'
+        - '#001111'
     mostGroupedColors:
         - '#000011'

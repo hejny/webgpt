@@ -1,8 +1,8 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#556688'
     - '#ffffff'
-averageColor: '#283641'
+averageColor: '#273541'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
@@ -10,31 +10,13 @@ mostFrequentColors:
     - '#778888'
     - '#ccdddd'
 mostSatulightedColors:
-    - '#668899'
-    - '#887799'
-    - '#9999bb'
-    - '#ddffee'
-    - '#bbddbb'
+    - '#446677'
+    - '#777799'
+    - '#779988'
 mostGroupedColors:
     - '#112233'
 bottomHalf:
-    averageColor: '#283641'
-    lightestColor: '#ffffff'
-    darkestColor: '#000000'
-    mostFrequentColors:
-        - '#112233'
-        - '#778888'
-        - '#ccdddd'
-    mostSatulightedColors:
-        - '#556688'
-        - '#558888'
-        - '#887799'
-        - '#ddffee'
-        - '#bbddbb'
-    mostGroupedColors:
-        - '#112233'
-bottomThird:
-    averageColor: '#24313d'
+    averageColor: '#283541'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -42,23 +24,35 @@ bottomThird:
         - '#889999'
         - '#eeeeee'
     mostSatulightedColors:
-        - '#558888'
         - '#556688'
-        - '#cceedd'
+        - '#aacccc'
+        - '#779988'
+    mostGroupedColors:
+        - '#112233'
+bottomThird:
+    averageColor: '#24313c'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - '#112233'
+        - '#889999'
+        - '#ddeeee'
+    mostSatulightedColors:
+        - '#446677'
+        - '#444466'
+        - '#bbddcc'
     mostGroupedColors:
         - '#112233'
 bottomLine:
     averageColor: '#121f2a'
-    lightestColor: '#ccdddd'
+    lightestColor: '#889999'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#001122'
-        - '#778888'
-        - '#ccdddd'
+        - '#777788'
     mostSatulightedColors:
         - '#667788'
-        - '#222244'
-        - '#224444'
-        - '#665566'
+        - '#889999'
+        - '#777788'
     mostGroupedColors:
         - '#001122'

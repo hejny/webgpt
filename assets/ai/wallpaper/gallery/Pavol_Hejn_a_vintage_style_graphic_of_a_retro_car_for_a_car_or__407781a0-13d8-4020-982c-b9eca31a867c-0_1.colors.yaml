@@ -1,62 +1,56 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#771133'
-    - '#ffffff'
-    - '#669999'
+    - '#ffcc99'
+    - '#000000'
+    - '#447766'
 averageColor: '#eabd8f'
-lightestColor: '#ffffff'
-darkestColor: '#000000'
+lightestColor: '#ffffee'
+darkestColor: '#110011'
 mostFrequentColors:
     - '#ffcc99'
     - '#223333'
     - '#cc4433'
     - '#779977'
 mostSatulightedColors:
-    - '#ff7755'
-    - '#ffdd88'
-    - '#771133'
-    - '#eeffbb'
-    - '#669999'
-    - '#556688'
-    - '#99cc88'
-    - '#99ccaa'
+    - '#ff7766'
+    - '#ffdd99'
+    - '#223355'
+    - '#ddeebb'
+    - '#88bb99'
 mostGroupedColors:
     - '#ffcc99'
 bottomHalf:
-    averageColor: '#dfb187'
-    lightestColor: '#ffeeee'
-    darkestColor: '#000000'
-    mostFrequentColors:
-        - '#ffcc99'
-        - '#223333'
-        - '#cc4433'
-        - '#779977'
-    mostSatulightedColors:
-        - '#ff7755'
-        - '#ffdd88'
-        - '#771133'
-        - '#bbcc88'
-        - '#669999'
-        - '#223355'
-        - '#88bb99'
-    mostGroupedColors:
-        - '#ffcc99'
-bottomThird:
-    averageColor: '#f1c292'
-    lightestColor: '#ffeebb'
+    averageColor: '#deb187'
+    lightestColor: '#eeffee'
     darkestColor: '#111111'
     mostFrequentColors:
         - '#ffcc99'
         - '#223333'
-        - '#997766'
+        - '#ee6633'
+        - '#779977'
+    mostSatulightedColors:
+        - '#ff9966'
+        - '#ffee99'
+        - '#aa4455'
+        - '#223355'
+        - '#ccddaa'
+        - '#447766'
+    mostGroupedColors:
+        - '#ffcc99'
+bottomThird:
+    averageColor: '#f0c292'
+    lightestColor: '#ffeebb'
+    darkestColor: '#112222'
+    mostFrequentColors:
+        - '#ffcc99'
+        - '#223333'
     mostSatulightedColors:
         - '#ffcc88'
-        - '#ccddaa'
     mostGroupedColors:
         - '#ffcc99'
 bottomLine:
     averageColor: '#ffcc99'
-    lightestColor: '#ffddaa'
+    lightestColor: '#ffcc99'
     darkestColor: '#eecc99'
     mostFrequentColors:
         - '#ffcc99'

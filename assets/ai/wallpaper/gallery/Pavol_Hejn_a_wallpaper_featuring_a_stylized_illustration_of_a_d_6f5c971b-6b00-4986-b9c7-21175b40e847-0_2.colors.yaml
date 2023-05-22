@@ -1,68 +1,63 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#003366'
+    - '#111111'
     - '#ffffff'
-    - '#669999'
-    - '#ffbb55'
+    - '#eeaa66'
+    - '#118877'
 averageColor: '#37312b'
-lightestColor: '#bbddee'
+lightestColor: '#aaddcc'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#111111'
     - '#996644'
-    - '#ddcc99'
-    - '#118888'
+    - '#88bbbb'
 mostSatulightedColors:
-    - '#227799'
-    - '#ffbb55'
-    - '#99ddcc'
-    - '#ccdd99'
+    - '#118877'
+    - '#eeaa66'
 mostGroupedColors:
     - '#111111'
 bottomHalf:
     averageColor: '#362a22'
-    lightestColor: '#ffddbb'
+    lightestColor: '#ddddbb'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#996644'
-        - '#eebb88'
+        - '#eecc88'
     mostSatulightedColors:
-        - '#ffbb55'
-        - '#003366'
-        - '#669999'
-        - '#222255'
-        - '#883333'
+        - '#eeaa66'
+        - '#224455'
+        - '#aaaa77'
+        - '#336655'
+        - '#773333'
     mostGroupedColors:
         - '#111111'
 bottomThird:
     averageColor: '#332821'
-    lightestColor: '#ffddbb'
+    lightestColor: '#ddddbb'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#996644'
         - '#eebb88'
     mostSatulightedColors:
-        - '#ffbb55'
-        - '#114455'
-        - '#222255'
-        - '#883333'
-        - '#669988'
+        - '#eeaa55'
+        - '#224455'
+        - '#336655'
     mostGroupedColors:
         - '#111111'
 bottomLine:
-    averageColor: '#191716'
-    lightestColor: '#aaaaaa'
+    averageColor: '#1a1817'
+    lightestColor: '#999988'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#999988'
     mostSatulightedColors:
-        - '#884422'
-        - '#112233'
+        - '#773311'
         - '#999977'
         - '#002222'
-        - '#331122'
+        - '#001122'
+        - '#110011'
     mostGroupedColors:
         - '#111111'

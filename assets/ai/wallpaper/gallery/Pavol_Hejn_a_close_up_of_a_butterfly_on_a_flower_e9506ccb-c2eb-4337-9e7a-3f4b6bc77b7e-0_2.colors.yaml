@@ -1,66 +1,64 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#221100'
+    - '#445577'
     - '#ffffff'
-    - '#99bb55'
+    - '#ffee44'
 averageColor: '#6a5919'
-lightestColor: '#ffffff'
+lightestColor: '#eeeeee'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#555511'
     - '#ffdd00'
-    - '#ccbb99'
-    - '#ee5500'
+    - '#bb9977'
+    - '#eeeedd'
+    - '#ff5500'
 mostSatulightedColors:
-    - '#ff6655'
-    - '#ffdd55'
-    - '#7799bb'
-    - '#99bb55'
-    - '#669999'
+    - '#ffee44'
+    - '#ee8844'
+    - '#556688'
+    - '#880011'
 mostGroupedColors:
     - '#111100'
 bottomHalf:
     averageColor: '#7a6012'
-    lightestColor: '#ffffff'
+    lightestColor: '#ffeeee'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ffdd00'
         - '#221100'
+        - '#ffdd00'
         - '#777733'
-        - '#ccbbaa'
+        - '#ddccbb'
         - '#ff5500'
     mostSatulightedColors:
-        - '#ff6655'
-        - '#ffdd55'
-        - '#99bb55'
-        - '#8899bb'
+        - '#ffee44'
+        - '#ee6633'
+        - '#445577'
     mostGroupedColors:
-        - '#ffdd00'
+        - '#442211'
 bottomThird:
     averageColor: '#725711'
-    lightestColor: '#ffeeff'
+    lightestColor: '#ffeeee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#221100'
         - '#ffdd00'
         - '#cc6600'
-        - '#ddccbb'
-        - '#556666'
+        - '#eeddcc'
+        - '#888888'
     mostSatulightedColors:
-        - '#ffdd55'
-        - '#dd4411'
-        - '#99bb55'
+        - '#ffdd44'
+        - '#bb2222'
     mostGroupedColors:
         - '#442211'
 bottomLine:
-    averageColor: '#61490a'
-    lightestColor: '#dddd77'
+    averageColor: '#60480a'
+    lightestColor: '#999944'
     darkestColor: '#111100'
     mostFrequentColors:
         - '#553311'
         - '#ffbb00'
     mostSatulightedColors:
-        - '#ddcc66'
+        - '#ffbb00'
         - '#773322'
     mostGroupedColors:
-        - '#553311'
+        - '#667722'

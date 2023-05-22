@@ -1,69 +1,60 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#448888'
+    - '#111111'
     - '#ffffff'
-    - '#ffaa55'
-    - '#111122'
+    - '#448888'
 averageColor: '#575c5a'
-lightestColor: '#ffffff'
+lightestColor: '#ffffee'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#111111'
     - '#ffeedd'
     - '#556666'
-    - '#dd9955'
-    - '#bb3300'
+    - '#ff8855'
 mostSatulightedColors:
-    - '#ffaa55'
-    - '#448899'
-    - '#ffff99'
-    - '#bbdd99'
-    - '#994444'
-    - '#558877'
+    - '#ff8855'
+    - '#ddcc77'
+    - '#557788'
 mostGroupedColors:
-    - '#111111'
+    - '#ffeedd'
 bottomHalf:
-    averageColor: '#2c3131'
-    lightestColor: '#ffffee'
+    averageColor: '#2d3231'
+    lightestColor: '#ffffdd'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#111111'
         - '#556666'
-        - '#ddbb88'
-        - '#bb3300'
+        - '#eecc99'
     mostSatulightedColors:
-        - '#ffaa66'
+        - '#ffcc77'
         - '#448888'
-        - '#113355'
-        - '#ffffbb'
+        - '#223355'
     mostGroupedColors:
         - '#111111'
 bottomThird:
-    averageColor: '#252927'
-    lightestColor: '#ffeedd'
-    darkestColor: '#000000'
+    averageColor: '#252928'
+    lightestColor: '#ffffdd'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#111111'
         - '#666666'
-        - '#ddbb88'
+        - '#ccbb99'
     mostSatulightedColors:
-        - '#ffbb77'
-        - '#448888'
-        - '#113355'
+        - '#ffbb88'
         - '#ffffbb'
-        - '#883333'
+        - '#002244'
+        - '#336666'
     mostGroupedColors:
         - '#111111'
 bottomLine:
     averageColor: '#0a0f10'
     lightestColor: '#222222'
-    darkestColor: '#000000'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#111111'
     mostSatulightedColors:
-        - '#112222'
         - '#111122'
-        - '#222211'
+        - '#112222'
         - '#112211'
     mostGroupedColors:
         - '#111111'

@@ -1,10 +1,11 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#001133'
     - '#ffffff'
-    - '#9955ee'
-    - '#00cc99'
-averageColor: '#555d7a'
+    - '#7755ee'
+    - '#ff55aa'
+    - '#22eedd'
+averageColor: '#565d7a'
 lightestColor: '#ffffff'
 darkestColor: '#000011'
 mostFrequentColors:
@@ -14,16 +15,15 @@ mostFrequentColors:
     - '#4488cc'
     - '#88ee99'
 mostSatulightedColors:
-    - '#00bbff'
-    - '#4466ee'
-    - '#9955ee'
-    - '#dd55dd'
+    - '#1188dd'
+    - '#22eedd'
+    - '#7755ee'
+    - '#cc55dd'
     - '#ff4499'
-    - '#00cc99'
 mostGroupedColors:
     - '#112244'
 bottomHalf:
-    averageColor: '#3b5c81'
+    averageColor: '#3c5c81'
     lightestColor: '#ffffff'
     darkestColor: '#000011'
     mostFrequentColors:
@@ -31,16 +31,14 @@ bottomHalf:
         - '#ffffff'
         - '#4488cc'
         - '#ff9955'
-        - '#dd55dd'
         - '#66ffff'
-        - '#993355'
+        - '#aa3355'
     mostSatulightedColors:
-        - '#00bbff'
-        - '#4466ee'
-        - '#9955ee'
-        - '#dd55dd'
+        - '#1188dd'
+        - '#22eedd'
+        - '#7755ee'
+        - '#cc55dd'
         - '#ff55aa'
-        - '#00cc99'
     mostGroupedColors:
         - '#001133'
 bottomThird:
@@ -52,25 +50,23 @@ bottomThird:
         - '#4488cc'
         - '#ffffff'
         - '#ff9955'
-        - '#aa3355'
         - '#66ffff'
     mostSatulightedColors:
-        - '#00bbff'
-        - '#4466ee'
-        - '#9955ee'
-        - '#00cc99'
+        - '#0099dd'
+        - '#7755ee'
+        - '#22ccaa'
         - '#ff3366'
     mostGroupedColors:
         - '#001133'
 bottomLine:
-    averageColor: '#3672a0'
-    lightestColor: '#88ffff'
-    darkestColor: '#001122'
+    averageColor: '#3672a1'
+    lightestColor: '#55eeff'
+    darkestColor: '#001133'
     mostFrequentColors:
         - '#223366'
         - '#55eeee'
     mostSatulightedColors:
-        - '#44eeff'
+        - '#55eeff'
         - '#3366cc'
     mostGroupedColors:
         - '#55eeee'

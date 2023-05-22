@@ -1,64 +1,61 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#aa1177'
     - '#ffffff'
     - '#cccc44'
-    - '#22bb66'
-    - '#004477'
-averageColor: '#573947'
-lightestColor: '#ee8877'
-darkestColor: '#111100'
+    - '#114477'
+averageColor: '#573847'
+lightestColor: '#ee7766'
+darkestColor: '#001111'
 mostFrequentColors:
     - '#222233'
     - '#ff6644'
     - '#22bb66'
 mostSatulightedColors:
-    - '#dd1166'
-    - '#771177'
-    - '#004477'
+    - '#aa1177'
+    - '#ff3355'
     - '#11bb77'
-    - '#ff9955'
+    - '#114477'
+    - '#662277'
+    - '#ff8844'
     - '#cccc44'
-    - '#553377'
 mostGroupedColors:
-    - '#441144'
+    - '#114466'
 bottomHalf:
     averageColor: '#523048'
-    lightestColor: '#cc6677'
-    darkestColor: '#112200'
+    lightestColor: '#aa1177'
+    darkestColor: '#000011'
     mostFrequentColors:
         - '#332244'
         - '#cc3355'
         - '#119966'
     mostSatulightedColors:
         - '#aa1177'
-        - '#772288'
         - '#ff3355'
-        - '#004477'
-        - '#008866'
+        - '#114477'
+        - '#662277'
         - '#ff7733'
-        - '#332266'
+        - '#119966'
     mostGroupedColors:
-        - '#441144'
+        - '#332244'
 bottomThird:
     averageColor: '#502f46'
-    lightestColor: '#bb4477'
-    darkestColor: '#000011'
+    lightestColor: '#ee4466'
+    darkestColor: '#112211'
     mostFrequentColors:
         - '#222233'
         - '#cc5544'
-        - '#119966'
     mostSatulightedColors:
         - '#aa1166'
         - '#662277'
-        - '#ff6655'
-        - '#228877'
-        - '#225577'
+        - '#ff6644'
+        - '#118866'
+        - '#114466'
     mostGroupedColors:
-        - '#112233'
+        - '#332244'
 bottomLine:
     averageColor: '#58303f'
-    lightestColor: '#bb5555'
+    lightestColor: '#aa3355'
     darkestColor: '#331111'
     mostFrequentColors:
         - '#222233'
@@ -68,4 +65,4 @@ bottomLine:
         - '#cc6644'
         - '#112244'
     mostGroupedColors:
-        - '#bb6644'
+        - '#222233'

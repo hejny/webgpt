@@ -1,66 +1,62 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#883355'
+    - '#221122'
     - '#ffffff'
     - '#9999aa'
-averageColor: '#b0918b'
+averageColor: '#b1918b'
 lightestColor: '#ffffff'
-darkestColor: '#000000'
+darkestColor: '#110000'
 mostFrequentColors:
     - '#221122'
     - '#777788'
-    - '#ffbb88'
-    - '#ff5522'
-    - '#88ddee'
+    - '#ffaa66'
+    - '#ffffff'
+    - '#55ccee'
+    - '#dd3322'
 mostSatulightedColors:
-    - '#44bbee'
-    - '#ff7788'
-    - '#ff9955'
-    - '#334488'
+    - '#55ccee'
+    - '#ff8855'
 mostGroupedColors:
     - '#221122'
 bottomHalf:
-    averageColor: '#9d8387'
+    averageColor: '#9e8387'
     lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#221122'
-        - '#ccaaaa'
-        - '#bb5533'
+        - '#ccdddd'
+        - '#aa6666'
     mostSatulightedColors:
-        - '#ff8866'
-        - '#883355'
-        - '#113355'
-        - '#aadddd'
-        - '#7777aa'
+        - '#ff8877'
+        - '#aaccdd'
+        - '#996688'
+        - '#ffeecc'
     mostGroupedColors:
         - '#221122'
 bottomThird:
-    averageColor: '#87676e'
+    averageColor: '#87686f'
     lightestColor: '#ffffff'
-    darkestColor: '#110000'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#221122'
         - '#9999aa'
         - '#ffeeee'
-        - '#bb4433'
     mostSatulightedColors:
-        - '#ff8866'
-        - '#aa6688'
+        - '#ff8877'
         - '#aaccdd'
-        - '#7777aa'
+        - '#996688'
     mostGroupedColors:
         - '#221122'
 bottomLine:
-    averageColor: '#2e2031'
+    averageColor: '#2f2031'
     lightestColor: '#665566'
     darkestColor: '#111111'
     mostFrequentColors:
         - '#221122'
     mostSatulightedColors:
-        - '#552244'
+        - '#553355'
         - '#554466'
-        - '#333355'
-        - '#664444'
+        - '#664455'
+        - '#442222'
     mostGroupedColors:
         - '#221122'

@@ -1,13 +1,13 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#dd1199'
+    - '#dd1188'
     - '#ffffff'
-    - '#ffaa55'
-    - '#66ccee'
-    - '#5555bb'
+    - '#ffbb55'
+    - '#55bbff'
+    - '#332255'
 averageColor: '#e47c74'
 lightestColor: '#ffddff'
-darkestColor: '#111111'
+darkestColor: '#440011'
 mostFrequentColors:
     - '#ffeeff'
     - '#ff9966'
@@ -16,16 +16,15 @@ mostFrequentColors:
     - '#332255'
     - '#66ccee'
 mostSatulightedColors:
-    - '#dd1199'
     - '#55bbff'
-    - '#9944dd'
-    - '#ff3355'
-    - '#5555bb'
-    - '#ffaa55'
+    - '#dd1188'
+    - '#8844dd'
+    - '#ff3344'
+    - '#ffbb55'
 mostGroupedColors:
     - '#ffeeff'
 bottomHalf:
-    averageColor: '#d66d74'
+    averageColor: '#d66d73'
     lightestColor: '#ffddff'
     darkestColor: '#111111'
     mostFrequentColors:
@@ -35,15 +34,14 @@ bottomHalf:
         - '#332255'
         - '#bb0011'
     mostSatulightedColors:
-        - '#dd1199'
-        - '#9944dd'
-        - '#ff3355'
-        - '#5555bb'
-        - '#ff9955'
+        - '#dd1188'
+        - '#8844dd'
+        - '#ff3344'
+        - '#ffbb55'
     mostGroupedColors:
         - '#eeccee'
 bottomThird:
-    averageColor: '#d26871'
+    averageColor: '#d16871'
     lightestColor: '#ffddff'
     darkestColor: '#330011'
     mostFrequentColors:
@@ -53,24 +51,22 @@ bottomThird:
         - '#332255'
         - '#bb0011'
     mostSatulightedColors:
-        - '#dd1199'
-        - '#9944dd'
-        - '#ff5566'
-        - '#ffaa55'
+        - '#dd1188'
+        - '#8844dd'
+        - '#ff8855'
     mostGroupedColors:
         - '#eeccee'
 bottomLine:
-    averageColor: '#ca5570'
+    averageColor: '#c95470'
     lightestColor: '#9955dd'
-    darkestColor: '#550022'
+    darkestColor: '#661122'
     mostFrequentColors:
         - '#8855dd'
         - '#ee5522'
         - '#661122'
-        - '#ffbb88'
     mostSatulightedColors:
         - '#8844dd'
         - '#dd3388'
         - '#ff9955'
     mostGroupedColors:
-        - '#cc5588'
+        - '#8855dd'

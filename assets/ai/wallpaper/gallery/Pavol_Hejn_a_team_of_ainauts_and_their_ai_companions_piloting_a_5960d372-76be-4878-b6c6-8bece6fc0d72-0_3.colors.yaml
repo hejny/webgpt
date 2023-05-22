@@ -1,63 +1,61 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#112233'
     - '#ffffff'
-    - '#33aa99'
-    - '#ffbb66'
+    - '#66bb99'
+    - '#eebb55'
 averageColor: '#263541'
-lightestColor: '#ddffff'
-darkestColor: '#000000'
+lightestColor: '#99ddee'
+darkestColor: '#110000'
 mostFrequentColors:
     - '#111122'
     - '#337788'
-    - '#99cccc'
-    - '#cc7744'
+    - '#aacccc'
+    - '#dd7744'
 mostSatulightedColors:
-    - '#2299bb'
-    - '#ffbb66'
-    - '#339977'
+    - '#3399bb'
+    - '#ffaa77'
+    - '#66bb99'
 mostGroupedColors:
     - '#001122'
 bottomHalf:
-    averageColor: '#2b3440'
-    lightestColor: '#ddffff'
-    darkestColor: '#000000'
+    averageColor: '#2b3540'
+    lightestColor: '#ddccee'
+    darkestColor: '#332200'
     mostFrequentColors:
         - '#111122'
         - '#337788'
-        - '#ccaa77'
-        - '#aa4422'
-        - '#88eeee'
+        - '#cc9966'
+        - '#ccddee'
     mostSatulightedColors:
-        - '#3388bb'
-        - '#33aa99'
-        - '#ffbb66'
+        - '#3399aa'
+        - '#ffbb77'
+        - '#66bb99'
     mostGroupedColors:
         - '#112233'
 bottomThird:
-    averageColor: '#262e3b'
-    lightestColor: '#ddffff'
-    darkestColor: '#000000'
+    averageColor: '#262f3b'
+    lightestColor: '#cceeee'
+    darkestColor: '#331100'
     mostFrequentColors:
         - '#111122'
         - '#337788'
-        - '#ccaa77'
-        - '#aa4422'
-        - '#ddffff'
+        - '#cc9966'
+        - '#cceeee'
     mostSatulightedColors:
-        - '#44aabb'
-        - '#ffbb66'
-        - '#7788bb'
-        - '#994455'
+        - '#3399aa'
+        - '#eebb55'
+        - '#334477'
     mostGroupedColors:
         - '#112233'
 bottomLine:
     averageColor: '#060c1b'
-    lightestColor: '#222233'
+    lightestColor: '#111133'
     darkestColor: '#000011'
     mostFrequentColors:
         - '#000011'
     mostSatulightedColors:
-        - '#001133'
+        - '#111133'
+        - '#112233'
     mostGroupedColors:
         - '#000011'

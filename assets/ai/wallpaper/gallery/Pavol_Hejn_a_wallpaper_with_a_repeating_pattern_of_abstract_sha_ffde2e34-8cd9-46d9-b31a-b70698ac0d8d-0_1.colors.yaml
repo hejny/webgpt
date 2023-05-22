@@ -1,48 +1,26 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#cc4466'
+    - '#112244'
     - '#ffffff'
-    - '#eecc55'
-    - '#55bbdd'
-    - '#002211'
-averageColor: '#8b7a73'
-lightestColor: '#ffffff'
-darkestColor: '#002211'
+    - '#ffbb55'
+averageColor: '#8c7b73'
+lightestColor: '#ffeeee'
+darkestColor: '#332222'
 mostFrequentColors:
     - '#112244'
     - '#ee5533'
     - '#ffffee'
     - '#88bbcc'
-    - '#eecc55'
 mostSatulightedColors:
-    - '#55bbdd'
-    - '#cc4466'
+    - '#3377aa'
     - '#ff8855'
-    - '#ffee88'
-    - '#8899cc'
-    - '#99ddcc'
+    - '#ffeeaa'
 mostGroupedColors:
     - '#112244'
 bottomHalf:
     averageColor: '#8e7b73'
-    lightestColor: '#ffffff'
-    darkestColor: '#001122'
-    mostFrequentColors:
-        - '#112244'
-        - '#ee5533'
-        - '#ffeedd'
-        - '#558899'
-    mostSatulightedColors:
-        - '#55bbdd'
-        - '#cc4466'
-        - '#ffaa55'
-        - '#8899cc'
-    mostGroupedColors:
-        - '#ee5533'
-bottomThird:
-    averageColor: '#917970'
-    lightestColor: '#ffffff'
-    darkestColor: '#001122'
+    lightestColor: '#ffeeee'
+    darkestColor: '#002222'
     mostFrequentColors:
         - '#112244'
         - '#ee5533'
@@ -50,15 +28,29 @@ bottomThird:
         - '#558899'
     mostSatulightedColors:
         - '#66aadd'
-        - '#cc4466'
-        - '#ffaa55'
-        - '#77ccbb'
+        - '#ffbb55'
+        - '#ff4433'
+    mostGroupedColors:
+        - '#ee5533'
+bottomThird:
+    averageColor: '#917970'
+    lightestColor: '#ffffee'
+    darkestColor: '#111122'
+    mostFrequentColors:
+        - '#112244'
+        - '#ee5533'
+        - '#ffeedd'
+        - '#558899'
+    mostSatulightedColors:
+        - '#66aadd'
+        - '#ffbb55'
+        - '#ee5555'
     mostGroupedColors:
         - '#ee5533'
 bottomLine:
-    averageColor: '#716a61'
-    lightestColor: '#ffeeee'
-    darkestColor: '#002233'
+    averageColor: '#726a61'
+    lightestColor: '#ffffee'
+    darkestColor: '#112233'
     mostFrequentColors:
         - '#112244'
         - '#cc3322'
@@ -67,7 +59,7 @@ bottomLine:
         - '#557799'
     mostSatulightedColors:
         - '#ffaa55'
-        - '#88ccdd'
+        - '#447799'
         - '#995555'
     mostGroupedColors:
-        - '#447788'
+        - '#cc3322'

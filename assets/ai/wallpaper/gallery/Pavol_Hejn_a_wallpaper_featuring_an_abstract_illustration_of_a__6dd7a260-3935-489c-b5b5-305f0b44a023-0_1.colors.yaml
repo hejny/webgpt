@@ -1,26 +1,24 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#ee2266'
+    - '#000011'
     - '#ffffff'
-    - '#4499bb'
-    - '#222266'
-averageColor: '#1b1927'
+    - '#3388aa'
+averageColor: '#1b1a27'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#000011'
     - '#445566'
     - '#ffeeaa'
-    - '#dd6644'
-    - '#77bbcc'
+    - '#dd8855'
+    - '#88aadd'
 mostSatulightedColors:
     - '#2255bb'
-    - '#ee2266'
-    - '#66ccdd'
-    - '#883388'
-    - '#ff8855'
-    - '#ffee88'
-    - '#664488'
+    - '#ee4477'
+    - '#99ffff'
+    - '#ff9955'
+    - '#773377'
+    - '#553377'
 mostGroupedColors:
     - '#000011'
 bottomHalf:
@@ -31,22 +29,20 @@ bottomHalf:
         - '#000011'
         - '#445566'
         - '#ffeeaa'
-        - '#dd6644'
-        - '#88aacc'
+        - '#ee7744'
     mostSatulightedColors:
-        - '#ee2266'
-        - '#4499bb'
-        - '#883388'
+        - '#ee4477'
+        - '#3388aa'
         - '#ff8855'
-        - '#ffee88'
+        - '#883377'
+        - '#ffee99'
         - '#664488'
         - '#bbffee'
-        - '#222266'
     mostGroupedColors:
         - '#000011'
 bottomThird:
-    averageColor: '#2b1d26'
-    lightestColor: '#ffffff'
+    averageColor: '#2c1d27'
+    lightestColor: '#ffffee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#000011'
@@ -54,21 +50,19 @@ bottomThird:
         - '#ffaa66'
         - '#ffffee'
     mostSatulightedColors:
-        - '#ee5577'
-        - '#ff8855'
-        - '#ffee88'
-        - '#334477'
-        - '#331144'
+        - '#ee3355'
+        - '#ff9955'
+        - '#223366'
     mostGroupedColors:
         - '#000011'
 bottomLine:
     averageColor: '#070c21'
-    lightestColor: '#445566'
+    lightestColor: '#222255'
     darkestColor: '#000011'
     mostFrequentColors:
         - '#000011'
-        - '#445566'
     mostSatulightedColors:
-        - '#223366'
+        - '#222255'
+        - '#223344'
     mostGroupedColors:
         - '#000011'

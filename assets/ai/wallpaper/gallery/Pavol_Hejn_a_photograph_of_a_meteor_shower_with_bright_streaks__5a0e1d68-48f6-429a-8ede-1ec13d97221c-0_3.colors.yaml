@@ -1,69 +1,65 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#221111'
+    - '#110011'
     - '#ffffff'
+    - '#225599'
     - '#ffaa55'
-    - '#3377cc'
 averageColor: '#5c3e43'
-lightestColor: '#ffeeff'
+lightestColor: '#eeccff'
 darkestColor: '#110000'
 mostFrequentColors:
     - '#222233'
     - '#ff8855'
     - '#776699'
     - '#eeccee'
-    - '#bb2200'
 mostSatulightedColors:
-    - '#3377cc'
+    - '#225599'
     - '#ffaa55'
-    - '#6655aa'
-    - '#ffff88'
-    - '#ffaacc'
-    - '#aa66aa'
+    - '#ffff99'
+    - '#dd99dd'
+    - '#bb99dd'
+    - '#dd8899'
 mostGroupedColors:
-    - '#221111'
+    - '#222233'
 bottomHalf:
-    averageColor: '#7a483b'
-    lightestColor: '#ffeeff'
+    averageColor: '#7a493b'
+    lightestColor: '#ffddee'
     darkestColor: '#110000'
     mostFrequentColors:
         - '#221111'
         - '#ff8855'
-        - '#ffeecc'
-        - '#bb2200'
+        - '#ffffbb'
     mostSatulightedColors:
         - '#ffaa55'
-        - '#ffff88'
-        - '#ffaacc'
-        - '#996699'
+        - '#ffff99'
+        - '#dd8899'
     mostGroupedColors:
-        - '#221111'
+        - '#110011'
 bottomThird:
     averageColor: '#6b3d2c'
-    lightestColor: '#ffeeee'
+    lightestColor: '#ffdddd'
     darkestColor: '#110000'
     mostFrequentColors:
         - '#221111'
         - '#ff8855'
-        - '#ffeecc'
-        - '#bb2200'
+        - '#ffffbb'
     mostSatulightedColors:
         - '#ffaa55'
-        - '#ffff88'
+        - '#ffff99'
         - '#ee9999'
         - '#552244'
     mostGroupedColors:
-        - '#221111'
+        - '#110011'
 bottomLine:
     averageColor: '#1c0c12'
-    lightestColor: '#552222'
+    lightestColor: '#331122'
     darkestColor: '#000011'
     mostFrequentColors:
         - '#221111'
     mostSatulightedColors:
-        - '#552222'
         - '#331122'
+        - '#442211'
         - '#110011'
-        - '#332211'
+        - '#000011'
     mostGroupedColors:
-        - '#221111'
+        - '#110011'

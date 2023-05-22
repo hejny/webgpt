@@ -1,64 +1,64 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#ee4466'
+    - '#221122'
     - '#ffffff'
-    - '#11ccdd'
-    - '#221133'
-averageColor: '#6e5757'
-lightestColor: '#eeffff'
-darkestColor: '#001100'
+    - '#ffaa55'
+    - '#11dddd'
+averageColor: '#6e5857'
+lightestColor: '#eeffee'
+darkestColor: '#111100'
 mostFrequentColors:
     - '#221122'
     - '#ff8844'
     - '#118899'
     - '#aabbbb'
 mostSatulightedColors:
-    - '#00dddd'
-    - '#ff4466'
-    - '#4477aa'
+    - '#11ccdd'
+    - '#ee4466'
 mostGroupedColors:
     - '#221122'
 bottomHalf:
-    averageColor: '#6d5955'
-    lightestColor: '#ffffee'
-    darkestColor: '#001100'
+    averageColor: '#6e5955'
+    lightestColor: '#eeffee'
+    darkestColor: '#221100'
     mostFrequentColors:
         - '#221122'
         - '#ff9944'
         - '#118899'
         - '#994477'
-        - '#77ddcc'
+        - '#44eedd'
+        - '#eeeebb'
     mostSatulightedColors:
-        - '#11ccdd'
-        - '#ee4466'
+        - '#11dddd'
+        - '#ee5577'
+        - '#114477'
     mostGroupedColors:
         - '#221133'
 bottomThird:
     averageColor: '#615353'
-    lightestColor: '#ffffee'
-    darkestColor: '#001100'
+    lightestColor: '#eeeeee'
+    darkestColor: '#221100'
     mostFrequentColors:
         - '#221122'
         - '#118899'
         - '#ffaa44'
         - '#aa4455'
-        - '#99ccbb'
+        - '#ccffee'
     mostSatulightedColors:
-        - '#00bbcc'
+        - '#00cccc'
         - '#ee5577'
+        - '#225588'
         - '#ffaa55'
-        - '#002266'
     mostGroupedColors:
-        - '#221122'
+        - '#221133'
 bottomLine:
-    averageColor: '#476767'
-    lightestColor: '#99cccc'
-    darkestColor: '#001100'
+    averageColor: '#466767'
+    lightestColor: '#bbbbbb'
+    darkestColor: '#331100'
     mostFrequentColors:
         - '#221122'
         - '#009999'
-        - '#ee9955'
-        - '#99cccc'
+        - '#aaaa99'
     mostSatulightedColors:
         - '#00bbcc'
         - '#ff9955'

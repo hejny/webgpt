@@ -1,58 +1,53 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#663344'
+    - '#993322'
     - '#ffffff'
-    - '#6699aa'
-    - '#eebb66'
-averageColor: '#979d97'
+    - '#88aabb'
+averageColor: '#989d97'
 lightestColor: '#ffffff'
-darkestColor: '#001100'
+darkestColor: '#221100'
 mostFrequentColors:
     - '#eeddcc'
-    - '#779999'
-    - '#334444'
-    - '#cc3311'
-    - '#ffaa33'
+    - '#445566'
+    - '#dd7722'
 mostSatulightedColors:
-    - '#ffbb55'
-    - '#77aacc'
-    - '#dd2211'
-    - '#99aa66'
+    - '#6699bb'
+    - '#ff7733'
+    - '#cccc77'
     - '#88bbaa'
 mostGroupedColors:
     - '#ffeeee'
 bottomHalf:
     averageColor: '#96a09a'
     lightestColor: '#ffffff'
-    darkestColor: '#111111'
+    darkestColor: '#221111'
     mostFrequentColors:
         - '#eeddcc'
         - '#668888'
         - '#223333'
     mostSatulightedColors:
-        - '#eebb66'
-        - '#6699aa'
-        - '#99aa66'
-        - '#88bbaa'
-        - '#663344'
+        - '#eecc77'
+        - '#88aabb'
+        - '#993322'
+        - '#669988'
+        - '#aabb88'
     mostGroupedColors:
-        - '#557788'
+        - '#334455'
 bottomThird:
     averageColor: '#8c9996'
     lightestColor: '#ffffff'
-    darkestColor: '#111111'
+    darkestColor: '#221111'
     mostFrequentColors:
-        - '#557788'
+        - '#668888'
         - '#ddcccc'
-        - '#332222'
+        - '#223333'
     mostSatulightedColors:
-        - '#eebb66'
-        - '#6699aa'
-        - '#99aa66'
-        - '#88bbaa'
-        - '#663344'
+        - '#ddcc66'
+        - '#eeaa88'
+        - '#88aabb'
+        - '#558877'
     mostGroupedColors:
-        - '#557788'
+        - '#334455'
 bottomLine:
     averageColor: '#7f9091'
     lightestColor: '#ffeeee'
@@ -63,8 +58,7 @@ bottomLine:
     mostSatulightedColors:
         - '#ffddbb'
         - '#7799aa'
-        - '#ffdddd'
         - '#99bbaa'
-        - '#ddddbb'
+        - '#aaaa88'
     mostGroupedColors:
-        - '#557788'
+        - '#446677'

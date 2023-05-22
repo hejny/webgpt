@@ -1,27 +1,27 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#aa0099'
+    - '#bb22aa'
     - '#ffffff'
-    - '#1133bb'
-    - '#00ccee'
-averageColor: '#14294f'
+    - '#11bbee'
+    - '#2244aa'
+averageColor: '#142a50'
 lightestColor: '#ffffff'
-darkestColor: '#000000'
+darkestColor: '#000011'
 mostFrequentColors:
     - '#001122'
     - '#116699'
     - '#eeffff'
-    - '#66ccdd'
     - '#aa55bb'
+    - '#66ccdd'
 mostSatulightedColors:
-    - '#bb22ee'
-    - '#00ccee'
-    - '#dd33aa'
-    - '#1133bb'
+    - '#00bbdd'
+    - '#bb66ff'
+    - '#dd44bb'
+    - '#1144aa'
 mostGroupedColors:
     - '#000011'
 bottomHalf:
-    averageColor: '#1a3a64'
+    averageColor: '#1a3b64'
     lightestColor: '#ffffff'
     darkestColor: '#000011'
     mostFrequentColors:
@@ -31,14 +31,15 @@ bottomHalf:
         - '#66ccdd'
         - '#dd55bb'
     mostSatulightedColors:
-        - '#00ccee'
-        - '#aa0099'
-        - '#8855ee'
-        - '#1133bb'
+        - '#11bbee'
+        - '#bb22aa'
+        - '#4411aa'
+        - '#2244aa'
+        - '#66ddbb'
     mostGroupedColors:
         - '#001133'
 bottomThird:
-    averageColor: '#143960'
+    averageColor: '#143a61'
     lightestColor: '#ffffff'
     darkestColor: '#000011'
     mostFrequentColors:
@@ -46,24 +47,23 @@ bottomThird:
         - '#116699'
         - '#eeffff'
         - '#66ccdd'
-        - '#aa4499'
+        - '#bb55aa'
     mostSatulightedColors:
-        - '#00ccee'
-        - '#aa0099'
-        - '#8855ee'
-        - '#1133bb'
+        - '#00aaee'
+        - '#aa1199'
+        - '#1122aa'
+        - '#6633aa'
     mostGroupedColors:
         - '#001133'
 bottomLine:
     averageColor: '#020e2e'
-    lightestColor: '#cc77cc'
+    lightestColor: '#666677'
     darkestColor: '#000011'
     mostFrequentColors:
         - '#001122'
         - '#666677'
     mostSatulightedColors:
-        - '#cc66bb'
-        - '#330055'
-        - '#001155'
+        - '#220055'
+        - '#112255'
     mostGroupedColors:
         - '#000011'

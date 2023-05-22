@@ -1,8 +1,8 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#552255'
+    - '#995566'
     - '#ffffff'
-    - '#4488aa'
+    - '#112233'
 averageColor: '#554146'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
@@ -11,16 +11,18 @@ mostFrequentColors:
     - '#557788'
     - '#ffccbb'
     - '#cc5533'
-    - '#77ccff'
 mostSatulightedColors:
-    - '#44aaee'
-    - '#ff7799'
+    - '#6699cc'
     - '#ff8855'
+    - '#993366'
+    - '#bbffff'
+    - '#aa88bb'
+    - '#9999cc'
 mostGroupedColors:
     - '#112233'
 bottomHalf:
     averageColor: '#534f5a'
-    lightestColor: '#ffffff'
+    lightestColor: '#eeeeee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#112233'
@@ -28,39 +30,39 @@ bottomHalf:
         - '#ffccbb'
         - '#dd7744'
     mostSatulightedColors:
-        - '#4488aa'
-        - '#ff7755'
-        - '#ffeeaa'
-        - '#eeaacc'
-        - '#552255'
-        - '#554477'
+        - '#ff8855'
+        - '#5588aa'
+        - '#995566'
+        - '#442255'
+        - '#222255'
     mostGroupedColors:
         - '#112233'
 bottomThird:
     averageColor: '#353948'
-    lightestColor: '#ffeeee'
+    lightestColor: '#ffffdd'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#112233'
         - '#667788'
         - '#ddccbb'
-        - '#dd5533'
     mostSatulightedColors:
-        - '#5588aa'
-        - '#ffbb88'
-        - '#eeaabb'
-        - '#442255'
-        - '#ffffcc'
+        - '#447799'
+        - '#dd8877'
+        - '#885577'
+        - '#ffeecc'
     mostGroupedColors:
         - '#112233'
 bottomLine:
     averageColor: '#130f1b'
-    lightestColor: '#223355'
+    lightestColor: '#223344'
     darkestColor: '#000011'
     mostFrequentColors:
         - '#111111'
     mostSatulightedColors:
-        - '#223355'
-        - '#442233'
+        - '#223344'
+        - '#111133'
+        - '#331122'
+        - '#110011'
+        - '#331111'
     mostGroupedColors:
-        - '#000011'
+        - '#111122'

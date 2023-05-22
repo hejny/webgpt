@@ -1,70 +1,61 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#dd4433'
+    - '#992233'
     - '#ffffff'
-    - '#ffbb55'
-    - '#5588bb'
+    - '#ffaa55'
+    - '#7777aa'
 averageColor: '#e28627'
-lightestColor: '#ffffee'
-darkestColor: '#110000'
+lightestColor: '#eedddd'
+darkestColor: '#330000'
 mostFrequentColors:
     - '#ffbb33'
     - '#552222'
     - '#889999'
-    - '#ee4411'
-    - '#eeeeee'
+    - '#ee4400'
 mostSatulightedColors:
-    - '#5588bb'
     - '#ffaa55'
-    - '#bb3344'
-    - '#eeee88'
-    - '#7777aa'
-    - '#669999'
+    - '#993333'
+    - '#7799aa'
 mostGroupedColors:
     - '#ffbb33'
 bottomHalf:
     averageColor: '#da711e'
-    lightestColor: '#ffffee'
-    darkestColor: '#110000'
+    lightestColor: '#eeeedd'
+    darkestColor: '#441100'
     mostFrequentColors:
         - '#ff9911'
         - '#552222'
-        - '#778899'
-        - '#ddddcc'
+        - '#778888'
+        - '#eeeedd'
     mostSatulightedColors:
-        - '#5588bb'
-        - '#ffbb55'
-        - '#dd4433'
+        - '#ffaa55'
+        - '#992233'
         - '#7777aa'
-        - '#558888'
     mostGroupedColors:
         - '#ff9911'
 bottomThird:
     averageColor: '#da6d1c'
-    lightestColor: '#ffffcc'
-    darkestColor: '#220000'
+    lightestColor: '#ffdd99'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#ff9911'
         - '#883322'
         - '#778899'
-        - '#eeee99'
     mostSatulightedColors:
-        - '#5588bb'
-        - '#ffaa55'
-        - '#eeee88'
-        - '#992233'
+        - '#ff9955'
+        - '#eedd11'
         - '#7777aa'
-        - '#558888'
+        - '#773344'
+        - '#669988'
     mostGroupedColors:
         - '#ff9911'
 bottomLine:
-    averageColor: '#d8641d'
+    averageColor: '#d8641e'
     lightestColor: '#dd6633'
     darkestColor: '#992211'
     mostFrequentColors:
         - '#ee6622'
     mostSatulightedColors:
-        - '#ff9922'
-        - '#993333'
+        - '#dd6633'
     mostGroupedColors:
         - '#ee6622'

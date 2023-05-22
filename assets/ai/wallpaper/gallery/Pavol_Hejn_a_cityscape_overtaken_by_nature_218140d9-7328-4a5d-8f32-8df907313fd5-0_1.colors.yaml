@@ -1,9 +1,9 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#334433'
     - '#ffffff'
-    - '#bbcc66'
-averageColor: '#949b89'
+    - '#aacc77'
+averageColor: '#949c8a'
 lightestColor: '#ffffff'
 darkestColor: '#001100'
 mostFrequentColors:
@@ -11,31 +11,32 @@ mostFrequentColors:
     - '#334433'
     - '#889999'
 mostSatulightedColors:
-    - '#ccdd77'
-    - '#bb9966'
-    - '#99cc88'
-    - '#99bbbb'
-    - '#8899aa'
+    - '#aacc77'
+    - '#ccbb88'
+    - '#669966'
+    - '#88aaaa'
+    - '#334455'
+    - '#aaccbb'
 mostGroupedColors:
     - '#eeeedd'
 bottomHalf:
-    averageColor: '#606b5a'
+    averageColor: '#606c5b'
     lightestColor: '#ffffff'
     darkestColor: '#001100'
     mostFrequentColors:
         - '#334433'
         - '#aabbaa'
     mostSatulightedColors:
-        - '#bbcc66'
-        - '#ccaa88'
-        - '#99cc88'
+        - '#aacc77'
+        - '#bbaa77'
         - '#88aaaa'
-        - '#8899aa'
-        - '#aaccbb'
+        - '#778899'
+        - '#99bbaa'
+        - '#88aa88'
     mostGroupedColors:
-        - '#ddddcc'
+        - '#aabbaa'
 bottomThird:
-    averageColor: '#525e4c'
+    averageColor: '#525f4d'
     lightestColor: '#ffffff'
     darkestColor: '#001100'
     mostFrequentColors:
@@ -43,24 +44,22 @@ bottomThird:
         - '#778888'
         - '#ddddcc'
     mostSatulightedColors:
-        - '#ddee99'
-        - '#99cc88'
-        - '#ffeecc'
-        - '#88aaaa'
+        - '#ccee99'
+        - '#ccbb99'
+        - '#779999'
         - '#778899'
-        - '#99bbaa'
+        - '#779988'
     mostGroupedColors:
         - '#ddddcc'
 bottomLine:
-    averageColor: '#202a1d'
+    averageColor: '#202b1d'
     lightestColor: '#99aa77'
-    darkestColor: '#002200'
+    darkestColor: '#001100'
     mostFrequentColors:
         - '#112222'
-        - '#778855'
+        - '#99aa77'
     mostSatulightedColors:
         - '#99aa77'
-        - '#557755'
         - '#113322'
     mostGroupedColors:
-        - '#111122'
+        - '#222211'

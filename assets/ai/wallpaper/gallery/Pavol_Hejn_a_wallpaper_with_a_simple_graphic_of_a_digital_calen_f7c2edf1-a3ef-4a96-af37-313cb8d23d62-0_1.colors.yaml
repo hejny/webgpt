@@ -1,9 +1,9 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#5544aa'
+    - '#554499'
     - '#ffffff'
     - '#33bb99'
-    - '#ffdd55'
+    - '#ffbb55'
 averageColor: '#a1806e'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
@@ -15,19 +15,17 @@ mostFrequentColors:
     - '#77eebb'
     - '#996611'
 mostSatulightedColors:
-    - '#ff66aa'
     - '#33bb99'
-    - '#553399'
-    - '#4455aa'
-    - '#226688'
+    - '#ff7799'
+    - '#4444aa'
     - '#ffbb55'
-    - '#ee5544'
-    - '#eeff99'
-    - '#884488'
+    - '#774488'
+    - '#88aacc'
+    - '#440033'
 mostGroupedColors:
     - '#554499'
 bottomHalf:
-    averageColor: '#977967'
+    averageColor: '#987967'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -38,19 +36,17 @@ bottomHalf:
         - '#77eebb'
         - '#996611'
     mostSatulightedColors:
-        - '#ff6688'
         - '#33bb99'
-        - '#5544aa'
-        - '#336699'
-        - '#ffdd55'
-        - '#ee7744'
-        - '#663377'
-        - '#551144'
-        - '#aaeebb'
+        - '#ff7788'
+        - '#ffbb55'
+        - '#554499'
+        - '#552266'
+        - '#557799'
+        - '#eebbdd'
     mostGroupedColors:
         - '#554499'
 bottomThird:
-    averageColor: '#8f7061'
+    averageColor: '#907061'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
@@ -60,23 +56,23 @@ bottomThird:
         - '#eeeeee'
         - '#996611'
     mostSatulightedColors:
-        - '#5544aa'
-        - '#ffaa55'
-        - '#ffaacc'
-        - '#552266'
-        - '#446688'
-        - '#447777'
+        - '#ffcc55'
+        - '#554499'
+        - '#cc3333'
+        - '#441144'
+        - '#557788'
+        - '#440022'
     mostGroupedColors:
         - '#554499'
 bottomLine:
     averageColor: '#aa8561'
-    lightestColor: '#eebb77'
+    lightestColor: '#444499'
     darkestColor: '#ffbb22'
     mostFrequentColors:
         - '#ffbb33'
         - '#444499'
     mostSatulightedColors:
         - '#ffbb44'
-        - '#554499'
+        - '#444499'
     mostGroupedColors:
         - '#ffbb33'

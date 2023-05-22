@@ -1,11 +1,10 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#dd4466'
-    - '#ffffff'
-    - '#2299bb'
-    - '#330044'
-averageColor: '#75a794'
-lightestColor: '#ffeeff'
+    - '#33aa99'
+    - '#000000'
+    - '#ffddbb'
+averageColor: '#74a794'
+lightestColor: '#ddffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#33aa99'
@@ -13,34 +12,18 @@ mostFrequentColors:
     - '#221133'
     - '#cc4444'
 mostSatulightedColors:
-    - '#2299bb'
-    - '#55eebb'
-    - '#ff5577'
-    - '#ff8855'
-    - '#551155'
+    - '#22aaaa'
+    - '#ee4455'
+    - '#ff9955'
+    - '#661144'
+    - '#220044'
+    - '#335577'
 mostGroupedColors:
     - '#33aa99'
 bottomHalf:
-    averageColor: '#75a592'
-    lightestColor: '#ffeeff'
-    darkestColor: '#000000'
-    mostFrequentColors:
-        - '#33aa99'
-        - '#ffddbb'
-        - '#cc4444'
-        - '#221133'
-    mostSatulightedColors:
-        - '#2299bb'
-        - '#55eebb'
-        - '#dd4466'
-        - '#ff8855'
-        - '#330044'
-    mostGroupedColors:
-        - '#33aa99'
-bottomThird:
-    averageColor: '#70ad98'
-    lightestColor: '#eeffff'
-    darkestColor: '#001111'
+    averageColor: '#76a592'
+    lightestColor: '#ddffff'
+    darkestColor: '#110011'
     mostFrequentColors:
         - '#33aa99'
         - '#ffddbb'
@@ -48,23 +31,39 @@ bottomThird:
         - '#221133'
     mostSatulightedColors:
         - '#22bbaa'
-        - '#dd4466'
+        - '#ee4455'
+        - '#ff9955'
+        - '#661144'
+        - '#220044'
+        - '#446688'
+    mostGroupedColors:
+        - '#33aa99'
+bottomThird:
+    averageColor: '#70ad98'
+    lightestColor: '#eeffff'
+    darkestColor: '#111111'
+    mostFrequentColors:
+        - '#33aa99'
+        - '#ffddbb'
+        - '#cc4444'
+        - '#221133'
+    mostSatulightedColors:
+        - '#22aa99'
+        - '#cc3355'
         - '#ff8855'
         - '#ffeeaa'
-        - '#331155'
-        - '#662255'
     mostGroupedColors:
         - '#33aa99'
 bottomLine:
     averageColor: '#36aa99'
-    lightestColor: '#eeffff'
-    darkestColor: '#dd6644'
+    lightestColor: '#cceeee'
+    darkestColor: '#bb7755'
     mostFrequentColors:
         - '#33aa99'
-        - '#ee6644'
-        - '#ddffff'
+        - '#bb7755'
+        - '#cceeee'
     mostSatulightedColors:
-        - '#22aaaa'
-        - '#ff6644'
+        - '#22aa99'
+        - '#dd7766'
     mostGroupedColors:
         - '#33aa99'

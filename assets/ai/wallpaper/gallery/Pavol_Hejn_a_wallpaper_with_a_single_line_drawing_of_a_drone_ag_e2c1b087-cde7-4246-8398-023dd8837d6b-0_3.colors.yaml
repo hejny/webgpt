@@ -1,60 +1,60 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#115577'
+    - '#335555'
     - '#ffffff'
-    - '#999955'
-    - '#001100'
-averageColor: '#555c4c'
-lightestColor: '#ddbb88'
+    - '#dd9955'
+averageColor: '#565c4b'
+lightestColor: '#88aa99'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#335555'
     - '#cc7733'
 mostSatulightedColors:
-    - '#116677'
-    - '#ee9955'
-    - '#449977'
-    - '#334466'
-    - '#999955'
+    - '#226677'
+    - '#dd8855'
+    - '#559977'
+    - '#888844'
 mostGroupedColors:
     - '#335555'
 bottomHalf:
-    averageColor: '#555c4c'
-    lightestColor: '#99aa99'
-    darkestColor: '#001100'
+    averageColor: '#565c4c'
+    lightestColor: '#88aa99'
+    darkestColor: '#000000'
     mostFrequentColors:
         - '#335555'
         - '#cc7733'
     mostSatulightedColors:
-        - '#115577'
-        - '#ee9955'
-        - '#449988'
+        - '#dd9955'
+        - '#116666'
+        - '#559977'
+        - '#888844'
     mostGroupedColors:
         - '#335555'
 bottomThird:
-    averageColor: '#4f5b4e'
-    lightestColor: '#99bb99'
-    darkestColor: '#110000'
+    averageColor: '#505b4e'
+    lightestColor: '#779999'
+    darkestColor: '#221100'
     mostFrequentColors:
         - '#335555'
         - '#cc7733'
     mostSatulightedColors:
-        - '#115577'
-        - '#ee7733'
+        - '#225577'
+        - '#dd9955'
         - '#449988'
+        - '#888844'
     mostGroupedColors:
         - '#335555'
 bottomLine:
-    averageColor: '#40544d'
-    lightestColor: '#ccaa77'
-    darkestColor: '#333322'
+    averageColor: '#42564e'
+    lightestColor: '#bb9977'
+    darkestColor: '#554422'
     mostFrequentColors:
         - '#335555'
-        - '#cc8855'
+        - '#bb9966'
     mostSatulightedColors:
-        - '#dd9955'
-        - '#225566'
-        - '#225544'
-        - '#888855'
+        - '#bb8855'
+        - '#225555'
+        - '#334455'
+        - '#666633'
     mostGroupedColors:
         - '#335555'

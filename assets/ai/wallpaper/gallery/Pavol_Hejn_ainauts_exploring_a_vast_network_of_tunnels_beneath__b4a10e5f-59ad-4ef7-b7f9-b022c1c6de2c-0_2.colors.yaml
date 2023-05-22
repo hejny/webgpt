@@ -1,43 +1,43 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
-    - '#ee2255'
+    - '#4455aa'
     - '#ffffff'
-    - '#ffbb66'
-    - '#1199ff'
+    - '#33bbff'
     - '#110011'
 averageColor: '#4b4b62'
-lightestColor: '#ffeeff'
+lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
     - '#221122'
     - '#337799'
     - '#bbeeee'
     - '#bb4433'
-    - '#ffbb66'
+    - '#ffaa66'
 mostSatulightedColors:
-    - '#1199ff'
-    - '#88ffee'
-    - '#ee2255'
+    - '#11aadd'
+    - '#dd3355'
+    - '#334499'
 mostGroupedColors:
     - '#221122'
 bottomHalf:
-    averageColor: '#5b4f66'
-    lightestColor: '#ffeeff'
+    averageColor: '#5b5066'
+    lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#110011'
         - '#4499bb'
-        - '#ddffff'
-        - '#994444'
-        - '#ee9988'
+        - '#ccffff'
+        - '#aa4444'
+        - '#ff9988'
     mostSatulightedColors:
-        - '#1199ff'
-        - '#ee2255'
+        - '#11aadd'
+        - '#4455aa'
+        - '#dd3355'
     mostGroupedColors:
         - '#4499bb'
 bottomThird:
-    averageColor: '#5c475e'
-    lightestColor: '#ffeeff'
+    averageColor: '#5d485f'
+    lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#110011'
@@ -45,21 +45,22 @@ bottomThird:
         - '#775588'
         - '#ff8866'
         - '#33aadd'
-        - '#cc2200'
+        - '#bb2200'
     mostSatulightedColors:
-        - '#1199ff'
-        - '#ee2255'
+        - '#33bbff'
+        - '#4444aa'
+        - '#dd3355'
     mostGroupedColors:
         - '#110011'
 bottomLine:
-    averageColor: '#141434'
-    lightestColor: '#5577aa'
+    averageColor: '#151434'
+    lightestColor: '#226699'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#110011'
-        - '#005588'
+        - '#115588'
     mostSatulightedColors:
         - '#005588'
         - '#443377'
     mostGroupedColors:
-        - '#110011'
+        - '#221144'

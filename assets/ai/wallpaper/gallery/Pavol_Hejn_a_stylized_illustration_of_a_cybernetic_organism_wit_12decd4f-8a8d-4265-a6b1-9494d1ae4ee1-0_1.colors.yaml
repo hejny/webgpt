@@ -1,12 +1,12 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#113344'
     - '#ffffff'
-    - '#bb8855'
-    - '#77ffbb'
-averageColor: '#636a57'
-lightestColor: '#eeeeff'
-darkestColor: '#110000'
+    - '#55eecc'
+    - '#ffcc55'
+averageColor: '#626a57'
+lightestColor: '#ffeeee'
+darkestColor: '#330000'
 mostFrequentColors:
     - '#113344'
     - '#669977'
@@ -14,40 +14,38 @@ mostFrequentColors:
     - '#44eedd'
     - '#dd6633'
 mostSatulightedColors:
-    - '#33ffff'
-    - '#6699dd'
-    - '#77ffbb'
-    - '#dd3355'
+    - '#55ddff'
+    - '#44eebb'
+    - '#ffaa55'
+    - '#ffff77'
 mostGroupedColors:
     - '#113344'
 bottomHalf:
     averageColor: '#4b665c'
-    lightestColor: '#eeeeff'
-    darkestColor: '#110000'
+    lightestColor: '#ffeeee'
+    darkestColor: '#330000'
     mostFrequentColors:
         - '#113344'
-        - '#44aa99'
-        - '#aa5522'
+        - '#44bbaa'
         - '#eeee99'
-        - '#66ffff'
+        - '#aa5522'
     mostSatulightedColors:
-        - '#33ffff'
-        - '#77ffbb'
+        - '#33ffee'
+        - '#ffcc55'
     mostGroupedColors:
         - '#113344'
 bottomThird:
     averageColor: '#426763'
-    lightestColor: '#eeeeff'
-    darkestColor: '#220000'
+    lightestColor: '#ffeeee'
+    darkestColor: '#111111'
     mostFrequentColors:
         - '#113344'
-        - '#44aa99'
+        - '#55eecc'
         - '#eeee99'
-        - '#dd7744'
-        - '#66ffff'
+        - '#997755'
     mostSatulightedColors:
-        - '#33ffff'
-        - '#77ffbb'
+        - '#44ffee'
+        - '#ff9955'
     mostGroupedColors:
         - '#113344'
 bottomLine:
@@ -58,12 +56,10 @@ bottomLine:
         - '#111133'
         - '#229988'
         - '#bb8855'
-        - '#ffffbb'
+        - '#bbffee'
     mostSatulightedColors:
-        - '#44bbbb'
-        - '#ffaa66'
-        - '#44bb77'
-        - '#dddd66'
-        - '#113355'
+        - '#33aa99'
+        - '#eeaa55'
+        - '#ccdd99'
     mostGroupedColors:
         - '#114455'

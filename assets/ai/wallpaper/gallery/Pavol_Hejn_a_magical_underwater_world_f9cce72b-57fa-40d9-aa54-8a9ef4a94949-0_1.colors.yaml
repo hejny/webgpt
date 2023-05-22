@@ -1,40 +1,27 @@
-version: colorful-1920x1080-16bit-v11
+version: colorful-192x108-16bit-v12palette
 palette:
     - '#113344'
     - '#ffffff'
-    - '#997744'
-    - '#66ddbb'
-averageColor: '#496a6c'
+    - '#77ccbb'
+    - '#ffdd55'
+averageColor: '#496b6c'
 lightestColor: '#ffffff'
-darkestColor: '#000000'
+darkestColor: '#110000'
 mostFrequentColors:
     - '#113344'
     - '#66bbbb'
     - '#eeffee'
     - '#997744'
-    - '#ffcc55'
 mostSatulightedColors:
-    - '#22aadd'
-    - '#66ddbb'
-    - '#ff9955'
+    - '#2299cc'
+    - '#88eecc'
+    - '#ffdd55'
+    - '#ee8866'
 mostGroupedColors:
     - '#113344'
 bottomHalf:
-    averageColor: '#2c4b53'
-    lightestColor: '#ddffff'
-    darkestColor: '#000000'
-    mostFrequentColors:
-        - '#113344'
-        - '#3399aa'
-        - '#ddcc88'
-        - '#aa5533'
-    mostSatulightedColors:
-        - '#22aadd'
-    mostGroupedColors:
-        - '#113344'
-bottomThird:
-    averageColor: '#27444f'
-    lightestColor: '#ddffff'
+    averageColor: '#2c4b54'
+    lightestColor: '#ddffee'
     darkestColor: '#000000'
     mostFrequentColors:
         - '#113344'
@@ -42,18 +29,32 @@ bottomThird:
         - '#ccddbb'
         - '#aa5533'
     mostSatulightedColors:
-        - '#22aadd'
+        - '#2299cc'
+        - '#77ccbb'
+    mostGroupedColors:
+        - '#113344'
+bottomThird:
+    averageColor: '#27454f'
+    lightestColor: '#ddeeee'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - '#113344'
+        - '#3399aa'
+        - '#ccddbb'
+        - '#aa5533'
+    mostSatulightedColors:
+        - '#2299cc'
     mostGroupedColors:
         - '#113344'
 bottomLine:
-    averageColor: '#193343'
-    lightestColor: '#bbccbb'
-    darkestColor: '#111111'
+    averageColor: '#193242'
+    lightestColor: '#99aa88'
+    darkestColor: '#001122'
     mostFrequentColors:
         - '#112233'
-        - '#99aa88'
+        - '#99aa77'
     mostSatulightedColors:
         - '#114466'
-        - '#aabb88'
+        - '#99aa77'
     mostGroupedColors:
         - '#002233'
