@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# FocusMate: Visual Productivity
+# VisPro FocusMate
 
 Welcome to FocusMate, where we offer a unique tool that can help you stay on track with your tasks and goals. Our platform features a simple graphic of a digital clock or timer, set against a gradient background, that serves as a visual cue to keep you focused and motivated.
 

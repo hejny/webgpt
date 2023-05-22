@@ -1,6 +1,6 @@
 <!--font:Raleway-->
 
-# RoboTask - Workflow Automation
+# RoboTask
 
 Welcome to RoboTask, your one-stop solution for automating repetitive tasks in your workflow. Our simple yet powerful automation software can help you save time and boost productivity. 
 
