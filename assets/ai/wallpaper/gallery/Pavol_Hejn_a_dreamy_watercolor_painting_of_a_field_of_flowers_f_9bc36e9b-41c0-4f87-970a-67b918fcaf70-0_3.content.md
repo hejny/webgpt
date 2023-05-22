@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Lato-->
 
-# Watercolor Flowers for Events
+# Floral Events
 
 Welcome to our event planning website, where we offer a wide range of services to make your special day unforgettable. Our team of experienced professionals is dedicated to creating a personalized and unique experience tailored to your specific needs. Whether you're planning a wedding, corporate event, or private party, we have the expertise and creativity to bring your vision to life.
 

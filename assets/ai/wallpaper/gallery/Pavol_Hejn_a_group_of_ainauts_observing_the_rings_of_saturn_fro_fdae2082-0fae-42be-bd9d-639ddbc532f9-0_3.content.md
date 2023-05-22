@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to exploring the vast and fascinating universe! Our mission is to inspire curiosity and learning about space through a variety of resources, including articles, videos, podcasts, and more. To enhance your experience, we've chosen a stunning background image that depicts a group of Ainautes observing the rings of Saturn from a high-tech space station, surrounded by stars and galaxies.
 

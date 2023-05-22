@@ -1,6 +1,6 @@
 <!--font:Creepster-->
 
-# Otherworldly Universe Designs
+# Cosmic Designs
 
 Welcome to our website, where you can find unique and inspiring designs that will transport you to another world. Our surreal landscape of alien planets and strange, otherworldly creatures is just one of the many options we offer to help you create a space that reflects your personality and style.
 

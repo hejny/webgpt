@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Cormorant Garamond-->
 
-# Hidden Path in a Dark Forest.
+# Dark Forest Path
 
 Welcome to our horror and mystery website, where we explore the unknown and the unexplained. Our website is designed to take you on a journey through the darkest corners of your imagination, and what better way to start than with a dark and moody forest?
 

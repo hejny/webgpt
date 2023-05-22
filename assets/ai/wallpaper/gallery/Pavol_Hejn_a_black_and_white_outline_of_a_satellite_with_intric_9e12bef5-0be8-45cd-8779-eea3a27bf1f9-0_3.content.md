@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to space exploration! Our mission is to inspire and educate people about the wonders of the universe. As part of that mission, we offer a stunning black and white background featuring an intricate outline of a satellite.
 

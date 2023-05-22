@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# MathArt: Where Math Meets Art
+# MathArt
 
 Welcome to MathArt, where we explore the fascinating intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into captivating visual designs.
 

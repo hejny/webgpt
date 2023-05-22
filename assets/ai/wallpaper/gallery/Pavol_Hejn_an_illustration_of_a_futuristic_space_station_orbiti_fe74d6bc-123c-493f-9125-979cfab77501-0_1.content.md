@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Futuristic Space Station Site
+# Futuristic Station
 
 Looking for a unique and captivating wallpaper to spruce up your desktop or phone background? Look no further than our stunning illustration of a futuristic space station orbiting a distant planet. With sleek lines and metallic accents, this wallpaper is sure to transport you to another world.
 

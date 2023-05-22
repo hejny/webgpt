@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# AI Search Engine: Find Faster
+# AI Search Engine
 
 Welcome to our website, where we explore the exciting world of AI-powered search engines. Our minimalist and modern design is inspired by the latest advancements in technology, with a focus on creating an intuitive user experience.
 

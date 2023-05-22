@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Maximizing Business with Data
+# Data Business Max
 
 Welcome to our website, where we provide the tools and resources you need to unlock your business's potential with data insights. Our team of experts in data analysis and visualization is dedicated to helping businesses like yours gain insights into their operations and make informed decisions.
 

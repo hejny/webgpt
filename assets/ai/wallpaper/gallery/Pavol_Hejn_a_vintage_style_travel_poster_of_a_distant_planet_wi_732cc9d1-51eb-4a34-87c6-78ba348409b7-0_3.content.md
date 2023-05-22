@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to space exploration and discovery! Our mission is to provide you with all the information you need about the universe, from distant planets to black holes. To enhance your browsing experience, we have added a stunning vintage-style travel poster of a distant planet as our background.
 

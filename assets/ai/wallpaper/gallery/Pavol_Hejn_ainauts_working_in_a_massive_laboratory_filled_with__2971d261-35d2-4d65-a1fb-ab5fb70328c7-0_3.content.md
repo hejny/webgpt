@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Future Research: Ainautes Lab
+# Ainautes Lab
 
 At Ainautes Lab, we are dedicated to pushing the boundaries of scientific research through the use of cutting-edge artificial intelligence technology. Our team of expert scientists and engineers work tirelessly in our massive laboratory filled with glowing equipment and holographic displays, conducting groundbreaking research that will shape the future of our world.
 

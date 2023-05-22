@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Universe Telescope Background
+# Cosmic Backdrops
 
 Welcome to our website, where we offer a stunning black and white outline of a telescope as a background for your device or room. Our telescope background is perfect for anyone who loves astronomy or simply appreciates clean lines and simple shapes.
 

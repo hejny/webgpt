@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# The AI Space Station Explorer
+# AI Space Explorer
 
 Welcome to The AI Space Station Explorer, the ultimate resource for all things related to space exploration and artificial intelligence. Our website is dedicated to bringing you the latest news, insights, and stories about the intersection of these two exciting fields.
 

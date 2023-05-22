@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Boost productivity creatively
+# Creative Productivity Boost
 
 Welcome to our website dedicated to helping you cultivate your creativity and boost your productivity. We offer a variety of resources, tools, and tips to help you achieve your goals and unlock your full potential.
 

@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Latest Tech News and Insights
+# Tech Insights
 
 Welcome to our website dedicated to exploring the latest in technology. Our site offers a stunning background featuring an abstract illustration of an AI neural network, representing the cutting-edge technology that drives innovation in the tech industry.
 

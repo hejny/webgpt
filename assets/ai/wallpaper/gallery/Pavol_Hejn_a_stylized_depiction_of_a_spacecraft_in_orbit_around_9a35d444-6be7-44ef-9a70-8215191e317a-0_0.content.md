@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to exploring the wonders of space! Our stunning background depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows. This captivating image sets the tone for our website, which is all about sharing the excitement and awe-inspiring beauty of space.
 

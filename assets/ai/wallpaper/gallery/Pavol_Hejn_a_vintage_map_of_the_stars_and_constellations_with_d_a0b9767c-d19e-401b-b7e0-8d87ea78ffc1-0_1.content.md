@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploratory Vintage Space Art
+# Vintage Space Art
 
 Experience the awe-inspiring beauty of the universe with our vintage star map and spacecraft illustrations. The intricate design features detailed depictions of celestial bodies and spacecraft, set against a navy blue background with gold accents.
 

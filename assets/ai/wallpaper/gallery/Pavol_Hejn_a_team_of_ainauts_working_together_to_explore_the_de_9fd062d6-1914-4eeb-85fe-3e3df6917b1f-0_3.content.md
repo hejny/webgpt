@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Explores Black Hole Depths
+# AI Black Hole
 
 Welcome to our website dedicated to exploring the mysteries of black holes! Our team of Ainautes is passionate about using cutting-edge technology to uncover the secrets of these fascinating cosmic phenomena.
 

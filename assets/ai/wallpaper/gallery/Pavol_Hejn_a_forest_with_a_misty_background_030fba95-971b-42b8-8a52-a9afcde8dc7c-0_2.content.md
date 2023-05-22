@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Enchanted Misty Forest Entry.
+# Misty Forest Entry
 
 Our misty forest background image invites you to enter a world of enchantment and mystery. The serene atmosphere of the forest shrouded in mist creates a captivating scene that is waiting to be explored.
 

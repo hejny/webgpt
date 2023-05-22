@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Your Perfect City Home Awaits
+# City Home Awaits
 
 Welcome to our real estate and architecture website, where you can find your perfect city home. Our minimalist graphic of a city skyline at dusk sets the tone for your search.
 

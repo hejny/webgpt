@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover space with our site.
+# Space discovery site
 
 Welcome to [website name], your destination for exploring the world around you. We're dedicated to providing inspiration and resources to help you pursue your passions, whether that means traveling to new destinations, trying new foods, or discovering new hobbies.
 

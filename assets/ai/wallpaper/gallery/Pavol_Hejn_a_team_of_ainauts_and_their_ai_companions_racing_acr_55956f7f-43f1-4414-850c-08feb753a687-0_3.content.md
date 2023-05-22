@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Future Desert Racing with AI.
+# AI Desert Racing
 
 Welcome to AI Racing, where humans and artificial intelligence come together to push the limits of what's possible. Our team of Ainautes and their AI companions race across the surface of a desert planet in high-tech buggies, showcasing the latest advancements in technology and teamwork.
 

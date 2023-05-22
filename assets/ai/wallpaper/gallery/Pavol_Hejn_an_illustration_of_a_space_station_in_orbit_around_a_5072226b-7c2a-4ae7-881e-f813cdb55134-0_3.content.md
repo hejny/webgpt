@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Gas Giants as Cosmic Backdrop
+# Cosmic Giants
 
 Our gas giant background is the perfect way to add a touch of space to your desktop or mobile device. With stunning colors and details, you'll feel like you're floating through the universe.
 

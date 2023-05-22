@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to the fascinating world of space exploration! Our captivating background image features a digital painting of a spaceship approaching an alien planet, with unusual flora and fauna visible on the surface. This stunning visual sets the tone for our mission to bring you the latest news and insights from the vast expanse of space.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Create Your Perfect Workspace
+# Perfect Workspace
 
 Welcome to our website dedicated to helping you design a productive and inspiring workspace that is an extension of yourself. We offer various resources and tools to help you achieve that, including a high-quality background featuring a stylized illustration of a futuristic workspace with a minimalist and modern design.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Floralize Your Digital Space.
+# Floralize Space
 
 Welcome to our website where we offer a variety of beautiful backgrounds to enhance your digital space. Our latest addition is a stunning close-up of a flower that will bring the beauty of nature to your computer screen.
 

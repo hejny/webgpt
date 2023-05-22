@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Vintage Postcards for Website
+# Vintage Postcards
 
 Welcome to our website, where we offer a unique collection of vintage postcards from around the world. Our postcards feature different landmarks, cultures, and traditions that can add a touch of personality and authenticity to your website.
 

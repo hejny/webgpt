@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website dedicated to all things space! Our stunning black and white background depicts an astronaut exploring a distant planet, with intricate details and shading. It's the perfect addition to your desktop or mobile device, providing a timeless reminder of the vastness and beauty of the universe.
 

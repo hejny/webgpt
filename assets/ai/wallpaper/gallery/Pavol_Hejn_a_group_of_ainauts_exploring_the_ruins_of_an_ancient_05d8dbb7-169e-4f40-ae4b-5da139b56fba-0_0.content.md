@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes: Ancient Exploration
+# Ancient Ainautes
 
 Welcome to our website, where we take you on a journey to a distant planet, where a group of Ainautes are exploring the ruins of an ancient civilization. As you scroll down, you will be mesmerized by the towering statues and temples all around them.
 

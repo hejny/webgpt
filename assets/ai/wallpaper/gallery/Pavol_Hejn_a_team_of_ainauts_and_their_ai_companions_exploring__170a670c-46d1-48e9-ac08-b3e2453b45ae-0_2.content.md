@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ancient Space Station Enigmas
+# Ancient Enigmas
 
 Welcome to our website dedicated to uncovering the secrets of a massive, ancient space station orbiting a distant planet. Our team of Ainautes and their AI companions are on a mission to explore this mysterious structure and discover its hidden treasures.
 

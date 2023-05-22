@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Future Research with Ainautes
+# Ainaute Research
 
 Are you ready to explore the latest advancements in scientific research? Look no further than our website, where we take you on a journey through the world of Ainautes and their groundbreaking work.
 

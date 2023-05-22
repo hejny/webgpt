@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Create an Inspiring Workspace
+# Inspiring Workspace
 
 Welcome to our website dedicated to helping you create a workspace that inspires you. Our unique design features a csg-style rendering of an alien landscape, with sharp angles and contrasting colors that create a futuristic and industrial vibe.
 

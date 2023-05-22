@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Space Art Exploration
+# Digital Space Art
 
 Welcome to our website, where we offer a unique collection of digital illustrations that showcase the beauty and wonder of space. Our collection features stunning images of galaxies, stars, planets, and nebulae, all carefully curated to bring the wonders of space into your life.
 

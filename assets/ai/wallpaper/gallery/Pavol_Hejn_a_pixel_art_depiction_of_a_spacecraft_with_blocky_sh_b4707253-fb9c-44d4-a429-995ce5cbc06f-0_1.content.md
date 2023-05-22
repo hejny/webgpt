@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Explore Space with Adventures
+# Space Adventures
 
 Welcome to Space Adventures, your go-to source for all things space-related! Our website is dedicated to providing you with the latest news and information about space exploration, astronomy, and more. Our pixel art depiction of a spacecraft background sets the tone for an exciting journey through the universe.
 

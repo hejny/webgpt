@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Digital Art-Tech Intersection
+# Art-Tech Fusion
 
 Welcome to Digital Landscapes, where we showcase stunning works of digital art that push the boundaries of creativity and technology. Our current featured piece is a mesmerizing digital landscape with geometric shapes and neon colors, created by the talented artist John Doe.
 

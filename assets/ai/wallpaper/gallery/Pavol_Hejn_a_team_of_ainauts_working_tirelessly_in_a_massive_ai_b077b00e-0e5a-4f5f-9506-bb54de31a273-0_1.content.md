@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Factory: Innovating Future
+# AI Factory
 
 Welcome to AI Factory, where a team of Ainautes work tirelessly to create new and innovative technologies for the future. Our mission is to push the boundaries of what's possible with artificial intelligence and machine learning, and we're proud to be at the forefront of this exciting field.
 

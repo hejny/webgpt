@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discover the Wonders of Space
+# Space Wonders
 
 Welcome to our website, where you can embark on a journey to explore the mysteries and wonders of space. Our stunning Space Odyssey background sets the tone for your cosmic adventure.
 

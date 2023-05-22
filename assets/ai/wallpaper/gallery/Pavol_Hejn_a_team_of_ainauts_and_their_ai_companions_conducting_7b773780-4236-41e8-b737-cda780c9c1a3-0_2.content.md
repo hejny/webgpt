@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Inter-->
 
-# AI & Ainautes' Gas Experiment
+# AI Gas Experiment
 
 Welcome to our website featuring a stunning wallpaper of a team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet.
 
