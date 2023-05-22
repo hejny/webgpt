@@ -55,7 +55,6 @@ export async function forEachWallpaper(options: {
 
         if (workingOn.size >= parallelWorksCount) {
             //-----------
-            // [🥼] This is the place
             const statsTotalString = `${stats.done}/${stats.total}`;
             const statsPercentString = `${Math.round((stats.done / stats.total) * 100)}%`;
 

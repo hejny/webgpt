@@ -3,17 +3,13 @@ import favicon from '../../../public/favicon.ico';
 import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
-
-import { useSkin } from '../../utils/hooks/useSkin';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
  * @@@
  */
 export function ShowcaseAppHead() {
-    const wallpaper =
-        useWallpaper(/* <- TODO: !! Here should be useSkin - ISkin should contain url of the wallpaper */);
-    const skin = useSkin();
+    const wallpaper = useWallpaper();
 
     // TODO: !! IWalpaper should have custom emoji which will be contained here
 

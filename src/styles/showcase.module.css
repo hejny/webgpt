@@ -53,21 +53,21 @@
     grid-column: 2 / span 1;
     grid-row: 2 / span 3;
     text-align: center;
-    color: var(--normal-text-color);
+    color: rgba(var(--palette-1-triplet), 0.8);
 }
 
 .page a {
-    color: var(--normal-text-color);
+    color: rgba(var(--palette-1-triplet), 0.8);
     text-decoration: none;
 }
 
 .page p a {
-    color: var(--highlighted-text-color);
+    color: var(--palette-1);
     text-decoration: underline;
 }
 
 .page p a:hover {
-    color: var(--normal-text-color);
+    color: rgba(var(--palette-1-triplet), 0.8);
 }
 
 /* TODO: !! move to welcome section */
@@ -75,11 +75,11 @@
 .page h2,
 .page b,
 .page a:hover {
-    color: var(--highlighted-text-color);
+    color: var(--palette-1);
 }
 
 .page h1 {
-    text-shadow: var(--highlighted-text-shaddow);
+    text-shadow: var(--palette-0);
 }
 
 /*
@@ -91,7 +91,7 @@
 
 .page h2 {
     font-size: 30px;
-    background-image: linear-gradient(to right, var(--normal-text-color), var(--highlighted-text-color));
+    background-image: linear-gradient(to right, rgba(var(--palette-1-triplet),0.8), var(--palette-1));
     background-clip: text;
     color: transparent;
 }

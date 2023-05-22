@@ -188,7 +188,7 @@
 
 .item:hover .description {
     /* TODO: Also the outline image should be highlighted */
-    color: var(--highlighted-text-color);
+    color: var(--palette-1);
 }
 
 .item .description a::before {

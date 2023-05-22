@@ -12,7 +12,6 @@ import styles from './Welcome.module.css';
  */
 export function HomepageWelcomeSection() {
     const { t, i18n } = useTranslation();
-    // const skin = useSkin();
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
