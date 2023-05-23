@@ -9,9 +9,9 @@ const nextConfig = {
         appDir: true,
     },
     images: {
+        unoptimized: true /* <- TODO: I don’t want only unoptimize images from cdn.midjourney.com, maybe just do not use <img there */,
         remotePatterns: [
             {
-                unoptimized: true,
                 protocol: 'https',
                 hostname: 'cdn.midjourney.com',
                 port: '',
