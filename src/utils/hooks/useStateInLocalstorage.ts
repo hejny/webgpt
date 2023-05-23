@@ -3,6 +3,8 @@ import spaceTrim from 'spacetrim';
 
 export function useStateInLocalstorage<T extends string>(key: string, initialState: T): [T, (likedStatus: T) => void] {
     if (
+        // TODO: !!!! Maybe we don’t need whole this with wrapping the ControlPanelLikeButtons with <NoSsr>...</NoSsr> and probbably also join ControlPanelLikeButtons and  ControlPanel
+
         typeof window === 'undefined'
         /* < Note: We are NOT using here useSsrDetection because
                    useSsrDetection always starts with true and then turns off when detects CSR
@@ -20,19 +22,21 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
         );
     }
 
-    const stateFromLocalStorage = localStorage.getItem(key);
+    const [likedStatus, setLikedStatus] = useState<T>(initialState);
 
-    if (stateFromLocalStorage) {
-        initialState = stateFromLocalStorage as T;
-    }
+    useEffect(() => {
+        const stateFromLocalStorage = localStorage.getItem(key);
+        if (stateFromLocalStorage) {
+            setLikedStatus(stateFromLocalStorage as T);
+        } else if (likedStatus !== initialState) {
+            setLikedStatus(initialState);
+        }
+    }, [key]);
 
-    useEffect(() => {}, [key, initialState]);
-
-    const [likedStatus, internalSetLikedStatus] = useState<T>(initialState);
-    const setLikedStatus = (likedStatus: T) => {
+    const persistLikedStatus = (likedStatus: T) => {
         localStorage.setItem(key, likedStatus);
-        internalSetLikedStatus(likedStatus);
+        setLikedStatus(likedStatus);
     };
 
-    return [likedStatus, setLikedStatus];
+    return [likedStatus, persistLikedStatus];
 }

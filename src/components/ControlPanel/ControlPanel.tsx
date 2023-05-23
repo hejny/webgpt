@@ -6,6 +6,7 @@ import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
 import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
 import { textColor } from '../../utils/color/operators/furthest';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
+import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
 import { NoSsr } from '../NoSsr/NoSsr';
@@ -23,6 +24,8 @@ interface ControlPanelProps {
  */
 export function ControlPanel(props: ControlPanelProps) {
     const { randomWallpaper, turnOnEditing, turnOnPresenting } = props;
+
+    const wallpaperId = useCurrentWallpaperId();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
     const backgroundColor = Color.from(`#8dc1e4`);
@@ -46,6 +49,8 @@ export function ControlPanel(props: ControlPanelProps) {
                 styles.ControlPanel,
             )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
         >
+            <div style={{color:'#1f6b08'}}>{wallpaperId}</div>
+
             <NoSsr>
                 <ControlPanelLikeButtons />
             </NoSsr>
@@ -56,7 +61,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 style={minorButtonStyle}
                 prefetch={false /* <- Note: Because gallery is enormous */}
             >
-                <Article content="🖼" isEnhanced /* <- TODO: !!! Better icon OR Openmoji */ />
+                <Article content="🖼" isUsingOpenmoji /* <- TODO: !!! Better icon OR Openmoji */ />
             </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
@@ -75,7 +80,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
                 }}
             >
-                <Article content="🎲" isEnhanced /* <- TODO: !! This should have more role like next not random */ />
+                <Article content="🎲" isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */ />
             </Link>
             <button
                 onClick={turnOnEditing}
@@ -84,7 +89,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     ...minorButtonStyle,
                 }}
             >
-                <Article content="🖊" isEnhanced />
+                <Article content="🖊" isUsingOpenmoji />
             </button>
             <button
                 onClick={turnOnPresenting}

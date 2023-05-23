@@ -1,6 +1,7 @@
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
+import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { Article } from '../Article/Article';
 import styles from '../ControlPanel/ControlPanel.module.css';
@@ -11,12 +12,14 @@ import styles from '../ControlPanel/ControlPanel.module.css';
 export function ControlPanelLikeButtons() {
     // useRefresh(100);
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
+    const wallpaperId = useCurrentWallpaperId();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
     const backgroundColor = Color.from(`#8dc1e4`);
 
     return (
         <>
+            <div style={{ color: '#b11919' }}>{wallpaperId}</div>
             <button
                 // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
 
@@ -33,7 +36,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Article content="❤" isEnhanced />
+                <Article content="❤" isUsingOpenmoji />
             </button>
 
             <button
@@ -50,7 +53,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Article content="👍" isEnhanced />
+                <Article content="👍" isUsingOpenmoji />
             </button>
             <button
                 className={classNames('button', styles.button)}
@@ -65,7 +68,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Article content="👎" isEnhanced />
+                <Article content="👎" isUsingOpenmoji />
             </button>
         </>
     );
