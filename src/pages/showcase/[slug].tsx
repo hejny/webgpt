@@ -27,7 +27,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             <Head>
                 <link
                     // TODO: !!! Is this working? Maybe use prerender
-                    rel="prefetch"
+                    rel="prerender"
                     href={randomWallpaper.src}
                     as="image" /* <- Note: [🤰] Here is preloaded randomWallpaper */
                 />

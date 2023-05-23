@@ -62,17 +62,11 @@ export function ControlPanel(props: ControlPanelProps) {
                 href={`/showcase/${randomWallpaper.id}`}
                 onClick={() => {
                     // Note: No need for preventDefault
-                    //  [🤰] Just quick-change the HeaderWallpaper for upgoing color
-
                     const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
-
-                    console.log('HeaderWallpaper', headerWallpaperElement);
-
-                    // !!! Is this working?
                     headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
                     headerWallpaperElement.removeAttribute('srcset');
                 }}
-                /* Note: randomWallpaper image is prefetched here -> [🤰] */
+                /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
                 className={classNames('button', styles.button)}
                 style={{
                     ...minorButtonStyle,
@@ -110,7 +104,6 @@ export function ControlPanel(props: ControlPanelProps) {
 
 /**
  * TODO: Edit on GitHub button | Each wallpaper in each subfolder+ gallery/a/b/id/....ext
- * TODO: !!! [🤰] Pick one working method for immediate change of HeaderWallpaper and cleanup rest
  * TODO: !!! No outline - simpler design
  * TODO: !!! On mobile
  * TODO: !!! [Previous][Next]

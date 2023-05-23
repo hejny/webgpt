@@ -20,7 +20,7 @@ export function HeaderWallpaper() {
                     alt={prompt}
                     draggable="false"
                     placeholder="blur"
-                    priority={true /* <- !!! [🤰] */}
+                    priority={true}
                     blurDataURL={colorToDataUrl(colorStats.averageColor)}
                     height={Math.round((width / 1920) * 1080)}
                     style={{ objectFit: 'cover', width: '100%', height: '100%' }}
@@ -31,7 +31,6 @@ export function HeaderWallpaper() {
         </div>
     );
 }
-
 
 /**
  * TODO: [🧬] !!! Fake generating - Unblur image in steps
