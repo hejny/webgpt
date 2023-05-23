@@ -1,6 +1,6 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
@@ -19,19 +19,25 @@ export interface ShowcasePageProps {
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
 
+    const router = useRouter();
+    const wallpaperId = router.query.slug as string;
+    console.log('ShowcasePage', { wallpaperId });
+
     return (
         <WallpapersContext.Provider
             value={hydrateWallpapers([currentWallpaper])} /* <- Is this the right place to be Provider in? */
         >
             <ShowcaseAppHead />
+            {/* !!! Remove 
             <Head>
                 <link
                     // TODO: !!! Is this working? Maybe use prerender
                     rel="prerender"
                     href={randomWallpaper.src}
-                    as="image" /* <- Note: [🤰] Here is preloaded randomWallpaper */
+                    as="image" /* <- Note: [🤰] Here is preloaded randomWallpaper * /
                 />
             </Head>
+            */}
 
             <ShowcaseContentWithEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
         </WallpapersContext.Provider>

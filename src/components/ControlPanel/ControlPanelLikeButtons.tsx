@@ -9,6 +9,7 @@ import styles from '../ControlPanel/ControlPanel.module.css';
  * @@@
  */
 export function ControlPanelLikeButtons() {
+    // useRefresh(100);
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()

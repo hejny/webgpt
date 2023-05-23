@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import spaceTrim from 'spacetrim';
 
 export function useStateInLocalstorage<T extends string>(key: string, initialState: T): [T, (likedStatus: T) => void] {
@@ -25,6 +25,8 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
     if (stateFromLocalStorage) {
         initialState = stateFromLocalStorage as T;
     }
+
+    useEffect(() => {}, [key, initialState]);
 
     const [likedStatus, internalSetLikedStatus] = useState<T>(initialState);
     const setLikedStatus = (likedStatus: T) => {
