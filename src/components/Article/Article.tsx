@@ -2,7 +2,7 @@ import { Converter } from 'showdown';
 import showdownHighlight from 'showdown-highlight';
 import spaceTrim from 'spacetrim';
 import { Promisable } from 'type-fest';
-import { emojifyHtml } from '../../utils/content/emojifyHtml';
+import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
 import { Html } from '../Html/Html';
@@ -58,7 +58,7 @@ export function Article(props: IArticleProps) {
 
     if (isUsingOpenmoji) {
         // TODO: We should take emojis ONLY in text
-        markdown = emojifyHtml(markdown);
+        markdown = emojifyMarkdown(markdown);
     }
 
     converter.setFlavor('github');

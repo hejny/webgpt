@@ -4,8 +4,8 @@ import { string_url } from '../typeAliases';
 /**
  * Replaces emojis in an html with images from openmoji
  */
-export async function emojifyHtml(html: string): Promise<string> {
-    console.log('-----------');
+export async function emojifyMarkdown(html: string): Promise<string> {
+    // console.log('-----------');
     for (const emoji of EMOJIS) {
         if (!html.includes(emoji)) {
             continue;
@@ -29,10 +29,10 @@ export async function emojifyHtml(html: string): Promise<string> {
 
         const { src, width, height } = image;
 
-        console.log('----');
-        console.log(html);
+        // console.log('----');
+        // console.log(html);
         html = html.split(emoji).join(`<img src="${src}" alt="${emoji}" class="emoji"/>`);
-        console.log(html);
+        // console.log(html);
     }
 
     return html;
