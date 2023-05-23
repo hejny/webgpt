@@ -1,0 +1,3 @@
+TODO: Add things from Ainautes
+TODO: Use https://www.npmjs.com/package/next-seo
+TODO: Add JSON+LD

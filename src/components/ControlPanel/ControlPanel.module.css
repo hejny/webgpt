@@ -1,4 +1,4 @@
-.GetWebButton {
+.ControlPanel {
     /* TODO: Use or remove empty css */
 
     z-index: 1000;
@@ -21,8 +21,8 @@
     justify-content: center;
 }
 
-.GetWebButton,
-.GetWebButton * {
+.ControlPanel,
+.ControlPanel * {
     transition: none;
 }
 
@@ -34,7 +34,7 @@
     margin: 5px;
 }
 
-.button.active {
+.button[data-active='true'] {
     border: 2px solid rgb(255, 0, 0);
     outline: none;
     text-align: center;
@@ -60,7 +60,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .GetWebButton {
+    .ControlPanel {
         width: 85px;
         right: -30px;
         flex-direction: column;

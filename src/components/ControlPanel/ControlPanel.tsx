@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LikedStatus } from '../../sections/ShowcaseContentWithEdit/ShowcaseContentWithEdit';
+
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
@@ -8,23 +8,21 @@ import { textColor } from '../../utils/color/operators/furthest';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
-import styles from './GetWebButton.module.css';
+import { NoSsr } from '../NoSsr/NoSsr';
+import styles from './ControlPanel.module.css';
+import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 
-interface GetWebButtonProps {
+interface ControlPanelProps {
     randomWallpaper: IWallpaper;
-
-    likedStatus: LikedStatus;
-    setLikedStatus(likedStatus: LikedStatus): void;
-
     turnOnEditing(): void;
     turnOnPresenting(): void;
 }
 
 /**
- * @@
+ * @@@
  */
-export function GetWebButton(props: GetWebButtonProps) {
-    const { randomWallpaper, likedStatus, setLikedStatus, turnOnEditing, turnOnPresenting } = props;
+export function ControlPanel(props: ControlPanelProps) {
+    const { randomWallpaper, turnOnEditing, turnOnPresenting } = props;
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
     const backgroundColor = Color.from(`#8dc1e4`);
@@ -45,41 +43,12 @@ export function GetWebButton(props: GetWebButtonProps) {
         <div
             className={classNames(
                 'aiai-controls',
-                styles.GetWebButton,
+                styles.ControlPanel,
             )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
         >
-            <button
-                onClick={() => void setLikedStatus('LOVE')}
-                // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
-                className={classNames('button', styles.button, likedStatus === 'LOVE' && styles.active)}
-                style={{
-                    backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(textColor).toHex(),
-                }}
-            >
-                <Article content="I ❤ this web!" isEnhanced />
-            </button>
-
-            <button
-                onClick={() => void setLikedStatus('LIKE')}
-                className={classNames('button', styles.button, likedStatus === 'LIKE' && styles.active)}
-                style={{
-                    backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(textColor).toHex(),
-                }}
-            >
-                <Article content="👍" isEnhanced />
-            </button>
-            <button
-                onClick={() => void setLikedStatus('DISLIKE')}
-                className={classNames('button', styles.button, likedStatus === 'DISLIKE' && styles.active)}
-                style={{
-                    backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(textColor).toHex(),
-                }}
-            >
-                <Article content="👎" isEnhanced />
-            </button>
+            <NoSsr>
+                <ControlPanelLikeButtons />
+            </NoSsr>
 
             <Link
                 href={'/'}
@@ -123,7 +92,6 @@ export function GetWebButton(props: GetWebButtonProps) {
             >
                 <Article content="🖊" isEnhanced />
             </button>
-
             <button
                 onClick={turnOnPresenting}
                 className={classNames('button', styles.button)}

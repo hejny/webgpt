@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { DEBUG } from '../../../config';
 import { DebugContext } from '../../pages/_app';
-import { closePreventionSystem } from '../../utils/ClosePreventionSystem/closePreventionSystem';
+import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
@@ -33,6 +33,7 @@ export function EditModal(props: EditModalProps) {
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
     const router = useRouter();
+    const closePreventionSystem = useClosePreventionSystem();
 
     return (
         <>
@@ -50,6 +51,7 @@ export function EditModal(props: EditModalProps) {
                             onChange={(newColor) => {
                                 // TODO: [🧠] !! DRY [🎋]
                                 // TODO: [🧠] !! Reset when switching wallpapers
+
                                 closePreventionSystem.registerClosePrevention({
                                     canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
                                 });

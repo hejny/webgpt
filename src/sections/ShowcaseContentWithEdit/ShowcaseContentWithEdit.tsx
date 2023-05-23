@@ -1,18 +1,14 @@
 import { useState } from 'react';
 import { Vector } from 'xyzt';
+import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { EditModal } from '../../components/EditModal/EditModal';
-import { GetWebButton } from '../../components/GetWebButton/GetWebButton';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
-import { useStateInLocalstorage } from '../../utils/hooks/useStateInLocalstorage';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { ShowcaseWelcomeSection } from '../10-Welcome/ShowcaseWelcome';
 import { FooterSection } from '../90-Footer/Footer';
 import styles from './ShowcaseContentWithEdit.module.css';
-
-export type LikedStatus = 'LOVE' | 'LIKE' | 'DISLIKE' | 'NONE';
 
 interface ShowcaseContentWithEditProps {
     randomWallpaper: IWallpaper;
@@ -20,10 +16,8 @@ interface ShowcaseContentWithEditProps {
 
 export function ShowcaseContentWithEdit(props: ShowcaseContentWithEditProps) {
     const { randomWallpaper } = props;
-    const wallpaperId = useCurrentWallpaperId();
     const [isEditing, setEditing] = useState(false);
     const [isPresenting, setPresenting] = useState(false);
-    const [likedStatus, setLikedStatus] = useStateInLocalstorage<LikedStatus>(`likedStatus_${wallpaperId}`, 'NONE');
 
     return (
         <div className={styles.page}>
@@ -40,8 +34,8 @@ export function ShowcaseContentWithEdit(props: ShowcaseContentWithEditProps) {
                 {/*<ReferencesSection variant="SHORT" />*/}
             </main>
             {!isPresenting && (
-                <GetWebButton
-                    {...{ randomWallpaper, likedStatus, setLikedStatus }}
+                <ControlPanel
+                    {...{ randomWallpaper }}
                     turnOnEditing={setEditing.bind(null, true)}
                     turnOnPresenting={setPresenting.bind(null, true)}
                 />
