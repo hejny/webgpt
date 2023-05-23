@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LikedStatus } from '../../sections/ShowcaseContentWithEdit/ShowcaseContentWithEdit';
 import { classNames } from '../../utils/classNames';
 import { Color } from '../../utils/color/Color';
 import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
@@ -12,6 +13,9 @@ import styles from './GetWebButton.module.css';
 interface GetWebButtonProps {
     randomWallpaper: IWallpaper;
 
+    likedStatus: LikedStatus;
+    setLikedStatus(likedStatus: LikedStatus): void;
+
     turnOnEditing(): void;
     turnOnPresenting(): void;
 }
@@ -20,7 +24,7 @@ interface GetWebButtonProps {
  * @@
  */
 export function GetWebButton(props: GetWebButtonProps) {
-    const { randomWallpaper, turnOnEditing, turnOnPresenting } = props;
+    const { randomWallpaper, likedStatus, setLikedStatus, turnOnEditing, turnOnPresenting } = props;
 
     // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
     const backgroundColor = Color.from(`#8dc1e4`);
@@ -44,16 +48,38 @@ export function GetWebButton(props: GetWebButtonProps) {
                 styles.GetWebButton,
             )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
         >
-            <Link
-                href={'mailto:me@pavolhejny.com'}
-                className={classNames('button', styles.button, styles.getButton)}
+            <button
+                onClick={() => void setLikedStatus('LOVE')}
+                // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
+                className={classNames('button', styles.button, likedStatus === 'LOVE' && styles.active)}
                 style={{
                     backgroundColor: backgroundColor.toHex(),
                     color: backgroundColor.then(textColor).toHex(),
                 }}
             >
                 <Article content="I ❤ this web!" isEnhanced />
-            </Link>
+            </button>
+
+            <button
+                onClick={() => void setLikedStatus('LIKE')}
+                className={classNames('button', styles.button, likedStatus === 'LIKE' && styles.active)}
+                style={{
+                    backgroundColor: backgroundColor.toHex(),
+                    color: backgroundColor.then(textColor).toHex(),
+                }}
+            >
+                <Article content="👍" isEnhanced />
+            </button>
+            <button
+                onClick={() => void setLikedStatus('DISLIKE')}
+                className={classNames('button', styles.button, likedStatus === 'DISLIKE' && styles.active)}
+                style={{
+                    backgroundColor: backgroundColor.toHex(),
+                    color: backgroundColor.then(textColor).toHex(),
+                }}
+            >
+                <Article content="👎" isEnhanced />
+            </button>
 
             <Link
                 href={'/'}

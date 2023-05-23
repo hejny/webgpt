@@ -34,6 +34,14 @@
     margin: 5px;
 }
 
+.button.active {
+    border: 2px solid rgb(255, 0, 0);
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    margin: 5px;
+}
+
 .getButton {
     flex-grow: 2;
     font-size: 20px;
