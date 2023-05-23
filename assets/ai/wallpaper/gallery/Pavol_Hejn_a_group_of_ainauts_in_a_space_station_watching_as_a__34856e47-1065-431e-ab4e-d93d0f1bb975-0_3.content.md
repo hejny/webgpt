@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# AI Mission to Save Earth.
+# AI Earth Mission
 
 Welcome to our website dedicated to exploring the possibilities of artificial intelligence (AI) in saving our planet from catastrophic events. Our wallpaper showcases a group of Ainautes stationed in space, monitoring a massive asteroid hurtling towards Earth. With only their AI and technology to rely on, they are on a mission to save humanity.
 

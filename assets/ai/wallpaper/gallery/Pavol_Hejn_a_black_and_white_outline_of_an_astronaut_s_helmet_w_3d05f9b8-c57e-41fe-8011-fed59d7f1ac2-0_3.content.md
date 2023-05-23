@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# "Explore Space's Beauty"
+# Space Beauty
 
 Welcome to Space Explorer, where we bring the beauty of the universe to your desktop with our stunning wallpapers. Our latest addition is a black and white outline of an astronaut's helmet, with intricate details that showcase the reflection of the surrounding environment.
 

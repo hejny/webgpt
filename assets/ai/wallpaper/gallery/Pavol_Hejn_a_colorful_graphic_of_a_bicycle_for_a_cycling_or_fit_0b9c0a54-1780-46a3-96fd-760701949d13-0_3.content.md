@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Cycling and Fitness Blog
+# FitCycle Blog
 
 Welcome to our cycling and fitness blog! We are passionate about helping people achieve their fitness goals through cycling. To add some color to your reading experience, we have a beautiful wallpaper featuring a colorful graphic of a bicycle.
 

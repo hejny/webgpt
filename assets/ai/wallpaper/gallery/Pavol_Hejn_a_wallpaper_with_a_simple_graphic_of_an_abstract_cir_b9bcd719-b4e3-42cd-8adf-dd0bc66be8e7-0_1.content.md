@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ultimate Tech Destination
+# Tech Hub
 
 Welcome to our website, your ultimate destination for all things technology-related. Our sleek and modern background sets the tone for our website with its simple graphic of an abstract circuit board in shades of blue and green. It perfectly captures the essence of technology and provides a futuristic feel to your browsing experience.
 

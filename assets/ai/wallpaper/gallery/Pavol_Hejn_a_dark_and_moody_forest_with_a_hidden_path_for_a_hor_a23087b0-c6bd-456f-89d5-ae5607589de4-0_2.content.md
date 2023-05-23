@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Creepster-->
 
-# Dark Forest's Hidden Path
+# Forest Pathway
 
 Welcome to our horror and mystery website, where we take you on a journey through the unknown. Our website is designed to give you an immersive experience that will leave you on the edge of your seat.
 

@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Indoor Nature Collection
+# Indoor Nature
 
 Welcome to our website, where you can find a stunning collection of nature-inspired backgrounds to add a touch of beauty to your home. Our collection includes a variety of themes and styles that will suit every taste and preference.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cosmic Space Exploration
+# Cosmic Exploration
 
 Our Cosmic Adventures background will transport you to another world, where you can imagine yourself embarking on an epic journey through the cosmos. Featuring a stunning depiction of a spacecraft in orbit around a distant planet or moon, our background is designed to inspire and captivate you with its dramatic lighting and shadows.
 

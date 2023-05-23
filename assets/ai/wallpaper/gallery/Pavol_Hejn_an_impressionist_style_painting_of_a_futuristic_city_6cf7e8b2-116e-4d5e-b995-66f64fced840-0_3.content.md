@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Workspace Art
+# Futuristic Art Space
 
 Welcome to our website, where we offer a stunning impressionist-style painting of a futuristic cityscape that can bring inspiration and imagination to your workspace.
 

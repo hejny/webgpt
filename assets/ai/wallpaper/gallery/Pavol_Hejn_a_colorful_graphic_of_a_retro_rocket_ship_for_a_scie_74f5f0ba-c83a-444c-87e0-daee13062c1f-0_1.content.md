@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Space Exploration Website
+# Space Explore
 
 Welcome to our space exploration website! Here, we provide you with all the latest news and information about space and science. To make your experience more enjoyable, we have added a colorful graphic of a retro rocket ship as our wallpaper.
 

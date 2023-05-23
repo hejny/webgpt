@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Space Station Background
+# Space Station
 
 Welcome to our website where you can find the perfect background for your creative projects. Our latest addition is a pixel art depiction of a space station, with blocky shapes and limited colors that create a retro and futuristic feel. This wallpaper is perfect for game developers, graphic designers, or anyone looking for an eye-catching background.
 

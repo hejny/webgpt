@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Deep Frontier Exploration
+# Deep Frontier Explored
 
 Welcome to The Deep Frontier, a website dedicated to exploring the mysteries of the universe and beyond. Our team of Ainautes and their AI companions are constantly pushing the boundaries of what we know about our world and others.
 

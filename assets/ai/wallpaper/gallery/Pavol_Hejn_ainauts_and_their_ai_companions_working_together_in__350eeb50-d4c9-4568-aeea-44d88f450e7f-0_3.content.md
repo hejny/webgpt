@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Ainautes Explore Space
+# AI Space Explorers
 
 Welcome to our website, where we showcase the incredible work of Ainautes and their AI companions as they explore the vast expanse of space. Our stunning wallpaper depicts these brave explorers working together in a massive, zero-gravity space station.
 

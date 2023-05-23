@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Discovering the Universe
+# Universe Discovery
 
 Welcome to Discovering the Universe, your go-to source for the latest news, discoveries, and stories from the world of space exploration. Our website is dedicated to bringing you the most up-to-date information on the universe beyond our planet.
 

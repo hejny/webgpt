@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Desert Vibes Home Office
+# Desert Office
 
 Transform your home office into a peaceful oasis with our "Desert Vibes" background. This stunning desert landscape with a cactus in the foreground is perfect for creating a calming and inspiring environment.
 

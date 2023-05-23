@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Urban Jungle: Indoors Out
+# Indoor Jungle
 
 Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to bring the outdoors in and create a space that nurtures your mind, body, and soul.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Roboto-->
 
-# Asteroid Field Navigation
+# Asteroid Nav
 
 Welcome to our website, where you can experience an exciting space adventure! Our wallpaper depicts a team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them. Get ready to embark on a thrilling journey through space!
 

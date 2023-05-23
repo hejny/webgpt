@@ -1,6 +1,6 @@
 <!--font:Lato-->
 
-# Robotic Universe Missions
+# Robo Missions
 
 Welcome to our website dedicated to exploring the universe and sharing the latest news and discoveries in space exploration. Our homepage features an illustration of a robotic explorer, with metallic textures and intricate details, symbolizing the innovation and advancement of technology that drives space exploration.
 

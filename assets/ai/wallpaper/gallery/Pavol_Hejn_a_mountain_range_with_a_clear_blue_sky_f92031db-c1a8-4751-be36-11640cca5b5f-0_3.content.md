@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Mountain Adventure Tours
+# Mountain Tours
 
 Welcome to our website, where we offer exciting adventure tours to explore the breathtaking beauty of mountain ranges. Our wallpaper, depicting a mountain range with a clear blue sky, is just a glimpse of what you can expect on our tours.
 

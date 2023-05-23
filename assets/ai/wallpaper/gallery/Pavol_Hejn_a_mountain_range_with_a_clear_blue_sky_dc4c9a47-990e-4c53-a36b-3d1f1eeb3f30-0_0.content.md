@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Outdoor Adventure Experts
+# Outdoor Experts
 
 Welcome to our website, where we're passionate about helping you discover the beauty of nature. Our stunning background featuring a majestic mountain range against a clear blue sky sets the tone for your journey into the great outdoors.
 

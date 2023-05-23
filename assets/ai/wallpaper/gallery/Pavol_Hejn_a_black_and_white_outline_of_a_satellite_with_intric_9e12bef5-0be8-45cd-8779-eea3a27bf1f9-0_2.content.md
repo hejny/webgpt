@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Cosmic Satellite Journey
+# Cosmic Satellite Trip
 
 Welcome to our website dedicated to exploring the vast universe and the technology that makes it possible. Our homepage features a stunning black and white outline of a satellite, with intricate details that showcase its technical components and purpose. 
 

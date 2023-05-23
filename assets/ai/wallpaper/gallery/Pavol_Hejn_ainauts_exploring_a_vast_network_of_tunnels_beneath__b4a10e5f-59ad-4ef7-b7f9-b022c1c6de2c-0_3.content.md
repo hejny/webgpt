@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Subterranean Exploration
+# Underground Adventure
 
 Welcome to our website dedicated to the exploration and study of underground environments on distant planets. Our team of Ainautes is passionate about discovering the secrets hidden beneath the surface, and we are excited to share our findings with you.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI impact on space health
+# AI space health
 
 Welcome to our website dedicated to exploring the intersection of artificial intelligence and human health in space. Our team of Ainautes is conducting groundbreaking experiments in a zero-gravity chamber to better understand how AI affects the human body.
 

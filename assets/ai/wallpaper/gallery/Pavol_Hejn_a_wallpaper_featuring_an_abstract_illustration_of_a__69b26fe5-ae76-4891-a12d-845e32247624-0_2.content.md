@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Futuristic Tech Insights
+# Futuristic Tech
 
 Welcome to Tech Insights, your go-to source for the latest news and insights on the world of technology. Our website features an abstract illustration of a dark and ominous machine, with glowing red lights and mechanical parts, setting the tone for our futuristic theme.
 

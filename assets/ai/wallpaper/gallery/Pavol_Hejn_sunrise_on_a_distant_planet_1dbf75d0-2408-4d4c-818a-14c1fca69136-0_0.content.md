@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Beauty of Distant Planets
+# Distant Beauty
 
 Welcome to our website, where you can discover the beauty of distant planets through our stunning background collection. Our backgrounds include some of the most beautiful and inspiring images from around the world, perfect for anyone who loves to have an inspiring and captivating backdrop on their desktop or mobile device.
 

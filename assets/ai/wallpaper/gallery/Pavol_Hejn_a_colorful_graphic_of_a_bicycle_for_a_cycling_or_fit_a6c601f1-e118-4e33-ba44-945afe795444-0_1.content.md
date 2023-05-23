@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Cycle Your Way to Fitness
+# Cycle Fitness
 
 Welcome to our cycling and fitness blog! Our mission is to provide you with the latest information, tips, and tricks to help you achieve your fitness goals. Whether you're a seasoned cyclist or just starting out, we've got you covered.
 

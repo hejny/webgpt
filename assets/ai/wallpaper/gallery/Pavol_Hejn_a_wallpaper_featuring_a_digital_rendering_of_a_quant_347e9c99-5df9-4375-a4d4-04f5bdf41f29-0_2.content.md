@@ -1,6 +1,6 @@
 <!--font:Dancing Script-->
 
-# Quantum Future Beginners
+# Quantum Intro
 
 Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect backdrop for this cutting-edge technology.
 

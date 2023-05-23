@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Enchanting Forest Fairies
+# Forest Fairies
 
 Step into a world of fantasy and wonder with our enchanting forest scene featuring fairies. Our stunning background will transform your desktop into a magical realm that you'll never want to leave.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Volcanic Planet Adventure
+# Volcano Trek
 
 Welcome to our website dedicated to exploring the wonders of the Volcanic Planet. Our captivating background featuring a lava flow on this exotic planet will transport you to another world and inspire you to embark on your own adventure.
 

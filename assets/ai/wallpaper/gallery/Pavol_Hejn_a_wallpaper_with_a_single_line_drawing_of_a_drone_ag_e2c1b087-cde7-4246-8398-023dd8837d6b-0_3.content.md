@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Drone Delivery Revolution
+# Drone Delivery
 
 Welcome to our website dedicated to exploring the exciting world of drone delivery services. Our mission is to provide you with the latest news, updates, and insights into this rapidly evolving industry.
 

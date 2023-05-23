@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Robotic Engineering Blog
+# Robo Blog
 
 Welcome to our blog dedicated to all things robotic engineering! We are passionate about exploring the latest advancements in robotics and sharing our insights with fellow enthusiasts.
 

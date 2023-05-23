@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Surreal Desert Workspace
+# Desert Workspace
 
 Welcome to our website where you can find inspiration for transforming your workspace into a unique and inspiring environment. Our collection of stunning backgrounds will help you create a space that boosts your creativity and productivity.
 

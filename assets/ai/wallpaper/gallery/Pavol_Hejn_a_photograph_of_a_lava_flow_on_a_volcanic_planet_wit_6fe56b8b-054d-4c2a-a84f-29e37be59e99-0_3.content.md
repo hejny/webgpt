@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Volcanic Planets Explored
+# Volcanic Planets
 
 Welcome to Adventure Awaits, your ultimate guide to exploring the mysteries of volcanic planets! Our website is dedicated to providing you with all the information you need to plan your next adventure to these breathtaking worlds.
 

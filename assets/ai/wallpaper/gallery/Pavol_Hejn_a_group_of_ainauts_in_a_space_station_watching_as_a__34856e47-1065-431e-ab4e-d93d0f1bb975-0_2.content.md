@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Saves Space Adventure
+# AI Space Adventure
 
 Welcome to our space-themed wallpaper featuring a group of Ainautes in a space station, facing an imminent threat to Earth. The scene captures the essence of technology and human ingenuity working together to overcome a crisis.
 

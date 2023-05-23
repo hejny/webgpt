@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Enchanted Forests Desktop
+# Enchanted Desktop
 
 Welcome to our website where we offer a collection of desktop backgrounds that will bring a touch of magic to your computer. Our latest addition features an enchanting forest scene complete with fairies, transporting you to a world of wonder every time you open your screen.
 

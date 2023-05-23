@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Spaceship Exploration
+# AI Spaceship Explore
 
 Welcome to our website dedicated to the exploration of space by a futuristic spaceship crewed entirely by Ainautes. Our mission is to discover new worlds, gather knowledge, and expand humanity's understanding of the universe.
 

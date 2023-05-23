@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Virtual Reality Workspace
+# VR Workspace
 
 Welcome to our website, where you can find inspiration for your virtual reality workspace. Our abstract illustration of a virtual reality environment with futuristic graphics and a minimalist color scheme is the perfect background to help you create a productive and innovative workspace.
 

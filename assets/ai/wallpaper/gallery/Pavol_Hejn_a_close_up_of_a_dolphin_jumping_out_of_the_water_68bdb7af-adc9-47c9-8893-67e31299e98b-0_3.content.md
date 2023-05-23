@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the Ocean with Us
+# Ocean Exploration
 
 Welcome to our website dedicated to exploring the beauty and wonder of the ocean! Our background featuring a close-up of a dolphin jumping out of the water sets the tone for an immersive and exciting experience.
 

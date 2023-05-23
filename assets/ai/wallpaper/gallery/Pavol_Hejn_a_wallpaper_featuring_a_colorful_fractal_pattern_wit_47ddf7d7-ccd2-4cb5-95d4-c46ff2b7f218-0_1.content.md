@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Fractal Workspace Pattern
+# Fractal Workspace
 
 Welcome to our website, where we provide a fractal pattern that will inspire your creativity. Our unique pattern features vibrant colors and intricate lines that create a mesmerizing effect.
 

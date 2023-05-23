@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Deep Space Explorers' Hub
+# Deep Space Hub
 
 Welcome to Explorers' Hub, your go-to resource for all things space exploration. Our mission is to bring you the latest news and insights from the frontiers of deep space, where brave teams of explorers venture into the unknown in search of new worlds, new life, and new knowledge.
 

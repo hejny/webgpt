@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Cycling and Fitness Blog
+# FitCycle Blog
 
 Welcome to our cycling and fitness blog! Our goal is to provide you with the latest news, tips, and advice on all things related to cycling and fitness. Whether you're a seasoned pro or just starting out, we've got you covered.
 

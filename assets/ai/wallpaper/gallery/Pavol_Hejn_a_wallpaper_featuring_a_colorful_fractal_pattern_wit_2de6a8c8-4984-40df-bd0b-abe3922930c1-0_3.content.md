@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Colorful Fractal Inspires
+# Fractal Colors
 
 Welcome to our website, dedicated to providing inspiration and resources for creative professionals. We believe that your workspace environment plays a crucial role in fostering creativity, which is why we offer a vibrant fractal background to add an extra spark to your daily routine.
 

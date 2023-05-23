@@ -1,6 +1,6 @@
 <!--font:Exo 2-->
 
-# Bringing the Beach to You
+# Beach Vibes
 
 Welcome to our website dedicated to bringing the beauty and tranquility of the beach to your digital devices. Our collection of stunning backgrounds captures the essence of the coast, allowing you to escape to a peaceful seaside retreat without leaving your home or office.
 

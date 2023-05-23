@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Vintage Postcards Collage
+# Vintage Collage
 
 Welcome to our website showcasing a beautiful collage of vintage postcards from around the world. Our collection features postcards from different eras, countries, and themes, all carefully curated to bring you a glimpse into the past.
 

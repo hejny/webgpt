@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Exploring Space's Depths
+# Space Depths
 
 Welcome to our website, where we take you on a journey through the depths of space. Our mission is to explore the unknown and uncover the mysteries of the universe. 
 

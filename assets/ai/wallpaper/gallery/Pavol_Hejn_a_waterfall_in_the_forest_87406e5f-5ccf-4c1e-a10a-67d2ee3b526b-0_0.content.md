@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Nature Adventure
+# DigiNature Adventure
 
 Looking for a way to bring the beauty of nature into your digital life? Our "Waterfall in the Forest" background is the perfect choice. With its serene atmosphere and stunning scenery, this background will transport you to a peaceful forest oasis every time you use your device.
 

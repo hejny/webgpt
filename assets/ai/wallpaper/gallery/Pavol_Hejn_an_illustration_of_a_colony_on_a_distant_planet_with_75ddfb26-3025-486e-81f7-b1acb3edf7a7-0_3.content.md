@@ -1,6 +1,6 @@
 <!--font:Barlow Condensed-->
 
-# Future Space Colonization
+# Space Colony Future
 
 Welcome to our website dedicated to exploring the possibilities of space colonization. Our homepage features an illustration of a colony on a distant planet, where futuristic and traditional architecture coexist in harmony. This image sets the tone for what we're all about - pushing boundaries, exploring new frontiers, and dreaming big.
 

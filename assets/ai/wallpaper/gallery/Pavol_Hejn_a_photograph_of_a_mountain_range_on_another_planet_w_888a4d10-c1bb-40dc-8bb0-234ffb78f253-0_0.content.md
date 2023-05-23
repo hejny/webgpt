@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Cosmic Adventure Website
+# Cosmic Adventure
 
 Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This captivating image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
 

@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Discovering the Universe
+# Universe Discovery
 
 Welcome to our website dedicated to exploring the wonders of the universe. Our black and white outline wallpaper of a satellite adds a touch of space-themed inspiration to your device's background while you explore our content.
 

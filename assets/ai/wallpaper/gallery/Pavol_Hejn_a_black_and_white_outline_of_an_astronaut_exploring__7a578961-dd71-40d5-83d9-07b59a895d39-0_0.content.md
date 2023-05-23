@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Space Explorer: Discovery
+# Space Discovery
 
 Welcome to Space Explorer, a website dedicated to all things space exploration. Our mission is to bring you the latest news and insights into the fascinating world of space travel and discovery. 
 

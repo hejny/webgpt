@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Arctic Exploration Guide.
+# Arctic Guide
 
 Welcome to Arctic Adventures, your ultimate guide to discovering the stunning landscapes and unique wildlife of the Arctic region. Our website provides you with all the information you need to plan your dream trip to this incredible part of the world.
 

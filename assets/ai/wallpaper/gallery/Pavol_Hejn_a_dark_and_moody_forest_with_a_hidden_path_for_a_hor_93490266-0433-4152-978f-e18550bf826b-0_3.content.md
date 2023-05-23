@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Hidden Path: Dark Journey
+# Dark Pathway
 
 Welcome to "The Hidden Path," a website dedicated to exploring the unknown and unexplained. Our site is designed for those who are fascinated by the mysteries of the world and are not afraid to venture into the dark and unknown.
 

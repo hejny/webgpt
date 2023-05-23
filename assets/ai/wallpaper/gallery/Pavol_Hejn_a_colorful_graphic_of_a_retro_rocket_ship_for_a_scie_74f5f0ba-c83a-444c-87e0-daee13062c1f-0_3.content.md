@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Space Exploration Website
+# Space Explore Site
 
 Welcome to our space exploration website! Here you will find all the latest news and information about space exploration, including updates on current missions, scientific discoveries, and more.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI Buzzwords for Techies
+# AI Tech Words
 
 Welcome to our website dedicated to all things related to artificial intelligence! Our minimalist wallpaper with a repeating pattern of AI-related buzzwords is the perfect background for tech enthusiasts who want to stay up-to-date with the latest trends and developments in this exciting field. 
 

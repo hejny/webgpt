@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# Ainaute-AI Collaboration
+# Ainaute-AI Collab
 
 Welcome to our website dedicated to exploring the possibilities of a collaborative future between Ainautes and AI. Our vision is a world where humans and machines work together seamlessly to create a better future for all.
 

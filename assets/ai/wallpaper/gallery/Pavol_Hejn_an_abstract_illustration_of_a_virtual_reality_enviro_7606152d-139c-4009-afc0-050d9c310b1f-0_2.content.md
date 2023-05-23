@@ -1,6 +1,6 @@
 <!--font:Playfair Display-->
 
-# Virtual Reality Workspace
+# VR Workspace
 
 Welcome to our website, where we offer a collection of stunning backgrounds for your desktop or mobile device. Our latest addition is an abstract illustration of a virtual reality environment, with futuristic graphics and a minimalist color scheme.
 

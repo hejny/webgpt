@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Vintage Universe Star Map
+# Vintage Star Map
 
 Our vintage star map background is a beautiful and inspiring addition to any desktop or mobile device. Featuring a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies, this background will take you on a journey through the cosmos.
 

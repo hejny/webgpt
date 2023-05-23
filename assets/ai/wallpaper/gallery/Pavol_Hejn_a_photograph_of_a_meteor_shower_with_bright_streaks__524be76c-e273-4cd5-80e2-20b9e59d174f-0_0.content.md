@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Uncover Night Sky's Magic
+# Night Sky Magic
 
 Our Night Sky background features a stunning photograph of a meteor shower, capturing the beauty and wonder of the universe in one breathtaking image. Whether you're an astronomy enthusiast, a writer seeking inspiration, or simply someone who loves the night sky, our Night Sky background is the perfect way to bring the magic of the cosmos to your daily life.
 

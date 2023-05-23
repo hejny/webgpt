@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Neon Geometric Landscapes
+# Neon Landscapes
 
 Welcome to Geometric Landscapes, a digital world filled with stunning landscapes composed of vibrant neon colors and intricate geometric shapes. Our collection of wallpapers is perfect for anyone looking to add a touch of modernity and style to their computer or mobile device.
 

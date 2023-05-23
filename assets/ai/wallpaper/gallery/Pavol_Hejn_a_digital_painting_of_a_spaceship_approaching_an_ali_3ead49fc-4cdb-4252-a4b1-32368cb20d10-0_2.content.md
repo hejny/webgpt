@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Intergalactic Exploration
+# Galactic Quest
 
 Welcome to our website dedicated to the exploration of the universe and all its wonders. As you browse through our collection of stunning digital paintings, you'll be transported to otherworldly landscapes and encounter creatures beyond your wildest imagination.
 

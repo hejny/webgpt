@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Arctic Exploration Guide.
+# Arctic Guide
 
 Welcome to Arctic Adventures, your ultimate guide to exploring the breathtaking landscapes of the Arctic. Our website is dedicated to providing you with all the information you need to plan an unforgettable adventure in this stunning part of the world.
 

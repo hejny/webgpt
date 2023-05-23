@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Cosmic Image Exploration
+# Cosmic Images
 
 Welcome to our website, where we celebrate the wonders of space travel and the mysteries of the universe. Our cosmic image featuring a stunning photograph of a glacier on a distant planet is the perfect complement to your desktop or mobile device. The contrasting blue and white colors of the glacier against the dark sky create a mesmerizing effect that will transport you to another world.
 

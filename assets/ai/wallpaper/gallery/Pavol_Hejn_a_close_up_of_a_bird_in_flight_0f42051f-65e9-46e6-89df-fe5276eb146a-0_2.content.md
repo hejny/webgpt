@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Bird Photography Website
+# Bird Photos
 
 Welcome to our bird photography website! Here, you can find stunning images of birds in their natural habitats. Our latest addition is a close-up of a bird in flight, captured with incredible detail and clarity.
 

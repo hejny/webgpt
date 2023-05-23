@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Hot Air Balloon Adventure
+# Balloon Adventure
 
 Welcome to our lifestyle and adventure website! We are excited to share with you a whimsical scene of a hot air balloon flying over a city. This stunning wallpaper captures the essence of adventure, freedom, and exploration.
 

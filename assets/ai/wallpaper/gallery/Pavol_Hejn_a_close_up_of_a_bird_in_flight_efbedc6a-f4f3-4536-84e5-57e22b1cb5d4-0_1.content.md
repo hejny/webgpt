@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Bird Photography Website
+# Bird Photos
 
 Welcome to our bird photography website! We are passionate about capturing the beauty and grace of birds in flight. Our homepage features a stunning close-up of a bird in flight as our wallpaper.
 

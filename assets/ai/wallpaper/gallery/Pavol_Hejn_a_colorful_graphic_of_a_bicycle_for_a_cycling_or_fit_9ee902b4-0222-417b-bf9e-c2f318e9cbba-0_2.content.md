@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Cycling and Fitness Blog
+# Cycle Fit Blog
 
 Welcome to our cycling and fitness blog! Here you'll find everything you need to know about staying fit and healthy while enjoying the great outdoors. Our goal is to provide you with tips, tricks, and advice to help you reach your fitness goals.
 

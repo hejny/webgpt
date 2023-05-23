@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Explore Space on Our Site
+# Space Explore
 
 Welcome to our website, where we aim to inspire and educate people about the vastness of the universe through astronomy and space exploration. Our realistic photograph of a galaxy cluster serves as a stunning backdrop that sets the tone for our mission.
 

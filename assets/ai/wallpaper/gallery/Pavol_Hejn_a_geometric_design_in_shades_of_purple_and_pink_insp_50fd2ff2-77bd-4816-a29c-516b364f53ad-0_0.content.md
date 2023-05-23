@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Quantum Workspace Design
+# Quantum Design
 
 Transform your workspace into a modern and sophisticated environment with our stunning quantum-inspired geometric design in shades of purple and pink. This unique pattern is sure to impress anyone who enters your space, adding depth and dimension to any environment.
 

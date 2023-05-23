@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Beach Rentals in Paradise
+# Paradise Rentals
 
 Welcome to our beachfront vacation rental website, where you can experience the ultimate relaxation and luxury in paradise. Our stunning beach sunset with palm trees wallpaper sets the tone for your dream vacation.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Dragonfly Nature Designs
+# Dragonfly Designs
 
 Welcome to Dragonfly Dreams, where we offer nature-inspired designs to bring the beauty of the outdoors into your space. Our latest addition features a stunning close-up of a dragonfly on a leaf, adding a touch of natural elegance to any room.
 

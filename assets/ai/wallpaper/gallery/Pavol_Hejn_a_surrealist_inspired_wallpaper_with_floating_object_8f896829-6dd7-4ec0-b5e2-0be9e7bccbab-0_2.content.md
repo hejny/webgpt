@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Maker's Imagination Space
+# Maker Space
 
 Welcome to The Maker's Space, a community of makers and innovators who come together to collaborate, learn, and create. Our space is designed to inspire creativity and encourage experimentation, with tools and resources available to help bring your ideas to life.
 

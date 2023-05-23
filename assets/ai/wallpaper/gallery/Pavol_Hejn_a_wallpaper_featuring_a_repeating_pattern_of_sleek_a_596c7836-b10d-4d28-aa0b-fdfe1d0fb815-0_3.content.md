@@ -1,6 +1,6 @@
 <!--font:Futura-->
 
-# Modern Digital Workspace
+# Digital Workspace
 
 Welcome to our website, where we provide you with a sleek and modern digital workspace background. Our background features a repeating pattern of digital devices such as smartphones, tablets, and laptops. It is perfect for those who want to add a touch of modernity to their work environment.
 

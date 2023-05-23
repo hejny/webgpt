@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Vintage Space Exploration
+# Retro Space
 
 Welcome to our website featuring a vintage space background that will take you on a journey through the mysteries of the universe. Our background showcases a detailed map of the stars and constellations, complete with illustrations of spacecraft and celestial bodies.
 

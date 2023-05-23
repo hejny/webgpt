@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Custom Data Viz Services
+# Data Viz Services
 
 Welcome to our website dedicated to providing modern businesses with custom data visualization design and implementation services. Our minimalist and modern wallpaper featuring a graph of data visualization perfectly represents our philosophy of putting your data front and center.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Innovative Science Future
+# Sci-Future
 
 Welcome to our website, where we explore the latest advancements in science and technology. Our team of experts works tirelessly to develop cutting-edge solutions that will shape the future of our world. As you browse through our site, you'll find a wealth of information on the latest trends and innovations in various fields.
 
