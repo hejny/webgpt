@@ -1,7 +1,6 @@
 import spaceTrim from 'spacetrim';
 import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './Welcome.module.css';
 
@@ -34,10 +33,12 @@ export function ShowcaseWelcomeSection() {
                 }}
             >
                 <Article content={wallpaper.content} isUsingOpenmoji />
+                {/*
                 <br />
                 <br />
                 <br />
                 {useCurrentWallpaperId()}
+                */}
             </div>
         </Section>
     );

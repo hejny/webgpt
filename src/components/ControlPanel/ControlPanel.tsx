@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
@@ -11,14 +12,14 @@ import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 interface ControlPanelProps {
     randomWallpaper: IWallpaper;
     turnOnEditing(): void;
-    turnOnPresenting(): void;
 }
 
 /**
  * @@@
  */
 export function ControlPanel(props: ControlPanelProps) {
-    const { randomWallpaper, turnOnEditing, turnOnPresenting } = props;
+    const { randomWallpaper, turnOnEditing } = props;
+    const router = useRouter();
 
     return (
         <div
@@ -67,12 +68,21 @@ export function ControlPanel(props: ControlPanelProps) {
             <button onClick={turnOnEditing} className={classNames('button', styles.button)}>
                 <Article content="🖊" isUsingOpenmoji />
             </button>
-            <button onClick={turnOnPresenting} className={classNames('button', styles.button)}>
+            <Link
+                prefetch={false /* <- Note: Because gallery is enormous */}
+                href={{
+                    query: {
+                        slug: router.query.slug /* <- TODO: More elegant way than passing known stuff */,
+                        mode: 'presentation',
+                    },
+                }}
+                className={classNames('button', styles.button)}
+            >
                 <Article
                     content="▶"
                     isUsingOpenmoji /* <- TODO: !!! Show the QR code before + Save to GET params to be able to send */
                 />
-            </button>
+            </Link>
         </div>
     );
 }

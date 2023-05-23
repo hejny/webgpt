@@ -1,3 +1,4 @@
+import { useRouter } from 'next/dist/client/router';
 import { useState } from 'react';
 import { Vector } from 'xyzt';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
@@ -17,7 +18,8 @@ interface ShowcaseContentWithEditProps {
 export function ShowcaseContentWithEdit(props: ShowcaseContentWithEditProps) {
     const { randomWallpaper } = props;
     const [isEditing, setEditing] = useState(false);
-    const [isPresenting, setPresenting] = useState(false);
+    const router = useRouter();
+    const isPresenting = router.query.mode === 'presentation' /* <- TODO: Make hook useMode */;
 
     return (
         <div className={styles.page}>
@@ -33,13 +35,7 @@ export function ShowcaseContentWithEdit(props: ShowcaseContentWithEditProps) {
                 <ShowcaseWelcomeSection />
                 {/*<ReferencesSection variant="SHORT" />*/}
             </main>
-            {!isPresenting && (
-                <ControlPanel
-                    {...{ randomWallpaper }}
-                    turnOnEditing={setEditing.bind(null, true)}
-                    turnOnPresenting={setPresenting.bind(null, true)}
-                />
-            )}
+            {!isPresenting && <ControlPanel {...{ randomWallpaper }} turnOnEditing={setEditing.bind(null, true)} />}
 
             <footer>
                 <FooterSection />
