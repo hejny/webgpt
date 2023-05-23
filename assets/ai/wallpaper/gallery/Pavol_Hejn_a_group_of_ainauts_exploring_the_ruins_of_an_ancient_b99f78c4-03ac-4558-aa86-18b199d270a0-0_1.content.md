@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Lost Civilization Explored
+# Lost Civilization Found
 
 Welcome to our website dedicated to the exploration of ancient civilizations on distant planets. Our team of Ainautes travels to the far reaches of the galaxy in search of lost artifacts, forgotten knowledge, and the secrets of civilizations long gone.
 
