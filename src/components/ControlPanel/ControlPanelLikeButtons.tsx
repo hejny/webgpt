@@ -1,7 +1,4 @@
 import { classNames } from '../../utils/classNames';
-import { Color } from '../../utils/color/Color';
-import { textColor } from '../../utils/color/operators/furthest';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { Article } from '../Article/Article';
 import styles from '../ControlPanel/ControlPanel.module.css';
@@ -12,22 +9,14 @@ import styles from '../ControlPanel/ControlPanel.module.css';
 export function ControlPanelLikeButtons() {
     // useRefresh(100);
     const [likedStatus, setLikedStatus] = useLikedStatusOfCurrentWallpaper();
-    const wallpaperId = useCurrentWallpaperId();
-
-    // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
-    const backgroundColor = Color.from(`#8dc1e4`);
 
     return (
         <>
-            <div style={{ color: '#b11919' }}>{wallpaperId}</div>
+            {/* <div style={{ color: '#b11919' }}>{wallpaperId}</div> */}
             <button
                 // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
 
                 className={classNames('button', styles.button)}
-                style={{
-                    backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(textColor).toHex(),
-                }}
                 title="I love this web!"
                 data-active={likedStatus === 'LOVE'}
                 onClick={() =>
@@ -42,10 +31,6 @@ export function ControlPanelLikeButtons() {
             <button
                 // TODO: !!! Also listen on double-click on mobile
                 className={classNames('button', styles.button)}
-                style={{
-                    backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(textColor).toHex(),
-                }}
                 data-active={likedStatus === 'LIKE'}
                 onClick={() =>
                     void setLikedStatus(
@@ -57,10 +42,6 @@ export function ControlPanelLikeButtons() {
             </button>
             <button
                 className={classNames('button', styles.button)}
-                style={{
-                    backgroundColor: backgroundColor.toHex(),
-                    color: backgroundColor.then(textColor).toHex(),
-                }}
                 data-active={likedStatus === 'DISLIKE'}
                 onClick={() =>
                     void setLikedStatus(

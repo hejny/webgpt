@@ -21,7 +21,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
     const router = useRouter();
     const wallpaperId = router.query.slug as string;
-    console.log('ShowcasePage', { wallpaperId });
+    // console.log('ShowcasePage', { wallpaperId });
 
     return (
         <WallpapersContext.Provider

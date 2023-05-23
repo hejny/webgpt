@@ -107,6 +107,8 @@ export const EMOJIS_IN_CATEGORIES: Record<string, Array<string_char_emoji>> = {
         ) as Array<string_char_emoji>,
 
     'New Emojis (Discorered randomly)': '🖌️'.split(' ') as Array<string_char_emoji>,
+
+    'Emojis used in Aiai': ['▶', '❤'] as any as Array<string_char_emoji>,
 };
 
 /**

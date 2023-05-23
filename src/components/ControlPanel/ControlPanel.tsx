@@ -1,12 +1,7 @@
 import Link from 'next/link';
 
 import { classNames } from '../../utils/classNames';
-import { Color } from '../../utils/color/Color';
-import { hslToRgb } from '../../utils/color/internal-utils/hslToRgb';
-import { rgbToHsl } from '../../utils/color/internal-utils/rgbToHsl';
-import { textColor } from '../../utils/color/operators/furthest';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
-import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
 import { NoSsr } from '../NoSsr/NoSsr';
@@ -25,23 +20,6 @@ interface ControlPanelProps {
 export function ControlPanel(props: ControlPanelProps) {
     const { randomWallpaper, turnOnEditing, turnOnPresenting } = props;
 
-    const wallpaperId = useCurrentWallpaperId();
-
-    // TODO: !!! Fix mostSaturatedColor then use colorStats.mostSaturatedColor.toHex()
-    const backgroundColor = Color.from(`#8dc1e4`);
-
-    const minorButtonStyle = {
-        backgroundColor: backgroundColor
-            .then((color) => {
-                // TODO: Color operator desaturate
-                let [hue, saturation, light] = rgbToHsl(color.red, color.green, color.blue);
-                saturation = saturation / 2;
-                return Color.fromValues(...hslToRgb(hue, saturation, light));
-            })
-            .toHex(),
-        color: backgroundColor.then(textColor).toHex(),
-    };
-
     return (
         <div
             className={classNames(
@@ -49,7 +27,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 styles.ControlPanel,
             )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
         >
-            <div style={{color:'#1f6b08'}}>{wallpaperId}</div>
+            {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
 
             <NoSsr>
                 <ControlPanelLikeButtons />
@@ -58,7 +36,6 @@ export function ControlPanel(props: ControlPanelProps) {
             <Link
                 href={'/'}
                 className={classNames('button', styles.button)}
-                style={minorButtonStyle}
                 prefetch={false /* <- Note: Because gallery is enormous */}
             >
                 <Article content="🖼" isUsingOpenmoji /* <- TODO: !!! Better icon OR Openmoji */ />
@@ -73,34 +50,27 @@ export function ControlPanel(props: ControlPanelProps) {
                 }}
                 /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
                 className={classNames('button', styles.button)}
-                style={{
-                    ...minorButtonStyle,
-
-                    backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
-                    color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
-                }}
-            >
-                <Article content="🎲" isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */ />
-            </Link>
-            <button
-                onClick={turnOnEditing}
-                className={classNames('button', styles.button)}
-                style={{
-                    ...minorButtonStyle,
-                }}
-            >
-                <Article content="🖊" isUsingOpenmoji />
-            </button>
-            <button
-                onClick={turnOnPresenting}
-                className={classNames('button', styles.button)}
-                style={{
-                    ...minorButtonStyle,
-                }}
+                style={
+                    {
+                        // ...minorButtonStyle,
+                        // TODO: Better or delete
+                        // backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
+                        // color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                    }
+                }
             >
                 <Article
+                    content="🎲"
+                    isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
+                />
+            </Link>
+            <button onClick={turnOnEditing} className={classNames('button', styles.button)}>
+                <Article content="🖊" isUsingOpenmoji />
+            </button>
+            <button onClick={turnOnPresenting} className={classNames('button', styles.button)}>
+                <Article
                     content="▶"
-                    isEnhanced /* <- TODO: !!! Show the QR code before + Save to GET params to be able to send */
+                    isUsingOpenmoji /* <- TODO: !!! Show the QR code before + Save to GET params to be able to send */
                 />
             </button>
         </div>

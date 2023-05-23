@@ -5,7 +5,7 @@
     position: fixed;
     right: 15px;
     bottom: 15px;
-    width: 220px;
+    width: auto;
 
     padding: 3px;
     background-color: rgba(43, 43, 43, 0.11);
@@ -32,31 +32,14 @@
     text-align: center;
     font-size: 17px;
     margin: 5px;
+    background-color: rgb(152, 216, 228);
 }
 
 .button[data-active='true'] {
-    border: 2px solid rgb(255, 0, 0);
-    outline: none;
+    background-color: rgb(20, 213, 247);
     text-align: center;
     font-size: 17px;
     margin: 5px;
-}
-
-.getButton {
-    flex-grow: 2;
-    font-size: 20px;
-    /*
-    font-weight: bold;
-    background-color: rgb(181, 230, 135);
-    */
-}
-
-.button {
-    flex-grow: 1;
-    /*
-    background-color: rgb(136, 162, 196);
-    color: black !important;
-    */
 }
 
 @media only screen and (max-width: 900px) {
