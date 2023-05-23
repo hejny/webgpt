@@ -32,7 +32,7 @@ export function ShowcaseWelcomeSection() {
                     fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,
                 }}
             >
-                <Article content={wallpaper.content} />
+                <Article content={wallpaper.content} isUsingOpenmoji />
             </div>
         </Section>
     );

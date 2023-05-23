@@ -1,6 +1,7 @@
 import { Converter } from 'showdown';
 import showdownHighlight from 'showdown-highlight';
 import spaceTrim from 'spacetrim';
+import { Promisable } from 'type-fest';
 import { emojifyHtml } from '../../utils/content/emojifyHtml';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
@@ -9,7 +10,7 @@ import styles from './Article.module.css';
 
 /**
  * Interface for article props ⁘
- * 
+ *
  * @interface
  * @property {string} content - The content of the article in markdown format
  * @property {boolean} [isHashUsed] - Whether the article uses hash for navigation
@@ -27,41 +28,48 @@ interface IArticleProps {
     isHashUsed?: boolean;
 
     /**
+     * Is enhanced by using openmoji
+     */
+    isUsingOpenmoji?: boolean;
+
+    /**
      * Is enhanced by adding links, normalize dashes and emojify
      */
     isEnhanced?: boolean;
 }
 
-
 /**
  * Function component that renders an article from markdown content ⁘
- * 
+ *
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
 export function Article(props: IArticleProps) {
-    const { content /* [0], isHashUsed */, isEnhanced } = props;
+    const { content /* [0], isHashUsed */, isUsingOpenmoji, isEnhanced } = props;
 
     // [0] const hash = useHash();
 
-    let markdown = spaceTrim(content || '');
+    let markdown: Promisable<string> = spaceTrim(content || '');
 
     if (isEnhanced) {
         markdown = linkMarkdown(markdown);
         markdown = normalizeDashes(markdown);
     }
 
-    converter.setFlavor('github');
-    let html = converter.makeHtml(markdown);
+    if (isUsingOpenmoji) {
+        // TODO: We should take emojis ONLY in text
+        markdown = emojifyHtml(markdown);
+    }
 
+    converter.setFlavor('github');
+    let html: Promise<string> = Promise.resolve(markdown).then((markdown) => converter.makeHtml(markdown));
+
+    /*
     if (html === '') {
         // Note: Do not make empty div for empty article
         return <></>;
     }
-
-    if (isEnhanced) {
-        html = emojifyHtml(html);
-    }
+    */
 
     // TODO: [0] If not using hash, remove IDs from html
 
@@ -117,7 +125,7 @@ export function Article(props: IArticleProps) {
 
 /**
  * A converter instance that uses showdown and highlight extensions ⁘
- * 
+ *
  * @type {Converter}
  */
 const converter = new Converter({
@@ -134,4 +142,5 @@ const converter = new Converter({
 /**
  * TODO:[0] Use has if isHashUsed is true
  * TODO: Maybe rename to <Content/> or <MarkdownContent/> or <Markdown/>
+ * !!!! Must work with SSR - maybe fallback to keep
  */

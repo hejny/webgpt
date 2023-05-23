@@ -1,6 +1,10 @@
 .Article {
 }
 
+/*
+TODO: !! It is not looking good when there is <h1> in middle of texts
+*/
+
 .Article h1 {
     line-height: 110%;
     margin-bottom: 50px;
