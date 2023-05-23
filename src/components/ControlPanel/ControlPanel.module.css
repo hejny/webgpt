@@ -32,11 +32,11 @@
     text-align: center;
     font-size: 17px;
     margin: 5px;
-    background-color: rgb(152, 216, 228);
+    background-color: rgb(152, 216, 228) /* <- TODO: !! Figure out best colors */;
 }
 
 .button[data-active='true'] {
-    background-color: rgb(20, 213, 247);
+    background-color: rgb(187, 247, 20) /* <- TODO: !! Figure out best colors */;
     text-align: center;
     font-size: 17px;
     margin: 5px;
