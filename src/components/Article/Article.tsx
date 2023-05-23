@@ -58,7 +58,7 @@ export function Article(props: IArticleProps) {
 
     if (isUsingOpenmoji) {
         // TODO: We should take emojis ONLY in text
-        markdown = emojifyMarkdown(markdown);
+        markdown = emojifyMarkdown(markdown, 'black');
     }
 
     converter.setFlavor('github');

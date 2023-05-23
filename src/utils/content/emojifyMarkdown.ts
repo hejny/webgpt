@@ -4,7 +4,10 @@ import { string_url } from '../typeAliases';
 /**
  * Replaces emojis in an html with images from openmoji
  */
-export async function emojifyMarkdown(html: string): Promise<string> {
+export async function emojifyMarkdown(
+    html: string,
+    type: 'black' | 'color' /* <- TODO: Add here white and negative AND use negative */,
+): Promise<string> {
     // console.log('-----------');
     for (const emoji of EMOJIS) {
         if (!html.includes(emoji)) {
@@ -18,7 +21,7 @@ export async function emojifyMarkdown(html: string): Promise<string> {
         }
 
         const code = codePoint.toString(16).toUpperCase();
-        const image = await import(`openmoji/color/svg/${code}.svg`)
+        const image = await import(`openmoji/${type}/svg/${code}.svg`)
             .then((module) => module.default as { src: string_url; width: number; height: number })
             .catch(() => null);
 
