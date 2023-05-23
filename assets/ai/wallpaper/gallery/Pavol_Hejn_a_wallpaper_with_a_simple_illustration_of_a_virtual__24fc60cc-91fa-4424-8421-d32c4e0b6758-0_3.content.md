@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Virtual Reality Gaming Hub
+# VR Gaming Hub
 
 Welcome to our website, your one-stop hub for all things virtual reality gaming! We're dedicated to bringing you the latest news, reviews, and recommendations for VR games and accessories.
 

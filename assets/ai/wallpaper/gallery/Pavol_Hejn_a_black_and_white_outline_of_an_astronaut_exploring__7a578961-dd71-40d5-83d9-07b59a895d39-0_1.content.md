@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Universe Adventure for All
+# UniVent All
 
 Welcome to our website, where you can embark on a space adventure without leaving your home! Our website offers various resources for space enthusiasts, from informative articles to breathtaking images and videos. And now, we are excited to introduce our new background featuring a black and white outline of an astronaut exploring a distant planet, with intricate details and shading.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Calming Butterfly Workspace
+# Butterfly Workspace
 
 Welcome to our website dedicated to helping you create a calming workspace. Our Butterfly Garden background is the perfect addition to your desktop for a serene and peaceful work environment.
 

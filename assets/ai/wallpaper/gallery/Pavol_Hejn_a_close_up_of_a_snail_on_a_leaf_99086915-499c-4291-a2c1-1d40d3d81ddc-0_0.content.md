@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Nature's Intricate Details
+# Nature Details
 
 Welcome to our website celebrating the beauty of nature's intricate details. Our featured background is a stunning close-up photograph of a snail on a leaf, showcasing the delicate patterns and textures that exist in even the smallest of creatures.
 

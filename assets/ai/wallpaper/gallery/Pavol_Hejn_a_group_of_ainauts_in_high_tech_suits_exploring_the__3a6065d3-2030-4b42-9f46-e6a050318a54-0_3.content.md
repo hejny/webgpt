@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Ainautes on a Desert Planet
+# Desert Ainautes
 
 Welcome to our website dedicated to exploring new frontiers! Our team of Ainautes are always pushing the boundaries of what is possible, and we are excited to share our latest adventure with you.
 

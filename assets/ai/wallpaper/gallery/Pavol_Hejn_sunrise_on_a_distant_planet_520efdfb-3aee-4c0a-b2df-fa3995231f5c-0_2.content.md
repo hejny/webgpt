@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Sunrise on a Distant Planet
+# Distant Sunrise
 
 Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet". 
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# TechConnect: Latest in Tech
+# TechConnect
 
 Welcome to TechConnect, your one-stop-shop for all things tech-related. Our website provides you with the latest news, reviews, and insights on everything from smartphones to laptops, software to hardware, and everything in between.
 

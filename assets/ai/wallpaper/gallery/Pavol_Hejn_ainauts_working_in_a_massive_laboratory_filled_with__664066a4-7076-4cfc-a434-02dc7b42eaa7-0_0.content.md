@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Research Tech Advancements
+# Tech Research
 
 Welcome to our website, where we explore the latest breakthroughs in science and technology. Our mission is to provide you with the most up-to-date information on the advancements that are shaping our world.
 

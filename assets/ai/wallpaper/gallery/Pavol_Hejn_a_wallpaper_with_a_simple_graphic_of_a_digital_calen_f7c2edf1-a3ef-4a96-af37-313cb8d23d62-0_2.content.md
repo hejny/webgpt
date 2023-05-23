@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Digital Productivity Boost
+# Digital Boost
 
 Welcome to our website! Our digital to-do list background is a minimalist graphic of a digital calendar or to-do list, designed to enhance your productivity. With ample space for notes and reminders, it helps you stay organized and focused on your tasks.
 

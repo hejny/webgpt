@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Journey to the Red Planet.
+# Red Planet Journey
 
 Welcome to our website dedicated to the exploration of the Red Planet! Our team of experts has gathered the most stunning images and wallpapers of Mars for you to enjoy.
 

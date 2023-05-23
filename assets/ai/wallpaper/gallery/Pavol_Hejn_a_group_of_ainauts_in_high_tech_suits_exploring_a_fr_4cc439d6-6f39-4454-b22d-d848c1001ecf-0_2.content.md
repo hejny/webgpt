@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Ainautes on Frozen Planet.
+# Frozen Ainautes
 
 Welcome to our website dedicated to the exploration of distant planets by Ainautes, advanced robots equipped with artificial intelligence. Our latest wallpaper features a group of Ainautes in high-tech suits exploring a frozen wasteland on a distant planet, with towering ice formations all around them.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Cormorant Garamond-->
 
-# Mystery Forest Exploration
+# Forest Mystery
 
 Welcome to our website, where we explore the eerie and mysterious world of dark forests. Our wallpaper features a dense forest with a hidden path that leads deep into the unknown. This image sets the tone for our site, which is dedicated to all things spooky and unsettling.
 

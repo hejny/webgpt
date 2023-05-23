@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# AI Piloting Asteroid Field
+# AI Asteroid Pilot
 
 Welcome to our website featuring an exciting wallpaper of a team of Ainautes piloting a spacecraft through an asteroid field, with explosions and debris flying all around them.
 

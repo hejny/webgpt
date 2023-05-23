@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# AI Explores Alien Structure
+# AI Alien Structures
 
 Welcome to our website, where we explore the wonders of space and the mysteries of the universe. Our latest wallpaper features a group of Ainautes standing on the surface of a distant planet, with a massive, alien structure towering above them. This image captures the imagination and inspires us to learn more about what lies beyond our world.
 

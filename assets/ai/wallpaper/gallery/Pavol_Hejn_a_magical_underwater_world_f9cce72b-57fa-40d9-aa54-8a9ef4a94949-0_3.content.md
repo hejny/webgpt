@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# A Magical Underwater World
+# Underwater Magic
 
 Welcome to our website dedicated to the enchanting beauty of the underwater world. Here, you will find stunning wallpapers that capture the essence of this magical realm.
 

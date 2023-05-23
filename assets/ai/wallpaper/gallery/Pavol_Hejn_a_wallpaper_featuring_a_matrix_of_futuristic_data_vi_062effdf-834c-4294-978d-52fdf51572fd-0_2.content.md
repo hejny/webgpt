@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Futuristic Visual Insights
+# Futuristic Insights
 
 Welcome to our website where we provide cutting-edge data visualization tools to help you gain insights into your business. Our wallpaper featuring a matrix of futuristic data visualizations and graphs will set the tone for your visit.
 

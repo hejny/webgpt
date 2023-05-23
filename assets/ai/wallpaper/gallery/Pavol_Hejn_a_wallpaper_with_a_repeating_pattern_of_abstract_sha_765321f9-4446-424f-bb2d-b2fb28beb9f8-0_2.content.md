@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Tech Site's Malware History
+# Tech Malware History
 
 Our abstract background design is perfect for websites that want to convey a cutting-edge, tech-inspired look. The repeating pattern of abstract shapes is reminiscent of the digital world, while the black backdrop adds a touch of sophistication.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Journey to Distant Planets
+# Distant Planets Journey
 
 Welcome to our website dedicated to exploring the unknown depths of space! Our mission is to inspire and educate people about the wonders of the universe, and to encourage them to join us on our journey of discovery.
 

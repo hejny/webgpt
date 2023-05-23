@@ -1,6 +1,6 @@
 <!--font:Roboto-->
 
-# Ainaute Planet Exploration
+# Ainaute Planet Explore
 
 Welcome to our website, where we take you on an exciting journey through the wonders of Ainautes. Our mission is to bring you closer to the mysteries of this distant planet and its awe-inspiring landscapes.
 

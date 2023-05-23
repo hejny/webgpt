@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes: Into the Unknown
+# Ainautes Unknown
 
 Welcome to our website dedicated to the thrilling adventures of Ainautes and their AI companions. Our latest wallpaper features a group of brave explorers venturing into an abandoned research facility in the depths of space.
 

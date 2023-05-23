@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Design Futuristic Workspace
+# Futuristic Workspace
 
 Welcome to our website dedicated to helping you design the perfect workspace. Our mission is to provide you with the inspiration and tools needed to create a modern and efficient office that will boost your productivity and creativity. Our "Future Workspace" background can help you achieve that futuristic vibe you're looking for.
 

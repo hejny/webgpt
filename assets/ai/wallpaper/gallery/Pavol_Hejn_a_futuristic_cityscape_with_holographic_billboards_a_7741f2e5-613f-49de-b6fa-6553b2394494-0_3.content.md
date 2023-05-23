@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Tech Future-Proofs Business
+# Tech Proofs Business
 
 ## About Us
 

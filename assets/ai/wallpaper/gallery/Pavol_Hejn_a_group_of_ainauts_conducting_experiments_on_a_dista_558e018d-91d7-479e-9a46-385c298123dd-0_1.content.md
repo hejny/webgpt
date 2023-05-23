@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A group of AI tests on distant planet., with a red sun setting behind them."
+"A group of AI planet tests., with a red sun setting behind them."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 

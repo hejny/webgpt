@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Contemporary Trip Planning
+# Contemporary Trips
 
 Welcome to our website, where we provide you with all the resources you need to plan your next adventure! Our vintage-style graphic of a retro car adds a touch of nostalgia and wanderlust to your browsing experience.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Neon-Colored Cosmic Dreams
+# Neon Dreams
 
 Welcome to Cosmic Dreams, where we bring the beauty of the universe into your space with our stunning neon-colored interpretation of a starry sky wallpaper. Our unique design is perfect for anyone looking to add a touch of cosmic magic to their home or office.
 

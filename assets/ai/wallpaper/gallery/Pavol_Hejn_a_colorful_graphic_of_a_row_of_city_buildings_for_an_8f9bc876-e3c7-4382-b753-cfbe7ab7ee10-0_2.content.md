@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Urban Living at its Finest
+# Urban Finest Living
 
 Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life. 
 

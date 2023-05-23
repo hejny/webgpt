@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# AI Chatbot for Improved CX
+# AI Chatbot CX
 
 Welcome to our website! Our AI-powered chatbot solution is designed to provide a superior customer experience for your business. Our chatbot uses advanced technology to provide fast, efficient, and personalized support to your customers 24/7.
 

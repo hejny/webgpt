@@ -1,6 +1,6 @@
 <!--font:Inter-->
 
-# Futuristic Tech Background
+# Futuristic Tech
 
 Looking to give your website a futuristic edge? Our abstract illustration of a dark and ominous machine with glowing red lights and mechanical parts is the perfect background.
 

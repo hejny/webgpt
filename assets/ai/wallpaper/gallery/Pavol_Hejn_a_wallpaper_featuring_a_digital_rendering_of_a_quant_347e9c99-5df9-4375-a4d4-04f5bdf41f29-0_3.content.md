@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Discover Quantum Computing
+# Quantum Discover
 
 Welcome to our website dedicated to exploring the fascinating world of quantum computing. Our sleek wallpaper features a digital rendering of a quantum computer, providing the perfect backdrop for your journey into this cutting-edge field.
 

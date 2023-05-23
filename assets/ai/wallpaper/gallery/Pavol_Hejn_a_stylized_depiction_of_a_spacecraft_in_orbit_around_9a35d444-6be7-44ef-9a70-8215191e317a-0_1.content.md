@@ -1,6 +1,6 @@
 <!--font:Cinzel-->
 
-# Explore the Beauty of Space
+# Space Beauty
 
 Welcome to our website, where you can immerse yourself in the wonders of space. Our stunning background depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows. It's the perfect backdrop for anyone who loves space exploration and wants to feel inspired every time they visit our site.
 

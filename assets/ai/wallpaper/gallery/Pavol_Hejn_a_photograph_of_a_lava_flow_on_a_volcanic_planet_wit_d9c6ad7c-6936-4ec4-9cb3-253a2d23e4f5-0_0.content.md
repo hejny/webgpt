@@ -1,6 +1,6 @@
 <!--font:Open Sans-->
 
-# Volcanic Planet Adventures
+# Volcano Trekking
 
 Welcome to Volcanic Planet Adventures, your gateway to exploring the most exciting and dangerous destinations in the galaxy. Our team of experienced guides will take you on a journey through the heart of active volcanoes, where you'll witness incredible lava flows like the one captured in our stunning wallpaper.
 

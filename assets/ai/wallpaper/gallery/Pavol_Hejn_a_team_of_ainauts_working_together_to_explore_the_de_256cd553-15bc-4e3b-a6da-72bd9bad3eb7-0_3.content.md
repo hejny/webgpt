@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes: Black Hole Explo
+# Ainautes: Black Hole
 
 Welcome to our website, where we take you on a journey through the depths of a black hole with our team of Ainautes. Our mission is to explore the unknown and push the boundaries of what is possible with futuristic technology at our fingertips.
 

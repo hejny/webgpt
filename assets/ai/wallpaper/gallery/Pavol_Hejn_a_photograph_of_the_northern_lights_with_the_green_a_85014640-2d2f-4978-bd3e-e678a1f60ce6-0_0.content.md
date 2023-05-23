@@ -1,6 +1,6 @@
 <!--font:Cormorant Garamond-->
 
-# Northern Lights Collection
+# North Lights
 
 Welcome to our website, where you can immerse yourself in the breathtaking beauty of the Northern Lights. Our carefully curated collection of images captures the essence of this natural wonder, bringing the magic of the Aurora Borealis to your screen.
 

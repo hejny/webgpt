@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Workspace Design
+# Futuristic Workspace
 
 Welcome to our website dedicated to creating the ultimate futuristic workspace experience. Our minimalist wallpaper with a single line drawing of a cyborg is the perfect addition to your digital workspace. The striking color options of bright red or blue will add a pop of color to your screen and inspire creativity in your work.
 

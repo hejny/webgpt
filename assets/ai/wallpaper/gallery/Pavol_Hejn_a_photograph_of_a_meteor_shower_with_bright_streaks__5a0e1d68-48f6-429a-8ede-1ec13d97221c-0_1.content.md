@@ -1,6 +1,6 @@
 <!--font:Orbitron-->
 
-# Stellar Desktop Backgrounds
+# Stellar Desktops
 
 Welcome to our website dedicated to providing you with stunning backgrounds that will transform your desktop into a celestial wonderland. Our collection of wallpapers features breathtaking images of the night sky, including galaxies, nebulae, and meteor showers.
 

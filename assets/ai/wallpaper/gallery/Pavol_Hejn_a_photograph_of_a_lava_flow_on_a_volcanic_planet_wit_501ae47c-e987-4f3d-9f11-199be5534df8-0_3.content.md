@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Volcanic Planet Adventures
+# Volcano Trekking
 
 Experience the thrill of exploring a volcanic planet with our guided tours. Get up close and personal with lava flows and witness the raw power of nature. Our expert guides will ensure your safety while providing an unforgettable adventure.
 

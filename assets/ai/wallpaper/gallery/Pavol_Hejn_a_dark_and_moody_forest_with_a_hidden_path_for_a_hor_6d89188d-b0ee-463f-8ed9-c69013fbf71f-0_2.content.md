@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Cinzel-->
 
-# Hidden Path: Dark Journey.
+# Dark Hidden Path
 
 Welcome to The Hidden Path, a website dedicated to all things horror and mystery. Our wallpaper sets the tone for what you can expect from our content - dark and moody with a hidden path leading to unknown horrors.
 

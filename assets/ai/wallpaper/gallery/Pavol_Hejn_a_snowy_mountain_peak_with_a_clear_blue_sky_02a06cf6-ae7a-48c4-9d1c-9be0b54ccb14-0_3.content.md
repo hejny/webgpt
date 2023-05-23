@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Winter Mountain Adventures.
+# Winter Mountains
 
 Welcome to our travel agency, where we specialize in crafting unforgettable winter adventures for outdoor enthusiasts and nature lovers. Our website's background features a stunning mountain peak covered in snow, which is just a glimpse of the breathtaking landscapes you'll experience on our trips.
 

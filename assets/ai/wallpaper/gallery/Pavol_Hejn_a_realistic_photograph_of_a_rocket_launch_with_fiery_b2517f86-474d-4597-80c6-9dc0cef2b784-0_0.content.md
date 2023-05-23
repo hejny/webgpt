@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Explore the Beauty of Space
+# Space Beauty
 
 Experience the awe-inspiring wonder of space exploration with this stunning photograph of a rocket launch. The image captures the intense energy and excitement of space travel, with fiery trails and smoke visible in the sky.
 

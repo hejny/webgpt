@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Title: Night Sky Backdrops
+# Sky Night Backdrops
 
 Welcome to our website, where we offer a beautiful night sky background that will transport you to a peaceful and inspiring place. Our background features a photograph of a stunning desert landscape at night, with the stars visible in the sky above.
 

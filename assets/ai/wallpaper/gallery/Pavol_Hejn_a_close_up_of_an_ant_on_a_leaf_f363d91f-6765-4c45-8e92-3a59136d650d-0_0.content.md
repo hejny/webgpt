@@ -1,6 +1,6 @@
 <!--font:Lobster-->
 
-# Nature-Inspired Home Decor
+# Eco Decor
 
 Looking to add a touch of nature to your home decor? Our collection of nature-inspired backgrounds is the perfect way to do just that. With high-quality prints and stunning designs, these backgrounds are ideal for adding a sense of calm and tranquility to any room in your home.
 

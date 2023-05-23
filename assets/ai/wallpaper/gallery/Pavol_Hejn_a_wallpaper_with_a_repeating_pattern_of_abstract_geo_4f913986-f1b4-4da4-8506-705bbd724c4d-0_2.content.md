@@ -1,6 +1,6 @@
 <!--font:Cinzel Decorative-->
 
-# The Art of Geometric Design
+# Geometric Art
 
 Welcome to The Art of Geometric Design, a platform dedicated to showcasing the latest trends in web design and color schemes. Our website features a stunning background inspired by abstract geometric shapes and patterns.
 

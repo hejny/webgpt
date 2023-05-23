@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Digital Space Art Showcased
+# Digital Art Show
 
 Our digital artwork captures the awe-inspiring beauty and wonder of space, featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe.
 

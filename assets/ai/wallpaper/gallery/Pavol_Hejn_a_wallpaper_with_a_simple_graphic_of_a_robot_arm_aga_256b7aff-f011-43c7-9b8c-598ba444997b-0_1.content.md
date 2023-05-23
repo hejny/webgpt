@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Robotic Business Solutions
+# RoboBiz
 
 Welcome to our website, where we offer innovative robotics solutions designed to transform your business operations. Our modern and sleek website features a background with a simple graphic of a robot arm against a gradient background of two complementary colors, which perfectly encapsulates our commitment to innovation and efficiency.
 

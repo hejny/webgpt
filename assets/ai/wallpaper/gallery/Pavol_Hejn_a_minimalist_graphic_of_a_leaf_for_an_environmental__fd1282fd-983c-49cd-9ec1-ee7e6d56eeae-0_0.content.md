@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Sustainable Living Website
+# Sustain Web
 
 Welcome to our sustainable living website! Here, we provide tips and resources for living a more environmentally-friendly lifestyle.
 

@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist Workspace Design
+# Minimal Workspace
 
 Upgrade your workspace with our modern minimalist design featuring a repeating pattern of simple geometric shapes. Available in a monochromatic color palette of grey or blue, this design adds a touch of sophistication and style to any environment.
 

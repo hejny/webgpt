@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Exploring Volcanic Planets.
+# Volcanic Exploration
 
 Welcome to our website dedicated to exploring the mysteries of volcanic planets! Our site is your ultimate guide to everything related to these fascinating celestial bodies, from their geology and climate to the potential for life on them.
 

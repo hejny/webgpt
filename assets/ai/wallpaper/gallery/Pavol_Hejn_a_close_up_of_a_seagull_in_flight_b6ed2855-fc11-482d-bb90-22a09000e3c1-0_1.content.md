@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discovering Seagulls' World
+# Seagull Discovery
 
 Welcome to our website where you can explore the fascinating world of seagulls. Our homepage features a stunning close-up photograph of a seagull in flight, capturing the grace and elegance of these magnificent birds.
 

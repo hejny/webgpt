@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Workspace Design
+# Future Workspace
 
 Welcome to our website showcasing the latest in minimalist graphic design for modern workspaces. Our featured wallpaper is a sleek and futuristic design, perfect for those looking to add a touch of sophistication to their workspace.
 

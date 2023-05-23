@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Journey to Distant Planets.
+# Distant Planets Journey
 
 Welcome to our website dedicated to exploring the unknown and discovering new worlds. Our team of Ainautes and their AI companions are on a mission to explore the vast universe and uncover its secrets. Our latest adventure takes us to a distant planet, where we discovered a massive, underground cave system.
 

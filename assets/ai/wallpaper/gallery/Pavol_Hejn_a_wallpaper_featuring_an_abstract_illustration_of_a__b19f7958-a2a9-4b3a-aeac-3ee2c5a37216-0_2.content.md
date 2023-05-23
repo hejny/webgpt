@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Workspace Theme
+# Future Workspace
 
 Welcome to our website, where we help businesses create workspaces that inspire innovation and productivity. Our futuristic theme is designed to transform your workspace into a hub of creativity.
 

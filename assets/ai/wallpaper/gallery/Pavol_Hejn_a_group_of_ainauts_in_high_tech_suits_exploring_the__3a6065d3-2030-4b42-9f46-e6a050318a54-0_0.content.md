@@ -1,6 +1,6 @@
 <!--font:Alegreya-->
 
-# Futuristic Worlds Adventure
+# Futuristic Adventure
 
 Welcome to our website dedicated to exploring new worlds! Our team of Ainautes is ready to take you on a thrilling journey to the unknown. Our high-tech suits will keep us safe as we explore the surface of distant planets, encountering alien life forms and breathtaking landscapes.
 

@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Data-Driven Decision Making
+# Data decisions
 
 Welcome to our website, where we help businesses make informed decisions through data analysis. Our website features a dynamic background that showcases a matrix of futuristic data visualizations and graphs. This wallpaper represents the power of data in today's world.
 

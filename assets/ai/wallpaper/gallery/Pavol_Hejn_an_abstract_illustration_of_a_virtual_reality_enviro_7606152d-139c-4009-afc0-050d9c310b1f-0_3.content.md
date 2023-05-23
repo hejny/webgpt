@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Virtual Reality Experience
+# VR Experience
 
 Welcome to our website where we offer an immersive virtual reality experience with futuristic graphics and minimalist color scheme. Our wallpaper illustrates the abstract illustration of a virtual reality environment that will transport you to another world.
 

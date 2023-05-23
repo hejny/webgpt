@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Dolphin Watching Adventures
+# Dolphin Adventures
 
 Welcome to Dolphin Watching Adventures, your ultimate guide to experiencing the magic of the ocean. Our website offers a variety of thrilling activities like snorkeling, scuba diving, and of course, dolphin watching. As you browse through our site, you'll notice a stunning image that captures the essence of our dolphin watching adventure.
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Stargaze for Meteor Showers
+# Meteor Stargaze
 
 Welcome to Stargaze, your ultimate destination for exploring the wonders of the universe. Our website is dedicated to bringing you breathtaking images and information about celestial events that will leave you in awe.
 

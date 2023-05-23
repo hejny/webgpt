@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover Coastal Adventure
+# Coastal Adventure
 
 Welcome to Coastal Adventure, your ultimate guide to exploring the beautiful coastlines of the world. Our website is dedicated to providing you with all the information you need to plan your next coastal adventure. And what better way to get in the mood for your next trip than by enjoying our stunning background featuring a close-up of a seagull in flight?
 

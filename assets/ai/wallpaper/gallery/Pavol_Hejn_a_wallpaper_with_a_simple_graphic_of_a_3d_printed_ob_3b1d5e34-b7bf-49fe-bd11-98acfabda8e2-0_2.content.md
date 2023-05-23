@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Minimalist Workspace Design
+# Minimal Workspace
 
 Welcome to our website, where we provide a carefully curated selection of modern and minimalist designs to enhance your creative workspace. Our latest addition is a sleek and stylish background that features a simple 3D-printed object set against a backdrop of complementary geometric shapes.
 

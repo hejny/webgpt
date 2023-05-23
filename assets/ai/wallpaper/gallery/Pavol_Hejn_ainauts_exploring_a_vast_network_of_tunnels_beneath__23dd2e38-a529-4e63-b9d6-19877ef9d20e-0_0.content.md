@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Journey to Distant Planets
+# Distant Planets Journey
 
 Welcome to our website dedicated to space exploration and adventure! Here, you will find a collection of stunning wallpapers that showcase the beauty and mystery of the universe. Our latest addition features Ainautes exploring a vast network of tunnels beneath the surface of a distant planet, with glowing crystals all around them.
 

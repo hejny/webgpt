@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Starry Night in the Desert
+# Desert Stars
 
 Welcome to our website where you can experience the beauty of the desert landscape at night. Our featured wallpaper showcases a stunning photograph of the starry sky above the vast expanse of the desert.
 

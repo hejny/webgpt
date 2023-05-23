@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Ainautes on a Distant Moon
+# Moon Ainautes
 
 Welcome to our website dedicated to the exploration of distant moons and planets! Our team of Ainautes is conducting groundbreaking experiments on a remote moon, with a massive gas giant looming in the background. We are excited to share our findings and discoveries with you!
 

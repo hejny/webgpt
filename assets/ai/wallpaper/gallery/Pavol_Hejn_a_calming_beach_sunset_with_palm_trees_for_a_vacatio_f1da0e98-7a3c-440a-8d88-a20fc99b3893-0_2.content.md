@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Ocean View Vacation Rentals
+# Ocean Rentals
 
 Welcome to Ocean View Vacation Rentals, where you can experience the ultimate beachfront vacation. Our luxurious properties are located in the heart of the most beautiful beaches in the world. From breathtaking sunsets to crystal-clear waters, our rentals offer the perfect escape for families, couples, and solo travelers.
 

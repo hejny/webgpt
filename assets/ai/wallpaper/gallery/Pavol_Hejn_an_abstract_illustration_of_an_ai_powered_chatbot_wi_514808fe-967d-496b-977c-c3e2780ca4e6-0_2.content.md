@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# AI Chatbot for Your Website
+# AI Chatbot
 
 Welcome to our website where we offer you an AI-powered chatbot background for your website. Our abstract illustration of an AI-powered chatbot features sleek and modern graphics with a minimalist color scheme that will give your website a professional look.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes: Into the Unknown
+# Ainautes Unknown
 
 Welcome to our website, where we share our adventures as a group of Ainautes exploring distant planets and conducting experiments in the pursuit of knowledge.
 

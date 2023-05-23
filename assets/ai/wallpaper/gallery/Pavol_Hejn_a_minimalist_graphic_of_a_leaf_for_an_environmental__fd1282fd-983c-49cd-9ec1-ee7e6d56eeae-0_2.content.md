@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Open Sans-->
 
-# Sustainable Living Website
+# Sustain Site
 
 Welcome to our sustainable living website! We are dedicated to promoting environmentally friendly practices and lifestyles. As part of our commitment to sustainability, we have chosen a minimalist graphic of a leaf as the wallpaper for our site.
 

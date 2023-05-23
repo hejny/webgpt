@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore the City Nightscape
+# City Nightscape
 
 Welcome to our website where you can immerse yourself in the beauty of a city skyline at night. Our stunning background image captures the vibrant energy of a modern metropolis, with its towering skyscrapers and twinkling lights.
 

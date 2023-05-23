@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Explore the Depths of Space
+# Space exploration
 
 Welcome to our website, where we take you on a journey through the vast and mysterious universe. Our wallpaper features an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet. This image captures the essence of our mission - to explore the depths of space and uncover its secrets.
 

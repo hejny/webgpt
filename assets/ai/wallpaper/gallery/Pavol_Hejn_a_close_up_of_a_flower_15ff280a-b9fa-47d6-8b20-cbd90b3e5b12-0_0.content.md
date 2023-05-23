@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Flower Photography Gallery
+# Flower Gallery
 
 Welcome to our flower photography gallery! Here you can browse and download high-quality images of beautiful flowers captured by talented photographers. 
 

@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Poppins-->
 
-# Stargaze: Night Sky Beauty
+# Night Sky Beauty
 
 Welcome to Stargaze, your ultimate destination for exploring the beauty of the night sky. Our website is dedicated to providing you with stunning wallpapers that capture the essence of the cosmos.
 

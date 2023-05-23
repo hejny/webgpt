@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Disaster Recovery Services
+# Disaster Recovery
 
 Natural disasters can strike at any moment, leaving your business vulnerable to data loss and downtime. That's why it's important to have a disaster recovery plan in place. At XYZ Company, we offer comprehensive disaster recovery services that will ensure your business can recover quickly and efficiently from any disaster.
 

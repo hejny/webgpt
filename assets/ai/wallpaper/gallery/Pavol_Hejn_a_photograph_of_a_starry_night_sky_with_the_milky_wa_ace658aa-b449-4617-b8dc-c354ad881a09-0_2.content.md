@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Stargaze: Night Sky Beauty
+# Night Stargaze
 
 Are you fascinated by the beauty of the night sky? Do you love stargazing and exploring the vast expanse of the universe? Look no further than Stargaze - your ultimate destination for all things celestial.
 

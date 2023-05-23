@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Planet X's Futuristic City
+# Futuristic Planet City
 
 Welcome to our website, where you can experience the breathtaking view of a futuristic city on a distant planet. Our digital illustration showcases towering buildings and advanced technology that will transport you to another world.
 

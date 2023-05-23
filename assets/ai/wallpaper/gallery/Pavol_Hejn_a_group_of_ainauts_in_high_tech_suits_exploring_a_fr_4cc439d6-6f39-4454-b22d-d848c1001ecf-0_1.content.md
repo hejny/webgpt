@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Montserrat-->
 
-# Journey to Distant Planets
+# Distant Planets Journey
 
 Welcome to our website dedicated to exploring the depths of space and discovering new worlds. Our team of expert scientists and engineers is committed to pushing the boundaries of what we know about the universe, and we're excited to share our latest adventure with you.
 

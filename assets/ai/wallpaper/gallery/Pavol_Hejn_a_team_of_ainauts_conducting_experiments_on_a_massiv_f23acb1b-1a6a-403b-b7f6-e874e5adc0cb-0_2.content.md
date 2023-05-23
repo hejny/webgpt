@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# AI Explorers on Frozen Moon
+# AI Moon Explorers
 
 Welcome to our website, where we take you on a journey through space and time. Our team of Ainautes is currently conducting groundbreaking experiments on a massive, frozen moon orbiting a gas giant planet.
 

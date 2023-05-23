@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Inter-->
 
-# AI and Ainautes for Cities
+# AI Cities
 
 Welcome to our website dedicated to exploring the intersection of artificial intelligence and urban development. Our mission is to showcase the incredible potential of AI in shaping the cities of tomorrow and the role that Ainautes - human experts in AI technology - play in building them.
 

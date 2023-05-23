@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# The Future of Space Travel
+# Space Future
 
 Welcome to our website dedicated to exploring the possibilities of space travel. Our mission is to educate and inspire people about the latest advancements in space technology and how they can shape the future of humanity.
 

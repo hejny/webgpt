@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Explore Space with Ainautes
+# Space Ainautes
 
 Welcome to our website dedicated to exploring the vast expanse of space and the fascinating creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that the stunning Ainautes image on our homepage will capture your imagination and transport you to a world beyond our own.
 

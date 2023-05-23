@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Inter-->
 
-# AI Explores Space's Depths.
+# AI Space Exploration
 
 Welcome to our website dedicated to the exciting world of space exploration and artificial intelligence. Our team of experts is passionate about discovering new frontiers and pushing the boundaries of what we know about the universe.
 

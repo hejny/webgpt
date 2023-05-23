@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Futuristic Space Adventure
+# Space Quest
 
 Welcome to our website, where we take you on a journey through the depths of space. Our team of Ainautes is dedicated to exploring the unknown and discovering new worlds. With advanced technology at our fingertips, we are able to delve into the mysteries of the universe like never before.
 

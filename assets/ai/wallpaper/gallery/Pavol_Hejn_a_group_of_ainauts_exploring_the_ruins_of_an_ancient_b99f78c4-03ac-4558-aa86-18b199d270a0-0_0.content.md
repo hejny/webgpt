@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# Ancient Planet Exploration
+# Ancient Planet Explore
 
 Welcome to our website dedicated to uncovering the secrets of ancient civilizations on distant planets. Our mission is to explore and document the ruins left behind by these enigmatic societies, shedding light on their culture, history, and technology.
 

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Orbitron-->
 
-# Ainautes: Space Exploration
+# Space Ainautes
 
 Welcome to Ainautes, where we explore the unknown depths of space with our AI companions. Join us on our latest adventure as we venture into a massive abandoned spacecraft.
 

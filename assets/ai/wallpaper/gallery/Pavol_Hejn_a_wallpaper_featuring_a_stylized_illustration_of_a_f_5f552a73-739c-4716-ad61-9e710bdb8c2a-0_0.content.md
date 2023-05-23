@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Futuristic Workspace Design
+# Futuristic Workspace
 
 Welcome to our website, where we offer a range of products and services to help you elevate your workspace. Our latest addition is a stunning design featuring a stylized illustration of a futuristic workspace, with a minimalist and modern aesthetic, set against a gradient background.
 

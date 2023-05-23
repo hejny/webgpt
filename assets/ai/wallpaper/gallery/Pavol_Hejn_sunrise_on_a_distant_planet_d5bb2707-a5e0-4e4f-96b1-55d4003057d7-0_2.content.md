@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Sunrise on a Distant Planet
+# Distant Sunrise
 
 Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet". This breathtaking image captures the beauty of a sunrise on a far-off world, with its vibrant colors and otherworldly landscape.
 

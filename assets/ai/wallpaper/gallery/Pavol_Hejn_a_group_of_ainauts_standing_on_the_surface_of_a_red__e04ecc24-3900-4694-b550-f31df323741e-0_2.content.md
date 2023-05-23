@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Montserrat-->
 
-# Ainautes: Into the Unknown
+# Ainautes Unknown
 
 Welcome to Ainautes, where we push the boundaries of exploration using cutting-edge AI technology. Our team of experts is dedicated to uncovering the mysteries of the universe, one planet at a time.
 

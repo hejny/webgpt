@@ -8,7 +8,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Yoga and Meditation Website
+# Yoga Website
 
 Welcome to our vibrant yoga and meditation website! Our mission is to help you find inner peace and balance through the practice of yoga and meditation.
 

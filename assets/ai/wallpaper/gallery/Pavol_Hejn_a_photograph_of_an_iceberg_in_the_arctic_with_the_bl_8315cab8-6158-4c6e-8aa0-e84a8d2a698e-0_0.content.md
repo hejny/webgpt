@@ -1,6 +1,6 @@
 <!--font:Montserrat-->
 
-# Discover the Arctic with Us
+# Arctic Discovery
 
 Welcome to our website dedicated to helping you discover the wonders of the Arctic! We are Arctic Adventures, a team of passionate experts who have extensive experience exploring this unique region. Our goal is to provide you with all the information and resources you need to plan an unforgettable Arctic adventure.
 

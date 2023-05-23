@@ -1,6 +1,6 @@
 <!--font:Poppins-->
 
-# Bee-Friendly Gardening Tips
+# Bee Gardening Tips
 
 Welcome to our guide on bee-friendly gardening! Our website is dedicated to providing you with the best information and resources to help you create a thriving garden that supports local pollinators.
 

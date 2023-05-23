@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Poppins-->
 
-# Ainautes on a Distant Moon
+# Moon Ainautes
 
 Welcome to our website featuring an incredible wallpaper of Ainautes conducting experiments on a distant moon. The wallpaper showcases the amazing work being done by our team of scientists in exploring the universe and pushing the boundaries of AI research.
 
