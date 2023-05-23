@@ -54,6 +54,10 @@ export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
  */
 export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
     createColorfulComputeImageColorStats({
+        colorBits: 256,
+        size: IMAGE_NATURAL_SIZE,
+    }),
+    createColorfulComputeImageColorStats({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
