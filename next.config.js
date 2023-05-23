@@ -1,8 +1,6 @@
 const removeImports = require('next-remove-imports')();
 const { i18n } = require('./next-i18next.config');
 
-
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     i18n,
@@ -13,6 +11,7 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
+                unoptimized: true,
                 protocol: 'https',
                 hostname: 'cdn.midjourney.com',
                 port: '',
