@@ -42,6 +42,10 @@
     margin: 5px;
 }
 
+.button:hover {
+    background-color: rgb(187, 247, 20) /* <- TODO: !! Figure out best colors */;
+}
+
 @media only screen and (max-width: 900px) {
     .ControlPanel {
         width: 85px;
