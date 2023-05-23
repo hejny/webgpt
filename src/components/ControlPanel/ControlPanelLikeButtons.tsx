@@ -36,6 +36,7 @@ export function ControlPanelLikeButtons() {
             </button>
 
             <button
+                // TODO: !!! Also listen on double-click on mobile
                 className={classNames('button', styles.button)}
                 style={{
                     backgroundColor: backgroundColor.toHex(),

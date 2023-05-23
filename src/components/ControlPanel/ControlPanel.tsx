@@ -56,7 +56,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 style={minorButtonStyle}
                 prefetch={false /* <- Note: Because gallery is enormous */}
             >
-                <Article content="🖼" isEnhanced />
+                <Article content="🖼" isEnhanced /* <- TODO: !!! Better icon OR Openmoji */ />
             </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
@@ -81,7 +81,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
                 }}
             >
-                <Article content="🎲" isEnhanced />
+                <Article content="🎲" isEnhanced /* <- TODO: !! This should have more role like next not random */ />
             </Link>
             <button
                 onClick={turnOnEditing}
@@ -99,7 +99,10 @@ export function ControlPanel(props: ControlPanelProps) {
                     ...minorButtonStyle,
                 }}
             >
-                <Article content="▶" isEnhanced />
+                <Article
+                    content="▶"
+                    isEnhanced /* <- TODO: !!! Show the QR code before + Save to GET params to be able to send */
+                />
             </button>
         </div>
     );
