@@ -41,11 +41,18 @@ export async function emojifyMarkdown(
         } else {
             /*
             TODO: [🎲]
+            */
             const response = await fetch(src);
             let svg = await response.text();
-            svg = svg.split('#000000').join(design).split('#000').join(design);
+            svg = svg
+                .split(
+                    '#000000' /* <- TODO: Not every feature in SVG has explicitelly set color + we need to inherit color from text color of the surroundings + ASK how to tint */,
+                )
+                .join(design)
+                .split('#000')
+                .join(design);
             imageHtml = svg.split('<svg').join(`<svg alt="${emoji}" class="emoji"`);
-            */
+            /**/
         }
 
         // console.log('----');

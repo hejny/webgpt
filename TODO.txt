@@ -1,3 +1,4 @@
 TODO: Add things from Ainautes
 TODO: Use https://www.npmjs.com/package/next-seo
 TODO: Add JSON+LD
+TODOL Multiple images providers like Dalle-2, Stable diffusiom, https://skybox.blockadelabs.com/, custom images/photos or non-ml generated images (like abstract art, 3D or fractals)
