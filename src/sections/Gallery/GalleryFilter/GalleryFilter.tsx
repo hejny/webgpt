@@ -62,10 +62,21 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
     }
 
     if (likedStatus) {
-        // TODO: !!! Optimize
-        wallpapers = wallpapers.filter(
-            (wallpaper) => localStorage.getItem(`likedStatus_${wallpaper.id}`) === likedStatus,
-        );
+       const likedStatusKeys = Object.keys(localStorage).filter((key) =>
+  key.startsWith("likedStatus_")
+);
+
+const matchingWallpaperIds = likedStatusKeys.reduce((ids, key) => {
+  if (localStorage.getItem(key) === likedStatus) {
+    ids.push(key.split("_")[1]); // Extract the wallpaper ID from the key
+  }
+  return ids;
+}, []);
+
+const filteredWallpapers = wallpapers.filter((wallpaper) =>
+  matchingWallpaperIds.includes(wallpaper.id)
+);
+
     }
 
     if (isRandom) {
