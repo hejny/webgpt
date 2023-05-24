@@ -59,22 +59,33 @@ export function Article(props: IArticleProps) {
         synchronouslyEnhancedContent = normalizeDashes(synchronouslyEnhancedContent);
     }
 
-    const enhancedContentSubject = useMemo(() => {
-        const enhancedContentSubject = new BehaviorSubject(synchronouslyEnhancedContent);
-        if (isUsingOpenmoji) {
-            (async () => {
-                /*/
-                await forTime(1000);
-                enhancedContentSubject.next('2\n' + enhancedContentSubject.value);
-                await forTime(1000);
-                enhancedContentSubject.next('1\n' + enhancedContentSubject.value);
-                await forTime(1000);
-                /**/
-                enhancedContentSubject.next(await emojifyMarkdown(enhancedContentSubject.value, 'black'));
-            })();
-        }
-        return enhancedContentSubject;
-    }, [content, isUsingOpenmoji]);
+    const enhancedContentSubject = useMemo(
+        () => {
+            const enhancedContentSubject = new BehaviorSubject(synchronouslyEnhancedContent);
+            if (isUsingOpenmoji) {
+                (async () => {
+                    /*/
+                    await forTime(1000);
+                    enhancedContentSubject.next('2\n' + enhancedContentSubject.value);
+                    await forTime(1000);
+                    enhancedContentSubject.next('1\n' + enhancedContentSubject.value);
+                    await forTime(1000);
+                    /**/
+                    /**/
+                    enhancedContentSubject.next(
+                        await emojifyMarkdown(
+                            enhancedContentSubject.value,
+                            'color' /* TODO: [🎲] 'var(--palette-1)' */,
+                        ),
+                    );
+                    /**/
+                })();
+            }
+            return enhancedContentSubject;
+        },
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [content, isUsingOpenmoji],
+    );
 
     const { value: enhancedContent } = useObservable(enhancedContentSubject);
 

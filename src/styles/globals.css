@@ -40,7 +40,7 @@ a.button {
 }
 
 .emoji {
-    display: inline;
+    display: inline !important;
     width: 1.8em;
     height: 1.8em;
     vertical-align: bottom;

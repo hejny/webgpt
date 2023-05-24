@@ -15,19 +15,19 @@ normal **bold** _italic_ ~~strike~~ <u>underline</u> **_~~<u>everything</u>~~_**
 
 > Quote
 
-# List
+## List
 
 1. Apple
 2. Banana
 3. Orange
 
-# List of emojis
+## List of emojis
 
 -   🍎🍏
 -   🍌
 -   🍊
 
-# TODO List
+## TODO List
 
 -   [ ] Do A
 -   [ ] Do B

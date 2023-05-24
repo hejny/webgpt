@@ -6,7 +6,7 @@ import { string_url } from '../typeAliases';
  */
 export async function emojifyMarkdown(
     html: string,
-    type: 'black' | 'color' /* <- TODO: Add here white and negative AND use negative */,
+    design: 'black' | 'color' | string /* <- TODO: Add here white and negative AND use negative */,
 ): Promise<string> {
     // console.log('-----------');
     for (const emoji of EMOJIS) {
@@ -20,6 +20,8 @@ export async function emojifyMarkdown(
             continue;
         }
 
+        const type = ['black', 'color'].includes(design) ? design : 'black';
+
         const code = codePoint.toString(16).toUpperCase();
         const image = await import(`openmoji/${type}/svg/${code}.svg`)
             .then((module) => module.default as { src: string_url; width: number; height: number })
@@ -32,9 +34,23 @@ export async function emojifyMarkdown(
 
         const { src, width, height } = image;
 
+        let imageHtml: string;
+
+        if (type === design) {
+            imageHtml = `<img src="${src}" alt="${emoji}" class="emoji"/>`;
+        } else {
+            /*
+            TODO: [🎲]
+            const response = await fetch(src);
+            let svg = await response.text();
+            svg = svg.split('#000000').join(design).split('#000').join(design);
+            imageHtml = svg.split('<svg').join(`<svg alt="${emoji}" class="emoji"`);
+            */
+        }
+
         // console.log('----');
         // console.log(html);
-        html = html.split(emoji).join(`<img src="${src}" alt="${emoji}" class="emoji"/>`);
+        html = html.split(emoji).join(imageHtml);
         // console.log(html);
     }
 
