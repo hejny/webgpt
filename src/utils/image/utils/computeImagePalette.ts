@@ -30,7 +30,6 @@ export function computeImagePalette13(
         areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomLine.mostFrequentColors[0].value)
     ) {
         pickByMostFrequentColorCount++;
-        console.log(` !!! Picking primary as the most frequent one (${pickByMostFrequentColorCount}/${totalCount}))`);
         primaryColor = {
             ...colorStats.bottomHalf.mostFrequentColors[0],
             note: `Most frequent color`,
@@ -171,7 +170,10 @@ export function computeImagePalette13(
         return distanceA - distanceB;
     });
 
-    return palette;
+    return palette.map((color) =>
+        // @ts-ignore
+        ({ note: color.note, ...color }),
+    );
 }
 
 /**
