@@ -43,7 +43,9 @@
 }
 
 .button:hover {
-    background-color: rgb(187, 247, 20) /* <- TODO: !! Figure out best colors */;
+    /* TODO: Made here some animation effect*/
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);*/
+    transform: rotate(5deg);
 }
 
 @media only screen and (max-width: 900px) {
