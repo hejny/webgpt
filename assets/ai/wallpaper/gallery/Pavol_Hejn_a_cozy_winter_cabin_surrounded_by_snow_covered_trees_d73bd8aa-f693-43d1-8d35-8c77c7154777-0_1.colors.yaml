@@ -1,60 +1,60 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#552233'
+    - '#0c0c0c'
     - '#ffffff'
-    - '#888899'
-averageColor: '#aaadb5'
+    - '#9099a4'
+averageColor: '#aaadb4'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#bbbbcc'
-    - '#111111'
-    - '#666677'
+    - '#e8ebf0'
+    - '#0c0c0c'
+    - '#9099a4'
+    - '#9f442b'
 mostSatulightedColors:
-    - '#cc8866'
-    - '#ccddee'
-    - '#aaaacc'
-    - '#99bbbb'
+    - '#f0a97b'
+    - '#a5c0dd'
+    - '#a47586'
 mostGroupedColors:
-    - '#ddddee'
+    - '#e8ebf0'
 bottomHalf:
     averageColor: '#9fa4ad'
-    lightestColor: '#eeeeee'
+    lightestColor: '#fdffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ddddee'
-        - '#888899'
-        - '#111111'
+        - '#e8ebf0'
+        - '#0c0c0c'
+        - '#9099a4'
+        - '#96462e'
     mostSatulightedColors:
-        - '#cc7744'
-        - '#aabbdd'
-        - '#552233'
-        - '#99bbbb'
+        - '#f0a97b'
+        - '#a5c0dd'
+        - '#a47586'
     mostGroupedColors:
-        - '#ddddee'
+        - '#e8ebf0'
 bottomThird:
-    averageColor: '#a3a8b2'
-    lightestColor: '#eeeeee'
+    averageColor: '#a4a9b1'
+    lightestColor: '#fdffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ddddee'
-        - '#888899'
-        - '#111111'
+        - '#e8ebf0'
+        - '#0c0c0d'
+        - '#9199a4'
+        - '#964334'
     mostSatulightedColors:
-        - '#dd9977'
-        - '#aabbdd'
-        - '#99bbbb'
+        - '#f0a97b'
+        - '#9aa7cd'
+        - '#a47586'
     mostGroupedColors:
-        - '#ddddee'
+        - '#e8ebf0'
 bottomLine:
-    averageColor: '#cdd5e2'
-    lightestColor: '#ddddee'
-    darkestColor: '#778899'
+    averageColor: '#cdd5e0'
+    lightestColor: '#e2e6ee'
+    darkestColor: '#768893'
     mostFrequentColors:
-        - '#ddddee'
-        - '#778899'
+        - '#d8dfe8'
+        - '#768893'
     mostSatulightedColors:
-        - '#88aabb'
-        - '#aaaacc'
+        - '#90a3b9'
     mostGroupedColors:
-        - '#ddddee'
+        - '#dbdfe9'

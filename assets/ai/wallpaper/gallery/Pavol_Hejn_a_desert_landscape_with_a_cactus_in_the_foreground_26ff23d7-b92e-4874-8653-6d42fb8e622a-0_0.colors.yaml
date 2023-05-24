@@ -1,55 +1,55 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#884444'
+    - '#1f1e1d'
     - '#ffffff'
-    - '#ffbb55'
-    - '#0088bb'
-averageColor: '#8b847a'
-lightestColor: '#ffeeee'
-darkestColor: '#331100'
+    - '#0591c2'
+averageColor: '#8c847a'
+lightestColor: '#dff0ff'
+darkestColor: '#070300'
 mostFrequentColors:
-    - '#332222'
-    - '#006699'
-    - '#eedddd'
-    - '#bb8855'
+    - '#027cae'
+    - '#f6eaeb'
+    - '#211f1f'
+    - '#a69898'
+    - '#b44d10'
 mostSatulightedColors:
-    - '#0088bb'
-    - '#ff9955'
+    - '#0591c2'
+    - '#ffa35d'
 mostGroupedColors:
-    - '#0077aa'
+    - '#027bad'
 bottomHalf:
     averageColor: '#9d6a42'
-    lightestColor: '#ffddcc'
-    darkestColor: '#331100'
+    lightestColor: '#ffedd4'
+    darkestColor: '#070300'
     mostFrequentColors:
-        - '#332222'
-        - '#bb8855'
-        - '#ffddbb'
+        - '#211f1f'
+        - '#dbad72'
+        - '#b14d14'
     mostSatulightedColors:
-        - '#ffbb55'
-        - '#884444'
+        - '#ffa35d'
+        - '#fff993'
     mostGroupedColors:
-        - '#222222'
+        - '#1f1e1d'
 bottomThird:
-    averageColor: '#925d39'
-    lightestColor: '#ffddcc'
-    darkestColor: '#110000'
+    averageColor: '#935d3a'
+    lightestColor: '#ffeecc'
+    darkestColor: '#070300'
     mostFrequentColors:
-        - '#332222'
-        - '#bb8855'
-        - '#ffddbb'
+        - '#221f1f'
+        - '#cf9f6c'
     mostSatulightedColors:
-        - '#ff9955'
+        - '#ffa35d'
+        - '#fff993'
     mostGroupedColors:
-        - '#222222'
+        - '#1f1e1d'
 bottomLine:
-    averageColor: '#8c4c29'
-    lightestColor: '#ff9955'
-    darkestColor: '#222211'
+    averageColor: '#8c4b29'
+    lightestColor: '#dca771'
+    darkestColor: '#211715'
     mostFrequentColors:
-        - '#553322'
-        - '#dd7733'
+        - '#78321b'
+        - '#e98437'
     mostSatulightedColors:
-        - '#ff9955'
+        - '#ffa35e'
     mostGroupedColors:
-        - '#332222'
+        - '#2e221e'

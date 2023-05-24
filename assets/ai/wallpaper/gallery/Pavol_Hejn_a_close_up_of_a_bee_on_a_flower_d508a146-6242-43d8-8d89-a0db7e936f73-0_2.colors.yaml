@@ -1,54 +1,54 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#553322'
+    - '#9a6150'
     - '#ffffff'
-averageColor: '#b98265'
-lightestColor: '#ffffff'
-darkestColor: '#111100'
+averageColor: '#b98165'
+lightestColor: '#fcfffa'
+darkestColor: '#000000'
 mostFrequentColors:
-    - '#ffddbb'
-    - '#cc7766'
-    - '#552211'
+    - '#fffed3'
+    - '#223035'
+    - '#d27563'
 mostSatulightedColors:
-    - '#ff7799'
-    - '#ff9955'
-    - '#ffffaa'
+    - '#fb7b9b'
+    - '#ffad5d'
+    - '#fdfdad'
 mostGroupedColors:
-    - '#ffddbb'
+    - '#223035'
 bottomHalf:
-    averageColor: '#bb7251'
-    lightestColor: '#ffffdd'
-    darkestColor: '#111100'
+    averageColor: '#bb7151'
+    lightestColor: '#ffffdc'
+    darkestColor: '#000000'
     mostFrequentColors:
-        - '#aa4422'
-        - '#ffddbb'
-        - '#111111'
+        - '#9a6150'
+        - '#ffe7c1'
+        - '#1e1413'
     mostSatulightedColors:
-        - '#ff8855'
-        - '#ffdd55'
+        - '#ffad5d'
+        - '#fcfccc'
     mostGroupedColors:
-        - '#553322'
+        - '#9a6150'
 bottomThird:
-    averageColor: '#b86c50'
-    lightestColor: '#ffffdd'
-    darkestColor: '#110000'
+    averageColor: '#b76c50'
+    lightestColor: '#fef8db'
+    darkestColor: '#0f0000'
     mostFrequentColors:
-        - '#552211'
-        - '#cc7766'
-        - '#ffddbb'
+        - '#562f22'
+        - '#c87c6d'
+        - '#fefacf'
     mostSatulightedColors:
-        - '#ff8855'
-        - '#ffeeaa'
+        - '#ff9b5d'
+        - '#fcf7c6'
     mostGroupedColors:
-        - '#553322'
+        - '#7a3d28'
 bottomLine:
     averageColor: '#9d6356'
-    lightestColor: '#dd9999'
-    darkestColor: '#443322'
+    lightestColor: '#e3a095'
+    darkestColor: '#48291d'
     mostFrequentColors:
-        - '#774433'
-        - '#cc9988'
+        - '#ca827c'
+        - '#492a1e'
     mostSatulightedColors:
-        - '#dd7766'
+        - '#df7365'
     mostGroupedColors:
-        - '#774433'
+        - '#ca827c'

@@ -1,57 +1,55 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#060706'
     - '#ffffff'
-    - '#776655'
-averageColor: '#4d4c3b'
+    - '#fbe846'
+averageColor: '#4c4c3b'
 lightestColor: '#ffffff'
-darkestColor: '#001100'
+darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#eeddcc'
-    - '#777766'
+    - '#f7e7d4'
+    - '#070807'
+    - '#5f655f'
+    - '#bbc23d'
 mostSatulightedColors:
-    - '#eedd66'
-    - '#aa6644'
+    - '#fbe846'
+    - '#d8896d'
 mostGroupedColors:
-    - '#111111'
+    - '#feefdc'
 bottomHalf:
-    averageColor: '#292b18'
-    lightestColor: '#eeeeee'
-    darkestColor: '#001100'
-    mostFrequentColors:
-        - '#111111'
-        - '#776655'
-        - '#ccbb99'
-    mostSatulightedColors:
-        - '#eedd66'
-        - '#cc8866'
-    mostGroupedColors:
-        - '#111111'
-bottomThird:
-    averageColor: '#222612'
-    lightestColor: '#ffffbb'
-    darkestColor: '#001100'
-    mostFrequentColors:
-        - '#111111'
-        - '#777733'
-        - '#dddd77'
-    mostSatulightedColors:
-        - '#ffff88'
-        - '#884433'
-    mostGroupedColors:
-        - '#111111'
-bottomLine:
-    averageColor: '#0e1209'
-    lightestColor: '#333322'
+    averageColor: '#282b18'
+    lightestColor: '#edf5ed'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
+        - '#070807'
+        - '#726650'
+        - '#cdb799'
     mostSatulightedColors:
-        - '#333311'
-        - '#223311'
-        - '#001111'
-        - '#221111'
-        - '#112211'
+        - '#fbe846'
+        - '#d8896d'
     mostGroupedColors:
-        - '#111111'
+        - '#060706'
+bottomThird:
+    averageColor: '#222612'
+    lightestColor: '#f7edbe'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - '#070807'
+        - '#666833'
+        - '#d2cc5f'
+    mostSatulightedColors:
+        - '#fbe846'
+        - '#894f33'
+    mostGroupedColors:
+        - '#060706'
+bottomLine:
+    averageColor: '#0e120a'
+    lightestColor: '#36392d'
+    darkestColor: '#010500'
+    mostFrequentColors:
+        - '#050706'
+    mostSatulightedColors:
+        - '#3c331c'
+        - '#2b341f'
+    mostGroupedColors:
+        - '#0e0f0a'

@@ -1,55 +1,55 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#221111'
+    - '#8c535e'
     - '#ffffff'
-    - '#775577'
-    - '#ffcc55'
+    - '#010100'
 averageColor: '#7b382f'
-lightestColor: '#cc99aa'
+lightestColor: '#e7bab3'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#221111'
-    - '#ff7744'
-    - '#775577'
+    - '#020000'
+    - '#763a4a'
+    - '#fb783d'
 mostSatulightedColors:
-    - '#ff7755'
-    - '#ffcc55'
-    - '#884466'
+    - '#ff9b5d'
+    - '#b55b68'
 mostGroupedColors:
-    - '#332222'
+    - '#010100'
 bottomHalf:
-    averageColor: '#6b302a'
-    lightestColor: '#eeaa99'
+    averageColor: '#6a2f29'
+    lightestColor: '#e7bab3'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#221111'
-        - '#dd5533'
-        - '#ffcc66'
+        - '#15090b'
+        - '#fa6e34'
+        - '#705161'
     mostSatulightedColors:
-        - '#ff8855'
-        - '#994455'
+        - '#ff915d'
+        - '#8c535e'
     mostGroupedColors:
-        - '#332222'
+        - '#070305'
 bottomThird:
-    averageColor: '#672e2b'
-    lightestColor: '#bb9999'
-    darkestColor: '#000000'
+    averageColor: '#662e2b'
+    lightestColor: '#c1a4a3'
+    darkestColor: '#060000'
     mostFrequentColors:
-        - '#221111'
-        - '#dd5533'
+        - '#15090b'
+        - '#a43e2c'
+        - '#ff936d'
     mostSatulightedColors:
-        - '#ff7755'
-        - '#aa7788'
+        - '#ff885f'
+        - '#966371'
     mostGroupedColors:
-        - '#221111'
+        - '#0a0408'
 bottomLine:
-    averageColor: '#4a1d21'
-    lightestColor: '#774455'
-    darkestColor: '#220000'
+    averageColor: '#4b1e21'
+    lightestColor: '#75424e'
+    darkestColor: '#180304'
     mostFrequentColors:
-        - '#221111'
+        - '#220e17'
+        - '#ab5037'
     mostSatulightedColors:
-        - '#994433'
-        - '#774455'
+        - '#ab5037'
+        - '#562937'
     mostGroupedColors:
-        - '#221111'
+        - '#5d2b34'

@@ -1,57 +1,55 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#446677'
+    - '#41636e'
     - '#ffffff'
-    - '#110011'
+    - '#040508'
 averageColor: '#1a242b'
-lightestColor: '#eeffff'
+lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#556677'
-    - '#aacccc'
+    - '#040508'
+    - '#4a6771'
+    - '#ffffff'
 mostSatulightedColors:
-    - '#558899'
-    - '#88bbaa'
-    - '#333355'
+    - '#5f87a1'
+    - '#82b6b0'
 mostGroupedColors:
-    - '#000000'
+    - '#050404'
 bottomHalf:
-    averageColor: '#12181e'
-    lightestColor: '#aabbcc'
+    averageColor: '#13181d'
+    lightestColor: '#c7dbe5'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#556677'
-        - '#aabbcc'
+        - '#040508'
+        - '#46606a'
+        - '#afb4be'
     mostSatulightedColors:
-        - '#446677'
+        - '#41636e'
+        - '#454a5b'
     mostGroupedColors:
-        - '#000000'
+        - '#050404'
 bottomThird:
-    averageColor: '#0f1317'
-    lightestColor: '#aabbcc'
+    averageColor: '#101317'
+    lightestColor: '#c7dbe5'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#556666'
-        - '#aabbcc'
+        - '#040507'
+        - '#475763'
+        - '#9ea8ae'
     mostSatulightedColors:
-        - '#aabbcc'
-        - '#668888'
-        - '#110011'
-        - '#aaaabb'
+        - '#5a6f7b'
+        - '#2a2c40'
+        - '#523f3a'
+        - '#93a5a2'
     mostGroupedColors:
-        - '#000000'
+        - '#050404'
 bottomLine:
-    averageColor: '#070910'
-    lightestColor: '#444444'
-    darkestColor: '#000000'
+    averageColor: '#090b10'
+    lightestColor: '#4b525a'
+    darkestColor: '#010103'
     mostFrequentColors:
-        - '#000011'
+        - '#040407'
     mostSatulightedColors:
-        - '#110011'
-        - '#333344'
-        - '#112222'
+        - '#0a111e'
     mostGroupedColors:
-        - '#000000'
+        - '#050609'

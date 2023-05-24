@@ -1,54 +1,58 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#442211'
+    - '#7e4e54'
     - '#ffffff'
+    - '#ffc65d'
 averageColor: '#ba7f75'
 lightestColor: '#ffffff'
-darkestColor: '#000000'
+darkestColor: '#020100'
 mostFrequentColors:
-    - '#441111'
-    - '#eeaabb'
-    - '#bb5544'
+    - '#fdfdfd'
+    - '#110a07'
+    - '#c4939d'
+    - '#ac352a'
 mostSatulightedColors:
-    - '#ee6699'
-    - '#ffbb55'
+    - '#fd6487'
+    - '#ffc65d'
 mostGroupedColors:
-    - '#441111'
+    - '#110a07'
 bottomHalf:
     averageColor: '#c98a77'
     lightestColor: '#ffffff'
-    darkestColor: '#000000'
+    darkestColor: '#020100'
     mostFrequentColors:
-        - '#ddaaaa'
-        - '#442211'
-        - '#cc7711'
+        - '#edb0bf'
+        - '#7e4e54'
+        - '#050000'
+        - '#ea9519'
     mostSatulightedColors:
-        - '#ee6699'
-        - '#ffbb55'
+        - '#fd6487'
+        - '#ffc65d'
     mostGroupedColors:
-        - '#eeaabb'
+        - '#edafbe'
 bottomThird:
-    averageColor: '#d48e75'
-    lightestColor: '#ffeeee'
-    darkestColor: '#221100'
+    averageColor: '#d38e75'
+    lightestColor: '#fef4f6'
+    darkestColor: '#1a0000'
     mostFrequentColors:
-        - '#eebbbb'
-        - '#bb6655'
-        - '#331111'
+        - '#edb0bf'
+        - '#7e4e54'
+        - '#260000'
+        - '#ea9519'
     mostSatulightedColors:
-        - '#ee6699'
-        - '#ffbb55'
+        - '#fd6487'
+        - '#ffc65d'
     mostGroupedColors:
-        - '#eeaabb'
+        - '#edafbe'
 bottomLine:
-    averageColor: '#be8561'
-    lightestColor: '#eebbaa'
-    darkestColor: '#662211'
+    averageColor: '#bf8561'
+    lightestColor: '#d8a8af'
+    darkestColor: '#682412'
     mostFrequentColors:
-        - '#bb8888'
-        - '#773322'
+        - '#be868d'
+        - '#77311c'
     mostSatulightedColors:
-        - '#eebb66'
-        - '#dd7788'
+        - '#e8b868'
+        - '#e2849a'
     mostGroupedColors:
-        - '#bb8888'
+        - '#be858c'

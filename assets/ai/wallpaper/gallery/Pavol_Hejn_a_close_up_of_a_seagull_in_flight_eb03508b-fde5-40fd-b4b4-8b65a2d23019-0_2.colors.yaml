@@ -1,56 +1,54 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#557788'
+    - '#395068'
     - '#ffffff'
-    - '#ddaa77'
-    - '#111100'
-averageColor: '#9ea5ac'
+    - '#e8b272'
+averageColor: '#9da4ac'
 lightestColor: '#ffffff'
-darkestColor: '#111100'
+darkestColor: '#000000'
 mostFrequentColors:
-    - '#ddddee'
-    - '#444455'
-    - '#bb9955'
+    - '#b2bcc5'
+    - '#5a697b'
+    - '#121016'
 mostSatulightedColors:
-    - '#88aacc'
-    - '#bb7744'
-    - '#aacccc'
+    - '#e8b272'
+    - '#83a6c3'
+    - '#965f5f'
 mostGroupedColors:
-    - '#ddddee'
+    - '#b0bac3'
 bottomHalf:
     averageColor: '#92989e'
-    lightestColor: '#ffffff'
-    darkestColor: '#111100'
+    lightestColor: '#fbfafc'
+    darkestColor: '#130a07'
     mostFrequentColors:
-        - '#aabbbb'
-        - '#444444'
+        - '#b2bcc5'
+        - '#5a697b'
+        - '#110f14'
     mostSatulightedColors:
-        - '#ddaa77'
-        - '#557788'
-        - '#774444'
+        - '#e8b272'
+        - '#395068'
     mostGroupedColors:
-        - '#cccccc'
+        - '#b0bac3'
 bottomThird:
-    averageColor: '#9aa1a8'
-    lightestColor: '#eeeeee'
-    darkestColor: '#111100'
+    averageColor: '#99a1a7'
+    lightestColor: '#edeef4'
+    darkestColor: '#130a07'
     mostFrequentColors:
-        - '#aabbbb'
-        - '#556677'
-        - '#221111'
+        - '#b2bcc5'
+        - '#5a697b'
+        - '#211410'
     mostSatulightedColors:
-        - '#cc9955'
-        - '#557788'
-        - '#666688'
+        - '#e8b272'
+        - '#395068'
     mostGroupedColors:
-        - '#cccccc'
+        - '#b2bcc5'
 bottomLine:
-    averageColor: '#647485'
-    lightestColor: '#778899'
-    darkestColor: '#445566'
+    averageColor: '#657485'
+    lightestColor: '#728091'
+    darkestColor: '#4b576a'
     mostFrequentColors:
-        - '#667788'
+        - '#677483'
     mostSatulightedColors:
-        - '#445577'
+        - '#4f6174'
     mostGroupedColors:
-        - '#667788'
+        - '#6b7c8d'

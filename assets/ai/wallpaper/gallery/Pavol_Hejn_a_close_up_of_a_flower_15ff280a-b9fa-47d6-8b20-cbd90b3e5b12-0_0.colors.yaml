@@ -1,53 +1,57 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#663344'
+    - '#907275'
     - '#ffffff'
-averageColor: '#bd8a8d'
-lightestColor: '#ffffff'
+    - '#000003'
+averageColor: '#bd8a8c'
+lightestColor: '#fdfeff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#ffeeee'
-    - '#aa5566'
-    - '#000000'
+    - '#000003'
+    - '#fbf1ee'
+    - '#907275'
+    - '#be121f'
 mostSatulightedColors:
-    - '#ee5577'
-    - '#ffaa66'
+    - '#ee6178'
+    - '#ffbb67'
+    - '#c092b4'
 mostGroupedColors:
-    - '#ffeeee'
+    - '#000003'
 bottomHalf:
-    averageColor: '#b6888c'
-    lightestColor: '#ffeeee'
-    darkestColor: '#221100'
+    averageColor: '#b5888b'
+    lightestColor: '#f8f9fa'
+    darkestColor: '#200802'
     mostFrequentColors:
-        - '#ffeeee'
-        - '#663344'
-        - '#dd7788'
+        - '#fbf1ee'
+        - '#907275'
+        - '#6e0d0f'
     mostSatulightedColors:
-        - '#ee5577'
-        - '#ffbb77'
+        - '#ee6178'
+        - '#ffc072'
     mostGroupedColors:
-        - '#ffeeee'
+        - '#fbf0f1'
 bottomThird:
-    averageColor: '#b39196'
-    lightestColor: '#ffeeee'
-    darkestColor: '#661100'
+    averageColor: '#b29196'
+    lightestColor: '#faf6f8'
+    darkestColor: '#610d04'
     mostFrequentColors:
-        - '#ffeeee'
-        - '#665555'
-        - '#dd8899'
+        - '#fbf1ee'
+        - '#534d4e'
+        - '#a99ba7'
     mostSatulightedColors:
-        - '#dd5577'
-        - '#bb6644'
+        - '#e96378'
+        - '#be6434'
     mostGroupedColors:
-        - '#ffeeee'
+        - '#fbf0f1'
 bottomLine:
     averageColor: '#88797d'
-    lightestColor: '#eeeeee'
-    darkestColor: '#443333'
+    lightestColor: '#f5e8ea'
+    darkestColor: '#49322f'
     mostFrequentColors:
-        - '#cccccc'
-        - '#776666'
+        - '#cec7cf'
+        - '#67655b'
     mostSatulightedColors:
-        - '#bb8899'
+        - '#926561'
+        - '#c4a6b4'
     mostGroupedColors:
-        - '#666655'
+        - '#646358'

@@ -1,58 +1,59 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#553333'
+    - '#9b4a4f'
     - '#ffffff'
-    - '#ffbb55'
-    - '#55bbdd'
-averageColor: '#937961'
+    - '#55b8e5'
+averageColor: '#937860'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#ffffff'
-    - '#332222'
-    - '#bb7744'
-    - '#77ccdd'
+    - '#fdfcfc'
+    - '#000000'
+    - '#595450'
+    - '#79c4e0'
+    - '#edae71'
 mostSatulightedColors:
-    - '#55bbdd'
-    - '#ffbb55'
+    - '#55b8e5'
+    - '#ffa65d'
+    - '#fffb98'
 mostGroupedColors:
-    - '#ffffff'
+    - '#fefefd'
 bottomHalf:
     averageColor: '#845839'
-    lightestColor: '#eeeeee'
+    lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#664433'
-        - '#dd9966'
-        - '#ffffbb'
+        - '#000000'
+        - '#7a4d32'
+        - '#edae71'
+        - '#ffffff'
     mostSatulightedColors:
-        - '#ffbb55'
-        - '#eeffcc'
-        - '#cc9999'
+        - '#ffa65d'
+        - '#fffb98'
+        - '#9b4a4f'
     mostGroupedColors:
-        - '#553333'
+        - '#261816'
 bottomThird:
     averageColor: '#815336'
-    lightestColor: '#ffffdd'
+    lightestColor: '#fff4f2'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#553333'
-        - '#cc8855'
-        - '#ffeeaa'
+        - '#261816'
+        - '#af7043'
+        - '#ffcc8b'
     mostSatulightedColors:
-        - '#ff9955'
-        - '#dddd88'
-        - '#771122'
+        - '#ffa65d'
+        - '#e4e08d'
     mostGroupedColors:
-        - '#553333'
+        - '#261816'
 bottomLine:
     averageColor: '#71462d'
-    lightestColor: '#ffaa66'
-    darkestColor: '#000000'
+    lightestColor: '#fcaf6c'
+    darkestColor: '#040100'
     mostFrequentColors:
-        - '#553333'
-        - '#ee9955'
+        - '#261815'
+        - '#d28b46'
     mostSatulightedColors:
-        - '#ffaa66'
+        - '#fcad68'
     mostGroupedColors:
-        - '#553333'
+        - '#261815'

@@ -1,53 +1,54 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#222222'
+    - '#4282a3'
     - '#ffffff'
-    - '#77bbdd'
+    - '#171512'
 averageColor: '#83a5b9'
-lightestColor: '#ffffff'
+lightestColor: '#fffdff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#5599bb'
-    - '#ddddee'
-    - '#444444'
+    - '#5191b8'
+    - '#dee4ed'
+    - '#1a1715'
+    - '#a6533c'
 mostSatulightedColors:
-    - '#5599cc'
-    - '#dd9966'
+    - '#60b2db'
+    - '#ffbd91'
 mostGroupedColors:
-    - '#5599bb'
+    - '#bfd4e6'
 bottomHalf:
     averageColor: '#9bb7c8'
-    lightestColor: '#ffffff'
-    darkestColor: '#111100'
-    mostFrequentColors:
-        - '#bbccdd'
-        - '#4488aa'
-        - '#222222'
-    mostSatulightedColors:
-        - '#77bbdd'
-        - '#bb8866'
-    mostGroupedColors:
-        - '#bbccdd'
-bottomThird:
-    averageColor: '#9cb9cc'
-    lightestColor: '#eeeeff'
+    lightestColor: '#f7ffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#bbccdd'
-        - '#447799'
-        - '#221111'
+        - '#bfd4e6'
+        - '#4282a3'
+        - '#1f1d1d'
     mostSatulightedColors:
-        - '#5599bb'
-        - '#bb9966'
+        - '#458eb0'
+        - '#e3c286'
     mostGroupedColors:
-        - '#bbccdd'
-bottomLine:
-    averageColor: '#5992ae'
-    lightestColor: '#99bbcc'
-    darkestColor: '#448899'
+        - '#bfd4e6'
+bottomThird:
+    averageColor: '#9bbacd'
+    lightestColor: '#ecffff'
+    darkestColor: '#000000'
     mostFrequentColors:
-        - '#4488aa'
+        - '#bfd4e6'
+        - '#4282a3'
+        - '#171512'
     mostSatulightedColors:
-        - '#5599bb'
+        - '#458eb0'
+        - '#e3c286'
     mostGroupedColors:
-        - '#4488aa'
+        - '#bfd4e6'
+bottomLine:
+    averageColor: '#5993af'
+    lightestColor: '#9ebcca'
+    darkestColor: '#49718d'
+    mostFrequentColors:
+        - '#4587a9'
+    mostSatulightedColors:
+        - '#458eb0'
+    mostGroupedColors:
+        - '#4587a9'

@@ -1,57 +1,58 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#aa2233'
+    - '#8f363e'
     - '#ffffff'
-    - '#337799'
-    - '#110011'
+    - '#7695a7'
 averageColor: '#5a3a3b'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#112233'
-    - '#aa5544'
-    - '#ddccbb'
+    - '#131e2e'
+    - '#be8881'
+    - '#ffffff'
+    - '#ad2f14'
 mostSatulightedColors:
-    - '#337799'
-    - '#ff8855'
-    - '#aa6677'
+    - '#2a6a96'
+    - '#ff925d'
+    - '#8f404e'
 mostGroupedColors:
-    - '#110011'
+    - '#171e30'
 bottomHalf:
-    averageColor: '#5d3533'
-    lightestColor: '#eeeeee'
+    averageColor: '#5d3532'
+    lightestColor: '#f7f8ef'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#110011'
-        - '#995544'
-        - '#eeaa88'
+        - '#11050d'
+        - '#be8881'
+        - '#a72d14'
+        - '#efebdf'
     mostSatulightedColors:
-        - '#ff9955'
-        - '#aa2233'
+        - '#ffa05d'
+        - '#8f363e'
+        - '#7695a7'
     mostGroupedColors:
-        - '#110011'
+        - '#e58b6c'
 bottomThird:
-    averageColor: '#572927'
-    lightestColor: '#ffeecc'
+    averageColor: '#572926'
+    lightestColor: '#fff1dd'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#110011'
-        - '#995544'
-        - '#eebb99'
+        - '#0f040d'
+        - '#ab5440'
+        - '#e7b99e'
     mostSatulightedColors:
-        - '#ff8855'
-        - '#995566'
+        - '#ff935d'
+        - '#812333'
     mostGroupedColors:
-        - '#110011'
+        - '#0a030a'
 bottomLine:
-    averageColor: '#311010'
-    lightestColor: '#995544'
-    darkestColor: '#110000'
+    averageColor: '#321010'
+    lightestColor: '#ab6251'
+    darkestColor: '#0b0000'
     mostFrequentColors:
-        - '#221111'
-        - '#995544'
+        - '#240000'
+        - '#875c4e'
     mostSatulightedColors:
-        - '#995544'
-        - '#331122'
+        - '#b35e4d'
     mostGroupedColors:
-        - '#110011'
+        - '#220f14'

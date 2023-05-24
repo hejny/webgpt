@@ -1,55 +1,56 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#333333'
+    - '#302827'
     - '#ffffff'
-    - '#eeaa66'
+    - '#8c8c8f'
 averageColor: '#989696'
-lightestColor: '#ffeeff'
-darkestColor: '#110000'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
 mostFrequentColors:
-    - '#dddddd'
-    - '#888888'
-    - '#222222'
+    - '#dedfe3'
+    - '#191513'
+    - '#8b8b8e'
 mostSatulightedColors:
-    - '#ffbb77'
+    - '#fbb761'
 mostGroupedColors:
-    - '#dddddd'
+    - '#d8dadf'
 bottomHalf:
-    averageColor: '#888687'
+    averageColor: '#888787'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#dddddd'
-        - '#888888'
-        - '#333333'
+        - '#dedfe3'
+        - '#8c8c8f'
+        - '#302827'
     mostSatulightedColors:
-        - '#eeaa66'
+        - '#fdca6c'
     mostGroupedColors:
-        - '#dddddd'
+        - '#d8dadf'
 bottomThird:
-    averageColor: '#8f8f90'
-    lightestColor: '#eeeeee'
-    darkestColor: '#110000'
+    averageColor: '#909091'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
     mostFrequentColors:
-        - '#dddddd'
-        - '#888888'
-        - '#222222'
+        - '#dedfe3'
+        - '#858689'
+        - '#1e1a17'
     mostSatulightedColors:
-        - '#ffaa77'
+        - '#fab262'
     mostGroupedColors:
-        - '#dddddd'
+        - '#e1e2e6'
 bottomLine:
-    averageColor: '#abafb6'
-    lightestColor: '#ccccdd'
-    darkestColor: '#111111'
+    averageColor: '#adb0b6'
+    lightestColor: '#d2d5dc'
+    darkestColor: '#13100c'
     mostFrequentColors:
-        - '#ccccdd'
-        - '#222222'
-        - '#667777'
+        - '#d1d4db'
+        - '#1c1a17'
+        - '#777f83'
     mostSatulightedColors:
-        - '#ccccdd'
-        - '#ccdddd'
-        - '#443333'
-        - '#222211'
+        - '#c3c9d2'
+        - '#4a5756'
+        - '#2d2620'
+        - '#aab4ad'
+        - '#33372e'
     mostGroupedColors:
-        - '#ccccdd'
+        - '#ced1d8'

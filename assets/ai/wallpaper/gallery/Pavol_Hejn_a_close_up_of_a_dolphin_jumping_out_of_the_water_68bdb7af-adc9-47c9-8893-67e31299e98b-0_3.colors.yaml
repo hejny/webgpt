@@ -1,56 +1,58 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#1188bb'
+    - '#000000'
     - '#ffffff'
-    - '#111100'
-averageColor: '#789fac'
-lightestColor: '#ffffff'
+    - '#269fc6'
+averageColor: '#789fab'
+lightestColor: '#fffaff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#bbccdd'
-    - '#117799'
-    - '#222222'
-    - '#bb6633'
+    - '#0394ca'
+    - '#c7d3dc'
+    - '#000000'
+    - '#d78446'
+    - '#3e5659'
 mostSatulightedColors:
-    - '#0099cc'
+    - '#0499cf'
 mostGroupedColors:
-    - '#bbccdd'
+    - '#0394ca'
 bottomHalf:
     averageColor: '#6095a3'
-    lightestColor: '#ffffff'
+    lightestColor: '#fffaff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#117799'
-        - '#eeccbb'
-        - '#222222'
-        - '#aa6644'
+        - '#c5d1db'
+        - '#000000'
+        - '#065e6b'
+        - '#a16341'
     mostSatulightedColors:
-        - '#1188bb'
-        - '#ffaa77'
+        - '#269fc6'
+        - '#f8a361'
     mostGroupedColors:
-        - '#005566'
+        - '#c5d1db'
 bottomThird:
     averageColor: '#5e95a2'
-    lightestColor: '#ffffff'
-    darkestColor: '#111100'
+    lightestColor: '#fffaff'
+    darkestColor: '#060400'
     mostFrequentColors:
-        - '#117799'
-        - '#eedddd'
-        - '#884422'
+        - '#065e6b'
+        - '#f4ece6'
+        - '#72a7bf'
+        - '#0a0604'
+        - '#a36542'
     mostSatulightedColors:
-        - '#0077aa'
-        - '#ee9955'
-        - '#77ccbb'
+        - '#1f94b9'
+        - '#f8a361'
     mostGroupedColors:
-        - '#005566'
+        - '#03566f'
 bottomLine:
-    averageColor: '#347f8d'
-    lightestColor: '#bbcccc'
-    darkestColor: '#005555'
+    averageColor: '#35808e'
+    lightestColor: '#c2d1d5'
+    darkestColor: '#003e53'
     mostFrequentColors:
-        - '#005566'
-        - '#aabbbb'
+        - '#005c6e'
+        - '#bdc8cc'
     mostSatulightedColors:
-        - '#1177aa'
+        - '#0f83a6'
     mostGroupedColors:
-        - '#005566'
+        - '#006477'

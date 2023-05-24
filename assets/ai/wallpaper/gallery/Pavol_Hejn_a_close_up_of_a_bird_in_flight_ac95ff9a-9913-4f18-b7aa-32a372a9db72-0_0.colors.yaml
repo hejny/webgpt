@@ -1,53 +1,54 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#336688'
+    - '#3a6181'
     - '#ffffff'
-    - '#ffbb66'
-averageColor: '#6f5139'
-lightestColor: '#ffeeee'
-darkestColor: '#111100'
+averageColor: '#6e5139'
+lightestColor: '#f3faf3'
+darkestColor: '#000000'
 mostFrequentColors:
-    - '#222222'
-    - '#ffbb77'
-    - '#aa6633'
-    - '#66aaaa'
+    - '#fdd292'
+    - '#2f1811'
+    - '#99764a'
 mostSatulightedColors:
-    - '#ffaa55'
-    - '#336688'
-    - '#77bbaa'
+    - '#ffad5d'
+    - '#8cd6ca'
+    - '#3a6181'
 mostGroupedColors:
-    - '#223344'
+    - '#fdd292'
 bottomHalf:
-    averageColor: '#4b3c34'
-    lightestColor: '#ddaa99'
-    darkestColor: '#111100'
+    averageColor: '#4a3c33'
+    lightestColor: '#eac29d'
+    darkestColor: '#160903'
     mostFrequentColors:
-        - '#223344'
-        - '#bb8866'
+        - '#2f1811'
+        - '#487076'
+        - '#d78c42'
     mostSatulightedColors:
-        - '#ffbb66'
-        - '#336688'
+        - '#ffad5d'
+        - '#3a6181'
     mostGroupedColors:
-        - '#223344'
+        - '#1a252f'
 bottomThird:
-    averageColor: '#3d3633'
-    lightestColor: '#eebb99'
-    darkestColor: '#111100'
+    averageColor: '#3d3632'
+    lightestColor: '#eac29d'
+    darkestColor: '#160903'
     mostFrequentColors:
-        - '#223344'
-        - '#bb8866'
+        - '#2f1811'
+        - '#487076'
+        - '#d4a179'
+        - '#ce3f18'
     mostSatulightedColors:
-        - '#ee9955'
-        - '#336688'
+        - '#ff995c'
+        - '#3a6181'
     mostGroupedColors:
-        - '#223344'
+        - '#30150e'
 bottomLine:
-    averageColor: '#1c1c21'
-    lightestColor: '#223344'
-    darkestColor: '#222211'
+    averageColor: '#1b1c20'
+    lightestColor: '#20394d'
+    darkestColor: '#1f0e0b'
     mostFrequentColors:
-        - '#112222'
+        - '#1f0f0c'
     mostSatulightedColors:
-        - '#113344'
+        - '#20394d'
     mostGroupedColors:
-        - '#221111'
+        - '#18282c'

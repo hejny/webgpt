@@ -1,58 +1,56 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#221111'
+    - '#060101'
     - '#ffffff'
-    - '#aa8866'
+    - '#fbb76b'
+    - '#61c9de'
 averageColor: '#755b47'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#221111'
-    - '#886644'
-    - '#ffddaa'
+    - '#060101'
+    - '#dfd0c1'
+    - '#8f6647'
+    - '#49b2c4'
 mostSatulightedColors:
-    - '#ffaa66'
-    - '#aaeeff'
-    - '#eebbdd'
-    - '#bbeedd'
+    - '#61c9de'
+    - '#fbb76b'
 mostGroupedColors:
-    - '#000000'
+    - '#060101'
 bottomHalf:
     averageColor: '#7d624c'
-    lightestColor: '#eeeeff'
+    lightestColor: '#fdfdff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#221111'
-        - '#ffddaa'
-        - '#aa8866'
+        - '#060101'
+        - '#fddbb1'
+        - '#8f775f'
     mostSatulightedColors:
-        - '#ffaa66'
-        - '#cceeff'
-        - '#ffffcc'
+        - '#fbb76b'
+        - '#89b5c6'
     mostGroupedColors:
-        - '#221111'
+        - '#060101'
 bottomThird:
-    averageColor: '#755a45'
-    lightestColor: '#eeeeff'
-    darkestColor: '#000000'
+    averageColor: '#745945'
+    lightestColor: '#ecf7ff'
+    darkestColor: '#070402'
     mostFrequentColors:
-        - '#221111'
-        - '#ffddaa'
-        - '#996644'
+        - '#140b09'
+        - '#fddbb1'
+        - '#8f775f'
     mostSatulightedColors:
-        - '#ffaa66'
-        - '#cceeff'
+        - '#fbb76b'
+        - '#89b5c6'
     mostGroupedColors:
-        - '#221111'
+        - '#191010'
 bottomLine:
-    averageColor: '#4f3a30'
-    lightestColor: '#aa9988'
-    darkestColor: '#111100'
+    averageColor: '#4f3b30'
+    lightestColor: '#b19782'
+    darkestColor: '#0f0805'
     mostFrequentColors:
-        - '#221111'
-        - '#887766'
+        - '#21120d'
+        - '#7d6a59'
     mostSatulightedColors:
-        - '#997755'
-        - '#775555'
+        - '#b49577'
     mostGroupedColors:
-        - '#221111'
+        - '#1f1411'

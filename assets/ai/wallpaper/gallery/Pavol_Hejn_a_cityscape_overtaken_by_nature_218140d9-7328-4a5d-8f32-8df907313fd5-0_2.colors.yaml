@@ -1,59 +1,58 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#050505'
     - '#ffffff'
-    - '#bbbb66'
-averageColor: '#787151'
+    - '#91b063'
+averageColor: '#777051'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#ffffee'
-    - '#776644'
-    - '#ddbb66'
+    - '#fcfcf5'
+    - '#0e0d10'
+    - '#7d8260'
 mostSatulightedColors:
-    - '#ffee88'
-    - '#cc7755'
-    - '#99bb66'
-    - '#559977'
+    - '#fff079'
+    - '#e89c6c'
+    - '#b7dd7e'
+    - '#5b9482'
 mostGroupedColors:
-    - '#111111'
+    - '#fcfcf5'
 bottomHalf:
-    averageColor: '#4b4529'
-    lightestColor: '#ffffdd'
+    averageColor: '#4b4429'
+    lightestColor: '#ffffec'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#776644'
-        - '#ddbb88'
+        - '#0e0d10'
+        - '#917a4c'
+        - '#e7debd'
     mostSatulightedColors:
-        - '#eeaa77'
-        - '#bbbb66'
-        - '#aacc88'
+        - '#e89c6c'
+        - '#d8cf7e'
+        - '#91b063'
     mostGroupedColors:
-        - '#111111'
+        - '#050505'
 bottomThird:
     averageColor: '#423f26'
-    lightestColor: '#ffeedd'
+    lightestColor: '#ffffec'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#776644'
-        - '#ccbb88'
+        - '#0f0e11'
+        - '#776543'
+        - '#e7debd'
     mostSatulightedColors:
-        - '#eeaa77'
-        - '#bbbb66'
-        - '#aacc88'
+        - '#e89c6c'
+        - '#d8cf7e'
+        - '#91b063'
     mostGroupedColors:
-        - '#111111'
+        - '#050505'
 bottomLine:
     averageColor: '#141b0d'
-    lightestColor: '#778855'
-    darkestColor: '#000000'
+    lightestColor: '#7e8a52'
+    darkestColor: '#000800'
     mostFrequentColors:
-        - '#111111'
-        - '#667744'
+        - '#030404'
+        - '#55672d'
     mostSatulightedColors:
-        - '#667733'
+        - '#7b8d29'
     mostGroupedColors:
-        - '#000000'
+        - '#040405'

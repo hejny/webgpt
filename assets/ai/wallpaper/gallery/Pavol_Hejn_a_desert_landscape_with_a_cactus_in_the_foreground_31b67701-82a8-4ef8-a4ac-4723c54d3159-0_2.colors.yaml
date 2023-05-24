@@ -1,57 +1,56 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#100c0c'
     - '#ffffff'
-    - '#3399cc'
-    - '#ffbb55'
+    - '#ffb25e'
+    - '#3eabd1'
 averageColor: '#988b82'
-lightestColor: '#ffffff'
+lightestColor: '#fbfcfd'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#dddddd'
-    - '#997766'
-    - '#221111'
-    - '#33aacc'
+    - '#f3f2f2'
+    - '#31779e'
+    - '#180000'
+    - '#c59f86'
+    - '#8f4a25'
 mostSatulightedColors:
-    - '#3399cc'
-    - '#ff9955'
+    - '#3eabd1'
+    - '#ffb25e'
 mostGroupedColors:
-    - '#eeeeee'
+    - '#f3f2f2'
 bottomHalf:
-    averageColor: '#9a7963'
-    lightestColor: '#ffeeee'
+    averageColor: '#9a7863'
+    lightestColor: '#fffff8'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ddbbaa'
-        - '#221111'
-        - '#886655'
+        - '#180000'
+        - '#f2d7bf'
+        - '#9f765e'
     mostSatulightedColors:
-        - '#ffaa66'
+        - '#ffb25e'
     mostGroupedColors:
-        - '#111111'
+        - '#100c0c'
 bottomThird:
-    averageColor: '#8f6f5d'
-    lightestColor: '#ffeeee'
+    averageColor: '#8f705d'
+    lightestColor: '#fffcf6'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ccaa99'
-        - '#111111'
-        - '#995533'
+        - '#110e0f'
+        - '#c8ad98'
+        - '#86583f'
     mostSatulightedColors:
-        - '#ffbb55'
-        - '#cc9999'
+        - '#ffb25e'
     mostGroupedColors:
-        - '#111111'
+        - '#090809'
 bottomLine:
-    averageColor: '#ba9578'
-    lightestColor: '#ffeedd'
-    darkestColor: '#000000'
+    averageColor: '#ba9478'
+    lightestColor: '#fff7ed'
+    darkestColor: '#080202'
     mostFrequentColors:
-        - '#ddbb99'
-        - '#886644'
-        - '#000000'
+        - '#b5896f'
+        - '#040405'
+        - '#fce7ce'
     mostSatulightedColors:
-        - '#ddaa77'
-        - '#885555'
+        - '#d88c5f'
     mostGroupedColors:
-        - '#ddbb99'
+        - '#532d20'

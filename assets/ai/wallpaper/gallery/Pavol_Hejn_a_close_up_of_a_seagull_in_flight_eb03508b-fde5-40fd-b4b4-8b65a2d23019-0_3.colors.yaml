@@ -1,54 +1,57 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#666666'
+    - '#3b4955'
     - '#ffffff'
-    - '#001111'
-averageColor: '#8ca2b7'
+    - '#d6a76d'
+averageColor: '#8ca2b6'
 lightestColor: '#ffffff'
-darkestColor: '#001111'
+darkestColor: '#030000'
 mostFrequentColors:
-    - '#336699'
-    - '#ffffff'
-    - '#222222'
-    - '#bbaa99'
+    - '#fcfcfd'
+    - '#5894cb'
+    - '#373635'
+    - '#d3a571'
 mostSatulightedColors:
-    - '#4488cc'
-    - '#ddcc77'
+    - '#5391d2'
+    - '#d1466c'
+    - '#e29668'
 mostGroupedColors:
-    - '#aaccdd'
+    - '#fcfcfd'
 bottomHalf:
     averageColor: '#a5b8c9'
-    lightestColor: '#ffffff'
-    darkestColor: '#221111'
+    lightestColor: '#fffeff'
+    darkestColor: '#180d04'
     mostFrequentColors:
-        - '#aaccdd'
-        - '#666666'
-        - '#221111'
+        - '#fcfcfd'
+        - '#5894cb'
+        - '#3b4955'
+        - '#ca8f64'
     mostSatulightedColors:
-        - '#5599cc'
-        - '#cc9966'
+        - '#5691cf'
+        - '#d6a76d'
     mostGroupedColors:
-        - '#aaccdd'
+        - '#fcfcfd'
 bottomThird:
-    averageColor: '#b0bfcb'
-    lightestColor: '#ffffff'
-    darkestColor: '#222211'
+    averageColor: '#b0becb'
+    lightestColor: '#fffeff'
+    darkestColor: '#1e130f'
     mostFrequentColors:
-        - '#aaccdd'
-        - '#334455'
+        - '#fcfcfd'
+        - '#8ea0a7'
+        - '#3b4955'
     mostSatulightedColors:
-        - '#77aadd'
-        - '#cc9966'
+        - '#67a0ce'
+        - '#d6a76d'
     mostGroupedColors:
-        - '#aaccdd'
+        - '#fcfcfd'
 bottomLine:
-    averageColor: '#9bacb9'
-    lightestColor: '#bbccdd'
-    darkestColor: '#335555'
+    averageColor: '#9babb8'
+    lightestColor: '#afc7dd'
+    darkestColor: '#3e4d57'
     mostFrequentColors:
-        - '#bbccdd'
-        - '#445555'
+        - '#bbc9d4'
+        - '#465057'
     mostSatulightedColors:
-        - '#335588'
+        - '#335d85'
     mostGroupedColors:
-        - '#bbccdd'
+        - '#bbc9d4'

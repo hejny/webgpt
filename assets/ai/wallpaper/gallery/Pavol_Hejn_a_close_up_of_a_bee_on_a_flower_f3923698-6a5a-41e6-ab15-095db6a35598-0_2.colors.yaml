@@ -1,57 +1,57 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#994433'
+    - '#2c0f0f'
     - '#ffffff'
-    - '#ffcc55'
-averageColor: '#946c30'
+    - '#fecf31'
+averageColor: '#956c30'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#331111'
-    - '#ffcc33'
-    - '#996644'
-    - '#eedddd'
+    - '#330e0d'
+    - '#976045'
+    - '#fecf31'
+    - '#e6d9da'
 mostSatulightedColors:
-    - '#ffcc55'
-    - '#bb7766'
+    - '#ffdf5d'
+    - '#eb8865'
 mostGroupedColors:
-    - '#331111'
+    - '#2c0f0f'
 bottomHalf:
-    averageColor: '#bd9131'
-    lightestColor: '#eeeeff'
+    averageColor: '#bd9232'
+    lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#331111'
-        - '#ffcc33'
-        - '#aa6600'
-        - '#dddddd'
+        - '#2c0f0f'
+        - '#fecf31'
+        - '#ab7103'
+        - '#ffffff'
+        - '#a0999c'
     mostSatulightedColors:
-        - '#ffcc55'
-        - '#994433'
+        - '#ffdf5d'
+        - '#cf7551'
     mostGroupedColors:
-        - '#331111'
+        - '#2c0f0f'
 bottomThird:
-    averageColor: '#cfa336'
-    lightestColor: '#ffeeee'
+    averageColor: '#cfa437'
+    lightestColor: '#fafbf5'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ffcc33'
-        - '#331111'
-        - '#aa6600'
-        - '#ffffee'
+        - '#371d1a'
+        - '#fecf31'
+        - '#ab7103'
+        - '#fff3e0'
     mostSatulightedColors:
-        - '#ffcc55'
-        - '#994433'
+        - '#ffdf5d'
+        - '#cf7551'
     mostGroupedColors:
-        - '#331111'
+        - '#331916'
 bottomLine:
-    averageColor: '#f5ca39'
-    lightestColor: '#ffeecc'
-    darkestColor: '#ddaa22'
+    averageColor: '#f5c938'
+    lightestColor: '#fff6dc'
+    darkestColor: '#e5b91a'
     mostFrequentColors:
-        - '#eebb22'
-        - '#ffeecc'
+        - '#ffdb41'
     mostSatulightedColors:
-        - '#ffdd55'
+        - '#ffde5d'
     mostGroupedColors:
-        - '#ddbb22'
+        - '#f8cb21'
