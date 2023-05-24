@@ -18,7 +18,7 @@ export function GallerySection(props: SampleProps) {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
-    const [filter, setFilter] = useState<GalleryFilter>({ limit: 100, isRandom: false });
+    const [filter, setFilter] = useState<GalleryFilter>({ limit: 100, isRandom: true });
 
     const filteredWallpapers = filterWallpapers(
         Object.values(wallpapers).map((wallpaperSubject) => wallpaperSubject.value),
@@ -44,7 +44,7 @@ export function GallerySection(props: SampleProps) {
                         // TODO: <MidjourneyImage/>
                         // TODO: Show diffusion as animation
                         <Link
-                        prefetch={false /* <- Note: It is too much data to prefetch every page from gallery */}
+                            prefetch={false /* <- Note: It is too much data to prefetch every page from gallery */}
                             href={`/showcase/${wallpaper.id}`}
                             key={wallpaper.id}
                             // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
