@@ -1,10 +1,13 @@
+import { useMemo } from 'react';
+import { BehaviorSubject } from 'rxjs';
 import { Converter } from 'showdown';
 import showdownHighlight from 'showdown-highlight';
 import spaceTrim from 'spacetrim';
-import { Promisable } from 'type-fest';
 import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
+import { useObservable } from '../../utils/hooks/useObservable';
+import { string_markdown } from '../../utils/typeAliases';
 import { Html } from '../Html/Html';
 import styles from './Article.module.css';
 
@@ -49,30 +52,41 @@ export function Article(props: IArticleProps) {
 
     // [0] const hash = useHash();
 
-    let markdown: Promisable<string> = spaceTrim(content || '');
+    let synchronouslyEnhancedContent: string_markdown = spaceTrim(content || '');
 
     if (isEnhanced) {
-        markdown = linkMarkdown(markdown);
-        markdown = normalizeDashes(markdown);
+        synchronouslyEnhancedContent = linkMarkdown(synchronouslyEnhancedContent);
+        synchronouslyEnhancedContent = normalizeDashes(synchronouslyEnhancedContent);
     }
 
-    if (isUsingOpenmoji) {
-        // TODO: We should take emojis ONLY in text
-        markdown = emojifyMarkdown(markdown, 'black');
-    }
+    const enhancedContentSubject = useMemo(() => {
+        const enhancedContentSubject = new BehaviorSubject(synchronouslyEnhancedContent);
+        if (isUsingOpenmoji) {
+            (async () => {
+                /*/
+                await forTime(1000);
+                enhancedContentSubject.next('2\n' + enhancedContentSubject.value);
+                await forTime(1000);
+                enhancedContentSubject.next('1\n' + enhancedContentSubject.value);
+                await forTime(1000);
+                /**/
+                enhancedContentSubject.next(await emojifyMarkdown(enhancedContentSubject.value, 'black'));
+            })();
+        }
+        return enhancedContentSubject;
+    }, [content, isUsingOpenmoji]);
+
+    const { value: enhancedContent } = useObservable(enhancedContentSubject);
 
     converter.setFlavor('github');
-    let html: Promise<string> = Promise.resolve(markdown).then((markdown) => converter.makeHtml(markdown));
+    const html = converter.makeHtml(enhancedContent);
 
-    /*
     if (html === '') {
         // Note: Do not make empty div for empty article
         return <></>;
     }
-    */
 
     // TODO: [0] If not using hash, remove IDs from html
-
     // [0] const currentSubsection = hash.substring(1);
 
     return (

@@ -1,7 +1,6 @@
 import parse from 'html-react-parser';
-import { Promisable } from 'type-fest';
 import { classNames } from '../../utils/classNames';
-import { usePromise } from '../../utils/hooks/usePromise';
+import { string_html } from '../../utils/typeAliases';
 import styles from './Html.module.css';
 
 /**
@@ -11,7 +10,7 @@ import styles from './Html.module.css';
  * @returns {JSX.Element} A div element with parsed HTML content and optional CSS class name.
  */
 interface HtmlProps {
-    html: Promisable<string>;
+    html: string_html;
     className?: string;
 }
 
@@ -21,14 +20,8 @@ interface HtmlProps {
 export function Html(props: HtmlProps) {
     const { html, className } = props;
 
-    const { value: htmlLoaded } = usePromise(html);
-
-    if (!htmlLoaded) {
-        return <></>;
-    }
-
     const content = parse(
-        htmlLoaded,
+        html,
         /*
         Maybe TODO:
         {

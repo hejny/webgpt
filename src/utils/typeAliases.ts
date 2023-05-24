@@ -53,6 +53,14 @@ export type string_xml = string;
 /**
  * Semantic helper
  *
+ * For example `"**Hello** World!"`
+ * @collboard-modules-sdk
+ */
+export type string_markdown = string;
+
+/**
+ * Semantic helper
+ *
  * For example `.foo{border: 1px solid red}`
  * @collboard-modules-sdk
  */
