@@ -1,10 +1,12 @@
 <!--font:Barlow Condensed-->
 
-# AInautes
+# AI\*nautes
 
 > Navigating the Seas of Artificial Intelligence
 
 Meet the AInautes, your trusted crew to guide your corporate ship through the turbulent, unpredictable, novel and amazing seas of artificial intelligence. We are a leading European generative AI consultancy, composed of a dynamic team of seasoned hackers, artificial intelligence geeks, and dedicated researchers, alongside startup innovators, industry experts, and experienced consultancy professionals.
+
+<a class="button primary" href="info@tomas-studenik.com">Get in touch</a>
 
 ## Why AInautes
 
