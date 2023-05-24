@@ -1,60 +1,59 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#22566e'
     - '#ffffff'
-    - '#447788'
+    - '#050306'
 averageColor: '#595e5e'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#ccdddd'
-    - '#886655'
+    - '#060407'
+    - '#d3e5e6'
+    - '#415b66'
+    - '#cd6c2b'
 mostSatulightedColors:
-    - '#227788'
-    - '#bb6622'
+    - '#2775a9'
+    - '#ce8655'
 mostGroupedColors:
-    - '#112222'
+    - '#0f2027'
 bottomHalf:
-    averageColor: '#443b35'
+    averageColor: '#443a35'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#776655'
-        - '#ccbbaa'
+        - '#060407'
+        - '#685449'
+        - '#c8cbc5'
     mostSatulightedColors:
-        - '#447788'
-        - '#994455'
-        - '#bb6622'
+        - '#ce8655'
+        - '#22566e'
+        - '#984651'
+        - '#310224'
     mostGroupedColors:
-        - '#000000'
+        - '#050306'
 bottomThird:
     averageColor: '#362c28'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#776655'
-        - '#cccccc'
+        - '#060407'
+        - '#6f5546'
+        - '#c8cbc5'
     mostSatulightedColors:
-        - '#bb6622'
-        - '#113344'
-        - '#ddddbb'
+        - '#ce8655'
+        - '#984651'
+        - '#5e7a93'
+        - '#310224'
     mostGroupedColors:
-        - '#222222'
+        - '#050306'
 bottomLine:
-    averageColor: '#100d0d'
-    lightestColor: '#443322'
-    darkestColor: '#000000'
+    averageColor: '#110e0e'
+    lightestColor: '#373238'
+    darkestColor: '#010103'
     mostFrequentColors:
-        - '#111111'
+        - '#050306'
     mostSatulightedColors:
-        - '#443322'
-        - '#442222'
-        - '#110011'
-        - '#111122'
-        - '#001111'
-        - '#222211'
+        - '#442d20'
+        - '#12171f'
     mostGroupedColors:
-        - '#000000'
+        - '#030105'

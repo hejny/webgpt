@@ -1,56 +1,57 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#010101'
     - '#ffffff'
-    - '#779944'
-averageColor: '#3f493f'
-lightestColor: '#eeeeff'
+    - '#a9c47e'
+    - '#495a4c'
+averageColor: '#3f483e'
+lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#556666'
-    - '#aabbaa'
+    - '#010101'
+    - '#e9eaf4'
+    - '#455756'
+    - '#bcae60'
 mostSatulightedColors:
-    - '#ddbb66'
-    - '#aabb77'
+    - '#fbe68b'
+    - '#a9c47e'
 mostGroupedColors:
-    - '#000000'
+    - '#010101'
 bottomHalf:
-    averageColor: '#2c3322'
-    lightestColor: '#bbbbbb'
+    averageColor: '#2c3321'
+    lightestColor: '#ebf4d6'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#aaaa99'
-        - '#777711'
+        - '#010101'
+        - '#abb39f'
+        - '#495a4c'
     mostSatulightedColors:
-        - '#eedd77'
-        - '#779944'
+        - '#fbe68b'
+        - '#a9c47e'
     mostGroupedColors:
-        - '#000000'
+        - '#010101'
 bottomThird:
     averageColor: '#242817'
-    lightestColor: '#eeeedd'
+    lightestColor: '#ebf4d6'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#667744'
-        - '#bbbbaa'
+        - '#010101'
+        - '#676054'
+        - '#c3c073'
     mostSatulightedColors:
-        - '#ffdd88'
-        - '#88aa55'
+        - '#fbe68b'
+        - '#a9c47e'
     mostGroupedColors:
-        - '#000000'
+        - '#010101'
 bottomLine:
-    averageColor: '#12140d'
-    lightestColor: '#555533'
+    averageColor: '#13140e'
+    lightestColor: '#a39d7e'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
+        - '#000002'
+        - '#796c48'
     mostSatulightedColors:
-        - '#555522'
-        - '#443322'
-        - '#334422'
-        - '#110011'
+        - '#7f7347'
+        - '#4c5b29'
     mostGroupedColors:
-        - '#000000'
+        - '#030806'

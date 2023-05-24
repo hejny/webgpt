@@ -1,54 +1,57 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#885234'
     - '#ffffff'
-    - '#eecc55'
+    - '#050504'
 averageColor: '#59603e'
-lightestColor: '#ffffee'
-darkestColor: '#001100'
+lightestColor: '#ffffff'
+darkestColor: '#000500'
 mostFrequentColors:
-    - '#223322'
-    - '#eeeedd'
-    - '#99aa77'
+    - '#f3f3e5'
+    - '#283427'
+    - '#9dad7f'
 mostSatulightedColors:
-    - '#eecc55'
-    - '#99bb55'
+    - '#f7e668'
+    - '#93bc58'
+    - '#885234'
 mostGroupedColors:
-    - '#223322'
+    - '#f4f4e6'
 bottomHalf:
-    averageColor: '#4b4c23'
-    lightestColor: '#ddddbb'
-    darkestColor: '#001100'
+    averageColor: '#4a4c23'
+    lightestColor: '#e8ecd3'
+    darkestColor: '#000500'
     mostFrequentColors:
-        - '#222211'
-        - '#778855'
-        - '#ccddbb'
+        - '#050504'
+        - '#bec49d'
+        - '#51683f'
     mostSatulightedColors:
-        - '#eecc55'
-        - '#aacc66'
+        - '#f7e668'
+        - '#93bc58'
+        - '#885234'
     mostGroupedColors:
-        - '#111111'
+        - '#b8bf92'
 bottomThird:
-    averageColor: '#47431a'
-    lightestColor: '#ddddaa'
-    darkestColor: '#001100'
+    averageColor: '#47441a'
+    lightestColor: '#f8f1c3'
+    darkestColor: '#000500'
     mostFrequentColors:
-        - '#222211'
-        - '#888833'
-        - '#dddd77'
+        - '#050504'
+        - '#63682a'
+        - '#c5c077'
     mostSatulightedColors:
-        - '#eecc55'
-        - '#aacc66'
+        - '#f7e668'
+        - '#9bbc6a'
+        - '#885234'
     mostGroupedColors:
-        - '#000000'
+        - '#080805'
 bottomLine:
     averageColor: '#4b3b14'
-    lightestColor: '#bbaa77'
+    lightestColor: '#c0af77'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#333311'
-        - '#aa8844'
+        - '#191f08'
+        - '#8d6a39'
     mostSatulightedColors:
-        - '#ccbb44'
+        - '#d1c03b'
     mostGroupedColors:
-        - '#554422'
+        - '#090906'

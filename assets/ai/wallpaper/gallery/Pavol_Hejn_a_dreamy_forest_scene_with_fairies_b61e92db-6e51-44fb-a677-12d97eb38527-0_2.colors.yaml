@@ -1,56 +1,57 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111100'
+    - '#733d59'
     - '#ffffff'
+    - '#ffd552'
 averageColor: '#423723'
-lightestColor: '#ffeedd'
+lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111100'
-    - '#776644'
-    - '#ccbb88'
+    - '#080807'
+    - '#8e7950'
+    - '#f3daac'
 mostSatulightedColors:
-    - '#ffdd44'
-    - '#cc7766'
+    - '#ffcc5b'
+    - '#de8a7b'
+    - '#733d59'
 mostGroupedColors:
-    - '#111100'
+    - '#070708'
 bottomHalf:
-    averageColor: '#302716'
-    lightestColor: '#ffffdd'
+    averageColor: '#2f2717'
+    lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111100'
-        - '#776644'
-        - '#ccbb99'
+        - '#080807'
+        - '#6e5f42'
+        - '#debf95'
     mostSatulightedColors:
-        - '#eebb55'
-        - '#cc7766'
-        - '#885566'
+        - '#ffd552'
+        - '#f09b86'
+        - '#733d59'
     mostGroupedColors:
-        - '#111100'
+        - '#070708'
 bottomThird:
-    averageColor: '#2a2413'
-    lightestColor: '#ffeecc'
+    averageColor: '#2a2314'
+    lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111100'
-        - '#776644'
-        - '#ccbb88'
+        - '#080807'
+        - '#6f5d3b'
+        - '#d3bb66'
+        - '#ffffff'
     mostSatulightedColors:
-        - '#ffee77'
-        - '#bb7755'
-        - '#774455'
+        - '#ffd552'
+        - '#f9b6ad'
+        - '#733d59'
     mostGroupedColors:
-        - '#111100'
+        - '#070708'
 bottomLine:
-    averageColor: '#0e0c06'
-    lightestColor: '#221111'
-    darkestColor: '#000000'
+    averageColor: '#0f0d08'
+    lightestColor: '#29251a'
+    darkestColor: '#060401'
     mostFrequentColors:
-        - '#111100'
+        - '#070608'
     mostSatulightedColors:
-        - '#000011'
-        - '#221111'
-        - '#222211'
+        - '#282514'
     mostGroupedColors:
-        - '#000000'
+        - '#070707'

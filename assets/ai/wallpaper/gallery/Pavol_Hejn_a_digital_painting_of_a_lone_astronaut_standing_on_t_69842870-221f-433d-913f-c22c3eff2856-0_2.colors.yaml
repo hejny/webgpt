@@ -1,51 +1,53 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-1920x1080-256bit-v12palette
 palette:
-    - '#111111'
+    - '#5f748e'
     - '#ffffff'
-averageColor: '#675d58'
-lightestColor: '#ffeecc'
+    - '#1d161e'
+averageColor: '#665c56'
+lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#997766'
-    - '#eeddbb'
+    - '#222a2c'
+    - '#b3bfb7'
+    - '#b1653e'
 mostSatulightedColors:
-    - '#ffbb88'
+    - '#fcb584'
+    - '#5f748e'
 mostGroupedColors:
-    - '#111111'
+    - '#222a2c'
 bottomHalf:
-    averageColor: '#634f46'
-    lightestColor: '#eeddcc'
-    darkestColor: '#111100'
-    mostFrequentColors:
-        - '#111111'
-        - '#997766'
-        - '#cccccc'
-    mostSatulightedColors:
-        - '#ffbb88'
-    mostGroupedColors:
-        - '#111111'
-bottomThird:
-    averageColor: '#4a3b36'
-    lightestColor: '#cccccc'
+    averageColor: '#634e45'
+    lightestColor: '#e7f8f0'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#111111'
-        - '#886655'
-        - '#eebb99'
+        - '#100808'
+        - '#7d6d64'
+        - '#fab686'
     mostSatulightedColors:
-        - '#ffbb99'
+        - '#fcb584'
+        - '#5f748e'
     mostGroupedColors:
-        - '#111111'
-bottomLine:
-    averageColor: '#171213'
-    lightestColor: '#443333'
-    darkestColor: '#110000'
+        - '#100808'
+bottomThird:
+    averageColor: '#4a3935'
+    lightestColor: '#dbd6cd'
+    darkestColor: '#060000'
     mostFrequentColors:
-        - '#111111'
+        - '#100808'
+        - '#6f6059'
+        - '#dfb493'
     mostSatulightedColors:
-        - '#221122'
-        - '#111122'
-        - '#443333'
+        - '#e79f6a'
     mostGroupedColors:
-        - '#111111'
+        - '#100808'
+bottomLine:
+    averageColor: '#181215'
+    lightestColor: '#3c3439'
+    darkestColor: '#0e0607'
+    mostFrequentColors:
+        - '#0f0708'
+    mostSatulightedColors:
+        - '#34272c'
+        - '#1d161e'
+    mostGroupedColors:
+        - '#0f0708'
