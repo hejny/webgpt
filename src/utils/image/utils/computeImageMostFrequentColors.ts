@@ -7,7 +7,9 @@ import { IImage } from '../IImage';
 /**
  * @@@
  */
-export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Color>> {
+export function computeImageMostFrequentColors(
+    image: IImage,
+): Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */> {
     const colorCounts: Map<string, number> = new Map();
 
     // 1️⃣ Loop through all the pixels in the image and count the number of times each color appears
@@ -31,10 +33,10 @@ export function computeImageMostFrequentColors(image: IImage): Array<WithTake<Co
     //    TODO: This has one flaw which need to be fixed [🦯]
     const distanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
-    const uniqueColors: Array<WithTake<Color>> = [];
+    const uniqueColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */> = [];
     for (const color of mostFrequentColors) {
-        if (uniqueColors.every((uniqueColor) => colorDistanceSquared(color, uniqueColor) >= distanceTheashold)) {
-            uniqueColors.push(color);
+        if (uniqueColors.every((uniqueColor) => colorDistanceSquared(color, uniqueColor.value) >= distanceTheashold)) {
+            uniqueColors.push({ value: color, count: colorCounts.get(color.toHex())! });
         }
 
         if (uniqueColors.length >= COLORS_LIMIT) {

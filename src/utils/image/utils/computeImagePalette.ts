@@ -2,6 +2,7 @@ import {
     COLORS_LIMIT,
     DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO,
     DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
+    TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO,
 } from '../../../../config';
 import { Color } from '../../color/Color';
 import { textColor } from '../../color/operators/furthest';
@@ -14,27 +15,31 @@ import { IImageColorStatsAdvanced } from './IImageColorStats';
 let totalCount = 0;
 let pickByMostFrequentColorCount = 0;
 
-export function computeImagePalette12(
+export function computeImagePalette13(
     colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>,
-): Array<WithTake<Color>> {
-    let primaryColor: WithTake<Color> | null = null;
+): Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/> {
+    let primaryColor: { value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/ | null = null;
 
     totalCount++;
 
     // 0️⃣ Check that there is some most occuring color towards the bottom of the image
     if (
         // [🥎]
-        areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomHalf.mostFrequentColors[0]) &&
-        areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomThird.mostFrequentColors[0]) &&
-        areColorsEqual(colorStats.mostFrequentColors[0], colorStats.bottomLine.mostFrequentColors[0])
+        areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomHalf.mostFrequentColors[0].value) &&
+        areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomThird.mostFrequentColors[0].value) &&
+        areColorsEqual(colorStats.mostFrequentColors[0].value, colorStats.bottomLine.mostFrequentColors[0].value)
     ) {
         pickByMostFrequentColorCount++;
         console.log(` !!! Picking primary as the most frequent one (${pickByMostFrequentColorCount}/${totalCount}))`);
-        primaryColor = colorStats.bottomHalf.mostFrequentColors[0];
+        primaryColor = {
+            ...colorStats.bottomHalf.mostFrequentColors[0],
+            note: `Most frequent color`,
+        };
     }
 
     // 1️⃣ Compute the all palette candidates
-    const paletteCandidates: Array<WithTake<Color>> = [];
+    const paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/> =
+        [];
 
     for (const regionStats of [
         colorStats.bottomHalf,
@@ -45,26 +50,29 @@ export function computeImagePalette12(
         // TODO: !! Here also get in account the color count
 
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
-            paletteCandidates.push(mostSatulightedColor);
+            paletteCandidates.push({ ...mostSatulightedColor, note: `Most satulighted color` });
         }
         for (const mostGroupedColor of regionStats.mostGroupedColors) {
-            paletteCandidates.push(mostGroupedColor);
+            paletteCandidates.push({ ...mostGroupedColor, note: `Most grouped color` });
         }
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
-            paletteCandidates.push(mostFrequentColor);
+            paletteCandidates.push({ ...mostFrequentColor, note: `Most frequent color` });
         }
         // regionStats.averageColor;
 
-        paletteCandidates.push(regionStats.darkestColor);
-        paletteCandidates.push(regionStats.lightestColor);
+        paletteCandidates.push({ value: regionStats.darkestColor, note: `Darkest color` });
+        paletteCandidates.push({ value: regionStats.lightestColor, note: `Lightest color` });
     }
 
     if (!primaryColor) {
         // 2️⃣ Pick best primary color
         // 2️⃣🅰 Pick the first color from paletteCandidates which is dark enough to white text on it
         for (const paletteCandidate of paletteCandidates) {
-            if (areColorsEqual(paletteCandidate.then(textColor), Color.get('white'))) {
-                primaryColor = paletteCandidate;
+            if (areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
+                primaryColor = {
+                    ...paletteCandidate,
+                    note: `${paletteCandidate.note} which is dark enough to white text on it`,
+                };
                 break;
             }
         }
@@ -76,25 +84,55 @@ export function computeImagePalette12(
     }
 
     // 2️⃣🅲 Get the secondary color
-    const secondaryColor = primaryColor.then(textColor);
+    let secondaryColor: { value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/ | null = null;
+    const textBackgrounddistanceTheashold =
+        colorDistanceSquared(Color.get('black'), Color.get('white')) * TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO;
+    for (const paletteCandidate of paletteCandidates) {
+        if (colorDistanceSquared(primaryColor.value, paletteCandidate.value) >= textBackgrounddistanceTheashold) {
+            secondaryColor = {
+                ...paletteCandidate,
+                note: `${paletteCandidate.note} which is contrast enough (${Math.round(
+                    TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO * 100,
+                )}%) to primary color`,
+            };
+            break;
+        }
+    }
+    if (!secondaryColor) {
+        secondaryColor = {
+            value: primaryColor.value.then(textColor),
+            note: `Just the text color of primary color`,
+        };
+    }
 
     // 3️⃣ Pick colors that has some distance+hue threshold (compared to all other already picked colors)
     //    TODO: This has one flaw which need to be fixed [🦯]
     const distanceTheashold =
         colorDistanceSquared(Color.get('black'), Color.get('white')) * DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO;
-    const palette: Array<WithTake<Color>> = [primaryColor, secondaryColor];
+    const palette: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/> = [
+        primaryColor,
+        secondaryColor,
+    ];
     for (const paletteCandidate of paletteCandidates.filter(
         (color) => color !== primaryColor && color !== secondaryColor,
     )) {
         // TODO: !! Make in this distance hue more relevant
         if (
-            palette.every((uniqueColor) => colorDistanceSquared(paletteCandidate, uniqueColor) >= distanceTheashold) &&
+            palette.every(
+                (uniqueColor) => colorDistanceSquared(paletteCandidate.value, uniqueColor.value) >= distanceTheashold,
+            ) &&
             palette.every(
                 (uniqueColor) =>
-                    colorHueDistance(paletteCandidate, uniqueColor) >= DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
+                    colorHueDistance(paletteCandidate.value, uniqueColor.value) >=
+                    DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
             )
         ) {
-            palette.push(paletteCandidate);
+            palette.push({
+                ...paletteCandidate,
+                note: `${paletteCandidate.note} which is distant enough (${Math.round(
+                    DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO * 100,
+                )}%) and hue-distant enough (${DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES}°) from all other palette colors`,
+            });
         }
 
         if (palette.length >= COLORS_LIMIT) {
@@ -123,11 +161,11 @@ export function computeImagePalette12(
         const distanceA = palette
 
             .filter((color) => color !== colorA)
-            .map((color) => colorDistanceSquared(colorA, color))
+            .map((color) => colorDistanceSquared(colorA.value, color.value))
             .reduce((sum, distance) => sum + distance, 0);
         const distanceB = palette
             .filter((color) => color !== colorB)
-            .map((color) => colorDistanceSquared(colorB, color))
+            .map((color) => colorDistanceSquared(colorB.value, color.value))
             .reduce((sum, distance) => sum + distance, 0);
 
         return distanceA - distanceB;

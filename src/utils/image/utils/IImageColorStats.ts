@@ -9,7 +9,7 @@ export interface IComputeImageColorStats<TVersion extends string> {
 
 export interface IImageColorStats<TVersion extends string> {
     version: TVersion;
-    palette: Array<WithTake<Color>>;
+    palette: Array<{ value: WithTake<Color>; note: number } /* <- TODO: [⏲] Do we want here count*/>;
 
     /**
      * The average color of the image as a Color object
@@ -46,25 +46,25 @@ export interface IImageColorStatsRegion {
     /**
      * The lightest color of the image as a Color object
      */
-    lightestColor: WithTake<Color>;
+    lightestColor: WithTake<Color> /* <- TODO: Also expose count and maybe make simmilar list as mostXxxColors + [🎍] some util for counting colors */;
 
     /**
      * The darkest color of the image as a Color object
      */
-    darkestColor: WithTake<Color>;
+    darkestColor: WithTake<Color> /* <- TODO: Also expose count and maybe make simmilar list as mostXxxColors + [🎍] some util for counting colors */;
 
     /**
      * The most saturation*luminance colors of the image with different hue as a Color object
      */
-    mostSatulightedColors: Array<WithTake<Color>>;
+    mostSatulightedColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
 
     /**
      * The most frequent color of the image as a Color object
      */
-    mostFrequentColors: Array<WithTake<Color>>;
+    mostFrequentColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
 
     /**
      * The most grouped color of the image as a Color object
      */
-    mostGroupedColors: Array<WithTake<Color>>;
+    mostGroupedColors: Array<{ value: WithTake<Color>; count: number } /* <- TODO: [⏲] DRY */>;
 }
