@@ -9,7 +9,7 @@ export interface IComputeImageColorStats<TVersion extends string> {
 
 export interface IImageColorStats<TVersion extends string> {
     version: TVersion;
-    palette: Array<{ value: WithTake<Color>; note: number } /* <- TODO: [⏲] Do we want here count*/>;
+    palette: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
 
     /**
      * The average color of the image as a Color object
