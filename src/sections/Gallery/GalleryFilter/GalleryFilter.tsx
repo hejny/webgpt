@@ -5,6 +5,7 @@ import { DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
 import { SelectWithFirst } from '../../../components/SelectWithFirst/SelectWithFirst';
 import { Color } from '../../../utils/color/Color';
 import { colorDistanceSquared } from '../../../utils/color/utils/colorDistance';
+import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { IWallpaper } from '../../../utils/IWallpaper';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import styles from './GalleryFilter.module.css';
@@ -14,8 +15,10 @@ import styles from './GalleryFilter.module.css';
 export interface GalleryFilter {
     fulltext?: string;
     color?: WithTake<Color>;
+    likedStatus?: LikedStatus;
     limit: number;
     isRandom: boolean;
+
     // TODO: Combination of filters AND, OR
     // TODO: Fulltext
     // TODO: !!! Serialize to URL via router
@@ -28,7 +31,7 @@ interface GalleryFilterProps {
 
 export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryFilter): Array<IWallpaper> {
     console.log('filterWallpapers');
-    const { fulltext, color, limit, isRandom } = filter;
+    const { fulltext, color, likedStatus, limit, isRandom } = filter;
 
     if (isRandom) {
         // Note: .sort method is mutating array so making a copy before
@@ -58,6 +61,13 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
         );
     }
 
+    if (likedStatus) {
+        // TODO: !!! Optimize
+        wallpapers = wallpapers.filter(
+            (wallpaper) => localStorage.getItem(`likedStatus_${wallpaper.id}`) === likedStatus,
+        );
+    }
+
     if (isRandom) {
         // Note: .sort method is mutating array so no need to assign it back
         wallpapers.sort(() => Math.random() - 0.5);
@@ -77,6 +87,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
 
     const [fulltext, setFulltext] = useState<string | undefined>(defaultFilter.fulltext);
     const [color, setColor] = useState<WithTake<Color> | undefined>(defaultFilter.color || undefined);
+    const [likedStatus, setLikedStatus] = useState<LikedStatus | undefined>(defaultFilter.likedStatus);
     const [limit, setLimit] = useState<number>(defaultFilter.limit);
     const [isRandom, setRandom] = useState<boolean>(false);
 
@@ -85,6 +96,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
     if (
         defaultFilter.fulltext !== fulltext ||
         defaultFilter.color?.toHex() !== color?.toHex() ||
+        defaultFilter.likedStatus !== likedStatus ||
         defaultFilter.limit !== limit ||
         defaultFilter.isRandom !== isRandom
     ) {
@@ -112,6 +124,20 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                     onChange={debounce((event) => setColor(Color.fromHex(event.target.value)), 500)}
                 />
             </div>
+
+            <SelectWithFirst
+                title={`Like status: `}
+                value={likedStatus}
+                onChange={(newLikedStatus) => void setLikedStatus(newLikedStatus)}
+                numberOfButtons={5}
+                options={[
+                    { id: undefined, title: 'All' },
+                    { id: 'NONE' as LikedStatus, title: 'None' },
+                    { id: 'LOVE' as LikedStatus, title: '❤ Loved' },
+                    { id: 'LIKE' as LikedStatus, title: '👍 Liked' },
+                    { id: 'DISLIKE' as LikedStatus, title: '👎 Disliked' },
+                ]}
+            />
 
             <SelectWithFirst
                 title={`Items on page: `}
