@@ -15,6 +15,7 @@ import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { HeaderWallpaper } from '../HeaderWallpaper/HeaderWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
+import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
 import { ShuffleSeedContext } from '../Shuffle/Shuffle';
 import styles from './EditModal.module.css';
 
@@ -42,6 +43,22 @@ export function EditModal(props: EditModalProps) {
                 <div className={styles.title}>Editing</div>
                 <div className={styles.xxxx}>
                     <ImagineTag>{wallpaper.prompt}</ImagineTag>
+                </div>
+                <div className={styles.xxxx}>
+                    <SelectWithFirst
+                        title="Color algorithm"
+                        value={wallpaper.colorStats.version}
+                        onChange={(version) => {
+                            /* !!! */
+                        }}
+                        numberOfButtons={0}
+                        options={[
+                            {
+                                id: wallpaper.colorStats.version,
+                                title: wallpaper.colorStats.version,
+                            },
+                        ]}
+                    />
                 </div>
                 <div className={styles.xxxx}>
                     {wallpaper.colorStats.palette.map((color, i) => (
