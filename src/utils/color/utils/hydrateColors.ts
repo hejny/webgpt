@@ -12,7 +12,7 @@ export function hydrateColors(value: JsonValue): any {
     } else if (typeof value === 'object' && value !== null && typeof value !== 'undefined') {
         const result: any = {};
         for (const [subKey, subValue] of Object.entries(value)) {
-            if (subKey === 'version') {
+            if (subKey === 'version' || subKey === 'note' || subKey === 'count') {
                 result[subKey] = subValue;
             } else {
                 result[subKey] = hydrateColors(subValue!);

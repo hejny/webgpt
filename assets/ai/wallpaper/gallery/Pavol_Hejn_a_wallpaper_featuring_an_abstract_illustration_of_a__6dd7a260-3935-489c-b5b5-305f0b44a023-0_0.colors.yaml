@@ -1,74 +1,123 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#000022'
-    - '#ffffff'
-    - '#773377'
-    - '#33aacc'
-    - '#ffbb55'
+    - note: Most frequent color
+      value: '#000022'
+      count: 3109
+    - note: Most satulighted color which is contrast enough (50%) to primary color
+      value: '#eedd88'
+      count: 2
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#773377'
+      count: 3
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#33aacc'
+      count: 29
 averageColor: '#212441'
 lightestColor: '#ddeeff'
 darkestColor: '#000011'
 mostFrequentColors:
-    - '#000022'
-    - '#226688'
-    - '#dd5555'
-    - '#66ccdd'
-    - '#ffddcc'
+    - value: '#000022'
+      count: 3018
+    - value: '#226688'
+      count: 71
+    - value: '#dd5555'
+      count: 48
+    - value: '#66ccdd'
+      count: 26
+    - value: '#ffddcc'
+      count: 1
 mostSatulightedColors:
-    - '#55ccee'
-    - '#dd5588'
-    - '#aa55aa'
-    - '#ff7755'
-    - '#7788cc'
+    - value: '#55ccee'
+      count: 1
+    - value: '#dd5588'
+      count: 3
+    - value: '#aa55aa'
+      count: 1
+    - value: '#ff7755'
+      count: 1
+    - value: '#7788cc'
+      count: 2
 mostGroupedColors:
-    - '#000022'
+    - value: '#000022'
+      count: 434
 bottomHalf:
     averageColor: '#30253f'
     lightestColor: '#eeeeff'
     darkestColor: '#000011'
     mostFrequentColors:
-        - '#000022'
-        - '#994455'
-        - '#44aacc'
-        - '#ff9966'
-        - '#ccddee'
+        - value: '#000022'
+          count: 3109
+        - value: '#994455'
+          count: 90
+        - value: '#44aacc'
+          count: 67
+        - value: '#ff9966'
+          count: 17
+        - value: '#ccddee'
+          count: 6
     mostSatulightedColors:
-        - '#33aacc'
-        - '#ee6699'
-        - '#ff7755'
-        - '#8888dd'
-        - '#773377'
-        - '#eedd88'
-        - '#775599'
+        - value: '#33aacc'
+          count: 29
+        - value: '#ee6699'
+          count: 1
+        - value: '#ff7755'
+          count: 2
+        - value: '#8888dd'
+          count: 1
+        - value: '#773377'
+          count: 3
+        - value: '#eedd88'
+          count: 2
+        - value: '#775599'
+          count: 1
     mostGroupedColors:
-        - '#000022'
+        - value: '#000022'
+          count: 883
 bottomThird:
     averageColor: '#2f2037'
     lightestColor: '#ffffff'
     darkestColor: '#000011'
     mostFrequentColors:
-        - '#000022'
-        - '#dd5555'
-        - '#446688'
-        - '#ffccaa'
+        - value: '#000022'
+          count: 4551
+        - value: '#dd5555'
+          count: 119
+        - value: '#446688'
+          count: 47
+        - value: '#ffccaa'
+          count: 14
     mostSatulightedColors:
-        - '#004477'
-        - '#dd5577'
-        - '#ffbb55'
-        - '#662266'
-        - '#776699'
+        - value: '#004477'
+          count: 1
+        - value: '#dd5577'
+          count: 4
+        - value: '#ffbb55'
+          count: 1
+        - value: '#662266'
+          count: 1
+        - value: '#776699'
+          count: 1
     mostGroupedColors:
-        - '#000022'
+        - value: '#000022'
+          count: 1176
 bottomLine:
     averageColor: '#01041f'
     lightestColor: '#556677'
     darkestColor: '#000011'
     mostFrequentColors:
-        - '#000022'
-        - '#556677'
+        - value: '#000022'
+          count: 12528
+        - value: '#556677'
+          count: 108
     mostSatulightedColors:
-        - '#556677'
-        - '#000022'
-        - '#110011'
+        - value: '#556677'
+          count: 108
+        - value: '#000022'
+          count: 12528
+        - value: '#110011'
+          count: 216
     mostGroupedColors:
-        - '#000022'
+        - value: '#000022'
+          count: 3456

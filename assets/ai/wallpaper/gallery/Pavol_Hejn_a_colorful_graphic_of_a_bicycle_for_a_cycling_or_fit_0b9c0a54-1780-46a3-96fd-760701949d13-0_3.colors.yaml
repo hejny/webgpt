@@ -1,66 +1,116 @@
-version: colorful-1920x1080-256bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#175273'
-    - '#ffffff'
-    - '#6fbaaf'
-averageColor: '#8ca99e'
-lightestColor: '#fff1f0'
-darkestColor: '#5a6a07'
+    - note: Most frequent color
+      value: '#88bbaa'
+      count: 11779
+    - note: Most distant color from primary color
+      value: '#000000'
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#225577'
+      count: 3
+    - note: Most frequent color which is distant enough (10%) and hue-distant enough
+          (30°) from all other palette colors
+      value: '#ffffcc'
+      count: 81
+averageColor: '#8ead9d'
+lightestColor: '#ffeeee'
+darkestColor: '#557711'
 mostFrequentColors:
-    - '#85b6ab'
-    - '#2a435a'
-    - '#fe866a'
-    - '#fef4d0'
+    - value: '#88bbaa'
+      count: 14016
+    - value: '#224455'
+      count: 1433
+    - value: '#ff8866'
+      count: 945
+    - value: '#ffffcc'
+      count: 53
 mostSatulightedColors:
-    - '#ff825d'
-    - '#175273'
-    - '#70c3ab'
-    - '#b59a4a'
-    - '#8aa53f'
-    - '#935567'
+    - value: '#ff8855'
+      count: 1
+    - value: '#77bbbb'
+      count: 1
+    - value: '#bb6677'
+      count: 1
+    - value: '#335577'
+      count: 1
+    - value: '#77bb99'
+      count: 7
+    - value: '#cccc88'
+      count: 1
+    - value: '#77aa66'
+      count: 1
 mostGroupedColors:
-    - '#85b6ab'
+    - value: '#88bbaa'
+      count: 11762
 bottomHalf:
-    averageColor: '#8ca79d'
-    lightestColor: '#fff1f0'
-    darkestColor: '#174046'
+    averageColor: '#8eaa9c'
+    lightestColor: '#ffeeee'
+    darkestColor: '#224444'
     mostFrequentColors:
-        - '#85b6ab'
-        - '#2a435a'
-        - '#fd856a'
-        - '#fef4d0'
+        - value: '#88bbaa'
+          count: 11779
+        - value: '#224455'
+          count: 2337
+        - value: '#ff8866'
+          count: 1275
+        - value: '#ffffcc'
+          count: 81
     mostSatulightedColors:
-        - '#ff825d'
-        - '#175273'
-        - '#6fbaaf'
-        - '#fff0be'
-        - '#935567'
-        - '#88bb99'
+        - value: '#ff8866'
+          count: 1275
+        - value: '#225577'
+          count: 3
+        - value: '#77bbaa'
+          count: 407
+        - value: '#ffeebb'
+          count: 9
+        - value: '#eeffcc'
+          count: 6
+        - value: '#996677'
+          count: 1
     mostGroupedColors:
-        - '#85b6ab'
+        - value: '#88bbaa'
+          count: 7880
 bottomThird:
-    averageColor: '#85a69e'
-    lightestColor: '#fff1f0'
-    darkestColor: '#174046'
+    averageColor: '#86a99d'
+    lightestColor: '#ffeeee'
+    darkestColor: '#223344'
     mostFrequentColors:
-        - '#85b6ab'
-        - '#2a435a'
-        - '#fd856a'
-        - '#fdf5d0'
+        - value: '#88bbaa'
+          count: 12782
+        - value: '#224455'
+          count: 2779
+        - value: '#ff8866'
+          count: 619
+        - value: '#ffffcc'
+          count: 79
     mostSatulightedColors:
-        - '#ff825d'
-        - '#184e6d'
-        - '#6fbaaf'
-        - '#fff4c2'
+        - value: '#ff8866'
+          count: 619
+        - value: '#225577'
+          count: 1
+        - value: '#77bbaa'
+          count: 355
+        - value: '#ffeebb'
+          count: 3
+        - value: '#eeffcc'
+          count: 2
+        - value: '#885566'
+          count: 1
     mostGroupedColors:
-        - '#85b6ab'
+        - value: '#88bbaa'
+          count: 9352
 bottomLine:
-    averageColor: '#86b7ad'
-    lightestColor: '#8ab9ae'
-    darkestColor: '#85b7ac'
+    averageColor: '#88bbaa'
+    lightestColor: '#88bbaa'
+    darkestColor: '#88bbaa'
     mostFrequentColors:
-        - '#86b7ad'
+        - value: '#88bbaa'
+          count: 20736
     mostSatulightedColors:
-        - '#84baad'
+        - value: '#88bbaa'
+          count: 20736
     mostGroupedColors:
-        - '#86b7ad'
+        - value: '#88bbaa'
+          count: 20736

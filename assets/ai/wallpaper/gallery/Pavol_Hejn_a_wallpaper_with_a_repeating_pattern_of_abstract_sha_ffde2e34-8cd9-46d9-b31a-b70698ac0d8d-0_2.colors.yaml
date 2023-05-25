@@ -1,73 +1,122 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#dd5555'
-    - '#ffffff'
-    - '#44aa99'
-    - '#113355'
+    - note: Most satulighted color which is dark enough to white text on it
+      value: '#dd5555'
+      count: 24
+    - note: Most distant color from primary color
+      value: '#ffffff'
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#44aa99'
+      count: 1
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#113355'
+      count: 362
 averageColor: '#83867b'
 lightestColor: '#ffeeee'
 darkestColor: '#003322'
 mostFrequentColors:
-    - '#114455'
-    - '#dd7744'
-    - '#ffccbb'
-    - '#55aa99'
+    - value: '#114455'
+      count: 1618
+    - value: '#dd7744'
+      count: 1004
+    - value: '#ffccbb'
+      count: 642
+    - value: '#55aa99'
+      count: 618
 mostSatulightedColors:
-    - '#44aa99'
-    - '#ffbb55'
-    - '#dd5555'
-    - '#446688'
-    - '#bbeecc'
-    - '#ccddaa'
+    - value: '#44aa99'
+      count: 1
+    - value: '#ffbb55'
+      count: 21
+    - value: '#dd5555'
+      count: 28
+    - value: '#446688'
+      count: 1
+    - value: '#bbeecc'
+      count: 3
+    - value: '#ccddaa'
+      count: 1
 mostGroupedColors:
-    - '#dd7744'
+    - value: '#dd7744'
+      count: 314
 bottomHalf:
     averageColor: '#7f8075'
     lightestColor: '#eeeeee'
     darkestColor: '#003322'
     mostFrequentColors:
-        - '#114455'
-        - '#dd7744'
-        - '#55aa99'
-        - '#ffddcc'
+        - value: '#114455'
+          count: 1532
+        - value: '#dd7744'
+          count: 1126
+        - value: '#55aa99'
+          count: 547
+        - value: '#ffddcc'
+          count: 492
     mostSatulightedColors:
-        - '#44aa99'
-        - '#ffbb55'
-        - '#dd5555'
-        - '#224466'
-        - '#bbcc88'
-        - '#bbeecc'
+        - value: '#44aa99'
+          count: 1
+        - value: '#ffbb55'
+          count: 26
+        - value: '#dd5555'
+          count: 24
+        - value: '#224466'
+          count: 12
+        - value: '#bbcc88'
+          count: 1
+        - value: '#bbeecc'
+          count: 4
     mostGroupedColors:
-        - '#dd7744'
+        - value: '#dd7744'
+          count: 447
 bottomThird:
     averageColor: '#7c847c'
     lightestColor: '#eeeeff'
     darkestColor: '#222222'
     mostFrequentColors:
-        - '#114455'
-        - '#55aa99'
-        - '#cc6655'
-        - '#ffccbb'
+        - value: '#114455'
+          count: 1450
+        - value: '#55aa99'
+          count: 830
+        - value: '#cc6655'
+          count: 826
+        - value: '#ffccbb'
+          count: 666
     mostSatulightedColors:
-        - '#44aa99'
-        - '#ffbb55'
-        - '#dd5555'
-        - '#113355'
-        - '#aaddbb'
+        - value: '#44aa99'
+          count: 1
+        - value: '#ffbb55'
+          count: 12
+        - value: '#dd5555'
+          count: 34
+        - value: '#113355'
+          count: 362
+        - value: '#aaddbb'
+          count: 263
     mostGroupedColors:
-        - '#ffddbb'
+        - value: '#ffddbb'
+          count: 478
 bottomLine:
     averageColor: '#7a9088'
     lightestColor: '#ffddcc'
     darkestColor: '#113333'
     mostFrequentColors:
-        - '#447777'
-        - '#ffddcc'
-        - '#dd7744'
+        - value: '#447777'
+          count: 2052
+        - value: '#ffddcc'
+          count: 1620
+        - value: '#dd7744'
+          count: 108
     mostSatulightedColors:
-        - '#44aa99'
-        - '#dd7744'
-        - '#113355'
-        - '#bbeecc'
+        - value: '#44aa99'
+          count: 216
+        - value: '#dd7744'
+          count: 108
+        - value: '#113355'
+          count: 108
+        - value: '#bbeecc'
+          count: 108
     mostGroupedColors:
-        - '#88bbaa'
+        - value: '#88bbaa'
+          count: 1404

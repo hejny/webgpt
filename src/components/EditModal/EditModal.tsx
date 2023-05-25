@@ -62,23 +62,25 @@ export function EditModal(props: EditModalProps) {
                 </div>
                 <div className={styles.xxxx}>
                     {wallpaper.colorStats.palette.map((color, i) => (
-                        <ColorInput
-                            key={i}
-                            defaultValue={color}
-                            onChange={(newColor) => {
-                                // TODO: [🧠] !! DRY [🎋]
-                                // TODO: [🧠] !! Reset when switching wallpapers
+                        <div key={i}>
+                            <ColorInput
+                                defaultValue={color.value}
+                                onChange={(newColor) => {
+                                    // TODO: [🧠] !! DRY [🎋]
+                                    // TODO: [🧠] !! Reset when switching wallpapers
 
-                                closePreventionSystem.registerClosePrevention({
-                                    canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
-                                });
-                                document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
-                                document.documentElement.style.setProperty(
-                                    `--palette-${i}-triplet`,
-                                    `${newColor.red}, ${newColor.green}, ${newColor.blue}`,
-                                );
-                            }}
-                        />
+                                    closePreventionSystem.registerClosePrevention({
+                                        canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
+                                    });
+                                    document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
+                                    document.documentElement.style.setProperty(
+                                        `--palette-${i}-triplet`,
+                                        `${newColor.red}, ${newColor.green}, ${newColor.blue}`,
+                                    );
+                                }}
+                            />
+                            <p>{color.note}</p>
+                        </div>
                     ))}
                 </div>
                 <div className={styles.xxxx}>

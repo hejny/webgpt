@@ -7,7 +7,7 @@ import { computeImageLightestColor } from './computeImageLightestColor';
 import { computeImageMostFrequentColors } from './computeImageMostFrequentColors';
 import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
 import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
-import { computeImagePalette12 } from './computeImagePalette';
+import { computeImagePalette13 } from './computeImagePalette';
 import { IComputeImageColorStats, IImageColorStatsAdvanced, IImageColorStatsRegion } from './IImageColorStats';
 import { scaleImage } from './scaleImage';
 
@@ -26,7 +26,7 @@ export function createColorfulComputeImageColorStats /* TODO: <TColorBits extend
         throw new Error(`Size must have positive integer values, got ${size.x}x${size.y}`);
     }
 
-    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v12palette` as string;
+    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v13palette` as string;
 
     const computeWholeImageColorStats = (image: IImage): IImageColorStatsRegion => {
         image = scaleImage(image, size);
@@ -56,7 +56,7 @@ export function createColorfulComputeImageColorStats /* TODO: <TColorBits extend
             ),
         } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>;
 
-        return { version, palette: computeImagePalette12(stats), ...stats };
+        return { version, palette: computeImagePalette13(stats), ...stats };
     };
 
     computeImageColorStats.version = version;

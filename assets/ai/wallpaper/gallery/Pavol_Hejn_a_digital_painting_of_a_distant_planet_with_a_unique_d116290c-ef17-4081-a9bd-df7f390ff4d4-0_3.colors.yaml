@@ -1,71 +1,110 @@
-version: colorful-1920x1080-256bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#4c7796'
-    - '#ffffff'
-    - '#100f14'
-averageColor: '#565d5a'
-lightestColor: '#fffaea'
-darkestColor: '#000000'
+    - note: Most satulighted color which is dark enough to white text on it
+      value: '#772233'
+      count: 1
+    - note: Lightest color which is contrast enough (50%) to primary color
+      value: '#ffffdd'
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#ff8855'
+      count: 7
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#6699aa'
+      count: 1
+averageColor: '#565d5b'
+lightestColor: '#ffeedd'
+darkestColor: '#110000'
 mostFrequentColors:
-    - '#233541'
-    - '#e3d7b9'
-    - '#739086'
-    - '#bf3420'
+    - value: '#222222'
+      count: 1179
+    - value: '#668888'
+      count: 471
+    - value: '#ddddbb'
+      count: 78
+    - value: '#dd6633'
+      count: 3
 mostSatulightedColors:
-    - '#ff9c5d'
-    - '#fff386'
-    - '#4c7796'
-    - '#aa4e59'
-    - '#4e807a'
-    - '#643356'
-    - '#381945'
+    - value: '#ff8855'
+      count: 3
+    - value: '#ffffaa'
+      count: 1
+    - value: '#558899'
+      count: 2
+    - value: '#772233'
+      count: 1
+    - value: '#669988'
+      count: 11
 mostGroupedColors:
-    - '#243642'
+    - value: '#223344'
+      count: 953
 bottomHalf:
-    averageColor: '#4d4746'
-    lightestColor: '#fffaea'
-    darkestColor: '#000000'
+    averageColor: '#4d4846'
+    lightestColor: '#cccccc'
+    darkestColor: '#110000'
     mostFrequentColors:
-        - '#100f14'
-        - '#597b81'
-        - '#c2c7b9'
-        - '#dd603f'
+        - value: '#111111'
+          count: 2334
+        - value: '#bb9988'
+          count: 426
+        - value: '#aa3322'
+          count: 6
+        - value: '#ffffbb'
+          count: 2
     mostSatulightedColors:
-        - '#ff9c5d'
-        - '#fff386'
-        - '#4c7796'
-        - '#aa4e59'
-        - '#643356'
-        - '#381945'
+        - value: '#ff8855'
+          count: 7
+        - value: '#ffeeaa'
+          count: 1
+        - value: '#6699aa'
+          count: 1
+        - value: '#772233'
+          count: 1
     mostGroupedColors:
-        - '#2d414f'
+        - value: '#111111'
+          count: 656
 bottomThird:
-    averageColor: '#443533'
-    lightestColor: '#fffaea'
-    darkestColor: '#000000'
+    averageColor: '#443532'
+    lightestColor: '#ffffdd'
+    darkestColor: '#110000'
     mostFrequentColors:
-        - '#100f14'
-        - '#bf9a83'
-        - '#a53c22'
-        - '#ffffc4'
+        - value: '#111111'
+          count: 3518
+        - value: '#bb9988'
+          count: 546
+        - value: '#aa3322'
+          count: 6
+        - value: '#ffffbb'
+          count: 2
     mostSatulightedColors:
-        - '#ff9c5d'
-        - '#fff89a'
-        - '#345976'
-        - '#aa4e59'
-        - '#381945'
-        - '#6a3c5b'
+        - value: '#ff8855'
+          count: 6
+        - value: '#ffee88'
+          count: 1
+        - value: '#cc7788'
+          count: 1
+        - value: '#446677'
+          count: 5
     mostGroupedColors:
-        - '#111015'
+        - value: '#111111'
+          count: 723
 bottomLine:
-    averageColor: '#161419'
-    lightestColor: '#2b2a31'
-    darkestColor: '#0f090e'
+    averageColor: '#161517'
+    lightestColor: '#222233'
+    darkestColor: '#111111'
     mostFrequentColors:
-        - '#0f1015'
+        - value: '#111111'
+          count: 11556
     mostSatulightedColors:
-        - '#131929'
-        - '#2f1f1d'
-        - '#22161c'
+        - value: '#112233'
+          count: 108
+        - value: '#221122'
+          count: 648
+        - value: '#222233'
+          count: 108
+        - value: '#112222'
+          count: 756
     mostGroupedColors:
-        - '#0f1015'
+        - value: '#111111'
+          count: 2592

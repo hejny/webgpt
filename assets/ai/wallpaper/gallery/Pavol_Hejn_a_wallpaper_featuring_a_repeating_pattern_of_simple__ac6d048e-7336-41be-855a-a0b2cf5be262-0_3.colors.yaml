@@ -1,50 +1,72 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#553322'
-    - '#ffffff'
+    - note: Most frequent color which is dark enough to white text on it
+      value: '#553322'
+      count: 915
+    - note: Lightest color which is contrast enough (50%) to primary color
+      value: '#ffffff'
 averageColor: '#ada499'
 lightestColor: '#ffffff'
 darkestColor: '#110000'
 mostFrequentColors:
-    - '#ddddcc'
-    - '#553322'
-    - '#888888'
+    - value: '#ddddcc'
+      count: 5972
+    - value: '#553322'
+      count: 457
+    - value: '#888888'
+      count: 176
 mostSatulightedColors:
-    - '#eebb88'
+    - value: '#eebb88'
+      count: 1
 mostGroupedColors:
-    - '#ddddcc'
+    - value: '#ddddcc'
+      count: 5127
 bottomHalf:
     averageColor: '#8e8176'
     lightestColor: '#ffffff'
     darkestColor: '#111100'
     mostFrequentColors:
-        - '#ddddcc'
-        - '#553322'
-        - '#888888'
+        - value: '#ddddcc'
+          count: 1798
+        - value: '#553322'
+          count: 915
+        - value: '#888888'
+          count: 211
     mostSatulightedColors:
-        - '#eebb88'
+        - value: '#eebb88'
+          count: 1
     mostGroupedColors:
-        - '#ddddcc'
+        - value: '#ddddcc'
+          count: 859
 bottomThird:
     averageColor: '#776659'
     lightestColor: '#ffffff'
     darkestColor: '#111100'
     mostFrequentColors:
-        - '#553322'
-        - '#aa8877'
-        - '#eeeeee'
+        - value: '#553322'
+          count: 1356
+        - value: '#aa8877'
+          count: 522
+        - value: '#eeeeee'
+          count: 219
     mostSatulightedColors:
-        - '#eebb88'
+        - value: '#eebb88'
+          count: 1
     mostGroupedColors:
-        - '#664433'
+        - value: '#664433'
+          count: 481
 bottomLine:
     averageColor: '#80634b'
     lightestColor: '#ccbbaa'
     darkestColor: '#553322'
     mostFrequentColors:
-        - '#664433'
-        - '#bbaa99'
+        - value: '#664433'
+          count: 4860
+        - value: '#bbaa99'
+          count: 540
     mostSatulightedColors:
-        - '#aa8866'
+        - value: '#aa8866'
+          count: 756
     mostGroupedColors:
-        - '#664433'
+        - value: '#664433'
+          count: 2484

@@ -1,47 +1,66 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#007799'
-    - '#ffffff'
+    - note: Most satulighted color which is dark enough to white text on it
+      value: '#007799'
+      count: 2
+    - note: Most distant color from primary color
+      value: '#ffffff'
 averageColor: '#102c3b'
 lightestColor: '#77aabb'
 darkestColor: '#001111'
 mostFrequentColors:
-    - '#001122'
-    - '#448899'
+    - value: '#001122'
+      count: 5338
+    - value: '#448899'
+      count: 321
 mostSatulightedColors:
-    - '#007799'
+    - value: '#007799'
+      count: 1
 mostGroupedColors:
-    - '#112233'
+    - value: '#112233'
+      count: 1820
 bottomHalf:
     averageColor: '#0c2b39'
     lightestColor: '#77aabb'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#001122'
-        - '#558899'
+        - value: '#001122'
+          count: 7407
+        - value: '#558899'
+          count: 299
     mostSatulightedColors:
-        - '#007799'
+        - value: '#007799'
+          count: 2
     mostGroupedColors:
-        - '#001122'
+        - value: '#001122'
+          count: 2786
 bottomThird:
     averageColor: '#051a25'
     lightestColor: '#5588aa'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#001122'
-        - '#558899'
+        - value: '#001122'
+          count: 8010
+        - value: '#558899'
+          count: 46
     mostSatulightedColors:
-        - '#006688'
+        - value: '#006688'
+          count: 1
     mostGroupedColors:
-        - '#001122'
+        - value: '#001122'
+          count: 3841
 bottomLine:
     averageColor: '#03141a'
     lightestColor: '#002244'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#001111'
+        - value: '#001111'
+          count: 8640
     mostSatulightedColors:
-        - '#002244'
-        - '#002222'
+        - value: '#002244'
+          count: 108
+        - value: '#002222'
+          count: 2160
     mostGroupedColors:
-        - '#001111'
+        - value: '#001111'
+          count: 2808

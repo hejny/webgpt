@@ -1,76 +1,125 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#001122'
-    - '#ffffff'
-    - '#33bb99'
-    - '#ffaa55'
+    - note: Most frequent color
+      value: '#001122'
+      count: 8373
+    - note: Most satulighted color which is contrast enough (50%) to primary color
+      value: '#aaeebb'
+      count: 3
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#ff5566'
+      count: 1
 averageColor: '#645249'
 lightestColor: '#bbeecc'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#001122'
-    - '#ff7733'
-    - '#44aa99'
-    - '#ffdd99'
+    - value: '#001122'
+      count: 7498
+    - value: '#ff7733'
+      count: 1173
+    - value: '#44aa99'
+      count: 417
+    - value: '#ffdd99'
+      count: 43
 mostSatulightedColors:
-    - '#33aa99'
-    - '#ff5566'
-    - '#ff9955'
-    - '#225577'
-    - '#772255'
-    - '#eeee99'
-    - '#99eeaa'
-    - '#442255'
+    - value: '#33aa99'
+      count: 9
+    - value: '#ff5566'
+      count: 1
+    - value: '#ff9955'
+      count: 45
+    - value: '#225577'
+      count: 1
+    - value: '#772255'
+      count: 9
+    - value: '#eeee99'
+      count: 1
+    - value: '#99eeaa'
+      count: 2
+    - value: '#442255'
+      count: 3
 mostGroupedColors:
-    - '#001122'
+    - value: '#001122'
+      count: 2048
 bottomHalf:
     averageColor: '#5c4a45'
     lightestColor: '#ddccbb'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#001122'
-        - '#ff7733'
-        - '#44aa99'
-        - '#eedd99'
+        - value: '#001122'
+          count: 8373
+        - value: '#ff7733'
+          count: 1201
+        - value: '#44aa99'
+          count: 468
+        - value: '#eedd99'
+          count: 5
     mostSatulightedColors:
-        - '#33bb99'
-        - '#ff5566'
-        - '#ff9955'
-        - '#225577'
-        - '#772255'
-        - '#aaeebb'
-        - '#442255'
-        - '#bbbb77'
+        - value: '#33bb99'
+          count: 1
+        - value: '#ff5566'
+          count: 1
+        - value: '#ff9955'
+          count: 19
+        - value: '#225577'
+          count: 2
+        - value: '#772255'
+          count: 1
+        - value: '#aaeebb'
+          count: 3
+        - value: '#442255'
+          count: 1
+        - value: '#bbbb77'
+          count: 1
     mostGroupedColors:
-        - '#001122'
+        - value: '#001122'
+          count: 3285
 bottomThird:
     averageColor: '#56423f'
     lightestColor: '#bbeebb'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#001122'
-        - '#ff5544'
-        - '#ffdd88'
-        - '#44aa99'
+        - value: '#001122'
+          count: 9688
+        - value: '#ff5544'
+          count: 1018
+        - value: '#ffdd88'
+          count: 545
+        - value: '#44aa99'
+          count: 478
     mostSatulightedColors:
-        - '#33bb99'
-        - '#ff5566'
-        - '#ffaa55'
-        - '#225577'
-        - '#aaeebb'
-        - '#ccdd99'
-        - '#331144'
+        - value: '#33bb99'
+          count: 1
+        - value: '#ff5566'
+          count: 3
+        - value: '#ffaa55'
+          count: 839
+        - value: '#225577'
+          count: 1
+        - value: '#aaeebb'
+          count: 3
+        - value: '#ccdd99'
+          count: 5
+        - value: '#331144'
+          count: 1
     mostGroupedColors:
-        - '#001122'
+        - value: '#001122'
+          count: 4630
 bottomLine:
     averageColor: '#011123'
     lightestColor: '#994466'
     darkestColor: '#001122'
     mostFrequentColors:
-        - '#001122'
-        - '#994466'
+        - value: '#001122'
+          count: 20412
+        - value: '#994466'
+          count: 108
     mostSatulightedColors:
-        - '#994466'
-        - '#331133'
+        - value: '#994466'
+          count: 108
+        - value: '#331133'
+          count: 108
     mostGroupedColors:
-        - '#001122'
+        - value: '#001122'
+          count: 11988

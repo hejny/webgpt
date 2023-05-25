@@ -1,73 +1,115 @@
-version: colorful-1920x1080-256bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#8e4e84'
-    - '#ffffff'
-    - '#082d3e'
-averageColor: '#845352'
-lightestColor: '#f3e6ff'
-darkestColor: '#000300'
+    - note: Most frequent color
+      value: '#000011'
+      count: 2420
+    - note: Most frequent color which is contrast enough (50%) to primary color
+      value: '#eebbaa'
+      count: 67
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#883355'
+      count: 1
+averageColor: '#845353'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
 mostFrequentColors:
-    - '#00020a'
-    - '#a4000b'
-    - '#4d5064'
-    - '#f2955d'
-    - '#f8e6dc'
+    - value: '#000011'
+      count: 1390
+    - value: '#555566'
+      count: 249
+    - value: '#ee8855'
+      count: 195
+    - value: '#ffddcc'
+      count: 62
+    - value: '#aa0011'
+      count: 61
 mostSatulightedColors:
-    - '#ed7ea3'
-    - '#ffa65d'
-    - '#944f8d'
-    - '#623d7d'
-    - '#5b638f'
-    - '#042a3e'
+    - value: '#ff7755'
+      count: 15
+    - value: '#bb6699'
+      count: 2
+    - value: '#003344'
+      count: 1
+    - value: '#ddcc99'
+      count: 2
+    - value: '#bb99cc'
+      count: 1
+    - value: '#7777aa'
+      count: 3
 mostGroupedColors:
-    - '#00020a'
+    - value: '#000011'
+      count: 812
 bottomHalf:
-    averageColor: '#694045'
-    lightestColor: '#fadfe6'
+    averageColor: '#6a3f46'
+    lightestColor: '#ffdddd'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#00020a'
-        - '#a3000c'
-        - '#4f5165'
-        - '#f7bf9b'
+        - value: '#000011'
+          count: 2420
+        - value: '#555566'
+          count: 235
+        - value: '#aa0011'
+          count: 101
+        - value: '#eebbaa'
+          count: 67
     mostSatulightedColors:
-        - '#ed7ea3'
-        - '#ff7859'
-        - '#8e4e84'
-        - '#5b638f'
-        - '#082d3e'
-        - '#8f75a1'
+        - value: '#ff7755'
+          count: 2
+        - value: '#bb6699'
+          count: 1
+        - value: '#9977aa'
+          count: 1
+        - value: '#7777aa'
+          count: 5
+        - value: '#224455'
+          count: 11
     mostGroupedColors:
-        - '#00020a'
+        - value: '#000011'
+          count: 1635
 bottomThird:
-    averageColor: '#563a41'
-    lightestColor: '#f8e5e0'
-    darkestColor: '#000107'
+    averageColor: '#573a43'
+    lightestColor: '#ffeedd'
+    darkestColor: '#000000'
     mostFrequentColors:
-        - '#00020a'
-        - '#a8000b'
-        - '#5c6068'
-        - '#f6e6d5'
-        - '#e98659'
+        - value: '#000011'
+          count: 3367
+        - value: '#666677'
+          count: 281
+        - value: '#bb2211'
+          count: 84
+        - value: '#eebbaa'
+          count: 77
     mostSatulightedColors:
-        - '#fe9470'
-        - '#bc7587'
-        - '#5b638f'
-        - '#05293b'
-        - '#734769'
+        - value: '#ff9977'
+          count: 3
+        - value: '#883355'
+          count: 1
+        - value: '#9988bb'
+          count: 3
+        - value: '#7788aa'
+          count: 1
     mostGroupedColors:
-        - '#00020a'
+        - value: '#000011'
+          count: 2331
 bottomLine:
-    averageColor: '#1d1f2d'
-    lightestColor: '#9f8d98'
-    darkestColor: '#000108'
+    averageColor: '#1d1f2e'
+    lightestColor: '#997788'
+    darkestColor: '#000000'
     mostFrequentColors:
-        - '#000109'
-        - '#856077'
+        - value: '#000011'
+          count: 4644
+        - value: '#775566'
+          count: 756
     mostSatulightedColors:
-        - '#0a2a3f'
-        - '#81536a'
-        - '#775f7a'
-        - '#5f5972'
+        - value: '#885577'
+          count: 108
+        - value: '#112244'
+          count: 216
+        - value: '#776688'
+          count: 216
+        - value: '#113333'
+          count: 216
     mostGroupedColors:
-        - '#000109'
+        - value: '#000011'
+          count: 2484

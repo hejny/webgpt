@@ -1,47 +1,66 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#444433'
-    - '#ffffff'
+    - note: Most frequent color which is dark enough to white text on it
+      value: '#444433'
+      count: 422
+    - note: Most distant color from primary color
+      value: '#ffffff'
 averageColor: '#a1895f'
 lightestColor: '#ffeecc'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#ddbb88'
-    - '#333333'
+    - value: '#ddbb88'
+      count: 1972
+    - value: '#333333'
+      count: 452
 mostSatulightedColors:
-    - '#ffcc77'
+    - value: '#ffcc77'
+      count: 1
 mostGroupedColors:
-    - '#ddbb88'
+    - value: '#ddbb88'
+      count: 96
 bottomHalf:
     averageColor: '#a78e62'
     lightestColor: '#ffffbb'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ddbb88'
-        - '#444433'
+        - value: '#ddbb88'
+          count: 2332
+        - value: '#444433'
+          count: 422
     mostSatulightedColors:
-        - '#ffcc77'
+        - value: '#ffcc77'
+          count: 1
     mostGroupedColors:
-        - '#ddbb88'
+        - value: '#ddbb88'
+          count: 207
 bottomThird:
     averageColor: '#a48c61'
     lightestColor: '#ffddbb'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ddbb88'
-        - '#444433'
+        - value: '#ddbb88'
+          count: 2707
+        - value: '#444433'
+          count: 535
     mostSatulightedColors:
-        - '#ffcc77'
+        - value: '#ffcc77'
+          count: 3
     mostGroupedColors:
-        - '#ddbb88'
+        - value: '#ddbb88'
+          count: 174
 bottomLine:
     averageColor: '#bea06d'
     lightestColor: '#ddcc99'
     darkestColor: '#332211'
     mostFrequentColors:
-        - '#ccaa77'
-        - '#775522'
+        - value: '#ccaa77'
+          count: 3564
+        - value: '#775522'
+          count: 216
     mostSatulightedColors:
-        - '#ddbb66'
+        - value: '#ddbb66'
+          count: 108
     mostGroupedColors:
-        - '#ddbb88'
+        - value: '#ddbb88'
+          count: 648

@@ -1,65 +1,103 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#222222'
-    - '#ffffff'
-    - '#55bbbb'
-    - '#ffbb66'
+    - note: Most frequent color
+      value: '#222222'
+      count: 1136
+    - note: Most satulighted color which is contrast enough (50%) to primary color
+      value: '#eeeeaa'
+      count: 1
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#55bbbb'
+      count: 1
 averageColor: '#414849'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#222222'
-    - '#77aa99'
-    - '#ee6633'
-    - '#eeeeee'
+    - value: '#222222'
+      count: 1076
+    - value: '#77aa99'
+      count: 117
+    - value: '#ee6633'
+      count: 74
+    - value: '#eeeeee'
+      count: 9
 mostSatulightedColors:
-    - '#22aaaa'
-    - '#ffbb66'
-    - '#224466'
+    - value: '#22aaaa'
+      count: 1
+    - value: '#ffbb66'
+      count: 2
+    - value: '#224466'
+      count: 1
 mostGroupedColors:
-    - '#445555'
+    - value: '#445555'
+      count: 390
 bottomHalf:
     averageColor: '#50504d'
     lightestColor: '#ffffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#222222'
-        - '#77aa99'
-        - '#ee6633'
-        - '#eeeeee'
+        - value: '#222222'
+          count: 1136
+        - value: '#77aa99'
+          count: 216
+        - value: '#ee6633'
+          count: 152
+        - value: '#eeeeee'
+          count: 17
     mostSatulightedColors:
-        - '#55bbbb'
-        - '#ffaa66'
-        - '#aaeecc'
-        - '#eeeeaa'
-        - '#445577'
+        - value: '#55bbbb'
+          count: 1
+        - value: '#ffaa66'
+          count: 1
+        - value: '#aaeecc'
+          count: 1
+        - value: '#eeeeaa'
+          count: 1
+        - value: '#445577'
+          count: 1
     mostGroupedColors:
-        - '#445566'
+        - value: '#445566'
+          count: 156
 bottomThird:
     averageColor: '#4d4a47'
     lightestColor: '#eeffff'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#222222'
-        - '#ee6633'
-        - '#77aa99'
-        - '#eeeecc'
+        - value: '#222222'
+          count: 1319
+        - value: '#ee6633'
+          count: 217
+        - value: '#77aa99'
+          count: 158
+        - value: '#eeeecc'
+          count: 13
     mostSatulightedColors:
-        - '#228888'
-        - '#ffbb66'
-        - '#224466'
-        - '#99ddbb'
-        - '#994444'
+        - value: '#228888'
+          count: 1
+        - value: '#ffbb66'
+          count: 4
+        - value: '#224466'
+          count: 1
+        - value: '#99ddbb'
+          count: 4
+        - value: '#994444'
+          count: 1
     mostGroupedColors:
-        - '#334455'
+        - value: '#334455'
+          count: 251
 bottomLine:
     averageColor: '#2b292e'
     lightestColor: '#445566'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#222222'
+        - value: '#222222'
+          count: 2484
     mostSatulightedColors:
-        - '#224455'
-        - '#552222'
+        - value: '#224455'
+          count: 756
+        - value: '#552222'
+          count: 1080
     mostGroupedColors:
-        - '#224455'
+        - value: '#224455'
+          count: 648

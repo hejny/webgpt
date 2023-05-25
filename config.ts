@@ -53,10 +53,13 @@ export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
  * @@@
  */
 export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
+    /*
+    Full:
     createColorfulComputeImageColorStats({
         colorBits: 256,
         size: IMAGE_NATURAL_SIZE,
     }),
+    */
     createColorfulComputeImageColorStats({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
@@ -88,3 +91,10 @@ export const DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES = 30;
  * As ratio of distance between white and black
  */
 export const DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of distance between white and black */
+
+
+/**
+ * How much the color should be different to be considered OK as text color on background
+ * As ratio of distance between white and black
+ */
+export const TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO = 0.5; /* <- As a ratio of distance between white and black */
