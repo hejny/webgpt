@@ -7,8 +7,11 @@ import { Item } from '../../components/Items/Item';
 import { Items } from '../../components/Items/Items';
 import { Section } from '../../components/Section/Section';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
+import { useInitial } from '../../utils/hooks/useInitial';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
-import { filterWallpapers, GalleryFilter, GalleryFilterInput } from './GalleryFilter/GalleryFilter';
+import { filterWallpapers } from './GalleryFilter/filterWallpapers';
+import { GalleryFilter } from './GalleryFilter/GalleryFilter';
+import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
 
 interface SampleProps {}
 
@@ -18,7 +21,13 @@ export function GallerySection(props: SampleProps) {
     const { t } = useTranslation();
     const wallpapers = useContext(WallpapersContext);
 
-    const [filter, setFilter] = useState<GalleryFilter>({ limit: 100, isRandom: true });
+    const [filter, setFilter] = useState<GalleryFilter>({ limit: 1, isRandom: false });
+
+    const isInitial = useInitial(() => {
+        // Note: !!!
+        // debugger;
+        setFilter({ ...filter, limit: 2, isRandom: true });
+    });
 
     const filteredWallpapers = filterWallpapers(
         Object.values(wallpapers).map((wallpaperSubject) => wallpaperSubject.value),
@@ -32,7 +41,14 @@ export function GallerySection(props: SampleProps) {
             <h1>AI Web Maker</h1>
             <p>Web pages listed here are pre-generated using AI:</p>
 
-            <GalleryFilterInput defaultFilter={filter} onFilterChange={setFilter} />
+            {!isInitial && (
+                <GalleryFilterInput
+                    defaultFilter={filter}
+                    onFilterChange={(newPartialFilter) => setFilter({ ...filter, ...newPartialFilter })}
+                />
+            )}
+
+            <pre>{JSON.stringify(filter, null, 4)}</pre>
 
             <br />
             <Items itemsOnRow={3}>
@@ -121,3 +137,7 @@ export function GallerySection(props: SampleProps) {
         </Section>
     );
 }
+
+/**
+ * TODO: Serialize filters to URL via router not here as state
+ */
