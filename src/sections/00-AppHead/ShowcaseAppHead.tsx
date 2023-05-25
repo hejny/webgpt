@@ -21,9 +21,6 @@ export function ShowcaseAppHead() {
 
     const homeUrl = `https://ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
-    // TODO: !!! Sharing to FB is not wotking
-    // TODO: !!! Test sharing to Twitter
-    // TODO: !!! Test sharing to LinkedIn
     return (
         <>
             <Head>

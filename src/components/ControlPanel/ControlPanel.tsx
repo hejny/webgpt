@@ -40,7 +40,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 title="Whole gallery"
                 prefetch={false /* <- Note: Because gallery is enormous */}
             >
-                <Article content="🖼" isUsingOpenmoji /* <- TODO: !!! Better icon OR Openmoji */ />
+                <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
             </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
@@ -83,7 +83,7 @@ export function ControlPanel(props: ControlPanelProps) {
             >
                 <Article
                     content="▶"
-                    isUsingOpenmoji /* <- TODO: !!! Show the QR code before + Save to GET params to be able to send */
+                    isUsingOpenmoji /* <- TODO: !! Show the QR code before + Save to GET params to be able to send */
                 />
             </Link>
         </div>
@@ -92,13 +92,12 @@ export function ControlPanel(props: ControlPanelProps) {
 
 /**
  * TODO: Edit on GitHub button | Each wallpaper in each subfolder+ gallery/a/b/id/....ext
- * TODO: !!! No outline - simpler design
- * TODO: !!! On mobile
- * TODO: !!! [Previous][Next]
- * TODO: !!! [Simmilar]
+ * TODO: !! On mobile
+ * TODO: !! [Previous][Next]
+ * TODO: !! [Simmilar]
  * TODO: !! [👕] [Change photo]
  * TODO: !! [👕] [Change content] to change the markdown
- * TODO: !!! Allow to => export (+Collboard export) => Buy
+ * TODO: !! Allow to => export (+Collboard export) => Buy
  * TODO: !! Rename component to something more meaningful
  * TODO: !! Use translate
  * TODO: !! [🧶] Show here prompt, link to midjourney, how it was made,...

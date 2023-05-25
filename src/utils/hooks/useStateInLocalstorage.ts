@@ -3,7 +3,7 @@ import spaceTrim from 'spacetrim';
 
 export function useStateInLocalstorage<T extends string>(key: string, initialState: T): [T, (likedStatus: T) => void] {
     if (
-        // TODO: !!!! Maybe we don’t need whole this with wrapping the ControlPanelLikeButtons with <NoSsr>...</NoSsr> and probbably also join ControlPanelLikeButtons and  ControlPanel
+        // TODO: Maybe we don’t need whole this with wrapping the ControlPanelLikeButtons with <NoSsr>...</NoSsr>
 
         typeof window === 'undefined'
         /* < Note: We are NOT using here useSsrDetection because

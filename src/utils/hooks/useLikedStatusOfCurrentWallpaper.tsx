@@ -7,7 +7,3 @@ export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: 
     const wallpaperId = useCurrentWallpaperId();
     return useStateInLocalstorage<LikedStatus>(`likedStatus_${wallpaperId}`, 'NONE');
 }
-
-/**
- * !!!!!! Do not Switch when switching wallpapers
- */

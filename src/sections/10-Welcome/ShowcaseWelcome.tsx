@@ -45,7 +45,7 @@ export function ShowcaseWelcomeSection() {
 }
 
 /**
- * TODO: [🧬] !!! Fake generating - write tokenized text
+ * TODO: [🧬] !! Fake generating - write tokenized text
  * TODO: !! [👕] Allow to edit the header position + other things
  * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome
  */

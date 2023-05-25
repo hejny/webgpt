@@ -23,7 +23,7 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
         // TODO: !!! If nothing found, increase treashold
         const treasholdSquared =
             colorDistanceSquared(Color.get('black'), Color.get('white')) *
-            DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO; /* <- TODO: !!! Is here corect work with squaring */
+            DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO; /* <- TODO: !! Is here corect work with squaring */
         wallpapers = wallpapers.filter(
             (wallpaper) =>
                 colorDistanceSquared(

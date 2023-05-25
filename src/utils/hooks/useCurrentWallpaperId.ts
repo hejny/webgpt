@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
  * A function that returns current wallpaper id based on the router query
  */
 export function useCurrentWallpaperId(): string {
-    const router = useRouter(/* <- TODO: !!! Go througl all usages for same error */);
+    const router = useRouter();
 
     if (router.pathname === '/showcase/[slug]') {
         const wallpaperId = router.query.slug as string;

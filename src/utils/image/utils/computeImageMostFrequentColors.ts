@@ -48,5 +48,5 @@ export function computeImageMostFrequentColors(
 }
 
 /**
- * TODO: !!! Is here correct manipulation with square of distance?
+ * TODO: !! Is here correct manipulation with square of distance?
  */

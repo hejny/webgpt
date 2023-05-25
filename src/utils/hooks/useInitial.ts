@@ -15,7 +15,3 @@ export function useInitial(callback: () => void): boolean {
 
     return isInitial;
 }
-
-/**
- * TODO: !!! DO not use this hook JUST provisonally
- */

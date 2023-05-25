@@ -181,7 +181,7 @@ export function computeImagePalette13(
 /**
  * TODO: Match also the last with the first color and if not matching then add last color to the palette at the end as a "separator"
  * TODO: [🧠] Should be white/black text color hardcoded as second color in palette? (NOW IT IS as secondaryColor)
- * TODO: !!! Is here correct manipulation with square of distance?
+ * TODO: !! Is here correct manipulation with square of distance?
  * TODO: [3] Check that there is some miminal number of colors in palette
  *
  *

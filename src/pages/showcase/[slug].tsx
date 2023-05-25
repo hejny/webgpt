@@ -78,10 +78,9 @@ export async function getStaticProps({
 
 /**
  * TODO: !!! Font must be applied to whole page NOT only the article 
- * TODO: !! Special effect for each wallpaper
- * TODO: !!! When sharing link to showcase, preview to socials should work
- * TODO: !!! Preview as on [Mobile][Tablet][Desktop]
- * TODO: !!! Preview as on [Mobile][Tablet] - show the direct QR code
+ * TODO: Special effect for each wallpaper
+ * TODO: !! Preview as on [Mobile][Tablet][Desktop]
+ * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code
  * TODO: !!! [🧶] Add overlay which explains how it works and lead to FAQ permalink
  * TODO: !! Better IDs for wallpapers - make it without GET parameters
  * TODO: !! Make foreground-background paralax effect for each wallpaper

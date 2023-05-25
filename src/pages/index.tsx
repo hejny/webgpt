@@ -35,7 +35,7 @@ export default function GalleryPage({ wallpapers }: PageProps) {
                     <TiledBackground />
                 </div>
                 <main>
-                    {/* !!! <HomepageWelcomeSection variant="SIDEPAGE" />*/}
+                    {/* <HomepageWelcomeSection variant="SIDEPAGE" />*/}
                     <GallerySection />
                 </main>
                 <footer>
@@ -56,11 +56,10 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
- * TODO: !!! [🧶] FAQ section - how it works
- * TODO: !!! Design for gallery - split showcase and gallery
- * TODO: !!! [1] Filters - [Fulltext][Light/Dark/Color]
- * TODO: !!! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]
- * TODO: !!! [1] Limit
+ * TODO: !! [🧶] FAQ section - how it works
+ * TODO: !! [1] Filters - [Fulltext][Light/Dark/Color]
+ * TODO: !! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]
+ * TODO: !! [1] Limit
  * TODO: !! [1] Pagination
  * TODO: !! Preview page on hover on each item
  * TODO: [🪒] Can be getStaticProps shared between all pages?

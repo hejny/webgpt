@@ -35,7 +35,7 @@ export function HeaderWallpaper() {
 }
 
 /**
- * TODO: [🧬] !!! Fake generating - Unblur image in steps
+ * TODO: [🧬] !! Fake generating - Unblur image in steps
  * TODO: [🧬] In future better diffusion simulator
  * TODO: [🧬] ? Maybe whole page from grayscale to full color
  */

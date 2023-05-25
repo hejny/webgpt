@@ -54,11 +54,9 @@ export function GallerySection(props: SampleProps) {
 
             <br />
             <Items itemsOnRow={3}>
-                {filteredWallpapers
-                    // Random sort
-                    //.sort(() => Math.random() - 0.5)
-                    // .slice(0, 50) /* <- TODO: !!! Some inteligent pagination */
-                    .map((wallpaper, i) => (
+                {
+                    // TODO: !! Some pagination
+                    filteredWallpapers.map((wallpaper, i) => (
                         // TODO: <MidjourneyImage/>
                         // TODO: Show diffusion as animation
                         <Link
@@ -134,7 +132,8 @@ export function GallerySection(props: SampleProps) {
                                 </Item.Description>
                             </Item>
                         </Link>
-                    ))}
+                    ))
+                }
             </Items>
         </Section>
     );

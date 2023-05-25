@@ -167,5 +167,4 @@ const converter = new Converter({
 /**
  * TODO:[0] Use has if isHashUsed is true
  * TODO: Maybe rename to <Content/> or <MarkdownContent/> or <Markdown/>
- * !!!! Must work with SSR - maybe fallback to keep
  */
