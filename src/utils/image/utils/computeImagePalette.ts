@@ -47,6 +47,8 @@ export function computeImagePalette13(
         colorStats.bottomLine /* TODO: Combinations */,
     ]) {
         // TODO: !! Here also get in account the color count
+        // TODO: !! In note put the order of color like:
+        //       3. Most frequent color 
 
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
             paletteCandidates.push({ ...mostSatulightedColor, note: `Most satulighted color` });
