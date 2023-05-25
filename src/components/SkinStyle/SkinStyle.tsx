@@ -18,11 +18,12 @@ export function SkinStyle() {
                         if (i < palette.length) {
                             return [
                                 // TODO: !! DRY [🎋]
-                                `--palette-${i}: ${color.toHex()};`,
+                                `/* Note: --palette-${i} is ${color.note} */`,
+                                `--palette-${i}: ${color.value.toHex()};`,
                                 // `--palette-${i}-red: ${color.red};`,
                                 // `--palette-${i}-green: ${color.green};`,
                                 // `--palette-${i}-blue: ${color.blue};`,
-                                `--palette-${i}-triplet: ${color.red}, ${color.green}, ${color.blue};`,
+                                `--palette-${i}-triplet: ${color.value.red}, ${color.value.green}, ${color.value.blue};`,
                             ];
                         } else {
                             const j = i % palette.length;
