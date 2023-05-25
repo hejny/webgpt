@@ -16,7 +16,8 @@
     left: 50px;
     bottom: 50px;
     right: 50px;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
