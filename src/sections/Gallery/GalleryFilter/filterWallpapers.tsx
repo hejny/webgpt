@@ -35,14 +35,22 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
 
     if (likedStatus) {
         const localStorageWallpapersLikedStatuses = Object.fromEntries(
-            Object.entries(localStorage).filter(([key]) => key.startsWith('likedStatus_')),
+            Object.entries(localStorage)
+                .filter(([key]) => key.startsWith('likedStatus_'))
+                .filter(([key, value]) => value !== 'NONE'),
         );
 
         // debugger;
 
-        wallpapers = wallpapers.filter(
-            (wallpaper) => localStorageWallpapersLikedStatuses[`likedStatus_${wallpaper.id}`] === likedStatus,
-        );
+        if (likedStatus !== 'NONE') {
+            wallpapers = wallpapers.filter(
+                (wallpaper) => localStorageWallpapersLikedStatuses[`likedStatus_${wallpaper.id}`] === likedStatus,
+            );
+        } else {
+            wallpapers = wallpapers.filter(
+                (wallpaper) => !localStorageWallpapersLikedStatuses[`likedStatus_${wallpaper.id}`],
+            );
+        }
     }
 
     if (isRandom) {
