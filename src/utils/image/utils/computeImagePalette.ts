@@ -100,7 +100,7 @@ export function computeImagePalette13(
     if (!secondaryColor) {
         secondaryColor = {
             value: primaryColor.value.then(textColor),
-            note: `Just the text color of primary color`,
+            note: `Most distant color from primary color`,
         };
     }
 
