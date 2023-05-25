@@ -24,7 +24,7 @@ export function SelectWithFirst<TValue>(props: SelectWithFirstProps<TValue>) {
                 <button
                     key={(option.id === null ? 'null' : option.id === undefined ? 'undefined' : option.id).toString()}
                     onClick={() => void onChange(option.id)}
-                    className={classNames(value === option.id && styles.selected)}
+                    className={classNames(styles.option, value === option.id && styles.selected)}
                 >
                     {option.title}
                 </button>
