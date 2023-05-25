@@ -3,7 +3,6 @@ import { Vector } from 'xyzt';
 import { PageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { DebugGrid } from '../components/DebugGrid/DebugGrid';
-import { PricingTableNext } from '../components/PricingTable/PricingTableNext';
 import { PricingTableTailwind } from '../components/PricingTable/PricingTableTailwind';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
@@ -30,29 +29,8 @@ export default function PricingPage({ wallpapers }: PageProps) {
                     <TiledBackground />
                 </div>
                 <main>
-                
-                    <PricingTableNext
-                        plans={[
-                            {
-                                id: 1,
-                                name: 'Basic',
-                                price: 9.99,
-                                benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3'],
-                            },
-                            {
-                                id: 2,
-                                name: 'Pro',
-                                price: 19.99,
-                                benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4'],
-                            },
-                            {
-                                id: 3,
-                                name: 'Premium',
-                                price: 29.99,
-                                benefits: ['Benefit 1', 'Benefit 2', 'Benefit 3', 'Benefit 4', 'Benefit 5'],
-                            },
-                        ]}
-                    />
+                    <h1>Pricing table by Tailwind</h1>
+                    <PricingTableTailwind />
                 </main>
                 <footer>
                     <FooterSection />

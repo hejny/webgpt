@@ -1,17 +1,37 @@
-/* styles.module.css */
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
   }
   
-  .title {
-    font-size: 24px;
+  .plan {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  .plan-name {
+    font-size: 20px;
     font-weight: bold;
-    color: #333;
   }
   
-  .button {
+  .plan-price {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .benefits-list {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+  
+  .benefits-list li {
+    list-style: none;
+  }
+  
+  .buy-now-btn {
+    display: block;
+    margin-top: 20px;
     padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
@@ -20,7 +40,7 @@
     cursor: pointer;
   }
   
-  .button:hover {
+  .buy-now-btn:hover {
     background-color: #0056b3;
   }
   

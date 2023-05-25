@@ -1,4 +1,4 @@
-// import styles from './PricingTableNext.module.css';
+import styles from './PricingTableNext.module.css';
 
 interface PricingTableNextProps {
     plans: Plan[];
@@ -17,17 +17,17 @@ interface Plan {
 export function PricingTableNext(props: PricingTableNextProps) {
     const { plans } = props;
     return (
-        <div className="pricing-table">
+        <div className={styles['pricing-table']}>
             {plans.map((plan) => (
-                <div className="plan" key={plan.id}>
-                    <h2 className="plan-name">{plan.name}</h2>
-                    <div className="plan-price">${plan.price}/month</div>
-                    <ul className="benefits-list">
+                <div className={styles.plan} key={plan.id}>
+                    <h2 className={styles['plan-name']}>{plan.name}</h2>
+                    <div className={styles['plan-price']}>${plan.price}/month</div>
+                    <ul className={styles['benefits-list']}>
                         {plan.benefits.map((benefit, index) => (
                             <li key={index}>{benefit}</li>
                         ))}
                     </ul>
-                    <button className="buy-now-btn">Buy Now</button>
+                    <button className={styles['buy-now-btn']}>Buy Now</button>
                 </div>
             ))}
         </div>
