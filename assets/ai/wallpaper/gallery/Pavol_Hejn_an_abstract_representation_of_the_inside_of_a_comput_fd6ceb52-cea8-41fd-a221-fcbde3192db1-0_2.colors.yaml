@@ -1,53 +1,78 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#112222'
-    - '#ffffff'
+    - note: Most grouped color which is dark enough to white text on it
+      value: '#112222'
+      count: 498
+    - note: Lightest color which is contrast enough (50%) to primary color
+      value: '#ffeedd'
 averageColor: '#4b4843'
 lightestColor: '#ffffee'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111111'
-    - '#776655'
-    - '#ddbb99'
-    - '#66ddee'
+    - value: '#111111'
+      count: 1077
+    - value: '#776655'
+      count: 213
+    - value: '#ddbb99'
+      count: 37
+    - value: '#66ddee'
+      count: 1
 mostSatulightedColors:
-    - '#33aacc'
-    - '#ffbb77'
+    - value: '#33aacc'
+      count: 1
+    - value: '#ffbb77'
+      count: 1
 mostGroupedColors:
-    - '#112222'
+    - value: '#112222'
+      count: 243
 bottomHalf:
     averageColor: '#404341'
     lightestColor: '#ffeedd'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#112222'
-        - '#337788'
-        - '#cc9977'
+        - value: '#112222'
+          count: 1594
+        - value: '#337788'
+          count: 158
+        - value: '#cc9977'
+          count: 38
     mostSatulightedColors:
-        - '#44aabb'
-        - '#ffcc88'
+        - value: '#44aabb'
+          count: 27
+        - value: '#ffcc88'
+          count: 1
     mostGroupedColors:
-        - '#112222'
+        - value: '#112222'
+          count: 498
 bottomThird:
     averageColor: '#384143'
     lightestColor: '#ddcccc'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#112222'
-        - '#337788'
-        - '#ccaa99'
+        - value: '#112222'
+          count: 2174
+        - value: '#337788'
+          count: 230
+        - value: '#ccaa99'
+          count: 5
     mostSatulightedColors:
-        - '#44aacc'
+        - value: '#44aacc'
+          count: 1
     mostGroupedColors:
-        - '#112222'
+        - value: '#112222'
+          count: 747
 bottomLine:
     averageColor: '#252e31'
     lightestColor: '#555566'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#000000'
-        - '#225566'
+        - value: '#000000'
+          count: 2268
+        - value: '#225566'
+          count: 1728
     mostSatulightedColors:
-        - '#225566'
+        - value: '#225566'
+          count: 1728
     mostGroupedColors:
-        - '#225566'
+        - value: '#225566'
+          count: 1620

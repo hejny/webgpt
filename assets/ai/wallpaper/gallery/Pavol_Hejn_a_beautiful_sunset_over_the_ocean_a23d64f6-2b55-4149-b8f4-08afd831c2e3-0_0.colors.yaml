@@ -1,74 +1,114 @@
-version: colorful-1920x1080-256bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#2c5684'
-    - '#ffffff'
-    - '#ffcb60'
-    - '#06051f'
-averageColor: '#6c3e40'
-lightestColor: '#fcf9e2'
-darkestColor: '#1f0000'
+    - note: Most satulighted color which is dark enough to white text on it
+      value: '#224477'
+      count: 6
+    - note: Most distant color from primary color
+      value: '#ffffff'
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#ffbb55'
+      count: 37
+averageColor: '#6d3e40'
+lightestColor: '#ffffdd'
+darkestColor: '#221100'
 mostFrequentColors:
-    - '#23243f'
-    - '#fa7149'
-    - '#fdfa8c'
-    - '#b30f0c'
+    - value: '#112233'
+      count: 653
+    - value: '#ff7744'
+      count: 304
+    - value: '#ffff88'
+      count: 20
 mostSatulightedColors:
-    - '#ff785d'
-    - '#ffcd5d'
-    - '#2c5684'
-    - '#6a204b'
-    - '#623269'
-    - '#453b71'
-    - '#1b5151'
+    - value: '#ff9955'
+      count: 77
+    - value: '#ffee55'
+      count: 13
+    - value: '#224477'
+      count: 3
+    - value: '#aa2244'
+      count: 1
+    - value: '#662255'
+      count: 2
+    - value: '#331144'
+      count: 1
+    - value: '#225555'
+      count: 5
 mostGroupedColors:
-    - '#102442'
+    - value: '#112233'
+      count: 271
 bottomHalf:
-    averageColor: '#4d313c'
-    lightestColor: '#fff3b4'
-    darkestColor: '#230100'
+    averageColor: '#4e313b'
+    lightestColor: '#ffeeaa'
+    darkestColor: '#220000'
     mostFrequentColors:
-        - '#020624'
-        - '#fa664e'
-        - '#645f71'
-        - '#fcf2a5'
+        - value: '#112233'
+          count: 1310
+        - value: '#ffaa55'
+          count: 152
+        - value: '#aa4444'
+          count: 92
     mostSatulightedColors:
-        - '#ff785d'
-        - '#ffcb60'
-        - '#2c5684'
-        - '#6a204b'
-        - '#623269'
-        - '#453b71'
-        - '#1b5151'
+        - value: '#ff6655'
+          count: 79
+        - value: '#ffbb55'
+          count: 37
+        - value: '#224477'
+          count: 6
+        - value: '#661144'
+          count: 1
+        - value: '#553366'
+          count: 1
+        - value: '#225555'
+          count: 11
     mostGroupedColors:
-        - '#020623'
+        - value: '#112233'
+          count: 417
 bottomThird:
     averageColor: '#312135'
-    lightestColor: '#fbc7b4'
-    darkestColor: '#1d020c'
+    lightestColor: '#eedd99'
+    darkestColor: '#000011'
     mostFrequentColors:
-        - '#020624'
-        - '#933e42'
-        - '#f79d52'
+        - value: '#112233'
+          count: 1876
+        - value: '#aa4444'
+          count: 75
+        - value: '#ffaa55'
+          count: 4
     mostSatulightedColors:
-        - '#ffb25d'
-        - '#2c5684'
-        - '#e74948'
-        - '#6a204b'
-        - '#623269'
-        - '#453b71'
+        - value: '#ff9955'
+          count: 8
+        - value: '#cc3344'
+          count: 1
+        - value: '#224477'
+          count: 6
+        - value: '#773366'
+          count: 1
+        - value: '#553366'
+          count: 1
+        - value: '#114444'
+          count: 1
     mostGroupedColors:
-        - '#020623'
+        - value: '#112233'
+          count: 733
 bottomLine:
-    averageColor: '#341c2d'
-    lightestColor: '#ffa858'
-    darkestColor: '#02051a'
+    averageColor: '#341b2d'
+    lightestColor: '#ffaa55'
+    darkestColor: '#001122'
     mostFrequentColors:
-        - '#150f2c'
-        - '#ad3622'
-        - '#ff9f4d'
+        - value: '#000022'
+          count: 3132
+        - value: '#884444'
+          count: 432
+        - value: '#ff9944'
+          count: 216
     mostSatulightedColors:
-        - '#ffa858'
-        - '#a73d41'
-        - '#122f52'
+        - value: '#ffaa55'
+          count: 108
+        - value: '#aa3344'
+          count: 108
+        - value: '#002244'
+          count: 216
     mostGroupedColors:
-        - '#06051f'
+        - value: '#000022'
+          count: 1944

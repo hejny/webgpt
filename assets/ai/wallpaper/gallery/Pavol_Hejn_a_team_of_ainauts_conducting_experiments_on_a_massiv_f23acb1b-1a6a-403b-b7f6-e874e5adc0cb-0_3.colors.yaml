@@ -1,50 +1,72 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#224466'
-    - '#ffffff'
+    - note: Most grouped color which is dark enough to white text on it
+      value: '#224466'
+      count: 401
+    - note: Lightest color which is contrast enough (50%) to primary color
+      value: '#ffffff'
 averageColor: '#4d6379'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#111122'
-    - '#446688'
-    - '#bbccdd'
+    - value: '#111122'
+      count: 2131
+    - value: '#446688'
+      count: 1055
+    - value: '#bbccdd'
+      count: 790
 mostSatulightedColors:
-    - '#3388cc'
+    - value: '#3388cc'
+      count: 2
 mostGroupedColors:
-    - '#111122'
+    - value: '#111122'
+      count: 1075
 bottomHalf:
     averageColor: '#5d758e'
     lightestColor: '#eeeeff'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#bbccdd'
-        - '#335577'
-        - '#000011'
+        - value: '#bbccdd'
+          count: 1369
+        - value: '#335577'
+          count: 1174
+        - value: '#000011'
+          count: 2
     mostSatulightedColors:
-        - '#77aacc'
+        - value: '#77aacc'
+          count: 1
     mostGroupedColors:
-        - '#224466'
+        - value: '#224466'
+          count: 401
 bottomThird:
     averageColor: '#657b93'
     lightestColor: '#eeeeff'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#bbccdd'
-        - '#223355'
+        - value: '#bbccdd'
+          count: 1786
+        - value: '#223355'
+          count: 1064
     mostSatulightedColors:
-        - '#99ccee'
+        - value: '#99ccee'
+          count: 1
     mostGroupedColors:
-        - '#223355'
+        - value: '#223355'
+          count: 425
 bottomLine:
     averageColor: '#7f99b8'
     lightestColor: '#ccddee'
     darkestColor: '#002233'
     mostFrequentColors:
-        - '#6688aa'
-        - '#ccddee'
-        - '#223344'
+        - value: '#6688aa'
+          count: 2592
+        - value: '#ccddee'
+          count: 216
+        - value: '#223344'
+          count: 216
     mostSatulightedColors:
-        - '#6699bb'
+        - value: '#6699bb'
+          count: 108
     mostGroupedColors:
-        - '#6688aa'
+        - value: '#6688aa'
+          count: 756

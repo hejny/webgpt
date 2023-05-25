@@ -1,52 +1,78 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#221111'
-    - '#ffffff'
-    - '#668888'
+    - note: Most frequent color which is dark enough to white text on it
+      value: '#221111'
+      count: 1536
+    - note: Lightest color which is contrast enough (50%) to primary color
+      value: '#eeddbb'
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#668888'
+      count: 1
 averageColor: '#746a57'
 lightestColor: '#eeddbb'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#555555'
-    - '#bbaa88'
-    - '#110000'
+    - value: '#555555'
+      count: 1402
+    - value: '#bbaa88'
+      count: 1346
+    - value: '#110000'
+      count: 3
 mostSatulightedColors:
-    - '#ddbb88'
+    - value: '#ddbb88'
+      count: 2
 mostGroupedColors:
-    - '#bbaa88'
+    - value: '#bbaa88'
+      count: 789
 bottomHalf:
     averageColor: '#796c58'
     lightestColor: '#eeddbb'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#ccbb99'
-        - '#221111'
-        - '#666666'
+        - value: '#ccbb99'
+          count: 2313
+        - value: '#221111'
+          count: 1536
+        - value: '#666666'
+          count: 717
     mostSatulightedColors:
-        - '#ddbb88'
+        - value: '#ddbb88'
+          count: 2
     mostGroupedColors:
-        - '#ccbb99'
+        - value: '#ccbb99'
+          count: 866
 bottomThird:
     averageColor: '#7a6e59'
     lightestColor: '#eeddbb'
     darkestColor: '#111100'
     mostFrequentColors:
-        - '#ccbb99'
-        - '#221111'
-        - '#666666'
+        - value: '#ccbb99'
+          count: 2532
+        - value: '#221111'
+          count: 1423
+        - value: '#666666'
+          count: 969
     mostSatulightedColors:
-        - '#ddbb88'
-        - '#668888'
+        - value: '#ddbb88'
+          count: 3
+        - value: '#668888'
+          count: 1
     mostGroupedColors:
-        - '#ccbb99'
+        - value: '#ccbb99'
+          count: 1032
 bottomLine:
     averageColor: '#7c6e58'
     lightestColor: '#ccbbaa'
     darkestColor: '#221111'
     mostFrequentColors:
-        - '#887755'
-        - '#221111'
+        - value: '#887755'
+          count: 2376
+        - value: '#221111'
+          count: 432
     mostSatulightedColors:
-        - '#ddbb99'
+        - value: '#ddbb99'
+          count: 108
     mostGroupedColors:
-        - '#555555'
+        - value: '#555555'
+          count: 972

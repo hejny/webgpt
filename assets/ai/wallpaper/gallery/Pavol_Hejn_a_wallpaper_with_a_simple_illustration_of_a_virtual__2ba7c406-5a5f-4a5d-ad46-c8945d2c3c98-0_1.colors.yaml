@@ -1,72 +1,122 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#6633cc'
-    - '#ffffff'
-    - '#00aadd'
-    - '#ee0088'
-    - '#001144'
+    - note: Most satulighted color which is dark enough to white text on it
+      value: '#6633cc'
+      count: 2
+    - note: Most distant color from primary color
+      value: '#ffffff'
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#00aadd'
+      count: 14
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#ee0088'
+      count: 1
+    - note: Most grouped color which is distant enough (10%) and hue-distant enough
+          (30°) from all other palette colors
+      value: '#001144'
+      count: 950
 averageColor: '#583b8e'
 lightestColor: '#77bbee'
 darkestColor: '#000000'
 mostFrequentColors:
-    - '#aa2299'
-    - '#001144'
-    - '#2299cc'
-    - '#99ffbb'
-    - '#ff8855'
+    - value: '#aa2299'
+      count: 825
+    - value: '#001144'
+      count: 587
+    - value: '#2299cc'
+      count: 178
+    - value: '#99ffbb'
+      count: 7
+    - value: '#ff8855'
+      count: 3
 mostSatulightedColors:
-    - '#00aadd'
-    - '#bb22cc'
-    - '#ee0088'
-    - '#11ffbb'
-    - '#6633cc'
-    - '#5577dd'
+    - value: '#00aadd'
+      count: 8
+    - value: '#bb22cc'
+      count: 1
+    - value: '#ee0088'
+      count: 1
+    - value: '#11ffbb'
+      count: 2
+    - value: '#6633cc'
+      count: 1
+    - value: '#5577dd'
+      count: 12
 mostGroupedColors:
-    - '#cc2299'
+    - value: '#cc2299'
+      count: 603
 bottomHalf:
     averageColor: '#2f3c82'
     lightestColor: '#77bbee'
     darkestColor: '#000000'
     mostFrequentColors:
-        - '#001144'
-        - '#1188bb'
-        - '#991188'
-        - '#00ffdd'
-        - '#aadd99'
-        - '#ff8855'
+        - value: '#001144'
+          count: 1135
+        - value: '#1188bb'
+          count: 342
+        - value: '#991188'
+          count: 14
+        - value: '#00ffdd'
+          count: 14
+        - value: '#aadd99'
+          count: 4
+        - value: '#ff8855'
+          count: 4
     mostSatulightedColors:
-        - '#00aadd'
-        - '#11ffbb'
-        - '#6633cc'
-        - '#991188'
-        - '#4466cc'
-        - '#ee4477'
+        - value: '#00aadd'
+          count: 14
+        - value: '#11ffbb'
+          count: 3
+        - value: '#6633cc'
+          count: 2
+        - value: '#991188'
+          count: 14
+        - value: '#4466cc'
+          count: 34
+        - value: '#ee4477'
+          count: 1
     mostGroupedColors:
-        - '#001144'
+        - value: '#001144'
+          count: 950
 bottomThird:
     averageColor: '#2c3883'
     lightestColor: '#88ccee'
     darkestColor: '#000011'
     mostFrequentColors:
-        - '#001144'
-        - '#1188bb'
+        - value: '#001144'
+          count: 1220
+        - value: '#1188bb'
+          count: 504
     mostSatulightedColors:
-        - '#00aacc'
-        - '#1144aa'
-        - '#6633bb'
-        - '#770066'
+        - value: '#00aacc'
+          count: 39
+        - value: '#1144aa'
+          count: 1
+        - value: '#6633bb'
+          count: 26
+        - value: '#770066'
+          count: 1
     mostGroupedColors:
-        - '#001144'
+        - value: '#001144'
+          count: 1062
 bottomLine:
     averageColor: '#1d438f'
     lightestColor: '#0099bb'
     darkestColor: '#003377'
     mostFrequentColors:
-        - '#004488'
-        - '#00bbbb'
+        - value: '#004488'
+          count: 3024
+        - value: '#00bbbb'
+          count: 108
     mostSatulightedColors:
-        - '#0099bb'
-        - '#552288'
-        - '#223388'
+        - value: '#0099bb'
+          count: 432
+        - value: '#552288'
+          count: 1512
+        - value: '#223388'
+          count: 756
     mostGroupedColors:
-        - '#004488'
+        - value: '#004488'
+          count: 3024

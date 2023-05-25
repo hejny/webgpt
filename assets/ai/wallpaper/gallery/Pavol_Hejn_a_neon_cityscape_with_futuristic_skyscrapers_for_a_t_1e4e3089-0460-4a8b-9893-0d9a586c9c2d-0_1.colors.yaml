@@ -1,74 +1,123 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#111133'
-    - '#ffffff'
-    - '#cc22aa'
-    - '#ffaa55'
-    - '#0088cc'
+    - note: Most frequent color
+      value: '#111133'
+      count: 3184
+    - note: Most frequent color which is contrast enough (50%) to primary color
+      value: '#ffeeaa'
+      count: 59
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#cc22aa'
+      count: 1
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#0088cc'
+      count: 1
 averageColor: '#703463'
 lightestColor: '#ffeeff'
 darkestColor: '#330000'
 mostFrequentColors:
-    - '#111133'
-    - '#ee3377'
-    - '#3388aa'
-    - '#ffeeaa'
+    - value: '#111133'
+      count: 1775
+    - value: '#ee3377'
+      count: 157
+    - value: '#3388aa'
+      count: 116
+    - value: '#ffeeaa'
+      count: 31
 mostSatulightedColors:
-    - '#0088cc'
-    - '#ff33aa'
-    - '#3344dd'
-    - '#9933aa'
-    - '#ff3344'
-    - '#ffaa55'
+    - value: '#0088cc'
+      count: 1
+    - value: '#ff33aa'
+      count: 6
+    - value: '#3344dd'
+      count: 1
+    - value: '#9933aa'
+      count: 4
+    - value: '#ff3344'
+      count: 10
+    - value: '#ffaa55'
+      count: 3
 mostGroupedColors:
-    - '#111133'
+    - value: '#111133'
+      count: 745
 bottomHalf:
     averageColor: '#5f2b52'
     lightestColor: '#eeeeff'
     darkestColor: '#110011'
     mostFrequentColors:
-        - '#111133'
-        - '#ff6677'
-        - '#ffeeaa'
-        - '#3344bb'
-        - '#77bbcc'
+        - value: '#111133'
+          count: 3184
+        - value: '#ff6677'
+          count: 164
+        - value: '#ffeeaa'
+          count: 59
+        - value: '#3344bb'
+          count: 15
+        - value: '#77bbcc'
+          count: 1
     mostSatulightedColors:
-        - '#0088cc'
-        - '#cc22aa'
-        - '#3344dd'
-        - '#ff4477'
-        - '#663399'
-        - '#ff8855'
+        - value: '#0088cc'
+          count: 1
+        - value: '#cc22aa'
+          count: 1
+        - value: '#3344dd'
+          count: 2
+        - value: '#ff4477'
+          count: 25
+        - value: '#663399'
+          count: 4
+        - value: '#ff8855'
+          count: 13
     mostGroupedColors:
-        - '#111133'
+        - value: '#111133'
+          count: 1480
 bottomThird:
     averageColor: '#5d2a4c'
     lightestColor: '#ffeeee'
     darkestColor: '#000011'
     mostFrequentColors:
-        - '#111133'
-        - '#ffaa88'
-        - '#aa2255'
-        - '#4433cc'
+        - value: '#111133'
+          count: 4599
+        - value: '#ffaa88'
+          count: 124
+        - value: '#aa2255'
+          count: 109
+        - value: '#4433cc'
+          count: 5
     mostSatulightedColors:
-        - '#0088cc'
-        - '#3333ee'
-        - '#cc22aa'
-        - '#ff4477'
-        - '#773399'
-        - '#ff9955'
+        - value: '#0088cc'
+          count: 1
+        - value: '#3333ee'
+          count: 1
+        - value: '#cc22aa'
+          count: 1
+        - value: '#ff4477'
+          count: 21
+        - value: '#773399'
+          count: 1
+        - value: '#ff9955'
+          count: 111
     mostGroupedColors:
-        - '#111133'
+        - value: '#111133'
+          count: 1359
 bottomLine:
     averageColor: '#412045'
     lightestColor: '#2211aa'
     darkestColor: '#110022'
     mostFrequentColors:
-        - '#111133'
-        - '#ee7755'
+        - value: '#111133'
+          count: 5616
+        - value: '#ee7755'
+          count: 756
     mostSatulightedColors:
-        - '#2211aa'
-        - '#dd4466'
-        - '#663377'
+        - value: '#2211aa'
+          count: 108
+        - value: '#dd4466'
+          count: 540
+        - value: '#663377'
+          count: 108
     mostGroupedColors:
-        - '#111133'
+        - value: '#111133'
+          count: 2376

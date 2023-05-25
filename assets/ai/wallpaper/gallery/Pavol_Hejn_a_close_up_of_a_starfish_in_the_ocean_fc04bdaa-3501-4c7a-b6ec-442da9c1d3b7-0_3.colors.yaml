@@ -1,63 +1,117 @@
-version: colorful-1920x1080-256bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#c25f5f'
-    - '#ffffff'
-    - '#0c131d'
-averageColor: '#675e59'
-lightestColor: '#f6faff'
-darkestColor: '#030003'
+    - note: Most frequent color
+      value: '#111122'
+      count: 2611
+    - note: Most frequent color which is contrast enough (50%) to primary color
+      value: '#eeddbb'
+      count: 2
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#5588aa'
+      count: 1
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#bb4444'
+      count: 1
+averageColor: '#685f59'
+lightestColor: '#ffeeee'
+darkestColor: '#110000'
 mostFrequentColors:
-    - '#0c131d'
-    - '#fbf2ea'
-    - '#778e98'
-    - '#ae3b16'
-    - '#ffb455'
+    - value: '#111122'
+      count: 1286
+    - value: '#667777'
+      count: 456
+    - value: '#eeddcc'
+      count: 306
+    - value: '#ee8833'
+      count: 16
+    - value: '#aa2200'
+      count: 8
 mostSatulightedColors:
-    - '#ffb25d'
-    - '#5086a9'
-    - '#c25f5f'
+    - value: '#ffaa55'
+      count: 23
+    - value: '#5588aa'
+      count: 1
+    - value: '#bb4444'
+      count: 1
 mostGroupedColors:
-    - '#0c131d'
+    - value: '#111122'
+      count: 722
 bottomHalf:
-    averageColor: '#3f312e'
-    lightestColor: '#e3edf9'
-    darkestColor: '#030003'
+    averageColor: '#3f312f'
+    lightestColor: '#dddddd'
+    darkestColor: '#110000'
     mostFrequentColors:
-        - '#0c131d'
-        - '#4f6c7d'
-        - '#dd8f40'
-        - '#a72400'
-        - '#ffe7ad'
+        - value: '#111122'
+          count: 2611
+        - value: '#556677'
+          count: 73
+        - value: '#dd8844'
+          count: 40
+        - value: '#aa2200'
+          count: 9
+        - value: '#eeddbb'
+          count: 2
     mostSatulightedColors:
-        - '#ffb25d'
-        - '#5086a9'
-        - '#c25f5f'
+        - value: '#ff8855'
+          count: 1
+        - value: '#5588aa'
+          count: 1
+        - value: '#aa9955'
+          count: 1
+        - value: '#772233'
+          count: 1
     mostGroupedColors:
-        - '#0c131d'
+        - value: '#111122'
+          count: 1501
 bottomThird:
-    averageColor: '#312b2b'
-    lightestColor: '#edeae9'
-    darkestColor: '#090506'
+    averageColor: '#312b2c'
+    lightestColor: '#dddddd'
+    darkestColor: '#110000'
     mostFrequentColors:
-        - '#0c131d'
-        - '#4f6c7d'
-        - '#dd8f40'
-        - '#a62707'
-        - '#d1d1d5'
+        - value: '#111122'
+          count: 3503
+        - value: '#556677'
+          count: 61
+        - value: '#dd9955'
+          count: 47
+        - value: '#aa2200'
+          count: 4
     mostSatulightedColors:
-        - '#ffb156'
-        - '#5086a9'
+        - value: '#ff9977'
+          count: 1
+        - value: '#5588aa'
+          count: 2
+        - value: '#bbaa66'
+          count: 1
     mostGroupedColors:
-        - '#0c131d'
+        - value: '#111122'
+          count: 2256
 bottomLine:
-    averageColor: '#161c21'
-    lightestColor: '#515f42'
-    darkestColor: '#000910'
+    averageColor: '#161d21'
+    lightestColor: '#556644'
+    darkestColor: '#001111'
     mostFrequentColors:
-        - '#171c21'
+        - value: '#111122'
+          count: 5184
     mostSatulightedColors:
-        - '#545e3d'
-        - '#0a1420'
-        - '#4b4737'
+        - value: '#001122'
+          count: 540
+        - value: '#556644'
+          count: 108
+        - value: '#554433'
+          count: 108
+        - value: '#555533'
+          count: 108
+        - value: '#222233'
+          count: 864
+        - value: '#223333'
+          count: 216
+        - value: '#443333'
+          count: 108
+        - value: '#445544'
+          count: 108
     mostGroupedColors:
-        - '#020c16'
+        - value: '#001111'
+          count: 2484

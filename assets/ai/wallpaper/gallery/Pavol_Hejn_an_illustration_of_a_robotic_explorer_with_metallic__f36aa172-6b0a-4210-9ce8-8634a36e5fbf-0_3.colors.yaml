@@ -1,51 +1,76 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#332222'
-    - '#ffffff'
-    - '#997755'
+    - note: Most grouped color which is dark enough to white text on it
+      value: '#332222'
+      count: 938
+    - note: Lightest color which is contrast enough (50%) to primary color
+      value: '#ffeeee'
+    - note: Most frequent color which is distant enough (10%) and hue-distant enough
+          (30°) from all other palette colors
+      value: '#997755'
+      count: 275
 averageColor: '#544032'
 lightestColor: '#ffffff'
 darkestColor: '#111100'
 mostFrequentColors:
-    - '#443322'
-    - '#ddccbb'
+    - value: '#443322'
+      count: 3235
+    - value: '#ddccbb'
+      count: 221
 mostSatulightedColors:
-    - '#eebb88'
+    - value: '#eebb88'
+      count: 1
 mostGroupedColors:
-    - '#332222'
+    - value: '#332222'
+      count: 597
 bottomHalf:
     averageColor: '#503c2e'
     lightestColor: '#ffeeee'
     darkestColor: '#110000'
     mostFrequentColors:
-        - '#443322'
-        - '#ddccbb'
+        - value: '#443322'
+          count: 3115
+        - value: '#ddccbb'
+          count: 89
     mostSatulightedColors:
-        - '#eecc99'
+        - value: '#eecc99'
+          count: 1
     mostGroupedColors:
-        - '#332222'
+        - value: '#332222'
+          count: 938
 bottomThird:
     averageColor: '#513d2f'
     lightestColor: '#ffffee'
     darkestColor: '#110000'
     mostFrequentColors:
-        - '#332222'
-        - '#997755'
-        - '#ddccbb'
+        - value: '#332222'
+          count: 3277
+        - value: '#997755'
+          count: 275
+        - value: '#ddccbb'
+          count: 85
     mostSatulightedColors:
-        - '#eebb99'
+        - value: '#eebb99'
+          count: 1
     mostGroupedColors:
-        - '#332222'
+        - value: '#332222'
+          count: 1995
 bottomLine:
     averageColor: '#554033'
     lightestColor: '#dddddd'
     darkestColor: '#221100'
     mostFrequentColors:
-        - '#443322'
-        - '#dddddd'
-        - '#aa8866'
+        - value: '#443322'
+          count: 2916
+        - value: '#dddddd'
+          count: 216
+        - value: '#aa8866'
+          count: 108
     mostSatulightedColors:
-        - '#aa8866'
-        - '#886666'
+        - value: '#aa8866'
+          count: 108
+        - value: '#886666'
+          count: 108
     mostGroupedColors:
-        - '#332222'
+        - value: '#332222'
+          count: 540

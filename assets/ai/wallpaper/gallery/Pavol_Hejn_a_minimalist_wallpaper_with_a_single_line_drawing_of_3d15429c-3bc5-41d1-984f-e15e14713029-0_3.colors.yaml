@@ -1,53 +1,78 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#ff3322'
-    - '#ffffff'
+    - note: Most grouped color which is dark enough to white text on it
+      value: '#ff3322'
+      count: 3874
+    - note: Most distant color from primary color
+      value: '#ffffff'
 averageColor: '#dd756c'
 lightestColor: '#ffffff'
 darkestColor: '#220000'
 mostFrequentColors:
-    - '#ff3322'
-    - '#cccccc'
-    - '#661111'
+    - value: '#ff3322'
+      count: 5760
+    - value: '#cccccc'
+      count: 4308
+    - value: '#661111'
+      count: 12
 mostSatulightedColors:
-    - '#ff4455'
-    - '#eeaa77'
+    - value: '#ff4455'
+      count: 1
+    - value: '#eeaa77'
+      count: 2
 mostGroupedColors:
-    - '#ff3322'
+    - value: '#ff3322'
+      count: 4873
 bottomHalf:
     averageColor: '#db8278'
     lightestColor: '#ffffff'
     darkestColor: '#220000'
     mostFrequentColors:
-        - '#ff3322'
-        - '#cccccc'
-        - '#551111'
+        - value: '#ff3322'
+          count: 5693
+        - value: '#cccccc'
+          count: 4237
+        - value: '#551111'
+          count: 14
     mostSatulightedColors:
-        - '#ff6677'
-        - '#eeaa77'
+        - value: '#ff6677'
+          count: 2
+        - value: '#eeaa77'
+          count: 1
     mostGroupedColors:
-        - '#ff3322'
+        - value: '#ff3322'
+          count: 3874
 bottomThird:
     averageColor: '#d99086'
     lightestColor: '#ffffff'
     darkestColor: '#330000'
     mostFrequentColors:
-        - '#ff3322'
-        - '#cccccc'
-        - '#551111'
+        - value: '#ff3322'
+          count: 5056
+        - value: '#cccccc'
+          count: 4623
+        - value: '#551111'
+          count: 20
     mostSatulightedColors:
-        - '#ff5555'
-        - '#ffbb77'
+        - value: '#ff5555'
+          count: 4
+        - value: '#ffbb77'
+          count: 2
     mostGroupedColors:
-        - '#bbcccc'
+        - value: '#bbcccc'
+          count: 2255
 bottomLine:
     averageColor: '#d2a79f'
     lightestColor: '#ddcccc'
     darkestColor: '#aa3311'
     mostFrequentColors:
-        - '#bbcccc'
-        - '#ff3322'
+        - value: '#bbcccc'
+          count: 6912
+        - value: '#ff3322'
+          count: 3024
     mostSatulightedColors:
-        - '#ff8877'
+        - value: '#ff8877'
+          count: 108
     mostGroupedColors:
-        - '#bbcccc'
+        - value: '#bbcccc'
+          count: 5184

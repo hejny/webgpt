@@ -1,68 +1,111 @@
-version: colorful-192x108-16bit-v12palette
+version: colorful-192x108-16bit-v13palette
 palette:
-    - '#111122'
-    - '#ffffff'
-    - '#888855'
+    - note: Most frequent color
+      value: '#111122'
+      count: 3273
+    - note: Most frequent color which is contrast enough (50%) to primary color
+      value: '#ddeeee'
+      count: 20
+    - note: Most satulighted color which is distant enough (10%) and hue-distant
+          enough (30°) from all other palette colors
+      value: '#994466'
+      count: 1
 averageColor: '#3c3233'
 lightestColor: '#ffeeee'
 darkestColor: '#111100'
 mostFrequentColors:
-    - '#111122'
-    - '#776655'
-    - '#aabbbb'
+    - value: '#111122'
+      count: 3182
+    - value: '#776655'
+      count: 152
+    - value: '#aabbbb'
+      count: 63
 mostSatulightedColors:
-    - '#ee8855'
-    - '#334477'
-    - '#cc88aa'
-    - '#aa77aa'
+    - value: '#ee8855'
+      count: 2
+    - value: '#334477'
+      count: 1
+    - value: '#cc88aa'
+      count: 1
+    - value: '#aa77aa'
+      count: 1
 mostGroupedColors:
-    - '#111122'
+    - value: '#111122'
+      count: 584
 bottomHalf:
     averageColor: '#3a2f31'
     lightestColor: '#ffeeee'
     darkestColor: '#110000'
     mostFrequentColors:
-        - '#111122'
-        - '#888888'
-        - '#ddeeee'
+        - value: '#111122'
+          count: 3273
+        - value: '#888888'
+          count: 157
+        - value: '#ddeeee'
+          count: 20
     mostSatulightedColors:
-        - '#994466'
-        - '#cc6633'
-        - '#445588'
-        - '#888855'
-        - '#553355'
-        - '#887799'
+        - value: '#994466'
+          count: 1
+        - value: '#cc6633'
+          count: 1
+        - value: '#445588'
+          count: 1
+        - value: '#888855'
+          count: 1
+        - value: '#553355'
+          count: 1
+        - value: '#887799'
+          count: 1
     mostGroupedColors:
-        - '#111122'
+        - value: '#111122'
+          count: 607
 bottomThird:
     averageColor: '#2a2126'
     lightestColor: '#ddeeee'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#111122'
-        - '#99aaaa'
-        - '#995533'
+        - value: '#111122'
+          count: 4315
+        - value: '#99aaaa'
+          count: 66
+        - value: '#995533'
+          count: 1
     mostSatulightedColors:
-        - '#cc88aa'
-        - '#996633'
-        - '#8899bb'
-        - '#995555'
-        - '#775577'
-        - '#ccbbdd'
+        - value: '#cc88aa'
+          count: 1
+        - value: '#996633'
+          count: 3
+        - value: '#8899bb'
+          count: 1
+        - value: '#995555'
+          count: 1
+        - value: '#775577'
+          count: 1
+        - value: '#ccbbdd'
+          count: 1
     mostGroupedColors:
-        - '#111122'
+        - value: '#111122'
+          count: 834
 bottomLine:
     averageColor: '#13121d'
     lightestColor: '#332222'
     darkestColor: '#001111'
     mostFrequentColors:
-        - '#111122'
+        - value: '#111122'
+          count: 9396
     mostSatulightedColors:
-        - '#001122'
-        - '#331122'
-        - '#221122'
-        - '#331111'
-        - '#111122'
-        - '#001111'
+        - value: '#001122'
+          count: 1188
+        - value: '#331122'
+          count: 648
+        - value: '#221122'
+          count: 1728
+        - value: '#331111'
+          count: 108
+        - value: '#111122'
+          count: 9396
+        - value: '#001111'
+          count: 2808
     mostGroupedColors:
-        - '#111122'
+        - value: '#111122'
+          count: 1296
