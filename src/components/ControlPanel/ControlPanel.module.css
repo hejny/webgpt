@@ -29,10 +29,18 @@
 .button {
     border: none;
     outline: none;
+
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+
     text-align: center;
     font-size: 17px;
     margin: 5px;
     background-color: rgb(152, 216, 228) /* <- TODO: !! Figure out best colors */;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .button[data-active='true'] {
@@ -45,7 +53,16 @@
 .button:hover {
     /* TODO: Made here some animation effect*/
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);*/
-    transform: rotate(5deg);
+    animation: shake 0.1s infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        transform: scale(1.1) rotate(-5deg);
+    }
 }
 
 @media only screen and (max-width: 900px) {

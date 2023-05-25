@@ -16,7 +16,7 @@ export function ControlPanelLikeButtons() {
             <button
                 // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
 
-                className={classNames('button', styles.button)}
+                className={classNames(/*'button',*/ styles.button)}
                 title="I love this web!"
                 data-active={likedStatus === 'LOVE'}
                 onClick={() =>
@@ -30,7 +30,8 @@ export function ControlPanelLikeButtons() {
 
             <button
                 // TODO: !!! Also listen on double-click on mobile
-                className={classNames('button', styles.button)}
+                className={classNames(/*'button',*/ styles.button)}
+                title="I like this web"
                 data-active={likedStatus === 'LIKE'}
                 onClick={() =>
                     void setLikedStatus(
@@ -41,7 +42,8 @@ export function ControlPanelLikeButtons() {
                 <Article content="👍" isUsingOpenmoji />
             </button>
             <button
-                className={classNames('button', styles.button)}
+                className={classNames(/*'button',*/ styles.button)}
+                title="I dislike this web"
                 data-active={likedStatus === 'DISLIKE'}
                 onClick={() =>
                     void setLikedStatus(

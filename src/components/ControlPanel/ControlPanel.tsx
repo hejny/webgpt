@@ -36,21 +36,23 @@ export function ControlPanel(props: ControlPanelProps) {
 
             <Link
                 href={'/'}
-                className={classNames('button', styles.button)}
+                className={classNames(/*'button',*/ styles.button)}
+                title="Whole gallery"
                 prefetch={false /* <- Note: Because gallery is enormous */}
             >
                 <Article content="🖼" isUsingOpenmoji /* <- TODO: !!! Better icon OR Openmoji */ />
             </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
+                /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
+                className={classNames(/*'button',*/ styles.button)}
+                title="Show me another one"
                 onClick={() => {
                     // Note: No need for preventDefault
                     const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
                     headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
                     headerWallpaperElement.removeAttribute('srcset');
                 }}
-                /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
-                className={classNames('button', styles.button)}
                 style={
                     {
                         // ...minorButtonStyle,
@@ -65,7 +67,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
                 />
             </Link>
-            <button onClick={turnOnEditing} className={classNames('button', styles.button)}>
+            <button onClick={turnOnEditing} className={classNames(/*'button',*/ styles.button)} title="Edit this web">
                 <Article content="🖊" isUsingOpenmoji />
             </button>
             <Link
@@ -76,7 +78,8 @@ export function ControlPanel(props: ControlPanelProps) {
                         mode: 'presentation',
                     },
                 }}
-                className={classNames('button', styles.button)}
+                className={classNames(/*'button',*/ styles.button)}
+                title="Show without the controls"
             >
                 <Article
                     content="▶"
