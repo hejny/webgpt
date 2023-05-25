@@ -12,7 +12,7 @@ export function HeaderWallpaper() {
     const quality = 97;
     const width = 1920;
 
-    console.log({ src, prompt, colorStats });
+    // console.log({ src, prompt, colorStats });
 
     return (
         <div className={styles.HeaderWallpaper} style={{ backgroundColor: colorStats.averageColor.toHex() }}>
