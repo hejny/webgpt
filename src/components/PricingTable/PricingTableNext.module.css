@@ -1,35 +1,38 @@
 .pricing-table {
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .plan {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.plan {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 250px;
-  }
-  
-  .plan-name {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.plan-name {
     font-size: 20px;
     font-weight: bold;
-  }
-  
-  .plan-price {
+}
+
+.plan-price {
     margin-top: 10px;
     font-size: 18px;
-  }
-  
-  .benefits-list {
+}
+
+.benefits-list {
     margin-top: 20px;
     padding-left: 0;
-  }
-  
-  .benefits-list li {
+}
+
+.benefits-list li {
     list-style: none;
-  }
-  
-  .buy-now-btn {
+}
+
+.buy-now-btn {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
@@ -38,9 +41,14 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .buy-now-btn:hover {
+}
+
+.buy-now-btn:hover {
     background-color: #0056b3;
-  }
-  
+}
+
+@media (min-width: 768px) {
+    .pricing-table {
+        justify-content: space-between;
+    }
+}
