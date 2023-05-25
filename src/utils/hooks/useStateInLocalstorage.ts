@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import spaceTrim from 'spacetrim';
 
+// !!! useStateInLocalstorage does not know about likedStatus
+// !!! Save also date of liking
+// !!! Maybe use some library for storage - ask + [🧠] which one and which to use to sync with backend
+
 export function useStateInLocalstorage<T extends string>(key: string, initialState: T): [T, (likedStatus: T) => void] {
     if (
         // TODO: Maybe we don’t need whole this with wrapping the ControlPanelLikeButtons with <NoSsr>...</NoSsr>
