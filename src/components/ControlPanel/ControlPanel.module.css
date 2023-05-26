@@ -29,21 +29,26 @@
     border: none;
     outline: none;
 
+    display: inline-flex;
     cursor: pointer;
     margin: 5px;
-    padding: 10px;
+    height: 45px;
+    aspect-ratio: 1 / 1;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
     border-radius: 5px;
 
-    text-align: center;
     font-size: 17px;
-    margin: 5px;
-    background-color: rgb(152, 216, 228) /* <- TODO: !! Figure out best colors */;
+    background-color: rgb(205, 227, 231) /* <- TODO: !! Figure out best colors */;
 
     transition: all 0.3s ease-in-out;
 }
 
 .button[data-active='true'] {
-    background-color: rgb(187, 247, 20) /* <- TODO: !! Figure out best colors */;
+    background-color: rgb(199, 39, 119) /* <- TODO: !! Figure out best colors */;
     text-align: center;
     font-size: 17px;
     margin: 5px;
