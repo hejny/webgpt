@@ -6,7 +6,7 @@ import { DEBUG } from '../../config';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
 import { DebugContext } from '../pages/_app';
-import { ShowcaseAppHead, ShowcaseAppMetadata } from '../sections/00-AppHead/ShowcaseAppHead';
+import { ShowcaseAppHead } from '../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../sections/ShowcaseContent/ShowcaseContent';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
