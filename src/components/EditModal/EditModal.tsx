@@ -1,24 +1,19 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
-import { RouterContext } from 'next/dist/shared/lib/router-context';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
-import { renderToStaticMarkup } from 'react-dom/server';
-import { BehaviorSubject } from 'rxjs';
-import { DEBUG } from '../../../config';
-import { DebugContext } from '../../pages/_app';
-import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
-import { ShowcaseContentWithEdit } from '../../sections/ShowcaseContentWithEdit/ShowcaseContentWithEdit';
+import { exportAsHtml } from '../../export/exportAsHtml';
+import { exportAsZip } from '../../export/exportAsZip';
+import { getWallpaperBaseFilename } from '../../export/getWallpaperBaseFilename';
+import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
-import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import { ColorBox } from '../Color/ColorBox';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
 import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
-import { ShuffleSeedContext } from '../Shuffle/Shuffle';
 import styles from './EditModal.module.css';
 
 const MarkdownEditor = dynamic(() => import('@uiw/react-markdown-editor').then((mod) => mod.default), { ssr: false });
@@ -114,33 +109,24 @@ export function EditModal(props: EditModalProps) {
 
                     <button
                         className={'button'}
-                        onClick={() => {
-                            const html = renderToStaticMarkup(
-                                <RouterContext.Provider value={router}>
-                                    <DebugContext.Provider value={DEBUG}>
-                                        <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
-                                            <WallpapersContext.Provider
-                                                value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}
-                                            >
-                                                <ShowcaseAppHead />
-                                                <ShowcaseContentWithEdit
-                                                    randomWallpaper={
-                                                        wallpaper
-                                                    } /* <- !!! This should be components <ShowcaseContent/> and <ShowcaseContentEdit randomWallpaper={...}/>
-                                                                HERE USE <ShowcaseContent/>
-                                                    
-                                                    */
-                                                />
-                                            </WallpapersContext.Provider>
-                                        </ShuffleSeedContext.Provider>
-                                    </DebugContext.Provider>
-                                </RouterContext.Provider>,
-                            );
-                            console.log(html);
-                            alert(html);
+                        onClick={async () => {
+                            /* not await */ induceFileDownload(await exportAsZip(wallpaper));
                         }}
                     >
-                        Download
+                        Download as ZIP
+                    </button>
+
+                    <button
+                        className={'button'}
+                        onClick={async () => {
+                            const html = await exportAsHtml(wallpaper);
+                            const file = new File([html], getWallpaperBaseFilename(wallpaper) + '.html', {
+                                type: 'text/html',
+                            });
+                            /* not await */ induceFileDownload(file);
+                        }}
+                    >
+                        Download as HTML
                     </button>
                 </div>
             </div>

@@ -5,6 +5,10 @@ import { createColorfulComputeImageColorStats } from './src/utils/image/utils/10
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 
 export const VERSION = packageJson.version;
+
+/**
+ * TODO: !! Remove OR use for different purposes
+ */
 export const DEBUG = {
     backgroundPatternPicker: true,
     showGrid: false,
@@ -91,7 +95,6 @@ export const DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES = 30;
  * As ratio of distance between white and black
  */
 export const DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of distance between white and black */
-
 
 /**
  * How much the color should be different to be considered OK as text color on background
