@@ -42,7 +42,7 @@ export function ShowcaseAppMetadata() {
             <meta property="og:description" content={description} />
             <meta
                 property="og:image"
-                content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                content={wallpaper.src  /* <-  [🦋] */}
             />
             <meta property="og:url" content={homeUrl} />
             <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
@@ -58,8 +58,11 @@ export function ShowcaseAppMetadata() {
             <meta property="twitter:description" content={description} />
             <meta
                 property="twitter:image"
-                content={wallpaper.src /* <- TODO: [🎭] Make special optimized crops for each usage */}
+                content={wallpaper.src /* <-  [🦋] */}
             />
+
+
+            {/* TODO: !! Presentation version -> canonical */}
         </>
     );
 }
@@ -68,4 +71,5 @@ export function ShowcaseAppMetadata() {
  * TODO: Create better summary
  * TODO: Maybe import from some JSON
  * TODO: What is ideal viewport value
+ * TODO: [🦋] Use here better preview image - with some palette showcase + title + special optimized crops for each usage
  */

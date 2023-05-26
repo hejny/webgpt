@@ -32,6 +32,7 @@ export function ShowcaseWelcomeSection() {
                     fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,
                 }}
             >
+                {/* TODO: !!! Wrap Big words in title */}
                 <Article content={wallpaper.content} isUsingOpenmoji />
                 {/*
                 <br />

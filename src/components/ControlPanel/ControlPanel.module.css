@@ -52,7 +52,7 @@
 .button:hover {
     /* TODO: Made here some animation effect*/
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);*/
-    animation: shake 0.1s infinite alternate;
+    animation: shake 0.1s infinite alternate /* <- !!! Fix this on mobile, play animation once */;
 }
 
 @keyframes shake {
