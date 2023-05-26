@@ -1,7 +1,7 @@
 import { useCurrentWallpaperId } from './useCurrentWallpaperId';
 import { useStateInLocalstorage } from './useStateInLocalstorage';
 
-export type LikedStatus = 'LOVE' | 'LIKE' | 'DISLIKE' | 'NONE';
+export type LikedStatus = 'NONE' | 'LOVE' | 'LIKE' | 'NEUTRAL' | 'DISLIKE';
 
 export function useLikedStatusOfCurrentWallpaper(): [LikedStatus, (likedStatus: LikedStatus) => void] {
     const wallpaperId = useCurrentWallpaperId();

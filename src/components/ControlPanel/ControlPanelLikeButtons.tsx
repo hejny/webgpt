@@ -43,6 +43,18 @@ export function ControlPanelLikeButtons() {
             </button>
             <button
                 className={classNames(/*'button',*/ styles.button)}
+                title="I do not know"
+                data-active={likedStatus === 'NEUTRAL'}
+                onClick={() =>
+                    void setLikedStatus(
+                        likedStatus !== 'NEUTRAL' ? 'NEUTRAL' : 'NONE' /* <- TODO: [6] Make some toggle set wrapper */,
+                    )
+                }
+            >
+                <Article content="😐" isUsingOpenmoji />
+            </button>
+            <button
+                className={classNames(/*'button',*/ styles.button)}
                 title="I dislike this web"
                 data-active={likedStatus === 'DISLIKE'}
                 onClick={() =>

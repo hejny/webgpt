@@ -68,6 +68,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                     { id: 'NONE' as LikedStatus, title: 'None' },
                     { id: 'LOVE' as LikedStatus, title: '❤ Loved' },
                     { id: 'LIKE' as LikedStatus, title: '👍 Liked' },
+                    { id: 'NEUTRAL' as LikedStatus, title: '😐 Neutral' },
                     { id: 'DISLIKE' as LikedStatus, title: '👎 Disliked' },
                 ]}
             />
