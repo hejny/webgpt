@@ -6,7 +6,7 @@ import { DEBUG } from '../../config';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
 import { DebugContext } from '../pages/_app';
 import { ShowcaseAppHead } from '../sections/00-AppHead/ShowcaseAppHead';
-import { ShowcaseContentWithEdit } from '../sections/ShowcaseContentWithEdit/ShowcaseContentWithEdit';
+import { ShowcaseContent } from '../sections/ShowcaseContent/ShowcaseContent';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 
@@ -20,14 +20,7 @@ export function exportAsHtml(wallpaper: IWallpaper): string {
                 <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                     <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                         <ShowcaseAppHead />
-                        <ShowcaseContentWithEdit
-                            randomWallpaper={
-                                wallpaper
-                            } /* <- !!! This should be components <ShowcaseContent/> and <ShowcaseContentEdit randomWallpaper={...}/>
-                                        HERE USE <ShowcaseContent/>
-                            
-                            */
-                        />
+                        <ShowcaseContent />
                     </WallpapersContext.Provider>
                 </ShuffleSeedContext.Provider>
             </DebugContext.Provider>

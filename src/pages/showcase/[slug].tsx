@@ -4,7 +4,8 @@ import { useRouter } from 'next/router';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
-import { ShowcaseContentWithEdit } from '../../sections/ShowcaseContentWithEdit/ShowcaseContentWithEdit';
+import { ShowcaseContent } from '../../sections/ShowcaseContent/ShowcaseContent';
+import { ShowcaseContentEdit } from '../../sections/ShowcaseContentEdit/ShowcaseContentEdit';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
@@ -39,7 +40,8 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             </Head>
             */}
 
-            <ShowcaseContentWithEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
+            <ShowcaseContent />
+            <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
         </WallpapersContext.Provider>
     );
 }
