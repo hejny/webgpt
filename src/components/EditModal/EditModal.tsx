@@ -2,10 +2,6 @@ import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
-import { exportAsHtml } from '../../export/exportAsHtml';
-import { exportAsZip } from '../../export/exportAsZip';
-import { getWallpaperBaseFilename } from '../../export/getWallpaperBaseFilename';
-import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
@@ -17,6 +13,12 @@ import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
 import styles from './EditModal.module.css';
 
 const MarkdownEditor = dynamic(() => import('@uiw/react-markdown-editor').then((mod) => mod.default), { ssr: false });
+const EditModalDownloadButtons = dynamic(
+    () => import('./EditModalDownloadButtons').then(({ EditModalDownloadButtons }) => EditModalDownloadButtons),
+    {
+        loading: () => <p>Loading...</p>,
+    },
+);
 
 interface EditModalProps {
     turnOffEditing(): void;
@@ -106,30 +108,7 @@ export function EditModal(props: EditModalProps) {
                     <button className={'button'} onClick={turnOffEditing}>
                         Done
                     </button>
-
-                    {/* TODO: !! Lazy-import export buttons */}
-
-                    <button
-                        className={'button'}
-                        onClick={async () => {
-                            /* not await */ induceFileDownload(await exportAsZip(wallpaper));
-                        }}
-                    >
-                        Download as ZIP
-                    </button>
-
-                    <button
-                        className={'button'}
-                        onClick={async () => {
-                            const html = await exportAsHtml(wallpaper);
-                            const file = new File([html], getWallpaperBaseFilename(wallpaper) + '.html', {
-                                type: 'text/html',
-                            });
-                            /* not await */ induceFileDownload(file);
-                        }}
-                    >
-                        Download as HTML
-                    </button>
+                    <EditModalDownloadButtons />
                 </div>
             </div>
         </>
