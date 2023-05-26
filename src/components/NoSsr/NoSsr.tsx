@@ -1,6 +1,6 @@
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
-interface NoSsrProps {
+export interface NoSsrProps {
     children: React.ReactNode;
 }
 

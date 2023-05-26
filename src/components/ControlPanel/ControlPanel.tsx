@@ -5,6 +5,7 @@ import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
+import { NoCsr } from '../NoSsr/NoCsr';
 import { NoSsr } from '../NoSsr/NoSsr';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
@@ -30,18 +31,17 @@ export function ControlPanel(props: ControlPanelProps) {
         >
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
 
-            <NoSsr>
-                <ControlPanelLikeButtons />
-            </NoSsr>
+            <>
+                <NoSsr>
+                    <ControlPanelLikeButtons />
+                </NoSsr>
+                <NoCsr>
+                    <div className={classNames(styles.button)} />
+                    <div className={classNames(styles.button)} />
+                    <div className={classNames(styles.button)} />
+                </NoCsr>
+            </>
 
-            <Link
-                href={'/'}
-                className={classNames(/*'button',*/ styles.button)}
-                title="Whole gallery"
-                prefetch={false /* <- Note: Because gallery is enormous */}
-            >
-                <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
-            </Link>
             <Link
                 href={`/showcase/${randomWallpaper.id}`}
                 /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
@@ -67,9 +67,20 @@ export function ControlPanel(props: ControlPanelProps) {
                     isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
                 />
             </Link>
-            <button onClick={turnOnEditing} className={classNames(/*'button',*/ styles.button)} title="Edit this web">
-                <Article content="🖊" isUsingOpenmoji />
-            </button>
+            <>
+                <NoSsr>
+                    <button
+                        onClick={turnOnEditing}
+                        className={classNames(/*'button',*/ styles.button)}
+                        title="Edit this web"
+                    >
+                        <Article content="🖊" isUsingOpenmoji />
+                    </button>
+                </NoSsr>
+                <NoCsr>
+                    <div className={classNames(styles.button)} />
+                </NoCsr>
+            </>
             <Link
                 prefetch={false /* <- Note: Because gallery is enormous */}
                 href={{
@@ -85,6 +96,15 @@ export function ControlPanel(props: ControlPanelProps) {
                     content="▶"
                     isUsingOpenmoji /* <- TODO: !! Show the QR code before + Save to GET params to be able to send */
                 />
+            </Link>
+
+            <Link
+                href={'/'}
+                className={classNames(/*'button',*/ styles.button)}
+                title="Whole gallery"
+                prefetch={false /* <- Note: Because gallery is enormous */}
+            >
+                <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
             </Link>
         </div>
     );
