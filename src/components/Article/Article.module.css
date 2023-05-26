@@ -15,7 +15,7 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 
 .Article h2 {
     margin-top: 60px;
-    border-bottom: 1px solid var(--palette-2);
+    border-bottom: 2px solid var(--palette-2);
 }
 
 .Article ul,
@@ -26,6 +26,7 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 .Article hr {
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 2px solid(--palette-2);
 }
 
 .Article blockquote {
