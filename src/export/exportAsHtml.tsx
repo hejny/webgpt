@@ -1,4 +1,4 @@
-import mockRouter from 'next-router-mock';
+import { MemoryRouter } from 'next-router-mock';
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { BehaviorSubject } from 'rxjs';
@@ -13,15 +13,17 @@ import { IWallpaper } from '../utils/IWallpaper';
 import { prettifyHtml } from './utils/prettifyHtml';
 
 export function exportAsHtml(wallpaper: IWallpaper): string {
-    mockRouter.pathname = '/showcase/[slug]';
-    mockRouter.query = { slug: wallpaper.id };
+    
+    const memoryRouter = new MemoryRouter();
+    memoryRouter.pathname = '/showcase/[slug]';
+    memoryRouter.query = { slug: wallpaper.id };
 
     // Note: We are here in export context, so we don't use <Head> component from Next
     /* eslint-disable @next/next/no-head-element */
 
     let html = renderToStaticMarkup(
         <html>
-            <RouterContext.Provider value={mockRouter}>
+            <RouterContext.Provider value={memoryRouter}>
                 {/* <MemoryRouterProvider url={'/showcase/[slug]'}> */}
                 <DebugContext.Provider value={DEBUG}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
