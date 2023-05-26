@@ -18,7 +18,19 @@ export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
     memoryRouter.query = { slug: wallpaper.id };
 
     const styles = Array.from(document.querySelectorAll('style')).map((style) => style.innerHTML);
+
+    // Note: Fetch all <link rel="stylesheet" into styles
+    for (const linkElement of Array.from(document.querySelectorAll('link'))) {
+        if (linkElement.rel !== 'stylesheet') {
+            continue;
+        }
+        const response = await fetch(linkElement.href);
+        const css = await response.text();
+        styles.push(css);
+    }
+
     // TODO: !!! Make style prefixes/suffixes deterministic with custom prefixer/suffixer
+    // TODO: !!! Before each style add filename/content which will be used as comment or as a filename
     // TODO: !!! Pick only needed styles
     // TODO: !!! Return alongisde with html the styles object to put them as separate files instead of inline
     // TODO: !!! Prettify styles
