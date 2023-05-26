@@ -1,12 +1,18 @@
+import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
+interface ShowcaseAppHeadProps {
+    isNextHeadUsed: boolean;
+}
+
 /**
  * @@@
  */
-export function ShowcaseAppMetadata() {
+export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
+    const { isNextHeadUsed } = props;
     const wallpaper = useWallpaper();
 
     // TODO: !! IWalpaper should have custom emoji which will be contained here
@@ -19,7 +25,7 @@ export function ShowcaseAppMetadata() {
 
     const homeUrl = `https://ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
-    return (
+    const metadataJsx = (
         <>
             {/* Technical */}
             <meta charSet="utf-8" />
@@ -40,10 +46,7 @@ export function ShowcaseAppMetadata() {
             <meta property="og:title" content={title} />
             <meta property="og:site_name" content={title} />
             <meta property="og:description" content={description} />
-            <meta
-                property="og:image"
-                content={wallpaper.src  /* <-  [🦋] */}
-            />
+            <meta property="og:image" content={wallpaper.src /* <-  [🦋] */} />
             <meta property="og:url" content={homeUrl} />
             <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
 
@@ -56,15 +59,19 @@ export function ShowcaseAppMetadata() {
             <meta property="twitter:url" content={homeUrl} />
             <meta property="twitter:title" content={title} />
             <meta property="twitter:description" content={description} />
-            <meta
-                property="twitter:image"
-                content={wallpaper.src /* <-  [🦋] */}
-            />
-
+            <meta property="twitter:image" content={wallpaper.src /* <-  [🦋] */} />
 
             {/* TODO: !! Presentation version -> canonical */}
         </>
     );
+    if (isNextHeadUsed) {
+        // Note: For some strange reason we can not use <Head> in <ShowcasePage> - it fires "NextRouter was not mounted"
+        return <Head>{metadataJsx}</Head>;
+    } else {
+        // Note: We are using this in export context, so we don't use <Head> component from Next
+        /* eslint-disable-next-line @next/next/no-head-element */
+        return <head>{metadataJsx}</head>;
+    }
 }
 
 /**

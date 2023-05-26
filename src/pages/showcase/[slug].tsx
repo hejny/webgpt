@@ -1,11 +1,10 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
-import { ShowcaseAppMetadata } from '../../sections/00-AppHead/ShowcaseAppMetadata';
+import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../../sections/ShowcaseContent/ShowcaseContent';
 import { ShowcaseContentEdit } from '../../sections/ShowcaseContentEdit/ShowcaseContentEdit';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
@@ -30,11 +29,11 @@ export default function ShowcasePage(props: ShowcasePageProps) {
         <WallpapersContext.Provider
             value={hydrateWallpapers([currentWallpaper])} /* <- Is this the right place to be Provider in? */
         >
-            <Head>
-                <ShowcaseAppMetadata />
-                <SkinStyle />
-                {/* TODO: <LanguagePicker /> */}
-            </Head>
+            <ShowcaseAppHead isNextHeadUsed />
+            <SkinStyle />
+            {/* TODO: <LanguagePicker /> * /}
+            
+        
 
             {/* !!! Remove 
             <Head>
