@@ -12,10 +12,16 @@ import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { prettifyHtml } from './utils/prettifyHtml';
 
-export function exportAsHtml(wallpaper: IWallpaper): string {
+export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
     const memoryRouter = new MemoryRouter();
     memoryRouter.pathname = '/showcase/[slug]';
     memoryRouter.query = { slug: wallpaper.id };
+
+    const styles = Array.from(document.querySelectorAll('style')).map((style) => style.innerHTML);
+    // TODO: !!! Make style prefixes/suffixes deterministic with custom prefixer/suffixer
+    // TODO: !!! Pick only needed styles
+    // TODO: !!! Return alongisde with html the styles object to put them as separate files instead of inline
+    // TODO: !!! Prettify styles
 
     let html = renderToStaticMarkup(
         <html>
@@ -26,7 +32,12 @@ export function exportAsHtml(wallpaper: IWallpaper): string {
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                             <ShowcaseAppHead isNextHeadUsed={false} />
                             <SkinStyle />
-                            {/* TODO: <LanguagePicker /> */}
+                            {/* html = html.replace('</head>', `${styles.map((style) => `<style>${style}</style>`).join('\n')}</head>`); */}
+                            {styles.map((style, i) => (
+                                <style key={i} dangerouslySetInnerHTML={{ __html: style }} />
+                            ))}
+
+                            {/* TODO: Maybe <LanguagePicker /> */}
 
                             <body>
                                 <ShowcaseContent />
@@ -39,6 +50,7 @@ export function exportAsHtml(wallpaper: IWallpaper): string {
     );
 
     html = `<!DOCTYPE html>\n` + html;
+
     html = prettifyHtml(html);
 
     // TODO: !!! Fix links
