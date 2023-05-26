@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Space Backgrounds
 
@@ -8,9 +8,9 @@ Looking for a way to add a touch of wonder and inspiration to your home or offic
 
 Our space background is not only visually stunning, but it also offers a range of benefits for your space. Here are just a few reasons why you should choose our background:
 
-- **Create a unique atmosphere**: Whether you're looking to add a touch of wonder to your child's bedroom or create a professional and inspiring workspace, our space background can help you achieve the look and feel you want.
-- **Easy to use**: Our background is easy to install and can be customized to fit any screen size or shape. Plus, it won't slow down your device or affect its performance.
-- **Durable and long-lasting**: Made from high-quality materials, our background is designed to last for years without losing its vibrancy or quality.
+-   **Create a unique atmosphere**: Whether you're looking to add a touch of wonder to your child's bedroom or create a professional and inspiring workspace, our space background can help you achieve the look and feel you want.
+-   **Easy to use**: Our background is easy to install and can be customized to fit any screen size or shape. Plus, it won't slow down your device or affect its performance.
+-   **Durable and long-lasting**: Made from high-quality materials, our background is designed to last for years without losing its vibrancy or quality.
 
 ## User Stories
 
@@ -24,9 +24,9 @@ Don't just take our word for it - here are some stories from our satisfied custo
 
 Want to learn more about space and astronomy? Check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

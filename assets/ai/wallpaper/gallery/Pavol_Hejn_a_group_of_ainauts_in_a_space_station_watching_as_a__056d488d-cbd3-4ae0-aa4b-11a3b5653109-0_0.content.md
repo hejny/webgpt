@@ -5,27 +5,35 @@
 Welcome to our website dedicated to protecting Earth from massive asteroids! Our team of experts is committed to developing innovative solutions that utilize advanced technology and AI to prevent catastrophic asteroid impacts.
 
 ## Our Mission
+
 Our mission is to protect the planet from the devastating effects of massive asteroids. We believe that by combining cutting-edge technology with expert knowledge, we can develop effective strategies to detect and deflect these dangerous space rocks before they pose a threat to our planet.
 
 ## User Stories
-- "I was always fascinated by space and the possibility of life beyond Earth. But when I learned about the potential dangers of asteroids, I knew I wanted to get involved in finding solutions to protect our planet." - Emily, 27
-- "As a parent, I worry about the future my children will inherit. That's why I support organizations like this one that are working to ensure a safe and secure future for all of us." - David, 42
+
+-   "I was always fascinated by space and the possibility of life beyond Earth. But when I learned about the potential dangers of asteroids, I knew I wanted to get involved in finding solutions to protect our planet." - Emily, 27
+-   "As a parent, I worry about the future my children will inherit. That's why I support organizations like this one that are working to ensure a safe and secure future for all of us." - David, 42
 
 ## Our Approach
+
 At our organization, we take a multi-faceted approach to protecting Earth from asteroids. This includes:
-- Developing advanced technologies to detect and track potentially hazardous asteroids
-- Utilizing AI to analyze data and predict the trajectory of asteroids
-- Designing and implementing deflection strategies to redirect asteroids away from Earth
+
+-   Developing advanced technologies to detect and track potentially hazardous asteroids
+-   Utilizing AI to analyze data and predict the trajectory of asteroids
+-   Designing and implementing deflection strategies to redirect asteroids away from Earth
 
 ## References
+
 If you're interested in learning more about asteroid detection and deflection, check out these resources:
-- [NASA's Planetary Defense Coordination Office](#)
-- [The B612 Foundation](#)
+
+-   [NASA's Planetary Defense Coordination Office](#)
+-   [The B612 Foundation](#)
 
 ## Contact Us
+
 If you have any questions or would like to learn more about our work, please don't hesitate to contact us:
-- Email: info@protectearth.org
-- Phone: 555-1234
+
+-   Email: info@protectearth.org
+-   Phone: 555-1234
 
 Together, we can protect our planet from the threat of massive asteroids!
 
@@ -37,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -134,7 +142,7 @@ Pick from the list:
 - Barlow Condensed
 - Montserrat
 - Futura
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Cinzel
 - Cabin

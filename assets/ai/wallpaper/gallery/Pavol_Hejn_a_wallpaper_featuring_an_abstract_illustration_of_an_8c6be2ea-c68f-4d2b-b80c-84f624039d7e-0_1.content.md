@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # AI Search Revolution
 
@@ -8,10 +8,10 @@ Welcome to our website, where we are proud to offer you a cutting-edge search en
 
 Our AI-powered search engine has several features that set it apart from traditional search engines:
 
-- **Personalized Results:** Our search engine uses machine learning algorithms to understand your search history and preferences, providing you with personalized results tailored to your needs.
-- **Natural Language Processing:** You can type your search query in natural language, and our search engine will understand what you're looking for, even if you don't use specific keywords.
-- **Visual Search:** Our search engine allows you to upload an image and find similar images on the web.
-- **Voice Search:** You can use your voice to search for information hands-free, making it easy to find what you need while you're on the go.
+-   **Personalized Results:** Our search engine uses machine learning algorithms to understand your search history and preferences, providing you with personalized results tailored to your needs.
+-   **Natural Language Processing:** You can type your search query in natural language, and our search engine will understand what you're looking for, even if you don't use specific keywords.
+-   **Visual Search:** Our search engine allows you to upload an image and find similar images on the web.
+-   **Voice Search:** You can use your voice to search for information hands-free, making it easy to find what you need while you're on the go.
 
 ## User Stories
 
@@ -25,9 +25,9 @@ Our AI-powered search engine has already helped thousands of users find the info
 
 Our search engine is based on the latest advancements in artificial intelligence and machine learning. Here are some of the resources we used to develop our technology:
 
-- [Google AI Blog](#googleai)
-- [MIT Technology Review](#mitreview)
-- [OpenAI Blog](#openai)
+-   [Google AI Blog](#googleai)
+-   [MIT Technology Review](#mitreview)
+-   [OpenAI Blog](#openai)
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

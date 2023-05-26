@@ -8,9 +8,9 @@ Welcome to our website, where we bring the beauty and mystery of space to your d
 
 Our space wallpaper is not just any ordinary background. It is carefully crafted to provide an immersive experience that transports you to another world. Here are some reasons why you should choose our space wallpaper:
 
-- High-quality resolution: Our wallpaper is designed to fit perfectly on any screen size, from smartphones to desktop computers. You can enjoy the full details of the image without any distortion or pixelation.
-- Inspiring design: The image of the Ainautes observing Saturn's rings is not only beautiful but also inspiring. It reminds us of the endless possibilities of human exploration and discovery.
-- Customizable: If you prefer a different color scheme or want to add text or logos to the wallpaper, you can easily do so using any photo editing software.
+-   High-quality resolution: Our wallpaper is designed to fit perfectly on any screen size, from smartphones to desktop computers. You can enjoy the full details of the image without any distortion or pixelation.
+-   Inspiring design: The image of the Ainautes observing Saturn's rings is not only beautiful but also inspiring. It reminds us of the endless possibilities of human exploration and discovery.
+-   Customizable: If you prefer a different color scheme or want to add text or logos to the wallpaper, you can easily do so using any photo editing software.
 
 ## User Stories
 
@@ -26,9 +26,9 @@ Our space wallpaper has been used by many people for various purposes. Here are 
 
 If you want to learn more about the Ainautes and their mission, or about the rings of Saturn and other celestial bodies, here are some resources that you might find interesting:
 
-- [NASA's Cassini Mission](#) - Information and images from the spacecraft that explored Saturn and its moons.
-- [Space.com](#) - News and articles about space exploration, astronomy, and astrophysics.
-- [Astronomy Magazine](#) - A popular magazine for amateur and professional astronomers, with stunning images and in-depth features.
+-   [NASA's Cassini Mission](#) - Information and images from the spacecraft that explored Saturn and its moons.
+-   [Space.com](#) - News and articles about space exploration, astronomy, and astrophysics.
+-   [Astronomy Magazine](#) - A popular magazine for amateur and professional astronomers, with stunning images and in-depth features.
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Pick from the list:
 - Barlow Condensed
 - Exo 2
 - Cinzel
-- Creepster
+- Barlow Condensed
 - Roboto
 - Poppins
 - Cormorant Garamond

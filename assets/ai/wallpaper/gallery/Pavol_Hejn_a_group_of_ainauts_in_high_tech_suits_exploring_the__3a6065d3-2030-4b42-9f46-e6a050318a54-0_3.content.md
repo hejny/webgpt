@@ -24,17 +24,17 @@ Here are some stories from people who have been inspired by our mission:
 
 We offer a range of services designed to support our mission of exploration and discovery. These include:
 
-- Research and development of cutting-edge technologies
-- Consulting services for businesses and organizations looking to innovate
-- Educational programs for students and aspiring scientists
+-   Research and development of cutting-edge technologies
+-   Consulting services for businesses and organizations looking to innovate
+-   Educational programs for students and aspiring scientists
 
 ## References
 
 Here are some resources that we recommend for anyone interested in learning more about space exploration and related topics:
 
-- NASA's website: #nasa
-- The Planetary Society: #planetary-society
-- Space.com: #space-com
+-   NASA's website: #nasa
+-   The Planetary Society: #planetary-society
+-   Space.com: #space-com
 
 ## Contact Us
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -113,7 +113,7 @@ Write me a Google font which is best fitting for the website.
 
 Pick from the list:
 - Roboto
-- Creepster
+- Barlow Condensed
 - Raleway
 - Open Sans
 - Playfair Display

@@ -2,11 +2,11 @@
 
 # Gas Giant Exploration
 
-Welcome to our website dedicated to exploring the mysteries of the universe! Our team of Ainautes and their AI companions are on a mission to uncover the secrets of the cosmos. 
+Welcome to our website dedicated to exploring the mysteries of the universe! Our team of Ainautes and their AI companions are on a mission to uncover the secrets of the cosmos.
 
 ## Wallpaper Background
 
-Our wallpaper features a stunning image of our team conducting experiments on the surface of a massive, gas giant planet. The vibrant colors and intricate details capture the awe-inspiring beauty of the universe. 
+Our wallpaper features a stunning image of our team conducting experiments on the surface of a massive, gas giant planet. The vibrant colors and intricate details capture the awe-inspiring beauty of the universe.
 
 ## Our Mission
 
@@ -16,17 +16,17 @@ At our core, we are a community of space enthusiasts who are passionate about di
 
 We love hearing from fellow space enthusiasts about their experiences and discoveries. Check out some of our favorite user stories:
 
-- "I've always been fascinated by space, but this website has taken my passion to a whole new level!" - John D.
-- "Thanks to this community, I've learned so much about the universe and have even started my own stargazing club!" - Sarah K.
-- "The wallpaper on this site is breathtaking - it's like having a piece of the universe right on my desktop!" - Alex T.
+-   "I've always been fascinated by space, but this website has taken my passion to a whole new level!" - John D.
+-   "Thanks to this community, I've learned so much about the universe and have even started my own stargazing club!" - Sarah K.
+-   "The wallpaper on this site is breathtaking - it's like having a piece of the universe right on my desktop!" - Alex T.
 
 ## References
 
 Looking for more information on space exploration? Check out some of our recommended resources:
 
-- NASA's website (#nasa)
-- Space.com (#spacecom)
-- Astronomy Magazine (#astronomy)
+-   NASA's website (#nasa)
+-   Space.com (#spacecom)
+-   Astronomy Magazine (#astronomy)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,11 +61,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Depths of Gas Giants: A Journey Through the Universe
 
-Welcome to our website dedicated to exploring the mysteries of the universe! Our team of Ainautes and their AI companions are on a mission to uncover the secrets of the cosmos. 
+Welcome to our website dedicated to exploring the mysteries of the universe! Our team of Ainautes and their AI companions are on a mission to uncover the secrets of the cosmos.
 
 ## Wallpaper Background
 
-Our wallpaper features a stunning image of our team conducting experiments on the surface of a massive, gas giant planet. The vibrant colors and intricate details capture the awe-inspiring beauty of the universe. 
+Our wallpaper features a stunning image of our team conducting experiments on the surface of a massive, gas giant planet. The vibrant colors and intricate details capture the awe-inspiring beauty of the universe.
 
 ## Our Mission
 
@@ -120,7 +120,7 @@ Pick from the list:
 - Orbitron
 - Lobster
 - Lato
-- Creepster
+- Barlow Condensed
 - Roboto
 
 

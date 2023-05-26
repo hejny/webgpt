@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Glacial Exploration
 
@@ -10,10 +10,10 @@ Our wallpaper is not just a beautiful background - it's an invitation to explore
 
 ## Features
 
-- High-quality resolution for all devices
-- Compatible with desktop and mobile screens
-- Easy to download and set as wallpaper
-- Regularly updated with new designs
+-   High-quality resolution for all devices
+-   Compatible with desktop and mobile screens
+-   Easy to download and set as wallpaper
+-   Regularly updated with new designs
 
 ## User Stories
 
@@ -25,9 +25,9 @@ Our wallpaper is not just a beautiful background - it's an invitation to explore
 
 Want to learn more about space exploration and the mysteries of the universe? Check out these resources:
 
-- NASA: [Exploration](#)
-- Space.com: [Space Exploration News](#)
-- Astronomy.com: [Mysteries of the Universe](#)
+-   NASA: [Exploration](#)
+-   Space.com: [Space Exploration News](#)
+-   Astronomy.com: [Mysteries of the Universe](#)
 
 ## Contact Us
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -8,18 +8,18 @@ Welcome to Arachnid Adventures, your ultimate guide to the captivating world of 
 
 At Arachnid Adventures, we offer a wide range of content for all levels of spider enthusiasts. Here are just a few examples:
 
-- **Spider Species Guide:** Learn about different types of spiders, their habitats, and unique characteristics.
-- **Web Weaving 101:** Discover the fascinating world of spider webs, including how they're made and what they're used for.
-- **Spider Myths Debunked:** Separate fact from fiction when it comes to common misconceptions about spiders.
-- **User Stories:** Read stories from fellow spider enthusiasts about their own experiences with these amazing creatures.
+-   **Spider Species Guide:** Learn about different types of spiders, their habitats, and unique characteristics.
+-   **Web Weaving 101:** Discover the fascinating world of spider webs, including how they're made and what they're used for.
+-   **Spider Myths Debunked:** Separate fact from fiction when it comes to common misconceptions about spiders.
+-   **User Stories:** Read stories from fellow spider enthusiasts about their own experiences with these amazing creatures.
 
 ## References
 
 We take pride in providing accurate and up-to-date information about spiders. Here are some of our trusted sources:
 
-- National Geographic: [Spiders](#)
-- American Museum of Natural History: [Spiders](#)
-- Spider Identification: [Spider ID](#)
+-   National Geographic: [Spiders](#)
+-   American Museum of Natural History: [Spiders](#)
+-   Spider Identification: [Spider ID](#)
 
 ## Contact Us
 
@@ -35,10 +35,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -54,7 +54,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # "Arachnid Adventures" Wallpaper Background for Your Desktop
 
-Welcome to Arachnid Adventures, your go-to source for all things spider-related! Our website is dedicated to educating and entertaining spider enthusiasts of all levels, from beginners to seasoned arachnologists. 
+Welcome to Arachnid Adventures, your go-to source for all things spider-related! Our website is dedicated to educating and entertaining spider enthusiasts of all levels, from beginners to seasoned arachnologists.
 
 Our wallpaper background features a stunning close-up of a spider on its web, showcasing the intricate beauty and complexity of these amazing creatures. But that's just the beginning of the adventure!
 
@@ -133,7 +133,7 @@ Pick from the list:
 - Exo 2
 - Cinzel
 - IBM Plex Sans
-- Creepster
+- Barlow Condensed
 - Alegreya
 - Cabin
 - Playfair Display

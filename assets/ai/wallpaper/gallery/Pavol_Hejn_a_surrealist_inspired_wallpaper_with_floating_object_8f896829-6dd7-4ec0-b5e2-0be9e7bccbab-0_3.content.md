@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Creative Workshop
 
@@ -12,9 +12,9 @@ Our surrealist-inspired wallpaper with floating objects such as gears, cogs, and
 
 At The Workshop, we offer a variety of services to help you turn your ideas into reality. Whether you're an artist looking to create a new masterpiece or an entrepreneur with a groundbreaking product idea, we have the resources you need to succeed.
 
-- **Design Services**: Our team of expert designers can help you bring your ideas to life with custom designs tailored to your needs.
-- **Engineering Services**: Our engineers can help you build prototypes and test your products to ensure they meet your specifications.
-- **Business Services**: Our business experts can help you develop a business plan, secure funding, and navigate legal and regulatory requirements.
+-   **Design Services**: Our team of expert designers can help you bring your ideas to life with custom designs tailored to your needs.
+-   **Engineering Services**: Our engineers can help you build prototypes and test your products to ensure they meet your specifications.
+-   **Business Services**: Our business experts can help you develop a business plan, secure funding, and navigate legal and regulatory requirements.
 
 ## User Stories
 
@@ -28,9 +28,9 @@ Our community is made up of people from all walks of life who are passionate abo
 
 Check out some of the projects that our community has created using The Workshop's resources:
 
-- [The Smart Garden](#)
-- [The Digital Art Installation](#)
-- [The Sustainable Clothing Line](#)
+-   [The Smart Garden](#)
+-   [The Digital Art Installation](#)
+-   [The Sustainable Clothing Line](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

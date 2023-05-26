@@ -8,9 +8,9 @@ Welcome to our website, where we offer a beautiful night sky background that wil
 
 Our background is not only beautiful but also high-quality and easy to download. Here are some reasons why you should choose our night sky background:
 
-- High-resolution image: Our background is available in high resolution, ensuring that every detail of the stunning desert landscape and starry sky is captured.
-- Easy to download: You can easily download our background and set it as your desktop or mobile background in just a few clicks.
-- Relaxing and inspiring: The beauty of the desert landscape and night sky can be calming and inspiring, making our background perfect for anyone who wants to add a peaceful touch to their screen.
+-   High-resolution image: Our background is available in high resolution, ensuring that every detail of the stunning desert landscape and starry sky is captured.
+-   Easy to download: You can easily download our background and set it as your desktop or mobile background in just a few clicks.
+-   Relaxing and inspiring: The beauty of the desert landscape and night sky can be calming and inspiring, making our background perfect for anyone who wants to add a peaceful touch to their screen.
 
 ## User Stories
 
@@ -24,9 +24,9 @@ Here are some user stories from people who have downloaded our night sky backgro
 
 If you're interested in learning more about the beauty of the night sky and nature, here are some references that you may find helpful:
 
-- [National Park Service](#)
-- [Outdoor Photographer Magazine](#)
-- [The Sierra Club](#)
+-   [National Park Service](#)
+-   [Outdoor Photographer Magazine](#)
+-   [The Sierra Club](#)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Night Sky Wallpaper: Bring the Beauty of the Stars to Your Screen
 
-Welcome to our website, where we offer a stunning night sky wallpaper that will transform your desktop or mobile screen. Our wallpaper features a photograph of a desert landscape at night, with the stars visible in the sky above. 
+Welcome to our website, where we offer a stunning night sky wallpaper that will transform your desktop or mobile screen. Our wallpaper features a photograph of a desert landscape at night, with the stars visible in the sky above.
 
 ## Why Choose Our Night Sky Wallpaper?
 
@@ -191,7 +191,7 @@ Pick from the list:
 - Orbitron
 - Futura
 - Poppins
-- Creepster
+- Barlow Condensed
 - Montserrat
 - Cabin
 - Cormorant Garamond

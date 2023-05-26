@@ -14,12 +14,12 @@ We understand that visuals are important when it comes to creating an engaging w
 
 Our blog covers a wide range of topics related to fashion and beauty, including:
 
-- Tips for finding your personal style
-- Makeup tutorials and product reviews
-- Skincare tips and tricks
-- Hairstyle ideas and tutorials
-- Body positivity and self-love
-- And much more!
+-   Tips for finding your personal style
+-   Makeup tutorials and product reviews
+-   Skincare tips and tricks
+-   Hairstyle ideas and tutorials
+-   Body positivity and self-love
+-   And much more!
 
 We believe that everyone deserves to feel confident and beautiful, regardless of their age, size, or background. Our team of experts is dedicated to providing you with valuable information and inspiration to help you embrace your inner peacock and shine bright.
 
@@ -35,11 +35,11 @@ We love hearing from our readers and seeing how our content has impacted their l
 
 We pride ourselves on providing accurate and trustworthy information to our readers. Here are some of the sources we rely on:
 
-- Allure
-- Vogue
-- Harper's Bazaar
-- Refinery29
-- Elle
+-   Allure
+-   Vogue
+-   Harper's Bazaar
+-   Refinery29
+-   Elle
 
 ## Contact Us
 
@@ -55,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -74,7 +74,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Peacock-inspired Wallpaper for Your Fashion and Beauty Blog
 
-Welcome to our fashion and beauty blog, where we showcase the latest trends and styles in the industry. Our website is designed to provide you with inspiration and tips on how to stay fashionable and beautiful all year round. 
+Welcome to our fashion and beauty blog, where we showcase the latest trends and styles in the industry. Our website is designed to provide you with inspiration and tips on how to stay fashionable and beautiful all year round.
 
 ## A Vibrant Peacock Graphic as Your Background
 
@@ -115,7 +115,7 @@ We pride ourselves on providing accurate and trustworthy information to our read
 
 ## Contact Us
 
-We love hearing from our readers! If you have any questions, comments, or suggestions, please don't hesitate to reach out to us at [contact@ourfashionandbeautyblog.com](mailto:contact@ourfashionandbeautyblog.com). You can also follow us on [Twitter](#) and [Instagram](#) for daily fashion and beauty inspiration. 
+We love hearing from our readers! If you have any questions, comments, or suggestions, please don't hesitate to reach out to us at [contact@ourfashionandbeautyblog.com](mailto:contact@ourfashionandbeautyblog.com). You can also follow us on [Twitter](#) and [Instagram](#) for daily fashion and beauty inspiration.
 
 Thank you for visiting our website and we hope you enjoy our content as much as we enjoy creating it!
 
@@ -198,7 +198,7 @@ Pick from the list:
 - Poppins
 - Exo 2
 - Futura
-- Creepster
+- Barlow Condensed
 - Cabin
 - Dancing Script
 - Orbitron

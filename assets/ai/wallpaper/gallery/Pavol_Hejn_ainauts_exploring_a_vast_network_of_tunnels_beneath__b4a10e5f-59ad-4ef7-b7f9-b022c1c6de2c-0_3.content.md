@@ -22,9 +22,9 @@ Our team consists of experienced Ainautes who are trained to navigate complex tu
 
 For more information on our work and the discoveries we have made, please see our list of references:
 
-- [Exploring the Depths: A Guide to Subterranean Environments](#)
-- [Life Forms in Subterranean Worlds: A Comparative Study](#)
-- [Mapping the Tunnels: A Technical Report](#)
+-   [Exploring the Depths: A Guide to Subterranean Environments](#)
+-   [Life Forms in Subterranean Worlds: A Comparative Study](#)
+-   [Mapping the Tunnels: A Technical Report](#)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -106,7 +106,7 @@ Pick from the list:
 - IBM Plex Sans
 - Open Sans
 - Lato
-- Creepster
+- Barlow Condensed
 - Lobster
 - Dancing Script
 - Roboto

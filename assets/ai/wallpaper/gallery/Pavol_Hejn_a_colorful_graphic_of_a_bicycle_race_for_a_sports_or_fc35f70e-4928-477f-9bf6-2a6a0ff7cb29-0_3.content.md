@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Fitness Guidance
 
@@ -12,9 +12,9 @@ Our team consists of experienced fitness experts who are passionate about helpin
 
 We offer a variety of services to help you achieve your fitness goals, including:
 
-- Personalized workout plans tailored to your specific needs and goals.
-- Nutritional advice and meal plans to help you maintain a healthy diet.
-- Online coaching and support from our team of experts.
+-   Personalized workout plans tailored to your specific needs and goals.
+-   Nutritional advice and meal plans to help you maintain a healthy diet.
+-   Online coaching and support from our team of experts.
 
 ## User Stories
 
@@ -28,9 +28,9 @@ Don't just take our word for it - hear from some of our satisfied customers:
 
 Looking for more information on a specific topic? Check out our references section for a list of helpful resources:
 
-- [American Council on Exercise](#ace)
-- [National Institute of Health](#nih)
-- [World Health Organization](#who)
+-   [American Council on Exercise](#ace)
+-   [National Institute of Health](#nih)
+-   [World Health Organization](#who)
 
 ## Contact Us
 
@@ -54,10 +54,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

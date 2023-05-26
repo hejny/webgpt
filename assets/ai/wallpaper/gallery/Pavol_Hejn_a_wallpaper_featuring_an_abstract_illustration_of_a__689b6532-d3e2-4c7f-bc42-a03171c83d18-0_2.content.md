@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Futuristic Nightscape
 
@@ -10,9 +10,9 @@ Our wallpaper is the perfect choice for websites that want to stand out from the
 
 Here are some reasons why you should choose Dark City Nights:
 
-- Unique design: Our wallpaper is unlike anything else out there. It's a bold and striking image that will capture your visitors' attention and keep them engaged.
-- High-quality resolution: We use only the highest quality images, so you can be sure that your background will look crisp and clear on any device.
-- Easy to install: Our wallpaper is easy to install, and we provide detailed instructions to help you get it up and running quickly.
+-   Unique design: Our wallpaper is unlike anything else out there. It's a bold and striking image that will capture your visitors' attention and keep them engaged.
+-   High-quality resolution: We use only the highest quality images, so you can be sure that your background will look crisp and clear on any device.
+-   Easy to install: Our wallpaper is easy to install, and we provide detailed instructions to help you get it up and running quickly.
 
 ## How to Use Dark City Nights
 
@@ -20,9 +20,9 @@ Using our wallpaper is easy. Simply download the image from our website and uplo
 
 Here are some tips for using our wallpaper effectively:
 
-- Keep your content simple: Our wallpaper is a bold image, so you don't want to overwhelm your visitors with too much text or cluttered design elements.
-- Use contrasting colors: The dark and moody color scheme of our wallpaper works best with bright and contrasting colors for your text and other design elements.
-- Test it out: Make sure to test your website on different devices and screen sizes to ensure that the wallpaper looks great everywhere.
+-   Keep your content simple: Our wallpaper is a bold image, so you don't want to overwhelm your visitors with too much text or cluttered design elements.
+-   Use contrasting colors: The dark and moody color scheme of our wallpaper works best with bright and contrasting colors for your text and other design elements.
+-   Test it out: Make sure to test your website on different devices and screen sizes to ensure that the wallpaper looks great everywhere.
 
 ## Contact Us
 
@@ -32,9 +32,9 @@ If you have any questions or concerns about our wallpaper, please don't hesitate
 
 Here are some resources that we used to create our wallpaper:
 
-- [Unsplash](https://unsplash.com/)
-- [Pexels](https://www.pexels.com/)
-- [Pixabay](https://pixabay.com/)
+-   [Unsplash](https://unsplash.com/)
+-   [Pexels](https://www.pexels.com/)
+-   [Pixabay](https://pixabay.com/)
 
 ## User Stories
 
@@ -54,10 +54,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

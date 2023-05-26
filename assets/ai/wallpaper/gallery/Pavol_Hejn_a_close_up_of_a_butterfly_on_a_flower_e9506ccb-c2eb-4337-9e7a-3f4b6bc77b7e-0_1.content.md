@@ -8,9 +8,9 @@ Welcome to our website, where you can find stunning backgrounds for your phone o
 
 Our background collection is carefully curated to provide you with high-quality images that are both beautiful and functional. Here are some reasons why you should choose our butterfly background:
 
-- High resolution: Our backgrounds are available in high resolution, which means they will look great on any device.
-- Easy to download: You can download our backgrounds with just one click and set them as your wallpaper in seconds.
-- Free: All of our backgrounds are completely free to download and use.
+-   High resolution: Our backgrounds are available in high resolution, which means they will look great on any device.
+-   Easy to download: You can download our backgrounds with just one click and set them as your wallpaper in seconds.
+-   Free: All of our backgrounds are completely free to download and use.
 
 ## How to Download Our Butterfly Background
 
@@ -33,16 +33,16 @@ Our users love our butterfly background! Here are some of their stories:
 
 If you're interested in learning more about butterflies and their importance in our ecosystem, check out these resources:
 
-- [Butterfly Conservation](#)
-- [National Wildlife Federation](#)
-- [The Butterfly Site](#)
+-   [Butterfly Conservation](#)
+-   [National Wildlife Federation](#)
+-   [The Butterfly Site](#)
 
 ## Contact Us
 
 If you have any questions or feedback, we'd love to hear from you. You can contact us at [email protected] or follow us on social media:
 
-- Twitter: [@butterflybackgrounds](#)
-- Instagram: [@butterflybackgrounds](#)
+-   Twitter: [@butterflybackgrounds](#)
+-   Instagram: [@butterflybackgrounds](#)
 
 Thank you for visiting our website and we hope you enjoy our butterfly background!
 
@@ -54,10 +54,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -184,7 +184,7 @@ Pick from the list:
 - Cormorant Garamond
 - Great Vibes
 - Barlow Condensed
-- Creepster
+- Barlow Condensed
 - Cinzel Decorative
 - Inter
 - Lobster

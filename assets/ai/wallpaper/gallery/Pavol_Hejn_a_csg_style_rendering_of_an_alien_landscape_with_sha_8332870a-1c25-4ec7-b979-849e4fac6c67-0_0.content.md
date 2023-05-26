@@ -12,9 +12,9 @@ Our new background features a csg-style rendering of an alien landscape, with sh
 
 Our users love the new background! Here are some of the comments we've received:
 
-- "The background gives my website a futuristic look and feel. It's perfect for my tech blog!"
-- "I love the contrast between the sharp angles and the soft curves. It really makes my website stand out!"
-- "The colors are so vibrant and eye-catching. I can't stop staring at my screen!"
+-   "The background gives my website a futuristic look and feel. It's perfect for my tech blog!"
+-   "I love the contrast between the sharp angles and the soft curves. It really makes my website stand out!"
+-   "The colors are so vibrant and eye-catching. I can't stop staring at my screen!"
 
 ## Latest Tech News
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -139,7 +139,7 @@ Pick from the list:
 - Lobster
 - Great Vibes
 - Cabin
-- Creepster
+- Barlow Condensed
 - Alegreya
 - Cormorant Garamond
 - Lato

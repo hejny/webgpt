@@ -12,18 +12,18 @@ Our website features a striking wallpaper with a repeating pattern of abstract s
 
 At Malware Madness, we believe that knowledge is power when it comes to cybersecurity. That's why we've compiled a comprehensive list of resources to help you stay informed and protected.
 
-- **Articles**: Our team of experts regularly publishes articles on the latest cybersecurity trends and threats.
-- **Guides**: We offer step-by-step guides on how to secure your devices and accounts.
-- **Tools**: From password managers to antivirus software, we recommend the best tools to keep you safe.
-- **User Stories**: Read real-life stories from people who have experienced cyber attacks and learn from their experiences.
+-   **Articles**: Our team of experts regularly publishes articles on the latest cybersecurity trends and threats.
+-   **Guides**: We offer step-by-step guides on how to secure your devices and accounts.
+-   **Tools**: From password managers to antivirus software, we recommend the best tools to keep you safe.
+-   **User Stories**: Read real-life stories from people who have experienced cyber attacks and learn from their experiences.
 
 ## References
 
 Looking for more information on cybersecurity? Check out our list of references for further reading.
 
-- **Books**: Our favorite books on cybersecurity, from beginner-friendly primers to in-depth technical manuals.
-- **Websites**: A curated list of websites and blogs that cover cybersecurity topics.
-- **Podcasts**: Listen to experts discuss the latest developments in cybersecurity on these top-rated podcasts.
+-   **Books**: Our favorite books on cybersecurity, from beginner-friendly primers to in-depth technical manuals.
+-   **Websites**: A curated list of websites and blogs that cover cybersecurity topics.
+-   **Podcasts**: Listen to experts discuss the latest developments in cybersecurity on these top-rated podcasts.
 
 ## Contact Us
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -99,7 +99,7 @@ Pick from the list:
 - Montserrat
 - Poppins
 - Cabin
-- Creepster
+- Barlow Condensed
 - Cormorant Garamond
 - Raleway
 - Great Vibes

@@ -8,10 +8,10 @@ Welcome to our website, where we offer a cutting-edge AI-powered virtual assista
 
 Our AI-powered virtual assistant comes with a range of features that will help you manage your business more efficiently:
 
-- **Automated Scheduling**: Our virtual assistant can schedule appointments, send reminders, and update your calendar in real-time.
-- **Customizable Responses**: You can customize responses to common queries, saving time and reducing human error.
-- **Data Analysis**: Our virtual assistant can analyze data and generate reports, helping you make informed decisions.
-- **24/7 Availability**: Our virtual assistant is available round the clock, ensuring that your business never misses a beat.
+-   **Automated Scheduling**: Our virtual assistant can schedule appointments, send reminders, and update your calendar in real-time.
+-   **Customizable Responses**: You can customize responses to common queries, saving time and reducing human error.
+-   **Data Analysis**: Our virtual assistant can analyze data and generate reports, helping you make informed decisions.
+-   **24/7 Availability**: Our virtual assistant is available round the clock, ensuring that your business never misses a beat.
 
 ## User Stories
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -139,7 +139,7 @@ Pick from the list:
 - Orbitron
 - Cinzel
 - Cabin
-- Creepster
+- Barlow Condensed
 - Great Vibes
 - Dancing Script
 

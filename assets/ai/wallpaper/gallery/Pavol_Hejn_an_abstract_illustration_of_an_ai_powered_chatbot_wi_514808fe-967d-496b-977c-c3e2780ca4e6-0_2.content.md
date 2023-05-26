@@ -10,9 +10,9 @@ Our AI-powered chatbot background is designed to enhance the user experience on 
 
 ## Benefits of Using Our AI-Powered Chatbot Background
 
-- Enhances the user experience: Our AI-powered chatbot background creates a visually appealing and engaging experience for your users.
-- Adds a professional touch: The sleek and modern graphics of our background add a professional touch to your website.
-- Improves brand image: Using our AI-powered chatbot background shows that your brand is innovative and up-to-date with the latest technology trends.
+-   Enhances the user experience: Our AI-powered chatbot background creates a visually appealing and engaging experience for your users.
+-   Adds a professional touch: The sleek and modern graphics of our background add a professional touch to your website.
+-   Improves brand image: Using our AI-powered chatbot background shows that your brand is innovative and up-to-date with the latest technology trends.
 
 ## User Stories
 
@@ -30,9 +30,9 @@ Using our AI-powered chatbot background is easy. Simply download the wallpaper f
 
 Here are some references that may be useful:
 
-- [How to design a chatbot](#)
-- [The benefits of using AI-powered chatbots](#)
-- [Minimalist design trends in web design](#)
+-   [How to design a chatbot](#)
+-   [The benefits of using AI-powered chatbots](#)
+-   [Minimalist design trends in web design](#)
 
 ## Contact Us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -128,7 +128,7 @@ Pick from the list:
 - Cabin
 - Barlow Condensed
 - Cinzel
-- Creepster
+- Barlow Condensed
 - Cinzel Decorative
 
 

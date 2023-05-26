@@ -12,7 +12,7 @@ The header of the page should not be copy of the text but rather a real content 
 - Do not include images
 -->
 
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Forest Pathway
 
@@ -30,10 +30,10 @@ The quote by Robert Frost perfectly captures the essence of our wallpaper. The f
 
 Our website offers a variety of horror and mystery content, including:
 
-- Short stories
-- Articles on true crime and unsolved mysteries
-- Reviews of horror movies and books
-- Podcasts featuring interviews with experts in the field
+-   Short stories
+-   Articles on true crime and unsolved mysteries
+-   Reviews of horror movies and books
+-   Podcasts featuring interviews with experts in the field
 
 We strive to provide our readers with the most thrilling and chilling content possible. Whether you're a horror fanatic or just looking for a scare, we've got you covered.
 

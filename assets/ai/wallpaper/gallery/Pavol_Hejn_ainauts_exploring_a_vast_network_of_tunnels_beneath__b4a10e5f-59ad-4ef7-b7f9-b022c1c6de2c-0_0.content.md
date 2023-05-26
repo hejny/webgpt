@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Planet Trek
 
@@ -12,25 +12,25 @@ At our website, we are passionate about science fiction and adventure. We believ
 
 Our users come from all walks of life, but they share a love of adventure and exploration. Here are some stories from our community:
 
-- "The background on this website is amazing! It really sets the tone for my own writing and inspires me to keep exploring new ideas." - Sarah, 28
-- "I'm a gamer, and this background is perfect for me. It gets me in the mood for epic adventures and reminds me why I love sci-fi so much." - Alex, 22
-- "As an artist, I find myself staring at this background for hours. The colors and textures are so captivating, and they spark my imagination in ways I never thought possible." - Emily, 36
+-   "The background on this website is amazing! It really sets the tone for my own writing and inspires me to keep exploring new ideas." - Sarah, 28
+-   "I'm a gamer, and this background is perfect for me. It gets me in the mood for epic adventures and reminds me why I love sci-fi so much." - Alex, 22
+-   "As an artist, I find myself staring at this background for hours. The colors and textures are so captivating, and they spark my imagination in ways I never thought possible." - Emily, 36
 
 ## Resources
 
 If you're interested in learning more about sci-fi and adventure, we've compiled a list of resources that we think you'll enjoy:
 
-- [Sci-Fi and Fantasy Writers of America](#)
-- [The Adventure Zone Podcast](#)
-- [Polygon's Best Sci-Fi Books of All Time](#)
+-   [Sci-Fi and Fantasy Writers of America](#)
+-   [The Adventure Zone Podcast](#)
+-   [Polygon's Best Sci-Fi Books of All Time](#)
 
 ## Contact Us
 
 We love hearing from our users! If you have any questions, comments, or suggestions, please don't hesitate to get in touch:
 
-- Email: contact@adventurewebsite.com
-- Twitter: @adventureweb
-- Instagram: @adventurewebsite
+-   Email: contact@adventurewebsite.com
+-   Twitter: @adventureweb
+-   Instagram: @adventurewebsite
 
 Thank you for visiting our website, and happy exploring! 🚀🪐
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

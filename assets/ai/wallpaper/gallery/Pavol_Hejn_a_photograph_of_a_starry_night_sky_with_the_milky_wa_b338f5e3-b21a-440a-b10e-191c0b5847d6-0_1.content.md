@@ -2,7 +2,7 @@
 
 # Sky Astronomy
 
-Welcome to our website, where we offer a stunning astronomy-themed background for your desktop or mobile device. Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead. 
+Welcome to our website, where we offer a stunning astronomy-themed background for your desktop or mobile device. Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead.
 
 ## Why Choose Our Astronomy Wallpaper?
 
@@ -10,10 +10,10 @@ Our astronomy wallpaper is more than just a beautiful image. It's a gateway to t
 
 ## Features
 
-- High-quality resolution
-- Compatible with various devices and operating systems
-- Easy to download and install
-- Regularly updated with new images
+-   High-quality resolution
+-   Compatible with various devices and operating systems
+-   Easy to download and install
+-   Regularly updated with new images
 
 ## User Stories
 
@@ -25,9 +25,9 @@ Our astronomy wallpaper is more than just a beautiful image. It's a gateway to t
 
 For more information about astronomy and stargazing, check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Sky & Telescope](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Sky & Telescope](#)
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -60,7 +60,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Wonders of the Night Sky with Our Astronomy Background
 
-Welcome to our website, where we offer a stunning astronomy-themed background for your desktop or mobile device. Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead. 
+Welcome to our website, where we offer a stunning astronomy-themed background for your desktop or mobile device. Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead.
 
 ## Why Choose Our Astronomy Wallpaper?
 
@@ -116,7 +116,7 @@ Pick from the list:
 - Exo 2
 - Cabin
 - Barlow Condensed
-- Creepster
+- Barlow Condensed
 - Raleway
 - Great Vibes
 - Alegreya

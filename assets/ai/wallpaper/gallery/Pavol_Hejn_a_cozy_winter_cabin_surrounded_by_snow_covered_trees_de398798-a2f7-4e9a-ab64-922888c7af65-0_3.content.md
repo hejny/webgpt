@@ -23,16 +23,19 @@ Order your snowy cabin background today and start creating a cozy winter retreat
 ---
 
 ### References
-- [How to Create a Cozy Living Space](#)
-- [10 Rustic Home Decor Ideas](#)
-- [Winter Cabin Vacation Rentals](#)
+
+-   [How to Create a Cozy Living Space](#)
+-   [10 Rustic Home Decor Ideas](#)
+-   [Winter Cabin Vacation Rentals](#)
 
 ### User Stories
+
 _"I recently redecorated my living room and wanted to add a feature wall that would make a statement. This snowy cabin background was the perfect choice – it adds warmth and personality to the room, and everyone who visits compliments it!"_ - Jane D.
 
 _"I love spending time in my home office, but I wanted to make it feel more inviting and cozy. Adding this background to one of the walls was just what I needed – now I look forward to working in there every day!"_ - Mark S.
 
 ### Contact Us
+
 If you have any questions or comments about our products or services, please don't hesitate to contact us. You can reach us by email at info@cozyhomedecor.com or by phone at 555-1234. We're always happy to hear from our customers!
 
 <!--
@@ -43,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -62,7 +65,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Cozy Winter Cabin Wallpaper for Your Home Decor Blog
 
-Welcome to our home decor and lifestyle blog, where we provide inspiration and tips to create a cozy and inviting living space. Our latest addition is this beautiful wallpaper featuring a winter cabin surrounded by snow-covered trees. 
+Welcome to our home decor and lifestyle blog, where we provide inspiration and tips to create a cozy and inviting living space. Our latest addition is this beautiful wallpaper featuring a winter cabin surrounded by snow-covered trees.
 
 ## Bring the Outdoors In
 
@@ -202,7 +205,7 @@ Pick from the list:
 - Cabin
 - Montserrat
 - Exo 2
-- Creepster
+- Barlow Condensed
 - Orbitron
 - Futura
 - IBM Plex Sans

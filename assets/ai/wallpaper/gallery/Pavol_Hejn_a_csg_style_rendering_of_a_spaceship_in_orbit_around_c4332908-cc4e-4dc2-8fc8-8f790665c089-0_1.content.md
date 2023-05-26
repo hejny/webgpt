@@ -87,7 +87,7 @@ Pick from the list:
 - Exo 2
 - Barlow Condensed
 - Dancing Script
-- Creepster
+- Barlow Condensed
 - Roboto
 
 

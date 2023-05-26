@@ -12,10 +12,10 @@ A bicycle represents an active lifestyle and is a great way to stay fit. Cycling
 
 Our blog features articles on a wide range of health and wellness topics, including:
 
-- Workout routines for different fitness levels
-- Tips for healthy eating and meal planning
-- Reviews of fitness equipment and products
-- Success stories from people who have achieved their fitness goals
+-   Workout routines for different fitness levels
+-   Tips for healthy eating and meal planning
+-   Reviews of fitness equipment and products
+-   Success stories from people who have achieved their fitness goals
 
 We also offer resources such as workout plans, recipes, and fitness challenges to help you stay motivated and on track.
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -165,7 +165,7 @@ Thank you for visiting our health and wellness blog. We hope the colorful graphi
 Write me a Google font which is best fitting for the website.
 
 Pick from the list:
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Lobster
 - Barlow Condensed

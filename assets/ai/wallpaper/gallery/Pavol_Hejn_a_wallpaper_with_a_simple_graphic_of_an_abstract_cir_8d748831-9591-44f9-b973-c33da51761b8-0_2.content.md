@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Tech Connect
 
@@ -16,17 +16,17 @@ To download the Circuit Board background, simply right-click on the image and se
 
 Here are some user stories from satisfied customers who have downloaded our Circuit Board background:
 
-- "I love the Circuit Board background! It's the perfect addition to my computer."
-- "The colors are so soothing and the design is really unique. I get compliments on it all the time!"
-- "I'm not usually one for abstract designs, but this background really caught my eye. It's now my go-to choice."
+-   "I love the Circuit Board background! It's the perfect addition to my computer."
+-   "The colors are so soothing and the design is really unique. I get compliments on it all the time!"
+-   "I'm not usually one for abstract designs, but this background really caught my eye. It's now my go-to choice."
 
 ## References
 
 Looking for more tech-related content? Check out these helpful resources:
 
-- [Tech Crunch](#)
-- [Wired](#)
-- [The Verge](#)
+-   [Tech Crunch](#)
+-   [Wired](#)
+-   [The Verge](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

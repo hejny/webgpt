@@ -16,17 +16,17 @@ Our mission is to push the boundaries of space exploration and expand our unders
 
 We have received countless stories from people who have been inspired by our work. Here are just a few:
 
-- "I never thought I would be interested in space exploration until I stumbled upon your website. Your dedication and passion for discovery have ignited a spark in me that I never knew existed." - Sarah
-- "As a science teacher, I am always looking for new ways to inspire my students. Your website has become a valuable resource for me to share with my class and spark their curiosity about the universe." - Mr. Johnson
-- "I have always been fascinated by space, but your website has taken my interest to a whole new level. Thank you for sharing your discoveries with the world!" - Alex
+-   "I never thought I would be interested in space exploration until I stumbled upon your website. Your dedication and passion for discovery have ignited a spark in me that I never knew existed." - Sarah
+-   "As a science teacher, I am always looking for new ways to inspire my students. Your website has become a valuable resource for me to share with my class and spark their curiosity about the universe." - Mr. Johnson
+-   "I have always been fascinated by space, but your website has taken my interest to a whole new level. Thank you for sharing your discoveries with the world!" - Alex
 
 ## References
 
 If you're interested in learning more about gas giants and our research, here are some resources we recommend:
 
-- [NASA's Gas Giant Exploration Page](#gas-giant-exploration)
-- [National Geographic's Guide to Gas Giants](#national-geographic-gas-giants)
-- [Our Latest Research Findings](#latest-research-findings)
+-   [NASA's Gas Giant Exploration Page](#gas-giant-exploration)
+-   [National Geographic's Guide to Gas Giants](#national-geographic-gas-giants)
+-   [Our Latest Research Findings](#latest-research-findings)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -113,7 +113,7 @@ Pick from the list:
 - Exo 2
 - Cormorant Garamond
 - Montserrat
-- Creepster
+- Barlow Condensed
 - IBM Plex Sans
 - Great Vibes
 - Dancing Script

@@ -61,7 +61,7 @@ Write me a Google font which is best fitting for the website.
 Pick from the list:
 - Montserrat
 - Poppins
-- Creepster
+- Barlow Condensed
 - Orbitron
 - IBM Plex Sans
 - Cabin

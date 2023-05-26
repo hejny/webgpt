@@ -22,15 +22,15 @@ We use cutting-edge technology to simulate the conditions inside a black hole. O
 
 For more information on black holes and astrophysics, check out these resources:
 
-- [NASA's Black Hole FAQ](#)
-- [Theoretical Astrophysics at Princeton University](#)
+-   [NASA's Black Hole FAQ](#)
+-   [Theoretical Astrophysics at Princeton University](#)
 
 ## Contact Us
 
 If you have any questions or would like to learn more about our work, please don't hesitate to contact us:
 
-- Email: info@ainautes.com
-- Phone: +1 (555) 123-4567
+-   Email: info@ainautes.com
+-   Phone: +1 (555) 123-4567
 
 Join us on this futuristic adventure as we explore the depths of a black hole. Together, we can unlock the secrets of the universe.
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -106,7 +106,7 @@ Pick from the list:
 - Lobster
 - Open Sans
 - Cinzel
-- Creepster
+- Barlow Condensed
 - Futura
 - Great Vibes
 - Inter

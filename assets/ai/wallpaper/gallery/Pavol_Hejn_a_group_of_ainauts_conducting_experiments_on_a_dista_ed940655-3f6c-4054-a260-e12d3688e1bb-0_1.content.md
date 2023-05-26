@@ -16,24 +16,24 @@ Our work focuses on the exploration of new worlds and the study of their ecosyst
 
 Here are some stories from people who have been inspired by our work:
 
-- "The Ainautes have shown me that there is still so much left to discover in the universe. Their dedication to scientific exploration is truly inspiring." - Sarah B.
-- "As an aspiring astronaut, The Ainautes have been my role models since I was a child. Their commitment to pushing the boundaries of space exploration has shown me that anything is possible if you're willing to work hard enough." - Tom S.
+-   "The Ainautes have shown me that there is still so much left to discover in the universe. Their dedication to scientific exploration is truly inspiring." - Sarah B.
+-   "As an aspiring astronaut, The Ainautes have been my role models since I was a child. Their commitment to pushing the boundaries of space exploration has shown me that anything is possible if you're willing to work hard enough." - Tom S.
 
 ## Resources
 
 If you're interested in learning more about our work, check out these resources:
 
-- [Our Blog](#blog)
-- [Our Research Papers](#papers)
-- [Our Team](#team)
+-   [Our Blog](#blog)
+-   [Our Research Papers](#papers)
+-   [Our Team](#team)
 
 ## Contact Us
 
 If you have any questions or would like to get involved with our mission, please don't hesitate to reach out:
 
-- Email: contact@theainauts.com
-- Phone: +1 (555) 123-4567
-- Address: 1234 Space Ave, Houston, TX 77001
+-   Email: contact@theainauts.com
+-   Phone: +1 (555) 123-4567
+-   Address: 1234 Space Ave, Houston, TX 77001
 
 Thank you for visiting The Ainautes! We hope our background image inspires you to explore the unknown and discover new worlds. 🚀
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -153,7 +153,7 @@ Thank you for visiting The Ainautes! We hope our background image inspires you t
 Write me a Google font which is best fitting for the website.
 
 Pick from the list:
-- Creepster
+- Barlow Condensed
 - Cinzel Decorative
 - Playfair Display
 - Futura

@@ -26,9 +26,9 @@ Our backgrounds have helped many people create a calming environment in their ho
 
 If you want to learn more about mindfulness and how it can benefit your life, check out these resources:
 
-- [Mindful.org](#)
-- [Headspace](#)
-- [Calm](#)
+-   [Mindful.org](#)
+-   [Headspace](#)
+-   [Calm](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ We are a team of passionate individuals who believe in the power of mindfulness 
 
 ## Our Collection
 
-Our collection features a variety of serene wallpapers that will transport you to a peaceful world. One of our popular wallpapers is a serene mountain landscape with a clear blue lake. This wallpaper is perfect for a meditation or wellness website. 
+Our collection features a variety of serene wallpapers that will transport you to a peaceful world. One of our popular wallpapers is a serene mountain landscape with a clear blue lake. This wallpaper is perfect for a meditation or wellness website.
 
 All our wallpapers are high-quality and available in various resolutions to fit your screen perfectly. You can download them for free and use them on your desktop, laptop, or mobile device.
 
@@ -156,7 +156,7 @@ Pick from the list:
 - Inter
 - Raleway
 - IBM Plex Sans
-- Creepster
+- Barlow Condensed
 - Barlow Condensed
 - Playfair Display
 - Poppins

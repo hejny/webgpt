@@ -2,7 +2,7 @@
 
 # Distant Sunrise
 
-Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet." 
+Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet."
 
 ## About the Wallpaper
 
@@ -34,7 +34,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Sunrise on a Distant Planet
 
-Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet." 
+Welcome to our website featuring the stunning wallpaper "Sunrise on a Distant Planet."
 
 ## About the Wallpaper
 
@@ -71,7 +71,7 @@ Pick from the list:
 - Cabin
 - Montserrat
 - Lobster
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Cinzel
 - Inter

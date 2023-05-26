@@ -14,10 +14,10 @@ Our team of scientists and engineers are working on a wide range of projects, fr
 
 Some of our current research projects include:
 
-- Developing advanced AI algorithms for autonomous spacecraft
-- Studying the effects of microgravity on plant growth and development
-- Exploring the potential of quantum computing for solving complex problems
-- Creating new materials using nanotechnology
+-   Developing advanced AI algorithms for autonomous spacecraft
+-   Studying the effects of microgravity on plant growth and development
+-   Exploring the potential of quantum computing for solving complex problems
+-   Creating new materials using nanotechnology
 
 ## User Stories
 
@@ -31,9 +31,9 @@ We believe that the best way to understand the potential of AI is to see it in a
 
 If you're interested in learning more about AI and its potential, we've compiled a list of resources to help you get started:
 
-- [Link to whitepaper on AI ethics](#)
-- [Link to TED talk on the future of AI](#)
-- [Link to book on the history of AI](#)
+-   [Link to whitepaper on AI ethics](#)
+-   [Link to TED talk on the future of AI](#)
+-   [Link to book on the history of AI](#)
 
 ## Contact Us
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -125,7 +125,7 @@ Pick from the list:
 - Roboto
 - Poppins
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Futura
 - Inter
 - IBM Plex Sans

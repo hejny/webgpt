@@ -14,11 +14,11 @@ The background is available in high resolution and can be easily downloaded and 
 
 There are many ways to use our snowy cabin background in your home decor projects. Here are some ideas to get you started:
 
-- Use it as a background for your blog or social media posts
-- Print it out and frame it as a piece of wall art
-- Use it as a background for your Zoom calls
-- Incorporate it into your winter-themed party decorations
-- Use it as inspiration for your winter home decor projects
+-   Use it as a background for your blog or social media posts
+-   Print it out and frame it as a piece of wall art
+-   Use it as a background for your Zoom calls
+-   Incorporate it into your winter-themed party decorations
+-   Use it as inspiration for your winter home decor projects
 
 ## User Stories
 
@@ -32,9 +32,9 @@ Here are some stories from our users who have used our snowy cabin background in
 
 If you're interested in using our snowy cabin background in your home decor projects, here are some references to help you get started:
 
-- Download the background from our website
-- Check out our blog for more home decor ideas and inspiration
-- Follow us on Instagram for updates and user stories
+-   Download the background from our website
+-   Check out our blog for more home decor ideas and inspiration
+-   Follow us on Instagram for updates and user stories
 
 ## Contact Us
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -187,7 +187,7 @@ Pick from the list:
 - Lobster
 - Raleway
 - IBM Plex Sans
-- Creepster
+- Barlow Condensed
 - Orbitron
 - Barlow Condensed
 

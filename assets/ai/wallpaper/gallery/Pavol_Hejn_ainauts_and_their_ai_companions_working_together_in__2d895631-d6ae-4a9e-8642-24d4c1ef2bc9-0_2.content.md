@@ -24,9 +24,9 @@ Our users come from all walks of life, but they share a common goal - to explore
 
 If you're interested in learning more about AI and space exploration, check out these resources:
 
-- [NASA Artificial Intelligence](#)
-- [SpaceX](#)
-- [The Planetary Society](#)
+-   [NASA Artificial Intelligence](#)
+-   [SpaceX](#)
+-   [The Planetary Society](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -118,7 +118,7 @@ Pick from the list:
 - IBM Plex Sans
 - Barlow Condensed
 - Great Vibes
-- Creepster
+- Barlow Condensed
 - Exo 2
 - Cabin
 - Raleway

@@ -12,11 +12,11 @@ At DataVisual, our mission is to empower businesses and individuals to make data
 
 Our platform offers a wide range of features to help you visualize and analyze your data, including:
 
-- Customizable dashboards
-- Interactive charts and graphs
-- Real-time data streaming
-- Advanced analytics tools
-- And much more!
+-   Customizable dashboards
+-   Interactive charts and graphs
+-   Real-time data streaming
+-   Advanced analytics tools
+-   And much more!
 
 ## User Stories
 
@@ -30,9 +30,9 @@ Don't just take our word for it - here are some stories from real users who have
 
 If you're interested in learning more about data analysis and visualization, check out these resources:
 
-- [Data Visualization Best Practices](#)
-- [Introduction to Data Analysis](#)
-- [How to Build a Custom Dashboard with DataVisual](#)
+-   [Data Visualization Best Practices](#)
+-   [Introduction to Data Analysis](#)
+-   [How to Build a Custom Dashboard with DataVisual](#)
 
 ## Contact Us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -113,7 +113,7 @@ Pick from the list:
 - Raleway
 - Lobster
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Orbitron
 - Poppins
 - Playfair Display

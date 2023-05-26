@@ -8,11 +8,11 @@ Welcome to our website, where you can discover and download a stunning digital i
 
 Our digital illustration is not just a beautiful image, but it also adds personality and style to your desktop. Here are some reasons why you should choose our futuristic city background:
 
-- High-quality digital illustration that looks realistic and immersive
-- Perfect for sci-fi enthusiasts, gamers, and anyone who loves futuristic themes
-- Compatible with different screen resolutions and sizes
-- Easy to download and install on your computer
-- Free to use and share with your friends and family
+-   High-quality digital illustration that looks realistic and immersive
+-   Perfect for sci-fi enthusiasts, gamers, and anyone who loves futuristic themes
+-   Compatible with different screen resolutions and sizes
+-   Easy to download and install on your computer
+-   Free to use and share with your friends and family
 
 ## How to Download and Install Our Background?
 
@@ -35,9 +35,9 @@ Here are some stories from our users who have downloaded and installed our digit
 
 If you want to learn more about sci-fi and futuristic themes, here are some references that you might find interesting:
 
-- [The 50 Best Sci-Fi Movies of the 21st Century](#)
-- [The Top 10 Futuristic Technologies That Might Change the World](#)
-- [The Best Sci-Fi Books of All Time](#)
+-   [The 50 Best Sci-Fi Movies of the 21st Century](#)
+-   [The Top 10 Futuristic Technologies That Might Change the World](#)
+-   [The Best Sci-Fi Books of All Time](#)
 
 ## Contact Us
 
@@ -55,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -198,7 +198,7 @@ Pick from the list:
 - Cormorant Garamond
 - Futura
 - Playfair Display
-- Creepster
+- Barlow Condensed
 - Exo 2
 - Orbitron
 - Roboto

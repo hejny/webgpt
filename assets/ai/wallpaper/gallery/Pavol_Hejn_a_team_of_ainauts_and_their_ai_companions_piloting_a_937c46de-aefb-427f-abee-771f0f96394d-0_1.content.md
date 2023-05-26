@@ -2,7 +2,7 @@
 
 # Space-Time Journey
 
-Welcome to our website dedicated to exploring the vast expanse of the universe! Our mission is to bring you the latest news, discoveries, and theories about the cosmos and the mysteries that lie within it. 
+Welcome to our website dedicated to exploring the vast expanse of the universe! Our mission is to bring you the latest news, discoveries, and theories about the cosmos and the mysteries that lie within it.
 
 ## Wallpaper
 
@@ -16,18 +16,18 @@ Our team of scientists, researchers, and writers are passionate about the univer
 
 Our website is designed for anyone who is curious about the universe and wants to learn more. Whether you're a student, a science enthusiast, or just someone who loves stargazing, we have something for you. Here are some examples of how our website can benefit different users:
 
-- **Students:** Our articles and resources are a great way to supplement your science classes and expand your knowledge beyond the textbook.
-- **Science Enthusiasts:** If you love learning about the latest scientific discoveries, our website is the perfect place for you. We cover everything from black holes to dark matter to the Big Bang.
-- **Stargazers:** If you enjoy looking up at the night sky and wondering what's out there, our website can help you identify constellations, learn about the planets, and discover new galaxies.
+-   **Students:** Our articles and resources are a great way to supplement your science classes and expand your knowledge beyond the textbook.
+-   **Science Enthusiasts:** If you love learning about the latest scientific discoveries, our website is the perfect place for you. We cover everything from black holes to dark matter to the Big Bang.
+-   **Stargazers:** If you enjoy looking up at the night sky and wondering what's out there, our website can help you identify constellations, learn about the planets, and discover new galaxies.
 
 ## Resources
 
 We offer a variety of resources to help you explore the universe:
 
-- **Articles:** Our team of writers produces informative and engaging articles on a wide range of topics related to astronomy and astrophysics.
-- **Videos:** We curate and create videos that explain complex concepts in an easy-to-understand way.
-- **Podcasts:** Our podcasts feature interviews with leading scientists and researchers, as well as discussions on the latest discoveries in space exploration.
-- **References:** We provide a list of references for each article so you can dive deeper into the topic if you're interested.
+-   **Articles:** Our team of writers produces informative and engaging articles on a wide range of topics related to astronomy and astrophysics.
+-   **Videos:** We curate and create videos that explain complex concepts in an easy-to-understand way.
+-   **Podcasts:** Our podcasts feature interviews with leading scientists and researchers, as well as discussions on the latest discoveries in space exploration.
+-   **References:** We provide a list of references for each article so you can dive deeper into the topic if you're interested.
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -62,7 +62,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Universe: A Journey Through Space and Time
 
-Welcome to our website dedicated to exploring the vast expanse of the universe! Our mission is to bring you the latest news, discoveries, and theories about the cosmos and the mysteries that lie within it. 
+Welcome to our website dedicated to exploring the vast expanse of the universe! Our mission is to bring you the latest news, discoveries, and theories about the cosmos and the mysteries that lie within it.
 
 ## Wallpaper
 
@@ -121,7 +121,7 @@ Pick from the list:
 - Barlow Condensed
 - Open Sans
 - Alegreya
-- Creepster
+- Barlow Condensed
 - Roboto
 - Futura
 

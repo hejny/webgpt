@@ -6,9 +6,9 @@ Welcome to our website, where we bring the wonders of the universe to your scree
 
 ## Features
 
-- High-quality resolution: Our background is available in various resolutions, ensuring that it fits perfectly on any screen size.
-- Realistic design: The rocket launch background is a realistic photograph that captures the essence of space exploration.
-- Easy to download: Downloading our background is quick and easy. Simply click on the download button, and you're good to go.
+-   High-quality resolution: Our background is available in various resolutions, ensuring that it fits perfectly on any screen size.
+-   Realistic design: The rocket launch background is a realistic photograph that captures the essence of space exploration.
+-   Easy to download: Downloading our background is quick and easy. Simply click on the download button, and you're good to go.
 
 ## User Stories
 
@@ -22,17 +22,17 @@ Our users love our space-themed backgrounds, and here are some of their stories:
 
 If you want to learn more about space exploration and astronomy, here are some resources that you might find useful:
 
-- NASA's website (#nasa)
-- Space.com (#space)
-- Astronomy Magazine (#astronomy)
+-   NASA's website (#nasa)
+-   Space.com (#space)
+-   Astronomy Magazine (#astronomy)
 
 ## Contact Us
 
 If you have any questions or concerns, please don't hesitate to contact us. You can reach us via email at support@universeexplorer.com or through our social media channels:
 
-- Twitter (#twitter)
-- Facebook (#facebook)
-- Instagram (#instagram)
+-   Twitter (#twitter)
+-   Facebook (#facebook)
+-   Instagram (#instagram)
 
 Thank you for choosing Universe Explorer for your background needs. We hope our rocket launch background inspires you to explore the mysteries of the universe!
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -165,7 +165,7 @@ Pick from the list:
 - Poppins
 - IBM Plex Sans
 - Dancing Script
-- Creepster
+- Barlow Condensed
 - Great Vibes
 - Alegreya
 - Raleway

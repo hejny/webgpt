@@ -94,7 +94,7 @@ Pick from the list:
 - Exo 2
 - Orbitron
 - Raleway
-- Creepster
+- Barlow Condensed
 - Cabin
 - Cinzel
 - Futura

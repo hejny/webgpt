@@ -71,7 +71,7 @@ Pick from the list:
 - Cinzel
 - IBM Plex Sans
 - Great Vibes
-- Creepster
+- Barlow Condensed
 - Lobster
 - Playfair Display
 - Futura

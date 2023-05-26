@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Virtual Assistant
 
@@ -16,8 +16,8 @@ Getting started with our virtual assistant services is easy. Simply sign up for 
 
 Here are some examples of how our virtual assistant services have helped our clients:
 
-- "Thanks to our virtual assistant, we were able to streamline our administrative tasks and focus on delivering high-quality services to our customers." - John, CEO of a consulting firm
-- "Our virtual assistant has been a game-changer for our social media presence. She consistently creates engaging content and responds to our followers in a timely manner." - Sarah, Marketing Manager of a fashion brand
+-   "Thanks to our virtual assistant, we were able to streamline our administrative tasks and focus on delivering high-quality services to our customers." - John, CEO of a consulting firm
+-   "Our virtual assistant has been a game-changer for our social media presence. She consistently creates engaging content and responds to our followers in a timely manner." - Sarah, Marketing Manager of a fashion brand
 
 ## References
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

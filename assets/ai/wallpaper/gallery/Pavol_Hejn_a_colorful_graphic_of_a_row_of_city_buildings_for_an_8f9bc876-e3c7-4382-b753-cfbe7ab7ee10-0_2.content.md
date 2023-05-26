@@ -2,11 +2,11 @@
 
 # Urban Finest Living
 
-Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life. 
+Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life.
 
 ## City Buildings Wallpaper
 
-To add some flair to your desktop or phone background, we've included a colorful graphic of a row of city buildings. This wallpaper captures the energy and excitement of urban living, and is perfect for anyone who loves the city. Download it now and show off your love for urban living! 
+To add some flair to your desktop or phone background, we've included a colorful graphic of a row of city buildings. This wallpaper captures the energy and excitement of urban living, and is perfect for anyone who loves the city. Download it now and show off your love for urban living!
 
 [Download Wallpaper](insert-link-here)
 
@@ -24,11 +24,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Urban Living at its Finest
 
-Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life. 
+Welcome to our website dedicated to urban living! Our goal is to provide you with all the information you need to make the most of city life.
 
 ## City Buildings Wallpaper
 
-To add some flair to your desktop or phone background, we've included a colorful graphic of a row of city buildings. This wallpaper captures the energy and excitement of urban living, and is perfect for anyone who loves the city. Download it now and show off your love for urban living! 
+To add some flair to your desktop or phone background, we've included a colorful graphic of a row of city buildings. This wallpaper captures the energy and excitement of urban living, and is perfect for anyone who loves the city. Download it now and show off your love for urban living!
 
 [Download Wallpaper](insert-link-here)
 
@@ -52,7 +52,7 @@ Pick from the list:
 - Inter
 - Poppins
 - Playfair Display
-- Creepster
+- Barlow Condensed
 - IBM Plex Sans
 - Orbitron
 - Cabin

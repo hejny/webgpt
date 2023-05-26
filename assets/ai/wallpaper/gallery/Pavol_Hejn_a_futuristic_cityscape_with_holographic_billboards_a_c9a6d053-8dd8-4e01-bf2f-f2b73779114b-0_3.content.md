@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Future Cityscape
 
@@ -8,17 +8,17 @@ Welcome to our website where we offer a glimpse into the future with our stunnin
 
 Our background is not just a beautiful image; it's a statement piece that will transform any digital platform into a futuristic wonderland. Here are some reasons why you should choose our background:
 
-- High-quality: Our background is made from high-quality materials that ensure clarity and vibrancy.
-- Easy to use: Our background is easy to download and apply to any device or platform.
-- Customizable: We offer customizable options, so you can choose the size and design that suits your needs.
+-   High-quality: Our background is made from high-quality materials that ensure clarity and vibrancy.
+-   Easy to use: Our background is easy to download and apply to any device or platform.
+-   Customizable: We offer customizable options, so you can choose the size and design that suits your needs.
 
 ## How to Use Our Futuristic Cityscape
 
 Our background is perfect for anyone who wants to add a touch of futurism to their digital platforms. Here are some ways you can use our background:
 
-- Desktop wallpaper: Use our background as your desktop wallpaper to create a futuristic workspace.
-- Social media: Make a bold statement on your social media platforms by using our background as your cover photo.
-- Website background: Transform your website into a futuristic wonderland with our background.
+-   Desktop wallpaper: Use our background as your desktop wallpaper to create a futuristic workspace.
+-   Social media: Make a bold statement on your social media platforms by using our background as your cover photo.
+-   Website background: Transform your website into a futuristic wonderland with our background.
 
 ## User Stories
 
@@ -32,9 +32,9 @@ Here are some stories from our satisfied customers:
 
 If you're interested in learning more about futuristic cityscapes, here are some references that might interest you:
 
-- "Blade Runner" (1982) directed by Ridley Scott
-- "The Fifth Element" (1997) directed by Luc Besson
-- "Altered Carbon" (2018) created by Laeta Kalogridis
+-   "Blade Runner" (1982) directed by Ridley Scott
+-   "The Fifth Element" (1997) directed by Luc Besson
+-   "Altered Carbon" (2018) created by Laeta Kalogridis
 
 ## Contact Us
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

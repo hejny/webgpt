@@ -2,7 +2,7 @@
 
 # Nature's Haven
 
-Welcome to Nature's Haven, your ultimate destination for all things nature and wildlife. 
+Welcome to Nature's Haven, your ultimate destination for all things nature and wildlife.
 
 ## Featured Wallpaper: Forest at Dusk
 
@@ -24,7 +24,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Nature's Haven
 
-Welcome to Nature's Haven, your ultimate destination for all things nature and wildlife. 
+Welcome to Nature's Haven, your ultimate destination for all things nature and wildlife.
 
 ## Featured Wallpaper: Forest at Dusk
 
@@ -50,7 +50,7 @@ Pick from the list:
 - Alegreya
 - Exo 2
 - Cinzel Decorative
-- Creepster
+- Barlow Condensed
 - Cormorant Garamond
 - Raleway
 - Montserrat

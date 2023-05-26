@@ -2,7 +2,7 @@
 
 # Serenity in Chaos
 
-Welcome to Serenity, your ultimate destination for finding inner peace and tranquility. Our mission is to help you achieve a state of calmness amidst the chaos of everyday life. 
+Welcome to Serenity, your ultimate destination for finding inner peace and tranquility. Our mission is to help you achieve a state of calmness amidst the chaos of everyday life.
 
 ## Our Background
 
@@ -12,9 +12,9 @@ Our website features a serene mountain landscape with a clear blue lake as its w
 
 At Serenity, we offer a wide range of services to help you find inner peace and tranquility. Some of our popular services include:
 
-- Guided Meditation: Our expert meditation instructors will guide you through various meditation techniques to help you relax and de-stress.
-- Yoga Classes: Our yoga classes are designed to improve your physical and mental health, helping you find balance and harmony in your life.
-- Mindfulness Training: Our mindfulness training program will teach you how to be present in the moment and cultivate a sense of awareness and gratitude.
+-   Guided Meditation: Our expert meditation instructors will guide you through various meditation techniques to help you relax and de-stress.
+-   Yoga Classes: Our yoga classes are designed to improve your physical and mental health, helping you find balance and harmony in your life.
+-   Mindfulness Training: Our mindfulness training program will teach you how to be present in the moment and cultivate a sense of awareness and gratitude.
 
 ## User Stories
 
@@ -28,9 +28,9 @@ Here are some stories from our satisfied customers:
 
 If you're interested in learning more about meditation, yoga, and mindfulness, here are some resources we recommend:
 
-- [The Mindful Way Workbook](#)
-- [Yoga Journal](#)
-- [Headspace App](#)
+-   [The Mindful Way Workbook](#)
+-   [Yoga Journal](#)
+-   [Headspace App](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Serenity: Finding Peace in a Chaotic World
 
-Welcome to Serenity, your ultimate destination for finding inner peace and tranquility. Our mission is to help you achieve a state of calmness amidst the chaos of everyday life. 
+Welcome to Serenity, your ultimate destination for finding inner peace and tranquility. Our mission is to help you achieve a state of calmness amidst the chaos of everyday life.
 
 ## Our Background
 
@@ -113,7 +113,7 @@ Pick from the list:
 - Futura
 - Inter
 - Alegreya
-- Creepster
+- Barlow Condensed
 - Cabin
 - Cinzel Decorative
 - IBM Plex Sans

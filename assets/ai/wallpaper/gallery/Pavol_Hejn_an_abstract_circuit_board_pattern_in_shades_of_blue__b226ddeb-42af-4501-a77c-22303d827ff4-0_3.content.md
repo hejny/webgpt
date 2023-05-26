@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Futuristic Workspace
 
@@ -8,10 +8,10 @@ Welcome to our website dedicated to creating the perfect workspace that inspires
 
 Our abstract circuit board pattern is not just any ordinary background. It is designed to create a unique and modern look, making it the perfect addition to your workspace. Here are some reasons why you should choose our abstract circuit board pattern:
 
-- The abstract pattern creates a futuristic look and feel
-- The shades of blue and silver give a sleek and sophisticated vibe
-- It is versatile and can be used in various ways, such as a desktop wallpaper or a screensaver
-- It is easy to download and use, making it a hassle-free option for updating your workspace design
+-   The abstract pattern creates a futuristic look and feel
+-   The shades of blue and silver give a sleek and sophisticated vibe
+-   It is versatile and can be used in various ways, such as a desktop wallpaper or a screensaver
+-   It is easy to download and use, making it a hassle-free option for updating your workspace design
 
 ## User Stories
 
@@ -25,17 +25,17 @@ Our customers have shared their experiences with our abstract circuit board patt
 
 Check out some of our other resources to help you elevate your workspace:
 
-- [Ergonomic office furniture](#)
-- [Workspace design consultation](#)
-- [Productivity tips and tricks](#)
+-   [Ergonomic office furniture](#)
+-   [Workspace design consultation](#)
+-   [Productivity tips and tricks](#)
 
 ## Contact Us
 
 If you have any questions or would like to learn more about our resources, please don't hesitate to contact us. Our team of experts is always ready to help you create your dream workspace.
 
-- Phone: 555-1234
-- Email: info@elevateworkspace.com
-- Address: 123 Main Street, Suite 100, Anytown USA
+-   Phone: 555-1234
+-   Email: info@elevateworkspace.com
+-   Address: 123 Main Street, Suite 100, Anytown USA
 
 Thank you for considering our abstract circuit board pattern for your workspace. We look forward to helping you create a high-tech and productive environment!
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -10,10 +10,10 @@ Galactic Odyssey was founded by a team of passionate space enthusiasts who wante
 
 ## Our Services
 
-- News and updates on the latest space missions
-- In-depth articles on the science behind space exploration
-- User stories from fellow space enthusiasts
-- Stunning space-themed wallpaper backgrounds for your devices
+-   News and updates on the latest space missions
+-   In-depth articles on the science behind space exploration
+-   User stories from fellow space enthusiasts
+-   Stunning space-themed wallpaper backgrounds for your devices
 
 ## Wallpaper Backgrounds
 
@@ -25,9 +25,9 @@ One of our most popular wallpapers features a team of Ainautes and their AI comp
 
 Check out these resources for more information on space exploration:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -99,7 +99,7 @@ Write me a Google font which is best fitting for the website.
 
 Pick from the list:
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 - Inter
 - Exo 2
 - Cabin

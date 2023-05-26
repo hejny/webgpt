@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Futuristic Workspace
 
@@ -8,9 +8,9 @@ Welcome to our website, where we provide you with the best backgrounds and wallp
 
 Our futuristic vehicle background is not just visually appealing but also has several benefits that make it an excellent choice for your workspace:
 
-- **Boost Productivity**: The dark and moody color scheme helps reduce eye strain and distraction, allowing you to focus on your work.
-- **Enhance Creativity**: The unique design of the vehicle inspires creativity and imagination, helping you come up with innovative ideas.
-- **Create a Professional Image**: The metallic textures and futuristic design give off a professional and sophisticated image, making it perfect for business settings.
+-   **Boost Productivity**: The dark and moody color scheme helps reduce eye strain and distraction, allowing you to focus on your work.
+-   **Enhance Creativity**: The unique design of the vehicle inspires creativity and imagination, helping you come up with innovative ideas.
+-   **Create a Professional Image**: The metallic textures and futuristic design give off a professional and sophisticated image, making it perfect for business settings.
 
 ## How to Download
 
@@ -28,8 +28,8 @@ We love hearing from our users and how they incorporate our backgrounds into the
 
 If you're interested in learning more about how to create a productive and inspiring workspace, check out these articles:
 
-- "How to Design a Workspace That Enhances Productivity" by Forbes
-- "The Power of a Well-Designed Workspace" by Harvard Business Review
+-   "How to Design a Workspace That Enhances Productivity" by Forbes
+-   "The Power of a Well-Designed Workspace" by Harvard Business Review
 
 ## Contact Us
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

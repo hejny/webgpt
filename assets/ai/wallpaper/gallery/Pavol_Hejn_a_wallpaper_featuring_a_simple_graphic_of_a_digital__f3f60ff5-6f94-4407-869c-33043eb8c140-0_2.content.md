@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Time Manager
 
@@ -10,11 +10,11 @@ Our wallpaper features a simple graphic of a digital clock or timer, with space 
 
 ## Features
 
-- **Task Management:** Keep track of your tasks and deadlines using our intuitive task management system.
-- **Calendar Integration:** Sync your calendar with Time Manager to ensure you never miss an important appointment or meeting.
-- **Time Tracking:** Track the time you spend on different tasks to identify areas where you can improve your efficiency.
-- **Reports:** Generate detailed reports to analyze your productivity and identify opportunities for improvement.
-- **Collaboration:** Work with your team members and colleagues to stay on top of your projects and deadlines.
+-   **Task Management:** Keep track of your tasks and deadlines using our intuitive task management system.
+-   **Calendar Integration:** Sync your calendar with Time Manager to ensure you never miss an important appointment or meeting.
+-   **Time Tracking:** Track the time you spend on different tasks to identify areas where you can improve your efficiency.
+-   **Reports:** Generate detailed reports to analyze your productivity and identify opportunities for improvement.
+-   **Collaboration:** Work with your team members and colleagues to stay on top of your projects and deadlines.
 
 ## User Stories
 
@@ -26,9 +26,9 @@ Our wallpaper features a simple graphic of a digital clock or timer, with space 
 
 Check out these resources to learn more about time management and productivity:
 
-- [10 Time Management Tips That Work](#)
-- [How to Stay Focused and Productive at Work](#)
-- [The Pomodoro Technique: Boost Your Productivity in 25 Minutes](#)
+-   [10 Time Management Tips That Work](#)
+-   [How to Stay Focused and Productive at Work](#)
+-   [The Pomodoro Technique: Boost Your Productivity in 25 Minutes](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

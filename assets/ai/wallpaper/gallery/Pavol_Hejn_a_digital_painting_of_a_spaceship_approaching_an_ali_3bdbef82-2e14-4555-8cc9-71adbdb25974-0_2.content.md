@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Universe Odyssey
 
@@ -12,17 +12,17 @@ Our mission is to share the excitement and beauty of space exploration with peop
 
 Here are some user stories from people who have been inspired by our Space Odyssey artwork:
 
-- "I love having this beautiful image as my computer background. It reminds me to keep exploring and learning."
-- "This artwork has inspired me to start reading more about space and astronomy. I'm amazed by all the things we still don't know!"
-- "Every time I see this image, I feel like I'm embarking on an epic adventure. It's such a cool feeling!"
+-   "I love having this beautiful image as my computer background. It reminds me to keep exploring and learning."
+-   "This artwork has inspired me to start reading more about space and astronomy. I'm amazed by all the things we still don't know!"
+-   "Every time I see this image, I feel like I'm embarking on an epic adventure. It's such a cool feeling!"
 
 ## Resources
 
 If you're interested in learning more about space and astronomy, here are some resources you might find helpful:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Astronomy Magazine](#astronomymag)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Astronomy Magazine](#astronomymag)
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

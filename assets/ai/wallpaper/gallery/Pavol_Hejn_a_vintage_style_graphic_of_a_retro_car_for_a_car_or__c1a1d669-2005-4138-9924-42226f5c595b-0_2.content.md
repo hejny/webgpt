@@ -80,7 +80,7 @@ Pick from the list:
 - Exo 2
 - Lato
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 
 
 Write just the font name nothing else.

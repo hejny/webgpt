@@ -32,8 +32,8 @@ Don't just take our word for it, hear what our customers have to say about their
 
 Want to learn more about the mountain ranges we explore? Check out these resources:
 
-- [National Geographic's Guide to Mountain Ranges](#)
-- [Mountain Ranges of the World](#)
+-   [National Geographic's Guide to Mountain Ranges](#)
+-   [Mountain Ranges of the World](#)
 
 ## Contact Us
 
@@ -44,8 +44,9 @@ Email: info@mountainadventures.com
 Address: 1234 Mountain Road, Anytown USA
 
 Follow us on social media for updates and inspiration:
-- Facebook: [MountainAdventures](#)
-- Instagram: [Mountain_Adventures](#)
+
+-   Facebook: [MountainAdventures](#)
+-   Instagram: [Mountain_Adventures](#)
 
 <!--
 
@@ -55,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -140,7 +141,7 @@ Pick from the list:
 - Lato
 - Roboto
 - Great Vibes
-- Creepster
+- Barlow Condensed
 - Cinzel Decorative
 - Exo 2
 - Cormorant Garamond

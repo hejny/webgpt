@@ -112,7 +112,7 @@ Pick from the list:
 - Exo 2
 - Alegreya
 - Inter
-- Creepster
+- Barlow Condensed
 - Futura
 - Lato
 

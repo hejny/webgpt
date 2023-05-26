@@ -12,25 +12,25 @@ Our mission is to share the wonders of space exploration with everyone. We belie
 
 Here are some stories from our users about how our website has inspired them:
 
-- "I've always been fascinated by space, but I never knew where to start learning more. Your website has been an incredible resource for me, and the background image is just breathtaking!"
-- "As a science teacher, I use your website to help my students learn about space. The image on your site immediately captures their attention and gets them excited to learn."
-- "I'm an amateur astronomer, and your website has helped me discover new objects to observe in the night sky. The background image reminds me of the beauty and wonder of space every time I visit."
+-   "I've always been fascinated by space, but I never knew where to start learning more. Your website has been an incredible resource for me, and the background image is just breathtaking!"
+-   "As a science teacher, I use your website to help my students learn about space. The image on your site immediately captures their attention and gets them excited to learn."
+-   "I'm an amateur astronomer, and your website has helped me discover new objects to observe in the night sky. The background image reminds me of the beauty and wonder of space every time I visit."
 
 ## Resources
 
 If you're interested in learning more about space exploration, here are some resources we recommend:
 
-- [NASA](#) - The official website of the National Aeronautics and Space Administration
-- [Space.com](#) - News and information about space exploration and astronomy
-- [Astronomy Magazine](#) - A magazine dedicated to astronomy and space science
+-   [NASA](#) - The official website of the National Aeronautics and Space Administration
+-   [Space.com](#) - News and information about space exploration and astronomy
+-   [Astronomy Magazine](#) - A magazine dedicated to astronomy and space science
 
 ## Contact Us
 
 We would love to hear from you! If you have any questions, comments, or suggestions, please don't hesitate to contact us:
 
-- Email: [contact@journeytothestars.com](mailto:contact@journeytothestars.com)
-- Phone: 555-1234
-- Twitter: [@journeytothestars](#)
+-   Email: [contact@journeytothestars.com](mailto:contact@journeytothestars.com)
+-   Phone: 555-1234
+-   Twitter: [@journeytothestars](#)
 
 Thank you for visiting our website and sharing in our passion for space exploration. We hope that our background image inspires you to embark on your own journey to the stars!
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -159,7 +159,7 @@ Pick from the list:
 - Exo 2
 - Roboto
 - Lato
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Raleway
 - Dancing Script

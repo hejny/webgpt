@@ -22,9 +22,9 @@ We are proud to have a diverse community of users who share our passion for spac
 
 For those who want to delve deeper into the world of space exploration, we have compiled a list of recommended resources:
 
-- [NASA](#nasa)
-- [European Space Agency](#esa)
-- [SpaceX](#spacex)
+-   [NASA](#nasa)
+-   [European Space Agency](#esa)
+-   [SpaceX](#spacex)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -153,7 +153,7 @@ Pick from the list:
 - Cabin
 - Barlow Condensed
 - Dancing Script
-- Creepster
+- Barlow Condensed
 - Roboto
 - Great Vibes
 - Cinzel Decorative

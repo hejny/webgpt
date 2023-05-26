@@ -1,8 +1,8 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # TechCity Hub
 
-Welcome to TechCity, your go-to destination for all things futuristic and innovative! Our website is dedicated to bringing you the latest news, trends, and breakthroughs in the world of technology. 
+Welcome to TechCity, your go-to destination for all things futuristic and innovative! Our website is dedicated to bringing you the latest news, trends, and breakthroughs in the world of technology.
 
 ## About Us
 
@@ -20,11 +20,11 @@ Our wallpaper features a stunning futuristic city with holographic advertisement
 
 At TechCity, we publish a wide range of content, including:
 
-- News articles about the latest breakthroughs in technology
-- In-depth analyses of emerging trends and technologies
-- Reviews of the newest gadgets and devices
-- Interviews with industry experts and thought leaders
-- User stories and case studies showcasing the impact of technology on people's lives
+-   News articles about the latest breakthroughs in technology
+-   In-depth analyses of emerging trends and technologies
+-   Reviews of the newest gadgets and devices
+-   Interviews with industry experts and thought leaders
+-   User stories and case studies showcasing the impact of technology on people's lives
 
 ## References
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # TechCity - Your Hub for Future Innovations
 
-Welcome to TechCity, your go-to destination for all things futuristic and innovative! Our website is dedicated to bringing you the latest news, trends, and breakthroughs in the world of technology. 
+Welcome to TechCity, your go-to destination for all things futuristic and innovative! Our website is dedicated to bringing you the latest news, trends, and breakthroughs in the world of technology.
 
 ## About Us
 

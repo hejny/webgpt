@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Geometric Decor
 
@@ -14,9 +14,9 @@ Our wallpaper collection includes a range of designs to suit different tastes an
 
 Here are some of our most popular designs:
 
-- Triangles in shades of grey
-- Circles in shades of blue
-- Squares in shades of green
+-   Triangles in shades of grey
+-   Circles in shades of blue
+-   Squares in shades of green
 
 ## User Stories
 
@@ -28,16 +28,16 @@ Here are some of our most popular designs:
 
 If you're interested in learning more about geometric patterns in interior design, check out these resources:
 
-- [Architectural Digest](#)
-- [Elle Decor](#)
-- [House Beautiful](#)
+-   [Architectural Digest](#)
+-   [Elle Decor](#)
+-   [House Beautiful](#)
 
 ## Contact Us
 
 If you have any questions about our wallpaper collection or would like to place an order, please don't hesitate to contact us. We're always happy to help!
 
-- Phone: 555-1234
-- Email: info@geometricpatterns.com
+-   Phone: 555-1234
+-   Email: info@geometricpatterns.com
 
 Thank you for visiting our website. We hope you find inspiration for your home decor project!
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -8,9 +8,9 @@ Welcome to our website, where you can embark on a space adventure without leavin
 
 Our space background is not just a beautiful addition to your device; it also serves as a reminder of the vastness and wonder of the universe. Every time you look at your screen, you can imagine yourself as the astronaut, discovering new worlds and encountering extraterrestrial life. Moreover, our background is:
 
-- High-quality and high-resolution, ensuring that every detail is crisp and clear
-- Compatible with various devices, including desktops, laptops, tablets, and smartphones
-- Easy to download and install, with step-by-step instructions provided on our website
+-   High-quality and high-resolution, ensuring that every detail is crisp and clear
+-   Compatible with various devices, including desktops, laptops, tablets, and smartphones
+-   Easy to download and install, with step-by-step instructions provided on our website
 
 ## User Stories: What Our Customers Say
 
@@ -24,9 +24,9 @@ Don't just take our word for it - here are some user stories from our satisfied 
 
 If you want to learn more about space and astronomy, our website has plenty of resources for you. Here are some of our most popular articles:
 
-- [10 Fascinating Facts About the Milky Way Galaxy](#milky-way)
-- [How Do Astronomers Measure Distances in Space?](#distance)
-- [The Search for Extraterrestrial Life: Are We Alone in the Universe?](#et-life)
+-   [10 Fascinating Facts About the Milky Way Galaxy](#milky-way)
+-   [How Do Astronomers Measure Distances in Space?](#distance)
+-   [The Search for Extraterrestrial Life: Are We Alone in the Universe?](#et-life)
 
 We also have a list of recommended books, documentaries, and podcasts for space enthusiasts.
 
@@ -34,9 +34,9 @@ We also have a list of recommended books, documentaries, and podcasts for space 
 
 If you have any questions or feedback about our website or our background, please don't hesitate to contact us. You can reach us through:
 
-- Email: info@spaceadventure.com
-- Phone: 1-800-SPACE-ADVENTURE
-- Social media: [Twitter](#twitter), [Facebook](#facebook), [Instagram](#instagram)
+-   Email: info@spaceadventure.com
+-   Phone: 1-800-SPACE-ADVENTURE
+-   Social media: [Twitter](#twitter), [Facebook](#facebook), [Instagram](#instagram)
 
 Thank you for visiting our website, and we hope you enjoy your space adventure! 🚀
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -182,7 +182,7 @@ Pick from the list:
 - Open Sans
 - Cormorant Garamond
 - Futura
-- Creepster
+- Barlow Condensed
 - Exo 2
 
 

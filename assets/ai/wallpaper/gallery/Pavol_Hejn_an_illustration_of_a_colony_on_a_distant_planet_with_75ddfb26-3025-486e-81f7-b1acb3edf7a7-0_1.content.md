@@ -14,17 +14,17 @@ Our planetary colony illustration is a visual representation of this future, sho
 
 We believe that the best way to understand the impact of our illustration is to hear from those who have used it themselves. Here are some stories from our users:
 
-- "I love the way this illustration inspires me to think about the future. It's a great reminder that we can always strive for something better." - Sarah, 29
-- "This artwork is so beautiful and inspiring. I love looking at it every day and imagining what life could be like in a few decades." - Michael, 42
-- "As an architect, I'm always looking for new ideas and inspiration. This illustration is a great source of both!" - Emily, 35
+-   "I love the way this illustration inspires me to think about the future. It's a great reminder that we can always strive for something better." - Sarah, 29
+-   "This artwork is so beautiful and inspiring. I love looking at it every day and imagining what life could be like in a few decades." - Michael, 42
+-   "As an architect, I'm always looking for new ideas and inspiration. This illustration is a great source of both!" - Emily, 35
 
 ## References
 
 If you're interested in learning more about the future of living and how you can get involved, check out these resources:
 
-- [Future of Life Institute](#)
-- [Singularity Hub](#)
-- [World Economic Forum](#)
+-   [Future of Life Institute](#)
+-   [Singularity Hub](#)
+-   [World Economic Forum](#)
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -143,7 +143,7 @@ Pick from the list:
 - Cormorant Garamond
 - Montserrat
 - Raleway
-- Creepster
+- Barlow Condensed
 - Barlow Condensed
 - Roboto
 - Great Vibes

@@ -12,12 +12,12 @@ Nothing says "cozy" quite like a winter cabin surrounded by snow-covered trees. 
 
 Looking for some inspiration to make your home feel warm and inviting? Check out our top cozy home decor picks:
 
-- Faux fur blankets and pillows
-- Warm, ambient lighting
-- Candles with seasonal scents like cinnamon and pine
-- Rustic wood accents
-- Cozy knit throws
-- Hot cocoa bar with all the fixings
+-   Faux fur blankets and pillows
+-   Warm, ambient lighting
+-   Candles with seasonal scents like cinnamon and pine
+-   Rustic wood accents
+-   Cozy knit throws
+-   Hot cocoa bar with all the fixings
 
 ## User Stories: How Our Readers Have Embraced Cozy Living
 
@@ -33,9 +33,9 @@ We love hearing from our readers about how they've incorporated cozy living into
 
 Looking for more cozy home decor ideas? Check out some of our favorite resources:
 
-- [Apartment Therapy](#)
-- [Cozy Little House](#)
-- [The Spruce](#)
+-   [Apartment Therapy](#)
+-   [Cozy Little House](#)
+-   [The Spruce](#)
 
 ## Contact Us
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -135,7 +135,7 @@ Pick from the list:
 - Great Vibes
 - Orbitron
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 
 
 Write just the font name nothing else.

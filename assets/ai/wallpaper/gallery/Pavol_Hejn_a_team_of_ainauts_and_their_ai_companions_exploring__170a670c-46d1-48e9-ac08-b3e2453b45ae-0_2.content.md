@@ -24,9 +24,9 @@ Our users come from all walks of life, but they share a common passion for explo
 
 If you're interested in learning more about the ancient space station or the technology we use to explore it, check out these resources:
 
-- [NASA's Exploration of the Solar System](#)
-- [The Future of Space Exploration](#)
-- [AI in Space Exploration](#)
+-   [NASA's Exploration of the Solar System](#)
+-   [The Future of Space Exploration](#)
+-   [AI in Space Exploration](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Pick from the list:
 - Roboto
 - Cormorant Garamond
 - Montserrat
-- Creepster
+- Barlow Condensed
 - IBM Plex Sans
 - Alegreya
 - Poppins

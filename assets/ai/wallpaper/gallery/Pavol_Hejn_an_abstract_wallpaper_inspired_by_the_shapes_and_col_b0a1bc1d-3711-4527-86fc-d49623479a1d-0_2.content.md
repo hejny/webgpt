@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Quantum Art
 
@@ -10,9 +10,9 @@ Our quantum-inspired art is not just any ordinary piece of art; it is a work of 
 
 ## Product Features
 
-- Made from high-quality materials that are durable and long-lasting.
-- Available in a range of sizes to fit any space.
-- Customizable to suit your specific needs and preferences.
+-   Made from high-quality materials that are durable and long-lasting.
+-   Available in a range of sizes to fit any space.
+-   Customizable to suit your specific needs and preferences.
 
 ## User Stories
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

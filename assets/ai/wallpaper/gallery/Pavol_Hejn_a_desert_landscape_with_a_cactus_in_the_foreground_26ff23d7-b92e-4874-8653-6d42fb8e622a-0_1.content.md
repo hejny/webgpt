@@ -10,7 +10,7 @@ At Desert Oasis, we believe that a peaceful workspace can greatly improve produc
 
 ## Our Selection
 
-Our collection includes a variety of landscapes, from deserts to forests to beaches. Each wallpaper has been carefully selected for its ability to create a relaxing atmosphere and enhance your focus. 
+Our collection includes a variety of landscapes, from deserts to forests to beaches. Each wallpaper has been carefully selected for its ability to create a relaxing atmosphere and enhance your focus.
 
 ## User Stories
 
@@ -20,8 +20,8 @@ Our collection includes a variety of landscapes, from deserts to forests to beac
 
 ## References
 
-- [The Benefits of a Calm Workspace](#)
-- [How to Create a Productive Home Office](#)
+-   [The Benefits of a Calm Workspace](#)
+-   [How to Create a Productive Home Office](#)
 
 ## Contact Us
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -64,7 +64,7 @@ At Desert Oasis, we believe that a peaceful workspace can greatly improve produc
 
 ## Our Selection
 
-Our collection includes a variety of landscapes, from deserts to forests to beaches. Each wallpaper has been carefully selected for its ability to create a relaxing atmosphere and enhance your focus. 
+Our collection includes a variety of landscapes, from deserts to forests to beaches. Each wallpaper has been carefully selected for its ability to create a relaxing atmosphere and enhance your focus.
 
 ## User Stories
 
@@ -94,7 +94,7 @@ Pick from the list:
 - Alegreya
 - Lobster
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Great Vibes
 - Inter
 - Roboto

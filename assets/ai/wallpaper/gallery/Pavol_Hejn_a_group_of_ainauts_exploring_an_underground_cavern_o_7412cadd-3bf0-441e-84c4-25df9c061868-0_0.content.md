@@ -6,17 +6,17 @@ Welcome to Journey to the Unknown, a website dedicated to all things adventure! 
 
 ## User Stories
 
-- "I'm planning a backpacking trip through South America and wanted some inspiration for my desktop background. This image really captures the spirit of exploration and discovery!" - Maria
-- "As an avid hiker, I love having a background that reminds me of the beauty and mystery of nature. This one is especially cool because it's not just a pretty landscape, but a whole other world waiting to be explored." - Tom
-- "I work in a windowless office all day, so having a dynamic background like this helps me feel more connected to the outside world. It's like a little escape every time I glance at my computer screen." - Sarah
+-   "I'm planning a backpacking trip through South America and wanted some inspiration for my desktop background. This image really captures the spirit of exploration and discovery!" - Maria
+-   "As an avid hiker, I love having a background that reminds me of the beauty and mystery of nature. This one is especially cool because it's not just a pretty landscape, but a whole other world waiting to be explored." - Tom
+-   "I work in a windowless office all day, so having a dynamic background like this helps me feel more connected to the outside world. It's like a little escape every time I glance at my computer screen." - Sarah
 
 ## Resources
 
 Looking for more ways to fuel your sense of adventure? Check out these resources:
 
-- [National Geographic](#) - stunning photography and articles about travel, science, and culture
-- [Atlas Obscura](#) - a guide to the world's most unusual and offbeat attractions
-- [REI Co-op](#) - gear, advice, and inspiration for outdoor enthusiasts
+-   [National Geographic](#) - stunning photography and articles about travel, science, and culture
+-   [Atlas Obscura](#) - a guide to the world's most unusual and offbeat attractions
+-   [REI Co-op](#) - gear, advice, and inspiration for outdoor enthusiasts
 
 ## Contact Us
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -125,7 +125,7 @@ Pick from the list:
 - Alegreya
 - Lobster
 - Barlow Condensed
-- Creepster
+- Barlow Condensed
 - Lato
 - IBM Plex Sans
 - Cinzel Decorative

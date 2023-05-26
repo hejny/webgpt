@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Universe Art Journey
 
@@ -24,16 +24,16 @@ Our artwork has been enjoyed by people all over the world. Here are some stories
 
 If you're interested in learning more about space or digital art, we recommend checking out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [DeviantArt](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [DeviantArt](#)
 
 ## Contact Us
 
 We'd love to hear from you! If you have any questions or feedback, please don't hesitate to reach out. You can contact us at [email protected] or through our social media channels:
 
-- Twitter: [@JourneyThroughSpaceArt](#)
-- Instagram: [@JourneyThroughSpaceArt](#)
+-   Twitter: [@JourneyThroughSpaceArt](#)
+-   Instagram: [@JourneyThroughSpaceArt](#)
 
 Thank you for visiting our website, and we hope you enjoy exploring the universe with our digital art!
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

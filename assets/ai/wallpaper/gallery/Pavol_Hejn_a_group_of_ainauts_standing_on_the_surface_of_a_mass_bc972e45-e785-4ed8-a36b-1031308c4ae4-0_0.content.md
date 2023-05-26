@@ -5,22 +5,27 @@
 Welcome to our website, where you can experience the thrill of space exploration from the comfort of your own home. Our Planetary Adventure Background will transport you to a distant world, where towering mountains and deep canyons await your discovery.
 
 ## Features
-- High-quality resolution for an immersive experience
-- Compatible with all devices and screen sizes
-- Easy to download and set as your wallpaper/background
+
+-   High-quality resolution for an immersive experience
+-   Compatible with all devices and screen sizes
+-   Easy to download and set as your wallpaper/background
 
 ## User Stories
+
 "I love using this background during my virtual meetings. It adds a touch of excitement to my day and sparks interesting conversations with my colleagues." - John D.
 
 "I have always been fascinated by space, but I never had the chance to become an astronaut. This background allows me to live out my dreams of exploring other planets." - Sarah L.
 
 ## References
+
 For more information about space exploration and astronomy, check out these resources:
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
+
 If you have any questions or feedback, please don't hesitate to reach out to us at [contact@planetaryadventure.com](mailto:contact@planetaryadventure.com). We would love to hear from you!
 
 Thank you for choosing our Planetary Adventure Background. Happy exploring!
@@ -33,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,7 +100,7 @@ Pick from the list:
 - Poppins
 - Orbitron
 - Cinzel Decorative
-- Creepster
+- Barlow Condensed
 - Cabin
 - IBM Plex Sans
 - Roboto

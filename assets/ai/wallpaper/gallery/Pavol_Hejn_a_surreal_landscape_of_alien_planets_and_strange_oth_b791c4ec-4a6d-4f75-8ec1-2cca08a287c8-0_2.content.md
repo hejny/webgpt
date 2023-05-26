@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Cosmic Designs
 
@@ -8,9 +8,9 @@ Welcome to our website, where you can find unique and inspiring designs that wil
 
 Our designs are not just decorative; they're a work of art that will transform any room into a breathtaking scene from a sci-fi movie. Here are some reasons why you should choose our designs:
 
-- Unique styles: Our designs are exclusive to our website, so you won't find them anywhere else.
-- High-quality materials: We use only the best materials to ensure that our products are durable and long-lasting.
-- Easy installation: Our products are easy to install, and we provide detailed instructions to help you get the job done quickly and efficiently.
+-   Unique styles: Our designs are exclusive to our website, so you won't find them anywhere else.
+-   High-quality materials: We use only the best materials to ensure that our products are durable and long-lasting.
+-   Easy installation: Our products are easy to install, and we provide detailed instructions to help you get the job done quickly and efficiently.
 
 ## User Stories
 
@@ -24,16 +24,16 @@ Here are some stories from our satisfied customers who have transformed their sp
 
 If you're interested in learning more about the inspiration behind our designs, check out these references:
 
-- *The Art of Star Wars: The Force Awakens* by Phil Szostak
-- *Alien: Covenant - The Art of the Film* by Simon Ward
-- *Blade Runner 2049: Interlinked - The Art* by Tanya Lapointe
+-   _The Art of Star Wars: The Force Awakens_ by Phil Szostak
+-   _Alien: Covenant - The Art of the Film_ by Simon Ward
+-   _Blade Runner 2049: Interlinked - The Art_ by Tanya Lapointe
 
 ## Contact Us
 
 If you have any questions about our designs or need help with your order, don't hesitate to contact us. We're always here to help!
 
-- Email: info@ourwebsite.com
-- Phone: 1-800-123-4567
+-   Email: info@ourwebsite.com
+-   Phone: 1-800-123-4567
 
 Thank you for choosing our website for your design needs. We can't wait to see how our otherworldly designs transform your space!
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

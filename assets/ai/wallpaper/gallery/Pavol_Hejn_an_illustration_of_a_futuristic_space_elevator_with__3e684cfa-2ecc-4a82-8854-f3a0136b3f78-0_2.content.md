@@ -12,17 +12,17 @@ Our futuristic design is inspired by the concept of a space elevator, which coul
 
 Here are some stories from our customers who have used our futuristic design:
 
-- "I installed this design in my home office, and it's been a great conversation starter during video calls. It really sets the tone for creative thinking and innovation."
-- "My son loves all things space-related, so I surprised him with this design in his bedroom. He's been spending hours just staring at it and imagining all sorts of adventures."
-- "I work in a science museum, and we recently added this design to one of our exhibits. It's been a huge hit with visitors of all ages."
+-   "I installed this design in my home office, and it's been a great conversation starter during video calls. It really sets the tone for creative thinking and innovation."
+-   "My son loves all things space-related, so I surprised him with this design in his bedroom. He's been spending hours just staring at it and imagining all sorts of adventures."
+-   "I work in a science museum, and we recently added this design to one of our exhibits. It's been a huge hit with visitors of all ages."
 
 ## References
 
 If you're interested in learning more about space elevators, here are some resources to check out:
 
-- [Space Elevators: An Advanced Earth-Space Infrastructure for the New Millennium](#)
-- [The Space Elevator Concept](#)
-- [NASA's Space Elevator Research](#)
+-   [Space Elevators: An Advanced Earth-Space Infrastructure for the New Millennium](#)
+-   [The Space Elevator Concept](#)
+-   [NASA's Space Elevator Research](#)
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -141,7 +141,7 @@ Pick from the list:
 - Cinzel Decorative
 - Alegreya
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Barlow Condensed
 - Dancing Script
 - Cabin

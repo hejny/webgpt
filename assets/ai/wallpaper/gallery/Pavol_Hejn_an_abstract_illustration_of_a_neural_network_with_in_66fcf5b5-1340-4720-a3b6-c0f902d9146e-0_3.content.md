@@ -20,11 +20,11 @@ To use our platform, simply sign up and start communicating with your contacts. 
 
 "I've been using DarkNet for several months now, and I'm extremely impressed with the level of security it provides. I no longer have to worry about my communications being intercepted by hackers or government agencies."
 
-- John Doe, Business Owner
+-   John Doe, Business Owner
 
 "DarkNet has completely changed the way I communicate with my clients. I can now share sensitive information with them without worrying about it falling into the wrong hands."
 
-- Jane Smith, Freelancer
+-   Jane Smith, Freelancer
 
 ## References
 
@@ -36,7 +36,7 @@ If you have any questions or concerns about our platform, please don't hesitate 
 
 ---
 
-*DarkNet - Privacy for Everyone*
+_DarkNet - Privacy for Everyone_
 
 <!--
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -114,7 +114,7 @@ Pick from the list:
 - Open Sans
 - Alegreya
 - IBM Plex Sans
-- Creepster
+- Barlow Condensed
 - Barlow Condensed
 - Roboto
 - Inter

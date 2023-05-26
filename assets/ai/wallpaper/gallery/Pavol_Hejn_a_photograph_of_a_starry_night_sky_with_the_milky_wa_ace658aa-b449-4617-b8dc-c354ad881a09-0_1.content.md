@@ -12,10 +12,10 @@ Our beautiful wallpaper sets the perfect backdrop for exploring the wonders of t
 
 Stay up-to-date with the latest happenings in the world of astronomy by checking out our latest posts. From breaking news to insightful articles, we've got you covered.
 
-- The Search for Extraterrestrial Life: Are We Alone in the Universe?
-- Exploring the Mysteries of Black Holes
-- The Beauty of the Northern Lights: A Guide to Viewing the Aurora Borealis
-- How Telescopes Work: A Beginner's Guide to Observing the Night Sky
+-   The Search for Extraterrestrial Life: Are We Alone in the Universe?
+-   Exploring the Mysteries of Black Holes
+-   The Beauty of the Northern Lights: A Guide to Viewing the Aurora Borealis
+-   How Telescopes Work: A Beginner's Guide to Observing the Night Sky
 
 ## User Stories
 
@@ -29,9 +29,9 @@ Our readers are passionate about astronomy and love sharing their own experience
 
 Looking for more information about astronomy? Check out these helpful resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Sky & Telescope](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Sky & Telescope](#)
 
 ## Contact Us
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -132,7 +132,7 @@ Pick from the list:
 - Poppins
 - Playfair Display
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 - Montserrat
 - Open Sans
 - Raleway

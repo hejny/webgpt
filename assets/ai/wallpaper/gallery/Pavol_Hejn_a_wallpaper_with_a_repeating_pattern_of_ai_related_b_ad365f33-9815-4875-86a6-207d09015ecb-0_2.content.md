@@ -2,7 +2,7 @@
 
 # AI Tech Words
 
-Welcome to our website dedicated to all things related to artificial intelligence! Our minimalist wallpaper with a repeating pattern of AI-related buzzwords is the perfect background for tech enthusiasts who want to stay up-to-date with the latest trends and developments in this exciting field. 
+Welcome to our website dedicated to all things related to artificial intelligence! Our minimalist wallpaper with a repeating pattern of AI-related buzzwords is the perfect background for tech enthusiasts who want to stay up-to-date with the latest trends and developments in this exciting field.
 
 ## About Us
 
@@ -10,10 +10,10 @@ We are a team of AI enthusiasts who are passionate about exploring the potential
 
 ## Our Services
 
-- **AI News:** Stay informed about the latest news and breakthroughs in AI with our curated selection of articles from top sources.
-- **AI Glossary:** Confused by all the technical jargon? Check out our comprehensive glossary of AI terms and concepts.
-- **AI Events:** Find out about upcoming AI conferences, workshops, and meetups in your area.
-- **AI Jobs:** Looking for a career in AI? Browse our job board for the latest openings in this exciting field.
+-   **AI News:** Stay informed about the latest news and breakthroughs in AI with our curated selection of articles from top sources.
+-   **AI Glossary:** Confused by all the technical jargon? Check out our comprehensive glossary of AI terms and concepts.
+-   **AI Events:** Find out about upcoming AI conferences, workshops, and meetups in your area.
+-   **AI Jobs:** Looking for a career in AI? Browse our job board for the latest openings in this exciting field.
 
 ## User Stories
 
@@ -29,9 +29,9 @@ Here are some stories from our users who have found our website helpful:
 
 Check out some of our favorite resources for learning more about AI:
 
-- [OpenAI](#)
-- [MIT Technology Review](#)
-- [AI Ethics Lab](#)
+-   [OpenAI](#)
+-   [MIT Technology Review](#)
+-   [AI Ethics Lab](#)
 
 ## Contact Us
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -66,7 +66,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # AI Buzzwords Background for Tech Enthusiasts
 
-Welcome to our website dedicated to all things related to artificial intelligence! Our minimalist wallpaper with a repeating pattern of AI-related buzzwords is the perfect background for tech enthusiasts who want to stay up-to-date with the latest trends and developments in this exciting field. 
+Welcome to our website dedicated to all things related to artificial intelligence! Our minimalist wallpaper with a repeating pattern of AI-related buzzwords is the perfect background for tech enthusiasts who want to stay up-to-date with the latest trends and developments in this exciting field.
 
 ## About Us
 
@@ -119,7 +119,7 @@ Pick from the list:
 - Orbitron
 - Barlow Condensed
 - Exo 2
-- Creepster
+- Barlow Condensed
 - Open Sans
 - IBM Plex Sans
 - Roboto

@@ -12,17 +12,17 @@ We are a team of scientists, engineers, and enthusiasts who are passionate about
 
 Our website features stories from users who have used our AI tools to make groundbreaking discoveries. Here are just a few examples:
 
-- **Maria** used our AI algorithms to identify a previously unknown planet in a distant star system.
-- **John** used our machine learning models to predict the trajectory of a comet, allowing astronomers to observe it up close.
-- **Lena** used our natural language processing tools to translate an ancient alien text, revealing insights into an ancient civilization.
+-   **Maria** used our AI algorithms to identify a previously unknown planet in a distant star system.
+-   **John** used our machine learning models to predict the trajectory of a comet, allowing astronomers to observe it up close.
+-   **Lena** used our natural language processing tools to translate an ancient alien text, revealing insights into an ancient civilization.
 
 ## Resources
 
 We offer a range of resources for those interested in space exploration and AI technology. Here are some of our most popular resources:
 
-- **Blog**: Our blog features articles on the latest developments in space exploration and AI technology.
-- **Tutorials**: Our tutorials provide step-by-step instructions for using our AI tools to analyze space data.
-- **References**: Our references section includes links to scientific papers and other resources related to space exploration and AI.
+-   **Blog**: Our blog features articles on the latest developments in space exploration and AI technology.
+-   **Tutorials**: Our tutorials provide step-by-step instructions for using our AI tools to analyze space data.
+-   **References**: Our references section includes links to scientific papers and other resources related to space exploration and AI.
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -148,7 +148,7 @@ Pick from the list:
 - Exo 2
 - Dancing Script
 - Orbitron
-- Creepster
+- Barlow Condensed
 - Poppins
 - Cabin
 - Cormorant Garamond

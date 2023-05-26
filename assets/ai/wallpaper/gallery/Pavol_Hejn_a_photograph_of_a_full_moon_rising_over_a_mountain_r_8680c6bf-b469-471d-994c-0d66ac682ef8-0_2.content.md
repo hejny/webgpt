@@ -92,7 +92,7 @@ Pick from the list:
 - IBM Plex Sans
 - Cabin
 - Dancing Script
-- Creepster
+- Barlow Condensed
 - Roboto
 - Cinzel Decorative
 - Poppins

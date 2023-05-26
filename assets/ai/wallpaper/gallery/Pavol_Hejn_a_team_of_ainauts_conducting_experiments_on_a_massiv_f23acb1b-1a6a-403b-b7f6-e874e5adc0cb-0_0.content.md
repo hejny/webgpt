@@ -76,7 +76,7 @@ Pick from the list:
 - Roboto
 - Lato
 - Inter
-- Creepster
+- Barlow Condensed
 - Open Sans
 - Cabin
 - Dancing Script

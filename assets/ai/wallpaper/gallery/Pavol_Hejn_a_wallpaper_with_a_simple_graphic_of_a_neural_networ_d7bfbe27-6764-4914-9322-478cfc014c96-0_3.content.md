@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Neural Insights
 
@@ -16,11 +16,11 @@ Neural networks are a type of machine learning algorithm that are modeled after 
 
 Neural networks have a wide range of applications across industries, including:
 
-- **Finance**: Predicting stock prices and detecting fraud
-- **Healthcare**: Diagnosing diseases and predicting patient outcomes
-- **Marketing**: Targeted advertising and customer segmentation
-- **Manufacturing**: Quality control and predictive maintenance
-- **Transportation**: Traffic prediction and route optimization
+-   **Finance**: Predicting stock prices and detecting fraud
+-   **Healthcare**: Diagnosing diseases and predicting patient outcomes
+-   **Marketing**: Targeted advertising and customer segmentation
+-   **Manufacturing**: Quality control and predictive maintenance
+-   **Transportation**: Traffic prediction and route optimization
 
 ## User Stories
 
@@ -34,9 +34,9 @@ Here are some examples of how neural networks have been used in real-world scena
 
 For more information about neural networks and their applications, check out these resources:
 
-- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen
-- [Deep Learning](https://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
-- [Applications of Neural Networks](https://emerj.com/ai-sector-overviews/machine-learning-applications-in-finance-a-primer/) by Emerj
+-   [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen
+-   [Deep Learning](https://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+-   [Applications of Neural Networks](https://emerj.com/ai-sector-overviews/machine-learning-applications-in-finance-a-primer/) by Emerj
 
 ## Contact Us
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

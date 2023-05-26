@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Cosmic Mysteries
 
@@ -14,25 +14,25 @@ In addition, our backgrounds are available in high resolution, ensuring that eve
 
 Here are some examples of how our customers have used our backgrounds:
 
-- "I'm a science teacher, and I use these backgrounds as visuals for my online classes. My students love them, and they make the lessons more engaging."
-- "I work in a boring office, and having a space-themed background on my computer makes me feel like I'm exploring the universe instead of doing paperwork."
-- "I'm a gamer, and I love using these backgrounds as loading screens for my favorite space-themed games. It adds an extra level of immersion."
+-   "I'm a science teacher, and I use these backgrounds as visuals for my online classes. My students love them, and they make the lessons more engaging."
+-   "I work in a boring office, and having a space-themed background on my computer makes me feel like I'm exploring the universe instead of doing paperwork."
+-   "I'm a gamer, and I love using these backgrounds as loading screens for my favorite space-themed games. It adds an extra level of immersion."
 
 ## References
 
 If you want to learn more about the gas giant planet featured in our background, here are some resources to check out:
 
-- [NASA's page on gas giants](#)
-- [National Geographic's article on Jupiter](#)
-- [Space.com's guide to gas giant planets](#)
+-   [NASA's page on gas giants](#)
+-   [National Geographic's article on Jupiter](#)
+-   [Space.com's guide to gas giant planets](#)
 
 ## Contact us
 
 If you have any questions or feedback, please don't hesitate to contact us. You can reach us via email at [contact@ourwebsite.com](mailto:contact@ourwebsite.com) or through our social media channels:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 Thank you for visiting our website, and we hope you enjoy our cosmic collection!
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -12,9 +12,9 @@ Our website background showcases an abstract illustration of a dark and ominous 
 
 Stay up-to-date with the latest cybersecurity news and insights by checking out our latest articles:
 
-- "Protecting Your Business from Ransomware Attacks"
-- "The Importance of Multi-Factor Authentication"
-- "Top 5 Cybersecurity Threats to Watch Out for in 2023"
+-   "Protecting Your Business from Ransomware Attacks"
+-   "The Importance of Multi-Factor Authentication"
+-   "Top 5 Cybersecurity Threats to Watch Out for in 2023"
 
 ## User Stories
 
@@ -26,17 +26,17 @@ Hear from our readers about their experiences with cybersecurity:
 
 Looking for more information on cybersecurity? Check out our list of recommended resources:
 
-- National Institute of Standards and Technology (NIST)
-- Cybersecurity and Infrastructure Security Agency (CISA)
-- The SANS Institute
+-   National Institute of Standards and Technology (NIST)
+-   Cybersecurity and Infrastructure Security Agency (CISA)
+-   The SANS Institute
 
 ## Contact Us
 
 Have a question or comment? Get in touch with us:
 
-- Email: [info@cybersecurityblog.com](mailto:info@cybersecurityblog.com)
-- Twitter: [@cybersecblog](https://twitter.com/cybersecblog)
-- LinkedIn: [Cybersecurity Blog](https://www.linkedin.com/company/cybersecurity-blog/) 
+-   Email: [info@cybersecurityblog.com](mailto:info@cybersecurityblog.com)
+-   Twitter: [@cybersecblog](https://twitter.com/cybersecblog)
+-   LinkedIn: [Cybersecurity Blog](https://www.linkedin.com/company/cybersecurity-blog/)
 
 Protect your business and stay informed with our cybersecurity blog.
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -101,7 +101,7 @@ Have a question or comment? Get in touch with us:
 
 - Email: [info@cybersecurityblog.com](mailto:info@cybersecurityblog.com)
 - Twitter: [@cybersecblog](https://twitter.com/cybersecblog)
-- LinkedIn: [Cybersecurity Blog](https://www.linkedin.com/company/cybersecurity-blog/) 
+- LinkedIn: [Cybersecurity Blog](https://www.linkedin.com/company/cybersecurity-blog/)
 
 Protect yourself and stay informed with our cybersecurity blog.
 
@@ -151,7 +151,7 @@ Have a question or comment? Get in touch with us:
 
 - Email: [info@cybersecurityblog.com](mailto:info@cybersecurityblog.com)
 - Twitter: [@cybersecblog](https://twitter.com/cybersecblog)
-- LinkedIn: [Cybersecurity Blog](https://www.linkedin.com/company/cybersecurity-blog/) 
+- LinkedIn: [Cybersecurity Blog](https://www.linkedin.com/company/cybersecurity-blog/)
 
 Protect your business and stay informed with our cybersecurity blog.
 
@@ -169,7 +169,7 @@ Pick from the list:
 - Orbitron
 - Barlow Condensed
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Lobster
 - Futura
 - Cinzel Decorative

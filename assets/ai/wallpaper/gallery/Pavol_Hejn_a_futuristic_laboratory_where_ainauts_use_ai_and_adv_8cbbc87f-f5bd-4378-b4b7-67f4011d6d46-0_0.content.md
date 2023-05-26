@@ -16,17 +16,17 @@ At our futuristic laboratory, we use state-of-the-art equipment to manipulate ge
 
 Our creations have already made a significant impact on the world. Here are just a few examples of how our life forms are being used:
 
-- **Agriculture:** Our genetically modified crops are more resistant to pests and require fewer resources to grow, helping to alleviate food shortages.
-- **Medicine:** We have developed bacteria that can produce life-saving drugs more efficiently than traditional manufacturing methods.
-- **Environmental Cleanup:** Our microorganisms can break down pollutants and toxins, helping to clean up contaminated soil and water.
+-   **Agriculture:** Our genetically modified crops are more resistant to pests and require fewer resources to grow, helping to alleviate food shortages.
+-   **Medicine:** We have developed bacteria that can produce life-saving drugs more efficiently than traditional manufacturing methods.
+-   **Environmental Cleanup:** Our microorganisms can break down pollutants and toxins, helping to clean up contaminated soil and water.
 
 ## References
 
 If you're interested in learning more about biotechnology and its potential applications, check out these resources:
 
-- [National Institute of Biomedical Imaging and Bioengineering](#)
-- [The Biotechnology Innovation Organization](#)
-- [Nature Biotechnology Journal](#)
+-   [National Institute of Biomedical Imaging and Bioengineering](#)
+-   [The Biotechnology Innovation Organization](#)
+-   [Nature Biotechnology Journal](#)
 
 ## Contact Us
 
@@ -34,7 +34,7 @@ Have a question or want to learn more about our work? Get in touch with us at [c
 
 ---
 
-*Background image credit: [Pexels](https://www.pexels.com/photo/white-and-blue-abstract-painting-3747155/)*
+_Background image credit: [Pexels](https://www.pexels.com/photo/white-and-blue-abstract-painting-3747155/)_
 
 <!--
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -120,7 +120,7 @@ Pick from the list:
 - Playfair Display
 - Great Vibes
 - Barlow Condensed
-- Creepster
+- Barlow Condensed
 - Open Sans
 - Montserrat
 - Poppins

@@ -2,7 +2,7 @@
 
 # Space Depths
 
-Welcome to our website, where we take you on a journey through the depths of space. Our mission is to explore the unknown and uncover the mysteries of the universe. 
+Welcome to our website, where we take you on a journey through the depths of space. Our mission is to explore the unknown and uncover the mysteries of the universe.
 
 ## Wallpaper Background
 
@@ -10,25 +10,25 @@ Our wallpaper depicts a team of Ainautes and their AI companions exploring a mas
 
 ## About Us
 
-We are a team of space enthusiasts who are passionate about uncovering the secrets of the universe. Our website is dedicated to sharing our knowledge and discoveries with the world. 
+We are a team of space enthusiasts who are passionate about uncovering the secrets of the universe. Our website is dedicated to sharing our knowledge and discoveries with the world.
 
 ## User Stories
 
-Our users come from all walks of life, ranging from amateur stargazers to professional astronomers. They come to our website to learn about the latest discoveries in space exploration and to connect with others who share their passion for the cosmos. 
+Our users come from all walks of life, ranging from amateur stargazers to professional astronomers. They come to our website to learn about the latest discoveries in space exploration and to connect with others who share their passion for the cosmos.
 
 > "I've always been fascinated by space, but I never knew where to go to learn more. This website has been an invaluable resource for me." - John D., amateur astronomer
 
 ## Our Mission
 
-Our mission is to inspire and educate people about the wonders of space. We believe that by sharing our knowledge and discoveries, we can help people appreciate the beauty and complexity of the universe. 
+Our mission is to inspire and educate people about the wonders of space. We believe that by sharing our knowledge and discoveries, we can help people appreciate the beauty and complexity of the universe.
 
 ## References
 
 If you're interested in learning more about space exploration, check out some of our favorite resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Unknown: A Journey Through the Depths of Space
 
-Welcome to our website, where we take you on a journey through the depths of space. Our mission is to explore the unknown and uncover the mysteries of the universe. 
+Welcome to our website, where we take you on a journey through the depths of space. Our mission is to explore the unknown and uncover the mysteries of the universe.
 
 ## Wallpaper Background
 
@@ -69,17 +69,17 @@ Our wallpaper depicts a team of Ainautes and their AI companions exploring a mas
 
 ## About Us
 
-We are a team of space enthusiasts who are passionate about uncovering the secrets of the universe. Our website is dedicated to sharing our knowledge and discoveries with the world. 
+We are a team of space enthusiasts who are passionate about uncovering the secrets of the universe. Our website is dedicated to sharing our knowledge and discoveries with the world.
 
 ## User Stories
 
-Our users come from all walks of life, ranging from amateur stargazers to professional astronomers. They come to our website to learn about the latest discoveries in space exploration and to connect with others who share their passion for the cosmos. 
+Our users come from all walks of life, ranging from amateur stargazers to professional astronomers. They come to our website to learn about the latest discoveries in space exploration and to connect with others who share their passion for the cosmos.
 
 > "I've always been fascinated by space, but I never knew where to go to learn more. This website has been an invaluable resource for me." - John D., amateur astronomer
 
 ## Our Mission
 
-Our mission is to inspire and educate people about the wonders of space. We believe that by sharing our knowledge and discoveries, we can help people appreciate the beauty and complexity of the universe. 
+Our mission is to inspire and educate people about the wonders of space. We believe that by sharing our knowledge and discoveries, we can help people appreciate the beauty and complexity of the universe.
 
 ## References
 
@@ -121,7 +121,7 @@ Pick from the list:
 - Cinzel
 - IBM Plex Sans
 - Inter
-- Creepster
+- Barlow Condensed
 
 
 Write just the font name nothing else.

@@ -16,9 +16,9 @@ Our team consists of passionate scientists, engineers, and AI experts who are de
 
 We are currently working on several exciting projects that leverage the power of AI to accelerate scientific discovery. Some of our ongoing projects include:
 
-- Developing AI-powered drug discovery tools to identify new treatments for diseases
-- Using machine learning algorithms to analyze large datasets from space telescopes and uncover new insights about the universe
-- Creating virtual reality simulations to help researchers visualize complex data in 3D
+-   Developing AI-powered drug discovery tools to identify new treatments for diseases
+-   Using machine learning algorithms to analyze large datasets from space telescopes and uncover new insights about the universe
+-   Creating virtual reality simulations to help researchers visualize complex data in 3D
 
 ## User Stories
 
@@ -32,17 +32,17 @@ Our users come from all walks of life and have different reasons for being inter
 
 If you're interested in learning more about the science and technology behind our projects, check out these resources:
 
-- [AI in Science](#)
-- [Machine Learning for Scientific Discovery](#)
-- [Virtual Reality in Research](#)
+-   [AI in Science](#)
+-   [Machine Learning for Scientific Discovery](#)
+-   [Virtual Reality in Research](#)
 
 ## Contact Us
 
 We're always looking for new collaborators and supporters who share our vision. If you have questions or ideas, don't hesitate to reach out:
 
-- Email: [contact@ourwebsite.com](mailto:contact@ourwebsite.com)
-- Twitter: [@ourwebsite](https://twitter.com/ourwebsite)
-- LinkedIn: [Our Website](https://www.linkedin.com/company/ourwebsite/)
+-   Email: [contact@ourwebsite.com](mailto:contact@ourwebsite.com)
+-   Twitter: [@ourwebsite](https://twitter.com/ourwebsite)
+-   LinkedIn: [Our Website](https://www.linkedin.com/company/ourwebsite/)
 
 <!--
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -126,7 +126,7 @@ Pick from the list:
 - Cabin
 - Great Vibes
 - Roboto
-- Creepster
+- Barlow Condensed
 - Poppins
 - Open Sans
 - Lobster

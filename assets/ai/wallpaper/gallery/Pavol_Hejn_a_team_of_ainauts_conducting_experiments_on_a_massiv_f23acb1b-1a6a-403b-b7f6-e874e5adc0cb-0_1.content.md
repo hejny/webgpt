@@ -16,9 +16,9 @@ Our mission is to conduct research and exploration of the icy moons orbiting gas
 
 Our team of Ainautes uses a variety of instruments and techniques to study these moons, including:
 
-- **Rovers:** We deploy rovers to the surface of these moons to collect samples and perform experiments.
-- **Orbiters:** We use spacecraft in orbit around these moons to map their surfaces and study their atmospheres.
-- **Subsurface Probes:** We send probes beneath the surface of these moons to study their composition and potential for habitability.
+-   **Rovers:** We deploy rovers to the surface of these moons to collect samples and perform experiments.
+-   **Orbiters:** We use spacecraft in orbit around these moons to map their surfaces and study their atmospheres.
+-   **Subsurface Probes:** We send probes beneath the surface of these moons to study their composition and potential for habitability.
 
 ## User Stories
 
@@ -32,17 +32,17 @@ Here are some stories from people who have been inspired by our work:
 
 If you're interested in learning more about our research, here are some resources to check out:
 
-- **NASA's Europa Clipper Mission:** [https://www.nasa.gov/europa](#)
-- **Cassini-Huygens Mission to Saturn:** [https://www.nasa.gov/mission_pages/cassini/main/index.html](#)
-- **Juno Mission to Jupiter:** [https://www.nasa.gov/mission_pages/juno/main/index.html](#)
+-   **NASA's Europa Clipper Mission:** [https://www.nasa.gov/europa](#)
+-   **Cassini-Huygens Mission to Saturn:** [https://www.nasa.gov/mission_pages/cassini/main/index.html](#)
+-   **Juno Mission to Jupiter:** [https://www.nasa.gov/mission_pages/juno/main/index.html](#)
 
 ## Contact Us
 
 If you have any questions or comments about our work, please don't hesitate to get in touch:
 
-- **Email:** info@ainaut.es
-- **Phone:** 555-1234
-- **Address:** 123 Main Street, Suite 456, Anytown, USA
+-   **Email:** info@ainaut.es
+-   **Phone:** 555-1234
+-   **Address:** 123 Main Street, Suite 456, Anytown, USA
 
 ---
 
@@ -56,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -204,7 +204,7 @@ Pick from the list:
 - Futura
 - Cinzel Decorative
 - Roboto
-- Creepster
+- Barlow Condensed
 - Lobster
 - Cormorant Garamond
 - Barlow Condensed

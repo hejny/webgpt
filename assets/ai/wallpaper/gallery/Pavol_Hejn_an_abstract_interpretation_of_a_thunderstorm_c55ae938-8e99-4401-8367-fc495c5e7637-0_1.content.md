@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Abstract Storm
 
@@ -6,10 +6,10 @@ Looking for a way to spark your creativity and add some energy to your workspace
 
 ## Features
 
-- High-quality resolution for optimal display on any device
-- Unique abstract design that captures the power and beauty of nature
-- Compatible with all major operating systems and devices
-- Easy to install and customize to your preferences
+-   High-quality resolution for optimal display on any device
+-   Unique abstract design that captures the power and beauty of nature
+-   Compatible with all major operating systems and devices
+-   Easy to install and customize to your preferences
 
 ## User Stories
 
@@ -21,17 +21,17 @@ Looking for a way to spark your creativity and add some energy to your workspace
 
 For more information about how your environment can impact your productivity and creativity, check out these resources:
 
-- [The Science of Color and Its Impact on Productivity](#)
-- [How to Create a Workspace That Inspires You](#)
-- [10 Tips for Boosting Your Creativity](#)
+-   [The Science of Color and Its Impact on Productivity](#)
+-   [How to Create a Workspace That Inspires You](#)
+-   [10 Tips for Boosting Your Creativity](#)
 
 ## Contact Us
 
 If you have any questions or comments about our abstract thunderstorm background, please don't hesitate to get in touch. We'd love to hear from you!
 
-- Email: info@abstractbackgrounds.com
-- Phone: 555-555-5555
-- Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
+-   Email: info@abstractbackgrounds.com
+-   Phone: 555-555-5555
+-   Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
 
 <!--
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

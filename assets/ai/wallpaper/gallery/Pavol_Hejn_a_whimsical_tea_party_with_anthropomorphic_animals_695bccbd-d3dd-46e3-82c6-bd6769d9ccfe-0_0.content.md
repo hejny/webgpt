@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Whimsy Blog
 
@@ -24,18 +24,18 @@ Our whimsical tea party wallpaper featuring anthropomorphic animals is the perfe
 
 Looking for more ways to ignite your creativity? Check out our list of recommended resources:
 
-- [The Artist's Way](#) by Julia Cameron
-- [Big Magic: Creative Living Beyond Fear](#) by Elizabeth Gilbert
-- [Creative Pep Talk](#) podcast by Andy J. Miller
-- [Skillshare](#) online classes for artists and creatives
+-   [The Artist's Way](#) by Julia Cameron
+-   [Big Magic: Creative Living Beyond Fear](#) by Elizabeth Gilbert
+-   [Creative Pep Talk](#) podcast by Andy J. Miller
+-   [Skillshare](#) online classes for artists and creatives
 
 ## Contact Us
 
 Have a question or suggestion for our team? We'd love to hear from you! Send us an email at [hello@whimsicalwonderland.com](mailto:hello@whimsicalwonderland.com) or connect with us on social media:
 
-- [Twitter](#)
-- [Instagram](#)
-- [Facebook](#)
+-   [Twitter](#)
+-   [Instagram](#)
+-   [Facebook](#)
 
 Thank you for visiting Whimsical Wonderland, and happy creating!
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -70,10 +70,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

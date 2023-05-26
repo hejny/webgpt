@@ -26,9 +26,9 @@ Stay up-to-date on the latest travel news and trends by following us on social m
 
 Looking for more information on a specific topic? Check out our list of references for further reading and research.
 
-- Lonely Planet
-- National Geographic
-- Fodor's Travel Guides
+-   Lonely Planet
+-   National Geographic
+-   Fodor's Travel Guides
 
 ## Contact us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Write me a Google font which is best fitting for the website.
 
 Pick from the list:
 - Lato
-- Creepster
+- Barlow Condensed
 - Lobster
 - Raleway
 - Futura

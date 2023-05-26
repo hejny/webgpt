@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Retro Robot Gaming
 
@@ -12,9 +12,9 @@ Retro gaming is more than just a nostalgic trip down memory lane. It's an opport
 
 If you're new to retro gaming or looking to improve your skills, we've got you covered. Our website offers a variety of resources, including:
 
-- [Top 10 Retro-Style Games](#)
-- [How to Build a Retro Gaming PC](#)
-- [Tips for Emulating Classic Games](#)
+-   [Top 10 Retro-Style Games](#)
+-   [How to Build a Retro Gaming PC](#)
+-   [Tips for Emulating Classic Games](#)
 
 We also have a community forum where you can connect with other retro gamers, share your experiences, and get advice on how to overcome challenging levels or bosses.
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -8,9 +8,9 @@ Welcome to our website where you can experience a digital illustration of a city
 
 Our background offers more than just visual appeal:
 
-- **Imaginative Inspiration:** The futuristic city background sparks creativity and imagination, making it perfect for writers, artists, and anyone who loves sci-fi.
-- **Professional Presentation:** The right background can enhance the aesthetic value of your computer screen and make it look more professional.
-- **Reflects Your Interests:** Your choice of background reflects your interests and personality. Our futuristic city background shows that you have an appreciation for innovation and technology.
+-   **Imaginative Inspiration:** The futuristic city background sparks creativity and imagination, making it perfect for writers, artists, and anyone who loves sci-fi.
+-   **Professional Presentation:** The right background can enhance the aesthetic value of your computer screen and make it look more professional.
+-   **Reflects Your Interests:** Your choice of background reflects your interests and personality. Our futuristic city background shows that you have an appreciation for innovation and technology.
 
 ## User Stories
 
@@ -26,9 +26,9 @@ Here are some user stories from our satisfied customers who have used our futuri
 
 If you're interested in learning more about the inspiration behind our futuristic city background, check out these references:
 
-- [The Art of Sci-Fi Cities](#)
-- [10 Amazing Sci-Fi Cityscapes](#)
-- [Futuristic Architecture: 100 Buildings That Look Like They're From the Future](#)
+-   [The Art of Sci-Fi Cities](#)
+-   [10 Amazing Sci-Fi Cityscapes](#)
+-   [Futuristic Architecture: 100 Buildings That Look Like They're From the Future](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -155,7 +155,7 @@ Pick from the list:
 - Exo 2
 - Futura
 - Cinzel Decorative
-- Creepster
+- Barlow Condensed
 - IBM Plex Sans
 - Inter
 - Barlow Condensed

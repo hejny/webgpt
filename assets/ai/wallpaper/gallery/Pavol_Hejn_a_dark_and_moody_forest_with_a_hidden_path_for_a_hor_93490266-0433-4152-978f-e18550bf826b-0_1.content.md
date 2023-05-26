@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -16,7 +16,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 - Do not include images
 -->
 
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Dark Trail Exploration
 
@@ -30,9 +30,9 @@ At "The Hidden Path", we are passionate about all things horror and mystery. Our
 
 Our website caters to a wide range of users, including:
 
-- Horror enthusiasts looking for their next scare
-- Mystery lovers eager to solve puzzles and riddles
-- Adventurers seeking to explore the unknown
+-   Horror enthusiasts looking for their next scare
+-   Mystery lovers eager to solve puzzles and riddles
+-   Adventurers seeking to explore the unknown
 
 Whatever your reason for visiting us, we guarantee that you will find something of interest here.
 
@@ -44,11 +44,11 @@ Our wallpaper features a dark and moody forest with a hidden path, perfectly cap
 
 "The Hidden Path" offers a variety of resources to help you explore the dark forest, including:
 
-- Articles on the history and folklore of the forest
-- Guides to navigating the various paths and trails
-- Reviews of horror and mystery books, movies, and games
-- Interactive puzzles and riddles to test your wits
-- A community forum where you can connect with other enthusiasts and share your experiences
+-   Articles on the history and folklore of the forest
+-   Guides to navigating the various paths and trails
+-   Reviews of horror and mystery books, movies, and games
+-   Interactive puzzles and riddles to test your wits
+-   A community forum where you can connect with other enthusiasts and share your experiences
 
 ## References
 

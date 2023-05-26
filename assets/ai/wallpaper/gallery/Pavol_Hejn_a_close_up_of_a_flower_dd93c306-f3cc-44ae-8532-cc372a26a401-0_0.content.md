@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Floral Elegance
 
@@ -14,17 +14,17 @@ Plus, our wallpaper is available in a variety of resolutions, so you can choose 
 
 Our customers love our floral wallpaper! Here are just a few examples of how people are using our wallpaper:
 
-- "I used this wallpaper as the background for my website's homepage. It added a touch of elegance and sophistication that my site was missing before." - Sarah, web designer
-- "I downloaded this wallpaper to use as the background for my Zoom calls. It makes me feel like I'm sitting in a beautiful garden instead of my home office!" - John, remote worker
-- "I created a series of Instagram posts featuring this wallpaper as the background. My followers loved the cohesive look it gave my feed." - Emily, social media influencer
+-   "I used this wallpaper as the background for my website's homepage. It added a touch of elegance and sophistication that my site was missing before." - Sarah, web designer
+-   "I downloaded this wallpaper to use as the background for my Zoom calls. It makes me feel like I'm sitting in a beautiful garden instead of my home office!" - John, remote worker
+-   "I created a series of Instagram posts featuring this wallpaper as the background. My followers loved the cohesive look it gave my feed." - Emily, social media influencer
 
 ## References
 
 Looking for more inspiration? Check out these resources:
 
-- [Flower Power: How to Use Floral Patterns in Your Designs](#)
-- [The Psychology of Color in Design](#)
-- [10 Creative Ways to Use Wallpaper in Your Home Decor](#)
+-   [Flower Power: How to Use Floral Patterns in Your Designs](#)
+-   [The Psychology of Color in Design](#)
+-   [10 Creative Ways to Use Wallpaper in Your Home Decor](#)
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

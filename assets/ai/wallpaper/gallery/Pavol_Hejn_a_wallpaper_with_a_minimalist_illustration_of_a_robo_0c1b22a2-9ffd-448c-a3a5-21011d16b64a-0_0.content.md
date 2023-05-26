@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Minimal Robo-Arm
 
@@ -10,9 +10,9 @@ Our robotic arm illustration is perfect for any website related to technology, r
 
 ## Why Choose Our Illustration?
 
-- Minimalist design: Our illustration features a simple yet eye-catching depiction of a robotic arm, making it perfect for a wide range of websites.
-- Moody colors: The dark and moody background adds depth and dimension to your website, creating a visually striking backdrop for your content.
-- High-quality image: Our illustration is available in high resolution, ensuring that it looks crisp and clear on any device.
+-   Minimalist design: Our illustration features a simple yet eye-catching depiction of a robotic arm, making it perfect for a wide range of websites.
+-   Moody colors: The dark and moody background adds depth and dimension to your website, creating a visually striking backdrop for your content.
+-   High-quality image: Our illustration is available in high resolution, ensuring that it looks crisp and clear on any device.
 
 ## User Stories
 
@@ -26,9 +26,9 @@ Our robotic arm illustration has been used by a variety of businesses and indivi
 
 If you're interested in using our robotic arm illustration for your website, check out these references:
 
-- [How to Add an Image to Your Website](#)
-- [The Best Design Tools for Non-Designers](#)
-- [Tips for Choosing the Right Visuals for Your Website](#)
+-   [How to Add an Image to Your Website](#)
+-   [The Best Design Tools for Non-Designers](#)
+-   [Tips for Choosing the Right Visuals for Your Website](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

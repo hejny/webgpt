@@ -10,10 +10,10 @@ At Cozy Winter Cabin, we believe that your home should be a reflection of your p
 
 ## Our Services
 
-- Home Decor Inspiration: Get inspired with our collection of beautiful home decor ideas.
-- DIY Tutorials: Learn how to make your own decor pieces with our step-by-step tutorials.
-- Holiday Decorating Tips: Get ready for the holidays with our festive decorating ideas.
-- Lifestyle Articles: Find tips and tricks for living your best life at home.
+-   Home Decor Inspiration: Get inspired with our collection of beautiful home decor ideas.
+-   DIY Tutorials: Learn how to make your own decor pieces with our step-by-step tutorials.
+-   Holiday Decorating Tips: Get ready for the holidays with our festive decorating ideas.
+-   Lifestyle Articles: Find tips and tricks for living your best life at home.
 
 ## User Stories
 
@@ -25,9 +25,9 @@ At Cozy Winter Cabin, we believe that your home should be a reflection of your p
 
 Check out some of our most popular articles:
 
-- "10 Rustic Farmhouse Decor Ideas"
-- "How to Make a DIY Wreath for the Holidays"
-- "5 Tips for Creating a Cozy Living Room"
+-   "10 Rustic Farmhouse Decor Ideas"
+-   "How to Make a DIY Wreath for the Holidays"
+-   "5 Tips for Creating a Cozy Living Room"
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -118,7 +118,7 @@ Pick from the list:
 - Exo 2
 - Dancing Script
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 - Great Vibes
 
 

@@ -10,16 +10,16 @@ Made from high-quality materials, our wallpaper is durable, easy to install, and
 
 ## Features:
 
-- High-quality printing
-- Durable and long-lasting
-- Easy to install
-- Unique and eye-catching design
+-   High-quality printing
+-   Durable and long-lasting
+-   Easy to install
+-   Unique and eye-catching design
 
 ## Specifications:
 
-- Size: 10m x 0.53m (33ft x 1.74ft)
-- Material: Non-woven fabric
-- Pattern repeat: 53cm (20.87in)
+-   Size: 10m x 0.53m (33ft x 1.74ft)
+-   Material: Non-woven fabric
+-   Pattern repeat: 53cm (20.87in)
 
 ## Installation Instructions:
 
@@ -89,7 +89,7 @@ Pick from the list:
 - Cabin
 - Alegreya
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Orbitron
 - Exo 2
 - Inter

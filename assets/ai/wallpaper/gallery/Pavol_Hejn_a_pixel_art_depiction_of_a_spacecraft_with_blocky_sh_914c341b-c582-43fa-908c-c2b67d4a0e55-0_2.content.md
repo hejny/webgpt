@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Retro Space Gaming
 
@@ -20,10 +20,10 @@ Our readers come from all walks of life, but they share one thing in common: a l
 
 We pride ourselves on providing accurate and reliable information to our readers. Here are some of our sources:
 
-- IGN
-- Kotaku
-- Polygon
-- Gamespot
+-   IGN
+-   Kotaku
+-   Polygon
+-   Gamespot
 
 ## Contact Us
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

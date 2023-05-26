@@ -27,17 +27,17 @@ Creating your own virtual reality workspace is easy. Simply follow these steps:
 
 Check out these resources to learn more about creating a virtual reality workspace:
 
-- [How to Set Up a Virtual Reality Workspace](#)
-- [10 Tips for Creating the Ultimate Virtual Reality Workspace](#)
-- [Virtual Reality in the Workplace: Benefits and Challenges](#)
+-   [How to Set Up a Virtual Reality Workspace](#)
+-   [10 Tips for Creating the Ultimate Virtual Reality Workspace](#)
+-   [Virtual Reality in the Workplace: Benefits and Challenges](#)
 
 ## Contact Us
 
 If you have any questions or comments, please don't hesitate to contact us. We're here to help you create the perfect virtual reality workspace!
 
-- Email: info@virtualrealityworkspace.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@virtualrealityworkspace.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 ---
 
@@ -51,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -185,7 +185,7 @@ Pick from the list:
 - Lobster
 - Cormorant Garamond
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Raleway
 

@@ -22,27 +22,27 @@ Our team of scientists, engineers, and enthusiasts has been working together for
 
 We are currently working on several exciting projects, including:
 
-- **Project Ainaut**: Our flagship mission to explore a distant planet known as Ainaut. Our team of scientists and engineers has designed a suite of instruments and rovers to study the planet's geology, atmosphere, and potential for life.
+-   **Project Ainaut**: Our flagship mission to explore a distant planet known as Ainaut. Our team of scientists and engineers has designed a suite of instruments and rovers to study the planet's geology, atmosphere, and potential for life.
 
-- **Project Starlight**: Our initiative to bring astronomy education to schools and communities around the world. We have developed a series of interactive exhibits, workshops, and online resources to help people learn about the stars, planets, and galaxies.
+-   **Project Starlight**: Our initiative to bring astronomy education to schools and communities around the world. We have developed a series of interactive exhibits, workshops, and online resources to help people learn about the stars, planets, and galaxies.
 
 ## References
 
 If you want to learn more about our work, check out these resources:
 
-- **Our Blog**: Our team regularly posts updates on our missions, discoveries, and outreach activities.
+-   **Our Blog**: Our team regularly posts updates on our missions, discoveries, and outreach activities.
 
-- **Our Publications**: Our scientists have published dozens of papers in top journals, detailing our findings and methodologies.
+-   **Our Publications**: Our scientists have published dozens of papers in top journals, detailing our findings and methodologies.
 
 ## Contact Us
 
 If you have any questions or comments, please don't hesitate to contact us:
 
-- **Email**: info@exploringtheunknown.com
+-   **Email**: info@exploringtheunknown.com
 
-- **Phone**: +1 (555) 123-4567
+-   **Phone**: +1 (555) 123-4567
 
-- **Address**: 123 Main St, Anytown USA
+-   **Address**: 123 Main St, Anytown USA
 
 Thank you for visiting our website, and we hope you join us on our journey to explore the unknown!
 
@@ -54,10 +54,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -128,7 +128,7 @@ Pick from the list:
 - Open Sans
 - Exo 2
 - Lato
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Cabin
 - Barlow Condensed

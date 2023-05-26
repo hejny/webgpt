@@ -2,11 +2,11 @@
 
 # Space Odyssey
 
-Welcome to Space Odyssey, your ultimate destination for all things space-related. 
+Welcome to Space Odyssey, your ultimate destination for all things space-related.
 
 ## Wallpaper
 
-Our website features a stunning wallpaper that captures the essence of the universe. The wallpaper is a realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the cosmos. 
+Our website features a stunning wallpaper that captures the essence of the universe. The wallpaper is a realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the cosmos.
 
 Feel free to download and use this wallpaper as your desktop background or share it with your friends. And don't forget to explore our website for more amazing space-related content!
 
@@ -24,11 +24,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Space Odyssey
 
-Welcome to Space Odyssey, your ultimate destination for all things space-related. 
+Welcome to Space Odyssey, your ultimate destination for all things space-related.
 
 ## Wallpaper
 
-Our website features a stunning wallpaper that captures the essence of the universe. The wallpaper is a realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the cosmos. 
+Our website features a stunning wallpaper that captures the essence of the universe. The wallpaper is a realistic photograph of a nebula, with bright colors and intricate details that showcase the beauty of the cosmos.
 
 Feel free to download and use this wallpaper as your desktop background or share it with your friends. And don't forget to explore our website for more amazing space-related content!
 
@@ -58,7 +58,7 @@ Pick from the list:
 - Alegreya
 - Montserrat
 - Open Sans
-- Creepster
+- Barlow Condensed
 - Futura
 - Cinzel Decorative
 

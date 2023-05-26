@@ -69,7 +69,7 @@ Pick from the list:
 - Alegreya
 - Cinzel Decorative
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 - Montserrat
 - Lato
 - Poppins

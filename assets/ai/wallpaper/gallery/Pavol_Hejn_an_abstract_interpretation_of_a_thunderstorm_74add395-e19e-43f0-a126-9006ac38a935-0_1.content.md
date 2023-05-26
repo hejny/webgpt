@@ -16,18 +16,18 @@ Our stormy vibes wallpaper was inspired by the power and energy of a thunderstor
 
 Here are some stories from our satisfied customers who have used our wallpaper to transform their spaces:
 
-- "I love how the stormy wallpaper adds depth and texture to my home office. It's the perfect backdrop for all of my creative projects." - Sarah T.
-- "The bold design of the wallpaper really brings my living room to life. It's become a conversation starter whenever I have guests over!" - Michael B.
-- "I was hesitant to try such a dramatic wallpaper, but I'm so glad I did. It completely transformed my bedroom into a cozy and stylish retreat." - Emily L.
+-   "I love how the stormy wallpaper adds depth and texture to my home office. It's the perfect backdrop for all of my creative projects." - Sarah T.
+-   "The bold design of the wallpaper really brings my living room to life. It's become a conversation starter whenever I have guests over!" - Michael B.
+-   "I was hesitant to try such a dramatic wallpaper, but I'm so glad I did. It completely transformed my bedroom into a cozy and stylish retreat." - Emily L.
 
 ## Inspiration and Resources
 
 Looking for more ideas on how to create a workspace that inspires you? Check out our blog for tips on interior design, productivity, and more. We also offer a variety of other resources, including:
 
-- **References:** Browse our collection of design books and magazines for even more inspiration.
-- **Contact:** Have a question about our products or services? Get in touch with our friendly customer service team.
-- **Workspace Makeover Guide:** Not sure where to start when it comes to creating your dream workspace? Our step-by-step guide will walk you through the process.
-- **FAQs:** Find answers to some of our most frequently asked questions.
+-   **References:** Browse our collection of design books and magazines for even more inspiration.
+-   **Contact:** Have a question about our products or services? Get in touch with our friendly customer service team.
+-   **Workspace Makeover Guide:** Not sure where to start when it comes to creating your dream workspace? Our step-by-step guide will walk you through the process.
+-   **FAQs:** Find answers to some of our most frequently asked questions.
 
 ## Get Inspired with Stormy Vibes
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -137,7 +137,7 @@ Ready to create a workspace that inspires you? Check out our collection of resou
 Write me a Google font which is best fitting for the website.
 
 Pick from the list:
-- Creepster
+- Barlow Condensed
 - Lobster
 - IBM Plex Sans
 - Poppins

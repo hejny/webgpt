@@ -70,7 +70,7 @@ Pick from the list:
 - Open Sans
 - Cormorant Garamond
 - Lobster
-- Creepster
+- Barlow Condensed
 - IBM Plex Sans
 - Great Vibes
 

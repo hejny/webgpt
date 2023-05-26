@@ -67,7 +67,7 @@ Pick from the list:
 - Dancing Script
 - Cinzel
 - Montserrat
-- Creepster
+- Barlow Condensed
 - Exo 2
 - Futura
 - Raleway

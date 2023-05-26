@@ -8,9 +8,9 @@ Welcome to our website, where you can explore the mysteries of the universe thro
 
 Our wallpaper is not only visually stunning but also highly functional. It can help you:
 
-- Stay focused: The calming colors and otherworldly landscape can help you concentrate on your work or studies.
-- Feel inspired: Looking at this wallpaper can spark your creativity and encourage you to dream big.
-- Customize your device: Our wallpaper is available in multiple resolutions, so you can find the perfect fit for your desktop, laptop, or mobile device.
+-   Stay focused: The calming colors and otherworldly landscape can help you concentrate on your work or studies.
+-   Feel inspired: Looking at this wallpaper can spark your creativity and encourage you to dream big.
+-   Customize your device: Our wallpaper is available in multiple resolutions, so you can find the perfect fit for your desktop, laptop, or mobile device.
 
 ## How to Download and Use Our Wallpaper
 
@@ -36,9 +36,9 @@ Our galaxy-themed wallpaper has already inspired many people around the world. H
 
 If you're interested in learning more about the science behind our wallpaper, check out these resources:
 
-- [NASA's Jet Propulsion Laboratory](#)
-- [National Geographic's Space & Astronomy page](#)
-- [The Planetary Society](#)
+-   [NASA's Jet Propulsion Laboratory](#)
+-   [National Geographic's Space & Astronomy page](#)
+-   [The Planetary Society](#)
 
 ## Contact Us
 
@@ -58,10 +58,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -148,7 +148,7 @@ Pick from the list:
 - Cinzel
 - IBM Plex Sans
 - Roboto
-- Creepster
+- Barlow Condensed
 - Dancing Script
 - Cabin
 - Cinzel Decorative

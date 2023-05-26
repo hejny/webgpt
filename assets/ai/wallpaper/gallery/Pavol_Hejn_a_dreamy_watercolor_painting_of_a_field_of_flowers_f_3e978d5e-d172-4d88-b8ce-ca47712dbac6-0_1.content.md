@@ -2,7 +2,7 @@
 
 # Lovely Events
 
-Welcome to Lovely Events, your one-stop-shop for all your event planning needs. Our team of experienced professionals will help you create the perfect event that exceeds your expectations. 
+Welcome to Lovely Events, your one-stop-shop for all your event planning needs. Our team of experienced professionals will help you create the perfect event that exceeds your expectations.
 
 ## Dreamy Flower Field Wallpaper
 
@@ -24,7 +24,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Lovely Events
 
-Welcome to Lovely Events, your one-stop-shop for all your event planning needs. Our team of experienced professionals will help you create the perfect event that exceeds your expectations. 
+Welcome to Lovely Events, your one-stop-shop for all your event planning needs. Our team of experienced professionals will help you create the perfect event that exceeds your expectations.
 
 ## Dreamy Flower Field Wallpaper
 
@@ -60,7 +60,7 @@ Pick from the list:
 - IBM Plex Sans
 - Cinzel
 - Lato
-- Creepster
+- Barlow Condensed
 
 
 Write just the font name nothing else.

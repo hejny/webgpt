@@ -8,9 +8,9 @@ Welcome to our website, where we provide resources and inspiration to help you u
 
 Our background is not just a pretty picture, it's a tool to help you boost your creativity. Here are some reasons why you should download it right now:
 
-- Minimalist design: The simple yet striking graphic of the robot hand holding a stylus or pen will inspire you to focus on what really matters – your ideas.
-- Space for taking notes or sketching: The blank space in the background is there for you to use as a canvas for your thoughts and sketches. Let your imagination run wild!
-- High-quality resolution: Our background is available in various resolutions to fit any screen size, from smartphones to desktop computers.
+-   Minimalist design: The simple yet striking graphic of the robot hand holding a stylus or pen will inspire you to focus on what really matters – your ideas.
+-   Space for taking notes or sketching: The blank space in the background is there for you to use as a canvas for your thoughts and sketches. Let your imagination run wild!
+-   High-quality resolution: Our background is available in various resolutions to fit any screen size, from smartphones to desktop computers.
 
 ## How to Download Our Robot Hand Background
 
@@ -33,9 +33,9 @@ Here are some stories from our users who have found our robot hand background he
 
 If you're looking for more resources to help you unleash your creativity, check out these helpful links:
 
-- [10 Tips to Boost Your Creativity](#)
-- [The Power of Mind Mapping for Creative Thinking](#)
-- [How to Overcome Creative Block](#)
+-   [10 Tips to Boost Your Creativity](#)
+-   [The Power of Mind Mapping for Creative Thinking](#)
+-   [How to Overcome Creative Block](#)
 
 ## Contact Us
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -166,7 +166,7 @@ Write me a Google font which is best fitting for the website.
 
 Pick from the list:
 - Great Vibes
-- Creepster
+- Barlow Condensed
 - Poppins
 - Lobster
 - Raleway

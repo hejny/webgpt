@@ -97,7 +97,7 @@ Pick from the list:
 - Cabin
 - Exo 2
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 - Montserrat
 
 

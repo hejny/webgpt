@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Botanical Website
 
@@ -12,9 +12,9 @@ Our collection includes a range of designs that can be used for a variety of pur
 
 Our designs have been used by a variety of individuals and businesses to bring a touch of nature into their online presence. Here are some examples of how our customers have used our designs:
 
-- "The spiderweb design with dew drops was the perfect background for my photography portfolio website. It added a touch of elegance and sophistication." - Sarah, photographer
-- "I used the fern design for my blog post about sustainable living. It helped convey the message of being in harmony with nature." - Tom, blogger
-- "The flower design was the perfect backdrop for my Instagram post about my new skincare line. It helped showcase the natural ingredients in my products." - Lisa, entrepreneur
+-   "The spiderweb design with dew drops was the perfect background for my photography portfolio website. It added a touch of elegance and sophistication." - Sarah, photographer
+-   "I used the fern design for my blog post about sustainable living. It helped convey the message of being in harmony with nature." - Tom, blogger
+-   "The flower design was the perfect backdrop for my Instagram post about my new skincare line. It helped showcase the natural ingredients in my products." - Lisa, entrepreneur
 
 ## References
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

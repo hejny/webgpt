@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Cycling Guide
 
@@ -16,10 +16,10 @@ Cycling is one of the best ways to stay fit and healthy. It's low-impact, making
 
 We offer a wide range of services to help you get the most out of your cycling experience. Here are just a few of the things we can do for you:
 
-- **Training Plans**: Our expert coaches will work with you to create a customized training plan that's tailored to your goals and fitness level.
-- **Gear Reviews**: We test and review the latest cycling gear, from bikes to helmets to shoes, so you can make an informed purchase.
-- **User Stories**: Read inspiring stories from fellow cyclists who have overcome obstacles and achieved their goals.
-- **Events Calendar**: Stay up-to-date on the latest cycling events in your area.
+-   **Training Plans**: Our expert coaches will work with you to create a customized training plan that's tailored to your goals and fitness level.
+-   **Gear Reviews**: We test and review the latest cycling gear, from bikes to helmets to shoes, so you can make an informed purchase.
+-   **User Stories**: Read inspiring stories from fellow cyclists who have overcome obstacles and achieved their goals.
+-   **Events Calendar**: Stay up-to-date on the latest cycling events in your area.
 
 ## Our Wallpaper
 
@@ -29,17 +29,17 @@ Our colorful graphic of a bicycle race is the perfect background for our sports 
 
 Looking for more information about cycling? Check out these resources:
 
-- [USA Cycling](#)
-- [Bicycling Magazine](#)
-- [Cycling News](#)
+-   [USA Cycling](#)
+-   [Bicycling Magazine](#)
+-   [Cycling News](#)
 
 ## Contact Us
 
 Have a question or comment? We'd love to hear from you. You can reach us at [email protected] or on social media:
 
-- Twitter: [@pedaltothemetal](#)
-- Facebook: [@pedaltothemetal](#)
-- Instagram: [@pedaltothemetal](#) 
+-   Twitter: [@pedaltothemetal](#)
+-   Facebook: [@pedaltothemetal](#)
+-   Instagram: [@pedaltothemetal](#)
 
 So what are you waiting for? Let's pedal to the metal and start cycling! 🚴‍♀️🚴‍♂️
 
@@ -51,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -107,7 +107,7 @@ Have a question or comment? We'd love to hear from you. You can reach us at [ema
 
 - Twitter: [@pedaltothemetal](#)
 - Facebook: [@pedaltothemetal](#)
-- Instagram: [@pedaltothemetal](#) 
+- Instagram: [@pedaltothemetal](#)
 
 So what are you waiting for? Let's pedal to the metal and start cycling! 🚴‍♀️🚴‍♂️
 

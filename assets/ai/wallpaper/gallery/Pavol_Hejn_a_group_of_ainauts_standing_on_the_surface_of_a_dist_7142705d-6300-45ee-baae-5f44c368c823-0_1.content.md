@@ -12,17 +12,17 @@ Our website is dedicated to bringing you the latest news, discoveries, and insig
 
 We love hearing from our readers and learning how they use our website and background in their daily lives. Here are some user stories that have inspired us:
 
-- "I'm an amateur astronomer, and I use your website to stay up-to-date on the latest celestial events. The background creates a beautiful ambiance while I read about the cosmos."
-- "As a science teacher, I use your website to inspire my students to pursue careers in STEM fields. The background sparks their imagination and curiosity about space."
-- "I work in a windowless office, and your background is the only thing that makes me feel like I'm not trapped inside all day."
+-   "I'm an amateur astronomer, and I use your website to stay up-to-date on the latest celestial events. The background creates a beautiful ambiance while I read about the cosmos."
+-   "As a science teacher, I use your website to inspire my students to pursue careers in STEM fields. The background sparks their imagination and curiosity about space."
+-   "I work in a windowless office, and your background is the only thing that makes me feel like I'm not trapped inside all day."
 
 ## References
 
 If you want to learn more about the topics we cover on our website, check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -139,7 +139,7 @@ Pick from the list:
 - Lobster
 - Cabin
 - Playfair Display
-- Creepster
+- Barlow Condensed
 - Montserrat
 - Inter
 - Alegreya

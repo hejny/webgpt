@@ -6,20 +6,20 @@ Welcome to our website, where we offer a wide range of winter sports gear for ad
 
 ## Why Choose Us?
 
-- We offer high-quality winter sports gear at affordable prices
-- Our products are designed to cater to all skill levels
-- We provide exceptional customer service
-- We offer fast and reliable shipping
+-   We offer high-quality winter sports gear at affordable prices
+-   Our products are designed to cater to all skill levels
+-   We provide exceptional customer service
+-   We offer fast and reliable shipping
 
 ## Our Products
 
 We offer a wide range of winter sports gear, including:
 
-- Skis and snowboards
-- Snow boots and bindings
-- Helmets and goggles
-- Jackets and pants
-- Gloves and mittens
+-   Skis and snowboards
+-   Snow boots and bindings
+-   Helmets and goggles
+-   Jackets and pants
+-   Gloves and mittens
 
 ## User Stories
 
@@ -33,17 +33,17 @@ Our customers love our products! Here are some of their stories:
 
 Check out these articles for more information on winter sports:
 
-- [10 Reasons Why You Should Try Skiing](#)
-- [Snowboarding vs. Skiing: Which One is Right for You?](#)
-- [How to Dress for Cold Weather](#)
+-   [10 Reasons Why You Should Try Skiing](#)
+-   [Snowboarding vs. Skiing: Which One is Right for You?](#)
+-   [How to Dress for Cold Weather](#)
 
 ## Contact Us
 
 If you have any questions or concerns, please don't hesitate to contact us:
 
-- Email: info@wintersportsgear.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@wintersportsgear.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 Experience the thrill of winter sports with our high-quality gear. Shop now and get ready for your next adventure!
 
@@ -55,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -132,7 +132,7 @@ Pick from the list:
 - Open Sans
 - Cinzel
 - Barlow Condensed
-- Creepster
+- Barlow Condensed
 - Lobster
 - Poppins
 - Futura

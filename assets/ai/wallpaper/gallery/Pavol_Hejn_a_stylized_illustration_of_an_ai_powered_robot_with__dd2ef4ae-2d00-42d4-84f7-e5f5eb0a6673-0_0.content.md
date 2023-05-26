@@ -8,10 +8,10 @@ Welcome to our website where you can find the perfect background for your AI-pow
 
 Our wallpaper is not just a pretty picture, it is also designed to enhance the user experience of your website. Here are some reasons why you should choose our AI-powered chatbot background:
 
-- It is visually appealing and will make your website stand out.
-- The minimalist color scheme will not distract from your website's content.
-- The futuristic design complements the use of AI on your website.
-- It is optimized for high-resolution displays and will look great on any device.
+-   It is visually appealing and will make your website stand out.
+-   The minimalist color scheme will not distract from your website's content.
+-   The futuristic design complements the use of AI on your website.
+-   It is optimized for high-resolution displays and will look great on any device.
 
 ## User Stories
 
@@ -25,25 +25,25 @@ Here are some examples of how our AI-powered chatbot background has been used by
 
 Using our AI-powered chatbot background is easy. Simply download the image and set it as your website's background. Here are some tips for getting the best results:
 
-- Make sure the image is optimized for web use to ensure fast loading times.
-- Consider using a solid color overlay to make text easier to read over the background.
-- Experiment with different placement options to find the best layout for your website.
+-   Make sure the image is optimized for web use to ensure fast loading times.
+-   Consider using a solid color overlay to make text easier to read over the background.
+-   Experiment with different placement options to find the best layout for your website.
 
 ## References
 
 Here are some resources that inspired our AI-powered chatbot background:
 
-- [Robot Illustration by Virgil Pana](https://dribbble.com/shots/2787962-Robot-Illustration)
-- [Minimalist Color Schemes by Canva](https://www.canva.com/colors/minimalist-color-schemes/)
-- [Futuristic Design Trends by Creative Bloq](https://www.creativebloq.com/inspiration/futuristic-design)
+-   [Robot Illustration by Virgil Pana](https://dribbble.com/shots/2787962-Robot-Illustration)
+-   [Minimalist Color Schemes by Canva](https://www.canva.com/colors/minimalist-color-schemes/)
+-   [Futuristic Design Trends by Creative Bloq](https://www.creativebloq.com/inspiration/futuristic-design)
 
 ## Contact Us
 
 If you have any questions or feedback about our AI-powered chatbot background, please don't hesitate to contact us. We would love to hear from you!
 
-- Email: info@yourwebsite.com
-- Phone: 555-1234
-- Social Media: [Twitter](#), [Facebook](#), [Instagram](#) 
+-   Email: info@yourwebsite.com
+-   Phone: 555-1234
+-   Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
 
 ---
 
@@ -57,10 +57,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -117,7 +117,7 @@ If you have any questions or feedback about our AI-powered chatbot background, p
 
 - Email: info@yourwebsite.com
 - Phone: 555-1234
-- Social Media: [Twitter](#), [Facebook](#), [Instagram](#) 
+- Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
 
 ---
 
@@ -137,7 +137,7 @@ Pick from the list:
 - Futura
 - Cabin
 - Exo 2
-- Creepster
+- Barlow Condensed
 - Lobster
 - Cinzel
 - Dancing Script

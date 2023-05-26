@@ -18,17 +18,17 @@ Read stories from other users who have embarked on this surreal journey and shar
 
 Learn more about the real-life deserts that inspired our wallpaper, as well as the artists and writers who have explored the surreal landscapes of the mind.
 
-- [The Surrealist Art of Salvador Dali](#)
-- [The Writings of Jorge Luis Borges](#)
-- [The Mojave Desert](#)
+-   [The Surrealist Art of Salvador Dali](#)
+-   [The Writings of Jorge Luis Borges](#)
+-   [The Mojave Desert](#)
 
 ## Contact Us
 
 Have questions or comments about our website? We'd love to hear from you! Get in touch via email, phone, or social media.
 
-- Email: info@enigmaticdesert.com
-- Phone: 555-555-5555
-- Twitter: @EnigmaticDesert
+-   Email: info@enigmaticdesert.com
+-   Phone: 555-555-5555
+-   Twitter: @EnigmaticDesert
 
 ---
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -121,7 +121,7 @@ Pick from the list:
 - Cabin
 - Barlow Condensed
 - Great Vibes
-- Creepster
+- Barlow Condensed
 
 
 Write just the font name nothing else.

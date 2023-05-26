@@ -16,17 +16,17 @@ At Nature's Palette, we are passionate about wildlife and its conservation. Our 
 
 Our community of nature enthusiasts is what makes Nature's Palette so special. Here are some user stories from our readers:
 
-- "I stumbled upon this blog while searching for information on birdwatching. I was amazed by the wealth of information available here. Thanks to Nature's Palette, I have discovered a new hobby that has brought me closer to nature." - John D.
-- "As an amateur photographer, I find the articles on wildlife photography extremely helpful. The tips and tricks shared by the experts have helped me improve my skills and capture some amazing shots." - Sarah L.
-- "Nature's Palette has inspired me to take action and do my part in conserving the environment. The articles on sustainability have opened my eyes to the impact of human activities on the planet, and I am now more conscious of my actions." - Michael S.
+-   "I stumbled upon this blog while searching for information on birdwatching. I was amazed by the wealth of information available here. Thanks to Nature's Palette, I have discovered a new hobby that has brought me closer to nature." - John D.
+-   "As an amateur photographer, I find the articles on wildlife photography extremely helpful. The tips and tricks shared by the experts have helped me improve my skills and capture some amazing shots." - Sarah L.
+-   "Nature's Palette has inspired me to take action and do my part in conserving the environment. The articles on sustainability have opened my eyes to the impact of human activities on the planet, and I am now more conscious of my actions." - Michael S.
 
 ## References
 
 If you're interested in learning more about nature and wildlife, here are some resources that we recommend:
 
-- [National Geographic](#)
-- [World Wildlife Fund](#)
-- [BirdLife International](#)
+-   [National Geographic](#)
+-   [World Wildlife Fund](#)
+-   [BirdLife International](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -123,7 +123,7 @@ Pick from the list:
 - Poppins
 - Alegreya
 - Raleway
-- Creepster
+- Barlow Condensed
 - Montserrat
 - Dancing Script
 

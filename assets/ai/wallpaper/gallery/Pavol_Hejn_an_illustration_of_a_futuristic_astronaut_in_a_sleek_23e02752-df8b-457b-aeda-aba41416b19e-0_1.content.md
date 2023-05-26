@@ -10,7 +10,7 @@ As a token of our appreciation for your interest in space, we're excited to offe
 
 To download this wallpaper, simply click the "Download" button below. We hope you enjoy it!
 
-[![Futuristic Astronaut Wallpaper](https://example.com/futuristic-astronaut-wallpaper.jpg)](https://example.com/futuristic-astronaut-wallpaper.jpg "Download Futuristic Astronaut Wallpaper")
+[![Futuristic Astronaut Wallpaper](https://example.com/futuristic-astronaut-wallpaper.jpg)](https://example.com/futuristic-astronaut-wallpaper.jpg 'Download Futuristic Astronaut Wallpaper')
 
 <!--
 
@@ -63,7 +63,7 @@ Pick from the list:
 - Orbitron
 - Futura
 - Raleway
-- Creepster
+- Barlow Condensed
 - Playfair Display
 
 

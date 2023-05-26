@@ -12,9 +12,9 @@ Our team of experienced fitness enthusiasts is passionate about helping people l
 
 We offer a wide range of services to help you get started on your fitness journey. From personalized training plans to nutrition advice, we have everything you need to reach your goals.
 
-- **Personalized Training Plans:** Our expert trainers will create a customized training plan based on your fitness level and goals.
-- **Nutrition Advice:** We'll help you make healthier food choices and develop a balanced diet that supports your fitness goals.
-- **Cycling Tips:** Whether you're new to cycling or a seasoned pro, we have tips and tricks to help you improve your performance and stay safe on the road.
+-   **Personalized Training Plans:** Our expert trainers will create a customized training plan based on your fitness level and goals.
+-   **Nutrition Advice:** We'll help you make healthier food choices and develop a balanced diet that supports your fitness goals.
+-   **Cycling Tips:** Whether you're new to cycling or a seasoned pro, we have tips and tricks to help you improve your performance and stay safe on the road.
 
 ## Success Stories
 
@@ -28,9 +28,9 @@ Don't just take our word for it - check out some of the success stories from our
 
 We've compiled a list of helpful resources to support your fitness journey:
 
-- **Cycling Gear Guide:** Our guide to essential cycling gear will help you get started on the right foot.
-- **Fitness Tracker Reviews:** We've tested and reviewed the latest fitness trackers to help you find the perfect one for your needs.
-- **Healthy Recipes:** Check out our collection of healthy recipes that are perfect for fueling your workouts.
+-   **Cycling Gear Guide:** Our guide to essential cycling gear will help you get started on the right foot.
+-   **Fitness Tracker Reviews:** We've tested and reviewed the latest fitness trackers to help you find the perfect one for your needs.
+-   **Healthy Recipes:** Check out our collection of healthy recipes that are perfect for fueling your workouts.
 
 ## Contact Us
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -185,7 +185,7 @@ Pick from the list:
 - Cinzel
 - Dancing Script
 - Alegreya
-- Creepster
+- Barlow Condensed
 - Futura
 - Cabin
 - Exo 2

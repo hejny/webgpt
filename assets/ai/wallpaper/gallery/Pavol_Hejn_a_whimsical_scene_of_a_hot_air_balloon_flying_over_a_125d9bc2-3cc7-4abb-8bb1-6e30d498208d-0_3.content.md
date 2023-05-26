@@ -2,21 +2,26 @@
 
 # Sky High Adventures
 
-Welcome to Sky High Adventures, your one-stop-shop for all things adventurous! 
+Welcome to Sky High Adventures, your one-stop-shop for all things adventurous!
 
 ## About Us
+
 We are a team of passionate adventurers who love exploring the world from up high. Our goal is to inspire and guide you on your own sky-high adventures.
 
 ## Hot Air Balloon Rides
+
 Experience the thrill of soaring above the city in a hot air balloon ride with our experienced pilots. Take in the stunning views and create memories that will last a lifetime.
 
 ## Adventure Packages
+
 Looking for an adrenaline rush? Check out our adventure packages, including skydiving, bungee jumping, and paragliding. Our expert guides will ensure your safety while you experience the ultimate thrill.
 
 ## Lifestyle Blog
+
 Get inspired by our lifestyle blog, where we share stories and tips on living life to the fullest. From travel guides to outdoor gear reviews, we've got you covered.
 
 ## Shop
+
 Gear up for your next adventure with our selection of high-quality outdoor equipment and apparel. From hiking boots to camping gear, we've got everything you need to make your next trip unforgettable.
 
 So what are you waiting for? Join us on a sky-high adventure today!
@@ -35,7 +40,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Sky High Adventures
 
-Welcome to Sky High Adventures, your one-stop-shop for all things adventurous! 
+Welcome to Sky High Adventures, your one-stop-shop for all things adventurous!
 
 ## About Us
 We are a team of passionate adventurers who love exploring the world from up high. Our goal is to inspire and guide you on your own sky-high adventures.
@@ -65,7 +70,7 @@ Pick from the list:
 - Dancing Script
 - Alegreya
 - Cormorant Garamond
-- Creepster
+- Barlow Condensed
 - Playfair Display
 - Lobster
 - Montserrat

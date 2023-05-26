@@ -14,17 +14,17 @@ Plus, our décor is made from high-quality materials that are designed to last. 
 
 Here are just a few examples of how our customers have used our space-themed décor to transform their spaces:
 
-- "I put up the astronaut photograph in my son's room, and he loves it! He says he feels like he's sleeping under the stars every night." - Sarah M.
-- "I work from home, and I wanted something to make my office feel more inspiring. This décor does the trick - every time I look up from my computer, I feel like I'm taking a break to gaze out at the universe." - Mark T.
-- "I've always been fascinated by space, but I never thought I could afford to decorate my apartment with a space theme. This décor was surprisingly affordable, and it looks amazing!" - Emily R.
+-   "I put up the astronaut photograph in my son's room, and he loves it! He says he feels like he's sleeping under the stars every night." - Sarah M.
+-   "I work from home, and I wanted something to make my office feel more inspiring. This décor does the trick - every time I look up from my computer, I feel like I'm taking a break to gaze out at the universe." - Mark T.
+-   "I've always been fascinated by space, but I never thought I could afford to decorate my apartment with a space theme. This décor was surprisingly affordable, and it looks amazing!" - Emily R.
 
 ## References
 
 Want to learn more about space and astronomy? Here are a few resources we recommend:
 
-- [NASA](#nasa) - The official website of the National Aeronautics and Space Administration
-- [Space.com](#spacecom) - News, features, and information about space and astronomy
-- [Astronomy Magazine](#astronomy) - A popular magazine for amateur astronomers
+-   [NASA](#nasa) - The official website of the National Aeronautics and Space Administration
+-   [Space.com](#spacecom) - News, features, and information about space and astronomy
+-   [Astronomy Magazine](#astronomy) - A popular magazine for amateur astronomers
 
 ## Contact Us
 
@@ -38,9 +38,9 @@ Address: 123 Main Street, Suite 456, Anytown USA
 
 Follow us on social media for more space-themed inspiration:
 
-- [Twitter](#twitter)
-- [Instagram](#instagram)
-- [Facebook](#facebook)
+-   [Twitter](#twitter)
+-   [Instagram](#instagram)
+-   [Facebook](#facebook)
 
 <!--
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -176,7 +176,7 @@ Pick from the list:
 - Poppins
 - Great Vibes
 - Cinzel Decorative
-- Creepster
+- Barlow Condensed
 - Barlow Condensed
 - Cinzel
 - Alegreya

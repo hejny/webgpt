@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Digital Dashboard
 
@@ -8,20 +8,20 @@ Welcome to our website, where we offer a digital dashboard background that will 
 
 Our digital dashboard background offers the following features:
 
-- Simple yet elegant design
-- Space for monitoring and managing data
-- High-quality resolution
-- Compatible with various screen sizes
-- Easy to download and install
+-   Simple yet elegant design
+-   Space for monitoring and managing data
+-   High-quality resolution
+-   Compatible with various screen sizes
+-   Easy to download and install
 
 ## Benefits
 
 By using our digital dashboard background, you can enjoy the following benefits:
 
-- Enhance your business's online presence
-- Showcase your technological expertise
-- Impress potential clients and customers
-- Create a professional and modern image for your business
+-   Enhance your business's online presence
+-   Showcase your technological expertise
+-   Impress potential clients and customers
+-   Create a professional and modern image for your business
 
 ## User Stories
 
@@ -35,16 +35,16 @@ Here are some user stories from our satisfied customers:
 
 Check out these references to learn more about the importance of a professional website background:
 
-- [Why Website Backgrounds Matter](#)
-- [How to Choose the Right Website Background](#)
+-   [Why Website Backgrounds Matter](#)
+-   [How to Choose the Right Website Background](#)
 
 ## Contact Us
 
 If you have any questions or concerns, please don't hesitate to contact us. We're always happy to help!
 
-- Email: info@digitaldashboardbackground.com
-- Phone: 555-1234
-- Address: 123 Main Street, Anytown USA
+-   Email: info@digitaldashboardbackground.com
+-   Phone: 555-1234
+-   Address: 123 Main Street, Anytown USA
 
 Thank you for considering our digital dashboard background for your business. We look forward to helping you create a professional and modern image online!
 
@@ -56,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

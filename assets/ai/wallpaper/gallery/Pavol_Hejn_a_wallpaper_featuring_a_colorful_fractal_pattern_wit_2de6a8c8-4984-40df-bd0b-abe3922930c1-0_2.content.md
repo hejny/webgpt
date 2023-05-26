@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Colorful Fractal Inspo
 
@@ -8,10 +8,10 @@ Welcome to our website dedicated to helping you create a productive and inspirin
 
 Our fractal pattern background features intricate lines and bold colors that are sure to catch your eye and inspire your creativity. Here are some reasons why it's the perfect choice for your workspace:
 
-- High-quality resolution for crisp, clear images
-- Easy to download and install on your desktop
-- Compatible with all major operating systems
-- Regularly updated with new designs and patterns
+-   High-quality resolution for crisp, clear images
+-   Easy to download and install on your desktop
+-   Compatible with all major operating systems
+-   Regularly updated with new designs and patterns
 
 ## User Stories
 
@@ -25,9 +25,9 @@ Our users have found our fractal pattern background to be a valuable addition to
 
 Looking for more ways to enhance your workspace and boost your productivity? Check out these helpful resources:
 
-- [10 Tips for Creating a Productive Workspace](#)
-- [The Benefits of Using Color in Your Workspace](#)
-- [How to Stay Inspired and Motivated as a Creative Professional](#)
+-   [10 Tips for Creating a Productive Workspace](#)
+-   [The Benefits of Using Color in Your Workspace](#)
+-   [How to Stay Inspired and Motivated as a Creative Professional](#)
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

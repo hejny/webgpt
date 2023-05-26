@@ -8,9 +8,9 @@ Welcome to our business and marketing website, where we help you take your brand
 
 Our background is designed to create a clean, modern, and professional look that is sure to impress your clients. Here are some reasons why you should use our background:
 
-- It adds a touch of sophistication to your website
-- It creates a minimalist design that is easy on the eyes
-- It enhances the overall aesthetic of your website
+-   It adds a touch of sophistication to your website
+-   It creates a minimalist design that is easy on the eyes
+-   It enhances the overall aesthetic of your website
 
 ## User Stories
 
@@ -24,8 +24,8 @@ Our background has been used by many businesses and individuals, and they have a
 
 We take pride in providing high-quality products and services to our clients. Here are some references from our satisfied customers:
 
-- John, small business owner: "The city skyline background is exactly what I needed to elevate the look of my website. It's simple, elegant, and professional. I highly recommend it!"
-- Sarah, marketing professional: "The background is amazing! It really makes my website stand out. I've received so many compliments on it."
+-   John, small business owner: "The city skyline background is exactly what I needed to elevate the look of my website. It's simple, elegant, and professional. I highly recommend it!"
+-   Sarah, marketing professional: "The background is amazing! It really makes my website stand out. I've received so many compliments on it."
 
 ## Contact Us
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -147,7 +147,7 @@ Pick from the list:
 - IBM Plex Sans
 - Orbitron
 - Great Vibes
-- Creepster
+- Barlow Condensed
 - Roboto
 - Montserrat
 - Cinzel

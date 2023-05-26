@@ -1,4 +1,4 @@
-<!--font:Creepster-->
+<!--font:Barlow Condensed-->
 
 # Small Business Security
 
@@ -12,11 +12,11 @@ Small businesses are often targeted by cybercriminals because they may have weak
 
 Here are some tips to help you improve your company's cybersecurity:
 
-- Train your employees on how to recognize and avoid phishing scams.
-- Use strong passwords and two-factor authentication.
-- Keep all software up-to-date with the latest security patches.
-- Regularly back up important data and store it securely.
-- Use a firewall and antivirus software to protect against malware.
+-   Train your employees on how to recognize and avoid phishing scams.
+-   Use strong passwords and two-factor authentication.
+-   Keep all software up-to-date with the latest security patches.
+-   Regularly back up important data and store it securely.
+-   Use a firewall and antivirus software to protect against malware.
 
 ## User Stories
 
@@ -30,9 +30,9 @@ Don't just take our word for it - read these user stories from small business ow
 
 For more information on cybersecurity for small businesses, check out these resources:
 
-- [National Institute of Standards and Technology Cybersecurity Framework](#)
-- [Federal Trade Commission Small Business Cybersecurity Guide](#)
-- [Small Business Administration Cybersecurity Portal](#)
+-   [National Institute of Standards and Technology Cybersecurity Framework](#)
+-   [Federal Trade Commission Small Business Cybersecurity Guide](#)
+-   [Small Business Administration Cybersecurity Portal](#)
 
 ## Contact Us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
