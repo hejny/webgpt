@@ -9,6 +9,8 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
     line-height: 110%;
     margin-bottom: 50px;
     font-size: 65px;
+
+    word-break: break-word;
 }
 
 .Article h2 {
