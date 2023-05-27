@@ -1,0 +1,77 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#88bbee'
+      count: 7
+    - note: The darkest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#000000'
+averageColor: '#2c3340'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#111122'
+      count: 3460
+    - value: '#ccddee'
+      count: 219
+    - value: '#556677'
+      count: 118
+mostSatulightedColors:
+    - value: '#88bbee'
+      count: 4
+mostGroupedColors:
+    - value: '#000011'
+      count: 1045
+bottomHalf:
+    averageColor: '#252c37'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111122'
+          count: 4190
+        - value: '#ccddee'
+          count: 154
+        - value: '#778899'
+          count: 94
+    mostSatulightedColors:
+        - value: '#88bbee'
+          count: 7
+    mostGroupedColors:
+        - value: '#111122'
+          count: 1787
+bottomThird:
+    averageColor: '#222b38'
+    lightestColor: '#ffeeff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111122'
+          count: 4689
+        - value: '#ccddee'
+          count: 199
+        - value: '#778899'
+          count: 103
+    mostSatulightedColors:
+        - value: '#88bbee'
+          count: 7
+    mostGroupedColors:
+        - value: '#111122'
+          count: 2675
+bottomLine:
+    averageColor: '#11202c'
+    lightestColor: '#bbccee'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#001111'
+          count: 8640
+        - value: '#446688'
+          count: 216
+        - value: '#99bbdd'
+          count: 108
+    mostSatulightedColors:
+        - value: '#77aadd'
+          count: 108
+    mostGroupedColors:
+        - value: '#001111'
+          count: 4104

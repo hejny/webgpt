@@ -1,0 +1,84 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#ffaa22'
+      count: 19117
+    - note: The color farthest from the primary color.
+      value: '#000000'
+averageColor: '#f8a523'
+lightestColor: '#ffeeee'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#ffaa22'
+      count: 19341
+    - value: '#111111'
+      count: 73
+    - value: '#eeeedd'
+      count: 10
+    - value: '#995533'
+      count: 5
+mostSatulightedColors:
+    - value: '#ffbb55'
+      count: 4
+    - value: '#cc3322'
+      count: 1
+mostGroupedColors:
+    - value: '#ffaa22'
+      count: 19234
+bottomHalf:
+    averageColor: '#f7a423'
+    lightestColor: '#ffeeee'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#ffaa22'
+          count: 19117
+        - value: '#111111'
+          count: 108
+        - value: '#ffeedd'
+          count: 12
+        - value: '#995533'
+          count: 5
+    mostSatulightedColors:
+        - value: '#ffaa55'
+          count: 2
+        - value: '#993333'
+          count: 1
+        - value: '#eeeebb'
+          count: 1
+    mostGroupedColors:
+        - value: '#ffaa22'
+          count: 19009
+bottomThird:
+    averageColor: '#fba723'
+    lightestColor: '#ffeedd'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#ffaa22'
+          count: 19695
+        - value: '#772211'
+          count: 40
+        - value: '#eeeedd'
+          count: 8
+        - value: '#999999'
+          count: 1
+    mostSatulightedColors:
+        - value: '#ffaa55'
+          count: 1
+        - value: '#771122'
+          count: 1
+    mostGroupedColors:
+        - value: '#ffaa22'
+          count: 19587
+bottomLine:
+    averageColor: '#ffaa1a'
+    lightestColor: '#ffaa22'
+    darkestColor: '#ffaa11'
+    mostFrequentColors:
+        - value: '#ffaa22'
+          count: 10800
+    mostSatulightedColors:
+        - value: '#ffaa22'
+          count: 10800
+    mostGroupedColors:
+        - value: '#ffaa11'
+          count: 2160

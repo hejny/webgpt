@@ -1,0 +1,80 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ee5577'
+      count: 1
+    - note: The color farthest from the primary color.
+      value: '#000000'
+averageColor: '#bd8a8d'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#ffeeee'
+      count: 1232
+    - value: '#aa5566'
+      count: 356
+    - value: '#000000'
+      count: 208
+mostSatulightedColors:
+    - value: '#ee5577'
+      count: 1
+    - value: '#ffaa66'
+      count: 1
+mostGroupedColors:
+    - value: '#ffeeee'
+      count: 686
+bottomHalf:
+    averageColor: '#b6888c'
+    lightestColor: '#ffeeee'
+    darkestColor: '#221100'
+    mostFrequentColors:
+        - value: '#ffeeee'
+          count: 1674
+        - value: '#663344'
+          count: 610
+        - value: '#dd7788'
+          count: 183
+    mostSatulightedColors:
+        - value: '#ee5577'
+          count: 1
+        - value: '#ffbb77'
+          count: 1
+    mostGroupedColors:
+        - value: '#ffeeee'
+          count: 1370
+bottomThird:
+    averageColor: '#b39196'
+    lightestColor: '#ffeeee'
+    darkestColor: '#661100'
+    mostFrequentColors:
+        - value: '#ffeeee'
+          count: 2493
+        - value: '#665555'
+          count: 721
+        - value: '#dd8899'
+          count: 27
+    mostSatulightedColors:
+        - value: '#dd5577'
+          count: 1
+        - value: '#bb6644'
+          count: 2
+    mostGroupedColors:
+        - value: '#ffeeee'
+          count: 2058
+bottomLine:
+    averageColor: '#88797d'
+    lightestColor: '#eeeeee'
+    darkestColor: '#443333'
+    mostFrequentColors:
+        - value: '#cccccc'
+          count: 1512
+        - value: '#776666'
+          count: 1404
+    mostSatulightedColors:
+        - value: '#bb8899'
+          count: 108
+    mostGroupedColors:
+        - value: '#666655'
+          count: 1080

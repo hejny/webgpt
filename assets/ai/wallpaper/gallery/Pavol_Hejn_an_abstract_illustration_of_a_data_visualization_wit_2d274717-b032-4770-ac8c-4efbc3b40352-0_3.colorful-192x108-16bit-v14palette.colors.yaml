@@ -1,0 +1,87 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#ffeedd'
+      count: 6486
+    - note: 4. the most frequent color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#001111'
+      count: 310
+    - note: 3. the most frequent color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#779988'
+      count: 678
+averageColor: '#ebcfbc'
+lightestColor: '#ffffee'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#ffeedd'
+      count: 10300
+    - value: '#779988'
+      count: 687
+    - value: '#ff6644'
+      count: 433
+    - value: '#001111'
+      count: 238
+mostSatulightedColors:
+    - value: '#ff7755'
+      count: 1
+    - value: '#ffeebb'
+      count: 1
+mostGroupedColors:
+    - value: '#ffeedd'
+      count: 9529
+bottomHalf:
+    averageColor: '#edc7b1'
+    lightestColor: '#ffeeee'
+    darkestColor: '#001111'
+    mostFrequentColors:
+        - value: '#ffeedd'
+          count: 6486
+        - value: '#ff6644'
+          count: 859
+        - value: '#779988'
+          count: 678
+        - value: '#001111'
+          count: 310
+    mostSatulightedColors:
+        - value: '#ff7755'
+          count: 3
+        - value: '#ccbb88'
+          count: 6
+    mostGroupedColors:
+        - value: '#ffeedd'
+          count: 5309
+bottomThird:
+    averageColor: '#fbd2bc'
+    lightestColor: '#ffeeee'
+    darkestColor: '#440000'
+    mostFrequentColors:
+        - value: '#ffeedd'
+          count: 7941
+        - value: '#ff6644'
+          count: 423
+        - value: '#779999'
+          count: 7
+        - value: '#551111'
+          count: 4
+    mostSatulightedColors:
+        - value: '#ff7755'
+          count: 5
+    mostGroupedColors:
+        - value: '#ffeedd'
+          count: 7404
+bottomLine:
+    averageColor: '#ffeedd'
+    lightestColor: '#ffeedd'
+    darkestColor: '#ffeedd'
+    mostFrequentColors:
+        - value: '#ffeedd'
+          count: 20736
+    mostSatulightedColors:
+        - value: '#ffeedd'
+          count: 20736
+    mostGroupedColors:
+        - value: '#ffeedd'
+          count: 20736

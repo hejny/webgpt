@@ -1,0 +1,78 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ee8855'
+      count: 3
+    - note: The color farthest from the primary color.
+      value: '#000000'
+averageColor: '#9a4a27'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#aa4422'
+      count: 1991
+    - value: '#000000'
+      count: 308
+    - value: '#ffffff'
+      count: 78
+    - value: '#bbaa77'
+      count: 11
+mostSatulightedColors:
+    - value: '#ee8855'
+      count: 25
+mostGroupedColors:
+    - value: '#000000'
+      count: 283
+bottomHalf:
+    averageColor: '#854122'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#883311'
+          count: 1079
+        - value: '#ffffff'
+          count: 225
+        - value: '#aaaa99'
+          count: 16
+    mostSatulightedColors:
+        - value: '#ee8855'
+          count: 3
+    mostGroupedColors:
+        - value: '#882200'
+          count: 515
+bottomThird:
+    averageColor: '#763d22'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#993300'
+          count: 1129
+        - value: '#000000'
+          count: 826
+        - value: '#ffffff'
+          count: 273
+        - value: '#998877'
+          count: 183
+    mostSatulightedColors:
+        - value: '#ee8855'
+          count: 1
+    mostGroupedColors:
+        - value: '#882200'
+          count: 818
+bottomLine:
+    averageColor: '#63381c'
+    lightestColor: '#997766'
+    darkestColor: '#442200'
+    mostFrequentColors:
+        - value: '#552211'
+          count: 3132
+        - value: '#997766'
+          count: 648
+    mostSatulightedColors:
+        - value: '#997755'
+          count: 216
+    mostGroupedColors:
+        - value: '#663311'
+          count: 972

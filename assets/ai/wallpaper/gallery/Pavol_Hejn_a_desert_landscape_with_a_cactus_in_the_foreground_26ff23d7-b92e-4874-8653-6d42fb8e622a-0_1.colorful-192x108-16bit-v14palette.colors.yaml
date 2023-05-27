@@ -1,0 +1,79 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ffbb77'
+      count: 37
+    - note: The darkest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#110000'
+averageColor: '#9c8163'
+lightestColor: '#ffffee'
+darkestColor: '#110000'
+mostFrequentColors:
+    - value: '#ffffdd'
+      count: 820
+    - value: '#885533'
+      count: 526
+    - value: '#eeaa66'
+      count: 33
+    - value: '#110011'
+      count: 30
+mostSatulightedColors:
+    - value: '#ffbb77'
+      count: 18
+    - value: '#aaddcc'
+      count: 1
+    - value: '#ffffcc'
+      count: 352
+mostGroupedColors:
+    - value: '#ffffdd'
+      count: 788
+bottomHalf:
+    averageColor: '#905e3b'
+    lightestColor: '#ffddaa'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#774422'
+          count: 931
+        - value: '#eeaa77'
+          count: 502
+    mostSatulightedColors:
+        - value: '#ffbb77'
+          count: 37
+        - value: '#884444'
+          count: 1
+    mostGroupedColors:
+        - value: '#221111'
+          count: 97
+bottomThird:
+    averageColor: '#9a6540'
+    lightestColor: '#ffddaa'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#774422'
+          count: 964
+        - value: '#dd9966'
+          count: 726
+    mostSatulightedColors:
+        - value: '#ffaa77'
+          count: 5
+    mostGroupedColors:
+        - value: '#443322'
+          count: 95
+bottomLine:
+    averageColor: '#825339'
+    lightestColor: '#ffcc99'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#331111'
+          count: 1836
+        - value: '#bb7755'
+          count: 1188
+    mostSatulightedColors:
+        - value: '#ffbb77'
+          count: 108
+    mostGroupedColors:
+        - value: '#110011'
+          count: 324

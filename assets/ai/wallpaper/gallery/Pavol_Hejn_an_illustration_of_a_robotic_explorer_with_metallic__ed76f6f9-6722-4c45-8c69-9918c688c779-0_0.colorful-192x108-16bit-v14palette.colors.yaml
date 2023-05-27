@@ -1,0 +1,83 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ffdd77'
+      count: 1
+    - note: The darkest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#000000'
+averageColor: '#b7a893'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#ffffdd'
+      count: 2829
+    - value: '#443322'
+      count: 613
+    - value: '#aa8866'
+      count: 314
+mostSatulightedColors:
+    - value: '#ffcc88'
+      count: 2
+    - value: '#eeffcc'
+      count: 2
+mostGroupedColors:
+    - value: '#ffffdd'
+      count: 1417
+bottomHalf:
+    averageColor: '#9a8873'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#ffffdd'
+          count: 1062
+        - value: '#332222'
+          count: 887
+        - value: '#aa8866'
+          count: 349
+    mostSatulightedColors:
+        - value: '#ffdd77'
+          count: 1
+        - value: '#cc9988'
+          count: 3
+    mostGroupedColors:
+        - value: '#ffffdd'
+          count: 467
+bottomThird:
+    averageColor: '#93816f'
+    lightestColor: '#ffffee'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#332222'
+          count: 1054
+        - value: '#ccbbaa'
+          count: 966
+    mostSatulightedColors:
+        - value: '#eebb88'
+          count: 2
+        - value: '#ffffcc'
+          count: 1
+        - value: '#885555'
+          count: 1
+    mostGroupedColors:
+        - value: '#ffeedd'
+          count: 256
+bottomLine:
+    averageColor: '#8a7d6e'
+    lightestColor: '#bbbbaa'
+    darkestColor: '#221100'
+    mostFrequentColors:
+        - value: '#bbaa99'
+          count: 5400
+        - value: '#443322'
+          count: 1404
+    mostSatulightedColors:
+        - value: '#bbaa88'
+          count: 216
+        - value: '#775555'
+          count: 108
+    mostGroupedColors:
+        - value: '#aaaa99'
+          count: 1512

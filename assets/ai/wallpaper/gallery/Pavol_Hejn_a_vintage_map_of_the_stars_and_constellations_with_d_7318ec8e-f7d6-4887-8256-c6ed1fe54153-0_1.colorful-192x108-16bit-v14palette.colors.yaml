@@ -1,0 +1,83 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ee9966'
+      count: 3
+    - note: The color farthest from the primary color.
+      value: '#000000'
+    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#ffffcc'
+      count: 3
+averageColor: '#bca47c'
+lightestColor: '#ffffdd'
+darkestColor: '#222200'
+mostFrequentColors:
+    - value: '#ddcc99'
+      count: 1877
+    - value: '#555544'
+      count: 401
+mostSatulightedColors:
+    - value: '#dd8855'
+      count: 1
+    - value: '#bbbb77'
+      count: 1
+mostGroupedColors:
+    - value: '#eeddaa'
+      count: 154
+bottomHalf:
+    averageColor: '#bfa780'
+    lightestColor: '#ffeedd'
+    darkestColor: '#222200'
+    mostFrequentColors:
+        - value: '#eeddaa'
+          count: 2322
+        - value: '#997755'
+          count: 391
+        - value: '#332211'
+          count: 14
+    mostSatulightedColors:
+        - value: '#ee9966'
+          count: 3
+        - value: '#ffffcc'
+          count: 3
+    mostGroupedColors:
+        - value: '#eeddaa'
+          count: 167
+bottomThird:
+    averageColor: '#baa47d'
+    lightestColor: '#ffeedd'
+    darkestColor: '#221100'
+    mostFrequentColors:
+        - value: '#eeddaa'
+          count: 2227
+        - value: '#444433'
+          count: 480
+        - value: '#cc7755'
+          count: 10
+    mostSatulightedColors:
+        - value: '#ee9977'
+          count: 1
+        - value: '#eedd99'
+          count: 8
+    mostGroupedColors:
+        - value: '#ddcc99'
+          count: 152
+bottomLine:
+    averageColor: '#cab189'
+    lightestColor: '#eeddbb'
+    darkestColor: '#665533'
+    mostFrequentColors:
+        - value: '#eeddaa'
+          count: 3240
+        - value: '#997755'
+          count: 648
+    mostSatulightedColors:
+        - value: '#cc9966'
+          count: 108
+    mostGroupedColors:
+        - value: '#eeddaa'
+          count: 1404

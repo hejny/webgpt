@@ -1,0 +1,80 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#cc9944'
+      count: 1
+    - note: The color farthest from the primary color.
+      value: '#000000'
+averageColor: '#7f644c'
+lightestColor: '#ffffee'
+darkestColor: '#221100'
+mostFrequentColors:
+    - value: '#885533'
+      count: 1125
+    - value: '#eeddbb'
+      count: 628
+    - value: '#110011'
+      count: 3
+mostSatulightedColors:
+    - value: '#ddaa77'
+      count: 1
+    - value: '#eeeebb'
+      count: 9
+    - value: '#774444'
+      count: 1
+mostGroupedColors:
+    - value: '#eeddbb'
+      count: 535
+bottomHalf:
+    averageColor: '#69432e'
+    lightestColor: '#bbccbb'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#885533'
+          count: 2267
+        - value: '#000011'
+          count: 6
+        - value: '#eeddaa'
+          count: 2
+    mostSatulightedColors:
+        - value: '#cc9944'
+          count: 1
+        - value: '#774444'
+          count: 2
+    mostGroupedColors:
+        - value: '#996644'
+          count: 347
+bottomThird:
+    averageColor: '#663e2a'
+    lightestColor: '#aa7755'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#885533'
+          count: 2939
+        - value: '#001111'
+          count: 5
+    mostSatulightedColors:
+        - value: '#aa6644'
+          count: 27
+        - value: '#112233'
+          count: 2
+    mostGroupedColors:
+        - value: '#332222'
+          count: 398
+bottomLine:
+    averageColor: '#5c3724'
+    lightestColor: '#885544'
+    darkestColor: '#222211'
+    mostFrequentColors:
+        - value: '#553322'
+          count: 3240
+    mostSatulightedColors:
+        - value: '#886633'
+          count: 108
+        - value: '#552222'
+          count: 108
+    mostGroupedColors:
+        - value: '#774422'
+          count: 432

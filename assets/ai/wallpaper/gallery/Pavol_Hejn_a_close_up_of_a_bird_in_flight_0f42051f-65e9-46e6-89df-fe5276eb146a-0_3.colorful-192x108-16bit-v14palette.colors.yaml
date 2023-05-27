@@ -1,0 +1,94 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ffbb55'
+      count: 2
+    - note: The darkest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#110000'
+    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#6699bb'
+      count: 1
+averageColor: '#594535'
+lightestColor: '#bbccdd'
+darkestColor: '#111100'
+mostFrequentColors:
+    - value: '#442211'
+      count: 1024
+    - value: '#bb7733'
+      count: 131
+    - value: '#ffee88'
+      count: 30
+    - value: '#88aabb'
+      count: 7
+mostSatulightedColors:
+    - value: '#ffcc55'
+      count: 28
+    - value: '#6699bb'
+      count: 1
+    - value: '#dd4422'
+      count: 1
+    - value: '#77aa99'
+      count: 2
+mostGroupedColors:
+    - value: '#223344'
+      count: 557
+bottomHalf:
+    averageColor: '#3c332d'
+    lightestColor: '#99aabb'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#222222'
+          count: 1747
+        - value: '#557788'
+          count: 81
+        - value: '#dd7722'
+          count: 14
+        - value: '#ffdd88'
+          count: 2
+    mostSatulightedColors:
+        - value: '#ffbb55'
+          count: 2
+        - value: '#6699bb'
+          count: 1
+    mostGroupedColors:
+        - value: '#223344'
+          count: 1215
+bottomThird:
+    averageColor: '#2f2826'
+    lightestColor: '#ffaa66'
+    darkestColor: '#111100'
+    mostFrequentColors:
+        - value: '#222222'
+          count: 2580
+        - value: '#bb2200'
+          count: 13
+        - value: '#ee9944'
+          count: 4
+    mostSatulightedColors:
+        - value: '#ffaa55'
+          count: 1
+        - value: '#334466'
+          count: 4
+        - value: '#991111'
+          count: 1
+    mostGroupedColors:
+        - value: '#223344'
+          count: 1569
+bottomLine:
+    averageColor: '#1e252c'
+    lightestColor: '#223355'
+    darkestColor: '#111100'
+    mostFrequentColors:
+        - value: '#112222'
+          count: 5508
+    mostSatulightedColors:
+        - value: '#223355'
+          count: 108
+    mostGroupedColors:
+        - value: '#223344'
+          count: 3564

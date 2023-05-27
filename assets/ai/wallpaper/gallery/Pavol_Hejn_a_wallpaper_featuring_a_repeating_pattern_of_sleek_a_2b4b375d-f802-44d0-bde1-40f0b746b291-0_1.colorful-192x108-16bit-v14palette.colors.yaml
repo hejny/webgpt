@@ -1,0 +1,119 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#ffddbb'
+      count: 8026
+    - note: 2. the most frequent color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#001122'
+      count: 1216
+    - note: 3. the most frequent color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#667777'
+      count: 273
+averageColor: '#aea089'
+lightestColor: '#ffffee'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#ffddbb'
+      count: 7586
+    - value: '#001122'
+      count: 1224
+    - value: '#667777'
+      count: 310
+    - value: '#ee7733'
+      count: 169
+    - value: '#aa1100'
+      count: 1
+mostSatulightedColors:
+    - value: '#33aabb'
+      count: 43
+    - value: '#ff9955'
+      count: 31
+    - value: '#88ddbb'
+      count: 1
+mostGroupedColors:
+    - value: '#ffddbb'
+      count: 6755
+bottomHalf:
+    averageColor: '#b3a48c'
+    lightestColor: '#ffffff'
+    darkestColor: '#001100'
+    mostFrequentColors:
+        - value: '#ffddbb'
+          count: 8026
+        - value: '#001122'
+          count: 1216
+        - value: '#667777'
+          count: 273
+        - value: '#ee7733'
+          count: 260
+        - value: '#aa1100'
+          count: 1
+    mostSatulightedColors:
+        - value: '#33aabb'
+          count: 85
+        - value: '#ff9955'
+          count: 29
+        - value: '#77ccaa'
+          count: 26
+    mostGroupedColors:
+        - value: '#ffddbb'
+          count: 7589
+bottomThird:
+    averageColor: '#aea28c'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#ffddbb'
+          count: 7760
+        - value: '#001122'
+          count: 1505
+        - value: '#667777'
+          count: 390
+        - value: '#ee7733'
+          count: 43
+        - value: '#aa1100'
+          count: 1
+    mostSatulightedColors:
+        - value: '#006688'
+          count: 1
+        - value: '#33aa88'
+          count: 1
+        - value: '#ff8855'
+          count: 7
+        - value: '#ffeeaa'
+          count: 1
+        - value: '#334477'
+          count: 1
+        - value: '#77cc88'
+          count: 3
+    mostGroupedColors:
+        - value: '#ffddbb'
+          count: 7243
+bottomLine:
+    averageColor: '#a0907a'
+    lightestColor: '#eeeedd'
+    darkestColor: '#001111'
+    mostFrequentColors:
+        - value: '#ffddbb'
+          count: 6372
+        - value: '#001122'
+          count: 1728
+        - value: '#bb4433'
+          count: 324
+        - value: '#44aa99'
+          count: 324
+    mostSatulightedColors:
+        - value: '#66ccbb'
+          count: 108
+        - value: '#ffbb66'
+          count: 108
+        - value: '#003355'
+          count: 216
+        - value: '#aa3333'
+          count: 108
+    mostGroupedColors:
+        - value: '#ffddbb'
+          count: 1944

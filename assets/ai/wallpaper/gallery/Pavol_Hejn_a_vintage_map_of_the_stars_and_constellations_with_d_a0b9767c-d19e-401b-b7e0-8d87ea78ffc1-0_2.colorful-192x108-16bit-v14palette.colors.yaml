@@ -1,0 +1,77 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ffbb88'
+      count: 2
+    - note: The darkest color of the bottom third of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#220000'
+averageColor: '#c6a97a'
+lightestColor: '#ffeecc'
+darkestColor: '#222200'
+mostFrequentColors:
+    - value: '#eecc99'
+      count: 3715
+    - value: '#997755'
+      count: 431
+    - value: '#332222'
+      count: 9
+mostSatulightedColors:
+    - value: '#ee9966'
+      count: 8
+    - value: '#eeeebb'
+      count: 15
+mostGroupedColors:
+    - value: '#eecc99'
+      count: 921
+bottomHalf:
+    averageColor: '#c7aa7c'
+    lightestColor: '#ffeecc'
+    darkestColor: '#222200'
+    mostFrequentColors:
+        - value: '#eecc99'
+          count: 3886
+        - value: '#887755'
+          count: 483
+        - value: '#332200'
+          count: 4
+    mostSatulightedColors:
+        - value: '#ffbb88'
+          count: 2
+        - value: '#ffffcc'
+          count: 1
+    mostGroupedColors:
+        - value: '#eecc99'
+          count: 438
+bottomThird:
+    averageColor: '#cbae7f'
+    lightestColor: '#ffeecc'
+    darkestColor: '#220000'
+    mostFrequentColors:
+        - value: '#eecc99'
+          count: 4037
+        - value: '#887755'
+          count: 367
+        - value: '#551100'
+          count: 3
+    mostSatulightedColors:
+        - value: '#ffcc88'
+          count: 4
+    mostGroupedColors:
+        - value: '#eecc99'
+          count: 710
+bottomLine:
+    averageColor: '#dcbf8a'
+    lightestColor: '#eeddaa'
+    darkestColor: '#bb9966'
+    mostFrequentColors:
+        - value: '#ddbb88'
+          count: 6696
+    mostSatulightedColors:
+        - value: '#eecc88'
+          count: 324
+    mostGroupedColors:
+        - value: '#ddbb88'
+          count: 1728

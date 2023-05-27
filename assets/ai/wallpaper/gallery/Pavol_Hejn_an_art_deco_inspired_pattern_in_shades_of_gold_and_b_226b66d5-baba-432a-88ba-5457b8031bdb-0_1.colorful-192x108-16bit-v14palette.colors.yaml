@@ -1,0 +1,75 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#111111'
+      count: 6038
+    - note: The lightest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#ffeebb'
+averageColor: '#795f38'
+lightestColor: '#ffeebb'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#111111'
+      count: 3520
+    - value: '#ddbb66'
+      count: 1435
+    - value: '#776644'
+      count: 33
+mostSatulightedColors:
+    - value: '#ffcc66'
+      count: 1
+mostGroupedColors:
+    - value: '#111111'
+      count: 703
+bottomHalf:
+    averageColor: '#4d3d27'
+    lightestColor: '#ffeebb'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 6038
+        - value: '#eecc77'
+          count: 343
+        - value: '#886633'
+          count: 265
+    mostSatulightedColors:
+        - value: '#ffbb66'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 1236
+bottomThird:
+    averageColor: '#493a25'
+    lightestColor: '#eeddbb'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 6591
+        - value: '#886633'
+          count: 280
+        - value: '#eebb77'
+          count: 197
+    mostSatulightedColors:
+        - value: '#ffcc66'
+          count: 4
+    mostGroupedColors:
+        - value: '#111111'
+          count: 1846
+bottomLine:
+    averageColor: '#362b1e'
+    lightestColor: '#ccbbaa'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 8640
+        - value: '#eebb66'
+          count: 432
+        - value: '#776644'
+          count: 108
+    mostSatulightedColors:
+        - value: '#eebb66'
+          count: 432
+    mostGroupedColors:
+        - value: '#111111'
+          count: 972

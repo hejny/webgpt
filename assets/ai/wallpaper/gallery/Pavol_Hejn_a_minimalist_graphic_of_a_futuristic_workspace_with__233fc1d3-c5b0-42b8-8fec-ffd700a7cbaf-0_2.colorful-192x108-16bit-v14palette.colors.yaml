@@ -1,0 +1,84 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#ffbb55'
+      count: 4
+    - note: The color farthest from the primary color.
+      value: '#000000'
+averageColor: '#e68842'
+lightestColor: '#ffffee'
+darkestColor: '#330000'
+mostFrequentColors:
+    - value: '#ff9922'
+      count: 5413
+    - value: '#ffeecc'
+      count: 2478
+    - value: '#220011'
+      count: 154
+    - value: '#885544'
+      count: 4
+mostSatulightedColors:
+    - value: '#ffaa55'
+      count: 95
+    - value: '#883333'
+      count: 2
+mostGroupedColors:
+    - value: '#ff9922'
+      count: 5111
+bottomHalf:
+    averageColor: '#dd9059'
+    lightestColor: '#ffffee'
+    darkestColor: '#331100'
+    mostFrequentColors:
+        - value: '#ffeecc'
+          count: 5014
+        - value: '#ff9922'
+          count: 2719
+        - value: '#220011'
+          count: 126
+        - value: '#885544'
+          count: 6
+    mostSatulightedColors:
+        - value: '#ffbb55'
+          count: 4
+        - value: '#883333'
+          count: 2
+    mostGroupedColors:
+        - value: '#ffeecc'
+          count: 3882
+bottomThird:
+    averageColor: '#de9a6b'
+    lightestColor: '#ffffee'
+    darkestColor: '#441100'
+    mostFrequentColors:
+        - value: '#ffeecc'
+          count: 6736
+        - value: '#bb4411'
+          count: 1833
+        - value: '#aa9988'
+          count: 8
+        - value: '#221111'
+          count: 1
+    mostSatulightedColors:
+        - value: '#ee9955'
+          count: 7
+        - value: '#662233'
+          count: 1
+    mostGroupedColors:
+        - value: '#ffeecc'
+          count: 5859
+bottomLine:
+    averageColor: '#ffeecc'
+    lightestColor: '#ffeecc'
+    darkestColor: '#ffeecc'
+    mostFrequentColors:
+        - value: '#ffeecc'
+          count: 20736
+    mostSatulightedColors:
+        - value: '#ffeecc'
+          count: 20736
+    mostGroupedColors:
+        - value: '#ffeecc'
+          count: 20736

@@ -1,0 +1,146 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#0088ff'
+      count: 1
+    - note: 7. the most frequent color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#ffff22'
+      count: 1
+    - note: 3. the most satulighted color of the whole wallpaper which is distant
+          enough (10%) and hue-distant enough (30°) from all other palette
+          colors.
+      value: '#22ffbb'
+      count: 6
+    - note: 3. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#ee2288'
+      count: 1
+    - note: The lightest color of the bottom half of the wallpaper which is distant
+          enough (10%) and hue-distant enough (30°) from all other palette
+          colors.
+      value: '#ffeeff'
+    - note: The darkest color of the bottom half of the wallpaper which is distant
+          enough (10%) and hue-distant enough (30°) from all other palette
+          colors.
+      value: '#000000'
+averageColor: '#314967'
+lightestColor: '#ffeeff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#001133'
+      count: 2677
+    - value: '#007788'
+      count: 483
+    - value: '#ff7755'
+      count: 483
+    - value: '#11eedd'
+      count: 102
+    - value: '#ffddee'
+      count: 82
+    - value: '#883377'
+      count: 22
+mostSatulightedColors:
+    - value: '#00ccff'
+      count: 3
+    - value: '#ee2288'
+      count: 1
+    - value: '#22ffbb'
+      count: 6
+    - value: '#7755cc'
+      count: 1
+    - value: '#002288'
+      count: 2
+    - value: '#993399'
+      count: 2
+mostGroupedColors:
+    - value: '#001133'
+      count: 2155
+bottomHalf:
+    averageColor: '#2d3f5d'
+    lightestColor: '#ffeeff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#001133'
+          count: 4523
+        - value: '#007788'
+          count: 684
+        - value: '#ff7755'
+          count: 521
+        - value: '#ffddee'
+          count: 131
+        - value: '#883377'
+          count: 31
+        - value: '#22eecc'
+          count: 19
+        - value: '#ffff22'
+          count: 1
+    mostSatulightedColors:
+        - value: '#0088ff'
+          count: 1
+        - value: '#11ffee'
+          count: 1
+        - value: '#ee2288'
+          count: 1
+        - value: '#aa33aa'
+          count: 1
+        - value: '#6655cc'
+          count: 1
+    mostGroupedColors:
+        - value: '#001133'
+          count: 4139
+bottomThird:
+    averageColor: '#283c59'
+    lightestColor: '#ffeeff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000033'
+          count: 5279
+        - value: '#007788'
+          count: 881
+        - value: '#ff7755'
+          count: 684
+        - value: '#ffddee'
+          count: 190
+        - value: '#00dddd'
+          count: 9
+        - value: '#883399'
+          count: 3
+    mostSatulightedColors:
+        - value: '#11eeff'
+          count: 2
+        - value: '#3388ff'
+          count: 1
+        - value: '#dd3399'
+          count: 1
+        - value: '#6655cc'
+          count: 1
+        - value: '#9944aa'
+          count: 1
+    mostGroupedColors:
+        - value: '#000033'
+          count: 2806
+bottomLine:
+    averageColor: '#25324a'
+    lightestColor: '#88bbcc'
+    darkestColor: '#001111'
+    mostFrequentColors:
+        - value: '#000022'
+          count: 5616
+        - value: '#ff7755'
+          count: 1944
+        - value: '#008888'
+          count: 648
+        - value: '#88bbcc'
+          count: 108
+    mostSatulightedColors:
+        - value: '#0099cc'
+          count: 108
+        - value: '#ff7755'
+          count: 1944
+    mostGroupedColors:
+        - value: '#000022'
+          count: 2268

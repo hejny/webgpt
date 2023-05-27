@@ -1,0 +1,82 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#333333'
+      count: 7549
+    - note: The lightest color of the whole wallpaper which is contrast enough (50%)
+          against the primary color.
+      value: '#ffffff'
+    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#88bbdd'
+      count: 1
+averageColor: '#4f443b'
+lightestColor: '#ffffff'
+darkestColor: '#110000'
+mostFrequentColors:
+    - value: '#333333'
+      count: 3956
+    - value: '#999977'
+      count: 502
+    - value: '#eeeecc'
+      count: 21
+mostSatulightedColors:
+    - value: '#88bbdd'
+      count: 1
+    - value: '#cc9966'
+      count: 2
+    - value: '#eeeebb'
+      count: 13
+mostGroupedColors:
+    - value: '#333333'
+      count: 887
+bottomHalf:
+    averageColor: '#3a3331'
+    lightestColor: '#aaccdd'
+    darkestColor: '#111100'
+    mostFrequentColors:
+        - value: '#333333'
+          count: 7549
+        - value: '#88bbcc'
+          count: 57
+    mostSatulightedColors:
+        - value: '#88bbdd'
+          count: 1
+        - value: '#cc9966'
+          count: 1
+    mostGroupedColors:
+        - value: '#333333'
+          count: 1853
+bottomThird:
+    averageColor: '#332d2c'
+    lightestColor: '#998866'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#333333'
+          count: 9389
+        - value: '#998866'
+          count: 1
+    mostSatulightedColors:
+        - value: '#996644'
+          count: 1
+    mostGroupedColors:
+        - value: '#333333'
+          count: 2188
+bottomLine:
+    averageColor: '#312a2a'
+    lightestColor: '#333333'
+    darkestColor: '#111111'
+    mostFrequentColors:
+        - value: '#333333'
+          count: 9504
+    mostSatulightedColors:
+        - value: '#332233'
+          count: 1296
+        - value: '#332222'
+          count: 7128
+        - value: '#333322'
+          count: 540
+    mostGroupedColors:
+        - value: '#333333'
+          count: 1296

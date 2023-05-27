@@ -1,0 +1,74 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#000000'
+      count: 9962
+    - note: The lightest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#aabbcc'
+    - note: 2. the most frequent color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#556666'
+      count: 325
+averageColor: '#141e23'
+lightestColor: '#aabbcc'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#000000'
+      count: 5472
+    - value: '#446677'
+      count: 234
+    - value: '#aabbcc'
+      count: 3
+mostSatulightedColors:
+    - value: '#115566'
+      count: 15
+mostGroupedColors:
+    - value: '#000000'
+      count: 4100
+bottomHalf:
+    averageColor: '#131e23'
+    lightestColor: '#aabbcc'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 9962
+        - value: '#556666'
+          count: 325
+        - value: '#99bbbb'
+          count: 27
+    mostSatulightedColors:
+        - value: '#226677'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 5067
+bottomThird:
+    averageColor: '#0e161b'
+    lightestColor: '#aacccc'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 11160
+        - value: '#779999'
+          count: 306
+    mostSatulightedColors:
+        - value: '#6699aa'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 7557
+bottomLine:
+    averageColor: '#000000'
+    lightestColor: '#000000'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 20736
+    mostSatulightedColors:
+        - value: '#000000'
+          count: 20736
+    mostGroupedColors:
+        - value: '#000000'
+          count: 20736

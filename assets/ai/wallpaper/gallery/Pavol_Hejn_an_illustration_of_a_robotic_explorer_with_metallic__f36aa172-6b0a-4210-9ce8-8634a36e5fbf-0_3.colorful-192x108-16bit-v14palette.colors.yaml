@@ -1,0 +1,75 @@
+version: colorful-192x108-16bit-v14palette
+palette:
+    - note: 1. the most satulighted color of the bottom half of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#eecc99'
+      count: 1
+    - note: The darkest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#110000'
+averageColor: '#544032'
+lightestColor: '#ffffff'
+darkestColor: '#111100'
+mostFrequentColors:
+    - value: '#443322'
+      count: 3235
+    - value: '#ddccbb'
+      count: 221
+mostSatulightedColors:
+    - value: '#eebb88'
+      count: 1
+mostGroupedColors:
+    - value: '#332222'
+      count: 597
+bottomHalf:
+    averageColor: '#503c2e'
+    lightestColor: '#ffeeee'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#443322'
+          count: 3115
+        - value: '#ddccbb'
+          count: 89
+    mostSatulightedColors:
+        - value: '#eecc99'
+          count: 1
+    mostGroupedColors:
+        - value: '#332222'
+          count: 938
+bottomThird:
+    averageColor: '#513d2f'
+    lightestColor: '#ffffee'
+    darkestColor: '#110000'
+    mostFrequentColors:
+        - value: '#332222'
+          count: 3277
+        - value: '#997755'
+          count: 275
+        - value: '#ddccbb'
+          count: 85
+    mostSatulightedColors:
+        - value: '#eebb99'
+          count: 1
+    mostGroupedColors:
+        - value: '#332222'
+          count: 1995
+bottomLine:
+    averageColor: '#554033'
+    lightestColor: '#dddddd'
+    darkestColor: '#221100'
+    mostFrequentColors:
+        - value: '#443322'
+          count: 2916
+        - value: '#dddddd'
+          count: 216
+        - value: '#aa8866'
+          count: 108
+    mostSatulightedColors:
+        - value: '#aa8866'
+          count: 108
+        - value: '#886666'
+          count: 108
+    mostGroupedColors:
+        - value: '#332222'
+          count: 540
