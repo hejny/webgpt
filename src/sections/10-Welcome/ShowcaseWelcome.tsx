@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import spaceTrim from 'spacetrim';
 import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
@@ -9,6 +10,7 @@ import styles from './Welcome.module.css';
  */
 export function ShowcaseWelcomeSection() {
     const wallpaper = useWallpaper();
+    const { isExported } = useContext(ExportContext);
 
     return (
         <Section id="Welcome" className={styles.WelcomeSection}>
@@ -18,15 +20,17 @@ export function ShowcaseWelcomeSection() {
             </h1>
             */}
 
-            <style
-                dangerouslySetInnerHTML={{
-                    __html: spaceTrim(`
+            {!isExported && (
+                <style
+                    dangerouslySetInnerHTML={{
+                        __html: spaceTrim(`
                         @import url(https://fonts.googleapis.com/css2?family=${wallpaper.font
                             .split(' ')
                             .join('+')}&display=swap});
                     `),
-                }}
-            />
+                    }}
+                />
+            )}
             <div
                 style={{
                     /* [🎗] */

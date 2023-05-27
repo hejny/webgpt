@@ -3,10 +3,8 @@ import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
-import { DEBUG } from '../../config';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
-import { SkinStyle } from '../components/SkinStyle/SkinStyle';
-import { DebugContext } from '../pages/_app';
+import { ExportContext } from '../pages/_app';
 import { ShowcaseAppHead } from '../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../sections/ShowcaseContent/ShowcaseContent';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
@@ -56,11 +54,11 @@ export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
         <html>
             <RouterContext.Provider value={memoryRouter}>
                 {/* <MemoryRouterProvider url={'/showcase/[slug]'}> */}
-                <DebugContext.Provider value={DEBUG}>
+                <ExportContext.Provider value={{ isExported: true }}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                             <ShowcaseAppHead isNextHeadUsed={false} />
-                            <SkinStyle />
+
                             {/* html = html.replace('</head>', `${styles.map((style) => `<style>${style}</style>`).join('\n')}</head>`); */}
                             {styles.map((style, i) => (
                                 <style key={i} dangerouslySetInnerHTML={{ __html: prettifyCss(style) }} />
@@ -73,7 +71,7 @@ export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
                             </body>
                         </WallpapersContext.Provider>
                     </ShuffleSeedContext.Provider>
-                </DebugContext.Provider>
+                </ExportContext.Provider>
             </RouterContext.Provider>
         </html>,
     );
