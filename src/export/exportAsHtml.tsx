@@ -9,15 +9,36 @@ import { ShowcaseAppHead } from '../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../sections/ShowcaseContent/ShowcaseContent';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
+import { string_css, string_html, string_uri } from '../utils/typeAliases';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
 
-export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
+interface HtmlExportOptions {
+    /**
+     * Where to place styles
+     * - `EMBED` - Place styles into <style> tag
+     * - `EXTERNAL` - Place styles into <link rel="stylesheet" href="style.css">
+     */
+    stylesPlace: 'EMBED' | 'EXTERNAL';
+}
+
+interface HtmlExport {
+    files: Array<HtmlExportFile>;
+}
+
+interface HtmlExportFile {
+    pathname: string;
+    content: string_html | string_css;
+}
+
+export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
+    const { stylesPlace } = options;
     const memoryRouter = new MemoryRouter();
     memoryRouter.pathname = '/showcase/[slug]';
     memoryRouter.query = { slug: wallpaper.id };
 
-    const styles: Array<string> = [];
+    const files: Array<HtmlExportFile> = [];
+    let styles: Array<string> = [];
 
     // Note: Fetch all <style> into styles
     for (const styleElement of Array.from(document.querySelectorAll('style'))) {
@@ -43,12 +64,24 @@ export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
         );
     }
 
-    // TODO: !! Make style prefixes/suffixes deterministic with custom prefixer/suffixer ShowcaseContent_background__lMFUd
-    // TODO: !!! Before each style add filename/content which will be used as comment or as a filename
-    // TODO: !!! Pick only needed styles
-    // TODO: !!! Return alongisde with html the styles object to put them as separate files instead of inline
-    // TODO: !!! Prettify styles
-    // TODO: !! [🎗] Extract and process all inlined styles
+    // !!! Group styles
+
+    // Note: Prettify all styles
+    styles = styles.map(prettifyCss);
+
+    const stylesLinks: Array<string_uri> = [];
+    if (stylesPlace == 'EXTERNAL') {
+        // Note: Remove all <link rel="stylesheet"
+        for (const style of styles) {
+            const pathname = 'style.css';
+            files.push({
+                pathname,
+                content: style,
+            });
+            stylesLinks.push(pathname);
+        }
+        styles = [];
+    }
 
     let html = renderToStaticMarkup(
         <html>
@@ -57,12 +90,14 @@ export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
                 <ExportContext.Provider value={{ isExported: true }}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
-                            <ShowcaseAppHead isNextHeadUsed={false} />
-
-                            {/* html = html.replace('</head>', `${styles.map((style) => `<style>${style}</style>`).join('\n')}</head>`); */}
-                            {styles.map((style, i) => (
-                                <style key={i} dangerouslySetInnerHTML={{ __html: prettifyCss(style) }} />
-                            ))}
+                            <ShowcaseAppHead isNextHeadUsed={false}>
+                                {stylesLinks.map((styleLink, i) => (
+                                    <link key={i} rel="stylesheet" href={styleLink} />
+                                ))}
+                                {styles.map((style, i) => (
+                                    <style key={i} dangerouslySetInnerHTML={{ __html: prettifyCss(style) }} />
+                                ))}
+                            </ShowcaseAppHead>
 
                             {/* TODO: Maybe <LanguagePicker /> */}
 
@@ -80,7 +115,17 @@ export async function exportAsHtml(wallpaper: IWallpaper): Promise<string> {
 
     html = prettifyHtml(html);
 
-    // TODO: !!! Fix links
+    files.push({
+        pathname: 'index.html',
+        content: html,
+    });
 
-    return html;
+    return { files };
 }
+
+/**
+ * TODO: !!! Fix links
+ * TODO: !! [🎗] Extract and process all inlined styles
+ * TODO: !! Pick only needed styles
+ * TODO: Make style prefixes/suffixes custom (This is not urgent because suffixes looks deterministic ShowcaseContent_background__lMFUd)
+ */

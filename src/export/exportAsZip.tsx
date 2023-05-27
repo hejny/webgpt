@@ -7,12 +7,15 @@ import { blobToFile } from './utils/blobToFile';
 export async function exportAsZip(wallpaper: IWallpaper): Promise<File> {
     const zip = new JSZip();
 
-    const html = await exportAsHtml(wallpaper);
+    const { files } = await exportAsHtml(wallpaper, { stylesPlace: 'EXTERNAL' });
     // TODO: !!! Extract css to separate file
     // TODO: !!! Materialize assets
     // TODO: !!! Prettify all files
 
-    zip.file('index.html', html);
+    for (const file of files) {
+        zip.file(file.pathname, file.content);
+    }
+
     const blob = await zip.generateAsync({ type: 'blob' });
     const file = blobToFile(blob, getWallpaperBaseFilename(wallpaper) + '.zip');
 

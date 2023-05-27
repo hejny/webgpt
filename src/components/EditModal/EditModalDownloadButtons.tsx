@@ -30,8 +30,18 @@ export function EditModalDownloadButtons() {
             <button
                 className={'button'}
                 onClick={async () => {
-                    const html = await exportAsHtml(wallpaper);
-                    const file = new File([html], getWallpaperBaseFilename(wallpaper) + '.html', {
+                    const { files } = await exportAsHtml(wallpaper, { stylesPlace: 'EMBED' });
+                    const indexHtml = files.find((file) => file.pathname === 'index.html');
+
+                    if (!indexHtml) {
+                        throw new Error('index.html not found');
+                    }
+
+                    if (files.length > 1) {
+                        console.warn('There are more files than index.html but they can not be downloaded.');
+                    }
+
+                    const file = new File([indexHtml.content], getWallpaperBaseFilename(wallpaper) + '.html', {
                         type: 'text/html',
                     });
                     /* not await */ induceFileDownload(file);

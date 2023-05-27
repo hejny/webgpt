@@ -1,18 +1,20 @@
 import Head from 'next/head';
+import { ReactNode } from 'react';
 import favicon from '../../../public/favicon.ico';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 interface ShowcaseAppHeadProps {
-    isNextHeadUsed: boolean;
+    isNextHeadUsed: boolean /* <- TODO: !! Use ExportContext instead of isNextHeadUsed */;
+    children?: ReactNode;
 }
 
 /**
  * @@@
  */
 export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
-    const { isNextHeadUsed } = props;
+    const { isNextHeadUsed, children } = props;
     const wallpaper = useWallpaper();
 
     // TODO: !! IWalpaper should have custom emoji which will be contained here
@@ -66,11 +68,21 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     );
     if (isNextHeadUsed) {
         // Note: For some strange reason we can not use <Head> in <ShowcasePage> - it fires "NextRouter was not mounted"
-        return <Head>{metadataJsx}</Head>;
+        return (
+            <Head>
+                {metadataJsx}
+                {children}
+            </Head>
+        );
     } else {
-        // Note: We are using this in export context, so we don't use <Head> component from Next
-        /* eslint-disable-next-line @next/next/no-head-element */
-        return <head>{metadataJsx}</head>;
+        return (
+            // Note: We are using this in export context, so we don't use <Head> component from Next
+            /* eslint-disable-next-line @next/next/no-head-element */
+            <head>
+                {metadataJsx}
+                {children}
+            </head>
+        );
     }
 }
 
