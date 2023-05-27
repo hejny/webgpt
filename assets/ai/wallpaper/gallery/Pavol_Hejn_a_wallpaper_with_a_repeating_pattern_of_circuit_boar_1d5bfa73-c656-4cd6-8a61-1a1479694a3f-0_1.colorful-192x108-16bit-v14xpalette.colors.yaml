@@ -1,0 +1,88 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most grouped color of the bottom third of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#111111'
+      count: 866
+    - note: The lightest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#99eecc'
+    - note: 2. the most frequent color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#557755'
+      count: 24
+averageColor: '#101811'
+lightestColor: '#ccffdd'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#000000'
+      count: 6156
+    - value: '#446644'
+      count: 57
+    - value: '#88eeaa'
+      count: 5
+mostSatulightedColors:
+    - value: '#33ee88'
+      count: 1
+    - value: '#99ee88'
+      count: 1
+mostGroupedColors:
+    - value: '#000000'
+      count: 2271
+bottomHalf:
+    averageColor: '#101811'
+    lightestColor: '#99eecc'
+    darkestColor: '#001100'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 5370
+        - value: '#557755'
+          count: 24
+        - value: '#88eeaa'
+          count: 4
+    mostSatulightedColors:
+        - value: '#33ee88'
+          count: 1
+        - value: '#88dd77'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 832
+bottomThird:
+    averageColor: '#0d150e'
+    lightestColor: '#88eeaa'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 6841
+        - value: '#446644'
+          count: 37
+        - value: '#66dd77'
+          count: 3
+    mostSatulightedColors:
+        - value: '#66ee99'
+          count: 1
+        - value: '#88ee77'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 866
+bottomLine:
+    averageColor: '#070a07'
+    lightestColor: '#444444'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 11232
+    mostSatulightedColors:
+        - value: '#223333'
+          count: 108
+        - value: '#223322'
+          count: 216
+        - value: '#222211'
+          count: 216
+    mostGroupedColors:
+        - value: '#000000'
+          count: 1188

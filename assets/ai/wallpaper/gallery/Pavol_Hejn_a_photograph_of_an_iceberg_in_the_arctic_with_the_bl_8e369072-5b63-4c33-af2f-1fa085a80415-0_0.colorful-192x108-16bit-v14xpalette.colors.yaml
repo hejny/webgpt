@@ -1,0 +1,75 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 3. the most satulighted color of the bottom line of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#111122'
+      count: 432
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#2288aa'
+      count: 1
+averageColor: '#132634'
+lightestColor: '#88bbcc'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#112233'
+      count: 3683
+    - value: '#337799'
+      count: 165
+mostSatulightedColors:
+    - value: '#2288aa'
+      count: 1
+mostGroupedColors:
+    - value: '#112233'
+      count: 3220
+bottomHalf:
+    averageColor: '#112633'
+    lightestColor: '#77aacc'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#001111'
+          count: 6651
+        - value: '#336688'
+          count: 530
+    mostSatulightedColors:
+        - value: '#2288aa'
+          count: 1
+    mostGroupedColors:
+        - value: '#001111'
+          count: 3242
+bottomThird:
+    averageColor: '#091923'
+    lightestColor: '#77aacc'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#001111'
+          count: 8229
+        - value: '#336677'
+          count: 279
+    mostSatulightedColors:
+        - value: '#3388bb'
+          count: 1
+    mostGroupedColors:
+        - value: '#001111'
+          count: 4047
+bottomLine:
+    averageColor: '#010710'
+    lightestColor: '#112233'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000011'
+          count: 8964
+    mostSatulightedColors:
+        - value: '#112233'
+          count: 216
+        - value: '#002222'
+          count: 324
+        - value: '#111122'
+          count: 432
+    mostGroupedColors:
+        - value: '#000011'
+          count: 4860

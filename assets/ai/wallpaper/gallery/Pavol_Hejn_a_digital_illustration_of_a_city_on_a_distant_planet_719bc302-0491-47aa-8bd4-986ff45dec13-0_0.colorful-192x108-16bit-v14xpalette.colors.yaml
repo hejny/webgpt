@@ -1,0 +1,77 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most grouped color of the bottom line of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#333333'
+      count: 1296
+    - note: The lightest color of the whole wallpaper which is contrast enough (50%)
+          against the primary color.
+      value: '#ffeedd'
+averageColor: '#9c7b60'
+lightestColor: '#ffeedd'
+darkestColor: '#221100'
+mostFrequentColors:
+    - value: '#665544'
+      count: 1209
+    - value: '#eecc99'
+      count: 807
+mostSatulightedColors:
+    - value: '#ffaa66'
+      count: 1
+    - value: '#eeeebb'
+      count: 1
+mostGroupedColors:
+    - value: '#665544'
+      count: 691
+bottomHalf:
+    averageColor: '#695144'
+    lightestColor: '#ffddcc'
+    darkestColor: '#221100'
+    mostFrequentColors:
+        - value: '#333333'
+          count: 1781
+        - value: '#bb8866'
+          count: 417
+        - value: '#eeddcc'
+          count: 3
+    mostSatulightedColors:
+        - value: '#ffaa66'
+          count: 1
+    mostGroupedColors:
+        - value: '#333333'
+          count: 1109
+bottomThird:
+    averageColor: '#4f3f38'
+    lightestColor: '#ffddcc'
+    darkestColor: '#221100'
+    mostFrequentColors:
+        - value: '#333333'
+          count: 2597
+        - value: '#bb8866'
+          count: 68
+        - value: '#eeddcc'
+          count: 1
+    mostSatulightedColors:
+        - value: '#ffbb77'
+          count: 1
+        - value: '#884444'
+          count: 1
+    mostGroupedColors:
+        - value: '#333333'
+          count: 1615
+bottomLine:
+    averageColor: '#382c2a'
+    lightestColor: '#dd8855'
+    darkestColor: '#221111'
+    mostFrequentColors:
+        - value: '#222222'
+          count: 4428
+        - value: '#bb7755'
+          count: 108
+    mostSatulightedColors:
+        - value: '#dd8855'
+          count: 108
+    mostGroupedColors:
+        - value: '#333333'
+          count: 1296

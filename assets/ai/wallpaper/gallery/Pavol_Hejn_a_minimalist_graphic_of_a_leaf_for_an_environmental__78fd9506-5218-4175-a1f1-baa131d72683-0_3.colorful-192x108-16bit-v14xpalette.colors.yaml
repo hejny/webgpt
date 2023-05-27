@@ -1,0 +1,75 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#eeeedd'
+      count: 18448
+    - note: The color farthest from the primary color.
+      value: '#000000'
+    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#447755'
+      count: 50
+averageColor: '#e1e4d2'
+lightestColor: '#ffffff'
+darkestColor: '#335533'
+mostFrequentColors:
+    - value: '#eeeedd'
+      count: 18595
+    - value: '#446644'
+      count: 780
+mostSatulightedColors:
+    - value: '#447755'
+      count: 48
+    - value: '#eeffdd'
+      count: 1
+mostGroupedColors:
+    - value: '#eeeedd'
+      count: 18591
+bottomHalf:
+    averageColor: '#e0e3d1'
+    lightestColor: '#ffffff'
+    darkestColor: '#335533'
+    mostFrequentColors:
+        - value: '#eeeedd'
+          count: 18448
+        - value: '#446644'
+          count: 811
+    mostSatulightedColors:
+        - value: '#447755'
+          count: 50
+        - value: '#eeffdd'
+          count: 1
+    mostGroupedColors:
+        - value: '#eeeedd'
+          count: 18445
+bottomThird:
+    averageColor: '#e9ead9'
+    lightestColor: '#ffffff'
+    darkestColor: '#335533'
+    mostFrequentColors:
+        - value: '#eeeedd'
+          count: 19875
+        - value: '#446644'
+          count: 321
+    mostSatulightedColors:
+        - value: '#558866'
+          count: 1
+        - value: '#aabb99'
+          count: 1
+    mostGroupedColors:
+        - value: '#eeeedd'
+          count: 19875
+bottomLine:
+    averageColor: '#eeeedd'
+    lightestColor: '#eeeedd'
+    darkestColor: '#eeeedd'
+    mostFrequentColors:
+        - value: '#eeeedd'
+          count: 20736
+    mostSatulightedColors:
+        - value: '#eeeedd'
+          count: 20736
+    mostGroupedColors:
+        - value: '#eeeedd'
+          count: 20736

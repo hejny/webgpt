@@ -1,0 +1,125 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most frequent color of the whole wallpaper that is the most similar
+          color to the average color of the bottom third of the wallpaper.
+      value: '#1177bb'
+      count: 464
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#9922ee'
+      count: 4
+    - note: 4. the most frequent color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#111155'
+      count: 119
+averageColor: '#856aae'
+lightestColor: '#ffaaff'
+darkestColor: '#110033'
+mostFrequentColors:
+    - value: '#1177bb'
+      count: 464
+    - value: '#ff7777'
+      count: 361
+    - value: '#9944ff'
+      count: 120
+    - value: '#111155'
+      count: 63
+    - value: '#55ddff'
+      count: 26
+mostSatulightedColors:
+    - value: '#11ccff'
+      count: 1
+    - value: '#9922ee'
+      count: 1
+    - value: '#2255ee'
+      count: 1
+    - value: '#bb11aa'
+      count: 4
+    - value: '#ee4488'
+      count: 17
+mostGroupedColors:
+    - value: '#1177bb'
+      count: 295
+bottomHalf:
+    averageColor: '#4b6ec7'
+    lightestColor: '#ffaaff'
+    darkestColor: '#001133'
+    mostFrequentColors:
+        - value: '#1177bb'
+          count: 933
+        - value: '#ffaaff'
+          count: 280
+        - value: '#9944ff'
+          count: 161
+        - value: '#111155'
+          count: 119
+        - value: '#ee4466'
+          count: 53
+        - value: '#77ddee'
+          count: 7
+    mostSatulightedColors:
+        - value: '#11ccff'
+          count: 1
+        - value: '#9922ee'
+          count: 4
+        - value: '#2255ee'
+          count: 2
+        - value: '#bb11aa'
+          count: 8
+        - value: '#ee4488'
+          count: 30
+    mostGroupedColors:
+        - value: '#1177bb'
+          count: 552
+bottomThird:
+    averageColor: '#396bc5'
+    lightestColor: '#ff99ff'
+    darkestColor: '#110033'
+    mostFrequentColors:
+        - value: '#11aacc'
+          count: 746
+        - value: '#7733ee'
+          count: 459
+        - value: '#111155'
+          count: 151
+        - value: '#ee4466'
+          count: 78
+        - value: '#ff99ee'
+          count: 40
+    mostSatulightedColors:
+        - value: '#9922ee'
+          count: 4
+        - value: '#0099ee'
+          count: 3
+        - value: '#4455ff'
+          count: 148
+        - value: '#bb11aa'
+          count: 12
+        - value: '#ee4488'
+          count: 1
+    mostGroupedColors:
+        - value: '#11aabb'
+          count: 673
+bottomLine:
+    averageColor: '#2770ce'
+    lightestColor: '#7744ff'
+    darkestColor: '#0099aa'
+    mostFrequentColors:
+        - value: '#1188aa'
+          count: 2268
+        - value: '#7722dd'
+          count: 864
+    mostSatulightedColors:
+        - value: '#6622ee'
+          count: 216
+        - value: '#0099dd'
+          count: 1620
+        - value: '#3355ee'
+          count: 432
+    mostGroupedColors:
+        - value: '#1188aa'
+          count: 2052

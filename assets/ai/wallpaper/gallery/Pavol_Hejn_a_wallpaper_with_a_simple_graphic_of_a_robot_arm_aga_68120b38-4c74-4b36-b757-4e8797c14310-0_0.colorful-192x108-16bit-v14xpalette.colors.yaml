@@ -1,0 +1,79 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The lightest color of the bottom line of the wallpaper that is the most
+          similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#cc5544'
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+averageColor: '#e36425'
+lightestColor: '#ffcc99'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#ff7722'
+      count: 3555
+    - value: '#441111'
+      count: 980
+    - value: '#eecc99'
+      count: 1
+mostSatulightedColors:
+    - value: '#ff8855'
+      count: 42
+    - value: '#772233'
+      count: 1
+mostGroupedColors:
+    - value: '#ff7722'
+      count: 3499
+bottomHalf:
+    averageColor: '#d75922'
+    lightestColor: '#ffcc99'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#ff7722'
+          count: 4159
+        - value: '#441111'
+          count: 1665
+        - value: '#eecc99'
+          count: 1
+    mostSatulightedColors:
+        - value: '#ff8855'
+          count: 35
+        - value: '#aa5566'
+          count: 1
+    mostGroupedColors:
+        - value: '#ff7722'
+          count: 4061
+bottomThird:
+    averageColor: '#dc5a21'
+    lightestColor: '#ffccaa'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#ff7722'
+          count: 5576
+        - value: '#441111'
+          count: 1850
+        - value: '#ffccaa'
+          count: 1
+    mostSatulightedColors:
+        - value: '#ff9955'
+          count: 4
+        - value: '#882233'
+          count: 1
+    mostGroupedColors:
+        - value: '#ff7722'
+          count: 5459
+bottomLine:
+    averageColor: '#e15921'
+    lightestColor: '#cc5544'
+    darkestColor: '#331111'
+    mostFrequentColors:
+        - value: '#ff6622'
+          count: 6372
+        - value: '#441111'
+          count: 1944
+    mostSatulightedColors:
+        - value: '#ff5522'
+          count: 2376
+    mostGroupedColors:
+        - value: '#ff6622'
+          count: 6264

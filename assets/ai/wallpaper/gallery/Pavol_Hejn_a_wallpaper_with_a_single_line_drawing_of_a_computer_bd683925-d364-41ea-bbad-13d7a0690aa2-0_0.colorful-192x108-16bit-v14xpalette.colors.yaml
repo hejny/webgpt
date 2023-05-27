@@ -1,0 +1,94 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most grouped color of the bottom third of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#778877'
+      count: 356
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+averageColor: '#7f897d'
+lightestColor: '#ffffee'
+darkestColor: '#334433'
+mostFrequentColors:
+    - value: '#446666'
+      count: 2232
+    - value: '#ddccaa'
+      count: 1311
+mostSatulightedColors:
+    - value: '#eebb88'
+      count: 2
+    - value: '#336677'
+      count: 2
+    - value: '#ffffcc'
+      count: 1
+    - value: '#558877'
+      count: 1
+mostGroupedColors:
+    - value: '#556666'
+      count: 318
+bottomHalf:
+    averageColor: '#7f897d'
+    lightestColor: '#eeddcc'
+    darkestColor: '#334433'
+    mostFrequentColors:
+        - value: '#556666'
+          count: 2153
+        - value: '#ddccaa'
+          count: 1295
+    mostSatulightedColors:
+        - value: '#eebb88'
+          count: 2
+        - value: '#446677'
+          count: 34
+        - value: '#558877'
+          count: 1
+        - value: '#ddddaa'
+          count: 18
+    mostGroupedColors:
+        - value: '#556666'
+          count: 402
+bottomThird:
+    averageColor: '#828b7e'
+    lightestColor: '#ffeecc'
+    darkestColor: '#334433'
+    mostFrequentColors:
+        - value: '#556666'
+          count: 2193
+        - value: '#ddccaa'
+          count: 1431
+    mostSatulightedColors:
+        - value: '#eecc88'
+          count: 3
+        - value: '#336677'
+          count: 1
+        - value: '#558877'
+          count: 1
+    mostGroupedColors:
+        - value: '#778877'
+          count: 356
+bottomLine:
+    averageColor: '#838d80'
+    lightestColor: '#ffffdd'
+    darkestColor: '#334433'
+    mostFrequentColors:
+        - value: '#446666'
+          count: 1944
+        - value: '#ddccaa'
+          count: 972
+    mostSatulightedColors:
+        - value: '#eeccaa'
+          count: 216
+        - value: '#336666'
+          count: 216
+        - value: '#ddddaa'
+          count: 108
+        - value: '#445566'
+          count: 108
+        - value: '#eeffdd'
+          count: 108
+        - value: '#446655'
+          count: 324
+    mostGroupedColors:
+        - value: '#446666'
+          count: 540

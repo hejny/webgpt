@@ -1,0 +1,87 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#000000'
+      count: 6946
+    - note: 3. the most frequent color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#ffffff'
+      count: 160
+    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#77aadd'
+      count: 6
+averageColor: '#212326'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#000000'
+      count: 10002
+    - value: '#ffffff'
+      count: 254
+    - value: '#555555'
+      count: 155
+    - value: '#aaaaaa'
+      count: 59
+mostSatulightedColors:
+    - value: '#77aadd'
+      count: 3
+    - value: '#995544'
+      count: 1
+mostGroupedColors:
+    - value: '#000000'
+      count: 8545
+bottomHalf:
+    averageColor: '#2d3137'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 6946
+        - value: '#555555'
+          count: 215
+        - value: '#ffffff'
+          count: 160
+        - value: '#88aabb'
+          count: 77
+    mostSatulightedColors:
+        - value: '#77aadd'
+          count: 6
+    mostGroupedColors:
+        - value: '#000000'
+          count: 3147
+bottomThird:
+    averageColor: '#393f46'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 6265
+        - value: '#555555'
+          count: 310
+        - value: '#ffffff'
+          count: 248
+        - value: '#88aabb'
+          count: 108
+    mostSatulightedColors:
+        - value: '#66aadd'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 4055
+bottomLine:
+    averageColor: '#030305'
+    lightestColor: '#333333'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 16200
+    mostSatulightedColors:
+        - value: '#110011'
+          count: 216
+        - value: '#111122'
+          count: 432
+    mostGroupedColors:
+        - value: '#000000'
+          count: 8964

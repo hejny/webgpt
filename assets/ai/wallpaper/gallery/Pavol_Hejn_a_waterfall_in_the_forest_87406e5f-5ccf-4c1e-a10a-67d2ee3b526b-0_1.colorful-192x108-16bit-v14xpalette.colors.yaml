@@ -1,0 +1,85 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most frequent color of the whole wallpaper that is the most similar
+          color to the average color of the bottom third of the wallpaper.
+      value: '#222211'
+      count: 2089
+    - note: 3. the most frequent color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#eeddcc'
+      count: 54
+averageColor: '#4c4329'
+lightestColor: '#ffeedd'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#222211'
+      count: 2089
+    - value: '#887744'
+      count: 171
+    - value: '#eeddbb'
+      count: 140
+mostSatulightedColors:
+    - value: '#ffdd66'
+      count: 2
+    - value: '#996655'
+      count: 1
+mostGroupedColors:
+    - value: '#000000'
+      count: 147
+bottomHalf:
+    averageColor: '#38301f'
+    lightestColor: '#ffeedd'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111100'
+          count: 2393
+        - value: '#998877'
+          count: 167
+        - value: '#eeddcc'
+          count: 54
+    mostSatulightedColors:
+        - value: '#eecc55'
+          count: 1
+        - value: '#996655'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 326
+bottomThird:
+    averageColor: '#312a1e'
+    lightestColor: '#ffeedd'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 2935
+        - value: '#887766'
+          count: 179
+        - value: '#ddccbb'
+          count: 80
+    mostSatulightedColors:
+        - value: '#ddaa77'
+          count: 1
+        - value: '#777733'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 499
+bottomLine:
+    averageColor: '#221b13'
+    lightestColor: '#665544'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 3240
+        - value: '#665544'
+          count: 432
+    mostSatulightedColors:
+        - value: '#665533'
+          count: 324
+        - value: '#664444'
+          count: 108
+        - value: '#110011'
+          count: 216
+    mostGroupedColors:
+        - value: '#000000'
+          count: 864

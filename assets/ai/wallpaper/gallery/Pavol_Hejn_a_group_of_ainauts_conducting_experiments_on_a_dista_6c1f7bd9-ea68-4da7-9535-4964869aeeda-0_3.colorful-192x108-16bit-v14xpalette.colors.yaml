@@ -1,0 +1,87 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most frequent color of the bottom half of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#334455'
+      count: 2130
+    - note: The lightest color of the whole wallpaper which is contrast enough (50%)
+          against the primary color.
+      value: '#ffffff'
+averageColor: '#49515a'
+lightestColor: '#ffffff'
+darkestColor: '#001111'
+mostFrequentColors:
+    - value: '#223344'
+      count: 2905
+    - value: '#778899'
+      count: 354
+    - value: '#dddddd'
+      count: 90
+mostSatulightedColors:
+    - value: '#446699'
+      count: 1
+    - value: '#eeaa77'
+      count: 9
+    - value: '#885566'
+      count: 3
+mostGroupedColors:
+    - value: '#223344'
+      count: 1151
+bottomHalf:
+    averageColor: '#424d58'
+    lightestColor: '#ddeeff'
+    darkestColor: '#001111'
+    mostFrequentColors:
+        - value: '#334455'
+          count: 2130
+        - value: '#8899aa'
+          count: 300
+        - value: '#ddeeee'
+          count: 8
+    mostSatulightedColors:
+        - value: '#446699'
+          count: 1
+        - value: '#cc8866'
+          count: 1
+        - value: '#885566'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 968
+bottomThird:
+    averageColor: '#47515c'
+    lightestColor: '#eeeeee'
+    darkestColor: '#001111'
+    mostFrequentColors:
+        - value: '#111122'
+          count: 3216
+        - value: '#556677'
+          count: 1505
+        - value: '#aabbbb'
+          count: 248
+    mostSatulightedColors:
+        - value: '#446699'
+          count: 1
+        - value: '#cc8866'
+          count: 1
+        - value: '#663344'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 758
+bottomLine:
+    averageColor: '#191c29'
+    lightestColor: '#778899'
+    darkestColor: '#111111'
+    mostFrequentColors:
+        - value: '#111122'
+          count: 9828
+        - value: '#556677'
+          count: 432
+    mostSatulightedColors:
+        - value: '#445577'
+          count: 108
+    mostGroupedColors:
+        - value: '#111122'
+          count: 1404

@@ -1,0 +1,78 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#000000'
+      count: 8687
+    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#ffdd99'
+      count: 2
+averageColor: '#a2554a'
+lightestColor: '#ffddcc'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#000000'
+      count: 4302
+    - value: '#ee8877'
+      count: 2416
+    - value: '#883333'
+      count: 356
+mostSatulightedColors:
+    - value: '#ee5566'
+      count: 181
+    - value: '#ff9955'
+      count: 1
+    - value: '#eeeeaa'
+      count: 1
+mostGroupedColors:
+    - value: '#000000'
+      count: 4296
+bottomHalf:
+    averageColor: '#512725'
+    lightestColor: '#ffddcc'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 8687
+        - value: '#883333'
+          count: 731
+        - value: '#ff8866'
+          count: 553
+    mostSatulightedColors:
+        - value: '#ff6655'
+          count: 116
+        - value: '#ffdd99'
+          count: 2
+    mostGroupedColors:
+        - value: '#000000'
+          count: 8675
+bottomThird:
+    averageColor: '#210b0f'
+    lightestColor: '#ee8877'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 12819
+        - value: '#883333'
+          count: 518
+        - value: '#ee8877'
+          count: 10
+    mostSatulightedColors:
+        - value: '#ee7766'
+          count: 1
+    mostGroupedColors:
+        - value: '#000000'
+          count: 12819
+bottomLine:
+    averageColor: '#000000'
+    lightestColor: '#000000'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 20736
+    mostSatulightedColors:
+        - value: '#000000'
+          count: 20736
+    mostGroupedColors:
+        - value: '#000000'
+          count: 20736

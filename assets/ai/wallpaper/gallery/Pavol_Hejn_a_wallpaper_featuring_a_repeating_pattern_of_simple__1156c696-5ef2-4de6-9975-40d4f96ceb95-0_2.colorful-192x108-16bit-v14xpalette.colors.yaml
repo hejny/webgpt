@@ -1,0 +1,80 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most frequent color of the bottom line of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#887766'
+      count: 4320
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+averageColor: '#938b84'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#bbbbaa'
+      count: 2481
+    - value: '#111111'
+      count: 1360
+    - value: '#666666'
+      count: 78
+mostSatulightedColors:
+    - value: '#ffddbb'
+      count: 1
+    - value: '#774444'
+      count: 1
+    - value: '#ccccaa'
+      count: 1
+    - value: '#889977'
+      count: 1
+mostGroupedColors:
+    - value: '#aaaaaa'
+      count: 608
+bottomHalf:
+    averageColor: '#827871'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 2119
+        - value: '#bbaaaa'
+          count: 1331
+    mostSatulightedColors:
+        - value: '#aa8855'
+          count: 3
+        - value: '#774444'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 635
+bottomThird:
+    averageColor: '#857b72'
+    lightestColor: '#dddddd'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 1556
+        - value: '#bbbbbb'
+          count: 1371
+        - value: '#776655'
+          count: 521
+    mostSatulightedColors:
+        - value: '#aa7755'
+          count: 1
+        - value: '#999977'
+          count: 7
+    mostGroupedColors:
+        - value: '#cccccc'
+          count: 796
+bottomLine:
+    averageColor: '#9e8e7e'
+    lightestColor: '#ccbbbb'
+    darkestColor: '#776655'
+    mostFrequentColors:
+        - value: '#887766'
+          count: 4320
+    mostSatulightedColors:
+        - value: '#997766'
+          count: 1836
+    mostGroupedColors:
+        - value: '#998877'
+          count: 2484

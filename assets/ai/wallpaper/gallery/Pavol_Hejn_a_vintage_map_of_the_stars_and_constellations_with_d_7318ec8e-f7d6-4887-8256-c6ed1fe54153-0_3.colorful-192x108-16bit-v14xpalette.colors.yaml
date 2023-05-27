@@ -1,0 +1,75 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most grouped color of the whole wallpaper that is the most similar
+          color to the average color of the bottom third of the wallpaper.
+      value: '#aa8866'
+      count: 139
+    - note: The color farthest from the primary color.
+      value: '#000000'
+    - note: The lightest color of the bottom third of the wallpaper which is distant
+          enough (10%) and hue-distant enough (30°) from all other palette
+          colors.
+      value: '#ffffdd'
+averageColor: '#b49a73'
+lightestColor: '#ffeecc'
+darkestColor: '#111100'
+mostFrequentColors:
+    - value: '#ddbb99'
+      count: 2464
+    - value: '#886644'
+      count: 822
+    - value: '#111111'
+      count: 46
+mostSatulightedColors:
+    - value: '#ffddaa'
+      count: 1
+mostGroupedColors:
+    - value: '#aa8866'
+      count: 139
+bottomHalf:
+    averageColor: '#baa17a'
+    lightestColor: '#ffeecc'
+    darkestColor: '#111100'
+    mostFrequentColors:
+        - value: '#ddbb99'
+          count: 2811
+        - value: '#886644'
+          count: 507
+        - value: '#111100'
+          count: 44
+    mostSatulightedColors:
+        - value: '#eecc99'
+          count: 8
+    mostGroupedColors:
+        - value: '#ddbb99'
+          count: 86
+bottomThird:
+    averageColor: '#b9a079'
+    lightestColor: '#ffffdd'
+    darkestColor: '#111100'
+    mostFrequentColors:
+        - value: '#ddbb99'
+          count: 2801
+        - value: '#886644'
+          count: 486
+        - value: '#221100'
+          count: 109
+    mostSatulightedColors:
+        - value: '#eecc99'
+          count: 6
+    mostGroupedColors:
+        - value: '#ddcc99'
+          count: 184
+bottomLine:
+    averageColor: '#c8ac80'
+    lightestColor: '#ddbb99'
+    darkestColor: '#997744'
+    mostFrequentColors:
+        - value: '#ccbb88'
+          count: 3888
+    mostSatulightedColors:
+        - value: '#ddbb88'
+          count: 2484
+    mostGroupedColors:
+        - value: '#ddbb99'
+          count: 648

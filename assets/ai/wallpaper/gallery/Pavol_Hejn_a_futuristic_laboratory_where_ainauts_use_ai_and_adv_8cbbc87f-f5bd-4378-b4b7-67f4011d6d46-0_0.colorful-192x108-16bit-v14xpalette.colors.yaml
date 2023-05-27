@@ -1,0 +1,82 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most frequent color of the bottom line of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#334466'
+      count: 2160
+    - note: The lightest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#ffffff'
+    - note: 1. the most satulighted color of the whole wallpaper which is distant
+          enough (10%) and hue-distant enough (30°) from all other palette
+          colors.
+      value: '#11bbdd'
+      count: 3
+averageColor: '#596c84'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#223344'
+      count: 865
+    - value: '#7788aa'
+      count: 624
+    - value: '#ffdddd'
+      count: 225
+mostSatulightedColors:
+    - value: '#11bbdd'
+      count: 3
+    - value: '#335599'
+      count: 1
+mostGroupedColors:
+    - value: '#ffdddd'
+      count: 185
+bottomHalf:
+    averageColor: '#546882'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#556688'
+          count: 1045
+        - value: '#111122'
+          count: 569
+        - value: '#bbccdd'
+          count: 160
+    mostSatulightedColors:
+        - value: '#0099cc'
+          count: 1
+    mostGroupedColors:
+        - value: '#334466'
+          count: 305
+bottomThird:
+    averageColor: '#465670'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#334466'
+          count: 1326
+        - value: '#aabbcc'
+          count: 127
+    mostSatulightedColors:
+        - value: '#33bbdd'
+          count: 1
+    mostGroupedColors:
+        - value: '#334466'
+          count: 458
+bottomLine:
+    averageColor: '#39435e'
+    lightestColor: '#ffccdd'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#334466'
+          count: 2160
+        - value: '#ffdddd'
+          count: 648
+    mostSatulightedColors:
+        - value: '#335588'
+          count: 1404
+        - value: '#ffccdd'
+          count: 108
+    mostGroupedColors:
+        - value: '#334466'
+          count: 1620

@@ -1,0 +1,114 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#000000'
+      count: 8794
+    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#ddddee'
+      count: 2
+averageColor: '#434342'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#000000'
+      count: 9336
+    - value: '#555555'
+      count: 658
+    - value: '#eeeeee'
+      count: 634
+mostSatulightedColors:
+    - value: '#221122'
+      count: 12
+    - value: '#eeffff'
+      count: 6
+    - value: '#eeeeff'
+      count: 4
+    - value: '#ffeeee'
+      count: 18
+    - value: '#ffffee'
+      count: 16
+    - value: '#eeffee'
+      count: 6
+mostGroupedColors:
+    - value: '#000000'
+      count: 4568
+bottomHalf:
+    averageColor: '#3f3e3d'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 8794
+        - value: '#555555'
+          count: 698
+        - value: '#cccccc'
+          count: 591
+    mostSatulightedColors:
+        - value: '#110011'
+          count: 3
+        - value: '#ddddee'
+          count: 2
+        - value: '#aabbbb'
+          count: 1
+        - value: '#ffffee'
+          count: 6
+        - value: '#ffeeee'
+          count: 5
+        - value: '#eeffee'
+          count: 3
+    mostGroupedColors:
+        - value: '#000000'
+          count: 4656
+bottomThird:
+    averageColor: '#3f3f3d'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 8870
+        - value: '#555555'
+          count: 708
+        - value: '#dddddd'
+          count: 572
+    mostSatulightedColors:
+        - value: '#110011'
+          count: 7
+        - value: '#eeffff'
+          count: 1
+        - value: '#ddddee'
+          count: 3
+        - value: '#ffeeee'
+          count: 9
+        - value: '#ffffee'
+          count: 7
+        - value: '#eeffee'
+          count: 5
+    mostGroupedColors:
+        - value: '#000000'
+          count: 5339
+bottomLine:
+    averageColor: '#161616'
+    lightestColor: '#ccccbb'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 15660
+        - value: '#666666'
+          count: 540
+        - value: '#bbbbbb'
+          count: 108
+    mostSatulightedColors:
+        - value: '#221122'
+          count: 108
+        - value: '#9999aa'
+          count: 108
+        - value: '#ccccbb'
+          count: 108
+        - value: '#776666'
+          count: 108
+        - value: '#334433'
+          count: 108
+    mostGroupedColors:
+        - value: '#000000'
+          count: 10152

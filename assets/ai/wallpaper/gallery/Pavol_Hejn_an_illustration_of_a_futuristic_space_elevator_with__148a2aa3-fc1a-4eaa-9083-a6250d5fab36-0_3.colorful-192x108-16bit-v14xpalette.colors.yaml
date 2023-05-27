@@ -1,0 +1,75 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 1. the most satulighted color of the bottom line of the wallpaper that is
+          the most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#334466'
+      count: 216
+    - note: The lightest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#ffffff'
+averageColor: '#506276'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#111122'
+      count: 1378
+    - value: '#446688'
+      count: 425
+    - value: '#ccddee'
+      count: 416
+mostSatulightedColors:
+    - value: '#3388bb'
+      count: 1
+mostGroupedColors:
+    - value: '#112233'
+      count: 489
+bottomHalf:
+    averageColor: '#41546a'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111122'
+          count: 2067
+        - value: '#446688'
+          count: 712
+        - value: '#bbccdd'
+          count: 169
+    mostSatulightedColors:
+        - value: '#5588bb'
+          count: 34
+    mostGroupedColors:
+        - value: '#112233'
+          count: 988
+bottomThird:
+    averageColor: '#304157'
+    lightestColor: '#ffffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#112233'
+          count: 2469
+        - value: '#557799'
+          count: 499
+        - value: '#cccccc'
+          count: 28
+    mostSatulightedColors:
+        - value: '#5588bb'
+          count: 1
+    mostGroupedColors:
+        - value: '#112233'
+          count: 1478
+bottomLine:
+    averageColor: '#162439'
+    lightestColor: '#888899'
+    darkestColor: '#000011'
+    mostFrequentColors:
+        - value: '#112233'
+          count: 4536
+        - value: '#888899'
+          count: 108
+    mostSatulightedColors:
+        - value: '#334466'
+          count: 216
+    mostGroupedColors:
+        - value: '#112233'
+          count: 4212

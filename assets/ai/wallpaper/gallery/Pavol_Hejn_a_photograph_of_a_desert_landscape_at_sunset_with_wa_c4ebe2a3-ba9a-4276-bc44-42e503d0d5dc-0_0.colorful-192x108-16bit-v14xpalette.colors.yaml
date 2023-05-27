@@ -1,0 +1,80 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#221111'
+      count: 1822
+    - note: 3. the most satulighted color of the whole wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#ffffcc'
+      count: 3
+averageColor: '#7b5946'
+lightestColor: '#ffffee'
+darkestColor: '#111100'
+mostFrequentColors:
+    - value: '#221111'
+      count: 1027
+    - value: '#999999'
+      count: 332
+    - value: '#ffeecc'
+      count: 167
+    - value: '#aa5511'
+      count: 7
+mostSatulightedColors:
+    - value: '#ffaa55'
+      count: 12
+    - value: '#334466'
+      count: 14
+    - value: '#ffffcc'
+      count: 3
+    - value: '#884444'
+      count: 1
+mostGroupedColors:
+    - value: '#111111'
+      count: 256
+bottomHalf:
+    averageColor: '#663925'
+    lightestColor: '#ddaa88'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#221111'
+          count: 1822
+        - value: '#bb6633'
+          count: 433
+    mostSatulightedColors:
+        - value: '#ffaa55'
+          count: 8
+        - value: '#884444'
+          count: 2
+    mostGroupedColors:
+        - value: '#111111'
+          count: 545
+bottomThird:
+    averageColor: '#5a3121'
+    lightestColor: '#ffaa66'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#221111'
+          count: 2525
+        - value: '#bb6633'
+          count: 432
+    mostSatulightedColors:
+        - value: '#ffaa55'
+          count: 7
+    mostGroupedColors:
+        - value: '#111111'
+          count: 799
+bottomLine:
+    averageColor: '#4c291a'
+    lightestColor: '#bb7755'
+    darkestColor: '#331100'
+    mostFrequentColors:
+        - value: '#221111'
+          count: 3240
+        - value: '#aa5511'
+          count: 108
+    mostSatulightedColors:
+        - value: '#bb7755'
+          count: 108
+    mostGroupedColors:
+        - value: '#332222'
+          count: 648

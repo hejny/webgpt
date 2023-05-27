@@ -1,0 +1,80 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: 2. the most frequent color of the bottom line of the wallpaper that is the
+          most similar color to the average color of the bottom third of the
+          wallpaper.
+      value: '#225566'
+      count: 1728
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+averageColor: '#4b4843'
+lightestColor: '#ffffee'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#111111'
+      count: 1077
+    - value: '#776655'
+      count: 213
+    - value: '#ddbb99'
+      count: 37
+    - value: '#66ddee'
+      count: 1
+mostSatulightedColors:
+    - value: '#33aacc'
+      count: 1
+    - value: '#ffbb77'
+      count: 1
+mostGroupedColors:
+    - value: '#112222'
+      count: 243
+bottomHalf:
+    averageColor: '#404341'
+    lightestColor: '#ffeedd'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#112222'
+          count: 1594
+        - value: '#337788'
+          count: 158
+        - value: '#cc9977'
+          count: 38
+    mostSatulightedColors:
+        - value: '#44aabb'
+          count: 27
+        - value: '#ffcc88'
+          count: 1
+    mostGroupedColors:
+        - value: '#112222'
+          count: 498
+bottomThird:
+    averageColor: '#384143'
+    lightestColor: '#ddcccc'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#112222'
+          count: 2174
+        - value: '#337788'
+          count: 230
+        - value: '#ccaa99'
+          count: 5
+    mostSatulightedColors:
+        - value: '#44aacc'
+          count: 1
+    mostGroupedColors:
+        - value: '#112222'
+          count: 747
+bottomLine:
+    averageColor: '#252e31'
+    lightestColor: '#555566'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#000000'
+          count: 2268
+        - value: '#225566'
+          count: 1728
+    mostSatulightedColors:
+        - value: '#225566'
+          count: 1728
+    mostGroupedColors:
+        - value: '#225566'
+          count: 1620

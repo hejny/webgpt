@@ -1,0 +1,78 @@
+version: colorful-192x108-16bit-v14xpalette
+palette:
+    - note: The most common color to appear at the bottom of the wallpaper.
+      value: '#111111'
+      count: 4839
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+    - note: 3. the most frequent color of the whole wallpaper which is distant enough
+          (10%) and hue-distant enough (30°) from all other palette colors.
+      value: '#ff9922'
+      count: 3
+averageColor: '#3a1f20'
+lightestColor: '#ddaa88'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#111111'
+      count: 4349
+    - value: '#885555'
+      count: 225
+    - value: '#ff9922'
+      count: 3
+mostSatulightedColors:
+    - value: '#ff9955'
+      count: 1
+    - value: '#bb2233'
+      count: 1
+    - value: '#441133'
+      count: 1
+mostGroupedColors:
+    - value: '#111111'
+      count: 917
+bottomHalf:
+    averageColor: '#351516'
+    lightestColor: '#ff8855'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 4839
+        - value: '#ee5522'
+          count: 74
+    mostSatulightedColors:
+        - value: '#ff8855'
+          count: 1
+        - value: '#881133'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 953
+bottomThird:
+    averageColor: '#301315'
+    lightestColor: '#ff5544'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 5700
+        - value: '#ee5522'
+          count: 92
+    mostSatulightedColors:
+        - value: '#ff5544'
+          count: 1
+    mostGroupedColors:
+        - value: '#111111'
+          count: 1454
+bottomLine:
+    averageColor: '#1c0d11'
+    lightestColor: '#dd3311'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#111111'
+          count: 10692
+        - value: '#bb1111'
+          count: 216
+    mostSatulightedColors:
+        - value: '#dd3311'
+          count: 108
+    mostGroupedColors:
+        - value: '#111111'
+          count: 1944
