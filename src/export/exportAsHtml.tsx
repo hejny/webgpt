@@ -172,6 +172,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: !!! Add license file into zip
+ * TODO: !!! Fix translations in export
  * TODO: !! [🎗] Extract and process all inlined styles
  * TODO: !! Pick only needed styles
  * TODO: Make style prefixes/suffixes custom (This is not urgent because suffixes looks deterministic ShowcaseContent_background__lMFUd)

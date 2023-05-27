@@ -38,7 +38,7 @@ export function ShowcaseWelcomeSection() {
                     fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,
                 }}
             >
-                {/* TODO: !!! Wrap Big words in title */}
+                {/* TODO: !!! Use <wbr/> in titles */}
                 <Article content={wallpaper.content} isUsingOpenmoji />
                 {/*
                 <br />
@@ -55,4 +55,6 @@ export function ShowcaseWelcomeSection() {
  * TODO: [🧬] !! Fake generating - write tokenized text
  * TODO: !! [👕] Allow to edit the header position + other things
  * TODO: !! This should be really named ShowcaseSection because it cointains mere then welcome
+ * TODO: !! Allow html content
+ * TODO: Allow templating systems
  */

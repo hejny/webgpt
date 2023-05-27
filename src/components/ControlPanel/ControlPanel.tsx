@@ -121,4 +121,5 @@ export function ControlPanel(props: ControlPanelProps) {
  * TODO: !! Rename component to something more meaningful
  * TODO: !! Use translate
  * TODO: !! [🧶] Show here prompt, link to midjourney, how it was made,...
+ * TODO: [🧠] Play can trigger fullscreen
  */

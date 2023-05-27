@@ -26,3 +26,7 @@ export function useHash(): string {
 
     return hash;
 }
+
+/**
+ * TODO: [🧠] Should be this named useHash or useFragment?
+ */

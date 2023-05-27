@@ -90,6 +90,14 @@ export function EditModal(props: EditModalProps) {
 
                     {/*<pre>{JSON.stringify(wallpaper.colorStats, null, 4)}</pre>*/}
                 </div>
+
+                <div className={styles.xxxx}>
+                    <EditModalDownloadButtons />
+                    <button className={'button'} onClick={turnOffEditing}>
+                        Done
+                    </button>
+                </div>
+
                 <div className={styles.xxxx}>
                     <MarkdownEditor
                         className={styles.editor}
@@ -104,19 +112,14 @@ export function EditModal(props: EditModalProps) {
                         // toolbarsFilter={(tool) => tool === 'fullscreen'}
                     />
                 </div>
-                <div className={styles.xxxx}>
-                    <button className={'button'} onClick={turnOffEditing}>
-                        Done
-                    </button>
-                    <EditModalDownloadButtons />
-                </div>
             </div>
         </>
     );
 }
 
 /**
+ * TODO: !!! Fix unsaved changes
  * TODO: !!! Design
- * TODO: !!! Split into info and edit part
+ * TODO: !!! [🧠] Split into info, edit and export part
  * TODO: !!! Allow to apply color-stats with different algorithms
  */

@@ -6,7 +6,6 @@ import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStat
 
 export const VERSION = packageJson.version;
 
-
 export const EXPORT_OPTIONS = {
     isExported: false,
 };
@@ -37,7 +36,7 @@ export const FONTS = [
     'Alegreya',
     'Raleway',
     'Futura',
-    'Barlow Condensed',
+    'Barlow Condensed' /* <- I 💖 this font! */,
     'Cabin',
     'Cinzel',
     'Cinzel Decorative',

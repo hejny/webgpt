@@ -68,6 +68,7 @@ export function GallerySection(props: SampleProps) {
                             <Item>
                                 <Item.Image>
                                     {/* TODO: [🦋] Use here better preview image - with some palette showcase + title + smaller size */}
+                                    {/* TODO: [🦋] Show likedStatus here */}
                                     <Image
                                         src={wallpaper.src}
                                         alt={wallpaper.prompt}
