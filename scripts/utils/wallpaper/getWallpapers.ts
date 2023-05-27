@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
-import { FONTS, LIMIT_WALLPAPER_COUNT } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE, FONTS, LIMIT_WALLPAPER_COUNT } from '../../../config';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
@@ -38,7 +38,10 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             break;
         }
 
-        const colorStatsFilePath = metadataFilePath.replace(/\.json$/, '.colors.yaml');
+        const colorStatsFilePath = metadataFilePath.replace(
+            /\.json$/,
+            `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
+        );
         const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
 
         const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;

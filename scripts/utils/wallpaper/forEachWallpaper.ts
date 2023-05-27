@@ -1,5 +1,6 @@
 import chalk from 'chalk';
 import moment from 'moment';
+import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
 import { forPlay } from '../forPlay';
 import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
 import { IWallpaperFiles } from './IWallpaperFiles';
@@ -34,7 +35,10 @@ export async function forEachWallpaper(options: {
         await forPlay();
 
         const contentFilePath = metadataFilePath.replace(/\.json$/, '.content.md');
-        const colorStatsFilePath = metadataFilePath.replace(/\.json$/, '.colors.yaml');
+        const colorStatsFilePath = metadataFilePath.replace(
+            /\.json$/,
+            `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
+        );
 
         const wallpaperFiles = { metadataFilePath, contentFilePath, colorStatsFilePath };
         console.info(chalk.grey(wallpaperFiles[logBeforeEachWork].split('\\').join('/')));
