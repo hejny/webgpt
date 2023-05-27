@@ -15,7 +15,7 @@ export function HeaderWallpaper() {
     // console.log({ src, prompt, colorStats });
 
     return (
-        <div className={styles.HeaderWallpaper} style={{ backgroundColor: colorStats.averageColor.toHex() }}>
+        <div className={styles.HeaderWallpaper} style={{ /* [🎗] */ backgroundColor: colorStats.averageColor.toHex() }}>
             <div className={styles.inner}>
                 <Image
                     src={src} /* <- TODO: Here should be really upscaled version by Upscalyr */
@@ -25,7 +25,7 @@ export function HeaderWallpaper() {
                     priority={true}
                     blurDataURL={colorToDataUrl(colorStats.averageColor)}
                     height={Math.round((width / 1920) * 1080)}
-                    style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                    style={{ /* [🎗] */ objectFit: 'cover', width: '100%', height: '100%' }}
                     {...{ width, quality }}
                     id="HeaderWallpaper" /* <- Note: Used for quick refresh [🤰] */
                 />

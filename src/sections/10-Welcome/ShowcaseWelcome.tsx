@@ -29,6 +29,7 @@ export function ShowcaseWelcomeSection() {
             />
             <div
                 style={{
+                    /* [🎗] */
                     fontFamily: `'${wallpaper.font}', sans-serif` /* <- Use only in one place OR link by tag */,
                 }}
             >
