@@ -120,7 +120,6 @@ export function computeImagePalette14(
                 ...paletteCandidate,
                 note: `${paletteCandidate.note} that is the most similar color to the average color of the bottom third of the wallpaper.`,
             };
-            break;
         }
         if (!primaryColor) {
             throw new Error('Something went wrong in 2️⃣🅱 - No primary color found');
