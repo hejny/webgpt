@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import spaceTrim from 'spacetrim';
 import { Article } from '../../components/Article/Article';
 import { Section } from '../../components/Section/Section';
+import { ExportContext } from '../../pages/_app';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import styles from './Welcome.module.css';
 
