@@ -1,7 +1,6 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { textColor } from '../../utils/color/operators/furthest';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
@@ -11,8 +10,8 @@ import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { ColorBox } from '../ColorBox/ColorBox';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
-import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
 import styles from './EditModal.module.css';
+import { EditModalColorAlgoritm } from './EditModalColorAlgoritm';
 
 const MarkdownEditor = dynamic(() => import('@uiw/react-markdown-editor').then((mod) => mod.default), { ssr: false });
 const EditModalDownloadButtons = dynamic(
@@ -34,7 +33,6 @@ export function EditModal(props: EditModalProps) {
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
-    const router = useRouter();
     const closePreventionSystem = useClosePreventionSystem();
 
     return (
@@ -46,20 +44,7 @@ export function EditModal(props: EditModalProps) {
                     <ImagineTag>{wallpaper.prompt}</ImagineTag>
                 </div>
                 <div className={styles.section}>
-                    <SelectWithFirst
-                        title="Color algorithm"
-                        value={wallpaper.colorStats.version}
-                        onChange={(version) => {
-                            /* !!! */
-                        }}
-                        numberOfButtons={0}
-                        options={[
-                            {
-                                id: wallpaper.colorStats.version,
-                                title: wallpaper.colorStats.version,
-                            },
-                        ]}
-                    />
+                    <EditModalColorAlgoritm />
                 </div>
                 <div className={classNames(styles.section, styles.palette)}>
                     {wallpaper.colorStats.palette.map((color, i) => (
