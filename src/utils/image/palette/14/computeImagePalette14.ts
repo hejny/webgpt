@@ -122,6 +122,9 @@ export function computeImagePalette14(
             };
             break;
         }
+        if (!primaryColor) {
+            throw new Error('Something went wrong in 2️⃣🅱 - No primary color found');
+        }
     }
 
     // 2️⃣🅲 Get the secondary color
