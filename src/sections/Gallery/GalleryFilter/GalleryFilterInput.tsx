@@ -62,7 +62,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 title={`Like status: `}
                 value={likedStatus}
                 onChange={(newLikedStatus) => void setLikedStatus(newLikedStatus)}
-                numberOfButtons={5}
+                numberOfButtons={Infinity}
                 options={[
                     { id: undefined, title: 'All' },
                     { id: 'NONE' as LikedStatus, title: 'None' },
@@ -77,7 +77,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 title={`Items on page: `}
                 value={limit}
                 onChange={(newLimit) => void setLimit(newLimit)}
-                numberOfButtons={4}
+                numberOfButtons={Infinity}
                 options={[
                     { id: 10, title: '10' },
                     { id: 100, title: '100' },
@@ -90,7 +90,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 title={`Order: `}
                 value={isRandom}
                 onChange={(newIsRandom) => void setRandom(newIsRandom)}
-                numberOfButtons={2}
+                numberOfButtons={Infinity}
                 options={[
                     { id: false, title: 'Ascending (A-Z)' },
                     // TODO: Descending (Z-A)
