@@ -50,6 +50,36 @@
     height: 400px;
 }
 
+.section {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(var(--palette-0-triplet), 0.5);
+    width: 100%;
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 170px;
+}
+
+@media (max-width: 600px) {
+    .palette {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*
+.paletteItem:nth-child(2) {
+    background-color: #00000023;
+}
+*/
+
+.paletteItem {
+    padding: 5px;
+}
+
+
+
 @media (max-width: 600px) {
     /* Note: On mobile EditModal fills the whole screen */
     .EditModal {

@@ -28,6 +28,7 @@ export function ColorInput(props: ColorInputProps) {
                     onChange(color);
                 }}
             />
+            {/* TODO: Use here <ColorBox/> or design of it (share the css module) */}
             <input
                 type="text"
                 value={colorString}
