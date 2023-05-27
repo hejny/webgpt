@@ -2,6 +2,7 @@ import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import { createColorfulComputeImageColorStats13 } from './src/utils/image/palette/13/createColorfulComputeImageColorStats13';
+import { createColorfulComputeImageColorStats14 } from './src/utils/image/palette/14/createColorfulComputeImageColorStats14';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 
 export const VERSION = packageJson.version;
@@ -61,13 +62,25 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         size: IMAGE_NATURAL_SIZE,
     }),
     */
-    createColorfulComputeImageColorStats13({
+    createColorfulComputeImageColorStats14({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
+    /* 
+    TODO: !!! Delete after testing in broswer + add more versions + full
     createColorfulComputeImageColorStats13({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.2),
+    }),
+    */
+    createColorfulComputeImageColorStats14({
+        colorBits: 16,
+        size: IMAGE_NATURAL_SIZE,
+    }),
+
+    createColorfulComputeImageColorStats13({
+        colorBits: 16,
+        size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
     createColorfulComputeImageColorStats13({
         colorBits: 16,
@@ -102,3 +115,9 @@ export const DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of
  * As ratio of distance between white and black
  */
 export const TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO = 0.5; /* <- As a ratio of distance between white and black */
+
+/**
+ * How much can be primary (background) color different from average color to be considered OK
+ * As ratio of distance between white and black
+ */
+export const PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO = 0.5; /* <- As a ratio of distance between white and black */
