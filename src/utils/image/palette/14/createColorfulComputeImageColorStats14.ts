@@ -30,7 +30,7 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
         throw new Error(`Size must have positive integer values, got ${size.x}x${size.y}`);
     }
 
-    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v14xpalette` as string;
+    const version = `colorful-${size.x}x${size.y}-${options.colorBits}bit-v14palette` as string;
 
     const computeWholeImageColorStats = (image: IImage): IImageColorStatsRegion => {
         image = scaleImage(image, size);
