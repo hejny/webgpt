@@ -33,7 +33,7 @@ export function computeImagePalette14(
         pickByMostFrequentColorCount++;
         primaryColor = {
             ...colorStats.bottomHalf.mostFrequentColors[0],
-            note: `Most frequent color`,
+            note: `The most common color to appear at the bottom of the imag`,
         };
     }
 
