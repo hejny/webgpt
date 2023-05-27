@@ -41,10 +41,10 @@ export function computeImagePalette13(
         [];
 
     for (const { regionName, regionStats } of [
-        { regionName: 'bottom half of the wallpaper', regionStats: colorStats.bottomHalf },
-        { regionName: 'bottom third of the wallpaper', regionStats: colorStats.bottomThird },
+        { regionName: 'the bottom half of the wallpaper', regionStats: colorStats.bottomHalf },
+        { regionName: 'the bottom third of the wallpaper', regionStats: colorStats.bottomThird },
         { regionName: 'the whole wallpaper', regionStats: colorStats },
-        { regionName: 'bottom line of the wallpaper', regionStats: colorStats.bottomLine },
+        { regionName: 'the bottom line of the wallpaper', regionStats: colorStats.bottomLine },
         /* <- TODO: Combinations */
     ]) {
         // TODO: !! Here also get in account the color count
@@ -54,22 +54,25 @@ export function computeImagePalette13(
         let si = 0;
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
             si++;
-            paletteCandidates.push({ ...mostSatulightedColor, note: `${si}. most satulighted color of ${regionName}` });
+            paletteCandidates.push({
+                ...mostSatulightedColor,
+                note: `${si}. the most satulighted color of ${regionName}`,
+            });
         }
         let gi = 0;
         for (const mostGroupedColor of regionStats.mostGroupedColors) {
             gi++;
-            paletteCandidates.push({ ...mostGroupedColor, note: `${gi}. most grouped color of ${regionName}` });
+            paletteCandidates.push({ ...mostGroupedColor, note: `${gi}. the most grouped color of ${regionName}` });
         }
         let fi = 0;
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
             fi++;
-            paletteCandidates.push({ ...mostFrequentColor, note: `${fi}. most frequent color of ${regionName}` });
+            paletteCandidates.push({ ...mostFrequentColor, note: `${fi}. the most frequent color of ${regionName}` });
         }
         // regionStats.averageColor;
 
-        paletteCandidates.push({ value: regionStats.darkestColor, note: `Darkest color of ${regionName}` });
-        paletteCandidates.push({ value: regionStats.lightestColor, note: `Lightest color of ${regionName}` });
+        paletteCandidates.push({ value: regionStats.darkestColor, note: `The darkest color of ${regionName}` });
+        paletteCandidates.push({ value: regionStats.lightestColor, note: `The lightest color of ${regionName}` });
     }
 
     if (!primaryColor) {
@@ -79,7 +82,7 @@ export function computeImagePalette13(
             if (areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
                 primaryColor = {
                     ...paletteCandidate,
-                    note: `${paletteCandidate.note} which is dark enough to emplace light text`,
+                    note: `${paletteCandidate.note} that is dark enough to place light text in.`,
                 };
                 break;
             }
@@ -101,7 +104,7 @@ export function computeImagePalette13(
                 ...paletteCandidate,
                 note: `${paletteCandidate.note} which is contrast enough (${Math.round(
                     TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO * 100,
-                )}%) against primary color`,
+                )}%) against the primary color.`,
             };
             break;
         }
@@ -109,7 +112,7 @@ export function computeImagePalette13(
     if (!secondaryColor) {
         secondaryColor = {
             value: primaryColor.value.then(textColor),
-            note: `Most distant color from primary color`,
+            note: `The color farthest from the primary color.`,
         };
     }
 
@@ -139,7 +142,7 @@ export function computeImagePalette13(
                 ...paletteCandidate,
                 note: `${paletteCandidate.note} which is distant enough (${Math.round(
                     DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO * 100,
-                )}%) and hue-distant enough (${DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES}°) from all other palette colors`,
+                )}%) and hue-distant enough (${DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES}°) from all other palette colors.`,
             });
         }
 
