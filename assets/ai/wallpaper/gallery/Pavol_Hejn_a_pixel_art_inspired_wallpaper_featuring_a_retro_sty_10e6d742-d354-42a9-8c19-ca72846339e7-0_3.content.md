@@ -14,9 +14,9 @@ Whether you're designing a website, creating graphics for social media, or worki
 
 Here are some examples of how our retro robot background has been used in real-world projects:
 
-- A graphic designer used it as the background for a series of posters promoting a retro-themed event.
-- A web developer used it as the background for a landing page promoting a new video game with a retro aesthetic.
-- An illustrator used it as the background for a series of illustrations featuring robots.
+-   A graphic designer used it as the background for a series of posters promoting a retro-themed event.
+-   A web developer used it as the background for a landing page promoting a new video game with a retro aesthetic.
+-   An illustrator used it as the background for a series of illustrations featuring robots.
 
 ## How to Use the Wallpaper
 
@@ -26,16 +26,16 @@ Using our retro robot background is easy. Simply download the image and set it a
 
 If you're interested in learning more about pixel art and retro design, check out these resources:
 
-- [Pixel Art Tutorial](#) - a comprehensive guide to creating pixel art
-- [Retro Design Inspiration](#) - a collection of retro design inspiration from around the web
-- [Pixel Art Software](#) - a list of software tools for creating pixel art
+-   [Pixel Art Tutorial](#) - a Com<wbr>pre<wbr>hen<wbr>sive guide to creating pixel art
+-   [Retro Design Inspiration](#) - a collection of retro design inspiration from around the web
+-   [Pixel Art Software](#) - a list of software tools for creating pixel art
 
 ## Contact Us
 
 If you have any questions or comments about our retro robot background, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: [contact@retrobackgrounds.com](mailto:contact@retrobackgrounds.com)
-- Twitter: [@retrobackgrounds](#)
+-   Email: [contact@retrobackgrounds.com](mailto:contact@retrobackgrounds.com)
+-   Twitter: [@retrobackgrounds](#)
 
 <!--
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -88,7 +88,7 @@ Using our retro robot background is easy. Simply download the image and set it a
 
 If you're interested in learning more about pixel art and retro design, check out these resources:
 
-- [Pixel Art Tutorial](#) - a comprehensive guide to creating pixel art
+- [Pixel Art Tutorial](#) - a Com<wbr>pre<wbr>hen<wbr>sive guide to creating pixel art
 - [Retro Design Inspiration](#) - a collection of retro design inspiration from around the web
 - [Pixel Art Software](#) - a list of software tools for creating pixel art
 

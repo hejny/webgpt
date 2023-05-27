@@ -20,7 +20,7 @@ Welcome to our science and astronomy blog, where we delve into the mysteries of 
 
 ## Latest Discoveries
 
-Stay up-to-date with the latest discoveries and breakthroughs in the field of astronomy. From new exoplanet findings to black hole research, we cover it all. 
+Stay up-to-date with the latest discoveries and breakthroughs in the field of astronomy. From new exoplanet findings to black hole research, we cover it all.
 
 ## Astronomy 101
 
@@ -30,7 +30,7 @@ New to astronomy? No problem! Our website offers introductory articles that expl
 
 ## Featured Articles
 
-Check out our featured articles section for in-depth explorations of fascinating topics in astronomy. From the search for extraterrestrial life to the mysteries of dark matter, our team of experts provides insightful analysis and commentary.
+Check out our featured articles section for in-depth explorations of Fas<wbr>ci<wbr>na<wbr>ting topics in astronomy. From the search for Ex<wbr>tra<wbr>terre<wbr>strial life to the mysteries of dark matter, our team of experts provides insightful analysis and commentary.
 
 ## Community Discussion
 

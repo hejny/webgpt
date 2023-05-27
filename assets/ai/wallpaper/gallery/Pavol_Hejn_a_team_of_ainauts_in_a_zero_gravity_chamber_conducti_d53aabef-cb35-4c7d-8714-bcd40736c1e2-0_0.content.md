@@ -30,4 +30,4 @@ Some of the key questions we are exploring include:
 
 By tackling these and other important issues, we hope to pave the way for a future in which AI is fully integrated into our lives, helping us to achieve our goals and live healthier, more fulfilling lives.
 
-So join us on this exciting journey of discovery, as we explore the fascinating world of AI and its impact on human physiology. Together, we can unlock the secrets of this transformative technology and harness its power for the betterment of all.
+So join us on this exciting journey of discovery, as we explore the Fas<wbr>ci<wbr>na<wbr>ting world of AI and its impact on human physiology. Together, we can unlock the secrets of this transformative technology and harness its power for the betterment of all.

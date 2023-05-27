@@ -12,10 +12,10 @@ As you browse our site, you'll notice the beautiful wallpaper featuring a photog
 
 Our website is your ultimate guide to exploring the Southwest. Here are just a few of the things you can discover:
 
-- Learn about the unique geological formations that make up the region, from towering mesas to deep canyons.
-- Discover the rich history of the Southwest, from ancient Native American cultures to the Spanish colonial era and beyond.
-- Immerse yourself in the vibrant arts and culture of the Southwest, from traditional music and dance to modern art galleries and museums.
-- Plan your own Southwest adventure with our comprehensive travel guides, including tips on where to stay, what to eat, and what to see and do.
+-   Learn about the unique geological formations that make up the region, from towering mesas to deep canyons.
+-   Discover the rich history of the Southwest, from ancient Native American cultures to the Spanish colonial era and beyond.
+-   Immerse yourself in the vibrant arts and culture of the Southwest, from traditional music and dance to modern art galleries and museums.
+-   Plan your own Southwest adventure with our Com<wbr>pre<wbr>hen<wbr>sive travel guides, including tips on where to stay, what to eat, and what to see and do.
 
 ## User Stories
 
@@ -29,9 +29,9 @@ Here are some stories from people who have explored the Southwest with our help:
 
 If you're interested in learning more about the Southwest, here are some resources we recommend:
 
-- National Park Service: [https://www.nps.gov/index.htm](#)
-- Southwest Indian Foundation: [https://www.southwestindian.com/](#)
-- Visit the USA: [https://www.visittheusa.com/destination/southwest](#)
+-   National Park Service: [https://www.nps.gov/index.htm](#)
+-   Southwest Indian Foundation: [https://www.southwestindian.com/](#)
+-   Visit the USA: [https://www.visittheusa.com/destination/southwest](#)
 
 ## Contact Us
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -79,7 +79,7 @@ Our website is your ultimate guide to exploring the Southwest. Here are just a f
 - Learn about the unique geological formations that make up the region, from towering mesas to deep canyons.
 - Discover the rich history of the Southwest, from ancient Native American cultures to the Spanish colonial era and beyond.
 - Immerse yourself in the vibrant arts and culture of the Southwest, from traditional music and dance to modern art galleries and museums.
-- Plan your own Southwest adventure with our comprehensive travel guides, including tips on where to stay, what to eat, and what to see and do.
+- Plan your own Southwest adventure with our Com<wbr>pre<wbr>hen<wbr>sive travel guides, including tips on where to stay, what to eat, and what to see and do.
 
 ## User Stories
 

@@ -6,9 +6,9 @@ Welcome to Space Odyssey, your one-stop destination for all things space-related
 
 ## Discover the Wonders of Space
 
-At Space Odyssey, we believe that exploring space is essential to understanding our place in the universe. From the mysteries of black holes to the search for extraterrestrial life, there is always something new to discover.
+At Space Odyssey, we believe that exploring space is essential to understanding our place in the universe. From the mysteries of black holes to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, there is always something new to discover.
 
-Our website features a range of articles, videos, and podcasts that cover everything from the latest NASA missions to the history of space exploration. Whether you're a seasoned astronomer or just starting to learn about space, you'll find plenty of fascinating content to explore.
+Our website features a range of articles, videos, and podcasts that cover everything from the latest NASA missions to the history of space exploration. Whether you're a seasoned astronomer or just starting to learn about space, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content to explore.
 
 ## The Wallpaper
 
@@ -70,9 +70,9 @@ Welcome to Space Odyssey, your one-stop destination for all things space-related
 
 ## Discover the Wonders of Space
 
-At Space Odyssey, we believe that exploring space is essential to understanding our place in the universe. From the mysteries of black holes to the search for extraterrestrial life, there is always something new to discover.
+At Space Odyssey, we believe that exploring space is essential to understanding our place in the universe. From the mysteries of black holes to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, there is always something new to discover.
 
-Our website features a range of articles, videos, and podcasts that cover everything from the latest NASA missions to the history of space exploration. Whether you're a seasoned astronomer or just starting to learn about space, you'll find plenty of fascinating content to explore.
+Our website features a range of articles, videos, and podcasts that cover everything from the latest NASA missions to the history of space exploration. Whether you're a seasoned astronomer or just starting to learn about space, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content to explore.
 
 ## The Wallpaper
 

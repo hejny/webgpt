@@ -18,7 +18,7 @@ Looking for inspiration? Check out our user stories section to read about the ad
 
 ## References and Resources
 
-At Adventure Awaits, we pride ourselves on providing accurate and up-to-date information to help you make the most of your journey. That's why we've compiled a comprehensive list of references and resources to help you plan your trip.
+At Adventure Awaits, we pride ourselves on providing accurate and up-to-date information to help you make the most of your journey. That's why we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of references and resources to help you plan your trip.
 
 From maps and travel guides to safety tips and emergency contacts, we've got everything you need to ensure a safe and enjoyable adventure.
 
@@ -71,7 +71,7 @@ Looking for inspiration? Check out our user stories section to read about the ad
 
 ## References and Resources
 
-At Adventure Awaits, we pride ourselves on providing accurate and up-to-date information to help you make the most of your journey. That's why we've compiled a comprehensive list of references and resources to help you plan your trip.
+At Adventure Awaits, we pride ourselves on providing accurate and up-to-date information to help you make the most of your journey. That's why we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of references and resources to help you plan your trip.
 
 From maps and travel guides to safety tips and emergency contacts, we've got everything you need to ensure a safe and enjoyable adventure.
 

@@ -18,16 +18,16 @@ Our mission is to explore the universe and share our discoveries with the world.
 
 ## User Stories
 
-- "I've always been fascinated by space and the possibility of extraterrestrial life. This website has given me a new perspective on the universe and inspired me to learn more about astronomy." - Sarah, 25
-- "As an aspiring astronaut, I'm always looking for ways to learn more about space. This website has provided me with valuable insights into the challenges and rewards of space exploration." - John, 18
+-   "I've always been fascinated by space and the possibility of Ex<wbr>tra<wbr>terre<wbr>strial life. This website has given me a new perspective on the universe and inspired me to learn more about astronomy." - Sarah, 25
+-   "As an aspiring astronaut, I'm always looking for ways to learn more about space. This website has provided me with valuable insights into the challenges and rewards of space exploration." - John, 18
 
 ## References
 
 If you're interested in learning more about space exploration and astronomy, check out these resources:
 
-- [NASA](#)
-- [European Space Agency](#)
-- [Space.com](#)
+-   [NASA](#)
+-   [European Space Agency](#)
+-   [Space.com](#)
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -76,7 +76,7 @@ Our mission is to explore the universe and share our discoveries with the world.
 
 ## User Stories
 
-- "I've always been fascinated by space and the possibility of extraterrestrial life. This website has given me a new perspective on the universe and inspired me to learn more about astronomy." - Sarah, 25
+- "I've always been fascinated by space and the possibility of Ex<wbr>tra<wbr>terre<wbr>strial life. This website has given me a new perspective on the universe and inspired me to learn more about astronomy." - Sarah, 25
 - "As an aspiring astronaut, I'm always looking for ways to learn more about space. This website has provided me with valuable insights into the challenges and rewards of space exploration." - John, 18
 
 ## References

@@ -24,6 +24,6 @@ At Arctic Explorer, we are passionate about discovering and sharing the wonders 
 
 ## Explore the Universe
 
-Discover the mysteries of the universe with our comprehensive guides to distant planets and their geological features. From the frozen landscapes of Pluto to the towering mountains of Mars, we bring you the latest research and stunning photographs from our expeditions.
+Discover the mysteries of the universe with our Com<wbr>pre<wbr>hen<wbr>sive guides to distant planets and their geological features. From the frozen landscapes of Pluto to the towering mountains of Mars, we bring you the latest research and stunning photographs from our expeditions.
 
 Join us on an unforgettable journey of discovery and exploration. Visit Arctic Explorer today!

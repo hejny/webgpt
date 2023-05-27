@@ -30,7 +30,7 @@ Our team of Ainautes are highly trained and equipped with the latest technology 
 
 ## Discover the Wonders of the Underground World
 
-As we venture deeper into the tunnels, we'll encounter a variety of unique and fascinating creatures that call this planet home. From bioluminescent insects to giant subterranean beasts, there's always something new and exciting to discover.
+As we venture deeper into the tunnels, we'll encounter a variety of unique and Fas<wbr>ci<wbr>na<wbr>ting creatures that call this planet home. From bioluminescent insects to giant subterranean beasts, there's always something new and exciting to discover.
 
 ## Join Us on Our Journey
 

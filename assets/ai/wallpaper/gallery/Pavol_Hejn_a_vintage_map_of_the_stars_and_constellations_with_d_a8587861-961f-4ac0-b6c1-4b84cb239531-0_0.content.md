@@ -2,15 +2,15 @@
 
 # Vintage Star Map
 
-Welcome to our website where you can discover the wonders of the universe through our vintage map of stars and constellations. Our beautifully illustrated map features detailed depictions of spacecraft and celestial bodies, making it a unique and captivating addition to any space.
+Welcome to our website where you can discover the wonders of the universe through our vintage map of stars and constellations. Our beautifully illustrated map features detailed depictions of spacecraft and celestial bodies, making it a unique and Cap<wbr>ti<wbr>va<wbr>ting addition to any space.
 
 ## Why Choose Our Vintage Map?
 
 Our vintage map is perfect for anyone who loves space and astronomy. It's a beautiful piece of art that doubles as an educational tool. Here are some reasons why you should choose our map:
 
-- High-quality print: Our map is printed on high-quality paper, ensuring that the colors and details are vibrant and long-lasting.
-- Customizable: We offer customization options, so you can choose the size and scale of the map to fit your needs.
-- Educational: Our map is not only beautiful but also educational. You can use it to teach your children or students about the stars and constellations.
+-   High-quality print: Our map is printed on high-quality paper, ensuring that the colors and details are vibrant and long-lasting.
+-   Customizable: We offer customization options, so you can choose the size and scale of the map to fit your needs.
+-   Educational: Our map is not only beautiful but also educational. You can use it to teach your children or students about the stars and constellations.
 
 ## User Stories
 
@@ -24,9 +24,9 @@ Here are some stories from our satisfied customers:
 
 If you're interested in learning more about space and astronomy, here are some resources to check out:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -105,7 +105,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Universe with Our Vintage Map of Stars and Constellations
 
-Welcome to our website where you can discover the wonders of the universe through our vintage map of stars and constellations. Our beautifully illustrated map features detailed depictions of spacecraft and celestial bodies, making it a unique and captivating addition to any space.
+Welcome to our website where you can discover the wonders of the universe through our vintage map of stars and constellations. Our beautifully illustrated map features detailed depictions of spacecraft and celestial bodies, making it a unique and Cap<wbr>ti<wbr>va<wbr>ting addition to any space.
 
 ## Why Choose Our Vintage Map?
 

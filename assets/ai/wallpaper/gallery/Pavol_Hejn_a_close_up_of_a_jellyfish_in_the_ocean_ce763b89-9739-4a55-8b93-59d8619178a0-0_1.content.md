@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Jelly Wonders
 
-Welcome to Oceanic Wonders, your ultimate source for stunning underwater wallpapers. Our latest addition is a mesmerizing close-up shot of a jellyfish in the ocean. This wallpaper captures the beauty and mystery of these fascinating creatures, making it the perfect addition to any device.
+Welcome to Oceanic Wonders, your ultimate source for stunning underwater wallpapers. Our latest addition is a mesmerizing close-up shot of a jellyfish in the ocean. This wallpaper captures the beauty and mystery of these Fas<wbr>ci<wbr>na<wbr>ting creatures, making it the perfect addition to any device.
 
 ## About Jellyfish
 
@@ -48,9 +48,9 @@ To download our jellyfish wallpaper, simply click the download button below. The
 
 If you're interested in learning more about jellyfish, we recommend checking out the following resources:
 
-- [National Geographic: Jellyfish](#)
-- [Smithsonian Ocean Portal: Jellyfish](#)
-- [Monterey Bay Aquarium: Jellyfish](#)
+-   [National Geographic: Jellyfish](#)
+-   [Smithsonian Ocean Portal: Jellyfish](#)
+-   [Monterey Bay Aquarium: Jellyfish](#)
 
 ## Contact Us
 

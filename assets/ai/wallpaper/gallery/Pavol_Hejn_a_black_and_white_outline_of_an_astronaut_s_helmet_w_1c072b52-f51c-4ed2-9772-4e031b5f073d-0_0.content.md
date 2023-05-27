@@ -2,7 +2,7 @@
 
 # Space Journey
 
-Welcome to Space Explorer, your ultimate guide to exploring the wonders of space! Our website is designed to provide you with all the information you need to know about space exploration, from the latest news and discoveries to tips on how to become an astronaut. 
+Welcome to Space Explorer, your ultimate guide to exploring the wonders of space! Our website is designed to provide you with all the information you need to know about space exploration, from the latest news and discoveries to tips on how to become an astronaut.
 
 ## Wallpaper: Astronaut's Helmet
 
@@ -10,27 +10,27 @@ Our black and white wallpaper features an intricate outline of an astronaut's he
 
 ## Discover the Universe
 
-At Space Explorer, we believe that the universe is full of mysteries waiting to be uncovered. That's why we've created a comprehensive resource for anyone who wants to learn more about space. Here are just a few of the topics you'll find on our site:
+At Space Explorer, we believe that the universe is full of mysteries waiting to be uncovered. That's why we've created a Com<wbr>pre<wbr>hen<wbr>sive resource for anyone who wants to learn more about space. Here are just a few of the topics you'll find on our site:
 
-- Latest news and discoveries
-- Space exploration history
-- Tips for aspiring astronauts
-- Information on space agencies around the world
-- Astronomy basics
-- User stories from real-life space explorers
+-   Latest news and discoveries
+-   Space exploration history
+-   Tips for aspiring astronauts
+-   Information on space agencies around the world
+-   Astronomy basics
+-   User stories from real-life space explorers
 
 ## References
 
 We've compiled a list of some of the best resources on space exploration for you to explore:
 
-- NASA - [https://www.nasa.gov/](#nasa)
-- European Space Agency - [https://www.esa.int/](#esa)
-- Space.com - [https://www.space.com/](#spacecom)
-- Astronomy Magazine - [https://astronomy.com/](#astronomymagazine)
+-   NASA - [https://www.nasa.gov/](#nasa)
+-   European Space Agency - [https://www.esa.int/](#esa)
+-   Space.com - [https://www.space.com/](#spacecom)
+-   Astronomy Magazine - [https://astronomy.com/](#astronomymagazine)
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us at [contact@spaceexplorer.com](mailto:contact@spaceexplorer.com) or follow us on Twitter [@SpaceExplorer](#twitter). 
+Have a question or suggestion? We'd love to hear from you! You can reach us at [contact@spaceexplorer.com](mailto:contact@spaceexplorer.com) or follow us on Twitter [@SpaceExplorer](#twitter).
 
 Embark on a journey beyond the stars with Space Explorer. Start exploring today!
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Explorer: Embark on a Journey Beyond the Stars
 
-Welcome to Space Explorer, your ultimate guide to exploring the wonders of space! Our website is designed to provide you with all the information you need to know about space exploration, from the latest news and discoveries to tips on how to become an astronaut. 
+Welcome to Space Explorer, your ultimate guide to exploring the wonders of space! Our website is designed to provide you with all the information you need to know about space exploration, from the latest news and discoveries to tips on how to become an astronaut.
 
 ## Wallpaper: Astronaut's Helmet
 
@@ -69,7 +69,7 @@ Our black and white wallpaper features an intricate outline of an astronaut's he
 
 ## Discover the Universe
 
-At Space Explorer, we believe that the universe is full of mysteries waiting to be uncovered. That's why we've created a comprehensive resource for anyone who wants to learn more about space. Here are just a few of the topics you'll find on our site:
+At Space Explorer, we believe that the universe is full of mysteries waiting to be uncovered. That's why we've created a Com<wbr>pre<wbr>hen<wbr>sive resource for anyone who wants to learn more about space. Here are just a few of the topics you'll find on our site:
 
 - Latest news and discoveries
 - Space exploration history
@@ -89,7 +89,7 @@ We've compiled a list of some of the best resources on space exploration for you
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us at [contact@spaceexplorer.com](mailto:contact@spaceexplorer.com) or follow us on Twitter [@SpaceExplorer](#twitter). 
+Have a question or suggestion? We'd love to hear from you! You can reach us at [contact@spaceexplorer.com](mailto:contact@spaceexplorer.com) or follow us on Twitter [@SpaceExplorer](#twitter).
 
 Embark on a journey beyond the stars with Space Explorer. Start exploring today!
 

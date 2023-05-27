@@ -10,7 +10,7 @@ From the towering icebergs of Greenland to the rugged coastlines of Norway, the 
 
 ## Plan Your Trip
 
-At Arctic Adventures, we understand that planning a trip to the Arctic can be daunting. That's why we've put together a comprehensive guide to help you every step of the way. From choosing the best time of year to visit to finding the perfect accommodations, we've got you covered.
+At Arctic Adventures, we understand that planning a trip to the Arctic can be daunting. That's why we've put together a Com<wbr>pre<wbr>hen<wbr>sive guide to help you every step of the way. From choosing the best time of year to visit to finding the perfect accommodations, we've got you covered.
 
 ## User Stories
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -65,7 +65,7 @@ From the towering icebergs of Greenland to the rugged coastlines of Norway, the 
 
 ## Plan Your Trip
 
-At Arctic Adventures, we understand that planning a trip to the Arctic can be daunting. That's why we've put together a comprehensive guide to help you every step of the way. From choosing the best time of year to visit to finding the perfect accommodations, we've got you covered.
+At Arctic Adventures, we understand that planning a trip to the Arctic can be daunting. That's why we've put together a Com<wbr>pre<wbr>hen<wbr>sive guide to help you every step of the way. From choosing the best time of year to visit to finding the perfect accommodations, we've got you covered.
 
 ## User Stories
 

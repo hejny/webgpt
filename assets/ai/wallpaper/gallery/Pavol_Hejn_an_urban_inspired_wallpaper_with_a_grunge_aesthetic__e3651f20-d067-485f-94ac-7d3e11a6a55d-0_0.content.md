@@ -22,7 +22,7 @@ Don't just take our word for it – hear from real visitors who have experienced
 
 ## References
 
-Want to learn more about the city's history and culture? Our references section has everything you need to know. From museums and galleries to historical landmarks and monuments, we've compiled a comprehensive list of must-see attractions.
+Want to learn more about the city's history and culture? Our references section has everything you need to know. From museums and galleries to historical landmarks and monuments, we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of must-see attractions.
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -79,7 +79,7 @@ Don't just take our word for it – hear from real visitors who have experienced
 
 ## References
 
-Want to learn more about the city's history and culture? Our references section has everything you need to know. From museums and galleries to historical landmarks and monuments, we've compiled a comprehensive list of must-see attractions.
+Want to learn more about the city's history and culture? Our references section has everything you need to know. From museums and galleries to historical landmarks and monuments, we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of must-see attractions.
 
 ## Contact Us
 

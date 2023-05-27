@@ -2,7 +2,7 @@
 
 # Tech Cyborgs
 
-Welcome to our website, where we delve into the world of cyborgs and explore the fascinating relationship between man and machine. Our website is dedicated to providing a platform for discussions and insights on how technology is transforming humanity.
+Welcome to our website, where we delve into the world of cyborgs and explore the Fas<wbr>ci<wbr>na<wbr>ting relationship between man and machine. Our website is dedicated to providing a platform for discussions and insights on how technology is transforming humanity.
 
 ## The Wallpaper
 
@@ -14,12 +14,12 @@ We are a community of tech enthusiasts, futurists, and philosophers who believe 
 
 ### Topics We Cover
 
-- Artificial Intelligence
-- Robotics
-- Augmented Reality
-- Virtual Reality
-- Cybersecurity
-- Biotechnology
+-   Artificial Intelligence
+-   Robotics
+-   Augmented Reality
+-   Virtual Reality
+-   Cybersecurity
+-   Biotechnology
 
 ## User Stories
 
@@ -33,10 +33,10 @@ Our website is not just about us; it's about our community. Here are some storie
 
 Our website is built on a foundation of research and knowledge. Here are some of the sources we rely on:
 
-- [MIT Technology Review](#)
-- [Wired](#)
-- [The Verge](#)
-- [Singularity Hub](#)
+-   [MIT Technology Review](#)
+-   [Wired](#)
+-   [The Verge](#)
+-   [Singularity Hub](#)
 
 ## Contact Us
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Futuristic Cyborgs: Exploring the Intersection of Technology and Humanity
 
-Welcome to our website, where we delve into the world of cyborgs and explore the fascinating relationship between man and machine. Our website is dedicated to providing a platform for discussions and insights on how technology is transforming humanity.
+Welcome to our website, where we delve into the world of cyborgs and explore the Fas<wbr>ci<wbr>na<wbr>ting relationship between man and machine. Our website is dedicated to providing a platform for discussions and insights on how technology is transforming humanity.
 
 ## The Wallpaper
 

@@ -12,18 +12,18 @@ Our homepage features a wallpaper with a graph of complex mathematical equations
 
 At Mathematically Minimalist, we offer a variety of articles and resources that explore the use of mathematics in design. Here are some of the topics we cover:
 
-- **Fractals:** Learn about the beauty and complexity of fractals, and how they can be used to create stunning designs.
-- **Geometry:** Discover the power of geometric shapes and patterns, and how they can be used to create visually striking designs.
-- **Data Visualization:** Explore the world of data visualization, and learn how mathematical concepts can be used to turn complex data sets into beautiful visualizations.
-- **User Stories:** Read stories from designers who have used mathematical concepts in their work, and learn about the creative process behind their designs.
+-   **Fractals:** Learn about the beauty and complexity of fractals, and how they can be used to create stunning designs.
+-   **Geometry:** Discover the power of geometric shapes and patterns, and how they can be used to create visually striking designs.
+-   **Data Visualization:** Explore the world of data visualization, and learn how mathematical concepts can be used to turn complex data sets into beautiful visualizations.
+-   **User Stories:** Read stories from designers who have used mathematical concepts in their work, and learn about the creative process behind their designs.
 
 ## References
 
 We believe in sharing knowledge and resources with our community. Here are some of the references we recommend:
 
-- [Mathematics and Art](#): A comprehensive resource on the relationship between mathematics and art.
-- [The Beauty of Mathematics](#): A TED Talk by mathematician and artist, Ron Eglash, on the beauty of fractals in African art.
-- [Data Visualization Society](#): An international community of data visualization professionals and enthusiasts.
+-   [Mathematics and Art](#): A Com<wbr>pre<wbr>hen<wbr>sive resource on the relationship between mathematics and art.
+-   [The Beauty of Mathematics](#): A TED Talk by mathematician and artist, Ron Eglash, on the beauty of fractals in African art.
+-   [Data Visualization Society](#): An international community of data visualization professionals and enthusiasts.
 
 ## Contact Us
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -77,7 +77,7 @@ At Mathematically Minimalist, we offer a variety of articles and resources that 
 
 We believe in sharing knowledge and resources with our community. Here are some of the references we recommend:
 
-- [Mathematics and Art](#): A comprehensive resource on the relationship between mathematics and art.
+- [Mathematics and Art](#): A Com<wbr>pre<wbr>hen<wbr>sive resource on the relationship between mathematics and art.
 - [The Beauty of Mathematics](#): A TED Talk by mathematician and artist, Ron Eglash, on the beauty of fractals in African art.
 - [Data Visualization Society](#): An international community of data visualization professionals and enthusiasts.
 

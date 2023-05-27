@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Ruins Exploration
 
-Welcome to our website featuring a stunning wallpaper of a group of Ainautes exploring the ruins of an ancient civilization on a distant planet. The wallpaper depicts towering statues and temples all around them, giving us a glimpse into the mysterious and fascinating world of this long-lost civilization.
+Welcome to our website featuring a stunning wallpaper of a group of Ainautes exploring the ruins of an ancient civilization on a distant planet. The wallpaper depicts towering statues and temples all around them, giving us a glimpse into the mysterious and Fas<wbr>ci<wbr>na<wbr>ting world of this long-lost civilization.
 
 ## Discover the Wonders of the Past
 

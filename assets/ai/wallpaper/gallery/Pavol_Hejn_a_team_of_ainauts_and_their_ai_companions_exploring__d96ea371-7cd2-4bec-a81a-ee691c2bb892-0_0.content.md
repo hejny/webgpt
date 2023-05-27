@@ -8,9 +8,9 @@ Welcome to Explorers' Hub, your go-to resource for all things space exploration.
 
 Our current wallpaper features a team of Ainautes and their AI companions exploring a massive, underground cave system on a distant planet. The scene captures the excitement and danger of deep-space exploration, as the team navigates treacherous terrain and uncovers secrets hidden deep beneath the surface.
 
-## Featured User Story: The Search for Extraterrestrial Life
+## Featured User Story: The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life
 
-One of our featured user stories comes from Dr. Maria Rodriguez, a leading astrobiologist who has dedicated her career to the search for extraterrestrial life. In her interview, Dr. Rodriguez shares her insights on the challenges and rewards of this fascinating field, and offers a glimpse into the cutting-edge technologies being used to explore the cosmos.
+One of our featured user stories comes from Dr. Maria Rodriguez, a leading astrobiologist who has dedicated her career to the search for Ex<wbr>tra<wbr>terre<wbr>strial life. In her interview, Dr. Rodriguez shares her insights on the challenges and rewards of this Fas<wbr>ci<wbr>na<wbr>ting field, and offers a glimpse into the cutting-edge technologies being used to explore the cosmos.
 
 ## Latest News: New Discoveries in the Kuiper Belt
 
@@ -61,9 +61,9 @@ Welcome to Explorers' Hub, your go-to resource for all things space exploration.
 
 Our current wallpaper features a team of Ainautes and their AI companions exploring a massive, underground cave system on a distant planet. The scene captures the excitement and danger of deep-space exploration, as the team navigates treacherous terrain and uncovers secrets hidden deep beneath the surface.
 
-## Featured User Story: The Search for Extraterrestrial Life
+## Featured User Story: The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life
 
-One of our featured user stories comes from Dr. Maria Rodriguez, a leading astrobiologist who has dedicated her career to the search for extraterrestrial life. In her interview, Dr. Rodriguez shares her insights on the challenges and rewards of this fascinating field, and offers a glimpse into the cutting-edge technologies being used to explore the cosmos.
+One of our featured user stories comes from Dr. Maria Rodriguez, a leading astrobiologist who has dedicated her career to the search for Ex<wbr>tra<wbr>terre<wbr>strial life. In her interview, Dr. Rodriguez shares her insights on the challenges and rewards of this Fas<wbr>ci<wbr>na<wbr>ting field, and offers a glimpse into the cutting-edge technologies being used to explore the cosmos.
 
 ## Latest News: New Discoveries in the Kuiper Belt
 

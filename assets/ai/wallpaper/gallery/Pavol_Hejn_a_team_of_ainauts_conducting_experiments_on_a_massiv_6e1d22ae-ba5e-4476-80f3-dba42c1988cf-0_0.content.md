@@ -29,7 +29,7 @@ We have also discovered new insights into the geological processes and chemical 
 Here are some stories from people who have been inspired by our work:
 
 -   "I've always been fascinated by space exploration, and the idea of discovering life on another world is just mind-blowing. I love following the updates from the Ainautes team and learning more about the frozen moons they're studying." - _Sarah, Space Enthusiast_
--   "As a science teacher, I'm always looking for ways to inspire my students and get them excited about STEM subjects. The work that the Ainautes team is doing is a great example of how science can be both fascinating and important." - _Mr. Johnson, Science Teacher_
+-   "As a science teacher, I'm always looking for ways to inspire my students and get them excited about STEM subjects. The work that the Ainautes team is doing is a great example of how science can be both Fas<wbr>ci<wbr>na<wbr>ting and important." - _Mr. Johnson, Science Teacher_
 
 ## References
 
@@ -100,7 +100,7 @@ We have also discovered new insights into the geological processes and chemical 
 Here are some stories from people who have been inspired by our work:
 
 - "I've always been fascinated by space exploration, and the idea of discovering life on another world is just mind-blowing. I love following the updates from the Ainautes team and learning more about the frozen moons they're studying." - *Sarah, Space Enthusiast*
-- "As a science teacher, I'm always looking for ways to inspire my students and get them excited about STEM subjects. The work that the Ainautes team is doing is a great example of how science can be both fascinating and important." - *Mr. Johnson, Science Teacher*
+- "As a science teacher, I'm always looking for ways to inspire my students and get them excited about STEM subjects. The work that the Ainautes team is doing is a great example of how science can be both Fas<wbr>ci<wbr>na<wbr>ting and important." - *Mr. Johnson, Science Teacher*
 
 ## References
 

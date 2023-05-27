@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Cybernetic Future
 
-Welcome to our website, where we explore the fascinating world of cybernetics and its impact on our future. Our mission is to educate and inspire people to embrace the power of technology and discover the endless possibilities it offers.
+Welcome to our website, where we explore the Fas<wbr>ci<wbr>na<wbr>ting world of cybernetics and its impact on our future. Our mission is to educate and inspire people to embrace the power of technology and discover the endless possibilities it offers.
 
 ## The Wallpaper: A Glimpse into the Future
 
@@ -28,7 +28,7 @@ Our wallpaper features an illustration of a cyborg with a metallic body and glow
 
 ## Why Cybernetics Matters
 
-Cybernetics is the study of communication and control in living organisms and machines. It is a field that combines biology, engineering, and computer science to create intelligent systems that can adapt and learn. Cybernetics has already revolutionized many industries, from healthcare to manufacturing, and it has the potential to transform our world in ways we cannot even imagine.
+Cybernetics is the study of Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion and control in living organisms and machines. It is a field that combines biology, engineering, and computer science to create intelligent systems that can adapt and learn. Cybernetics has already revolutionized many industries, from healthcare to manufacturing, and it has the potential to transform our world in ways we cannot even imagine.
 
 ## User Stories: How Cybernetics is Changing Lives
 
@@ -44,7 +44,7 @@ These stories demonstrate the incredible potential of cybernetics to improve our
 
 If you want to learn more about cybernetics and its applications, we have compiled a list of resources to get you started:
 
--   **Books**: "Cybernetics: Or Control and Communication in the Animal and the Machine" by Norbert Wiener, "The Cyborg Handbook" edited by Chris Hables Gray, and "The Singularity Is Near" by Ray Kurzweil.
+-   **Books**: "Cybernetics: Or Control and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion in the Animal and the Machine" by Norbert Wiener, "The Cyborg Handbook" edited by Chris Hables Gray, and "The Singularity Is Near" by Ray Kurzweil.
 -   **Websites**: The Cybernetics Society, The International Association for Cybernetics, and The Cybernetics Library.
 -   **Events**: The Annual Conference on Cybernetics and Systems, The IEEE Conference on Cybernetics and Intelligent Systems, and The World Congress on Cybernetics and Systems.
 

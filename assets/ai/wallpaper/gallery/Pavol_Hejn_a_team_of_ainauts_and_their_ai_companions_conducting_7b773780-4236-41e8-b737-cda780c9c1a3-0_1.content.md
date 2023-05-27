@@ -28,7 +28,7 @@ Our team is made up of scientists, engineers, and AI specialists who are passion
 
 ## Our Mission
 
-Our mission is to push the boundaries of space exploration and discover new knowledge about the universe. We believe that by using advanced AI systems and robotics, we can explore areas of space that were previously inaccessible to humans. Our ultimate goal is to find evidence of extraterrestrial life and unlock the secrets of the cosmos.
+Our mission is to push the boundaries of space exploration and discover new knowledge about the universe. We believe that by using advanced AI systems and robotics, we can explore areas of space that were previously inaccessible to humans. Our ultimate goal is to find evidence of Ex<wbr>tra<wbr>terre<wbr>strial life and unlock the secrets of the cosmos.
 
 ## User Stories
 

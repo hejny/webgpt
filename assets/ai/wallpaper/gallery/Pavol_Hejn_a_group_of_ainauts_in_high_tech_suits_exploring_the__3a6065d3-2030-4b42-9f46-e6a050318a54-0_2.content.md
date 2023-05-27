@@ -32,7 +32,7 @@ Our mission is to use artificial intelligence to explore space more efficiently 
 
 ## Our Technology
 
-Our Ainautes are equipped with high-tech suits that allow them to survive in even the harshest environments. With advanced sensors and communication systems, they can collect data and transmit it back to Earth in real-time.
+Our Ainautes are equipped with high-tech suits that allow them to survive in even the harshest environments. With advanced sensors and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion systems, they can collect data and transmit it back to Earth in real-time.
 
 ## User Stories
 

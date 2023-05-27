@@ -26,7 +26,7 @@ Welcome to Birdwatcher's Paradise, where you can immerse yourself in the world o
 
 At Birdwatcher's Paradise, we are passionate about birds and dedicated to providing bird enthusiasts with everything they need to explore and appreciate the avian world. Our website offers a wide range of resources, including:
 
--   **Bird Identification:** Use our comprehensive database to identify any bird you encounter on your birdwatching adventures.
+-   **Bird Identification:** Use our Com<wbr>pre<wbr>hen<wbr>sive database to identify any bird you encounter on your birdwatching adventures.
 -   **Birdwatching Tips:** Learn from experienced birdwatchers and improve your skills with our expert tips and advice.
 -   **User Stories:** Read stories from other birdwatchers and share your own experiences with the community.
 -   **Wallpapers:** Download beautiful wallpapers featuring birds in their natural habitats, like this close-up of a bird in flight.

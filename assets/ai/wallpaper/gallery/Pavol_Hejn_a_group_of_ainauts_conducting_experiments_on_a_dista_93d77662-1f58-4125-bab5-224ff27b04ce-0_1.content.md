@@ -20,7 +20,7 @@ Our website features user stories from people around the world who are passionat
 
 ## References
 
-Our website features a comprehensive list of references and resources related to space exploration and astronomy. From scientific journals and articles to popular books and documentaries, we aim to provide a wealth of information for anyone interested in learning more about the universe.
+Our website features a Com<wbr>pre<wbr>hen<wbr>sive list of references and resources related to space exploration and astronomy. From scientific journals and articles to popular books and documentaries, we aim to provide a wealth of information for anyone interested in learning more about the universe.
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ Our website features user stories from people around the world who are passionat
 
 ## References
 
-Our website features a comprehensive list of references and resources related to space exploration and astronomy. From scientific journals and articles to popular books and documentaries, we aim to provide a wealth of information for anyone interested in learning more about the universe.
+Our website features a Com<wbr>pre<wbr>hen<wbr>sive list of references and resources related to space exploration and astronomy. From scientific journals and articles to popular books and documentaries, we aim to provide a wealth of information for anyone interested in learning more about the universe.
 
 ## Contact Us
 

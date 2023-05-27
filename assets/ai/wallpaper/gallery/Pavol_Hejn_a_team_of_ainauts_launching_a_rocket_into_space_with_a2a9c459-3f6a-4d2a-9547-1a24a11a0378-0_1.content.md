@@ -2,14 +2,14 @@
 
 # Space Décor
 
-Bring the excitement of space exploration into your home or office with our stunning space-themed décor. Our featured background showcases a team of Ainautes launching a rocket into space, with the Earth visible in the background. This captivating image is just one of many options that we offer to help you create a space that's out of this world.
+Bring the excitement of space exploration into your home or office with our stunning space-themed décor. Our featured background showcases a team of Ainautes launching a rocket into space, with the Earth visible in the background. This Cap<wbr>ti<wbr>va<wbr>ting image is just one of many options that we offer to help you create a space that's out of this world.
 
 ## Features
 
-- High-quality resolution for a crisp and clear image
-- Easy to install and remove without damaging your walls
-- Durable material that can withstand wear and tear
-- Perfect for any room in your home or office
+-   High-quality resolution for a crisp and clear image
+-   Easy to install and remove without damaging your walls
+-   Durable material that can withstand wear and tear
+-   Perfect for any room in your home or office
 
 ## User Stories
 
@@ -21,9 +21,9 @@ Bring the excitement of space exploration into your home or office with our stun
 
 Want to learn more about the Ainautes and their mission to explore the cosmos? Check out these resources:
 
-- [Ainautes official website](#)
-- [NASA's Jet Propulsion Laboratory](#)
-- [Space.com](#)
+-   [Ainautes official website](#)
+-   [NASA's Jet Propulsion Laboratory](#)
+-   [Space.com](#)
 
 ## Contact
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -99,7 +99,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Final Frontier with Our Space-Themed Décor
 
-Bring the excitement of space exploration into your home or office with our stunning space-themed décor. Our featured background showcases a team of Ainautes launching a rocket into space, with the Earth visible in the background. This captivating image is just one of many options that we offer to help you create a space that's out of this world.
+Bring the excitement of space exploration into your home or office with our stunning space-themed décor. Our featured background showcases a team of Ainautes launching a rocket into space, with the Earth visible in the background. This Cap<wbr>ti<wbr>va<wbr>ting image is just one of many options that we offer to help you create a space that's out of this world.
 
 ## Features
 

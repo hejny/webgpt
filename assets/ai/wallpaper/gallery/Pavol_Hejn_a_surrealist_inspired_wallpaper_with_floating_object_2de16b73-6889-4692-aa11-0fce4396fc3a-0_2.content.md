@@ -2,7 +2,7 @@
 
 # Steampunk World
 
-Welcome to the Steampunk Workshop, a place where fantasy meets industrial revolution. Our website is dedicated to bringing you the best in steampunk-inspired art, fashion, and design. 
+Welcome to the Steampunk Workshop, a place where fantasy meets industrial revolution. Our website is dedicated to bringing you the best in steampunk-inspired art, fashion, and design.
 
 ## Our Wallpaper: Surrealist-Inspired Industrial Fantasy
 
@@ -16,17 +16,17 @@ At the Steampunk Workshop, we celebrate all things steampunk. From fashion to ho
 
 Our community of steampunk enthusiasts is growing every day. Here are just a few stories from some of our satisfied customers:
 
-- "I've always been fascinated by the steampunk aesthetic, but I never knew where to start. Thanks to the Steampunk Workshop, I was able to find the perfect outfit for my next convention!" - Sarah, 25
-- "I recently redecorated my home office with a steampunk theme, and the wallpaper from the Steampunk Workshop was the perfect finishing touch." - John, 42
-- "I've been a fan of steampunk for years, and the Steampunk Workshop is my go-to source for all things related to this amazing subculture." - Emily, 31
+-   "I've always been fascinated by the steampunk aesthetic, but I never knew where to start. Thanks to the Steampunk Workshop, I was able to find the perfect outfit for my next convention!" - Sarah, 25
+-   "I recently redecorated my home office with a steampunk theme, and the wallpaper from the Steampunk Workshop was the perfect finishing touch." - John, 42
+-   "I've been a fan of steampunk for years, and the Steampunk Workshop is my go-to source for all things related to this amazing subculture." - Emily, 31
 
 ## References: Learn More About Steampunk
 
 If you're interested in learning more about steampunk, we recommend checking out these resources:
 
-- [Steampunk Wiki](#): A comprehensive guide to all things steampunk.
-- [Steampunk Fashion Guide](#): Tips and tricks for creating your own steampunk-inspired outfits.
-- [Steampunk Home Decor Ideas](#): Inspiration for incorporating steampunk design into your home.
+-   [Steampunk Wiki](#): A Com<wbr>pre<wbr>hen<wbr>sive guide to all things steampunk.
+-   [Steampunk Fashion Guide](#): Tips and tricks for creating your own steampunk-inspired outfits.
+-   [Steampunk Home Decor Ideas](#): Inspiration for incorporating steampunk design into your home.
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # The Steampunk Workshop: A World of Industrial Fantasy
 
-Welcome to the Steampunk Workshop, a place where fantasy meets industrial revolution. Our website is dedicated to bringing you the best in steampunk-inspired art, fashion, and design. 
+Welcome to the Steampunk Workshop, a place where fantasy meets industrial revolution. Our website is dedicated to bringing you the best in steampunk-inspired art, fashion, and design.
 
 ## Our Wallpaper: Surrealist-Inspired Industrial Fantasy
 
@@ -81,7 +81,7 @@ Our community of steampunk enthusiasts is growing every day. Here are just a few
 
 If you're interested in learning more about steampunk, we recommend checking out these resources:
 
-- [Steampunk Wiki](#): A comprehensive guide to all things steampunk.
+- [Steampunk Wiki](#): A Com<wbr>pre<wbr>hen<wbr>sive guide to all things steampunk.
 - [Steampunk Fashion Guide](#): Tips and tricks for creating your own steampunk-inspired outfits.
 - [Steampunk Home Decor Ideas](#): Inspiration for incorporating steampunk design into your home.
 

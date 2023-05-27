@@ -6,7 +6,7 @@ Welcome to our website, where we take you on a journey through the mysteries and
 
 ## Discover the Universe
 
-Our website is dedicated to bringing you the latest news, discoveries, and insights from the world of astronomy and space exploration. From the latest Mars rover missions to the search for extraterrestrial life, we cover it all.
+Our website is dedicated to bringing you the latest news, discoveries, and insights from the world of astronomy and space exploration. From the latest Mars rover missions to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we cover it all.
 
 ## User Stories
 
@@ -59,7 +59,7 @@ Welcome to our website, where we explore the mysteries and marvels of the univer
 
 ## Explore the Universe
 
-Our website is dedicated to bringing you the latest news, discoveries, and insights from the world of astronomy and space exploration. From the latest Mars rover missions to the search for extraterrestrial life, we cover it all.
+Our website is dedicated to bringing you the latest news, discoveries, and insights from the world of astronomy and space exploration. From the latest Mars rover missions to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we cover it all.
 
 ## User Stories
 
@@ -97,7 +97,7 @@ Welcome to our website, where we take you on a journey through the mysteries and
 
 ## Discover the Universe
 
-Our website is dedicated to bringing you the latest news, discoveries, and insights from the world of astronomy and space exploration. From the latest Mars rover missions to the search for extraterrestrial life, we cover it all.
+Our website is dedicated to bringing you the latest news, discoveries, and insights from the world of astronomy and space exploration. From the latest Mars rover missions to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we cover it all.
 
 ## User Stories
 

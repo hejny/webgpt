@@ -8,13 +8,13 @@ Welcome to our website, where we help businesses make informed decisions through
 
 We offer a range of services to help businesses unlock the value of their data:
 
-- **Data Analysis:** We analyze your data to uncover insights and identify opportunities for growth.
-- **Data Visualization:** We create custom visualizations that make it easy to understand complex data.
-- **Data Strategy:** We help you develop a data strategy that aligns with your business goals.
+-   **Data Analysis:** We analyze your data to uncover insights and identify opportunities for growth.
+-   **Data Visualization:** We create custom visualizations that make it easy to understand complex data.
+-   **Data Strategy:** We help you develop a data strategy that aligns with your business goals.
 
 ## Our Approach
 
-At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a comprehensive understanding of your business.
+At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a Com<wbr>pre<wbr>hen<wbr>sive understanding of your business.
 
 ## Success Stories
 
@@ -28,9 +28,9 @@ Our clients have seen real results from our data-driven approach. Here are some 
 
 We pride ourselves on delivering high-quality work to our clients. Here are some references from satisfied customers:
 
-- John Smith, CEO of XYZ Company
-- Jane Doe, CFO of ABC Corporation
-- Bob Johnson, Marketing Director at 123 Industries
+-   John Smith, CEO of XYZ Company
+-   Jane Doe, CFO of ABC Corporation
+-   Bob Johnson, Marketing Director at 123 Industries
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -75,7 +75,7 @@ We offer a range of services to help businesses leverage their data:
 
 ## Our Approach
 
-At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. We don't just look at numbers; we look at the story behind the data. Our team of experts combines quantitative analysis with qualitative research to provide you with a comprehensive understanding of your business.
+At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. We don't just look at numbers; we look at the story behind the data. Our team of experts combines quantitative analysis with qualitative research to provide you with a Com<wbr>pre<wbr>hen<wbr>sive understanding of your business.
 
 ## User Stories
 
@@ -121,7 +121,7 @@ We offer a range of services to help businesses unlock the value of their data:
 
 ## Our Approach
 
-At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a comprehensive understanding of your business.
+At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a Com<wbr>pre<wbr>hen<wbr>sive understanding of your business.
 
 ## Success Stories
 
@@ -167,7 +167,7 @@ We offer a range of services to help businesses unlock the value of their data:
 
 ## Our Approach
 
-At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a comprehensive understanding of your business.
+At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a Com<wbr>pre<wbr>hen<wbr>sive understanding of your business.
 
 ## Success Stories
 
@@ -213,7 +213,7 @@ We offer a range of services to help businesses unlock the value of their data:
 
 ## Our Approach
 
-At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a comprehensive understanding of your business.
+At our company, we believe that data should drive decision-making. That's why we take a holistic approach to data analysis. Our team of experts combines quantitative analysis with qualitative research to provide you with a Com<wbr>pre<wbr>hen<wbr>sive understanding of your business.
 
 ## Success Stories
 

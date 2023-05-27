@@ -12,7 +12,7 @@ Our team is made up of passionate artists and writers who are dedicated to bring
 
 ## Our Wallpaper
 
-Our whimsical tea party wallpaper featuring anthropomorphic animals is the perfect backdrop for any creative space. Whether you're working on your latest masterpiece or simply daydreaming about your next project, this charming wallpaper will transport you to a world of imagination and wonder.
+Our whimsical tea party wallpaper featuring An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals is the perfect backdrop for any creative space. Whether you're working on your latest masterpiece or simply daydreaming about your next project, this charming wallpaper will transport you to a world of imagination and wonder.
 
 ## User Stories
 
@@ -43,7 +43,7 @@ Thank you for visiting Whimsical Wonderland, and happy creating!
 
 Write me content for website with wallpaper which alt text is:
 
-"A whimsical tea party with anthropomorphic animals"
+"A whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals"
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -66,7 +66,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 Write me content for website with wallpaper which alt text is:
 
-"A whimsical tea party with anthropomorphic animals"
+"A whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals"
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
@@ -99,7 +99,7 @@ Our team is made up of passionate artists and writers who are dedicated to bring
 
 ## Our Wallpaper
 
-Our whimsical tea party wallpaper featuring anthropomorphic animals is the perfect backdrop for any creative space. Whether you're working on your latest masterpiece or simply daydreaming about your next project, this charming wallpaper will transport you to a world of imagination and wonder.
+Our whimsical tea party wallpaper featuring An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals is the perfect backdrop for any creative space. Whether you're working on your latest masterpiece or simply daydreaming about your next project, this charming wallpaper will transport you to a world of imagination and wonder.
 
 ## User Stories
 

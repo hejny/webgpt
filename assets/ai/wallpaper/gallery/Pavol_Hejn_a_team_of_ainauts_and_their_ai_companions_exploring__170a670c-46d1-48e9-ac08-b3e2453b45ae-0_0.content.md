@@ -6,23 +6,23 @@ Welcome to our website dedicated to all things science fiction! Our homepage fea
 
 ## Explore the Universe
 
-Join us on a journey to the unknown as we explore the vast universe of science fiction. From classic novels to modern movies, we cover it all. Discover new worlds, meet fascinating characters, and immerse yourself in the endless possibilities of sci-fi.
+Join us on a journey to the unknown as we explore the vast universe of science fiction. From classic novels to modern movies, we cover it all. Discover new worlds, meet Fas<wbr>ci<wbr>na<wbr>ting characters, and immerse yourself in the endless possibilities of sci-fi.
 
 ## User Stories
 
 Our community of sci-fi enthusiasts loves to share their favorite stories, artwork, and theories about the universe. Here are some user stories from our members:
 
-- "I love the sense of wonder and adventure that sci-fi brings. It's a great escape from reality."
-- "As a writer, I find sci-fi to be the perfect genre for exploring complex themes and ideas."
-- "The creativity and imagination in sci-fi never ceases to amaze me. There's always something new to discover."
+-   "I love the sense of wonder and adventure that sci-fi brings. It's a great escape from reality."
+-   "As a writer, I find sci-fi to be the perfect genre for exploring complex themes and ideas."
+-   "The creativity and imagination in sci-fi never ceases to amaze me. There's always something new to discover."
 
 ## References
 
 Looking for more sci-fi content? Check out our recommended references:
 
-- Novels: *Dune* by Frank Herbert, *The Hitchhiker's Guide to the Galaxy* by Douglas Adams, *Ender's Game* by Orson Scott Card
-- Movies: *Blade Runner* directed by Ridley Scott, *The Matrix* directed by the Wachowskis, *Interstellar* directed by Christopher Nolan
-- TV Shows: *Star Trek: The Next Generation*, *Battlestar Galactica*, *The Expanse*
+-   Novels: _Dune_ by Frank Herbert, _The Hitchhiker's Guide to the Galaxy_ by Douglas Adams, _Ender's Game_ by Orson Scott Card
+-   Movies: _Blade Runner_ directed by Ridley Scott, _The Matrix_ directed by the Wachowskis, _Interstellar_ directed by Christopher Nolan
+-   TV Shows: _Star Trek: The Next Generation_, _Battlestar Galactica_, _The Expanse_
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Welcome to our website dedicated to all things science fiction! Our homepage fea
 
 ## Explore the Universe
 
-Join us on a journey to the unknown as we explore the vast universe of science fiction. From classic novels to modern movies, we cover it all. Discover new worlds, meet fascinating characters, and immerse yourself in the endless possibilities of sci-fi.
+Join us on a journey to the unknown as we explore the vast universe of science fiction. From classic novels to modern movies, we cover it all. Discover new worlds, meet Fas<wbr>ci<wbr>na<wbr>ting characters, and immerse yourself in the endless possibilities of sci-fi.
 
 ## User Stories
 

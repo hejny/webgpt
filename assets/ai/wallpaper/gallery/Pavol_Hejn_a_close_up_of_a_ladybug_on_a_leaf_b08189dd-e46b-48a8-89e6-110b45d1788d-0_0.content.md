@@ -2,7 +2,7 @@
 
 # Ladybug Spotting
 
-Welcome to our website dedicated to the fascinating world of ladybugs! Our featured wallpaper showcases a stunning close-up of a ladybug on a leaf, inviting you to explore the beauty and intricacy of these tiny creatures.
+Welcome to our website dedicated to the Fas<wbr>ci<wbr>na<wbr>ting world of ladybugs! Our featured wallpaper showcases a stunning close-up of a ladybug on a leaf, inviting you to explore the beauty and intricacy of these tiny creatures.
 
 ## About Ladybugs
 
@@ -14,9 +14,9 @@ Aside from their aesthetic appeal, ladybugs play an important role in our ecosys
 
 ## Ladybug Fun Facts
 
-- Ladybugs can fly at speeds up to 37 mph (60 km/h).
-- A single ladybug can eat up to 5,000 aphids in its lifetime.
-- In some cultures, ladybugs are considered symbols of good luck and fortune.
+-   Ladybugs can fly at speeds up to 37 mph (60 km/h).
+-   A single ladybug can eat up to 5,000 aphids in its lifetime.
+-   In some cultures, ladybugs are considered symbols of good luck and fortune.
 
 ## Get Involved
 
@@ -38,7 +38,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Ladybug Spotting
 
-Welcome to our website dedicated to the fascinating world of ladybugs! Our featured wallpaper showcases a stunning close-up of a ladybug on a leaf, inviting you to explore the beauty and intricacy of these tiny creatures.
+Welcome to our website dedicated to the Fas<wbr>ci<wbr>na<wbr>ting world of ladybugs! Our featured wallpaper showcases a stunning close-up of a ladybug on a leaf, inviting you to explore the beauty and intricacy of these tiny creatures.
 
 ## About Ladybugs
 

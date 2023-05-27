@@ -24,7 +24,7 @@ Welcome to our website dedicated to exploring the mysteries of ancient civilizat
 
 ## About Us
 
-Our team consists of experts in various fields, including archaeology, anthropology, linguistics, and artificial intelligence. We use advanced AI technology to analyze artifacts and decipher ancient languages, allowing us to gain a deeper understanding of these fascinating cultures.
+Our team consists of experts in various fields, including archaeology, anthropology, linguistics, and artificial intelligence. We use advanced AI technology to analyze artifacts and decipher ancient languages, allowing us to gain a deeper understanding of these Fas<wbr>ci<wbr>na<wbr>ting cultures.
 
 ## Our Mission
 

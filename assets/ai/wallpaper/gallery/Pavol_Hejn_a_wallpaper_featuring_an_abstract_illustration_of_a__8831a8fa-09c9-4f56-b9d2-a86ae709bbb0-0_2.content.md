@@ -2,7 +2,7 @@
 
 # DataVizPro
 
-Welcome to DataVizPro, your go-to tool for creating stunning data visualizations. Our sleek and modern graphics make it easy to turn complex data into beautiful insights. 
+Welcome to DataVizPro, your go-to tool for creating stunning data visualizations. Our sleek and modern graphics make it easy to turn complex data into beautiful insights.
 
 ## Background
 
@@ -12,10 +12,10 @@ Our platform is designed to help you visualize and understand your data in new w
 
 DataVizPro offers a range of features to help you create stunning visualizations:
 
-- **Easy to Use**: Our platform is intuitive and user-friendly, making it easy for anyone to create professional-grade visualizations.
-- **Customizable**: With a wide range of customization options, you can tailor your visualizations to meet your specific needs.
-- **Collaborative**: Share your visualizations with others and collaborate on projects in real-time.
-- **Secure**: Your data is safe with us. We use industry-standard security measures to protect your information.
+-   **Easy to Use**: Our platform is intuitive and user-friendly, making it easy for anyone to create professional-grade visualizations.
+-   **Customizable**: With a wide range of customization options, you can tailor your visualizations to meet your specific needs.
+-   **Coll<wbr>aborative**: Share your visualizations with others and collaborate on projects in real-time.
+-   **Secure**: Your data is safe with us. We use industry-standard security measures to protect your information.
 
 ## User Stories
 
@@ -29,9 +29,9 @@ Our users have created some amazing visualizations using DataVizPro. Here are ju
 
 Want to learn more about data visualization? Check out these resources:
 
-- [The Power of Data Visualization](#)
-- [10 Tips for Creating Effective Visualizations](#)
-- [Data Visualization Best Practices](#)
+-   [The Power of Data Visualization](#)
+-   [10 Tips for Creating Effective Visualizations](#)
+-   [Data Visualization Best Practices](#)
 
 ## Contact Us
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -64,7 +64,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # DataVizPro - Powerful Data Visualization Tool
 
-Welcome to DataVizPro, your go-to tool for creating stunning data visualizations. Our sleek and modern graphics make it easy to turn complex data into beautiful insights. 
+Welcome to DataVizPro, your go-to tool for creating stunning data visualizations. Our sleek and modern graphics make it easy to turn complex data into beautiful insights.
 
 ## Background
 
@@ -76,7 +76,7 @@ DataVizPro offers a range of features to help you create stunning visualizations
 
 - **Easy to Use**: Our platform is intuitive and user-friendly, making it easy for anyone to create professional-grade visualizations.
 - **Customizable**: With a wide range of customization options, you can tailor your visualizations to meet your specific needs.
-- **Collaborative**: Share your visualizations with others and collaborate on projects in real-time.
+- **Coll<wbr>aborative**: Share your visualizations with others and collaborate on projects in real-time.
 - **Secure**: Your data is safe with us. We use industry-standard security measures to protect your information.
 
 ## User Stories

@@ -2,7 +2,7 @@
 
 # Online Universe Discovery
 
-Welcome to our space website, where you can explore the mysteries of the universe and unleash your inner explorer. Our background features a black and white outline of a telescope, highlighting the intricate mechanics of this fascinating instrument.
+Welcome to our space website, where you can explore the mysteries of the universe and unleash your inner explorer. Our background features a black and white outline of a telescope, highlighting the intricate mechanics of this Fas<wbr>ci<wbr>na<wbr>ting instrument.
 
 ## Explore the Cosmos
 
@@ -12,18 +12,18 @@ Our website provides you with the latest news and information about space explor
 
 Our community is made up of people from all walks of life who share a love for space. Here are some stories from our users:
 
-- "I've always been fascinated by the stars, and this website has given me a new appreciation for the beauty of the universe."
-- "Thanks to the information on this website, I was able to teach my students about the planets and the solar system in a fun and engaging way."
-- "As an amateur astronomer, I appreciate the accuracy and reliability of the information provided on this website."
+-   "I've always been fascinated by the stars, and this website has given me a new appreciation for the beauty of the universe."
+-   "Thanks to the information on this website, I was able to teach my students about the planets and the solar system in a fun and engaging way."
+-   "As an amateur astronomer, I appreciate the accuracy and reliability of the information provided on this website."
 
 ## References
 
 We pride ourselves on providing accurate and reliable information. Here are some of our sources:
 
-- NASA
-- European Space Agency
-- Space.com
-- Astronomy Magazine
+-   NASA
+-   European Space Agency
+-   Space.com
+-   Astronomy Magazine
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -103,11 +103,11 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Unleash Your Inner Explorer with Our Space-Inspired Website
 
-Welcome to our space-inspired website, where you can embark on a journey through the cosmos and discover the wonders of the universe. Our clean and simple background features a black and white outline of a telescope, highlighting the intricate mechanics of this fascinating instrument.
+Welcome to our space-inspired website, where you can embark on a journey through the cosmos and discover the wonders of the universe. Our clean and simple background features a black and white outline of a telescope, highlighting the intricate mechanics of this Fas<wbr>ci<wbr>na<wbr>ting instrument.
 
 ## Explore the Universe
 
-Our website is dedicated to providing you with the latest news and information about space exploration. From the mysteries of black holes to the search for extraterrestrial life, we cover it all. Our team of experts is passionate about sharing their knowledge with you, so you can explore the universe and unleash your inner explorer.
+Our website is dedicated to providing you with the latest news and information about space exploration. From the mysteries of black holes to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we cover it all. Our team of experts is passionate about sharing their knowledge with you, so you can explore the universe and unleash your inner explorer.
 
 ## User Stories
 
@@ -146,7 +146,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Universe with Our Space-Inspired Website
 
-Welcome to our space-inspired website, where you can explore the mysteries of the universe and unleash your inner explorer. Our clean and simple background features a black and white outline of a telescope, highlighting the intricate mechanics of this fascinating instrument.
+Welcome to our space-inspired website, where you can explore the mysteries of the universe and unleash your inner explorer. Our clean and simple background features a black and white outline of a telescope, highlighting the intricate mechanics of this Fas<wbr>ci<wbr>na<wbr>ting instrument.
 
 ## Explore the Cosmos
 
@@ -189,7 +189,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Universe with Our Space Website
 
-Welcome to our space website, where you can explore the mysteries of the universe and unleash your inner explorer. Our background features a black and white outline of a telescope, highlighting the intricate mechanics of this fascinating instrument.
+Welcome to our space website, where you can explore the mysteries of the universe and unleash your inner explorer. Our background features a black and white outline of a telescope, highlighting the intricate mechanics of this Fas<wbr>ci<wbr>na<wbr>ting instrument.
 
 ## Explore the Cosmos
 

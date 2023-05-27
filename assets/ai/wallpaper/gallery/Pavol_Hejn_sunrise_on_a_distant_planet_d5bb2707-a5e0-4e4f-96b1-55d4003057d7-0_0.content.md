@@ -18,10 +18,10 @@ Download our high-resolution wallpaper and bring the wonder of a distant planet 
 
 ## About the Image
 
-Our wallpaper was created by award-winning artist, John Doe, who spent years studying and imagining what a sunrise on a distant planet might look like. His attention to detail and artistic vision have resulted in a truly captivating image that will leave you in awe.
+Our wallpaper was created by award-winning artist, John Doe, who spent years studying and imagining what a sunrise on a distant planet might look like. His attention to detail and artistic vision have resulted in a truly Cap<wbr>ti<wbr>va<wbr>ting image that will leave you in awe.
 
 ## Join Our Community
 
-Join our community of space enthusiasts and share your love for all things extraterrestrial. Connect with fellow fans, share your own artwork and photos, and stay up-to-date on the latest news and discoveries in the world of astronomy.
+Join our community of space enthusiasts and share your love for all things Ex<wbr>tra<wbr>terre<wbr>strial. Connect with fellow fans, share your own artwork and photos, and stay up-to-date on the latest news and discoveries in the world of astronomy.
 
 Don't miss out on this opportunity to explore the wonders of the universe from the comfort of your own home. Download our "Sunrise on a Distant Planet" wallpaper today and embark on a journey to the stars.

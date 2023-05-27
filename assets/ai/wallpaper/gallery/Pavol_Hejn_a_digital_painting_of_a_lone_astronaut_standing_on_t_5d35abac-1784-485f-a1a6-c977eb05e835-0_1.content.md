@@ -12,7 +12,7 @@ Our website is all about exploring the cosmos. We are passionate about learning 
 
 Here are some stories from people who have used our website:
 
-> "I love visiting this website! It's full of fascinating information about space and always leaves me feeling inspired and curious." - Sarah
+> "I love visiting this website! It's full of Fas<wbr>ci<wbr>na<wbr>ting information about space and always leaves me feeling inspired and curious." - Sarah
 
 > "This website is the perfect resource for anyone who wants to learn more about the cosmos. I've learned so much since I started exploring it!" - John
 
@@ -22,9 +22,9 @@ Here are some stories from people who have used our website:
 
 If you want to learn more about space exploration, here are some resources we recommend:
 
-- [NASA](#nasa)
-- [SpaceX](#spacex)
-- [ESA](#esa)
+-   [NASA](#nasa)
+-   [SpaceX](#spacex)
+-   [ESA](#esa)
 
 ## Contact Us
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -135,7 +135,7 @@ Our website is all about exploring the cosmos. We are passionate about learning 
 
 Here are some stories from people who have used our website:
 
-> "I love visiting this website! It's full of fascinating information about space and always leaves me feeling inspired and curious." - Sarah
+> "I love visiting this website! It's full of Fas<wbr>ci<wbr>na<wbr>ting information about space and always leaves me feeling inspired and curious." - Sarah
 
 > "This website is the perfect resource for anyone who wants to learn more about the cosmos. I've learned so much since I started exploring it!" - John
 

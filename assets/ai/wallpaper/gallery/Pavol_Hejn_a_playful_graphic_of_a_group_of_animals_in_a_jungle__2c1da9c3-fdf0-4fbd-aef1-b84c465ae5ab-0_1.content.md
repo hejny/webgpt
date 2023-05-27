@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -30,9 +30,9 @@ At Jungle Safari, we believe that learning should be fun. That's why we have cre
 
 Our website is packed with exciting content that is sure to keep your child engaged. Here are some of the things you can expect to find on our site:
 
-- **Articles**: Our team of experts has written informative articles on a wide range of topics, from the life cycle of butterflies to the behavior of lions.
-- **Videos**: We have a collection of high-quality videos that showcase the beauty of nature and the diversity of wildlife.
-- **Interactive Games**: Our interactive games are designed to help children learn about nature in a fun and engaging way. From matching games to quizzes, we have something for every age group.
+-   **Articles**: Our team of experts has written informative articles on a wide range of topics, from the life cycle of But<wbr>ter<wbr>flies to the behavior of lions.
+-   **Videos**: We have a collection of high-quality videos that showcase the beauty of nature and the diversity of wildlife.
+-   **Interactive Games**: Our interactive games are designed to help children learn about nature in a fun and engaging way. From matching games to quizzes, we have something for every age group.
 
 ## User Stories
 
@@ -46,9 +46,9 @@ Don't just take our word for it! Here are some stories from parents who have use
 
 If you want to learn more about the topics covered on our website, we have compiled a list of references that you can use:
 
-- National Geographic Kids
-- Smithsonian's National Zoo & Conservation Biology Institute
-- World Wildlife Fund
+-   National Geographic Kids
+-   Smithsonian's National Zoo & Conservation Biology Institute
+-   World Wildlife Fund
 
 ## Contact Us
 

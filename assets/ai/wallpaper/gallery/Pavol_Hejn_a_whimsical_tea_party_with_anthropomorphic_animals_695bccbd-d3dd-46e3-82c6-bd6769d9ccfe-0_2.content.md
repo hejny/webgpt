@@ -2,7 +2,7 @@
 
 # Animal Tea Party
 
-Step into a world of enchantment and joy with our charming anthropomorphic animal friends. Our whimsical theme sets the scene for a delightful tea party where anything is possible.
+Step into a world of enchantment and joy with our charming An<wbr>thro<wbr>po<wbr>mor<wbr>phic animal friends. Our whimsical theme sets the scene for a delightful tea party where anything is possible.
 
 ## About the Theme
 
@@ -20,7 +20,7 @@ Ready to bring some magic into your life? Browse our selection of whimsical anim
 
 Write me markdown content of website with wallpaper:
 
-"A whimsical tea party with anthropomorphic animals"
+"A whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -30,7 +30,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Welcome to our Whimsical Tea Party!
 
-Step into a world of wonder and delight with our anthropomorphic animal friends. Our wallpaper sets the scene for a magical tea party where anything is possible.
+Step into a world of wonder and delight with our An<wbr>thro<wbr>po<wbr>mor<wbr>phic animal friends. Our wallpaper sets the scene for a magical tea party where anything is possible.
 
 ## About the Wallpaper
 
@@ -56,7 +56,7 @@ Heading is too long, rewrite whole content.
 
 # Whimsical Animal Wallpaper for Your Home
 
-Transform your space into a whimsical wonderland with our charming animal wallpaper. Featuring anthropomorphic animals dressed in their finest attire, this wallpaper creates a dreamy atmosphere that will delight adults and children alike.
+Transform your space into a whimsical wonderland with our charming animal wallpaper. Featuring An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals dressed in their finest attire, this wallpaper creates a dreamy atmosphere that will delight adults and children alike.
 
 ## About the Wallpaper
 
@@ -80,9 +80,9 @@ Heading should not include word "wallpaper". The website should not be about the
 ---
 
 
-# Welcome to Our Whimsical Tea Party with Anthropomorphic Animals
+# Welcome to Our Whimsical Tea Party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic Animals
 
-Step into a world of wonder and delight with our charming anthropomorphic animal friends. Our whimsical background sets the scene for a magical tea party where anything is possible.
+Step into a world of wonder and delight with our charming An<wbr>thro<wbr>po<wbr>mor<wbr>phic animal friends. Our whimsical background sets the scene for a magical tea party where anything is possible.
 
 ## About the Theme
 
@@ -106,9 +106,9 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Join Our Whimsical Tea Party with Anthropomorphic Animals
+# Join Our Whimsical Tea Party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic Animals
 
-Step into a world of enchantment and joy with our charming anthropomorphic animal friends. Our whimsical theme sets the scene for a delightful tea party where anything is possible.
+Step into a world of enchantment and joy with our charming An<wbr>thro<wbr>po<wbr>mor<wbr>phic animal friends. Our whimsical theme sets the scene for a delightful tea party where anything is possible.
 
 ## About the Theme
 

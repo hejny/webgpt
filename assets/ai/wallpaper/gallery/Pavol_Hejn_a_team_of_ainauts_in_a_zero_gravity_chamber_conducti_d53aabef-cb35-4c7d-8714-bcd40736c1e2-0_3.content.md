@@ -36,4 +36,4 @@ As AI continues to advance, it will undoubtedly have a significant impact on hum
 
 ---
 
-Join us on this exciting journey as we explore the fascinating world of Ainautes and their groundbreaking research into the impact of AI on human physiology.
+Join us on this exciting journey as we explore the Fas<wbr>ci<wbr>na<wbr>ting world of Ainautes and their groundbreaking research into the impact of AI on human physiology.

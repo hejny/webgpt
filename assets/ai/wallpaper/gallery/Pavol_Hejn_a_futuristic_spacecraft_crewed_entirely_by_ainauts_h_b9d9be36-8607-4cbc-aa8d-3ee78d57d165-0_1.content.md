@@ -2,7 +2,7 @@
 
 # Future Space Travel
 
-Welcome to our website dedicated to the exploration and advancement of space travel. Our captivating background features a futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds. This image is just a glimpse of the exciting possibilities that lie ahead in our journey beyond our planet.
+Welcome to our website dedicated to the exploration and advancement of space travel. Our Cap<wbr>ti<wbr>va<wbr>ting background features a futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds. This image is just a glimpse of the exciting possibilities that lie ahead in our journey beyond our planet.
 
 ## About Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -57,7 +57,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Discover the Future of Space Travel with Our Ainaute Crewed Spaceship Wallpaper
 
-Welcome to our website dedicated to exploring the possibilities of space travel. Our wallpaper featuring a futuristic spacecraft crewed entirely by Ainautes is just the beginning of what we have to offer. 
+Welcome to our website dedicated to exploring the possibilities of space travel. Our wallpaper featuring a futuristic spacecraft crewed entirely by Ainautes is just the beginning of what we have to offer.
 
 ## About Us
 
@@ -97,7 +97,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Future of Space Travel with Ainaute Crewed Spaceships
 
-Welcome to our website dedicated to the exploration and advancement of space travel. Our captivating background features a futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds. This image is just a glimpse of the exciting possibilities that lie ahead in our journey beyond our planet.
+Welcome to our website dedicated to the exploration and advancement of space travel. Our Cap<wbr>ti<wbr>va<wbr>ting background features a futuristic spacecraft crewed entirely by Ainautes, hurtling through space at incredible speeds. This image is just a glimpse of the exciting possibilities that lie ahead in our journey beyond our planet.
 
 ## About Us
 

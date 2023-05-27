@@ -48,7 +48,7 @@ For those interested in learning more about the science behind our mission, we r
 
 -   **"The Abandoned Research Facility: A History,"** an in-depth report by journalist John Doe that chronicles the facility's origins and eventual abandonment.
 
--   **"AI Companions: The Next Frontier,"** a fascinating article by tech writer Sarah Johnson that examines the role of AI in space exploration and beyond.
+-   **"AI Companions: The Next Frontier,"** a Fas<wbr>ci<wbr>na<wbr>ting article by tech writer Sarah Johnson that examines the role of AI in space exploration and beyond.
 
 ## Contact Us
 

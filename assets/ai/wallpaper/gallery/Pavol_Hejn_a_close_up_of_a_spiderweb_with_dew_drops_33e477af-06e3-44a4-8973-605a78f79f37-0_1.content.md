@@ -4,25 +4,25 @@
 
 Welcome to our website, where we aim to inspire and educate visitors about the wonders of the natural world. As part of our mission to connect people with nature, we have chosen a stunning background image featuring a close-up of a spiderweb with dew drops.
 
-## The Fascinating World of Nature
+## The Fas<wbr>ci<wbr>na<wbr>ting World of Nature
 
-Our website is dedicated to exploring the fascinating world of nature, from the smallest insects to the largest mammals. We offer a range of resources, including articles, videos, and photographs, that cover a wide variety of topics related to nature and the environment. Whether you're interested in wildlife, conservation, or sustainability, you'll find plenty of information and inspiration on our site.
+Our website is dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of nature, from the smallest insects to the largest mammals. We offer a range of resources, including articles, videos, and photographs, that cover a wide variety of topics related to nature and the environment. Whether you're interested in wildlife, conservation, or sustainability, you'll find plenty of information and inspiration on our site.
 
 ## User Stories
 
 Here are some stories from our users who have been inspired by our website:
 
-- "I've always loved spending time outdoors, but your website has helped me appreciate the beauty and complexity of nature even more."
-- "As a biology student, I find your site to be an invaluable resource for learning about different species and ecosystems."
-- "The spiderweb background on your site is so beautiful and mesmerizing. It really sets the tone for exploring the wonders of nature."
+-   "I've always loved spending time outdoors, but your website has helped me appreciate the beauty and complexity of nature even more."
+-   "As a biology student, I find your site to be an invaluable resource for learning about different species and ecosystems."
+-   "The spiderweb background on your site is so beautiful and mesmerizing. It really sets the tone for exploring the wonders of nature."
 
 ## References
 
 If you're interested in learning more about the natural world, we recommend checking out the following resources:
 
-- [National Geographic](#)
-- [BBC Earth](#)
-- [Nature Conservancy](#)
+-   [National Geographic](#)
+-   [BBC Earth](#)
+-   [Nature Conservancy](#)
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -99,9 +99,9 @@ Heading should not include word "wallpaper". The website should not be about the
 
 Welcome to our website, where we aim to inspire and educate visitors about the wonders of the natural world. As part of our mission to connect people with nature, we have chosen a stunning background image featuring a close-up of a spiderweb with dew drops.
 
-## The Fascinating World of Nature
+## The Fas<wbr>ci<wbr>na<wbr>ting World of Nature
 
-Our website is dedicated to exploring the fascinating world of nature, from the smallest insects to the largest mammals. We offer a range of resources, including articles, videos, and photographs, that cover a wide variety of topics related to nature and the environment. Whether you're interested in wildlife, conservation, or sustainability, you'll find plenty of information and inspiration on our site.
+Our website is dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of nature, from the smallest insects to the largest mammals. We offer a range of resources, including articles, videos, and photographs, that cover a wide variety of topics related to nature and the environment. Whether you're interested in wildlife, conservation, or sustainability, you'll find plenty of information and inspiration on our site.
 
 ## User Stories
 

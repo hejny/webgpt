@@ -6,7 +6,7 @@ Welcome to NeuroLab, your ultimate digital destination for discovering the wonde
 
 ## Wallpaper Background
 
-As you navigate through our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a background of complementary colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
+As you navigate through our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
 
 ## Research Resources
 
@@ -20,7 +20,7 @@ For students and educators, NeuroLab offers a wealth of educational opportunitie
 
 But don't just take our word for it - here are some stories from our users:
 
-> "NeuroLab has been an essential resource for my research on Parkinson's disease. The database is comprehensive and easy to search, and the software tools have made data analysis a breeze." - Dr. Jane Kim, Neurologist
+> "NeuroLab has been an essential resource for my research on Parkinson's disease. The database is Com<wbr>pre<wbr>hen<wbr>sive and easy to search, and the software tools have made data analysis a breeze." - Dr. Jane Kim, Neurologist
 
 > "The virtual labs on NeuroLab have been a fantastic addition to my classroom. My students love being able to interact with brain models and learn about neuroscience in a fun and engaging way." - Mr. David Chen, Science Teacher
 
@@ -32,22 +32,22 @@ If you have any questions or feedback about NeuroLab, we'd love to hear from you
 
 For more information on the research and resources available on NeuroLab, check out these references:
 
-- Smith, J. et al. (2021). "A Comprehensive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
-- NeuroLab Software Tools. Retrieved from [https://neurolab.com/tools](#tools)
-- Virtual Labs on NeuroLab. Retrieved from [https://neurolab.com/labs](#labs)
+-   Smith, J. et al. (2021). "A Com<wbr>pre<wbr>hen<wbr>sive Database of Human Brain Imaging Studies." _Journal of Neuroscience Research_, 99(4), 567-578.
+-   NeuroLab Software Tools. Retrieved from [https://neurolab.com/tools](#tools)
+-   Virtual Labs on NeuroLab. Retrieved from [https://neurolab.com/labs](#labs)
 
 <!--
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
+"A wallpaper with a simple graphic of a neural network, against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -67,7 +67,7 @@ Welcome to NeuroLab, a digital playground for exploring the mysteries of the hum
 
 ## Wallpaper Background
 
-As you navigate through our site, you'll notice a wallpaper with a simple graphic of a neural network against a background of complementary colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain. 
+As you navigate through our site, you'll notice a wallpaper with a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
 
 ## Resources for Research
 
@@ -81,19 +81,19 @@ For students and educators, NeuroLab offers a wealth of educational opportunitie
 
 Don't just take our word for it - here are some stories from our users:
 
-> "I've been using NeuroLab for my research on Alzheimer's disease, and it's been an invaluable resource. The database is comprehensive and easy to search, and the software tools have made data analysis a breeze." - Dr. Sarah Johnson, Neuroscientist
+> "I've been using NeuroLab for my research on Alzheimer's disease, and it's been an invaluable resource. The database is Com<wbr>pre<wbr>hen<wbr>sive and easy to search, and the software tools have made data analysis a breeze." - Dr. Sarah Johnson, Neuroscientist
 
 > "As a high school teacher, I'm always looking for new ways to engage my students in science. The virtual labs on NeuroLab have been a hit - my students love being able to explore the brain in 3D!" - Ms. Maria Rodriguez, Science Teacher
 
 ## Contact Us
 
-If you have any questions or feedback about NeuroLab, we'd love to hear from you. Please feel free to reach out to us at [contact@neurolab.com](#contact). 
+If you have any questions or feedback about NeuroLab, we'd love to hear from you. Please feel free to reach out to us at [contact@neurolab.com](#contact).
 
 ## References
 
 For more information on the research and resources available on NeuroLab, check out these references:
 
-- Smith, J. et al. (2021). "A Comprehensive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
+- Smith, J. et al. (2021). "A Com<wbr>pre<wbr>hen<wbr>sive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
 - NeuroLab Software Tools. Retrieved from [https://neurolab.com/tools](#tools)
 - Virtual Labs on NeuroLab. Retrieved from [https://neurolab.com/labs](#labs)
 
@@ -113,7 +113,7 @@ Welcome to NeuroLab, your digital playground for exploring the wonders of the hu
 
 ## Wallpaper Background
 
-As you navigate through our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a complementary color scheme. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
+As you navigate through our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a Com<wbr>ple<wbr>men<wbr>ta<wbr>ry color scheme. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
 
 ## Research Resources
 
@@ -127,7 +127,7 @@ For students and educators, NeuroLab offers a wealth of educational opportunitie
 
 But don't just take our word for it - here are some stories from our users:
 
-> "NeuroLab has been an invaluable resource for my research on Alzheimer's disease. The database is comprehensive and easy to search, and the software tools have made data analysis a breeze." - Dr. Sarah Johnson, Neuroscientist
+> "NeuroLab has been an invaluable resource for my research on Alzheimer's disease. The database is Com<wbr>pre<wbr>hen<wbr>sive and easy to search, and the software tools have made data analysis a breeze." - Dr. Sarah Johnson, Neuroscientist
 
 > "The virtual labs on NeuroLab have been a hit with my high school students. They love being able to explore the brain in 3D!" - Ms. Maria Rodriguez, Science Teacher
 
@@ -139,7 +139,7 @@ If you have any questions or feedback about NeuroLab, we'd love to hear from you
 
 For more information on the research and resources available on NeuroLab, check out these references:
 
-- Smith, J. et al. (2021). "A Comprehensive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
+- Smith, J. et al. (2021). "A Com<wbr>pre<wbr>hen<wbr>sive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
 - NeuroLab Software Tools. Retrieved from [https://neurolab.com/tools](#tools)
 - Virtual Labs on NeuroLab. Retrieved from [https://neurolab.com/labs](#labs)
 
@@ -159,7 +159,7 @@ Welcome to NeuroLab, your ultimate digital destination for exploring the power a
 
 ## Wallpaper Background
 
-As you explore our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a background of complementary colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
+As you explore our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
 
 ## Research Resources
 
@@ -173,7 +173,7 @@ For students and educators, NeuroLab offers a wealth of educational opportunitie
 
 But don't just take our word for it - here are some stories from our users:
 
-> "NeuroLab has been an essential resource for my research on traumatic brain injury. The database is comprehensive and easy to search, and the software tools have made data analysis a breeze." - Dr. Michael Lee, Neurologist
+> "NeuroLab has been an essential resource for my research on traumatic brain injury. The database is Com<wbr>pre<wbr>hen<wbr>sive and easy to search, and the software tools have made data analysis a breeze." - Dr. Michael Lee, Neurologist
 
 > "The virtual labs on NeuroLab have been a game-changer for my students. They love being able to explore the brain in 3D!" - Ms. Emily Chen, Science Teacher
 
@@ -185,7 +185,7 @@ If you have any questions or feedback about NeuroLab, we'd love to hear from you
 
 For more information on the research and resources available on NeuroLab, check out these references:
 
-- Smith, J. et al. (2021). "A Comprehensive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
+- Smith, J. et al. (2021). "A Com<wbr>pre<wbr>hen<wbr>sive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
 - NeuroLab Software Tools. Retrieved from [https://neurolab.com/tools](#tools)
 - Virtual Labs on NeuroLab. Retrieved from [https://neurolab.com/labs](#labs)
 
@@ -205,7 +205,7 @@ Welcome to NeuroLab, your ultimate digital destination for discovering the wonde
 
 ## Wallpaper Background
 
-As you navigate through our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a background of complementary colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
+As you navigate through our site, you'll notice a wallpaper featuring a simple graphic of a neural network set against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This design serves as a visual representation of the complex connections and pathways that make up the human brain.
 
 ## Research Resources
 
@@ -219,7 +219,7 @@ For students and educators, NeuroLab offers a wealth of educational opportunitie
 
 But don't just take our word for it - here are some stories from our users:
 
-> "NeuroLab has been an essential resource for my research on Parkinson's disease. The database is comprehensive and easy to search, and the software tools have made data analysis a breeze." - Dr. Jane Kim, Neurologist
+> "NeuroLab has been an essential resource for my research on Parkinson's disease. The database is Com<wbr>pre<wbr>hen<wbr>sive and easy to search, and the software tools have made data analysis a breeze." - Dr. Jane Kim, Neurologist
 
 > "The virtual labs on NeuroLab have been a fantastic addition to my classroom. My students love being able to interact with brain models and learn about neuroscience in a fun and engaging way." - Mr. David Chen, Science Teacher
 
@@ -231,7 +231,7 @@ If you have any questions or feedback about NeuroLab, we'd love to hear from you
 
 For more information on the research and resources available on NeuroLab, check out these references:
 
-- Smith, J. et al. (2021). "A Comprehensive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
+- Smith, J. et al. (2021). "A Com<wbr>pre<wbr>hen<wbr>sive Database of Human Brain Imaging Studies." *Journal of Neuroscience Research*, 99(4), 567-578.
 - NeuroLab Software Tools. Retrieved from [https://neurolab.com/tools](#tools)
 - Virtual Labs on NeuroLab. Retrieved from [https://neurolab.com/labs](#labs)
 

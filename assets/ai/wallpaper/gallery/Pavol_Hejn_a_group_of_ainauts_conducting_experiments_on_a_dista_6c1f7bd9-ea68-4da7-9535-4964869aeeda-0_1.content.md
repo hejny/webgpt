@@ -20,7 +20,7 @@ Welcome to our website featuring a stunning wallpaper of a group of Ainautes con
 
 ## About the Wallpaper
 
-The wallpaper depicts a scene from a distant moon where a team of Ainautes are performing experiments in an alien environment. The massive gas giant in the background adds to the awe-inspiring view of this extraterrestrial world.
+The wallpaper depicts a scene from a distant moon where a team of Ainautes are performing experiments in an alien environment. The massive gas giant in the background adds to the awe-inspiring view of this Ex<wbr>tra<wbr>terre<wbr>strial world.
 
 ## Our Mission
 

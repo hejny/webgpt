@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A whimsical tea party with anthropomorphic animals"
+"A whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals"
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,15 +16,15 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Animal Tea Party
 
-Welcome to our charming website featuring a delightful wallpaper design of a whimsical tea party with anthropomorphic animals. This playful and imaginative scene is perfect for those who love all things cute and quirky.
+Welcome to our charming website featuring a delightful wallpaper design of a whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals. This playful and imaginative scene is perfect for those who love all things cute and quirky.
 
 ## Wallpaper Details
 
 Our wallpaper features a variety of adorable animals, including rabbits, cats, mice, and birds, all dressed in their finest attire and enjoying a lovely tea party together. The background is a soft pastel color, adding to the dreamy and whimsical feel of the design.
 
-- Design: Whimsical Tea Party with Anthropomorphic Animals
-- Color Scheme: Soft Pastels
-- Animal Characters: Rabbits, Cats, Mice, Birds
+-   Design: Whimsical Tea Party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic Animals
+-   Color Scheme: Soft Pastels
+-   Animal Characters: Rabbits, Cats, Mice, Birds
 
 ## Perfect for Any Room
 
@@ -38,4 +38,4 @@ Our wallpaper is easy to install and comes with detailed instructions to help yo
 
 ---
 
-So why wait? Add a touch of whimsy and charm to your home with our delightful wallpaper featuring a whimsical tea party with anthropomorphic animals. Order now and start creating your dream space today!
+So why wait? Add a touch of whimsy and charm to your home with our delightful wallpaper featuring a whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals. Order now and start creating your dream space today!

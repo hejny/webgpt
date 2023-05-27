@@ -10,17 +10,17 @@ Our website is dedicated to exploring the mysteries of the ocean and sharing our
 
 ### User Stories
 
-- "As a marine biologist, I'm always fascinated by the incredible creatures that live in the deep sea. This website helps me stay up-to-date on the latest research and discoveries." - Jane, Marine Biologist
-- "I love using this background when I'm working on my ocean-themed art projects. It inspires me to explore new ideas and push the boundaries of my creativity." - Mark, Artist
+-   "As a marine biologist, I'm always fascinated by the incredible creatures that live in the deep sea. This website helps me stay up-to-date on the latest research and discoveries." - Jane, Marine Biologist
+-   "I love using this background when I'm working on my ocean-themed art projects. It inspires me to explore new ideas and push the boundaries of my creativity." - Mark, Artist
 
 ## Resources for Ocean Lovers
 
 Looking to learn more about the ocean and its inhabitants? Check out our resources section for articles, videos, and podcasts on a variety of topics, including:
 
-- The science of oceanography
-- Marine conservation efforts
-- Profiles of fascinating ocean creatures
-- Tips for responsible ocean tourism
+-   The science of oceanography
+-   Marine conservation efforts
+-   Profiles of Fas<wbr>ci<wbr>na<wbr>ting ocean creatures
+-   Tips for responsible ocean tourism
 
 ## Connect with Us
 
@@ -28,9 +28,9 @@ Have questions or comments about our website or the ocean in general? We'd love 
 
 ### Follow Us
 
-- Twitter: @DeepSeaExplorers
-- Instagram: @Deep_Sea_Exploration
-- Facebook: /deepseaexploration
+-   Twitter: @DeepSeaExplorers
+-   Instagram: @Deep_Sea_Exploration
+-   Facebook: /deepseaexploration
 
 ---
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -80,7 +80,7 @@ Looking to learn more about the ocean and its inhabitants? Check out our resourc
 
 - The science of oceanography
 - Marine conservation efforts
-- Profiles of fascinating ocean creatures
+- Profiles of Fas<wbr>ci<wbr>na<wbr>ting ocean creatures
 - Tips for responsible ocean tourism
 
 ## Connect with Us
@@ -126,7 +126,7 @@ Looking to learn more about the ocean and its inhabitants? Check out our resourc
 
 - The science of oceanography
 - Marine conservation efforts
-- Profiles of fascinating ocean creatures
+- Profiles of Fas<wbr>ci<wbr>na<wbr>ting ocean creatures
 - Tips for responsible ocean tourism
 
 ## Connect with Us

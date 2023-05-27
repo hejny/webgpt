@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Galactic Wonders
 
-Welcome to Galactic Wonders, your go-to source for all things related to the cosmos! Our website is designed to ignite your curiosity and deepen your understanding of the universe. 
+Welcome to Galactic Wonders, your go-to source for all things related to the cosmos! Our website is designed to ignite your curiosity and deepen your understanding of the universe.
 
 ## Wallpaper
 
@@ -26,9 +26,9 @@ Our vibrant galaxy wallpaper features swirling colors and stars, inviting you to
 
 Stay up-to-date with the latest discoveries and insights into the universe with our regularly updated articles. Here are some of our recent favorites:
 
-- **The Search for Extraterrestrial Life:** Are we alone in the universe? Join us as we explore the latest efforts to find signs of life beyond Earth.
-- **The Mysteries of Black Holes:** What happens when a star dies? Learn about the fascinating and mysterious world of black holes.
-- **Exploring the Outer Planets:** Take a tour of the gas giants in our solar system and discover their unique features and characteristics.
+-   **The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life:** Are we alone in the universe? Join us as we explore the latest efforts to find signs of life beyond Earth.
+-   **The Mysteries of Black Holes:** What happens when a star dies? Learn about the Fas<wbr>ci<wbr>na<wbr>ting and mysterious world of black holes.
+-   **Exploring the Outer Planets:** Take a tour of the gas giants in our solar system and discover their unique features and characteristics.
 
 ## Space News
 

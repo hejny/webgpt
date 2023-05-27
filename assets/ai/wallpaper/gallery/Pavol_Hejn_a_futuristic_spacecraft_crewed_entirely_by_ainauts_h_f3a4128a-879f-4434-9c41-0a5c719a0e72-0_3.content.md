@@ -34,7 +34,7 @@ At AI Spaceship, we are committed to advancing this technology and pushing the b
 -   Advanced sensors and imaging systems for data collection and analysis
 -   Onboard machine learning algorithms for adaptive decision-making
 -   High-speed propulsion systems for rapid travel across vast distances
--   Robust communication systems for real-time transmission of data and commands
+-   Robust Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion systems for real-time transmission of data and commands
 -   Self-repairing and self-maintaining systems for extended mission duration
 
 ## User Stories

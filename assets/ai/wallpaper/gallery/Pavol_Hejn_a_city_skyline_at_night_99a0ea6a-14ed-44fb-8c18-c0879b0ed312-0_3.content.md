@@ -2,7 +2,7 @@
 
 # City Nights Energy
 
-Welcome to City Nights, a website dedicated to inspiring creativity and productivity through captivating digital backgrounds. Our featured image is a stunning city skyline at night, perfect for those who want to feel the thrill of the city lights without leaving their desk.
+Welcome to City Nights, a website dedicated to inspiring creativity and productivity through Cap<wbr>ti<wbr>va<wbr>ting digital backgrounds. Our featured image is a stunning city skyline at night, perfect for those who want to feel the thrill of the city lights without leaving their desk.
 
 ## About the Image
 
@@ -24,9 +24,9 @@ Here are some user stories from people who have used our city skyline image:
 
 Looking for more ways to bring the city into your life? Check out these related articles:
 
-- "5 Tips for Creating a City-Inspired Home Office"
-- "The Best City Skylines to Visit Around the World"
-- "10 Urban Adventures to Try in Your Own City"
+-   "5 Tips for Creating a City-Inspired Home Office"
+-   "The Best City Skylines to Visit Around the World"
+-   "10 Urban Adventures to Try in Your Own City"
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # City Nights: Bring the Energy of the City Skyline to Your Digital Space
 
-Welcome to City Nights, a website dedicated to inspiring creativity and productivity through captivating digital backgrounds. Our featured image is a stunning city skyline at night, perfect for those who want to feel the thrill of the city lights without leaving their desk.
+Welcome to City Nights, a website dedicated to inspiring creativity and productivity through Cap<wbr>ti<wbr>va<wbr>ting digital backgrounds. Our featured image is a stunning city skyline at night, perfect for those who want to feel the thrill of the city lights without leaving their desk.
 
 ## About the Image
 

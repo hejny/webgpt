@@ -10,7 +10,7 @@ Our website features a stunning wallpaper background that captures the awe-inspi
 
 ## Latest News and Discoveries
 
-Stay up-to-date with the latest news and discoveries in space exploration. Our team of experts scours the internet for the most interesting and relevant articles and presents them to you in an easy-to-read format. From the latest missions to Mars to the search for extraterrestrial life, we've got you covered.
+Stay up-to-date with the latest news and discoveries in space exploration. Our team of experts scours the internet for the most interesting and relevant articles and presents them to you in an easy-to-read format. From the latest missions to Mars to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we've got you covered.
 
 ## User Stories
 
@@ -63,7 +63,7 @@ Our website features a stunning wallpaper background that captures the awe-inspi
 
 ## Latest News and Discoveries
 
-Stay up-to-date with the latest news and discoveries in space exploration. Our team of experts scours the internet for the most interesting and relevant articles and presents them to you in an easy-to-read format. From the latest missions to Mars to the search for extraterrestrial life, we've got you covered.
+Stay up-to-date with the latest news and discoveries in space exploration. Our team of experts scours the internet for the most interesting and relevant articles and presents them to you in an easy-to-read format. From the latest missions to Mars to the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we've got you covered.
 
 ## User Stories
 

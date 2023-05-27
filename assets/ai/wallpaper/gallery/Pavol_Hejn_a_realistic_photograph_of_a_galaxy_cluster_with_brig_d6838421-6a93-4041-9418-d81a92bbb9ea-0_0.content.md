@@ -6,7 +6,7 @@ Welcome to our website, where we invite you to embark on a journey through the c
 
 ## Discover the Universe
 
-Our website is dedicated to all things space-related, from the latest scientific discoveries to the most awe-inspiring images captured by telescopes and probes. Whether you're an astronomy enthusiast or simply curious about the mysteries of the universe, you'll find plenty of fascinating content here.
+Our website is dedicated to all things space-related, from the latest scientific discoveries to the most awe-inspiring images captured by telescopes and probes. Whether you're an astronomy enthusiast or simply curious about the mysteries of the universe, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content here.
 
 ## Learn from the Experts
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ Welcome to our website, where we celebrate the beauty and mystery of the cosmos.
 
 ## Discover Our Universe
 
-Our website is dedicated to all things space-related, from the latest scientific discoveries to the most awe-inspiring images captured by telescopes and probes. Whether you're an astronomy enthusiast or simply curious about the mysteries of the universe, you'll find plenty of fascinating content here.
+Our website is dedicated to all things space-related, from the latest scientific discoveries to the most awe-inspiring images captured by telescopes and probes. Whether you're an astronomy enthusiast or simply curious about the mysteries of the universe, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content here.
 
 ## Learn from the Experts
 
@@ -101,7 +101,7 @@ Welcome to our website, where we invite you to embark on a journey through the c
 
 ## Discover the Universe
 
-Our website is dedicated to all things space-related, from the latest scientific discoveries to the most awe-inspiring images captured by telescopes and probes. Whether you're an astronomy enthusiast or simply curious about the mysteries of the universe, you'll find plenty of fascinating content here.
+Our website is dedicated to all things space-related, from the latest scientific discoveries to the most awe-inspiring images captured by telescopes and probes. Whether you're an astronomy enthusiast or simply curious about the mysteries of the universe, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content here.
 
 ## Learn from the Experts
 

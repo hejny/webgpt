@@ -20,7 +20,7 @@ Don't just take our word for it – read about the experiences of other traveler
 
 ## References
 
-Our website also features a comprehensive list of references for further reading. From scientific journals to science fiction novels, we've compiled a list of resources that will help you deepen your understanding of the worlds you'll be exploring.
+Our website also features a Com<wbr>pre<wbr>hen<wbr>sive list of references for further reading. From scientific journals to science fiction novels, we've compiled a list of resources that will help you deepen your understanding of the worlds you'll be exploring.
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ Don't just take our word for it – read about the experiences of other traveler
 
 ## References
 
-Our website also features a comprehensive list of references for further reading. From scientific journals to science fiction novels, we've compiled a list of resources that will help you deepen your understanding of the worlds you'll be exploring.
+Our website also features a Com<wbr>pre<wbr>hen<wbr>sive list of references for further reading. From scientific journals to science fiction novels, we've compiled a list of resources that will help you deepen your understanding of the worlds you'll be exploring.
 
 ## Contact Us
 

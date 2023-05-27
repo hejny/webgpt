@@ -42,7 +42,7 @@ Here are some stories from people who have been inspired by our website:
 
 Our website features a wide range of articles on topics related to space exploration. Here are some of our most popular ones:
 
--   **The Search for Extraterrestrial Life:** Are we alone in the universe? This article explores the latest research on the search for life beyond Earth.
+-   **The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life:** Are we alone in the universe? This article explores the latest research on the search for life beyond Earth.
 
 -   **Exploring the Outer Planets:** What lies beyond the asteroid belt? This article takes a look at the outer planets of our solar system and the challenges of exploring them.
 

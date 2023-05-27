@@ -4,15 +4,15 @@
 
 Welcome to Jungle World, a website that offers a fun and educational experience for children. Our playful graphic of a group of animals in a jungle sets the tone for an exciting adventure that will spark your child's curiosity.
 
-At Jungle World, we believe that learning should be enjoyable. That's why we've created a website that combines interactive games, engaging stories, and fascinating facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will inspire children of all ages.
+At Jungle World, we believe that learning should be enjoyable. That's why we've created a website that combines interactive games, engaging stories, and Fas<wbr>ci<wbr>na<wbr>ting facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will inspire children of all ages.
 
 ## Our Programs
 
 We offer a range of programs designed to cater to different age groups and interests. From preschoolers to teenagers, there's something for everyone at Jungle World. Our programs include:
 
-- **Jungle Adventures**: An interactive game that takes children on a journey through the jungle, where they'll encounter exotic animals and learn about their habitats and behaviors.
-- **Wild Stories**: A collection of short stories featuring animals from the jungle, written by our team of talented writers. These stories are perfect for bedtime reading or classroom discussions.
-- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with fascinating information.
+-   **Jungle Adventures**: An interactive game that takes children on a journey through the jungle, where they'll encounter exotic animals and learn about their habitats and behaviors.
+-   **Wild Stories**: A collection of short stories featuring animals from the jungle, written by our team of talented writers. These stories are perfect for bedtime reading or classroom discussions.
+-   **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with Fas<wbr>ci<wbr>na<wbr>ting information.
 
 ## User Stories
 
@@ -26,17 +26,17 @@ Don't just take our word for it - here are some stories from parents and teacher
 
 Want to learn more about the natural world? Check out these resources:
 
-- [National Geographic Kids](#)
-- [Smithsonian's National Zoo & Conservation Biology Institute](#)
-- [World Wildlife Fund](#)
+-   [National Geographic Kids](#)
+-   [Smithsonian's National Zoo & Conservation Biology Institute](#)
+-   [World Wildlife Fund](#)
 
 ## Contact Us
 
 Have a question or comment? We'd love to hear from you! You can reach us at:
 
-- Email: info@jungleworld.com
-- Phone: 1-800-JUNGLE-WORLD
-- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news. 
+-   Email: info@jungleworld.com
+-   Phone: 1-800-JUNGLE-WORLD
+-   Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news.
 
 Join us on an exciting journey through the jungle - it's a fun and educational experience your child won't want to miss!
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ Looking for a fun and educational way to engage your child's curiosity? Look no 
 
 ## About Us
 
-At Jungle Learning, we believe that education should be fun and exciting. That's why we've created a website that combines interactive games, engaging stories, and fascinating facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will inspire children of all ages.
+At Jungle Learning, we believe that education should be fun and exciting. That's why we've created a website that combines interactive games, engaging stories, and Fas<wbr>ci<wbr>na<wbr>ting facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will inspire children of all ages.
 
 ## Our Programs
 
@@ -79,7 +79,7 @@ We offer a range of programs designed to cater to different age groups and inter
 
 - **Jungle Adventures**: An interactive game that takes children on a journey through the jungle, where they'll encounter exotic animals and learn about their habitats and behaviors.
 - **Wild Stories**: A collection of short stories featuring animals from the jungle, written by our team of talented writers. These stories are perfect for bedtime reading or classroom discussions.
-- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with fascinating information.
+- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with Fas<wbr>ci<wbr>na<wbr>ting information.
 
 ## User Stories
 
@@ -103,7 +103,7 @@ Have a question or comment? We'd love to hear from you! You can reach us at:
 
 - Email: info@junglelearning.com
 - Phone: 1-800-JUNGLE-LEARNING
-- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news. 
+- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news.
 
 Join us on a journey through the jungle - it's a wild ride you won't want to miss!
 
@@ -121,7 +121,7 @@ Heading is too long, rewrite whole content.
 
 Welcome to our jungle-themed website! Our playful graphic of a group of animals in a jungle sets the tone for an exciting adventure that will inspire your child's curiosity.
 
-At Discover the Jungle, we believe that learning should be enjoyable. That's why we've created a website that combines interactive games, engaging stories, and fascinating facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will spark your child's imagination.
+At Discover the Jungle, we believe that learning should be enjoyable. That's why we've created a website that combines interactive games, engaging stories, and Fas<wbr>ci<wbr>na<wbr>ting facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will spark your child's imagination.
 
 ## Our Programs
 
@@ -129,7 +129,7 @@ We offer a range of programs designed to cater to different age groups and inter
 
 - **Jungle Adventures**: An interactive game that takes children on a journey through the jungle, where they'll encounter exotic animals and learn about their habitats and behaviors.
 - **Wild Stories**: A collection of short stories featuring animals from the jungle, written by our team of talented writers. These stories are perfect for bedtime reading or classroom discussions.
-- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with fascinating information.
+- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with Fas<wbr>ci<wbr>na<wbr>ting information.
 
 ## User Stories
 
@@ -153,7 +153,7 @@ Have a question or comment? We'd love to hear from you! You can reach us at:
 
 - Email: info@discoverthejungle.com
 - Phone: 1-800-JUNGLE-LEARNING
-- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news. 
+- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news.
 
 Join us on an exciting journey through the jungle - it's a fun and educational experience your child won't want to miss!
 
@@ -179,7 +179,7 @@ At Jungle Fun, we offer a variety of programs that will take your child on a jou
 
 - **Jungle Adventures**: An interactive game that takes children on a journey through the jungle, where they'll encounter exotic animals and learn about their habitats and behaviors.
 - **Wild Stories**: A collection of short stories featuring animals from the jungle, written by our team of talented writers. These stories are perfect for bedtime reading or classroom discussions.
-- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with fascinating information.
+- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with Fas<wbr>ci<wbr>na<wbr>ting information.
 
 ## User Stories
 
@@ -221,7 +221,7 @@ Heading is too long, rewrite whole content.
 
 Welcome to Jungle World, a website that offers a fun and educational experience for children. Our playful graphic of a group of animals in a jungle sets the tone for an exciting adventure that will spark your child's curiosity.
 
-At Jungle World, we believe that learning should be enjoyable. That's why we've created a website that combines interactive games, engaging stories, and fascinating facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will inspire children of all ages.
+At Jungle World, we believe that learning should be enjoyable. That's why we've created a website that combines interactive games, engaging stories, and Fas<wbr>ci<wbr>na<wbr>ting facts about the natural world. Our team of experienced educators and designers have crafted a unique learning experience that will inspire children of all ages.
 
 ## Our Programs
 
@@ -229,7 +229,7 @@ We offer a range of programs designed to cater to different age groups and inter
 
 - **Jungle Adventures**: An interactive game that takes children on a journey through the jungle, where they'll encounter exotic animals and learn about their habitats and behaviors.
 - **Wild Stories**: A collection of short stories featuring animals from the jungle, written by our team of talented writers. These stories are perfect for bedtime reading or classroom discussions.
-- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with fascinating information.
+- **Nature Facts**: A series of articles that explore the wonders of the natural world. From the life cycle of a butterfly to the migration patterns of birds, these articles are packed with Fas<wbr>ci<wbr>na<wbr>ting information.
 
 ## User Stories
 
@@ -253,7 +253,7 @@ Have a question or comment? We'd love to hear from you! You can reach us at:
 
 - Email: info@jungleworld.com
 - Phone: 1-800-JUNGLE-WORLD
-- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news. 
+- Social Media: Follow us on [Twitter](#) and [Facebook](#) for updates and news.
 
 Join us on an exciting journey through the jungle - it's a fun and educational experience your child won't want to miss!
 

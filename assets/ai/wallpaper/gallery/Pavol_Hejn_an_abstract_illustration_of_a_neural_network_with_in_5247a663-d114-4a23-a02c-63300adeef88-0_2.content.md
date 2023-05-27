@@ -2,7 +2,7 @@
 
 # Tech Hub
 
-Welcome to The Tech Hub, the ultimate destination for all tech enthusiasts! Our website is your one-stop-shop for the latest news, reviews, and insights on everything related to technology. 
+Welcome to The Tech Hub, the ultimate destination for all tech enthusiasts! Our website is your one-stop-shop for the latest news, reviews, and insights on everything related to technology.
 
 ## Our Background
 
@@ -12,11 +12,11 @@ Our website features an abstract illustration of a neural network as its backgro
 
 At The Tech Hub, we offer a wide range of content that caters to everyone from beginners to experts in the tech industry. Here's what you can expect:
 
-- **News:** Stay up-to-date with the latest happenings in the world of technology. Our team of expert writers brings you breaking news, analysis, and insights on all the major developments in the tech industry.
-- **Reviews:** Get detailed reviews of the latest gadgets, software, and apps. Our team of reviewers tests out the latest products and gives you their honest opinions on everything from smartphones to laptops to gaming consoles.
-- **Tutorials:** Learn new skills and improve your knowledge with our step-by-step tutorials. Whether you're looking to learn coding, design, or any other tech-related skill, our tutorials are designed to help you get started.
-- **User Stories:** Read inspiring stories of people who have made a mark in the tech industry. From entrepreneurs to developers to designers, our user stories feature real people who have achieved success in the world of technology.
-- **References:** Access our comprehensive library of resources, including whitepapers, case studies, and research papers. Our references section is perfect for anyone looking to dive deeper into the world of technology.
+-   **News:** Stay up-to-date with the latest happenings in the world of technology. Our team of expert writers brings you breaking news, analysis, and insights on all the major developments in the tech industry.
+-   **Reviews:** Get detailed reviews of the latest gadgets, software, and apps. Our team of reviewers tests out the latest products and gives you their honest opinions on everything from smartphones to laptops to gaming consoles.
+-   **Tutorials:** Learn new skills and improve your knowledge with our step-by-step tutorials. Whether you're looking to learn coding, design, or any other tech-related skill, our tutorials are designed to help you get started.
+-   **User Stories:** Read inspiring stories of people who have made a mark in the tech industry. From entrepreneurs to developers to designers, our user stories feature real people who have achieved success in the world of technology.
+-   **References:** Access our Com<wbr>pre<wbr>hen<wbr>sive library of resources, including whitepapers, case studies, and research papers. Our references section is perfect for anyone looking to dive deeper into the world of technology.
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # The Tech Hub - Your Go-To Destination for All Things Tech
 
-Welcome to The Tech Hub, the ultimate destination for all tech enthusiasts! Our website is your one-stop-shop for the latest news, reviews, and insights on everything related to technology. 
+Welcome to The Tech Hub, the ultimate destination for all tech enthusiasts! Our website is your one-stop-shop for the latest news, reviews, and insights on everything related to technology.
 
 ## Our Background
 
@@ -69,7 +69,7 @@ At The Tech Hub, we offer a wide range of content that caters to everyone from b
 - **Reviews:** Get detailed reviews of the latest gadgets, software, and apps. Our team of reviewers tests out the latest products and gives you their honest opinions on everything from smartphones to laptops to gaming consoles.
 - **Tutorials:** Learn new skills and improve your knowledge with our step-by-step tutorials. Whether you're looking to learn coding, design, or any other tech-related skill, our tutorials are designed to help you get started.
 - **User Stories:** Read inspiring stories of people who have made a mark in the tech industry. From entrepreneurs to developers to designers, our user stories feature real people who have achieved success in the world of technology.
-- **References:** Access our comprehensive library of resources, including whitepapers, case studies, and research papers. Our references section is perfect for anyone looking to dive deeper into the world of technology.
+- **References:** Access our Com<wbr>pre<wbr>hen<wbr>sive library of resources, including whitepapers, case studies, and research papers. Our references section is perfect for anyone looking to dive deeper into the world of technology.
 
 ## Contact Us
 

@@ -12,11 +12,11 @@ An AI-powered search engine uses advanced algorithms to understand user intent a
 
 AI-powered search engines offer several benefits over traditional search engines, including:
 
-- More accurate and relevant search results
-- Personalized search results based on user behavior and preferences
-- Faster search times
-- Enhanced natural language processing for more conversational searches
-- Improved security and privacy features
+-   More accurate and relevant search results
+-   Personalized search results based on user behavior and preferences
+-   Faster search times
+-   Enhanced natural language processing for more conversational searches
+-   Improved security and privacy features
 
 ## User Stories
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Discover the Power of AI-Powered Search Engines with Our Minimalist Wallpaper
 
-Welcome to our website where we explore the world of AI-powered search engines and their impact on modern society. Our minimalist wallpaper featuring an abstract illustration of an AI-powered search engine is the perfect background for anyone interested in this fascinating topic.
+Welcome to our website where we explore the world of AI-powered search engines and their impact on modern society. Our minimalist wallpaper featuring an abstract illustration of an AI-powered search engine is the perfect background for anyone interested in this Fas<wbr>ci<wbr>na<wbr>ting topic.
 
 ## What is an AI-Powered Search Engine?
 

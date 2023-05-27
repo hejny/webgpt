@@ -2,7 +2,7 @@
 
 # Cyborg Explorers
 
-Welcome to our website dedicated to exploring the fascinating world of cyborgs - beings that combine human and machine elements to create a new form of life. Our site is designed to be a hub for all things related to this exciting field, from the latest news and research to user stories and references.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of cyborgs - beings that combine human and machine elements to create a new form of life. Our site is designed to be a hub for all things related to this exciting field, from the latest news and research to user stories and references.
 
 ## About Us
 
@@ -18,7 +18,7 @@ We believe that the best way to understand the world of cyborgs is to hear from 
 
 ## References
 
-If you're interested in learning more about cyborgs, we've compiled a comprehensive list of references that cover everything from the history of cyborgs to the latest research in the field. Whether you're a student, researcher, or just a curious reader, our references section has something for everyone.
+If you're interested in learning more about cyborgs, we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of references that cover everything from the history of cyborgs to the latest research in the field. Whether you're a student, researcher, or just a curious reader, our references section has something for everyone.
 
 ## Contact Us
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -53,7 +53,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Futuristic Cyborgs: Exploring the World of Human-Machine Hybrids
 
-Welcome to our website dedicated to exploring the fascinating world of cyborgs - beings that combine human and machine elements to create a new form of life. Our site is designed to be a hub for all things related to this exciting field, from the latest news and research to user stories and references.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of cyborgs - beings that combine human and machine elements to create a new form of life. Our site is designed to be a hub for all things related to this exciting field, from the latest news and research to user stories and references.
 
 ## About Us
 
@@ -69,7 +69,7 @@ We believe that the best way to understand the world of cyborgs is to hear from 
 
 ## References
 
-If you're interested in learning more about cyborgs, we've compiled a comprehensive list of references that cover everything from the history of cyborgs to the latest research in the field. Whether you're a student, researcher, or just a curious reader, our references section has something for everyone.
+If you're interested in learning more about cyborgs, we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of references that cover everything from the history of cyborgs to the latest research in the field. Whether you're a student, researcher, or just a curious reader, our references section has something for everyone.
 
 ## Contact Us
 

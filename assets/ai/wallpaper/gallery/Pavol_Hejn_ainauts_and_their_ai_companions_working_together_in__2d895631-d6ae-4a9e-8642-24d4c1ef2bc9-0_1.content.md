@@ -10,7 +10,7 @@ Our Ainautes are highly trained astronauts who have undergone rigorous physical 
 
 ## The Power of Collaboration
 
-At our space station, collaboration between humans and AI is key to our success. Our AI companions provide invaluable support to our Ainautes, assisting with everything from navigation and communication to scientific analysis and medical care. Together, they form a powerful team that is able to achieve feats that would be impossible for either group alone.
+At our space station, collaboration between humans and AI is key to our success. Our AI companions provide invaluable support to our Ainautes, assisting with everything from navigation and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion to scientific analysis and medical care. Together, they form a powerful team that is able to achieve feats that would be impossible for either group alone.
 
 ## User Stories
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ Our Ainautes are highly trained astronauts who have undergone rigorous physical 
 
 ## The Power of Collaboration
 
-At our space station, collaboration between humans and AI is key to our success. Our AI companions provide invaluable support to our Ainautes, assisting with everything from navigation and communication to scientific analysis and medical care. Together, they form a powerful team that is able to achieve feats that would be impossible for either group alone.
+At our space station, collaboration between humans and AI is key to our success. Our AI companions provide invaluable support to our Ainautes, assisting with everything from navigation and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion to scientific analysis and medical care. Together, they form a powerful team that is able to achieve feats that would be impossible for either group alone.
 
 ## User Stories
 

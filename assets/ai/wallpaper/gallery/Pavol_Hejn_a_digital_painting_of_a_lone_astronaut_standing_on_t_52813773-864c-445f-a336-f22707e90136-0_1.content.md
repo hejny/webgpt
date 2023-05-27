@@ -56,7 +56,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Depths of Space with this Stunning Digital Painting
 
-Step into the unknown and explore the depths of space with this captivating digital painting. Featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space, this artwork is perfect for anyone who loves adventure and exploration.
+Step into the unknown and explore the depths of space with this Cap<wbr>ti<wbr>va<wbr>ting digital painting. Featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space, this artwork is perfect for anyone who loves adventure and exploration.
 
 ## Download Instructions
 
@@ -80,9 +80,9 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Discover the Wonders of Space with a Captivating Digital Painting
+# Discover the Wonders of Space with a Cap<wbr>ti<wbr>va<wbr>ting Digital Painting
 
-Embark on a journey through the vast expanse of space with this captivating digital painting. Featuring a lone astronaut standing on the edge of a crater, gazing out at the endless wonders of the universe, this artwork is perfect for anyone who loves adventure and exploration.
+Embark on a journey through the vast expanse of space with this Cap<wbr>ti<wbr>va<wbr>ting digital painting. Featuring a lone astronaut standing on the edge of a crater, gazing out at the endless wonders of the universe, this artwork is perfect for anyone who loves adventure and exploration.
 
 ## Download Instructions
 

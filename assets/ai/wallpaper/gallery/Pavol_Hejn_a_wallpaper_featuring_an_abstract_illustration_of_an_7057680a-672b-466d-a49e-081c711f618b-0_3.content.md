@@ -2,7 +2,7 @@
 
 # AI Networks
 
-Welcome to our website dedicated to exploring the fascinating world of artificial intelligence and neural networks. Our goal is to provide you with a comprehensive resource that will help you understand the potential of AI technology and its real-world applications.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of artificial intelligence and neural networks. Our goal is to provide you with a Com<wbr>pre<wbr>hen<wbr>sive resource that will help you understand the potential of AI technology and its real-world applications.
 
 ## Discover the Intricate World of AI Neural Networks
 
@@ -32,10 +32,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -51,7 +51,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Neural Networks in Action: Exploring the Power of AI
 
-Welcome to our website dedicated to exploring the fascinating world of artificial intelligence and neural networks. Our goal is to provide you with a comprehensive resource that will help you understand the potential of AI technology and its real-world applications.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of artificial intelligence and neural networks. Our goal is to provide you with a Com<wbr>pre<wbr>hen<wbr>sive resource that will help you understand the potential of AI technology and its real-world applications.
 
 ## Discover the Intricate World of AI Neural Networks
 

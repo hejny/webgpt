@@ -2,7 +2,7 @@
 
 # Spacecraft exploration
 
-Welcome to our website dedicated to uncovering the secrets of abandoned spacecraft! Our website is designed for space enthusiasts who want to learn more about the mysteries of these relics floating in the depths of space. Our captivating background features a group of Ainautes and their AI companions exploring a massive, abandoned spacecraft.
+Welcome to our website dedicated to uncovering the secrets of abandoned spacecraft! Our website is designed for space enthusiasts who want to learn more about the mysteries of these relics floating in the depths of space. Our Cap<wbr>ti<wbr>va<wbr>ting background features a group of Ainautes and their AI companions exploring a massive, abandoned spacecraft.
 
 ## What We Offer
 
@@ -82,7 +82,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Uncovering the Secrets of Abandoned Spacecraft: A Journey into the Unknown
 
-Welcome to our website dedicated to uncovering the secrets of abandoned spacecraft! Our website is designed for space enthusiasts who want to learn more about the mysteries of these relics floating in the depths of space. Our captivating background features a group of Ainautes and their AI companions exploring a massive, abandoned spacecraft.
+Welcome to our website dedicated to uncovering the secrets of abandoned spacecraft! Our website is designed for space enthusiasts who want to learn more about the mysteries of these relics floating in the depths of space. Our Cap<wbr>ti<wbr>va<wbr>ting background features a group of Ainautes and their AI companions exploring a massive, abandoned spacecraft.
 
 ## What We Offer
 Our website offers a wealth of resources for those interested in learning more about abandoned spacecraft. Here are some of the things you can expect to find on our website:

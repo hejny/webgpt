@@ -21,7 +21,7 @@ Welcome to our website featuring a dreamy forest scene with fairies wallpaper. I
 ## Features
 
 -   High-quality image resolution
--   Captivating and whimsical design
+-   Cap<wbr>ti<wbr>va<wbr>ting and whimsical design
 -   Perfect for adding a touch of magic to your device's background
 
 ## How to Download

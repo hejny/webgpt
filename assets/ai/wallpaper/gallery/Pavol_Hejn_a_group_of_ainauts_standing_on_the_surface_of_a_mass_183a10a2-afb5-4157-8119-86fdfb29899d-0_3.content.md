@@ -28,7 +28,7 @@ We landed on the surface of this unknown planet with our advanced spacecraft and
 
 Our team made several groundbreaking discoveries during our exploration of this planet. We found evidence of ancient civilizations that once inhabited the planet, as well as unique plant and animal life that have adapted to the harsh environment.
 
-> "One of the most fascinating discoveries we made was a species of plant that glows in the dark. We were able to collect samples and bring them back to our lab for further study." - Ainaute Scientist
+> "One of the most Fas<wbr>ci<wbr>na<wbr>ting discoveries we made was a species of plant that glows in the dark. We were able to collect samples and bring them back to our lab for further study." - Ainaute Scientist
 
 ## Conclusion
 

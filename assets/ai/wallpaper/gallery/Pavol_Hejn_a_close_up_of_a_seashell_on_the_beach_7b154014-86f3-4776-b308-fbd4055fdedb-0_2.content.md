@@ -14,7 +14,7 @@ Looking for inspiration on how to incorporate our seashell wallpaper into your h
 
 ## References and Resources
 
-We understand that choosing the right wallpaper can be overwhelming, which is why we've created a comprehensive references and resources section to help guide you through the process. From tips on selecting the right wallpaper for your space to installation guides and care instructions, we've got you covered every step of the way.
+We understand that choosing the right wallpaper can be overwhelming, which is why we've created a Com<wbr>pre<wbr>hen<wbr>sive references and resources section to help guide you through the process. From tips on selecting the right wallpaper for your space to installation guides and care instructions, we've got you covered every step of the way.
 
 ## Contact Us
 
@@ -30,10 +30,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ Looking for inspiration on how to incorporate our seashell wallpaper into your h
 
 ## References and Resources
 
-We understand that choosing the right wallpaper can be overwhelming, which is why we've created a comprehensive references and resources section to help guide you through the process. From tips on selecting the right wallpaper for your space to installation guides and care instructions, we've got you covered every step of the way.
+We understand that choosing the right wallpaper can be overwhelming, which is why we've created a Com<wbr>pre<wbr>hen<wbr>sive references and resources section to help guide you through the process. From tips on selecting the right wallpaper for your space to installation guides and care instructions, we've got you covered every step of the way.
 
 ## Contact Us
 

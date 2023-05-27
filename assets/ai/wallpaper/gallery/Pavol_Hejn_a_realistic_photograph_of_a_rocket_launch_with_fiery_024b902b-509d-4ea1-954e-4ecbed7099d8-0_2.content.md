@@ -2,27 +2,31 @@
 
 # Exploring the Universe
 
-Welcome to our website dedicated to exploring the wonders of the universe! Our homepage features a stunning photograph of a rocket launch, with fiery trails and smoke visible in the sky. This captivating image sets the tone for our site, which is filled with fascinating information and resources about space exploration.
+Welcome to our website dedicated to exploring the wonders of the universe! Our homepage features a stunning photograph of a rocket launch, with fiery trails and smoke visible in the sky. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our site, which is filled with Fas<wbr>ci<wbr>na<wbr>ting information and resources about space exploration.
 
 ## About Us
+
 Our website is dedicated to all things related to space exploration. We cover the latest news and breakthroughs in space technology, astronomy, and astrophysics. Our team of experts provides insightful analysis and commentary on the most pressing issues facing the space industry today.
 
 ## User Stories
+
 Our readers come from all walks of life and share a passion for space exploration. Here are some user stories from our community:
 
-- "I love visiting this site every day to stay up-to-date on the latest space news. The rocket launch photo on the homepage is so inspiring!" - John D.
-- "As an aspiring astronaut, I find this site to be an invaluable resource for learning about the challenges and opportunities of space travel." - Emily S.
-- "The homepage photo really captures the excitement and wonder of space exploration. I can't wait to read more!" - Alex P.
+-   "I love visiting this site every day to stay up-to-date on the latest space news. The rocket launch photo on the homepage is so inspiring!" - John D.
+-   "As an aspiring astronaut, I find this site to be an invaluable resource for learning about the challenges and opportunities of space travel." - Emily S.
+-   "The homepage photo really captures the excitement and wonder of space exploration. I can't wait to read more!" - Alex P.
 
 ## Resources
+
 We strive to provide accurate and reliable information to our readers. Here are some of our sources:
 
-- NASA
-- European Space Agency
-- Space.com
-- Scientific American
+-   NASA
+-   European Space Agency
+-   Space.com
+-   Scientific American
 
 ## Contact Us
+
 We welcome your feedback and suggestions. If you have any questions or comments, please don't hesitate to [contact us](#contact).
 
 ---
@@ -37,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,7 +99,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Exploring the Universe
 
-Welcome to our website dedicated to exploring the wonders of the universe! Our homepage features a stunning photograph of a rocket launch, with fiery trails and smoke visible in the sky. This captivating image sets the tone for our site, which is filled with fascinating information and resources about space exploration.
+Welcome to our website dedicated to exploring the wonders of the universe! Our homepage features a stunning photograph of a rocket launch, with fiery trails and smoke visible in the sky. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our site, which is filled with Fas<wbr>ci<wbr>na<wbr>ting information and resources about space exploration.
 
 ## About Us
 Our website is dedicated to all things related to space exploration. We cover the latest news and breakthroughs in space technology, astronomy, and astrophysics. Our team of experts provides insightful analysis and commentary on the most pressing issues facing the space industry today.

@@ -14,7 +14,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 <!--font:Exo 2-->
 
-# Extraterrestrial Life.
+# Ex<wbr>tra<wbr>terre<wbr>strial Life.
 
 Welcome to our website featuring a surreal landscape of alien planets and strange, otherworldly creatures. Our collection of wallpapers will transport you to a world beyond your imagination.
 
@@ -30,7 +30,7 @@ Our wallpapers feature surreal landscapes that are sure to captivate your imagin
 
 ## Otherworldly Creatures
 
-Discover creatures that you never thought were possible. From multi-legged beasts to flying creatures with wings like butterflies, our collection of wallpapers will introduce you to a whole new world of life forms.
+Discover creatures that you never thought were possible. From multi-legged beasts to flying creatures with wings like But<wbr>ter<wbr>flies, our collection of wallpapers will introduce you to a whole new world of life forms.
 
 ## Download Your Favorite Wallpaper
 

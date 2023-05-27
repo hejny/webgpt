@@ -2,7 +2,7 @@
 
 # TechHub Space
 
-Welcome to TechHub, a community-driven platform where tech enthusiasts come together to share knowledge and ideas. Our platform is designed to provide a collaborative space for individuals interested in the latest advancements in technology.
+Welcome to TechHub, a community-driven platform where tech enthusiasts come together to share knowledge and ideas. Our platform is designed to provide a Coll<wbr>aborative space for individuals interested in the latest advancements in technology.
 
 ## About Us
 
@@ -64,9 +64,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 ---
 
 
-# TechHub - A Collaborative Space for Tech Enthusiasts
+# TechHub - A Coll<wbr>aborative Space for Tech Enthusiasts
 
-Welcome to TechHub, a community-driven platform where tech enthusiasts come together to share knowledge and ideas. Our platform is designed to provide a collaborative space for individuals interested in the latest advancements in technology.
+Welcome to TechHub, a community-driven platform where tech enthusiasts come together to share knowledge and ideas. Our platform is designed to provide a Coll<wbr>aborative space for individuals interested in the latest advancements in technology.
 
 ## About Us
 At TechHub, we believe that technology has the power to change the world. Our mission is to create an environment where people can learn, grow, and connect with like-minded individuals. We offer a wide range of resources, including articles, tutorials, and forums, to help our users stay up-to-date with the latest trends in the tech industry.

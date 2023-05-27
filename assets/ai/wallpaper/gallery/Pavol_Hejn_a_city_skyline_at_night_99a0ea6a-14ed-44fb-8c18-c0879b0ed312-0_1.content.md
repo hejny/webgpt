@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Night City Skyline
 
-Welcome to Night Skyline, your ultimate destination for stunning cityscape wallpapers. Our collection features breathtaking views of cities around the world at night, including skylines, landmarks, and iconic buildings. 
+Welcome to Night Skyline, your ultimate destination for stunning cityscape wallpapers. Our collection features breathtaking views of cities around the world at night, including skylines, landmarks, and iconic buildings.
 
 ## About Night Skyline
 
@@ -52,8 +52,8 @@ If you have any questions or feedback, please don't hesitate to contact us. You 
 
 Here are some articles that inspired our love for cityscapes:
 
-- "The Beauty of City Skylines at Night" by National Geographic
-- "Capturing the Magic of City Nights" by Lonely Planet
-- "The Fascinating History of City Skylines" by Smithsonian Magazine
+-   "The Beauty of City Skylines at Night" by National Geographic
+-   "Capturing the Magic of City Nights" by Lonely Planet
+-   "The Fas<wbr>ci<wbr>na<wbr>ting History of City Skylines" by Smithsonian Magazine
 
 Experience the beauty of city nights with Night Skyline. Browse our collection today and find your perfect wallpaper!

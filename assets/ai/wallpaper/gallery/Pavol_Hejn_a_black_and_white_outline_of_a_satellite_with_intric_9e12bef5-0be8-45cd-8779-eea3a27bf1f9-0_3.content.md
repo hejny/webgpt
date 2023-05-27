@@ -10,15 +10,15 @@ Our background features a detailed black and white outline of a satellite, showc
 
 ## Explore the Universe with Us
 
-Our website offers a wealth of information about space exploration, including the latest news, fascinating facts, and educational resources. Whether you're a seasoned astronomer or just starting your journey, there's something for everyone here.
+Our website offers a wealth of information about space exploration, including the latest news, Fas<wbr>ci<wbr>na<wbr>ting facts, and educational resources. Whether you're a seasoned astronomer or just starting your journey, there's something for everyone here.
 
 ### Latest News
 
 Stay up-to-date with the latest developments in space exploration. From new discoveries to upcoming missions, we've got you covered.
 
-### Fascinating Facts
+### Fas<wbr>ci<wbr>na<wbr>ting Facts
 
-Did you know that the largest volcano in the solar system is located on Mars? Or that the moon has quakes? Learn more about these and other fascinating facts about space.
+Did you know that the largest volcano in the solar system is located on Mars? Or that the moon has quakes? Learn more about these and other Fas<wbr>ci<wbr>na<wbr>ting facts about space.
 
 ### Educational Resources
 
@@ -40,9 +40,9 @@ Here are some stories from our users who have joined our community:
 
 For more information about space exploration, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 
@@ -56,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -125,15 +125,15 @@ Our background features a detailed black and white outline of a satellite, showc
 
 ## Explore the Universe with Us
 
-Our website offers a wealth of information about space exploration, including the latest news, fascinating facts, and educational resources. Whether you're a seasoned astronomer or just starting your journey, there's something for everyone here.
+Our website offers a wealth of information about space exploration, including the latest news, Fas<wbr>ci<wbr>na<wbr>ting facts, and educational resources. Whether you're a seasoned astronomer or just starting your journey, there's something for everyone here.
 
 ### Latest News
 
 Stay up-to-date with the latest developments in space exploration. From new discoveries to upcoming missions, we've got you covered.
 
-### Fascinating Facts
+### Fas<wbr>ci<wbr>na<wbr>ting Facts
 
-Did you know that the largest volcano in the solar system is located on Mars? Or that the moon has quakes? Learn more about these and other fascinating facts about space.
+Did you know that the largest volcano in the solar system is located on Mars? Or that the moon has quakes? Learn more about these and other Fas<wbr>ci<wbr>na<wbr>ting facts about space.
 
 ### Educational Resources
 

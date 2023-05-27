@@ -42,7 +42,7 @@ Whether you're a seasoned racer or just getting started, AI Racing has something
 
 -   **Buggy Rentals**: Rent one of our state-of-the-art buggies and experience the thrill of AI-assisted desert racing for yourself.
 
--   **Training Programs**: Learn from the best with our comprehensive training programs, designed to help you master the skills needed to compete at the highest level.
+-   **Training Programs**: Learn from the best with our Com<wbr>pre<wbr>hen<wbr>sive training programs, designed to help you master the skills needed to compete at the highest level.
 
 -   **Custom Builds**: Looking to take your racing to the next level? Our team of engineers can work with you to design and build a custom buggy tailored to your specific needs.
 

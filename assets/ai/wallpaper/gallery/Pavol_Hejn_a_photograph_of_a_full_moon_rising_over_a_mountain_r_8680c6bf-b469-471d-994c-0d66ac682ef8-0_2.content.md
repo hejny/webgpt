@@ -6,7 +6,7 @@ Our stunning background image captures the essence of nature's mysteries, featur
 
 Whether you're looking to decorate your desktop, phone, or social media profile, our mountain moonrise background will transport you to a world of wonder and inspiration.
 
-To download this captivating image, simply click the "Download" button below and choose the appropriate size for your device. And don't forget to share it with your friends and family, so they too can experience the beauty of nature's mysteries.
+To download this Cap<wbr>ti<wbr>va<wbr>ting image, simply click the "Download" button below and choose the appropriate size for your device. And don't forget to share it with your friends and family, so they too can experience the beauty of nature's mysteries.
 
 [![Mountain Moonrise Background](https://example.com/mountain-moonrise-background.jpg)](https://example.com/download/mountain-moonrise-background.jpg)
 
@@ -64,7 +64,7 @@ Our stunning background image captures the essence of nature's mysteries, featur
 
 Whether you're looking to decorate your desktop, phone, or social media profile, our mountain moonrise background will transport you to a world of wonder and inspiration.
 
-To download this captivating image, simply click the "Download" button below and choose the appropriate size for your device. And don't forget to share it with your friends and family, so they too can experience the beauty of nature's mysteries.
+To download this Cap<wbr>ti<wbr>va<wbr>ting image, simply click the "Download" button below and choose the appropriate size for your device. And don't forget to share it with your friends and family, so they too can experience the beauty of nature's mysteries.
 
 [![Mountain Moonrise Background](https://example.com/mountain-moonrise-background.jpg)](https://example.com/download/mountain-moonrise-background.jpg)
 

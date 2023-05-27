@@ -12,24 +12,24 @@ Our team is made up of passionate space enthusiasts who are dedicated to sharing
 
 Here are some stories from our users who have been inspired by our website:
 
-- "I love visiting this site to keep up-to-date with the latest space news. The image of the astronaut is just an added bonus!"
-- "The digital painting on this site is breathtaking. It really helps to set the mood for exploring the wonders of space."
-- "I never knew how fascinating space could be until I stumbled upon this site. Now I'm hooked!"
+-   "I love visiting this site to keep up-to-date with the latest space news. The image of the astronaut is just an added bonus!"
+-   "The digital painting on this site is breathtaking. It really helps to set the mood for exploring the wonders of space."
+-   "I never knew how Fas<wbr>ci<wbr>na<wbr>ting space could be until I stumbled upon this site. Now I'm hooked!"
 
 ## Resources
 
 If you're interested in learning more about space exploration, here are some resources that we recommend:
 
-- NASA - [https://www.nasa.gov/](#)
-- Space.com - [https://www.space.com/](#)
-- European Space Agency - [https://www.esa.int/](#)
+-   NASA - [https://www.nasa.gov/](#)
+-   Space.com - [https://www.space.com/](#)
+-   European Space Agency - [https://www.esa.int/](#)
 
 ## Contact Us
 
 If you have any questions or feedback about our website, please don't hesitate to contact us. You can reach us via email at [info@spaceexplorer.com](mailto:info@spaceexplorer.com) or through our social media channels:
 
-- Twitter - [https://twitter.com/spaceexplorer](#)
-- Facebook - [https://www.facebook.com/spaceexplorer](#)
+-   Twitter - [https://twitter.com/spaceexplorer](#)
+-   Facebook - [https://www.facebook.com/spaceexplorer](#)
 
 Thank you for visiting our website, and we hope that our content inspires you to explore the wonders of space!
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -115,7 +115,7 @@ Here are some stories from our users who have been inspired by our website:
 
 - "I love visiting this site to keep up-to-date with the latest space news. The image of the astronaut is just an added bonus!"
 - "The digital painting on this site is breathtaking. It really helps to set the mood for exploring the wonders of space."
-- "I never knew how fascinating space could be until I stumbled upon this site. Now I'm hooked!"
+- "I never knew how Fas<wbr>ci<wbr>na<wbr>ting space could be until I stumbled upon this site. Now I'm hooked!"
 
 ## Resources
 

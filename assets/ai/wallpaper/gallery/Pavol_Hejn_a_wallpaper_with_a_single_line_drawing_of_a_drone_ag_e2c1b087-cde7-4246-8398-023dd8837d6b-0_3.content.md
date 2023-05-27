@@ -14,17 +14,17 @@ At Drone Delivery Services, we offer a range of solutions designed to meet the u
 
 Our services include:
 
-- Same-day delivery
-- Next-day delivery
-- Scheduled deliveries
-- Emergency deliveries
-- Customized solutions
+-   Same-day delivery
+-   Next-day delivery
+-   Scheduled deliveries
+-   Emergency deliveries
+-   Customized solutions
 
 ## Our Technology
 
 One of the key advantages of using drone delivery services is the advanced technology that makes it possible. Our drones are equipped with cutting-edge sensors, cameras, and other features that allow us to navigate even the most challenging environments with ease.
 
-The wallpaper on our website features a single line drawing of a drone, against a background of geometric shapes in complementary colors. This design represents the sleek and modern technology that powers our operations.
+The wallpaper on our website features a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This design represents the sleek and modern technology that powers our operations.
 
 ## User Stories
 
@@ -38,9 +38,9 @@ Don't just take our word for it - read what our satisfied customers have to say 
 
 For more information about drone delivery services and the latest industry news, check out these resources:
 
-- [Federal Aviation Administration](#faa)
-- [Drone Delivery Canada](#ddc)
-- [UPS Flight Forward](#ups)
+-   [Federal Aviation Administration](#faa)
+-   [Drone Delivery Canada](#ddc)
+-   [UPS Flight Forward](#ups)
 
 ## Contact Us
 
@@ -52,14 +52,14 @@ Contact us at [info@dronedeliveryservices.com](mailto:info@dronedeliveryservices
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
+"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -75,14 +75,14 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
+"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -120,7 +120,7 @@ Our services include:
 
 One of the key advantages of using drone delivery services is the advanced technology that makes it possible. Our drones are equipped with cutting-edge sensors, cameras, and other features that allow us to navigate even the most challenging environments with ease.
 
-The wallpaper on our website features a single line drawing of a drone, against a background of geometric shapes in complementary colors. This design represents the sleek and modern technology that powers our operations.
+The wallpaper on our website features a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This design represents the sleek and modern technology that powers our operations.
 
 ## User Stories
 

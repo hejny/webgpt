@@ -2,7 +2,7 @@
 
 # Space Ainautes
 
-Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, captivating user stories, and stunning visuals that will take you on a journey through the cosmos.
+Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, Cap<wbr>ti<wbr>va<wbr>ting user stories, and stunning visuals that will take you on a journey through the cosmos.
 
 ## Ainautes: The Future of Space Travel
 
@@ -53,7 +53,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Frontiers of Space: Ainautes Wallpaper
 
-Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, captivating user stories, and stunning visuals that will take you on a journey through the cosmos.
+Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, Cap<wbr>ti<wbr>va<wbr>ting user stories, and stunning visuals that will take you on a journey through the cosmos.
 
 ## The Ainautes Wallpaper
 
@@ -93,7 +93,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Exploring the Frontiers of Space with Ainautes
 
-Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, captivating user stories, and stunning visuals that will take you on a journey through the cosmos.
+Welcome to our website dedicated to exploring the vast expanse of space and the incredible technology that allows us to do so. Our site is filled with informative articles, Cap<wbr>ti<wbr>va<wbr>ting user stories, and stunning visuals that will take you on a journey through the cosmos.
 
 ## Ainautes: The Future of Space Travel
 

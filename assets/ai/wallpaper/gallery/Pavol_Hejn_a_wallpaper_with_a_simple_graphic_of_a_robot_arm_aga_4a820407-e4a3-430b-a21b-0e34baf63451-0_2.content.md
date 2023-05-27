@@ -6,16 +6,16 @@ Welcome to RoboTech Solutions, where we specialize in providing cutting-edge rob
 
 ## Our Wallpaper
 
-As a token of our appreciation for visiting our website, we offer a free wallpaper download featuring a simple graphic of a robot arm against a gradient background of two complementary colors. This wallpaper serves as a reminder of the innovative solutions we provide to our clients every day.
+As a token of our appreciation for visiting our website, we offer a free wallpaper download featuring a simple graphic of a robot arm against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper serves as a reminder of the innovative solutions we provide to our clients every day.
 
 ## Our Services
 
 At RoboTech Solutions, we offer a wide range of services to help you optimize your manufacturing process. Some of our services include:
 
-- Customized robotic solutions tailored to your specific needs
-- Integration of new robotic technology into existing systems
-- Maintenance and repair of robotic equipment
-- Training programs for your staff to ensure proper use and maintenance of robotic equipment
+-   Customized robotic solutions tailored to your specific needs
+-   Integration of new robotic technology into existing systems
+-   Maintenance and repair of robotic equipment
+-   Training programs for your staff to ensure proper use and maintenance of robotic equipment
 
 ## User Stories
 
@@ -33,14 +33,14 @@ Interested in learning more about how RoboTech Solutions can enhance your manufa
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a robot arm, against a gradient background of two complementary colors."
+"A wallpaper with a simple graphic of a robot arm, against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -60,7 +60,7 @@ Welcome to RoboTech Solutions, where we specialize in providing cutting-edge rob
 
 ## Our Wallpaper
 
-As a token of our appreciation for visiting our website, we offer a free wallpaper download featuring a simple graphic of a robot arm against a gradient background of two complementary colors. This wallpaper serves as a reminder of the innovative solutions we provide to our clients every day.
+As a token of our appreciation for visiting our website, we offer a free wallpaper download featuring a simple graphic of a robot arm against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper serves as a reminder of the innovative solutions we provide to our clients every day.
 
 ## Our Services
 

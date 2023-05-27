@@ -12,17 +12,17 @@ Our background features a stunning fractal pattern that combines intricate lines
 
 We love hearing from our users about how they use our designs in their daily lives. Here are some of our favorite user stories:
 
-- "I use this background as my phone lock screen and it always brightens my day when I see it."
-- "I'm a graphic designer and I find this background really inspiring. It reminds me to keep pushing boundaries and exploring new ideas."
-- "I work in a creative field and this background helps me stay motivated and focused on my goals."
+-   "I use this background as my phone lock screen and it always brightens my day when I see it."
+-   "I'm a graphic designer and I find this background really inspiring. It reminds me to keep pushing boundaries and exploring new ideas."
+-   "I work in a creative field and this background helps me stay motivated and focused on my goals."
 
 ## References
 
-If you want to learn more about fractals and their fascinating properties, here are some resources we recommend:
+If you want to learn more about fractals and their Fas<wbr>ci<wbr>na<wbr>ting properties, here are some resources we recommend:
 
-- [Fractal Foundation](#) - A non-profit organization dedicated to promoting education and understanding of fractals.
-- [Mandelbrot Set](#) - An interactive exploration of the famous Mandelbrot set fractal.
-- [Chaos and Fractals](#) - A free online course from the Santa Fe Institute that covers the basics of chaos theory and fractals.
+-   [Fractal Foundation](#) - A non-profit organization dedicated to promoting education and understanding of fractals.
+-   [Mandelbrot Set](#) - An interactive exploration of the famous Mandelbrot set fractal.
+-   [Chaos and Fractals](#) - A free online course from the Santa Fe Institute that covers the basics of chaos theory and fractals.
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ We love hearing from our users about how they use our wallpaper in their daily l
 
 ## References
 
-If you want to learn more about fractals and their fascinating properties, here are some resources we recommend:
+If you want to learn more about fractals and their Fas<wbr>ci<wbr>na<wbr>ting properties, here are some resources we recommend:
 
 - [Fractal Foundation](#) - A non-profit organization dedicated to promoting education and understanding of fractals.
 - [Mandelbrot Set](#) - An interactive exploration of the famous Mandelbrot set fractal.
@@ -109,7 +109,7 @@ We love hearing from our users about how they use our designs in their daily liv
 
 ## References
 
-If you want to learn more about fractals and their fascinating properties, here are some resources we recommend:
+If you want to learn more about fractals and their Fas<wbr>ci<wbr>na<wbr>ting properties, here are some resources we recommend:
 
 - [Fractal Foundation](#) - A non-profit organization dedicated to promoting education and understanding of fractals.
 - [Mandelbrot Set](#) - An interactive exploration of the famous Mandelbrot set fractal.

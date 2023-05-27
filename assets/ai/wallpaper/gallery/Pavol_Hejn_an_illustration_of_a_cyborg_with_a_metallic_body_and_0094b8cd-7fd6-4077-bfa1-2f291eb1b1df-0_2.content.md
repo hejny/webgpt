@@ -2,7 +2,7 @@
 
 # Cyborgs Unlimited
 
-Welcome to Cyborgs Unlimited, your one-stop-shop for all things cyborg! Our website is dedicated to providing the latest news, research, and resources on the fascinating world of cyborg technology.
+Welcome to Cyborgs Unlimited, your one-stop-shop for all things cyborg! Our website is dedicated to providing the latest news, research, and resources on the Fas<wbr>ci<wbr>na<wbr>ting world of cyborg technology.
 
 ## About Us
 
@@ -18,7 +18,7 @@ Looking to learn more about cyborgs? Check out our extensive collection of resou
 
 ## Shop
 
-Want to show off your love for cyborgs? Check out our shop for t-shirts, posters, and other merchandise featuring our iconic cyborg illustration. 
+Want to show off your love for cyborgs? Check out our shop for t-shirts, posters, and other merchandise featuring our iconic cyborg illustration.
 
 ![Cyborg Wallpaper](https://example.com/cyborg-wallpaper.jpg)
 
@@ -36,7 +36,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Cyborgs Unlimited
 
-Welcome to Cyborgs Unlimited, your one-stop-shop for all things cyborg! Our website is dedicated to providing the latest news, research, and resources on the fascinating world of cyborg technology.
+Welcome to Cyborgs Unlimited, your one-stop-shop for all things cyborg! Our website is dedicated to providing the latest news, research, and resources on the Fas<wbr>ci<wbr>na<wbr>ting world of cyborg technology.
 
 ## About Us
 
@@ -52,7 +52,7 @@ Looking to learn more about cyborgs? Check out our extensive collection of resou
 
 ## Shop
 
-Want to show off your love for cyborgs? Check out our shop for t-shirts, posters, and other merchandise featuring our iconic cyborg illustration. 
+Want to show off your love for cyborgs? Check out our shop for t-shirts, posters, and other merchandise featuring our iconic cyborg illustration.
 
 ![Cyborg Wallpaper](https://example.com/cyborg-wallpaper.jpg)
 

@@ -12,9 +12,9 @@ At Data Dashboard, we understand the importance of data in today's business land
 
 We offer a range of services to help you get the most out of your data:
 
-- **Data Collection:** Our platform integrates with a variety of data sources, including social media, web analytics, and CRM systems, to provide you with a comprehensive view of your business operations.
-- **Data Analysis:** Our powerful analytics engine enables you to perform complex data analysis tasks quickly and easily, without the need for coding or technical expertise.
-- **Data Visualization:** Our intuitive dashboard provides you with a graphical representation of your data, making it easy to identify trends and patterns.
+-   **Data Collection:** Our platform integrates with a variety of data sources, including social media, web analytics, and CRM systems, to provide you with a Com<wbr>pre<wbr>hen<wbr>sive view of your business operations.
+-   **Data Analysis:** Our powerful analytics engine enables you to perform complex data analysis tasks quickly and easily, without the need for coding or technical expertise.
+-   **Data Visualization:** Our intuitive dashboard provides you with a graphical representation of your data, making it easy to identify trends and patterns.
 
 ## User Stories
 
@@ -28,8 +28,8 @@ Our platform has helped businesses across industries gain valuable insights into
 
 Don't just take our word for it - here's what our customers have to say about us:
 
-- "Data Dashboard has revolutionized the way we manage our data. The platform is easy to use and provides us with valuable insights that we wouldn't have been able to access otherwise." - Sarah Johnson, CFO, Acme Corp.
-- "Data Dashboard has helped us streamline our reporting processes and make data-driven decisions faster than ever before." - Tom Brown, COO, 123 Industries.
+-   "Data Dashboard has revolutionized the way we manage our data. The platform is easy to use and provides us with valuable insights that we wouldn't have been able to access otherwise." - Sarah Johnson, CFO, Acme Corp.
+-   "Data Dashboard has helped us streamline our reporting processes and make data-driven decisions faster than ever before." - Tom Brown, COO, 123 Industries.
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -72,7 +72,7 @@ At Data Dashboard, we understand the importance of data in today's business land
 
 We offer a range of services to help you get the most out of your data:
 
-- **Data Collection:** Our platform integrates with a variety of data sources, including social media, web analytics, and CRM systems, to provide you with a comprehensive view of your business operations.
+- **Data Collection:** Our platform integrates with a variety of data sources, including social media, web analytics, and CRM systems, to provide you with a Com<wbr>pre<wbr>hen<wbr>sive view of your business operations.
 - **Data Analysis:** Our powerful analytics engine enables you to perform complex data analysis tasks quickly and easily, without the need for coding or technical expertise.
 - **Data Visualization:** Our intuitive dashboard provides you with a graphical representation of your data, making it easy to identify trends and patterns.
 

@@ -6,9 +6,9 @@ Welcome to our website featuring a stunning wallpaper that showcases a surreal i
 
 ## Wallpaper Features
 
-- High-quality resolution for optimal display on any device
-- Unique and captivating design that will add character to any space
-- Easy to install and remove without damaging walls
+-   High-quality resolution for optimal display on any device
+-   Unique and Cap<wbr>ti<wbr>va<wbr>ting design that will add character to any space
+-   Easy to install and remove without damaging walls
 
 ## Transform Your Space
 
@@ -37,7 +37,7 @@ Welcome to our website featuring a stunning wallpaper that showcases a surreal i
 ## Wallpaper Features
 
 - High-quality resolution for optimal display on any device
-- Unique and captivating design that will add character to any space
+- Unique and Cap<wbr>ti<wbr>va<wbr>ting design that will add character to any space
 - Easy to install and remove without damaging walls
 
 ## Transform Your Space

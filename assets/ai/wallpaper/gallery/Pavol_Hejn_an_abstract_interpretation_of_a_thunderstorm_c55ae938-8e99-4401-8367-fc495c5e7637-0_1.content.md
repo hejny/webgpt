@@ -13,7 +13,7 @@ Looking for a way to spark your creativity and add some energy to your workspace
 
 ## User Stories
 
-"I've been using this abstract thunderstorm background for a few weeks now, and I love it. It's so dynamic and captivating – it really helps me stay focused on my work." - Sarah L.
+"I've been using this abstract thunderstorm background for a few weeks now, and I love it. It's so dynamic and Cap<wbr>ti<wbr>va<wbr>ting – it really helps me stay focused on my work." - Sarah L.
 
 "I'm always looking for ways to boost my creativity, and this background has been a game-changer for me. Every time I look at it, I feel inspired and energized." - Alex M.
 
@@ -114,7 +114,7 @@ Looking for a way to spark your creativity and add some energy to your workspace
 
 ## User Stories
 
-"I've been using this abstract thunderstorm background for a few weeks now, and I love it. It's so dynamic and captivating – it really helps me stay focused on my work." - Sarah L.
+"I've been using this abstract thunderstorm background for a few weeks now, and I love it. It's so dynamic and Cap<wbr>ti<wbr>va<wbr>ting – it really helps me stay focused on my work." - Sarah L.
 
 "I'm always looking for ways to boost my creativity, and this background has been a game-changer for me. Every time I look at it, I feel inspired and energized." - Alex M.
 

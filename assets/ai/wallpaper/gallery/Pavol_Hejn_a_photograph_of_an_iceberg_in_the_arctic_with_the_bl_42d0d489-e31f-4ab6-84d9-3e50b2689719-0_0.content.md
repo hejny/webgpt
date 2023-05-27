@@ -2,15 +2,15 @@
 
 # Arctic Wonders
 
-Welcome to Arctic Adventure, your ultimate guide to exploring the beauty and wonder of the Arctic. Our website is dedicated to providing you with all the information you need to plan your next adventure to this breathtaking region. 
+Welcome to Arctic Adventure, your ultimate guide to exploring the beauty and wonder of the Arctic. Our website is dedicated to providing you with all the information you need to plan your next adventure to this breathtaking region.
 
 ## Discover the Arctic
 
-The Arctic is home to some of the most stunning natural landscapes on the planet, from glaciers and icebergs to snow-capped mountains and frozen tundras. Whether you're an avid adventurer or simply looking for a unique travel experience, the Arctic has something to offer everyone. 
+The Arctic is home to some of the most stunning natural landscapes on the planet, from glaciers and icebergs to snow-capped mountains and frozen tundras. Whether you're an avid adventurer or simply looking for a unique travel experience, the Arctic has something to offer everyone.
 
 ## Plan Your Trip
 
-Our website provides comprehensive guides to planning your trip to the Arctic, including information on the best time to visit, what to pack, and how to get there. We also offer a range of tour packages and customizable itineraries to help you make the most of your time in this incredible region.
+Our website provides Com<wbr>pre<wbr>hen<wbr>sive guides to planning your trip to the Arctic, including information on the best time to visit, what to pack, and how to get there. We also offer a range of tour packages and customizable itineraries to help you make the most of your time in this incredible region.
 
 ## User Stories
 
@@ -24,17 +24,17 @@ Hear from our satisfied customers about their experiences exploring the Arctic w
 
 Looking for more information about the Arctic? Check out these resources:
 
-- [National Geographic's Guide to the Arctic](#)
-- [Arctic Council](#)
-- [WWF Arctic Program](#)
+-   [National Geographic's Guide to the Arctic](#)
+-   [Arctic Council](#)
+-   [WWF Arctic Program](#)
 
 ## Contact Us
 
 Have questions about planning your trip to the Arctic? Want to learn more about our tour packages and itineraries? Get in touch with us today:
 
-- Email: info@arcticadventure.com
-- Phone: +1 (555) 123-4567
-- Address: 123 Main Street, Anytown USA
+-   Email: info@arcticadventure.com
+-   Phone: +1 (555) 123-4567
+-   Address: 123 Main Street, Anytown USA
 
 ## Background
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -67,15 +67,15 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Arctic Adventure: Explore the Wonders of the North
 
-Welcome to Arctic Adventure, your ultimate guide to exploring the beauty and wonder of the Arctic. Our website is dedicated to providing you with all the information you need to plan your next adventure to this breathtaking region. 
+Welcome to Arctic Adventure, your ultimate guide to exploring the beauty and wonder of the Arctic. Our website is dedicated to providing you with all the information you need to plan your next adventure to this breathtaking region.
 
 ## Discover the Arctic
 
-The Arctic is home to some of the most stunning natural landscapes on the planet, from glaciers and icebergs to snow-capped mountains and frozen tundras. Whether you're an avid adventurer or simply looking for a unique travel experience, the Arctic has something to offer everyone. 
+The Arctic is home to some of the most stunning natural landscapes on the planet, from glaciers and icebergs to snow-capped mountains and frozen tundras. Whether you're an avid adventurer or simply looking for a unique travel experience, the Arctic has something to offer everyone.
 
 ## Plan Your Trip
 
-Our website provides comprehensive guides to planning your trip to the Arctic, including information on the best time to visit, what to pack, and how to get there. We also offer a range of tour packages and customizable itineraries to help you make the most of your time in this incredible region.
+Our website provides Com<wbr>pre<wbr>hen<wbr>sive guides to planning your trip to the Arctic, including information on the best time to visit, what to pack, and how to get there. We also offer a range of tour packages and customizable itineraries to help you make the most of your time in this incredible region.
 
 ## User Stories
 

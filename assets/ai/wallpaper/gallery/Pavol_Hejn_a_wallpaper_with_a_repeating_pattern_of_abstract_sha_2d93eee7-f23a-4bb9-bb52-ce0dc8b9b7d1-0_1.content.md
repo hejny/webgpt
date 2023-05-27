@@ -10,7 +10,7 @@ Our website features a striking wallpaper with a repeating pattern of abstract s
 
 ## Resources
 
-At Malware Madness, we believe that knowledge is power when it comes to cybersecurity. That's why we've compiled a comprehensive list of resources to help you stay informed and protected.
+At Malware Madness, we believe that knowledge is power when it comes to cybersecurity. That's why we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of resources to help you stay informed and protected.
 
 -   **Articles**: Our team of experts regularly publishes articles on the latest cybersecurity trends and threats.
 -   **Guides**: We offer step-by-step guides on how to secure your devices and accounts.
@@ -66,7 +66,7 @@ Our website features a striking wallpaper with a repeating pattern of abstract s
 
 ## Resources
 
-At Malware Madness, we believe that knowledge is power when it comes to cybersecurity. That's why we've compiled a comprehensive list of resources to help you stay informed and protected.
+At Malware Madness, we believe that knowledge is power when it comes to cybersecurity. That's why we've compiled a Com<wbr>pre<wbr>hen<wbr>sive list of resources to help you stay informed and protected.
 
 - **Articles**: Our team of experts regularly publishes articles on the latest cybersecurity trends and threats.
 - **Guides**: We offer step-by-step guides on how to secure your devices and accounts.

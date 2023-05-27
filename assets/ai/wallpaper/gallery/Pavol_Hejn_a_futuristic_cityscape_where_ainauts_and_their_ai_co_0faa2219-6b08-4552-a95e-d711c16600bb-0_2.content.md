@@ -2,7 +2,7 @@
 
 # Collab Future
 
-Welcome to our website, where we explore the exciting possibilities of a future where humans and AI work together in perfect harmony. Our wallpaper depicts a futuristic cityscape where Ainautes and their AI counterparts build towering skyscrapers and infrastructure side by side. This image represents the kind of collaborative ecosystem that we envision for the future of work.
+Welcome to our website, where we explore the exciting possibilities of a future where humans and AI work together in perfect harmony. Our wallpaper depicts a futuristic cityscape where Ainautes and their AI counterparts build towering skyscrapers and infrastructure side by side. This image represents the kind of Coll<wbr>aborative ecosystem that we envision for the future of work.
 
 ## Our Vision
 
@@ -10,11 +10,11 @@ At our core, we believe that the future of work is not about replacing humans wi
 
 ## User Stories
 
-We've collected stories from people who are already working in collaborative ecosystems like the one depicted in our wallpaper. Here are just a few examples:
+We've collected stories from people who are already working in Coll<wbr>aborative ecosystems like the one depicted in our wallpaper. Here are just a few examples:
 
-- **Sarah**, an architect who uses AI to generate designs that she then refines and improves upon
-- **Javier**, a factory worker who works alongside robots to assemble complex machinery
-- **Maggie**, a data analyst who uses machine learning algorithms to uncover insights that she then uses to make strategic decisions
+-   **Sarah**, an architect who uses AI to generate designs that she then refines and improves upon
+-   **Javier**, a factory worker who works alongside robots to assemble complex machinery
+-   **Maggie**, a data analyst who uses machine learning algorithms to uncover insights that she then uses to make strategic decisions
 
 These stories demonstrate the power of collaboration between humans and AI, and we believe that they represent just the beginning of what's possible.
 
@@ -22,9 +22,9 @@ These stories demonstrate the power of collaboration between humans and AI, and 
 
 If you're interested in learning more about the future of work and the role that AI will play, we recommend checking out these resources:
 
-- _The Second Machine Age_ by Erik Brynjolfsson and Andrew McAfee
-- _Human + Machine_ by Paul Daugherty and H. James Wilson
-- The [World Economic Forum's report](#) on the Future of Jobs
+-   _The Second Machine Age_ by Erik Brynjolfsson and Andrew McAfee
+-   _Human + Machine_ by Paul Daugherty and H. James Wilson
+-   The [World Economic Forum's report](#) on the Future of Jobs
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,9 +55,9 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 ---
 
 
-# The Future of Work: Building a Collaborative Ecosystem
+# The Future of Work: Building a Coll<wbr>aborative Ecosystem
 
-Welcome to our website, where we explore the exciting possibilities of a future where humans and AI work together in perfect harmony. Our wallpaper depicts a futuristic cityscape where Ainautes and their AI counterparts build towering skyscrapers and infrastructure side by side. This image represents the kind of collaborative ecosystem that we envision for the future of work.
+Welcome to our website, where we explore the exciting possibilities of a future where humans and AI work together in perfect harmony. Our wallpaper depicts a futuristic cityscape where Ainautes and their AI counterparts build towering skyscrapers and infrastructure side by side. This image represents the kind of Coll<wbr>aborative ecosystem that we envision for the future of work.
 
 ## Our Vision
 
@@ -65,7 +65,7 @@ At our core, we believe that the future of work is not about replacing humans wi
 
 ## User Stories
 
-We've collected stories from people who are already working in collaborative ecosystems like the one depicted in our wallpaper. Here are just a few examples:
+We've collected stories from people who are already working in Coll<wbr>aborative ecosystems like the one depicted in our wallpaper. Here are just a few examples:
 
 - **Sarah**, an architect who uses AI to generate designs that she then refines and improves upon
 - **Javier**, a factory worker who works alongside robots to assemble complex machinery

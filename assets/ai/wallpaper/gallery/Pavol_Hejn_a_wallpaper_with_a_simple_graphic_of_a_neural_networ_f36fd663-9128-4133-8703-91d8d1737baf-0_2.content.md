@@ -2,7 +2,7 @@
 
 # Neural Tech Design
 
-Welcome to our website, where we offer a unique design featuring a simple graphic of a neural network against a backdrop of complementary colors. Our design is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
+Welcome to our website, where we offer a unique design featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. Our design is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
 
 ## About the Design
 
@@ -26,9 +26,9 @@ Download our design today to elevate your tech aesthetic. It's available in a va
 
 For more information on neural networks and AI, check out these resources:
 
-- [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen
-- [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/) by Stuart Russell and Peter Norvig
-- [OpenAI](https://openai.com/) - an organization dedicated to advancing AI in a safe and beneficial way.
+-   [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen
+-   [Artificial Intelligence: A Modern Approach](http://aima.cs.berkeley.edu/) by Stuart Russell and Peter Norvig
+-   [OpenAI](https://openai.com/) - an organization dedicated to advancing AI in a safe and beneficial way.
 
 ## Contact Us
 
@@ -38,14 +38,14 @@ If you have any questions or comments about our design, feel free to reach out t
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
+"A wallpaper with a simple graphic of a neural network, against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # The Neural Network: A Wallpaper Background for Tech Enthusiasts
 
-Welcome to our website, where we offer a unique wallpaper background featuring a simple graphic of a neural network against a backdrop of complementary colors. This wallpaper is perfect for tech enthusiasts, programmers, and anyone who loves the cutting-edge world of artificial intelligence.
+Welcome to our website, where we offer a unique wallpaper background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper is perfect for tech enthusiasts, programmers, and anyone who loves the cutting-edge world of artificial intelligence.
 
 ## About the Wallpaper
 
@@ -105,7 +105,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Enhance Your Tech Experience with Our Neural Network Background
 
-Welcome to our website, where we offer a unique background featuring a simple graphic of a neural network against a backdrop of complementary colors. This background is perfect for tech enthusiasts, programmers, and anyone who loves the cutting-edge world of artificial intelligence.
+Welcome to our website, where we offer a unique background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This background is perfect for tech enthusiasts, programmers, and anyone who loves the cutting-edge world of artificial intelligence.
 
 ## About the Background
 
@@ -149,7 +149,7 @@ Heading is too long, rewrite whole content.
 
 # Elevate Your Tech Aesthetic with Our Neural Network Background
 
-Welcome to our website, where we offer a unique background featuring a simple graphic of a neural network against a backdrop of complementary colors. Our background is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
+Welcome to our website, where we offer a unique background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. Our background is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
 
 ## About the Background
 
@@ -193,7 +193,7 @@ Heading is too long, rewrite whole content.
 
 # Elevate Your Tech Aesthetic with Our Neural Network Design
 
-Welcome to our website, where we offer a unique design featuring a simple graphic of a neural network against a backdrop of complementary colors. Our design is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
+Welcome to our website, where we offer a unique design featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. Our design is perfect for those who want to add a touch of sophistication and inspiration to their tech experience.
 
 ## About the Design
 

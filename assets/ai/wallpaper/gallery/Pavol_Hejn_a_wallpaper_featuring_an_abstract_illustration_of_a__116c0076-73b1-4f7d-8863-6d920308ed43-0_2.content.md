@@ -16,10 +16,10 @@ At Future Metropolis, we believe that it is important to critically examine the 
 
 Our articles cover a wide range of topics, including:
 
-- The impact of automation on employment
-- The ethics of artificial intelligence
-- The future of transportation
-- The effects of climate change on urban environments
+-   The impact of automation on employment
+-   The ethics of artificial intelligence
+-   The future of transportation
+-   The effects of climate change on urban environments
 
 We also feature interviews with experts in various fields, as well as opinion pieces from our contributors.
 
@@ -35,20 +35,20 @@ We love hearing from our readers! Check out some of the stories and feedback we'
 
 Looking for more resources on futurism and related topics? Check out our list of recommended books, podcasts, and websites:
 
-- _The Singularity is Near_ by Ray Kurzweil
-- _Exponential View_ podcast with Azeem Azhar
-- _The Future of Humanity_ by Michio Kaku
+-   _The Singularity is Near_ by Ray Kurzweil
+-   _Exponential View_ podcast with Azeem Azhar
+-   _The Future of Humanity_ by Michio Kaku
 
 ## Contact Us
 
 Have a question or comment? We'd love to hear from you! Send us an email at [contact@futuremetropolis.com](mailto:contact@futuremetropolis.com) or reach out on social media:
 
-- Twitter: [@futuremetropolis](#)
-- Instagram: [@futuremetropolis](#)
+-   Twitter: [@futuremetropolis](#)
+-   Instagram: [@futuremetropolis](#)
 
 ---
 
-Join us as we explore the complex and fascinating world of tomorrow.
+Join us as we explore the complex and Fas<wbr>ci<wbr>na<wbr>ting world of tomorrow.
 
 <!--
 
@@ -58,10 +58,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -123,7 +123,7 @@ Have a question or comment? We'd love to hear from you! Send us an email at [con
 
 ---
 
-Join us as we explore the complex and fascinating world of tomorrow.
+Join us as we explore the complex and Fas<wbr>ci<wbr>na<wbr>ting world of tomorrow.
 
 
 ---
@@ -183,6 +183,6 @@ Have a question or comment? We'd love to hear from you! Send us an email at [con
 
 ---
 
-Join us as we explore the complex and fascinating world of tomorrow.
+Join us as we explore the complex and Fas<wbr>ci<wbr>na<wbr>ting world of tomorrow.
 
 -->

@@ -8,9 +8,9 @@ Welcome to our website where you can discover the perfect background for your de
 
 Our futuristic world background is not just a beautiful image, it also provides a range of benefits that make it the perfect choice for your desktop background:
 
-- The dark color scheme helps reduce eye strain and fatigue, making it easier to work for longer periods.
-- The futuristic design inspires creativity and imagination, helping you stay focused and motivated throughout the day.
-- The high-quality resolution ensures that the background looks great on any screen size, from laptops to large desktop monitors.
+-   The dark color scheme helps reduce eye strain and fatigue, making it easier to work for longer periods.
+-   The futuristic design inspires creativity and imagination, helping you stay focused and motivated throughout the day.
+-   The high-quality resolution ensures that the background looks great on any screen size, from laptops to large desktop monitors.
 
 ## User Stories
 
@@ -18,7 +18,7 @@ Don't just take our word for it, here are some user stories from people who have
 
 > "I feel like I'm transported to a different world every time I look at this background. It's definitely helped me stay inspired and motivated throughout the day." - Alex, writer
 
-> "This background is amazing! The design is so unique and captivating, it really helps me stay focused when I'm working on my projects." - Emily, graphic designer
+> "This background is amazing! The design is so unique and Cap<wbr>ti<wbr>va<wbr>ting, it really helps me stay focused when I'm working on my projects." - Emily, graphic designer
 
 ## How to Download
 
@@ -32,17 +32,17 @@ Downloading our futuristic world background is easy:
 
 If you're interested in exploring more about the design and inspiration behind our futuristic world background, check out these resources:
 
-- [The Art of Futuristic Cities](#)
-- [Creating Moody Color Schemes for Digital Art](#)
-- [How to Stay Focused and Motivated While Working from Home](#)
+-   [The Art of Futuristic Cities](#)
+-   [Creating Moody Color Schemes for Digital Art](#)
+-   [How to Stay Focused and Motivated While Working from Home](#)
 
 ## Contact Us
 
 If you have any questions or comments about our futuristic world background, please don't hesitate to contact us:
 
-- Email: background@futuristicworld.com
-- Phone: 555-1234
-- Address: 123 Main Street, Anytown USA
+-   Email: background@futuristicworld.com
+-   Phone: 555-1234
+-   Address: 123 Main Street, Anytown USA
 
 <!--
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -141,7 +141,7 @@ Don't just take our word for it, here are some user stories from people who have
 
 > "I feel like I'm transported to a different world every time I look at this background. It's definitely helped me stay inspired and motivated throughout the day." - Alex, writer
 
-> "This background is amazing! The design is so unique and captivating, it really helps me stay focused when I'm working on my projects." - Emily, graphic designer
+> "This background is amazing! The design is so unique and Cap<wbr>ti<wbr>va<wbr>ting, it really helps me stay focused when I'm working on my projects." - Emily, graphic designer
 
 ## How to Download
 

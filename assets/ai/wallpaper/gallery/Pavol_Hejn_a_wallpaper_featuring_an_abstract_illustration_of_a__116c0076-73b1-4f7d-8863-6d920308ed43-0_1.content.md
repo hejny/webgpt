@@ -2,7 +2,7 @@
 
 # FutureScapes
 
-Experience a world of innovation and creativity with our captivating design of a dark and futuristic cityscape. Our abstract illustration features towering skyscrapers and glowing lights that will elevate your desktop or mobile screen to new heights.
+Experience a world of innovation and creativity with our Cap<wbr>ti<wbr>va<wbr>ting design of a dark and futuristic cityscape. Our abstract illustration features towering skyscrapers and glowing lights that will elevate your desktop or mobile screen to new heights.
 
 ## Stand Out from the Crowd
 
@@ -68,7 +68,7 @@ Step into a world of endless possibilities with our abstract illustration of a d
 
 ## Elevate Your Desktop or Mobile Screen
 
-Bring this captivating design to your desktop or mobile screen and elevate your digital experience. The sleek and modern buildings, illuminated by bright lights, add a touch of uniqueness and creativity to your device's background.
+Bring this Cap<wbr>ti<wbr>va<wbr>ting design to your desktop or mobile screen and elevate your digital experience. The sleek and modern buildings, illuminated by bright lights, add a touch of uniqueness and creativity to your device's background.
 
 ## Easy Download and Compatibility
 
@@ -94,7 +94,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Futuristic World of Glowing Cityscapes
 
-Step into a world of innovation and creativity with our captivating design of a dark and futuristic cityscape. The abstract illustration features towering skyscrapers and glowing lights that will elevate your desktop or mobile screen to new heights.
+Step into a world of innovation and creativity with our Cap<wbr>ti<wbr>va<wbr>ting design of a dark and futuristic cityscape. The abstract illustration features towering skyscrapers and glowing lights that will elevate your desktop or mobile screen to new heights.
 
 ## Elevate Your Digital Experience
 
@@ -124,7 +124,7 @@ Heading is too long, rewrite whole content.
 
 # Futuristic Cityscapes: Elevate Your Digital Experience
 
-Experience a world of innovation and creativity with our captivating design of a dark and futuristic cityscape. Our abstract illustration features towering skyscrapers and glowing lights that will elevate your desktop or mobile screen to new heights.
+Experience a world of innovation and creativity with our Cap<wbr>ti<wbr>va<wbr>ting design of a dark and futuristic cityscape. Our abstract illustration features towering skyscrapers and glowing lights that will elevate your desktop or mobile screen to new heights.
 
 ## Stand Out from the Crowd
 

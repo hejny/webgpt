@@ -30,7 +30,7 @@ Our team is made up of experts in various fields including artificial intelligen
 
 The space station is unlike anything we have ever encountered before. It is massive, spanning over 10 kilometers in length and containing numerous levels and compartments. Its age is estimated to be over 10,000 years old, making it one of the oldest known structures in the galaxy.
 
-We have already discovered several fascinating features, including advanced energy systems, highly sophisticated AI constructs, and even evidence of an unknown alien race. We are constantly uncovering new information and updating our findings on this website.
+We have already discovered several Fas<wbr>ci<wbr>na<wbr>ting features, including advanced energy systems, highly sophisticated AI constructs, and even evidence of an unknown alien race. We are constantly uncovering new information and updating our findings on this website.
 
 ## User Stories
 

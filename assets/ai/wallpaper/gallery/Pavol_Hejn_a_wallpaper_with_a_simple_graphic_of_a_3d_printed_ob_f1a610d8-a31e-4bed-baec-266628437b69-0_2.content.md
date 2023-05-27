@@ -2,14 +2,14 @@
 
 # Geometric Space Elevate
 
-Welcome to our website, where we offer a range of products and services to help you elevate your living space. Our latest addition is a background featuring geometric patterns in complementary colors, which can add a modern touch to any room.
+Welcome to our website, where we offer a range of products and services to help you elevate your living space. Our latest addition is a background featuring geometric patterns in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors, which can add a modern touch to any room.
 
 ## Features
 
-- High-quality background made from durable materials
-- Easy to install with step-by-step instructions included
-- Available in a range of sizes to fit any room
-- Adds a unique and stylish touch to any space
+-   High-quality background made from durable materials
+-   Easy to install with step-by-step instructions included
+-   Available in a range of sizes to fit any room
+-   Adds a unique and stylish touch to any space
 
 ## Inspiration
 
@@ -27,17 +27,17 @@ We have received many positive reviews from customers who have used our Geometri
 
 If you're interested in learning more about the latest trends in interior design, here are some resources we recommend:
 
-- [Architectural Digest](#)
-- [Elle Decor](#)
-- [House Beautiful](#)
+-   [Architectural Digest](#)
+-   [Elle Decor](#)
+-   [House Beautiful](#)
 
 ## Contact Us
 
 If you have any questions about our Geometric Patterns background or any of our other products and services, please don't hesitate to contact us. We're always happy to help!
 
-- Phone: 555-555-5555
-- Email: info@geometricpatterns.com
-- Address: 123 Main St, Anytown USA
+-   Phone: 555-555-5555
+-   Email: info@geometricpatterns.com
+-   Address: 123 Main St, Anytown USA
 
 Thank you for visiting our website and we look forward to helping you elevate your living space with our Geometric Patterns background.
 
@@ -45,14 +45,14 @@ Thank you for visiting our website and we look forward to helping you elevate yo
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a 3D-printed object, against a background of geometric shapes in complementary colors."
+"A wallpaper with a simple graphic of a 3D-printed object, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -68,7 +68,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Geometric Patterns Wallpaper for a Modern Look
 
-Welcome to our website, where we offer a range of products and services to help you create a modern and stylish look for your home or office. Our latest addition is the Geometric Patterns Wallpaper, featuring a simple graphic of a 3D-printed object against a background of geometric shapes in complementary colors.
+Welcome to our website, where we offer a range of products and services to help you create a modern and stylish look for your home or office. Our latest addition is the Geometric Patterns Wallpaper, featuring a simple graphic of a 3D-printed object against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## Features
 
@@ -119,7 +119,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Elevate Your Space with Geometric Patterns
 
-Welcome to our website, where we offer a range of products and services to help you elevate your living space. Our latest addition is a background featuring geometric patterns in complementary colors, which can add a modern touch to any room.
+Welcome to our website, where we offer a range of products and services to help you elevate your living space. Our latest addition is a background featuring geometric patterns in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors, which can add a modern touch to any room.
 
 ## Features
 

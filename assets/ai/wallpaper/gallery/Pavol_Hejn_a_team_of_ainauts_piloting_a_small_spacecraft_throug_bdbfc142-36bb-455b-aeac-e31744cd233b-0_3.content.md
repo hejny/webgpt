@@ -6,7 +6,7 @@ Welcome to our website dedicated to all things space! Our mission is to bring yo
 
 ## The Image
 
-Our background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This captivating image perfectly captures the excitement and danger of space exploration, reminding us of the bravery and skill required to venture into the unknown.
+Our background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This Cap<wbr>ti<wbr>va<wbr>ting image perfectly captures the excitement and danger of space exploration, reminding us of the bravery and skill required to venture into the unknown.
 
 ## Latest News
 
@@ -107,7 +107,7 @@ Welcome to our website dedicated to all things space! Our mission is to bring yo
 
 ## The Image
 
-Our background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This captivating image perfectly captures the excitement and danger of space exploration, reminding us of the bravery and skill required to venture into the unknown.
+Our background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This Cap<wbr>ti<wbr>va<wbr>ting image perfectly captures the excitement and danger of space exploration, reminding us of the bravery and skill required to venture into the unknown.
 
 ## Latest News
 

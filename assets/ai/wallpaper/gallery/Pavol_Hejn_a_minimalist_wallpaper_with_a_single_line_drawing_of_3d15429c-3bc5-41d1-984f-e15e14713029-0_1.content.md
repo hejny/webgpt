@@ -12,33 +12,33 @@ Small businesses are often targeted by cybercriminals because they may have weak
 
 Here are some practical tips you can implement to improve your cybersecurity:
 
-- Use strong passwords and two-factor authentication
-- Keep software up to date
-- Train employees on cybersecurity best practices
-- Back up important data regularly
-- Monitor your network for unusual activity
+-   Use strong passwords and two-factor authentication
+-   Keep software up to date
+-   Train employees on cybersecurity best practices
+-   Back up important data regularly
+-   Monitor your network for unusual activity
 
 ## User Stories
 
 Hear from small business owners who have experienced cyber attacks and learn how they recovered:
 
-- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a comprehensive cybersecurity plan in place." - Jane, Owner of a Retail Store
-- "After a phishing attack, we lost access to all of our files. We didn't have backups, so we had to pay a ransom to get them back. It was a costly mistake, but now we take cybersecurity seriously and have implemented better security measures." - John, Owner of a Marketing Agency
+-   "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a Com<wbr>pre<wbr>hen<wbr>sive cybersecurity plan in place." - Jane, Owner of a Retail Store
+-   "After a phishing attack, we lost access to all of our files. We didn't have backups, so we had to pay a ransom to get them back. It was a costly mistake, but now we take cybersecurity seriously and have implemented better security measures." - John, Owner of a Marketing Agency
 
 ## Resources
 
 Stay up to date on the latest cybersecurity news and trends with these resources:
 
-- [National Institute of Standards and Technology Cybersecurity Framework](#nist-cybersecurity-framework)
-- [Cybersecurity and Infrastructure Security Agency Small Business Resources](#cisa-small-business-resources)
+-   [National Institute of Standards and Technology Cybersecurity Framework](#nist-cybersecurity-framework)
+-   [Cybersecurity and Infrastructure Security Agency Small Business Resources](#cisa-small-business-resources)
 
 ## Contact Us
 
 If you have any questions about cybersecurity for your small business, don't hesitate to reach out:
 
-- Phone: 555-1234
-- Email: info@cybersecurityforsmallbiz.com
-- Twitter: [@cybersecbiz](#twitter-cybersecbiz)
+-   Phone: 555-1234
+-   Email: info@cybersecurityforsmallbiz.com
+-   Twitter: [@cybersecbiz](#twitter-cybersecbiz)
 
 <!--
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ Small businesses are often targeted by cybercriminals because they may have weak
 
 Hear from small business owners who have experienced cyber attacks and learn how they recovered:
 
-- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a comprehensive cybersecurity plan in place." - Jane, Owner of a Retail Store
+- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a Com<wbr>pre<wbr>hen<wbr>sive cybersecurity plan in place." - Jane, Owner of a Retail Store
 - "After a phishing attack, we lost access to all of our files. We didn't have backups, so we had to pay a ransom to get them back. It was a costly mistake, but now we take cybersecurity seriously and have implemented better security measures." - John, Owner of a Marketing Agency
 
 ## References
@@ -135,7 +135,7 @@ Here are some actionable tips you can implement to improve your cybersecurity:
 
 Hear from small business owners who have experienced cyber attacks and learn how they recovered:
 
-- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a comprehensive cybersecurity plan in place." - Jane, Owner of a Retail Store
+- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a Com<wbr>pre<wbr>hen<wbr>sive cybersecurity plan in place." - Jane, Owner of a Retail Store
 - "After a phishing attack, we lost access to all of our files. We didn't have backups, so we had to pay a ransom to get them back. It was a costly mistake, but now we take cybersecurity seriously and have implemented better security measures." - John, Owner of a Marketing Agency
 
 ## References
@@ -185,7 +185,7 @@ Here are some practical tips you can implement to improve your cybersecurity:
 
 Hear from small business owners who have experienced cyber attacks and learn how they recovered:
 
-- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a comprehensive cybersecurity plan in place." - Jane, Owner of a Retail Store
+- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a Com<wbr>pre<wbr>hen<wbr>sive cybersecurity plan in place." - Jane, Owner of a Retail Store
 - "After a phishing attack, we lost access to all of our files. We didn't have backups, so we had to pay a ransom to get them back. It was a costly mistake, but now we take cybersecurity seriously and have implemented better security measures." - John, Owner of a Marketing Agency
 
 ## Resources
@@ -235,7 +235,7 @@ Here are some practical tips you can implement to improve your cybersecurity:
 
 Hear from small business owners who have experienced cyber attacks and learn how they recovered:
 
-- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a comprehensive cybersecurity plan in place." - Jane, Owner of a Retail Store
+- "We thought we were safe because we had antivirus software, but hackers still managed to steal our customer data. It was a nightmare, but we learned the hard way the importance of having a Com<wbr>pre<wbr>hen<wbr>sive cybersecurity plan in place." - Jane, Owner of a Retail Store
 - "After a phishing attack, we lost access to all of our files. We didn't have backups, so we had to pay a ransom to get them back. It was a costly mistake, but now we take cybersecurity seriously and have implemented better security measures." - John, Owner of a Marketing Agency
 
 ## Resources

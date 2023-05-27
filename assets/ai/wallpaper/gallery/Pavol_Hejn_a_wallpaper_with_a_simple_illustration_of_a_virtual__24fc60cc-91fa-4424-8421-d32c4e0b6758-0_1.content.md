@@ -16,9 +16,9 @@ Virtual reality offers a unique opportunity to engage students in ways that trad
 
 We offer a range of services designed to help educators integrate virtual reality into their teaching. These include:
 
-- **Consulting:** We work with schools and educational institutions to develop customized VR solutions that meet their specific needs.
-- **Training:** Our team provides comprehensive training on the latest VR technology, as well as best practices for using it in the classroom.
-- **Content Creation:** We can create custom VR content tailored to your curriculum, ensuring that your students get the most out of their immersive learning experience.
+-   **Consulting:** We work with schools and educational institutions to develop customized VR solutions that meet their specific needs.
+-   **Training:** Our team provides Com<wbr>pre<wbr>hen<wbr>sive training on the latest VR technology, as well as best practices for using it in the classroom.
+-   **Content Creation:** We can create custom VR content tailored to your curriculum, ensuring that your students get the most out of their immersive learning experience.
 
 ## User Stories
 
@@ -32,9 +32,9 @@ Don't just take our word for it - hear from educators who have already incorpora
 
 For more information on virtual reality in education, check out these resources:
 
-- [EdTech Magazine](#)
-- [Virtual Reality Society](#)
-- [eLearning Industry](#)
+-   [EdTech Magazine](#)
+-   [Virtual Reality Society](#)
+-   [eLearning Industry](#)
 
 ## Contact Us
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -82,7 +82,7 @@ Virtual reality offers a unique opportunity to engage students in ways that trad
 We offer a range of services designed to help educators integrate virtual reality into their teaching. These include:
 
 - **Consulting:** We work with schools and educational institutions to develop customized VR solutions that meet their specific needs.
-- **Training:** Our team provides comprehensive training on the latest VR technology, as well as best practices for using it in the classroom.
+- **Training:** Our team provides Com<wbr>pre<wbr>hen<wbr>sive training on the latest VR technology, as well as best practices for using it in the classroom.
 - **Content Creation:** We can create custom VR content tailored to your curriculum, ensuring that your students get the most out of their immersive learning experience.
 
 ## User Stories

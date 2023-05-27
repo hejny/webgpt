@@ -10,10 +10,10 @@ Our wallpaper is designed to inspire you with the beauty and simplicity of mathe
 
 ### Features
 
-- Simple and elegant design
-- Repeating pattern of equations and formulas
-- Minimalist and modern look
-- High-quality resolution for all screen sizes
+-   Simple and elegant design
+-   Repeating pattern of equations and formulas
+-   Minimalist and modern look
+-   High-quality resolution for all screen sizes
 
 ### How to Download
 
@@ -27,7 +27,7 @@ At MathWorks, we offer a wide range of math resources for students, educators, a
 
 ### References
 
-Our references section includes a comprehensive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
+Our references section includes a Com<wbr>pre<wbr>hen<wbr>sive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
 
 ### User Stories
 
@@ -51,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,7 +95,7 @@ At MathWorks, we believe that anyone can learn math with the right resources and
 
 ### References
 
-Our references section includes a comprehensive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
+Our references section includes a Com<wbr>pre<wbr>hen<wbr>sive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
 
 ### User Stories
 
@@ -148,7 +148,7 @@ At MathWorks, we offer a wide range of math resources for students, educators, a
 
 ### References
 
-Our references section includes a comprehensive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
+Our references section includes a Com<wbr>pre<wbr>hen<wbr>sive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
 
 ### User Stories
 
@@ -201,7 +201,7 @@ At MathWorks, we offer a wide range of math resources for students, educators, a
 
 ### References
 
-Our references section includes a comprehensive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
+Our references section includes a Com<wbr>pre<wbr>hen<wbr>sive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
 
 ### User Stories
 
@@ -254,7 +254,7 @@ At MathWorks, we offer a wide range of math resources for students, educators, a
 
 ### References
 
-Our references section includes a comprehensive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
+Our references section includes a Com<wbr>pre<wbr>hen<wbr>sive list of math topics, from basic arithmetic to advanced calculus. Each topic includes a detailed explanation and examples to help you understand the concept.
 
 ### User Stories
 

@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Zero-G Experiments
 
-Welcome to our website where we explore the fascinating world of artificial intelligence and its impact on human physiology. Our team of Ainautes is conducting experiments in a zero-gravity chamber to understand how AI affects the human body.
+Welcome to our website where we explore the Fas<wbr>ci<wbr>na<wbr>ting world of artificial intelligence and its impact on human physiology. Our team of Ainautes is conducting experiments in a zero-gravity chamber to understand how AI affects the human body.
 
 ## What We're Studying
 
@@ -37,7 +37,7 @@ Our experiments take place in a specially designed zero-gravity chamber that sim
 
 Our team of Ainautes includes experts in the fields of AI, medicine, and space exploration. They bring a wealth of knowledge and experience to our research, and we are proud to have them on board.
 
-> "The intersection of AI and human physiology is a fascinating area of study. We are excited to be at the forefront of this field and look forward to uncovering new insights into the relationship between humans and technology." - Dr. Jane Smith, Lead Researcher
+> "The intersection of AI and human physiology is a Fas<wbr>ci<wbr>na<wbr>ting area of study. We are excited to be at the forefront of this field and look forward to uncovering new insights into the relationship between humans and technology." - Dr. Jane Smith, Lead Researcher
 
 ## Get Involved
 

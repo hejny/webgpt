@@ -48,7 +48,7 @@ If you're interested in learning more about Mars and space exploration, check ou
 
 ### NASA Mars Exploration Program
 
-The NASA Mars Exploration Program is a comprehensive resource for information about Mars missions, current and past. You can learn about the latest discoveries, follow ongoing missions, and even explore Mars in 3D.
+The NASA Mars Exploration Program is a Com<wbr>pre<wbr>hen<wbr>sive resource for information about Mars missions, current and past. You can learn about the latest discoveries, follow ongoing missions, and even explore Mars in 3D.
 
 ### SpaceX Mars Mission
 

@@ -2,7 +2,7 @@
 
 # RoboArm Innovation
 
-Welcome to RoboArm, a website dedicated to inspiring innovation and progress in the world of technology. Our sleek and modern design features a simple graphic of a robot arm against a gradient background of two complementary colors, perfect for tech enthusiasts who want to showcase their passion.
+Welcome to RoboArm, a website dedicated to inspiring innovation and progress in the world of technology. Our sleek and modern design features a simple graphic of a robot arm against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors, perfect for tech enthusiasts who want to showcase their passion.
 
 ## Why Choose RoboArm?
 
@@ -20,17 +20,17 @@ Here are some stories from our satisfied users:
 
 If you want to learn more about the latest trends and innovations in technology, check out these resources:
 
-- [The Future of Robotics](#)
-- [How Technology is Changing the World](#)
-- [Innovative Designs in Tech](#)
+-   [The Future of Robotics](#)
+-   [How Technology is Changing the World](#)
+-   [Innovative Designs in Tech](#)
 
 ## Contact Us
 
 If you have any questions or comments about our website or the RoboArm design, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: info@roboarm.com
-- Phone: 555-1234
-- Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
+-   Email: info@roboarm.com
+-   Phone: 555-1234
+-   Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
 
 Thank you for choosing RoboArm, a website dedicated to inspiring innovation and progress in the world of technology!
 
@@ -38,14 +38,14 @@ Thank you for choosing RoboArm, a website dedicated to inspiring innovation and 
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a robot arm, against a gradient background of two complementary colors."
+"A wallpaper with a simple graphic of a robot arm, against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # RoboArm: A Futuristic Wallpaper for Tech Enthusiasts
 
-Welcome to RoboArm, the perfect wallpaper for those who love all things tech! Our wallpaper features a simple graphic of a robot arm against a gradient background of two complementary colors. This futuristic design is perfect for anyone who wants to showcase their love for technology.
+Welcome to RoboArm, the perfect wallpaper for those who love all things tech! Our wallpaper features a simple graphic of a robot arm against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This futuristic design is perfect for anyone who wants to showcase their love for technology.
 
 ## Why Choose RoboArm?
 
@@ -105,7 +105,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # RoboArm: Inspiring Innovation and Progress in Technology
 
-Welcome to RoboArm, a website dedicated to inspiring innovation and progress in the world of technology. Our sleek and modern design features a simple graphic of a robot arm against a gradient background of two complementary colors, perfect for tech enthusiasts who want to showcase their passion.
+Welcome to RoboArm, a website dedicated to inspiring innovation and progress in the world of technology. Our sleek and modern design features a simple graphic of a robot arm against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors, perfect for tech enthusiasts who want to showcase their passion.
 
 ## Why Choose RoboArm?
 

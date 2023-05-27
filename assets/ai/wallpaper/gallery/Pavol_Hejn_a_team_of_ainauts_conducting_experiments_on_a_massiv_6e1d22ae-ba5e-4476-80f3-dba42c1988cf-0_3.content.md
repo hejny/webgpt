@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring Icy Moons
 
-Welcome to our website dedicated to exploring the icy moons of the outer solar system! Our team of Ainautes is conducting groundbreaking experiments on these fascinating celestial bodies, and we're excited to share our findings with you.
+Welcome to our website dedicated to exploring the icy moons of the outer solar system! Our team of Ainautes is conducting groundbreaking experiments on these Fas<wbr>ci<wbr>na<wbr>ting celestial bodies, and we're excited to share our findings with you.
 
 ## About Us
 
@@ -30,7 +30,7 @@ Our team is comprised of leading scientists and engineers from around the world,
 
 Our current focus is on a massive, frozen moon orbiting a gas giant planet. Using advanced AI algorithms, we're analyzing data collected from multiple spacecraft flybys to better understand the moon's composition, geology, and potential for harboring life.
 
-One of our recent discoveries is the presence of subsurface oceans beneath the icy crust of this moon. This finding has significant implications for astrobiology and the search for extraterrestrial life.
+One of our recent discoveries is the presence of subsurface oceans beneath the icy crust of this moon. This finding has significant implications for astrobiology and the search for Ex<wbr>tra<wbr>terre<wbr>strial life.
 
 ## User Stories
 

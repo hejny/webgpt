@@ -14,9 +14,9 @@ The intricate pattern of the wallpaper reflects the complexity of quantum comput
 
 At Quantum Computing Solutions, we offer a wide range of services designed to help businesses harness the power of quantum computing. Some of our services include:
 
-- **Quantum Consulting:** Our team of experts will work closely with you to understand your business needs and develop a customized quantum computing strategy.
-- **Quantum Software Development:** We specialize in developing software applications that leverage the power of quantum computing to solve complex problems.
-- **Quantum Training and Education:** We offer comprehensive training programs to help your team understand the fundamentals of quantum computing and how it can be applied to your business.
+-   **Quantum Consulting:** Our team of experts will work closely with you to understand your business needs and develop a customized quantum computing strategy.
+-   **Quantum Software Development:** We specialize in developing software applications that leverage the power of quantum computing to solve complex problems.
+-   **Quantum Training and Education:** We offer Com<wbr>pre<wbr>hen<wbr>sive training programs to help your team understand the fundamentals of quantum computing and how it can be applied to your business.
 
 ## User Stories
 
@@ -30,9 +30,9 @@ Don't just take our word for it - hear from some of our satisfied clients about 
 
 Looking for more information about quantum computing and how it can benefit your business? Check out some of our recommended resources:
 
-- [IBM Quantum Computing](#)
-- [Microsoft Quantum Computing](#)
-- [Quantum Computing Report](#)
+-   [IBM Quantum Computing](#)
+-   [Microsoft Quantum Computing](#)
+-   [Quantum Computing Report](#)
 
 ## Contact Us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -79,7 +79,7 @@ At Quantum Computing Solutions, we offer a wide range of services designed to he
 
 - **Quantum Consulting:** Our team of experts will work closely with you to understand your business needs and develop a customized quantum computing strategy.
 - **Quantum Software Development:** We specialize in developing software applications that leverage the power of quantum computing to solve complex problems.
-- **Quantum Training and Education:** We offer comprehensive training programs to help your team understand the fundamentals of quantum computing and how it can be applied to your business.
+- **Quantum Training and Education:** We offer Com<wbr>pre<wbr>hen<wbr>sive training programs to help your team understand the fundamentals of quantum computing and how it can be applied to your business.
 
 ## User Stories
 

@@ -6,7 +6,7 @@ Welcome to our website, where we offer a unique collection of backgrounds that w
 
 ## Elevate Your Desktop Experience
 
-Whether you're an astronomy enthusiast or simply looking for a captivating background for your desktop, our planetary adventure collection has something for everyone. Each background is carefully selected to provide a unique and immersive experience that will elevate your desktop to new heights.
+Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your desktop, our planetary adventure collection has something for everyone. Each background is carefully selected to provide a unique and immersive experience that will elevate your desktop to new heights.
 
 ## Explore the Beauty of a Distant Glacier
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ Our glacier wallpaper captures the beauty of a distant planet, where a massive g
 
 ## Elevate Your Desktop Experience
 
-Whether you're an astronomy enthusiast or simply looking for a captivating background for your desktop, our planetary adventure wallpaper collection has something for everyone. Each wallpaper is carefully selected to provide a unique and immersive experience that will elevate your desktop to new heights.
+Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your desktop, our planetary adventure wallpaper collection has something for everyone. Each wallpaper is carefully selected to provide a unique and immersive experience that will elevate your desktop to new heights.
 
 ## User Stories
 
@@ -97,7 +97,7 @@ Welcome to our website, where we offer a unique collection of backgrounds that w
 
 ## Elevate Your Desktop Experience
 
-Whether you're an astronomy enthusiast or simply looking for a captivating background for your desktop, our planetary adventure collection has something for everyone. Each background is carefully selected to provide a unique and immersive experience that will elevate your desktop to new heights.
+Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your desktop, our planetary adventure collection has something for everyone. Each background is carefully selected to provide a unique and immersive experience that will elevate your desktop to new heights.
 
 ## Explore the Beauty of a Distant Glacier
 

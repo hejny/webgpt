@@ -24,7 +24,7 @@ Our website is your one-stop-shop for all things outdoor adventure. Whether you'
 
 ## Gear Up for Your Next Adventure
 
-We know that having the right gear can make or break an outdoor adventure. That's why we've put together comprehensive gear reviews to help you choose the best equipment for your needs. From hiking boots to camping stoves, we've tested it all.
+We know that having the right gear can make or break an outdoor adventure. That's why we've put together Com<wbr>pre<wbr>hen<wbr>sive gear reviews to help you choose the best equipment for your needs. From hiking boots to camping stoves, we've tested it all.
 
 ## Connect with Other Adventurers
 

@@ -6,10 +6,10 @@ Welcome to our website where you can find stunning backgrounds for your device. 
 
 ## Why Choose Our Butterfly Background?
 
-- High-quality resolution for a crisp and clear display
-- Unique and eye-catching design
-- Free to download and use
-- Compatible with various devices including desktops, laptops, tablets, and smartphones
+-   High-quality resolution for a crisp and clear display
+-   Unique and eye-catching design
+-   Free to download and use
+-   Compatible with various devices including desktops, laptops, tablets, and smartphones
 
 ## How to Download and Set the Wallpaper
 
@@ -30,11 +30,11 @@ Our butterfly background has received rave reviews from our users:
 
 ## References
 
-If you're interested in learning more about butterflies and flowers, check out these resources:
+If you're interested in learning more about But<wbr>ter<wbr>flies and flowers, check out these resources:
 
-- [Butterfly Conservation](#)
-- [National Geographic: Butterflies](#)
-- [Flower Meaning: Flower Symbolism](#)
+-   [Butterfly Conservation](#)
+-   [National Geographic: But<wbr>ter<wbr>flies](#)
+-   [Flower Meaning: Flower Symbolism](#)
 
 ## Contact Us
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,10 +95,10 @@ Our butterfly background has received rave reviews from our users:
 
 ## References
 
-If you're interested in learning more about butterflies and flowers, check out these resources:
+If you're interested in learning more about But<wbr>ter<wbr>flies and flowers, check out these resources:
 
 - [Butterfly Conservation](#)
-- [National Geographic: Butterflies](#)
+- [National Geographic: But<wbr>ter<wbr>flies](#)
 - [Flower Meaning: Flower Symbolism](#)
 
 ## Contact Us

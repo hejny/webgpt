@@ -6,19 +6,19 @@ Welcome to our website dedicated to the exploration and discovery of the distant
 
 ## Explore the Mysteries of Zephyr
 
-Our website is your comprehensive guide to all things related to the planet Zephyr. From its unique geography to its fascinating flora and fauna, we provide an in-depth look at this alien world.
+Our website is your Com<wbr>pre<wbr>hen<wbr>sive guide to all things related to the planet Zephyr. From its unique geography to its Fas<wbr>ci<wbr>na<wbr>ting flora and fauna, we provide an in-depth look at this alien world.
 
-- Learn about the history of Zephyr and its inhabitants
-- Discover the secrets of its underground caverns and ancient ruins
-- Marvel at the stunning vistas of its towering mountains and vast deserts
+-   Learn about the history of Zephyr and its inhabitants
+-   Discover the secrets of its underground caverns and ancient ruins
+-   Marvel at the stunning vistas of its towering mountains and vast deserts
 
 ## Plan Your Interstellar Adventure
 
 Are you inspired to visit Zephyr yourself? Our website provides all the information you need to plan your own interstellar adventure.
 
-- Find the best times to visit based on Zephyr's orbit and weather patterns
-- Learn about the different modes of transportation available for traversing the planet's varied terrain
-- Get tips on packing for your trip and staying safe in Zephyr's harsh environment
+-   Find the best times to visit based on Zephyr's orbit and weather patterns
+-   Learn about the different modes of transportation available for traversing the planet's varied terrain
+-   Get tips on packing for your trip and staying safe in Zephyr's harsh environment
 
 ## Join Our Community of Explorers
 
@@ -28,9 +28,9 @@ Connect with other travelers who share your love for Zephyr on our community for
 
 For more information about Zephyr and the inspiration behind our design, check out these resources:
 
-- [The Science of Exoplanets](#)
-- [Vintage Travel Posters](#)
-- [Alien Worlds: The Galaxy's Most Mysterious Planets](#)
+-   [The Science of Exoplanets](#)
+-   [Vintage Travel Posters](#)
+-   [Alien Worlds: The Galaxy's Most Mysterious Planets](#)
 
 ## Contact Us
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ Welcome to our website, where we bring you on a journey to the distant planet Ze
 
 ## Explore the Mysteries of Zephyr
 
-Our website is dedicated to all things related to the planet Zephyr. From its unique geography to its fascinating flora and fauna, we provide a comprehensive guide to this alien world. 
+Our website is dedicated to all things related to the planet Zephyr. From its unique geography to its Fas<wbr>ci<wbr>na<wbr>ting flora and fauna, we provide a Com<wbr>pre<wbr>hen<wbr>sive guide to this alien world.
 
 - Learn about the history of Zephyr and its inhabitants
 - Discover the secrets of its underground caverns and ancient ruins
@@ -121,7 +121,7 @@ Welcome to our website dedicated to the exploration and discovery of the distant
 
 ## Discover the Secrets of Zephyr
 
-Our website is a comprehensive guide to all things related to the planet Zephyr. From its unique geography to its fascinating flora and fauna, we provide an in-depth look at this alien world.
+Our website is a Com<wbr>pre<wbr>hen<wbr>sive guide to all things related to the planet Zephyr. From its unique geography to its Fas<wbr>ci<wbr>na<wbr>ting flora and fauna, we provide an in-depth look at this alien world.
 
 - Learn about the history of Zephyr and its inhabitants
 - Discover the secrets of its underground caverns and ancient ruins
@@ -171,7 +171,7 @@ Welcome to our website dedicated to the exploration and discovery of the distant
 
 ## Explore the Mysteries of Zephyr
 
-Our website is your comprehensive guide to all things related to the planet Zephyr. From its unique geography to its fascinating flora and fauna, we provide an in-depth look at this alien world.
+Our website is your Com<wbr>pre<wbr>hen<wbr>sive guide to all things related to the planet Zephyr. From its unique geography to its Fas<wbr>ci<wbr>na<wbr>ting flora and fauna, we provide an in-depth look at this alien world.
 
 - Learn about the history of Zephyr and its inhabitants
 - Discover the secrets of its underground caverns and ancient ruins

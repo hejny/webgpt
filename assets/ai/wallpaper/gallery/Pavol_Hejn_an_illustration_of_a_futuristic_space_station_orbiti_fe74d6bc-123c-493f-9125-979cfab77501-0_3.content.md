@@ -18,7 +18,7 @@ With so much happening in the world of space exploration, it can be hard to keep
 
 ## Join the Community
 
-Space exploration is a collaborative effort, and we believe that everyone has a role to play. That's why we encourage you to join our community of like-minded space enthusiasts. Whether you want to share your own ideas and insights or simply connect with others who share your passion for space, our forums are the perfect place to do it.
+Space exploration is a Coll<wbr>aborative effort, and we believe that everyone has a role to play. That's why we encourage you to join our community of like-minded space enthusiasts. Whether you want to share your own ideas and insights or simply connect with others who share your passion for space, our forums are the perfect place to do it.
 
 ## Contact Us
 
@@ -64,7 +64,7 @@ With so much happening in the world of space exploration, it can be hard to keep
 
 ## Join the Community
 
-Space exploration is a collaborative effort, and we believe that everyone has a role to play. That's why we encourage you to join our community of like-minded space enthusiasts. Whether you want to share your own ideas and insights or simply connect with others who share your passion for space, our forums are the perfect place to do it.
+Space exploration is a Coll<wbr>aborative effort, and we believe that everyone has a role to play. That's why we encourage you to join our community of like-minded space enthusiasts. Whether you want to share your own ideas and insights or simply connect with others who share your passion for space, our forums are the perfect place to do it.
 
 ## Contact Us
 

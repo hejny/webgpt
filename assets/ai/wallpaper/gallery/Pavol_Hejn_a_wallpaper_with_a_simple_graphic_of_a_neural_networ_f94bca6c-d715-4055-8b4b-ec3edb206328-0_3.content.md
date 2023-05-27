@@ -2,7 +2,7 @@
 
 # Neural Design Inspo
 
-Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against complementary colors.
+Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## Why Choose Our Design?
 
@@ -28,14 +28,14 @@ Thank you for choosing our design to inspire your work. We hope that it brings y
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
+"A wallpaper with a simple graphic of a neural network, against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -51,7 +51,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Enhance Your Workspace with a Neural Network-Inspired Wallpaper
 
-Welcome to our website, where we provide you with the perfect wallpaper to enhance your workspace. Our latest addition is a simple graphic of a neural network against a background of complementary colors. 
+Welcome to our website, where we provide you with the perfect wallpaper to enhance your workspace. Our latest addition is a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## Why Choose Our Wallpaper?
 
@@ -85,7 +85,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Elevate Your Workspace with a Neural Network-Inspired Design
 
-Welcome to our website, where we provide you with the perfect design to elevate your workspace. Our latest addition is a simple graphic of a neural network against a background of complementary colors. 
+Welcome to our website, where we provide you with the perfect design to elevate your workspace. Our latest addition is a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## Why Choose Our Design?
 
@@ -119,7 +119,7 @@ Heading is too long, rewrite whole content.
 
 # A Neural Network-Inspired Design to Inspire Your Work
 
-Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against complementary colors.
+Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## Why Choose Our Design?
 
@@ -153,7 +153,7 @@ Heading is too long, rewrite whole content.
 
 # Inspire Your Work with a Neural Network Design
 
-Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against complementary colors.
+Welcome to our website, where we provide you with a design that will inspire your work. Our latest addition features a simple graphic of a neural network set against Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## Why Choose Our Design?
 

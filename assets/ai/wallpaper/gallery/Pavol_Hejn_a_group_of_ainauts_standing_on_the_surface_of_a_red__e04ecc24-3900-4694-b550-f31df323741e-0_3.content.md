@@ -2,7 +2,7 @@
 
 # Mars Mysteries
 
-Welcome to our website dedicated to exploring the mysteries of Mars, the fourth planet from the Sun. Our goal is to provide you with the latest information and updates on the ongoing exploration of this fascinating planet.
+Welcome to our website dedicated to exploring the mysteries of Mars, the fourth planet from the Sun. Our goal is to provide you with the latest information and updates on the ongoing exploration of this Fas<wbr>ci<wbr>na<wbr>ting planet.
 
 ## Discover the Red Planet
 
@@ -55,7 +55,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Red Planet Exploration: Uncovering the Mysteries of Mars
 
-Welcome to our website dedicated to exploring the mysteries of Mars, the fourth planet from the Sun. Our goal is to provide you with the latest information and updates on the ongoing exploration of this fascinating planet.
+Welcome to our website dedicated to exploring the mysteries of Mars, the fourth planet from the Sun. Our goal is to provide you with the latest information and updates on the ongoing exploration of this Fas<wbr>ci<wbr>na<wbr>ting planet.
 
 ## Discover the Red Planet
 

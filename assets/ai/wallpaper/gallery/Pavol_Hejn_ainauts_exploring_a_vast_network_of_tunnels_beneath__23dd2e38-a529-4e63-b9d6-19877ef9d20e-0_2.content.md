@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Cavern Planets
 
-Welcome to our website dedicated to exploring the depths of the universe! Our mission is to bring you the latest news and information on the fascinating world of planetary caverns. From the vast networks of tunnels beneath the surface of distant planets to the glowing crystals that light the way, we are your guide to the mysteries that lie beneath.
+Welcome to our website dedicated to exploring the depths of the universe! Our mission is to bring you the latest news and information on the Fas<wbr>ci<wbr>na<wbr>ting world of planetary caverns. From the vast networks of tunnels beneath the surface of distant planets to the glowing crystals that light the way, we are your guide to the mysteries that lie beneath.
 
 ## About Us
 

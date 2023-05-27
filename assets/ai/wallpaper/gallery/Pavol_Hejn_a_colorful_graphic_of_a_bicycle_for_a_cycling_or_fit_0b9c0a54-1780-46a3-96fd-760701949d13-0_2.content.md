@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 ---
 
 
-# "Cycle Your Way to Fitness" - A Comprehensive Guide to Cycling for Health and Wellness
+# "Cycle Your Way to Fitness" - A Com<wbr>pre<wbr>hen<wbr>sive Guide to Cycling for Health and Wellness
 
 Welcome to "Cycle Your Way to Fitness," your go-to resource for all things cycling-related. Whether you're a seasoned pro or just starting out, we've got everything you need to know about using cycling as a tool for improving your health and fitness.
 

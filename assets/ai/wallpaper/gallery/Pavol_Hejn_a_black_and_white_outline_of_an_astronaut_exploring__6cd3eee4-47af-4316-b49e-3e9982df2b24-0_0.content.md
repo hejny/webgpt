@@ -14,20 +14,20 @@ At Journey Through the Cosmos, we believe that knowledge is power, and that by s
 
 Whether you're a seasoned astronomer or just starting your journey, we have a wealth of resources to help you expand your knowledge and explore the universe. Here are just a few of the resources you'll find on our site:
 
-- **Articles**: Our team of writers and researchers regularly publish informative and engaging articles on a wide range of topics related to space exploration, astronomy, and cosmology.
-- **Videos**: We curate a selection of videos from some of the most respected voices in the field of space exploration, including NASA, SpaceX, and more.
-- **Interactive Tools**: From virtual tours of the solar system to simulations of black holes and supernovae, our interactive tools allow you to explore the universe in new and exciting ways.
-- **Forums**: Connect with other space enthusiasts from around the world in our forums, where you can discuss the latest news and discoveries, ask questions, and share your own experiences.
+-   **Articles**: Our team of writers and researchers regularly publish informative and engaging articles on a wide range of topics related to space exploration, astronomy, and cosmology.
+-   **Videos**: We curate a selection of videos from some of the most respected voices in the field of space exploration, including NASA, SpaceX, and more.
+-   **Interactive Tools**: From virtual tours of the solar system to simulations of black holes and supernovae, our interactive tools allow you to explore the universe in new and exciting ways.
+-   **Forums**: Connect with other space enthusiasts from around the world in our forums, where you can discuss the latest news and discoveries, ask questions, and share your own experiences.
 
 ## References
 
 We take pride in providing accurate and up-to-date information on all aspects of space exploration. Here are some of the references we rely on to ensure the quality of our content:
 
-- NASA
-- European Space Agency (ESA)
-- Space.com
-- Universe Today
-- Astronomy Magazine
+-   NASA
+-   European Space Agency (ESA)
+-   Space.com
+-   Universe Today
+-   Astronomy Magazine
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -68,7 +68,7 @@ As you navigate through our site, you will find a plethora of resources, from ar
 
 ## The Wallpaper
 
-Our homepage features a captivating black and white outline of an astronaut exploring a distant planet, with intricate details and shading. This wallpaper serves as a reminder of the endless possibilities that await us in the universe, and inspires us to continue pushing the boundaries of space exploration.
+Our homepage features a Cap<wbr>ti<wbr>va<wbr>ting black and white outline of an astronaut exploring a distant planet, with intricate details and shading. This wallpaper serves as a reminder of the endless possibilities that await us in the universe, and inspires us to continue pushing the boundaries of space exploration.
 
 ## Our Mission
 

@@ -6,7 +6,7 @@ Welcome to our website, where you can immerse yourself in the wonders of space. 
 
 ## About Us
 
-We are a team of space enthusiasts who want to share our passion with the world. Our goal is to provide you with a platform where you can learn about space and explore its beauty through captivating images and informative articles.
+We are a team of space enthusiasts who want to share our passion with the world. Our goal is to provide you with a platform where you can learn about space and explore its beauty through Cap<wbr>ti<wbr>va<wbr>ting images and informative articles.
 
 ## Our Collection
 
@@ -28,8 +28,8 @@ In addition to our collection of images, we also offer a range of informative ar
 
 If you have any questions or comments, please don't hesitate to contact us. You can reach us by email at [contact@explorethespace.com](mailto:contact@explorethespace.com) or through our social media channels:
 
-- Twitter: https://twitter.com/explorethespace
-- Facebook: https://www.facebook.com/explorethespace
+-   Twitter: https://twitter.com/explorethespace
+-   Facebook: https://www.facebook.com/explorethespace
 
 Thank you for visiting our website, and we hope you enjoy exploring the beauty of space with us!
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -115,7 +115,7 @@ Welcome to our website, where you can immerse yourself in the wonders of space. 
 
 ## About Us
 
-We are a team of space enthusiasts who want to share our passion with the world. Our goal is to provide you with a platform where you can learn about space and explore its beauty through captivating images and informative articles.
+We are a team of space enthusiasts who want to share our passion with the world. Our goal is to provide you with a platform where you can learn about space and explore its beauty through Cap<wbr>ti<wbr>va<wbr>ting images and informative articles.
 
 ## Our Collection
 

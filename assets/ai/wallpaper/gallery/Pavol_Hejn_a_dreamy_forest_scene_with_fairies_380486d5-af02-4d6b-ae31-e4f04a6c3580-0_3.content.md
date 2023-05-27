@@ -6,10 +6,10 @@ Step into a world of fantasy and wonder with our enchanting forest scene featuri
 
 ## Features
 
-- Immerse yourself in a captivating forest scene with enchanting fairies
-- High-quality resolution for a clear and crisp display
-- Compatible with most devices and operating systems
-- Easy to download and set as your desktop background
+-   Immerse yourself in a Cap<wbr>ti<wbr>va<wbr>ting forest scene with enchanting fairies
+-   High-quality resolution for a clear and crisp display
+-   Compatible with most devices and operating systems
+-   Easy to download and set as your desktop background
 
 ## User Stories
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -64,7 +64,7 @@ Transform your desktop into a magical realm with our dreamy forest wallpaper fea
 ## Features
 
 - High-quality resolution for a clear and crisp display
-- Captivating forest scene with enchanting fairies
+- Cap<wbr>ti<wbr>va<wbr>ting forest scene with enchanting fairies
 - Compatible with most devices and operating systems
 - Easy to download and set as your desktop background
 
@@ -105,7 +105,7 @@ Step into a world of fantasy and wonder with our enchanting forest scene featuri
 
 ## Features
 
-- Immerse yourself in a captivating forest scene with enchanting fairies
+- Immerse yourself in a Cap<wbr>ti<wbr>va<wbr>ting forest scene with enchanting fairies
 - High-quality resolution for a clear and crisp display
 - Compatible with most devices and operating systems
 - Easy to download and set as your desktop background

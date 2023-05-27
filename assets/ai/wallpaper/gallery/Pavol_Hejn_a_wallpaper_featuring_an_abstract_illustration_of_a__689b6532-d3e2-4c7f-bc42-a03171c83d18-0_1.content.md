@@ -12,17 +12,17 @@ At Future City Nightscape, we are passionate about all things futuristic. From t
 
 Our users come from all walks of life, but they all share a common interest in the future. Here are some stories from our users:
 
-- "I work in tech, and I find this website really inspiring. It reminds me of the amazing things we can achieve when we put our minds to it."
-- "As an architect, I appreciate the creativity and innovation that goes into imagining a future cityscape. This website is a great resource for inspiration."
-- "I'm just a curious person who loves to learn about new ideas and concepts. This website is a fascinating window into what the future might hold."
+-   "I work in tech, and I find this website really inspiring. It reminds me of the amazing things we can achieve when we put our minds to it."
+-   "As an architect, I appreciate the creativity and innovation that goes into imagining a future cityscape. This website is a great resource for inspiration."
+-   "I'm just a curious person who loves to learn about new ideas and concepts. This website is a Fas<wbr>ci<wbr>na<wbr>ting window into what the future might hold."
 
 ## Resources
 
 If you're interested in learning more about futuristic cityscapes, here are some resources we recommend:
 
-- [Future Cities Catapult](#)
-- [The Future of Urbanism](#)
-- [ArchDaily: Future Cities](#)
+-   [Future Cities Catapult](#)
+-   [The Future of Urbanism](#)
+-   [ArchDaily: Future Cities](#)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -113,7 +113,7 @@ Our users come from all walks of life, but they all share a common interest in t
 
 - "I work in tech, and I find this website really inspiring. It reminds me of the amazing things we can achieve when we put our minds to it."
 - "As an architect, I appreciate the creativity and innovation that goes into imagining a future cityscape. This website is a great resource for inspiration."
-- "I'm just a curious person who loves to learn about new ideas and concepts. This website is a fascinating window into what the future might hold."
+- "I'm just a curious person who loves to learn about new ideas and concepts. This website is a Fas<wbr>ci<wbr>na<wbr>ting window into what the future might hold."
 
 ## Resources
 

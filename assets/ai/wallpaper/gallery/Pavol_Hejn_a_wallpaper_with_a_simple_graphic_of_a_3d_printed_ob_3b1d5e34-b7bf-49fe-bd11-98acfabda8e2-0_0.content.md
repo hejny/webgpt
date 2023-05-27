@@ -14,10 +14,10 @@ We offer a range of services tailored to meet your specific needs and preference
 
 Our services include:
 
-- Interior design consultation
-- Custom 3D-printed object design
-- 3D printing services
-- Installation and maintenance
+-   Interior design consultation
+-   Custom 3D-printed object design
+-   3D printing services
+-   Installation and maintenance
 
 ## User Stories
 
@@ -31,8 +31,8 @@ Our 3D-printed objects have been used in a variety of settings, from residential
 
 We take pride in our work and strive to deliver the highest quality products and services. Here are some references from our happy clients:
 
-- "The team at [Our Company Name] is incredibly talented and professional. They worked closely with us to understand our vision and delivered a 3D-printed object that exceeded our expectations." - Jane, homeowner
-- "I highly recommend [Our Company Name] to anyone looking for a fresh and creative approach to interior design. Their 3D-printed objects are truly one-of-a-kind." - Tom, architect
+-   "The team at [Our Company Name] is incredibly talented and professional. They worked closely with us to understand our vision and delivered a 3D-printed object that exceeded our expectations." - Jane, homeowner
+-   "I highly recommend [Our Company Name] to anyone looking for a fresh and creative approach to interior design. Their 3D-printed objects are truly one-of-a-kind." - Tom, architect
 
 ## Contact Us
 
@@ -40,9 +40,9 @@ If you are interested in learning more about our services or have any questions,
 
 You can reach us via:
 
-- Phone: 555-1234
-- Email: info@ourcompany.com
-- Social media: @ourcompany
+-   Phone: 555-1234
+-   Email: info@ourcompany.com
+-   Social media: @ourcompany
 
 Thank you for visiting our website, and we look forward to working with you!
 
@@ -50,14 +50,14 @@ Thank you for visiting our website, and we look forward to working with you!
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a 3D-printed object, against a background of geometric shapes in complementary colors."
+"A wallpaper with a simple graphic of a 3D-printed object, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

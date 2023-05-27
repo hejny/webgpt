@@ -28,7 +28,7 @@ Our mission is simple: to boldly go where no one has gone before. We are on a qu
 
 ## Meet Our Ainautes
 
-Our crew is made up entirely of Ainautes - artificial intelligence beings that are specially designed for space exploration. Each Ainaute is programmed with a unique set of skills and abilities, allowing them to work together seamlessly to achieve our mission objectives. From navigation and communication to scientific research and analysis, our Ainautes are the best in the business.
+Our crew is made up entirely of Ainautes - artificial intelligence beings that are specially designed for space exploration. Each Ainaute is programmed with a unique set of skills and abilities, allowing them to work together seamlessly to achieve our mission objectives. From navigation and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion to scientific research and analysis, our Ainautes are the best in the business.
 
 ## User Stories
 

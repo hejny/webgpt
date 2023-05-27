@@ -12,11 +12,11 @@ Our website features a stunning wallpaper showcasing a matrix of futuristic data
 
 At DataVizPro, we offer a wide range of services to help you unlock the full potential of your data:
 
-- Data Analysis and Insights
-- Custom Data Visualization Solutions
-- Interactive Dashboards and Reports
-- Data Storytelling and Communication
-- Training and Consultation
+-   Data Analysis and Insights
+-   Custom Data Visualization Solutions
+-   Interactive Dashboards and Reports
+-   Data Storytelling and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion
+-   Training and Consultation
 
 ## User Stories
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # DataVizPro - Empowering Your Data Visualization Needs
 
-Welcome to DataVizPro, your one-stop-shop for all things data visualization. Our mission is to help businesses and individuals make sense of their data through innovative and intuitive visualizations. 
+Welcome to DataVizPro, your one-stop-shop for all things data visualization. Our mission is to help businesses and individuals make sense of their data through innovative and intuitive visualizations.
 
 ## Our Wallpaper: A Matrix of Futuristic Data Visualizations and Graphs
 
@@ -76,7 +76,7 @@ Our services include:
 - Data Analysis and Insights
 - Custom Data Visualization Solutions
 - Interactive Dashboards and Reports
-- Data Storytelling and Communication
+- Data Storytelling and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion
 - Training and Consultation
 
 ## User Stories
@@ -125,7 +125,7 @@ At DataVizPro, we offer a wide range of services to help you unlock the full pot
 - Data Analysis and Insights
 - Custom Data Visualization Solutions
 - Interactive Dashboards and Reports
-- Data Storytelling and Communication
+- Data Storytelling and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion
 - Training and Consultation
 
 ## User Stories
@@ -169,7 +169,7 @@ At DataVizPro, we offer a wide range of services to help you unlock the full pot
 - Data Analysis and Insights
 - Custom Data Visualization Solutions
 - Interactive Dashboards and Reports
-- Data Storytelling and Communication
+- Data Storytelling and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion
 - Training and Consultation
 
 ## User Stories
@@ -213,7 +213,7 @@ At DataVizPro, we offer a wide range of services to help you unlock the full pot
 - Data Analysis and Insights
 - Custom Data Visualization Solutions
 - Interactive Dashboards and Reports
-- Data Storytelling and Communication
+- Data Storytelling and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion
 - Training and Consultation
 
 ## User Stories

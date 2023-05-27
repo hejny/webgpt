@@ -16,13 +16,13 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Futuristic Station
 
-Looking for a unique and captivating wallpaper to spruce up your desktop or phone background? Look no further than our stunning illustration of a futuristic space station orbiting a distant planet. With sleek lines and metallic accents, this wallpaper is sure to transport you to another world.
+Looking for a unique and Cap<wbr>ti<wbr>va<wbr>ting wallpaper to spruce up your desktop or phone background? Look no further than our stunning illustration of a futuristic space station orbiting a distant planet. With sleek lines and metallic accents, this wallpaper is sure to transport you to another world.
 
 ## Features
 
-- High-quality resolution for optimal display on any device
-- Available in multiple sizes to fit your specific needs
-- Perfect for sci-fi enthusiasts, space lovers, and anyone who appreciates stunning digital art
+-   High-quality resolution for optimal display on any device
+-   Available in multiple sizes to fit your specific needs
+-   Perfect for sci-fi enthusiasts, space lovers, and anyone who appreciates stunning digital art
 
 ## How to Download
 

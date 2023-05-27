@@ -26,7 +26,7 @@ Exploring these distant worlds is no easy feat. We face many challenges such as 
 
 ## Discoveries and Insights
 
-Through our missions, we have made incredible discoveries and gained new insights into the nature of these distant worlds. Our experiments have helped us understand the composition of the moons, their geological activity, and even the potential for extraterrestrial life.
+Through our missions, we have made incredible discoveries and gained new insights into the nature of these distant worlds. Our experiments have helped us understand the composition of the moons, their geological activity, and even the potential for Ex<wbr>tra<wbr>terre<wbr>strial life.
 
 ## Join Our Journey
 

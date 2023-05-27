@@ -14,7 +14,7 @@ Our team of experts is passionate about space and eager to share their knowledge
 
 ## Join Our Community of Cosmic Enthusiasts
 
-We believe that space exploration is a collaborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
+We believe that space exploration is a Coll<wbr>aborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
 
 ## References
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -53,7 +53,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Wonders of Space: A Wallpaper for Cosmic Enthusiasts
 
-Welcome to our website dedicated to space exploration and discovery! Our website is designed to provide you with all the information you need about the universe, from distant planets to black holes. To enhance your browsing experience, we have added a vintage-style travel poster of a distant planet as our background wallpaper. 
+Welcome to our website dedicated to space exploration and discovery! Our website is designed to provide you with all the information you need about the universe, from distant planets to black holes. To enhance your browsing experience, we have added a vintage-style travel poster of a distant planet as our background wallpaper.
 
 ## Discover the Beauty of the Universe
 
@@ -65,7 +65,7 @@ Our team of experts is passionate about space and eager to share their knowledge
 
 ## Join Our Community of Cosmic Enthusiasts
 
-We believe that space exploration is a collaborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
+We believe that space exploration is a Coll<wbr>aborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
 
 ## References
 
@@ -101,7 +101,7 @@ Our team of experts is passionate about space and eager to share their knowledge
 
 ## Join Our Community of Cosmic Enthusiasts
 
-We believe that space exploration is a collaborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
+We believe that space exploration is a Coll<wbr>aborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
 
 ## References
 
@@ -137,7 +137,7 @@ Our team of experts is passionate about space and eager to share their knowledge
 
 ## Join Our Community of Cosmic Enthusiasts
 
-We believe that space exploration is a collaborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
+We believe that space exploration is a Coll<wbr>aborative effort. That's why we encourage you to join our community of cosmic enthusiasts. You can connect with other like-minded individuals who share your passion for space. Share your thoughts, ask questions, and learn from others.
 
 ## References
 

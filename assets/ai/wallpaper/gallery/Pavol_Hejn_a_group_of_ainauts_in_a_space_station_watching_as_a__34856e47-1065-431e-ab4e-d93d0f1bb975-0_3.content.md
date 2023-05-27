@@ -38,7 +38,7 @@ Our website features stories from people around the world who have been impacted
 
 ## Our Approach
 
-At Save the Earth with AI, we take a collaborative approach to disaster management. We work with experts in various fields, including AI, meteorology, geology, and emergency management, to develop comprehensive solutions for predicting, preventing, and responding to disasters.
+At Save the Earth with AI, we take a Coll<wbr>aborative approach to disaster management. We work with experts in various fields, including AI, meteorology, geology, and emergency management, to develop Com<wbr>pre<wbr>hen<wbr>sive solutions for predicting, preventing, and responding to disasters.
 
 ## References
 

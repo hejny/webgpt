@@ -14,26 +14,26 @@ At Retro-Futuristic Robotics, we believe that the future of technology lies in t
 
 Our website offers a wide range of content to suit your interests, including:
 
-- In-depth articles on the latest robotics and AI advancements
-- News and updates from the world of technology
-- Interviews with experts in the field
-- Resources for students and professionals interested in robotics and AI
+-   In-depth articles on the latest robotics and AI advancements
+-   News and updates from the world of technology
+-   Interviews with experts in the field
+-   Resources for students and professionals interested in robotics and AI
 
 ## User Stories
 
 Here are some stories from our users who have found inspiration from our website:
 
-- "I never realized how much impact robotics and AI would have on our lives until I started reading this website. It's opened my eyes to the possibilities."
-- "The articles on this website are so well-written and informative. They've helped me stay up-to-date on the latest developments in technology."
-- "The retro-futuristic theme of this website is so cool! It really captures the excitement of discovering the future."
+-   "I never realized how much impact robotics and AI would have on our lives until I started reading this website. It's opened my eyes to the possibilities."
+-   "The articles on this website are so well-written and informative. They've helped me stay up-to-date on the latest developments in technology."
+-   "The retro-futuristic theme of this website is so cool! It really captures the excitement of discovering the future."
 
 ## Get Involved
 
 If you're passionate about robotics and AI, we invite you to get involved with our community. You can:
 
-- Follow us on social media for the latest updates and discussions
-- Submit an article or resource to share with our audience
-- Join our mailing list for exclusive content and announcements
+-   Follow us on social media for the latest updates and discussions
+-   Submit an article or resource to share with our audience
+-   Join our mailing list for exclusive content and announcements
 
 ## Contact Us
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -179,7 +179,7 @@ Our website offers a wide range of content to suit your interests, including:
 Here are some stories from our users who have found inspiration from our website:
 
 - "This website has helped me stay up-to-date on the latest developments in robotics and AI. I feel more informed and prepared for the future."
-- "The interviews on this website are so fascinating! It's great to hear from experts in the field."
+- "The interviews on this website are so Fas<wbr>ci<wbr>na<wbr>ting! It's great to hear from experts in the field."
 - "I love the retro-futuristic theme of this website. It really captures the excitement of exploring the future."
 
 ## Get Involved

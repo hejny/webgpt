@@ -2,7 +2,7 @@
 
 # Vintage Space Map
 
-Welcome to our website where we offer a captivating vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
+Welcome to our website where we offer a Cap<wbr>ti<wbr>va<wbr>ting vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
 
 ## Why Choose Our Design?
 
@@ -22,9 +22,9 @@ Our vintage star map design can be incorporated into various products, such as h
 
 For more information on astronomy and space exploration, check out these resources:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Sky & Telescope](#skytelescope)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Sky & Telescope](#skytelescope)
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -57,7 +57,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Discover the Wonders of Space with our Vintage Star Map Wallpaper
 
-Welcome to our website where we offer a unique and captivating vintage star map wallpaper that will transport you to the wonders of space. Our wallpaper features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
+Welcome to our website where we offer a unique and Cap<wbr>ti<wbr>va<wbr>ting vintage star map wallpaper that will transport you to the wonders of space. Our wallpaper features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
 
 ## Why Choose Our Vintage Star Map Wallpaper?
 
@@ -99,7 +99,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Wonders of Space with Our Vintage Star Map Design
 
-Welcome to our website where we offer a captivating vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
+Welcome to our website where we offer a Cap<wbr>ti<wbr>va<wbr>ting vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
 
 ## Why Choose Our Vintage Star Map Design?
 
@@ -147,7 +147,7 @@ Heading is too long, rewrite whole content.
 
 # Vintage Star Map Design: Explore the Wonders of Space
 
-Welcome to our website where we offer a captivating vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
+Welcome to our website where we offer a Cap<wbr>ti<wbr>va<wbr>ting vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
 
 ## Why Choose Our Vintage Star Map Design?
 
@@ -189,7 +189,7 @@ Heading is too long, rewrite whole content.
 
 # Vintage Star Map Design: Explore the Wonders of Space
 
-Welcome to our website where we offer a captivating vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
+Welcome to our website where we offer a Cap<wbr>ti<wbr>va<wbr>ting vintage star map design that will transport you to the wonders of space. Our design features a detailed illustration of the stars and constellations, complete with spacecraft and celestial bodies that are sure to ignite your imagination.
 
 ## Why Choose Our Design?
 

@@ -2,9 +2,9 @@
 
 # Ocean Exploration
 
-Welcome to our website, where you can explore the beauty and diversity of the ocean through stunning visuals and educational content. Our website features a captivating underwater adventure background that will transport you to the depths of the sea.
+Welcome to our website, where you can explore the beauty and diversity of the ocean through stunning visuals and educational content. Our website features a Cap<wbr>ti<wbr>va<wbr>ting underwater adventure background that will transport you to the depths of the sea.
 
-## Discover the Fascinating World of Marine Life
+## Discover the Fas<wbr>ci<wbr>na<wbr>ting World of Marine Life
 
 Our website is not only visually appealing but also informative. You can learn about the different species of marine life that inhabit the ocean by browsing through our various sections. From colorful fish to majestic whales, you'll discover the wonders of the ocean like never before.
 
@@ -103,9 +103,9 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Dive into the Wonders of the Ocean with Our Underwater Adventure Website
 
-Welcome to our website, where you can explore the beauty and diversity of the ocean through stunning visuals and educational content. Our website features a captivating underwater adventure background that will transport you to the depths of the sea.
+Welcome to our website, where you can explore the beauty and diversity of the ocean through stunning visuals and educational content. Our website features a Cap<wbr>ti<wbr>va<wbr>ting underwater adventure background that will transport you to the depths of the sea.
 
-## Discover the Fascinating World of Marine Life
+## Discover the Fas<wbr>ci<wbr>na<wbr>ting World of Marine Life
 
 Our website is not only visually appealing but also informative. You can learn about the different species of marine life that inhabit the ocean by browsing through our various sections. From colorful fish to majestic whales, you'll discover the wonders of the ocean like never before.
 

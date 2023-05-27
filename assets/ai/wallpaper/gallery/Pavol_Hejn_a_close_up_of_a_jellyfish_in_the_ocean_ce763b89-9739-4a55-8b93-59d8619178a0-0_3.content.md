@@ -2,7 +2,7 @@
 
 # Jellyfish Beauty
 
-Welcome to Oceanic Wonders, a website dedicated to exploring the fascinating world beneath the waves. Our site is filled with information about marine life, ocean conservation, and much more. And as you browse our pages, you'll be accompanied by a stunning wallpaper that captures the beauty of one of the ocean's most captivating creatures: the jellyfish.
+Welcome to Oceanic Wonders, a website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world beneath the waves. Our site is filled with information about marine life, ocean conservation, and much more. And as you browse our pages, you'll be accompanied by a stunning wallpaper that captures the beauty of one of the ocean's most Cap<wbr>ti<wbr>va<wbr>ting creatures: the jellyfish.
 
 ## The Wallpaper
 
@@ -16,9 +16,9 @@ At Oceanic Wonders, we believe that the ocean is a truly magical place. From col
 
 Here are just a few examples of the types of articles you'll find on our site:
 
-- "The Top 10 Most Beautiful Coral Reefs in the World"
-- "How Plastic Pollution is Affecting Marine Life"
-- "The Surprising Benefits of Snorkeling for Your Health"
+-   "The Top 10 Most Beautiful Coral Reefs in the World"
+-   "How Plastic Pollution is Affecting Marine Life"
+-   "The Surprising Benefits of Snorkeling for Your Health"
 
 We also feature interviews with marine biologists, photo galleries of underwater landscapes, and much more.
 
@@ -34,9 +34,9 @@ Don't just take our word for it - here are some stories from our users:
 
 If you want to learn more about the ocean and marine life, we've compiled a list of references that we think you'll find useful:
 
-- [National Geographic Ocean](#)
-- [MarineBio Conservation Society](#)
-- [Ocean Conservancy](#)
+-   [National Geographic Ocean](#)
+-   [MarineBio Conservation Society](#)
+-   [Ocean Conservancy](#)
 
 ## Contact Us
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Oceanic Wonders: Discover the Beauty of Jellyfish
 
-Welcome to Oceanic Wonders, a website dedicated to exploring the fascinating world beneath the waves. Our site is filled with information about marine life, ocean conservation, and much more. And as you browse our pages, you'll be accompanied by a stunning wallpaper that captures the beauty of one of the ocean's most captivating creatures: the jellyfish.
+Welcome to Oceanic Wonders, a website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world beneath the waves. Our site is filled with information about marine life, ocean conservation, and much more. And as you browse our pages, you'll be accompanied by a stunning wallpaper that captures the beauty of one of the ocean's most Cap<wbr>ti<wbr>va<wbr>ting creatures: the jellyfish.
 
 ## The Wallpaper
 

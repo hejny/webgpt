@@ -24,7 +24,7 @@ Welcome to Stargaze, your ultimate destination for exploring the beauty of the n
 
 ## About Us
 
-At Stargaze, we believe that everyone should have access to the wonders of the universe. That's why we've curated a collection of breathtaking images that showcase the majesty of the night sky. Our team of photographers and designers work tirelessly to bring you the most captivating visuals that will transport you to another world.
+At Stargaze, we believe that everyone should have access to the wonders of the universe. That's why we've curated a collection of breathtaking images that showcase the majesty of the night sky. Our team of photographers and designers work tirelessly to bring you the most Cap<wbr>ti<wbr>va<wbr>ting visuals that will transport you to another world.
 
 ## Our Collection
 

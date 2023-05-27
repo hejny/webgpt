@@ -10,21 +10,21 @@ The Arctic is a vast and beautiful region, home to some of the most awe-inspirin
 
 ## Plan Your Adventure
 
-Our comprehensive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
+Our Com<wbr>pre<wbr>hen<wbr>sive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
 
 ## Hear From Our Adventurers
 
-*"I've always been fascinated by the Arctic and its unique wildlife. Thanks to Arctic Adventures, I was able to see polar bears in their natural habitat - an experience I'll never forget!" - Emily, New York*
+_"I've always been fascinated by the Arctic and its unique wildlife. Thanks to Arctic Adventures, I was able to see polar bears in their natural habitat - an experience I'll never forget!" - Emily, New York_
 
-*"Exploring the Arctic was a lifelong dream of mine, and Arctic Adventures made it a reality. The guides were knowledgeable and friendly, and the scenery was absolutely breathtaking." - John, Sydney*
+_"Exploring the Arctic was a lifelong dream of mine, and Arctic Adventures made it a reality. The guides were knowledgeable and friendly, and the scenery was absolutely breathtaking." - John, Sydney_
 
 ## Additional Resources
 
 Looking for more information about the Arctic? Check out our list of recommended resources:
 
-- National Geographic's Guide to the Arctic
-- Arctic Council
-- WWF Arctic Program
+-   National Geographic's Guide to the Arctic
+-   Arctic Council
+-   WWF Arctic Program
 
 ## Contact Us
 
@@ -38,7 +38,7 @@ Address: 123 Main Street, Arctic City, Canada
 
 ---
 
-*Wallpaper credit: [Unsplash](https://unsplash.com/photos/8JX9xJwvZU0)*
+_Wallpaper credit: [Unsplash](https://unsplash.com/photos/8JX9xJwvZU0)_
 
 <!--
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -75,7 +75,7 @@ From the majestic glaciers of Greenland to the rugged mountains of Alaska, the A
 
 ## Plan Your Trip
 
-Our comprehensive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
+Our Com<wbr>pre<wbr>hen<wbr>sive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
 
 ## User Stories
 
@@ -125,7 +125,7 @@ From the majestic glaciers of Greenland to the rugged mountains of Alaska, the A
 
 ## Plan Your Adventure
 
-Our comprehensive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
+Our Com<wbr>pre<wbr>hen<wbr>sive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
 
 ## Hear From Our Adventurers
 
@@ -175,7 +175,7 @@ The Arctic is home to some of the most awe-inspiring natural wonders on the plan
 
 ## Plan Your Adventure
 
-Our comprehensive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
+Our Com<wbr>pre<wbr>hen<wbr>sive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
 
 ## Hear From Our Adventurers
 
@@ -225,7 +225,7 @@ The Arctic is a vast and beautiful region, home to some of the most awe-inspirin
 
 ## Plan Your Adventure
 
-Our comprehensive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
+Our Com<wbr>pre<wbr>hen<wbr>sive travel guides will help you plan every aspect of your Arctic adventure, from choosing the best time to visit to finding the perfect accommodations. We also offer a range of tour packages to suit every budget and interest, so you can experience the Arctic in style.
 
 ## Hear From Our Adventurers
 

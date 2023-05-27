@@ -14,7 +14,7 @@ Welcome to a journey through the cosmos, where you'll explore surreal landscapes
 
 ## Wallpaper Collection
 
-Our wallpaper collection features stunning visuals of extraterrestrial worlds, from vibrant nebulae to desolate moonscapes. Each image is carefully curated to provide a unique and immersive experience that will inspire and captivate you.
+Our wallpaper collection features stunning visuals of Ex<wbr>tra<wbr>terre<wbr>strial worlds, from vibrant nebulae to desolate moonscapes. Each image is carefully curated to provide a unique and immersive experience that will inspire and captivate you.
 
 ## High-Quality Downloads
 

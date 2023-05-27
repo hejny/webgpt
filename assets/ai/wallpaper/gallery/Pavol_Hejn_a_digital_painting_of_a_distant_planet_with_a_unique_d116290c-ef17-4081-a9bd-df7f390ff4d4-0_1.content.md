@@ -10,7 +10,7 @@ Our team is passionate about space exploration and digital art. We believe that 
 
 ## Our Collection
 
-Our collection features a wide range of digital art pieces, each one unique and captivating. From the vibrant colors of a distant galaxy to the intricate details of a planet's terrain, our artwork will take you on a journey through the universe. We offer both free and premium pieces, so there's something for every budget.
+Our collection features a wide range of digital art pieces, each one unique and Cap<wbr>ti<wbr>va<wbr>ting. From the vibrant colors of a distant galaxy to the intricate details of a planet's terrain, our artwork will take you on a journey through the universe. We offer both free and premium pieces, so there's something for every budget.
 
 ## User Stories
 
@@ -119,7 +119,7 @@ Our team is passionate about space exploration and digital art. We believe that 
 
 ## Our Collection
 
-Our collection features a wide range of digital art pieces, each one unique and captivating. From the vibrant colors of a distant galaxy to the intricate details of a planet's terrain, our artwork will take you on a journey through the universe. We offer both free and premium pieces, so there's something for every budget.
+Our collection features a wide range of digital art pieces, each one unique and Cap<wbr>ti<wbr>va<wbr>ting. From the vibrant colors of a distant galaxy to the intricate details of a planet's terrain, our artwork will take you on a journey through the universe. We offer both free and premium pieces, so there's something for every budget.
 
 ## User Stories
 

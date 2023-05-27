@@ -2,7 +2,7 @@
 
 # Cosmic Space Website
 
-Looking for a website that inspires your sense of adventure and curiosity about space? Look no further than our space-inspired website, featuring a captivating black and white outline of an astronaut's helmet with intricate details that showcase the reflection of the surrounding environment.
+Looking for a website that inspires your sense of adventure and curiosity about space? Look no further than our space-inspired website, featuring a Cap<wbr>ti<wbr>va<wbr>ting black and white outline of an astronaut's helmet with intricate details that showcase the reflection of the surrounding environment.
 
 ## About Our Space-Inspired Website
 
@@ -99,7 +99,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Cosmos with Our Space-Inspired Website
 
-Looking for a website that inspires your sense of adventure and curiosity about space? Look no further than our space-inspired website, featuring a captivating black and white outline of an astronaut's helmet with intricate details that showcase the reflection of the surrounding environment.
+Looking for a website that inspires your sense of adventure and curiosity about space? Look no further than our space-inspired website, featuring a Cap<wbr>ti<wbr>va<wbr>ting black and white outline of an astronaut's helmet with intricate details that showcase the reflection of the surrounding environment.
 
 ## About Our Space-Inspired Website
 

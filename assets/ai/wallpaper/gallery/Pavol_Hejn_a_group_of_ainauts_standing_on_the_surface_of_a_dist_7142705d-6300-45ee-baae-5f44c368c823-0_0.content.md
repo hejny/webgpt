@@ -28,7 +28,7 @@ Our homepage features a stunning wallpaper depicting a group of Ainautes standin
 
 ## Our Mission
 
-At our core, we are a team of scientists and explorers who are passionate about uncovering the secrets of the universe. We believe that the key to unlocking these secrets lies in studying the artifacts left behind by ancient civilizations, and the alien structure on this distant planet is one of the most fascinating examples we've ever encountered.
+At our core, we are a team of scientists and explorers who are passionate about uncovering the secrets of the universe. We believe that the key to unlocking these secrets lies in studying the artifacts left behind by ancient civilizations, and the alien structure on this distant planet is one of the most Fas<wbr>ci<wbr>na<wbr>ting examples we've ever encountered.
 
 Our mission is to use cutting-edge technology and AI-driven analysis to learn as much as we can about this structure, from its construction to its purpose and beyond. We believe that every discovery we make brings us one step closer to understanding the universe and our place within it.
 

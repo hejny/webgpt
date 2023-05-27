@@ -2,7 +2,7 @@
 
 # Mystery Explorer's Blog
 
-Welcome to Journey to the Unknown, a website dedicated to all things adventure! Our captivating background image, featuring a group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them, sets the tone for your next journey.
+Welcome to Journey to the Unknown, a website dedicated to all things adventure! Our Cap<wbr>ti<wbr>va<wbr>ting background image, featuring a group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them, sets the tone for your next journey.
 
 ## User Stories
 
@@ -89,7 +89,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Journey to the Unknown: A Website for Adventurers
 
-Welcome to Journey to the Unknown, a website dedicated to all things adventure! Our captivating background image, featuring a group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them, sets the tone for your next journey.
+Welcome to Journey to the Unknown, a website dedicated to all things adventure! Our Cap<wbr>ti<wbr>va<wbr>ting background image, featuring a group of Ainautes exploring an underground cavern on a distant planet, with glowing fungi and strange creatures all around them, sets the tone for your next journey.
 
 ## User Stories
 

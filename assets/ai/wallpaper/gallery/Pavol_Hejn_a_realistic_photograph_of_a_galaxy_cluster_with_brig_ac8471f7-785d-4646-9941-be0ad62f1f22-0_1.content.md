@@ -2,17 +2,17 @@
 
 # Cosmic Cluster
 
-Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our image is sure to transport you to the depths of space.
+Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your device, our image is sure to transport you to the depths of space.
 
 ## Features
 
 Our galaxy cluster background is a high-quality photograph that boasts intricate details and vivid colors. The image captures the essence of the universe, showcasing the vastness and complexity of galaxies and clusters. Here are some of the features of our background:
 
-- Realistic photograph of a galaxy cluster
-- Intricate details and vivid colors
-- High-quality resolution for all devices
-- Compatible with desktops, laptops, tablets, and smartphones
-- Easy to download and set as your background
+-   Realistic photograph of a galaxy cluster
+-   Intricate details and vivid colors
+-   High-quality resolution for all devices
+-   Compatible with desktops, laptops, tablets, and smartphones
+-   Easy to download and set as your background
 
 ## User Stories
 
@@ -26,15 +26,15 @@ Our background has been downloaded by thousands of users around the world. Here 
 
 If you want to learn more about galaxy clusters and the wonders of the universe, here are some resources that we recommend:
 
-- [NASA](#)
-- [Space.com](#)
-- [National Geographic](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [National Geographic](#)
 
 ## Contact Us
 
 If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
 
-Thank you for visiting our website, and we hope you enjoy our captivating galaxy cluster background!
+Thank you for visiting our website, and we hope you enjoy our Cap<wbr>ti<wbr>va<wbr>ting galaxy cluster background!
 
 <!--
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Wonders of the Universe with Our Galaxy Cluster Wallpaper
 
-Welcome to our website, where we offer a stunning galaxy cluster wallpaper that showcases the vastness and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our wallpaper is sure to impress.
+Welcome to our website, where we offer a stunning galaxy cluster wallpaper that showcases the vastness and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your device, our wallpaper is sure to impress.
 
 ## Features
 
@@ -107,9 +107,9 @@ Heading should not include word "wallpaper". The website should not be about the
 ---
 
 
-# Discover the Wonders of the Universe with Our Captivating Galaxy Cluster Background
+# Discover the Wonders of the Universe with Our Cap<wbr>ti<wbr>va<wbr>ting Galaxy Cluster Background
 
-Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our image is sure to impress.
+Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your device, our image is sure to impress.
 
 ## Features
 
@@ -141,7 +141,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
 
-Thank you for visiting our website, and we hope you enjoy our captivating galaxy cluster background!
+Thank you for visiting our website, and we hope you enjoy our Cap<wbr>ti<wbr>va<wbr>ting galaxy cluster background!
 
 
 ---
@@ -155,7 +155,7 @@ Heading is too long, rewrite whole content.
 
 # Our Galaxy Cluster Background: A Window to the Wonders of the Universe
 
-Welcome to our website, where we offer a stunning galaxy cluster background that captures the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our image is sure to inspire wonder and awe.
+Welcome to our website, where we offer a stunning galaxy cluster background that captures the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your device, our image is sure to inspire wonder and awe.
 
 ## Features
 
@@ -199,9 +199,9 @@ Heading is too long, rewrite whole content.
 ---
 
 
-# Our Captivating Galaxy Cluster Background: A Glimpse into the Vastness of the Universe
+# Our Cap<wbr>ti<wbr>va<wbr>ting Galaxy Cluster Background: A Glimpse into the Vastness of the Universe
 
-Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a captivating background for your device, our image is sure to transport you to the depths of space.
+Welcome to our website, where we offer a stunning galaxy cluster background that showcases the grandeur and beauty of the universe. Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your device, our image is sure to transport you to the depths of space.
 
 ## Features
 
@@ -233,7 +233,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
 
-Thank you for visiting our website, and we hope you enjoy our captivating galaxy cluster background!
+Thank you for visiting our website, and we hope you enjoy our Cap<wbr>ti<wbr>va<wbr>ting galaxy cluster background!
 
 
 ---

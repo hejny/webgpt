@@ -6,33 +6,33 @@ Welcome to our website dedicated to helping you discover the wonders of the Arct
 
 ## About Us
 
-At Arctic Adventures, we believe that the Arctic is one of the most fascinating and awe-inspiring regions on Earth. Our team is committed to sharing our love for the Arctic with others and helping them make the most of their Arctic adventure.
+At Arctic Adventures, we believe that the Arctic is one of the most Fas<wbr>ci<wbr>na<wbr>ting and awe-inspiring regions on Earth. Our team is committed to sharing our love for the Arctic with others and helping them make the most of their Arctic adventure.
 
 ## User Stories
 
 Our community of Arctic enthusiasts includes travelers from all over the world who share their experiences and stories on our site. Here are just a few examples:
 
-- "Thanks to Arctic Adventures, I was able to see polar bears in their natural habitat. It was truly a once-in-a-lifetime experience!" - Michael T.
-- "I never knew how much there was to explore in the Arctic until I stumbled upon this site. Now I can't wait to plan my next trip!" - Alex M.
-- "As a scientist studying climate change, I appreciate the commitment Arctic Adventures has to educating people about this important region." - Dr. Sarah K.
+-   "Thanks to Arctic Adventures, I was able to see polar bears in their natural habitat. It was truly a once-in-a-lifetime experience!" - Michael T.
+-   "I never knew how much there was to explore in the Arctic until I stumbled upon this site. Now I can't wait to plan my next trip!" - Alex M.
+-   "As a scientist studying climate change, I appreciate the commitment Arctic Adventures has to educating people about this important region." - Dr. Sarah K.
 
 ## Resources
 
 In addition to our user stories, we offer a variety of resources to help you plan your own Arctic adventure. These include:
 
-- Travel guides for different regions of the Arctic
-- Recommendations for tours and activities
-- Safety tips and guidelines
-- Information about the culture and history of the Arctic
+-   Travel guides for different regions of the Arctic
+-   Recommendations for tours and activities
+-   Safety tips and guidelines
+-   Information about the culture and history of the Arctic
 
 ## References
 
 We take pride in providing accurate and up-to-date information about the Arctic. Here are some of the sources we rely on:
 
-- National Geographic
-- The Arctic Institute
-- Arctic Today
-- Polar Bears International
+-   National Geographic
+-   The Arctic Institute
+-   Arctic Today
+-   Polar Bears International
 
 ## Contact Us
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -221,7 +221,7 @@ Welcome to our website dedicated to helping you discover the wonders of the Arct
 
 ## About Us
 
-At Arctic Adventures, we believe that the Arctic is one of the most fascinating and awe-inspiring regions on Earth. Our team is committed to sharing our love for the Arctic with others and helping them make the most of their Arctic adventure.
+At Arctic Adventures, we believe that the Arctic is one of the most Fas<wbr>ci<wbr>na<wbr>ting and awe-inspiring regions on Earth. Our team is committed to sharing our love for the Arctic with others and helping them make the most of their Arctic adventure.
 
 ## User Stories
 

@@ -2,7 +2,7 @@
 
 # Sky Blog
 
-Welcome to our astronomy blog, where we share fascinating insights and stories about the universe beyond our planet. Our blog is dedicated to helping you discover the beauty and mysteries of space, and we're excited to have you join us on this journey.
+Welcome to our astronomy blog, where we share Fas<wbr>ci<wbr>na<wbr>ting insights and stories about the universe beyond our planet. Our blog is dedicated to helping you discover the beauty and mysteries of space, and we're excited to have you join us on this journey.
 
 ## Wallpaper: A Starry Night Sky with the Milky Way Galaxy Visible Overhead
 
@@ -12,7 +12,7 @@ Our beautiful wallpaper sets the perfect backdrop for exploring the wonders of t
 
 Stay up-to-date with the latest happenings in the world of astronomy by checking out our latest posts. From breaking news to insightful articles, we've got you covered.
 
--   The Search for Extraterrestrial Life: Are We Alone in the Universe?
+-   The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life: Are We Alone in the Universe?
 -   Exploring the Mysteries of Black Holes
 -   The Beauty of the Northern Lights: A Guide to Viewing the Aurora Borealis
 -   How Telescopes Work: A Beginner's Guide to Observing the Night Sky
@@ -68,7 +68,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Wonders of the Night Sky with Our Astronomy Blog
 
-Welcome to our astronomy blog, where we share fascinating insights and stories about the universe beyond our planet. Our blog is dedicated to helping you discover the beauty and mysteries of space, and we're excited to have you join us on this journey.
+Welcome to our astronomy blog, where we share Fas<wbr>ci<wbr>na<wbr>ting insights and stories about the universe beyond our planet. Our blog is dedicated to helping you discover the beauty and mysteries of space, and we're excited to have you join us on this journey.
 
 ## Wallpaper: A Starry Night Sky with the Milky Way Galaxy Visible Overhead
 
@@ -78,7 +78,7 @@ Our beautiful wallpaper sets the perfect backdrop for exploring the wonders of t
 
 Stay up-to-date with the latest happenings in the world of astronomy by checking out our latest posts. From breaking news to insightful articles, we've got you covered.
 
-- The Search for Extraterrestrial Life: Are We Alone in the Universe?
+- The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life: Are We Alone in the Universe?
 - Exploring the Mysteries of Black Holes
 - The Beauty of the Northern Lights: A Guide to Viewing the Aurora Borealis
 - How Telescopes Work: A Beginner's Guide to Observing the Night Sky

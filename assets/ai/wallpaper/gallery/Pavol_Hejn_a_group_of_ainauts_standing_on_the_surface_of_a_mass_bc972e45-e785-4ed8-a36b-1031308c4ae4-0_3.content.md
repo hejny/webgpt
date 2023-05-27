@@ -30,7 +30,7 @@ The planet in the wallpaper is still largely unexplored, and its exact location 
 
 ## About Ainautes
 
-Ainautes are artificial intelligence-powered robots designed for space exploration. They are equipped with advanced sensors, cameras, and communication systems, which enable them to navigate and collect data in even the most challenging environments. Ainautes are capable of working autonomously, but they are also controlled remotely by human operators on Earth.
+Ainautes are artificial intelligence-powered robots designed for space exploration. They are equipped with advanced sensors, cameras, and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion systems, which enable them to navigate and collect data in even the most challenging environments. Ainautes are capable of working autonomously, but they are also controlled remotely by human operators on Earth.
 
 ---
 

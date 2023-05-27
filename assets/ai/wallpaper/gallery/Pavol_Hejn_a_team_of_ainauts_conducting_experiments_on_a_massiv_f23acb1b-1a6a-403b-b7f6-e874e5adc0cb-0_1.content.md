@@ -2,7 +2,7 @@
 
 # Icy Moon Ainautes
 
-Welcome to our website dedicated to exploring the fascinating icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
 
 ## About Us
 
@@ -75,7 +75,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Icy Moons of Gas Giants: Ainautes' Wallpaper
 
-Welcome to our website dedicated to exploring the fascinating icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
 
 ## About Us
 
@@ -133,7 +133,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Exploring the Icy Moons of Gas Giants with Ainautes
 
-Welcome to our website dedicated to exploring the fascinating icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting icy moons orbiting gas giants in our solar system and beyond. Our team of Ainautes (space explorers) conduct experiments and gather data on these enigmatic worlds, uncovering their secrets and expanding our understanding of the universe.
 
 ## About Us
 

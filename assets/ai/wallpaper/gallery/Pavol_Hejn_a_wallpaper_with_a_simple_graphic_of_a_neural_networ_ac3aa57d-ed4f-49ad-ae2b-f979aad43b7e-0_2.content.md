@@ -2,7 +2,7 @@
 
 # Neural Colors
 
-Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this fascinating field. To enhance your browsing experience, we've included a visually appealing background featuring a simple graphic of a neural network against a backdrop of complementary colors.
+Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this Fas<wbr>ci<wbr>na<wbr>ting field. To enhance your browsing experience, we've included a visually appealing background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## About Neural Networks
 
@@ -20,9 +20,9 @@ Our site features stories from real users who have successfully implemented neur
 
 We've compiled a list of helpful resources for those looking to learn more about neural networks. From beginner tutorials to advanced research papers, there's something for everyone.
 
-- [Neural Networks and Deep Learning](#) by Michael Nielsen
-- [TensorFlow](#) - an open-source machine learning platform
-- [arXiv.org](#) - a repository of scientific papers in computer science and other fields
+-   [Neural Networks and Deep Learning](#) by Michael Nielsen
+-   [TensorFlow](#) - an open-source machine learning platform
+-   [arXiv.org](#) - a repository of scientific papers in computer science and other fields
 
 ## Contact Us
 
@@ -32,14 +32,14 @@ Have questions or feedback? We'd love to hear from you! Reach out to us via emai
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
+"A wallpaper with a simple graphic of a neural network, against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # "Neural Networks in Action" Wallpaper Background
 
-Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this fascinating field. To enhance your browsing experience, we've included a wallpaper with a simple graphic of a neural network against a background of complementary colors.
+Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this Fas<wbr>ci<wbr>na<wbr>ting field. To enhance your browsing experience, we've included a wallpaper with a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## About Neural Networks
 
@@ -91,9 +91,9 @@ Heading should not include word "wallpaper". The website should not be about the
 ---
 
 
-# Exploring the World of Neural Networks with Complementary Colors
+# Exploring the World of Neural Networks with Com<wbr>ple<wbr>men<wbr>ta<wbr>ry Colors
 
-Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this fascinating field. To enhance your browsing experience, we've included a visually appealing background featuring a simple graphic of a neural network against a backdrop of complementary colors.
+Welcome to our website dedicated to exploring the exciting world of neural networks! Our site provides a wealth of information and resources for anyone interested in this Fas<wbr>ci<wbr>na<wbr>ting field. To enhance your browsing experience, we've included a visually appealing background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## About Neural Networks
 

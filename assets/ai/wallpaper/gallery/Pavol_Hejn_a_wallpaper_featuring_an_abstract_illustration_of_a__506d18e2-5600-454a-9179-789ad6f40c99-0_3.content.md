@@ -8,9 +8,9 @@ Welcome to our website, where we offer a stunning background featuring an abstra
 
 Our background is not just any ordinary image; it's a piece of art that can transform your workspace into a futuristic world full of possibilities. Here are some reasons why you should choose our background:
 
-- High-quality resolution: Our background is available in high-definition resolution, ensuring that every detail of the artwork is captured.
-- Unique design: The abstract illustration of the cityscape creates a moody and mysterious atmosphere that will inspire your creativity.
-- Versatile use: Whether you're a designer, writer, or simply looking for a new desktop background, our background is suitable for any creative workspace.
+-   High-quality resolution: Our background is available in high-definition resolution, ensuring that every detail of the artwork is captured.
+-   Unique design: The abstract illustration of the cityscape creates a moody and mysterious atmosphere that will inspire your creativity.
+-   Versatile use: Whether you're a designer, writer, or simply looking for a new desktop background, our background is suitable for any creative workspace.
 
 ## User Stories
 
@@ -18,7 +18,7 @@ Our customers have shared their experiences with our background, and here are so
 
 > "I've been using this background for a few weeks now, and it has transformed my workspace. Every time I look at it, I feel inspired to create something new." - Sarah, graphic designer.
 
-> "The colors and design of this background are so unique and captivating. It's like having a piece of art on my desktop." - John, writer.
+> "The colors and design of this background are so unique and Cap<wbr>ti<wbr>va<wbr>ting. It's like having a piece of art on my desktop." - John, writer.
 
 ## How to Get Our Background
 
@@ -28,9 +28,9 @@ Getting our background is easy! Simply download the image from our website and s
 
 If you're interested in learning more about the inspiration behind our background, check out these resources:
 
-- "Blade Runner" movie directed by Ridley Scott
-- "Ghost in the Shell" anime directed by Mamoru Oshii
-- "Akira" manga series created by Katsuhiro Otomo
+-   "Blade Runner" movie directed by Ridley Scott
+-   "Ghost in the Shell" anime directed by Mamoru Oshii
+-   "Akira" manga series created by Katsuhiro Otomo
 
 ## Contact Us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ Our customers have shared their experiences with our wallpaper, and here are som
 
 > "I've been using this wallpaper for a few weeks now, and it has transformed my workspace. Every time I look at it, I feel inspired to create something new." - Sarah, graphic designer.
 
-> "The colors and design of this wallpaper are so unique and captivating. It's like having a piece of art on my desktop." - John, writer.
+> "The colors and design of this wallpaper are so unique and Cap<wbr>ti<wbr>va<wbr>ting. It's like having a piece of art on my desktop." - John, writer.
 
 ## How to Get Our Wallpaper
 
@@ -129,7 +129,7 @@ Our customers have shared their experiences with our background, and here are so
 
 > "I love the unique design of this background. It's like having a window to a different world right on my desktop." - Sarah, graphic designer.
 
-> "The colors and mood of this background are so captivating. It helps me get into the zone and focus on my work." - John, writer.
+> "The colors and mood of this background are so Cap<wbr>ti<wbr>va<wbr>ting. It helps me get into the zone and focus on my work." - John, writer.
 
 ## How to Get Our Background
 
@@ -177,7 +177,7 @@ Our customers have shared their experiences with our background, and here are so
 
 > "I've been using this background for a few weeks now, and it has transformed my workspace. Every time I look at it, I feel inspired to create something new." - Sarah, graphic designer.
 
-> "The colors and design of this background are so unique and captivating. It's like having a piece of art on my desktop." - John, writer.
+> "The colors and design of this background are so unique and Cap<wbr>ti<wbr>va<wbr>ting. It's like having a piece of art on my desktop." - John, writer.
 
 ## How to Get Our Background
 
@@ -225,7 +225,7 @@ Our customers have shared their experiences with our background, and here are so
 
 > "I've been using this background for a few weeks now, and it has transformed my workspace. Every time I look at it, I feel inspired to create something new." - Sarah, graphic designer.
 
-> "The colors and design of this background are so unique and captivating. It's like having a piece of art on my desktop." - John, writer.
+> "The colors and design of this background are so unique and Cap<wbr>ti<wbr>va<wbr>ting. It's like having a piece of art on my desktop." - John, writer.
 
 ## How to Get Our Background
 

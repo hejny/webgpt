@@ -10,11 +10,11 @@ Our workspace design is inspired by Art Deco and features shades of gold and bla
 
 Our workspace design is more than just a decorative background. It is a statement piece that communicates your company's commitment to innovation, creativity, and collaboration. Here are some of the benefits of choosing our workspace design:
 
-- **Inspiration:** Our workspace design is designed to inspire creativity and innovation. It creates a dynamic and engaging environment that encourages new ideas and fresh perspectives.
+-   **Inspiration:** Our workspace design is designed to inspire creativity and innovation. It creates a dynamic and engaging environment that encourages new ideas and fresh perspectives.
 
-- **Functionality:** Our workspace design is not just beautiful, it is also functional. It can be used to divide spaces, highlight key areas, or create a focal point in a room.
+-   **Functionality:** Our workspace design is not just beautiful, it is also functional. It can be used to divide spaces, highlight key areas, or create a focal point in a room.
 
-- **Durability:** Our workspace design is made from high-quality materials that are designed to last. It is easy to clean and maintain, ensuring that it will look great for years to come.
+-   **Durability:** Our workspace design is made from high-quality materials that are designed to last. It is easy to clean and maintain, ensuring that it will look great for years to come.
 
 ## User Stories
 
@@ -28,9 +28,9 @@ Don't just take our word for it - here are some stories from real users who have
 
 Want to learn more about the benefits of workspace design? Here are some resources to get you started:
 
-- [The Power of Workspace Design](#)
-- [10 Innovative Workspace Design Ideas](#)
-- [How to Create a Collaborative Workspace](#)
+-   [The Power of Workspace Design](#)
+-   [10 Innovative Workspace Design Ideas](#)
+-   [How to Create a Coll<wbr>aborative Workspace](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ Want to learn more about the benefits of workspace design? Here are some resourc
 
 - [The Power of Workspace Design](#)
 - [10 Innovative Workspace Design Ideas](#)
-- [How to Create a Collaborative Workspace](#)
+- [How to Create a Coll<wbr>aborative Workspace](#)
 
 ## Contact Us
 
@@ -141,7 +141,7 @@ Want to learn more about the benefits of workspace design? Here are some resourc
 
 - [The Power of Workspace Design](#)
 - [10 Innovative Workspace Design Ideas](#)
-- [How to Create a Collaborative Workspace](#)
+- [How to Create a Coll<wbr>aborative Workspace](#)
 
 ## Contact Us
 
@@ -187,7 +187,7 @@ Want to learn more about the benefits of workspace design? Here are some resourc
 
 - [The Power of Workspace Design](#)
 - [10 Innovative Workspace Design Ideas](#)
-- [How to Create a Collaborative Workspace](#)
+- [How to Create a Coll<wbr>aborative Workspace](#)
 
 ## Contact Us
 
@@ -233,7 +233,7 @@ Want to learn more about the benefits of workspace design? Here are some resourc
 
 - [The Power of Workspace Design](#)
 - [10 Innovative Workspace Design Ideas](#)
-- [How to Create a Collaborative Workspace](#)
+- [How to Create a Coll<wbr>aborative Workspace](#)
 
 ## Contact Us
 

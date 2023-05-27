@@ -2,7 +2,7 @@
 
 # Deep Sea Discovery
 
-Welcome to our website, where we explore the fascinating world of the deep sea. Our digital wallpaper, featuring a stunning painting of a deep sea creature with tentacles and bioluminescent patterns, sets the tone for our exploration.
+Welcome to our website, where we explore the Fas<wbr>ci<wbr>na<wbr>ting world of the deep sea. Our digital wallpaper, featuring a stunning painting of a deep sea creature with tentacles and bioluminescent patterns, sets the tone for our exploration.
 
 ## About Us
 
@@ -20,26 +20,26 @@ Here are some stories from people who have been inspired by our work:
 
 Our website is filled with articles, videos, and other resources that cover a wide range of topics related to the deep sea. Here are just a few examples:
 
-- The Top 10 Weirdest Deep Sea Creatures
-- Exploring Hydrothermal Vents: A Journey to the Bottom of the Ocean
-- Bioluminescence in the Deep Sea: How Animals Create Their Own Light
-- The Impact of Climate Change on Deep Sea Ecosystems
+-   The Top 10 Weirdest Deep Sea Creatures
+-   Exploring Hydrothermal Vents: A Journey to the Bottom of the Ocean
+-   Bioluminescence in the Deep Sea: How Animals Create Their Own Light
+-   The Impact of Climate Change on Deep Sea Ecosystems
 
 ## References
 
 For those who want to learn more, we've compiled a list of references and further reading:
 
-- [National Oceanic and Atmospheric Administration](#noaa)
-- [Deep Sea News](#deepseanews)
-- [The Ocean Cleanup](#oceancleanup)
+-   [National Oceanic and Atmospheric Administration](#noaa)
+-   [Deep Sea News](#deepseanews)
+-   [The Ocean Cleanup](#oceancleanup)
 
 ## Contact Us
 
 We love hearing from our readers! If you have any questions, comments, or suggestions, please don't hesitate to get in touch:
 
-- Email: [info@discoverthedepths.com](mailto:info@discoverthedepths.com)
-- Twitter: [@DiscoverDepths](#twitter)
-- Instagram: [@DiscoverTheDepths](#instagram)
+-   Email: [info@discoverthedepths.com](mailto:info@discoverthedepths.com)
+-   Twitter: [@DiscoverDepths](#twitter)
+-   Instagram: [@DiscoverTheDepths](#instagram)
 
 Thank you for visiting Discover the Depths. We hope our website inspires you to explore the mysteries of the deep sea and appreciate the beauty and complexity of our ocean planet. 🌊🐙
 
@@ -51,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -70,7 +70,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Discover the Depths: Exploring the Mysteries of the Deep Sea
 
-Welcome to our website, where we explore the fascinating world of the deep sea. Our digital wallpaper, featuring a stunning painting of a deep sea creature with tentacles and bioluminescent patterns, sets the tone for our exploration.
+Welcome to our website, where we explore the Fas<wbr>ci<wbr>na<wbr>ting world of the deep sea. Our digital wallpaper, featuring a stunning painting of a deep sea creature with tentacles and bioluminescent patterns, sets the tone for our exploration.
 
 ## About Us
 

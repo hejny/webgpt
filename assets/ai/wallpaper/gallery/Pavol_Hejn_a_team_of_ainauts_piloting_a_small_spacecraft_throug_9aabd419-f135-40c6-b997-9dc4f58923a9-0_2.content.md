@@ -2,7 +2,7 @@
 
 # Frontier Exploration
 
-Welcome to our website dedicated to the exploration of space! Our stunning background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This captivating image sets the tone for our site and captures the excitement and danger of space travel.
+Welcome to our website dedicated to the exploration of space! Our stunning background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our site and captures the excitement and danger of space travel.
 
 ## Our Mission
 
@@ -105,7 +105,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Journey to the Stars: Explore the Final Frontier
 
-Welcome to our website dedicated to the exploration of space! Our stunning background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This captivating image sets the tone for our site and captures the excitement and danger of space travel.
+Welcome to our website dedicated to the exploration of space! Our stunning background image features a team of Ainautes piloting a small spacecraft through a dangerous asteroid field, with debris flying all around them. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our site and captures the excitement and danger of space travel.
 
 ## Our Mission
 

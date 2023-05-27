@@ -2,7 +2,7 @@
 
 # Immersive Space Website
 
-Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+Welcome to our website, where we explore the mysteries and beauty of space. Our Cap<wbr>ti<wbr>va<wbr>ting background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 
 ## About Us
 
@@ -24,19 +24,19 @@ Here are some stories from our users who have been inspired by our website:
 
 We offer a wide range of content on our website, including:
 
-- Articles on space news, discoveries, and history
-- Educational resources for teachers and students
-- Interactive tools and simulations
-- Interviews with experts in the field
-- A captivating space-themed background, "Sunrise on a Distant Planet"
+-   Articles on space news, discoveries, and history
+-   Educational resources for teachers and students
+-   Interactive tools and simulations
+-   Interviews with experts in the field
+-   A Cap<wbr>ti<wbr>va<wbr>ting space-themed background, "Sunrise on a Distant Planet"
 
 ## References
 
 If you're interested in learning more about space, here are some resources we recommend:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -121,7 +121,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Wonders of Space with Our Website
 
-Welcome to our website, where we delve into the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+Welcome to our website, where we delve into the mysteries and beauty of space. Our Cap<wbr>ti<wbr>va<wbr>ting background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 
 ## About Us
 
@@ -147,7 +147,7 @@ We offer a wide range of content on our website, including:
 - Educational resources for teachers and students
 - Interactive tools and simulations
 - Interviews with experts in the field
-- A captivating space-themed background, "Sunrise on a Distant Planet"
+- A Cap<wbr>ti<wbr>va<wbr>ting space-themed background, "Sunrise on a Distant Planet"
 
 ## References
 
@@ -173,7 +173,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Wonders of Space with Our Immersive Website
 
-Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+Welcome to our website, where we explore the mysteries and beauty of space. Our Cap<wbr>ti<wbr>va<wbr>ting background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 
 ## About Us
 
@@ -199,7 +199,7 @@ We offer a wide range of content on our website, including:
 - Educational resources for teachers and students
 - Interactive tools and simulations
 - Interviews with experts in the field
-- A captivating space-themed background, "Sunrise on a Distant Planet"
+- A Cap<wbr>ti<wbr>va<wbr>ting space-themed background, "Sunrise on a Distant Planet"
 
 ## References
 
@@ -225,7 +225,7 @@ Heading is too long, rewrite whole content.
 
 # Explore Space with Our Immersive Website
 
-Welcome to our website, where we explore the mysteries and beauty of space. Our captivating background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
+Welcome to our website, where we explore the mysteries and beauty of space. Our Cap<wbr>ti<wbr>va<wbr>ting background, "Sunrise on a Distant Planet," sets the tone for an immersive experience that will take you on a journey through the cosmos.
 
 ## About Us
 
@@ -251,7 +251,7 @@ We offer a wide range of content on our website, including:
 - Educational resources for teachers and students
 - Interactive tools and simulations
 - Interviews with experts in the field
-- A captivating space-themed background, "Sunrise on a Distant Planet"
+- A Cap<wbr>ti<wbr>va<wbr>ting space-themed background, "Sunrise on a Distant Planet"
 
 ## References
 

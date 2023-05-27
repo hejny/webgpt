@@ -10,10 +10,10 @@ Our background is not just a beautiful image - it's a source of inspiration and 
 
 Here are some reasons why our background is the perfect choice for your device:
 
-- High-quality design: Our background is professionally designed to ensure the highest quality and resolution.
-- Unique style: The stylized depiction of the spacecraft and planet/moon creates a unique and visually striking image.
-- Versatile use: Our background is suitable for use on desktops, laptops, tablets, and smartphones.
-- Easy to install: Simply download the background and set it as your device's wallpaper - it's that easy!
+-   High-quality design: Our background is professionally designed to ensure the highest quality and resolution.
+-   Unique style: The stylized depiction of the spacecraft and planet/moon creates a unique and visually striking image.
+-   Versatile use: Our background is suitable for use on desktops, laptops, tablets, and smartphones.
+-   Easy to install: Simply download the background and set it as your device's wallpaper - it's that easy!
 
 ## User Stories
 
@@ -21,22 +21,22 @@ Here are some stories from our satisfied users:
 
 > "I love science fiction and space exploration, so this background is perfect for me. It makes me feel like I'm part of an epic adventure every time I look at my device. It's also a great conversation starter!" - Mark S.
 
-> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and captivating. I love having it as my background when I'm working on new projects." - Rachel L.
+> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and Cap<wbr>ti<wbr>va<wbr>ting. I love having it as my background when I'm working on new projects." - Rachel L.
 
 ## Resources
 
 If you want to learn more about space exploration and astronomy, here are some resources to check out:
 
-- NASA's website: https://www.nasa.gov/
-- Space.com: https://www.space.com/
-- Astronomy Magazine: https://astronomy.com/
+-   NASA's website: https://www.nasa.gov/
+-   Space.com: https://www.space.com/
+-   Astronomy Magazine: https://astronomy.com/
 
 ## Contact Us
 
 If you have any questions or comments about our Cosmic Adventures background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels:
 
-- Twitter: https://twitter.com/cosmicadventures
-- Facebook: https://www.facebook.com/cosmicadventures
+-   Twitter: https://twitter.com/cosmicadventures
+-   Facebook: https://www.facebook.com/cosmicadventures
 
 Thank you for choosing our background - we hope it inspires you to explore the wonders of space! 🚀🪐
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -86,7 +86,7 @@ Here are some stories from our satisfied users:
 
 > "I've always been fascinated by space, and this wallpaper really captures the sense of adventure and exploration that I love about it. Every time I look at my desktop, I feel inspired to dream big and reach for the stars." - John D.
 
-> "As an artist, I'm always looking for new sources of inspiration. This wallpaper is like a window into another world - it's so beautiful and captivating. I love having it as my background when I'm working on new projects." - Sarah K.
+> "As an artist, I'm always looking for new sources of inspiration. This wallpaper is like a window into another world - it's so beautiful and Cap<wbr>ti<wbr>va<wbr>ting. I love having it as my background when I'm working on new projects." - Sarah K.
 
 ## References
 
@@ -117,7 +117,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Beauty of Space with Our Cosmic Adventures Background
 
-Are you fascinated by the mysteries of space? Do you dream of exploring distant planets and galaxies? Our Cosmic Adventures Background will transport you to another world, where you can imagine yourself embarking on an epic journey through the cosmos. 
+Are you fascinated by the mysteries of space? Do you dream of exploring distant planets and galaxies? Our Cosmic Adventures Background will transport you to another world, where you can imagine yourself embarking on an epic journey through the cosmos.
 
 Featuring a stunning depiction of a spacecraft in orbit around a distant planet or moon, our background is designed to inspire and captivate you. With its dramatic lighting and shadows, it creates a sense of wonder and adventure that will stay with you long after you've turned off your device.
 
@@ -138,7 +138,7 @@ Here are some stories from our satisfied users:
 
 > "I love science fiction and space exploration, so this background is perfect for me. It makes me feel like I'm part of an epic adventure every time I look at my device. It's also a great conversation starter!" - Mark S.
 
-> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and captivating. I love having it as my background when I'm working on new projects." - Rachel L.
+> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and Cap<wbr>ti<wbr>va<wbr>ting. I love having it as my background when I'm working on new projects." - Rachel L.
 
 ## Resources
 
@@ -188,7 +188,7 @@ Here are some stories from our satisfied users:
 
 > "I love science fiction and space exploration, so this background is perfect for me. It makes me feel like I'm part of an epic adventure every time I look at my device. It's also a great conversation starter!" - Mark S.
 
-> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and captivating. I love having it as my background when I'm working on new projects." - Rachel L.
+> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and Cap<wbr>ti<wbr>va<wbr>ting. I love having it as my background when I'm working on new projects." - Rachel L.
 
 ## Resources
 
@@ -238,7 +238,7 @@ Here are some stories from our satisfied users:
 
 > "I love science fiction and space exploration, so this background is perfect for me. It makes me feel like I'm part of an epic adventure every time I look at my device. It's also a great conversation starter!" - Mark S.
 
-> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and captivating. I love having it as my background when I'm working on new projects." - Rachel L.
+> "As an artist, I'm always looking for new sources of inspiration. This background is like a work of art - it's so beautiful and Cap<wbr>ti<wbr>va<wbr>ting. I love having it as my background when I'm working on new projects." - Rachel L.
 
 ## Resources
 

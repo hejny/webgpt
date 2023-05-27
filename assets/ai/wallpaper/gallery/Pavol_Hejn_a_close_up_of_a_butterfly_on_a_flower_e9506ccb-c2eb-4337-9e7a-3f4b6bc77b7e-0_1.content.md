@@ -31,7 +31,7 @@ Our users love our butterfly background! Here are some of their stories:
 
 ## References
 
-If you're interested in learning more about butterflies and their importance in our ecosystem, check out these resources:
+If you're interested in learning more about But<wbr>ter<wbr>flies and their importance in our ecosystem, check out these resources:
 
 -   [Butterfly Conservation](#)
 -   [National Wildlife Federation](#)
@@ -102,7 +102,7 @@ Our users love our butterfly wallpaper! Here are some of their stories:
 
 ## References
 
-If you're interested in learning more about butterflies and their importance in our ecosystem, check out these resources:
+If you're interested in learning more about But<wbr>ter<wbr>flies and their importance in our ecosystem, check out these resources:
 
 - [Butterfly Conservation](#)
 - [National Wildlife Federation](#)
@@ -158,7 +158,7 @@ Our users love our butterfly background! Here are some of their stories:
 
 ## References
 
-If you're interested in learning more about butterflies and their importance in our ecosystem, check out these resources:
+If you're interested in learning more about But<wbr>ter<wbr>flies and their importance in our ecosystem, check out these resources:
 
 - [Butterfly Conservation](#)
 - [National Wildlife Federation](#)

@@ -12,10 +12,10 @@ Ainautes are highly skilled workers who have undergone extensive training to ope
 
 By working alongside AI companions, Ainautes are able to:
 
-- Increase productivity and efficiency
-- Minimize errors and accidents
-- Perform complex tasks that would be impossible for humans alone
-- Improve communication and collaboration among team members
+-   Increase productivity and efficiency
+-   Minimize errors and accidents
+-   Perform complex tasks that would be impossible for humans alone
+-   Improve Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion and collaboration among team members
 
 ## User Stories
 
@@ -29,8 +29,8 @@ Don't just take our word for it - hear from real Ainautes about their experience
 
 For more information on the benefits of collaborating with AI companions, check out these resources:
 
-- [The Future of Work: How AI Will Transform the Workplace](#)
-- [Collaborative Intelligence: Humans and AI Are Joining Forces](#)
+-   [The Future of Work: How AI Will Transform the Workplace](#)
+-   [Coll<wbr>aborative Intelligence: Humans and AI Are Joining Forces](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -76,7 +76,7 @@ By working alongside AI companions, Ainautes are able to:
 - Increase productivity and efficiency
 - Minimize errors and accidents
 - Perform complex tasks that would be impossible for humans alone
-- Improve communication and collaboration among team members
+- Improve Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion and collaboration among team members
 
 ## User Stories
 
@@ -91,7 +91,7 @@ Don't just take our word for it - hear from real Ainautes about their experience
 For more information on the benefits of collaborating with AI companions, check out these resources:
 
 - [The Future of Work: How AI Will Transform the Workplace](#)
-- [Collaborative Intelligence: Humans and AI Are Joining Forces](#)
+- [Coll<wbr>aborative Intelligence: Humans and AI Are Joining Forces](#)
 
 ## Contact Us
 

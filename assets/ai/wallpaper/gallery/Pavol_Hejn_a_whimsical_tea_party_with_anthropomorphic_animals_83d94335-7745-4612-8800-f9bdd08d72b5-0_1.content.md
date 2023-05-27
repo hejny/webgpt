@@ -2,7 +2,7 @@
 
 # Tea Party Decor
 
-Welcome to our website! If you're looking to add a touch of whimsy and charm to your home, our whimsical tea party decor is the perfect solution. With anthropomorphic animals, teacups, and delicious treats, our decor will transport you to a world of fantasy and imagination.
+Welcome to our website! If you're looking to add a touch of whimsy and charm to your home, our whimsical tea party decor is the perfect solution. With An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals, teacups, and delicious treats, our decor will transport you to a world of fantasy and imagination.
 
 ## About Our Whimsical Tea Party Decor
 
@@ -10,10 +10,10 @@ Our decor is inspired by the whimsical tea parties of children's literature and 
 
 ### Features
 
-- High-quality and durable materials
-- Non-toxic and eco-friendly
-- Available in different sizes and styles
-- Easy to mix and match
+-   High-quality and durable materials
+-   Non-toxic and eco-friendly
+-   Available in different sizes and styles
+-   Easy to mix and match
 
 ## User Stories
 
@@ -27,11 +27,11 @@ Our customers love our whimsical tea party decor! Here are some of their stories
 
 Here are some tips for creating a whimsical tea party-inspired space:
 
-- Choose pastel colors like pink, blue, and green.
-- Mix and match patterns like polka dots, stripes, and florals.
-- Incorporate playful elements like stuffed animals and tea sets.
-- Hang whimsical wall art like our anthropomorphic animal prints.
-- Use cozy textiles like our teacup-shaped pillows and blankets.
+-   Choose pastel colors like pink, blue, and green.
+-   Mix and match patterns like polka dots, stripes, and florals.
+-   Incorporate playful elements like stuffed animals and tea sets.
+-   Hang whimsical wall art like our An<wbr>thro<wbr>po<wbr>mor<wbr>phic animal prints.
+-   Use cozy textiles like our teacup-shaped pillows and blankets.
 
 For more decorating tips and inspiration, please refer to our [blog](#blog).
 
@@ -39,9 +39,9 @@ For more decorating tips and inspiration, please refer to our [blog](#blog).
 
 Here are some of our favorite references for creating a whimsical tea party-inspired space:
 
-- [Alice in Wonderland](#alice-in-wonderland)
-- [Beatrix Potter's Tales](#beatrix-potters-tales)
-- [The Wind in the Willows](#the-wind-in-the-willows)
+-   [Alice in Wonderland](#alice-in-wonderland)
+-   [Beatrix Potter's Tales](#beatrix-potters-tales)
+-   [The Wind in the Willows](#the-wind-in-the-willows)
 
 ## Contact Us
 
@@ -59,14 +59,14 @@ We hope you enjoy our whimsical tea party decor as much as we do!
 
 Write me content for website with wallpaper which alt text is:
 
-"A whimsical tea party with anthropomorphic animals"
+"A whimsical tea party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals"
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -82,7 +82,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Whimsical Tea Party Wallpaper Background
 
-Welcome to our website! Our whimsical tea party wallpaper background is the perfect addition to any space that needs a touch of playfulness and charm. With anthropomorphic animals, teacups, and delicious treats, this wallpaper will transport you to a world of fantasy and imagination.
+Welcome to our website! Our whimsical tea party wallpaper background is the perfect addition to any space that needs a touch of playfulness and charm. With An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals, teacups, and delicious treats, this wallpaper will transport you to a world of fantasy and imagination.
 
 ## About Our Wallpaper Background
 
@@ -149,7 +149,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Whimsical Tea Party Decor for Your Home
 
-Welcome to our website! If you're looking to add a touch of whimsy and charm to your home, our whimsical tea party decor is the perfect solution. With anthropomorphic animals, teacups, and delicious treats, our decor will transport you to a world of fantasy and imagination.
+Welcome to our website! If you're looking to add a touch of whimsy and charm to your home, our whimsical tea party decor is the perfect solution. With An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals, teacups, and delicious treats, our decor will transport you to a world of fantasy and imagination.
 
 ## About Our Whimsical Tea Party Decor
 
@@ -177,7 +177,7 @@ Here are some tips for creating a whimsical tea party-inspired space:
 - Choose pastel colors like pink, blue, and green.
 - Mix and match patterns like polka dots, stripes, and florals.
 - Incorporate playful elements like stuffed animals and tea sets.
-- Hang whimsical wall art like our anthropomorphic animal prints.
+- Hang whimsical wall art like our An<wbr>thro<wbr>po<wbr>mor<wbr>phic animal prints.
 - Use cozy textiles like our teacup-shaped pillows and blankets.
 
 For more decorating tips and inspiration, please refer to our [blog](#blog).

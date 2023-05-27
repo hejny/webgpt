@@ -8,10 +8,10 @@ Our Aurora Borealis background is a breathtaking image that captures the awe-ins
 
 Our background is not only visually stunning but also high-quality and easy to use. Here are some reasons why you should choose our Aurora Borealis background:
 
-- High-resolution image: Our background features a high-resolution photograph of the Northern Lights, ensuring that every detail is captured.
-- Easy to use: Our background is easy to apply to your device. Simply download the image and set it as your background.
-- Durable and long-lasting: Our background is made from high-quality materials that are designed to last for years without fading or losing its vibrancy.
-- Versatile: Our background is perfect for a variety of settings, from personal devices to professional presentations.
+-   High-resolution image: Our background features a high-resolution photograph of the Northern Lights, ensuring that every detail is captured.
+-   Easy to use: Our background is easy to apply to your device. Simply download the image and set it as your background.
+-   Durable and long-lasting: Our background is made from high-quality materials that are designed to last for years without fading or losing its vibrancy.
+-   Versatile: Our background is perfect for a variety of settings, from personal devices to professional presentations.
 
 ## User Stories
 
@@ -25,9 +25,9 @@ Here are some stories from our satisfied customers who have used our Aurora Bore
 
 Want to learn more about the Northern Lights? Here are some resources to check out:
 
-- [National Geographic: Northern Lights](#)
-- [NASA: Aurora Borealis](#)
-- [The Aurora Zone: Northern Lights Guide](#)
+-   [National Geographic: Northern Lights](#)
+-   [NASA: Aurora Borealis](#)
+-   [The Aurora Zone: Northern Lights Guide](#)
 
 ## Contact Us
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -64,7 +64,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Aurora Borealis Wallpaper: Bring the Northern Lights to Your Screen
 
-Looking for a stunning and captivating wallpaper that will transport you to the magical world of the Northern Lights? Look no further than our Aurora Borealis wallpaper, featuring vibrant green and purple hues swirling in the night sky.
+Looking for a stunning and Cap<wbr>ti<wbr>va<wbr>ting wallpaper that will transport you to the magical world of the Northern Lights? Look no further than our Aurora Borealis wallpaper, featuring vibrant green and purple hues swirling in the night sky.
 
 ## Why Choose Our Aurora Borealis Wallpaper?
 
@@ -111,7 +111,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Experience the Magic of the Northern Lights with Our Aurora Borealis Background
 
-Looking for a captivating and mesmerizing background that will transport you to the enchanting world of the Northern Lights? Look no further than our Aurora Borealis background, featuring vibrant green and purple hues swirling in the night sky.
+Looking for a Cap<wbr>ti<wbr>va<wbr>ting and mesmerizing background that will transport you to the enchanting world of the Northern Lights? Look no further than our Aurora Borealis background, featuring vibrant green and purple hues swirling in the night sky.
 
 ## Why Choose Our Aurora Borealis Background?
 
@@ -158,7 +158,7 @@ Heading is too long, rewrite whole content.
 
 # Aurora Borealis Background: Experience the Magic of the Northern Lights
 
-Our Aurora Borealis background is a stunning and captivating image featuring vibrant green and purple hues swirling in the night sky. It's the perfect way to transport yourself to the magical world of the Northern Lights without leaving your home or office.
+Our Aurora Borealis background is a stunning and Cap<wbr>ti<wbr>va<wbr>ting image featuring vibrant green and purple hues swirling in the night sky. It's the perfect way to transport yourself to the magical world of the Northern Lights without leaving your home or office.
 
 ## Why Choose Our Aurora Borealis Background?
 

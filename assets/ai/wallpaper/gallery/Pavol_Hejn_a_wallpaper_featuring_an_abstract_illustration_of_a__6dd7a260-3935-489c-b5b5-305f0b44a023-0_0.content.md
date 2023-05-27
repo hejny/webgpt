@@ -16,17 +16,17 @@ Our team of writers and contributors includes architects, engineers, and urban p
 
 Here are some stories from our readers about how Future Cityscapes has inspired them:
 
-- "I'm studying urban planning in college, and this site has been an incredible resource for keeping up with the latest trends and ideas."
-- "The wallpaper on this site is amazing! It really sets the tone for the futuristic vibe of the content."
-- "I never realized how much thought and planning goes into designing a city until I started reading Future Cityscapes. It's fascinating!"
+-   "I'm studying urban planning in college, and this site has been an incredible resource for keeping up with the latest trends and ideas."
+-   "The wallpaper on this site is amazing! It really sets the tone for the futuristic vibe of the content."
+-   "I never realized how much thought and planning goes into designing a city until I started reading Future Cityscapes. It's Fas<wbr>ci<wbr>na<wbr>ting!"
 
 ## Further Reading
 
 Here are some resources we recommend for further exploration:
 
-- [CityLab](#) - A leading online publication covering urban issues and trends.
-- [The High Line](#) - An innovative park built on an abandoned elevated railway in New York City.
-- [The Smart City Podcast](#) - A podcast exploring the intersection of technology and urbanism.
+-   [CityLab](#) - A leading online publication covering urban issues and trends.
+-   [The High Line](#) - An innovative park built on an abandoned elevated railway in New York City.
+-   [The Smart City Podcast](#) - A podcast exploring the intersection of technology and urbanism.
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ Our team of writers and contributors includes architects, engineers, and urban p
 
 Here are some stories from our readers about how Dark Metropolis has inspired them:
 
-- "I've always been interested in urban design, but I didn't know where to start. Dark Metropolis gave me a roadmap for exploring this fascinating field."
+- "I've always been interested in urban design, but I didn't know where to start. Dark Metropolis gave me a roadmap for exploring this Fas<wbr>ci<wbr>na<wbr>ting field."
 - "The wallpaper on this site is amazing! It really sets the tone for the futuristic vibe of the content."
 - "I love the mix of practical advice and big-picture thinking on Dark Metropolis. It's a great resource for anyone interested in the future of cities."
 
@@ -117,7 +117,7 @@ Here are some stories from our readers about how Future Cityscapes has inspired 
 
 - "I'm studying urban planning in college, and this site has been an incredible resource for keeping up with the latest trends and ideas."
 - "The wallpaper on this site is amazing! It really sets the tone for the futuristic vibe of the content."
-- "I never realized how much thought and planning goes into designing a city until I started reading Future Cityscapes. It's fascinating!"
+- "I never realized how much thought and planning goes into designing a city until I started reading Future Cityscapes. It's Fas<wbr>ci<wbr>na<wbr>ting!"
 
 ## Further Reading
 

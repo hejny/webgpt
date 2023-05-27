@@ -20,13 +20,13 @@ Welcome to Cosmic Dreams, where reality is just a suggestion. Immerse yourself i
 
 ## Wallpaper
 
-Our wallpaper features an awe-inspiring image of a distant planet with towering mountains and a glowing atmosphere. The foreground showcases a group of curious extraterrestrial creatures, each with their own unique appearance and personality. 
+Our wallpaper features an awe-inspiring image of a distant planet with towering mountains and a glowing atmosphere. The foreground showcases a group of curious Ex<wbr>tra<wbr>terre<wbr>strial creatures, each with their own unique appearance and personality.
 
 > "The universe is full of magical things patiently waiting for our wits to grow sharper." - Eden Phillpotts
 
 ## About Us
 
-At Cosmic Dreams, we believe that imagination knows no bounds. Our mission is to inspire creativity and curiosity through stunning visual art and design. 
+At Cosmic Dreams, we believe that imagination knows no bounds. Our mission is to inspire creativity and curiosity through stunning visual art and design.
 
 ## Our Collection
 

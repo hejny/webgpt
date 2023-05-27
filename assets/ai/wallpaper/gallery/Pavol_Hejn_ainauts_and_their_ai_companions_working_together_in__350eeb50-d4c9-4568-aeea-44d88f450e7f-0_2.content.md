@@ -2,7 +2,7 @@
 
 # Space Workspaces
 
-Welcome to our website, where we explore the future of collaborative workspaces in space. Our background image depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
+Welcome to our website, where we explore the future of Coll<wbr>aborative workspaces in space. Our background image depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
 
 ## The Future of Work
 
@@ -12,17 +12,17 @@ As technology advances, so does the way we work. In space, where resources are l
 
 We've interviewed astronauts, engineers, and scientists who have worked in space to understand the challenges they face. Here are some of their stories:
 
-- "Working in space can be isolating, but my AI companion keeps me company and helps me stay focused." - Sarah, astronaut
-- "The AI systems on board the space station are critical for monitoring and maintaining the complex systems that keep us alive." - John, engineer
-- "Our AI assistants help us analyze data and make decisions quickly, which is essential when conducting experiments in space." - Maria, scientist
+-   "Working in space can be isolating, but my AI companion keeps me company and helps me stay focused." - Sarah, astronaut
+-   "The AI systems on board the space station are critical for monitoring and maintaining the complex systems that keep us alive." - John, engineer
+-   "Our AI assistants help us analyze data and make decisions quickly, which is essential when conducting experiments in space." - Maria, scientist
 
 ## Resources
 
 If you're interested in learning more about the future of work in space, check out these resources:
 
-- [NASA's Human Research Program](#)
-- [SpaceX's Starlink Satellite Internet](#)
-- [ESA's Space for Inspiration](#)
+-   [NASA's Human Research Program](#)
+-   [SpaceX's Starlink Satellite Internet](#)
+-   [ESA's Space for Inspiration](#)
 
 ## Contact Us
 
@@ -30,7 +30,7 @@ Have questions or want to learn more? Contact us at [info@spacecollaboration.com
 
 ---
 
-Stay tuned for more updates on the future of collaborative workspaces in space!
+Stay tuned for more updates on the future of Coll<wbr>aborative workspaces in space!
 
 <!--
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -57,7 +57,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 ---
 
 
-# Space Station Wallpaper: A Collaborative Workspace for Humans and AI
+# Space Station Wallpaper: A Coll<wbr>aborative Workspace for Humans and AI
 
 Welcome to our website, where we explore the future of workspaces in space. Our wallpaper depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
 
@@ -99,9 +99,9 @@ Heading should not include word "wallpaper". The website should not be about the
 ---
 
 
-# Collaborative Workspaces in Space: Humans and AI Working Together
+# Coll<wbr>aborative Workspaces in Space: Humans and AI Working Together
 
-Welcome to our website, where we explore the future of collaborative workspaces in space. Our background image depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
+Welcome to our website, where we explore the future of Coll<wbr>aborative workspaces in space. Our background image depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
 
 ## The Future of Work
 
@@ -129,6 +129,6 @@ Have questions or want to learn more? Contact us at [info@spacecollaboration.com
 
 ---
 
-Stay tuned for more updates on the future of collaborative workspaces in space!
+Stay tuned for more updates on the future of Coll<wbr>aborative workspaces in space!
 
 -->

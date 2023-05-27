@@ -2,7 +2,7 @@
 
 # Night Sky over Desert
 
-Transform your computer screen into a stunning night sky with our high-quality desert landscape background. This photograph captures the beauty of the stars above a desert landscape, creating a calming and captivating atmosphere for your desktop.
+Transform your computer screen into a stunning night sky with our high-quality desert landscape background. This photograph captures the beauty of the stars above a desert landscape, creating a calming and Cap<wbr>ti<wbr>va<wbr>ting atmosphere for your desktop.
 
 ## Features
 
@@ -103,7 +103,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Beauty of the Night Sky with Our Desert Landscape Background
 
-Transform your computer screen into a stunning night sky with our high-quality desert landscape background. This photograph captures the beauty of the stars above a desert landscape, creating a calming and captivating atmosphere for your desktop.
+Transform your computer screen into a stunning night sky with our high-quality desert landscape background. This photograph captures the beauty of the stars above a desert landscape, creating a calming and Cap<wbr>ti<wbr>va<wbr>ting atmosphere for your desktop.
 
 ## Features
 

@@ -6,7 +6,7 @@ Welcome to our website, where we explore the latest trends and innovations in ar
 
 ## About the Wallpaper
 
-Our space colony wallpaper features an illustration of a futuristic colony on a distant planet. The mix of traditional and modern architecture creates a unique and captivating atmosphere that will inspire creativity and imagination.
+Our space colony wallpaper features an illustration of a futuristic colony on a distant planet. The mix of traditional and modern architecture creates a unique and Cap<wbr>ti<wbr>va<wbr>ting atmosphere that will inspire creativity and imagination.
 
 ## User Stories
 
@@ -60,7 +60,7 @@ Welcome to our website, where we explore the latest trends and innovations in ar
 
 ## About the Wallpaper
 
-Our space colony wallpaper features an illustration of a futuristic colony on a distant planet. The mix of traditional and modern architecture creates a unique and captivating atmosphere that will inspire creativity and imagination.
+Our space colony wallpaper features an illustration of a futuristic colony on a distant planet. The mix of traditional and modern architecture creates a unique and Cap<wbr>ti<wbr>va<wbr>ting atmosphere that will inspire creativity and imagination.
 
 ## User Stories
 

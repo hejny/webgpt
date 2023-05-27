@@ -6,7 +6,7 @@ Our digital artwork captures the awe-inspiring beauty and wonder of space, featu
 
 ## Set as Your Background
 
-To enjoy this captivating image as your desktop or mobile device background, simply save the image to your device and set it as your wallpaper. Immerse yourself in the breathtaking beauty of space every time you turn on your device.
+To enjoy this Cap<wbr>ti<wbr>va<wbr>ting image as your desktop or mobile device background, simply save the image to your device and set it as your wallpaper. Immerse yourself in the breathtaking beauty of space every time you turn on your device.
 
 ## About the Artist
 
@@ -56,7 +56,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Beauty of Space with Our Digital Painting
 
-Experience the awe-inspiring beauty of space with our stunning digital painting. This captivating artwork features a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe. 
+Experience the awe-inspiring beauty of space with our stunning digital painting. This Cap<wbr>ti<wbr>va<wbr>ting artwork features a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe.
 
 ## Download and Set as Your Background
 
@@ -82,11 +82,11 @@ Heading is too long, rewrite whole content.
 
 # Discover the Wonders of Space with Our Digital Artwork
 
-Our stunning digital artwork captures the beauty and mystery of space, featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe. 
+Our stunning digital artwork captures the beauty and mystery of space, featuring a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of the universe.
 
 ## Set as Your Background
 
-To enjoy this captivating image as your desktop or mobile device background, simply save the image to your device and set it as your wallpaper. Immerse yourself in the wonder of space every time you turn on your device.
+To enjoy this Cap<wbr>ti<wbr>va<wbr>ting image as your desktop or mobile device background, simply save the image to your device and set it as your wallpaper. Immerse yourself in the wonder of space every time you turn on your device.
 
 ## About the Artist
 
@@ -112,7 +112,7 @@ Our digital artwork captures the awe-inspiring beauty and wonder of space, featu
 
 ## Set as Your Background
 
-To enjoy this captivating image as your desktop or mobile device background, simply save the image to your device and set it as your wallpaper. Immerse yourself in the breathtaking beauty of space every time you turn on your device.
+To enjoy this Cap<wbr>ti<wbr>va<wbr>ting image as your desktop or mobile device background, simply save the image to your device and set it as your wallpaper. Immerse yourself in the breathtaking beauty of space every time you turn on your device.
 
 ## About the Artist
 

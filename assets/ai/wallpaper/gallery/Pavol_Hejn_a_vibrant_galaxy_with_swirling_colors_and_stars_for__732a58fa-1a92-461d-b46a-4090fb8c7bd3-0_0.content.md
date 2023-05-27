@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -30,9 +30,9 @@ Our vibrant galaxy wallpaper perfectly captures the beauty and wonder of the cos
 
 Here are some of our latest posts:
 
-- **The Search for Extraterrestrial Life:** Are we alone in the universe? We explore the latest research on the search for extraterrestrial life.
-- **The Power of Black Holes:** Black holes are some of the most mysterious objects in the universe. Learn about their power and how they shape the cosmos.
-- **The History of Space Exploration:** From Sputnik to the Mars rovers, we take a look back at the history of space exploration and the incredible achievements that have brought us to where we are today.
+-   **The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life:** Are we alone in the universe? We explore the latest research on the search for Ex<wbr>tra<wbr>terre<wbr>strial life.
+-   **The Power of Black Holes:** Black holes are some of the most mysterious objects in the universe. Learn about their power and how they shape the cosmos.
+-   **The History of Space Exploration:** From Sputnik to the Mars rovers, we take a look back at the history of space exploration and the incredible achievements that have brought us to where we are today.
 
 ## User Stories
 
@@ -46,9 +46,9 @@ We love hearing from our readers about how our blog has inspired them to learn m
 
 If you're interested in learning more about science and astronomy, we recommend checking out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 

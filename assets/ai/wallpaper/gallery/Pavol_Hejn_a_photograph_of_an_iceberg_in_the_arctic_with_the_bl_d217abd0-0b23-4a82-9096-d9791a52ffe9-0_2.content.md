@@ -20,7 +20,7 @@ Don't just take our word for it - check out some of the amazing stories from tra
 
 ## References
 
-Looking for more information about the Arctic? Check out our list of recommended books, documentaries, and websites to learn more about this fascinating region.
+Looking for more information about the Arctic? Check out our list of recommended books, documentaries, and websites to learn more about this Fas<wbr>ci<wbr>na<wbr>ting region.
 
 ## Contact Us
 
@@ -75,7 +75,7 @@ Don't just take our word for it - check out some of the amazing stories from tra
 
 ## References
 
-Looking for more information about the Arctic? Check out our list of recommended books, documentaries, and websites to learn more about this fascinating region.
+Looking for more information about the Arctic? Check out our list of recommended books, documentaries, and websites to learn more about this Fas<wbr>ci<wbr>na<wbr>ting region.
 
 ## Contact Us
 

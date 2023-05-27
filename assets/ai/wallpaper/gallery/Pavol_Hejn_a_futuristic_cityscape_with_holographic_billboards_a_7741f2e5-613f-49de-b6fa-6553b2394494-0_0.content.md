@@ -10,23 +10,23 @@ Our stunning wallpaper features a breathtaking view of a futuristic cityscape wi
 
 ## Explore the Future of Cities
 
-At Futuristic Cityscapes, we are passionate about exploring the potential of tomorrow's cities. Our website features a range of articles, videos, and infographics that delve into the latest trends and developments in urban design and technology. Whether you're interested in smart cities, sustainable architecture, or the latest transportation innovations, you'll find plenty of fascinating content to explore on our site.
+At Futuristic Cityscapes, we are passionate about exploring the potential of tomorrow's cities. Our website features a range of articles, videos, and infographics that delve into the latest trends and developments in urban design and technology. Whether you're interested in smart cities, sustainable architecture, or the latest transportation innovations, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content to explore on our site.
 
 ## User Stories
 
 We love hearing from our readers about their own visions for the future of cities. Check out some of our user stories to see how people around the world are imagining the cities of tomorrow:
 
-- "I dream of a city where every building generates its own energy and waste is a thing of the past." - Jane, Seattle
-- "In my ideal city, public transportation is fast, affordable, and accessible to everyone." - Ahmed, Dubai
-- "I want to see more green spaces in our cities, with parks and gardens integrated into every neighborhood." - Maria, Barcelona
+-   "I dream of a city where every building generates its own energy and waste is a thing of the past." - Jane, Seattle
+-   "In my ideal city, public transportation is fast, affordable, and accessible to everyone." - Ahmed, Dubai
+-   "I want to see more green spaces in our cities, with parks and gardens integrated into every neighborhood." - Maria, Barcelona
 
 ## References
 
 Looking to learn more about the future of cities? Check out our list of references for some great resources:
 
-- [The Smart City Blueprint](#)
-- [Future Cities Catapult](#)
-- [The New Urban Agenda](#)
+-   [The Smart City Blueprint](#)
+-   [Future Cities Catapult](#)
+-   [The New Urban Agenda](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ Our stunning wallpaper features a breathtaking view of a futuristic cityscape wi
 
 ## Explore the Future of Cities
 
-At Futuristic Cityscapes, we are passionate about exploring the potential of tomorrow's cities. Our website features a range of articles, videos, and infographics that delve into the latest trends and developments in urban design and technology. Whether you're interested in smart cities, sustainable architecture, or the latest transportation innovations, you'll find plenty of fascinating content to explore on our site.
+At Futuristic Cityscapes, we are passionate about exploring the potential of tomorrow's cities. Our website features a range of articles, videos, and infographics that delve into the latest trends and developments in urban design and technology. Whether you're interested in smart cities, sustainable architecture, or the latest transportation innovations, you'll find plenty of Fas<wbr>ci<wbr>na<wbr>ting content to explore on our site.
 
 ## User Stories
 

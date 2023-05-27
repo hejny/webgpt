@@ -28,7 +28,7 @@ Our team is composed of scientists, engineers, and AI experts who share a passio
 
 ## Our Mission
 
-Our mission is to explore the depths of gas giants and uncover the secrets hidden within their dense atmospheres. By deploying state-of-the-art AI technology, we aim to collect data that will help us better understand the formation and evolution of these fascinating planets.
+Our mission is to explore the depths of gas giants and uncover the secrets hidden within their dense atmospheres. By deploying state-of-the-art AI technology, we aim to collect data that will help us better understand the formation and evolution of these Fas<wbr>ci<wbr>na<wbr>ting planets.
 
 ## User Stories
 

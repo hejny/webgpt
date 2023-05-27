@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Starfish Sea
 
-Welcome to Oceanic Starfish, your ultimate guide to exploring the beauty and diversity of the ocean. Our website is dedicated to providing you with an immersive experience that will take you on a journey through the fascinating world of marine life.
+Welcome to Oceanic Starfish, your ultimate guide to exploring the beauty and diversity of the ocean. Our website is dedicated to providing you with an immersive experience that will take you on a journey through the Fas<wbr>ci<wbr>na<wbr>ting world of marine life.
 
 ## About Us
 
@@ -44,7 +44,7 @@ Our articles cover a variety of topics related to marine life, including:
 
 ### Videos
 
-Our videos offer a unique perspective on the ocean, taking you on virtual tours of coral reefs, kelp forests, and other underwater habitats. You'll also get a chance to see some of the most fascinating creatures that call the ocean home, from playful dolphins to elusive octopuses.
+Our videos offer a unique perspective on the ocean, taking you on virtual tours of coral reefs, kelp forests, and other underwater habitats. You'll also get a chance to see some of the most Fas<wbr>ci<wbr>na<wbr>ting creatures that call the ocean home, from playful dolphins to elusive octopuses.
 
 ### Interactive Content
 

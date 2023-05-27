@@ -26,7 +26,7 @@ Whether you're a seasoned astronomer or just starting out, our resources section
 
 ### Telescope Reviews
 
-Looking for the perfect telescope to start your stargazing journey? Check out our comprehensive telescope reviews, featuring top brands like Celestron and Meade.
+Looking for the perfect telescope to start your stargazing journey? Check out our Com<wbr>pre<wbr>hen<wbr>sive telescope reviews, featuring top brands like Celestron and Meade.
 
 ### Astronomy Apps
 
@@ -91,7 +91,7 @@ Whether you're a seasoned astronomer or just starting out, our resources section
 
 ### Telescope Reviews
 
-Looking for the perfect telescope to start your stargazing journey? Check out our comprehensive telescope reviews, featuring top brands like Celestron and Meade.
+Looking for the perfect telescope to start your stargazing journey? Check out our Com<wbr>pre<wbr>hen<wbr>sive telescope reviews, featuring top brands like Celestron and Meade.
 
 ### Astronomy Apps
 

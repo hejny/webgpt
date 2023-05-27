@@ -6,7 +6,7 @@ Welcome to our space exploration-themed website where you can discover the wonde
 
 ## Journey to the Moon and Beyond
 
-Our captivating wallpaper features an astronaut standing on the surface of the moon with Earth in the background, reminding us of the beauty and fragility of our planet. Use it as a daily reminder to explore the universe and learn more about the mysteries of space.
+Our Cap<wbr>ti<wbr>va<wbr>ting wallpaper features an astronaut standing on the surface of the moon with Earth in the background, reminding us of the beauty and fragility of our planet. Use it as a daily reminder to explore the universe and learn more about the mysteries of space.
 
 You can download the wallpaper for free and use it as your desktop or mobile background. It's just one way to keep the spirit of exploration alive!
 
@@ -16,10 +16,10 @@ Our website offers a wealth of information about space exploration, including ar
 
 Some of our popular topics include:
 
-- The history of space exploration
-- The search for extraterrestrial life
-- The latest discoveries in astronomy and astrophysics
-- The challenges of space travel and colonization
+-   The history of space exploration
+-   The search for Ex<wbr>tra<wbr>terre<wbr>strial life
+-   The latest discoveries in astronomy and astrophysics
+-   The challenges of space travel and colonization
 
 ## Connect with Other Space Enthusiasts
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -79,7 +79,7 @@ Our website offers a wealth of information about space exploration, including ar
 Some of our popular topics include:
 
 - The history of space exploration
-- The search for extraterrestrial life
+- The search for Ex<wbr>tra<wbr>terre<wbr>strial life
 - The latest discoveries in astronomy and astrophysics
 - The challenges of space travel and colonization
 
@@ -115,7 +115,7 @@ Welcome to our space exploration-themed website where you can discover the wonde
 
 ## Journey to the Moon and Beyond
 
-Our captivating wallpaper features an astronaut standing on the surface of the moon with Earth in the background, reminding us of the beauty and fragility of our planet. Use it as a daily reminder to explore the universe and learn more about the mysteries of space.
+Our Cap<wbr>ti<wbr>va<wbr>ting wallpaper features an astronaut standing on the surface of the moon with Earth in the background, reminding us of the beauty and fragility of our planet. Use it as a daily reminder to explore the universe and learn more about the mysteries of space.
 
 You can download the wallpaper for free and use it as your desktop or mobile background. It's just one way to keep the spirit of exploration alive!
 
@@ -126,7 +126,7 @@ Our website offers a wealth of information about space exploration, including ar
 Some of our popular topics include:
 
 - The history of space exploration
-- The search for extraterrestrial life
+- The search for Ex<wbr>tra<wbr>terre<wbr>strial life
 - The latest discoveries in astronomy and astrophysics
 - The challenges of space travel and colonization
 

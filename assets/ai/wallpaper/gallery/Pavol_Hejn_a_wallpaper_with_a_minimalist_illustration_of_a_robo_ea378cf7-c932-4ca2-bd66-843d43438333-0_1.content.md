@@ -12,9 +12,9 @@ Our wallpaper features a minimalist illustration of a robotic arm against a back
 
 At RoboWorks, we offer a range of services to help your business integrate robotics into your workflow:
 
-- **Consulting:** Our team of experts will work with you to identify areas where robotics can improve your operations and create a customized plan for implementation.
-- **Integration:** We'll take care of the entire process of integrating robotics into your existing systems, from installation to testing and maintenance.
-- **Training:** We provide comprehensive training to ensure that your employees are comfortable working with the new technology and can make the most of its capabilities.
+-   **Consulting:** Our team of experts will work with you to identify areas where robotics can improve your operations and create a customized plan for implementation.
+-   **Integration:** We'll take care of the entire process of integrating robotics into your existing systems, from installation to testing and maintenance.
+-   **Training:** We provide Com<wbr>pre<wbr>hen<wbr>sive training to ensure that your employees are comfortable working with the new technology and can make the most of its capabilities.
 
 ## User Stories
 
@@ -28,9 +28,9 @@ Here are some examples of how we've helped businesses like yours:
 
 Check out some of our satisfied clients:
 
-- [Manufacturing Company A](#)
-- [Logistics Company B](#)
-- [Retail Company C](#)
+-   [Manufacturing Company A](#)
+-   [Logistics Company B](#)
+-   [Retail Company C](#)
 
 ## Contact Us
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +83,7 @@ At RoboWorks, we offer a range of services to help your business integrate robot
 
 - **Consulting:** Our team of experts will work with you to identify areas where robotics can improve your operations and create a customized plan for implementation.
 - **Integration:** We'll take care of the entire process of integrating robotics into your existing systems, from installation to testing and maintenance.
-- **Training:** We provide comprehensive training to ensure that your employees are comfortable working with the new technology and can make the most of its capabilities.
+- **Training:** We provide Com<wbr>pre<wbr>hen<wbr>sive training to ensure that your employees are comfortable working with the new technology and can make the most of its capabilities.
 
 ## User Stories
 

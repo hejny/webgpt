@@ -10,14 +10,14 @@ The Northern Lights, also known as Aurora Borealis, are a natural light display 
 
 ## Why Choose Our Aurora Borealis Background?
 
-Our Aurora Borealis background is not only visually stunning but also provides a unique and captivating backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
+Our Aurora Borealis background is not only visually stunning but also provides a unique and Cap<wbr>ti<wbr>va<wbr>ting backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
 
 Here are some reasons why you should choose our background:
 
-- High-quality resolution for a clear and crisp image
-- Compatible with various devices and screen sizes
-- Easy to download and use as your background
-- Free to use for personal and non-commercial purposes
+-   High-quality resolution for a clear and crisp image
+-   Compatible with various devices and screen sizes
+-   Easy to download and use as your background
+-   Free to use for personal and non-commercial purposes
 
 ## User Stories
 
@@ -31,9 +31,9 @@ Our Aurora Borealis background has been used by people all over the world for va
 
 If you want to learn more about the Northern Lights, here are some references that you might find useful:
 
-- [National Geographic: Northern Lights](#natgeo)
-- [NASA: Aurora Borealis](#nasa)
-- [Visit Norway: Northern Lights](#visitnorway)
+-   [National Geographic: Northern Lights](#natgeo)
+-   [NASA: Aurora Borealis](#nasa)
+-   [Visit Norway: Northern Lights](#visitnorway)
 
 ## Contact Us
 
@@ -41,9 +41,9 @@ If you have any questions or feedback about our Aurora Borealis background, plea
 
 Follow us on:
 
-- [Facebook](#facebook)
-- [Twitter](#twitter)
-- [Instagram](#instagram)
+-   [Facebook](#facebook)
+-   [Twitter](#twitter)
+-   [Instagram](#instagram)
 
 Thank you for visiting our website, and we hope that our Aurora Borealis background adds a touch of beauty and inspiration to your space!
 
@@ -55,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -139,7 +139,7 @@ The Northern Lights, also known as Aurora Borealis, are a natural light display 
 
 ## Why Choose Our Aurora Borealis Background?
 
-Our Aurora Borealis background is not only visually stunning but also provides a unique and captivating backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
+Our Aurora Borealis background is not only visually stunning but also provides a unique and Cap<wbr>ti<wbr>va<wbr>ting backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
 
 Here are some reasons why you should choose our background:
 
@@ -196,7 +196,7 @@ The Northern Lights, also known as Aurora Borealis, are a natural light display 
 
 ## Why Choose Our Aurora Borealis Background?
 
-Our Aurora Borealis background is not only visually stunning but also provides a unique and captivating backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
+Our Aurora Borealis background is not only visually stunning but also provides a unique and Cap<wbr>ti<wbr>va<wbr>ting backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
 
 Here are some reasons why you should choose our background:
 
@@ -253,7 +253,7 @@ The Northern Lights, also known as Aurora Borealis, are a natural light display 
 
 ## Why Choose Our Aurora Borealis Background?
 
-Our Aurora Borealis background is not only visually stunning but also provides a unique and captivating backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
+Our Aurora Borealis background is not only visually stunning but also provides a unique and Cap<wbr>ti<wbr>va<wbr>ting backdrop for various purposes. Whether you want to add some color to your website or create a relaxing atmosphere in your home office, our background is the perfect choice.
 
 Here are some reasons why you should choose our background:
 

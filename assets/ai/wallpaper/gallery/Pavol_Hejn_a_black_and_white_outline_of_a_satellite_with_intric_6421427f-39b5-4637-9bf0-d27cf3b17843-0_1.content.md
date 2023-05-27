@@ -16,10 +16,10 @@ At Space Explorer, we believe that the universe is full of wonders waiting to be
 
 Our articles cover a wide range of topics related to space exploration, including:
 
-- The latest discoveries in astronomy
-- The history of space exploration
-- The science behind space travel
-- The future of space technology
+-   The latest discoveries in astronomy
+-   The history of space exploration
+-   The science behind space travel
+-   The future of space technology
 
 ### Videos
 
@@ -27,7 +27,7 @@ Our videos provide an immersive experience that takes you on a journey through t
 
 ### Podcasts
 
-Our podcasts feature in-depth discussions with experts in the field of space exploration. From astronauts to astrophysicists, our guests share their insights and experiences, providing a fascinating glimpse into the world of space exploration.
+Our podcasts feature in-depth discussions with experts in the field of space exploration. From astronauts to astrophysicists, our guests share their insights and experiences, providing a Fas<wbr>ci<wbr>na<wbr>ting glimpse into the world of space exploration.
 
 ## User Stories
 
@@ -41,10 +41,10 @@ Don't just take our word for it - hear from our users! Here are some of the stor
 
 Looking for more information about space exploration? Check out these resources:
 
-- [NASA](#)
-- [European Space Agency](#)
-- [SpaceX](#)
-- [National Geographic](#)
+-   [NASA](#)
+-   [European Space Agency](#)
+-   [SpaceX](#)
+-   [National Geographic](#)
 
 ## Contact Us
 
@@ -58,10 +58,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -102,7 +102,7 @@ Our videos provide an immersive experience that takes you on a journey through t
 
 ### Podcasts
 
-Our podcasts feature in-depth discussions with experts in the field of space exploration. From astronauts to astrophysicists, our guests share their insights and experiences, providing a fascinating glimpse into the world of space exploration.
+Our podcasts feature in-depth discussions with experts in the field of space exploration. From astronauts to astrophysicists, our guests share their insights and experiences, providing a Fas<wbr>ci<wbr>na<wbr>ting glimpse into the world of space exploration.
 
 ## User Stories
 

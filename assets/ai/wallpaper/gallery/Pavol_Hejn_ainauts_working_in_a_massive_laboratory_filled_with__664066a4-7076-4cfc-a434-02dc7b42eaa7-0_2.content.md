@@ -14,9 +14,9 @@ At our core, we are focused on developing innovative solutions to some of the wo
 
 Some of our current projects include:
 
-- Developing gene therapies to treat rare genetic disorders
-- Creating new antibiotics to combat antibiotic-resistant bacteria
-- Designing new methods for producing biofuels from renewable sources
+-   Developing gene therapies to treat rare genetic disorders
+-   Creating new antibiotics to combat antibiotic-resistant bacteria
+-   Designing new methods for producing biofuels from renewable sources
 
 ## User Stories
 
@@ -30,17 +30,17 @@ We are proud to have worked with a number of companies and organizations to brin
 
 If you're interested in learning more about the work we do, please check out some of our recent publications:
 
-- "CRISPR-mediated gene editing in human cells using synthetic guide RNAs" - Nature Biotechnology
-- "A novel antibiotic targeting the bacterial cell wall" - Science Translational Medicine
-- "Engineering yeast for the production of sustainable biofuels" - Nature Communications
+-   "CRISPR-mediated gene editing in human cells using synthetic guide RNAs" - Nature Biotechnology
+-   "A novel antibiotic targeting the bacterial cell wall" - Science Translational Medicine
+-   "Engineering yeast for the production of sustainable biofuels" - Nature Com<wbr>mu<wbr>ni<wbr>ca<wbr>tions
 
 ## Contact Us
 
 If you have any questions or would like to learn more about our research, please don't hesitate to reach out to us:
 
-- Email: info@biotechresearch.com
-- Phone: 555-1234
-- Address: 123 Main St, Anytown USA
+-   Email: info@biotechresearch.com
+-   Phone: 555-1234
+-   Address: 123 Main St, Anytown USA
 
 Thank you for visiting our website, and we look forward to sharing more about our work with you in the future!
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -101,7 +101,7 @@ If you're interested in learning more about the work we do, please check out som
 
 - "CRISPR-mediated gene editing in human cells using synthetic guide RNAs" - Nature Biotechnology
 - "A novel antibiotic targeting the bacterial cell wall" - Science Translational Medicine
-- "Engineering yeast for the production of sustainable biofuels" - Nature Communications
+- "Engineering yeast for the production of sustainable biofuels" - Nature Com<wbr>mu<wbr>ni<wbr>ca<wbr>tions
 
 ## Contact Us
 

@@ -2,7 +2,7 @@
 
 # Planet X Mysteries
 
-Welcome to our website where you can explore the mysteries of Planet X, a distant planet with a unique atmosphere and unusual terrain. Our website is dedicated to providing you with the latest information about this fascinating planet, from its geography and climate to its flora and fauna.
+Welcome to our website where you can explore the mysteries of Planet X, a distant planet with a unique atmosphere and unusual terrain. Our website is dedicated to providing you with the latest information about this Fas<wbr>ci<wbr>na<wbr>ting planet, from its geography and climate to its flora and fauna.
 
 ## Wallpaper
 
@@ -16,10 +16,10 @@ Planet X is located in a far-off galaxy and has long been a subject of fascinati
 
 On our website, you'll find a wealth of information about Planet X, including:
 
-- A detailed map of the planet's surface
-- Descriptions of the various regions and their unique features
-- Information about the climate and weather patterns
-- An overview of the planet's ecosystem and the creatures that call it home
+-   A detailed map of the planet's surface
+-   Descriptions of the various regions and their unique features
+-   Information about the climate and weather patterns
+-   An overview of the planet's ecosystem and the creatures that call it home
 
 Whether you're a science enthusiast or just curious about the universe, our website is the perfect place to learn more about this mysterious planet.
 
@@ -35,17 +35,17 @@ Here are some stories from our users who have explored Planet X:
 
 If you're interested in learning more about Planet X, here are some resources we recommend:
 
-- "Exploring Planet X" by Dr. Jane Smith (available on Amazon)
-- NASA's website on exoplanets: #nasa-exoplanets
-- The Planetary Society: #planetary-society
+-   "Exploring Planet X" by Dr. Jane Smith (available on Amazon)
+-   NASA's website on exoplanets: #nasa-exoplanets
+-   The Planetary Society: #planetary-society
 
 ## Contact Us
 
-If you have any questions or feedback about our website, please don't hesitate to get in touch with us. You can reach us at info@planetx.com or follow us on social media: 
+If you have any questions or feedback about our website, please don't hesitate to get in touch with us. You can reach us at info@planetx.com or follow us on social media:
 
-- Twitter: #planetx-twitter
-- Facebook: #planetx-facebook
-- Instagram: #planetx-instagram
+-   Twitter: #planetx-twitter
+-   Facebook: #planetx-facebook
+-   Instagram: #planetx-instagram
 
 Thank you for visiting our website and we hope you enjoy exploring the mysteries of Planet X!
 
@@ -57,10 +57,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -76,7 +76,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Discover the Mysteries of Planet X
 
-Welcome to our website where you can explore the mysteries of Planet X, a distant planet with a unique atmosphere and unusual terrain. Our website is dedicated to providing you with the latest information about this fascinating planet, from its geography and climate to its flora and fauna.
+Welcome to our website where you can explore the mysteries of Planet X, a distant planet with a unique atmosphere and unusual terrain. Our website is dedicated to providing you with the latest information about this Fas<wbr>ci<wbr>na<wbr>ting planet, from its geography and climate to its flora and fauna.
 
 ## Wallpaper
 
@@ -115,7 +115,7 @@ If you're interested in learning more about Planet X, here are some resources we
 
 ## Contact Us
 
-If you have any questions or feedback about our website, please don't hesitate to get in touch with us. You can reach us at info@planetx.com or follow us on social media: 
+If you have any questions or feedback about our website, please don't hesitate to get in touch with us. You can reach us at info@planetx.com or follow us on social media:
 
 - Twitter: #planetx-twitter
 - Facebook: #planetx-facebook

@@ -2,16 +2,16 @@
 
 # Cosmic Dreams
 
-Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams! Our captivating photograph of a starry night sky, with the Milky Way galaxy visible overhead, will transport you to the depths of space.
+Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams! Our Cap<wbr>ti<wbr>va<wbr>ting photograph of a starry night sky, with the Milky Way galaxy visible overhead, will transport you to the depths of space.
 
 ## Why Choose Cosmic Dreams?
 
 Our background is more than just a pretty picture - it's a way to bring the beauty and wonder of the universe to your daily life. Here are just a few reasons to choose Cosmic Dreams:
 
-- **High-quality image:** Our background is a high-resolution photograph that captures every detail of the starry night sky.
-- **Easy to install:** Installing our background is quick and easy - just download the image and set it as your background.
-- **Compatible with all devices:** Whether you're using a desktop computer, laptop, tablet, or smartphone, our background will look great on your screen.
-- **Free to use:** We believe that everyone should have access to beautiful backgrounds, so we offer our background for free.
+-   **High-quality image:** Our background is a high-resolution photograph that captures every detail of the starry night sky.
+-   **Easy to install:** Installing our background is quick and easy - just download the image and set it as your background.
+-   **Compatible with all devices:** Whether you're using a desktop computer, laptop, tablet, or smartphone, our background will look great on your screen.
+-   **Free to use:** We believe that everyone should have access to beautiful backgrounds, so we offer our background for free.
 
 ## User Stories
 
@@ -27,9 +27,9 @@ Here are some stories from our users who have downloaded Cosmic Dreams:
 
 Want to learn more about the Milky Way galaxy and the stars above us? Check out these resources:
 
-- [NASA's Milky Way Galaxy Portal](#)
-- [Sky & Telescope Magazine](#)
-- [Astronomy.com](#)
+-   [NASA's Milky Way Galaxy Portal](#)
+-   [Sky & Telescope Magazine](#)
+-   [Astronomy.com](#)
 
 ## Contact Us
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -66,7 +66,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Cosmic Dreams Wallpaper: Bring the Night Sky to Your Screen
 
-Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams Wallpaper! Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead. 
+Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams Wallpaper! Our wallpaper features a breathtaking photograph of a starry night sky, with the Milky Way galaxy visible overhead.
 
 ## Why Choose Cosmic Dreams Wallpaper?
 
@@ -115,7 +115,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of the Universe with Cosmic Dreams
 
-Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams! Our captivating photograph of a starry night sky, with the Milky Way galaxy visible overhead, will transport you to the depths of space.
+Looking for a stunning background that will take your desktop or mobile device to another galaxy? Look no further than Cosmic Dreams! Our Cap<wbr>ti<wbr>va<wbr>ting photograph of a starry night sky, with the Milky Way galaxy visible overhead, will transport you to the depths of space.
 
 ## Why Choose Cosmic Dreams?
 

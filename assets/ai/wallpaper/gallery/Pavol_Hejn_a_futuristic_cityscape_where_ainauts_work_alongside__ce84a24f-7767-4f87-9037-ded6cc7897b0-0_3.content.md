@@ -123,7 +123,7 @@ Welcome to our workspace, where we bring together AI and human expertise to driv
 
 ## About Us
 
-We are a leading provider of AI-powered solutions for businesses across a range of industries. Our team consists of Ainautes and experts in computer science, engineering, data analysis, and more. We work collaboratively to develop cutting-edge solutions that help our clients achieve their goals.
+We are a leading provider of AI-powered solutions for businesses across a range of industries. Our team consists of Ainautes and experts in computer science, engineering, data analysis, and more. We work Coll<wbr>aboratively to develop cutting-edge solutions that help our clients achieve their goals.
 
 ## Our Services
 

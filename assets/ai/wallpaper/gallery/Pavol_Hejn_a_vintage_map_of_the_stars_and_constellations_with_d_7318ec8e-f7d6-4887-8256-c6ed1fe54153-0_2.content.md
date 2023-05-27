@@ -6,23 +6,23 @@ Welcome to our website, where we offer a stunning vintage map of space as a back
 
 ## Why Choose Our Vintage Space Map?
 
-Our space map is not only visually appealing but also educational. It features accurate depictions of the planets, stars, and constellations in our solar system, as well as information about the spacecraft that have explored them. Whether you're an astronomy enthusiast or just looking for a captivating background, our vintage space map is sure to impress.
+Our space map is not only visually appealing but also educational. It features accurate depictions of the planets, stars, and constellations in our solar system, as well as information about the spacecraft that have explored them. Whether you're an astronomy enthusiast or just looking for a Cap<wbr>ti<wbr>va<wbr>ting background, our vintage space map is sure to impress.
 
 ## User Stories
 
 Here are some examples of how our customers have used our vintage space map:
 
-- "As a science teacher, I use this map as a visual aid in my classroom. My students love learning about the different planets and spacecraft!"
-- "I'm an avid stargazer, and I use this map as the lock screen on my phone. It's a great way to stay inspired and connected to the cosmos."
-- "I work in a boring office, and this map is the perfect way to add some personality to my computer."
+-   "As a science teacher, I use this map as a visual aid in my classroom. My students love learning about the different planets and spacecraft!"
+-   "I'm an avid stargazer, and I use this map as the lock screen on my phone. It's a great way to stay inspired and connected to the cosmos."
+-   "I work in a boring office, and this map is the perfect way to add some personality to my computer."
 
 ## Resources
 
 Want to learn more about the planets and spacecraft featured in our space map? Check out these resources:
 
-- [NASA Solar System Exploration](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA Solar System Exploration](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -101,7 +101,7 @@ Welcome to our website, where we offer a stunning vintage map of space as a back
 
 ## Why Choose Our Vintage Space Map?
 
-Our space map is not only visually appealing but also educational. It features accurate depictions of the planets, stars, and constellations in our solar system, as well as information about the spacecraft that have explored them. Whether you're an astronomy enthusiast or just looking for a captivating background, our vintage space map is sure to impress.
+Our space map is not only visually appealing but also educational. It features accurate depictions of the planets, stars, and constellations in our solar system, as well as information about the spacecraft that have explored them. Whether you're an astronomy enthusiast or just looking for a Cap<wbr>ti<wbr>va<wbr>ting background, our vintage space map is sure to impress.
 
 ## User Stories
 

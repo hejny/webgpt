@@ -2,7 +2,7 @@
 
 # Fitness Resources
 
-Welcome to our fitness website, where we offer a comprehensive range of resources to help you achieve your health and fitness goals. Our website features a colorful graphic of a bicycle race that represents the active lifestyle we promote.
+Welcome to our fitness website, where we offer a Com<wbr>pre<wbr>hen<wbr>sive range of resources to help you achieve your health and fitness goals. Our website features a colorful graphic of a bicycle race that represents the active lifestyle we promote.
 
 ## About Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,9 +95,9 @@ Heading should not include word "wallpaper". The website should not be about the
 ---
 
 
-# Achieve Your Fitness Goals with Our Comprehensive Resources
+# Achieve Your Fitness Goals with Our Com<wbr>pre<wbr>hen<wbr>sive Resources
 
-Welcome to our fitness website, where we offer a comprehensive range of resources to help you achieve your health and fitness goals. Our website features a colorful graphic of a bicycle race that represents the active lifestyle we promote.
+Welcome to our fitness website, where we offer a Com<wbr>pre<wbr>hen<wbr>sive range of resources to help you achieve your health and fitness goals. Our website features a colorful graphic of a bicycle race that represents the active lifestyle we promote.
 
 ## About Us
 

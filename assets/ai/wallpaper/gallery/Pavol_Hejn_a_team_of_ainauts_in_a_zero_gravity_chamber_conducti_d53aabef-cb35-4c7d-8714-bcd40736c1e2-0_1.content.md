@@ -34,4 +34,4 @@ So far, the results of the Ainautes' research have been nothing short of astonis
 
 As the Ainautes continue their research, they hope to unlock even more insights into the ways in which AI and human physiology interact. Their ultimate goal is to develop new technologies and approaches that can help us harness the power of AI while minimizing its potential negative impacts on our health and well-being.
 
-Join us on this thrilling journey of discovery as we explore the fascinating world of AI and its impact on the human body.
+Join us on this thrilling journey of discovery as we explore the Fas<wbr>ci<wbr>na<wbr>ting world of AI and its impact on the human body.

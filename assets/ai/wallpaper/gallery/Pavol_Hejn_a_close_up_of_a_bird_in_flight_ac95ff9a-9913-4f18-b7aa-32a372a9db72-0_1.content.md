@@ -2,7 +2,7 @@
 
 # Bird Watching Website
 
-Welcome to our bird watching website! Here you can explore the fascinating world of birds and learn more about their behavior, habitat, and migration patterns. 
+Welcome to our bird watching website! Here you can explore the Fas<wbr>ci<wbr>na<wbr>ting world of birds and learn more about their behavior, habitat, and migration patterns.
 
 ## Wallpaper: A Close-up of a Bird in Flight
 
@@ -32,7 +32,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Bird Watching Website
 
-Welcome to our bird watching website! Here you can explore the fascinating world of birds and learn more about their behavior, habitat, and migration patterns. 
+Welcome to our bird watching website! Here you can explore the Fas<wbr>ci<wbr>na<wbr>ting world of birds and learn more about their behavior, habitat, and migration patterns.
 
 ## Wallpaper: A Close-up of a Bird in Flight
 

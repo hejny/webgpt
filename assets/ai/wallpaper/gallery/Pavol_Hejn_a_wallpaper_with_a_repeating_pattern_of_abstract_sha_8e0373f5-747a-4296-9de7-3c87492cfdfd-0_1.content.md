@@ -6,10 +6,10 @@ Transform your workspace with our mesmerizing abstract shapes inspired by the in
 
 ## Features
 
-- High-quality resolution for a crisp and clear display
-- Seamless repeating pattern for a polished look
-- Monochromatic color scheme for a sleek and modern aesthetic
-- Inspired by the fascinating Mandelbrot set
+-   High-quality resolution for a crisp and clear display
+-   Seamless repeating pattern for a polished look
+-   Monochromatic color scheme for a sleek and modern aesthetic
+-   Inspired by the Fas<wbr>ci<wbr>na<wbr>ting Mandelbrot set
 
 ## User Stories
 
@@ -21,9 +21,9 @@ Transform your workspace with our mesmerizing abstract shapes inspired by the in
 
 Want to learn more about the Mandelbrot set? Check out these resources:
 
-- [Wikipedia](#mandelbrot-set)
-- [Fractal Foundation](#fractal-foundation)
-- [Math is Fun](#math-is-fun)
+-   [Wikipedia](#mandelbrot-set)
+-   [Fractal Foundation](#fractal-foundation)
+-   [Math is Fun](#math-is-fun)
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -67,7 +67,7 @@ Decorate your workspace with our mesmerizing abstract shapes wallpaper backgroun
 - High-quality resolution for a crisp and clear display
 - Seamless repeating pattern for a polished look
 - Monochromatic color scheme for a sleek and modern aesthetic
-- Inspired by the fascinating Mandelbrot set
+- Inspired by the Fas<wbr>ci<wbr>na<wbr>ting Mandelbrot set
 
 ## User Stories
 
@@ -110,7 +110,7 @@ Transform your workspace with our mesmerizing abstract shapes inspired by the in
 - High-quality resolution for a crisp and clear display
 - Seamless repeating pattern for a polished look
 - Monochromatic color scheme for a sleek and modern aesthetic
-- Inspired by the fascinating Mandelbrot set
+- Inspired by the Fas<wbr>ci<wbr>na<wbr>ting Mandelbrot set
 
 ## User Stories
 
@@ -153,7 +153,7 @@ Transform your workspace with our mesmerizing abstract shapes inspired by the in
 - High-quality resolution for a crisp and clear display
 - Seamless repeating pattern for a polished look
 - Monochromatic color scheme for a sleek and modern aesthetic
-- Inspired by the fascinating Mandelbrot set
+- Inspired by the Fas<wbr>ci<wbr>na<wbr>ting Mandelbrot set
 
 ## User Stories
 
@@ -196,7 +196,7 @@ Transform your workspace with our mesmerizing abstract shapes inspired by the in
 - High-quality resolution for a crisp and clear display
 - Seamless repeating pattern for a polished look
 - Monochromatic color scheme for a sleek and modern aesthetic
-- Inspired by the fascinating Mandelbrot set
+- Inspired by the Fas<wbr>ci<wbr>na<wbr>ting Mandelbrot set
 
 ## User Stories
 

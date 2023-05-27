@@ -2,7 +2,7 @@
 
 # Cosmic Adventure
 
-Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This captivating image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
+Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
 
 At [company name], we are passionate about space exploration and sharing our knowledge with others. Our team includes astronomers, astrophysicists, and space enthusiasts who are dedicated to providing the latest news, insights, and discoveries about the cosmos.
 
@@ -10,10 +10,10 @@ At [company name], we are passionate about space exploration and sharing our kno
 
 Explore the cosmos with our curated collection of resources:
 
-- **Planets:** Learn about the planets in our solar system and beyond.
-- **Stars and Galaxies:** Explore the stars and galaxies that make up our universe.
-- **Black Holes:** Dive into the mysteries of black holes and their role in shaping the cosmos.
-- **Space Exploration:** Follow the latest missions and discoveries in space exploration.
+-   **Planets:** Learn about the planets in our solar system and beyond.
+-   **Stars and Galaxies:** Explore the stars and galaxies that make up our universe.
+-   **Black Holes:** Dive into the mysteries of black holes and their role in shaping the cosmos.
+-   **Space Exploration:** Follow the latest missions and discoveries in space exploration.
 
 Stay up-to-date with the latest news and articles about space exploration, astronomy, and astrophysics. Learn more about space with our educational resources, including videos, infographics, and interactive content. Read stories from other space enthusiasts and share your own experiences with the community. Join us for events and webinars featuring guest speakers and experts in the field of space exploration.
 
@@ -31,10 +31,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of Space with Our Cosmic Adventure Website
 
-Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This captivating image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
+Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
 
 ## About Us
 
@@ -129,7 +129,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Wonders of Space with Our Cosmic Adventure
 
-Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This captivating image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
+Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
 
 At [company name], we are passionate about space exploration and sharing our knowledge with others. Our team includes astronomers, astrophysicists, and space enthusiasts who are dedicated to providing the latest news, insights, and discoveries about the cosmos.
 
@@ -162,7 +162,7 @@ Heading is too long, rewrite whole content.
 
 # Explore the Cosmos with Our Space Adventure Website
 
-Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This captivating image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
+Welcome to our website dedicated to exploring the wonders of space! Our stunning background features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our mission to inspire and educate people about the mysteries of the universe.
 
 At [company name], we are passionate about space exploration and sharing our knowledge with others. Our team includes astronomers, astrophysicists, and space enthusiasts who are dedicated to providing the latest news, insights, and discoveries about the cosmos.
 

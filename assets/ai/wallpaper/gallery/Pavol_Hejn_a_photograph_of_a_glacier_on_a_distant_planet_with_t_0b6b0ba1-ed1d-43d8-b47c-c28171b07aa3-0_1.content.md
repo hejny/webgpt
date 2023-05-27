@@ -6,13 +6,13 @@ Welcome to our website, where we celebrate the wonders of space travel and the m
 
 ## Why Choose Our Cosmic Image?
 
-Our cosmic image is more than just a beautiful picture. It's an opportunity to explore the vastness of the universe. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates captivating imagery, our image will inspire you and spark your imagination.
+Our cosmic image is more than just a beautiful picture. It's an opportunity to explore the vastness of the universe. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates Cap<wbr>ti<wbr>va<wbr>ting imagery, our image will inspire you and spark your imagination.
 
 Here are some reasons why you should choose our cosmic image:
 
-- High-quality resolution: Our image is available in high-definition resolution, ensuring that every detail of the picture is crisp and clear.
-- Easy to download: You can download our image with just a few clicks, and it's compatible with most devices and operating systems.
-- Free of charge: We offer our image for free, so you can enjoy the beauty of space without breaking the bank.
+-   High-quality resolution: Our image is available in high-definition resolution, ensuring that every detail of the picture is crisp and clear.
+-   Easy to download: You can download our image with just a few clicks, and it's compatible with most devices and operating systems.
+-   Free of charge: We offer our image for free, so you can enjoy the beauty of space without breaking the bank.
 
 ## User Stories
 
@@ -26,9 +26,9 @@ Our cosmic image has inspired many users around the world. Here are some of thei
 
 If you're interested in learning more about space travel and astronomy, here are some resources to check out:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Astronomy Magazine](#astronomymag)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Astronomy Magazine](#astronomymag)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -159,7 +159,7 @@ Welcome to our website, where we celebrate the wonders of space travel and the m
 
 ## Why Choose Our Cosmic Background?
 
-Our cosmic background is more than just a beautiful picture. It's an invitation to explore the vastness of the universe. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates captivating imagery, our background will inspire you and spark your imagination.
+Our cosmic background is more than just a beautiful picture. It's an invitation to explore the vastness of the universe. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates Cap<wbr>ti<wbr>va<wbr>ting imagery, our background will inspire you and spark your imagination.
 
 Here are some reasons why you should choose our cosmic background:
 
@@ -205,7 +205,7 @@ Welcome to our website, where we celebrate the wonders of space travel and the m
 
 ## Why Choose Our Cosmic Image?
 
-Our cosmic image is more than just a beautiful picture. It's an opportunity to explore the vastness of the universe. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates captivating imagery, our image will inspire you and spark your imagination.
+Our cosmic image is more than just a beautiful picture. It's an opportunity to explore the vastness of the universe. Whether you're an astronomy enthusiast, a science fiction fan, or simply someone who appreciates Cap<wbr>ti<wbr>va<wbr>ting imagery, our image will inspire you and spark your imagination.
 
 Here are some reasons why you should choose our cosmic image:
 

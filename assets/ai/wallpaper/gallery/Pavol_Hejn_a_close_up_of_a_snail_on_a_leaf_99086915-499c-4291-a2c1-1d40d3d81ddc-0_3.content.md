@@ -2,11 +2,11 @@
 
 # Nature Workspace
 
-Welcome to our website, where we offer a collection of stunning nature-inspired backgrounds to enhance your workspace. Our images feature breathtaking landscapes and captivating wildlife that will transport you to a peaceful outdoor setting.
+Welcome to our website, where we offer a collection of stunning nature-inspired backgrounds to enhance your workspace. Our images feature breathtaking landscapes and Cap<wbr>ti<wbr>va<wbr>ting wildlife that will transport you to a peaceful outdoor setting.
 
 ## About the Snail Background
 
-One of our most popular backgrounds is a close-up image of a snail on a leaf. This beautiful image captures the intricate details of the snail's shell and the texture of the leaf, making it a captivating addition to any workspace.
+One of our most popular backgrounds is a close-up image of a snail on a leaf. This beautiful image captures the intricate details of the snail's shell and the texture of the leaf, making it a Cap<wbr>ti<wbr>va<wbr>ting addition to any workspace.
 
 ## Benefits of Nature-Inspired Backgrounds
 
@@ -64,7 +64,7 @@ Welcome to our website, where you can find beautiful nature-inspired wallpapers 
 
 ## About the Snail Wallpaper
 
-Our snail wallpaper is a close-up image of a snail on a leaf, captured by a talented photographer who specializes in macro photography. The intricate details of the snail's shell and the texture of the leaf make this wallpaper a captivating addition to any workspace.
+Our snail wallpaper is a close-up image of a snail on a leaf, captured by a talented photographer who specializes in macro photography. The intricate details of the snail's shell and the texture of the leaf make this wallpaper a Cap<wbr>ti<wbr>va<wbr>ting addition to any workspace.
 
 ## Benefits of Nature-Inspired Wallpapers
 
@@ -103,11 +103,11 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Bringing Nature to Your Workspace
 
-Welcome to our website, where we offer a collection of stunning nature-inspired backgrounds to enhance your workspace. Our images feature breathtaking landscapes and captivating wildlife that will transport you to a peaceful outdoor setting.
+Welcome to our website, where we offer a collection of stunning nature-inspired backgrounds to enhance your workspace. Our images feature breathtaking landscapes and Cap<wbr>ti<wbr>va<wbr>ting wildlife that will transport you to a peaceful outdoor setting.
 
 ## About the Snail Background
 
-One of our most popular backgrounds is a close-up image of a snail on a leaf. This beautiful image captures the intricate details of the snail's shell and the texture of the leaf, making it a captivating addition to any workspace.
+One of our most popular backgrounds is a close-up image of a snail on a leaf. This beautiful image captures the intricate details of the snail's shell and the texture of the leaf, making it a Cap<wbr>ti<wbr>va<wbr>ting addition to any workspace.
 
 ## Benefits of Nature-Inspired Backgrounds
 

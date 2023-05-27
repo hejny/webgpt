@@ -32,7 +32,7 @@ Using state-of-the-art equipment and advanced AI algorithms, we are able to stud
 
 ## User Stories
 
-Our work has already yielded fascinating discoveries. For example, we recently discovered a new type of storm system on one of the gas giants we explored. By studying the behavior of this storm, we were able to gain new insights into the complex dynamics of these planets.
+Our work has already yielded Fas<wbr>ci<wbr>na<wbr>ting discoveries. For example, we recently discovered a new type of storm system on one of the gas giants we explored. By studying the behavior of this storm, we were able to gain new insights into the complex dynamics of these planets.
 
 Here's what some of our users have to say about our work:
 

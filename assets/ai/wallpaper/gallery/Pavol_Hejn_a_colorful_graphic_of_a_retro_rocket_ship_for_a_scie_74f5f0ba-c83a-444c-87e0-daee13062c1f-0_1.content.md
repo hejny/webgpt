@@ -30,7 +30,7 @@ As you browse through our website, you will find a wealth of information about s
 
 ## Join the Community
 
-We believe that the exploration of space is a collaborative effort. That's why we have created a community where like-minded individuals can share their thoughts and ideas. Join us on our forums to discuss the latest developments in space exploration, ask questions, and connect with other enthusiasts.
+We believe that the exploration of space is a Coll<wbr>aborative effort. That's why we have created a community where like-minded individuals can share their thoughts and ideas. Join us on our forums to discuss the latest developments in space exploration, ask questions, and connect with other enthusiasts.
 
 ---
 

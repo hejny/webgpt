@@ -2,7 +2,7 @@
 
 # The Tech Hub
 
-Welcome to The Tech Hub, your go-to source for the latest news and trends in the world of technology. Our website is designed to provide you with valuable insights into the tech industry, including software, hardware, and emerging technologies. As part of our commitment to providing a comprehensive experience, we have included a custom background featuring abstract icons and symbols commonly used in the tech industry.
+Welcome to The Tech Hub, your go-to source for the latest news and trends in the world of technology. Our website is designed to provide you with valuable insights into the tech industry, including software, hardware, and emerging technologies. As part of our commitment to providing a Com<wbr>pre<wbr>hen<wbr>sive experience, we have included a custom background featuring abstract icons and symbols commonly used in the tech industry.
 
 ## About the Background
 
@@ -12,9 +12,9 @@ Our background features a repeating pattern of abstract icons and symbols common
 
 Here are some user stories from satisfied customers who have appreciated our custom background:
 
-- "This background is amazing! It adds a touch of professionalism to my work environment."
-- "As a software developer, I appreciate the subtle nods to the tech industry in this design."
-- "I love how this background makes my computer screen look more sophisticated."
+-   "This background is amazing! It adds a touch of professionalism to my work environment."
+-   "As a software developer, I appreciate the subtle nods to the tech industry in this design."
+-   "I love how this background makes my computer screen look more sophisticated."
 
 ## Resources
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Tech Industry Wallpaper
 
-Welcome to our website dedicated to the latest news and trends in the tech industry. Our website is designed to provide you with valuable insights into the world of technology, including software, hardware, and emerging technologies. As part of our commitment to providing a comprehensive experience, we have included a custom wallpaper featuring abstract icons and symbols commonly used in the tech industry.
+Welcome to our website dedicated to the latest news and trends in the tech industry. Our website is designed to provide you with valuable insights into the world of technology, including software, hardware, and emerging technologies. As part of our commitment to providing a Com<wbr>pre<wbr>hen<wbr>sive experience, we have included a custom wallpaper featuring abstract icons and symbols commonly used in the tech industry.
 
 ## About the Wallpaper
 
@@ -93,7 +93,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # The Tech Hub
 
-Welcome to The Tech Hub, your go-to source for the latest news and trends in the world of technology. Our website is designed to provide you with valuable insights into the tech industry, including software, hardware, and emerging technologies. As part of our commitment to providing a comprehensive experience, we have included a custom background featuring abstract icons and symbols commonly used in the tech industry.
+Welcome to The Tech Hub, your go-to source for the latest news and trends in the world of technology. Our website is designed to provide you with valuable insights into the tech industry, including software, hardware, and emerging technologies. As part of our commitment to providing a Com<wbr>pre<wbr>hen<wbr>sive experience, we have included a custom background featuring abstract icons and symbols commonly used in the tech industry.
 
 ## About the Background
 

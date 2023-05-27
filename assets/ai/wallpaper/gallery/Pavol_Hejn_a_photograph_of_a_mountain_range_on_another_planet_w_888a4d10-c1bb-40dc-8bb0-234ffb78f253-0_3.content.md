@@ -5,35 +5,41 @@
 Welcome to our space enthusiast website, where you can explore the mysteries and wonders of the universe. Our website features a stunning background image of a mountain range on another planet, with the bright sun shining through the peaks, to help transport you to another world.
 
 ## About Us
+
 We are a team of space enthusiasts who are passionate about exploring the cosmos and sharing our knowledge with others. Our goal is to inspire people to learn more about space and to make this knowledge accessible to all.
 
 ## Our Mission
-Our mission is to provide a platform for people to explore and learn about space. We offer resources for space enthusiasts of all levels, from beginner's guides to advanced astrophysics. 
+
+Our mission is to provide a platform for people to explore and learn about space. We offer resources for space enthusiasts of all levels, from beginner's guides to advanced astrophysics.
 
 ## Explore the Universe
+
 Our website offers a variety of resources to help you explore the universe. Here are some of the things you can find on our website:
 
-- Articles on the latest space news and discoveries
-- Beginner's guides to astronomy and astrophysics
-- Advanced articles on topics such as black holes, dark matter, and exoplanets
-- Interactive tools and simulations to help you explore the universe
-- Space-themed merchandise, including posters, t-shirts, and more
+-   Articles on the latest space news and discoveries
+-   Beginner's guides to astronomy and astrophysics
+-   Advanced articles on topics such as black holes, dark matter, and exoplanets
+-   Interactive tools and simulations to help you explore the universe
+-   Space-themed merchandise, including posters, t-shirts, and more
 
 ## User Stories
+
 Our community of space enthusiasts has shared their amazing experiences with us. Here are some of their stories:
 
-- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how fascinating space could be!"
-- "The interactive simulations on this website are so cool! It's like I'm exploring the universe from my own computer."
-- "I bought a poster from this website and it's now my favorite piece of art in my room. It's a constant reminder of the beauty of the cosmos."
+-   "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how Fas<wbr>ci<wbr>na<wbr>ting space could be!"
+-   "The interactive simulations on this website are so cool! It's like I'm exploring the universe from my own computer."
+-   "I bought a poster from this website and it's now my favorite piece of art in my room. It's a constant reminder of the beauty of the cosmos."
 
 ## References
+
 If you're interested in learning more about space, we recommend checking out these resources:
 
-- NASA's website: #nasa
-- Space.com: #spacecom
-- Astronomy magazine: #astronomy
+-   NASA's website: #nasa
+-   Space.com: #spacecom
+-   Astronomy magazine: #astronomy
 
 ## Contact Us
+
 If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of the universe with us!
@@ -46,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -65,7 +71,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Mysteries of Space with Our Cosmic Adventure Wallpaper
 
-Welcome to our website, where you can find a stunning cosmic adventure wallpaper that will transport you to another world. Our wallpaper features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks. 
+Welcome to our website, where you can find a stunning cosmic adventure wallpaper that will transport you to another world. Our wallpaper features a breathtaking photograph of a mountain range on another planet, with the bright sun shining through the peaks.
 
 ## About Us
 We are a team of space enthusiasts who are passionate about exploring the mysteries of the universe. Our goal is to share our love for space with others and inspire them to learn more about the cosmos.
@@ -124,7 +130,7 @@ Our website offers a variety of resources for space enthusiasts of all levels. F
 ## User Stories
 Our community of space enthusiasts has shared their amazing experiences with us. Here are some of their stories:
 
-- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how fascinating space could be!"
+- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how Fas<wbr>ci<wbr>na<wbr>ting space could be!"
 - "The interactive simulations on this website are so cool! It's like I'm exploring the universe from my own computer."
 - "I bought a poster from this website and it's now my favorite piece of art in my room. It's a constant reminder of the beauty of the cosmos."
 
@@ -172,7 +178,7 @@ Our website offers a variety of resources for space enthusiasts of all levels. F
 ## User Stories
 Our community of space enthusiasts has shared their amazing experiences with us. Here are some of their stories:
 
-- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how fascinating space could be!"
+- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how Fas<wbr>ci<wbr>na<wbr>ting space could be!"
 - "The interactive simulations on this website are so cool! It's like I'm exploring the universe from my own computer."
 - "I bought a poster from this website and it's now my favorite piece of art in my room. It's a constant reminder of the beauty of the cosmos."
 
@@ -206,7 +212,7 @@ Welcome to our space enthusiast website, where you can explore the mysteries and
 We are a team of space enthusiasts who are passionate about exploring the cosmos and sharing our knowledge with others. Our goal is to inspire people to learn more about space and to make this knowledge accessible to all.
 
 ## Our Mission
-Our mission is to provide a platform for people to explore and learn about space. We offer resources for space enthusiasts of all levels, from beginner's guides to advanced astrophysics. 
+Our mission is to provide a platform for people to explore and learn about space. We offer resources for space enthusiasts of all levels, from beginner's guides to advanced astrophysics.
 
 ## Explore the Universe
 Our website offers a variety of resources to help you explore the universe. Here are some of the things you can find on our website:
@@ -220,7 +226,7 @@ Our website offers a variety of resources to help you explore the universe. Here
 ## User Stories
 Our community of space enthusiasts has shared their amazing experiences with us. Here are some of their stories:
 
-- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how fascinating space could be!"
+- "Thanks to this website, I was able to learn about the basics of astronomy and now I'm hooked. I never knew how Fas<wbr>ci<wbr>na<wbr>ting space could be!"
 - "The interactive simulations on this website are so cool! It's like I'm exploring the universe from my own computer."
 - "I bought a poster from this website and it's now my favorite piece of art in my room. It's a constant reminder of the beauty of the cosmos."
 

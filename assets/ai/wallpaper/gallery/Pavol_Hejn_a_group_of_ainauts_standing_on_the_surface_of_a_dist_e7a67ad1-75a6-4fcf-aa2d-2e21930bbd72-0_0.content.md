@@ -30,7 +30,7 @@ Our wallpaper features a high-quality image that showcases the intricate details
 
 ## Elevate Your Space
 
-Transform any room into a space of wonder and inspiration with our captivating wallpaper. Whether you're an avid science fiction fan or simply appreciate the beauty of the cosmos, our design is sure to elevate your decor and spark your imagination.
+Transform any room into a space of wonder and inspiration with our Cap<wbr>ti<wbr>va<wbr>ting wallpaper. Whether you're an avid science fiction fan or simply appreciate the beauty of the cosmos, our design is sure to elevate your decor and spark your imagination.
 
 ---
 

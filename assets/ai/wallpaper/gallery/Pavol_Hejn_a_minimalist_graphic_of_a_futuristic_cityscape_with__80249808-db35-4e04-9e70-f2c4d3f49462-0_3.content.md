@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ Welcome to our website, where creativity meets technology. Our platform is desig
 
 As a creative hub, we understand the importance of aesthetics in enhancing your productivity and sparking your imagination. That's why we offer a wide range of high-quality wallpapers and backgrounds that cater to different tastes and styles.
 
-Our minimalist graphic of a futuristic cityscape is one of our most popular wallpapers. It features a sleek and modern design with glowing neon lights and a dark and moody color scheme that creates a captivating atmosphere. Whether you're a sci-fi fan, a cyberpunk enthusiast, or a lover of all things futuristic, this wallpaper will transport you to a world of endless possibilities.
+Our minimalist graphic of a futuristic cityscape is one of our most popular wallpapers. It features a sleek and modern design with glowing neon lights and a dark and moody color scheme that creates a Cap<wbr>ti<wbr>va<wbr>ting atmosphere. Whether you're a sci-fi fan, a cyberpunk enthusiast, or a lover of all things futuristic, this wallpaper will transport you to a world of endless possibilities.
 
 But our website is more than just a collection of beautiful wallpapers. We also provide valuable resources and tools to help you take your creativity to the next level. Here are some of the features you can expect:
 

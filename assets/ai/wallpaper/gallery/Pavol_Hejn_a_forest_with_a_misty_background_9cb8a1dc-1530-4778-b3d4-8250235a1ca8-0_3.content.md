@@ -2,7 +2,7 @@
 
 # Misty Forest Beauty
 
-Welcome to our website where we celebrate the wonders of nature through stunning visuals. On this page, we feature a captivating misty forest that will transport you to a world of enchantment.
+Welcome to our website where we celebrate the wonders of nature through stunning visuals. On this page, we feature a Cap<wbr>ti<wbr>va<wbr>ting misty forest that will transport you to a world of enchantment.
 
 ## The Magic of Misty Forest
 
@@ -36,7 +36,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Misty Forest Wallpaper
 
-Welcome to our website featuring a stunning wallpaper of a misty forest. 
+Welcome to our website featuring a stunning wallpaper of a misty forest.
 
 ## About the Wallpaper
 
@@ -100,7 +100,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Enchanting Beauty of a Misty Forest
 
-Welcome to our website where we showcase the wonders of nature through stunning visuals. In this page, we feature a captivating misty forest that will transport you to a world of enchantment.
+Welcome to our website where we showcase the wonders of nature through stunning visuals. In this page, we feature a Cap<wbr>ti<wbr>va<wbr>ting misty forest that will transport you to a world of enchantment.
 
 ## The Magic of a Misty Forest
 
@@ -132,7 +132,7 @@ Heading is too long, rewrite whole content.
 
 # Mystical Beauty of Misty Forest
 
-Welcome to our website where we celebrate the wonders of nature through stunning visuals. On this page, we feature a captivating misty forest that will transport you to a world of enchantment.
+Welcome to our website where we celebrate the wonders of nature through stunning visuals. On this page, we feature a Cap<wbr>ti<wbr>va<wbr>ting misty forest that will transport you to a world of enchantment.
 
 ## The Magic of Misty Forest
 

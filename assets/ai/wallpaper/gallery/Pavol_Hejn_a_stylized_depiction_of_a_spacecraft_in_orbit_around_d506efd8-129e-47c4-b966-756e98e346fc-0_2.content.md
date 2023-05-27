@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -28,12 +28,12 @@ Our homepage features a stunning wallpaper that captures the essence of space ex
 
 ## What We Offer
 
-At Space Odyssey, we strive to provide you with the most comprehensive and up-to-date information about space. Here are some of the resources you can find on our website:
+At Space Odyssey, we strive to provide you with the most Com<wbr>pre<wbr>hen<wbr>sive and up-to-date information about space. Here are some of the resources you can find on our website:
 
-- **News and Updates**: Stay informed about the latest developments in space exploration, including new missions, discoveries, and scientific breakthroughs.
-- **Visualizations and Simulations**: Immerse yourself in the wonders of the universe with our stunning visualizations and simulations, which allow you to explore distant planets, galaxies, and black holes.
-- **Educational Resources**: Learn about the science behind space exploration with our educational resources, including articles, videos, and interactive tools.
-- **Community**: Connect with other space enthusiasts through our forums and social media channels, where you can share your thoughts, ask questions, and engage in discussions about all things space-related.
+-   **News and Updates**: Stay informed about the latest developments in space exploration, including new missions, discoveries, and scientific breakthroughs.
+-   **Visualizations and Simulations**: Immerse yourself in the wonders of the universe with our stunning visualizations and simulations, which allow you to explore distant planets, galaxies, and black holes.
+-   **Educational Resources**: Learn about the science behind space exploration with our educational resources, including articles, videos, and interactive tools.
+-   **Community**: Connect with other space enthusiasts through our forums and social media channels, where you can share your thoughts, ask questions, and engage in discussions about all things space-related.
 
 ## User Stories
 
@@ -47,10 +47,10 @@ Here are some stories from our users who have explored our website and found it 
 
 Here are some references we use to keep our website up-to-date with the latest news and discoveries in space:
 
-- NASA
-- European Space Agency (ESA)
-- Space.com
-- Astronomy Magazine
+-   NASA
+-   European Space Agency (ESA)
+-   Space.com
+-   Astronomy Magazine
 
 ## Contact Us
 

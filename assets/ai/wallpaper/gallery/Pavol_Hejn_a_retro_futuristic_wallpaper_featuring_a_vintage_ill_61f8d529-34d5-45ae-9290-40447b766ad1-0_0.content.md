@@ -6,7 +6,7 @@ Welcome to our website where we celebrate the beauty and uniqueness of retro-fut
 
 ## About Retro-Futuristic Design
 
-Retro-futuristic design combines elements of nostalgia with futuristic themes to create a unique and captivating aesthetic. It's a style that's all about imagination and creativity, taking inspiration from science fiction, art deco, and mid-century modern design.
+Retro-futuristic design combines elements of nostalgia with futuristic themes to create a unique and Cap<wbr>ti<wbr>va<wbr>ting aesthetic. It's a style that's all about imagination and creativity, taking inspiration from science fiction, art deco, and mid-century modern design.
 
 Our retro-futuristic wallpaper is the perfect way to add a touch of this style to your home or office. The robot illustration is reminiscent of a time when people dreamed of machines that could do everything for them, while the neon colors bring a modern touch to the design.
 
@@ -24,9 +24,9 @@ Here are some stories from our satisfied customers:
 
 If you're interested in learning more about retro-futuristic design, here are some resources to check out:
 
-- [Retrofuturism on Wikipedia](#)
-- [The Retro-Futurism Movement](#)
-- [Vintage Science Fiction Art on Pinterest](#)
+-   [Retrofuturism on Wikipedia](#)
+-   [The Retro-Futurism Movement](#)
+-   [Vintage Science Fiction Art on Pinterest](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Welcome to our website where we celebrate the beauty and uniqueness of retro-fut
 
 ## About Retro-Futuristic Design
 
-Retro-futuristic design combines elements of nostalgia with futuristic themes to create a unique and captivating aesthetic. It's a style that's all about imagination and creativity, taking inspiration from science fiction, art deco, and mid-century modern design.
+Retro-futuristic design combines elements of nostalgia with futuristic themes to create a unique and Cap<wbr>ti<wbr>va<wbr>ting aesthetic. It's a style that's all about imagination and creativity, taking inspiration from science fiction, art deco, and mid-century modern design.
 
 Our retro-futuristic wallpaper is the perfect way to add a touch of this style to your home or office. The robot illustration is reminiscent of a time when people dreamed of machines that could do everything for them, while the neon colors bring a modern touch to the design.
 

@@ -6,7 +6,7 @@ Welcome to our website dedicated to exploring the power of neural networks in da
 
 ## Wallpaper Background
 
-Our wallpaper features a simple graphic of a neural network against a background of complementary colors. This image serves as a reminder of the complex processes at work when it comes to data transformation, and inspires us to push the boundaries of what's possible.
+Our wallpaper features a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This image serves as a reminder of the complex processes at work when it comes to data transformation, and inspires us to push the boundaries of what's possible.
 
 ## About Us
 
@@ -16,10 +16,10 @@ We are a team of experts in the field of data science, with years of experience 
 
 We offer a range of services designed to meet the unique needs of your business, including:
 
-- Data analysis and visualization
-- Machine learning and predictive modeling
-- Natural language processing and sentiment analysis
-- Custom software development
+-   Data analysis and visualization
+-   Machine learning and predictive modeling
+-   Natural language processing and sentiment analysis
+-   Custom software development
 
 No matter what your goals may be, we have the expertise and resources to help you achieve them.
 
@@ -43,14 +43,14 @@ Ready to take the first step towards unlocking the potential of your data? Conta
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
+"A wallpaper with a simple graphic of a neural network, against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -70,7 +70,7 @@ Welcome to our website dedicated to exploring the power of neural networks in da
 
 ## Wallpaper Background
 
-Our wallpaper features a simple graphic of a neural network against a background of complementary colors. This image serves as a reminder of the complex processes at work when it comes to data transformation, and inspires us to push the boundaries of what's possible.
+Our wallpaper features a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This image serves as a reminder of the complex processes at work when it comes to data transformation, and inspires us to push the boundaries of what's possible.
 
 ## About Us
 

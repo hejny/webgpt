@@ -6,7 +6,7 @@ Welcome to our mountain adventure website, your go-to resource for exploring the
 
 ## Inspiring Wallpaper to Fuel Your Imagination
 
-As you browse our website, you'll notice a stunning wallpaper featuring a full moon rising over a mountain range. This captivating image captures the sense of mystery and wonder that surrounds these majestic peaks, inspiring you to embark on your own mountain adventure.
+As you browse our website, you'll notice a stunning wallpaper featuring a full moon rising over a mountain range. This Cap<wbr>ti<wbr>va<wbr>ting image captures the sense of mystery and wonder that surrounds these majestic peaks, inspiring you to embark on your own mountain adventure.
 
 ## Guides and Resources for Your Next Journey
 
@@ -20,9 +20,9 @@ At our mountain adventure website, we believe that connecting with other outdoor
 
 We've compiled a list of references to help you plan your next mountain adventure:
 
-- National Park Service
-- AllTrails
-- REI Co-op Journal
+-   National Park Service
+-   AllTrails
+-   REI Co-op Journal
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -139,9 +139,9 @@ Heading is too long, rewrite whole content.
 
 Welcome to our mountain adventure website, your ultimate guide to exploring the great outdoors. Whether you're an experienced hiker or a novice looking for a new challenge, we have everything you need to plan your next mountain adventure.
 
-## Captivating Wallpaper to Inspire Your Next Adventure
+## Cap<wbr>ti<wbr>va<wbr>ting Wallpaper to Inspire Your Next Adventure
 
-As you browse our website, you'll notice a captivating wallpaper featuring a full moon rising over a mountain range. This stunning image captures the beauty and mystery of nature, inspiring you to embark on your own mountain adventure.
+As you browse our website, you'll notice a Cap<wbr>ti<wbr>va<wbr>ting wallpaper featuring a full moon rising over a mountain range. This stunning image captures the beauty and mystery of nature, inspiring you to embark on your own mountain adventure.
 
 ## Guides and Resources for a Safe and Memorable Trip
 
@@ -181,7 +181,7 @@ Welcome to our mountain adventure website, your go-to resource for exploring the
 
 ## Inspiring Wallpaper to Fuel Your Imagination
 
-As you browse our website, you'll notice a stunning wallpaper featuring a full moon rising over a mountain range. This captivating image captures the sense of mystery and wonder that surrounds these majestic peaks, inspiring you to embark on your own mountain adventure.
+As you browse our website, you'll notice a stunning wallpaper featuring a full moon rising over a mountain range. This Cap<wbr>ti<wbr>va<wbr>ting image captures the sense of mystery and wonder that surrounds these majestic peaks, inspiring you to embark on your own mountain adventure.
 
 ## Guides and Resources for Your Next Journey
 

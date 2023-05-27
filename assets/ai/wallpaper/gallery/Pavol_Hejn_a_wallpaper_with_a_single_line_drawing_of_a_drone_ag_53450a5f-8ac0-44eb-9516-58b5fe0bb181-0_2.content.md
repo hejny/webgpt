@@ -6,7 +6,7 @@ Welcome to our blog dedicated to all things drone technology! Our mission is to 
 
 ## Wallpaper
 
-Check out our exclusive wallpaper featuring a sleek single line drawing of a drone against a background of geometric shapes in complementary colors. Download it for free and add some tech-inspired style to your desktop or mobile device.
+Check out our exclusive wallpaper featuring a sleek single line drawing of a drone against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. Download it for free and add some tech-inspired style to your desktop or mobile device.
 
 [Download Wallpaper](link-to-wallpaper)
 
@@ -16,7 +16,7 @@ Stay tuned for more exciting content on drone technology!
 
 Write me markdown content of website with wallpaper:
 
-"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
+"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -30,7 +30,7 @@ Welcome to our blog dedicated to all things drone technology! Our mission is to 
 
 ## Wallpaper
 
-Check out our exclusive wallpaper featuring a sleek single line drawing of a drone against a background of geometric shapes in complementary colors. Download it for free and add some tech-inspired style to your desktop or mobile device.
+Check out our exclusive wallpaper featuring a sleek single line drawing of a drone against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. Download it for free and add some tech-inspired style to your desktop or mobile device.
 
 [Download Wallpaper](link-to-wallpaper)
 

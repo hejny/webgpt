@@ -29,7 +29,7 @@ As you browse our site, you'll notice a stunning photograph of a lava flow on a 
 At Volcanic Planet Adventures, we offer a variety of tours and expeditions for those seeking an unforgettable experience. Here are just a few of the options available:
 
 -   **Volcano Hikes**: Join one of our experienced guides on a trek up the slopes of an active volcano. You'll witness breathtaking views of lava flows, steam vents, and other geological wonders.
--   **Lava Tube Exploration**: Descend into the depths of a lava tube, a natural tunnel formed by flowing lava. Our guides will lead you through this otherworldly landscape, pointing out fascinating features along the way.
+-   **Lava Tube Exploration**: Descend into the depths of a lava tube, a natural tunnel formed by flowing lava. Our guides will lead you through this otherworldly landscape, pointing out Fas<wbr>ci<wbr>na<wbr>ting features along the way.
 -   **Hot Springs Relaxation**: After a long day of exploring, unwind in the soothing waters of a natural hot spring. Enjoy the stunning scenery while soaking in the warm, mineral-rich pools.
 
 ---

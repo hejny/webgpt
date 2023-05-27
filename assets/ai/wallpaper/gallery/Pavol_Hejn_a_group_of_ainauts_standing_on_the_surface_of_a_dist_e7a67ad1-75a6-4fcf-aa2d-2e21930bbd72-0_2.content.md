@@ -34,7 +34,7 @@ The Ainautes have been studying the structure for months, using advanced technol
 
 ## User Stories
 
-Our website is dedicated to sharing the stories of people who are passionate about space exploration and the search for extraterrestrial life. Here are some user stories from our community:
+Our website is dedicated to sharing the stories of people who are passionate about space exploration and the search for Ex<wbr>tra<wbr>terre<wbr>strial life. Here are some user stories from our community:
 
 -   "I've always been fascinated by space and the possibility of life on other planets. The Ainautes are doing incredible work, and I love following their adventures." - Sarah, 28
 -   "The wallpaper on this website is amazing! It really captures the sense of wonder and awe that comes with exploring the unknown." - Tom, 35
@@ -42,10 +42,10 @@ Our website is dedicated to sharing the stories of people who are passionate abo
 
 ## References
 
-If you're interested in learning more about space exploration and the search for extraterrestrial life, we recommend checking out these resources:
+If you're interested in learning more about space exploration and the search for Ex<wbr>tra<wbr>terre<wbr>strial life, we recommend checking out these resources:
 
 -   [NASA](#) - The official website of the National Aeronautics and Space Administration.
--   [SETI Institute](#) - A non-profit research organization dedicated to the search for extraterrestrial intelligence.
+-   [SETI Institute](#) - A non-profit research organization dedicated to the search for Ex<wbr>tra<wbr>terre<wbr>strial intelligence.
 -   [Space.com](#) - A news and information website covering all aspects of space exploration.
 
 ## Contact Us

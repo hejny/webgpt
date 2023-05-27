@@ -2,7 +2,7 @@
 
 # Space Website
 
-Welcome to our space-themed website, where you can discover the wonders of the universe through captivating content and stunning visuals. Our website is designed to provide an immersive experience that takes you on a journey through the cosmos.
+Welcome to our space-themed website, where you can discover the wonders of the universe through Cap<wbr>ti<wbr>va<wbr>ting content and stunning visuals. Our website is designed to provide an immersive experience that takes you on a journey through the cosmos.
 
 ## Discover the Beauty of the Universe
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -53,7 +53,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Wonders of the Universe with Our Space-Themed Website
 
-Welcome to our space-themed website, where you can discover the wonders of the universe through captivating content and stunning visuals. Our website is designed to provide an immersive experience that takes you on a journey through the cosmos.
+Welcome to our space-themed website, where you can discover the wonders of the universe through Cap<wbr>ti<wbr>va<wbr>ting content and stunning visuals. Our website is designed to provide an immersive experience that takes you on a journey through the cosmos.
 
 ## Discover the Beauty of the Universe
 

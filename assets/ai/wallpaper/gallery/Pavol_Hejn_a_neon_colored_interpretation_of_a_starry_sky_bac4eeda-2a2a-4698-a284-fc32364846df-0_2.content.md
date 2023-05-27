@@ -20,24 +20,24 @@ Welcome to our website featuring a stunning wallpaper of a neon-colored interpre
 
 ## About the Wallpaper
 
-Our wallpaper is a digital creation that combines the beauty of a starry night sky with the boldness of neon colors. The result is a unique and captivating image that will add a touch of magic to any room.
+Our wallpaper is a digital creation that combines the beauty of a starry night sky with the boldness of neon colors. The result is a unique and Cap<wbr>ti<wbr>va<wbr>ting image that will add a touch of magic to any room.
 
-> "The neon lights are like a galaxy of their own, shining bright against the dark backdrop of the night sky." 
+> "The neon lights are like a galaxy of their own, shining bright against the dark backdrop of the night sky."
 
 ## Features
 
-- High-quality resolution for crisp and clear display on any device.
-- Available in multiple sizes to fit your specific screen or wall dimensions.
-- Easy to install and remove without damaging surfaces.
-- Durable material that can withstand wear and tear.
+-   High-quality resolution for crisp and clear display on any device.
+-   Available in multiple sizes to fit your specific screen or wall dimensions.
+-   Easy to install and remove without damaging surfaces.
+-   Durable material that can withstand wear and tear.
 
 ## Usage
 
 Our neon-colored starry sky wallpaper is perfect for:
 
-- Adding a pop of color to a plain wall in your home or office.
-- Creating a unique and eye-catching background for your computer or phone.
-- Enhancing the atmosphere of a themed party or event.
+-   Adding a pop of color to a plain wall in your home or office.
+-   Creating a unique and eye-catching background for your computer or phone.
+-   Enhancing the atmosphere of a themed party or event.
 
 ## Get Yours Today!
 

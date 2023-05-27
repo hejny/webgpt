@@ -2,7 +2,7 @@
 
 # Universe Landscapes
 
-Welcome to Unique Landscapes, where we take you on a journey through the wonders of our universe. Our website is dedicated to showcasing the most unique and fascinating landscapes found throughout the cosmos. 
+Welcome to Unique Landscapes, where we take you on a journey through the wonders of our universe. Our website is dedicated to showcasing the most unique and Fas<wbr>ci<wbr>na<wbr>ting landscapes found throughout the cosmos.
 
 ## Discover Unseen Worlds
 
@@ -27,6 +27,7 @@ If you're interested in learning more about the images and information featured 
 Do you have any questions, comments, or suggestions? We'd love to hear from you! Feel free to contact us at [email protected] and we'll get back to you as soon as possible.
 
 ---
+
 Stay curious and keep exploring the wonders of our universe! 🚀🪐
 
 <!--
@@ -37,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -56,7 +57,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Unique Landscapes: Exploring the Wonders of Our Universe
 
-Welcome to Unique Landscapes, where we take you on a journey through the wonders of our universe. Our website is dedicated to showcasing the most unique and fascinating landscapes found throughout the cosmos. 
+Welcome to Unique Landscapes, where we take you on a journey through the wonders of our universe. Our website is dedicated to showcasing the most unique and Fas<wbr>ci<wbr>na<wbr>ting landscapes found throughout the cosmos.
 
 ## Discover Unseen Worlds
 

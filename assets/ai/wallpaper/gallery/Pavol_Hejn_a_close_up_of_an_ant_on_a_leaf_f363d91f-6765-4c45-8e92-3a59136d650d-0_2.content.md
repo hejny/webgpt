@@ -20,9 +20,9 @@ Welcome to Nature's Wonders, where we celebrate the beauty of our planet and all
 
 ## Wallpaper Details
 
-- Resolution: 1920x1080
-- Format: JPEG
-- Size: 1.5 MB
+-   Resolution: 1920x1080
+-   Format: JPEG
+-   Size: 1.5 MB
 
 ## Download Instructions
 
@@ -36,4 +36,4 @@ Did you know that ants are one of the most common insects in the world? There ar
 
 ## More Wallpapers
 
-If you enjoyed this wallpaper, be sure to check out our other nature-themed wallpapers in our [gallery](#). From breathtaking landscapes to fascinating wildlife, we have something for everyone.
+If you enjoyed this wallpaper, be sure to check out our other nature-themed wallpapers in our [gallery](#). From breathtaking landscapes to Fas<wbr>ci<wbr>na<wbr>ting wildlife, we have something for everyone.

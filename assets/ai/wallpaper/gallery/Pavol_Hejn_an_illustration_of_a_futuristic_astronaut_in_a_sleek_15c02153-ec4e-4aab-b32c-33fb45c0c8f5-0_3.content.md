@@ -22,14 +22,14 @@ Welcome to our website, where we take you on a journey through the vast and myst
 
 Our website is dedicated to bringing you the latest news and insights about space exploration, astronomy, and astrophysics. Whether you're a seasoned astronomer or just starting to explore the wonders of the universe, we have something for everyone.
 
-- Stay up-to-date with the latest space news and discoveries
-- Learn about the history of space exploration and the pioneers who made it possible
-- Dive into the fascinating world of astrophysics and cosmology
-- Explore the mysteries of black holes, dark matter, and the origins of the universe
+-   Stay up-to-date with the latest space news and discoveries
+-   Learn about the history of space exploration and the pioneers who made it possible
+-   Dive into the Fas<wbr>ci<wbr>na<wbr>ting world of astrophysics and cosmology
+-   Explore the mysteries of black holes, dark matter, and the origins of the universe
 
 ## Join the Community
 
-At our website, we believe that exploring the universe is a collaborative effort. That's why we've created a vibrant community of space enthusiasts who share their knowledge, insights, and passion for space exploration.
+At our website, we believe that exploring the universe is a Coll<wbr>aborative effort. That's why we've created a vibrant community of space enthusiasts who share their knowledge, insights, and passion for space exploration.
 
 > "Space is for everybody. It's not just for a few people in science or math, or for a select group of astronauts. That's our new frontier out there, and it's everybody's business to know about space." - Christa McAuliffe
 

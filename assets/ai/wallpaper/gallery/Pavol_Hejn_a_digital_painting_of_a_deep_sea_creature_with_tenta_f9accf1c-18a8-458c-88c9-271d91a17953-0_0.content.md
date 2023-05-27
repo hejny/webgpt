@@ -2,7 +2,7 @@
 
 # Deep Sea Adventure
 
-Welcome to Exploring the Depths, a website dedicated to all things deep sea exploration! Our mission is to provide you with the latest news and information about the fascinating world beneath the waves.
+Welcome to Exploring the Depths, a website dedicated to all things deep sea exploration! Our mission is to provide you with the latest news and information about the Fas<wbr>ci<wbr>na<wbr>ting world beneath the waves.
 
 ## Wallpaper Background
 
@@ -10,7 +10,7 @@ Our wallpaper background features a stunning digital painting of a deep sea crea
 
 ## About Us
 
-At Exploring the Depths, we are passionate about marine life and the mysteries of the deep sea. Our team of experts includes marine biologists, oceanographers, and explorers who have dedicated their lives to studying and understanding this fascinating ecosystem.
+At Exploring the Depths, we are passionate about marine life and the mysteries of the deep sea. Our team of experts includes marine biologists, oceanographers, and explorers who have dedicated their lives to studying and understanding this Fas<wbr>ci<wbr>na<wbr>ting ecosystem.
 
 ## Latest News
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Depths: A Deep Sea Adventure
 
-Welcome to Exploring the Depths, a website dedicated to all things deep sea exploration! Our mission is to provide you with the latest news and information about the fascinating world beneath the waves.
+Welcome to Exploring the Depths, a website dedicated to all things deep sea exploration! Our mission is to provide you with the latest news and information about the Fas<wbr>ci<wbr>na<wbr>ting world beneath the waves.
 
 ## Wallpaper Background
 
@@ -67,7 +67,7 @@ Our wallpaper background features a stunning digital painting of a deep sea crea
 
 ## About Us
 
-At Exploring the Depths, we are passionate about marine life and the mysteries of the deep sea. Our team of experts includes marine biologists, oceanographers, and explorers who have dedicated their lives to studying and understanding this fascinating ecosystem.
+At Exploring the Depths, we are passionate about marine life and the mysteries of the deep sea. Our team of experts includes marine biologists, oceanographers, and explorers who have dedicated their lives to studying and understanding this Fas<wbr>ci<wbr>na<wbr>ting ecosystem.
 
 ## Latest News
 

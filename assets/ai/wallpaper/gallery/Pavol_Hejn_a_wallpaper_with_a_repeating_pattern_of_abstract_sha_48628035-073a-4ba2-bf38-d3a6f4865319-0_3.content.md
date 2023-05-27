@@ -2,7 +2,7 @@
 
 # Malware Protection
 
-Welcome to Malware Madness, your one-stop-shop for all things cybersecurity! Our mission is to keep you safe from the latest threats lurking in the digital world. 
+Welcome to Malware Madness, your one-stop-shop for all things cybersecurity! Our mission is to keep you safe from the latest threats lurking in the digital world.
 
 ## Our Wallpaper
 
@@ -10,7 +10,7 @@ Our website features a striking wallpaper with a repeating pattern of abstract s
 
 ## Resources
 
-Stay informed and up-to-date with our comprehensive resources section. Here, you'll find everything from informative articles and how-to guides to the latest news and trends in cybersecurity.
+Stay informed and up-to-date with our Com<wbr>pre<wbr>hen<wbr>sive resources section. Here, you'll find everything from informative articles and how-to guides to the latest news and trends in cybersecurity.
 
 ## User Stories
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Malware Madness: Protect Your Digital World
 
-Welcome to Malware Madness, your one-stop-shop for all things cybersecurity! Our mission is to keep you safe from the latest threats lurking in the digital world. 
+Welcome to Malware Madness, your one-stop-shop for all things cybersecurity! Our mission is to keep you safe from the latest threats lurking in the digital world.
 
 ## Our Wallpaper
 
@@ -63,7 +63,7 @@ Our website features a striking wallpaper with a repeating pattern of abstract s
 
 ## Resources
 
-Stay informed and up-to-date with our comprehensive resources section. Here, you'll find everything from informative articles and how-to guides to the latest news and trends in cybersecurity.
+Stay informed and up-to-date with our Com<wbr>pre<wbr>hen<wbr>sive resources section. Here, you'll find everything from informative articles and how-to guides to the latest news and trends in cybersecurity.
 
 ## User Stories
 

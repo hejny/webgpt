@@ -30,7 +30,7 @@ Our mission is to explore the depths of a black hole and uncover its secrets. Us
 
 ## The Black Hole
 
-Black holes are one of the most mysterious and fascinating objects in the universe. They are formed when massive stars collapse under their own gravity, creating a region in space where gravity is so strong that nothing, not even light, can escape.
+Black holes are one of the most mysterious and Fas<wbr>ci<wbr>na<wbr>ting objects in the universe. They are formed when massive stars collapse under their own gravity, creating a region in space where gravity is so strong that nothing, not even light, can escape.
 
 ## Our Technology
 

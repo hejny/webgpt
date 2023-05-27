@@ -8,9 +8,9 @@ Welcome to our website, where we offer a stunning galaxy cluster background that
 
 Our galaxy cluster background is more than just a beautiful image. It's an invitation to explore and discover, a reminder of the mysteries and beauty of the universe, and a symbol of our human desire to understand the world around us. By choosing our background, you'll be able to:
 
-- Transform your desktop into a portal to the cosmos, inspiring you to learn more about astronomy and space exploration
-- Connect with other space enthusiasts who share your passion for science and discovery
-- Support our mission to promote scientific literacy and curiosity about the world beyond our planet
+-   Transform your desktop into a portal to the cosmos, inspiring you to learn more about astronomy and space exploration
+-   Connect with other space enthusiasts who share your passion for science and discovery
+-   Support our mission to promote scientific literacy and curiosity about the world beyond our planet
 
 ## User Stories
 
@@ -18,15 +18,15 @@ Here are some stories from our users who have downloaded our galaxy cluster back
 
 > "As an amateur astronomer, I love having this galaxy cluster background on my computer. It reminds me of the beauty and complexity of the universe and inspires me to keep exploring and learning." - David R.
 
-> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background fascinating. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
+> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background Fas<wbr>ci<wbr>na<wbr>ting. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
 
 ## Resources
 
 If you're interested in learning more about astronomy and space exploration, check out these resources:
 
-- [NASA's Astronomy Picture of the Day](#)
-- [The European Space Agency's Education and Outreach page](#)
-- [The Planetary Society's Explore page](#)
+-   [NASA's Astronomy Picture of the Day](#)
+-   [The European Space Agency's Education and Outreach page](#)
+-   [The Planetary Society's Explore page](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -121,7 +121,7 @@ Here are some stories from our users who have downloaded our galaxy cluster back
 
 > "As an amateur astronomer, I love having this galaxy cluster background on my computer. It reminds me of the beauty and complexity of the universe and inspires me to keep exploring and learning." - David R.
 
-> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background fascinating. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
+> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background Fas<wbr>ci<wbr>na<wbr>ting. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
 
 ## Resources
 
@@ -165,7 +165,7 @@ Here are some stories from our users who have downloaded our galaxy cluster back
 
 > "As an amateur astronomer, I love having this galaxy cluster background on my computer. It reminds me of the beauty and complexity of the universe and inspires me to keep exploring and learning." - David R.
 
-> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background fascinating. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
+> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background Fas<wbr>ci<wbr>na<wbr>ting. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
 
 ## Resources
 
@@ -209,7 +209,7 @@ Here are some stories from our users who have downloaded our galaxy cluster back
 
 > "As an amateur astronomer, I love having this galaxy cluster background on my computer. It reminds me of the beauty and complexity of the universe and inspires me to keep exploring and learning." - David R.
 
-> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background fascinating. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
+> "I'm not a scientist or an astronomer, but I still find this galaxy cluster background Fas<wbr>ci<wbr>na<wbr>ting. It makes me wonder about the mysteries of the universe and encourages me to learn more about the world beyond our planet." - Emily S.
 
 ## Resources
 

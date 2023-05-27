@@ -2,7 +2,7 @@
 
 # Business Assistant
 
-Welcome to our website, where we offer a comprehensive virtual assistant service for your business needs. Our virtual assistant will help you manage your daily tasks, schedule appointments, and provide customer support. 
+Welcome to our website, where we offer a Com<wbr>pre<wbr>hen<wbr>sive virtual assistant service for your business needs. Our virtual assistant will help you manage your daily tasks, schedule appointments, and provide customer support.
 
 ## About Us
 
@@ -12,12 +12,12 @@ We are a team of experienced professionals who understand the importance of havi
 
 Our virtual assistant offers a wide range of services, including:
 
-- Appointment scheduling
-- Email management
-- Social media management
-- Customer support
-- Data entry
-- Research
+-   Appointment scheduling
+-   Email management
+-   Social media management
+-   Customer support
+-   Data entry
+-   Research
 
 ## How It Works
 
@@ -53,10 +53,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -72,7 +72,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Virtual Assistant for Your Business
 
-Welcome to our website, where we offer a comprehensive virtual assistant service for your business needs. Our virtual assistant will help you manage your daily tasks, schedule appointments, and provide customer support. 
+Welcome to our website, where we offer a Com<wbr>pre<wbr>hen<wbr>sive virtual assistant service for your business needs. Our virtual assistant will help you manage your daily tasks, schedule appointments, and provide customer support.
 
 ## About Us
 

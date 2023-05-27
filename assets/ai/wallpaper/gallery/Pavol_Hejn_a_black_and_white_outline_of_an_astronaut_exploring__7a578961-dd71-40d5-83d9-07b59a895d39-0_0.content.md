@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Discovery
 
-Welcome to Space Explorer, a website dedicated to all things space exploration. Our mission is to bring you the latest news and insights into the fascinating world of space travel and discovery. 
+Welcome to Space Explorer, a website dedicated to all things space exploration. Our mission is to bring you the latest news and insights into the Fas<wbr>ci<wbr>na<wbr>ting world of space travel and discovery.
 
 ## Wallpaper
 
@@ -54,10 +54,10 @@ For more news and updates, be sure to follow us on social media.
 
 If you want to learn more about space exploration, here are some great resources to check out:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
-- [Space.com](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
+-   [Space.com](#)
 
 ## Contact Us
 

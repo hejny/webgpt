@@ -6,7 +6,7 @@ Welcome to our website dedicated to drone delivery services! Our goal is to prov
 
 ## About Our Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone against a background of geometric shapes in complementary colors. This wallpaper represents the elegance and sophistication of drone technology.
+Our website features a stunning wallpaper with a single line drawing of a drone against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper represents the elegance and sophistication of drone technology.
 
 ## Our Mission
 
@@ -26,9 +26,9 @@ Here are some stories from real users who have benefited from drone delivery ser
 
 If you're interested in learning more about drone delivery services, check out these helpful resources:
 
-- [Federal Aviation Administration](#faa)
-- [Drone Delivery Canada](#ddc)
-- [Amazon Prime Air](#apa)
+-   [Federal Aviation Administration](#faa)
+-   [Drone Delivery Canada](#ddc)
+-   [Amazon Prime Air](#apa)
 
 ## Contact Us
 
@@ -38,14 +38,14 @@ If you have any questions or comments, please don't hesitate to [contact us](#co
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
+"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ At Drone Delivery Services, we believe that drones have the potential to revolut
 
 ## About Our Wallpaper
 
-Our website features a stunning wallpaper that showcases the beauty and simplicity of drone technology. The single line drawing of a drone against a background of geometric shapes in complementary colors represents the elegance and sophistication of this cutting-edge technology.
+Our website features a stunning wallpaper that showcases the beauty and simplicity of drone technology. The single line drawing of a drone against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors represents the elegance and sophistication of this cutting-edge technology.
 
 ## User Stories
 
@@ -113,7 +113,7 @@ Welcome to our website dedicated to drone delivery services! Our goal is to prov
 
 ## About Our Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone against a background of geometric shapes in complementary colors. This wallpaper represents the elegance and sophistication of drone technology.
+Our website features a stunning wallpaper with a single line drawing of a drone against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper represents the elegance and sophistication of drone technology.
 
 ## Our Mission
 

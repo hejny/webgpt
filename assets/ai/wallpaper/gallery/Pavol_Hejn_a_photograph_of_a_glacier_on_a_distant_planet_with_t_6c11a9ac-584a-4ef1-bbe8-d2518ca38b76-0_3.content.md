@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Galactic Wonders
 
-Welcome to our website, where we showcase stunning images of the universe that will take your breath away. Our wallpaper collection features captivating photographs from different planets, galaxies, and stars. Each image is carefully selected to give you a glimpse into the vastness and beauty of our universe.
+Welcome to our website, where we showcase stunning images of the universe that will take your breath away. Our wallpaper collection features Cap<wbr>ti<wbr>va<wbr>ting photographs from different planets, galaxies, and stars. Each image is carefully selected to give you a glimpse into the vastness and beauty of our universe.
 
 ## About Our Wallpaper
 
@@ -30,17 +30,17 @@ Our featured wallpaper is a photograph of a glacier on a distant planet. The blu
 
 Our wallpaper collection is perfect for anyone who loves astronomy, space exploration, or simply enjoys beautiful imagery. Here are some examples of how our users have enjoyed our wallpapers:
 
-- "I use these wallpapers as my desktop background, and they always inspire me to dream big." - John, 28
-- "My son loves space, and I use these wallpapers to decorate his room. He's always excited to see what new image we'll put up next." - Sarah, 35
-- "I'm an astronomy teacher, and I use these wallpapers in my classroom to spark my students' curiosity about the universe." - David, 42
+-   "I use these wallpapers as my desktop background, and they always inspire me to dream big." - John, 28
+-   "My son loves space, and I use these wallpapers to decorate his room. He's always excited to see what new image we'll put up next." - Sarah, 35
+-   "I'm an astronomy teacher, and I use these wallpapers in my classroom to spark my students' curiosity about the universe." - David, 42
 
 ## References
 
 If you want to learn more about the universe and space exploration, we've compiled a list of resources that you might find interesting:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Astronomy Magazine](#astronomy-magazine)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Astronomy Magazine](#astronomy-magazine)
 
 ## Contact Us
 

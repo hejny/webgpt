@@ -12,7 +12,7 @@ Our mission is to explore the unknown depths of the universe and uncover its man
 
 Here are some stories from our users who have been inspired by our work:
 
-> "I've always been fascinated by space, but your website has taken my interest to a whole new level. The wallpaper of your team conducting experiments on the edge of a black hole is so captivating, and it's amazing to think that we're constantly learning more about the universe." - Emily
+> "I've always been fascinated by space, but your website has taken my interest to a whole new level. The wallpaper of your team conducting experiments on the edge of a black hole is so Cap<wbr>ti<wbr>va<wbr>ting, and it's amazing to think that we're constantly learning more about the universe." - Emily
 
 > "Your website has sparked a love for astronomy in my son. He loves looking at the pictures of the planets and stars, and he's even started asking questions about black holes and wormholes. Thank you for inspiring the next generation of scientists!" - John
 
@@ -20,9 +20,9 @@ Here are some stories from our users who have been inspired by our work:
 
 If you're interested in learning more about the universe, here are some resources we recommend:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -67,7 +67,7 @@ Our mission is to explore the unknown depths of the universe and uncover its man
 
 Here are some stories from our users who have been inspired by our work:
 
-> "I've always been fascinated by space, but your website has taken my interest to a whole new level. The wallpaper of your team conducting experiments on the edge of a black hole is so captivating, and it's amazing to think that we're constantly learning more about the universe." - Emily
+> "I've always been fascinated by space, but your website has taken my interest to a whole new level. The wallpaper of your team conducting experiments on the edge of a black hole is so Cap<wbr>ti<wbr>va<wbr>ting, and it's amazing to think that we're constantly learning more about the universe." - Emily
 
 > "Your website has sparked a love for astronomy in my son. He loves looking at the pictures of the planets and stars, and he's even started asking questions about black holes and wormholes. Thank you for inspiring the next generation of scientists!" - John
 

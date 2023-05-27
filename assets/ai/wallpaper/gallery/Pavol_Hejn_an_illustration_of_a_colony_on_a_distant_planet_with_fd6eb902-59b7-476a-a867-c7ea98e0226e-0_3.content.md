@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Interstellar Colony
 
-Welcome to our website dedicated to exploring the exciting world of interstellar colonies! Our goal is to provide you with all the information you need to learn about these fascinating communities and their unique cultures, traditions, and architecture.
+Welcome to our website dedicated to exploring the exciting world of interstellar colonies! Our goal is to provide you with all the information you need to learn about these Fas<wbr>ci<wbr>na<wbr>ting communities and their unique cultures, traditions, and architecture.
 
 ## About the Wallpaper
 
@@ -46,8 +46,8 @@ Here are some stories from people who have experienced interstellar colonies fir
 
 If you're interested in learning more about interstellar colonies, we recommend checking out the following resources:
 
-- [NASA's Interstellar Exploration Program](#)
-- [The Interstellar Colonization Society](#)
+-   [NASA's Interstellar Exploration Program](#)
+-   [The Interstellar Colonization Society](#)
 
 ## Contact Us
 

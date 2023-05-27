@@ -20,7 +20,7 @@ Our website features user stories from people who have imagined what it would be
 
 ## References
 
-We've compiled a list of references for those interested in learning more about space elevators and the technology behind them. From scientific papers to popular articles, these resources provide a comprehensive overview of the topic.
+We've compiled a list of references for those interested in learning more about space elevators and the technology behind them. From scientific papers to popular articles, these resources provide a Com<wbr>pre<wbr>hen<wbr>sive overview of the topic.
 
 ## Contact Us
 
@@ -75,7 +75,7 @@ Our website features user stories from people who have imagined what it would be
 
 ## References
 
-We've compiled a list of references for those interested in learning more about space elevators and the technology behind them. From scientific papers to popular articles, these resources provide a comprehensive overview of the topic.
+We've compiled a list of references for those interested in learning more about space elevators and the technology behind them. From scientific papers to popular articles, these resources provide a Com<wbr>pre<wbr>hen<wbr>sive overview of the topic.
 
 ## Contact Us
 

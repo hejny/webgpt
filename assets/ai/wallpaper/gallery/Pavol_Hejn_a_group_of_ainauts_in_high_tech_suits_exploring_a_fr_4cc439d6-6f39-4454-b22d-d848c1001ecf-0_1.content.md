@@ -36,7 +36,7 @@ Check out some of our favorite user stories below:
 
 -   "Discovering New Worlds: A Beginner's Guide to Astronomy"
 -   "My Journey to Becoming an Ainaute"
--   "The Search for Extraterrestrial Life: An Interview with Dr. Jane Smith"
+-   "The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life: An Interview with Dr. Jane Smith"
 
 ## References
 

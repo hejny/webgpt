@@ -5,23 +5,29 @@
 Welcome to FutureTech, a technology company that is pioneering space exploration through innovation. Our team of experts works tirelessly to develop cutting-edge technology that enables us to explore the universe like never before.
 
 ## Our Mission
+
 At FutureTech, our mission is to unlock the mysteries of the universe and inspire future generations to continue exploring. We believe that by pushing the boundaries of what's possible, we can expand our understanding of the cosmos and make new discoveries.
 
 ## Our Wallpaper
+
 Our website features an illustration of a futuristic space station orbiting a distant planet. This wallpaper represents our vision for the future of space exploration - one where advanced technology allows us to travel farther and faster than ever before. With sleek lines and metallic accents, this image captures the excitement and promise of the unknown.
 
 ## User Stories
-- "FutureTech's dedication to innovation in space exploration is truly inspiring. I can't wait to see what they come up with next!"
-- "The wallpaper on FutureTech's website is so cool! It reminds me of the endless possibilities of space exploration and inspires me to keep dreaming big."
+
+-   "FutureTech's dedication to innovation in space exploration is truly inspiring. I can't wait to see what they come up with next!"
+-   "The wallpaper on FutureTech's website is so cool! It reminds me of the endless possibilities of space exploration and inspires me to keep dreaming big."
 
 ## Our Services
+
 We offer a range of services to support space exploration, including:
-- Advanced propulsion systems
-- Robotics and automation
-- Environmental control and life support systems
-- Navigation and communication technology
+
+-   Advanced propulsion systems
+-   Robotics and automation
+-   Environmental control and life support systems
+-   Navigation and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion technology
 
 ## Contact Us
+
 If you have any questions or comments about our services, please don't hesitate to [contact us](#contact-us). We'd love to hear from you!
 
 ---
@@ -36,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -141,7 +147,7 @@ We offer a range of services to support space exploration, including:
 - Advanced propulsion systems
 - Robotics and automation
 - Environmental control and life support systems
-- Navigation and communication technology
+- Navigation and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion technology
 
 ## Contact Us
 If you have any questions or comments about our services, please don't hesitate to [contact us](#contact-us). We'd love to hear from you!
@@ -179,7 +185,7 @@ We offer a range of services to support space exploration, including:
 - Advanced propulsion systems
 - Robotics and automation
 - Environmental control and life support systems
-- Navigation and communication technology
+- Navigation and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion technology
 
 ## Contact Us
 If you have any questions or comments about our services, please don't hesitate to [contact us](#contact-us). We'd love to hear from you!

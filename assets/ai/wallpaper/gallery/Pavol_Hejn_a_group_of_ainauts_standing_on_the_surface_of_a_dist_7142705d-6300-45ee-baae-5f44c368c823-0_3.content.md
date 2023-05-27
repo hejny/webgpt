@@ -6,7 +6,7 @@ Welcome to our website, where we take you on an exciting journey through the won
 
 ## Uncover the Secrets of Ainautes
 
-Our team of experts has been studying Ainautes for years, and we are dedicated to uncovering its secrets. From the towering alien structures to the vast deserts and mountains, there is so much to explore on this fascinating planet.
+Our team of experts has been studying Ainautes for years, and we are dedicated to uncovering its secrets. From the towering alien structures to the vast deserts and mountains, there is so much to explore on this Fas<wbr>ci<wbr>na<wbr>ting planet.
 
 ## Experience Ainautes Through Our User Stories
 
@@ -24,9 +24,9 @@ If you have any questions about Ainautes or our website, please don't hesitate t
 
 ## References
 
-- [NASA's Exploration of Ainautes](#)
-- [The History of Ainautes](#)
-- [Ainautes: A Guide for Explorers](#)
+-   [NASA's Exploration of Ainautes](#)
+-   [The History of Ainautes](#)
+-   [Ainautes: A Guide for Explorers](#)
 
 Join us on this incredible journey of discovery and uncover the secrets of Ainautes.
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ Welcome to our website, where we take you on an exciting journey through the won
 
 ## Uncover the Secrets of Ainautes
 
-Our team of experts has been studying Ainautes for years, and we are dedicated to uncovering its secrets. From the towering alien structures to the vast deserts and mountains, there is so much to explore on this fascinating planet.
+Our team of experts has been studying Ainautes for years, and we are dedicated to uncovering its secrets. From the towering alien structures to the vast deserts and mountains, there is so much to explore on this Fas<wbr>ci<wbr>na<wbr>ting planet.
 
 ## Experience Ainautes Through Our User Stories
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -24,7 +24,7 @@ Welcome to our website, where we explore the eerie and mysterious world of dark 
 
 ## About Us
 
-Our team of writers and researchers are passionate about exploring the mysteries of the natural world. We believe that there is something inherently fascinating about the unknown, and we strive to uncover the secrets that lie hidden in the darkness.
+Our team of writers and researchers are passionate about exploring the mysteries of the natural world. We believe that there is something inherently Fas<wbr>ci<wbr>na<wbr>ting about the unknown, and we strive to uncover the secrets that lie hidden in the darkness.
 
 ## User Stories
 
@@ -40,18 +40,18 @@ Here are some stories from our readers who have been inspired by our site:
 
 Our site features a variety of articles on topics such as:
 
-- Haunted forests around the world
-- Folklore and legends surrounding forests
-- True crime cases that took place in wooded areas
-- Survival tips for navigating the wilderness
+-   Haunted forests around the world
+-   Folklore and legends surrounding forests
+-   True crime cases that took place in wooded areas
+-   Survival tips for navigating the wilderness
 
 ## References
 
 Here are some of the sources we use to research our articles:
 
-- [National Geographic](#)
-- [Smithsonian Magazine](#)
-- [Atlas Obscura](#)
+-   [National Geographic](#)
+-   [Smithsonian Magazine](#)
+-   [Atlas Obscura](#)
 
 ## Contact Us
 

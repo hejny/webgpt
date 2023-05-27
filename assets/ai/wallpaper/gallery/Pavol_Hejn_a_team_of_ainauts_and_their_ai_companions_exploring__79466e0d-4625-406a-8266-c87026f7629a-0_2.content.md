@@ -14,7 +14,7 @@ Our team consists of experienced Ainautes and their AI companions who are expert
 
 ## User Stories
 
-> "I never knew there was so much to learn about the universe until I stumbled upon this website. The stories of the team's adventures are fascinating and have inspired me to learn more about space exploration." - John D.
+> "I never knew there was so much to learn about the universe until I stumbled upon this website. The stories of the team's adventures are Fas<wbr>ci<wbr>na<wbr>ting and have inspired me to learn more about space exploration." - John D.
 
 > "As an aspiring astrophysicist, this website has been an invaluable resource for me. The information and insights shared by the team have helped me better understand the complexities of the universe." - Sarah P.
 
@@ -22,13 +22,13 @@ Our team consists of experienced Ainautes and their AI companions who are expert
 
 If you're interested in learning more about abandoned alien spacecraft, check out some of our recommended resources:
 
-- *Abandoned Alien Spaceships: A Comprehensive Guide* by Dr. Jane Smith
-- *Exploring the Unknown: Adventures in Space* by Captain James Johnson
-- *The Universe and Its Mysteries* by Dr. David Brown
+-   _Abandoned Alien Spaceships: A Com<wbr>pre<wbr>hen<wbr>sive Guide_ by Dr. Jane Smith
+-   _Exploring the Unknown: Adventures in Space_ by Captain James Johnson
+-   _The Universe and Its Mysteries_ by Dr. David Brown
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Please feel free to reach out to us at [exploringtheunknown.com/contact](#contact). 
+Have a question or comment? We'd love to hear from you! Please feel free to reach out to us at [exploringtheunknown.com/contact](#contact).
 
 Thank you for visiting our website and joining us on our mission to uncover the secrets of the universe! 🚀🌌
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ Our team consists of experienced Ainautes and their AI companions who are expert
 
 ## User Stories
 
-> "I never knew there was so much to learn about the universe until I stumbled upon this website. The stories of the team's adventures are fascinating and have inspired me to learn more about space exploration." - John D.
+> "I never knew there was so much to learn about the universe until I stumbled upon this website. The stories of the team's adventures are Fas<wbr>ci<wbr>na<wbr>ting and have inspired me to learn more about space exploration." - John D.
 
 > "As an aspiring astrophysicist, this website has been an invaluable resource for me. The information and insights shared by the team have helped me better understand the complexities of the universe." - Sarah P.
 
@@ -79,13 +79,13 @@ Our team consists of experienced Ainautes and their AI companions who are expert
 
 If you're interested in learning more about abandoned alien spacecraft, check out some of our recommended resources:
 
-- *Abandoned Alien Spaceships: A Comprehensive Guide* by Dr. Jane Smith
+- *Abandoned Alien Spaceships: A Com<wbr>pre<wbr>hen<wbr>sive Guide* by Dr. Jane Smith
 - *Exploring the Unknown: Adventures in Space* by Captain James Johnson
 - *The Universe and Its Mysteries* by Dr. David Brown
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Please feel free to reach out to us at [exploringtheunknown.com/contact](#contact). 
+Have a question or comment? We'd love to hear from you! Please feel free to reach out to us at [exploringtheunknown.com/contact](#contact).
 
 Thank you for visiting our website and joining us on our mission to uncover the secrets of the universe! 🚀🌌
 

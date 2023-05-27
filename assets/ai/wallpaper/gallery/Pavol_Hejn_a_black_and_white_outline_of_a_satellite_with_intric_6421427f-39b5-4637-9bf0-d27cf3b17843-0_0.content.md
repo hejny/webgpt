@@ -22,9 +22,9 @@ We are a team of space enthusiasts who are passionate about sharing our knowledg
 
 Our website provides a wealth of resources for those interested in space exploration. Here are some of our most popular articles:
 
-- The History of Space Exploration
-- The Latest Advances in Space Technology
-- The Search for Extraterrestrial Life
+-   The History of Space Exploration
+-   The Latest Advances in Space Technology
+-   The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ Our website provides a wealth of resources for those interested in space explora
 
 - The History of Space Exploration
 - The Latest Advances in Space Technology
-- The Search for Extraterrestrial Life
+- The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life
 
 ## Contact Us
 

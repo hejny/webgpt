@@ -24,14 +24,15 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in learning more about ladybugs, check out these resources:
 
-- [National Geographic: Ladybug Facts](#)
-- [Smithsonian Magazine: 10 Fascinating Facts About Ladybugs](#)
+-   [National Geographic: Ladybug Facts](#)
+-   [Smithsonian Magazine: 10 Fas<wbr>ci<wbr>na<wbr>ting Facts About Ladybugs](#)
 
 ### Contact Us
 
 Do you have any questions or feedback? We'd love to hear from you! Contact us at [contact@naturesbeauty.com](mailto:contact@naturesbeauty.com) or follow us on [Twitter](#) and [Instagram](#) for updates and more stunning backgrounds.
 
 ---
+
 Inspire your day with Nature's Beauty Backgrounds 🌿🌺🦋
 
 <!--
@@ -42,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -84,7 +85,7 @@ Here are some user stories from our satisfied customers:
 If you're interested in learning more about ladybugs, check out these resources:
 
 - [National Geographic: Ladybug Facts](#)
-- [Smithsonian Magazine: 10 Fascinating Facts About Ladybugs](#)
+- [Smithsonian Magazine: 10 Fas<wbr>ci<wbr>na<wbr>ting Facts About Ladybugs](#)
 
 ### Contact Us
 
@@ -128,7 +129,7 @@ Here are some user stories from our satisfied customers:
 If you're interested in learning more about ladybugs, check out these resources:
 
 - [National Geographic: Ladybug Facts](#)
-- [Smithsonian Magazine: 10 Fascinating Facts About Ladybugs](#)
+- [Smithsonian Magazine: 10 Fas<wbr>ci<wbr>na<wbr>ting Facts About Ladybugs](#)
 
 ### Contact Us
 

@@ -2,7 +2,7 @@
 
 # Futuristic Dashboard
 
-Welcome to FutureVision, a modern dashboard that helps you visualize your data in a sleek and intuitive way. Our platform is designed to provide you with a comprehensive overview of your data, allowing you to make informed decisions quickly and efficiently.
+Welcome to FutureVision, a modern dashboard that helps you visualize your data in a sleek and intuitive way. Our platform is designed to provide you with a Com<wbr>pre<wbr>hen<wbr>sive overview of your data, allowing you to make informed decisions quickly and efficiently.
 
 ## The Perfect Wallpaper for Your Workspace
 
@@ -10,12 +10,12 @@ Our wallpaper features an abstract illustration of a futuristic data visualizati
 
 ## Features
 
-- Customizable dashboards
-- Real-time data updates
-- Multiple data sources integration
-- Easy-to-use interface
-- Interactive charts and graphs
-- Mobile-friendly design
+-   Customizable dashboards
+-   Real-time data updates
+-   Multiple data sources integration
+-   Easy-to-use interface
+-   Interactive charts and graphs
+-   Mobile-friendly design
 
 ## User Stories
 
@@ -27,16 +27,16 @@ Our wallpaper features an abstract illustration of a futuristic data visualizati
 
 Check out some of our case studies to see how FutureVision has helped businesses like yours:
 
-- #case-study-1: How Company X increased sales by 25% using FutureVision
-- #case-study-2: How Company Y improved customer satisfaction with real-time data insights
+-   #case-study-1: How Company X increased sales by 25% using FutureVision
+-   #case-study-2: How Company Y improved customer satisfaction with real-time data insights
 
 ## Contact Us
 
 Ready to take your data analysis to the next level? Contact us today to learn more about FutureVision and how we can help your business succeed.
 
-- Phone: 555-1234
-- Email: info@futurevision.com
-- Twitter: @futurevision
+-   Phone: 555-1234
+-   Email: info@futurevision.com
+-   Twitter: @futurevision
 
 <!--
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -65,7 +65,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # FutureVision - A Futuristic Dashboard for Data Visualization
 
-Welcome to FutureVision, a modern dashboard that helps you visualize your data in a sleek and intuitive way. Our platform is designed to provide you with a comprehensive overview of your data, allowing you to make informed decisions quickly and efficiently.
+Welcome to FutureVision, a modern dashboard that helps you visualize your data in a sleek and intuitive way. Our platform is designed to provide you with a Com<wbr>pre<wbr>hen<wbr>sive overview of your data, allowing you to make informed decisions quickly and efficiently.
 
 ## The Perfect Wallpaper for Your Workspace
 

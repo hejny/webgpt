@@ -2,7 +2,7 @@
 
 # Northern Lights Escape
 
-Welcome to our website, where you can immerse yourself in the captivating beauty of the Northern Lights. Our stunning background features a photograph of the aurora borealis, with its vibrant green and purple hues swirling across the night sky.
+Welcome to our website, where you can immerse yourself in the Cap<wbr>ti<wbr>va<wbr>ting beauty of the Northern Lights. Our stunning background features a photograph of the aurora borealis, with its vibrant green and purple hues swirling across the night sky.
 
 ## Discover the Magic of the Northern Lights
 
@@ -24,9 +24,9 @@ Here are some testimonials from our satisfied customers:
 
 If you want to learn more about the Northern Lights, here are some resources we recommend:
 
-- [NASA: Aurora Borealis](#nasa)
-- [National Geographic: Northern Lights](#natgeo)
-- [Visit Norway: Northern Lights](#norway)
+-   [NASA: Aurora Borealis](#nasa)
+-   [National Geographic: Northern Lights](#natgeo)
+-   [Visit Norway: Northern Lights](#norway)
 
 ## Contact Us
 
@@ -54,10 +54,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -129,7 +129,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Experience the Beauty of the Northern Lights: A Digital Escape
 
-Welcome to our website, where you can immerse yourself in the captivating beauty of the Northern Lights. Our stunning background features a photograph of the aurora borealis, with its vibrant green and purple hues swirling across the night sky.
+Welcome to our website, where you can immerse yourself in the Cap<wbr>ti<wbr>va<wbr>ting beauty of the Northern Lights. Our stunning background features a photograph of the aurora borealis, with its vibrant green and purple hues swirling across the night sky.
 
 ## Discover the Magic of the Northern Lights
 

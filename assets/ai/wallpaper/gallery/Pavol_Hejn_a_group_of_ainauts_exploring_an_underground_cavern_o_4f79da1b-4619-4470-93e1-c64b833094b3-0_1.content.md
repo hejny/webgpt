@@ -34,7 +34,7 @@ Our mission is to explore the unknown and discover new worlds that could potenti
 
 Our users come from all walks of life, from students and educators to space enthusiasts and researchers. Here are some of their stories:
 
-> "I've always been fascinated by space and the possibility of extraterrestrial life. This website allows me to indulge my curiosity and learn more about the latest discoveries in the field." - John, Student
+> "I've always been fascinated by space and the possibility of Ex<wbr>tra<wbr>terre<wbr>strial life. This website allows me to indulge my curiosity and learn more about the latest discoveries in the field." - John, Student
 
 > "As an educator, I find this website to be a valuable resource for teaching my students about space exploration and the wonders of the universe." - Sarah, Educator
 
@@ -42,7 +42,7 @@ Our users come from all walks of life, from students and educators to space enth
 
 ## Our Expeditions
 
-Our expeditions take us to the farthest corners of the universe, where we encounter strange and fascinating phenomena. We use advanced technology to capture stunning visuals of our expeditions, like this wallpaper of our Ainautes exploring an underground cavern on a distant planet.
+Our expeditions take us to the farthest corners of the universe, where we encounter strange and Fas<wbr>ci<wbr>na<wbr>ting phenomena. We use advanced technology to capture stunning visuals of our expeditions, like this wallpaper of our Ainautes exploring an underground cavern on a distant planet.
 
 ## References
 

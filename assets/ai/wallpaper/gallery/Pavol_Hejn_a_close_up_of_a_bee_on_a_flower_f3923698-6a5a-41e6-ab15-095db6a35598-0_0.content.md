@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -28,11 +28,11 @@ Bees play a crucial role in pollinating many of the fruits, vegetables, and flow
 
 ## Tips for Creating a Bee-Friendly Garden
 
-- Plant a variety of flowers that bloom throughout the growing season, including native species.
-- Avoid using pesticides and herbicides, which can be harmful to bees and other beneficial insects.
-- Provide nesting sites for solitary bees by leaving areas of bare soil or installing bee houses.
-- Consider adding a water source, such as a shallow dish with rocks for perching.
-- Learn about the specific needs of different bee species and tailor your garden accordingly.
+-   Plant a variety of flowers that bloom throughout the growing season, including native species.
+-   Avoid using pesticides and herbicides, which can be harmful to bees and other beneficial insects.
+-   Provide nesting sites for solitary bees by leaving areas of bare soil or installing bee houses.
+-   Consider adding a water source, such as a shallow dish with rocks for perching.
+-   Learn about the specific needs of different bee species and tailor your garden accordingly.
 
 ## User Stories
 
@@ -44,9 +44,9 @@ Bees play a crucial role in pollinating many of the fruits, vegetables, and flow
 
 Here are some resources to help you learn more about bee-friendly gardening:
 
-- [The Xerces Society](#) - A nonprofit organization dedicated to protecting wildlife through the conservation of invertebrates and their habitat.
-- [Pollinator Partnership](#) - A nonprofit organization that promotes the health of pollinators through conservation, education, and research.
-- [The Bee-Friendly Garden](#) by Kate Frey and Gretchen LeBuhn - A comprehensive guide to creating a garden that supports bees and other pollinators.
+-   [The Xerces Society](#) - A nonprofit organization dedicated to protecting wildlife through the conservation of invertebrates and their habitat.
+-   [Pollinator Partnership](#) - A nonprofit organization that promotes the health of pollinators through conservation, education, and research.
+-   [The Bee-Friendly Garden](#) by Kate Frey and Gretchen LeBuhn - A Com<wbr>pre<wbr>hen<wbr>sive guide to creating a garden that supports bees and other pollinators.
 
 ## Contact Us
 

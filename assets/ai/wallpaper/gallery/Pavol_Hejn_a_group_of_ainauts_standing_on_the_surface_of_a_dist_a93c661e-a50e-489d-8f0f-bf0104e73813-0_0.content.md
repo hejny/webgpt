@@ -34,7 +34,7 @@ Our latest discovery is an enormous alien structure on a distant planet. The str
 
 ## User Stories
 
-Our website is designed for anyone who is interested in space exploration and the search for extraterrestrial life. Here are some stories from our users:
+Our website is designed for anyone who is interested in space exploration and the search for Ex<wbr>tra<wbr>terre<wbr>strial life. Here are some stories from our users:
 
 -   "I've always been fascinated by space, and your website has given me a new appreciation for the vastness and complexity of the universe." - John D.
 -   "The images and data you share on your website are truly amazing. Keep up the great work!" - Sarah L.
@@ -42,7 +42,7 @@ Our website is designed for anyone who is interested in space exploration and th
 
 ## References
 
-If you want to learn more about space exploration and the search for extraterrestrial life, check out these resources:
+If you want to learn more about space exploration and the search for Ex<wbr>tra<wbr>terre<wbr>strial life, check out these resources:
 
 -   [NASA](#)
 -   [SpaceX](#)

@@ -8,9 +8,9 @@ Welcome to our tech blog, where we explore the latest trends in technology and s
 
 Our background is more than just an image. It reflects our passion for innovation, creativity, and progress. Here are some reasons why you should consider using our background:
 
-- It sets the tone for your tech blog: The futuristic cityscape represents the cutting-edge technology and ideas that you'll be discussing in your blog.
-- It inspires creativity: The abstract nature of the illustration sparks imagination and encourages out-of-the-box thinking.
-- It adds visual interest: The glowing lights and skyscrapers create a dynamic and captivating backdrop for your content.
+-   It sets the tone for your tech blog: The futuristic cityscape represents the cutting-edge technology and ideas that you'll be discussing in your blog.
+-   It inspires creativity: The abstract nature of the illustration sparks imagination and encourages out-of-the-box thinking.
+-   It adds visual interest: The glowing lights and skyscrapers create a dynamic and Cap<wbr>ti<wbr>va<wbr>ting backdrop for your content.
 
 ## How to Download and Use Our Background
 
@@ -28,9 +28,9 @@ Here are some stories from our users who have used our background:
 
 If you're interested in learning more about the topics we cover in our tech blog, check out these references:
 
-- [The Verge](#the-verge)
-- [Wired](#wired)
-- [TechCrunch](#techcrunch)
+-   [The Verge](#the-verge)
+-   [Wired](#wired)
+-   [TechCrunch](#techcrunch)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ Our wallpaper is more than just a background image. It reflects our passion for 
 
 - It sets the tone for your tech blog: The futuristic cityscape represents the cutting-edge technology and ideas that you'll be discussing in your blog.
 - It inspires creativity: The abstract nature of the illustration sparks imagination and encourages out-of-the-box thinking.
-- It adds visual interest: The glowing lights and skyscrapers create a dynamic and captivating backdrop for your content.
+- It adds visual interest: The glowing lights and skyscrapers create a dynamic and Cap<wbr>ti<wbr>va<wbr>ting backdrop for your content.
 
 ## How to Download and Use Our Wallpaper
 
@@ -117,7 +117,7 @@ Our background is more than just an image. It reflects our passion for innovatio
 
 - It sets the tone for your tech blog: The futuristic cityscape represents the cutting-edge technology and ideas that you'll be discussing in your blog.
 - It inspires creativity: The abstract nature of the illustration sparks imagination and encourages out-of-the-box thinking.
-- It adds visual interest: The glowing lights and skyscrapers create a dynamic and captivating backdrop for your content.
+- It adds visual interest: The glowing lights and skyscrapers create a dynamic and Cap<wbr>ti<wbr>va<wbr>ting backdrop for your content.
 
 ## How to Download and Use Our Background
 

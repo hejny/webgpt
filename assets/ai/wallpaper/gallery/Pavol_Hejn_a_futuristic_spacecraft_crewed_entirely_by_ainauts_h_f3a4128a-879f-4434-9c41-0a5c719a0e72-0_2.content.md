@@ -2,7 +2,7 @@
 
 # Space Ainautes
 
-Welcome to our website dedicated to exploring the vast expanse of space and the fascinating creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that the stunning Ainautes image on our homepage will capture your imagination and transport you to a world beyond our own.
+Welcome to our website dedicated to exploring the vast expanse of space and the Fas<wbr>ci<wbr>na<wbr>ting creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that the stunning Ainautes image on our homepage will capture your imagination and transport you to a world beyond our own.
 
 ## About Ainautes
 
@@ -58,7 +58,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Final Frontier: Ainautes Wallpaper
 
-Welcome to our website dedicated to exploring the vast expanse of space and the fascinating creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that this Ainautes wallpaper will serve as a reminder of the infinite possibilities that lie beyond our planet.
+Welcome to our website dedicated to exploring the vast expanse of space and the Fas<wbr>ci<wbr>na<wbr>ting creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that this Ainautes wallpaper will serve as a reminder of the infinite possibilities that lie beyond our planet.
 
 ## About Ainautes
 
@@ -95,7 +95,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of Space with Ainautes
 
-Welcome to our website dedicated to exploring the vast expanse of space and the fascinating creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that the stunning Ainautes image on our homepage will capture your imagination and transport you to a world beyond our own.
+Welcome to our website dedicated to exploring the vast expanse of space and the Fas<wbr>ci<wbr>na<wbr>ting creatures that inhabit it. Our mission is to inspire curiosity and wonder about the universe around us, and we hope that the stunning Ainautes image on our homepage will capture your imagination and transport you to a world beyond our own.
 
 ## About Ainautes
 

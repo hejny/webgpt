@@ -16,11 +16,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Universe's Wonders
 
-Welcome to our website dedicated to showcasing the beauty and mystery of the universe. As you browse through our pages, you will discover stunning images and fascinating information about the cosmos.
+Welcome to our website dedicated to showcasing the beauty and mystery of the universe. As you browse through our pages, you will discover stunning images and Fas<wbr>ci<wbr>na<wbr>ting information about the cosmos.
 
 ## Wallpaper of the Week
 
-Each week, we feature a breathtaking wallpaper that captures the essence of the universe. This week's wallpaper is a photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky. 
+Each week, we feature a breathtaking wallpaper that captures the essence of the universe. This week's wallpaper is a photograph of a glacier on a distant planet, with the blue and white colors contrasting against the dark sky.
 
 > "The universe is full of magical things patiently waiting for our wits to grow sharper." - Eden Phillpotts
 

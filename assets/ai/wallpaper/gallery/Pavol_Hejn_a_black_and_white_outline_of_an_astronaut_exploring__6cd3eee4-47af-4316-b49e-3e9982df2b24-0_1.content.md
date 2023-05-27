@@ -10,28 +10,28 @@ As part of our commitment to igniting a sense of adventure, we offer a stunning 
 
 Here are a few examples of how our space-inspired site has inspired people to explore:
 
-- "I love browsing through the travel guides on [website name] while gazing at the beautiful space background - it's like I'm planning my next intergalactic adventure!" - [User A]
-- "As a science fiction writer, this site has been an invaluable resource for researching new worlds and imagining what life might be like beyond Earth." - [User B]
-- "The space background on this site is so captivating - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
+-   "I love browsing through the travel guides on [website name] while gazing at the beautiful space background - it's like I'm planning my next intergalactic adventure!" - [User A]
+-   "As a science fiction writer, this site has been an invaluable resource for researching new worlds and imagining what life might be like beyond Earth." - [User B]
+-   "The space background on this site is so Cap<wbr>ti<wbr>va<wbr>ting - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
 
 ## Resources
 
 If you're interested in learning more about space exploration, here are some resources we recommend:
 
-- NASA's website ([#nasa](#nasa))
-- The Planetary Society ([#planetarysociety](#planetarysociety))
-- Space.com ([#spacecom](#spacecom))
+-   NASA's website ([#nasa](#nasa))
+-   The Planetary Society ([#planetarysociety](#planetarysociety))
+-   Space.com ([#spacecom](#spacecom))
 
 ## Contact Us
 
 Have questions or feedback about our site? We'd love to hear from you! Here's how to get in touch:
 
-- Email: [contact@website.com](mailto:contact@website.com)
-- Phone: 555-555-5555
-- Social media: 
-    - Twitter: [#website-twitter](#website-twitter)
-    - Facebook: [#website-facebook](#website-facebook)
-    - Instagram: [#website-instagram](#website-instagram)
+-   Email: [contact@website.com](mailto:contact@website.com)
+-   Phone: 555-555-5555
+-   Social media:
+    -   Twitter: [#website-twitter](#website-twitter)
+    -   Facebook: [#website-facebook](#website-facebook)
+    -   Instagram: [#website-instagram](#website-instagram)
 
 Thanks for visiting [website name] - we hope our space-inspired background inspires you to explore the universe and all it has to offer!
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -90,7 +90,7 @@ Have questions or feedback about our site? We'd love to hear from you! Here's ho
 
 - Email: [contact@website.com](mailto:contact@website.com)
 - Phone: 555-555-5555
-- Social media: 
+- Social media:
     - Twitter: [#website-twitter](#website-twitter)
     - Facebook: [#website-facebook](#website-facebook)
     - Instagram: [#website-instagram](#website-instagram)
@@ -119,7 +119,7 @@ Here are just a few examples of how our space-inspired website has inspired peop
 
 - "I love checking out the latest travel guides on [website name] while gazing at the beautiful space background - it's like I'm planning my next intergalactic adventure!" - [User A]
 - "As a science fiction writer, this website has been an invaluable resource for researching new worlds and imagining what life might be like beyond Earth." - [User B]
-- "The space background on this site is so captivating - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
+- "The space background on this site is so Cap<wbr>ti<wbr>va<wbr>ting - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
 
 ## Resources
 
@@ -135,7 +135,7 @@ Have questions or feedback about our site? We'd love to hear from you! Here's ho
 
 - Email: [contact@website.com](mailto:contact@website.com)
 - Phone: 555-555-5555
-- Social media: 
+- Social media:
     - Twitter: [#website-twitter](#website-twitter)
     - Facebook: [#website-facebook](#website-facebook)
     - Instagram: [#website-instagram](#website-instagram)
@@ -164,7 +164,7 @@ Here are a few examples of how our space-inspired site has inspired people to ex
 
 - "I love browsing through the travel guides on [website name] while gazing at the beautiful space background - it's like I'm planning my next intergalactic adventure!" - [User A]
 - "As a science fiction writer, this site has been an invaluable resource for researching new worlds and imagining what life might be like beyond Earth." - [User B]
-- "The space background on this site is so captivating - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
+- "The space background on this site is so Cap<wbr>ti<wbr>va<wbr>ting - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
 
 ## Resources
 
@@ -180,7 +180,7 @@ Have questions or feedback about our site? We'd love to hear from you! Here's ho
 
 - Email: [contact@website.com](mailto:contact@website.com)
 - Phone: 555-555-5555
-- Social media: 
+- Social media:
     - Twitter: [#website-twitter](#website-twitter)
     - Facebook: [#website-facebook](#website-facebook)
     - Instagram: [#website-instagram](#website-instagram)
@@ -209,7 +209,7 @@ Here are a few examples of how our space-inspired site has inspired people to ex
 
 - "I love browsing through the travel guides on [website name] while gazing at the beautiful space background - it's like I'm planning my next intergalactic adventure!" - [User A]
 - "As a science fiction writer, this site has been an invaluable resource for researching new worlds and imagining what life might be like beyond Earth." - [User B]
-- "The space background on this site is so captivating - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
+- "The space background on this site is so Cap<wbr>ti<wbr>va<wbr>ting - it reminds me that there's a whole universe out there waiting to be explored." - [User C]
 
 ## Resources
 
@@ -225,7 +225,7 @@ Have questions or feedback about our site? We'd love to hear from you! Here's ho
 
 - Email: [contact@website.com](mailto:contact@website.com)
 - Phone: 555-555-5555
-- Social media: 
+- Social media:
     - Twitter: [#website-twitter](#website-twitter)
     - Facebook: [#website-facebook](#website-facebook)
     - Instagram: [#website-instagram](#website-instagram)

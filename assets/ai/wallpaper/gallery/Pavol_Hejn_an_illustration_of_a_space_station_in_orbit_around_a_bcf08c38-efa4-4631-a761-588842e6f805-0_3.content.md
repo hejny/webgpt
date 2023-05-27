@@ -6,16 +6,16 @@ Welcome to our website, where we explore the mysteries of space and share the la
 
 ## About Us
 
-Our team of experienced astronomers and science enthusiasts is dedicated to bringing you the most fascinating and up-to-date information about space. From the latest NASA missions to the most exciting breakthroughs in astrophysics, we cover it all. Whether you're a seasoned stargazer or a curious beginner, our website has something for everyone.
+Our team of experienced astronomers and science enthusiasts is dedicated to bringing you the most Fas<wbr>ci<wbr>na<wbr>ting and up-to-date information about space. From the latest NASA missions to the most exciting breakthroughs in astrophysics, we cover it all. Whether you're a seasoned stargazer or a curious beginner, our website has something for everyone.
 
 ## Our Content
 
 Here are some of the topics we cover on our website:
 
-- **Space News:** Stay up-to-date with the latest developments in space exploration, including new discoveries, upcoming missions, and scientific breakthroughs.
-- **Astronomy Basics:** Learn the fundamentals of astronomy, including the history of space exploration, the properties of planets and stars, and the tools used by astronomers to study the universe.
-- **User Stories:** Read inspiring stories from people around the world who have been touched by the wonders of space, from amateur astronomers to professional scientists.
-- **References:** Explore our collection of resources, including books, documentaries, podcasts, and websites, to deepen your knowledge of space and astronomy.
+-   **Space News:** Stay up-to-date with the latest developments in space exploration, including new discoveries, upcoming missions, and scientific breakthroughs.
+-   **Astronomy Basics:** Learn the fundamentals of astronomy, including the history of space exploration, the properties of planets and stars, and the tools used by astronomers to study the universe.
+-   **User Stories:** Read inspiring stories from people around the world who have been touched by the wonders of space, from amateur astronomers to professional scientists.
+-   **References:** Explore our collection of resources, including books, documentaries, podcasts, and websites, to deepen your knowledge of space and astronomy.
 
 ## Contact Us
 
@@ -33,10 +33,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -56,7 +56,7 @@ Welcome to our website, where we explore the mysteries of space and share the la
 
 ## About Us
 
-Our team of experienced astronomers and science enthusiasts is dedicated to bringing you the most fascinating and up-to-date information about space. From the latest NASA missions to the most exciting breakthroughs in astrophysics, we cover it all. Whether you're a seasoned stargazer or a curious beginner, our website has something for everyone.
+Our team of experienced astronomers and science enthusiasts is dedicated to bringing you the most Fas<wbr>ci<wbr>na<wbr>ting and up-to-date information about space. From the latest NASA missions to the most exciting breakthroughs in astrophysics, we cover it all. Whether you're a seasoned stargazer or a curious beginner, our website has something for everyone.
 
 ## Our Content
 

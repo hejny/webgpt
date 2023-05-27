@@ -12,18 +12,18 @@ Our mission is to inspire curiosity and foster learning about the mysteries and 
 
 Here are some stories from members of our community:
 
-- "I found this site while looking for information about the recent Mars rover mission. I was thrilled to find a community of people who share my fascination with space and who are eager to learn more."
-- "As someone who has always been interested in astronomy but never knew where to start, I appreciate having a place where I can ask questions and learn from others who are more experienced."
-- "This site has been a great resource for me as a science teacher. I've been able to find lesson plans and activities that help my students understand the wonders of the universe."
+-   "I found this site while looking for information about the recent Mars rover mission. I was thrilled to find a community of people who share my fascination with space and who are eager to learn more."
+-   "As someone who has always been interested in astronomy but never knew where to start, I appreciate having a place where I can ask questions and learn from others who are more experienced."
+-   "This site has been a great resource for me as a science teacher. I've been able to find lesson plans and activities that help my students understand the wonders of the universe."
 
 ## Resources
 
 If you're interested in learning more about space exploration and astronomy, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
-- [Hubble Space Telescope](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
+-   [Hubble Space Telescope](#)
 
 ## Contact Us
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,7 +95,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Exploring the Cosmos: A Space Enthusiast's Haven
 
-Welcome to our website dedicated to exploring the wonders of the universe. Our homepage features a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This captivating image sets the tone for what you can expect from our site - a deep dive into the mysteries and beauty of the cosmos.
+Welcome to our website dedicated to exploring the wonders of the universe. Our homepage features a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for what you can expect from our site - a deep dive into the mysteries and beauty of the cosmos.
 
 ## About Us
 
@@ -134,7 +134,7 @@ Heading is too long, rewrite whole content.
 
 # Exploring the Universe: A Space Enthusiast's Community
 
-Welcome to our website dedicated to exploring the wonders of the universe. Our homepage features a captivating digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This image sets the tone for what you can expect from our site - a community of space enthusiasts coming together to share their passion and learn more about the latest developments in space exploration and astronomy.
+Welcome to our website dedicated to exploring the wonders of the universe. Our homepage features a Cap<wbr>ti<wbr>va<wbr>ting digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. This image sets the tone for what you can expect from our site - a community of space enthusiasts coming together to share their passion and learn more about the latest developments in space exploration and astronomy.
 
 ## About Us
 

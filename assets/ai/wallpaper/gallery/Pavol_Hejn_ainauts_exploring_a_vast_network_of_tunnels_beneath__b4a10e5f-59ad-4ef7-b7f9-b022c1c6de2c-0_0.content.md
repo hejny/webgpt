@@ -14,7 +14,7 @@ Our users come from all walks of life, but they share a love of adventure and ex
 
 -   "The background on this website is amazing! It really sets the tone for my own writing and inspires me to keep exploring new ideas." - Sarah, 28
 -   "I'm a gamer, and this background is perfect for me. It gets me in the mood for epic adventures and reminds me why I love sci-fi so much." - Alex, 22
--   "As an artist, I find myself staring at this background for hours. The colors and textures are so captivating, and they spark my imagination in ways I never thought possible." - Emily, 36
+-   "As an artist, I find myself staring at this background for hours. The colors and textures are so Cap<wbr>ti<wbr>va<wbr>ting, and they spark my imagination in ways I never thought possible." - Emily, 36
 
 ## Resources
 
@@ -117,7 +117,7 @@ Our users come from all walks of life, but they share a love of adventure and ex
 
 - "The background on this website is amazing! It really sets the tone for my own writing and inspires me to keep exploring new ideas." - Sarah, 28
 - "I'm a gamer, and this background is perfect for me. It gets me in the mood for epic adventures and reminds me why I love sci-fi so much." - Alex, 22
-- "As an artist, I find myself staring at this background for hours. The colors and textures are so captivating, and they spark my imagination in ways I never thought possible." - Emily, 36
+- "As an artist, I find myself staring at this background for hours. The colors and textures are so Cap<wbr>ti<wbr>va<wbr>ting, and they spark my imagination in ways I never thought possible." - Emily, 36
 
 ## Resources
 

@@ -2,7 +2,7 @@
 
 # Jelly Close-Up
 
-Immerse yourself in the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This captivating image showcases the vibrant colors and intricate details of one of nature's most fascinating creatures.
+Immerse yourself in the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This Cap<wbr>ti<wbr>va<wbr>ting image showcases the vibrant colors and intricate details of one of nature's most Fas<wbr>ci<wbr>na<wbr>ting creatures.
 
 ## Download Instructions
 
@@ -34,7 +34,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Ocean Life Wallpaper
 
-Decorate your desktop or phone with this stunning close-up of a jellyfish in the ocean. This wallpaper captures the vibrant colors and intricate details of one of nature's most fascinating creatures.
+Decorate your desktop or phone with this stunning close-up of a jellyfish in the ocean. This wallpaper captures the vibrant colors and intricate details of one of nature's most Fas<wbr>ci<wbr>na<wbr>ting creatures.
 
 ## Download Instructions
 
@@ -62,7 +62,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of the Ocean
 
-Get a glimpse of the mesmerizing world beneath the waves with this stunning close-up of a jellyfish in its natural habitat. This captivating image captures the vibrant colors and intricate details of one of nature's most fascinating creatures.
+Get a glimpse of the mesmerizing world beneath the waves with this stunning close-up of a jellyfish in its natural habitat. This Cap<wbr>ti<wbr>va<wbr>ting image captures the vibrant colors and intricate details of one of nature's most Fas<wbr>ci<wbr>na<wbr>ting creatures.
 
 ## Download Instructions
 
@@ -92,7 +92,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Beauty of the Ocean with a Jellyfish Close-Up
 
-Experience the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This captivating image showcases the vibrant colors and intricate details of one of nature's most fascinating creatures.
+Experience the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This Cap<wbr>ti<wbr>va<wbr>ting image showcases the vibrant colors and intricate details of one of nature's most Fas<wbr>ci<wbr>na<wbr>ting creatures.
 
 ## Download Instructions
 
@@ -122,7 +122,7 @@ Heading is too long, rewrite whole content.
 
 # Dive into the Beauty of the Ocean with a Jellyfish Close-Up
 
-Immerse yourself in the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This captivating image showcases the vibrant colors and intricate details of one of nature's most fascinating creatures.
+Immerse yourself in the magic of the ocean with this stunning close-up of a jellyfish in its natural habitat. This Cap<wbr>ti<wbr>va<wbr>ting image showcases the vibrant colors and intricate details of one of nature's most Fas<wbr>ci<wbr>na<wbr>ting creatures.
 
 ## Download Instructions
 

@@ -20,13 +20,13 @@ Welcome to our website featuring a stunning underwater scene with coral and fish
 
 ## About the Wallpaper
 
-This wallpaper captures the vibrant colors and intricate details of an underwater world. The coral formations provide a natural habitat for various species of fish, creating a harmonious ecosystem that is both fascinating and serene.
+This wallpaper captures the vibrant colors and intricate details of an underwater world. The coral formations provide a natural habitat for various species of fish, creating a harmonious ecosystem that is both Fas<wbr>ci<wbr>na<wbr>ting and serene.
 
 ## Benefits of Using this Wallpaper
 
-- Relaxing: The calming blue hues and gentle movement of the fish can help reduce stress and anxiety.
-- Inspiring: The intricate details and vibrant colors of the wallpaper can spark creativity and imagination.
-- Customizable: The wallpaper can be adjusted to fit any screen size or resolution, making it perfect for personalizing your desktop or mobile device.
+-   Relaxing: The calming blue hues and gentle movement of the fish can help reduce stress and anxiety.
+-   Inspiring: The intricate details and vibrant colors of the wallpaper can spark creativity and imagination.
+-   Customizable: The wallpaper can be adjusted to fit any screen size or resolution, making it perfect for personalizing your desktop or mobile device.
 
 ## How to Download
 

@@ -20,7 +20,7 @@ To enhance your experience on our website, we offer a custom wallpaper featuring
 
 ## References and Resources
 
-For those who want to dive deeper into the science behind space exploration, we offer a comprehensive list of references and resources. These include books, documentaries, and websites that cover everything from astrophysics to rocket engineering.
+For those who want to dive deeper into the science behind space exploration, we offer a Com<wbr>pre<wbr>hen<wbr>sive list of references and resources. These include books, documentaries, and websites that cover everything from astrophysics to rocket engineering.
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ To enhance your experience on our website, we offer a custom wallpaper featuring
 
 ## References and Resources
 
-For those who want to dive deeper into the science behind space exploration, we offer a comprehensive list of references and resources. These include books, documentaries, and websites that cover everything from astrophysics to rocket engineering.
+For those who want to dive deeper into the science behind space exploration, we offer a Com<wbr>pre<wbr>hen<wbr>sive list of references and resources. These include books, documentaries, and websites that cover everything from astrophysics to rocket engineering.
 
 ## Contact Us
 

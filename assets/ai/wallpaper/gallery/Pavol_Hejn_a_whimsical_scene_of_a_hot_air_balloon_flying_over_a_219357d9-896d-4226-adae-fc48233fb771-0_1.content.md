@@ -40,7 +40,7 @@ Don't just take our word for it - check out these real-life user stories from pe
 
 If you're interested in taking a hot air balloon ride, here are some resources to help you plan your adventure:
 
--   [Hot Air Ballooning Guide](#) - A comprehensive guide to hot air ballooning, including safety tips, what to expect on your ride, and where to find hot air balloon festivals around the world.
+-   [Hot Air Ballooning Guide](#) - A Com<wbr>pre<wbr>hen<wbr>sive guide to hot air ballooning, including safety tips, what to expect on your ride, and where to find hot air balloon festivals around the world.
 -   [Hot Air Balloon Rides Near Me](#) - Use this handy tool to find hot air balloon rides in your area.
 -   [Hot Air Balloon Photography Tips](#) - If you're a photography enthusiast, check out these tips for capturing stunning photos from your hot air balloon ride.
 

@@ -2,7 +2,7 @@
 
 # Explore Space Online
 
-Welcome to our space-themed website, where you can explore the wonders of the universe from the comfort of your own home. Our website features a captivating photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning visual representation of the beauty and mystery of space.
+Welcome to our space-themed website, where you can explore the wonders of the universe from the comfort of your own home. Our website features a Cap<wbr>ti<wbr>va<wbr>ting photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning visual representation of the beauty and mystery of space.
 
 ## Why Explore Space on Our Website?
 
@@ -10,10 +10,10 @@ Our website is the perfect place to start your journey into the cosmos. Whether 
 
 ## Features of Our Space-Themed Website
 
-- Engaging content: Our website features articles, videos, and interactive resources that make learning about space fun and engaging.
-- Expert contributors: Our team of expert writers and contributors includes scientists, educators, and enthusiasts who are passionate about sharing their knowledge and insights.
-- Community forums: Our website also includes community forums where you can connect with other space enthusiasts, ask questions, and share your own experiences and insights.
-- Shop: We offer a range of space-themed products including posters, t-shirts, and other merchandise to help you show off your love for space.
+-   Engaging content: Our website features articles, videos, and interactive resources that make learning about space fun and engaging.
+-   Expert contributors: Our team of expert writers and contributors includes scientists, educators, and enthusiasts who are passionate about sharing their knowledge and insights.
+-   Community forums: Our website also includes community forums where you can connect with other space enthusiasts, ask questions, and share your own experiences and insights.
+-   Shop: We offer a range of space-themed products including posters, t-shirts, and other merchandise to help you show off your love for space.
 
 ## User Stories
 
@@ -29,9 +29,9 @@ For more information about our space-themed website or to browse our selection o
 
 Follow us on social media to stay up-to-date with the latest news and updates from the world of space:
 
-- Facebook: [#spacetheme](#)
-- Instagram: [@spacetheme](#)
-- Twitter: [@spacetheme](#)
+-   Facebook: [#spacetheme](#)
+-   Instagram: [@spacetheme](#)
+-   Twitter: [@spacetheme](#)
 
 ## Conclusion
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ Our customers love our space-themed wallpaper! Here are just a few examples of h
 
 ## References
 
-For more information about our space-themed wallpaper or to place an order, please contact us at [info@spacetheme.com](#contact) or visit our website at [www.spacetheme.com](#home). 
+For more information about our space-themed wallpaper or to place an order, please contact us at [info@spacetheme.com](#contact) or visit our website at [www.spacetheme.com](#home).
 
 Follow us on social media to stay up-to-date with our latest products and promotions:
 
@@ -111,7 +111,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of Space with Our Space-Themed Website
 
-Welcome to our space-themed website, where you can explore the beauty and mystery of the universe from the comfort of your own home. Our website features a stunning photograph of an astronaut standing on the surface of the moon with Earth in the background as a captivating background for your browsing experience.
+Welcome to our space-themed website, where you can explore the beauty and mystery of the universe from the comfort of your own home. Our website features a stunning photograph of an astronaut standing on the surface of the moon with Earth in the background as a Cap<wbr>ti<wbr>va<wbr>ting background for your browsing experience.
 
 ## Why Explore Space on Our Website?
 
@@ -158,7 +158,7 @@ Heading is too long, rewrite whole content.
 
 # Discover Space: Explore the Wonders of the Universe on Our Website
 
-Welcome to our space-themed website, where you can discover the beauty and mystery of the universe from the comfort of your own home. Our website features a captivating photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning backdrop for your browsing experience.
+Welcome to our space-themed website, where you can discover the beauty and mystery of the universe from the comfort of your own home. Our website features a Cap<wbr>ti<wbr>va<wbr>ting photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning backdrop for your browsing experience.
 
 ## Why Explore Space on Our Website?
 
@@ -205,7 +205,7 @@ Heading is too long, rewrite whole content.
 
 # Explore the Universe on Our Space-Themed Website
 
-Welcome to our space-themed website, where you can explore the wonders of the universe from the comfort of your own home. Our website features a captivating photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning visual representation of the beauty and mystery of space.
+Welcome to our space-themed website, where you can explore the wonders of the universe from the comfort of your own home. Our website features a Cap<wbr>ti<wbr>va<wbr>ting photograph of an astronaut standing on the surface of the moon with Earth in the background as a stunning visual representation of the beauty and mystery of space.
 
 ## Why Explore Space on Our Website?
 

@@ -5,9 +5,11 @@
 Welcome to our website featuring a vintage space background that will take you on a journey through the mysteries of the universe. Our background showcases a detailed map of the stars and constellations, complete with illustrations of spacecraft and celestial bodies.
 
 ## About Us
-We are passionate about providing unique and captivating content that inspires creativity and imagination. Our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
+
+We are passionate about providing unique and Cap<wbr>ti<wbr>va<wbr>ting content that inspires creativity and imagination. Our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
 
 ## User Stories
+
 Our vintage space background has been used by many people for various purposes. Here are some of the stories shared by our users:
 
 > "I'm a science enthusiast, and I love using this background as my computer wallpaper. It's beautiful and informative at the same time." - John, 29
@@ -15,6 +17,7 @@ Our vintage space background has been used by many people for various purposes. 
 > "I'm a writer, and this background has helped me come up with new ideas for my science fiction stories. It's like having a window into outer space!" - Sarah, 33
 
 ## References
+
 We take pride in the quality of our background and ensure that it meets the highest standards. Here are some of the references that we have received from our satisfied customers:
 
 > "The vintage space background is stunning! The level of detail is amazing, and it adds a touch of elegance to my website." - David, 42
@@ -22,11 +25,12 @@ We take pride in the quality of our background and ensure that it meets the high
 > "I've been looking for a unique background for my YouTube channel, and I finally found it here. The vintage space background is perfect for my science-related videos." - Rachel, 24
 
 ## Contact Us
+
 If you have any questions or feedback, please don't hesitate to contact us. You can reach us through the following channels:
 
-- Email: [info@ourwebsite.com](#)
-- Phone: +1 (555) 123-4567
-- Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
+-   Email: [info@ourwebsite.com](#)
+-   Phone: +1 (555) 123-4567
+-   Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
 
 Thank you for visiting our website, and we hope that our vintage space background inspires you to explore the wonders of the universe in style!
 
@@ -38,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -60,7 +64,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 Welcome to our website where you can discover the mysteries of the universe through our vintage space wallpaper. Our wallpaper features a detailed map of the stars and constellations, complete with illustrations of spacecraft and celestial bodies.
 
 ## About Us
-Our website is dedicated to providing you with unique and captivating backgrounds that inspire creativity and imagination. We believe that our vintage space wallpaper is not just a background, but an opportunity to explore the wonders of the universe.
+Our website is dedicated to providing you with unique and Cap<wbr>ti<wbr>va<wbr>ting backgrounds that inspire creativity and imagination. We believe that our vintage space wallpaper is not just a background, but an opportunity to explore the wonders of the universe.
 
 ## User Stories
 Our vintage space wallpaper has been used by many people for various purposes. Here are some of the stories shared by our users:
@@ -100,7 +104,7 @@ Heading should not include word "wallpaper". The website should not be about the
 Welcome to our website where you can explore the mysteries of the universe through our vintage space background. Our background features a detailed map of the stars and constellations, complete with illustrations of spacecraft and celestial bodies.
 
 ## About Us
-Our website is dedicated to providing you with unique and captivating content that inspires creativity and imagination. We believe that our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
+Our website is dedicated to providing you with unique and Cap<wbr>ti<wbr>va<wbr>ting content that inspires creativity and imagination. We believe that our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
 
 ## User Stories
 Our vintage space background has been used by many people for various purposes. Here are some of the stories shared by our users:
@@ -140,7 +144,7 @@ Heading is too long, rewrite whole content.
 Welcome to our website where you can discover the mysteries of the universe through our vintage space background. Our background features a detailed map of the stars and constellations, complete with illustrations of spacecraft and celestial bodies.
 
 ## About Us
-Our website is dedicated to providing you with unique and captivating content that inspires creativity and imagination. We believe that our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
+Our website is dedicated to providing you with unique and Cap<wbr>ti<wbr>va<wbr>ting content that inspires creativity and imagination. We believe that our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
 
 ## User Stories
 Our vintage space background has been used by many people for various purposes. Here are some of the stories shared by our users:
@@ -180,7 +184,7 @@ Heading is too long, rewrite whole content.
 Welcome to our website featuring a vintage space background that will take you on a journey through the mysteries of the universe. Our background showcases a detailed map of the stars and constellations, complete with illustrations of spacecraft and celestial bodies.
 
 ## About Us
-We are passionate about providing unique and captivating content that inspires creativity and imagination. Our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
+We are passionate about providing unique and Cap<wbr>ti<wbr>va<wbr>ting content that inspires creativity and imagination. Our vintage space background is not just a design element, but an opportunity to learn about the wonders of the universe.
 
 ## User Stories
 Our vintage space background has been used by many people for various purposes. Here are some of the stories shared by our users:

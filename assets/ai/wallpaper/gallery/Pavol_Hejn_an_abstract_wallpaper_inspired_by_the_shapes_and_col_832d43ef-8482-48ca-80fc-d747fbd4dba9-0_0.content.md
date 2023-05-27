@@ -6,14 +6,14 @@ Welcome to our collection of abstract designs inspired by the shapes and colors 
 
 ## About the Design
 
-Our Quantum Inspired Design is a nod to the fascinating world of quantum physics. The intricate lines and bold colors represent the complex nature of the subatomic world, where particles are constantly moving and interacting with each other in unpredictable ways. This design is perfect for those who appreciate the beauty of science and want to incorporate it into their home or office decor.
+Our Quantum Inspired Design is a nod to the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The intricate lines and bold colors represent the complex nature of the subatomic world, where particles are constantly moving and interacting with each other in unpredictable ways. This design is perfect for those who appreciate the beauty of science and want to incorporate it into their home or office decor.
 
 ## Features
 
-- High-quality digital print
-- Available in various sizes to fit your needs
-- Easy to install and remove without damaging walls
-- Made with eco-friendly materials
+-   High-quality digital print
+-   Available in various sizes to fit your needs
+-   Easy to install and remove without damaging walls
+-   Made with eco-friendly materials
 
 ## How to Order
 
@@ -41,7 +41,7 @@ Welcome to our collection of abstract wallpapers inspired by the shapes and colo
 
 ## About the Design
 
-Our Quantum Wallpaper design is inspired by the fascinating world of quantum physics. The intricate lines and bold colors represent the complex nature of the subatomic world, where particles are constantly moving and interacting with each other in unpredictable ways.
+Our Quantum Wallpaper design is inspired by the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The intricate lines and bold colors represent the complex nature of the subatomic world, where particles are constantly moving and interacting with each other in unpredictable ways.
 
 ## Features
 
@@ -74,7 +74,7 @@ Welcome to our collection of abstract designs inspired by the shapes and colors 
 
 ## About the Design
 
-Our Quantum Inspired Design is a nod to the fascinating world of quantum physics. The intricate lines and bold colors represent the complex nature of the subatomic world, where particles are constantly moving and interacting with each other in unpredictable ways. This design is perfect for those who appreciate the beauty of science and want to incorporate it into their home or office decor.
+Our Quantum Inspired Design is a nod to the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The intricate lines and bold colors represent the complex nature of the subatomic world, where particles are constantly moving and interacting with each other in unpredictable ways. This design is perfect for those who appreciate the beauty of science and want to incorporate it into their home or office decor.
 
 ## Features
 

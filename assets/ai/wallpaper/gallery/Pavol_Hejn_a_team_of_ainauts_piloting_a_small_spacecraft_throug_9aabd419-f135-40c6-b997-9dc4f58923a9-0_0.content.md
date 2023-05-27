@@ -2,7 +2,7 @@
 
 # Space Adventure Hub
 
-Welcome to our space adventure hub, where you can find inspiration and resources for your next intergalactic journey. Our website features stunning imagery and informative articles about space exploration, including this captivating image of a team of Ainautes piloting a small spacecraft through a dangerous asteroid field.
+Welcome to our space adventure hub, where you can find inspiration and resources for your next intergalactic journey. Our website features stunning imagery and informative articles about space exploration, including this Cap<wbr>ti<wbr>va<wbr>ting image of a team of Ainautes piloting a small spacecraft through a dangerous asteroid field.
 
 ## About Us
 
@@ -12,10 +12,10 @@ We are a group of space enthusiasts who believe that the wonders of the universe
 
 Our website offers a wealth of resources for anyone interested in space exploration. From informative articles on the latest space missions to stunning imagery of galaxies and nebulae, we have something for everyone. Here are just a few of the resources available on our site:
 
-- **News and Updates:** Stay up-to-date with the latest news and discoveries in space exploration, from NASA's latest Mars rover mission to SpaceX's ambitious plans for interplanetary travel.
-- **Image Galleries:** Browse our collection of stunning images of space, including galaxies, nebulae, and iconic moments in space exploration history.
-- **Educational Resources:** Learn more about the science behind space exploration with our collection of educational resources, including videos, infographics, and interactive tools.
-- **Community Forums:** Connect with other space enthusiasts and share your thoughts and ideas about space exploration in our community forums.
+-   **News and Updates:** Stay up-to-date with the latest news and discoveries in space exploration, from NASA's latest Mars rover mission to SpaceX's ambitious plans for interplanetary travel.
+-   **Image Galleries:** Browse our collection of stunning images of space, including galaxies, nebulae, and iconic moments in space exploration history.
+-   **Educational Resources:** Learn more about the science behind space exploration with our collection of educational resources, including videos, infographics, and interactive tools.
+-   **Community Forums:** Connect with other space enthusiasts and share your thoughts and ideas about space exploration in our community forums.
 
 ## User Stories
 
@@ -29,9 +29,9 @@ If you have any questions or comments about our website, please don't hesitate t
 
 ## References
 
-- [NASA](https://www.nasa.gov/)
-- [European Space Agency](https://www.esa.int/ESA)
-- [SpaceX](https://www.spacex.com/) 
+-   [NASA](https://www.nasa.gov/)
+-   [European Space Agency](https://www.esa.int/ESA)
+-   [SpaceX](https://www.spacex.com/)
 
 ---
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -88,7 +88,7 @@ If you have any questions or comments about our collection of space adventure wa
 
 - [NASA Image and Video Library](https://images.nasa.gov/)
 - [European Space Agency - Space in Images](https://www.esa.int/ESA_Multimedia/Images)
-- [Hubble Space Telescope Images](https://www.spacetelescope.org/images/archive/) 
+- [Hubble Space Telescope Images](https://www.spacetelescope.org/images/archive/)
 
 ---
 
@@ -106,7 +106,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Space Adventure Hub
 
-Welcome to our space adventure hub, where you can find inspiration and resources for your next intergalactic journey. Our website features stunning imagery and informative articles about space exploration, including this captivating image of a team of Ainautes piloting a small spacecraft through a dangerous asteroid field.
+Welcome to our space adventure hub, where you can find inspiration and resources for your next intergalactic journey. Our website features stunning imagery and informative articles about space exploration, including this Cap<wbr>ti<wbr>va<wbr>ting image of a team of Ainautes piloting a small spacecraft through a dangerous asteroid field.
 
 ## About Us
 
@@ -135,7 +135,7 @@ If you have any questions or comments about our website, please don't hesitate t
 
 - [NASA](https://www.nasa.gov/)
 - [European Space Agency](https://www.esa.int/ESA)
-- [SpaceX](https://www.spacex.com/) 
+- [SpaceX](https://www.spacex.com/)
 
 ---
 

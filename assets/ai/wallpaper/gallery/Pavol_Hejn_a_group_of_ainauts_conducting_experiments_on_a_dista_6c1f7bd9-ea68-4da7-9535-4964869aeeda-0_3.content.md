@@ -28,7 +28,7 @@ Our mission is to push the boundaries of AI and unlock its full potential. We be
 
 ## Our Approach
 
-At our core, we believe in collaboration and open communication. We work closely with other researchers and organizations to share knowledge and advance the field as a whole. By fostering a culture of creativity and innovation, we are able to tackle some of the most complex challenges facing humanity today.
+At our core, we believe in collaboration and open Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion. We work closely with other researchers and organizations to share knowledge and advance the field as a whole. By fostering a culture of creativity and innovation, we are able to tackle some of the most complex challenges facing humanity today.
 
 > "The universe is full of possibilities, and we are here to explore them." - Ainautes Team
 

@@ -24,9 +24,9 @@ Here's what some of our community members have to say about our butterfly and fl
 
 If you're interested in learning more about environmental issues and conservation efforts, we recommend checking out some of these resources:
 
-- [The Nature Conservancy](#)
-- [National Geographic Society](#)
-- [World Wildlife Fund](#)
+-   [The Nature Conservancy](#)
+-   [National Geographic Society](#)
+-   [World Wildlife Fund](#)
 
 ## Contact Us
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -75,7 +75,7 @@ In addition to our butterfly garden wallpaper, we offer a wide range of other na
 
 Don't just take our word for it - hear what our users have to say about our butterfly garden wallpaper:
 
-> "I love this wallpaper! It's so peaceful and calming. Every time I look at it, I feel like I'm transported to a beautiful garden filled with butterflies and flowers." - Emily
+> "I love this wallpaper! It's so peaceful and calming. Every time I look at it, I feel like I'm transported to a beautiful garden filled with But<wbr>ter<wbr>flies and flowers." - Emily
 
 > "This wallpaper is simply breathtaking. The colors are so vibrant and the detail is incredible. It's like having a piece of nature right on my desktop." - John
 

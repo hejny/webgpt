@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Galactic Volcanoes
 
-Welcome to Galactic Volcanoes, your ultimate source for all things volcanic in the galaxy. 
+Welcome to Galactic Volcanoes, your ultimate source for all things volcanic in the galaxy.
 
 ---
 
@@ -26,7 +26,7 @@ Welcome to Galactic Volcanoes, your ultimate source for all things volcanic in t
 
 ---
 
-At Galactic Volcanoes, we bring you stunning visuals of the most awe-inspiring volcanic landscapes across the universe. Our wallpaper collection features some of the most captivating images of volcanic activity on planets, moons, and asteroids.
+At Galactic Volcanoes, we bring you stunning visuals of the most awe-inspiring volcanic landscapes across the universe. Our wallpaper collection features some of the most Cap<wbr>ti<wbr>va<wbr>ting images of volcanic activity on planets, moons, and asteroids.
 
 The current wallpaper showcases a lava flow on a volcanic planet. The fiery red and orange hues evoke a sense of danger and excitement, reminding us of the raw power of nature.
 
@@ -36,4 +36,4 @@ The current wallpaper showcases a lava flow on a volcanic planet. The fiery red 
 
 ---
 
-Stay tuned for more updates on the latest volcanic activity in the galaxy and join us in exploring the fascinating world of galactic volcanoes.
+Stay tuned for more updates on the latest volcanic activity in the galaxy and join us in exploring the Fas<wbr>ci<wbr>na<wbr>ting world of galactic volcanoes.

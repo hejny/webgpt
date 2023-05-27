@@ -60,4 +60,4 @@ If you have any questions or comments about our website, please feel free to con
 
 ---
 
-Thank you for visiting our website dedicated to exploring the mysteries of Mars. We hope that our wallpaper and content inspire you to learn more about this fascinating planet and the universe beyond.
+Thank you for visiting our website dedicated to exploring the mysteries of Mars. We hope that our wallpaper and content inspire you to learn more about this Fas<wbr>ci<wbr>na<wbr>ting planet and the universe beyond.

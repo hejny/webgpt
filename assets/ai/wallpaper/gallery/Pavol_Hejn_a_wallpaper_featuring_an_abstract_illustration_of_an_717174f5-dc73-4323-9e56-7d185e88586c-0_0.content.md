@@ -10,11 +10,11 @@ An AI-powered search engine is a search engine that uses artificial intelligence
 
 ## Benefits of Using an AI-Powered Search Engine
 
-- More accurate and relevant search results
-- Faster search times
-- Personalized search experience
-- Better understanding of user intent
-- Improved natural language processing
+-   More accurate and relevant search results
+-   Faster search times
+-   Personalized search experience
+-   Better understanding of user intent
+-   Improved natural language processing
 
 ## User Stories
 
@@ -28,13 +28,13 @@ Our users have reported significant improvements in their search experience sinc
 
 For more information on AI-powered search engines, check out these resources:
 
-- [How AI Is Changing the Way We Search for Content](#)
-- [The Future of Search: How AI Is Transforming the Way We Find Information](#)
-- [AI-Powered Search Engines: A Comprehensive Guide](#)
+-   [How AI Is Changing the Way We Search for Content](#)
+-   [The Future of Search: How AI Is Transforming the Way We Find Information](#)
+-   [AI-Powered Search Engines: A Com<wbr>pre<wbr>hen<wbr>sive Guide](#)
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @_ai_search.
+Have questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @\_ai_search.
 
 <!--
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ For more information on AI-powered search engines, check out these resources:
 
 - [How AI Is Changing the Way We Search for Content](#)
 - [The Future of Search: How AI Is Transforming the Way We Find Information](#)
-- [AI-Powered Search Engines: A Comprehensive Guide](#)
+- [AI-Powered Search Engines: A Com<wbr>pre<wbr>hen<wbr>sive Guide](#)
 
 ## Contact Us
 

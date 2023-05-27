@@ -6,9 +6,9 @@ Welcome to our website where you can discover the beauty and mystery of the nigh
 
 ## Features
 
-- High-quality resolution for all screen sizes
-- Optimized for desktop use
-- Free to download and use as your desktop background
+-   High-quality resolution for all screen sizes
+-   Optimized for desktop use
+-   Free to download and use as your desktop background
 
 ## How to Download
 
@@ -18,7 +18,7 @@ To download our beautiful night sky background, simply click on the link below a
 
 ## User Stories
 
-Our users love the captivating beauty of our night sky background. Here are some stories from satisfied users:
+Our users love the Cap<wbr>ti<wbr>va<wbr>ting beauty of our night sky background. Here are some stories from satisfied users:
 
 > "This background is amazing! It's like having a piece of the universe on my computer screen. It inspires me every time I look at it." - Sarah, Graphic Designer
 
@@ -28,9 +28,9 @@ Our users love the captivating beauty of our night sky background. Here are some
 
 If you're interested in learning more about astronomy and the wonders of the night sky, check out these resources:
 
-- [NASA Astronomy Picture of the Day](#)
-- [Sky & Telescope Magazine](#)
-- [American Astronomical Society](#)
+-   [NASA Astronomy Picture of the Day](#)
+-   [Sky & Telescope Magazine](#)
+-   [American Astronomical Society](#)
 
 ## Contact Us
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -141,7 +141,7 @@ To download our beautiful night sky background, simply click on the link below a
 
 ## User Stories
 
-Our users love the captivating beauty of our night sky background. Here are some stories from satisfied users:
+Our users love the Cap<wbr>ti<wbr>va<wbr>ting beauty of our night sky background. Here are some stories from satisfied users:
 
 > "This background is amazing! It's like having a piece of the universe on my computer screen. It inspires me every time I look at it." - Sarah, Graphic Designer
 

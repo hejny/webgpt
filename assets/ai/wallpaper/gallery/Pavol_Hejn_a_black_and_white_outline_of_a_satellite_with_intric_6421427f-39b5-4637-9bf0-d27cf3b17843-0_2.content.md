@@ -6,16 +6,16 @@ Welcome to our website dedicated to space exploration! Our mission is to inspire
 
 ## The Satellite Background: A Symbol of Human Ingenuity
 
-Our satellite background captures the essence of what makes space exploration so captivating - the incredible feats of engineering and innovation required to make it happen. The design highlights the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
+Our satellite background captures the essence of what makes space exploration so Cap<wbr>ti<wbr>va<wbr>ting - the incredible feats of engineering and innovation required to make it happen. The design highlights the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
 
 ## Dive into the World of Space Exploration
 
 At our website, you can explore the universe through a variety of resources and features, including:
 
-- **News and Updates:** Stay up-to-date on the latest developments in space exploration, from new discoveries to upcoming missions.
-- **User Stories:** Read inspiring stories from people around the world who are passionate about space exploration and its potential to change our understanding of the universe.
-- **Educational Resources:** Learn more about the science behind space exploration and the technologies that make it possible through our articles and videos.
-- **References and Glossary:** Explore our extensive database of references and glossary of key terms to deepen your knowledge of space exploration.
+-   **News and Updates:** Stay up-to-date on the latest developments in space exploration, from new discoveries to upcoming missions.
+-   **User Stories:** Read inspiring stories from people around the world who are passionate about space exploration and its potential to change our understanding of the universe.
+-   **Educational Resources:** Learn more about the science behind space exploration and the technologies that make it possible through our articles and videos.
+-   **References and Glossary:** Explore our extensive database of references and glossary of key terms to deepen your knowledge of space exploration.
 
 ## Contact Us
 
@@ -31,10 +31,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -54,7 +54,7 @@ Welcome to our website dedicated to all things space exploration! Our mission is
 
 ## The Satellite Wallpaper: A Symbol of Human Ingenuity
 
-Our satellite wallpaper captures the essence of what makes space exploration so captivating - the incredible feats of engineering and innovation required to make it happen. The intricate details showcased in the design highlight the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
+Our satellite wallpaper captures the essence of what makes space exploration so Cap<wbr>ti<wbr>va<wbr>ting - the incredible feats of engineering and innovation required to make it happen. The intricate details showcased in the design highlight the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
 
 ## Explore the Universe with Us
 
@@ -87,7 +87,7 @@ Welcome to our website dedicated to all things space exploration! Our mission is
 
 ## The Satellite Background: A Symbol of Human Ingenuity
 
-Our satellite background captures the essence of what makes space exploration so captivating - the incredible feats of engineering and innovation required to make it happen. The intricate details showcased in the design highlight the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
+Our satellite background captures the essence of what makes space exploration so Cap<wbr>ti<wbr>va<wbr>ting - the incredible feats of engineering and innovation required to make it happen. The intricate details showcased in the design highlight the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
 
 ## Explore the Universe with Us
 
@@ -120,7 +120,7 @@ Welcome to our website dedicated to all things space exploration! Our mission is
 
 ## The Satellite Background: A Symbol of Human Ingenuity
 
-Our satellite background captures the essence of what makes space exploration so captivating - the incredible feats of engineering and innovation required to make it happen. The design highlights the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
+Our satellite background captures the essence of what makes space exploration so Cap<wbr>ti<wbr>va<wbr>ting - the incredible feats of engineering and innovation required to make it happen. The design highlights the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
 
 ## Explore the Universe with Us
 
@@ -153,7 +153,7 @@ Welcome to our website dedicated to space exploration! Our mission is to inspire
 
 ## The Satellite Background: A Symbol of Human Ingenuity
 
-Our satellite background captures the essence of what makes space exploration so captivating - the incredible feats of engineering and innovation required to make it happen. The design highlights the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
+Our satellite background captures the essence of what makes space exploration so Cap<wbr>ti<wbr>va<wbr>ting - the incredible feats of engineering and innovation required to make it happen. The design highlights the technical components and purpose of the satellite, reminding us of the remarkable achievements of human ingenuity.
 
 ## Dive into the World of Space Exploration
 

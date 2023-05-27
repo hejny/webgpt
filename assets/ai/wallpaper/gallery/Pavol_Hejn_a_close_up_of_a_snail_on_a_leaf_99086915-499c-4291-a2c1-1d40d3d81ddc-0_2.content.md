@@ -12,9 +12,9 @@ Our snail background is a subtle yet elegant addition to any workspace. The clos
 
 Incorporating our snail background into your workspace is easy and effortless. Here are some ideas to get you started:
 
-- Use it as your desktop wallpaper to create a peaceful backdrop for your work.
-- Print it out and frame it for a beautiful piece of wall art.
-- Use it as inspiration for your color palette and choose complementary shades for your decor.
+-   Use it as your desktop wallpaper to create a peaceful backdrop for your work.
+-   Print it out and frame it for a beautiful piece of wall art.
+-   Use it as inspiration for your color palette and choose Com<wbr>ple<wbr>men<wbr>ta<wbr>ry shades for your decor.
 
 For more ideas on how to incorporate nature-inspired decor into your workspace, check out our [blog post](#blog-post).
 
@@ -32,9 +32,9 @@ If you have any questions about our products or services, please don't hesitate 
 
 ## References
 
-- [Blog Post](#blog-post)
-- [Customer Reviews](#customer-reviews)
-- [Contact Us](#contact-us)
+-   [Blog Post](#blog-post)
+-   [Customer Reviews](#customer-reviews)
+-   [Contact Us](#contact-us)
 
 <!--
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -123,7 +123,7 @@ Incorporating our snail background into your workspace is easy and effortless. H
 
 - Use it as your desktop wallpaper to create a peaceful backdrop for your work.
 - Print it out and frame it for a beautiful piece of wall art.
-- Use it as inspiration for your color palette and choose complementary shades for your decor.
+- Use it as inspiration for your color palette and choose Com<wbr>ple<wbr>men<wbr>ta<wbr>ry shades for your decor.
 
 For more ideas on how to incorporate nature-inspired decor into your workspace, check out our [blog post](#blog-post).
 

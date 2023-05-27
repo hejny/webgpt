@@ -10,16 +10,16 @@ Our website offers a wealth of resources for space enthusiasts of all levels. Fr
 
 ### User Stories
 
-- "I love exploring the universe through this website. It's like having a virtual telescope!" - Alex, 32
-- "As an astronomy student, I find the articles and videos on this website incredibly informative and engaging." - Maria, 19
+-   "I love exploring the universe through this website. It's like having a virtual telescope!" - Alex, 32
+-   "As an astronomy student, I find the articles and videos on this website incredibly informative and engaging." - Maria, 19
 
 ## References
 
 For those who want to dive deeper into the world of space exploration, we have compiled a list of references that we think you will find useful:
 
-- [NASA](#nasa)
-- [SpaceX](#spacex)
-- [European Space Agency](#esa)
+-   [NASA](#nasa)
+-   [SpaceX](#spacex)
+-   [European Space Agency](#esa)
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -62,11 +62,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Odyssey Wallpaper
 
-Welcome to our website dedicated to exploring the wonders of space! Our Space Odyssey Wallpaper is the perfect background for anyone who loves to gaze at the stars and dream of what lies beyond our planet. 
+Welcome to our website dedicated to exploring the wonders of space! Our Space Odyssey Wallpaper is the perfect background for anyone who loves to gaze at the stars and dream of what lies beyond our planet.
 
 ## About the Wallpaper
 
-Our wallpaper features a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. The vibrant colors and intricate details make this wallpaper truly unique and captivating.
+Our wallpaper features a stunning digital painting of a lone astronaut standing on the edge of a crater, gazing out at the endless expanse of space. The vibrant colors and intricate details make this wallpaper truly unique and Cap<wbr>ti<wbr>va<wbr>ting.
 
 ## Explore the Universe
 

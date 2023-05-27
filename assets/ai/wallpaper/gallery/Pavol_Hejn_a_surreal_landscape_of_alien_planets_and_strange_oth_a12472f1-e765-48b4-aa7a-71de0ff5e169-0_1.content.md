@@ -12,23 +12,23 @@ We are a community of space enthusiasts dedicated to exploring the unknown and d
 
 Our users have shared their experiences with our website:
 
-- "I love visiting this website when I need a break from reality. The images and information are so fascinating and take me to another world." - Rachel
-- "This website is my go-to for inspiration when I'm working on my sci-fi art. The creativity and detail in the images are incredible." - Max
+-   "I love visiting this website when I need a break from reality. The images and information are so Fas<wbr>ci<wbr>na<wbr>ting and take me to another world." - Rachel
+-   "This website is my go-to for inspiration when I'm working on my sci-fi art. The creativity and detail in the images are incredible." - Max
 
 ## Resources
 
 If you're interested in learning more about space and the mysteries of the universe, check out our list of recommended resources:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Universe Today](#universetoday)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Universe Today](#universetoday)
 
 ## Contact Us
 
 If you have any questions or feedback, please don't hesitate to reach out to us:
 
-- Email: [contact@ourwebsite.com](mailto:contact@ourwebsite.com)
-- Phone: 555-1234
+-   Email: [contact@ourwebsite.com](mailto:contact@ourwebsite.com)
+-   Phone: 555-1234
 
 Explore the wonders of our otherworldly planets and creatures and let your imagination take flight!
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +71,7 @@ Our users have shared their experiences with our background, and we're excited t
 
 > "I love using this background when I'm working on my sci-fi novel. It really helps me get in the zone and imagine new worlds." - Jane
 
-> "This wallpaper is perfect for my desktop. It's so captivating that I often find myself lost in thought, daydreaming about what could be out there." - Mark
+> "This wallpaper is perfect for my desktop. It's so Cap<wbr>ti<wbr>va<wbr>ting that I often find myself lost in thought, daydreaming about what could be out there." - Mark
 
 ## Resources
 
@@ -112,7 +112,7 @@ We are a community of space enthusiasts who share a passion for exploring the un
 
 Our users have shared their experiences with our background:
 
-- "This wallpaper is perfect for my desktop. It's so captivating that I often find myself lost in thought, daydreaming about what could be out there." - Mark
+- "This wallpaper is perfect for my desktop. It's so Cap<wbr>ti<wbr>va<wbr>ting that I often find myself lost in thought, daydreaming about what could be out there." - Mark
 - "I love using this background when I'm working on my sci-fi novel. It really helps me get in the zone and imagine new worlds." - Jane
 
 ## Resources
@@ -144,7 +144,7 @@ Heading is too long, rewrite whole content.
 
 # Discover Our Alien Planet Wallpaper
 
-Welcome to our website, where you can discover a surreal landscape of alien planets and strange, otherworldly creatures through our mesmerizing wallpaper. 
+Welcome to our website, where you can discover a surreal landscape of alien planets and strange, otherworldly creatures through our mesmerizing wallpaper.
 
 ## About Us
 
@@ -196,7 +196,7 @@ We are a community of space enthusiasts dedicated to exploring the unknown and d
 
 Our users have shared their experiences with our website:
 
-- "I love visiting this website when I need a break from reality. The images and information are so fascinating and take me to another world." - Rachel
+- "I love visiting this website when I need a break from reality. The images and information are so Fas<wbr>ci<wbr>na<wbr>ting and take me to another world." - Rachel
 - "This website is my go-to for inspiration when I'm working on my sci-fi art. The creativity and detail in the images are incredible." - Max
 
 ## Resources

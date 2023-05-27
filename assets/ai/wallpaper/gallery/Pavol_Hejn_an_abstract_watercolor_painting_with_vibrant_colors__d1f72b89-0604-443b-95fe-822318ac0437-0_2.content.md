@@ -26,7 +26,7 @@ Welcome to our art and design blog, where we showcase beautiful and inspiring wo
 
 This stunning piece features vibrant colors and bold brushstrokes that create a sense of movement and energy. The artist has used a variety of techniques to achieve this effect, including layering and blending colors, as well as using different brush sizes and shapes.
 
-The overall result is a dynamic and captivating work of art that would make a great addition to any home or office space. Whether you're an art lover or simply looking for some inspiration for your next design project, this painting is sure to spark your creativity.
+The overall result is a dynamic and Cap<wbr>ti<wbr>va<wbr>ting work of art that would make a great addition to any home or office space. Whether you're an art lover or simply looking for some inspiration for your next design project, this painting is sure to spark your creativity.
 
 ## User Stories
 

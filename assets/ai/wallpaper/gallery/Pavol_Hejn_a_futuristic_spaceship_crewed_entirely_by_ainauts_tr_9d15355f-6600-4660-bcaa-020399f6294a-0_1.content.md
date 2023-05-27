@@ -10,24 +10,24 @@ We are a team of passionate space enthusiasts who believe that the future of hum
 
 ## Our Collection
 
-Our collection features captivating images of spacecrafts designed by some of the most talented artists in the industry. Each background captures the beauty and mystery of space travel, inviting you to join us on an epic journey of discovery.
+Our collection features Cap<wbr>ti<wbr>va<wbr>ting images of spacecrafts designed by some of the most talented artists in the industry. Each background captures the beauty and mystery of space travel, inviting you to join us on an epic journey of discovery.
 
 ## User Stories
 
 We love hearing from our users and how our backgrounds have inspired them. Here are some of our favorite user stories:
 
-- "I've always been fascinated by space, but these backgrounds take my imagination to a whole new level. They make me feel like I'm part of the crew, exploring the unknown reaches of the universe." - John D.
-- "As a science teacher, I use these backgrounds to spark my students' interest in astronomy. They love imagining what it would be like to travel through space on a ship like this." - Sarah K.
-- "I work in a boring office, but every time I look at my desktop background, I'm transported to another world. It's a great way to escape reality for a few minutes." - Mike S.
+-   "I've always been fascinated by space, but these backgrounds take my imagination to a whole new level. They make me feel like I'm part of the crew, exploring the unknown reaches of the universe." - John D.
+-   "As a science teacher, I use these backgrounds to spark my students' interest in astronomy. They love imagining what it would be like to travel through space on a ship like this." - Sarah K.
+-   "I work in a boring office, but every time I look at my desktop background, I'm transported to another world. It's a great way to escape reality for a few minutes." - Mike S.
 
 ## Resources
 
 If you want to learn more about space exploration and the latest discoveries, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
-- [Space.com](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
+-   [Space.com](#)
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -115,7 +115,7 @@ We are a team of passionate space enthusiasts who believe that the future of hum
 
 ## Our Collection
 
-Our collection features captivating images of spacecrafts designed by some of the most talented artists in the industry. Each background captures the beauty and mystery of space travel, inviting you to join us on an epic journey of discovery.
+Our collection features Cap<wbr>ti<wbr>va<wbr>ting images of spacecrafts designed by some of the most talented artists in the industry. Each background captures the beauty and mystery of space travel, inviting you to join us on an epic journey of discovery.
 
 ## User Stories
 

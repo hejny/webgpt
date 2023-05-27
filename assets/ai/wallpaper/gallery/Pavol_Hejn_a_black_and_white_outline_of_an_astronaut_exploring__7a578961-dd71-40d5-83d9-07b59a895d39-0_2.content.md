@@ -2,7 +2,7 @@
 
 # Space Explore
 
-Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for extraterrestrial life. As a bonus, we offer a stunning black and white outline of an astronaut exploring a distant planet as a background image for your device.
+Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for Ex<wbr>tra<wbr>terre<wbr>strial life. As a bonus, we offer a stunning black and white outline of an astronaut exploring a distant planet as a background image for your device.
 
 ## Features
 
@@ -12,17 +12,17 @@ Our wallpaper features intricate details and shading that make it look like a re
 
 Our background image has been downloaded by space enthusiasts all over the world. Here are some of their stories:
 
-- "I'm a science teacher, and I use this background image as the backdrop for my online classes. It creates a sense of wonder and excitement among my students."
-- "I work at a space agency, and I have this background image on my office computer. It reminds me of the vastness and beauty of the universe."
-- "I'm not really into space, but this background image looks so cool that I had to download it."
+-   "I'm a science teacher, and I use this background image as the backdrop for my online classes. It creates a sense of wonder and excitement among my students."
+-   "I work at a space agency, and I have this background image on my office computer. It reminds me of the vastness and beauty of the universe."
+-   "I'm not really into space, but this background image looks so cool that I had to download it."
 
 ## Resources
 
 If you want to learn more about space exploration, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Exploration Wallpaper
 
-Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for extraterrestrial life. Our black and white outline wallpaper of an astronaut exploring a distant planet is the perfect background for anyone interested in space exploration.
+Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for Ex<wbr>tra<wbr>terre<wbr>strial life. Our black and white outline wallpaper of an astronaut exploring a distant planet is the perfect background for anyone interested in space exploration.
 
 ## Features
 
@@ -101,7 +101,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Universe with Our Space Exploration Website
 
-Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for extraterrestrial life. As a bonus, we offer a stunning black and white outline of an astronaut exploring a distant planet as a background image for your device.
+Welcome to our website dedicated to space exploration! Our website provides information about the latest developments in space technology, astronomy, and the search for Ex<wbr>tra<wbr>terre<wbr>strial life. As a bonus, we offer a stunning black and white outline of an astronaut exploring a distant planet as a background image for your device.
 
 ## Features
 

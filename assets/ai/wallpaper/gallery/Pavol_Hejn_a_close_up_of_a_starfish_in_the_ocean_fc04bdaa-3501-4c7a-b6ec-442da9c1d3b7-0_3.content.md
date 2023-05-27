@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,7 +20,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Ocean Starfish
 
-Welcome to our website dedicated to the amazing starfish of the ocean. Our stunning wallpaper showcases a close-up of a starfish in its natural habitat, giving you a glimpse into the beauty and mystery of these fascinating creatures.
+Welcome to our website dedicated to the amazing starfish of the ocean. Our stunning wallpaper showcases a close-up of a starfish in its natural habitat, giving you a glimpse into the beauty and mystery of these Fas<wbr>ci<wbr>na<wbr>ting creatures.
 
 ## About Starfish
 
@@ -42,17 +42,17 @@ To help protect starfish and other marine life, it is important to reduce our im
 
 ## User Stories
 
-- "I've always been fascinated by starfish, and this website has given me a new appreciation for these amazing creatures."
-- "The wallpaper is stunning and really captures the beauty of the ocean. I love having it as my background!"
-- "I didn't realize how important starfish were to the ecosystem until I read about it on this website. It's inspired me to make changes in my own life to help protect the environment."
+-   "I've always been fascinated by starfish, and this website has given me a new appreciation for these amazing creatures."
+-   "The wallpaper is stunning and really captures the beauty of the ocean. I love having it as my background!"
+-   "I didn't realize how important starfish were to the ecosystem until I read about it on this website. It's inspired me to make changes in my own life to help protect the environment."
 
 ## References
 
 If you're interested in learning more about starfish and the ocean ecosystem, check out these resources:
 
-- [National Geographic](#)
-- [Ocean Conservancy](#)
-- [MarineBio Conservation Society](#)
+-   [National Geographic](#)
+-   [Ocean Conservancy](#)
+-   [MarineBio Conservation Society](#)
 
 ## Contact Us
 

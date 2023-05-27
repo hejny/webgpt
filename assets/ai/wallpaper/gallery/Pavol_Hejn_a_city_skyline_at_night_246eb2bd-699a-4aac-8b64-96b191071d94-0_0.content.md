@@ -2,11 +2,11 @@
 
 # Nighttime in the City
 
-Welcome to our website featuring a stunning city skyline at night! 
+Welcome to our website featuring a stunning city skyline at night!
 
 ## About the Wallpaper
 
-Our wallpaper captures the mesmerizing beauty of a bustling city after dark. The twinkling lights of skyscrapers and buildings create a dazzling display that is sure to leave you in awe. Whether you're a fan of urban landscapes or just looking for a captivating background for your desktop or phone, this wallpaper is perfect for you.
+Our wallpaper captures the mesmerizing beauty of a bustling city after dark. The twinkling lights of skyscrapers and buildings create a dazzling display that is sure to leave you in awe. Whether you're a fan of urban landscapes or just looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your desktop or phone, this wallpaper is perfect for you.
 
 ## Download the Wallpaper
 
@@ -32,11 +32,11 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Nighttime in the City
 
-Welcome to our website featuring a stunning city skyline at night! 
+Welcome to our website featuring a stunning city skyline at night!
 
 ## About the Wallpaper
 
-Our wallpaper captures the mesmerizing beauty of a bustling city after dark. The twinkling lights of skyscrapers and buildings create a dazzling display that is sure to leave you in awe. Whether you're a fan of urban landscapes or just looking for a captivating background for your desktop or phone, this wallpaper is perfect for you.
+Our wallpaper captures the mesmerizing beauty of a bustling city after dark. The twinkling lights of skyscrapers and buildings create a dazzling display that is sure to leave you in awe. Whether you're a fan of urban landscapes or just looking for a Cap<wbr>ti<wbr>va<wbr>ting background for your desktop or phone, this wallpaper is perfect for you.
 
 ## Download the Wallpaper
 

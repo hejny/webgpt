@@ -26,15 +26,15 @@ Our fractal pattern has been used by many people around the world to create a mo
 
 If you're interested in finding more ways to inspire your creativity, here are some resources we recommend:
 
-- [TED Talks on Creativity](#)
-- [CreativeLive Online Classes](#)
+-   [TED Talks on Creativity](#)
+-   [CreativeLive Online Classes](#)
 
 ## Contact Us
 
 If you have any questions or comments about our fractal pattern, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: info@inspiringworkspace.com
-- Phone: 555-1234
+-   Email: info@inspiringworkspace.com
+-   Phone: 555-1234
 
 Thank you for choosing our fractal pattern to inspire your creativity. We hope it helps you create something amazing!
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -165,7 +165,7 @@ Welcome to our website, where we offer a mesmerizing fractal pattern that will i
 
 ## About Our Fractal Pattern
 
-Our fractal pattern features a stunning combination of vibrant colors and intricate lines that create a captivating effect. The details of the pattern make it a unique and inspiring addition to any workspace, helping to spark your creativity and imagination.
+Our fractal pattern features a stunning combination of vibrant colors and intricate lines that create a Cap<wbr>ti<wbr>va<wbr>ting effect. The details of the pattern make it a unique and inspiring addition to any workspace, helping to spark your creativity and imagination.
 
 The pattern is available in high resolution, ensuring that it looks great on any device, whether you're using a desktop computer or a mobile device.
 

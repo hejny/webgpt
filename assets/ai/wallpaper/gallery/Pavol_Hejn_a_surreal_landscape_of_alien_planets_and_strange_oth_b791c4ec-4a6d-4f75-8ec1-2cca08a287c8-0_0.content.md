@@ -18,7 +18,7 @@ Downloading our wallpapers is quick and easy. Simply select the image you want a
 
 ## Join Our Community
 
-Join our community of space enthusiasts and stay up-to-date with the latest news and discoveries from the universe. Share your own experiences and connect with like-minded individuals who share your passion for all things extraterrestrial.
+Join our community of space enthusiasts and stay up-to-date with the latest news and discoveries from the universe. Share your own experiences and connect with like-minded individuals who share your passion for all things Ex<wbr>tra<wbr>terre<wbr>strial.
 
 Experience the wonders of the universe with our otherworldly wallpapers. Start your adventure today!
 
@@ -52,7 +52,7 @@ Downloading our wallpapers is quick and easy. Simply select the image you want a
 
 ## Join Our Community
 
-Join our community of space enthusiasts and stay up-to-date with the latest news and discoveries from the universe. Share your own experiences and connect with like-minded individuals who share your passion for all things extraterrestrial.
+Join our community of space enthusiasts and stay up-to-date with the latest news and discoveries from the universe. Share your own experiences and connect with like-minded individuals who share your passion for all things Ex<wbr>tra<wbr>terre<wbr>strial.
 
 Experience the wonders of the universe with our otherworldly wallpapers. Start your adventure today!
 

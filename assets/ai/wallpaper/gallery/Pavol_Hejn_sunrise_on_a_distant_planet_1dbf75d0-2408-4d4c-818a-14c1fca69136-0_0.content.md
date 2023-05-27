@@ -2,7 +2,7 @@
 
 # Distant Beauty
 
-Welcome to our website, where you can discover the beauty of distant planets through our stunning background collection. Our backgrounds include some of the most beautiful and inspiring images from around the world, perfect for anyone who loves to have an inspiring and captivating backdrop on their desktop or mobile device.
+Welcome to our website, where you can discover the beauty of distant planets through our stunning background collection. Our backgrounds include some of the most beautiful and inspiring images from around the world, perfect for anyone who loves to have an inspiring and Cap<wbr>ti<wbr>va<wbr>ting backdrop on their desktop or mobile device.
 
 ## About Us
 
@@ -12,16 +12,16 @@ We are a team of passionate designers who love to create beautiful backgrounds t
 
 Our users love our backgrounds and often share their stories with us. Here are a few examples:
 
-- "The distant planet background is so mesmerizing. It helps me escape from reality and dream big."
-- "The colors in the background are so vibrant. They give me energy and motivation to work harder."
-- "The composition of the background is so well-balanced. It helps me focus and be more productive."
+-   "The distant planet background is so mesmerizing. It helps me escape from reality and dream big."
+-   "The colors in the background are so vibrant. They give me energy and motivation to work harder."
+-   "The composition of the background is so well-balanced. It helps me focus and be more productive."
 
 ## References
 
 If you want to learn more about the beauty of distant planets, here are some references that might interest you:
 
-- [NASA's Exoplanet Exploration Program](#exoplanet-exploration-program)
-- [Astrobiology Magazine](#astrobiology-magazine)
+-   [NASA's Exoplanet Exploration Program](#exoplanet-exploration-program)
+-   [Astrobiology Magazine](#astrobiology-magazine)
 
 ### Exoplanet Exploration Program
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -116,7 +116,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Explore the Beauty of a Distant Planet
 
-Welcome to our website, where you can discover the beauty of a distant planet through our stunning background. Our website offers a unique experience for anyone who loves to have an inspiring and captivating backdrop on their desktop or mobile device.
+Welcome to our website, where you can discover the beauty of a distant planet through our stunning background. Our website offers a unique experience for anyone who loves to have an inspiring and Cap<wbr>ti<wbr>va<wbr>ting backdrop on their desktop or mobile device.
 
 ## About Us
 
@@ -210,7 +210,7 @@ Heading is too long, rewrite whole content.
 
 # Discover the Beauty of Distant Planets
 
-Welcome to our website, where you can discover the beauty of distant planets through our stunning background collection. Our backgrounds include some of the most beautiful and inspiring images from around the world, perfect for anyone who loves to have an inspiring and captivating backdrop on their desktop or mobile device.
+Welcome to our website, where you can discover the beauty of distant planets through our stunning background collection. Our backgrounds include some of the most beautiful and inspiring images from around the world, perfect for anyone who loves to have an inspiring and Cap<wbr>ti<wbr>va<wbr>ting backdrop on their desktop or mobile device.
 
 ## About Us
 

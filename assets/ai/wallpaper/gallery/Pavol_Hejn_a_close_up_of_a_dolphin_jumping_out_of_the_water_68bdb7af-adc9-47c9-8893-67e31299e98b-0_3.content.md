@@ -5,23 +5,28 @@
 Welcome to our website dedicated to exploring the beauty and wonder of the ocean! Our background featuring a close-up of a dolphin jumping out of the water sets the tone for an immersive and exciting experience.
 
 ## About Us
+
 We are a team of passionate ocean enthusiasts who love to explore the world's oceans. Our goal is to share our knowledge and experiences with others and encourage them to discover the beauty of the ocean for themselves.
 
 ## User Stories
+
 Join our community of ocean adventurers and read their inspiring stories of exploring the deep blue sea, encountering incredible marine life, and experiencing the thrill of diving.
 
 > "I saw a pod of dolphins on my last dive and it was one of the most incredible experiences of my life." - Sarah, avid diver
 
 ## Ocean Conservation
+
 We believe in protecting the ocean and its inhabitants for future generations. Learn about our conservation efforts and how you can make a difference.
 
 ## Resources
+
 Explore our collection of resources for ocean adventurers, including recommended gear, books, and documentaries.
 
 ## Contact Us
+
 Have questions or want to share your own ocean adventure story? Contact us and join our community of ocean enthusiasts.
 
-Thank you for visiting our website and we hope our captivating background inspires you to explore the ocean with us. 🌊🐬
+Thank you for visiting our website and we hope our Cap<wbr>ti<wbr>va<wbr>ting background inspires you to explore the ocean with us. 🌊🐬
 
 <!--
 
@@ -31,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -102,7 +107,7 @@ Explore our collection of resources for ocean adventurers, including recommended
 ## Contact Us
 Have questions or want to share your own ocean adventure story? Contact us and join our community of ocean enthusiasts.
 
-Thank you for visiting our website and we hope our captivating background inspires you to dive into the world of ocean adventures. 🌊🐬
+Thank you for visiting our website and we hope our Cap<wbr>ti<wbr>va<wbr>ting background inspires you to dive into the world of ocean adventures. 🌊🐬
 
 
 ---
@@ -135,7 +140,7 @@ Explore our collection of resources for ocean adventurers, including recommended
 ## Contact Us
 Have questions or want to share your own ocean adventure story? Contact us and join our community of ocean enthusiasts.
 
-Thank you for visiting our website and we hope our captivating background inspires you to discover the wonders of the ocean. 🌊🐬
+Thank you for visiting our website and we hope our Cap<wbr>ti<wbr>va<wbr>ting background inspires you to discover the wonders of the ocean. 🌊🐬
 
 
 ---
@@ -168,7 +173,7 @@ Explore our collection of resources for ocean adventurers, including recommended
 ## Contact Us
 Have questions or want to share your own ocean adventure story? Contact us and join our community of ocean enthusiasts.
 
-Thank you for visiting our website and we hope our captivating background inspires you to explore the ocean with us. 🌊🐬
+Thank you for visiting our website and we hope our Cap<wbr>ti<wbr>va<wbr>ting background inspires you to explore the ocean with us. 🌊🐬
 
 
 ---

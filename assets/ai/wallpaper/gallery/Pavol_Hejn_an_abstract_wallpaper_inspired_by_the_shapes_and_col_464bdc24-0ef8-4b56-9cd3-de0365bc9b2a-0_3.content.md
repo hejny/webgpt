@@ -22,16 +22,16 @@ We value our customers' satisfaction, and we strive to provide the best service 
 
 Our Quantum Inspired Design has been a popular choice among our customers. Here are some stories from our satisfied customers:
 
-> "I was looking for a unique design that would complement my modern furniture, and I found this one. It's perfect! The colors are vibrant, and the pattern is captivating. I get so many compliments on it." - Sarah
+> "I was looking for a unique design that would complement my modern furniture, and I found this one. It's perfect! The colors are vibrant, and the pattern is Cap<wbr>ti<wbr>va<wbr>ting. I get so many compliments on it." - Sarah
 
 > "I recently redecorated my office, and I wanted something that would inspire creativity. This design did just that. It's like having a work of art on my wall. I love it!" - John
 
 ## References
 
-If you want to learn more about quantum physics and its fascinating shapes and colors, check out these references:
+If you want to learn more about quantum physics and its Fas<wbr>ci<wbr>na<wbr>ting shapes and colors, check out these references:
 
-- "Quantum: Einstein, Bohr, and the Great Debate about the Nature of Reality" by Manjit Kumar
-- "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory" by Brian Greene
+-   "Quantum: Einstein, Bohr, and the Great Debate about the Nature of Reality" by Manjit Kumar
+-   "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory" by Brian Greene
 
 ## Get Your Quantum Inspired Design Today!
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -84,13 +84,13 @@ We value our customers' satisfaction, and we strive to provide the best service 
 
 Our Quantum Inspired Wallpaper has been a popular choice among our customers. Here are some stories from our satisfied customers:
 
-> "I was looking for a unique wallpaper that would complement my modern furniture, and I found this one. It's perfect! The colors are vibrant, and the pattern is captivating. I get so many compliments on it." - Sarah
+> "I was looking for a unique wallpaper that would complement my modern furniture, and I found this one. It's perfect! The colors are vibrant, and the pattern is Cap<wbr>ti<wbr>va<wbr>ting. I get so many compliments on it." - Sarah
 
 > "I recently redecorated my office, and I wanted something that would inspire creativity. This wallpaper did just that. It's like having a work of art on my wall. I love it!" - John
 
 ## References
 
-If you want to learn more about quantum physics and its fascinating shapes and colors, check out these references:
+If you want to learn more about quantum physics and its Fas<wbr>ci<wbr>na<wbr>ting shapes and colors, check out these references:
 
 - "Quantum: Einstein, Bohr, and the Great Debate about the Nature of Reality" by Manjit Kumar
 - "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory" by Brian Greene
@@ -131,13 +131,13 @@ We value our customers' satisfaction, and we strive to provide the best service 
 
 Our Quantum Inspired Design has been a popular choice among our customers. Here are some stories from our satisfied customers:
 
-> "I was looking for a unique design that would complement my modern furniture, and I found this one. It's perfect! The colors are vibrant, and the pattern is captivating. I get so many compliments on it." - Sarah
+> "I was looking for a unique design that would complement my modern furniture, and I found this one. It's perfect! The colors are vibrant, and the pattern is Cap<wbr>ti<wbr>va<wbr>ting. I get so many compliments on it." - Sarah
 
 > "I recently redecorated my office, and I wanted something that would inspire creativity. This design did just that. It's like having a work of art on my wall. I love it!" - John
 
 ## References
 
-If you want to learn more about quantum physics and its fascinating shapes and colors, check out these references:
+If you want to learn more about quantum physics and its Fas<wbr>ci<wbr>na<wbr>ting shapes and colors, check out these references:
 
 - "Quantum: Einstein, Bohr, and the Great Debate about the Nature of Reality" by Manjit Kumar
 - "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory" by Brian Greene

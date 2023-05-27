@@ -6,9 +6,9 @@ Looking for a way to add some retro charm to your car or travel website? Our vin
 
 ## Features
 
-- High-quality resolution perfect for desktop or mobile backgrounds
-- Vintage-inspired design that will elevate your website's aesthetic
-- Easy to download and use on your website
+-   High-quality resolution perfect for desktop or mobile backgrounds
+-   Vintage-inspired design that will elevate your website's aesthetic
+-   Easy to download and use on your website
 
 ## User Stories
 
@@ -20,9 +20,9 @@ Looking for a way to add some retro charm to your car or travel website? Our vin
 
 Looking for more inspiration? Check out these resources:
 
-- [Vintage Car Photography](#) - A collection of stunning vintage car photos to inspire your next project
-- [Travel Blogging Tips](#) - A comprehensive guide to starting and growing a successful travel blog
-- [Classic Car Shows](#) - A directory of classic car shows and events happening around the world
+-   [Vintage Car Photography](#) - A collection of stunning vintage car photos to inspire your next project
+-   [Travel Blogging Tips](#) - A Com<wbr>pre<wbr>hen<wbr>sive guide to starting and growing a successful travel blog
+-   [Classic Car Shows](#) - A directory of classic car shows and events happening around the world
 
 ## Contact Us
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -76,7 +76,7 @@ Looking to add some retro flair to your car or travel website? Look no further t
 Looking for more inspiration? Check out these resources:
 
 - [Vintage Car Photography](#) - A collection of stunning vintage car photos to inspire your next project
-- [Travel Blogging Tips](#) - A comprehensive guide to starting and growing a successful travel blog
+- [Travel Blogging Tips](#) - A Com<wbr>pre<wbr>hen<wbr>sive guide to starting and growing a successful travel blog
 - [Classic Car Shows](#) - A directory of classic car shows and events happening around the world
 
 ## Contact Us
@@ -116,7 +116,7 @@ Looking for a way to add some retro charm to your car or travel website? Our vin
 Looking for more inspiration? Check out these resources:
 
 - [Vintage Car Photography](#) - A collection of stunning vintage car photos to inspire your next project
-- [Travel Blogging Tips](#) - A comprehensive guide to starting and growing a successful travel blog
+- [Travel Blogging Tips](#) - A Com<wbr>pre<wbr>hen<wbr>sive guide to starting and growing a successful travel blog
 - [Classic Car Shows](#) - A directory of classic car shows and events happening around the world
 
 ## Contact Us

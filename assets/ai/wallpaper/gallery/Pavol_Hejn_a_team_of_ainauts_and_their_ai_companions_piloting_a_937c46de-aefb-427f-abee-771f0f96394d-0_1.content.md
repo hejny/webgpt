@@ -10,7 +10,7 @@ Our stunning wallpaper depicts a team of Ainautes and their AI companions piloti
 
 ## About Us
 
-Our team of scientists, researchers, and writers are passionate about the universe and everything in it. We strive to bring you the most accurate and up-to-date information about the cosmos, from the latest breakthroughs in astrophysics to the search for extraterrestrial life.
+Our team of scientists, researchers, and writers are passionate about the universe and everything in it. We strive to bring you the most accurate and up-to-date information about the cosmos, from the latest breakthroughs in astrophysics to the search for Ex<wbr>tra<wbr>terre<wbr>strial life.
 
 ## User Stories
 
@@ -70,7 +70,7 @@ Our stunning wallpaper depicts a team of Ainautes and their AI companions piloti
 
 ## About Us
 
-Our team of scientists, researchers, and writers are passionate about the universe and everything in it. We strive to bring you the most accurate and up-to-date information about the cosmos, from the latest breakthroughs in astrophysics to the search for extraterrestrial life.
+Our team of scientists, researchers, and writers are passionate about the universe and everything in it. We strive to bring you the most accurate and up-to-date information about the cosmos, from the latest breakthroughs in astrophysics to the search for Ex<wbr>tra<wbr>terre<wbr>strial life.
 
 ## User Stories
 

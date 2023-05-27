@@ -10,10 +10,10 @@ At Calm Waters, we are passionate about boating and water sports. Our team of ex
 
 ## Our Services
 
-- **Gear Reviews:** We test and review the latest boating and water sports gear, so you can make informed purchasing decisions.
-- **Destination Guides:** From hidden coves to bustling marinas, our destination guides will help you find the perfect spot for your next adventure.
-- **User Stories:** Read inspiring stories from fellow boaters and water sports enthusiasts, and share your own experiences with our community.
-- **Expert Advice:** Our team of experts is always on hand to answer your questions and offer advice on everything from safety to technique.
+-   **Gear Reviews:** We test and review the latest boating and water sports gear, so you can make informed purchasing decisions.
+-   **Destination Guides:** From hidden coves to bustling marinas, our destination guides will help you find the perfect spot for your next adventure.
+-   **User Stories:** Read inspiring stories from fellow boaters and water sports enthusiasts, and share your own experiences with our community.
+-   **Expert Advice:** Our team of experts is always on hand to answer your questions and offer advice on everything from safety to technique.
 
 ## Our Wallpaper
 
@@ -23,9 +23,9 @@ Our minimalist graphic of a boat on calm waters is the perfect background for an
 
 Check out some of our favorite resources for boating and water sports:
 
-- [BoatUS](#): The nation's largest recreational boating association.
-- [Water Sports Industry Association](#): The leading trade association for the water sports industry.
-- [Discover Boating](#): A comprehensive resource for boating information and education.
+-   [BoatUS](#): The nation's largest recreational boating association.
+-   [Water Sports Industry Association](#): The leading trade association for the water sports industry.
+-   [Discover Boating](#): A Com<wbr>pre<wbr>hen<wbr>sive resource for boating information and education.
 
 ## Contact Us
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ Check out some of our favorite resources for boating and water sports:
 
 - [BoatUS](#): The nation's largest recreational boating association.
 - [Water Sports Industry Association](#): The leading trade association for the water sports industry.
-- [Discover Boating](#): A comprehensive resource for boating information and education.
+- [Discover Boating](#): A Com<wbr>pre<wbr>hen<wbr>sive resource for boating information and education.
 
 ## Contact Us
 

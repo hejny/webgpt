@@ -2,15 +2,15 @@
 
 # TechConnect
 
-Welcome to TechConnect, your go-to source for all things tech! Our website is designed to keep you up-to-date with the latest news, trends, and innovations in the world of technology. 
+Welcome to TechConnect, your go-to source for all things tech! Our website is designed to keep you up-to-date with the latest news, trends, and innovations in the world of technology.
 
 ## Our Wallpaper: A Subtle Tribute to Technology
 
-As you browse through our site, you may notice a subtle yet striking wallpaper in the background. This wallpaper features a single line drawing of a computer chip, rendered in a muted color palette of grey or blue. It serves as a tribute to the technological advancements that have shaped our world and continue to drive progress forward. 
+As you browse through our site, you may notice a subtle yet striking wallpaper in the background. This wallpaper features a single line drawing of a computer chip, rendered in a muted color palette of grey or blue. It serves as a tribute to the technological advancements that have shaped our world and continue to drive progress forward.
 
 ## Explore Our Content
 
-At TechConnect, we strive to provide you with comprehensive coverage of the tech industry. Here are some of the sections you can explore on our site:
+At TechConnect, we strive to provide you with Com<wbr>pre<wbr>hen<wbr>sive coverage of the tech industry. Here are some of the sections you can explore on our site:
 
 ### News and Analysis
 
@@ -30,7 +30,7 @@ If you're looking to expand your knowledge of technology, be sure to check out o
 
 ## Get in Touch
 
-Have questions or feedback? We'd love to hear from you! Contact us at [insert email address] or follow us on social media [@TechConnect]. 
+Have questions or feedback? We'd love to hear from you! Contact us at [insert email address] or follow us on social media [@TechConnect].
 
 ## References
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,15 +63,15 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # TechConnect - Connecting You to the Latest in Technology
 
-Welcome to TechConnect, your go-to source for all things tech! Our website is designed to keep you up-to-date with the latest news, trends, and innovations in the world of technology. 
+Welcome to TechConnect, your go-to source for all things tech! Our website is designed to keep you up-to-date with the latest news, trends, and innovations in the world of technology.
 
 ## Our Wallpaper: A Subtle Tribute to Technology
 
-As you browse through our site, you may notice a subtle yet striking wallpaper in the background. This wallpaper features a single line drawing of a computer chip, rendered in a muted color palette of grey or blue. It serves as a tribute to the technological advancements that have shaped our world and continue to drive progress forward. 
+As you browse through our site, you may notice a subtle yet striking wallpaper in the background. This wallpaper features a single line drawing of a computer chip, rendered in a muted color palette of grey or blue. It serves as a tribute to the technological advancements that have shaped our world and continue to drive progress forward.
 
 ## Explore Our Content
 
-At TechConnect, we strive to provide you with comprehensive coverage of the tech industry. Here are some of the sections you can explore on our site:
+At TechConnect, we strive to provide you with Com<wbr>pre<wbr>hen<wbr>sive coverage of the tech industry. Here are some of the sections you can explore on our site:
 
 ### News and Analysis
 
@@ -91,7 +91,7 @@ If you're looking to expand your knowledge of technology, be sure to check out o
 
 ## Get in Touch
 
-Have questions or feedback? We'd love to hear from you! Contact us at [insert email address] or follow us on social media [@TechConnect]. 
+Have questions or feedback? We'd love to hear from you! Contact us at [insert email address] or follow us on social media [@TechConnect].
 
 ## References
 

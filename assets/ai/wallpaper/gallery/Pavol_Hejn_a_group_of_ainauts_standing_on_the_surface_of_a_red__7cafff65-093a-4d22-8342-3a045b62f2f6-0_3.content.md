@@ -24,7 +24,7 @@ Welcome to our website dedicated to exploring the mysteries of Mars! Our goal is
 
 ## Why Mars?
 
-Mars has captured the imagination of scientists and space enthusiasts for centuries. It's the fourth planet from the sun, and its reddish hue is due to iron oxide (rust) on its surface. Mars is also home to the largest volcano in the solar system, Olympus Mons, and the deepest canyon, Valles Marineris. But what really makes Mars fascinating is the possibility that it may have once harbored life, or could do so in the future.
+Mars has captured the imagination of scientists and space enthusiasts for centuries. It's the fourth planet from the sun, and its reddish hue is due to iron oxide (rust) on its surface. Mars is also home to the largest volcano in the solar system, Olympus Mons, and the deepest canyon, Valles Marineris. But what really makes Mars Fas<wbr>ci<wbr>na<wbr>ting is the possibility that it may have once harbored life, or could do so in the future.
 
 ## The Latest News
 

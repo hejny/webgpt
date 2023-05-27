@@ -14,23 +14,23 @@ Here are some user stories from people who have used our graphic:
 
 > "I absolutely love this graphic! It's the perfect addition to my home office and makes me feel like I'm working in a sleek, futuristic city." - John D.
 
-> "The colors and design of this graphic are so unique and captivating. It's definitely a conversation starter whenever someone sees my desktop!" - Sarah K.
+> "The colors and design of this graphic are so unique and Cap<wbr>ti<wbr>va<wbr>ting. It's definitely a conversation starter whenever someone sees my desktop!" - Sarah K.
 
 ## References
 
 If you're interested in learning more about futuristic cities and architecture, check out these references:
 
-- [10 Futuristic City Concepts We Wish We Could Live In](#)
-- [The Future of Cities: A Vision of the Future from Architects](#)
-- [How Technology is Shaping the Future of Cities](#)
+-   [10 Futuristic City Concepts We Wish We Could Live In](#)
+-   [The Future of Cities: A Vision of the Future from Architects](#)
+-   [How Technology is Shaping the Future of Cities](#)
 
 ## Contact Us
 
 If you have any questions or comments about our graphic, we'd love to hear from you! Please reach out to us via email at [info@futuristicdesigns.com](mailto:info@futuristicdesigns.com) or through our social media channels:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 Let us help you take your desktop background to the next level!
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -117,7 +117,7 @@ Here are some user stories from people who have used our graphic:
 
 > "I absolutely love this graphic! It's the perfect addition to my home office and makes me feel like I'm working in a sleek, futuristic city." - John D.
 
-> "The colors and design of this graphic are so unique and captivating. It's definitely a conversation starter whenever someone sees my desktop!" - Sarah K.
+> "The colors and design of this graphic are so unique and Cap<wbr>ti<wbr>va<wbr>ting. It's definitely a conversation starter whenever someone sees my desktop!" - Sarah K.
 
 ## References
 

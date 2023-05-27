@@ -8,7 +8,7 @@ Welcome to Arctic Wonders, your source for stunning photographs of the Arctic re
 
 ![Arctic iceberg wallpaper](arctic-iceberg-wallpaper.jpg)
 
-This stunning photograph captures the beauty and majesty of an iceberg in the Arctic. The blue and white colors of the ice contrast against a dark sky, creating a dramatic and captivating image.
+This stunning photograph captures the beauty and majesty of an iceberg in the Arctic. The blue and white colors of the ice contrast against a dark sky, creating a dramatic and Cap<wbr>ti<wbr>va<wbr>ting image.
 
 ## Explore the Arctic
 
@@ -42,7 +42,7 @@ Welcome to Arctic Wonders, your source for stunning photographs of the Arctic re
 
 ![Arctic iceberg wallpaper](arctic-iceberg-wallpaper.jpg)
 
-This stunning photograph captures the beauty and majesty of an iceberg in the Arctic. The blue and white colors of the ice contrast against a dark sky, creating a dramatic and captivating image.
+This stunning photograph captures the beauty and majesty of an iceberg in the Arctic. The blue and white colors of the ice contrast against a dark sky, creating a dramatic and Cap<wbr>ti<wbr>va<wbr>ting image.
 
 ## Explore the Arctic
 

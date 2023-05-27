@@ -10,10 +10,10 @@ At [company name], we are passionate about exploring the frontiers of space and 
 
 ## Our Services
 
-- News and Updates: Stay informed about the latest space news and breakthroughs from around the world.
-- User Stories: Read about the experiences of real people who have worked in the space industry or dreamed of traveling among the stars.
-- References: Find links to useful resources, including scientific papers, books, and websites.
-- Contact: Get in touch with us if you have any questions or suggestions for future content.
+-   News and Updates: Stay informed about the latest space news and breakthroughs from around the world.
+-   User Stories: Read about the experiences of real people who have worked in the space industry or dreamed of traveling among the stars.
+-   References: Find links to useful resources, including scientific papers, books, and websites.
+-   Contact: Get in touch with us if you have any questions or suggestions for future content.
 
 ## Our Vision
 
@@ -35,10 +35,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -75,7 +75,7 @@ To download our stunning wallpaper, simply click on the link below and save the 
 
 ## Conclusion
 
-Thank you for visiting our website and exploring the exciting world of space travel with us. We hope that our beautiful wallpaper inspires you to learn more about this fascinating field and perhaps even pursue a career in it.
+Thank you for visiting our website and exploring the exciting world of space travel with us. We hope that our beautiful wallpaper inspires you to learn more about this Fas<wbr>ci<wbr>na<wbr>ting field and perhaps even pursue a career in it.
 
 
 ---

@@ -18,7 +18,7 @@ Our mission is to better understand the composition and potential habitability o
 
 ## Our Discoveries
 
-So far, our experiments have revealed fascinating geological features and evidence of complex organic molecules on the surface of the moon we are currently studying. We believe that this moon may have the potential to support microbial life in its subsurface ocean.
+So far, our experiments have revealed Fas<wbr>ci<wbr>na<wbr>ting geological features and evidence of complex organic molecules on the surface of the moon we are currently studying. We believe that this moon may have the potential to support microbial life in its subsurface ocean.
 
 ## Join Our Journey
 
@@ -54,7 +54,7 @@ Our mission is to better understand the composition and potential habitability o
 
 ## Our Discoveries
 
-So far, our experiments have revealed fascinating geological features and evidence of complex organic molecules on the surface of the moon we are currently studying. We believe that this moon may have the potential to support microbial life in its subsurface ocean.
+So far, our experiments have revealed Fas<wbr>ci<wbr>na<wbr>ting geological features and evidence of complex organic molecules on the surface of the moon we are currently studying. We believe that this moon may have the potential to support microbial life in its subsurface ocean.
 
 ## Join Our Journey
 

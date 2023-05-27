@@ -8,10 +8,10 @@ Welcome to Space Odyssey, your ultimate destination for all things space explora
 
 At Space Odyssey, we believe that space is not just a subject of scientific research but also a source of inspiration and wonder. That's why we strive to create a community of space enthusiasts who share our curiosity and excitement. Here are some reasons why you should join us:
 
-- Latest news: We keep you up-to-date with the latest developments in space exploration, from new discoveries on Mars to upcoming missions to the outer planets.
-- Insights and analysis: We provide in-depth articles and interviews with experts in the field, giving you a deeper understanding of the challenges and opportunities of space travel.
-- User stories: We feature stories and testimonials from people like you who have been inspired by space in their personal and professional lives.
-- Community: We offer a forum where you can connect with other space enthusiasts, ask questions, share ideas, and collaborate on projects.
+-   Latest news: We keep you up-to-date with the latest developments in space exploration, from new discoveries on Mars to upcoming missions to the outer planets.
+-   Insights and analysis: We provide in-depth articles and interviews with experts in the field, giving you a deeper understanding of the challenges and opportunities of space travel.
+-   User stories: We feature stories and testimonials from people like you who have been inspired by space in their personal and professional lives.
+-   Community: We offer a forum where you can connect with other space enthusiasts, ask questions, share ideas, and collaborate on projects.
 
 ## User Stories
 
@@ -27,9 +27,9 @@ Here are some user stories from our members who have found inspiration and joy i
 
 If you want to learn more about space exploration and astronomy, check out these resources:
 
-- NASA: The official website of the National Aeronautics and Space Administration, with news, images, videos, and educational materials.
-- Space.com: A popular website that covers space news, science, and entertainment.
-- Astronomy Magazine: A monthly magazine that features articles, photos, and reviews of the latest astronomical discoveries.
+-   NASA: The official website of the National Aeronautics and Space Administration, with news, images, videos, and educational materials.
+-   Space.com: A popular website that covers space news, science, and entertainment.
+-   Astronomy Magazine: A monthly magazine that features articles, photos, and reviews of the latest astronomical discoveries.
 
 ## Contact Us
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -62,7 +62,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Odyssey Wallpaper: Explore the Universe in Style
 
-Welcome to Space Odyssey, your ultimate destination for all things space exploration. Our website is dedicated to bringing you the latest news, insights, and stories about space travel, astronomy, and beyond. And what better way to immerse yourself in this fascinating world than with our stunning wallpaper featuring a team of Ainautes piloting a spacecraft through an asteroid field?
+Welcome to Space Odyssey, your ultimate destination for all things space exploration. Our website is dedicated to bringing you the latest news, insights, and stories about space travel, astronomy, and beyond. And what better way to immerse yourself in this Fas<wbr>ci<wbr>na<wbr>ting world than with our stunning wallpaper featuring a team of Ainautes piloting a spacecraft through an asteroid field?
 
 ## Why Choose Space Odyssey Wallpaper?
 

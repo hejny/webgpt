@@ -6,7 +6,7 @@ Welcome to Space Adventures, your ultimate guide to exploring the vast expanse o
 
 ## Wallpaper Background
 
-Our homepage features a stunning digital illustration of a spaceship traveling through a colorful nebula. This captivating wallpaper sets the tone for the excitement and wonder of space exploration that we aim to inspire in our readers.
+Our homepage features a stunning digital illustration of a spaceship traveling through a colorful nebula. This Cap<wbr>ti<wbr>va<wbr>ting wallpaper sets the tone for the excitement and wonder of space exploration that we aim to inspire in our readers.
 
 ## Plan Your Adventure
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Adventures: Explore the Galaxy and Beyond
 
-Welcome to Space Adventures, your ultimate guide to exploring the vast expanse of the galaxy and beyond. Our website is dedicated to providing you with all the information you need to plan your next space adventure. 
+Welcome to Space Adventures, your ultimate guide to exploring the vast expanse of the galaxy and beyond. Our website is dedicated to providing you with all the information you need to plan your next space adventure.
 
 ## Wallpaper Background
 
@@ -173,7 +173,7 @@ Welcome to Space Adventures, your ultimate guide to exploring the vast expanse o
 
 ## Wallpaper Background
 
-Our homepage features a stunning digital illustration of a spaceship traveling through a colorful nebula. This captivating wallpaper sets the tone for the excitement and wonder of space exploration that we aim to inspire in our readers.
+Our homepage features a stunning digital illustration of a spaceship traveling through a colorful nebula. This Cap<wbr>ti<wbr>va<wbr>ting wallpaper sets the tone for the excitement and wonder of space exploration that we aim to inspire in our readers.
 
 ## Plan Your Adventure
 

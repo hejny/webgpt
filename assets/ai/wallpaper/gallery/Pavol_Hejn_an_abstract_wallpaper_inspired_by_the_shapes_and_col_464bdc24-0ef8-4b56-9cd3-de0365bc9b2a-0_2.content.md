@@ -6,10 +6,10 @@ Looking for a unique and eye-catching design for your tech devices? Our abstract
 
 ## Features
 
-- High-resolution image suitable for all devices
-- Abstract design inspired by quantum physics
-- Bold colors and intricate lines for a unique look
-- Easy to download and set as your background
+-   High-resolution image suitable for all devices
+-   Abstract design inspired by quantum physics
+-   Bold colors and intricate lines for a unique look
+-   Easy to download and set as your background
 
 ## User Stories
 
@@ -19,11 +19,11 @@ Looking for a unique and eye-catching design for your tech devices? Our abstract
 
 ## References
 
-Want to learn more about the fascinating world of quantum physics? Check out these resources:
+Want to learn more about the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics? Check out these resources:
 
-- [Quantum Physics for Beginners](#)
-- [The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory](#)
-- [Quantum Magazine](#)
+-   [Quantum Physics for Beginners](#)
+-   [The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory](#)
+-   [Quantum Magazine](#)
 
 ## Contact
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ Looking for a unique and eye-catching wallpaper for your tech devices? Our abstr
 
 ## References
 
-Want to learn more about the fascinating world of quantum physics? Check out these resources:
+Want to learn more about the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics? Check out these resources:
 
 - [Quantum Physics for Beginners](#)
 - [The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory](#)
@@ -112,7 +112,7 @@ Looking for a unique and eye-catching design for your tech devices? Our abstract
 
 ## References
 
-Want to learn more about the fascinating world of quantum physics? Check out these resources:
+Want to learn more about the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics? Check out these resources:
 
 - [Quantum Physics for Beginners](#)
 - [The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory](#)

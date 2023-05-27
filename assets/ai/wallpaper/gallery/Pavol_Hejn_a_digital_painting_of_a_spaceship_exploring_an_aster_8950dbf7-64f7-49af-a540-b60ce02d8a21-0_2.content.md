@@ -12,25 +12,25 @@ Our wallpaper background depicts a digital painting of a spaceship exploring an 
 
 Our team of writers and researchers regularly publish articles on a wide range of topics related to space exploration. Whether you're interested in the latest discoveries, the history of space travel, or the future of space technology, we've got you covered. Here are some of our most popular articles:
 
-- *10 Amazing Facts About the Milky Way Galaxy*
-- *The History of Space Travel: From Sputnik to SpaceX*
-- *How NASA's Artemis Program Will Take Humans Back to the Moon*
+-   _10 Amazing Facts About the Milky Way Galaxy_
+-   _The History of Space Travel: From Sputnik to SpaceX_
+-   _How NASA's Artemis Program Will Take Humans Back to the Moon_
 
 ## Videos
 
 We also produce videos that showcase the beauty and wonder of space. Our videos include stunning footage from NASA and other space agencies, as well as animations that explain complex concepts in an easy-to-understand way. Check out some of our most popular videos:
 
-- *Journey Through the Solar System*
-- *The Search for Extraterrestrial Life*
-- *The Science of Black Holes*
+-   _Journey Through the Solar System_
+-   _The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life_
+-   _The Science of Black Holes_
 
 ## User Stories
 
 At Space Adventure, we believe that everyone has a story to tell. That's why we invite our users to share their own experiences and perspectives on space exploration. Whether you're an amateur astronomer, a professional scientist, or just someone who loves looking up at the stars, we want to hear from you. Here are some of our favorite user stories:
 
-- *My First Telescope: A Journey of Discovery*
-- *How I Became a Planetary Scientist*
-- *Why I Believe in the Search for Extraterrestrial Intelligence*
+-   _My First Telescope: A Journey of Discovery_
+-   _How I Became a Planetary Scientist_
+-   _Why I Believe in the Search for Ex<wbr>tra<wbr>terre<wbr>strial Intelligence_
 
 ## References
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -90,7 +90,7 @@ Our team of writers and researchers regularly publish articles on a wide range o
 We also produce videos that showcase the beauty and wonder of space. Our videos include stunning footage from NASA and other space agencies, as well as animations that explain complex concepts in an easy-to-understand way. Check out some of our most popular videos:
 
 - *Journey Through the Solar System*
-- *The Search for Extraterrestrial Life*
+- *The Search for Ex<wbr>tra<wbr>terre<wbr>strial Life*
 - *The Science of Black Holes*
 
 ## User Stories
@@ -99,7 +99,7 @@ At Space Adventure, we believe that everyone has a story to tell. That's why we 
 
 - *My First Telescope: A Journey of Discovery*
 - *How I Became a Planetary Scientist*
-- *Why I Believe in the Search for Extraterrestrial Intelligence*
+- *Why I Believe in the Search for Ex<wbr>tra<wbr>terre<wbr>strial Intelligence*
 
 ## References
 

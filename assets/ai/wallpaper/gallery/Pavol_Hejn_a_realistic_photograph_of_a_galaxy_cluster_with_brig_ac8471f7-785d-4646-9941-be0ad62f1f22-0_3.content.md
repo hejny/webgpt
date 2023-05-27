@@ -2,7 +2,7 @@
 
 # Explore Space with Us
 
-Welcome to our website, where we invite you to embark on a journey through the mysteries of space. Our realistic photograph of a galaxy cluster serves as a captivating backdrop for our site, providing a glimpse into the vastness of the universe that we aim to explore.
+Welcome to our website, where we invite you to embark on a journey through the mysteries of space. Our realistic photograph of a galaxy cluster serves as a Cap<wbr>ti<wbr>va<wbr>ting backdrop for our site, providing a glimpse into the vastness of the universe that we aim to explore.
 
 ## About Us
 
@@ -14,10 +14,10 @@ Our website features a variety of articles, videos, and interactive tools that c
 
 Some of our most popular content includes:
 
-- User Stories: Real-life accounts from people who have experienced the beauty and awe of space firsthand.
-- Reference Library: A comprehensive collection of resources and information on everything from black holes to exoplanets.
-- News and Updates: The latest news and developments in the world of space exploration and research.
-- Interactive Tools: Engaging simulations and visualizations that help users understand complex concepts in space science.
+-   User Stories: Real-life accounts from people who have experienced the beauty and awe of space firsthand.
+-   Reference Library: A Com<wbr>pre<wbr>hen<wbr>sive collection of resources and information on everything from black holes to exoplanets.
+-   News and Updates: The latest news and developments in the world of space exploration and research.
+-   Interactive Tools: Engaging simulations and visualizations that help users understand complex concepts in space science.
 
 ## Contact Us
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ Our website features a variety of articles, videos, and interactive tools that c
 Some of our most popular content includes:
 
 - User Stories: Real-life accounts from people who have experienced the beauty and awe of space firsthand.
-- Reference Library: A comprehensive collection of resources and information on everything from black holes to exoplanets.
+- Reference Library: A Com<wbr>pre<wbr>hen<wbr>sive collection of resources and information on everything from black holes to exoplanets.
 - News and Updates: The latest news and developments in the world of space exploration and research.
 - Interactive Tools: Engaging simulations and visualizations that help users understand complex concepts in space science.
 
@@ -108,7 +108,7 @@ Our website features a variety of articles, videos, and interactive tools that c
 Some of our most popular content includes:
 
 - User Stories: Real-life accounts from people who have experienced the beauty and awe of space firsthand.
-- Reference Library: A comprehensive collection of resources and information on everything from black holes to exoplanets.
+- Reference Library: A Com<wbr>pre<wbr>hen<wbr>sive collection of resources and information on everything from black holes to exoplanets.
 - News and Updates: The latest news and developments in the world of space exploration and research.
 - Interactive Tools: Engaging simulations and visualizations that help users understand complex concepts in space science.
 
@@ -147,7 +147,7 @@ Our website features a variety of articles, videos, and interactive tools that c
 Some of our most popular content includes:
 
 - User Stories: Real-life accounts from people who have experienced the beauty and awe of space firsthand.
-- Reference Library: A comprehensive collection of resources and information on everything from black holes to exoplanets.
+- Reference Library: A Com<wbr>pre<wbr>hen<wbr>sive collection of resources and information on everything from black holes to exoplanets.
 - News and Updates: The latest news and developments in the world of space exploration and research.
 - Interactive Tools: Engaging simulations and visualizations that help users understand complex concepts in space science.
 
@@ -173,7 +173,7 @@ Heading is too long, rewrite whole content.
 
 # Explore the Mysteries of Space with Our Engaging Content
 
-Welcome to our website, where we invite you to embark on a journey through the mysteries of space. Our realistic photograph of a galaxy cluster serves as a captivating backdrop for our site, providing a glimpse into the vastness of the universe that we aim to explore.
+Welcome to our website, where we invite you to embark on a journey through the mysteries of space. Our realistic photograph of a galaxy cluster serves as a Cap<wbr>ti<wbr>va<wbr>ting backdrop for our site, providing a glimpse into the vastness of the universe that we aim to explore.
 
 ## About Us
 
@@ -186,7 +186,7 @@ Our website features a variety of articles, videos, and interactive tools that c
 Some of our most popular content includes:
 
 - User Stories: Real-life accounts from people who have experienced the beauty and awe of space firsthand.
-- Reference Library: A comprehensive collection of resources and information on everything from black holes to exoplanets.
+- Reference Library: A Com<wbr>pre<wbr>hen<wbr>sive collection of resources and information on everything from black holes to exoplanets.
 - News and Updates: The latest news and developments in the world of space exploration and research.
 - Interactive Tools: Engaging simulations and visualizations that help users understand complex concepts in space science.
 

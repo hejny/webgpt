@@ -2,27 +2,27 @@
 
 # Space Travel Stories
 
-Welcome to our website dedicated to space travel and exploration. Our goal is to share stories, news, and insights about the mysteries of the universe. As you navigate through our pages, you'll find inspiring tales of astronauts, groundbreaking discoveries, and fascinating facts about the cosmos.
+Welcome to our website dedicated to space travel and exploration. Our goal is to share stories, news, and insights about the mysteries of the universe. As you navigate through our pages, you'll find inspiring tales of astronauts, groundbreaking discoveries, and Fas<wbr>ci<wbr>na<wbr>ting facts about the cosmos.
 
 ## Our Wallpaper
 
-As you may have noticed, our website features a captivating wallpaper that sets the tone for our content. The black and white outline of an astronaut exploring a distant planet, with intricate details and shading, represents our curiosity and fascination with the unknown. We hope it inspires you as much as it does us.
+As you may have noticed, our website features a Cap<wbr>ti<wbr>va<wbr>ting wallpaper that sets the tone for our content. The black and white outline of an astronaut exploring a distant planet, with intricate details and shading, represents our curiosity and fascination with the unknown. We hope it inspires you as much as it does us.
 
 ## User Stories
 
 Our website is built around the stories of people who have ventured into space or contributed to our understanding of the universe. Here are some examples:
 
-- [Neil Armstrong](#neil-armstrong): The first human to set foot on the moon
-- [Katherine Johnson](#katherine-johnson): A mathematician who calculated trajectories for NASA's early space missions
-- [Chris Hadfield](#chris-hadfield): A Canadian astronaut who became famous for his social media presence while aboard the International Space Station
+-   [Neil Armstrong](#neil-armstrong): The first human to set foot on the moon
+-   [Katherine Johnson](#katherine-johnson): A mathematician who calculated trajectories for NASA's early space missions
+-   [Chris Hadfield](#chris-hadfield): A Canadian astronaut who became famous for his social media presence while aboard the International Space Station
 
 ## References
 
 If you want to learn more about space travel and exploration, we recommend checking out these resources:
 
-- [NASA](#nasa): The United States' space agency, responsible for many historic missions and ongoing research
-- [ESA](#esa): The European Space Agency, which collaborates with NASA and other organizations on space projects
-- [SpaceX](#spacex): A private company founded by Elon Musk that aims to make space travel more accessible and affordable
+-   [NASA](#nasa): The United States' space agency, responsible for many historic missions and ongoing research
+-   [ESA](#esa): The European Space Agency, which collaborates with NASA and other organizations on space projects
+-   [SpaceX](#spacex): A private company founded by Elon Musk that aims to make space travel more accessible and affordable
 
 ## Contact Us
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,11 +55,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Unknown: Stories of Space Travel
 
-Welcome to our website dedicated to space travel and exploration. Our goal is to share stories, news, and insights about the mysteries of the universe. As you navigate through our pages, you'll find inspiring tales of astronauts, groundbreaking discoveries, and fascinating facts about the cosmos.
+Welcome to our website dedicated to space travel and exploration. Our goal is to share stories, news, and insights about the mysteries of the universe. As you navigate through our pages, you'll find inspiring tales of astronauts, groundbreaking discoveries, and Fas<wbr>ci<wbr>na<wbr>ting facts about the cosmos.
 
 ## Our Wallpaper
 
-As you may have noticed, our website features a captivating wallpaper that sets the tone for our content. The black and white outline of an astronaut exploring a distant planet, with intricate details and shading, represents our curiosity and fascination with the unknown. We hope it inspires you as much as it does us.
+As you may have noticed, our website features a Cap<wbr>ti<wbr>va<wbr>ting wallpaper that sets the tone for our content. The black and white outline of an astronaut exploring a distant planet, with intricate details and shading, represents our curiosity and fascination with the unknown. We hope it inspires you as much as it does us.
 
 ## User Stories
 

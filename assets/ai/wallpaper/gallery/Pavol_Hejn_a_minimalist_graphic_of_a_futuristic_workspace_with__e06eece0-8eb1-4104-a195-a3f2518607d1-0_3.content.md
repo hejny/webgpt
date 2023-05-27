@@ -20,9 +20,9 @@ Our users have reported increased focus and motivation after using our platform.
 
 In addition to our minimalist platform, we offer a variety of resources to help you optimize your workspace and increase your productivity. Check out some of our most popular articles:
 
-- 5 Tips for Creating a Productive Home Office
-- How to Organize Your Desk for Maximum Efficiency
-- The Benefits of Taking Regular Breaks at Work
+-   5 Tips for Creating a Productive Home Office
+-   How to Organize Your Desk for Maximum Efficiency
+-   The Benefits of Taking Regular Breaks at Work
 
 ## Contact Us
 
@@ -30,8 +30,8 @@ We love hearing from our community! If you have any questions, suggestions, or f
 
 ## References
 
-- Choi, Y., & Kim, J. (2019). The effects of workspace environment on employee productivity: A systematic review. Sustainability, 11(13), 3660.
-- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-communication trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
+-   Choi, Y., & Kim, J. (2019). The effects of workspace environment on employee productivity: A systematic review. Sustainability, 11(13), 3660.
+-   Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
 
 <!--
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -60,7 +60,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Futuristic Workspace Wallpaper for Productivity Enthusiasts
 
-Welcome to our website dedicated to productivity and efficiency enthusiasts. Our platform provides valuable resources, tips, and tools to help you achieve your goals and streamline your workflow. 
+Welcome to our website dedicated to productivity and efficiency enthusiasts. Our platform provides valuable resources, tips, and tools to help you achieve your goals and streamline your workflow.
 
 ## The Power of a Minimalist Workspace
 
@@ -89,7 +89,7 @@ We love hearing from our community! If you have any questions, suggestions, or f
 ## References
 
 - Choi, Y., & Kim, J. (2019). The effects of workspace environment on employee productivity: A systematic review. Sustainability, 11(13), 3660.
-- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-communication trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
+- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
 
 
 ---
@@ -132,7 +132,7 @@ We love hearing from our community! If you have any questions, suggestions, or f
 ## References
 
 - Choi, Y., & Kim, J. (2019). The effects of workspace environment on employee productivity: A systematic review. Sustainability, 11(13), 3660.
-- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-communication trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
+- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
 
 
 ---
@@ -175,7 +175,7 @@ We love hearing from our community! If you have any questions, suggestions, or f
 ## References
 
 - Choi, Y., & Kim, J. (2019). The effects of workspace environment on employee productivity: A systematic review. Sustainability, 11(13), 3660.
-- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-communication trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
+- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
 
 
 ---
@@ -218,7 +218,7 @@ We love hearing from our community! If you have any questions, suggestions, or f
 ## References
 
 - Choi, Y., & Kim, J. (2019). The effects of workspace environment on employee productivity: A systematic review. Sustainability, 11(13), 3660.
-- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-communication trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
+- Kim, J., & de Dear, R. (2013). Workspace satisfaction: The privacy-Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion trade-off in open-plan offices. Journal of Environmental Psychology, 36, 18-26.
 
 
 ---

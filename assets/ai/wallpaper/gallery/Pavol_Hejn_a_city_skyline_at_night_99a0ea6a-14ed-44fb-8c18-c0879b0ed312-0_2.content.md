@@ -6,7 +6,7 @@ Welcome to our website dedicated to exploring the vibrant and thrilling world of
 
 ## Uncover the Best Nightlife Hotspots
 
-Looking for the most exciting bars, clubs, and restaurants in your city? Look no further than our comprehensive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
+Looking for the most exciting bars, clubs, and restaurants in your city? Look no further than our Com<wbr>pre<wbr>hen<wbr>sive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
 
 ## User Stories
 
@@ -32,10 +32,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ Welcome to our website dedicated to exploring the vibrant and bustling world of 
 
 ## Discover the Best Nightlife Hotspots
 
-Looking for the best bars, clubs, and restaurants in your city? Look no further than our comprehensive guide to nightlife hotspots. We've scoured the city to bring you the most exciting and unique venues that are sure to make your evening unforgettable.
+Looking for the best bars, clubs, and restaurants in your city? Look no further than our Com<wbr>pre<wbr>hen<wbr>sive guide to nightlife hotspots. We've scoured the city to bring you the most exciting and unique venues that are sure to make your evening unforgettable.
 
 ## User Stories
 
@@ -89,7 +89,7 @@ Welcome to our website dedicated to exploring the vibrant and exciting world of 
 
 ## Uncover the Best Nightlife Hotspots
 
-Looking for the most thrilling bars, clubs, and restaurants in your city? Look no further than our comprehensive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
+Looking for the most thrilling bars, clubs, and restaurants in your city? Look no further than our Com<wbr>pre<wbr>hen<wbr>sive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
 
 ## User Stories
 
@@ -123,7 +123,7 @@ Welcome to our website dedicated to exploring the vibrant and thrilling world of
 
 ## Uncover the Best Nightlife Hotspots
 
-Looking for the most exciting bars, clubs, and restaurants in your city? Look no further than our comprehensive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
+Looking for the most exciting bars, clubs, and restaurants in your city? Look no further than our Com<wbr>pre<wbr>hen<wbr>sive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
 
 ## User Stories
 
@@ -157,7 +157,7 @@ Welcome to our website dedicated to exploring the vibrant and thrilling world of
 
 ## Uncover the Best Nightlife Hotspots
 
-Looking for the most exciting bars, clubs, and restaurants in your city? Look no further than our comprehensive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
+Looking for the most exciting bars, clubs, and restaurants in your city? Look no further than our Com<wbr>pre<wbr>hen<wbr>sive guide to nightlife hotspots. We've scoured the city to bring you the most unique and unforgettable venues that are sure to make your evening one to remember.
 
 ## User Stories
 

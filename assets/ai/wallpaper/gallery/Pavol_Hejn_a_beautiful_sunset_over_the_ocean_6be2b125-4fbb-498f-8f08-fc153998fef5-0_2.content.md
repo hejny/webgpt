@@ -2,7 +2,7 @@
 
 # Coastal Escapes
 
-Welcome to Coastal Escapes, your destination for breathtaking ocean views and peaceful seascapes. Our website features stunning images of the world's most beautiful coastal destinations, including this captivating sunset over the ocean.
+Welcome to Coastal Escapes, your destination for breathtaking ocean views and peaceful seascapes. Our website features stunning images of the world's most beautiful coastal destinations, including this Cap<wbr>ti<wbr>va<wbr>ting sunset over the ocean.
 
 ## About the Photo
 
@@ -62,7 +62,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Coastal Escapes
 
-Welcome to Coastal Escapes, your destination for breathtaking ocean views and peaceful seascapes. Our website features stunning images of the world's most beautiful coastal destinations, including this captivating sunset over the ocean.
+Welcome to Coastal Escapes, your destination for breathtaking ocean views and peaceful seascapes. Our website features stunning images of the world's most beautiful coastal destinations, including this Cap<wbr>ti<wbr>va<wbr>ting sunset over the ocean.
 
 ## About the Photo
 

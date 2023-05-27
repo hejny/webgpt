@@ -6,7 +6,7 @@ Welcome to our website dedicated to exploring the world of drone delivery! Our m
 
 ## Our Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone against a background of complementary geometric shapes. This wallpaper captures the dynamic and futuristic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
+Our website features a stunning wallpaper with a single line drawing of a drone against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry geometric shapes. This wallpaper captures the dynamic and futuristic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
 
 ## About Us
 
@@ -32,14 +32,14 @@ Thank you for visiting our website, and we hope you enjoy learning more about th
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in complementary colors."
+"A wallpaper with a single line drawing of a drone, against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ Welcome to our website dedicated to exploring the exciting world of drone delive
 
 ## The Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone, set against a background of geometric shapes in complementary colors. This wallpaper perfectly captures the futuristic and dynamic nature of drone delivery, and sets the tone for our exploration of this cutting-edge field.
+Our website features a stunning wallpaper with a single line drawing of a drone, set against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper perfectly captures the futuristic and dynamic nature of drone delivery, and sets the tone for our exploration of this cutting-edge field.
 
 ## About Us
 
@@ -97,7 +97,7 @@ Welcome to our website dedicated to exploring the exciting world of drone delive
 
 ## Our Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone, set against a background of geometric shapes in complementary colors. This wallpaper captures the futuristic and dynamic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
+Our website features a stunning wallpaper with a single line drawing of a drone, set against a background of geometric shapes in Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper captures the futuristic and dynamic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
 
 ## About Us
 
@@ -135,7 +135,7 @@ Welcome to our website dedicated to exploring the world of drone delivery! Our m
 
 ## Our Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone against a background of complementary geometric shapes. This wallpaper captures the dynamic and futuristic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
+Our website features a stunning wallpaper with a single line drawing of a drone against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry geometric shapes. This wallpaper captures the dynamic and futuristic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
 
 ## About Us
 
@@ -173,7 +173,7 @@ Welcome to our website dedicated to exploring the world of drone delivery! Our m
 
 ## Our Wallpaper
 
-Our website features a stunning wallpaper with a single line drawing of a drone against a background of complementary geometric shapes. This wallpaper captures the dynamic and futuristic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
+Our website features a stunning wallpaper with a single line drawing of a drone against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry geometric shapes. This wallpaper captures the dynamic and futuristic nature of drone delivery, setting the tone for our exploration of this cutting-edge field.
 
 ## About Us
 

@@ -12,9 +12,9 @@ Our website features a wallpaper background that depicts a simple graphic of a c
 
 We offer a range of services designed to help you safeguard your online security and protect yourself from online threats. These include:
 
-- **Cybersecurity Education:** Our team of experts provides comprehensive training on cybersecurity best practices, including password management, data encryption, and more.
-- **Threat Detection and Response:** We use advanced tools and techniques to monitor your online activity and detect any signs of suspicious behavior. If we detect a threat, we'll take immediate action to neutralize it and prevent further damage.
-- **Incident Response Planning:** In the event of a cyberattack or other security incident, we'll work with you to develop a customized incident response plan that outlines the steps you need to take to minimize the impact and recover quickly.
+-   **Cybersecurity Education:** Our team of experts provides Com<wbr>pre<wbr>hen<wbr>sive training on cybersecurity best practices, including password management, data encryption, and more.
+-   **Threat Detection and Response:** We use advanced tools and techniques to monitor your online activity and detect any signs of suspicious behavior. If we detect a threat, we'll take immediate action to neutralize it and prevent further damage.
+-   **Incident Response Planning:** In the event of a cyberattack or other security incident, we'll work with you to develop a customized incident response plan that outlines the steps you need to take to minimize the impact and recover quickly.
 
 ## User Stories
 
@@ -28,9 +28,9 @@ Don't just take our word for it - here are some real-life examples of how our se
 
 For more information on cybersecurity best practices and the latest trends in online security, check out these helpful resources:
 
-- [National Cyber Security Alliance](#)
-- [Cybersecurity and Infrastructure Security Agency](#)
-- [KrebsOnSecurity](#)
+-   [National Cyber Security Alliance](#)
+-   [Cybersecurity and Infrastructure Security Agency](#)
+-   [KrebsOnSecurity](#)
 
 ## Contact Us
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ As you browse through our site, you'll notice a striking wallpaper background fe
 
 We offer a range of services designed to help you safeguard your digital identity and protect yourself from online threats. These include:
 
-- **Cybersecurity Education:** Our team of experts provides comprehensive training on cybersecurity best practices, including password management, data encryption, and more.
+- **Cybersecurity Education:** Our team of experts provides Com<wbr>pre<wbr>hen<wbr>sive training on cybersecurity best practices, including password management, data encryption, and more.
 - **Threat Detection and Response:** We use advanced tools and techniques to monitor your digital footprint and detect any signs of suspicious activity. If we detect a threat, we'll take immediate action to neutralize it and prevent further damage.
 - **Incident Response Planning:** In the event of a cyberattack or other security incident, we'll work with you to develop a customized incident response plan that outlines the steps you need to take to minimize the impact and recover quickly.
 
@@ -119,7 +119,7 @@ Our website features a striking wallpaper background that serves as a reminder o
 
 We offer a range of services designed to help you safeguard your digital identity and protect yourself from online threats. These include:
 
-- **Cybersecurity Education:** Our team of experts provides comprehensive training on cybersecurity best practices, including password management, data encryption, and more.
+- **Cybersecurity Education:** Our team of experts provides Com<wbr>pre<wbr>hen<wbr>sive training on cybersecurity best practices, including password management, data encryption, and more.
 - **Threat Detection and Response:** We use advanced tools and techniques to monitor your digital footprint and detect any signs of suspicious activity. If we detect a threat, we'll take immediate action to neutralize it and prevent further damage.
 - **Incident Response Planning:** In the event of a cyberattack or other security incident, we'll work with you to develop a customized incident response plan that outlines the steps you need to take to minimize the impact and recover quickly.
 
@@ -165,7 +165,7 @@ Our website features a wallpaper background that depicts a simple graphic of a c
 
 We offer a range of services designed to help you safeguard your digital identity and protect yourself from online threats. These include:
 
-- **Cybersecurity Education:** Our team of experts provides comprehensive training on cybersecurity best practices, including password management, data encryption, and more.
+- **Cybersecurity Education:** Our team of experts provides Com<wbr>pre<wbr>hen<wbr>sive training on cybersecurity best practices, including password management, data encryption, and more.
 - **Threat Detection and Response:** We use advanced tools and techniques to monitor your digital footprint and detect any signs of suspicious activity. If we detect a threat, we'll take immediate action to neutralize it and prevent further damage.
 - **Incident Response Planning:** In the event of a cyberattack or other security incident, we'll work with you to develop a customized incident response plan that outlines the steps you need to take to minimize the impact and recover quickly.
 
@@ -211,7 +211,7 @@ Our website features a wallpaper background that depicts a simple graphic of a c
 
 We offer a range of services designed to help you safeguard your online security and protect yourself from online threats. These include:
 
-- **Cybersecurity Education:** Our team of experts provides comprehensive training on cybersecurity best practices, including password management, data encryption, and more.
+- **Cybersecurity Education:** Our team of experts provides Com<wbr>pre<wbr>hen<wbr>sive training on cybersecurity best practices, including password management, data encryption, and more.
 - **Threat Detection and Response:** We use advanced tools and techniques to monitor your online activity and detect any signs of suspicious behavior. If we detect a threat, we'll take immediate action to neutralize it and prevent further damage.
 - **Incident Response Planning:** In the event of a cyberattack or other security incident, we'll work with you to develop a customized incident response plan that outlines the steps you need to take to minimize the impact and recover quickly.
 

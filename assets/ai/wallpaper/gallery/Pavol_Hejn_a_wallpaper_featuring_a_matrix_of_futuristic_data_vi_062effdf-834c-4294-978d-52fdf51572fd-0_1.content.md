@@ -2,7 +2,7 @@
 
 # DataVizPro
 
-Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a comprehensive suite of tools to help you create stunning visualizations that will help you better understand your data.
+Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a Com<wbr>pre<wbr>hen<wbr>sive suite of tools to help you create stunning visualizations that will help you better understand your data.
 
 ## Futuristic Data Visualizations Wallpaper
 
@@ -10,12 +10,12 @@ Add some inspiration to your workspace with our futuristic data visualizations w
 
 ## Features
 
-- Create custom charts and graphs
-- Import data from various sources
-- Customize colors and fonts
-- Share your visualizations with others
-- Collaborate with team members
-- And much more!
+-   Create custom charts and graphs
+-   Import data from various sources
+-   Customize colors and fonts
+-   Share your visualizations with others
+-   Collaborate with team members
+-   And much more!
 
 ## Success Stories
 
@@ -25,9 +25,9 @@ Add some inspiration to your workspace with our futuristic data visualizations w
 
 Check out some of our resources to see how DataVizPro has helped businesses like yours:
 
-- Case Study: How Company X Increased Sales by 20% Using DataVizPro
-- White Paper: The Importance of Data Visualization in Business
-- Infographic: The Top 5 Benefits of Using DataVizPro
+-   Case Study: How Company X Increased Sales by 20% Using DataVizPro
+-   White Paper: The Importance of Data Visualization in Business
+-   Infographic: The Top 5 Benefits of Using DataVizPro
 
 ## Contact Us
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -60,7 +60,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # DataVizPro - Your Ultimate Data Visualization Tool
 
-Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals alike. Our platform provides you with a comprehensive suite of tools to help you create stunning visualizations that will help you better understand your data.
+Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals alike. Our platform provides you with a Com<wbr>pre<wbr>hen<wbr>sive suite of tools to help you create stunning visualizations that will help you better understand your data.
 
 ## The Perfect Wallpaper for Your Workspace
 
@@ -105,7 +105,7 @@ Heading is too long, rewrite whole content.
 
 # DataVizPro - Your Ultimate Data Visualization Tool
 
-Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals alike. Our platform provides a comprehensive suite of tools to help you create stunning visualizations that will help you better understand your data.
+Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals alike. Our platform provides a Com<wbr>pre<wbr>hen<wbr>sive suite of tools to help you create stunning visualizations that will help you better understand your data.
 
 ## Futuristic Data Visualizations and Graphs Wallpaper
 
@@ -148,7 +148,7 @@ Heading is too long, rewrite whole content.
 
 # DataVizPro - Your Ultimate Data Visualization Tool
 
-Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a comprehensive suite of tools to help you create stunning visualizations that will help you better understand your data.
+Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a Com<wbr>pre<wbr>hen<wbr>sive suite of tools to help you create stunning visualizations that will help you better understand your data.
 
 ## Futuristic Data Visualizations Wallpaper
 
@@ -191,7 +191,7 @@ Heading is too long, rewrite whole content.
 
 # DataVizPro - Your Ultimate Data Visualization Tool
 
-Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a comprehensive suite of tools to help you create stunning visualizations that will help you better understand your data.
+Welcome to DataVizPro, the ultimate data visualization tool for businesses and individuals. Our platform provides a Com<wbr>pre<wbr>hen<wbr>sive suite of tools to help you create stunning visualizations that will help you better understand your data.
 
 ## Futuristic Data Visualizations Wallpaper
 

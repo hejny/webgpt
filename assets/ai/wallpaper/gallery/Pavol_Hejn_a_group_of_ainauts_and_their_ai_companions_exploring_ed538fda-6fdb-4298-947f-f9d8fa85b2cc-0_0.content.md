@@ -48,7 +48,7 @@ We have explored many abandoned research facilities in space and have uncovered 
 
 Here are some references to help you learn more about abandoned research facilities in space:
 
--   "Abandoned Research Facilities in Space: A Comprehensive Guide" by Dr. Sarah J. Smith
+-   "Abandoned Research Facilities in Space: A Com<wbr>pre<wbr>hen<wbr>sive Guide" by Dr. Sarah J. Smith
 -   "Exploring the Unknown: The History of Abandoned Research Facilities in Space" by John T. Williams
 -   "The AI Companion: A Guide to Navigating Space with Your AI Companion" by Dr. Lisa K. Lee
 

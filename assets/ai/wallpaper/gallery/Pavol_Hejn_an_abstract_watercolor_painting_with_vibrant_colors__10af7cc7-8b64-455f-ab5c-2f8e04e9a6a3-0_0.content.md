@@ -45,7 +45,7 @@ Here are some examples of how our users have used our abstract watercolor wallpa
 If you're looking for more inspiration, check out these resources:
 
 -   [Watercolor Techniques](#) - A guide to different watercolor techniques for beginners and advanced artists.
--   [Color Theory](#) - A comprehensive guide to color theory and how to use it in your designs.
+-   [Color Theory](#) - A Com<wbr>pre<wbr>hen<wbr>sive guide to color theory and how to use it in your designs.
 -   [Design Inspiration](#) - A collection of websites and blogs with stunning design inspiration.
 
 ## Contact Us

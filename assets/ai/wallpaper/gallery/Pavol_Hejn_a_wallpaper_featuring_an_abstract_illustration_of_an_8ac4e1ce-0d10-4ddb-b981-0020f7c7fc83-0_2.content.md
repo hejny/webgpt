@@ -2,7 +2,7 @@
 
 # AI Networks in Action
 
-Welcome to our website dedicated to exploring the fascinating world of neural networks! Our mission is to provide you with the latest news, research, and insights into this rapidly evolving field. 
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of neural networks! Our mission is to provide you with the latest news, research, and insights into this rapidly evolving field.
 
 ## Wallpaper: Abstract Illustration of an AI Neural Network
 
@@ -26,7 +26,7 @@ Looking for more information on neural networks? Check out our list of reference
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Get in touch with us via email, phone, or social media. We're always happy to chat about neural networks and their potential. 
+Have a question or comment? We'd love to hear from you! Get in touch with us via email, phone, or social media. We're always happy to chat about neural networks and their potential.
 
 ---
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Neural Networks in Action: Exploring the Future of AI
 
-Welcome to our website dedicated to exploring the fascinating world of neural networks! Our mission is to provide you with the latest news, research, and insights into this rapidly evolving field. 
+Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of neural networks! Our mission is to provide you with the latest news, research, and insights into this rapidly evolving field.
 
 ## Wallpaper: Abstract Illustration of an AI Neural Network
 
@@ -83,7 +83,7 @@ Looking for more information on neural networks? Check out our list of reference
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Get in touch with us via email, phone, or social media. We're always happy to chat about neural networks and their potential. 
+Have a question or comment? We'd love to hear from you! Get in touch with us via email, phone, or social media. We're always happy to chat about neural networks and their potential.
 
 ---
 

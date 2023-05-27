@@ -6,7 +6,7 @@ Welcome to Stargaze, your ultimate destination for exploring the universe throug
 
 ## Meteor Shower
 
-Experience the wonder of a meteor shower with this captivating image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
+Experience the wonder of a meteor shower with this Cap<wbr>ti<wbr>va<wbr>ting image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
 
 [Download Now](insert download link here)
 
@@ -30,7 +30,7 @@ Welcome to Stargaze, your go-to destination for breathtaking astronomy wallpaper
 
 ## Meteor Shower
 
-Behold the beauty of a meteor shower with this captivating wallpaper. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this wallpaper and let the magic of the universe inspire you every day.
+Behold the beauty of a meteor shower with this Cap<wbr>ti<wbr>va<wbr>ting wallpaper. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this wallpaper and let the magic of the universe inspire you every day.
 
 [Download Now](insert download link here)
 
@@ -50,7 +50,7 @@ Welcome to Stargaze, your ultimate destination for breathtaking astronomy images
 
 ## Meteor Shower
 
-Experience the wonder of a meteor shower with this captivating image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
+Experience the wonder of a meteor shower with this Cap<wbr>ti<wbr>va<wbr>ting image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
 
 [Download Now](insert download link here)
 
@@ -72,7 +72,7 @@ Welcome to Stargaze, your ultimate destination for exploring the wonders of the 
 
 ## Meteor Shower
 
-Experience the wonder of a meteor shower with this captivating image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
+Experience the wonder of a meteor shower with this Cap<wbr>ti<wbr>va<wbr>ting image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
 
 [Download Now](insert download link here)
 
@@ -94,7 +94,7 @@ Welcome to Stargaze, your ultimate destination for exploring the universe throug
 
 ## Meteor Shower
 
-Experience the wonder of a meteor shower with this captivating image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
+Experience the wonder of a meteor shower with this Cap<wbr>ti<wbr>va<wbr>ting image. The bright streaks of light crossing the night sky will transport you to a world beyond our own. Download this image and let the magic of the universe inspire you every day.
 
 [Download Now](insert download link here)
 

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -24,7 +24,7 @@ Welcome to our website, where we showcase stunning wallpapers that capture the b
 
 ## The Wallpaper
 
-The wallpaper depicts a once-bustling city now overrun by lush greenery. Buildings are barely visible behind a thick curtain of vines and foliage, while trees tower over the skyline. The contrast between the man-made structures and the natural elements creates a captivating image that draws you in.
+The wallpaper depicts a once-bustling city now overrun by lush greenery. Buildings are barely visible behind a thick curtain of vines and foliage, while trees tower over the skyline. The contrast between the man-made structures and the natural elements creates a Cap<wbr>ti<wbr>va<wbr>ting image that draws you in.
 
 ![Cityscape overtaken by nature](#)
 
@@ -44,9 +44,9 @@ Here are some stories from our users who have been inspired by our wallpapers:
 
 Here are some resources that inspired us to create this wallpaper:
 
-- [The High Line in New York City](#)
-- [The abandoned city of Pripyat, Ukraine](#)
-- [The work of artist Christo Vladimirov Javacheff](#)
+-   [The High Line in New York City](#)
+-   [The abandoned city of Pripyat, Ukraine](#)
+-   [The work of artist Christo Vladimirov Javacheff](#)
 
 ## Contact Us
 

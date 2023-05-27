@@ -14,7 +14,7 @@ We believe that the best way to understand the impact of AI-powered search engin
 
 ## Insights and Analysis
 
-Our team of experts provides insights and analysis on the latest developments in AI-powered search engines. From academic research papers to industry reports and news articles, we curate a selection of resources that offer a comprehensive view of this exciting field.
+Our team of experts provides insights and analysis on the latest developments in AI-powered search engines. From academic research papers to industry reports and news articles, we curate a selection of resources that offer a Com<wbr>pre<wbr>hen<wbr>sive view of this exciting field.
 
 ## Contact Us
 
@@ -63,7 +63,7 @@ We believe that the best way to understand the power of AI-powered search engine
 
 ## References
 
-If you're interested in learning more about AI-powered search engines, we have compiled a list of references that you can explore. From academic research papers to industry reports and news articles, our references section provides a wealth of information on this fascinating topic.
+If you're interested in learning more about AI-powered search engines, we have compiled a list of references that you can explore. From academic research papers to industry reports and news articles, our references section provides a wealth of information on this Fas<wbr>ci<wbr>na<wbr>ting topic.
 
 ## Contact Us
 
@@ -97,7 +97,7 @@ We believe that the best way to understand the impact of AI-powered search engin
 
 ## Insights and Analysis
 
-Our team of experts provides insights and analysis on the latest developments in AI-powered search engines. From academic research papers to industry reports and news articles, we curate a selection of resources that offer a comprehensive view of this exciting field.
+Our team of experts provides insights and analysis on the latest developments in AI-powered search engines. From academic research papers to industry reports and news articles, we curate a selection of resources that offer a Com<wbr>pre<wbr>hen<wbr>sive view of this exciting field.
 
 ## Contact Us
 

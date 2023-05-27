@@ -8,7 +8,7 @@ As part of our commitment to providing an inspiring workspace, we have chosen a 
 
 ## Features
 
-Our website offers a comprehensive library of design templates and assets, tutorials and guides on various creative topics, user stories and case studies from successful creatives, a community forum for sharing ideas and feedback, and access to industry-leading software and tools.
+Our website offers a Com<wbr>pre<wbr>hen<wbr>sive library of design templates and assets, tutorials and guides on various creative topics, user stories and case studies from successful creatives, a community forum for sharing ideas and feedback, and access to industry-leading software and tools.
 
 ## Partnerships
 
@@ -28,10 +28,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ As part of our commitment to providing an engaging and inspiring workspace, we h
 
 Our website offers a variety of features and resources to help you unleash your creativity, including:
 
-- A comprehensive library of design templates and assets
+- A Com<wbr>pre<wbr>hen<wbr>sive library of design templates and assets
 - Tutorials and guides on various creative topics
 - User stories and case studies from successful creatives
 - A community forum for sharing ideas and feedback
@@ -96,7 +96,7 @@ As part of our commitment to providing an engaging and inspiring workspace, we h
 
 Our website offers a variety of features and resources to help you unlock your creative potential, including:
 
-- A comprehensive library of design templates and assets
+- A Com<wbr>pre<wbr>hen<wbr>sive library of design templates and assets
 - Tutorials and guides on various creative topics
 - User stories and case studies from successful creatives
 - A community forum for sharing ideas and feedback
@@ -135,7 +135,7 @@ As part of our commitment to providing an engaging and inspiring workspace, we h
 
 ## Features
 
-Our website offers a comprehensive library of design templates and assets, tutorials and guides on various creative topics, user stories and case studies from successful creatives, a community forum for sharing ideas and feedback, and access to industry-leading software and tools.
+Our website offers a Com<wbr>pre<wbr>hen<wbr>sive library of design templates and assets, tutorials and guides on various creative topics, user stories and case studies from successful creatives, a community forum for sharing ideas and feedback, and access to industry-leading software and tools.
 
 ## Partnerships
 
@@ -165,7 +165,7 @@ As part of our commitment to providing an inspiring workspace, we have chosen a 
 
 ## Features
 
-Our website offers a comprehensive library of design templates and assets, tutorials and guides on various creative topics, user stories and case studies from successful creatives, a community forum for sharing ideas and feedback, and access to industry-leading software and tools.
+Our website offers a Com<wbr>pre<wbr>hen<wbr>sive library of design templates and assets, tutorials and guides on various creative topics, user stories and case studies from successful creatives, a community forum for sharing ideas and feedback, and access to industry-leading software and tools.
 
 ## Partnerships
 

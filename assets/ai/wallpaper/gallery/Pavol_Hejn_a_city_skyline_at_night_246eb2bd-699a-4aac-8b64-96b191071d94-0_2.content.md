@@ -54,7 +54,7 @@ Moreover, our wallpaper is free to download and use, so you can enjoy the beauty
 
 ## Conclusion
 
-If you're looking for a captivating wallpaper that will transport you to the heart of a bustling city at night, look no further than our city nightscape wallpaper. Download it today and experience the magic of the urban landscape right on your screen.
+If you're looking for a Cap<wbr>ti<wbr>va<wbr>ting wallpaper that will transport you to the heart of a bustling city at night, look no further than our city nightscape wallpaper. Download it today and experience the magic of the urban landscape right on your screen.
 
 
 ---

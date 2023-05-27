@@ -10,7 +10,7 @@ Whether you're looking for a relaxing beach getaway or an adrenaline-fueled moun
 
 ## Plan your trip
 
-Our comprehensive planning resources make it easy to turn your dream vacation into a reality. From budgeting tools to packing checklists, we've thought of everything so you don't have to. Check out our travel planning section to get started.
+Our Com<wbr>pre<wbr>hen<wbr>sive planning resources make it easy to turn your dream vacation into a reality. From budgeting tools to packing checklists, we've thought of everything so you don't have to. Check out our travel planning section to get started.
 
 ## User stories
 
@@ -73,7 +73,7 @@ Whether you're looking for a relaxing beach getaway or an adrenaline-fueled moun
 
 ## Plan your trip
 
-Our comprehensive planning resources make it easy to turn your dream vacation into a reality. From budgeting tools to packing checklists, we've thought of everything so you don't have to. Check out our travel planning section to get started.
+Our Com<wbr>pre<wbr>hen<wbr>sive planning resources make it easy to turn your dream vacation into a reality. From budgeting tools to packing checklists, we've thought of everything so you don't have to. Check out our travel planning section to get started.
 
 ## User stories
 

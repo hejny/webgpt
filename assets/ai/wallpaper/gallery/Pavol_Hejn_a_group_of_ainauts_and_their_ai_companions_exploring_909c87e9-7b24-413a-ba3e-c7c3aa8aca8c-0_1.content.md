@@ -6,7 +6,7 @@ Welcome to our website, where we delve into the mysteries of abandoned space fac
 
 ## Our Mission
 
-Our mission is to explore and document the remnants of abandoned space facilities, uncovering clues about the past and shedding light on the unknown. With the help of advanced technology and expert knowledge, we aim to provide a comprehensive understanding of these enigmatic structures.
+Our mission is to explore and document the remnants of abandoned space facilities, uncovering clues about the past and shedding light on the unknown. With the help of advanced technology and expert knowledge, we aim to provide a Com<wbr>pre<wbr>hen<wbr>sive understanding of these enigmatic structures.
 
 ## Our Work
 
@@ -24,17 +24,17 @@ Here are some stories from our users who have been inspired by our work:
 
 For more information on abandoned space facilities and our exploration efforts, check out these resources:
 
-- [NASA's Abandoned Spacecraft page](#)
-- [The Search for Abandoned Space Facilities: A Comprehensive Guide](#)
-- [Exploring the Unknown: Ainautes and Their AI Companions](#)
+-   [NASA's Abandoned Spacecraft page](#)
+-   [The Search for Abandoned Space Facilities: A Com<wbr>pre<wbr>hen<wbr>sive Guide](#)
+-   [Exploring the Unknown: Ainautes and Their AI Companions](#)
 
 ## Contact Us
 
 If you have any questions or comments about our work, please don't hesitate to reach out to us. You can contact us via email at [exploration@unknownspace.com](mailto:exploration@unknownspace.com) or through our social media channels:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 Thank you for visiting our website, and we hope to inspire you to explore the unknown.
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ Welcome to our website, where we delve into the mysteries of abandoned space fac
 
 ## Our Mission
 
-Our mission is to explore and document the remnants of abandoned space facilities, uncovering clues about the past and shedding light on the unknown. With the help of advanced technology and expert knowledge, we aim to provide a comprehensive understanding of these enigmatic structures.
+Our mission is to explore and document the remnants of abandoned space facilities, uncovering clues about the past and shedding light on the unknown. With the help of advanced technology and expert knowledge, we aim to provide a Com<wbr>pre<wbr>hen<wbr>sive understanding of these enigmatic structures.
 
 ## Our Work
 
@@ -88,7 +88,7 @@ Here are some stories from our users who have been inspired by our work:
 For more information on abandoned space facilities and our exploration efforts, check out these resources:
 
 - [NASA's Abandoned Spacecraft page](#)
-- [The Search for Abandoned Space Facilities: A Comprehensive Guide](#)
+- [The Search for Abandoned Space Facilities: A Com<wbr>pre<wbr>hen<wbr>sive Guide](#)
 - [Exploring the Unknown: Ainautes and Their AI Companions](#)
 
 ## Contact Us

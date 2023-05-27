@@ -14,24 +14,24 @@ The monochromatic color scheme means that this background will complement any in
 
 Here are some examples of how our abstract shapes background has been used in real-life settings:
 
-- "I recently redecorated my home office and wanted to create a space that was both inspiring and calming. The abstract shapes background was the perfect choice. It adds interest to the room without being too distracting, and the monochromatic color scheme makes it easy to pair with other decor items." - Jane, 32
-- "As an interior designer, I am always on the lookout for unique and interesting design elements. The abstract shapes background caught my eye immediately. It is a versatile design that can be used in many different settings, from residential to commercial spaces." - Mark, 45
+-   "I recently redecorated my home office and wanted to create a space that was both inspiring and calming. The abstract shapes background was the perfect choice. It adds interest to the room without being too distracting, and the monochromatic color scheme makes it easy to pair with other decor items." - Jane, 32
+-   "As an interior designer, I am always on the lookout for unique and interesting design elements. The abstract shapes background caught my eye immediately. It is a versatile design that can be used in many different settings, from residential to commercial spaces." - Mark, 45
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and the fascinating world of fractals, here are some resources to check out:
+If you're interested in learning more about the Mandelbrot set and the Fas<wbr>ci<wbr>na<wbr>ting world of fractals, here are some resources to check out:
 
-- [Fractal Foundation](#) - A non-profit organization dedicated to promoting education about fractals and their applications.
-- [Mandelbrot Set Explorer](#) - An interactive tool for exploring the Mandelbrot set and other fractals.
-- [The Beauty of Fractals](#) - A TED talk by mathematician Ron Eglash about the cultural significance of fractals.
+-   [Fractal Foundation](#) - A non-profit organization dedicated to promoting education about fractals and their applications.
+-   [Mandelbrot Set Explorer](#) - An interactive tool for exploring the Mandelbrot set and other fractals.
+-   [The Beauty of Fractals](#) - A TED talk by mathematician Ron Eglash about the cultural significance of fractals.
 
 ## Contact Us
 
 If you have any questions about our abstract shapes background or would like to place an order, please don't hesitate to contact us. Our friendly customer service team is always happy to help.
 
-- Phone: 555-1234
-- Email: info@abstractshapes.com
-- Address: 123 Main Street, Anytown USA
+-   Phone: 555-1234
+-   Email: info@abstractshapes.com
+-   Address: 123 Main Street, Anytown USA
 
 Thank you for visiting our website and we hope you enjoy our abstract shapes background!
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -79,7 +79,7 @@ Here are some examples of how our abstract shapes wallpaper has been used in rea
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and the fascinating world of fractals, here are some resources to check out:
+If you're interested in learning more about the Mandelbrot set and the Fas<wbr>ci<wbr>na<wbr>ting world of fractals, here are some resources to check out:
 
 - [Fractal Foundation](#) - A non-profit organization dedicated to promoting education about fractals and their applications.
 - [Mandelbrot Set Explorer](#) - An interactive tool for exploring the Mandelbrot set and other fractals.
@@ -124,7 +124,7 @@ Here are some examples of how our abstract shapes background has been used in re
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and the fascinating world of fractals, here are some resources to check out:
+If you're interested in learning more about the Mandelbrot set and the Fas<wbr>ci<wbr>na<wbr>ting world of fractals, here are some resources to check out:
 
 - [Fractal Foundation](#) - A non-profit organization dedicated to promoting education about fractals and their applications.
 - [Mandelbrot Set Explorer](#) - An interactive tool for exploring the Mandelbrot set and other fractals.

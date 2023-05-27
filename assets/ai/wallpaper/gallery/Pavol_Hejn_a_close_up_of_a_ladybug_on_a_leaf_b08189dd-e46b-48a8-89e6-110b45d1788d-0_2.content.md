@@ -2,7 +2,7 @@
 
 # Nature's Wonders
 
-Welcome to Nature's Wonders, a website dedicated to showcasing the beauty and diversity of our natural world. Our collection of stunning wallpapers features some of the most captivating images of flora and fauna from around the globe.
+Welcome to Nature's Wonders, a website dedicated to showcasing the beauty and diversity of our natural world. Our collection of stunning wallpapers features some of the most Cap<wbr>ti<wbr>va<wbr>ting images of flora and fauna from around the globe.
 
 ## Ladybug on a Leaf
 
@@ -24,7 +24,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Nature's Wonders
 
-Welcome to Nature's Wonders, a website dedicated to showcasing the beauty and diversity of our natural world. Our collection of stunning wallpapers features some of the most captivating images of flora and fauna from around the globe.
+Welcome to Nature's Wonders, a website dedicated to showcasing the beauty and diversity of our natural world. Our collection of stunning wallpapers features some of the most Cap<wbr>ti<wbr>va<wbr>ting images of flora and fauna from around the globe.
 
 ## Ladybug on a Leaf
 

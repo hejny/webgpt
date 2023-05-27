@@ -8,9 +8,9 @@ Welcome to our website dedicated to exploring the exciting world of neural netwo
 
 Neural networks are computer systems designed to mimic the way the human brain works. They are used in a wide range of applications, from image recognition and natural language processing to self-driving cars and robotics. Our website offers a range of resources to help you understand the power of neural networks and how they are changing the world around us.
 
-## Our Complementary Background
+## Our Com<wbr>ple<wbr>men<wbr>ta<wbr>ry Background
 
-As you explore our website, you'll notice a stunning background featuring a simple graphic of a neural network against a backdrop of complementary colors. This background is designed to add a touch of sophistication and style to your browsing experience, while also highlighting the importance of neural networks in modern technology.
+As you explore our website, you'll notice a stunning background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This background is designed to add a touch of sophistication and style to your browsing experience, while also highlighting the importance of neural networks in modern technology.
 
 ## User Stories
 
@@ -42,14 +42,14 @@ If you have any questions or comments about our website or the world of neural n
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a neural network, against a background of complementary colors."
+"A wallpaper with a simple graphic of a neural network, against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -69,7 +69,7 @@ Welcome to our website for tech enthusiasts who are passionate about the latest 
 
 ## About our Neural Network Wallpaper
 
-Our website features a stunning wallpaper with a simple graphic of a neural network against a background of complementary colors. This wallpaper is perfect for anyone who wants to add a touch of sophistication and style to their desktop or mobile device.
+Our website features a stunning wallpaper with a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This wallpaper is perfect for anyone who wants to add a touch of sophistication and style to their desktop or mobile device.
 
 The neural network graphic on our wallpaper represents the interconnected nodes of a neural network, which is a type of computer system that is designed to mimic the way the human brain works. Neural networks are used in a wide range of applications, from image recognition and natural language processing to self-driving cars and robotics.
 
@@ -109,7 +109,7 @@ Heading should not include word "wallpaper". The website should not be about the
 ---
 
 
-# Exploring the Fascinating World of Neural Networks
+# Exploring the Fas<wbr>ci<wbr>na<wbr>ting World of Neural Networks
 
 Welcome to our website dedicated to exploring the exciting world of neural networks and machine learning. Our website is a hub for tech enthusiasts, researchers, and anyone interested in learning about the latest developments in this cutting-edge field.
 
@@ -117,9 +117,9 @@ Welcome to our website dedicated to exploring the exciting world of neural netwo
 
 Neural networks are computer systems designed to mimic the way the human brain works. They are used in a wide range of applications, from image recognition and natural language processing to self-driving cars and robotics. Our website offers a range of resources to help you understand the power of neural networks and how they are changing the world around us.
 
-## Our Complementary Background
+## Our Com<wbr>ple<wbr>men<wbr>ta<wbr>ry Background
 
-As you explore our website, you'll notice a stunning background featuring a simple graphic of a neural network against a backdrop of complementary colors. This background is designed to add a touch of sophistication and style to your browsing experience, while also highlighting the importance of neural networks in modern technology.
+As you explore our website, you'll notice a stunning background featuring a simple graphic of a neural network against a backdrop of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors. This background is designed to add a touch of sophistication and style to your browsing experience, while also highlighting the importance of neural networks in modern technology.
 
 ## User Stories
 

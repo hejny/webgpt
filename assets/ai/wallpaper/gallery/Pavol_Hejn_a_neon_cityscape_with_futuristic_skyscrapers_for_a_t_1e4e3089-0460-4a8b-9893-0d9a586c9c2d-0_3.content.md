@@ -12,9 +12,9 @@ Our team is made up of passionate tech enthusiasts who are dedicated to sharing 
 
 Stay up-to-date with the latest developments in the tech industry by checking out our recent articles:
 
-- "The Rise of AI-Powered Virtual Assistants"
-- "How Blockchain is Revolutionizing Supply Chain Management"
-- "Protecting Your Online Privacy: Tips and Tools"
+-   "The Rise of AI-Powered Virtual Assistants"
+-   "How Blockchain is Revolutionizing Supply Chain Management"
+-   "Protecting Your Online Privacy: Tips and Tools"
 
 ## User Stories
 
@@ -22,7 +22,7 @@ We love hearing from our readers about how our content has helped them navigate 
 
 > "I was able to secure my online accounts after reading your article on password managers. Thank you!"
 >
-> "Your coverage of the latest advancements in self-driving cars has been fascinating. Keep up the great work!"
+> "Your coverage of the latest advancements in self-driving cars has been Fas<wbr>ci<wbr>na<wbr>ting. Keep up the great work!"
 >
 > "As someone who's always been interested in blockchain but didn't know where to start, your beginner's guide was incredibly helpful."
 
@@ -30,9 +30,9 @@ We love hearing from our readers about how our content has helped them navigate 
 
 Looking for more information on a particular topic? Check out our list of recommended resources:
 
-- [TechCrunch](#)
-- [Wired](#)
-- [MIT Technology Review](#)
+-   [TechCrunch](#)
+-   [Wired](#)
+-   [MIT Technology Review](#)
 
 ## Contact Us
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ We love hearing from our readers about how our content has helped them navigate 
 
 > "I was able to secure my online accounts after reading your article on password managers. Thank you!"
 >
-> "Your coverage of the latest advancements in self-driving cars has been fascinating. Keep up the great work!"
+> "Your coverage of the latest advancements in self-driving cars has been Fas<wbr>ci<wbr>na<wbr>ting. Keep up the great work!"
 >
 > "As someone who's always been interested in blockchain but didn't know where to start, your beginner's guide was incredibly helpful."
 
@@ -133,7 +133,7 @@ We love hearing from our readers about how our content has helped them navigate 
 
 > "I was able to secure my online accounts after reading your article on password managers. Thank you!"
 >
-> "Your coverage of the latest advancements in self-driving cars has been fascinating. Keep up the great work!"
+> "Your coverage of the latest advancements in self-driving cars has been Fas<wbr>ci<wbr>na<wbr>ting. Keep up the great work!"
 >
 > "As someone who's always been interested in blockchain but didn't know where to start, your beginner's guide was incredibly helpful."
 

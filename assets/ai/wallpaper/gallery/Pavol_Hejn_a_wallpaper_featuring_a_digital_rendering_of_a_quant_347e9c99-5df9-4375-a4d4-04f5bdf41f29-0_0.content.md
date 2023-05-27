@@ -16,7 +16,7 @@ Our website features user stories from individuals who have been impacted by the
 
 ## Resources
 
-We provide a variety of resources for those interested in learning more about quantum computing. Our curated list of articles, videos, and books offers a comprehensive introduction to the field. We also offer a directory of companies and organizations working in the quantum computing space.
+We provide a variety of resources for those interested in learning more about quantum computing. Our curated list of articles, videos, and books offers a Com<wbr>pre<wbr>hen<wbr>sive introduction to the field. We also offer a directory of companies and organizations working in the quantum computing space.
 
 ## Contact Us
 
@@ -65,7 +65,7 @@ Our website features user stories from individuals who have been impacted by the
 
 ## Resources
 
-We provide a variety of resources for those interested in learning more about quantum computing. Our curated list of articles, videos, and books offers a comprehensive introduction to the field. We also offer a directory of companies and organizations working in the quantum computing space.
+We provide a variety of resources for those interested in learning more about quantum computing. Our curated list of articles, videos, and books offers a Com<wbr>pre<wbr>hen<wbr>sive introduction to the field. We also offer a directory of companies and organizations working in the quantum computing space.
 
 ## Contact Us
 

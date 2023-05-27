@@ -2,7 +2,7 @@
 
 # MathArt
 
-Welcome to MathArt, where we explore the fascinating intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into captivating visual designs.
+Welcome to MathArt, where we explore the Fas<wbr>ci<wbr>na<wbr>ting intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into Cap<wbr>ti<wbr>va<wbr>ting visual designs.
 
 ## About the Background
 
@@ -18,19 +18,19 @@ Our Mandelbrot Dreams background has been used in a variety of settings, from mo
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and other fascinating mathematical concepts, check out these resources:
+If you're interested in learning more about the Mandelbrot set and other Fas<wbr>ci<wbr>na<wbr>ting mathematical concepts, check out these resources:
 
-- [Wolfram MathWorld](#wolfram-mathworld)
-- [Numberphile YouTube Channel](#numberphile-youtube-channel)
-- [The Mandelbrot Set: Images of Complexity](#the-mandelbrot-set-images-of-complexity)
+-   [Wolfram MathWorld](#wolfram-mathworld)
+-   [Numberphile YouTube Channel](#numberphile-youtube-channel)
+-   [The Mandelbrot Set: Images of Complexity](#the-mandelbrot-set-images-of-complexity)
 
 ## Contact Us
 
 Thank you for visiting MathArt! If you have any questions or comments about our mission to promote math through art or our Mandelbrot Dreams background, please don't hesitate to reach out to us:
 
-- Email: info@mathart.com
-- Phone: 555-123-4567
-- Social Media: [Twitter](#twitter), [Instagram](#instagram), [Facebook](#facebook)
+-   Email: info@mathart.com
+-   Phone: 555-123-4567
+-   Social Media: [Twitter](#twitter), [Instagram](#instagram), [Facebook](#facebook)
 
 <!--
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Mandelbrot Dreams Wallpaper
 
-Welcome to our website, where we explore the beauty and complexity of mathematics through art. Our Mandelbrot Dreams wallpaper is a stunning example of how mathematical concepts can be transformed into captivating visual designs.
+Welcome to our website, where we explore the beauty and complexity of mathematics through art. Our Mandelbrot Dreams wallpaper is a stunning example of how mathematical concepts can be transformed into Cap<wbr>ti<wbr>va<wbr>ting visual designs.
 
 ## About the Wallpaper
 
@@ -75,7 +75,7 @@ Our Mandelbrot Dreams wallpaper has been used in a variety of settings, from mod
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and other fascinating mathematical concepts, check out these resources:
+If you're interested in learning more about the Mandelbrot set and other Fas<wbr>ci<wbr>na<wbr>ting mathematical concepts, check out these resources:
 
 - [Wolfram MathWorld](#wolfram-mathworld)
 - [Numberphile YouTube Channel](#numberphile-youtube-channel)
@@ -101,7 +101,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Exploring the Beauty of Mathematics through Art
 
-Welcome to our website, where we celebrate the intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into captivating visual designs.
+Welcome to our website, where we celebrate the intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into Cap<wbr>ti<wbr>va<wbr>ting visual designs.
 
 ## About the Background
 
@@ -117,7 +117,7 @@ Our Mandelbrot Dreams background has been used in a variety of settings, from mo
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and other fascinating mathematical concepts, check out these resources:
+If you're interested in learning more about the Mandelbrot set and other Fas<wbr>ci<wbr>na<wbr>ting mathematical concepts, check out these resources:
 
 - [Wolfram MathWorld](#wolfram-mathworld)
 - [Numberphile YouTube Channel](#numberphile-youtube-channel)
@@ -143,7 +143,7 @@ Heading is too long, rewrite whole content.
 
 # MathArt: Exploring the Intersection of Math and Art
 
-Welcome to MathArt, where we celebrate the beauty and complexity of mathematics through art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into captivating visual designs.
+Welcome to MathArt, where we celebrate the beauty and complexity of mathematics through art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into Cap<wbr>ti<wbr>va<wbr>ting visual designs.
 
 ## About the Background
 
@@ -159,7 +159,7 @@ Our Mandelbrot Dreams background has been used in a variety of settings, from mo
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and other fascinating mathematical concepts, check out these resources:
+If you're interested in learning more about the Mandelbrot set and other Fas<wbr>ci<wbr>na<wbr>ting mathematical concepts, check out these resources:
 
 - [Wolfram MathWorld](#wolfram-mathworld)
 - [Numberphile YouTube Channel](#numberphile-youtube-channel)
@@ -185,7 +185,7 @@ Heading is too long, rewrite whole content.
 
 # MathArt: Where Math Meets Art
 
-Welcome to MathArt, where we explore the fascinating intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into captivating visual designs.
+Welcome to MathArt, where we explore the Fas<wbr>ci<wbr>na<wbr>ting intersection of math and art. Our Mandelbrot Dreams background is a stunning example of how mathematical concepts can be transformed into Cap<wbr>ti<wbr>va<wbr>ting visual designs.
 
 ## About the Background
 
@@ -201,7 +201,7 @@ Our Mandelbrot Dreams background has been used in a variety of settings, from mo
 
 ## References
 
-If you're interested in learning more about the Mandelbrot set and other fascinating mathematical concepts, check out these resources:
+If you're interested in learning more about the Mandelbrot set and other Fas<wbr>ci<wbr>na<wbr>ting mathematical concepts, check out these resources:
 
 - [Wolfram MathWorld](#wolfram-mathworld)
 - [Numberphile YouTube Channel](#numberphile-youtube-channel)

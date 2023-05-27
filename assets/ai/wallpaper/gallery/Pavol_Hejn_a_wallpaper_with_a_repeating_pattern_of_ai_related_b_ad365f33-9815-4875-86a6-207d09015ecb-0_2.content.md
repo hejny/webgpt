@@ -11,7 +11,7 @@ We are a team of AI enthusiasts who are passionate about exploring the potential
 ## Our Services
 
 -   **AI News:** Stay informed about the latest news and breakthroughs in AI with our curated selection of articles from top sources.
--   **AI Glossary:** Confused by all the technical jargon? Check out our comprehensive glossary of AI terms and concepts.
+-   **AI Glossary:** Confused by all the technical jargon? Check out our Com<wbr>pre<wbr>hen<wbr>sive glossary of AI terms and concepts.
 -   **AI Events:** Find out about upcoming AI conferences, workshops, and meetups in your area.
 -   **AI Jobs:** Looking for a career in AI? Browse our job board for the latest openings in this exciting field.
 
@@ -75,7 +75,7 @@ We are a team of AI enthusiasts who are passionate about exploring the potential
 ## Our Services
 
 - **AI News:** Stay informed about the latest news and breakthroughs in AI with our curated selection of articles from top sources.
-- **AI Glossary:** Confused by all the technical jargon? Check out our comprehensive glossary of AI terms and concepts.
+- **AI Glossary:** Confused by all the technical jargon? Check out our Com<wbr>pre<wbr>hen<wbr>sive glossary of AI terms and concepts.
 - **AI Events:** Find out about upcoming AI conferences, workshops, and meetups in your area.
 - **AI Jobs:** Looking for a career in AI? Browse our job board for the latest openings in this exciting field.
 

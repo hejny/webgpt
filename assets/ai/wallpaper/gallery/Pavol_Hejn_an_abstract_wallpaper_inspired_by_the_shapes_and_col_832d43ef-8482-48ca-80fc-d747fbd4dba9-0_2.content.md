@@ -10,20 +10,20 @@ At Quantum Dreams, we believe that science and design are two sides of the same 
 
 ## Our Abstract Background
 
-Our abstract background features bold colors and intricate lines that are reminiscent of the fascinating world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
+Our abstract background features bold colors and intricate lines that are reminiscent of the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
 
 ## User Stories
 
-- "I love the unique design of the Quantum Dreams background. It adds a touch of creativity to my website." - Sarah, web designer
-- "As a science enthusiast, I appreciate the way Quantum Dreams combines science and design in their abstract background." - Mark, physicist
+-   "I love the unique design of the Quantum Dreams background. It adds a touch of creativity to my website." - Sarah, web designer
+-   "As a science enthusiast, I appreciate the way Quantum Dreams combines science and design in their abstract background." - Mark, physicist
 
 ## References
 
 If you're interested in learning more about the intersection of science and design, here are some great resources to check out:
 
-- [Designing for Science: How to Create Communication That Matters](#)
-- [The Art of Science: A Practical Guide to Experiments, Observations, and Handling Data](#)
-- [Science and Design: The Art and Methodology of Illustrating Scientific Concepts and Phenomena](#)
+-   [Designing for Science: How to Create Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion That Matters](#)
+-   [The Art of Science: A Practical Guide to Experiments, Observations, and Handling Data](#)
+-   [Science and Design: The Art and Methodology of Illustrating Scientific Concepts and Phenomena](#)
 
 ## Contact Us
 
@@ -31,7 +31,7 @@ If you have any questions or comments about our work or would like to collaborat
 
 ---
 
-Thank you for visiting Quantum Dreams. We hope our abstract background inspires you to explore the fascinating intersection of science and design.
+Thank you for visiting Quantum Dreams. We hope our abstract background inspires you to explore the Fas<wbr>ci<wbr>na<wbr>ting intersection of science and design.
 
 <!--
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -64,7 +64,7 @@ Welcome to Quantum Dreams, where we explore the intersection of science and desi
 
 ## About Our Wallpaper Background
 
-Our abstract wallpaper features bold colors and intricate lines that are reminiscent of the fascinating world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
+Our abstract wallpaper features bold colors and intricate lines that are reminiscent of the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
 
 ## User Stories
 
@@ -99,11 +99,11 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Quantum Dreams - Exploring the Intersection of Science and Design
 
-Welcome to Quantum Dreams, where we explore the fascinating intersection of science and design. Our abstract background is inspired by the shapes and colors of quantum physics, bringing a touch of scientific wonder to your digital space.
+Welcome to Quantum Dreams, where we explore the Fas<wbr>ci<wbr>na<wbr>ting intersection of science and design. Our abstract background is inspired by the shapes and colors of quantum physics, bringing a touch of scientific wonder to your digital space.
 
 ## About Our Abstract Background
 
-Our abstract background features bold colors and intricate lines that are reminiscent of the fascinating world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
+Our abstract background features bold colors and intricate lines that are reminiscent of the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
 
 ## User Stories
 
@@ -114,7 +114,7 @@ Our abstract background features bold colors and intricate lines that are remini
 
 If you're interested in learning more about the intersection of science and design, here are some great resources to check out:
 
-- [Designing for Science: How to Create Communication That Matters](#)
+- [Designing for Science: How to Create Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion That Matters](#)
 - [The Art of Science: A Practical Guide to Experiments, Observations, and Handling Data](#)
 - [Science and Design: The Art and Methodology of Illustrating Scientific Concepts and Phenomena](#)
 
@@ -146,7 +146,7 @@ At Quantum Dreams, we believe that science and design are two sides of the same 
 
 ## Our Abstract Background
 
-Our abstract background features bold colors and intricate lines that are reminiscent of the fascinating world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
+Our abstract background features bold colors and intricate lines that are reminiscent of the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics. The design is perfect for those who want to add a touch of scientific intrigue to their digital space, whether it's a computer desktop or a website background.
 
 ## User Stories
 
@@ -157,7 +157,7 @@ Our abstract background features bold colors and intricate lines that are remini
 
 If you're interested in learning more about the intersection of science and design, here are some great resources to check out:
 
-- [Designing for Science: How to Create Communication That Matters](#)
+- [Designing for Science: How to Create Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion That Matters](#)
 - [The Art of Science: A Practical Guide to Experiments, Observations, and Handling Data](#)
 - [Science and Design: The Art and Methodology of Illustrating Scientific Concepts and Phenomena](#)
 
@@ -167,7 +167,7 @@ If you have any questions or comments about our work or would like to collaborat
 
 ---
 
-Thank you for visiting Quantum Dreams. We hope our abstract background inspires you to explore the fascinating intersection of science and design.
+Thank you for visiting Quantum Dreams. We hope our abstract background inspires you to explore the Fas<wbr>ci<wbr>na<wbr>ting intersection of science and design.
 
 
 ---

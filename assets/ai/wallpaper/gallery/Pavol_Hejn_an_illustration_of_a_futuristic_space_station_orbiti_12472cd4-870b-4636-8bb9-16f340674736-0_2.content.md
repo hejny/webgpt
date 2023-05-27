@@ -18,7 +18,7 @@ Our team of experienced writers and researchers are dedicated to providing accur
 
 ## Explore the Possibilities
 
-Discover the endless possibilities of space travel and exploration through our carefully curated content. From the search for extraterrestrial life to the colonization of other planets, the universe is full of exciting opportunities waiting to be explored.
+Discover the endless possibilities of space travel and exploration through our carefully curated content. From the search for Ex<wbr>tra<wbr>terre<wbr>strial life to the colonization of other planets, the universe is full of exciting opportunities waiting to be explored.
 
 ## User Stories
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ Our team of experienced writers and researchers are dedicated to providing accur
 
 ## Explore the Possibilities
 
-Discover the endless possibilities of space travel and exploration through our carefully curated content. From the search for extraterrestrial life to the colonization of other planets, the universe is full of exciting opportunities waiting to be explored.
+Discover the endless possibilities of space travel and exploration through our carefully curated content. From the search for Ex<wbr>tra<wbr>terre<wbr>strial life to the colonization of other planets, the universe is full of exciting opportunities waiting to be explored.
 
 ## Contact Us
 
@@ -145,7 +145,7 @@ Our team of experienced writers and researchers are dedicated to providing accur
 
 ## Explore the Possibilities
 
-Discover the endless possibilities of space travel and exploration through our carefully curated content. From the search for extraterrestrial life to the colonization of other planets, the universe is full of exciting opportunities waiting to be explored.
+Discover the endless possibilities of space travel and exploration through our carefully curated content. From the search for Ex<wbr>tra<wbr>terre<wbr>strial life to the colonization of other planets, the universe is full of exciting opportunities waiting to be explored.
 
 ## User Stories
 

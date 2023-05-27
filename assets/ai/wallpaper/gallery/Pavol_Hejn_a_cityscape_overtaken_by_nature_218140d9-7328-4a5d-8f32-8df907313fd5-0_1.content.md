@@ -4,13 +4,13 @@
 
 Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to bring the outdoors in and create a space that nurtures your mind, body, and soul.
 
-Our captivating background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for incorporating nature into your indoor spaces.
+Our Cap<wbr>ti<wbr>va<wbr>ting background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for incorporating nature into your indoor spaces.
 
 ## Why Choose Urban Jungle?
 
-- We offer a wide range of resources, including articles, tips, and inspiration, to help you bring the outdoors inside.
-- Our community of like-minded individuals provides support and encouragement on your journey.
-- Our captivating background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
+-   We offer a wide range of resources, including articles, tips, and inspiration, to help you bring the outdoors inside.
+-   Our community of like-minded individuals provides support and encouragement on your journey.
+-   Our Cap<wbr>ti<wbr>va<wbr>ting background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
 
 ## User Stories
 
@@ -24,9 +24,9 @@ Here are some stories from our community members:
 
 Check out these resources to learn more about the benefits of incorporating nature into your indoor spaces:
 
-- [The Biophilic Office Project](#)
-- [The Benefits of Biophilic Design](#)
-- [How Plants Can Improve Your Work Environment](#)
+-   [The Biophilic Office Project](#)
+-   [The Benefits of Biophilic Design](#)
+-   [How Plants Can Improve Your Work Environment](#)
 
 ## Connect with Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -105,13 +105,13 @@ Heading should not include word "wallpaper". The website should not be about the
 
 Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to embrace nature's beauty and create a space that nurtures your mind, body, and soul.
 
-Our captivating background image, "A cityscape overtaken by nature," serves as a reminder of the power and resilience of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for bringing the outdoors inside.
+Our Cap<wbr>ti<wbr>va<wbr>ting background image, "A cityscape overtaken by nature," serves as a reminder of the power and resilience of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for bringing the outdoors inside.
 
 ## Why Choose Urban Jungle?
 
 - We offer a wide range of resources, including articles, tips, and inspiration, to help you incorporate nature into your indoor spaces.
 - Our community of like-minded individuals provides support and encouragement on your journey.
-- Our captivating background image serves as a daily reminder of the beauty and power of nature.
+- Our Cap<wbr>ti<wbr>va<wbr>ting background image serves as a daily reminder of the beauty and power of nature.
 
 ## User Stories
 
@@ -153,13 +153,13 @@ Heading is too long, rewrite whole content.
 
 Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to embrace nature's beauty and create a space that nurtures your mind, body, and soul.
 
-Our captivating background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for bringing the outdoors inside.
+Our Cap<wbr>ti<wbr>va<wbr>ting background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for bringing the outdoors inside.
 
 ## Why Choose Urban Jungle?
 
 - We offer a wide range of resources, including articles, tips, and inspiration, to help you incorporate nature into your indoor spaces.
 - Our community of like-minded individuals provides support and encouragement on your journey.
-- Our captivating background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
+- Our Cap<wbr>ti<wbr>va<wbr>ting background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
 
 ## User Stories
 
@@ -195,13 +195,13 @@ Heading is too long, rewrite whole content.
 
 Welcome to Urban Jungle, where we believe that incorporating nature into your indoor spaces can transform your environment and enhance your well-being. Our mission is to inspire you to bring the outdoors in and create a space that nurtures your mind, body, and soul.
 
-Our captivating background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for incorporating nature into your indoor spaces.
+Our Cap<wbr>ti<wbr>va<wbr>ting background image, "A cityscape overtaken by nature," serves as a daily reminder of the beauty and power of the natural world. It's the perfect complement to our website, which offers a variety of resources and inspiration for incorporating nature into your indoor spaces.
 
 ## Why Choose Urban Jungle?
 
 - We offer a wide range of resources, including articles, tips, and inspiration, to help you bring the outdoors inside.
 - Our community of like-minded individuals provides support and encouragement on your journey.
-- Our captivating background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
+- Our Cap<wbr>ti<wbr>va<wbr>ting background image adds a touch of nature to your digital space and serves as a daily reminder of the beauty and power of the natural world.
 
 ## User Stories
 

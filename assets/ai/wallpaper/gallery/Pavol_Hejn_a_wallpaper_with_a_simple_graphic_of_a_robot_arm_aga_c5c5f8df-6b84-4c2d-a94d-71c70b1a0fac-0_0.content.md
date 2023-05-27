@@ -2,11 +2,11 @@
 
 # RoboTask
 
-Welcome to RoboTask, your one-stop solution for automating repetitive tasks in your workflow. Our simple yet powerful automation software can help you save time and boost productivity. 
+Welcome to RoboTask, your one-stop solution for automating repetitive tasks in your workflow. Our simple yet powerful automation software can help you save time and boost productivity.
 
 ## Customize Your Workspace with our Robot Arm Wallpaper
 
-Add a touch of personality to your workspace with our robot arm wallpaper. This simple graphic against a gradient background of two complementary colors will give your desktop a modern and futuristic look.
+Add a touch of personality to your workspace with our robot arm wallpaper. This simple graphic against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors will give your desktop a modern and futuristic look.
 
 ### How to Download and Set the Wallpaper
 
@@ -19,11 +19,11 @@ Add a touch of personality to your workspace with our robot arm wallpaper. This 
 
 ## Features
 
-- Automate any task with ease
-- Create custom workflows
-- Schedule tasks to run at specific times
-- Monitor running tasks in real-time
-- Get notified when tasks are complete
+-   Automate any task with ease
+-   Create custom workflows
+-   Schedule tasks to run at specific times
+-   Monitor running tasks in real-time
+-   Get notified when tasks are complete
 
 ## User Stories
 
@@ -37,22 +37,22 @@ If you have any questions or feedback, please don't hesitate to [contact us](#co
 
 ## References
 
-- [How to Automate Repetitive Tasks with RoboTask](#)
-- [10 Benefits of Task Automation](#)
-- [The Future of Work: How Automation is Changing the Workplace](#)
+-   [How to Automate Repetitive Tasks with RoboTask](#)
+-   [10 Benefits of Task Automation](#)
+-   [The Future of Work: How Automation is Changing the Workplace](#)
 
 <!--
 
 Write me content for website with wallpaper which alt text is:
 
-"A wallpaper with a simple graphic of a robot arm, against a gradient background of two complementary colors."
+"A wallpaper with a simple graphic of a robot arm, against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors."
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -68,11 +68,11 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # RoboTask - Automate Your Workflow with Ease
 
-Welcome to RoboTask, your one-stop solution for automating repetitive tasks in your workflow. Our simple yet powerful automation software can help you save time and boost productivity. 
+Welcome to RoboTask, your one-stop solution for automating repetitive tasks in your workflow. Our simple yet powerful automation software can help you save time and boost productivity.
 
 ## Customize Your Workspace with our Robot Arm Wallpaper
 
-Add a touch of personality to your workspace with our robot arm wallpaper. This simple graphic against a gradient background of two complementary colors will give your desktop a modern and futuristic look.
+Add a touch of personality to your workspace with our robot arm wallpaper. This simple graphic against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors will give your desktop a modern and futuristic look.
 
 ### How to Download and Set the Wallpaper
 

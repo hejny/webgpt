@@ -10,10 +10,10 @@ As you browse our website, you'll notice a stunning background image that captur
 
 ## Features
 
-- Comprehensive guides and resources on astronomy, including star charts, telescope reviews, and more
-- News and updates on the latest discoveries in space exploration and astrophysics
-- Engaging articles and blog posts that explore the science and history of astronomy
-- A community forum where you can connect with other stargazers and share your experiences and insights
+-   Com<wbr>pre<wbr>hen<wbr>sive guides and resources on astronomy, including star charts, telescope reviews, and more
+-   News and updates on the latest discoveries in space exploration and astrophysics
+-   Engaging articles and blog posts that explore the science and history of astronomy
+-   A community forum where you can connect with other stargazers and share your experiences and insights
 
 ## User Stories
 
@@ -25,9 +25,9 @@ As you browse our website, you'll notice a stunning background image that captur
 
 Looking for more information about astronomy? Check out these helpful resources:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Astronomy Magazine](#astronomy-magazine)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Astronomy Magazine](#astronomy-magazine)
 
 ## Contact Us
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -118,7 +118,7 @@ As you browse our website, you'll notice a stunning background image that captur
 
 ## Features
 
-- Comprehensive guides and resources on astronomy, including star charts, telescope reviews, and more
+- Com<wbr>pre<wbr>hen<wbr>sive guides and resources on astronomy, including star charts, telescope reviews, and more
 - News and updates on the latest discoveries in space exploration and astrophysics
 - Engaging articles and blog posts that explore the science and history of astronomy
 - A community forum where you can connect with other stargazers and share your experiences and insights

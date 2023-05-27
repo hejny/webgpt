@@ -2,7 +2,7 @@
 
 # Space Wonders
 
-Welcome to our website dedicated to exploring the wonders of space! Our stunning background depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows. This captivating image sets the tone for our website, which is all about sharing the excitement and awe-inspiring beauty of space.
+Welcome to our website dedicated to exploring the wonders of space! Our stunning background depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our website, which is all about sharing the excitement and awe-inspiring beauty of space.
 
 ## About Us
 
@@ -12,26 +12,26 @@ Our website is run by a team of passionate space enthusiasts who are dedicated t
 
 Our website is designed to appeal to a wide range of users, from casual space fans to serious scientists and researchers. Here are some examples of how our website might be used:
 
-- A high school student researching a paper on the history of space exploration
-- An amateur astronomer looking for tips on observing the night sky
-- A professional scientist seeking the latest data on a particular space mission
+-   A high school student researching a paper on the history of space exploration
+-   An amateur astronomer looking for tips on observing the night sky
+-   A professional scientist seeking the latest data on a particular space mission
 
 ## Resources
 
 We offer a variety of resources for anyone interested in space exploration, including:
 
-- News articles on the latest space missions and discoveries
-- Educational materials for students and teachers, including lesson plans and activities
-- A directory of space-related organizations and events
-- A forum where users can discuss space-related topics and ask questions
+-   News articles on the latest space missions and discoveries
+-   Educational materials for students and teachers, including lesson plans and activities
+-   A directory of space-related organizations and events
+-   A forum where users can discuss space-related topics and ask questions
 
 ## References
 
 If you're looking for more information on space exploration, we recommend checking out these resources:
 
-- NASA's website: #nasa
-- The European Space Agency's website: #esa
-- The Planetary Society's website: #planetary-society
+-   NASA's website: #nasa
+-   The European Space Agency's website: #esa
+-   The Planetary Society's website: #planetary-society
 
 ## Contact Us
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -111,7 +111,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of Space
 
-Welcome to our website dedicated to exploring the wonders of space! Our stunning background depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows. This captivating image sets the tone for our website, which is all about sharing the excitement and awe-inspiring beauty of space.
+Welcome to our website dedicated to exploring the wonders of space! Our stunning background depicts a spacecraft in orbit around a distant planet or moon, with dramatic lighting and shadows. This Cap<wbr>ti<wbr>va<wbr>ting image sets the tone for our website, which is all about sharing the excitement and awe-inspiring beauty of space.
 
 ## About Us
 

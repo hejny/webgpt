@@ -12,23 +12,23 @@ At Ocean Vibes, we are committed to sharing our love and knowledge of the ocean 
 
 Our community is made up of people from all walks of life who share a common love for the ocean. Here are some stories from our users:
 
-- "I've always been fascinated by the ocean, but never knew where to start. Ocean Vibes has given me a wealth of information and inspiration to explore this amazing world." - Emily, 28
-- "The articles on Ocean Vibes have helped me plan my dream trip to Hawaii. I can't wait to explore the coral reefs and see all the incredible marine life." - Mark, 35
-- "As an avid scuba diver, I appreciate the dedication Ocean Vibes has to promoting responsible tourism and conservation efforts. It's important to protect the ocean so future generations can enjoy it too." - Sarah, 42
+-   "I've always been fascinated by the ocean, but never knew where to start. Ocean Vibes has given me a wealth of information and inspiration to explore this amazing world." - Emily, 28
+-   "The articles on Ocean Vibes have helped me plan my dream trip to Hawaii. I can't wait to explore the coral reefs and see all the incredible marine life." - Mark, 35
+-   "As an avid scuba diver, I appreciate the dedication Ocean Vibes has to promoting responsible tourism and conservation efforts. It's important to protect the ocean so future generations can enjoy it too." - Sarah, 42
 
 ## Resources
 
 Check out some of our most popular articles and resources:
 
-- [10 Best Beaches in the World](#best-beaches)
-- [Protecting Our Oceans: Tips for Responsible Tourism](#responsible-tourism)
-- [The Fascinating World of Coral Reefs](#coral-reefs)
+-   [10 Best Beaches in the World](#best-beaches)
+-   [Protecting Our Oceans: Tips for Responsible Tourism](#responsible-tourism)
+-   [The Fas<wbr>ci<wbr>na<wbr>ting World of Coral Reefs](#coral-reefs)
 
 ## Contact Us
 
 Do you have questions or suggestions? We'd love to hear from you! Reach out to us at [oceanvibes@example.com](mailto:oceanvibes@example.com).
 
-Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty of the ocean for generations to come 🐬🌊. 
+Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty of the ocean for generations to come 🐬🌊.
 
 ---
 
@@ -51,19 +51,19 @@ Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty o
 
 As travelers, it's important to be mindful of our impact on the environment. Here are some tips for responsible tourism:
 
-- Choose eco-friendly accommodations and tours.
-- Respect local customs and traditions.
-- Reduce your plastic use by bringing a reusable water bottle and shopping bag.
-- Support local businesses and communities.
+-   Choose eco-friendly accommodations and tours.
+-   Respect local customs and traditions.
+-   Reduce your plastic use by bringing a reusable water bottle and shopping bag.
+-   Support local businesses and communities.
 
 ### Coral Reefs
 
-Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some fascinating facts about these underwater wonderlands:
+Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some Fas<wbr>ci<wbr>na<wbr>ting facts about these underwater wonderlands:
 
-- Coral reefs cover less than 1% of the ocean floor but support over 25% of marine life.
-- The Great Barrier Reef in Australia is the largest coral reef system in the world.
-- Coral reefs are made up of tiny animals called polyps that secrete calcium carbonate to form a hard skeleton.
-- Coral reefs are threatened by climate change, overfishing, and pollution.
+-   Coral reefs cover less than 1% of the ocean floor but support over 25% of marine life.
+-   The Great Barrier Reef in Australia is the largest coral reef system in the world.
+-   Coral reefs are made up of tiny animals called polyps that secrete calcium carbonate to form a hard skeleton.
+-   Coral reefs are threatened by climate change, overfishing, and pollution.
 
 <!--
 
@@ -73,10 +73,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -112,13 +112,13 @@ Check out some of our most popular articles and resources:
 
 - [10 Best Beaches in the World](#best-beaches)
 - [Protecting Our Oceans: Tips for Responsible Tourism](#responsible-tourism)
-- [The Fascinating World of Coral Reefs](#coral-reefs)
+- [The Fas<wbr>ci<wbr>na<wbr>ting World of Coral Reefs](#coral-reefs)
 
 ## Contact Us
 
 Have a question or suggestion? We'd love to hear from you! Reach out to us at [oceanvibes@example.com](mailto:oceanvibes@example.com).
 
-Thank you for visiting Ocean Vibes. Let's keep the ocean beautiful for generations to come 🌊. 
+Thank you for visiting Ocean Vibes. Let's keep the ocean beautiful for generations to come 🌊.
 
 ---
 
@@ -148,7 +148,7 @@ As travelers, it's important to be mindful of our impact on the environment. Her
 
 ### Coral Reefs
 
-Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some fascinating facts about these underwater wonderlands:
+Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some Fas<wbr>ci<wbr>na<wbr>ting facts about these underwater wonderlands:
 
 - Coral reefs cover less than 1% of the ocean floor but support over 25% of marine life.
 - The Great Barrier Reef in Australia is the largest coral reef system in the world.
@@ -187,13 +187,13 @@ Check out some of our most popular articles and resources:
 
 - [10 Best Beaches in the World](#best-beaches)
 - [Protecting Our Oceans: Tips for Responsible Tourism](#responsible-tourism)
-- [The Fascinating World of Coral Reefs](#coral-reefs)
+- [The Fas<wbr>ci<wbr>na<wbr>ting World of Coral Reefs](#coral-reefs)
 
 ## Contact Us
 
 Do you have questions or suggestions? We'd love to hear from you! Reach out to us at [oceanvibes@example.com](mailto:oceanvibes@example.com).
 
-Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty of the ocean for generations to come 🐬🌊. 
+Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty of the ocean for generations to come 🐬🌊.
 
 ---
 
@@ -223,7 +223,7 @@ As travelers, it's important to be mindful of our impact on the environment. Her
 
 ### Coral Reefs
 
-Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some fascinating facts about these underwater wonderlands:
+Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some Fas<wbr>ci<wbr>na<wbr>ting facts about these underwater wonderlands:
 
 - Coral reefs cover less than 1% of the ocean floor but support over 25% of marine life.
 - The Great Barrier Reef in Australia is the largest coral reef system in the world.
@@ -262,13 +262,13 @@ Check out some of our most popular articles and resources:
 
 - [10 Best Beaches in the World](#best-beaches)
 - [Protecting Our Oceans: Tips for Responsible Tourism](#responsible-tourism)
-- [The Fascinating World of Coral Reefs](#coral-reefs)
+- [The Fas<wbr>ci<wbr>na<wbr>ting World of Coral Reefs](#coral-reefs)
 
 ## Contact Us
 
 Do you have questions or suggestions? We'd love to hear from you! Reach out to us at [oceanvibes@example.com](mailto:oceanvibes@example.com).
 
-Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty of the ocean for generations to come 🐬🌊. 
+Thank you for visiting Ocean Vibes. Let's work together to preserve the beauty of the ocean for generations to come 🐬🌊.
 
 ---
 
@@ -298,7 +298,7 @@ As travelers, it's important to be mindful of our impact on the environment. Her
 
 ### Coral Reefs
 
-Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some fascinating facts about these underwater wonderlands:
+Coral reefs are one of the most biodiverse ecosystems on the planet. Here are some Fas<wbr>ci<wbr>na<wbr>ting facts about these underwater wonderlands:
 
 - Coral reefs cover less than 1% of the ocean floor but support over 25% of marine life.
 - The Great Barrier Reef in Australia is the largest coral reef system in the world.

@@ -24,7 +24,7 @@ Ainautes are scientists and researchers who specialize in exploring the vastness
 
 ## The Gas Giant Planet
 
-The wallpaper showcases the team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet. Gas giants are planets that are primarily composed of hydrogen and helium, with no solid surface. They are some of the largest planets in the solar system and are fascinating objects to study.
+The wallpaper showcases the team of Ainautes and their AI companions conducting experiments on the surface of a massive, gas giant planet. Gas giants are planets that are primarily composed of hydrogen and helium, with no solid surface. They are some of the largest planets in the solar system and are Fas<wbr>ci<wbr>na<wbr>ting objects to study.
 
 ## The Experiment
 

@@ -10,12 +10,12 @@ Planet X is a distant planet located in a far-off galaxy, known for its stunning
 
 ## Plan Your Trip
 
-Our website offers a comprehensive guide to planning your trip to Planet X, including:
+Our website offers a Com<wbr>pre<wbr>hen<wbr>sive guide to planning your trip to Planet X, including:
 
-- Visa and travel requirements
-- Accommodation options
-- Local cuisine and dining recommendations
-- Must-see attractions and activities
+-   Visa and travel requirements
+-   Accommodation options
+-   Local cuisine and dining recommendations
+-   Must-see attractions and activities
 
 ## User Stories
 
@@ -27,9 +27,9 @@ Don't just take our word for it - read stories from real travelers who have visi
 
 For more information about Planet X and its many offerings, check out these helpful resources:
 
-- [Planet X Tourism Board](#)
-- [The Explorer's Guide to Planet X](#)
-- [National Geographic: Discovering Planet X](#)
+-   [Planet X Tourism Board](#)
+-   [The Explorer's Guide to Planet X](#)
+-   [National Geographic: Discovering Planet X](#)
 
 ## Contact Us
 
@@ -37,7 +37,7 @@ Have questions about planning your trip to Planet X? Want to share your own trav
 
 ---
 
-*Experience the adventure of a lifetime on Planet X!*
+_Experience the adventure of a lifetime on Planet X!_
 
 <!--
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -74,7 +74,7 @@ Planet X is a distant planet located in a far-off galaxy, known for its stunning
 
 ## Plan Your Trip
 
-Our website offers a comprehensive guide to planning your trip to Planet X, including:
+Our website offers a Com<wbr>pre<wbr>hen<wbr>sive guide to planning your trip to Planet X, including:
 
 - Visa and travel requirements
 - Accommodation options

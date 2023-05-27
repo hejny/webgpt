@@ -2,7 +2,7 @@
 
 # Surreal Adventures
 
-Welcome to Otherworldly Adventures, a website dedicated to exploring the unknown and the surreal. Our site is designed to take you on a journey through strange and fascinating worlds, filled with alien planets, bizarre creatures, and mind-bending landscapes.
+Welcome to Otherworldly Adventures, a website dedicated to exploring the unknown and the surreal. Our site is designed to take you on a journey through strange and Fas<wbr>ci<wbr>na<wbr>ting worlds, filled with alien planets, bizarre creatures, and mind-bending landscapes.
 
 ## Discover the Surreal Landscape
 
@@ -32,10 +32,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -51,7 +51,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Otherworldly Adventures: Exploring the Surreal Landscape
 
-Welcome to Otherworldly Adventures, a website dedicated to exploring the unknown and the surreal. Our site is designed to take you on a journey through strange and fascinating worlds, filled with alien planets, bizarre creatures, and mind-bending landscapes.
+Welcome to Otherworldly Adventures, a website dedicated to exploring the unknown and the surreal. Our site is designed to take you on a journey through strange and Fas<wbr>ci<wbr>na<wbr>ting worlds, filled with alien planets, bizarre creatures, and mind-bending landscapes.
 
 ## Discover the Surreal Landscape
 

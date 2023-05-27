@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Vintage Stargazing Map
 
-Are you fascinated by the mysteries of the universe? Do you love gazing up at the night sky, trying to identify constellations and planets? Our vintage map of the stars and constellations is the perfect addition to your home or office. 
+Are you fascinated by the mysteries of the universe? Do you love gazing up at the night sky, trying to identify constellations and planets? Our vintage map of the stars and constellations is the perfect addition to your home or office.
 
 ## Detailed Illustrations of Spacecraft and Celestial Bodies
 
@@ -30,8 +30,8 @@ Our vintage map of the stars and constellations is available as high-quality wal
 
 ### Features:
 
-- Vintage design with detailed illustrations
-- Educational and captivating
-- High-quality wallpaper for your home or office
+-   Vintage design with detailed illustrations
+-   Educational and Cap<wbr>ti<wbr>va<wbr>ting
+-   High-quality wallpaper for your home or office
 
 So why wait? Add our vintage map of the stars and constellations to your space today and start exploring the wonders of the universe!

@@ -2,7 +2,7 @@
 
 # New VR World
 
-Welcome to our website where we explore the fascinating world of virtual reality. Our mission is to provide you with the latest information, news, and insights into the ever-evolving VR landscape.
+Welcome to our website where we explore the Fas<wbr>ci<wbr>na<wbr>ting world of virtual reality. Our mission is to provide you with the latest information, news, and insights into the ever-evolving VR landscape.
 
 ## The Power of Virtual Reality
 
@@ -16,17 +16,17 @@ Our wallpaper features a simple illustration of a virtual reality headset agains
 
 We love hearing from people who have experienced VR firsthand. Here are some of their stories:
 
-- "I tried VR for the first time and was blown away by how real it felt. It was like I was actually there!"
-- "As a teacher, I use VR to take my students on virtual field trips. It's amazing how engaged they become."
-- "I suffer from anxiety, but VR has helped me overcome my fears by allowing me to face them in a safe environment."
+-   "I tried VR for the first time and was blown away by how real it felt. It was like I was actually there!"
+-   "As a teacher, I use VR to take my students on virtual field trips. It's amazing how engaged they become."
+-   "I suffer from anxiety, but VR has helped me overcome my fears by allowing me to face them in a safe environment."
 
 ## References
 
 For more information on virtual reality, check out these resources:
 
-- [Oculus](#)
-- [HTC Vive](#)
-- [Sony PlayStation VR](#)
+-   [Oculus](#)
+-   [HTC Vive](#)
+-   [Sony PlayStation VR](#)
 
 ## Contact Us
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Virtual Reality: Experience a New World
 
-Welcome to our website where we explore the fascinating world of virtual reality. Our mission is to provide you with the latest information, news, and insights into the ever-evolving VR landscape.
+Welcome to our website where we explore the Fas<wbr>ci<wbr>na<wbr>ting world of virtual reality. Our mission is to provide you with the latest information, news, and insights into the ever-evolving VR landscape.
 
 ## The Power of Virtual Reality
 

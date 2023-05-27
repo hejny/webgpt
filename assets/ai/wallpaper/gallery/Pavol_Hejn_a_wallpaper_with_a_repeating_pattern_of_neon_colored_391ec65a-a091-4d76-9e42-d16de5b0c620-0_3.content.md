@@ -8,11 +8,11 @@ Welcome to TechHub, the virtual workspace for tech enthusiasts and professionals
 
 At TechHub, we offer a range of features that cater to the needs of our users. Here are some of the highlights:
 
-- Collaborative Spaces: Connect with other tech enthusiasts and professionals in our collaborative spaces. Share ideas, discuss trends, and collaborate on projects.
-- Virtual Events: Attend webinars, workshops, and conferences from the comfort of your own workspace.
-- User Stories: Read about the experiences of other users on our platform and learn how they have leveraged TechHub to enhance their careers.
-- Resources: Access articles, tutorials, and e-books to enhance your knowledge and skills.
-- Contact Us: Have a question or need assistance? Contact us via email or phone, and our friendly support team will be happy to assist you.
+-   Coll<wbr>aborative Spaces: Connect with other tech enthusiasts and professionals in our Coll<wbr>aborative spaces. Share ideas, discuss trends, and collaborate on projects.
+-   Virtual Events: Attend webinars, workshops, and conferences from the comfort of your own workspace.
+-   User Stories: Read about the experiences of other users on our platform and learn how they have leveraged TechHub to enhance their careers.
+-   Resources: Access articles, tutorials, and e-books to enhance your knowledge and skills.
+-   Contact Us: Have a question or need assistance? Contact us via email or phone, and our friendly support team will be happy to assist you.
 
 ## Join TechHub Today
 
@@ -26,10 +26,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -55,7 +55,7 @@ Our wallpaper features a repeating pattern of neon-colored circuitry set against
 
 At TechHub, we offer a range of features that cater to the needs of our users. Here are some of the highlights:
 
-- Collaborative Spaces: Connect with other tech enthusiasts and professionals in our collaborative spaces. Share ideas, discuss trends, and collaborate on projects.
+- Coll<wbr>aborative Spaces: Connect with other tech enthusiasts and professionals in our Coll<wbr>aborative spaces. Share ideas, discuss trends, and collaborate on projects.
 - Virtual Events: Attend virtual events such as webinars, workshops, and conferences from the comfort of your own workspace.
 - User Stories: Read about the experiences of other users on our platform and learn how they have leveraged TechHub to enhance their careers.
 - Resources: Access a range of resources such as articles, tutorials, and e-books to enhance your knowledge and skills.
@@ -87,7 +87,7 @@ Our design features a repeating pattern of neon-colored circuitry set against a 
 
 At TechHub, we offer a range of features that cater to the needs of our users. Here are some of the highlights:
 
-- Collaborative Spaces: Connect with other tech enthusiasts and professionals in our collaborative spaces. Share ideas, discuss trends, and collaborate on projects.
+- Coll<wbr>aborative Spaces: Connect with other tech enthusiasts and professionals in our Coll<wbr>aborative spaces. Share ideas, discuss trends, and collaborate on projects.
 - Virtual Events: Attend virtual events such as webinars, workshops, and conferences from the comfort of your own workspace.
 - User Stories: Read about the experiences of other users on our platform and learn how they have leveraged TechHub to enhance their careers.
 - Resources: Access a range of resources such as articles, tutorials, and e-books to enhance your knowledge and skills.
@@ -119,7 +119,7 @@ Our design features a repeating pattern of neon-colored circuitry set against a 
 
 At TechHub, we offer a range of features that cater to the needs of our users. Here are some of the highlights:
 
-- Collaborative Spaces: Connect with other tech enthusiasts and professionals in our collaborative spaces. Share ideas, discuss trends, and collaborate on projects.
+- Coll<wbr>aborative Spaces: Connect with other tech enthusiasts and professionals in our Coll<wbr>aborative spaces. Share ideas, discuss trends, and collaborate on projects.
 - Virtual Events: Attend virtual events such as webinars, workshops, and conferences from the comfort of your own workspace.
 - User Stories: Read about the experiences of other users on our platform and learn how they have leveraged TechHub to enhance their careers.
 - Resources: Access a range of resources such as articles, tutorials, and e-books to enhance your knowledge and skills.
@@ -147,7 +147,7 @@ Welcome to TechHub, the virtual workspace for tech enthusiasts and professionals
 
 At TechHub, we offer a range of features that cater to the needs of our users. Here are some of the highlights:
 
-- Collaborative Spaces: Connect with other tech enthusiasts and professionals in our collaborative spaces. Share ideas, discuss trends, and collaborate on projects.
+- Coll<wbr>aborative Spaces: Connect with other tech enthusiasts and professionals in our Coll<wbr>aborative spaces. Share ideas, discuss trends, and collaborate on projects.
 - Virtual Events: Attend webinars, workshops, and conferences from the comfort of your own workspace.
 - User Stories: Read about the experiences of other users on our platform and learn how they have leveraged TechHub to enhance their careers.
 - Resources: Access articles, tutorials, and e-books to enhance your knowledge and skills.

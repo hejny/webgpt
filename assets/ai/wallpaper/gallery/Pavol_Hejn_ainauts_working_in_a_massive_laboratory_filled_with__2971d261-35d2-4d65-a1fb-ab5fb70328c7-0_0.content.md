@@ -28,7 +28,7 @@ Our team of experts is dedicated to bringing you the latest news and insights in
 
 ## Our Mission
 
-At our website, we aim to provide a platform for scientists, researchers, and enthusiasts to come together and share their knowledge and expertise. We believe that by fostering collaboration and communication, we can accelerate the pace of innovation and make significant strides towards solving some of the world's most pressing problems.
+At our website, we aim to provide a platform for scientists, researchers, and enthusiasts to come together and share their knowledge and expertise. We believe that by fostering collaboration and Com<wbr>mu<wbr>ni<wbr>ca<wbr>tion, we can accelerate the pace of innovation and make significant strides towards solving some of the world's most pressing problems.
 
 ## The Ainautes
 
