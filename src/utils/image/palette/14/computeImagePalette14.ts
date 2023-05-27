@@ -106,27 +106,21 @@ export function computeImagePalette14(
             break;
         }
 
-        // 2️⃣🅱 Pick color from paletteCandidates that is simmilar to bottom of the image
+        // 2️⃣🅱 Pick color from paletteCandidates that is most simmilar to bottom of the image
+        let minDistance: number = Infinity;
         for (const paletteCandidate of paletteCandidates) {
-            if (
-                colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value) >=
-                primaryToAveragedistanceTheashold
-            ) {
+            const distance = colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value);
+
+            if (distance > minDistance) {
                 continue;
             }
 
+            minDistance = distance;
             primaryColor = {
                 ...paletteCandidate,
-                note: `${paletteCandidate.note} that is similar enough (${Math.round(
-                    PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO * 100,
-                )}%) to the average color of the bottom third of the wallpaper.`,
+                note: `${paletteCandidate.note} that is the most similar color to the average color of the bottom third of the wallpaper.`,
             };
             break;
-        }
-
-        // 2️⃣[C] Pick just the first color from paletteCandidates
-        if (!primaryColor) {
-            primaryColor = paletteCandidates[0];
         }
     }
 
