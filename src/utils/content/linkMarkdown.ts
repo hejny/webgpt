@@ -1,3 +1,5 @@
+import { string_markdown } from "../typeAliases";
+
 const LINKS = {
     Collboard: 'https://collboard.com',
     'H-edu': 'https://h-edu.cz',
@@ -17,7 +19,7 @@ const LINKS = {
  * @param contentText text with keywords to be shown as links
  * @returns text with links in markdown format
  */
-export function linkMarkdown(contentText: string): string {
+export function linkMarkdown(contentText: string_markdown): string_markdown {
     let contentMarkdown = contentText;
 
     for (const [word, href] of Object.entries(LINKS)) {

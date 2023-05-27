@@ -1,10 +1,12 @@
+import { string_markdown } from "../typeAliases";
+
 /**
  * Removes Markdown formatting tags from a string.
  *
  * @param {string} str - The string to remove Markdown tags from.
  * @returns {string} The input string with all Markdown tags removed.
  */
-export function removeMarkdownFormatting(str: string): string {
+export function removeMarkdownFormatting(str: string_markdown): string {
     // Use regular expressions to remove Markdown tags from the string
     return str.replace(/\*\*([^*]+)\*\*/g, '$1').replace(/\*([^*]+)\*/g, '$1');
 }

@@ -30,6 +30,54 @@ describe('removeMarkdownFormatting', () => {
         const str = 'This is a plain string.';
         expect(removeMarkdownFormatting(str)).toEqual(str);
     });
+
+    /*
+    TODO:
+    it('should convert headings to texts', () => {
+        const str = spaceTrim(`
+            # Heading 1
+
+            ## Heading 2
+
+            Text
+        
+        `);
+        const expected = 'Heading 1\n\nHeading 2\n\nText';
+        expect(removeMarkdownFormatting(str)).toEqual(expected);
+    });
+    */
+
+    /*
+    TODO:
+    it('should convert blockquotes to texts', () => {
+        const str = spaceTrim(`
+            # Heading 1
+
+            > Quote 1
+
+            Text
+        
+        `);
+        const expected = 'Heading 1\n\nQuote 1\n\nText';
+        expect(removeMarkdownFormatting(str)).toEqual(expected);
+    });
+    */
+
+    /*
+    TODO:
+    it('should remove horizontal line', () => {
+        const str = spaceTrim(`
+            Text
+
+            ---
+
+            Text
+        
+        `);
+        const expected = 'Text\n\nText';
+        expect(removeMarkdownFormatting(str)).toEqual(expected);
+    });
+    */
 });
 
 /**

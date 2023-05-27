@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
 import favicon from '../../../public/favicon.ico';
+import { extractFirstParagraphFromMarkdown } from '../../utils/content/extractFirstParagraphFromMarkdown';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -20,9 +21,8 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     // TODO: !! IWalpaper should have custom emoji which will be contained here
 
     const title = wallpaper.title; /* <- TODO: !! Apply here (some) font as UTF-8 special chars */
-    const description = removeMarkdownFormatting(removeMarkdownLinks(wallpaper.content)).replace(
-        '# ' + wallpaper.title,
-        '' /* <- TODO: !!! Title should be removed in removeMarkdownFormatting */,
+    const description = removeMarkdownFormatting(
+        removeMarkdownLinks(extractFirstParagraphFromMarkdown(wallpaper.content)),
     );
 
     const homeUrl = `https://ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
