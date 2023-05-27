@@ -191,5 +191,6 @@ async function repairWallpapersContent({
 }
 
 /**
+ * TODO: !!!! --add-wbr task + add it to the terminals + do not count <wbr> as a character + <wbr> vs <wbr/>
  * TODO: Do we want multiple levels of titles like in "The Witcher 3: Wild Hunt" should done like "# The Witcher 3 \n\n ## Wild Hunt"
  */
