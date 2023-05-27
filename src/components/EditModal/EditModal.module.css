@@ -50,6 +50,13 @@
     height: 400px;
 }
 
-/*
-TODO: !! On mobile EditModal fills the whole screen
-*/
+@media (max-width: 600px) {
+    /* Note: On mobile EditModal fills the whole screen */
+    .EditModal {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+}
