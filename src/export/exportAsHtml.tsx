@@ -120,6 +120,16 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         content: html,
     });
 
+    // Note: Go through all files and detect if there is some filename collision
+    const filesMap = new Map<string, string>();
+    for (const file of files) {
+        const { pathname } = file;
+        if (filesMap.has(pathname)) {
+            throw new Error(`Filename collision: ${pathname}`);
+        }
+        filesMap.set(pathname, pathname);
+    }
+
     return { files };
 }
 
