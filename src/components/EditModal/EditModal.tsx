@@ -129,5 +129,6 @@ export function EditModal(props: EditModalProps) {
  * TODO: !!! Fix unsaved changes
  * TODO: !!! Design
  * TODO: !!! [🧠] Split into info, edit and export part
+ * TODO: !!! Allow to change font
  * TODO: !!! Allow to apply color-stats with different algorithms
  */

@@ -40,29 +40,36 @@ export function computeImagePalette13(
     const paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/> =
         [];
 
-    for (const regionStats of [
-        colorStats.bottomHalf,
-        colorStats.bottomThird,
-        colorStats,
-        colorStats.bottomLine /* TODO: Combinations */,
+    for (const { regionName, regionStats } of [
+        { regionName: 'bottom half of the wallpaper', regionStats: colorStats.bottomHalf },
+        { regionName: 'bottom third of the wallpaper', regionStats: colorStats.bottomThird },
+        { regionName: 'the whole wallpaper', regionStats: colorStats },
+        { regionName: 'bottom line of the wallpaper', regionStats: colorStats.bottomLine },
+        /* <- TODO: Combinations */
     ]) {
         // TODO: !! Here also get in account the color count
         // TODO: !! In note put the order of color like:
-        //       3. Most frequent color 
+        //       3. Most frequent color
 
+        let si = 0;
         for (const mostSatulightedColor of regionStats.mostSatulightedColors) {
-            paletteCandidates.push({ ...mostSatulightedColor, note: `Most satulighted color` });
+            si++;
+            paletteCandidates.push({ ...mostSatulightedColor, note: `${si}. most satulighted color of ${regionName}` });
         }
+        let gi = 0;
         for (const mostGroupedColor of regionStats.mostGroupedColors) {
-            paletteCandidates.push({ ...mostGroupedColor, note: `Most grouped color` });
+            gi++;
+            paletteCandidates.push({ ...mostGroupedColor, note: `${gi}. most grouped color of ${regionName}` });
         }
+        let fi = 0;
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
-            paletteCandidates.push({ ...mostFrequentColor, note: `Most frequent color` });
+            fi++;
+            paletteCandidates.push({ ...mostFrequentColor, note: `${fi}. most frequent color of ${regionName}` });
         }
         // regionStats.averageColor;
 
-        paletteCandidates.push({ value: regionStats.darkestColor, note: `Darkest color` });
-        paletteCandidates.push({ value: regionStats.lightestColor, note: `Lightest color` });
+        paletteCandidates.push({ value: regionStats.darkestColor, note: `Darkest color of ${regionName}` });
+        paletteCandidates.push({ value: regionStats.lightestColor, note: `Lightest color of ${regionName}` });
     }
 
     if (!primaryColor) {
@@ -72,7 +79,7 @@ export function computeImagePalette13(
             if (areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
                 primaryColor = {
                     ...paletteCandidate,
-                    note: `${paletteCandidate.note} which is dark enough to white text on it`,
+                    note: `${paletteCandidate.note} which is dark enough to emplace light text`,
                 };
                 break;
             }
@@ -94,7 +101,7 @@ export function computeImagePalette13(
                 ...paletteCandidate,
                 note: `${paletteCandidate.note} which is contrast enough (${Math.round(
                     TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO * 100,
-                )}%) to primary color`,
+                )}%) against primary color`,
             };
             break;
         }
