@@ -1,10 +1,9 @@
 import { Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { JsonObject } from 'type-fest';
-import { Vector } from 'xyzt';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
-import { DebugGrid } from '../components/DebugGrid/DebugGrid';
+
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
@@ -28,7 +27,6 @@ export default function GalleryPage({ wallpapers }: PageProps) {
             <StaticAppHead subtitle={null} />
 
             <div className={classNames(styles.page, oswaltFont.className)}>
-                <DebugGrid size={new Vector(5, 5)} />
                 <header>{/* <HeaderWallpaper /> */}</header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}

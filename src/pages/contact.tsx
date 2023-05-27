@@ -2,7 +2,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Vector } from 'xyzt';
 import { PageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
-import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { ContactSection } from '../sections/70-Contact/Contact';
@@ -19,7 +18,6 @@ export default function ContactPage({ wallpapers }: PageProps) {
             <StaticAppHead subtitle="Contact" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
-                <DebugGrid size={new Vector(5, 5)} />
                 <header>
                     {/* TODO: Do some system for multiple pages */}
                     {/* <CaveSection /> */}

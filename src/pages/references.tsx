@@ -1,8 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Vector } from 'xyzt';
 import { PageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
-import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { ReferencesSection } from '../sections/40-References/References';
@@ -19,7 +17,6 @@ export default function ReferencesPage({ wallpapers }: PageProps) {
             <StaticAppHead subtitle="References" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
-                <DebugGrid size={new Vector(5, 5)} />
                 <header>
                     {/* TODO: Do some system for multiple pages */}
                     {/* <CaveSection /> */}

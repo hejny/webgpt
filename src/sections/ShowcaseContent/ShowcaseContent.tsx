@@ -1,5 +1,3 @@
-import { Vector } from 'xyzt';
-import { DebugGrid } from '../../components/DebugGrid/DebugGrid';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { ShowcaseWelcomeSection } from '../10-Welcome/ShowcaseWelcome';
@@ -9,7 +7,6 @@ import styles from './ShowcaseContent.module.css';
 export function ShowcaseContent() {
     return (
         <div className={styles.page}>
-            <DebugGrid size={new Vector(5, 5)} />
             <header>
                 <HeaderWallpaper />
             </header>

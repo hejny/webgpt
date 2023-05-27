@@ -1,10 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Vector } from 'xyzt';
 import { PageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
-import { DebugGrid } from '../components/DebugGrid/DebugGrid';
 import { PricingTableNext } from '../components/PricingTable/PricingTableNext';
-import { PricingTableTailwind } from '../components/PricingTable/PricingTableTailwind';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
 import { FooterSection } from '../sections/90-Footer/Footer';
@@ -20,7 +17,6 @@ export default function PricingPage({ wallpapers }: PageProps) {
             <StaticAppHead subtitle="Pricing" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
-                <DebugGrid size={new Vector(5, 5)} />
                 <header>
                     {/* TODO: Do some system for multiple pages */}
                     {/* <CaveSection /> */}
@@ -30,7 +26,6 @@ export default function PricingPage({ wallpapers }: PageProps) {
                     <TiledBackground />
                 </div>
                 <main>
-                
                     <PricingTableNext
                         plans={[
                             {
