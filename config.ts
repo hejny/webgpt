@@ -1,7 +1,7 @@
 import { ConfigChecker } from 'configchecker';
 import { Vector } from 'xyzt';
 import packageJson from './package.json';
-import { createColorfulComputeImageColorStats } from './src/utils/image/utils/10-createColorfulComputeImageColorStats';
+import { createColorfulComputeImageColorStats13 } from './src/utils/image/palette/13/createColorfulComputeImageColorStats13';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
 
 export const VERSION = packageJson.version;
@@ -61,15 +61,15 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         size: IMAGE_NATURAL_SIZE,
     }),
     */
-    createColorfulComputeImageColorStats({
+    createColorfulComputeImageColorStats13({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
-    createColorfulComputeImageColorStats({
+    createColorfulComputeImageColorStats13({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.2),
     }),
-    createColorfulComputeImageColorStats({
+    createColorfulComputeImageColorStats13({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE,
     }),

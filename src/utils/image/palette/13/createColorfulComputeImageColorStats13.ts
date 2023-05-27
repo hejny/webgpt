@@ -1,20 +1,24 @@
 import { IVector, Vector } from 'xyzt';
-import { IImage } from '../IImage';
-import { colorDownscaleImage } from './colorDownscaleImage';
-import { computeImageAverageColor } from './computeImageAverageColor';
-import { computeImageDarkestColor } from './computeImageDarkestColor';
-import { computeImageLightestColor } from './computeImageLightestColor';
-import { computeImageMostFrequentColors } from './computeImageMostFrequentColors';
-import { computeImageMostGroupedColors } from './computeImageMostGroupedColors';
-import { computeImageMostSatulightedColors } from './computeImageMostSatulightedColors';
-import { computeImagePalette13 } from './computeImagePalette';
-import { IComputeImageColorStats, IImageColorStatsAdvanced, IImageColorStatsRegion } from './IImageColorStats';
-import { scaleImage } from './scaleImage';
+import { IImage } from '../../IImage';
+import { colorDownscaleImage } from '../../utils/colorDownscaleImage';
+import { computeImageAverageColor } from '../../utils/computeImageAverageColor';
+import { computeImageDarkestColor } from '../../utils/computeImageDarkestColor';
+import { computeImageLightestColor } from '../../utils/computeImageLightestColor';
+import { computeImageMostFrequentColors } from '../../utils/computeImageMostFrequentColors';
+import { computeImageMostGroupedColors } from '../../utils/computeImageMostGroupedColors';
+import { computeImageMostSatulightedColors } from '../../utils/computeImageMostSatulightedColors';
+import {
+    IComputeImageColorStats,
+    IImageColorStatsAdvanced,
+    IImageColorStatsRegion,
+} from '../../utils/IImageColorStats';
+import { scaleImage } from '../../utils/scaleImage';
+import { computeImagePalette13 } from './computeImagePalette13';
 
 /**
  * @@@
  */
-export function createColorfulComputeImageColorStats /* TODO: <TColorBits extends number, TScale extends number>*/(options: {
+export function createColorfulComputeImageColorStats13 /* TODO: <TColorBits extends number, TScale extends number>*/(options: {
     colorBits: number;
     size: IVector;
 }): IComputeImageColorStats<string /* TODO: `colorful-${TColorBits}bit-${...}-1`*/> {

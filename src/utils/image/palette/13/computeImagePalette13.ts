@@ -3,14 +3,14 @@ import {
     DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO,
     DIFFERENT_COLOR_HUE_THEASHOLD_DEGREES,
     TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO,
-} from '../../../../config';
-import { Color } from '../../color/Color';
-import { textColor } from '../../color/operators/furthest';
-import { areColorsEqual } from '../../color/utils/areColorsEqual';
-import { colorDistanceSquared } from '../../color/utils/colorDistance';
-import { colorHueDistance } from '../../color/utils/colorHueDistance';
-import { WithTake } from '../../take/interfaces/ITakeChain';
-import { IImageColorStatsAdvanced } from './IImageColorStats';
+} from '../../../../../config';
+import { Color } from '../../../color/Color';
+import { textColor } from '../../../color/operators/furthest';
+import { areColorsEqual } from '../../../color/utils/areColorsEqual';
+import { colorDistanceSquared } from '../../../color/utils/colorDistance';
+import { colorHueDistance } from '../../../color/utils/colorHueDistance';
+import { WithTake } from '../../../take/interfaces/ITakeChain';
+import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
 let totalCount = 0;
 let pickByMostFrequentColorCount = 0;
