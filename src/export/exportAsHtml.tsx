@@ -64,19 +64,57 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         );
     }
 
-    // !!! Group styles
+    // Note: Group styles into two groups 1. config and 2. common
+    const configStyle = styles.find((style) => style.includes(':root' /* <- TODO: Probbably better detection */));
+    const commonStyle = styles.filter((style) => style !== configStyle).join('\n\n\n');
+    if (!configStyle) {
+        throw new Error('Config style not found');
+    }
+
+    // Note: Add notes to styles and regroup them
+    styles = [
+        spaceTrim(
+            (block) => `
+                /**
+                 * Note: This is the config style, it is used to configure the whole page.
+                 */
+
+                ${block(configStyle)}
+            `,
+        ),
+        spaceTrim(
+            (block) => `
+                /**
+                 * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
+                 *       If you want to make design changes, consider:
+                 *          1. Making changes in separate file
+                 *          2. Chage config style NOT common style
+                 */
+
+                ${block(commonStyle)}
+            `,
+        ),
+    ];
 
     // Note: Prettify all styles
     styles = styles.map(prettifyCss);
 
     const stylesLinks: Array<string_uri> = [];
     if (stylesPlace == 'EXTERNAL') {
-        // Note: Remove all <link rel="stylesheet"
-        for (const style of styles) {
-            const pathname = 'style.css';
+        if (styles.length !== 2) {
+            throw new Error(`There are ${styles.length} styles but exatly 2 styles are expected`);
+        }
+
+        for (const { pathname, content } of [
+            { pathname: 'config.css', content: styles[0] },
+            {
+                pathname: 'src/common.css' /* <- TODO: [🧠] What is the best folder (src, assets,...?) */,
+                content: styles[1],
+            },
+        ]) {
             files.push({
                 pathname,
-                content: style,
+                content,
             });
             stylesLinks.push(pathname);
         }
@@ -134,7 +172,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
- * TODO: !!! Fix links
  * TODO: !! [🎗] Extract and process all inlined styles
  * TODO: !! Pick only needed styles
  * TODO: Make style prefixes/suffixes custom (This is not urgent because suffixes looks deterministic ShowcaseContent_background__lMFUd)
