@@ -2,6 +2,8 @@
 
 # AI Innovation Future
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we're dedicated to pushing the boundaries of AI technology and creating innovative solutions for the future. Our team of Ainautes works tirelessly in a massive AI factory, constantly exploring new ideas and developing cutting-edge technologies that will change the world.
 
 ## Our Mission
@@ -12,9 +14,9 @@ Our mission is to create AI technologies that make a positive impact on society.
 
 We offer a range of services that are designed to help businesses and organizations leverage the power of AI. Our services include:
 
-- **AI Consulting:** Our team of experts can help you identify opportunities for AI in your business and develop a strategy for implementation.
-- **AI Development:** We specialize in developing custom AI solutions that are tailored to meet the unique needs of your organization.
-- **AI Integration:** We can help you integrate AI into your existing systems and processes, ensuring a seamless transition.
+-   **AI Consulting:** Our team of experts can help you identify opportunities for AI in your business and develop a strategy for implementation.
+-   **AI Development:** We specialize in developing custom AI solutions that are tailored to meet the unique needs of your organization.
+-   **AI Integration:** We can help you integrate AI into your existing systems and processes, ensuring a seamless transition.
 
 ## User Stories
 
@@ -28,9 +30,9 @@ Our AI technologies have already made a significant impact on a wide range of in
 
 We're proud of the work we've done and the impact our technologies have had on society. Here are a few references from satisfied clients:
 
-- XYZ Corporation
-- ABC Logistics
-- QRS Healthcare
+-   XYZ Corporation
+-   ABC Logistics
+-   QRS Healthcare
 
 ## Contact Us
 
@@ -49,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,6 +2,8 @@
 
 # Skyline Future
 
+<!--font:Barlow Condensed-->
+
 Welcome to Skyline Innovations, where we're dedicated to creating a better tomorrow through cutting-edge technology and collaboration. Our futuristic cityscape wallpaper sets the tone for our mission: Ainautes and their AI counterparts working together to build towering skyscrapers and infrastructure that will shape the world for generations to come.
 
 ## Our Vision
@@ -10,9 +12,9 @@ At Skyline Innovations, we believe in harnessing the power of technology to solv
 
 ## Our Services
 
-- **Smart City Solutions**: We're leading the charge in developing intelligent urban environments that prioritize sustainability, safety, and efficiency.
-- **Renewable Energy**: Our team is dedicated to finding innovative ways to harness the power of renewable resources like solar and wind energy.
-- **Infrastructure Development**: From bridges to highways, we're passionate about building the structures that connect communities and drive progress forward.
+-   **Smart City Solutions**: We're leading the charge in developing intelligent urban environments that prioritize sustainability, safety, and efficiency.
+-   **Renewable Energy**: Our team is dedicated to finding innovative ways to harness the power of renewable resources like solar and wind energy.
+-   **Infrastructure Development**: From bridges to highways, we're passionate about building the structures that connect communities and drive progress forward.
 
 ## User Stories
 
@@ -26,9 +28,9 @@ Don't just take our word for it - hear from some of our satisfied customers!
 
 Want to learn more about the work we're doing? Check out these helpful resources:
 
-- [Our Blog](#blog): Stay up-to-date on the latest news and trends in technology and innovation.
-- [Case Studies](#case-studies): Dive deeper into some of our most successful projects and see the impact we're making.
-- [Contact Us](#contact): Ready to get started? Reach out to our team today and let's build a better future together.
+-   [Our Blog](#blog): Stay up-to-date on the latest news and trends in technology and innovation.
+-   [Case Studies](#case-studies): Dive deeper into some of our most successful projects and see the impact we're making.
+-   [Contact Us](#contact): Ready to get started? Reach out to our team today and let's build a better future together.
 
 ---
 
@@ -42,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

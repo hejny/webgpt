@@ -2,6 +2,8 @@
 
 # Desert Dreams
 
+<!--font:Barlow Condensed-->
+
 Welcome to "Desert Dreams," where the stunning beauty of the Southwest sets the stage for your next adventure. Our desert landscape with a cactus in the foreground will transport you to the heart of the Southwest and inspire you to explore new places and embark on exciting journeys.
 
 ## Find Your Inspiration
@@ -20,9 +22,9 @@ Here are some stories from people who have been inspired by the beauty of the So
 
 Want to learn more about the Southwest and the amazing adventures waiting for you? Check out these resources:
 
-- [Visit Arizona](#visit-arizona)
-- [National Park Service - Southwest Region](#national-park-service-southwest-region)
-- [Lonely Planet - Southwest USA](#lonely-planet-southwest-usa)
+-   [Visit Arizona](#visit-arizona)
+-   [National Park Service - Southwest Region](#national-park-service-southwest-region)
+-   [Lonely Planet - Southwest USA](#lonely-planet-southwest-usa)
 
 ## Contact Us
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,13 +2,15 @@
 
 # Minimalist Space Design
 
+<!--font:Barlow Condensed-->
+
 Our modern minimalist design features a repeating pattern of simple geometric shapes in a monochromatic color palette of grey or blue. This elegant and understated design can be used as a background for your website, social media profile, or any digital platform to create a sleek and sophisticated look.
 
 ## Why Choose Our Design?
 
-- Versatile: Our design can be used for various purposes, such as website backgrounds, social media profiles, presentations, and more.
-- High-quality: We use top-quality materials to ensure that our design looks great on any device.
-- Customizable: We offer customizable sizes to fit your unique needs.
+-   Versatile: Our design can be used for various purposes, such as website backgrounds, social media profiles, presentations, and more.
+-   High-quality: We use top-quality materials to ensure that our design looks great on any device.
+-   Customizable: We offer customizable sizes to fit your unique needs.
 
 ## How to Use Our Design?
 
@@ -29,9 +31,9 @@ For more detailed instructions, please refer to our user guide.
 
 ## References
 
-- [User Guide](#user-guide)
-- [Customizable Sizes](#customizable-sizes)
-- [High-Quality Materials](#why-choose-our-design)
+-   [User Guide](#user-guide)
+-   [Customizable Sizes](#customizable-sizes)
+-   [High-Quality Materials](#why-choose-our-design)
 
 ## Contact Us
 
@@ -45,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

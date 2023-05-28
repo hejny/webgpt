@@ -2,23 +2,29 @@
 
 # Minimalist Home Office
 
+<!--font:Barlow Condensed-->
+
 Looking to create a modern and stylish workspace in your home office? Our minimalist design features a repeating pattern of simple geometric shapes in a monochromatic color palette, perfect for adding a touch of sophistication to any room.
 
 ## Features
-- Simple geometric shapes in a monochromatic color palette
-- Seamless repeat pattern for easy installation
-- High-quality vinyl material for durability
-- Easy to install and remove without damaging walls
+
+-   Simple geometric shapes in a monochromatic color palette
+-   Seamless repeat pattern for easy installation
+-   High-quality vinyl material for durability
+-   Easy to install and remove without damaging walls
 
 ## User Stories
+
 "I was looking for a way to make my home office feel more professional and put-together. This minimalist design wallpaper was the perfect solution. It adds just enough interest to the room without being distracting." - Sarah, Marketing Manager
 
 "The clean lines and understated design of this wallpaper really helped me create the modern aesthetic I was going for in my home office. Plus, it was so easy to install!" - Alex, Freelance Writer
 
 ## References
+
 For more information on our minimalist design wallpaper and other products, please visit our website. If you have any questions or concerns, don't hesitate to contact us.
 
 ## Contact Us
+
 Have a question or want to place an order? Contact us at [email protected] or give us a call at 555-555-5555.
 
 Elevate your home office with our modern minimalist design wallpaper. Order now and enjoy free shipping on all orders over $50!
@@ -31,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,24 +2,26 @@
 
 # Aurora Website
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where you can immerse yourself in the beauty and mystery of the Northern Lights. Our website features a stunning photograph of the Aurora Borealis, with its mesmerizing green and purple hues swirling in the night sky, as a background to enhance your browsing experience.
 
 ## Explore the Wonders of the Night Sky
 
 Our website is designed for those who love stargazing or simply enjoy the beauty of nature. Here are some of the things you can explore on our site:
 
-- **Aurora Borealis Gallery:** Browse through our collection of breathtaking photographs of the Northern Lights taken by talented photographers from around the world.
-- **Astronomy Resources:** Learn more about astronomy and the science behind the Northern Lights with our curated list of educational resources and articles.
-- **Travel Guides:** Plan your dream trip to see the Aurora Borealis in person with our travel guides featuring the best destinations and tips for viewing the Northern Lights.
-- **User Stories:** Read stories from fellow Aurora Borealis enthusiasts and their experiences with this natural wonder.
+-   **Aurora Borealis Gallery:** Browse through our collection of breathtaking photographs of the Northern Lights taken by talented photographers from around the world.
+-   **Astronomy Resources:** Learn more about astronomy and the science behind the Northern Lights with our curated list of educational resources and articles.
+-   **Travel Guides:** Plan your dream trip to see the Aurora Borealis in person with our travel guides featuring the best destinations and tips for viewing the Northern Lights.
+-   **User Stories:** Read stories from fellow Aurora Borealis enthusiasts and their experiences with this natural wonder.
 
 ## References
 
 If you're interested in learning more about the Aurora Borealis, here are some references that you might find useful:
 
-- [NASA's Aurora Borealis page](#nasa)
-- [National Geographic's Aurora Borealis article](#natgeo)
-- [Visit Norway's Aurora Borealis guide](#norway)
+-   [NASA's Aurora Borealis page](#nasa)
+-   [National Geographic's Aurora Borealis article](#natgeo)
+-   [Visit Norway's Aurora Borealis guide](#norway)
 
 ## Contact Us
 
@@ -35,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -54,7 +56,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Discover the Wonders of the Night Sky with our Aurora Borealis Wallpaper
 
-Welcome to our website, where you can explore the beauty and mystery of the Northern Lights through our stunning wallpaper. Our wallpaper features a photograph of the Aurora Borealis, with its mesmerizing green and purple hues swirling in the night sky. 
+Welcome to our website, where you can explore the beauty and mystery of the Northern Lights through our stunning wallpaper. Our wallpaper features a photograph of the Aurora Borealis, with its mesmerizing green and purple hues swirling in the night sky.
 
 ## Why Choose Our Aurora Borealis Wallpaper?
 

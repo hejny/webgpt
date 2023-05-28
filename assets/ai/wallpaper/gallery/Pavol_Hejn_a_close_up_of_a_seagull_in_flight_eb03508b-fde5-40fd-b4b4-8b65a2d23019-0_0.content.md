@@ -2,6 +2,8 @@
 
 # Coastal Office
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a variety of resources and inspiration to help you create the perfect home office. Our Coastal Dreams background is the perfect addition to transform your workspace into a calming oasis.
 
 ## About Coastal Dreams Background
@@ -14,17 +16,17 @@ This background can be used on your computer or phone, creating a cohesive look 
 
 Here are some stories from our satisfied customers who have used our Coastal Dreams background:
 
-- "I love how this background makes me feel like I'm working by the ocean. It's so calming and helps me focus."
-- "I was tired of looking at the same boring background on my computer every day. This design caught my eye, and now I smile every time I see it."
-- "I've been using this background on my phone for a few weeks now, and it's amazing how much it brightens up my day. Highly recommend!"
+-   "I love how this background makes me feel like I'm working by the ocean. It's so calming and helps me focus."
+-   "I was tired of looking at the same boring background on my computer every day. This design caught my eye, and now I smile every time I see it."
+-   "I've been using this background on my phone for a few weeks now, and it's amazing how much it brightens up my day. Highly recommend!"
 
 ## Resources
 
 If you're interested in using our Coastal Dreams background, check out these helpful resources:
 
-- [Download Guide](#download-guide)
-- [FAQs](#faqs)
-- [Contact Us](#contact-us)
+-   [Download Guide](#download-guide)
+-   [FAQs](#faqs)
+-   [Contact Us](#contact-us)
 
 ## Download Guide
 
@@ -41,9 +43,9 @@ For more detailed instructions, check out our [Download Guide](#download-guide).
 
 Here are some frequently asked questions about our Coastal Dreams background:
 
-- **Is this background available in different sizes?** Yes, we offer the background in various sizes to fit your device's screen.
-- **Can I use this background for commercial purposes?** No, our background is for personal use only.
-- **What if I have trouble downloading or installing the background?** Please contact us for assistance.
+-   **Is this background available in different sizes?** Yes, we offer the background in various sizes to fit your device's screen.
+-   **Can I use this background for commercial purposes?** No, our background is for personal use only.
+-   **What if I have trouble downloading or installing the background?** Please contact us for assistance.
 
 If you have any other questions, please visit our [FAQs](#faqs) page.
 
@@ -51,9 +53,9 @@ If you have any other questions, please visit our [FAQs](#faqs) page.
 
 If you're ready to transform your home office with our Coastal Dreams background or have any questions, please don't hesitate to contact us:
 
-- Phone: 555-1234
-- Email: info@coastaldreams.com
-- Address: 123 Main St, Anytown USA
+-   Phone: 555-1234
+-   Email: info@coastaldreams.com
+-   Address: 123 Main St, Anytown USA
 
 Thank you for considering our Coastal Dreams background to enhance your digital space. We look forward to helping you create a relaxing and inspiring workspace.
 
@@ -65,10 +67,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

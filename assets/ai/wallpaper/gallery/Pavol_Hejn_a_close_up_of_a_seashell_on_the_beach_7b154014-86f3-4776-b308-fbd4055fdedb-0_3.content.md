@@ -2,6 +2,8 @@
 
 # Beach Vibes Collection
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website where you can find the perfect desktop background to help you relax and unwind. Our collection of high-quality beach vibes imagery will transport you to the serene and calming atmosphere of the beach, even when you're stuck at work or home.
 
 ## Why Choose Beach Vibes?
@@ -12,9 +14,9 @@ Our beach vibes collection is carefully curated to provide a sense of relaxation
 
 Here are some examples of how our customers have used our beach vibes collection to enhance their work and personal lives:
 
-- "I work in a high-stress environment, and having a calming beach scene as my desktop background has really helped me stay focused and relaxed throughout the day." - Sarah, 32
-- "I love to travel, but I can't always be on vacation. Using a beach vibes background as my desktop wallpaper reminds me of the amazing places I've been and inspires me to plan my next adventure." - Michael, 27
-- "As an artist, I'm always looking for inspiration. The colors and textures in the beach vibes collection have sparked new ideas for my artwork." - Emily, 41
+-   "I work in a high-stress environment, and having a calming beach scene as my desktop background has really helped me stay focused and relaxed throughout the day." - Sarah, 32
+-   "I love to travel, but I can't always be on vacation. Using a beach vibes background as my desktop wallpaper reminds me of the amazing places I've been and inspires me to plan my next adventure." - Michael, 27
+-   "As an artist, I'm always looking for inspiration. The colors and textures in the beach vibes collection have sparked new ideas for my artwork." - Emily, 41
 
 ## References
 
@@ -38,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

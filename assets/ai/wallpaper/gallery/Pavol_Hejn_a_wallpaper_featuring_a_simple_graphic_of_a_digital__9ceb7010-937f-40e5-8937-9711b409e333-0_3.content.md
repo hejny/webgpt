@@ -2,6 +2,8 @@
 
 # Countdown Goals
 
+<!--font:Barlow Condensed-->
+
 Welcome to Countdown, your go-to source for achieving your goals through effective time management. Our website is designed to help you stay focused and motivated by providing you with the tools you need to track your progress and set achievable deadlines.
 
 ## Wallpaper Background
@@ -14,10 +16,10 @@ Countdown works by breaking down your goals into manageable tasks and setting re
 
 ## Features
 
-- Task Management: Break down your goals into manageable tasks
-- Deadline Setting: Set realistic deadlines for each task
-- Progress Tracking: Easily track your progress and adjust your timeline as needed
-- Alarms and Countdowns: Use our digital clock or timer to set alarms and countdowns for important tasks
+-   Task Management: Break down your goals into manageable tasks
+-   Deadline Setting: Set realistic deadlines for each task
+-   Progress Tracking: Easily track your progress and adjust your timeline as needed
+-   Alarms and Countdowns: Use our digital clock or timer to set alarms and countdowns for important tasks
 
 ## User Stories
 
@@ -29,9 +31,9 @@ Countdown works by breaking down your goals into manageable tasks and setting re
 
 For more information on time management and goal-setting, check out these resources:
 
-- [The Pomodoro Technique](#)
-- [Getting Things Done by David Allen](#)
-- [Atomic Habits by James Clear](#)
+-   [The Pomodoro Technique](#)
+-   [Getting Things Done by David Allen](#)
+-   [Atomic Habits by James Clear](#)
 
 ## Contact Us
 
@@ -45,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

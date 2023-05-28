@@ -2,6 +2,8 @@
 
 # Forest Serenity
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where you can find inspiration for your next outdoor adventure or simply escape into the beauty of nature. Our forest-inspired background sets the tone for a peaceful browsing experience.
 
 ## Explore the Great Outdoors
@@ -12,17 +14,17 @@ Browse through our collection of articles and resources on everything from hikin
 
 Here are some stories from our readers who have found serenity in nature:
 
-- "I was feeling stressed and overwhelmed, but after spending a day hiking in the mountains, I felt completely rejuvenated."
-- "Camping under the stars was one of the most peaceful experiences of my life. The sounds of nature and the fresh air were so calming."
-- "I never realized how much I needed to disconnect from technology until I spent a weekend in the woods without my phone. It was so refreshing."
+-   "I was feeling stressed and overwhelmed, but after spending a day hiking in the mountains, I felt completely rejuvenated."
+-   "Camping under the stars was one of the most peaceful experiences of my life. The sounds of nature and the fresh air were so calming."
+-   "I never realized how much I needed to disconnect from technology until I spent a weekend in the woods without my phone. It was so refreshing."
 
 ## References
 
 If you're interested in learning more about the benefits of spending time in nature, check out these resources:
 
-- [The Science Behind Forest Bathing](#)
-- [Why Spending Time in Nature is Good for Your Mental Health](#)
-- [The Healing Power of Nature](#)
+-   [The Science Behind Forest Bathing](#)
+-   [Why Spending Time in Nature is Good for Your Mental Health](#)
+-   [The Healing Power of Nature](#)
 
 ## Contact Us
 
@@ -38,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

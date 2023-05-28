@@ -2,6 +2,8 @@
 
 # AI Stock Revolution
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to exploring the exciting world of artificial intelligence and its impact on the stock market. Our wallpaper, featuring a simple graphic of a neural network against a background of Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors, represents the power and potential of this cutting-edge technology.
 
 ## About Us

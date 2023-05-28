@@ -2,6 +2,8 @@
 
 # Futuristic Dashboard
 
+<!--font:Barlow Condensed-->
+
 Welcome to FutureVision, a modern dashboard that helps you visualize your data in a sleek and intuitive way. Our platform is designed to provide you with a Com<wbr>pre<wbr>hen<wbr>sive overview of your data, allowing you to make informed decisions quickly and efficiently.
 
 ## The Perfect Wallpaper for Your Workspace

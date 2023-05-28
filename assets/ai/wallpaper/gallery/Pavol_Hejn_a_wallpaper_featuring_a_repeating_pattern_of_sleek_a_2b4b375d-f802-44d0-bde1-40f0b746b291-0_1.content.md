@@ -2,14 +2,16 @@
 
 # Modern Workspace
 
+<!--font:Barlow Condensed-->
+
 Upgrade your workspace with our sleek and modern digital devices wallpaper. The repeating pattern of smartphones, tablets, and laptops adds a unique touch to any space and showcases your love for technology.
 
 ## Features
 
-- High-quality resolution
-- Easy to install and remove
-- Durable and long-lasting
-- Perfect for home or office use
+-   High-quality resolution
+-   Easy to install and remove
+-   Durable and long-lasting
+-   Perfect for home or office use
 
 ## User Stories
 
@@ -32,9 +34,9 @@ Transforming your workspace is quick and easy with our digital devices wallpaper
 
 Take your workspace to the next level with these design tips:
 
-- Add plants for a pop of color and natural beauty
-- Use a standing desk to improve posture and reduce fatigue
-- Incorporate task lighting to reduce eye strain and headaches
+-   Add plants for a pop of color and natural beauty
+-   Use a standing desk to improve posture and reduce fatigue
+-   Incorporate task lighting to reduce eye strain and headaches
 
 ## Contact Us
 
@@ -48,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

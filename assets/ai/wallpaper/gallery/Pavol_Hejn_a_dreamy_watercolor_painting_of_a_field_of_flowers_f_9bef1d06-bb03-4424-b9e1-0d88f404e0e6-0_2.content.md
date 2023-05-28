@@ -2,6 +2,8 @@
 
 # Watercolor Events
 
+<!--font:Barlow Condensed-->
+
 Welcome to our event planning website, where we specialize in creating unforgettable experiences for your special occasions. Our team of experts is dedicated to bringing your vision to life, and our watercolor floral background sets the perfect tone for any event.
 
 ## Our Services
@@ -10,11 +12,11 @@ We offer a range of services to make your event planning process as seamless as 
 
 Some of our services include:
 
-- Venue selection and booking
-- Catering and menu planning
-- Floral arrangements and decor
-- Entertainment and music selection
-- Photography and videography
+-   Venue selection and booking
+-   Catering and menu planning
+-   Floral arrangements and decor
+-   Entertainment and music selection
+-   Photography and videography
 
 ## User Stories
 
@@ -28,9 +30,9 @@ Our satisfied clients are our best advertisement. Here are some of their stories
 
 We have worked with a variety of clients to create unforgettable events. Here are just a few of our satisfied customers:
 
-- Jane and John's Wedding
-- Smith Corporation Annual Gala
-- Johnson Family Reunion
+-   Jane and John's Wedding
+-   Smith Corporation Annual Gala
+-   Johnson Family Reunion
 
 ## Contact Us
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,6 +2,8 @@
 
 # AI Search Engine
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to providing the best search engine experience with the help of AI technology. Our wallpaper featuring an abstract illustration of an AI-powered search engine, with a minimalist and modern design, represents our commitment to innovation and efficiency.
 
 ## About Us
@@ -14,10 +16,10 @@ Our search engine utilizes AI algorithms to understand the context of your query
 
 ## Features
 
-- Personalized results based on your search history
-- Natural language processing for more accurate results
-- Image and video search capabilities
-- Ad-free experience for uninterrupted searching
+-   Personalized results based on your search history
+-   Natural language processing for more accurate results
+-   Image and video search capabilities
+-   Ad-free experience for uninterrupted searching
 
 ## User Stories
 
@@ -29,16 +31,16 @@ Our search engine utilizes AI algorithms to understand the context of your query
 
 For more information about our AI-powered search engine and how it can benefit you, check out these resources:
 
-- [How AI is Revolutionizing Search Engines](#)
-- [The Future of Search: AI and Machine Learning](#)
+-   [How AI is Revolutionizing Search Engines](#)
+-   [The Future of Search: AI and Machine Learning](#)
 
 ## Contact Us
 
 If you have any questions or feedback about our search engine, please don't hesitate to reach out to us:
 
-- Email: info@searchengine.com
-- Phone: 555-555-5555
-- Follow us on [Twitter](#) and [Facebook](#) for updates and news. 
+-   Email: info@searchengine.com
+-   Phone: 555-555-5555
+-   Follow us on [Twitter](#) and [Facebook](#) for updates and news.
 
 Experience the power of AI technology with our search engine today!
 
@@ -50,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -105,7 +107,7 @@ If you have any questions or feedback about our search engine, please don't hesi
 
 - Email: info@searchengine.com
 - Phone: 555-555-5555
-- Follow us on [Twitter](#) and [Facebook](#) for updates and news. 
+- Follow us on [Twitter](#) and [Facebook](#) for updates and news.
 
 Experience the power of AI technology with our search engine today!
 

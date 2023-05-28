@@ -2,6 +2,8 @@
 
 # Space Website
 
+<!--font:Barlow Condensed-->
+
 Welcome to our space-themed website, where you can discover the wonders of the universe through Cap<wbr>ti<wbr>va<wbr>ting content and stunning visuals. Our website is designed to provide an immersive experience that takes you on a journey through the cosmos.
 
 ## Discover the Beauty of the Universe

@@ -2,6 +2,8 @@
 
 # Space Workspaces
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we explore the future of Coll<wbr>aborative workspaces in space. Our background image depicts a massive zero-gravity space station where humans and AI companions work together seamlessly.
 
 ## The Future of Work

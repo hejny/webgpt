@@ -2,6 +2,8 @@
 
 # Quantum Intro
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect backdrop for this cutting-edge technology.
 
 ## What is Quantum Computing?
@@ -16,9 +18,9 @@ Quantum computing has the potential to revolutionize industries such as finance,
 
 If you're interested in learning more about quantum computing, we recommend checking out some of these resources:
 
-- [Quantum Computing for the Very Curious](#)
-- [IBM Quantum Experience](#)
-- [Microsoft Quantum Development Kit](#)
+-   [Quantum Computing for the Very Curious](#)
+-   [IBM Quantum Experience](#)
+-   [Microsoft Quantum Development Kit](#)
 
 ## User Stories
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,6 +2,8 @@
 
 # Enchanting Forest Scene
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a collection of beautiful backgrounds to transform your desktop into a magical world. Our latest addition is the enchanting forest scene with fairies, which will transport you to a dreamy realm every time you turn on your computer.
 
 ## About the Background
@@ -22,19 +24,19 @@ Here are some stories from our users who have downloaded and used the enchanting
 
 > "I love this background! It's like having a little piece of magic with me all the time. It helps me relax and focus on my work."
 >
-> - Sarah, graphic designer
+> -   Sarah, graphic designer
 
 > "As a writer, I need inspiration to keep me going. This background provides just that. Every time I look at it, I feel like I'm transported to a different world."
 >
-> - John, author
+> -   John, author
 
 ## References
 
 If you're interested in learning more about fairies and their role in mythology and folklore, here are some resources that you might find useful:
 
-- [Fairies: A Guide to the Celtic Fair Folk](#)
-- [The Complete Book of Fairies](#)
-- [Fairy Tales from the Brothers Grimm: A New English Version](#)
+-   [Fairies: A Guide to the Celtic Fair Folk](#)
+-   [The Complete Book of Fairies](#)
+-   [Fairy Tales from the Brothers Grimm: A New English Version](#)
 
 ## Contact Us
 
@@ -50,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

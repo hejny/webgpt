@@ -2,6 +2,8 @@
 
 # Desert Dreams
 
+<!--font:Barlow Condensed-->
+
 Welcome to "Desert Dreams," a website dedicated to inspiring your creativity with a surreal interpretation of a desert landscape. Our design captures the essence of the vast and mysterious desert, inviting you to escape into your own imagination.
 
 ## About Our Design
@@ -18,16 +20,16 @@ To use our design, simply download it from our website and set it as your deskto
 
 Our "Desert Dreams" design has inspired many people to create amazing things. Here are some of their stories:
 
-- "I'm an artist, and I've been struggling to come up with new ideas. But ever since I set 'Desert Dreams' as my desktop background, I've been flooded with inspiration. It's like the design opened up a portal to my imagination." - Sarah, 28
-- "I work from home, and my workspace was feeling really dull. But after I put up 'Desert Dreams' on my office wall, everything changed. Now, every time I look up from my computer, I feel like I'm transported to another world." - Mike, 35
+-   "I'm an artist, and I've been struggling to come up with new ideas. But ever since I set 'Desert Dreams' as my desktop background, I've been flooded with inspiration. It's like the design opened up a portal to my imagination." - Sarah, 28
+-   "I work from home, and my workspace was feeling really dull. But after I put up 'Desert Dreams' on my office wall, everything changed. Now, every time I look up from my computer, I feel like I'm transported to another world." - Mike, 35
 
 ## References
 
 If you want to learn more about the desert landscape and its surreal beauty, check out these resources:
 
-- "Desert Solitaire" by Edward Abbey
-- "The Desert and the Sea: 977 Days Captive on the Somali Pirate Coast" by Michael Scott Moore
-- "The Painted Desert: Land of Light and Shadow" by Rose Houk
+-   "Desert Solitaire" by Edward Abbey
+-   "The Desert and the Sea: 977 Days Captive on the Somali Pirate Coast" by Michael Scott Moore
+-   "The Painted Desert: Land of Light and Shadow" by Rose Houk
 
 ## Contact Us
 
@@ -49,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

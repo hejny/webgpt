@@ -2,12 +2,16 @@
 
 # Online Design
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to modern design trends and color schemes. Our background features a repeating pattern of abstract geometric shapes and patterns, inspired by the latest web design trends.
 
 ## About Us
+
 We are passionate about good design and believe it is essential for creating a successful online presence. Our team of experts offers a wide range of services, including web design, branding, and social media management. We have years of experience in the industry and can help you take your business to the next level.
 
 ## User Stories
+
 Our clients love our modern background because it adds a touch of sophistication to their websites. Here are some of their stories:
 
 > "I was looking for a background that would make my website stand out, and this one delivered. It's both eye-catching and subtle, which is exactly what I was looking for." - Jane, small business owner.
@@ -15,9 +19,11 @@ Our clients love our modern background because it adds a touch of sophistication
 > "As a web designer, I'm always on the lookout for new trends and ideas. This background is perfect for my clients who want to stay ahead of the game." - John, freelance web designer.
 
 ## References
+
 We take pride in our work and are happy to share references from satisfied clients. Contact us to learn more.
 
 ## Contact Us
+
 If you're interested in learning more about our services or have any questions, don't hesitate to contact us. We'd be happy to hear from you.
 
 Email: info@moderndesign.com
@@ -36,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

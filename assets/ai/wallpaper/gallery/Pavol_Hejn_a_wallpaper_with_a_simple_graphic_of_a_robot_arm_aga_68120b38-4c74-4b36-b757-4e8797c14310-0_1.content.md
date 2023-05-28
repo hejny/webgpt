@@ -2,6 +2,8 @@
 
 # RoboWorks News
 
+<!--font:Barlow Condensed-->
+
 Welcome to RoboWorks, your go-to source for the latest news and updates on robotics and automation. Our website is dedicated to providing you with valuable insights into the world of technology and its impact on society. As a tribute to the world of robotics, we have created a stunning background featuring a simple graphic of a robot arm against a gradient background of two Com<wbr>ple<wbr>men<wbr>ta<wbr>ry colors.
 
 ## About Us

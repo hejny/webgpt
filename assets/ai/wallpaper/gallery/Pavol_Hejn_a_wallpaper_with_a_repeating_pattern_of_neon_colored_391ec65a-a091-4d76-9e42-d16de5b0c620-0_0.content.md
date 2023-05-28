@@ -2,7 +2,9 @@
 
 # Neon Circuitry
 
-Welcome to our website, where we provide you with the most stunning and unique backgrounds for your digital devices. Our latest addition is the Neon Circuitry wallpaper, which features a repeating pattern of neon-colored circuitry set against a black background. 
+<!--font:Barlow Condensed-->
+
+Welcome to our website, where we provide you with the most stunning and unique backgrounds for your digital devices. Our latest addition is the Neon Circuitry wallpaper, which features a repeating pattern of neon-colored circuitry set against a black background.
 
 ## About the Wallpaper
 
@@ -24,17 +26,17 @@ Downloading the Neon Circuitry wallpaper is easy! Simply click on the download b
 
 If you're interested in learning more about the futuristic technology that inspired the Neon Circuitry wallpaper, check out these references:
 
-- [Futurism](#)
-- [Wired](#)
-- [TechCrunch](#)
+-   [Futurism](#)
+-   [Wired](#)
+-   [TechCrunch](#)
 
 ## Contact Us
 
 If you have any questions or concerns, please don't hesitate to contact us. You can reach us via email at [contact@neoncircuitry.com](mailto:contact@neoncircuitry.com) or through our social media channels:
 
-- [Twitter](#)
-- [Facebook](#)
-- [Instagram](#)
+-   [Twitter](#)
+-   [Facebook](#)
+-   [Instagram](#)
 
 Thank you for choosing Neon Circuitry as your go-to source for stunning digital backgrounds!
 
@@ -46,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -65,7 +67,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Neon Circuitry: Futuristic Tech Background
 
-Welcome to our website, where we provide you with the most stunning and unique backgrounds for your digital devices. Our latest addition is the Neon Circuitry wallpaper, which features a repeating pattern of neon-colored circuitry set against a black background. 
+Welcome to our website, where we provide you with the most stunning and unique backgrounds for your digital devices. Our latest addition is the Neon Circuitry wallpaper, which features a repeating pattern of neon-colored circuitry set against a black background.
 
 ## About the Wallpaper
 
