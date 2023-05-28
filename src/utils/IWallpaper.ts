@@ -10,12 +10,12 @@ export interface IWallpaper {
     id: string /*_wallpaper_id*/;
     src: string /*_url*/ /* <- Note: Not using URL objects because of serialization */;
     prompt: string;
-    colorStats: IWallpaperColorStats;
+    colorStats: IWallpaperColorStats /* <- !!! Put here all */;
     // TODO: shapeStats> IWallpaperShapeStats;
 
     title: string /* <- Note: This is just derrived */;
     content: string /*_markdown*/;
-    font: string /* <- Note: This is just derrived */;
+    font: string /* <- TODO: !!!! Can be more */ /* <- Note: This is just derrived */;
     // TODO: isTile + some mechanism to add additional metadata
 }
 

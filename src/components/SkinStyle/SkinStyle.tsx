@@ -6,12 +6,14 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 export function SkinStyle() {
     const wallpaper = useWallpaper();
     const {
-        colorStats: { palette },
+        colorStats: { version, palette },
     } = wallpaper;
 
     return (
         <style>{`
             :root {
+
+                /* 🎨 Note: This is a color palette computed by ${version} algorithm */
                 
                 ${[...palette, ...palette, ...palette, ...palette /* <- 💩 */]
                     .flatMap((color, i) => {
@@ -20,13 +22,12 @@ export function SkinStyle() {
                                 // TODO: !! DRY [🎋]
                                 `/* Note: --palette-${i} is ${color.note} */`,
                                 `--palette-${i}: ${color.value.toHex()};`,
-                                // `--palette-${i}-red: ${color.red};`,
-                                // `--palette-${i}-green: ${color.green};`,
-                                // `--palette-${i}-blue: ${color.blue};`,
                                 `--palette-${i}-triplet: ${color.value.red}, ${color.value.green}, ${color.value.blue};`,
                             ];
                         } else {
                             const j = i % palette.length;
+                            // TODO: Add here note:
+                            //       Note: Following colors are just a repeat of first ${palette.length} colors
                             return [
                                 `--palette-${i}: var(--palette-${j});`,
                                 `--palette-${i}-triplet: var(--palette-${j}-triplet);`,

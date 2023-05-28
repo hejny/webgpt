@@ -52,6 +52,8 @@ export function EditModal(props: EditModalProps) {
                             <ColorInput
                                 defaultValue={color.value}
                                 onChange={(newColor) => {
+
+                                    // TODO: !!! DO here real change of wallpaper with save and export
                                     // TODO: [🧠] !! DRY [🎋]
                                     // TODO: [🧠] !! Reset when switching wallpapers
 
