@@ -94,7 +94,12 @@ export function ControlPanel(props: ControlPanelProps) {
             >
                 <Article
                     content="▶"
-                    isUsingOpenmoji /* <- TODO: !! Show the QR code before + Save to GET params to be able to send */
+                    isUsingOpenmoji
+                    /* <- TODO: !!!
+                        - Open sharing modal
+                        - Show the QR code before
+                        - Save to GET params to be able to send both /share and ?mode=presentation
+                     */
                 />
             </Link>
 
