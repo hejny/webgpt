@@ -4,8 +4,6 @@
 
 <!--font:Barlow Condensed-->
 
-<!--font:Barlow Condensed-->
-
 Welcome to CyberBoost, your ultimate destination for all things tech. Our mission is to empower you with the latest tools and technologies to enhance your digital life.
 
 ## About Us
