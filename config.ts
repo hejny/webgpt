@@ -17,6 +17,7 @@ export const VERCEL_GIT_COMMIT_MESSAGE = config.get('VERCEL_GIT_COMMIT_MESSAGE')
 export const VERCEL_GIT_COMMIT_SHA = config.get('VERCEL_GIT_COMMIT_SHA').value;
 
 export const LIMIT_WALLPAPER_COUNT = config.get('LIMIT_WALLPAPER_COUNT').number().default(Infinity).value;
+export const LIMIT_WALLPAPER_EXCLUDE = config.get('LIMIT_WALLPAPER_EXCLUDE').list().default([]).value;
 
 export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 

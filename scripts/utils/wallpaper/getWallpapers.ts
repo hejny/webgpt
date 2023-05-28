@@ -2,7 +2,7 @@ import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
-import { COLORSTATS_DEFAULT_COMPUTE, FONTS, LIMIT_WALLPAPER_COUNT } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE, FONTS, LIMIT_WALLPAPER_COUNT, LIMIT_WALLPAPER_EXCLUDE } from '../../../config';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
@@ -34,10 +34,6 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
     const wallpapersmetadataFilePaths = await getWallpapersmetadataFilePaths();
 
     for (const metadataFilePath of wallpapersmetadataFilePaths) {
-        if (wallpapers.length > LIMIT_WALLPAPER_COUNT) {
-            break;
-        }
-
         const colorStatsFilePath = metadataFilePath.replace(
             /\.json$/,
             `.${COLORSTATS_DEFAULT_COMPUTE.version}.colors.yaml`,
@@ -46,6 +42,10 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
 
         const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
         const id = metadata!.id;
+
+        if (!LIMIT_WALLPAPER_EXCLUDE.includes(id) && wallpapers.length >= LIMIT_WALLPAPER_COUNT) {
+            continue;
+        }
 
         if (!(await isFileExisting(colorStatsFilePath))) {
             if (showWarnings) {
