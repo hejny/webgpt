@@ -10,6 +10,7 @@ import { textColor } from '../../../color/operators/furthest';
 import { areColorsEqual } from '../../../color/utils/areColorsEqual';
 import { colorDistanceSquared } from '../../../color/utils/colorDistance';
 import { colorHueDistance } from '../../../color/utils/colorHueDistance';
+import { getOrderString } from '../../../getOrderString';
 import { WithTake } from '../../../take/interfaces/ITakeChain';
 import { IImageColorStatsAdvanced } from '../../utils/IImageColorStats';
 
@@ -57,18 +58,24 @@ export function computeImagePalette14(
             si++;
             paletteCandidates.push({
                 ...mostSatulightedColor,
-                note: `${si}. the most satulighted color of ${regionName}`,
+                note: `${getOrderString(si)} most satulighted color of ${regionName}`,
             });
         }
         let gi = 0;
         for (const mostGroupedColor of regionStats.mostGroupedColors) {
             gi++;
-            paletteCandidates.push({ ...mostGroupedColor, note: `${gi}. the most grouped color of ${regionName}` });
+            paletteCandidates.push({
+                ...mostGroupedColor,
+                note: `${getOrderString(gi)} most grouped color of ${regionName}`,
+            });
         }
         let fi = 0;
         for (const mostFrequentColor of regionStats.mostFrequentColors) {
             fi++;
-            paletteCandidates.push({ ...mostFrequentColor, note: `${fi}. the most frequent color of ${regionName}` });
+            paletteCandidates.push({
+                ...mostFrequentColor,
+                note: `${getOrderString(fi)} most frequent color of ${regionName}`,
+            });
         }
         // regionStats.averageColor;
 
@@ -76,15 +83,23 @@ export function computeImagePalette14(
         paletteCandidates.push({ value: regionStats.lightestColor, note: `The lightest color of ${regionName}` });
     }
 
+    // 2️⃣ Pick best primary color
+    // 2️⃣🅰 Pick color from paletteCandidates that is dark enough to white text on it and simmilar to bottom of the image
     if (!primaryColor) {
         const primaryToAveragedistanceTheashold =
             colorDistanceSquared(Color.get('black'), Color.get('white')) *
             PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO;
 
-        // 2️⃣ Pick best primary color
-        // 2️⃣🅰 Pick color from paletteCandidates that is dark enough to white text on it and simmilar to bottom of the image
         for (const paletteCandidate of paletteCandidates) {
+            console.log('!!! Candidate: ', paletteCandidate.value.toHex());
+
             if (!areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
+                console.log(
+                    '!!!1',
+                    paletteCandidate.value.toHex(),
+                    paletteCandidate.value.then(textColor).toHex(),
+                    areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white')),
+                );
                 continue;
             }
 
@@ -92,6 +107,13 @@ export function computeImagePalette14(
                 colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value) >=
                 primaryToAveragedistanceTheashold
             ) {
+                console.log(
+                    '!!!2',
+                    paletteCandidate.value.toHex(),
+                    colorStats.bottomThird.averageColor.value.toHex(),
+                    colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value),
+                    primaryToAveragedistanceTheashold,
+                );
                 continue;
             }
 
@@ -105,8 +127,10 @@ export function computeImagePalette14(
             };
             break;
         }
+    }
 
-        // 2️⃣🅱 Pick color from paletteCandidates that is most simmilar to bottom of the image
+    // 2️⃣🅱 Pick color from paletteCandidates that is most simmilar to bottom of the image
+    if (!primaryColor) {
         let minDistance: number = Infinity;
         for (const paletteCandidate of paletteCandidates) {
             const distance = colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value);
@@ -121,9 +145,10 @@ export function computeImagePalette14(
                 note: `${paletteCandidate.note} that is the most similar color to the average color of the bottom third of the wallpaper.`,
             };
         }
-        if (!primaryColor) {
-            throw new Error('Something went wrong in 2️⃣🅱 - No primary color found');
-        }
+    }
+
+    if (!primaryColor) {
+        throw new Error('Something went wrong in 2️⃣🅱 - No primary color found');
     }
 
     // 2️⃣🅲 Get the secondary color

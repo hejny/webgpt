@@ -22,18 +22,19 @@ if (process.cwd() !== join(__dirname, '../..')) {
 }
 
 const program = new commander.Command();
-program.option('--commit', `Autocommit changes`);
-program.option('--shuffle', `Randomize wallpapers order`);
+program.option('--commit', `Autocommit changes`, false);
+program.option('--shuffle', `Randomize wallpapers order`, false);
 // TODO: Probbably tell why to not use --parallel in colors
 program.option('--parallel <numbers>', `Run N promises in parallel`, '1');
+program.option('--recompute', `Recumpute existing color stats`, false);
 program.parse(process.argv);
 
 // TODO:> program.option('--random', ``);
 // TODO:> program.option('--reverse', ``);
 program.parse(process.argv);
-const { commit: isCommited, shuffle: isShuffled } = program.opts();
+const { commit: isCommited, shuffle: isShuffled, recompute: isRecomputed } = program.opts();
 
-generateWallpapersColorStats({ isCommited, isShuffled })
+generateWallpapersColorStats({ isCommited, isShuffled, isRecomputed })
     .catch((error) => {
         console.error(chalk.bgRed(error.name));
         console.error(error);
@@ -43,7 +44,15 @@ generateWallpapersColorStats({ isCommited, isShuffled })
         process.exit(0);
     });
 
-async function generateWallpapersColorStats({ isCommited, isShuffled }: { isCommited: boolean; isShuffled: boolean }) {
+async function generateWallpapersColorStats({
+    isCommited,
+    isShuffled,
+    isRecomputed,
+}: {
+    isCommited: boolean;
+    isShuffled: boolean;
+    isRecomputed: boolean;
+}) {
     console.info(`🎨  Generating wallpapers color-stats`);
 
     if (isCommited && !(await isWorkingTreeClean(process.cwd()))) {
@@ -55,26 +64,28 @@ async function generateWallpapersColorStats({ isCommited, isShuffled }: { isComm
         parallelWorksCount: 1,
         logBeforeEachWork: 'colorStatsFilePath',
         async makeWork({ metadataFilePath: metadataFilePath, colorStatsFilePath }) {
-            if (await isFileExisting(colorStatsFilePath)) {
-                const { version } = YAML.parse(await readFile(colorStatsFilePath, 'utf8'));
+            if (!isRecomputed) {
+                if (await isFileExisting(colorStatsFilePath)) {
+                    const { version } = YAML.parse(await readFile(colorStatsFilePath, 'utf8'));
 
-                if (version === COLORSTATS_DEFAULT_COMPUTE.version) {
-                    console.info(`⏩ Color stats file has already been computed with same version`);
-                    return;
+                    if (version === COLORSTATS_DEFAULT_COMPUTE.version) {
+                        console.info(`⏩ Color stats file has already been computed with same version`);
+                        return;
+                    }
                 }
-            }
 
-            // Note: Making a lock file to prevent multiple processes to compute the same color stats
-            await writeFile(
-                colorStatsFilePath,
-                YAML.stringify({
-                    version: COLORSTATS_DEFAULT_COMPUTE.version,
-                    note: 'This is just a lock before real color stats are made - if you see this the process is still running or it crashed.',
-                })
-                    .split('"')
-                    .join("'") /* <- TODO: Can the replace be done directly in YAML.stringify options? */,
-                'utf8',
-            );
+                // Note: Making a lock file to prevent multiple processes to compute the same color stats
+                await writeFile(
+                    colorStatsFilePath,
+                    YAML.stringify({
+                        version: COLORSTATS_DEFAULT_COMPUTE.version,
+                        note: 'This is just a lock before real color stats are made - if you see this the process is still running or it crashed.',
+                    })
+                        .split('"')
+                        .join("'") /* <- TODO: Can the replace be done directly in YAML.stringify options? */,
+                    'utf8',
+                );
+            }
 
             // TODO: Pass the imageSrc directly through the forEachWallpaper
             const metadata = JSON.parse(await readFile(metadataFilePath, 'utf8')) as IWallpaperMetadata;
