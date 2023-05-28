@@ -55,13 +55,13 @@ export const IMAGE_NATURAL_SIZE = new Vector(1920, 1080);
  * @@@
  */
 export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> = [
-    /*
-    Full:
+    /*/
+    // Full:
     createColorfulComputeImageColorStats({
         colorBits: 256,
         size: IMAGE_NATURAL_SIZE,
     }),
-    */
+    /**/
     createColorfulComputeImageColorStats14({
         colorBits: 16,
         size: IMAGE_NATURAL_SIZE.scale(0.1),
@@ -120,4 +120,4 @@ export const TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO = 0.5; /* <- As a ra
  * How much can be primary (background) color different from average color to be considered OK
  * As ratio of distance between white and black
  */
-export const PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO = 0.2; /* <- As a ratio of distance between white and black */
+export const PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of distance between white and black */

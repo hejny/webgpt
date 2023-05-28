@@ -1,7 +1,7 @@
 version: colorful-192x108-16bit-v14palette
 palette:
     - note: 1st most satulighted color of the bottom half of the wallpaper that is
-          dark enough to place light text in and similar enough (20%) to the
+          dark enough to place light text in and similar enough (10%) to the
           average color of the bottom third of the wallpaper.
       value: '#cc1155'
       count: 2
