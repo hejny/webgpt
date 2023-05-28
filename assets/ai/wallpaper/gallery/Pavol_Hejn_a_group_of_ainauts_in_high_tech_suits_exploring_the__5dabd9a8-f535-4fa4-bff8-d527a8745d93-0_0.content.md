@@ -56,7 +56,7 @@ If you're interested in learning more about our technology and the work we do, p
 
 We're always looking for new partners and collaborators who share our passion for AI and exploration. If you're interested in working with us or have any questions, please don't hesitate to reach out:
 
--   Email: [contact@ainauts.com](mailto:contact@ainauts.com)
+-   Email: [contact@ainautes.com](mailto:contact@ainautes.com)
 -   Phone: +1 (555) 123-4567
 -   Address: 123 Main Street, Suite 100, San Francisco, CA 94111
 

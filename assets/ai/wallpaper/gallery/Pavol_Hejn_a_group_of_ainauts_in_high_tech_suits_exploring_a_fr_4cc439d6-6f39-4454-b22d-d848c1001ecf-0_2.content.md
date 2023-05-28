@@ -50,7 +50,7 @@ If you're interested in learning more about our missions and the technology behi
 
 If you have any questions or comments about our work, please don't hesitate to reach out to us:
 
--   Email: [contact@ainauts.com](mailto:contact@ainauts.com)
+-   Email: [contact@ainautes.com](mailto:contact@ainautes.com)
 -   Phone: 555-1234
 -   Address: 123 Main Street, Anytown USA
 

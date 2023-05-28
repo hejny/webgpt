@@ -31,7 +31,7 @@ If you're interested in learning more about our work, check out these resources:
 
 If you have any questions or would like to get involved with our mission, please don't hesitate to reach out:
 
--   Email: contact@theainauts.com
+-   Email: contact@theainautes.com
 -   Phone: +1 (555) 123-4567
 -   Address: 1234 Space Ave, Houston, TX 77001
 
@@ -93,7 +93,7 @@ If you're interested in learning more about our work, check out these resources:
 
 If you have any questions or would like to get involved with our mission, please don't hesitate to reach out:
 
-- Email: contact@theainauts.com
+- Email: contact@theainautes.com
 - Phone: +1 (555) 123-4567
 - Address: 1234 Space Ave, Houston, TX 77001
 
@@ -140,7 +140,7 @@ If you're interested in learning more about our work, check out these resources:
 
 If you have any questions or would like to get involved with our mission, please don't hesitate to reach out:
 
-- Email: contact@theainauts.com
+- Email: contact@theainautes.com
 - Phone: +1 (555) 123-4567
 - Address: 1234 Space Ave, Houston, TX 77001
 

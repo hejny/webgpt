@@ -34,7 +34,7 @@ One of the most striking features of this planet is the red sun that sets behind
 
 ## Join Our Mission
 
-Are you interested in joining our team of Ainautes? We are always looking for talented individuals who share our passion for exploring the unknown. Contact us at [join@ainauts.com](#) to learn more about opportunities to work with us.
+Are you interested in joining our team of Ainautes? We are always looking for talented individuals who share our passion for exploring the unknown. Contact us at [join@ainautes.com](#) to learn more about opportunities to work with us.
 
 ---
 

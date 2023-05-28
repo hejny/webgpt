@@ -1,6 +1,6 @@
 <!--font:Great Vibes-->
 
-# AI Ainautes Future
+# Ainautes Future
 
 Welcome to our website dedicated to exploring the exciting world of AI-assisted work in Ainautes. Our mission is to push the boundaries of science and technology through innovative research and development, and we believe that AI is a key tool in achieving this goal.
 
@@ -16,11 +16,11 @@ We are a team of researchers and developers who are passionate about exploring t
 
 At Ainautes, we are constantly exploring new ways to use AI to enhance human productivity and creativity. Our research focuses on a variety of areas, including:
 
-- Natural language processing
-- Computer vision
-- Robotics
-- Machine learning
-- Human-AI interaction
+-   Natural language processing
+-   Computer vision
+-   Robotics
+-   Machine learning
+-   Human-AI interaction
 
 Through our research, we aim to develop new tools and techniques that will enable Ainautes to work more effectively and efficiently, while also fostering creativity and innovation.
 
@@ -36,9 +36,9 @@ Our users come from a wide range of backgrounds and industries, but they all sha
 
 If you're interested in learning more about AI-assisted work in Ainautes, we recommend checking out the following resources:
 
-- [AI-Assisted Work: The Future of Productivity](#)
-- [The Role of AI in Scientific Discovery](#)
-- [Human-AI Collaboration: Challenges and Opportunities](#)
+-   [AI-Assisted Work: The Future of Productivity](#)
+-   [The Role of AI in Scientific Discovery](#)
+-   [Human-AI Collaboration: Challenges and Opportunities](#)
 
 ## Contact Us
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

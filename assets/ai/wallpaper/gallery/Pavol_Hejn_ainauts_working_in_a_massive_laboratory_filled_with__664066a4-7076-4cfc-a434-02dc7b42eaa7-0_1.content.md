@@ -51,7 +51,7 @@ If you're interested in learning more about our research or would like to collab
 
 ## Contact
 
-To get in touch with us, please send an email to [contact@ainauts.com](mailto:contact@ainauts.com) or fill out the form on our [contact page](#contact). We look forward to hearing from you!
+To get in touch with us, please send an email to [contact@ainautes.com](mailto:contact@ainautes.com) or fill out the form on our [contact page](#contact). We look forward to hearing from you!
 
 ---
 

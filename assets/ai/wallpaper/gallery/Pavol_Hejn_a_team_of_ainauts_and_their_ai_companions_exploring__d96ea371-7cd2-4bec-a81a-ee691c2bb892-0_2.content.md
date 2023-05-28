@@ -1,7 +1,7 @@
 <!--
 Write me markdown content of website with wallpaper:
 
-"A team of Ainauts and their AI companions exploring a massive, underground cave system on a distant planet."
+"A team of Ainautes and their AI companions exploring a massive, underground cave system on a distant planet."
 
 The header of the page should not be copy of the text but rather a real content of the website which is using this wallpaper.
 
@@ -16,7 +16,7 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Caves
 
-Welcome to our website showcasing the incredible journey of a team of Ainauts and their AI companions as they explore a massive, underground cave system on a distant planet.
+Welcome to our website showcasing the incredible journey of a team of Ainautes and their AI companions as they explore a massive, underground cave system on a distant planet.
 
 ## The Mission
 

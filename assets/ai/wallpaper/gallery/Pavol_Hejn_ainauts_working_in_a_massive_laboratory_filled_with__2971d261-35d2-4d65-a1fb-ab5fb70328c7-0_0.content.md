@@ -52,4 +52,4 @@ Our website is committed to providing accurate and up-to-date information about 
 
 ## Contact Us
 
-Do you have questions or comments about our website? We would love to hear from you! Please don't hesitate to reach out to us at [contact@ainauts.com](mailto:contact@ainauts.com).
+Do you have questions or comments about our website? We would love to hear from you! Please don't hesitate to reach out to us at [contact@ainautes.com](mailto:contact@ainautes.com).

@@ -1,6 +1,6 @@
 <!--font:IBM Plex Sans-->
 
-# AI Ainautes Future
+# Ainautes Future
 
 Welcome to Ainautes, a team of dedicated professionals working tirelessly in a massive AI factory to create new and innovative technologies for the future. Our team is committed to advancing the field of artificial intelligence and bringing cutting-edge solutions to industries across the globe.
 
@@ -16,11 +16,11 @@ We offer a wide range of AI-powered products and services to help businesses and
 
 Some of our most popular products include:
 
-- **Ainautes Voice**: Our natural language processing system can understand and respond to human speech, making it ideal for virtual assistants, chatbots, and other conversational interfaces.
+-   **Ainautes Voice**: Our natural language processing system can understand and respond to human speech, making it ideal for virtual assistants, chatbots, and other conversational interfaces.
 
-- **Ainautes Vision**: Our computer vision technology can analyze images and videos to identify objects, people, and other visual elements. This makes it useful for applications such as security monitoring, object recognition, and autonomous vehicles.
+-   **Ainautes Vision**: Our computer vision technology can analyze images and videos to identify objects, people, and other visual elements. This makes it useful for applications such as security monitoring, object recognition, and autonomous vehicles.
 
-- **Ainautes Analytics**: Our machine learning algorithms can analyze large datasets to uncover patterns and insights that would be difficult to detect manually. This makes it useful for applications such as fraud detection, predictive maintenance, and personalized marketing.
+-   **Ainautes Analytics**: Our machine learning algorithms can analyze large datasets to uncover patterns and insights that would be difficult to detect manually. This makes it useful for applications such as fraud detection, predictive maintenance, and personalized marketing.
 
 ## User Stories
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

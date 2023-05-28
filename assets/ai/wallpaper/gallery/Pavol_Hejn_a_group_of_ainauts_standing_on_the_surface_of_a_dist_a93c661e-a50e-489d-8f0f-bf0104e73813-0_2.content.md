@@ -50,7 +50,7 @@ If you're interested in learning more about space exploration and the latest dis
 
 If you have any questions or comments about our mission, feel free to reach out to us:
 
--   Email: [exploration@ainauts.com](mailto:exploration@ainauts.com)
+-   Email: [exploration@ainautes.com](mailto:exploration@ainautes.com)
 -   Phone: 555-555-5555
 
 Thank you for visiting our website and joining us on our journey to explore the unknown!

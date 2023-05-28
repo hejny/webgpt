@@ -47,7 +47,7 @@ Our work at Ainautes Lab has already had a significant impact on the lives of pe
 
 If you have any questions or would like to learn more about our work at Ainautes Lab, please don't hesitate to contact us:
 
--   **Email**: [info@ainautslab.com](#)
+-   **Email**: [info@ainauteslab.com](#)
 -   **Phone**: 555-1234
 -   **Address**: 123 Main St, Anytown USA
 

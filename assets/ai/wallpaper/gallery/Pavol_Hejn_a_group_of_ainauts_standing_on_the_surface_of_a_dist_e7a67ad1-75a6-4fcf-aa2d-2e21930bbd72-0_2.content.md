@@ -50,7 +50,7 @@ If you're interested in learning more about space exploration and the search for
 
 ## Contact Us
 
-If you have any questions or comments about our website or the Ainautes, please don't hesitate to get in touch. You can reach us by email at contact@ainauts.com or follow us on social media:
+If you have any questions or comments about our website or the Ainautes, please don't hesitate to get in touch. You can reach us by email at contact@ainautes.com or follow us on social media:
 
 -   Twitter: [@Ainautes](#)
 -   Facebook: [@AinautesOfficial](#)

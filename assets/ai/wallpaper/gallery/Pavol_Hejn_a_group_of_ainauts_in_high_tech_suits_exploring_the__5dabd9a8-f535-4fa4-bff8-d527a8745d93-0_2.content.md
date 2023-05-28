@@ -49,9 +49,9 @@ If you're interested in learning more about our Ainautes and the technology behi
 
 If you have any questions or comments about our work, we'd love to hear from you! You can reach us at:
 
--   Email: contact@ainauts.com
+-   Email: contact@ainautes.com
 -   Phone: +1 (555) 123-4567
--   Twitter: [@ainauts](https://twitter.com/ainauts)
+-   Twitter: [@ainautes](https://twitter.com/ainautes)
 
 ---
 

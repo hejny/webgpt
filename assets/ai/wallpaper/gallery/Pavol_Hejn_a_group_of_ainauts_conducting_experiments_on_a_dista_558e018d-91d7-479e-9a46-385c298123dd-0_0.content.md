@@ -54,4 +54,4 @@ If you're interested in learning more about our work, here are some resources yo
 
 ## Contact Us
 
-If you have any questions or comments about our work at Ainautes, please don't hesitate to get in touch. You can reach us by email at contact@ainauts.com or by phone at 555-1234. We look forward to hearing from you!
+If you have any questions or comments about our work at Ainautes, please don't hesitate to get in touch. You can reach us by email at contact@ainautes.com or by phone at 555-1234. We look forward to hearing from you!

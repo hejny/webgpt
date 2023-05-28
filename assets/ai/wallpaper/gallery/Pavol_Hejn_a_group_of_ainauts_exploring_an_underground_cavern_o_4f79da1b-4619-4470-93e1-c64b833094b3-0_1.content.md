@@ -54,4 +54,4 @@ For more information about our expeditions and the latest discoveries in space e
 
 ## Contact Us
 
-If you have any questions or comments about our website or our expeditions, feel free to contact us at [contact@ainauts.com](mailto:contact@ainauts.com). We would love to hear from you!
+If you have any questions or comments about our website or our expeditions, feel free to contact us at [contact@ainautes.com](mailto:contact@ainautes.com). We would love to hear from you!

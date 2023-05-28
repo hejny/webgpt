@@ -36,7 +36,7 @@ Are you interested in joining our team of Ainautes? We are always looking for ta
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Send us an email at [info@ainauts.com](mailto:info@ainauts.com) or fill out our [contact form](#contact) and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Send us an email at [info@ainautes.com](mailto:info@ainautes.com) or fill out our [contact form](#contact) and we'll get back to you as soon as possible.
 
 ---
 

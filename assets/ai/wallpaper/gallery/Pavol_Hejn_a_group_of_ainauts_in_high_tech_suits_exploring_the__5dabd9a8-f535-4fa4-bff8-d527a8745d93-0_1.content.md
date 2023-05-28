@@ -18,7 +18,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 <!--font:Inter-->
 
-# AI Ainautes Gateway
+# Ainautes Gateway
 
 Explore the unknown with Ainautes! Our team of highly skilled professionals is dedicated to pushing the boundaries of artificial intelligence and space exploration. Our latest wallpaper features a group of Ainautes in high-tech suits exploring the surface of a desert planet, with a massive sandstorm brewing in the distance. This image represents our commitment to innovation and adventure.
 
@@ -54,6 +54,6 @@ At Ainautes, we are committed to delivering high-quality services and solutions 
 
 ## Contact Us
 
-Ready to explore the unknown with Ainautes? Contact us today to learn more about our services and how we can help you achieve your goals. You can reach us at [contact@ainauts.com](mailto:contact@ainauts.com) or by filling out the form on our [contact page](#contact).
+Ready to explore the unknown with Ainautes? Contact us today to learn more about our services and how we can help you achieve your goals. You can reach us at [contact@ainautes.com](mailto:contact@ainautes.com) or by filling out the form on our [contact page](#contact).
 
-Follow us on [Twitter](https://twitter.com/ainauts) and [LinkedIn](https://www.linkedin.com/company/ainauts/) to stay up-to-date with the latest news and developments from Ainautes.
+Follow us on [Twitter](https://twitter.com/ainautes) and [LinkedIn](https://www.linkedin.com/company/ainautes/) to stay up-to-date with the latest news and developments from Ainautes.

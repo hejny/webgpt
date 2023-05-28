@@ -56,7 +56,7 @@ For more information about our research and the work being done by the Ainautes,
 
 ## Contact Us
 
-If you have any questions or comments about our research, please don't hesitate to reach out to us. You can contact us using the form below, or email us directly at [contact@ainauts.com](mailto:contact@ainauts.com).
+If you have any questions or comments about our research, please don't hesitate to reach out to us. You can contact us using the form below, or email us directly at [contact@ainautes.com](mailto:contact@ainautes.com).
 
 ---
 

@@ -1,6 +1,6 @@
 <!--font:Cabin-->
 
-# AI Ainautes
+# Ainautes
 
 Welcome to our website dedicated to exploring the frontiers of science with the help of Ainautes and their AI companions. Our mission is to push the boundaries of human knowledge through cutting-edge research, experimentation, and discovery.
 
@@ -12,9 +12,9 @@ Our wallpaper background depicts Ainautes and their AI companions conducting exp
 
 We are currently focused on several key research areas, including:
 
-- **Quantum Computing:** We are working to develop new quantum computing algorithms and hardware that can solve complex problems faster than classical computers.
-- **Nanotechnology:** We are exploring the potential of nanotechnology to create new materials, devices, and systems with unprecedented properties and capabilities.
-- **Artificial Intelligence:** We are developing advanced AI systems that can learn from data, reason about complex problems, and interact with humans in natural ways.
+-   **Quantum Computing:** We are working to develop new quantum computing algorithms and hardware that can solve complex problems faster than classical computers.
+-   **Nanotechnology:** We are exploring the potential of nanotechnology to create new materials, devices, and systems with unprecedented properties and capabilities.
+-   **Artificial Intelligence:** We are developing advanced AI systems that can learn from data, reason about complex problems, and interact with humans in natural ways.
 
 ## User Stories
 
@@ -30,17 +30,17 @@ Our work has already had a significant impact on many fields, from medicine and 
 
 If you're interested in learning more about our research, please check out our list of references:
 
-- [Quantum Computing: A Gentle Introduction](#)
-- [Nanotechnology: Principles and Applications](#)
-- [Artificial Intelligence: A Modern Approach](#)
+-   [Quantum Computing: A Gentle Introduction](#)
+-   [Nanotechnology: Principles and Applications](#)
+-   [Artificial Intelligence: A Modern Approach](#)
 
 ## Contact Us
 
 If you have any questions or comments about our work, please don't hesitate to contact us:
 
-- Email: info@frontiersofscience.com
-- Phone: +1 (555) 123-4567
-- Address: 123 Main Street, Anytown USA 12345
+-   Email: info@frontiersofscience.com
+-   Phone: +1 (555) 123-4567
+-   Address: 123 Main Street, Anytown USA 12345
 
 Thank you for visiting our website!
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

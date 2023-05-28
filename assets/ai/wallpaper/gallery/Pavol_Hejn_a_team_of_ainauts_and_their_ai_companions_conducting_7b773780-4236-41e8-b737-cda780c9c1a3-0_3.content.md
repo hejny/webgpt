@@ -52,8 +52,8 @@ For more information about our work and the technology we use, please refer to t
 
 If you have any questions or would like to learn more about our work, please don't hesitate to contact us:
 
--   Email: [contact@ainauts.com](mailto:contact@ainauts.com)
--   Phone: 1-800-AINAUTS
+-   Email: [contact@ainautes.com](mailto:contact@ainautes.com)
+-   Phone: 1-800-AINAUTES
 -   Social Media: [Twitter](#twitter), [Facebook](#facebook), [Instagram](#instagram)
 
 Thank you for visiting our website, and we hope you'll join us on our journey of discovery as we continue to explore the depths of gas giants with our Ainautes.

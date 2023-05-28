@@ -38,4 +38,4 @@ Are you ready to join us on this exciting adventure? Follow along as we share up
 
 ---
 
-[Back to Top](#exploring-the-unknown-ainauts-on-a-red-planet)
+[Back to Top](#exploring-the-unknown-ainautes-on-a-red-planet)
