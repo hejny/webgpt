@@ -6,7 +6,7 @@ palette:
     - note: The lightest color of the bottom half of the wallpaper which is contrast
           enough (50%) against the primary color.
       value: '#eeeeee'
-    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 2nd most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#8899aa'

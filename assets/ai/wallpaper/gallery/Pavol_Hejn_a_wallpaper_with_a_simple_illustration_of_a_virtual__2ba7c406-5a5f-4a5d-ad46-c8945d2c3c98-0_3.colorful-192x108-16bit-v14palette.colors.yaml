@@ -1,17 +1,23 @@
 version: colorful-192x108-16bit-v14palette
 palette:
-    - note: 8. the most satulighted color of the whole wallpaper that is the most
-          similar color to the average color of the bottom third of the
-          wallpaper.
-      value: '#664477'
-      count: 92
-    - note: The color farthest from the primary color.
-      value: '#ffffff'
-    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 3rd most satulighted color of the bottom half of the wallpaper that is
+          dark enough to place light text in and similar enough (20%) to the
+          average color of the bottom third of the wallpaper.
+      value: '#114466'
+      count: 9
+    - note: The lightest color of the bottom half of the wallpaper which is contrast
+          enough (50%) against the primary color.
+      value: '#ffffee'
+    - note: 2nd most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#ffaa55'
       count: 2
+    - note: 4th most satulighted color of the bottom half of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
+          palette colors.
+      value: '#dd1122'
+      count: 16
 averageColor: '#855340'
 lightestColor: '#eeffdd'
 darkestColor: '#000000'

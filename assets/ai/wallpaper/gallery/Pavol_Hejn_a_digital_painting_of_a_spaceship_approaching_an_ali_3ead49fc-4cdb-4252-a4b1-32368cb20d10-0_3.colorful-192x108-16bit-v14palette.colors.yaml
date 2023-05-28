@@ -3,21 +3,21 @@ palette:
     - note: The most common color to appear at the bottom of the wallpaper.
       value: '#111111'
       count: 2637
-    - note: 6. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 6th most satulighted color of the bottom half of the wallpaper which is
           contrast enough (50%) against the primary color.
       value: '#ffff88'
       count: 1
-    - note: 5. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 5th most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#4499aa'
       count: 3
-    - note: 3. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 3rd most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#ff55aa'
       count: 1
-    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 1st most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#4411bb'

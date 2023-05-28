@@ -1,32 +1,30 @@
 version: colorful-192x108-16bit-v14palette
 palette:
-    - note: 2. the most frequent color of the bottom third of the wallpaper that is
-          the most similar color to the average color of the bottom third of the
-          wallpaper.
-      value: '#aa4466'
-      count: 81
+    - note: 3rd most satulighted color of the bottom half of the wallpaper that is
+          dark enough to place light text in and similar enough (20%) to the
+          average color of the bottom third of the wallpaper.
+      value: '#3366cc'
+      count: 2
     - note: The color farthest from the primary color.
       value: '#ffffff'
-    - note: 2. the most satulighted color of the bottom third of the wallpaper which
-          is distant enough (10%) and hue-distant enough (30°) from all other
-          palette colors.
-      value: '#7744ff'
-      count: 1
-    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 4th most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
-      value: '#00bbdd'
+      value: '#ee55bb'
       count: 1
-    - note: 6. the most frequent color of the bottom half of the wallpaper which is
+    - note: 6th most frequent color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#eecc55'
       count: 3
-    - note: 1. the most grouped color of the bottom half of the wallpaper which is
+    - note: 5th most frequent color of the bottom third of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
-      value: '#002266'
-      count: 45
+      value: '#55ddee'
+      count: 7
+    - note: The darkest color of the whole wallpaper which is distant enough (10%) and
+          hue-distant enough (30°) from all other palette colors.
+      value: '#223300'
 averageColor: '#5c5f8c'
 lightestColor: '#ffeeff'
 darkestColor: '#223300'

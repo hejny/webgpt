@@ -1,36 +1,31 @@
 version: colorful-192x108-16bit-v14palette
 palette:
-    - note: 2. the most frequent color of the bottom line of the wallpaper that is the
-          most similar color to the average color of the bottom third of the
-          wallpaper.
-      value: '#115577'
-      count: 432
+    - note: 4th most satulighted color of the bottom half of the wallpaper that is
+          dark enough to place light text in and similar enough (20%) to the
+          average color of the bottom third of the wallpaper.
+      value: '#1144aa'
+      count: 10
     - note: The color farthest from the primary color.
       value: '#ffffff'
-    - note: 8. the most frequent color of the whole wallpaper which is distant enough
+    - note: 8th most frequent color of the whole wallpaper which is distant enough
           (10%) and hue-distant enough (30°) from all other palette colors.
       value: '#66cc22'
       count: 1
-    - note: 4. the most frequent color of the bottom third of the wallpaper which is
+    - note: 4th most frequent color of the bottom third of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#ffcc33'
       count: 46
-    - note: 5. the most satulighted color of the bottom half of the wallpaper which is
-          distant enough (10%) and hue-distant enough (30°) from all other
-          palette colors.
-      value: '#11ee99'
-      count: 1
-    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 2nd most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#ee33cc'
       count: 2
-    - note: 1. the most frequent color of the bottom half of the wallpaper which is
+    - note: 1st most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
-      value: '#000011'
-      count: 258
+      value: '#00ddff'
+      count: 2
 averageColor: '#504a57'
 lightestColor: '#eeeeff'
 darkestColor: '#000000'

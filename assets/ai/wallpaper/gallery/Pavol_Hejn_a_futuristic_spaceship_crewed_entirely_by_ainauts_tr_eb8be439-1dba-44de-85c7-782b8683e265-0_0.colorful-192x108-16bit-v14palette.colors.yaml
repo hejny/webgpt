@@ -3,11 +3,11 @@ palette:
     - note: The most common color to appear at the bottom of the wallpaper.
       value: '#001122'
       count: 5464
-    - note: 3. the most frequent color of the bottom half of the wallpaper which is
+    - note: 3rd most frequent color of the bottom half of the wallpaper which is
           contrast enough (50%) against the primary color.
       value: '#ffffdd'
       count: 39
-    - note: 5. the most frequent color of the bottom half of the wallpaper which is
+    - note: 5th most frequent color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#cc4411'

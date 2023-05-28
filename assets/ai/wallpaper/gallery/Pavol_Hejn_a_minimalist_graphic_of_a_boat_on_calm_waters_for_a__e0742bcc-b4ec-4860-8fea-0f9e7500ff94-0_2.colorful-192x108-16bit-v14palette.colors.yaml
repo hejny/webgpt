@@ -5,7 +5,7 @@ palette:
       count: 7673
     - note: The color farthest from the primary color.
       value: '#000000'
-    - note: 5. the most frequent color of the bottom half of the wallpaper which is
+    - note: 5th most frequent color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#eeeedd'

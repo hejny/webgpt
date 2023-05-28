@@ -5,17 +5,17 @@ palette:
       count: 8933
     - note: The color farthest from the primary color.
       value: '#ffffff'
-    - note: 3. the most frequent color of the bottom half of the wallpaper which is
+    - note: 3rd most frequent color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#99dd55'
       count: 38
-    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 2nd most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#11eecc'
       count: 1
-    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 1st most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#8822dd'

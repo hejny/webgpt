@@ -6,17 +6,17 @@ palette:
     - note: The darkest color of the bottom half of the wallpaper which is contrast
           enough (50%) against the primary color.
       value: '#220000'
-    - note: 3. the most satulighted color of the bottom third of the wallpaper which
-          is distant enough (10%) and hue-distant enough (30°) from all other
+    - note: 3rd most satulighted color of the bottom third of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#334477'
       count: 1
-    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 1st most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#55bbdd'
       count: 11
-    - note: 2. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 2nd most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#ffaa55'

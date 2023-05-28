@@ -3,7 +3,7 @@ palette:
     - note: The most common color to appear at the bottom of the wallpaper.
       value: '#ffffff'
       count: 8043
-    - note: 4. the most frequent color of the bottom half of the wallpaper which is
+    - note: 4th most frequent color of the bottom half of the wallpaper which is
           contrast enough (50%) against the primary color.
       value: '#000000'
       count: 58

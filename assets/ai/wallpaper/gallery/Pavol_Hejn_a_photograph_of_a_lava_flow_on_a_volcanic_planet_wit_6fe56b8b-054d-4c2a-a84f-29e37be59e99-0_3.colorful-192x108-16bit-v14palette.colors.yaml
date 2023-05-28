@@ -5,7 +5,7 @@ palette:
       count: 4839
     - note: The color farthest from the primary color.
       value: '#ffffff'
-    - note: 3. the most frequent color of the whole wallpaper which is distant enough
+    - note: 3rd most frequent color of the whole wallpaper which is distant enough
           (10%) and hue-distant enough (30°) from all other palette colors.
       value: '#ff9922'
       count: 3

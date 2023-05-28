@@ -5,8 +5,8 @@ palette:
       count: 7318
     - note: The color farthest from the primary color.
       value: '#ffffff'
-    - note: 3. the most satulighted color of the bottom third of the wallpaper which
-          is distant enough (10%) and hue-distant enough (30°) from all other
+    - note: 3rd most satulighted color of the bottom third of the wallpaper which is
+          distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#88ccbb'
       count: 1

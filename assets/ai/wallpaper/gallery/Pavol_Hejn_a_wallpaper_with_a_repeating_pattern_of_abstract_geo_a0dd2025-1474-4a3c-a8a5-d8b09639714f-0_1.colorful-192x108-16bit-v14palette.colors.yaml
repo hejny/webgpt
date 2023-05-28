@@ -5,7 +5,7 @@ palette:
       count: 1875
     - note: The color farthest from the primary color.
       value: '#ffffff'
-    - note: 1. the most satulighted color of the bottom half of the wallpaper which is
+    - note: 1st most satulighted color of the bottom half of the wallpaper which is
           distant enough (10%) and hue-distant enough (30°) from all other
           palette colors.
       value: '#44aa99'
