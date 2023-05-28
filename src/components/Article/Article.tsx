@@ -1,8 +1,10 @@
-import { useMemo } from 'react';
+import { useContext, useMemo } from 'react';
 import { BehaviorSubject } from 'rxjs';
 import { Converter } from 'showdown';
 import showdownHighlight from 'showdown-highlight';
 import spaceTrim from 'spacetrim';
+import { FONTS } from '../../../config';
+import { ExportContext } from '../../pages/_app';
 import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
@@ -24,6 +26,11 @@ interface IArticleProps {
      * Source markdown
      */
     content: string;
+
+    /**
+     * Are tags <!--font:Poppins--> detected and applied
+     */
+    isusingFonts?: boolean;
 
     /**
      * Make for each heading in markdown unique id and scroll to hash
@@ -48,11 +55,21 @@ interface IArticleProps {
  * @returns {JSX.Element} - The JSX element for the article
  */
 export function Article(props: IArticleProps) {
-    const { content /* [0], isHashUsed */, isUsingOpenmoji, isEnhanced } = props;
+    const { content, isusingFonts /* [0], isHashUsed */, isUsingOpenmoji, isEnhanced } = props;
+    const { isExported } = useContext(ExportContext);
 
     // [0] const hash = useHash();
 
     let synchronouslyEnhancedContent: string_markdown = spaceTrim(content || '');
+
+    if (isusingFonts) {
+        synchronouslyEnhancedContent = synchronouslyEnhancedContent.replace(
+            /<!--font:(.*?)-->/g,
+            `</div><div style="font-family: '$1', sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
+        );
+        // TODO: Teoretically, the line below should be used BUT it does not work with it and strangely works without it:
+        // synchronouslyEnhancedContent = `<div>\n\n\n${synchronouslyEnhancedContent}\n\n\n</div>` /* <- TODO: This is a bit hack how to process easily non-ended font tags  */;
+    }
 
     if (isEnhanced) {
         synchronouslyEnhancedContent = linkMarkdown(synchronouslyEnhancedContent);
@@ -102,6 +119,21 @@ export function Article(props: IArticleProps) {
 
     return (
         <>
+            {!isExported && isusingFonts && (
+                <style
+                    dangerouslySetInnerHTML={{
+                        /* [🎗] */
+                        __html: FONTS.filter((font) => html.includes(font))
+                            .map(
+                                (font) =>
+                                    `@import url(https://fonts.googleapis.com/css2?family=${font
+                                        .split(' ')
+                                        .join('+')}&display=swap});`,
+                            )
+                            .join('\n'),
+                    }}
+                />
+            )}
             <Html
                 className={styles.Article}
                 {...{ html }}
@@ -165,6 +197,7 @@ const converter = new Converter({
 });
 
 /**
- * TODO:[0] Use has if isHashUsed is true
+ * TODO: [0] Use has if isHashUsed is true
  * TODO: Maybe rename to <Content/> or <MarkdownContent/> or <Markdown/>
+ * TODO: [0] Make has work + rename hash to fragment ACRY
  */

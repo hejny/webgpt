@@ -106,7 +106,9 @@ async function repairWallpapersContent({
             let title = extractTitleFromMarkdown(content);
 
             if (isRepairingFonts) {
-                let font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
+                let font =
+                    content.match(/<!--font:(?<font>.*)-->/)?.groups
+                        ?.font; /* <- TODO: There can be more fonts in document */
                 if (font && !FONTS.includes(font)) {
                     const existingFont = FONTS.find((existingFont) => font!.includes(existingFont));
 

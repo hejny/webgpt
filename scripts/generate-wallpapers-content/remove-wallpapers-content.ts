@@ -47,7 +47,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         logBeforeEachWork: 'contentFilePath',
         async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
             let content = await readFile(contentFilePath, 'utf-8');
-            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font;
+            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font /* <- TODO: There can be more fonts in document */;
             content = removeMarkdownComments(content);
             const title = extractTitleFromMarkdown(content);
 

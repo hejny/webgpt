@@ -15,7 +15,6 @@ export interface IWallpaper {
 
     title: string /* <- Note: This is just derrived */;
     content: string /*_markdown*/;
-    font: string /* <- TODO: !!!! Can be more */ /* <- Note: This is just derrived */;
     // TODO: isTile + some mechanism to add additional metadata
 }
 

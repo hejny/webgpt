@@ -2,9 +2,8 @@ import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
-import { COLORSTATS_DEFAULT_COMPUTE, FONTS, LIMIT_WALLPAPER_COUNT, LIMIT_WALLPAPER_EXCLUDE } from '../../../config';
+import { COLORSTATS_DEFAULT_COMPUTE, LIMIT_WALLPAPER_COUNT, LIMIT_WALLPAPER_EXCLUDE } from '../../../config';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
-import { removeMarkdownComments } from '../../../src/utils/content/removeMarkdownComments';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
@@ -95,18 +94,9 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
         }
 
         let content = await readFile(contentFilePath, 'utf8');
-        const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font ?? 'Unknown';
 
-        if (!FONTS.includes(font)) {
-            if (showWarnings) {
-                console.warn(chalk.yellow(` ⏩  Skipping wallpaper ${id} Font "${font}" is not supported`));
-            }
-            continue;
-        }
-
-        content = removeMarkdownComments(content);
         content = spaceTrim(content);
-        // TODO: !! Replace here [email protected]
+        // TODO: !!!! Replace [email protected] ACRY
 
         const title = extractTitleFromMarkdown(content) || 'Untitled';
 
@@ -120,7 +110,6 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             colorStats,
             title,
             content,
-            font,
             metadataFilePath,
             colorStatsFilePath,
             contentFilePath,
