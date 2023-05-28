@@ -1,0 +1,77 @@
+version: colorful-1920x1080-256bit-v14palette
+palette:
+    - note: The darkest color of the bottom half of the wallpaper that is dark enough
+          to place light text in and similar enough (10%) to the average color
+          of the bottom third of the wallpaper.
+      value: '#67aa47'
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+averageColor: '#68c6bc'
+lightestColor: '#fefeff'
+darkestColor: '#619143'
+mostFrequentColors:
+    - value: '#61c5c0'
+      count: 1475087
+    - value: '#fdfcfa'
+      count: 184
+mostSatulightedColors:
+    - value: '#58cabe'
+      count: 1
+    - value: '#60be84'
+      count: 2
+    - value: '#aad888'
+      count: 1
+mostGroupedColors:
+    - value: '#61c5c0'
+      count: 1465010
+bottomHalf:
+    averageColor: '#67c5bc'
+    lightestColor: '#fefeff'
+    darkestColor: '#67aa47'
+    mostFrequentColors:
+        - value: '#61c5c0'
+          count: 1353559
+        - value: '#fdfcfa'
+          count: 268
+    mostSatulightedColors:
+        - value: '#54beba'
+          count: 6
+        - value: '#61b486'
+          count: 2
+        - value: '#aad888'
+          count: 2
+    mostGroupedColors:
+        - value: '#61c5c0'
+          count: 1341514
+bottomThird:
+    averageColor: '#62c4be'
+    lightestColor: '#fefeff'
+    darkestColor: '#6eac4d'
+    mostFrequentColors:
+        - value: '#61c5c0'
+          count: 1436893
+        - value: '#fcfbfb'
+          count: 288
+    mostSatulightedColors:
+        - value: '#51b9b6'
+          count: 4
+        - value: '#4f9f73'
+          count: 6
+        - value: '#71b95c'
+          count: 3
+    mostGroupedColors:
+        - value: '#61c5c0'
+          count: 1423141
+bottomLine:
+    averageColor: '#63c5c0'
+    lightestColor: '#70c4c0'
+    darkestColor: '#60c6bf'
+    mostFrequentColors:
+        - value: '#63c5c0'
+          count: 1975320
+    mostSatulightedColors:
+        - value: '#61c7c0'
+          count: 1080
+    mostGroupedColors:
+        - value: '#63c5c0'
+          count: 1553040

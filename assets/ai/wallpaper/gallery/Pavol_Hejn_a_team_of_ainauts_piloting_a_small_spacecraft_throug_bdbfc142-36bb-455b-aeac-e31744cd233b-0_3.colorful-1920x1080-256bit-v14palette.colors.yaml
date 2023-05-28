@@ -1,0 +1,84 @@
+version: colorful-1920x1080-256bit-v14palette
+palette:
+    - note: 2nd most satulighted color of the bottom half of the wallpaper that is
+          dark enough to place light text in and similar enough (10%) to the
+          average color of the bottom third of the wallpaper.
+      value: '#3b5169'
+      count: 4
+    - note: The color farthest from the primary color.
+      value: '#ffffff'
+averageColor: '#31343d'
+lightestColor: '#ffffff'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#08090e'
+      count: 7239
+    - value: '#5a6a7b'
+      count: 1802
+    - value: '#adbcc8'
+      count: 117
+mostSatulightedColors:
+    - value: '#f9c58e'
+      count: 1
+    - value: '#ab5d63'
+      count: 1
+    - value: '#637d92'
+      count: 2
+mostGroupedColors:
+    - value: '#0e0f13'
+      count: 1700
+bottomHalf:
+    averageColor: '#26262b'
+    lightestColor: '#feffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#090a0f'
+          count: 9029
+        - value: '#495a6d'
+          count: 31
+        - value: '#f7eddf'
+          count: 22
+        - value: '#cf9771'
+          count: 13
+    mostSatulightedColors:
+        - value: '#f9c58e'
+          count: 2
+        - value: '#3b5169'
+          count: 4
+        - value: '#7e3d41'
+          count: 4
+    mostGroupedColors:
+        - value: '#0e0f13'
+          count: 3393
+bottomThird:
+    averageColor: '#1d1f25'
+    lightestColor: '#f5ffff'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#0e0f13'
+          count: 12637
+        - value: '#92735e'
+          count: 24
+        - value: '#f7faf7'
+          count: 15
+    mostSatulightedColors:
+        - value: '#f8c69d'
+          count: 3
+        - value: '#2c3d57'
+          count: 4
+    mostGroupedColors:
+        - value: '#0e0f13'
+          count: 5051
+bottomLine:
+    averageColor: '#11151e'
+    lightestColor: '#2f3d4f'
+    darkestColor: '#000000'
+    mostFrequentColors:
+        - value: '#090c13'
+          count: 34560
+    mostSatulightedColors:
+        - value: '#2a374b'
+          count: 1080
+    mostGroupedColors:
+        - value: '#05060a'
+          count: 9720

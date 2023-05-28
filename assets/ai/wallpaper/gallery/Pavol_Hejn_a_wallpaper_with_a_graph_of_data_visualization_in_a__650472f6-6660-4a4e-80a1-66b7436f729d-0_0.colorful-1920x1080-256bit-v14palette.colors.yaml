@@ -1,0 +1,76 @@
+version: colorful-1920x1080-256bit-v14palette
+palette:
+    - note: 1st most grouped color of the bottom line of the wallpaper that is dark
+          enough to place light text in and similar enough (10%) to the average
+          color of the bottom third of the wallpaper.
+      value: '#54463a'
+      count: 8640
+    - note: 1st most frequent color of the bottom half of the wallpaper which is
+          contrast enough (50%) against the primary color.
+      value: '#fefdfd'
+      count: 13669
+averageColor: '#878481'
+lightestColor: '#ffffff'
+darkestColor: '#010200'
+mostFrequentColors:
+    - value: '#171717'
+      count: 24303
+    - value: '#fefdfd'
+      count: 7803
+    - value: '#949494'
+      count: 1888
+mostSatulightedColors:
+    - value: '#d8ae7c'
+      count: 2
+mostGroupedColors:
+    - value: '#171717'
+      count: 17216
+bottomHalf:
+    averageColor: '#8c8782'
+    lightestColor: '#ffffff'
+    darkestColor: '#010200'
+    mostFrequentColors:
+        - value: '#fefdfd'
+          count: 13669
+        - value: '#161616'
+          count: 13313
+        - value: '#999796'
+          count: 900
+    mostSatulightedColors:
+        - value: '#d8ae7c'
+          count: 6
+    mostGroupedColors:
+        - value: '#161616'
+          count: 9640
+bottomThird:
+    averageColor: '#7f7871'
+    lightestColor: '#ffffff'
+    darkestColor: '#050602'
+    mostFrequentColors:
+        - value: '#161616'
+          count: 18919
+        - value: '#fefdfd'
+          count: 5731
+        - value: '#adacaa'
+          count: 737
+    mostSatulightedColors:
+        - value: '#d8ae7c'
+          count: 6
+    mostGroupedColors:
+        - value: '#161616'
+          count: 14466
+bottomLine:
+    averageColor: '#8a7969'
+    lightestColor: '#eee0ce'
+    darkestColor: '#534435'
+    mostFrequentColors:
+        - value: '#5a4b3d'
+          count: 25920
+        - value: '#b1a293'
+          count: 7560
+    mostSatulightedColors:
+        - value: '#b39d84'
+          count: 1080
+    mostGroupedColors:
+        - value: '#54463a'
+          count: 8640

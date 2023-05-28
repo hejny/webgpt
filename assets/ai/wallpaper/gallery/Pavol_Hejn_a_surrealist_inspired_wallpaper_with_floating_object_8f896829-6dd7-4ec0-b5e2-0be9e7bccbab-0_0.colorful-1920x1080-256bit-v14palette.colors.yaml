@@ -1,0 +1,87 @@
+version: colorful-1920x1080-256bit-v14palette
+palette:
+    - note: 2nd most satulighted color of the bottom half of the wallpaper that is
+          dark enough to place light text in and similar enough (10%) to the
+          average color of the bottom third of the wallpaper.
+      value: '#133e42'
+      count: 2
+    - note: The lightest color of the whole wallpaper which is contrast enough (50%)
+          against the primary color.
+      value: '#faf5e6'
+averageColor: '#483d29'
+lightestColor: '#faf5e6'
+darkestColor: '#000000'
+mostFrequentColors:
+    - value: '#0b2121'
+      count: 1781
+    - value: '#d2c9a2'
+      count: 171
+    - value: '#ac4a0f'
+      count: 138
+    - value: '#578279'
+      count: 2
+mostSatulightedColors:
+    - value: '#f4993f'
+      count: 1
+    - value: '#043144'
+      count: 2
+    - value: '#558f82'
+      count: 2
+    - value: '#a2a260'
+      count: 2
+mostGroupedColors:
+    - value: '#0e2726'
+      count: 56
+bottomHalf:
+    averageColor: '#3f3423'
+    lightestColor: '#e9e7d8'
+    darkestColor: '#000100'
+    mostFrequentColors:
+        - value: '#0b2121'
+          count: 3117
+        - value: '#ac4a0f'
+          count: 275
+        - value: '#d4cfad'
+          count: 155
+    mostSatulightedColors:
+        - value: '#e39659'
+          count: 4
+        - value: '#133e42'
+          count: 2
+        - value: '#a3a16e'
+          count: 4
+    mostGroupedColors:
+        - value: '#101e1c'
+          count: 107
+bottomThird:
+    averageColor: '#332d1f'
+    lightestColor: '#e9e7d8'
+    darkestColor: '#000100'
+    mostFrequentColors:
+        - value: '#0b2121'
+          count: 4357
+        - value: '#ac4a0f'
+          count: 397
+        - value: '#c3ae7e'
+          count: 63
+    mostSatulightedColors:
+        - value: '#df9145'
+          count: 4
+        - value: '#133e42'
+          count: 4
+    mostGroupedColors:
+        - value: '#0c2323'
+          count: 142
+bottomLine:
+    averageColor: '#0a2222'
+    lightestColor: '#1f4041'
+    darkestColor: '#000100'
+    mostFrequentColors:
+        - value: '#082121'
+          count: 12960
+    mostSatulightedColors:
+        - value: '#0a3035'
+          count: 1080
+    mostGroupedColors:
+        - value: '#082121'
+          count: 5400
