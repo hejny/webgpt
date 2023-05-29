@@ -26,7 +26,7 @@ If you're interested in learning more about space and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting our website and joining us on our Space Odyssey!
 
@@ -85,7 +85,7 @@ If you're interested in learning more about space and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting our website and we hope you enjoy our Space Odyssey wallpaper!
 
@@ -125,7 +125,7 @@ If you're interested in learning more about space and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting our website and joining us on our Space Odyssey!
 

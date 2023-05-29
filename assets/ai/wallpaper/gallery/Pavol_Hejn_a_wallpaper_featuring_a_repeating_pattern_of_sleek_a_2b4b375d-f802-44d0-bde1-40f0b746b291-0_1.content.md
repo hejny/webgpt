@@ -40,7 +40,7 @@ Take your workspace to the next level with these design tips:
 
 ## Contact Us
 
-If you have any questions about our digital devices wallpaper or need assistance with your order, please don't hesitate to contact us at [email protected] or give us a call at 1-800-TECH-WALL. Our customer service team is available 24/7 to assist you.
+If you have any questions about our digital devices wallpaper or need assistance with your order, please don't hesitate to contact us at me@pavolhejny.com or give us a call at 1-800-TECH-WALL. Our customer service team is available 24/7 to assist you.
 
 <!--
 
@@ -106,7 +106,7 @@ Check out these articles for more information on how to create the perfect works
 
 ## Contact Us
 
-If you have any questions about our Tech Savvy Workspace Wallpaper or need assistance with your order, please don't hesitate to contact us at [email protected] or give us a call at 1-800-TECH-WALL. Our customer service team is available 24/7 to assist you.
+If you have any questions about our Tech Savvy Workspace Wallpaper or need assistance with your order, please don't hesitate to contact us at me@pavolhejny.com or give us a call at 1-800-TECH-WALL. Our customer service team is available 24/7 to assist you.
 
 
 ---
@@ -156,6 +156,6 @@ Take your workspace to the next level with these design tips:
 
 ## Contact Us
 
-If you have any questions about our digital devices wallpaper or need assistance with your order, please don't hesitate to contact us at [email protected] or give us a call at 1-800-TECH-WALL. Our customer service team is available 24/7 to assist you.
+If you have any questions about our digital devices wallpaper or need assistance with your order, please don't hesitate to contact us at me@pavolhejny.com or give us a call at 1-800-TECH-WALL. Our customer service team is available 24/7 to assist you.
 
 -->

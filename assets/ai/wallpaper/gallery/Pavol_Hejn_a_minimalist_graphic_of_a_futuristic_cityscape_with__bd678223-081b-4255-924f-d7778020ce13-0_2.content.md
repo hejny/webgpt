@@ -35,7 +35,7 @@ If you're interested in learning more about the design inspiration behind our fu
 
 ## Contact Us
 
-If you have any questions or feedback about our future cityscape background, please don't hesitate to contact us. You can reach us at [email protected] or follow us on [Twitter](#) for updates and news.
+If you have any questions or feedback about our future cityscape background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 We hope you enjoy our future cityscape background and that it inspires you to create something amazing!
 
@@ -97,7 +97,7 @@ If you're interested in learning more about the design inspiration behind our fu
 
 ## Contact Us
 
-If you have any questions or feedback about our future cityscape wallpaper, please don't hesitate to contact us. You can reach us at [email protected] or follow us on [Twitter](#) for updates and news.
+If you have any questions or feedback about our future cityscape wallpaper, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 We hope you enjoy our future cityscape wallpaper and that it inspires you to create something amazing!
 
@@ -144,7 +144,7 @@ If you're interested in learning more about the design inspiration behind our fu
 
 ## Contact Us
 
-If you have any questions or feedback about our future cityscape background, please don't hesitate to contact us. You can reach us at [email protected] or follow us on [Twitter](#) for updates and news.
+If you have any questions or feedback about our future cityscape background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 We hope you enjoy our future cityscape background and that it inspires you to create something amazing!
 

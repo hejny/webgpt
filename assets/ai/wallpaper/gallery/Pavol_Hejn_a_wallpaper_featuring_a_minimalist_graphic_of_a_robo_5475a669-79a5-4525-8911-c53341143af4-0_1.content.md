@@ -8,9 +8,9 @@ Welcome to Productivity Boost, a website designed to help you enhance your produ
 
 Our tool is more than just a decoration. It's a simple yet powerful way to stay focused and organized throughout your day. Here are some of the benefits of using our tool:
 
-- **Minimalist Design:** Our tool features a simple yet eye-catching graphic that won't distract you from your work.
-- **Space for Notes and Sketches:** The space provided in the tool allows you to jot down notes, sketch out ideas, or even create a to-do list right on your desktop.
-- **Inspiring Imagery:** The robot hand holding a stylus or pen serves as a reminder to be creative and productive.
+-   **Minimalist Design:** Our tool features a simple yet eye-catching graphic that won't distract you from your work.
+-   **Space for Notes and Sketches:** The space provided in the tool allows you to jot down notes, sketch out ideas, or even create a to-do list right on your desktop.
+-   **Inspiring Imagery:** The robot hand holding a stylus or pen serves as a reminder to be creative and productive.
 
 ## How to Use Productivity Boost
 
@@ -28,13 +28,13 @@ Here are some examples of how people have used our tool to boost their productiv
 
 For more tips and resources on how to boost your productivity, check out these articles:
 
-- [10 Simple Productivity Tips for Organizing Your Work Life](#)
-- [The Power of Writing Down Your Goals and Dreams](#)
-- [How to Stay Focused and Avoid Distractions While Working from Home](#)
+-   [10 Simple Productivity Tips for Organizing Your Work Life](#)
+-   [The Power of Writing Down Your Goals and Dreams](#)
+-   [How to Stay Focused and Avoid Distractions While Working from Home](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our tool or need help with anything related to productivity, we'd love to hear from you! You can reach us at [email protected] or follow us on Twitter [@ProductivityHQ](#).
+If you have any questions or feedback about our tool or need help with anything related to productivity, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on Twitter [@ProductivityHQ](#).
 
 <!--
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,7 +95,7 @@ For more information about how to boost your productivity, check out these resou
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpaper, we'd love to hear from you! You can reach us at [email protected] or follow us on Twitter [@RoboNoteHQ](#).
+If you have any questions or feedback about our wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on Twitter [@RoboNoteHQ](#).
 
 
 ---
@@ -141,7 +141,7 @@ For more tips and resources on how to boost your productivity, check out these a
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpaper or need help with anything related to productivity, we'd love to hear from you! You can reach us at [email protected] or follow us on Twitter [@ProductivityHQ](#).
+If you have any questions or feedback about our wallpaper or need help with anything related to productivity, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on Twitter [@ProductivityHQ](#).
 
 
 ---
@@ -187,6 +187,6 @@ For more tips and resources on how to boost your productivity, check out these a
 
 ## Contact Us
 
-If you have any questions or feedback about our tool or need help with anything related to productivity, we'd love to hear from you! You can reach us at [email protected] or follow us on Twitter [@ProductivityHQ](#).
+If you have any questions or feedback about our tool or need help with anything related to productivity, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on Twitter [@ProductivityHQ](#).
 
 -->

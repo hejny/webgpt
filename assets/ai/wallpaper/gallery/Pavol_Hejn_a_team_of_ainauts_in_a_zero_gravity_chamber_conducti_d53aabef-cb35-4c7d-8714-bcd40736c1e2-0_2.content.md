@@ -55,4 +55,4 @@ If you're interested in learning more about our research and the broader field o
 
 ## Contact Us
 
-If you have any questions or comments about our research, please don't hesitate to reach out. You can contact us at [email protected] or follow us on [Twitter](#). Thank you for your interest in our work!
+If you have any questions or comments about our research, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or follow us on [Twitter](#). Thank you for your interest in our work!

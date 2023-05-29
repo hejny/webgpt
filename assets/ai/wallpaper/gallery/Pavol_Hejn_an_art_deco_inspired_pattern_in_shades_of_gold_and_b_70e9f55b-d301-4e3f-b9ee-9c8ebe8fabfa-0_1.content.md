@@ -6,9 +6,9 @@ Welcome to our website, where we offer innovative design solutions for modern of
 
 ## Features
 
-- Our pattern features shades of gold and black, adding elegance and sophistication to any office.
-- Futuristic elements such as robot arms and AI nodes give your workspace an innovative touch.
-- Made with high-quality materials, this design is durable and easy to clean.
+-   Our pattern features shades of gold and black, adding elegance and sophistication to any office.
+-   Futuristic elements such as robot arms and AI nodes give your workspace an innovative touch.
+-   Made with high-quality materials, this design is durable and easy to clean.
 
 ## User Stories
 
@@ -22,13 +22,13 @@ Our customers have shared their experiences with our design:
 
 Check out some of our related products:
 
-- [Smart Desks](#)
-- [Virtual Meeting Software](#)
-- [Office Plants](#)
+-   [Smart Desks](#)
+-   [Virtual Meeting Software](#)
+-   [Office Plants](#)
 
 ## Contact Us
 
-If you have any questions or would like to order our design, please contact us at [email protected] or call us at 555-1234.
+If you have any questions or would like to order our design, please contact us at me@pavolhejny.com or call us at 555-1234.
 
 Thank you for visiting our website!
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -59,7 +59,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Futuristic Office Background Wallpaper
 
-Welcome to our website, where we provide cutting-edge solutions for modern offices. Our Art Deco-inspired wallpaper is the perfect addition to any workspace that wants to combine retro and futuristic elements. 
+Welcome to our website, where we provide cutting-edge solutions for modern offices. Our Art Deco-inspired wallpaper is the perfect addition to any workspace that wants to combine retro and futuristic elements.
 
 ## Features
 
@@ -85,7 +85,7 @@ Check out some of our related products:
 
 ## Contact Us
 
-If you have any questions or would like to order our wallpaper, please contact us at [email protected] or call us at 555-1234.
+If you have any questions or would like to order our wallpaper, please contact us at me@pavolhejny.com or call us at 555-1234.
 
 Thank you for visiting our website!
 
@@ -127,7 +127,7 @@ Check out some of our related products:
 
 ## Contact Us
 
-If you have any questions or would like to order our design, please contact us at [email protected] or call us at 555-1234.
+If you have any questions or would like to order our design, please contact us at me@pavolhejny.com or call us at 555-1234.
 
 Thank you for visiting our website!
 
@@ -169,7 +169,7 @@ Check out some of our related products:
 
 ## Contact Us
 
-If you have any questions or would like to order our design, please contact us at [email protected] or call us at 555-1234.
+If you have any questions or would like to order our design, please contact us at me@pavolhejny.com or call us at 555-1234.
 
 Thank you for visiting our website!
 
@@ -211,7 +211,7 @@ Check out some of our related products:
 
 ## Contact Us
 
-If you have any questions or would like to order our design, please contact us at [email protected] or call us at 555-1234.
+If you have any questions or would like to order our design, please contact us at me@pavolhejny.com or call us at 555-1234.
 
 Thank you for visiting our website!
 

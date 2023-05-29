@@ -34,7 +34,7 @@ Check out some of the websites and social media pages that have already used our
 
 ## Contact Us
 
-If you have any questions or concerns about our geometric design, please don't hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns about our geometric design, please don't hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for considering our modern geometric design to elevate your online presence!
 
@@ -92,7 +92,7 @@ Check out some of the websites that have already used our geometric shapes wallp
 
 ## Contact Us
 
-If you have any questions or concerns about our wallpaper, please don't hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns about our wallpaper, please don't hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for considering our geometric shapes wallpaper for your website!
 
@@ -140,7 +140,7 @@ Check out some of the websites and social media pages that have already used our
 
 ## Contact Us
 
-If you have any questions or concerns about our geometric design, please don't hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns about our geometric design, please don't hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for considering our modern geometric design to elevate your online presence!
 
@@ -188,7 +188,7 @@ Check out some of the websites and social media pages that have already used our
 
 ## Contact Us
 
-If you have any questions or concerns about our geometric design, please don't hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns about our geometric design, please don't hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for considering our modern geometric design to enhance your online presence!
 
@@ -236,7 +236,7 @@ Check out some of the websites and social media pages that have already used our
 
 ## Contact Us
 
-If you have any questions or concerns about our geometric design, please don't hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns about our geometric design, please don't hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for considering our modern geometric design to elevate your online presence!
 

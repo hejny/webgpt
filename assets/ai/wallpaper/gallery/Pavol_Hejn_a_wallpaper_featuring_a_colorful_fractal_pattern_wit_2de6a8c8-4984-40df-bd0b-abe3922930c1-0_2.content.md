@@ -31,7 +31,7 @@ Looking for more ways to enhance your workspace and boost your productivity? Che
 
 ## Contact Us
 
-Have a question or comment about our fractal pattern background or any of our other resources? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment about our fractal pattern background or any of our other resources? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting our website and we hope our colorful fractal pattern background inspires you to create your best work yet!
 
@@ -91,7 +91,7 @@ Looking for more resources to help you create the perfect workspace? Check out t
 
 ## Contact Us
 
-Have a question or comment about our fractal wallpaper or any of our other resources? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment about our fractal wallpaper or any of our other resources? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting our website and we hope our colorful fractal wallpaper brings a little inspiration to your daily life!
 
@@ -136,7 +136,7 @@ Looking for more ways to enhance your workspace and boost your productivity? Che
 
 ## Contact Us
 
-Have a question or comment about our fractal pattern background or any of our other resources? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment about our fractal pattern background or any of our other resources? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting our website and we hope our colorful fractal pattern background inspires you to create your best work yet!
 

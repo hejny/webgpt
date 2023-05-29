@@ -39,7 +39,7 @@ Looking for more cozy home decor ideas? Check out some of our favorite resources
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for more inspiration and updates.
+Have a question or suggestion? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for more inspiration and updates.
 
 <!--
 
@@ -105,7 +105,7 @@ Looking for more cozy home decor ideas? Check out some of our favorite resources
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for more inspiration and updates.
+Have a question or suggestion? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for more inspiration and updates.
 
 
 ---

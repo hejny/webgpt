@@ -6,9 +6,9 @@ Transform your workspace into a calming oasis with our nature-inspired design fe
 
 ## Why choose our nature-inspired design?
 
-- A calming effect: Studies have shown that nature-inspired designs can reduce stress and increase productivity.
-- High-quality image: Our design features a high-quality image that will make your workspace look stunning.
-- Versatile use: Our design can be used as a background for your desktop, phone, or tablet.
+-   A calming effect: Studies have shown that nature-inspired designs can reduce stress and increase productivity.
+-   High-quality image: Our design features a high-quality image that will make your workspace look stunning.
+-   Versatile use: Our design can be used as a background for your desktop, phone, or tablet.
 
 ## User stories
 
@@ -20,12 +20,12 @@ Transform your workspace into a calming oasis with our nature-inspired design fe
 
 Looking for more inspiration? Check out these resources:
 
-- [How to create a calming workspace](#)
-- [Benefits of nature-inspired designs](#)
+-   [How to create a calming workspace](#)
+-   [Benefits of nature-inspired designs](#)
 
 ## Contact us
 
-Have questions or need help incorporating our nature-inspired design into your workspace? Contact us at [email protected] and we'll be happy to assist you.
+Have questions or need help incorporating our nature-inspired design into your workspace? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact us
 
-Have questions or need help choosing the right wallpaper for your workspace? Contact us at [email protected] and we'll be happy to assist you.
+Have questions or need help choosing the right wallpaper for your workspace? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 
@@ -122,7 +122,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact us
 
-Have questions or need help incorporating our nature-inspired design into your workspace? Contact us at [email protected] and we'll be happy to assist you.
+Have questions or need help incorporating our nature-inspired design into your workspace? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 

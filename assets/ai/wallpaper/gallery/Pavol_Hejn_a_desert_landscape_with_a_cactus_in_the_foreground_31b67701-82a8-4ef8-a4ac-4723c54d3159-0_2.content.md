@@ -12,10 +12,10 @@ Our stunning desert landscape wallpaper featuring a cactus in the foreground ser
 
 At Desert Oasis, we offer a variety of services to support your journey towards inner peace:
 
-- **Mindfulness Meditation:** Learn how to be present in the moment and cultivate a sense of calm through guided meditation sessions.
-- **Yoga Classes:** Join our virtual yoga classes to improve your physical health and mental well-being.
-- **Nature Walks:** Take a break from the hustle and bustle of daily life and connect with nature on one of our guided nature walks.
-- **Journaling Prompts:** Explore your thoughts and emotions through reflective journaling prompts designed to promote self-awareness and personal growth.
+-   **Mindfulness Meditation:** Learn how to be present in the moment and cultivate a sense of calm through guided meditation sessions.
+-   **Yoga Classes:** Join our virtual yoga classes to improve your physical health and mental well-being.
+-   **Nature Walks:** Take a break from the hustle and bustle of daily life and connect with nature on one of our guided nature walks.
+-   **Journaling Prompts:** Explore your thoughts and emotions through reflective journaling prompts designed to promote self-awareness and personal growth.
 
 ## User Stories
 
@@ -29,13 +29,13 @@ Here are some stories from our users who have found solace and peace through our
 
 Check out these resources to learn more about the benefits of mindfulness and relaxation:
 
-- [The Benefits of Mindfulness Meditation](#)
-- [How Yoga Can Improve Your Mental Health](#)
-- [The Healing Power of Nature](#)
+-   [The Benefits of Mindfulness Meditation](#)
+-   [How Yoga Can Improve Your Mental Health](#)
+-   [The Healing Power of Nature](#)
 
 ## Contact Us
 
-Have questions or want to learn more about our services? Contact us at [email protected] or follow us on social media @desertoasis. We're here to support you on your journey towards inner peace.
+Have questions or want to learn more about our services? Contact us at me@pavolhejny.com or follow us on social media @desertoasis. We're here to support you on your journey towards inner peace.
 
 <!--
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -97,6 +97,6 @@ Check out these resources to learn more about the benefits of mindfulness and re
 
 ## Contact Us
 
-Have questions or want to learn more about our services? Contact us at [email protected] or follow us on social media @desertoasis. We're here to support you on your journey towards inner peace.
+Have questions or want to learn more about our services? Contact us at me@pavolhejny.com or follow us on social media @desertoasis. We're here to support you on your journey towards inner peace.
 
 -->

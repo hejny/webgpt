@@ -10,9 +10,9 @@ Our garden wallpaper is more than just a pretty background for your screen. It's
 
 Here are some reasons to choose our wallpaper:
 
-- High-quality image: Our wallpaper is carefully crafted to showcase the beauty of the bee and flower in stunning detail.
-- Inspiring message: The image of the bee on the flower reminds us of the interconnectedness of all living things and encourages us to appreciate and protect the natural world.
-- Free download: We believe that everyone should have access to beautiful nature-inspired backgrounds, so we offer our wallpaper as a free download.
+-   High-quality image: Our wallpaper is carefully crafted to showcase the beauty of the bee and flower in stunning detail.
+-   Inspiring message: The image of the bee on the flower reminds us of the interconnectedness of all living things and encourages us to appreciate and protect the natural world.
+-   Free download: We believe that everyone should have access to beautiful nature-inspired backgrounds, so we offer our wallpaper as a free download.
 
 ## How to Download Our Garden Wallpaper
 
@@ -27,22 +27,22 @@ Downloading our garden wallpaper is easy! Simply follow these steps:
 Here are some stories from our users who have downloaded our garden wallpaper:
 
 > "I love having this background on my computer screen. It reminds me to take breaks and go outside to enjoy the beauty of nature."
-> 
+>
 > "The image of the bee on the flower is so peaceful and calming. It helps me stay focused and centered during a busy workday."
-> 
+>
 > "I downloaded this background for my child's tablet, and they love looking at the bee and imagining what it would be like to fly around in a garden."
 
 ## Resources for Connecting with Nature
 
 If you're interested in learning more about how to connect with nature, here are some resources to check out:
 
-- [The Nature Fix: Why Nature Makes Us Happier, Healthier, and More Creative](#)
-- [Ways to Connect with Nature in Your Daily Life](#)
-- [The Benefits of Spending Time in Nature](#)
+-   [The Nature Fix: Why Nature Makes Us Happier, Healthier, and More Creative](#)
+-   [Ways to Connect with Nature in Your Daily Life](#)
+-   [The Benefits of Spending Time in Nature](#)
 
 ## Contact Us
 
-If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 
@@ -56,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -100,9 +100,9 @@ Downloading our garden wallpaper is easy! Simply follow these steps:
 Here are some stories from our users who have downloaded our garden wallpaper:
 
 > "I work in an office all day, and having this wallpaper on my computer screen reminds me of the beauty outside. It helps me stay grounded and focused on what's important."
-> 
+>
 > "I love how the bee looks like it's about to take off from the flower. It's such a dynamic image that really captures the energy of nature."
-> 
+>
 > "I downloaded this wallpaper for my mom, who loves gardening but can't always be outside. She was thrilled with how beautiful it looked on her computer."
 
 ## References
@@ -115,7 +115,7 @@ If you're interested in learning more about the importance of nature in our live
 
 ## Contact Us
 
-If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 
@@ -158,9 +158,9 @@ Downloading our garden wallpaper is easy! Simply follow these steps:
 Here are some stories from our users who have downloaded our garden wallpaper:
 
 > "I love having this wallpaper on my computer screen. It reminds me to take breaks and go outside to enjoy the beauty of nature."
-> 
+>
 > "The image of the bee on the flower is so peaceful and calming. It helps me stay focused and centered during a busy workday."
-> 
+>
 > "I downloaded this wallpaper for my child's tablet, and they love looking at the bee and imagining what it would be like to fly around in a garden."
 
 ## Resources for Connecting with Nature
@@ -173,7 +173,7 @@ If you're interested in learning more about how to connect with nature, here are
 
 ## Contact Us
 
-If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 
@@ -216,9 +216,9 @@ Downloading our garden wallpaper is easy! Simply follow these steps:
 Here are some stories from our users who have downloaded our garden wallpaper:
 
 > "I love having this wallpaper on my computer screen. It reminds me to take breaks and go outside to enjoy the beauty of nature."
-> 
+>
 > "The image of the bee on the flower is so peaceful and calming. It helps me stay focused and centered during a busy workday."
-> 
+>
 > "I downloaded this wallpaper for my child's tablet, and they love looking at the bee and imagining what it would be like to fly around in a garden."
 
 ## Resources for Connecting with Nature
@@ -231,7 +231,7 @@ If you're interested in learning more about how to connect with nature, here are
 
 ## Contact Us
 
-If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 
@@ -274,9 +274,9 @@ Downloading our garden wallpaper is easy! Simply follow these steps:
 Here are some stories from our users who have downloaded our garden wallpaper:
 
 > "I love having this background on my computer screen. It reminds me to take breaks and go outside to enjoy the beauty of nature."
-> 
+>
 > "The image of the bee on the flower is so peaceful and calming. It helps me stay focused and centered during a busy workday."
-> 
+>
 > "I downloaded this background for my child's tablet, and they love looking at the bee and imagining what it would be like to fly around in a garden."
 
 ## Resources for Connecting with Nature
@@ -289,7 +289,7 @@ If you're interested in learning more about how to connect with nature, here are
 
 ## Contact Us
 
-If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or comments about our garden wallpaper, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 

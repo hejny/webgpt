@@ -10,9 +10,9 @@ One of our featured backgrounds is an intricate black and white outline of an as
 
 ## User Stories
 
-- "I'm obsessed with all things space-related, and this background is exactly what I was looking for." - Emily T.
-- "The attention to detail in this background is impressive. It's like having a work of art on my desktop." - Daniel L.
-- "I love how this background changes depending on the lighting in the room. It's a small detail, but it makes a big difference." - Maria S.
+-   "I'm obsessed with all things space-related, and this background is exactly what I was looking for." - Emily T.
+-   "The attention to detail in this background is impressive. It's like having a work of art on my desktop." - Daniel L.
+-   "I love how this background changes depending on the lighting in the room. It's a small detail, but it makes a big difference." - Maria S.
 
 ## How to Download
 
@@ -24,17 +24,17 @@ To download this background, simply click on the link below and save the image t
 
 If you're looking for more space-themed backgrounds, be sure to check out our other collections:
 
-- Planets
-- Galaxies
-- Nebulae
+-   Planets
+-   Galaxies
+-   Nebulae
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 ## References
 
-- Image source: [Unsplash](https://unsplash.com/photos/1o9xRmXlSb4)
+-   Image source: [Unsplash](https://unsplash.com/photos/1o9xRmXlSb4)
 
 <!--
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ If you're looking for more wallpapers, be sure to check out our other collection
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 ## References
 
@@ -137,7 +137,7 @@ If you're looking for more space-themed backgrounds, be sure to check out our ot
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 ## References
 

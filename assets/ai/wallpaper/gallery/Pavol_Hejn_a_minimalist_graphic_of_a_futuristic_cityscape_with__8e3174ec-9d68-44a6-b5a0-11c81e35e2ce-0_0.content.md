@@ -10,10 +10,10 @@ Our background is more than just a visual element; it's a statement piece that s
 
 Here are some reasons why you should choose our background:
 
-- It's high-quality and visually stunning
-- It's customizable to fit your screen size
-- It's easy to download and install
-- It's affordable and a one-time purchase
+-   It's high-quality and visually stunning
+-   It's customizable to fit your screen size
+-   It's easy to download and install
+-   It's affordable and a one-time purchase
 
 ## User Stories
 
@@ -27,9 +27,9 @@ We love hearing from our customers about how our background has transformed thei
 
 If you're interested in learning more about the inspiration behind our background, check out these references:
 
-- [Blade Runner](#blade-runner)
-- [Ghost in the Shell](#ghost-in-the-shell)
-- [Akira](#akira)
+-   [Blade Runner](#blade-runner)
+-   [Ghost in the Shell](#ghost-in-the-shell)
+-   [Akira](#akira)
 
 ### Blade Runner
 
@@ -45,7 +45,7 @@ The iconic anime film Akira is a classic example of cyberpunk storytelling, and 
 
 ## Contact Us
 
-If you have any questions or comments about our background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments about our background, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thanks for choosing our futuristic cityscape background to transform your workspace!
 
@@ -57,10 +57,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -119,7 +119,7 @@ The iconic anime film Akira is a classic example of cyberpunk storytelling, and 
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, we'd love to hear from you! You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments about our wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thanks for choosing our futuristic cityscape wallpaper for your creative workspace!
 
@@ -178,7 +178,7 @@ The iconic anime film Akira is a classic example of cyberpunk storytelling, and 
 
 ## Contact Us
 
-If you have any questions or comments about our background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments about our background, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thanks for choosing our futuristic cityscape background to transform your workspace!
 

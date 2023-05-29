@@ -8,10 +8,10 @@ Welcome to our website, where you can find a unique and surreal interpretation o
 
 Our surreal desert landscape artwork offers:
 
-- Unique design: Our artwork is not your typical desert landscape - it's a surreal interpretation that adds depth and complexity to the scene.
-- High-quality image: Our artwork is available in high resolution, so you can enjoy every detail of the piece.
-- Versatile use: Our artwork can be used as a background for any device, including desktops, laptops, phones, and tablets.
-- Easy download: Our artwork is available for instant download, so you can start using it right away.
+-   Unique design: Our artwork is not your typical desert landscape - it's a surreal interpretation that adds depth and complexity to the scene.
+-   High-quality image: Our artwork is available in high resolution, so you can enjoy every detail of the piece.
+-   Versatile use: Our artwork can be used as a background for any device, including desktops, laptops, phones, and tablets.
+-   Easy download: Our artwork is available for instant download, so you can start using it right away.
 
 ## User Stories
 
@@ -27,13 +27,13 @@ Our artwork has been appreciated by people from all walks of life, including:
 
 If you're interested in learning more about the surrealism movement and its influence on art and culture, check out these resources:
 
-- [Surrealism - Tate](#)
-- [What is Surrealism? - MoMA](#)
-- [Salvador Dali Museum](#)
+-   [Surrealism - Tate](#)
+-   [What is Surrealism? - MoMA](#)
+-   [Salvador Dali Museum](#)
 
 ## Contact Us
 
-If you have any questions or comments about our artwork, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our artwork, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 <!--
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -95,7 +95,7 @@ If you're interested in learning more about the surrealism movement and its infl
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our wallpaper, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 
 ---
@@ -109,7 +109,7 @@ Heading is too long, rewrite whole content.
 
 # Surreal Desert Landscape Background
 
-Welcome to our website, where you can find a unique and surreal interpretation of a desert landscape as a background for your device. Our wallpaper is not just a pretty picture - it's a work of art that can inspire creativity and imagination. 
+Welcome to our website, where you can find a unique and surreal interpretation of a desert landscape as a background for your device. Our wallpaper is not just a pretty picture - it's a work of art that can inspire creativity and imagination.
 
 ## Why Choose Our Wallpaper?
 
@@ -140,7 +140,7 @@ If you're interested in learning more about the surrealism movement and its infl
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our wallpaper, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 
 ---
@@ -185,7 +185,7 @@ If you're interested in learning more about the surrealism movement and its infl
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our wallpaper, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 
 ---
@@ -230,7 +230,7 @@ If you're interested in learning more about the surrealism movement and its infl
 
 ## Contact Us
 
-If you have any questions or comments about our artwork, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our artwork, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 
 ---

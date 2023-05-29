@@ -18,13 +18,13 @@ Geometric backgrounds have become increasingly popular in recent years due to th
 
 See how other websites have used our geometric backgrounds to enhance their design:
 
-- [Example Website 1](#)
-- [Example Website 2](#)
-- [Example Website 3](#)
+-   [Example Website 1](#)
+-   [Example Website 2](#)
+-   [Example Website 3](#)
 
 ## Get Started Today
 
-Ready to give your website a fresh, modern look with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at [email protected]
+Ready to give your website a fresh, modern look with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at me@pavolhejny.com
 
 <!--
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -75,7 +75,7 @@ Check out some examples of websites using our geometric backgrounds:
 
 ## Contact Us
 
-Have questions about our geometric backgrounds or need help choosing the right one for your project? Contact us at [email protected] and we'll be happy to assist you.
+Have questions about our geometric backgrounds or need help choosing the right one for your project? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ## Get Started Today
 
@@ -115,7 +115,7 @@ See how other websites have used our geometric backgrounds to enhance their desi
 
 ## Get Started Today
 
-Ready to take your website design to the next level with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at [email protected]
+Ready to take your website design to the next level with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at me@pavolhejny.com
 
 
 ---
@@ -151,7 +151,7 @@ See how other websites have used our geometric backgrounds to enhance their desi
 
 ## Get Started Today
 
-Ready to take your website design to the next level with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at [email protected]
+Ready to take your website design to the next level with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at me@pavolhejny.com
 
 
 ---
@@ -187,7 +187,7 @@ See how other websites have used our geometric backgrounds to enhance their desi
 
 ## Get Started Today
 
-Ready to give your website a fresh, modern look with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at [email protected]
+Ready to give your website a fresh, modern look with a stunning geometric background? Browse our collection today and find the perfect pattern for your site! If you have any questions or need assistance, please don't hesitate to contact us at me@pavolhejny.com
 
 
 ---

@@ -22,13 +22,13 @@ Here are some stories from our satisfied customers who have used virtual reality
 
 If you're interested in learning more about virtual reality workspaces and how they can benefit you, check out these resources:
 
-- [How Virtual Reality Is Revolutionizing the Workplace](#)
-- [5 Ways Virtual Reality Can Improve Your Productivity](#)
-- [The Benefits of Using Virtual Reality in Design](#)
+-   [How Virtual Reality Is Revolutionizing the Workplace](#)
+-   [5 Ways Virtual Reality Can Improve Your Productivity](#)
+-   [The Benefits of Using Virtual Reality in Design](#)
 
 ## Contact Us
 
-If you have any questions or comments about virtual reality workspaces, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments about virtual reality workspaces, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 We hope you find our resources helpful in creating your own virtual reality workspace!
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ If you're interested in learning more about virtual reality and how it can be us
 
 ## Contact Us
 
-If you have any questions or comments about our virtual reality workspace wallpaper, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments about our virtual reality workspace wallpaper, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 We hope you enjoy our wallpaper and that it helps you stay productive and inspired!
 
@@ -127,7 +127,7 @@ If you're interested in learning more about virtual reality workspaces and how t
 
 ## Contact Us
 
-If you have any questions or comments about virtual reality workspaces, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments about virtual reality workspaces, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 We hope you find our resources helpful in creating your own virtual reality workspace!
 

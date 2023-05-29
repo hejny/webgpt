@@ -8,7 +8,7 @@ We provide Com<wbr>pre<wbr>hen<wbr>sive guides to some of the best road trip des
 
 Our user stories section allows you to read about the experiences of fellow road trippers and get inspired for your own journey. Additionally, we review the latest models of cars that are perfect for road trips, so you can choose the best vehicle for your needs.
 
-Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at [email protected] or follow us on social media for more travel inspiration.
+Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at me@pavolhejny.com or follow us on social media for more travel inspiration.
 
 Here are some of our favorite resources for planning your next road trip:
 
@@ -60,7 +60,7 @@ We are a team of passionate travelers who love exploring new destinations by car
 
 ## Contact Us
 
-Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at [email protected] or follow us on social media for more travel inspiration.
+Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at me@pavolhejny.com or follow us on social media for more travel inspiration.
 
 ## References
 
@@ -99,7 +99,7 @@ We are a team of passionate travelers who believe that the journey is just as im
 
 ## Contact Us
 
-Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at [email protected] or follow us on social media for more travel inspiration.
+Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at me@pavolhejny.com or follow us on social media for more travel inspiration.
 
 ## References
 
@@ -129,7 +129,7 @@ At our website, we are passionate about helping fellow adventurers plan their ow
 
 Our user stories section allows you to read about the experiences of fellow road trippers and get inspired for your own journey. Additionally, we review the latest models of cars that are perfect for road trips, so you can choose the best vehicle for your needs.
 
-Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at [email protected] or follow us on social media for more travel inspiration.
+Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at me@pavolhejny.com or follow us on social media for more travel inspiration.
 
 Here are some of our favorite resources for planning your next road trip:
 
@@ -157,7 +157,7 @@ We provide Com<wbr>pre<wbr>hen<wbr>sive guides to some of the best road trip des
 
 Our user stories section allows you to read about the experiences of fellow road trippers and get inspired for your own journey. Additionally, we review the latest models of cars that are perfect for road trips, so you can choose the best vehicle for your needs.
 
-Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at [email protected] or follow us on social media for more travel inspiration.
+Have a question or want to share your own road trip story? We would love to hear from you! Contact us via email at me@pavolhejny.com or follow us on social media for more travel inspiration.
 
 Here are some of our favorite resources for planning your next road trip:
 

@@ -5,30 +5,36 @@
 Welcome to our website, your ultimate guide to dog-friendly cafes! Our background features a close-up of a dog's nose, symbolizing our love for dogs and passion for exploring new places together.
 
 ## About Us
+
 We are a community of dog lovers who understand the importance of spending quality time with our furry friends. That's why we created this website - to share our favorite dog-friendly cafes with other dog owners and make it easier for everyone to enjoy a cup of coffee with their companion.
 
 ## Cafe Reviews
+
 Browse our reviews of dog-friendly cafes across the country. We provide detailed information about each cafe, including their dog policies, menu options, and atmosphere.
 
 ### Example Review: Pawsome Cafe
+
 Located in the heart of downtown, Pawsome Cafe is a must-visit for any dog owner. They have a spacious outdoor patio where dogs can relax while their owners enjoy a cup of coffee. The staff is incredibly friendly and always make sure to bring out a bowl of water for our furry friends. Plus, their pastries are delicious!
 
 ## User Stories
+
 Don't just take our word for it - read what other dog owners have to say about their experiences at dog-friendly cafes:
 
-- "Thanks to this website, I found a great cafe to take my dog on our weekly coffee date."
-- "I never knew there were so many dog-friendly cafes in my area. This website has opened up a whole new world for me and my pup."
-- "I was hesitant to bring my dog to a cafe, but this website gave me all the information I needed to feel confident and welcome."
+-   "Thanks to this website, I found a great cafe to take my dog on our weekly coffee date."
+-   "I never knew there were so many dog-friendly cafes in my area. This website has opened up a whole new world for me and my pup."
+-   "I was hesitant to bring my dog to a cafe, but this website gave me all the information I needed to feel confident and welcome."
 
 ## Resources
+
 Looking for more information about dog-friendly cafes? Check out our list of resources for dog owners:
 
-- [American Kennel Club](#)
-- [Bring Fido](#)
-- [Dog Friendly](#)
+-   [American Kennel Club](#)
+-   [Bring Fido](#)
+-   [Dog Friendly](#)
 
 ## Contact Us
-Have a question or want to share your favorite dog-friendly cafe? Contact us at [email protected] or follow us on Instagram @dogcafesociety.
+
+Have a question or want to share your favorite dog-friendly cafe? Contact us at me@pavolhejny.com or follow us on Instagram @dogcafesociety.
 
 Thank you for visiting our website and we hope you find the perfect cafe for you and your furry friend!
 
@@ -40,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +89,7 @@ Looking for more information about dog-friendly cafes? Check out our list of res
 - [Dog Friendly](#)
 
 ## Contact Us
-Have a question or want to share your favorite dog-friendly cafe? Contact us at [email protected] or follow us on Instagram @dogcafesociety.
+Have a question or want to share your favorite dog-friendly cafe? Contact us at me@pavolhejny.com or follow us on Instagram @dogcafesociety.
 
 Thank you for visiting our website and we hope you find the perfect cafe for you and your furry friend!
 
@@ -123,7 +129,7 @@ Looking for more information about dog-friendly cafes? Check out our list of res
 - [Dog Friendly](#)
 
 ## Contact Us
-Have a question or want to share your favorite dog-friendly cafe? Contact us at [email protected] or follow us on Instagram @dogcafesociety.
+Have a question or want to share your favorite dog-friendly cafe? Contact us at me@pavolhejny.com or follow us on Instagram @dogcafesociety.
 
 Thank you for visiting our website and we hope you find the perfect cafe for you and your furry friend!
 
@@ -165,7 +171,7 @@ Don't just take our word for it - read what other dog owners have to say about t
 - "I was hesitant to bring my dog to a cafe, but this website gave me all the information I needed to feel confident and welcome."
 
 ## Contact Us
-Have a question or want to share your favorite dog-friendly cafe? Contact us at [email protected] or follow us on Instagram @dogcafesociety.
+Have a question or want to share your favorite dog-friendly cafe? Contact us at me@pavolhejny.com or follow us on Instagram @dogcafesociety.
 
 Thank you for visiting our website and we hope you find the perfect cafe for you and your furry friend!
 
@@ -207,7 +213,7 @@ Looking for more information about dog-friendly cafes? Check out our list of res
 - [Dog Friendly](#)
 
 ## Contact Us
-Have a question or want to share your favorite dog-friendly cafe? Contact us at [email protected] or follow us on Instagram @dogcafesociety.
+Have a question or want to share your favorite dog-friendly cafe? Contact us at me@pavolhejny.com or follow us on Instagram @dogcafesociety.
 
 Thank you for visiting our website and we hope you find the perfect cafe for you and your furry friend!
 

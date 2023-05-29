@@ -50,4 +50,4 @@ Looking for more resources on science and astronomy? Check out some of our favor
 
 ## Contact Us
 
-Have a question or comment about our blog? We'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for the latest updates. Thanks for exploring the cosmos with us!
+Have a question or comment about our blog? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates. Thanks for exploring the cosmos with us!

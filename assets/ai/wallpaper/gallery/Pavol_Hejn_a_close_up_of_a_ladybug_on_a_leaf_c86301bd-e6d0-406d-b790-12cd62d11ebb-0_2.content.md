@@ -10,10 +10,10 @@ Our "Ladybug on a Leaf" background is a perfect choice for those who love nature
 
 ### Features
 
-- High-quality resolution
-- Easy to download and use
-- Compatible with all devices
-- Eco-friendly materials
+-   High-quality resolution
+-   Easy to download and use
+-   Compatible with all devices
+-   Eco-friendly materials
 
 ### User Stories
 
@@ -25,13 +25,13 @@ Our "Ladybug on a Leaf" background is a perfect choice for those who love nature
 
 Check out our other nature-inspired backgrounds:
 
-- "Forest Path"
-- "Ocean Waves"
-- "Mountain Peak"
+-   "Forest Path"
+-   "Ocean Waves"
+-   "Mountain Peak"
 
 ### Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 Thank you for choosing our nature-inspired backgrounds to bring a touch of beauty to your everyday life.
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ Check out our other nature-inspired wallpapers:
 
 ### Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 Thank you for choosing our nature-inspired wallpapers to enhance the beauty of your home.
 
@@ -136,7 +136,7 @@ Check out our other nature-inspired backgrounds:
 
 ### Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 Thank you for choosing our nature-inspired backgrounds to bring a touch of beauty to your everyday life.
 

@@ -22,11 +22,11 @@ One of our most popular backgrounds captures the beauty of a distant planet, whe
 
 ## References
 
-For more information about our planetary adventure collection or to purchase a high-resolution version of any of our backgrounds, please contact us at [email protected] or visit our website at #top.
+For more information about our planetary adventure collection or to purchase a high-resolution version of any of our backgrounds, please contact us at me@pavolhejny.com or visit our website at #top.
 
 ## Contact Us
 
-If you have any questions or comments about our products, please don't hesitate to reach out to us. We love hearing from our customers and are always happy to help in any way we can. You can reach us at [email protected]
+If you have any questions or comments about our products, please don't hesitate to reach out to us. We love hearing from our customers and are always happy to help in any way we can. You can reach us at me@pavolhejny.com
 
 Thank you for choosing our planetary adventure collection. We hope you enjoy the journey!
 
@@ -75,11 +75,11 @@ Whether you're an astronomy enthusiast or simply looking for a Cap<wbr>ti<wbr>va
 
 ## References
 
-For more information about our wallpaper collection or to purchase a high-resolution version of any of our wallpapers, please contact us at [email protected] or visit our website at #top.
+For more information about our wallpaper collection or to purchase a high-resolution version of any of our wallpapers, please contact us at me@pavolhejny.com or visit our website at #top.
 
 ## Contact Us
 
-If you have any questions or comments about our products, please don't hesitate to reach out to us. We love hearing from our customers and are always happy to help in any way we can. You can reach us at [email protected]
+If you have any questions or comments about our products, please don't hesitate to reach out to us. We love hearing from our customers and are always happy to help in any way we can. You can reach us at me@pavolhejny.com
 
 Thank you for choosing our planetary adventure wallpaper collection. We hope you enjoy the journey!
 
@@ -113,11 +113,11 @@ One of our most popular backgrounds captures the beauty of a distant planet, whe
 
 ## References
 
-For more information about our planetary adventure collection or to purchase a high-resolution version of any of our backgrounds, please contact us at [email protected] or visit our website at #top.
+For more information about our planetary adventure collection or to purchase a high-resolution version of any of our backgrounds, please contact us at me@pavolhejny.com or visit our website at #top.
 
 ## Contact Us
 
-If you have any questions or comments about our products, please don't hesitate to reach out to us. We love hearing from our customers and are always happy to help in any way we can. You can reach us at [email protected]
+If you have any questions or comments about our products, please don't hesitate to reach out to us. We love hearing from our customers and are always happy to help in any way we can. You can reach us at me@pavolhejny.com
 
 Thank you for choosing our planetary adventure collection. We hope you enjoy the journey!
 

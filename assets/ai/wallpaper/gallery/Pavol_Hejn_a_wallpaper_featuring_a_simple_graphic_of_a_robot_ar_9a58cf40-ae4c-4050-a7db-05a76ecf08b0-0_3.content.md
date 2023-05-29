@@ -18,21 +18,21 @@ You can also use the background on your mobile device by cropping the image to f
 
 ## User Stories
 
-- "I used to forget my deadlines all the time, but ever since I started using this background, I haven't missed a single one."
-- "I love how the background blends in with my desktop, yet it's always there to remind me of my next meeting."
-- "The space on the smartphone screen is perfect for placing my to-do list widget. It's like having a personal assistant right on my desktop."
+-   "I used to forget my deadlines all the time, but ever since I started using this background, I haven't missed a single one."
+-   "I love how the background blends in with my desktop, yet it's always there to remind me of my next meeting."
+-   "The space on the smartphone screen is perfect for placing my to-do list widget. It's like having a personal assistant right on my desktop."
 
 ## Resources
 
 If you want to learn more about productivity tools and techniques, check out these resources:
 
-- [Getting Things Done](#)
-- [The Pomodoro Technique](#)
-- [Atomic Habits](#)
+-   [Getting Things Done](#)
+-   [The Pomodoro Technique](#)
+-   [Atomic Habits](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our "Robot Assistant" background, contact us at [email protected]. We would love to hear from you!
+If you have any questions or feedback about our "Robot Assistant" background, contact us at me@pavolhejny.com. We would love to hear from you!
 
 <!--
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ If you want to learn more about productivity tools and techniques, check out the
 
 ## Contact Us
 
-If you have any questions or feedback about our "Robot Assistant" wallpaper, feel free to contact us at [email protected]. We would love to hear from you!
+If you have any questions or feedback about our "Robot Assistant" wallpaper, feel free to contact us at me@pavolhejny.com. We would love to hear from you!
 
 
 ---
@@ -139,7 +139,7 @@ If you want to learn more about productivity tools and techniques, check out the
 
 ## Contact Us
 
-If you have any questions or feedback about our "Robot Assistant" background, feel free to contact us at [email protected]. We would love to hear from you!
+If you have any questions or feedback about our "Robot Assistant" background, feel free to contact us at me@pavolhejny.com. We would love to hear from you!
 
 
 ---
@@ -185,7 +185,7 @@ If you want to learn more about productivity tools and techniques, check out the
 
 ## Contact Us
 
-If you have any questions or feedback about our "Robot Assistant" background, feel free to contact us at [email protected]. We would love to hear from you!
+If you have any questions or feedback about our "Robot Assistant" background, feel free to contact us at me@pavolhejny.com. We would love to hear from you!
 
 
 ---
@@ -229,7 +229,7 @@ If you want to learn more about productivity tools and techniques, check out the
 
 ## Contact Us
 
-If you have any questions or feedback about our "Robot Assistant" background, contact us at [email protected]. We would love to hear from you!
+If you have any questions or feedback about our "Robot Assistant" background, contact us at me@pavolhejny.com. We would love to hear from you!
 
 
 ---

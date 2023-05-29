@@ -12,32 +12,32 @@ Our mission is to inspire and educate people about space exploration and astrono
 
 Here are some articles we've written to help you discover the universe:
 
-- _The Top 10 Space Exploration Achievements_
-- _A Beginner's Guide to Astronomy_
-- _How Satellites Work_
+-   _The Top 10 Space Exploration Achievements_
+-   _A Beginner's Guide to Astronomy_
+-   _How Satellites Work_
 
 ## User Stories
 
 Here are some stories from our users who have used our space-themed wallpaper:
 
-- "The wallpaper is a great reminder to keep exploring and learning about the universe." - John, software engineer
-- "I love the intricate details of the satellite on the wallpaper. It makes me appreciate the technology behind space exploration even more." - Sarah, college student
-- "The wallpaper has inspired me to learn more about satellites and their role in space exploration." - Tom, graphic designer
+-   "The wallpaper is a great reminder to keep exploring and learning about the universe." - John, software engineer
+-   "I love the intricate details of the satellite on the wallpaper. It makes me appreciate the technology behind space exploration even more." - Sarah, college student
+-   "The wallpaper has inspired me to learn more about satellites and their role in space exploration." - Tom, graphic designer
 
 ## References
 
 If you're interested in learning more about space exploration, here are some resources we recommend:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
-- Twitter: [@discoveringuniverse](#)
-- Facebook: [Discovering the Universe](#)
+-   Twitter: [@discoveringuniverse](#)
+-   Facebook: [Discovering the Universe](#)
 
 Thank you for visiting our website. We hope our space-themed wallpaper inspires you to keep exploring the wonders of the universe.
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -92,7 +92,7 @@ If you're interested in learning more about space exploration, here are some res
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@spaceexploration](#)
 - Facebook: [Space Exploration](#)
@@ -143,7 +143,7 @@ If you're interested in learning more about space exploration, here are some res
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@discoveringuniverse](#)
 - Facebook: [Discovering the Universe](#)

@@ -32,7 +32,7 @@ If you're interested in learning more about the retro-futuristic genre, here are
 
 ## Contact Us
 
-If you have any questions or feedback about our retro-futuristic wallpaper, we'd love to hear from you. You can reach us via email at [email protected] or on Twitter at @retrofuturisticwallpapers.
+If you have any questions or feedback about our retro-futuristic wallpaper, we'd love to hear from you. You can reach us via email at me@pavolhejny.com or on Twitter at @retrofuturisticwallpapers.
 
 Thank you for visiting our website and we hope you enjoy our retro-futuristic wallpaper!
 
@@ -91,7 +91,7 @@ If you're interested in learning more about the retro-futuristic genre, here are
 
 ## Contact Us
 
-If you have any questions or feedback about our retro-futuristic wallpaper, we'd love to hear from you. You can reach us via email at [email protected] or on Twitter at @retrofuturisticwallpapers.
+If you have any questions or feedback about our retro-futuristic wallpaper, we'd love to hear from you. You can reach us via email at me@pavolhejny.com or on Twitter at @retrofuturisticwallpapers.
 
 Thank you for visiting our website and we hope you enjoy our retro-futuristic wallpaper!
 

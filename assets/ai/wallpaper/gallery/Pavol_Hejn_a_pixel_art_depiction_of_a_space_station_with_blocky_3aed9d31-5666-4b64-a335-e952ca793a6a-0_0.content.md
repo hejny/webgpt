@@ -8,9 +8,9 @@ Welcome to our website, where we offer high-quality desktop backgrounds that can
 
 Our space station desktop background is not just visually appealing but also functional. Here are some reasons why it's worth considering:
 
-- **Boosts Productivity:** The calming and serene environment of the space station background helps you stay focused on your work and be more productive.
-- **Unique Design:** The pixel art depiction of a space station with its blocky shapes and limited colors creates a retro and futuristic feel that sets it apart from other backgrounds.
-- **High-Quality:** Our backgrounds are of high quality and resolution, ensuring that they look great on any screen size.
+-   **Boosts Productivity:** The calming and serene environment of the space station background helps you stay focused on your work and be more productive.
+-   **Unique Design:** The pixel art depiction of a space station with its blocky shapes and limited colors creates a retro and futuristic feel that sets it apart from other backgrounds.
+-   **High-Quality:** Our backgrounds are of high quality and resolution, ensuring that they look great on any screen size.
 
 ## User Stories
 
@@ -30,13 +30,13 @@ To download our space station desktop background, simply click on the link below
 
 If you're interested in learning more about space stations and related topics, here are some resources that you might find useful:
 
-- [International Space Station](#)
-- [NASA Space Station Website](#)
-- [Space.com - Space Stations News and Articles](#)
+-   [International Space Station](#)
+-   [NASA Space Station Website](#)
+-   [Space.com - Space Stations News and Articles](#)
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 ---
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -102,7 +102,7 @@ If you're interested in learning more about space stations, here are some refere
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 ---
 
@@ -154,7 +154,7 @@ If you're interested in learning more about space stations and related topics, h
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 ---
 

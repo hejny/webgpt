@@ -32,7 +32,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 ## Contact Us
 
-If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you enjoy our Cap<wbr>ti<wbr>va<wbr>ting galaxy cluster background!
 
@@ -93,7 +93,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpaper, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or feedback about our wallpaper, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you enjoy our galaxy cluster wallpaper!
 
@@ -139,7 +139,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 ## Contact Us
 
-If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you enjoy our Cap<wbr>ti<wbr>va<wbr>ting galaxy cluster background!
 
@@ -185,7 +185,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 ## Contact Us
 
-If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you enjoy our galaxy cluster background as much as we do!
 
@@ -231,7 +231,7 @@ If you want to learn more about galaxy clusters and the wonders of the universe,
 
 ## Contact Us
 
-If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or feedback about our background, please don't hesitate to contact us. We'd love to hear from you and help you in any way we can. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you enjoy our Cap<wbr>ti<wbr>va<wbr>ting galaxy cluster background!
 

@@ -29,7 +29,7 @@ Don't just take our word for it, here are some references from our satisfied cli
 
 ## Contact Us
 
-If you're interested in learning more about our virtual assistant services, please don't hesitate to contact us. You can reach us through our website or email us directly at [email protected] We look forward to hearing from you!
+If you're interested in learning more about our virtual assistant services, please don't hesitate to contact us. You can reach us through our website or email us directly at me@pavolhejny.com We look forward to hearing from you!
 
 <!--
 
@@ -85,6 +85,6 @@ Don't just take our word for it, here are some references from our satisfied cli
 
 ## Contact Us
 
-If you're interested in learning more about our virtual assistant services, please don't hesitate to contact us. You can reach us through our website or email us directly at [email protected] We look forward to hearing from you!
+If you're interested in learning more about our virtual assistant services, please don't hesitate to contact us. You can reach us through our website or email us directly at me@pavolhejny.com We look forward to hearing from you!
 
 -->

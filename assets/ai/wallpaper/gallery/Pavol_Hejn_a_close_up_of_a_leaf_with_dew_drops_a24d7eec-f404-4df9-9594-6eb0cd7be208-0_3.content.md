@@ -8,9 +8,9 @@ Transform your workspace into a peaceful oasis with our nature-inspired desktop 
 
 Our background is more than just a pretty picture. Here are some reasons why you should choose our background:
 
-- It's high-quality: Our background is available in high-resolution, ensuring that it looks great on any screen.
-- It's customizable: Need a different size or aspect ratio? No problem! We can customize the background to fit your needs.
-- It's inspiring: Studies have shown that exposure to nature can improve mood and reduce stress. By using our nature-inspired background, you'll feel more relaxed and productive throughout the day.
+-   It's high-quality: Our background is available in high-resolution, ensuring that it looks great on any screen.
+-   It's customizable: Need a different size or aspect ratio? No problem! We can customize the background to fit your needs.
+-   It's inspiring: Studies have shown that exposure to nature can improve mood and reduce stress. By using our nature-inspired background, you'll feel more relaxed and productive throughout the day.
 
 ## How to Download and Install
 
@@ -32,17 +32,17 @@ Here are some stories from users who have tried our background:
 
 Looking for more ways to create a peaceful workspace? Check out these resources:
 
-- [7 Tips for Creating a Calm and Productive Workspace](#)
-- [The Benefits of Incorporating Nature into Your Workday](#)
-- [How to Practice Mindfulness at Work](#)
+-   [7 Tips for Creating a Calm and Productive Workspace](#)
+-   [The Benefits of Incorporating Nature into Your Workday](#)
+-   [How to Practice Mindfulness at Work](#)
 
 ## Contact Us
 
-Have a question or comment about our background? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment about our background? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
-*Disclaimer: Our background is intended for personal use only. Redistribution or commercial use is prohibited.*
+_Disclaimer: Our background is intended for personal use only. Redistribution or commercial use is prohibited._
 
 <!--
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -107,7 +107,7 @@ Want to learn more about the benefits of nature exposure? Check out these resour
 
 ## Contact Us
 
-Have a question or comment about our wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment about our wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -161,7 +161,7 @@ Looking for more ways to create a peaceful workspace? Check out these resources:
 
 ## Contact Us
 
-Have a question or comment about our background? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment about our background? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

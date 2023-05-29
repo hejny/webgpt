@@ -48,7 +48,7 @@ Here are some stories from our satisfied customers who have used our winter deco
 
 ## Contact Us
 
-Have questions or want to share your own winter decor ideas? We'd love to hear from you! Reach out to us on social media or send us an email at [email protected]
+Have questions or want to share your own winter decor ideas? We'd love to hear from you! Reach out to us on social media or send us an email at me@pavolhejny.com
 
 ## References
 

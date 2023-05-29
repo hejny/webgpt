@@ -52,4 +52,4 @@ If you're interested in learning more about science and astronomy, we recommend 
 
 ## Contact Us
 
-If you have any questions or comments about our blog, we'd love to hear from you! You can reach us at [email protected] or on Twitter [@universeblog](#). Thanks for reading, and keep exploring the wonders of the universe!
+If you have any questions or comments about our blog, we'd love to hear from you! You can reach us at me@pavolhejny.com or on Twitter [@universeblog](#). Thanks for reading, and keep exploring the wonders of the universe!

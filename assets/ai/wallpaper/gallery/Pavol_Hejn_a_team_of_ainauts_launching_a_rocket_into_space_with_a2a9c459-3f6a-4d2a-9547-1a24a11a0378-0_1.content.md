@@ -27,7 +27,7 @@ Want to learn more about the Ainautes and their mission to explore the cosmos? C
 
 ## Contact
 
-Have a question about our space-themed décor or need help with installation? Our customer service team is here to help. Contact us at [email protected] or call us at 1-800-SPACE-DÉCOR.
+Have a question about our space-themed décor or need help with installation? Our customer service team is here to help. Contact us at me@pavolhejny.com or call us at 1-800-SPACE-DÉCOR.
 
 Add a touch of adventure to your space with our space-themed décor. Order now and take your room to the final frontier!
 
@@ -83,7 +83,7 @@ Want to learn more about the Ainautes and their mission to explore the cosmos? C
 
 ## Contact
 
-Have a question about our Space Odyssey wallpaper or need help with installation? Our customer service team is here to help. Contact us at [email protected] or call us at 1-800-SPACE-WP.
+Have a question about our Space Odyssey wallpaper or need help with installation? Our customer service team is here to help. Contact us at me@pavolhejny.com or call us at 1-800-SPACE-WP.
 
 Add a touch of adventure to your space with our Space Odyssey wallpaper. Order now and take your room to the next level!
 
@@ -124,7 +124,7 @@ Want to learn more about the Ainautes and their mission to explore the cosmos? C
 
 ## Contact
 
-Have a question about our space-themed décor or need help with installation? Our customer service team is here to help. Contact us at [email protected] or call us at 1-800-SPACE-DÉCOR.
+Have a question about our space-themed décor or need help with installation? Our customer service team is here to help. Contact us at me@pavolhejny.com or call us at 1-800-SPACE-DÉCOR.
 
 Add a touch of adventure to your space with our space-themed décor. Order now and take your room to the final frontier!
 

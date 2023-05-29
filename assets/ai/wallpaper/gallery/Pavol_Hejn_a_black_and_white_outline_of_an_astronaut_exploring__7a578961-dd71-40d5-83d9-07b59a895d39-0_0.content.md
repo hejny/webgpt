@@ -61,6 +61,6 @@ If you want to learn more about space exploration, here are some great resources
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can reach us at [email protected] or through our social media channels.
+If you have any questions or feedback, we'd love to hear from you. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting Space Explorer. We hope you'll join us on our journey to discover the unknown.

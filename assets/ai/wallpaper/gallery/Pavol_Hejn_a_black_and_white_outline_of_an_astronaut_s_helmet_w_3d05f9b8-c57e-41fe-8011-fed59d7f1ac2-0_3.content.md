@@ -48,7 +48,7 @@ Looking for more information about space exploration? Check out these resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

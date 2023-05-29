@@ -24,7 +24,7 @@ If you're interested in learning more about the images and information featured 
 
 ## Contact Us
 
-Do you have any questions, comments, or suggestions? We'd love to hear from you! Feel free to contact us at [email protected] and we'll get back to you as soon as possible.
+Do you have any questions, comments, or suggestions? We'd love to hear from you! Feel free to contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -79,7 +79,7 @@ If you're interested in learning more about the images and information featured 
 
 ## Contact Us
 
-Do you have any questions, comments, or suggestions? We'd love to hear from you! Feel free to contact us at [email protected] and we'll get back to you as soon as possible.
+Do you have any questions, comments, or suggestions? We'd love to hear from you! Feel free to contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 Stay curious and keep exploring the wonders of our universe! 🚀🪐

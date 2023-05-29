@@ -32,7 +32,7 @@ If you're interested in learning more about the Aurora Borealis, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Aurora Borealis wallpaper, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news.
+If you have any questions or comments about our Aurora Borealis wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 <!--
 
@@ -89,7 +89,7 @@ If you want to learn more about the Aurora Borealis, here are some resources to 
 
 ## Contact Us
 
-If you have any questions or comments about our Aurora Borealis wallpaper, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news.
+If you have any questions or comments about our Aurora Borealis wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 
 ---
@@ -131,6 +131,6 @@ If you're interested in learning more about the Aurora Borealis, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Aurora Borealis wallpaper, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news.
+If you have any questions or comments about our Aurora Borealis wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 -->

@@ -38,7 +38,7 @@ We have a variety of resources available for those interested in learning more a
 
 ## Get Involved
 
-We welcome contributions from anyone interested in sharing their knowledge or experiences related to the deep sea. If you have a story to tell, an idea for an article, or a resource to share, please contact us at [email protected]
+We welcome contributions from anyone interested in sharing their knowledge or experiences related to the deep sea. If you have a story to tell, an idea for an article, or a resource to share, please contact us at me@pavolhejny.com
 
 ## Conclusion
 

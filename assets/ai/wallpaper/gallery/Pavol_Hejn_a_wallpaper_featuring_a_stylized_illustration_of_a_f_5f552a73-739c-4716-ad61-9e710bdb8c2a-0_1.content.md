@@ -8,10 +8,10 @@ Welcome to our website, where we provide resources and tools to help you optimiz
 
 Our design is not just visually appealing; it's designed to help you stay focused and motivated throughout the day. Here are some reasons why you should choose our futuristic workspace design:
 
-- The minimalist design helps reduce visual clutter and distractions
-- The futuristic workspace inspires creativity and innovation
-- The gradient background provides a calming and soothing effect
-- The overall design promotes a sense of order and organization
+-   The minimalist design helps reduce visual clutter and distractions
+-   The futuristic workspace inspires creativity and innovation
+-   The gradient background provides a calming and soothing effect
+-   The overall design promotes a sense of order and organization
 
 ## How to Download and Use Our Futuristic Workspace Design
 
@@ -33,17 +33,17 @@ Our design has been used by many productivity enthusiasts and professionals arou
 
 If you're interested in learning more about productivity and how to optimize your workspace, check out these resources:
 
-- [10 Tips for a More Productive Workspace](#)
-- [The Pomodoro Technique: A Time Management Method](#)
-- [How to Stay Focused and Avoid Distractions](#)
+-   [10 Tips for a More Productive Workspace](#)
+-   [The Pomodoro Technique: A Time Management Method](#)
+-   [How to Stay Focused and Avoid Distractions](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our website or design, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our website or design, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
-- Twitter: [@productivityhub](#)
-- Facebook: [@productivityhub](#)
-- Instagram: [@productivityhub](#)
+-   Twitter: [@productivityhub](#)
+-   Facebook: [@productivityhub](#)
+-   Instagram: [@productivityhub](#)
 
 Thank you for visiting our website, and we hope our futuristic workspace design helps you boost your productivity!
 
@@ -55,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -111,7 +111,7 @@ If you're interested in learning more about productivity and how to optimize you
 
 ## Contact Us
 
-If you have any questions or feedback about our website or wallpaper, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our website or wallpaper, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@productivityhub](#)
 - Facebook: [@productivityhub](#)
@@ -168,7 +168,7 @@ If you're interested in learning more about productivity and how to optimize you
 
 ## Contact Us
 
-If you have any questions or feedback about our website or design, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our website or design, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@productivityhub](#)
 - Facebook: [@productivityhub](#)

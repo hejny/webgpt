@@ -12,9 +12,9 @@ Flowers have a unique way of brightening up any space, including your digital wo
 
 Here are some user stories from our satisfied customers who have downloaded our floral background:
 
-- "I love having a bit of nature on my computer screen. It's a nice reminder to take a break and appreciate the beauty around us." - Sarah
-- "The colors in this background are so vibrant and eye-catching. It's definitely made my workday a little more enjoyable." - Michael
-- "I'm not usually one for floral patterns, but this background has changed my mind. It's gorgeous!" - Emily
+-   "I love having a bit of nature on my computer screen. It's a nice reminder to take a break and appreciate the beauty around us." - Sarah
+-   "The colors in this background are so vibrant and eye-catching. It's definitely made my workday a little more enjoyable." - Michael
+-   "I'm not usually one for floral patterns, but this background has changed my mind. It's gorgeous!" - Emily
 
 ## How to Download
 
@@ -26,12 +26,12 @@ Downloading our floral background is easy! Simply click on the link below to acc
 
 If you're interested in learning more about the benefits of nature on mental health, check out these resources:
 
-- [The Benefits of Nature: The Science of Nature-Based Therapy](#)
-- [The Psychological and Physical Benefits of Spiritual/Religious Practices](#)
+-   [The Benefits of Nature: The Science of Nature-Based Therapy](#)
+-   [The Psychological and Physical Benefits of Spiritual/Religious Practices](#)
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at [email protected]
+If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at me@pavolhejny.com
 
 We hope you enjoy our floral background and that it brings a little bit of joy to your digital space!
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at [email protected]
+If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at me@pavolhejny.com
 
 We hope you enjoy our floral wallpaper and that it brings a little bit of joy to your day!
 
@@ -136,7 +136,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at [email protected]
+If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at me@pavolhejny.com
 
 We hope you enjoy our floral background and that it brings a little bit of joy to your day!
 
@@ -181,7 +181,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at [email protected]
+If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at me@pavolhejny.com
 
 We hope you enjoy our floral background and that it brings a little bit of joy to your digital space!
 
@@ -226,7 +226,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at [email protected]
+If you have any questions or concerns, please don't hesitate to reach out to us. You can contact us by filling out the form on our [Contact Us](#) page or by sending us an email at me@pavolhejny.com
 
 We hope you enjoy our floral background and that it brings a little bit of joy to your digital space!
 

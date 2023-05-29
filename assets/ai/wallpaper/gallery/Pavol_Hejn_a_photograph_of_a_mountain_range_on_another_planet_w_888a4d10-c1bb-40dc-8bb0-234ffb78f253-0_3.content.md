@@ -40,7 +40,7 @@ If you're interested in learning more about space, we recommend checking out the
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of the universe with us!
 
@@ -94,7 +94,7 @@ If you're interested in learning more about space, we recommend checking out the
 - Astronomy magazine: #astronomy
 
 ## Contact Us
-If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy our cosmic adventure wallpaper!
 
@@ -142,7 +142,7 @@ If you're interested in learning more about space, we recommend checking out the
 - Astronomy magazine: #astronomy
 
 ## Contact Us
-If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of the universe with us!
 
@@ -190,7 +190,7 @@ If you're interested in learning more about space, we recommend checking out the
 - Astronomy magazine: #astronomy
 
 ## Contact Us
-If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of the universe with us!
 
@@ -238,7 +238,7 @@ If you're interested in learning more about space, we recommend checking out the
 - Astronomy magazine: #astronomy
 
 ## Contact Us
-If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of the universe with us!
 

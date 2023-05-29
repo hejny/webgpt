@@ -51,4 +51,4 @@ If you're interested in learning more about interstellar colonies, we recommend 
 
 ## Contact Us
 
-If you have any questions or comments about our website, please don't hesitate to get in touch! You can reach us at [email protected] or by filling out the contact form on our [Contact Us](#) page.
+If you have any questions or comments about our website, please don't hesitate to get in touch! You can reach us at me@pavolhejny.com or by filling out the contact form on our [Contact Us](#) page.

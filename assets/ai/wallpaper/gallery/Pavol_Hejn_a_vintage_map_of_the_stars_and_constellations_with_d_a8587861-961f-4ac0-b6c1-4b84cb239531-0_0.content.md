@@ -30,7 +30,7 @@ If you're interested in learning more about space and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions about our vintage map or would like to place an order, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at 555-1234.
+If you have any questions about our vintage map or would like to place an order, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the universe with our vintage map of stars and constellations.
 
@@ -89,7 +89,7 @@ If you're interested in learning more about space and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions about our vintage map wallpaper or would like to place an order, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at 555-1234.
+If you have any questions about our vintage map wallpaper or would like to place an order, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of space with our vintage map wallpaper.
 
@@ -133,7 +133,7 @@ If you're interested in learning more about space and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions about our vintage map or would like to place an order, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at 555-1234.
+If you have any questions about our vintage map or would like to place an order, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope you enjoy exploring the universe with our vintage map of stars and constellations.
 

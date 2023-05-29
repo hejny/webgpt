@@ -6,9 +6,9 @@ Are you looking for a way to add some personality to your tech-themed website? L
 
 ## Features
 
-- Repeating pattern of binary code
-- Simple font and black and white color scheme
-- Adds personality to any tech-themed website
+-   Repeating pattern of binary code
+-   Simple font and black and white color scheme
+-   Adds personality to any tech-themed website
 
 ## User Stories
 
@@ -20,12 +20,12 @@ Are you looking for a way to add some personality to your tech-themed website? L
 
 Want to learn more about the benefits of adding a design element to your website? Check out these resources:
 
-- [The Power of Visuals in Web Design](#)
-- [5 Ways to Add Personality to Your Website](#)
+-   [The Power of Visuals in Web Design](#)
+-   [5 Ways to Add Personality to Your Website](#)
 
 ## Contact
 
-Have questions about our binary code design or want to learn more about our other website design services? Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our binary code design or want to learn more about our other website design services? Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Elevate your tech-themed website with our binary code design today!
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -79,7 +79,7 @@ Want to learn more about the benefits of adding a wallpaper to your website? Che
 
 ## Contact
 
-Have questions about our binary code wallpaper or want to learn more about our other website design services? Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our binary code wallpaper or want to learn more about our other website design services? Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Elevate your tech-themed website with our binary code wallpaper today!
 
@@ -118,7 +118,7 @@ Want to learn more about the benefits of adding a design element to your website
 
 ## Contact
 
-Have questions about our binary code design or want to learn more about our other website design services? Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our binary code design or want to learn more about our other website design services? Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Elevate your tech-themed website with our binary code design today!
 

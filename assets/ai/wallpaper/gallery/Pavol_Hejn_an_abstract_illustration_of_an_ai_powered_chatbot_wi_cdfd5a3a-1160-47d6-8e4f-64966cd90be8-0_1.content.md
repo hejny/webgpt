@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -28,10 +28,10 @@ An AI chatbot is a computer program that uses artificial intelligence to simulat
 
 ## Benefits of AI Chatbots
 
-- **24/7 Availability**: Unlike human agents, chatbots can work around the clock without getting tired or needing breaks.
-- **Instant Responses**: Chatbots can provide instant responses to customer inquiries, reducing wait times and improving satisfaction.
-- **Cost Savings**: By automating routine tasks, chatbots can save businesses time and money on customer service operations.
-- **Personalization**: Chatbots can use customer data to provide personalized recommendations and solutions.
+-   **24/7 Availability**: Unlike human agents, chatbots can work around the clock without getting tired or needing breaks.
+-   **Instant Responses**: Chatbots can provide instant responses to customer inquiries, reducing wait times and improving satisfaction.
+-   **Cost Savings**: By automating routine tasks, chatbots can save businesses time and money on customer service operations.
+-   **Personalization**: Chatbots can use customer data to provide personalized recommendations and solutions.
 
 ## User Stories
 
@@ -45,10 +45,10 @@ Here are some examples of how businesses are using AI chatbots to improve their 
 
 If you're interested in learning more about AI chatbots, here are some resources we recommend:
 
-- [Chatbots Magazine](https://chatbotsmagazine.com/)
-- [Botpress Blog](https://botpress.com/blog/)
-- [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
+-   [Chatbots Magazine](https://chatbotsmagazine.com/)
+-   [Botpress Blog](https://botpress.com/blog/)
+-   [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/)
 
 ## Contact Us
 
-Do you have questions about AI chatbots or want to learn more about how they can benefit your business? Contact us at [email protected] and we'll be happy to help!
+Do you have questions about AI chatbots or want to learn more about how they can benefit your business? Contact us at me@pavolhejny.com and we'll be happy to help!

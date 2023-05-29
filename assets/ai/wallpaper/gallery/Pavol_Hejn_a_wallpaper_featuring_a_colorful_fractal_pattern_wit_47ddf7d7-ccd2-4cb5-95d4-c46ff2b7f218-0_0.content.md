@@ -28,7 +28,7 @@ If you want to learn more about fractals and their Fas<wbr>ci<wbr>na<wbr>ting pr
 
 ## Contact Us
 
-If you have any questions or feedback about our website or our designs, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news. Thanks for visiting!
+If you have any questions or feedback about our website or our designs, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news. Thanks for visiting!
 
 <!--
 
@@ -81,7 +81,7 @@ If you want to learn more about fractals and their Fas<wbr>ci<wbr>na<wbr>ting pr
 
 ## Contact Us
 
-If you have any questions or feedback about our website or our fractal wallpaper background, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news. Thanks for visiting!
+If you have any questions or feedback about our website or our fractal wallpaper background, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news. Thanks for visiting!
 
 
 ---
@@ -119,6 +119,6 @@ If you want to learn more about fractals and their Fas<wbr>ci<wbr>na<wbr>ting pr
 
 ## Contact Us
 
-If you have any questions or feedback about our website or our designs, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news. Thanks for visiting!
+If you have any questions or feedback about our website or our designs, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news. Thanks for visiting!
 
 -->

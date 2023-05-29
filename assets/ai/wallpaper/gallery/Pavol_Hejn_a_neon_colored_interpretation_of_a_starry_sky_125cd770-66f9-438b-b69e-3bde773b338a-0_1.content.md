@@ -34,7 +34,7 @@ Check out these articles for more information on the benefits of using visually 
 
 ## Contact Us
 
-If you have any questions or concerns about our Cosmic Dreams background, please don't hesitate to reach out to us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns about our Cosmic Dreams background, please don't hesitate to reach out to us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 Thank you for choosing our background to bring a little bit of cosmic magic into your life! 🚀✨
 
@@ -91,7 +91,7 @@ Check out these articles for more information on the benefits of using visually 
 - [How Visual Aesthetics Can Improve Your Mood](#)
 
 ## Contact Us
-If you have any questions or concerns about our Cosmic Dreams Wallpaper, please don't hesitate to reach out to us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns about our Cosmic Dreams Wallpaper, please don't hesitate to reach out to us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 Thank you for choosing our wallpaper to bring a little bit of cosmic magic into your life! 🚀✨
 
@@ -133,7 +133,7 @@ Check out these articles for more information on the benefits of using visually 
 - [How Visual Aesthetics Can Improve Your Mood](#)
 
 ## Contact Us
-If you have any questions or concerns about our Cosmic Dreams background, please don't hesitate to reach out to us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns about our Cosmic Dreams background, please don't hesitate to reach out to us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 Thank you for choosing our background to bring a little bit of cosmic magic into your life! 🚀✨
 

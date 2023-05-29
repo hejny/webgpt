@@ -30,7 +30,7 @@ If you're interested in learning more about AI and space exploration, check out 
 
 ## Contact Us
 
-If you have any questions or comments, we'd love to hear from you. Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+If you have any questions or comments, we'd love to hear from you. Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting our website. Together, we can achieve incredible things in space!
 
@@ -89,7 +89,7 @@ If you're interested in learning more about AI and space exploration, check out 
 
 ## Contact Us
 
-If you have any questions or comments, we'd love to hear from you. Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+If you have any questions or comments, we'd love to hear from you. Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting our website. Together, we can achieve incredible things in space!
 

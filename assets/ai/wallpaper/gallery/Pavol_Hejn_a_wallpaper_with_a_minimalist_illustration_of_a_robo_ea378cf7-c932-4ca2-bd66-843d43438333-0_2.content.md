@@ -2,7 +2,7 @@
 
 # Minimalist Roboarm
 
-Welcome to our website, where we offer a range of tools and resources to help you improve your workspace. Our minimalist illustration of a robotic arm against a dark and moody background is the perfect addition to any desktop or laptop background. 
+Welcome to our website, where we offer a range of tools and resources to help you improve your workspace. Our minimalist illustration of a robotic arm against a dark and moody background is the perfect addition to any desktop or laptop background.
 
 ## Why Choose Our Illustration?
 
@@ -20,13 +20,13 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in learning more about how your workspace affects your productivity, check out these resources:
 
-- [The Benefits of a Clean Desk](#)
-- [How to Create a Productive Workspace](#)
-- [10 Tips for Designing Your Home Office](#)
+-   [The Benefits of a Clean Desk](#)
+-   [How to Create a Productive Workspace](#)
+-   [10 Tips for Designing Your Home Office](#)
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us via email at [email protected] or follow us on social media at @workspaceenhancers.
+If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us via email at me@pavolhejny.com or follow us on social media at @workspaceenhancers.
 
 Thank you for visiting our website, and we hope our minimalist robotic arm illustration can help enhance your workspace!
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ If you're interested in learning more about how your workspace affects your prod
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us via email at [email protected] or follow us on social media at @workspaceenhancers.
+If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us via email at me@pavolhejny.com or follow us on social media at @workspaceenhancers.
 
 Thank you for visiting our website, and we hope our wallpaper can help enhance your workspace!
 
@@ -97,7 +97,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Enhance Your Workspace with a Minimalist Robotic Arm Illustration
 
-Welcome to our website, where we offer a range of tools and resources to help you improve your workspace. Our minimalist illustration of a robotic arm against a dark and moody background is the perfect addition to any desktop or laptop background. 
+Welcome to our website, where we offer a range of tools and resources to help you improve your workspace. Our minimalist illustration of a robotic arm against a dark and moody background is the perfect addition to any desktop or laptop background.
 
 ## Why Choose Our Illustration?
 
@@ -121,7 +121,7 @@ If you're interested in learning more about how your workspace affects your prod
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us via email at [email protected] or follow us on social media at @workspaceenhancers.
+If you have any questions or feedback, please don't hesitate to reach out to us. You can contact us via email at me@pavolhejny.com or follow us on social media at @workspaceenhancers.
 
 Thank you for visiting our website, and we hope our minimalist robotic arm illustration can help enhance your workspace!
 

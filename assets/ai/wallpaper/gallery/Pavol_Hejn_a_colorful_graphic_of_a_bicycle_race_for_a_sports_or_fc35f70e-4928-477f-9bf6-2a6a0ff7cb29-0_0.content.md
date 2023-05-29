@@ -35,7 +35,7 @@ Looking for more information about cycling? Check out these resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you. You can reach us at [email protected] or on social media:
+Have a question or comment? We'd love to hear from you. You can reach us at me@pavolhejny.com or on social media:
 
 -   Twitter: [@pedaltothemetal](#)
 -   Facebook: [@pedaltothemetal](#)
@@ -103,7 +103,7 @@ Looking for more information about cycling? Check out these resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you. You can reach us at [email protected] or on social media:
+Have a question or comment? We'd love to hear from you. You can reach us at me@pavolhejny.com or on social media:
 
 - Twitter: [@pedaltothemetal](#)
 - Facebook: [@pedaltothemetal](#)

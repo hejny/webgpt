@@ -6,9 +6,9 @@ Looking to add a unique and eye-catching touch to your creative project? Our ret
 
 ## Features
 
-- High-quality resolution for crisp and clear display
-- Unique and versatile design that stands out from the crowd
-- Instant download for quick and easy use
+-   High-quality resolution for crisp and clear display
+-   Unique and versatile design that stands out from the crowd
+-   Instant download for quick and easy use
 
 ## User Stories
 
@@ -20,13 +20,13 @@ Looking to add a unique and eye-catching touch to your creative project? Our ret
 
 Want to learn more about retro-futuristic design or get some inspiration for your next project? Check out these resources:
 
-- [The Retro-Futuristic World of Syd Mead](#)
-- [Retro-Futurism: A Look Back at Tomorrow](#)
-- [How to Create a Retro-Futuristic Design](#)
+-   [The Retro-Futuristic World of Syd Mead](#)
+-   [Retro-Futurism: A Look Back at Tomorrow](#)
+-   [How to Create a Retro-Futuristic Design](#)
 
 ## Contact Us
 
-Have questions about our retro-futuristic design or need help with your purchase? Our friendly customer service team is here to help. Contact us at [email protected] or via phone at 1-800-555-1234.
+Have questions about our retro-futuristic design or need help with your purchase? Our friendly customer service team is here to help. Contact us at me@pavolhejny.com or via phone at 1-800-555-1234.
 
 ---
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -84,7 +84,7 @@ Want to learn more about retro-futuristic design or get some inspiration for you
 
 ## Contact Us
 
-Have questions about our retro-futuristic wallpaper or need help with your purchase? Our friendly customer service team is here to help. Contact us at [email protected] or via phone at 1-800-555-1234.
+Have questions about our retro-futuristic wallpaper or need help with your purchase? Our friendly customer service team is here to help. Contact us at me@pavolhejny.com or via phone at 1-800-555-1234.
 
 ---
 
@@ -126,7 +126,7 @@ Want to learn more about retro-futuristic design or get some inspiration for you
 
 ## Contact Us
 
-Have questions about our retro-futuristic wallpaper or need help with your purchase? Our friendly customer service team is here to help. Contact us at [email protected] or via phone at 1-800-555-1234.
+Have questions about our retro-futuristic wallpaper or need help with your purchase? Our friendly customer service team is here to help. Contact us at me@pavolhejny.com or via phone at 1-800-555-1234.
 
 ---
 
@@ -168,7 +168,7 @@ Want to learn more about retro-futuristic design or get some inspiration for you
 
 ## Contact Us
 
-Have questions about our retro-futuristic design or need help with your purchase? Our friendly customer service team is here to help. Contact us at [email protected] or via phone at 1-800-555-1234.
+Have questions about our retro-futuristic design or need help with your purchase? Our friendly customer service team is here to help. Contact us at me@pavolhejny.com or via phone at 1-800-555-1234.
 
 ---
 
@@ -210,7 +210,7 @@ Want to learn more about retro-futuristic design or get some inspiration for you
 
 ## Contact Us
 
-Have questions about our retro-futuristic design or need help with your purchase? Our friendly customer service team is here to help. Contact us at [email protected] or via phone at 1-800-555-1234.
+Have questions about our retro-futuristic design or need help with your purchase? Our friendly customer service team is here to help. Contact us at me@pavolhejny.com or via phone at 1-800-555-1234.
 
 ---
 

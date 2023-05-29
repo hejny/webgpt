@@ -32,7 +32,7 @@ Hear from people who have already started exploring the world of quantum computi
 
 ## Contact Us
 
-Have questions or want to learn more about quantum computing? Reach out to us at [email protected] or follow us on Twitter @quantumcomputing. We look forward to hearing from you!
+Have questions or want to learn more about quantum computing? Reach out to us at me@pavolhejny.com or follow us on Twitter @quantumcomputing. We look forward to hearing from you!
 
 <!--
 
@@ -89,6 +89,6 @@ Hear from people who have already started exploring the world of quantum computi
 
 ## Contact Us
 
-Have questions or want to learn more about quantum computing? Reach out to us at [email protected] or follow us on Twitter @quantumcomputing. We look forward to hearing from you!
+Have questions or want to learn more about quantum computing? Reach out to us at me@pavolhejny.com or follow us on Twitter @quantumcomputing. We look forward to hearing from you!
 
 -->

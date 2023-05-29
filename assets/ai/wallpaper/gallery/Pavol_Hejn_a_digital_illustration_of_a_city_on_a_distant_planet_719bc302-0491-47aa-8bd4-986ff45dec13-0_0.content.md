@@ -32,7 +32,7 @@ If you're interested in learning more about the inspiration behind our futuristi
 
 ## Contact Us
 
-If you have any questions or concerns about our background or would like to share your feedback, please don't hesitate to contact us. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or concerns about our background or would like to share your feedback, please don't hesitate to contact us. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for exploring our futuristic city background. We hope it inspires you to dream big and imagine the impossible!
 
@@ -93,7 +93,7 @@ If you're interested in learning more about the inspiration behind our futuristi
 
 ## Contact Us
 
-If you have any questions or concerns about our wallpaper or would like to share your feedback, please don't hesitate to contact us. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or concerns about our wallpaper or would like to share your feedback, please don't hesitate to contact us. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for choosing our futuristic city wallpaper as your desktop background. We hope it inspires you to reach for the stars!
 
@@ -139,7 +139,7 @@ If you're interested in learning more about the inspiration behind our futuristi
 
 ## Contact Us
 
-If you have any questions or concerns about our background or would like to share your feedback, please don't hesitate to contact us. You can reach us through our [contact form](#) or by emailing us at [email protected]
+If you have any questions or concerns about our background or would like to share your feedback, please don't hesitate to contact us. You can reach us through our [contact form](#) or by emailing us at me@pavolhejny.com
 
 Thank you for exploring our futuristic city background. We hope it inspires you to dream big and imagine the impossible!
 

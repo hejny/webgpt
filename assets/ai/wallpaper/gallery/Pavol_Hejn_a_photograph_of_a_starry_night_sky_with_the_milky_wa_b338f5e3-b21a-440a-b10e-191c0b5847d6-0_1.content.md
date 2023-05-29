@@ -31,7 +31,7 @@ For more information about astronomy and stargazing, check out these resources:
 
 ## Contact Us
 
-If you have any questions or comments about our astronomy wallpaper, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our astronomy wallpaper, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -89,7 +89,7 @@ For more information about astronomy and stargazing, check out these resources:
 
 ## Contact Us
 
-If you have any questions or comments about our astronomy wallpaper, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our astronomy wallpaper, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---

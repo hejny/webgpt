@@ -26,7 +26,7 @@ To download our Retro Robot Wallpaper, simply click on the download button below
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing Retro Robot Gaming as your go-to resource for all things retro gaming!
 
@@ -85,7 +85,7 @@ If you're interested in learning more about pixel art and retro-style games, che
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or concerns, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing our Retro Robot Wallpaper for your gaming setup!
 
@@ -125,7 +125,7 @@ To download our Retro Robot Wallpaper, simply click on the download button below
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing Retro Robot Gaming as your go-to resource for all things retro gaming!
 

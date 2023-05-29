@@ -6,10 +6,10 @@ Our abstract illustration of a dark and futuristic cityscape is the perfect back
 
 ## Features
 
-- Abstract illustration of a dark and futuristic cityscape
-- Glowing lights and skyscrapers
-- High-quality resolution for optimal display on all devices
-- Easy to download and set as your desktop or mobile background
+-   Abstract illustration of a dark and futuristic cityscape
+-   Glowing lights and skyscrapers
+-   High-quality resolution for optimal display on all devices
+-   Easy to download and set as your desktop or mobile background
 
 ## User Stories
 
@@ -23,17 +23,17 @@ Our customers love using this cityscape background for their tech-related websit
 
 Looking for more inspiration for your tech site? Check out these resources:
 
-- [TechCrunch](#)
-- [Wired](#)
-- [The Verge](#)
+-   [TechCrunch](#)
+-   [Wired](#)
+-   [The Verge](#)
 
 ## Contact Us
 
-Have any questions about our cityscape background or need help downloading it? Contact us at [email protected] and we'll be happy to assist you.
+Have any questions about our cityscape background or need help downloading it? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 
-*Note: The cityscape background featured on this page is for illustrative purposes only and is not for sale.*
+_Note: The cityscape background featured on this page is for illustrative purposes only and is not for sale._
 
 <!--
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ Looking for more inspiration for your tech website? Check out these resources:
 
 ## Contact Us
 
-Have any questions about our wallpaper or need help downloading it? Contact us at [email protected] and we'll be happy to assist you.
+Have any questions about our wallpaper or need help downloading it? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 
@@ -134,7 +134,7 @@ Looking for more inspiration for your tech website? Check out these resources:
 
 ## Contact Us
 
-Have any questions about our cityscape background or need help downloading it? Contact us at [email protected] and we'll be happy to assist you.
+Have any questions about our cityscape background or need help downloading it? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 
@@ -179,7 +179,7 @@ Looking for more inspiration for your tech website? Check out these resources:
 
 ## Contact Us
 
-Have any questions about our cityscape background or need help downloading it? Contact us at [email protected] and we'll be happy to assist you.
+Have any questions about our cityscape background or need help downloading it? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 
@@ -224,7 +224,7 @@ Looking for more inspiration for your tech site? Check out these resources:
 
 ## Contact Us
 
-Have any questions about our cityscape background or need help downloading it? Contact us at [email protected] and we'll be happy to assist you.
+Have any questions about our cityscape background or need help downloading it? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 ---
 

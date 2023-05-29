@@ -8,9 +8,9 @@ Welcome to our website, where we provide you with inspiring backgrounds that wil
 
 Our backgrounds are carefully curated to bring you the best quality images that will enhance your desktop experience. Here are some reasons why you should choose our backgrounds:
 
-- High-quality resolution: Our backgrounds are available in high-definition resolution, ensuring that every detail of the image is crystal clear.
-- Unique designs: We offer a wide range of unique and creative designs that cater to different tastes and preferences.
-- Easy to download: Our backgrounds are easy to download and set up on your desktop.
+-   High-quality resolution: Our backgrounds are available in high-definition resolution, ensuring that every detail of the image is crystal clear.
+-   Unique designs: We offer a wide range of unique and creative designs that cater to different tastes and preferences.
+-   Easy to download: Our backgrounds are easy to download and set up on your desktop.
 
 ## How to Download and Set Up the Background
 
@@ -34,12 +34,12 @@ Our customers have shared their experiences with our backgrounds, and here are s
 
 If you want to learn more about the artist behind the futuristic astronaut background, check out these references:
 
-- [Artist Portfolio](#)
-- [Interview with the Artist](#)
+-   [Artist Portfolio](#)
+-   [Interview with the Artist](#)
 
 ## Contact Us
 
-If you have any questions or feedback, feel free to contact us at [email protected]. We would love to hear from you.
+If you have any questions or feedback, feel free to contact us at me@pavolhejny.com. We would love to hear from you.
 
 ---
 
@@ -53,10 +53,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -109,7 +109,7 @@ If you want to learn more about the artist behind the futuristic astronaut wallp
 
 ## Contact Us
 
-If you have any questions or feedback, feel free to contact us at [email protected]. We would love to hear from you.
+If you have any questions or feedback, feel free to contact us at me@pavolhejny.com. We would love to hear from you.
 
 ---
 
@@ -164,7 +164,7 @@ If you want to learn more about the artist behind the futuristic astronaut backg
 
 ## Contact Us
 
-If you have any questions or feedback, feel free to contact us at [email protected]. We would love to hear from you.
+If you have any questions or feedback, feel free to contact us at me@pavolhejny.com. We would love to hear from you.
 
 ---
 

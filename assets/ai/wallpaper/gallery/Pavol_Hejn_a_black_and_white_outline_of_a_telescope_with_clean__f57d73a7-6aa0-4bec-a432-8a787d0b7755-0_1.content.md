@@ -10,11 +10,11 @@ Our telescope background is more than just a pretty picture. It's a way to spark
 
 ## Features and Benefits
 
-- High-quality image resolution for a crisp, clear display
-- Compatible with a wide range of devices, including desktops, laptops, tablets, and smartphones
-- Easy to install and customize to fit your screen size and preferences
-- Adds a touch of elegance and sophistication to any workspace or home screen
-- Provides a constant reminder of the wonders of the universe and the importance of exploration and discovery
+-   High-quality image resolution for a crisp, clear display
+-   Compatible with a wide range of devices, including desktops, laptops, tablets, and smartphones
+-   Easy to install and customize to fit your screen size and preferences
+-   Adds a touch of elegance and sophistication to any workspace or home screen
+-   Provides a constant reminder of the wonders of the universe and the importance of exploration and discovery
 
 ## User Stories
 
@@ -26,13 +26,13 @@ Our telescope background is more than just a pretty picture. It's a way to spark
 
 For more information about telescopes and astronomy, check out these resources:
 
-- [NASA](#)
-- [Sky & Telescope](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Sky & Telescope](#)
+-   [Astronomy Magazine](#)
 
 ## Contact Us
 
-If you have any questions or need assistance with installing our telescope background, please don't hesitate to contact us at [email protected]. We're always happy to help.
+If you have any questions or need assistance with installing our telescope background, please don't hesitate to contact us at me@pavolhejny.com. We're always happy to help.
 
 <!--
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ For more information about telescopes and astronomy, check out these resources:
 
 ## Contact Us
 
-Have questions about our telescope wallpaper or need help with installation? Contact us at [email protected] and we'll be happy to assist you.
+Have questions about our telescope wallpaper or need help with installation? Contact us at me@pavolhejny.com and we'll be happy to assist you.
 
 
 ---
@@ -135,6 +135,6 @@ For more information about telescopes and astronomy, check out these resources:
 
 ## Contact Us
 
-If you have any questions or need assistance with installing our telescope background, please don't hesitate to contact us at [email protected]. We're always happy to help.
+If you have any questions or need assistance with installing our telescope background, please don't hesitate to contact us at me@pavolhejny.com. We're always happy to help.
 
 -->

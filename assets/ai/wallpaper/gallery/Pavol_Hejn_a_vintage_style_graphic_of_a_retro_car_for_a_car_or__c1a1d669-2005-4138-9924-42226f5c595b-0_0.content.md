@@ -30,7 +30,7 @@ Check out some of our favorite travel resources:
 
 ## Contact Us
 
-Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at [email protected] or follow us on [Instagram](#) for daily travel inspiration.
+Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at me@pavolhejny.com or follow us on [Instagram](#) for daily travel inspiration.
 
 ---
 
@@ -91,7 +91,7 @@ Check out some of our favorite travel resources:
 
 ## Contact Us
 
-Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at [email protected] or follow us on [Instagram](#) for daily travel inspiration.
+Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at me@pavolhejny.com or follow us on [Instagram](#) for daily travel inspiration.
 
 ---
 
@@ -137,7 +137,7 @@ Check out some of our favorite travel resources:
 
 ## Contact Us
 
-Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at [email protected] or follow us on [Instagram](#) for daily travel inspiration.
+Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at me@pavolhejny.com or follow us on [Instagram](#) for daily travel inspiration.
 
 ---
 
@@ -183,7 +183,7 @@ Check out some of our favorite travel resources:
 
 ## Contact Us
 
-Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at [email protected] or follow us on [Instagram](#) for daily travel inspiration.
+Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at me@pavolhejny.com or follow us on [Instagram](#) for daily travel inspiration.
 
 ---
 
@@ -229,7 +229,7 @@ Check out some of our favorite travel resources:
 
 ## Contact Us
 
-Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at [email protected] or follow us on [Instagram](#) for daily travel inspiration.
+Have a question or want to share your own travel story? We'd love to hear from you! Get in touch at me@pavolhejny.com or follow us on [Instagram](#) for daily travel inspiration.
 
 ---
 

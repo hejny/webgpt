@@ -6,18 +6,18 @@ Our vintage star map background is a beautiful and inspiring addition to any des
 
 ## Features
 
-- High-quality image resolution for a crisp and clear display
-- Vintage aesthetic adds a touch of nostalgia to your device
-- Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
-- Available in multiple sizes to fit any screen
+-   High-quality image resolution for a crisp and clear display
+-   Vintage aesthetic adds a touch of nostalgia to your device
+-   Perfect for astronomy enthusiasts and anyone who loves space-themed backgrounds
+-   Available in multiple sizes to fit any screen
 
 ## Discover the Wonders of the Universe
 
 Use our vintage star map background as a starting point to explore the wonders of the universe. Here are some resources to get you started:
 
-- [NASA's Guide to the Night Sky](#): Learn about the stars and constellations visible from your location.
-- [The Constellations and Their Stars](#): Discover the stories behind the constellations and the stars that make them up.
-- [Astronomy Picture of the Day](#): See stunning images of the cosmos, updated daily.
+-   [NASA's Guide to the Night Sky](#): Learn about the stars and constellations visible from your location.
+-   [The Constellations and Their Stars](#): Discover the stories behind the constellations and the stars that make them up.
+-   [Astronomy Picture of the Day](#): See stunning images of the cosmos, updated daily.
 
 ## User Stories
 
@@ -27,7 +27,7 @@ Use our vintage star map background as a starting point to explore the wonders o
 
 ## Contact Us
 
-Have questions or comments about our vintage star map background? Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+Have questions or comments about our vintage star map background? Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 <!--
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ For more information about the stars and constellations featured in our wallpape
 
 ## Contact Us
 
-Have questions or comments about our vintage star map wallpaper? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+Have questions or comments about our vintage star map wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 
 ---
@@ -120,7 +120,7 @@ Use our vintage star map background as a starting point to explore the wonders o
 
 ## Contact Us
 
-Have questions or comments about our vintage star map background? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+Have questions or comments about our vintage star map background? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 
 ---
@@ -159,7 +159,7 @@ Use our vintage star map background as a starting point to explore the wonders o
 
 ## Contact Us
 
-Have questions or comments about our vintage star map background? Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+Have questions or comments about our vintage star map background? Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 
 ---
@@ -198,7 +198,7 @@ Use our vintage star map background as a starting point to explore the wonders o
 
 ## Contact Us
 
-Have questions or comments about our vintage star map background? Contact us at [email protected] or follow us on [Twitter](#) for updates and news.
+Have questions or comments about our vintage star map background? Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news.
 
 
 ---

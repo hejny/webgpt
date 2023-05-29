@@ -8,10 +8,10 @@ Welcome to our website where you can find a unique countdown timer background th
 
 Our countdown timer background comes with the following features:
 
-- Simple graphic design
-- Space for setting alarms and countdowns
-- Customizable colors and fonts
-- Easy to install and use on any device
+-   Simple graphic design
+-   Space for setting alarms and countdowns
+-   Customizable colors and fonts
+-   Easy to install and use on any device
 
 ## How it Works
 
@@ -29,13 +29,13 @@ Here are some examples of how our countdown timer background has helped our user
 
 If you're interested in learning more about the benefits of using a countdown timer for productivity, check out these resources:
 
-- [The Pomodoro Technique](#)
-- [Why Time Management is Important for Productivity](#)
-- [How to Stay Focused and Avoid Distractions](#)
+-   [The Pomodoro Technique](#)
+-   [Why Time Management is Important for Productivity](#)
+-   [How to Stay Focused and Avoid Distractions](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our countdown timer background, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our countdown timer background, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -97,7 +97,7 @@ If you're interested in learning more about the benefits of using a countdown ti
 
 ## Contact Us
 
-If you have any questions or feedback about our countdown timer background, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our countdown timer background, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -144,7 +144,7 @@ If you're interested in learning more about the benefits of using a countdown ti
 
 ## Contact Us
 
-If you have any questions or feedback about our countdown timer background, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our countdown timer background, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -191,7 +191,7 @@ If you're interested in learning more about the benefits of using a countdown ti
 
 ## Contact Us
 
-If you have any questions or feedback about our countdown timer background, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our countdown timer background, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -238,7 +238,7 @@ If you're interested in learning more about the benefits of using a countdown ti
 
 ## Contact Us
 
-If you have any questions or feedback about our countdown timer background, feel free to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our countdown timer background, feel free to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---

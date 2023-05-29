@@ -12,11 +12,11 @@ We believe that technology is constantly evolving and changing the way we live, 
 
 Our website covers a wide range of topics related to technology. From the latest gadgets and software to emerging trends and future predictions, we strive to provide our readers with insightful and engaging content. Some of our popular sections include:
 
-- **News and Updates:** Stay up-to-date with the latest happenings in the world of technology.
-- **Reviews and Comparisons:** Read our unbiased reviews and comparisons of the latest tech products.
-- **Tutorials and How-tos:** Learn how to make the most of your tech devices with our step-by-step guides.
-- **Opinions and Discussions:** Join the conversation and share your thoughts on trending tech topics.
-- **User Stories:** Hear from real people about their experiences with technology and how it has impacted their lives.
+-   **News and Updates:** Stay up-to-date with the latest happenings in the world of technology.
+-   **Reviews and Comparisons:** Read our unbiased reviews and comparisons of the latest tech products.
+-   **Tutorials and How-tos:** Learn how to make the most of your tech devices with our step-by-step guides.
+-   **Opinions and Discussions:** Join the conversation and share your thoughts on trending tech topics.
+-   **User Stories:** Hear from real people about their experiences with technology and how it has impacted their lives.
 
 ## Resources and References
 
@@ -24,7 +24,7 @@ We understand the importance of providing accurate and reliable information to o
 
 ## Connect with Us
 
-We value feedback from our readers and are always looking for ways to improve our website. If you have any comments, suggestions, or questions, please don't hesitate to connect with us. You can reach us through our contact form or by emailing us directly at [email protected]
+We value feedback from our readers and are always looking for ways to improve our website. If you have any comments, suggestions, or questions, please don't hesitate to connect with us. You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you find the background of futuristic data visualizations and graphs as inspiring as we do!
 
@@ -36,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -77,7 +77,7 @@ We understand the importance of providing accurate and reliable information to o
 
 ## Contact Us
 
-We value feedback from our readers and are always looking for ways to improve our website. If you have any comments, suggestions, or questions, please don't hesitate to contact us. You can reach us through our contact form or by emailing us directly at [email protected]
+We value feedback from our readers and are always looking for ways to improve our website. If you have any comments, suggestions, or questions, please don't hesitate to contact us. You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you enjoy the futuristic data visualization wallpaper as much as we do!
 
@@ -115,7 +115,7 @@ We understand the importance of providing accurate and reliable information to o
 
 ## Connect with Us
 
-We value feedback from our readers and are always looking for ways to improve our website. If you have any comments, suggestions, or questions, please don't hesitate to connect with us. You can reach us through our contact form or by emailing us directly at [email protected]
+We value feedback from our readers and are always looking for ways to improve our website. If you have any comments, suggestions, or questions, please don't hesitate to connect with us. You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope you find the background of futuristic data visualizations and graphs as inspiring as we do!
 

@@ -8,9 +8,9 @@ Welcome to our website, where we provide resources and tools for productivity en
 
 Our illustration is designed to create a calming and inspiring environment that promotes productivity. The features of our illustration include:
 
-- A minimalist and modern design that eliminates distractions and encourages focus
-- A stylized illustration of a futuristic workspace that inspires creativity
-- A gradient background that creates a calming atmosphere and reduces eye strain
+-   A minimalist and modern design that eliminates distractions and encourages focus
+-   A stylized illustration of a futuristic workspace that inspires creativity
+-   A gradient background that creates a calming atmosphere and reduces eye strain
 
 ## How to Use the Illustration
 
@@ -30,13 +30,13 @@ Our illustration has helped many people achieve their goals and increase their p
 
 If you want to learn more about productivity and how to create a workspace that promotes focus and creativity, check out these resources:
 
-- [How to Create a Minimalist Workspace for Maximum Productivity](#)
-- [The Benefits of Using a Gradient Background for Your Desktop](#)
-- [10 Tips for Staying Focused and Productive While Working from Home](#)
+-   [How to Create a Minimalist Workspace for Maximum Productivity](#)
+-   [The Benefits of Using a Gradient Background for Your Desktop](#)
+-   [10 Tips for Staying Focused and Productive While Working from Home](#)
 
 ## Contact Us
 
-If you have any questions or comments about our illustration or our website, please feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our illustration or our website, please feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 <!--
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -99,7 +99,7 @@ If you want to learn more about productivity and how to create a workspace that 
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper or our website, please feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our wallpaper or our website, please feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -147,6 +147,6 @@ If you want to learn more about productivity and how to create a workspace that 
 
 ## Contact Us
 
-If you have any questions or comments about our illustration or our website, please feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our illustration or our website, please feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 -->

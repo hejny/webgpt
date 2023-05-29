@@ -10,11 +10,11 @@ Our company provides a unique platform for creatives to collaborate and bring th
 
 ## Features
 
-- Virtual reality environment
-- Collaboration tools
-- Minimalist color scheme
-- Futuristic graphics
-- User-friendly interface
+-   Virtual reality environment
+-   Collaboration tools
+-   Minimalist color scheme
+-   Futuristic graphics
+-   User-friendly interface
 
 ## User Stories
 
@@ -26,13 +26,13 @@ Our company provides a unique platform for creatives to collaborate and bring th
 
 Check out some of our recent projects:
 
-- Project A
-- Project B
-- Project C
+-   Project A
+-   Project B
+-   Project C
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @_virtualworkspace.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @\_virtualworkspace.
 
 <!--
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,6 +91,6 @@ Check out some of our recent projects:
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @_virtualworkspace.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @_virtualworkspace.
 
 -->

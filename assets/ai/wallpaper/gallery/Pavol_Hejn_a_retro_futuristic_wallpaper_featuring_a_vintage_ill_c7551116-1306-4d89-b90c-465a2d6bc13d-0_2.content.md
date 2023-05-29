@@ -6,10 +6,10 @@ Elevate your creative workspace with a stunning retro-futuristic robot design th
 
 ## Features
 
-- High-quality resolution for a crisp and clear display
-- Available in various sizes to fit your space perfectly
-- Durable and long-lasting material for years of enjoyment
-- Unique design that sparks creativity and imagination
+-   High-quality resolution for a crisp and clear display
+-   Available in various sizes to fit your space perfectly
+-   Durable and long-lasting material for years of enjoyment
+-   Unique design that sparks creativity and imagination
 
 ## User Stories
 
@@ -21,12 +21,12 @@ Elevate your creative workspace with a stunning retro-futuristic robot design th
 
 Looking for more ways to elevate your creative workspace? Check out these resources for inspiration and ideas:
 
-- [10 Tips for Designing Your Home Office](#)
-- [How to Create a Productive and Inspiring Workspace](#)
+-   [10 Tips for Designing Your Home Office](#)
+-   [How to Create a Productive and Inspiring Workspace](#)
 
 ## Contact Us
 
-Have questions about our retro-futuristic robot design or need help choosing the right size for your space? Our team is here to help! Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our retro-futuristic robot design or need help choosing the right size for your space? Our team is here to help! Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Transform your workspace today with this one-of-a-kind retro-futuristic robot design. Order now and take your creativity to the next level!
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ Check out these resources for more information on how to create the ultimate cre
 
 ## Contact Us
 
-Have questions about our retro-futuristic robot wallpaper or need help with installation? Our team is here to help! Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our retro-futuristic robot wallpaper or need help with installation? Our team is here to help! Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Transform your workspace today with this one-of-a-kind retro-futuristic robot wallpaper. Order now and take your creativity to the next level!
 
@@ -121,7 +121,7 @@ Looking for more ways to elevate your creative workspace? Check out these resour
 
 ## Contact Us
 
-Have questions about our retro-futuristic robot design or need help choosing the right size for your space? Our team is here to help! Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our retro-futuristic robot design or need help choosing the right size for your space? Our team is here to help! Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Transform your workspace today with this one-of-a-kind retro-futuristic robot design. Order now and take your creativity to the next level!
 

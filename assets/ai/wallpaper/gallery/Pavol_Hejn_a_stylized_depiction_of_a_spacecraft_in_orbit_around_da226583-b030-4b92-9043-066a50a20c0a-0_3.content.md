@@ -34,7 +34,7 @@ Looking for more information about space? Check out our resources section for ar
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] or follow us on social media:
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on social media:
 
 -   Twitter: @SpaceOdyssey
 -   Facebook: @SpaceOdysseyPage
@@ -99,7 +99,7 @@ Looking for more information about space? Check out our resources section for ar
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] or follow us on social media:
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on social media:
 
 - Twitter: @SpaceOdyssey
 - Facebook: @SpaceOdysseyPage

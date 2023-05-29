@@ -26,13 +26,13 @@ Here are some user stories from our satisfied customers who have used our Robot 
 
 If you're interested in learning more about productivity and how to stay focused while working, check out these helpful resources:
 
-- [10 Tips for Staying Focused While Working from Home](#)
-- [The Pomodoro Technique: A Complete Guide](#)
-- [How to Create a Productive Workspace at Home](#)
+-   [10 Tips for Staying Focused While Working from Home](#)
+-   [The Pomodoro Technique: A Complete Guide](#)
+-   [How to Create a Productive Workspace at Home](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our Robot Arm Background, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or feedback about our Robot Arm Background, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 <!--
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ If you're interested in learning more about productivity and how to stay focused
 
 ## Contact Us
 
-If you have any questions or feedback about our Robot Arm Wallpaper, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or feedback about our Robot Arm Wallpaper, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -135,7 +135,7 @@ If you're interested in learning more about productivity and how to stay focused
 
 ## Contact Us
 
-If you have any questions or feedback about our Robot Arm Background, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or feedback about our Robot Arm Background, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -179,7 +179,7 @@ If you're interested in learning more about productivity and how to stay focused
 
 ## Contact Us
 
-If you have any questions or feedback about our Robot Arm Background, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or feedback about our Robot Arm Background, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -223,7 +223,7 @@ If you're interested in learning more about productivity and how to stay focused
 
 ## Contact Us
 
-If you have any questions or feedback about our Robot Arm Background, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or feedback about our Robot Arm Background, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---

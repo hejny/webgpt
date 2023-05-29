@@ -1508,7 +1508,7 @@ a.button {
     padding: 0;
     margin: -3px;
 
-    /* !!! Emojis should be font-sized*/
+    /* TODO: !! Emojis should be font-sized*/
 }
 
 .button.button-featured:hover .emoji {

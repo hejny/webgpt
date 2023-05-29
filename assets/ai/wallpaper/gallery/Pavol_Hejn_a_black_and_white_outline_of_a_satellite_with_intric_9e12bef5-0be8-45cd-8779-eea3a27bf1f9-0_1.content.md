@@ -12,22 +12,22 @@ Our team is passionate about space exploration and the endless possibilities it 
 
 We love hearing from our users about how they have been inspired by space exploration. Here are some stories from our community:
 
-- "I've always been fascinated by space, but after discovering this website, I've become even more interested in the technical aspects of space exploration." - John D.
-- "The background on this website perfectly captures the essence of space exploration. It reminds me of the beauty and mystery of space every time I visit." - Sarah T.
-- "Thanks to this website, I've learned so much about the history of space exploration and the incredible achievements of scientists and engineers." - Michael S.
+-   "I've always been fascinated by space, but after discovering this website, I've become even more interested in the technical aspects of space exploration." - John D.
+-   "The background on this website perfectly captures the essence of space exploration. It reminds me of the beauty and mystery of space every time I visit." - Sarah T.
+-   "Thanks to this website, I've learned so much about the history of space exploration and the incredible achievements of scientists and engineers." - Michael S.
 
 ## Resources
 
 If you're interested in learning more about space exploration, check out these resources:
 
-- [NASA](#)
-- [SpaceX](#)
-- [European Space Agency](#)
-- [Space.com](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [European Space Agency](#)
+-   [Space.com](#)
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ If you're interested in learning more about space exploration, check out these r
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -128,7 +128,7 @@ If you're interested in learning more about space exploration, check out these r
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

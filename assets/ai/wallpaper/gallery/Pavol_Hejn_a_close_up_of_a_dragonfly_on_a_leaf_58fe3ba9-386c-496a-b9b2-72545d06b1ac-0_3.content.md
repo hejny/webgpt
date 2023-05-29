@@ -16,21 +16,21 @@ Research has shown that being surrounded by nature has a positive impact on our 
 
 Here are some stories from our customers who have used our backgrounds:
 
-- "The dragonfly background has transformed my workspace. It reminds me of the beauty of nature and helps me stay calm during stressful times."
-- "I love the detail in the dragonfly background. It creates a peaceful atmosphere that helps me focus better on my work."
-- "The background has helped me create a more professional-looking workspace that inspires creativity."
+-   "The dragonfly background has transformed my workspace. It reminds me of the beauty of nature and helps me stay calm during stressful times."
+-   "I love the detail in the dragonfly background. It creates a peaceful atmosphere that helps me focus better on my work."
+-   "The background has helped me create a more professional-looking workspace that inspires creativity."
 
 ## References
 
 If you're interested in learning more about the benefits of nature on mental health, here are some resources:
 
-- [The Mental Health Benefits of Nature Exposure](#)
-- [Nature and Mental Health: An Overview](#)
-- [The Science Behind Biophilic Design](#)
+-   [The Mental Health Benefits of Nature Exposure](#)
+-   [Nature and Mental Health: An Overview](#)
+-   [The Science Behind Biophilic Design](#)
 
 ## Contact Us
 
-If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at [email protected] or by phone at 555-1234.
+If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our nature-inspired backgrounds for your workspace. We hope they bring you the same sense of calm and focus that they have brought to our other customers.
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at [email protected] or by phone at 555-1234.
+If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our nature-inspired wallpapers for your workspace. We hope they bring you the same sense of calm and focus that they have brought to our other customers.
 
@@ -133,7 +133,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at [email protected] or by phone at 555-1234.
+If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our nature-inspired backgrounds for your workspace. We hope they bring you the same sense of calm and focus that they have brought to our other customers.
 
@@ -177,7 +177,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at [email protected] or by phone at 555-1234.
+If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our nature-inspired backgrounds for your workspace. We hope they bring you the same sense of calm and focus that they have brought to our other customers.
 
@@ -221,7 +221,7 @@ If you're interested in learning more about the benefits of nature on mental hea
 
 ## Contact Us
 
-If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at [email protected] or by phone at 555-1234.
+If you have any questions or would like to place an order, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our nature-inspired backgrounds for your workspace. We hope they bring you the same sense of calm and focus that they have brought to our other customers.
 

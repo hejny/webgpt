@@ -10,10 +10,10 @@ Our background is not just a pretty addition, it's a tool for productivity. The 
 
 ## Features
 
-- Abstract illustration of a futuristic data visualization
-- Sleek and modern graphics
-- Minimalist color scheme
-- High-quality resolution
+-   Abstract illustration of a futuristic data visualization
+-   Sleek and modern graphics
+-   Minimalist color scheme
+-   High-quality resolution
 
 ## User Stories
 
@@ -27,12 +27,12 @@ Our background has been used by various businesses and organizations, including:
 
 Check out these resources to learn more about the benefits of using data-driven decision-making in your business:
 
-- [Forbes: How Data-Driven Decision Making Is Changing Business](#)
-- [Harvard Business Review: Why Every Organization Needs an Augmented Reality Strategy](#)
+-   [Forbes: How Data-Driven Decision Making Is Changing Business](#)
+-   [Harvard Business Review: Why Every Organization Needs an Augmented Reality Strategy](#)
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our futuristic data visualization background, please contact us at [email protected] or through our social media channels.
+If you have any questions or would like to learn more about our futuristic data visualization background, please contact us at me@pavolhejny.com or through our social media channels.
 
 <!--
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +61,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Future Analytics Background for Your Data-Driven Business
 
-Welcome to our website, where we provide you with the perfect background for your data-driven business needs. Our wallpaper features an abstract illustration of a futuristic data visualization, with sleek and modern graphics and a minimalist color scheme. 
+Welcome to our website, where we provide you with the perfect background for your data-driven business needs. Our wallpaper features an abstract illustration of a futuristic data visualization, with sleek and modern graphics and a minimalist color scheme.
 
 ## Why Choose Our Future Analytics Wallpaper?
 
@@ -91,7 +91,7 @@ Check out these resources to learn more about the benefits of using data-driven 
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our future analytics wallpaper, please don't hesitate to contact us at [email protected] or through our social media channels.
+If you have any questions or would like to learn more about our future analytics wallpaper, please don't hesitate to contact us at me@pavolhejny.com or through our social media channels.
 
 
 ---
@@ -135,7 +135,7 @@ Check out these resources to learn more about the benefits of using data-driven 
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our futuristic data visualization wallpaper, please don't hesitate to contact us at [email protected] or through our social media channels.
+If you have any questions or would like to learn more about our futuristic data visualization wallpaper, please don't hesitate to contact us at me@pavolhejny.com or through our social media channels.
 
 
 ---
@@ -179,7 +179,7 @@ Check out these resources to learn more about the benefits of using data-driven 
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our futuristic data visualization background, please don't hesitate to contact us at [email protected] or through our social media channels.
+If you have any questions or would like to learn more about our futuristic data visualization background, please don't hesitate to contact us at me@pavolhejny.com or through our social media channels.
 
 
 ---
@@ -223,7 +223,7 @@ Check out these resources to learn more about the benefits of using data-driven 
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our futuristic data visualization background, please contact us at [email protected] or through our social media channels.
+If you have any questions or would like to learn more about our futuristic data visualization background, please contact us at me@pavolhejny.com or through our social media channels.
 
 
 ---

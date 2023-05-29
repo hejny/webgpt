@@ -36,7 +36,7 @@ Looking for more information? Check out our list of recommended resources:
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -101,7 +101,7 @@ Looking for more information? Check out our list of recommended resources:
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -151,7 +151,7 @@ Looking for more information? Check out our list of recommended resources:
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

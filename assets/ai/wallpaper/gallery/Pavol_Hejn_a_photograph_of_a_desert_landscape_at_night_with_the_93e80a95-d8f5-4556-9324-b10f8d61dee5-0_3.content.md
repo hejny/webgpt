@@ -6,9 +6,9 @@ Looking for a way to add some magic to your device's background? Our Desert Nigh
 
 ## Why Choose Our Desert Nights Image?
 
-- Unique design: Unlike generic images that can be found anywhere online, our Desert Nights image is a one-of-a-kind design that will make your device stand out from the crowd.
-- Relaxing atmosphere: The peaceful beauty of the desert landscape and starry sky creates a calming atmosphere that can help you unwind after a long day.
-- High-quality resolution: Our image is created using high-resolution photography, ensuring that every detail of the desert landscape and starry sky is captured in stunning clarity.
+-   Unique design: Unlike generic images that can be found anywhere online, our Desert Nights image is a one-of-a-kind design that will make your device stand out from the crowd.
+-   Relaxing atmosphere: The peaceful beauty of the desert landscape and starry sky creates a calming atmosphere that can help you unwind after a long day.
+-   High-quality resolution: Our image is created using high-resolution photography, ensuring that every detail of the desert landscape and starry sky is captured in stunning clarity.
 
 ## How to Use Our Image
 
@@ -24,13 +24,13 @@ Using our Desert Nights image is easy! Simply download the image and set it as y
 
 Want to learn more about the beauty of the desert at night? Check out these resources:
 
-- National Geographic: [Desert Nightlife](#)
-- NASA: [Stargazing in the Desert](#)
-- Lonely Planet: [The Best Places to See the Stars](#)
+-   National Geographic: [Desert Nightlife](#)
+-   NASA: [Stargazing in the Desert](#)
+-   Lonely Planet: [The Best Places to See the Stars](#)
 
 ## Contact Us
 
-If you have any questions or comments about our Desert Nights image, we'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+If you have any questions or comments about our Desert Nights image, we'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ Want to learn more about the beauty of the desert at night? Check out these reso
 
 ## Contact Us
 
-If you have any questions or comments about our Night Sky Wallpaper, we'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+If you have any questions or comments about our Night Sky Wallpaper, we'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -137,7 +137,7 @@ Want to learn more about the beauty of the desert at night? Check out these reso
 
 ## Contact Us
 
-If you have any questions or comments about our Desert Nights image, we'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+If you have any questions or comments about our Desert Nights image, we'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

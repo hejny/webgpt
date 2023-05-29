@@ -31,7 +31,7 @@ Want to learn more about space exploration and the mysteries of the universe? Ch
 
 ## Contact Us
 
-Have questions or feedback about our wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -93,7 +93,7 @@ Want to learn more about glaciers and their impact on the environment? Check out
 
 ## Contact Us
 
-Have questions or feedback about our wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -140,7 +140,7 @@ Want to learn more about space exploration and the mysteries of the universe? Ch
 
 ## Contact Us
 
-Have questions or feedback about our wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

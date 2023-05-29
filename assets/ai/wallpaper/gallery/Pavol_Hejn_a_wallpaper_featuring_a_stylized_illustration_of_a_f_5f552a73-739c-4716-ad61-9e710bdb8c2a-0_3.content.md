@@ -34,7 +34,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at [email protected] or via our social media channels:
+If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at me@pavolhejny.com or via our social media channels:
 
 -   Twitter: [@ProductivityHQ](#)
 -   Facebook: [@ProductivityHQ](#)
@@ -99,7 +99,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at [email protected] or via our social media channels:
+If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at me@pavolhejny.com or via our social media channels:
 
 - Twitter: [@ProductivityHQ](#)
 - Facebook: [@ProductivityHQ](#)
@@ -149,7 +149,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at [email protected] or via our social media channels:
+If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at me@pavolhejny.com or via our social media channels:
 
 - Twitter: [@ProductivityHQ](#)
 - Facebook: [@ProductivityHQ](#)

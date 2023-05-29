@@ -10,10 +10,10 @@ Our digital to-do list desktop background features a simple graphic of a customi
 
 Here are some of the key features of our digital to-do list desktop background:
 
-- Customizable calendar: Set important dates and deadlines on the calendar to keep track of your schedule.
-- To-do list: Keep track of your daily tasks and prioritize them based on their importance.
-- Notes section: Jot down ideas, thoughts, and reminders to keep yourself organized.
-- Reminders: Set reminders for important events or tasks to ensure that nothing falls through the cracks.
+-   Customizable calendar: Set important dates and deadlines on the calendar to keep track of your schedule.
+-   To-do list: Keep track of your daily tasks and prioritize them based on their importance.
+-   Notes section: Jot down ideas, thoughts, and reminders to keep yourself organized.
+-   Reminders: Set reminders for important events or tasks to ensure that nothing falls through the cracks.
 
 ## How to Use
 
@@ -31,13 +31,13 @@ Here are some stories from our users who have found success using a digital to-d
 
 If you're interested in learning more about productivity and time management, check out these resources:
 
-- [The 7 Habits of Highly Effective People](#)
-- [Getting Things Done: The Art of Stress-Free Productivity](#)
-- [Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](#)
+-   [The 7 Habits of Highly Effective People](#)
+-   [Getting Things Done: The Art of Stress-Free Productivity](#)
+-   [Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones](#)
 
 ## Contact Us
 
-If you have any questions or feedback about using a digital to-do list desktop background, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for more productivity tips and tricks.
+If you have any questions or feedback about using a digital to-do list desktop background, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for more productivity tips and tricks.
 
 <!--
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -66,7 +66,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Boost Your Productivity with the Digital To-Do List Wallpaper
 
-Welcome to our productivity website, where we help you optimize your time and achieve your goals. One of our favorite tools for staying organized is our digital to-do list wallpaper. This simple graphic wallpaper features a customizable calendar and to-do list with space for notes and reminders. 
+Welcome to our productivity website, where we help you optimize your time and achieve your goals. One of our favorite tools for staying organized is our digital to-do list wallpaper. This simple graphic wallpaper features a customizable calendar and to-do list with space for notes and reminders.
 
 ## Features
 
@@ -99,7 +99,7 @@ If you're interested in learning more about productivity and time management, ch
 
 ## Contact Us
 
-If you have any questions or feedback about our digital to-do list wallpaper, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for more productivity tips and tricks.
+If you have any questions or feedback about our digital to-do list wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for more productivity tips and tricks.
 
 
 ---
@@ -146,7 +146,7 @@ If you're interested in learning more about productivity and time management, ch
 
 ## Contact Us
 
-If you have any questions or feedback about using a digital to-do list, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for more productivity tips and tricks.
+If you have any questions or feedback about using a digital to-do list, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for more productivity tips and tricks.
 
 
 ---
@@ -195,7 +195,7 @@ If you're interested in learning more about productivity and time management, ch
 
 ## Contact Us
 
-If you have any questions or feedback about using a digital to-do list background, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for more productivity tips and tricks.
+If you have any questions or feedback about using a digital to-do list background, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for more productivity tips and tricks.
 
 
 ---
@@ -244,7 +244,7 @@ If you're interested in learning more about productivity and time management, ch
 
 ## Contact Us
 
-If you have any questions or feedback about using a digital to-do list desktop background, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for more productivity tips and tricks.
+If you have any questions or feedback about using a digital to-do list desktop background, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for more productivity tips and tricks.
 
 
 ---

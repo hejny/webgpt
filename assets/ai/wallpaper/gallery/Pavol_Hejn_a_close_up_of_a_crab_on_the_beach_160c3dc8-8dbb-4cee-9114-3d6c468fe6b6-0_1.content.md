@@ -6,10 +6,10 @@ Transform your space into a seaside oasis with our Coastal Vibes background. Thi
 
 ## Features
 
-- High-quality, durable material
-- Easy to use and apply without damaging walls
-- Available in a variety of sizes to fit any space
-- Perfect for adding a touch of coastal charm to any room
+-   High-quality, durable material
+-   Easy to use and apply without damaging walls
+-   Available in a variety of sizes to fit any space
+-   Perfect for adding a touch of coastal charm to any room
 
 ## Inspiration
 
@@ -25,9 +25,9 @@ Our Coastal Vibes background is inspired by the natural beauty of the coast. The
 
 Want to learn more about our Coastal Vibes background? Check out these resources:
 
-- [Installation Guide](#installation-guide)
-- [FAQs](#faqs)
-- [Contact Us](#contact-us)
+-   [Installation Guide](#installation-guide)
+-   [FAQs](#faqs)
+-   [Contact Us](#contact-us)
 
 ## Installation Guide
 
@@ -52,7 +52,7 @@ Yes! Contact us with your wall measurements and we'll create a custom-sized back
 
 ## Contact Us
 
-Have questions about our Coastal Vibes background? Need help with installation or ordering? Our customer service team is here to help! Contact us at [email protected] or call us at 1-800-555-1234.
+Have questions about our Coastal Vibes background? Need help with installation or ordering? Our customer service team is here to help! Contact us at me@pavolhejny.com or call us at 1-800-555-1234.
 
 <!--
 
@@ -62,10 +62,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -131,7 +131,7 @@ Yes! Contact us with your wall measurements and we'll create a custom-sized wall
 
 ## Contact Us
 
-Have questions about our Coastal Vibes Wallpaper? Need help with installation or ordering? Our customer service team is here to help! Contact us at [email protected] or call us at 1-800-555-1234.
+Have questions about our Coastal Vibes Wallpaper? Need help with installation or ordering? Our customer service team is here to help! Contact us at me@pavolhejny.com or call us at 1-800-555-1234.
 
 
 ---
@@ -195,6 +195,6 @@ Yes! Contact us with your wall measurements and we'll create a custom-sized back
 
 ## Contact Us
 
-Have questions about our Coastal Vibes background? Need help with installation or ordering? Our customer service team is here to help! Contact us at [email protected] or call us at 1-800-555-1234.
+Have questions about our Coastal Vibes background? Need help with installation or ordering? Our customer service team is here to help! Contact us at me@pavolhejny.com or call us at 1-800-555-1234.
 
 -->

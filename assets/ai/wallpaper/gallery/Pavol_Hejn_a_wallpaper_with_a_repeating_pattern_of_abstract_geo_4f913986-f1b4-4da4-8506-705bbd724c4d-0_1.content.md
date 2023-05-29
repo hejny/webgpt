@@ -6,10 +6,10 @@ Welcome to our website, where we provide resources and inspiration for creating 
 
 ## Why Choose Abstract Geometric Patterns?
 
-- Adds visual interest without being distracting
-- Complements a wide range of color schemes
-- Provides a modern and professional look
-- Helps to unify the design elements of your website
+-   Adds visual interest without being distracting
+-   Complements a wide range of color schemes
+-   Provides a modern and professional look
+-   Helps to unify the design elements of your website
 
 ## User Stories
 
@@ -23,13 +23,13 @@ Our users have reported that using abstract geometric patterns has helped them t
 
 Looking for more inspiration? Check out these resources:
 
-- [Web Design Trends 2023](#)
-- [Color Schemes for Modern Websites](#)
-- [Best Practices for Website Backgrounds](#)
+-   [Web Design Trends 2023](#)
+-   [Color Schemes for Modern Websites](#)
+-   [Best Practices for Website Backgrounds](#)
 
 ## Contact Us
 
-Have questions or need help with your website design? We're here to help! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or need help with your website design? We're here to help! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for choosing abstract geometric patterns to elevate your website design. We can't wait to see what you create!
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Have questions or need help with your website design? We're here to help! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or need help with your website design? We're here to help! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for choosing our abstract geometric wallpaper for your website background. We can't wait to see what you create!
 
@@ -130,7 +130,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Have questions or need help with your website design? We're here to help! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or need help with your website design? We're here to help! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for choosing abstract geometric patterns to elevate your website design. We can't wait to see what you create!
 

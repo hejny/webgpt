@@ -28,7 +28,7 @@ If you're interested in learning more about the future of living and how you can
 
 ## Contact Us
 
-If you have any questions or comments about our illustration or our mission, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for the latest updates and news.
+If you have any questions or comments about our illustration or our mission, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and news.
 
 <!--
 
@@ -83,7 +83,7 @@ If you're interested in learning more about the future of living and how you can
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper or our mission, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for the latest updates and news.
+If you have any questions or comments about our wallpaper or our mission, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and news.
 
 
 ---
@@ -123,7 +123,7 @@ If you're interested in learning more about the future of living and how you can
 
 ## Contact Us
 
-If you have any questions or comments about our illustration or our mission, we'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for the latest updates and news.
+If you have any questions or comments about our illustration or our mission, we'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and news.
 
 
 ---

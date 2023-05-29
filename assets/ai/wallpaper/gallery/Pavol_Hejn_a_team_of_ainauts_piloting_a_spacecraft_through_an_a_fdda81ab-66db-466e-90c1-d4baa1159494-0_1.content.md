@@ -28,7 +28,7 @@ Looking for more information about space exploration? Check out our resources se
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or by filling out the contact form on our website.
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 ## References
 
@@ -96,7 +96,7 @@ Looking for more information about space exploration? Check out our resources se
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or by filling out the contact form on our website.
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 ## References
 

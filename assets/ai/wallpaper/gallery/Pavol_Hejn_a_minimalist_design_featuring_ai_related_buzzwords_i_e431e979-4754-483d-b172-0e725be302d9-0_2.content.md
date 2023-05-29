@@ -33,7 +33,7 @@ If you're interested in learning more about AI and its related buzzwords, here a
 
 ## Contact Us
 
-If you have any questions or concerns about our AI buzzwords wallpaper, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or concerns about our AI buzzwords wallpaper, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our AI buzzwords wallpaper to elevate your workspace. We hope it inspires you to achieve great things!
 
@@ -93,7 +93,7 @@ If you're interested in learning more about AI and its related buzzwords, here a
 
 ## Contact Us
 
-If you have any questions or concerns about our AI buzzwords wallpaper, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or concerns about our AI buzzwords wallpaper, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our AI buzzwords wallpaper for your workspace. We hope it inspires you to achieve great things!
 
@@ -138,7 +138,7 @@ If you're interested in learning more about AI and its related buzzwords, here a
 
 ## Contact Us
 
-If you have any questions or concerns about our AI buzzwords wallpaper, please don't hesitate to contact us. You can reach us via email at [email protected] or by phone at 555-1234.
+If you have any questions or concerns about our AI buzzwords wallpaper, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for considering our AI buzzwords wallpaper to elevate your workspace. We hope it inspires you to achieve great things!
 

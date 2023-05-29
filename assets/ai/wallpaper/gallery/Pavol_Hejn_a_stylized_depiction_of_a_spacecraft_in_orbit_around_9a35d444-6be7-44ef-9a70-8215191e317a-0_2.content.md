@@ -33,7 +33,7 @@ If you want to learn more about space exploration and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Cosmic Adventures background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels:
+If you have any questions or comments about our Cosmic Adventures background, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels:
 
 -   Twitter: https://twitter.com/cosmicadventures
 -   Facebook: https://www.facebook.com/cosmicadventures
@@ -98,7 +98,7 @@ If you want to learn more about space exploration and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Cosmic Adventures Wallpaper, we'd love to hear from you! You can reach us at [email protected] or through our social media channels:
+If you have any questions or comments about our Cosmic Adventures Wallpaper, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: https://twitter.com/cosmicadventures
 - Facebook: https://www.facebook.com/cosmicadventures
@@ -150,7 +150,7 @@ If you want to learn more about space exploration and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Cosmic Adventures Background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels:
+If you have any questions or comments about our Cosmic Adventures Background, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: https://twitter.com/cosmicadventures
 - Facebook: https://www.facebook.com/cosmicadventures
@@ -200,7 +200,7 @@ If you want to learn more about space exploration and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Cosmic Adventures Background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels:
+If you have any questions or comments about our Cosmic Adventures Background, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: https://twitter.com/cosmicadventures
 - Facebook: https://www.facebook.com/cosmicadventures
@@ -250,7 +250,7 @@ If you want to learn more about space exploration and astronomy, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Cosmic Adventures background, we'd love to hear from you! You can reach us at [email protected] or through our social media channels:
+If you have any questions or comments about our Cosmic Adventures background, we'd love to hear from you! You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: https://twitter.com/cosmicadventures
 - Facebook: https://www.facebook.com/cosmicadventures

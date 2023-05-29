@@ -8,19 +8,19 @@ Welcome to our productivity website, where we provide tools and resources to hel
 
 Our background features a clean and minimalistic design, with space for notes and reminders. Here are some of the key features:
 
-- Simple graphic of a digital calendar or to-do list
-- Space for notes and reminders
-- Clean and minimalistic design
-- High-quality resolution for optimal display
+-   Simple graphic of a digital calendar or to-do list
+-   Space for notes and reminders
+-   Clean and minimalistic design
+-   High-quality resolution for optimal display
 
 ## Benefits
 
 Using our digital to-do list background can provide several benefits, including:
 
-- Increased productivity and organization
-- Reduced stress and anxiety from forgetting important tasks
-- Improved time management skills
-- Enhanced focus and concentration
+-   Increased productivity and organization
+-   Reduced stress and anxiety from forgetting important tasks
+-   Improved time management skills
+-   Enhanced focus and concentration
 
 ## User Stories
 
@@ -38,13 +38,13 @@ To use our digital to-do list background, simply download the image and set it a
 
 Looking for more tips and tricks to boost your productivity? Check out these helpful resources:
 
-- [10 Tips for Staying Productive While Working from Home](#)
-- [The Pomodoro Technique: A Simple Method for Boosting Productivity](#)
-- [5 Habits of Highly Productive People](#)
+-   [10 Tips for Staying Productive While Working from Home](#)
+-   [The Pomodoro Technique: A Simple Method for Boosting Productivity](#)
+-   [5 Habits of Highly Productive People](#)
 
 ## Contact Us
 
-Have any questions or feedback? Contact us at [email protected] and we'll get back to you as soon as possible.
+Have any questions or feedback? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -58,10 +58,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -119,7 +119,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -179,7 +179,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -239,7 +239,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-Have any questions or feedback? Contact us at [email protected] and we'll get back to you as soon as possible.
+Have any questions or feedback? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -299,7 +299,7 @@ Looking for more tips and tricks to boost your productivity? Check out these hel
 
 ## Contact Us
 
-Have any questions or feedback? Contact us at [email protected] and we'll get back to you as soon as possible.
+Have any questions or feedback? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

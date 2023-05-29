@@ -32,18 +32,18 @@ At our website, we strive to provide you with the latest news and insights into 
 
 Looking for more great tech content? Check out some of our favorite resources:
 
-- [TechCrunch](#)
-- [Wired](#)
-- [The Verge](#)
-- [Ars Technica](#)
+-   [TechCrunch](#)
+-   [Wired](#)
+-   [The Verge](#)
+-   [Ars Technica](#)
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or follow us on social media:
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media:
 
-- Twitter: @TechEnthusiast
-- Instagram: @TechEnthusiast
-- Facebook: /TechEnthusiast
+-   Twitter: @TechEnthusiast
+-   Instagram: @TechEnthusiast
+-   Facebook: /TechEnthusiast
 
 <!--
 
@@ -53,10 +53,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -105,7 +105,7 @@ Looking for more great tech content? Check out some of our favorite resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or follow us on social media:
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media:
 
 - Twitter: @TechEnthusiast
 - Instagram: @TechEnthusiast
@@ -156,7 +156,7 @@ Looking for more great tech content? Check out some of our favorite resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or follow us on social media:
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media:
 
 - Twitter: @TechEnthusiast
 - Instagram: @TechEnthusiast
@@ -211,7 +211,7 @@ Looking for more great tech content? Check out some of our favorite resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or follow us on social media:
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media:
 
 - Twitter: @TechEnthusiast
 - Instagram: @TechEnthusiast

@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -30,10 +30,10 @@ We are passionate about vintage postcards and have been collecting them for year
 
 Our collection includes postcards from all over the world, from Europe to Asia, from Africa to America. Each postcard has its own charm and character, and together they create a beautiful mosaic of cultures and traditions. Some of our favorite postcards include:
 
-- A postcard from Paris, showing the Eiffel Tower under construction
-- A postcard from Tokyo, depicting a traditional Japanese garden
-- A postcard from Cairo, featuring the Pyramids of Giza
-- A postcard from New York, showing the Statue of Liberty in all her glory
+-   A postcard from Paris, showing the Eiffel Tower under construction
+-   A postcard from Tokyo, depicting a traditional Japanese garden
+-   A postcard from Cairo, featuring the Pyramids of Giza
+-   A postcard from New York, showing the Statue of Liberty in all her glory
 
 ## User Stories
 
@@ -47,12 +47,12 @@ Our collection has inspired many people to travel and explore the world. Here ar
 
 If you're interested in learning more about vintage postcards, here are some resources we recommend:
 
-- [Postcardy](#), a website dedicated to postcard collecting
-- [The Postcard Album](#), a blog about vintage postcards and their history
-- [Postcard History](#), a book by Tom Phillips that explores the history of postcards
+-   [Postcardy](#), a website dedicated to postcard collecting
+-   [The Postcard Album](#), a blog about vintage postcards and their history
+-   [Postcard History](#), a book by Tom Phillips that explores the history of postcards
 
 ## Contact Us
 
-If you have any questions or comments, we would love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) for updates and news about our collection.
+If you have any questions or comments, we would love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news about our collection.
 
 Thank you for visiting our website and we hope you enjoy our vintage postcards as much as we do!

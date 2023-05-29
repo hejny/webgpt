@@ -22,12 +22,12 @@ Our background is available in various resolutions, making it easy to install on
 
 Check out these articles for more inspiration on how to elevate your digital workspace:
 
-- [10 Ways to Create a Productive Home Office](#)
-- [How to Organize Your Digital Workspace for Maximum Efficiency](#)
+-   [10 Ways to Create a Productive Home Office](#)
+-   [How to Organize Your Digital Workspace for Maximum Efficiency](#)
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] or follow us on Twitter @workspaceenhance.
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com or follow us on Twitter @workspaceenhance.
 
 Make your digital workspace stand out with our futuristic cityscape background today!
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +83,7 @@ Check out these articles for more inspiration on how to elevate your workspace:
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] or follow us on Twitter @workspaceenhance.
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com or follow us on Twitter @workspaceenhance.
 
 Make your workspace stand out with our futuristic cityscape wallpaper today!
 
@@ -124,7 +124,7 @@ Check out these articles for more inspiration on how to elevate your workspace:
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] or follow us on Twitter @workspaceenhance.
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com or follow us on Twitter @workspaceenhance.
 
 Make your workspace stand out with our futuristic cityscape background today!
 
@@ -165,7 +165,7 @@ Check out these articles for more inspiration on how to elevate your digital wor
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] or follow us on Twitter @workspaceenhance.
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com or follow us on Twitter @workspaceenhance.
 
 Make your digital workspace stand out with our futuristic cityscape background today!
 
@@ -206,7 +206,7 @@ Check out these articles for more inspiration on how to elevate your digital wor
 
 ## Contact Us
 
-If you have any questions or concerns, feel free to reach out to us at [email protected] or follow us on Twitter @workspaceenhance.
+If you have any questions or concerns, feel free to reach out to us at me@pavolhejny.com or follow us on Twitter @workspaceenhance.
 
 Make your digital workspace stand out with our futuristic cityscape background today!
 

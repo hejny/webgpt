@@ -8,9 +8,9 @@ Welcome to our website, where we provide you with the tools and resources to cre
 
 A high-tech background can transform your workspace into a cutting-edge environment that inspires you to do your best work. Here are some reasons why you should consider using our high-tech background:
 
-- **Boost Creativity:** A high-tech background can stimulate your mind and inspire you to think outside the box.
-- **Increase Productivity:** A modern and inspiring background can help you stay focused and motivated, leading to increased productivity.
-- **Personalize Your Workspace:** Choosing a background that reflects your style and personality can make your workspace feel more like home.
+-   **Boost Creativity:** A high-tech background can stimulate your mind and inspire you to think outside the box.
+-   **Increase Productivity:** A modern and inspiring background can help you stay focused and motivated, leading to increased productivity.
+-   **Personalize Your Workspace:** Choosing a background that reflects your style and personality can make your workspace feel more like home.
 
 ## How to Use Our High-Tech Background
 
@@ -33,15 +33,15 @@ Our high-tech background has been used by many satisfied customers who love its 
 
 If you're interested in learning more about how to create a high-tech workspace, check out these resources:
 
-- [10 Tips for Creating a High-Tech Workspace](#)
-- [The Benefits of Using a High-Tech Background for Your Desktop](#)
+-   [10 Tips for Creating a High-Tech Workspace](#)
+-   [The Benefits of Using a High-Tech Background for Your Desktop](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our high-tech background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our high-tech background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
-- Twitter: @hightechworkspace
-- Instagram: @hightechworkspace
+-   Twitter: @hightechworkspace
+-   Instagram: @hightechworkspace
 
 Thank you for choosing our high-tech background to elevate your workspace!
 
@@ -53,10 +53,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -110,7 +110,7 @@ If you're interested in learning more about high-tech wallpapers and how they ca
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpaper, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our wallpaper, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: @high_tech_wallpapers
 - Instagram: @hightechwallpapers
@@ -165,7 +165,7 @@ If you're interested in learning more about how to create a high-tech workspace,
 
 ## Contact Us
 
-If you have any questions or feedback about our futuristic background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our futuristic background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: @hightechworkspace
 - Instagram: @hightechworkspace
@@ -220,7 +220,7 @@ If you're interested in learning more about how to create a high-tech workspace,
 
 ## Contact Us
 
-If you have any questions or feedback about our futuristic background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our futuristic background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: @hightechworkspace
 - Instagram: @hightechworkspace
@@ -275,7 +275,7 @@ If you're interested in learning more about how to create a high-tech workspace,
 
 ## Contact Us
 
-If you have any questions or feedback about our high-tech background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback about our high-tech background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: @hightechworkspace
 - Instagram: @hightechworkspace

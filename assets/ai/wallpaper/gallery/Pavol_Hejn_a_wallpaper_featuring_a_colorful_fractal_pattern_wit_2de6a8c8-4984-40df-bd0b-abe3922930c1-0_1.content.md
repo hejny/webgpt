@@ -10,9 +10,9 @@ Our colorful fractal backgrounds feature intricate lines and bold colors that ar
 
 ## User Stories
 
-- "I love using these backgrounds because they add some much-needed color and energy to my workday." - Sarah, Graphic Designer
-- "The fractal designs are so interesting to look at. They're a great way to keep myself motivated and engaged while I work." - Mark, Writer
-- "I've never seen backgrounds like these before. They definitely make my workspace stand out!" - Emily, Accountant
+-   "I love using these backgrounds because they add some much-needed color and energy to my workday." - Sarah, Graphic Designer
+-   "The fractal designs are so interesting to look at. They're a great way to keep myself motivated and engaged while I work." - Mark, Writer
+-   "I've never seen backgrounds like these before. They definitely make my workspace stand out!" - Emily, Accountant
 
 ## How to Download
 
@@ -22,13 +22,13 @@ To download our fractal backgrounds, simply right-click on the image and select 
 
 Looking for more ways to add some creativity to your workspace? Check out these resources:
 
-- [TED Talks on Creativity](#)
-- [CreativeLive Online Classes](#)
-- [99U - Insights on Making Ideas Happen](#)
+-   [TED Talks on Creativity](#)
+-   [CreativeLive Online Classes](#)
+-   [99U - Insights on Making Ideas Happen](#)
 
 ## Contact Us
 
-If you have any questions or comments about our fractal backgrounds, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our fractal backgrounds, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +83,7 @@ For more information about fractals and how they are used in art and design, che
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our wallpaper, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -123,7 +123,7 @@ Looking for more ways to boost your creativity? Check out these resources:
 
 ## Contact Us
 
-If you have any questions or comments about our fractal background, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our fractal background, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -163,7 +163,7 @@ Looking for more ways to add some creativity to your workspace? Check out these 
 
 ## Contact Us
 
-If you have any questions or comments about our fractal background, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our fractal background, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -203,7 +203,7 @@ Looking for more ways to add some creativity to your workspace? Check out these 
 
 ## Contact Us
 
-If you have any questions or comments about our fractal backgrounds, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our fractal backgrounds, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---

@@ -10,10 +10,10 @@ Our telescope background is more than just a beautiful image. It's a symbol of e
 
 Here are some other reasons why you should choose our telescope background:
 
-- High-quality resolution that looks great on any screen size
-- Free to download and use for personal or commercial purposes
-- Easy to install and customize to fit your preferences
-- Unique design that stands out from other generic backgrounds
+-   High-quality resolution that looks great on any screen size
+-   Free to download and use for personal or commercial purposes
+-   Easy to install and customize to fit your preferences
+-   Unique design that stands out from other generic backgrounds
 
 ## How to Download and Install Our Telescope Background
 
@@ -38,13 +38,13 @@ Our telescope background has been downloaded and used by people all over the wor
 
 If you're interested in learning more about telescopes and astronomy, here are some resources to check out:
 
-- [NASA's Telescope Basics](#)
-- [Sky & Telescope Magazine](#)
-- [Astronomy.com](#)
+-   [NASA's Telescope Basics](#)
+-   [Sky & Telescope Magazine](#)
+-   [Astronomy.com](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our telescope background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or feedback about our telescope background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing our telescope background!
 
@@ -56,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -117,7 +117,7 @@ If you're interested in learning more about telescopes and astronomy, here are s
 
 ## Contact Us
 
-If you have any questions or feedback about our telescope wallpaper background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or feedback about our telescope wallpaper background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing our telescope wallpaper background!
 
@@ -175,7 +175,7 @@ If you're interested in learning more about telescopes and astronomy, here are s
 
 ## Contact Us
 
-If you have any questions or feedback about our telescope background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or feedback about our telescope background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing our telescope background!
 

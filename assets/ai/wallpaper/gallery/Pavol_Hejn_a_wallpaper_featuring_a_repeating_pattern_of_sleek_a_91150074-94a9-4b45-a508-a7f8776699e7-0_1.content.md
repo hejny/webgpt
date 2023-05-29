@@ -12,9 +12,9 @@ In today's fast-paced world, traditional office spaces can no longer keep up wit
 
 Our background is designed to inspire you to create a digital workspace that is both functional and aesthetically pleasing. Here are some of its features:
 
-- Repeating pattern of digital devices: The sleek and modern design of the background is sure to impress anyone who sees it.
-- Gradient background: The gradient background adds depth and dimension to the background, making it stand out from other backgrounds.
-- High-quality resolution: The background is available in high-quality resolution, ensuring that it looks great on any device.
+-   Repeating pattern of digital devices: The sleek and modern design of the background is sure to impress anyone who sees it.
+-   Gradient background: The gradient background adds depth and dimension to the background, making it stand out from other backgrounds.
+-   High-quality resolution: The background is available in high-quality resolution, ensuring that it looks great on any device.
 
 ## User Stories
 
@@ -28,13 +28,13 @@ Here are some stories from our satisfied customers who have used our background 
 
 If you're interested in learning more about digital workspaces and how they can benefit your business, here are some resources that you might find helpful:
 
-- [10 Tips for Creating a Productive Digital Workspace](#)
-- [The Benefits of a Digital Workspace](#)
-- [How to Set Up Your Digital Workspace for Success](#)
+-   [10 Tips for Creating a Productive Digital Workspace](#)
+-   [The Benefits of a Digital Workspace](#)
+-   [How to Set Up Your Digital Workspace for Success](#)
 
 ## Contact Us
 
-If you have any questions about our background or digital workspaces in general, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at 555-1234.
+If you have any questions about our background or digital workspaces in general, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope that our digital workspace background inspires you to modernize your workspace with a digital edge!
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -97,7 +97,7 @@ If you're interested in learning more about digital workspaces, here are some re
 
 ## Contact Us
 
-If you have any questions about our wallpaper or digital workspaces in general, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at 555-1234.
+If you have any questions about our wallpaper or digital workspaces in general, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope that our digital workspace wallpaper inspires you to create a workspace that works for you!
 
@@ -145,7 +145,7 @@ If you're interested in learning more about digital workspaces and how they can 
 
 ## Contact Us
 
-If you have any questions about our background or digital workspaces in general, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at 555-1234.
+If you have any questions about our background or digital workspaces in general, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at 555-1234.
 
 Thank you for visiting our website, and we hope that our digital workspace background inspires you to modernize your workspace with a digital edge!
 

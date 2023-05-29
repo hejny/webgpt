@@ -35,7 +35,7 @@ If you're looking for more information on space exploration, we recommend checki
 
 ## Contact Us
 
-If you have any questions or comments about our website or the world of space exploration, please don't hesitate to get in touch! You can reach us at [email protected] or via our contact form: #contact-us.
+If you have any questions or comments about our website or the world of space exploration, please don't hesitate to get in touch! You can reach us at me@pavolhejny.com or via our contact form: #contact-us.
 
 <!--
 
@@ -97,7 +97,7 @@ If you're looking for more information on space exploration, we recommend checki
 
 ## Contact Us
 
-If you have any questions or comments about our website or the world of space exploration, please don't hesitate to get in touch! You can reach us at [email protected] or via our contact form: #contact-us.
+If you have any questions or comments about our website or the world of space exploration, please don't hesitate to get in touch! You can reach us at me@pavolhejny.com or via our contact form: #contact-us.
 
 
 ---
@@ -144,7 +144,7 @@ If you're looking for more information on space exploration, we recommend checki
 
 ## Contact Us
 
-If you have any questions or comments about our website or the world of space exploration, please don't hesitate to get in touch! You can reach us at [email protected] or via our contact form: #contact-us.
+If you have any questions or comments about our website or the world of space exploration, please don't hesitate to get in touch! You can reach us at me@pavolhejny.com or via our contact form: #contact-us.
 
 
 ---

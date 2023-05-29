@@ -34,4 +34,4 @@ At our core, we believe in collaboration and open Com<wbr>mu<wbr>ni<wbr>ca<wbr>t
 
 ## Join Us
 
-If you share our passion for AI and want to be a part of something truly groundbreaking, we would love to hear from you. Contact us at [email protected] to learn more about how you can get involved.
+If you share our passion for AI and want to be a part of something truly groundbreaking, we would love to hear from you. Contact us at me@pavolhejny.com to learn more about how you can get involved.

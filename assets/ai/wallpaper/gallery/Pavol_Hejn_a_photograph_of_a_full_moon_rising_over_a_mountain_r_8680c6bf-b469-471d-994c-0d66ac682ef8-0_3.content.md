@@ -34,7 +34,7 @@ We take pride in providing accurate and up-to-date information for our readers. 
 
 ## Contact Us
 
-If you have any questions or feedback, we would love to hear from you. Please feel free to reach out to us at [email protected]
+If you have any questions or feedback, we would love to hear from you. Please feel free to reach out to us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope our background inspires you to discover the mystical mountains!
 
@@ -89,7 +89,7 @@ We take pride in providing accurate and up-to-date information for our readers. 
 
 ## Contact Us
 
-If you have any questions or feedback, we would love to hear from you. Please feel free to reach out to us at [email protected]
+If you have any questions or feedback, we would love to hear from you. Please feel free to reach out to us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope our wallpaper inspires you to explore the mystical mountains!
 
@@ -137,7 +137,7 @@ We take pride in providing accurate and up-to-date information for our readers. 
 
 ## Contact Us
 
-If you have any questions or feedback, we would love to hear from you. Please feel free to reach out to us at [email protected]
+If you have any questions or feedback, we would love to hear from you. Please feel free to reach out to us at me@pavolhejny.com
 
 Thank you for visiting our website, and we hope our background inspires you to discover the mystical mountains!
 

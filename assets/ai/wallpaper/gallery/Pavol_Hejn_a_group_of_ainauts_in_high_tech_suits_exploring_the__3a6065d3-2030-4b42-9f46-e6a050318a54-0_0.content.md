@@ -16,24 +16,24 @@ Join us on an adventure like no other. Our experienced team will guide you throu
 
 Our users come from all walks of life, but they share a common passion for adventure and discovery. Here are some stories from our community:
 
-- "I've always been fascinated by space travel, and this website captures the thrill of exploration perfectly. Every time I read an article or watch a video, I feel like I'm part of the team." - John, 34
-- "As an artist, I find inspiration in the beauty of nature. This website reminds me that there is still so much we haven't seen yet, and it inspires me to create new worlds of my own." - Sarah, 27
-- "I work in a boring office job, but this website takes me to another world every time I visit. It's like a mini escape from reality." - Mark, 42
+-   "I've always been fascinated by space travel, and this website captures the thrill of exploration perfectly. Every time I read an article or watch a video, I feel like I'm part of the team." - John, 34
+-   "As an artist, I find inspiration in the beauty of nature. This website reminds me that there is still so much we haven't seen yet, and it inspires me to create new worlds of my own." - Sarah, 27
+-   "I work in a boring office job, but this website takes me to another world every time I visit. It's like a mini escape from reality." - Mark, 42
 
 ## Resources
 
 If you're interested in learning more about space exploration, here are some resources we recommend:
 
-- [NASA](#) - The official website of the National Aeronautics and Space Administration.
-- [Space.com](#) - A news and information website dedicated to space exploration.
-- [The Planetary Society](#) - A nonprofit organization dedicated to advancing space science and exploration.
+-   [NASA](#) - The official website of the National Aeronautics and Space Administration.
+-   [Space.com](#) - A news and information website dedicated to space exploration.
+-   [The Planetary Society](#) - A nonprofit organization dedicated to advancing space science and exploration.
 
 ## Contact Us
 
-If you have any questions or comments, we'd love to hear from you! You can reach us at [email protected] or on social media:
+If you have any questions or comments, we'd love to hear from you! You can reach us at me@pavolhejny.com or on social media:
 
-- Twitter: [@exploringworlds](#)
-- Instagram: [@exploringnewworlds](#)
+-   Twitter: [@exploringworlds](#)
+-   Instagram: [@exploringnewworlds](#)
 
 Thank you for visiting our website, and we hope you enjoy your journey with us!
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -92,7 +92,7 @@ If you're interested in learning more about space exploration, here are some res
 
 ## Contact Us
 
-If you have any questions or comments, we'd love to hear from you! You can reach us at [email protected] or on social media:
+If you have any questions or comments, we'd love to hear from you! You can reach us at me@pavolhejny.com or on social media:
 
 - Twitter: [@exploringworlds](#)
 - Instagram: [@exploringnewworlds](#)
@@ -139,7 +139,7 @@ If you're interested in learning more about space exploration, here are some res
 
 ## Contact Us
 
-If you have any questions or comments, we'd love to hear from you! You can reach us at [email protected] or on social media:
+If you have any questions or comments, we'd love to hear from you! You can reach us at me@pavolhejny.com or on social media:
 
 - Twitter: [@exploringworlds](#)
 - Instagram: [@exploringnewworlds](#)

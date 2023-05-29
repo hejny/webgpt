@@ -6,11 +6,11 @@ Looking to add some personality to your workspace? Our vintage robot wallpaper f
 
 ## Features
 
-- High-quality digital print
-- Non-woven paper material
-- Easy to install and remove
-- Available in multiple sizes
-- Perfect for accent walls or entire rooms
+-   High-quality digital print
+-   Non-woven paper material
+-   Easy to install and remove
+-   Available in multiple sizes
+-   Perfect for accent walls or entire rooms
 
 ## User Stories
 
@@ -30,12 +30,12 @@ Looking to add some personality to your workspace? Our vintage robot wallpaper f
 
 Check out these resources for more inspiration on how to incorporate retro-futuristic design into your workspace:
 
-- [The Retro-Futuristic World of Syd Mead](#)
-- [How to Create a Retro-Futuristic Workspace](#)
+-   [The Retro-Futuristic World of Syd Mead](#)
+-   [How to Create a Retro-Futuristic Workspace](#)
 
 ## Contact Us
 
-If you have any questions about our retro-futuristic robot wallpaper or need help with installation, please don't hesitate to contact us at [email protected] We're always happy to help!
+If you have any questions about our retro-futuristic robot wallpaper or need help with installation, please don't hesitate to contact us at me@pavolhejny.com We're always happy to help!
 
 <!--
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -97,7 +97,7 @@ Check out these resources for more inspiration on how to incorporate retro-futur
 
 ## Contact Us
 
-If you have any questions about our retro-futuristic robot wallpaper or need help with installation, please don't hesitate to contact us at [email protected] We're always happy to help!
+If you have any questions about our retro-futuristic robot wallpaper or need help with installation, please don't hesitate to contact us at me@pavolhejny.com We're always happy to help!
 
 
 ---
@@ -144,6 +144,6 @@ Check out these resources for more inspiration on how to incorporate retro-futur
 
 ## Contact Us
 
-If you have any questions about our retro-futuristic robot wallpaper or need help with installation, please don't hesitate to contact us at [email protected] We're always happy to help!
+If you have any questions about our retro-futuristic robot wallpaper or need help with installation, please don't hesitate to contact us at me@pavolhejny.com We're always happy to help!
 
 -->

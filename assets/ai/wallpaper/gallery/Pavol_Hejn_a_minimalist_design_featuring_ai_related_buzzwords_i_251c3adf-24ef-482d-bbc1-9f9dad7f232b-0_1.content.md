@@ -16,21 +16,21 @@ Not only does our AI buzzwords background look great, but it can also help inspi
 
 Here are just a few examples of how people have used our AI buzzwords background to inspire their work:
 
-- "I was struggling to come up with ideas for my next AI project, but then I saw the buzzwords background on my computer screen. Suddenly, everything clicked into place!"
-- "As a data scientist, I'm always looking for ways to stay up-to-date on the latest trends in AI. The buzzwords background helps me do just that."
-- "I love the minimalist design of the buzzwords background. It's a great way to add some personality to my phone without being too distracting."
+-   "I was struggling to come up with ideas for my next AI project, but then I saw the buzzwords background on my computer screen. Suddenly, everything clicked into place!"
+-   "As a data scientist, I'm always looking for ways to stay up-to-date on the latest trends in AI. The buzzwords background helps me do just that."
+-   "I love the minimalist design of the buzzwords background. It's a great way to add some personality to my phone without being too distracting."
 
 ## References
 
 If you're interested in learning more about the AI buzzwords featured on our background, check out these resources:
 
-- [The Ultimate Guide to Machine Learning](#)
-- [Neural Networks Explained](#)
-- [Artificial Intelligence: A Beginner's Guide](#)
+-   [The Ultimate Guide to Machine Learning](#)
+-   [Neural Networks Explained](#)
+-   [Artificial Intelligence: A Beginner's Guide](#)
 
 ## Contact Us
 
-Have a question or comment about our AI buzzwords background? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter at @aibuzzwords.
+Have a question or comment about our AI buzzwords background? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter at @aibuzzwords.
 
 ---
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -91,7 +91,7 @@ If you're interested in learning more about the AI buzzwords featured on our wal
 
 ## Contact Us
 
-Have a question or comment about our AI buzzwords wallpaper? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter at @aibuzzwords.
+Have a question or comment about our AI buzzwords wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter at @aibuzzwords.
 
 ---
 
@@ -137,7 +137,7 @@ If you're interested in learning more about the AI buzzwords featured on our bac
 
 ## Contact Us
 
-Have a question or comment about our AI buzzwords background? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter at @aibuzzwords.
+Have a question or comment about our AI buzzwords background? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter at @aibuzzwords.
 
 ---
 

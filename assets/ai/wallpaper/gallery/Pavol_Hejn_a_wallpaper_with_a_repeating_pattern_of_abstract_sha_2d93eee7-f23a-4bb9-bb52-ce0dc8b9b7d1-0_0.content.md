@@ -12,24 +12,24 @@ Our artwork is not just a simple design; it is a statement piece that will make 
 
 Our artwork has been used by many satisfied customers who love its edgy and futuristic look. Here are some user stories:
 
-- "I was looking for an abstract art that would match my cyberpunk-themed desktop setup, and this artwork was perfect!" - John
-- "The abstract shapes remind me of technology and innovation. It's a great artwork for anyone who loves tech." - Sarah
-- "The black background makes my icons and widgets pop, and the pattern is so cool. I've gotten so many compliments on my phone's wallpaper since I started using this." - Alex
+-   "I was looking for an abstract art that would match my cyberpunk-themed desktop setup, and this artwork was perfect!" - John
+-   "The abstract shapes remind me of technology and innovation. It's a great artwork for anyone who loves tech." - Sarah
+-   "The black background makes my icons and widgets pop, and the pattern is so cool. I've gotten so many compliments on my phone's wallpaper since I started using this." - Alex
 
 ## References
 
 If you're interested in learning more about the inspiration behind our artwork, here are some references:
 
-- [Wired: The Art of Computer Virus Research and Defense](#)
-- [Malware Museum](#)
-- [Kaspersky: A Brief History of Malware](#)
+-   [Wired: The Art of Computer Virus Research and Defense](#)
+-   [Malware Museum](#)
+-   [Kaspersky: A Brief History of Malware](#)
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us. You can reach us at [email protected] or through our social media accounts:
+If you have any questions or concerns, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media accounts:
 
-- Twitter: [@abstractartwork](#)
-- Instagram: [@abstractartwork](#)
+-   Twitter: [@abstractartwork](#)
+-   Instagram: [@abstractartwork](#)
 
 Thank you for choosing our artwork for your device!
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -84,7 +84,7 @@ If you're interested in learning more about the inspiration behind our wallpaper
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us. You can reach us at [email protected] or through our social media accounts:
+If you have any questions or concerns, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media accounts:
 
 - Twitter: [@abstractwallpaper](#)
 - Instagram: [@abstractwallpaper](#)
@@ -127,7 +127,7 @@ If you're interested in learning more about the inspiration behind our wallpaper
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us. You can reach us at [email protected] or through our social media accounts:
+If you have any questions or concerns, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media accounts:
 
 - Twitter: [@abstractwallpaper](#)
 - Instagram: [@abstractwallpaper](#)
@@ -170,7 +170,7 @@ If you're interested in learning more about the inspiration behind our artwork, 
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us. You can reach us at [email protected] or through our social media accounts:
+If you have any questions or concerns, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media accounts:
 
 - Twitter: [@abstractartwork](#)
 - Instagram: [@abstractartwork](#)

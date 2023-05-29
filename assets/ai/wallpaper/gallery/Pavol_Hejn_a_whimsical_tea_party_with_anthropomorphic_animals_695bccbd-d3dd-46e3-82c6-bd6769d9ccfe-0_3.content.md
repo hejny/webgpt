@@ -26,7 +26,7 @@ Looking for a unique theme to make your next event unforgettable? Consider a Whi
 
 ## Contact Us
 
-Want to learn more about hosting a Whimsical Tea Party or order our wallpaper? Contact us at [email protected] or give us a call at 555-1234. We'd love to help you plan your next event!
+Want to learn more about hosting a Whimsical Tea Party or order our wallpaper? Contact us at me@pavolhejny.com or give us a call at 555-1234. We'd love to help you plan your next event!
 
 <!--
 
@@ -71,7 +71,7 @@ Are you planning a tea party or any other event that requires a touch of whimsy?
 Check out our [Instagram page](#) for more inspiration on how to use our Whimsical Tea Party Wallpaper.
 
 ## Contact Us
-Have questions or want to place an order? Contact us at [email protected] or give us a call at 555-1234. We'd be happy to help bring a touch of whimsy to your next event!
+Have questions or want to place an order? Contact us at me@pavolhejny.com or give us a call at 555-1234. We'd be happy to help bring a touch of whimsy to your next event!
 
 
 ---
@@ -105,6 +105,6 @@ Looking for a unique theme to make your next event unforgettable? Consider a Whi
 - Have guests dress up in their best tea party attire.
 
 ## Contact Us
-Want to learn more about hosting a Whimsical Tea Party or order our wallpaper? Contact us at [email protected] or give us a call at 555-1234. We'd love to help you plan your next event!
+Want to learn more about hosting a Whimsical Tea Party or order our wallpaper? Contact us at me@pavolhejny.com or give us a call at 555-1234. We'd love to help you plan your next event!
 
 -->

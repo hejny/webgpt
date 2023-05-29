@@ -16,21 +16,21 @@ Our mission is to inspire people to learn more about space exploration and to en
 
 We have received many stories from our users about how they were inspired by our website to pursue careers in space exploration or to simply learn more about the universe. Here are some of their stories:
 
-- "I never knew much about space exploration until I stumbled upon your website. Now, I'm fascinated by the latest missions and discoveries."
-- "Your website inspired me to pursue a career in aerospace engineering. I hope to one day work on a mission to Mars!"
-- "Thanks to your website, I was able to teach my kids about the wonders of space exploration. They're now interested in science and technology!"
+-   "I never knew much about space exploration until I stumbled upon your website. Now, I'm fascinated by the latest missions and discoveries."
+-   "Your website inspired me to pursue a career in aerospace engineering. I hope to one day work on a mission to Mars!"
+-   "Thanks to your website, I was able to teach my kids about the wonders of space exploration. They're now interested in science and technology!"
 
 ## References
 
 If you're interested in learning more about space exploration, we recommend checking out these resources:
 
-- NASA's website (#nasa)
-- Space.com (#spacecom)
-- Astronomy Magazine (#astronomy)
+-   NASA's website (#nasa)
+-   Space.com (#spacecom)
+-   Astronomy Magazine (#astronomy)
 
 ## Contact Us
 
-If you have any questions or comments about our website, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our website, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 <!--
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ If you're interested in learning more about space exploration, we recommend chec
 
 ## Contact Us
 
-If you have any questions or comments about our website, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our website, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -129,6 +129,6 @@ If you're interested in learning more about space exploration, we recommend chec
 
 ## Contact Us
 
-If you have any questions or comments about our website, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our website, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 -->

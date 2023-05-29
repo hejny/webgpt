@@ -8,10 +8,10 @@ Welcome to our website dedicated to helping you increase your productivity with 
 
 Our timer offers the following features:
 
-- Simple graphic of a digital clock or timer
-- Space for setting alarms and countdowns
-- Customizable color schemes to match your personal style
-- Minimalist design to reduce distractions
+-   Simple graphic of a digital clock or timer
+-   Space for setting alarms and countdowns
+-   Customizable color schemes to match your personal style
+-   Minimalist design to reduce distractions
 
 ## User Stories
 
@@ -33,13 +33,13 @@ Using our timer is easy:
 
 Looking for more information on how to boost your productivity? Check out these resources:
 
-- [10 Tips for Staying Productive While Working From Home](#)
-- [The Pomodoro Technique: A Time Management Method](#)
-- [How to Set Achievable Goals and Reach Them](#)
+-   [10 Tips for Staying Productive While Working From Home](#)
+-   [The Pomodoro Technique: A Time Management Method](#)
+-   [How to Set Achievable Goals and Reach Them](#)
 
 ## Contact Us
 
-Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at [email protected] or follow us on Twitter @_productivitytimer.
+Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on Twitter @\_productivitytimer.
 
 <!--
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -103,7 +103,7 @@ Looking for more information on how to boost your productivity? Check out these 
 
 ## Contact Us
 
-Have questions or feedback about our countdown timer wallpaper? We'd love to hear from you! Get in touch with us at [email protected] or follow us on Twitter @_countdowntimer.
+Have questions or feedback about our countdown timer wallpaper? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on Twitter @_countdowntimer.
 
 
 ---
@@ -152,7 +152,7 @@ Looking for more information on how to boost your productivity? Check out these 
 
 ## Contact Us
 
-Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at [email protected] or follow us on Twitter @_productivitytimer.
+Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on Twitter @_productivitytimer.
 
 
 ---
@@ -203,7 +203,7 @@ Looking for more information on how to boost your productivity? Check out these 
 
 ## Contact Us
 
-Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at [email protected] or follow us on Twitter @_productivitytimer.
+Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on Twitter @_productivitytimer.
 
 
 ---
@@ -254,7 +254,7 @@ Looking for more information on how to boost your productivity? Check out these 
 
 ## Contact Us
 
-Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at [email protected] or follow us on Twitter @_productivitytimer.
+Have questions or feedback about our timer? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on Twitter @_productivitytimer.
 
 
 ---

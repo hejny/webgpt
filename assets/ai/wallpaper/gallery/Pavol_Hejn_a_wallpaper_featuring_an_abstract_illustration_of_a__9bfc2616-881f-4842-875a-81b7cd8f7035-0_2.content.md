@@ -10,9 +10,9 @@ Our image features a unique and modern design, with a dark and moody color schem
 
 ## Benefits
 
-- Inspire creativity: The unique design of our image will inspire you to be more creative and productive in your work.
-- Modernize your workspace: With its futuristic cityscape design, our image will give your workspace a modern and sophisticated look.
-- Easy to use: Simply download the image and set it as your desktop or laptop background. It's quick and easy to install.
+-   Inspire creativity: The unique design of our image will inspire you to be more creative and productive in your work.
+-   Modernize your workspace: With its futuristic cityscape design, our image will give your workspace a modern and sophisticated look.
+-   Easy to use: Simply download the image and set it as your desktop or laptop background. It's quick and easy to install.
 
 ## User Stories
 
@@ -24,17 +24,17 @@ Our image features a unique and modern design, with a dark and moody color schem
 
 Check out some of our other resources for improving your workspace:
 
-- [10 Tips for Creating a Productive Home Office](#)
-- [5 Ways to Organize Your Desk for Maximum Productivity](#)
-- [The Benefits of Using a Standing Desk](#)
+-   [10 Tips for Creating a Productive Home Office](#)
+-   [5 Ways to Organize Your Desk for Maximum Productivity](#)
+-   [The Benefits of Using a Standing Desk](#)
 
 ## Contact Us
 
-If you have any questions or comments about our resources, please don't hesitate to contact us. You can reach us via email at [email protected] or through our social media channels:
+If you have any questions or comments about our resources, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or through our social media channels:
 
-- Twitter: [@yourhandle](#)
-- Facebook: [facebook.com/yourpage](#)
-- Instagram: [@yourhandle](#)
+-   Twitter: [@yourhandle](#)
+-   Facebook: [facebook.com/yourpage](#)
+-   Instagram: [@yourhandle](#)
 
 Thank you for visiting our website!
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ Check out some of our other wallpapers:
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, please don't hesitate to contact us. You can reach us via email at [email protected] or through our social media channels:
+If you have any questions or comments about our wallpaper, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@yourhandle](#)
 - Facebook: [facebook.com/yourpage](#)
@@ -141,7 +141,7 @@ Check out some of our other resources for improving your workspace:
 
 ## Contact Us
 
-If you have any questions or comments about our resources, please don't hesitate to contact us. You can reach us via email at [email protected] or through our social media channels:
+If you have any questions or comments about our resources, please don't hesitate to contact us. You can reach us via email at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@yourhandle](#)
 - Facebook: [facebook.com/yourpage](#)

@@ -5,23 +5,28 @@
 Transform your desktop with our cybernetic wallpaper featuring a simple graphic of a cyborg's face against a background of digital noise and static. Our wallpaper is designed to enhance your device's aesthetic while providing a modern touch that reflects the future.
 
 ## Features
-- High-quality resolution for a crisp and clear display
-- Compatible with most devices, including desktops, laptops, and mobile phones
-- Easy to download and install
-- Adds a unique and modern touch to any device
+
+-   High-quality resolution for a crisp and clear display
+-   Compatible with most devices, including desktops, laptops, and mobile phones
+-   Easy to download and install
+-   Adds a unique and modern touch to any device
 
 ## User Stories
+
 "I love how this wallpaper adds a futuristic vibe to my desktop without being too flashy. It's subtle yet eye-catching, and I've received many compliments on it." - John D.
 
 "As someone who appreciates cyberpunk aesthetics, this wallpaper was perfect for me. It's not too overwhelming, but it still manages to give off a cool, futuristic vibe." - Sarah M.
 
 ## References
+
 Check out these articles on the benefits of using high-quality wallpapers:
-- [The Benefits of Using High-Quality Wallpapers](#)
-- [How Wallpapers Can Affect Your Mood and Productivity](#)
+
+-   [The Benefits of Using High-Quality Wallpapers](#)
+-   [How Wallpapers Can Affect Your Mood and Productivity](#)
 
 ## Contact Us
-If you have any questions or concerns about our cybernetic wallpaper, please don't hesitate to reach out to us at [email protected] We'd be happy to assist you in any way we can.
+
+If you have any questions or concerns about our cybernetic wallpaper, please don't hesitate to reach out to us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 Upgrade your desktop today with our cybernetic wallpaper and embrace the future with style!
 
@@ -33,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -71,7 +76,7 @@ Check out these articles on the benefits of using high-quality wallpapers:
 - [How Wallpapers Can Affect Your Mood and Productivity](#)
 
 ## Contact Us
-If you have any questions or concerns about our cybernetic wallpaper, please don't hesitate to reach out to us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns about our cybernetic wallpaper, please don't hesitate to reach out to us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 Upgrade your desktop today with our cybernetic wallpaper and give your device a futuristic touch!
 
@@ -106,7 +111,7 @@ Check out these articles on the benefits of using high-quality wallpapers:
 - [How Wallpapers Can Affect Your Mood and Productivity](#)
 
 ## Contact Us
-If you have any questions or concerns about our cybernetic wallpaper, please don't hesitate to reach out to us at [email protected] We'd be happy to assist you in any way we can.
+If you have any questions or concerns about our cybernetic wallpaper, please don't hesitate to reach out to us at me@pavolhejny.com We'd be happy to assist you in any way we can.
 
 Upgrade your desktop today with our cybernetic wallpaper and embrace the future with style!
 

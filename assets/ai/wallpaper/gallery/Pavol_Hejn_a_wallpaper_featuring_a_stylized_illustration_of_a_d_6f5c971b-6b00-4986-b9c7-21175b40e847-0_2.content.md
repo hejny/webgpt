@@ -12,9 +12,9 @@ We are a team of experts in technology, sociology, and philosophy who believe th
 
 We offer a range of services to help individuals and organizations navigate the complex world of technology. These include:
 
-- Consultancy services for businesses looking to implement new technologies
-- Workshops and training sessions on the ethics of technology
-- Research and analysis on the impact of technology on society
+-   Consultancy services for businesses looking to implement new technologies
+-   Workshops and training sessions on the ethics of technology
+-   Research and analysis on the impact of technology on society
 
 ## User Stories
 
@@ -30,13 +30,13 @@ Our users come from all walks of life, but they share a common interest in under
 
 We believe in providing evidence-based insights into the impact of technology on society. Here are some references that we find particularly useful:
 
-- [The Social Dilemma](#)
-- [Weapons of Math Destruction](#)
-- [Algorithms of Oppression](#)
+-   [The Social Dilemma](#)
+-   [Weapons of Math Destruction](#)
+-   [Algorithms of Oppression](#)
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our services, please don't hesitate to get in touch. You can reach us at [email protected] or by filling out the contact form on our website.
+If you have any questions or would like to learn more about our services, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for visiting our website, and we look forward to hearing from you!
 
@@ -48,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -101,7 +101,7 @@ We believe in providing evidence-based insights into the impact of technology on
 
 ## Contact Us
 
-If you have any questions or would like to learn more about our services, please don't hesitate to get in touch. You can reach us at [email protected] or by filling out the contact form on our website.
+If you have any questions or would like to learn more about our services, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for visiting our website, and we look forward to hearing from you!
 

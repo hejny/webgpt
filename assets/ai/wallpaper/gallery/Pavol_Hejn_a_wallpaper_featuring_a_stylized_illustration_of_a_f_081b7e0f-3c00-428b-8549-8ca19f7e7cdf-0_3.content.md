@@ -5,17 +5,20 @@
 Welcome to our website dedicated to helping you create a workspace that inspires you to do your best work. Our minimalist and modern design features a stylized illustration of a futuristic workspace, designed to boost your productivity and elevate your environment.
 
 ## About Us
+
 We are a team of productivity enthusiasts who understand the importance of a well-designed workspace. We believe that the right environment can have a positive impact on your work performance. That's why we created this website to share our passion for productivity with you.
 
 ## Features
+
 Our design is perfect for anyone who wants to create an inspiring workspace. Here are some of the features of our futuristic design:
 
-- High-quality resolution for a clear and crisp image
-- Minimalist design to reduce distractions
-- Modern aesthetic to inspire creativity
-- Futuristic elements to spark imagination
+-   High-quality resolution for a clear and crisp image
+-   Minimalist design to reduce distractions
+-   Modern aesthetic to inspire creativity
+-   Futuristic elements to spark imagination
 
 ## User Stories
+
 Our design has already helped many people improve their productivity and creativity. Here are some user stories from our satisfied customers:
 
 > "I used to struggle with staying focused at work, but ever since I started using this design, I've been able to stay on task and get more done." - John D.
@@ -23,14 +26,16 @@ Our design has already helped many people improve their productivity and creativ
 > "The design is so cool! It makes me feel like I'm working in a sci-fi movie." - Sarah L.
 
 ## Resources
+
 If you're interested in learning more about productivity and workspace design, check out these resources:
 
-- [The Power of a Well-Designed Workspace](#)
-- [10 Tips for Creating a Productive Home Office](#)
-- [How to Stay Focused and Motivated Throughout the Day](#)
+-   [The Power of a Well-Designed Workspace](#)
+-   [10 Tips for Creating a Productive Home Office](#)
+-   [How to Stay Focused and Motivated Throughout the Day](#)
 
 ## Contact Us
-If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+
+If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website. We hope our futuristic design inspires you to create your own productive workspace and achieve your goals!
 
@@ -42,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +94,7 @@ If you're interested in learning more about productivity and workspace design, c
 - [How to Stay Focused and Motivated Throughout the Day](#)
 
 ## Contact Us
-If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website. We hope our wallpaper inspires you to create your own futuristic workspace and achieve your productivity goals!
 
@@ -133,7 +138,7 @@ If you're interested in learning more about productivity and workspace design, c
 - [How to Stay Focused and Motivated Throughout the Day](#)
 
 ## Contact Us
-If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website. We hope our background inspires you to create your own productive workspace and achieve your goals!
 
@@ -177,7 +182,7 @@ If you're interested in learning more about productivity and workspace design, c
 - [How to Stay Focused and Motivated Throughout the Day](#)
 
 ## Contact Us
-If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website. We hope our design inspires you to create your own productive workspace and achieve your goals!
 
@@ -221,7 +226,7 @@ If you're interested in learning more about productivity and workspace design, c
 - [How to Stay Focused and Motivated Throughout the Day](#)
 
 ## Contact Us
-If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you! You can contact us via email at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website. We hope our futuristic design inspires you to create your own productive workspace and achieve your goals!
 

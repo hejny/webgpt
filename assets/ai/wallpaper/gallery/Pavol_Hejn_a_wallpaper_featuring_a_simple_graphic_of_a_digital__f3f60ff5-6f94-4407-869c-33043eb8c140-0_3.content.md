@@ -8,10 +8,10 @@ Our sleek wallpaper background features a simple graphic of a digital clock or t
 
 With Countdown, you can:
 
-- Set a countdown timer to keep track of important deadlines and events.
-- Wake up on time with our customizable alarm clock feature.
-- Receive reminders and notifications to keep you on schedule throughout the day.
-- Keep track of your tasks and prioritize your workload with our intuitive to-do list feature.
+-   Set a countdown timer to keep track of important deadlines and events.
+-   Wake up on time with our customizable alarm clock feature.
+-   Receive reminders and notifications to keep you on schedule throughout the day.
+-   Keep track of your tasks and prioritize your workload with our intuitive to-do list feature.
 
 Don't just take our word for it - here are some real-life examples of how our users have benefited from using Countdown:
 
@@ -21,11 +21,11 @@ Don't just take our word for it - here are some real-life examples of how our us
 
 Looking for more information on time management and productivity? Check out these helpful resources:
 
-- [10 Time Management Tips That Work](#)
-- [The Pomodoro Technique: Is It Right for You?](#)
-- [How to Prioritize Your Tasks and Get More Done](#)
+-   [10 Time Management Tips That Work](#)
+-   [The Pomodoro Technique: Is It Right for You?](#)
+-   [How to Prioritize Your Tasks and Get More Done](#)
 
-Have a question or feedback for us? Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or feedback for us? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join the Countdown community today and manage your time effectively!
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ Looking for more information on time management and productivity? Check out thes
 
 ## Contact Us
 
-Have a question or feedback for us? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or feedback for us? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -130,7 +130,7 @@ Looking for more information on time management and productivity? Check out thes
 - [The Pomodoro Technique: Is It Right for You?](#)
 - [How to Prioritize Your Tasks and Get More Done](#)
 
-Have a question or feedback for us? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or feedback for us? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join the Countdown community today and take control of your time!
 
@@ -169,7 +169,7 @@ Looking for more information on time management and productivity? Check out thes
 - [The Pomodoro Technique: Is It Right for You?](#)
 - [How to Prioritize Your Tasks and Get More Done](#)
 
-Have a question or feedback for us? Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or feedback for us? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join the Countdown community today and take control of your time!
 
@@ -208,7 +208,7 @@ Looking for more information on time management and productivity? Check out thes
 - [The Pomodoro Technique: Is It Right for You?](#)
 - [How to Prioritize Your Tasks and Get More Done](#)
 
-Have a question or feedback for us? Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or feedback for us? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join the Countdown community today and manage your time effectively!
 

@@ -8,9 +8,9 @@ Welcome to our website, where we offer a unique and charming retro robot backgro
 
 Our retro robot background is not just any ordinary wallpaper. It's a piece of art that will add personality and style to your device. Here are some reasons why you should choose our wallpaper:
 
-- Unique design: Our retro-style robot is unlike anything you've seen before. It's a one-of-a-kind design that will make your device stand out.
-- High-quality resolution: Our wallpaper is available in high-definition resolution, so you can enjoy every pixel of our design.
-- Easy to install: Installing our wallpaper is easy and hassle-free. You can download it directly from our website and set it as your background in just a few clicks.
+-   Unique design: Our retro-style robot is unlike anything you've seen before. It's a one-of-a-kind design that will make your device stand out.
+-   High-quality resolution: Our wallpaper is available in high-definition resolution, so you can enjoy every pixel of our design.
+-   Easy to install: Installing our wallpaper is easy and hassle-free. You can download it directly from our website and set it as your background in just a few clicks.
 
 ## User Stories
 
@@ -24,13 +24,13 @@ Our retro robot background has already brought joy to many users. Here are some 
 
 If you're interested in learning more about pixel art and retro-style designs, here are some references that you might find useful:
 
-- [Pixel Art Tutorial](#)
-- [Retro Gaming Community](#)
-- [Pixel Art Gallery](#)
+-   [Pixel Art Tutorial](#)
+-   [Retro Gaming Community](#)
+-   [Pixel Art Gallery](#)
 
 ## Contact Us
 
-If you have any questions or concerns about our retro robot background, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or concerns about our retro robot background, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 Thank you for choosing our retro robot background. We hope it brings joy and nostalgia to your device.
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ If you're interested in learning more about pixel art and retro-style designs, h
 
 ## Contact Us
 
-If you have any questions or concerns about our retro robot background, feel free to contact us at [email protected]. We'd love to hear from you!
+If you have any questions or concerns about our retro robot background, feel free to contact us at me@pavolhejny.com. We'd love to hear from you!
 
 Thank you for choosing our retro robot background. We hope it brings joy and nostalgia to your device.
 

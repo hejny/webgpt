@@ -12,10 +12,10 @@ At the heart of our philosophy is the belief that creativity is essential for su
 
 Our blog features articles on topics such as:
 
-- The benefits of mindfulness for creativity
-- How to overcome creative blocks
-- Tips for staying focused and avoiding distractions
-- Strategies for effective time management
+-   The benefits of mindfulness for creativity
+-   How to overcome creative blocks
+-   Tips for staying focused and avoiding distractions
+-   Strategies for effective time management
 
 In addition to our blog, we also offer online courses, workshops, and coaching sessions to help you develop your skills and reach your full potential.
 
@@ -31,14 +31,14 @@ Our community of users includes artists, writers, entrepreneurs, scientists, and
 
 We are committed to providing high-quality resources and information to our users. Here are some of the sources we rely on:
 
-- [Harvard Business Review](#)
-- [Psychology Today](#)
-- [TED Talks](#)
-- [Fast Company](#)
+-   [Harvard Business Review](#)
+-   [Psychology Today](#)
+-   [TED Talks](#)
+-   [Fast Company](#)
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website, and we hope that our resources serve as a source of inspiration and motivation for your creative endeavors.
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -105,7 +105,7 @@ We are committed to providing high-quality resources and information to our user
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website, and we hope that our wallpaper serves as a source of inspiration and motivation for your creative endeavors.
 
@@ -157,7 +157,7 @@ We are committed to providing high-quality resources and information to our user
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website, and we hope that our interconnected nodes and lines resembling a neural network serve as a source of inspiration and motivation for your creative endeavors.
 
@@ -209,7 +209,7 @@ We are committed to providing high-quality resources and information to our user
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website, and we hope that our resources serve as a source of inspiration and motivation for your creative endeavors.
 
@@ -261,7 +261,7 @@ We are committed to providing high-quality resources and information to our user
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you! Please feel free to reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 Thank you for visiting our website, and we hope that our resources serve as a source of inspiration and motivation for your creative endeavors.
 

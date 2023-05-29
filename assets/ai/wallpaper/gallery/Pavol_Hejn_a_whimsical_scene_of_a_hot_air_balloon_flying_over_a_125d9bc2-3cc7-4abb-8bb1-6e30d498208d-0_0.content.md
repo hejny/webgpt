@@ -28,7 +28,7 @@ Looking for more travel inspiration? Check out our resources section, where we h
 
 ## Contact Us
 
-Do you have a question or just want to say hello? We would love to hear from you! You can reach us at [email protected] or follow us on social media @wanderlustadventures.
+Do you have a question or just want to say hello? We would love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media @wanderlustadventures.
 
 Thank you for visiting our website, and we hope that our hot air balloon background inspires you to embark on your next adventure.
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ Looking for more travel inspiration? Check out our references section, where we 
 
 ## Contact Us
 
-Do you have a question or just want to say hello? We would love to hear from you! You can reach us at [email protected] or follow us on social media @hotairballoonadventurewallpaper.
+Do you have a question or just want to say hello? We would love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media @hotairballoonadventurewallpaper.
 
 Thank you for visiting our website and we hope that our hot air balloon adventure wallpaper inspires you to embark on your next adventure.
 
@@ -127,7 +127,7 @@ Looking for more travel inspiration? Check out our resources section, where we h
 
 ## Contact Us
 
-Do you have a question or just want to say hello? We would love to hear from you! You can reach us at [email protected] or follow us on social media @wanderlustadventures.
+Do you have a question or just want to say hello? We would love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media @wanderlustadventures.
 
 Thank you for visiting our website, and we hope that our hot air balloon background inspires you to embark on your next adventure.
 
@@ -169,7 +169,7 @@ Looking for more travel inspiration? Check out our resources section, where we h
 
 ## Contact Us
 
-Do you have a question or just want to say hello? We would love to hear from you! You can reach us at [email protected] or follow us on social media @wanderlustadventures.
+Do you have a question or just want to say hello? We would love to hear from you! You can reach us at me@pavolhejny.com or follow us on social media @wanderlustadventures.
 
 Thank you for visiting our website, and we hope that our hot air balloon background inspires you to embark on your next adventure.
 

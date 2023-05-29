@@ -38,7 +38,7 @@ If you're interested in learning more about But<wbr>ter<wbr>flies and flowers, c
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -103,6 +103,6 @@ If you're interested in learning more about But<wbr>ter<wbr>flies and flowers, c
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 -->

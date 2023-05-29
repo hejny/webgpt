@@ -34,7 +34,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Have a question or comment? We would love to hear from you! Please reach out to us at [email protected] or follow us on [Twitter](#).
+Have a question or comment? We would love to hear from you! Please reach out to us at me@pavolhejny.com or follow us on [Twitter](#).
 
 Thank you for choosing our mathematically minimalist background. We hope it brings you inspiration and productivity in your daily life!
 
@@ -89,7 +89,7 @@ Looking for more inspiration? Check out these resources:
 - [Mathematical Formulas Wallpaper Collection](#)
 
 ## Contact Us
-Have a question or comment? We would love to hear from you! Please reach out to us at [email protected] or follow us on [Twitter](#).
+Have a question or comment? We would love to hear from you! Please reach out to us at me@pavolhejny.com or follow us on [Twitter](#).
 
 Thank you for choosing our mathematically minimalist background. We hope it brings you inspiration and productivity in your daily life!
 

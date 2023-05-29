@@ -10,10 +10,10 @@ Our home decor is more than just beautiful decorations for your home. They are d
 
 ### Features of Our Home Decor:
 
-- High-quality printing technology ensures vibrant colors and sharp details
-- Durable materials that resist fading and wear
-- Easy installation and removal
-- Customizable sizing options to fit any space
+-   High-quality printing technology ensures vibrant colors and sharp details
+-   Durable materials that resist fading and wear
+-   Easy installation and removal
+-   Customizable sizing options to fit any space
 
 ## User Stories
 
@@ -27,15 +27,16 @@ Here are some stories from our satisfied customers:
 
 Check out some of our other nature-inspired home decor designs:
 
-- "Sunflower Field" shower curtain
-- "Butterfly Garden" throw blanket
-- "Autumn Leaves" canvas print
+-   "Sunflower Field" shower curtain
+-   "Butterfly Garden" throw blanket
+-   "Autumn Leaves" canvas print
 
 ## Contact Us
 
-Have questions about our home decor or need help with installation? Contact us at [email protected] or give us a call at 555-1234. We're always here to help!
+Have questions about our home decor or need help with installation? Contact us at me@pavolhejny.com or give us a call at 555-1234. We're always here to help!
 
 ---
+
 Bring the beauty of nature into your home with our stunning nature-inspired home decor. Shop our collection today and transform your living space!
 
 <!--
@@ -46,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -90,13 +91,13 @@ Here are some stories from our satisfied customers:
 
 Check out some of our other nature-inspired wallpaper designs:
 
-- "Sunflower Field" 
+- "Sunflower Field"
 - "Butterfly Garden"
 - "Autumn Leaves"
 
 ## Contact Us
 
-Have questions about our wallpapers or need help with installation? Contact us at [email protected] or give us a call at 555-1234. We're always here to help!
+Have questions about our wallpapers or need help with installation? Contact us at me@pavolhejny.com or give us a call at 555-1234. We're always here to help!
 
 ---
 Bring the beauty of nature into your home with our stunning nature-inspired wallpapers. Shop our collection today and transform your space!
@@ -144,7 +145,7 @@ Check out some of our other nature-inspired home decor designs:
 
 ## Contact Us
 
-Have questions about our home decor or need help with installation? Contact us at [email protected] or give us a call at 555-1234. We're always here to help!
+Have questions about our home decor or need help with installation? Contact us at me@pavolhejny.com or give us a call at 555-1234. We're always here to help!
 
 ---
 Bring the beauty of nature into your home with our stunning nature-inspired home decor. Shop our collection today and transform your living space!

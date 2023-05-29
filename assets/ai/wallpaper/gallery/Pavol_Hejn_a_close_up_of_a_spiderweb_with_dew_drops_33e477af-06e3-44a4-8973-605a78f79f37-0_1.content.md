@@ -26,7 +26,7 @@ If you're interested in learning more about the natural world, we recommend chec
 
 ## Contact Us
 
-If you have any questions or comments about our site, we'd love to hear from you. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our site, we'd love to hear from you. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 <!--
 
@@ -83,7 +83,7 @@ If you're interested in learning more about the natural world, we recommend chec
 
 ## Contact Us
 
-If you have any questions or comments about our site, we'd love to hear from you. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our site, we'd love to hear from you. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -121,6 +121,6 @@ If you're interested in learning more about the natural world, we recommend chec
 
 ## Contact Us
 
-If you have any questions or comments about our site, we'd love to hear from you. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our site, we'd love to hear from you. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 -->

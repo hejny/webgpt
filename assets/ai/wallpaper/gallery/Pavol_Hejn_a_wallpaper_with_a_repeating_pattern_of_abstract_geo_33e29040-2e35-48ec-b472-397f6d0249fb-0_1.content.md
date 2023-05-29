@@ -8,31 +8,31 @@ One of the most important elements of any website is the background or pattern u
 
 ## Features
 
-- High-quality resolution
-- Repeating patterns for seamless tiling
-- Inspired by modern web design trends
-- Available in multiple color schemes
+-   High-quality resolution
+-   Repeating patterns for seamless tiling
+-   Inspired by modern web design trends
+-   Available in multiple color schemes
 
 ## User Stories
 
 Our users have used these patterns for a variety of projects, including:
 
-- Website backgrounds
-- Social media graphics
-- Digital art pieces
-- Presentations
+-   Website backgrounds
+-   Social media graphics
+-   Digital art pieces
+-   Presentations
 
 ## Resources
 
 If you're looking for more inspiration and resources for modern web design, check out these helpful references:
 
-- [Awwwards](#)
-- [Dribbble](#)
-- [Webdesigner Depot](#)
+-   [Awwwards](#)
+-   [Dribbble](#)
+-   [Webdesigner Depot](#)
 
 ## Contact
 
-Have questions about our abstract geometric patterns or want to share how you've used them in your own designs? Get in touch with us at [email protected] or follow us on [Twitter](#) for more updates and inspiration.
+Have questions about our abstract geometric patterns or want to share how you've used them in your own designs? Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for more updates and inspiration.
 
 We hope our abstract geometric patterns will help elevate your next web design project!
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Abstract Geometric Wallpaper for Modern Web Design
 
-Welcome to our website, where we showcase the latest trends in modern web design. Our site is dedicated to providing designers with inspiration and resources to create stunning websites that stand out from the crowd. 
+Welcome to our website, where we showcase the latest trends in modern web design. Our site is dedicated to providing designers with inspiration and resources to create stunning websites that stand out from the crowd.
 
 One of the most important elements of any website is the background or wallpaper. That's why we're excited to offer a new abstract geometric wallpaper that is perfect for modern web design. This wallpaper features a repeating pattern of abstract geometric shapes and patterns, inspired by the latest web design trends and color schemes.
 
@@ -93,7 +93,7 @@ If you're looking for more inspiration and resources for modern web design, chec
 
 ## Contact
 
-Have questions about our abstract geometric wallpaper or want to share how you've used it in your own designs? Get in touch with us at [email protected] or follow us on [Twitter](#) for more updates and inspiration.
+Have questions about our abstract geometric wallpaper or want to share how you've used it in your own designs? Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for more updates and inspiration.
 
 We hope you enjoy using our abstract geometric wallpaper in your next web design project!
 
@@ -139,7 +139,7 @@ If you're looking for more inspiration and resources for modern web design, chec
 
 ## Contact
 
-Have questions about our abstract geometric patterns or want to share how you've used them in your own designs? Get in touch with us at [email protected] or follow us on [Twitter](#) for more updates and inspiration.
+Have questions about our abstract geometric patterns or want to share how you've used them in your own designs? Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for more updates and inspiration.
 
 We hope our abstract geometric patterns will help elevate your next web design project!
 

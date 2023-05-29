@@ -6,10 +6,10 @@ Looking to transform your workspace into a calming and peaceful environment? Our
 
 ## Why Choose Our Desert Landscape?
 
-- High-quality resolution ensures a crisp and clear image
-- Easy to use as a desktop background or screensaver
-- Compatible with all major operating systems and devices
-- Provides a calming and relaxing atmosphere, perfect for increasing productivity and reducing stress
+-   High-quality resolution ensures a crisp and clear image
+-   Easy to use as a desktop background or screensaver
+-   Compatible with all major operating systems and devices
+-   Provides a calming and relaxing atmosphere, perfect for increasing productivity and reducing stress
 
 ## User Stories
 
@@ -21,13 +21,13 @@ Looking to transform your workspace into a calming and peaceful environment? Our
 
 Check out some of our other popular images:
 
-- "Ocean Waves" image
-- "Mountain Peak" image
-- "Cityscape" image
+-   "Ocean Waves" image
+-   "Mountain Peak" image
+-   "Cityscape" image
 
 ## Contact Us
 
-Have questions or need help choosing the perfect image for your workspace? Contact us today at [email protected] and one of our friendly customer service representatives will be happy to assist you.
+Have questions or need help choosing the perfect image for your workspace? Contact us today at me@pavolhejny.com and one of our friendly customer service representatives will be happy to assist you.
 
 ## Conclusion
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ Check out some of our other popular wallpapers:
 
 ## Contact Us
 
-Have questions or need help choosing the perfect wallpaper for your workspace? Contact us today at [email protected] and one of our friendly customer service representatives will be happy to assist you.
+Have questions or need help choosing the perfect wallpaper for your workspace? Contact us today at me@pavolhejny.com and one of our friendly customer service representatives will be happy to assist you.
 
 ## Conclusion
 
@@ -128,7 +128,7 @@ Check out some of our other popular backgrounds:
 
 ## Contact Us
 
-Have questions or need help choosing the perfect background for your workspace? Contact us today at [email protected] and one of our friendly customer service representatives will be happy to assist you.
+Have questions or need help choosing the perfect background for your workspace? Contact us today at me@pavolhejny.com and one of our friendly customer service representatives will be happy to assist you.
 
 ## Conclusion
 
@@ -171,7 +171,7 @@ Check out some of our other popular backgrounds:
 
 ## Contact Us
 
-Need help choosing the perfect background for your workspace or have questions about our products? Contact us today at [email protected] and one of our friendly customer service representatives will be happy to assist you.
+Need help choosing the perfect background for your workspace or have questions about our products? Contact us today at me@pavolhejny.com and one of our friendly customer service representatives will be happy to assist you.
 
 ## Conclusion
 
@@ -214,7 +214,7 @@ Check out some of our other popular images:
 
 ## Contact Us
 
-Have questions or need help choosing the perfect image for your workspace? Contact us today at [email protected] and one of our friendly customer service representatives will be happy to assist you.
+Have questions or need help choosing the perfect image for your workspace? Contact us today at me@pavolhejny.com and one of our friendly customer service representatives will be happy to assist you.
 
 ## Conclusion
 

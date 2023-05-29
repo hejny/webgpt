@@ -25,7 +25,7 @@ For more information on our minimalist design wallpaper and other products, plea
 
 ## Contact Us
 
-Have a question or want to place an order? Contact us at [email protected] or give us a call at 555-555-5555.
+Have a question or want to place an order? Contact us at me@pavolhejny.com or give us a call at 555-555-5555.
 
 Elevate your home office with our modern minimalist design wallpaper. Order now and enjoy free shipping on all orders over $50!
 
@@ -73,7 +73,7 @@ Looking to spruce up your home office with a modern touch? Our wallpaper with a 
 For more information on our wallpaper and other products, please visit our website. If you have any questions or concerns, don't hesitate to contact us.
 
 ## Contact Us
-Have a question or want to place an order? Contact us at [email protected] or give us a call at 555-555-5555.
+Have a question or want to place an order? Contact us at me@pavolhejny.com or give us a call at 555-555-5555.
 
 Transform your home office into a stylish and modern workspace with our minimalist wallpaper. Order now and enjoy free shipping on all orders over $50!
 
@@ -106,7 +106,7 @@ Looking to create a modern and stylish workspace in your home office? Our minima
 For more information on our minimalist design wallpaper and other products, please visit our website. If you have any questions or concerns, don't hesitate to contact us.
 
 ## Contact Us
-Have a question or want to place an order? Contact us at [email protected] or give us a call at 555-555-5555.
+Have a question or want to place an order? Contact us at me@pavolhejny.com or give us a call at 555-555-5555.
 
 Elevate your home office with our modern minimalist design wallpaper. Order now and enjoy free shipping on all orders over $50!
 

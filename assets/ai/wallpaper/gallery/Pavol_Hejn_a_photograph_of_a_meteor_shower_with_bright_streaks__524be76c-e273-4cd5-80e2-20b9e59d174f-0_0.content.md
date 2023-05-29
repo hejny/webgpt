@@ -8,9 +8,9 @@ Our Night Sky background features a stunning photograph of a meteor shower, capt
 
 Our Night Sky background offers more than just a beautiful image - it's a gateway to exploring the mysteries and marvels of the universe. Here are just a few reasons why you should choose our Night Sky background:
 
-- **Inspiring:** Our Night Sky background is sure to inspire you with its awe-inspiring beauty and majesty, whether you're an artist, writer, or simply someone who loves the night sky.
-- **Calming:** Need a moment of peace and tranquility during a busy day? Our Night Sky background provides a calming backdrop that can help you relax and unwind.
-- **Easy to Install:** Installing our Night Sky background is quick and easy - simply download the image and set it as your desktop or mobile background.
+-   **Inspiring:** Our Night Sky background is sure to inspire you with its awe-inspiring beauty and majesty, whether you're an artist, writer, or simply someone who loves the night sky.
+-   **Calming:** Need a moment of peace and tranquility during a busy day? Our Night Sky background provides a calming backdrop that can help you relax and unwind.
+-   **Easy to Install:** Installing our Night Sky background is quick and easy - simply download the image and set it as your desktop or mobile background.
 
 ## User Stories
 
@@ -24,13 +24,13 @@ Don't just take our word for it - here are some stories from real users who have
 
 Ready to dive deeper into the mysteries of the cosmos? Check out these resources for learning more about astronomy and space exploration:
 
-- [NASA's Astronomy Picture of the Day](#)
-- [Space.com](#)
-- [The Planetary Society](#)
+-   [NASA's Astronomy Picture of the Day](#)
+-   [Space.com](#)
+-   [The Planetary Society](#)
 
 ## Contact Us
 
-Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Night Sky Wallpaper: Bring the Beauty of the Universe to Your Screen
 
-Looking for a stunning background that will transport you to the depths of space? Look no further than our Night Sky wallpaper, featuring a breathtaking photograph of a meteor shower in all its glory. 
+Looking for a stunning background that will transport you to the depths of space? Look no further than our Night Sky wallpaper, featuring a breathtaking photograph of a meteor shower in all its glory.
 
 ## Why Choose Our Night Sky Wallpaper?
 
@@ -91,7 +91,7 @@ Want to learn more about meteor showers and the beauty of the night sky? Check o
 
 ## Contact Us
 
-Have questions or feedback about our Night Sky wallpaper? We'd love to hear from you! Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Night Sky wallpaper? We'd love to hear from you! Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -137,7 +137,7 @@ Ready to dive deeper into the mysteries of the cosmos? Check out these resources
 
 ## Contact Us
 
-Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -183,7 +183,7 @@ Ready to dive deeper into the mysteries of the cosmos? Check out these resources
 
 ## Contact Us
 
-Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -229,7 +229,7 @@ Ready to dive deeper into the mysteries of the cosmos? Check out these resources
 
 ## Contact Us
 
-Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Night Sky background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

@@ -39,7 +39,7 @@ If you're interested in learning more about But<wbr>ter<wbr>flies and their impo
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can contact us at [email protected] or follow us on social media:
+If you have any questions or feedback, we'd love to hear from you. You can contact us at me@pavolhejny.com or follow us on social media:
 
 -   Twitter: [@butterflybackgrounds](#)
 -   Instagram: [@butterflybackgrounds](#)
@@ -110,7 +110,7 @@ If you're interested in learning more about But<wbr>ter<wbr>flies and their impo
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can contact us at [email protected] or follow us on social media:
+If you have any questions or feedback, we'd love to hear from you. You can contact us at me@pavolhejny.com or follow us on social media:
 
 - Twitter: [@butterflywallpapers](#)
 - Instagram: [@butterflywallpapers](#)
@@ -166,7 +166,7 @@ If you're interested in learning more about But<wbr>ter<wbr>flies and their impo
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can contact us at [email protected] or follow us on social media:
+If you have any questions or feedback, we'd love to hear from you. You can contact us at me@pavolhejny.com or follow us on social media:
 
 - Twitter: [@butterflybackgrounds](#)
 - Instagram: [@butterflybackgrounds](#)

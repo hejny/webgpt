@@ -12,9 +12,9 @@ Also known as Aurora Borealis, the Northern Lights are a natural light display t
 
 By using our Northern Lights wallpaper as your background, you can enjoy the following benefits:
 
-- Create a calming and relaxing atmosphere for your workspace
-- Boost your mood and productivity with a beautiful and inspiring image
-- Experience the wonder and beauty of nature without leaving your desk
+-   Create a calming and relaxing atmosphere for your workspace
+-   Boost your mood and productivity with a beautiful and inspiring image
+-   Experience the wonder and beauty of nature without leaving your desk
 
 ## How to Download and Install Our Wallpaper
 
@@ -36,13 +36,13 @@ Here are some real user stories from people who have used our Northern Lights wa
 
 If you're interested in learning more about the Northern Lights, check out these resources:
 
-- [NASA's Aurora Borealis page](#)
-- [National Geographic's Northern Lights guide](#)
-- [Aurora Service's live Northern Lights tracker](#)
+-   [NASA's Aurora Borealis page](#)
+-   [National Geographic's Northern Lights guide](#)
+-   [Aurora Service's live Northern Lights tracker](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our Northern Lights wallpaper, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our Northern Lights wallpaper, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -52,10 +52,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -112,7 +112,7 @@ If you're interested in learning more about the Northern Lights, check out these
 
 ## Contact Us
 
-If you have any questions or feedback about our Northern Lights wallpaper, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our Northern Lights wallpaper, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -166,6 +166,6 @@ If you're interested in learning more about the Northern Lights, check out these
 
 ## Contact Us
 
-If you have any questions or feedback about our Northern Lights wallpaper, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our Northern Lights wallpaper, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 -->

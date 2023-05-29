@@ -20,13 +20,13 @@ Our users have reported increased focus and productivity after implementing mini
 
 Our website provides a wealth of resources to help you create a minimalist workspace, including:
 
-- Tips for Decluttering Your Physical Space
-- Strategies for Organizing Your Digital Files
-- Mindfulness Techniques to Reduce Stress and Boost Productivity
+-   Tips for Decluttering Your Physical Space
+-   Strategies for Organizing Your Digital Files
+-   Mindfulness Techniques to Reduce Stress and Boost Productivity
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. Contact us at [email protected] or follow us on Twitter @RoboTaskHQ.
+If you have any questions or feedback, we'd love to hear from you. Contact us at me@pavolhejny.com or follow us on Twitter @RoboTaskHQ.
 
 ---
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ If you're interested in learning more about the benefits of a minimalist workspa
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. Contact us at [email protected] or follow us on Twitter @RoboTaskHQ.
+If you have any questions or feedback, we'd love to hear from you. Contact us at me@pavolhejny.com or follow us on Twitter @RoboTaskHQ.
 
 ---
 
@@ -129,7 +129,7 @@ Our website provides a wealth of resources to help you create a minimalist works
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. Contact us at [email protected] or follow us on Twitter @RoboTaskHQ.
+If you have any questions or feedback, we'd love to hear from you. Contact us at me@pavolhejny.com or follow us on Twitter @RoboTaskHQ.
 
 ---
 

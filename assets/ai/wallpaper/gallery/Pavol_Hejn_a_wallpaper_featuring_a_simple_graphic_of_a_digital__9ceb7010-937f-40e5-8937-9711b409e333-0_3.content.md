@@ -37,7 +37,7 @@ For more information on time management and goal-setting, check out these resour
 
 ## Contact Us
 
-Have a question or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @CountdownApp.
+Have a question or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @CountdownApp.
 
 <!--
 
@@ -99,6 +99,6 @@ For more information on time management and goal-setting, check out these resour
 
 ## Contact Us
 
-Have a question or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @CountdownApp.
+Have a question or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @CountdownApp.
 
 -->

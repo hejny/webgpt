@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -50,10 +50,10 @@ Don't just take our word for it - hear from some of our satisfied customers!
 
 Want to learn more about astronomy and telescopes? Check out some of our favorite resources:
 
-- [NASA Astronomy Picture of the Day](#)
-- [Sky & Telescope Magazine](#)
-- [Astronomy.com](#)
+-   [NASA Astronomy Picture of the Day](#)
+-   [Sky & Telescope Magazine](#)
+-   [Astronomy.com](#)
 
 ## Contact Us
 
-Have questions about our telescopes or need help choosing the right one for you? Our friendly and knowledgeable customer service team is here to help. Contact us today at [email protected] or give us a call at 1-800-TELESCOPE.
+Have questions about our telescopes or need help choosing the right one for you? Our friendly and knowledgeable customer service team is here to help. Contact us today at me@pavolhejny.com or give us a call at 1-800-TELESCOPE.

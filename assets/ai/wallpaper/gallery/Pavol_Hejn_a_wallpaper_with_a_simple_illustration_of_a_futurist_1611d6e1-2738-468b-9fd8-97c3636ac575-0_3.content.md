@@ -23,21 +23,21 @@ To download the background, simply right-click on the image and select "Save Ima
 
 Here are some user stories from people who have downloaded and used this background:
 
-- "I'm a software engineer and I love having this background on my work computer. It reminds me that I'm working on cutting-edge technology every day."
-- "I'm a gamer and I love the futuristic vibe of this background. It's perfect for my gaming setup!"
-- "I'm not really into tech, but I love the way this background looks. It's just so cool!"
+-   "I'm a software engineer and I love having this background on my work computer. It reminds me that I'm working on cutting-edge technology every day."
+-   "I'm a gamer and I love the futuristic vibe of this background. It's perfect for my gaming setup!"
+-   "I'm not really into tech, but I love the way this background looks. It's just so cool!"
 
 ## Resources
 
 If you're interested in learning more about the world of technology, here are some resources that we recommend:
 
-- [TechCrunch](#)
-- [The Verge](#)
-- [Wired](#)
+-   [TechCrunch](#)
+-   [The Verge](#)
+-   [Wired](#)
 
 ## Contact Us
 
-If you have any questions or comments about our website or the background, please don't hesitate to contact us. You can reach us by email at [email protected] or by filling out the contact form on our website.
+If you have any questions or comments about our website or the background, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for visiting our site and we hope you enjoy the background!
 
@@ -49,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -103,7 +103,7 @@ If you're interested in learning more about the world of technology, here are so
 
 ## Contact Us
 
-If you have any questions or comments about our website or the wallpaper, please don't hesitate to contact us. You can reach us by email at [email protected] or by filling out the contact form on our website.
+If you have any questions or comments about our website or the wallpaper, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for visiting our site and we hope you enjoy the wallpaper!
 
@@ -154,7 +154,7 @@ If you're interested in learning more about the world of technology, here are so
 
 ## Contact Us
 
-If you have any questions or comments about our website or the background, please don't hesitate to contact us. You can reach us by email at [email protected] or by filling out the contact form on our website.
+If you have any questions or comments about our website or the background, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for visiting our site and we hope you enjoy the background!
 

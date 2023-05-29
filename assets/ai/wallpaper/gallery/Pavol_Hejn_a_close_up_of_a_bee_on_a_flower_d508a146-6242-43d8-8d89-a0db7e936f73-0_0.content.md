@@ -50,4 +50,4 @@ Here are some resources to learn more about bee-friendly gardening:
 
 ## Contact Us
 
-Have questions or want to share your own bee-friendly gardening tips? Contact us at [email protected] or follow us on Twitter @\_beefriendlygarden.
+Have questions or want to share your own bee-friendly gardening tips? Contact us at me@pavolhejny.com or follow us on Twitter @\_beefriendlygarden.

@@ -8,10 +8,10 @@ Welcome to Stargaze, a website dedicated to bringing you closer to the wonders o
 
 Whether you're an amateur astronomer or just starting out, our website has something for everyone. We offer a variety of resources to help you discover the universe, including:
 
-- **Stargazing Tips**: Learn how to get started with stargazing and what equipment you need.
-- **Astronomy News**: Stay up-to-date with the latest news and discoveries in the field of astronomy.
-- **Star Maps**: Explore the night sky with our interactive star maps.
-- **User Stories**: Read stories from other stargazers about their experiences and adventures.
+-   **Stargazing Tips**: Learn how to get started with stargazing and what equipment you need.
+-   **Astronomy News**: Stay up-to-date with the latest news and discoveries in the field of astronomy.
+-   **Star Maps**: Explore the night sky with our interactive star maps.
+-   **User Stories**: Read stories from other stargazers about their experiences and adventures.
 
 ## Meteor Shower Wallpaper
 
@@ -23,13 +23,13 @@ As part of our commitment to sharing the beauty of the night sky, we have includ
 
 Our website is built on a foundation of scientific knowledge and expertise. We strive to provide accurate and reliable information to our users, and we rely on reputable sources to do so. Some of our references include:
 
-- NASA
-- The European Space Agency
-- The Royal Astronomical Society
+-   NASA
+-   The European Space Agency
+-   The Royal Astronomical Society
 
 ## Contact Us
 
-We value your feedback and welcome any questions or comments you may have. Please feel free to contact us at [email protected] or follow us on Twitter @stargazewebsite.
+We value your feedback and welcome any questions or comments you may have. Please feel free to contact us at me@pavolhejny.com or follow us on Twitter @stargazewebsite.
 
 Thank you for visiting Stargaze. Happy stargazing!
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ Our website is built on a foundation of scientific knowledge and expertise. We s
 
 ## Contact Us
 
-We value your feedback and welcome any questions or comments you may have. Please feel free to contact us at [email protected] or follow us on Twitter @stargazewebsite.
+We value your feedback and welcome any questions or comments you may have. Please feel free to contact us at me@pavolhejny.com or follow us on Twitter @stargazewebsite.
 
 Thank you for visiting Stargaze. Happy stargazing!
 

@@ -12,17 +12,17 @@ At our company, we believe that simplicity is key. We strive to provide our cust
 
 Our customers have used our minimalist network background for a variety of purposes, including:
 
-- Creating professional presentations
-- Enhancing the look of their desktops or mobile devices
-- Using it as a background for their social media profiles
+-   Creating professional presentations
+-   Enhancing the look of their desktops or mobile devices
+-   Using it as a background for their social media profiles
 
 ## Features
 
 Our minimalist network background is designed to be both visually appealing and functional. Here are some of its key features:
 
-- Simple and elegant design
-- High-quality resolution for a crisp image
-- Compatible with various devices and screen sizes
+-   Simple and elegant design
+-   High-quality resolution for a crisp image
+-   Compatible with various devices and screen sizes
 
 ## References
 
@@ -34,7 +34,7 @@ Here are some of the positive feedback we've received from our satisfied custome
 
 ## Contact Us
 
-If you have any questions or concerns about our minimalist network background, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at [email protected]
+If you have any questions or concerns about our minimalist network background, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at me@pavolhejny.com
 
 Thank you for considering our product!
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -97,7 +97,7 @@ Here are some of the positive feedback we've received from our satisfied custome
 
 ## Contact Us
 
-If you have any questions or concerns about our minimalist network background, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at [email protected]
+If you have any questions or concerns about our minimalist network background, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at me@pavolhejny.com
 
 Thank you for considering our product!
 

@@ -8,10 +8,10 @@ Welcome to our collection of malware-inspired backgrounds, designed to enhance t
 
 One of our most popular backgrounds is Malware Madness, featuring a repeating pattern of abstract shapes inspired by computer viruses and malware, set against a black background. This edgy design will catch the eye of your visitors while reinforcing your cybersecurity message.
 
-- Unique design: Our Malware Madness background is unlike any other on the market, making it a great choice for websites looking to stand out.
-- Relevant to your content: The abstract shapes are inspired by computer viruses and malware, making it a perfect fit for cybersecurity websites.
-- High-quality resolution: Our background is available in high-resolution, ensuring that it looks great on any device.
-- Easy to install: Simply download the background and set it as your website's background image.
+-   Unique design: Our Malware Madness background is unlike any other on the market, making it a great choice for websites looking to stand out.
+-   Relevant to your content: The abstract shapes are inspired by computer viruses and malware, making it a perfect fit for cybersecurity websites.
+-   High-quality resolution: Our background is available in high-resolution, ensuring that it looks great on any device.
+-   Easy to install: Simply download the background and set it as your website's background image.
 
 ## User Stories
 
@@ -25,13 +25,13 @@ Here are some examples of how our backgrounds have been used by satisfied custom
 
 If you're interested in learning more about cybersecurity, here are some resources we recommend:
 
-- [National Cyber Security Alliance](#)
-- [Cybersecurity and Infrastructure Security Agency](#)
-- [KrebsOnSecurity](#)
+-   [National Cyber Security Alliance](#)
+-   [Cybersecurity and Infrastructure Security Agency](#)
+-   [KrebsOnSecurity](#)
 
 ## Contact Us
 
-If you have any questions or comments about our malware-inspired background collection, please don't hesitate to get in touch. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our malware-inspired background collection, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 <!--
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ If you're interested in learning more about cybersecurity, here are some resourc
 
 ## Contact Us
 
-If you have any questions or comments about Malware Madness, please don't hesitate to get in touch. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about Malware Madness, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -130,7 +130,7 @@ If you're interested in learning more about cybersecurity, here are some resourc
 
 ## Contact Us
 
-If you have any questions or comments about our cybersecurity wallpaper collection, please don't hesitate to get in touch. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our cybersecurity wallpaper collection, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -173,7 +173,7 @@ If you're interested in learning more about cybersecurity, here are some resourc
 
 ## Contact Us
 
-If you have any questions or comments about our cybersecurity background collection, please don't hesitate to get in touch. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our cybersecurity background collection, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -216,7 +216,7 @@ If you're interested in learning more about cybersecurity, here are some resourc
 
 ## Contact Us
 
-If you have any questions or comments about our malware-inspired background collection, please don't hesitate to get in touch. You can reach us at [email protected] or follow us on [Twitter](#).
+If you have any questions or comments about our malware-inspired background collection, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---

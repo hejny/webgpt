@@ -25,7 +25,7 @@ We believe in providing accurate and up-to-date information to our readers. That
 
 ## Contact Us
 
-We value your feedback and welcome your comments and suggestions. If you have any questions or would like to get in touch with us, please use our contact form or send us an email at [email protected]
+We value your feedback and welcome your comments and suggestions. If you have any questions or would like to get in touch with us, please use our contact form or send us an email at me@pavolhejny.com
 
 ## User Stories
 
@@ -91,7 +91,7 @@ We believe in providing accurate and up-to-date information to our readers. That
 
 ## Contact Us
 
-We value your feedback and welcome your comments and suggestions. If you have any questions or would like to get in touch with us, please use our contact form or send us an email at [email protected]
+We value your feedback and welcome your comments and suggestions. If you have any questions or would like to get in touch with us, please use our contact form or send us an email at me@pavolhejny.com
 
 ## User Stories
 
@@ -142,7 +142,7 @@ We believe in providing accurate and up-to-date information to our readers. That
 
 ## Contact Us
 
-We value your feedback and welcome your comments and suggestions. If you have any questions or would like to get in touch with us, please use our contact form or send us an email at [email protected]
+We value your feedback and welcome your comments and suggestions. If you have any questions or would like to get in touch with us, please use our contact form or send us an email at me@pavolhejny.com
 
 ## User Stories
 

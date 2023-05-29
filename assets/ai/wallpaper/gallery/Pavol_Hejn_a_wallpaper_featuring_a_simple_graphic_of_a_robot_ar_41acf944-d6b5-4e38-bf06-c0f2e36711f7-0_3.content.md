@@ -29,7 +29,7 @@ For more information on how to create a productive and efficient workspace, chec
 
 ## Contact Us
 
-If you have any questions or feedback about our futuristic background or need help creating a productive workspace, please don't hesitate to contact us at [email protected] We're always here to help you achieve your goals.
+If you have any questions or feedback about our futuristic background or need help creating a productive workspace, please don't hesitate to contact us at me@pavolhejny.com We're always here to help you achieve your goals.
 
 <!--
 
@@ -86,7 +86,7 @@ For more information on how to create a productive workspace, check out these re
 
 ## Contact Us
 
-If you have any questions or feedback about our robot arm wallpaper, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our robot arm wallpaper, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -128,7 +128,7 @@ For more information on how to create a productive and efficient workspace, chec
 
 ## Contact Us
 
-If you have any questions or feedback about our futuristic wallpaper or need help creating a productive workspace, please don't hesitate to contact us at [email protected] We're always here to help you achieve your goals.
+If you have any questions or feedback about our futuristic wallpaper or need help creating a productive workspace, please don't hesitate to contact us at me@pavolhejny.com We're always here to help you achieve your goals.
 
 
 ---
@@ -169,7 +169,7 @@ For more information on how to create a productive and efficient workspace, chec
 
 ## Contact Us
 
-If you have any questions or feedback about our futuristic wallpaper or need help creating a productive workspace, please don't hesitate to contact us at [email protected] We're always here to help you achieve your goals.
+If you have any questions or feedback about our futuristic wallpaper or need help creating a productive workspace, please don't hesitate to contact us at me@pavolhejny.com We're always here to help you achieve your goals.
 
 
 ---
@@ -210,7 +210,7 @@ For more information on how to create a productive and efficient workspace, chec
 
 ## Contact Us
 
-If you have any questions or feedback about our futuristic background or need help creating a productive workspace, please don't hesitate to contact us at [email protected] We're always here to help you achieve your goals.
+If you have any questions or feedback about our futuristic background or need help creating a productive workspace, please don't hesitate to contact us at me@pavolhejny.com We're always here to help you achieve your goals.
 
 
 ---

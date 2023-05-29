@@ -25,7 +25,7 @@ Check out these resources to learn more about space exploration:
 
 ## Contact Us
 
-Have questions or feedback about our space-inspired website? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our space-inspired website? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -81,7 +81,7 @@ Check out these resources to learn more about space exploration:
 
 ## Contact Us
 
-Have questions or feedback about our Space Explorer wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Space Explorer wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -122,7 +122,7 @@ Check out these resources to learn more about space exploration:
 
 ## Contact Us
 
-Have questions or feedback about our space-inspired website? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our space-inspired website? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 

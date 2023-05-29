@@ -48,6 +48,6 @@ If you're interested in learning more about space exploration, we recommend chec
 
 ## Contact Us
 
-We would love to hear from you! If you have any questions, comments, or suggestions, please feel free to contact us at [email protected] or follow us on Twitter at @explorersunite.
+We would love to hear from you! If you have any questions, comments, or suggestions, please feel free to contact us at me@pavolhejny.com or follow us on Twitter at @explorersunite.
 
 Thank you for visiting our website, and we hope you'll join us on our journey to the stars!

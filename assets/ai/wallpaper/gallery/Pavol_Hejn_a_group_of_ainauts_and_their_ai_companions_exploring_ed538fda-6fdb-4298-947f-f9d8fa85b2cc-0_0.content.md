@@ -54,6 +54,6 @@ Here are some references to help you learn more about abandoned research facilit
 
 ## Contact Us
 
-If you have any questions or would like to join us on one of our expeditions, please don't hesitate to contact us. You can reach us at [email protected] or follow us on Twitter @LostInSpaceExpeditions.
+If you have any questions or would like to join us on one of our expeditions, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on Twitter @LostInSpaceExpeditions.
 
 Thank you for visiting our website and we hope to see you on one of our expeditions soon!

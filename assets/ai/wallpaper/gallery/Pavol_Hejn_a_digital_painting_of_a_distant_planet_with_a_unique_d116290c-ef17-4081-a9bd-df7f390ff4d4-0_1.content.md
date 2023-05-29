@@ -30,7 +30,7 @@ If you're interested in learning more about space or digital art, we recommend c
 
 ## Contact Us
 
-We'd love to hear from you! If you have any questions or feedback, please don't hesitate to reach out. You can contact us at [email protected] or through our social media channels:
+We'd love to hear from you! If you have any questions or feedback, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or through our social media channels:
 
 -   Twitter: [@JourneyThroughSpaceArt](#)
 -   Instagram: [@JourneyThroughSpaceArt](#)
@@ -92,7 +92,7 @@ If you're interested in learning more about space, we recommend checking out the
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can reach us at [email protected] or through our social media channels:
+If you have any questions or feedback, we'd love to hear from you. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@SpaceOdyssey](#)
 - Instagram: [@SpaceOdysseyWallpapers](#)
@@ -139,7 +139,7 @@ If you're interested in learning more about space or digital art, we recommend c
 
 ## Contact Us
 
-We'd love to hear from you! If you have any questions or feedback, please don't hesitate to reach out. You can contact us at [email protected] or through our social media channels:
+We'd love to hear from you! If you have any questions or feedback, please don't hesitate to reach out. You can contact us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@JourneyThroughSpaceArt](#)
 - Instagram: [@JourneyThroughSpaceArt](#)

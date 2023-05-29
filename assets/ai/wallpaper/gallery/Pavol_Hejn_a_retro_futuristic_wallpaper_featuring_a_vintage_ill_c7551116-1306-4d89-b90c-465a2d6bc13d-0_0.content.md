@@ -5,25 +5,29 @@
 Looking for inspiration to add a touch of nostalgia and futurism to your design projects? Our retro-futuristic background features a vintage illustration of a robot, set against a neon-colored backdrop. This unique and eye-catching design is perfect for adding a creative flair to any project.
 
 ## Features
-- High-quality resolution
-- Unique and eye-catching design
-- Perfect for a variety of creative projects
-- Easy to download and use
+
+-   High-quality resolution
+-   Unique and eye-catching design
+-   Perfect for a variety of creative projects
+-   Easy to download and use
 
 ## User Stories
+
 "I used this retro-futuristic background as the basis for my sci-fi themed website and it really helped set the tone." - John D.
 
 "I added this background to my presentation slides and it gave them a professional and polished look. My colleagues were impressed!" - Sarah L.
 
 ## Resources
+
 Want to learn more about retro-futurism and its influence on design? Check out these resources:
 
-- [The Retro-Futuristic World of Syd Mead](#)
-- [Retro-Futurism: A Look Back at Tomorrow](#)
-- [The Rise and Fall of Retro-Futurism](#)
+-   [The Retro-Futuristic World of Syd Mead](#)
+-   [Retro-Futurism: A Look Back at Tomorrow](#)
+-   [The Rise and Fall of Retro-Futurism](#)
 
 ## Contact Us
-Have questions or comments about our retro-futuristic background? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @retrofuturisticdesigns.
+
+Have questions or comments about our retro-futuristic background? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @retrofuturisticdesigns.
 
 ---
 
@@ -37,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -77,7 +81,7 @@ Want to learn more about retro-futurism and its influence on design? Check out t
 - [The Rise and Fall of Retro-Futurism](#)
 
 ## Contact Us
-Have questions or comments about our retro-futuristic wallpaper? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @retrofuturisticdesigns.
+Have questions or comments about our retro-futuristic wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @retrofuturisticdesigns.
 
 ---
 
@@ -116,7 +120,7 @@ Want to learn more about retro-futurism and its influence on design? Check out t
 - [The Rise and Fall of Retro-Futurism](#)
 
 ## Contact Us
-Have questions or comments about our retro-futuristic wallpaper? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @retrofuturisticdesigns.
+Have questions or comments about our retro-futuristic wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @retrofuturisticdesigns.
 
 ---
 
@@ -155,7 +159,7 @@ Want to learn more about retro-futurism and its influence on design? Check out t
 - [The Rise and Fall of Retro-Futurism](#)
 
 ## Contact Us
-Have questions or comments about our retro-futuristic background? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @retrofuturisticdesigns.
+Have questions or comments about our retro-futuristic background? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @retrofuturisticdesigns.
 
 ---
 
@@ -194,7 +198,7 @@ Want to learn more about retro-futurism and its influence on design? Check out t
 - [The Rise and Fall of Retro-Futurism](#)
 
 ## Contact Us
-Have questions or comments about our retro-futuristic background? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @retrofuturisticdesigns.
+Have questions or comments about our retro-futuristic background? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @retrofuturisticdesigns.
 
 ---
 

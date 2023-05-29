@@ -26,7 +26,7 @@ Here are some stories from our users who have been inspired by our work:
 
 ## Contact Us
 
-If you have any questions or comments about our work, we would love to hear from you. Please feel free to reach out to us at [email protected] and we will get back to you as soon as possible.
+If you have any questions or comments about our work, we would love to hear from you. Please feel free to reach out to us at me@pavolhejny.com and we will get back to you as soon as possible.
 
 ## References
 
@@ -85,7 +85,7 @@ Here are some stories from our users who have been inspired by our work:
 
 ## Contact Us
 
-If you have any questions or comments about our work, we would love to hear from you. Please feel free to reach out to us at [email protected] and we will get back to you as soon as possible.
+If you have any questions or comments about our work, we would love to hear from you. Please feel free to reach out to us at me@pavolhejny.com and we will get back to you as soon as possible.
 
 ## References
 

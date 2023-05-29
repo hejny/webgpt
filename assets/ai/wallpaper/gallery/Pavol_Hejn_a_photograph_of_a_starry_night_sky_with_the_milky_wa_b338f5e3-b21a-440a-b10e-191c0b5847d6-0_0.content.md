@@ -12,22 +12,22 @@ Our homepage features a stunning wallpaper of the night sky, highlighting the be
 
 Our site provides a range of resources to help you discover the universe, including:
 
-- **Articles:** We publish regular articles covering various topics related to astronomy, from space exploration to the latest discoveries in the field.
-- **Guides:** Our guides offer practical advice on everything from selecting the right telescope to observing the planets and stars.
-- **Reference Materials:** We've compiled a collection of useful reference materials, including star charts, glossaries, and more.
-- **User Stories:** Check out our user stories section to read about the experiences of other astronomy enthusiasts.
+-   **Articles:** We publish regular articles covering various topics related to astronomy, from space exploration to the latest discoveries in the field.
+-   **Guides:** Our guides offer practical advice on everything from selecting the right telescope to observing the planets and stars.
+-   **Reference Materials:** We've compiled a collection of useful reference materials, including star charts, glossaries, and more.
+-   **User Stories:** Check out our user stories section to read about the experiences of other astronomy enthusiasts.
 
 ## Connect with Other Astronomy Enthusiasts
 
 Astronomy is all about community, and our website offers several ways to connect with other like-minded individuals:
 
-- **Forums:** Join our forums to ask questions, share your observations, and connect with other astronomy enthusiasts.
-- **Social Media:** Follow us on social media to stay up-to-date on the latest news and events in the world of astronomy.
-- **Events:** We host regular events, both online and in-person, to bring together members of the astronomy community.
+-   **Forums:** Join our forums to ask questions, share your observations, and connect with other astronomy enthusiasts.
+-   **Social Media:** Follow us on social media to stay up-to-date on the latest news and events in the world of astronomy.
+-   **Events:** We host regular events, both online and in-person, to bring together members of the astronomy community.
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at [email protected]
+Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 ## References
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ One of the best things about astronomy is the community that comes with it. Our 
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at [email protected]
+Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 ## References
 
@@ -136,7 +136,7 @@ Astronomy is all about community, and our website provides several ways to conne
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at [email protected]
+Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 ## References
 
@@ -183,7 +183,7 @@ Astronomy is all about community, and our website provides several ways to conne
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at [email protected]
+Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 ## References
 
@@ -230,7 +230,7 @@ Astronomy is all about community, and our website offers several ways to connect
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at [email protected]
+Have a question or suggestion? We'd love to hear from you! You can reach us through our contact form or by emailing us directly at me@pavolhejny.com
 
 ## References
 

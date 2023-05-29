@@ -6,10 +6,10 @@ Experience the awe-inspiring beauty of the Northern Lights with our stunning des
 
 ## Why Choose Our Northern Lights Background?
 
-- High-quality resolution: Our background is available in high-definition, ensuring that every detail of the Northern Lights is captured in stunning clarity.
-- Easy to install: Installing our background is quick and easy, allowing you to transform your desktop in just a few clicks.
-- Relaxing ambiance: The soothing colors of the Northern Lights create a calming and peaceful atmosphere, perfect for reducing stress during a busy workday.
-- Unique design: Our Northern Lights background is a one-of-a-kind design that will make your desktop stand out from the crowd.
+-   High-quality resolution: Our background is available in high-definition, ensuring that every detail of the Northern Lights is captured in stunning clarity.
+-   Easy to install: Installing our background is quick and easy, allowing you to transform your desktop in just a few clicks.
+-   Relaxing ambiance: The soothing colors of the Northern Lights create a calming and peaceful atmosphere, perfect for reducing stress during a busy workday.
+-   Unique design: Our Northern Lights background is a one-of-a-kind design that will make your desktop stand out from the crowd.
 
 ## User Stories
 
@@ -21,13 +21,13 @@ Experience the awe-inspiring beauty of the Northern Lights with our stunning des
 
 If you're interested in learning more about the Northern Lights, check out these resources:
 
-- [National Geographic](#)
-- [NASA](#)
-- [The Aurora Zone](#)
+-   [National Geographic](#)
+-   [NASA](#)
+-   [The Aurora Zone](#)
 
 ## Contact Us
 
-If you have any questions or concerns about our Northern Lights background, please don't hesitate to contact us at [email protected] We're always happy to help!
+If you have any questions or concerns about our Northern Lights background, please don't hesitate to contact us at me@pavolhejny.com We're always happy to help!
 
 <!--
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ For more information on the Northern Lights, check out these resources:
 
 ## Contact Us
 
-If you have any questions or concerns about our Aurora Borealis wallpaper, please don't hesitate to contact us at [email protected] We're always happy to help!
+If you have any questions or concerns about our Aurora Borealis wallpaper, please don't hesitate to contact us at me@pavolhejny.com We're always happy to help!
 
 
 ---
@@ -120,6 +120,6 @@ If you're interested in learning more about the Northern Lights, check out these
 
 ## Contact Us
 
-If you have any questions or concerns about our Northern Lights background, please don't hesitate to contact us at [email protected] We're always happy to help!
+If you have any questions or concerns about our Northern Lights background, please don't hesitate to contact us at me@pavolhejny.com We're always happy to help!
 
 -->

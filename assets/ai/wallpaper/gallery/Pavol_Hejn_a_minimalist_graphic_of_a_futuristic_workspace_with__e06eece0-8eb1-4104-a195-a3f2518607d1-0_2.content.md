@@ -10,9 +10,9 @@ A cluttered workspace can be overwhelming and distracting, making it difficult t
 
 Here are some benefits of using a minimalist workspace:
 
-- Increases focus and productivity
-- Reduces stress and anxiety
-- Enhances the aesthetics of your device
+-   Increases focus and productivity
+-   Reduces stress and anxiety
+-   Enhances the aesthetics of your device
 
 ## User Stories
 
@@ -35,13 +35,13 @@ Creating a minimalist workspace is easy. Here are some tips to get started:
 
 Want to learn more about how a minimalist workspace can improve your productivity? Check out these resources:
 
-- [10 Tips for Creating a Productive Workspace](#)
-- [The Benefits of Minimalism in the Workplace](#)
-- [How Clutter Affects Your Brain and What You Can Do About It](#)
+-   [10 Tips for Creating a Productive Workspace](#)
+-   [The Benefits of Minimalism in the Workplace](#)
+-   [How Clutter Affects Your Brain and What You Can Do About It](#)
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and tips on productivity.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and tips on productivity.
 
 ---
 
@@ -55,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -113,7 +113,7 @@ Want to learn more about how our Future Workspace Wallpaper can improve your pro
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and tips on productivity.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and tips on productivity.
 
 ---
 
@@ -170,7 +170,7 @@ Want to learn more about how a minimalist workspace can improve your productivit
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#) for updates and tips on productivity.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and tips on productivity.
 
 ---
 

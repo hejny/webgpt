@@ -27,7 +27,7 @@ Want to learn more about the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics
 
 ## Contact
 
-Have a question or comment about our quantum-inspired design? Get in touch with us at [email protected] or follow us on Twitter @quantumdesigns. We'd love to hear from you!
+Have a question or comment about our quantum-inspired design? Get in touch with us at me@pavolhejny.com or follow us on Twitter @quantumdesigns. We'd love to hear from you!
 
 <!--
 
@@ -81,7 +81,7 @@ Want to learn more about the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics
 
 ## Contact
 
-Have a question or comment about our quantum-inspired wallpaper? Get in touch with us at [email protected] or follow us on Twitter @quantumwallpaper. We'd love to hear from you!
+Have a question or comment about our quantum-inspired wallpaper? Get in touch with us at me@pavolhejny.com or follow us on Twitter @quantumwallpaper. We'd love to hear from you!
 
 
 ---
@@ -120,6 +120,6 @@ Want to learn more about the Fas<wbr>ci<wbr>na<wbr>ting world of quantum physics
 
 ## Contact
 
-Have a question or comment about our quantum-inspired design? Get in touch with us at [email protected] or follow us on Twitter @quantumdesigns. We'd love to hear from you!
+Have a question or comment about our quantum-inspired design? Get in touch with us at me@pavolhejny.com or follow us on Twitter @quantumdesigns. We'd love to hear from you!
 
 -->

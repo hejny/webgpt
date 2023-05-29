@@ -34,7 +34,7 @@ For more information on AI-powered search engines, check out these resources:
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @\_ai_search.
+Have questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @\_ai_search.
 
 <!--
 
@@ -95,6 +95,6 @@ For more information on AI-powered search engines, check out these resources:
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter @_ai_search.
+Have questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter @_ai_search.
 
 -->

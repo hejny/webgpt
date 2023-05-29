@@ -26,7 +26,7 @@ We offer a range of resources for those interested in space exploration and AI t
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting our website, and we hope you join us in exploring the cosmos with AI companions!
 
@@ -81,7 +81,7 @@ We offer a range of resources for those interested in space exploration and AI t
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting our website, and we hope you enjoy our AI companions wallpaper!
 
@@ -121,7 +121,7 @@ We offer a range of resources for those interested in space exploration and AI t
 
 ## Contact Us
 
-If you have any questions or comments, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels.
+If you have any questions or comments, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for visiting our website, and we hope you join us in exploring the cosmos with AI companions!
 

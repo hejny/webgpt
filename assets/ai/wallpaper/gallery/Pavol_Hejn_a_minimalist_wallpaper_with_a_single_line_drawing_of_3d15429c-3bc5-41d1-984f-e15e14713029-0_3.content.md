@@ -12,11 +12,11 @@ Cyber security is an important issue that affects everyone who uses the internet
 
 Here are some tips to help you stay safe online:
 
-- Use strong, unique passwords for all of your accounts
-- Enable two-factor authentication whenever possible
-- Keep your software and operating system up-to-date with the latest security patches
-- Be cautious when opening emails or clicking on links from unknown sources
-- Use a reputable antivirus program to protect your computer from malware
+-   Use strong, unique passwords for all of your accounts
+-   Enable two-factor authentication whenever possible
+-   Keep your software and operating system up-to-date with the latest security patches
+-   Be cautious when opening emails or clicking on links from unknown sources
+-   Use a reputable antivirus program to protect your computer from malware
 
 ## User Stories
 
@@ -30,13 +30,13 @@ Here are some stories from our users who have implemented our cyber security tip
 
 For more information on cyber security, check out these helpful resources:
 
-- [National Cyber Security Alliance](#)
-- [Cybersecurity and Infrastructure Security Agency](#)
-- [Kaspersky Lab](#)
+-   [National Cyber Security Alliance](#)
+-   [Cybersecurity and Infrastructure Security Agency](#)
+-   [Kaspersky Lab](#)
 
 ## Contact Us
 
-If you have any questions or concerns about cyber security, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns about cyber security, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 <!--
 
@@ -46,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ For more information on cyber security, check out these helpful resources:
 
 ## Contact Us
 
-If you have any questions or concerns about cyber security, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns about cyber security, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -141,6 +141,6 @@ For more information on cyber security, check out these helpful resources:
 
 ## Contact Us
 
-If you have any questions or concerns about cyber security, feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns about cyber security, feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 -->

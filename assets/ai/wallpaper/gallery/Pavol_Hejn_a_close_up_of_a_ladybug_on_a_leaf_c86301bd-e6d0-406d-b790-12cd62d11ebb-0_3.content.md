@@ -16,20 +16,20 @@ Our "Ladybug on a Leaf" background is a stunning representation of the intricate
 
 Here are some stories from our users who have been inspired by our background:
 
-- "I've always loved hiking, but I never really appreciated the small things until I saw this ladybug background. Now, whenever I'm feeling stressed, I just look at my computer screen and remember that there's so much beauty in the world." - Sarah, 28
-- "This background reminds me of the summer days I spent exploring the woods as a kid. It's a beautiful reminder of the magic of nature." - Alex, 42
+-   "I've always loved hiking, but I never really appreciated the small things until I saw this ladybug background. Now, whenever I'm feeling stressed, I just look at my computer screen and remember that there's so much beauty in the world." - Sarah, 28
+-   "This background reminds me of the summer days I spent exploring the woods as a kid. It's a beautiful reminder of the magic of nature." - Alex, 42
 
 ## Resources
 
 Looking for more inspiration? Check out these resources:
 
-- [10 Reasons Why Spending Time in Nature is Good for You](#)
-- [The Best Hiking Trails in Your Area](#)
-- [How to Plan Your First Camping Trip](#)
+-   [10 Reasons Why Spending Time in Nature is Good for You](#)
+-   [The Best Hiking Trails in Your Area](#)
+-   [How to Plan Your First Camping Trip](#)
 
 ## Contact Us
 
-Got questions or feedback? We'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
+Got questions or feedback? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
 
 ---
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Got questions or feedback? We'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
+Got questions or feedback? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
 
 ---
 
@@ -134,7 +134,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Got questions or feedback? We'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
+Got questions or feedback? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
 
 ---
 
@@ -179,7 +179,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Got questions or feedback? We'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
+Got questions or feedback? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
 
 ---
 
@@ -224,7 +224,7 @@ Looking for more inspiration? Check out these resources:
 
 ## Contact Us
 
-Got questions or feedback? We'd love to hear from you! You can reach us at [email protected] or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
+Got questions or feedback? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on [Twitter](#) and [Instagram](#) for more outdoor inspiration.
 
 ---
 

@@ -22,13 +22,13 @@ Here are some stories from our community of space enthusiasts:
 
 If you want to dive deeper into the world of space exploration and science fiction, here are some references that you might find interesting:
 
-- [NASA](#)
-- [Space.com](#)
-- [Science Fiction and Fantasy Writers of America](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Science Fiction and Fantasy Writers of America](#)
 
 ## Contact Us
 
-If you have any questions or suggestions, please don't hesitate to contact us. We value your feedback and strive to provide the best service possible. You can reach us at [email protected] or through our social media channels.
+If you have any questions or suggestions, please don't hesitate to contact us. We value your feedback and strive to provide the best service possible. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for exploring the universe with us!
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ If you want to learn more about space exploration and science fiction, here are 
 
 ## Contact Us
 
-If you have any questions or suggestions, please don't hesitate to contact us. We value your feedback and strive to provide the best service possible. You can reach us at [email protected] or through our social media channels.
+If you have any questions or suggestions, please don't hesitate to contact us. We value your feedback and strive to provide the best service possible. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for choosing our wallpapers for your desktop background. We hope you enjoy the futuristic astronaut illustration as much as we do!
 
@@ -127,7 +127,7 @@ If you want to dive deeper into the world of space exploration and science ficti
 
 ## Contact Us
 
-If you have any questions or suggestions, please don't hesitate to contact us. We value your feedback and strive to provide the best service possible. You can reach us at [email protected] or through our social media channels.
+If you have any questions or suggestions, please don't hesitate to contact us. We value your feedback and strive to provide the best service possible. You can reach us at me@pavolhejny.com or through our social media channels.
 
 Thank you for exploring the universe with us!
 

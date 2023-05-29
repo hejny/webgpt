@@ -31,7 +31,7 @@ If you want to learn more about space exploration and the latest discoveries, ch
 
 ## Contact Us
 
-Do you have any questions or feedback? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Do you have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join us on our mission of discovery and download our backgrounds today to explore the wonders of space.
 
@@ -91,7 +91,7 @@ If you want to learn more about space exploration and the latest discoveries, ch
 
 ## Contact Us
 
-Do you have any questions or feedback? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Do you have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join us on our mission of discovery and download our futuristic spacecraft wallpaper today!
 
@@ -136,7 +136,7 @@ If you want to learn more about space exploration and the latest discoveries, ch
 
 ## Contact Us
 
-Do you have any questions or feedback? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Do you have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Join us on our mission of discovery and download our backgrounds today to explore the wonders of space.
 

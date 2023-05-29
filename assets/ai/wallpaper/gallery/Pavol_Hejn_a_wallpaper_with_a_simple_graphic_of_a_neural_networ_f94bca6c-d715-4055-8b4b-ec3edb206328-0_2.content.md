@@ -29,7 +29,7 @@ We offer a wide range of resources to help you stay up-to-date on the latest dev
 
 ## Contact Us
 
-Have a question or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter at @AIStockInsights.
+Have a question or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter at @AIStockInsights.
 
 <!--
 
@@ -83,6 +83,6 @@ We offer a wide range of resources to help you stay up-to-date on the latest dev
 
 ## Contact Us
 
-Have a question or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on Twitter at @AIStockInsights.
+Have a question or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on Twitter at @AIStockInsights.
 
 -->

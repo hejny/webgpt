@@ -8,11 +8,11 @@ Welcome to our website, where we provide you with a sleek and modern digital wor
 
 Our modern digital workspace background offers the following benefits:
 
-- Sleek and modern design
-- Repeating pattern of digital devices
-- High-quality resolution
-- Perfect for desktop or laptop backgrounds
-- Instant download
+-   Sleek and modern design
+-   Repeating pattern of digital devices
+-   High-quality resolution
+-   Perfect for desktop or laptop backgrounds
+-   Instant download
 
 With our background, you can elevate your workspace and create a more modern and professional atmosphere. It's the perfect addition to any office space or home office.
 
@@ -28,12 +28,12 @@ Our background has been used by many professionals in various industries. Here a
 
 Here are some resources that may interest you:
 
-- [How to set a desktop background on Windows 10](#)
-- [10 ways to improve your workspace productivity](#)
+-   [How to set a desktop background on Windows 10](#)
+-   [10 ways to improve your workspace productivity](#)
 
 ## Contact Us
 
-If you have any questions or concerns, please do not hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns, please do not hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for choosing our modern digital workspace background. We hope it inspires you to create your best work yet!
 
@@ -45,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ Here are some references that may interest you:
 
 ## Contact Us
 
-If you have any questions or concerns, please do not hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns, please do not hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for choosing our digital workspace wallpaper. We hope you enjoy it as much as we do!
 
@@ -140,7 +140,7 @@ Here are some resources that may interest you:
 
 ## Contact Us
 
-If you have any questions or concerns, please do not hesitate to contact us at [email protected] We would be happy to assist you in any way we can.
+If you have any questions or concerns, please do not hesitate to contact us at me@pavolhejny.com We would be happy to assist you in any way we can.
 
 Thank you for choosing our modern digital workspace background. We hope it inspires you to create your best work yet!
 

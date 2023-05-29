@@ -96,7 +96,6 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
         let content = await readFile(contentFilePath, 'utf8');
 
         content = spaceTrim(content);
-        // TODO: !!!! Replace [email protected] ACRY
 
         const title = extractTitleFromMarkdown(content) || 'Untitled';
 

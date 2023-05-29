@@ -8,19 +8,19 @@ Transform your device into a portal to the universe with our stunning space-them
 
 Our space backgrounds are not only visually stunning but also high-quality and easy to use. Here are some reasons why you should choose our backgrounds:
 
-- **High-resolution images:** Our backgrounds are available in high resolutions, ensuring that you get the best quality possible.
-- **Easy to install:** Installing our backgrounds is a breeze. Simply download the image and set it as your background.
-- **Regular updates:** We update our collection regularly, so you can always have access to the latest and greatest space-themed backgrounds.
-- **Free to download:** All of our backgrounds are free to download, so you can enjoy the beauty of the universe without breaking the bank.
+-   **High-resolution images:** Our backgrounds are available in high resolutions, ensuring that you get the best quality possible.
+-   **Easy to install:** Installing our backgrounds is a breeze. Simply download the image and set it as your background.
+-   **Regular updates:** We update our collection regularly, so you can always have access to the latest and greatest space-themed backgrounds.
+-   **Free to download:** All of our backgrounds are free to download, so you can enjoy the beauty of the universe without breaking the bank.
 
 ## Our Collection
 
 Our collection features a wide range of space-themed backgrounds, including:
 
-- **Planets:** Explore the beauty of our solar system with stunning images of planets like Jupiter, Saturn, and Mars.
-- **Galaxies:** Get lost in the vastness of space with images of galaxies like the Milky Way and Andromeda.
-- **Nebulae:** Admire the colorful clouds of gas and dust with images of nebulae like the Orion Nebula and the Carina Nebula.
-- **Astronomy Photographs:** Discover the beauty of astronomy with photographs of telescopes, observatories, and other astronomical equipment.
+-   **Planets:** Explore the beauty of our solar system with stunning images of planets like Jupiter, Saturn, and Mars.
+-   **Galaxies:** Get lost in the vastness of space with images of galaxies like the Milky Way and Andromeda.
+-   **Nebulae:** Admire the colorful clouds of gas and dust with images of nebulae like the Orion Nebula and the Carina Nebula.
+-   **Astronomy Photographs:** Discover the beauty of astronomy with photographs of telescopes, observatories, and other astronomical equipment.
 
 ## User Stories
 
@@ -34,13 +34,13 @@ Our space backgrounds have been used by people all over the world to add a touch
 
 If you want to learn more about space and astronomy, here are some resources to get you started:
 
-- NASA: https://www.nasa.gov/
-- Space.com: https://www.space.com/
-- Astronomy Magazine: https://astronomy.com/
+-   NASA: https://www.nasa.gov/
+-   Space.com: https://www.space.com/
+-   Astronomy Magazine: https://astronomy.com/
 
 ## Contact Us
 
-If you have any questions or comments about our space-themed backgrounds, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our space-themed backgrounds, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -50,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -107,7 +107,7 @@ If you want to learn more about space and astronomy, here are some resources to 
 
 ## Contact Us
 
-If you have any questions or comments about our space-themed wallpaper, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our space-themed wallpaper, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -159,6 +159,6 @@ If you want to learn more about space and astronomy, here are some resources to 
 
 ## Contact Us
 
-If you have any questions or comments about our space-themed backgrounds, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our space-themed backgrounds, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 -->

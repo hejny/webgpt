@@ -26,7 +26,7 @@ If you're interested in learning more about the Fas<wbr>ci<wbr>na<wbr>ting world
 
 ## Contact Us
 
-If you have any questions or feedback about our abstract shapes design, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our abstract shapes design, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -74,7 +74,7 @@ If you're interested in learning more about the Mandelbrot set and its connectio
 - [Abstract Art: Definition, History, Types, Characteristics](#)
 
 ## Contact Us
-If you have any questions or concerns about our abstract shapes wallpaper, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or concerns about our abstract shapes wallpaper, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -107,6 +107,6 @@ If you're interested in learning more about the Fas<wbr>ci<wbr>na<wbr>ting world
 - [Fractal Art: Definition, History, Techniques](#)
 
 ## Contact Us
-If you have any questions or feedback about our abstract shapes design, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our abstract shapes design, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 -->

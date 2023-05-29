@@ -37,7 +37,7 @@ If you're interested in learning more about the stars and constellations feature
 
 ## Contact Us
 
-If you have any questions or concerns about our vintage map background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or concerns about our vintage map background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 -   Twitter: [@CosmicMap](#twitter)
 -   Instagram: [@CosmicMap](#instagram)
@@ -102,7 +102,7 @@ If you're interested in learning more about the stars and constellations feature
 
 ## Contact Us
 
-If you have any questions or concerns about our stellar wallpaper, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or concerns about our stellar wallpaper, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@StellarWallpaper](#twitter)
 - Instagram: [@StellarWallpaper](#instagram)
@@ -156,7 +156,7 @@ If you're interested in learning more about the stars and constellations feature
 
 ## Contact Us
 
-If you have any questions or concerns about our vintage map, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or concerns about our vintage map, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@CosmicMap](#twitter)
 - Instagram: [@CosmicMap](#instagram)
@@ -210,7 +210,7 @@ If you're interested in learning more about the stars and constellations feature
 
 ## Contact Us
 
-If you have any questions or concerns about our vintage map background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or concerns about our vintage map background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@CosmicMap](#twitter)
 - Instagram: [@CosmicMap](#instagram)
@@ -264,7 +264,7 @@ If you're interested in learning more about the stars and constellations feature
 
 ## Contact Us
 
-If you have any questions or concerns about our vintage map background, please don't hesitate to contact us. You can reach us at [email protected] or through our social media channels:
+If you have any questions or concerns about our vintage map background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or through our social media channels:
 
 - Twitter: [@CosmicMap](#twitter)
 - Instagram: [@CosmicMap](#instagram)

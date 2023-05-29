@@ -27,7 +27,7 @@ We pride ourselves on providing accurate and reliable information to our readers
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or follow us on Twitter at [@SpaceAdventure](https://twitter.com/SpaceAdventure).
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on Twitter at [@SpaceAdventure](https://twitter.com/SpaceAdventure).
 
 Thanks for visiting Space Adventure, and happy gaming! 🚀🎮
 
@@ -83,7 +83,7 @@ We pride ourselves on providing accurate and reliable information to our readers
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! You can reach us at [email protected] or follow us on Twitter at [@SpaceAdventure](https://twitter.com/SpaceAdventure).
+Have a question or comment? We'd love to hear from you! You can reach us at me@pavolhejny.com or follow us on Twitter at [@SpaceAdventure](https://twitter.com/SpaceAdventure).
 
 Thanks for visiting Space Adventure, and happy gaming! 🚀🎮
 

@@ -8,9 +8,9 @@ Looking for a way to add some inspiration to your device's background? Our astro
 
 Our astronaut background can:
 
-- Inspire you to imagine yourself as an astronaut exploring the vastness of space
-- Encourage you to learn more about space exploration and astronomy
-- Create a calming and inspiring atmosphere for your workspace or home screen
+-   Inspire you to imagine yourself as an astronaut exploring the vastness of space
+-   Encourage you to learn more about space exploration and astronomy
+-   Create a calming and inspiring atmosphere for your workspace or home screen
 
 ## User Stories
 
@@ -24,13 +24,13 @@ Here are some stories from our users who have used our astronaut background:
 
 Want to learn more about space exploration and astronomy? Here are some resources we recommend:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy.com](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy.com](#)
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#).
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 <!--
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -87,7 +87,7 @@ Want to learn more about space exploration and astronomy? Here are some resource
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#).
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -129,7 +129,7 @@ Want to learn more about space exploration and astronomy? Here are some resource
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#).
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -171,7 +171,7 @@ Want to learn more about space exploration and astronomy? Here are some resource
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#).
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---
@@ -213,7 +213,7 @@ Want to learn more about space exploration and astronomy? Here are some resource
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#).
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 
 ---

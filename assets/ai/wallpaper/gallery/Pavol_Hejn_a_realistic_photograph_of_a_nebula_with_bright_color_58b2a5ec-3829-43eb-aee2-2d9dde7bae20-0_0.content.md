@@ -32,7 +32,7 @@ Our customers have shared stories of how our space-themed backgrounds have impac
 
 ## Contact Us
 
-If you have any questions or comments about our backgrounds, please don't hesitate to reach out to us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our backgrounds, please don't hesitate to reach out to us at me@pavolhejny.com. We'd love to hear from you!
 
 ## Resources
 
@@ -97,7 +97,7 @@ Our customers have shared stories of how our space-themed wallpapers have impact
 
 ## Contact Us
 
-If you have any questions or comments about our wallpapers, please don't hesitate to reach out to us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our wallpapers, please don't hesitate to reach out to us at me@pavolhejny.com We'd love to hear from you!
 
 ## References
 
@@ -147,7 +147,7 @@ Our customers have shared stories of how our space-themed backgrounds have impac
 
 ## Contact Us
 
-If you have any questions or comments about our backgrounds, please don't hesitate to reach out to us at [email protected]. We'd love to hear from you!
+If you have any questions or comments about our backgrounds, please don't hesitate to reach out to us at me@pavolhejny.com. We'd love to hear from you!
 
 ## Resources
 

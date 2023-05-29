@@ -6,10 +6,10 @@ Welcome to our website where we provide you with inspiration and ideas to transf
 
 ## Why Choose a Desert Oasis Background?
 
-- Adds character and depth to your workspace
-- Creates a sense of tranquility and relaxation
-- Provides a unique and visually appealing backdrop for video calls
-- Easy to install and remove without damaging your walls 
+-   Adds character and depth to your workspace
+-   Creates a sense of tranquility and relaxation
+-   Provides a unique and visually appealing backdrop for video calls
+-   Easy to install and remove without damaging your walls
 
 ## User Stories
 
@@ -23,12 +23,12 @@ Our customers have shared their experiences with using a Desert Oasis background
 
 Check out these articles for tips and tricks on how to create a productive and inspiring home office:
 
-- [5 Ways to Boost Productivity in Your Home Office](#)
-- [How to Create a Calming Workspace for Better Mental Health](#)
+-   [5 Ways to Boost Productivity in Your Home Office](#)
+-   [How to Create a Calming Workspace for Better Mental Health](#)
 
 ## Contact Us
 
-If you have any questions or would like to share your experience with our Desert Oasis background, please don't hesitate to contact us at [email protected] We look forward to hearing from you!
+If you have any questions or would like to share your experience with our Desert Oasis background, please don't hesitate to contact us at me@pavolhejny.com We look forward to hearing from you!
 
 <!--
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -57,14 +57,14 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Desert Oasis Wallpaper for Your Home Office
 
-Welcome to our website where we provide you with stunning wallpapers that will transform your home office into a beautiful workspace. Our latest addition is the Desert Oasis Wallpaper, featuring a breathtaking desert landscape with a cactus in the foreground. 
+Welcome to our website where we provide you with stunning wallpapers that will transform your home office into a beautiful workspace. Our latest addition is the Desert Oasis Wallpaper, featuring a breathtaking desert landscape with a cactus in the foreground.
 
 ## Why Choose Our Desert Oasis Wallpaper?
 
 - High-quality resolution that will make you feel like you're actually in the desert
-- Non-toxic and eco-friendly materials 
-- Easy to install and remove without damaging your walls 
-- Affordable price 
+- Non-toxic and eco-friendly materials
+- Easy to install and remove without damaging your walls
+- Affordable price
 
 ## User Stories
 
@@ -83,7 +83,7 @@ Check out these articles for inspiration on how to decorate your home office wit
 
 ## Contact Us
 
-If you have any questions or concerns about our products, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns about our products, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 
 ---
@@ -104,7 +104,7 @@ Welcome to our website where we provide you with inspiration and ideas to transf
 - Adds character and depth to your workspace
 - Creates a sense of tranquility and relaxation
 - Provides a unique and visually appealing backdrop for video calls
-- Easy to install and remove without damaging your walls 
+- Easy to install and remove without damaging your walls
 
 ## User Stories
 
@@ -123,6 +123,6 @@ Check out these articles for tips and tricks on how to create a productive and i
 
 ## Contact Us
 
-If you have any questions or would like to share your experience with our Desert Oasis background, please don't hesitate to contact us at [email protected] We look forward to hearing from you!
+If you have any questions or would like to share your experience with our Desert Oasis background, please don't hesitate to contact us at me@pavolhejny.com We look forward to hearing from you!
 
 -->

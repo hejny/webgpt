@@ -6,29 +6,29 @@ Our retro-futuristic design features a vintage illustration of a robot set again
 
 ## Features
 
-- High-quality resolution for crisp and clear display
-- Compatible with a variety of devices and platforms
-- Easy to download and use in your projects
+-   High-quality resolution for crisp and clear display
+-   Compatible with a variety of devices and platforms
+-   Easy to download and use in your projects
 
 ## User Stories
 
 Our retro-futuristic design has been used by a variety of creative professionals and hobbyists, including:
 
-- Sarah, a graphic designer, who used this design as the centerpiece of her new website. It helped to set the tone for her brand and added a unique touch to her portfolio.
-- John, a content creator, who used this design as the backdrop for one of his YouTube videos. It looked amazing on camera and helped to create a futuristic atmosphere for his content.
-- Emily, a marketing professional, who used this design as the background for a presentation at work. It really helped to make her slides stand out and made her message more memorable.
+-   Sarah, a graphic designer, who used this design as the centerpiece of her new website. It helped to set the tone for her brand and added a unique touch to her portfolio.
+-   John, a content creator, who used this design as the backdrop for one of his YouTube videos. It looked amazing on camera and helped to create a futuristic atmosphere for his content.
+-   Emily, a marketing professional, who used this design as the background for a presentation at work. It really helped to make her slides stand out and made her message more memorable.
 
 ## References
 
 Want to learn more about retro-futuristic design and how you can incorporate it into your projects? Check out these resources:
 
-- The History and Future of Retrofuturism
-- 10 Examples of Retro Futurism That Inspire Creativity
-- How to Create Retro-Futuristic Designs in Photoshop
+-   The History and Future of Retrofuturism
+-   10 Examples of Retro Futurism That Inspire Creativity
+-   How to Create Retro-Futuristic Designs in Photoshop
 
 ## Contact Us
 
-Have questions about our retro-futuristic design or need help using it in your projects? Contact us at [email protected] or follow us on Twitter for updates and inspiration.
+Have questions about our retro-futuristic design or need help using it in your projects? Contact us at me@pavolhejny.com or follow us on Twitter for updates and inspiration.
 
 <!--
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -86,7 +86,7 @@ Want to learn more about retro-futuristic design and how you can incorporate it 
 
 ## Contact Us
 
-Have questions about our retro-futuristic wallpaper or need help using it in your projects? Our team is here to help! Contact us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+Have questions about our retro-futuristic wallpaper or need help using it in your projects? Our team is here to help! Contact us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 
 ---
@@ -127,7 +127,7 @@ Want to learn more about retro-futuristic design and how you can incorporate it 
 
 ## Contact Us
 
-Have questions about our retro-futuristic wallpaper or need help using it in your projects? Contact us at [email protected] or follow us on Twitter for updates and inspiration.
+Have questions about our retro-futuristic wallpaper or need help using it in your projects? Contact us at me@pavolhejny.com or follow us on Twitter for updates and inspiration.
 
 
 ---
@@ -167,7 +167,7 @@ Want to learn more about retro-futuristic design and how you can incorporate it 
 
 ## Contact Us
 
-Have questions about our retro-futuristic design or need help using it in your projects? Contact us at [email protected] or follow us on Twitter for updates and inspiration.
+Have questions about our retro-futuristic design or need help using it in your projects? Contact us at me@pavolhejny.com or follow us on Twitter for updates and inspiration.
 
 
 ---
@@ -207,7 +207,7 @@ Want to learn more about retro-futuristic design and how you can incorporate it 
 
 ## Contact Us
 
-Have questions about our retro-futuristic design or need help using it in your projects? Contact us at [email protected] or follow us on Twitter for updates and inspiration.
+Have questions about our retro-futuristic design or need help using it in your projects? Contact us at me@pavolhejny.com or follow us on Twitter for updates and inspiration.
 
 
 ---

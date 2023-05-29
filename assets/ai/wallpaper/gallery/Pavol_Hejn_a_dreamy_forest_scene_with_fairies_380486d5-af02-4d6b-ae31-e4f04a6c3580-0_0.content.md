@@ -35,7 +35,7 @@ For more information about enchanted forests and fairy tales, check out these re
 
 ## Contact Us
 
-If you have any questions or concerns, please feel free to contact us at [email protected] or through our social media channels.
+If you have any questions or concerns, please feel free to contact us at me@pavolhejny.com or through our social media channels.
 
 We hope you enjoy our enchanted forest background and look forward to providing you with more magical backgrounds in the future.
 
@@ -92,7 +92,7 @@ For more information about fairies and forests, check out these resources:
 - [National Geographic: Forests](#)
 
 ## Contact Us
-If you have any questions or concerns, please feel free to contact us at [email protected] or through our social media channels.
+If you have any questions or concerns, please feel free to contact us at me@pavolhejny.com or through our social media channels.
 
 We hope you enjoy our enchanting forest wallpaper and look forward to providing you with more Cap<wbr>ti<wbr>va<wbr>ting backgrounds in the future.
 
@@ -134,7 +134,7 @@ For more information about enchanted forests and fairy tales, check out these re
 - [National Geographic: Forests](#)
 
 ## Contact Us
-If you have any questions or concerns, please feel free to contact us at [email protected] or through our social media channels.
+If you have any questions or concerns, please feel free to contact us at me@pavolhejny.com or through our social media channels.
 
 We hope you enjoy our enchanted forest background and look forward to providing you with more magical backgrounds in the future.
 

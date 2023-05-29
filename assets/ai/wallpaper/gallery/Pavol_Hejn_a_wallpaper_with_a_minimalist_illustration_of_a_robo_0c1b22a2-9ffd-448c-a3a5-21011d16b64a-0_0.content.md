@@ -32,7 +32,7 @@ If you're interested in using our robotic arm illustration for your website, che
 
 ## Contact Us
 
-If you have any questions or comments about our robotic arm illustration, please don't hesitate to get in touch. You can reach us at [email protected] or by filling out the contact form on our website.
+If you have any questions or comments about our robotic arm illustration, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for considering our minimalist robotic arm illustration to elevate the visual appeal of your tech-focused website!
 
@@ -93,7 +93,7 @@ If you're interested in using our wallpaper for your website, check out these re
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, please don't hesitate to get in touch. You can reach us at [email protected] or by filling out the contact form on our website.
+If you have any questions or comments about our wallpaper, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for considering our robotic arm wallpaper for your website's background!
 
@@ -139,7 +139,7 @@ If you're interested in using our robotic arm illustration for your website, che
 
 ## Contact Us
 
-If you have any questions or comments about our robotic arm illustration, please don't hesitate to get in touch. You can reach us at [email protected] or by filling out the contact form on our website.
+If you have any questions or comments about our robotic arm illustration, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com or by filling out the contact form on our website.
 
 Thank you for considering our minimalist robotic arm illustration to elevate the visual appeal of your tech-focused website!
 

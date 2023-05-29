@@ -23,7 +23,7 @@ Check out some of our recommended resources for learning more about space:
 
 ## Contact Us
 
-Have questions or suggestions? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#twitter) for the latest updates.
+Have questions or suggestions? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for the latest updates.
 
 ---
 
@@ -95,7 +95,7 @@ Check out some of our recommended resources for learning more about space:
 - [European Space Agency](#esa)
 
 ## Contact Us
-Have questions or suggestions? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#twitter) for the latest updates.
+Have questions or suggestions? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for the latest updates.
 
 ---
 
@@ -129,7 +129,7 @@ Check out some of our recommended resources for learning more about space:
 - [European Space Agency](#esa)
 
 ## Contact Us
-Have questions or suggestions? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#twitter) for the latest updates.
+Have questions or suggestions? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for the latest updates.
 
 ---
 

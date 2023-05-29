@@ -46,6 +46,6 @@ If you're interested in learning more about the science behind our mission, chec
 
 ## Contact Us
 
-Want to get involved in our mission or have questions about our journey? Contact us at [email protected] and we'll get back to you as soon as possible.
+Want to get involved in our mission or have questions about our journey? Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for joining us on this exciting adventure into the unknown. Together, we can uncover the secrets of Project Omega and unlock new possibilities for space exploration. 🚀

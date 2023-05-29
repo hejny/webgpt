@@ -5,9 +5,9 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with the heading
-- The content should look like a real website 
+- The content should look like a real website
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
 - Feel free to use structure like headings, bullets, numbering, blockquotes, paragraphs, horizontal lines, etc.
 - You can use formatting like bold or _italic_
@@ -20,15 +20,15 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Abstract Watercolor Painting Wallpaper for Your Creative Blog
 
-Welcome to our art and design blog, where creativity meets inspiration. We are excited to introduce our latest abstract watercolor painting wallpaper that will add a pop of color and vibrancy to your website. 
+Welcome to our art and design blog, where creativity meets inspiration. We are excited to introduce our latest abstract watercolor painting wallpaper that will add a pop of color and vibrancy to your website.
 
 ## Why Choose Our Abstract Watercolor Painting Wallpaper?
 
 Our wallpaper is not only visually stunning but also versatile and easy to use. Here are some reasons why you should choose our abstract watercolor painting wallpaper:
 
-- **High-quality resolution**: Our wallpaper is available in high-quality resolution, ensuring that it looks great on any screen size.
-- **Versatile**: Our wallpaper is perfect for a wide range of websites, including art blogs, design blogs, and creative portfolios.
-- **Easy to use**: Our wallpaper is easy to download and set up as your website background.
+-   **High-quality resolution**: Our wallpaper is available in high-quality resolution, ensuring that it looks great on any screen size.
+-   **Versatile**: Our wallpaper is perfect for a wide range of websites, including art blogs, design blogs, and creative portfolios.
+-   **Easy to use**: Our wallpaper is easy to download and set up as your website background.
 
 ## User Stories
 
@@ -51,15 +51,15 @@ Downloading and using our wallpaper is easy. Simply follow these steps:
 
 If you're looking for more inspiration or resources, check out these helpful links:
 
-- [Creative Bloq](#) - A leading resource for creatives with tips, tutorials, and inspiration.
-- [Design Milk](#) - A design blog with a focus on modern and innovative design.
-- [Dribbble](#) - A community of designers sharing their work and inspiring others.
+-   [Creative Bloq](#) - A leading resource for creatives with tips, tutorials, and inspiration.
+-   [Design Milk](#) - A design blog with a focus on modern and innovative design.
+-   [Dribbble](#) - A community of designers sharing their work and inspiring others.
 
 ## Contact Us
 
-If you have any questions or comments, we'd love to hear from you. Please feel free to reach out to us at [email protected] or via our social media channels:
+If you have any questions or comments, we'd love to hear from you. Please feel free to reach out to us at me@pavolhejny.com or via our social media channels:
 
-- Twitter: [@yourhandle](#)
-- Instagram: [@yourhandle](#)
+-   Twitter: [@yourhandle](#)
+-   Instagram: [@yourhandle](#)
 
 Thank you for choosing our abstract watercolor painting wallpaper for your creative blog. We can't wait to see how it transforms your website!

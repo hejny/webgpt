@@ -12,11 +12,11 @@ Small businesses are particularly vulnerable to cyberattacks, which can result i
 
 Protect your business by taking the following steps:
 
-- Train employees on cybersecurity best practices
-- Use strong passwords and two-factor authentication
-- Keep software and systems up-to-date
-- Regularly back up important data
-- Implement firewalls and antivirus software
+-   Train employees on cybersecurity best practices
+-   Use strong passwords and two-factor authentication
+-   Keep software and systems up-to-date
+-   Regularly back up important data
+-   Implement firewalls and antivirus software
 
 For more detailed information on how to safeguard your company, check out our Cybersecurity Guide for Small Businesses.
 
@@ -30,7 +30,7 @@ Stay up-to-date on the latest cybersecurity news and trends with our references 
 
 ## Contact Us
 
-If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at [email protected] or call us at 555-1234.
+If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at me@pavolhejny.com or call us at 555-1234.
 
 Protect your business from digital threats with our cybersecurity resources. Download our minimalist wallpaper as a visual reminder to stay secure.
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ Stay up-to-date on the latest cybersecurity news and trends with our references 
 
 ## Contact Us
 
-If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at [email protected] or call us at 555-1234.
+If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at me@pavolhejny.com or call us at 555-1234.
 
 Protect your business from digital threats with our cybersecurity resources. Download our minimalist wallpaper as a reminder to stay vigilant.
 
@@ -133,7 +133,7 @@ Stay up-to-date on the latest cybersecurity news and trends with our references 
 
 ## Contact Us
 
-If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at [email protected] or call us at 555-1234.
+If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at me@pavolhejny.com or call us at 555-1234.
 
 Protect your business from digital threats with our cybersecurity resources. Download our minimalist wallpaper as a reminder to stay vigilant.
 
@@ -177,7 +177,7 @@ Stay up-to-date on the latest cybersecurity news and trends with our references 
 
 ## Contact Us
 
-If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at [email protected] or call us at 555-1234.
+If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at me@pavolhejny.com or call us at 555-1234.
 
 Protect your business from digital threats with our cybersecurity resources. Download our minimalist wallpaper as a visual reminder to stay secure.
 
@@ -221,7 +221,7 @@ Stay up-to-date on the latest cybersecurity news and trends with our references 
 
 ## Contact Us
 
-If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at [email protected] or call us at 555-1234.
+If you have any questions or concerns about cybersecurity for your small business, don't hesitate to reach out to us. Our team of experts is here to help. Contact us at me@pavolhejny.com or call us at 555-1234.
 
 Protect your business from digital threats with our cybersecurity resources. Download our minimalist wallpaper as a visual reminder to stay secure.
 

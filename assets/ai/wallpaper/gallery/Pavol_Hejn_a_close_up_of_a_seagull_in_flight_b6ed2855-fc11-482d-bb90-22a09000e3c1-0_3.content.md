@@ -6,9 +6,9 @@ Welcome to our website, where we offer a range of beautiful backgrounds to enhan
 
 ## Why Choose Our Beach Vibes Background?
 
-- Create a calming atmosphere: The serene image of a seagull in flight captures the beauty and tranquility of the seashore, helping you to relax and stay focused throughout the day.
-- High-quality resolution: Our backgrounds are available in high-definition resolution, ensuring that every detail of the image is crystal clear.
-- Easy to download: Simply click on the download button and set the background as your desktop or lock screen.
+-   Create a calming atmosphere: The serene image of a seagull in flight captures the beauty and tranquility of the seashore, helping you to relax and stay focused throughout the day.
+-   High-quality resolution: Our backgrounds are available in high-definition resolution, ensuring that every detail of the image is crystal clear.
+-   Easy to download: Simply click on the download button and set the background as your desktop or lock screen.
 
 ## User Stories
 
@@ -20,13 +20,13 @@ Welcome to our website, where we offer a range of beautiful backgrounds to enhan
 
 Interested in learning more about the benefits of incorporating nature into your workspace? Check out these helpful resources:
 
-- [The Science Behind Nature Sounds and Productivity](#)
-- [How Biophilic Design Can Improve Your Health and Wellbeing](#)
-- [The Benefits of Taking a Walk in Nature](#)
+-   [The Science Behind Nature Sounds and Productivity](#)
+-   [How Biophilic Design Can Improve Your Health and Wellbeing](#)
+-   [The Benefits of Taking a Walk in Nature](#)
 
 ## Contact Us
 
-We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes background, please don't hesitate to contact us at [email protected]. We'll get back to you as soon as possible.
+We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes background, please don't hesitate to contact us at me@pavolhejny.com. We'll get back to you as soon as possible.
 
 ---
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +83,7 @@ Want to learn more about the benefits of incorporating nature into your workspac
 
 ## Contact Us
 
-Have questions or feedback about our Beach Vibes Wallpaper? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have questions or feedback about our Beach Vibes Wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 ---
 
@@ -125,7 +125,7 @@ Interested in learning more about the benefits of incorporating nature into your
 
 ## Contact Us
 
-We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes Background, please don't hesitate to contact us at [email protected]. We'll get back to you as soon as possible.
+We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes Background, please don't hesitate to contact us at me@pavolhejny.com. We'll get back to you as soon as possible.
 
 ---
 
@@ -167,7 +167,7 @@ Interested in learning more about the benefits of incorporating nature into your
 
 ## Contact Us
 
-We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes Background, please don't hesitate to contact us at [email protected]. We'll get back to you as soon as possible.
+We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes Background, please don't hesitate to contact us at me@pavolhejny.com. We'll get back to you as soon as possible.
 
 ---
 
@@ -209,7 +209,7 @@ Interested in learning more about the benefits of incorporating nature into your
 
 ## Contact Us
 
-We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes background, please don't hesitate to contact us at [email protected]. We'll get back to you as soon as possible.
+We're always happy to hear from our customers! If you have any questions or feedback about our Beach Vibes background, please don't hesitate to contact us at me@pavolhejny.com. We'll get back to you as soon as possible.
 
 ---
 

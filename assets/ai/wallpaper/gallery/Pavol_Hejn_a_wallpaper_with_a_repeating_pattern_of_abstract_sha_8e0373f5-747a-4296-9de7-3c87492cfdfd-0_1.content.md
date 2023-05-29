@@ -27,7 +27,7 @@ Want to learn more about the Mandelbrot set? Check out these resources:
 
 ## Contact Us
 
-Have any questions or feedback? Contact us at [email protected] or follow us on [Twitter](#twitter) for updates and inspiration.
+Have any questions or feedback? Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for updates and inspiration.
 
 ---
 
@@ -85,7 +85,7 @@ Want to learn more about the Mandelbrot set? Check out these resources:
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#twitter) for updates and inspiration.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for updates and inspiration.
 
 ---
 
@@ -128,7 +128,7 @@ Want to learn more about the Mandelbrot set? Check out these resources:
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#twitter) for updates and inspiration.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for updates and inspiration.
 
 ---
 
@@ -171,7 +171,7 @@ Want to learn more about the Mandelbrot set? Check out these resources:
 
 ## Contact Us
 
-Have any questions or feedback? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#twitter) for updates and inspiration.
+Have any questions or feedback? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for updates and inspiration.
 
 ---
 
@@ -214,7 +214,7 @@ Want to learn more about the Mandelbrot set? Check out these resources:
 
 ## Contact Us
 
-Have any questions or feedback? Contact us at [email protected] or follow us on [Twitter](#twitter) for updates and inspiration.
+Have any questions or feedback? Contact us at me@pavolhejny.com or follow us on [Twitter](#twitter) for updates and inspiration.
 
 ---
 

@@ -20,13 +20,13 @@ Don't just take our word for it - hear from fellow adventurers who have used our
 
 Check out some of our favorite resources for planning your next outdoor adventure:
 
-- [National Park Service](#)
-- [AllTrails](#)
-- [REI Co-op](#)
+-   [National Park Service](#)
+-   [AllTrails](#)
+-   [REI Co-op](#)
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for the latest updates and tips.
+Have questions or feedback? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and tips.
 
 Get ready to explore the great outdoors like never before. Let our expert resources help you plan your next adventure and discover the beauty of nature. Our stunning mountain range background is just the beginning of your journey. Let's start exploring together!
 
@@ -38,10 +38,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ Check out some of our favorite resources for planning your next outdoor adventur
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for the latest updates and tips.
+Have questions or feedback? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and tips.
 
 Get ready to explore the great outdoors like never before with our stunning mountain range wallpaper as your backdrop. Let's go on an adventure together!
 
@@ -121,7 +121,7 @@ Check out some of our favorite resources for planning your next outdoor adventur
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for the latest updates and tips.
+Have questions or feedback? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and tips.
 
 Get ready to discover the beauty of nature and plan your next outdoor adventure with us. Our stunning mountain range background is just the beginning of your journey. Let's start exploring together!
 
@@ -161,7 +161,7 @@ Check out some of our favorite resources for planning your next outdoor adventur
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for the latest updates and tips.
+Have questions or feedback? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and tips.
 
 Get ready to explore the great outdoors like never before. Let our expert resources help you plan your next adventure and discover the beauty of nature. Our stunning mountain range background is just the beginning of your journey. Let's start exploring together!
 
@@ -201,7 +201,7 @@ Check out some of our favorite resources for planning your next outdoor adventur
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for the latest updates and tips.
+Have questions or feedback? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for the latest updates and tips.
 
 Get ready to explore the great outdoors like never before. Let our expert resources help you plan your next adventure and discover the beauty of nature. Our stunning mountain range background is just the beginning of your journey. Let's start exploring together!
 

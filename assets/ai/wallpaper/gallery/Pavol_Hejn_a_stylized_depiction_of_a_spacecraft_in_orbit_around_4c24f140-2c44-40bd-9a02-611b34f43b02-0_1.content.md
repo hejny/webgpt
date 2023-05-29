@@ -10,27 +10,27 @@ We are a team of space enthusiasts who are passionate about sharing the exciteme
 
 ## Our Services
 
-- **Space News**: Stay up-to-date with the latest news and discoveries in the world of space.
-- **Space Education**: Learn about the science behind space travel and the technology used to explore the cosmos.
-- **User Stories**: Read about the experiences of other space enthusiasts and share your own stories.
+-   **Space News**: Stay up-to-date with the latest news and discoveries in the world of space.
+-   **Space Education**: Learn about the science behind space travel and the technology used to explore the cosmos.
+-   **User Stories**: Read about the experiences of other space enthusiasts and share your own stories.
 
 ## User Stories
 
-> "I've always been fascinated by space, but I never knew where to start. This website has everything I need to satisfy my curiosity." - *John D.*
+> "I've always been fascinated by space, but I never knew where to start. This website has everything I need to satisfy my curiosity." - _John D._
 
-> "The Space Odyssey background is breathtaking. It makes me feel like I'm exploring the unknown depths of space." - *Emily R.*
+> "The Space Odyssey background is breathtaking. It makes me feel like I'm exploring the unknown depths of space." - _Emily R._
 
 ## Resources
 
 Check out some of our favorite resources for exploring space:
 
-- [NASA](#)
-- [SpaceX](#)
-- [ESA](#)
+-   [NASA](#)
+-   [SpaceX](#)
+-   [ESA](#)
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#). 
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 ---
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -92,7 +92,7 @@ Check out some of our favorite resources for exploring space:
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#). 
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 ---
 
@@ -138,7 +138,7 @@ Check out some of our favorite resources for exploring space:
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] or follow us on [Twitter](#). 
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on [Twitter](#).
 
 ---
 

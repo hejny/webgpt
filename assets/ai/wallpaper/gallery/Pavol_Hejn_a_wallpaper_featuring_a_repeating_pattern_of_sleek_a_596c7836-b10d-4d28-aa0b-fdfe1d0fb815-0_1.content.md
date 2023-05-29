@@ -20,22 +20,22 @@ Our background has been used by tech enthusiasts all over the world. Here are so
 
 Our background is designed to be both functional and stylish. Here are some features:
 
-- Repeating pattern of digital devices
-- Sleek and modern design
-- High-quality resolution
-- Compatible with most devices
+-   Repeating pattern of digital devices
+-   Sleek and modern design
+-   High-quality resolution
+-   Compatible with most devices
 
 ## Resources
 
 Here are some resources to help you create a productive and inspiring digital workspace:
 
-- [10 Tips for Creating a Productive Home Office](#)
-- [How to Design Your Digital Workspace for Maximum Productivity](#)
-- [The Benefits of a Well-Designed Digital Workspace](#)
+-   [10 Tips for Creating a Productive Home Office](#)
+-   [How to Design Your Digital Workspace for Maximum Productivity](#)
+-   [The Benefits of a Well-Designed Digital Workspace](#)
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or follow us on Twitter @companyname.
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on Twitter @companyname.
 
 Thank you for visiting our website and we hope you enjoy our modern digital workspace background!
 
@@ -47,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -99,7 +99,7 @@ Here are some references to articles about the importance of having a good digit
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or follow us on Twitter @companyname.
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on Twitter @companyname.
 
 Thank you for visiting our website and we hope you enjoy our digital workspace wallpaper!
 
@@ -148,7 +148,7 @@ Here are some resources to help you create a productive and inspiring digital wo
 
 ## Contact Us
 
-If you have any questions or feedback, please don't hesitate to contact us. You can reach us at [email protected] or follow us on Twitter @companyname.
+If you have any questions or feedback, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or follow us on Twitter @companyname.
 
 Thank you for visiting our website and we hope you enjoy our modern digital workspace background!
 

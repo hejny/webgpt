@@ -28,7 +28,7 @@ We take great care to ensure the accuracy and reliability of the information we 
 
 ## Contact Us
 
-If you have any questions or comments about our website or the resources we provide, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at (555) 123-4567.
+If you have any questions or comments about our website or the resources we provide, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at (555) 123-4567.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of space with us.
 
@@ -92,7 +92,7 @@ We strive to provide accurate and up-to-date information on our website. Here ar
 
 ## Contact Us
 
-If you have any questions or comments about our website or the resources we provide, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at (555) 123-4567.
+If you have any questions or comments about our website or the resources we provide, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at (555) 123-4567.
 
 Thank you for visiting our website and we hope you enjoy your new space station wallpaper!
 
@@ -134,7 +134,7 @@ We take great care to ensure the accuracy and reliability of the information we 
 
 ## Contact Us
 
-If you have any questions or comments about our website or the resources we provide, please don't hesitate to contact us. You can reach us by email at [email protected] or by phone at (555) 123-4567.
+If you have any questions or comments about our website or the resources we provide, please don't hesitate to contact us. You can reach us by email at me@pavolhejny.com or by phone at (555) 123-4567.
 
 Thank you for visiting our website, and we hope you enjoy exploring the wonders of space with us.
 

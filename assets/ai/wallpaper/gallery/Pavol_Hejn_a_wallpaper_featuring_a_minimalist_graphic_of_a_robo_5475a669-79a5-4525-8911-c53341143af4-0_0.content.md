@@ -39,7 +39,7 @@ If you're looking for more resources to help you unleash your creativity, check 
 
 ## Contact Us
 
-If you have any questions or feedback about our robot hand background, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our robot hand background, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -105,7 +105,7 @@ If you're looking for more resources to boost your creativity, check out these h
 
 ## Contact Us
 
-If you have any questions or feedback about our robot hand wallpaper, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our robot hand wallpaper, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -156,7 +156,7 @@ If you're looking for more resources to help you unleash your creativity, check 
 
 ## Contact Us
 
-If you have any questions or feedback about our robot hand background, feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our robot hand background, feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---

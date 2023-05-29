@@ -32,7 +32,7 @@ If you're interested in learning more about the Northern Lights, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Northern Lights background, please don't hesitate to contact us. You can reach us at [email protected] or by filling out the form on our [contact page](#). We look forward to hearing from you!
+If you have any questions or comments about our Northern Lights background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by filling out the form on our [contact page](#). We look forward to hearing from you!
 
 <!--
 
@@ -91,7 +91,7 @@ If you're interested in learning more about the Northern Lights, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Northern Lights wallpaper, please don't hesitate to contact us. You can reach us at [email protected] or by filling out the form on our [contact page](#). We look forward to hearing from you!
+If you have any questions or comments about our Northern Lights wallpaper, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by filling out the form on our [contact page](#). We look forward to hearing from you!
 
 
 ---
@@ -135,6 +135,6 @@ If you're interested in learning more about the Northern Lights, here are some r
 
 ## Contact Us
 
-If you have any questions or comments about our Northern Lights background, please don't hesitate to contact us. You can reach us at [email protected] or by filling out the form on our [contact page](#). We look forward to hearing from you!
+If you have any questions or comments about our Northern Lights background, please don't hesitate to contact us. You can reach us at me@pavolhejny.com or by filling out the form on our [contact page](#). We look forward to hearing from you!
 
 -->

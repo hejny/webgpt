@@ -56,7 +56,7 @@ If you want to learn more about Mars and the exploration of space, here are some
 
 ## Contact Us
 
-If you have any questions or comments about our website, please feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments about our website, please feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 ---
 

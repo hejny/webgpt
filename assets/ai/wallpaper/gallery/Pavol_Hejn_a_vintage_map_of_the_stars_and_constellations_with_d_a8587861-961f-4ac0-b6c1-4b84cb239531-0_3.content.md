@@ -6,10 +6,10 @@ Welcome to our website where you can explore the wonders of space with our vinta
 
 ## Features
 
-- High-quality image
-- Easy to download and use
-- Compatible with various devices and platforms
-- Detailed illustrations of spacecraft and celestial bodies
+-   High-quality image
+-   Easy to download and use
+-   Compatible with various devices and platforms
+-   Detailed illustrations of spacecraft and celestial bodies
 
 ## User Stories
 
@@ -21,13 +21,13 @@ Welcome to our website where you can explore the wonders of space with our vinta
 
 Check out some of our other space-themed resources:
 
-- [NASA Image Library](#)
-- [SpaceX Media Gallery](#)
-- [Hubble Space Telescope Images](#)
+-   [NASA Image Library](#)
+-   [SpaceX Media Gallery](#)
+-   [Hubble Space Telescope Images](#)
 
 ## Contact Us
 
-Have questions about our vintage star map background? Want to share your experience with us? We'd love to hear from you! Contact us at [email protected] or follow us on social media @universedigital.
+Have questions about our vintage star map background? Want to share your experience with us? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on social media @universedigital.
 
 Download our vintage star map background today and take your digital space to the next level!
 
@@ -39,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +83,7 @@ Check out some of our other space-themed products:
 
 ## Contact Us
 
-Have questions about our products? Want to share your experience with our vintage star map wallpaper? We'd love to hear from you! Contact us at [email protected] or follow us on social media @spacewonders.
+Have questions about our products? Want to share your experience with our vintage star map wallpaper? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on social media @spacewonders.
 
 Bring the wonders of space into your home with our vintage star map wallpaper. Order now and take your space decor to the next level!
 
@@ -124,7 +124,7 @@ Check out some of our other space-themed resources:
 
 ## Contact Us
 
-Have questions about our vintage star map background? Want to share your experience with us? We'd love to hear from you! Contact us at [email protected] or follow us on social media @universedigital.
+Have questions about our vintage star map background? Want to share your experience with us? We'd love to hear from you! Contact us at me@pavolhejny.com or follow us on social media @universedigital.
 
 Download our vintage star map background today and take your digital space to the next level!
 

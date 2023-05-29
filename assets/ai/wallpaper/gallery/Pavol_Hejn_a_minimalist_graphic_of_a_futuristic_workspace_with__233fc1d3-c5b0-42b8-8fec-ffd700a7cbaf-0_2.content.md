@@ -37,7 +37,7 @@ If you're interested in learning more about modern minimalist design and how it 
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can reach us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you. You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 
@@ -102,7 +102,7 @@ If you're interested in learning more about minimalism and how it can improve yo
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can reach us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you. You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 
@@ -153,7 +153,7 @@ If you're interested in learning more about modern minimalist design and how it 
 
 ## Contact Us
 
-If you have any questions or feedback, we'd love to hear from you. You can reach us at [email protected] or follow us on [Twitter](#) for updates and inspiration.
+If you have any questions or feedback, we'd love to hear from you. You can reach us at me@pavolhejny.com or follow us on [Twitter](#) for updates and inspiration.
 
 ---
 

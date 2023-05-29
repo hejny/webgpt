@@ -8,10 +8,10 @@ Welcome to our website dedicated to exploring the world of futuristic cityscapes
 
 Our website is your go-to source for all things related to futuristic cityscapes. Here's what you can expect to find:
 
-- Articles on the latest trends in futuristic architecture
-- Galleries of stunning cityscape photography
-- Videos showcasing the most innovative designs in urban planning
-- User stories from people who love the futuristic cityscape aesthetic
+-   Articles on the latest trends in futuristic architecture
+-   Galleries of stunning cityscape photography
+-   Videos showcasing the most innovative designs in urban planning
+-   User stories from people who love the futuristic cityscape aesthetic
 
 ## Get Inspired
 
@@ -19,7 +19,7 @@ Whether you're an architect, designer, or simply someone who appreciates beautif
 
 ## Connect With Us
 
-We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at [email protected] You can also follow us on social media for the latest updates and inspiration.
+We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at me@pavolhejny.com You can also follow us on social media for the latest updates and inspiration.
 
 Thank you for visiting our website dedicated to the world of futuristic cityscapes.
 
@@ -31,10 +31,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -50,7 +50,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Futuristic Cityscape Wallpaper for Your Desktop Background
 
-Welcome to our website, where you can find a stunning wallpaper featuring an abstract illustration of a futuristic cityscape. This wallpaper is perfect for those who love dark and moody color schemes with glowing lights that create a futuristic atmosphere. 
+Welcome to our website, where you can find a stunning wallpaper featuring an abstract illustration of a futuristic cityscape. This wallpaper is perfect for those who love dark and moody color schemes with glowing lights that create a futuristic atmosphere.
 
 ## Why Choose Our Wallpaper?
 
@@ -73,7 +73,7 @@ If you're interested in learning more about the inspiration behind this wallpape
 
 ## Contact Us
 
-If you have any questions or concerns, please don't hesitate to contact us at [email protected] We would love to hear from you!
+If you have any questions or concerns, please don't hesitate to contact us at me@pavolhejny.com We would love to hear from you!
 
 Thank you for choosing our Futuristic Cityscape Wallpaper for your desktop background.
 
@@ -106,7 +106,7 @@ Whether you're an architect, designer, or just someone who appreciates beautiful
 
 ## Connect With Us
 
-We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at [email protected] We also encourage you to follow us on social media for the latest updates and inspiration.
+We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at me@pavolhejny.com We also encourage you to follow us on social media for the latest updates and inspiration.
 
 Thank you for visiting our Futuristic Cityscape website.
 
@@ -139,7 +139,7 @@ Whether you're an architect, designer, or simply someone who appreciates beautif
 
 ## Connect With Us
 
-We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at [email protected] You can also follow us on social media for the latest updates and inspiration.
+We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at me@pavolhejny.com You can also follow us on social media for the latest updates and inspiration.
 
 Thank you for visiting our website dedicated to the world of futuristic cityscapes.
 
@@ -172,7 +172,7 @@ Whether you're an architect, designer, or simply someone who appreciates beautif
 
 ## Connect With Us
 
-We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at [email protected] You can also follow us on social media for the latest updates and inspiration.
+We love hearing from our visitors! If you have any questions or comments, please don't hesitate to reach out to us at me@pavolhejny.com You can also follow us on social media for the latest updates and inspiration.
 
 Thank you for visiting our website dedicated to the world of futuristic cityscapes.
 

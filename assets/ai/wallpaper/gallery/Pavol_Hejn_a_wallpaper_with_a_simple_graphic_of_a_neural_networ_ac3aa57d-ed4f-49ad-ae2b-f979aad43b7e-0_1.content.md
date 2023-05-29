@@ -26,7 +26,7 @@ Looking for more ways to boost your creativity? Check out our list of resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting Neural Pathways. We hope our background inspires you to explore the depths of your own creativity.
 
@@ -81,7 +81,7 @@ Looking for more ways to boost your creativity? Check out our list of resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting Neural Pathways. We hope our wallpaper inspires you to explore the depths of your own creativity.
 
@@ -121,7 +121,7 @@ Looking for more ways to boost your creativity? Check out our list of resources:
 
 ## Contact Us
 
-Have a question or comment? We'd love to hear from you! Contact us at [email protected] and we'll get back to you as soon as possible.
+Have a question or comment? We'd love to hear from you! Contact us at me@pavolhejny.com and we'll get back to you as soon as possible.
 
 Thank you for visiting Neural Pathways. We hope our background inspires you to explore the depths of your own creativity.
 

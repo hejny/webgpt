@@ -20,13 +20,13 @@ Here are some user stories from people who have implemented cybersecurity best p
 
 We have compiled a list of resources to help you learn more about cybersecurity:
 
-- [National Cyber Security Alliance](#)
-- [Cybersecurity and Infrastructure Security Agency](#)
-- [Stay Safe Online](#)
+-   [National Cyber Security Alliance](#)
+-   [Cybersecurity and Infrastructure Security Agency](#)
+-   [Stay Safe Online](#)
 
 ## Contact Us
 
-If you have any questions or comments, please feel free to contact us at [email protected] We are here to help you stay safe and secure in the digital world.
+If you have any questions or comments, please feel free to contact us at me@pavolhejny.com We are here to help you stay safe and secure in the digital world.
 
 ---
 
@@ -40,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -83,7 +83,7 @@ We have compiled a list of resources to help you learn more about cybersecurity:
 
 ## Contact Us
 
-If you have any questions or comments, please feel free to contact us at [email protected] We would love to hear from you!
+If you have any questions or comments, please feel free to contact us at me@pavolhejny.com We would love to hear from you!
 
 ---
 
@@ -125,7 +125,7 @@ We have compiled a list of resources to help you learn more about cybersecurity:
 
 ## Contact Us
 
-If you have any questions or comments, please feel free to contact us at [email protected] We are here to help you stay safe and secure in the digital world.
+If you have any questions or comments, please feel free to contact us at me@pavolhejny.com We are here to help you stay safe and secure in the digital world.
 
 ---
 

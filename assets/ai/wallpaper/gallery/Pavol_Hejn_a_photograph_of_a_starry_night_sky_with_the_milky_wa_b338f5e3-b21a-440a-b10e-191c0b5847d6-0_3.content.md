@@ -6,10 +6,10 @@ Our cosmic background is your gateway to the wonders of the universe. Featuring 
 
 ## Features
 
-- High-resolution image that looks great on any screen size
-- Easy to download and set as your background
-- Compatible with all major operating systems and devices
-- Completely free to use
+-   High-resolution image that looks great on any screen size
+-   Easy to download and set as your background
+-   Compatible with all major operating systems and devices
+-   Completely free to use
 
 ## User Stories
 
@@ -21,13 +21,13 @@ Our cosmic background is your gateway to the wonders of the universe. Featuring 
 
 Want to learn more about the stars and galaxies you're seeing in our cosmic background? Check out these resources:
 
-- [NASA's Astronomy Picture of the Day](#)
-- [Sky & Telescope Magazine](#)
-- [The Royal Astronomical Society](#)
+-   [NASA's Astronomy Picture of the Day](#)
+-   [Sky & Telescope Magazine](#)
+-   [The Royal Astronomical Society](#)
 
 ## Contact
 
-Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for updates and news about our latest backgrounds.
+Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news about our latest backgrounds.
 
 ---
 
@@ -41,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -85,7 +85,7 @@ Want to learn more about the stars and galaxies you're seeing in our Night Sky W
 
 ## Contact
 
-Have questions or feedback about our Night Sky Wallpaper? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for updates and news about our latest wallpapers.
+Have questions or feedback about our Night Sky Wallpaper? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news about our latest wallpapers.
 
 ---
 
@@ -128,7 +128,7 @@ Want to learn more about the stars and galaxies you're seeing in our cosmic back
 
 ## Contact
 
-Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for updates and news about our latest backgrounds.
+Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news about our latest backgrounds.
 
 ---
 
@@ -171,7 +171,7 @@ Want to learn more about the stars and galaxies you're seeing in our cosmic back
 
 ## Contact
 
-Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for updates and news about our latest backgrounds.
+Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news about our latest backgrounds.
 
 ---
 
@@ -214,7 +214,7 @@ Want to learn more about the stars and galaxies you're seeing in our cosmic back
 
 ## Contact
 
-Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at [email protected] or follow us on [Twitter](#) for updates and news about our latest backgrounds.
+Have questions or feedback about our cosmic background? We'd love to hear from you! Get in touch with us at me@pavolhejny.com or follow us on [Twitter](#) for updates and news about our latest backgrounds.
 
 ---
 

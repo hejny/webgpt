@@ -27,7 +27,7 @@ Looking for more information on virtual reality? Check out these helpful referen
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] or via our social media channels:
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com or via our social media channels:
 
 -   Twitter: [@VRHub](#)
 -   Facebook: [@VirtualRealityHub](#)
@@ -87,7 +87,7 @@ Looking for more information on virtual reality? Check out these helpful referen
 
 ## Contact Us
 
-Have a question or suggestion? We'd love to hear from you! Contact us at [email protected] or via our social media channels:
+Have a question or suggestion? We'd love to hear from you! Contact us at me@pavolhejny.com or via our social media channels:
 
 - Twitter: [@VRHub](#)
 - Facebook: [@VirtualRealityHub](#)

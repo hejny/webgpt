@@ -22,7 +22,7 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in using our cityscape background, please visit our [online store](#). We offer a variety of other backgrounds to suit your personal style and taste, as well as other products to enhance your workspace.
 
-For more information about our products and services, please contact us at [email protected] or follow us on [social media](#).
+For more information about our products and services, please contact us at me@pavolhejny.com or follow us on [social media](#).
 
 Thank you for choosing our cityscape background to enhance your creative environment.
 
@@ -34,10 +34,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -73,7 +73,7 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in purchasing our futuristic cityscape wallpaper, please visit our [online store](#). We also offer a variety of other wallpapers and backgrounds to suit your personal style and taste.
 
-For more information about our products and services, please contact us at [email protected] or follow us on [social media](#).
+For more information about our products and services, please contact us at me@pavolhejny.com or follow us on [social media](#).
 
 Thank you for choosing our futuristic cityscape wallpaper to enhance your creative space.
 
@@ -109,7 +109,7 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in using our abstract cityscape background, please visit our [online store](#). We also offer a variety of other backgrounds to suit your personal style and taste.
 
-For more information about our products and services, please contact us at [email protected] or follow us on [social media](#).
+For more information about our products and services, please contact us at me@pavolhejny.com or follow us on [social media](#).
 
 Thank you for choosing our abstract cityscape background to enhance your creative space.
 
@@ -145,7 +145,7 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in using our cityscape background, please visit our [online store](#). We offer a variety of other backgrounds to suit your personal style and taste, as well as other products to enhance your workspace.
 
-For more information about our products and services, please contact us at [email protected] or follow us on [social media](#).
+For more information about our products and services, please contact us at me@pavolhejny.com or follow us on [social media](#).
 
 Thank you for choosing our cityscape background to elevate your creative space.
 
@@ -181,7 +181,7 @@ Here are some user stories from our satisfied customers:
 
 If you're interested in using our cityscape background, please visit our [online store](#). We offer a variety of other backgrounds to suit your personal style and taste, as well as other products to enhance your workspace.
 
-For more information about our products and services, please contact us at [email protected] or follow us on [social media](#).
+For more information about our products and services, please contact us at me@pavolhejny.com or follow us on [social media](#).
 
 Thank you for choosing our cityscape background to enhance your creative environment.
 

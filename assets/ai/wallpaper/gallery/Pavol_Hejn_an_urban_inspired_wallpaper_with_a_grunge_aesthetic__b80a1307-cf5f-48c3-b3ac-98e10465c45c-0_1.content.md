@@ -33,7 +33,7 @@ Check out some of our other designs that can transform your space:
 
 ## Contact Us
 
-Have questions about our designs or need help with installation? Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our designs or need help with installation? Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Transform your creative space into an inspiring environment with our City Nightscape design. Order now and bring a touch of futurism to your space.
 
@@ -93,7 +93,7 @@ Check out some of our other wallpapers:
 
 ## Contact Us
 
-Have questions about our wallpaper or need help with installation? Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our wallpaper or need help with installation? Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Add a touch of futurism to your creative space with our city nightscape wallpaper. Order now and transform your workspace into an inspiring environment.
 
@@ -138,7 +138,7 @@ Check out some of our other designs that can transform your space:
 
 ## Contact Us
 
-Have questions about our designs or need help with installation? Contact us at [email protected] or give us a call at 555-1234.
+Have questions about our designs or need help with installation? Contact us at me@pavolhejny.com or give us a call at 555-1234.
 
 Transform your creative space into an inspiring environment with our City Nightscape design. Order now and bring a touch of futurism to your space.
 

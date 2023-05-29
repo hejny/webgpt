@@ -26,13 +26,13 @@ Our background has already been downloaded by thousands of users around the worl
 
 If you're interested in learning more about space and astronomy, check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 
-If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com We'd love to hear from you!
 
 Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
 
@@ -44,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ If you're interested in learning more about space and astronomy, check out these
 
 ## Contact Us
 
-If you have any questions or comments about our wallpaper, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our wallpaper, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com We'd love to hear from you!
 
 Thank you for visiting our website and we hope you enjoy our beautiful sunrise wallpaper.
 
@@ -139,7 +139,7 @@ If you're interested in learning more about space and astronomy, check out these
 
 ## Contact Us
 
-If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com We'd love to hear from you!
 
 Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
 
@@ -185,7 +185,7 @@ If you're interested in learning more about space and astronomy, check out these
 
 ## Contact Us
 
-If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com We'd love to hear from you!
 
 Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
 
@@ -231,7 +231,7 @@ If you're interested in learning more about space and astronomy, check out these
 
 ## Contact Us
 
-If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our background, please don't hesitate to get in touch. You can reach us at me@pavolhejny.com We'd love to hear from you!
 
 Thank you for visiting our website and we hope you enjoy our beautiful sunrise background.
 

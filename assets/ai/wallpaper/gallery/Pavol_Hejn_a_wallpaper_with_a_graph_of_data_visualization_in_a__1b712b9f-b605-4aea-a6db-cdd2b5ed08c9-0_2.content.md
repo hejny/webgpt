@@ -8,9 +8,9 @@ Welcome to our website, where we help you make informed decisions through data v
 
 Our team of experts can help you make sense of complex data sets through the use of visual aids. We offer a range of services, including:
 
-- Data analysis
-- Customized data visualization solutions
-- Training and support
+-   Data analysis
+-   Customized data visualization solutions
+-   Training and support
 
 ## User Stories
 
@@ -30,7 +30,7 @@ We pride ourselves on delivering high-quality work to our clients. Here are some
 
 ## Contact Us
 
-If you're interested in learning more about how we can help you make better decisions through data visualization, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at [email protected]
+If you're interested in learning more about how we can help you make better decisions through data visualization, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at me@pavolhejny.com
 
 Thank you for considering our services!
 
@@ -42,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -89,7 +89,7 @@ We pride ourselves on delivering high-quality work to our clients. Here are some
 
 ## Contact Us
 
-If you're interested in learning more about how we can help you make better decisions through data visualization, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at [email protected]
+If you're interested in learning more about how we can help you make better decisions through data visualization, please don't hesitate to contact us. You can reach us through our website or by emailing us directly at me@pavolhejny.com
 
 Thank you for considering our services!
 

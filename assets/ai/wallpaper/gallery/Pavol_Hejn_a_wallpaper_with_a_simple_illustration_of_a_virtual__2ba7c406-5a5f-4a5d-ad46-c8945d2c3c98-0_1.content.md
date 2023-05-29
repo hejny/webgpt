@@ -8,10 +8,10 @@ Welcome to our website dedicated to virtual reality gaming! Our site is designed
 
 Virtual reality gaming is an exciting new way to experience video games. With VR technology, you can immerse yourself in a virtual world and interact with it like never before. Here are some reasons why you should try virtual reality gaming:
 
-- Immersive experience: Virtual reality gaming provides an immersive experience that traditional gaming cannot match. You feel like you're actually inside the game.
-- Realistic graphics: VR technology allows for realistic graphics that make the virtual world look and feel like the real world.
-- Interactive gameplay: With VR technology, you can interact with the virtual world in ways that were previously impossible. You can use your hands to pick up objects, shoot guns, and more.
-- Fun and exciting: Virtual reality gaming is fun and exciting. It's a great way to escape from reality and explore new worlds.
+-   Immersive experience: Virtual reality gaming provides an immersive experience that traditional gaming cannot match. You feel like you're actually inside the game.
+-   Realistic graphics: VR technology allows for realistic graphics that make the virtual world look and feel like the real world.
+-   Interactive gameplay: With VR technology, you can interact with the virtual world in ways that were previously impossible. You can use your hands to pick up objects, shoot guns, and more.
+-   Fun and exciting: Virtual reality gaming is fun and exciting. It's a great way to escape from reality and explore new worlds.
 
 ## User Stories
 
@@ -27,13 +27,13 @@ Here are some user stories from gamers who have experienced virtual reality gami
 
 If you're interested in learning more about virtual reality gaming, here are some references that you might find helpful:
 
-- [Oculus](#)
-- [HTC Vive](#)
-- [PlayStation VR](#)
+-   [Oculus](#)
+-   [HTC Vive](#)
+-   [PlayStation VR](#)
 
 ## Contact Us
 
-If you have any questions or comments about virtual reality gaming, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about virtual reality gaming, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 <!--
 
@@ -43,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -93,7 +93,7 @@ If you're interested in learning more about virtual reality gaming, here are som
 
 ## Contact Us
 
-If you have any questions or comments about our virtual reality gaming wallpaper, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about our virtual reality gaming wallpaper, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -138,7 +138,7 @@ If you're interested in learning more about virtual reality gaming, here are som
 
 ## Contact Us
 
-If you have any questions or comments about virtual reality gaming, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about virtual reality gaming, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -183,7 +183,7 @@ If you're interested in learning more about virtual reality gaming, here are som
 
 ## Contact Us
 
-If you have any questions or comments about virtual reality gaming, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about virtual reality gaming, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -228,7 +228,7 @@ If you're interested in learning more about virtual reality gaming, here are som
 
 ## Contact Us
 
-If you have any questions or comments about virtual reality gaming, please feel free to contact us at [email protected] We'd love to hear from you!
+If you have any questions or comments about virtual reality gaming, please feel free to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---

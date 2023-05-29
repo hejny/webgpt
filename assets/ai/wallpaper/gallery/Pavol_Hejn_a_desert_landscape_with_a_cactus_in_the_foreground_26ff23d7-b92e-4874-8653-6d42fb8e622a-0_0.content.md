@@ -14,20 +14,20 @@ To use our Desert Oasis background, simply download the image and set it as your
 
 ## User Stories
 
-- "I've been struggling to stay focused during work hours, but after changing my desktop background to the Desert Oasis, I feel more relaxed and productive."
-- "As an artist, I need a workspace that inspires creativity. The Desert Oasis background helps me feel connected to nature and sparks new ideas."
-- "I love using the Desert Oasis background for my virtual meetings. It's a great conversation starter and helps break the ice."
+-   "I've been struggling to stay focused during work hours, but after changing my desktop background to the Desert Oasis, I feel more relaxed and productive."
+-   "As an artist, I need a workspace that inspires creativity. The Desert Oasis background helps me feel connected to nature and sparks new ideas."
+-   "I love using the Desert Oasis background for my virtual meetings. It's a great conversation starter and helps break the ice."
 
 ## Additional Resources
 
 If you're interested in learning more about how to create a calming workspace, check out these helpful resources:
 
-- [5 Tips for Creating a Calming Workspace](#)
-- [The Benefits of Natural Elements in Your Workspace](#)
+-   [5 Tips for Creating a Calming Workspace](#)
+-   [The Benefits of Natural Elements in Your Workspace](#)
 
 ## Contact Us
 
-If you have any questions or feedback about our website or resources, please don't hesitate to contact us at [email protected] We're always happy to hear from you!
+If you have any questions or feedback about our website or resources, please don't hesitate to contact us at me@pavolhejny.com We're always happy to hear from you!
 
 <!--
 
@@ -37,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -81,7 +81,7 @@ If you're interested in learning more about the benefits of using nature-inspire
 
 ## Contact Us
 
-If you have any questions or feedback about our wallpapers, please don't hesitate to contact us at [email protected] We'd love to hear from you!
+If you have any questions or feedback about our wallpapers, please don't hesitate to contact us at me@pavolhejny.com We'd love to hear from you!
 
 
 ---
@@ -120,6 +120,6 @@ If you're interested in learning more about how to create a calming workspace, c
 
 ## Contact Us
 
-If you have any questions or feedback about our website or resources, please don't hesitate to contact us at [email protected] We're always happy to hear from you!
+If you have any questions or feedback about our website or resources, please don't hesitate to contact us at me@pavolhejny.com We're always happy to hear from you!
 
 -->

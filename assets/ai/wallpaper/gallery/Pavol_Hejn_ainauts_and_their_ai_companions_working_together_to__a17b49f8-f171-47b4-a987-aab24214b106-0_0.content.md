@@ -24,7 +24,7 @@ We've compiled a list of references for those interested in learning more about 
 
 ## Contact Us
 
-If you have any questions or comments about our website, please don't hesitate to contact us. We're always looking for feedback and suggestions on how we can improve our content. You can reach us at [email protected]
+If you have any questions or comments about our website, please don't hesitate to contact us. We're always looking for feedback and suggestions on how we can improve our content. You can reach us at me@pavolhejny.com
 
 ---
 
@@ -79,7 +79,7 @@ We've compiled a list of references for those interested in learning more about 
 
 ## Contact Us
 
-If you have any questions or comments about our website, please don't hesitate to contact us. We're always looking for feedback and suggestions on how we can improve our content. You can reach us at [email protected]
+If you have any questions or comments about our website, please don't hesitate to contact us. We're always looking for feedback and suggestions on how we can improve our content. You can reach us at me@pavolhejny.com
 
 ---
 

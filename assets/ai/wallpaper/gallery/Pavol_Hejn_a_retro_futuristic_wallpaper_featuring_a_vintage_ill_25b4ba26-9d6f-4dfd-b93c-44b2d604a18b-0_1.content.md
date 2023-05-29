@@ -25,7 +25,7 @@ Looking for more ways to elevate your workspace? Check out our blog for inspirat
 
 ## Contact Us
 
-Have any questions or comments? We'd love to hear from you! Please reach out to us at [email protected] or follow us on [Twitter](#) for more updates and inspiration.
+Have any questions or comments? We'd love to hear from you! Please reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for more updates and inspiration.
 
 Transform your workspace into a stylish and functional haven with our retro-futuristic wallpaper. Order now and take your space to the next level.
 
@@ -81,7 +81,7 @@ Check out some of our other wallpapers:
 
 ## Contact Us
 
-Have any questions or comments? We'd love to hear from you! Please reach out to us at [email protected] or follow us on [Twitter](#) for more updates and inspiration.
+Have any questions or comments? We'd love to hear from you! Please reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for more updates and inspiration.
 
 Make a statement with our retro-futuristic wallpaper and transform your workspace into a tech-savvy haven. Order now and add some personality to your daily routine!
 
@@ -118,7 +118,7 @@ Looking for more ways to elevate your workspace? Check out our blog for inspirat
 
 ## Contact Us
 
-Have any questions or comments? We'd love to hear from you! Please reach out to us at [email protected] or follow us on [Twitter](#) for more updates and inspiration.
+Have any questions or comments? We'd love to hear from you! Please reach out to us at me@pavolhejny.com or follow us on [Twitter](#) for more updates and inspiration.
 
 Transform your workspace into a stylish and functional haven with our retro-futuristic wallpaper. Order now and take your space to the next level.
 
