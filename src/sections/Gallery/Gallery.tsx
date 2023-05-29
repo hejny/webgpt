@@ -49,10 +49,10 @@ export function GallerySection(props: SampleProps) {
                 />
             )}
 
-            <pre>{JSON.stringify(filter, null, 4)}</pre>
+            {/*<pre>{JSON.stringify(filter, null, 4)}</pre>*/}
 
             <br />
-            <Items itemsOnRow={3}>
+            <Items>
                 {
                     // TODO: !! Some pagination
                     filteredWallpapers.map((wallpaper, i) => (
