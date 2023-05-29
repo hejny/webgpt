@@ -172,6 +172,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: !!! Export fonts propperly: <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
  * TODO: !! Add Favicon in zip (+other icons)
  * TODO: !!! Add license file into zip
  * TODO: !!! Fix translations in export
