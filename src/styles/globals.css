@@ -51,7 +51,7 @@ a.button {
 }
 
 .button.button-featured:hover .emoji {
-    animation: hue-rotate 2s infinite, wobble 0.3s infinite alternate;
+    animation: hue-rotate 2s infinite, shake 0.3s infinite alternate;
 }
 
 @keyframes hue-rotate {
@@ -63,7 +63,7 @@ a.button {
     }
 }
 
-@keyframes wobble {
+@keyframes shake {
     0% {
         transform: rotate(-10deg);
     }
