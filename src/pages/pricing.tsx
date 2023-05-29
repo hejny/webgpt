@@ -1,5 +1,3 @@
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { PricingTableNext } from '../components/PricingTable/PricingTableNext';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';

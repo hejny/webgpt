@@ -48,7 +48,18 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: await getWallpapers(),
+            wallpapers: (await getWallpapers()).map((fullWallpaper) => {
+                const { id, src, colorStats, title } = fullWallpaper;
+                return {
+                    id,
+                    src,
+                    prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                    colorStats /* <- TODO: !! Also reduce colorStats */,
+                    // TODO: shapeStats> IWallpaperShapeStats;
+                    title,
+                    content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                } satisfies IWallpaper;
+            }),
         },
     };
 }
