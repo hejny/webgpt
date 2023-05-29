@@ -1,30 +1,33 @@
 .items {
     display: flex;
     flex-flow: row wrap;
-
-    row-gap: 40px;
     margin-bottom: 30px;
 }
 
-.items.row-with-2-items > * {
-    width: 50%;
+.items > * {
+    width: calc(100% / 1);
 }
 
-.items.row-with-3-items > * {
-    width: 33.333%;
-}
-
-.items > a {
-    color: inherit;
-    text-decoration: inherit;
-}
-
-@media only screen and (max-width: 650px) {
-    .items.row-with-2-items > * {
-        width: 100%;
+@media only screen and (min-width: 850px) {
+    .items > * {
+        width: calc(100% / 2);
     }
+}
 
-    .items.row-with-3-items > * {
-        width: 100%;
+@media only screen and (min-width: 1000px) {
+    .items > * {
+        width: calc(100% / 3);
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .items > * {
+        width: calc(100% / 4);
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .items > * {
+        width: calc(100% / 5);
     }
 }
