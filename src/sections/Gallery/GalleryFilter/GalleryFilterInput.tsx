@@ -1,5 +1,6 @@
 import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
+import { Article } from '../../../components/Article/Article';
 import { SelectWithFirst } from '../../../components/SelectWithFirst/SelectWithFirst';
 import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
@@ -53,9 +54,14 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 Prefer color:&nbsp;&nbsp;
                 <input
                     type="color"
-                    defaultValue={(color || Color.get('white')).toHex()}
+                    defaultValue={(color || Color.fromHex('#777777')).toHex()}
                     onChange={debounce((event) => setColor(Color.fromHex(event.target.value)), 500)}
                 />
+                {color && (
+                    <div onClick={() => setColor(undefined)}>
+                        <Article content="❌" isUsingOpenmoji />
+                    </div>
+                )}
             </div>
 
             <SelectWithFirst

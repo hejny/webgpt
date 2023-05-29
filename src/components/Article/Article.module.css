@@ -34,8 +34,8 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 }
 
 .Article blockquote,
-.Article img,
-.Article iframe {
+.Article iframe
+/* Note: Note .Article img because it can be an emoji */ {
     display: block;
     margin: 20px;
 }
