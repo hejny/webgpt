@@ -15,11 +15,11 @@ import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
 const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
-export interface PageProps {
+export interface GalleryPageProps {
     wallpapers: Array<JsonObject & IWallpaper>;
 }
 
-export default function GalleryPage({ wallpapers }: PageProps) {
+export default function GalleryPage({ wallpapers }: GalleryPageProps) {
     return (
         <WallpapersContext.Provider
             value={hydrateWallpapers(wallpapers)} /* <- Is this the right place to be Provider in? */

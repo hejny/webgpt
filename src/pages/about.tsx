@@ -1,6 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { Vector } from 'xyzt';
-import { PageProps } from '.';
+import { GalleryPageProps } from '.';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
@@ -10,11 +9,9 @@ import styles from '../styles/static.module.css';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
-export default function AboutPage({ wallpapers }: PageProps) {
+export default function AboutPage() {
     return (
-        <WallpapersContext.Provider
-            value={hydrateWallpapers(wallpapers)} /* <- Is this the right place to be Provider in? */
-        >
+        <>
             <StaticAppHead subtitle="About" /* <- TODO: !! Translate */ />
 
             <div className={styles.page}>
@@ -34,23 +31,10 @@ export default function AboutPage({ wallpapers }: PageProps) {
                     <FooterSection />
                 </footer>
             </div>
-        </WallpapersContext.Provider>
+        </>
     );
 }
 
-export async function getStaticProps({ locale }: { locale: string }) {
-    return {
-        props: {
-            ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: await getWallpapers(),
-        },
-    };
-}
-
 /**
- * TODO: [🪒] Can be getStaticProps shared between all pages?
- * TODO: Make some menu
- * TODO: [🧈] Best way how to share page css
- * TODO: DRY with index.tsx
- * TODO: [🔗] ACRY should we use <a ...>...</a> OR <Link ...>...</Link> for external links in Next App
+ * TODO: Make or remove this page
  */
