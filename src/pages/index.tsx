@@ -24,7 +24,6 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
             <StaticAppHead subtitle={null} />
 
             <div className={classNames(styles.page, font.className)}>
-                <header>{/* <HeaderWallpaper /> */}</header>
                 <main>
                     {/* <HomepageWelcomeSection variant="SIDEPAGE" />*/}
                     <GallerySection />

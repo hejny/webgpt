@@ -1,0 +1,62 @@
+/**
+ * Note: This is the config style, it is used to configure the whole page.
+ */
+
+:root {
+    /* 🎨 Note: This is a color palette computed by colorful-192x108-16bit-v14palette algorithm */
+
+    /* Note: --palette-0 is The most common color to appear at the bottom of the wallpaper. */
+    --palette-0: #001122;
+    --palette-0-triplet: 0, 17, 34;
+    /* Note: --palette-1 is 1st most satulighted color of the bottom half of the wallpaper which is contrast enough (50%) against the primary color. */
+    --palette-1: #11eeee;
+    --palette-1-triplet: 17, 238, 238;
+    /* Note: --palette-2 is 4th most frequent color of the bottom half of the wallpaper which is distant enough (10%) and hue-distant enough (30°) from all other palette colors. */
+    --palette-2: #555588;
+    --palette-2-triplet: 85, 85, 136;
+    /* Note: --palette-3 is 6th most frequent color of the bottom half of the wallpaper which is distant enough (10%) and hue-distant enough (30°) from all other palette colors. */
+    --palette-3: #aa1122;
+    --palette-3-triplet: 170, 17, 34;
+    /* Note: --palette-4 is 2nd most satulighted color of the bottom half of the wallpaper which is distant enough (10%) and hue-distant enough (30°) from all other palette colors. */
+    --palette-4: #ff33bb;
+    --palette-4-triplet: 255, 51, 187;
+    /* Note: --palette-5 is 3rd most frequent color of the bottom half of the wallpaper which is distant enough (10%) and hue-distant enough (30°) from all other palette colors. */
+    --palette-5: #ffee77;
+    --palette-5-triplet: 255, 238, 119;
+    --palette-6: var(--palette-0);
+    --palette-6-triplet: var(--palette-0-triplet);
+    --palette-7: var(--palette-1);
+    --palette-7-triplet: var(--palette-1-triplet);
+    --palette-8: var(--palette-2);
+    --palette-8-triplet: var(--palette-2-triplet);
+    --palette-9: var(--palette-3);
+    --palette-9-triplet: var(--palette-3-triplet);
+    --palette-10: var(--palette-4);
+    --palette-10-triplet: var(--palette-4-triplet);
+    --palette-11: var(--palette-5);
+    --palette-11-triplet: var(--palette-5-triplet);
+    --palette-12: var(--palette-0);
+    --palette-12-triplet: var(--palette-0-triplet);
+    --palette-13: var(--palette-1);
+    --palette-13-triplet: var(--palette-1-triplet);
+    --palette-14: var(--palette-2);
+    --palette-14-triplet: var(--palette-2-triplet);
+    --palette-15: var(--palette-3);
+    --palette-15-triplet: var(--palette-3-triplet);
+    --palette-16: var(--palette-4);
+    --palette-16-triplet: var(--palette-4-triplet);
+    --palette-17: var(--palette-5);
+    --palette-17-triplet: var(--palette-5-triplet);
+    --palette-18: var(--palette-0);
+    --palette-18-triplet: var(--palette-0-triplet);
+    --palette-19: var(--palette-1);
+    --palette-19-triplet: var(--palette-1-triplet);
+    --palette-20: var(--palette-2);
+    --palette-20-triplet: var(--palette-2-triplet);
+    --palette-21: var(--palette-3);
+    --palette-21-triplet: var(--palette-3-triplet);
+    --palette-22: var(--palette-4);
+    --palette-22-triplet: var(--palette-4-triplet);
+    --palette-23: var(--palette-5);
+    --palette-23-triplet: var(--palette-5-triplet);
+}
