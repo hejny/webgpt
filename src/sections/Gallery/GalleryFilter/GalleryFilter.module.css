@@ -8,13 +8,13 @@
     padding: 5px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row wrap;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.GalleryFilter > * {
+.filter {
     /*/
     outline: 1px dotted green;
     /**/
@@ -25,12 +25,19 @@
     border-radius: 5px;
 
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 650px) {
     .GalleryFilter {
         flex-direction: column;
+    }
+
+    .filter {
+        width: calc(100% - 20px);
     }
 }

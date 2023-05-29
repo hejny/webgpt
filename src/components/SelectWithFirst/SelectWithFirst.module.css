@@ -1,5 +1,10 @@
 .SelectWithFirst {
     /* TODO: Use or remove empty css */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .SelectWithFirst .title {

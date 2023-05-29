@@ -7,17 +7,18 @@ interface SelectWithFirstProps<TValue> {
     onChange(newValue: TValue): void;
     numberOfButtons?: number;
     options: Array<{ id: TValue; title: string }>;
+    className?: string;
 }
 
 export function SelectWithFirst<TValue>(props: SelectWithFirstProps<TValue>) {
-    const { title, value, onChange, numberOfButtons = 1 } = props;
+    const { title, value, onChange, numberOfButtons = 1,className } = props;
 
     const options = [...props.options];
     const firstOptions = options.slice(0, numberOfButtons);
     const restOptions = options.slice(numberOfButtons);
 
     return (
-        <div className={styles.SelectWithFirst}>
+        <div className={classNames(styles.SelectWithFirst,className)}>
             <span className={styles.title}>{title}</span>
 
             {firstOptions.map((option) => (

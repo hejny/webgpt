@@ -40,7 +40,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
         <div className={styles.GalleryFilter}>
             {/* <h3>Filters</h3> */}
 
-            <div>
+            <div className={styles.filter}>
                 Search:&nbsp;&nbsp;
                 <input
                     type="text"
@@ -49,7 +49,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 />
             </div>
 
-            <div>
+            <div className={styles.filter}>
                 Prefer color:&nbsp;&nbsp;
                 <input
                     type="color"
@@ -59,6 +59,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
             </div>
 
             <SelectWithFirst
+                className={styles.filter}
                 title={`Like status: `}
                 value={likedStatus}
                 onChange={(newLikedStatus) => void setLikedStatus(newLikedStatus)}
@@ -74,6 +75,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
             />
 
             <SelectWithFirst
+                className={styles.filter}
                 title={`Items on page: `}
                 value={limit}
                 onChange={(newLimit) => void setLimit(newLimit)}
@@ -87,6 +89,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
             />
 
             <SelectWithFirst
+                className={styles.filter}
                 title={`Order: `}
                 value={isRandom}
                 onChange={(newIsRandom) => void setRandom(newIsRandom)}
