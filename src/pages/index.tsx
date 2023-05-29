@@ -1,12 +1,9 @@
-import { Barlow_Condensed, Oswald } from '@next/font/google';
+import { Barlow_Condensed } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
-
-import { TiledBackground } from '../components/TiledBackground/TiledBackground';
 import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
-import { FooterSection } from '../sections/90-Footer/Footer';
 import { GallerySection } from '../sections/Gallery/Gallery';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
@@ -28,17 +25,16 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 
             <div className={classNames(styles.page, font.className)}>
                 <header>{/* <HeaderWallpaper /> */}</header>
-                <div className={styles.background}>
-                    {/* TODO: Do some system for multiple pages */}
-                    <TiledBackground />
-                </div>
                 <main>
                     {/* <HomepageWelcomeSection variant="SIDEPAGE" />*/}
                     <GallerySection />
                 </main>
+
+                {/* TODO: Make here footer
                 <footer>
                     <FooterSection />
                 </footer>
+                */}
             </div>
         </WallpapersContext.Provider>
     );
@@ -65,6 +61,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 /**
+ * TODO: !!! This should be in /embed/gallery and index should be generated from this and create more indexes
  * TODO: !! [🧶] FAQ section - how it works
  * TODO: !! [1] Filters - [Fulltext][Light/Dark/Color]
  * TODO: !! [1] Order - [Relevance][DateGenerated][Random][Lightness][Color] / [ASC][DESC]

@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useContext, useState } from 'react';
 import { Item } from '../../components/Items/Item';
 import { Items } from '../../components/Items/Items';
-import { Section } from '../../components/Section/Section';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { useInitial } from '../../utils/hooks/useInitial';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
@@ -36,11 +35,11 @@ export function GallerySection(props: SampleProps) {
     ); /* <- TODO: !!! Cache (memoize) + Do async */
 
     return (
-        <Section>
-            {/* <- TODO: !! Make propper secrion from this */}
-            {/* TODO: !! Translate */}
+        <>
+            {/*
             <h1>AI Web Maker</h1>
             <p>Web pages listed here are pre-generated using AI:</p>
+            */}
 
             {!isInitial && (
                 <GalleryFilterInput
@@ -51,7 +50,6 @@ export function GallerySection(props: SampleProps) {
 
             {/*<pre>{JSON.stringify(filter, null, 4)}</pre>*/}
 
-            <br />
             <Items>
                 {
                     // TODO: !! Some pagination
@@ -138,7 +136,7 @@ export function GallerySection(props: SampleProps) {
                     ))
                 }
             </Items>
-        </Section>
+        </>
     );
 }
 

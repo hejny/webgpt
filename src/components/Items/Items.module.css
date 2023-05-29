@@ -1,7 +1,6 @@
 .items {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 30px;
 }
 
 .items > * {
