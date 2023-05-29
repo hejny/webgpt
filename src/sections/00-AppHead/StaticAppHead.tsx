@@ -28,7 +28,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
                 <title>{title}</title>
                 <meta name="description" content={description} />
                 <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
-                <meta name="theme-color" content={'#000000'} />
+                <meta name="theme-color" content={'#121121' /* <- TODO: Color to config */} />
 
                 {/* Open Graph (Facebook) */}
                 <meta property="og:title" content={title} />

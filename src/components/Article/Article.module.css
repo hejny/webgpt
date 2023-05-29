@@ -23,6 +23,8 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 .Article ul,
 .Article ol {
     text-align: left;
+
+    /* !!! */
 }
 
 .Article hr {
@@ -31,12 +33,28 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
     border: 2px solid(--palette-2);
 }
 
+.Article blockquote,
+.Article img,
+.Article iframe {
+    display: block;
+    margin: 20px;
+}
+
 .Article blockquote {
     font-size: 1.2em;
     border: 2px solid var(--palette-2);
-    margin: 20px;
     padding: 20px;
     /* TODO: Allow to mix opacity> background-color: rgba(var(--palette-1), 0.5); @see https://stackoverflow.com/a/41265350 */
+}
+
+.Article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.Article iframe {
+    width: 100%;
+    aspect-ratio: 3 / 2 /* <- TODO: Ideally 100vh / 100vw */;
 }
 
 /*

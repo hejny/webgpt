@@ -5,13 +5,8 @@
 html {
     color-scheme: dark;
     image-rendering: smooth;
-
     scroll-behavior: smooth;
     scroll-padding-top: 10px;
-}
-
-body {
-    background-color: #121121 /* <- TODO: Color to config */;
 }
 
 /* TODO: Make isolated components from <Button/>, <Button isFeatured/> and <Emoji/>*/

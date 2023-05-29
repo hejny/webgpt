@@ -27,7 +27,7 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
         wallpapers = wallpapers.filter(
             (wallpaper) =>
                 colorDistanceSquared(
-                    wallpaper.colorStats.averageColor /* <- TODO: !!! Test here whole palette */,
+                    wallpaper.colorStats.averageColor /* <- TODO: !!! Test here (whole) palette */,
                     color,
                 ) <= treasholdSquared,
         );
@@ -69,3 +69,8 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
 
     return wallpapers;
 }
+
+
+/**
+ * TODO: !!! Liked should filter also Loved
+ */
