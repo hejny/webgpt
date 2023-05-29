@@ -1,4 +1,4 @@
-import { Oswald } from '@next/font/google';
+import { Barlow_Condensed, Oswald } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
@@ -13,7 +13,7 @@ import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 
-const oswaltFont = Oswald({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
+const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export interface GalleryPageProps {
     wallpapers: Array<JsonObject & IWallpaper>;
@@ -26,7 +26,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
         >
             <StaticAppHead subtitle={null} />
 
-            <div className={classNames(styles.page, oswaltFont.className)}>
+            <div className={classNames(styles.page, font.className)}>
                 <header>{/* <HeaderWallpaper /> */}</header>
                 <div className={styles.background}>
                     {/* TODO: Do some system for multiple pages */}
