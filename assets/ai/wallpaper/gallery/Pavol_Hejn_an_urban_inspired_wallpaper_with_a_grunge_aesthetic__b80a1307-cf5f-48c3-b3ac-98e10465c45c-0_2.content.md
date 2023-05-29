@@ -2,6 +2,8 @@
 
 # City Nights
 
+<!--font:Barlow Condensed-->
+
 Welcome to Urban Nights, a website dedicated to exploring the vibrant energy and excitement of modern cities. Our site is designed for urban enthusiasts who love the fast-paced lifestyle and dynamic culture of the city.
 
 ## A Glimpse into the Future
@@ -24,16 +26,16 @@ Here are some stories from fellow urban enthusiasts who have been inspired by ou
 
 If you're interested in learning more about urban environments and the latest trends in city living, check out these resources:
 
-- [CityLab](#)
-- [The Urbanist](#)
-- [Curbed](#)
+-   [CityLab](#)
+-   [The Urbanist](#)
+-   [Curbed](#)
 
 ## Get in Touch
 
 If you have any questions or comments about our website or our background image, we'd love to hear from you!
 
-- Email: [info@urbannights.com](mailto:info@urbannights.com)
-- Twitter: [@urbannights](#)
+-   Email: [info@urbannights.com](mailto:info@urbannights.com)
+-   Twitter: [@urbannights](#)
 
 Join our community of urban enthusiasts and discover the energy of the city today!
 
@@ -45,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

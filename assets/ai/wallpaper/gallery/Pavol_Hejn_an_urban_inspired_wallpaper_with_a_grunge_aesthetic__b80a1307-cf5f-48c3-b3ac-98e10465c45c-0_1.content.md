@@ -2,14 +2,16 @@
 
 # Futuristic Nightscape
 
+<!--font:Barlow Condensed-->
+
 Looking for a unique and inspiring backdrop for your creative space? Our City Nightscape design features a grunge aesthetic of a neon-lit cityscape, complete with holographic billboards that add a touch of futurism to any room.
 
 ## Features
 
-- High-quality print with vibrant colors
-- Easy to install and remove
-- Durable and long-lasting material
-- Customizable size to fit any wall
+-   High-quality print with vibrant colors
+-   Easy to install and remove
+-   Durable and long-lasting material
+-   Customizable size to fit any wall
 
 ## Inspiration
 
@@ -25,9 +27,9 @@ Our City Nightscape design is all about inspiring creativity and imagination. Im
 
 Check out some of our other designs that can transform your space:
 
-- [Tropical Paradise](#)
-- [Mountain Adventure](#)
-- [Ocean View](#)
+-   [Tropical Paradise](#)
+-   [Mountain Adventure](#)
+-   [Ocean View](#)
 
 ## Contact Us
 
@@ -43,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

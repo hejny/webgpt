@@ -2,6 +2,8 @@
 
 # Moody Nights
 
+<!--font:Barlow Condensed-->
+
 Welcome to Stormy Nights, a destination for those seeking creative inspiration and a moody atmosphere. Our featured desktop background is an interpretation of a thunderstorm that will add depth and character to your computer screen.
 
 ## Why Choose Stormy Nights?
@@ -12,11 +14,11 @@ Our backgrounds are designed to inspire creativity, spark imagination, and set t
 
 ## Features
 
-- High-resolution images that look great on any screen size
-- Abstract designs that are both beautiful and meaningful
-- Moody and atmospheric themes that reflect your mood and personality
-- Easy to download and install
-- Compatible with all major operating systems
+-   High-resolution images that look great on any screen size
+-   Abstract designs that are both beautiful and meaningful
+-   Moody and atmospheric themes that reflect your mood and personality
+-   Easy to download and install
+-   Compatible with all major operating systems
 
 ## User Stories
 
@@ -28,9 +30,9 @@ Our backgrounds are designed to inspire creativity, spark imagination, and set t
 
 Check out our other collections of abstract backgrounds:
 
-- [Mystical Forests](#)
-- [Dreamy Landscapes](#)
-- [Cosmic Wonders](#)
+-   [Mystical Forests](#)
+-   [Dreamy Landscapes](#)
+-   [Cosmic Wonders](#)
 
 ## Contact Us
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

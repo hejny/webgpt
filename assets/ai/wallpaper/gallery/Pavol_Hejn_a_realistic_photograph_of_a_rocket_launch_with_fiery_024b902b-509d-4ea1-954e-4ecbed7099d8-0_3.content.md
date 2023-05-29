@@ -2,6 +2,8 @@
 
 # Frontier Exploration
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to space exploration! Our stunning background image features a realistic photograph of a rocket launch, with fiery trails and smoke visible in the sky. It sets the tone for the exciting content you'll find here.
 
 ## About Us
@@ -12,9 +14,9 @@ Our website is dedicated to providing information about space exploration and th
 
 Our users come from all walks of life and have different interests in space exploration. Here are some examples:
 
-- Tom, a high school student, uses our website to learn about the history of space exploration and the latest discoveries.
-- Sarah, a graphic designer, finds inspiration for her next project by exploring the stunning images of our universe.
-- John, an astronomy enthusiast, follows our Twitter account for updates on upcoming space missions.
+-   Tom, a high school student, uses our website to learn about the history of space exploration and the latest discoveries.
+-   Sarah, a graphic designer, finds inspiration for her next project by exploring the stunning images of our universe.
+-   John, an astronomy enthusiast, follows our Twitter account for updates on upcoming space missions.
 
 ## Resources
 
@@ -34,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

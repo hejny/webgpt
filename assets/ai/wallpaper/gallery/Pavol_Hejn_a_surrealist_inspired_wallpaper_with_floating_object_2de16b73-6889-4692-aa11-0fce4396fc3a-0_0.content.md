@@ -2,6 +2,8 @@
 
 # Steampunk World
 
+<!--font:Barlow Condensed-->
+
 Welcome to The Steampunk Workshop, where we bring the fantastical world of steampunk to life. Our website is dedicated to all things steampunk, from fashion to home decor and everything in between. Our surreal-inspired wallpaper with floating objects such as gears, cogs, and computer parts, against a background of muted colors is just one example of the unique products we offer.
 
 ## Our Products
@@ -20,8 +22,8 @@ Our customers come from all walks of life, but they all share a love of steampun
 
 We take pride in the quality of our products and the satisfaction of our customers. Here are some references from our happy customers:
 
-- "The wallpaper is absolutely stunning! The attention to detail is incredible." - Jane D.
-- "I was blown away by the selection of products on The Steampunk Workshop. It's a steampunk lover's dream come true!" - Mark T.
+-   "The wallpaper is absolutely stunning! The attention to detail is incredible." - Jane D.
+-   "I was blown away by the selection of products on The Steampunk Workshop. It's a steampunk lover's dream come true!" - Mark T.
 
 ## Contact Us
 
@@ -39,10 +41,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

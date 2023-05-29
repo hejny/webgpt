@@ -2,6 +2,8 @@
 
 # Sustain Archi-Future
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we explore the possibilities of sustainable architecture and how it can shape our future. Our mission is to create a world where humans and nature coexist in harmony, and we believe that sustainable architecture is the key to achieving this.
 
 ## Our Vision
@@ -20,9 +22,9 @@ At [company name], we specialize in sustainable architecture that combines cutti
 
 Our clients come from diverse backgrounds and industries, but they all share a common goal: to create a sustainable future. Here are some of their stories:
 
-- [Client name], a tech company that wanted to build a headquarters that reflected their commitment to sustainability.
-- [Client name], a hotel chain that wanted to reduce their carbon footprint while providing a luxurious experience for their guests.
-- [Client name], a nonprofit organization that needed a community center that was both functional and environmentally friendly.
+-   [Client name], a tech company that wanted to build a headquarters that reflected their commitment to sustainability.
+-   [Client name], a hotel chain that wanted to reduce their carbon footprint while providing a luxurious experience for their guests.
+-   [Client name], a nonprofit organization that needed a community center that was both functional and environmentally friendly.
 
 ## References
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

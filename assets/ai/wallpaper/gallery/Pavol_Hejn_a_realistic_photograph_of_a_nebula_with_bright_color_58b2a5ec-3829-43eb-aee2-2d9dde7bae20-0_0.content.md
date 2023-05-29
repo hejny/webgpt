@@ -2,15 +2,17 @@
 
 # Cosmic Wonders
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a stunning collection of space-themed backgrounds that will take you on a journey through the universe. Our selection includes breathtaking images of nebulas, galaxies, and planets, all captured in exquisite detail.
 
 ## Why Choose Our Space Backgrounds?
 
 Our backgrounds are more than just beautiful images - they offer a range of benefits:
 
-- **Inspiration:** Our cosmic backgrounds can help spark your creativity and imagination.
-- **Relaxation:** Gazing at the vast expanse of the universe can be a calming and meditative experience.
-- **Education:** Our backgrounds can be used as teaching aids for children or anyone interested in learning more about space.
+-   **Inspiration:** Our cosmic backgrounds can help spark your creativity and imagination.
+-   **Relaxation:** Gazing at the vast expanse of the universe can be a calming and meditative experience.
+-   **Education:** Our backgrounds can be used as teaching aids for children or anyone interested in learning more about space.
 
 ## Our Nebula Background
 
@@ -36,9 +38,9 @@ If you have any questions or comments about our backgrounds, please don't hesita
 
 Want to learn more about the universe? Check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [Astronomy Magazine](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [Astronomy Magazine](#)
 
 <!--
 
@@ -48,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

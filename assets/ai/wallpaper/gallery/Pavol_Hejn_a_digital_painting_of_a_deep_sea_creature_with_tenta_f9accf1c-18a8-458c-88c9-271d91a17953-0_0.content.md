@@ -2,6 +2,8 @@
 
 # Deep Sea Adventure
 
+<!--font:Barlow Condensed-->
+
 Welcome to Exploring the Depths, a website dedicated to all things deep sea exploration! Our mission is to provide you with the latest news and information about the Fas<wbr>ci<wbr>na<wbr>ting world beneath the waves.
 
 ## Wallpaper Background

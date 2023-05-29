@@ -2,6 +2,8 @@
 
 # Futuristic Workspace
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to helping you achieve your goals and increase productivity. As part of our commitment to providing the best resources, we have included a stunning illustration of a futuristic workspace as a background image. The design features a minimalist and modern style that is perfect for creating a calming and focused environment.
 
 ## Why Choose Our Background?
@@ -26,17 +28,17 @@ Here are some stories from our users who have used our background and experience
 
 Looking for more tips and tricks to boost your productivity? Check out these helpful resources:
 
-- [10 Tips for Creating a Productive Workspace](#)
-- [5 Tools to Help You Stay Focused and Get Things Done](#)
-- [The Benefits of Minimalism in the Workplace](#)
+-   [10 Tips for Creating a Productive Workspace](#)
+-   [5 Tools to Help You Stay Focused and Get Things Done](#)
+-   [The Benefits of Minimalism in the Workplace](#)
 
 ## Contact Us
 
 If you have any questions or feedback, we would love to hear from you. Please feel free to contact us at [email protected] or via our social media channels:
 
-- Twitter: [@ProductivityHQ](#)
-- Facebook: [@ProductivityHQ](#)
-- Instagram: [@ProductivityHQ](#)
+-   Twitter: [@ProductivityHQ](#)
+-   Facebook: [@ProductivityHQ](#)
+-   Instagram: [@ProductivityHQ](#)
 
 Thank you for visiting our website and using our background. We hope it helps you achieve your goals and stay productive!
 
@@ -48,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

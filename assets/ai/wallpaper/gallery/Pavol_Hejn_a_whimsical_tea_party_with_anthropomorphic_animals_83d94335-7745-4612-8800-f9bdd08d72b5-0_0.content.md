@@ -2,6 +2,8 @@
 
 # Animal Space Whimsy
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a variety of unique and playful designs featuring An<wbr>thro<wbr>po<wbr>mor<wbr>phic animals. Our "Whimsical Tea Party with An<wbr>thro<wbr>po<wbr>mor<wbr>phic Animals" design is just one of the many options we have available.
 
 ## About Our Designs

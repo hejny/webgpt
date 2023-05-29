@@ -2,6 +2,8 @@
 
 # Cosmic Wonders
 
+<!--font:Barlow Condensed-->
+
 Step into the vast expanse of space with our stunning cosmic collection! Each image in our collection has been carefully selected to showcase the beauty and mystery of the universe. From distant galaxies to the icy moons of Jupiter, our collection offers a glimpse into the wonders of space.
 
 ## Our Collection
@@ -22,9 +24,9 @@ To use our cosmic images, simply download the image that catches your eye and se
 
 Want to learn more about the science behind our cosmic images? Check out some of our favorite resources:
 
-- [NASA's Astronomy Picture of the Day](#)
-- [The Hubble Space Telescope's official website](#)
-- [The Planetary Society](#)
+-   [NASA's Astronomy Picture of the Day](#)
+-   [The Hubble Space Telescope's official website](#)
+-   [The Planetary Society](#)
 
 ## Contact Us
 
@@ -42,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

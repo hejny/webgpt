@@ -2,6 +2,8 @@
 
 # Minimalist Workspace
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to helping you create a workspace that's both functional and visually appealing. Our modern minimalist design features sleek lines and a contemporary color scheme, providing the perfect backdrop for your workspace.
 
 ## Why Choose a Modern Minimalist Design?
@@ -12,10 +14,10 @@ A cluttered workspace can be overwhelming and distracting, making it difficult t
 
 Our design is versatile and can be used in a variety of ways to create a cohesive workspace. Here are some ideas to get you started:
 
-- Choose furniture with clean lines and a neutral color palette
-- Incorporate natural materials such as wood and plants to add warmth and texture
-- Use pops of color sparingly to create visual interest without overwhelming the space
-- Hang artwork or prints with simple geometric shapes or abstract designs
+-   Choose furniture with clean lines and a neutral color palette
+-   Incorporate natural materials such as wood and plants to add warmth and texture
+-   Use pops of color sparingly to create visual interest without overwhelming the space
+-   Hang artwork or prints with simple geometric shapes or abstract designs
 
 ## User Stories
 
@@ -29,9 +31,9 @@ Here are some stories from our satisfied customers who have used our modern mini
 
 If you're interested in learning more about modern minimalist design and how it can improve your workspace, check out these resources:
 
-- [Apartment Therapy](#)
-- [Architectural Digest](#)
-- [Dwell](#)
+-   [Apartment Therapy](#)
+-   [Architectural Digest](#)
+-   [Dwell](#)
 
 ## Contact Us
 
@@ -49,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,6 +2,8 @@
 
 # Ainautes Future
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to exploring the exciting world of AI-assisted work in Ainautes. Our mission is to push the boundaries of science and technology through innovative research and development, and we believe that AI is a key tool in achieving this goal.
 
 ## Our Wallpaper: A Glimpse into the Future

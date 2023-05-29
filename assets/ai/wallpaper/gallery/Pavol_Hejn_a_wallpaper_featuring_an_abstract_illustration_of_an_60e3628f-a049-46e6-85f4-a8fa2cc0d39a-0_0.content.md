@@ -2,6 +2,8 @@
 
 # AI Search Future
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we delve into the world of artificial intelligence and its impact on search engines. Our website features a sleek and modern design, including an abstract illustration of an AI-powered search engine set against a gradient background.
 
 ## What are AI-Powered Search Engines?
@@ -16,17 +18,17 @@ Our minimalist design provides a visually stunning backdrop for anyone intereste
 
 Here are some examples of how our website has helped users explore the world of AI-powered search engines:
 
-- "I'm fascinated by the potential of AI-powered search engines, and this website has been an invaluable resource for me." - Emily S.
-- "As a business owner, I need to stay up-to-date on the latest search engine trends. This website has helped me do just that." - Mike D.
-- "The design of this website is so clean and modern. It's a pleasure to navigate and makes learning about AI-powered search engines fun and engaging." - Sarah L.
+-   "I'm fascinated by the potential of AI-powered search engines, and this website has been an invaluable resource for me." - Emily S.
+-   "As a business owner, I need to stay up-to-date on the latest search engine trends. This website has helped me do just that." - Mike D.
+-   "The design of this website is so clean and modern. It's a pleasure to navigate and makes learning about AI-powered search engines fun and engaging." - Sarah L.
 
 ## Resources
 
 If you're interested in learning more about AI-powered search engines, check out these resources:
 
-- [How AI Is Changing the Future of Search](#)
-- [The Benefits of Machine Learning in Search Engines](#)
-- [Google's Use of AI in Search Results](#)
+-   [How AI Is Changing the Future of Search](#)
+-   [The Benefits of Machine Learning in Search Engines](#)
+-   [Google's Use of AI in Search Results](#)
 
 ## Contact Us
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

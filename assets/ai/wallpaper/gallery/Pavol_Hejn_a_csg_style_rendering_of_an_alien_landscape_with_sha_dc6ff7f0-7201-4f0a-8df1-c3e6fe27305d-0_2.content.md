@@ -2,6 +2,8 @@
 
 # Future Industries
 
+<!--font:Barlow Condensed-->
+
 Welcome to Futuristic Industries, where we are committed to creating a better tomorrow through cutting-edge technology and innovative design. Our mission is to push the boundaries of what is possible and create a world that is both sustainable and efficient.
 
 ## Our Vision
@@ -12,10 +14,10 @@ At Futuristic Industries, we believe that the key to a better future lies in our
 
 We offer a wide range of services to help businesses and individuals create a more sustainable future. Our services include:
 
-- Sustainable Design: We work with architects and designers to create buildings and structures that are both beautiful and environmentally friendly.
-- Renewable Energy: We specialize in the development of renewable energy sources such as solar and wind power.
-- Industrial Design: Our team of industrial designers can help you create products that are both functional and aesthetically pleasing.
-- Research and Development: We are constantly exploring new technologies and ideas to help us create a better future.
+-   Sustainable Design: We work with architects and designers to create buildings and structures that are both beautiful and environmentally friendly.
+-   Renewable Energy: We specialize in the development of renewable energy sources such as solar and wind power.
+-   Industrial Design: Our team of industrial designers can help you create products that are both functional and aesthetically pleasing.
+-   Research and Development: We are constantly exploring new technologies and ideas to help us create a better future.
 
 ## User Stories
 
@@ -29,9 +31,9 @@ Here are some stories from our satisfied customers:
 
 Check out some of our latest projects:
 
-- [The Solar Tower](#)
-- [The Wind Farm](#)
-- [The Green Office Building](#)
+-   [The Solar Tower](#)
+-   [The Wind Farm](#)
+-   [The Green Office Building](#)
 
 ## Contact Us
 
@@ -45,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,19 +2,24 @@
 
 # Custom Dashboards
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to helping businesses streamline their operations through effective data management. Our custom-designed digital dashboard provides the perfect backdrop for monitoring and managing your company's data.
 
 ## Features
-- Our digital dashboard is designed to be visually appealing while providing ample space for important data.
-- The clean, minimalist design ensures that your data remains the focus.
-- The dashboard can be customized to match your brand's color scheme or aesthetic preferences.
+
+-   Our digital dashboard is designed to be visually appealing while providing ample space for important data.
+-   The clean, minimalist design ensures that your data remains the focus.
+-   The dashboard can be customized to match your brand's color scheme or aesthetic preferences.
 
 ## Benefits
-- Having a constant reminder of your company's data at your fingertips can help you make informed decisions more quickly.
-- The dashboard can serve as a conversation starter for team meetings, encouraging collaboration and idea-sharing.
-- Using a custom-designed dashboard can help reinforce your company's brand identity.
+
+-   Having a constant reminder of your company's data at your fingertips can help you make informed decisions more quickly.
+-   The dashboard can serve as a conversation starter for team meetings, encouraging collaboration and idea-sharing.
+-   Using a custom-designed dashboard can help reinforce your company's brand identity.
 
 ## User Stories
+
 Our clients have reported increased productivity and improved decision-making since implementing our custom data dashboards. Here are just a few examples:
 
 > "Before we started using the dashboard, it was difficult to get a clear picture of how our business was performing. Now, with all the data in one place, we can see trends and patterns that were previously hidden." - John D., Marketing Director
@@ -22,9 +27,11 @@ Our clients have reported increased productivity and improved decision-making si
 > "The dashboard has been a game-changer for our team. We can now track progress on all our projects in real-time and make adjustments as needed." - Sarah L., CEO
 
 ## References
+
 For more information on how our data management solutions can benefit your business, please visit our [homepage](#).
 
 ## Contact Us
+
 If you're interested in learning more about our custom data dashboards or any of our other data management services, please don't hesitate to [contact us](#). We look forward to hearing from you!
 
 <!--
@@ -35,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

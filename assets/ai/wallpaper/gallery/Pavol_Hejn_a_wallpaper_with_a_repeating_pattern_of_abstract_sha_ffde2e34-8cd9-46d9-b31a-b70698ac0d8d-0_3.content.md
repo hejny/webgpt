@@ -2,16 +2,18 @@
 
 # Abstract Workspace
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer inspiration for elevating your workspace with abstract shapes. Our collection features a range of abstract shapes and colors that can be used as backgrounds or accents to enhance your creative environment.
 
 ## Why Choose Abstract Shapes?
 
 Abstract shapes are a versatile design element that can add depth, texture, and visual interest to any space. Here are some reasons why you should choose abstract shapes for your workspace:
 
-- Unique design: Our collection features original designs inspired by the latest trends in web and graphic design.
-- Customizable: Abstract shapes can be used in a variety of ways, from full-wall murals to small accents on furniture or decor.
-- Inspiring: Abstract shapes can evoke different moods and emotions depending on their color and composition, making them a powerful tool for sparking creativity and focus.
-- Easy to install: Many of our abstract shape designs are available as peel-and-stick decals or removable wallpaper, making them easy to install and remove without damaging walls or surfaces.
+-   Unique design: Our collection features original designs inspired by the latest trends in web and graphic design.
+-   Customizable: Abstract shapes can be used in a variety of ways, from full-wall murals to small accents on furniture or decor.
+-   Inspiring: Abstract shapes can evoke different moods and emotions depending on their color and composition, making them a powerful tool for sparking creativity and focus.
+-   Easy to install: Many of our abstract shape designs are available as peel-and-stick decals or removable wallpaper, making them easy to install and remove without damaging walls or surfaces.
 
 ## User Stories
 
@@ -25,9 +27,9 @@ Our abstract shapes have already transformed many workspaces into inspiring envi
 
 If you're not sure where to start with incorporating abstract shapes into your workspace, we've got you covered. Check out our blog for tips and inspiration on using abstract shapes, as well as resources for finding the perfect design for your space.
 
-- [5 Ways to Use Abstract Shapes in Your Workspace](#5-ways-to-use-abstract-shapes-in-your-workspace)
-- [Finding the Perfect Abstract Shape Design](#finding-the-perfect-abstract-shape-design)
-- [Creating a Cohesive Look with Abstract Shapes](#creating-a-cohesive-look-with-abstract-shapes)
+-   [5 Ways to Use Abstract Shapes in Your Workspace](#5-ways-to-use-abstract-shapes-in-your-workspace)
+-   [Finding the Perfect Abstract Shape Design](#finding-the-perfect-abstract-shape-design)
+-   [Creating a Cohesive Look with Abstract Shapes](#creating-a-cohesive-look-with-abstract-shapes)
 
 ## Contact Us
 
@@ -43,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

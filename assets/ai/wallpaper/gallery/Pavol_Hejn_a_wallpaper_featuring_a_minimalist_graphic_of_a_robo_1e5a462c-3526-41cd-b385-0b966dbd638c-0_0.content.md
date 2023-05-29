@@ -2,6 +2,8 @@
 
 # RoboNote
 
+<!--font:Barlow Condensed-->
+
 Welcome to RoboNote, a minimalist note-taking platform designed to help you capture your ideas and thoughts with ease. Our platform features a sleek graphic of a robot hand holding a stylus or pen, providing a subtle backdrop for your note-taking.
 
 ## How to Use RoboNote
@@ -12,10 +14,10 @@ To get started with RoboNote, simply sign up for an account and start creating n
 
 RoboNote offers a range of features to enhance your note-taking experience, including:
 
-- **Minimalist Design:** Our platform features a simple and clean design, allowing you to focus on your ideas without distractions.
-- **Customizable Layouts:** Choose from a variety of layouts to suit your note-taking needs.
-- **Sync Across Devices:** Sync your notes across multiple devices, so you can access them wherever you go.
-- **Share Your Notes:** Share your notes with others via email or social media, or export them as PDFs for easy printing.
+-   **Minimalist Design:** Our platform features a simple and clean design, allowing you to focus on your ideas without distractions.
+-   **Customizable Layouts:** Choose from a variety of layouts to suit your note-taking needs.
+-   **Sync Across Devices:** Sync your notes across multiple devices, so you can access them wherever you go.
+-   **Share Your Notes:** Share your notes with others via email or social media, or export them as PDFs for easy printing.
 
 ## User Stories
 
@@ -29,9 +31,9 @@ Here are some stories from our users about how they've used RoboNote to enhance 
 
 Check out these resources to learn more about note-taking and productivity:
 
-- [The Bullet Journal Method](#) by Ryder Carroll
-- [Getting Things Done](#) by David Allen
-- [How to Take Smart Notes](#) by Sönke Ahrens
+-   [The Bullet Journal Method](#) by Ryder Carroll
+-   [Getting Things Done](#) by David Allen
+-   [How to Take Smart Notes](#) by Sönke Ahrens
 
 ## Contact Us
 
@@ -45,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

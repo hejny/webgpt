@@ -2,6 +2,8 @@
 
 # AI Search Revolution
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we explore the latest advancements in online search technology. Our mission is to keep you informed about the most innovative and user-friendly search engines available today.
 
 ## The Future of Search: AI-Powered Engines
@@ -12,9 +14,9 @@ At the forefront of this revolution are AI-powered search engines. These cutting
 
 But what do these advancements mean for everyday users? Here are just a few examples of how AI-powered search engines are changing the game:
 
-- "I used to spend hours sifting through irrelevant search results. But with an AI-powered engine, I can find exactly what I need in minutes." - Sarah, Marketing Manager
-- "As a small business owner, I don't have time to waste on ineffective searches. Thanks to AI-powered engines, I can quickly find the information I need to grow my business." - John, Entrepreneur
-- "I'm not very tech-savvy, but even I can appreciate how easy it is to use an AI-powered search engine. It's like having a personal assistant at my fingertips!" - Maria, Retiree
+-   "I used to spend hours sifting through irrelevant search results. But with an AI-powered engine, I can find exactly what I need in minutes." - Sarah, Marketing Manager
+-   "As a small business owner, I don't have time to waste on ineffective searches. Thanks to AI-powered engines, I can quickly find the information I need to grow my business." - John, Entrepreneur
+-   "I'm not very tech-savvy, but even I can appreciate how easy it is to use an AI-powered search engine. It's like having a personal assistant at my fingertips!" - Maria, Retiree
 
 ## References: Stay Informed About the Latest Trends
 
@@ -34,10 +36,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

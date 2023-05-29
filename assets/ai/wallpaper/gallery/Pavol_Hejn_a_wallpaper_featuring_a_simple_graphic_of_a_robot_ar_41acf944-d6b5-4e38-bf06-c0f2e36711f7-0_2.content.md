@@ -2,6 +2,8 @@
 
 # TechNotify
 
+<!--font:Barlow Condensed-->
+
 Welcome to TechNotify, the ultimate tool for staying on top of your important notifications and messages. Our simple and intuitive interface makes it easy to manage all of your notifications in one place, so you never miss a thing.
 
 ## Customize Your Experience with our Robot Arm Wallpaper
@@ -12,12 +14,12 @@ To set this wallpaper as your background, simply navigate to the "Settings" sect
 
 ## Features
 
-- Receive notifications from all your apps in one place
-- Customize notification settings for each app
-- Snooze notifications for later
-- Mark notifications as read or unread
-- Search through your notification history
-- Sync across all your devices
+-   Receive notifications from all your apps in one place
+-   Customize notification settings for each app
+-   Snooze notifications for later
+-   Mark notifications as read or unread
+-   Search through your notification history
+-   Sync across all your devices
 
 ## User Stories
 
@@ -29,9 +31,9 @@ To set this wallpaper as your background, simply navigate to the "Settings" sect
 
 Check out these resources to learn more about how TechNotify can help you stay on top of your notifications:
 
-- User Guide
-- FAQ
-- Support Forum
+-   User Guide
+-   FAQ
+-   Support Forum
 
 ## Contact Us
 
@@ -45,10 +47,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

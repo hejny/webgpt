@@ -2,6 +2,8 @@
 
 # 3D Interior Design
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to helping you elevate your interior design with 3D-printed objects. Our mission is to inspire and guide you through the process of creating a unique and personalized space that reflects your style and personality.
 
 ## About Us

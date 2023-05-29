@@ -2,15 +2,17 @@
 
 # Northern Lights Screen
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where you can download a stunning wallpaper featuring the Aurora Borealis. Our wallpaper is more than just a beautiful background - it's a window into the natural world and a source of inspiration for anyone who loves the night sky.
 
 ## Why Choose Our Aurora Borealis Wallpaper?
 
 Our wallpaper captures the beauty and mystery of the Northern Lights in vivid detail. Here are some reasons why you should choose our wallpaper:
 
-- High-quality resolution: Our wallpaper is available in high-definition resolution, ensuring that every detail of the Aurora Borealis is captured in stunning clarity.
-- Easy to install: Installing our wallpaper is quick and easy, so you can enjoy the magic of the Northern Lights on your screen in no time.
-- Compatible with all devices: Whether you're using a desktop computer, laptop, tablet, or smartphone, our wallpaper is compatible with all devices.
+-   High-quality resolution: Our wallpaper is available in high-definition resolution, ensuring that every detail of the Aurora Borealis is captured in stunning clarity.
+-   Easy to install: Installing our wallpaper is quick and easy, so you can enjoy the magic of the Northern Lights on your screen in no time.
+-   Compatible with all devices: Whether you're using a desktop computer, laptop, tablet, or smartphone, our wallpaper is compatible with all devices.
 
 ## User Stories
 
@@ -24,9 +26,9 @@ Here are some stories from our satisfied users:
 
 If you're interested in learning more about the Aurora Borealis, here are some resources to check out:
 
-- [National Geographic's Guide to the Northern Lights](#)
-- [NASA's Aurora Image Gallery](#)
-- [The Aurora Zone: Northern Lights Guide](#)
+-   [National Geographic's Guide to the Northern Lights](#)
+-   [NASA's Aurora Image Gallery](#)
+-   [The Aurora Zone: Northern Lights Guide](#)
 
 ## Contact Us
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

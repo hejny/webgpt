@@ -2,6 +2,8 @@
 
 # Digital Optimization
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to helping you optimize your digital workspace. Our sleek and modern background featuring a repeating pattern of digital devices, such as smartphones, tablets, and laptops, is the perfect addition to enhance your workspace environment.
 
 ## About Us
@@ -28,9 +30,9 @@ Check out our blog for helpful articles on how to improve your digital workspace
 
 Looking for more information? Check out our list of recommended resources:
 
-- [Productivity Tools](#)
-- [Workspace Organization Tips](#)
-- [Digital Minimalism Guide](#)
+-   [Productivity Tools](#)
+-   [Workspace Organization Tips](#)
+-   [Digital Minimalism Guide](#)
 
 ## Contact Us
 
@@ -48,10 +50,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -67,7 +69,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Digital Workspace Wallpaper
 
-Welcome to our website dedicated to helping you create the perfect digital workspace. Our sleek and modern wallpaper featuring a repeating pattern of digital devices, such as smartphones, tablets, and laptops, is the perfect background for your computer screen. 
+Welcome to our website dedicated to helping you create the perfect digital workspace. Our sleek and modern wallpaper featuring a repeating pattern of digital devices, such as smartphones, tablets, and laptops, is the perfect background for your computer screen.
 
 ## About Us
 

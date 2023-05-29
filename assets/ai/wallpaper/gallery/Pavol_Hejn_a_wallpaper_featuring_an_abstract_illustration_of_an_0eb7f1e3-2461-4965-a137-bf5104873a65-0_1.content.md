@@ -2,6 +2,8 @@
 
 # AI Search Background
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a unique user experience powered by the latest AI technology. Our minimalist and modern design is complemented by a stunning wallpaper featuring an abstract illustration of our AI-powered search engine.
 
 ## About Us
@@ -12,18 +14,18 @@ Our company is dedicated to providing the most advanced search technology availa
 
 Our users love the simplicity and effectiveness of our search engine. Here are just a few examples of how our technology has helped people find exactly what they need:
 
-- "I was able to find the perfect gift for my wife in minutes thanks to your search engine."
-- "Your search results are so accurate and relevant, it's like you know exactly what I'm looking for."
-- "I never knew searching could be so easy. Your AI-powered search engine has changed the game for me."
+-   "I was able to find the perfect gift for my wife in minutes thanks to your search engine."
+-   "Your search results are so accurate and relevant, it's like you know exactly what I'm looking for."
+-   "I never knew searching could be so easy. Your AI-powered search engine has changed the game for me."
 
 ## Features
 
 Our search engine is packed with powerful features that make finding what you need a breeze. Here are just a few of the highlights:
 
-- **AI-powered:** Our advanced algorithms learn from your searches to provide even more accurate results over time.
-- **Fast and efficient:** With lightning-fast response times, you'll never have to wait long for your results.
-- **Intuitive interface:** Our minimalist design makes it easy to find what you need without any clutter or distractions.
-- **Customizable settings:** Tailor your search experience to your preferences with our customizable settings.
+-   **AI-powered:** Our advanced algorithms learn from your searches to provide even more accurate results over time.
+-   **Fast and efficient:** With lightning-fast response times, you'll never have to wait long for your results.
+-   **Intuitive interface:** Our minimalist design makes it easy to find what you need without any clutter or distractions.
+-   **Customizable settings:** Tailor your search experience to your preferences with our customizable settings.
 
 ## References
 
@@ -47,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

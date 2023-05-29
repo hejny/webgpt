@@ -2,6 +2,8 @@
 
 # Cybermind Blog
 
+<!--font:Barlow Condensed-->
+
 Welcome to Cybermind, a blog dedicated to exploring the ever-evolving relationship between humans and technology. Our minimalist wallpaper with a single line drawing of a cyborg in a striking color such as bright red or blue sets the tone for our futuristic vision.
 
 ## About Us
@@ -20,17 +22,17 @@ Our mission is to explore the intersection of technology and humanity and to ins
 
 ## Latest Articles
 
-- [The Ethics of Artificial Intelligence: Balancing Progress and Responsibility](#)
-- [Virtual Reality and the Future of Education](#)
-- [The Dark Side of Social Media: Exploring the Impact on Mental Health](#)
+-   [The Ethics of Artificial Intelligence: Balancing Progress and Responsibility](#)
+-   [Virtual Reality and the Future of Education](#)
+-   [The Dark Side of Social Media: Exploring the Impact on Mental Health](#)
 
 ## References
 
 Check out some of our favorite resources for exploring the intersection of technology and humanity:
 
-- [MIT Technology Review](#)
-- [Wired](#)
-- [The Verge](#)
+-   [MIT Technology Review](#)
+-   [Wired](#)
+-   [The Verge](#)
 
 ## Contact Us
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

@@ -2,6 +2,8 @@
 
 # Universe Exploration
 
+<!--font:Barlow Condensed-->
+
 Welcome to Space Odyssey, your ultimate destination for all things related to space exploration and science fiction. Our website is dedicated to providing you with the latest news, stories, and resources on space travel, astronomy, and futuristic technology.
 
 ## About Us
@@ -16,18 +18,18 @@ Our mission is to inspire and educate people about the wonders of space and enco
 
 We have a vibrant community of space enthusiasts who share their stories and experiences with us. Here are some of the inspiring user stories from our website:
 
-- "Thanks to Space Odyssey, I discovered my passion for astronomy and now I'm pursuing a career in space science!" - John D.
-- "I love reading the latest news and updates on space missions and discoveries. It's like being part of a thrilling adventure!" - Sarah T.
-- "The Space Odyssey community is so supportive and welcoming. I've made many friends who share my love for space and sci-fi." - Mike S.
+-   "Thanks to Space Odyssey, I discovered my passion for astronomy and now I'm pursuing a career in space science!" - John D.
+-   "I love reading the latest news and updates on space missions and discoveries. It's like being part of a thrilling adventure!" - Sarah T.
+-   "The Space Odyssey community is so supportive and welcoming. I've made many friends who share my love for space and sci-fi." - Mike S.
 
 ## Resources
 
 Our website offers a wealth of resources for anyone interested in space and science fiction. Here are some of the most popular sections:
 
-- **News & Updates:** Stay up-to-date with the latest news and events in space exploration and sci-fi.
-- **Articles & Features:** Read in-depth articles and features on a wide range of topics related to space and science fiction.
-- **Forums & Discussions:** Connect with other space enthusiasts and join lively discussions on various topics.
-- **Gallery:** Browse our collection of stunning space-themed images and illustrations.
+-   **News & Updates:** Stay up-to-date with the latest news and events in space exploration and sci-fi.
+-   **Articles & Features:** Read in-depth articles and features on a wide range of topics related to space and science fiction.
+-   **Forums & Discussions:** Connect with other space enthusiasts and join lively discussions on various topics.
+-   **Gallery:** Browse our collection of stunning space-themed images and illustrations.
 
 ## Contact Us
 
@@ -53,10 +55,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
