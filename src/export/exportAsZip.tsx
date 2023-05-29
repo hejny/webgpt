@@ -25,7 +25,8 @@ export async function exportAsZip(wallpaper: IWallpaper): Promise<File> {
 
 /**
  * TODO: !!! Materialize assets
- * TODO: !! [🎍] Optionally: Prettier, Vscode, GitHub
+ * TODO: !!! [🎍] Allow to put URL
+ * TODO: !! [🎍] Optionally: CNAME, Prettier, Vscode, GitHub
  * TODO: !! Add LICENSE.md
  * TODO: !! Add original src
  * TODO: !! Add Aiai.config.json

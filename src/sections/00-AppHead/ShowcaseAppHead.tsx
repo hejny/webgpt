@@ -87,6 +87,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
 }
 
 /**
+ * TODO: !!! [🎍] Reflect URL into metadata
  * TODO: Create better summary
  * TODO: Maybe import from some JSON
  * TODO: What is ideal viewport value
