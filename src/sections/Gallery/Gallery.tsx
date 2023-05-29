@@ -2,7 +2,6 @@ import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useContext, useState } from 'react';
-import { ImagineTag } from '../../components/ImagineTag/ImagineTag';
 import { Item } from '../../components/Items/Item';
 import { Items } from '../../components/Items/Items';
 import { Section } from '../../components/Section/Section';
@@ -115,9 +114,10 @@ export function GallerySection(props: SampleProps) {
                                     </div>
                                 </Item.Image>
                                 */}
+                                {/*
                                 <Item.Description>
                                     <ImagineTag>
-                                        {wallpaper.prompt /* TODO: !! [2] Hide or show just title+font NOT prompt */}
+                                        {wallpaper.prompt /* TODO: !! [2] Hide or show just title+font NOT prompt * /}
                                     </ImagineTag>
 
                                     {/*
@@ -130,8 +130,9 @@ export function GallerySection(props: SampleProps) {
                                         >
                                         
                                         
-                                    */}
+                                    * /}
                                 </Item.Description>
+                                */}
                             </Item>
                         </Link>
                     ))
