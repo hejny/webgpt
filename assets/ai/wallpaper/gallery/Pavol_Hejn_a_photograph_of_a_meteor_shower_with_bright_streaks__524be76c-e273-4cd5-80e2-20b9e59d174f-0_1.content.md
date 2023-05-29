@@ -2,6 +2,8 @@
 
 # Night Sky Discovery
 
+<!--font:Barlow Condensed-->
+
 Welcome to Stargaze, your ultimate guide to exploring the beauty and mysteries of the night sky. Our website is dedicated to helping you discover the wonders of astronomy, whether you're an experienced stargazer or a beginner just starting out.
 
 ## Our Background Image

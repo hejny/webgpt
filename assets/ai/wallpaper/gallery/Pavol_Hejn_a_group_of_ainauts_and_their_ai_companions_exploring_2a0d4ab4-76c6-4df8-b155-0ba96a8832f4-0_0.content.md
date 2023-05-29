@@ -16,6 +16,8 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI Space Exploration
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to the exciting adventure of a group of Ainautes and their AI companions as they explore a massive, abandoned spacecraft floating in the depths of space.
 
 ## The Mission

@@ -2,6 +2,8 @@
 
 # Quantum Design
 
+<!--font:Barlow Condensed-->
+
 Welcome to Quantum Dreams, where we offer a unique abstract design inspired by the shapes and colors of quantum physics. Our bold and intricate pattern features vibrant colors and complex lines that will add depth and dimension to any space.
 
 ## About our Design

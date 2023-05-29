@@ -16,6 +16,8 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI near Black Hole
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website showcasing an exciting wallpaper featuring a team of Ainautes and their AI companions conducting experiments on the edge of a black hole, with time and space warping around them.
 
 ## About the Wallpaper

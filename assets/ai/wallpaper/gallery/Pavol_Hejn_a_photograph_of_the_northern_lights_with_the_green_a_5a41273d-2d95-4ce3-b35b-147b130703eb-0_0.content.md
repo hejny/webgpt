@@ -2,13 +2,15 @@
 
 # Northern Lights Magic
 
+<!--font:Barlow Condensed-->
+
 Experience the breathtaking beauty of the Northern Lights with our stunning background image. Featuring a photograph of the green and purple hues swirling in the night sky, this image will transport you to another world every time you look at it.
 
 ## Why Choose Our Northern Lights Background?
 
-- High-quality image: Our background is made from a high-resolution photograph that captures the beauty of the Northern Lights in incredible detail.
-- Unique design: The swirling colors of the Aurora Borealis create a mesmerizing effect that is sure to catch the eye of anyone who sees it.
-- Easy to use: Our background can be easily downloaded and set as your computer or phone's wallpaper.
+-   High-quality image: Our background is made from a high-resolution photograph that captures the beauty of the Northern Lights in incredible detail.
+-   Unique design: The swirling colors of the Aurora Borealis create a mesmerizing effect that is sure to catch the eye of anyone who sees it.
+-   Easy to use: Our background can be easily downloaded and set as your computer or phone's wallpaper.
 
 ## User Stories
 
@@ -24,9 +26,9 @@ Our Northern Lights background has been downloaded by people all over the world.
 
 Want to learn more about the science and history behind the Northern Lights? Check out these resources:
 
-- [NASA's Northern Lights page](#nasa)
-- [The Aurora Zone](#aurorazone)
-- [Visit Norway's Northern Lights guide](#visitnorway)
+-   [NASA's Northern Lights page](#nasa)
+-   [The Aurora Zone](#aurorazone)
+-   [Visit Norway's Northern Lights guide](#visitnorway)
 
 ## Contact Us
 
@@ -54,10 +56,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

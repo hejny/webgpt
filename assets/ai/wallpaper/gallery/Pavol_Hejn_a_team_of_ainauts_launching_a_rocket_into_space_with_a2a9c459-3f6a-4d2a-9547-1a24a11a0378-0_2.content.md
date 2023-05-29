@@ -2,15 +2,17 @@
 
 # Rocket Office Decor
 
+<!--font:Barlow Condensed-->
+
 Looking for a way to inspire your team and create a productive work environment? Look no further than our rocket-themed office decor! Featuring a team of Ainautes launching a rocket into space, with the Earth visible in the background, this decor will remind your team that the sky's the limit.
 
 ## Why Choose Our Office Decor?
 
 Our rocket-themed office decor is more than just a pretty picture. It's a powerful tool that can help motivate your team and keep them focused on their goals. Here are just a few reasons why our decor is the perfect choice for your business:
 
-- **Inspiration:** The image of a rocket blasting off into space is a powerful symbol of progress and achievement. Seeing it every day can help your team stay inspired and motivated.
-- **Focus:** By reminding your team of the big picture, our decor can help them stay focused on their goals and avoid getting bogged down in the day-to-day details.
-- **Teamwork:** The image of a team of Ainautes working together to launch the rocket is a great reminder of the importance of teamwork. Displaying this decor in your office can help foster a sense of collaboration and cooperation among your employees.
+-   **Inspiration:** The image of a rocket blasting off into space is a powerful symbol of progress and achievement. Seeing it every day can help your team stay inspired and motivated.
+-   **Focus:** By reminding your team of the big picture, our decor can help them stay focused on their goals and avoid getting bogged down in the day-to-day details.
+-   **Teamwork:** The image of a team of Ainautes working together to launch the rocket is a great reminder of the importance of teamwork. Displaying this decor in your office can help foster a sense of collaboration and cooperation among your employees.
 
 ## How to Use Our Office Decor
 
@@ -28,8 +30,8 @@ Here are some stories from our satisfied customers who have used our office deco
 
 Want to learn more about the benefits of using inspirational imagery in the workplace? Check out these resources:
 
-- [The Science of Motivation: Why Inspirational Imagery Works](#motivation)
-- [How to Use Visuals to Boost Productivity and Engagement](#visuals)
+-   [The Science of Motivation: Why Inspirational Imagery Works](#motivation)
+-   [How to Use Visuals to Boost Productivity and Engagement](#visuals)
 
 ## Contact Us
 
@@ -46,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

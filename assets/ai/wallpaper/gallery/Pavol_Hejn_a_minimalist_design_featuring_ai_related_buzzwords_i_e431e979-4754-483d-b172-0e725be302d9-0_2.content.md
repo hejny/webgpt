@@ -2,6 +2,8 @@
 
 # AI Workspace
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we provide a unique design element to enhance your workspace. Our minimalist wallpaper features popular AI-related buzzwords in different fonts and colors, adding personality and inspiration to your surroundings.
 
 ## Why Choose Our AI Buzzwords Wallpaper?

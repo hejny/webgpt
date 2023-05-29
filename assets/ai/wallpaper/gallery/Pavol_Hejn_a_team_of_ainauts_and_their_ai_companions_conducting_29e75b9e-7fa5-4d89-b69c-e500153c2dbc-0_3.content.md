@@ -2,7 +2,9 @@
 
 # Cosmic Journey
 
-Welcome to our website, where we take you on a journey through the cosmos and beyond. Our mission is to explore the unknown and push the boundaries of what we know about the universe. 
+<!--font:Barlow Condensed-->
+
+Welcome to our website, where we take you on a journey through the cosmos and beyond. Our mission is to explore the unknown and push the boundaries of what we know about the universe.
 
 ## Wallpaper
 
@@ -10,7 +12,7 @@ Our stunning wallpaper depicts a team of Ainautes and their AI companions conduc
 
 ## About Us
 
-We are a team of scientists, researchers, and explorers dedicated to uncovering the mysteries of the universe. Our work spans a wide range of disciplines, from astrophysics and cosmology to astrobiology and exoplanet research. 
+We are a team of scientists, researchers, and explorers dedicated to uncovering the mysteries of the universe. Our work spans a wide range of disciplines, from astrophysics and cosmology to astrobiology and exoplanet research.
 
 ## User Stories
 
@@ -42,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -61,7 +63,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Exploring the Unknown: A Journey Through the Cosmos
 
-Welcome to our website, where we take you on a journey through the cosmos and beyond. Our mission is to explore the unknown and push the boundaries of what we know about the universe. 
+Welcome to our website, where we take you on a journey through the cosmos and beyond. Our mission is to explore the unknown and push the boundaries of what we know about the universe.
 
 ## Wallpaper
 
@@ -69,7 +71,7 @@ Our stunning wallpaper depicts a team of Ainautes and their AI companions conduc
 
 ## About Us
 
-We are a team of scientists, researchers, and explorers dedicated to uncovering the mysteries of the universe. Our work spans a wide range of disciplines, from astrophysics and cosmology to astrobiology and exoplanet research. 
+We are a team of scientists, researchers, and explorers dedicated to uncovering the mysteries of the universe. Our work spans a wide range of disciplines, from astrophysics and cosmology to astrobiology and exoplanet research.
 
 ## User Stories
 

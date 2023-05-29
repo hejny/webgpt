@@ -2,6 +2,8 @@
 
 # Ladybug Leaf Beauty
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to nature lovers who appreciate the beauty of the outdoors. Our ladybug on a leaf background is perfect for those who want to bring a touch of nature into their digital lives.
 
 ## Why Choose Our Ladybug Background?
@@ -24,9 +26,9 @@ Our ladybug on a leaf background has been downloaded by many nature lovers aroun
 
 If you're interested in learning more about ladybugs and their role in nature, check out these resources:
 
-- [National Geographic](#)
-- [Smithsonian Magazine](#)
-- [BugGuide](#)
+-   [National Geographic](#)
+-   [Smithsonian Magazine](#)
+-   [BugGuide](#)
 
 ## Contact Us
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

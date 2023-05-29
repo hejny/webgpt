@@ -2,6 +2,8 @@
 
 # AI Search Design
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we explore the latest advancements in AI-powered search engines. Our minimalist design featuring an abstract illustration of an AI-powered search engine is the perfect backdrop for anyone interested in this exciting field.
 
 ## About Us
@@ -12,17 +14,17 @@ Our team is passionate about the potential of AI-powered search engines to revol
 
 Here are just a few examples of how people are using AI-powered search engines today:
 
-- Researchers are using these tools to analyze vast amounts of data and uncover new patterns and trends.
-- Business leaders are leveraging AI-powered search engines to gain insights into customer behavior and market trends.
-- Students are using these tools to find relevant information for their research papers and projects.
+-   Researchers are using these tools to analyze vast amounts of data and uncover new patterns and trends.
+-   Business leaders are leveraging AI-powered search engines to gain insights into customer behavior and market trends.
+-   Students are using these tools to find relevant information for their research papers and projects.
 
 ## Resources
 
 If you're interested in learning more about AI-powered search engines, we recommend checking out the following resources:
 
-- [The Future of Search: 2021 and Beyond](#future-of-search)
-- [How AI is Changing the Way We Search for Information](#ai-and-search)
-- [The Ethics of AI-Powered Search Engines](#ethics-of-ai)
+-   [The Future of Search: 2021 and Beyond](#future-of-search)
+-   [How AI is Changing the Way We Search for Information](#ai-and-search)
+-   [The Ethics of AI-Powered Search Engines](#ethics-of-ai)
 
 ## Contact Us
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

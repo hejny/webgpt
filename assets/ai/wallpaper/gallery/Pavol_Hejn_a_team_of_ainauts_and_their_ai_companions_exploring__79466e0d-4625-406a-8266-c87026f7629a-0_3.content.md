@@ -16,6 +16,8 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Ainaute Exploration
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we take you on a journey through the depths of space. Join us as we explore a massive, abandoned alien spacecraft with the help of our AI companions.
 
 ## The Mission

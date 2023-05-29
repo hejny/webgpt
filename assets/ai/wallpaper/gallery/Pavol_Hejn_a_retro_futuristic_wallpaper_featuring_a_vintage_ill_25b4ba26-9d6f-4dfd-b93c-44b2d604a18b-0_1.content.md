@@ -2,14 +2,16 @@
 
 # Retro Workspace
 
+<!--font:Barlow Condensed-->
+
 Looking for a way to add some personality and style to your workspace? Our retro-futuristic wallpaper is the perfect solution. Featuring a vintage illustration of a robot set against a neon-colored background, this wallpaper adds a unique touch to any space.
 
 ## Features
 
-- High-quality resolution for clear and crisp display
-- Retro-futuristic design for a one-of-a-kind look
-- Easy to install and compatible with most devices
-- Perfect for adding personality to your workspace
+-   High-quality resolution for clear and crisp display
+-   Retro-futuristic design for a one-of-a-kind look
+-   Easy to install and compatible with most devices
+-   Perfect for adding personality to your workspace
 
 ## User Stories
 
@@ -35,10 +37,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

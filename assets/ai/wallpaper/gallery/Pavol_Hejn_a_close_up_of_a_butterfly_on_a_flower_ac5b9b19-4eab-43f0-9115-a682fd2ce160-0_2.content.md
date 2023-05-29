@@ -2,6 +2,8 @@
 
 # Butterfly Screen
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website where you can find the perfect wallpaper for your phone or desktop. Our latest addition is a stunning close-up of a butterfly on a flower that will add a touch of nature to your device.
 
 ## Why Choose Our Butterfly Wallpaper?
@@ -16,23 +18,24 @@ Downloading and setting our butterfly wallpaper as your background is easy. Simp
 
 Here are some stories from our users who have downloaded our butterfly wallpaper:
 
-- "I love how the butterfly seems to be flying out of my phone!"
-- "The colors are so vibrant and really make my phone stand out."
-- "This wallpaper is so calming and helps me relax during a busy day."
+-   "I love how the butterfly seems to be flying out of my phone!"
+-   "The colors are so vibrant and really make my phone stand out."
+-   "This wallpaper is so calming and helps me relax during a busy day."
 
 ## References
 
 Looking for more nature-inspired wallpapers? Check out these other options:
 
-- *Sunset over the Ocean*
-- *Forest Pathway*
-- *Mountain Landscape*
+-   _Sunset over the Ocean_
+-   _Forest Pathway_
+-   _Mountain Landscape_
 
 ## Contact Us
 
 Have questions or comments about our butterfly wallpaper or other backgrounds? Reach out to us at [contact@ourwebsite.com](mailto:contact@ourwebsite.com) and we'll get back to you as soon as possible.
 
 ---
+
 Make your home screen come alive with our beautiful butterfly wallpaper. Download it today and enjoy the beauty of nature every time you use your device.
 
 <!--
@@ -43,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

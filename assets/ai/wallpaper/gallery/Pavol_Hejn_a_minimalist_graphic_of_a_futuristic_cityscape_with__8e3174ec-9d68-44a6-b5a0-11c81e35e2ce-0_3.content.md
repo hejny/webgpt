@@ -2,6 +2,8 @@
 
 # Futuristic Cityscape
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a stunning cityscape background that will transport you to a futuristic world. Our minimalist graphic features a sprawling metropolis with glowing neon lights and a dark, moody color scheme that sets the perfect tone for your creative space.
 
 ## Why Choose Our Cityscape Background?
@@ -20,17 +22,17 @@ Our customers have shared their experiences using our cityscape background:
 
 Here are some tips for getting the most out of our cityscape background:
 
-- Use it as a desktop wallpaper to create a futuristic workspace.
-- Set it as the background for your video calls to impress your colleagues.
-- Print it out and use it as a poster to decorate your home or office.
+-   Use it as a desktop wallpaper to create a futuristic workspace.
+-   Set it as the background for your video calls to impress your colleagues.
+-   Print it out and use it as a poster to decorate your home or office.
 
 ## Contact Us
 
 If you have any questions or feedback, please don't hesitate to reach out to us. We'd love to hear from you!
 
-- Email: [info@futuristicbackgrounds.com](mailto:info@futuristicbackgrounds.com)
-- Phone: 555-1234
-- Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
+-   Email: [info@futuristicbackgrounds.com](mailto:info@futuristicbackgrounds.com)
+-   Phone: 555-1234
+-   Social Media: [Twitter](#), [Facebook](#), [Instagram](#)
 
 Create your own futuristic world with our cityscape background and let your imagination run wild!
 
@@ -42,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

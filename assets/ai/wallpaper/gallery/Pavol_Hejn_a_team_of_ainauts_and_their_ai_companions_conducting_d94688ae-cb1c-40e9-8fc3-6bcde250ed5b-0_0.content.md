@@ -16,6 +16,8 @@ The header of the page should not be copy of the text but rather a real content 
 
 # AI near Black Hole
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website where we showcase the incredible work of our team of Ainautes and their AI companions. Our latest experiment takes us to the edge of a black hole, where time and space warp around us.
 
 ## The Team

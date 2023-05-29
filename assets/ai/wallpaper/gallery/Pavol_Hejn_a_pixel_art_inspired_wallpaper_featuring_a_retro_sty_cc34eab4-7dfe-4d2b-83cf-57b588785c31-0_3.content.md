@@ -2,6 +2,8 @@
 
 # Retro Robot Background
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where you can find a perfect background for your creative projects. Our pixel art-inspired wallpaper featuring a retro-style robot is an excellent choice for those who love the vintage vibe and limited color palette.
 
 ## About the Wallpaper
@@ -12,9 +14,9 @@ Our retro robot wallpaper is designed with pixelated lines that give it a unique
 
 Here are some user stories to help you understand how our retro robot wallpaper can be used:
 
-- **Game Designer:** I was looking for a background for my new video game, which has a retro theme. When I saw the retro robot wallpaper on this website, I knew it was perfect for my game.
-- **Social Media Manager:** I wanted to create a social media post that would stand out from the rest. When I found the retro robot wallpaper, I knew it would add a unique touch to my post.
-- **Graphic Designer:** I needed a background for a client's website, and they wanted something that would appeal to their target audience. The retro robot wallpaper fit the bill perfectly, and my client was thrilled with the result.
+-   **Game Designer:** I was looking for a background for my new video game, which has a retro theme. When I saw the retro robot wallpaper on this website, I knew it was perfect for my game.
+-   **Social Media Manager:** I wanted to create a social media post that would stand out from the rest. When I found the retro robot wallpaper, I knew it would add a unique touch to my post.
+-   **Graphic Designer:** I needed a background for a client's website, and they wanted something that would appeal to their target audience. The retro robot wallpaper fit the bill perfectly, and my client was thrilled with the result.
 
 ## How to Use the Wallpaper
 
@@ -24,9 +26,9 @@ Using our retro robot wallpaper is easy. Simply download the image and set it as
 
 If you're interested in learning more about pixel art and retro designs, here are some references you might find helpful:
 
-- [Pixel Art Tutorial](#)
-- [Retro Design Inspiration](#)
-- [Creating Retro Games](#)
+-   [Pixel Art Tutorial](#)
+-   [Retro Design Inspiration](#)
+-   [Creating Retro Games](#)
 
 ## Contact Us
 
@@ -42,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

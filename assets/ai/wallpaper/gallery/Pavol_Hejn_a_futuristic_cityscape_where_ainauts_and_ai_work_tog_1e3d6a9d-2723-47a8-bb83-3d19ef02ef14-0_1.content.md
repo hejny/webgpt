@@ -2,6 +2,8 @@
 
 # FuturCity AI
 
+<!--font:Barlow Condensed-->
+
 At FuturCity, we believe that the future of urban development lies in sustainable infrastructure. That's why we're proud to partner with Ainautes and AI to create massive, eco-friendly structures that will stand the test of time.
 
 ## Our Mission
@@ -10,9 +12,9 @@ Our mission is simple: to build a better tomorrow. We believe that by harnessing
 
 ## Our Services
 
-- **Architecture:** Our team of expert architects will work with you to design buildings that meet your needs and exceed your expectations. From concept to completion, we'll be there every step of the way.
-- **Construction:** Using state-of-the-art equipment and techniques, our skilled builders will bring your vision to life. We pride ourselves on delivering projects on time and within budget.
-- **Consulting:** Need advice on how to make your building more energy-efficient? Want to learn about the latest trends in sustainable architecture? Our team of consultants is here to help.
+-   **Architecture:** Our team of expert architects will work with you to design buildings that meet your needs and exceed your expectations. From concept to completion, we'll be there every step of the way.
+-   **Construction:** Using state-of-the-art equipment and techniques, our skilled builders will bring your vision to life. We pride ourselves on delivering projects on time and within budget.
+-   **Consulting:** Need advice on how to make your building more energy-efficient? Want to learn about the latest trends in sustainable architecture? Our team of consultants is here to help.
 
 ## User Stories
 
@@ -22,9 +24,9 @@ Our mission is simple: to build a better tomorrow. We believe that by harnessing
 
 ## References
 
-- [Ainautes](#)
-- [AI in Architecture](#)
-- [Sustainable Materials](#)
+-   [Ainautes](#)
+-   [AI in Architecture](#)
+-   [Sustainable Materials](#)
 
 ## Contact Us
 
@@ -38,10 +40,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

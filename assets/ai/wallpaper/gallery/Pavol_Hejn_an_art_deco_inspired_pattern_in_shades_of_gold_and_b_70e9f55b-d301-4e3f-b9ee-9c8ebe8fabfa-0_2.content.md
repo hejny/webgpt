@@ -2,6 +2,8 @@
 
 # Futuristic Workspace
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we provide a unique and inspiring design that will elevate your workspace to the next level. Our Art Deco-inspired design combines classic elegance with futuristic elements, making it perfect for anyone who wants to create a sophisticated and creative environment.
 
 ## The Design
@@ -12,8 +14,8 @@ Our design features an Art Deco-inspired pattern in shades of gold and black, wi
 
 Our design has been used by many creatives around the world, and they have all had positive experiences with it. Here are some user stories that showcase how our design has helped them:
 
-- "I'm a graphic designer, and this design has been a game-changer for me. It's so inspiring to look at, and it helps me stay focused on my work." - Jane, 28
-- "As a writer, I often struggle to find inspiration. But ever since I put up this design, I've felt more motivated than ever before. It's like having a piece of art right in front of me while I work." - Mark, 35
+-   "I'm a graphic designer, and this design has been a game-changer for me. It's so inspiring to look at, and it helps me stay focused on my work." - Jane, 28
+-   "As a writer, I often struggle to find inspiration. But ever since I put up this design, I've felt more motivated than ever before. It's like having a piece of art right in front of me while I work." - Mark, 35
 
 ## References
 
@@ -33,10 +35,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

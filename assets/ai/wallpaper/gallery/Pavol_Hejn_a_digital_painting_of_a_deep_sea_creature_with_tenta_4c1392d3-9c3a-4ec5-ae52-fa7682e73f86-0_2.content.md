@@ -2,6 +2,8 @@
 
 # Deep Sea Mysteries
 
+<!--font:Barlow Condensed-->
+
 Welcome to Oceanic Wonders, a website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world beneath the waves. Our Cap<wbr>ti<wbr>va<wbr>ting background features a digital painting of a deep sea creature, with tentacles and bioluminescent patterns that evoke a sense of mystery and exploration.
 
 ## About Us

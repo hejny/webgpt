@@ -2,15 +2,17 @@
 
 # Cosmic Backdrops
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a stunning telescope background that will transport you to the vast expanse of space. Our black and white outline of a telescope is perfect for anyone who loves astronomy and wants to add a touch of elegance to their desktop or mobile device.
 
 ## Features
 
 Our telescope background is designed with clean lines and simple shapes that highlight the intricate mechanics of the instrument. Here are some of its features:
 
-- High-resolution image that looks great on any screen size
-- Black and white color scheme that complements any desktop or mobile theme
-- Intricate details that capture the beauty and complexity of telescopes
+-   High-resolution image that looks great on any screen size
+-   Black and white color scheme that complements any desktop or mobile theme
+-   Intricate details that capture the beauty and complexity of telescopes
 
 ## User Stories
 
@@ -26,9 +28,9 @@ Our telescope background has been downloaded by thousands of people around the w
 
 If you're interested in learning more about telescopes and astronomy, here are some resources we recommend:
 
-- [NASA](#nasa)
-- [Space.com](#spacecom)
-- [Sky & Telescope](#skytelescope)
+-   [NASA](#nasa)
+-   [Space.com](#spacecom)
+-   [Sky & Telescope](#skytelescope)
 
 ## Contact Us
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

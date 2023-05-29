@@ -2,6 +2,8 @@
 
 # Retro-Future Background
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website where we provide you with unique and visually stunning backgrounds for your digital devices. Our latest addition is a retro-futuristic wallpaper featuring a vintage illustration of a robot, set against a neon-colored background. This wallpaper will transport you to a world of science fiction and nostalgia, all while adding a touch of style to your device.
 
 ## About the Wallpaper
@@ -12,9 +14,9 @@ Our retro-futuristic wallpaper is inspired by the classic science fiction illust
 
 Our retro-futuristic wallpaper has been a hit among users who want to add a touch of personality to their digital space. Here are some user stories:
 
-- "I love this wallpaper! It's like having a piece of art on my phone."
-- "The colors are so vibrant and eye-catching. I get compliments on my wallpaper all the time!"
-- "As a sci-fi fan, this wallpaper is perfect for me. It's like having a little piece of my favorite genre with me at all times."
+-   "I love this wallpaper! It's like having a piece of art on my phone."
+-   "The colors are so vibrant and eye-catching. I get compliments on my wallpaper all the time!"
+-   "As a sci-fi fan, this wallpaper is perfect for me. It's like having a little piece of my favorite genre with me at all times."
 
 ## How to Use the Wallpaper
 
@@ -24,9 +26,9 @@ Using our retro-futuristic wallpaper is easy. Simply download the wallpaper in y
 
 If you're interested in learning more about the retro-futuristic genre, here are some resources to check out:
 
-- [Retro-Futurism: The Car Designs of the Past Future](#)
-- [The Art of Science Fiction: A Visual History](#)
-- [The Retro-Futuristic World of Blade Runner](#)
+-   [Retro-Futurism: The Car Designs of the Past Future](#)
+-   [The Art of Science Fiction: A Visual History](#)
+-   [The Retro-Futuristic World of Blade Runner](#)
 
 ## Contact Us
 
@@ -42,10 +44,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

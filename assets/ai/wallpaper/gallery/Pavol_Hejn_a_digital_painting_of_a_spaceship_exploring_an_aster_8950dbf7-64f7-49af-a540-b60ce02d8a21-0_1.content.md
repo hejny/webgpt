@@ -2,7 +2,9 @@
 
 # Space Adventure
 
-Welcome to Space Adventure, your ultimate guide to exploring the unknown. Our website is dedicated to helping you discover new worlds and navigate the challenges of space travel. 
+<!--font:Barlow Condensed-->
+
+Welcome to Space Adventure, your ultimate guide to exploring the unknown. Our website is dedicated to helping you discover new worlds and navigate the challenges of space travel.
 
 ## Wallpaper
 
@@ -22,10 +24,10 @@ Read inspiring stories from real people who have ventured into space and discove
 
 We provide a wealth of resources to help you plan your space mission, including:
 
-- Guides to space travel and exploration
-- Information on space technology and equipment
-- Tips for surviving in zero gravity and extreme environments
-- Recommended books, movies, and documentaries about space
+-   Guides to space travel and exploration
+-   Information on space technology and equipment
+-   Tips for surviving in zero gravity and extreme environments
+-   Recommended books, movies, and documentaries about space
 
 ## Contact Us
 
@@ -35,9 +37,9 @@ Have a question or comment? We'd love to hear from you! Contact us at [email pro
 
 Explore the following references to learn more about space exploration:
 
-- NASA - https://www.nasa.gov/
-- Space.com - https://www.space.com/
-- European Space Agency - https://www.esa.int/ESA
+-   NASA - https://www.nasa.gov/
+-   Space.com - https://www.space.com/
+-   European Space Agency - https://www.esa.int/ESA
 
 <!--
 
@@ -47,10 +49,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -66,7 +68,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Space Adventure: Explore the Unknown
 
-Welcome to Space Adventure, your ultimate guide to exploring the unknown. Our website is dedicated to helping you discover new worlds and navigate the challenges of space travel. 
+Welcome to Space Adventure, your ultimate guide to exploring the unknown. Our website is dedicated to helping you discover new worlds and navigate the challenges of space travel.
 
 ## Wallpaper
 

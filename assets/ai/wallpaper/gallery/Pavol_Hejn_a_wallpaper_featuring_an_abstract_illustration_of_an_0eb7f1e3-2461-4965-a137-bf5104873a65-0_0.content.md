@@ -2,16 +2,18 @@
 
 # AI Search Background
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website! Our platform offers a cutting-edge AI-powered search engine that helps you find what you need quickly and easily. Our minimalist and modern design ensures that your search experience is both efficient and visually appealing.
 
 ## Features
 
 Our search engine is equipped with advanced AI algorithms that learn from your search history and preferences, providing personalized results tailored to your needs. Some of the features of our search engine include:
 
-- Natural language processing for more accurate results
-- Image and video search capabilities
-- Voice search functionality
-- Instant answers to common queries
+-   Natural language processing for more accurate results
+-   Image and video search capabilities
+-   Voice search functionality
+-   Instant answers to common queries
 
 ## User Stories
 
@@ -29,15 +31,15 @@ Our users have reported significant improvements in their search experience sinc
 
 We take pride in our commitment to quality and reliability. Here are some references that attest to the effectiveness of our search engine:
 
-- [TechCrunch](#techcrunch-review): "This AI-powered search engine is a game-changer in the industry."
-- [Forbes](#forbes-article): "The minimalist design of this search engine makes it easy to use for anyone."
+-   [TechCrunch](#techcrunch-review): "This AI-powered search engine is a game-changer in the industry."
+-   [Forbes](#forbes-article): "The minimalist design of this search engine makes it easy to use for anyone."
 
 ## Contact Us
 
 If you have any questions or feedback about our search engine, please don't hesitate to contact us. We value your input and are always looking for ways to improve our platform.
 
-- Email: [contact@ai-search.com](mailto:contact@ai-search.com)
-- Phone: 1-800-123-4567
+-   Email: [contact@ai-search.com](mailto:contact@ai-search.com)
+-   Phone: 1-800-123-4567
 
 Thank you for choosing our AI-powered search engine background. We hope you enjoy using our platform!
 
@@ -49,10 +51,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

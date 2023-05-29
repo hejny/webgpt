@@ -2,6 +2,8 @@
 
 # Innovative Spark
 
+<!--font:Barlow Condensed-->
+
 Welcome to "Innovative Ideas," a platform dedicated to inspiring creativity and innovation. Our website provides a space for individuals to share their ideas, collaborate with like-minded individuals, and find inspiration for their next big project. As part of our commitment to fostering creativity, we offer a minimalist graphic featuring a robot hand holding a stylus or pen, providing the perfect backdrop for those who are always brainstorming and jotting down ideas.
 
 ## Our Mission
@@ -20,16 +22,16 @@ Here are some stories from members of our community:
 
 We offer a variety of resources to help you spark your creativity and bring your ideas to life. Here are just a few:
 
-- **Inspiration Gallery:** Browse through our gallery of inspiring images and ideas.
-- **Collaboration Forum:** Connect with other members of our community and collaborate on projects.
-- **Expert Advice:** Get advice from experts in various fields, including art, design, writing, and entrepreneurship.
+-   **Inspiration Gallery:** Browse through our gallery of inspiring images and ideas.
+-   **Collaboration Forum:** Connect with other members of our community and collaborate on projects.
+-   **Expert Advice:** Get advice from experts in various fields, including art, design, writing, and entrepreneurship.
 
 ## Contact Us
 
 If you have any questions or comments, please don't hesitate to contact us. We'd love to hear from you!
 
-- Email: [contact@innovativeideas.com](#)
-- Twitter: [@innovativeideas](#)
+-   Email: [contact@innovativeideas.com](#)
+-   Twitter: [@innovativeideas](#)
 
 Thank you for visiting "Innovative Ideas!" We hope our platform inspires you to unleash your creativity and bring your innovative ideas to life.
 
@@ -41,10 +43,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

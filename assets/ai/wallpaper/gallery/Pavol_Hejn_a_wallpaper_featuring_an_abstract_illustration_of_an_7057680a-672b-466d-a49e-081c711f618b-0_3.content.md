@@ -2,6 +2,8 @@
 
 # AI Networks
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to exploring the Fas<wbr>ci<wbr>na<wbr>ting world of artificial intelligence and neural networks. Our goal is to provide you with a Com<wbr>pre<wbr>hen<wbr>sive resource that will help you understand the potential of AI technology and its real-world applications.
 
 ## Discover the Intricate World of AI Neural Networks

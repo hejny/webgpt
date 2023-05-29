@@ -2,7 +2,9 @@
 
 # Quantum Basics
 
-Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect background for diving into this cutting-edge field. 
+<!--font:Barlow Condensed-->
+
+Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect background for diving into this cutting-edge field.
 
 ## What is Quantum Computing?
 
@@ -12,19 +14,19 @@ Quantum computing is a revolutionary technology that uses quantum bits, or qubit
 
 As quantum computing continues to evolve, it has the potential to transform many industries, from finance and healthcare to energy and transportation. Some of the most promising applications of quantum computing include:
 
-- Drug discovery and development
-- Financial modeling and risk analysis
-- Supply chain optimization
-- Traffic optimization and route planning
-- Climate modeling and weather forecasting
+-   Drug discovery and development
+-   Financial modeling and risk analysis
+-   Supply chain optimization
+-   Traffic optimization and route planning
+-   Climate modeling and weather forecasting
 
 ## Getting Started with Quantum Computing
 
 If you're interested in learning more about quantum computing, there are many resources available to help you get started. Here are a few of our favorites:
 
-- [Quantum Computing for the Very Curious](#)
-- [IBM Quantum Experience](#)
-- [Microsoft Quantum Development Kit](#)
+-   [Quantum Computing for the Very Curious](#)
+-   [IBM Quantum Experience](#)
+-   [Microsoft Quantum Development Kit](#)
 
 ## User Stories
 
@@ -46,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -65,7 +67,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Quantum Computing for Beginners: Exploring the Future of Technology
 
-Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect background for diving into this cutting-edge field. 
+Welcome to our website dedicated to exploring the exciting world of quantum computing! Our minimalist wallpaper featuring a digital rendering of a quantum computer serves as the perfect background for diving into this cutting-edge field.
 
 ## What is Quantum Computing?
 

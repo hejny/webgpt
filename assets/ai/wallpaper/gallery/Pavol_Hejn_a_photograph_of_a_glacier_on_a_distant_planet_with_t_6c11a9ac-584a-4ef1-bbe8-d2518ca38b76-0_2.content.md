@@ -2,6 +2,8 @@
 
 # Space Collection
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we offer a unique collection of backgrounds that will take you on a journey through space and beyond. Our planetary adventure collection features stunning images of distant planets, galaxies, and other celestial bodies that will transport you to another world.
 
 ## Elevate Your Desktop Experience

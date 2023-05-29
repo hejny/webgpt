@@ -2,6 +2,8 @@
 
 # Nature Website
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to exploring and appreciating the wonders of nature! Our mission is to inspire people of all ages and backgrounds to connect with nature and take action to protect it.
 
 ## Wallpaper
@@ -12,11 +14,11 @@ As you browse our website, you'll notice our stunning nature wallpaper featuring
 
 We offer a variety of resources to help you learn more about nature and environmental conservation, including:
 
-- Articles and blog posts covering various environmental topics
-- Educational materials for teachers and students
-- Volunteer opportunities and events
-- Recommended books and documentaries
-- Tips for living a more sustainable lifestyle
+-   Articles and blog posts covering various environmental topics
+-   Educational materials for teachers and students
+-   Volunteer opportunities and events
+-   Recommended books and documentaries
+-   Tips for living a more sustainable lifestyle
 
 ## User Stories
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

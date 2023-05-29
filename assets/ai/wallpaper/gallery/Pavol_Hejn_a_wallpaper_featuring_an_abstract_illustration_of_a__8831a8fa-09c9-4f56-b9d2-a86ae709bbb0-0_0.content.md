@@ -2,6 +2,8 @@
 
 # Data Viz Biz
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to helping businesses stay ahead of the curve with cutting-edge data visualization tools. Our sleek and modern approach to data analysis is designed to provide insights that are both visually stunning and highly informative.
 
 ## About Us
@@ -12,11 +14,11 @@ Our team of experienced data analysts and designers have a passion for creating 
 
 We offer a range of services to help businesses visualize their data, including:
 
-- Custom data visualization design
-- Data dashboard creation
-- Data analysis and insights
-- Interactive data visualization development
-- And more!
+-   Custom data visualization design
+-   Data dashboard creation
+-   Data analysis and insights
+-   Interactive data visualization development
+-   And more!
 
 ## User Stories
 
@@ -30,9 +32,9 @@ Don't just take our word for it - hear from some of our satisfied customers:
 
 Interested in learning more about data visualization? Check out these resources:
 
-- [The Importance of Data Visualization](#)
-- [Top Data Visualization Tools](#)
-- [Data Visualization Best Practices](#)
+-   [The Importance of Data Visualization](#)
+-   [Top Data Visualization Tools](#)
+-   [Data Visualization Best Practices](#)
 
 ## Contact Us
 
@@ -46,10 +48,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

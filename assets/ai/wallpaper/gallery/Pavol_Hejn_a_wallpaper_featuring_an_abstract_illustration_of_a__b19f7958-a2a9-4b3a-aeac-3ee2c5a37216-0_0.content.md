@@ -2,15 +2,17 @@
 
 # Futuristic Data Center
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website, where we help businesses stand out with cutting-edge design and technology. Our futuristic data center theme features sleek and modern graphics that are sure to impress clients and customers alike.
 
 ## Why Choose Our Theme?
 
 Our theme is more than just a pretty background - it's a symbol of your commitment to innovation and progress. Here are just a few reasons why our theme is the right choice for your business:
 
-- **Modern Design**: Our theme features a minimalist color scheme and sleek graphics that create a cohesive look throughout your website.
-- **High-Quality**: We use only the highest-quality materials to ensure that our theme looks great and performs well.
-- **Easy to Use**: Installing our theme is a breeze, thanks to our simple instructions and user-friendly design.
+-   **Modern Design**: Our theme features a minimalist color scheme and sleek graphics that create a cohesive look throughout your website.
+-   **High-Quality**: We use only the highest-quality materials to ensure that our theme looks great and performs well.
+-   **Easy to Use**: Installing our theme is a breeze, thanks to our simple instructions and user-friendly design.
 
 ## User Stories
 
@@ -40,10 +42,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

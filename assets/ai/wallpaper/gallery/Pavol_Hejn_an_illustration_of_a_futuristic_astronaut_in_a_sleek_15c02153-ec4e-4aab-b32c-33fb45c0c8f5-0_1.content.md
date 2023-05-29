@@ -16,6 +16,8 @@ The header of the page should not be copy of the text but rather a real content 
 
 # Space Explore
 
+<!--font:Barlow Condensed-->
+
 Welcome to our space exploration website! Here, we share our passion for exploring the unknown depths of space. To capture the essence of our mission, we've chosen an illustration of a futuristic astronaut in a sleek spacesuit, standing on the surface of a distant planet as our wallpaper.
 
 ## Our Mission

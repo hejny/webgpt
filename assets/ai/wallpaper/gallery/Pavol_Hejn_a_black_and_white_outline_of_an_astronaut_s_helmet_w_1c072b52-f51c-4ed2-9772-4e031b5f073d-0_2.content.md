@@ -2,16 +2,18 @@
 
 # Cosmic Website
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to all things space! Our site is designed for anyone who loves to explore the cosmos and learn about the latest developments in space exploration. As part of our commitment to providing a fully immersive experience, we offer a stunning black and white outline of an astronaut's helmet as our background. This intricate design showcases the reflection of the surrounding environment and adds a touch of cosmic inspiration to your browsing experience.
 
 ## Features
 
 Our website offers a range of features that make it easy to stay up-to-date with the latest news and discoveries in space exploration. Here are just a few of the features you can expect:
 
-- Latest news and updates from NASA and other space agencies around the world
-- In-depth articles on topics ranging from astronomy to astrophysics
-- Stunning images and videos of the cosmos, including galaxies, nebulas, and more
-- Interactive tools and resources for exploring the universe from your own computer or mobile device
+-   Latest news and updates from NASA and other space agencies around the world
+-   In-depth articles on topics ranging from astronomy to astrophysics
+-   Stunning images and videos of the cosmos, including galaxies, nebulas, and more
+-   Interactive tools and resources for exploring the universe from your own computer or mobile device
 
 ## User Stories
 
@@ -27,9 +29,9 @@ Our space-themed website has been enjoyed by space enthusiasts all over the worl
 
 For more information about space exploration and astronomy, check out these resources:
 
-- [NASA](#)
-- [Space.com](#)
-- [European Space Agency](#)
+-   [NASA](#)
+-   [Space.com](#)
+-   [European Space Agency](#)
 
 ## Contact Us
 
@@ -43,10 +45,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.

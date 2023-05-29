@@ -2,15 +2,17 @@
 
 # Galactic Wonders
 
-Transform your device into a portal to the cosmos with our stunning space-themed collection! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background. 
+<!--font:Barlow Condensed-->
+
+Transform your device into a portal to the cosmos with our stunning space-themed collection! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
 
 ## Why Choose Our Collection?
 
 Our collection is carefully curated to provide you with the highest quality images that capture the beauty and wonder of our universe. Each design is created by talented artists and photographers who are passionate about space exploration. With our galactic collection, you can:
 
-- Immerse yourself in the awe-inspiring beauty of space
-- Inspire your imagination and creativity
-- Join a community of space enthusiasts who share your passion for exploration
+-   Immerse yourself in the awe-inspiring beauty of space
+-   Inspire your imagination and creativity
+-   Join a community of space enthusiasts who share your passion for exploration
 
 ## User Stories
 
@@ -24,13 +26,13 @@ Our collection has been enjoyed by space enthusiasts all over the world. Here ar
 
 Want to learn more about the science behind the images in our collection? Check out these resources:
 
-- [NASA's Jet Propulsion Laboratory](#jpl)
-- [National Geographic's Space Exploration](#natgeo)
-- [Space.com](#space)
+-   [NASA's Jet Propulsion Laboratory](#jpl)
+-   [National Geographic's Space Exploration](#natgeo)
+-   [Space.com](#space)
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Contact us at [support@ourwebsite.com](mailto:support@ourwebsite.com) or follow us on [Twitter](#twitter) for updates and news about our latest releases. 
+Have questions or feedback? We'd love to hear from you! Contact us at [support@ourwebsite.com](mailto:support@ourwebsite.com) or follow us on [Twitter](#twitter) for updates and news about our latest releases.
 
 ---
 
@@ -44,10 +46,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
@@ -63,7 +65,7 @@ The name/title of the page should not be 1:1 copy of the alt text but rather a r
 
 # Explore the Wonders of Space with Our Galactic Wallpaper
 
-Transform your desktop or mobile device with our stunning space-themed wallpaper! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background. 
+Transform your desktop or mobile device with our stunning space-themed wallpaper! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
 
 ## Why Choose Our Wallpaper?
 
@@ -92,7 +94,7 @@ Want to learn more about the science behind the image on our wallpaper? Check ou
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Contact us at [support@ourwebsite.com](mailto:support@ourwebsite.com) or follow us on [Twitter](#twitter) for updates and news about our latest releases. 
+Have questions or feedback? We'd love to hear from you! Contact us at [support@ourwebsite.com](mailto:support@ourwebsite.com) or follow us on [Twitter](#twitter) for updates and news about our latest releases.
 
 ---
 
@@ -110,7 +112,7 @@ Heading should not include word "wallpaper". The website should not be about the
 
 # Discover the Wonders of Space with Our Galactic Collection
 
-Transform your device into a portal to the cosmos with our stunning space-themed collection! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background. 
+Transform your device into a portal to the cosmos with our stunning space-themed collection! Our latest addition features an illustration of a space station in orbit around a gas giant planet, with rings and storms visible in the background.
 
 ## Why Choose Our Collection?
 
@@ -138,7 +140,7 @@ Want to learn more about the science behind the images in our collection? Check 
 
 ## Contact Us
 
-Have questions or feedback? We'd love to hear from you! Contact us at [support@ourwebsite.com](mailto:support@ourwebsite.com) or follow us on [Twitter](#twitter) for updates and news about our latest releases. 
+Have questions or feedback? We'd love to hear from you! Contact us at [support@ourwebsite.com](mailto:support@ourwebsite.com) or follow us on [Twitter](#twitter) for updates and news about our latest releases.
 
 ---
 

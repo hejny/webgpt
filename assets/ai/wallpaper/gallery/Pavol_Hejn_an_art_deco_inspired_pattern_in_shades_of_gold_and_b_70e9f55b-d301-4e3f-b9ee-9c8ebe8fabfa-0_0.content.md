@@ -2,6 +2,8 @@
 
 # Futuristic Workspace
 
+<!--font:Barlow Condensed-->
+
 Welcome to our website dedicated to creating a futuristic workspace that will inspire and motivate you. Our Art Deco-inspired design features shades of gold and black, along with futuristic elements such as robot arms and AI nodes, which will transform your workspace into a modern and productive environment.
 
 ## Why Choose Our Design?
@@ -20,8 +22,8 @@ Don't take our word for it, here are some stories from our satisfied customers:
 
 We take pride in our high-quality products and excellent customer service. Here are some references from our happy customers:
 
-- "The design arrived quickly and was easy to incorporate into my workspace. It looks amazing!" - Tom R.
-- "I had a question about the installation process, and their customer service team was very helpful and friendly." - Jane S.
+-   "The design arrived quickly and was easy to incorporate into my workspace. It looks amazing!" - Tom R.
+-   "I had a question about the installation process, and their customer service team was very helpful and friendly." - Jane S.
 
 ## Contact Us
 
@@ -37,10 +39,10 @@ Write me content for website with wallpaper which alt text is:
 
 The name/title of the page should not be 1:1 copy of the alt text but rather a real content of the website which is using this wallpaper.
 
-- Use markdown format 
+- Use markdown format
 - Start with heading
 - Heading should be short and concise
-- The content should look like a real website 
+- The content should look like a real website
 - The website should not be about the wallpaper, wallpaper is just a related background
 - Heading should be contain work "wallpaper" or "background"
 - Include real sections like references, contact, user stories, etc. use things relevant to the page purpose.
