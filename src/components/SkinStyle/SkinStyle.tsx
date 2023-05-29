@@ -26,7 +26,7 @@ export function SkinStyle() {
                             ];
                         } else {
                             const j = i % palette.length;
-                            // TODO: Add here note:
+                            // TODO: Add whitespace + here note:
                             //       Note: Following colors are just a repeat of first ${palette.length} colors
                             return [
                                 `--palette-${i}: var(--palette-${j});`,
