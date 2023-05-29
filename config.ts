@@ -68,11 +68,7 @@ export const COLORSTATS_COMPUTE_METHODS: Array<IComputeImageColorStats<string>> 
         size: IMAGE_NATURAL_SIZE.scale(0.1),
     }),
     /* 
-    TODO: !!! Delete after testing in broswer + add more versions + full
-    createColorfulComputeImageColorStats13({
-        colorBits: 16,
-        size: IMAGE_NATURAL_SIZE.scale(0.2),
-    }),
+    TODO: !! Add more versions (Also full)
     */
     createColorfulComputeImageColorStats14({
         colorBits: 16,

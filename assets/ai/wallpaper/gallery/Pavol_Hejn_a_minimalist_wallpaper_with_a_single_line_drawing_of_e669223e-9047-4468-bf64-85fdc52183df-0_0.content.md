@@ -14,13 +14,17 @@ At CyberBoost, we believe that technology should be accessible to everyone. That
 
 Looking to upgrade your digital arsenal? Look no further than CyberBoost. We offer a variety of services to help you get the most out of your devices, including:
 
-<!--!!! List desing -->
-
 -   Device setup and configuration
 -   Software installation and troubleshooting
 -   Data backup and recovery
 -   Security and privacy solutions
 -   And much more!
+
+1. Device setup and configuration
+2. Software installation and troubleshooting
+3. Data backup and recovery
+4. Security and privacy solutions
+5. And much more!
 
 ## User Stories
 

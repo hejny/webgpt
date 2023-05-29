@@ -1,30 +1,61 @@
 /* TODO: !!! Extract article css as separate file in export */
 
 .Article {
+    text-align: left;
 }
 
 /*
 TODO: !! It is not looking good when there is <h1> in middle of texts
 */
 
+.Article h1,
+.Article h2,
+.Article h3,
+.Article h4,
+.Article h5,
+.Article h6 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 .Article h1 {
     line-height: 110%;
     margin-bottom: 50px;
     font-size: 65px;
 
-    word-break: break-word;
+    /* word-break: break-word; */
+}
+
+@media only screen and (max-width: 600px) {
+    .Article h1 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .Article h1 {
+        font-size: 38px;
+    }
 }
 
 .Article h2 {
     margin-top: 60px;
-    border-bottom: 2px solid var(--palette-2);
+    text-decoration: underline;
 }
 
 .Article ul,
 .Article ol {
-    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
 
-    /* !!! */
+.Article ul {
+    list-style-type: disc;
+}
+
+.Article ol {
+    list-style-type: decimal;
 }
 
 .Article hr {
@@ -58,13 +89,5 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 }
 
 /*
-TODO:
-
-
-@media only screen and (max-width: 600px) {
-    .page main h1 {
-        font-size: 70px;
-    }
-}
-
+TODO: !!! Text on left but centered
 */
