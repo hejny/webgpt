@@ -172,6 +172,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: !!! Bubble css @import(s) on first place
+ * TODO: !!! Remove invalid CSS
+ * TODO: !!! In metadata in export there is wrong escaped characters
+ * TODO: !!! In export there is wrong escaped characters in font usage
  * TODO: !!! Export fonts propperly: <div style="font-family:&#x27;Barlow Condensed&#x27;, sans-serif">
  * TODO: !! Add Favicon in zip (+other icons)
  * TODO: !!! Add license file into zip

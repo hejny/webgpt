@@ -28,7 +28,7 @@ export function Section({ id, children, className }: SectionProps) {
     id = id?.toLocaleLowerCase();
 
     return (
-        <div className={classNames(styles.section, className)} {...{ id }}>
+        <div className={classNames(styles.section, className)} {...{ id } /* <- TODO: !!!! Remove ids from sections (to use then in <Article> heading hashes) */}>
             {/* [0] <a href={`#${id}`}>{headChild}</a>{restChildren}*/}
             {children}
         </div>
