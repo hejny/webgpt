@@ -47,6 +47,13 @@
     transition: all 0.3s ease-in-out;
 }
 
+
+.button:hover {
+    /* TODO: Made here some animation effect*/
+ 
+    background-color: rgb(167, 213, 221);
+}
+
 .button[data-active='true'] {
     background-color: rgb(199, 39, 119) /* <- TODO: !! Figure out best colors */;
     text-align: center;
@@ -69,11 +76,6 @@
     animation-timing-function: ease-in-out;
 }
 
-.button:hover {
-    /* TODO: Made here some animation effect*/
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.575);*/
-    background-color: rgb(167, 213, 221);
-}
 
 @keyframes express {
     0% {
