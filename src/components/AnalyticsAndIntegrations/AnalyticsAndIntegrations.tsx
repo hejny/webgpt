@@ -7,6 +7,7 @@ import spaceTrim from 'spacetrim';
 export function AnalyticsAndIntegrations() {
     return (
         <>
+            <div style={{ display: 'none' }}>smartsupp</div>
             <Script id="smartsupp">
                 {spaceTrim(`
                     var _smartsupp = _smartsupp || {};
@@ -19,7 +20,6 @@ export function AnalyticsAndIntegrations() {
                     })(document);
                 `)}
             </Script>
-
             <Script id="smartlook">
                 {spaceTrim(`
                     window.smartlook||(function(d) {
