@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { ReactNode } from 'react';
 import favicon from '../../../public/favicon.ico';
+import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 import { extractFirstParagraphFromMarkdown } from '../../utils/content/extractFirstParagraphFromMarkdown';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
@@ -69,10 +70,13 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     if (isNextHeadUsed) {
         // Note: For some strange reason we can not use <Head> in <ShowcasePage> - it fires "NextRouter was not mounted"
         return (
-            <Head>
-                {metadataJsx}
-                {children}
-            </Head>
+            <>
+                <Head>
+                    {metadataJsx}
+                    {children}
+                </Head>
+                <AnalyticsAndIntegrations />
+            </>
         );
     } else {
         return (

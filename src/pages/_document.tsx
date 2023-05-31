@@ -5,10 +5,9 @@ export default function Document() {
     return (
         <Html>
             <Head />
-            <AnalyticsAndIntegrations />
+            {/* TODO: Why is <AnalyticsAndIntegrations /> not working here? */}
             <body>
                 <Main />
-
                 <NextScript />
             </body>
         </Html>

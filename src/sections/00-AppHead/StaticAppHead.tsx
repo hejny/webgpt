@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import favicon from '../../../public/favicon.ico';
 import gallery1Image from '../../../public/screenshots/gallery-1.png';
+import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 
 interface StaticAppHeadProps {
     subtitle: string | null;
@@ -49,6 +50,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
                 <meta property="twitter:description" content={description} />
                 <meta property="twitter:image" content={gallery1Image.src} />
             </Head>
+            <AnalyticsAndIntegrations />
             {/* TODO: <LanguagePicker /> */}
         </>
     );
