@@ -8,6 +8,8 @@ Meet the AInautes, your trusted crew to guide your corporate ship through the tu
 
 <a class="button primary" href="info@tomas-studenik.com">Get in touch</a>
 
+<!-- TODO: !!!??? Wrapping buttons in <p> (Wrap in <div>)-->
+
 ## Why AInautes
 
 At AInautes, we don't just work with AI; we **create and live AI**. Our passion and expertise lie in harnessing the power of generative artificial intelligence to revolutionize your organization's operations, enhance efficiency, and drive unprecedented growth. With our deep knowledge and practical experience, we empower businesses like yours to unlock the full potential of AI, positioning you at the forefront of technological innovation.
