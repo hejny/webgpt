@@ -5,7 +5,7 @@ export default function Document() {
     return (
         <Html>
             <Head />
-            <AnalyticsAndIntegrations />
+            <AnalyticsAndIntegrations /> {/* <- !!! Use or loose */}
             {/* TODO: Why is <AnalyticsAndIntegrations /> not working here? */}
             <body>
                 <Main />
