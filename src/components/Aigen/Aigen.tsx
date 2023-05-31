@@ -11,7 +11,7 @@ export function Aigen() {
                 right: 0,
             }}
         >
-            <a href="/aigen">
+            <a href="#" /* <- TODO: !!! Create web which will explain how is the web AI generated */>
                 <svg xmlns="http://www.w3.org/2000/svg" width="75" height="15" view-box="0 0 100 20">
                     <rect x="0" y="0" width="20%" height="100%" fill="#ffcf86" />
                     <text
@@ -84,6 +84,7 @@ export function Aigen() {
 }
 
 /**
+ * TODO: !!! Use real Palette
  * TODO: !!! font-family
  * TODO: [🧠] Test / think about / ask how to properly mark AI generated webpages
  * TODO: Maybe as external image
