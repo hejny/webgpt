@@ -57,9 +57,10 @@ export function GallerySection(props: SampleProps) {
                         // TODO: <MidjourneyImage/>
                         // TODO: Show diffusion as animation
                         <Link
-                            prefetch={false /* <- Note: It is too much data to prefetch every page from gallery */}
-                            href={`/showcase/${wallpaper.id}`}
                             key={wallpaper.id}
+                            href={`/showcase/${wallpaper.id}`}
+                            target="_top"
+                            prefetch={false /* <- Note: It is too much data to prefetch every page from gallery */}
                             // Note: not using target="_blank" maybe instead of that TODO [🧠] some sort of gallery maker/selector
                         >
                             <Item>
