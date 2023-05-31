@@ -91,7 +91,7 @@ export async function getStaticProps({
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code
  * TODO: !!! [🧶] Add overlay which explains how it works and lead to FAQ permalink
  * TODO: !! Better IDs for wallpapers - make it without GET parameters
- * TODO: !! Make foreground-background paralax effect for each wallpaper
+ * TODO: !! Make foreground-background paralax effect for each wallpaper @see https://huggingface.co/spaces/radames/dpt-depth-estimation-3d-obj
  * TODO: !! Fix Shuffle without React hydration error
 
  * TODO: Add somewhere button [Get in touch]

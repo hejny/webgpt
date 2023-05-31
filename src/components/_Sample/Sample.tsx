@@ -1,13 +1,13 @@
 import styles from './Sample.module.css';
 
 interface SampleProps {
-    sample: string;
+    Sample: string;
 }
 
 /**
  * @@
  */
 export function Sample(props: SampleProps) {
-    const { sample } = props;
-    return <div className={styles.sample}>{sample}</div>;
+    const { Sample } = props;
+    return <div className={styles.Sample}>{Sample}</div>;
 }

@@ -172,6 +172,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 }
 
 /**
+ * TODO: !! Make simmilar note as in css into html
  * TODO: !!!! Export preview
  * TODO: !!! Bubble css @import(s) on first place
  * TODO: !!! Remove invalid CSS
