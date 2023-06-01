@@ -1,6 +1,8 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
+import { useRouter } from 'next/dist/client/router';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { classNames } from '../../utils/classNames';
 import { textColor } from '../../utils/color/operators/furthest';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
@@ -21,15 +23,13 @@ const EditModalDownloadButtons = dynamic(
     },
 );
 
-interface EditModalProps {
-    turnOffEditing(): void;
-}
+interface EditModalProps {}
 
 /**
  * @@
  */
 export function EditModal(props: EditModalProps) {
-    const { turnOffEditing } = props;
+    const router = useRouter();
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
@@ -37,7 +37,15 @@ export function EditModal(props: EditModalProps) {
 
     return (
         <>
-            <div className={styles.overlay} onClick={turnOffEditing}></div>
+            <Link
+                className={styles.overlay}
+                href={{
+                    pathname: router.pathname,
+                    query: {
+                        slug: router.query.slug,
+                    },
+                }}
+            />
             <div className={styles.EditModal}>
                 <div className={styles.title}>Editing</div>
                 <div className={styles.section}>
@@ -87,6 +95,18 @@ export function EditModal(props: EditModalProps) {
 
                 <div className={styles.section}>
                     <EditModalDownloadButtons />
+                    <Link
+                        className={'button'}
+                        href={{
+                            pathname: router.pathname,
+                            query: {
+                                ...router.query,
+                                modal: 'export',
+                            },
+                        }}
+                    >
+                        More Download Options
+                    </Link>
                     <button
                         className={'button'}
                         onClick={() => {
@@ -96,9 +116,17 @@ export function EditModal(props: EditModalProps) {
                         {/* TODO: !! Remove */}
                         Invoke error
                     </button>
-                    <button className={'button'} onClick={turnOffEditing}>
+                    <Link
+                        className={'button'}
+                        href={{
+                            pathname: router.pathname,
+                            query: {
+                                slug: router.query.slug,
+                            },
+                        }}
+                    >
                         Done
-                    </button>
+                    </Link>
                 </div>
 
                 <div className={styles.section}>

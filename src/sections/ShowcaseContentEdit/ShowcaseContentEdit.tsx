@@ -1,6 +1,7 @@
 import { useRouter } from 'next/dist/client/router';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { EditModal } from '../../components/EditModal/EditModal';
+import { ExportModal } from '../../components/ExportModal/ExportModal';
 import { IWallpaper } from '../../utils/IWallpaper';
 
 interface ShowcaseContentWithEditProps {
@@ -16,19 +17,8 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
 
     return (
         <>
-            {modal === 'edit' && (
-                <EditModal
-                    turnOffEditing={() => {
-                        router.push({
-                            pathname: router.pathname,
-                            query: {
-                                ...router.query,
-                                modal: null,
-                            },
-                        });
-                    }}
-                />
-            )}
+            {modal === 'edit' && <EditModal />}
+            {modal === 'export' && <ExportModal />}
             {!isPresenting && (
                 <ControlPanel
                     {...{ randomWallpaper }}
