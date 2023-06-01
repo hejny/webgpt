@@ -111,6 +111,16 @@ export function ControlPanel(props: ControlPanelProps) {
             >
                 <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
             </Link>
+
+            <button
+                className={classNames(/*'button',*/ styles.button)}
+                title="Need help?"
+                onClick={() => {
+                    smartsupp('chat:open');
+                }}
+            >
+                <Article content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
+            </button>
         </div>
     );
 }

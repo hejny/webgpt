@@ -25,7 +25,7 @@ export function AnalyticsAndIntegrations() {
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
                         #chat-application{
-                            color-scheme: light;
+                            color-scheme: light; /* <- Note: To enable transparent iframe borders */
                         }
                     `),
                 }}
