@@ -26,6 +26,8 @@ export interface IImageColorStats<TVersion extends string> {
 export interface IImageColorStatsAdvanced<TVersion extends string>
     extends IImageColorStats<TVersion>,
         IImageColorStatsRegion {
+    paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
+
     bottomHalf: IImageColorStatsRegion;
     bottomThird: IImageColorStatsRegion;
     bottomLine: IImageColorStatsRegion;

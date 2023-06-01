@@ -18,8 +18,11 @@ let totalCount = 0;
 let pickByMostFrequentColorCount = 0;
 
 export function computeImagePalette14(
-    colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>,
-): Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/> {
+    colorStats: Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>,
+): {
+    palette: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
+    paletteCandidates: Array<{ value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/>;
+} {
     let primaryColor: { value: WithTake<Color>; note: string } /* <- TODO: [⏲] Do we want here count*/ | null = null;
 
     totalCount++;
@@ -239,10 +242,23 @@ export function computeImagePalette14(
         return distanceA - distanceB;
     });
 
-    return palette.map((color) =>
+    const orderKeysForPalette = (paletteItem: {
+        value: WithTake<Color>;
+        note: string;
+    }): {
+        value: WithTake<Color>;
+        note: string;
+    } => {
+        const { note, value } = paletteItem;
+
         // @ts-ignore
-        ({ note: color.note, ...color }),
-    );
+        return { note, value, ...paletteItem };
+    };
+
+    return {
+        palette: palette.map(orderKeysForPalette),
+        paletteCandidates: paletteCandidates.map(orderKeysForPalette),
+    };
 }
 
 /**

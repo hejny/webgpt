@@ -13,7 +13,7 @@ import {
     IImageColorStatsRegion,
 } from '../../utils/IImageColorStats';
 import { scaleImage } from '../../utils/scaleImage';
-import { computeImagePalette13 } from './computeImagePalette13';
+import { computeImagePalette13 } from './computeImagePalette13.ts.todo';
 
 /**
  * @@@

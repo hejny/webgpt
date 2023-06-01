@@ -58,9 +58,10 @@ export function createColorfulComputeImageColorStats14 /* TODO: <TColorBits exte
             bottomLine: computeWholeImageColorStats(
                 image.crop(new Vector(0, image.height - 1), new Vector(image.width, image.height)),
             ),
-        } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette'>;
+        } satisfies Omit<IImageColorStatsAdvanced<string>, 'version' | 'palette' | 'paletteCandidates'>;
 
-        return { version, palette: computeImagePalette14(stats), ...stats };
+        const { palette, paletteCandidates } = computeImagePalette14(stats);
+        return { version, palette, paletteCandidates, ...stats };
     };
 
     computeImageColorStats.version = version;
