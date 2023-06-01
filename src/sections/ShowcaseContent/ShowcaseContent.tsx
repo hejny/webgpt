@@ -1,4 +1,5 @@
-import { Aigen } from '../../components/Aigen/Aigen';
+// import { Aigen } from '../../components/Aigen/Aigen';
+import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { ShowcaseWelcomeSection } from '../10-Welcome/ShowcaseWelcome';
@@ -8,7 +9,8 @@ import styles from './ShowcaseContent.module.css';
 export function ShowcaseContent() {
     return (
         <div className={styles.page}>
-            <Aigen />
+            <AigenSimple />
+            {/*<Aigen />*/}
             <header>
                 <HeaderWallpaper />
             </header>
