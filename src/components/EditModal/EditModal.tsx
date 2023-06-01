@@ -93,6 +93,7 @@ export function EditModal(props: EditModalProps) {
                             (window as any).fooFunction();
                         }}
                     >
+                        {/* TODO: !! Remove */}
                         Invoke error
                     </button>
                     <button className={'button'} onClick={turnOffEditing}>

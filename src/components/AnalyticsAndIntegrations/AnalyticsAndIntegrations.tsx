@@ -41,11 +41,20 @@ export function AnalyticsAndIntegrations() {
             {/* The sentry script is tinytiny so it is ok to be sync */}
             {/* eslint-disable-next-line @next/next/no-sync-scripts */}
             <script src="https://js.sentry-cdn.com/c7941e970cfe4a899d64b41c3cecc601.min.js" crossOrigin="anonymous" />
+
+            {/* ===[ Test ]=== */}
+            <script
+                dangerouslySetInnerHTML={{
+                    __html: spaceTrim(`
+                        console.log('🔃 Loaded scripts integrations');
+                    `),
+                }}
+            />
         </>
     );
 }
 
 /**
- * TODO: !!!! API key in config - but it temporarly does not matter if it is in source code because it is public key
+ * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key
  * TODO: !!!! Do not include ANY of this in export
  */
