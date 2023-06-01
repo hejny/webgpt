@@ -12,6 +12,128 @@ palette:
           palette colors.
       value: '#445566'
       count: 1
+paletteCandidates:
+    - note: 1st most satulighted color of the bottom half of the wallpaper
+      value: '#ffeecc'
+      count: 1
+    - note: 2nd most satulighted color of the bottom half of the wallpaper
+      value: '#aabb88'
+      count: 1
+    - note: 3rd most satulighted color of the bottom half of the wallpaper
+      value: '#772222'
+      count: 1
+    - note: 4th most satulighted color of the bottom half of the wallpaper
+      value: '#445566'
+      count: 1
+    - note: 1st most grouped color of the bottom half of the wallpaper
+      value: '#000000'
+      count: 1802
+    - note: 1st most frequent color of the bottom half of the wallpaper
+      value: '#000000'
+      count: 3836
+    - note: 2nd most frequent color of the bottom half of the wallpaper
+      value: '#555555'
+      count: 873
+    - note: 3rd most frequent color of the bottom half of the wallpaper
+      value: '#aaaa99'
+      count: 287
+    - note: 4th most frequent color of the bottom half of the wallpaper
+      value: '#ffffff'
+      count: 26
+    - note: The darkest color of the bottom half of the wallpaper
+      value: '#000000'
+    - note: The lightest color of the bottom half of the wallpaper
+      value: '#ffffff'
+    - note: 1st most satulighted color of the bottom third of the wallpaper
+      value: '#ffeecc'
+      count: 1
+    - note: 2nd most satulighted color of the bottom third of the wallpaper
+      value: '#ccaaaa'
+      count: 1
+    - note: 3rd most satulighted color of the bottom third of the wallpaper
+      value: '#112233'
+      count: 1
+    - note: 1st most grouped color of the bottom third of the wallpaper
+      value: '#000000'
+      count: 2677
+    - note: 1st most frequent color of the bottom third of the wallpaper
+      value: '#000000'
+      count: 3735
+    - note: 2nd most frequent color of the bottom third of the wallpaper
+      value: '#666655'
+      count: 919
+    - note: 3rd most frequent color of the bottom third of the wallpaper
+      value: '#bbbbaa'
+      count: 122
+    - note: The darkest color of the bottom third of the wallpaper
+      value: '#000000'
+    - note: The lightest color of the bottom third of the wallpaper
+      value: '#ffffff'
+    - note: 1st most satulighted color of the whole wallpaper
+      value: '#eebbcc'
+      count: 1
+    - note: 2nd most satulighted color of the whole wallpaper
+      value: '#997755'
+      count: 1
+    - note: 3rd most satulighted color of the whole wallpaper
+      value: '#ddddaa'
+      count: 1
+    - note: 4th most satulighted color of the whole wallpaper
+      value: '#001133'
+      count: 1
+    - note: 1st most grouped color of the whole wallpaper
+      value: '#000000'
+      count: 4985
+    - note: 1st most frequent color of the whole wallpaper
+      value: '#000000'
+      count: 8959
+    - note: 2nd most frequent color of the whole wallpaper
+      value: '#555555'
+      count: 485
+    - note: 3rd most frequent color of the whole wallpaper
+      value: '#aaaa99'
+      count: 144
+    - note: 4th most frequent color of the whole wallpaper
+      value: '#ffffff'
+      count: 31
+    - note: The darkest color of the whole wallpaper
+      value: '#000000'
+    - note: The lightest color of the whole wallpaper
+      value: '#ffffff'
+    - note: 1st most satulighted color of the bottom line of the wallpaper
+      value: '#aa9988'
+      count: 108
+    - note: 2nd most satulighted color of the bottom line of the wallpaper
+      value: '#443344'
+      count: 108
+    - note: 3rd most satulighted color of the bottom line of the wallpaper
+      value: '#ddddcc'
+      count: 108
+    - note: 4th most satulighted color of the bottom line of the wallpaper
+      value: '#222233'
+      count: 216
+    - note: 5th most satulighted color of the bottom line of the wallpaper
+      value: '#223333'
+      count: 108
+    - note: 6th most satulighted color of the bottom line of the wallpaper
+      value: '#bbaaaa'
+      count: 108
+    - note: 1st most grouped color of the bottom line of the wallpaper
+      value: '#000000'
+      count: 2484
+    - note: 1st most frequent color of the bottom line of the wallpaper
+      value: '#000000'
+      count: 6048
+    - note: 2nd most frequent color of the bottom line of the wallpaper
+      value: '#888877'
+      count: 1404
+    - note: 3rd most frequent color of the bottom line of the wallpaper
+      value: '#ddddcc'
+      count: 108
+    - note: The darkest color of the bottom line of the wallpaper
+      value: '#000000'
+    - note: The lightest color of the bottom line of the wallpaper
+      value: '#ddddcc'
 averageColor: '#222222'
 lightestColor: '#ffffff'
 darkestColor: '#000000'
