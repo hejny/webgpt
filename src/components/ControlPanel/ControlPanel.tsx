@@ -116,7 +116,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 className={classNames(/*'button',*/ styles.button)}
                 title="Need help?"
                 onClick={() => {
-                    smartsupp('chat:open');
+                    (window as any).smartsupp('chat:open');
                 }}
             >
                 <Article content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
