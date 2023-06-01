@@ -13,7 +13,6 @@ function App({ Component, pageProps }: AppProps) {
     return (
         <ExportContext.Provider value={EXPORT_OPTIONS}>
             <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
-                <AnalyticsAndIntegrations />
                 <Component {...pageProps} />
             </ShuffleSeedContext.Provider>
         </ExportContext.Provider>

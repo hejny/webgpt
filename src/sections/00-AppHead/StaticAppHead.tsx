@@ -49,8 +49,9 @@ export function StaticAppHead(props: StaticAppHeadProps) {
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
                 <meta property="twitter:image" content={gallery1Image.src} />
+
+                <AnalyticsAndIntegrations />
             </Head>
-            <AnalyticsAndIntegrations />
             {/* TODO: <LanguagePicker /> */}
         </>
     );

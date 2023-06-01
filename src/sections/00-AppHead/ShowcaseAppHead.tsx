@@ -74,8 +74,8 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                 <Head>
                     {metadataJsx}
                     {children}
+                    <AnalyticsAndIntegrations />
                 </Head>
-                <AnalyticsAndIntegrations />
             </>
         );
     } else {
