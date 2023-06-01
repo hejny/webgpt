@@ -64,7 +64,9 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 .Article ul {
     margin-left: 50px;
     margin-bottom: 50px;
+    text-align: left;
 }
+
 .Article ul {
     list-style-type: disc;
 }
