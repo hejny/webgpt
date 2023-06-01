@@ -6,7 +6,7 @@ import spaceTrim from 'spacetrim';
 export function AnalyticsAndIntegrations() {
     return (
         <>
-            {/* ===[ Smartsupp ]=== */}
+            {/* ===[ SmartsUpp: ]=== */}
             <script
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
@@ -21,8 +21,18 @@ export function AnalyticsAndIntegrations() {
                     `),
                 }}
             />
+            <style
+                dangerouslySetInnerHTML={{
+                    __html: spaceTrim(`
+                        #chat-application{
+                            color-scheme: light;
+                        }
+                    `),
+                }}
+            />
+            {/* ===[ /SmartsUpp ]=== */}
 
-            {/* ===[ Smartlook ]=== */}
+            {/* ===[ SmartLook: ]=== */}
             <script
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
@@ -35,14 +45,16 @@ export function AnalyticsAndIntegrations() {
                     `),
                 }}
             />
+            {/* ===[ /SmartLook ]=== */}
 
-            {/* ===[ Senry ]=== */}
+            {/* ===[ Senry: ]=== */}
             {/* Note: Installing sentry via browser <script> to separate main bundle and external service */}
             {/* The sentry script is tinytiny so it is ok to be sync */}
             {/* eslint-disable-next-line @next/next/no-sync-scripts */}
             <script src="https://js.sentry-cdn.com/c7941e970cfe4a899d64b41c3cecc601.min.js" crossOrigin="anonymous" />
+            {/* ===[ /Senry ]=== */}
 
-            {/* ===[ Test ]=== */}
+            {/* ===[ Test: ]=== */}
             <script
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
@@ -50,6 +62,7 @@ export function AnalyticsAndIntegrations() {
                     `),
                 }}
             />
+            {/* ===[ /Test ]=== */}
         </>
     );
 }
