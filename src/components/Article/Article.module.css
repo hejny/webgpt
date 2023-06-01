@@ -1,93 +1,131 @@
 /* TODO: !!! Extract article css as separate file in export */
 
 .Article {
-    text-align: left;
+    text-align: center;
 }
-
 /*
 TODO: !! It is not looking good when there is <h1> in middle of texts
 */
-
 .Article h1,
 .Article h2,
 .Article h3,
 .Article h4,
 .Article h5,
 .Article h6 {
-    display: block;
-    width: 100%;
+    display: inline-block;
     text-align: center;
+}
+
+.Article h1,
+.Article h2 {
+    font-weight: bold;
 }
 
 .Article h1 {
     line-height: 110%;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-size: 65px;
-
-    /* word-break: break-word; */
 }
-
 @media only screen and (max-width: 600px) {
     .Article h1 {
         font-size: 55px;
     }
 }
-
 @media only screen and (max-width: 300px) {
     .Article h1 {
         font-size: 38px;
     }
 }
 
-.Article h2 {
+.Article h2,
+.Article > div {
     margin-top: 60px;
-    text-decoration: underline;
 }
 
-.Article ul,
-.Article ol {
+.Article h2 {
+    font-size: 29px;
+
+    padding: 0;
+    border-bottom: 2px solid var(--palette-2);
+}
+
+.Article h3 {
+    font-size: 25px;
+    margin-top: 40px;
+    padding: 0;
+    border-bottom: 1.5px solid var(--palette-2);
+}
+
+.Article p {
+    text-align: left;
+}
+
+.Article ol,
+.Article ul {
     margin-left: 50px;
     margin-bottom: 50px;
 }
-
 .Article ul {
     list-style-type: disc;
 }
-
 .Article ol {
     list-style-type: decimal;
 }
-
 .Article hr {
     margin-top: 50px;
     margin-bottom: 50px;
-    border: 2px solid(--palette-2);
+    background-color: var(--palette-2);
+    height: 2px;
+    border: none;
+    outline: none;
 }
-
 .Article blockquote,
-.Article iframe
-/* Note: Note .Article img because it can be an emoji */ {
+.Article iframe {
     display: block;
     margin: 20px;
 }
 
+.Article blockquote p {
+    text-align: center;
+}
 .Article blockquote {
     font-size: 1.2em;
     border: 2px solid var(--palette-2);
     padding: 20px;
-    /* TODO: Allow to mix opacity> background-color: rgba(var(--palette-1), 0.5); @see https://stackoverflow.com/a/41265350 */
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
 .Article img {
     max-width: 100%;
     height: auto;
 }
-
 .Article iframe {
     width: 100%;
-    aspect-ratio: 3 / 2 /* <- TODO: Ideally 100vh / 100vw */;
+    aspect-ratio: 3/2;
+}
+
+.Article .button {
+    display: inline-block;
+    border: 1px solid rgba(var(--palette-1-triplet), 0.8);
+    background-color: rgba(var(--palette-2-triplet), 0.8);
+    box-shadow: 0 0 20px rgba(var(--palette-4-triplet), 0.5);
+    color: rgba(var(--palette-1-triplet), 0.8);
+    border-radius: 6px;
+    padding: 7px 18px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 25px;
+}
+.Article .button:hover {
+    filter: hue-rotate(90deg);
+}
+.Article .button.primary {
+    color: var(--palette-3);
+    border: 1px solid var(--palette-3);
 }
 
 /*
-TODO: !!! Text on left but centered
+TODO: !! [🧠] Should be button in exported article css
 */
