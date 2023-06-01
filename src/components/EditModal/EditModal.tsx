@@ -52,7 +52,6 @@ export function EditModal(props: EditModalProps) {
                             <ColorInput
                                 defaultValue={color.value}
                                 onChange={(newColor) => {
-
                                     // TODO: !!! DO here real change of wallpaper with save and export
                                     // TODO: [🧠] !! DRY [🎋]
                                     // TODO: [🧠] !! Reset when switching wallpapers
@@ -88,6 +87,14 @@ export function EditModal(props: EditModalProps) {
 
                 <div className={styles.section}>
                     <EditModalDownloadButtons />
+                    <button
+                        className={'button'}
+                        onClick={() => {
+                            (window as any).fooFunction();
+                        }}
+                    >
+                        Invoke error
+                    </button>
                     <button className={'button'} onClick={turnOffEditing}>
                         Done
                     </button>
