@@ -94,15 +94,8 @@ export function computeImagePalette14(
             PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO;
 
         for (const paletteCandidate of paletteCandidates) {
-            console.log('!!! Candidate: ', paletteCandidate.value.toHex());
 
             if (!areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white'))) {
-                console.log(
-                    '!!!1',
-                    paletteCandidate.value.toHex(),
-                    paletteCandidate.value.then(textColor).toHex(),
-                    areColorsEqual(paletteCandidate.value.then(textColor), Color.get('white')),
-                );
                 continue;
             }
 
@@ -110,13 +103,7 @@ export function computeImagePalette14(
                 colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value) >=
                 primaryToAveragedistanceTheashold
             ) {
-                console.log(
-                    '!!!2',
-                    paletteCandidate.value.toHex(),
-                    colorStats.bottomThird.averageColor.value.toHex(),
-                    colorDistanceSquared(colorStats.bottomThird.averageColor.value, paletteCandidate.value),
-                    primaryToAveragedistanceTheashold,
-                );
+
                 continue;
             }
 
