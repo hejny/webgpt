@@ -64,9 +64,7 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 .Article ul {
     margin-left: 50px;
     margin-bottom: 50px;
-    text-align: left;
 }
-
 .Article ul {
     list-style-type: disc;
 }
@@ -87,9 +85,6 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
     margin: 20px;
 }
 
-.Article blockquote p {
-    text-align: center;
-}
 .Article blockquote {
     font-size: 1.2em;
     border: 2px solid var(--palette-2);
@@ -97,6 +92,15 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.Article blockquote p {
+    text-align: center;
+}
+
+.Article blockquote hr {
+    margin: 10px;
+}
+
 .Article img {
     max-width: 100%;
     height: auto;
