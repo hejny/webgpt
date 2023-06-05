@@ -7,9 +7,9 @@ import { NoSsrProps } from './NoSsr';
 export function NoCsr(props: NoSsrProps) {
     const { children } = props;
 
-    const isRunningOnServer = useSsrDetection();
+    const isServerRender = useSsrDetection();
 
-    if (!isRunningOnServer) {
+    if (!isServerRender) {
         return <></>;
     }
 

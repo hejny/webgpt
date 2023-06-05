@@ -10,9 +10,9 @@ import { useSsrDetection } from './useSsrDetection';
 let closePreventionSystem: IClosePreventionSystem;
 
 export function useClosePreventionSystem(): IClosePreventionSystem {
-    const isRunningOnServer = useSsrDetection();
+    const isServerRender = useSsrDetection();
 
-    if (isRunningOnServer) {
+    if (isServerRender) {
         return new FakeClosePreventionSystem();
     }
     if (!closePreventionSystem) {

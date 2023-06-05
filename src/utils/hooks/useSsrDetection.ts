@@ -6,11 +6,11 @@ import { useEffect, useState } from 'react';
  * @returns {boolean} - Whether the code is running on the server or not.
  */
 export function useSsrDetection() {
-    const [isRunningOnServer, setIsRunningOnServer] = useState<boolean>(true);
+    const [isServerRender, setisServerRender] = useState<boolean>(true);
     useEffect(() => {
-        setIsRunningOnServer(false);
+        setisServerRender(false);
     }, []);
-    return isRunningOnServer;
+    return isServerRender;
 
     /**
      * Note: We can not use simple check like this:

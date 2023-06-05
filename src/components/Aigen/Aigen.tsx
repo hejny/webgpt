@@ -10,12 +10,12 @@ import { randomItem } from '../../utils/randomItem';
  * @@
  */
 export function Aigen() {
-    const isRunningOnServer = useSsrDetection();
+    const isServerRender = useSsrDetection();
     const {
         colorStats: { palette },
     } = useWallpaper();
 
-    if (isRunningOnServer) {
+    if (isServerRender) {
         // TODO: !! Allow when decided how to mark AI generated webpages
         return <></>;
     }

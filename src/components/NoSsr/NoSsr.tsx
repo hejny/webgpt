@@ -10,9 +10,9 @@ export interface NoSsrProps {
 export function NoSsr(props: NoSsrProps) {
     const { children } = props;
 
-    const isRunningOnServer = useSsrDetection();
+    const isServerRender = useSsrDetection();
 
-    if (isRunningOnServer) {
+    if (isServerRender) {
         return <>{/* TODO: Here should be maybe something like [The content will be shown in the browser] */}</>;
     }
 

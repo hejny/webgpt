@@ -9,13 +9,13 @@ export function AnalyticsAndIntegrations() {
     const router = useRouter();
     const isReady = router.isReady;
     const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
-    const isRunningOnServer = useSsrDetection();
+    const isServerRender = useSsrDetection();
     // TODO: !!! Also isCookiesAllowed
 
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
-            {isReady && !isPresenting && !isRunningOnServer && (
+            {isReady && !isPresenting && !isServerRender && (
                 <script
                     dangerouslySetInnerHTML={{
                         __html: spaceTrim(`

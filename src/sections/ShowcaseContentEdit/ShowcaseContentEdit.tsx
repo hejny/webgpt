@@ -14,7 +14,7 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
     const router = useRouter();
     const isReady = router.isReady; /* <- !!! Is this help */
     const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
-    const isRunningOnServer = useSsrDetection();
+    const isServerRender = useSsrDetection();
 
     const modal = router.query.modal || null;
 
@@ -22,7 +22,7 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
         <>
             {modal === 'edit' && <EditModal />}
             {modal === 'export' && <ExportModal />}
-            {isReady && !isPresenting && !isRunningOnServer && (
+            {isReady && !isPresenting && !isServerRender && (
                 <ControlPanel
                     {...{ randomWallpaper }}
                     turnOnEditing={() => {
