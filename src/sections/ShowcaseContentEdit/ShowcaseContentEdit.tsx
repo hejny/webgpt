@@ -2,6 +2,7 @@ import { useRouter } from 'next/dist/client/router';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { EditModal } from '../../components/EditModal/EditModal';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
+import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 import { IWallpaper } from '../../utils/IWallpaper';
 
 interface ShowcaseContentWithEditProps {
@@ -12,6 +13,7 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
     const { randomWallpaper } = props;
     const router = useRouter();
     const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
+    const isRunningOnServer = useSsrDetection();
 
     const modal = router.query.modal || null;
 
@@ -19,7 +21,7 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
         <>
             {modal === 'edit' && <EditModal />}
             {modal === 'export' && <ExportModal />}
-            {!isPresenting && (
+            {!isPresenting && !isRunningOnServer && (
                 <ControlPanel
                     {...{ randomWallpaper }}
                     turnOnEditing={() => {
