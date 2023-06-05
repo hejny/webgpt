@@ -6,12 +6,13 @@ import spaceTrim from 'spacetrim';
  */
 export function AnalyticsAndIntegrations() {
     const router = useRouter();
+    const isReady = router.isReady;
     const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
 
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
-            {!isPresenting && (
+            {isReady && !isPresenting && (
                 <script
                     dangerouslySetInnerHTML={{
                         __html: spaceTrim(`
