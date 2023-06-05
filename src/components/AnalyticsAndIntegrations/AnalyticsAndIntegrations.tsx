@@ -10,6 +10,8 @@ export function AnalyticsAndIntegrations() {
             <script
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
+return;
+
                         var _smartsupp = _smartsupp || {};
                         _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
                         window.smartsupp||(function(d) {
