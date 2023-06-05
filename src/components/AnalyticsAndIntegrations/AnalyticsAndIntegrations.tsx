@@ -1,30 +1,35 @@
+import { useRouter } from 'next-router-mock';
 import spaceTrim from 'spacetrim';
 
 /**
  * @@
  */
 export function AnalyticsAndIntegrations() {
+    const router = useRouter();
+    const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
+
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
-            <script
-                dangerouslySetInnerHTML={{
-                    __html: spaceTrim(`
-return;
-
-                        var _smartsupp = _smartsupp || {};
-                        _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
-                        window.smartsupp||(function(d) {
-                        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-                        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-                        c.type='text/javascript';c.charset='utf-8';c.async=true;
-                        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-                        })(document);
+            {!isPresenting && (
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: spaceTrim(`
+                            var _smartsupp = _smartsupp || {};
+                            _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
+                            window.smartsupp||(function(d) {
+                            var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                            s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                            c.type='text/javascript';c.charset='utf-8';c.async=true;
+                            c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+                            })(document);
                     `),
-                }}
-            />
+                    }}
+                />
+            )}
             <style
                 dangerouslySetInnerHTML={{
+                    // TODO: !!! This should be excluded from export
                     __html: spaceTrim(`
                         #chat-application{
                             color-scheme: light; /* <- Note: To enable transparent iframe borders */
