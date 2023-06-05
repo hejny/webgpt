@@ -1,39 +1,18 @@
 # Pricing
 
-<div class="flex justify-center">
-  <div class="max-w-2xl">
-    <div class="bg-white shadow-lg rounded-lg">
-      <div class="p-8">
-        <h2 class="text-2xl font-bold mb-4">Pricing Plans</h2>
-        <div class="grid grid-cols-3 gap-4">
-          <!-- Plan 1 -->
-          <div class="bg-purple-200 rounded-lg p-6 text-center">
-            <h3 class="text-xl font-bold mb-4">Basic</h3>
-            <p class="text-gray-600 mb-4">Perfect for starters</p>
-            <p class="text-3xl font-bold mb-4">$19</p>
-            <p class="text-gray-600">per month</p>
-            <button class="bg-purple-500 text-white py-2 px-4 rounded-full mt-6">Choose Plan</button>
-          </div>
-          
-          <!-- Plan 2 -->
-          <div class="bg-pink-200 rounded-lg p-6 text-center">
-            <h3 class="text-xl font-bold mb-4">Pro</h3>
-            <p class="text-gray-600 mb-4">Best value for professionals</p>
-            <p class="text-3xl font-bold mb-4">$49</p>
-            <p class="text-gray-600">per month</p>
-            <button class="bg-pink-500 text-white py-2 px-4 rounded-full mt-6">Choose Plan</button>
-          </div>
-          
-          <!-- Plan 3 -->
-          <div class="bg-blue-200 rounded-lg p-6 text-center">
-            <h3 class="text-xl font-bold mb-4">Enterprise</h3>
-            <p class="text-gray-600 mb-4">Tailored for large organizations</p>
-            <p class="text-3xl font-bold mb-4">$99</p>
-            <p class="text-gray-600">per month</p>
-            <button class="bg-blue-500 text-white py-2 px-4 rounded-full mt-6">Choose Plan</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+|                     |                     Free                      |                           Simple                           |                                                                            Advanced <sup>[1]</sup>                                                                            |                                                                                                                         Enterprise <sup>[1]</sup>                                                                                                                         |
+| ------------------- | :-------------------------------------------: | :--------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Price               |                  0 / forever                  |                         50czk / m                          |                                                                                    250 / m                                                                                    |                                                                                                                                Contact us                                                                                                                                 |
+| Limitations         | You need to include reference to us in footer |                             -                              |                                                                                       -                                                                                       |                                                                                                                                     -                                                                                                                                     |
+| Exclusivity         |                      No                       |                          1 image                           |                                                                                 A collection                                                                                  |                                                                                                                               A collection                                                                                                                                |
+| General support     |                     Email                     |                       Email<br>Chat                        |                                                                                 Email<br>Chat                                                                                 |                                                                                                                          Email<br>Chat<br>Phone                                                                                                                           |
+| Programming support |                       -                       |                 Prompting & design manual                  |                                                        Help with simple static deployment<br>+ everything from simple                                                         |                                                                                  Experience programmer for customization and consultations <sup>[2]</sup><br>+ everything from advanced                                                                                   |
+| Pages               | 1<br>_Ideal for one looong presentation page_ | 25<br>_Ideal for fixed number of pages - presentation web_ |                                                           ∞<br>_Ideal for dynamic number of pages - blog, eshop,…_                                                            |                                                                                                                                     ∞                                                                                                                                     |
+| Systems             |                 Static export                 |                       Static export                        | Static export Export to multiple systems like WordPress<sup>[1]</sup>, Wix<sup>[1]</sup>, Webflow<sup>[1]</sup>, Nette<sup>[1]</sup>, React<sup>[1]</sup>, Next<sup>[1]</sup> | Static export Export to multiple systems like WordPress<sup>[1]</sup>, Wix<sup>[1]</sup>, Webflow<sup>[1]</sup>, Nette<sup>[1]</sup>, React<sup>[1]</sup>, Next<sup>[1]</sup><br>+ You can use consultation / development hours <sup>[2]</sup> for any CMS of your choise |
+
+### Notes
+
+1. Some features from Advanced and Enterprise plans are not automated yet - you will have them
+2. Pricing / customization hours according to your specific needs
+
+<!-- @see https://www.tablesgenerator.com/markdown_tables -->
