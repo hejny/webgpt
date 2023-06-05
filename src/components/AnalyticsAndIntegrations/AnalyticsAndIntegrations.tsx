@@ -1,5 +1,6 @@
 import { useRouter } from 'next-router-mock';
 import spaceTrim from 'spacetrim';
+import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
 /**
  * @@
@@ -8,11 +9,13 @@ export function AnalyticsAndIntegrations() {
     const router = useRouter();
     const isReady = router.isReady;
     const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
+    const isRunningOnServer = useSsrDetection();
+    // TODO: !!! Also isCookiesAllowed
 
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
-            {isReady && !isPresenting && (
+            {isReady && !isPresenting && !isRunningOnServer && (
                 <script
                     dangerouslySetInnerHTML={{
                         __html: spaceTrim(`
