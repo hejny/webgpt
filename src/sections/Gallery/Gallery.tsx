@@ -20,7 +20,7 @@ export function GallerySection(props: SampleProps) {
     const wallpapers = useContext(WallpapersContext);
 
     const [filter, setFilter] = useState<GalleryFilter>({
-        limit: 100,
+        limit: 24 /* <- Note: As a highly composite number to fit in misc grids */,
         isRandom: false /* <- TODO: In future default order should be by populariry */,
     });
 
