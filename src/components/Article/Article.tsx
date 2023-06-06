@@ -128,7 +128,7 @@ export function Article(props: IArticleProps) {
                                 (font) =>
                                     `@import url(https://fonts.googleapis.com/css2?family=${font
                                         .split(' ')
-                                        .join('+')}&display=swap});`,
+                                        .join('+')}&display=swap);`,
                             )
                             .join('\n'),
                     }}
