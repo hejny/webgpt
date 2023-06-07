@@ -13,7 +13,7 @@ export function AigenSimple() {
                 right: 0,
             }}
         >
-            <a href="#" /* <- TODO: !!! Create web which will explain how is the web AI generated */>
+            <a href="#" /* <- TODO: !!! Create web which will explain how is the web AI generated - via ?mode=explanation */>
                 {randomItem(<div style={{ marginRight: 5 }}>← Made By AI</div>)}
             </a>
         </div>

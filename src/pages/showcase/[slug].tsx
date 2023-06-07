@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
+import { ExplainContent } from '../../components/ExplainContent/ExplainContent';
 import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../../sections/ShowcaseContent/ShowcaseContent';
@@ -23,7 +24,9 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
     const router = useRouter();
     const wallpaperId = router.query.slug as string;
-    // console.log('ShowcasePage', { wallpaperId });
+    const mode = router.query.mode; /* <- TODO: Make hook useMode */
+    const isExplaining = mode === 'explanation';
+    const isPresenting = router.query.mode === 'presentation';
 
     return (
         <WallpapersContext.Provider
@@ -46,8 +49,11 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             </Head>
             */}
 
-            <ShowcaseContent />
-            <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
+            {isExplaining && <ExplainContent />}
+            {!isExplaining && <ShowcaseContent />}
+            {!isExplaining && !isPresenting && (
+                <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
+            )}
         </WallpapersContext.Provider>
     );
 }

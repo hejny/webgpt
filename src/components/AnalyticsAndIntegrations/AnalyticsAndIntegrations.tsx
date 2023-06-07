@@ -10,7 +10,7 @@ export function AnalyticsAndIntegrations() {
     const isReady = router.isReady;
     const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
     const isServerRender = useSsrDetection();
-    // TODO: !!! Also isCookiesAllowed
+    // TODO: !! Also isCookiesAllowed
 
     return (
         <>
