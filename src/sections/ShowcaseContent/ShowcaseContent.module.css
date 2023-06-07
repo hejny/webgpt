@@ -54,6 +54,10 @@
     grid-row: 2 / span 3;
     text-align: center;
     color: rgba(var(--palette-1-triplet), 0.8);
+
+    display: block;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .page a {

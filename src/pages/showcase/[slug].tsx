@@ -85,6 +85,7 @@ export async function getStaticProps({
 }
 
 /**
+ * TODO: !!! mode=explanation
  * TODO: !!! Font must be applied to whole page NOT only the article 
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
