@@ -1,0 +1,14 @@
+.Files {
+    /*/
+    border: 1px dotted red;
+    /**/
+    /* TODO: Use or remove empty css */
+}
+
+.codeView {
+    width: 90%;
+    height: 60vh;
+    overflow: scroll;
+    background-color: #222;
+    color: #ccc;
+}

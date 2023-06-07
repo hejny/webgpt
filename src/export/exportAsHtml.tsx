@@ -26,7 +26,7 @@ interface HtmlExport {
     files: Array<HtmlExportFile>;
 }
 
-interface HtmlExportFile {
+export interface HtmlExportFile {
     pathname: string;
     content: string_html | string_css;
 }

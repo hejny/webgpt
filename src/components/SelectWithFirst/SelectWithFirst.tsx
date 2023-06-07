@@ -2,7 +2,7 @@ import { classNames } from '../../utils/classNames';
 import styles from './SelectWithFirst.module.css';
 
 interface SelectWithFirstProps<TValue> {
-    title: string;
+    title?: string;
     value: TValue;
     onChange(newValue: TValue): void;
     numberOfButtons?: number;
@@ -11,15 +11,15 @@ interface SelectWithFirstProps<TValue> {
 }
 
 export function SelectWithFirst<TValue>(props: SelectWithFirstProps<TValue>) {
-    const { title, value, onChange, numberOfButtons = 1,className } = props;
+    const { title, value, onChange, numberOfButtons = 1, className } = props;
 
     const options = [...props.options];
     const firstOptions = options.slice(0, numberOfButtons);
     const restOptions = options.slice(numberOfButtons);
 
     return (
-        <div className={classNames(styles.SelectWithFirst,className)}>
-            <span className={styles.title}>{title}</span>
+        <div className={classNames(styles.SelectWithFirst, className)}>
+            {title && <span className={styles.title}>{title}</span>}
 
             {firstOptions.map((option) => (
                 <button

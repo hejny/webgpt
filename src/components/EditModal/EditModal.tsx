@@ -12,6 +12,7 @@ import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { ColorBox } from '../ColorBox/ColorBox';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
+import { Modal } from '../Modal/Modal';
 import styles from './EditModal.module.css';
 import { EditModalColorAlgoritm } from './EditModalColorAlgoritm';
 
@@ -36,115 +37,104 @@ export function EditModal(props: EditModalProps) {
     const closePreventionSystem = useClosePreventionSystem();
 
     return (
-        <>
-            <Link
-                className={styles.overlay}
-                href={{
-                    pathname: router.pathname,
-                    query: {
-                        slug: router.query.slug,
-                    },
-                }}
-            />
-            <div className={styles.EditModal}>
-                <div className={styles.title}>Editing</div>
-                <div className={styles.section}>
-                    <ImagineTag>{wallpaper.prompt}</ImagineTag>
-                </div>
-                <div className={styles.section}>
-                    <EditModalColorAlgoritm />
-                </div>
-                <div className={classNames(styles.section, styles.palette)}>
-                    {wallpaper.colorStats.palette.map((color, i) => (
-                        <div key={i} className={styles.paletteItem} style={{ backgroundColor: color.value.toHex() }}>
-                            <ColorInput
-                                defaultValue={color.value}
-                                onChange={(newColor) => {
-                                    // TODO: !!! DO here real change of wallpaper with save and export
-                                    // TODO: [🧠] !! DRY [🎋]
-                                    // TODO: [🧠] !! Reset when switching wallpapers
-
-                                    closePreventionSystem.registerClosePrevention({
-                                        canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
-                                    });
-                                    document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
-                                    document.documentElement.style.setProperty(
-                                        `--palette-${i}-triplet`,
-                                        `${newColor.red}, ${newColor.green}, ${newColor.blue}`,
-                                    );
-                                }}
-                            />
-                            <p
-                                style={{
-                                    color: color.value.then(textColor).toHex(),
-                                }}
-                            >
-                                {color.note}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-                <div className={styles.section}>
-                    <div>
-                        averageColor:
-                        <ColorBox value={wallpaper.colorStats.averageColor} />
-                    </div>
-
-                    {/*<pre>{JSON.stringify(wallpaper.colorStats, null, 4)}</pre>*/}
-                </div>
-
-                <div className={styles.section}>
-                    <EditModalDownloadButtons />
-                    <Link
-                        className={'button'}
-                        href={{
-                            pathname: router.pathname,
-                            query: {
-                                ...router.query,
-                                modal: 'export',
-                            },
-                        }}
-                    >
-                        More Download Options
-                    </Link>
-                    <button
-                        className={'button'}
-                        onClick={() => {
-                            (window as any).fooFunction();
-                        }}
-                    >
-                        {/* TODO: !! Remove */}
-                        Invoke error
-                    </button>
-                    <Link
-                        className={'button'}
-                        href={{
-                            pathname: router.pathname,
-                            query: {
-                                slug: router.query.slug,
-                            },
-                        }}
-                    >
-                        Done
-                    </Link>
-                </div>
-
-                <div className={styles.section}>
-                    <MarkdownEditor
-                        className={styles.editor}
-                        value={wallpaper.content}
-                        onChange={(content) => {
-                            closePreventionSystem.registerClosePrevention({
-                                canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
-                            });
-                            wallpaperSubject.next({ ...wallpaperSubject.value, content });
-                        }}
-                        // TODO: Hide fullscreen button
-                        // toolbarsFilter={(tool) => tool === 'fullscreen'}
-                    />
-                </div>
+        <Modal title="Editing">
+            <div className={styles.title}>Editing</div>
+            <div className={styles.section}>
+                <ImagineTag>{wallpaper.prompt}</ImagineTag>
             </div>
-        </>
+            <div className={styles.section}>
+                <EditModalColorAlgoritm />
+            </div>
+            <div className={classNames(styles.section, styles.palette)}>
+                {wallpaper.colorStats.palette.map((color, i) => (
+                    <div key={i} className={styles.paletteItem} style={{ backgroundColor: color.value.toHex() }}>
+                        <ColorInput
+                            defaultValue={color.value}
+                            onChange={(newColor) => {
+                                // TODO: !!! DO here real change of wallpaper with save and export
+                                // TODO: [🧠] !! DRY [🎋]
+                                // TODO: [🧠] !! Reset when switching wallpapers
+
+                                closePreventionSystem.registerClosePrevention({
+                                    canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
+                                });
+                                document.documentElement.style.setProperty(`--palette-${i}`, newColor.toHex());
+                                document.documentElement.style.setProperty(
+                                    `--palette-${i}-triplet`,
+                                    `${newColor.red}, ${newColor.green}, ${newColor.blue}`,
+                                );
+                            }}
+                        />
+                        <p
+                            style={{
+                                color: color.value.then(textColor).toHex(),
+                            }}
+                        >
+                            {color.note}
+                        </p>
+                    </div>
+                ))}
+            </div>
+            <div className={styles.section}>
+                <div>
+                    averageColor:
+                    <ColorBox value={wallpaper.colorStats.averageColor} />
+                </div>
+
+                {/*<pre>{JSON.stringify(wallpaper.colorStats, null, 4)}</pre>*/}
+            </div>
+
+            <div className={styles.section}>
+                <EditModalDownloadButtons />
+                <Link
+                    className={'button'}
+                    href={{
+                        pathname: router.pathname,
+                        query: {
+                            ...router.query,
+                            modal: 'export',
+                        },
+                    }}
+                >
+                    More Download Options
+                </Link>
+                <button
+                    className={'button'}
+                    onClick={() => {
+                        (window as any).fooFunction();
+                    }}
+                >
+                    {/* TODO: !! Remove */}
+                    Invoke error
+                </button>
+                <Link
+                    className={'button'}
+                    href={{
+                        pathname: router.pathname,
+                        query: {
+                            slug: router.query.slug,
+                        },
+                    }}
+                >
+                    Done
+                </Link>
+            </div>
+
+            <div className={styles.section}>
+                <MarkdownEditor
+                    className={styles.editor}
+                    value={wallpaper.content}
+                    onChange={(content) => {
+                        closePreventionSystem.registerClosePrevention({
+                            canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
+                        });
+                        wallpaperSubject.next({ ...wallpaperSubject.value, content });
+                    }}
+                    // TODO: Hide fullscreen button
+                    // toolbarsFilter={(tool) => tool === 'fullscreen'}
+                />
+            </div>
+        </Modal>
     );
 }
 

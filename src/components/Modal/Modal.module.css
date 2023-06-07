@@ -9,7 +9,7 @@
     background-color: rgba(0, 0, 0, 0.25);
 }
 
-.ExportModal {
+.Modal {
     position: fixed;
     z-index: 10001;
     top: 50px;
@@ -44,43 +44,9 @@
     align-items: center;
 }
 
-.editor {
-    /*width: 100%;*/
-    width: 90vw;
-    height: 400px;
-}
-
-.section {
-    padding-bottom: 10px;
-    border-bottom: 2px solid rgba(var(--palette-0-triplet), 0.5);
-    width: 100%;
-}
-
-.palette {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 170px;
-}
-
 @media (max-width: 600px) {
-    .palette {
-        grid-template-columns: 1fr;
-    }
-}
-
-/*
-.paletteItem:nth-child(2) {
-    background-color: #00000023;
-}
-*/
-
-.paletteItem {
-    padding: 5px;
-}
-
-@media (max-width: 600px) {
-    /* Note: On mobile ExportModal fills the whole screen */
-    .ExportModal {
+    /* Note: On mobile EditModal fills the whole screen */
+    .Modal {
         top: 0;
         left: 0;
         bottom: 0;
