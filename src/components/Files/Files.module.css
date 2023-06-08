@@ -34,6 +34,10 @@
     color: #ccc;
 }
 
+.files > div {
+    justify-content: flex-start !important;
+}
+
 .codeView {
     /*/
     border: 1px dotted black;

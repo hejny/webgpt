@@ -153,7 +153,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     html = prettifyHtml(html);
 
-    files.push({
+    files.unshift({
         pathname: 'index.html',
         content: html,
     });
