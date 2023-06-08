@@ -1,4 +1,3 @@
-TODO: !! Decide if tailwind needed and then keep or remove - if remove REVERT whole commit 8a7be88084e64f5653706def31f27411a7eefa1e
 TODO: Add things from Ainautes
 TODO: Use https://www.npmjs.com/package/next-seo
 TODO: Add JSON+LD
