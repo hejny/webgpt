@@ -61,10 +61,10 @@ export function ControlPanel(props: ControlPanelProps) {
             </OpenModalLink>
 
             <Link
-                prefetch={false /* <- Note: Because gallery is enormous */}
                 href={{
+                    pathname: '/showcase/[wallpaper]',
                     query: {
-                        wallpaper: router.query.wallpaper /* <- TODO: More elegant way than passing known stuff */,
+                        wallpaper: router.query.wallpaper,
                         mode: 'presentation',
                     },
                 }}

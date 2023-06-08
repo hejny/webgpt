@@ -23,7 +23,6 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
 
     const router = useRouter();
-    const wallpaperId = router.query.wallpaper as string; /* <- !!!!! ACRY Use currentWallpapeId */
     const mode = router.query.mode; /* <- TODO: Make hook useMode */
     const isExplaining = mode === 'explanation';
     const isPresenting = router.query.mode === 'presentation';
