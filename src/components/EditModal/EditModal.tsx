@@ -12,7 +12,7 @@ import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { ColorBox } from '../ColorBox/ColorBox';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
-import { Modal } from '../Modal/Modal';
+import { Modal, OpenModalLink } from '../Modal/Modal';
 import styles from './EditModal.module.css';
 import { EditModalColorAlgoritm } from './EditModalColorAlgoritm';
 
@@ -86,18 +86,9 @@ export function EditModal(props: EditModalProps) {
 
             <div className={styles.section}>
                 <EditModalDownloadButtons />
-                <Link
-                    className={'button'}
-                    href={{
-                        pathname: router.pathname,
-                        query: {
-                            ...router.query,
-                            modal: 'export',
-                        },
-                    }}
-                >
+                <OpenModalLink className={'button'} modal={'export'}>
                     More Download Options
-                </Link>
+                </OpenModalLink>
                 <button
                     className={'button'}
                     onClick={() => {

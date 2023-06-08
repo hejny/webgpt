@@ -22,20 +22,7 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
         <>
             {modal === 'edit' && <EditModal />}
             {modal === 'export' && <ExportModal />}
-            {isReady && !isServerRender && (
-                <ControlPanel
-                    {...{ randomWallpaper }}
-                    turnOnEditing={() => {
-                        router.push({
-                            pathname: router.pathname,
-                            query: {
-                                ...router.query,
-                                modal: 'edit',
-                            },
-                        });
-                    }}
-                />
-            )}
+            {isReady && !isServerRender && <ControlPanel {...{ randomWallpaper }} />}
         </>
     );
 }

@@ -4,19 +4,19 @@ import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
+import { OpenModalLink } from '../Modal/Modal';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 
 interface ControlPanelProps {
     randomWallpaper: IWallpaper;
-    turnOnEditing(): void;
 }
 
 /**
  * @@@
  */
 export function ControlPanel(props: ControlPanelProps) {
-    const { randomWallpaper, turnOnEditing } = props;
+    const { randomWallpaper } = props;
     const router = useRouter();
 
     return (
@@ -56,9 +56,9 @@ export function ControlPanel(props: ControlPanelProps) {
                 />
             </Link>
 
-            <button onClick={turnOnEditing} className={classNames(/*'button',*/ styles.button)} title="Edit this web">
+            <OpenModalLink modal={'edit'} className={classNames(/*'button',*/ styles.button)} title="Edit this web">
                 <Article content="🖊" isUsingOpenmoji />
-            </button>
+            </OpenModalLink>
 
             <Link
                 prefetch={false /* <- Note: Because gallery is enormous */}

@@ -44,6 +44,10 @@
     align-items: center;
 }
 
+.title .closeIcon {
+    float: right;
+}
+
 @media (max-width: 600px) {
     /* Note: On mobile EditModal fills the whole screen */
     .Modal {
