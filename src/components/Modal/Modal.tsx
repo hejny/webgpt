@@ -1,5 +1,5 @@
-import { useRouter } from 'next-router-mock';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
 import styles from './Modal.module.css';
 
@@ -46,16 +46,18 @@ export function OpenModalLink(props: OpenModalLinkProps) {
     const router = useRouter();
 
     return (
-        <Link
-            href={{
-                pathname: '/showcase/[slug]',
-                query: {
-                    ...router.query,
-                    modal,
-                },
-            }}
-            {...{ children, className, title }}
-        />
+        <>
+            <Link
+                href={{
+                    pathname: '/showcase/[slug]',
+                    query: {
+                        slug: router.query.slug,
+                        modal,
+                    },
+                }}
+                {...{ children, className, title }}
+            />
+        </>
     );
 }
 
@@ -63,14 +65,14 @@ export function CloseModalLink(props: CustomLinkProps) {
     const { className, children, title } = props;
 
     const router = useRouter();
-    const query = { ...router.query };
-    delete query.modal;
 
     return (
         <Link
             href={{
                 pathname: '/showcase/[slug]',
-                query,
+                query: {
+                    slug: router.query.slug,
+                },
             }}
             {...{ children, className, title }}
         />
