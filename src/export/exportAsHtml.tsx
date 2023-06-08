@@ -9,7 +9,7 @@ import { ShowcaseAppHead } from '../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../sections/ShowcaseContent/ShowcaseContent';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
-import { string_css, string_html, string_uri } from '../utils/typeAliases';
+import { string_css, string_html } from '../utils/typeAliases';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
 
@@ -27,6 +27,7 @@ interface HtmlExport {
 }
 
 export interface HtmlExportFile {
+    type: 'HTML' | 'CSS' | 'JS' | 'IMAGE';
     pathname: string;
     content: string_html | string_css;
 }
@@ -38,7 +39,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     memoryRouter.query = { wallpaper: wallpaper.id };
 
     const files: Array<HtmlExportFile> = [];
-    let styles: Array<string> = [];
+    const styles: Array<string> = [];
 
     // Note: Fetch all <style> into styles
     for (const styleElement of Array.from(document.querySelectorAll('style'))) {
@@ -67,31 +68,52 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         );
     }
 
-    // Note: Group styles into groups:
-    //       - config
-    //       - common
-    //       - article
-    const configStyle = styles.find((style) => style.includes(':root' /* <- TODO: Probbably better detection */));
-    const articleStyle = styles.find((style) => style.includes('.Article' /* <- TODO: Probbably better detection */));
-    const commonStyle = styles.filter((style) => [configStyle, articleStyle].includes(style)).join('\n\n\n');
-    if (!configStyle) {
-        throw new Error('Config style not found');
-    }
-    if (!articleStyle) {
-        throw new Error('Article style not found');
+    // Note: Join styles into one chunk
+    const style = styles.join('\n\n\n');
+
+    // Note: Split styles into rules
+    // !!!!!!!!!!!!!!!!!!!!!!!!
+    const rules = style.split(/}/g);
+
+    // Note: Group style rules into 34️⃣ groups:
+    const importRules: Array<string> = [];
+    const configRules: Array<string> = [];
+    const articleRules: Array<string> = [];
+    const commonRules: Array<string> = [];
+
+    for (const rule of rules) {
+        // 1️⃣ Imports
+        if (rule.includes('@import' /* <- TODO: Probbably better detection */)) {
+            importRules.push(rule);
+        }
+        // 2️⃣ Config
+        else if (rule.includes(':root' /* <- TODO: Probbably better detection */)) {
+            configRules.push(rule);
+        }
+        // 3️⃣ Article
+        else if (rule.includes('.Article' /* <- TODO: Probbably better detection */)) {
+            articleRules.push(rule);
+        }
+        // 4️⃣ Common
+        else {
+            commonRules.push(rule);
+        }
     }
 
-    // Note: Add notes to styles and regroup them
-    styles = [
+    const configStyle = prettifyCss(
         spaceTrim(
             (block) => `
                 /**
                  * Note: This is the config style, it is used to configure the whole page.
                  */
 
-                ${block(configStyle)}
+                ${block(configRules.join('\n\n\n'))}
+
             `,
         ),
+    );
+
+    const commonStyle = prettifyCss(
         spaceTrim(
             (block) => `
                 /**
@@ -102,47 +124,41 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                  *          3. Chage article style NOT common style
                  */
 
-                ${block(commonStyle)}
+                ${block(importRules.join('\n\n\n'))}
+
+                ${block(commonRules.join('\n\n\n'))}
             `,
         ),
+    );
+
+    const articleStyle = prettifyCss(
         spaceTrim(
             (block) => `
                 /**
                  * Note: This is the style of the article
                  */
 
-                ${block(articleStyle)}
+                ${block(articleRules.join('\n\n\n'))}
             `,
         ),
-    ];
+    );
 
-    // Note: Prettify all styles
-    styles = styles.map(prettifyCss);
-
-    const stylesLinks: Array<string_uri> = [];
-    if (stylesPlace == 'EXTERNAL') {
-        if (styles.length !== 3) {
-            throw new Error(`There are ${styles.length} styles but exatly 3 styles are expected`);
-        }
-
-        for (const { pathname, content } of [
-            { pathname: 'config.css', content: styles[0] },
-            {
-                pathname: 'build/common.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
-                content: styles[1],
-            },
-            {
-                pathname: 'build/article.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
-                content: styles[2],
-            },
-        ]) {
-            files.push({
-                pathname,
-                content,
-            });
-            stylesLinks.push(pathname);
-        }
-        styles = [];
+    for (const { pathname, content } of [
+        { pathname: 'config.css', content: configStyle },
+        {
+            pathname: 'build/common.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
+            content: commonStyle,
+        },
+        {
+            pathname: 'build/article.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
+            content: articleStyle,
+        },
+    ]) {
+        files.push({
+            type: 'CSS',
+            pathname,
+            content,
+        });
     }
 
     let html = renderToStaticMarkup(
@@ -153,12 +169,31 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                             <ShowcaseAppHead isNextHeadUsed={false}>
-                                {stylesLinks.map((styleLink, i) => (
-                                    <link key={i} rel="stylesheet" href={styleLink} />
-                                ))}
-                                {styles.map((style, i) => (
-                                    <style key={i} dangerouslySetInnerHTML={{ __html: prettifyCss(style) }} />
-                                ))}
+                                {stylesPlace == 'EXTERNAL'
+                                    ? files
+                                          .filter(({ type }) => type === 'CSS')
+                                          .map(({ pathname }, i) => <link key={i} rel="stylesheet" href={pathname} />)
+                                    : files
+                                          .filter(({ type }) => type === 'CSS')
+                                          .map(({ pathname, content }, i) => (
+                                              <style
+                                                  key={i}
+                                                  dangerouslySetInnerHTML={{
+                                                      __html: prettifyCss(
+                                                          spaceTrim(
+                                                              (block) => `
+                                                                    /**
+                                                                     * 📁 ${pathname}
+                                                                     */
+
+                                                                    ${block(style)}
+                                                                
+                                                                `,
+                                                          ),
+                                                      ),
+                                                  }}
+                                              />
+                                          ))}
                             </ShowcaseAppHead>
 
                             {/* TODO: Maybe <LanguagePicker /> */}
@@ -178,6 +213,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     html = prettifyHtml(html);
 
     files.unshift({
+        type: 'HTML',
         pathname: 'index.html',
         content: html,
     });
