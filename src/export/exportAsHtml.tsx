@@ -67,11 +67,18 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         );
     }
 
-    // Note: Group styles into two groups 1. config and 2. common
+    // Note: Group styles into groups:
+    //       - config
+    //       - common
+    //       - article
     const configStyle = styles.find((style) => style.includes(':root' /* <- TODO: Probbably better detection */));
-    const commonStyle = styles.filter((style) => style !== configStyle).join('\n\n\n');
+    const articleStyle = styles.find((style) => style.includes('.Article' /* <- TODO: Probbably better detection */));
+    const commonStyle = styles.filter((style) => [configStyle, articleStyle].includes(style)).join('\n\n\n');
     if (!configStyle) {
         throw new Error('Config style not found');
+    }
+    if (!articleStyle) {
+        throw new Error('Article style not found');
     }
 
     // Note: Add notes to styles and regroup them
@@ -92,9 +99,19 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                  *       If you want to make design changes, consider:
                  *          1. Making changes in separate file
                  *          2. Chage config style NOT common style
+                 *          3. Chage article style NOT common style
                  */
 
                 ${block(commonStyle)}
+            `,
+        ),
+        spaceTrim(
+            (block) => `
+                /**
+                 * Note: This is the style of the article
+                 */
+
+                ${block(articleStyle)}
             `,
         ),
     ];
@@ -113,6 +130,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             {
                 pathname: 'build/common.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
                 content: styles[1],
+            },
+            {
+                pathname: 'build/article.css' /* <- TODO: [🧠] What is the best folder (public, assets, build...?) */,
+                content: styles[2],
             },
         ]) {
             files.push({
