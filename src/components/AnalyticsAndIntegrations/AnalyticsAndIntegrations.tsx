@@ -33,6 +33,7 @@ export function AnalyticsAndIntegrations() {
                 )
             }
             <style
+                data-export-ignore
                 dangerouslySetInnerHTML={{
                     // TODO: !!! This should be excluded from export
                     __html: spaceTrim(`

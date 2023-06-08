@@ -42,6 +42,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     // Note: Fetch all <style> into styles
     for (const styleElement of Array.from(document.querySelectorAll('style'))) {
+        if (styleElement.hasAttribute('data-export-ignore')) {
+            continue;
+        }
         styles.push(styleElement.innerHTML);
     }
 
