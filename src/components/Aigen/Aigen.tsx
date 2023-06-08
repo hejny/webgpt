@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 import { Color } from '../../utils/color/Color';
 import { textColor } from '../../utils/color/operators/furthest';
@@ -10,6 +12,7 @@ import { randomItem } from '../../utils/randomItem';
  * @@
  */
 export function Aigen() {
+    const router = useRouter();
     const isServerRender = useSsrDetection();
     const {
         colorStats: { palette },
@@ -83,7 +86,15 @@ export function Aigen() {
                 right: 0,
             }}
         >
-            <a href="#" /* <- TODO: !!! Create web which will explain how is the web AI generated */>
+            <Link
+                href={{
+                    pathname: '/showcase/[wallpaper]',
+                    query: {
+                        wallpaper: router.query.wallpaper,
+                        mode: 'explanation',
+                    },
+                }}
+            >
                 {randomItem(
                     <div style={{ marginRight: 5 }}>
                         {randomItem('← ', '<-', '↶', '') +
@@ -131,7 +142,7 @@ export function Aigen() {
                         ))}
                     </svg>,
                 )}
-            </a>
+            </Link>
         </div>
     );
 }

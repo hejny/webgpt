@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import styles from './ExplainContent.module.css';
 
@@ -6,6 +7,7 @@ import styles from './ExplainContent.module.css';
  */
 export function ExplainContent() {
     const wallpaperId = useCurrentWallpaperId();
+
     return (
         <div className={styles.ExplainContent}>
             <h1>AI Web</h1>
@@ -18,6 +20,10 @@ export function ExplainContent() {
             />
 
             <p>This web was completely created using AI</p>
+
+            <Link className="button" href={`/showcase/${wallpaperId}`}>
+                Show web
+            </Link>
         </div>
     );
 }

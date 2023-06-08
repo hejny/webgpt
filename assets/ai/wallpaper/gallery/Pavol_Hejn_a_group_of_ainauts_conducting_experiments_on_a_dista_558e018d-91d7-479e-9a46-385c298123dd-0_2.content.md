@@ -8,7 +8,7 @@ Meet the AInautes, your trusted crew to guide your corporate ship through the tu
 
 <a class="button primary" href="info@tomas-studenik.com">Get in touch</a>
 
-<!-- TODO: !!!??? Wrapping buttons in <p> (Wrap in <div>)-->
+<!-- TODO: !!??? Wrapping buttons in <p> (Wrap in <div>)-->
 
 ## Why AInautes
 

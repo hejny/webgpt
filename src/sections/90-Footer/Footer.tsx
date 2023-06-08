@@ -1,4 +1,5 @@
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
@@ -8,6 +9,8 @@ import styles from './Footer.module.css';
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
+
+    const router = useRouter();
     const { t } = useTranslation();
 
     return (
@@ -22,7 +25,7 @@ export function FooterSection() {
                 */}
 
                 <li>
-                    <Link href="/">{t('Footer.home')}</Link>
+                    <Link href="/">Home</Link>
                 </li>
 
                 {/*
@@ -32,11 +35,21 @@ export function FooterSection() {
                 */}
 
                 <li>
-                    <Link href="/contact">{t('Footer.contact')}</Link>
+                    <Link
+                        href={{
+                            pathname: '/showcase/[wallpaper]',
+                            query: {
+                                wallpaper: router.query.wallpaper,
+                                mode: 'explanation',
+                            },
+                        }}
+                    >
+                        AI Web
+                    </Link>
                 </li>
 
                 <li>
-                    <Link href="/about">{t('Footer.technical')}</Link>
+                    <Link href="mailto:me@pavolhejny.com">Contact</Link>
                 </li>
 
                 {/*
