@@ -1,5 +1,5 @@
 .Files {
-    /**/
+    /*/
     border: 1px dotted grey;
     /**/
 
@@ -13,10 +13,12 @@
     grid-template:
         '🟦'
         '⬛';
+
+    background-color: #222;
 }
 
 .files {
-    /**/
+    /*/
     border: 1px dotted blue;
     /**/
 
@@ -27,12 +29,13 @@
 
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: #222;
+
+    border-bottom: 1px solid #555;
     color: #ccc;
 }
 
 .codeView {
-    /**/
+    /*/
     border: 1px dotted black;
     /**/
 
@@ -42,6 +45,7 @@
     height: 100%;
 
     overflow: scroll;
-    background-color: #222;
+
+    background-color: #111;
     color: #ccc;
 }

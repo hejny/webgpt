@@ -34,3 +34,7 @@ export function Files(props: FilesProps) {
         </div>
     );
 }
+
+/**
+ * TODO: Use syntax highlighting for the code view @see https://www.npmjs.com/package/react-syntax-highlighter
+ */

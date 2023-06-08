@@ -16,36 +16,72 @@
     left: 50px;
     bottom: 50px;
     right: 50px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.726);
     backdrop-filter: blur(5px);
 
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+
+    grid-template:
+        '🟦'
+        '⬛';
 }
 
-.title {
-    width: 100%;
-    height: 50px;
+.bar {
+    grid-area: 🟦;
 
-    font-size: 1.5rem;
-    font-weight: bold;
+    width: 100%;
+    height: 100%;
+
     background-color: rgba(var(--palette-0-triplet), 0.5);
     color: var(--palette-1);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-self: center;
+    justify-self: center;
 }
 
-.title .closeIcon {
-    float: right;
+.bar > * {
+    /*/
+    border: 1px dotted red;
+    /**/
+
+    width: 100%;
+    height: 100%;
+}
+
+.bar .title {
+    grid-column: 2 / span 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.bar .icons {
+    grid-column: 3 / span 1;
+
+    display: flex;
+    flex-direction: row-reverse;
+
+    padding: 5px;
+}
+
+.content {
+    grid-area: ⬛;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 @media (max-width: 600px) {

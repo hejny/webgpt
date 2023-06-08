@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ReactNode } from 'react';
+import { Article } from '../Article/Article';
 import styles from './Modal.module.css';
 
 interface ModalProps {
@@ -20,11 +21,15 @@ export function Modal(props: ModalProps) {
         <>
             <CloseModalLink className={styles.overlay} />
             <div className={styles.Modal}>
-                <div className={styles.title}>
-                    {title}
-                    <CloseModalLink className={styles.closeIcon}>X</CloseModalLink>
+                <div className={styles.bar}>
+                    <div className={styles.title}>{title} </div>
+                    <div className={styles.icons}>
+                        <CloseModalLink>
+                            <Article content="✖" isUsingOpenmoji />
+                        </CloseModalLink>
+                    </div>
                 </div>
-                {children}
+                <div className={styles.content}>{children} </div>
             </div>
         </>
     );
