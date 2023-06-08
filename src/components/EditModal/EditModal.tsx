@@ -1,8 +1,8 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
-import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { textColor } from '../../utils/color/operators/furthest';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
@@ -86,11 +86,7 @@ export function EditModal(props: EditModalProps) {
 
             <div className={styles.section}>
                 <EditModalDownloadButtons />
-                <OpenModalLink
-                    className={'button'}
-                    modal={'export'}
-                    
-                >
+                <OpenModalLink className={'button'} modal={'export'}>
                     More Download Options
                 </OpenModalLink>
                 <button
@@ -107,7 +103,7 @@ export function EditModal(props: EditModalProps) {
                     href={{
                         pathname: router.pathname,
                         query: {
-                            slug: router.query.slug,
+                            wallpaper: router.query.wallpaper,
                         },
                     }}
                 >

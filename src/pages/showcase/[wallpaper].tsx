@@ -23,7 +23,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
 
     const router = useRouter();
-    const wallpaperId = router.query.slug as string;
+    const wallpaperId = router.query.wallpaper as string; /* <- !!!!! ACRY Use currentWallpapeId */
     const mode = router.query.mode; /* <- TODO: Make hook useMode */
     const isExplaining = mode === 'explanation';
     const isPresenting = router.query.mode === 'presentation';
@@ -58,7 +58,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     );
 }
 
-export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     return {
         paths: (await getWallpapers()).map(({ id }) => `/showcase/${id}`), // <- Note: indicates that no page needs be created at build time
         fallback: 'blocking', // <- Note: indicates the type of fallback - TODO: !!! Probbably change to false and solve 404 problem
@@ -72,10 +72,10 @@ export async function getStaticProps({
     locale: string;
     params: any /* <- TODO: !! Type propperly + NOT manually */;
 }) {
-    const { slug } = params;
+    const { wallpaper } = params;
 
     const wallpapers = await getWallpapers();
-    const currentWallpaper = wallpapers.find(({ id }) => id === slug);
+    const currentWallpaper = wallpapers.find(({ id }) => id === wallpaper);
     const randomWallpaper = randomItem(
         ...wallpapers,
     ); /* <- TODO: !! Make big chain to traverse whole gallery by clicking random + minor simmilar chains  */

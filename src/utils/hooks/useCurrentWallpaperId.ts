@@ -6,8 +6,8 @@ import { useRouter } from 'next/router';
 export function useCurrentWallpaperId(): string {
     const router = useRouter();
 
-    if (router.pathname === '/showcase/[slug]') {
-        const wallpaperId = router.query.slug as string;
+    if (router.pathname === '/showcase/[wallpaper]') {
+        const wallpaperId = router.query.wallpaper as string;
 
         if (typeof wallpaperId !== 'string') {
             console.log('[📌]', { wallpaperId });

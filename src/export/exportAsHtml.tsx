@@ -34,8 +34,8 @@ export interface HtmlExportFile {
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
     const { stylesPlace } = options;
     const memoryRouter = new MemoryRouter();
-    memoryRouter.pathname = '/showcase/[slug]';
-    memoryRouter.query = { slug: wallpaper.id };
+    memoryRouter.pathname = '/showcase/[wallpaper]';
+    memoryRouter.query = { wallpaper: wallpaper.id };
 
     const files: Array<HtmlExportFile> = [];
     let styles: Array<string> = [];
@@ -124,7 +124,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     let html = renderToStaticMarkup(
         <html>
             <RouterContext.Provider value={memoryRouter}>
-                {/* <MemoryRouterProvider url={'/showcase/[slug]'}> */}
+                {/* <MemoryRouterProvider url={'/showcase/[wallpaper]'}> */}
                 <ExportContext.Provider value={{ isExported: true }}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>

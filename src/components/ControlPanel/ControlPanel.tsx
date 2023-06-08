@@ -64,7 +64,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 prefetch={false /* <- Note: Because gallery is enormous */}
                 href={{
                     query: {
-                        slug: router.query.slug /* <- TODO: More elegant way than passing known stuff */,
+                        wallpaper: router.query.wallpaper /* <- TODO: More elegant way than passing known stuff */,
                         mode: 'presentation',
                     },
                 }}

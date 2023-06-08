@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import spaceTrim from 'spacetrim';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
@@ -6,19 +5,20 @@ import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
  * @@
  */
 export function AnalyticsAndIntegrations() {
-    const router = useRouter();
-    const isReady = router.isReady;
-    const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
+    // [0] const router = useRouter();
+    // [0] const isReady = router.isReady;
+    // [0] const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
     const isServerRender = useSsrDetection();
     // TODO: !! Also isCookiesAllowed
 
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
-            {isReady && !isPresenting && !isServerRender && (
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: spaceTrim(`
+            {
+                /* [0] isReady && !isPresenting && */ !isServerRender && (
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: spaceTrim(`
                             var _smartsupp = _smartsupp || {};
                             _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
                             window.smartsupp||(function(d) {
@@ -28,9 +28,10 @@ export function AnalyticsAndIntegrations() {
                             c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
                             })(document);
                     `),
-                    }}
-                />
-            )}
+                        }}
+                    />
+                )
+            }
             <style
                 dangerouslySetInnerHTML={{
                     // TODO: !!! This should be excluded from export
@@ -81,4 +82,5 @@ export function AnalyticsAndIntegrations() {
 /**
  * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key
  * TODO: !!!! Do not include ANY of this in export
+ * Note: [0] If used there is an error: "The router is not mounted"
  */
