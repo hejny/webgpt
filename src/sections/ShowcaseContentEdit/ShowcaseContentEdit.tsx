@@ -28,5 +28,6 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
 }
 
 /**
+ * TODO: !!! Lazy load modals
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */

@@ -1,13 +1,46 @@
 .Files {
-    /*/
-    border: 1px dotted red;
     /**/
-    /* TODO: Use or remove empty css */
+    border: 1px dotted grey;
+    /**/
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr;
+
+    grid-template:
+        '🟦'
+        '⬛';
+}
+
+.files {
+    /**/
+    border: 1px dotted blue;
+    /**/
+
+    grid-area: 🟦;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #222;
+    color: #ccc;
 }
 
 .codeView {
-    width: 90%;
-    height: 60vh;
+    /**/
+    border: 1px dotted black;
+    /**/
+
+    grid-area: ⬛;
+
+    width: 100%;
+    height: 100%;
+
     overflow: scroll;
     background-color: #222;
     color: #ccc;
