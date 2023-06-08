@@ -1,4 +1,4 @@
-import { useRouter } from 'next-router-mock';
+import { useRouter } from 'next/router';
 import spaceTrim from 'spacetrim';
 import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 

@@ -1,4 +1,4 @@
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 import { ControlPanel } from '../../components/ControlPanel/ControlPanel';
 import { EditModal } from '../../components/EditModal/EditModal';
 import { ExportModal } from '../../components/ExportModal/ExportModal';
