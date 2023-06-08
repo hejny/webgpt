@@ -1,5 +1,6 @@
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
+import { string_url, string_wallpaper_id } from './typeAliases';
 
 export interface IWallpaperProps {
     width: number;
@@ -7,8 +8,8 @@ export interface IWallpaperProps {
 }
 
 export interface IWallpaper {
-    id: string /*_wallpaper_id*/;
-    src: string /*_url*/ /* <- Note: Not using URL objects because of serialization */;
+    id: string_wallpaper_id;
+    src: string_url /* <- Note: Not using URL objects because of serialization */;
     prompt: string;
     colorStats: IWallpaperColorStats /* <- !!! Put here all */;
     // TODO: shapeStats> IWallpaperShapeStats;
