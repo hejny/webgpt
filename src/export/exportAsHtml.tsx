@@ -121,8 +121,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     const stylesLinks: Array<string_uri> = [];
     if (stylesPlace == 'EXTERNAL') {
-        if (styles.length !== 2) {
-            throw new Error(`There are ${styles.length} styles but exatly 2 styles are expected`);
+        if (styles.length !== 3) {
+            throw new Error(`There are ${styles.length} styles but exatly 3 styles are expected`);
         }
 
         for (const { pathname, content } of [
