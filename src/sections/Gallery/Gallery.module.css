@@ -3,7 +3,7 @@
     --on-row: 6;
     --gap: 0;
     --aspect: 1.61;
-    --scale: 3;
+    --scale: 2;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -13,7 +13,7 @@
         --on-row: 3;
         --gap: 2px;
         --aspect: 1;
-        --scale: 3;
+        --scale: 2;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -23,7 +23,7 @@
         --on-row: 2;
         --gap: 2px;
         --aspect: 1;
-        --scale: 4;
+        --scale: 3;
     }
 }
 @media only screen and (max-width: 425px) {
@@ -33,7 +33,7 @@
         --on-row: 1;
         --gap: 0px;
         --aspect: 1;
-        --scale: 3;
+        --scale: 2;
     }
 }
 
@@ -84,15 +84,22 @@
     outline: 1px dotted rgb(28, 80, 28);
     /**/
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    display: block;
     overflow: clip;
 }
 
+/*/
+.galleryItemsInner a {
+    filter: grayscale(50%);
+}
+
+.galleryItemsInner a:hover {
+    filter: none;
+}
+/**/
+
 .galleryItemsInner a iframe {
-    /**/
+    /*/
     outline: 1px dotted red;
     /**/
 
@@ -103,4 +110,5 @@
     width: calc(100% * var(--scale));
     height: calc(100% * var(--scale));
     transform: scale(calc(1 / var(--scale)));
+    transform-origin: 0% 0%;
 }
