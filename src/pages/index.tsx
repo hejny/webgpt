@@ -25,6 +25,9 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
 
             <div className={classNames(styles.page, font.className)}>
                 <main>
+                    <h1>AI Web Maker</h1>
+                    <p>Web pages listed here are pre-generated using AI:</p>
+
                     {/* <HomepageWelcomeSection variant="SIDEPAGE" />*/}
                     <GallerySection />
                 </main>

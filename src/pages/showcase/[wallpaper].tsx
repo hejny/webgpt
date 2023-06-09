@@ -25,7 +25,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     const router = useRouter();
     const mode = router.query.mode; /* <- TODO: Make hook useMode */
     const isExplaining = mode === 'explanation';
-    const isPresenting = router.query.mode === 'presentation';
+    const isPresenting = router.query.mode === 'presentation' || router.query.mode === 'preview';
 
     return (
         <WallpapersContext.Provider

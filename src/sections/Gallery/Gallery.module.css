@@ -1,4 +1,106 @@
-.GallerySection {
+/* 📱 Computers */
+.gallery {
+    --on-row: 6;
+    --gap: 0;
+    --aspect: 1.61;
+    --scale: 3;
+}
+
+@media only screen and (max-width: 1200px) {
+    /* 📱 Tablets */
+
+    .gallery {
+        --on-row: 3;
+        --gap: 2px;
+        --aspect: 1;
+        --scale: 3;
+    }
+}
+@media only screen and (max-width: 600px) {
+    /* 📱 Big smartphones */
+
+    .gallery {
+        --on-row: 2;
+        --gap: 2px;
+        --aspect: 1;
+        --scale: 4;
+    }
+}
+@media only screen and (max-width: 425px) {
+    /* 📱 Small smartphones */
+
+    .gallery {
+        --on-row: 1;
+        --gap: 0px;
+        --aspect: 1;
+        --scale: 3;
+    }
+}
+
+/*------------------------*/
+
+.gallery,
+.gallery * {
+    transition: all 0.2s ease-in-out;
+}
+
+.galleryItemsOuter {
     /*/
-    outline: 1px dotted red; /**/
+    outline: 1px dotted red;
+    /**/
+
+    /* TODO: !!! Can be in calc used more than 2 statements | maybe split into multiple calc() */
+    height: calc(100vw * var(--aspect) * 6 / var(--on-row) / var(--on-row)); /* <- [🥼]*/
+    margin-bottom: 20px;
+}
+
+.galleryItemsInner {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    position: absolute;
+    z-index: 9999;
+    width: 100vw;
+    left: 0;
+    /*margin-left: -50px;*/
+
+    display: grid;
+    grid-template-columns: repeat(var(--on-row), 1fr);
+    grid-gap: var(--gap);
+}
+
+.galleryItemsInner > * {
+    /*/
+    outline: 1px dotted rgb(0, 255, 55);
+    /**/
+
+    width: 100%;
+    aspect-ratio: 1 / var(--aspect);
+}
+
+.galleryItemsInner a {
+    /*/
+    outline: 1px dotted rgb(28, 80, 28);
+    /**/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: clip;
+}
+
+.galleryItemsInner a iframe {
+    /**/
+    outline: 1px dotted red;
+    /**/
+
+    pointer-events: none;
+
+    display: block;
+
+    width: calc(100% * var(--scale));
+    height: calc(100% * var(--scale));
+    transform: scale(calc(1 / var(--scale)));
 }

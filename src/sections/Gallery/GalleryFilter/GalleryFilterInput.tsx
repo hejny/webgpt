@@ -87,9 +87,11 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 onChange={(newLimit) => void setLimit(newLimit)}
                 numberOfButtons={Infinity}
                 options={[
-                    { id: 10, title: '10' },
-                    { id: 100, title: '100' },
-                    { id: 500, title: '500' },
+                    // Note: As a highly composite numbers to fit in misc grids
+                    { id: 6, title: '6' },
+                    { id: 24, title: '24' },
+                    { id: 60, title: '60' },
+                    { id: 180, title: '180' },
                     { id: Infinity, title: 'All' },
                 ]}
             />

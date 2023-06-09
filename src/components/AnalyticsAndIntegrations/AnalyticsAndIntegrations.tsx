@@ -7,7 +7,7 @@ import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 export function AnalyticsAndIntegrations() {
     // [0] const router = useRouter();
     // [0] const isReady = router.isReady;
-    // [0] const isPresenting = router.query.mode === 'presentation'; /* <- TODO: Make hook useMode */
+    // [0] const isPresenting = router.query.mode === 'presentation' || router.query.mode === 'preview'; /* <- TODO: Make hook useMode */
     const isServerRender = useSsrDetection();
     // TODO: !! Also isCookiesAllowed
 
