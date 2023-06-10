@@ -19,7 +19,6 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
 
     return (
         <>
-            {JSON.stringify({ isPresenting })}
             {/* ===[ SmartsUpp: ]=== */}
 
             <script
