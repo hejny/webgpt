@@ -74,8 +74,13 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                 <Head>
                     {metadataJsx}
                     {children}
-                    <AnalyticsAndIntegrations />
                 </Head>
+                <AnalyticsAndIntegrations
+                    isSmartsuppHidden
+                    /*<- Note: <AnalyticsAndIntegrations/> mus be places out of <Head>,
+                        otherwise error "NextRouter was not mounted" occures
+                */
+                />
             </>
         );
     } else {

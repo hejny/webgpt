@@ -5,7 +5,7 @@ export default function Document() {
         <Html>
             <Head />
 
-            {/* TODO: Why is <AnalyticsAndIntegrations /> not working here? */}
+            {/* Note: <AnalyticsAndIntegrations /> is not working here */}
             <body>
                 <Main />
                 <NextScript />

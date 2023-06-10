@@ -12,7 +12,7 @@ interface ShowcaseContentWithEditProps {
 export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
     const { randomWallpaper } = props;
     const router = useRouter();
-    const isReady = router.isReady; /* <- !!! Is this help */
+    const isReady = router.isReady;
 
     const isServerRender = useSsrDetection();
 

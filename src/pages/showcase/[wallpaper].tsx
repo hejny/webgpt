@@ -1,6 +1,5 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useRouter } from 'next/router';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { ExplainContent } from '../../components/ExplainContent/ExplainContent';
@@ -8,6 +7,7 @@ import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
 import { ShowcaseAppHead } from '../../sections/00-AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../../sections/ShowcaseContent/ShowcaseContent';
 import { ShowcaseContentEdit } from '../../sections/ShowcaseContentEdit/ShowcaseContentEdit';
+import { useMode } from '../../utils/hooks/useMode';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
@@ -20,12 +20,9 @@ export interface ShowcasePageProps {
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
+    
     let { currentWallpaper, randomWallpaper } = props;
-
-    const router = useRouter();
-    const mode = router.query.mode; /* <- TODO: Make hook useMode */
-    const isExplaining = mode === 'explanation';
-    const isPresenting = router.query.mode === 'presentation' || router.query.mode === 'preview';
+    const { isExplaining, isPresenting } = useMode();
 
     return (
         <WallpapersContext.Provider
