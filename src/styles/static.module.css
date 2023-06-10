@@ -13,6 +13,7 @@
 .page main {
     text-align: center;
     color: #ccc;
+    overflow-x: hidden;
 }
 
 .page a {
