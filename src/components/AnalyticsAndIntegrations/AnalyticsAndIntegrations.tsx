@@ -1,5 +1,4 @@
 import spaceTrim from 'spacetrim';
-import { useSsrDetection } from '../../utils/hooks/useSsrDetection';
 
 /**
  * @@
@@ -8,29 +7,37 @@ export function AnalyticsAndIntegrations() {
     // [0] const router = useRouter();
     // [0] const isReady = router.isReady;
     // [0] const isPresenting = router.query.mode === 'presentation' || router.query.mode === 'preview'; /* <- TODO: Make hook useMode */
-    const isServerRender = useSsrDetection();
+    // const isServerRender = useSsrDetection();
     // TODO: !! Also isCookiesAllowed
+
+    // TODO: !!! Allow widget on gallery page
 
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
             {
-                /* [0] isReady && !isPresenting && */ !isServerRender && (
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: spaceTrim(`
+                /* [0] isReady && !isPresenting && */ /*!isServerRender &&*/ <script
+                    dangerouslySetInnerHTML={{
+                        __html: spaceTrim(`
                             var _smartsupp = _smartsupp || {};
                             _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
+
+                            // --- Customization ---
+                            _smartsupp.color = '#303030';
+                            _smartsupp.hideWidget = true;
+
                             window.smartsupp||(function(d) {
                             var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
                             s=d.getElementsByTagName('script')[0];c=d.createElement('script');
                             c.type='text/javascript';c.charset='utf-8';c.async=true;
                             c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
                             })(document);
+
+                          
+                            
                     `),
-                        }}
-                    />
-                )
+                    }}
+                />
             }
             <style
                 data-export-ignore
