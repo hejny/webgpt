@@ -10,6 +10,7 @@ import { ShowcaseContent } from '../sections/ShowcaseContent/ShowcaseContent';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { string_css, string_html } from '../utils/typeAliases';
+import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
 
@@ -72,8 +73,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     const style = styles.join('\n\n\n');
 
     // Note: Split styles into rules
-    // !!!!!!!!!!!!!!!!!!!!!!!!
-    const rules = style.split(/}/g);
+    const rules = splitCss(style);
 
     // Note: Group style rules into 34️⃣ groups:
     const importRules: Array<string> = [];
