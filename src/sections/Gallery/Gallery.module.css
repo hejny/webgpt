@@ -1,20 +1,22 @@
 /* 📱 Computers */
 .gallery {
-    --on-row: 6;
-    --gap: 0;
-    --aspect: 1.61;
+    --on-row: 3;
+    --gap: 2px;
+    --aspect: 1;
     --scale: 2;
 }
 
 @media only screen and (max-width: 1200px) {
     /* 📱 Tablets */
 
+    /*
     .gallery {
         --on-row: 3;
         --gap: 2px;
         --aspect: 1;
         --scale: 2;
     }
+    */
 }
 @media only screen and (max-width: 600px) {
     /* 📱 Big smartphones */
