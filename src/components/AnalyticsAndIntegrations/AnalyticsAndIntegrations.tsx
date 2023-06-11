@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import spaceTrim from 'spacetrim';
+import { forTime } from 'waitasecond';
 import { useMode } from '../../utils/hooks/useMode';
 
 interface AnalyticsAndIntegrationsProps {
@@ -30,13 +31,19 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 <>
                     <script
                         // id="smartsupp"
-                        ref={(element) => {
+                        ref={async (element) => {
                             console.log('smartsupp script ref', element);
 
-                            if (isSmartsuppHidden) {
-                                (window as any).smartsupp('chat:hide');
-                            } else {
-                                (window as any).smartsupp('chat:show');
+                            await forTime(1000);
+
+                            try {
+                                if (isSmartsuppHidden) {
+                                    (window as any).smartsupp('chat:hide');
+                                } else {
+                                    (window as any).smartsupp('chat:show');
+                                }
+                            } catch (error) {
+                                console.error(error);
                             }
                         }}
                         dangerouslySetInnerHTML={{
