@@ -4,6 +4,7 @@ import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { FooterSection } from '../Footer/Footer';
+import { Menu } from '../Menu/Menu';
 import { ShowcaseWelcomeSection } from '../Welcome/ShowcaseWelcome';
 import styles from './ShowcaseContent.module.css';
 
@@ -15,6 +16,9 @@ export function ShowcaseContent() {
         <div className={styles.page}>
             {!isPreview && <AigenSimple />}
             {/* isPreview && <Aigen /> */}
+
+            <Menu />
+
             <header>
                 <HeaderWallpaper />
             </header>

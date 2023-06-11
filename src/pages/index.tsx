@@ -46,7 +46,7 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
                     <GallerySection />
                 </main>
 
-                {/* TODO: Make here footer
+                {/* TODO: Make here some footer
                 <footer>
                     <FooterSection />
                 </footer>

@@ -1,3 +1,4 @@
+import { darken } from '../../utils/color/operators/darken';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 /**
@@ -22,6 +23,7 @@ export function SkinStyle() {
                                 // TODO: !! DRY [🎋]
                                 `/* Note: --palette-${i} is ${color.note} */`,
                                 `--palette-${i}: ${color.value.toHex()};`,
+                                `--palette-${i}-darken: ${color.value.then(darken(0.5)).toHex()};`,
                                 `--palette-${i}-triplet: ${color.value.red}, ${color.value.green}, ${color.value.blue};`,
                             ];
                         } else {
@@ -30,6 +32,7 @@ export function SkinStyle() {
                             //       Note: Following colors are just a repeat of first ${palette.length} colors
                             return [
                                 `--palette-${i}: var(--palette-${j});`,
+                                `--palette-${i}-darken: var(--palette-${j}-darken);`,
                                 `--palette-${i}-triplet: var(--palette-${j}-triplet);`,
                             ];
                         }

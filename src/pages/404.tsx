@@ -33,3 +33,8 @@ export default function NotFoundPage({ wallpapers }: GalleryPageProps) {
         </>
     );
 }
+
+
+/**
+ * TODO: !!! Make + export
+ */

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { randomItem } from '../../utils/randomItem';
+import styles from './AigenSimple.module.css';
 
 /**
  * @@
@@ -9,14 +10,7 @@ export function AigenSimple() {
     const router = useRouter();
 
     return (
-        <div
-            style={{
-                zIndex: 99999999,
-                position: 'absolute',
-                top: 0,
-                right: 0,
-            }}
-        >
+        <div className={styles.AigenSimple}>
             <Link
                 href={{
                     pathname: '/showcase/[wallpaper]',
