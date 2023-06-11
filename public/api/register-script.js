@@ -6,7 +6,7 @@ async function register() {
     console.info('hostname', window.location.hostname);
     console.info('host', window.location.host);
 
-    const response = await fetch('/api/register', {
+    const response = await fetch('https://ai.hejny.org/api/register', {
         method: 'POST',
         body: JSON.stringify({ host: window.location.host }),
     });
