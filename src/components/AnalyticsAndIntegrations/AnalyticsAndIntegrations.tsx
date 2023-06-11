@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import spaceTrim from 'spacetrim';
 import { useMode } from '../../utils/hooks/useMode';
 
@@ -17,52 +18,64 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
 
     console.log('AnalyticsAndIntegrations', { isPresenting });
 
+    useEffect(() => {
+        console.log('useEffect');
+        //  /* not await  */ loadAndRunExternalScript();
+    }, [isSmartsuppHidden]);
+
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
+            {!isPresenting && (
+                <>
+                    <script
+                        // id="smartsupp"
+                        ref={(element) => {
+                            console.log('smartsupp script ref', element);
 
-            <script
-                // id="smartsupp"
-                dangerouslySetInnerHTML={{
-                    __html: spaceTrim(`
+                            if (isSmartsuppHidden) {
+                                (window as any).smartsupp('chat:hide');
+                            } else {
+                                (window as any).smartsupp('chat:show');
+                            }
+                        }}
+                        dangerouslySetInnerHTML={{
+                            __html: spaceTrim(`
 
-                        if(${isPresenting ? 'true' : 'false'}) {
-                            console.log('🔃 NOT Loading SmartsUpp');
-                            return;
-                        }
+                                console.log('🔃 Loading SmartsUpp');
 
-                        console.log('🔃 Loading SmartsUpp');
+                                var _smartsupp = _smartsupp || {};
+                                _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
 
-                        var _smartsupp = _smartsupp || {};
-                        _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
+                                // --- Customization ---
+                                _smartsupp.color = '#303030';
+                                // _smartsupp.hideWidget = ${isSmartsuppHidden ? 'true' : 'false'};
 
-                        // --- Customization ---
-                        _smartsupp.color = '#303030';
-                        _smartsupp.hideWidget = ${isSmartsuppHidden ? 'true' : 'false'};
+                                window.smartsupp||(function(d) {
+                                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                                c.type='text/javascript';c.charset='utf-8';c.async=true;
+                                c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+                                })(document);
 
-                        window.smartsupp||(function(d) {
-                        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-                        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-                        c.type='text/javascript';c.charset='utf-8';c.async=true;
-                        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-                        })(document);
-
-                        
-                        
-                    `),
-                }}
-            />
-            <style
-                data-export-ignore
-                dangerouslySetInnerHTML={{
-                    // TODO: !!! This should be excluded from export
-                    __html: spaceTrim(`
-                        #chat-application{
-                            color-scheme: light; /* <- Note: To enable transparent iframe borders */
-                        }
-                    `),
-                }}
-            />
+                                
+                                
+                            `),
+                        }}
+                    />
+                    <style
+                        data-export-ignore
+                        dangerouslySetInnerHTML={{
+                            // TODO: !!! This should be excluded from export
+                            __html: spaceTrim(`
+                                #chat-application{
+                                    color-scheme: light; /* <- Note: To enable transparent iframe borders */
+                                }
+                            `),
+                        }}
+                    />
+                </>
+            )}
             {/* ===[ /SmartsUpp ]=== */}
 
             {/* ===[ SmartLook: ]=== */}
@@ -100,6 +113,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 // key="log"
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
+                        console.log(${Math.random()});
                         console.log('🔃 Loaded scripts integrations', ${JSON.stringify({
                             isPresenting,
                             isSmartsuppHidden,
