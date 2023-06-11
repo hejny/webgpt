@@ -3,8 +3,8 @@ import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
-import { ShowcaseWelcomeSection } from '../10-Welcome/ShowcaseWelcome';
-import { FooterSection } from '../90-Footer/Footer';
+import { FooterSection } from '../Footer/Footer';
+import { ShowcaseWelcomeSection } from '../Welcome/ShowcaseWelcome';
 import styles from './ShowcaseContent.module.css';
 
 export function ShowcaseContent() {

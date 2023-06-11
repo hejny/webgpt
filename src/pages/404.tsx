@@ -1,8 +1,8 @@
 import { GalleryPageProps } from '.';
+import { StaticAppHead } from '../components/AppHead/StaticAppHead';
+import { FooterSection } from '../components/Footer/Footer';
 import { Section } from '../components/Section/Section';
 import { TiledBackground } from '../components/TiledBackground/TiledBackground';
-import { StaticAppHead } from '../sections/00-AppHead/StaticAppHead';
-import { FooterSection } from '../sections/90-Footer/Footer';
 import styles from '../styles/static.module.css';
 
 export default function NotFoundPage({ wallpapers }: GalleryPageProps) {
