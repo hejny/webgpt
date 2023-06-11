@@ -168,7 +168,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                 <ExportContext.Provider value={{ isExported: true }}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
-                            <ShowcaseAppHead isNextHeadUsed={false}>
+                            <ShowcaseAppHead>
                                 {stylesPlace == 'EXTERNAL'
                                     ? files
                                           .filter(({ type }) => type === 'CSS')

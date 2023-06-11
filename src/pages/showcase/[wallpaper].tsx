@@ -20,7 +20,6 @@ export interface ShowcasePageProps {
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
-    
     let { currentWallpaper, randomWallpaper } = props;
     const { isExplaining, isPresenting } = useMode();
 
@@ -28,7 +27,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
         <WallpapersContext.Provider
             value={hydrateWallpapers([currentWallpaper])} /* <- Is this the right place to be Provider in? */
         >
-            <ShowcaseAppHead isNextHeadUsed />
+            <ShowcaseAppHead />
             <SkinStyle />
             {/* TODO: <LanguagePicker /> * /}
             
