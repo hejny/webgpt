@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
-import { useMode } from '../../utils/hooks/useMode';
 
 interface AnalyticsAndIntegrationsProps {
     isSmartsuppHidden?: boolean;
@@ -12,12 +11,9 @@ interface AnalyticsAndIntegrationsProps {
  */
 export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
     const { isSmartsuppHidden } = props;
-    const { isPresenting } = useMode();
 
     // TODO: !! Also isCookiesAllowed
     // TODO: !!! Allow widget on gallery page
-
-    console.log('AnalyticsAndIntegrations', { isPresenting });
 
     useEffect(() => {
         console.log('useEffect');
@@ -27,62 +23,60 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
-            {!isPresenting && (
-                <>
-                    <script
-                        // id="smartsupp"
-                        ref={async (element) => {
-                            console.log('smartsupp script ref', element);
 
-                            await forTime(1000);
+            <script
+                // id="smartsupp"
+                ref={async (element) => {
+                    console.log('smartsupp script ref', element);
 
-                            try {
-                                if (isSmartsuppHidden) {
-                                    (window as any).smartsupp('chat:hide');
-                                } else {
-                                    (window as any).smartsupp('chat:show');
-                                }
-                            } catch (error) {
-                                console.error(error);
-                            }
-                        }}
-                        dangerouslySetInnerHTML={{
-                            __html: spaceTrim(`
+                    await forTime(1000);
 
-                                console.log('🔃 Loading SmartsUpp');
+                    try {
+                        if (isSmartsuppHidden) {
+                            (window as any).smartsupp('chat:hide');
+                        } else {
+                            (window as any).smartsupp('chat:show');
+                        }
+                    } catch (error) {
+                        console.error(error);
+                    }
+                }}
+                dangerouslySetInnerHTML={{
+                    __html: spaceTrim(`
 
-                                var _smartsupp = _smartsupp || {};
-                                _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
+                        console.log('🔃 Loading SmartsUpp');
 
-                                // --- Customization ---
-                                _smartsupp.color = '#303030';
-                                // _smartsupp.hideWidget = ${isSmartsuppHidden ? 'true' : 'false'};
+                        var _smartsupp = _smartsupp || {};
+                        _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
 
-                                window.smartsupp||(function(d) {
-                                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-                                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-                                c.type='text/javascript';c.charset='utf-8';c.async=true;
-                                c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-                                })(document);
+                        // --- Customization ---
+                        _smartsupp.color = '#303030';
+                        _smartsupp.hideWidget = true /* <- Note: !!!@@@ */;
 
-                                
-                                
-                            `),
-                        }}
-                    />
-                    <style
-                        data-export-ignore
-                        dangerouslySetInnerHTML={{
-                            // TODO: !!! This should be excluded from export
-                            __html: spaceTrim(`
-                                #chat-application{
-                                    color-scheme: light; /* <- Note: To enable transparent iframe borders */
-                                }
-                            `),
-                        }}
-                    />
-                </>
-            )}
+                        window.smartsupp||(function(d) {
+                        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                        c.type='text/javascript';c.charset='utf-8';c.async=true;
+                        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+                        })(document);
+
+                        
+                        
+                    `),
+                }}
+            />
+            <style
+                data-export-ignore
+                dangerouslySetInnerHTML={{
+                    // TODO: !!! This should be excluded from export
+                    __html: spaceTrim(`
+                        #chat-application{
+                            color-scheme: light; /* <- Note: To enable transparent iframe borders */
+                        }
+                    `),
+                }}
+            />
+
             {/* ===[ /SmartsUpp ]=== */}
 
             {/* ===[ SmartLook: ]=== */}
@@ -121,10 +115,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
                         console.log(${Math.random()});
-                        console.log('🔃 Loaded scripts integrations', ${JSON.stringify({
-                            isPresenting,
-                            isSmartsuppHidden,
-                        })});
+                        console.info('🔃 Loaded scripts integrations');
                     `),
                 }}
             />
@@ -134,6 +125,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
 }
 
 /**
+ * TODO: !!! Cleanup all console logs
  * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key
  * TODO: !!!! Do not include ANY of this in export
  */
