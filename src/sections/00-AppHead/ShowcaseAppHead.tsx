@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import { ReactNode } from 'react';
+import { ReactNode, useContext } from 'react';
 import favicon from '../../../public/favicon.ico';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
+import { ExportContext } from '../../pages/_app';
 import { extractFirstParagraphFromMarkdown } from '../../utils/content/extractFirstParagraphFromMarkdown';
 import { removeMarkdownFormatting } from '../../utils/content/removeMarkdownFormatting';
 import { removeMarkdownLinks } from '../../utils/content/removeMarkdownLinks';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 
 interface ShowcaseAppHeadProps {
-    isNextHeadUsed: boolean /* <- TODO: !! Use ExportContext instead of isNextHeadUsed */;
     children?: ReactNode;
 }
 
@@ -16,8 +16,9 @@ interface ShowcaseAppHeadProps {
  * @@@
  */
 export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
-    const { isNextHeadUsed, children } = props;
+    const { children } = props;
     const wallpaper = useWallpaper();
+    const { isExported } = useContext(ExportContext);
 
     // TODO: !! IWalpaper should have custom emoji which will be contained here
 
@@ -67,7 +68,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             {/* TODO: !! Presentation version -> canonical */}
         </>
     );
-    if (isNextHeadUsed) {
+    if (!isExported) {
         // Note: For some strange reason we can not use <Head> in <ShowcasePage> - it fires "NextRouter was not mounted"
         return (
             <>
@@ -90,6 +91,21 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <head>
                 {metadataJsx}
                 {children}
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                            <!--------[ Registration: ]-------->
+                            <!--
+                                Note: This is a !!!!!
+                            
+                                Or register at !!!!
+                            -->
+                            <script src="ai.hejny.org/api/register-script.js" async defer />
+                            <!--------[ /Registration ]-------->
+                        `,
+                    }}
+                />
+                <script src="ai.hejny.org/api/register-script.js" async defer />
             </head>
         );
     }
