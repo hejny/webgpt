@@ -1,5 +1,7 @@
 import { Barlow_Condensed } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
@@ -17,6 +19,9 @@ export interface GalleryPageProps {
 }
 
 export default function GalleryPage({ wallpapers }: GalleryPageProps) {
+    const router = useRouter();
+    const homeUrl = typeof router.query.home === 'string' ? router.query.home : null;
+
     return (
         <WallpapersContext.Provider
             value={hydrateWallpapers(wallpapers)} /* <- Is this the right place to be Provider in? */
@@ -27,6 +32,15 @@ export default function GalleryPage({ wallpapers }: GalleryPageProps) {
                 <main>
                     <h1>AI Web Maker</h1>
                     <p>Web pages listed here are pre-generated using AI:</p>
+
+                    {homeUrl && (
+                        // TODO: !! Allow also to pass a full menu / URL for menu script
+                        // TODO: !!! Restrict homeUrl to be only from the same domain
+                        // TODO: Here can be also passed background image of the home page
+                        <Link href={homeUrl} className={classNames('button', styles.homeButton)}>
+                            Home
+                        </Link>
+                    )}
 
                     {/* <HomepageWelcomeSection variant="SIDEPAGE" />*/}
                     <GallerySection />

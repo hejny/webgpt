@@ -41,3 +41,14 @@
 .page h1 {
     text-shadow: #ffffff;
 }
+
+.homeButton {
+    color: #3b3f49 !important;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(205, 227, 231);
+}
+
+.homeButton:hover {
+    background-color: rgb(167, 213, 221);
+}
