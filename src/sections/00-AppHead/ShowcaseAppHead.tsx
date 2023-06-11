@@ -99,7 +99,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                                 <!--------[ Registration: ]-------->
                                 <!-- Note: This is a !!!@@@    -->
                                 <!--     | Or register at !!!! -->
-                                <script src="https://ai.hejny.org/api/register-script.js" async defer />
+                                <script src="https://ai.hejny.org/api/register-script.js" async defer></script>
                                 <!--------[ /Registration ]-------->
                             `,
                         ),
