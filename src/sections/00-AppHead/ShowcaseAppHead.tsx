@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { ReactNode, useContext } from 'react';
+import spaceTrim from 'spacetrim';
 import favicon from '../../../public/favicon.ico';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 import { ExportContext } from '../../pages/_app';
@@ -91,21 +92,19 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <head>
                 {metadataJsx}
                 {children}
-                <div
+                <dd // <- Note: [🎡] Hack !!!@@@
                     dangerouslySetInnerHTML={{
-                        __html: `
-                            <!--------[ Registration: ]-------->
-                            <!--
-                                Note: This is a !!!!!
-                            
-                                Or register at !!!!
-                            -->
-                            <script src="ai.hejny.org/api/register-script.js" async defer />
-                            <!--------[ /Registration ]-------->
-                        `,
+                        __html: spaceTrim(
+                            (block) => `
+                                <!--------[ Registration: ]-------->
+                                <!-- Note: This is a !!!@@@    -->
+                                <!--     | Or register at !!!! -->
+                                <script src="https://ai.hejny.org/api/register-script.js" async defer />
+                                <!--------[ /Registration ]-------->
+                            `,
+                        ),
                     }}
                 />
-                <script src="ai.hejny.org/api/register-script.js" async defer />
             </head>
         );
     }

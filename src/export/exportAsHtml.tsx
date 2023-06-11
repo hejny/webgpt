@@ -208,6 +208,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         </html>,
     );
 
+    // Note: [🎡]
+    html = html.split('<dd>').join('').split('</dd>').join('');
+
     html = `<!DOCTYPE html>\n` + html;
 
     html = prettifyHtml(html);
