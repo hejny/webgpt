@@ -120,7 +120,7 @@ nav.MenuContent li a:hover {
     height: 0;
 
     background: radial-gradient(circle, var(--palette-0), var(--palette-0));
-    /*border-radius: 30px;*/
+    border-radius: 50%;
     transition: 0.3s ease;
 
     transform: translate(50%, -50%);
@@ -129,15 +129,15 @@ nav.MenuContent li a:hover {
 }
 
 .MenuBg:not(.open) {
-    height: 570px;
+    width: 0;
+    height: 0;
 }
 
 .MenuBg.open {
-    width: 230px;
-    height: 570px;
+    width: 700px;
+    height: 700px;
 
-    border-left: 20px solid var(--palette-5);
-    border-bottom: 20px solid var(--palette-5-darken);
+  
 }
 
 .open {
