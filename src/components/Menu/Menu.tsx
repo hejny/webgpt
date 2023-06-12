@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import styles from './Menu.module.css';
 
@@ -5,6 +7,8 @@ import styles from './Menu.module.css';
  * @@
  */
 export function Menu() {
+    const router = useRouter();
+
     return (
         <>
             {/* [🍔] */}
@@ -29,13 +33,13 @@ export function Menu() {
                         {/* TODO: !!! Use <Link> from Next */}
                         {/* TODO: !!! Export all pages */}
                         <li>
-                            <a href="/">Home</a>
+                            <a href="https://ai.hejny.org/">Home</a>
                         </li>
                         <li>
-                            <a href="/pricing">Pricing</a>
+                            <a href="https://ai.hejny.org/pricing">Pricing</a>
                         </li>
                         <li>
-                            <a href="https://ai.hejny.org/?home=https://atf.hejny.org/">Gallery</a>
+                            <Link href={`/?home=${encodeURIComponent(router.asPath)}/`}>Gallery</Link>
                         </li>
                         <li>
                             <a href="mailto:me@pavolhejny.com">Contact</a>

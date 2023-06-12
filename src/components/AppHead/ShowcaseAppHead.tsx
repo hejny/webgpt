@@ -28,7 +28,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
         removeMarkdownLinks(extractFirstParagraphFromMarkdown(wallpaper.content)),
     );
 
-    const homeUrl = `https://ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
+    const homeUrl = `https://app.ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
 
     const metadataJsx = (
         <>
@@ -99,7 +99,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                                 <!--------[ Registration: ]-------->
                                 <!-- Note: This is a !!!@@@    -->
                                 <!--     | Or register at !!!! -->
-                                <script src="https://ai.hejny.org/api/register-script.js" async defer></script>
+                                <script src="https://app.ai.hejny.org/api/register-script.js" async defer></script>
                                 <!--------[ /Registration ]-------->
                             `,
                         ),

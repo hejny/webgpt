@@ -16,7 +16,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
     // TODO: !! Use translation
     const title = (subtitle ? subtitle + ' 🎨 ' : '') + `AI Web Maker`;
     const description = `Thousands of AI generated web designs`;
-    const homeUrl = 'https://ai.hejny.org'; /* <- TODO: Self URL into some configuration */
+    const homeUrl = 'https://app.ai.hejny.org'; /* <- TODO: Self URL into some configuration */
 
     return (
         <>
