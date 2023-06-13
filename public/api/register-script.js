@@ -1,3 +1,11 @@
+/**
+ * Note: This script @@@
+ */
+
+// TODO: This should be dynamically taken from PUBLIC_URL
+// const REGISTER_URL = 'https://app.ai.hejny.org/api/register';
+const REGISTER_URL = 'https://localhost:4444/api/register';
+
 register();
 
 async function register() {

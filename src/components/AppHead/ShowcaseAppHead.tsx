@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { ReactNode, useContext } from 'react';
 import spaceTrim from 'spacetrim';
 import favicon from '../../../public/favicon.ico';
@@ -19,7 +20,8 @@ interface ShowcaseAppHeadProps {
 export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     const { children } = props;
     const wallpaper = useWallpaper();
-    const { isExported } = useContext(ExportContext);
+    const { isExported, publicUrl } = useContext(ExportContext);
+    const router = useRouter();
 
     // TODO: !! IWalpaper should have custom emoji which will be contained here
 
@@ -28,7 +30,8 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
         removeMarkdownLinks(extractFirstParagraphFromMarkdown(wallpaper.content)),
     );
 
-    const homeUrl = `https://app.ai.hejny.org/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
+    const homeUrl = `${publicUrl.href}/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
+    const socialImage = wallpaper.src; /* <-  [🦋] */
 
     const metadataJsx = (
         <>
@@ -38,6 +41,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
 
             {/* Primary meta tags */}
             <title>{title}</title>
+            <link rel="canonical" href={publicUrl.href + router.asPath} />
             <meta name="description" content={description} />
             <link rel="icon" href={favicon.src /* <- TODO: !! Generate icon */} />
             <meta
@@ -51,7 +55,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <meta property="og:title" content={title} />
             <meta property="og:site_name" content={title} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content={wallpaper.src /* <-  [🦋] */} />
+            <meta property="og:image" content={socialImage} />
             <meta property="og:url" content={homeUrl} />
             <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
 
@@ -64,7 +68,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
             <meta property="twitter:url" content={homeUrl} />
             <meta property="twitter:title" content={title} />
             <meta property="twitter:description" content={description} />
-            <meta property="twitter:image" content={wallpaper.src /* <-  [🦋] */} />
+            <meta property="twitter:image" content={socialImage} />
 
             {/* TODO: !! Presentation version -> canonical */}
         </>
@@ -99,7 +103,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                                 <!--------[ Registration: ]-------->
                                 <!-- Note: This is a !!!@@@    -->
                                 <!--     | Or register at !!!! -->
-                                <script src="https://app.ai.hejny.org/api/register-script.js" async defer></script>
+                                <script src="${publicUrl.href}/api/register-script.js" async defer></script>
                                 <!--------[ /Registration ]-------->
                             `,
                         ),
