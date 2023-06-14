@@ -45,7 +45,7 @@ export function Menu() {
                                 }}
                                 prefetch={true /* <- Note: Because we want to be this as-fast-as-possible */}
                             >
-                                Get the web!
+                                Get the web
                             </Link>
                         </li>
                         <li>

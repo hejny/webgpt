@@ -47,6 +47,15 @@
     transition: all 0.3s ease-in-out;
 }
 
+.button.callToAction {
+    aspect-ratio: unset;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(199, 39, 119) /* <- TODO: !! Figure out best colors */;
+    color: white;
+    text-decoration: none;
+}
+
 .button:hover {
     /* TODO: Made here some animation effect*/
 
