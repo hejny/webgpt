@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from './Footer.module.css';
 
 /**
@@ -9,7 +9,6 @@ import styles from './Footer.module.css';
  * @returns {JSX.Element} The footer section element.
  */
 export function FooterSection() {
-
     const router = useRouter();
     const { t } = useTranslation();
 
@@ -37,6 +36,7 @@ export function FooterSection() {
                 <li>
                     <Link
                         href={{
+                            // TODO: !!!! This should lead to AI web app not the exported page
                             pathname: '/showcase/[wallpaper]',
                             query: {
                                 wallpaper: router.query.wallpaper,

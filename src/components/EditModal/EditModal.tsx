@@ -130,6 +130,7 @@ export function EditModal(props: EditModalProps) {
 }
 
 /**
+ * TODO: !!!! Your content should be exportable + show immediatelly download button
  * TODO: !!! Fix unsaved changes
  * TODO: !!! Design
  * TODO: !!! [🧠] Split into info, edit and export part
