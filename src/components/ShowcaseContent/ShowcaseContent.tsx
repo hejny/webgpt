@@ -17,7 +17,7 @@ export function ShowcaseContent() {
             {!isPreview && <AigenSimple />}
             {/* isPreview && <Aigen /> */}
 
-            <Menu />
+            {!isPreview && <Menu />}
 
             <header>
                 <HeaderWallpaper />

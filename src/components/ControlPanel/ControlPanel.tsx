@@ -4,7 +4,6 @@ import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Article } from '../Article/Article';
-import { OpenModalLink } from '../Modal/Modal';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 
@@ -56,9 +55,12 @@ export function ControlPanel(props: ControlPanelProps) {
                 />
             </Link>
 
-            <OpenModalLink modal={'edit'} className={classNames(/*'button',*/ styles.button)} title="Edit this web">
+            {/*
+            Note: In the <Menu/>
+            <OpenModalLink modal={'edit'} className={classNames( styles.button)} title="Edit this web">
                 <Article content="🖊" isUsingOpenmoji />
             </OpenModalLink>
+            */}
 
             <Link
                 href={{
@@ -82,14 +84,17 @@ export function ControlPanel(props: ControlPanelProps) {
                 />
             </Link>
 
+            {/*
+            Note: In the <Menu/>
             <Link
                 href={'/'}
-                className={classNames(/*'button',*/ styles.button)}
+                className={classNames(styles.button)}
                 title="Whole gallery"
-                prefetch={false /* <- Note: Because gallery is enormous */}
+                prefetch={false /* <- Note: Because gallery is enormous * /}
             >
-                <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
+                <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji * / />
             </Link>
+            */}
 
             <button
                 className={classNames(/*'button',*/ styles.button)}

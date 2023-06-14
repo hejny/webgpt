@@ -14,13 +14,16 @@ import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
 
-interface HtmlExportOptions {
+export interface HtmlExportOptions {
     /**
      * Where to place styles
      * - `EMBED` - Place styles into <style> tag
      * - `EXTERNAL` - Place styles into <link rel="stylesheet" href="style.css">
      */
     stylesPlace: 'EMBED' | 'EXTERNAL';
+
+
+    publicUrl: URL;
 }
 
 interface HtmlExport {
@@ -34,7 +37,7 @@ export interface HtmlExportFile {
 }
 
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
-    const { stylesPlace } = options;
+    const { stylesPlace,publicUrl } = options;
     const memoryRouter = new MemoryRouter();
     memoryRouter.pathname = '/showcase/[wallpaper]';
     memoryRouter.query = { wallpaper: wallpaper.id };
@@ -165,7 +168,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         <html>
             <RouterContext.Provider value={memoryRouter}>
                 {/* <MemoryRouterProvider url={'/showcase/[wallpaper]'}> */}
-                <ExportContext.Provider value={{ isExported: true }}>
+                <ExportContext.Provider value={{ isExported: true, publicUrl}}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                             <ShowcaseAppHead>

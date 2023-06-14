@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { PUBLIC_URL } from '../../../config';
+import { NEXT_PUBLIC_URL } from '../../../config';
 import favicon from '../../../public/favicon.ico';
 import gallery1Image from '../../../public/screenshots/gallery-1.png';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
@@ -36,7 +36,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
                 <meta property="og:site_name" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:image" content={gallery1Image.src} />
-                <meta property="og:url" content={PUBLIC_URL.href} />
+                <meta property="og:url" content={NEXT_PUBLIC_URL.href} />
                 <meta property="og:type" content="website" /* <- TODO: Make this dynamic */ />
 
                 {/* Facebook */}
@@ -45,7 +45,7 @@ export function StaticAppHead(props: StaticAppHeadProps) {
 
                 {/* Twitter */}
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content={PUBLIC_URL.href} />
+                <meta property="twitter:url" content={NEXT_PUBLIC_URL.href} />
                 <meta property="twitter:title" content={title} />
                 <meta property="twitter:description" content={description} />
                 <meta property="twitter:image" content={gallery1Image.src} />

@@ -49,7 +49,7 @@ export function FooterSection() {
                 </li>
 
                 <li>
-                    <Link href="mailto:me@pavolhejny.com">Contact</Link>
+                    <Link href="https://ai.hejny.org/contact">Contact</Link>
                 </li>
 
                 {/*

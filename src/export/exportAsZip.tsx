@@ -1,13 +1,15 @@
 import JSZip from 'jszip';
 import { IWallpaper } from '../utils/IWallpaper';
-import { exportAsHtml } from './exportAsHtml';
+import { exportAsHtml, HtmlExportOptions } from './exportAsHtml';
 import { getWallpaperBaseFilename } from './getWallpaperBaseFilename';
 import { blobToFile } from './utils/blobToFile';
 
-export async function exportAsZip(wallpaper: IWallpaper): Promise<File> {
+type ZipExportOptions = Omit<HtmlExportOptions, 'stylesPlace'>;
+
+export async function exportAsZip(wallpaper: IWallpaper, options: ZipExportOptions): Promise<File> {
     const zip = new JSZip();
 
-    const { files } = await exportAsHtml(wallpaper, { stylesPlace: 'EXTERNAL' });
+    const { files } = await exportAsHtml(wallpaper, { ...options, stylesPlace: 'EXTERNAL' });
     // TODO: !!! Extract css to separate file
     // TODO: !!! Materialize assets
     // TODO: !!! Prettify all files
@@ -21,7 +23,6 @@ export async function exportAsZip(wallpaper: IWallpaper): Promise<File> {
 
     return file;
 }
-
 
 /**
  * TODO: !!! Materialize assets

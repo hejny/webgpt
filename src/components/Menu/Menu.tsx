@@ -30,19 +30,52 @@ export function Menu() {
                 </div>
                 <nav className={styles.MenuContent}>
                     <ul>
-                        {/* TODO: !!! Use <Link> from Next */}
                         {/* TODO: !!! Export all pages */}
                         <li>
                             <a href="https://ai.hejny.org/">Home</a>
                         </li>
+                        <li className={styles.featured}>
+                            <Link
+                                href={{
+                                    pathname: '/showcase/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        modal: 'export',
+                                    },
+                                }}
+                                prefetch={true /* <- Note: Because we want to be this as-fast-as-possible */}
+                            >
+                                Get the web!
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={{
+                                    pathname: '/showcase/[wallpaper]',
+                                    query: {
+                                        wallpaper: router.query.wallpaper,
+                                        modal: 'edit',
+                                    },
+                                }}
+                                prefetch={false /* <- Note: Because it is rare option */}
+                            >
+                                Edit
+                            </Link>
+                        </li>
+                        {/* TODO: Maybe ?modal=explain link */}
                         <li>
                             <a href="https://ai.hejny.org/pricing">Pricing</a>
                         </li>
                         <li>
-                            <Link href={`/?home=${encodeURIComponent(router.asPath)}/`}>Gallery</Link>
+                            <Link
+                                href={`/?home=${encodeURIComponent(router.asPath)}/`}
+                                prefetch={false /* <- Note: Because it is rare option */}
+                            >
+                                Gallery
+                            </Link>
                         </li>
                         <li>
-                            <a href="mailto:me@pavolhejny.com">Contact</a>
+                            <a href="https://ai.hejny.org/contact">Contact</a>
                         </li>
                     </ul>
                 </nav>

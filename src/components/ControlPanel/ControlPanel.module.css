@@ -1,7 +1,7 @@
 .ControlPanel {
     /* TODO: Use or remove empty css */
 
-    z-index: 1000;
+    z-index: 3000 /* <- [🔝] Global order of showcase */;
     position: fixed;
     right: 15px;
     bottom: 15px;
@@ -47,10 +47,9 @@
     transition: all 0.3s ease-in-out;
 }
 
-
 .button:hover {
     /* TODO: Made here some animation effect*/
- 
+
     background-color: rgb(167, 213, 221);
 }
 
@@ -75,7 +74,6 @@
     animation-direction: normal;
     animation-timing-function: ease-in-out;
 }
-
 
 @keyframes express {
     0% {

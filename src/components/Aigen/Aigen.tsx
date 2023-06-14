@@ -80,7 +80,7 @@ export function Aigen() {
     return (
         <div
             style={{
-                zIndex: 99999999,
+                zIndex: 1000 /* <- [🔝] Global order of showcase */,
                 position: randomItem('absolute', 'fixed') /* <- TODO: [🧠] absolute vs fixed*/,
                 top: 0,
                 right: 0,

@@ -3,8 +3,10 @@
     border: 1px dotted red;
     /**/
 
-    z-index: 99999999;
+    z-index: 1000 /* <- [🔝] Global order of showcase */;
     position: absolute;
     top: 0;
     left: 0;
+
+    margin-right: 5px;
 }

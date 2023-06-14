@@ -20,7 +20,11 @@ html {
     transition: all 0.2s ease-in-out;
 }
 
-.button:hover {
+.button:disabled {
+    opacity: 0.7;
+}
+
+.button:hover:enabled {
     filter: hue-rotate(30deg);
     box-shadow: #0000004d 0 0 10px;
 }

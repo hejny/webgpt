@@ -1,0 +1,50 @@
+.settings {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    max-width: 100vw;
+    overflow-x: scroll;
+
+    /*background-color: rgba(41, 81, 168, 0.308);*/
+    margin: 20px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.setting {
+    /*/
+    outline: 1px dotted green;
+    /**/
+
+    max-width: 100%;
+    overflow-x: scroll;
+
+    margin: 10px;
+    padding: 10px;
+
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+}
+
+@media only screen and (max-width: 650px) {
+    .settings {
+        flex-direction: column;
+    }
+
+    .setting {
+        width: calc(100% - 20px);
+    }
+}

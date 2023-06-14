@@ -6,9 +6,15 @@ import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStat
 
 export const VERSION = packageJson.version;
 
-const config = ConfigChecker.from(process.env);
+const config = ConfigChecker.from({
+    ...process.env,
 
-export const PUBLIC_URL = config.get('PUBLIC_URL').url().required().value;
+    // Note: To expose env variables to the browser, using this seemingly strange syntax:
+    //       @see https://nextjs.org/docs/pages/building-your-application/configuring/environment-variables#exposing-environment-variables-to-the-browser
+    NEXT_PUBLIC_URL: process.env.NEXT_PUBLIC_URL,
+});
+
+export const NEXT_PUBLIC_URL = config.get('NEXT_PUBLIC_URL').url().required().value;
 
 export const VERCEL_GIT_COMMIT_MESSAGE = config.get('VERCEL_GIT_COMMIT_MESSAGE').value;
 export const VERCEL_GIT_COMMIT_SHA = config.get('VERCEL_GIT_COMMIT_SHA').value;
@@ -20,7 +26,7 @@ export const OPENAI_API_KEY = config.get('OPENAI_API_KEY').value;
 
 export const EXPORT_OPTIONS = {
     isExported: false,
-    publicUrl: PUBLIC_URL,
+    publicUrl: NEXT_PUBLIC_URL,
 };
 
 export const FONTS = [

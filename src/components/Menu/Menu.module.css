@@ -3,7 +3,7 @@
     outline: 1px solid red;
     /**/
 
-    z-index: 2002;
+    z-index: 2002 /* <- [🔝] Global order of showcase */;
     user-select: none;
     position: relative;
 }
@@ -40,6 +40,7 @@
 nav.MenuContent {
     transition: 0.3s ease;
     display: none;
+    margin-top: 70px;
 }
 
 nav.MenuContent ul {
@@ -50,31 +51,41 @@ nav.MenuContent ul {
 nav.MenuContent li {
     list-style: none;
     text-align: right;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-bottom: 1px solid rgba(var(--palette-1-triplet), 0.3);
+    color: rgba(var(--palette-1-triplet), 0.8);
 }
 
 nav.MenuContent li:last-child {
     border-bottom: none;
 }
 
+nav.MenuContent li.featured {
+    font-weight: bold;
+    color: var(--palette-1);
+}
+
 nav.MenuContent li a {
     display: block;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 26px;
-
-    color: white;
+    margin: 0;
+    padding: 0;
+    color: inherit;
     font-size: 20px;
     text-decoration: none;
 }
 
-nav.MenuContent li a:hover {
-    font-weight: bold;
+nav.MenuContent li:hover {
+    background-color: rgba(var(--palette-1-triplet), 0.2);
 }
 
+.Menu,
+.MenuBar,
 .MenuBg,
-.MenuBgWrapper,
-.Menu {
+.MenuBgWrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -83,9 +94,10 @@ nav.MenuContent li a:hover {
 @media only screen and (max-width: 600px) {
     /* 📱 Smartphones */
 
+    .Menu,
+    .MenuBar,
     .MenuBg,
-    .MenuBgWrapper,
-    .Menu {
+    .MenuBgWrapper {
         position: fixed;
     }
 }
@@ -95,7 +107,7 @@ nav.MenuContent li a:hover {
     outline: 1px solid green;
     /**/
 
-    z-index: 2001;
+    z-index: 2001 /* <- [🔝] Global order of showcase */;
     top: 0;
     left: 0;
     width: 100%;
@@ -120,6 +132,7 @@ nav.MenuContent li a:hover {
     height: 0;
 
     background: radial-gradient(circle, var(--palette-0), var(--palette-0));
+    box-shadow: 0 0 20px rgba(var(--palette-1-triplet), 0.8);
     border-radius: 50%;
     transition: 0.3s ease;
 
@@ -136,16 +149,10 @@ nav.MenuContent li a:hover {
 .MenuBg.open {
     width: 700px;
     height: 700px;
-
-  
 }
 
 .open {
     display: block !important;
-}
-
-.open .bar {
-    background-color: white;
 }
 
 .open .bar1 {

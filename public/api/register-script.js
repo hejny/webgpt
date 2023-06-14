@@ -2,9 +2,9 @@
  * Note: This script @@@
  */
 
-// TODO: This should be dynamically taken from PUBLIC_URL
-// const REGISTER_URL = 'https://app.ai.hejny.org/api/register';
-const REGISTER_URL = 'https://localhost:4444/api/register';
+// TODO: This should be dynamically taken from NEXT_PUBLIC_URL
+// const REGISTER_URL = 'https://app.ai.hejny.org';
+const REGISTER_URL = new URL('https://localhost:4444');
 
 register();
 
@@ -14,7 +14,7 @@ async function register() {
     console.info('hostname', window.location.hostname);
     console.info('host', window.location.host);
 
-    const response = await fetch('https://app.ai.hejny.org/api/register', {
+    const response = await fetch(`${REGISTER_URL.href}/api/register`, {
         method: 'POST',
         body: JSON.stringify({ host: window.location.host }),
     });
