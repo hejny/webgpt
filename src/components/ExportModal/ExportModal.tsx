@@ -40,26 +40,40 @@ export function ExportModal(props: ExportModalProps) {
                         type="text"
                     />
                 </div>
+
+                <div className={styles.setting}>
+                    <button
+                        className={'button'}
+                        disabled={publicUrl === null}
+                        onClick={async () => {
+                            if (!publicUrl) {
+                                alert('Please enter your URL');
+                                return;
+                            }
+
+                            // TODO: !!! Make registration here
+
+                            /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
+                        }}
+                    >
+                        Download
+                    </button>
+                </div>
             </div>
 
-            <button
-                className={'button'}
-                disabled={publicUrl === null}
-                onClick={async () => {
-                    if (!publicUrl) {
-                        alert('Please enter your URL');
-                        return;
-                    }
-
-                    // TODO: !!! Make registration here
-
-                    /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-                }}
-            >
-                Download
-            </button>
-
-            {exported && <Files files={exported.files} />}
+            <Files
+                files={
+                    exported
+                        ? exported.files
+                        : [
+                              {
+                                  type: 'OTHER',
+                                  pathname: 'README.md',
+                                  content: `Select your URL and download the project. Then, upload it to your hosting.`,
+                              },
+                          ]
+                }
+            />
         </Modal>
     );
 }

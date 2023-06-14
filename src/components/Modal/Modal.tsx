@@ -22,7 +22,9 @@ export function Modal(props: ModalProps) {
             <CloseModalLink className={styles.overlay} />
             <div className={styles.Modal}>
                 <div className={styles.bar}>
-                    <div className={styles.title}>{title} </div>
+                    <div className={styles.title}>
+                        <h2>{title}</h2>
+                    </div>
                     <div className={styles.icons}>
                         <CloseModalLink>
                             <Article content="✖" isUsingOpenmoji />

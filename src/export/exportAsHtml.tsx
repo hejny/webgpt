@@ -9,7 +9,7 @@ import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
 import { ExportContext } from '../pages/_app';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
-import { string_css, string_html } from '../utils/typeAliases';
+import { string_css, string_html, string_markdown } from '../utils/typeAliases';
 import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
@@ -22,7 +22,6 @@ export interface HtmlExportOptions {
      */
     stylesPlace: 'EMBED' | 'EXTERNAL';
 
-
     publicUrl: URL;
 }
 
@@ -31,13 +30,13 @@ interface HtmlExport {
 }
 
 export interface HtmlExportFile {
-    type: 'HTML' | 'CSS' | 'JS' | 'IMAGE';
+    type: 'HTML' | 'CSS' | 'JS' | 'IMAGE' | 'OTHER';
     pathname: string;
-    content: string_html | string_css;
+    content: string_html | string_css | string_markdown | string;
 }
 
 export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOptions): Promise<HtmlExport> {
-    const { stylesPlace,publicUrl } = options;
+    const { stylesPlace, publicUrl } = options;
     const memoryRouter = new MemoryRouter();
     memoryRouter.pathname = '/showcase/[wallpaper]';
     memoryRouter.query = { wallpaper: wallpaper.id };
@@ -168,7 +167,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         <html>
             <RouterContext.Provider value={memoryRouter}>
                 {/* <MemoryRouterProvider url={'/showcase/[wallpaper]'}> */}
-                <ExportContext.Provider value={{ isExported: true, publicUrl}}>
+                <ExportContext.Provider value={{ isExported: true, publicUrl }}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                             <ShowcaseAppHead>
