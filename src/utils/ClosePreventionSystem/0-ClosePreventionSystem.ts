@@ -34,7 +34,7 @@ export class ClosePreventionSystem
     private reasons: Array<IClosePreventable> = [];
 
     public registerClosePrevention(...reasons: Array<IClosePreventable>): Registration {
-        console.log('registerClosePrevention');
+        // console.log('registerClosePrevention');
         return registerItemsInArray({ base: this.reasons, add: reasons });
     }
 
@@ -50,3 +50,7 @@ export class ClosePreventionSystem
         }
     }
 }
+
+/**
+ * TODO: !!! Fix
+ */

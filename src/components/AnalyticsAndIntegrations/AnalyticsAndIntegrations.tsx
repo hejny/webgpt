@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 
@@ -12,14 +11,6 @@ interface AnalyticsAndIntegrationsProps {
 export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
     const { isSmartsuppHidden } = props;
 
-    // TODO: !! Also isCookiesAllowed
-    // TODO: !!! Allow widget on gallery page
-
-    useEffect(() => {
-        console.log('useEffect');
-        //  /* not await  */ loadAndRunExternalScript();
-    }, [isSmartsuppHidden]);
-
     return (
         <>
             {/* ===[ SmartsUpp: ]=== */}
@@ -27,10 +18,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
             <script
                 // id="smartsupp"
                 ref={async (element) => {
-                    console.log('smartsupp script ref', element);
-
-                    await forTime(1000);
-
+                    await forTime(1000 /* <- TODO: Maybe tweak this value */);
                     try {
                         if (isSmartsuppHidden) {
                             (window as any).smartsupp('chat:hide');
@@ -114,7 +102,6 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 // key="log"
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
-                        console.log(${Math.random()});
                         console.info('🔃 Loaded scripts integrations');
                     `),
                 }}
@@ -125,6 +112,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
 }
 
 /**
+ * TODO: !! Also isCookiesAllowed - only activate if cookies are allowed
  * TODO: !!! Cleanup all console logs
  * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key
  * TODO: !!!! Do not include ANY of this in export

@@ -15,7 +15,6 @@ export function useMode(): IModes {
     const router = useRouter();
 
     if (isServerRender) {
-        console.log('useMode: 1');
         return {
             mode: 'LOADING',
             isExplaining: false,
@@ -24,7 +23,6 @@ export function useMode(): IModes {
     }
 
     if (typeof router.query.mode !== 'string') {
-        console.log('useMode: 2');
         return {
             mode: 'NORMAL',
             isExplaining: false,
@@ -41,7 +39,6 @@ export function useMode(): IModes {
     const isExplaining = mode === 'EXPLANATION';
     const isPresenting = mode === 'PRESENTATION' || mode === 'PREVIEW';
 
-    console.log('useMode: 3');
     return {
         mode: mode as IModes['mode'],
         isExplaining,
