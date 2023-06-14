@@ -21,7 +21,9 @@ export function EditModalDownloadButtons() {
             <button
                 className={'button'}
                 onClick={async () => {
-                    /* not await */ induceFileDownload(await exportAsZip(wallpaper));
+                    /* not await */ induceFileDownload(
+                        await exportAsZip(wallpaper, { publicUrl: new URL('https://example.com/') }),
+                    );
                 }}
             >
                 Download as ZIP
@@ -30,7 +32,10 @@ export function EditModalDownloadButtons() {
             <button
                 className={'button'}
                 onClick={async () => {
-                    const { files } = await exportAsHtml(wallpaper, { stylesPlace: 'EMBED' });
+                    const { files } = await exportAsHtml(wallpaper, {
+                        stylesPlace: 'EMBED',
+                        publicUrl: new URL('https://example.com/'),
+                    });
                     const indexHtml = files.find((file) => file.pathname === 'index.html');
 
                     if (!indexHtml) {
