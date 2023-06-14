@@ -7,6 +7,7 @@ import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
 import { ExportContext } from '../pages/_app';
+import { removeMarkdownComments } from '../utils/content/removeMarkdownComments';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { IWallpaper } from '../utils/IWallpaper';
 import { string_css, string_html, string_markdown } from '../utils/typeAliases';
@@ -223,6 +224,14 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         content: html,
     });
 
+    // TODO: !!! Add license
+
+    files.unshift({
+        type: 'OTHER',
+        pathname: 'README.md',
+        content: removeMarkdownComments(wallpaper.content),
+    });
+
     // Note: Go through all files and detect if there is some filename collision
     const filesMap = new Map<string, string>();
     for (const file of files) {
@@ -248,6 +257,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
  * TODO: !!! Remove data-n-g attributes from export
  * TODO: !!! Include /images/patterns/simple/stripes-grey.png in export
  * TODO: !!! [🧠] /images vs /assets
+ * TODO: !!! Add CNAME
  * TODO: !! Add Favicon in zip (+other icons)
  * TODO: !!! Add license file into zip
  * TODO: !!! Fix translations in export

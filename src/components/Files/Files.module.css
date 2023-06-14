@@ -7,12 +7,10 @@
     height: 100%;
 
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr;
 
     grid-template:
-        '🟦'
-        '⬛';
+        '🟦' 50px
+        '⬛' 1fr;
 
     background-color: #222;
 }
