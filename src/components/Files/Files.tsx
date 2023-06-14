@@ -18,7 +18,7 @@ export function Files(props: FilesProps) {
     }
 
     const [filename, setFilename] = useState<string>(files[0].pathname);
-    const file = files.find((file) => file.pathname === filename)!;
+    const file = files.find((file) => file.pathname === filename);
 
     return (
         <div className={styles.Files}>
@@ -30,7 +30,7 @@ export function Files(props: FilesProps) {
                     numberOfButtons={Infinity}
                 />
             </div>
-            <pre className={styles.codeView}>{file.content}</pre>
+            <pre className={styles.codeView}>{file && file.content}</pre>
         </div>
     );
 }

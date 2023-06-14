@@ -115,5 +115,4 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
  * TODO: !! Also isCookiesAllowed - only activate if cookies are allowed
  * TODO: !!! Cleanup all console logs
  * TODO: !! API key in config - but it temporarly does not matter if it is in source code because it is public key
- * TODO: !!!! Do not include ANY of this in export
  */

@@ -27,6 +27,8 @@ export function ExportModal(props: ExportModalProps) {
     }, [publicUrl, wallpaper]);
     const { value: exported } = usePromise(exportedPromise);
 
+    console.log('🔽', { exported });
+
     return (
         <Modal title={'Export'}>
             <div className={styles.settings}>
@@ -56,7 +58,7 @@ export function ExportModal(props: ExportModalProps) {
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
                         }}
                     >
-                        Download
+                        Download as .zip
                     </button>
                 </div>
             </div>
