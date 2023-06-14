@@ -7,7 +7,7 @@ import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpap
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 import { GalleryFilter } from './GalleryFilter';
-import styles from './GalleryFilter.module.css';
+import styles from './GalleryFilterInput.module.css';
 
 interface GalleryFilterProps {
     defaultFilter: GalleryFilter;

@@ -35,7 +35,7 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
         } else if (likedStatus !== initialState) {
             setLikedStatus(initialState);
         }
-    }, [key]);
+    }, [key, initialState, likedStatus]);
 
     const persistLikedStatus = (likedStatus: T) => {
         localStorage.setItem(key, likedStatus);
