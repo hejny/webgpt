@@ -3,7 +3,7 @@
     outline: 1px solid red;
     /**/
 
-    z-index: 2002 /* <- [🔝] Global order of showcase */;
+    z-index: 20002 /* <- [🔝] Global order of showcase */;
     user-select: none;
     position: relative;
 }
@@ -107,7 +107,7 @@ nav.MenuContent li:hover {
     outline: 1px solid green;
     /**/
 
-    z-index: 2001 /* <- [🔝] Global order of showcase */;
+    z-index: 20001 /* <- [🔝] Global order of showcase */;
     top: 0;
     left: 0;
     width: 100%;
