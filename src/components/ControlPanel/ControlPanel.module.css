@@ -111,4 +111,12 @@
 
         /*transform: rotate(180deg);*/
     }
+
+    .button.callToAction {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
