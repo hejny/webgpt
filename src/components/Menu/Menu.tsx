@@ -119,10 +119,15 @@ export function Menu() {
         <div class="Menu_MenuBgWrapper__yceuG"><div class="Menu_MenuBg__MZGx2"></div></div>
         <script>
             document.getElementsByClassName('Menu_MenuBar__BXd90')[0].addEventListener('click', function () {
-                console.log('1');
                 document.getElementsByClassName('Menu_MenuBar__BXd90')[0].classList.toggle('Menu_open__HErSU');
                 document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].classList.toggle('Menu_open__HErSU');
                 document.getElementsByClassName('Menu_MenuBg__MZGx2')[0].classList.toggle('Menu_open__HErSU');
+            });
+
+            document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].addEventListener('click', function () {
+                document.getElementsByClassName('Menu_MenuBar__BXd90')[0].classList.remove('Menu_open__HErSU');
+                document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].classList.remove('Menu_open__HErSU');
+                document.getElementsByClassName('Menu_MenuBg__MZGx2')[0].classList.remove('Menu_open__HErSU');
             });
         </script>
         <!-------------[ /Menu ]--------------->
