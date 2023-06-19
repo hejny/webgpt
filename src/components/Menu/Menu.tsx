@@ -86,3 +86,48 @@ export function Menu() {
         </>
     );
 }
+
+/**
+ * TODO: !!! Menu in export should look like:
+ *           (Maybe unprefix)
+
+
+        <!-------------[ Menu: ]--------------->
+
+        <div class="Menu_Menu__HK_sB">
+            <div class="Menu_MenuBar__BXd90">
+                <div class="Menu_bar__kOpdk Menu_bar1__FFq3D"></div>
+                <div class="Menu_bar__kOpdk Menu_bar2__dlqrb"></div>
+                <div class="Menu_bar__kOpdk Menu_bar3__qDuvi"></div>
+            </div>
+            <nav class="Menu_MenuContent__ZcI37">
+                <ul>
+                    <li><a href="https://ai.hejny.org/">Home</a></li>
+                    <li class="Menu_featured__6_rbw">
+                        <a href="/showcase/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=export">Get the web</a>
+                    </li>
+                    <li><a href="/showcase/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=edit">Edit</a></li>
+                    <li><a href="https://ai.hejny.org/pricing">Pricing</a></li>
+                    <li><a href="/?home=/">Gallery</a></li>
+                    <li><a href="https://ai.hejny.org/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="Menu_MenuBgWrapper__yceuG"><div class="Menu_MenuBg__MZGx2"></div></div>
+        <script>
+            function menuOnClick() {
+                document.getElementsByClassName('Menu_MenuBar__BXd90')[0].classList.toggle('Menu_open__HErSU');
+                document.getElementsByClassName('Menu_MenuContent__ZcI37')[0].classList.toggle('Menu_open__HErSU');
+                document.getElementsByClassName('Menu_MenuBg__MZGx2')[0].classList.toggle('Menu_open__HErSU');
+            }
+        </script>
+        <!-------------[ /Menu ]--------------->
+
+
+
+
+
+
+
+
+ */
