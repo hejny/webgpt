@@ -81,6 +81,7 @@ export function ExportModal(props: ExportModalProps) {
 }
 
 /**
+ * TODO: !!! Preview modal
  * TODO: !!! Modals export + advanced export + registration + info
  * TODO: !!! Design of export modal
  * TODO: Syntax highlighting
