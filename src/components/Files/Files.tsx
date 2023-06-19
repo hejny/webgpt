@@ -36,5 +36,6 @@ export function Files(props: FilesProps) {
 }
 
 /**
+ * TODO: !!!! Select only wanted
  * TODO: Use syntax highlighting for the code view @see https://www.npmjs.com/package/react-syntax-highlighter
  */
