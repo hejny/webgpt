@@ -22,6 +22,7 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
         <>
             {modal === 'edit' && <EditModal />}
             {modal === 'export' && <ExportModal />}
+            {modal === 'export-preview' && <ExportPreviewModal />}
             {isReady && !isServerRender && <ControlPanel {...{ randomWallpaper }} />}
         </>
     );

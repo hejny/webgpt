@@ -6,16 +6,15 @@ import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { usePromise } from '../../utils/hooks/usePromise';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
-import { Files } from '../Files/Files';
 import { Modal } from '../Modal/Modal';
-import styles from './ExportModal.module.css';
+import styles from './ExportPreviewModal.module.css';
 
-interface ExportModalProps {}
+interface ExportPreviewModalProps {}
 
 /**
  * @@
  */
-export function ExportModal(props: ExportModalProps) {
+export function ExportPreviewModal(props: ExportPreviewModalProps) {
     const wallpaper = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const exportedPromise = useMemo(() => {
@@ -63,27 +62,13 @@ export function ExportModal(props: ExportModalProps) {
                 </div>
             </div>
 
-            <Files
-                files={
-                    exported
-                        ? exported.files
-                        : [
-                              {
-                                  type: 'OTHER',
-                                  pathname: 'README.md',
-                                  content: `Select your URL and download the project. Then, upload it to your hosting.`,
-                              },
-                          ]
-                }
-            />
+            <iframe src=""></iframe>
+            {/* <FilesPreview files={exported} /> */}
         </Modal>
     );
 }
 
 /**
- * TODO: !!! Modals export + advanced export + registration + info
- * TODO: !!! Design of export modal
- * TODO: Syntax highlighting
- * TODO: Registration should return some token which will be put into export
- * TODO: Each build should have unique id + build metadata (like date, aiai version, etc.)
+ * TODO: !!! This is unused - use or remove
+ * TODO: !!! DRY with ExportModal
  */
