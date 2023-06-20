@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { ReactNode, useContext } from 'react';
 import spaceTrim from 'spacetrim';
+import { NEXT_PUBLIC_URL } from '../../../config';
 import { AnalyticsAndIntegrations } from '../../components/AnalyticsAndIntegrations/AnalyticsAndIntegrations';
 import { ExportContext } from '../../pages/_app';
 import { extractFirstParagraphFromMarkdown } from '../../utils/content/extractFirstParagraphFromMarkdown';
@@ -104,7 +105,9 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                                 <!--------[ Registration: ]-------->
                                 <!-- Note: This is a !!!@@@    -->
                                 <!--     | Or register at !!!! -->
-                                <script src="${publicUrl.href}/api/register-script.js" async defer></script>
+                                <script src="${
+                                    NEXT_PUBLIC_URL.href /* <- Note Here should be really used the global NEXT_PUBLIC_URL NOT publicUrl */
+                                }api/register-script.js" async defer></script>
                                 <!--------[ /Registration ]-------->
                             `,
                         ),
