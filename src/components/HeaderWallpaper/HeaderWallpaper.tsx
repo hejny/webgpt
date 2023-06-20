@@ -19,6 +19,7 @@ export function HeaderWallpaper() {
             <div className={styles.inner}>
                 <Image
                     src={src} /* <- TODO: Here should be really upscaled version by Upscalyr */
+                    unoptimized /* <- Note: Optimization should happen on gallery level */
                     alt={prompt}
                     draggable="false"
                     placeholder="blur"
