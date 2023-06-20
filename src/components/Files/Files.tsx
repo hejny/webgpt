@@ -1,4 +1,4 @@
-import Editor from '@monaco-editor/react';
+import MonacoEditor from '@monaco-editor/react';
 import { useEffect, useState } from 'react';
 import { HtmlExportFile } from '../../export/exportAsHtml';
 import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
@@ -43,12 +43,13 @@ export function Files(props: FilesProps) {
                     numberOfButtons={Infinity}
                 />
             </div>
-            <Editor
+            <MonacoEditor
                 className={styles.codeView}
                 theme="vs-dark"
                 defaultLanguage={file.type}
                 options={{
                     wordWrap: 'on',
+                    readOnly: true,
                 }}
                 key={file.pathname}
                 defaultValue={file.content}
@@ -60,7 +61,7 @@ export function Files(props: FilesProps) {
 
 /**
  * TODO: !!!! Select only wanted
- * TODO: Lazy-load the Monaco <Editor/>
- * TODO: Use Monaco <Editor/> also for markdown and remove the current one
+ * TODO: Lazy-load the <MonacoEditor/>
+ * TODO: Use <MonacoEditor/> also for markdown and remove the current one
  * TODO: Use syntax highlighting for the code view @see https://www.npmjs.com/package/react-syntax-highlighter
  */
