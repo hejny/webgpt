@@ -14,7 +14,9 @@ import { string_css, string_html, string_markdown } from '../utils/typeAliases';
 import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
+import { prettifyJavascript } from './utils/prettifyJavascript';
 import { removeSourceMaps } from './utils/removeSourceMaps';
+import { removeTodoComments } from './utils/removeTodoComments';
 
 export interface HtmlExportOptions {
     /**
@@ -107,47 +109,41 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         }
     }
 
-    const configStyle = prettifyCss(
-        spaceTrim(
-            (block) => `
-                /**
-                 * Note: This is the config style, it is used to configure the whole page.
-                 */
+    const configStyle = spaceTrim(
+        (block) => `
+            /**
+             * Note: This is the config style, it is used to configure the whole page.
+             */
 
-                ${block(configRules.join('\n\n\n'))}
+            ${block(configRules.join('\n\n\n'))}
 
-            `,
-        ),
+        `,
     );
 
-    const commonStyle = prettifyCss(
-        spaceTrim(
-            (block) => `
-                /**
-                 * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
-                 *       If you want to make design changes, consider:
-                 *          1. Making changes in separate file
-                 *          2. Chage config style NOT common style
-                 *          3. Chage article style NOT common style
-                 */
+    const commonStyle = spaceTrim(
+        (block) => `
+            /**
+             * Note: This is merged common style, it is not in very optimal shape and will be improved in following versions.
+             *       If you want to make design changes, consider:
+             *          1. Making changes in separate file
+             *          2. Chage config style NOT common style
+             *          3. Chage article style NOT common style
+             */
 
-                ${block(importRules.join('\n\n\n'))}
+            ${block(importRules.join('\n\n\n'))}
 
-                ${block(commonRules.join('\n\n\n'))}
-            `,
-        ),
+            ${block(commonRules.join('\n\n\n'))}
+        `,
     );
 
-    const articleStyle = prettifyCss(
-        spaceTrim(
-            (block) => `
-                /**
-                 * Note: This is the style of the article
-                 */
+    const articleStyle = spaceTrim(
+        (block) => `
+            /**
+             * Note: This is the style of the article
+             */
 
-                ${block(articleRules.join('\n\n\n'))}
-            `,
-        ),
+            ${block(articleRules.join('\n\n\n'))}
+        `,
     );
 
     for (const { pathname, content } of [
@@ -220,8 +216,6 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
 
     html = `<!DOCTYPE html>\n` + html;
 
-    html = prettifyHtml(html);
-
     files.unshift({
         type: 'html',
         pathname: 'index.html',
@@ -244,6 +238,22 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             throw new Error(`Filename collision: ${pathname}`);
         }
         filesMap.set(pathname, pathname);
+    }
+
+    // Note: Postprocessing
+    for (const file of files) {
+        if (!['html', 'css', 'javascript'].includes(file.type)) {
+            continue;
+        }
+        file.content = removeTodoComments(file.content);
+
+        if (file.type === 'html') {
+            file.content = prettifyHtml(file.content);
+        } else if (file.type === 'css') {
+            file.content = prettifyCss(file.content);
+        } else if (file.type === 'javascript') {
+            file.content = prettifyJavascript(file.content);
+        }
     }
 
     return { files };

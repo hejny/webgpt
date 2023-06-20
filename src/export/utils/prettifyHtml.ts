@@ -29,8 +29,3 @@ export function prettifyHtml(html: string_html): string_html {
         return html;
     }
 }
-
-/**
- * TODO: [Optimization][InitialLoading] Optimize this for initial loading
- * TODO: [🐾] Optimize HTML native export
- */

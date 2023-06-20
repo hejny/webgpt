@@ -28,7 +28,7 @@ export function ExportCodeModal(props: ExportCodeModalProps) {
     console.log('🔽', { exported });
 
     return (
-        <Modal title={'Export'}>
+        <Modal title={'Export in code editor'}>
             <Files
                 files={
                     exported

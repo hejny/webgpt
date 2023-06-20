@@ -69,6 +69,14 @@ export type string_css = string;
 /**
  * Semantic helper
  *
+ * For example `"<svg><circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /></svg>"`
+ * @collboard-modules-sdk
+ */
+export type string_svg = string;
+
+/**
+ * Semantic helper
+ *
  * For example `console.log("Hello World!")`
  * @collboard-modules-sdk
  */

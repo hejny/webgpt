@@ -29,7 +29,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     console.log('🔽', { exported });
 
     return (
-        <Modal title={'Export'}>
+        <Modal title={'Export preview'}>
             <div className={styles.settings}>
                 <div className={styles.setting}>
                     Your URL:&nbsp;&nbsp;

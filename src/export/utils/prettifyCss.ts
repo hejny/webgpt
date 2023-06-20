@@ -29,7 +29,3 @@ export function prettifyCss(css: string_css): string_css {
         return css;
     }
 }
-
-/**
- * TODO: [Optimization][InitialLoading] Optimize this for initial loading
- */
