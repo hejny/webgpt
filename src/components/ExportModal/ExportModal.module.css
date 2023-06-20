@@ -1,27 +1,24 @@
 .settings {
-    /**/
+    /*/
     outline: 1px dotted green;
     /**/
 
-    max-width: 100vw;
-    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
 
     /*background-color: rgba(41, 81, 168, 0.308);*/
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .setting {
-    /**/
+    /*/
     outline: 1px dotted green;
     /**/
-
-    max-width: 100%;
-    overflow-x: scroll;
 
     padding: 10px;
 
@@ -44,6 +41,23 @@
 .setting input {
     width: 350px;
     max-width: 100%;
+}
+
+.buttonWithTwoLines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttonWithTwoLines .firstLine {
+    font-style: bold;
+}
+
+.buttonWithTwoLines .secondLine {
+    font-style: italic;
+    opacity: 0.8;
 }
 
 @media only screen and (max-width: 650px) {

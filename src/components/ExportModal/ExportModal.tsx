@@ -3,7 +3,9 @@ import '@uiw/react-markdown-preview/markdown.css';
 import { useState } from 'react';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { string_email } from '../../utils/typeAliases';
 import { Modal } from '../Modal/Modal';
 import styles from './ExportModal.module.css';
 
@@ -15,7 +17,7 @@ interface ExportModalProps {}
 export function ExportModal(props: ExportModalProps) {
     const wallpaper = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
-
+    const [email, setEmail] = useState<null | string_email>(null);
     return (
         <Modal title={'Get the web'}>
             <div className={styles.settings}>
@@ -31,8 +33,19 @@ export function ExportModal(props: ExportModalProps) {
                 </div>
 
                 <div className={styles.setting}>
+                    Your Email:&nbsp;&nbsp;
+                    <input
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                        }}
+                        placeholder="john@smith.org"
+                        type="email"
+                    />
+                </div>
+
+                <div className={styles.setting}>
                     <button
-                        className={'button'}
+                        className={classNames('button', styles.buttonWithTwoLines)}
                         disabled={publicUrl === null}
                         onClick={async () => {
                             if (!publicUrl) {
@@ -45,7 +58,26 @@ export function ExportModal(props: ExportModalProps) {
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
                         }}
                     >
-                        Download as .zip
+                        <span className={styles.firstLine}>Deploy yourself</span>
+                        <span className={styles.secondLine}>and download as .zip</span>
+                    </button>
+
+                    <button
+                        className={classNames('button', styles.buttonWithTwoLines)}
+                        disabled={publicUrl === null}
+                        onClick={async () => {
+                            if (!publicUrl) {
+                                alert('Please enter your URL');
+                                return;
+                            }
+
+                            // TODO: !!! Make registration here
+
+                            /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
+                        }}
+                    >
+                        <span className={styles.firstLine}>Need help</span>
+                        <span className={styles.secondLine}>and we will contact you</span>
                     </button>
                 </div>
             </div>
