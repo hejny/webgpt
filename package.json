@@ -29,6 +29,7 @@
         "postversion": "git push && git push --tags && echo \"Check the deploy process: https://github.com/hejny/aiai/actions/\""
     },
     "dependencies": {
+        "@monaco-editor/react": "^4.5.1",
         "@next/font": "13.1.1",
         "@types/file-saver": "2.0.5",
         "@uiw/react-markdown-editor": "5.11.1",
@@ -47,6 +48,7 @@
         "next-remove-imports": "1.0.11",
         "next-router-mock": "0.9.3",
         "openmoji": "14.0.0",
+        "prettier": "2.8.1",
         "raw-loader": "4.0.2",
         "react": "18.2.0",
         "react-dom": "18.2.0",
@@ -59,7 +61,6 @@
         "spacetrim": "0.9.0",
         "typescript": "4.9.4",
         "waitasecond": "1.11.1",
-        "prettier": "2.8.1",
         "xyzt": "5.4.0",
         "yaml": "2.2.2"
     },
