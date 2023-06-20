@@ -69,6 +69,14 @@ export type string_css = string;
 /**
  * Semantic helper
  *
+ * For example `console.log("Hello World!")`
+ * @collboard-modules-sdk
+ */
+export type string_javascript = string;
+
+/**
+ * Semantic helper
+ *
  * For example `border`
  * @collboard-modules-sdk
  */

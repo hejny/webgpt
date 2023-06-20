@@ -1,5 +1,5 @@
 .settings {
-    /**/
+    /*/
     outline: 1px dotted green;
     /**/
 
@@ -9,14 +9,14 @@
     /*background-color: rgba(41, 81, 168, 0.308);*/
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .setting {
-    /**/
+    /*/
     outline: 1px dotted green;
     /**/
 
@@ -47,6 +47,10 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .settings {
+        flex-direction: column;
+    }
+
     .setting {
         width: calc(100% - 20px);
     }

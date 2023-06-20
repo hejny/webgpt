@@ -11,18 +11,23 @@ import { string_css } from '../../utils/typeAliases';
  * @collboard-modules-sdk
  */
 export function prettifyCss(css: string_css): string_css {
-    return format(css, {
-        parser: 'css',
-        plugins: [parserPostcss],
+    try {
+        return format(css, {
+            parser: 'css',
+            plugins: [parserPostcss],
 
-        // TODO: DRY - make some import or auto-copy of .prettierrc
-        endOfLine: 'lf',
-        tabWidth: 4,
-        singleQuote: true,
-        trailingComma: 'all',
-        arrowParens: 'always',
-        printWidth: 120,
-    });
+            // TODO: DRY - make some import or auto-copy of .prettierrc
+            endOfLine: 'lf',
+            tabWidth: 4,
+            singleQuote: true,
+            trailingComma: 'all',
+            arrowParens: 'always',
+            printWidth: 120,
+        });
+    } catch (error) {
+        console.error('There was an error with prettifying the css, using the original as the fallback', error, css);
+        return css;
+    }
 }
 
 /**

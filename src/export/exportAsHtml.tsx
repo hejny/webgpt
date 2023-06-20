@@ -14,6 +14,7 @@ import { string_css, string_html, string_markdown } from '../utils/typeAliases';
 import { splitCss } from './splitCss';
 import { prettifyCss } from './utils/prettifyCss';
 import { prettifyHtml } from './utils/prettifyHtml';
+import { removeSourceMaps } from './utils/removeSourceMaps';
 
 export interface HtmlExportOptions {
     /**
@@ -31,7 +32,7 @@ interface HtmlExport {
 }
 
 export interface HtmlExportFile {
-    type: 'HTML' | 'CSS' | 'JS' | 'IMAGE' | 'OTHER';
+    type: 'html' | 'css' | 'javascript' | 'image' | 'other';
     pathname: string;
     content: string_html | string_css | string_markdown | string;
 }
@@ -50,7 +51,9 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         if (styleElement.hasAttribute('data-export-ignore')) {
             continue;
         }
-        styles.push(styleElement.innerHTML);
+        let css = styleElement.innerHTML;
+        css = removeSourceMaps(css);
+        styles.push(css);
     }
 
     // Note: Fetch all <link rel="stylesheet" into styles
@@ -59,7 +62,8 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
             continue;
         }
         const response = await fetch(linkElement.href);
-        const css = await response.text();
+        let css = await response.text();
+        css = removeSourceMaps(css);
         styles.push(
             spaceTrim(
                 (block) => `
@@ -158,7 +162,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         },
     ]) {
         files.push({
-            type: 'CSS',
+            type: 'css',
             pathname,
             content,
         });
@@ -174,10 +178,10 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
                             <ShowcaseAppHead>
                                 {stylesPlace == 'EXTERNAL'
                                     ? files
-                                          .filter(({ type }) => type === 'CSS')
+                                          .filter(({ type }) => type === 'css')
                                           .map(({ pathname }, i) => <link key={i} rel="stylesheet" href={pathname} />)
                                     : files
-                                          .filter(({ type }) => type === 'CSS')
+                                          .filter(({ type }) => type === 'css')
                                           .map(({ pathname, content }, i) => (
                                               <style
                                                   key={i}
@@ -219,7 +223,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     html = prettifyHtml(html);
 
     files.unshift({
-        type: 'HTML',
+        type: 'html',
         pathname: 'index.html',
         content: html,
     });
@@ -227,7 +231,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
     // TODO: !!! Add license
 
     files.unshift({
-        type: 'OTHER',
+        type: 'other',
         pathname: 'README.md',
         content: removeMarkdownComments(wallpaper.content),
     });

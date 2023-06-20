@@ -11,18 +11,23 @@ import { string_html } from '../../utils/typeAliases';
  * @collboard-modules-sdk
  */
 export function prettifyHtml(html: string_html): string_html {
-    return format(html, {
-        parser: 'html',
-        plugins: [parserHtml],
+    try {
+        return format(html, {
+            parser: 'html',
+            plugins: [parserHtml],
 
-        // TODO: DRY - make some import or auto-copy of .prettierrc
-        endOfLine: 'lf',
-        tabWidth: 4,
-        singleQuote: true,
-        trailingComma: 'all',
-        arrowParens: 'always',
-        printWidth: 120,
-    });
+            // TODO: DRY - make some import or auto-copy of .prettierrc
+            endOfLine: 'lf',
+            tabWidth: 4,
+            singleQuote: true,
+            trailingComma: 'all',
+            arrowParens: 'always',
+            printWidth: 120,
+        });
+    } catch (error) {
+        console.error('There was an error with prettifying the html, using the original as the fallback', error, html);
+        return html;
+    }
 }
 
 /**

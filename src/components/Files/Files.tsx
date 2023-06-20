@@ -1,5 +1,5 @@
 import Editor from '@monaco-editor/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { HtmlExportFile } from '../../export/exportAsHtml';
 import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
 import styles from './Files.module.css';
@@ -21,6 +21,18 @@ export function Files(props: FilesProps) {
     const [filename, setFilename] = useState<string>(files[0].pathname);
     const file = files.find((file) => file.pathname === filename);
 
+    useEffect(() => {
+        if (!file) {
+            setFilename(files[0].pathname);
+        }
+    }, [files, file, setFilename]);
+
+    if (!file) {
+        return <></>;
+    }
+
+    // !!! {['image','other'].includes()} Work with image files
+
     return (
         <div className={styles.Files}>
             <div className={styles.files}>
@@ -33,9 +45,13 @@ export function Files(props: FilesProps) {
             </div>
             <Editor
                 className={styles.codeView}
-                height="90vh"
-                defaultLanguage="javascript"
-                defaultValue={file ? file.content : ''}
+                theme="vs-dark"
+                defaultLanguage={file.type}
+                options={{
+                    wordWrap: 'on',
+                }}
+                key={file.pathname}
+                defaultValue={file.content}
             />
             ;
         </div>
