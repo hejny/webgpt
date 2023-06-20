@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { ReactNode } from 'react';
+import { ReactNode, useLayoutEffect } from 'react';
 import { Article } from '../Article/Article';
 import styles from './Modal.module.css';
 
@@ -15,12 +15,18 @@ interface ModalProps {
 export function Modal(props: ModalProps) {
     const { title, children } = props;
 
-    const router = useRouter();
+    useLayoutEffect(() => {
+        const originalBodyOverflow = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = originalBodyOverflow;
+        };
+    });
 
     return (
         <>
             <CloseModalLink className={styles.overlay} />
-            <div className={styles.Modal}>
+            <dialog open className={styles.Modal}>
                 <div className={styles.bar}>
                     <div className={styles.title}>
                         <h2>{title}</h2>
@@ -32,7 +38,7 @@ export function Modal(props: ModalProps) {
                     </div>
                 </div>
                 <div className={styles.content}>{children} </div>
-            </div>
+            </dialog>
         </>
     );
 }
