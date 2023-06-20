@@ -32,7 +32,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
 
-                        console.log('🔃 Loading SmartsUpp');
+                        console.info('🔃 Loading SmartsUpp');
 
                         var _smartsupp = _smartsupp || {};
                         _smartsupp.key = 'f2e0946d05c186b5a6686ba408581ea863a710d4';
@@ -73,7 +73,7 @@ export function AnalyticsAndIntegrations(props: AnalyticsAndIntegrationsProps) {
                 dangerouslySetInnerHTML={{
                     __html: spaceTrim(`
 
-                        console.log('🔃 Loading SmartLook');
+                        console.info('🔃 Loading SmartLook');
 
                         window.smartlook||(function(d) {
                         var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];

@@ -26,7 +26,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     }, [publicUrl, wallpaper]);
     const { value: exported } = usePromise(exportedPromise);
 
-    console.log('🔽', { exported });
+    console.info('🔽', { exported });
 
     return (
         <Modal title={'Export preview'}>

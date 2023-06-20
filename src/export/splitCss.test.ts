@@ -60,7 +60,29 @@ describe('splitCss', () => {
 
     it('should split the CSS string with multiple rules and comment', () => {});
 
-    it('should split the CSS string with imports', () => {});
+    it('should split the CSS string with imports', () => {
+        const simpleCss = spaceTrim(`
+            @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+
+            .class1 {
+                color: red;
+            }
+        `);
+
+        const expectedChunks = [
+            spaceTrim(`
+                @import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+            `),
+            spaceTrim(`
+                .class1 {
+                    color: red;
+                }
+            `),
+        ];
+
+        const cssChunks = splitCss(simpleCss);
+        expect(cssChunks).toEqual(expectedChunks);
+    });
 
     it('should split the CSS string with a media query', () => {});
 

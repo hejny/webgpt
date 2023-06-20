@@ -10,7 +10,7 @@ export function useCurrentWallpaperId(): string {
         const wallpaperId = router.query.wallpaper as string;
 
         if (typeof wallpaperId !== 'string') {
-            console.log('[📌]', { wallpaperId });
+            console.error('[📌]', { wallpaperId });
             throw new Error('Wallpaper id is not 1 string, [📌] see more in console.');
         }
 

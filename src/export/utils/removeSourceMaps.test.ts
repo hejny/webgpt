@@ -7,13 +7,13 @@ describe('removeSourceMaps', () => {
         expect(
             spaceTrim(
                 removeSourceMaps(`
-                    console.log('Hello world');
+                    console.info('Hello world');
                 `),
             ),
         ).toEqual(
             spaceTrim(
                 removeSourceMaps(`
-                    console.log('Hello world');
+                    console.info('Hello world');
                 `),
             ),
         );
@@ -47,7 +47,7 @@ describe('removeSourceMaps', () => {
         expect(
             spaceTrim(
                 removeSourceMaps(`
-                    console.log('Hello world');
+                    console.info('Hello world');
 
                     /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2andLoootMore */
 
@@ -56,7 +56,7 @@ describe('removeSourceMaps', () => {
         ).toEqual(
             spaceTrim(
                 removeSourceMaps(`
-                    console.log('Hello world');
+                    console.info('Hello world');
                 `),
             ),
         );

@@ -25,7 +25,7 @@ export function ExportCodeModal(props: ExportCodeModalProps) {
     );
     const { value: exported } = usePromise(exportedPromise);
 
-    console.log('🔽', { exported });
+    console.info('🔽', { exported });
 
     return (
         <Modal title={'Export in code editor'}>

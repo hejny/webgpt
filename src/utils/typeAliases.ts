@@ -77,7 +77,7 @@ export type string_svg = string;
 /**
  * Semantic helper
  *
- * For example `console.log("Hello World!")`
+ * For example `console.info("Hello World!")`
  * @collboard-modules-sdk
  */
 export type string_javascript = string;

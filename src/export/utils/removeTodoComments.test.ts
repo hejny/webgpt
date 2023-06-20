@@ -7,13 +7,13 @@ describe('removeTodoComments', () => {
         expect(
             spaceTrim(
                 removeTodoComments(`
-                    console.log('Hello world');
+                    console.info('Hello world');
                 `),
             ),
         ).toEqual(
             spaceTrim(
                 removeTodoComments(`
-                    console.log('Hello world');
+                    console.info('Hello world');
                 `),
             ),
         );
@@ -43,7 +43,7 @@ describe('removeTodoComments', () => {
                         </head>
                         <body>
                             <h1>Hello world</h1>
-                            
+
                         </body>
                     </html>
                 `),
@@ -104,7 +104,7 @@ describe('removeTodoComments', () => {
                     <body>
                         <h1>Hello world</h1>
                         <script>
-                            console.log('Hello world');
+                            console.info('Hello world');
 
                             /* TODO: Some work */
                             // TODO: Some other work
@@ -124,7 +124,7 @@ describe('removeTodoComments', () => {
                     <body>
                         <h1>Hello world</h1>
                         <script>
-                            console.log('Hello world');
+                            console.info('Hello world');
 
                             
                             
@@ -165,7 +165,7 @@ describe('removeTodoComments', () => {
         expect(
             spaceTrim(
                 removeTodoComments(`
-                    console.log('Hello world');
+                    console.info('Hello world');
 
                     /* TODO: Some work */
                     // TODO: Some other work
@@ -175,7 +175,7 @@ describe('removeTodoComments', () => {
         ).toEqual(
             spaceTrim(
                 removeTodoComments(`
-                    console.log('Hello world');
+                    console.info('Hello world');
                 `),
             ),
         );
