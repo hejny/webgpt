@@ -1,7 +1,7 @@
 import MonacoEditor from '@monaco-editor/react';
 import { useEffect, useState } from 'react';
 import { HtmlExportFile } from '../../export/exportAsHtml';
-import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
+import { Select } from '../Select/Select';
 import styles from './Files.module.css';
 
 interface FilesProps {
@@ -36,11 +36,11 @@ export function Files(props: FilesProps) {
     return (
         <div className={styles.Files}>
             <div className={styles.files}>
-                <SelectWithFirst
-                    options={files.map((file) => ({ title: file.pathname, id: file.pathname }))}
+                <Select
+                    options={Object.fromEntries(files.map((file) => [file.pathname, file.pathname]))}
                     value={filename}
-                    onChange={setFilename}
-                    numberOfButtons={Infinity}
+                    onChange={(newFilename) => setFilename(newFilename)}
+                    visibleButtons={Infinity}
                 />
             </div>
             <MonacoEditor

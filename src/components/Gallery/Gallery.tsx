@@ -18,12 +18,13 @@ export function GallerySection(props: SampleProps) {
 
     const [filter, setFilter] = useState<GalleryFilter>({
         limit: 6 /* <- Note: As a highly composite number to fit in misc grids */,
-        isRandom: false /* <- TODO: In future default order should be by populariry */,
+        likedStatus: 'ALL',
+        order: 'ASCENDING' /* <- TODO: In future default order should be by populariry */,
     });
 
     const isInitial = useInitial(() => {
         // Note: We want to show random wallpapers BUT we don't want have undeterministic SSR state because of hydration errors and also because we want better control on order for example for search engines
-        setFilter({ ...filter, isRandom: true });
+        setFilter({ ...filter, order: 'RANDOM' });
     });
 
     const filteredWallpapers = filterWallpapers(

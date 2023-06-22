@@ -1,12 +1,12 @@
 import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
 import { Article } from '../../../components/Article/Article';
-import { SelectWithFirst } from '../../../components/SelectWithFirst/SelectWithFirst';
 import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
-import { GalleryFilter } from './GalleryFilter';
+import { Select } from '../../Select/Select';
+import { GalleryFilter, Order } from './GalleryFilter';
 import styles from './GalleryFilterInput.module.css';
 
 interface GalleryFilterProps {
@@ -28,13 +28,13 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
         defaultFilter.color || undefined,
         (color) => onFilterChange({ color }),
     );
-    const [likedStatus, setLikedStatus] = useStateWithReporting<LikedStatus | undefined>(
+    const [likedStatus, setLikedStatus] = useStateWithReporting<keyof typeof LikedStatus | 'ALL'>(
         defaultFilter.likedStatus,
         (likedStatus) => onFilterChange({ likedStatus }),
     );
     const [limit, setLimit] = useStateWithReporting<number>(defaultFilter.limit, (limit) => onFilterChange({ limit }));
-    const [isRandom, setRandom] = useStateWithReporting<boolean>(defaultFilter.isRandom, (isRandom) =>
-        onFilterChange({ isRandom }),
+    const [order, setOrder] = useStateWithReporting<keyof typeof Order>(defaultFilter.order, (order) =>
+        onFilterChange({ order }),
     );
 
     return (
@@ -64,49 +64,38 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 )}
             </div>
 
-            <SelectWithFirst
+            <Select
                 className={styles.filter}
-                title={`Like status: `}
+                label="Like status:"
                 value={likedStatus}
                 onChange={(newLikedStatus) => void setLikedStatus(newLikedStatus)}
-                numberOfButtons={Infinity}
-                options={[
-                    { id: undefined, title: 'All' },
-                    { id: 'NONE' as LikedStatus, title: 'None' },
-                    { id: 'LOVE' as LikedStatus, title: '❤ Loved' },
-                    { id: 'LIKE' as LikedStatus, title: '👍 Liked' },
-                    { id: 'NEUTRAL' as LikedStatus, title: '😐 Neutral' },
-                    { id: 'DISLIKE' as LikedStatus, title: '👎 Disliked' },
-                ]}
+                visibleButtons={Infinity}
+                options={{ ...LikedStatus, ALL: 'All' }}
             />
 
-            <SelectWithFirst
+            <Select
                 className={styles.filter}
-                title={`Items on page: `}
+                label="Items on page:"
                 value={limit}
                 onChange={(newLimit) => void setLimit(newLimit)}
-                numberOfButtons={Infinity}
-                options={[
+                visibleButtons={Infinity}
+                options={{
                     // Note: As a highly composite numbers to fit in misc grids
-                    { id: 6, title: '6' },
-                    { id: 24, title: '24' },
-                    { id: 60, title: '60' },
-                    { id: 180, title: '180' },
-                    { id: Infinity, title: 'All' },
-                ]}
+                    6: '6',
+                    24: '24',
+                    60: '60',
+                    180: '180',
+                    Infinity: 'All',
+                }}
             />
 
-            <SelectWithFirst
+            <Select
                 className={styles.filter}
-                title={`Order: `}
-                value={isRandom}
-                onChange={(newIsRandom) => void setRandom(newIsRandom)}
-                numberOfButtons={Infinity}
-                options={[
-                    { id: false, title: 'Ascending (A-Z)' },
-                    // TODO: Descending (Z-A)
-                    { id: true, title: 'Random' },
-                ]}
+                label={`Order:`}
+                value={order}
+                onChange={(newOrder) => void setOrder(newOrder)}
+                visibleButtons={Infinity}
+                options={Order}
             />
         </div>
     );

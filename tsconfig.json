@@ -27,7 +27,8 @@
         "**/*.tsx",
         ".next/types/**/*.ts",
         "src/utils/image/palette/13/computeImagePalette13.ts.todo",
-        "src/utils/image/palette/13/createColorfulComputeImageColorStats13.ts.todo"
+        "src/utils/image/palette/13/createColorfulComputeImageColorStats13.ts.todo",
+        "src/components/Select/Select.tsx"
     ],
     "exclude": ["node_modules", "cypress", "old"]
 }

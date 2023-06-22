@@ -5,7 +5,7 @@ import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { createImageInBrowser } from '../../utils/image/createImageInBrowser';
-import { SelectWithFirst } from '../SelectWithFirst/SelectWithFirst';
+import { Select } from '../Select/Select';
 
 /**
  * @@
@@ -18,8 +18,8 @@ export function EditModalColorAlgoritm() {
     const [isComputing, setComputing] = useState(false);
 
     return (
-        <SelectWithFirst
-            title="Color algorithm"
+        <Select
+            label="Color algorithm"
             value={wallpaper.colorStats.version}
             onChange={async (newVersion) => {
                 setComputing(true);
@@ -43,11 +43,8 @@ export function EditModalColorAlgoritm() {
                 await forTime(10);
                 setComputing(false);
             }}
-            numberOfButtons={0}
-            options={COLORSTATS_COMPUTE_METHODS.map(({ version }) => ({
-                id: version,
-                title: version,
-            }))}
+            visibleButtons={0}
+            options={Object.fromEntries(COLORSTATS_COMPUTE_METHODS.map(({ version }) => [version, version]))}
         />
     );
 }

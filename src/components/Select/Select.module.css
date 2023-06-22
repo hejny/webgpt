@@ -1,4 +1,4 @@
-.SelectWithFirst {
+.Select {
     /* TODO: Use or remove empty css */
 
     display: flex;
@@ -7,11 +7,11 @@
     align-items: center;
 }
 
-.SelectWithFirst .title {
+.Select .title {
     text-align: left;
 }
 
-.SelectWithFirst select {
+.Select select {
     outline: none;
 }
 

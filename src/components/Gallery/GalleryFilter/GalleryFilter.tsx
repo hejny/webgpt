@@ -5,7 +5,13 @@ import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
 export interface GalleryFilter {
     fulltext?: string;
     color?: WithTake<Color>;
-    likedStatus?: LikedStatus;
+    likedStatus: keyof typeof LikedStatus | 'ALL';
     limit: number;
-    isRandom: boolean;
+    order: keyof typeof Order;
 }
+
+export const Order = {
+    ASCENDING: 'Ascending (A-Z)',
+    DESCENDING: 'Descending (Z-A)',
+    RANDOM: 'Random',
+} as const;

@@ -1,25 +1,31 @@
+import { ReactNode } from 'react';
 import { classNames } from '../../utils/classNames';
-import styles from './SelectWithFirst.module.css';
+import styles from './Select.module.css';
 
-interface SelectWithFirstProps<TValue> {
-    title?: string;
+interface SelectProps<TValue extends string | number | symbol> {
+    label?: string;
     value: TValue;
     onChange(newValue: TValue): void;
-    numberOfButtons?: number;
-    options: Array<{ id: TValue; title: string }>;
+    visibleButtons: number;
+    options: Record<TValue, string | ReactNode>;
     className?: string;
 }
 
-export function SelectWithFirst<TValue>(props: SelectWithFirstProps<TValue>) {
-    const { title, value, onChange, numberOfButtons = 1, className } = props;
+export function Select<TValue extends string | number | symbol>(props: SelectProps<TValue>) {
+    const { label, value, onChange, visibleButtons, className } = props;
 
-    const options = [...props.options];
-    const firstOptions = options.slice(0, numberOfButtons);
-    const restOptions = options.slice(numberOfButtons);
+    const options: Array<{ id: TValue; label: string | ReactNode }> = Object.entries(props.options).map(
+        ([id, label]) => ({
+            id: id as TValue,
+            label: label as string | ReactNode,
+        }),
+    );
+    const firstOptions = options.slice(0, visibleButtons);
+    const restOptions = options.slice(visibleButtons);
 
     return (
-        <div className={classNames(styles.SelectWithFirst, className)}>
-            {title && <span className={styles.title}>{title}</span>}
+        <div className={classNames(styles.Select, className)}>
+            {label && <span className={styles.title}>{label}</span>}
 
             {firstOptions.map((option) => (
                 <button
@@ -27,7 +33,7 @@ export function SelectWithFirst<TValue>(props: SelectWithFirstProps<TValue>) {
                     onClick={() => void onChange(option.id)}
                     className={classNames(styles.option, value === option.id && styles.selected)}
                 >
-                    {option.title}
+                    {option.label}
                 </button>
             ))}
 
@@ -38,7 +44,7 @@ export function SelectWithFirst<TValue>(props: SelectWithFirstProps<TValue>) {
                 >
                     {restOptions.map((option, i) => (
                         <option key={i} selected={value === option.id} value={i}>
-                            {option.title}
+                            {option.label}
                         </option>
                     ))}
                 </select>

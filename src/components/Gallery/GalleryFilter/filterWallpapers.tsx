@@ -7,7 +7,7 @@ import { GalleryFilter } from './GalleryFilter';
 export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryFilter): Array<IWallpaper> {
     // console.log('filterWallpapers');
 
-    const { fulltext, color, likedStatus, limit, isRandom } = filter;
+    const { fulltext, color, likedStatus, limit, order } = filter;
 
     // debugger;
 
@@ -33,7 +33,7 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
         );
     }
 
-    if (likedStatus) {
+    if (likedStatus !== 'ALL') {
         const localStorageWallpapersLikedStatuses = Object.fromEntries(
             Object.entries(localStorage)
                 .filter(([key]) => key.startsWith('likedStatus_'))
@@ -53,7 +53,20 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
         }
     }
 
-    if (isRandom) {
+    if (order === 'ASCENDING' || order === 'DESCENDING') {
+        // Note: .sort method is mutating array so making a copy before if not copyed already
+        //if (!fulltext && !color && !likedStatus) {
+        wallpapers = [...wallpapers];
+        //}
+
+        // Note: .sort method is mutating array so no need to assign it back
+        wallpapers.sort((a, b) => a.title.localeCompare(b.title));
+
+        if (order === 'DESCENDING') {
+            // Note: .reverse method is mutating array so no need to assign it back
+            wallpapers.reverse();
+        }
+    } else if (order === 'RANDOM') {
         // Note: .sort method is mutating array so making a copy before if not copyed already
         //if (!fulltext && !color && !likedStatus) {
         wallpapers = [...wallpapers];
@@ -69,7 +82,6 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
 
     return wallpapers;
 }
-
 
 /**
  * TODO: !!! Liked should filter also Loved
