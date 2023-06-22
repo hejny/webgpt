@@ -7,9 +7,24 @@ import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_email } from '../../utils/typeAliases';
 import { Modal } from '../Modal/Modal';
+import { Select } from '../Select/Select';
 import styles from './ExportModal.module.css';
 
 interface ExportModalProps {}
+
+const ExportSystem = {
+    STATIC: 'Static',
+    PHP: 'PHP',
+    WORDPRESS: 'WordPress',
+    OTHER: 'Other/Custom/Not sure',
+} as const;
+
+const ExportPlan = {
+    FREE: 'Free',
+    SIMPLE: 'Simple',
+    ADVANCED: 'Advanced',
+    ENTERPRISE: 'Enterprise',
+} as const;
 
 /**
  * @@
@@ -17,24 +32,32 @@ interface ExportModalProps {}
 export function ExportModal(props: ExportModalProps) {
     const wallpaper = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
-    const [email, setEmail] = useState<null | string_email>(null);
+    const [email, setEmail] = useState<string_email>('');
+    // const [projectName, setProjectName] = useState<string>('');
+    const [system, setSystem] = useState<keyof typeof ExportSystem>('OTHER');
+    const [plan, setPlan] = useState<keyof typeof ExportPlan>('FREE');
+
     return (
         <Modal title={'Get the web'}>
             <div className={styles.settings}>
                 <div className={styles.setting}>
                     Your URL:&nbsp;&nbsp;
                     <input
+                        className={styles.input}
+                        defaultValue={publicUrl?.href || ''}
                         onChange={(e) => {
                             setPublicUrl(new URL(e.target.value));
                         }}
                         placeholder="https://www.your-awesome-project.com/"
                         type="text"
                     />
+                    {/* * We need ... */}
                 </div>
-
                 <div className={styles.setting}>
                     Your Email:&nbsp;&nbsp;
                     <input
+                        className={styles.input}
+                        defaultValue={email}
                         onChange={(e) => {
                             setEmail(e.target.value);
                         }}
@@ -42,10 +65,49 @@ export function ExportModal(props: ExportModalProps) {
                         type="email"
                     />
                 </div>
+                {/*
+                <div className={styles.setting}>
+                    Company / project:&nbsp;&nbsp;
+                    <input
+                        className={styles.input}
+                        defaultValue={projectName}
+                        onChange={(e) => {
+                            setProjectName(e.target.value);
+                        }}
+                        placeholder="Pineapple"
+                    />
+                </div>
+                */}
+                <div className={styles.setting}>
+                    <Select
+                        label="System:"
+                        value={system}
+                        onChange={(newSystem) => setSystem(newSystem)}
+                        options={ExportSystem}
+                        visibleButtons={Infinity}
+                    />
+                </div>
+                <div className={styles.setting}>
+                    <Select
+                        label="Plan:"
+                        value={plan}
+                        onChange={(newPlan) => setPlan(newPlan)}
+                        options={ExportPlan}
+                        visibleButtons={Infinity}
+                    />
+                </div>
+
+                <div className={styles.setting} style={{ display: 'none' }}>
+                    <span>{publicUrl?.href}</span>
+                    <span>{email}</span>
+                    {/* <span>{projectName}</span> */}
+                    <span>{system}</span>
+                    <span>{plan}</span>
+                </div>
 
                 <div className={styles.setting}>
                     <button
-                        className={classNames('button', styles.buttonWithTwoLines)}
+                        className={classNames('button', styles.button, styles.buttonWithTwoLines)}
                         disabled={publicUrl === null}
                         onClick={async () => {
                             if (!publicUrl) {
@@ -63,7 +125,7 @@ export function ExportModal(props: ExportModalProps) {
                     </button>
 
                     <button
-                        className={classNames('button', styles.buttonWithTwoLines)}
+                        className={classNames('button', styles.button, styles.buttonWithTwoLines)}
                         disabled={publicUrl === null}
                         onClick={async () => {
                             if (!publicUrl) {
