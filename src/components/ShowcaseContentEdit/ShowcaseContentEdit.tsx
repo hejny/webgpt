@@ -20,7 +20,6 @@ export function ShowcaseContentEdit(props: ShowcaseContentWithEditProps) {
 
     const modal = router.query.modal || null;
 
-    console.info('🔽', { modal });
 
     return (
         <>

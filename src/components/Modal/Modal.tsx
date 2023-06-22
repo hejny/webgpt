@@ -15,17 +15,62 @@ interface ModalProps {
 export function Modal(props: ModalProps) {
     const { title, children } = props;
 
+    /*
+    TODO: !!! Disables scrolling on whole page when modal is open BUT keeps scroll position
+    
+    // Note: Disables scrolling on whole page when modal is open BUT keeps scroll position
     useLayoutEffect(() => {
-        const originalBodyOverflow = document.body.style.overflow;
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = originalBodyOverflow;
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        window.document.body.style.scrollBehavior = `none`;
+
+        const bodyScrollPrevent = (event: Event) => {
+            console.log(event);
+            window.scrollTo(scrollLeft, scrollTop);
         };
+        document.body.addEventListener('scroll', bodyScrollPrevent, true);
+        return () => {
+            document.body.removeEventListener('scroll', bodyScrollPrevent, true);
+            window.document.body.style.scrollBehavior = `smooth`;
+        };
+    });
+
+    */
+
+    useLayoutEffect(() => {
+        document.addEventListener(
+            'scroll',
+            (event: Event) => {
+                console.log('document scroll');
+            },
+            true,
+        );
     });
 
     return (
         <>
-            <CloseModalLink className={styles.overlay} />
+            <CloseModalLink
+                className={styles.overlay}
+                onWheel={(event) => {
+                    console.log('overlay wheel');
+                    event.stopPropagation();
+                }}
+                onWheelCapture={(event) => {
+                    console.log('overlay wheel capture');
+                    event.stopPropagation();
+                    event.preventDefault();
+                }}
+                onTouchMove={(event) => {
+                    console.log('overlay touchmove');
+                    event.stopPropagation();
+                    event.preventDefault();
+                }}
+                onTouchMoveCapture={(event) => {
+                    console.log('overlay touchmove capture');
+                    event.stopPropagation();
+                    event.preventDefault();
+                }}
+            />
             <dialog open className={styles.Modal}>
                 <div className={styles.bar}>
                     <div className={styles.title}>
@@ -43,18 +88,12 @@ export function Modal(props: ModalProps) {
     );
 }
 
-interface CustomLinkProps {
-    className?: string;
-    children?: ReactNode;
-    title?: string;
-}
-
-interface OpenModalLinkProps extends CustomLinkProps {
+interface OpenModalLinkProps extends CloseModalLinkProps {
     modal: string;
 }
 
 export function OpenModalLink(props: OpenModalLinkProps) {
-    const { className, children, title, modal } = props;
+    const { modal } = props;
 
     const router = useRouter();
 
@@ -68,15 +107,15 @@ export function OpenModalLink(props: OpenModalLinkProps) {
                         modal,
                     },
                 }}
-                {...{ children, className, title }}
+                {...props}
             />
         </>
     );
 }
 
-export function CloseModalLink(props: CustomLinkProps) {
-    const { className, children, title } = props;
+type CloseModalLinkProps = Omit<React.ComponentProps<'a'>, 'ref'>;
 
+export function CloseModalLink(props: CloseModalLinkProps) {
     const router = useRouter();
 
     return (
@@ -87,7 +126,7 @@ export function CloseModalLink(props: CustomLinkProps) {
                     wallpaper: router.query.wallpaper,
                 },
             }}
-            {...{ children, className, title }}
+            {...props}
         />
     );
 }
