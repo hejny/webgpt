@@ -15,62 +15,23 @@ interface ModalProps {
 export function Modal(props: ModalProps) {
     const { title, children } = props;
 
-    /*
-    TODO: !!! Disables scrolling on whole page when modal is open BUT keeps scroll position
-    
-    // Note: Disables scrolling on whole page when modal is open BUT keeps scroll position
+    // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useLayoutEffect(() => {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-        window.document.body.style.scrollBehavior = `none`;
-
         const bodyScrollPrevent = (event: Event) => {
-            console.log(event);
-            window.scrollTo(scrollLeft, scrollTop);
+            event.preventDefault();
+            return false;
         };
-        document.body.addEventListener('scroll', bodyScrollPrevent, true);
+        document.body.addEventListener('wheel', bodyScrollPrevent, { passive: false });
+        document.body.addEventListener('touchmove', bodyScrollPrevent, { passive: false });
         return () => {
-            document.body.removeEventListener('scroll', bodyScrollPrevent, true);
-            window.document.body.style.scrollBehavior = `smooth`;
+            document.body.removeEventListener('wheel', bodyScrollPrevent);
+            document.body.removeEventListener('touchmove', bodyScrollPrevent);
         };
-    });
-
-    */
-
-    useLayoutEffect(() => {
-        document.addEventListener(
-            'scroll',
-            (event: Event) => {
-                console.log('document scroll');
-            },
-            true,
-        );
     });
 
     return (
         <>
-            <CloseModalLink
-                className={styles.overlay}
-                onWheel={(event) => {
-                    console.log('overlay wheel');
-                    event.stopPropagation();
-                }}
-                onWheelCapture={(event) => {
-                    console.log('overlay wheel capture');
-                    event.stopPropagation();
-                    event.preventDefault();
-                }}
-                onTouchMove={(event) => {
-                    console.log('overlay touchmove');
-                    event.stopPropagation();
-                    event.preventDefault();
-                }}
-                onTouchMoveCapture={(event) => {
-                    console.log('overlay touchmove capture');
-                    event.stopPropagation();
-                    event.preventDefault();
-                }}
-            />
+            <CloseModalLink className={styles.overlay} />
             <dialog open className={styles.Modal}>
                 <div className={styles.bar}>
                     <div className={styles.title}>
