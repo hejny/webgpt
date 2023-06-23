@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import type WhoisSearchResult from 'whoiser' /* <- TODO: There should be probbably "import { type WhoisSearchResult } from 'whoiser' " */;
 import { usePromise } from '../../../utils/hooks/usePromise';
@@ -55,9 +56,24 @@ export function WhoisDomain(props: WhoisDomainProps) {
                 }[domainStatus]
             }
 
-            <button className={styles.refresh} onClick={() => setNonce(nonce + 1)}>
+            <button className={styles.action} onClick={() => setNonce(nonce + 1)}>
                 Refresh
             </button>
+
+            {domainStatus === 'AVAILABLE' && (
+                <Link
+                    className={styles.action}
+                    href={`https://subreg.cz/cz/domeny/registrace-domeny/?domain=${encodeURIComponent(domain)}`}
+                >
+                    Register
+                </Link>
+            )}
+
+            {domainStatus === 'REGISTERED' && (
+                <Link className={styles.action} href={`https://${domain}`}>
+                    Open
+                </Link>
+            )}
 
             {/** <pre>{JSON.stringify(whois, null, 4)}</pre> /**/}
         </div>

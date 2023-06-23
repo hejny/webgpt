@@ -14,7 +14,7 @@
     color: #888888;
 }
 
-button.refresh {
+.action {
     outline: none;
     border: 1px solid #ccc;
 

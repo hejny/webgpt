@@ -23,7 +23,7 @@ export function getDomainStatusFromWhois(whois: typeof WhoisSearchResult): keyof
             text = text.join('\n');
         }
 
-        if (text.includes('limit exceeded')) {
+        if (typeof text === 'string' && text.includes('limit exceeded')) {
             return 'LIMIT';
         }
     }
