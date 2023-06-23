@@ -1,10 +1,5 @@
 import type WhoisSearchResult from 'whoiser';
-
-export const DomainStatus = {
-    AVAILABLE: 'Available',
-    REGISTERED: 'Registered',
-    UNKNOWN: 'Unknown',
-} as const;
+import { DomainStatus } from './DomainStatus';
 
 export function getDomainStatusFromWhois(whois: typeof WhoisSearchResult): keyof typeof DomainStatus {
     if (whois === null) {
