@@ -3,14 +3,19 @@
     border: 1px dotted red;
     /**/
     /* TODO: Use or remove empty css */
+
+    width: 100%;
+
+    padding: 10px;
+    padding-top: 20px;
 }
 
 textarea.pattern {
-    /**/
+    /*/
     border: 1px dotted red;
     /**/
 
     width: 50%;
-    max-width: 200px;
+
     height: 300px;
 }

@@ -11,9 +11,12 @@
 }
 
 .page main {
-    text-align: center;
     color: #ccc;
     overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page a {

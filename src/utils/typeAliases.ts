@@ -61,6 +61,22 @@ export type string_markdown = string;
 /**
  * Semantic helper
  *
+ * For example `"towns.cz"`
+ * @collboard-modules-sdk
+ */
+export type string_domain = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"com"`
+ * @collboard-modules-sdk
+ */
+export type string_tdl = string;
+
+/**
+ * Semantic helper
+ *
  * For example `.foo{border: 1px solid red}`
  * @collboard-modules-sdk
  */

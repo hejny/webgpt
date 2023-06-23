@@ -1,7 +1,7 @@
 import { Barlow_Condensed } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
-import { WhoisDomains } from '../components/WhoisDomains/WhoisDomains';
+import { AdvancedDomainsChecker } from '../components/Whois/AdvancedDomainsChecker';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
@@ -18,7 +18,7 @@ export default function DomainsPage() {
                     <h1>AI Web Maker</h1>
                     <p>Pick your domain:</p>
 
-                    <WhoisDomains />
+                    <AdvancedDomainsChecker />
                 </main>
 
                 {/* TODO: Make here some footer OR keep it as iframe
