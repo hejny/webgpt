@@ -1,6 +1,18 @@
-.WhoisDomain {
-    /*/
-    border: 1px dotted red;
-    /**/
-    /* TODO: Use or remove empty css */
+
+
+
+.pending {
+    color: #888888;
+}
+
+.available {
+    color: #0bee57;
+}
+
+.registered {
+    color: #dd1b1b;
+}
+
+.unknown {
+    color: #888888;
 }
