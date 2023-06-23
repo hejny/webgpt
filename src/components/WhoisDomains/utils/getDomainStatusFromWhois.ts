@@ -7,9 +7,24 @@ export function getDomainStatusFromWhois(whois: typeof WhoisSearchResult): keyof
     }
 
     for (const dns of Object.values(whois)) {
+        if (dns.Registrar) {
+            return 'REGISTERED';
+        }
+
         const domainStatus = dns['Domain Status'];
+
         if (Array.isArray(domainStatus) && domainStatus.length > 0) {
             return 'REGISTERED';
+        }
+
+        let text = dns['text'];
+
+        if (Array.isArray(text)) {
+            text = text.join('\n');
+        }
+
+        if (text.includes('limit exceeded')) {
+            return 'LIMIT';
         }
     }
 

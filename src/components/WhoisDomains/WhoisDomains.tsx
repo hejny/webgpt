@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { string_hostname } from '../../utils/typeAliases';
 import { WhoisDomain } from './WhoisDomain/WhoisDomain';
 import styles from './WhoisDomains.module.css';
 
@@ -9,17 +8,29 @@ interface WhoisDomainsProps {}
  * @@
  */
 export function WhoisDomains(props: WhoisDomainsProps) {
-    const [domain, setDomain] = useState<string_hostname>('');
+    const [names, setNames] = useState<Array<string>>(['my', 'cool', 'project']);
+    const [tdls, setTdls] = useState<Array<string>>(['com', 'org', 'io', 'net', 'cz']);
+
+    const domains = names.flatMap((name) => tdls.map((tdl) => `${name}.${tdl}`));
 
     return (
         <div className={styles.WhoisDomains}>
-            {' '}
-            <input
-                defaultValue={domain}
-                onChange={(event) => setDomain(event.target.value)}
-                placeholder="example.com"
+            <textarea
+                className={styles.pattern}
+                defaultValue={names.join('\n')}
+                onChange={(event) => setNames(event.target.value.split('\n'))}
+                // placeholder={`my\ncool\nproject`}
             />
-            <WhoisDomain {...{ domain }} />
+            <textarea
+                className={styles.pattern}
+                defaultValue={tdls.join('\n')}
+                onChange={(event) => setTdls(event.target.value.split('\n'))}
+                // placeholder={`com\norg\nio`}
+            />
+
+            {domains.map((domain) => (
+                <WhoisDomain key={domain} {...{ domain }} />
+            ))}
         </div>
     );
 }
