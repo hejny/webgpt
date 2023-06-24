@@ -63,7 +63,11 @@ export function WhoisDomain(props: WhoisDomainProps) {
             {domainStatus === 'AVAILABLE' && (
                 <Link
                     className={styles.action}
-                    href={`https://subreg.cz/cz/domeny/registrace-domeny/?domain=${encodeURIComponent(domain)}`}
+                    href={
+                        `https://subreg.cz/cz/domeny/registrace-domeny/?domain=${encodeURIComponent(
+                            domain,
+                        )}` /* <- TODO: More registrators */
+                    }
                 >
                     Register
                 </Link>
