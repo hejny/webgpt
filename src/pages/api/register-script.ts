@@ -3,18 +3,18 @@ import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 
 async function register() {
-    console.info(`🔌 Registering your page`);
+    console.info('🔌', 'Registering your page');
 
-    console.info('hostname', window.location.hostname);
-    console.info('host', window.location.host);
+    console.info('🔌', 'hostname', window.location.hostname);
+    console.info('🔌', 'host', window.location.host);
 
-    const response = await fetch(`${NEXT_PUBLIC_URL.href}/api/register`, {
+    const response = await fetch(`${(window as any).NEXT_PUBLIC_URL.href}/api/register`, {
         method: 'POST',
         body: JSON.stringify({ host: window.location.host }),
     });
     const { message } = (await response.json()) as any;
 
-    console.info(`🔌`, { message });
+    console.info('🔌', { message });
 }
 
 export default async function registerScriptHandler(request: NextApiRequest, response: NextApiResponse) {
