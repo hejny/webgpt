@@ -9,16 +9,14 @@ export default async function whoisHandler(request: NextApiRequest, response: Ne
     const domain = request.query.domain;
 
     if (typeof domain !== 'string') {
-        return response
-            .status(400)
-            .json(
-                {
-                    message: `You need to specify a domain in the query.`,
-                } as any /* <- TODO: Type helper ResponseWithError<T> */,
-            );
+        return response.status(400).json(
+            {
+                message: `You need to specify a domain in the query.`,
+            } as any /* <- TODO: Type helper ResponseWithError<T> */,
+        );
     }
 
     // TODO: !!! Limits + checkups
     const result = await whoiser(domain);
-    response.status(200).json({ result });
+    return response.status(200).json({ result });
 }

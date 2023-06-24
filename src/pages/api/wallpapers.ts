@@ -10,5 +10,5 @@ export default async function wallpapersHandler(
     request: NextApiRequest,
     response: NextApiResponse<WallpapersResponse>,
 ) {
-    response.status(200).json({ wallpapers: await getWallpapers() });
+    return response.status(200).json({ wallpapers: await getWallpapers() });
 }

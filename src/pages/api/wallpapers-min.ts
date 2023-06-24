@@ -9,7 +9,7 @@ export default async function wallpapersIdsHandler(
     request: NextApiRequest,
     response: NextApiResponse<WallpapersResponse>,
 ) {
-    response.status(200).json({
+    return response.status(200).json({
         wallpapers: (await getWallpapers()).map(({ id, colorStats }) => ({
             id,
             primaryColor: colorStats.palette[0].value as any as string,
