@@ -28,7 +28,14 @@ export function Menu() {
                     <div className={classNames(styles.bar, styles.bar2)}></div>
                     <div className={classNames(styles.bar, styles.bar3)}></div>
                 </div>
-                <nav className={styles.MenuContent}>
+                <nav
+                    className={styles.MenuContent}
+                    onClick={() => {
+                        document.getElementsByClassName(styles.MenuBar)[0].classList.remove(styles.open);
+                        document.getElementsByClassName(styles.MenuContent)[0].classList.remove(styles.open);
+                        document.getElementsByClassName(styles.MenuBg)[0].classList.remove(styles.open);
+                    }}
+                >
                     <ul>
                         {/* TODO: !!! Export all pages */}
                         <li>
