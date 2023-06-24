@@ -7,7 +7,7 @@ interface RegisterResponse {
 
 export default async function registerHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
     const allUsers = await prisma.user.findMany();
-    return response.status(200).json({ message: 'Test', allUsers });
+    return response.status(200).json({ message: '[🔌] Test', allUsers });
 
     // TODO: !!!! Add register logic
 }

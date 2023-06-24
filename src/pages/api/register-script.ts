@@ -27,6 +27,10 @@ export default async function registerScriptHandler(request: NextApiRequest, res
             spaceTrim(
                 // !!! Add note + remove register-script.js.txt
                 (block) => `
+
+                    /**
+                     * Note: [🔌]
+                     **/
             
                     const NEXT_PUBLIC_URL = new URL('${NEXT_PUBLIC_URL.href}');
 

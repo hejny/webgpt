@@ -103,11 +103,11 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                         __html: spaceTrim(
                             (block) => `
                                 <!--------[ Registration: ]-------->
-                                <!-- Note: This is a !!!@@@    -->
+                                <!-- Note: [🔌] This is a !!!@@@    -->
                                 <!--     | Or register at !!!! -->
                                 <script src="${
                                     NEXT_PUBLIC_URL.href /* <- Note Here should be really used the global NEXT_PUBLIC_URL NOT publicUrl */
-                                }api/register-script.js" async defer></script>
+                                }api/register-script" async defer></script>
                                 <!--------[ /Registration ]-------->
                             `,
                         ),
