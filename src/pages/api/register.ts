@@ -1,13 +1,15 @@
+import { PrismaClient } from '@prisma/client';
 import type { NextApiRequest, NextApiResponse } from 'next';
+
+const prisma = new PrismaClient();
 
 interface RegisterResponse {
     // !!!
     message: string;
+    allUsers: any;
 }
 
-export default async function registerHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
+export default async function wallpapersHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
     const allUsers = await prisma.user.findMany();
-    return response.status(200).json({ message: '[🔌] Test', allUsers });
-
-    // TODO: !!!! Add register logic
+    response.status(200).json({ message: 'Test', allUsers });
 }

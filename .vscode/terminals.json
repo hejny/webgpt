@@ -120,6 +120,12 @@
             "command": "npm version patch",
             "onlySingle": true,
             "focus": true
+        },
+        {
+            "name": "💽🏭 Prisma generate client",
+            "command": "npx prisma generate",
+            "onlySingle": true,
+            "focus": true
         }
     ]
 }
