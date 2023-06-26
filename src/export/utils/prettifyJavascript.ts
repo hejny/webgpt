@@ -13,7 +13,7 @@ import { string_javascript } from '../../utils/typeAliases';
 export function prettifyJavascript(javascript: string_javascript): string_javascript {
     try {
         return format(javascript, {
-            parser: 'javascript',
+            parser: 'babel',
             plugins: [parserBabel],
 
             // TODO: DRY - make some import or auto-copy of .prettierrc

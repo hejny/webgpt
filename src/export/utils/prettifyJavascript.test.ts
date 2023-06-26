@@ -13,7 +13,7 @@ describe('prettifyJavascript', () => {
         ).toEqual(
             spaceTrim(`
                     console.info('Hello world');
-                `),
+                `) + '\n',
         );
     });
 
@@ -27,7 +27,7 @@ describe('prettifyJavascript', () => {
         ).toEqual(
             spaceTrim(`
                     console.info('Hello world');
-                `),
+                `) + '\n',
         );
     });
 });
