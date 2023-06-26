@@ -3,6 +3,7 @@ import '@uiw/react-markdown-preview/markdown.css';
 import { useState } from 'react';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
+import { supabase } from '../../supabase';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_email } from '../../utils/typeAliases';
@@ -115,7 +116,14 @@ export function ExportModal(props: ExportModalProps) {
                                 return;
                             }
 
+                            const wallpaperId = wallpaper.id;
+                            const url = publicUrl.href;
+                            const ownerEmail = email;
+
                             // TODO: !!! Make registration here
+                            supabase.from('Site').insert([{ wallpaperId, url, ownerEmail, plan }]);
+
+                            return;
 
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
                         }}
@@ -125,6 +133,7 @@ export function ExportModal(props: ExportModalProps) {
                     </button>
 
                     <button
+                        // TODO: !!!!! Remove this button and replace by need help checkbox
                         className={classNames('button', styles.button, styles.buttonWithTwoLines)}
                         disabled={publicUrl === null}
                         onClick={async () => {

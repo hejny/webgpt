@@ -9,6 +9,8 @@ async function register() {
     console.info('🔌', 'hostname', window.location.hostname);
     console.info('🔌', 'host', window.location.host);
 
+
+    // !!!!!!!!!!!!!!! supabase or register logic
     const response = await fetch(
         `${
             // @ts-ignore
