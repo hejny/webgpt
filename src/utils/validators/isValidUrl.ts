@@ -1,5 +1,3 @@
-import { string_url } from './typeAliases';
-
 /**
  * Tests if given string is valid URL.
  *
@@ -7,9 +5,9 @@ import { string_url } from './typeAliases';
  *
  * @collboard-modules-sdk
  */
-export function isValidUrl(url: string_url): boolean {
+export function isValidUrl(url: unknown): boolean {
     try {
-        const urlObject = new URL(url);
+        const urlObject = new URL(url as any);
 
         if (!['http:', 'https:', 'data:'].includes(urlObject.protocol)) {
             return false;

@@ -1,10 +1,10 @@
-import { uuid } from '../typeAliases';
+import { string_uuid } from '../typeAliases';
 
 /**
  *
  * @collboard-modules-sdk
  */
-export function isValidUuid(value: unknown): value is uuid {
+export function isValidUuid(value: unknown): value is string_uuid {
     if (typeof value !== 'string') {
         return false;
     }
