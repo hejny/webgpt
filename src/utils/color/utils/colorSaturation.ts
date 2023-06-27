@@ -16,4 +16,3 @@ export function colorSaturation(color: Color): number {
       return delta / max;
     }
   }
-  

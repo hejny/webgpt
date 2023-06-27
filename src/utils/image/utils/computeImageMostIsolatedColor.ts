@@ -5,7 +5,7 @@ import { IImage } from '../IImage';
 
 /**
  * @@@
- * 
+ *
  * NOT used - too slow
  */
 export function computeImageMostIsolatedColor(image: IImage): WithTake<Color> {
