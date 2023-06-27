@@ -118,13 +118,24 @@ export function ExportModal(props: ExportModalProps) {
 
                             const wallpaperId = wallpaper.id;
                             const url = publicUrl.href; /* <- TODO: [🎞] Maybe do here some URL normalization */
-                            const ownerEmail = email;
 
-                            await getSupabaseForBrowser().from('Site').insert([{ wallpaperId, url, ownerEmail, plan }]);
+                            await getSupabaseForBrowser()
+                                .from('Site')
+                                .insert([{ wallpaperId, url, ownerEmail: email, plan }]);
 
-                            // !!!!!!!!!!!!! Register Ticket to help
+                            /*
+                            await getSupabaseForBrowser()
+                                .from('Tickt')
+                                .insert([
+                                    {
+                                        email,
+                                        message: spaceTrim(`
 
-                            return;
+                                        
+                                        `),
+                                    },
+                                ]);
+                            */
 
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
                         }}
