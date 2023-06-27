@@ -133,7 +133,7 @@ export function ExportModal(props: ExportModalProps) {
                                         from: email,
                                         message: spaceTrim(`
 
-                                        
+
                                         `),
                                     },
                                 ]);
