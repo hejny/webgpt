@@ -17,9 +17,19 @@ interface ExportModalProps {}
 
 const ExportSystem = {
     STATIC: 'Static',
-    PHP: 'PHP',
+
     WORDPRESS: 'WordPress',
-    OTHER: 'Other/Custom/Not sure',
+    WIX: 'Wix',
+    SQUARESPACE: 'Squarespace',
+    WEBFLOW: 'Webflow',
+    SHOPIFY: 'Shopify',
+
+    PHP: 'PHP',
+    NETTE: 'Nette',
+    LARAVEL: 'Laravel',
+    SYMFONY: 'Symfony',
+
+    OTHER: '🤷 Other / Custom / Not sure',
 } as const;
 
 const ExportPlan = {
@@ -88,7 +98,7 @@ export function ExportModal(props: ExportModalProps) {
                         value={system}
                         onChange={(newSystem) => setSystem(newSystem)}
                         options={ExportSystem}
-                        visibleButtons={Infinity}
+                        visibleButtons={1}
                     />
                 </label>
                 <label className={styles.setting}>
