@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
+import { isValidUuid } from '../../utils/validators/isValidUuid';
 
 async function register() {
     console.info('🔌', 'Registering your page');
@@ -9,16 +10,15 @@ async function register() {
     console.info('🔌', 'hostname', window.location.hostname);
     console.info('🔌', 'host', window.location.host);
 
-
-    // !!!!!!!!!!!!!!! supabase or register logic
     const response = await fetch(
         `${
             // @ts-ignore
             config.NEXT_PUBLIC_URL.href
-        }/api/register`,
+        }/api/register?wallpaperId=${encodeURIComponent(window.location.toString())}&url=${encodeURIComponent(
+            window.location.toString(),
+        )}`,
         {
-            method: 'POST',
-            body: JSON.stringify({ host: window.location.host }),
+            method: 'PUT',
         },
     );
     const { message } = (await response.json()) as any;
@@ -27,6 +27,12 @@ async function register() {
 }
 
 export default async function registerScriptHandler(request: NextApiRequest, response: NextApiResponse) {
+    const wallpaperId = request.query.wallpaperId;
+
+    if (!isValidUuid(wallpaperId)) {
+        return response.status(400).json({ message: 'GET param wallpaperId is not valid UUID' });
+    }
+
     return response
         .status(200)
         .setHeader('content-type', 'text/javascript')
@@ -39,10 +45,11 @@ export default async function registerScriptHandler(request: NextApiRequest, res
                         /**
                          * Note: [🔌]
                          **/
-                
+
                         (()=>{
                             
                             const config = { NEXT_PUBLIC_URL: '${NEXT_PUBLIC_URL.href}' };
+                            const wallpaperId = '${wallpaperId}';
 
                             /* not await */ register();
                 

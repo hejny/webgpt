@@ -3,9 +3,9 @@ import '@uiw/react-markdown-preview/markdown.css';
 import { useState } from 'react';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
-import { supabase } from '../../supabase';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_email } from '../../utils/typeAliases';
 import { Modal } from '../Modal/Modal';
 import { Select } from '../Select/Select';
@@ -117,16 +117,17 @@ export function ExportModal(props: ExportModalProps) {
                             }
 
                             const wallpaperId = wallpaper.id;
-                            const url = publicUrl.href;
+                            const url = publicUrl.href; /* <- TODO: [🎞] Maybe do here some URL normalization */
                             const ownerEmail = email;
 
-                            // TODO: !!! Make registration here
-                            await supabase.from('Site').insert([{ wallpaperId, url, ownerEmail, plan }]);
+                            await getSupabaseForBrowser().from('Site').insert([{ wallpaperId, url, ownerEmail, plan }]);
+
+                            // !!!!!!!!!!!!! Register Ticket to help
 
                             return;
 
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-                        }} 
+                        }}
                     >
                         <span className={styles.firstLine}>Deploy yourself</span>
                         <span className={styles.secondLine}>and download as .zip</span>

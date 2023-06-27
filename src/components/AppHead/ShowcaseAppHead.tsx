@@ -107,7 +107,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
                                 <!--     | Or register at !!!! -->
                                 <script src="${
                                     NEXT_PUBLIC_URL.href /* <- Note Here should be really used the global NEXT_PUBLIC_URL NOT publicUrl */
-                                }api/register-script" async defer></script>
+                                }api/register-script?wallpaperId=${wallpaper.id}" async defer></script>
                                 <!--------[ /Registration ]-------->
                             `,
                         ),
