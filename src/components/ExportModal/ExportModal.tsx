@@ -121,17 +121,18 @@ export function ExportModal(props: ExportModalProps) {
                             const ownerEmail = email;
 
                             // TODO: !!! Make registration here
-                            supabase.from('Site').insert([{ wallpaperId, url, ownerEmail, plan }]);
+                            await supabase.from('Site').insert([{ wallpaperId, url, ownerEmail, plan }]);
 
                             return;
 
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-                        }}
+                        }} 
                     >
                         <span className={styles.firstLine}>Deploy yourself</span>
                         <span className={styles.secondLine}>and download as .zip</span>
                     </button>
 
+                    {/*
                     <button
                         // TODO: !!!!! Remove this button and replace by need help checkbox
                         className={classNames('button', styles.button, styles.buttonWithTwoLines)}
@@ -144,12 +145,13 @@ export function ExportModal(props: ExportModalProps) {
 
                             // TODO: !!! Make registration here
 
-                            /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
+                            /* not await * / induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
                         }}
                     >
                         <span className={styles.firstLine}>Need help</span>
                         <span className={styles.secondLine}>and we will contact you</span>
                     </button>
+                    */}
                 </div>
             </div>
         </Modal>
