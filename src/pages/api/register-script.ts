@@ -14,7 +14,7 @@ async function register() {
         `${
             // @ts-ignore
             config.NEXT_PUBLIC_URL
-        }/api/register?wallpaperId=${encodeURIComponent(window.location.toString())}&url=${encodeURIComponent(
+        }api/register?wallpaperId=${encodeURIComponent(window.location.toString())}&url=${encodeURIComponent(
             window.location.toString(),
         )}`,
         {

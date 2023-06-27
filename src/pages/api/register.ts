@@ -9,6 +9,10 @@ interface RegisterResponse {
 }
 
 export default async function registerHandler(request: NextApiRequest, response: NextApiResponse<RegisterResponse>) {
+    response.setHeader('Access-Control-Allow-Origin', '*');
+    response.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
+    response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
     if (request.method !== 'PUT') {
         return response.status(400).json({ message: 'Only PUT method is allowed' });
     }
