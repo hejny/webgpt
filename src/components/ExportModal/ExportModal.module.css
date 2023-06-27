@@ -45,23 +45,6 @@
     max-width: 100%;
 }
 
-.buttonWithTwoLines {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.buttonWithTwoLines .firstLine {
-    font-style: bold;
-}
-
-.buttonWithTwoLines .secondLine {
-    font-style: italic;
-    opacity: 0.8;
-}
-
 @media only screen and (max-width: 650px) {
     .setting {
         width: calc(100% - 20px);

@@ -31,7 +31,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
     return (
         <Modal title={'Export preview'}>
             <div className={styles.settings}>
-                <div className={styles.setting}>
+                <label className={styles.setting}>
                     Your URL:&nbsp;&nbsp;
                     <input
                         onChange={(e) => {
@@ -40,9 +40,9 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                         placeholder="https://www.your-awesome-project.com/"
                         type="text"
                     />
-                </div>
+                </label>
 
-                <div className={styles.setting}>
+                <label className={styles.setting}>
                     <button
                         className={'button'}
                         disabled={publicUrl === null}
@@ -59,7 +59,7 @@ export function ExportPreviewModal(props: ExportPreviewModalProps) {
                     >
                         Download as .zip
                     </button>
-                </div>
+                </label>
             </div>
 
             <iframe src=""></iframe>

@@ -1,12 +1,14 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
 import { useState } from 'react';
+import spaceTrim from 'spacetrim';
 import { exportAsZip } from '../../export/exportAsZip';
 import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_email } from '../../utils/typeAliases';
+import { Article } from '../Article/Article';
 import { Modal } from '../Modal/Modal';
 import { Select } from '../Select/Select';
 import styles from './ExportModal.module.css';
@@ -37,11 +39,12 @@ export function ExportModal(props: ExportModalProps) {
     // const [projectName, setProjectName] = useState<string>('');
     const [system, setSystem] = useState<keyof typeof ExportSystem>('OTHER');
     const [plan, setPlan] = useState<keyof typeof ExportPlan>('FREE');
+    const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
 
     return (
         <Modal title={'Get the web'}>
             <div className={styles.settings}>
-                <div className={styles.setting}>
+                <label className={styles.setting}>
                     Your URL:&nbsp;&nbsp;
                     <input
                         className={styles.input}
@@ -53,8 +56,8 @@ export function ExportModal(props: ExportModalProps) {
                         type="text"
                     />
                     {/* * We need ... */}
-                </div>
-                <div className={styles.setting}>
+                </label>
+                <label className={styles.setting}>
                     Your Email:&nbsp;&nbsp;
                     <input
                         className={styles.input}
@@ -65,9 +68,9 @@ export function ExportModal(props: ExportModalProps) {
                         placeholder="john@smith.org"
                         type="email"
                     />
-                </div>
+                </label>
                 {/*
-                <div className={styles.setting}>
+                <label className={styles.setting}>
                     Company / project:&nbsp;&nbsp;
                     <input
                         className={styles.input}
@@ -77,9 +80,9 @@ export function ExportModal(props: ExportModalProps) {
                         }}
                         placeholder="Pineapple"
                     />
-                </div>
+                </label>
                 */}
-                <div className={styles.setting}>
+                <label className={styles.setting}>
                     <Select
                         label="System:"
                         value={system}
@@ -87,8 +90,8 @@ export function ExportModal(props: ExportModalProps) {
                         options={ExportSystem}
                         visibleButtons={Infinity}
                     />
-                </div>
-                <div className={styles.setting}>
+                </label>
+                <label className={styles.setting}>
                     <Select
                         label="Plan:"
                         value={plan}
@@ -96,19 +99,24 @@ export function ExportModal(props: ExportModalProps) {
                         options={ExportPlan}
                         visibleButtons={Infinity}
                     />
-                </div>
+                </label>
 
-                <div className={styles.setting} style={{ display: 'none' }}>
-                    <span>{publicUrl?.href}</span>
-                    <span>{email}</span>
-                    {/* <span>{projectName}</span> */}
-                    <span>{system}</span>
-                    <span>{plan}</span>
-                </div>
+                <label className={styles.setting}>
+                    <input
+                        className={styles.input}
+                        checked={isHelpNeeded}
+                        onChange={(e) => {
+                            setHelpNeeded(!isHelpNeeded);
+                        }}
+                        placeholder="john@smith.org"
+                        type="checkbox"
+                    />
+                    I need help with setting up my website
+                </label>
 
-                <div className={styles.setting}>
+                <label className={styles.setting}>
                     <button
-                        className={classNames('button', styles.button, styles.buttonWithTwoLines)}
+                        className={classNames('button', styles.button)}
                         disabled={publicUrl === null}
                         onClick={async () => {
                             if (!publicUrl) {
@@ -116,57 +124,58 @@ export function ExportModal(props: ExportModalProps) {
                                 return;
                             }
 
-                            const wallpaperId = wallpaper.id;
-                            const url = publicUrl.href; /* <- TODO: [🎞] Maybe do here some URL normalization */
-
-                            await getSupabaseForBrowser()
+                            const insertSiteResult = await getSupabaseForBrowser()
                                 .from('Site')
-                                .insert([{ wallpaperId, url, ownerEmail: email, plan }]);
-
-                            /*
-                            !!!!!
-
-                            await getSupabaseForBrowser()
-                                .from('SupportRequest')
                                 .insert([
                                     {
-                                        from: email,
-                                        message: spaceTrim(`
-
-                                        
-                                        `),
+                                        wallpaperId: wallpaper.id,
+                                        url: publicUrl.href /* <- TODO: [🎞] Maybe do here some URL normalization */,
+                                        ownerEmail: email,
+                                        plan,
                                     },
                                 ]);
-                            */
+                            console.info('⬆', { insertSiteResult });
 
-                            /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-                        }}
-                    >
-                        <span className={styles.firstLine}>Deploy yourself</span>
-                        <span className={styles.secondLine}>and download as .zip</span>
-                    </button>
+                            if (isHelpNeeded || plan === 'ADVANCED' || plan === 'ENTERPRISE' || system !== 'STATIC') {
+                                const insertSupportRequestResult = await getSupabaseForBrowser()
+                                    .from('SupportRequest')
+                                    .insert([
+                                        {
+                                            from: email,
+                                            message: spaceTrim(`
+                                                Hi,
+                                                ${
+                                                    isHelpNeeded
+                                                        ? `I need help with setting up my website.`
+                                                        : `I am interested in your ${plan} plan.`
+                                                }
 
-                    {/*
-                    <button
-                        // TODO: !!!!! Remove this button and replace by need help checkbox
-                        className={classNames('button', styles.button, styles.buttonWithTwoLines)}
-                        disabled={publicUrl === null}
-                        onClick={async () => {
-                            if (!publicUrl) {
-                                alert('Please enter your URL');
-                                return;
+                                                My URL: ${publicUrl.href}
+                                                My plan: ${plan}
+                                                My system: ${system}
+                                            `),
+                                        },
+                                    ]);
+
+                                console.info('⬆', { insertSupportRequestResult });
                             }
 
-                            // TODO: !!! Make registration here
+                            /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
 
-                            /* not await * / induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
+                            // TODO: Reset form
                         }}
                     >
-                        <span className={styles.firstLine}>Need help</span>
-                        <span className={styles.secondLine}>and we will contact you</span>
+                        <Article content="Get the web 🚀" isUsingOpenmoji />
                     </button>
-                    */}
-                </div>
+                </label>
+
+                <pre style={{ display: 'none', width: 200, height: 200, overflow: 'scroll' }}>
+                    {JSON.stringify(
+                        { wallpaperId: wallpaper.id, publicUrl, email, system, plan, isHelpNeeded },
+                        null,
+                        4,
+                    )}
+                </pre>
             </div>
         </Modal>
     );
