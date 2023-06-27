@@ -56,9 +56,9 @@ export function ExportModal(props: ExportModalProps) {
         <Modal title={'Get the web'}>
             <div className={styles.settings}>
                 <label className={styles.setting}>
-                    Your URL:&nbsp;&nbsp;
+                    <div className={styles.key}>Your URL:</div>
                     <input
-                        className={styles.input}
+                        className={styles.value}
                         defaultValue={publicUrl?.href || ''}
                         onChange={(e) => {
                             setPublicUrl(new URL(e.target.value));
@@ -69,9 +69,9 @@ export function ExportModal(props: ExportModalProps) {
                     {/* * We need ... */}
                 </label>
                 <label className={styles.setting}>
-                    Your Email:&nbsp;&nbsp;
+                    <div className={styles.key}>Your Email:</div>
                     <input
-                        className={styles.input}
+                        className={styles.value}
                         defaultValue={email}
                         onChange={(e) => {
                             setEmail(e.target.value);
@@ -82,9 +82,9 @@ export function ExportModal(props: ExportModalProps) {
                 </label>
                 {/*
                 <label className={styles.setting}>
-                    Company / project:&nbsp;&nbsp;
+                    <div className={styles.key}>Company / project:</div>
                     <input
-                        className={styles.input}
+                        className={styles.value}
                         defaultValue={projectName}
                         onChange={(e) => {
                             setProjectName(e.target.value);
@@ -94,8 +94,10 @@ export function ExportModal(props: ExportModalProps) {
                 </label>
                 */}
                 <label className={styles.setting}>
+                    <div className={styles.key}>System:</div>
                     <Select
-                        label="System:"
+                        className={styles.value}
+                        label=""
                         value={system}
                         onChange={(newSystem) => setSystem(newSystem)}
                         options={ExportSystem}
@@ -103,22 +105,26 @@ export function ExportModal(props: ExportModalProps) {
                     />
                 </label>
                 <label className={styles.setting}>
-                    <Select
-                        label="Plan:"
-                        value={plan}
-                        onChange={(newPlan) => setPlan(newPlan)}
-                        options={ExportPlan}
-                        visibleButtons={Infinity}
-                    />
+                    <div className={styles.key}>Plan:</div>
+                    <div>
+                        <Select
+                            className={styles.value}
+                            label=""
+                            value={plan}
+                            onChange={(newPlan) => setPlan(newPlan)}
+                            options={ExportPlan}
+                            visibleButtons={Infinity}
+                        />
 
-                    <Link href="https://ai.hejny.org/pricing" target={'_blank'}>
-                        More info about plans
-                    </Link>
+                        <Link href="https://ai.hejny.org/pricing" target={'_blank'} className={styles.more}>
+                            More info about plans
+                        </Link>
+                    </div>
                 </label>
 
                 <label className={styles.setting}>
                     <input
-                        className={styles.input}
+                        className={styles.value}
                         checked={isHelpNeeded}
                         onChange={(e) => {
                             setHelpNeeded(!isHelpNeeded);
