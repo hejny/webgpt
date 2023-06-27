@@ -13,6 +13,10 @@ export default async function registerHandler(request: NextApiRequest, response:
     response.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
     response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
+    if (request.method === 'OPTIONS') {
+        return response.status(200).end();
+    }
+
     if (request.method !== 'PUT') {
         return response.status(400).json({ message: 'Only PUT method is allowed' });
     }
