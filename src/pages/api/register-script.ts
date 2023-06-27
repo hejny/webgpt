@@ -47,16 +47,16 @@ export default async function registerScriptHandler(request: NextApiRequest, res
                          **/
 
                         (()=>{
-                            
+
                             const config = { NEXT_PUBLIC_URL: '${NEXT_PUBLIC_URL.href}' };
                             const wallpaperId = '${wallpaperId}';
 
                             /* not await */ register();
-                
+
                             ${block(register.toString())}
 
                         })();
-                    
+
                     `,
                 ),
             ),
