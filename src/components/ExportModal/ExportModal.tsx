@@ -126,7 +126,7 @@ export function ExportModal(props: ExportModalProps) {
                             return;
 
                             /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-                        }} 
+                        }}
                     >
                         <span className={styles.firstLine}>Deploy yourself</span>
                         <span className={styles.secondLine}>and download as .zip</span>

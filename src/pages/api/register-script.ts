@@ -39,17 +39,17 @@ export default async function registerScriptHandler(request: NextApiRequest, res
                         /**
                          * Note: [🔌]
                          **/
-                
+
                         (()=>{
-                            
+
                             const config = { NEXT_PUBLIC_URL: '${NEXT_PUBLIC_URL.href}' };
 
                             /* not await */ register();
-                
+
                             ${block(register.toString())}
 
                         })();
-                    
+
                     `,
                 ),
             ),
