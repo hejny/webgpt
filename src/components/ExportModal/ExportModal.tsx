@@ -124,11 +124,13 @@ export function ExportModal(props: ExportModalProps) {
                                 .insert([{ wallpaperId, url, ownerEmail: email, plan }]);
 
                             /*
+                            !!!!!
+
                             await getSupabaseForBrowser()
-                                .from('Tickt')
+                                .from('SupportRequest')
                                 .insert([
                                     {
-                                        email,
+                                        from: email,
                                         message: spaceTrim(`
 
                                         
