@@ -1,5 +1,6 @@
 import '@uiw/react-markdown-editor/markdown-editor.css';
 import '@uiw/react-markdown-preview/markdown.css';
+import Link from 'next/link';
 import { useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { exportAsZip } from '../../export/exportAsZip';
@@ -47,8 +48,8 @@ export function ExportModal(props: ExportModalProps) {
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const [email, setEmail] = useState<string_email>('');
     // const [projectName, setProjectName] = useState<string>('');
-    const [system, setSystem] = useState<keyof typeof ExportSystem>('OTHER');
-    const [plan, setPlan] = useState<keyof typeof ExportPlan>('FREE');
+    const [system, setSystem] = useState<keyof typeof ExportSystem>('STATIC');
+    const [plan, setPlan] = useState<keyof typeof ExportPlan>('SIMPLE');
     const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
 
     return (
@@ -109,6 +110,10 @@ export function ExportModal(props: ExportModalProps) {
                         options={ExportPlan}
                         visibleButtons={Infinity}
                     />
+
+                    <Link href="https://ai.hejny.org/pricing" target={'_blank'}>
+                        More info about plans
+                    </Link>
                 </label>
 
                 <label className={styles.setting}>
