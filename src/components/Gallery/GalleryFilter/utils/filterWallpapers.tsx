@@ -1,3 +1,4 @@
+import { parseKeywordsFromString } from 'n12';
 import { DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../../config';
 import { Color } from '../../../../utils/color/Color';
 import { colorDistanceSquared } from '../../../../utils/color/utils/colorDistance';
@@ -24,7 +25,30 @@ export function filterWallpapers(
         // TODO: !!! Search in tags, content, title,...
         // TODO: [🔎] Search through keywords @see https://ibb.co/2Fy7kN4
 
-        wallpapers = wallpapers.filter((wallpaper) => wallpaper.prompt.toLowerCase().includes(fulltext.toLowerCase()));
+        /*
+        for (const wallpaper of wallpapers) {
+            if (wallpaper.keywords) {
+                continue;
+            }
+
+            wallpaper.keywords = parseKeywordsFromWallpaper(wallpaper);
+            
+            if (isLogged) {
+                console.info('🔎', wallpaper.id, wallpaper.keywords);
+            }
+            
+        }
+        */
+
+        const searchKeywords = parseKeywordsFromString(fulltext);
+
+        if (isLogged) {
+            console.info('🔎', { searchKeywords });
+        }
+
+        wallpapers = wallpapers.filter((wallpaper) =>
+            wallpaper.keywords.some((keyword) => searchKeywords.has(keyword)),
+        );
         if (isLogged) {
             console.info('🔎', 'After fulltext: ', wallpapers);
         }

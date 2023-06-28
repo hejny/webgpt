@@ -7,6 +7,7 @@ import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { IWallpaper } from '../../src/utils/IWallpaper';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { GallerySection } from '../components/Gallery/Gallery';
+import { parseKeywordsFromWallpaper } from '../components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import styles from '../styles/static.module.css';
 import { classNames } from '../utils/classNames';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
@@ -70,6 +71,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
                     // TODO: shapeStats> IWallpaperShapeStats;
                     title,
                     content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
+                    keywords: Array.from(parseKeywordsFromWallpaper(fullWallpaper)),
                 } satisfies IWallpaper;
             }),
         },

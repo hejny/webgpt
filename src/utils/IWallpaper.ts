@@ -1,3 +1,4 @@
+import { string_keyword } from 'n12';
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
 import { string_url, string_wallpaper_id } from './typeAliases';
@@ -17,6 +18,11 @@ export interface IWallpaper {
     title: string /* <- Note: This is just derrived */;
     content: string /*_markdown*/;
     // TODO: isTile + some mechanism to add additional metadata
+
+    /**
+     * Note: Not using IKewords because Set is not serializable
+     */
+    keywords: Array<string_keyword> /* <- Note: This is just derrived */;
 }
 
 export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
