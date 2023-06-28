@@ -30,3 +30,7 @@ export function getDomainStatusFromWhois(whois: typeof WhoisSearchResult): keyof
 
     return 'AVAILABLE';
 }
+
+/**
+ * TODO: This should be ERROR: {"nonce":0,"whois":{"whois.verisign-grs.com":{"error":"getaddrinfo ENOTFOUND whois.verisign-grs.com"}}}
+ */
