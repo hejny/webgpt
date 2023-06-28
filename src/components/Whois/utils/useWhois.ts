@@ -23,7 +23,7 @@ export function useWhois(
 
     const whoisPromise = useMemo(
         () =>
-            new Promise(async (resolve) => {
+            new Promise<typeof WhoisSearchResult>(async (resolve) => {
                 const key = `whois${normalizeTo_PascalCase(domain)}`;
                 const itemAsString = window.localStorage.getItem(key);
 
