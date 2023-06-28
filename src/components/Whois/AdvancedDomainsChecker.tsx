@@ -19,6 +19,8 @@ export function AdvancedDomainsChecker(props: AdvancedDomainsCheckerProps) {
     );
 
     const domains = nameCombinations.flatMap((name) => tdls.map((tdl) => `${name}.${tdl}`));
+    const uniqueDomains = [...new Set(domains)];
+    const sortedDomains = uniqueDomains.sort((a, b) => a.length - b.length);
 
     return (
         <div className={styles.AdvancedDomainsChecker}>
@@ -45,7 +47,7 @@ export function AdvancedDomainsChecker(props: AdvancedDomainsCheckerProps) {
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 
-            <WhoisDomains {...{ domains }} />
+            <WhoisDomains domains={sortedDomains} />
         </div>
     );
 }

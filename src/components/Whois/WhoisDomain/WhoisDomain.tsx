@@ -1,9 +1,7 @@
 import Link from 'next/link';
-import { useMemo, useState } from 'react';
-import type WhoisSearchResult from 'whoiser' /* <- TODO: There should be probbably "import { type WhoisSearchResult } from 'whoiser' " */;
-import { usePromise } from '../../../utils/hooks/usePromise';
+import { useState } from 'react';
 import { string_domain } from '../../../utils/typeAliases';
-import { getDomainStatusFromWhois } from '../utils/getDomainStatusFromWhois';
+import { useWhois } from '../utils/useWhois';
 import styles from './WhoisDomain.module.css';
 
 interface WhoisDomainProps {
@@ -16,18 +14,10 @@ interface WhoisDomainProps {
 export function WhoisDomain(props: WhoisDomainProps) {
     let { domain } = props;
 
-    domain = domain.trim().toLowerCase();
+    domain = domain.trim().toLowerCase().split(' ').join('-');
 
     const [nonce, setNonce] = useState(0);
-    const whoisPromise = useMemo(
-        () =>
-            /* not await */ fetch(`/api/whois?domain=${domain}&version=${nonce}`)
-                .then((response) => response.json() as unknown as { result: typeof WhoisSearchResult })
-                .then(({ result }) => result),
-        [domain, nonce],
-    );
-    const { isComplete, value: whois } = usePromise(whoisPromise);
-    const domainStatus = !isComplete ? 'PENDING' : getDomainStatusFromWhois(whois!);
+    const { domainStatus, whois } = useWhois(domain, nonce);
 
     return (
         <div onClick={() => console.info(whois)}>
