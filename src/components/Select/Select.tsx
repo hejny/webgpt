@@ -39,14 +39,23 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 
             {restOptions.length !== 0 && (
                 <select
-                    onChange={(event) => void onChange(restOptions[parseInt(event.target.value)].id)}
+                    onChange={(event) => {
+                        const i = parseInt(event.target.value);
+
+                        if (i === -1) {
+                            return;
+                        }
+
+                        onChange(restOptions[i].id);
+                    }}
                     className={classNames(!firstOptions.some(({ id }) => id === value) && styles.selected)}
                     value={
                         firstOptions.some(({ id }) => id === value)
-                            ? undefined
+                            ? 'FIRST_EMPTY_SELECT_VALUE'
                             : restOptions.findIndex(({ id }) => id === value)
                     }
                 >
+                    <option value={-1}>--- Select ---</option>
                     {restOptions.map((option, i) => (
                         <option key={i} value={i}>
                             {option.label}
