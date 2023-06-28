@@ -27,10 +27,18 @@ export function GallerySection(props: SampleProps) {
         setFilter({ ...filter, order: 'RANDOM' });
     });
 
+    const currentWallpapers = Object.values(wallpapers).map((wallpaperSubject) => wallpaperSubject.value);
     const filteredWallpapers = filterWallpapers(
-        Object.values(wallpapers).map((wallpaperSubject) => wallpaperSubject.value),
+        currentWallpapers,
         filter,
+        false,
     ); /* <- TODO: !!! Cache (memoize) + Do async */
+
+    if (filteredWallpapers.length === 0) {
+        console.groupCollapsed('🔎', 'Nothing found, so logging the reason: ');
+        filterWallpapers(currentWallpapers, filter, true);
+        console.groupEnd();
+    }
 
     return (
         <>

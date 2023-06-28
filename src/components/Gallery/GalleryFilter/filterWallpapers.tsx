@@ -4,10 +4,18 @@ import { colorDistanceSquared } from '../../../utils/color/utils/colorDistance';
 import { IWallpaper } from '../../../utils/IWallpaper';
 import { GalleryFilter } from './GalleryFilter';
 
-export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryFilter): Array<IWallpaper> {
+export function filterWallpapers(
+    wallpapers: Array<IWallpaper>,
+    filter: GalleryFilter,
+    isLogged = false,
+): Array<IWallpaper> {
     // console.log('filterWallpapers');
 
     const { fulltext, color, likedStatus, limit, order } = filter;
+
+    if (isLogged) {
+        console.info('🔎', 'Starting with: ', wallpapers);
+    }
 
     // debugger;
 
@@ -15,7 +23,11 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
         // TODO: !!! Normalize words
         // TODO: !!! Search in tags, content, title,...
         // TODO: [🔎] Search through keywords @see https://ibb.co/2Fy7kN4
+
         wallpapers = wallpapers.filter((wallpaper) => wallpaper.prompt.toLowerCase().includes(fulltext.toLowerCase()));
+        if (isLogged) {
+            console.info('🔎', 'After fulltext: ', wallpapers);
+        }
     }
 
     if (color) {
@@ -31,6 +43,10 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
                     color,
                 ) <= treasholdSquared,
         );
+
+        if (isLogged) {
+            console.info('🔎', 'After color: ', wallpapers);
+        }
     }
 
     if (likedStatus !== 'ALL') {
@@ -51,6 +67,10 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
                 (wallpaper) => !localStorageWallpapersLikedStatuses[`likedStatus_${wallpaper.id}`],
             );
         }
+
+        if (isLogged) {
+            console.info('🔎', 'After likedStatus: ', wallpapers);
+        }
     }
 
     if (order === 'ASCENDING' || order === 'DESCENDING') {
@@ -66,6 +86,10 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
             // Note: .reverse method is mutating array so no need to assign it back
             wallpapers.reverse();
         }
+
+        if (isLogged) {
+            console.info('🔎', 'After ASC/DESC sorting: ', wallpapers);
+        }
     } else if (order === 'RANDOM') {
         // Note: .sort method is mutating array so making a copy before if not copyed already
         //if (!fulltext && !color && !likedStatus) {
@@ -74,10 +98,17 @@ export function filterWallpapers(wallpapers: Array<IWallpaper>, filter: GalleryF
 
         // Note: .sort method is mutating array so no need to assign it back
         wallpapers.sort(() => Math.random() - 0.5);
+
+        if (isLogged) {
+            console.info('🔎', 'After random sorting: ', wallpapers);
+        }
     }
 
     if (limit < Infinity) {
         wallpapers = wallpapers.slice(0, limit);
+        if (isLogged) {
+            console.info('🔎', 'After limit: ', wallpapers);
+        }
     }
 
     return wallpapers;
