@@ -3,6 +3,7 @@ import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
 import { COLORSTATS_DEFAULT_COMPUTE, LIMIT_WALLPAPER_COUNT, LIMIT_WALLPAPER_EXCLUDE } from '../../../config';
+import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
 import { isFileExisting } from '../../utils/isFileExisting';
@@ -102,6 +103,8 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
         const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
         const prompt = metadata!.prompt;
 
+        const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
+
         wallpapers.push({
             id,
             src,
@@ -112,6 +115,7 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             metadataFilePath,
             colorStatsFilePath,
             contentFilePath,
+            keywords,
         } as IWallpaper);
     }
 
