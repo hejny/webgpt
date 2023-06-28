@@ -35,8 +35,8 @@
     height: 45px;
     aspect-ratio: 1 / 1;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
 
     border-radius: 5px;

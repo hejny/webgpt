@@ -6,8 +6,8 @@
     height: 1em;
 
     display: grid;
-    justify-content: center;
     align-items: start;
+    justify-content: center;
     grid-template: '🟦';
 }
 
