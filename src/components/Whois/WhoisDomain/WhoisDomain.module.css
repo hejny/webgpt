@@ -1,17 +1,21 @@
-.pending {
+.whois .pending {
     color: #888888;
 }
 
-.available {
+.whois .available {
     color: #0bee57;
 }
 
-.registered {
+.whois .registered {
     color: #dd1b1b;
 }
 
-.unknown {
+.whois .unknown {
     color: #888888;
+}
+
+.whois span b {
+    color: inherit;
 }
 
 .action {

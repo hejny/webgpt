@@ -2,6 +2,7 @@ import { useState } from 'react';
 import spaceTrim from 'spacetrim';
 import { string_domain, string_tdl } from '../../utils/typeAliases';
 import styles from './AdvancedDomainsChecker.module.css';
+import { createAllPermutationsOf } from './utils/createAllPermutationsOf';
 import { createAllSubsetsOf } from './utils/createAllSubsetsOf';
 import { WhoisDomains } from './WhoisDomains/WhoisDomains';
 
@@ -11,10 +12,13 @@ interface AdvancedDomainsCheckerProps {}
  * @@
  */
 export function AdvancedDomainsChecker(props: AdvancedDomainsCheckerProps) {
-    const [names, setNames] = useState<Array<string_domain>>(['my', 'cool', 'project']);
-    const [tdls, setTdls] = useState<Array<string_tdl>>(['com', 'org', 'io', 'net', 'cz']);
+    const [names, setNames] = useState<Array<string_domain>>(['ai', 'project']);
+    const [tdls, setTdls] = useState<Array<string_tdl>>(['com', /*'org', 'io', 'net',*/ 'cz']);
 
-    const nameCombinations = createAllSubsetsOf(...names).flatMap((subset) =>
+    const namePartsCombinations = createAllSubsetsOf(...names);
+    const namePartsPermutations = namePartsCombinations.flatMap((subset) => createAllPermutationsOf(...subset));
+
+    const nameCombinations = namePartsPermutations.flatMap((subset) =>
         subset.length === 0 ? [] : [subset.join('') /*, subset.join('-')*/],
     );
 

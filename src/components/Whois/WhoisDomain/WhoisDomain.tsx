@@ -20,29 +20,33 @@ export function WhoisDomain(props: WhoisDomainProps) {
     const { domainStatus, whois } = useWhois(domain, nonce);
 
     return (
-        <div onClick={() => console.info(whois)}>
+        <div onClick={() => console.info(whois)}  className={styles.whois}>
             {
                 {
                     PENDING: (
                         <span className={styles.pending}>
-                            Getting whois about <b>{domain}</b>
+                            <b>{domain}</b>: Getting whois info...
                         </span>
                     ),
                     AVAILABLE: (
                         <span className={styles.available}>
-                            Domain <b>{domain}</b> is available for registration
+                            <b>{domain}</b> is available for registration
                         </span>
                     ),
                     REGISTERED: (
                         <span className={styles.registered}>
-                            Domain <b>{domain}</b> is already registered
+                            <b>{domain}</b> is already registered
                         </span>
                     ),
-                    LIMIT: <span className={styles.unknown}>Exceeded limit for whois lookups</span>,
+                    LIMIT: (
+                        <span className={styles.unknown}>
+                            <b>{domain}</b> exceeded limit for whois lookups
+                        </span>
+                    ),
                     // TODO: TIMEOUT: <span className={styles.unknown}>Timeout in whois lookup</span>,
                     UNKNOWN: (
                         <span className={styles.unknown}>
-                            Domain status of <b>{domain}</b> is unknown
+                            <b>{domain}</b> status is unknown
                         </span>
                     ),
                 }[domainStatus]
