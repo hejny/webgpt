@@ -1,15 +1,16 @@
 import { createAllSubsetsOf } from './createAllSubsetsOf';
+import { describe, expect, it } from '@jest/globals';
 
-describe(`permutations`, () => {
-    it(`permutates an empty array`, () => {
+describe(`subsets`, () => {
+    it(`subsets an empty array`, () => {
         expect(createAllSubsetsOf()).toEqual([[]]);
     });
 
-    it(`permutates single-member array`, () => {
+    it(`subsets single-member array`, () => {
         expect(createAllSubsetsOf(1)).toEqual([[], [1]]);
     });
 
-    it(`permutates two-member array`, () => {
+    it(`subsets two-member array`, () => {
         expect(createAllSubsetsOf(1, 2)).toEqual([[], [1], [2], [1, 2]]);
     });
 
