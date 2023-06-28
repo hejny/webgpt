@@ -9,9 +9,11 @@ import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_email } from '../../utils/typeAliases';
+import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { Article } from '../Article/Article';
 import { Modal } from '../Modal/Modal';
 import { Select } from '../Select/Select';
+import stylesForSelect from '../Select/Select.module.css';
 import styles from './ExportModal.module.css';
 
 interface ExportModalProps {}
@@ -46,32 +48,113 @@ const ExportPlan = {
 export function ExportModal(props: ExportModalProps) {
     const wallpaper = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
+    const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
     const [email, setEmail] = useState<string_email>('');
     // const [projectName, setProjectName] = useState<string>('');
     const [system, setSystem] = useState<keyof typeof ExportSystem>('STATIC');
     const [plan, setPlan] = useState<keyof typeof ExportPlan>('SIMPLE');
     const [isHelpNeeded, setHelpNeeded] = useState<boolean>(false);
 
+    const isFormComplete = Boolean((publicUrl !== null || isUrlUnsure) && email);
+
     return (
         <Modal title={'Get the web'}>
-            <div className={styles.settings}>
+            <form
+                className={styles.settings}
+                onSubmit={async (event) => {
+                    event.preventDefault();
+
+                    const insertSiteResult = await getSupabaseForBrowser()
+                        .from('Site')
+                        .insert([
+                            {
+                                wallpaperId: wallpaper.id,
+                                url: (publicUrl || new URL(`https://app.ai.hejny.org/showcase/${wallpaper.id}}`))
+                                    .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
+                                ownerEmail: email,
+                                plan,
+                            },
+                        ]);
+                    console.info('⬆', { insertSiteResult });
+
+                    if (
+                        isHelpNeeded ||
+                        isUrlUnsure ||
+                        plan === 'ADVANCED' ||
+                        plan === 'ENTERPRISE' ||
+                        system !== 'STATIC'
+                    ) {
+                        const insertSupportRequestResult = await getSupabaseForBrowser()
+                            .from('SupportRequest')
+                            .insert([
+                                {
+                                    from: email,
+                                    message: spaceTrim(`
+                                 Hi,
+                                 ${
+                                     isHelpNeeded
+                                         ? `I need help with setting up my website.`
+                                         : `I am interested in your ${plan} plan.`
+                                 }
+                                 ${!isUrlUnsure ? `` : `I am not sure about my URL.`}
+
+                                 ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
+                                 My plan: ${plan}
+                                 My system: ${system}
+                             `),
+                                },
+                            ]);
+
+                        console.info('⬆', { insertSupportRequestResult });
+                    }
+
+                    /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
+
+                    // TODO: Reset form
+                }}
+            >
                 <label className={styles.setting}>
-                    <div className={styles.key}>Your URL:</div>
+                    <div className={styles.key}>Site url:</div>
                     <input
-                        className={styles.value}
+                        className={classNames(styles.value, stylesForSelect.option)}
+                        disabled={isUrlUnsure}
+                        required={!isUrlUnsure}
                         defaultValue={publicUrl?.href || ''}
                         onChange={(e) => {
-                            setPublicUrl(new URL(e.target.value));
+                            const value = e.target.value;
+
+                            if (isValidUrl(value)) {
+                                return;
+                            }
+
+                            setPublicUrl(new URL(value));
                         }}
                         placeholder="https://www.your-awesome-project.com/"
                         type="text"
+                        title="Enter a valid website url like https://www.your-awesome-project.com/"
+                        pattern="https?://.*"
                     />
                     {/* * We need ... */}
+
+                    <label className={styles.extra}>
+                        <input
+                            className={classNames(styles.value, stylesForSelect.option)}
+                            checked={isUrlUnsure}
+                            onChange={(e) => {
+                                setUrlUnsure(!isUrlUnsure);
+                            }}
+                            placeholder="john@smith.org"
+                            type="checkbox"
+                        />
+                        I am not sure about the url
+                    </label>
                 </label>
+
                 <label className={styles.setting}>
                     <div className={styles.key}>Your Email:</div>
                     <input
-                        className={styles.value}
+                        className={classNames(styles.value, stylesForSelect.option)}
+                        required
                         defaultValue={email}
                         onChange={(e) => {
                             setEmail(e.target.value);
@@ -84,7 +167,7 @@ export function ExportModal(props: ExportModalProps) {
                 <label className={styles.setting}>
                     <div className={styles.key}>Company / project:</div>
                     <input
-                        className={styles.value}
+                        className={classNames(styles.value, stylesForSelect.option)}
                         defaultValue={projectName}
                         onChange={(e) => {
                             setProjectName(e.target.value);
@@ -106,25 +189,24 @@ export function ExportModal(props: ExportModalProps) {
                 </label>
                 <label className={styles.setting}>
                     <div className={styles.key}>Plan:</div>
-                    <div>
-                        <Select
-                            className={styles.value}
-                            label=""
-                            value={plan}
-                            onChange={(newPlan) => setPlan(newPlan)}
-                            options={ExportPlan}
-                            visibleButtons={Infinity}
-                        />
 
-                        <Link href="https://ai.hejny.org/pricing" target={'_blank'} className={styles.more}>
-                            More info about plans
-                        </Link>
-                    </div>
+                    <Select
+                        className={styles.value}
+                        label=""
+                        value={plan}
+                        onChange={(newPlan) => setPlan(newPlan)}
+                        options={ExportPlan}
+                        visibleButtons={Infinity}
+                    />
+
+                    <Link href="https://ai.hejny.org/pricing" target={'_blank'} className={styles.extra}>
+                        More info about plans
+                    </Link>
                 </label>
 
                 <label className={styles.setting}>
                     <input
-                        className={styles.value}
+                        className={classNames(styles.value, stylesForSelect.option)}
                         checked={isHelpNeeded}
                         onChange={(e) => {
                             setHelpNeeded(!isHelpNeeded);
@@ -135,56 +217,17 @@ export function ExportModal(props: ExportModalProps) {
                     I need help with setting up my website
                 </label>
 
-                <label className={styles.setting}>
+                <label className={classNames(styles.setting, styles.settingCentered)}>
                     <button
-                        className={classNames('button', styles.button)}
-                        disabled={publicUrl === null}
-                        onClick={async () => {
-                            if (!publicUrl) {
-                                alert('Please enter your URL');
-                                return;
-                            }
-
-                            const insertSiteResult = await getSupabaseForBrowser()
-                                .from('Site')
-                                .insert([
-                                    {
-                                        wallpaperId: wallpaper.id,
-                                        url: publicUrl.href /* <- TODO: [🎞] Maybe do here some URL normalization */,
-                                        ownerEmail: email,
-                                        plan,
-                                    },
-                                ]);
-                            console.info('⬆', { insertSiteResult });
-
-                            if (isHelpNeeded || plan === 'ADVANCED' || plan === 'ENTERPRISE' || system !== 'STATIC') {
-                                const insertSupportRequestResult = await getSupabaseForBrowser()
-                                    .from('SupportRequest')
-                                    .insert([
-                                        {
-                                            from: email,
-                                            message: spaceTrim(`
-                                                Hi,
-                                                ${
-                                                    isHelpNeeded
-                                                        ? `I need help with setting up my website.`
-                                                        : `I am interested in your ${plan} plan.`
-                                                }
-
-                                                My URL: ${publicUrl.href}
-                                                My plan: ${plan}
-                                                My system: ${system}
-                                            `),
-                                        },
-                                    ]);
-
-                                console.info('⬆', { insertSupportRequestResult });
-                            }
-
-                            /* not await */ induceFileDownload(await exportAsZip(wallpaper, { publicUrl }));
-
-                            // TODO: Reset form
+                        className={classNames('button', styles.getTheWeb)}
+                        style={{
+                            background: `url(${wallpaper.src})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
                         }}
+                        // disabled={!isFormComplete}
+                        type="submit"
                     >
                         <Article content="Get the web 🚀" isUsingOpenmoji />
                     </button>
@@ -197,7 +240,7 @@ export function ExportModal(props: ExportModalProps) {
                         4,
                     )}
                 </pre>
-            </div>
+            </form>
         </Modal>
     );
 }
