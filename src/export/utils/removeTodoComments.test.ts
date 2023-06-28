@@ -43,7 +43,7 @@ describe('removeTodoComments', () => {
                         </head>
                         <body>
                             <h1>Hello world</h1>
-
+                            ${``}
                         </body>
                     </html>
                 `),
@@ -84,7 +84,7 @@ describe('removeTodoComments', () => {
                             body {
                                 color: red;
                             }
-
+                            ${``}
                         <style>
                     </body>
                 </html>
