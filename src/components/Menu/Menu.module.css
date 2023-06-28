@@ -117,9 +117,8 @@ nav.MenuContent li:hover {
     overflow: clip;
 
     display: flex;
-    align-items: flex-start;
     justify-content: flex-start;
-
+    align-items: flex-start;
 }
 
 .MenuBg {
