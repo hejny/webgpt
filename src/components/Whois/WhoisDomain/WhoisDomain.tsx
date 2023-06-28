@@ -14,7 +14,9 @@ interface WhoisDomainProps {
  * @@
  */
 export function WhoisDomain(props: WhoisDomainProps) {
-    const { domain } = props;
+    let { domain } = props;
+
+    domain = domain.trim().toLowerCase();
 
     const [nonce, setNonce] = useState(0);
     const whoisPromise = useMemo(
