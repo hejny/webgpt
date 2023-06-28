@@ -41,9 +41,14 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
                 <select
                     onChange={(event) => void onChange(restOptions[parseInt(event.target.value)].id)}
                     className={classNames(!firstOptions.some(({ id }) => id === value) && styles.selected)}
+                    value={
+                        firstOptions.some(({ id }) => id === value)
+                            ? undefined
+                            : restOptions.findIndex(({ id }) => id === value)
+                    }
                 >
                     {restOptions.map((option, i) => (
-                        <option key={i} selected={value === option.id} value={i}>
+                        <option key={i} value={i}>
                             {option.label}
                         </option>
                     ))}
@@ -52,5 +57,3 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
         </div>
     );
 }
-
-// !!! Warning: Use the `defaultValue` or `value` props on <select> instead of setting `selected` on <option>.
