@@ -4,9 +4,9 @@ import { useContext, useState } from 'react';
 import { useInitial } from '../../utils/hooks/useInitial';
 import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
 import styles from './Gallery.module.css';
-import { filterWallpapers } from './GalleryFilter/filterWallpapers';
 import { GalleryFilter } from './GalleryFilter/GalleryFilter';
 import { GalleryFilterInput } from './GalleryFilter/GalleryFilterInput';
+import { filterWallpapers } from './GalleryFilter/utils/filterWallpapers';
 
 interface SampleProps {}
 

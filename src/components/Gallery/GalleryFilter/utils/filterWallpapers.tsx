@@ -1,8 +1,8 @@
-import { DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../config';
-import { Color } from '../../../utils/color/Color';
-import { colorDistanceSquared } from '../../../utils/color/utils/colorDistance';
-import { IWallpaper } from '../../../utils/IWallpaper';
-import { GalleryFilter } from './GalleryFilter';
+import { DIFFERENT_COLOR_DISTANCE_THEASHOLD_RATIO } from '../../../../../config';
+import { Color } from '../../../../utils/color/Color';
+import { colorDistanceSquared } from '../../../../utils/color/utils/colorDistance';
+import { IWallpaper } from '../../../../utils/IWallpaper';
+import { GalleryFilter } from '../GalleryFilter';
 
 export function filterWallpapers(
     wallpapers: Array<IWallpaper>,
