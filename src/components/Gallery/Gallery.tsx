@@ -70,6 +70,7 @@ export function GallerySection(props: SampleProps) {
                                 </Link>
                             ))
                         }
+                        {filteredWallpapers.length === 0 && <div className={styles.nothingFound}>Nothing found</div>}
                     </div>
                 </div>
             </div>
@@ -79,4 +80,5 @@ export function GallerySection(props: SampleProps) {
 
 /**
  * TODO: Serialize filters to URL via router not here as state
+ * TODO: Give some more usefull information then "Nothing found"
  */
