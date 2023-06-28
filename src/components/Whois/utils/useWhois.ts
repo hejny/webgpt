@@ -1,3 +1,4 @@
+import { normalizeTo_PascalCase } from 'n12';
 import { useMemo } from 'react';
 import type WhoisSearchResult from 'whoiser' /* <- TODO: There should be probbably "import { type WhoisSearchResult } from 'whoiser' " */;
 import { usePromise } from '../../../utils/hooks/usePromise';
@@ -22,9 +23,25 @@ export function useWhois(
 
     const whoisPromise = useMemo(
         () =>
-            /* not await */ fetch(`/api/whois?domain=${domain}&version=${nonce}`)
-                .then((response) => response.json() as unknown as { result: typeof WhoisSearchResult })
-                .then(({ result }) => result),
+            new Promise(async (resolve) => {
+                const key = `whois${normalizeTo_PascalCase(domain)}`;
+                const itemAsString = window.localStorage.getItem(key);
+
+                if (itemAsString) {
+                    const item = JSON.parse(itemAsString) as { nonce: number; whois: typeof WhoisSearchResult };
+
+                    if (item.nonce === nonce) {
+                        return resolve(item.whois);
+                    }
+                }
+
+                const response = await fetch(`/api/whois?domain=${domain}&version=${nonce}`);
+                const body = (await response.json()) as { result: typeof WhoisSearchResult };
+
+                window.localStorage.setItem(key, JSON.stringify({ nonce, whois: body.result }));
+
+                return resolve(body.result);
+            }),
         [domain, nonce],
     );
     const { value: whois } = usePromise(whoisPromise);

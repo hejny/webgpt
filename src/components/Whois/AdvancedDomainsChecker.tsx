@@ -43,7 +43,7 @@ export function AdvancedDomainsChecker(props: AdvancedDomainsCheckerProps) {
                 />
             </div>
 
-            {/**/}
+            {/*/}
             <pre>{JSON.stringify({ names, tdls }, null, 4)}</pre>
             {/**/}
 

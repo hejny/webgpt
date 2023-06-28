@@ -48,7 +48,7 @@ export function WhoisDomain(props: WhoisDomainProps) {
                 }[domainStatus]
             }
 
-            <button className={styles.action} onClick={() => setNonce(nonce + 1)}>
+            <button style={{ cursor: 'pointer' }} className={styles.action} onClick={() => setNonce(nonce + 1)}>
                 Refresh
             </button>
 
