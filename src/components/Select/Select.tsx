@@ -29,9 +29,9 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 
             {firstOptions.map((option) => (
                 <button
+                    className={classNames(styles.option, value === option.id && styles.selected)}
                     key={(option.id === null ? 'null' : option.id === undefined ? 'undefined' : option.id).toString()}
                     onClick={() => void onChange(option.id)}
-                    className={classNames(styles.option, value === option.id && styles.selected)}
                 >
                     {option.label}
                 </button>
@@ -39,6 +39,10 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 
             {restOptions.length !== 0 && (
                 <select
+                    className={classNames(
+                        styles.option,
+                        !firstOptions.some(({ id }) => id === value) && styles.selected,
+                    )}
                     onChange={(event) => {
                         const i = parseInt(event.target.value);
 
@@ -48,7 +52,6 @@ export function Select<TValue extends string | number | symbol>(props: SelectPro
 
                         onChange(restOptions[i].id);
                     }}
-                    className={classNames(!firstOptions.some(({ id }) => id === value) && styles.selected)}
                     value={
                         firstOptions.some(({ id }) => id === value)
                             ? 'FIRST_EMPTY_SELECT_VALUE'
