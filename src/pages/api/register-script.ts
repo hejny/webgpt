@@ -2,9 +2,10 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
+import { string_uuid } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
-async function register() {
+async function register(wallpaperId: string_uuid) {
     console.info('🔌', 'Registering your page');
 
     console.info('🔌', 'hostname', window.location.hostname);
@@ -14,16 +15,14 @@ async function register() {
         `${
             // @ts-ignore
             config.NEXT_PUBLIC_URL
-        }api/register?wallpaperId=${encodeURIComponent(window.location.toString())}&url=${encodeURIComponent(
-            window.location.toString(),
-        )}`,
+        }api/register?wallpaperId=${wallpaperId}&url=${encodeURIComponent(window.location.toString())}`,
         {
             method: 'PUT',
         },
     );
     const { message } = (await response.json()) as any;
 
-    console.info('🔌', { message });
+    console.info('🔌', message);
 }
 
 export default async function registerScriptHandler(request: NextApiRequest, response: NextApiResponse) {
@@ -49,9 +48,8 @@ export default async function registerScriptHandler(request: NextApiRequest, res
                         (()=>{
                             
                             const config = { NEXT_PUBLIC_URL: '${NEXT_PUBLIC_URL.href}' };
-                            const wallpaperId = '${wallpaperId}';
 
-                            /* not await */ register();
+                            /* not await */ register('${wallpaperId}');
                 
                             ${block(register.toString())}
 
