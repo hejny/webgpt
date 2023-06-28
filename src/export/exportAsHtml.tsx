@@ -3,6 +3,7 @@ import { RouterContext } from 'next/dist/shared/lib/router-context';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
+import { NEXT_PUBLIC_URL } from '../../config';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShuffleSeedContext } from '../components/Shuffle/Shuffle';
@@ -26,7 +27,7 @@ export interface HtmlExportOptions {
      */
     stylesPlace: 'EMBED' | 'EXTERNAL';
 
-    publicUrl: URL;
+    publicUrl: URL | null;
 }
 
 interface HtmlExport {
@@ -168,7 +169,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         <html>
             <RouterContext.Provider value={memoryRouter}>
                 {/* <MemoryRouterProvider url={'/showcase/[wallpaper]'}> */}
-                <ExportContext.Provider value={{ isExported: true, publicUrl }}>
+                <ExportContext.Provider value={{ isExported: true, publicUrl: publicUrl || NEXT_PUBLIC_URL }}>
                     <ShuffleSeedContext.Provider value={new Date().getUTCMinutes()}>
                         <WallpapersContext.Provider value={{ [wallpaper.id]: new BehaviorSubject(wallpaper) }}>
                             <ShowcaseAppHead>
