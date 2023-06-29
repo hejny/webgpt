@@ -1,20 +1,30 @@
-
-.editor {
-    /*width: 100%;*/
-    width: 90vw;
-    height: 400px;
-}
-
 .section {
+    /*/
+    outline: 1px dotted rgb(9, 187, 9);
+    /**/
+
     padding-bottom: 10px;
     border-bottom: 2px solid rgba(var(--palette-0-triplet), 0.5);
     width: 100%;
 }
 
 .palette {
+    /*/
+    outline: 1px dotted rgb(181, 9, 187);
+    /**/
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 170px;
+}
+
+.editor {
+    /*/
+    outline: 1px dotted rgb(9, 80, 187);
+    /**/
+
+    width: 100%;
+    height: 400px;
 }
 
 @media (max-width: 600px) {
@@ -32,4 +42,3 @@
 .paletteItem {
     padding: 5px;
 }
-

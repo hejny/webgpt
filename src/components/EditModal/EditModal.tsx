@@ -9,7 +9,6 @@ import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSy
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
-import { ColorBox } from '../ColorBox/ColorBox';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
 import { Modal, OpenModalLink } from '../Modal/Modal';
@@ -38,7 +37,6 @@ export function EditModal(props: EditModalProps) {
 
     return (
         <Modal title="Editing">
-            <div className={styles.title}>Editing</div>
             <div className={styles.section}>
                 <ImagineTag>{wallpaper.prompt}</ImagineTag>
             </div>
@@ -75,13 +73,31 @@ export function EditModal(props: EditModalProps) {
                     </div>
                 ))}
             </div>
+
+            {/*
             <div className={styles.section}>
                 <div>
                     averageColor:
                     <ColorBox value={wallpaper.colorStats.averageColor} />
                 </div>
 
-                {/*<pre>{JSON.stringify(wallpaper.colorStats, null, 4)}</pre>*/}
+                {/*<pre>{JSON.stringify(wallpaper.colorStats, null, 4)}</pre>* /}
+            </div>
+            */}
+
+            <div className={styles.section}>
+                <MarkdownEditor
+                    className={styles.editor}
+                    value={wallpaper.content}
+                    onChange={(content) => {
+                        closePreventionSystem.registerClosePrevention({
+                            canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
+                        });
+                        wallpaperSubject.next({ ...wallpaperSubject.value, content });
+                    }}
+                    // TODO: Hide fullscreen button
+                    // toolbarsFilter={(tool) => tool === 'fullscreen'}
+                />
             </div>
 
             <div className={styles.section}>
@@ -109,21 +125,6 @@ export function EditModal(props: EditModalProps) {
                 >
                     Done
                 </Link>
-            </div>
-
-            <div className={styles.section}>
-                <MarkdownEditor
-                    className={styles.editor}
-                    value={wallpaper.content}
-                    onChange={(content) => {
-                        closePreventionSystem.registerClosePrevention({
-                            canBeClosed: false /* <- TODO: Change according to if downloaded or not */,
-                        });
-                        wallpaperSubject.next({ ...wallpaperSubject.value, content });
-                    }}
-                    // TODO: Hide fullscreen button
-                    // toolbarsFilter={(tool) => tool === 'fullscreen'}
-                />
             </div>
         </Modal>
     );

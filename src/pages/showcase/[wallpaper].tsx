@@ -86,15 +86,13 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!! mode=explanation
+ * TODO: !!!! URL withouth /showcase/... - just /wallpaper-id
  * TODO: !!! Font must be applied to whole page NOT only the article 
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code
  * TODO: !!! [🧶] Add overlay which explains how it works and lead to FAQ permalink
- * TODO: !! Better IDs for wallpapers - make it without GET parameters
  * TODO: !! Make foreground-background paralax effect for each wallpaper @see https://huggingface.co/spaces/radames/dpt-depth-estimation-3d-obj
- * TODO: !! Fix Shuffle without React hydration error
 
  * TODO: Add somewhere button [Get in touch]
  * TODO: [🪒] Can be getStaticProps shared between all pages?
