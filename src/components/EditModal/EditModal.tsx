@@ -41,6 +41,27 @@ export function EditModal(props: EditModalProps) {
     const { value: wallpaper } = useObservable(wallpaperSubject);
     const closePreventionSystem = useClosePreventionSystem();
 
+    //-----------
+    // TODO: Saving (copy) logic should be in separate function OR component
+    const { src, prompt, content, colorStats /* <- !!! Save UPDATED colorStats */ } = wallpaper;
+    const title = extractTitleFromMarkdown(content) || 'Untitled';
+    const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
+    const newAnonymousWallpaper = {
+        parent: wallpaperId,
+        src,
+        prompt,
+        colorStats,
+        content,
+        title,
+        keywords,
+    };
+    const newWallpaper = {
+        id: computeWallpaperUriid(newAnonymousWallpaper),
+        ...newAnonymousWallpaper,
+        colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
+    };
+    //-----------
+
     return (
         <Modal title="Editing">
             <div className={styles.section}>
@@ -120,28 +141,12 @@ export function EditModal(props: EditModalProps) {
                     {/* TODO: !! Remove */}
                     Invoke error
                 </button>
-                <button
+                <Link
+                    href={`/showcase/${newWallpaper.id}`}
+                    target={'_blank'}
                     className={'button'}
                     onClick={async () => {
                         // TODO: Saving (copy) logic should be in separate function
-
-                        const { src, prompt, content, colorStats /* <- !!! Save UPDATED colorStats */ } = wallpaper;
-                        const title = extractTitleFromMarkdown(content) || 'Untitled';
-                        const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
-                        const newAnonymousWallpaper = {
-                            parent: wallpaperId,
-                            src,
-                            prompt,
-                            colorStats,
-                            content,
-                            title,
-                            keywords,
-                        };
-                        const newWallpaper = {
-                            id: computeWallpaperUriid(newAnonymousWallpaper),
-                            ...newAnonymousWallpaper,
-                            colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
-                        };
 
                         const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
 
@@ -153,12 +158,12 @@ export function EditModal(props: EditModalProps) {
                             window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
                         }
 
-                        window.open(`/showcase/${newWallpaper.id}`, '_blank');
+                        // !!! Remove> window.open(`/showcase/${newWallpaper.id}`, '_blank');
                     }}
                 >
                     {/* TODO: !! Remove */}
                     Save
-                </button>
+                </Link>
 
                 <Link
                     className={'button'}
