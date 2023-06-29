@@ -9,6 +9,7 @@ import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { extractTitleFromMarkdown } from '../../utils/content/extractTitleFromMarkdown';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
+import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { serializeColorStats } from '../../utils/image/utils/serializeColorStats';
@@ -146,6 +147,11 @@ export function EditModal(props: EditModalProps) {
 
                         // TODO: !! Util isInsertSuccessfull (status===201)
                         console.log({ newWallpaper, insertResult });
+
+                        const key = `likedStatus_${newWallpaper.id}`;
+                        if (!window.localStorage.getItem(key)) {
+                            window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
+                        }
 
                         window.open(`/showcase/${newWallpaper.id}`, '_blank');
                     }}
