@@ -10,6 +10,7 @@ export interface IWallpaperProps {
 
 export interface IWallpaper {
     id: string_wallpaper_id;
+    parent?: string_wallpaper_id;
     src: string_url /* <- Note: Not using URL objects because of serialization */;
     prompt: string;
     colorStats: IWallpaperColorStats /* <- !!! Put here all */;
