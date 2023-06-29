@@ -8,8 +8,8 @@ import { forImmediate } from 'waitasecond';
 import YAML from 'yaml';
 import { COLORSTATS_DEFAULT_COMPUTE } from '../../config';
 import { createImageInNode } from '../../src/utils/image/createImageInNode';
+import { serializeColorStats } from '../../src/utils/image/utils/serializeColorStats';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
-import { TakeChain } from '../../src/utils/take/classes/TakeChain';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { isFileExisting } from '../utils/isFileExisting';
@@ -100,15 +100,7 @@ async function generateWallpapersColorStats({
                 colorStatsFilePath,
                 YAML.stringify(
                     // TODO: More efficient way then JSON.stringify+JSON.parse
-                    JSON.parse(
-                        JSON.stringify(colorStats, (key, value) => {
-                            if (value instanceof TakeChain) {
-                                return value.value.toHex();
-                            } else {
-                                return value;
-                            }
-                        }),
-                    ),
+                    serializeColorStats(colorStats),
                     { indent: 4 },
                 )
                     .split('"')

@@ -11,6 +11,7 @@ import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSy
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { serializeColorStats } from '../../utils/image/utils/serializeColorStats';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { ColorInput } from '../ColorInput/ColorInput';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
@@ -121,6 +122,8 @@ export function EditModal(props: EditModalProps) {
                 <button
                     className={'button'}
                     onClick={async () => {
+                        // TODO: Saving (copy) logic should be in separate function
+
                         const { src, prompt, content, colorStats /* <- !!! Save UPDATED colorStats */ } = wallpaper;
                         const title = extractTitleFromMarkdown(content) || 'Untitled';
                         const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
@@ -136,6 +139,7 @@ export function EditModal(props: EditModalProps) {
                         const newWallpaper = {
                             id: computeWallpaperUriid(newAnonymousWallpaper),
                             ...newAnonymousWallpaper,
+                            colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
                         };
 
                         const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);

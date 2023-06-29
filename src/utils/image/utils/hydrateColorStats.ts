@@ -8,5 +8,5 @@ export function hydrateColorStats(json: JsonObject): IImageColorStats<string> {
 }
 
 /**
- * TODO: Check if the colorStats are valid
+ * TODO: Check if the colorStats are valid - Maybe use Zod
  */
