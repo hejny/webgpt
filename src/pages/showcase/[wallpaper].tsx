@@ -1,5 +1,6 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Link from 'next/link';
 import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
 import { ShowcaseAppHead } from '../../components/AppHead/ShowcaseAppHead';
@@ -15,13 +16,28 @@ import { IWallpaper } from '../../utils/IWallpaper';
 import { randomItem } from '../../utils/randomItem';
 
 export interface ShowcasePageProps {
-    currentWallpaper: IWallpaper & JsonObject;
+    currentWallpaper: null | (IWallpaper & JsonObject);
     randomWallpaper: IWallpaper & JsonObject;
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
     const { isExplaining, isPresenting } = useMode();
+
+    if (!currentWallpaper) {
+        return (
+            <div>
+                Not found
+                <br />
+                <Link href="/" /*className={'button'}*/>Pick from gallery</Link>
+                {/* TODO 
+                <Link src="/showcase/" className={'button'}>
+                    Show random
+                </Link>
+                */}
+            </div> /* <- TODO: Better 404 + http 404 */
+        );
+    }
 
     return (
         <WallpapersContext.Provider
@@ -70,7 +86,8 @@ export async function getStaticProps({
     const { wallpaper } = params;
 
     const wallpapers = await getWallpapers();
-    const currentWallpaper = wallpapers.find(({ id }) => id === wallpaper);
+    const currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
+
     const randomWallpaper = randomItem(
         ...wallpapers,
     ); /* <- TODO: !! Make big chain to traverse whole gallery by clicking random + minor simmilar chains  */
