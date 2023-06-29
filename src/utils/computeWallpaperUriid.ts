@@ -3,8 +3,8 @@ import { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
 import { string_uriid } from './typeAliases';
 
-export function computeWallpaperUriid(wallpaper: IWallpaper): string_uriid {
-    const words = normalizeToKebabCase(wallpaper.title).split('-').join();
+export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string_uriid {
+    const words = normalizeToKebabCase(wallpaper.title).split('-');
 
     let nameParts: Array<string> = [];
     for (const word of words) {
@@ -16,6 +16,8 @@ export function computeWallpaperUriid(wallpaper: IWallpaper): string_uriid {
             if (potentialTotalLength > 30) {
                 break;
             }
+
+            nameParts.push(word);
         }
     }
 

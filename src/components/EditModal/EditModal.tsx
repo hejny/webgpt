@@ -5,11 +5,15 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { textColor } from '../../utils/color/operators/furthest';
+import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
+import { extractTitleFromMarkdown } from '../../utils/content/extractTitleFromMarkdown';
 import { useClosePreventionSystem } from '../../utils/hooks/useClosePreventionSystem';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { ColorInput } from '../ColorInput/ColorInput';
+import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { ImagineTag } from '../ImagineTag/ImagineTag';
 import { Modal, OpenModalLink } from '../Modal/Modal';
 import styles from './EditModal.module.css';
@@ -114,6 +118,38 @@ export function EditModal(props: EditModalProps) {
                     {/* TODO: !! Remove */}
                     Invoke error
                 </button>
+                <button
+                    className={'button'}
+                    onClick={async () => {
+                        const { src, prompt, content, colorStats /* <- !!! Save UPDATED colorStats */ } = wallpaper;
+                        const title = extractTitleFromMarkdown(content) || 'Untitled';
+                        const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
+                        const newAnonymousWallpaper = {
+                            parent: wallpaperId,
+                            src,
+                            prompt,
+                            colorStats,
+                            content,
+                            title,
+                            keywords,
+                        };
+                        const newWallpaper = {
+                            id: computeWallpaperUriid(newAnonymousWallpaper),
+                            ...newAnonymousWallpaper,
+                        };
+
+                        const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
+
+                        // TODO: !! Util isInsertSuccessfull (status===201)
+                        console.log({ newWallpaper, insertResult });
+
+                        window.open(`/showcase/${newWallpaper.id}`, '_blank');
+                    }}
+                >
+                    {/* TODO: !! Remove */}
+                    Save
+                </button>
+
                 <Link
                     className={'button'}
                     href={{
