@@ -20,3 +20,9 @@ export default async function whoisHandler(request: NextApiRequest, response: Ne
     const result = await whoiser(domain);
     return response.status(200).json({ result });
 }
+
+/**
+ * TODO: Use instead of WHOIS in-browser RDAP
+ *       - @see https://www.npmjs.com/package/node-rdap
+ *       - @see https://www.npmjs.com/package/node-rdap
+ */
