@@ -223,7 +223,7 @@ export type string_uuid = string;
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  * @collboard-modules-sdk
  */
-export type string_wallpaper_id = string_uuid;
+export type string_wallpaper_id = string_uuid | string_uriid;
 
 /**
  * Semantic helper
