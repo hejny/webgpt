@@ -14,6 +14,7 @@ import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
 import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { randomItem } from '../../utils/randomItem';
+import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
 
 export interface ShowcasePageProps {
     currentWallpaper: null | (IWallpaper & JsonObject);
@@ -86,7 +87,14 @@ export async function getStaticProps({
     const { wallpaper } = params;
 
     const wallpapers = await getWallpapers();
-    const currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
+    let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
+
+    if (!currentWallpaper) {
+        const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper);
+        if (selectResult && selectResult.data && selectResult.data.length > 0) {
+            currentWallpaper = selectResult.data[0];
+        }
+    }
 
     const randomWallpaper = randomItem(
         ...wallpapers,
