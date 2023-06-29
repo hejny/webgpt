@@ -22,7 +22,7 @@ export function Modal(props: ModalProps) {
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useLayoutEffect(() => {
         const bodyScrollPrevent = (event: Event) => {
-            console.log(event.target);
+            // console.log(event.target);
 
             const target = event.target as HTMLElement;
 
