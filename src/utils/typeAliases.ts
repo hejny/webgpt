@@ -173,7 +173,7 @@ export type string_uri_part = string;
 /**
  * Semantic helper, ID of the board used in URL and API
  *
- * For example `"9SeSQTupmQHwuSrLi"`
+ * For example `"9SeSQTupmQHwuSrLi"` <- TODO: !! Update
  * @collboard-modules-sdk
  */
 export type string_uriid = string_uri_part;
