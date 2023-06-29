@@ -22,8 +22,18 @@ export function Modal(props: ModalProps) {
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
     useLayoutEffect(() => {
         const bodyScrollPrevent = (event: Event) => {
-            event.preventDefault();
-            return false;
+            console.log(event.target);
+
+            const target = event.target as HTMLElement;
+
+            if (
+                target.classList.contains(styles.overlay) ||
+                target.classList.contains(styles.bar) ||
+                target.parentElement!.classList.contains(styles.bar)
+            ) {
+                event.preventDefault();
+                return false;
+            }
         };
         document.body.addEventListener('wheel', bodyScrollPrevent, { passive: false });
         document.body.addEventListener('touchmove', bodyScrollPrevent, { passive: false });
