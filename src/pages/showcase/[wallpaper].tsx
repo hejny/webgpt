@@ -86,7 +86,9 @@ export async function getStaticProps({
 }) {
     const { wallpaper } = params;
 
-    const wallpapers = await getWallpapers();
+    const wallpapers = await getWallpapers().catch((error) => [
+        /* Note: On server, "Error: Could not find assets folder" will happen */
+    ]);
     let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
 
     if (!currentWallpaper) {

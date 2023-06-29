@@ -123,6 +123,7 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
 }
 
 /**
+ * TODO: !!! Rename to getHardcodedWallpapers - figure out better word then "hardcoded"
  * TODO: Update wallpapers during the run
  * TODO: !! Make script that can check all wallpapers and list only warnings
  */
