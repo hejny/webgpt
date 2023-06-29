@@ -98,9 +98,14 @@ export async function getStaticProps({
         }
     }
 
-    const randomWallpaper = randomItem(
+    let randomWallpaper = randomItem(
         ...wallpapers,
     ); /* <- TODO: !! Make big chain to traverse whole gallery by clicking random + minor simmilar chains  */
+
+    if (!randomWallpaper && currentWallpaper) {
+        // TODO: !!!! This is a dirty hack to prevent error on server - Solve better
+        randomWallpaper = currentWallpaper;
+    }
 
     return {
         props: {
