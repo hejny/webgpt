@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { computeWallpaperUriid } from '../../../utils/computeWallpaperUriid';
 import { extractTitleFromMarkdown } from '../../../utils/content/extractTitleFromMarkdown';
 import { serializeColorStats } from '../../../utils/image/utils/serializeColorStats';
@@ -16,8 +16,7 @@ interface SaveBoardButtonProps extends Pick<IWallpaper, 'src' | 'prompt' | 'cont
  * @@@
  */
 export function SaveBoardButton(props: SaveBoardButtonProps) {
-    const { parentWallpaperId, src, prompt, content, colorStats, children } =
-        props;
+    const { parentWallpaperId, src, prompt, content, colorStats, children } = props;
 
     const newWallpaper = useMemo(() => {
         const title = extractTitleFromMarkdown(content) || 'Untitled';
@@ -37,6 +36,17 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
             colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
         };
     }, [parentWallpaperId, src, prompt, content, colorStats]);
+
+    useEffect(() => {
+        const bc = new BroadcastChannel('wallpaper_request');
+        bc.onmessage = (event) => {
+            console.log(event);
+        };
+
+        return () => {
+            bc.close();
+        };
+    });
 
     return (
         <Link
