@@ -142,7 +142,7 @@ export function EditModal(props: EditModalProps) {
                     Invoke error
                 </button>
                 <Link
-                    href={`/showcase/${newWallpaper.id}`}
+                    href={`/prepare/showcase/${newWallpaper.id}`}
                     target={'_blank'}
                     className={'button'}
                     onClick={async () => {
