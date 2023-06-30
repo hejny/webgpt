@@ -31,8 +31,9 @@ export default function ShowcasePage(props: ShowcasePageProps) {
                 Not found
                 <br />
                 <Link href="/" /*className={'button'}*/>Pick from gallery</Link>
-                {/* TODO 
-                <Link src="/showcase/" className={'button'}>
+                {/*
+                TODO: Pass randomWallpaper in dynamic wallpapers
+                <Link href={`/showcase/${randomWallpaper.id}`} className={'button'}>
                     Show random
                 </Link>
                 */}
