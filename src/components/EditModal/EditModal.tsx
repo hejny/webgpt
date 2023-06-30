@@ -144,6 +144,8 @@ export function EditModal(props: EditModalProps) {
                 <Link
                     href={`/prepare/showcase/${newWallpaper.id}`}
                     target={'_blank'}
+                    rel={'opener'}
+                    referrerPolicy={'same-origin'}
                     className={'button'}
                     onClick={async () => {
                         // TODO: Saving (copy) logic should be in separate function
