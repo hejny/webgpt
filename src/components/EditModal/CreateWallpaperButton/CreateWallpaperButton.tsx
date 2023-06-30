@@ -49,27 +49,36 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
     });
 
     return (
-        <Link
-            href={`/prepare/showcase/${newWallpaper.id}`}
-            target={'_blank'}
-            rel={'opener'}
-            referrerPolicy={'same-origin'}
-            className={'button'}
-            onClick={async () => {
-                const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
+        <>
+            <Link href={`/showcase/${newWallpaper.id}`} className={'button'}>
+                {children} (just direct link)
+            </Link>
+            <Link
+                href={`/prepare/showcase/${newWallpaper.id}`}
+                target={'_blank'}
+                rel={'opener'}
+                referrerPolicy={'same-origin'}
+                className={'button'}
+                onClick={async () => {
+                    const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
 
-                // TODO: !! Util isInsertSuccessfull (status===201)
-                console.log({ newWallpaper, insertResult });
+                    // TODO: !! Util isInsertSuccessfull (status===201)
+                    console.log({ newWallpaper, insertResult });
 
-                const key = `likedStatus_${newWallpaper.id}`;
-                if (!window.localStorage.getItem(key)) {
-                    window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
-                }
+                    const key = `likedStatus_${newWallpaper.id}`;
+                    if (!window.localStorage.getItem(key)) {
+                        window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
+                    }
 
-                // !!! Remove> window.open(`/showcase/${newWallpaper.id}`, '_blank');
-            }}
-        >
-            {children}
-        </Link>
+                    // !!! Remove> window.open(`/showcase/${newWallpaper.id}`, '_blank');
+                }}
+            >
+                {children}
+            </Link>
+        </>
     );
 }
+
+/**
+ * TODO: !!! Just one link
+ */

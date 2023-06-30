@@ -12,7 +12,7 @@ export default function PreparePage() {
 export async function getStaticPaths() {
     return {
         paths: [], // <- Note: indicates that no page needs be created at build time
-        fallback: false,
+        fallback: true,
     };
 }
 
