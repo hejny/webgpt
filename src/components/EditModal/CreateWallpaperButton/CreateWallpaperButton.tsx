@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useEffect, useMemo } from 'react';
 import { computeWallpaperUriid } from '../../../utils/computeWallpaperUriid';
 import { extractTitleFromMarkdown } from '../../../utils/content/extractTitleFromMarkdown';
+import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { serializeColorStats } from '../../../utils/image/utils/serializeColorStats';
 import { IWallpaper } from '../../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../../utils/supabase/getSupabaseForBrowser';
@@ -37,14 +38,48 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
         };
     }, [parentWallpaperId, src, prompt, content, colorStats]);
 
+    const persistWallpaper = async () => {
+        const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
+
+        // TODO: !! Util isInsertSuccessfull (status===201)
+        console.log({ newWallpaper, insertResult });
+
+        const key = `likedStatus_${newWallpaper.id}`;
+        if (!window.localStorage.getItem(key)) {
+            window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
+        }
+
+        // !!! Remove> window.open(`/showcase/${newWallpaper.id}`, '_blank');
+    };
+
     useEffect(() => {
-        const bc = new BroadcastChannel('wallpaper_request');
-        bc.onmessage = (event) => {
-            console.log(event);
+        const wallpapersChannel = new BroadcastChannel('wallpaper_request');
+        wallpapersChannel.onmessage = async (event) => {
+
+            console.info('📩', {event});
+
+            const { type, wallpaperId: requestedWallpaperId } = event.data;
+
+            if (type !== 'REQUEST_WALLPAPER') {
+                return;
+            }
+
+            console.info('💌', 'Requested wallpaper', requestedWallpaperId);
+
+            if (requestedWallpaperId !== newWallpaper.id) {
+                return;
+            }
+
+            await persistWallpaper();
+
+            wallpapersChannel.postMessage({
+                type: 'READY_WALLPAPER',
+                wallpaperId: newWallpaper.id,
+            });
         };
 
         return () => {
-            bc.close();
+            wallpapersChannel.close();
         };
     });
 
@@ -54,24 +89,11 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
                 {children} (just direct link)
             </Link>
             <Link
-                href={`/prepare/showcase/${newWallpaper.id}`}
+                href={`/prepare/${newWallpaper.id}`}
                 target={'_blank'}
                 rel={'opener'}
                 referrerPolicy={'same-origin'}
                 className={'button'}
-                onClick={async () => {
-                    const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
-
-                    // TODO: !! Util isInsertSuccessfull (status===201)
-                    console.log({ newWallpaper, insertResult });
-
-                    const key = `likedStatus_${newWallpaper.id}`;
-                    if (!window.localStorage.getItem(key)) {
-                        window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
-                    }
-
-                    // !!! Remove> window.open(`/showcase/${newWallpaper.id}`, '_blank');
-                }}
             >
                 {children}
             </Link>
