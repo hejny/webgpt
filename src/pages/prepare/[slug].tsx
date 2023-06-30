@@ -1,6 +1,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { forTime } from 'waitasecond';
 
 export default function PreparePage() {
     const router = useRouter();
@@ -22,6 +23,8 @@ export default function PreparePage() {
             if (readyWallpaperId !== wallpaperId) {
                 return;
             }
+
+            await forTime(0 /* <- TODO: !!! Remove or increase */);
 
             router.replace(`/showcase/${wallpaperId}`);
         };

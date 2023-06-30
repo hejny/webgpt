@@ -55,8 +55,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
     useEffect(() => {
         const wallpapersChannel = new BroadcastChannel('wallpaper_request');
         wallpapersChannel.onmessage = async (event) => {
-
-            console.info('📩', {event});
+            console.info('📩', { event });
 
             const { type, wallpaperId: requestedWallpaperId } = event.data;
 
@@ -85,7 +84,11 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
 
     return (
         <>
-            <Link href={`/showcase/${newWallpaper.id}`} className={'button'}>
+            <Link
+                href={`/showcase/${newWallpaper.id}`}
+                className={'button'}
+                prefetch={false /* <- Note: We don`t want to pre-create anything */}
+            >
                 {children} (just direct link)
             </Link>
             <Link
@@ -94,6 +97,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
                 rel={'opener'}
                 referrerPolicy={'same-origin'}
                 className={'button'}
+                prefetch={false /* <- Note: We don`t want to pre-create anything */}
             >
                 {children}
             </Link>
