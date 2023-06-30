@@ -30,14 +30,14 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             <div>
                 Not found
                 <br />
-                <Link href="/" /*className={'button'}*/>Pick from gallery</Link>
+                <Link href="/" /*className={'button'} */>Pick from gallery</Link>
                 {/*
                 TODO: Pass randomWallpaper in dynamic wallpapers
                 <Link href={`/showcase/${randomWallpaper.id}`} className={'button'}>
                     Show random
                 </Link>
                 */}
-            </div> /* <- TODO: Better 404 + http 404 */
+            </div> /* <- TODO: Better 404 + http 404 + [👠] Some standard standalone page*/
         );
     }
 
@@ -73,8 +73,8 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     return {
-        paths: (await getWallpapers()).map(({ id }) => `/showcase/${id}`), // <- Note: indicates that no page needs be created at build time
-        fallback: 'blocking', // <- Note: indicates the type of fallback - TODO: !!! Probbably change to false and solve 404 problem
+        paths: (await getWallpapers()).map(({ id }) => `/showcase/${id}`), // <- Note: indicates which pages needs be created at build time
+        fallback: false, // <- !!!! Maybe back to 'blocking'
     };
 };
 
