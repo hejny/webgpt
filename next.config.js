@@ -27,6 +27,16 @@ const nextConfig = {
         return config;
     },
     staticPageGenerationTimeout: 60 * 5 /* 5 minutes */,
+
+    async redirects() {
+        return [
+            {
+                source: '/:wallpaper*',
+                destination: '/:wallpaper*',
+                permanent: true,
+            },
+        ];
+    },
 };
 
 module.exports = removeImports(nextConfig);

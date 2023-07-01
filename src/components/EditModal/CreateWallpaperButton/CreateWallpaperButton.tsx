@@ -49,7 +49,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
             window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
         }
 
-        // !!! Remove> window.open(`/showcase/${newWallpaper.id}`, '_blank');
+        // !!! Remove> window.open(`/${newWallpaper.id}`, '_blank');
     };
 
     useEffect(() => {
@@ -86,7 +86,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
     return (
         <>
             <Link
-                href={`/showcase/${newWallpaper.id}`}
+                href={`/${newWallpaper.id}`}
                 className={'button'}
                 prefetch={false /* <- Note: We don`t want to pre-create anything */}
             >

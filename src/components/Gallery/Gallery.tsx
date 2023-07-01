@@ -60,7 +60,7 @@ export function GallerySection(props: SampleProps) {
 
                                 <Link
                                     key={wallpaper.id}
-                                    href={`/showcase/${wallpaper.id}`}
+                                    href={`/${wallpaper.id}`}
                                     prefetch={
                                         false /* <- Note: It is too much data to prefetch every page from gallery */
                                     }
@@ -69,7 +69,7 @@ export function GallerySection(props: SampleProps) {
                                     <iframe
                                         // TODO: [🦋] Use here better preview image - with some palette showcase + title + smaller size
                                         // TODO: [🦋] Show likedStatus here
-                                        src={`https://app.ai.hejny.org` + `/showcase/${wallpaper.id}?mode=preview`}
+                                        src={`https://app.ai.hejny.org` + `/${wallpaper.id}?mode=preview`}
                                         allowTransparency={false /* as a optimization */}
                                         scrolling="no" /* <- TODO: Why deprecated? */
                                         frameBorder="0" /* <- TODO: Why deprecated? */

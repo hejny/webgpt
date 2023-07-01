@@ -12,7 +12,7 @@ export function AigenSimple() {
         <Link
             className={styles.AigenSimple}
             href={{
-                pathname: '/showcase/[wallpaper]',
+                pathname: '/[wallpaper]',
                 query: {
                     wallpaper: router.query.wallpaper,
                     mode: 'explanation',

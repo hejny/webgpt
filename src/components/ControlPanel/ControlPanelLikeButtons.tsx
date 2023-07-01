@@ -21,7 +21,7 @@ export function ControlPanelLikeButtons() {
 
                     className={classNames(styles.button, styles.callToAction)}
                     href={{
-                        pathname: '/showcase/[wallpaper]',
+                        pathname: '/[wallpaper]',
                         query: {
                             wallpaper: router.query.wallpaper,
                             modal: 'export',

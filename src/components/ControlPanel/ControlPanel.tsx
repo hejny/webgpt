@@ -30,7 +30,7 @@ export function ControlPanel(props: ControlPanelProps) {
             <ControlPanelLikeButtons />
 
             <Link
-                href={`/showcase/${randomWallpaper.id}`}
+                href={`/${randomWallpaper.id}`}
                 /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
                 className={classNames(/*'button',*/ styles.button)}
                 title="Show me another one"
@@ -64,7 +64,7 @@ export function ControlPanel(props: ControlPanelProps) {
 
             <Link
                 href={{
-                    pathname: '/showcase/[wallpaper]',
+                    pathname: '/[wallpaper]',
                     query: {
                         wallpaper: router.query.wallpaper,
                         mode: 'presentation',

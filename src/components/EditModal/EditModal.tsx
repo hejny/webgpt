@@ -140,7 +140,7 @@ export function EditModal(props: EditModalProps) {
                 <Link
                     className={'button'}
                     href={{
-                        pathname: '/showcase/[wallpaper]',
+                        pathname: '/[wallpaper]',
                         query: {
                             wallpaper: router.query.wallpaper,
                         },

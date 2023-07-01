@@ -44,7 +44,7 @@ export function Menu() {
                         <li className={styles.featured}>
                             <Link
                                 href={{
-                                    pathname: '/showcase/[wallpaper]',
+                                    pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
                                         modal: 'export',
@@ -58,7 +58,7 @@ export function Menu() {
                         <li>
                             <Link
                                 href={{
-                                    pathname: '/showcase/[wallpaper]',
+                                    pathname: '/[wallpaper]',
                                     query: {
                                         wallpaper: router.query.wallpaper,
                                         modal: 'edit',
@@ -114,9 +114,9 @@ export function Menu() {
                 <ul>
                     <li><a href="https://ai.hejny.org/">Home</a></li>
                     <li class="Menu_featured__6_rbw">
-                        <a href="/showcase/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=export">Get the web</a>
+                        <a href="/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=export">Get the web</a>
                     </li>
-                    <li><a href="/showcase/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=edit">Edit</a></li>
+                    <li><a href="/caadd184-364b-4ec7-a0cc-436d0e3b5330?modal=edit">Edit</a></li>
                     <li><a href="https://ai.hejny.org/pricing">Pricing</a></li>
                     <li><a href="/?home=/">Gallery</a></li>
                     <li><a href="https://ai.hejny.org/contact">Contact</a></li>

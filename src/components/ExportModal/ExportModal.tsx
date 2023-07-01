@@ -69,7 +69,7 @@ export function ExportModal(props: ExportModalProps) {
                         .insert([
                             {
                                 wallpaperId: wallpaper.id,
-                                url: (publicUrl || new URL(`https://app.ai.hejny.org/showcase/${wallpaper.id}}`))
+                                url: (publicUrl || new URL(`https://app.ai.hejny.org/${wallpaper.id}}`))
                                     .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
                                 ownerEmail: email,
                                 plan,

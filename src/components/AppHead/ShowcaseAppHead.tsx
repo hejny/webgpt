@@ -30,7 +30,7 @@ export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
         removeMarkdownLinks(extractFirstParagraphFromMarkdown(wallpaper.content)),
     );
 
-    const homeUrl = `${publicUrl.href}/showcase/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
+    const homeUrl = `${publicUrl.href}/${wallpaper.id}`; /* <- TODO: Self URL into some configuration */
     const socialImageUrl = wallpaper.src; /* <- TODO: !! Generate propper social wallpaper [🦋] */
     const faviconImageUrl = wallpaper.src; /* <- TODO: !! Generate propper icon [🦋] */
 

@@ -76,7 +76,7 @@ export function OpenModalLink(props: OpenModalLinkProps) {
         <>
             <Link
                 href={{
-                    pathname: '/showcase/[wallpaper]',
+                    pathname: '/[wallpaper]',
                     query: {
                         wallpaper: router.query.wallpaper,
                         modal,
@@ -96,7 +96,7 @@ export function CloseModalLink(props: CloseModalLinkProps) {
     return (
         <Link
             href={{
-                pathname: '/showcase/[wallpaper]',
+                pathname: '/[wallpaper]',
                 query: {
                     wallpaper: router.query.wallpaper,
                 },

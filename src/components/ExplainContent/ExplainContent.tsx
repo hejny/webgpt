@@ -14,14 +14,14 @@ export function ExplainContent() {
 
             <iframe
                 className={styles.device}
-                src={`/showcase/${wallpaperId}?mode=presentation`}
+                src={`/${wallpaperId}?mode=presentation`}
                 // iPhone Size
                 frameBorder="0"
             />
 
             <p>This web was completely created using AI</p>
 
-            <Link className="button" href={`/showcase/${wallpaperId}`}>
+            <Link className="button" href={`/${wallpaperId}`}>
                 Show web
             </Link>
         </div>

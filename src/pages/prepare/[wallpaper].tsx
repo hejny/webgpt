@@ -28,7 +28,7 @@ export default function PreparePage() {
 
             await forTime(5000 /* <- TODO: !!! Remove or increase */);
 
-            router.replace(`/showcase/${wallpaperId}`);
+            router.replace(`/${wallpaperId}`);
         };
 
         wallpapersChannel.postMessage({

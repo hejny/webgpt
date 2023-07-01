@@ -2,19 +2,19 @@ import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { JsonObject } from 'type-fest';
-import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
-import { ShowcaseAppHead } from '../../components/AppHead/ShowcaseAppHead';
-import { ExplainContent } from '../../components/ExplainContent/ExplainContent';
-import { ShowcaseContent } from '../../components/ShowcaseContent/ShowcaseContent';
-import { ShowcaseContentEdit } from '../../components/ShowcaseContentEdit/ShowcaseContentEdit';
-import { SkinStyle } from '../../components/SkinStyle/SkinStyle';
-import { useMode } from '../../utils/hooks/useMode';
-import { WallpapersContext } from '../../utils/hooks/WallpapersContext';
-import { hydrateWallpaper } from '../../utils/hydrateWallpaper';
-import { hydrateWallpapers } from '../../utils/hydrateWallpapers';
-import { IWallpaper } from '../../utils/IWallpaper';
-import { randomItem } from '../../utils/randomItem';
-import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
+import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
+import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
+import { ExplainContent } from '../components/ExplainContent/ExplainContent';
+import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
+import { ShowcaseContentEdit } from '../components/ShowcaseContentEdit/ShowcaseContentEdit';
+import { SkinStyle } from '../components/SkinStyle/SkinStyle';
+import { useMode } from '../utils/hooks/useMode';
+import { WallpapersContext } from '../utils/hooks/WallpapersContext';
+import { hydrateWallpaper } from '../utils/hydrateWallpaper';
+import { hydrateWallpapers } from '../utils/hydrateWallpapers';
+import { IWallpaper } from '../utils/IWallpaper';
+import { randomItem } from '../utils/randomItem';
+import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
 
 export interface ShowcasePageProps {
     currentWallpaper: null | (IWallpaper & JsonObject);
@@ -25,20 +25,13 @@ export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
     const { isExplaining, isPresenting } = useMode();
 
-console.log(currentWallpaper);
+    console.log(currentWallpaper);
 
-if (currentWallpaper===undefined) {
-        return (
-            <div>
-                Loading...
-                        
-            </div> /* <- TODO: Better loading + [👠] Some standard standalone page*/
-        );
+    if (currentWallpaper === undefined) {
+        return <div>Loading...</div> /* <- TODO: Better loading + [👠] Some standard standalone page*/;
     }
 
-
-
-    if (currentWallpaper===null) {
+    if (currentWallpaper === null) {
         return (
             <div>
                 Not found
@@ -46,7 +39,7 @@ if (currentWallpaper===undefined) {
                 <Link href="/" /*className={'button'} */>Pick from gallery</Link>
                 {/*
                 TODO: Pass randomWallpaper in dynamic wallpapers
-                <Link href={`/showcase/${randomWallpaper.id}`} className={'button'}>
+                <Link href={`/${randomWallpaper.id}`} className={'button'}>
                     Show random
                 </Link>
                 */}
@@ -86,7 +79,7 @@ if (currentWallpaper===undefined) {
 
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     return {
-        paths: (await getWallpapers()).map(({ id }) => `/showcase/${id}`), // <- Note: indicates which pages needs be created at build time
+        paths: (await getWallpapers()).map(({ id }) => `/${id}`), // <- Note: indicates which pages needs be created at build time
         fallback: true, // <- !!!! Maybe back to 'blocking'
     };
 };
@@ -132,7 +125,6 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!!! URL withouth /showcase/... - just /wallpaper-id
  * TODO: !!! Font must be applied to whole page NOT only the article 
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
@@ -146,6 +138,6 @@ export async function getStaticProps({
  *       NOT> import { useTranslation } from 'react-i18next';
  *       BUT
  *       YES> import { useTranslation } from 'next-i18next';
- * TODO: !! Better url than /showcase/...
+ * TODO: !! Better url than /...
  * TODO: [👕][🧠] What should be the ID of customized wallpaper?
  */
