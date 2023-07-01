@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { TupleToUnion } from 'type-fest';
 import { useSsrDetection } from './useSsrDetection';
 
+// TODO: !!!! Rename to more clear name PRESENTATION and PREVIEW
 const MODES = ['LOADING', 'NORMAL', 'EXPLANATION', 'PRESENTATION', 'PREVIEW'] as const;
 
 interface IModes {

@@ -10,7 +10,7 @@ import styles from './ShowcaseContent.module.css';
 
 export function ShowcaseContent() {
     const router = useRouter();
-    const isPreview = router.query.mode === 'preview';
+    const isPreview = router.query.mode === 'preview'; /* <- TODO: !!! Use useMode */
 
     return (
         <div className={styles.page}>
@@ -37,5 +37,6 @@ export function ShowcaseContent() {
 }
 
 /**
+ * TODO: !!!! Add here a color picker for the palette
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */
