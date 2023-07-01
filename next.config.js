@@ -31,7 +31,7 @@ const nextConfig = {
     async redirects() {
         return [
             {
-                source: '/:wallpaper*',
+                source: '/showcase/:wallpaper*',
                 destination: '/:wallpaper*',
                 permanent: true,
             },
