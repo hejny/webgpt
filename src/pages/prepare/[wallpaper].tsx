@@ -26,7 +26,7 @@ export default function PreparePage() {
                 return;
             }
 
-            await forTime(5000 /* <- TODO: !!! Remove or increase */);
+            await forTime(0 /* <- TODO: !!! Remove or increase */);
 
             router.replace(`/${wallpaperId}`);
         };
@@ -64,3 +64,7 @@ export async function getStaticProps({
         },
     };
 }
+
+/**
+ * TODO: Maybe Polyfill for BroadcastChannel @see https://gist.github.com/alexis89x/041a8e20a9193f3c47fb
+ */

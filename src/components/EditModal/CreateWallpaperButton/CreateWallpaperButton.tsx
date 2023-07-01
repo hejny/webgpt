@@ -44,9 +44,14 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
         // TODO: !! Util isInsertSuccessfull (status===201)
         console.log({ newWallpaper, insertResult });
 
-        const key = `likedStatus_${newWallpaper.id}`;
-        if (!window.localStorage.getItem(key)) {
-            window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
+        try {
+            const key = `likedStatus_${newWallpaper.id}`;
+            if (!window.localStorage.getItem(key)) {
+                window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
+            }
+        } catch (error) {
+            // TODO: !!! [🧠] Handle situation when localStorage is exceeded
+            console.log(error);
         }
 
         // !!! Remove> window.open(`/${newWallpaper.id}`, '_blank');
