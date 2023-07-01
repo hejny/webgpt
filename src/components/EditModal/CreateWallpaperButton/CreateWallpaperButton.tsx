@@ -66,6 +66,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
             console.info('💌', 'Requested wallpaper', requestedWallpaperId);
 
             if (requestedWallpaperId !== newWallpaper.id) {
+                console.info('💔', 'But its not the correct wallpaper', { requestedWallpaperId, newWallpaper });
                 return;
             }
 
