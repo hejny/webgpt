@@ -26,7 +26,7 @@ export default function PreparePage() {
                 return;
             }
 
-            await forTime(500 /* <- TODO: !!! Remove or increase */);
+            await forTime(5000 /* <- TODO: !!! Remove or increase */);
 
             router.replace(`/showcase/${wallpaperId}`);
         };
