@@ -1,10 +1,9 @@
 import { useContext, useMemo } from 'react';
 import { BehaviorSubject } from 'rxjs';
-import { Converter } from 'showdown';
-import showdownHighlight from 'showdown-highlight';
 import spaceTrim from 'spacetrim';
 import { FONTS } from '../../../config';
 import { ExportContext } from '../../pages/_app';
+import { classNames } from '../../utils/classNames';
 import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
@@ -12,6 +11,7 @@ import { useObservable } from '../../utils/hooks/useObservable';
 import { string_markdown } from '../../utils/typeAliases';
 import { Html } from '../Html/Html';
 import styles from './Article.module.css';
+import { markdownConverter } from './markdownConverter';
 
 /**
  * Interface for article props ⁘
@@ -28,14 +28,22 @@ interface IArticleProps {
     content: string;
 
     /**
+     * Optional CSS class name
+     */
+    className?: string;
+
+    /**
      * Are tags <!--font:Poppins--> detected and applied
      */
     isusingFonts?: boolean;
 
+    /* 
+    TODO: [0] This is automatically done by showdown
     /**
      * Make for each heading in markdown unique id and scroll to hash
-     */
+     * /
     isHashUsed?: boolean;
+    */
 
     /**
      * Is enhanced by using openmoji
@@ -46,6 +54,27 @@ interface IArticleProps {
      * Is enhanced by adding links, normalize dashes and emojify
      */
     isEnhanced?: boolean;
+
+    /**
+     * Is editable by user
+     */
+    isEditable?: boolean;
+
+    /**
+     * Callback when content is changed
+     * returns back converted markdown
+     *
+     * Note: This is used only when isEditable is true
+     */
+    onMarkdownChange?: (content: string_markdown) => void;
+
+    /**
+     * Callback when content is changed
+     * returns back pure html
+     *
+     * Note: This is used only when isEditable is true
+     */
+    onHtmlChange?: (content: string_markdown) => void;
 }
 
 /**
@@ -55,7 +84,16 @@ interface IArticleProps {
  * @returns {JSX.Element} - The JSX element for the article
  */
 export function Article(props: IArticleProps) {
-    const { content, isusingFonts /* [0], isHashUsed */, isUsingOpenmoji, isEnhanced } = props;
+    const {
+        content,
+        className,
+        isusingFonts /* [0], isHashUsed */,
+        isUsingOpenmoji,
+        isEnhanced,
+        isEditable,
+        onMarkdownChange,
+        onHtmlChange,
+    } = props;
     const { isExported } = useContext(ExportContext);
 
     // [0] const hash = useHash();
@@ -106,8 +144,7 @@ export function Article(props: IArticleProps) {
 
     const { value: enhancedContent } = useObservable(enhancedContentSubject);
 
-    converter.setFlavor('github');
-    const html = converter.makeHtml(enhancedContent);
+    const html = markdownConverter.makeHtml(enhancedContent);
 
     if (html === '') {
         // Note: Do not make empty div for empty article
@@ -136,8 +173,22 @@ export function Article(props: IArticleProps) {
                 />
             )}
             <Html
-                className={styles.Article}
-                {...{ html }}
+                className={classNames(styles.Article, className)}
+                {...{ content: html, isEditable }}
+                onChange={(htmlContent) => {
+                    if (!isEditable) {
+                        return;
+                    }
+
+                    if (onHtmlChange) {
+                        onHtmlChange(htmlContent);
+                    }
+
+                    if (onMarkdownChange) {
+                        const markdownContent = markdownConverter.makeMarkdown(htmlContent);
+                        onMarkdownChange(markdownContent);
+                    }
+                }}
 
                 /*
                 [0]
@@ -180,22 +231,6 @@ export function Article(props: IArticleProps) {
         </>
     );
 }
-
-/**
- * A converter instance that uses showdown and highlight extensions ⁘
- *
- * @type {Converter}
- */
-const converter = new Converter({
-    extensions: [
-        showdownHighlight({
-            // Whether to add the classes to the <pre> tag, default is false
-            pre: true,
-            // Whether to use hljs' auto language detection, default is true
-            auto_detection: true,
-        }),
-    ],
-});
 
 /**
  * TODO: [0] Use has if isHashUsed is true

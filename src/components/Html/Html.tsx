@@ -10,18 +10,37 @@ import styles from './Html.module.css';
  * @returns {JSX.Element} A div element with parsed HTML content and optional CSS class name.
  */
 interface HtmlProps {
-    html: string_html;
+    /**
+     * Source html
+     */
+    content: string_html;
+
+    /**
+     * Optional CSS class name
+     */
     className?: string;
+
+    /**
+     * Is editable by user
+     */
+    isEditable?: boolean;
+
+    /**
+     * Callback when content is changed
+     *
+     * Note: This is used only when isEditable is true
+     */
+    onChange?: (content: string_html) => void;
 }
 
 /**
  * @@@
  */
 export function Html(props: HtmlProps) {
-    const { html, className } = props;
+    const { content, className, isEditable, onChange } = props;
 
-    const content = parse(
-        html,
+    const jsx = parse(
+        content,
         /*
         Maybe TODO:
         {
@@ -34,5 +53,21 @@ export function Html(props: HtmlProps) {
         */
     );
 
-    return <div className={classNames(styles.html, className)}>{content}</div>;
+    return (
+        <div
+            className={classNames(styles.html, className)}
+            contentEditable={isEditable}
+            onInput={(event) => {
+                if (!onChange || !isEditable) {
+                    return;
+                }
+
+                const htmlContent = event.currentTarget.innerHTML satisfies string_html;
+
+                onChange(htmlContent);
+            }}
+        >
+            {jsx}
+        </div>
+    );
 }

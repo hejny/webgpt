@@ -1,3 +1,4 @@
+/* !!!!!!!!!! Extract as ShowcaseWelcomeSection */
 /* TODO: !!! Extract article css as separate file in export */
 
 .Article {
@@ -62,6 +63,8 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 .Article p {
     text-align: left;
 }
+
+/* TODO: !!! Nicer ol/ul */
 
 .Article ol,
 .Article ul {
