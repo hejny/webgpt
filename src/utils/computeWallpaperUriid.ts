@@ -35,3 +35,8 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string
 
     return `${nameParts.join('-')}-${sitePart}-${versionPart}`;
 }
+
+
+/**
+ * TODO: !!!! Deterministic ID
+ */

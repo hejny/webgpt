@@ -19,6 +19,7 @@ interface SaveBoardButtonProps extends Pick<IWallpaper, 'src' | 'prompt' | 'cont
 export function SaveBoardButton(props: SaveBoardButtonProps) {
     const { parentWallpaperId, src, prompt, content, colorStats, children } = props;
 
+    // TODO: DRY [💽]
     const newWallpaper = useMemo(() => {
         const title = extractTitleFromMarkdown(content) || 'Untitled';
         const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
@@ -45,9 +46,13 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
         console.log({ newWallpaper, insertResult });
 
         try {
-            const key = `likedStatus_${newWallpaper.id}`;
-            if (!window.localStorage.getItem(key)) {
-                window.localStorage.setItem(key, 'LIKE' satisfies keyof typeof LikedStatus);
+            const parentKey = `likedStatus_${newWallpaper.id}`;
+            const currentKey = `likedStatus_${newWallpaper.id}`;
+
+            if (window.localStorage.getItem(parentKey)) {
+                window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
+            } else if (!window.localStorage.getItem(currentKey)) {
+                window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
             }
         } catch (error) {
             // TODO: !!! [🧠] Handle situation when localStorage is exceeded

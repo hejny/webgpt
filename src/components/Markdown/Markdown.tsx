@@ -173,7 +173,7 @@ export function Markdown(props: IMarkdownProps) {
             <Html
                 className={className}
                 {...{ content: html, isEditable }}
-                onChange={(htmlContent) => {
+                onHtmlChange={(htmlContent) => {
                     if (!isEditable) {
                         return;
                     }
