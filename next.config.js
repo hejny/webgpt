@@ -34,6 +34,7 @@ const nextConfig = {
                 source: '/showcase/:wallpaper*',
                 destination: '/:wallpaper*',
                 permanent: true,
+                locale: false,
             },
         ];
     },
