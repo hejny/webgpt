@@ -4,6 +4,7 @@ import { forAnimationFrame, forTime } from 'waitasecond';
 import { BoundingBox, IVector, Vector } from 'xyzt';
 import { ISvgPath } from '../svgPath/ISvgPath';
 import { stringifySvgPath } from '../svgPath/stringifySvgPath';
+import { string_html } from '../typeAliases';
 
 // TODO: Use Collboard appereance
 const FADE_OUT_DURATION_MS = 1200;
@@ -54,7 +55,7 @@ export class Drawing extends Destroyable implements IDestroyable {
                     <femergenode in="SourceGraphic"></femergenode>
                 </femerge>
             </filter>
-        `);
+        `) satisfies string_html;
 
         /* not await */ this.loop();
     }

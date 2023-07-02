@@ -54,7 +54,7 @@ export async function exportAsHtml(wallpaper: IWallpaper, options: HtmlExportOpt
         if (styleElement.hasAttribute('data-export-ignore')) {
             continue;
         }
-        let css = styleElement.innerHTML;
+        let css = styleElement.innerHTML satisfies string_css;
         css = removeSourceMaps(css);
         styles.push(css);
     }
