@@ -1,7 +1,11 @@
 import { normalizeToKebabCase } from 'n12';
+import seedrandom from 'seedrandom';
+import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
 import { string_uriid } from './typeAliases';
+
+const URIID_VERSION = '1';
 
 export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string_uriid {
     const words = normalizeToKebabCase(wallpaper.title).split('-');
@@ -21,6 +25,16 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string
         }
     }
 
+    const {
+        // TODO: Download src and put in hash real pixel-content of the image
+        colorStats,
+    } = wallpaper;
+
+    const seed = JSON.stringify({ ...wallpaper, colorStats: serializeColorStats(colorStats) });
+    console.log('seed', seed);
+
+    seedrandom(seed, { global: true /* <- TODO: Some way how to unset this */ });
+
     /**
      * All chars are:
      * 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
@@ -29,14 +43,10 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string
      * 11 chars are on YouTube
      *
      */
-    const sitePart = randomString(1, '234567') + randomString(10, 'abcdefghijklmnopqrstuvwxyz234567');
+    const wallpaperPart =
+        URIID_VERSION +
+        randomString(1, 'abcdefghijklmnopqrstuvwxyz') +
+        randomString(10, 'abcdefghijklmnopqrstuvwxyz234567');
 
-    const versionPart = randomString(3, 'abcdefghijklmnopqrstuvwxyz234567');
-
-    return `${nameParts.join('-')}-${sitePart}-${versionPart}`;
+    return `${nameParts.join('-')}-${wallpaperPart}`;
 }
-
-
-/**
- * TODO: !!!! Deterministic ID
- */
