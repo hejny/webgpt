@@ -24,7 +24,7 @@ export function ShowcaseArticleSection() {
     const router = useRouter();
 
     const content = wallpaper.content;
-    const contentFormat = detectContentFormat(content /* <- !!!! Fix detection of new wallpapers */);
+    const contentFormat = detectContentFormat(content);
 
     const isEditable = !isPresenting;
     const onHtmlChange = debounce(async (newContent: string_html) => {

@@ -2,7 +2,7 @@ import { string_html, string_markdown } from './typeAliases';
 
 export function detectContentFormat(content: string_markdown | string_html): 'markdown' | 'html' {
     // check if the content starts with a valid HTML tag
-    const htmlRegex = /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/i;
+    const htmlRegex = /^\s*<([a-z0-9]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)/is;
     if (htmlRegex.test(content)) {
         return 'html';
     }
