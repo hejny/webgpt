@@ -9,6 +9,22 @@
 /**
  * Semantic helper
  *
+ * For example `"A cat wearing a hat"`
+ * @collboard-modules-sdk
+ */
+export type string_prompt = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"A cat wearing a hat --wallpaper --v 5.2"`
+ * @collboard-modules-sdk
+ */
+export type string_midjourney_prompt = string;
+
+/**
+ * Semantic helper
+ *
  * For example `"text/plain"` or `"application/collboard"`
  * @collboard-modules-sdk
  */
