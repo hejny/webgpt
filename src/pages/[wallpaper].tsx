@@ -80,7 +80,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     return {
         paths: (await getWallpapers()).map(({ id }) => `/${id}`), // <- Note: indicates which pages needs be created at build time
-        fallback: true,
+        fallback: 'blocking' /*!!!explain*/,
     };
 };
 
