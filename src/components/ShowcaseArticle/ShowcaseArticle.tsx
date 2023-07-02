@@ -80,7 +80,7 @@ export function ShowcaseArticleSection() {
                 <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>
             */}
-            {contentFormat}
+            
 
             {contentFormat === 'html' && <Html {...{ content, isEditable, onHtmlChange }} />}
             {contentFormat === 'markdown' && (
