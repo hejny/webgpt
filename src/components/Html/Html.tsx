@@ -30,14 +30,14 @@ interface HtmlProps {
      *
      * Note: This is used only when isEditable is true
      */
-    onChange?: (content: string_html) => void;
+    onHtmlChange?: (content: string_html) => void;
 }
 
 /**
  * @@@
  */
 export function Html(props: HtmlProps) {
-    const { content, className, isEditable, onChange } = props;
+    const { content, className, isEditable, onHtmlChange } = props;
 
     const jsx = parse(
         content,
@@ -58,13 +58,13 @@ export function Html(props: HtmlProps) {
             className={classNames(styles.html, className)}
             contentEditable={isEditable}
             onInput={(event) => {
-                if (!onChange || !isEditable) {
+                if (!onHtmlChange || !isEditable) {
                     return;
                 }
 
                 const htmlContent = event.currentTarget.innerHTML satisfies string_html;
 
-                onChange(htmlContent);
+                onHtmlChange(htmlContent);
             }}
         >
             {jsx}
