@@ -19,7 +19,7 @@ import { markdownConverter } from './markdownConverter';
  * @property {boolean} [isHashUsed] - Whether the article uses hash for navigation
  * @property {boolean} [isEnhanced] - Whether the article applies additional enhancements to the markdown
  */
-interface IArticleProps {
+interface IMarkdownProps {
     /**
      * Source markdown
      */
@@ -81,7 +81,7 @@ interface IArticleProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function Article(props: IArticleProps) {
+export function Markdown(props: IMarkdownProps) {
     const {
         content,
         className,

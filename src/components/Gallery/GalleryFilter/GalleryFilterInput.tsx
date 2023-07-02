@@ -1,10 +1,10 @@
 import { debounce } from 'lodash';
 import { useTranslation } from 'next-i18next';
-import { Article } from '../../../components/Article/Article';
 import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
+import { Markdown } from '../../Markdown/Markdown';
 import { Select } from '../../Select/Select';
 import { GalleryFilter, Order } from './GalleryFilter';
 import styles from './GalleryFilterInput.module.css';
@@ -59,7 +59,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 />
                 {color && (
                     <div onClick={() => setColor(undefined)}>
-                        <Article content="❌" isUsingOpenmoji />
+                        <Markdown content="❌" isUsingOpenmoji />
                     </div>
                 )}
             </div>

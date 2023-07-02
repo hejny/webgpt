@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { ReactNode, useLayoutEffect } from 'react';
 import { classNames } from '../../utils/classNames';
-import { Article } from '../Article/Article';
+import { Markdown } from '../Markdown/Markdown';
 import styles from './Modal.module.css';
 
 interface ModalProps {
@@ -53,7 +53,7 @@ export function Modal(props: ModalProps) {
                     </div>
                     <div className={styles.icons}>
                         <CloseModalLink>
-                            <Article content="✖" isUsingOpenmoji />
+                            <Markdown content="✖" isUsingOpenmoji />
                         </CloseModalLink>
                     </div>
                 </div>

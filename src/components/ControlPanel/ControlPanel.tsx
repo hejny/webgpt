@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
 import { IWallpaper } from '../../utils/IWallpaper';
-import { Article } from '../Article/Article';
+import { Markdown } from '../Markdown/Markdown';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 
@@ -49,7 +49,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     }
                 }
             >
-                <Article
+                <Markdown
                     content="🎲"
                     isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
                 />
@@ -58,7 +58,7 @@ export function ControlPanel(props: ControlPanelProps) {
             {/*
             Note: In the <Menu/>
             <OpenModalLink modal={'edit'} className={classNames( styles.button)} title="Edit this web">
-                <Article content="🖊" isUsingOpenmoji />
+                <Markdown content="🖊" isUsingOpenmoji />
             </OpenModalLink>
             */}
 
@@ -73,7 +73,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 className={classNames(/*'button',*/ styles.button)}
                 title="Show without the controls"
             >
-                <Article
+                <Markdown
                     content="▶"
                     isUsingOpenmoji
                     /* <- TODO: !!!
@@ -92,7 +92,7 @@ export function ControlPanel(props: ControlPanelProps) {
                 title="Whole gallery"
                 prefetch={false /* <- Note: Because gallery is enormous * /}
             >
-                <Article content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji * / />
+                <Markdown content="🖼" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji * / />
             </Link>
             */}
 
@@ -103,7 +103,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     (window as any).smartsupp('chat:open');
                 }}
             >
-                <Article content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
+                <Markdown content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
             </button>
         </div>
     );

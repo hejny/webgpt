@@ -4,7 +4,7 @@ import styles from './Section.module.css';
 
 /**
  * A function component that renders a section element ⁘
- * 
+ *
  * @param props - The props for the section component
  * @returns A JSX element representing the section
  */
@@ -28,7 +28,12 @@ export function Section({ id, children, className }: SectionProps) {
     id = id?.toLocaleLowerCase();
 
     return (
-        <div className={classNames(styles.section, className)} {...{ id } /* <- TODO: !!! Remove ids from sections (to use then in <Article> heading hashes) */}>
+        <div
+            className={classNames(styles.section, className)}
+            {
+                ...{ id } /* <- TODO: !!! Remove ids from sections (to use then in <Markdown> heading hashes) */
+            }
+        >
             {/* [0] <a href={`#${id}`}>{headChild}</a>{restChildren}*/}
             {children}
         </div>

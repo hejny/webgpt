@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 /**
  * A React hook that observes changes to window.location.hash.
- * 
+ *
  * @returns The current hash value.
  * @generator https://sharegpt.com/c/Jwq09Pe
  * @deprecated This hook is deprecated. Use Next.js useRouter instead.
@@ -29,5 +29,6 @@ export function useHash(): string {
 }
 
 /**
+ * TODO: This should be relevant for both <Html/> and  <Markdown/>
  * TODO: [🧠] Should be this named useHash or useFragment?
  */

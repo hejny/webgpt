@@ -10,7 +10,7 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
-import { Article } from '../Article/Article';
+import { Markdown } from '../Markdown/Markdown';
 import { Modal } from '../Modal/Modal';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
@@ -229,7 +229,7 @@ export function ExportModal(props: ExportModalProps) {
                         // disabled={!isFormComplete}
                         type="submit"
                     >
-                        <Article content="Get the web 🚀" isUsingOpenmoji />
+                        <Markdown content="Get the web 🚀" isUsingOpenmoji />
                     </button>
                 </label>
 

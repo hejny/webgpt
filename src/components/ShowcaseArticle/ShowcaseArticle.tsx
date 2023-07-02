@@ -2,8 +2,8 @@ import { detectContentFormat } from '../../utils/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
-import { Article } from '../Article/Article';
 import { Html } from '../Html/Html';
+import { Markdown } from '../Markdown/Markdown';
 import { Section } from '../Section/Section';
 import styles from './ShowcaseArticle.module.css';
 
@@ -36,7 +36,7 @@ export function ShowcaseArticleSection() {
 
             {contentFormat === 'html' && <Html {...{ content, isEditable, onHtmlChange }} />}
             {contentFormat === 'markdown' && (
-                <Article
+                <Markdown
                     isusingFonts
                     isUsingOpenmoji={
                         false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */
