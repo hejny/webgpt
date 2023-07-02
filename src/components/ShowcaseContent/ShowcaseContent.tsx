@@ -5,7 +5,7 @@ import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpape
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
 import { FooterSection } from '../Footer/Footer';
 import { Menu } from '../Menu/Menu';
-import { ShowcaseWelcomeSection } from '../Welcome/ShowcaseWelcome';
+import { ShowcaseArticleSection } from '../ShowcaseArticle/ShowcaseArticle';
 import styles from './ShowcaseContent.module.css';
 
 export function ShowcaseContent() {
@@ -26,7 +26,7 @@ export function ShowcaseContent() {
                 <TiledBackground />
             </div>
             <main>
-                <ShowcaseWelcomeSection />
+                <ShowcaseArticleSection />
                 {/*<ReferencesSection variant="SHORT" />*/}
             </main>
             <footer>
@@ -37,6 +37,7 @@ export function ShowcaseContent() {
 }
 
 /**
- * TODO: !!!! Add here a color picker for the palette
+ * TODO: !!!! Add here a color picker for the palette @see https://www.npmjs.com/package/react-color
+ * TODO: Rename ACRY ShowcaseContent to ShowcaseLayout
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */

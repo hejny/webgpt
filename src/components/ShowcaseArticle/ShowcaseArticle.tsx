@@ -1,16 +1,16 @@
-import { Article } from '../../components/Article/Article';
-import { Section } from '../../components/Section/Section';
 import { detectContentFormat } from '../../utils/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
+import { Article } from '../Article/Article';
 import { Html } from '../Html/Html';
-import styles from './Welcome.module.css';
+import { Section } from '../Section/Section';
+import styles from './ShowcaseArticle.module.css';
 
 /**
  * @@@
  */
-export function ShowcaseWelcomeSection() {
+export function ShowcaseArticleSection() {
     const wallpaper = useWallpaper();
 
     const { isPresenting } = useMode();
@@ -25,7 +25,7 @@ export function ShowcaseWelcomeSection() {
     };
 
     return (
-        <Section id="Welcome" className={styles.WelcomeSection}>
+        <Section id="home" className={styles.Article}>
             {/*
             TODO: 
             <h1 className={styles.handritten}>

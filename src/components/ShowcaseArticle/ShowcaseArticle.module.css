@@ -1,9 +1,14 @@
-/* !!!!!!!!!! Extract as ShowcaseWelcomeSection */
 /* TODO: !!! Extract article css as separate file in export */
 
 .Article {
+    margin-top: 0px;
     text-align: center;
 }
+
+.Article .handritten {
+    font-size: 20px;
+}
+
 /*
 TODO: !! It is not looking good when there is <h1> in middle of texts
 */

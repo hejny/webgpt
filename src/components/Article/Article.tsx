@@ -3,14 +3,12 @@ import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
 import { FONTS } from '../../../config';
 import { ExportContext } from '../../pages/_app';
-import { classNames } from '../../utils/classNames';
 import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { string_markdown } from '../../utils/typeAliases';
 import { Html } from '../Html/Html';
-import styles from './Article.module.css';
 import { markdownConverter } from './markdownConverter';
 
 /**
@@ -173,7 +171,7 @@ export function Article(props: IArticleProps) {
                 />
             )}
             <Html
-                className={classNames(styles.Article, className)}
+                className={className}
                 {...{ content: html, isEditable }}
                 onChange={(htmlContent) => {
                     if (!isEditable) {
