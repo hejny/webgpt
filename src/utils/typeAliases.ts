@@ -51,6 +51,14 @@ export type string_char = string;
 /**
  * Semantic helper
  *
+ * For example `"Ainautes"`
+ * @collboard-modules-sdk
+ */
+export type string_title = string;
+
+/**
+ * Semantic helper
+ *
  * For example `"<div>Hello World!</div>"`
  * @collboard-modules-sdk
  */

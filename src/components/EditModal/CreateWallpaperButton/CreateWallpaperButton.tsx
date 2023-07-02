@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useEffect, useMemo } from 'react';
 import { computeWallpaperUriid } from '../../../utils/computeWallpaperUriid';
-import { extractTitleFromMarkdown } from '../../../utils/content/extractTitleFromMarkdown';
+import { extractTitleFromContent } from '../../../utils/content/extractTitleFromContent';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { serializeColorStats } from '../../../utils/image/utils/serializeColorStats';
 import { IWallpaper } from '../../../utils/IWallpaper';
@@ -21,7 +21,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
 
     // TODO: DRY [💽]
     const newWallpaper = useMemo(() => {
-        const title = extractTitleFromMarkdown(content) || 'Untitled';
+        const title = extractTitleFromContent(content) || 'Untitled';
         const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
         const newAnonymousWallpaper = {
             parent: parentWallpaperId,

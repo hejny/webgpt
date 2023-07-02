@@ -10,7 +10,7 @@ import { join } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { FONTS, MAX_CHARS_IN_TITLE, OPENAI_API_KEY } from '../../config';
-import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
+import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
 import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
@@ -103,7 +103,7 @@ async function repairWallpapersContent({
 
             let content = await readFile(contentFilePath, 'utf-8');
             const originalContent = content;
-            let title = extractTitleFromMarkdown(content);
+            let title = extractTitleFromContent(content);
 
             if (isRepairingFonts) {
                 let font =

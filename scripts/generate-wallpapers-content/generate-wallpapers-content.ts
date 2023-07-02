@@ -10,7 +10,7 @@ import { join, relative } from 'path';
 import spaceTrim from 'spacetrim';
 import { forTime } from 'waitasecond';
 import { FONTS, OPENAI_API_KEY } from '../../config';
-import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
+import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
@@ -108,7 +108,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
             let content = await askGpt(contentPrompt, false);
 
             for (let i = 0; i < 3; i++) {
-                const title = extractTitleFromMarkdown(content);
+                const title = extractTitleFromContent(content);
 
                 // TODO: [💵] DRY this checks
                 if (title === null) {

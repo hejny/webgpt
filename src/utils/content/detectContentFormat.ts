@@ -1,4 +1,4 @@
-import { string_html, string_markdown } from './typeAliases';
+import { string_html, string_markdown } from '../typeAliases';
 
 export function detectContentFormat(content: string_markdown | string_html): 'markdown' | 'html' {
     // check if the content starts with a valid HTML tag

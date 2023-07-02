@@ -4,7 +4,7 @@ import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
 import { COLORSTATS_DEFAULT_COMPUTE, LIMIT_WALLPAPER_COUNT, LIMIT_WALLPAPER_EXCLUDE } from '../../../config';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
-import { extractTitleFromMarkdown } from '../../../src/utils/content/extractTitleFromMarkdown';
+import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
@@ -98,7 +98,7 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
 
         content = spaceTrim(content);
 
-        const title = extractTitleFromMarkdown(content) || 'Untitled';
+        const title = extractTitleFromContent(content) || 'Untitled';
 
         const src = metadata!.image_paths![0 /* <- TODO: Detect different than 1 item */];
         const prompt = metadata!.prompt;

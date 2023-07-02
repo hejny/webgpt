@@ -4,7 +4,7 @@ import commander from 'commander';
 import { readFile, rm } from 'fs/promises';
 import { join } from 'path';
 import { FONTS } from '../../config';
-import { extractTitleFromMarkdown } from '../../src/utils/content/extractTitleFromMarkdown';
+import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
 import { removeMarkdownComments } from '../../src/utils/content/removeMarkdownComments';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
@@ -47,9 +47,11 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         logBeforeEachWork: 'contentFilePath',
         async makeWork({ metadataFilePath: metadataFilePath, contentFilePath }) {
             let content = await readFile(contentFilePath, 'utf-8');
-            const font = content.match(/<!--font:(?<font>.*)-->/)?.groups?.font /* <- TODO: There can be more fonts in document */;
+            const font =
+                content.match(/<!--font:(?<font>.*)-->/)?.groups
+                    ?.font; /* <- TODO: There can be more fonts in document */
             content = removeMarkdownComments(content);
-            const title = extractTitleFromMarkdown(content);
+            const title = extractTitleFromContent(content);
 
             // TODO: [💵] DRY this checks
             if (title === null) {

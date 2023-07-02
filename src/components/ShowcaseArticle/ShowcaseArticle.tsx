@@ -1,8 +1,8 @@
 import { debounce } from 'lodash';
 import { useRouter } from 'next/router';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
-import { extractTitleFromMarkdown } from '../../utils/content/extractTitleFromMarkdown';
-import { detectContentFormat } from '../../utils/detectContentFormat';
+import { detectContentFormat } from '../../utils/content/detectContentFormat';
+import { extractTitleFromContent } from '../../utils/content/extractTitleFromContent';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -32,7 +32,7 @@ export function ShowcaseArticleSection() {
 
         // TODO: DRY [💽]
         const { prompt, src, colorStats } = wallpaper;
-        const title = extractTitleFromMarkdown(/* <- !!!!! extractTitleFromContent */ content) || 'Untitled';
+        const title = extractTitleFromContent(newContent) || 'Untitled';
         const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
         const newAnonymousWallpaper = {
             parent: wallpaper.id,

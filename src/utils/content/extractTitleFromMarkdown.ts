@@ -1,6 +1,5 @@
+import { string_title } from '../typeAliases';
 import { removeMarkdownComments } from './removeMarkdownComments';
-
-const EXCLUDED_WORDS = ['H-edu'];
 
 /**
  * Extract title from markdown
@@ -8,7 +7,7 @@ const EXCLUDED_WORDS = ['H-edu'];
  * @param contentText markdown
  * @returns title
  */
-export function extractTitleFromMarkdown(contentText: string): string | null {
+export function extractTitleFromMarkdown(contentText: string): string_title | null {
     contentText = removeMarkdownComments(contentText);
     return contentText.match(/^#\s*(?<title>.*)\s*$/m)?.groups?.title ?? null;
 }
