@@ -155,7 +155,6 @@ export function EditModal(props: EditModalProps) {
 
 /**
  * TODO: !!! Color of modal UI should be indipendent of wallpaper
- * TODO: !!!! Your content should be exportable + show immediatelly download button
  * TODO: !!! Fix unsaved changes
  * TODO: !!! [🧠] Split into info, edit and export part
  * TODO: !!! Allow to apply color-stats with different algorithms

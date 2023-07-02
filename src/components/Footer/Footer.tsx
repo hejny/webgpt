@@ -36,7 +36,6 @@ export function FooterSection() {
                 <li>
                     <Link
                         href={{
-                            // TODO: !!!! This should lead to AI web app not the exported page
                             pathname: '/[wallpaper]',
                             query: {
                                 wallpaper: router.query.wallpaper,
