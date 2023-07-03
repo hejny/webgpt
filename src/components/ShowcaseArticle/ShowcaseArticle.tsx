@@ -71,7 +71,7 @@ export function ShowcaseArticleSection() {
                 window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
             }
         } catch (error) {
-            // TODO: !!! [🧠] Handle situation when localStorage is exceeded
+            // TODO: !!! [🧠] Handle situation when window.localStorage is exceeded
             console.log(error);
         }
 

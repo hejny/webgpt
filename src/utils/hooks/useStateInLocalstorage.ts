@@ -29,7 +29,7 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
     const [likedStatus, setLikedStatus] = useState<T>(initialState);
 
     useEffect(() => {
-        const stateFromLocalStorage = localStorage.getItem(key);
+        const stateFromLocalStorage = window.localStorage.getItem(key);
         if (stateFromLocalStorage) {
             setLikedStatus(stateFromLocalStorage as T);
         } else if (likedStatus !== initialState) {
@@ -38,7 +38,7 @@ export function useStateInLocalstorage<T extends string>(key: string, initialSta
     }, [key, initialState, likedStatus]);
 
     const persistLikedStatus = (likedStatus: T) => {
-        localStorage.setItem(key, likedStatus);
+        window.localStorage.setItem(key, likedStatus);
         setLikedStatus(likedStatus);
     };
 

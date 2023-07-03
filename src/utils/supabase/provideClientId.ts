@@ -12,7 +12,7 @@ export function provideClientId(): uuid {
         return clientId;
     }
 
-    clientId = localStorage.getItem(`clientId`) as uuid;
+    clientId = window.localStorage.getItem(`clientId`) as uuid;
 
     // TODO: Use here isValidUuid
 
@@ -21,7 +21,7 @@ export function provideClientId(): uuid {
     }
 
     clientId = randomUuid();
-    localStorage.setItem(`clientId`, clientId as uuid);
+    window.localStorage.setItem(`clientId`, clientId as uuid);
 
     return clientId as uuid;
 }

@@ -74,7 +74,7 @@ export function filterWallpapers(
     }
 
     if (likedStatus !== 'ALL') {
-        const localStorageWallpapersLikedStatuses = Object.fromEntries(
+        const window.localStorageWallpapersLikedStatuses = Object.fromEntries(
             Object.entries(localStorage)
                 .filter(([key]) => key.startsWith('likedStatus_'))
                 .filter(([key, value]) => value !== 'NONE'),
@@ -84,7 +84,7 @@ export function filterWallpapers(
 
         if (likedStatus !== 'NONE') {
             wallpapers = wallpapers.filter(
-                (wallpaper) => localStorageWallpapersLikedStatuses[`likedStatus_${wallpaper.id}`] === likedStatus,
+                (wallpaper) => window.localStorageWallpapersLikedStatuses[`likedStatus_${wallpaper.id}`] === likedStatus,
             );
         } else {
             wallpapers = wallpapers.filter(
