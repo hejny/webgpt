@@ -62,7 +62,7 @@ export function ShowcaseArticleSection() {
         console.log({ newWallpaper, insertResult });
 
         try {
-            const parentKey = `likedStatus_${newWallpaper.id}`;
+            const parentKey = `likedStatus_${wallpaper.id}`;
             const currentKey = `likedStatus_${newWallpaper.id}`;
 
             if (window.localStorage.getItem(parentKey)) {
