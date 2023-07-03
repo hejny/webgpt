@@ -1,7 +1,7 @@
 import { Barlow_Condensed } from '@next/font/google';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { ReactNode, useLayoutEffect } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { classNames } from '../../utils/classNames';
 import { Markdown } from '../Markdown/Markdown';
 import styles from './Modal.module.css';
@@ -20,7 +20,7 @@ export function Modal(props: ModalProps) {
     const { title, children } = props;
 
     // Note: Disable scrolling on whole page when modal is open BUT keeps scroll position
-    useLayoutEffect(() => {
+    useEffect(() => {
         const bodyScrollPrevent = (event: Event) => {
             // console.log(event.target);
 
