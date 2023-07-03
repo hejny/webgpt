@@ -98,6 +98,12 @@
             "focus": true
         },
         {
+            "name": "🏭🥫 Generate Supabase types",
+            "commands": ["npx supabase gen types typescript --db-url DATABASE_URL > src/utils/supabase/types.ts"],
+            "onlySingle": true,
+            "focus": true
+        },
+        {
             "name": "👊 Kill all 4444",
             "commands": ["npx kill-port 4444 "],
             "onlySingle": true,
