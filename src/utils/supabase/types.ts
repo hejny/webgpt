@@ -12,23 +12,20 @@ export interface Database {
       Reaction: {
         Row: {
           author: string
-          createdAt: string | null
+          createdAt: string
           likedStatus: string
-          updatedAt: string | null
           wallpaperId: string
         }
         Insert: {
           author: string
-          createdAt?: string | null
+          createdAt?: string
           likedStatus: string
-          updatedAt?: string | null
           wallpaperId: string
         }
         Update: {
           author?: string
-          createdAt?: string | null
+          createdAt?: string
           likedStatus?: string
-          updatedAt?: string | null
           wallpaperId?: string
         }
         Relationships: [
