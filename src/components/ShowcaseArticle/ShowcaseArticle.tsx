@@ -3,9 +3,12 @@ import { useRouter } from 'next/router';
 import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { extractTitleFromContent } from '../../utils/content/extractTitleFromContent';
+import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
+import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { serializeColorStats } from '../../utils/image/utils/serializeColorStats';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
@@ -23,7 +26,9 @@ import styles from './ShowcaseArticle.module.css';
  * @@@
  */
 export function ShowcaseArticleSection() {
-    const wallpaper = useWallpaper();
+    const wallpaperId = useCurrentWallpaperId();
+    const wallpaperSubject = useWallpaperSubject(wallpaperId);
+    const { value: wallpaper } = useObservable(wallpaperSubject);
     const { isPresenting } = useMode();
     const router = useRouter();
 
@@ -31,52 +36,54 @@ export function ShowcaseArticleSection() {
     const contentFormat = detectContentFormat(content);
 
     const isEditable = !isPresenting;
-    const onHtmlChange = debounce(async (newContent: string_html) => {
-        console.info('newContent', newContent);
+    const onHtmlChange =
+        isEditable &&
+        debounce(async (newContent: string_html) => {
+            console.info('newContent', newContent);
 
-        // TODO: DRY [💽]
-        const { prompt, src, colorStats } = wallpaper;
-        const title = extractTitleFromContent(newContent) || 'Untitled';
-        const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
-        const newAnonymousWallpaper = {
-            parent: wallpaper.id,
-            src,
-            prompt,
-            colorStats,
-            content: newContent,
-            title,
-            keywords,
-        };
+            // TODO: DRY [💽]
+            const { prompt, src, colorStats } = wallpaper;
+            const title = extractTitleFromContent(newContent) || 'Untitled';
+            const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
+            const newAnonymousWallpaper = {
+                parent: wallpaper.id,
+                src,
+                prompt,
+                colorStats,
+                content: newContent,
+                title,
+                keywords,
+            };
 
-        const newWallpaper = {
-            id: computeWallpaperUriid(newAnonymousWallpaper),
-            ...newAnonymousWallpaper,
-            colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
-            isPublic: false,
-            author: provideClientId(),
-        } as Database['public']['Tables']['Wallpaper']['Insert'];
+            const newWallpaper = {
+                id: computeWallpaperUriid(newAnonymousWallpaper),
+                ...newAnonymousWallpaper,
+                colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
+                isPublic: false,
+                author: provideClientId(),
+            } as Database['public']['Tables']['Wallpaper']['Insert'];
 
-        const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
+            const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
 
-        // TODO: !! Util isInsertSuccessfull (status===201)
-        console.log({ newWallpaper, insertResult });
+            // TODO: !! Util isInsertSuccessfull (status===201)
+            console.log({ newWallpaper, insertResult });
 
-        try {
-            const parentKey = `likedStatus_${newWallpaper.id}`;
-            const currentKey = `likedStatus_${newWallpaper.id}`;
+            try {
+                const parentKey = `likedStatus_${newWallpaper.id}`;
+                const currentKey = `likedStatus_${newWallpaper.id}`;
 
-            if (window.localStorage.getItem(parentKey)) {
-                window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
-            } else if (!window.localStorage.getItem(currentKey)) {
-                window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
+                if (window.localStorage.getItem(parentKey)) {
+                    window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
+                } else if (!window.localStorage.getItem(currentKey)) {
+                    window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
+                }
+            } catch (error) {
+                // TODO: !!! [🧠] Handle situation when window.localStorage is exceeded
+                console.log(error);
             }
-        } catch (error) {
-            // TODO: !!! [🧠] Handle situation when window.localStorage is exceeded
-            console.log(error);
-        }
 
-        router.push(`/${newWallpaper.id}`);
-    }, 1000 /* <- TODO: !!! Figure out the best strategy how to change */);
+            router.push(`/${newWallpaper.id}`);
+        }, 1000 /* <- TODO: !!! Figure out the best strategy how to change */);
 
     return (
         <Section id="home" className={styles.Article}>
