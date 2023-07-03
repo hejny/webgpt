@@ -69,7 +69,6 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
     text-align: left;
 }
 
-
 .Article ol,
 .Article ul {
     text-align: left;
@@ -141,6 +140,10 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 .Article .button.primary {
     color: var(--palette-3);
     border: 1px solid var(--palette-3);
+}
+
+.Article [contenteditable] {
+    outline: 0px solid transparent;
 }
 
 /*
