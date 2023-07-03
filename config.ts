@@ -58,7 +58,7 @@ export const FONTS = [
     'Cinzel Decorative',
     'Cormorant Garamond',
     // TODO: !! List more
-];
+] as const;
 
 export const MAX_CHARS_IN_TITLE = 'Futuristic Cityscape Wallpaper'.length - 7;
 //                                'Tvořím něco z ničeho nic'

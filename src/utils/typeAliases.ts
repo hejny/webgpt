@@ -1,5 +1,7 @@
 // TODO: !! Cleanup
 
+import { FONTS } from '../../config';
+
 /*
 .--------------------------------------------------.
 | Theese string_whatever are just semantic helpers |
@@ -55,6 +57,14 @@ export type string_char = string;
  * @collboard-modules-sdk
  */
 export type string_title = string;
+
+/**
+ * Semantic helper
+ *
+ * For example `"Poppins"`
+ * @collboard-modules-sdk
+ */
+export type string_font = typeof FONTS[number];
 
 /**
  * Semantic helper

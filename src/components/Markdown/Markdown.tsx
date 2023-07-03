@@ -1,8 +1,6 @@
-import { useContext, useMemo } from 'react';
+import { useMemo } from 'react';
 import { BehaviorSubject } from 'rxjs';
 import spaceTrim from 'spacetrim';
-import { FONTS } from '../../../config';
-import { ExportContext } from '../../pages/_app';
 import { emojifyMarkdown } from '../../utils/content/emojifyMarkdown';
 import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
@@ -32,6 +30,8 @@ interface IMarkdownProps {
 
     /**
      * Are tags <!--font:Poppins--> detected and applied
+     *
+     * Note: When you use this you need to include the fonts into the page for example by using <Fonts/> component
      */
     isusingFonts?: boolean;
 
@@ -92,7 +92,6 @@ export function Markdown(props: IMarkdownProps) {
         onMarkdownChange,
         onHtmlChange,
     } = props;
-    const { isExported } = useContext(ExportContext);
 
     // [0] const hash = useHash();
 
@@ -154,22 +153,6 @@ export function Markdown(props: IMarkdownProps) {
 
     return (
         <>
-            {!isExported && isusingFonts && (
-                <style
-                    dangerouslySetInnerHTML={{
-                        /* [🎗] */
-                        __html: FONTS.filter((font) => html.includes(font))
-                            .map(
-                                (font) =>
-                                    // TODO: Merge into one import
-                                    `@import url(https://fonts.googleapis.com/css2?family=${font
-                                        .split(' ')
-                                        .join('+')}&display=swap);`,
-                            )
-                            .join('\n'),
-                    }}
-                />
-            )}
             <Html
                 className={className}
                 {...{ content: html, isEditable }}

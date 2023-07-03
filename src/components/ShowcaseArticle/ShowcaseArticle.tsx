@@ -9,6 +9,8 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { serializeColorStats } from '../../utils/image/utils/serializeColorStats';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { string_html } from '../../utils/typeAliases';
+import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
+import { Fonts } from '../Fonts/Fonts';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Html } from '../Html/Html';
 import { Markdown } from '../Markdown/Markdown';
@@ -80,7 +82,8 @@ export function ShowcaseArticleSection() {
                 <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>
             */}
-            
+
+            <Fonts fonts={extractFontsFromContent(content)} />
 
             {contentFormat === 'html' && <Html {...{ content, isEditable, onHtmlChange }} />}
             {contentFormat === 'markdown' && (
