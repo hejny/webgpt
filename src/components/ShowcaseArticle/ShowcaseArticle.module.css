@@ -71,10 +71,25 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
 
 .Article ol,
 .Article ul {
+    /*/
+    outline: 1px dotted red !important;
+    /**/
+
     text-align: left;
+    margin-top: 10px;
+    margin-bottom: 30px;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-right: 20px;
 }
+
+@media (max-width: 600px) {
+    .Article ol,
+    .Article ul {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 .Article ul {
     list-style-type: disc;
 }
