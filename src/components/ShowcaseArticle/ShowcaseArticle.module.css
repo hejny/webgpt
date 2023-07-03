@@ -69,12 +69,12 @@ TODO: !! It is not looking good when there is <h1> in middle of texts
     text-align: left;
 }
 
-/* TODO: !!! Nicer ol/ul */
 
 .Article ol,
 .Article ul {
-    margin-left: 50px;
-    margin-bottom: 50px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .Article ul {
     list-style-type: disc;
