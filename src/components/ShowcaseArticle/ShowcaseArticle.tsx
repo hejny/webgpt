@@ -7,7 +7,6 @@ import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useMode } from '../../utils/hooks/useMode';
 import { useObservable } from '../../utils/hooks/useObservable';
-import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
 import { serializeColorStats } from '../../utils/image/utils/serializeColorStats';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
@@ -69,7 +68,7 @@ export function ShowcaseArticleSection() {
             console.log({ newWallpaper, insertResult });
 
             try {
-                const parentKey = `likedStatus_${newWallpaper.id}`;
+                const parentKey = `likedStatus_${wallpaper.id}`;
                 const currentKey = `likedStatus_${newWallpaper.id}`;
 
                 if (window.localStorage.getItem(parentKey)) {
