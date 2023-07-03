@@ -9,8 +9,40 @@ export type Json =
 export interface Database {
   public: {
     Tables: {
+      Reaction: {
+        Row: {
+          author: string
+          createdAt: string | null
+          likedStatus: string
+          updatedAt: string | null
+          wallpaperId: string
+        }
+        Insert: {
+          author: string
+          createdAt?: string | null
+          likedStatus: string
+          updatedAt?: string | null
+          wallpaperId: string
+        }
+        Update: {
+          author?: string
+          createdAt?: string | null
+          likedStatus?: string
+          updatedAt?: string | null
+          wallpaperId?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "Reaction_wallpaperId_fkey"
+            columns: ["wallpaperId"]
+            referencedRelation: "Wallpaper"
+            referencedColumns: ["id"]
+          }
+        ]
+      }
       Site: {
         Row: {
+          author: string | null
           createdAt: string | null
           id: number
           note: string | null
@@ -20,6 +52,7 @@ export interface Database {
           wallpaperId: string | null
         }
         Insert: {
+          author?: string | null
           createdAt?: string | null
           id?: number
           note?: string | null
@@ -29,6 +62,7 @@ export interface Database {
           wallpaperId?: string | null
         }
         Update: {
+          author?: string | null
           createdAt?: string | null
           id?: number
           note?: string | null
@@ -41,6 +75,7 @@ export interface Database {
       }
       SupportRequest: {
         Row: {
+          author: string | null
           createdAt: string | null
           from: string | null
           id: number
@@ -49,6 +84,7 @@ export interface Database {
           note: string | null
         }
         Insert: {
+          author?: string | null
           createdAt?: string | null
           from?: string | null
           id?: number
@@ -57,6 +93,7 @@ export interface Database {
           note?: string | null
         }
         Update: {
+          author?: string | null
           createdAt?: string | null
           from?: string | null
           id?: number
@@ -68,10 +105,12 @@ export interface Database {
       }
       Wallpaper: {
         Row: {
+          author: string | null
           colorStats: Json | null
           content: string | null
           createdAt: string | null
           id: string
+          isPublic: boolean
           keywords: string[] | null
           parent: string | null
           prompt: string | null
@@ -79,10 +118,12 @@ export interface Database {
           title: string | null
         }
         Insert: {
+          author?: string | null
           colorStats?: Json | null
           content?: string | null
           createdAt?: string | null
           id: string
+          isPublic?: boolean
           keywords?: string[] | null
           parent?: string | null
           prompt?: string | null
@@ -90,10 +131,12 @@ export interface Database {
           title?: string | null
         }
         Update: {
+          author?: string | null
           colorStats?: Json | null
           content?: string | null
           createdAt?: string | null
           id?: string
+          isPublic?: boolean
           keywords?: string[] | null
           parent?: string | null
           prompt?: string | null

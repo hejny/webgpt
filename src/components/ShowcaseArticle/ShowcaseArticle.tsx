@@ -8,6 +8,8 @@ import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { serializeColorStats } from '../../utils/image/utils/serializeColorStats';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { provideClientId } from '../../utils/supabase/provideClientId';
+import { Database } from '../../utils/supabase/types';
 import { string_html } from '../../utils/typeAliases';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
@@ -50,7 +52,9 @@ export function ShowcaseArticleSection() {
             id: computeWallpaperUriid(newAnonymousWallpaper),
             ...newAnonymousWallpaper,
             colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
-        };
+            isPublic: false,
+            author: provideClientId(),
+        } as Database['public']['Tables']['Wallpaper']['Insert'];
 
         const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
 

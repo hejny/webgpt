@@ -244,12 +244,19 @@ export type string_host = string;
 export type string_email = string;
 
 /**
- * Semantic helper
+ * Branded type for UUIDs version 4
+ * This will not allow to pass some random string where should be only a valid UUID
+ *
+ * Use utils:
+ *   - `randomUuid` to generate
+ *   - `isValidUuid  to check validity
  *
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  * @collboard-modules-sdk
  */
-export type string_uuid = string;
+export type uuid = string & {
+    __type: 'UUID' /* <- TODO: [0] What is the best shape of the additional object in branded types */;
+};
 
 /**
  * Semantic helper
@@ -257,7 +264,7 @@ export type string_uuid = string;
  * For example `"5a0a153d-7be9-4018-9eda-e0e2e2b89bd9"`
  * @collboard-modules-sdk
  */
-export type string_wallpaper_id = string_uuid | string_uriid;
+export type string_wallpaper_id = uuid | string_uriid;
 
 /**
  * Semantic helper
@@ -267,7 +274,7 @@ export type string_wallpaper_id = string_uuid | string_uriid;
  * For example `"5a0a153d"`
  * @collboard-modules-sdk
  */
-export type string_uuid_first_segment = string;
+export type uuid_first_segment = string;
 
 /**
  * Semantic helper

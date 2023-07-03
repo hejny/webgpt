@@ -8,6 +8,7 @@ import { induceFileDownload } from '../../export/utils/induceFileDownload';
 import { classNames } from '../../utils/classNames';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { Markdown } from '../Markdown/Markdown';
@@ -73,6 +74,7 @@ export function ExportModal(props: ExportModalProps) {
                                     .href /* <- TODO: [🎞] Maybe do here some URL normalization */,
                                 ownerEmail: email,
                                 plan,
+                                author: provideClientId(),
                             },
                         ]);
                     console.info('⬆', { insertSiteResult });
@@ -89,19 +91,20 @@ export function ExportModal(props: ExportModalProps) {
                             .insert([
                                 {
                                     from: email,
+                                    author: provideClientId(),
                                     message: spaceTrim(`
-                                 Hi,
-                                 ${
-                                     isHelpNeeded
-                                         ? `I need help with setting up my website.`
-                                         : `I am interested in your ${plan} plan.`
-                                 }
-                                 ${!isUrlUnsure ? `` : `I am not sure about my URL.`}
+                                        Hi,
+                                        ${
+                                            isHelpNeeded
+                                                ? `I need help with setting up my website.`
+                                                : `I am interested in your ${plan} plan.`
+                                        }
+                                        ${!isUrlUnsure ? `` : `I am not sure about my URL.`}
 
-                                 ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
-                                 My plan: ${plan}
-                                 My system: ${system}
-                             `),
+                                        ${!publicUrl ? '' : `My URL: ${publicUrl.href}`}
+                                        My plan: ${plan}
+                                        My system: ${system}
+                                    `),
                                 },
                             ]);
 

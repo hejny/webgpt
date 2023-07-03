@@ -6,6 +6,8 @@ import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpap
 import { serializeColorStats } from '../../../utils/image/utils/serializeColorStats';
 import { IWallpaper } from '../../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../../utils/supabase/getSupabaseForBrowser';
+import { provideClientId } from '../../../utils/supabase/provideClientId';
+import { Database } from '../../../utils/supabase/types';
 import { string_wallpaper_id } from '../../../utils/typeAliases';
 import { parseKeywordsFromWallpaper } from '../../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 
@@ -36,7 +38,9 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
             id: computeWallpaperUriid(newAnonymousWallpaper),
             ...newAnonymousWallpaper,
             colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
-        };
+            isPublic: false,
+            author: provideClientId(),
+        } as Database['public']['Tables']['Wallpaper']['Insert'];
     }, [parentWallpaperId, src, prompt, content, colorStats]);
 
     const persistWallpaper = async () => {

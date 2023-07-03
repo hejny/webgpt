@@ -2,10 +2,10 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { spaceTrim } from 'spacetrim';
 import { NEXT_PUBLIC_URL } from '../../../config';
 import { prettifyJavascript } from '../../export/utils/prettifyJavascript';
-import { string_uuid } from '../../utils/typeAliases';
+import { uuid } from '../../utils/typeAliases';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
-async function register(wallpaperId: string_uuid) {
+async function register(wallpaperId: uuid) {
     console.info('🔌', 'Registering your page');
 
     console.info('🔌', 'hostname', window.location.hostname);
