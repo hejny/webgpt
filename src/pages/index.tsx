@@ -2,9 +2,8 @@ import { Barlow_Condensed } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
-import { IWallpaper } from '../../src/utils/IWallpaper';
+import { IWallpaperSerialized } from '../../src/utils/IWallpaper';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { GallerySection } from '../components/Gallery/Gallery';
 import styles from '../styles/static.module.css';
@@ -15,7 +14,7 @@ import { hydrateWallpapers } from '../utils/hydrateWallpapers';
 const font = Barlow_Condensed({ weight: '400', style: 'normal', subsets: ['latin', 'latin-ext'] });
 
 export interface GalleryPageProps {
-    wallpapers: Array<JsonObject & IWallpaper>;
+    wallpapers: Array<IWallpaperSerialized>;
 }
 
 export default function GalleryPage({ wallpapers }: GalleryPageProps) {
@@ -61,9 +60,10 @@ export async function getStaticProps({ locale }: { locale: string }) {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
             wallpapers: (await getWallpapers()).map((fullWallpaper) => {
-                const { id, src, colorStats, title, keywords } = fullWallpaper;
+                const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
                 return {
                     id,
+                    parent,
                     src,
                     prompt: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     colorStats /* <- TODO: !! Also reduce colorStats */,
@@ -71,7 +71,9 @@ export async function getStaticProps({ locale }: { locale: string }) {
                     title,
                     content: '[🟥]' /* <- Note: [🟥] No need to pass everything into index page */,
                     keywords,
-                } satisfies IWallpaper;
+                    isPublic,
+                    author,
+                } satisfies IWallpaperSerialized;
             }),
         },
     };

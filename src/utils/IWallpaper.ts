@@ -1,7 +1,15 @@
 import { string_keyword } from 'n12';
 import { IImageColorStats } from './image/utils/IImageColorStats';
 import { IMidjourneyJob } from './IMidjourneyJob';
-import { string_midjourney_prompt, string_url, string_wallpaper_id } from './typeAliases';
+import { Json } from './supabase/types';
+import {
+    string_html,
+    string_markdown,
+    string_midjourney_prompt,
+    string_url,
+    string_wallpaper_id,
+    uuid,
+} from './typeAliases';
 
 export interface IWallpaperProps {
     width: number;
@@ -10,24 +18,32 @@ export interface IWallpaperProps {
 
 export interface IWallpaper {
     id: string_wallpaper_id;
-    parent?: string_wallpaper_id;
+    parent: string_wallpaper_id | null;
+    author: uuid;
+    isPublic: boolean;
     src: string_url /* <- Note: Not using URL objects because of serialization */;
-    prompt: string_midjourney_prompt;
+    prompt: string_midjourney_prompt | null;
     colorStats: IWallpaperColorStats /* <- !!! Put here all */;
     // TODO: shapeStats> IWallpaperShapeStats;
 
     title: string /* <- Note: This is just derrived */;
-    content: string /*_markdown*/;
+    content: string_markdown | string_html;
     // TODO: isTile + some mechanism to add additional metadata
 
     /**
      * Note: Not using IKewords because Set is not serializable
      */
-    keywords: Array<string_keyword> /* <- Note: This is just derrived */;
+    keywords: Array<string_keyword> | null /* <- Note: This is just derrived */;
+
+    isSaved: boolean;
 }
 
 export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
 export type IWallpaperColorStats = IImageColorStats<string>;
+
+export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'isSaved'> & {
+    colorStats: Json;
+};
 
 /**
  * TODO: Probbably rename wallpaper to something else like "designscheme", "design", "theme" or "template"

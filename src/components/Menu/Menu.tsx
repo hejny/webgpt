@@ -50,7 +50,7 @@ export function Menu() {
                                         modal: 'export',
                                     },
                                 }}
-                                prefetch={true /* <- Note: Because we want to be this as-fast-as-possible */}
+                                /* Note: Keeping prefetch because we want to be this as-fast-as-possible */
                             >
                                 Get the web
                             </Link>
@@ -96,7 +96,7 @@ export function Menu() {
 
 /**
  * TODO: !!! Menu in export should look like:
- * 
+ *
  *           - Comments
  *           - Inlined Script
  *           (Maybe unprefix)

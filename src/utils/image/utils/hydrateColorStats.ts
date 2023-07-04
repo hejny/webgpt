@@ -1,8 +1,8 @@
-import { JsonObject } from 'type-fest';
 import { hydrateColors } from '../../color/utils/hydrateColors';
+import { Json } from '../../supabase/types';
 import { IImageColorStats } from './IImageColorStats';
 
-export function hydrateColorStats(json: JsonObject): IImageColorStats<string> {
+export function hydrateColorStats(json: Json): IImageColorStats<string> {
     const colorStats = hydrateColors(json);
     return colorStats;
 }

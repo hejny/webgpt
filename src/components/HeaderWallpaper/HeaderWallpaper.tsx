@@ -7,7 +7,7 @@ import styles from './HeaderWallpaper.module.css';
  * @@
  */
 export function HeaderWallpaper() {
-    const { src, prompt, colorStats } = useWallpaper();
+    const [{ src, prompt, title, colorStats }] = useWallpaper();
 
     const quality = 97;
     const width = 1920;
@@ -20,7 +20,7 @@ export function HeaderWallpaper() {
                 <Image
                     src={src} /* <- TODO: Here should be really upscaled version by Upscalyr */
                     unoptimized /* <- Note: Optimization should happen on gallery level */
-                    alt={prompt}
+                    alt={prompt || title}
                     draggable="false"
                     placeholder="blur"
                     priority={true}

@@ -13,7 +13,7 @@ interface ExportCodeModalProps {}
  * @@
  */
 export function ExportCodeModal(props: ExportCodeModalProps) {
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
 
     const exportedPromise = useMemo(
         () =>

@@ -19,7 +19,7 @@ interface ShowcaseAppHeadProps {
  */
 export function ShowcaseAppHead(props: ShowcaseAppHeadProps) {
     const { children } = props;
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
     const { isExported, publicUrl } = useContext(ExportContext);
     const router = useRouter();
 

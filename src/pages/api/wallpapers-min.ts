@@ -12,7 +12,7 @@ export default async function wallpapersIdsHandler(
     return response.status(200).json({
         wallpapers: (await getWallpapers()).map(({ id, colorStats }) => ({
             id,
-            primaryColor: colorStats.palette[0].value as any as string,
+            primaryColor: (colorStats as any).palette[0].value as any as string,
         })),
     });
 }

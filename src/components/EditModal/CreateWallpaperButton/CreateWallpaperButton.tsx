@@ -27,6 +27,7 @@ export function SaveBoardButton(props: SaveBoardButtonProps) {
         const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
         const newAnonymousWallpaper = {
             parent: parentWallpaperId,
+            author: provideClientId(),
             src,
             prompt,
             colorStats,

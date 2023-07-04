@@ -5,7 +5,7 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
  * @@@
  */
 export function SkinStyle() {
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
     const {
         colorStats: { version, palette },
     } = wallpaper;
@@ -15,7 +15,7 @@ export function SkinStyle() {
             :root {
 
                 /* 🎨 Note: This is a color palette computed by ${version} algorithm */
-                
+
                 ${[...palette, ...palette, ...palette, ...palette /* <- 💩 */]
                     .flatMap((color, i) => {
                         if (i < palette.length) {
@@ -38,7 +38,7 @@ export function SkinStyle() {
                         }
                     })
                     .join('\n')}
-      
+
             }
         `}</style>
     );

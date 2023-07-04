@@ -1,7 +1,6 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import { JsonObject } from 'type-fest';
 import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ExplainContent } from '../components/ExplainContent/ExplainContent';
@@ -12,13 +11,14 @@ import { useMode } from '../utils/hooks/useMode';
 import { WallpapersContext } from '../utils/hooks/WallpapersContext';
 import { hydrateWallpaper } from '../utils/hydrateWallpaper';
 import { hydrateWallpapers } from '../utils/hydrateWallpapers';
-import { IWallpaper } from '../utils/IWallpaper';
+import { IWallpaperSerialized } from '../utils/IWallpaper';
 import { randomItem } from '../utils/randomItem';
 import { getSupabaseForServer } from '../utils/supabase/getSupabaseForServer';
+import { validateUuid } from '../utils/validateUuid';
 
 export interface ShowcasePageProps {
-    currentWallpaper: null | (IWallpaper & JsonObject);
-    randomWallpaper: IWallpaper & JsonObject;
+    currentWallpaper: null | IWallpaperSerialized;
+    randomWallpaper: IWallpaperSerialized;
 }
 
 export default function ShowcasePage(props: ShowcasePageProps) {
@@ -54,10 +54,10 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             <ShowcaseAppHead />
             <SkinStyle />
             {/* TODO: <LanguagePicker /> * /}
-            
-        
 
-            {/* !!! Remove 
+
+
+            {/* !!! Remove
             <Head>
                 <link
                     // TODO: !!! Is this working? Maybe use prerender
@@ -99,9 +99,13 @@ export async function getStaticProps({
     let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;
 
     if (!currentWallpaper) {
+        const x = getSupabaseForServer().from('Wallpaper');
         const selectResult = await getSupabaseForServer().from('Wallpaper').select('*').eq('id', wallpaper);
         if (selectResult && selectResult.data && selectResult.data.length > 0) {
-            currentWallpaper = selectResult.data[0];
+            currentWallpaper = {
+                ...selectResult.data[0],
+                author: validateUuid(selectResult.data[0].author),
+            };
         }
     }
 
@@ -125,7 +129,7 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!! Font must be applied to whole page NOT only the article 
+ * TODO: !!! Font must be applied to whole page NOT only the article
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code

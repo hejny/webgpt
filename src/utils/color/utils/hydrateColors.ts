@@ -1,10 +1,11 @@
 import { JsonValue } from 'type-fest';
+import { Json } from '../../supabase/types';
 import { Color } from '../Color';
 
 /**
  * @@@
  */
-export function hydrateColors(value: JsonValue): any {
+export function hydrateColors(value: Json): any {
     if (typeof value === 'string') {
         return Color.from(value);
     } else if (Array.isArray(value)) {

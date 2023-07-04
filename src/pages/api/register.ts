@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getSupabaseForServer } from '../../utils/supabase/getSupabaseForServer';
+import { string_url } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
 import { isValidUuid } from '../../utils/validators/isValidUuid';
 
@@ -37,7 +38,9 @@ export default async function registerHandler(request: NextApiRequest, response:
         return response.status(400).json({ message: '[🔌] Site already registered' });
     }
 
-    const insertResult = await getSupabaseForServer().from('Site').insert([{ wallpaperId, url }]);
+    const insertResult = await getSupabaseForServer()
+        .from('Site')
+        .insert([{ wallpaperId, url: url as string_url }]);
 
     if (insertResult.status === 201) {
         return response.status(201).json({ message: '[🔌] Site registered' });

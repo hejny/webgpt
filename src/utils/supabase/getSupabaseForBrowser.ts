@@ -2,7 +2,7 @@ import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { NEXT_PUBLIC_SUPABASE_ANON_KEY, NEXT_PUBLIC_SUPABASE_URL } from '../../../config';
 import { Database } from './types';
 
-let supabase: SupabaseClient<Database, 'public', any>;
+let supabase: SupabaseClient<Database>;
 
 export function getSupabaseForBrowser(): typeof supabase {
     if (!supabase) {

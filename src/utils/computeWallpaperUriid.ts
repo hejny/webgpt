@@ -1,14 +1,18 @@
 import { normalizeToKebabCase } from 'n12';
 import seedrandom from 'seedrandom';
+import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
 import { string_uriid } from './typeAliases';
 
-const URIID_VERSION = '1';
+const URIID_VERSION = '2';
 
-export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string_uriid {
-    const words = normalizeToKebabCase(wallpaper.title.toLocaleLowerCase()).split('-');
+export function computeWallpaperUriid(
+    wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'isSaved' | 'isPublic'>,
+): string_uriid {
+    const title = extractTitleFromContent(wallpaper.content) || '';
+    const words = normalizeToKebabCase(title.toLocaleLowerCase()).split('-');
 
     let nameParts: Array<string> = [];
     for (const word of words) {
@@ -25,13 +29,18 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string
         }
     }
 
-    const {
-        // TODO: Download src and put in hash real pixel-content of the image
-        colorStats,
-    } = wallpaper;
+    const { parent, author, src, prompt, colorStats, content } = wallpaper;
 
-    const seed = JSON.stringify({ ...wallpaper, colorStats: serializeColorStats(colorStats) });
-    console.log('seed', seed);
+    // TODO: Test here that all fields are present (into the future)
+
+    const seed = JSON.stringify({
+        parent,
+        author,
+        src,
+        prompt,
+        colorStats: serializeColorStats(colorStats),
+        content,
+    });
 
     seedrandom(seed, { global: true /* <- TODO: Some way how to unset this */ });
 
@@ -50,3 +59,7 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id'>): string
 
     return `${nameParts.join('-')}-${wallpaperPart}`;
 }
+
+/**
+ * TODO: Download src and put in hash real pixel-content of the image
+ */
