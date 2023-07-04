@@ -32,11 +32,11 @@ export function filterWallpapers(
             }
 
             wallpaper.keywords = parseKeywordsFromWallpaper(wallpaper);
-            
+
             if (isLogged) {
                 console.info('🔎', wallpaper.id, wallpaper.keywords);
             }
-            
+
         }
         */
 

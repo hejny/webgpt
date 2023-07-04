@@ -33,7 +33,7 @@ export function ShowcaseArticleSection() {
     return (
         <Section id="home" className={styles.Article}>
             {/*
-            TODO: 
+            TODO:
             <h1 className={styles.handritten}>
                 <HandwrittenText color={skin.highlightedTextColor}>{wallpaper.title}</HandwrittenText>
             </h1>

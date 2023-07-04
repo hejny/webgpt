@@ -54,10 +54,10 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             <ShowcaseAppHead />
             <SkinStyle />
             {/* TODO: <LanguagePicker /> * /}
-            
-        
 
-            {/* !!! Remove 
+
+
+            {/* !!! Remove
             <Head>
                 <link
                     // TODO: !!! Is this working? Maybe use prerender
@@ -129,7 +129,7 @@ export async function getStaticProps({
 }
 
 /**
- * TODO: !!! Font must be applied to whole page NOT only the article 
+ * TODO: !!! Font must be applied to whole page NOT only the article
  * TODO: Special effect for each wallpaper
  * TODO: !! Preview as on [Mobile][Tablet][Desktop]
  * TODO: !! Preview as on [Mobile][Tablet] - show the direct QR code
