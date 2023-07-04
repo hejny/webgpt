@@ -102,43 +102,43 @@ export interface Database {
       }
       Wallpaper: {
         Row: {
-          author: string | null
+          author: string
           colorStats: Json | null
-          content: string | null
-          createdAt: string | null
+          content: string
+          createdAt: string
           id: string
           isPublic: boolean
           keywords: string[] | null
           parent: string | null
           prompt: string | null
-          src: string | null
-          title: string | null
+          src: string
+          title: string
         }
         Insert: {
-          author?: string | null
+          author: string
           colorStats?: Json | null
-          content?: string | null
-          createdAt?: string | null
+          content: string
+          createdAt?: string
           id: string
           isPublic?: boolean
           keywords?: string[] | null
           parent?: string | null
           prompt?: string | null
-          src?: string | null
-          title?: string | null
+          src: string
+          title: string
         }
         Update: {
-          author?: string | null
+          author?: string
           colorStats?: Json | null
-          content?: string | null
-          createdAt?: string | null
+          content?: string
+          createdAt?: string
           id?: string
           isPublic?: boolean
           keywords?: string[] | null
           parent?: string | null
           prompt?: string | null
-          src?: string | null
-          title?: string | null
+          src?: string
+          title?: string
         }
         Relationships: []
       }

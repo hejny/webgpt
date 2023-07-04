@@ -10,19 +10,19 @@ import {
 } from '../../../config';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
-import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
+import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
 import { isFileExisting } from '../../utils/isFileExisting';
 import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
 
 /**
  * @@@
  */
-let wallpapers: Promise<Array<IWallpaper>>;
+let wallpapers: Promise<Array<IWallpaperSerialized>>;
 
 /**
  * @@@
  */
-export function getWallpapers(): Promise<Array<IWallpaper>> {
+export function getWallpapers(): Promise<Array<IWallpaperSerialized>> {
     if (!wallpapers) {
         wallpapers = /* not await */ findWallpapers(false);
     }
@@ -33,8 +33,8 @@ export function getWallpapers(): Promise<Array<IWallpaper>> {
 /**
  * @@@
  */
-async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>> {
-    const wallpapers: Array<IWallpaper> = [];
+async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSerialized>> {
+    const wallpapers: Array<IWallpaperSerialized> = [];
 
     const wallpapersmetadataFilePaths = await getWallpapersmetadataFilePaths();
 
@@ -61,7 +61,7 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             continue;
         }
 
-        const colorStats = YAML.parse(await readFile(colorStatsFilePath, 'utf8')) as IWallpaperColorStats;
+        const colorStats = YAML.parse(await readFile(colorStatsFilePath, 'utf8'));
 
         if (colorStats === null || colorStats === undefined || !colorStats || !colorStats.version) {
             if (showWarnings) {
@@ -112,6 +112,7 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
 
         wallpapers.push({
             id,
+            parent: null,
             src,
             prompt,
             colorStats,
@@ -122,9 +123,9 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             contentFilePath,
             keywords,
             author: SYSTEM_AUTHOR_ID,
-            isPrivate: false,
+            isPublic: true /* <- It is public as one of static wallpapers */,
             isSaved: true,
-        } as IWallpaper);
+        } as IWallpaperSerialized);
     }
 
     return wallpapers;

@@ -7,7 +7,7 @@ import { string_uriid } from './typeAliases';
 
 const URIID_VERSION = '1';
 
-export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id' | 'isSaved' | 'isPrivate'>): string_uriid {
+export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id' | 'isSaved' | 'isPublic'>): string_uriid {
     const words = normalizeToKebabCase(wallpaper.title.toLocaleLowerCase()).split('-');
 
     let nameParts: Array<string> = [];

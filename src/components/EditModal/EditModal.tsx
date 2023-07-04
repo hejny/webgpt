@@ -41,7 +41,7 @@ export function EditModal(props: EditModalProps) {
     return (
         <Modal title="Editing">
             <div className={styles.section}>
-                <ImagineTag>{wallpaper.prompt}</ImagineTag>
+                <ImagineTag>{wallpaper.prompt || 'No prompt'}</ImagineTag>
             </div>
 
             {/* TODO: !!! <ColorStatsInput/> + [🧠] with modal sections */}

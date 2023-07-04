@@ -47,7 +47,7 @@ export function filterWallpapers(
         }
 
         wallpapers = wallpapers.filter((wallpaper) =>
-            wallpaper.keywords.some((keyword) => searchKeywords.has(keyword)),
+            (wallpaper.keywords || []).some((keyword) => searchKeywords.has(keyword)),
         );
         if (isLogged) {
             console.info('🔎', 'After fulltext: ', wallpapers);

@@ -36,57 +36,57 @@ export function ShowcaseArticleSection() {
     const contentFormat = detectContentFormat(content);
 
     const isEditable = !isPresenting;
-    const onHtmlChange =
-        isEditable &&
-        debounce(async (newContent: string_html) => {
-            console.info('newContent', newContent);
+    const onHtmlChange = !isEditable
+        ? undefined
+        : debounce(async (newContent: string_html) => {
+              console.info('newContent', newContent);
 
-            wallpaperSubject.next({ ...wallpaperSubject.value, content: newContent, isSaved: false });
-            return;
-            // TODO: DRY [💽]
-            const { prompt, src, colorStats } = wallpaper;
-            const title = extractTitleFromContent(newContent) || 'Untitled';
-            const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
-            const newAnonymousWallpaper = {
-                parent: wallpaper.id,
-                author: provideClientId(),
-                src,
-                prompt,
-                colorStats,
-                content: newContent,
-                title,
-                keywords,
-            };
+              wallpaperSubject.next({ ...wallpaperSubject.value, content: newContent, isSaved: false });
+              return;
+              // TODO: DRY [💽]
+              const { prompt, src, colorStats } = wallpaper;
+              const title = extractTitleFromContent(newContent) || 'Untitled';
+              const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
+              const newAnonymousWallpaper = {
+                  parent: wallpaper.id,
+                  author: provideClientId(),
+                  src,
+                  prompt,
+                  colorStats,
+                  content: newContent,
+                  title,
+                  keywords,
+              };
 
-            const newWallpaper = {
-                id: computeWallpaperUriid(newAnonymousWallpaper),
-                ...newAnonymousWallpaper,
-                colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
-                isPublic: false,
-                author: provideClientId(),
-            } as Database['public']['Tables']['Wallpaper']['Insert'];
+              const newWallpaper = {
+                  id: computeWallpaperUriid(newAnonymousWallpaper),
+                  ...newAnonymousWallpaper,
+                  colorStats: serializeColorStats(newAnonymousWallpaper.colorStats),
+                  isPublic: false,
+                  author: provideClientId(),
+              } as Database['public']['Tables']['Wallpaper']['Insert'];
 
-            const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
+              const insertResult = await getSupabaseForBrowser().from('Wallpaper').insert(newWallpaper);
 
-            // TODO: !! Util isInsertSuccessfull (status===201)
-            console.log({ newWallpaper, insertResult });
+              // TODO: !! Util isInsertSuccessfull (status===201)
+              console.log({ newWallpaper, insertResult });
 
-            try {
-                const parentKey = `likedStatus_${wallpaper.id}`;
-                const currentKey = `likedStatus_${newWallpaper.id}`;
+              try {
+                  const parentKey = `likedStatus_${wallpaper.id}`;
+                  const currentKey = `likedStatus_${newWallpaper.id}`;
 
-                if (window.localStorage.getItem(parentKey)) {
-                    window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
-                } else if (!window.localStorage.getItem(currentKey)) {
-                    window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
-                }
-            } catch (error) {
-                // TODO: !!! [🧠] Handle situation when window.localStorage is exceeded
-                console.log(error);
-            }
+                  if (window.localStorage.getItem(parentKey)) {
+                      window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
+                  } else if (!window.localStorage.getItem(currentKey)) {
+                      window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
+                  }
+              } catch (error) {
+                  // TODO: !!! [🧠] Handle situation when window.localStorage is exceeded
+                  console.log(error);
+              }
 
-            router.push(`/${newWallpaper.id}`);
-        }, 1000 /* <- TODO: !!! Figure out the best strategy how to change */);
+              router.push(`/${newWallpaper.id}`);
+          }, 1000 /* <- TODO: !!! Figure out the best strategy how to change */);
 
     return (
         <Section id="home" className={styles.Article}>

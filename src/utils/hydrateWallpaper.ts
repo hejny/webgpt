@@ -1,7 +1,7 @@
 import { hydrateColorStats } from './image/utils/hydrateColorStats';
-import { IWallpaper } from './IWallpaper';
+import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
 
-export function hydrateWallpaper(json: any /*JsonObject & IWallpaper*/): IWallpaper {
+export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
     return { ...json, colorStats: hydrateColorStats(json.colorStats) } as IWallpaper;
 }
 

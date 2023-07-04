@@ -1,9 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
-import { IWallpaper } from '../../../src/utils/IWallpaper';
+import { IWallpaperSerialized } from '../../../src/utils/IWallpaper';
 
 interface WallpapersResponse {
-    wallpapers: Array<IWallpaper>;
+    wallpapers: Array<IWallpaperSerialized>;
 }
 
 export default async function wallpapersHandler(

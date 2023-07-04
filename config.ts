@@ -3,7 +3,7 @@ import { Vector } from 'xyzt';
 import packageJson from './package.json';
 import { createColorfulComputeImageColorStats14 } from './src/utils/image/palette/14/createColorfulComputeImageColorStats14';
 import { IComputeImageColorStats } from './src/utils/image/utils/IImageColorStats';
-import { uuid } from './src/utils/typeAliases';
+import { validateUuid } from './src/utils/validateUuid';
 
 export const VERSION = packageJson.version;
 
@@ -137,4 +137,4 @@ export const TEXT_BACKGROUND_COLOR_DISTANCE_THEASHOLD_RATIO = 0.5; /* <- As a ra
  */
 export const PRIMARY_TO_AVERAGE_MAX_COLOR_DISTANCE_THEASHOLD_RATIO = 0.1; /* <- As a ratio of distance between white and black */
 
-export const SYSTEM_AUTHOR_ID = '000d2940-4a35-4859-83a8-3c754ea5df51' as uuid;
+export const SYSTEM_AUTHOR_ID = validateUuid('000d2940-4a35-4859-83a8-3c754ea5df51');
