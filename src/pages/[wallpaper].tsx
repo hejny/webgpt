@@ -1,7 +1,7 @@
 import { GetStaticPaths } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
+import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ExplainContent } from '../components/ExplainContent/ExplainContent';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
@@ -38,7 +38,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
                 <br />
                 <Link href="/" /*className={'button'} */>Pick from gallery</Link>
                 {/*
-                TODO: Pass randomWallpaper in dynamic wallpapers
+                TODO: Pass randomWallpaper in non-hardcoded wallpapers
                 <Link href={`/${randomWallpaper.id}`} className={'button'}>
                     Show random
                 </Link>
@@ -79,7 +79,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
 export const getStaticPaths: GetStaticPaths<{ wallpaper: string }> = async () => {
     return {
-        paths: (await getWallpapers()).map(({ id }) => `/${id}`), // <- Note: indicates which pages needs be created at build time
+        paths: (await getHardcodedWallpapers()).map(({ id }) => `/${id}`), // <- Note: indicates which pages needs be created at build time
         fallback: 'blocking' /*!!!explain*/,
     };
 };
@@ -93,7 +93,7 @@ export async function getStaticProps({
 }) {
     const { wallpaper } = params;
 
-    const wallpapers = await getWallpapers().catch((error) => [
+    const wallpapers = await getHardcodedWallpapers().catch((error) => [
         /* Note: On server, "Error: Could not find assets folder" will happen */
     ]);
     let currentWallpaper = wallpapers.find(({ id }) => id === wallpaper) || null;

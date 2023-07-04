@@ -1,13 +1,13 @@
 import glob from 'glob-promise';
 import { join } from 'path';
-import { getWallpapersDir } from './getWallpapersDir';
+import { getHardcodedWallpapersDir } from './getHardcodedWallpapersDir';
 
 /**
  * @@@
  */
 
-export async function getWallpapersmetadataFilePaths(): Promise<Array<string>> {
-    const wallpapersDir = await getWallpapersDir();
+export async function getHardcodedWallpapersMetadataFilePaths(): Promise<Array<string>> {
+    const wallpapersDir = await getHardcodedWallpapersDir();
     const wallpapersmetadataFilePaths = await glob(join(wallpapersDir, '*.json').split('\\').join('/'));
 
     return wallpapersmetadataFilePaths;

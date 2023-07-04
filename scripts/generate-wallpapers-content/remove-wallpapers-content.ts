@@ -8,8 +8,8 @@ import { extractTitleFromContent } from '../../src/utils/content/extractTitleFro
 import { removeMarkdownComments } from '../../src/utils/content/removeMarkdownComments';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
-import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
-import { getWallpapersDir } from '../utils/wallpaper/getWallpapersDir';
+import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
+import { getHardcodedWallpapersDir } from '../utils/hardcoded-wallpaper/getHardcodedWallpapersDir';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -41,7 +41,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
         throw new Error(`Working tree is not clean`);
     }
 
-    await forEachWallpaper({
+    await forEachHardcodedWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentFilePath',
@@ -91,7 +91,7 @@ async function removeWallpapersContent({ isCommited, parallel }: { isCommited: b
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾🗑 Remove wallpapers content`);
+        await commit(await getHardcodedWallpapersDir(), `🧾🗑 Remove wallpapers content`);
     }
 
     console.info(`[ Done 🧾🗑  Removing wallpapers content ]`);

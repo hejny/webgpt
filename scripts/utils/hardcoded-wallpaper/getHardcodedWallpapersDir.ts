@@ -4,7 +4,7 @@ import { isFolderExisting } from '../isFolderExisting';
 /**
  * @@@
  */
-export async function getWallpapersDir(): Promise<string> {
+export async function getHardcodedWallpapersDir(): Promise<string> {
     // Note: Go down directory tree until assets folder is found:
     let dir = __dirname;
     for (let i = 0; i < 10; i++) {

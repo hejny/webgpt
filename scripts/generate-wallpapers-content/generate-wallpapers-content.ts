@@ -15,9 +15,9 @@ import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { randomItem } from '../../src/utils/randomItem';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
+import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
+import { getHardcodedWallpapersDir } from '../utils/hardcoded-wallpaper/getHardcodedWallpapersDir';
 import { isFileExisting } from '../utils/isFileExisting';
-import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
-import { getWallpapersDir } from '../utils/wallpaper/getWallpapersDir';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -61,7 +61,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
 
     const usedFonts: Record<string, number> = {};
 
-    await forEachWallpaper({
+    await forEachHardcodedWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentFilePath',
@@ -181,7 +181,7 @@ async function generateWallpapersContent({ isCommited, parallel }: { isCommited:
     });
 
     if (isCommited) {
-        await commit(await getWallpapersDir(), `🧾 Generate wallpapers content`);
+        await commit(await getHardcodedWallpapersDir(), `🧾 Generate wallpapers content`);
     }
 
     console.info(

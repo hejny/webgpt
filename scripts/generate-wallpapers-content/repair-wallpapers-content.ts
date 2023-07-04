@@ -13,8 +13,8 @@ import { FONTS, MAX_CHARS_IN_TITLE, OPENAI_API_KEY } from '../../config';
 import { extractTitleFromContent } from '../../src/utils/content/extractTitleFromContent';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
-import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
-import { getWallpapersDir } from '../utils/wallpaper/getWallpapersDir';
+import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
+import { getHardcodedWallpapersDir } from '../utils/hardcoded-wallpaper/getHardcodedWallpapersDir';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -76,7 +76,7 @@ async function repairWallpapersContent({
 
     const usedFonts: Record<string, number> = {};
 
-    await forEachWallpaper({
+    await forEachHardcodedWallpaper({
         isShuffled: false,
         parallelWorksCount: parallel,
         logBeforeEachWork: 'contentFilePath',
@@ -174,7 +174,7 @@ async function repairWallpapersContent({
 
     if (isCommited) {
         await commit(
-            await getWallpapersDir(),
+            await getHardcodedWallpapersDir(),
             `🧾🩹 Repair wallpapers ${[isRepairingFonts && 'fonts', isRepairingTitle && 'titles']
                 .filter((part) => part)
                 .join(' and ')}`,

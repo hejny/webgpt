@@ -2,21 +2,21 @@ import chalk from 'chalk';
 import moment from 'moment';
 import { COLORSTATS_DEFAULT_COMPUTE } from '../../../config';
 import { forPlay } from '../forPlay';
-import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
-import { IWallpaperFiles } from './IWallpaperFiles';
+import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
+import { IHardcodedWallpaperFiles } from './IHardcodedWallpaperFiles';
 
 /**
  * @@@
  */
-export async function forEachWallpaper(options: {
-    makeWork(wallpeperFiles: IWallpaperFiles): Promise<void>;
+export async function forEachHardcodedWallpaper(options: {
+    makeWork(wallpeperFiles: IHardcodedWallpaperFiles): Promise<void>;
     parallelWorksCount: number;
     isShuffled: boolean;
-    logBeforeEachWork: keyof IWallpaperFiles;
+    logBeforeEachWork: keyof IHardcodedWallpaperFiles;
 }): Promise<void> {
     const { makeWork, parallelWorksCount, isShuffled, logBeforeEachWork } = options;
 
-    const wallpapersmetadataFilePaths = await getWallpapersmetadataFilePaths();
+    const wallpapersmetadataFilePaths = await getHardcodedWallpapersMetadataFilePaths();
 
     const stats = {
         total: wallpapersmetadataFilePaths.length,

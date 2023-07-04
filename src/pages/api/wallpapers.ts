@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { getWallpapers } from '../../../scripts/utils/wallpaper/getWallpapers';
+import { getHardcodedWallpapers } from '../../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { IWallpaperSerialized } from '../../../src/utils/IWallpaper';
 
 interface WallpapersResponse {
@@ -10,5 +10,5 @@ export default async function wallpapersHandler(
     request: NextApiRequest,
     response: NextApiResponse<WallpapersResponse>,
 ) {
-    return response.status(200).json({ wallpapers: await getWallpapers() });
+    return response.status(200).json({ wallpapers: await getHardcodedWallpapers() });
 }

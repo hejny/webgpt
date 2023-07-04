@@ -12,9 +12,9 @@ import { serializeColorStats } from '../../src/utils/image/utils/serializeColorS
 import { IWallpaperMetadata } from '../../src/utils/IWallpaper';
 import { commit } from '../utils/autocommit/commit';
 import { isWorkingTreeClean } from '../utils/autocommit/isWorkingTreeClean';
+import { forEachHardcodedWallpaper } from '../utils/hardcoded-wallpaper/forEachHardcodedWallpaper';
+import { getHardcodedWallpapersDir } from '../utils/hardcoded-wallpaper/getHardcodedWallpapersDir';
 import { isFileExisting } from '../utils/isFileExisting';
-import { forEachWallpaper } from '../utils/wallpaper/forEachWallpaper';
-import { getWallpapersDir } from '../utils/wallpaper/getWallpapersDir';
 
 if (process.cwd() !== join(__dirname, '../..')) {
     console.error(chalk.red(`CWD must be root of the project`));
@@ -59,7 +59,7 @@ async function generateWallpapersColorStats({
         throw new Error(`Working tree is not clean`);
     }
 
-    await forEachWallpaper({
+    await forEachHardcodedWallpaper({
         isShuffled,
         parallelWorksCount: 1,
         logBeforeEachWork: 'colorStatsFilePath',
@@ -113,7 +113,7 @@ async function generateWallpapersColorStats({
 
     if (isCommited) {
         await commit(
-            await getWallpapersDir(),
+            await getHardcodedWallpapersDir(),
             `🎨 Generate wallpapers color-stats version ${COLORSTATS_DEFAULT_COMPUTE.version}`,
         );
     }

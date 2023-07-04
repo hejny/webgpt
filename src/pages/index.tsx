@@ -2,7 +2,7 @@ import { Barlow_Condensed } from '@next/font/google';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { getWallpapers } from '../../scripts/utils/wallpaper/getWallpapers';
+import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { IWallpaperSerialized } from '../../src/utils/IWallpaper';
 import { StaticAppHead } from '../components/AppHead/StaticAppHead';
 import { GallerySection } from '../components/Gallery/Gallery';
@@ -59,7 +59,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
     return {
         props: {
             ...(await serverSideTranslations(locale, ['common'])),
-            wallpapers: (await getWallpapers()).map((fullWallpaper) => {
+            wallpapers: (await getHardcodedWallpapers()).map((fullWallpaper) => {
                 const { id, parent, src, colorStats, title, keywords, isPublic, author } = fullWallpaper;
                 return {
                     id,

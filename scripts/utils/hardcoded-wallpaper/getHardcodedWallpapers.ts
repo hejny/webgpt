@@ -11,32 +11,32 @@ import {
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
 import { IWallpaperMetadata, IWallpaperSerialized } from '../../../src/utils/IWallpaper';
-import { isFileExisting } from '../../utils/isFileExisting';
-import { getWallpapersmetadataFilePaths } from './getWallpapersmetadataFilePaths';
+import { isFileExisting } from '../isFileExisting';
+import { getHardcodedWallpapersMetadataFilePaths } from './getHardcodedWallpapersMetadataFilePaths';
 
 /**
  * @@@
  */
-let wallpapers: Promise<Array<IWallpaperSerialized>>;
+let hardcodedWallpapers: Promise<Array<IWallpaperSerialized>>;
 
 /**
  * @@@
  */
-export function getWallpapers(): Promise<Array<IWallpaperSerialized>> {
-    if (!wallpapers) {
-        wallpapers = /* not await */ findWallpapers(false);
+export function getHardcodedWallpapers(): Promise<Array<IWallpaperSerialized>> {
+    if (!hardcodedWallpapers) {
+        hardcodedWallpapers = /* not await */ findHardcodedWallpapers(false);
     }
 
-    return wallpapers;
+    return hardcodedWallpapers;
 }
 
 /**
  * @@@
  */
-async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSerialized>> {
+async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSerialized>> {
     const wallpapers: Array<IWallpaperSerialized> = [];
 
-    const wallpapersmetadataFilePaths = await getWallpapersmetadataFilePaths();
+    const wallpapersmetadataFilePaths = await getHardcodedWallpapersMetadataFilePaths();
 
     for (const metadataFilePath of wallpapersmetadataFilePaths) {
         const colorStatsFilePath = metadataFilePath.replace(
@@ -123,7 +123,7 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSe
             contentFilePath,
             keywords,
             author: SYSTEM_AUTHOR_ID,
-            isPublic: true /* <- It is public as one of static wallpapers */,
+            isPublic: true /* <- It is public as it is one of hardcoded wallpapers */,
             isSaved: true,
         } as IWallpaperSerialized);
     }
@@ -132,7 +132,6 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaperSe
 }
 
 /**
- * TODO: !!! Rename to getHardcodedWallpapers - figure out better word then "hardcoded"
  * TODO: Update wallpapers during the run
  * TODO: !! Make script that can check all wallpapers and list only warnings
  */
