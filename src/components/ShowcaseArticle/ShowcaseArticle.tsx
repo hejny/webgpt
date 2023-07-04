@@ -25,6 +25,7 @@ import styles from './ShowcaseArticle.module.css';
  * @@@
  */
 export function ShowcaseArticleSection() {
+    // TODO: [🩺] One hook for [wallpaper,mutateWallpaper]
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
@@ -40,12 +41,15 @@ export function ShowcaseArticleSection() {
         debounce(async (newContent: string_html) => {
             console.info('newContent', newContent);
 
+            wallpaperSubject.next({ ...wallpaperSubject.value, content: newContent, isSaved: false });
+            return;
             // TODO: DRY [💽]
             const { prompt, src, colorStats } = wallpaper;
             const title = extractTitleFromContent(newContent) || 'Untitled';
             const keywords = Array.from(parseKeywordsFromWallpaper({ prompt, content }));
             const newAnonymousWallpaper = {
                 parent: wallpaper.id,
+                author: provideClientId(),
                 src,
                 prompt,
                 colorStats,

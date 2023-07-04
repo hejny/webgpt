@@ -2,7 +2,12 @@ import chalk from 'chalk';
 import { readFile } from 'fs/promises';
 import spaceTrim from 'spacetrim';
 import YAML from 'yaml';
-import { COLORSTATS_DEFAULT_COMPUTE, LIMIT_WALLPAPER_COUNT, LIMIT_WALLPAPER_EXCLUDE } from '../../../config';
+import {
+    COLORSTATS_DEFAULT_COMPUTE,
+    LIMIT_WALLPAPER_COUNT,
+    LIMIT_WALLPAPER_EXCLUDE,
+    SYSTEM_AUTHOR_ID,
+} from '../../../config';
 import { parseKeywordsFromWallpaper } from '../../../src/components/Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { extractTitleFromContent } from '../../../src/utils/content/extractTitleFromContent';
 import { IWallpaper, IWallpaperColorStats, IWallpaperMetadata } from '../../../src/utils/IWallpaper';
@@ -116,6 +121,9 @@ async function findWallpapers(showWarnings: boolean): Promise<Array<IWallpaper>>
             colorStatsFilePath,
             contentFilePath,
             keywords,
+            author: SYSTEM_AUTHOR_ID,
+            isPrivate: false,
+            isSaved: true,
         } as IWallpaper);
     }
 

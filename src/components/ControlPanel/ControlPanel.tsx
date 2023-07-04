@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
+import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
 import { Markdown } from '../Markdown/Markdown';
 import styles from './ControlPanel.module.css';
@@ -18,6 +19,8 @@ export function ControlPanel(props: ControlPanelProps) {
     const { randomWallpaper } = props;
     const router = useRouter();
 
+    const wallpaper = useWallpaper();
+
     return (
         <div
             className={classNames(
@@ -26,6 +29,27 @@ export function ControlPanel(props: ControlPanelProps) {
             )} /*style={{backgroundColor: mainBackground.then(negative).toHex()}}*/
         >
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
+
+            {!wallpaper.isSaved && (
+                <button
+                    // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
+
+                    className={classNames(styles.button, styles.callToAction)}
+                    onClick={() => {
+                        console.log(wallpaper);
+
+                        // !!!!!!!!!!!!!!! Save the wallpaper
+
+                        /*
+                        
+                          parent: parentWallpaperId,
+                          author: provideClientId(),
+                        */
+                    }}
+                >
+                    Save
+                </button>
+            )}
 
             <ControlPanelLikeButtons />
 
