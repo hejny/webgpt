@@ -2,8 +2,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { colorToDataUrl } from '../../utils/color/utils/colorToDataUrl';
+import { computeWallpaperUriid } from '../../utils/computeWallpaperUriid';
+import { LikedStatus } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
+import { serializeWallpaper } from '../../utils/hydrateWallpaper';
 import { IWallpaper } from '../../utils/IWallpaper';
+import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
+import { provideClientId } from '../../utils/supabase/provideClientId';
+import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
 import { Markdown } from '../Markdown/Markdown';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
@@ -19,7 +25,7 @@ export function ControlPanel(props: ControlPanelProps) {
     const { randomWallpaper } = props;
     const router = useRouter();
 
-    const [wallpaper] = useWallpaper();
+    const [wallpaper, modifyWallpaper] = useWallpaper();
 
     return (
         <div
@@ -35,16 +41,41 @@ export function ControlPanel(props: ControlPanelProps) {
                     // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
 
                     className={classNames(styles.button, styles.callToAction)}
-                    onClick={() => {
-                        console.log(wallpaper);
+                    onClick={async () => {
+                        // TODO: !!!! Split into two stages - saving, saved call modifyWallpaper 2x
+                        const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
+                            // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
+                            modifiedWallpaper.parent = modifiedWallpaper.id;
+                            modifiedWallpaper.author = provideClientId();
+                            modifiedWallpaper.isPublic = false;
+                            modifiedWallpaper.isSaved = true;
+                            modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
+                            modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
+                            return modifiedWallpaper;
+                        });
 
-                        // !!!!!!!!!!!!!!! Save the wallpaper
+                        const insertResult = await getSupabaseForBrowser()
+                            .from('Wallpaper')
+                            .insert(serializeWallpaper(newWallpaper));
 
-                        /*
-                        
-                          parent: parentWallpaperId,
-                          author: provideClientId(),
-                        */
+                        // TODO: !! Util isInsertSuccessfull (status===201)
+                        console.log({ newWallpaper, insertResult });
+
+                        try {
+                            const parentKey = `likedStatus_${wallpaper.id}`;
+                            const currentKey = `likedStatus_${newWallpaper.id}`;
+
+                            if (window.localStorage.getItem(parentKey)) {
+                                window.localStorage.setItem(currentKey, window.localStorage.getItem(parentKey)!);
+                            } else if (!window.localStorage.getItem(currentKey)) {
+                                window.localStorage.setItem(currentKey, 'LIKE' satisfies keyof typeof LikedStatus);
+                            }
+                        } catch (error) {
+                            // TODO: !!! [🧠] Handle situation when window.localStorage is exceeded
+                            console.log(error);
+                        }
+
+                        router.push(`/${newWallpaper.id}`);
                     }}
                 >
                     Save

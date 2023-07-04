@@ -1,14 +1,18 @@
 import { normalizeToKebabCase } from 'n12';
 import seedrandom from 'seedrandom';
+import { extractTitleFromContent } from './content/extractTitleFromContent';
 import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper } from './IWallpaper';
 import { randomString } from './randomString';
 import { string_uriid } from './typeAliases';
 
-const URIID_VERSION = '1';
+const URIID_VERSION = '2';
 
-export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id' | 'isSaved' | 'isPublic'>): string_uriid {
-    const words = normalizeToKebabCase(wallpaper.title.toLocaleLowerCase()).split('-');
+export function computeWallpaperUriid(
+    wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'isSaved' | 'isPublic'>,
+): string_uriid {
+    const title = extractTitleFromContent(wallpaper.content) || '';
+    const words = normalizeToKebabCase(title.toLocaleLowerCase()).split('-');
 
     let nameParts: Array<string> = [];
     for (const word of words) {
@@ -25,7 +29,7 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id' | 'isSave
         }
     }
 
-    const { parent, author, src, prompt, colorStats, title, content, keywords } = wallpaper;
+    const { parent, author, src, prompt, colorStats, content } = wallpaper;
 
     // TODO: Test here that all fields are present (into the future)
 
@@ -35,9 +39,7 @@ export function computeWallpaperUriid(wallpaper: Omit<IWallpaper, 'id' | 'isSave
         src,
         prompt,
         colorStats: serializeColorStats(colorStats),
-        title,
         content,
-        keywords,
     });
 
     seedrandom(seed, { global: true /* <- TODO: Some way how to unset this */ });

@@ -104,7 +104,6 @@ export async function getStaticProps({
         if (selectResult && selectResult.data && selectResult.data.length > 0) {
             currentWallpaper = {
                 ...selectResult.data[0],
-                isSaved: true,
                 author: validateUuid(selectResult.data[0].author),
             };
         }

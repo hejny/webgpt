@@ -73,7 +73,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
                     keywords,
                     isPublic,
                     author,
-                    isSaved: true /* <- TODO: This is a bit inefficient to transport */,
                 } satisfies IWallpaperSerialized;
             }),
         },

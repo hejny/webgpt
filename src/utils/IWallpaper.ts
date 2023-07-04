@@ -41,7 +41,7 @@ export interface IWallpaper {
 export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
 export type IWallpaperColorStats = IImageColorStats<string>;
 
-export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats'> & {
+export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'isSaved'> & {
     colorStats: Json;
 };
 
