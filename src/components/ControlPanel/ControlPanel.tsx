@@ -19,7 +19,7 @@ export function ControlPanel(props: ControlPanelProps) {
     const { randomWallpaper } = props;
     const router = useRouter();
 
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
 
     return (
         <div

@@ -47,7 +47,7 @@ const ExportPlan = {
  * @@
  */
 export function ExportModal(props: ExportModalProps) {
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const [isUrlUnsure, setUrlUnsure] = useState<boolean>(false);
     const [email, setEmail] = useState<string_email>('');

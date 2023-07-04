@@ -5,7 +5,7 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
  * @@@
  */
 export function SkinStyle() {
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
     const {
         colorStats: { version, palette },
     } = wallpaper;

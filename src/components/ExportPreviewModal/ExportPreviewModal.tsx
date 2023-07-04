@@ -15,7 +15,7 @@ interface ExportPreviewModalProps {}
  * @@
  */
 export function ExportPreviewModal(props: ExportPreviewModalProps) {
-    const wallpaper = useWallpaper();
+    const [wallpaper] = useWallpaper();
     const [publicUrl, setPublicUrl] = useState<null | URL>(null);
     const exportedPromise = useMemo(() => {
         if (publicUrl === null) {

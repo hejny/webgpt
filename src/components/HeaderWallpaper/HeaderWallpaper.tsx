@@ -7,7 +7,7 @@ import styles from './HeaderWallpaper.module.css';
  * @@
  */
 export function HeaderWallpaper() {
-    const { src, prompt, title, colorStats } = useWallpaper();
+    const [{ src, prompt, title, colorStats }] = useWallpaper();
 
     const quality = 97;
     const width = 1920;
