@@ -28,7 +28,7 @@ export function ShowcaseArticleSection() {
                   modifiedWallpaper.isSaved = false;
                   return modifiedWallpaper;
               });
-          }, 50);
+          }, 1000 /* <- TODO: !!!! Decrease until focus is fixed OR fire on unfocus */);
 
     return (
         <Section id="home" className={styles.Article}>
