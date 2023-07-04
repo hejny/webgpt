@@ -51,33 +51,38 @@ export function ControlPanel(props: ControlPanelProps) {
                 </button>
             )}
 
-            <ControlPanelLikeButtons />
+            {wallpaper.isSaved && <ControlPanelLikeButtons />}
 
-            <Link
-                href={`/${randomWallpaper.id}`}
-                /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
-                className={classNames(/*'button',*/ styles.button)}
-                title="Show me another one"
-                onClick={() => {
-                    // Note: No need for preventDefault
-                    const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
-                    headerWallpaperElement.setAttribute('src', colorToDataUrl(randomWallpaper.colorStats.averageColor));
-                    headerWallpaperElement.removeAttribute('srcset');
-                }}
-                style={
-                    {
-                        // ...minorButtonStyle,
-                        // TODO: Better or delete
-                        // backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
-                        // color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+            {wallpaper.isSaved && (
+                <Link
+                    href={`/${randomWallpaper.id}`}
+                    /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
+                    className={classNames(/*'button',*/ styles.button)}
+                    title="Show me another one"
+                    onClick={() => {
+                        // Note: No need for preventDefault
+                        const headerWallpaperElement = document.getElementById('HeaderWallpaper')!;
+                        headerWallpaperElement.setAttribute(
+                            'src',
+                            colorToDataUrl(randomWallpaper.colorStats.averageColor),
+                        );
+                        headerWallpaperElement.removeAttribute('srcset');
+                    }}
+                    style={
+                        {
+                            // ...minorButtonStyle,
+                            // TODO: Better or delete
+                            // backgroundColor: randomWallpaper.colorStats.averageColor.toHex(),
+                            // color: randomWallpaper.colorStats.averageColor.then(textColor).toHex(),
+                        }
                     }
-                }
-            >
-                <Markdown
-                    content="🎲"
-                    isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
-                />
-            </Link>
+                >
+                    <Markdown
+                        content="🎲"
+                        isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
+                    />
+                </Link>
+            )}
 
             {/*
             Note: In the <Menu/>
@@ -86,27 +91,29 @@ export function ControlPanel(props: ControlPanelProps) {
             </OpenModalLink>
             */}
 
-            <Link
-                href={{
-                    pathname: '/[wallpaper]',
-                    query: {
-                        wallpaper: router.query.wallpaper,
-                        mode: 'presentation',
-                    },
-                }}
-                className={classNames(/*'button',*/ styles.button)}
-                title="Show without the controls"
-            >
-                <Markdown
-                    content="▶"
-                    isUsingOpenmoji
-                    /* <- TODO: !!!
+            {wallpaper.isSaved && (
+                <Link
+                    href={{
+                        pathname: '/[wallpaper]',
+                        query: {
+                            wallpaper: router.query.wallpaper,
+                            mode: 'presentation',
+                        },
+                    }}
+                    className={classNames(/*'button',*/ styles.button)}
+                    title="Show without the controls"
+                >
+                    <Markdown
+                        content="▶"
+                        isUsingOpenmoji
+                        /* <- TODO: !!!
                         - Open sharing modal
                         - Show the QR code before
                         - Save to GET params to be able to send both /share and ?mode=presentation
                      */
-                />
-            </Link>
+                    />
+                </Link>
+            )}
 
             {/*
             Note: In the <Menu/>

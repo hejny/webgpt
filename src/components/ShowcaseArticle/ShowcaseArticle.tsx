@@ -86,7 +86,7 @@ export function ShowcaseArticleSection() {
               }
 
               router.push(`/${newWallpaper.id}`);
-          }, 1000 /* <- TODO: !!! Figure out the best strategy how to change */);
+          }, 50);
 
     return (
         <Section id="home" className={styles.Article}>
