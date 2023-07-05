@@ -1,4 +1,4 @@
-import { string_title } from '../typeAliases';
+import { string_html, string_title } from '../typeAliases';
 
 /**
  * Extract the first heading from HTML using regex
@@ -6,7 +6,19 @@ import { string_title } from '../typeAliases';
  * @param contentText HTML
  * @returns heading
  */
-export function extractTitleFromHtml(contentText: string): string_title | null {
-    // !!!! Fix
-    return contentText.match(/<(h[1-6]).*?>(?<heading>.*)<\/\1>/is)?.groups?.heading ?? null;
+export function extractTitleFromHtml(contentHtml: string_html): string_title | null {
+    const parser = new DOMParser();
+    const document = parser.parseFromString(contentHtml, 'text/html');
+
+    for (const headingType of ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']) {
+        const headings = Array.from(document.querySelectorAll(headingType));
+
+        if (headings.length === 0) {
+            continue;
+        }
+
+        return headings.map((heading) => heading.textContent).join('\n');
+    }
+
+    return null;
 }

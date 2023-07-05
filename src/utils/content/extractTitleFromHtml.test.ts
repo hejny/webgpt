@@ -80,11 +80,12 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                 `),
             ),
         ).toBe('Ocean vibes');
+    });
 
-        test('should return the first heading from an real multiline HTML string', () => {
-            expect(
-                extractTitleFromHtml(
-                    spaceTrim(`
+    test('should return the first heading from an real multiline HTML string', () => {
+        expect(
+            extractTitleFromHtml(
+                spaceTrim(`
                         <div style="font-family: 'Roboto', sans-serif;">
                             <h1 id="starrydesertnights">Sta</h1>
                         </div>
@@ -121,28 +122,27 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
                             <p>Experience the magic of the starry sky with our Desert Nights image. Download it today and enjoy a stunning new background that will transport you to another world.</p>
                         </div>
                     `),
-                ),
-            ).toBe(
-                spaceTrim(`
+            ),
+        ).toBe(
+            spaceTrim(`
                     Sta
                     rry D
                     e
                     se
                     rt Nights
                 `),
-            );
-        });
+        );
+    });
 
-        test('should return the first heading from an real multi-whitespace HTML string', () => {
-            expect(extractTitleFromHtml(`<h1>a&nbsp;a</h1>`)).toBe(`a a`);
-            expect(extractTitleFromHtml(`<h1>a&nbsp; a</h1>`)).toBe(`a  a`);
-            expect(extractTitleFromHtml(`<h1>a &nbsp; a</h1>`)).toBe(`a   a`);
-            expect(extractTitleFromHtml(`<h1>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</h1>`)).toBe(`a     a`);
-        });
+    test('should return the first heading from an real multi-whitespace HTML string', () => {
+        expect(extractTitleFromHtml(`<h1>a&nbsp;a</h1>`)).toBe(`a a`);
+        expect(extractTitleFromHtml(`<h1>a&nbsp; a</h1>`)).toBe(`a  a`);
+        expect(extractTitleFromHtml(`<h1>a &nbsp; a</h1>`)).toBe(`a   a`);
+        expect(extractTitleFromHtml(`<h1>a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a</h1>`)).toBe(`a     a`);
+    });
 
-        test('should return the first heading from an real special-characters HTML string', () => {
-            expect(extractTitleFromHtml(`<h1>&quot;</h1>`)).toBe(`"`);
-        });
+    test('should return the first heading from an real special-characters HTML string', () => {
+        expect(extractTitleFromHtml(`<h1>&quot;</h1>`)).toBe(`"`);
     });
 });
 
