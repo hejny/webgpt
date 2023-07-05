@@ -45,7 +45,7 @@ export function ShowcaseContent() {
                             wallpaper.colorStats.palette[0].value = Color.fromHex(event.target.value);
                             wallpaperSubject.next({
                                 ...wallpaperSubject.value,
-                                /*content: newContent,*/ isSaved: false,
+                                /*content: newContent,*/ saveStage: 'EDITED',
                             });
                         }}
                     />

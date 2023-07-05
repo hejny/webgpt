@@ -124,7 +124,7 @@ async function findHardcodedWallpapers(showWarnings: boolean): Promise<Array<IWa
             keywords,
             author: SYSTEM_AUTHOR_ID,
             isPublic: true /* <- It is public as it is one of hardcoded wallpapers */,
-            isSaved: true,
+            saveStage: 'SAVED',
         } as IWallpaperSerialized);
     }
 

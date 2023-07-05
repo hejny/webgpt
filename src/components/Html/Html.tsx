@@ -56,7 +56,7 @@ export function Html(props: HtmlProps) {
     return (
         <div
             className={classNames(styles.html, className)}
-            contentEditable={isEditable}
+            contentEditable={isEditable /* <- TODO: !!!! Allow to change fonts */}
             spellCheck={isEditable ? false : undefined}
             onInput={(event) => {
                 if (!onHtmlChange || !isEditable) {

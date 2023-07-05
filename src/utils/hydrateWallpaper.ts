@@ -3,12 +3,12 @@ import { serializeColorStats } from './image/utils/serializeColorStats';
 import { IWallpaper, IWallpaperSerialized } from './IWallpaper';
 
 export function hydrateWallpaper(json: IWallpaperSerialized): IWallpaper {
-    return { ...json, colorStats: hydrateColorStats(json.colorStats), isSaved: true } as IWallpaper;
+    return { ...json, colorStats: hydrateColorStats(json.colorStats), saveStage: 'SAVED' } as IWallpaper;
 }
 
 export function serializeWallpaper(wallpaper: IWallpaper): IWallpaperSerialized {
     // Note: Keepeng ONLY intended properties
-    const { id, parent, author, isPublic, src, prompt, colorStats, title, content, keywords, isSaved } = wallpaper;
+    const { id, parent, author, isPublic, src, prompt, colorStats, title, content, keywords } = wallpaper;
     return {
         id,
         parent,

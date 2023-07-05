@@ -36,19 +36,16 @@ export function ControlPanel(props: ControlPanelProps) {
         >
             {/* <div style={{color:'#1f6b08'}}>{wallpaperId}</div> */}
 
-            {!wallpaper.isSaved && (
+            {wallpaper.saveStage === 'EDITED' && (
                 <button
-                    // TODO: !!! Make some call-to-action> href={'mailto:me@pavolhejny.com'}
-
                     className={classNames(styles.button, styles.callToAction)}
                     onClick={async () => {
-                        // TODO: !!!! Split into two stages - saving, saved call modifyWallpaper 2x
                         const newWallpaper = modifyWallpaper((modifiedWallpaper) => {
                             // Note: [🗄] title is computed after each change id+parent+author+keywords are computed just once before save
                             modifiedWallpaper.parent = modifiedWallpaper.id;
                             modifiedWallpaper.author = provideClientId();
                             modifiedWallpaper.isPublic = false;
-                            modifiedWallpaper.isSaved = true;
+                            modifiedWallpaper.saveStage = 'SAVING';
                             modifiedWallpaper.keywords = Array.from(parseKeywordsFromWallpaper(modifiedWallpaper));
                             modifiedWallpaper.id = computeWallpaperUriid(modifiedWallpaper);
                             return modifiedWallpaper;
@@ -60,6 +57,11 @@ export function ControlPanel(props: ControlPanelProps) {
 
                         // TODO: !! Util isInsertSuccessfull (status===201)
                         console.log({ newWallpaper, insertResult });
+
+                        modifyWallpaper((modifiedWallpaper) => {
+                            modifiedWallpaper.saveStage = 'SAVED';
+                            return modifiedWallpaper;
+                        });
 
                         try {
                             const parentKey = `likedStatus_${wallpaper.id}`;
@@ -82,9 +84,9 @@ export function ControlPanel(props: ControlPanelProps) {
                 </button>
             )}
 
-            {wallpaper.isSaved && <ControlPanelLikeButtons />}
+            {wallpaper.saveStage === 'SAVED' && <ControlPanelLikeButtons />}
 
-            {wallpaper.isSaved && (
+            {wallpaper.saveStage === 'SAVED' && (
                 <Link
                     href={`/${randomWallpaper.id}`}
                     /* Note: randomWallpaper image is already prerendered thare -> [🤰] */
@@ -122,7 +124,7 @@ export function ControlPanel(props: ControlPanelProps) {
             </OpenModalLink>
             */}
 
-            {wallpaper.isSaved && (
+            {wallpaper.saveStage === 'SAVED' && (
                 <Link
                     href={{
                         pathname: '/[wallpaper]',

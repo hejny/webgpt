@@ -25,7 +25,7 @@ export function ShowcaseArticleSection() {
         : debounce(async (newContent: string_html) => {
               modifyWallpaper((modifiedWallpaper) => {
                   modifiedWallpaper.content = newContent;
-                  modifiedWallpaper.isSaved = false;
+                  modifiedWallpaper.saveStage = 'EDITED';
                   return modifiedWallpaper;
               });
           }, 1000 /* <- TODO: !!!! Decrease until focus is fixed OR fire on unfocus */);

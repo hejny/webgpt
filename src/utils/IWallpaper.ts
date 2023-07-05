@@ -35,13 +35,19 @@ export interface IWallpaper {
      */
     keywords: Array<string_keyword> | null /* <- Note: This is just derrived */;
 
-    isSaved: boolean;
+    saveStage: keyof typeof IWallpaperSaveStage;
 }
+
+export const IWallpaperSaveStage = {
+    SAVED: 'Saved',
+    EDITED: 'Edited',
+    SAVING: 'Saving',
+} as const;
 
 export type IWallpaperMetadata = IMidjourneyJob /* <- TODO: Maybe remove ACRY IWallpaperMetadata */;
 export type IWallpaperColorStats = IImageColorStats<string>;
 
-export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'isSaved'> & {
+export type IWallpaperSerialized = Omit<IWallpaper, 'colorStats' | 'saveStage'> & {
     colorStats: Json;
 };
 

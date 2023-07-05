@@ -9,7 +9,7 @@ import { string_uriid } from './typeAliases';
 const URIID_VERSION = '2';
 
 export function computeWallpaperUriid(
-    wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'isSaved' | 'isPublic'>,
+    wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'saveStage' | 'isPublic'>,
 ): string_uriid {
     const title = extractTitleFromContent(wallpaper.content) || '';
     const words = normalizeToKebabCase(title.toLocaleLowerCase()).split('-');
