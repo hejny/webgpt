@@ -4,7 +4,7 @@ import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
-import { Markdown } from '../../Markdown/Markdown';
+import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { Select } from '../../Select/Select';
 import { GalleryFilter, Order } from './GalleryFilter';
 import styles from './GalleryFilterInput.module.css';
@@ -59,7 +59,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
                 />
                 {color && (
                     <div onClick={() => setColor(undefined)}>
-                        <Markdown content="❌" isUsingOpenmoji />
+                        <MarkdownContent content="❌" isUsingOpenmoji />
                     </div>
                 )}
             </div>

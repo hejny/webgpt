@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { classNames } from '../../utils/classNames';
 import { useLikedStatusOfCurrentWallpaper } from '../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import styles from '../ControlPanel/ControlPanel.module.css';
-import { Markdown } from '../Markdown/Markdown';
+import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 
 /**
  * @@@
@@ -45,7 +45,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Markdown content="❤" isUsingOpenmoji />
+                <MarkdownContent content="❤" isUsingOpenmoji />
             </button>
 
             <button
@@ -59,7 +59,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Markdown content="👍" isUsingOpenmoji />
+                <MarkdownContent content="👍" isUsingOpenmoji />
             </button>
             <button
                 className={classNames(/*'button',*/ styles.button)}
@@ -71,7 +71,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Markdown content="😐" isUsingOpenmoji />
+                <MarkdownContent content="😐" isUsingOpenmoji />
             </button>
             <button
                 className={classNames(/*'button',*/ styles.button)}
@@ -83,7 +83,7 @@ export function ControlPanelLikeButtons() {
                     )
                 }
             >
-                <Markdown content="👎" isUsingOpenmoji />
+                <MarkdownContent content="👎" isUsingOpenmoji />
             </button>
         </>
     );

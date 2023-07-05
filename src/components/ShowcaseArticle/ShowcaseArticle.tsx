@@ -5,8 +5,8 @@ import { useWallpaper } from '../../utils/hooks/useWallpaper';
 import { string_html } from '../../utils/typeAliases';
 import { extractFontsFromContent } from '../Fonts/extractFontsFromContent';
 import { Fonts } from '../Fonts/Fonts';
-import { Html } from '../Html/Html';
-import { Markdown } from '../Markdown/Markdown';
+import { HtmlContent } from '../MarkdownContent/HtmlContent';
+import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Section } from '../Section/Section';
 import styles from './ShowcaseArticle.module.css';
 
@@ -41,9 +41,9 @@ export function ShowcaseArticleSection() {
 
             <Fonts fonts={extractFontsFromContent(content)} />
 
-            {contentFormat === 'html' && <Html {...{ content, isEditable, onHtmlChange }} />}
+            {contentFormat === 'html' && <HtmlContent {...{ content, isEditable, onHtmlChange }} />}
             {contentFormat === 'markdown' && (
-                <Markdown
+                <MarkdownContent
                     isusingFonts
                     isUsingOpenmoji={
                         false /* <- TODO: [🧠] Some better way how to use Openmoji with editable capability */

@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { VERCEL_GIT_COMMIT_MESSAGE, VERCEL_GIT_COMMIT_SHA, VERSION } from '../../../config';
 import { Section } from '../../components/Section/Section';
-import { Markdown } from '../Markdown/Markdown';
+import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './TechnicalInfo.module.css';
 
 /**
@@ -16,7 +16,7 @@ export function TechnicalInfo() {
         <Section>
             <h2>{t('TechnicalInfo.title')}</h2>
 
-            <Markdown content={t('TechnicalInfo.content')} isEnhanced />
+            <MarkdownContent content={t('TechnicalInfo.content')} isEnhanced />
 
             <div className={styles.field}>
                 <span>Version:</span>

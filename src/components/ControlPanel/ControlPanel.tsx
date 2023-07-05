@@ -10,7 +10,7 @@ import { IWallpaper } from '../../utils/IWallpaper';
 import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowser';
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { parseKeywordsFromWallpaper } from '../Gallery/GalleryFilter/utils/parseKeywordsFromWallpaper';
-import { Markdown } from '../Markdown/Markdown';
+import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import styles from './ControlPanel.module.css';
 import { ControlPanelLikeButtons } from './ControlPanelLikeButtons';
 
@@ -110,7 +110,7 @@ export function ControlPanel(props: ControlPanelProps) {
                         }
                     }
                 >
-                    <Markdown
+                    <MarkdownContent
                         content="🎲"
                         isUsingOpenmoji /* <- TODO: !! This should have more role like next not random */
                     />
@@ -136,7 +136,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     className={classNames(/*'button',*/ styles.button)}
                     title="Show without the controls"
                 >
-                    <Markdown
+                    <MarkdownContent
                         content="▶"
                         isUsingOpenmoji
                         /* <- TODO: !!!
@@ -167,7 +167,7 @@ export function ControlPanel(props: ControlPanelProps) {
                     (window as any).smartsupp('chat:open');
                 }}
             >
-                <Markdown content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
+                <MarkdownContent content="💬" isUsingOpenmoji /* <- TODO: !! Better icon OR Openmoji */ />
             </button>
         </div>
     );

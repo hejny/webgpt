@@ -6,7 +6,7 @@ import { linkMarkdown } from '../../utils/content/linkMarkdown';
 import { normalizeDashes } from '../../utils/content/normalizeDashes';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { string_markdown } from '../../utils/typeAliases';
-import { Html } from '../Html/Html';
+import { HtmlContent } from './HtmlContent';
 import { markdownConverter } from './markdownConverter';
 
 /**
@@ -17,7 +17,7 @@ import { markdownConverter } from './markdownConverter';
  * @property {boolean} [isHashUsed] - Whether the article uses hash for navigation
  * @property {boolean} [isEnhanced] - Whether the article applies additional enhancements to the markdown
  */
-interface IMarkdownProps {
+interface IMarkdownContentProps {
     /**
      * Source markdown
      */
@@ -81,7 +81,7 @@ interface IMarkdownProps {
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
  */
-export function Markdown(props: IMarkdownProps) {
+export function MarkdownContent(props: IMarkdownContentProps) {
     const {
         content,
         className,
@@ -153,9 +153,8 @@ export function Markdown(props: IMarkdownProps) {
 
     return (
         <>
-            <Html
-                className={className}
-                {...{ content: html, isEditable }}
+            <HtmlContent
+                {...{ content: html, isEditable, className }}
                 onHtmlChange={(htmlContent) => {
                     if (!isEditable) {
                         return;

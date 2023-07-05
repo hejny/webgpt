@@ -1,15 +1,13 @@
-import parse from 'html-react-parser';
-import { classNames } from '../../utils/classNames';
+// !!! Remove package> import parse from 'html-react-parser';
 import { string_html } from '../../utils/typeAliases';
-import styles from './Html.module.css';
 
 /**
  * A function component that renders a div element with parsed HTML content ⁘
  *
- * @param {HtmlProps} props - The props for the component.
+ * @param {HtmlContentProps} props - The props for the component.
  * @returns {JSX.Element} A div element with parsed HTML content and optional CSS class name.
  */
-interface HtmlProps {
+interface HtmlContentProps {
     /**
      * Source html
      */
@@ -36,27 +34,13 @@ interface HtmlProps {
 /**
  * @@@
  */
-export function Html(props: HtmlProps) {
+export function HtmlContent(props: HtmlContentProps) {
     const { content, className, isEditable, onHtmlChange } = props;
-
-    const jsx = parse(
-        content,
-        /*
-        Maybe TODO:
-        {
-            replace(domNode) {
-                if (domNode instanceof Element && domNode.tagName === 'img' && domNode.attribs.class === 'emoji') {
-                    return <Image alt={domNode.attribs.alt} src={domNode.attribs.src} width={'10'} height={'10'} />;
-                }
-            },
-        }
-        */
-    );
 
     return (
         <div
-            className={classNames(styles.html, className)}
-            contentEditable={isEditable /* <- TODO: !!!! Allow to change fonts */}
+            {...{ className }}
+            contentEditable={isEditable /* <- TODO: [🧠][💬] Allow to change fonts and do rich text editing */}
             spellCheck={isEditable ? false : undefined}
             onInput={(event) => {
                 if (!onHtmlChange || !isEditable) {
@@ -67,8 +51,7 @@ export function Html(props: HtmlProps) {
 
                 onHtmlChange(htmlContent);
             }}
-        >
-            {jsx}
-        </div>
+            dangerouslySetInnerHTML={{ __html: content }}
+        />
     );
 }

@@ -11,7 +11,7 @@ import { getSupabaseForBrowser } from '../../utils/supabase/getSupabaseForBrowse
 import { provideClientId } from '../../utils/supabase/provideClientId';
 import { string_email } from '../../utils/typeAliases';
 import { isValidUrl } from '../../utils/validators/isValidUrl';
-import { Markdown } from '../Markdown/Markdown';
+import { MarkdownContent } from '../MarkdownContent/MarkdownContent';
 import { Modal } from '../Modal/Modal';
 import { Select } from '../Select/Select';
 import stylesForSelect from '../Select/Select.module.css';
@@ -232,7 +232,7 @@ export function ExportModal(props: ExportModalProps) {
                         // disabled={!isFormComplete}
                         type="submit"
                     >
-                        <Markdown content="Get the web 🚀" isUsingOpenmoji />
+                        <MarkdownContent content="Get the web 🚀" isUsingOpenmoji />
                     </button>
                 </label>
 
