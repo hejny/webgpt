@@ -37,7 +37,6 @@
         "configchecker": "1.5.1",
         "destroyable": "0.12.0",
         "file-saver": "2.0.5",
-        "html-react-parser": "3.0.12",
         "i18next": "22.4.11",
         "isomorphic-fetch": "3.0.0",
         "jszip": "3.10.1",

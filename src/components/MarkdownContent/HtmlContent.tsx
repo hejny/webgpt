@@ -1,12 +1,5 @@
-// !!! Remove package> import parse from 'html-react-parser';
 import { string_html } from '../../utils/typeAliases';
 
-/**
- * A function component that renders a div element with parsed HTML content ⁘
- *
- * @param {HtmlContentProps} props - The props for the component.
- * @returns {JSX.Element} A div element with parsed HTML content and optional CSS class name.
- */
 interface HtmlContentProps {
     /**
      * Source html
@@ -32,7 +25,7 @@ interface HtmlContentProps {
 }
 
 /**
- * @@@
+ * Renders html content with optional editing capabilities
  */
 export function HtmlContent(props: HtmlContentProps) {
     const { content, className, isEditable, onHtmlChange } = props;
