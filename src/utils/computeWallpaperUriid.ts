@@ -12,7 +12,7 @@ export function computeWallpaperUriid(
     wallpaper: Omit<IWallpaper, 'id' | 'title' | 'keywords' | 'saveStage' | 'isPublic'>,
 ): string_uriid {
     const title = extractTitleFromContent(wallpaper.content) || '';
-    const words = normalizeToKebabCase(title.toLocaleLowerCase()).split('-');
+    const words = normalizeToKebabCase(title.toLocaleLowerCase()).split('-'); /* <- TODO: !!!! normalizeToUriPart */
 
     let nameParts: Array<string> = [];
     for (const word of words) {

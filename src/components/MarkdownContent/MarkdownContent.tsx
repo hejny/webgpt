@@ -143,6 +143,8 @@ export function MarkdownContent(props: IMarkdownContentProps) {
 
     const html = markdownConverter.makeHtml(enhancedContent);
 
+    // !!!! Remove <p></p>
+
     if (html === '') {
         // Note: Do not make empty div for empty article
         return <></>;
