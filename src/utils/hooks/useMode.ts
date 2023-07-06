@@ -25,12 +25,12 @@ export function useMode(): IModes {
         };
     }
 
-    if (typeof router.query.mode !== 'string') {
+    if (typeof router.query.mode !== 'string' /* <- This is a situation when there is no mode in GET params */) {
         return {
             mode: 'NORMAL',
             isExplaining: false,
             isPresenting: false,
-            isEditable: false,
+            isEditable: true,
         };
     }
 
