@@ -21,7 +21,7 @@ export function ShowcaseContent() {
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
-    const { isPresenting /* !!!!!!!! isEditing ACRY */ } = useMode();
+    const { isEditable } = useMode();
 
     return (
         <div className={styles.page}>
@@ -38,7 +38,7 @@ export function ShowcaseContent() {
                 <TiledBackground />
             </div>
             <main>
-                {!isPresenting && (
+                {isEditable && (
                     <input
                         type="color"
                         onChange={(event) => {

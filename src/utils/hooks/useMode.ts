@@ -9,6 +9,7 @@ interface IModes {
     mode: TupleToUnion<typeof MODES>;
     isExplaining: boolean;
     isPresenting: boolean;
+    isEditable: boolean;
 }
 
 export function useMode(): IModes {
@@ -20,6 +21,7 @@ export function useMode(): IModes {
             mode: 'LOADING',
             isExplaining: false,
             isPresenting: true,
+            isEditable: false,
         };
     }
 
@@ -28,6 +30,7 @@ export function useMode(): IModes {
             mode: 'NORMAL',
             isExplaining: false,
             isPresenting: false,
+            isEditable: false,
         };
     }
 
@@ -39,10 +42,12 @@ export function useMode(): IModes {
 
     const isExplaining = mode === 'EXPLANATION';
     const isPresenting = mode === 'PRESENTATION' || mode === 'PREVIEW';
+    const isEditable = !isPresenting;
 
     return {
         mode: mode as IModes['mode'],
         isExplaining,
         isPresenting,
+        isEditable,
     };
 }

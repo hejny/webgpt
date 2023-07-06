@@ -23,7 +23,7 @@ export interface ShowcasePageProps {
 
 export default function ShowcasePage(props: ShowcasePageProps) {
     let { currentWallpaper, randomWallpaper } = props;
-    const { isExplaining, isPresenting } = useMode();
+    const { isExplaining, isEditable } = useMode();
 
     console.log(currentWallpaper);
 
@@ -72,9 +72,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             {/* TODO: !!!! Color edits */}
             {isExplaining && <ExplainContent />}
             {!isExplaining && <ShowcaseContent />}
-            {!isExplaining && !isPresenting && (
-                <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />
-            )}
+            {!isExplaining && isEditable && <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />}
         </WallpapersContext.Provider>
     );
 }

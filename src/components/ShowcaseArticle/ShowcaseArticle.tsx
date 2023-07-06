@@ -13,12 +13,11 @@ import styles from './ShowcaseArticle.module.css';
  * @@@
  */
 export function ShowcaseArticleSection() {
-    const { isPresenting } = useMode();
+    const { isEditable } = useMode();
     const [{ content }, modifyWallpaper] = useWallpaper();
 
     const contentFormat = detectContentFormat(content);
 
-    const isEditable = !isPresenting;
     const onHtmlChange = !isEditable
         ? undefined
         : async (newContent: string_html) => {
