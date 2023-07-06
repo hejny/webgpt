@@ -99,7 +99,6 @@ function HtmlContentEditable(props: Omit<HtmlContentProps, 'isEditable'>) {
     return (
         <div {...{ className }} ref={elementRef}>
             This will be never shown because it is immediatelly replaced here [3] in useLayoutEffect
-            {/* <- !!!! Test in builded source */}
         </div>
     );
 }
