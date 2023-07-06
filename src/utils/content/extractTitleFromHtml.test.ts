@@ -134,6 +134,13 @@ describe('extractFirstHeadingFromHtmlRegex', () => {
         );
     });
 
+    test('should return non-trimmed result', () => {
+        expect(extractTitleFromHtml(`<h1> a </h1>`)).toBe(` a `);
+        expect(extractTitleFromHtml(`<h1>&nbsp;a&nbsp;</h1>`)).toBe(` a `);
+        expect(extractTitleFromHtml(`<h1> &nbsp;a&nbsp; </h1>`)).toBe(`  a  `);
+        expect(extractTitleFromHtml(`<h1> &nbsp; a &nbsp; </h1>`)).toBe(`   a   `);
+    });
+
     test('should return the first heading from an real multi-whitespace HTML string', () => {
         expect(extractTitleFromHtml(`<h1>a&nbsp;a</h1>`)).toBe(`a a`);
         expect(extractTitleFromHtml(`<h1>a&nbsp; a</h1>`)).toBe(`a  a`);
