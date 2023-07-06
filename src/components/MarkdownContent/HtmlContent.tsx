@@ -33,7 +33,7 @@ export function HtmlContent(props: HtmlContentProps) {
     return (
         <div
             {...{ className }}
-            contentEditable={isEditable /* <- TODO: [🧠][💬] Allow to change fonts and do rich text editing */}
+            contentEditable={isEditable}
             spellCheck={isEditable ? false : undefined}
             onInput={(event) => {
                 if (!onHtmlChange || !isEditable) {
@@ -48,3 +48,7 @@ export function HtmlContent(props: HtmlContentProps) {
         />
     );
 }
+
+/**
+ * TODO: [🧠][💬] Allow to change fonts and do rich text editing
+ */
