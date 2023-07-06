@@ -1,4 +1,3 @@
-import { debounce } from 'lodash';
 import { detectContentFormat } from '../../utils/content/detectContentFormat';
 import { useMode } from '../../utils/hooks/useMode';
 import { useWallpaper } from '../../utils/hooks/useWallpaper';
@@ -22,13 +21,13 @@ export function ShowcaseArticleSection() {
     const isEditable = !isPresenting;
     const onHtmlChange = !isEditable
         ? undefined
-        : debounce(async (newContent: string_html) => {
+        : async (newContent: string_html) => {
               modifyWallpaper((modifiedWallpaper) => {
                   modifiedWallpaper.content = newContent;
                   modifiedWallpaper.saveStage = 'EDITED';
                   return modifiedWallpaper;
               });
-          }, 1000 /* <- TODO: !!!! Decrease until focus is fixed OR fire on unfocus */);
+          };
 
     return (
         <Section id="home" className={styles.Article}>

@@ -76,7 +76,7 @@ interface IMarkdownContentProps {
 }
 
 /**
- * Function component that renders an article from markdown content ⁘
+ * Renders given markdown content with optional enhancements and optional editability
  *
  * @param {IArticleProps} props - The props for the component
  * @returns {JSX.Element} - The JSX element for the article
