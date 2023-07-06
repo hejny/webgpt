@@ -97,15 +97,6 @@ export function MarkdownContent(props: IMarkdownContentProps) {
 
     let synchronouslyEnhancedContent: string_markdown = spaceTrim(content || '');
 
-    if (isusingFonts) {
-        synchronouslyEnhancedContent = synchronouslyEnhancedContent.replace(
-            /<!--font:(.*?)-->/g,
-            `</div><div style="font-family: '$1', sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
-        );
-        // TODO: Teoretically, the line below should be used BUT it does not work with it and strangely works without it:
-        // synchronouslyEnhancedContent = `<div>\n\n\n${synchronouslyEnhancedContent}\n\n\n</div>` /* <- TODO: This is a bit hack how to process easily non-ended font tags  */;
-    }
-
     if (isEnhanced) {
         synchronouslyEnhancedContent = linkMarkdown(synchronouslyEnhancedContent);
         synchronouslyEnhancedContent = normalizeDashes(synchronouslyEnhancedContent);
@@ -141,9 +132,18 @@ export function MarkdownContent(props: IMarkdownContentProps) {
 
     const { value: enhancedContent } = useObservable(enhancedContentSubject);
 
-    const html = markdownConverter.makeHtml(enhancedContent);
+    let html = markdownConverter.makeHtml(enhancedContent);
 
-    // !!!! Remove <p></p>
+    if (isusingFonts) {
+        html = html.replace(
+            /<!--font:(.*?)-->/g,
+            `</div><div style="font-family: '$1', sans-serif;">` /* <- TODO: Do not hardcode sans-serif */ /* <- [🎗] */,
+        );
+        // TODO: Teoretically, the line below should be used BUT it does not work with it and strangely works without it:
+        // synchronouslyEnhancedContent = `<div>\n\n\n${synchronouslyEnhancedContent}\n\n\n</div>` /* <- TODO: This is a bit hack how to process easily non-ended font tags  */;
+    }
+
+    html = html.split(/<p>\s*<\/p>/g).join('');
 
     if (html === '') {
         // Note: Do not make empty div for empty article
