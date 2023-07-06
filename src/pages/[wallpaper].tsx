@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getHardcodedWallpapers } from '../../scripts/utils/hardcoded-wallpaper/getHardcodedWallpapers';
 import { ShowcaseAppHead } from '../components/AppHead/ShowcaseAppHead';
 import { ExplainContent } from '../components/ExplainContent/ExplainContent';
+import { PreventUnsavedChanges } from '../components/PreventUnsavedChanges/Sample';
 import { ShowcaseContent } from '../components/ShowcaseContent/ShowcaseContent';
 import { ShowcaseContentEdit } from '../components/ShowcaseContentEdit/ShowcaseContentEdit';
 import { SkinStyle } from '../components/SkinStyle/SkinStyle';
@@ -70,6 +71,7 @@ export default function ShowcasePage(props: ShowcasePageProps) {
 
             {/* TODO: !!!! [🏐] Unsaved form */}
             {/* TODO: !!!! Color edits */}
+            {isEditable && <PreventUnsavedChanges />}
             {isExplaining && <ExplainContent />}
             {!isExplaining && <ShowcaseContent />}
             {!isExplaining && isEditable && <ShowcaseContentEdit randomWallpaper={hydrateWallpaper(randomWallpaper)} />}
