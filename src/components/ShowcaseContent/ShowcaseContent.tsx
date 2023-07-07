@@ -55,6 +55,7 @@ export function ShowcaseContent() {
                                 });
                             }}
                             presetColors={
+                                // TODO: !!!! Take colors from the original palette
                                 // TODO: Optimize, do just once not for every color:
                                 wallpaper.colorStats.palette.map((color) => ({
                                     title: color.note,
@@ -70,7 +71,6 @@ export function ShowcaseContent() {
 }
 
 /**
- * TODO: !!!! Add here a color picker for the palette @see https://www.npmjs.com/package/react-color
  * TODO: Rename ACRY ShowcaseContent to ShowcaseLayout
  * TODO: [🧠] This is not a section nor a component - figure out where to put it
  */

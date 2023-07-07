@@ -69,7 +69,6 @@ export default function ShowcasePage(props: ShowcasePageProps) {
             </Head>
             */}
 
-            {/* TODO: !!!! Color edits */}
             {isEditable && <PreventUnsavedChanges />}
             {isExplaining && <ExplainContent />}
             {!isExplaining && <ShowcaseContent />}
