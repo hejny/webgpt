@@ -11,6 +11,8 @@ import { Select } from '../Select/Select';
  * @@
  */
 export function EditModalColorAlgoritm() {
+
+    // TODO: [🩺] !!!! One hook for [wallpaper,mutateWallpaper]
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);

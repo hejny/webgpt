@@ -33,6 +33,8 @@ interface EditModalProps {}
  */
 export function EditModal(props: EditModalProps) {
     const router = useRouter();
+
+    // TODO: [🩺] !!!! One hook for [wallpaper,mutateWallpaper]
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
