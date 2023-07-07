@@ -1,10 +1,14 @@
 import { useState } from 'react';
+import { SketchPicker } from 'react-color';
 import { Color } from '../../utils/color/Color';
+import { textColor } from '../../utils/color/operators/furthest';
+import { WithTake } from '../../utils/take/interfaces/ITakeChain';
+import { take } from '../../utils/take/take';
 import styles from './ColorInput.module.css';
 
 interface ColorInputProps {
     defaultValue: Color;
-    onChange(color: Color): void;
+    onChange(color: WithTake<Color>): void;
 }
 
 /**
@@ -13,36 +17,33 @@ interface ColorInputProps {
 export function ColorInput(props: ColorInputProps) {
     const { defaultValue, onChange } = props;
 
-    const [color, setColor] = useState(defaultValue);
-    const [colorString, setColorString] = useState(color.toHex());
+    const [color, setColor] = useState(take(defaultValue));
+    const [isOpen, setOpen] = useState(false);
 
     return (
         <div className={styles.ColorInput}>
-            <input
-                type="color"
-                value={color.toHex()}
-                onChange={(event) => {
-                    const color = Color.fromHex(event.target.value);
-                    setColor(color);
-                    setColorString(color.toHex() /* <- TODO: Try to preserve the format use choosen */);
-                    onChange(color);
-                }}
+            <div
+                // TODO: ACRY aria
+                className={styles.colorPreview}
+                style={{ backgroundColor: color.toHex(), border: `2px solid ${color.then(textColor).toHex()}` }}
+                onClick={() => setOpen(!isOpen)}
             />
-            {/* TODO: Use here <ColorBox/> or design of it (share the css module) */}
-            <input
-                type="text"
-                value={colorString}
-                onChange={(event) => {
-                    setColorString(event.target.value);
-                    try {
-                        const color = Color.fromString(event.target.value);
-                        setColor(color);
-                        onChange(color);
-                    } catch (error) {
-                        // Note: Swallow error because it is not a valid color yet
-                    }
-                }}
-            />
+
+            {isOpen && (
+                <SketchPicker
+                    color={color}
+                    onChange={({ rgb: { r, g, b } }) => {
+                        setColor(Color.fromValues(r, g, b));
+                    }}
+                    onChangeComplete={({ rgb: { r, g, b } }) => {
+                        onChange(Color.fromValues(r, g, b));
+                    }} /*presetColors*/
+                />
+            )}
         </div>
     );
 }
+
+/**
+ * !!!! debounce here
+ */

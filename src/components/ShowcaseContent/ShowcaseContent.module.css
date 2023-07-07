@@ -141,4 +141,8 @@
     grid-row: 5 / span 1;
 }
 
+.floatingColorPicker {
+    position: absolute;
+}
+
 /* TODO: [🧈] Best way how to share page css */

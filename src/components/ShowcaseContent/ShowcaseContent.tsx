@@ -3,11 +3,11 @@ import { useRouter } from 'next/router';
 import { AigenSimple } from '../../components/Aigen/AigenSimple';
 import { HeaderWallpaper } from '../../components/HeaderWallpaper/HeaderWallpaper';
 import { TiledBackground } from '../../components/TiledBackground/TiledBackground';
-import { Color } from '../../utils/color/Color';
 import { useCurrentWallpaperId } from '../../utils/hooks/useCurrentWallpaperId';
 import { useMode } from '../../utils/hooks/useMode';
 import { useObservable } from '../../utils/hooks/useObservable';
 import { useWallpaperSubject } from '../../utils/hooks/useWallpaperSubject';
+import { ColorInput } from '../ColorInput/ColorInput';
 import { FooterSection } from '../Footer/Footer';
 import { Menu } from '../Menu/Menu';
 import { ShowcaseArticleSection } from '../ShowcaseArticle/ShowcaseArticle';
@@ -17,7 +17,7 @@ export function ShowcaseContent() {
     const router = useRouter();
     const isPreview = router.query.mode === 'preview'; /* <- TODO: !!! Use useMode */
 
-    // TODO: [🩺] One hook for [wallpaper,mutateWallpaper]
+    // TODO: [🩺] !!!! One hook for [wallpaper,mutateWallpaper]
     const wallpaperId = useCurrentWallpaperId();
     const wallpaperSubject = useWallpaperSubject(wallpaperId);
     const { value: wallpaper } = useObservable(wallpaperSubject);
@@ -39,16 +39,19 @@ export function ShowcaseContent() {
             </div>
             <main>
                 {isEditable && (
-                    <input
-                        type="color"
-                        onChange={(event) => {
-                            wallpaper.colorStats.palette[0].value = Color.fromHex(event.target.value);
-                            wallpaperSubject.next({
-                                ...wallpaperSubject.value,
-                                /*content: newContent,*/ saveStage: 'EDITED',
-                            });
-                        }}
-                    />
+                    // !!!! Multiple pickers
+                    <div className={styles.floatingColorPicker}>
+                        <ColorInput
+                            defaultValue={wallpaper.colorStats.palette[0].value}
+                            onChange={(newColor) => {
+                                wallpaper.colorStats.palette[0].value = newColor;
+                                wallpaperSubject.next({
+                                    ...wallpaperSubject.value,
+                                    /*content: newContent,*/ saveStage: 'EDITED',
+                                });
+                            }}
+                        />
+                    </div>
                 )}
                 <ShowcaseArticleSection />
                 {/*<ReferencesSection variant="SHORT" />*/}

@@ -1,3 +1,12 @@
 .ColorInput {
     /* TODO: Use or remove empty css */
 }
+
+.colorPreview {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}

@@ -4,6 +4,7 @@ import { Color } from '../../../utils/color/Color';
 import { LikedStatus } from '../../../utils/hooks/useLikedStatusOfCurrentWallpaper';
 import { useStateWithReporting } from '../../../utils/hooks/useStateWithReporting';
 import { WithTake } from '../../../utils/take/interfaces/ITakeChain';
+import { ColorInput } from '../../ColorInput/ColorInput';
 import { MarkdownContent } from '../../MarkdownContent/MarkdownContent';
 import { Select } from '../../Select/Select';
 import { GalleryFilter, Order } from './GalleryFilter';
@@ -52,11 +53,7 @@ export function GalleryFilterInput(props: GalleryFilterProps) {
 
             <div className={styles.filter}>
                 Prefer color:&nbsp;&nbsp;
-                <input
-                    type="color"
-                    defaultValue={(color || Color.fromHex('#777777')).toHex()}
-                    onChange={debounce((event) => setColor(Color.fromHex(event.target.value)), 500)}
-                />
+                <ColorInput defaultValue={color || Color.fromHex('#777777')} onChange={setColor} />
                 {color && (
                     <div onClick={() => setColor(undefined)}>
                         <MarkdownContent content="❌" isUsingOpenmoji />
